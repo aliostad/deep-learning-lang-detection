@@ -1,0 +1,39 @@
+<workunit>
+    <invokers>
+        <invoker type="control:idformat" index="2" caption="Government Issued ID" format="govid"/>
+    </invokers>
+    
+    <code>
+        <![CDATA[
+        import com.rameses.rcp.common.*;
+        import com.rameses.rcp.annotations.*;
+        import com.rameses.osiris2.client.*;
+        
+        public class PassportIdController {
+
+            def context = [:];
+            def opener;
+            def properties;
+            
+            public void fixFormat( def c ) {
+                context = c;
+            }
+            
+            public def getHtmlFormat() {
+                def buff = new StringBuffer();
+                buff.append( "<i>Gov Issued ID: "+ context.idtype + "</i>" );
+                buff.append( "&nbsp;&nbsp;<b>" + context.idno + "</b>" );
+                buff.append( "<br>Place Issued: " + context.placeissued );
+                buff.append( "<br>Issue Date: " + context.dtissued );
+                buff.append( "&nbsp;&nbsp;Expiry Date: " + context.dtexpiry );
+                return buff.toString();
+            }
+        }
+        ]]>
+    </code>
+    
+    <pages>
+        <page template="shared.custom.id.GovIdControlPage"/>
+    </pages>
+    
+</workunit>

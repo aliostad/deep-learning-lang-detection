@@ -1,0 +1,49 @@
+<drawbles>
+<drawble _name="redrect" name="" >
+    <append>
+        RedRect();
+    </append>
+</drawble>
+
+<drawble _name="elbowR" name="Elbow" cols="3">
+    <param type="float" name="a"></param>
+    <param type="float" name="b"></param>
+    <param type="space" />
+    <param type="float" name="r"></param>
+    <param type="float" name="ang"></param>
+    <append>
+        ElbowR(a,b,r,ang);
+    </append>
+</drawble>
+
+<drawble _name="redRR" name="Reduction" cols="3">
+    <param type="float" name="a1"></param>
+    <param type="float" name="b1"></param>
+    <param type="space" />
+    <param type="float" name="a2"></param>
+    <param type="float" name="b2"></param>
+    <param type="float" name="h"></param>
+    <append>
+        Frustum(0,0,0,h,a1,b1,a2,b2);
+    </append>
+</drawble>
+
+<drawble _name="redRRD" name="Reduction">
+    <param type="float" name="h"/>
+    <param type="float" name="a1"/>
+    <param type="float" name="b1"/>
+    <param type="float" name="a2"/>
+    <param type="float" name="b2"/>
+    <param type="float" name="da"/>
+    <param type="float" name="db"/>
+</drawble>
+
+<drawble _name="rduct" name="Duct">
+    <param type="float" name="a"/>
+    <param type="float" name="b"/>
+    <param type="float" name="l"/>
+    <append>
+        Frustum(0,0,0,l,a,b,a,b);
+    </append>
+</drawble>
+</drawbles>

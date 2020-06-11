@@ -1,0 +1,62 @@
+#!/bin/bash
+
+# init test environment
+mkdir test_environment
+cd test_environment
+
+# create test repos
+mkdir repo_1.git
+cd repo_1.git
+git --bare init
+cd ..
+mkdir repo_2.git
+cd repo_2.git
+git --bare init
+cd ..
+
+# create model repo
+mkdir repo_models.git
+cd repo_models.git
+git --bare init
+cd ..
+
+# provide initial commit
+git clone file://`pwd`/repo_1.git
+cd repo_1
+git commit --allow-empty -m"initial commit
+Transaction-Id: 1"
+git remote add origin file://`pwd`/repo_1.git
+git push origin master
+cd ..
+rm -rf repo_1
+
+git clone file://`pwd`/repo_2.git
+cd repo_2
+git commit --allow-empty -m"initial commit
+Transaction-Id: 1"
+git remote add origin file://`pwd`/repo_2.git
+git push origin master
+cd ..
+rm -rf repo_2
+
+git clone file://`pwd`/repo_models.git
+cd repo_models
+git commit --allow-empty -m"initial commit
+Transaction-Id: 1"
+git remote add origin file://`pwd`/repo_models.git
+git push origin master
+cd ..
+rm -rf repo_models
+
+# add post-commit repos
+cp ../pre-receive repo_1.git/hooks/
+chmod +x repo_1.git/hooks/pre-receive
+cp ../pre-receive repo_2.git/hooks/
+chmod +x repo_2.git/hooks/pre-receive
+cp ../pre-receive repo_models.git/hooks/
+chmod +x repo_models.git/hooks/pre-receive
+
+# exit test environment
+cd ..
+
+ruby server.rb &

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hook PUBLIC "-//Liferay//DTD Hook 6.1.0//EN" "http://www.liferay.com/dtd/liferay-hook_6_1_0.dtd">
+
+<hook>
+    <portal-properties>portal.properties</portal-properties>
+	<service>
+		<service-type>
+			com.liferay.portlet.social.service.SocialActivityLocalService
+		</service-type>
+		<service-impl>
+			com.tls.hooks.cassandra.ExtSocialActivityLocalService
+		</service-impl>
+	</service>
+    <service>
+        <service-type>com.liferay.portlet.social.service.SocialRelationLocalService</service-type>
+        <service-impl>com.tls.hooks.cassandra.ExtSocialRelationLocalService</service-impl>
+    </service>
+    <service>
+        <service-type>com.liferay.portlet.social.service.SocialActivityCounterLocalService</service-type>
+        <service-impl>com.tls.hooks.cassandra.ExtSocialActivityCounterLocalService</service-impl>
+    </service>    
+    <service>
+        <service-type>com.liferay.counter.service.CounterLocalService</service-type>
+        <service-impl>com.tls.hooks.cassandra.ExtCounterLocalService</service-impl>
+    </service>     
+</hook>

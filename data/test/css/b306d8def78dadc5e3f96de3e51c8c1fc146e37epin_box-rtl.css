@@ -1,0 +1,92 @@
+/* PIN_BOX CSS */
+
+.pin_box {
+    float:right;
+}
+
+.pin_box .actions a {
+    float: right;
+    margin: 10px 8px 0 0;
+    padding: 5px 22px 5px 0;
+}
+
+.pin_box .actions a.repin_link {
+    background: url(img/icon_repin.png) center right no-repeat;
+}
+.pin_box .actions a.like_link {
+    background: url(img/icon_like.png) center right no-repeat;
+}
+.pin_box .actions a.comment_link {
+    background: url(img/icon_comment.png) center right no-repeat;
+}
+
+.pin_box .actions .rate-thumbs-up-btn-up {
+  background: url(img/icon_like.png) center right no-repeat;
+  padding: 5px 24px 5px 0;
+}
+
+/*PIN AVATARS SIZE*/
+
+.pin_box .info_box img, .pin_box .user-picture img {
+    float: right;
+}
+
+
+/*STATS*/
+
+.stats {
+    padding: 5px 15px 5px 0;
+    text-align: right;
+}
+
+.description {
+text-align: right;
+}
+
+/*INFO_BOX & COMMENTS */
+
+.info_box, .comment_box {
+text-align: right;
+}
+
+.info_box img, .comment_box img {
+    float: right;
+    margin: 0 0 0 10px;
+}
+
+.write_comment {
+    padding: 10px 0 5px 15px;
+}
+
+.write_comment .image_link {
+    float: right;
+    margin: 0 0 0 10px;
+}
+
+.write_comment textarea {
+    margin: 0 0 10px;
+}
+
+.write_comment .button{
+    float: left;
+    margin: 0 0 10px 15px;
+}
+
+.pin_box .price {
+    position: absolute;
+    z-index: 1;
+    top: 19px;
+    right: -28px;
+    width: 125px;
+    height: 22px;
+    padding-top: 1px;
+    text-align: center;
+    font-size: 12px;
+    color: #524d4d;
+    background-color: #f2f0f0;
+    overflow: hidden;
+    -webkit-transform: rotate(45deg);
+    -moz-transform:  rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}

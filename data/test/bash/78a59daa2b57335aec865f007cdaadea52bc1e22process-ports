@@ -1,0 +1,32 @@
+#!/bin/bash
+
+this=`basename $0`
+
+findProcess() {
+  pid=$1
+  if [[ -z $pid ]]; then
+    return
+  fi
+
+  process=`ps -aex -o pid,command \
+           | grep -i $pid \
+           | grep -v grep \
+           | grep -v findProcess`
+  ports=`lsof -n -i4TCP \
+         | grep $pid \
+         | egrep 'TCP \*:[0-9]+' \
+         | cut -d' ' -f22 \
+         | cut -c 3- \
+         | tr '\n' ' ' \
+         | tr -d ' '`
+  if [ ! -z "$ports" ]; then
+    echo "process: $process"
+    echo "ports: $ports"
+    echo ""
+  fi
+}
+
+pids=`ps -aex | grep -i $1 | grep -v grep | grep -v $this | cut -d' ' -f1`
+
+export -f findProcess
+echo "$pids" | parallel --no-notice "findProcess {}"

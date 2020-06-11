@@ -1,0 +1,55 @@
+.cmpNoResult {
+    font-weight: bold;
+    font-style: italic;
+}
+.cmpsDirRsltsFound {
+    color: #313131;
+    font-size: 1.0666666666666667em;    /* font size 16 in pixel */
+}
+
+.cmpsDirShowAll,.cmpsDirTelNum {
+    color: #0054a6;
+    font-size: 0.9333333333333333em; /* font size 14 in pixel */
+}
+
+.cpmsDirProfName {
+    color: #0054a6;
+    font-size: 1.133333333333333em;
+}
+.cmpsDirTitle {
+    color: #313131;
+    font-size: 1.133333333333333em; 
+}
+
+.cmpsDirLoadMoreBtn {
+    background-color:#ffffff;
+    border:1px solid #0054a6;
+    border-radius: 4px;
+    height: 40px;
+    color: #0054a6;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    font-size: 1.266666666666667em;
+    line-height: 30px;
+}
+
+.cmpsDirLoadMoreBtn:hover,
+.cmpsDirLoadMoreBtn:active,
+.cmpsDirLoadMoreBtn:focus,
+.btn-default.cmpsDirLoadMoreBtn:active {
+    background-color: #ffffff;
+    color: #0054a6;
+    outline: none ;
+    box-shadow: none;
+    border-color:#0054a6;
+}
+.cmpsDirLoadMoreBtn.focus.active {
+    outline: none ;
+}
+
+.show-all-btn {
+    font-family: 'open_sanslight', sans-serif;
+    font-size: 1em; /* font size 15 in pixel */
+    color: #0054a6;
+}

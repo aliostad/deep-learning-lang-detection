@@ -1,0 +1,47 @@
+/** define Nav; use strict */
+
+.Nav {
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0 1.5em;
+}
+
+.Nav-group {
+  display: block;
+}
+
+.Nav-group + .Nav-group {
+  margin-top: 0.5em;
+}
+
+.Nav-link {
+  font-family: var(--font);
+  font-size: 1.2em;
+}
+
+.Nav-link:hover,
+.Nav-link:focus,
+.Nav-link.is-active {
+  color: var(--accent);
+}
+
+.Nav-link--social {
+  color: var(--muted-text);
+  font-size: 0.8em;
+}
+
+@media (--screen-large) {
+  .Nav {
+    max-width: var(--screen-large-size);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .Nav-link + .Nav-link {
+    padding-left: 0.05em;
+  }
+
+  .Nav-link--blog {
+    width: 100%;
+  }
+}

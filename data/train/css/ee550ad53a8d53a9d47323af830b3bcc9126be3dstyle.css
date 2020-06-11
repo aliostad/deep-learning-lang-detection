@@ -1,0 +1,284 @@
+/*******************************************************************************
+ * Styles for the filter form.
+ ******************************************************************************/
+
+.controller-work_load .filters > div,
+.controller-work_load .filters .apply {
+    margin-top: 8px;
+}
+
+.controller-work_load .filters label:first-child {
+    display: inline-block;
+    width: 150px;
+}
+
+.controller-work_load .filters .apply {
+    display: inline-block;
+}
+
+/*******************************************************************************
+ * Styles for the filter form.
+ ******************************************************************************/
+
+.controller-work_load .wrapper {
+    margin-top: 30px;
+}
+
+/*******************************************************************************
+ * Styles for the header of the gantt diagram.
+ ******************************************************************************/
+
+.controller-work_load .data .logo {
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    min-width: 250px;
+}
+
+/* Column width if no data is displayed */
+.controller-work_load .data .day-of-month,
+.controller-work_load .data .day-of-week {
+    min-width: 28px;
+}
+
+/* Month names */
+.controller-work_load .data .month-name {
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.controller-work_load .data .month-name:last-child {
+    border-right: 1px solid black;
+}
+
+/* Day of month */
+.controller-work_load .data .day-of-month.firstDayOfMonth,
+.controller-work_load .data .day-of-month:first-child {
+    border-left: 1px solid black;
+}
+
+.controller-work_load .data .day-of-month:last-child {
+    border-right: 1px solid black;
+}
+
+/* Day of week */
+.controller-work_load .data .day-of-week.firstDayOfWeek,
+.controller-work_load .data .day-of-week:first-child {
+    border-left: 1px solid black;
+}
+
+.controller-work_load .data .day-of-week:last-child {
+    border-right: 1px solid black;
+}
+
+
+/*******************************************************************************
+ * Styles for the workload table.
+ ******************************************************************************/
+
+.controller-work_load .wrapper {
+    overflow-x: auto;
+}
+
+.controller-work_load .data {
+    table-layout: fixed;
+    border-spacing: 0 3px;
+    border-collapse: collapse;
+}
+
+.controller-work_load .data thead {
+    font-size: .9em;
+}
+
+/*------------------------------------------------------------------------------
+ * Styles for the stuff that may be shown or hidden.
+ -----------------------------------------------------------------------------*/
+.controller-work_load .data .project-total-workload,
+.controller-work_load .data .issue-workloads,
+.controller-work_load .data .additional-user-info,
+.controller-work_load .data .additional-project-info,
+.controller-work_load .data .invisible-issues-summary {
+	display: none;
+}
+
+.controller-work_load .data .trigger {
+	display: inline-block;
+
+	width: 20px;
+	
+	cursor: default;
+	text-align: center;
+}
+
+/*------------------------------------------------------------------------------
+ * Table heads on the left side.
+ -----------------------------------------------------------------------------*/
+.controller-work_load .data .user-description,
+.controller-work_load .data .project-description,
+.controller-work_load .data .issue-description,
+.controller-work_load .data .invisible-workload-description {
+
+    text-align: left;
+    font-size: .9em;
+
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+	
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.controller-work_load .data .user-description {
+    font-size: 1.3em;
+    padding-left: 10px;
+	
+    width:     260px;
+    min-width: 260px;
+    max-width: 260px;
+}
+
+.controller-work_load .data .project-description {
+	font-size: 1.2em;
+	padding-left: 15px;
+	
+    width:     255px;
+    min-width: 255px;
+    max-width: 255px;
+}
+
+.controller-work_load .data .issue-description,
+.controller-work_load .data .invisible-workload-description {
+    padding-left: 20px;
+	
+    width:     250px;
+    min-width: 250px;
+    max-width: 250px;
+}
+
+.controller-work_load .data .invisible-workload-description {
+    font-size: 1em;
+}
+
+.controller-work_load .data .additional-user-info,
+.controller-work_load .data .additional-project-info {
+	font-size: .7em;
+	font-weight: normal;
+	margin-left: 30px;
+}
+
+.controller-work_load .data .additional-user-info dt,
+.controller-work_load .data .additional-project-info dt {
+	float: left;
+	clear: left;
+	
+	width: 170px;
+}
+
+.controller-work_load .data .additional-user-info dd,
+.controller-work_load .data .additional-project-info dd {	
+	margin-left: 180px;
+}
+
+/*------------------------------------------------------------------------------
+ * Real table data
+ -----------------------------------------------------------------------------*/
+.controller-work_load .data td,
+.controller-work_load .data th {
+    min-height: 30px;
+    border-bottom: 1px solid black;
+}
+
+.controller-work_load .data .user-total-workload {
+    background-color: #F6F7F8;
+}
+
+.controller-work_load .data .issue-workload.odd {
+    background-color: #F6F7F8;
+}
+
+.controller-work_load .data .issue-workload.odd.overdue {
+    background-color: #ecb4b4;
+}
+
+.controller-work_load .data .issue-workload.even {
+    background-color: white;
+}
+
+.controller-work_load .data .issue-workload.even.overdue {
+    background-color: #f8d0d0;
+}
+
+.controller-work_load .data .issue-workload:hover,
+.controller-work_load .data .user-total-workload:hover,
+.controller-work_load .data .project-total-workload:hover{
+    background-color: #D7D7D7!important;
+}
+
+.controller-work_load .data td {
+    padding: 0;
+
+    font-size: .8em;
+    line-height: 1;
+
+    text-align: center;
+
+    width: 30px;
+    min-width: 30px;
+    max-width: 30px;
+}
+
+.controller-work_load .data .user-total-workload th,
+.controller-work_load .data .user-total-workload td {
+    border-top: 4px solid #707070;
+}
+
+.controller-work_load .data .today {
+    border-left: 2px solid red;
+    padding-left: 2px;
+    margin-left: 2px;
+}
+
+/* Styling of the spans in the table */
+.controller-work_load .data .hours span {
+    display: block;
+
+    padding-top: .6em;
+    padding-bottom: .3em;
+    height: 1em;
+
+    color: white;
+}
+
+.controller-work_load .data .hours.none span {
+    color: black;
+}
+
+.controller-work_load .data .none span {
+    background: transparent;
+}
+
+.controller-work_load .data .active span {
+    background-color: rgba(200, 200, 200, 0.5);
+}
+
+.controller-work_load .data .low span {
+    background: green;
+}
+
+.controller-work_load .data .normal span {
+    background: yellow;
+    color: black;
+}
+
+.controller-work_load .data .high span {
+    background: red;
+}
+
+.controller-work_load .data .holiday {
+    background-image: url('../images/background-holiday.png');
+}
+
+.controller-work_load .data .active.holiday span {
+    background-color: transparent;
+}

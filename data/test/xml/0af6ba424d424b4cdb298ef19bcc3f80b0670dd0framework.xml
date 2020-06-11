@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitetemplate sitetitle="Light Is Everything">
+	<sitestructure>
+		<page id="1" ident="PAGE-NAME-1">
+			<level>1</level>
+			<partof>0</partof>
+			<title>PAGE TITLE 1</title>
+			<shorttitle/>
+			<description/>
+			<keywords>,PAGE 1 FRAMEWORK KEYWORDS</keywords>
+			<searchexclude>0</searchexclude>
+			<link/>
+			<linktarget/>
+			<correctat/>
+			<nav_mysite>0</nav_mysite>
+			<nav_hotspot>0</nav_hotspot>
+			<nav_mainnav>1</nav_mainnav>
+			<gotosub/>
+			<duplicate>0</duplicate>
+			<duplicate_level>0</duplicate_level>
+			<duplicate_page>0</duplicate_page>
+			<nav_breadcrumb>0</nav_breadcrumb>
+			<nav_backtotop>1</nav_backtotop>
+			<archived>0</archived>
+			<modified>23/01/2010</modified>
+			<secure/>
+			<header>1</header>
+		</page>
+		<page id="2" ident="PAGE-NAME-2">
+			<level>1</level>
+			<partof>0</partof>
+			<title>PAGE TITLE 2</title>
+			<shorttitle/>
+			<description/>
+			<keywords>,PAGE 2 FRAMEWORK KEYWORDS</keywords>
+			<searchexclude>0</searchexclude>
+			<link/>
+			<linktarget/>
+			<correctat/>
+			<nav_mysite>0</nav_mysite>
+			<nav_hotspot>0</nav_hotspot>
+			<nav_mainnav>1</nav_mainnav>
+			<gotosub/>
+			<duplicate>0</duplicate>
+			<duplicate_level>0</duplicate_level>
+			<duplicate_page>0</duplicate_page>
+			<nav_breadcrumb>0</nav_breadcrumb>
+			<nav_backtotop>1</nav_backtotop>
+			<archived>0</archived>
+			<modified>23/01/2010</modified>
+			<secure/>
+			<header>1</header>
+		</page>
+		<page id="3" ident="PAGE-NAME-3">
+			<level>1</level>
+			<partof>0</partof>
+			<title>PAGE TITLE 3</title>
+			<shorttitle/>
+			<description/>
+			<keywords>,PAGE 3 FRAMEWORK KEYWORDS</keywords>
+			<searchexclude>0</searchexclude>
+			<link/>
+			<linktarget/>
+			<correctat/>
+			<nav_mysite>0</nav_mysite>
+			<nav_hotspot>0</nav_hotspot>
+			<nav_mainnav>1</nav_mainnav>
+			<gotosub/>
+			<duplicate>0</duplicate>
+			<duplicate_level>0</duplicate_level>
+			<duplicate_page>0</duplicate_page>
+			<nav_breadcrumb>0</nav_breadcrumb>
+			<nav_backtotop>1</nav_backtotop>
+			<archived>0</archived>
+			<modified>23/01/2010</modified>
+			<secure/>
+			<header>1</header>
+		</page>
+		<page id="4" ident="PAGE-NAME-4">
+			<level>1</level>
+			<partof>0</partof>
+			<title>PAGE TITLE 4</title>
+			<shorttitle/>
+			<description/>
+			<keywords>,PAGE 4 FRAMEWORK KEYWORDS</keywords>
+			<searchexclude>0</searchexclude>
+			<link/>
+			<linktarget/>
+			<correctat/>
+			<nav_mysite>0</nav_mysite>
+			<nav_hotspot>0</nav_hotspot>
+			<nav_mainnav>1</nav_mainnav>
+			<gotosub/>
+			<duplicate>0</duplicate>
+			<duplicate_level>0</duplicate_level>
+			<duplicate_page>0</duplicate_page>
+			<nav_breadcrumb>0</nav_breadcrumb>
+			<nav_backtotop>1</nav_backtotop>
+			<archived>0</archived>
+			<modified>23/01/2010</modified>
+			<secure/>
+			<header>1</header>
+		</page>
+		<page id="5" ident="accessibility">
+			<level>1</level>
+			<partof>0</partof>
+			<title>Accessibility Statement</title>
+			<shorttitle/>
+			<description/>
+			<keywords/>
+			<searchexclude>0</searchexclude>
+			<link/>
+			<linktarget/>
+			<correctat/>
+			<nav_mysite>0</nav_mysite>
+			<nav_hotspot>0</nav_hotspot>
+			<nav_mainnav>0</nav_mainnav>
+			<gotosub/>
+			<duplicate>0</duplicate>
+			<duplicate_level>0</duplicate_level>
+			<duplicate_page>0</duplicate_page>
+			<nav_breadcrumb>0</nav_breadcrumb>
+			<nav_backtotop>1</nav_backtotop>
+			<archived>0</archived>
+			<modified>23/01/2010</modified>
+			<secure/>
+			<header>0</header>
+		</page>
+		<page id="6" ident="sitemap">
+			<level>1</level>
+			<partof>0</partof>
+			<title>Sitemap</title>
+			<shorttitle/>
+			<description/>
+			<keywords/>
+			<searchexclude>0</searchexclude>
+			<link/>
+			<linktarget/>
+			<correctat/>
+			<nav_mysite>0</nav_mysite>
+			<nav_hotspot>0</nav_hotspot>
+			<nav_mainnav>0</nav_mainnav>
+			<gotosub/>
+			<duplicate>0</duplicate>
+			<duplicate_level>0</duplicate_level>
+			<duplicate_page>0</duplicate_page>
+			<nav_breadcrumb>0</nav_breadcrumb>
+			<nav_backtotop>1</nav_backtotop>
+			<archived>0</archived>
+			<modified>23/01/2010</modified>
+			<secure/>
+			<header>0</header>
+		</page>
+	</sitestructure>
+</sitetemplate>

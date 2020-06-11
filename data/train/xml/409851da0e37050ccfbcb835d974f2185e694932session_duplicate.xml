@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+<!-- training.session.duplicate.wizard -->
+        <record model="ir.ui.view" id="session_duplicate_wizard">
+            <field name="name">training.session.duplicate.wizard</field>
+            <field name="model">training.session.duplicate.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Duplicate Session" col="2">
+                    <group colspan="2" col="2">
+                        <field name="session_id" colspan="2"/>
+                        <field name="group_id" colspan="2" context="{'default_session_id' : session_id}" attrs="{'readonly' : [('session_id', '=', False)],'required' : [('session_id', '!=', False)]}"/>
+                        <separator string="Participants" colspan="2"/>
+                        <field name="subscription_line_ids" colspan="2" height="250" nolabel="1" attrs="{'readonly' : [('group_id', '=', False)]}">
+                            <tree string="Participants">
+                                <field name="job_id"/>
+                                <field name="job_email"/>
+                                <field name="partner_id"/>
+                            </tree>
+                        </field>
+                    </group>
+                    <separator string="" colspan="2"/>
+                    <group col="2" colspan="2">
+                        <button name="action_cancel" type="object" special="cancel" string="Cancel" icon="gtk-cancel"/>
+                        <button name="action_apply" type="object" string="Duplicate" icon="gtk-apply"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="session_duplicate_wizard_act">
+            <field name="name">Duplicate Session</field>
+            <field name="res_model">training.session.duplicate.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="session_duplicate_wizard_act">
+            <field name="name">Duplicate Session</field>
+            <field name="res_model">training.session.duplicate.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="session_duplicate_wizard"/>
+            <field name="target">new</field>
+            <field name="context">{'record_id' : active_id}</field>
+        </record>
+
+<!--         <record model="ir.values" id="training_session_duplicate_related">-->
+<!--            <field name="model">training.session</field>-->
+<!--            <field name="model_id" ref="training.model_training_session"/>-->
+<!--            <field name="object" eval="1"/>-->
+<!--            <field name="name">Duplicate Session</field>-->
+<!--            <field name="key2">client_action_multi</field>-->
+<!--            <field name="value" eval="'ir.actions.act_window,' + str(ref('session_duplicate_wizard_act'))"/>-->
+<!--            <field name="key">action</field>-->
+<!--        </record>-->
+
+
+    </data>
+</openerp>

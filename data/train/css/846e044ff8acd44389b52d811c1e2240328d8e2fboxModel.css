@@ -1,0 +1,29 @@
+/* 
+    Document   : boxModel
+    Created on : 5/Out/2012, 17:30:56
+    Author     : Henrique
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.xSlideShow.boxModel{
+    background: #000;
+    /*position: relative;*/
+    padding: 2px;
+    float: left;
+    box-shadow: 0px 0px 5px #000;
+    -o-box-shadow: 0px 0px 5px #000;
+    -ms-box-shadow: 0px 0px 5px #000;
+    -webkit-box-shadow: 0px 0px 5px #000;
+    -moz-box-shadow: 0px 0px 5px #000;
+}
+.xSlideShow.boxModel p{
+    background: #000; /* The Fallback */
+    background: rgba(0, 0, 0, 0.7); 
+    width: 100%;
+    padding: 10px 20px;
+    bottom: 0%;
+    color: #fff;
+    font-family: Verdana;
+    font-size: 11px;
+}

@@ -1,0 +1,45 @@
+#!/bin/bash -euf
+
+. _strap__inc
+
+check_args $# 2 "<dir> <tmp>"
+
+src=$1
+tmp=$2
+
+date=`date '+%Y%m%d_%H%M'`
+rescue="${tmp}/git_rescue_${date}"
+load="${tmp}/git_load_${date}"
+
+check_file d y ${src}
+check_file d y ${tmp}
+check_file d n ${rescue}
+check_file d n ${load}
+
+mkdir "${load}"
+echo "attempting reload into ${load}..."
+
+strap--git-recurse ${src} "status"
+
+git__tree_repos ${src}
+for i in ${__}
+do
+  git__get_repo_url ${src}/${i} && url=${__}
+  target=${load}/${i}
+  mkdir -p ${target}
+  git__clone ${url} ${target}
+done
+
+mkdir "${rescue}"
+
+set +f
+
+echo "moving ${src} entries to ${rescue}..."
+mv ${src}/* ${rescue}
+
+echo "moving reloaded entries ${load} to ${src}..."
+mv ${load}/* ${src}
+
+set -f
+
+echo "git rescue complete"

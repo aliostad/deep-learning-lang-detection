@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# Automatically added by dh_installinit, edited for use with debconf
+if [ -x "/etc/init.d/tinc" ]; then
+    if [ -e /usr/share/debconf/confmodule ] ; then
+	. /usr/share/debconf/confmodule
+	db_get tinc/restart_on_upgrade
+	if [ "$RET" = "true" ] ; then
+	    invoke-rc.d tinc stop
+	fi
+	db_stop
+    else
+	invoke-rc.d tinc stop
+    fi
+fi
+# End automatically added section
+
+# Automatically added by dh_installdocs
+if [ "$1" = remove ] || [ "$1" = upgrade ] && \
+   which install-docs >/dev/null 2>&1; then
+	install-docs -r tinc
+fi
+# End automatically added section

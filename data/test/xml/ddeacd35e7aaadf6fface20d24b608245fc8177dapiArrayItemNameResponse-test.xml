@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<method xmlns="http://apimapping.taobao.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://apimapping.taobao.com apimapping.xsd"
+	interfaceName="com.taobao.top.traffic.album.AlbumService"
+	interfaceVersion="1.0.0">
+	
+	<methodCall name="addAlbum" apiName="taobao.album.add">
+		<params>
+			<param name="id" type="int" apiName="aid" />
+		</params>
+	</methodCall>
+	
+	<methodResponse>
+		<param>
+			<type>
+				<struct>
+					<member name="string" apiName="string" apiArrayItemName="str" apiType="string list" />
+					<member name="strings" apiName="strings" apiArrayItemName="str"  apiType="string[]" />
+					
+					<member name="i1" apiName="i1" apiArrayItemName="int" apiType="java.lang.Integer list" />
+					<member name="i1s" apiName="i1s" apiArrayItemName="int" apiType="java.lang.Integer[]" />
+					
+					<member name="i2s" apiName="i2s"  apiArrayItemName="int" apiType="int[]" />
+					
+					<member name="l1" apiName="l1" apiArrayItemName="long" apiType="java.lang.Long list" />
+					<member name="l1s" apiName="l1s" apiArrayItemName="long" apiType="java.lang.Long[]" />
+					
+					<member name="l2s" apiName="l2s" apiArrayItemName="long" apiType="long[]" />
+					
+					<member name="f1" apiName="f1" apiArrayItemName="f"  apiType="java.lang.Float list" />
+					<member name="f1s" apiName="f1s" apiArrayItemName="f"  apiType="java.lang.Float[]" />
+					
+					<member name="f2s" apiName="f2s" apiArrayItemName="f"  apiType="float[]" />
+					
+					<member name="d1" apiName="d1" apiArrayItemName="d" apiType="java.lang.Double list" />
+					<member name="d1s" apiName="d1s" apiArrayItemName="d" apiType="java.lang.Double[]" />
+					
+					<member name="d2s" apiName="d2s" apiArrayItemName="d" apiType="double[]" />
+							
+					<member name="b1" apiName="b1" apiArrayItemName="b" apiType="java.lang.Boolean list" />
+					<member name="b1s" apiName="b1s" apiArrayItemName="b" apiType="java.lang.Boolean[]" />
+												
+					<member name="b2s" apiName="b2s" apiArrayItemName="b" apiType="boolean[]" />
+					
+					<member name="c1" apiName="c1"  apiArrayItemName="c" apiType="java.lang.Character list" />
+					<member name="c1s" apiName="c1s" apiArrayItemName="c" apiType="java.lang.Character[]" />
+					
+					<member name="c2s" apiName="c2s" apiArrayItemName="c" apiType="char[]" />									
+					
+					<member name="byte1" apiName="byte1" apiArrayItemName="byte" apiType="java.lang.Byte list" />
+					<member name="byte1s" apiName="byte1s" apiArrayItemName="byte" apiType="java.lang.Byte[]" />
+					
+					<member name="byte2s" apiName="byte2s" apiArrayItemName="byte" apiType="byte[]" />									
+				</struct>
+			</type>
+		</param>
+	</methodResponse>
+</method>

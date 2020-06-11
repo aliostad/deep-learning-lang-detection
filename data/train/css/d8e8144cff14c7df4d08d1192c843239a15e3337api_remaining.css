@@ -1,0 +1,62 @@
+/* API残数 */
+div.contents.api_remaining {
+	word-break: break-all;
+	word-wrap: break-word;
+	white-space: nowrap;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	height: 100%;
+}
+
+/* リスト部 */
+div.contents.api_remaining .api_remaining_list {
+	width: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+div.contents.api_remaining .api_remaining_list .item {
+	display: table;
+	width: 100%;
+	border-bottom: 1px solid rgba( 0, 0, 0, 0.4 );
+	padding: 2px 6px 2px 4px;
+	box-sizing: border-box;
+}
+
+div.contents.api_remaining .api_remaining_list .item:hover {
+	cursor: default;
+}
+
+div.contents.api_remaining .api_remaining_list .item .api {
+	display: table-cell;
+	width: auto;
+	white-space: normal;
+	padding: 2px;
+}
+
+div.contents.api_remaining .api_remaining_list .item .limit {
+	position: relative;
+	display: table-cell;
+	width: 150px;
+	vertical-align: middle;
+}
+
+div.contents.api_remaining .api_remaining_list .item .limit .limit_container {
+	width: 100%;
+	height: 16px;
+	background: -webkit-gradient(linear, left top, right top, from(#bb3355), color-stop(0.25,#eebb55), color-stop(0.9,#33bb55) );
+}
+
+div.contents.api_remaining .api_remaining_list .item .limit .limit_container .used {
+	position: absolute;
+	display: inline-block;
+	background: #2e2e2e;
+	height: 100%;
+}
+
+div.contents.api_remaining .api_remaining_list .item .limit .info {
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	font-size: 0.8rem;
+}

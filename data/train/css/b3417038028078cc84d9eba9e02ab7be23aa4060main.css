@@ -1,0 +1,39 @@
+.contentListShow{
+	list-style:none;
+	margin:0px;	
+}
+.contentListShow input[type=text]{
+	width:70%;
+}
+.contentListShow .input-append{
+	margin:0px;
+}
+.contentListShow{
+	list-style:none;
+	margin:0px;
+}
+.contentListShow li{
+	padding:20px;
+}
+.contentListShow li:nth-child(odd){
+	background-color: #F9F9F9;
+	border-bottom:1px #eee solid;
+	border-top:1px #eee solid;
+}
+.contentListShow li:last-child{
+	border-bottom:0px;
+}
+.contentListShow li:first{
+	border-top:4px;
+}
+.contentListShow h4{
+	margin-bottom:5px;
+	margin-top:0px;
+}
+.contentListShow{
+	list-style: none;
+}
+.pad .contentListShow{
+	margin:-20px;
+}
+

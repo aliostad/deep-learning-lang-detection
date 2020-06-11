@@ -1,0 +1,49 @@
+// -*-c++-*-
+
+#ifndef WRAPPERS_H
+#define WRAPPERS_H
+
+#include <iostream>
+#include <cstdlib>
+#include "structures.h"
+
+% for model in models:
+class ${model.name};
+% endfor
+
+% for model in models:
+% if model.doc:
+///${model.doc}
+% endif
+class ${model.name} {
+  public:
+  _${model.name}* ptr;
+  ${model.name}(_${model.name}* ptr = NULL);
+
+  // Accessors
+%   for key in model.data.keys():
+  ${conversions[model.data[key]]} ${key}();
+%   endfor
+
+  // Actions
+%   for func in model.functions.keys():
+  bool ${func}(\
+%     for arg in model.functions[func]:
+%       if model.functions[func][0] != arg:
+, \
+%       endif
+%       if isinstance(arg[1], Model):
+${arg[1].name}& ${arg[0]}\
+%       else:
+${conversions[arg[1]]} ${arg[0]}\
+%       endif
+%     endfor
+);
+%   endfor
+
+  friend std::ostream& operator<<(std::ostream& stream, ${model.name} ob);
+};
+
+% endfor
+
+#endif

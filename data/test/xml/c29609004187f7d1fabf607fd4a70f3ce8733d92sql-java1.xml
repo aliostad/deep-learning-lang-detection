@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<mapper namespace="java" useCache="true" >
+	<sql id="pageqry3"><!-- see class temp.RunTimeSQL -->
+	<![CDATA[
+		sql.append(" select owner , tablespace_name from all_all_tables where 1=1 \n");
+		if(rm.isValid("owner") )
+		sql.append(" and owner = :owner  \n");
+	  ]]>
+	</sql>
+	
+	<sql id="pageqry4"><!-- see class temp.RunTimeSQL -->
+		<![CDATA[
+			sql.append(" select owner , tablespace_name from all_all_tables where 1=1 \n");
+			if(rm.isValid("owner") )
+			sql.append(" and owner = :owner  \n");
+		  ]]>
+	</sql>
+</mapper> 

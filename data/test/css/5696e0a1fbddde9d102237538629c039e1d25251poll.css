@@ -1,0 +1,15 @@
+body { text-align: center; }
+body, form, input { margin: 0; padding: 0; font-size: 12px; color: #666; }
+img { border: 0 none; }
+a { text-decoration: none; color: #ff3300; padding: 5px; }
+a:hover { background-color: #ff3300; color: #fff; }
+#writePoll { background: #fff url(image/poll_back.gif) no-repeat top left; padding: 10px; }
+#writePoll div.title { font-family: Dotum, sans-serif; font-size: 16px; font-weight: bold; padding: 5px 0px 5px 0px; border-bottom: #ddd 1px solid; text-align: left; }
+#writePoll div.subject { padding: 5px 0px 5px 0px; }
+#writePoll input { border: #ccc 2px solid; background-color: #fff; padding: 3px; width: 300px; vertical-align: middle; }
+#writePoll input:focus { border: green 2px solid; }
+#writePoll input:hover { background-color: #f5f5f5; }
+#writePoll div.options ol { margin: 10px; padding: 10px; }
+#writePoll div.options ol li { margin-bottom: 3px; }
+#writePoll div.help { margin: 10px 0px 15px 0px; padding: 5px; border: #ddd 1px dotted; line-height: 160%; text-align: left; font-size: 11px; font-family: Dotum, sans-serif; }
+#writePoll input.s { width: 100px; margin-right: 3px; border: #ddd 2px solid; font-weight: bold; }

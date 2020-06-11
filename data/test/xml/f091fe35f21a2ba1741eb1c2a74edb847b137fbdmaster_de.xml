@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalogue xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <!-- include plugin language files -->
+    <xi:include href="plugins/blog_de.xml#xpointer(//catalogue/message)" parse="xml"/>
+    <xi:include href="plugins/gallery_de.xml#xpointer(//catalogue/message)" parse="xml"/>
+    <xi:include href="plugins/siteoptions_de.xml#xpointer(//catalogue/message)" parse="xml"/>
+    <xi:include href="plugins/plugin_file_de.xml#xpointer(//catalogue/message)" parse="xml"/>
+     
+    <message key="Collection"></message>
+    <message key="Create/Edit">Erzeugen/Editieren</message>
+    <message key="Configuration">Konfiguration</message>
+    <message key="Properties">Eigenschaften</message>
+
+    <message key="Create new Collection">Neue Collection erzeugen</message>
+    
+    <message key="Add .configxml">.configxml hinzufügen</message>
+    <message key="Add .configxml.children">.configxml.children hinzufügen</message>
+    <message key="Edit .configxml">.configxml editieren</message>
+    <message key="Edit .configxml.children">.configxml.children editieren</message>
+    
+    <message key="Edit">Editieren</message>
+    <message key="Copy">Kopieren</message>
+    <message key="Move/Rename">Verschieben/Umbenennen</message>
+    <message key="Delete">Löschen</message>
+    <message key="Move">Verschieben</message>
+
+    <message key="Edit in {editor}">Mit {editor} editieren</message>
+	<message key="Download more themes">Andere Layouts herunterladen</message>
+
+    <!--<message key="Edit in bxe"></message>
+    <message key="Edit in kupu"></message>
+    <message key="Edit in fck"></message>
+    <message key="Edit in oneform"></message>-->
+
+    <message key="Resource {resource}"></message>
+    
+    <message key="Create new {resourcetype}"></message>
+    <message key="Create new xhtml">Neue XHTML-Datei erzeugen</message>
+    <message key="Create new file">Neue Datei hinzufügen</message>
+    <message key="Create new archive">Dateien aus einem ZIP-Archiv hinzufügen</message>
+    <message key="Create new gallery">Neue Galerie erzeugen</message>
+
+    <message key="General Options">Globale Optionen</message>
+    <message key="Edit Site-Options">Seiten-Optionen</message>
+    <message key="Edit Users">Benutzer verwalten</message>
+
+    <!-- create a new collection -->
+    <message key="name">Name</message>
+    <message key="resource">Resource</message>
+    <message key="send">Speichern</message>
+    
+    <!-- create a new resource -->
+    <message key="lang">Sprache</message>
+    <message key="template">Vorlage</message>
+    <message key="editor">Editor</message>
+    
+    <message key="Edit in bxe">Im BXE editieren</message>
+    <message key="Edit in kupu">In Kupu editieren</message>
+    <message key="Edit in fck">Im FCKEditor editieren</message>
+    <message key="Edit in oneform">Als Text editieren</message>
+    <message key="Properties">Eigenschaften</message>
+    <message key="Edit Permissions">Berechtigungen</message>
+
+    
+    <message key="bxe">BXE</message>
+    <message key="kupu">Kupu</message>
+    <message key="fck">FCKeditor</message>
+    <message key="oneform">Oneform</message>
+    <message key="de">Deutsch</message>
+    <message key="en">Englisch</message>
+  
+   <message key="Welcome to Flux CMS">Willkommen bei Flux CMS</message>
+   <message key="Username:">Benutzername:</message>
+   <message key="Password:">Passwort:</message>
+   <message key="Lost your password?">Dein Passwort vergessen?</message>
+   <message key="Get a new one.">Ein Neues erhalten</message>
+   
+   <message key="home">Startseite</message>
+   <message key="help">Hilfe</message>
+   <message key="logout">Sitzung beenden</message>
+   <message key="delete tmp">tmp löschen</message>
+   <message key="User:">Benutzer:</message>
+   
+   
+    <message key="Site-Options">Seiten Optionen</message>
+    <message key="Post Categories">Post Kategorien</message>
+    <message key="Post Comments">Post Kommentare</message>
+    <message key="Link Categories">Link Kategorien</message>
+    
+    <message key="Edit Properties for {0}.">Bearbeiten der Eigenschaften für {0}.</message>
+    
+     <!-- permissions -->
+    <message key="Permissions for">Berechtigungen für</message>
+    <message key="Permission">Berechtigung</message>
+    <message key="Inherit">Erben</message>
+    <message key="Update">Aktualisieren</message>
+    
+    
+    <!-- newsletter -->
+    <message key="Edit Groups">Gruppen editieren</message>
+    <message key="Edit Senders">Absender editieren</message>
+    <message key="Edit Mail Servers">Mail Server editieren</message>
+    <message key="User Management">Benutzer Übersicht</message>
+    <message key="Create Newsletter">Newsletter erstellen</message>
+    <message key="Send Newsletter">Newsletter senden</message>
+    <message key="Newsletter Archive">Newsletter Archiv</message>
+    <message key="Generate from Feed">Aus Feed generieren</message>
+    <message key="Edit RSS Feeds">RSS Feeds editieren</message>
+    <message key="Management">Verwaltung</message>
+    <message key="Newsletters">Newsletter</message>
+    <message key="Newsletter Preview">Newsletter Vorschau</message>
+    <message key="Preview">Vorschau</message>
+    <message key="Send">Senden</message>
+    <message key="Import Users">Benutzer importieren</message>
+    <message key="CSV-File">CSV-Datei</message>
+    <message key="Group">Gruppe</message>
+    <message key="Import">Importieren</message>
+    <message key="Generate">Generieren</message>
+    <message key="From">Absender</message>
+    <message key="To">Empfänger</message>
+    <message key="Subject">Subjekt</message>
+    <message key="Add Attachment">Anhang</message>
+    <message key="Embed Images">Bilder einbetten</message>
+    <message key="Publish Online">Online publizieren</message>
+    <message key="Your newsletter is being sent">Ihr Newsletter wird verschickt</message>
+    <message key="ERROR: Select at least one group">FEHLER: Wählen Sie mindestens eine Gruppe aus</message>
+    <message key="WARNING: The following templates do not match a database field, you should correct them before sending the newsletter:">ACHTUNG: Die folgenden Templates konnten in der Datenbank nicht gefunden werden und sollten vor dem Versenden korrigiert werden:</message>
+
+    <message key="act_newsletter-back-feed">Newsletter aus Feed erstellen</message>
+    <message key="act_newsletter-back-send">Newsletter senden</message>
+    <message key="act_newsletter-back-archive">Newsletter Archiv anzeigen</message>
+    <message key="act_newsletter-back-manage">Newsletter Abonnenten anzeigen</message>
+    
+    <message key="act_xhtml-back-edit_bxe">Editieren mit BXE</message>
+    <message key="act_xhtml-back-edit_fck">Editieren mit FCKeditor</message>
+    <message key="act_xhtml-back-edit_oneform">Editieren mit Oneform</message>
+    <message key="act_xhtml-back-edit_kupu">Editieren mit Kupu</message>
+    
+    <message key="act_gallery-back-gallery">Gallery anzeigen</message>
+    <message key="act_gallery-back-edit_image">Editieren mit Image</message>
+    
+    <message key="act_blog-back-post">Blog Einträge erfassen</message>
+    <message key="act_blog-back-categories">Kategorien editieren</message>
+    <message key="act_blog-back-blogroll">Links editieren</message>
+    <message key="act_blog-back-gallery">Gallery editieren</message>
+    <message key="act_blog-back-files">Dateien editieren</message>
+    <message key="act_blog-back-options">Blog Optionen editieren</message>
+    <message key="act_blog-back-private">Privaten Feed editieren</message>
+    <message key="act_admin_dbforms2-back-blogcomments">Blog Kommentare editieren</message>
+    
+    <message key="act_admin_dbforms2-back-newsletter_feeds">Feeds editieren</message>
+    <message key="act_admin_dbforms2-back-newsletter_from">Absender editieren</message>
+    <message key="act_admin_dbforms2-back-newsletter_groups">Gruppen editieren</message>
+    <message key="act_admin_dbforms2-back-newsletter_users">Benutzer editieren</message>
+    <message key="act_admin_dbforms2-back-newsletter_mailservers">Mail Server editieren</message>
+    <message key="act_admin_dbforms2-back-users">Benutzer editieren</message>
+    <message key="act_admin_dbforms2-back-perm_groups">Gruppen editieren</message>
+    
+    <message key="act_permissions-back-manage">Berechtigungen editieren</message>
+    <message key="act_permissions-back-admin">Zugriff auf Admin Bereich</message>
+    <message key="act_permissions-back-themes">Themes herunterladen</message>
+    <message key="act_permissions-back-siteoptions">Seitenoptionen</message>
+        
+    <message key="act_collection-front-read">Collection anzeigen</message>
+    <message key="act_collection-front-read_navi">In Navigation anzeigen</message>
+    <message key="act_collection-back-properties">Properties editieren</message>
+    <message key="act_collection-back-configxml">.configxml editieren</message>
+    <message key="act_collection-back-create">Ressourcen erstellen</message>
+    <message key="act_collection-back-copy">Ressourcen kopieren</message>
+    <message key="act_collection-back-delete">Ressourcen löschen</message>
+    <message key="act_collection-back-edit_file">Ressourcen mit File editieren</message>
+    
+</catalogue>

@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font: normal 14px sans-serif;
+    background:#305066;
+    animation: zoom .8s;
+}
+.message-box {
+    list-style: none;
+    max-width: 800px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 10px;
+}
+.message {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    animation: insert .6s;
+}
+.message:nth-child(2n + 1) {
+    color: #808080;
+}
+.message:nth-child(2n) {
+    color: #60686d;
+    justify-content: flex-end;
+}
+.message:nth-child(2n + 1) .info {
+    text-align: right;
+}
+.message:nth-child(2n) .info {
+    order: 3;
+}
+.message .info a {
+    display: block;
+    text-decoration: none;
+    color: #DB6968;
+    font-weight: bold;
+    /*限制用户名长度*/
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0 3px 0;
+}
+.message .info span {
+    font-size: 11px;
+    color: #9ca7af;
+}
+.message .avatar {
+    width: 8%;
+}
+.message:nth-child(2n + 1) .avatar{
+    padding: 10px 7px 0 14px;
+}
+.message:nth-child(2n) .avatar {
+    order: 2;
+    padding: 10px 14px 0 7px;
+}
+.message .avatar img {
+    border-radius: 50%;
+    border: 3px solid #A8D7FF;
+}
+.message:nth-child(2n) .avatar img {
+    float: right;
+}
+.message p {
+    width: 50%;
+    padding: 18px 22px;
+    position: relative;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+.message:nth-child(2n+1) p {
+    background-color:  #f3f3f3;
+}
+.message:nth-child(2n) p {
+    order: 1;
+    background-color: #22C3AA;
+    color: white;
+}
+.message:nth-child(2n) p:after,
+.message:nth-child(2n + 1) p:after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    top: 17px;
+}
+.message:nth-child(2n+1) p:after {
+    left: -9px;
+    border: 2px solid #f3f3f3;
+}
+.message:nth-child(2n) p:after {
+    right: -9px;
+    border: 2px solid #22C3AA;
+}
+.message-write {
+    max-width: 800px;
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+}
+.message-write input[type="text"],
+.message-write textarea {
+    color: #444;
+    font: inherit;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #cecece;
+    background-color:  #fefefe;
+    box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.06);
+    width: 100%;
+}
+.message-write input[type="text"] {
+    padding: 6px 20px;
+    margin-bottom: 20px;
+}
+.message-write textarea {
+    overflow: auto;
+    min-height: 80px;
+    padding: 15px 20px;
+}
+.message-write img {
+    border-radius: 50%;
+    margin-top: 12px;
+    border: 3px solid #A8D7FF;
+}
+.message-write button {
+    float: right;
+    background-color: #87bae1;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 12px;
+}
+
+@media only screen and (max-width: 800px) {
+    .message-box {
+        margin-top: 15px;
+    }
+    .message-box p {
+        width: 100%;
+    }
+    .message:nth-child(2n + 1) .info {
+        order: 3;
+        text-align: left;
+    }
+    .message:nth-child(2n + 1) .avatar {
+        order: 2;
+    }
+    .message:nth-child(2n + 1) p {
+        order: 1;
+    }
+    .message:nth-child(2n) {
+        justify-content: flex-start;
+    }
+    .message .info {
+        width: auto;
+    }
+    .message .info a {
+        padding-top: 15px;
+    }
+    .message:nth-child(2n) .avatar,
+    .message:nth-child(2n + 1) .avatar {
+        padding: 15px 10px 0 18px;
+        width: auto;
+    }
+    .message:nth-child(2n) p:after,
+    .message:nth-child(2n + 1) p:after {
+        width: 12px;
+        height: 12px;
+        left: 28px;
+        bottom: -6px;
+        top: initial;
+    }
+}
+
+@keyframes zoom {
+    0% {opacity: 0; transform: scale(1.12);}
+    100% {opacity: 1; transform: scale(1);}
+}
+@keyframes insert {
+    0% {opacity: 0; transform: translateY(-80px);}
+    100% {opacity: 1; transform: translateY(0);}
+}

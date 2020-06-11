@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/taranis</property>
+    <property name="hibernate.connection.username">arturohv</property>
+    <property name="hibernate.connection.password">bastos</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <mapping class="entities.RolePermission"/>
+    <mapping class="entities.InvoiceHeader"/>
+    <mapping class="entities.Permission"/>
+    <mapping class="entities.InvoiceDetail"/>
+    <mapping class="entities.ProductType"/>
+    <mapping class="entities.PhoneType"/>
+    <mapping class="entities.Role"/>
+    <mapping class="entities.MeasureUnit"/>
+    <mapping class="entities.PersonPhones"/>
+    <mapping class="entities.PriceListType"/>
+    <mapping class="entities.RoleUser"/>
+    <mapping class="entities.ProductClassification"/>
+    <mapping class="entities.StockLevelProduct"/>
+    <mapping class="entities.PersonType"/>
+    <mapping class="entities.DocumentStatus"/>
+    <mapping class="entities.MainMenu"/>
+    <mapping class="entities.PersonAddress"/>
+    <mapping class="entities.CategoryClass"/>
+    <mapping class="entities.TaxType"/>
+    <mapping class="entities.Category"/>
+    <mapping class="entities.Person"/>
+    <mapping class="entities.TaxGroup"/>
+    <mapping class="entities.ProductImages"/>
+    <mapping class="entities.Inventory"/>
+    <mapping class="entities.User"/>
+    <mapping class="entities.OrderDetail"/>
+    <mapping class="entities.AddressType"/>
+    <mapping class="entities.DocumentType"/>
+    <mapping class="entities.PriceListProduct"/>
+    <mapping class="entities.Product"/>
+    <mapping class="entities.Customer"/>
+    <mapping class="entities.OrderHeader"/>
+    <mapping class="entities.Store"/>
+  </session-factory>
+</hibernate-configuration>

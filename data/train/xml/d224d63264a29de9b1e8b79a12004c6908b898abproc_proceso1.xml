@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<global_process logfile="">
+    <process>
+	<operation>operacion1</operation>
+	<failure>operacion3</failure>
+	<success></success>
+	<completion>operacion2</completion>
+    </process>
+    <process>
+	<operation>operacion2</operation>
+	<failure>operacion4</failure>
+	<success></success>
+	<completion>operacion5</completion>
+    </process>
+     <!--process>
+	<operation>operacion5</operation>
+	<failure></failure>
+	<success></success>
+	<completion></completion>
+    </process-->
+</global_process>
+

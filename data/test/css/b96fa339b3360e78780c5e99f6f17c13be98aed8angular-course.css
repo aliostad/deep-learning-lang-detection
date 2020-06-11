@@ -1,0 +1,107 @@
+/* 
+Scrollspy requires the use of 'position: relative;' on the element you're spying on.
+*/
+
+body {
+    position: relative;
+    padding-top: 50px;
+}
+
+i {
+    color: black;
+}
+
+.affix {
+    top: 70px;
+    width: 213px;
+}
+
+.affix-bottom {
+    position: absolute;
+    width: 213px;
+}
+
+@media (min-width: 1200px) {
+    .affix {
+        width: 263px;
+    }
+    .affix-bottom {
+        width: 263px;
+    }
+    body {
+        background-color: #F7FDFA;
+    }
+}
+
+/* level 1 */
+
+.nav .active {
+    font-weight: bold;
+    color: #168CBF;
+    /*border-left: 2px solid #168CBF;*/
+}
+
+/* level 2 */
+
+.nav .nav {
+    display: none;
+}
+
+.nav .active .nav {
+    display: block;
+    padding-left: 10px;
+    /*border-left: 2px solid #168CBF;*/
+}
+
+.nav .nav a {
+    font-weight: normal;
+    font-size: 0.85em;
+}
+
+.nav .nav span {
+    margin: 0 5px 0 2px;
+}
+
+.nav .nav .active a,
+.nav .nav .active:hover a,
+.nav .nav .active:focus a {
+    font-weight: bolder;
+    left:-10px;
+    padding-left: 20px;
+    border-left: 2px solid #168CBF;
+}
+
+/* level 3 */
+
+.nav .nav .nav {
+    display: none;
+}
+
+.nav .nav .active .nav {
+    display: block;
+    padding-left: 10px;
+    /*border-left: 2px solid #168CBF;*/
+}
+
+.nav .nav .nav a {
+    font-weight: normal;
+    font-size: 0.75em;
+}
+
+.nav .nav .nav span {
+    margin: 0 5px 0 2px;
+}
+
+.nav .nav .nav .active a,
+.nav .nav .nav .active:hover a,
+.nav .nav .nav .active:focus a {
+    font-weight: bold;
+    left:-20px;
+    padding-left: 30px;
+    border-left: 2px solid #168CBF;
+}
+
+
+.img-logo {
+    width: 100px;
+}

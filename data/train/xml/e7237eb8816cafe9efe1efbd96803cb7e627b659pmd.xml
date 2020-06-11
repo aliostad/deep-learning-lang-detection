@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="4.3" timestamp="2013-04-12T10:46:12.731">
+<file name="/scratch/jenkins/workspace/jclouds-maven-site-1.5.10/labs/iam/src/main/java/org/jclouds/iam/config/IAMRestClientModule.java">
+<violation beginline="34" endline="34" begincolumn="8" endcolumn="39" rule="DuplicateImports" ruleset="Import Statement Rules" package="org.jclouds.iam.config" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#DuplicateImports" priority="4">
+Avoid duplicate imports such as 'org.jclouds.iam.features.UserApi'
+</violation>
+</file>
+</pmd>

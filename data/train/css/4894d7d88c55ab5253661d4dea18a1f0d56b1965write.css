@@ -1,0 +1,103 @@
+/*//////////////////////////////////////////////////*/
+/*//////////last-date/////2014.11.05////////////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////target/////board/write//////////////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////author/////FreshSJ//////////////////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////publisher/////FreshD&D//////////////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////copyright/////CodeCake//////////////////*/
+/*//////////////////////////////////////////////////*/
+
+#wrapper article #section_write #write_wrapper form {
+    position:relative;
+    width:900px;
+    margin:30px auto;
+    padding:30px;
+    border-radius:10px;
+    background-color:#f1f1f1;
+    box-shadow:0 1px 1px rgba(0,0,0,0.5);
+}
+#wrapper article #section_write #write_wrapper form ul li h3 {
+    font-size:20px; line-height:30px; font-weight:700; color:#403038;
+}
+#wrapper article #section_write #write_wrapper form ul li input[type="text"],#wrapper article #section_write #write_wrapper form ul li input[type="password"] {
+    height:40px;
+    padding:5px;
+    border-radius:5px;
+    border:2px solid #ffcbb6;
+}
+#wrapper article #section_write #write_wrapper form ul li input[type="text"]:focus,#wrapper article #section_write #write_wrapper form ul li input[type="password"]:focus { border:2px solid #eb8d78; }
+#wrapper article #section_write #write_wrapper form ul li input[type="text"] { width:90%; margin-left:5%; }
+#wrapper article #section_write #write_wrapper form ul li input[type="checkbox"] { display:none; }
+#wrapper article #section_write #write_wrapper form ul li input[type="checkbox"]+label {
+    display:inline-block;
+    width:100px; height:30px;
+    margin:20px 0;
+    line-height:26px; text-align:center; color:#eb8d78;
+    border:2px solid #eb8d78;
+    border-radius:5px;
+    background-color:transparent;
+    cursor:pointer;
+    transition:all 0.3s ease-out;
+}
+#wrapper article #section_write #write_wrapper form ul li input[type="checkbox"]+label:hover {
+    color:#ff665f; background-color:#ffcbb6;
+}
+#wrapper article #section_write #write_wrapper form ul li input[type="checkbox"]:checked+label {
+    color:#ffcbb6;
+    border-color:#eb8d78;
+    background-color:#eb8d78;
+}
+#wrapper article #section_write #write_wrapper form ul li input[type="checkbox"]:checked ~ #password_wrapper { display:block; }
+#wrapper article #section_write #write_wrapper form ul li  textarea {
+    width:90%; height:300px;
+    margin-left:5%;
+    font-size:16px;
+    padding:10px;
+    border-radius:10px;
+    border:2px solid #ffcbb6;
+}
+#wrapper article #section_write #write_wrapper form ul li  textarea:focus { border:2px solid #eb8d78; }
+#wrapper article #section_write #write_wrapper form ul li input[type="file"] { display:none; }
+#wrapper article #section_write #write_wrapper form ul li input[type="file"]+label {
+    display:inline-block;
+    width:100px; height:30px;
+    line-height:26px; text-align:center; color:#eb8d78;
+    border:2px solid #eb8d78;
+    border-radius:5px;
+    background-color:transparent;
+    cursor:pointer;
+    transition:all 0.3s ease-out;
+}
+#wrapper article #section_write #write_wrapper form ul li input[type="file"]+label:hover {
+    color:#ff665f; background-color:#ffcbb6;
+}
+#wrapper article #section_write #write_wrapper form ul li div#password_wrapper { display:none; margin-bottom:20px; }
+#wrapper article #section_write #write_wrapper form ul li div#password_wrapper h3 {
+    display:inline-block; margin:0 20px;
+}
+#wrapper article #section_write #write_wrapper form ul li div#password_wrapper input[type="password"] {
+    display:inline-block;
+}
+#wrapper article #section_write #write_wrapper form div#menu_wrapper { text-align:center; }
+#wrapper article #section_write #write_wrapper form div#menu_wrapper input[type="submit"],#wrapper article #section_write #write_wrapper form div#menu_wrapper input[type="reset"],#wrapper article #section_write #write_wrapper form div#menu_wrapper input[type="button"] {
+    display:inline-block;
+    width:100px; height:30px;
+    margin:20px 0;
+    line-height:26px; text-align:center; color:#eb8d78;
+    border:2px solid #eb8d78;
+    border-radius:5px;
+    background-color:transparent;
+    cursor:pointer;
+    transition:all 0.3s ease-out;
+}
+#wrapper article #section_write #write_wrapper form div#menu_wrapper input[type="submit"]:hover,#wrapper article #section_write #write_wrapper form div#menu_wrapper input[type="reset"]:hover,#wrapper article #section_write #write_wrapper form div#menu_wrapper input[type="button"]:hover { color:#ff665f; background-color:#ffcbb6; }
+
+.warning_message {
+    width:90%;
+    margin:0 auto;
+    text-align:right; font-style:italic; color:#ff0000;
+    transition:all 0.3s ease-out;
+}

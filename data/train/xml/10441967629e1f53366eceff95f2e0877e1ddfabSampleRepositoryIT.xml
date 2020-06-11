@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <sample id="1" name="bodo" />
+    <sample id="2" name="duke" />
+    <sample id="3" name="robert" />
+    <sample id="4" name="martin" />
+    <sample id="5" name="nadja" />
+    <sample id="6" name="matthias" />
+    <sample id="7" name="stephan" />
+    <sample id="8" name="rainer" />
+    <sample id="9" name="yvonne" />
+    <sample id="10" name="oli" />
+    <sample id="11" name="tania" />
+    <sample id="12" name="laura" />
+    <sample id="13" name="kai" />
+    <sample id="14" name="volker" />
+    <sample id="15" name="christian" />
+</dataset>

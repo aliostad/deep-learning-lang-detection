@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="install-birt-in-maven" default="install" basedir=".">
+	<taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
+	
+	<description>Install BIRT in Maven</description>
+	<property name="tmp.dir" value="${java.io.tmpdir}" />
+	<property name="birt.groupid" value="org.eclipse.birt" />
+	<property name="birt.pom" value="birt-pom.xml" />
+	
+	<macrodef name="append">
+		<text name="line" />
+		<sequential>
+			<echo append="true" file="${birt.pom}" encoding="UTF-8">@{line}
+</echo>
+		</sequential>
+	</macrodef>
+	
+	<target name="install">
+		<echo message="Make sure you have installed ant-contrib (http://ant-contrib.sourceforge.net) in your Ant path!" />
+		<echo message="for-Task is broken in ant-contirb-1.0b3.jar! Please patch antcontrib.properties inside the jar manually." />
+		<echo message="Please download the current runtime release from http://download.eclipse.org/birt/downloads/" />
+		<delete file="${birt.pom}" />
+
+		<basename property="birt.pom.artifact" file="${birt.pom}" suffix=".xml" />
+		<input message="Define the full path to birt-runtime-*.zip" addproperty="file.birt.zip" />
+		<basename property="birt.basename" file="${file.birt.zip}" suffix=".zip" />
+		<propertyregex property="birt.version" input="${birt.basename}" regexp="(.*)\-(\d)_(\d)_(\d)$" select="\2.\3.\4" />
+		<echo message="You are using BIRT version ${birt.version}" />
+		<unzip src="${file.birt.zip}" dest="${tmp.dir}">
+		</unzip>
+		<append>&lt;?xml version='1.0' encoding='UTF-8'?&gt;</append>
+		<append>&lt;project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"&gt;</append>
+		<append>    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;</append>
+		<append>    &lt;groupId&gt;${birt.groupid}&lt;/groupId&gt;</append>
+		<append>    &lt;artifactId&gt;${birt.pom.artifact}&lt;/artifactId&gt;</append>
+		<append>    &lt;version&gt;${birt.version}&lt;/version&gt;</append>
+		<append>    &lt;name&gt;BIRT&lt;/name&gt;</append>
+		<append>    &lt;description&gt;Metapackage for Eclipse BIRT ReportEngine&lt;/description&gt;</append>
+		<append>    &lt;dependencies&gt;</append>
+		
+		<for param="file">
+			<fileset dir="${tmp.dir}/${birt.basename}/ReportEngine/lib" />
+			<sequential>	
+				<basename property="file.basename" file="@{file}" suffix=".jar" />
+				<echo message="@{file} -> ${file.basename}" />
+				<exec executable="cmd">
+					<arg value="/c" />
+					<arg value="mvn" />
+					<arg value="install:install-file" />
+					<arg value="-DgroupId=${birt.groupid}" />
+					<arg value="-DartifactId=${file.basename}" />
+					<arg value="-Dversion=${birt.version}" />
+					<arg value="-Dpackaging=jar" />
+					<arg value="-Dfile=@{file}" />
+				</exec>
+				<append>        &lt;dependency&gt;</append>
+				<append>            &lt;groupId&gt;${birt.groupid}&lt;/groupId&gt;</append>
+				<append>            &lt;artifactId&gt;${file.basename}&lt;/artifactId&gt;</append>
+				<append>            &lt;version&gt;${birt.version}&lt;/version&gt;</append>
+				<append>            &lt;type&gt;jar&lt;/type&gt;</append>
+				<append>            &lt;scope&gt;compile&lt;/scope&gt;</append>
+				<append>        &lt;/dependency&gt;</append>
+				<var name="file.basename" unset="true" />
+			</sequential>
+		</for>
+		<append>    &lt;/dependencies&gt;</append>
+		<append>&lt;/project&gt;</append>
+		
+		<exec executable="cmd">
+			<arg value="/c" />
+			<arg value="mvn" />
+			<arg value="install:install-file" />
+			<arg value="-DgroupId=${birt.groupid}" />
+			<arg value="-DartifactId=${birt.pom.artifact}" />
+			<arg value="-Dversion=${birt.version}" />
+			<arg value="-Dpackaging=pom" />
+			<arg value="-Dfile=${birt.pom}" />
+		</exec>
+		<echo message="Everything installed. You *must* replace the version number of your pom.xml -> artifactId:org.eclipse.birt with '${birt.version}'!" />
+	</target>
+	
+	<target name="add-to-pom">
+		<echo append="true" file="${birt.pom}" encoding="UTF-8">
+		${param1}
+		</echo>
+	</target>
+</project>

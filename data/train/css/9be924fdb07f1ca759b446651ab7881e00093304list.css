@@ -1,0 +1,51 @@
+/* List of API endpoints styles */
+
+/* Search / filter field */
+.search-field-wrapper {
+    width: 100%;
+}
+
+.search-field-wrapper .search-field {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 10px 0;
+    font-size: 110%;
+    outline: none;
+}
+
+/* API endpoint list */
+
+ul.api-endpoints-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.api-endpoint {
+    border-left: 5px solid transparent;
+    list-style-type: none;
+    background-color: #ECECEC;
+    transition: .3s all linear;
+}
+
+.api-endpoint:nth-of-type(2n) {
+    background-color: #CCCCCC;
+}
+
+.api-endpoint:hover,
+.api-endpoint:active {
+    border-left-color: #1b1b1b;
+}
+
+.api-endpoint a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 110%;
+    color: #1b1b1b;
+}
+
+.api-endpoint a:hover,
+.api-endpoint a:active {
+    text-decoration: none;
+}

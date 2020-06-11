@@ -1,0 +1,41 @@
+#!/bin/bash
+
+#rm tmp*
+
+#i=100
+#let "z = 50+$i%50"
+#echo $z
+
+# test model 1
+echo 'Test model 1:'
+for (( i=1; i<=500; i++ )); do 
+echo $i
+let "time = 50+i%300"
+./test_model -m 1 -n 4 -tl $time > tmp$i 2>&1
+done 
+for (( i=501; i<=1000; i++ )); do 
+echo $i
+let "time = 50+i%300"
+./test_model -i 3 -m 1 -n 4 -tl $time > tmp$i 2>&1
+done 
+
+echo 'Error model 1:'
+grep '\[EE\]' tmp*
+
+# test model 4 
+echo 'Test model 4:'
+for (( i=1001; i<=1500; i++ )); do 
+echo $i
+let "time = 50+i%300"
+./test_model -m 4 -n 4 -tl $time > tmp$i 2>&1
+done 
+for (( i=1501; i<=2000; i++ )); do 
+echo $i
+let "time = 50+i%300"
+./test_model -i 3 -m 4 -n 4 -tl $time > tmp$i 2>&1
+done 
+
+
+echo 'Error model 2:'
+grep '\[EE\]' tmp*
+

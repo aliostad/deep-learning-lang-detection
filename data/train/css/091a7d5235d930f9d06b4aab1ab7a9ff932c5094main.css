@@ -1,0 +1,63 @@
+.show {display: block !important;}
+.api-method {
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #ddd;
+}
+.api-method.api-method-put {
+    background-color: #aed7f1;
+}
+.api-method.api-method-post {
+    background-color: #b8f1aa;
+}
+.api-method.api-method-delete {
+    background-color: #f1babf;
+}
+.api-url {
+    font-size: 14px;
+    font-family: monospace;
+}
+.api-request-action.loader {
+    padding-left: 20px;
+    background: url("img/loader.gif") no-repeat 50% 50%;
+    color: #fff;
+    cursor: wait;
+}
+.api-request-action {
+    text-align: center;
+    display: block;
+    color: #0088cc;
+    text-decoration: none;
+    cursor: pointer;
+}
+.api-header-value,
+.api-param-value {
+    width: 95%;
+}
+.api-entrypoint {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #9cc9f1;
+}
+.api-entrypoint > .row:first-child {
+    margin-bottom: 20px;
+}
+.api-entrypoint-documentation {display: none}
+.api-param-placeholder {
+    width: 65px;
+    border: 0;
+    background: transparent;
+    outline: 0;
+    border-bottom: 1px dashed #eee;
+    color: #ce9212;
+    font-size: 14px;
+    font-family: monospace;
+}
+
+.api-response {
+    overflow: scroll;
+    max-height: 200px;
+}

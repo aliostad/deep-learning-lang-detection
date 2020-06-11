@@ -1,0 +1,102 @@
+<?xml version='1.0'?>
+<!DOCTYPE platform SYSTEM "http://simgrid.gforge.inria.fr/simgrid.dtd">
+
+<platform version="3">
+  <process function="agentMngt.cacheAgent" host="Server_0"/>
+  <process function="agentMngt.clientAgent" host="Client_000">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_001">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_002">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_003">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_004">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_005">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_006">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_007">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_008">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_009">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_00A">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_00B">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_00C">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_00D">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_00E">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_00F">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_00G">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_00H">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_00I">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_00J">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_00K">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_00L">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_00M">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_00N">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_00O">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_00P">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_00Q">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_00R">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_00S">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_00T">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_00U">
+    <argument value="Server_0"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_00V">
+    <argument value="Server_0"/>
+  </process>
+</platform>

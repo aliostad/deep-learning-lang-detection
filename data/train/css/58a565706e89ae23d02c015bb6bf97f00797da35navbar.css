@@ -1,0 +1,209 @@
+/* navbar structure ------------------------*/
+.navbar {
+    z-index: 4 !important;
+}
+.navbar, .navbar-inner .container #nav-top .nav-collapse .nav {
+	background-color: #232323;
+}
+.navbar #ad-container {
+    background-color: rgba(0,0,0,0.2);
+    padding: 5px 0;
+    text-align: center;
+}
+.navbar-inner {
+	overflow: hidden;
+}
+.navbar-inner,
+.navbar-inner #nav-top, .navbar-inner .container #nav-top > * > *, 
+.navbar-inner .container #nav-top .nav-collapse .nav li, .navbar-inner .container #nav-top .nav-collapse .nav li a {
+	height: 50px;
+}
+.navbar-inner .container {
+	padding: 0;
+}
+.navbar-inner .container #nav-top {
+	display: table;
+	width: 100%;
+}
+.navbar-inner .container #nav-top > * {
+	float: left;
+}
+.navbar-inner .container #nav-top > * > *,
+.navbar-inner .container #nav-top .nav-collapse .nav li, .navbar-inner .container #nav-top .nav-collapse .nav li a {
+	display: table-cell;
+	vertical-align: middle;
+}
+.navbar-inner .container #nav-top .menu {
+	float: left;
+}
+.navbar-inner .container #nav-top .menu #nav-close {
+	display: block;
+	cursor: pointer;
+	padding: 0 10px 0 13px;
+}
+.navbar-inner .container #nav-top .menu #nav-close span {
+	margin: 0 10px 0 13px;
+}
+.navbar-inner .container #nav-top .brand a {
+	padding: 0 5px 0;
+}
+.navbar-inner .container #nav-top .brand a span{
+	font-size: 3.8rem;
+	margin-top: 1px;
+	display: block;
+}
+.navbar-inner .container #nav-top .title {
+	padding: 0 10px;
+	max-width: 53%;
+	font-size: 2.7rem;
+}
+.navbar-inner .container #nav-top .btn-navbar {
+	display: none;
+	float: right;
+	min-width: 45px;
+	text-align: center;
+}
+.navbar-inner .container #nav-top .nav-collapse {
+	float: right;
+}
+.navbar-inner .container #nav-top .nav-collapse .nav li a {
+	padding: 0 15px;
+}
+
+
+/* side-nav trigger --------------------------*/
+#nav-close {
+    backface-visibility: hidden;
+    line-height: 50px;
+    overflow: hidden;
+    position: relative;
+}
+#nav-close:before {
+    height: 100%;
+    left: 200%;
+    position: relative;
+    top: 0;
+    transition: left 0.3s ease 0s;
+    width: 100%;
+}
+#nav-close span {
+    display: inline-block;
+    left: 0;
+    line-height: 50px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    transition: left 0.3s ease 0s;
+}
+#nav-close.x span {
+    left: -300%;
+}
+#nav-close.x:before {
+    left: 0;
+}
+
+
+/* styles ----------------------------------*/
+.navbar, .navbar a, .navbar a:hover {
+	color: #fff;
+}
+.navbar-inner .container #nav-top .nav-collapse .nav li a:hover {
+	background-color: rgba(255,255,255,0.2);
+}
+.navbar-inner .container #nav-top .nav-collapse .nav li  {
+	font-size: 2.0rem;
+}
+.navbar-inner .container #nav-top .nav-collapse .nav li a.active {
+	background-color: rgba(255,255,255,0.1);
+}
+#nav-close {
+	font-size: 2.7rem;
+	opacity: 0.4;
+}
+#nav-close:hover {
+    opacity: 1;
+}
+#nav-close span {
+	font-size: 24px;
+}
+.btn-navbar [class^="icon-"] {
+	font-size: 2.3rem;
+	margin-top: 2px;
+	display: block;
+}
+
+
+/* Breakpoints -------------------------------*/
+@media (max-width: 979px) {
+	.navbar-inner .container #nav-top .menu #nav-close span {
+		margin: 0 10px 0;
+	}
+	.navbar-inner .container #nav-top .menu #nav-close {
+		padding: 0 10px 0;
+	}
+	.navbar-inner .container #nav-top .nav-collapse {
+		display: none;
+	}
+	.navbar-inner .container #nav-top .btn-navbar {
+		display: inline-table;
+		background-color: rgba(255,255,255,0.2);
+	}
+	
+	/* dropdown */
+	.navbar-inner .container #nav-top .nav-collapse .nav,
+	.navbar-inner .container #nav-top .nav-collapse .nav li, 
+	.navbar-inner .container #nav-top .nav-collapse .nav li a {
+		display: inherit;
+	}
+	.navbar-inner .container #nav-top .nav-collapse, 
+	.navbar-inner .container #nav-top .nav-collapse.collapse {
+		position: absolute;
+		width: 100%;
+	}
+	.navbar-inner .container #nav-top .nav-collapse {
+		height: 0;
+		overflow: hidden;
+		position: relative;
+		transition: height 0.35s ease 0s;
+	}
+	.navbar-inner .container #nav-top .nav-collapse.collapse {
+		display: none;
+	}
+	.navbar-inner .container #nav-top .nav-collapse.collapse .nav {
+		height: 0;
+	}
+	.navbar-inner .container #nav-top .nav-collapse.collapse.in {
+		display: block;
+		margin-top: 50px;
+		height: auto;
+	}
+	.navbar-inner .container #nav-top .nav-collapse.collapse.in .nav {
+		height: auto;
+		margin-left: 95px;
+	}
+	.navbar-inner .container #nav-top .nav-collapse .nav > li {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+		display: block;
+	}
+	.navbar-inner .container #nav-top .nav-collapse .nav > li > a {
+		display: block;
+		line-height: 30px;
+		margin-top: 0;
+		padding: 10px 15px;
+	}
+}
+
+@media (max-width: 659px) {
+	.navbar-inner .title {
+		font-size: 17px;
+		line-height: 17px;
+		max-width: 65%;
+	}
+}
+
+
+/* Questionable ------------------------------*/
+.navbar #ad-728x90 { /* where is this used? */
+    margin: 5px 0;
+}
+

@@ -1,0 +1,125 @@
+#!/usr/bin/env bash
+# set -eu
+
+#
+# Constants
+#
+
+SOFTWARE_PREFIX=~/.config/software
+HOMEBREW_PREFIX=$HOME/.homebrew
+
+#
+# Convention-based installer
+# npm-install--global => 'npm install --global'
+#
+
+invoke()
+{
+  echo "Installing software from $1"
+  echo ""
+
+  local installs="$(echo $1 | sed -e 's/--/@/g' -e 's/-/ /g' -e 's/@/ --/g' -e 's/_/-/g') ${@:2}"
+
+  while read line; do
+    local force=0
+
+    echo $line | grep -q '^!'
+    if [ $? -eq 0 ]; then
+      force=1
+    fi
+
+    local info=$(echo $line | sed 's/^!//')
+
+    echo $info | grep -q '^#'
+    if [ $? -eq 0 ]; then
+      continue
+    fi
+
+    echo $info | grep -vq '\S'
+    if [ $? -eq 0 ]; then
+      continue
+    fi
+
+    local program=$(echo $info | awk '{ print $1 }')
+    local installer=$(echo "$installs $program" | tr -s " ")
+    echo "Installing $program"
+
+    # if program exists and force is not set, skip it, otherwise, intall.
+    if [ -z "$(command -v $program)" ] || [ $force -eq 1 ]; then
+      echo $installer
+      bash -c "$installer || true"
+      hash -r
+    else
+        echo "$program: already installed...skipping!"
+    fi
+
+    echo ""
+  done < $SOFTWARE_PREFIX/$1
+}
+
+custom () {
+  source $SOFTWARE_PREFIX/custom-install
+}
+
+#
+# Arg Parsing
+#
+
+CMD=${1-''}
+
+if [ "$CMD" == "--dev" ]; then
+  $EDITOR $0
+  exit 0
+fi
+
+if [ "$CMD" == "--edit" ]; then
+  $EDITOR $SOFTWARE_PREFIX
+  exit 0
+fi
+
+if [ "$CMD" == "--view" ]; then
+  less $SOFTWARE_PREFIX/*
+  exit 0
+fi
+
+if [ "$CMD" == "--list" ]; then
+  find $SOFTWARE_PREFIX -type f
+  exit 0
+fi
+
+if [ "$CMD" == "--upgrade" ]; then
+  brew update
+  brew upgrade --all
+  exit 0
+fi
+
+#
+# main
+#
+
+# install homebrew
+if [ ! -d $HOMEBREW_PREFIX ]; then
+  echo "Installing homebrew..."
+  curl -#fSL http://github.com/mxcl/homebrew/tarball/master | tar xz —strip 1 -C $HOMEBREW_PREFIX
+  $HOMEBREW_PREFIX/bin/brew install git
+fi
+
+# set homebrew bin path
+export PATH=$HOMEBREW_PREFIX/bin:$PATH
+
+# update homebrew
+echo "Updating homebrew"
+brew update
+
+# software installations
+invoke brew-tap
+invoke brew-install
+invoke npm-install--global
+invoke rbenv-install --skip-existing
+invoke brew-cask-install
+custom
+
+# cleanup
+brew cleanup
+brew cask cleanup
+brew prune

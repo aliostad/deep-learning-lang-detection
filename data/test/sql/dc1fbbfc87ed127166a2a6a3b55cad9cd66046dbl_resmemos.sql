@@ -1,0 +1,54 @@
+SET DEFINE OFF;
+CREATE TABLE L_RESMEMOS
+(
+  RESNUMBER     INTEGER                         NOT NULL,
+  SEQ           INTEGER                         NOT NULL,
+  ACTIONDATE    DATE,
+  ACTIONCODE    VARCHAR2(80 BYTE),
+  MEMOTEXT      CLOB,
+  MEMOSTATUS    VARCHAR2(10 BYTE),
+  REFERENCESEQ  INTEGER,
+  CREATEDFOR    VARCHAR2(50 BYTE),
+  CREATEDBY     VARCHAR2(50 BYTE),
+  CREATEDDATE   DATE,
+  WHOSTAMP      VARCHAR2(50 BYTE),
+  DATESTAMP     DATE
+)
+LOB (MEMOTEXT) STORE AS (
+  TABLESPACE  DTW_ADV_TABLES
+  ENABLE      STORAGE IN ROW
+  CHUNK       16384
+  RETENTION
+  NOCACHE
+  LOGGING
+      STORAGE    (
+                  INITIAL          80K
+                  NEXT             1M
+                  MINEXTENTS       1
+                  MAXEXTENTS       UNLIMITED
+                  PCTINCREASE      0
+                  BUFFER_POOL      DEFAULT
+                  FLASH_CACHE      DEFAULT
+                  CELL_FLASH_CACHE DEFAULT
+                 ))
+TABLESPACE DTW_ADV_TABLES
+RESULT_CACHE (MODE DEFAULT)
+PCTUSED    0
+PCTFREE    10
+INITRANS   1
+MAXTRANS   255
+STORAGE    (
+            INITIAL          80K
+            NEXT             1M
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+            FLASH_CACHE      DEFAULT
+            CELL_FLASH_CACHE DEFAULT
+           )
+LOGGING 
+NOCOMPRESS 
+NOCACHE
+NOPARALLEL
+MONITORING;

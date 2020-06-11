@@ -1,0 +1,121 @@
+.gstarted .docs-content{
+    padding-right: 40px;
+
+    border-right: 1px solid #eee;
+}
+
+.gstarted .docs-content h3{
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.gstarted  .docs-content p, ul, li{
+    font-size: 16px;
+}
+
+.gstarted pre{
+    color: white;
+    border: 1px solid #455a64;
+    background-color: #455a64;
+}
+
+.gstarted.api h2{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.gstarted.api pre{
+    margin-bottom: 20px;
+
+    color: #333;
+    border: none;
+    background-color: rgba(69, 90, 100, 0.16);
+}
+
+.gstarted.api pre > h4{
+    font-weight: 700;
+}
+.gstarted.api .lead-paragraph h2 {
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid #eee;
+}
+.gstarted.api .lead-paragraph code {
+    font-size: 15px;
+}
+
+.gstarted.api .function-group {
+    margin-bottom: 15px;
+}
+
+.gstarted.api .function-group > header {
+    font-size: 24px;
+    font-weight: 500;
+
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #eee;
+}
+
+.gstarted.api .lead-paragraph,
+.gstarted.api .function-group {
+    margin-bottom: 30px;
+}
+
+.gstarted.api .function{
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+    font-size: 13px;
+    line-height: 1.42857143;
+
+    margin-left: -15px;
+    padding: 0 10px 25px;
+
+    word-wrap: break-word;
+    word-break: break-all;
+
+    color: #333;
+    border: none;
+    border-radius: 4px;
+}
+.gstarted.api .function:last-child {
+    padding-bottom: 0;
+}
+
+.gstarted.api .function > header {
+    font-size: 15px;
+    font-weight: 700;
+
+    display: inline-block;
+
+    margin-bottom: 11px;
+    padding-left: 5px;
+}
+
+.gstarted.api .function > .description {
+    font-size: 13px;
+
+    display: inline-block;
+
+    margin-bottom: 12px;
+    padding-left: 5px;
+
+    color: #777;
+}
+
+.gstarted.api .function > .example {
+    font-size: 13px;
+
+    margin-bottom: 0;
+    padding: 10px;
+
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+.gstarted.api .function > .example:not(:last-child) {
+    margin-bottom: 30px;
+}

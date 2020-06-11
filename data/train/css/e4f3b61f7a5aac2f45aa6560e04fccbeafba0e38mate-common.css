@@ -1,0 +1,60 @@
+/* 点击字段排序样式 */
+.sortBoth{
+	float:right;
+	position:relative;
+	top:2px; 
+} 
+
+.sortDesc{
+	display: none;
+	float:right;
+    position:relative;
+    top:4px; 
+}
+
+.sortAsc{
+	display: none;
+	float:right;
+	position:relative;
+    top:8px; 
+}
+
+.showDesc span{
+    color:#307ecc;
+}
+
+.showAsc span{
+    color:#307ecc;
+}
+.showBoth span{
+	color:#707070;
+}
+
+.showDesc .sortDesc{
+	display: block;
+}
+
+.showDesc .sortBoth{
+    display: none;
+}
+
+.showAsc .sortAsc{
+	display: block;
+}
+
+.showAsc .sortBoth{
+    display: none;
+}
+
+.showBoth .sortBoth{
+
+}
+
+/* 特定select的样式 */
+.mySelect{
+	width:70px;
+}
+
+.select2{
+	width:140px;
+}

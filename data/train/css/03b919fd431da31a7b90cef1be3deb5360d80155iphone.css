@@ -1,0 +1,108 @@
+@media only screen and (max-device-width: 480px) {
+html p {-webkit-text-size-adjust:170%}
+/*
+   == STRUCTURE: ========================
+    * Page width:            310 px
+    * Number of columns:     21
+    * Column width:          10 px
+    * Margin width:          5 px
+    * Custom iPhone spans
+   ======================================
+-------------------------------------------------------------- */
+
+.container {
+   width: 310px;
+   margin: 0 auto;
+   }
+
+/* Columns
+-------------------------------------------------------------- */
+
+/* Sets up basic grid floating and margin. */
+.span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-20, .span-21 {margin-right: 5px;}
+
+/* Use these classes to set the width of a column. */
+.span-1  { width: 10px;}
+/*.span-2  { width: 25px;} */
+.span-2  { width: 70px;}
+.span-3  { width: 40px;}
+.span-4  { width: 55px;}
+/*.span-5  { width: 70px;} */
+.span-5  { width: 190px;}
+.span-6  { width: 85px;}
+.span-7  { width: 100px;}
+.span-8  { width: 115px;}
+.span-9  { width: 130px;}
+.span-10 { width: 145px;}
+.span-11 { width: 370px;}
+.span-12 { width: 175px;}
+.span-13 { width: 500px;}
+.span-14 { width: 515px;}
+.span-15 { width: 220px;}
+.span-16 { width: 235px;}
+.span-17 { width: 250px;}
+.span-18 { width: 265px;}
+.span-19 { width: 280px;}
+.span-20 { width: 395px;}
+.span-21, div.span-21 { width: 310px; margin: 0; }
+
+
+/* Add these to a column to append empty cols. */
+.append-1  { padding-right: 15px;}
+.append-2  { padding-right: 30px;}
+.append-3  { padding-right: 45px;}
+.append-4  { padding-right: 60px;}
+.append-5  { padding-right: 75px;}
+.append-6  { padding-right: 90px;}
+.append-7  { padding-right: 105px;}
+.append-8  { padding-right: 120px;}
+.append-9  { padding-right: 135px;}
+.append-10 { padding-right: 150px;}
+.append-11 { padding-right: 165px;}
+.append-12 { padding-right: 180px;}
+.append-13 { padding-right: 195px;}
+.append-14 { padding-right: 210px;}
+.append-15 { padding-right: 225px;}
+.append-16 { padding-right: 240px;}
+.append-17 { padding-right: 255px;}
+.append-18 { padding-right: 270px;}
+.append-19 { padding-right: 285px;}
+.append-20 { padding-right: 300px;}
+
+
+/* Add these to a column to prepend empty cols. */
+.prepend-1  { padding-left: 15px;}
+.prepend-2  { padding-left: 30px;}
+.prepend-3  { padding-left: 45px;}
+.prepend-4  { padding-left: 60px;}
+.prepend-5  { padding-left: 75px;}
+.prepend-6  { padding-left: 90px;}
+.prepend-7  { padding-left: 105px;}
+.prepend-8  { padding-left: 120px;}
+.prepend-9  { padding-left: 135px;}
+.prepend-10 { padding-left: 150px;}
+.prepend-11 { padding-left: 165px;}
+.prepend-12 { padding-left: 180px;}
+.prepend-13 { padding-left: 195px;}
+.prepend-14 { padding-left: 210px;}
+.prepend-15 { padding-left: 225px;}
+.prepend-16 { padding-left: 240px;}
+.prepend-17 { padding-left: 255px;}
+.prepend-18 { padding-left: 270px;}
+.prepend-19 { padding-left: 285px;}
+.prepend-20 { padding-left: 300px;}
+
+/* -------------------------------------------------------------- 
+iphone */
+
+.ihide { display: none;}
+.no-alerts, .alerts, .foot {padding:0; min-width:0; width:100%;}
+.head {background: url(/images/header_icon_iphone.png) no-repeat top left;}
+ul.nav {background:transparent url(/images/navigation_bg.png) no-repeat -36px 0;}
+.openid_url {width:185px;}
+.day h1.date {
+   padding:0 30px 0 15px;
+   background-position-x:-30px;
+}
+
+}

@@ -1,0 +1,29 @@
+	#embeddedServiceLiveAgentButton .embeddedServiceLiveAgentHelpButton {
+    	bottom: 50px;
+    }
+    #embeddedServiceLiveAgentButton .embeddedServiceLiveAgentHelpButton .uiButton {
+    	font-size: 1.2rem;
+    	padding: 10px 20px;
+    	border-radius:12px;
+    	font-weight: bold;
+    }
+    #embeddedServiceLiveAgentButton .agentOnline {
+    	background: green none repeat scroll 0 0;
+    }
+    #embeddedServiceLiveAgentButton .agentOffline {
+    	background: #ff6666 none repeat scroll 0 0;
+    }
+    #embeddedServiceLiveAgentButton .agentOnline .embeddedServiceIcon::before {
+    	background: url("http://yateclient.yate.ro/uploads/UserGuide/muc.png") no-repeat scroll 0 0;
+    	content: '';
+    	float: left;
+    	width: 20px;
+    	height: 20px;
+    }
+    #embeddedServiceLiveAgentButton .agentOffline .embeddedServiceIcon::before {
+    	background: url("http://sendacarepackage.com/wp-content/uploads/icon-chat.png") no-repeat scroll 0 0;
+    	content: '';
+    	float: left;
+    	width: 20px;
+    	height: 20px;
+    }

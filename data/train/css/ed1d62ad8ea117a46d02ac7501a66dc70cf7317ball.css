@@ -1,0 +1,48 @@
+a.media.mediafile.mf_folder{
+	background-image: url(images/folder.png);
+	color: __link__  ;
+}
+
+a.media.mediafile.download{
+	background-image: url(images/download.png);
+}
+
+a.media.mediafile.detail{
+	background-image: url(images/lupe.png);
+	margin: 0;
+}
+
+.load {
+	background: url(images/load.gif) no-repeat center;
+	height: 20px;
+	padding: 6px;
+}
+
+.load3 {
+	background: url(images/load3.gif) no-repeat left;
+	height: 20px;
+	padding: 6px;
+}
+
+.filelistheader{
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.fileinfo {
+	font-size: 75%;
+	vertical-align:middle;
+}
+
+
+.ip {
+	font-size: 75%;
+	color:grey;
+}
+
+a.mmlink,
+td.mmLink {
+	
+padding: 0;
+margin: 0;
+}

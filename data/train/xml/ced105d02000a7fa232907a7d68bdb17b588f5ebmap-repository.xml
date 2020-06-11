@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userRepository" class="kz.epam.spadv.repository.MapUserRepository"/>
+    <bean id="auditoriumRepository" class="kz.epam.spadv.repository.MapAuditoriumRepository"/>
+    <bean id="eventRepository" class="kz.epam.spadv.repository.MapEventRepository"/>
+    <bean id="ticketRepository" class="kz.epam.spadv.repository.MapTicketRepository"/>
+    <bean id="counterRepository" class="kz.epam.spadv.repository.MapCounterRepository"/>
+    <bean id="winsRepository" class="kz.epam.spadv.repository.MapWinsRepository"/>
+
+</beans>

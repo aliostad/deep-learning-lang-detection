@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <!-- <property name="hibernate.connection.password">agua</property>
+        <property name="hibernate.connection.url">jdbc:mysql://192.168.1.70:3306/db_casita</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/db_casita</property>
+        <property name="hibernate.connection.username">root</property>
+         -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>
+        <property name="show_sql">true</property>
+        
+        <mapping class="Entidad.ClsEntidadCuenta"></mapping>
+        <mapping class="Entidad.ClsEntidadProductoHib"></mapping>
+        <mapping class="Entidad.ClsEntidadCategoriaHib"></mapping>
+        <mapping class="Entidad.ClsEntidadTipodocumentoHib"></mapping>
+        <mapping class="Entidad.ClsEntidadProveedorHib"></mapping>
+        <mapping class="Entidad.ClsEntidadEmpleadoHib"></mapping>
+        <mapping class="Entidad.ClsEntidadTipousuarioHib"></mapping>
+        <mapping class="Entidad.ClsEntidadCompraHib"></mapping>
+        <mapping class="Entidad.ClsEntidadDetallecompraHib"></mapping>
+        <mapping class="Entidad.ClsEntidadDetalleventaHib"></mapping>
+        <mapping class="Entidad.ClsEntidadVentaHib"></mapping>
+        <mapping class="Entidad.ClsEntidadClienteHib"></mapping>
+        <mapping class="Entidad.ClsEntidadMonedaHib"></mapping>
+        <mapping class="Entidad.ClsEntidadOperacionHib"></mapping>
+        <mapping class="Entidad.ClsEntidadProveedorContactoHib"></mapping>
+        <mapping class="Entidad.ClsGastosVariosHib"></mapping>
+        <mapping class="Entidad.ClsTransferenciaHib"></mapping>
+        
+    </session-factory>
+</hibernate-configuration>

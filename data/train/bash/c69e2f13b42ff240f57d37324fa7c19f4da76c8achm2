@@ -1,0 +1,20 @@
+#!/bin/bash
+function help() {
+	echo "Usage: $0 repo [current_repo] , current_repo must be given if there is no .reponame file in m2_repo dirctory"
+	exit 0;
+}
+M2_REPO=/opt/.m2
+[ -z $1 ] && help
+[ -e $M2_REPO/repository.$1 ] || {
+	echo "repo $1 not exist."
+	exit 0;
+}
+if [ -e $M2_REPO/repository ]; then
+	[ -z $2 ] && [ ! -e $M2_REPO/repository/.reponame ] && help
+	[ -z $2 ] || {
+		echo $2 > $M2_REPO/repository/.reponame
+	}
+	dest=`cat $M2_REPO/repository/.reponame`
+	mv $M2_REPO/repository $M2_REPO/repository.$dest
+fi
+mv $M2_REPO/repository.$1 $M2_REPO/repository

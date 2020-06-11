@@ -1,0 +1,60 @@
+:host {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+paper-button {
+    /*text-align: center;*/
+    /*position: absolute;*/
+    line-height: 2em;
+    font-size: 26px;
+    width: 100%;
+    color:#333;
+}
+
+urban-login > .transparent,
+:host .transparent {
+    opacity: 0;
+}
+
+urban-login > .hidden,
+:host .hidden {
+    display: none;
+}
+
+urban-login > .disable,
+:host .disable {
+    pointer-events: none;
+}
+
+:host #container {
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+:host #loadState,
+urban-login> #loadState {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+:host #loadIconWrapper,
+urban-login > #loadIconWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+}
+
+:host #loadIconWrapper svg,
+urban-login > #loadIconWrapper svg {
+    /*fill: white;*/
+}

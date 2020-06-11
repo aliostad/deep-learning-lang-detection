@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <target name="revision-file">
+        <delete file="revision" />
+        <delete file="web/revision" />
+
+        <touch file="revision"/>
+
+        <echo file="revision" message="Hash: ${env.GIT_COMMIT}${line.separator}" append="true" />
+
+        <echo file="revision" message="Branch: ${env.GIT_BRANCH}${line.separator}" append="true" />
+
+        <echo file="revision" message="Build date: ${env.BUILD_ID}${line.separator}" append="true" />
+
+        <copy file="revision" tofile="web/revision" />
+    </target>
+</project>

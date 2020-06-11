@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: inherit;
+    cursor: inherit;
+    background: transparent;
+    border-radius: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    cursor: default;
+}
+
+.Main-loadBar {
+    position: absolute;
+    background: #eee;
+    border-radius: 2px;
+    transition: ease-in-out 0.2s opacity;
+    opacity: 1;
+}
+.Main-loadBar.hidden {
+    opacity: 0;
+}
+
+.Main-horizontalProgress,
+.Main-verticalProgress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #333;
+    border-radius: 2px;
+}
+
+@media (orientation: portrait) {
+
+    .Main-loadBar {
+        right: 16px;
+        bottom: 80px;
+        left: 16px;
+        height: 4px;
+    }
+
+    .Main-horizontalProgress {
+        top: 0;
+        transition: ease-in-out 0.2s width;
+    }
+
+}
+
+@media (orientation: landscape) {
+
+    .Main-loadBar {
+        top: 16px;
+        right: 80px;
+        bottom: 16px;
+        width: 4px;
+    }
+
+    .Main-verticalProgress {
+        right: 0;
+        transition: ease-in-out 0.2s height;
+    }
+
+}

@@ -1,0 +1,54 @@
+#!/bin/bash
+if [ $# -eq 0 ]; then
+    echo "No arguments supplied"
+    exit
+fi
+
+REPO=$1
+
+# Get security credentials for use in script
+. ~/.secure/github.secure
+GIT_USER=$SECURE_GIT_USER
+GIT_TOKEN=$SECURE_GIT_TOKEN
+
+REMOTE=git@github.com:$GIT_USER/$REPO.git
+
+echo "Initializing repository: $REPO"
+vcsh init $REPO
+
+echo "Enter space-separated list of files and directories to add to repository: $REPO"
+echo "    (e.g. .vimrc .vim)"
+read -re -p 'Files/Directories to add to repository: ' -i ".$REPO.conf .$REPO" GIT_FILES
+vcsh $REPO add $GIT_FILES
+
+echo "Creating .gitignore for repository: $REPO"
+vcsh write-gitignore $REPO
+vcsh $REPO add -f .gitignore.d/$REPO
+vcsh write-gitignore $REPO
+vcsh $REPO add .gitignore.d/$REPO
+
+echo "Commiting changes to repository: $REPO"
+vcsh $REPO commit -m "Initial commit of my $REPO configuration"
+
+echo "Creating repository at $REMOTE"
+curl -u "$GIT_USER:$GIT_TOKEN" https://api.github.com/user/repos -d '{"name":"'"$REPO"'","description":"vcsh configuration for '"$REPO"'"}'
+
+echo "Adding remote repository: $REMOTE"
+vcsh $REPO remote add origin $REMOTE
+
+echo "Pushing to remote repository: $REMOTE"
+vcsh $REPO push -u origin master
+
+echo "Setting up myrepos configuration..."
+cat <<EOF> ~/.config/mr/available.d/$REPO.vcsh
+[.config/vcsh/repo.d/$REPO.git]
+checkout = vcsh clone "$REMOTE" "$REPO"
+update   = vcsh $REPO pull
+push     = vcsh $REPO push
+status   = vcsh $REPO status
+gc       = vcsh $REPO gc
+EOF
+pushd ~/.config/mr/config.d
+ln -s ../available.d/$REPO.vcsh .
+popd
+

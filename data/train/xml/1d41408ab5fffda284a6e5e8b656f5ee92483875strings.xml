@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ServiceSample!</string>
+    <string name="app_name">ServiceSample</string>
+    <string name="local_service_started">service is running</string>
+    <string name="local_service_stopped">service has stopped</string>
+    <string name="local_service_label">Local Service Label</string>
+    <string name="local_service_connected">Service Connected</string>
+    <string name="local_service_disconnected">Service disconnected</string>
+</resources>

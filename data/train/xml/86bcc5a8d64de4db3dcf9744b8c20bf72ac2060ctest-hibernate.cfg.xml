@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <mapping resource="ExportedPackage.hbm.xml" />
+        <mapping resource="ImportedPackage.hbm.xml" />
+        <mapping resource="ImportedItem.hbm.xml" />
+        <mapping resource="IdentifierSource.hbm.xml" />
+
+        <mapping resource="AddressHierarchyEntry.hbm.xml" />
+        <mapping resource="AddressHierarchyLevel.hbm.xml" />
+        <mapping resource="AddressToEntryMap.hbm.xml" />
+
+        <mapping resource="OutboundQueue.hbm.xml" />
+
+        <mapping resource="NamePhonetic.hbm.xml" />
+
+        <mapping resource="RadiologyOrder.hbm.xml" />
+        <mapping resource="HtmlFormEntryHtmlForm.hbm.xml" />
+
+        <mapping resource="Provider.hbm.xml" />
+        <mapping resource="ProviderRole.hbm.xml" />
+        <mapping resource="AppFramework.hbm.xml"/>
+
+        <mapping resource="AppointmentType.hbm.xml" />
+        <mapping resource="AppointmentBlock.hbm.xml"/>
+        <mapping resource="Appointment.hbm.xml"/>
+        <mapping resource="TimeSlot.hbm.xml"/>
+        <mapping resource="AppointmentStatusHistory.hbm.xml"/>
+
+        <mapping resource="ReportRequest.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

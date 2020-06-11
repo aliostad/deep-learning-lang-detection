@@ -1,0 +1,15 @@
+#!/bin/bash
+
+source ../globals.sh
+
+\rm -rf parallel.jobs
+
+samples=`echo "SELECT sample FROM sample_info;" | mysql -s -h $HOST $DB`
+
+for sample in $samples
+do
+	dir=/home/dacb/express/meta4_bins/workspace/$workspace_dir/$sample
+
+	#echo "(cd $dir/bwa; $HTSEQ_COUNT -m intersection-nonempty -s no -t gene -i ID -f bam ${sample}.sorted.bam /home/dacb/express/meta4_bins/data/genome_bins.gff > ${sample}.summary.dat; ./database)" >> parallel.jobs
+	echo "(cd $dir/bwa; ./database >& database.log )" >> parallel.jobs
+done

@@ -1,0 +1,126 @@
+.container {
+	background-color: #f0e8f0;
+  border-right: 1px solid #979;
+  border-left: 1px solid #979;
+  border-bottom: 1px solid #a8a;
+}
+
+nav .nav-content .nav-title a {
+  color: black
+}
+
+nav .hidden {
+  display: none;
+}
+
+.header {
+	max-width: 960px;
+  border-right: 1px solid #979;
+  border-left: 1px solid #979;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left: 15px;
+  padding-bottom: 15px;
+	background-color: #f0e8f0;
+}
+
+nav {
+	padding-left: 0px;
+	padding-top: 15px;
+	padding-right: 12px;
+	padding-bottom: 20px;
+}
+
+nav .nav-content {
+}
+
+nav .nav-section {
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+nav .nav-section + h3 + .nav-section {
+	text-align: left;
+}
+
+nav .nav-section ul {
+	list-style-type: disc;
+	margin-left: 15px;
+}
+
+nav h3 {
+	font-family: 'Forum', serif;
+	text-align: center;
+	display: block;
+	color: #606060;
+	font-size: 24px;
+}
+
+nav .nav-section + h3 {
+	margin-top: 30px;
+}
+
+nav .nav-section p.summary {
+	font-family: 'Metrophobic', sans-serif;
+	font-size: 12px;
+	line-height: 1.3em;
+  text-align: justify;
+	margin: 0;
+}
+
+nav li {
+	font-family: 'Metrophobic', sans-serif;
+	font-size: 12px;
+	line-height: 1.3em;
+	margin: 0;
+}
+
+nav .nav-section ul.toc > li {
+	list-style-type: none;
+	margin: 0;
+	margin-left: 10px;
+}
+
+nav .nav-section ul.toc > li ul li {
+	list-style-type: disc;
+	margin: 0;
+	margin-left: -0.7em;
+}
+
+nav .nav-section ul.toc a {
+	text-decoration: none;
+}
+
+nav .nav-title h3 a {
+	text-decoration: none;
+}
+
+nav ul.toc li {
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+nav ul.toc {
+	margin-left: 0;
+}
+
+nav a.image {
+	margin: 24px;
+}
+
+  nav .nav-content > h3 { display: none; }
+  nav .hidden {
+    display: inline;
+  }
+  nav .nav-section { display: none; }
+  nav .nav-title { display: inline; float: left; margin-left: -1px; }
+  nav {
+    position:relative;
+  }
+  nav .nav-title + .nav-section {
+    display: block;
+    position: absolute;
+    right: 3px;
+    margin-left: auto;
+    top: 18px;
+  }

@@ -1,0 +1,97 @@
+img {
+height: 100px;
+width: 100px;
+background: no-repeat;
+display: block;
+}
+
+img#i1.load {
+    background: transparent url("./images/i1.png");
+}
+img#i2.load {
+    background: transparent url("./images/i2.png");
+}
+img#i3.load {
+    background: transparent url("./images/i3.png");
+}
+img#i4.load {
+    background: transparent url("./images/i4.png");
+}
+img#i5.load {
+    background: transparent url("./images/i5.png");
+}
+img#i6.load {
+    background: transparent url("./images/i6.png");
+}
+img#i7.load {
+    background: transparent url("./images/i7.png");
+}
+img#i8.load {
+    background: transparent url("./images/i8.png");
+}
+img#i9.load {
+    background: transparent url("./images/i9.png");
+}
+img#i10.load {
+    background: transparent url("./images/i10.png");
+}
+img#i11.load {
+    background: transparent url("./images/i11.png");
+}
+img#i12.load {
+    background: transparent url("./images/i12.png");
+}
+img#i13.load {
+    background: transparent url("./images/i13.png");
+}
+img#i14.load {
+    background: transparent url("./images/i14.png");
+}
+img#i15.load {
+    background: transparent url("./images/i15.png");
+}
+img#i16.load {
+    background: transparent url("./images/i16.png");
+}
+img#i17.load {
+    background: transparent url("./images/i17.png");
+}
+img#i18.load {
+    background: transparent url("./images/i18.png");
+}
+img#i19.load {
+    background: transparent url("./images/i19.png");
+}
+img#i20.load {
+    background: transparent url("./images/i20.png");
+}
+img#i21.load {
+    background: transparent url("./images/i21.png");
+}
+img#i22.load {
+    background: transparent url("./images/i22.png");
+}
+img#i23.load {
+    background: transparent url("./images/i23.png");
+}
+img#i24.load {
+    background: transparent url("./images/i24.png");
+}
+img#i25.load {
+    background: transparent url("./images/i25.png");
+}
+img#i26.load {
+    background: transparent url("./images/i26.png");
+}
+img#i27.load {
+    background: transparent url("./images/i27.png");
+}
+img#i28.load {
+    background: transparent url("./images/i28.png");
+}
+img#i29.load {
+    background: transparent url("./images/i29.png");
+}
+img#i30.load {
+    background: transparent url("./images/i30.png");
+}

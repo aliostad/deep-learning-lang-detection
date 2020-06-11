@@ -1,0 +1,81 @@
+﻿@charset "utf-8";
+
+header, nav, #graphic, #contents, footer {
+	margin: 0 auto;
+	width: 95%;
+}
+nav ul {
+	margin: 0;
+	list-style-type: none;
+	overflow: hidden;
+}
+#graphic {
+	box-sizing: border-box;
+	height: auto;
+	padding-top: 10px;
+}
+#graphic ul li {
+	box-sizing: border-box;
+	width: 100%;
+}
+#graphic ul li img {
+	max-width: 100%;
+	width: 100%;
+}
+#main, #news ul li, h2 {
+	width: auto;
+	float: none;
+}
+nav ul li#nav_concept,
+nav ul li#nav_plan,
+nav ul li#nav_fair,
+nav ul li#nav_contact {
+	box-sizing: border-box;
+	width: 50%;
+}
+nav ul li#nav_concept,
+nav ul li#nav_fair {
+	border: 1px solid #f3f2e9;
+	border-top: none;
+	border-left: none;
+}
+nav ul li#nav_plan,
+nav ul li#nav_contact {
+	border: 1px solid #f3f2e9;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+}
+nav ul li#nav_concept a,
+nav ul li#nav_plan a,
+nav ul li#nav_fair a,
+nav ul li#nav_contact a {
+	height: 44px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	background: #342300 none;
+	color: #f3f2e9;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 3;
+}
+nav ul li#nav_concept a:hover,
+nav ul li#nav_plan a:hover,
+nav ul li#nav_fair a:hover,
+nav ul li#nav_contact a:hover {
+	background-color: #6c5f45;
+}
+#news h2 {
+	margin-bottom: 0;
+}
+#sub {
+	margin: 0 auto;
+	float: none;
+}
+footer {
+	padding-top: 30px;
+}
+footer p {
+	float: none;
+}

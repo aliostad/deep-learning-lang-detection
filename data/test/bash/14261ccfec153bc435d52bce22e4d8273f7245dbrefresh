@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+GIT_REPOS="\
+  git://github.com/scrooloose/nerdtree.git\
+  git://github.com/chriskempson/tomorrow-theme\
+  "
+
+REPO_DIR=$(dirname $0)
+
+GIT_CLONE='git clone'
+GIT_UPDATE='git pull'
+
+function refresh_git_repo()
+{
+  local url=$1
+  local name=$(basename $1 .git)
+  if [[ -d $REPO_DIR/$name ]]; then
+    echo updating repo: $name
+    (cd $REPO_DIR/$name && $GIT_UPDATE)
+  else
+    echo cloning repo: $name
+    $GIT_CLONE $url $REPO_DIR/$name
+  fi
+}
+
+for url in $(cat $REPO_DIR/repo.lst); do
+  refresh_git_repo $url
+done

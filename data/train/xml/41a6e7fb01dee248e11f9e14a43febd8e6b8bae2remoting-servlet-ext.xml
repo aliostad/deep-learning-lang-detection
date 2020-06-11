@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean name="/com_ext_portlet_reports_service_spring_ReportsEntryService-burlap" class="org.springframework.remoting.caucho.BurlapServiceExporter">
+		<property name="service" ref="com.ext.portlet.reports.service.ReportsEntryService.impl" />
+		<property name="serviceInterface" value="com.ext.portlet.reports.service.ReportsEntryService" />
+	</bean>
+	<bean name="/com_ext_portlet_reports_service_spring_ReportsEntryService-hessian" class="org.springframework.remoting.caucho.HessianServiceExporter">
+		<property name="service" ref="com.ext.portlet.reports.service.ReportsEntryService.impl" />
+		<property name="serviceInterface" value="com.ext.portlet.reports.service.ReportsEntryService" />
+	</bean>
+	<bean name="/com_ext_portlet_reports_service_spring_ReportsEntryService-http" class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter">
+		<property name="service" ref="com.ext.portlet.reports.service.ReportsEntryService.impl" />
+		<property name="serviceInterface" value="com.ext.portlet.reports.service.ReportsEntryService" />
+	</bean>
+</beans>

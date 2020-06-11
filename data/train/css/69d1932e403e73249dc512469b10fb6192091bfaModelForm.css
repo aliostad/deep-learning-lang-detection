@@ -1,0 +1,153 @@
+.ModelForm {
+    display: inline-block;
+    /*border: 1px solid #bdc3c7;*/
+    min-width: 960px;
+
+    /*position: absolute;*/
+    left: 0;
+    margin: 20px;
+    margin-bottom: 100px;
+}
+
+.ModelSelect .DropDownBar {
+    font-size: 72px;
+    margin: 25px 0px;
+    padding: 20px;
+    border-bottom: 0;
+    background-color: rgba(0,0,0,0.02);
+}
+
+.ModelSelect .DropDownBar option {
+    font-size: 1rem;
+    padding: 0;
+}
+
+.ModelForm h1 {
+    text-transform: lowercase;
+    text-align: left;
+}
+
+
+.ModelDisplay {
+    font-size: 22px;
+    padding: 20px;
+    color: #ecf0f1;
+    background-color: rgba(0,0,0,0.87);
+    text-transform: lowercase;
+}
+
+.ModelArgument {
+    flex: 0 0 150px;
+    display: inline-block;
+    padding: 10px 15px;
+    text-align: left;
+    border: 1px solid #bdc3c7;
+    width: 200px;
+    transition: background-color 0.1s, border 0.1s;
+
+    margin: 20px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+.ModelArgument.used {
+    border: 2px solid rgba(26, 188, 156, 1.0);
+}
+
+.ModelArgument:hover {
+    background-color: rgba(0,0,0,0.2);
+
+    transition: background-color 0.1s, border 0.1s;
+}
+
+.ModelArgumentName {
+    color: #3498db;
+}
+
+.ModelArgumentType {
+    float: right;
+    font-style: italic;
+}
+
+.ModelForm .Arguments > .selected {
+    border: 2px solid #303F9F;
+    background-color: rgba(48, 63, 159, 0.2);
+    transition: border 0.1s;
+}
+
+.ModelForm .Buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.ModelButton {
+    flex: 1 0 200px;
+    border: 1px solid white;
+}
+
+.ModelButton button {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba(0,0,0,0.87);
+
+    padding: 10px;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,0.2);
+
+    font-weight: bold;
+    color: #f1c40f;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+    transition: background-color 0.1s;
+}
+
+.ModelButton button:hover {
+    background-color: #f1c40f;
+    /*border: 1px solid #f1c40f;*/
+    color: white;
+    transition: background-color 0.1s;
+}
+
+.Arguments {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+
+    margin-top: 25px;
+    margin-bottom: 50px;
+    /*flex: 1 1 0;*/
+    /*text-align: left;*/
+}
+
+.Inputs {
+    margin-top: 25px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.Outputs {
+    margin-top: 100px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.Outputs .ModelArgumentName {
+    color: #c0392b;
+}
+
+.OutputSelectionBar {
+    /*border: 1px solid rgba(0,0,0,0.1);*/
+}
+
+.Outputs {
+    /*background-color: rgba(0,0,0,0.1);*/
+}

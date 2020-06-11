@@ -1,0 +1,141 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---- END OF RESET ----*/
+body {
+	background-color: #444444;
+}
+
+#main {
+	width: 300px;
+	height: 200px;
+	margin: 10px auto;
+	text-align: center;
+	font: 16px 'Inika', serif;
+	background-color: #eeeeee;
+	padding:25px;
+}
+
+#bar {
+	margin: 10px auto;
+	height: 10px;
+	width: 180px;
+	background-color: #7da088;
+	position:relative;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#slider {
+	height: 10px;
+	width: 10px;
+	position: absolute;
+	/*sliding animation */
+	-moz-animation:load 2s ease-in-out infinite alternate;
+	-webkit-animation: load 2s ease-in-out infinite alternate;
+	-o-animation: load 2s ease-in-out infinite alternate;
+	animation: load 2s ease-in-out infinite alternate;
+}
+
+#glower {
+	height:100%;
+	width: 100%;
+	background-color: #733179;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	/*opacity animation*/
+	-moz-animation:glow 1s ease-out infinite alternate;
+	-webkit-animation: glow 1s ease-out infinite alternate;
+	-o-animation: glow 1s ease-out infinite alternate;
+	animation: glow 1s ease-out infinite alternate;
+}
+
+
+.load {
+	font-size: 20px;
+}
+
+@-webkit-keyframes load {
+	0% {left:0; }
+	100% {left:170px; }
+}
+@-o-keyframes load {
+	0% {left:0; }
+	100% {left:170px; }
+}
+@-moz-keyframes load {
+	0% {left:0; }
+	100% {left:170px; }
+}
+@keyframes load {
+	0% {left:0; }
+	100% {left:170px; }
+}
+
+@-webkit-keyframes glow {
+	from { opacity:0.5; }
+	to { opacity:1;
+		-moz-box-shadow: 0 0 10px 2px #a380a0;
+		-webkit-box-shadow: 0 0 10px 2px #a380a0;
+		box-shadow: 0 0 10px 2px #a380a0; }
+}
+@-o-keyframes glow {
+	from { opacity:0.5; }
+	to { opacity:1; }
+}
+@-moz-keyframes glow {
+	from { opacity:0.5; }
+	to { opacity:1; }
+}
+@keyframes glow {
+	from { opacity:0.5; }
+	to { opacity:1; }
+}

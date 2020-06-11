@@ -1,0 +1,84 @@
+#!/bin/sh
+
+#Test database maintenance using bogoutil's dump/load capabilities.
+
+. ${srcdir:=.}/t.frame
+
+BASE="dump.load"
+OUT="$TMPDIR/$BASE.out"
+DATA="$TMPDIR/$BASE.${DB_EXT}"
+SUM="$BASE.sum"
+
+GREP="grep -v /dump.load-"
+SORT="sort"
+
+clear_database() {
+    rm -f "$DATA"
+    rm -f "$TMPDIR"/__db.*
+    rm -f "$TMPDIR"/log.*
+}
+
+clear_database
+
+LEN="--max-token-len 30"
+
+#load database
+$BOGOUTIL -C $LEN -l "$DATA" -y 20020815 < "$srcdir"/inputs/$BASE.inp
+
+#dump database (no restrictions, all dates should by 'yday')
+$BOGOUTIL -C $LEN -d "$DATA" -y 20020815 | $SORT > "$TMPDIR"/dump.load-1.txt
+
+#update some words, including some old dates
+$BOGOUTIL -C $LEN -l "$DATA" -y 20021215 < "$srcdir"/inputs/$BASE.upd
+#dump database
+$BOGOUTIL -C $LEN -d "$DATA" | grep -v "^.ENCODING" | $SORT > "$TMPDIR"/dump.load-2.txt
+
+#confirm that updated words have different counts and dates
+( diff "$TMPDIR"/dump.load-1.txt "$TMPDIR"/dump.load-2.txt ; echo "" ) | $GREP | tee "$TMPDIR"/diff.1.2.txt >> "$OUT"
+
+#dump wordlist, excluding oldest entries
+$BOGOUTIL -C $LEN -a 20020815 -d "$DATA" | grep -v "^.ENCODING" | $SORT > "$TMPDIR"/dump.load-3.txt
+
+#confirm exclusion of oldest entries
+( diff "$TMPDIR"/dump.load-2.txt "$TMPDIR"/dump.load-3.txt ; echo "" ) | $GREP | tee "$TMPDIR"/diff.2.3.txt >> "$OUT"
+
+#dump wordlist, excluding oldest, shortest, and longest entries
+#     and'ing of command line qualifiers forced changing next line to two lines
+#BOGOUTIL -C $LEN -a 20020815 -s4,30 -d "$DATA" | $SORT > "$TMPDIR"/dump.load-4.txt
+$BOGOUTIL -C $LEN -a 20020815 -d "$DATA" | $SORT > "$TMPDIR"/dump.load-4.txt
+clear_database
+$BOGOUTIL -C $LEN -l "$DATA" < "$TMPDIR"/dump.load-4.txt
+$BOGOUTIL -C $LEN -s4,30      -d "$DATA" | $SORT > "$TMPDIR"/dump.load-4.txt
+
+#confirm exclusion of oldest, shortest(<, and longest entries
+( diff "$TMPDIR"/dump.load-3.txt "$TMPDIR"/dump.load-4.txt ; echo "" ) | $GREP | tee "$TMPDIR"/diff.3.4.txt >> "$OUT"
+
+clear_database
+
+#load wordlist, excluding shortest entries
+$BOGOUTIL -C $LEN -s5,30 -l "$DATA" < "$TMPDIR"/dump.load-4.txt
+#dump using replace_non-ascii option
+$BOGOUTIL -C $LEN -n -d "$DATA" | $SORT > "$TMPDIR"/dump.load-5.txt
+
+#confirm effect of non-ascii option
+( diff "$TMPDIR"/dump.load-4.txt "$TMPDIR"/dump.load-5.txt ; echo "" ) | $GREP | tee "$TMPDIR"/diff.4.5.txt >> "$OUT"
+
+clear_database
+
+#load wordlist non-ascii list and dump to show value combining
+$BOGOUTIL -C $LEN -a 20021010 -l "$DATA" < "$TMPDIR"/dump.load-5.txt
+$BOGOUTIL -C $LEN -a 20021010 -d "$DATA" | $SORT > "$TMPDIR"/dump.load-6.txt
+
+#confirm token merging
+( diff "$TMPDIR"/dump.load-5.txt "$TMPDIR"/dump.load-6.txt ; echo "" ) | $GREP | tee "$TMPDIR"/diff.5.6.txt >> "$OUT"
+
+if [ "$BF_SAVEDIR" ] ; then . "$srcdir"/t.save ; fi
+
+for i in "${SYSTEST}"/outputs/dump.load-?.out ; do
+    j="$TMPDIR"/`basename "$i" .out`.txt
+    if  [ $verbose -eq 0 ]; then
+	cmp "$i" "$j"
+    else
+	diff $DIFF_BRIEF "$i" "$j"
+    fi
+done

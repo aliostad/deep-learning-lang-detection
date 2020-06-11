@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : mapping.xml
+    Created on : January 25, 2009, 3:43 PM
+    Author     : sdorra
+    Description:
+        Purpose of the document follows.
+-->
+
+<mappings>
+
+  <mapping>
+    <regex>^/list/([0-9)]*)(?:index)*\.jab$</regex>
+    <class>sonia.blog.mapping.ListMapping</class>
+  </mapping>
+
+  <mapping>
+    <regex>^/category/([0-9)]*)/([0-9)]*)(?:index)*\.jab$</regex>
+    <class>sonia.blog.mapping.CategoryMapping</class>
+  </mapping>
+
+  <mapping>
+    <regex>^/tag/([0-9)]*)/([0-9)]*)(?:index)*\.jab$</regex>
+    <class>sonia.blog.mapping.TagMapping</class>
+  </mapping>
+
+  <mapping>
+    <regex>^/attachment/([0-9)]*)$</regex>
+    <class>sonia.blog.mapping.AttachmentMapping</class>
+  </mapping>
+
+  <mapping>
+    <regex>^/image/([0-9)]*)(?:\.(?:jpg|gif|png|bmp|jpeg))?$</regex>
+    <class>sonia.blog.mapping.ImageMapping</class>
+  </mapping>
+
+  <mapping>
+    <regex>^/date/([0-9-)]*)/([0-9)]*)(?:index)*\.jab$</regex>
+    <class>sonia.blog.mapping.DateMapping</class>
+  </mapping>
+
+  <mapping>
+    <regex>^/feed/(rss|rss2|atom)/([a-zA-Z]*)[/]?([0-9-)]*)\.xml$</regex>
+    <class>sonia.blog.mapping.FeedMapping</class>
+  </mapping>
+
+  <mapping>
+    <regex>^/opensearch/(descriptor\.xml|search\.xml|suggestion\.json)$</regex>
+    <class>sonia.blog.mapping.OpenSearchMapping</class>
+  </mapping>
+
+  <mapping>
+    <regex>^/search\.jab$</regex>
+    <class>sonia.blog.mapping.SearchMapping</class>
+  </mapping>
+
+  <mapping>
+    <regex>^/random\.jab$</regex>
+    <class>sonia.blog.mapping.RandomMapping</class>
+  </mapping>
+  
+  <mapping>
+    <regex>^/resource/(.*)$</regex>
+    <class>sonia.blog.mapping.ResourceMapping</class>
+  </mapping>
+
+  <mapping>
+    <regex>^/chart/blog/usage\.png$</regex>
+    <class>sonia.blog.mapping.chart.BlogUsageChartMapping</class>
+  </mapping>
+
+  <mapping>
+    <regex>^/xml-rpc$</regex>
+    <class>sonia.blog.mapping.remote.XMLRPCMapping</class>
+  </mapping>
+
+  <mapping>
+    <regex>^/trackback/([0-9]*)$</regex>
+    <class>sonia.blog.mapping.remote.TrackbackMapping</class>
+  </mapping>
+
+  <mapping>
+    <regex>^/page/([0-9]+)\.jab</regex>
+    <class>sonia.blog.mapping.PageMapping</class>
+  </mapping>
+
+  <mapping>
+    <regex>^/custom-template/(.*)$</regex>
+    <class>sonia.blog.mapping.CustomTemplateMapping</class>
+  </mapping>
+
+  <mapping>
+    <regex>^/lost-password$</regex>
+    <class>sonia.blog.mapping.LostPasswordMapping</class>
+  </mapping>
+
+  <mapping>
+    <regex>^/(page|entry)-preview.jab$</regex>
+    <class>sonia.blog.mapping.PreviewMapping</class>
+  </mapping>
+
+  <mapping>
+    <regex>^/avatar/(.*)$</regex>
+    <class>sonia.blog.mapping.AvatarMapping</class>
+  </mapping>
+
+  <mapping>
+    <regex>^/async/([a-zA-Z0-9-_]+)\.(json|xml|plain|txt|html)$</regex>
+    <class>sonia.blog.mapping.AsyncMapping</class>
+  </mapping>
+
+  <mapping>
+    <regex>^/personal/macrobrowser\.json$</regex>
+    <class>sonia.blog.mapping.MacroBrowserMapping</class>
+  </mapping>
+
+  <mapping>
+    <regex>^/author/([0-9]+)/([0-9)]*)(?:index)*\.jab$</regex>
+    <class>sonia.blog.mapping.AuthorMapping</class>
+  </mapping>
+
+  <mapping>
+    <regex>^/calendar.json$</regex>
+    <class>sonia.blog.mapping.CalendarMapping</class>
+  </mapping>
+
+  <mapping>
+    <regex>^/quicksearch.json$</regex>
+    <class>sonia.blog.mapping.QuickSearchMapping</class>
+  </mapping>
+
+  <mapping>
+    <regex>^/error/([0-9]+).jab$</regex>
+    <class>sonia.blog.mapping.ErrorMapping</class>
+  </mapping>
+
+</mappings>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Body>
+  
+  <api:details>
+  <api:alias>1231</api:alias>
+    <api:detail>
+        <api:name>version</api:name>
+        <api:value>15.0</api:value>
+    </api:detail>
+    <api:detail>
+        <api:name>resolution</api:name>
+        <api:value>1080X1920</api:value>
+    </api:detail>
+    <api:detail>
+        <api:name>installed</api:name>
+        <api:value>1</api:value>
+    </api:detail>
+    <api:detail>
+        <api:name>enabled</api:name>
+        <api:value>0</api:value>
+    </api:detail>
+   </api:details>
+</soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+# This script manages manage_my_process script.
+file=/var/run/my_process.pid
+run_status=$(pgrep -f ./manage_my_process)
+
+start() {
+    if [ ! -z "$run_status" ]; then
+	echo "manage_my_process already running"
+    else
+	./manage_my_process & pgrep -f ./manage_my_process >> $file
+	echo "manage_my_process started"
+    fi
+    exit
+}
+
+stop() {
+    if [ -z "$run_status" ]; then
+	echo "manage_my_process already stopped"
+    else
+	pkill -f ./manage_my_process
+	rm $file
+	echo "manage_my_process stopped"
+    fi
+    exit
+}
+
+restart() {
+    if [ -z "$run_status" ]; then
+	echo "manage_my_process not started"
+    else
+	pkill -f ./manage_my_process
+	rm $file
+	./manage_my_process & pgrep -f ./manage_my_process >> $file
+	echo "manage_my_process restarted"
+    fi
+    exit
+}
+
+case "$1" in
+    start)
+	start
+	;;
+    stop)
+	stop
+	;;
+    restart)
+	restart
+	;;
+    *)
+	echo "Usage: manage_your_process {start|stop|restart}"
+	exit
+	;;
+esac

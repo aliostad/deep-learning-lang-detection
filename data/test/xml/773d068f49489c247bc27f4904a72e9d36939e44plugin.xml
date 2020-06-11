@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="toolbar:org.unicase.ui.meeditor.MEEditorPage?after=additions">
+         <command
+               commandId="org.unicase.experiments.commands.duplicateCommand"
+               icon="icons/sample.gif"
+               id="org.unicase.experiments.toolbars.duplicateCommand"
+               tooltip="Duplicate Action Item">
+         </command>
+      </menuContribution>
+      <menuContribution
+            locationURI="popup:org.unicase.ui.navigator.viewer?after=additions">
+         <command
+               commandId="org.unicase.experiments.commands.duplicateCommand"
+               icon="icons/sample.gif"
+               label="Duplicate Model Element"
+               style="push">
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="org.unicase.experiments.handlers.DuplicateModelElementHandler"
+            commandId="org.unicase.experiments.commands.duplicateCommand">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            categoryId="org.unicase.experiments.commands.sampleCategory"
+            id="org.unicase.experiments.commands.duplicateCommand"
+            name="Duplicate Model Element">
+      </command>
+      <category
+            id="org.unicase.experiments.commands.sampleCategory"
+            name="Sample Category">
+      </category>
+   </extension>
+
+</plugin>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LogStash::Event#append when event field is an array" tests="3" time="0.005" failures="0" errors="0" skipped="0">
+  <testcase name="LogStash::Event#append when event field is an array should append string values to array, if not present in array" time="0.002">
+  </testcase>
+  <testcase name="LogStash::Event#append when event field is an array should not append string values, if the array already contains it" time="0.001">
+  </testcase>
+  <testcase name="LogStash::Event#append when event field is an array should join array, removing duplicates" time="0.001">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>

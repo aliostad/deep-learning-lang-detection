@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+set -e
+REPO_ROOT=$(git rev-parse --show-toplevel)
+
+cat > "$REPO_ROOT/rpmbuild/rpmmacros" <<EOF
+# %_topdir $REPO_ROOT/rpmbuild
+%_topdir /tmp/rpmbuild
+%_arch   x86_64
+EOF
+
+
+
+renice -n 19 -p $$   >& /dev/null
+ionice -c 3 -p $$
+
+if [ $# -eq 0 ]; then
+    rpmbuild \
+	--rcfile="$REPO_ROOT/rpmbuild/rpmrc" \
+	--macros=/usr/lib/rpm/macros:"$REPO_ROOT/rpmbuild/rpmmacros" \
+	--verbose \
+	-ba SPECS/sagemath.spec
+else
+    rpmbuild \
+	--rcfile="$REPO_ROOT/rpmbuild/rpmrc" \
+	--macros=/usr/lib/rpm/macros:"$REPO_ROOT/rpmbuild/rpmmacros" \
+	--verbose \
+	"$@"
+fi

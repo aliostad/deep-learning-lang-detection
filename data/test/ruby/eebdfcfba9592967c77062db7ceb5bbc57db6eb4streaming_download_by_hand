@@ -1,0 +1,29 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 's3lib'
+
+CHUNK_SIZE = 1024 * 1024 # size of a chunk in bytes
+
+# Usage: streaming_download_by_hand bucket key [file]
+# If file is omitted, it will be the same as key
+
+bucket, key, file = ARGV
+file ||= key
+url = File.join(bucket, key)
+
+file_size = S3Lib.request(:head, url).meta['content-length'].to_i
+
+File.open(file, 'w') do |file|  
+  chunk_start = chunk_end = 0
+  while chunk_start <= file_size
+    chunk_end = chunk_start + CHUNK_SIZE
+    chunk_end = file_size if chunk_end > file_size
+    puts "Getting bytes #{chunk_start} - #{chunk_end} of #{file_size} " +
+         "(#{"%.0f" % (100.0 * chunk_end / file_size) }%)"
+    request = S3Lib.request(:get, url, 
+                            'Range' => "bytes=#{chunk_start}-#{chunk_end}")
+    file.write request.read
+    chunk_start = chunk_end + 1
+  end
+end

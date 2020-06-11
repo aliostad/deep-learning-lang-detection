@@ -1,0 +1,51 @@
+#!/bin/bash
+
+source globals.sh
+
+HERE=`pwd`
+
+sample_meta_info_load
+
+mysql -h $HOST --local-infile $DB << EOF
+LOAD DATA LOCAL INFILE "$HERE/sample_info.xls" INTO TABLE sample_info FIELDS TERMINATED BY '\t' IGNORE 1 LINES;
+UPDATE sample_info INNER JOIN sample_meta_info ON sample_info.sample LIKE CONCAT(sample_meta_info.
+UPDATE sample_info AS si INNER JOIN sample_meta_info AS smi ON si.sample LIKE CONCAT(CONCAT('%', smi.sample_name), '%')
+	SET shortd = CONCAT(smi.O2, '_week_', smi.week) ;
+EOF
+
+echo "SELECT * FROM sample_info;" | mysql -h $HOST $DB
+
+samples=`echo "SELECT sample FROM sample_info;" | mysql -s -h $HOST $DB`
+workspace_dir="`pwd | awk -F'/' '{ for (i=1; i < NF; ++i) printf("%s/", $i); printf("\n"); }'`workspace"
+
+\rm -rf parallel.jobs
+
+for sample in $samples
+do
+	dir=$workspace_dir/$sample
+	echo "UPDATE sample_info SET path_to_workspace='$dir' WHERE sample='$sample';" | mysql -s -h $HOST $DB
+	if [ -d $dir ]
+	then
+		echo skipping setup of $sample
+		continue
+	fi
+	echo importing $sample 
+	echo "making and populating $dir"
+	mkdir -p $dir
+	cd $dir
+
+	fastq=`echo "SELECT path_to_FASTQ FROM sample_info WHERE sample='$sample';" | mysql -s -h $HOST $DB`
+	genome_fasta=`echo "SELECT path_to_genome_FASTA FROM sample_info WHERE sample='$sample';" | mysql -s -h $HOST $DB`
+	proteome_fasta=`echo "SELECT path_to_proteome_FASTA FROM sample_info WHERE sample='$sample';" | mysql -s -h $HOST $DB`
+	gff=`echo "SELECT path_to_GFF FROM sample_info WHERE sample='$sample';" | mysql -s -h $HOST $DB`
+
+	ln -sf $fastq .
+	ln -sf $genome_fasta .
+#	ln -sf $proteome_fasta .
+	ln -sf $gff .
+
+	cd $HERE
+
+	./sample_setup $sample
+	#./sample_submit $sample
+done

@@ -1,0 +1,12 @@
+<style>
+/* 导航修饰 */
+#nav{clear:both;padding-top:1px;font:1em/2 "Helvetica Neue",Arial,Helvetica,sans-serif}
+#nav ul{float:left;width:100%;margin:0;padding:0;list-style:none;background:#970601 url(/nav-tab.png) repeat-x}
+#nav li{display:inline;margin:0;padding:0}
+#nav a{display:block;float:left;padding:0 12px;border-right:1px solid #bb1600;border-bottom:0;border-left:1px solid #b21203;color:#fff;background:#970601 url(/nav-tab.png) repeat-x;text-decoration:none}
+#nav a:hover,#nav a:focus{background:#b31203 url(/nav-tab.png) repeat-x 0 -150px}
+#nav .sel a{background:#720000 url(/nav-tab.png) repeat-x 0 -300px}
+#nav .sel a:hover,#nav .sel a:focus{background:#b31203 url(/nav-tab.png) repeat-x 0 -150px}
+#nav strong{font-weight:normal}
+</style>
+

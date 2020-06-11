@@ -1,0 +1,39 @@
+#message-box {
+	font-size: 12px;
+	font-family: Verdana, sans-serif;
+	line-height: 1.5;
+	background-color: #fff;
+	border: 10px solid #7a0;
+	padding: 1em;
+	width: 400px;
+}
+#message-box a {
+	color: #7a0;
+}
+#message-box h1 {
+	font-size: 1.2em;
+	padding: 0.5em;
+	margin: 0;
+}
+#message-box ul {
+	padding: 0;
+	margin: 0.5em;
+	list-style: none;
+}
+#message-box li {
+	border-top: 1px solid #ccc;
+	padding: 0.5em;
+}
+.message-actions {
+	float: right;
+}
+.message-body {
+	height: 10em;
+	overflow: auto;
+	margin-bottom: 0.5em;
+}
+.message-nav {
+	font-size: 0.9em;
+	margin-top: 0.5em;
+	text-align: center;
+}

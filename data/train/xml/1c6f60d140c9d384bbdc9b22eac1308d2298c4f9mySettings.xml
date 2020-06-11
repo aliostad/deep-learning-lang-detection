@@ -1,0 +1,21 @@
+<osc>
+ <inport>7877</inport>
+ <outport>7878</outport>
+ <outhost>localhost</outhost>
+</osc>
+<samples>
+<sample type = "1" mode="1" >regg-AmG-135/Drum.flac</sample>
+ <sample type = "1" mode="1">regg-AmG-135/Bass.flac</sample>
+ <sample type = "1" mode="1">regg-AmG-135/Gtr.flac</sample>
+ <sample type = "1" mode="1">regg-AmG-135/Organ.flac</sample>
+ 
+ <sample type = "1" mode="2" >regg-AmG-135/Drum.flac</sample>
+ <sample type = "1" mode="2">regg-AmG-135/Bass.flac</sample>
+ <sample type = "1" mode="2">regg-AmG-135/Gtr.flac</sample>
+ <sample type = "1" mode="2">regg-AmG-135/Organ.flac</sample>
+
+  <!--<sample type = "0" mode = "0">drumkits/GMkit/kick_Dry_b.flac</sample>
+ <sample type = "0" >drumkits/GMkit/sn_Jazz_c.flac</sample>
+ <sample type = "0" >drumkits/GMkit/hhc_Dry_a.flac</sample>
+ <sample type = "0" >drumkits/GMkit/cra_Jazz.flac</sample> -->
+</samples>

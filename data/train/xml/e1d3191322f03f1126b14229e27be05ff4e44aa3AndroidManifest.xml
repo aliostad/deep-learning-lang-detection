@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.tigerpenguin.lab.activitymemory.multiprocess">
+
+    <application android:allowBackup="true"
+                 android:icon="@drawable/ic_launcher"
+                 android:label="MultiProcess"
+                 android:theme="@style/AppTheme">
+
+        <activity android:name="com.tigerpenguin.lab.activitymemory.ActivityA"
+                  android:label="Multi Process"
+                  android:process=":ProcessA">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.tigerpenguin.lab.activitymemory.ActivityB"
+                  android:label="Activity B"
+                  android:process=":ProcessB"/>
+
+        <activity android:name="com.tigerpenguin.lab.activitymemory.ActivityC"
+                  android:label="Activity C"
+                  android:process=":ProcessC"/>
+
+        <activity android:name="com.tigerpenguin.lab.activitymemory.ActivityD"
+                  android:label="Activity D"
+                  android:process=":ProcessD"/>
+
+        <activity android:name="com.tigerpenguin.lab.activitymemory.ActivityE"
+                  android:label="Activity E"
+                  android:process=":ProcessE"/>
+
+        <activity android:name="com.tigerpenguin.lab.activitymemory.ActivityF"
+                  android:label="Activity F"
+                  android:process=":ProcessF"/>
+
+        <activity android:name="com.tigerpenguin.lab.activitymemory.ActivityG"
+                  android:label="Activity G"
+                  android:process=":ProcessG"/>
+
+    </application>
+
+</manifest>

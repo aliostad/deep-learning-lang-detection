@@ -1,0 +1,95 @@
+<?xml version='1.0'?>
+<!DOCTYPE platform SYSTEM "http://simgrid.gforge.inria.fr/simgrid.dtd">
+<platform version="3">
+
+ <process host="capricorne-1.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-2.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-3.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-4.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-5.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-6.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-7.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-8.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-9.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-10.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-1.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-2.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-3.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-4.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-5.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-6.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-7.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-8.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-9.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-10.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-1.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-2.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-3.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-4.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-5.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-6.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-7.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-8.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-9.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-10.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-1.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-2.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-3.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-4.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-5.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-6.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="capricorne-7.lyon.grid5000.fr" function="bsp"> <prop id="manager" value="61"/> </process>
+  <process host="suno-1.sophia.grid5000.fr" function="bsp"> <prop id="manager" value="62"/> </process>
+  <process host="suno-2.sophia.grid5000.fr" function="bsp"> <prop id="manager" value="62"/> </process>
+  <process host="suno-3.sophia.grid5000.fr" function="bsp"> <prop id="manager" value="62"/> </process>
+  <process host="suno-4.sophia.grid5000.fr" function="bsp"> <prop id="manager" value="62"/> </process>
+  <process host="suno-5.sophia.grid5000.fr" function="bsp"> <prop id="manager" value="62"/> </process>
+  <process host="suno-6.sophia.grid5000.fr" function="bsp"> <prop id="manager" value="62"/> </process>
+  <process host="suno-7.sophia.grid5000.fr" function="bsp"> <prop id="manager" value="62"/> </process>
+  <process host="suno-8.sophia.grid5000.fr" function="bsp"> <prop id="manager" value="62"/> </process>
+  <process host="suno-9.sophia.grid5000.fr" function="bsp"> <prop id="manager" value="62"/> </process>
+  <process host="suno-10.sophia.grid5000.fr" function="bsp"> <prop id="manager" value="62"/> </process>
+  <process host="suno-11.sophia.grid5000.fr" function="bsp"> <prop id="manager" value="62"/> </process>
+  <process host="suno-12.sophia.grid5000.fr" function="bsp"> <prop id="manager" value="62"/> </process>
+  <process host="suno-13.sophia.grid5000.fr" function="bsp"> <prop id="manager" value="62"/> </process>
+  <process host="suno-14.sophia.grid5000.fr" function="bsp"> <prop id="manager" value="62"/> </process>
+  <process host="suno-15.sophia.grid5000.fr" function="bsp"> <prop id="manager" value="62"/> </process>
+  <process host="suno-1.sophia.grid5000.fr" function="bsp"> <prop id="manager" value="62"/> </process>
+  <process host="suno-2.sophia.grid5000.fr" function="bsp"> <prop id="manager" value="62"/> </process>
+  <process host="suno-3.sophia.grid5000.fr" function="bsp"> <prop id="manager" value="62"/> </process>
+  <process host="suno-4.sophia.grid5000.fr" function="bsp"> <prop id="manager" value="62"/> </process>
+  <process host="suno-5.sophia.grid5000.fr" function="bsp"> <prop id="manager" value="62"/> </process>
+  <process host="suno-6.sophia.grid5000.fr" function="bsp"> <prop id="manager" value="62"/> </process>
+  <process host="suno-7.sophia.grid5000.fr" function="bsp"> <prop id="manager" value="62"/> </process>
+  <process host="suno-8.sophia.grid5000.fr" function="bsp"> <prop id="manager" value="62"/> </process>
+ 
+ 
+  <process host="capricorne-1.lyon.grid5000.fr" function="manager">
+    <prop id="amount" value="3"/>
+    <prop id="set" value="0"/>
+    <prop id="base" value="61"/>
+    <prop id="prefix" value="capricorne-"/>
+    <prop id="sufix" value=".lyon.grid5000.fr"/>
+    <prop id="radical" value="15"/>
+    <prop id="power" value="4.7233E9"/>
+  </process>
+  <process host="suno-1.sophia.grid5000.fr" function="manager">
+    <prop id="amount" value="3"/>
+    <prop id="set" value="1"/>
+    <prop id="base" value="61"/>
+    <prop id="prefix" value="suno-"/>
+    <prop id="sufix" value=".sophia.grid5000.fr"/>
+    <prop id="radical" value="15"/>
+    <prop id="power" value="23.530E9"/>
+  </process>
+    <process host="chicon-1.lille.grid5000.fr" function="manager">
+    <prop id="amount" value="3"/>
+    <prop id="set" value="2"/>
+    <prop id="base" value="61"/>
+    <prop id="prefix" value="chicon-"/>
+    <prop id="sufix" value=".lille.grid5000.fr"/>
+    <prop id="radical" value="10"/>
+    <prop id="power" value="8.9618E9"/>
+  </process>
+
+</platform>

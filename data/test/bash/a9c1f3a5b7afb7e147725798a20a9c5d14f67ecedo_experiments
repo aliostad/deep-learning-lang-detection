@@ -1,0 +1,42 @@
+#!/bin/sh
+
+export LC_NUMERIC=C # avoids problems with seq
+
+for workload in FB09-0 FB09-1 FB10; do
+    echo ==============================================================
+    echo                      $workload
+    echo ==============================================================
+    echo
+    echo --------------------------------------------------------------
+    echo                      varying sigma
+    echo --------------------------------------------------------------
+    echo
+    for sigma in 0.125 0.25 0.5 1 2; do
+    	echo sigma=$sigma
+	echo ---------
+	./experiment.py --parse_swim $workload.tsv $sigma 100
+	echo
+    done
+    echo
+    echo --------------------------------------------------------------
+    echo                      varying load
+    echo --------------------------------------------------------------
+    echo
+    for load in $(seq 0.1 0.1 2); do
+    	echo load=$load
+	echo ---------
+	./experiment.py --parse_swim $workload.tsv 0.5 100 --load $load
+    	echo
+    done
+    echo
+    echo --------------------------------------------------------------
+    echo                       varying d-over-n
+    echo --------------------------------------------------------------
+    echo
+    for dn in $(seq 1 10); do
+    	echo dn=$dn
+	echo -------
+	./experiment.py --parse_swim $workload.tsv 0.5 100 -dn $dn
+    done
+    echo
+done

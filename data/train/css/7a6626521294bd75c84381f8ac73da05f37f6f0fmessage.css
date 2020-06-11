@@ -1,0 +1,94 @@
+#message h1 {
+    margin: 60px;
+}
+
+#message label {
+    float:none;
+    width:300px;
+    margin:20px auto;
+}
+
+#message .inputs li {
+    margin:0;
+    padding:0;
+}
+
+#message .inputs input {
+    margin:10px auto;
+    width:300px !important;
+    display:block;
+}
+
+#message .inputs .boolean input {
+    display:inline-block;
+    width:auto !important;
+    margin:5px 10px;
+}
+
+#message .inputs textarea {
+    width:400px;
+    margin:10px auto;
+    display:block;
+}
+
+#message .inline-errors {
+    width:300px;
+    margin:10px auto;
+}
+
+#message .buttons {
+    text-align:center;
+    margin:20px;
+}
+
+#message .buttons li {
+    float:none;
+    display:inline-block;
+}
+
+#message .explanation {
+    margin: 80px 130px 10px;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+}
+
+.js #message .hidden-form {
+    display:none;
+}
+
+#message .message {
+    margin:80px 90px 80px 60px;
+}
+
+#message .note {
+    font-size:12px;
+    font-family:'Arvo';
+}
+
+#message .note.right {
+    text-align:right;
+}
+
+#message #contact_info {
+    margin:30px 30px;
+}
+
+#message #contact_info dl {
+    font-size:15px;
+}
+
+#message #contact_info dt, #message #contact_info dd {
+    padding-top:10px;
+}
+
+#message #contact_info h3 {
+    text-align:center;
+    font-size:16px;
+}
+
+#message #contact_info .edit {
+    margin-left:200px;
+    display:block;
+    font-size:16px;
+}

@@ -1,0 +1,75 @@
+#!/bin/bash
+
+usage()
+{
+cat <<EOF
+usage: `basename $0` options
+Dedups a bunch of samples.
+OPTIONS:
+   -h     Show this message and exit
+   -i DIR [Required] Input directory.
+   -o DIR [Required] 
+   -l STR List of samples. If not provided, it will read from STDIN.
+   -c     Overwrite [0]
+EOF
+}
+
+CLEAN=0
+INDIR=
+OUTDIR=
+LIST=
+while getopts "hi:o:l:c" opt
+do
+    case $opt in
+	h)
+	    usage; exit;;
+	i)
+	    INDIR=$OPTARG;;
+	o)
+	    OUTDIR=$OPTARG;;
+	l)
+	    LIST=$OPTARG;;
+	c) 
+	    CLEAN=1;;
+	?)
+	    usage
+	    exit 1;;
+    esac	    
+done
+
+if [[ -z $OUTDIR || -z $INDIR ]]; then
+    usage; exit 1;
+fi
+if [ ! -d $OUTDIR ]; then
+    mkdir -p $OUTDIR
+fi
+if [ ! -d $INDIR ]; then
+    echo 'Indir does not exist' 1>&2; exit 1;
+fi
+
+JOBGRPID="/clipBatch$RANDOM"
+bgadd -L 50 $JOBGRPID
+
+while read -r sample fq2 ; do
+    if [[ "$sample" =~ ^SNYDER_HG19_ ]]; then
+	sample=$sample
+    else
+	sample=${sample^^} # This will convert to uppercase
+	if [[ "$sample" =~ ^[0-9]+ ]]; then # Correct HapMap names
+	    sample="GM"$sample
+	fi
+	sample="SNYDER_HG19_${sample}"
+    fi
+    if [[ $fq2 == "NA" ]]; then echo "Single-end file $sample. Skipping" >&2; continue; fi
+
+    inpref=${INDIR}/${sample}_reconcile.dedup
+    outpref=${OUTDIR}/${sample}_reconcile.dedup
+
+    if [[ ! -s ${inpref}.bam ]]; then echo "Skipping $sample. Input file missing." >&2; continue; fi
+
+    if [[ $CLEAN -eq 1 || ! -f ${outpref}.bam ]]; then
+	bsub -g $JOBGRPID -J ${sample}_clip -e /dev/null -o /dev/null -n 1 -q research-rh6 -W 24:00 -M 16384 -R "rusage[mem=16384]" "$MAYAROOT/tools/bamUtil_1.0.3/bamUtil/bin/bam clipOverlap --in ${inpref}.bam --out ${outpref}.bam --stats >&2 ${outpref}.clip.stats; samtools index ${outpref}.bam"
+    else
+	echo "Skipping $sample. Output file exists." >&2; continue;
+    fi
+done < "${LIST:-/proc/${$}/fd/0}"

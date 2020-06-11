@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+
+		<mapping class="forms.Buyukbas" />
+		<mapping class="forms.Kucukbas" />
+		<mapping class="forms.Hissedarlar" />
+		<mapping class="forms.Hissedarlar2" />
+		<mapping class="forms.Giderler" />
+		<mapping class="forms.Tahsilat" />
+		<mapping class="forms.Tahsilat2" />
+		<mapping class="forms.OdemeGecmisi" />
+		<mapping class="forms.OdemeGecmisi2" />
+		<!-- <mapping class="forms.Demirbas" /> <mapping class="forms.Kullanici" 
+			/> <mapping class="forms.Birimler" /> <mapping class="forms.Zimmet" /> <mapping 
+			class="forms.Personel" /> <mapping class="forms.Memurlar" /> -->
+
+
+	</session-factory>
+</hibernate-configuration>

@@ -1,0 +1,51 @@
+.g-icon.set_api {
+    padding-left: 16px;
+    }
+    .g-icon.set_api > .g-icon-h {
+        margin: -1px 0 0 -16px;
+        }
+        .g-icon.set_api > .g-icon-h > .g-icon-item {
+            width: 16px;
+            height: 16px;
+            background: url(/d/i/blocks/g-icon/other/set_api/set_api.png) 0 0 no-repeat;
+            }
+        
+        .g-icon.set_api.mod_package > .g-icon-h > .g-icon-item {
+            background-position: 0 0;
+            }
+        .g-icon.set_api.mod_class > .g-icon-h > .g-icon-item {
+            background-position: 0 -16px;
+            }
+            .g-icon.set_api.mod_class.member_static > .g-icon-h > .g-icon-item {
+                background-position: 0 -32px;
+                }
+            .g-icon.set_api.mod_class.member_abstract > .g-icon-h > .g-icon-item {
+                background-position: 0 -48px;
+                }
+        .g-icon.set_api.mod_mixin > .g-icon-h > .g-icon-item {
+            background-position: 0 -64px;
+            }
+        .g-icon.set_api.mod_event > .g-icon-h > .g-icon-item {
+            background-position: 0 -80px;
+            }
+        .g-icon.set_api.mod_property > .g-icon-h > .g-icon-item {
+            background-position: 0 -96px;
+            }
+        .g-icon.set_api.mod_interface > .g-icon-h > .g-icon-item {
+            background-position: 0 -112px;
+            }
+        .g-icon.set_api.mod_method > .g-icon-h > .g-icon-item {
+            background-position: 0 -128px;
+            }
+        .g-icon.set_api.mod_option > .g-icon-h > .g-icon-item {
+            background-position: 0 -144px;
+            }
+        .g-icon.set_api.mod_constant > .g-icon-h > .g-icon-item {
+            background-position: 0 -160px;
+            }
+        .g-icon.set_api.mod_home > .g-icon-h > .g-icon-item {
+            background-position: 0 -176px;
+            }
+        .g-icon.set_api.mod_forward > .g-icon-h > .g-icon-item {
+            background-position: 0 -208px;
+            }

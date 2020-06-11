@@ -1,0 +1,64 @@
+#show_location_statusbox {
+	margin-top: -1px;
+	margin-bottom: -1px;
+}
+
+#show_location_icon{
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+#show_location_tooltip {
+ 	-moz-box-orient: horizontal;
+ 	-moz-box-align: center;
+ 	max-width: 999px;
+}
+
+#show_location_drag_icon {
+	list-style-image: url("chrome://show_location/skin/show_location_drag.png");
+	cursor: move;
+	-moz-border-radius: 15px;
+	background-color: LightGray;
+}
+
+*[show_location_drag="right"] {
+	border-right: 2px solid black;
+	-moz-appearance: none;
+}
+
+*[show_location_drag="left"] {
+	border-left: 2px solid black;
+	-moz-appearance: none;
+}
+
+#show_location_iptool_button {
+	list-style-image: url("chrome://show_location/skin/show_location_iptool_24.png");
+}
+
+toolbar[iconsize="small"] #show_location_iptool_button {
+	list-style-image: url("chrome://show_location/skin/show_location_iptool_16.png");
+}
+
+#show_location_iptool_button:hover {
+	list-style-image: url("chrome://show_location/skin/show_location_iptool_hover_24.png");
+}
+
+toolbar[iconsize="small"] #show_location_iptool_button:hover  {
+	list-style-image: url("chrome://show_location/skin/show_location_iptool_hover_16.png");
+}
+
+#show_location_maptool_button {
+	list-style-image: url("chrome://show_location/skin/show_location_map_24.png");
+}
+
+toolbar[iconsize="small"] #show_location_maptool_button {
+	list-style-image: url("chrome://show_location/skin/show_location_map_16.png");
+}
+
+#show_location_maptool_button:hover {
+	list-style-image: url("chrome://show_location/skin/show_location_map_hover_24.png");
+}
+
+toolbar[iconsize="small"] #show_location_maptool_button:hover  {
+	list-style-image: url("chrome://show_location/skin/show_location_map_hover_16.png");
+}

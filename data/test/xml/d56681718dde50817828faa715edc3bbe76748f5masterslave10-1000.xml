@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<!DOCTYPE platform SYSTEM "http://simgrid.gforge.inria.fr/simgrid.dtd">
+<platform version="3">
+  <process host="c-0.me" function="masterslave.Master"><argument value="1000"/><argument value="50000000"/><argument value="1000000"/><argument value="10"/></process>
+  <process host="c-0.me" function="masterslave.Slave"><argument value="0" /></process>
+  <process host="c-1.me" function="masterslave.Slave"><argument value="1" /></process>
+  <process host="c-2.me" function="masterslave.Slave"><argument value="2" /></process>
+  <process host="c-3.me" function="masterslave.Slave"><argument value="3" /></process>
+  <process host="c-4.me" function="masterslave.Slave"><argument value="4" /></process>
+  <process host="c-5.me" function="masterslave.Slave"><argument value="5" /></process>
+  <process host="c-6.me" function="masterslave.Slave"><argument value="6" /></process>
+  <process host="c-7.me" function="masterslave.Slave"><argument value="7" /></process>
+  <process host="c-8.me" function="masterslave.Slave"><argument value="8" /></process>
+  <process host="c-9.me" function="masterslave.Slave"><argument value="9" /></process>
+</platform>

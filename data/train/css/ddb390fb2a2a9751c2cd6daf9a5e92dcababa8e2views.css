@@ -1,0 +1,201 @@
+/*********
+ * Frame *
+ *********/
+
+.frame {
+    border-width: 1px;
+    border-style: solid;
+    border-color: @borders;
+    background-color: @base_color;
+}
+
+.frame:backdrop {
+    border-color: @unfocused_borders_color;
+    background-color: @unfocused_base_color;
+}
+
+.frame:insensitive {
+    border-color: @insensitive_borders_color;
+    background-color: @insensitive_base_color;
+}
+
+/********
+ * View *
+ ********/
+.view {
+    background-color: @base_color;
+    color: @text_color;
+    text-shadow: none;
+}
+
+.view:insensitive,
+.view:insensitive:insensitive {
+    background-color: @insensitive_bg_color;
+    color: @insensitive_fg_color;
+    border-color: @insensitive_borders_color;
+}
+
+.view:backdrop,
+.view:backdrop:backdrop {
+    background-color: @unfocused_bg_color;
+    border-color: @unfocused_borders_color;
+}
+
+.view:selected,
+.view:selected:focus {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+}
+
+.view:selected:backdrop,
+.view:selected:backdrop:focus {
+    background-color: @unfocused_bg_color;
+    color: @text_color;
+}
+
+.view.separator {
+    color: @borders;
+}
+
+/* Selected */
+.view.rubberband,
+.rubberband {
+    border-width: 1px;
+    border-style: solid;
+    border-color: shade(@selected_bg_color, 0.9);
+    border-radius: 0;
+    background-color: alpha(@selected_bg_color, 0.3);
+}
+
+/************
+ * Viewport *
+ ************/
+GtkViewport.frame {
+    background-color: @base_color;
+}
+
+/*******************
+ * Scrolled Window *
+ *******************/
+GtkScrolledWindow.frame {
+    border-width: 1px;
+    border-style: solid;
+    border-color: @borders;
+    background-color: @base_color;
+}
+
+GtkScrolledWindow GtkViewport.frame {
+    border-style: none; /* To avoid double borders when a viewport is packed into a GtkScrolledWindow */
+}
+
+/************
+ * Treeview *
+ ************/
+
+GtkTreeView.view.separator,
+GtkTreeView.separator,
+.separator,
+.separator:hover {
+    color: @borders;
+    background-color: @borders;
+}
+
+GtkTreeView {
+    -GtkTreeView-vertical-separator: 0;
+    -GtkWidget-focus-line-width: 1;
+    -GtkWidget-focus-padding: 1;
+}
+
+GtkTreeView.dnd {
+    border-width: 0px;
+    border-style: solid;
+    border-color: @selected_borders_color;
+    border-radius: 0;
+}
+
+GtkTreeView .entry {
+    border-radius: 0;
+    background-color: @base_color;
+    background-image: none;
+}
+
+/************
+ * Textview *
+ ************/
+
+GtkTextView {
+    background-color: @base_color;
+    color: @text_color;
+}
+
+/************
+ * Iconview *
+ ************/
+GtkIconView.view {
+    background-color: @base_color;
+}
+ 
+GtkIconView.view.cell:selected,
+GtkIconView.view.cell:selected:focus {
+    border-width: 1px;
+    border-style: solid;
+    border-color: @selected_bg_color;
+    border-radius: 6px;
+    background-color: alpha(@selected_bg_color, 0.5);
+    color: @selected_fg_color;
+}
+
+
+GdMainIconView.content-view {
+    -GdMainIconView-icon-size: 48px;
+}
+
+GtkIconView.content-view.check {
+    background-color: transparent;
+}
+
+GtkIconView.content-view.check:active {
+    background-color: transparent;
+}
+
+GtkIconView.content-view.check:prelight,
+GtkIconView.content-view.check:insensitive,
+GtkIconView.content-view.check:selected {
+    background-color: transparent;
+}
+
+
+/****************
+ * Content View *
+ ****************/
+.content-view.view {
+    background-color: @base_color;
+}
+
+.content-view.view:hover {
+    background-color: alpha(@selected_bg_color, 0.6);
+}
+
+.content-view.view:selected,
+.content-view.view:active {
+    background-color: @selected_bg_color;
+}
+
+.content-view.view:insensitive {
+    background-color: @insensitive_bg_color;
+}
+
+
+.content-view.view.check,
+.content-view.view.check:active {
+    background-color: transparent;
+}
+
+/* Drawing area */
+GtkDrawingArea {
+    background-color: transparent;
+}
+
+GtkDrawingArea:insensitive {
+    background-color: @insensitive_bg_color;
+}

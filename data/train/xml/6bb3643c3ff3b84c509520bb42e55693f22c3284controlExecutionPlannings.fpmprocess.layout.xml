@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="Cp1252"?>
+
+<fpm-process-layout iconsDisplayMode="LARGE" showGrid="true" routerType="MANHATTAN">
+  <input id="input" x="27" y="57" width="32" height="32"/>
+  <business-node id="ControlExecutionPlanning" x="623" y="46" width="130" height="100"/>
+  <business-node id="ForkNode" x="800" y="46" width="130" height="100"/>
+  <business-node id="HibernateStandardRead" x="118" y="46" width="130" height="100"/>
+  <business-node id="IteratorNode" x="276" y="46" width="130" height="100"/>
+  <business-node id="LogPlanningException" x="1034" y="269" width="130" height="100"/>
+  <business-node id="MappingNode" x="441" y="46" width="130" height="100"/>
+  <business-node id="PatchedIteratorNode" x="273" y="162" width="130" height="100"/>
+  <business-node id="SwitchNode" x="1016" y="27" width="130" height="100"/>
+  <subprocess id="ExecuteShellProcess" x="1229" y="12" width="130" height="100"/>
+  <subprocess id="FtpGetProcess" x="1231" y="241" width="130" height="100"/>
+  <subprocess id="FtpPutProcess" x="1230" y="125" width="130" height="100"/>
+  <subprocess id="GenerateFileProcess" x="1236" y="358" width="130" height="100"/>
+  <subprocess id="Update Plannings" x="842" y="364" width="130" height="100"/>
+  <connection id="/business process/MappingNode/out/business process/ControlExecutionPlanning/in"/>
+  <connection id="/business process/ControlExecutionPlanning/out/business process/ForkNode/in"/>
+  <connection id="/business process/ForkNode/one/business process/SwitchNode/in"/>
+  <connection id="/business process/ForkNode/two/business process/Update Plannings/input"/>
+  <connection id="/business process/input/business process/HibernateStandardRead/in"/>
+  <connection id="/business process/HibernateStandardRead/out/business process/PatchedIteratorNode/in"/>
+  <connection id="/business process/SwitchNode/exception/business process/LogPlanningException/exc"/>
+  <connection id="/business process/PatchedIteratorNode/out/business process/MappingNode/in"/>
+  <connection id="/business process/SwitchNode/executeShell/business process/ExecuteShellProcess/input"/>
+  <connection id="/business process/SwitchNode/ftpPut/business process/FtpPutProcess/input"/>
+  <connection id="/business process/SwitchNode/ftpGet/business process/FtpGetProcess/input"/>
+  <connection id="/business process/SwitchNode/default/business process/GenerateFileProcess/input"/>
+</fpm-process-layout>

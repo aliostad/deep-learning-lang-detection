@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 22.3">
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id @+id/linearLayout1, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Checks for duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="            android:id=&quot;@+id/linearLayout1&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/Linda/CoolerInstrument/app/src/main/res/layout/instrument.xml"
+            line="16"
+            column="13"/>
+        <location
+            file="/Users/Linda/CoolerInstrument/app/src/main/res/layout/instrument.xml"
+            line="8"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id @+id/linearLayout1, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Checks for duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="            android:id=&quot;@+id/linearLayout1&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/Linda/CoolerInstrument/app/src/main/res/layout/instrument.xml"
+            line="80"
+            column="13"/>
+        <location
+            file="/Users/Linda/CoolerInstrument/app/src/main/res/layout/instrument.xml"
+            line="8"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id @+id/linearLayout1, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Checks for duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="            android:id=&quot;@+id/linearLayout1&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/Linda/CoolerInstrument/app/src/main/res/layout/instrument.xml"
+            line="145"
+            column="13"/>
+        <location
+            file="/Users/Linda/CoolerInstrument/app/src/main/res/layout/instrument.xml"
+            line="8"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id @+id/linearLayout1, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Checks for duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="            android:id=&quot;@+id/linearLayout1&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/Linda/CoolerInstrument/app/src/main/res/layout/instrument.xml"
+            line="210"
+            column="13"/>
+        <location
+            file="/Users/Linda/CoolerInstrument/app/src/main/res/layout/instrument.xml"
+            line="8"
+            column="9"/>
+    </issue>
+
+</issues>

@@ -1,0 +1,84 @@
+/* CSS styles to support the REST API help page */
+/* line 8, sass/rest_api.scss */
+body {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  padding: 1em;
+}
+/* line 11, sass/rest_api.scss */
+body * {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 17, sass/rest_api.scss */
+h1 {
+  font-size: 1.7em;
+}
+
+/* line 20, sass/rest_api.scss */
+h2 {
+  font-size: 1.5em;
+}
+
+/* line 23, sass/rest_api.scss */
+h3 {
+  font-size: 1.2em;
+}
+
+/* line 27, sass/rest_api.scss */
+h1, h2, h3 {
+  margin-top: 1em;
+  color: #0066AA;
+}
+
+/* line 32, sass/rest_api.scss */
+h4 {
+  margin-top: 1em;
+}
+
+/* line 36, sass/rest_api.scss */
+li {
+  margin-left: 2em;
+}
+
+/* line 40, sass/rest_api.scss */
+table {
+  border-collapse: collapse;
+  margin-top: 1em;
+  min-width: 50%;
+}
+/* line 45, sass/rest_api.scss */
+table caption {
+  padding: 0.25em;
+  background-color: #C1DAD7;
+  border: solid silver 1px;
+  border-bottom: none;
+  font-weight: bold;
+}
+/* line 54, sass/rest_api.scss */
+table th[scope=col] {
+  background-color: #C1DAD7;
+}
+/* line 57, sass/rest_api.scss */
+table th[scope=row] {
+  background-color: #e6e6e6;
+}
+/* line 59, sass/rest_api.scss */
+table th[scope=row].type-report {
+  background: #e6e6e6 url(../../../../media/images/report_datatable.png) no-repeat 4px 2px;
+  background-size: 25px 25px;
+  padding-left: 32px;
+}
+/* line 64, sass/rest_api.scss */
+table th[scope=row].type-folder {
+  background: #e6e6e6 url(../../../../media/images/folder.gif) no-repeat 4px 2px;
+  background-size: 25px 25px;
+  padding-left: 32px;
+}
+/* line 72, sass/rest_api.scss */
+table td, table th {
+  border: 1px solid silver;
+  padding: 0.25em 0.5em;
+  text-align: left;
+  vertical-align: top;
+}

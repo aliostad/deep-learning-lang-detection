@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Getsquare_Duplicatesku>
+            <version>0.1.0</version>
+        </Getsquare_Duplicatesku>
+    </modules>
+    <global>
+        <events>
+            <catalog_model_product_duplicate>
+                <observers>
+                    <getsquare_duplicatesku_observer>
+                        <class>Getsquare_Duplicatesku_Model_Observer</class>
+                        <method>duplicate</method>
+                    </getsquare_duplicatesku_observer>
+                </observers>
+            </catalog_model_product_duplicate>
+        </events>
+    </global>
+</config>

@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/**
+ * @authors gaoxuefeng
+ */
+body{
+		margin: 0;
+		min-width: 800px;
+		font-family: "Microsoft YaHei";
+		background: url(../images/load.jpg) no-repeat 50%;
+		-webkit-background-size: cover;
+		background-size: cover;
+		// overflow: hidden;
+	}
+button{font-family: "Microsoft YaHei";}
+	/*初始登陆样式*/
+	.boxShadow{
+		position: absolute;
+		top:0;
+		right: 0;
+		z-index: 100;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,.4);
+	}
+	.load{
+		position: absolute;
+		top: 32%;
+		left: 30%;
+		z-index: 200;
+		width: 40%;
+		height: 36%;
+		min-width: 320px;
+		/*background-color: #e7e9fd;*/
+		color: #fff;
+		border-radius: 10px;
+		box-shadow: 0px 0px 20px 3px #a6baff;
+		overflow: hidden;
+	}
+	.load-title{
+		padding-left: 16px;
+		height: 48px;
+		line-height: 48px;
+		/*background-color: #d0d9ff;*/
+		/*box-shadow: 0px 0px 6px 2px #a6baff;*/
+		cursor: move;
+	}
+	.load-content{
+		margin-bottom: 16%;
+		padding-left: 16px;
+		font-size: 16px;
+	}
+	.load-but{
+		display: block;
+		margin: 0 auto;
+		padding: 6px 20px;
+		font-size: 18px;
+		color: #fff;
+		background-color: rgba(0, 0, 0, .4);
+		border:none;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+	.load-but:hover, .load-but:active{
+		background-color: rgba(0, 0, 0, .6);
+	}
+	/* 展示内容导航样式 */
+	.content{
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, .3);
+		display: none;
+	}
+	.content p {margin: 0;}
+	.main{
+		margin: 0 auto;
+		padding: 5%;
+		width: 90%;
+		height: 100%;
+		border-radius: 10px;
+	}
+	.main:hover .main-1{width: 5%;}
+	.main .main-1:hover{width: 78%;}
+	.main .main-1{
+		float: left;
+		margin:10px 0 10px 0;
+		width: 10%;
+		height: 98%;
+		transition: all 1s;
+		background-color: rgba(0,0,0,.6);
+		box-shadow: 0px 0px 20px 3px #a6baff;
+		border-radius: 5px;
+		overflow: hidden;
+	}
+	.main-1:first-child {margin-left: 10px;}
+	.main-1-1{
+		min-width: 600px;
+		text-align: center;
+	}
+	.main-1-1 p{
+		margin:0 auto 6%;
+		width: 80%;
+		text-align: justify;
+	}
+	.main-1-1-img{
+		margin: 16% auto 10%;
+		width: 50%;
+		background-color: #fff;
+	}
+	.main-1-2-img{
+		margin: 4% auto 4%;
+		width: 100%;
+		height: 270px;
+		overflow: hidden;
+	}
+	.main-1-3-img{
+		margin: 8% auto 4%;
+		width: 100%;
+		height: 200px;
+	}
+	.goToPlay{
+		display: inline-block;
+		padding: 8px 14px;
+		color: #fff;
+		background-color: #378a59;
+		border-radius: 5px;
+	}
+	.goToPlay:hover{color: #fff;text-decoration: none;}

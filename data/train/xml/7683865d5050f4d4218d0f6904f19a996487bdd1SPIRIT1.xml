@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phy name="SPIRIT1" signature="P">
+  <pin name="NCS" signal="SPI_NSS"/>
+  <pin name="CLK" signal="SPI_SCK"/>
+  <pin name="SO"  signal="SPI_MISO"/>
+  <pin name="SI"  signal="SPI_MOSI"/>
+  <pin name="GPIO0" signal="DIO" optional="true" />
+  <pin name="GPIO1" signal="DIO" optional="true" />
+  <pin name="GPIO2" signal="DIO" optional="true" />
+  <append fmt="#define SPIRIT_USE_SPI                {0}">
+      <var name="spi.channel"/>
+  </append>
+  <append fmt="#define SPIRIT_NSS_PIN                {0}">
+      <var name="NCS.pinnr"/>  <!-- _nss.parent.idx + _nss.parent.port.offset -->
+  </append>
+  <append fmt="#define SPIRIT_GPIO0_PIN              {0}" optional="true" >
+    <var name="GPIO0.pinnr" />
+  </append>
+  <append fmt="#define SPIRIT_GPIO0_STAT             {0}" optional="true" >
+    <var name="GPIO0.pinget" />
+  </append>
+  <append fmt="#define SPIRIT_GPIO1_PIN              {0}" optional="true" >
+    <var name="GPIO1.pinnr" />
+  </append>
+  <append fmt="#define SPIRIT_GPIO1_STAT             {0}" optional="true" >
+    <var name="GPIO1.pinget" />
+  </append>
+  <append fmt="#define SPIRIT_GPIO2_PIN              {0}" optional="true" >
+    <var name="GPIO2.pinnr" />
+  </append>
+  <append fmt="#define SPIRIT_GPIO2_STAT             {0}" optional="true" >
+    <var name="GPIO2.pinget" />
+  </append>  
+  <append fmt="#define SPIRIT_SELECT()               {0}">
+    <var name="NCS.pinrst" /> <!--format name="spi.nss.parent.port.pinrst"> <var name="spi.nss.parent.idx"/> </format-->
+  </append>
+  <append fmt="#define SPIRIT_RELEASE()              {0}">
+    <var name="NCS.pinset"/> <!--format name="spi.nss.parent.port.pinset"> <var name="spi.nss.parent.idx"/> </format-->
+  </append>
+  <append fmt="#define SPIRIT_PHY                    {0}">
+      <var name="nr"/>
+  </append>
+  <append fmt="#define SPIRIT_DEFAULT_FREQ           868300000UL"/>
+  <append fmt="#include &quot;PHY/SPIRIT1/spirit1_phy.h&quot;"/>
+</phy>

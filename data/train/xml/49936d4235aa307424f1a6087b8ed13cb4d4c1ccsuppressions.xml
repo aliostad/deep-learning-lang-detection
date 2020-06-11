@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suppressions PUBLIC
+    "-//Puppy Crawl//DTD Suppressions 1.1//EN"
+    "http://www.puppycrawl.com/dtds/suppressions_1_1.dtd">
+
+<suppressions>
+    <suppress checks="MagicNumberCheck" files="[\\/]*Test.java"/>
+    <suppress checks="StrictDuplicateCodeCheck" files="[\\/]domain[\\/]"/>
+	<suppress checks="StrictDuplicateCodeCheck" files="[\\/]viewhelper[\\/]"/>
+    <suppress checks="StrictDuplicateCodeCheck" files="[\\/]spring-config[\\/]"/>
+    <suppress checks="StrictDuplicateCodeCheck" files="[\\/]*.properties"/>
+    <suppress checks="StrictDuplicateCodeCheck" files="[\\/]test[\\/]"/>
+    <suppress checks="StrictDuplicateCodeCheck" files="[\\/]Test[\\/]"/>
+</suppressions>

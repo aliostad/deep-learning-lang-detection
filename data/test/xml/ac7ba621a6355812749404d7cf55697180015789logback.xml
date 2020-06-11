@@ -1,0 +1,26 @@
+<configuration>
+
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>ALL_DEBUG.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%date{ISO8601} %-5level %logger{36} %X{sourceThread} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="METRICS_FILE" class="ch.qos.logback.core.FileAppender">
+        <file>metrics.log</file>
+        <append>false</append>
+        <encoder>
+            <pattern>%msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="DEBUG">
+        <appender-ref ref="FILE"/>
+    </root>
+
+    <logger name="metrics(akka://ClusterSystem)" level="INFO">
+        <appender-ref ref="METRICS_FILE"/>
+    </logger>
+</configuration>

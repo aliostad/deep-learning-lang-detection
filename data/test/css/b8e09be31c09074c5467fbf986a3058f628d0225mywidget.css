@@ -1,0 +1,31 @@
+#popup-message {
+  model = module('widgets/mywidget/model');
+  =>
+  div.esriSimpleSlider {
+    text-align: left !important;
+    padding:25px;
+  }
+      label 'State Name',
+      input.form-control[placeholder=Search...][type=text](model/value) {
+        on-keyup: model/updateValue(event);
+      },
+      p,
+      button.btn.btn-primary (model/message) {
+        on-click: model/find()
+      }
+}
+
+#footer {
+  =>
+      #popup-message;
+
+  position: absolute;
+  z-index: 999;
+  left: 75px;
+  top: 20px;
+  width: 200px;
+  margin :0;
+  border-radius: 10px;
+  color: #000;
+  background-color: #fff;
+}

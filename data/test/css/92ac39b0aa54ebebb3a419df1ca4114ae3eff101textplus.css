@@ -1,0 +1,104 @@
+/*!
+ * @version   $Id: textplus.css 4588 2012-10-27 02:10:21Z btowles $
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2013 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+.input-append input {
+    margin-right: 0;
+    vertical-align: top;
+}
+
+.input-prepend input {
+    margin-left: 0;
+    vertical-align: top;
+}
+
+.uneditable-textarea {
+    width: auto;
+    height: auto
+}
+
+label input, label textarea, label select {
+    display: block
+}
+
+.input-prepend, .input-append {
+    margin-bottom: 5px;
+}
+
+.input-prepend input, .input-prepend .uneditable-input, .input-append input, .input-append .uneditable-input {
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0
+}
+
+.input-prepend .uneditable-input, .input-append .uneditable-input {
+    border-left-color: #ccc
+}
+
+.input-prepend .add-on, .input-append .add-on {
+    float: left;
+    display: inline-block;
+    width: auto;
+    min-width: 16px;
+    height: 18px;
+    margin-right: -1px;
+    padding: 4px 4px 4px 5px;
+    font-weight: normal;
+    line-height: 18px;
+    color: #999;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px
+}
+
+.input-prepend .active, .input-append .active {
+    background-color: #a9dba9;
+    border-color: #46a546
+}
+
+.input-prepend .add-on {
+    *margin-top: 1px
+}
+
+.input-append input, .input-append .uneditable-input {
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px
+}
+
+.input-append .uneditable-input {
+    border-right-color: #ccc;
+    float: left
+}
+
+.input-append .add-on {
+    margin-right: 0;
+    margin-left: -5px;
+    float: none;
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0
+}
+
+.input-append input:first-child {
+    *margin-left: -160px
+}
+
+.input-append input:first-child+.add-on {
+    *margin-left: -21px
+}
+
+.search-query {
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-bottom: 0;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    border-radius: 14px
+}

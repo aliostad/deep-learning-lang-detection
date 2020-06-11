@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.igniterealtime.xiff.collections.events"><apiName>org.igniterealtime.xiff.collections.events</apiName><apiDetail/><apiClassifier id="org.igniterealtime.xiff.collections.events:CollectionEventKind"><apiName>CollectionEventKind</apiName><shortdesc>
+	  The CollectionEventKind class contains constants for the valid values
+	  of the CollectionEvent class kind property.</shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiFinal/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	  The CollectionEventKind class contains constants for the valid values
+	  of the CollectionEvent class kind property.
+	 </apiDesc></apiClassifierDetail><apiValue id="org.igniterealtime.xiff.collections.events:CollectionEventKind:ADD"><apiName>ADD</apiName><shortdesc>
+		  Indicates that the collection added an item or items.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>add</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		  Indicates that the collection added an item or items.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.igniterealtime.xiff.collections.events:CollectionEventKind:REMOVE"><apiName>REMOVE</apiName><shortdesc>
+		  Indicates that the collection removed an item or items.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>remove</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		  Indicates that the collection removed an item or items.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.igniterealtime.xiff.collections.events:CollectionEventKind:REPLACE"><apiName>REPLACE</apiName><shortdesc>
+		  Indicates that the item at the position identified by the
+		  CollectionEvent location property has been replaced.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>replace</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		  Indicates that the item at the position identified by the
+		  CollectionEvent location property has been replaced.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.igniterealtime.xiff.collections.events:CollectionEventKind:RESET"><apiName>RESET</apiName><shortdesc>
+		  Indicates that the collection has changed so drastically that
+		  a reset is required.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>reset</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		  Indicates that the collection has changed so drastically that
+		  a reset is required.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.igniterealtime.xiff.collections.events:CollectionEventKind:UPDATE"><apiName>UPDATE</apiName><shortdesc>
+		  Indicates that one or more items were updated within the collection.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>update</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		  Indicates that one or more items were updated within the collection.
+		  The affected item(s)
+		  are stored in the items property.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.igniterealtime.xiff.collections.events:CollectionEvent"><apiName>CollectionEvent</apiName><shortdesc>
+	  The CollectionEvent class represents an event that is
+	  dispatched when the associated collection changes.</shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.events:Event</apiBaseClassifier></apiClassifierDef><apiDesc>
+	  The CollectionEvent class represents an event that is
+	  dispatched when the associated collection changes.
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.igniterealtime.xiff.collections.events:CollectionEvent:CollectionEvent"><apiName>CollectionEvent</apiName><shortdesc>
+		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>type</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>bubbles</apiItemName><apiType value="Boolean"/><apiData>false</apiData></apiParam><apiParam><apiItemName>cancelable</apiItemName><apiType value="Boolean"/><apiData>false</apiData></apiParam><apiParam><apiItemName>kind</apiItemName><apiType value="String"/><apiData>null</apiData></apiParam><apiParam><apiItemName>location</apiItemName><apiType value="int"/><apiData>-1</apiData></apiParam><apiParam><apiItemName>oldLocation</apiItemName><apiType value="int"/><apiData>-1</apiData></apiParam><apiParam><apiItemName>items</apiItemName><apiType value="Array"/><apiData>null</apiData></apiParam></apiConstructorDef><apiDesc>
+		 Constructor.
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.igniterealtime.xiff.collections.events:CollectionEvent:clone"><apiName>clone</apiName><shortdesc>
+		 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiIsOverride/><apiReturn><apiType value="flash.events:Event"/></apiReturn></apiOperationDef><apiDesc>
+		 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.igniterealtime.xiff.collections.events:CollectionEvent:toString"><apiName>toString</apiName><shortdesc>
+		 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiIsOverride/><apiReturn><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.igniterealtime.xiff.collections.events:CollectionEvent:COLLECTION_CHANGE"><apiName>COLLECTION_CHANGE</apiName><shortdesc>
+		  The CollectionEvent.COLLECTION_CHANGE constant defines the value of the
+		  type property of the event object for an event that is
+		  dispatched when a collection has changed.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>collectionChange</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		  The CollectionEvent.COLLECTION_CHANGE constant defines the value of the
+		  type property of the event object for an event that is
+		  dispatched when a collection has changed.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.igniterealtime.xiff.collections.events:CollectionEvent:items"><apiName>items</apiName><shortdesc>
+		  When the kind is CollectionEventKind.ADD
+		  or CollectionEventKind.REMOVE the items property
+		  is an Array of added/removed items.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiType value="Array"/></apiValueDef><apiDesc>
+		  When the kind is CollectionEventKind.ADD
+		  or CollectionEventKind.REMOVE the items property
+		  is an Array of added/removed items.
+		  When the kind is CollectionEventKind.REPLACE
+		  or CollectionEventKind.UPDATE the items property
+		  is an Array of PropertyChangeEvent objects with information about the items
+		  affected by the event.
+		  When a value changes, query the newValue and
+		  oldValue fields of the PropertyChangeEvent objects
+		  to find out what the old and new values were.
+		  When the kind is CollectionEventKind.REFRESH
+		  or CollectionEventKind.RESET, this array has zero length.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.igniterealtime.xiff.collections.events:CollectionEvent:kind"><apiName>kind</apiName><shortdesc>
+		  Indicates the kind of event that occurred.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiType value="String"/></apiValueDef><apiDesc>
+		  Indicates the kind of event that occurred.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.igniterealtime.xiff.collections.events:CollectionEvent:location"><apiName>location</apiName><shortdesc>
+		  When the kind value is CollectionEventKind.ADD,
+		  CollectionEventKind.MOVE,
+		  CollectionEventKind.REMOVE, or
+		  CollectionEventKind.REPLACE, this property is the
+		  zero-base index in the collection of the item(s) specified in the
+		  items property.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiType value="int"/></apiValueDef><apiDesc>
+		  When the kind value is CollectionEventKind.ADD,
+		  CollectionEventKind.MOVE,
+		  CollectionEventKind.REMOVE, or
+		  CollectionEventKind.REPLACE, this property is the
+		  zero-base index in the collection of the item(s) specified in the
+		  items property.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.igniterealtime.xiff.collections.events:CollectionEvent:oldLocation"><apiName>oldLocation</apiName><shortdesc>
+		  When the kind value is CollectionEventKind.MOVE,
+		  this property is the zero-based index in the target collection of the
+		  previous location of the item(s) specified by the items property.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiType value="int"/></apiValueDef><apiDesc>
+		  When the kind value is CollectionEventKind.MOVE,
+		  this property is the zero-based index in the target collection of the
+		  previous location of the item(s) specified by the items property.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

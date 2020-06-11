@@ -1,0 +1,37 @@
+/*	Add additional stylesheets below
+*/
+/*
+  Bootstrap's documentation styles
+  Special styles for presenting Bootstrap's documentation and examples.
+
+  INCLOMPLET
+*/
+
+
+
+/* Special grid styles
+-------------------------------------------------- */
+
+.show-grid {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+.show-grid [class*="span"] {
+  background-color: #eee;
+}
+.show-grid [class*="span"]:hover {
+  background-color: #ddd;
+}
+.show-grid .show-grid {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.show-grid .show-grid [class*="span"] {
+  margin-top: 5px;
+}
+.show-grid [class*="span"] [class*="span"] {
+  background-color: #ccc;
+}
+.show-grid [class*="span"] [class*="span"] [class*="span"] {
+  background-color: #999;
+}

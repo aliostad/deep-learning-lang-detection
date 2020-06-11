@@ -1,0 +1,58 @@
+/**
+ * jQuery Message Handler
+ * https://github.com/garagesocial/message-handler-js
+ *
+ * Licensed under the MIT license.
+ * Copyright 2013 Garagesocial, Inc.
+ */
+
+.gs-message {
+  position: relative;
+  overflow: hidden;
+  background: #FCF8E3;
+  color: #C09853;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  -moz-transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+}
+.gs-message:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #F0E3A1;
+  -webkit-transition: border 0.2s;
+  -moz-transition: border 0.2s;
+  transition: border 0.2s;
+}
+.gs-message > div {
+  padding: 8px 12px;
+}
+.gs-message strong {
+  font-weight: bold;
+}
+.gs-message.gs-message-error {
+  background: #F2DEDE;
+  color: #B94A48;
+}
+.gs-message.gs-message-error:after {
+  border-color: #e4b9b9;
+}
+.gs-message.gs-message-success {
+  background: #DFF0D8;
+  color: #468847;
+}
+.gs-message.gs-message-success:after {
+  border-color: #c1e2b3;
+}
+.gs-message.gs-message-info {
+  background: #D9EDF7;
+  color: #3A87AD;
+}
+.gs-message.gs-message-info:after {
+  border-color: #afd9ee;
+}

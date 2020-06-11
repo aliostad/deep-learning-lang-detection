@@ -1,0 +1,101 @@
+/*Zero browser defaults*/
+body * {margin:0; padding:0; border:none;text-indent:0;text-decoration: none;outline:none;}
+
+
+/* ------------------------
+	Basic style 
+ ------------------------ */
+body			{font-family:georgia; margin:0; padding:0;}
+h1, h2, p, ul, ol {font-weight:normal;margin-bottom:15px; font-size:15px; line-height:21px; }
+a 				{color:#00b4ff; /*blue*/}
+#arch div				{clear:both;}
+#nav             {list-style:none;}
+.current a         {color:black;}
+
+
+/* ------------------------
+	Layout
+ ------------------------ */
+
+/* Write a rule for #wrap that centers the page 
+   in the browser and sets its width to 1000px; */
+
+
+
+
+/* ------------------------
+	Home / Blur Building
+ ------------------------ */
+
+/* Write some rules that make the "#trigger-diller" and
+   "#trigger-foster" links look more like buttons 
+    (i.e. remove bullets, add backgrounds and padding, 
+     put them side by size, etc.)*/
+
+
+/* Write a rule that hides the "#diller" and
+   "#foster" divs by default */
+
+
+
+/* TIME TO EDIT THE HTML 
+/* Open index.html, look at the javascript near the top, 
+   and find a way to get the British Museum image working: 
+   i.e. get it to show/hide when the user clicks the British Museum button */
+
+
+
+/* ------------------------
+	Hitchock
+ ------------------------ */
+
+/* Write a rule for the .film divs that 
+   - floats them into rows of 2
+   - sets a height and width appropriate to the content
+   - adds a comfortable right margin
+   - adds 80px of right padding on their right
+*/    
+
+
+
+/* Without setting any particular background image,
+   write a rule for the .uk and .usa classes that 
+   sets the background position to the TOP RIGHT and 
+   prevents its background image fom repeating */    
+
+
+
+/* Although none of the .film divs have a class of "reveal",
+   they will as soon as the user clicks the "Show answers" link.
+   Write rules for .usa and .uk that attach their appropriate background 
+   images (flag-usa.jpg and flag-uk.jpg), but only when the div also has
+   a class of .reveal.  In other words, write rules that attach the images 
+   ONLY to <div class="film usa reveal"> and <div class="film uk reveal> ... */    
+
+
+/* ------------------------
+	Shulman
+ ------------------------ */
+
+/* Write some rules for the slide navigation (ul#slide-nav) 
+   that make the links look more like buttons */
+
+
+/* Write a rule that puts a 10px gray border on 
+   every image inside each .slide div  */
+
+
+/* Write a rule that makes the paragraphs inside each 
+   .slide div 10px Arial and give them a top margin of 10p */
+
+
+
+
+/* TIME TO EDIT THE HTML 
+
+   1) Open shulman.html, find the reference in the javascript to 
+      '#SOMEDIV', and change it to '#main'. 
+      Check to see that the slideshow now works with your buttons 
+ 
+   2) Work out what is connecting your buttons to the slideshow functions -- 
+     then find a way to make clicking on the image advance the user to the next image */

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<diff>
+  <!-- and Add Logos introduced by this Addon to the aiscript -->
+  <add sel='//set_value[@comment="create Logo List"]' pos="after">
+    <append_to_list name="$logo_list" exact="'faction_player_1'" />
+    <append_to_list name="$logo_list" exact="'faction_player_2'" />
+    <append_to_list name="$logo_list" exact="'faction_player_3'" />
+    <append_to_list name="$logo_list" exact="'faction_player_4'" />
+    <append_to_list name="$logo_list" exact="'faction_player_5'" />
+    <append_to_list name="$logo_list" exact="'faction_player_6'" />
+    <append_to_list name="$logo_list" exact="'faction_player_7'" />
+    <append_to_list name="$logo_list" exact="'faction_player_8'" />
+    <append_to_list name="$logo_list" exact="'faction_player_9'" />
+    <append_to_list name="$logo_list" exact="'faction_player_10'" />
+    <append_to_list name="$logo_list" exact="'faction_player_11'" />
+    <append_to_list name="$logo_list" exact="'faction_player_12'" />
+    <append_to_list name="$logo_list" exact="'faction_player_13'" />
+    <append_to_list name="$logo_list" exact="'faction_player_14'" />
+    <append_to_list name="$logo_list" exact="'faction_player_15'" />
+  </add>
+</diff>

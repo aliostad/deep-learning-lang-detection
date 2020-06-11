@@ -1,0 +1,65 @@
+*{
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+#onlineService{
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 9999;
+	margin:10% 0 0 0;
+}
+
+#onlineService #menu,#onlineService #btn{
+	float: left;
+}
+
+#onlineService #btn{
+	position: relative;
+	width: 28px;
+	margin: 80px -1px 0 0;
+}
+
+#onlineService #btn a{
+	background: url(float_s.gif) no-repeat;
+	display: block;
+	height: 118px;
+	text-indent: -9999em;
+	overflow: hidden;
+}
+
+#onlineService #menu,#onlineService #menu .main,#onlineService #menu .bot{
+	background: url(float_bg.gif) no-repeat;
+}
+
+#onlineService #btn .show{
+	background-position: -30px -374px;
+}
+
+#onlineService #btn .hide{
+	background-position: 0 -374px;
+}
+
+#onlineService #menu{
+	width: 130px;
+	padding: 10px 0 0;
+}
+
+#onlineService #menu .main{
+	background-position: -262px 0;
+	background-repeat: repeat-y;
+}
+
+#onlineService #menu .bot{
+	height: 12px;
+	overflow: hidden;
+	background-position: -131px 0;
+}
+
+#onlineService #menu .main{
+	min-height: 200px;
+	*height:200px;
+}

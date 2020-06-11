@@ -1,0 +1,117 @@
+.user-load-container {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Headers */
+.user-load-day-headers {
+    width: 35%;
+    margin: 0 auto;
+}
+
+.user-load-day-headers > li {
+    display: inline-block;
+    padding: 0 0 1% 0;
+    margin: 1% 0 2% 0;
+    border-bottom: 1px solid #ED1C24;
+}
+
+.user-load-day-headers-alert, .user-load-day-headers-buttons {
+    width: 3%;
+    visibility: hidden;
+}
+
+/* Body */
+.user-load-day-body {
+    width: 35%;
+    margin: 0 auto;
+}
+
+.user-load-day-body > li {
+    display: inline-block;
+}
+
+.user-load-day-body-date, .user-load-day-headers-date {
+    width: 20%;
+}
+
+.user-load-day-body-executed, .user-load-day-headers-executed {
+    width: 20%;
+}
+
+.user-load-day-body-allocated, .user-load-day-headers-allocated {
+    width: 20%;
+}
+
+.user-load-day-body-expected, .user-load-day-headers-expected {
+    width: 20%;
+}
+
+.user-load-day-body-alert, .user-load-day-body-buttons {
+    width: 4%;
+}
+
+li.user-load-day-body-expanded-days {
+    display: block;
+    padding: 0.2% 0 0 2%;
+    margin: 0 0 0 6%;
+    border-left: 1px dashed #ED1C24;
+    text-align: left;
+    font-size: .7rem;
+}
+
+/* Expanded day */
+
+.user-load-expanded-day-headers {
+    width: 150%;
+}
+
+.user-load-expanded-day-headers > li {
+    display: inline-block;
+    border-bottom: 1px solid #ED1C24;
+    text-align: center;
+    color: #222;
+    font-weight: bold;
+}
+
+.user-load-expanded-day-body {
+    width: 150%;
+    color: #222;
+    font-weight: normal;
+}
+
+.user-load-expanded-day-body > li {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.user-load-expanded-day-headers-day, .user-load-expanded-day-body-day {
+    width: 5%;
+}
+
+.user-load-expanded-day-headers-project, .user-load-expanded-day-body-project {
+    width: 40%;
+}
+
+.user-load-expanded-day-headers-executed, .user-load-expanded-day-body-executed {
+    width: 10%;
+}
+
+.user-load-expanded-day-headers-allocated, .user-load-expanded-day-body-allocated {
+    width: 10%;
+}
+
+.user-load-expanded-day-headers-expected, .user-load-expanded-day-body-expected {
+    width: 10%;
+}
+
+.user-load-expanded-day-body-project > a {
+    color: #ED1C24;
+    transition: 0.3s all;
+}
+
+.user-load-expanded-day-body-project > a:hover {
+    color: #A00000;
+}

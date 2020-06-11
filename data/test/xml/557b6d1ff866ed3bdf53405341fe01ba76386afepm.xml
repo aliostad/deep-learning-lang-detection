@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sut validators="">
+	<machineMonitor>
+		<class>com.topq.monitor.MachineMonitor</class>
+		<host>auto-yoram-3</host>		
+		<user>Administrator</user>		
+		<password>123456</password>
+		<processFields>Description,PageFaults,PageFileUsage,ParentProcessId</processFields>
+		<processMonitors index="0">
+			<class>com.topq.monitor.ProcessMonitor</class>
+			<processName>cmd.exe</processName>
+		</processMonitors>
+		<processMonitors index="1">
+			<class>com.topq.monitor.ProcessMonitor</class>
+			<processName>java.exe</processName>
+		</processMonitors>
+	</machineMonitor>
+</sut>

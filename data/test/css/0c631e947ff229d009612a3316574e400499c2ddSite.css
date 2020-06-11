@@ -1,0 +1,135 @@
+﻿#wrapper {
+	min-height: 100%;
+}
+
+#main-nav-bg {
+	background: none repeat scroll 0 0 #F4F4F4;
+    border-right: 1px solid #DDDDDD;
+    bottom: 0;
+    display: block;
+    float: left;
+    position: absolute;
+    top: 0;
+    width: 251px;
+    z-index: -1;
+}
+
+#main-nav {
+	left: 0;
+    position: absolute;
+    top: 60px;
+    width: 250px;
+}
+
+#main-nav .navigation {
+	width: 100%;		
+}
+
+#main-nav .navigation .nav {
+	background: none repeat scroll 0 0 #F4F4F4;
+    border-bottom: 1px solid #E7E7E7;	
+}
+
+.nav {
+    list-style: none outside none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+#main-nav .navigation > .nav > li {
+    display: block;
+    margin: 0;
+    position: relative;
+}
+
+.nav-stacked > li {
+    float: none;
+}
+.nav > li {
+    display: block;
+    position: relative;
+}
+
+.nav > li > a {
+	display: block;
+    padding: 10px 15px;
+    position: relative;
+}
+
+#main-nav .navigation > .nav > li:hover > a, #main-nav .navigation > .nav > li:focus > a, #main-nav .navigation > .nav > li.active > a {
+	background-color: #FEFEFE;
+}
+
+#main-nav .navigation > .nav > li > a {
+	background-color: #F4F4F4;
+    border-bottom: 1px solid white;
+    border-top: 1px solid #E7E7E7;
+    display: block;
+    height: 42px;
+    line-height: 45px;
+    overflow: visible !important;
+    padding: 0 10px;
+}
+
+.contrast-red #main-nav .navigation > .nav > li:hover > a [class^="icon-"], .contrast-red #main-nav .navigation > .nav > li:hover > a [class*=" icon-"], .contrast-red #main-nav .navigation > .nav > li:focus > a [class^="icon-"], .contrast-red #main-nav .navigation > .nav > li:focus > a [class*=" icon-"], .contrast-red #main-nav .navigation > .nav > li.active > a [class^="icon-"], .contrast-red #main-nav .navigation > .nav > li.active > a [class*=" icon-"] {
+	color: #F34541 !important;
+}
+
+#main-nav .navigation > .nav > li:hover > a [class^="icon-"], #main-nav .navigation > .nav > li:hover > a [class*=" icon-"], #main-nav .navigation > .nav > li:focus > a [class^="icon-"], #main-nav .navigation > .nav > li:focus > a [class*=" icon-"], #main-nav .navigation > .nav > li.active > a [class^="icon-"], #main-nav .navigation > .nav > li.active > a [class*=" icon-"] {
+	color: #F34541 !important;
+}
+
+#main-nav .navigation > .nav > li > a [class^="icon-"], #main-nav .navigation > .nav > li > a [class*=" icon-"] {
+	color: #6E6E6E;
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 100ms ease 0s;
+    width: 25px;
+}
+
+#main-nav .navigation > .nav > li > a span {
+	color: #3C3C3C;
+    position: relative;
+    text-shadow: 1px 1px 1px #ECECEC;
+    top: -2px;
+    transition: all 100ms ease 0s;
+}
+
+#main-nav .navigation > .nav > li:hover > a span, #main-nav .navigation > .nav > li:focus > a span, #main-nav .navigation > .nav > li.active > a span {
+	color: #222222 !important;
+    padding-left: 2px !important;
+}
+
+
+#content {
+	background: none repeat scroll 0 0 #FBFBFB;
+    margin-left: 251px;
+    min-width: 276px;
+}
+
+.container {
+	max-width: 100% !important;
+}
+
+#content-wrapper {
+	padding-bottom: 20px;
+}
+
+.page-header {
+	background: none repeat scroll 0 0 white;
+    border-bottom-color: #DDDDDD;
+    color: #222222;
+    margin: 0 -15px 30px;
+    min-height: 85px;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+}
+
+
+/******************Charting*/
+#stats-chart1 {
+	height: 200px;
+}

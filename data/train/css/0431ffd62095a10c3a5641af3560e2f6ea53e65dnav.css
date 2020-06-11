@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#navcont {
+	margin-left: 11px;
+}
+	
+
+
+#nav {
+	background: url('images/nav/nav_bg.png') repeat-x;
+	width: 822px;
+	height: 42px;
+	margin-top: 24px;
+	list-style: none;
+	float: left;
+	}
+
+#nav li {
+	float: left;
+	}
+	
+#nav a:link, #nav a:visited {
+	float: left;
+	line-height: 42px;
+	height: 42px;
+	display: block;
+	padding: 0 22px 0 22px;
+	color: #fff;
+	text-decoration: none;
+	background: url('images/nav/nav_bg.gif') repeat-x;
+	}
+
+#nav a:hover, #nav a:active {
+	text-decoration: underline;
+	background: #000 url('images/nav/nav_hover.png') repeat-x;
+	}
+

@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# RareRay does a rarefaction analysis
+
+
+kmerLength=$1
+sampleDirectory=$2
+processors=$3
+outputDirectory=$4
+
+minimum=5
+stepping=5
+maximum=100
+
+mkdir $outputDirectory
+cd $outputDirectory
+
+source $DARK_FISH_TECHNOLOGY
+
+DarkFishTechnology_initializeDirectory
+
+DarkFishTechnology_prepareSample $sampleDirectory
+
+for selected in $(seq $minimum $stepping $maximum)
+do
+	mkdir Sample_$selected
+
+	for file in $(ls Sample)
+	do
+		GenerateSubset.py Sample/$file $selected $maximum > Sample_$selected/$file
+	done
+
+	SilverRay 31 Sample_$selected $processors $Sample_$selected".ray"
+
+done

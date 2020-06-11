@@ -1,0 +1,63 @@
+<apiPackage id="com.supermap.web.themes"><apiName>com.supermap.web.themes</apiName><apiDetail/><apiClassifier id="com.supermap.web.themes:RawTheme"><apiName>RawTheme</apiName><shortdesc>
+	 主题风格类.</shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>com.supermap.web.themes:Theme</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 主题风格类.
+	 <p>该主题用于定义要素的显示风格，目前涉及 actions 和 styles 两个包。<br/>主题风格使用方法：Map.theme = new RawTheme();</p> 
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="com.supermap.web.themes:RawTheme:RawTheme"><apiName>RawTheme</apiName><shortdesc>
+		 初始化 RawTheme 的新实例。 
+		 
+		 </shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
+		 初始化 RawTheme 的新实例。 
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor></apiClassifier><apiClassifier id="com.supermap.web.themes:Theme"><apiName>Theme</apiName><shortdesc>
+	 主题风格基类.</shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 主题风格基类.
+	 <p>用户若需自定义主题风格，需要继承该类。<br/>例如用户自定义主题风格类 public class CustomTheme extends Theme，主题风格使用方法为：Map.theme = new CustomTheme();</p> 
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="com.supermap.web.themes:Theme:Theme"><apiName>Theme</apiName><shortdesc>
+		 初始化 Theme 的新实例。 
+		 
+		 </shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
+		 初始化 Theme 的新实例。 
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiValue id="com.supermap.web.themes:Theme:alpha"><apiName>alpha</apiName><shortdesc>
+		 点或线的透明度。默认值：1，表示不透明。取值范围：0~1。 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiData>1</apiData><apiType value="Number"/></apiValueDef><apiDesc>
+		 点或线的透明度。默认值：1，表示不透明。取值范围：0~1。 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="com.supermap.web.themes:Theme:fillAlpha"><apiName>fillAlpha</apiName><shortdesc>
+		 填充透明度。默认值：0.156。取值范围：0~1。 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiData>0.5</apiData><apiType value="Number"/></apiValueDef><apiDesc>
+		 填充透明度。默认值：0.156。取值范围：0~1。 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="com.supermap.web.themes:Theme:fillColor"><apiName>fillColor</apiName><shortdesc>
+		 填充色。默认值：0x4272d7。 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiData>0x4272d7</apiData><apiType value="uint"/></apiValueDef><apiDesc>
+		 填充色。默认值：0x4272d7。 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="com.supermap.web.themes:Theme:hlFillColor"><apiName>hlFillColor</apiName><shortdesc>
+		 客户端地物编辑时，面要素的高亮颜色。默认值：0xeaeef0。 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiData>0x33ff66</apiData><apiType value="uint"/></apiValueDef><apiDesc>
+		 客户端地物编辑时，面要素的高亮颜色。默认值：0xeaeef0。 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="com.supermap.web.themes:Theme:hlLineColor"><apiName>hlLineColor</apiName><shortdesc>
+		 客户端地物编辑时，弧段的高亮颜色。默认值：0xff0000。 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiData>0x0046d2</apiData><apiType value="uint"/></apiValueDef><apiDesc>
+		 客户端地物编辑时，弧段的高亮颜色。默认值：0xff0000。 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="com.supermap.web.themes:Theme:hlPointColor"><apiName>hlPointColor</apiName><shortdesc>
+		 客户端地物编辑时，结点的高亮颜色。默认值：0xc2c2c2。 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiData>0xc2c2c2</apiData><apiType value="uint"/></apiValueDef><apiDesc>
+		 客户端地物编辑时，结点的高亮颜色。默认值：0xc2c2c2。 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="com.supermap.web.themes:Theme:lineColor"><apiName>lineColor</apiName><shortdesc>
+		 线颜色。默认值：0x5082e5。 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiData>0x5082e5</apiData><apiType value="uint"/></apiValueDef><apiDesc>
+		 线颜色。默认值：0x5082e5。 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="com.supermap.web.themes:Theme:pointColor"><apiName>pointColor</apiName><shortdesc>
+		 点颜色。默认值：0x4272d7。 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiData>0x4272d7</apiData><apiType value="uint"/></apiValueDef><apiDesc>
+		 点颜色。默认值：0x4272d7。 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="com.supermap.web.themes:Theme:size"><apiName>size</apiName><shortdesc>
+		 点大小。默认值：0，单位：像素。 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiData>12</apiData><apiType value="Number"/></apiValueDef><apiDesc>
+		 点大小。默认值：0，单位：像素。 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="com.supermap.web.themes:Theme:weight"><apiName>weight</apiName><shortdesc>
+		 线宽。默认值：2，单位：像素。 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiData>2</apiData><apiType value="Number"/></apiValueDef><apiDesc>
+		 线宽。默认值：2，单位：像素。 
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

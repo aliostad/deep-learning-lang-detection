@@ -1,0 +1,58 @@
+/**/
+.btn-flat {
+  border-radius: 0;
+}
+body {
+  min-width: 1000px;
+}
+#api {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#api .api-part .api-part-title {
+  cursor: pointer;
+}
+#api .api-part .api-list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#api .api-part .api-list .api-item {
+  font-family: 'Calibri', sans-serif;
+  font-style: italic;
+}
+.info p.method-name {
+  margin: 0;
+  padding: 5px;
+  font-size: 16px;
+  font-style: italic;
+  background-color: #E6EFC2;
+}
+.info pre {
+  background-color: #A2D5AC;
+  border: 0 solid #ccc;
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+.info pre.no-style {
+  background-color: white;
+  border: 1px solid silver;
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+.info .illustrate {
+  background-color: #E1ECE6;
+}
+.info .illustrate p {
+  padding: 5px;
+  margin: 0;
+}
+.info .illustrate p.warn {
+  color: red;
+}
+.info .example {
+  padding: 10px;
+  border: 1px solid silver;
+  margin-bottom: 10px;
+  background-color: ghostwhite;
+}

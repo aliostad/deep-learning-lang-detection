@@ -1,0 +1,111 @@
+/* ---------------------------------------- css base 基础部分---------------------------------------- */
+* {margin:0;padding:0; border:0; word-break:break-word; font-family:'黑体','Helvetica', 'arial', 'sans-serif'; background-size:100% 100%; -webkit-mask-size: 100% 100%; -webkit-tap-highlight-color: rgba(0,0,0,0); font-size: 0.2rem; }
+html,body{ width:100%; height:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+th,tr,td,h1,h2,h3,h4,h5,h6,i,b,em{font-style:normal;font-weight:normal;}
+ol,ul,li {list-style-type:none; display:block;}
+select,input,img{vertical-align:middle;border:none;outline:none;}
+textarea {resize: none;} /*webkit核心中textare取消拖动调整大小*/
+textarea:focus {outline: none;} /*textarea聚焦时默认边框颜色不变*/
+select,input[type=text],input[type=tel],input[type=password],input[type=number],textarea{ -webkit-appearance:none; border:none; border-radius:0; background-color:transparent;}
+input::-webkit-input-placeholder,input:focus::-webkit-input-placeholder{color:#555;}/* input 标签placeholder文字的颜色*/
+video{ background:#000;}
+a{ text-decoration:none; display:inline-block;}
+a>img{ width:100%;}
+.clearFix {display: block;}
+.clearFix:after {clear: both;content: ".";display: block;height: 0;visibility: hidden;}
+.fl,.flt{float:left;display:inline;}
+.fr,.frt{float:right;display:inline;}
+.noPointer{pointer-events:none;}/* 禁止触摸互动事件 */
+.noCallout{-webkit-touch-callout: none;}/* 禁止ios 长按时不触发系统的菜单，禁止ios&android长按时下载图片 */
+.noSelect{-webkit-user-select:none;}/* 禁止ios和android用户选中文字 */
+.gpuOpen{will-change:transform,opacity;}
+.gpuClose{will-change:auto;}
+.smoothSlide {-webkit-overflow-scrolling: touch;}/* ios设备平滑滚动 */
+
+/* css media */
+html{font-size:50px;}
+@media screen and (width:320px){html{font-size: 50px;}}
+@media screen and (width:360px){html{font-size: 56.25px;}}
+@media screen and (width:375px){html{font-size: 58.59px;}}
+@media screen and (width:412px){html{font-size: 64.375px;}}
+@media screen and (width:414px){html{font-size: 64.6875px;}}
+@media screen and (width:540px){html{font-size: 84.38px;}}
+@media screen and (width:568px){html{font-size: 50px;}}
+@media screen and (width:640px){html{font-size: 56.338px;}}
+@media screen and (width:667px){html{font-size: 58.714px;}}
+@media screen and (width:732px){html{font-size: 64.437px;}}
+@media screen and (width:736px){html{font-size: 64.789px;}}
+@media screen and (width:1136px){html{font-size: 100px;}}
+
+/* ---------------------------------------- css common 公共部分 ---------------------------------------- */
+
+/* load浮层 */
+aside.loadBox{ position:fixed; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:996; display: none;}
+aside.loadBox>span{ display:block; position:absolute; left:50%; top:50%; margin-left:-0.1rem; margin-top:-0.2rem; -webkit-transform:scale(0.4); -webkit-transform-origin: 50% 50%;}
+aside.loadBox>span i{ display:block; position:absolute; left:0; top:0; width:0.4rem; height:0.1rem; border-radius:0.08rem; background:rgba(255,255,255,0.5); box-shadow:0 0 0.1rem rgba(255,255,255,1);}
+aside.loadBox>span i:nth-child(1){ -webkit-transform:translate(0.6rem, 0) rotate(0deg); -webkit-animation:loadCircle 2.4s 0s linear infinite;}
+aside.loadBox>span i:nth-child(2){ -webkit-transform:translate(0.5196rem, 0.3rem) rotate(30deg); -webkit-animation:loadCircle 2.4s 0.2s linear infinite;}
+aside.loadBox>span i:nth-child(3){ -webkit-transform:translate(0.3rem, 0.5196rem) rotate(60deg); -webkit-animation:loadCircle 2.4s 0.4s linear infinite;}
+aside.loadBox>span i:nth-child(4){ -webkit-transform:translate(0, 0.6rem) rotate(90deg); -webkit-animation:loadCircle 2.4s 0.6s linear infinite;}
+aside.loadBox>span i:nth-child(5){ -webkit-transform:translate(-0.3rem, 0.5196rem) rotate(120deg); -webkit-animation:loadCircle 2.4s 0.8s linear infinite;}
+aside.loadBox>span i:nth-child(6){ -webkit-transform:translate(-0.5196rem, 0.3rem) rotate(150deg); -webkit-animation:loadCircle 2.4s 1.0s linear infinite;}
+aside.loadBox>span i:nth-child(7){ -webkit-transform:translate(-0.6rem, 0) rotate(180deg); -webkit-animation:loadCircle 2.4s 1.2s linear infinite;}
+aside.loadBox>span i:nth-child(8){ -webkit-transform:translate(-0.5196rem, -0.3rem) rotate(210deg); -webkit-animation:loadCircle 2.4s 1.4s linear infinite;}
+aside.loadBox>span i:nth-child(9){ -webkit-transform:translate(-0.3rem, -0.5196rem) rotate(240deg); -webkit-animation:loadCircle 2.4s 1.6s linear infinite;}
+aside.loadBox>span i:nth-child(10){ -webkit-transform:translate(0, -0.6rem) rotate(270deg); -webkit-animation:loadCircle 2.4s 1.8s linear infinite;}
+aside.loadBox>span i:nth-child(11){ -webkit-transform:translate(0.3rem, -0.5196rem) rotate(300deg); -webkit-animation:loadCircle 2.4s 2.0s linear infinite;}
+aside.loadBox>span i:nth-child(12){ -webkit-transform:translate(0.5196rem, -0.3rem) rotate(330deg); -webkit-animation:loadCircle 2.4s 2.2s linear infinite;}
+aside.loadBox>b{ display:block; position:absolute; left:0; top:50%; width:100%; height:0.4rem; line-height:0.4rem; margin-left:-0.1rem; margin-top:-0.34rem; text-align:center; font-size:0.2rem; color:rgba(255,255,255,0.7);}
+@-webkit-keyframes loadCircle{0%{opacity:1}8.3%{opacity:0}50%{opacity:1}100%{opacity:1}}
+
+/* png sprite loading */
+.ui-loading-black {width:40px;height:40px;display:block;background:url(../images/common/loading_black.png);-webkit-background-size:auto 40px;-webkit-animation:am-loading-black 1s steps(12) infinite; -webkit-transform: scale(0.5);}
+.ui-loading-white {width:40px;height:40px;display:block;background-image:url(../images/common/loading_white.png);-webkit-background-size:auto 40px;-webkit-animation:am-loading-white 1s steps(12) infinite; -webkit-transform: scale(0.5);}
+@-webkit-keyframes am-loading-black {
+	from {background-position:0 0}
+	to {background-position:-480px 0}
+}
+@-webkit-keyframes am-loading-white {
+	from {background-position:0 0}
+	to {background-position:-480px 0}
+}
+
+/* 取代系统alert的警告提示弹窗 */
+aside.alertBox{ position:fixed; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:998;}
+aside.alertBox>div{ position: absolute; left: 50%; top: 50%; width:85%; -webkit-transform: translate(-50%,-50%); background-color:#FAFAFC; border-radius:0.06rem; padding-top: 0.4rem;}
+aside.alertBox>div>p.text{font-size:0.28rem; line-height: 0.4rem; color:#888; padding: 0 0.4rem 0; margin-bottom: 0.4rem; text-align:center; }
+aside.alertBox>div>p.btn{ text-align: center; border-top: 1px solid #D5D5D6; position: relative; }
+aside.alertBox>div>p.btn a{ color:#0BB20C; font-size:0.34rem; line-height: 0.84rem;display: block;}
+aside.alertBox>div>p.btn a:active{ background-color: #eeeeee;}
+
+/* 视频 */
+aside.videoBox{position:fixed; left:0; top:0; width:100%; height:100%; background:#000; z-index:996; display:none;}
+aside.videoBox>iframe,aside.videoBox>video{position:absolute; left:0;}
+aside.videoBox>a.close{ position:absolute; right:0.4rem; top:0.4rem; width:0.6rem; height:0.6rem; background-image: url(../images/common/close_video.png);}
+
+/* 照片文件选择框*/
+#fileBox{ position:fixed; left:0; top:0; width:1px; height:1px; overflow:hidden; visibility: hidden;}
+
+/* 电子罗盘数据面板 */
+#compassPanel{ position:fixed; right:0; top:0; width:40%; background:rgba(0,0,0,0.5); z-index: 99; display:none;}
+#compassPanel h3{color:#fff; background:rgba(255,255,255,0.2); padding:0.1rem 0.2rem; margin-bottom:0.1rem; font-size: 0.24rem;}
+#compassPanel p{ color:#fff; font-size:0.22rem; margin-bottom:0.1rem; margin-left:0.2rem;}
+
+/* 测试版本提示信息 */
+#signBar{position:fixed; top:0; left:0; width:100%; background:rgba(0,0,0,0.7); box-shadow:0 0.02rem 0.1rem #888; padding:0.1rem 0; text-align:center; pointer-events:none; z-index:99;}
+#signBar>span{font-size:0.32rem; text-shadow:0 0 0.02rem #000; color:rgba(255,255,255,0.9);}
+
+/* 分享浮层 */
+aside.shareBox{position:fixed; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:997; display:none;}
+aside.shareBox>img{ width:100%;}
+
+/* 背景音乐按钮 */
+a.bgmBtn{ position: absolute; right: 0.2rem; top: 0.2rem; width: 0.5rem; height: 0.5rem;}
+a.bgmPlay{ background-image: url(../images/common/bgm_on.png);}
+a.bgmStop{ background-image: url(../images/common/bgm_off.png);}
+
+/* 初始化标签*/
+body{ background-color:#fff; color:#000;}
+a,a:visited{ color:#000;}
+article{ width:100%; height: 100%; position:relative; }

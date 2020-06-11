@@ -1,0 +1,116 @@
+#message-list-view ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#message-list-view .message-view {
+    padding: 5px 0;
+    border-top: 1px solid #e7e6e6;
+    cursor: default;
+    position: relative;
+}
+#message-list-view .message-view:hover {
+    background-color: #e2f7ff;
+}
+
+#message-list-view .message-view.ui-state-focus{
+    background-color: #dde3e6;
+}
+#message-list-view .message-view.ui-selecting {
+    background-color: #e2f7ff;
+}
+
+#message-list-view .message-view.ui-selected {
+    background-color: #85ddff;
+}
+
+#message-list-view .message-view .left-column {
+    width: 100px;
+    float: left;
+    margin-left: -100%;
+}
+
+#message-list-view .message-view .fluid-column-wrapper {
+    float: left;
+    width: 100%;
+}
+#message-list-view .message-view .fluid-column {
+    margin-left: 100px;
+}
+
+#message-list-view .message-view .participant {
+    width: 90px;
+    margin-right: 10px;
+    text-align: right;
+    font-weight: bold;
+}
+#message-list-view .message-view .participantIndicator {
+    width: 10px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 100%;
+}
+
+#message-list-view .message-view .message {
+    float: left;
+}
+
+#message-list-view .message-view .instances {
+    float: right;
+    /*    margin-left: 10px;*/
+}
+
+#message-list-view .message-view .instances li {
+    float: left;
+    margin-left: 10px;
+}
+#message-list-view .message-view .instances .instance {
+    cursor: pointer;
+    position: relative;
+    padding: 0 3px;
+    border-radius: 3px;
+    background-color: #feffe0;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.80);
+    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.80);
+    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.80);
+}
+#message-list-view .message-view .instances .instance:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.80);
+    -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.80);
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.80);
+}
+
+#message-list-view .message-view .instances .instance .deleter {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 100%;
+    top: 1px;
+    margin-left: -2px;
+    border-radius: 0 3px 3px 0;
+    background-image: url("delete.gif");
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    display: none;
+}
+
+#message-list-view .message-view .instances .instance:hover .deleter {
+    display: block;
+}
+
+#message-list-view .message-view .instances .instance:hover .deleter:hover {
+    background-position-y: -16px;
+}
+
+#message-list-view .message-view .instances .instance.flagged {
+    background-color: #ccff99;
+}
+
+#message-list-view .message-view .time {
+    float: right;
+    margin-left: 30px;
+    margin-right: 20px;
+    text-align: right;
+}

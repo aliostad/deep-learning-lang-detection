@@ -1,0 +1,378 @@
+/* line 2, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view {
+  font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* line 11, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+div.sc-view {
+  border: solid 0 black;
+}
+
+/* line 15, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+}
+
+/* line 25, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+body {
+  position: absolute;
+  margin: 0px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+/* line 59, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view body,
+.sc-view div,
+.sc-view dl,
+.sc-view dt,
+.sc-view dd,
+.sc-view ul,
+.sc-view ol,
+.sc-view li,
+.sc-view h1,
+.sc-view h2,
+.sc-view h3,
+.sc-view h4,
+.sc-view h5,
+.sc-view h6,
+.sc-view pre,
+.sc-view code,
+.sc-view form,
+.sc-view fieldset,
+.sc-view legend,
+.sc-view input,
+.sc-view button,
+.sc-view textarea,
+.sc-view p,
+.sc-view blockquote,
+.sc-view th,
+.sc-view td {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 64, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 70, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view fieldset,
+.sc-view img {
+  border: 0;
+}
+
+/* line 83, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view address,
+.sc-view caption,
+.sc-view cite,
+.sc-view code,
+.sc-view dfn,
+.sc-view em,
+.sc-view strong,
+.sc-view th,
+.sc-view var,
+.sc-view optgroup {
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+/* line 89, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view del,
+.sc-view ins {
+  text-decoration: none;
+}
+
+/* line 93, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view li {
+  list-style: none;
+}
+
+/* line 98, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view caption,
+.sc-view th {
+  text-align: left;
+}
+
+/* line 107, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view h1,
+.sc-view h2,
+.sc-view h3,
+.sc-view h4,
+.sc-view h5,
+.sc-view h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* line 113, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view q:before,
+.sc-view q:after {
+  content: '';
+}
+
+/* line 118, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view abbr,
+.sc-view acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* line 123, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view sup {
+  vertical-align: baseline;
+}
+
+/* line 127, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view sub {
+  vertical-align: baseline;
+}
+
+/* line 132, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view legend {
+  color: #000;
+}
+
+/* line 141, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view input,
+.sc-view button,
+.sc-view textarea,
+.sc-view select,
+.sc-view optgroup,
+.sc-view option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+/* line 153, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view input,
+.sc-view button,
+.sc-view textarea,
+.sc-view select {
+  font-size: 100%;
+}
+
+/* line 169, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view body {
+  font: 13px/1.231 "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
+  /* for IE6/7 */
+  *font-size: small;
+  /* for IE Quirks Mode */
+  *font: x-small;
+}
+
+/* line 181, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view select,
+.sc-view input,
+.sc-view textarea,
+.sc-view button {
+  font: 99% "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
+}
+
+/* line 186, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view table {
+  font-size: inherit;
+  font: 100%;
+}
+
+/* line 196, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view pre,
+.sc-view code,
+.sc-view kbd,
+.sc-view samp,
+.sc-view tt {
+  font-family: monospace;
+  *font-size: 108%;
+  line-height: 100%;
+}
+
+/* line 210, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view body {
+  margin: 10px;
+}
+
+/* line 215, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view h1 {
+  font-size: 138.5%;
+}
+
+/* line 220, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view h2 {
+  font-size: 123.1%;
+}
+
+/* line 225, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view h3 {
+  font-size: 108%;
+}
+
+/* line 232, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view h1,
+.sc-view h2,
+.sc-view h3 {
+  margin: 0em 0;
+}
+
+/* line 244, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view h1,
+.sc-view h2,
+.sc-view h3,
+.sc-view h4,
+.sc-view h5,
+.sc-view h6,
+.sc-view strong,
+.sc-view dt {
+  font-weight: bold;
+}
+
+/* line 248, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view optgroup {
+  font-weight: normal;
+}
+
+/* line 253, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view abbr,
+.sc-view acronym {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+/* line 259, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view em {
+  font-style: italic;
+}
+
+/* line 264, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view del {
+  text-decoration: line-through;
+}
+
+/* line 272, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view blockquote,
+.sc-view ul,
+.sc-view ol,
+.sc-view dl {
+  margin: 1em;
+}
+
+/* line 279, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view ol,
+.sc-view ul,
+.sc-view dl {
+  margin-left: 2em;
+}
+
+/* line 285, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view th,
+.sc-view td {
+  border: 1px solid #000;
+  padding: .5em;
+}
+
+/* line 291, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view th {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 297, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view caption {
+  margin-bottom: .5em;
+  /* Centered so it doesn't blend in to other content. */
+  text-align: center;
+}
+
+/* line 304, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view sup {
+  vertical-align: super;
+}
+
+/* line 309, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view sub {
+  vertical-align: sub;
+}
+
+/* line 317, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view p,
+.sc-view fieldset,
+.sc-view table,
+.sc-view pre {
+  margin-bottom: 1em;
+}
+
+/* line 326, ././tmp/chance/74d98e807ad98860cc45400929299e11.scss */
+.sc-view button,
+.sc-view input[type="checkbox"],
+.sc-view input[type="radio"],
+.sc-view input[type="reset"],
+.sc-view input[type="submit"] {
+  padding: 1px;
+}
+
+           /*
+  These CSS styles apply to all views.
+*/
+/* default behaviors for all views: 
+ - use "pointer" cursor unless otherwise required 
+ - clip overflow
+*/
+/* line 10, ././tmp/chance/db212a64af7ae71285346a76698b465c.scss */
+.sc-view {
+  cursor: default;
+  overflow: hidden;
+  position: absolute;
+  /* all views are absolutely positioned. */
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  user-select: none;
+  margin: 0px;
+}
+
+/* line 21, ././tmp/chance/db212a64af7ae71285346a76698b465c.scss */
+.sc-view.allow-select {
+  -moz-user-select: text;
+  -khtml-user-select: text;
+  user-select: text;
+  cursor: text;
+}
+
+/* line 30, ././tmp/chance/db212a64af7ae71285346a76698b465c.scss */
+.sc-view:focus, a.sc-view:focus,
+.sc-view:active, a.sc-view:active {
+  outline: none;
+}
+
+/* line 35, ././tmp/chance/db212a64af7ae71285346a76698b465c.scss */
+.sc-view img {
+  border: none;
+}
+
+/* line 39, ././tmp/chance/db212a64af7ae71285346a76698b465c.scss */
+.sc-hidden {
+  display: none !important;
+}
+
+/* line 45, ././tmp/chance/db212a64af7ae71285346a76698b465c.scss */
+.sc-view.text-align-right,
+.sc-view.textAlignRight {
+  text-align: right;
+}
+
+/* line 50, ././tmp/chance/db212a64af7ae71285346a76698b465c.scss */
+.mobile-safari .sc-pane {
+  -webkit-transform: translate3d(0, 0, 0);
+}

@@ -1,0 +1,181 @@
+/*
+MODALE NOUVELLE OBS
+ */
+
+[class*="col-"] {
+   /* background-color: lightgreen;*/
+  /*  border: 1px solid black;*/
+}
+
+#location {
+    background-color: transparent;
+    color: rgb(35,74,129);
+}
+.modal-lg {
+    width: 1080px;
+}
+.modal-load-desktop__bubble
+{
+    position: relative;
+    /* width: 85%;*/
+    height: 50px;
+    padding: 0px;
+    background: #FFFFFF;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border: #000000 solid 2px;
+    margin-bottom: 15px;
+}
+
+.modal-load-desktop__bubble:after
+{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 10px 30px 10px 0;
+    border-color: transparent #FFFFFF;
+    display: block;
+    width: 0;
+    z-index: 1;
+    left: -30px;
+    top: 15px;
+}
+
+.modal-load-desktop__bubble:before
+{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 11px 31px 11px 0;
+    border-color: transparent #000000;
+    display: block;
+    width: 0;
+    z-index: 0;
+    left: -33px;
+    top: 14px;
+}
+
+.modal-load-desktop__bubble p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 1em;
+    -webkit-margin-end: 1em;
+}
+
+.modal-load-desktop__icon {
+    height: 50px;
+    width: auto;
+}
+
+.modal-load-desktop__icon--small {
+    height: 25px;
+    width: auto;
+    float: right;
+}
+
+.modal-load-desktop__icon--logo {
+    height: auto;
+    width: 50px;
+}
+
+.modal-load-desktop__textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+.modal-load-desktop__row {
+    margin-bottom: 30px;
+}
+
+.modal-load-desktop__label {
+    padding-left: 0px;
+    margin-bottom: 15px;
+}
+
+.modal-load-desktop__image {
+    height: 465px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+.modal-load-desktop__input {
+    height: 50px;
+}
+
+.modal-load-desktop__btn {
+    border-radius: 0px;
+    height: 45px;
+    color: rgb(255,250,219);
+}
+
+.modal-load-desktop__btn--red {
+    background-color: rgb(217,30,0);
+}
+
+.modal-load-desktop__btn--red:hover {
+    box-shadow: 10px 10px 10px 0px rgba(35,74,129,.15) inset;
+}
+
+.modal-load-desktop__btn--blue {
+    background-color: rgb(35,74,129);
+}
+
+.modal-load-desktop__btn--blue:hover {
+    box-shadow: 10px 10px 10px 0px rgba(255,210,219,.15) inset;
+}
+
+.modal-load-desktop__photo--button
+{
+    position:relative;
+  /*  line-height: 255px;*/
+    text-align: center;
+}
+
+.user-info__photo--file
+{
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    opacity:0;
+    height: inherit;
+    width: inherit;
+}
+
+/*
+MODULE GOOGLE POUR AFFICHAGE DU LIEU D'OBSERVATION
+ */
+.pac-container {
+    z-index: 1051 !important;
+}
+
+.pac-icon-marker {
+    background-image: url('../img/where.png');
+    background-size: 10px 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*
+AUTOCOMPLETE JQUERY UI
+ */
+
+.ui-autocomplete {
+    z-index: 1500;
+}
+
+/** SM Devices **/
+@media screen and (max-width:768px)
+{
+    .modal-load-desktop__icon {
+        height: 30px !important;
+    }
+
+    .modal-load-desktop__image, .modal-load-desktop__photo--button {
+        height: auto;
+        line-height: normal;
+    }
+
+
+}

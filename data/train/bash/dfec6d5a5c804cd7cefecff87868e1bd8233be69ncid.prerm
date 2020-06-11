@@ -1,0 +1,44 @@
+#!/bin/sh
+# prerm script for ncid
+#
+# see: dh_installdeb(1)
+
+set -e
+
+# summary of how this script can be called:
+#        * <prerm> `remove'
+#        * <old-prerm> `upgrade' <new-version>
+#        * <new-prerm> `failed-upgrade' <old-version>
+#        * <conflictor's-prerm> `remove' `in-favour' <package> <new-version>
+#        * <deconfigured's-prerm> `deconfigure' `in-favour'
+#          <package-being-installed> <version> `removing'
+#          <conflicting-package> <version>
+# for details, see http://www.debian.org/doc/debian-policy/ or
+# the debian-policy package
+
+
+case "$1" in
+    remove|deconfigure)
+        [ -h /usr/doc/ncid ] && rm -f /usr/doc/ncid
+        [ -x /etc/init.d/ncidsip ] && invoke-rc.d ncidsip stop
+        [ -x /etc/init.d/sip2ncid ] && invoke-rc.d sip2ncid stop
+        [ -x /etc/init.d/yac2ncid ] && invoke-rc.d yac2ncid stop
+        [ -x /etc/init.d/ncidd ] && invoke-rc.d ncidd stop
+    ;;
+    upgrade)
+        [ -h /usr/doc/ncid ] && rm -f /usr/doc/ncid
+    ;;
+
+
+    failed-upgrade)
+    ;;
+
+    *)
+        echo "prerm called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0

@@ -1,0 +1,58 @@
+* {
+ outline: none;
+}
+
+#skin-preview, #model {
+ image-rendering: optimizeSpeed;             /* Older versions of FF          */
+ image-rendering: -moz-crisp-edges;          /* FF 6.0+                       */
+ image-rendering: -webkit-optimize-contrast; /* Safari                        */
+ image-rendering: -o-crisp-edges;            /* OS X & Windows Opera (12.02+) */
+ image-rendering: pixelated;                 /* Awesome future-browsers       */
+ -ms-interpolation-mode: nearest-neighbor;   /* IE                            */
+}
+
+body {
+ background: #ddd;
+ overflow: hidden;
+}
+
+.EIsv-layout {
+ background: white;
+ margin-right: auto;
+
+ max-width: 512px;
+ min-height: 100%;
+}
+.EIsv-layout__content {
+ padding: 10px;
+}
+
+#pixels td {
+ width: 50%;
+}
+#pixels tr td:last-child {
+ text-align: right;
+}
+
+#skin-preview {
+ box-shadow: 0 0 17px rgba(0,0,0,.2);
+ 
+ max-width: 512px;
+ width: 100%;
+}
+
+#model {
+ 
+ position: fixed;
+ top: 0; bottom:0;
+ left: 512px; right: 0;
+}
+#model[data-state="select"] {
+ cursor: pointer;
+}
+
+#navBar {
+ 
+ position: fixed;
+ top: 0; right: 0;
+}

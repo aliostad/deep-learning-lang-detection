@@ -1,0 +1,41 @@
+body{
+}
+
+/*首页登陆的容器*/
+.load_and_register{
+	margin-top : 250px;
+	text-align : center;
+	cursor: pointer;
+	font-size: 1.4em;
+}
+
+/*登陆按纽*/
+.load_link{
+	margin-right: 30px;
+}
+
+/*注册按纽*/
+.register_link{
+	margin-left: 30px;
+}
+
+/*.load_link .register_link 共有的属性 */
+.load_register{
+	padding: 3px;
+}
+.load_register:hover{
+	background-color: hsl(220, 20%, 80%);
+	border-radius : 5px; 
+}	
+
+/*登陆和注册表单*/
+.load_form{
+	margin-top: 46px;
+	width: 297px;
+	align: center;
+
+}
+.load_form{
+	
+}
+

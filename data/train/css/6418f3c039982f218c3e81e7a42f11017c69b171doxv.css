@@ -1,0 +1,56 @@
+.bs-docs-sidenav {
+	width: 265px;
+	height: 800px;
+	overflow-y: auto;
+}
+.bs-docs-sidenav.affix {
+  top: 70px;
+}
+
+.bs-docs-sidenav.affix-bottom {
+  position: absolute;
+  top: auto;
+  bottom: 270px;
+}
+
+.doc-title {
+	margin-bottom: 50px;
+}
+
+
+.api-sidenav {
+	margin-bottom: 20px;
+}
+.api-sidenav-dirs {
+	overflow: auto;
+}
+.api-sidenav-dir {
+	margin-right: 2px;
+}
+.api-sidenav-name {
+	margin: 5px 10px;
+}
+.api-sidenav-comment {
+	list-style: none;
+	padding-left: 0;
+}
+
+.api-sidenav a:hover {
+	color: white;
+}
+
+.api-section {
+	padding-top: 50px;
+	margin-bottom: 70px;
+}
+.api-section-name{
+	padding-top: 55px;
+}
+.api-section table tr td:first-child {
+	font-weight: bold;
+}
+
+#accordion .panel-title .glyphicon-chevron-right,  .glyphicon-chevron-down{
+	float: right;
+	opacity: .25;
+}

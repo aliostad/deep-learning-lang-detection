@@ -1,0 +1,136 @@
+/*****************************
+ ****       suckerfish    ****
+ *****************************/
+
+
+#nav {
+	margin: 0;
+	padding: 0;
+	height: 22px;
+}
+
+#nav a {
+	font-weight: normal;
+	float: left;
+	text-decoration: none;
+	display: block;
+	float: left;
+	cursor: pointer;
+	height: 22px;
+	line-height: 22px;
+	padding: 0 15px;
+  overflow: hidden;
+}
+
+#nav li li a{
+	background: none;
+	font-weight: normal;
+	padding: 0;
+	text-indent: 15px;
+}
+
+#nav, #nav ul {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#nav li li {
+	padding: 0;
+	background: none;
+}
+
+/* top level links */
+#nav a {
+
+
+}
+
+/* sub level links */
+
+#nav ul ul a {
+	display: block;
+	text-decoration: none;
+	width: 100%;
+	text-transform: none;
+}
+
+/* top level buttons */
+
+#nav li {
+	float: left;
+	padding: 0;
+  background: none;
+  height: 24px;
+}
+
+#nav ul li {
+	position: relative;
+}
+
+#nav li ul {
+	top: 22px;
+	position: absolute;
+	left: -999em;
+	height: auto;
+	width: 225px;
+	font-weight: normal;
+	border-width: 0;
+	margin: 0;
+	padding: 0;
+}
+	
+#nav ul {
+	padding: 0;
+	margin: 0;
+}
+
+#nav li.active li a {
+	background: none;
+}
+
+#nav li li {
+	float: left;
+	padding: 0;
+  width: 225px;
+}
+
+/* margin for pullouts */
+#nav li ul ul {
+	margin: -23px 0 0 225px;
+}
+
+
+#nav li:hover ul ul, 
+#nav li:hover ul ul ul,
+#nav li:hover ul ul ul ul,  
+#nav li.sfhover ul ul, 
+#nav li.sfhover ul ul ul, 
+#nav li.sfhover ul ul ul ul {
+	left: -999em;
+}
+
+#nav li:hover ul, 
+#nav li li:hover ul, 
+#nav li li li:hover ul, 
+#nav li li li li:hover ul,
+#nav li.sfhover ul, 
+#nav li li.sfhover ul, 
+#nav li li li.sfhover ul,
+#nav li li li li.sfhover ul{
+	z-index: 100;
+	left: -1px;
+}
+
+#nav li:hover, #nav li.sfhover {
+      left: 0;
+}
+
+#nav ul ul a {
+	background: none;
+}
+
+#nav li li.active {
+	background: none;
+}

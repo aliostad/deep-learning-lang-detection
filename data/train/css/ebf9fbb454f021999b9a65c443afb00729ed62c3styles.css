@@ -1,0 +1,40 @@
+.model-list
+  {
+  padding-left: 10px;
+  }
+  
+.model-list li
+  {
+  list-style-type: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  }
+  
+.model-preview
+  {
+  display: inline-block;
+  vertical-align: middle;
+  height: 60px;
+  width: 60px;
+  border: 1px solid black;
+  margin-left: 10px;
+  background: url('../images/loading.gif') 50% 50% no-repeat;
+  }
+
+#controller
+  {
+  width: 250px;
+  }
+    
+#threedpane
+  {
+  position: absolute;
+  top: 0px;
+  left: 250px;
+  right: 0px;
+  bottom: 0px;
+  margin: 10px;
+  border: 1px solid gray;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  }

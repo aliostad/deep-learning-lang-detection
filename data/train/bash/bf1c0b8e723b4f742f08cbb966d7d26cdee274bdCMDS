@@ -1,0 +1,29 @@
+#!/bin/bash
+
+#OMP_NUM_THREADS=1 ./mss3domp --tag=2halos -v --seed=1234567890 -i TestResults/shell/shell.02001.sim -X dup-ic
+
+#OMP_NUM_THREADS=1 ./mss3domp --tag=2halos -v -i TestResults/shell/shell.02001.sim -X dup-ic --save-image
+
+#OMP_NUM_THREADS=24 ./mss3domp --tag=2halos -v -i 2halos.ic.sim --save-path-image --save-image=20 --steps=2000
+
+OMP_NUM_THREADS=24 ./mss3domp --tag=2halos -v -i 2halos.ic.sim --save-path-image --save-image=20 --steps=2000
+
+OMP_NUM_THREADS=24 ./mss3domp --tag=2halos-R -v -i TestResults/2halos/2halos.02000.sim --save-path-image --save-image=20 --steps=2000 --reverse-at=2001 --modify-mode=1
+
+OMP_NUM_THREADS=24 ./mss3domp --tag=2halos -i TestResults/2halos/2halos.ic.sim --save-image=20 --steps=2000 --save=100
+
+OMP_NUM_THREADS=24 ./mss3domp --tag=shell --seed=1251905211 --steps=2000 --save=10 --save-image=10 -N 5000
+
+OMP_NUM_THREADS=24 ./mss3domp --tag=2halos -i TestResults/shell/shell.03800.sim -X dup-ic --save=10 --save-image=10 --steps=4000
+
+
+./mss3domp --tag=shell --gen-ic=shell -N 5000 --seed 1251905211
+./mss3domp --tag=2halos -i TestResults/shell/shell.02000.sim -X dup-ic
+
+
+./mss3domp --tag=shell --gen-ic=shell -N 100 --seed 1251905211 && OMP_NUM_THREADS=24 ./mss3domp --tag shell -i shell.ic.sim --steps=10000 --save=100 --save-path-image
+
+./mss3domp --tag=2halos -i shell.02000.sim -X dup-ic
+
+OMP_NUM_THREADS=24 ./mss3domp --tag=2halos -i 2halos.ic.sim --save=10 --save-image=10 --steps=4000 &
+OMP_NUM_THREADS=24 ./mss3domp --tag=2halos-RM2 -i 2halos.02000.sim --save=10 --steps=2000 --restart --reverse-at=2001 --modify-mode=2 &

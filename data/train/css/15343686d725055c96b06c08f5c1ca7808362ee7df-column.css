@@ -1,0 +1,103 @@
+/*
+Quite simple really.
+A column can run in three modes - write, read and edit.
+Write - label on top, input half width, help text half width and validation half width (below input).
+Read - label alongside input, edit button to the right.
+Edit - label alongside input, save and edit buttons below.
+*/
+
+.df-column {
+    position:relative;  /*We can absolute position child elements*/
+    padding: 15px;
+}
+
+.df-column:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.df-input, .df-label, .df-edit, .df-help, .df-validation {
+    box-sizing: border-box;
+    float: left;
+}
+
+.df-help {
+    visibility:hidden;
+}
+
+.df-validation {
+    clear:left;
+    display: none;
+}
+
+ /*Write mode*/
+.df-column-write .df-label {
+    width:100%;
+}
+
+.df-column-write .df-input,
+.df-column-write .df-help,
+.df-column-write .df-validation {
+    width:50%;
+}
+
+.df-column-write .df-edit {
+    display:none;
+}
+
+/*Summary mode*/
+.df-column-read .df-label,
+.df-column-edit .df-label {
+    width: 30%;
+}
+
+.df-column-read .df-input,
+.df-column-read .df-edit {
+    width:35%;
+}
+
+.df-column-read .df-help,
+.df-column-read .df-validation {
+    display: none;
+}
+
+/*Single edit mode*/
+.df-column-edit .df-edit {
+    display: none;
+}
+.df-edit-button {
+    float: right;
+}
+
+.df-column-edit .df-input,
+.df-column-edit .df-help,
+.df-column-edit .df-validation {
+    width:35%;
+}
+
+.df-column-edit .df-validation {
+    margin-left:30%;
+}
+
+.df-column-edit .df-edit-controls {
+    display:block;
+}
+
+.df-column-write .df-edit-controls,
+.df-column-read .df-edit-controls {
+    display: none;
+}
+
+/* Edit controls */
+.df-edit-controls {
+    clear:both;
+    padding-left: 30%;
+}
+
+.df-edit-controls .df-cancel-edit {
+    float: left;
+}
+.df-edit-controls .df-save-edit {
+    float: right;
+}

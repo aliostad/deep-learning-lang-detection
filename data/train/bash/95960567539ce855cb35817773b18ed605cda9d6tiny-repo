@@ -1,0 +1,49 @@
+#!/bin/sh
+
+usage() {
+  echo 'Usage:
+    tiny-repo [--find|-f] [--all|-a] package
+'
+}
+
+repo_setup() {
+  . "$TINY_LIBEXEC_PATH/tiny-sh-helper.sh"
+  set_variable_paths
+}
+
+repo() {
+  case $1 in
+  --find | -f)
+    shift
+    use_repo=$(find_repo_package $1 | head -n 1)
+    test -z "$use_repo" && exit 1
+    echo "$use_repo"
+    ;;
+  --all | -a)
+    shift
+    find_repo_package $1
+    exit $?
+    ;;
+  esac
+}
+
+find_repo_package() {
+  package=$1
+  while read repo
+  do
+    test_repo_package $repo $package
+  done < $TINY_PATH/repos
+}
+
+test_repo_package() {
+  repo=$1
+  package=$2
+  if test -f "$STORE_PATH/$repo/$package/$TINYFILE"
+  then
+    echo $repo
+  fi
+}
+
+repo_setup
+repo "$@"
+

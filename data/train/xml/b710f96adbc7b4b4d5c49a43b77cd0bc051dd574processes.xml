@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Angaben für das Deployment der Camunda-Prozessapplikation.
+Relevant ist lediglich der Name von process-archive, welcher im
+Deployment auftaucht.
+Details siehe https://docs.camunda.org/manual/7.7/user-guide/process-applications/the-processes-xml-deployment-descriptor/
+-->
+<process-application
+  xmlns="http://www.camunda.org/schema/1.0/ProcessApplication"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <process-archive name="example_process_application">
+    <process-engine>default</process-engine>
+    <properties>
+      <property name="isDeleteUponUndeploy">false</property>
+      <property name="isScanForProcessDefinitions">true</property>
+    </properties>
+  </process-archive>
+
+</process-application>

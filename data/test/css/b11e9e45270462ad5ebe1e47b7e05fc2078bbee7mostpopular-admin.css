@@ -1,0 +1,27 @@
+#mostpopular-services-admin-form #edit-add-service div.form-item {
+  display: inline-block;
+}
+
+#mostpopular-services-admin-form .mostpopular--service-status {
+  font-weight: bold;
+}
+
+#mostpopular-services-admin-form .mostpopular--service-status-1 {
+  color: #ff9933;
+}
+
+#mostpopular-services-admin-form .mostpopular--service-status-2 {
+  color: #00bb00;
+}
+
+#mostpopular-services-admin-form .mostpopular--service-status--2 {
+  color: #ff0000;
+}
+
+#mostpopular-service-config-form table.table-select-processed {
+  width: 20em;
+}
+
+#mostpopular-service-config-form table.table-select-processed th.select-all {
+  width: 10px;
+}

@@ -1,0 +1,18 @@
+.ui-view.view-controller.patterns-tool-layout-controller
+.ui-view.view-controller.ui-multibutton.day-categories
+.ui-button-view-controller > .background {
+    fill: rgba(41,36,33,0.9);
+}
+
+.ui-view.view-controller.patterns-tool-layout-controller
+.ui-view.view-controller.ui-multibutton.day-categories
+.ui-button-view-controller.selected > .background {
+    fill: rgba(246,246,246,1);
+}
+
+.ui-view.view-controller.patterns-tool-layout-controller
+.ui-view.view-controller.ui-multibutton.day-categories
+.ui-button-view-controller.selected > .title {
+    fill: rgba(41,36,33,1.0);
+}
+

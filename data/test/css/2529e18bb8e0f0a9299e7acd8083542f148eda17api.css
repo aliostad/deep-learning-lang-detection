@@ -1,0 +1,50 @@
+/*
+body { background:#D8DCE0 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAABMCAIAAAAjsUpsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEVJREFUeNqMTlsKACAMku5/Z9sL1lpUH6JMJ4LkAGBQTdVxIwUQXVizNK+zd1Tecjfv1RHbnE/bcmPrKL8/XYufG6cAAwBFymotT/a6tQAAAABJRU5ErkJggg==) repeat-x scroll 0 0; border:none; font-family:Arial,Helvetica,'Liberation Sans',FreeSans,sans-serif!important; font-size:69%!important; }
+
+a { color:#003EA8; }
+a:visited { color:#003EA8; }
+
+h2, h3, h4, h5, h6, form fieldset legend { font-family:inherit; font-size:inherit; }
+
+#header { margin-bottom:10px; background:#5590d2; border-bottom:5px solid #C9E2FC; }
+#languagesBlock { display:none; }
+h1#branding { padding:0.2em 1em; background:none; font-size:2em; }
+
+#apiBox .resourceAPIBlock .success { color:#090; }
+#apiBox .resourceAPIBlock .error { color:#C00; }
+#apiBox .resourceAPIBlock .warning { color:#F90; }
+#apiBox .resourceAPIBlock .info { color:#06C; }
+
+.box { background:#fff; border-radius:5px 5px 0 0; -moz-border-radius:5px 5px 0 0; -webkit-border-radius:5px; -webkit-border-bottom-left-radius:0; -webkit-border-bottom-right-radius:0; -o-border-radius:5px 5px 0 0; -webkit-box-shadow:3px 3px 5px #2c3642; -moz-box-shadow:3px 3px 5px #2c3642; }
+.box .titleBlock,
+.box h2 { margin:0; padding:4px 10px; background:#5590d2; background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAXCAIAAAA0gN7GAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFxJREFUeNpiTFz+iWEoAxZVgd9D2wO33jIObQ/8//9/qHvg39D2AMNQ98D/f/9G88BoEhrRmXjI5wGG0Xpg1AMUJqHRemA0CY22hYa0B5gYhjgY9cCoBygEAAEGAOjwMAksun6KAAAAAElFTkSuQmCC); border-radius:5px 5px 0 0; -moz-border-radius:5px 5px 0 0; -webkit-border-radius:5px; -webkit-border-bottom-left-radius:0; -webkit-border-bottom-right-radius:0; -o-border-radius:5px 5px 0 0; color:white; text-transform:uppercase; }
+.box .titleBlock .actionsBlock { position:relative; z-index:100; }
+
+.exposedAPIsBlock { padding-bottom:10px; }
+.exposedAPIsBlock > h2 { margin-bottom:10px; }
+.resourceAPIBlock li { font-size:118%; }
+#apiBox .resourceAPIBlock { margin:0 10px; }
+#apiBox .resourceAPIBlock h3 { background:#C9E2FC; font-size:109%; }
+#apiBox li { margin-left:30px; }
+
+#apiBox .resourceAPIBlock .possibleErrors .key { float:left; }
+#apiBox .resourceAPIBlock .possibleErrors dl { margin-left:123px; display:block; }
+#apiBox .resourceAPIBlock .possibleErrors dl::after { height:0; clear:both; content:' '; display:block; visibility:hidden; font-size:1%; }
+#apiBox .resourceAPIBlock .possibleErrors dl dt,
+#apiBox .resourceAPIBlock .possibleErrors dl dd { display:inline-block; }
+#apiBox .resourceAPIBlock .possibleErrors dt { width:40%; clear:both; }
+#apiBox .resourceAPIBlock .possibleErrors dd { width:58%; } 
+
+.resourceDataModelBlock ul { padding-left:20px; }
+
+
+.unittestsResulsBlock .commonTable tbody th { font-weight:normal; }
+.unittestsResulsBlock .commonTable .outputFormatCol { text-align:center; }  
+
+.apiItemBlock > dl { margin:5px; border:1px solid; }
+.apiItemBlock dt.key { width:200px; display:block; float:left; background:#C9E2FC; border-bottom:1px solid; }
+.apiItemBlock dd.value { display:block; overflow:hidden; border-bottom:1px solid; }
+.apiItemBlock dd.value::after { height:0; clear:both; content:' '; display:block; visibility:hidden; font-size:1%; }
+.apiItemBlock dl dl dt.key { width:auto; min-width:50px; }
+.apiItemBlock dl dl dd.value {  }
+*/

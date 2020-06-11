@@ -1,0 +1,31 @@
+.ui-model-wrap {
+  position: absolute;
+  width: auto;
+  height: auto;
+}
+.ui-model-wrap .ui-model-header {
+  font-size: 1.05em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.ui-model-wrap .ui-model-header .ui-model-trigger {
+  float: right;
+  border-radius: 5px;
+  width: 9px;
+  height: 9px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+.ui-model-wrap .ui-model-header .ui-model-trigger .ui-icon {
+  position: relative;
+  left: -4px;
+  top: -3px;
+}
+.ui-model-wrap .ui-model {
+  list-style: none;
+  display: inline-block;
+  padding: 0.5em;
+  margin: 0;
+}

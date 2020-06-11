@@ -1,0 +1,58 @@
+.dropdown-arrow-inverse {
+  border-bottom-color: #34495e !important;
+  border-top-color: #34495e !important;
+}
+ul.message-list {
+  padding: 0;
+}
+ul.message-list li {
+  border-bottom: 1px solid #e4e4e4;
+  padding: 20px 0;
+  position: relative;
+}
+ul.message-list li .icon {
+  position: absolute;
+  left: 0;
+}
+ul.message-list li .icon img {
+  width: 50px;
+}
+ul.message-list li .top-wrapper {
+  margin-left: 65px;
+  position: relative;
+}
+ul.message-list li .top-wrapper .title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #000000;
+}
+ul.message-list li .top-wrapper .right-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+ul.message-list li .top-wrapper .right-content .date {
+  color: #666666;
+}
+ul.message-list li .message-content-wrapper {
+  margin-left: 65px;
+  position: relative;
+}
+ul.message-list li .message-content-wrapper p {
+  font-size: 14px;
+  color: #666666;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  padding-right: 40px;
+}
+ul.message-list li .message-content-wrapper p.open {
+  white-space: normal;
+}
+ul.message-list li .message-content-wrapper .btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    css:if-content="#visual-portal-wrapper"
+    >
+  <theme href="three-column.html" css:if-content=".template-manage-portlets"/>
+  <theme href="three-column.html" if="$have_both_portlets"/>
+  <theme href="two-column-left.html" if="$have_left_portlets"/>
+  <theme href="two-column-right.html" if="$have_right_portlets"/>
+  <theme href="one-column.html" />
+  <drop content='/html/head/meta[@name="viewport"]'/>
+  <drop css:theme=".drop"/>
+
+  <!--  resources (css&js) -->
+  <replace content='/html/head' theme='/html/head' />
+  <merge attributes="class" css:content="body" css:theme="body" />
+  <copy attributes="id dir" css:content="body" css:theme="body" />
+
+  <!-- header -->
+  <append css:content="#portal-logo" css:theme="#logo"/>
+  <append css:content="#portal-languageselector" css:theme="#tools" />
+  <append css:content="#portal-personaltools-wrapper" css:theme="#tools"/>
+  <append css:content='#portal-searchbox' css:theme='#tools' />
+  <append css:content-children="#portal-globalnav" css:theme="#portal-globalnav"/>
+
+  <!-- CONTENT -->
+  <append css:content-children="#portal-column-content" css:theme="#portal-column-content"/>
+  <append css:content-children="#portal-column-one" css:theme="#portal-column-one" />
+  <append css:content-children="#portal-column-two" css:theme="#portal-column-two" />
+  <append css:content-children="#portal-footer" css:theme="#portal-footer" />
+  <append css:content-children="#portal-colophon" css:theme="#portal-colophon" />
+  <append css:content-children="#portal-siteactions" css:theme="#portal-siteactions" />
+
+  <!--  footer -->
+
+</rules>

@@ -1,0 +1,47 @@
+BEGIN;
+
+CREATE OR REPLACE FUNCTION regs_route(caller_arg TEXT, called_arg TEXT, ip_host_arg INET, formats_arg TEXT, rtp_forward_arg TEXT)
+	RETURNS TABLE(key TEXT, value TEXT) AS $$
+DECLARE
+	res HSTORE;
+	cntr INTEGER;
+	t RECORD;
+	uoffline BOOLEAN;
+BEGIN
+	res := '';
+	SELECT * INTO res, cntr FROM regs_route_part(caller_arg, called_arg, ip_host_arg, formats_arg, rtp_forward_arg, res, 0);
+
+	uoffline := res::TEXT = '';
+
+	-- Add 'offline' and 'No answer' divertions
+	FOR t IN SELECT normalize_num(n.val) AS val, n.timeout, k.*
+			FROM morenums n INNER JOIN numkinds k ON k.id = n.numkind
+			WHERE uid = userid(called_arg) AND CASE WHEN uoffline THEN div_offline ELSE div_noans END ORDER BY n.sortkey, n.id LOOP
+		IF res::TEXT <> '' THEN
+			res := res || hstore('callto.' || cntr || '.maxcall', (t.timeout * 1000)::TEXT); -- append to previous group
+			cntr := cntr + 1;
+			res := res || hstore('callto.' || cntr, '|');
+		END IF;
+		cntr := cntr + 1;
+		res := res || hstore('callto.' || cntr, 'lateroute/' || t.ins_prefix || t.val);
+		IF t.set_local_caller THEN
+			res := res || hstore('callto.' || cntr || '.caller', called_arg);
+		END IF;
+		IF t.set_context IS NOT NULL THEN
+			res := res || hstore('callto.' || cntr || '.context', t.set_context);
+		END IF;
+	END LOOP;
+
+	IF res::TEXT = '' THEN
+		RETURN;
+	ELSE
+		res := res || 'location => fork';
+		res := res || hstore(ARRAY['copyparams', 'pbxassist,dtmfpass', 'tonedetect_out', 'true', 'pbxassist', 'true', 'dtmfpass', 'false']);
+		RETURN QUERY SELECT * FROM each(res);
+	END IF;
+END;
+$$ LANGUAGE PlPgSQL;
+
+COMMIT;
+-- vim: ft=sql
+

@@ -1,0 +1,98 @@
+﻿#banner{width:100%;height:400px;margin:0 auto;padding:0; overflow:hidden; display:block; margin-left: auto;margin-right: auto;}
+
+.news_part1{width:100%; height:auto; margin:0px auto;background-color:#FFF;}
+.news_part2{width:100%; height:auto; margin:0px auto;background-color:#f3f3f3;}
+.news_part1 h3,.news_part2 h3{width:100%; height:46px; line-height:46px; font-weight:bold; text-align:center; font-size:32px;}
+
+
+	.introwords{width:100%;height:auto;margin:0 auto; padding:0;}
+		.adv li{float:left;width:250px; height:auto; min-height:110px; text-align:left;padding-left:150px;background:url(news/news_advan_ico.png) no-repeat}
+			.adv li span.keytitle{width:100%; height:30px; line-height:30px; text-align:left; display:inline-block; font-size:18px; color:#f15433; margin-top:30px; margin-bottom:5px; }
+			.adv li.advan_ico1{ background-position:0px 0px;}
+			.adv li.advan_ico2{ background-position:0px -120px;}
+			.adv li.advan_ico3{ background-position:0px -240px;}
+			.adv li.advan_ico4{ background-position:0px -360px;}
+			.adv li.advan_ico5{ background-position:0px -480px;}
+			.adv li.advan_ico6{ background-position:0px -600px;}
+
+	.templatedetail{width:1224px; height:auto; margin:0 auto; padding:0; overflow:hidden; }
+		.templatedetail li{float:left;width:170px; height:127px; margin:7px; background:url(/images/indexbg.png) 0 -653px no-repeat transparent; padding:10px;}
+			.templatedetail li img{width:170px; height:127px; border:0;}
+	.moretemplate{width:96px; height:33px; line-height:33px; padding-left:59px; background:url(/images/indexbg.png) -751px -150px no-repeat #FFF; text-align:left; margin:19px auto 16px auto;}
+		.moretemplate a{color:#CCC; font-size:14px; height:33px; line-height:33px; display:inline-block;}
+	
+
+	#ot5case .caseimg{width:1198px; height:auto; margin:0 auto; padding:0; overflow:hidden;}
+		#ot5case .caseimg li{float:left; width:169px; height:80px; border:1px solid #efeff0;}
+			#ot5case .caseimg li img{width:169px; height:80px; border:0; cursor:pointer;}
+
+/******2013-07-02 modify********/
+.moveimgcntdiv{width:850px; height:160px; position:absolute; left:173px; top:83px; background-color:#f15433; color:#FFF; font-size:18px;}
+
+.moveimgcntdiv li{float:left; height:160px;color:#FFF; text-align:left;}
+.moveimgcntdiv li.cnt{width:770px; line-height:25px; padding-top:25px; height:140px;}
+.moveimgcntdiv li.cnt p{line-height:28px; text-indent:2em;font-size:16px; }
+.moveimgcntdiv li.lf{width:40px; background:url(/images/indexbg.png) -740px -751px no-repeat;}
+.moveimgcntdiv li.rt{width:40px; background:url(/images/indexbg.png) -557px -665px no-repeat;}
+.moveimgdiv{width:163px; height:78px; line-height:78px; cursor:pointer; position:absolute; left:2px; top:2px; background-color:#f15433; color:#FFF; font-size:14px; text-align:center; opacity:0.6;}
+/******2013-07-02 modify********/
+.createhost22{width: 174px;height: 53px;cursor: pointer;position: relative;margin: 287px 0px 0px 636px;display: inline-block;}
+
+/*热门媒体套餐 begin*/
+.news_tx{ padding:20px 25px 0px;margin:0 auto; height:110px;}
+.news_tx li{ width:215px; float:left; position:relative; display:inline; height:110px; margin:0px 5px; background: url(images/news_txlogo.png) no-repeat}
+.news_tx li.news_txlogo1{ background-position:0px 0px;}
+.news_tx li.news_txlogo2{ background-position:0px -110px;}
+.news_tx li.news_txlogo3{ background-position:0px -220px;}
+.news_tx li.news_txlogo4{ background-position:0px -330px;}
+/*热门媒体套餐 end*/
+/*产品列表 begin*/
+.write_list { overflow:hidden;background-color: #fff;}
+.write_list { width:1200px; overflow: hidden; margin: 0px auto; color: #595959;}
+.write_list ul { display: block;}
+.write_list .price { position:absolute; left:10px; top:135px; width:100px; height:60px; line-height:60px; font-size:24px; text-align:center;}
+.write_list ul li { float: left; width: 299px;}
+.write_list ul li .pd{ border:3px solid #fff; display:block}
+.write_list ul li .pd:hover{border-color: #f3f3f3;border-color: rgba(243,243,243,0.8); text-decoration:none;}
+.write_list h2 { margin-bottom:10px; font-size: 18px; font-weight:bold; text-align:left; padding-left:100px;}
+.write_list p { font-size: 12px; text-align:left;padding-left:100px;}
+.write_list .tel { padding-left: 0px;}
+.write_list .ico-01,
+.write_list .ico-02,
+.write_list .ico-03,
+.write_list .ico-04 {width: 120px; height:120px; margin:0 auto; display:block; background: url(news/write_item.png) no-repeat;}
+.write_list .ico-01 { background-position: 0px 0px;}
+.write_list .ico-02 { background-position: 0px -120px;}
+.write_list .ico-03 { background-position: 0px -240px;}
+.write_list .ico-04 { background-position: 0px -360px;}
+
+/*案例 begin*/
+.case_list,.case_list ul,.case_list ul li{height:350px;}
+.case_list {overflow:hidden; position:relative;}
+.case_list ul {position:absolute;}
+.case_list ul li {float:left; width:1080px; overflow:hidden; position:relative; padding:0px 60px;}
+.case_list ul li .post_body{ height:318px; overflow:hidden;}
+.case_list .btnBg {position:absolute; width:800px; height:20px; left:0; bottom:0; background:#000; display:none;}
+.case_list .btn {position:absolute; width:300px; height:23px; padding:0px 80px 0px 10px; right:0; bottom:15px; text-align:right;}
+.case_list .btn span {display:inline-block; _display:inline; _zoom:1; width:25px; height:24px; line-height:24px; text-align:center; _font-size:0; margin-left:5px; cursor:pointer; background:#000; color:#fff;}
+.case_list .btn span.on {background:#000;}
+.case_list .preNext {width:45px; height:100px; position:absolute; top:110px; background:url(news/sprite.png) no-repeat 0 0; cursor:pointer;}
+.case_list .pre {left:0;}
+.case_list .next {right:0; background-position:right top;}
+.post_body {background: #FFFFFF;padding: 15px;line-height: 22px;}
+.post_body h2 {font-size: 20px;line-height: 40px;color: #C30; font-weight:bold;}
+.post_content {}
+.post_info {height: 30px;line-height: 30px;text-align: right;margin-top: 10px;}
+
+.tip_top90{ width:350px;top: 105px;left: 10px;}
+.post_content dl{ overflow:hidden;}
+.post_content dt{overflow:hidden;float:right;width:325px; padding:10px 0px 0px 15px;}
+.post_content dt img{ border:1px solid #ddd; width:320px;}
+.post_content dd{ padding:5px 0px 0px;}
+.post_content dd h3{font-weight:bold;color:#000; font-size:16px;}
+.post_content dd p{line-height:24px;font-size:14px; text-indent:2em;}
+.post_content dd h4{font-size:15px; line-height:30px;}
+.post_content dd h4 b{font-weight:bold;color:#000;}
+/*案例 end*/
+/* 仿QQ商城点击左右滚动jquery焦点图特效插件 */
+

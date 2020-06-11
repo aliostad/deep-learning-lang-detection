@@ -1,0 +1,28 @@
+/* VP 320+480+768+1024+1366 */
+/* CORE */
+/* COMPONENTS */
+/* BLOCKS */
+/* SECTIONS */
+/*
+HERO
+*/
+.ki-load { overflow: hidden; position: fixed; width: 100%; top: 0px; display: table; width: 100%; background-color: #2AABA0; }
+.ki-load > div { display: table-cell; vertical-align: middle; text-align: center; height: 650px; }
+.ki-load > div h1 { -webkit-transition: letter-spacing 30s ease-out 0s; transition: letter-spacing 30s ease-out 0s; font-family: 'Raleway', sans-serif; font-size: 20px; color: #14514c; font-weight: 200; letter-spacing: 20px; margin: 0 0 9px; padding: 0; }
+.ki-load > div span { display: block; margin: 0 0 12px; font-size: 10px; letter-spacing: 4px; color: #1e7a72; font-family: 'Raleway', sans-serif; -webkit-transition: letter-spacing 30s ease-out 0s; transition: letter-spacing 30s ease-out 0s; }
+.ki-load > div span .extra { letter-spacing: 4px; margin: 8px 0 0px; font-size: 8px; }
+.ki-load.animate > div h1 { letter-spacing: 10px; }
+.ki-load.animate > div span { letter-spacing: 0px; }
+@media screen and (min-width: 480px) { .ki-load { background-color: #E9D666; }
+  .ki-load > div h1 { font-size: 42px; color: #968416; margin: 0 0 18px; letter-spacing: 26px; }
+  .ki-load > div span { font-size: 18px; color: #c3ab1c; margin: 0 0 24px; }
+  .ki-load > div span .extra { font-size: 14px; } }
+@media screen and (min-width: 768px) { .ki-load { background-color: #C3A202; }
+  .ki-load > div h1 { font-size: 72px; letter-spacing: 40px; color: #544601; margin: 0 0 18px; }
+  .ki-load > div span { font-size: 18px; color: #867001; margin: 0 0 24px; } }
+@media screen and (min-width: 940px) { .ki-load { background-color: #F15A29; }
+  .ki-load > div h1 { color: #832609; }
+  .ki-load > div span { color: #b3350c; } }
+@media screen and (min-width: 1300px) { .ki-load { background-color: #A6251B; }
+  .ki-load > div h1 { color: #380d09; }
+  .ki-load > div span { color: #641610; } }

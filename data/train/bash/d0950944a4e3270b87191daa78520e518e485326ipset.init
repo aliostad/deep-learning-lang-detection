@@ -1,0 +1,95 @@
+#!/bin/sh
+#
+# ipsec      Loads IPSET rules
+#
+# chkconfig: 2345 07 93
+# description: Load and save IPSET rules
+# config: /etc/sysconfig/ipset
+# config: /etc/sysconfig/ipset-config
+
+# Source function library.
+. /etc/rc.d/init.d/functions
+
+IPSET=ipset
+IPSET_DATA=/etc/sysconfig/$IPSET
+IPSET_CONFIG=/etc/sysconfig/${IPSET}-config
+
+# Load config values
+. $IPSET_CONFIG
+
+start() {
+	if [ -f $IPSET_DATA ]; then
+		echo -n $"Loading ipset tables: "
+		/usr/sbin/ipset destroy
+		/usr/sbin/ipset restore < $IPSET_DATA
+		if [ $? -eq 0 ]; then
+			success; echo
+		else
+			failure; echo; return 1
+		fi
+		touch /var/lock/subsys/ipset
+	else
+		echo -n $"ipset: $IPSET_DATA does not exits"
+		warning
+		echo
+	fi
+}
+
+stop() {
+	echo -n "Removing ipset tables: "
+	/usr/sbin/ipset destroy && success || failure
+	rm -f /var/lock/subsys/ipset
+}
+
+save() {
+	if [ -f $IPSET_DATA ]; then
+		echo -n $"Renaming existing config to $IPSET_DATA.old"
+		/bin/cp -af $IPSET_DATA $IPSET_DATA.old
+		if [ $? -eq 0 ]; then
+			success; echo
+		else
+			failure; echo
+		fi
+	fi
+	IPSET_SAVE="/usr/sbin/ipset save"
+	test -n "${IPSET_IGNORE_TABLES}" && IPSET_SAVE="$IPSET_SAVE | grep -v -E '^\w+ (${IPSET_IGNORE_TABLES/ /|}) '"
+	test -n "${IPSET_IGNORE_ENTRIES}" && IPSET_SAVE="$IPSET_SAVE | grep -v -E '^add (${IPSET_IGNORE_ENTRIES/ /|}) '"
+	echo -n $"Saving ipset tables to $IPSET_DATA"
+	cat > $IPSET_DATA << __EOF__
+## Use /usr/sbin/ipset tool to populate your ipset tables
+## and then 'service ipset save' to save them to this file.
+
+__EOF__
+	eval "${IPSET_SAVE}" >> $IPSET_DATA
+	if [ $? = 0 ]; then
+		success; echo
+	else
+		failure; echo; return 1
+	fi
+}
+
+RETVAL=0
+case "$1" in
+  start)
+	start
+	;;
+  stop)
+	[ "x$IPSET_SAVE_ON_STOP" = "xyes" ] && save
+	stop
+	;;
+  restart|force-reload)
+	[ "x$IPSET_SAVE_ON_RESTART" = "xyes" ] && save
+	start
+	;;
+  status)
+	/usr/sbin/ipset list
+	;;
+  save)
+	save
+	;;
+  *)
+	msg_usage "$0 {start|stop|restart|force-reload|status|save}"
+	exit 3
+esac
+
+exit $RETVAL

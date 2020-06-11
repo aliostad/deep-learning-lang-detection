@@ -1,0 +1,126 @@
+.navbar-brand {	padding: 5px 15px; }
+
+@media (min-width: 768px) {
+	.navbar-default .navbar-nav > li > .navbar-search {
+	padding-left: 140px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.navbar-default .navbar-nav > li > .navbar-search {
+	padding-left: 170px;
+	}
+}
+
+@media (max-width: 691px) {
+	
+	.mega-menu {
+		width: 200px !important;
+		min-height: 100px;
+	}
+	.mega-menu li.mega-menu-column {
+		margin-right: 150px !important;
+		width: inherit !important;
+	}
+	.mega-menu li a {
+		margin-left:-20px !important;
+		color: #777 !important;
+		display: block;
+		padding: 0px !important;
+	}
+	.mobile-hide { visibility:hidden !important; display:none !important; }
+	.mega-menu .nav-header { border-bottom: none !important; }
+	.mega-menu li a:hover, .mega-menu li a:focus {
+	    color: #181818 !important;
+	    text-decoration: none;
+	}
+}
+
+/* MEGA MENU STYLE
+********************************/ 
+.mega-menu {
+	padding: 10px 0px ! important;
+	width: 540px;
+	border-radius: 0;
+	margin-top: 0px;
+}
+
+.mega-menu li {
+	display: inline-block;
+	float: left;
+	padding: 3px 0px;
+}
+
+.mega-menu li a {
+	display: block;
+	padding: 3px 20px;
+	clear: both;
+	line-height: 1.42857143;
+	color: #333;
+	white-space: nowrap;
+}
+
+.mega-menu li a:hover, .mega-menu li a:focus {
+    color: #000000;
+    text-decoration: none;
+    outline: 0;
+}
+
+.mega-menu li.mega-menu-column {
+	margin-right: 20px;
+	width: 150px;
+}
+
+.mega-menu .nav-header {
+	padding: 0 !important;
+	margin-bottom: 10px;
+	display: inline-block;
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+}
+.mega-menu img { padding-bottom: 10px;}
+
+.nav-search{position:absolute;top:15px;right:5%;line-height:24px;}
+.nav-search .form-search{margin-bottom:0}
+.nav-search .nav-search-input{border:1px solid #6fb3e0;width:152px;height:28px!important;border-radius:4px!important;font-size:13px;color:#666!important;z-index:11;-webkit-transition:width ease .15s;transition:width ease .15s}
+.nav-search .nav-search-input+.dropdown-menu{min-width:0;left:0;right:0}
+.nav-search .nav-search-input:focus,.nav-search .nav-search-input:hover{border-color:#6fb3e0}
+.nav-search .nav-search-icon{color:#6fb3e0!important;font-size:14px!important;line-height:24px!important}
+.nav-search.minimized .nav-search-input{width:0;opacity:0;filter:alpha(opacity=0);max-width:0}
+.nav-search.minimized:hover .nav-search-input,.nav-search.minimized .nav-search-btn:active+.nav-search-input,
+.nav-search.minimized .nav-search-input:focus,.nav-search.minimized .nav-search-input:hover,
+.nav-search.minimized .nav-search-input:active{opacity:1;filter:alpha(opacity=100);width:152px;max-width:152px}
+.nav-search.minimized .nav-search-icon{border:1px solid;border-radius:100%;background-color:#FFF;padding:0 5px!important}
+.nav-search.minimized:hover .nav-search-icon,.nav-search.minimized .nav-search-input:focus ~ .nav-search-icon,
+.nav-search.minimized .nav-search-input:hover ~ .nav-search-icon,
+.nav-search.minimized .nav-search-input:active ~ .nav-search-icon{border:0;border-radius:0;padding:0 3px!important}
+.nav-search-icon{border:0;border-radius:0;padding:0 3px!important}
+@media only screen and (max-width:767px){.nav-search{float:left; left:10px; margin-bottom: 15px;}
+.nav-search .nav-search-input{width:105px}
+.nav-search:hover .nav-search-input,.nav-search .nav-search-btn:active+.nav-search-input,.nav-search .nav-search-input:focus,
+.nav-search .nav-search-input:hover,.nav-search .nav-search-input:active{width:145px}}
+@media only screen and (max-width:480px){.nav-search .nav-search-input{width:0;opacity:0;filter:alpha(opacity=0);max-width:0}
+.nav-search:hover .nav-search-input,.nav-search .nav-search-btn:active+.nav-search-input,.nav-search .nav-search-input:focus,
+.nav-search .nav-search-input:hover,.nav-search .nav-search-input:active{opacity:1;filter:alpha(opacity=100);width:152px;max-width:152px}
+.nav-search .nav-search-icon{border:1px solid;border-radius:100%;background-color:#FFF;padding:0 5px!important}
+.nav-search:hover .nav-search-icon,.nav-search .nav-search-input:focus ~ .nav-search-icon,
+.nav-search .nav-search-input:hover ~ .nav-search-icon,.nav-search .nav-search-input:active ~ .nav-search-icon{border:0;border-radius:0;padding:0 3px!important}}
+
+
+.input-icon>[class*="icon-"] {
+padding: 0 3px;
+z-index: 2;
+position: absolute;
+top: 3px;
+bottom: 1px;
+left: 3px;
+line-height: 28px;
+display: inline-block;
+color: #909090;
+font-size: 16px;
+}
+
+.input-icon>input {
+padding-left: 24px;
+padding-right: 6px;
+}

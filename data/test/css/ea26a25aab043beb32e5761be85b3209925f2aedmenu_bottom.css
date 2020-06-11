@@ -1,0 +1,32 @@
+#nav_bottom {
+	margin-top: 23px;
+}
+
+#nav_bottom2 {
+	margin-top: 15px;
+}
+
+#nav_bottom1 {
+	margin-top: 18px;
+}
+
+#nav_bottom3 {
+	margin-top: 5px;
+}
+
+#nav_bottom a, #nav_bottom1 a, #nav_bottom2 a, #nav_bottom3 a {
+	color: #969696;
+}
+
+#nav_bottom li, #nav_bottom1 li, #nav_bottom2 li, #nav_bottom3 li {
+	display: inline;
+	padding: 0px 5px 0px 5px;
+}
+
+.lispa {
+	border-left: 1px solid #000000;
+}
+
+#nav_bottom li:first-child, #nav_bottom1 li:first-child, #nav_bottom2 li:first-child, #nav_bottom3 li:first-child {
+	border-left: none;
+}

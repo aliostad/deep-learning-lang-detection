@@ -1,0 +1,226 @@
+#ServiceCalculator #service-calculator-modal {
+    
+}
+
+#ServiceCalculator #service-cal-modal-header {
+     border-bottom: 1px solid #ABABAB;
+     border-color: #ABABAB;
+     border-width: 1px;
+     padding: 25px;
+     position: relative;
+}
+
+#ServiceCalculator #modal-close {
+     color: #FFFFFF;
+     cursor: pointer;
+     float: right;
+     font-family: MINITypev2HeadlineRegular;
+     position: relative;
+}
+
+#ServiceCalculator .float-x {
+     float: right;
+     margin-left: 5px;
+     position: relative;
+}
+
+#ServiceCalculator .float-x.lg {
+     font-size: 25px;
+     margin-top: -8px;
+}
+
+#ServiceCalculator .inner-sub-title {
+     background-image: url("/Public/img/content/service-calculator/sub-nav-bg.png");
+     height: 43px;
+     position: relative;
+     width: 100%;
+}
+
+#ServiceCalculator .inner-sub-title h3 {
+     font-family: MINITypev2HeadlineRegular;
+     font-size: 18px;
+     margin: 0px;
+     padding: 12px;
+}
+
+#ServiceCalculator .model-nav-options h3 {
+     margin: 0px;
+     padding: 0px;
+}
+
+#ServiceCalculator .nav-wrapper {
+     padding: 10px;
+     position: relative;
+}
+
+#ServiceCalculator .model-nav-options {
+     border-color: #FFFFFF;
+     border-style: solid;
+     border-width: 10px;
+     height: 485px;
+     overflow: hidden;
+     padding: 0px;
+     position: relative;
+     width: 100%;
+}
+
+#ServiceCalculator .service-model-list li img {
+     width: 155px;
+     z-index: -1;
+}
+
+#ServiceCalculator .service-model-list li {
+     float: left;
+     font-size: 12px;
+     height: 175px;
+     left: -30px;
+     list-style: none outside none;
+     margin-left: 28px;
+     position: relative;
+     top: -30px;
+     width: 150px;
+}
+
+#ServiceCalculator .service-model-list li select {
+     margin-top: 10px;
+     width: 150px;
+}
+
+#ServiceCalculator option[default] {
+     display: none;
+}
+
+#ServiceCalculator .list-header h5 {
+     margin: 0px;
+     padding: 0px;
+}
+
+#ServiceCalculator .list-header {
+     margin: 15px 20px 10px;
+     position: relative;
+     z-index: 12;
+}
+
+#ServiceCalculator .row-1 {
+     position: relative;
+     z-index: 11;
+}
+
+#ServiceCalculator .btn-icon {
+     margin-left: -5px;
+     position: absolute;
+     top: 3px;
+}
+
+#ServiceCalculator #calculate-btn {
+     left: 542px;
+     position: absolute;
+     right: 0px;
+     top: 440px;
+     width: 200px;
+}
+
+#ServiceCalculator .service-model-list .model-name {
+     font-family: MINITypev2HeadlineRegular;
+     font-size: 12px;
+     text-align: center;
+}
+
+#ServiceCalculator #calculations-view {
+     background-color: #000000;
+     display: none;
+     height: 470px;
+     left: 0px;
+     position: absolute;
+     top: -20px;
+     width: 100%;
+     z-index: 33;
+}
+
+#ServiceCalculator .selected-calculator-thumb {
+     margin-top: -15px;
+     position: relative;
+}
+
+#ServiceCalculator .view-copy {
+     left: 200px;
+     position: absolute;
+     top: 30px;
+     width: 70%;
+}
+
+#ServiceCalculator #calutaltions-holder .column-1 {
+     float: left;
+     left: -20px;
+     position: relative;
+     top: 20px;
+     width: 220px;
+}
+
+#ServiceCalculator #calutaltions-holder .column-2, #ServiceCalculator #calutaltions-holder .column-3 {
+     float: left;
+     left: -20px;
+     position: relative;
+     top: 5px;
+     width: 260px;
+}
+
+#ServiceCalculator #calutaltions-holder h5 {
+     border-bottom: 1px solid #272727;
+     border-color: #272727;
+     border-width: 1px;
+     margin-left: 40px;
+     padding: 10px 0px;
+	 font-size: 12px;
+}
+
+#ServiceCalculator #calutaltions-holder li {
+     border-bottom: 1px solid #272727;
+     border-color: #272727;
+     border-width: 1px;
+     list-style: none outside none;
+     padding: 10px 0px;
+}
+
+#ServiceCalculator #calc-view-btn-holder {
+     bottom: -80px;
+     float: right;
+     height: 50px;
+     left: -30px;
+     position: relative;
+     width: 500px;
+}
+
+#ServiceCalculator .print-btn, #ServiceCalculator .retailer-btn {
+     float: right;
+     height: 50px;
+     margin-left: 5px;
+     position: relative;
+     width: 200px;
+}
+
+#ServiceCalculator .change-model-btn h4 {
+     font-size: 13px;
+     margin: 0px;
+     padding: 0px;
+}
+
+#ServiceCalculator .change-model-btn {
+     cursor: pointer;
+     display: none;
+     position: absolute;
+     right: 20px;
+     top: 102px;
+}
+
+.open-service-calculator {
+     float: left;
+     position: relative;
+	 display:none;
+}
+
+.open-service-calculator .btn-icon {
+     left: 2px;
+     position: absolute;
+     top: 4px;
+}

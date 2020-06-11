@@ -1,0 +1,70 @@
+/*
+by Di Hercowitz o/
+fb: facebook.com/dihercowitz
+g+: dihercowitz@gmail.com
+in: linkedin.com/in/dihercowitz
+*/
+
+/* styles */
+.hierarchy-model-content {background:#f1f1f1; border:1px solid #ccc; display:inline-block; height:100px; margin:0 10px; padding:10px; position:relative; width:250px; overflow:hidden;
+						  -moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px;
+						  -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
+
+.hierarchy-model-itemMenu {background:#fff; border-top:1px solid #ccc; display:block; position:absolute; width:100%; background:#ccc; bottom:-41px; left:0; 
+						   -moz-transition: 0.2s ease-in-out; -webkit-transition: 0.2s ease-in-out; transition: 0.2s ease-in-out;}
+.hierarchy-model-content:hover .hierarchy-model-itemMenu{bottom:0px;}
+
+/* buttons */
+button {display:inline-block; border:0; color:#fff; cursor:pointer; float:left; height:30px; line-height:10px; padding:0; text-transform:lowercase;  vertical-align: middle; width:33%; opacity:0.6}
+button:hover {opacity:1}
+.btSameLevel {background:#333; width:34%;}
+.btOtherLevel{background:#333}
+.btDelete    {background:#C94343}
+
+/* line color and style */
+.hierarchy-model li li:after, .hierarchy-model li ul li:before, .hierarchy-model li ul:before, .hierarchy-model li ul li:before, .hierarchy-model li ul li:first-child:before, .hierarchy-model li ul li:nth-last-child(1):before, .hierarchy-model li ul li:first-child:nth-last-child(1):before, .hierarchy-model li ul:before, .hierarchy-model li ul:nth-last-child(1):before,
+.hierarchy-model li ul:first-child:nth-last-child(1) {border-color:#ccc; border-style:solid;}
+
+/* horizontal lines width*/
+.hierarchy-model li li:after,
+.hierarchy-model li ul li:before,
+.hierarchy-model li ul:before {border-width:1px;}
+
+/* space between contents*/
+.hierarchy-model li ul li:before,
+  .hierarchy-model li ul:before{height:40px}	
+        .hierarchy-model li li{padding:40px 0;
+	                            margin:40px 0;}
+
+
+/******************************************
+*******************************************
+*******************************************
+*******************************************
+********** HYERARCHY MODEL CORE ***********
+*******************************************
+*******************************************
+*******************************************
+*******************************************/
+.hierarchy-model {text-align:center; margin:0;padding:0; white-space:nowrap;}
+.hierarchy-model ul, .hierarchy-model li {display:inline-block; margin:0; padding:0; position:relative;}
+.hierarchy-model ul {width:100%; display:block; margin-top:-5px;}
+.hierarchy-model li {list-style:none;}
+.hierarchy-model li ul li:before, .hierarchy-model li ul:before,
+.hierarchy-model li li:after{content:""; display:block; position:absolute; top:0; }
+.hierarchy-model li li:after{border-right-width:0!important; border-bottom-width:0!important; border-bottom-width:0!important; }
+.hierarchy-model li ul li:before, .hierarchy-model li ul:before {border-top-width:0!important; border-bottom-width:0!important; border-right-width:0!important;}
+/* horizontal lines */
+.hierarchy-model li li{position:relative; vertical-align:top}
+.hierarchy-model li li:after{width:100%;}
+.hierarchy-model li li:first-child:after,
+.hierarchy-model li li:nth-last-child(1):after{width:50%;}	
+.hierarchy-model li li:first-child:nth-last-child(1):after{border:0!important}
+/* position */
+.hierarchy-model li li:first-child:after {right:0;}	
+.hierarchy-model li li:nth-last-child(1):after {left:0;}	
+/* vertical lines */
+.hierarchy-model li ul li:before,
+.hierarchy-model li ul:before {left:50%;}	
+.hierarchy-model-content {white-space:normal;}
+.hierarchy-model-content-repeat {display:none;}	

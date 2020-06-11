@@ -1,0 +1,168 @@
+﻿#load_tariff_room_select
+{
+    margin:10px 0px 20px 0px;
+    padding:10px ;
+     background-color:#c7d5f2;
+     border:1px solid #4765a5;
+}
+
+
+
+#load_tariff_condition
+{
+     margin:0px 0px 20px 0px;
+     padding:0px 0px 0px 10px;
+     width:100%;
+    
+}
+#load_tariff_condition table
+{
+    margin:0px;
+    padding:0px;
+     
+}
+
+#load_tariff_condition table tr
+{
+    margin:0px;
+    padding:0px;
+     
+}
+#load_tariff_condition table tr td
+{
+    margin:0px;
+    padding:0px;
+     
+}
+#load_tariff_condition table tr td div
+{
+    float:left;
+    width:70px;
+     margin:0px 0px 0px 0px ;
+     padding:0px;
+     
+}
+
+#load_tariff_policy
+{
+    margin:30px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+}
+#load_tariff_period_cancel
+{
+     margin:30px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+}
+
+.policy_insert_box
+{
+    margin:0px;
+    padding:0px; 
+    height:60px;
+    border-bottom:1px solid #e4e5e9;
+}
+.policy_insert_box div
+{
+    margin:0px 0px 0px 10px;
+    padding:0px;
+    float:left;
+}
+.policy_list_head
+{
+    font-size:12px;
+}
+.policy_list
+{
+    margin:0px;
+    padding:0px;
+    
+  
+}
+
+.policy_list_item
+{
+    margin:0px;
+    padding:2px 0px 2px 0px;
+    color:#333333;
+    font-size:12px;
+    width:100%;
+     
+     line-height:25px;
+     border-bottom:1px solid #e4e5e9;
+}
+.policy_list_item span
+{
+    margin:0px 30px 0px 0px;
+    padding:0px;
+     color:#006eb4;
+     font-weight:bold;
+     width:200px;
+}
+
+#period_insert
+{
+    margin:0px;
+    padding:0px; 
+    height:45px;
+    border-bottom:1px solid #e4e5e9;
+}
+#period_list
+{
+    margin:20px 0px 0px 0px;
+    padding:0px; 
+    border-bottom:1px solid #e4e5e9;
+}
+.day_list
+{
+     margin:0px;
+     padding:0px;
+}
+.day_list p
+{
+      margin:0px;
+      padding:0px;
+      float:left;
+      width:50px;
+} 
+#rate_insert
+{
+    margin:0px;
+    padding:0px 0px 10px 0px; 
+    border-bottom:1px solid #e4e5e9;
+}
+#rate_load_result
+{
+    margin:10px 0px 0px 0px;
+     padding:0px;
+}
+.day_of_week_show
+{
+     margin:0px 0px 0px 35px;
+     padding:0px;
+}
+.day_of_week_show p
+{
+    margin:0px 0px 0px 1px;
+    padding:5px;
+    float:left;
+   line-height:10px;
+     background-color:#edeff4;
+     color:#bdbdbd;
+}
+.rate_result_list
+{
+    margin:0px;
+    padding:3px 0px 3px 0px; 
+    border-bottom:1px solid #e4e5e9;
+}
+.day_show
+{
+     color:#a20c0c;
+     font-weight:bold;
+}
+#load_tariff_save
+{
+    margin:30px 0px 0px 0px;
+    padding:0px;
+    text-align:center;
+}

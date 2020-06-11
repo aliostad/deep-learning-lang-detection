@@ -1,0 +1,21 @@
+<?xml version='1.0' ?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+        <mapping class="models.Acteur"/>
+        <mapping class="models.Critique"/>
+        <mapping class="models.Film"/>
+        <mapping class="models.Projection"/>
+        <mapping class="models.RoleActeur"/>
+        <mapping class="models.Salle"/>
+        <mapping class="models.Genre"/>
+        <mapping class="models.Motcle"/>
+        <mapping class="models.Langage"/>
+    </session-factory>
+
+</hibernate-configuration>

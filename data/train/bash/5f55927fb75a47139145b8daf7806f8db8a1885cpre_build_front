@@ -1,0 +1,49 @@
+#!/bin/bash
+
+source /usr/bin/rhcsh
+
+echo "----------------"
+echo "Pre build script"
+echo " "
+
+APP_REPO=~/app-root/runtime/repo
+
+echo -n "Current user is "
+whoami
+
+echo -n "Current directory is "
+pwd
+
+echo "Deleting everything in app repository..."
+rm -rf $APP_REPO/*
+rm -rf $APP_REPO/.??*
+
+echo "Creating tmp directory in app repository..."
+mkdir $APP_REPO/tmp
+
+echo "Cloning git repository..."
+git clone https://github.com/nukems/projet-indus.git $APP_REPO/tmp
+
+echo "Removing useless directories from front..."
+rm -r $APP_REPO/tmp/front/node_modules
+
+echo "Creating lib directory in app repository..."
+mkdir $APP_REPO/front
+mkdir $APP_REPO/back
+mkdir $APP_REPO/lib
+mkdir $APP_REPO/modules
+
+echo "Moving back resources to inferior step..."
+mv $APP_REPO/tmp/back/ConfigChecker.js $APP_REPO/back/ConfigChecker.js
+mv $APP_REPO/tmp/server_front.js $APP_REPO/server.js
+mv $APP_REPO/tmp/package_front.json $APP_REPO/package.json
+mv $APP_REPO/tmp/front/* $APP_REPO/front/
+mv $APP_REPO/tmp/lib/* $APP_REPO/lib/
+mv $APP_REPO/tmp/modules/* $APP_REPO/modules/
+
+echo "Deleting tmp directory..."
+rm -r $APP_REPO/tmp
+
+echo " "
+echo "End of pre build"
+echo "----------------"

@@ -1,0 +1,28 @@
+#!/bin/sh
+LIBS=
+for JAR in $DOOMHOME/lib/*.jar
+do
+  LIBS=$LIBS:$JAR
+done
+exec scala -cp $LIBS $0 $@
+!#
+
+import doom._
+
+val jmx = WeblogicJMX(
+  "localhost",
+  5200,
+  "weblogic",
+  "weblogic1",
+  WeblogicJMX.RUNTIME
+)
+
+val auth = jmx.getDefaultAuthenticator()
+if (jmx.userExists(auth, "testuser1")) {
+  println("testuser1 user exists")
+  jmx.invoke[Any](auth, "removeUser", "testuser1")
+} else {
+  println("testuser1 user does not exists")
+}
+
+jmx.invoke[Unit](auth, "createUser", "testuser1", "welcome123", "Test User")

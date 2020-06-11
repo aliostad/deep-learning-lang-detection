@@ -1,0 +1,124 @@
+#!/bin/bash
+
+# write in all deamons here ...
+deamon_count=1
+
+deamon[0]="ipc_mserver_boost"
+
+# write all processes here ...
+process_count=0
+
+#process name eg. helloworld
+#process_name[0]="main_app"
+
+#process paths eg. /source/beagleboard/bin/helloworld
+#process_path[0]="/bbusr/bin/main_app"
+
+# other settings here ...
+logfile="/bbusr/etc/controlscript.log"
+
+###########################################################
+
+if [ $# == 0 ]
+then
+    while true
+    do
+
+        echo -----------------------------------------------------
+
+        # -----------------------------
+
+        for (( i=0; i<deamon_count; i++ ))
+        do
+            if  [ $(ps -A | grep -c ${deamon[$i]}) = 0 ]
+            then
+                echo "$(date): restart ${deamon[$i]}"
+                echo "$(date): restart ${deamon[$i]}" >> $logfile
+
+                #restart deamon here ...
+                service ipc_mserver restart
+            else echo "$(date): all deamons are running ..."
+            fi
+        done
+
+        #------------------------------
+
+        for (( i=0; i<process_count; i++ ))
+        do
+            if [ $(ps -A | grep -c ${process_name[$i]}) = 0 ]
+            then
+                echo "$(date): restart ${process_path[$i]}"
+                echo "$(date): restart ${process_path[$i]}" >> $logfile
+
+                #restart process here ...
+                ${process_path[$i]} &
+            else echo "$(date): all processes are running ..."
+            fi
+        done
+
+        # -----------------------------
+
+        sleep 5
+    done
+
+#####################################
+
+elif [ $1 == "stop" ]
+then
+    for (( i=0; i<process_count; i++ ))
+    do
+        killall ${process_name[$i]}
+        echo "$(date): killed process ${process_name[$i]}"
+        echo "$(date): killed process ${process_name[$i]}" > $logfile
+    done
+
+    for (( i=0; i<deamon_count; i++ ))
+    do
+        service ipc_mserver stop
+        echo "$(date): stopped ${deamon[$i]}"
+        echo "$(date): stopped ${deamon[$i]}" > $logfile
+    done
+
+#####################################
+
+elif [ $1 == "restart" ]
+then
+    for (( i=0; i<process_count; i++ ))
+    do
+        killall ${process_name[$i]}
+        ${process_path[$i]} &
+        echo "$(date): restarted process ${process_name[$i]}"
+        echo "$(date): restarted process ${process_name[$i]}" > $logfile
+    done
+
+    for (( i=0; i<deamon_count; i++ ))
+    do
+        service ipc_mserver restart
+        echo "$(date): restarted ${deamon[$i]}"
+        echo "$(date): restarted ${deamon[$i]}" > $logfile
+    done
+
+#####################################
+
+elif [ $1 == "start" ]
+then
+    for (( i=0; i<process_count; i++ ))
+    do
+        ${process_path[$i]} &
+        echo "$(date): started process ${process_name[$i]}"
+        echo "$(date): started process ${process_name[$i]}" > $logfile
+    done
+
+    for (( i=0; i<deamon_count; i++ ))
+    do
+        service ipc_mserver start
+        echo "$(date): started ${deamon[$i]}"
+        echo "$(date): started ${deamon[$i]}" > $logfile
+    done
+
+#####################################
+
+else
+    echo "invalid argument: [start|stop|restart]"
+    echo ""
+fi

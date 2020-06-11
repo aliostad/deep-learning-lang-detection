@@ -1,0 +1,33 @@
+<config>
+	<name></name>
+	
+	<type>slide/list/convas</type>
+
+	<format>html/xhtml</format>
+	<head>
+		<append>
+			<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+		</append>
+		<set></set>
+		<del></del>
+	</head>
+
+	<body>
+		<append></append>
+		<content>
+			<father>.</father><!-- <body>[conent]<body> -->
+		</content>
+		<set>
+			<rul>
+				<path>div</path>
+				<key>class</key>
+				<value>slide</value>
+			</rul>
+		</set>
+		<del></del>
+	
+	</body>
+
+	
+
+</config>

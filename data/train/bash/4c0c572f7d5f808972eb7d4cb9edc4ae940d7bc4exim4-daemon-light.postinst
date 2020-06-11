@@ -1,0 +1,35 @@
+#!/bin/sh
+
+set -e
+
+. /usr/share/debconf/confmodule
+
+if [ -n "$EX4DEBUG" ]; then
+  echo "now debugging $0 $@"
+  set -x
+fi
+
+dc_eximconfig_configtype="other"
+db_get exim4/dc_eximconfig_configtype || true
+if [ "$RET" = "no configuration at this time" ]; then
+  dc_eximconfig_configtype="none"
+fi
+
+case "$1" in
+	configure)
+
+	# || true is needed for succesfull installation with configtype 'none'
+	if [ -x /etc/init.d/exim4 ]; then
+		db_stop
+		if [ "$dc_eximconfig_configtype" = "none" ]; then
+			# we may have broken config here, ignore errors
+	       		invoke-rc.d exim4 start || true
+		else
+			# we must have working config here, honor errors
+			invoke-rc.d exim4 start
+		fi
+	fi
+	;;
+esac
+
+

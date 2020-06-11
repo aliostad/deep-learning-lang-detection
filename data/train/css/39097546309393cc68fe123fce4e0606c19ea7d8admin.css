@@ -1,0 +1,37 @@
+#update_pclass_message table {
+    margin: 20px 0 5px;
+    border-spacing: 0;
+}
+
+#update_pclass_message th,
+#update_pclass_message td  {
+    padding: 5px 20px 5px 0;
+    text-align: center;
+}
+
+#update_pclass_message th {
+    white-space: nowrap;
+}
+
+#update_pclass_message th:last-of-type,
+#update_pclass_message td:last-of-type  {
+    padding-right: 0;
+}
+
+#update_pclass_message td {
+    border-top: 1px solid #ededed;
+}
+
+#update_pclass_message tbody tr:first-of-type td {
+    border-top: 1px solid #cccccc;
+}
+
+#update_pclass_message tbody tr:last-of-type td {
+    border-bottom: 1px solid #ededed;
+}
+
+#update_pclass_message td:nth-child(-n+2),
+#update_pclass_message th:nth-child(-n+2) {
+    text-align: left;
+}
+

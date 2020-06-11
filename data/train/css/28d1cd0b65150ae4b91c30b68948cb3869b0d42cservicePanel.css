@@ -1,0 +1,66 @@
+/**
+ * Servie panel styles.
+ * 
+ * @autor:opr
+ */
+div.serviePanel {}
+
+div.servicePanel_header_left,
+div.servicePanel_footer_left,
+div.servicePanel_header_right,
+div.servicePanel_footer_right {
+	background-image:url(servicePanelCorners.jpg);
+	background-position:0px 0px;
+	
+	float:left;
+	width:5px;
+	height:5px;
+}
+
+div.servicePanel_footer_left { 
+    background-position:0px -5px;
+}
+
+div.servicePanel_header_right {
+	float:right;
+	background-position:-5px 0px;
+}
+
+div.servicePanel_footer_right {
+    float:right;
+    background-position:-5px -5px;
+}
+
+div.servicePanel_header_center,
+div.servicePanel_footer_center {
+	margin:0px 5px;
+	background-color:#e0f4c1;
+	height:5px;
+}
+
+div.servicePanel_body {
+	background-color:#e0f4c1;
+	padding:13px 20px 23px 16px;
+}
+
+div.servicePanel .headline {
+	margin-left:8px;
+	color:#575f48;
+	font-weight:bold;
+}
+
+div.serviceTextContainer {
+	padding-top:12px;
+	padding-left:20px;
+	color:#575f48;
+}
+
+div.serviceTextContainer p,
+div.serviceTextContainer a span {
+	font-size:10px;
+	font-weight:bold;
+}
+
+div.serviceTextContainer a {
+	color:#9bc24b;
+}

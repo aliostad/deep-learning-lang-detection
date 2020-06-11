@@ -1,0 +1,67 @@
+
+
+.form_model {
+    width: 60%;
+    margin: 0px auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form_model a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #1874CD;
+}
+ .formTabActive {
+    text-decoration: none;
+    color: #ffffff!important;
+    background-color: #1874CD!important;
+}
+.tabPanel {
+    width: 49.7%;
+    height: 60px;
+    display: inline-block;
+    text-align: center;
+    background-color: #6495ED;
+
+}
+
+.tabTitle {
+    line-height: 60px;
+    font-size: 2.0em;
+    color: white;
+}
+
+.panelModel {
+    width: 60%;
+    margin: 0 auto;
+}
+.panelModel #registerForm,#loginForm{
+    width: 100%;
+    margin:0;
+    padding: 0;
+    background-color: #ffffff;
+}
+.registerForm{
+    padding: 20px;
+}
+.registerForm .uk-form-label{
+    letter-spacing: 8px;
+}
+.footer-style{
+    text-align: center;
+    padding:45px 0;
+    letter-spacing: 16px;
+}
+.footer-style h1{
+    font-size: 3.5em;
+}
+.loginbtn input{
+    color: #ffffff!important;
+    font-size: 16px!important;
+}
+#registerForm label,#loginFormModel label{
+    width: 260px;
+    font-size: 16px;
+    letter-spacing: 5px;
+}

@@ -1,0 +1,75 @@
+#nav-bar {}
+#nav { float:right;}
+
+/************** ALL LEVELS  *************/
+#nav li { position:relative; text-align:left; }
+#nav li.over { z-index:99; }
+#nav li.active { z-index:100; }
+#nav a,
+#nav a:hover { display:block; text-decoration:none; }
+#nav span { display:block; }
+#nav a { line-height:1.3em; }
+
+
+/************ 1ST LEVEL  ***************/
+#nav li {  }
+#nav li.active { }
+#nav li.active em {  }
+#nav a {}
+#nav li.over a { }
+
+
+/************ 1ST LEVEL RESET ************/
+#nav ul li,
+#nav ul li.active { list-style-image:none;list-style-position:outside;list-style-type:none;margin:0;padding:0; float:none; height:auto; background:none; margin:0; }
+#nav ul a,
+#nav ul a:hover { float:none; padding:0; line-height:1.3em; }
+#nav ul li.over a,
+#nav ul li.over a:hover,
+#nav ul a,
+#nav li.active li { font-weight:normal; }
+
+
+/************ 2ND LEVEL ************/
+#nav ul { list-style-image:none;list-style-position:outside;list-style-type:none;margin:0;padding:0 0 3px 0; position:absolute; width:189px; top:27px; left:-10000px;  }
+#nav ul ul  { list-style-image:none;list-style-position:outside;list-style-type:none;margin:0;padding:2px 0 0 0; border-top:0; left:100px; top:13px; }
+
+/* Show menu */
+#nav li.over ul { left:-1px; }
+#nav li.over ul ul { left:-10000px; }
+#nav li.over ul li.over ul { left:100px; }
+
+#nav ul li { padding:0 2px; }
+#nav ul li a { }
+#nav ul li a:hover { }
+#nav li.over ul a,
+#nav ul li.active a,
+#nav ul li a,
+#nav ul li a:hover {  }
+#nav ul span,
+#nav ul li.last li span { padding:5px 15px; }
+#nav ul li.last span,
+#nav ul li.last li.last span { background:none; }
+#nav ul li.last { padding-bottom:3px; }
+
+#nav ul li.parent a,
+#nav ul li.parent li.parent a { }
+#nav ul li.parent li a,
+#nav ul li.parent li.parent li a {  }
+
+/************ 3RD+ LEVEL ************/
+/* Cursors */
+#nav li.parent a,
+#nav li.parent li.parent a,
+#nav li.parent li.parent li.parent a { cursor:default; }
+
+#nav li.parent li a,
+#nav li.parent li.parent li a,
+#nav li.parent li.parent li.parent li a { cursor:pointer; }
+
+/* Show menu */
+#nav ul ul ul { }
+#nav li.over ul li.over ul ul { left:-10000px;}
+#nav li.over ul li.over ul li.over ul { left:100px; }
+
+#nav-bar:after, #nav-container:after {}

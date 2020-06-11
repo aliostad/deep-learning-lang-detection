@@ -1,0 +1,27 @@
+#!/bin/sh
+#
+
+. ./content
+. ./functions
+
+###########################################
+echo creating frameworks...
+process $FRMWKS || exit 1
+###########################################
+echo creating applications...
+process $APPLS || exit 1
+###########################################
+echo creating drivers...
+process $DRIVERS || exit 1
+###########################################
+echo creating java native libraries...
+process $JAVA || exit 1
+
+###########################################
+echo creating symbolic links...
+cd $DIST/usr/lib
+makelinks so *.?.?.?.so
+cd java
+makelinks jnilib *.?.?.?.jnilib
+
+exit 0

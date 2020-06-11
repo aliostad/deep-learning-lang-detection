@@ -1,0 +1,106 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+#load {
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 9501;
+	background-color: wheat;
+}
+
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.pace .pace-activity {
+    position: fixed;
+    display: block;
+    z-index: 2000;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    width: 50px;
+    height: 50px;
+    background: #76c276;
+    pointer-events: none;
+    border-radius: 100%;
+}
+#load .pace .pace-activity {
+    margin: -65px 0 0 -65px;
+    width: 130px;
+    height: 130px;
+    background: none;
+}
+.pace .pace-activity:before,
+.pace .pace-activity:after {
+    position: absolute;
+    bottom: 9px;
+    left: 9px;
+    display: block;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    content: '';
+}
+#load .pace .pace-activity:before,
+#load .pace .pace-activity:after {
+    border-width: 7px;
+}
+
+.pace .pace-activity:before {
+    width: 32px;
+    height: 32px;
+    border-right-color: rgba(0, 0, 0, 0) !important;
+    border-left-color: rgba(0, 0, 0, 0) !important;
+    -webkit-animation: pace-rotation 3s linear infinite;
+    animation: pace-rotation 3s linear infinite;
+}
+#load .pace .pace-activity:before,
+#load .pace .pace-activity:after {
+    border-color: rgba(255, 255, 255, 0.94);
+}
+
+#load .pace .pace-activity:before {
+    bottom: 0;
+    left: 0;
+    width: 130px;
+    height: 130px;
+}
+.pace .pace-activity:after {
+    bottom: 17px;
+    left: 17px;
+    width: 16px;
+    height: 16px;
+    border-top-color: rgba(0, 0, 0, 0) !important;
+    border-bottom-color: rgba(0, 0, 0, 0) !important;
+    -webkit-animation: pace-rotation 1s linear infinite;
+    animation: pace-rotation 1s linear infinite;
+}
+#load .pace .pace-activity:after {
+    bottom: 33px;
+    left: 33px;
+    width: 66px;
+    height: 66px;
+}
+@-webkit-keyframes pace-rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+    }
+}
+@keyframes pace-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}

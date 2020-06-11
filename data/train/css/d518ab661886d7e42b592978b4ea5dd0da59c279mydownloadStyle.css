@@ -1,0 +1,37 @@
+@CHARSET "UTF-8";
+
+.myDownLoadPanel {
+}
+
+.myDownLoadPanel>div {
+  -webkit-animation: jiggle 0.2s infinite;
+}
+
+.myDownLoadPanel>div:AFTER {
+  background-color: #222;
+  border: 2px solid #fff;
+  -webkit-border-radius: 17px;
+  box-shadow: 0 0 3px #333;
+  content: "x";
+  color: #fff;
+  display: inline-block;
+  font-size: 19px;
+  position: absolute;
+  left: -10%;
+  top: -8px;
+  width: 17px;
+  height: 17px;
+  line-height: 13px;
+  text-align: center;
+}
+
+/*
+@-webkit-keyframes jiggle { 
+0% {
+  -webkit-transform: rotate(-1deg);
+}
+50% {
+  -webkit-transform: rotate (1deg);
+}
+}
+*/

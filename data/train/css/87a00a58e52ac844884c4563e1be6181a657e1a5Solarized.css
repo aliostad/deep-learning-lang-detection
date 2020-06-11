@@ -1,0 +1,44 @@
+html {
+  font-family: Menlo;
+  font-size: 10pt;
+  background-color: #042029;
+  color: #2aa198;
+}
+body {}
+
+.url { color: #eee8d5; }
+.address {}
+.highlight {
+  font-size: 160%;
+  font-weight: normal;
+  padding: 0 3px;
+  color: #e28964;
+}
+
+.line {}
+.line[alternate=even] {}
+.line[alternate=odd] {}
+.line[highlight=true] {}
+
+.time { color: #85b8b4; }
+.place { color: #85b8b4; }
+
+.sender[type=normal] { color: #278bd2; }
+.sender[type=myself] { color: #5a74cf; }
+
+.message[type=privmsg] {}
+.message[type=notice] { color: #888; }
+.message[type=action] { color: #cb4b16;}
+
+.message[type=system], .message[type=join], .message[type=part], .message[type=kick],
+.message[type=quit], .message[type=kill], .message[type=nick], .message[type=mode],
+.message[type=topic], .message[type=invite], .message[type=wallops] {
+  color: #586e75;
+}
+.message[type=reply] { color: #cb4b16; }
+
+.message[type=error], .message[type=error_reply] { color: #cb4b16; }
+.message[type=dcc_send_send] { color: #c5af75; }
+.message[type=dcc_send_receive] { color: #f9ee98; }
+.message[type=debug_send] { color: #8996a8; }
+.message[type=debug_receive] { color: #afc4db; }

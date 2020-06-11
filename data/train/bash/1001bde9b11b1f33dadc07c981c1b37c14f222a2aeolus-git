@@ -1,0 +1,132 @@
+#!/bin/bash
+APPLY_PATCH=true
+COMMIT_MSG=true
+POST_COMMIT=true
+POST_RECEIVE=true
+POST_UPDATE=true
+PRE_APPLY_PATCH=true
+PRE_COMMIT=true
+PREPARE_COMMIT_MSG=true
+PRE_REBASE=true
+UPDATE=true
+
+AEOLUS_CLI_REPO="git@github.com:aeolusproject/aeolus-cli.git"
+AEOLUS_IMAGE_RUBYGEM_REPO="git@github.com:aeolusproject/aeolus-image-rubygem.git"
+AUDREY_REPO="git@github.com:aeolusproject/audrey.git"
+CONDUCTOR_REPO="git@github.com:aeolusproject/conductor.git"
+CONFIGURE_REPO="git@github.com:aeolusproject/aeolus-configure.git"
+IMAGEFACTORY_REPO="git@github.com:aeolusproject/imagefactory.git"
+IMAGEWAREHOUSE_REPO="git://git.fedorahosted.org/iwhd.git"
+OZ_REPO="git://github.com/clalancette/oz.git"
+SPHERICAL_REPO="git@github.com:aeolusproject/spherical.git"
+WEBSITE_REPO="git@github.com:aeolusproject/aeolus-website.git"
+
+AEOLUS_CLI="aeolus-cli"
+AEOLUS_IMAGE_RUBYGEM="aeolus-image-rubygem"
+AUDREY="audrey"
+CONDUCTOR="conductor"
+CONFIGURE="aeolus-configure"
+IMAGEFACTORY="imagefactory"
+IMAGEWAREHOUSE="iwhd"
+OZ="oz"
+SPHERICAL="spherical"
+WEBSITE="aeolus-website"
+
+HOOKS=( $APPLY_PATCH $COMMIT_MSG $POST_COMMIT $POST_RECEIVE $POST_UPDATE $PRE_APPLY_PATCH $PRE_COMMIT $PREPARE_COMMIT_MSG $PRE_REBASE $UPDATE )
+HOOK_FILES=( "applypatch-msg" "commit-msg" "post-commit" "post-receive" "post-update"  "pre-applypatch" "pre-commit" "prepare-commit-msg" "pre-rebase" "update" )
+
+usage()
+{
+echo "====================== Aeolus Git Repo Usage ======================"
+echo "No Args*                      : retreive all repos"
+echo "-i|--aeolus-cli               : retreive aeolus-cli repo"
+echo "-r|--aeols-image-rubygem      : retreive aeolus-image-rubygem repo"
+echo "-a|--audrey                   : retreive audrey repo"
+echo "-c|--conductor                : retreive conductor repo"
+echo "-g|--configure                : retreive configure repo"
+echo "-f|--imagefactory             : retreive imagefactory repo"
+echo "-w|--imagewarehouse           : retreive imagewarehouse repo"
+echo "-o|--oz                       : retreive aeolus-oz repo"
+echo "-s|--spherical                : retreive spherical repo"
+echo "-t|--website                  : retreive website repo"
+echo  "-h|--help                    : print this message"
+exit $1
+}
+
+if [ $# -eq 0 ]; then
+  REPOS=( $AEOLUS_CLI $AEOLUS_IMAGE_RUBYGEM $AUDREY $CONDUCTOR $CONFIGURE $IMAGEFACTORY $IMAGEWAREHOUSE $OZ $SPHERICAL $WEBSITE )
+  REPO_URLS=( $AEOLUS_CLI_REPO $AEOLUS_IMAGE_RUBYGEM_REPO $AUDREY_REPO $CONDUCTOR_REPO $CONFIGURE_REPO $IMAGEFACTORY_REPO $IMAGEWAREHOUSE_REPO $OZ_REPO $SPHERICAL_REPO $WEBSITE_REPO )
+fi
+
+if ! options=$(getopt -o iracgfwosth -l aeolus-cli,aeolus-image-rubygem,audrey,conductor,configure,imagefactory,imagewarehouse,oz,spherical,website,help -- "$@")
+then
+  echo "Invalid Options Given"
+  exit 1
+fi
+
+AEOLUS_CLI="aeolus-cli"
+AEOLUS_IMAGE_RUBYGEM="aeolus-image-rubygem"
+AUDREY="audrey"
+CONDUCTOR="conductor"
+CONFIGURE="configure"
+IMAGEFACTORY="imagefactory"
+IMAGEWAREHOUSE="imagewarehouse"
+OZ="oz"
+SPHERICAL="spherical"
+WEBSITE="website"
+
+set -- $options
+while [ $# -gt 0 ]
+do
+  case $1 in
+  -i|--aeolus-cli) REPOS[${#REPOS[*]}]=$AEOLUS_CLI; REPO_URLS[${#REPO_URLS[*]}]=$AEOLUS_CLI_REPO;;
+  -r|--aeolus-image-rubygem) REPOS[${#REPOS[*]}]=$AEOLUS_IMAGE_RUBYGEM; REPO_URLS[${#REPO_URLS[*]}]=$AEOLUS_IMAGE_RUBYGEM_REPO;;
+  -a|--audrey) REPOS[${#REPOS[*]}]=$AUDREY; REPO_URLS[${#REPO_URLS[*]}]=$AUDREY_REPO;;
+  -c|--conductor) REPOS[${#REPOS[*]}]=$CONDUCTOR; REPO_URLS[${#REPO_URLS[*]}]=$CONDUCTOR_REPO;;
+  -g|--configure) REPOS[${#REPOS[*]}]=$CONFIGURE; REPO_URLS[${#REPO_URLS[*]}]=$CONFIGURE_REPO;;
+  -f|--imagefactory) REPOS[${#REPOS[*]}]=$IMAGEFACTORY; REPO_URLS[${#REPO_URLS[*]}]=$IMAGEFACTORY_REPO;;
+  -w|--imagewarehouse) REPOS[${#REPOS[*]}]=$IMAGEWAREHOUSE; REPO_URLS[${#REPO_URLS[*]}]=$IMAGEWAREHOUSE_REPO;;
+  -o|--oz) REPOS[${#REPOS[*]}]=$OZ; REPO_URLS[${#REPO_URLS[*]}]=$OZ_REPO;;
+  -s|--spherical) REPOS[${#REPOS[*]}]=$SPHERICAL; REPO_URLS[${#REPO_URLS[*]}]=$SPHERICAL_REPO;;
+  -t|--website) REPOS[${#REPOS[*]}]=$WEBSITE; REPO_URLS[${#REPO_URLS[*]}]=$WEBSITE_REPO;;
+  -h|--help) usage ;;
+  (--) shift; break;;
+  (-*) echo "$0: error - unrecognized option $1" 1>&2; exit 1;;
+  (*) break;;
+  esac
+  shift
+done
+
+WORKING_DIR=`pwd`
+for (( i=0; i<${#REPOS[*]}; i++ )); do
+
+  REPO=${REPOS[$i]}
+  REPO_URL=${REPO_URLS[$i]}
+  
+  if [ -d "$REPO" ]; then
+    echo "== ERROR: Can not clone $REPO: Directory $REPO already exists =="
+  else
+    echo "Cloning Repository: " $REPO
+
+    git clone $REPO_URL
+    cd $REPO
+
+    # Activate each that is set to true
+    HOOKS_DIR=.git/hooks
+
+    for (( h=0; h<${#HOOKS[*]}; h++ )); do
+      if [ ${HOOKS[$h]} == true ]; then
+        mv $HOOKS_DIR/${HOOK_FILES[$h]}.sample $HOOKS_DIR/${HOOK_FILES[$h]}
+      fi
+    done
+
+
+    cd $WORKING_DIR
+    BASEDIR=$(dirname $0)
+    cp $BASEDIR/$REPO/gitconfig $REPO/.git/config
+
+    echo "$REPO Cloned Successfully"
+  fi
+done
+
+exit 0

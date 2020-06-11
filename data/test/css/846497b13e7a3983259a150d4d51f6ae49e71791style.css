@@ -1,0 +1,83 @@
+body.deck-container {
+    background: transparent url('bg_bottom.jpg') repeat-x left bottom;
+    font-size: 1.2em;
+}
+
+section.slide {
+    background: transparent url('bg_top.jpg') repeat-x left top;
+}
+
+.deck-container ul li {
+    margin-bottom: .5em;
+}
+
+#logo {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+}
+
+#title h1, #title h2, #thanks h1, #thanks h2 {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+#title h1 {
+    top: 30%;
+}
+
+#title h2 {
+    left: 0;
+    top: 45%;
+}
+
+#thanks h2 {
+    left: 0;
+    top: 55%;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+}
+
+footer p {
+    color: #666;
+    text-align: center;
+}
+
+#who_am_i,
+#overview,
+#http_api_documents,
+#http_api_index,
+#http_api_search_get,
+#http_api_search_post,
+#http_api_delete,
+#http_api_delete_by_query,
+#mapping,
+#index_configuration,
+#distributed,
+#geo_search,
+#aliases_with_filtering,
+#interfaces_and_clients,
+#rivers,
+#percolation,
+#percolation2,
+#analyzers,
+#filters,
+#facets
+{
+    padding: 60px 175px 0 175px;
+}
+
+.deck-container section pre {
+    font-size: .8em;
+}
+
+.slide h3 { margin-bottom: 30px; }

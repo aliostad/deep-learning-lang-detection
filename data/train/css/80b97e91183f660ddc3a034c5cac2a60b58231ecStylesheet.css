@@ -1,0 +1,49 @@
+.UIForumPortlet .UIPrintView {
+	font-size: 12px;
+}
+
+.UIForumPortlet .UIPrintView .PrintViewContainer {
+	border: 1px solid #b3b3b3;
+	margin: 10px 10px 0px 10px;
+	padding: 0px 10px 10px 10px;
+}
+
+.UIForumPortlet .UIPrintView .PrintViewContainer .TitlePrintView {
+	border-bottom: 1px solid #c1c1c1;
+	line-height: 30px;
+}
+
+.UIForumPortlet .UIPrintView .TitlePrintView .UserName {
+	float: left;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.UIForumPortlet .UIPrintView .TitlePrintView .PostTime {
+	float: right;
+}
+
+.UIForumPortlet .UIPrintView .PrintViewContainer .PostViewTitle {
+	font-weight: bold;
+	line-height: 40px;
+}
+
+.UIForumPortlet .UIPrintView .PrintViewContainer .PostContent a {
+	color: black;
+}
+
+.UIForumPortlet .UIPrintView .PrintViewContainer .QuoteContent {
+	padding: 0px 30px;
+}
+
+.UIForumPortlet .UIPrintView .PrintViewContainer .Quote {
+	border-top: 1px solid #c1c1c1;
+	border-bottom: 1px solid #c1c1c1;
+	padding: 10px 0px;
+	margin: 5px 0px 10px 0px;
+}
+
+.UIForumPortlet .UIPrintView .PrintTime {
+	line-height: 30px;
+	margin: 0px 10px;
+}

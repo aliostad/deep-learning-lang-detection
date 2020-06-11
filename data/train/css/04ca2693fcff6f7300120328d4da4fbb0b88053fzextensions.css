@@ -1,0 +1,137 @@
+/* Auto-Generated via TYPO3\CMS\Backend\Sprite\SimpleSpriteHandler */
+
+.t3-icon-extensionmanager-update-script {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3/sysext/extensionmanager/Resources/Public/Images/Icons/ExtensionUpdateScript.png') !important;
+}
+	
+.t3-icon-workspaces-sendtonextstage {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3/sysext/workspaces/Resources/Public/Images/version-workspace-sendtonextstage.png') !important;
+}
+	
+.t3-icon-workspaces-sendtoprevstage {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3/sysext/workspaces/Resources/Public/Images/version-workspace-sendtoprevstage.png') !important;
+}
+	
+.t3-icon-workspaces-generatepreviewlink {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3/sysext/workspaces/Resources/Public/Images/generate-ws-preview-link.png') !important;
+}
+	
+.t3-icon-scheduler-run-task {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3/sysext/scheduler/Resources/Public/Images/Icons/RunTask.png') !important;
+}
+	
+.t3-icon-pages-contains-news {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/news/Resources/Public/Icons/folder.gif') !important;
+}
+	
+.t3-icon-sys_file_storage-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3/sysext/t3skin/icons/gfx/i/_icon_ftp.gif') !important;
+}
+	
+.t3-icon-sys_filemounts-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3/sysext/t3skin/icons/gfx/i/_icon_ftp_2.gif') !important;
+}
+	
+.t3-icon-backend_layout-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3/sysext/t3skin/icons/gfx/i/backend_layout.gif') !important;
+}
+	
+.t3-icon-sys_note-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3/sysext/sys_note/ext_icon.gif') !important;
+}
+	
+.t3-icon-tx_rtehtmlarea_acronym-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3/sysext/rtehtmlarea/extensions/Acronym/skin/images/acronym.gif') !important;
+}
+	
+.t3-icon-index_config-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3/sysext/t3skin/icons/gfx/i/default.gif') !important;
+}
+	
+.t3-icon-tx_news_domain_model_news-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/news/Resources/Public/Icons/news_domain_model_news.gif') !important;
+}
+	
+.t3-icon-tx_news_domain_model_news-1 {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/news/Resources/Public/Icons/news_domain_model_news_internal.gif') !important;
+}
+	
+.t3-icon-tx_news_domain_model_news-2 {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/news/Resources/Public/Icons/news_domain_model_news_external.gif') !important;
+}
+	
+.t3-icon-tx_news_domain_model_category-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/news/Resources/Public/Icons/news_domain_model_category.gif') !important;
+}
+	
+.t3-icon-tx_news_domain_model_media-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/news/Resources/Public/Icons/news_domain_model_media.gif') !important;
+}
+	
+.t3-icon-tx_news_domain_model_file-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/news/Resources/Public/Icons/news_domain_model_file.gif') !important;
+}
+	
+.t3-icon-tx_news_domain_model_link-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/news/Resources/Public/Icons/news_domain_model_link.gif') !important;
+}
+	
+.t3-icon-tx_news_domain_model_tag-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/news/Resources/Public/Icons/news_domain_model_tag.png') !important;
+}
+	
+.t3-icon-tx_wtspamshield_log-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/wt_spamshield/icon_tx_wtspamshield_log.gif') !important;
+}
+	
+.t3-icon-tx_wtspamshield_blacklist-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/wt_spamshield/icon_tx_wtspamshield_log.gif') !important;
+}
+	
+.t3-icon-tx_blogexample_domain_model_blog-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/blog_example/Resources/Public/Icons/icon_tx_blogexample_domain_model_blog.gif') !important;
+}
+	
+.t3-icon-tx_blogexample_domain_model_post-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/blog_example/Resources/Public/Icons/icon_tx_blogexample_domain_model_post.gif') !important;
+}
+	
+.t3-icon-tx_blogexample_domain_model_comment-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/blog_example/Resources/Public/Icons/icon_tx_blogexample_domain_model_comment.gif') !important;
+}
+	
+.t3-icon-tx_blogexample_domain_model_person-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/blog_example/Resources/Public/Icons/icon_tx_blogexample_domain_model_person.gif') !important;
+}
+	
+.t3-icon-tx_blogexample_domain_model_tag-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/blog_example/Resources/Public/Icons/icon_tx_blogexample_domain_model_tag.gif') !important;
+}
+	

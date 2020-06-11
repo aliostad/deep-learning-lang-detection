@@ -1,0 +1,55 @@
+
+}
+#map {
+    display: none;
+}
+#map .state {
+    cursor: pointer;
+}
+#map .state .shape {
+    cursor: pointer;
+    stroke-width: 0;
+}
+#map .state .label_icon_state {
+    fill: #fff;
+    font-family: Arial;
+    font-size: 11px;
+    line-height: 12px;
+    font-weight: normal;
+}
+#map .state .label_state {
+    display: none;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+}
+#map .state:hover .label_state, #map .state.hover .label_state {
+    display: block;
+}
+#map .model-green .state .shape {
+    fill: #6cb361;
+}
+#map .model-green .state .icon_state {
+    fill: #10592f;
+}
+#map .model-green .state .label_icon_state {
+    fill: #fff;
+}
+#map .model-green .state .label_state {
+    fill: #666;
+}
+#map .model-green .state:hover .shape, #map .model-green .state.hover .shape {
+    fill: #F58002;
+}
+#map .model-green .state:hover .icon_state, #map .model-green .state.hover .icon_state {
+    fill: #F58002;
+}
+#index_pg.default #ct .map_section {
+    display: block;
+    float: left;
+    width: 495px;
+    height: 465px;
+    padding-top: 5px;
+    position: relative;
+}

@@ -1,0 +1,41 @@
+.nflxBtn {height:18px; width:65px; overflow:hidden;}
+.nflxBtn a {text-decoration:none; display:block; height:36px;}
+.nflxBtn a img {border:0;}
+.nflxBtn a:hover {margin-top:-18px;}
+.apiSmallBox .nflxAddBtn {position:absolute; left:70px; top:6px; }
+.apiLargeBox .nflxPlayBtn {position:absolute; left:80px; top:6px;}
+.apiTallBox .nflxAddBtn {position:absolute; left:70px; top:6px; }
+.apiTallBox .nflxPlayBtn {position:absolute; left:80px; top:6px;}
+
+.apiLargeBox .nflxPlayBtnHybrid {position:relative; left:66px; top:6px; width:47px; float:left;}
+.apiLargeBox .nflxAddBtnHybrid {position:relative; right:3px; top:6px; width:47px; float:right;}
+
+.apiLargeNoBox .nflxPlayBtnHybrid {position:relative; width:47px; float:left;}
+.apiLargeNoBox .nflxAddBtnHybrid {position:relative; right:69px; width:47px; float:right;}
+.playbuttoni {border:0px;}
+.playbutton :{border:0px;}
+.addbutton {border:0px;}
+
+.nflxPlayBtnHybridInLine {position:relative; left:0px; top:0px; width:47px; float:left;}
+.nflxAddBtnHybridInLine {position:relative; right:1px; top:0px; width:47px; float:right; }
+
+.nflxPlayBtnInLine {position:relative; left:0px; top:0px; width:195px;}
+
+
+.apiTallBox .nflxAddBtnTallBox {position:relative; left:4px; top:40px; width:65px;}
+.apiTallBox .nflxPlayBtnTallBox {position:relative; left:4px; top:40px; width:65px;}
+
+
+.apiSmallBox {position:relative; width:143px; height:30px; background-image:url(http://cdn.nflximg.com/us/api/images/buttons/api_sm_box.gif); background-repeat:no-repeat;}
+.apiLargeBox {position:relative; width:163px; height:40px; background-image:url(http://cdn.nflximg.com/us/api/images/buttons/api_lg_box.gif); background-repeat:no-repeat;}
+.apiTallBox {position:relative; width:73px; height:79px; background-image:url(http://cdn.nflximg.com/us/api/images/buttons/api_tall_box.gif); background-repeat:no-repeat;}
+.apiSmallNoBox {position:relative; width:143px; height:30px;}
+.apiLargeNoBox {position:relative; width:163px; height:40px;}
+.apiTallNoBox {position:relative; width:73px; height:79px;}
+
+#INSTANT_DRAWER {height:38px; width:98px;}
+#NFLX_IFRAME {border:none;}
+#NFLX_CLOSE_IFRAME a{color:white; text-indent:50px;}
+#NFLX_CLOSE_IFRAME {position:absolute; display:none; width:60px; height:20px; cursor:pointer; cursor:hand; text-indent:100px; overflow:hidden; z-index:8675309; }
+#NFLX_IFRAME_LAYER_SHADOW {position:absolute; display:none; background-repeat:no-repeat; z-index:8675309;}
+#NFLX_IFRAME_LAYER {position:absolute; display:none; z-index:8675309;}

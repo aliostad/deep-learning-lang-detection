@@ -1,0 +1,209 @@
+html, body {
+  font-family: monospace;
+}
+
+.hidden {
+  display: none;
+}
+
+#container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  vertical-align: top;
+}
+
+header {
+  padding: 20px 0;
+  width: 100%;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 120%;
+}
+
+.col {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#menu {
+  width: 200px;
+  margin-right: 20px;
+}
+
+#menu ul {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+#menu ul li {
+  padding: 5px;
+}
+
+#menu ul li:hover {
+  background: #FFEB8A;
+  cursor: pointer;
+}
+
+#menu ul li.heading {
+  padding: 5px 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+
+#menu ul li.menu-selected {
+  background: #FDFFA1;
+}
+
+#menu ul li.menu-selected:hover {
+  background: #FFEB8A;
+}
+
+#main {
+  width: 100%;
+  max-width: 570px;
+}
+
+#info {
+  width: 100%;
+  position: relative;
+  padding: 5px 0;
+  border-bottom: 1px solid black;
+}
+
+.load {
+  margin-top: 60px;
+  width: 100%;
+  text-align: center;
+}
+
+.load a {
+  padding: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.load a:hover {
+  background: #FDFFA1;
+}
+
+.loading {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.group-header {
+  padding: 6px 3px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.group-header:hover {
+  background: #F2F2F2;
+}
+
+.track-item {
+  min-height: 75px;
+  padding: 3px;
+  clear: both;
+}
+
+.track-item:hover {
+  background: #FEFFDE;
+  cursor: pointer;
+}
+
+.track-artwork {
+  float: left;
+  width: 75px;
+  height: 75px;
+}
+
+.track-artwork img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.track-info {
+  margin-left: 170px;
+}
+
+.track-metrics {
+  display: table;
+  float: left;
+  width: 75px;
+  height: 75px;
+  margin-left: 10px;
+}
+
+.track-metrics-inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.track-metrics .metric {
+  font-weight: bold;
+}
+
+.track-metrics .description {
+  font-size: 80%;
+}
+
+.track-title {
+  font-weight: bold;
+  font-size: 120%;
+}
+
+.track-username {
+  margin-bottom: 10px;
+}
+
+#load-more-area {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#load-more-area * {
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 0px;
+  user-select: none;
+}
+
+#load-more-area .load-more:hover {
+  cursor: pointer;
+  background: #FDFFA1;
+}
+
+footer {
+  position: fixed;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.down-arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 5px 0 5px;
+  border-color: #000000 transparent transparent transparent;
+}
+
+.right-arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 10px;
+  border-color: transparent transparent transparent #000000;
+}

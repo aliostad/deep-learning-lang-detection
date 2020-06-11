@@ -1,0 +1,21 @@
+-- ++ -
+-- Sets any or all default values consulted when a new Domain is created.
+-- 
+-- new_domain_is_default_subsys_name:  If true, and you create domain named 'App', its default
+-- initial subsystem will also be named 'App'.  Otherwise, the new_default_subsys_name is used.
+-- 
+-- new_default_id_name: Name of default local identifier attribute created for each new class.
+-- If it is 'Number', for example, each new Class will automatically be created with an
+-- initial Number identifier attribute.
+-- 
+-- new_default_subsys_name:  Default name of a new Domain's initial subsystem such as 'Main'.
+-- Not consulted if new_domain_is_default_subsys_name is true.
+-- 
+-- new_default_subsys_range:  The initial numbering range of a new Domain's default first
+-- subsystem.  100 is typical.
+-- 
+-- new_default_id_type:  The type of the identifier attribute automatically created for a
+-- new class.  Consulted in conjunction with new_default_id_name.  If that value is Number,
+-- then Nominal might be a good choice.  On the other hand if the new_default_id_name is
+-- Name then the eponymous type Name could be appropriate.
+-- ==

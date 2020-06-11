@@ -1,0 +1,21 @@
+/* line 4, ../../sass/theme/ViewSelector.scss */
+.siopViewSelector {
+  padding: 10px; }
+  /* line 7, ../../sass/theme/ViewSelector.scss */
+  .siopViewSelector > .siopViewSelectorDropDown {
+    background-color: #656d78;
+    color: #f5f7fa;
+    display: block;
+    padding: 6px 10px 6px 10px; }
+    /* line 13, ../../sass/theme/ViewSelector.scss */
+    .siopViewSelector > .siopViewSelectorDropDown img {
+      float: right;
+      margin-top: 2px; }
+  /* line 19, ../../sass/theme/ViewSelector.scss */
+  .siopViewSelector > .siopViewSelectorMenu {
+    background-color: #656d78;
+    display: none;
+    position: absolute; }
+  /* line 25, ../../sass/theme/ViewSelector.scss */
+  .siopViewSelector.siopViewSelector-opened > .siopViewSelectorMenu {
+    display: block; }

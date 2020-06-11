@@ -1,0 +1,99 @@
+#page {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
+#content {
+  margin-top: 20px;
+  padding: 0;
+}
+.nav {
+  min-width: 100%;
+  margin-bottom: 20px;
+}
+.nav_item {
+  margin: 10px !important;
+}
+.slider,
+#welcome-slideshow {
+  width: 100%;
+  height: 300px;
+}
+.slider li,
+#welcome-slideshow li {
+  width: 100%;
+  height: 300px;
+}
+.model-list {
+  margin-top: 20;
+}
+.model-list__item {
+  height: 200px !important;
+  width: 100%;
+  margin: 20px 0 20px;
+}
+.model-list__item__image {
+  height: 200px !important;
+  width: 100%;
+}
+.model__video {
+  width: 100%;
+  height: 374px;
+}
+.model__video iframe {
+  height: 374px;
+  width: 100%;
+  margin-bottom: 0;
+}
+.left,
+.right {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+.small-nav {
+  margin-top: 20px;
+}
+#preview {
+  height: 232px;
+}
+#media-icons {
+  top: 42px;
+  right: 65px;
+}
+#langs {
+  right: 30px;
+  top: 42px;
+}
+.model__images {
+  margin: 10px auto;
+  width: 540px;
+}
+.model__image {
+  height: 150px;
+  width: 150px;
+}
+.luthier {
+  display: none;
+}
+.about-text {
+  float: none;
+  width: auto;
+  padding: 0;
+}
+.input_100 {
+  width: 90%;
+}
+input {
+  display: block;
+}
+.more-instruments {
+  display: none;
+}
+.more-instruments-link {
+  display: block;
+}
+.small-nav {
+  margin-top: 50px;
+}

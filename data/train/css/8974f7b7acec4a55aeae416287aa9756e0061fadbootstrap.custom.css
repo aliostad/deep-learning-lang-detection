@@ -1,0 +1,26 @@
+body {
+	background: url(../images/bg3.png);
+}
+
+.navbar-inverse {
+	background: url(../images/bg2.png) repeat;
+	border-color: black;
+}
+
+#preview-panel > div {
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.nav-tabs.nav-justified {
+	margin-bottom: 10px;
+}
+
+.nav-tabs.nav-justified>li>a, .nav-tabs.nav-justified>li>a:hover, .nav-tabs.nav-justified>li>a:focus {
+	background: #081870;
+	color: white;
+}
+
+.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:hover, .nav-tabs.nav-justified>.active>a:focus {
+	background: url(../images/bg4.png) repeat;
+}

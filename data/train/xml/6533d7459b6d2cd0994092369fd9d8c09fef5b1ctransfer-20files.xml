@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCopyActivity xmlns="http://schemas.dmi.proposal.org/dts/2010/dmi-common"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+    <DataCopyActivityRequirements>
+        <MaxAttempts>1</MaxAttempts>
+    </DataCopyActivityRequirements>
+    <Copy>
+        <Source>
+            <Data>
+                <DataUrl>file://@home.dir.replacement@/testfiles/dir-with-mixedfiles</DataUrl>
+            </Data>
+        </Source>
+        <Sink>
+            <Data>
+                <DataUrl>tmp://</DataUrl>
+            </Data>
+        </Sink>
+        <CopyRequirements>
+            <CreationFlag>overwrite</CreationFlag>
+        </CopyRequirements>
+    </Copy>
+
+    <Copy>
+        <Source>
+            <Data>
+                <DataUrl>file://@home.dir.replacement@/testfiles/dir-with-9files</DataUrl>
+            </Data>
+        </Source>
+        <Sink>
+            <Data>
+                <DataUrl>tmp://</DataUrl>
+            </Data>
+        </Sink>
+        <CopyRequirements>
+            <CreationFlag>overwrite</CreationFlag>
+        </CopyRequirements>
+    </Copy>
+
+</DataCopyActivity>

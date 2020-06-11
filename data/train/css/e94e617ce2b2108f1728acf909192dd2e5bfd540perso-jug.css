@@ -1,0 +1,10 @@
+/* CSS crunched with Crunch - http://crunchapp.net/ */
+#avatar{vertical-align:middle;}
+.reveal section img{border:none;}
+em{color:#490a3d;font-style:italic;}
+code.lien-jug{text-align:center;font-size:1.5em;}
+#mvc-model{height:600px;}#mvc-model h2{color:#490a3d;position:absolute;z-index:4;}#mvc-model h2#html-mvc{width:188px;height:64px;left:140px;top:100px;}
+#mvc-model h2#css-mvc{width:116px;height:64px;left:362px;top:408px;}
+#mvc-model h2#javascript-mvc{width:296px;height:64px;left:457px;top:100px;}
+table.tableau-exemple{border:black dashed 1px;border-collapse:collapse;}table.tableau-exemple th,table.tableau-exemple td{border:black dashed 1px;vertical-align:middle;padding:0 1em;font-size:0.8em;}
+table.tableau-exemple th{background-color:#cccccc;}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- 
+			Mapping files 
+			These need to be here or the HSQLDB unit tests do not work.
+		-->
+		<mapping resource="mapping/CaseRecord.hbm.xml" />
+		<mapping resource="mapping/CaseRecordHistory.hbm.xml" />
+		<mapping resource="mapping/Court.hbm.xml" />
+		<mapping resource="mapping/CourtEvents.hbm.xml" /> 
+		<mapping resource="mapping/CourtHearingNegotiations.hbm.xml" />
+		<mapping resource="mapping/Documents.hbm.xml" />
+		<mapping resource="mapping/FilingAudit.hbm.xml" />
+		<mapping resource="mapping/FilingSearch.hbm.xml" />
+		<mapping resource="mapping/LocalCourtRules.hbm.xml" />
+		<mapping resource="mapping/LocalCourtRulesGroup.hbm.xml" />
+		<mapping resource="mapping/Notifications.hbm.xml" />
+		<mapping resource="mapping/Organizations.hbm.xml" />
+		<mapping resource="mapping/ParticipantRelationship.hbm.xml"/>
+		<mapping resource="mapping/OrgParticipants.hbm.xml" />
+		<mapping resource="mapping/Person.hbm.xml" />
+		<mapping resource="mapping/PersonParticipants.hbm.xml" />
+		<mapping resource="mapping/PublicNotifications.hbm.xml" />
+		<mapping resource="mapping/Roles.hbm.xml" />
+		<mapping resource="mapping/Profile.hbm.xml" />
+		<mapping resource="mapping/PersonAddress.hbm.xml" />	
+		<mapping resource="mapping/OrganizationAddress.hbm.xml" />		
+		<mapping resource="mapping/Attorney.hbm.xml" />
+		<mapping resource="mapping/Sheriff.hbm.xml" />		
+		<mapping resource="mapping/Judge.hbm.xml" />		
+		<mapping resource="mapping/AddressType.hbm.xml"/>		
+		<mapping resource="mapping/CaseRecordEventType.hbm.xml"/>
+		<mapping resource="mapping/CaseRecordType.hbm.xml"/>
+		<mapping resource="mapping/CaseRecordStatus.hbm.xml"/>
+		<mapping resource="mapping/CourtEventType.hbm.xml"/>
+		<mapping resource="mapping/CourtHearingNegotiationStatus.hbm.xml"/>
+		<mapping resource="mapping/DispositionType.hbm.xml"/>
+		<mapping resource="mapping/DispositionManner.hbm.xml"/>
+		<mapping resource="mapping/DocumentInstance.hbm.xml"/>
+		<mapping resource="mapping/DocumentLocalCode.hbm.xml"/>
+		<mapping resource="mapping/DocumentCategory.hbm.xml"/> 
+		<mapping resource="mapping/LocalCaseCategory.hbm.xml" />
+		<mapping resource="mapping/LocalCaseDivision.hbm.xml" /> 
+		<mapping resource="mapping/LocalCaseFilingType.hbm.xml" />
+		<mapping resource="mapping/LocalCaseType.hbm.xml" /> 
+		<mapping resource="mapping/DocumentType.hbm.xml"/>
+		<mapping resource="mapping/DocumentStatus.hbm.xml"/>
+		<mapping resource="mapping/Signatures.hbm.xml"/>
+		<mapping resource="mapping/CourtSeal.hbm.xml"/>
+		<mapping resource="mapping/Counter.hbm.xml"/>
+		<mapping resource="mapping/CounterPerSigner.hbm.xml"/>
+		<mapping resource="mapping/DocumentSigConfig.hbm.xml"/>
+		<mapping resource="mapping/ExternalCaseRecordToCaseRecord.hbm.xml"/>
+		<mapping resource="mapping/LdapDirectoryPerson.hbm.xml"/>
+		<mapping resource="mapping/LegalPreparer.hbm.xml"/>
+		<mapping resource="mapping/DocumentPackage.hbm.xml"/>
+		<mapping resource="mapping/DocPageRange.hbm.xml"/>
+		<mapping resource="mapping/LocalCourtEventType.hbm.xml"/>
+		<mapping resource="mapping/LocalParticipantRelationship.hbm.xml"/>
+		<mapping resource="mapping/CaseRecordIdExternalCaseRecordNumber.hbm.xml"/>
+		<mapping resource="mapping/PersonHashedSSN.hbm.xml"/>
+		<mapping resource="mapping/AddressCategory.hbm.xml"/>
+		<mapping resource="mapping/Address.hbm.xml"/>
+		<mapping resource="mapping/VisualMark.hbm.xml"/>
+		<mapping resource="mapping/VisualMarkCategory.hbm.xml"/>
+		<mapping resource="mapping/LdapDirectoryOrganization.hbm.xml"/>
+		<mapping resource="mapping/DocumentBinaries.hbm.xml"/>
+		<mapping resource="mapping/PersonOrganizations.hbm.xml"/>
+		<mapping resource="mapping/CourtEventsExtendedData.hbm.xml"/>
+		<mapping resource="mapping/CourtEventsExtendedType.hbm.xml"/>
+		
+
+	</session-factory>
+</hibernate-configuration>

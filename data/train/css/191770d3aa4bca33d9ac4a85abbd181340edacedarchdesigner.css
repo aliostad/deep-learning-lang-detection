@@ -1,0 +1,53 @@
+/*For the model index page*/
+.ad-delete{
+    color: #FE6464;
+    transition: color 0.5s ease;
+}
+.ad-delete:hover{
+    color: #CC0000;
+}
+.ad-edit{
+    color: #008E48;
+    transition: color 0.5s ease;
+}
+.ad-edit:hover{
+    color: darkgreen;
+}
+.ad-add{
+    color: white;
+    transition: color 0.5s ease;
+}
+.ad-add:hover{
+    color: lightgray;
+}
+.modal-title{
+    font-weight: 100;
+}
+.panel-heading{
+    text-align: right;
+    background-color: #4285F4 !important;
+}
+.panel-footer{
+    background-color: #4285F4;
+}
+.panel-footer h3{
+    font-weight: 100;color:white;text-align: center;
+}
+.ad-model-h1{
+    margin-top: 0px;padding-top: 20px;font-weight: 100;
+}
+.panel-body table{
+    font-weight: 200;
+}
+.ad-model-edit .modal-body{
+    text-align: left;
+}
+.ad-model-edit .modal-header{
+    text-align: left;
+}
+.panel a{
+    border: none;
+}
+i{
+    padding-right: 2%;
+}

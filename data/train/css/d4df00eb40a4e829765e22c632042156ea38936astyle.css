@@ -1,0 +1,116 @@
+.service-filters {
+background-color: #F0F0F0;
+border-top: 1px solid #D7D7D7;
+padding: 0 10px 6px 10px;
+width: 100%;
+overflow: hidden;
+}
+.service-filter-content .service-filters li {
+float: left;
+text-align: center;
+background-color: #FFF;
+margin: 6px 6px 0 0;
+display: -moz-inline-stack;
+display: inline-block;
+vertical-align: middle;
+zoom: 1;
+position: relative;
+height: 64px;
+border: 1px solid #D7D7D7;
+cursor: pointer;
+}
+.service-filters li a {
+display: block;
+position: relative;
+z-index: 2;
+padding: 40px 0 0 2px;
+width: 79px;
+}
+.service-filter-content .service-filters li:hover,
+.service-filter-content .service-filters li.selected,
+.service-filter-content .service-filters li.completed {
+border: 1px solid #23639C;
+-webkit-box-shadow: #909090 0px 2px 5px 0px;
+-moz-box-shadow: #909090 0px 2px 5px 0px;
+box-shadow: #909090 0px 2px 5px 0px;
+}
+.service-filter-content .service-filters li.completed{
+	background: #FFF url(../img/completed.png) no-repeat 2px 2px;
+}
+.ready-label.hidden{ display: none;}
+.service-filter-container a, .service-filter-container a:link, .service-filter-container a:hover {
+color: #000;
+display: table-cell;
+text-decoration: none;
+vertical-align: middle;
+}
+.service-filter-content .service-filters li .service-filter-name-container .service-filter-name-outer {
+height: 100%;
+width: 100%;
+display: table;
+position: relative;
+overflow: hidden;
+}
+.service-filter-content .service-filters li .service-filter-name-container .service-filter-name-outer .service-filter-name-inner {
+top: 50%;
+display: table-cell;
+vertical-align: middle;
+left: 0;
+}
+.service-filter-content .service-filters li .service-filter-name-container .service-filter-name-outer .service-filter-name-inner a {
+top: -50%;
+padding: 0;
+}
+
+.sprite-linkedin{ background: url(../img/32x32/wpzoom/linkedin.png) center 6px no-repeat; }
+.sprite-google{ background: url(../img/32x32/wpzoom/google.png) center 6px no-repeat; }
+.sprite-yahoo{ background: url(../img/32x32/wpzoom/yahoo.png) center 6px no-repeat; }
+.sprite-live{ background: url(../img/32x32/wpzoom/live.png) center 6px no-repeat; }
+.sprite-facebook{ background: url(../img/32x32/wpzoom/facebook.png) center 6px no-repeat; }
+.sprite-twitter{ background: url(../img/32x32/wpzoom/twitter.png) center 6px no-repeat; }
+.sprite-foursquare{ background: url(../img/32x32/wpzoom/foursquare.png) center 6px no-repeat; }
+.sprite-myspace{ background: url(../img/32x32/wpzoom/myspace.png) center 6px no-repeat; }
+
+.wsi_success {
+	display: none;
+	background: url( ../img/completed-big.png) no-repeat 18px center;
+	border: 1px solid #CDCDCD;
+	padding: 30px;
+	padding: 20px 20px 20px 60px;
+	width: 350px;
+	margin: 20px auto;
+}
+
+.service-filters.wsi-sidebar {
+background: none;
+border: none;
+padding: 0;
+}
+.wsi-sidebar.service-filters li {
+border: none;
+height: auto;
+margin: 0 5px 0 0;
+width: auto;
+}
+.wsi-sidebar.service-filters li:hover {
+box-shadow: none;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+border: none;
+opacity: 0.8;
+}
+.wsi-sidebar.service-filters li a {
+padding: 0;
+width: 36px;
+height: 42px;
+}
+.wsi_success.small {
+width: auto;
+}
+.wsi-sidebar.service-filters li.completed {
+background: none;
+border: none;
+box-shadow: none;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+}

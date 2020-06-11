@@ -1,0 +1,5 @@
+questZone	navPoints	laps	specialTarget	triggerEvent	triggerSplitCondition	triggerArg	triggerArg2	triggerOn	triggerEndsMission	triggerDelay	autoReward	questDelay	_DESIGNER NOTES_	questSeries
+s	s	i[1]	s	"e(none=0,splitquest=1,surpriseattack=2)[none]"	"e(triggerOn=0,success=1,failure=2,both=3)[triggerOn]"	s	s	i	i	i	i	i	s	s
+space_yavin4	space_yavin4:stn_dantooine_patrol_rte_01	1		splitquest	triggerOn	rescue:stn_dantooine_owner_all_repairmission_tier2_6		2	1	10	0	0		
+	space_yavin4:stn_dantooine_patrol_rte_02													
+	space_yavin4:stn_dantooine_patrol_rte_03													

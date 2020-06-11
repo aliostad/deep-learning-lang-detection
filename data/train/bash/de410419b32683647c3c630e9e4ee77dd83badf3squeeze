@@ -1,0 +1,38 @@
+#! /bin/bash
+#
+# squeeze
+# Copyright (c) Ryan Kadwell <ryan@riaka.ca>
+#
+# Helper script for working with squeeze
+#
+# Author: Ryan Kadwell <ryan@riaka.ca>
+#
+
+if ! [ -e ".squeeze" ]
+then
+   repo_types="git hg"
+
+   echo -n "What type of repo do you want to use? [hg|git] "
+   read repo
+   while ! [[ $repo_types =~ $repo ]]
+   do
+      echo -n "Invalid repo choice. Options are [hg|git] "
+      read repo
+   done
+
+   mkdir .squeeze
+
+   cat <<EOF > .squeeze/config.yml
+repo: $repo
+
+similarity:
+   rename: 100
+   copy: 100
+EOF
+
+   echo "Done."
+
+else
+   echo ".squeeze directory already exists"
+   exit 0
+fi

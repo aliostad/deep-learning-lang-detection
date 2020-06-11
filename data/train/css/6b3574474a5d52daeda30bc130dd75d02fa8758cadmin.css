@@ -1,0 +1,60 @@
+.row-blue {
+    clear: both;
+    background: #0088cc;
+    color: #fff;
+}
+
+header .nav-pills {
+}
+
+header .nav-pills li a:hover{
+    background: #454545;
+}
+
+header .nav-pills li a {
+    color: #fff;
+}
+
+main aside {
+    width: 380px;
+}
+
+.sub-nav .nav-pills li ul {
+    list-style: none;
+}
+
+.sub-nav .nav-pills li a {
+    font-size: 2.3em;
+    color: #0088cc;
+}
+
+.sub-nav .nav-pills li a:hover {
+    background: none;
+    color: #454545;
+}
+
+.sub-nav .nav-pills li ul  {
+    display: none;
+}
+
+.sub-nav .nav-pills li ul li  {
+    padding: 5px 0px;
+}
+
+.sub-nav .nav-pills li ul li a {
+    font-size: 1.8em;
+}
+
+main>.container {
+    padding: 10px 10px 10px 30px;
+}
+
+main>.container header {
+    color: #454545;
+    border-bottom: solid 4px #eee;
+    padding: 10px 15px;
+}
+
+main .content {
+    padding: 20px;
+}

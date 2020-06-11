@@ -1,0 +1,14 @@
+<mappings>
+    <mapping resource='bonita.definition.hbm.xml' />
+    <mapping resource='bonita.runtime.hbm.xml' />
+    <mapping resource='bonita.queries.hbm.xml' />
+    <mapping resource='bonita.converter.hbm.xml' />
+    <mapping resource='bonita.wire.hbm.xml' />
+    <mapping resource='bonita.variable.hbm.xml' />
+    
+    <mapping resource='bonita.identity.hbm.xml' />
+    <mapping resource='bonita.privilege.hbm.xml' />
+
+    <mapping resource='bonita.web.hbm.xml' />
+    <mapping resource='bonita.web.queries.hbm.xml' />  
+</mappings>

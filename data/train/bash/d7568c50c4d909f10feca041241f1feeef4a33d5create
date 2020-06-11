@@ -1,0 +1,34 @@
+#!/bin/bash
+if [ $# -ge 2 ] || [[ $# -eq 0 ]] || [[ $1 == "--help" ]] || [ $(id -u) -ne 0 ];then
+	/show/messagebox "$0"
+	/show/info '[beta] [interactive]'
+	/show/usageDescription 'Create a repo on github (you need to create it on github.com before)'
+	/show/usage "$0 myusername/repo"
+	/show/example "$0 pigetnet/core"
+else
+	repo=$1
+	/show/description "LOCAL: $repo ---> [NEW] GITHUB: $repo"
+
+	/system/logInit $0
+	git init >> /tmp/piget.log 2>&1
+	git add . >> /tmp/piget.log 2>&1
+	git commit -m "First autocommit by pigetBot" >> /tmp/piget.log 2>&1
+	git remote add origin https://github.com/$repo.git >> /tmp/piget.log 2>&1
+	remoteErr=$?
+	git push -u origin master >> /tmp/piget.log 2>&1
+	pushErr=$?
+	if [ $pushErr -eq 0 ];then
+		if [ $remoteErr -eq 0 ];then
+			/show/listecho "$repo created" $OK
+			/show/listecho "https://github.com/$repo" $INFO
+		else
+			/show/listecho "$repo already created" $WARN
+			/show/listecho "https://github.com/$repo" $INFO
+		fi
+	else
+		/show/listecho "Failed to create $repo " $ERR
+		/show/listecho "Check if https://github.com/$repo exists" $INFO
+		/show/errorBox "Log"
+		tail /tmp/piget.log
+	fi
+fi

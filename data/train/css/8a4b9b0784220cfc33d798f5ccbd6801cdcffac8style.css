@@ -1,0 +1,27 @@
+<ShipSection>
+  <RealClass />
+  <Title>@SECTIONTITLE_SN_UNDERCONSTRUCTION</Title>
+  <Description>@SECTIONDESC_SN_UNDERCONSTRUCTION</Description>
+  <AiType>
+  </AiType>
+  <ModelFile>factions\human\models\Station\snunderconstruction.scene</ModelFile>
+  <DamagedModelFile>
+  </DamagedModelFile>
+  <DamagedEffectFile>
+  </DamagedEffectFile>
+  <DestroyedModelFile>
+  </DestroyedModelFile>
+  <DestroyedEffectFile>
+  </DestroyedEffectFile>
+  <AmbientSound>Sec_sn_underconstruct_ambient</AmbientSound>
+  <EngineSound>
+  </EngineSound>
+  <CameraDistanceFactor>1</CameraDistanceFactor>
+  <Struct>600</Struct>
+  <StructDamageAmount>0</StructDamageAmount>
+  <DeathDamage>0</DeathDamage>
+  <ExplosionRadius>0</ExplosionRadius>
+  <Mass>500000</Mass>
+  <Top>0,0</Top>
+  <Bottom>0,0</Bottom>
+  <Side>0,0</Side>

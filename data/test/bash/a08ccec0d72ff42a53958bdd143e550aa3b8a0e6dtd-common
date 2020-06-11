@@ -1,0 +1,46 @@
+#!/bin/bash -e
+
+# DTD-Tools Common functions
+
+# Generic yaml parser for bash
+# Source: https://gist.github.com/pkuczynski/8665367
+parse_yaml() {
+   local prefix=$2
+   local s='[[:space:]]*' w='[a-zA-Z0-9_]*' fs=$(echo @|tr @ '\034')
+   sed -ne "s|^\($s\)\($w\)$s:$s\"\(.*\)\"$s\$|\1$fs\2$fs\3|p" \
+        -e "s|^\($s\)\($w\)$s:$s\(.*\)$s\$|\1$fs\2$fs\3|p"  $1 |
+   awk -F$fs '{
+      indent = length($1)/2;
+      vname[indent] = $2;
+      for (i in vname) {if (i > indent) {delete vname[i]}}
+      if (length($3) > 0) {
+         vn=""; for (i=0; i<indent; i++) {vn=(vn)(vname[i])("_")}
+         printf("%s%s%s=\"%s\"\n", "'$prefix'",vn, $2, $3);
+      }
+   }'
+}
+
+dtd_load_config() {
+  # Load the general configuration
+  eval $(parse_yaml $dtd_build_dir/etc/config.yml "dtd_cfg_")
+}
+
+dtd_load_local() {
+  # Load the general configuration
+  eval $(parse_yaml $dtd_build_dir/etc/local.yml "dtd_local_")
+}
+
+dtd_load_sources() {
+  # Load the sources definitions
+  eval $(parse_yaml $dtd_build_dir/etc/sources.yml "dtd_src_")
+}
+
+dtd_load_workshops() {
+  # Load the sources definitions
+  eval $(parse_yaml $dtd_build_dir/etc/workshops.yml "dtd_workshop_")
+}
+
+dtd_load_targets() {
+  # Load the target definitions
+  eval $(parse_yaml $dtd_build_dir/etc/targets.yml "dtd_target_")
+}

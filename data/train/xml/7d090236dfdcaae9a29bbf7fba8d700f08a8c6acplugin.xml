@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="org.kosta.imports.ImportBPartner"
+         name="Import BPartner"
+         point="org.adempiere.base.Process">
+      <process
+            class="org.kosta.imports.ImportBPartner">
+      </process>
+   </extension>
+   <extension
+         id="org.kosta.imports.ImportOrder"
+         name="Import Order"
+         point="org.adempiere.base.Process">
+      <process
+            class="org.kosta.imports.ImportOrder">
+      </process>
+   </extension>
+   <extension
+         id="org.kosta.imports.ImportProduct"
+         name="Import Product"
+         point="org.adempiere.base.Process">
+      <process
+            class="org.kosta.imports.ImportProduct">
+      </process>
+   </extension>
+   <extension
+         id="org.kosta.process.CreateFromReplenish"
+         name="Create Lines From Replenish"
+         point="org.adempiere.base.Process">
+      <process
+            class="org.kosta.process.CreateFromReplenish">
+      </process>
+   </extension>
+   <extension
+         id="org.kosta.callout.CalloutRMA"
+         point="org.compiere.model.Callout">
+      <callout
+            class="org.kosta.callout.CalloutRMA">
+      </callout>
+   </extension>
+   <extension
+         id="org.kosta.imports.ImportReplenish"
+         name="Import Replenish"
+         point="org.adempiere.base.Process">
+      <process
+            class="org.kosta.imports.ImportReplenish">
+      </process>
+   </extension>
+   <extension
+         id="org.kosta.report.BankRegister"
+         name="Bank Register Detail"
+         point="org.adempiere.base.Process">
+      <process
+            class="org.kosta.report.BankRegister">
+      </process>
+   </extension>
+   <extension
+         id="org.kosta.imports.ImportGLJournal"
+         name="Import GL Jurnal"
+         point="org.adempiere.base.Process">
+      <process
+            class="org.kosta.imports.ImportGLJournal">
+      </process>
+   </extension>
+   <extension
+         id="org.kosta.process.SalesJournal"
+         point="org.adempiere.base.Process">
+      <process
+            class="org.kosta.process.SalesJournal">
+      </process>
+   </extension>
+
+</plugin>

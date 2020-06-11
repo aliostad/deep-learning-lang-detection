@@ -1,0 +1,153 @@
+#!/bin/sh -e
+#
+# Run 'test/main security' for security checks.
+# Note that these require root access and iteraction with the test script.
+
+if [ "$1" = security ]; then
+	test_security=1
+else
+	test_security=0
+fi
+
+store_file="/tmp/envstore-test-$$"
+testdir=$(mktemp -d /tmp/envstore.XXXXXX)
+export ENVSTORE_FILE=$store_file
+PATH=./bin:$PATH
+
+trap "envstore clear" INT
+
+echo "# make"
+make -s -B
+
+echo "# make install"
+make -s install DESTDIR=$testdir
+
+echo "# make uninstall"
+make -s uninstall DESTDIR=$testdir
+
+rm -r $testdir
+
+echo "# envstore clear"
+envstore clear
+
+echo "# envstore save var"
+export hello=world
+envstore save hello
+unset hello
+
+echo "# envstore eval"
+eval $(envstore eval)
+test "$hello" = world
+unset hello
+
+echo "# envstore rm"
+envstore rm hello
+eval $(envstore eval)
+test -z "$hello"
+
+echo "# envstore save var value"
+envstore save hello world
+
+echo "# envstore eval"
+eval $(envstore eval)
+test "$hello" = world
+unset hello
+
+echo "# envstore clear"
+envstore clear
+eval $(envstore eval)
+test -z "$hello"
+
+echo "# envstore save + eval (spaces in value), save var"
+export hello='your mom'
+envstore save hello
+unset hello
+eval $(envstore eval)
+test "$hello" = 'your mom'
+unset hello
+envstore clear
+
+echo "# envstore save + eval (spaces in value), save var value"
+envstore save hello 'your mom'
+eval $(envstore eval)
+test "$hello" = 'your mom'
+unset hello
+
+echo "# envstore save (leading space in value)"
+envstore save hello ' world'
+eval $(envstore eval)
+test "$hello" = ' world'
+unset hello
+
+echo "# envstore save (trailing space in value)"
+envstore save hello 'world '
+eval $(envstore eval)
+test "$hello" = 'world '
+unset hello
+
+echo "# envstore save (overwrite)"
+envstore save hello world
+eval $(envstore eval)
+test "$hello" = world
+envstore clear
+
+echo "# envstore save (' in value)"
+envstore save hello "the ' dude"
+eval $(envstore eval)
+test "$hello" = "the ' dude"
+unset hello
+
+echo "# envstore save (multiple 's in value)"
+envstore save hello "the '' ' dude ' moose"
+eval $(envstore eval)
+test "$hello" = "the '' ' dude ' moose"
+unset hello
+
+echo "# envstore save (UTF-8)"
+export hello='mÿde Rentner… und so'
+envstore save hello
+unset hello
+eval $(envstore eval)
+test "$hello" = 'mÿde Rentner… und so'
+unset hello
+envstore clear
+
+# former --extended tests
+
+echo "# invalid invocations"
+! envstore save > /dev/null 2>&1
+unset nonexistent
+! envstore save nonexistent > /dev/null 2>&1
+! envstore rm > /dev/null 2>&1
+
+echo "# other invocations"
+envstore list
+envstore eval
+envstore rm nonexistent
+envstore clear
+
+echo "# envify"
+envstore save oaei lalala
+test "$(bin/envify sh test/envify)" = lalala
+envstore clear
+
+
+if [ "$test_security" = 1 ]; then
+	echo "# world-writable store file"
+	envstore save fucked yes
+	chmod 777 $store_file
+	test "$(envstore eval)" != "export fucked='yes'"
+	rm $store_file
+
+	envstore save fucked yes
+	echo "Now, enter the following as root:"
+	echo "    chown root $store_file"
+	echo -n "[press return when done] "
+	read wayne
+	test "$(envstore eval)" != "export fucked='yes'"
+
+	echo "Looking good, you may remove the file now"
+	echo "    rm $store_file"
+	echo -n "[press return when done] "
+	read wayne
+fi

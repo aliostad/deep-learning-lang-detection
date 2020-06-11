@@ -1,0 +1,66 @@
+/* COMMON */
+form.admin_create_record,
+form.admin_model_records {
+  padding: 3px;
+  margin: 0;
+}
+form.admin_create_record tr,
+form.admin_model_records tr {
+  margin: 30px;
+}
+
+
+/* EDIT RECORD */
+form.admin_model_records tr td.actions {
+  visibility: hidden;
+}
+form.admin_model_records tr:HOVER td.actions {
+  visibility: visible;
+}
+form.admin_model_records table {
+  border-spacing: 0;
+  width: 100%;
+  margin: 3px auto;
+  border: solid 1px #EEE;
+  padding: 3px;
+}
+form.admin_model_records tr {
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
+form.admin_model_records td,
+form.admin_model_records th {
+  padding: 2px 5px;
+}
+form.admin_model_records tr .pages {
+  margin: 0;
+}
+form.admin_model_records th {
+  background-color: #EEE;
+}
+form.admin_model_records tr.odd,
+form.admin_model_records tr:HOVER {
+  background-color: #FAFAFA;
+}
+form.admin_model_records td a {
+  cursor: pointer;
+}
+
+
+input[type=submit].disabled {
+  background-color: #eee;
+  border: solid 1px #ddd;
+  color: #999;
+}
+input[type=submit].disabled:HOVER {
+  background-color: #ddd;
+  cursor: auto;
+}
+
+/* CREATE NEW RECORD */
+form.admin_create_record th,
+form.admin_edit_record th {
+  text-align: right;
+  background-color: inherit;
+}

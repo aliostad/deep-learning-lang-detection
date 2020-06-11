@@ -1,0 +1,161 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+html,head,body{
+	height:100%;
+}
+body{
+	font:14px/1.5 Arial;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+.fa{
+	font-size: 16px;
+}
+header .fa-user-circle-o{
+	font-size:24px;
+}
+
+
+header{
+	position:absolute;
+	top:10px;
+	width:100%;
+}
+header .login{
+	float:right;
+	margin-right:20px;
+}
+header::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+main{
+	background:linear-gradient(to right top,rgba(100,149,237,0.78),rgba(230,230,250,0.45)),url(img/002.jpg) center center no-repeat;
+	background-size:cover;
+	height:100%;/**子元素全部都是绝对定位的情况下，不设置高度的话，背景不能显示出来，原因是脱离了文档流**/
+}
+main .flip-model{
+	display:none;
+}
+.show{
+	display:block!important;
+}
+main .model{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	background-color:#fff;
+	width:420px;
+	padding:20px;
+	box-shadow:0px 0px 3px rgba(0,0,0,0.5);
+}
+main .close{
+	position:absolute;
+	top:10px;
+	right:10px;
+}
+main .fa-times{
+	float:right;
+}
+main .model-login::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+main .tabs{
+	text-align:center;
+}
+main .tabs a{
+	display:inline-block;
+	margin:0 10px;
+	font-size:16px;
+}
+main .tabs a.active{
+	border-bottom:2px solid #444;
+}
+main .content{
+	padding:20px 40px;
+}
+main .errormsg{
+	color:#ff9800;
+	font-size:12px;
+}
+/**方法一：
+form .input-field{
+	border:1px solid #ccc;
+	width:280px;
+	height:30px;
+	margin:0 auto;
+	margin-top:10px;
+}
+form .input-field > .fa{
+	margin:5px 0;
+	margin-left:5px;
+}
+form .input-field input{
+	width:240px;
+	border:1px solid transparent;
+	outline:none;
+}
+form .input-field:last-child{
+	border:1px solid transparent;
+}
+form .input-field:last-child input:last-child{
+	width:50px;
+	height:30px;
+	background-color:#fff;
+	border:1px solid #ccc;
+	box-shadow:0px 1px 1px 1px #ccc;
+}**/
+/**方法二：**/
+form .input-field{
+	position:relative;
+	margin-top:10px;
+}
+form .input-field .fa{
+	position:absolute;
+	top:12px;
+	left:12px;
+}
+form input[type=text],
+form input[type=password]{
+	width:100%;/**宽度撑满**/
+	padding:10px 10px 10px 30px;/**将输入框撑开，左边距大是因为要留图标位置**/
+	outline:none;/**鼠标放入没有蓝色边线**/
+	/**border:1px solid silver;改变边框颜色**/
+}
+form input[type=submit]{
+	padding:6px 10px;
+	border:none;
+	background:#fff;
+	box-shadow:0px 0px 2px rgba(0,0,0,0.78);
+	outline:none;
+}
+
+
+/**3Dflip效果**/
+.flip-model.login .model-login,
+.flip-model.register .model-register{
+	/**position:absolute;
+	top:50%;
+	left:50%;**/
+	transform:translate(-50%,-50%) rotateY(0deg);
+	backface-visibility: hidden;
+	transition:all 1s;
+}
+.flip-model.login .model-register,
+.flip-model.register .model-login{
+	/**position:absolute;
+	top:50%;
+	left:50%;**/
+	transform:translate(-50%,-50%) rotateY(180deg);
+	backface-visibility:hidden;
+	transition:all 1s;
+}

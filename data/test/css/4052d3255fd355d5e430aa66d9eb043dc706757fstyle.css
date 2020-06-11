@@ -1,0 +1,154 @@
+@CHARSET "UTF-8";
+
+.fieldset {
+	font-size: 9pt;
+}
+
+.fieldset ul {
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+
+.fieldset ul li {
+	display: inline-block;
+	width: 98%;
+	margin: 2px 0px 0px 0px;
+	padding: 0px;
+}
+
+.fieldset ul li > input[type=text],textarea {
+	width:200px;
+	border: 1px solid #95B8E7;
+	margin: 0px;
+}
+
+.fieldset .c2 li {
+	width: 49%;
+}
+
+.fieldset .c2 .cs2 {
+	width: 98%;
+}
+
+
+.fieldset .c3 li {
+	width: 33%;
+}
+
+.fieldset ul li label {
+/* 	display: inline-block; */
+	float: left;
+	width: 80px;
+	text-align: right;
+	line-height: 20px;
+}
+
+.fieldset .l120 li label {
+	width: 120px;
+}
+
+.buttons {
+	padding: 2px 0px 2px 0px;
+	text-align: center;
+}
+
+.serviceContainer {
+	width : 100%;
+	padding: 0px;
+}
+
+.serviceContainer .serviceItem {
+	border: 1px solid #FFCCCC;
+	margin: 0px 0px 5px 5px;
+	width:200px;
+	height:150px;
+	float: left;
+}
+
+.serviceContainer .serviceItem .serviceHeader {
+	background-color: #9999FF;
+	overflow: auto;
+}
+
+.serviceContainer .serviceItem .serviceHeader .serviceTitle {
+/* 	font-style: italic; */
+/* 	font-weight: bold; */
+}
+
+.serviceContainer .serviceItem  .enpointContainer {
+	padding: 0px 5px 5px 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+.serviceContainer .serviceItem .enpointContainer .endpointItem {
+		width: 150px;
+		margin: 5px 0px 0px 5px;
+		float: left;
+}
+
+
+.serviceContainer .serviceItem .endpointHeader {
+	background-color: #6699cc;
+	height:20px;
+	line-height: 20px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	text-align: center;
+	font-weight: bold;
+	
+	padding:0px 5px;
+	
+}
+
+.serviceContainer .serviceItem .endpointContent {
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: #9966cc;
+	height: 80px;
+	overflow: hidden;
+}
+
+.service-btn {
+	float: right;
+	height: 16px;
+	width: 16px;
+	line-height: 16px;
+}
+
+.service-btn:HOVER {
+	cursor: pointer;
+}
+
+.service-collapse{
+	background: url("icons/collapse.png") center no-repeat;
+}
+
+.service-expand {
+	background: url("icons/expand.png") center no-repeat;
+}
+
+.contentCell {
+	text-indent: 2em;
+	margin: 0px;
+	font-size: 9pt;
+}
+
+.rbtn{
+	width:16px;
+	height:16px;
+	float:right;
+}
+
+.rbtn:HOVER {
+	cursor: pointer;
+}

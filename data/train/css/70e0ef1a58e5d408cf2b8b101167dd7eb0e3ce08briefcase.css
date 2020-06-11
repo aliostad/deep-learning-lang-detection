@@ -1,0 +1,88 @@
+.view-briefcase a i {
+  margin-right: 5px;
+}
+
+.view-briefcase input[type="checkbox"] {
+  margin: 0;
+}
+
+.view-briefcase .resource-description {
+  margin: 0;
+}
+
+.view-briefcase .description-inline {
+  display: inline-block;
+}
+
+.view-briefcase .resources-buttons {
+  margin-bottom: 18px;
+}
+
+.view-briefcase .resources-buttons .btn-group {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.view-briefcase .resources-buttons .buttons-label {
+  margin-right: 5px;
+}
+
+.view-briefcase .resource-icon {
+  padding-right: 0;
+}
+
+.view-briefcase [class^="factory-icon-"] {
+  vertical-align: top;
+}
+
+.view-briefcase th.right,
+.view-briefcase td.right {
+  text-align: right;
+}
+
+.view-briefcase .resource-public i.icon-publish {
+  color: #51A351
+}
+
+.view-briefcase .resource-public i.icon-unpublish {
+  color: #cccccc
+}
+
+.view-briefcase .filters {
+  text-align: right;
+}
+
+.view-briefcase .filters select {
+  width: 130px;
+}
+
+.view-briefcase .chzn-container {
+  vertical-align: middle;
+  text-align: left;
+}
+
+.view-briefcase .filters .search-query {
+  vertical-align: middle;
+  width: 180px;
+  float: left;
+}
+
+.view-briefcase .pagination {
+  margin: 10px 0 0 0;
+}
+
+.view-briefcase .table {
+  margin-bottom: 10px;
+}
+
+.view-briefcase .share i {
+  margin-right: 5px;
+}
+
+.view-briefcase .folder-size-limit {
+  margin: 20px 0;
+}
+
+.view-briefcase .folder-size-percent {
+  font-weight: bold;
+}

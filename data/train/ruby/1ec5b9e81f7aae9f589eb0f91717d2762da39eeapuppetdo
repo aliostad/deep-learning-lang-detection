@@ -1,0 +1,124 @@
+#!/usr/bin/env ruby
+require '/etc/puppet/dolibs/includes.rb'
+cluster = args(ARGV[0], ARGV[1], ARGV[2], ARGV[3])
+
+
+#Cluster organization DSL for processing server groups.  This is built around the idea that server groups are build around name\d+ for naming conventions
+case cluster 
+
+  when 'flushdns'
+    Puppetdo.commands(["service nscd reload"])
+    Puppetdo.process("serviceadmin")
+    Puppetdo.commands(["service nscd reload"])
+    Puppetdo.process("www")
+
+  when 'web'
+    #web cluster
+    Puppetdo.process("serviceadmin")
+    ######################################
+    #Puppetdo.commands(ARRAY OF COMMANDS) is a command list buffer to send to handle special instances like the load balancer file(test.html)
+    Puppetdo.commands(
+                      [
+                        "rm /home/httpd/arch/public/smallsites/default/test.html",
+                        "sleep 15",
+                        "puppet agent --test",
+                        "cp /srv/www/htdocs/index.html /home/httpd/arch/public/smallsites/default/test.html",
+                      ])
+    Puppetdo.process("www")
+    ######################################
+
+  when 'blog'
+    #blog cluster
+    Puppetdo.process("dev-blog")
+    Puppetdo.process("blog")
+
+  when 'microapp'
+    #microapp cluster
+    Puppetdo.process("microapp")
+    
+  when 'extranet'
+    #extranet cluster
+    Puppetdo.process("extranet")
+
+  when 'intranet'
+    #crm cluster
+    Puppetdo.process("intranet")
+
+  when 'media'
+    #media cluster
+    Puppetdo.process("media")
+
+  when 'webmedia'
+    Puppetdo.process("webmedia")
+ 
+  when 'deals'
+    Puppetdo.process("deals")
+  #################
+  #    Logging
+  ################# 
+  when 'infraredis'
+    Puppetdo.process("infraredis")
+    Puppetdo.process("infrarediscdn")
+
+  when 'logstash'
+    Puppetdo.process("logstash")
+    Puppetdo.process("logstashcdn")
+
+  when 'logs'
+    Puppetdo.process("infraredis")
+    sleep 20
+    Puppetdo.process("logstash")
+    Puppetdo.process("infrarediscdn")
+    sleep 20
+    Puppetdo.process("logstashcdn")
+    Puppetdo.process("log")
+
+ when 'all'
+    Puppetdo.process("serviceadmin")
+    ################################
+    Puppetdo.commands( #fill command buffer for www
+                      [
+                        "rm /home/httpd/arch/public/smallsites/default/test.html",
+                        "sleep 15",
+                        "puppet agent --test",
+                        "cp /srv/www/htdocs/index.html /home/httpd/arch/public/smallsites/default/test.html",
+                      ])
+    Puppetdo.process("www")
+    ##############################
+    Puppetdo.process("dbextranet")
+    Puppetdo.process("dbintranet")
+    Puppetdo.process("foundation")
+    Puppetdo.process("ftp")
+    Puppetdo.process("dev-blog")
+    Puppetdo.process("blog")
+    Puppetdo.process("microapp")
+    Puppetdo.process("extranet")
+    Puppetdo.process("intranet")
+    Puppetdo.process("media")
+    Puppetdo.process("webmedia")
+    Puppetdo.process("deals")
+    Puppetdo.process("infraredis")
+    Puppetdo.process("infrarediscdn")
+    Puppetdo.process("redis")
+    Puppetdo.process("logstashcdn")
+    Puppetdo.process("infraredis")
+    sleep 20
+    Puppetdo.process("logstash")
+    Puppetdo.process("infrarediscdn")
+    sleep 20
+    Puppetdo.process("logstashcdn")
+    Puppetdo.process("log")
+    Puppetdo.process("ns1-int")
+    Puppetdo.process("ns2-int")
+    Puppetdo.process("infra")
+    Puppetdo.process("graphite")
+    Puppetdo.process("agency-monitoring")
+    Puppetdo.process("git")
+    Puppetdo.process("mem")
+    Puppetdo.process("crmmem")
+    Puppetdo.process("dev-mem")
+    Puppetdo.process("qa-mem")
+    Puppetdo.process("relay")
+    Puppetdo.process("solr")
+
+end

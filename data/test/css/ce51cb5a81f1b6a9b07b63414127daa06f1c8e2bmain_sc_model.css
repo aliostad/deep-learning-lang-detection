@@ -1,0 +1,242 @@
+/*
+ * tableau pour la liste des modeles
+ *
+ */
+ 
+#largeBoxTable_Model
+{
+  width: 725px;
+  margin: 13px 0px 0 9px; 
+  float: left;
+}
+ 
+#largeBoxTable_Model_first
+{
+  border: none;
+  background : transparent url('../images/tableau_header_Bg.png') repeat-x left top;
+  height: 35px;
+  width: 722px;
+  line-height: 30px;
+  font-size: 0.75em;
+  font-style: bold;
+  text-align: left;
+  //font-weight: normal;
+  //border-bottom: thin solid #ffffff;
+  color: #ffffff;
+  float: left;
+}
+.largeBoxTable_Model_0
+{
+  margin: 0px 0px 0 5px;
+  height: 35px; 
+  background: transparent ;
+  //vertical-align:middle;
+  //border-right: thin solid #ffffff;
+  float: left;
+}
+.largeBoxTable_Model_0 p 
+{
+   vertical-align: middle; 
+   //display: inline;
+}
+
+.largeBoxTable_Model_lign
+{
+  width: 723px;
+  height: 35px;
+  //border-bottom: thin solid #3d4993;
+  //border-bottom: thin solid #efefef;
+  line-height: 33px;
+  font-weight: 100;
+  font-size: 0.75em;
+  color: black;
+  background: transparent ;
+  float:left;
+}
+.largeBoxTable_Model_lign a
+{
+  color: #2a3556;
+  text-aligned:center;
+  text-decoration:none;
+}
+
+.largeBoxTable_Model_lign_pair
+{	
+  width: 723px;
+  height: 35px;
+  background-color: #b8b9c3 ;
+  float:left;
+}
+.largeBoxTable_Model_lign_impair
+{
+  width: 723px;
+  height: 35px;
+  background-color: #cacbd5 ;
+  float:left;
+}
+.largeBoxTable_Model_lign_pair:hover, .largeBoxTable_Model_lign_impair:hover
+{
+  background-color: #9297a8 ;
+  color: #ffffff;
+}
+
+
+.largeBoxTable_Model_1
+{
+  width: 25px;
+  height: 35px; 
+  background: transparent url('../images/fleche.png') no-repeat center center;
+  border-right: thin solid #ffffff;
+  float: left;
+}
+.largeBoxTable_Model_1:hover
+{
+  background: transparent url('../images/LM_fleche_select.png') no-repeat center center;
+}
+.largeBoxTable_Model_2
+{
+  width: 245px;
+  height: 35px; 
+  margin: 0px 0px 0 5px;
+  background: transparent ;
+  border-right: thin solid #ffffff;
+  float: left;
+}
+.largeBoxTable_Model_3
+{
+  width: 195px;
+  height: 35px; 
+  margin: 0px 0px 0 5px;
+  background: transparent;
+  border-right: thin solid #ffffff;
+  float: left;
+}
+.largeBoxTable_Model_4
+{
+  width: 85px;
+  height: 35px; 
+  margin: 0px 0px 0 5px;
+  background: transparent ;
+  border-right: thin solid #ffffff;
+  float: left;
+}
+.largeBoxTable_Model_5
+{
+  width: 58px;
+  height: 35px; 
+  margin: 0px 0px 0 5px;
+  background: transparent url('../images/LM_visu.png') no-repeat center center;
+  border-right: thin solid #ffffff;
+  float: left;
+}
+.largeBoxTable_Model_6
+{
+  width: 58px;
+  height: 35px; 
+  margin: 0px 0px 0 5px;
+  background: transparent url('../images/LM_compute.png') no-repeat center center;
+  border-right: thin solid #ffffff;
+  float: left;
+}
+
+.largeBoxTable_Model_7
+{
+  width: 25px;
+  height: 35px; 
+  background: transparent url('../images/croix_suppr.png') no-repeat center center;
+  border-right: thin solid #ffffff;
+  float: left;
+}
+
+
+
+/*
+ * cadre pour les details model, membres...
+ *
+ */
+
+.DetailCadreModelTitre {
+  width: 710px ;
+  height: 20;
+  margin: 5px 0px 0 5px;
+  text-align: center;
+  color: #2a3556;
+  font-size: 1em;
+  text-decoration: underline;
+  float: left;
+}
+
+.DetailCadreModel1 {
+  width: 277px ;
+  height: 380px;
+  font-size: 0.8em;
+  margin: 8px 0px 0 20px;
+  float: left;
+}
+.DetailCadreModel2 {
+  background-color: #b8b9c3;
+  border-top: thin solid #ffffff;
+  width: 400px ;
+  height: 300px;
+  margin: 18px 0px 0 6px;
+  float: left;
+}
+.DetailCadreModelMarge {
+  height: 10px;
+  width: 275px ;
+  float: left;
+}
+
+.DetailCadreModelLigne {
+  border-top: thin solid #ffffff;
+  height: 25px;
+  width: 275px ;
+  margin: 0px 0px 0 0px;
+  //font-weight: normal;
+  //font-size: 0.75em;
+  float: left;
+}
+.DetailCadreModelCase1 {
+  //border-top: thin solid #ffffff;
+  background-color: #9297a8;
+  color: #ffffff;
+  padding: 0px 0px 0 5px;
+  line-height: 22px;
+  height: 25px;
+  width: 175px ;
+  float: left;
+}
+.DetailCadreModelCase2 {
+  //border: thin solid #ffffff;
+  background-color: #b8b9c3;
+  padding: 0px 0px 0 5px;
+  line-height: 22px;
+  height: 25px;
+  width: 90px ;
+  float: left;
+}
+
+.DetailCadreModelDescriptionTop {
+  background-color: #9297a8;
+  width: 270px ;
+  height: 25px;
+  margin: 2px 0px 0 0px;
+  padding-left: 5px;
+  line-height: 22px;
+  color: #ffffff;
+  float: left;
+}
+.DetailCadreModelDescription {
+  background-color: #b8b9c3;
+  width: 266px ;
+  height: 133px;
+  margin: 2px 0px 0 0px;
+  padding: 4px 4px 2px 5px;
+  //padding-right: 4px;
+  font-weight: normal;
+  //font-size: 0.75em;
+  float: left;
+}
+
+
+

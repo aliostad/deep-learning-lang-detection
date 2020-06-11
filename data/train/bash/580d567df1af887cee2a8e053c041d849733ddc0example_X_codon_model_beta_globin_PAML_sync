@@ -1,0 +1,36 @@
+#!/bin/bash -x
+#
+# In this example a reversible codon model with Goldman-Yang 94
+# parameterization is used to analyze a mammalian beta-globin
+# alignment (from Z. Yang, see README file). This example should
+# replicate the equivalent analysis by PAML's codeml program, which
+# can be run on the same data if the final line of this file is
+# uncommented and a reference to codeml is provided.
+#
+
+
+# -- convert fasta alignment to CodeAxe nucleotide site data format: 
+#
+../bin/CodeAxe -process-seq -in-seq example_data/bglobinMam.fsa -no-window-filter -no-ambig-gap-filter -no-codon-border -site-model codon >| exX.data
+
+# -- create gy94 model with default starting parameters
+#
+../bin/CodeAxe -create-model -site-model codon -rate-model gy94 -select-model single -root-model obs-avg -tree-file example_data/bglobinMam.tree -reversible-tree -in-data exX.data >| exX.model.start
+
+# -- train model
+#
+../bin/CodeAxe -ml -in-model exX.model.start -in-data exX.data >| exX.model.trained 2>| exX.model.stderr
+
+# -- get the likelihood & likelihood/codon of the trained model
+#
+../bin/CodeAxe -lhood -in-model exX.model.trained -in-data exX.data >| exX.model.trained.lhood
+
+# -- summarize parameters from the trained model
+#
+../bin/CodeAxe -report-model -in-model exX.model.trained >| exX.model.trained.report
+
+
+
+# -- codeml comparison:
+#
+# $codeml_binary example_data/codonml.ctl

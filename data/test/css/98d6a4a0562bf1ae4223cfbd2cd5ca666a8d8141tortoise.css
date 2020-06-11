@@ -1,0 +1,31 @@
+
+.model-container {
+	width:707px;
+	padding: 8px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	box-shadow: 3px 3px 10px #555;
+}
+
+.view-container {
+	border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.model-button {
+  background-color: #D3C8E3;
+  border-radius: 8px 8px 8px 8px;
+  box-shadow: 3px 3px 3px #555555;
+  cursor: pointer;
+  font-size: 11pt;
+  height: 44px;
+  margin: 13px;
+  text-align: center;
+  width: 80px;
+}
+
+.slider {
+	width: 364px; 
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	padding:8px;
+	margin:6px;
+	text-align:center;
+}

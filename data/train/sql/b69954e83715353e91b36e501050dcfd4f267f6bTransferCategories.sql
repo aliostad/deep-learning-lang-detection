@@ -1,0 +1,8 @@
+UPDATE data set categories = array_append(categories, 'Geographie, Geologie und Geobasisdaten') WHERE categories @> ARRAY['Stadtentwicklung und Bebauung'];
+UPDATE data set categories = array_append(categories, 'Infrastruktur, Bauen und Wohnen') WHERE categories @> ARRAY['Stadtentwicklung und Bebauung'] or categories @> ARRAY['Wohnen und Immobilien'] or categories @> ARRAY['Energie, Ver- und Entsorgung'];
+UPDATE data set categories = array_append(categories, 'Kultur, Freizeit, Sport, Tourismus') WHERE categories @> ARRAY['Kunst und Kultur'] or categories @> ARRAY['Sport und Freizeit'] or categories @> ARRAY['Tourismus'];
+UPDATE data set categories = array_append(categories, 'Soziales') WHERE categories @> ARRAY['Sozialleistungen'];
+UPDATE data set categories = array_append(categories, 'Umwelt und Klima') WHERE categories @> ARRAY['Umwelt'];
+UPDATE data set categories = array_append(categories, 'Öffentliche Verwaltung, Haushalt und Steuern') WHERE categories @> ARRAY['Haushalt und Steuern'] or categories @> ARRAY['Öffentl. Sicherheit'];
+UPDATE data set categories = array_append(categories, 'Wirtschaft und Arbeit') WHERE categories @> ARRAY['Arbeitsmarkt'] or categories @> ARRAY['Land- und Forstwirtschaft'] or categories @> ARRAY['Wirtschaft und Wirtschaftsförderung'];
+UPDATE data set categories = array_append(categories, 'Verbraucherschutz') WHERE categories @> ARRAY['Verbraucher'];

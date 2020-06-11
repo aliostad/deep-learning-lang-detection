@@ -1,0 +1,33 @@
+#!/bin/bash
+
+#bower update
+
+../y-bower/.cabal-sandbox/bin/lsbow > test.sh
+
+rm -r static/*
+
+cd static
+bash ../test.sh
+
+
+cleancss app.css | postcss -u autoprefixer -c ../autopref.json > app.min.css
+cd angular-i18n
+mkdir save
+
+cp angular-locale_de.js save
+cp angular-locale_en-gb.js save
+cp angular-locale_en.js save
+cp angular-locale_en-us.js save
+cp angular-locale_fr.js save
+cp angular-locale_it.js save
+cp angular-locale_pl.js save
+cp angular-locale_pl-pl.js save
+cp angular-locale_ru.js save
+
+rm *.js
+mv save/* .
+rmdir save
+md5sum * > md5sum.list
+cd ../..
+
+cp extra-bower/PYP-brand/polish-your-polish-124.gif static/

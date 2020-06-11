@@ -1,0 +1,32 @@
+# -*- mode: shell-script -*-
+#
+# Debian GNU/Linux invoke-rc.d(8) completion.
+# Copyright (c) 2003  Jörg Sommer <joerg@alea.gnuu.de>
+#
+# $Id: bash_completion,v 1.2 2007-01-14 18:15:48 roland Exp $
+
+have invoke-rc.d &&
+_invoke_rcd()
+{
+    local cur prev
+    cur=${COMP_WORDS[COMP_CWORD]}
+    prev=${COMP_WORDS[COMP_CWORD-1]}
+
+    if [ $(basename $prev) == invoke-rc.d ]; then
+	  COMPREPLY=($(find /etc/init.d -maxdepth 1 -type f \
+			    -perm +0111 -name "$cur*" -printf '%f\n'))
+    else
+       if [ -z $cur ]; then
+	  COMPREPLY=(start stop restart reload force-reload)
+       else
+	  k=0
+	  for i in start stop restart reload force-reload; do
+	     case $i in
+		$cur*) COMPREPLY[$k]=$i; k=$(($k+1));;
+	     esac
+	  done
+       fi
+    fi
+}
+
+[ -n "${have:-}" ] && complete -F _invoke_rcd invoke-rc.d

@@ -1,0 +1,77 @@
+/*.boardArticle {width: auto;}*/
+
+/* 글목록 */
+#boardList table {width: 60%;
+					height:100px;
+					margin : auto;
+					text-align: center;
+					}
+
+/*#boardList th {padding: 3px 0; text-align:center; border-top: 2px solid #666; border-bottom: 1px solid #666;}
+#boardList tr: hover {background: #eee;}
+#boardList td {padding: 3px 0;text-align:left; border-bottom: 1px solid #666;}
+
+#boardList .mType {width: 70px; text-align: center;}
+#boardList .no {width: 60px; text-align: center;}
+#boardList .author {width: 100px; text-align: center;}
+#boardList .date {width: 100px; text-align: center;}
+#boardList .hit {width: 40px; text-align: center;}
+
+#boardList .btnSet {text-align: right;}
+
+#boardList .paging {text-align: center;}
+#boardList .paging li {display: inline-block; height: 20px; margin: 0 5px; padding: 0 5px; border: 1px solid #666; background: #eee; line-height: 21px;}
+
+#boardList .paging li.current,
+#boardList .paging li:hover {background: #666;}
+#boardList .paging li.current,
+#boardList .paging li:hover a {color: #ddd;}
+
+#boardList .searchBox{text-align: center;}*/
+
+/* 글쓰기 */
+
+/*#boardWrite table {width: 720px;}
+#boardWrite th {width: 100px; padding: 5px; text-align: right; vertical-align: top;}
+#boardWrite td {width: 620px; padding: 5px;}
+
+#boardWrite #bID {width: 180px;}
+#boardWrite #bPassword {width: 180px;}
+#boardWrite #bTitle {width: 400px;}
+#boardWrite #bContent {width: 550px; height: 300px;}
+
+#boardWrite .btnSet {text-align: center;}*/
+
+/* 글읽기 */
+
+/*#boardView #boardTitle {border-bottom: 2px solid #333;}
+#boardView #boardInfo {margin: 10px 0;}
+#boardView #boardContent {margin: 10px 0;}
+#boardView .btnSet {text-align: right;}*/
+
+	/* 댓글 쓰기*/
+/*	#boardComment table {width: 100%;}
+	#boardComment table th {width: 100px; padding: 0 5px; text-align: right; vertical-align: middle;}
+	#boardComment table td {padding: 5px; text-align: left;}
+	
+	#boardComment #coContent {width: 99%; height: 120px;}
+	
+	#commentView ul {list-style: none; margin: 0; padding:0;}
+	#commentView .oneDepth {margin: 10px 0; padding: 10px; background: #eee;} 
+	#commentView .twoDepth {margin: 20px; padding: 10px; background: #fff;}
+	#commentView .commentInfo {overflow: hidden;}
+	#commentView .commentId {float: left;} 
+	#commentView .commentBtn {float: right;} 
+	#commentView .commentContent {clear: both;} */
+
+	
+/* 글삭제 */
+
+
+/*#boardDelete table {width: 720px;}
+#boardDelete tbody th {width: 100px; padding: 5px; text-align: right; vertical-align: top;}
+#boardDelete tbody td {width: 620px; padding: 5px;}
+#boardDelete .btnSet {text-align: center;}
+
+
+.textCenter {text-align: center;}*/

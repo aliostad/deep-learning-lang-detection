@@ -1,0 +1,53 @@
+SET DEFINE OFF;
+CREATE TABLE L_RESPASSENGERS
+(
+  RESNUMBER       NUMBER(18)                    NOT NULL,
+  CONTACTID       INTEGER                       NOT NULL,
+  PASSENGERSEQ    INTEGER                       NOT NULL,
+  ROOMNUMBER      INTEGER,
+  RECEIVEDAMOUNT  NUMBER(18,2),
+  HOTELREQ        VARCHAR2(200 BYTE),
+  AIRREQ          VARCHAR2(200 BYTE),
+  GENERALREQ      CLOB,
+  FREQUENT        VARCHAR2(50 BYTE),
+  WHOSTAMP        VARCHAR2(50 BYTE),
+  DATESTAMP       DATE
+)
+LOB (GENERALREQ) STORE AS (
+  TABLESPACE  DTW_ADV_TABLES
+  ENABLE      STORAGE IN ROW
+  CHUNK       16384
+  RETENTION
+  NOCACHE
+  LOGGING
+      STORAGE    (
+                  INITIAL          80K
+                  NEXT             1M
+                  MINEXTENTS       1
+                  MAXEXTENTS       UNLIMITED
+                  PCTINCREASE      0
+                  BUFFER_POOL      DEFAULT
+                  FLASH_CACHE      DEFAULT
+                  CELL_FLASH_CACHE DEFAULT
+                 ))
+TABLESPACE DTW_ADV_TABLES
+RESULT_CACHE (MODE DEFAULT)
+PCTUSED    0
+PCTFREE    10
+INITRANS   1
+MAXTRANS   255
+STORAGE    (
+            INITIAL          80K
+            NEXT             1M
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+            FLASH_CACHE      DEFAULT
+            CELL_FLASH_CACHE DEFAULT
+           )
+LOGGING 
+NOCOMPRESS 
+NOCACHE
+NOPARALLEL
+MONITORING;

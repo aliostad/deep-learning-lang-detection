@@ -1,0 +1,64 @@
+/* ---------------------------------------------------------------------------*\
+    #COMPONENTS ANIMATIONS
+\* -------------------------------------------------------------------------- */
+
+.a-slide-in {
+    animation-name: slide-in;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+}
+
+@keyframes slide-in {
+
+    0% {
+        transform: translatey(-50px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translatey(0);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.a-fade-in {
+    animation-name: fade-in;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+}
+
+@keyframes fade-in {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.a-load::after {
+    animation-name: load;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+}
+
+@keyframes load {
+
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+
+    100% {
+        width: 72%;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,32 @@
+<config>
+    <modules>
+        <App_Api>
+            <version>0.1.0</version>
+        </App_Api>
+    </modules>
+    <frontend>
+        <routers>
+            <api>
+                <use>standard</use>
+                <args>
+                    <module>App_Api</module>
+                    <frontName>app_api</frontName>
+                </args>
+            </api>
+        </routers>
+    </frontend>
+    <global>
+        <models>
+            <api>
+                <class>App_Api_Model</class>
+                <resourceModel>Api_Mysql4</resourceModel>
+            </api>
+            <Api_Mysql4>
+                <class>App_Api_Model_Resource_Mysql4</class>
+                <entities>
+                    <api></api>
+                </entities>
+            </Api_Mysql4>
+        </models>
+    </global>
+</config>

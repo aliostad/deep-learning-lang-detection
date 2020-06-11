@@ -1,0 +1,190 @@
+#!/bin/bash
+
+IPSET_SAVE_FILE=/var/lib/xge_ipset.save
+SNAT_SAVE_FILE=/var/lib/xge_firewall_snat.save
+SNAT_TMPFILE=/tmp/firewall/xge_firewall_snat.$$
+
+make_tree() {
+	local TABLE=$1
+	local PARENT=${app}_${2}
+	local PREFIX=${app}_${3}
+	local DIRECT=$4
+	local am bm cm a depth levels
+
+	iptables(){
+		local tmp="$*"
+		tmp=${tmp//-t mangle/}
+		tmp=${tmp//-t filter/}
+		tmp=${tmp//-t nat/}
+		echo $tmp >> $iptables_file
+	}
+
+	#подготовим правила для iptables-restore
+	echo "*$TABLE" >>  $iptables_file
+
+	depth=4
+	levels=2 # not used now
+	am=$(( (2**depth)-1 ))
+	bm=$(( am << depth ))
+	a=$(( 2**depth ))
+	while ((a--)); do
+		av=$((a<<(depth*0)))
+		iptables -t ${TABLE} -N ${PREFIX}_${a}
+		iptables -t ${TABLE} -A $PARENT -$DIRECT 0.0.$((av/256)).$((av%256))/0.0.$((am/256)).$((am%256)) -j ${PREFIX}_${a}
+
+		b=$(( 2**depth ))
+		while ((b--)); do
+			bv=$((b<<(depth*1)))
+			iptables -t ${TABLE} -N ${PREFIX}_${a}_${b}
+			iptables -t ${TABLE} -A ${PREFIX}_${a} -$DIRECT 0.0.$((bv/256)).$((bv%256))/0.0.$((bm/256)).$((bm%256)) -j ${PREFIX}_${a}_${b}
+		done
+		# echo -n .
+	done
+	echo "COMMIT" >> $iptables_file
+	# обязательно unset, иначе дальше будет плохо и будет вызываться эта функция, а не /sbin/iptables
+	unset iptables
+	# echo "всего цепочек + столько же правил $((2**depth*(2**(depth*levels)-1)/(2**depth-1)))"
+}
+
+get_app_chains() {
+	iptables-save -t $1 | grep -o ":${app}_[A-Za-z0-9_-]*" | tr -d ':'
+}
+
+flush_chains() {
+	local tmpfile=/tmp/firewall/firewall_$FUNCNAME.$$
+	get_app_chains $1 > $tmpfile
+	while read chain; do
+		iptables -t $1 -F $chain
+	done < $tmpfile
+	rm -f $tmpfile
+}
+
+delete_chains() {
+	local tmpfile=/tmp/firewall/firewall_$FUNCNAME.$$
+	get_app_chains $1 > $tmpfile
+	while read chain; do
+		iptables -t $1 -X $chain
+	done < $tmpfile
+	rm -f $tmpfile
+}
+
+remove_links() {
+	local table="$1"
+	local tmpfile=/tmp/firewall/firewall_$FUNCNAME.$$
+	iptables-save -t $table | grep -- "-j ${app}_[A-Za-z]*" > $tmpfile
+	while read line; do
+		iptables -t $table ${line/A/D}
+	done < $tmpfile
+	rm -f $tmpfile
+}
+
+iptables_cleanup() {
+	for table in filter nat mangle; do
+		flush_chains $table
+		remove_links $table
+		delete_chains $table
+	done
+}
+
+flush_ipset() {
+	ipset flush
+}
+
+destroy_ipset() {
+	while read tmp set tmp; do
+		ipset destroy $set
+	done <<< "$(ipset -o save list | grep "^create.*")"
+}
+
+ipset_cleanup() {
+	flush_ipset
+	destroy_ipset
+}
+
+ipset_save() {
+	[ ! -d /tmp/firewall/ ] && mkdir -p /tmp/firewall/
+	if ipset -o save -l > $IPSET_SAVE_FILE.$$; then
+		mv -f $IPSET_SAVE_FILE.$$ $IPSET_SAVE_FILE
+	else
+		return 1
+	fi
+}
+
+ipset_restore() {
+	[ ! -s $IPSET_SAVE_FILE ] && return 1
+	cp -f $IPSET_SAVE_FILE /tmp/firewall/ipset.tmp.$$
+	grep '^create' $IPSET_SAVE_FILE > /tmp/firewall/ipset_create.tmp.$$
+
+	while read t list t; do
+		# ipset destroy $list &>/dev/null && continue
+		ipset destroy $list 2>/tmp/firewall/ipset_destroy.out.$$ && continue
+		fgrep 'does not exist'  /tmp/firewall/ipset_destroy.out.$$ && continue
+		ipset flush $list &>/dev/null
+		grep -v "^create $list" /tmp/firewall/ipset.tmp.$$ > /tmp/firewall/ipset2.tmp.$$
+		mv -f /tmp/firewall/ipset2.tmp.$$ /tmp/firewall/ipset.tmp.$$
+	done < /tmp/firewall/ipset_create.tmp.$$
+
+	if ! ipset restore < /tmp/firewall/ipset.tmp.$$; then
+		ipset restore < $IPSET_SAVE_FILE
+		echo 'TODO: восстанавливаться из сессий если не получилось с первого раза'
+	fi
+}
+
+iptables_snat_save() {
+	[ ! -d /tmp/firewall/ ] && mkdir -p /tmp/firewall/
+	exec 20> /var/lock/xge_iptables.lock
+	flock -x -w 10 20
+	if iptables-save --table=nat > $SNAT_TMPFILE; then
+		echo '*nat' > $SNAT_SAVE_FILE.$$
+		grep "xge_.*-j SNAT --to-source" $SNAT_TMPFILE >> $SNAT_SAVE_FILE.$$
+		echo 'COMMIT' >> $SNAT_SAVE_FILE.$$
+		mv -f $SNAT_SAVE_FILE.$$ $SNAT_SAVE_FILE
+	fi
+	flock -u 20
+}
+
+iptables_snat_restore() {
+	[ ! -s $SNAT_SAVE_FILE ] && return 1
+	if ! iptables-restore --noflush --table=nat < $SNAT_SAVE_FILE; then
+		iptables-restore --noflush --table=nat < $SNAT_SAVE_FILE
+		echo 'TODO: восстанавливаться из сессий если не получилось с первого раза'
+	fi
+}
+
+firewall_clear() {
+	mkdir -p /var/log/xge /tmp/firewall /var/lock
+	$shaper
+	iptables_cleanup
+	ipset_cleanup
+}
+
+tc_restore() {
+	[ ! -s /var/lib/xge_tc.save ] && return 0
+	/usr/local/bin/tc_restore.sh < /var/lib/xge_tc.save
+}
+
+tc_save() {
+	/usr/local/bin/tc_save.sh > /var/lib/xge_tc.save
+}
+
+save() {
+	tc_save
+	ipset_save
+	iptables_snat_save
+}
+
+restore() {
+	#TODO: сверка с сессиями
+	ipset_restore
+	iptables_snat_restore
+	tc_restore
+}
+
+reset() {
+	firewall_clear
+	restart
+}
+
+get_app_list() {
+	tail -1 <<< "$(sed -re 's/^.*"apps": \[|].*$|[,"]//g;' /var/reg/*.reg)"
+}

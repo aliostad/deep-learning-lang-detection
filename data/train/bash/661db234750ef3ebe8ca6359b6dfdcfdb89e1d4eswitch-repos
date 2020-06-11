@@ -1,0 +1,67 @@
+#!/bin/bash
+################################################################################
+
+ROOT=`readlink -f "$1"`
+shift
+REPOs=( $* )
+
+# Check number of arguments
+[[ -z "$ROOT" ]] && echo "No repo root specified" && exit 1
+[[ -z "${REPOs[@]}" ]] && echo "No repos specified" && exit 1
+
+ TIMEOUT="/usr/bin/timeout"
+  LOGGER="/usr/bin/logger -t 'snapshot-swapper-ng'"
+    GREP="/bin/grep"
+      PS="/bin/ps"
+      MV="mv"
+
+# Constants
+FG_SUF="_fg"
+BG_SUF="_bg"
+TOBG_SUF="_to_bg"
+
+BINROOT=$(dirname `readlink -f "$0"`)
+DEBUG="yes"
+
+# Includes
+. $BINROOT/util/msgs.sh
+
+################################################################################
+for repo in "${REPOs[@]}"; do
+    repopath="$ROOT/$repo"
+    repo_fg="$repopath/${repo}${FG_SUF}"
+    repo_bg="$repopath/${repo}${BG_SUF}"
+    repo_tobg="$repopath/${repo}${TOBG_SUF}"
+
+    #info "Checking for unclean shutdown of $repo"
+    if [[ -e "$repo_tobg" ]]; then
+	    debug "Found dirty '$repo_tobg'"
+
+        if [[ ! -e "$repo_bg" ]]; then
+            info "Renaming orphaned $repo_tobg to $repo_bg"
+            $MV "$repo_tobg" "$repo_bg"
+        elif [[ ! -e "$repo_fg" ]]; then
+            info "Renaming orphaned $repo_tobg to $repo_fg"
+            $MV "$repo_tobg" "$repo_fg"
+        fi
+    fi
+
+    #info "Checking for bg/fg $repo repos"
+    [[ -e "$repo_fg" ]] || fatal "'$repo_fg' not found"
+    [[ -e "$repo_bg" ]] || fatal "'$repo_bg' not found"
+    
+    #info "Switching bg/fg $repo repos"
+    if ! (mv "$repo_fg"   "$repo_tobg" && \
+    mv "$repo_bg"   "$repo_fg" && \
+    mv "$repo_tobg" "$repo_bg"); then
+        error "Failed to switch repos '$repo_fg' and '$repo_bg'"
+        continue
+    fi
+done
+
+if [ ! -z "$errors" ]; then
+    echo ""
+    echo -e "\e[0;31mFollowing errors occured during execution:\e[0m"
+    echo -e "$errors"
+    exit 1
+fi

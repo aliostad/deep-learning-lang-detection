@@ -1,0 +1,22 @@
+#!/bin/bash
+
+function load_bashrc_component { 
+#    echo -e Loading bashrc settings from:: $ECHO_CYAN$1$ECHO_DEFAULT
+    source $1
+}
+
+function load_local_bashrc_component {
+    if [ -a $1 ]
+      then
+	local=local
+#        echo -e Loading $ECHO_PURPLE$local$ECHO_DEFAULT bashrc settings from:: $ECHO_CYAN$1$ECHO_DEFAULT
+        source $1
+    fi
+}
+
+load_bashrc_component $KFS_SETTINGS/bashrc/constants
+load_local_bashrc_component $KFS_LOCAL_SETTINGS/bashrc_settings
+load_bashrc_component $KFS_BASHRC/git_context
+load_bashrc_component $KFS_BASHRC/aliases
+load_local_bashrc_component $KFS_LOCAL_ALIASES
+

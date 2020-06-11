@@ -1,0 +1,37 @@
+.Partial.Partial--messageList {}
+
+.Partial.Partial--messageList .Partial--messageList-main,
+.Partial.Partial--messageList .Partial--messageList-sidebar {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.Partial.Partial--messageList .Partial--messageList-main {
+  width: 65%;
+}
+
+.Partial.Partial--messageList .Partial--messageList-sidebar {
+  margin-left: 5%;
+  width: 30%;
+}
+
+@media (max-width: 740px) {
+  .Partial.Partial--messageList .Partial--messageList-main,
+  .Partial.Partial--messageList .Partial--messageList-sidebar {
+    display: block;
+    margin: 0;
+    width: auto;
+  }
+}
+
+@media (min-width: 489px) and (max-width: 740px) {
+  .Partial.Partial--messageList .Partial--messageList-sidebar .Partial--messageList-sidebar-element {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+  }
+
+  .Partial.Partial--messageList .Partial--messageList-sidebar .Partial--messageList-sidebar-element:first-child {
+    margin-right: 4%;
+  }
+}

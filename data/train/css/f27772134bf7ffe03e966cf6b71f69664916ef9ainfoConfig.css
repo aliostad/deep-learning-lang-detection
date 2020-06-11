@@ -1,0 +1,34 @@
+/**
+ * Sencha GXT 3.1.1 - Sencha for GWT
+ * Copyright(c) 2007-2014, Sencha, Inc.
+ * licensing@sencha.com
+ *
+ * http://www.sencha.com/products/gxt/license/
+ */
+@def headerColor value('theme.info.headerText.color');
+@def headerSize value('theme.info.headerText.size');
+@def headerWeight value('theme.info.headerText.weight');
+@def headerFamily value('theme.info.headerText.family');
+@def messageColor value('theme.info.messageText.color');
+@def messageSize value('theme.info.messageText.size');
+@def messageWeight value('theme.info.messageText.weight');
+@def messageFamily value('theme.info.messageText.family');
+
+@def headerPadding value('theme.info.headerPadding.toString');
+@def messagePadding value('theme.info.messagePadding.toString');
+
+.header {
+  color: headerColor;
+  font-size: headerSize;
+  font-weight: headerWeight;
+  font-family: headerFamily;
+  padding: headerPadding;
+}
+
+.message {
+  color: messageColor;
+  font-size: messageSize;
+  font-weight: messageWeight;
+  font-family: messageFamily;
+  padding: messagePadding;
+}

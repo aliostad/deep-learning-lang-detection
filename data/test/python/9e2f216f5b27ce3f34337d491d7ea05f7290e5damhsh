@@ -1,0 +1,30 @@
+#!/usr/bin/env python
+
+import matahari.shell, matahari.api
+
+
+def getoptions():
+    from optparse import OptionParser
+
+    parser = OptionParser('usage: %prog [-d] [-b BROKER] [-p PORT] [SCRIPT]')
+    parser.add_option('-d', '--debug', dest='debug', action='store_true',
+                      default=False, help='Enable debugging output')
+    parser.add_option('-b', '--broker', dest='broker', action='store',
+                      default='localhost', type='string',
+                      help='Specify the broker to connect to')
+    parser.add_option('-p', '--port', dest='port', action='store',
+                      default=49000, type='int',
+                      help='Specify the broker port to connect to')
+    return parser.parse_args()
+
+def main():
+    options, args = getoptions()
+    connection = matahari.api.BrokerConnection(options.broker, options.port)
+
+    shell = matahari.shell.MatahariShell(connection, debug=options.debug)
+
+    shell(*args)
+
+
+if __name__ == '__main__':
+    main()

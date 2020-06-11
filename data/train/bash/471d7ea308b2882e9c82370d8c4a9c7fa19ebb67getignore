@@ -1,0 +1,41 @@
+#!/bin/bash
+
+#Создан:  Вс 25 авг 2013 19:40:12
+#Изменён: Сб 22 мар 2014 12:02:37
+
+# Добавление файлов с меткой +GITIGNORE в исключения .git
+
+# Создание копии файлов с меткой +GITIGNORE +SAMPLE
+make_sample() {
+	\grep -E '^.{1,5}\+GITIGNORE \+SAMPLE' "$1" 2>&- > /dev/null && \
+	if [ ! -f "${1/.sample/}.sample" ]; then
+		cp -iv $1 $1.sample
+		sed -i 's/\+GITIGNORE.\+SAMPLE/+SAMPLE/' $1.sample
+	fi
+}
+
+# Метка должна располагаться не далее пятой колонки
+\grep -E '^.{1,5}\+GITIGNORE' -R --exclude-dir=var 2>&- > /tmp/gitignore.$$
+
+if [ -f ".gitignore" ]; then
+	while read line; do
+		echo "COPY:" "$line"
+		make_sample "$line"
+		sed -i "/${line//\//.}/d" /tmp/gitignore.$$ 2> /dev/null
+	done < .gitignore
+fi
+
+if [ -f "/tmp/gitignore.$$" ]; then
+	while read line; do
+		make_sample "${line/:*/}"
+	done < /tmp/gitignore.$$
+fi
+
+echo "\n# [ $(\date +%d.%m.%Y) ]\n" >> .gitignore
+
+cut -d ':' -f 1 /tmp/gitignore.$$ | sort -u >> .gitignore
+
+echo >> .gitignore
+
+\rm /tmp/gitignore.$$
+

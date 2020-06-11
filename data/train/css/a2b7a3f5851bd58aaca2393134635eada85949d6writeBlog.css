@@ -1,0 +1,40 @@
+.writeContainer{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+.writeTitle{
+	height: 40px;
+	line-height: 40px;
+	border: 2px solid gray;
+	margin-bottom: 20px;
+}
+.writeTitle span{
+	float: left;
+	width: 60px;
+	text-align: right;
+	margin-right: 30px;
+}
+.writeTitleText{
+	width: 300px;
+}
+#editor1{
+	width: 100%;
+	height: 300px;
+	resize: none;
+}
+#fb_submit{
+	width:100px; height:30px; cursor:pointer;
+	background-color: #0CB228;
+	border-radius: 5px;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+}
+#fb_submit:hover{
+	background-color: #ccc;
+}

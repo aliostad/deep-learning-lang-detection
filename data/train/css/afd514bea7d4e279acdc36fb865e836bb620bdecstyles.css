@@ -1,0 +1,58 @@
+.block_trust_model.content {text-align:center;padding-top:5px;}
+.block_trust_model .content .info {text-align:center;}
+
+/*Mostrar Texto*/
+.block_trust_model .texto {
+color: #AA5555; 
+font-size: 12pt; 
+font-family: cursive; 
+text-align: center;
+}
+.block_trust_model .panel{
+width: 75%;
+height: 60px;
+margin: 1em; 
+border: solid 1px;
+border-style: solid;
+border-color: #0000ff;
+}
+
+/*Mostrar las dimensiones del EA al estudiante*/
+.block_trust_model ul.dimensiones {
+  /* el rectángulo contenedor */
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  /* propiedades optativas */
+  background-color: #CEDBDC;
+  border: 1px solid #CEDBDC;
+}
+.block_trust_model ul.dimensiones li a {
+  /* el enlace de cada item */
+  display: block;
+  text-decoration: none;
+  /* propiedades optativas */
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  color: #2A5A5F;
+  font-size: 16px;
+  width: 100%;
+  text-align:center;
+  font-family: cursive;
+}
+
+.block_trust_model ul.dimensiones li span {
+  /* el contenido permanece oculto por defecto */
+  display:  none;
+}
+.block_trust_model ul.dimensiones li a:hover span {
+  /* el contenido se muestra al pasar el cursor encima */
+  display: block;
+  /* propiedades optativas */
+  font-size: 14px;
+  padding: 4px 0;
+  color: #2A5A5F;
+  text-align:left;
+  font: 85% monospace;
+}
+

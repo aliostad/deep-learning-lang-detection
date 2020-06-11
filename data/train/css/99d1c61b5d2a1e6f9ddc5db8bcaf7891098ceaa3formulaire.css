@@ -1,0 +1,279 @@
+/* Feuille de style ASCODOCPSY pour les formulaires */
+/* ========================================================================== */
+/*                              FORMULAIRES                                   */
+/* ========================================================================== */
+
+/*div.checklist label.red{background-color: pink; width: 6em; display: inline-block;}*/
+
+.error
+{
+	color: red;
+}
+
+/* Libellé de champ */
+label.field,
+label.text, 
+label.checklist, 
+label.textarea,
+label.select
+{
+/*	font-weight: bold;*/
+    width: 10em;
+    display: block;
+	float: left;
+	text-align: right;
+	padding-right: 1em;
+}
+form
+{
+/*border: 1px solid red;*/
+/*display: inline;*/
+	margin: 0em;
+}
+	
+form.form div.buttons
+{
+	text-align: right;
+	margin: 0;
+}
+
+form.form div.buttons input
+{
+	padding: 0.3em;
+	height: 2.5em; /* garder synchro avec le top: affecté à input.reset */
+}
+
+form.form div.buttons input:hover
+{
+	background-color: #FFFFC0;
+}
+
+form.form div.buttons input.submit
+{
+/*	float: right;*/
+}
+
+form.form div.buttons input.reset
+{
+/*	float: left;*/
+}
+
+form.search
+{
+	width: 55em;
+	float: left;
+}
+
+input.reset
+{
+/*	width: 10em;*/
+	float: left;
+	clear: both;
+	position: relative;
+	top: -2.5em;
+	left: 0;
+}
+
+/* les marges de 1em entraînent un décalage des cases à cocher sous IE
+   combinées avec width: 55em de form.reset
+*/
+form.search div
+{
+	margin: 0 0 0.2em 0;
+	padding: 0;
+	clear: both;
+}
+
+form.search div div
+{
+	padding-bottom: 0;
+	clear: none;
+}
+form.search div div div
+{
+}
+form.search div div span
+{
+}
+
+/* Formulaire de recherche : libellé de champ */
+form.search label.field, 
+form.search label.text, 
+form.search label.checklist,
+form.search label.select
+{
+	font-weight: bold;
+	width: 16em;
+}
+
+form.search div.checklist,
+form.search div.select
+{
+	margin-left: 17em;
+}
+
+/*
+form.search div.checklist label.check
+{
+	display: inline-block;
+	width: 7em;
+}
+*/
+
+form.search div input.text
+{
+	width: 35em;
+	margin: 0;
+	padding: 0 0.2em;
+}
+
+form.search div.date
+{
+	margin-left: 4em;
+}
+
+form.search div.date label.select
+{
+	font-weight: normal;
+}
+
+form span.exemple,
+form p.exemple
+{
+	font-size: 0.8em;
+	margin: 0.1em 0 0 21.5em;
+}
+
+/* ========================================================================== */
+/*                        FORMULAIRE DE MODIFICATION                          */
+/* ========================================================================== */
+form.load
+{
+   width: 100%;
+   float: left;
+}
+
+form.load fieldset
+{
+	border: 1px solid #663366;
+	background-color: #E9E4F1;
+	margin: 0.5em;
+}
+
+form.load fieldset legend
+{
+	font-weight: bold;
+	/*color: #663366;*/
+	color: #FFF;
+	padding: 0.05em 0.5em 0.1em 0.5em;
+	background-color: #663399;
+}
+
+/* DEBUT patch pour IE */
+/* lorsqu'on applique une couleur de fond à un fieldset, IE fait déborder la couleur au dessus du bord haut.
+pour corriger ça, on décale la légende vers le bas */ 
+
+form.load fieldset
+{
+    position: relative;
+    margin-top: 2em;
+}
+html>body form.load fieldset
+{    
+    margin-top: 1em;
+}
+form.load legend
+{
+    position: relative;
+    top: -0.6em;
+} 
+
+/* FIN patch pour IE */
+
+form.load div
+{
+    clear: left;
+	margin-bottom: 1px;
+}
+
+form.load label.text,
+form.load label.textarea
+{
+/*	font-weight: bold;*/
+    width: 15em;
+	float: left;
+	text-align: left;
+	padding-right: 1em;
+}
+
+form.load input.text,
+form.load textarea
+{
+   	border: 1px solid #a0a0a0;
+    font-size: 1em;
+    font-family: 'courier new', monospace;
+	padding: 0.2em 0.2em 0.2em 0.2em;
+}
+
+form.load input.fullwidth,
+form.load textarea.fullwidth
+{
+	width: 98%;
+}
+
+form.load fieldset div input.fullwidth,
+form.load fieldset div textarea.fullwidth
+{
+	width: 77%;
+}
+
+/* Libellé des champs */
+form.load div label,
+form.load div label.checklist,
+form.load div label.textarea
+{
+	width: 15em;
+}
+
+form.load div.checklist,
+form.load div.radiolist
+{
+	width: 100%;
+	padding: 0;
+}
+
+
+form.load input.text:focus,
+form.load textarea:focus,
+form.load input.text:active,
+form.load textarea:active
+{
+	background-color: #FFEFEF;
+}
+
+form.load fieldset.mandatory legend,
+form.load label.mandatory
+{
+/*	color: #FF0000;*/
+/*    background-image: url('loc.png');*/
+/*    background-image: url('/asco/web/FabWeb/images/famfamfam/sylk/asterisk_orange.png');*/
+/*
+	    background-image: url('arrow_right.gif');
+    
+    background-repeat: no-repeat;
+    background-position: top left;
+    text-indent: 20px;
+*/
+/*    padding-left: 20px;*/
+}
+
+textarea.mandatory,
+input.mandatory
+{
+	border: 1px solid red!important;
+}
+
+label.mandatory
+{
+	font-weight: bold;
+}

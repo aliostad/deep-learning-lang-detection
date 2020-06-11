@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//ibatis.apache.org//DTD SQL Map Config 2.0//EN"
+	"http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+
+<sqlMapConfig>
+	<settings cacheModelsEnabled="true" useStatementNamespaces="false" />
+
+	<sqlMap resource="mapping/post-mapping.xml"/>
+	<sqlMap resource="mapping/attachFile-mapping.xml"/>
+	<sqlMap resource="mapping/club-mapping.xml" />
+	<sqlMap resource="mapping/clubTest-mapping.xml"/>
+	<sqlMap resource="mapping/clubJoin-mapping.xml"/>
+	<sqlMap resource="mapping/comments-mapping.xml"/>
+	<sqlMap resource="mapping/correctAnswer-mapping.xml"/>
+	<sqlMap resource="mapping/example-mapping.xml"/>
+	<sqlMap resource="mapping/grade-mapping.xml" />
+	<sqlMap resource="mapping/memberAnswer-mapping.xml" />
+	<sqlMap resource="mapping/question-mapping.xml" />
+	<sqlMap resource="mapping/test-mapping.xml" />
+	<sqlMap resource="mapping/faq-mapping.xml" />
+	<sqlMap resource="mapping/member-mapping.xml"/>
+	<sqlMap resource="mapping/board-mapping.xml"/>
+	
+</sqlMapConfig>
+
+
+
+
+
+
+
+
+
+

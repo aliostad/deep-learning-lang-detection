@@ -1,0 +1,244 @@
+body {
+  margin: 10px;
+  font-family: sans-serif;
+}
+
+.flex-box {
+  display: flex;
+}
+
+.container {
+  margin: auto;
+  width: 1000px;
+}
+
+/*
+Svg
+*/
+
+.svg {
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+.header-svg {
+  background-size: 50px;
+}
+
+.home-svg {
+  background-image: url('icons/home.svg');
+}
+
+.write-svg {
+  background-image: url('icons/write.svg');
+  background-position: right;
+}
+
+.vote-svg {
+  background-size: 20px;
+  font-size: 20px;
+  background-position: center;
+}
+
+.up-svg {
+  background-image: url('icons/vote-up.svg');
+}
+
+.up-svg-green {
+  background-image: url('icons/vote-up-green.svg');
+}
+
+.down-svg {
+  background-image: url('icons/vote-down.svg');
+}
+
+.down-svg-red {
+  background-image: url('icons/vote-down-red.svg');
+}
+
+/*
+Header
+*/
+
+header {
+  height: 60px;
+  font-size: 50px;
+}
+
+header > div {
+  width: 25%;
+}
+
+.home {
+  text-align: left;
+}
+
+.category {
+  text-align: center;
+}
+
+.write {
+  text-align: right;
+}
+
+/*
+Common
+*/
+
+.vote {
+  width: 10%;
+  text-align: center;
+}
+
+.text {
+  width: 90%;
+}
+
+.vote > div, .text > div {
+  margin: 5px;
+}
+
+.text > div:nth-child(2) {
+  font-size: 14px;
+  color: #999;
+}
+
+.options {
+  width: 50px;
+  float: right;
+}
+
+textarea {
+  width: 99%;
+  height: 100px;
+  font-size: 15px;
+}
+
+.submit {
+  float: left;
+}
+
+button {
+  font-size: 15px;
+}
+
+.author {
+  float: right;
+}
+
+input {
+  width: 100px;
+  font-size: 15px;
+}
+
+/*
+Main page
+*/
+
+.post-sort {
+  padding-top: 50px;
+  width: 20%;
+  height: 100px;
+  margin: auto;
+  font-size: 20px;
+}
+
+.post-sort > select {
+  height: 35px;
+  font-size: 20px;
+}
+
+.post {
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+/*
+Post page
+*/
+
+.post-detail {
+  margin: 80px 0 50px;
+}
+
+.post-detail > .vote {
+  margin-top: 20px;
+}
+
+.post-detail > .text > div:first-of-type {
+  font-size: 40px;
+}
+
+.comment-section {
+  width: 90%;
+  margin: auto;
+}
+
+.comment-section > div {
+  margin: 5px;
+}
+
+.comment-num {
+  font-size: 25px;
+}
+
+.comment-sort {
+  margin-bottom: 20px !important;
+}
+
+.comment-old {
+  margin-top: 50px !important;
+}
+
+.comment-old-detail {
+  margin-bottom: 20px;
+}
+
+.comment-old-detail > div > div > .vote-svg{
+  background-size: 15px;
+  font-size: 15px;
+}
+
+.html-space {
+  white-space: pre-wrap
+}
+
+/*
+Write page
+*/
+
+.write-section {
+  margin-top: 80px;
+}
+
+.write-section > div {
+  margin: 10px;
+}
+
+.write-section > div > input {
+  margin-top: 5px;
+  width: 99%;
+}
+
+.write-section > div > textarea {
+  margin-top: 5px;
+  height: 400px;
+}
+
+.write-section > div > .category {
+  float: right;
+  margin-right: 10px;
+}
+
+.category > select {
+  font-size: 15px;
+}
+
+/*
+404 page
+*/
+
+.not-found {
+  padding-top: 50px;
+  text-align: center;
+}

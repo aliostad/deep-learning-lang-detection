@@ -1,0 +1,227 @@
+#!/bin/bash
+CACHE_PATH='/storage/server-files/system/pacman-cache'
+LOCK="/run/lock/$(basename "$(readlink -f "$0")")"
+LOG="/var/log/$(basename "$(readlink -f "$0")").log"
+REPO_NAME="dray.be"
+REPO_PATH="/srv/repo"
+LINK_CACHES="true"
+
+usage() {
+	cat <<-EOF
+	usage: $(basename "$(readlink -f "$0")") (full path to repo | repo name | full path to package)
+
+	This script will udpate the specified repo(s).
+
+	OPTIONS:
+	-h      Show this help
+	-v	Verbose
+	EOF
+}
+
+clock() { echo -n "[$(date +%H:%M:%S)]"; }
+
+function update_repo {
+	# Input: repo-name (file|file-glob)
+	repo=$1
+	files=$2
+	if [[ -z $repo ]] || [[ -z $files ]]
+	then
+		echo "$(clock) update_repo called without valid input. Aborting"
+		exit 1
+	fi
+	[[ $repo == "any" ]] && cur_repo_name="${REPO_NAME}-any" || cur_repo_name="${REPO_NAME}"
+	echo "$(clock) Updating repo $repo with file[s]: $files"
+	eval repo-add "${REPO_PATH}/${repo}/${cur_repo_name}.db.tar.gz" "$REPO_PATH/$repo/$files"
+	eval repo-add -f "${REPO_PATH}/${repo}/${cur_repo_name}.files.tar.gz" "$REPO_PATH/$repo/$files"
+}
+
+function link_repo {
+	# Input: repo
+	repo=$1
+	if [[ -z $repo ]]
+	then
+		echo "$(clock) link_repo called without valid input. Aborting"
+		exit 1
+	fi
+
+	if [[ $LINK_CACHES == 'true' ]]
+	then
+		if [[ $repo == "any" ]]; then
+			# Any repo: link to all caches
+			for package in "$REPO_PATH/$repo"/*.pkg.tar*
+			do
+				echo "$(clock) Linking package ${package##*/} all available caches..."
+				for cache in "$CACHE_PATH"/*
+				do
+					#TODO: Change to cp --reflink=auto once RAID is btrfs
+					ln -Pf "$package" "$cache/$(basename "$package")"
+				done
+			done
+		else
+			# Not any repo: link to specific architecture
+			for package in "$REPO_PATH/$repo"/*.pkg.tar*
+			do
+				echo "$(clock) Linking package ${package}..."
+				#TODO: Change to cp --reflink=auto once RAID is btrfs
+				ln -Pf "$package" "$CACHE_PATH/$repo/$(basename "$package")"
+			done
+		fi
+	fi
+}
+
+function read_package_name {
+	# Input: filename
+	package=$1
+	if [[ -z $package ]] || [[ ! -f $package ]]
+	then
+		echo "read_package_name called without a valid argument. Aborting"
+		exit 1
+	fi
+
+	pacman -Qp "$package" | cut -d' ' -f1
+}
+
+function clean_old_versions {
+	# Input: repo-name package-name
+	repo=$1
+	name=$2
+	if [[ -z $repo ]] || [[ -z $name ]]
+	then
+		echo "$(clock) clean_old_versions called without enough arguments. Aborting"
+		exit 1
+	fi
+
+	echo "$(clock) Checking for old versions of package '$name'"
+	cleanlist=""
+	for clean_package in "$REPO_PATH/$repo/$name"*
+	do
+		curname=$(read_package_name "$clean_package")
+		if [[ $curname == "$name" ]]
+		then
+			cleanlist="$cleanlist $clean_package"
+		fi
+	done
+
+	delete_list=$(echo "$cleanlist" | tr ' ' '\n' | xargs ls -l --time-style=+%s | sort -k 6 | awk '{ print $7 }' | head -n -1)
+	for clean_package in $delete_list
+	do
+		if [[ -f $clean_package ]]
+		then
+			echo "$(clock) Deleting old version of ${name}: ${clean_package}..."
+			rm -rf "$clean_package"
+		fi
+	done
+}
+
+function full_repo_update {
+	# Input: reponame
+	repo=$1
+	echo "$(clock) Performing full update on repo '$repo'"
+
+	for package in "$REPO_PATH/$repo"/*.pkg.tar*
+	do
+		packagelist="$packagelist $(read_package_name "$package")"
+	done
+	packagelist=$(echo "$packagelist" | tr ' ' '\n' | uniq)
+
+	for package_name in $packagelist
+	do
+		clean_old_versions "$repo" "$package_name"
+	done
+
+	update_repo "$repo" "*.pkg.tar*"
+	link_repo "$repo"
+}
+
+function get_repo_from_path {
+	# Input: path-to-repo(or package)
+	path=$1
+	echo "$path" | grep -oE '/(x86_64|any)/' | sed 's|/||g'
+}
+
+function single_package_repo_update {
+	# Input: path-to-package
+	update_package=$1
+	repo=$(get_repo_from_path "$update_package")
+	echo "$(clock) Adding package '${update_package##*/}' to '$repo' repo"
+
+	package_name="$(read_package_name "$update_package")"
+	clean_old_versions "$repo" "$package_name"
+	update_repo "$repo" "${update_package##*/}"
+	link_repo "$repo"
+}
+
+function named_update {
+	# Input: repo-name
+	case $1 in
+		x86_64)
+			full_repo_update "x86_64"
+			;;
+		any)
+			full_repo_update "any"
+			;;
+		*)
+			echo -e '\e[31;1mNo valid input detected!\e[0m'
+			echo "Input was '$1'"
+			usage
+			exit 1
+			;;
+	esac
+}
+
+if [[ $EUID -ne 0 ]]; then
+	echo "This script must be run as root" 1>&2
+	exit 1
+fi
+
+while getopts ":hv" OPTION
+do
+	case $OPTION in
+		h)
+			usage; exit 0;;
+		v)
+			verbose=1;;
+	esac
+done
+shift $((OPTIND - 1))
+
+if [[ -n $verbose ]]; then
+	exec > >(tee -a "$LOG") 2>&1
+else
+	exec > "$LOG" 2>&1
+fi
+
+exec 200>"$LOCK"
+
+if flock -xw 30 200
+then
+	# Check for either full repo path, repo name, or full package path
+	if [[ -d /$1 ]]
+	then
+		# Full path to repo
+		named_update "$(get_repo_from_path "$1")"
+	elif [[ -f /$1 ]]
+	then
+	       if echo "$1" | grep -q 'pkg.tar'
+		then
+			# Full path to package
+			single_package_repo_update "$1"
+		else
+			# Skip this as it is a file that is not a package
+			true
+		fi
+	elif echo "$1" | grep -q '/'
+	then
+		# Probably a file (or path), which doesn't exist/ is not a pkg. ignore.
+		true
+	else
+		# Hopefully a repo name
+		named_update "$1"
+	fi
+
+	#Fix permissions
+	chown -R downloads. /srv/repo
+	chmod -R g+rw /srv/repo
+else
+	echo "$(clock) Unable to obtain lock. Aborting" && exit 1
+fi

@@ -1,0 +1,76 @@
+.o_write .footer {
+    padding: 5px 0 0 35px;
+}
+.o_write {
+    background: none repeat scroll 0 0 #EFF5F8;
+    border-bottom: 1px solid #B7D2DF;
+    border-top: 2px solid #B7D2DF;
+    padding: 10px;
+}
+.o_write td {
+    line-height: 20px;
+    padding: 2px;
+}
+.o_write input[type="text"] {
+    border: 1px solid #7F9DB9;
+}
+
+.cydz {
+    margin-bottom: 7px;
+    overflow: hidden;
+}
+.cydz li {
+    background: none repeat scroll 0 0 #F8FBFC;
+    border: 1px dotted #B7D2DF;
+    color: #87B4C9;
+    display: block;
+    float: left;
+    line-height: 150%;
+    margin-bottom: 5px;
+    margin-right: 7px;
+    overflow: hidden;
+    padding: 5px 5px 5px 2px;
+    width: 148px;
+}
+.cydz li.xz {
+    background: none repeat scroll 0 0 #FFFAEE;
+    border: 1px dotted #F9BA53;
+    color: #F8AA27;
+}
+.cart3_1 {
+    background: url("../images/btn/img-12.gif") no-repeat scroll left center transparent;
+    color: #444444;
+    font-size: 18px;
+    font-weight: bold;
+    height: 31px;
+    line-height: 31px;
+    padding-left: 50px;
+    text-align: left;
+}
+.cart3_2 {
+    font-size: 12px;
+    margin-left: auto;
+    padding: 10px 0 15px;
+    text-align: left;
+}
+.cart3_2 font {
+    color: #FF0000;
+    font-size: 16px;
+    font-weight: bold;
+}
+.cart3_3 {
+    color: #444444;
+    font-size: 18px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+}
+.cart3_3a {
+    float: left;
+    line-height: 30px;
+}
+.cart3_3b {
+    float: right;
+    font-size: 18px;
+    line-height: 30px;
+}

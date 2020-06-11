@@ -1,0 +1,40 @@
+nav {
+	background-color: #cccccc;
+	width: 800px;
+	margin: 30px auto;
+}
+
+nav li {
+	font-size: 20px;
+}
+
+nav li a {
+	display: block;
+	width: 200px;
+	background-color: #ff6666;
+	padding: 5px 20px;
+	text-decoration: none;
+	color: #ffffff;
+	border-bottom: solid 1px white;
+	/*margin-bottom: 1px;*/
+}
+
+nav li a.last {
+	border-bottom: none;
+}
+
+/*nav li:last-child a {
+	border-bottom: none;
+}*/
+
+nav li a:hover, #home nav li a.home, #about nav li a.about, #services nav li a.services, #blog nav li a.blog, #contact nav li a.contact {
+	background-color: #cccccc;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,90 @@
+/* cui reset */
+.btn,
+.alert,
+.panel,
+.label,
+.navbar,
+.navside,
+.thumbnail,
+.form-control,
+.navbar-toggle,
+.nav-tabs>li>a,
+.dropdown-menu,
+.panel-heading,
+.pagination>li>a,
+.list-group-item,
+.input-group-addon,
+.panel-group .panel {
+    border-radius: 0 !important;
+    box-shadow: none;
+}
+.btn-pill {
+    border-radius: 1000em  !important;
+}
+
+
+/* 主导航 */
+.main-nav {
+    color: #fff;
+    margin-bottom: 0;
+    background-color: #1685d0;
+    border-color: #1685d0;
+    border-width: 0;
+}
+.main-nav .navbar-nav>li>a,
+.main-nav .navbar-toggle,
+.main-nav .navbar-toggle:focus,
+.main-nav .navbar-toggle:hover{
+    background-color: #1685d0;
+    border-color: #fff;
+    color: #fff;
+}
+.main-nav .navbar-collapse {
+    border-color: #ccc;
+}
+.main-nav .navbar-nav>li>a:hover,
+.main-nav .navbar-nav>li.active>a,
+.main-nav .navbar-nav>li.active>a:focus,
+.main-nav .navbar-nav>li.active>a:hover,
+.main-nav .navbar-nav>li.open>a,
+.main-nav .navbar-nav>li.open>a:focus,
+.main-nav .navbar-nav>li.open>a:hover{
+    background-color: #fff;
+    border-color: #fff;
+    color: #333;
+}
+@media (min-width: 768px) {
+    .main-nav .nav>li>a {
+        padding: 15px 15px 16px 15px;
+    }
+}
+@media (max-width: 768px) {
+    .main-nav .navbar-nav .open .dropdown-menu>li>a {
+        background-color: #1685d0;
+        border-color: #fff;
+        color: #fff;
+    }
+    .main-nav .navbar-nav .open .dropdown-menu>li>a:hover  {
+        background-color: #fff;
+        border-color: #fff;
+        color: #333;
+    }
+}
+
+
+/* 左侧导航 */
+.navside .navside-nav > .active > a {
+    background-color: #fff;
+}
+
+
+/* Builder */
+.builder .builder-tabs .nav>li>a {
+    padding: 8px 25px;
+    margin-right: 0;
+}
+.builder .builder-tabs .nav>li>a:hover,
+.builder .builder-tabs .nav>li.active>a {
+    border-top: 3px solid #1685d0;
+    padding-top: 6px;
+}

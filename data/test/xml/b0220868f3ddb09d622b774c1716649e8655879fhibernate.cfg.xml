@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/busisnessmanager</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">cucubau</property>
+        <mapping resource="hibernateConfig.xml"/>
+        <mapping class="repository.BugetProiect"/>
+        <mapping class="repository.Cashflow"/>
+        <mapping class="repository.CategorieBuget"/>
+        <mapping class="repository.CategorieProiect"/>
+        <mapping class="repository.CategorieStoc"/>
+        <mapping class="repository.Client"/>
+        <mapping class="repository.Fisiere"/>
+        <mapping class="repository.GantAssigs"/>
+        <mapping class="repository.GantProiect"/>
+        <mapping class="repository.GantTask"/>
+        <mapping class="repository.Industrie"/>
+        <mapping class="repository.ListaTari"/>
+        <mapping class="repository.Obiectiv"/>
+        <mapping class="repository.Organigrama"/>
+        <mapping class="repository.Pontaj"/>
+        <mapping class="repository.Proiect"/>
+        <mapping class="repository.ResurseUmane"/>
+        <mapping class="repository.Risc"/>
+        <mapping class="repository.Roles"/>
+        <mapping class="repository.StatusProiect"/>
+        <mapping class="repository.Stoc"/>
+        <mapping class="repository.ToDo"/>
+        <mapping class="repository.TranzactieStoc"/>
+        <mapping class="repository.UMBuget"/>
+        <mapping class="repository.UMPontaj"/>
+        <mapping class="repository.UMStoc"/>
+        <mapping class="repository.User"/>
+        <mapping class="repository.UserRole"/>
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>

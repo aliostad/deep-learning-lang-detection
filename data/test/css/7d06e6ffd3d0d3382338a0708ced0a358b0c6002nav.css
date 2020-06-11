@@ -1,0 +1,37 @@
+img{border:0;}
+a:link,a:hover{cursor:pointer;}
+#nav{text-indent:-9999px;margin:0;padding:0;outline:none;list-style:none;}
+#nav a{background:url('../images/navbuttons.png') no-repeat;width:114px;height:100px;display:block;}
+#nav .home a{background-position:0 0;}
+#nav .home a:hover{background-position:0 -101px;}
+#nav .home a:active{background-position:0 -202px;}
+#nav .homepage a{background-position:0 -101px;}
+#nav .homepage a:active{background-position:0 -202px;}
+#nav .blog a{background-position:-115px 0;outline:none;}
+#nav .blog a:hover{background-position:-115px -101px;}
+#nav .blog a:active{background-position:-115px -202px;}
+#nav .quilt a{background-position:-230px 0;}
+#nav .quilt a:hover{background-position:-230px -101px;}
+#nav .quilt a:active{background-position:-230px -202px;}
+#nav .quiltpage a{background-position:-230px -101px;}
+#nav .quiltpage a:active{background-position:-230px -202px;}
+#nav .mixed a{background-position:-345px 0;}
+#nav .mixed a:hover{background-position:-345px -101px;}
+#nav .mixed a:active{background-position:-345px -202px;}
+#nav .mixedpage a{background-position:-345px -101px;}
+#nav .mixedpage a:active{background-position:-345px -202px;}
+#nav .sticks a{background-position:-460px 0;}
+#nav .sticks a:hover{background-position:-460px -101px;}
+#nav .sticks a:active{background-position:-460px -202px;}
+#nav .stickspage a{background-position:-460px -101px;}
+#nav .stickspage a:active{background-position:-460px -202px;}
+#nav .books a{background-position:-575px 0;}
+#nav .books a:hover{background-position:-575px -101px;}
+#nav .books a:active{background-position:-575px -202px;}
+#nav .bookspage a{background-position:-575px -101px;}
+#nav .bookspage a:active{background-position:-575px -202px;}
+#nav .about a{background-position:-690px 0;}
+#nav .about a:hover{background-position:-690px -101px;}
+#nav .about a:active{background-position:-690px -202px;}
+#nav .aboutpage a{background-position:-690px -101px;}
+#nav .aboutpage a:active{background-position:-690px -202px;}

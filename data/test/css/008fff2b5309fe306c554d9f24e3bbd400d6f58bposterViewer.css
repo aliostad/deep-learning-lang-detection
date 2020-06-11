@@ -1,0 +1,333 @@
+#posterViewerWrap {
+	width: inherit;
+	height: inherit;
+	
+	-webkit-animation: loadPosterViewer 0.35s 1 alternate ease-out forwards;
+	-o-animation: loadPosterViewer 0.35s 1 alternate ease-out forwards;
+	-moz-animation: loadPosterViewer 0.35s 1 alternate ease-out forwards;
+	animation: loadPosterViewer 0.35s 1 alternate ease-out forwards;
+}
+
+#posterViewerBackground {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: black;
+	opacity: 0.75;
+	z-index: 0;
+	
+	-webkit-animation: loadPosterViewerBackground 0.35s ;
+	-o-animation: loadPosterViewerBackground 0.35s ;
+	-moz-animation: loadPosterViewerBackground 0.35s ;
+	animation: loadPosterViewerBackground 0.35s ;
+	
+}
+#posterViewerBackgroundExit {
+	width: inherit;
+	height: inherit;
+	position: fixed;
+	background: black;
+	opacity: 0;
+	z-index: 0;
+	
+	-webkit-animation: loadPosterViewerBackgroundExit 0.35s ;
+	-o-animation: loadPosterViewerBackgroundExit 0.35s ;
+	-moz-animation: loadPosterViewerBackgroundExit 0.35s ;
+	animation: loadPosterViewerBackgroundExit 0.35s ;
+}
+
+
+#posterViewer {
+	width: 85%;
+	height: inherit;
+	position: absolute;
+	margin: 0% 7.5%;
+	z-index: 100;
+/**/
+	background: white;
+}
+#viewPosterWrap{
+	height: inherit;
+	overflow: scroll;
+	z-index: 100;
+}
+.viewPoster {
+	width: 95%;
+	padding: 2.5%;
+	z-index: 100;
+	background: white;
+	
+	-webkit-animation: loadPosterViewer 0.35s ;
+	-o-animation: loadPosterViewer 0.35s ;
+	-moz-animation: loadPosterViewer 0.35s ;
+	animation: loadPosterViewer 0.35s ;
+}
+.viewPosterOnCollect {
+	width: 95%;
+	padding: 2.5%;
+	z-index: 100;
+	background: white;
+	
+	-webkit-animation: collectPoster 0.1s ;
+	-o-animation: collectPoster 0.1s ;
+	-moz-animation: collectPoster 0.1s ;
+	animation: collectPoster 0.1s ;
+}
+
+
+#posterInfoBar {
+	width: 300px;
+	height: inherit;
+	float: right;
+	z-index: 100;
+	
+	-webkit-animation: loadPosterViewer 0.35s ;
+	-o-animation: loadPosterViewer 0.35s ;
+	-moz-animation: loadPosterViewer 0.35s ;
+	animation: loadPosterViewer 0.35s ;
+	
+}
+#posterNavigation {
+	width: inherit;
+	height: 50px;
+	z-index: 100;
+/**/
+	background: white;
+}
+.close {
+	font-size: 40px;
+	margin: 0px 10px;
+}
+
+.posterNavigator {
+	margin: 8px 17px;
+	z-index: 100;
+/**/
+	
+}
+.posterNavigator:hover {
+	margin: 8px 17px;
+	cursor: pointer;
+	z-index: 100;
+}
+#publisherWrap {
+	width: inherit;
+	height: 100px;
+	position: relative;
+	z-index: 100;
+	cursor: pointer;
+/*
+	background: #ccebd6;  */
+}
+#publisherWrap:hover{
+	border-bottom: 1px solid gray;
+}
+#publisherPicWrap {
+	width: 100px;
+	height: 100px;
+	padding: 10px 25px;
+	z-index: 100;
+/*
+	background: #ccebff;   */
+}
+.posterViewerPublisherPic {
+	width: 80px;
+	padding: 5px;
+	border: #a1a1a1 solid 1px;
+	z-index: 100;
+	background: white;
+}
+#publisherInfo {
+	width: 150px;
+	height: inherit;
+	position: relative;
+	top: 10px;
+	margin: 15px;
+	z-index: 100;
+}
+#posterOperation {
+	width: inherit;
+	height: 140px;
+	z-index: 100;
+	position: relative;
+}
+#collectNum {
+	width: inherit;
+	height: 15px;
+	position: absolute;
+	top: 10px;
+	margin: 5px auto;
+	z-index: 100;
+/**/
+	color: #b0292e;
+	font-style: italic;
+}
+.posterInfoBTN {
+	width: 250px;
+	height: 35px;
+	margin: 10px auto 0px;
+	z-index: 100;
+/**/
+}
+.collect {
+/**/
+	font-weight: bold;
+	background: #b0292e;
+	border-radius: 5px;
+	color: white;
+	z-index: 100;
+}
+.collect:hover{
+	background: #c6161c;
+}
+.register {
+	font-weight: bold;
+	background: #298a29;
+	color: white;
+	border-radius: 5px;
+	z-index: 100;
+}
+.register:hover{
+	background: #2e9c2e;
+}
+#posterShare{
+	width: 132px;
+	height: 30px;
+	margin: 5px auto;
+	z-index: 100;
+}
+.share {
+	margin: 3px 10px;	
+	z-index: 100;
+}
+.posterInfo{
+	width: inherit;
+	position: relative;
+	top: -15px;
+}
+.infoItemWrap {
+	width: 280px;
+	margin: 10px 10px;
+}
+.viewerPosterDescription {
+	height: 170px;
+	text-align: left;
+	overflow: scroll;
+	padding: 5px;
+	position: relative;
+	left: 3px;
+}
+.infoTitle {
+	width: inherit;
+	position: absolute;
+	height: 15px;
+	margin: 3px;
+	padding: 0px;
+	text-align: left;
+}
+.infoContent {
+	width: inherit;
+	position: relative;
+	top: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+#posterDescription {
+	width: inherit;
+	height: 275px;
+	margin-top: 10px;
+	overflow: scroll;
+	text-align: left;
+	font-size: 15px;
+	z-index: 100;
+/**/
+	background: #ffebc2;
+}
+#posterDescription > p {
+	width: 90%;
+	margin-left: 10px;
+	margin-top: 10px;
+	z-index: 100;
+}
+#relativeLinks {
+	width: inherit;
+	height: 125px;
+	z-index: 100;
+/**/
+
+}
+.link {
+	width: 75px;
+	height: 90px;
+	margin: 12px;
+	z-index: 100;
+/**/
+	font-size: 12px;
+	background: #e6b2ff;
+}
+/*%%%%%%%%%%%%%% ANIMATION %%%%%%%%%%%%%%%%%%%*/
+@keyframes loadPosterViewerBackground{
+	0% {opacity: 0;}
+	100% {opacity: 0.75;}
+}
+@-o-keyframes loadPosterViewerBackground{
+	0% {opacity: 0;}
+	100% {opacity: 0.75;}
+}
+@-webkit-keyframes loadPosterViewerBackground{
+	0% {opacity: 0;}
+	100% {opacity: 0.75;}
+}
+@-moz-keyframes loadPosterViewerBackground{
+	0% {opacity: 0;}
+	100% {opacity: 0.75;}
+}
+
+@keyframes loadPosterViewerBackgroundExit{
+	0% {opacity: 0.75;}
+	100% {opacity: 0;}
+}
+@-o-keyframes loadPosterViewerBackgroundExit{
+	0% {opacity: 0.75;}
+	100% {opacity: 0;}
+}
+@-webkit-keyframes loadPosterViewerBackgroundExit{
+	0% {opacity: 0.75;}
+	100% {opacity: 0;}
+}
+@-moz-keyframes loadPosterViewerBackgroundExit{
+	0% {opacity: 0.75;}
+	100% {opacity: 0;}
+}
+@keyframes loadPosterViewer{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-o-keyframes loadPosterViewer{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-webkit-keyframes loadPosterViewer{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-moz-keyframes loadPosterViewer{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@keyframes collectPoster{
+	0% {opacity: 1; width: 100%; height: 100%;}
+	100% {opacity: 0; width: 300%; height: 300%;}
+}
+@-o-keyframes collectPoster{
+	0% {opacity: 1; width: 100%; height: 100%;}
+	100% {opacity: 0; width: 300%; height: 300%;}
+}
+@-webkit-keyframes collectPoster{
+	0% {opacity: 1; width: 100%; height: 100%;}
+	100% {opacity: 0; width: 300%; height: 300%;}
+}
+@-moz-keyframes collectPoster{
+	0% {opacity: 1; width: 100%; height: 100%;}
+	100% {opacity: 0; width: 300%; height: 300%;}
+}

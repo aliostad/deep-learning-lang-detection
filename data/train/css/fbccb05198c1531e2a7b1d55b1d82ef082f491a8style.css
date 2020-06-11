@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+    #container .api-call {
+        width: 418px;
+        float: left;
+    }
+
+        #container .api-call .code {
+            height: 100px;
+            width: 418px;
+            overflow: scroll;
+            display: none;
+        }
+
+#login-overlay {
+    position: fixed;
+    width: 100px;
+    bottom: 0;
+    right: 0;
+}
+
+.preloader {
+    background-image: url('../images/loader.gif');
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}

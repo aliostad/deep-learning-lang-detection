@@ -1,0 +1,15 @@
+body{padding: 15px;background-color: #F4F5F9;}
+.writeTable td, .writeTable th{padding:8px 0 8px 0;
+word-wrap: break-word; word-break: normal;word-break:break-all; 
+}
+.smsnot-write{position: relative;}
+.smsnot-write .i_peo{position: absolute;right: 6px;top: 7px;z-index: 999;}
+.w100input{border: 1px solid #969696;
+border-right-color: #d4d4d4;
+border-bottom-color: #d4d4d4;padding: 0 5px;
+}
+.w100input .iText{border:none;padding:4px 0px;width: 100%;outline: none;}
+.w100input .iText:focus{background-color:#FFF;border: none;}
+.imgtext{ float: left;display: inline;margin-right: 10px;}
+.imgtext2{ float: left;display: inline;}
+.smsnotp{border-top: 1px #d4d4d4 dashed;margin-top: 15px;padding: 15px 0 10px 10px;color: gray;}

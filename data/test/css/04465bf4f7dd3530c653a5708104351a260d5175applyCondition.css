@@ -1,0 +1,179 @@
+﻿.sciencePage {
+  background-color: #f3f3f3;
+}
+.main .w1232 {
+  background-color: #fff;
+}
+.contentInner {
+  width: 1169px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.commonTitle {
+  border-bottom: 5px solid #dcdcdc;
+  text-align: center;
+  display: block;
+  font-size: 53px;
+  padding-bottom: 28px;
+  position: relative;
+  padding-top: 31px;
+}
+.commonTitle .focusBtn {
+  position: absolute;
+  right: 0;
+  top: 52px;
+}
+.selectYers {
+  margin: 29px auto 30px auto;
+}
+.selectYers .yearsSelect {
+  width: 772px;
+  height: 48px;
+  line-height: 48px;
+  margin: 0 auto;
+  border: 1px solid #f76d02;
+  background: url(../images/selectBg.png) 716px center no-repeat;
+  border-radius: 7px;
+}
+.selectYers .yearsSelect:hover {
+  box-shadow: 0 0 8px #f76d02;
+}
+.selectYers .yearsSelect > li > a {
+  display: block;
+  font-size: 30px;
+  color: #1e1e1e;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+}
+.selectYers .yearsSelect .subSelectUl {
+  display: none;
+  border: 1px solid #ccc;
+  border-top: none;
+  position: relative;
+  background-color: #fff;
+  z-index: 200;
+}
+.selectYers .yearsSelect .subSelectUl > li:hover {
+  background-color: #eee;
+}
+.selectYers .yearsSelect .subSelectUl > li > a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 20px;
+}
+.nameListWrap {
+  border: 2px solid #a0a0a0;
+}
+.nameListWrap .nameTabBtns a {
+  float: left;
+  width: 386.2px;
+  border-left: 2px solid #a0a0a0;
+  border-bottom: 2px solid #a0a0a0;
+  height: 67px;
+  line-height: 67px;
+  background-color: #f0f0f0;
+  font-size: 24px;
+  text-align: center;
+}
+.nameListWrap .nameTabBtns a:hover {
+  background-color: #fff;
+}
+.nameListWrap .nameTabBtns a:first-child {
+  border-left: none;
+}
+.nameListWrap .nameTabBtns a.on {
+  background-color: #fff;
+  border-bottom-color: #fff;
+}
+.nameListWrap .forBorder {
+  width: 1163px;
+  padding-top: 10px;
+}
+.nameListWrap .nameContent {
+  height: 1145px;
+  overflow: auto;
+  margin-right: 5px;
+}
+.nameListWrap .nameContent .nameItem {
+  width: 999px;
+  margin: 0 auto;
+}
+.nameListWrap .nameContent .nameItem table {
+  font-size: 24px;
+  margin-top: 42px;
+}
+.nameListWrap .nameContent .nameItem table > td {
+  padding-left: 0;
+}
+.nameListWrap .nameContent .nameItem table tr:first-child {
+  border-bottom: 1px solid #959595;
+}
+.nameListWrap .nameContent .nameItem table tr td {
+  line-height: 50px;
+}
+.nameListWrap .nameContent .nameItem table tr td:first-child {
+  padding-left: 10px;
+}
+/*认定依据详情页面*/
+.affirmQrap .nameTabBtns a {
+  width: 19.756%;
+}
+/*模板下载*/
+.loadWrap {
+  overflow: hidden;
+}
+.loadWrap .loadInner {
+  width: 1179px;
+  margin-left: -8px;
+  padding-top: 31px;
+}
+.loadWrap .loadInner .item {
+  width: 345px;
+  padding: 0 15px;
+  border: 1px dashed #959595;
+  float: left;
+  margin: 12px 8px;
+  border-radius: 5px;
+}
+.loadWrap .loadInner .item > div {
+  overflow: hidden;
+  padding: 21px 0;
+}
+.loadWrap .loadInner .item .title {
+  font-size: 30.7px;
+  line-height: 76px;
+  border-bottom: 1px dotted #b0b0b0;
+  padding: 0;
+}
+.loadWrap .loadInner .item a {
+  float: left;
+  width: 111px;
+  height: 44px;
+  text-align: right;
+  padding: 0 14px;
+  background-color: #00b7ee;
+  color: #fff;
+  font-size: 19.13px;
+  border-radius: 5px;
+  line-height: 43px;
+}
+.loadWrap .loadInner .item a:hover {
+  background-color: #3299de;
+}
+.loadWrap .loadInner .item .load {
+  margin-right: 48px;
+  margin-left: 6px;
+  background: #00b7ee url('../images/loadIcon.png') 14px center no-repeat;
+}
+.loadWrap .loadInner .item .preview {
+  background: #00b7ee url('../images/webIcon.png') 14px center no-repeat;
+}
+/*常见问题*/
+.question {
+  padding-top: 10px;
+  color: #1e1e1e;
+  line-height: 36px;
+}
+/*# sourceMappingURL=applyCondition.css.map */

@@ -1,0 +1,45 @@
+#boxContainer {
+    height: 500px;
+}
+
+#boxContainer .box{
+    float: left;
+}
+
+#log, #dogList {
+    width: 35%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 5px;
+    color: #fff;
+    overflow: auto;
+}
+
+#log {
+    color: #E62;
+    background-color: #000;
+}
+
+#dogList {
+    color: #d200e8;
+    background-color: #7a0080;
+}
+
+#dogModel {
+    background-color: #DDD;
+    width: 300px;
+    padding: 5px;
+}
+
+#dogModel form div {
+    background-color: #BBB;
+    margin: 5px 0;
+    width: 100%;
+}
+
+#dogModel form label {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+}

@@ -1,0 +1,50 @@
+#!/bin/sh
+
+if test "$1" != "" ; then
+  bin=$1
+else
+  bin="@prefix@/bin/"
+fi
+
+if test "$1" = "clean" ; then
+  rm -f sample-phm.png sample-phm.if sample-pj.pj sample-pj.if sample-pj.png sample-rec.if sample-rec.png 540-pj.pj  540-pj.if 540-pj.png  540-rec.if 540-rec.png dynphm
+  exit
+fi
+
+# Generate phantom image
+
+cc -o dynphm dynphm.c -lm
+dynphm 100 200 tmpphm
+${bin}ctsimtext phm2if sample-phm.if 256 256 --nsample 2 --phmfile tmpphm
+rm -f tmpphm 
+if [ -f sample-phm.if ] ; then
+  ${bin}ctsimtext ifexport sample-phm.if sample-phm.png --format png
+fi
+
+# Simulate helical CT data collection and generate raysum sinugram for display
+${bin}ctsimtext phm2helix  sample-pj.pj 367 1080 dynphm --nray 2  --geometry equiangular --rotangle 3
+if [ -f sample-pj.pj ]; then
+  ${bin}ctsimtext pj2if  sample-pj.pj sample-pj.if
+fi
+if [ -f sample-pj.if ]; then
+  ${bin}ctsimtext ifexport sample-pj.if sample-pj.png --format png
+fi
+if [ -f sample-pj.pj ]; then 
+  ${bin}ctsimtext pjHinterp sample-pj.pj 540-pj.pj --interpview 540
+fi
+if [ -f 540-pj.pj ]; then
+  ${bin}ctsimtext pj2if  540-pj.pj 540-pj.if
+fi
+if [ -f sample-pj.if ]; then
+  ${bin}ctsimtext ifexport 540-pj.if 540-pj.png --format png
+fi
+
+# Reconstruct raysums and generate image for display
+${bin}ctsimtext pjrec   540-pj.pj 540-rec.if 256 256 
+if [ -f sample-rec.if ]; then 
+  ${bin}ctsimtext ifexport 540-rec.if 540-rec.png --format png
+
+  # Display comparison statistics
+  ${bin}ctsimtext if2 sample-phm.if 540-rec.if --comp
+fi
+

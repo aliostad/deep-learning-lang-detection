@@ -1,0 +1,78 @@
+#!/bin/bash
+
+if [ "$ROCKCFG_X86_BITS" = 32 ]
+then
+
+	case "$ROCKCFG_X86_OPT" in
+	    generic)
+		# Append options so the gcc -V option always comes first.
+		var_append GCC_WRAPPER_APPEND " " "-march=i486"
+		;;
+	    via-c3)
+		var_append GCC2_WRAPPER_APPEND " " "-march=k6"
+		var_append GCC3_WRAPPER_APPEND " " "-march=k62"
+		var_append GCC4_WRAPPER_APPEND " " "-march=k62"
+		;;
+	    via-c3-improved)
+		var_append GCC_WRAPPER_APPEND " " "-march=i686"
+		;;
+	    via-c3-2)
+		var_append GCC2_WRAPPER_APPEND " " "-march=pentiumpro"
+		var_append GCC3_WRAPPER_APPEND " " "-march=pentium-mmx"
+		var_append GCC4_WRAPPER_APPEND " " "-march=pentium-mmx"
+		;;
+	    k6*)
+		var_append GCC2_WRAPPER_APPEND " " "-march=k6"
+
+		var_append GCC3_WRAPPER_APPEND " " "-march=$ROCKCFG_X86_OPT"
+		# workaround and should be removed when gcc 3.x got fixed ...
+		var_append GCC3_WRAPPER_APPEND " " "-fno-branch-count-reg"
+
+		var_append GCC4_WRAPPER_APPEND " " "-march=$ROCKCFG_X86_OPT"
+		;;
+	    *)
+		var_append GCC3_WRAPPER_APPEND " " "-march=$ROCKCFG_X86_OPT"
+		var_append GCC4_WRAPPER_APPEND " " "-march=$ROCKCFG_X86_OPT"
+		;;
+	esac
+
+	case "$ROCKCFG_X86_OPT" in
+	    i486)
+		var_append GCC2_WRAPPER_APPEND " " "-march=$ROCKCFG_X86_OPT" ;;
+	    pentium|pentium-mmx)
+		var_append GCC2_WRAPPER_APPEND " " "-march=pentium" ;;
+	    pentium*)
+		var_append GCC2_WRAPPER_APPEND " " "-march=pentiumpro" ;;
+	    athlon*)
+		var_append GCC2_WRAPPER_APPEND " " "-march=k6" ;;
+	esac
+
+else
+	case "$ROCKCFG_X86_OPT" in
+	    generic)
+		# Other values like i686 or pentiumpro cause a build error in e.g.
+		# glibc 2.6.1 when building with gcc 4.2.1.
+		if [[ "$xpkg" = *-32bit ]] ; then
+			var_append GCC_WRAPPER_APPEND " " "-march=pentium4"
+		fi
+		;;
+	    intel)
+		var_append GCC2_WRAPPER_APPEND " " "-march=x86_64"
+		var_append GCC3_WRAPPER_APPEND " " "-march=nocona"
+		var_append GCC4_WRAPPER_APPEND " " "-march=nocona"
+		;;
+	    athlon)
+		var_append GCC2_WRAPPER_APPEND " " "-march=x86_64"
+		var_append GCC3_WRAPPER_APPEND " " "-march=k8"
+		var_append GCC4_WRAPPER_APPEND " " "-march=k8"
+		;;
+            amdk10)
+                var_append GCC4_WRAPPER_APPEND " " "-march=amdfam10"
+                ;;
+	esac
+fi
+
+# remove other -march and -mtune options from the argument list
+var_insert GCC_WRAPPER_REMOVE " " "-march=* -mtune=*"
+# Remove deprecated options:
+var_insert GCC_WRAPPER_REMOVE " " "-mcpu=* -m386 -m486 -mpentium -mpentiumpro"

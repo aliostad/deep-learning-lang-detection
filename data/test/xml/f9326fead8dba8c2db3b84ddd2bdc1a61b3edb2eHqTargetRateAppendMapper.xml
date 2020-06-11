@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.doro.background.dal.mapper.HqTargetRateAppendMapper">
+  <resultMap id="BaseResultMap" type="com.doro.background.dal.entity.HqTargetRateAppend">
+    <id column="target_id" jdbcType="BIGINT" property="targetId" />
+    <result column="append_lable" jdbcType="VARCHAR" property="appendLable" />
+    <result column="append_year_date" jdbcType="DECIMAL" property="appendYearDate" />
+    <result column="append_day_rate" jdbcType="DECIMAL" property="appendDayRate" />
+    <result column="append_day_count" jdbcType="INTEGER" property="appendDayCount" />
+    <result column="act_auto_id" jdbcType="BIGINT" property="actAutoId" />
+    <result column="act_name" jdbcType="VARCHAR" property="actName" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    target_id, append_lable, append_year_date, append_day_rate, append_day_count, act_auto_id, 
+    act_name
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from hq_target_rate_append
+    where target_id = #{targetId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from hq_target_rate_append
+    where target_id = #{targetId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.doro.background.dal.entity.HqTargetRateAppend">
+    insert into hq_target_rate_append (target_id, append_lable, append_year_date, 
+      append_day_rate, append_day_count, act_auto_id, 
+      act_name)
+    values (#{targetId,jdbcType=BIGINT}, #{appendLable,jdbcType=VARCHAR}, #{appendYearDate,jdbcType=DECIMAL}, 
+      #{appendDayRate,jdbcType=DECIMAL}, #{appendDayCount,jdbcType=INTEGER}, #{actAutoId,jdbcType=BIGINT}, 
+      #{actName,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.doro.background.dal.entity.HqTargetRateAppend">
+    insert into hq_target_rate_append
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="targetId != null">
+        target_id,
+      </if>
+      <if test="appendLable != null">
+        append_lable,
+      </if>
+      <if test="appendYearDate != null">
+        append_year_date,
+      </if>
+      <if test="appendDayRate != null">
+        append_day_rate,
+      </if>
+      <if test="appendDayCount != null">
+        append_day_count,
+      </if>
+      <if test="actAutoId != null">
+        act_auto_id,
+      </if>
+      <if test="actName != null">
+        act_name,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="targetId != null">
+        #{targetId,jdbcType=BIGINT},
+      </if>
+      <if test="appendLable != null">
+        #{appendLable,jdbcType=VARCHAR},
+      </if>
+      <if test="appendYearDate != null">
+        #{appendYearDate,jdbcType=DECIMAL},
+      </if>
+      <if test="appendDayRate != null">
+        #{appendDayRate,jdbcType=DECIMAL},
+      </if>
+      <if test="appendDayCount != null">
+        #{appendDayCount,jdbcType=INTEGER},
+      </if>
+      <if test="actAutoId != null">
+        #{actAutoId,jdbcType=BIGINT},
+      </if>
+      <if test="actName != null">
+        #{actName,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.doro.background.dal.entity.HqTargetRateAppend">
+    update hq_target_rate_append
+    <set>
+      <if test="appendLable != null">
+        append_lable = #{appendLable,jdbcType=VARCHAR},
+      </if>
+      <if test="appendYearDate != null">
+        append_year_date = #{appendYearDate,jdbcType=DECIMAL},
+      </if>
+      <if test="appendDayRate != null">
+        append_day_rate = #{appendDayRate,jdbcType=DECIMAL},
+      </if>
+      <if test="appendDayCount != null">
+        append_day_count = #{appendDayCount,jdbcType=INTEGER},
+      </if>
+      <if test="actAutoId != null">
+        act_auto_id = #{actAutoId,jdbcType=BIGINT},
+      </if>
+      <if test="actName != null">
+        act_name = #{actName,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where target_id = #{targetId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.doro.background.dal.entity.HqTargetRateAppend">
+    update hq_target_rate_append
+    set append_lable = #{appendLable,jdbcType=VARCHAR},
+      append_year_date = #{appendYearDate,jdbcType=DECIMAL},
+      append_day_rate = #{appendDayRate,jdbcType=DECIMAL},
+      append_day_count = #{appendDayCount,jdbcType=INTEGER},
+      act_auto_id = #{actAutoId,jdbcType=BIGINT},
+      act_name = #{actName,jdbcType=VARCHAR}
+    where target_id = #{targetId,jdbcType=BIGINT}
+  </update>
+  <!-- 统计标的活动是否存在 -->
+  <select id="countActivity" parameterType="java.lang.Long" resultType="java.lang.Integer">
+    select 
+    count(0)
+    from hq_target_rate_append
+    where act_auto_id = #{actAutoId,jdbcType=BIGINT}
+  </select>
+</mapper>

@@ -1,0 +1,56 @@
+#!/bin/bash
+#
+# MY_PROCESS_NAME  <short description line>
+# description: <description of the service>
+#
+# chkconfig: 2345 99 99
+# processname: MY_PROCESS_NAME
+# pidfile: /var/run/MY_PROCESS_NAME.pid
+#
+#    TODO: Replace all instances of MY_PROCESS_NAME with an appropriate name.
+
+# Source function library.
+. /etc/init.d/functions
+
+# Define any additional shell functions here.
+
+start() {
+    echo -n "Starting MY_PROCESS_NAME: "
+    RET=$(daemon --user <username> MY_PROCESS_NAME)
+    echo 
+    touch /var/lock/subsys/MY_PROCESS_NAME
+    return $RET
+}    
+
+stop() {
+    echo -n "Shutting down MY_PROCESS_NAME: "
+    RET=$(killproc MY_PROCESS_NAME)
+    echo 
+    rm -f /var/lock/subsys/MY_PROCESS_NAME
+    #rm -f /var/run/MY_PROCESS_NAME.pid
+    return $RET
+}
+
+case "$1" in
+    start)
+        start
+    ;;
+    stop)
+        stop
+    ;;
+    status)
+        status MY_PROCESS_NAME
+    ;;
+    restart|reload)
+        stop
+        start
+    ;;
+    *)
+        echo "Usage: MY_PROCESS_NAME {start|stop|status|reload|restart}"
+        exit 1
+    ;;
+esac
+exit $?
+
+# Modeline
+# vim:ts=4:et:ai:sw=4

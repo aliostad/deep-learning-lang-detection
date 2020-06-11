@@ -1,0 +1,69 @@
+#slide_show_container {
+	margin:5px 0px 14px 0px;
+	position:relative;
+	width:313px;
+	height:240px;
+}
+
+#slide_show_container #slide_show_images {
+	position:absolute;
+	z-index:1;
+	width:313px;
+	height:230px;
+	overflow:scroll; /* show scroll bars when js is disabled */
+}
+
+.javascript_on #slide_show_container #slide_show_images { /* when js is enabled */
+	overflow:visible; 
+}
+
+#slide_show_container #slide_show_controls {
+	display:none; /* hide controls when js is disabled */
+}
+
+.javascript_on #slide_show_container #slide_show_controls { /* when js is enabled */
+	display:block;
+	position:absolute;
+	top:220px; /*  */
+	font-size:1em;
+	margin:0 0 0 0;
+	z-index:2; /* put the controls in front of the images */
+	right:105px; /* + 105 */
+}
+
+.javascript_on #slide_show_container #slide_show_images a { /* when js is enabled */
+	position:absolute;
+}
+
+#slide_show_container #slide_show_controls a {
+	display:block;
+	float:left;
+	text-align:center;
+	text-decoration:none;
+	outline-style:none; /* remove outlines, for FF */
+}
+#slide_show_numbers a {
+	width:16px;
+	height:16px;
+	border:1px solid #ccdeff;
+	background-color:#ebf2ff;
+	margin:2px 5px 0 0;
+}
+
+#slide_show_container #slide_show_control_prev {
+	background:transparent url(../images/site/common/slideshow_arrows.png) no-repeat 0px 0px;
+	width:20px;
+	height:23px;
+	margin:0 5px 0 0;
+}
+#slide_show_container #slide_show_control_next {
+	background:transparent url(../images/site/common/slideshow_arrows.png) no-repeat -30px 0px;
+	width:20px;
+	height:23px;
+}
+
+#slide_show_numbers .slide_show_control_highlight, #slide_show_numbers a:hover {
+	border:1px solid #ccc;
+	background-color:white;
+	color:#666;
+}

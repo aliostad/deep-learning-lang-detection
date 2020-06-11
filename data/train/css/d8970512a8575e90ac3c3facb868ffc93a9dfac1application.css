@@ -1,0 +1,8 @@
+.root { -fx-background-image: url('./background.png'); }
+.button { -fx-background-color: transparent; }
+.button#write { -fx-background-image: url('./write-button.png'); }
+.button#send { -fx-background-image: url('./send-button.png'); }
+.button#cancel { -fx-background-image: url('./cancel-button.png'); }
+.button#back { -fx-background-image: url('./back-button.png'); }
+.title { -fx-font-size: 16pt; -fx-font-weight: bold; }
+.text-input { -fx-border-width: 0px; -fx-border-color: white; -fx-border-style: none; }

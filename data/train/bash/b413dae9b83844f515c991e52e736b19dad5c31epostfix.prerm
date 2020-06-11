@@ -1,0 +1,49 @@
+#!/bin/sh -e
+
+# Debian Postfix prerm
+# LaMont Jones <lamont@debian.org>
+
+case "$1" in
+    upgrade)
+	new=$2			# get new version
+	[ -x /usr/sbin/invoke-rc.d ] && \
+		INIT="invoke-rc.d postfix" || \
+		INIT="/etc/init.d/postfix"
+	${INIT} stop
+	if dpkg --compare-versions $new lt 0.0.20020113.SNAPSHOT-1; then
+	    # Need to handle some changes in services.
+	    MASTER=/etc/postfix/master.cf
+	    if grep -qE '^cleanup[[:space:]]+unix[[:space:]]+n' ${MASTER}; then
+		echo "in master.cf:"
+		echo "  forcing pickup=privileged, cleanup=private, flush=private"
+		sed 's/^\(cleanup[[:space:]]*unix[[:space:]]*\)n/\1-/
+		     s/^\(flush[[:space:]]*unix[[:space:]]*\)n/\1-/
+		     s/^\(pickup[[:space:]]*fifo[[:space:]]*.[[:space:]]*\)-/\1n/
+		' ${MASTER} > ${MASTER}.$$
+		mv ${MASTER}.$$ ${MASTER}
+	    fi
+	fi
+	;;
+
+    deconfigure)
+	;;
+
+    remove)
+	[ -x /usr/sbin/invoke-rc.d ] && \
+		INIT="invoke-rc.d postfix" || \
+		INIT="/etc/init.d/postfix"
+	${INIT} stop
+	rm -rf /var/spool/postfix/lib
+	rm -rf /var/spool/postfix/etc
+    	;;
+
+    failed-upgrade)
+	;;
+
+    *)
+	echo "prerm called with unknown argument \`$1'" >&2
+	exit 1
+	;;
+esac
+
+exit 0

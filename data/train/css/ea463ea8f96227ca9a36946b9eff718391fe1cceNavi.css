@@ -1,0 +1,272 @@
+﻿
+nav{
+    width:100%;
+    height:100%;
+}
+
+nav .divNav{
+    height: 55px;
+    position:absolute;
+    top: 10px;
+    right:0px;
+}
+
+nav .divNav ul.level1 {
+    width: 700px;
+    height: 57px;
+    text-align: center;
+    margin: auto;
+}
+
+nav .divNav ul.level1 li {
+    width: auto;
+    padding-left: 21px;
+    padding-right: 21px;
+    float: left;
+}
+
+nav .divNav ul.level1 li a {
+    height:65px;
+}
+
+nav .divNav ul.level2 li a {
+    height:auto;
+}
+
+nav .divNav ul.level3 li a {
+    height:auto;
+}
+
+
+nav .divNav ul.level1 li a:hover ~ ul.level2 , nav .divNav ul.level1 li ul.level2:hover{
+    display: block;
+    opacity: 1;
+    height: auto;
+    overflow: visible;
+}
+nav .divNav ul.level1 li a.hover ~ ul.level2 , nav .divNav ul.level1 li ul.level2.hover{
+    display: block;
+    opacity: 1;
+    height: auto;
+    overflow: visible;
+}
+
+
+nav .divNav ul.level1 li ul.level2 { 
+    position: absolute;
+    width: 192px;
+    height: 0;
+    top: 55px;
+    margin-left: -50px;
+    background: #381915;
+    border: 1px solid #785a4e;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 0.3s, height 0s 0.3s;
+    display: block;
+    overflow: hidden;
+}
+
+nav .divNav ul.level1 li ul.level2 li {
+    width: 190px;
+    float: left;
+    padding: 0px; 
+    border-bottom: 1px solid #72574e;
+}
+
+nav .divNav ul.level1 li ul.level2 li:last-child {
+    border-bottom: 0px;
+}
+nav .divNav ul.level2 li a {
+}
+nav .divNav ul.level1 li ul.level2 li a {
+    
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 14px;
+    background: #381915;
+}
+
+nav .divNav ul.level2 li a:hover ~ ul.level3 , nav .divNav ul.level2 li ul.level3:hover{
+    display: block;
+    opacity: 1;
+    height: auto;
+}
+nav .divNav ul.level2 li a:hover ,nav .divNav ul.level1 li a:hover ~ ul.level3 li a, ul.level3:hover li a,nav .divNav ul.level2 li:hover a {
+    background:#2b130f !important;
+}
+
+nav .divNav ul.level2 li a.hover ~ ul.level3 , nav .divNav ul.level2 li ul.level3.hover{
+    display: block;
+    opacity: 1;
+    height: auto;
+}
+
+nav .divNav ul.level1 li ul.level3 { 
+    position: absolute;
+    width: 192px;
+    height: 0;
+    top: -1px;
+    margin-left: 190px;
+    background: #381915;
+    border: 1px solid #785a4e;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 0.3s, height 0s 0.3s;
+    display: block;
+    overflow: hidden;
+}
+
+nav .divNav ul.level1 li ul.level3 li {
+    width: 190px;
+    float: left;
+    padding: 0px; 
+    border-bottom: 1px solid #72574e;
+}
+
+nav .divNav ul.level1 li ul.level3 li:last-child {
+    border-bottom: 0px;
+}
+nav .divNav ul.level3 li a {
+    height: 50px;
+}
+nav .divNav ul.level1 li ul.level3 li a {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #381915;
+}
+
+
+nav .divNav li .listBullet {
+    position: absolute;
+    top: 23px;
+    left: 15px;
+    z-index: 2;
+    opacity: 0.5;
+    transition:all 0.2s;
+}
+
+
+header .navSeperator {
+    width: 100%;
+    height: 2px;
+    top: 0px;
+    background: url(../Images/divider-nav.png) repeat-y;
+    background-position-x: 86%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+/* Screen */
+@media all and (max-width: 700px) {
+
+    nav{
+        width:100%;
+        height:45px;
+        top: 55px;
+
+    }
+
+    nav .divNav{
+        width: 100%;
+        height: 34px;
+        position:absolute;
+        right:0;
+    }
+
+    nav .divNav ul.level1 {
+        width: 300px;
+        height: 34px;
+        text-align: center;
+        margin: auto;
+        display: none;
+    }
+
+    nav .divNav ul.level1 li {
+        padding-left: 10px;
+        padding-right: 10px;
+        float: left;
+    }
+
+    header .navSeperator {
+        width: 100% !important;
+        height: 2px;
+        left: 0px;
+        margin-left: 0px;
+        top: 38px !important;
+        background: url(../Images/divider-nav.png) repeat-y center center !important;
+    }
+
+}
+
+@media all and (min-width: 701px) and (max-width: 1018px) {
+
+    nav {
+        width: 100%;
+        height: 65px;
+        position:absolute;
+        top: 115px;
+        right:0;
+    }
+
+    nav .divNav ul.level1 {
+        width: 100%;
+        height: 34px;
+        text-align: center;
+        margin: auto;
+        top:31px;
+    }
+
+    header .navSeperator {
+        width: 700px;
+        height: 2px;
+        position: relative;
+        width: 100%;
+        top: -51px;
+        left: 0px;
+        margin: 0 auto;
+        background: url(../Images/divider-nav.png) no-repeat;
+        width: 750px;
+    }
+
+
+}
+
+@media all and (min-width: 1019px) and (max-width: 1274px) {
+
+    nav .divNav{
+        width: 710px;
+        height: 65px;
+        position:absolute;
+        right:20px;
+    }
+
+}
+
+@media all and (min-width: 1275px) {
+
+    nav .divNav{
+        width: 750px;
+        height: 65px;
+        position:absolute;
+        right:30px;
+    }
+
+header .navSeperator {
+    width: 100%;
+    height: 2px;
+    top: 0px;
+    background: url(../Images/divider-nav.png) repeat-y;
+    background-position-x: 96%;
+    margin: 0 auto;
+}
+
+}

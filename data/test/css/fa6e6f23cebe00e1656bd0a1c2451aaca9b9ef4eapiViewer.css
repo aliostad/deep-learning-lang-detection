@@ -1,0 +1,133 @@
+
+.api {
+    font-family: "Myriad Pro","Helvetica Neue",Helvetica,"Arial Unicode MS",Arial,sans-serif;
+}
+
+.api a {
+    color: #111;
+    text-decoration: none;
+}
+
+.api-item{
+    margin:5px;
+    border-bottom: 1px dashed #777;
+}
+
+.api-name {
+    font-size:1.1em;
+    font-weight: bold;
+}
+
+
+.api-arguments .type{
+    display: inline-block;
+}
+.api-arguments p{
+    margin: 0;
+}
+
+.api-arguments .argument {
+    white-space: nowrap;
+}
+
+
+.method-returns {
+    display: inline-block;
+    font-weight: 100;
+    color:#555;
+    font-size: .9em;
+}
+
+.api-anchor {
+    display: none;
+    margin: auto 5px;
+    color: #333;
+}
+
+.api-name:hover > .api-anchor {
+    display: inline-block;
+}
+
+
+.api-menu > .api-files {
+    float:left;
+    margin: auto 10px;
+}
+
+.api-files > .api-file-item {
+    padding: 3px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.api-files > .active {
+    background: #eee;
+    font-weight: bold;
+}
+
+.api-menu .api-file-path{
+    font-size: .9em;
+    color:#555;
+    font-style: italic;
+    margin-left: 10px;
+}
+.api-menu a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.api-documentation {
+    clear:both;
+}
+
+.api-documentation > .api-file-doc, .api-tabs > .api-tab {
+    display: none;
+}
+
+.api-documentation > .api-file-doc.active, .api-tabs > .api-tab.active  {
+    display: block;
+}
+
+.api-tab > .api-file-item {
+    cursor: pointer;
+}
+.api-tab > .api-file-item:hover {
+    text-decoration: underline;
+}
+
+.type > a, .type > span, a.type {
+    padding: 0px 4px;
+    margin: 0px 4px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+
+}
+
+.type > a, a.type {
+    background: #83BF51;
+    color:#000;
+}
+
+.type > span {
+    background: #eee;
+}
+
+.type-return {
+    color: rgb(0,100,0);
+    font-weight: bold;
+}
+
+.api-tags {
+    font-size: .9;
+    font-family: monospace;
+}
+.api-tags > span {
+    padding: 3px 5px;
+    border: #ddd;
+    border-radius: 3px;
+}
+.api-tags > .api-deprecated{
+    background: #eee;
+    color: #990000;
+}

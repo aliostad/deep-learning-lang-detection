@@ -1,0 +1,4 @@
+INSERT INTO `sys_menu` VALUES ('1001013', '1001', '0,1,1001', '${model.name}管理', '/admin/${model.dir}.html', NULL, NULL, '1', '', '', NULL, 'ty001', now(), '0');
+INSERT INTO `sys_menu` VALUES ('1001013001', '1001013', '0,1,1001,1001013', '${model.name}添加', '', NULL, NULL, '1', '${model.var}:add','',  NULL, 'ty001', now(), '0');
+INSERT INTO `sys_menu` VALUES ('1001013002', '1001013', '0,1,1001,1001013', '${model.name}修改', '', NULL, NULL, '1', '${model.var}:edit', '', NULL, 'ty001', now(), '0');
+INSERT INTO `sys_menu` VALUES ('1001013003', '1001013', '0,1,1001,1001013', '${model.name}删除', '', NULL, NULL, '1', '${model.var}:destroy','',  NULL, 'ty001', now(), '0');

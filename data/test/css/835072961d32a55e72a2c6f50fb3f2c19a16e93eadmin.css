@@ -1,0 +1,160 @@
+html {position: relative;height: auto;min-height: 100%;/*background-color: red;*/}
+html, body {margin: 0;padding: 0;}
+body {position: absolute;left: 0px;top: 0px;width: auto;min-width: 100%;height: auto;min-height: 100%;}
+#mainTbl {margin:0;width: 100%;height: 100%;border-collapse: collapse;}
+#mainTd {vertical-align: top;padding: 0;}
+#minW {position: relative;height: 1px;overflow: hidden;}
+/*#footer {position: absolute;left: 0px;bottom: 0;width: 100%;background-color: green;}*/
+
+/*минимальная ширина */
+#minW {width: 600px;}
+
+/*высота подвала устанавливается в #footer и дублируется в нижнем паддинге #mainBox */
+/*#footer {height: 40px;}*/
+/*#mainBox {padding-bottom: 40px;}*/
+
+body {background: #fff url(/admin/fw/media/img/body.bg.gif) repeat-y 0 0;font-family: 'Tahoma', sans-serif;font-size: 11px;}
+body.login {background-image: none;}
+
+div.rb50 {position: absolute;bottom: 50%;right: 50%;width: 1px;height: 1px;}
+#loginForm {position: absolute;left: -120px;top: -120px;width: 240px;height: 240px;}
+#loginForm div.pad {padding: 20px 60px;}
+#loginForm div.pad p {margin-top: 1em;}
+#loginForm div.pad p:first-child {margin: 0;}
+#loginForm div.pad p span.tag input {width: 120px;}
+#loginForm div.pad p span.tag button {width: 126px;}
+
+fieldset {margin-bottom: 1em;border: 1px solid #d5d5d5;}
+
+a, a:hover {color: #f98315;}
+
+#header {position: relative;width: 100%;height: 80px;background-color: #000;}
+#logo {position: absolute;left: 0;top: 0;width: 150px;height: 80px;background-repeat: no-repeat;background-position: center;}
+#logo a {display: block;width: 150px;height: 80px;}
+#ajaxLoader {position: absolute;left: 0;top: 0;display: none;width: 150px;height: 80px;background: #000 url(/admin/fw/media/img/ajax-loader.gif) no-repeat center;opacity: 0.5;}
+#domainsList {margin: 0 0 0 150px;height: 80px;background-color: #000;}
+#domainsList h1 {position: absolute;right: 1em;top: 1em;margin: 0;color: #fff;font: 12px 'Arial', sans-serif;opacity: .62;}
+#domainsList p {position: absolute;left: 0;bottom: 0;padding: 48px 14px 10px 150px;height: 22px;line-height: 22px;}
+#domainsList span {padding-left: 1em;}
+#domainsList span a,
+#domainsList span a:hover {font-weight: bold;text-decoration: none;}
+#domainsList span b,
+#domainsList span a b {color: #fff;}
+
+#modelsList {float: left;padding: 10px 14px 100px 14px;width: 122px;background-color: #000;}
+#modelsList ul {margin: 0;padding: 0;list-style-type: none;}
+#modelsList li {position: relative;display: block;margin: 0;padding:2px 0 12px 22px;line-height: 1em;}
+#modelsList li a,
+#modelsList li a:hover {font-weight: bold;text-decoration: none;}
+#modelsList li b,
+#modelsList li a b {color: #fff;}
+#modelsList li a,
+#modelsList li b {line-height: 1em;}
+#modelsList li span.icon {position: absolute;left: 0;top: 0px;display: block;width: 16px;height: 16px;background-color: #000;background-repeat: no-repeat;background-position: 0 0;}
+#modelsList li.active span.iconGIF {background-position: 0 -100px;}
+#modelsList li span.iconPNG {background-color: #f98315;}
+#modelsList li.active span.iconPNG {background-color: #fff;}
+/*#modelsList li.group {background: url(/admin/fw/media/img/arr-orange.gif) no-repeat 4px .8em;}*/
+
+
+
+div.adminDropDown {margin: 7px 0 0;padding: 15px 10px 12px;background-color: #f98315;}
+div.adminDropDown ul {width: 141px;margin: 0;padding:0;list-style-type:none;}
+div.adminDropDown li {margin: 0;padding: 0 0 8px;}
+div.adminDropDown li,
+div.adminDropDown li a
+	{line-height: 1em;color: #fff;text-decoration: none;}
+
+#typeFilterForm {position: relative;margin: -5px 0 1em;width: 145px;}
+#typeFilterForm a.reset {position: absolute;top: 1px;right: -2px;display: none;width: 17px;height: 17px;background: url(/admin/fw/media/img/reset.gif) no-repeat center;}
+#typeFilterForm input {display: block;width: 100%;font-size: 11px;}
+
+#modelItemsList {float: left;width: 200px;}
+#modelItemsList div.pad {padding: 47px 14px;}
+/*#modelItemsList div.offset {margin: 47px 5px 45px 52px;padding:0;list-style-type:none;}*/
+#modelItemsList ul.itemsList {position: relative;margin: 0;padding:0;list-style-type:none;}
+#modelItemsList ul.itemsList span.text {display: block;margin: 0;padding: 0 0 4px 21px;line-height: 1em;background: url(/admin/fw/media/img/bullit.gif) no-repeat 0 .4em;}
+#modelItemsList ul.itemsList span.empty {display: block;margin: 0;padding: 2px 0 2px 21px;line-height: 1em;background: url(/admin/fw/media/img/folder.gif) no-repeat 0 0;}
+#modelItemsList ul.itemsList li {padding: 0 0 4px;}
+#modelItemsList ul.itemsList li ul {margin: 4px 0 10px 21px;}
+#modelItemsList ul.itemsList li i.plus,
+#modelItemsList ul.itemsList li i.minus {display: block;position: absolute;width: 15px;height: 13px;cursor: pointer;}
+#modelItemsList ul.itemsList li i.plus span,
+#modelItemsList ul.itemsList li i.minus span {display: none;}
+#modelItemsList ul.itemsList li i.plus {background: url(/admin/fw/media/img/folder+.gif) no-repeat 0 0;}
+#modelItemsList ul.itemsList li i.minus {background: url(/admin/fw/media/img/folder-.gif) no-repeat 0 0;}
+#modelItemsList ul.itemsList li div.icon.text span.text {background: transparent;display: inline;}
+#modelItemsList a {color: #000;text-decoration: none;}
+
+#modelItemEditZone {margin: 0 0 76px 350px;}
+#modelItemEditZone .pad {padding: 37px 14px;}
+#modelItemEditZone h1 {margin: 0 0 28px;color:  #000; font-size: 20px;font-weight: normal;}
+#modelItemEditZone h1 a {font-weight:normal;font-size: 11px;vertical-align: middle;padding-left: 14px;}
+#modelItemEditZone h2 {margin-top: 2em;color:  #000; font-size: 20px;font-weight: normal;}
+/*#modelItemEditZone .core {background: #fff;padding: 15px;}*/
+#modelItemEditZone .core table td,
+#modelItemEditZone .core table th {padding: 2px 10px;}
+#modelItemEditZone .core table tr.even td {background: #eee;}
+#modelItemEditZone .core table {margin: 0 0 2em;}
+/*
+#modelItemEditZone .core table td {border-top: solid 1px red;}
+#modelItemEditZone .core tr.first td {border-top: 0;}
+*/
+#modelItemEditZone form {margin: 28px 0 0;width: 560px;}
+#modelItemEditZone span.star {color: #f98315;font-size: 14px;}
+#modelItemEditZone span.text input, 
+#modelItemEditZone span.file input, 
+#modelItemEditZone input.formItemDateYear,
+#modelItemEditZone textarea, 
+#modelItemEditZone select  {border: 1px solid #d5d5d5;width:560px;font-size: 11px;}
+#modelItemEditZone .core td span.text input, 
+#modelItemEditZone .core td span.file input, 
+#modelItemEditZone .core td input.formItemDateYear,
+#modelItemEditZone .core td textarea, 
+#modelItemEditZone .core td select {width: auto;}
+#modelItemEditZone .core td.delete {background-color: #222;white-space: pre;color: white;font-weight: bold;}
+#modelItemEditZone .core tr.even td.delete {background-color: black;}
+#modelItemEditZone .formItemDateMinute,
+#modelItemEditZone .formItemDateHour {width: 45px;}
+#modelItemEditZone .formItemDateDay {width: 50px;}
+#modelItemEditZone .formItemDateMonth {width: 100px;}
+#modelItemEditZone input.formItemDateYear {width: 100px !important;}
+#modelItemEditZone .fileInfo {display:block;padding: 5px 10px;}
+/*#modelItemEditZone .fileInfo small {clear: both;}*/
+#modelItemEditZone .fileUnlink {display:block;padding: 0 10px 5px;}
+/*#modelItemEditZone button.delete {margin-left:200px;background-color: #eee;}*/
+#modelItemEditZone p.field {margin-bottom:1em;}
+#modelItemEditZone .core div.titleOnly {white-space: nowrap;}
+#modelItemEditZone span.title {display: block;padding-bottom: 3px;font-size: 15px;font-weight: 400;}
+#modelItemEditZone span.title b {font-weight: normal;}
+#modelItemEditZone button {background-color: #f98315;border-style: solid;border-width: 0;color: #fff;font: bold 11px 'Tahoma', sans-serif;padding: 2px 10px;}
+#modelItemEditZone button.delete {background-color: #000;position: absolute;top: 0px;right: 0;padding: 2px 0;width: 117px;}
+#modelItemEditZone p.field.error input,
+#modelItemEditZone p.field.error textarea,
+#modelItemEditZone p.field.error select {border: 2px solid #f98315;background: #facdae;}
+#modelItemEditZone p.alert {margin: 1em 0;}
+/*#modelItemEditZone .alert {font-weight: bold;color: #000;border: 2px solid #f98315;background: #facdae;line-height: 2em;text-align: center;}*/
+#modelItemEditZone .alert {font-weight: bold;color: #f98315;}
+#modelItemEditZone .toplink {font-weight:normal;color: #F98315;font-size: 11px;vertical-align: middle;padding-left: 14px;}
+#modelItemEditZone .rem {color: #aaa;}
+
+#modelItemEditZone table.log th {padding: 4px 10px;background-color: #eee;text-align: left;border: 1px solid #ccc;}
+#modelItemEditZone table.log td {padding: 2px 10px;border: 1px solid #ccc;}
+#modelItemEditZone table.data th {padding: 4px 10px;background-color: #eee;text-align: left;border: 1px solid #ccc;white-space: nowrap;}
+#modelItemEditZone table.data td {padding: 2px 10px;border: 1px solid #ccc;}
+
+#modelItemEditZone input.datepicker {width: 100px !important;}
+
+#adminControls {position: fixed;z-index: 100;left: 0;bottom: 0;width: 100%;background-color: #000;border-top: 2px solid #f98315;}
+#adminControls #controls {padding: 18px 10px 18px 360px;}
+#adminControls #controls p {margin: 0;}
+#adminControls #controls p.untitled {margin: 0;width: 560px;}
+#controls p.untitled  {position: relative;}
+#adminControls #controls button {border: 2px solid #000;}
+#adminControls #controls button.delete {border-color: #fff;}
+
+#iconsDialogBox {margin-left: -10px;}
+#iconsDialogBox span.icon {float: left;display: block;padding: 10px;}
+#iconsDialogBox span.icon a {display: block;outline: none;}
+#iconsDialogBox span.icon a:hover {background-color: #f98315;}
+#iconsDialogBox span.icon a img {display: block;border: 2px solid #000;}

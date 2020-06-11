@@ -1,0 +1,48 @@
+/**
+ * @file
+ * Main CSS file for the CC API module.
+ */
+
+.page-api .ui-tabs {
+  font-size: 90%;
+  font-family: inherit;
+}
+
+.page-api .vertical-tabs-pane {
+  width: 680px;
+}
+
+.page-api h5 {
+  border-bottom: 1px solid #222222;
+  margin: 1em 0 1.5em 0;
+}
+
+.page-api .ui-widget-content {
+  border: none;
+}
+
+.page-api table {
+  maring-bottom: 1em;
+}
+
+.page-api dt {
+  font-weight: bold;
+}
+
+.page-api dd {
+  margin-left: 2em;
+  font-style: normal;
+  margin-bottom: 1em;
+}
+
+.page-api .vertical-tabs-pane h3 {
+  font-size: 2em;
+  margin-top: .5em;
+}
+
+.page-api .syntaxhighlighter a.toolbar_item.command_help.help {
+  display: none !important;
+}
+.page-api .syntaxhighlighter .toolbar {
+  background-color: transparent !important;
+}

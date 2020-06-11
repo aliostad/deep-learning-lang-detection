@@ -1,0 +1,119 @@
+#ajax-upload
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    display: block;
+    visibility: visible;
+}
+#ajax-upload-marco
+{
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+#ajax-upload.default{background-color: rgba(200,200,200,0.7);}
+#ajax-upload.default #ajax-upload-marco
+{
+	border: 4px dashed #8E8E8E;
+    color: #525252;
+    font-size: 300%;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+#ajax-upload.hide{
+	display: none;
+	visibility: hidden;
+}
+
+#caja-load
+{
+    width: 320px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+#caja-load .item-load
+{
+    position: relative;
+    top: 0px;
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    border: solid 1px #A9A9A9;
+    color:#787878;
+}
+#caja-load .item-load .content-item-load
+{
+    width: 300px;
+    float: left;
+    height: inherit;
+}
+#caja-load .item-load .close-item-load
+{
+    width: 20px;
+    float: right;
+    height: inherit;
+    line-height: 40px;
+    text-align: center;
+}
+#caja-load .item-load .close-item-load span
+{
+    cursor: pointer;
+}
+#caja-load .item-load .close-item-load span:hover,
+#caja-load .item-load .close-item-load span:active,
+#caja-load .item-load .close-item-load span:focus
+{
+    color: #666666;
+}
+
+#caja-load .item-load .close-item-load.success
+{
+    color: #3DB034;
+}
+#caja-load .item-load .close-item-load.error
+{
+    color: #B03434;
+}
+#caja-load .item-load .close-item-load.warning
+{
+    color: #B07534;
+}
+
+#caja-load .item-load .content-item-load > p
+{
+    margin: 0px;
+    padding: 5px;
+    font-size: 12px;
+}
+#caja-load .item-load .content-item-load #content-barstatus
+{
+    margin: 6px;
+}
+#caja-load .item-load .content-item-load #barstatus
+{
+    height: 3px;
+    width: 0%;
+    display:block;
+    background-color: #3474B0;
+}
+#caja-load .item-load .content-item-load #barstatus.success
+{
+    background-color: #3DB034;
+}
+#caja-load .item-load .content-item-load #barstatus.error
+{
+    background-color: #B03434;
+}
+#caja-load .item-load .content-item-load #barstatus.warning
+{
+    background-color: #B07534;
+}

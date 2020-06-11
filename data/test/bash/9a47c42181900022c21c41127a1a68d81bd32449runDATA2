@@ -1,0 +1,170 @@
+#!/bin/bash
+
+setName=$1
+#target=/afs/naf.desy.de/user/s/schettle/scratch/AnalysisTrees/whole2011_RA6
+target=/scratch/hh/current/cms/user/schettle/AnalysisTrees/whole2011_RA6
+scriptLoc=/afs/naf.desy.de/user/s/schettle/macro/CMSSW_4_2_5/src/SUSYBSMAnalysis/DesySusy/examples/compiled/batch
+codeLoc=/afs/naf.desy.de/user/s/schettle/macro/CMSSW_4_2_5/src/SUSYBSMAnalysis/DesySusy/examples/compiled/RA6
+
+
+## D I M U O N ##
+sampleCounter=1
+sampleName[$sampleCounter]=DoubleMuMay10
+sampleSource[$sampleCounter]=/pnfs/desy.de/cms/tier2/store/user/schettle/nTuple11_v4/data/DoubleMu/Run2011A-May10ReReco-v1/
+sampleConfig[$sampleCounter]=config_data/config.txt
+sampleNfiles[$sampleCounter]=6
+
+let sampleCounter=$sampleCounter+1
+sampleName[$sampleCounter]=DoubleMuPRv4
+sampleSource[$sampleCounter]=/pnfs/desy.de/cms/tier2/store/user/schettle/nTuple11_v4/data/DoubleMu/Run2011A-PromptReco-v4/
+sampleConfig[$sampleCounter]=config_data/config.txt
+sampleNfiles[$sampleCounter]=6
+
+let sampleCounter=$sampleCounter+1
+sampleName[$sampleCounter]=DoubleMu05Aug
+sampleSource[$sampleCounter]=/pnfs/desy.de/cms/tier2/store/user/schettle/nTuple11_v4/data/DoubleMu/Run2011A-05Aug2011-v1
+sampleConfig[$sampleCounter]=config_data/config.txt
+sampleNfiles[$sampleCounter]=4
+
+let sampleCounter=$sampleCounter+1
+sampleName[$sampleCounter]=DoubleMuPRv6
+sampleSource[$sampleCounter]=/pnfs/desy.de/cms/tier2/store/user/schettle/nTuple11_v4/data/DoubleMu/Run2011A-PromptReco-v6/
+sampleConfig[$sampleCounter]=config_data/config.txt
+sampleNfiles[$sampleCounter]=4
+
+let sampleCounter=$sampleCounter+1
+sampleName[$sampleCounter]=DoubleMuRunB
+sampleSource[$sampleCounter]=/pnfs/desy.de/cms/tier2/store/user/schettle/nTuple11_v4/data/DoubleMu/Run2011B-PromptReco-v1/
+sampleConfig[$sampleCounter]=config_data/config.txt
+sampleNfiles[$sampleCounter]=8
+
+
+
+## D I E L E C T R O N ##
+let sampleCounter=$sampleCounter+1
+sampleName[$sampleCounter]=DoubleElectronMay10
+sampleSource[$sampleCounter]=/pnfs/desy.de/cms/tier2/store/user/schettle/nTuple11_v4/data/DoubleElectron/Run2011A-May10ReReco-v1/
+sampleConfig[$sampleCounter]=config_data/config.txt
+sampleNfiles[$sampleCounter]=6
+
+let sampleCounter=$sampleCounter+1
+sampleName[$sampleCounter]=DoubleElectronPRv4
+sampleSource[$sampleCounter]=/pnfs/desy.de/cms/tier2/store/user/schettle/nTuple11_v4/data/DoubleElectron/Run2011A-PromptReco-v4/
+sampleConfig[$sampleCounter]=config_data/config.txt
+sampleNfiles[$sampleCounter]=6
+
+let sampleCounter=$sampleCounter+1
+sampleName[$sampleCounter]=DoubleElectron05Aug
+sampleSource[$sampleCounter]=/pnfs/desy.de/cms/tier2/store/user/schettle/nTuple11_v4/data/DoubleElectron/Run2011A-05Aug2011-v1
+sampleConfig[$sampleCounter]=config_data/config.txt
+sampleNfiles[$sampleCounter]=4
+
+let sampleCounter=$sampleCounter+1
+sampleName[$sampleCounter]=DoubleElectronPRv6
+sampleSource[$sampleCounter]=/pnfs/desy.de/cms/tier2/store/user/schettle/nTuple11_v4/data/DoubleElectron/Run2011A-PromptReco-v6/
+sampleConfig[$sampleCounter]=config_data/config.txt
+sampleNfiles[$sampleCounter]=4
+
+let sampleCounter=$sampleCounter+1
+sampleName[$sampleCounter]=DoubleElectronRunB
+sampleSource[$sampleCounter]=/pnfs/desy.de/cms/tier2/store/user/schettle/nTuple11_v4/data/DoubleElectron/Run2011B-PromptReco-v1/
+sampleConfig[$sampleCounter]=config_data/config.txt
+sampleNfiles[$sampleCounter]=8
+
+
+## M U  E G ##
+let sampleCounter=$sampleCounter+1
+sampleName[$sampleCounter]=MuEGMay10
+sampleSource[$sampleCounter]=/pnfs/desy.de/cms/tier2/store/user/schettle/nTuple11_v4/data/MuEG/Run2011A-May10ReReco-v1/
+sampleConfig[$sampleCounter]=config_data/config.txt
+sampleNfiles[$sampleCounter]=6
+
+let sampleCounter=$sampleCounter+1
+sampleName[$sampleCounter]=MuEGPRv4
+sampleSource[$sampleCounter]=/pnfs/desy.de/cms/tier2/store/user/schettle/nTuple11_v4/data/MuEG/Run2011A-PromptReco-v4/
+sampleConfig[$sampleCounter]=config_data/config.txt
+sampleNfiles[$sampleCounter]=6
+
+let sampleCounter=$sampleCounter+1
+sampleName[$sampleCounter]=MuEG05Aug
+sampleSource[$sampleCounter]=/pnfs/desy.de/cms/tier2/store/user/schettle/nTuple11_v4/data/MuEG/Run2011A-05Aug2011-v1
+sampleConfig[$sampleCounter]=config_data/config.txt
+sampleNfiles[$sampleCounter]=4
+
+let sampleCounter=$sampleCounter+1
+sampleName[$sampleCounter]=MuEGPRv6
+sampleSource[$sampleCounter]=/pnfs/desy.de/cms/tier2/store/user/schettle/nTuple11_v4/data/MuEG/Run2011A-PromptReco-v6/
+sampleConfig[$sampleCounter]=config_data/config.txt
+sampleNfiles[$sampleCounter]=4
+
+let sampleCounter=$sampleCounter+1
+sampleName[$sampleCounter]=MuEGRunB
+sampleSource[$sampleCounter]=/pnfs/desy.de/cms/tier2/store/user/schettle/nTuple11_v4/data/MuEG/Run2011B-PromptReco-v1/
+sampleConfig[$sampleCounter]=config_data/config.txt
+sampleNfiles[$sampleCounter]=8
+
+
+
+#let sampleCounter=$sampleCounter+1
+#sampleName[$sampleCounter]=
+#sampleSource[$sampleCounter]=
+#sampleConfig[$sampleCounter]=
+#sampleNfiles[$sampleCounter]=
+
+
+
+
+if [ "$setName" = "" ]; then
+	echo "please define setName or cancel [Ctrl c]."
+	read setName
+fi
+
+goFor="n"
+
+#echo "num samples ${sampleCounter}"
+
+#for i in {1..$sampleCounter}; do
+for (( i=1; i<=$sampleCounter; ++i )); do
+#    echo $i
+#    echo ${sampleName[$i]}
+#    echo ${sampleSource[$i]}
+#    echo ${sampleConfig[$i]}
+#    echo ${sampleNfiles[$i]}
+
+
+    if [ ! -n "${sampleName[$i]}" -o ! -n "${sampleSource[$i]}" -o ! -n "${sampleConfig[$i]}" -o ! -n "${sampleNfiles[$i]}" ]
+    then
+	echo CHECK YOUR SAMPLE SPECIFICATIONS! SOMTHING MISSING IN SAMPLE $i
+	exit
+    fi
+
+    if [ "$goFor" != "all" ]; then
+	goFor="n"
+    fi
+
+    if [ -d "${target}/${setName}_${sampleName[$i]}" ]; then
+	echo dir ${target}/${setName}_${sampleName[$i]} already exists. Remove dir or choose another set name.
+	goFor="exists"
+    fi
+
+    if [ "$goFor" != "all" -a "$goFor" != "exists" ]; then
+	echo "run ${setName}_${sampleName[$i]}? [y/n/all]"
+	read goFor
+    fi  
+
+    if [ "$goFor" = "y" -o "$goFor" = "all" ]; then
+	mkdir ${target}/${setName}_${sampleName[$i]}
+	cd ${target}/${setName}_${sampleName[$i]}
+	${scriptLoc}/./runOnAll ${sampleSource[$i]} \
+	    ${codeLoc}/myAnalysis ${codeLoc}/${sampleConfig[$i]} \
+	    cleanUp nFiles=${sampleNfiles[$i]}
+	echo
+    fi
+done
+
+
+
+
+
+
+

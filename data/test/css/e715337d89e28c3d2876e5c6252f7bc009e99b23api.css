@@ -1,0 +1,63 @@
+.api-list{
+	padding:0; 
+    list-style-type: none;
+}
+
+.api-list-item{
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-radius: 3px;
+	background-color: #FFFFFF;
+	padding-left: 0px;
+	box-sizing:border-box;
+}
+
+.api-list-item-get .type, .api-list-item-post .type, .api-list-item-put .type, .api-list-item-delete .type{
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	background-color: #4CAF50;
+	color: #F8F8F8;
+	padding: 10px 0px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.api-list-item-get .url, .api-list-item-post .url, .api-list-item-put .url, .api-list-item-delete .url{
+	padding-left: 10px;
+	padding: 10px 16px;
+	width: 100%;
+	color: #111111;
+	-webkit-transition: color 0.5s; /* Safari */
+    transition: color 0.5s;
+}
+
+.api-list-item-get .url:hover, .api-list-item-post .url:hover, .api-list-item-put .url:hover, .api-list-item-delete .url:hover{
+	color: #4CAF50;
+	cursor: pointer;
+}
+
+.api-list-item-post .type{
+	background-color: #2196F3;
+}
+
+.api-list-item-post .url:hover{
+	color: #2196F3;
+}
+
+.api-list-item-put .type{
+	background-color: #FF9800;
+}
+
+.api-list-item-put .url:hover{
+	color: #FF9800;
+}
+
+.api-list-item-delete .type{
+	background-color: #F44336;
+}
+
+.api-list-item-delete .url:hover{
+	color: #F44336;
+}

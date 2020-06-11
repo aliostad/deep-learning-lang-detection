@@ -1,0 +1,147 @@
+#!/bin/bash
+
+## Set release base and version
+MY_RELEASE_BASE="/uscms/home/eberry/TowerAlgo/"
+CMSSW_VERSION="CMSSW_2_2_7"
+TAG="IDEAL_V12"
+TEST="false"
+BLANK=""
+
+## Set variables
+job=$1
+numevents=$2 
+if [ ${3} == ${BLANK} ]; then
+    suffix=${3}
+else
+    suffix="_${3}"
+fi
+
+if [ $TEST == "true" ]; then
+    job=1
+    numevents=100
+    suffix="_TEST"
+    eval `scram runtime -sh`
+fi
+ 
+## Set file names
+cfgFile="RelValQCD_job${job}_${numevents}events${suffix}_cfg.py"
+
+if [ $TEST == "false" ]; then
+    
+## Start up CMSSW software
+    cd ${MY_RELEASE_BASE}/${CMSSW_VERSION}/src/
+    source /uscmst1/prod/sw/cms/shrc uaf
+    eval `scram runtime -sh`
+    
+## Go to the scratch directory
+    cd ${_CONDOR_SCRATCH_DIR}
+    
+    showtags
+    
+fi
+
+## Figure out how many events to skip
+step=1
+jobMinusOne=0
+((jobMinusOne = $job - $step))
+set eventsToSkip = 0
+((eventsToSkip = $numevents * $jobMinusOne))
+
+## Tell the log file what you're going to do
+echo I am going to analyze CaloTowers from RelVal Jet samples
+echo I am using CMSSW version: ${CMSSW_VERSION}
+echo I am making python cfg file: ${cfgFile}
+echo I am going to analyze ${numevents} events
+echo I am using the suffix ${3}
+echo This is job ${job}, and I have to do ${numevents} events/job
+echo    so I will skip ${eventsToSkip}
+
+## Make the config file
+
+cat > ${cfgFile}<<EOF
+
+import FWCore.ParameterSet.Config as cms
+
+process = cms.Process("ANA")
+process.load("Configuration.StandardSequences.Geometry_cff")
+process.load("Configuration.StandardSequences.MagneticField_cff")
+process.load("Configuration.StandardSequences.FrontierConditions_GlobalTag_cff")
+process.load("Configuration.EventContent.EventContent_cff")
+process.load("Configuration.StandardSequences.RawToDigi_cff")
+
+process.load("RecoJets.Configuration.CaloTowersES_cfi")
+process.load("RecoJets.JetProducers.CaloTowerSchemeB_cfi")
+
+
+
+process.load("Producers.CaloTowersFromTrigPrimsCreator.RelValQCD_LowPt_cfi")
+
+process.GlobalTag.globaltag = '${TAG}::All'
+
+process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(${numevents}))
+
+process.source.skipEvents = cms.untracked.uint32(${eventsToSkip})
+
+## Local Calo Reco
+process.load("RecoLocalCalo.Configuration.RecoLocalCalo_cff")
+process.calolocalreco_noEcalPreshower = cms.Sequence(process.ecalLocalRecoSequence_nopreshower+process.hcalLocalRecoSequence)
+
+## My CaloTower producer
+process.load("Producers.CaloTowersFromTrigPrimsCreator.calotowersfromtrigprimscreator_cfi")
+process.caloTowersFromTrigPrimsCreator.ebDigiTag = cms.untracked.InputTag ('simEcalUnsuppressedDigis')
+process.caloTowersFromTrigPrimsCreator.eeDigiTag = cms.untracked.InputTag ('simEcalUnsuppressedDigis')
+process.caloTowersFromTrigPrimsCreator.verbose = False
+process.caloTowersFromTrigPrimsCreator.useHF = True
+
+## My analyzer
+process.load("Producers.CaloTowersFromTrigPrimsCreator.calotowersfromtrigprimsanalyzer_cfi")
+process.caloTowersFromTrigPrimsAnalyzer.outputFileName = "CaloTowersFromTrigPrimsAnalyzerOutput_RelValJets_${TAG}_job${job}_${numevents}events${suffix}.root"
+
+
+## Jet reconstruction
+process.load("RecoJets.JetProducers.iterativeCone5CaloJets_cff")
+process.iterativeCone5TPGJets = process.iterativeCone5CaloJets.clone()
+process.iterativeCone5TPGJets.src = "caloTowersFromTrigPrimsCreator"
+process.iterativeCone5TPGJets.alias = "IC5TPGJet"
+
+## Jet corrections -- Summer 08 Redigi is recommended on Twiki for 227
+process.load("JetMETCorrections.Configuration.L2L3Corrections_Summer08Redigi_cff")
+process.prefer("L2L3JetCorrectorIC5Calo") 
+
+process.L2L3CorJetIC5TPG = process.L2L3CorJetIC5Calo.clone()
+process.L2L3CorJetIC5TPG.src = "iterativeCone5TPGJets"
+
+## Dump everything
+process.out = cms.OutputModule("PoolOutputModule",                              
+                               outputCommands = cms.untracked.vstring('keep *'),
+                               fileName = cms.untracked.string('output.root'))
+
+## Declare paths
+process.UNPACK   = cms.Path    ( process.RawToDigi  )
+process.CALORECO = cms.Path    ( process.calolocalreco )
+process.TOWERS   = cms.Path    ( process.caloTowersFromTrigPrimsCreator * process.towerMaker  )
+process.JETRECO  = cms.Path    ( process.iterativeCone5TPGJets * process.iterativeCone5CaloJets )
+process.JETCORR  = cms.Path    ( process.L2L3CorJetIC5TPG * process.L2L3CorJetIC5Calo )
+process.ANALYZE  = cms.Path    ( process.caloTowersFromTrigPrimsAnalyzer )
+process.OUTPUT   = cms.EndPath ( process.out )
+
+## Schedule paths
+process.schedule = cms.Schedule()
+process.schedule.append(process.UNPACK  )
+process.schedule.append(process.CALORECO)
+process.schedule.append(process.TOWERS  )
+process.schedule.append(process.JETRECO )
+process.schedule.append(process.JETCORR )
+## process.schedule.append(process.OUTPUT  ) 
+process.schedule.append(process.ANALYZE )
+
+EOF
+
+## Run the .cfg file
+cmsRun ${cfgFile}
+
+## Remove the .cfg file and the CMSSW build
+if [ $TEST == "false" ]; then
+    rm ${cfgFile} 
+fi
+

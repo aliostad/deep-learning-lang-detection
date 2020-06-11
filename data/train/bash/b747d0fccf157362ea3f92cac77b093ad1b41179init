@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+#Download dependencies.
+composer install;
+#Create schema.
+./vendor/bin/doctrine orm:schema-tool:create --dump-sql;
+./vendor/bin/doctrine orm:schema-tool:update --force --dump-sql;
+#Save sample in schema.
+./ip2location.php --save -i ipcountry.sample.csv -x csv;
+#Export sample to JSON format
+./ip2location.php --export -i ipcountry.sample.csv -x csv -o ipcountry.sample.json -y json;
+#Export sample to XML format
+./ip2location.php --export -i ipcountry.sample.csv -x csv -o ipcountry.sample.xml -y xml

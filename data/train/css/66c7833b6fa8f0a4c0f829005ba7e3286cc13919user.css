@@ -1,0 +1,30 @@
+/*
+*  @author: iKlem <iklem.d@gmail.com>
+*  @version: 1.1
+*/
+
+/* Background image and color. */
+body {
+    background: #CCCCCC url("img/bg.png");
+}
+
+/* Background color of the left panel. */
+header {
+    background: #FFFFFF;
+}
+
+/* Color/background color of the titles "SERVER NAME" and "RULES" */
+h1, #player {
+    color: white;
+    background-color: #045FB4;
+}
+
+/* Background color of the progress bar. */
+#loadBar {
+    background-color: #939393;
+}
+
+/* Color of the filled part of the progress bar. */
+#loadBar-width {
+    background-color: black;
+}

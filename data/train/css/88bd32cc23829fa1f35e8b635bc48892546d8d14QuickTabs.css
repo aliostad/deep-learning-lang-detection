@@ -1,0 +1,47 @@
+/* GLOBAL STYLES */
+
+.product-details-page .full-description,
+.product-details-page .product-specs-box, 
+.ui-tabs .product-specs-box .title {
+    display: none;
+}
+.ui-tabs .product-specs-box,
+.ui-tabs .product-reviews-page{
+    display: block;
+}
+.ui-tabs .full-description {
+    display: block;
+    border: 0;
+    margin-bottom: 0;
+    color: #222;
+}
+.productTabs-body p {
+    margin: 8px 0;
+}
+.productTabs-body ul {
+	margin: 12px 0;
+	padding-left: 36px;
+	list-style: disc;
+}
+.productTabs-body ol {
+	margin: 12px 0;
+	padding-left: 36px;
+	list-style: decimal;
+}
+
+.write-review .inputs {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.write-review label {
+    display: inline-block;
+    float: left;
+    width: 100px;
+}
+.write-review .review-title {
+    width: 350px;
+}
+.write-review .review-text {
+    width: 350px;
+    height: 150px;
+}

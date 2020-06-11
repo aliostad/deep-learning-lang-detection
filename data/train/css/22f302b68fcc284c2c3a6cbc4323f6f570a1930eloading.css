@@ -1,0 +1,65 @@
+/*
+    页面加载效果的样式表
+*/
+#load{
+	width: 100%;
+	height: 500px;
+	background-color:white;
+	position: relative;
+}
+.loader,.loader:before,.loader:after{
+	position: absolute;
+	width: 1em;
+	height: 64px;
+	background-color: #0486C4;
+	/*动画*/
+	animation:load 1s infinite ease-in-out;
+	-webkit-animation: load 1s infinite ease-in-out;
+}
+.loader {
+	top:218px;
+	left:500px;
+	height: 64px;
+   -webkit-animation-delay: -0.16s;
+   animation-delay: -0.16s;
+}
+.loader:before{
+	content:" ";
+	top:0px;
+	left:-20px;
+	height: 64px;
+ -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after{
+	content: " ";
+	top:0;
+	left: 20px;
+}
+
+/*动画帧，利用box-shadow的效果来实现*/
+@keyframes load{
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0 #0486C4;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em #0486C4;
+    height: 5em;
+  }
+}
+@-webkit-keyframes load{
+	 0%,
+ 	 80%,
+ 	 100% {
+   	 box-shadow: 0 0 #0486C4;
+   	 height: 4em;
+ 	 }
+ 	 40% {
+   	 box-shadow: 0 -2em #0486C4;
+   	 height: 5em;
+ 	 }
+
+}

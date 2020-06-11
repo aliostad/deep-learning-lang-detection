@@ -1,0 +1,213 @@
+/* GLOBAL */
+.tree-view-container {
+  list-style: none;
+  padding: 0;
+  font-family: 'Signika', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+}
+.tree-view-container {
+  position: relative;
+  margin: 0;
+}
+.tree-view-container-root .tree-view-container {
+  display: none;
+}
+.tree-view-container-root .tree-view-container.state-open {
+  display: block;
+}
+.tree-view-node {
+  cursor: pointer;
+}
+.tree-view-element {
+  display: block;
+  padding: 12px 16px;
+  position: relative;
+  font-weight: normal;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.tree-view-element.state-disabled {
+  cursor: not-allowed;
+}
+.tree-view-element.have-count {
+  padding-right: 60px;
+}
+.tree-view-action {
+  margin-right: 10px;
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+.tree-view-action .fa {
+  position: relative;
+  z-index: 2;
+  font-size: 18px;
+}
+.tree-view-circle {
+  position: absolute;
+  left: -9px;
+  top: -8px;
+  width: 32px;
+  height: 32px;
+  transition: 0.2s ease;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  border-radius: 100%;
+}
+.count {
+  margin-top: -11px;
+  padding: 3px 5px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  border-radius: 3px;
+}
+/* THEMES */
+.tree-view-theme-default {
+  border: 1px solid #E4E4E4;
+}
+.tree-view-theme-default .tree-view-node {
+  background: #FFF;
+}
+.tree-view-theme-default .tree-view-element {
+  color: #333;
+  border-bottom: 1px solid #E4E4E4;
+}
+.tree-view-theme-default .tree-view-element:hover,
+.tree-view-theme-default .tree-view-element.state-selected {
+  background: #F1F1F1;
+}
+.tree-view-theme-default .tree-view-element.state-selected {
+  color: #4DAF7C;
+}
+.tree-view-theme-default .tree-view-element.state-disabled {
+  background: #F9F9F9;
+  color: #CCC;
+}
+.tree-view-theme-default .tree-view-element.state-disabled .fa {
+  color: #CCC !important;
+}
+.tree-view-theme-default .tree-view-element.state-disabled .count {
+  background: #CCC;
+}
+.tree-view-theme-default .tree-view-action .fa {
+  color: #333;
+}
+.tree-view-theme-default .tree-view-action:hover .close {
+  color: #E25633;
+}
+.tree-view-theme-default .tree-view-action:hover .open {
+  color: #4DAF7C;
+}
+.tree-view-theme-default .tree-view-circle {
+  background: #E4E4E4;
+}
+.tree-view-theme-default .count {
+  background: #4DAF7C;
+  color: #FFF;
+}
+.tree-view-theme-dark {
+  border: 1px solid #343539;
+}
+.tree-view-theme-dark .tree-view-node {
+  background: #343539;
+}
+.tree-view-theme-dark .tree-view-element {
+  color: #FFF;
+}
+.tree-view-theme-dark .tree-view-element:hover,
+.tree-view-theme-dark .tree-view-element.state-selected {
+  background: #303135;
+  color: #00B4C0;
+}
+.tree-view-theme-dark .tree-view-element.state-disabled {
+  color: #8F9094;
+  background: #343539;
+}
+.tree-view-theme-dark .tree-view-element.state-disabled .fa {
+  color: #8F9094 !important;
+}
+.tree-view-theme-dark .tree-view-element.state-disabled .count {
+  background: #8F9094;
+}
+.tree-view-theme-dark .tree-view-action .fa {
+  color: #FFF;
+}
+.tree-view-theme-dark .tree-view-action:hover .close {
+  color: #00B4C0;
+}
+.tree-view-theme-dark .tree-view-action:hover .open {
+  color: #00B4C0;
+}
+.tree-view-theme-dark .tree-view-circle {
+  background: #2E2E31;
+}
+.tree-view-theme-dark .count {
+  padding: 3px 7px;
+  background: #00B4C0;
+  color: #FFF;
+  border-radius: 100px;
+}
+.tree-view-theme-color {
+  border: none;
+}
+.tree-view-theme-color .tree-view-node {
+  background: #F15C22;
+}
+.tree-view-theme-color .tree-view-element {
+  color: #FFF;
+}
+.tree-view-theme-color .tree-view-element:hover,
+.tree-view-theme-color .tree-view-element.state-selected {
+  background: #D7511C;
+  color: #FFF;
+}
+.tree-view-theme-color .tree-view-element.state-disabled {
+  color: #D4D4D4;
+  background: #F15C22;
+}
+.tree-view-theme-color .tree-view-element.state-disabled .fa {
+  color: #D4D4D4 !important;
+}
+.tree-view-theme-color .tree-view-element.state-disabled .count {
+  background: #D4D4D4;
+}
+.tree-view-theme-color .tree-view-action .fa {
+  color: #FFF;
+}
+.tree-view-theme-color .tree-view-action:hover .close {
+  color: #FFF;
+}
+.tree-view-theme-color .tree-view-action:hover .open {
+  color: #FFF;
+}
+.tree-view-theme-color .tree-view-circle {
+  background: #CC4D1B;
+}
+.tree-view-theme-color .count {
+  background: #D7511C;
+  color: #FFF;
+}
+/* LEVELs */
+.tree-view-level-1 {
+  border-bottom: 0;
+}
+.tree-view-level-2 .tree-view-element {
+  padding-left: 40px;
+}
+.tree-view-level-3 .tree-view-element {
+  padding-left: 65px;
+}
+.tree-view-level-4 .tree-view-element {
+  padding-left: 90px;
+}
+.tree-view-level-5 .tree-view-element {
+  padding-left: 115px;
+}
+.tree-view-level-6 .tree-view-element {
+  padding-left: 140px;
+}

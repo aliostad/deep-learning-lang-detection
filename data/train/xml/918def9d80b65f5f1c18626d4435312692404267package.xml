@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package>
+  <name>turtle_concert_second_version</name>
+  <version>0.6.1</version>
+  <description>
+    A very simple software concert.
+  </description>
+  <maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+  <maintainer email="jihoonlee.in@gmail.com">Jihoon Lee</maintainer>
+  <license>BSD</license>
+  <url type="website">http://ros.org/wiki/turtle_concert</url>
+  <url type="repository">https://github.com/robotics-in-concert/rocon_tutorials</url>
+  <url type="bugtracker">https://github.com/robotics-in-concert/rocon_tutorials/issues</url>
+  <author email="d.stonier@gmail.com">Daniel Stonier</author>
+  <author email="jihoonlee.in@gmail.com">Jihoon Lee</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>turtlesim</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>gateway_msgs</build_depend>
+  <build_depend>std_srvs</build_depend>
+  <build_depend>roscpp</build_depend>
+
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>std_srvs</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>turtlesim</run_depend>
+  <run_depend>concert_master</run_depend>
+  <run_depend>concert_msgs</run_depend>
+  <run_depend>concert_scheduler_requests</run_depend>
+  <run_depend>gateway_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>rocon_app_manager</run_depend>
+  <run_depend>rocon_apps</run_depend>
+  <run_depend>rocon_bubble_icons</run_depend>
+  <run_depend>concert_service_turtlesim</run_depend>
+  <run_depend>concert_service_admin</run_depend>
+  <run_depend>rocon_python_comms</run_depend>
+  <run_depend>rocon_python_utils</run_depend>
+  <run_depend>rocon_uri</run_depend>
+  <run_depend>zeroconf_avahi</run_depend> 
+  <run_depend>zeroconf_msgs</run_depend>
+
+  <export>
+    <rocon_app>rapps/video_teleop/video_teleop.rapp</rocon_app>
+    <rocon_app>rapps/turtle_stroll/turtle_stroll.rapp</rocon_app>
+    <concert_service>services/turtle_pond/turtle_pond.service</concert_service>
+  <concert_service>services/zzzz/zzzz.service</concert_service><concert_service>services/zzzz/zzzz.service</concert_service><concert_service>services/aa/aa.service</concert_service><concert_service>services/.service</concert_service><concert_service>services/.service</concert_service><concert_service>services/xxx/xxx.service</concert_service><concert_service>services/xxx/xxx.service</concert_service><concert_service>services/.service</concert_service><concert_service>services/xxxx/xxxx.service</concert_service><concert_service>services/xxxx/xxxx.service</concert_service><concert_service>services/xxxx/xxxx.service</concert_service><concert_service>services/xxxx/xxxx.service</concert_service><concert_service>services/.service</concert_service><concert_service>services/.service</concert_service><concert_service>services/.service</concert_service><concert_service>services/.service</concert_service><concert_service>services/.service</concert_service><concert_service>services/.service</concert_service><concert_service>services/.service</concert_service><concert_service>services/.service</concert_service><concert_service>services/aaaa/aaaa.service</concert_service><concert_service>services/aaaa/aaaa.service</concert_service><concert_service>services/aaaa/aaaa.service</concert_service><concert_service>services/aaaa/aaaa.service</concert_service><concert_service>services/aaaa/aaaa.service</concert_service><concert_service>services/aaaa/aaaa.service</concert_service><concert_service>services/aaa/aaa.service</concert_service><concert_service>services/xxx/xxx.service</concert_service><concert_service>services/.service</concert_service><concert_service>services/.service</concert_service><concert_service>services/.service</concert_service><concert_service>services/.service</concert_service><concert_service>services/.service</concert_service><concert_service>services/.service</concert_service><concert_service>services/.service</concert_service><concert_service>services/.service</concert_service><concert_service>services/.service</concert_service><concert_service>services/.service</concert_service><concert_service>services/.service</concert_service><concert_service>services/aa/aa.service</concert_service><concert_service>services/aa/aa.service</concert_service><concert_service>services/aa/aa.service</concert_service><concert_service>services/aa/aa.service</concert_service><concert_service>services/aa/aa.service</concert_service><concert_service>services/aa/aa.service</concert_service><concert_service>services/aa/aa.service</concert_service><concert_service>services/aa/aa.service</concert_service><concert_service>services/aa/aa.service</concert_service><concert_service>services/aa/aa.service</concert_service><concert_service>services/aa/aa.service</concert_service><concert_service>services/aa/aa.service</concert_service><concert_service>services/aa/aa.service</concert_service><concert_service>services/zz/zz.service</concert_service><concert_service>services/qqqq2222/qqqq2222.service</concert_service></export>
+</package>

@@ -1,0 +1,72 @@
+body
+{
+        font-family: "Courier New", Courier, monospace;
+}
+.assignop
+{
+        color: red;
+}
+.bitwise
+{
+        color: green;
+}
+.arithmeop {
+        color: #6F4E37;
+}
+.logic {
+        color: #575;
+}
+.math
+{
+        color: brown;
+}
+.native
+{
+        color: blue;
+}
+.structure
+{
+        color: #557755;
+}
+.comment
+{
+        color: darkgrey;
+}
+.string
+{
+        color: orange;
+}
+.int
+{
+        color: magenta;
+}
+.obj
+{
+        color: blueviolet;
+}
+.variable
+{
+        color: brown;
+}
+
+.ECMAstandard {
+        color: cadetblue;
+}
+
+.dom_api
+{
+        color: purple;
+}
+.dom_api.attripute
+{
+        color: green;
+}
+
+.firebug
+{
+        color: red;
+}
+.firebug.method
+{
+        color: crimson;
+}

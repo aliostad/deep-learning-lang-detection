@@ -1,0 +1,21 @@
+﻿
+
+CREATE PROCEDURE OT_SETACCESS_RemoveReadWriteAccessForUsergroup
+    @usersetid as int
+    , @settype as char(1)
+    , @companyid int
+  as
+  DELETE OUTTASK_USER_SET_READ_ACCESS 
+	FROM OUTTASK_USER_SET_READ_ACCESS A, OUTTASK_USER_SET S
+  WHERE A.READ_SET_ID = @usersetid
+	AND A.SET_ID = S.SET_ID 
+	AND S.SET_TYPE = @settype
+	AND S.COMPANY_ID = @companyid
+
+  DELETE OUTTASK_USER_SET_WRITE_ACCESS 
+	FROM OUTTASK_USER_SET_WRITE_ACCESS A, OUTTASK_USER_SET S
+  WHERE A.WRITE_SET_ID = @usersetid
+	AND A.SET_ID = S.SET_ID 
+	AND S.SET_TYPE = @settype
+	AND S.COMPANY_ID = @companyid
+

@@ -1,0 +1,43 @@
+// include Fake lib
+#r @"packages/FAKE/tools/FakeLib.dll"
+open Fake
+
+
+// Properties
+let buildDir = "./build"
+let releaseDir = "./release"
+
+// Targets
+Target "Clean" (fun _ ->
+trace "--- Cleaning build and test dirs --- "
+CleanDirs [buildDir]
+)
+
+Target "CopyToDebugFolder" (fun _ ->
+trace "Copying from build to debug"
+!! ("./build/" + "*.*")
+      |> Copy "./Debug"
+)
+
+Target "BuildApp" (fun _ ->
+trace "--- Building app --- "
+!! "Helbreath.Client/*.vcxproj"
+ |> MSBuild "" "Build" ["Configuration", "Debug"; "PlatformToolset", "v120"; "Platform", "x86"; "OutDir", "../build"]
+ |> Log "AppBuild-Output: "
+)
+
+Target "BuildInReleaseApp" (fun _ ->
+trace "--- Building app --- "
+!! "Helbreath.Client/*.vcxproj"
+ |> MSBuild "" "Build" ["Configuration", "Release"; "PlatformToolset", "v120"; "Platform", "x86"; "OutDir", "../release"]
+ |> Log "AppBuild-Output: "
+)
+
+Target "Default" (fun _ ->
+trace "--- Starting... --- "
+)
+
+// start build
+"Clean" ==> "BuildApp" ==> "CopyToDebugFolder" ==> "BuildInReleaseApp" ==> "Default"
+
+RunTargetOrDefault "Default"

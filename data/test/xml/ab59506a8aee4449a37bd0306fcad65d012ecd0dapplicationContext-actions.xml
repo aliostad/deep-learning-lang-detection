@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	     xmlns:aop="http://www.springframework.org/schema/aop"
+	     xmlns:tx="http://www.springframework.org/schema/tx"
+	     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">
+	
+	<bean id="UserAction" class="com.hut.action.UserAction" scope="prototype">
+	   <property name="userService" ref="userService"/>
+	</bean>
+	
+	<bean id="XslqAction" class="com.hut.action.XslqAction" scope="prototype">
+	   <property name="xslqService" ref="xslqService"/>
+	   <property name="xsService" ref="xsService"/>
+	   <property name="xsxjzcService" ref="xsxjzcService"/>
+	   <property name="xslbService" ref="xslbService"/>
+	   <property name="xsxlService" ref="xsxlService"/>
+	   <property name="loginService" ref="loginService"/>
+	   <property name="mzService" ref="mzService"/>
+	   <property name="xService" ref="xService"/>
+	</bean>
+	
+	<bean id="XslbAction" class="com.hut.action.XslbAction" scope="prototype">
+	   <property name="xslbService" ref="xslbService"/>
+	   <property name="userService" ref="userService"/>
+	</bean>
+	
+	<bean id="XsAction" class="com.hut.action.XsAction" scope="prototype">
+	   <property name="xsService" ref="xsService"/>
+	   <property name="userService" ref="userService"/>
+	   <property name="mzService" ref="mzService"/>
+	   <property name="xslbService" ref="xslbService"/>
+	   <property name="xyService" ref="xyService"/>
+	   <property name="xService" ref="xService"/>
+	   <property name="pyccService" ref="pyccService"/>
+	   <property name="ejxkService" ref="ejxkService"/>
+	   <property name="teacherService" ref="teacherService"/>
+	   <property name="xsdsService" ref="xsdsService"/>
+	   <property name="xjztService" ref="xjztService"/>
+	</bean>
+	
+	<bean id="XyAction" class="com.hut.action.XyAction" scope="prototype">
+	   <property name="xyService" ref="xyService"/>
+	</bean>
+	
+	<bean id="EjxkAction" class="com.hut.action.EjxkAction" scope="prototype">
+	   <property name="ejxkService" ref="ejxkService"/>
+	</bean>
+	
+	<bean id="XyzyAction" class="com.hut.action.XyzyAction" scope="prototype">
+	   <property name="xyzyService" ref="xyzyService"/>
+	   <property name="ejxkService" ref="ejxkService"/>
+	</bean>
+	
+	<bean id="TeacherAction" class="com.hut.action.TeacherAction" scope="prototype">
+		<property name="teacherService" ref="teacherService"></property>
+		<property name="mzService" ref="mzService" />
+		<property name="xyService" ref="xyService"></property>
+		<property name="xService" ref="xService" />
+		<property name="yzbzzyService" ref="yzbzzyService" />
+		<property name="xlService" ref="xlService" />
+		<property name="xwService" ref="xwService" />
+		<property name="zcService" ref="zcService" />
+		<property name="zzmmService" ref="zzmmService" />
+		<property name="userService" ref="userService" />
+		<property name="xxService" ref="xxService" />
+		<property name="userRoleService" ref="userRoleService"></property>
+		<property name="dqjgService" ref="dqjgService"></property>
+		<property name="xzjgService" ref="xzjgService"></property>
+		<property name="shjgService" ref="shjgService"></property>
+		<property name="createNumberService" ref="createNumberService"></property>
+	</bean>
+	
+	<bean id="UserRoleAction" class="com.hut.action.UserRoleAction" scope="prototype">
+		<property name="userRoleService" ref="userRoleService"></property>
+		<property name="roleService" ref="roleService"></property>
+	</bean>
+	
+	<bean id="RoleFunctionAction" class="com.hut.action.RoleFunctionAction" scope="prototype">
+		<property name="roleFunctionService" ref="roleFunctionService"></property>
+	</bean>
+	
+	<bean id="RoleAction" class="com.hut.action.RoleAction" scope="prototype">
+		<property name="roleService" ref="roleService"></property>
+	</bean>
+	
+	<bean id="RoleModuleAction" class="com.hut.action.RoleModuleAction" scope="prototype">
+		<property name="roleModuleService" ref="roleModuleService"></property>
+	</bean>
+	
+	<bean id="TreeAction" class="com.hut.action.TreeAction" scope="prototype">
+		<property name="roleFunctionService" ref="roleFunctionService"></property>
+		<property name="roleModuleService" ref="roleModuleService"></property>
+		<property name="moduleService" ref="moduleService"></property>
+		<property name="functionService" ref="functionService"></property>
+		<property name="userRoleService" ref="userRoleService"></property>
+	</bean>
+
+	<bean id="ClassAction" class="com.hut.action.ClassAction" scope="prototype">
+		<property name="classService" ref="classService"></property>
+		<property name="midService" ref="midService"></property>
+	</bean>
+	
+	<bean id="LessonAction" class="com.hut.action.LessonAction" scope="prototype">
+		<property name="lessonService" ref="lessonService"></property>
+	</bean>
+	
+	<bean id="MidAction" class="com.hut.action.MidAction" scope="prototype">
+		<property name="classService" ref="classService"></property>
+		<property name="lessonService" ref="lessonService"></property>
+		<property name="jsxxService" ref="jsxxService"></property>
+		<property name="teacherService" ref="teacherService"></property>
+		<property name="midService" ref="midService"></property>
+	</bean>
+	
+	<bean id="JsxxAction" class="com.hut.action.JsxxAction" scope="prototype">
+		<property name="jsxxService" ref="jsxxService"></property>
+	</bean>
+	
+	<bean id="KccjAction" class="com.hut.action.KccjAction" scope="prototype">
+		<property name="kccjService" ref="kccjService"></property>
+		<property name="userService" ref="userService"></property>
+		<property name="xsService" ref="xsService"></property>
+		<property name="ejxkService" ref="ejxkService"></property>
+		<property name="xyService" ref="xyService"></property>
+		<property name="lessonService" ref="lessonService"></property>
+	</bean>
+	
+	<bean id="DaoShiAction" class="com.hut.action.DaoShiAction">
+		<property name="userRoleService" ref="userRoleService"></property>
+		<property name="teacherService"  ref="teacherService"></property>
+		<property name="dsxxService"  ref="dsxxService"></property>
+		<property name="zzmmService"  ref="zzmmService"></property>
+		<property name="zjlbService"  ref="zjlbService"></property>
+		<property name="yzbzzyService"  ref="yzbzzyService"></property>
+		<property name="yjdwService" ref="yjdwService"></property>
+		<property name="mzService"  ref="mzService"></property>
+		<property name="xyService"  ref="xyService"></property>
+		<property name="dqjgService" ref="dqjgService"></property>
+		<property name="xzjgService" ref="xzjgService"></property>
+		<property name="shjgService" ref="shjgService"></property>
+		<property name="createNumberService" ref="createNumberService"></property>
+		<property name="xwService"  ref="xwService"></property>
+		<property name="xlService"  ref="xlService"></property>
+		<property name="userService" ref="userService"></property>
+		<property name="zcService"  ref="zcService"></property>
+	</bean>
+</beans>
+

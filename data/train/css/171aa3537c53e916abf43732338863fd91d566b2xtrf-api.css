@@ -1,0 +1,92 @@
+.dropdown-menu {
+  border-color: #eeeeee;
+  border-radius: 0;
+}
+
+.json {
+  white-space:pre-wrap;
+}
+
+.http {
+  white-space:pre-wrap;
+}
+
+hr {
+  border-style:solid black;
+}
+
+pre {
+  border-radius: 0;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+p {
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0;
+  color: inherit;
+  background: transparent;
+}
+
+.json {
+  margin-top: 1em;
+}
+
+.xtrf-api {
+  padding-top: 30px;
+}
+
+.xtrf-api .text-primary {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.xtrf-api .label {
+  border-radius: 0;
+}
+
+.xtrf-api .table {
+  margin: 0 0 3em 0;
+}
+
+.xtrf-api .table pre {
+  margin: 0;
+}
+
+.xtrf-api .data-types__item,
+.xtrf-api .operation {
+  padding-top: 3em;
+}
+
+.xtrf-api h3 small {
+  position: relative;
+}
+
+.xtrf-api h3 .label-http-method {
+  position: absolute;
+  top: -1px;
+  right: -100%;
+}
+
+.xtrf-api .headerlink {
+  display: none;
+  text-decoration: none;
+  color: #444444;
+}
+
+.xtrf-api h3:hover .headerlink {
+  display: inline;
+}
+
+.navbar-brand img {
+  position: relative;
+  top: -2px;
+}

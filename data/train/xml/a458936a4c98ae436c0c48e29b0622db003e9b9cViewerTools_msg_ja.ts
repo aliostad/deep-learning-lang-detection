@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="ja" sourcelanguage="en">
+  <context>
+    <name>ViewerTools_CubeAxesDlgBase</name>
+    <message>
+      <source>X_AXIS</source>
+      <translation>X 軸</translation>
+    </message>
+    <message>
+      <source>Y_AXIS</source>
+      <translation>Y 軸</translation>
+    </message>
+    <message>
+      <source>Z_AXIS</source>
+      <translation>Z 軸</translation>
+    </message>
+    <message>
+      <source>CAPTION</source>
+      <translation>目盛付軸</translation>
+    </message>
+    <message>
+      <source>IS_VISIBLE</source>
+      <translation>表示</translation>
+    </message>
+    <message>
+      <source>FONT</source>
+      <translation>色</translation>
+    </message>
+    <message>
+      <source>NAME</source>
+      <translation>名前</translation>
+    </message>
+    <message>
+      <source>TICK_MARKS</source>
+      <translation>目盛り</translation>
+    </message>
+    <message>
+      <source>LABELS</source>
+      <translation>ラベル</translation>
+    </message>
+    <message>
+      <source>LENGTH</source>
+      <translation>長さ</translation>
+    </message>
+    <message>
+      <source>NUMBER</source>
+      <translation>番号</translation>
+    </message>
+    <message>
+      <source>OFFSET</source>
+      <translation>オフセット</translation>
+    </message>
+    <message>
+      <source>AXIS_NAME</source>
+      <translation>軸名</translation>
+    </message>
+  </context>
+  <context>
+    <name>ViewerTools_FontWidgetBase</name>
+    <message>
+      <source>BOLD</source>
+      <translation>Bold</translation>
+    </message>
+    <message>
+      <source>ITALIC</source>
+      <translation>Italic</translation>
+    </message>
+    <message>
+      <source>SHADOW</source>
+      <translation>シャドウ</translation>
+    </message>
+  </context>
+</TS>

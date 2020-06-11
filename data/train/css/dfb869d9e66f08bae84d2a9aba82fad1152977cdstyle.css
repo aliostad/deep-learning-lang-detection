@@ -1,0 +1,26 @@
+.animate-show-hide {
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #dedede;
+	color: #595959;
+	background: #eee;
+}
+
+.animate-show-hide.ng-hide-add,
+.animate-show-hide.ng-hide-remove {
+	-webkit-transition: all linear 0.5s;
+	-moz-transition: all linear 0.5s;
+	-o-transition: all linear 0.5s;
+	transition: all linear 0.5s;
+	display: block !important;
+}
+
+.animate-show-hide.ng-hide-add.ng-hide-add-active,
+.animate-show-hide.ng-hide-remove {
+	opacity: 0;
+}
+
+.animate-show-hide.ng-hide-add,
+.animate-show-hide.ng-hide-remove.ng-hide-remove-active {
+	opacity: 1;
+}

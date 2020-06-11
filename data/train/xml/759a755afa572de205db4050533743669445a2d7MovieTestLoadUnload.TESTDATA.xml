@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<marionette_info>
+  <expected_messages>
+    <message type="starts_with">About to load movie </message>
+    <message type="whole_message">Image loaded into texture_map 1</message>
+    <message type="whole_message">Image loaded into texture_map 2</message>
+    <message type="whole_message">Image loaded into texture_map 3</message>
+    <message type="whole_message">Image unloaded from texture_map 1</message>
+    <message type="whole_message">Image unloaded from texture_map 2</message>
+    <message type="whole_message">Image unloaded from texture_map 3</message>
+  </expected_messages>
+</marionette_info>

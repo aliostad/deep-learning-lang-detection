@@ -1,0 +1,20 @@
+#side-sortables #mp_write_autoresponder #postcustomstuff td.left input, #side-sortables #pagecustomdiv #postcustomstuff td.left input {
+margin:3px 3px 0;
+}
+#side-sortables #mp_write_autoresponder #postcustomstuff .submit, #side-sortables #pagecustomdiv #postcustomstuff .submit {
+padding:0 5px;
+}
+#mp_write_autoresponder #postcustomstuff .submit, #pagecustomdiv #postcustomstuff .submit {
+border:0 none;
+float:none;
+padding:5px 8px;
+}
+#postcustomstuff .updatewrite_autoresponder, #postcustomstuff .deletewrite_autoresponder {
+margin:auto;
+}
+#postcustomstuff #newar .submit {
+padding:0 8px;
+}
+.arschedule {
+text-align:center;
+}

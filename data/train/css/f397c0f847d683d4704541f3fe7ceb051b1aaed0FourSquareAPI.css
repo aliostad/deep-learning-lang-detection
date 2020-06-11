@@ -1,0 +1,168 @@
+/* CSS Document */
+.FourSquareAPI_badges,
+.FourSquareAPI_venues {
+	display: inline-block;
+}
+.FourSquareAPI_slider {
+	position:relative;
+}
+.FourSquareAPI_sliderArrows a {
+display:block;
+text-indent:-9999px;
+outline:none;
+z-index:50;
+background-image:url(../images/prev_next.png);
+width:42px;
+height:42px;
+position:absolute;
+top:0;
+margin-top:45px;
+}
+
+.FourSquareAPI_sliderPrev {
+background-position:0 0;
+left:0;
+}
+
+.FourSquareAPI_sliderPrev:hover {
+background-position:0 -44px;
+}
+
+.FourSquareAPI_sliderNext {
+right:0;
+background-position:-44px 0;
+}
+
+.FourSquareAPI_sliderNext:hover {
+background-position:-44px -44px;
+}
+
+.FourSquareAPI_sliderContent {
+	float:left;
+	position:relative;
+	overflow:hidden;
+}
+.FourSquareAPI_listContent {
+	display: inline-block;
+	overflow:hidden;
+}
+.FourSquareAPI_item {
+  background-color: #F9F8F7;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px 5px 5px 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+	position:absolute;
+	display: inline-block;
+  color: #444444 !important;
+}
+.FourSquareAPI_badge {
+  margin-bottom: 5px;
+  padding: 5px;
+  display: inline-block;
+}
+.FourSquareAPI_sliderContent .FourSquareAPI_badgeImage {
+  float: right !important;
+  margin: 0 0 0 5px !important;
+}
+.FourSquareAPI_listContent .FourSquareAPI_badgeImage {
+  float: left !important;
+  margin: 0 0 0 5px !important;
+}
+.FourSquareAPI_item img {
+  float: left;
+  margin: 0 5px 0 0;
+  cursor: pointer;
+}
+.FourSquareAPI_item img.noclick {
+  cursor: default;
+}
+.FourSquareAPI_title a {
+  color: #444444 !important;
+  font-size: 15px;
+  line-height: 16px;
+  margin-top: 6px;
+  font-weight: bold;
+  margin: 0;
+  clear: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.FourSquareAPI_timestamp {
+	text-align: right;
+	font-size: 10px;
+}
+.FourSquareAPI_description {
+  background-color: #E6E6E6;
+  clear: none;
+  padding: 3px;
+  position: relative;
+  line-height: 12px;
+  font-size: 10px;
+  overflow: hidden;
+  height: 35px;
+  margin-bottom: 3px;
+}
+.FourSquareAPI_details {
+  background-color: #E6E6E6;
+  clear: left;
+  float: left;
+  margin: 7px 0 0 37px;
+  padding: 3px 8px 8px;
+  position: relative;
+  line-height: 17px;
+  font-size: 15px;
+  width: 100%;
+}
+.FourSquareAPI_details_adr,
+.FourSquareAPI_details_twitter,
+.FourSquareAPI_details_website {
+  margin-top: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.FourSquareAPI_stats {
+  background-color: #F9F9F9;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px 5px 5px 5px;
+  clear: left;
+  margin: 7px 0 0 37px;
+  overflow: hidden;
+  float: left;
+  padding-top: 3px;
+  width: 175px;
+}
+.FourSquareAPI_stat {
+	width: 31%;
+  font-size: 8.5px;
+  line-height: 9.5px;
+	display: inline-block;
+	text-align: center;
+	overflow: hidden;
+  border-right: 1px dotted #CCCCCC;
+}
+.FourSquareAPI_stats strong {
+  color: #555555;
+  display: block;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.FourSquareAPI_stats4digits {
+	font-size: 18px;
+	line-height: 20px;
+}
+.FourSquareAPI_stats5digits {
+	font-size: 16px;
+	line-height: 18px;
+}
+.FourSquareAPI_stats6digits {
+	font-size: 14px;
+	line-height: 16px;
+}
+.FourSquareAPI_stats7digits {
+	font-size: 11px;
+	line-height: 16px;
+}

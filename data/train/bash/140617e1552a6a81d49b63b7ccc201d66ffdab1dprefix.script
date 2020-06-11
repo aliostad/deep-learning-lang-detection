@@ -1,0 +1,72 @@
+#!/bin/sh
+#
+# Copyright (C) 2013-2015  Codethink Limited
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; version 2 of the License.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+## Honour 'prefix' attribute for chunks within stratum morphs
+
+set -eu
+
+# Create two chunks which print out PATH and PREFIX from their environment.
+cd "$DATADIR/chunk-repo"
+git checkout -q master
+cat <<\EOF > xyzzy.morph
+name: xyzzy
+kind: chunk
+configure-commands:
+    - "echo First chunk: prefix $PREFIX"
+EOF
+
+cat <<\EOF > plugh.morph
+name: plugh
+kind: chunk
+configure-commands:
+  - "echo Second chunk: prefix $PREFIX"
+  - "echo Path: $(echo $PATH | grep -o '/plover')"
+EOF
+
+git add xyzzy.morph
+git add plugh.morph
+git commit -q -m "Add chunks"
+
+# Change stratum to include those two chunks, and use a custom install prefix
+cd "$DATADIR/morphs-repo"
+cat <<EOF > hello-stratum.morph
+name: hello-stratum
+kind: stratum
+chunks:
+  - name: xyzzy
+    repo: test:chunk-repo
+    ref: master
+    build-depends: []
+    build-mode: test
+    prefix: /plover
+  - name: plugh
+    repo: test:chunk-repo
+    ref: master
+    build-mode: test
+    build-depends:
+      - xyzzy
+EOF
+git add hello-stratum.morph
+git commit -q -m "Update stratum"
+
+"$SRCDIR/scripts/test-morph" build-morphology \
+    test:morphs-repo master hello-system
+
+cd "$DATADIR/cache/artifacts"
+first_chunk=$(ls -1 *.chunk.xyzzy-* | head -n1 | cut -c -64)
+second_chunk=$(ls -1 *.chunk.plugh-* | head -n1 | cut -c -64)
+cat $first_chunk.build-log $second_chunk.build-log

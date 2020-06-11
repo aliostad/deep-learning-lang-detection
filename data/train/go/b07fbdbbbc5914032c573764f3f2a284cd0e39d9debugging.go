@@ -1,0 +1,146 @@
+package lexer
+
+import (
+	"fmt"
+)
+
+func Enum2String(token int) (s string) {
+	switch token {
+	case EOF:
+		return "EOF"
+	case ERROR:
+		return "ERROR"
+	case HASH:
+		return "HASH"
+	case AMP:
+		return "AMP"
+	case LPAREN:
+		return "LPAREN"
+	case RPAREN:
+		return "RPAREN"
+	case STAR:
+		return "STAR"
+	case PLUS:
+		return "PLUS"
+	case COMMA:
+		return "COMMA"
+	case MINUS:
+		return "MINUS"
+	case DOT:
+		return "DOT"
+	case DOTDOT:
+		return "DOTDOT"
+	case SLASH:
+		return "SLASH"
+	case COLON:
+		return "COLON"
+	case COLONEQUAL:
+		return "COLONEQUAL"
+	case SEMICOLON:
+		return "SEMICOLON"
+	case LESS:
+		return "LESS"
+	case LESSEQUAL:
+		return "LESSEQUAL"
+	case EQUAL:
+		return "EQUAL"
+	case GREATER:
+		return "GREATER"
+	case GREATEREQUAL:
+		return "GREATEREQUAL"
+	case LSQUARE:
+		return "LSQUARE"
+	case RSQUARE:
+		return "RSQUARE"
+	case CARAT:
+		return "CARAT"
+	case LCURLY:
+		return "LCURLY"
+	case BAR:
+		return "BAR"
+	case RCURLY:
+		return "RCURLY"
+	case TILDE:
+		return "TILDE"
+	case ARRAY:
+		return "ARRAY"
+	case BEGIN:
+		return "BEGIN"
+	case BY:
+		return "BY"
+	case CASE:
+		return "CASE"
+	case CONST:
+		return "CONST"
+	case DIV:
+		return "DIV"
+	case DO:
+		return "DO"
+	case ELSE:
+		return "ELSE"
+	case ELSIF:
+		return "ELSIF"
+	case END:
+		return "END"
+	case FALSE:
+		return "FALSE"
+	case FOR:
+		return "FOR"
+	case IDENT:
+		return "IDENT"
+	case IF:
+		return "IF"
+	case IMPORT:
+		return "IMPORT"
+	case IN:
+		return "IN"
+	case INTEGER:
+		return "INTEGER"
+	case IS:
+		return "IS"
+	case MOD:
+		return "MOD"
+	case MODULE:
+		return "MODULE"
+	case NIL:
+		return "NIL"
+	case OF:
+		return "OF"
+	case OR:
+		return "OR"
+	case POINTER:
+		return "POINTER"
+	case PROCEDURE:
+		return "PROCEDURE"
+	case REAL:
+		return "REAL"
+	case RECORD:
+		return "RECORD"
+	case REPEAT:
+		return "REPEAT"
+	case RETURN:
+		return "RETURN"
+	case STRING:
+		return "STRING"
+	case THEN:
+		return "THEN"
+	case TO:
+		return "TO"
+	case TRUE:
+		return "TRUE"
+	case TYPE:
+		return "TYPE"
+	case UNTIL:
+		return "UNTIL"
+	case VAR:
+		return "VAR"
+	case WHILE:
+		return "WHILE"
+	}
+	return "<unknown-token>"
+}
+
+func DumpToken(t Token) (s string) {
+	s = fmt.Sprintf("Token{ Enum=%s(%d), Value=%s, Line=%d, Column=%d, Location=%d }", Enum2String(t.Enum()), t.Enum(), t.Value(), t.Line(), t.Column(), t.Location())
+	return s
+}

@@ -1,0 +1,40 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+#total {
+	display:none;
+}
+#total-content a {
+	cursor: pointer;
+}
+#manage {
+	display:none;
+}
+#submit-container {
+	display: none;
+}
+#submit-container input {
+	width: 49%;
+	margin: 5px 0;
+}
+#submit-container textarea {
+	width: 100%;
+}
+#write-btn {
+	border-bottom: 1px dotted #555;
+}
+#captcha {
+	margin-left: 3px;
+	margin-top: -3px;
+}
+.message-author {
+	font-weight: bold;
+}
+.message-date {
+	color: #555;
+	font-size: 12px;
+}

@@ -1,0 +1,12 @@
+python model.py --knn instances2gamesback.txt > knn2gb
+python model.py --knn instances3gamesback.txt > knn3gb
+python model.py --knn instances4gamesback.txt > knn4gb
+python model.py --knn instances5gamesback.txt > knn5gb
+python model.py --knn instances6gamesback.txt > knn6gb
+python model.py --knn instances7gamesback.txt > knn7gb
+python model.py --dt instances2gamesback.txt > dt2gb
+python model.py --dt instances3gamesback.txt > dt3gb
+python model.py --dt instances4gamesback.txt > dt4gb
+python model.py --dt instances5gamesback.txt > dt5gb
+python model.py --dt instances6gamesback.txt > dt6gb
+python model.py --dt instances7gamesback.txt > dt7gb

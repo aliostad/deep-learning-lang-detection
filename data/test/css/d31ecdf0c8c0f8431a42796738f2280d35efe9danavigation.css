@@ -1,0 +1,158 @@
+/**
+ * Navigation;
+ */
+
+.nav {
+	margin: 0;
+	padding: 0;
+	height: 36px;
+	list-style: none;
+}
+
+.nav--full {
+	clear: left;
+	margin-top: 15px;
+	padding: 0 3px;
+	border-bottom: 1px solid #ccc;
+}
+
+.nav__item {
+	position: relative;
+	float: left;
+	height: 36px;
+}
+
+.nav--full .nav__item--cta {
+    position: relative;
+    top: -4px;
+    float: right;
+}
+
+.nav__link {
+	display: block;
+	margin: 0 10px;
+	height: 36px;
+	color: #767676;	
+	font-size: 1em;
+    line-height: 36px;
+}
+
+.nav__link--last { margin-right: 0; }
+
+.nav__link:visited { color: #767676; }
+
+.nav__link:hover {
+	color: #007DBA;
+	text-decoration: none;
+}
+
+.nav__link:focus { color: #007DBA; }
+
+.nav__link--active {
+	height: 32px;
+	color: #000;
+	line-height: 36px;
+	border-bottom: 4px solid #0096D6;
+}
+
+.nav__link--active:visited { color: #000; }
+
+.nav__link--active:focus { color: #000; }
+
+.nav__link--active:hover { color: #000; }
+
+.nav__item--cta > .btn { margin-left: 15px; }
+
+.nav--full .nav__link {
+    margin: 0 15px;
+    line-height: 32px;
+}
+
+.nav--full .nav__item--cta > .btn { margin-right: 15px; }
+
+/* Sub navigation */
+
+.nav-wrap {
+	position: absolute;
+    padding-top: 12px;
+    left: 10px;
+    top: 100%;
+    border-bottom: 3px solid #0096d6;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.nav-wrap:before {
+	content: "";
+	position: absolute;
+	left: 20px;
+	top: 4px;
+	width: 30px;
+	height: 10px;
+	background: transparent url(../i/gateway/type/name/hpe-ui-sprite.png) 0 -372px no-repeat;
+}
+
+.sub-nav {
+	margin: 0;
+	padding: 14px 0;
+	border: 2px solid #ccc;
+	border-bottom: 0;
+	background: #fff;
+}
+
+.sub-nav__link {
+	display: block;
+	padding: 0 20px;
+	color: #767676;
+	font-size: 14px;
+	line-height: 32px;
+	border-top: 1px solid #ccc;
+	white-space: nowrap;
+}
+
+.nav--full .sub-nav__link {
+    color: #000;
+}
+
+.sub-nav__link:visited {
+	color: #767676;
+}
+
+.nav--full .sub-nav__link:visited {
+    color: #000;
+}
+
+.sub-nav__link:focus,
+.sub-nav__link:hover,
+.nav--full .sub-nav__link:focus,
+.nav--full .sub-nav__link:hover {
+    text-decoration: none;
+}
+
+.sub-nav__link:focus,
+.sub-nav__link:hover {
+	color: #007DBA;
+}
+
+.nav--full .sub-nav__link:focus,
+.nav--full .sub-nav__link:hover {
+    background: #007DBA;
+    color: #fff;
+}
+
+.sub-nav__link--active {
+	color: #000;
+}
+
+.sub-nav__link--active:visited {
+	color: #000;
+}
+
+.sub-nav__link--active:hover {
+	color: #000;
+}
+
+.nav__item--active .nav-wrap,
+.nav__item:hover .nav-wrap {
+	visibility: visible;
+}

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mappings SYSTEM 'HardwareKeyboardDeadKeyMap.dtd'>
+<mappings version="1.0">
+  <language layout="cz">
+    <mapping result="Á" from="´A"/>
+    <mapping result="á" from="´a"/>
+    <mapping result="É" from="´E"/>
+    <mapping result="é" from="´e"/>
+    <mapping result="Í" from="´I"/>
+    <mapping result="í" from="´i"/>
+    <mapping result="Ó" from="´O"/>
+    <mapping result="ó" from="´o"/>
+    <mapping result="Ú" from="´U"/>
+    <mapping result="ú" from="´u"/>
+    <mapping result="Ý" from="´Y"/>
+    <mapping result="ý" from="´y"/>
+    <mapping result="Č" from="ˇC"/>
+    <mapping result="č" from="ˇc"/>
+    <mapping result="Ď" from="ˇD"/>
+    <mapping result="ď" from="ˇd"/>
+    <mapping result="Ě" from="ˇE"/>
+    <mapping result="ě" from="ˇe"/>
+    <mapping result="Ň" from="ˇN"/>
+    <mapping result="ň" from="ˇn"/>
+    <mapping result="Ř" from="ˇR"/>
+    <mapping result="ř" from="ˇr"/>
+    <mapping result="Š" from="ˇS"/>
+    <mapping result="š" from="ˇs"/>
+    <mapping result="Ť" from="ˇT"/>
+    <mapping result="ť" from="ˇt"/>
+    <mapping result="Ž" from="ˇZ"/>
+    <mapping result="ž" from="ˇz"/>
+  </language>
+  <language layout="fr">
+    <mapping result="Â" from="^A"/>
+    <mapping result="â" from="^a"/>
+    <mapping result="Ê" from="^E"/>
+    <mapping result="ê" from="^e"/>
+    <mapping result="Î" from="^I"/>
+    <mapping result="î" from="^i"/>
+    <mapping result="Ô" from="^O"/>
+    <mapping result="ô" from="^o"/>
+    <mapping result="Û" from="^U"/>
+    <mapping result="û" from="^u"/>
+    <mapping result="Ä" from="¨A"/>
+    <mapping result="ä" from="¨a"/>
+    <mapping result="Ë" from="¨E"/>
+    <mapping result="ë" from="¨e"/>
+    <mapping result="Ï" from="¨I"/>
+    <mapping result="ï" from="¨i"/>
+    <mapping result="Ö" from="¨O"/>
+    <mapping result="ö" from="¨o"/>
+    <mapping result="Ü" from="¨U"/>
+    <mapping result="ü" from="¨u"/>
+    <mapping result="Ÿ" from="¨Y"/>
+    <mapping result="ÿ" from="¨y"/>
+  </language>
+  <language layout="pt">
+    <mapping result="Á" from="´A"/>
+    <mapping result="á" from="´a"/>
+    <mapping result="É" from="´E"/>
+    <mapping result="é" from="´e"/>
+    <mapping result="Í" from="´I"/>
+    <mapping result="í" from="´i"/>
+    <mapping result="Ó" from="´O"/>
+    <mapping result="ó" from="´o"/>
+    <mapping result="Ú" from="´U"/>
+    <mapping result="ú" from="´u"/>
+    <mapping result="Ý" from="´Y"/>
+    <mapping result="ý" from="´y"/>
+    <mapping result="À" from="`A"/>
+    <mapping result="à" from="`a"/>
+    <mapping result="È" from="`E"/>
+    <mapping result="è" from="`e"/>
+    <mapping result="Ì" from="`I"/>
+    <mapping result="ì" from="`i"/>
+    <mapping result="Ò" from="`O"/>
+    <mapping result="ò" from="`o"/>
+    <mapping result="Ù" from="`U"/>
+    <mapping result="ù" from="`u"/>
+    <mapping result="Ã" from="~A"/>
+    <mapping result="ã" from="~a"/>
+    <mapping result="Õ" from="~O"/>
+    <mapping result="õ" from="~o"/>
+    <mapping result="Â" from="^A"/>
+    <mapping result="â" from="^a"/>
+    <mapping result="Ê" from="^E"/>
+    <mapping result="ê" from="^e"/>
+    <mapping result="Î" from="^I"/>
+    <mapping result="î" from="^i"/>
+    <mapping result="Ô" from="^O"/>
+    <mapping result="ô" from="^o"/>
+    <mapping result="Û" from="^U"/>
+    <mapping result="û" from="^u"/>
+  </language>
+  <language layout="br">
+    <include layout="pt"/>
+  </language>
+  <language layout="sk">
+    <mapping result="Á" from="´A"/>
+    <mapping result="á" from="´a"/>
+    <mapping result="É" from="´E"/>
+    <mapping result="é" from="´e"/>
+    <mapping result="Í" from="´I"/>
+    <mapping result="í" from="´i"/>
+    <mapping result="Ĺ" from="´L"/>
+    <mapping result="ĺ" from="´l"/>
+    <mapping result="Ó" from="´O"/>
+    <mapping result="ó" from="´o"/>
+    <mapping result="Ŕ" from="´R"/>
+    <mapping result="ŕ" from="´r"/>
+    <mapping result="Ú" from="´U"/>
+    <mapping result="ú" from="´u"/>
+    <mapping result="Ý" from="´Y"/>
+    <mapping result="ý" from="´y"/>
+    <mapping result="Č" from="ˇC"/>
+    <mapping result="č" from="ˇc"/>
+    <mapping result="Ď" from="ˇD"/>
+    <mapping result="ď" from="ˇd"/>
+    <mapping result="Ľ" from="ˇL"/>
+    <mapping result="ľ" from="ˇl"/>
+    <mapping result="Ň" from="ˇN"/>
+    <mapping result="ň" from="ˇn"/>
+    <mapping result="Š" from="ˇS"/>
+    <mapping result="š" from="ˇs"/>
+    <mapping result="Ť" from="ˇT"/>
+    <mapping result="ť" from="ˇt"/>
+    <mapping result="Ž" from="ˇZ"/>
+    <mapping result="ž" from="ˇz"/>
+    <mapping result="Ô" from="^O"/>
+    <mapping result="ô" from="^o"/>
+  </language>
+  <language layout="es">
+    <mapping result="Á" from="´A"/>
+    <mapping result="á" from="´a"/>
+    <mapping result="É" from="´E"/>
+    <mapping result="é" from="´e"/>
+    <mapping result="Í" from="´I"/>
+    <mapping result="í" from="´i"/>
+    <mapping result="Ó" from="´O"/>
+    <mapping result="ó" from="´o"/>
+    <mapping result="Ú" from="´U"/>
+    <mapping result="ú" from="´u"/>
+    <mapping result="Ý" from="´Y"/>
+    <mapping result="ý" from="´y"/>
+    <mapping result="Ä" from="¨A"/>
+    <mapping result="ä" from="¨a"/>
+    <mapping result="Ë" from="¨E"/>
+    <mapping result="ë" from="¨e"/>
+    <mapping result="Ï" from="¨I"/>
+    <mapping result="ï" from="¨i"/>
+    <mapping result="Ö" from="¨O"/>
+    <mapping result="ö" from="¨o"/>
+    <mapping result="Ü" from="¨U"/>
+    <mapping result="ü" from="¨u"/>
+    <mapping result="Ÿ" from="¨Y"/>
+    <mapping result="ÿ" from="¨y"/>
+  </language>
+  <language layout="ch">
+    <mapping result="Â" from="^A"/>
+    <mapping result="â" from="^a"/>
+    <mapping result="Ê" from="^E"/>
+    <mapping result="ê" from="^e"/>
+    <mapping result="Î" from="^I"/>
+    <mapping result="î" from="^i"/>
+    <mapping result="Ô" from="^O"/>
+    <mapping result="ô" from="^o"/>
+    <mapping result="Û" from="^U"/>
+    <mapping result="û" from="^u"/>
+  </language>
+</mappings>

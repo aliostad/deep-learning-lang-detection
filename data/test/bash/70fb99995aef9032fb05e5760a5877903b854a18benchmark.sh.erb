@@ -1,0 +1,14 @@
+#!/bin/bash
+
+export TARGET_DB=postgresql://benchmark:benchmark@localhost/benchmark
+export INITIAL_DEBITS=<%= node['benchmark']['initial_debits'] %>
+export INITIAL_CREDITS=<%= node['benchmark']['initial_credits'] %>
+export SAMPLE=<%= node['benchmark']['sample'] %>
+export NEWRELIC_FILE=/srv/benchmark/newrelic.ini
+
+cd /srv/benchmark
+source .env/bin/activate
+
+python -m benchmark.main original --init-debits $INITIAL_DEBITS --init-credits $INITIAL_CREDITS --sample $SAMPLE > /tmp/original.log
+
+python -m benchmark.main scalar --init-debits $INITIAL_DEBITS --init-credits $INITIAL_CREDITS --sample $SAMPLE > /tmp/scalar.log

@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html {
+  height: 100%;
+  font-size: 62.5%; }
+
+body {
+  height: 100%;
+  background-color: #a8a8a8; }
+
+.model-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 85.94%;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px; }
+  .model-container .top {
+    font-size: 3.2rem;
+    text-align: left;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 5rem;
+    background-color: #ededed;
+    border-radius: 10px; }
+  .model-container .middle {
+    padding-bottom: 3rem;
+    text-align: center;
+    border-bottom: 3px solid #ddd; }
+    .model-container .middle .first {
+      padding-top: 3rem; }
+    .model-container .middle .title {
+      width: 22%;
+      margin-right: 1.5rem;
+      text-align: right;
+      display: inline-block;
+      font-size: 2.4rem; }
+    .model-container .middle .remove {
+      width: 14.55%;
+      height: 6rem;
+      font-size: 3.2rem; }
+    .model-container .middle .earn {
+      width: 27.27%;
+      height: 6rem;
+      font-size: 3.2rem;
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      margin-left: 1rem;
+      margin-right: 1rem; }
+    .model-container .middle .add {
+      font-size: 3.2rem;
+      width: 14.55%;
+      height: 6rem; }
+    .model-container .middle .second {
+      padding-top: 1.5rem; }
+    .model-container .middle .third {
+      padding-top: 1.5rem; }
+    .model-container .middle .forth {
+      padding-top: 1.5rem; }
+    .model-container .middle .fifth {
+      padding-top: 1.5rem; }
+      .model-container .middle .fifth .date {
+        width: 57.27%;
+        height: 6rem;
+        font-size: 3.2rem;
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 10px; }
+  .model-container .bottom {
+    padding-bottom: 3rem;
+    margin-top: 2.6rem;
+    text-align: center; }
+    .model-container .bottom .confirm {
+      width: 70.31%;
+      height: 6.0rem; }
+
+/*# sourceMappingURL=model2.css.map */

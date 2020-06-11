@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogue xml:lang="sk">
+    <message key="About">O programe</message>
+    <message key="Index">Zoznám</message>
+    <message key="Changes">Zmeny</message>
+    <message key="Todo">Úlohy</message>
+    <message key="Samples">Príklady</message>
+    <message key="Apache document">Apache Document</message>
+    <message key="Static content">Statický Obsah</message>
+    <message key="Wiki page">Wiki stránka</message>
+    <message key="ihtml page">ihtml stránka</message>
+    <message key="ehtml page">ehtml stránka</message>
+    <message key="FAQ">Casté Otázky</message>
+    <message key="Simplifed Docbook">Simplifed Docbook stránka</message>
+    <message key="XSP page">XSP stránka</message>
+</catalogue>

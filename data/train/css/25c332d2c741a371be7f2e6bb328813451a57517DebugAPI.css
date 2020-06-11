@@ -1,0 +1,44 @@
+﻿.DebugAPI {
+    display: block;
+    font-family: 'Microsoft Yahei','\5FAE\8F6F\96C5\9ED1',Arial,'Hiragino Sans GB','\5B8B\4F53';
+    font-size: 14px;
+    padding: 20px 0px 0px 0px;
+}
+
+    .DebugAPI .ajax_debug {
+        min-width: 100px;
+        margin: auto 15px;
+        cursor: pointer;
+    }
+
+    .DebugAPI .ajax_type,
+    .DebugAPI .ajax_contentType,
+    .DebugAPI .ajax_dataType {
+        display: inline-block;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        padding: 3px 10px;
+    }
+
+    .DebugAPI .ajax_url {
+        display: inline-block;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        padding: 3px 10px;
+    }
+
+    .DebugAPI .ajax_data,
+    .DebugAPI .ajax_success,
+    .DebugAPI .ajax_error,
+    .DebugAPI .ajax_complete {
+        display: inline-block;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        resize: none;
+        padding: 3px 10px;
+    }
+
+    .DebugAPI .panel .col-xs-12 {
+        line-height: 30px;
+        margin-bottom: 8px;
+    }

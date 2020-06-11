@@ -1,0 +1,15 @@
+<root>
+  <copy_choose id="1" copies="1,2,3,4"/>
+  <copy_choose id="2" copies="5,6,7"/>
+  <copy_choose id="3" copies="8,9,10"/>
+  <copy_choose id="4" copies="11,12,13,14"/>
+  <copy_choose id="5" copies="15,16,17,18,19"/>
+  <copy_choose id="6" copies="20,21,22,23,24"/>
+  <copy_choose id="7" copies="25,26,27,28,29"/>
+  <copy_choose id="8" copies="30,31,32,33,34,35"/>
+  <copy_choose id="9" copies="36,37,38,39,40"/>
+  <copy_choose id="10" copies="41,42,43,44,45,46"/>
+  <copy_choose id="11" copies="47,48,49,50,51"/>
+  <copy_choose id="12" copies="52,53,54,55,56,57"/>
+  <copy_choose id="13" copies="58,59,60,61"/>
+</root>

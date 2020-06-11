@@ -1,0 +1,127 @@
+/**
+ * @file
+ * CSS for the API module.
+ */
+
+/* PHP code */
+.php {
+  overflow: auto;
+  white-space: pre-wrap;
+}
+.php .php-comment {
+  color: #666;
+}
+.php .php-function-or-constant {
+  color: #00a;
+}
+.php .php-function-or-constant a.local,
+.php .php-variable a.local {
+  color: #00a;
+  font-weight: bold;
+}
+.php .php-function-or-constant a.php-manual {
+  color: #048;
+  font-weight: bold;
+}
+.php .php-variable {
+  color: #330;
+}
+.php .php-string {
+  color: #a00;
+}
+.php .php-constant {
+  color: #a33;
+}
+.php .php-keyword {
+  color: #060;
+}
+
+ol.code-lines {
+   padding: 0;
+   margin: 0 0 0 20px;
+}
+
+ol.code-lines li {
+   padding: 0 0 0 5px;
+   margin: 0 0 0 20px;
+}
+
+/* Function signature */
+#api-function-signature td,
+#api-function-signature td a,
+#api-function-signature td a:visited {
+  color: #9d9d93;
+}
+#api-function-signature tr.active td.branch {
+  font-weight: bold;
+}
+#api-function-signature tr.active td,
+#api-function-signature tr.active td a,
+#api-function-signature tr.active td a:visited {
+  color: #000000;
+}
+#api-function-signature th,
+#api-function-signature td {
+  background: #fff;
+  padding: 0.2em;
+}
+#api-function-signature td code {
+  background: #fff;
+}
+#api-function-signature td.signature {
+  font-size: 1.2em;
+}
+#api-function-signature .branch {
+  padding-left: 2em;
+  text-align: right;
+  white-space: nowrap;
+}
+#api-function-signature th {
+  font-size: 0.6944em;
+  font-weight: normal;
+}
+#api-function-signature td.signature {
+  width: 100%;
+}
+#api-function-signature del {
+  text-decoration: none;
+  color: #9e8353;
+}
+#api-function-signature ins {
+  text-decoration: none;
+  color: #456500;
+}
+
+/* Search form */
+
+form.api-search-form div.form-item {
+  display: inline;
+}
+
+form.api-search-form input.api-search-keywords {
+  width: 100%;
+}
+
+/* Other styles */
+
+.api-defined {
+  color: #9d9d93;
+  font-size: 0.8333em;
+}
+
+.api-inheritance-source {
+  float:right;
+}
+
+ol#api-alternatives,
+ol#api-alternatives li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 5px;
+}
+
+ol#api-alternatives {
+  margin-bottom: 10px;
+}
+

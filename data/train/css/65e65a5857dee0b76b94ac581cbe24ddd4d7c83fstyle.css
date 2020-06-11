@@ -1,0 +1,98 @@
+html,body{background-image:url("../img/doodle.jpg");font-family:'Source Sans Pro','sans-serif'}
+p,h4,h3{font-weight:300}
+.nav-main{background-color:rgba(0,0,0,0.5);border:0;border-radius:0;height:60px;position:fixed;width:100%;z-index:9999;}
+.nav-main .logo{display:inline-block;margin:auto;width:30%}
+.nav-main .logo-text-left{color:#eb4655;margin-top:5px}
+.nav-main .logo-text-right{color:#fff;margin-left:-30px;margin-top:5px}
+.header{height:100%;width:100%;}
+.header-image{
+/*    display:block;*/
+    width:100%
+}
+.header-text{
+    font-size:20px;
+    margin:5%;
+    margin-top:30%;
+    width:90%;
+    z-index:999;
+    text-align:center;
+    background-image:url("../img/bg.jpg");
+}
+.header .header-text h1{font-weight:300}
+.header .header-text strong{color:#eb4655}
+.header-hidden{display:none}
+.service-box{
+    display:table;
+    margin:0;
+    padding:0;
+    width:100%;
+    background: #000;
+}
+.service-box .box-service-1,.service-box .box-service-2,.service-box .box-service-3,.service-box .box-service-4{
+    background-position:center center;
+    color:#fff;
+    display:inline-block;
+    height:300px;
+    margin:0;
+    padding:0;
+    text-align:center;
+    vertical-align:top;
+    width:100%;
+}
+.service-box .box-service-1 h4,.service-box .box-service-2 h4,.service-box .box-service-3 h4,.service-box .box-service-4 h4{padding-top:15%}
+.service-box .box-service-1 p,.service-box .box-service-2 p,.service-box .box-service-3 p,.service-box .box-service-4 p{display:block;margin:auto;width:80%;font-size:1.2em}
+.service-box .box-service-1{background:url("../img/service1.jpg")}
+.service-box .box-service-2{background:url("../img/service2.jpg")}
+.service-box .box-service-3{background:url("../img/service3.jpg")}
+.service-box .box-service-4{background:url("../img/service4.jpg")}
+.service-box .background-service{background-color:rgba(0,0,0,0.5);display:inline-block;height:300px;vertical-align:top;width:100%}
+.service-box .background-service:hover{transition:background-color 1s ease;background-color:rgba(0,0,0,0.8)}
+.service-block{background:#ecf0f1;display:table;width:100%;}
+.service-block .services{background-color:#ecf0f1;display:table;margin:auto;width:70%;}
+.service-block .services .service-coment,.service-block .services .service-image{display:inline-block;height:100%;vertical-align:top;width:50%}
+.service-block .services .service-coment{padding:5%}
+.service-block .services .service-image{padding:1%}
+.service-block .services img{display:block;margin:auto;width:100%}
+.contact{background-color:#000;display:table;height:600px;width:100%;}
+.contact h3{color:#22a3d1;font-weight:300;padding:10% 20%;text-align:center}
+.contact .btn-contact{background:#000;border:solid 1px #22a3d1;color:#22a3d1;display:block;margin:auto;padding:20px}
+.contact .btn-contact:hover{transition:background-color 1s ease;background-color:#22a3d1;border:solid 1px #22a3d1;color:#000;display:block;margin:auto;padding:20px}
+.humorenserio{background:#fff;display:table;height:400px;width:100%;}
+.humorenserio h3{font-weight:300;padding:10% 0 5% 0;text-align:center}
+.humorenserio img{display:block;margin:auto;padding:0 0 10% 0;width:20%}
+.koffeemunster{background:#000;display:table;height:250px;width:100%;}
+.koffeemunster h3{font-weight:300;padding:10% 0 5% 0;text-align:center;color:#22a3d1}
+.koffeemunster img{display:block;margin:auto;padding:0 0 10% 0;width:20%}
+
+
+
+
+
+.koffeemunster_ {
+    background:#000;
+    display:table;
+    height:250px;
+    width:100%;
+    text-align: center;
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.humorenserio_ {
+    background:#fff;
+    display:table;
+    height:400px;
+    width:100%;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.logo-humor {
+    width: 60%
+}
+
+.logo-km {
+    width: 70%;
+}

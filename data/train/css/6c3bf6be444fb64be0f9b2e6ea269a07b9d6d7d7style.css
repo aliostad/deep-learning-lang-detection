@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+}
+.loading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background: url(img/donot7.png);
+}
+.loading .bg {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  background: #242424;
+}
+.loading .top-bg {
+  top: 0;
+  left: 0;
+}
+.loading .bottom-bg {
+  bottom: 0;
+  left: 0;
+}
+.loading .load-line {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  top: 50%;
+}
+.loading .load-line .line {
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  background: #f05246;
+}
+.content {
+  position: relative;
+  z-index: 998;
+}

@@ -1,0 +1,110 @@
+#!/usr/bin/env python
+"""
+Command line tool for testing the existence of an ion service.
+
+usage: ionsval target_name sys_name [broker_host] [broker_vhost]
+
+Assume all ion services have an op_ping. 
+
+A service that has been successfully spawned and bound to a queue with 
+the routing key "sysname.targetname" will reply_ok if we rpc_send it a
+ping.
+
+This does not explicitly verify the complete functionality of the service,
+it only verifies that the service can send and receive messages on its
+"sysname.targetname" name.
+
+
+A successful ping will exit with status 0
+
+A failure (rpc_send timeout) will exit with status 1
+
+A problem with the ion container used in this test will exit with status 2
+
+Invoking ionsval with no arguments prints the usage and exits with status 64
+
+@author Dorian Raymer <deldotdr@gmail.com>
+"""
+import sys
+
+from twisted.internet import defer
+from twisted.internet import reactor
+
+from ion.core.process import process
+
+class Client(process.ProcessClient):
+
+    def __init__(self, targetname, proc=None, **kw):
+        kw['targetname'] = targetname
+        process.ProcessClient.__init__(self, proc, **kw)
+
+    @defer.inlineCallbacks
+    def ping(self):
+        yield self._check_init()
+        request = {'piece':'of'}
+        response = yield self.rpc_send('ping', request)
+        defer.returnValue(response[0])
+
+def validate(_, targetname):
+    client = Client(targetname)
+    d = client.ping()
+    d.addCallbacks(exit_ok, exit_fail)
+    return d
+
+def exit_ok(result):
+    return 0
+
+def exit_fail(reason):
+    reason.printTraceback()
+    return 1
+
+def container_error(reason):
+    reason.printTraceback()
+    return 2
+
+def finish_test(status, container):
+    def stop_with_status(res, status):
+        reactor.stop()
+        global exit_status # This might be my first legit global :-/
+        exit_status = status
+    d = container.stopService()
+    d.addBoth(stop_with_status, status)
+    return d
+
+def run_test(targetname, sysname, broker_host, broker_vhost):
+    from ion.core.cc import service
+    config = service.Options()
+    config['broker_host'] = broker_host
+    config['broker_vhost'] = broker_vhost
+    config['no_shell'] = True
+    config['args'] = 'sysname=%s' % (sysname,)
+    config['script'] = None
+    container = service.CapabilityContainer(config)
+    d = container.startService()
+    d.addCallback(validate, targetname)
+    d.addErrback(container_error)
+    d.addCallback(finish_test, container)
+    return d
+
+def main(targetname, sysname, broker_host='localhost', broker_vhost='/'):
+    """
+    @param targetname Name of service to test.
+    @param sysname Container namespace
+    @param broker_host 
+    @param broker_vhost 
+    """
+    global exit_status
+    exit_status = 4
+    run_test(targetname, sysname, broker_host, broker_vhost)
+    reactor.run()
+    sys.exit(exit_status)
+
+
+if __name__ == '__main__':
+    if len(sys.argv) < 2:
+        print "usage: ionsval target_name sys_name [broker_host] [broker_vhost]"
+        print
+        print "Ping an Ion service by name to Validate its existence."
+        sys.exit(64)
+    args = sys.argv[1:]
+    main(*args)

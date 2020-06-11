@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<axis2 xmlns="http://www.netbeans.org/ns/axis2/1">
+    <service name="xcpdig">
+            <service-class>com.vangent.hieos.services.xcpd.gateway.serviceimpl.XCPDInitiatingGateway</service-class>
+        </service>
+        <service name="xcpdrg">
+            <service-class>com.vangent.hieos.services.xcpd.gateway.serviceimpl.XCPDRespondingGateway</service-class>
+    </service>
+    <service name="xcpdigas">
+                <service-class>com.vangent.hieos.services.xcpd.gateway.serviceimpl.XCPDInitiatingGatewayASync</service-class>
+            </service>
+            <service name="xcpdrgas">
+                <service-class>com.vangent.hieos.services.xcpd.gateway.serviceimpl.XCPDRespondingGatewayAsync</service-class>
+    </service>
+</axis2>
+

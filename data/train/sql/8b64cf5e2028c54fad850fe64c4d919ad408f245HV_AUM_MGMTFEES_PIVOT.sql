@@ -1,0 +1,32 @@
+
+  CREATE OR REPLACE  VIEW HV_AUM_MGMTFEES_PIVOT (PORTFOLIO, PORTFOLIO_NAME, NAV_SUM, NSUM, PORT_COUNT, MONTH_ID, TRANS_DATE, PORTFOLIO_CATEGORY) AS 
+  SELECT PORTFOLIO,
+  portfolio_name,
+  ROUND((SUM(nav_sum)/COUNT(PORTFOLIO)),2)NAV_SUM,
+  NAV_SUM NSUM,
+  COUNT(PORTFOLIO)PORT_COUNT,
+  MONTH_ID,
+  Trans_date,PORTFOLIO_CATEGORY
+FROM
+  (SELECT portfolio,
+    portfolio_name,--AVG(ACCENT_AMNT) ACCENT_AMNT--,sum(AVG_NAV)
+    PORTFOLIO_CATEGORY,
+    SUM(AVG_NAV_MON) AVG_NAV_MON,
+    SUM(AVG_NAV_YEAR) AVG_NAV_YEAR,
+    SUM(NAV_SUM) NAV_SUM,
+    COUNT(portfolio),trans_date,
+    MONTH_ID
+  FROM HV_AUM_MGMTFEES
+    --where month_id='JAN-2014' and trans_date between '01 jan 2014' and '09 jan 2014' and portfolio='JUN1120D12'
+  GROUP BY portfolio,
+    TRANS_DATE,
+    MONTH_ID,
+    portfolio_name,PORTFOLIO_CATEGORY
+  )
+ --WHERE PORTFOLIO='APR24MT112' AND 
+  --MONTH_ID='JAN-2014'
+  --and trans_date between '01 jan 2014' and '09 jan 2014' --and portfolio='JUN1120D12'
+GROUP BY PORTFOLIO,
+  portfolio_name,
+  MONTH_ID,TRANS_DATE,NAV_SUM,PORTFOLIO_CATEGORY;
+ 

@@ -1,0 +1,23 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+	remove|upgrade|remove-in-favour|deconfigure-in-favour)
+		#
+		#	Stop the daemon
+		#
+        if [ -x /etc/init.d/handballer ]; then
+            if [ -x /usr/sbin/invoke-rc.d ]; then
+                invoke-rc.d handballer stop || invoke-rc.d handballer force-stop || true
+            else
+                /etc/init.d/handballer stop || /etc/init.d/handballer force-stop || true
+            fi
+        fi
+		[ -L /usr/doc/handballer ] && rm -f /usr/doc/handballer
+		;;
+	failed-upgrade)
+		;;
+esac
+
+exit 0

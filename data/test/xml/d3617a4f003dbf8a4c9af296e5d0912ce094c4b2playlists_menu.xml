@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/item_set"
+          android:title="@string/set"/>
+    <item android:id="@+id/item_append"
+          android:title="@string/append"/>
+    <item android:id="@+id/item_set_shuffled"
+          android:title="@string/set_shuffled"/>
+    <item android:id="@+id/item_append_shuffled"
+          android:title="@string/append_shuffled"/>
+    <item android:id="@+id/item_delete"
+          android:title="@string/delete"/>
+    <item android:title="@string/cancel"/>
+</menu>

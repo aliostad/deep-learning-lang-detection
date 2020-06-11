@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbook>
+	<worksheet name="Sheet1">
+		<section startRow="0" endRow="0" />
+		<loop startRow="1" items="result01" var="h"
+			varType="com.sp.net.domain.rule.redmine.TempCustomer">
+			<section startRow="1" endRow="1">
+				<mapping row="1" col="0">h.subject</mapping>
+				<mapping row="1" col="1">h.statue</mapping>
+				<mapping row="1" col="2">h.priority</mapping>
+				<mapping row="1" col="3">h.orderDate</mapping>
+				<mapping row="1" col="4">h.customerType</mapping>
+				<mapping row="1" col="5">h.contactMan</mapping>
+				<mapping row="1" col="6">h.phone</mapping>
+				<mapping row="1" col="7">h.fax</mapping>
+				<mapping row="1" col="8">h.qqNemail</mapping>
+				<mapping row="1" col="9">h.traceDate</mapping>
+			</section>
+			<loopbreakcondition>
+				<rowcheck offset="0">
+					<cellcheck offset="0" />
+				</rowcheck>
+			</loopbreakcondition>
+		</loop>
+	</worksheet>
+</workbook>

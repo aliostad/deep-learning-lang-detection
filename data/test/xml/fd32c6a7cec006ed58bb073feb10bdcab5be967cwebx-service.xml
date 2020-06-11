@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="GB2312"?>
+<configuration>
+	<services>
+		<service name="ResourceLoaderService"
+			class="com.alibaba.service.resource.DefaultResourceLoaderService">
+			<property name="resource.descriptors">
+				<value>/classpath/resources.xml</value>
+			</property>
+		</service>
+		<!--  
+		<service name="MailService"
+			class="com.alibaba.service.mail.DefaultMailService">
+			<property name="mail.descriptors" value="/classpath/email.xml" />
+		</service>
+-->
+		<service name="BeanFactoryService"
+			class="com.alibaba.service.spring.DefaultBeanFactoryService">
+			<property name="bean.descriptors">
+				<value>springtest/biz-webx.xml</value>
+			</property>
+		</service>
+
+
+
+
+	</services>
+</configuration>

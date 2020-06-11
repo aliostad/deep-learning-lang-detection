@@ -1,0 +1,27 @@
+.input-prepend.input-prepend-block, .input-append.input-append-block {
+    width: 100%;
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    font-size: inherit;
+    white-space: normal;
+}
+.input-prepend-block .input-block-level, .input-append-block .input-block-level {
+    display: table-cell;
+}
+.input-prepend-block .add-on, .input-prepend-block .btn, .input-append-block .add-on, .input-append-block .btn {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+    display: table-cell;
+}
+.input-append .select2-offscreen,
+.input-prepend .select2-offscreen {
+    position: absolute;
+}
+
+
+.select2-container-multi .select2-choices .select2-search-choice div {
+	font-size:14px;
+}
+

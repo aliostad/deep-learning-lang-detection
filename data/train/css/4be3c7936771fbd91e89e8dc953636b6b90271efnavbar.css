@@ -1,0 +1,104 @@
+.navbar {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+	color: rgba(0,0,0,0.44);
+	position: fixed;
+	top: 0;
+  transition: top 0.3s ease-in-out;
+  width: 100%;
+  display: block;
+  
+  background: white;
+  z-index: 900;
+}
+
+.nav-up {
+  top: -60px;
+}
+
+.modal {
+	display: block;
+}
+
+.navbar h1 {
+	float: left;
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	color: black;
+}
+
+.navbar-nav {
+	margin: 0 auto;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.navbar a {
+	display: block;
+	padding: 5px 10px;
+}
+
+.navbar-categories {
+	float: left;
+	display: block;
+	text-align: center;
+	margin-top: 20px;
+	width: 50%;
+	font-size: 14px;
+	background: white;
+}
+
+.navbar-categories li {
+	float: left;
+}
+
+.navbar-categories li:hover {
+	color: rgba(0,0,0,0.6);
+}
+
+.navbar-signout-and-write {
+	font-size: 14px;
+	margin: 5px;
+	display: block;
+	float: right;
+}
+
+.navbar-signout-and-write li {
+	margin-right: 10px;
+	float: left;
+	border-radius: 999em;
+	color: rgba(0,0,0,0.3);
+}
+
+.navbar-signout-and-write .search {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	padding: 10px;
+}
+
+.navbar-signout-and-write .search input {
+	color: rgba(0,0,0,0.6);
+}
+
+.navbar-signout-and-write li > a {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	display: block;
+	border-radius: 999em;
+	padding: 10px 20px;
+}	
+
+.navbar-signout-and-write li > a:hover {
+	border-color: rgba(0, 0, 0, 0.6);
+	color: rgba(0, 0, 0, 0.6);
+}	
+
+button:hover {
+	cursor: pointer;
+}
+
+.header-profilepic {
+	position: relative;
+}
+
+.profilepic {
+	width: 100%;
+	height: 100%;
+}

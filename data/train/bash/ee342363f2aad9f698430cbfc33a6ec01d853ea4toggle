@@ -1,0 +1,68 @@
+#!/bin/bash
+#
+#	Toggle Repos Script, 2012.10.04 by sea
+#
+#	This script is written with best intention to help, 
+#	but there is NO warranty and I deny ANY responsiblity
+#	that may or may not affect your system.
+#
+#
+#	Lisence:	GPL v3
+#	Author: 	Simon A. Erat (sea)
+#	Date Created:	2012.10.04
+#	Date Changed:	2013.07.18
+	script_version="0.5"
+#	Resource URL:   
+#	Release URL:    
+#
+#	Title
+	sT "Toggle Repos ($script_version)"
+	[ ! $EUID -eq 0 ] && sE "This script requires root rights." && (ask "Reload script as root?" && su root -c "$0 $@" && return 0 || return 1 ) 
+#
+#	Variables
+#	
+	export dir_repo=/etc/yum.repos.d
+	export str_search="enabled"
+#
+#	Output
+#
+	input=menu
+	[ ! -z $4 ] && input=single
+	
+	if [ $input = single ]
+	then	for args in $@;do
+			case $args in
+			e)	task=edit	;;
+			t)	task=toggle	;;
+			*)	repo=$args	;;
+			esac
+		done
+		[ "" = "$task" ] && task=toggle
+		[ ! ".repo" = "${repo:${#repo}-5}" ] && repo+=".repo"
+		case $task in
+		edit)	sEdit $dir_repo/$repo	;; #.repo
+		toggle)	Repo_Toggle $repo			;;
+		esac
+		input=quit
+	fi
+	
+	while [ ! "$input" = "quit" ] ;do
+		counter=2
+		repo_list=""
+		repofiles_status #-t "$SEA_CACHE_DIR/repotoggle"
+		
+		sT "Please select the repo to toggle:"
+		select action in Back $repo_list ; do
+			case $action in
+			Back)	input="quit"
+				break		;;
+			*) 	repo=$action
+				sT "Selected repo: $repo"
+				[ ! ".repo" = "${repo:${#repo}-5}" ] && repo+=".repo"
+				ask "Toggle it (y) or edit it (n)?" && \
+					Repo_Toggle "$repo" || \
+					sEdit $dir_repo/$repo
+				break		;;
+			esac
+		done
+	done

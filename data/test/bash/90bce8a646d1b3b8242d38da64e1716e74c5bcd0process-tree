@@ -1,0 +1,32 @@
+emulate -L zsh
+local pid
+local process
+local processes
+
+pid="${1:-$$}"
+processes=()
+
+while [[ ! -z "$pid" && $pid != 0 && $pid != 1 ]]; do
+  if [[ $IS_CYGWIN = 0 ]]; then
+    process=(${${(z)$(ps c -p "$pid")}[@]})
+    pid=${process[10]}
+    process=$(basename ${process[-1]})
+  else
+    process=(${${(z)$(ps c -p "$pid" -o ppid= -o command=)}[@]})
+    pid=${process[1]}
+    process=${process[2]}
+  fi
+
+  # Stop if we have reached an sshd/login process.
+  if [[ "$process" == 'login' || "$process" == 'sshd' ]]; then
+    pid=1
+  else
+    # Insert the command in the front of the process array.
+    processes=("${process/#-/}" $processes[@])
+  fi
+done
+
+# Print the tree
+echo "${(j:→:)processes}"
+
+# vim: set ft=zsh:

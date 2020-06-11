@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+   <context:annotation-config/>
+   
+   <context:component-scan base-package="com.kbit.eem.service" />
+   <context:component-scan base-package="com.kbit.eem.repository" />
+   
+   	<!-- Service Beans  -->
+	<!-- <bean id="studentManagementService" class="com.kbit.eem.service.student.StudentManagementService"></bean>
+	<bean id="studentConfigurationService" class="com.kbit.eem.service.student.StudentConfigurationService"></bean>
+    -->
+   	<!-- Repository Beans  --><!-- 
+	<bean id="admissionCategoryRepository" class="com.kbit.eem.repository.student.AdmissionCategoryRepository"></bean>
+	<bean id="admissionTypeRepository" class="com.kbit.eem.repository.student.AdmissionTypeRepository"></bean>
+	<bean id="bloodGroupRepository" class="com.kbit.eem.repository.student.BloodGroupRepository"></bean>
+	<bean id="boardExamRepository" class="com.kbit.eem.repository.student.BoardExamRepository"></bean>
+	<bean id="casteRepository" class="com.kbit.eem.repository.student.CasteRepository"></bean>
+	<bean id="courseRepository" class="com.kbit.eem.repository.student.CourseRepository"></bean>
+	<bean id="documentRepository" class="com.kbit.eem.repository.student.DocumentRepository"></bean>
+	<bean id="languageRepository" class="com.kbit.eem.repository.student.LanguageRepository"></bean>
+	<bean id="nationalityRepository" class="com.kbit.eem.repository.student.NationalityRepository"></bean>
+	<bean id="occupationRepository" class="com.kbit.eem.repository.student.OccupationRepository"></bean>
+	<bean id="previousInstituteRepository" class="com.kbit.eem.repository.student.PreviousInstituteRepository"></bean>
+	<bean id="qualifiedExamRepository" class="com.kbit.eem.repository.student.QualifiedExamRepository"></bean>
+	<bean id="religionRepository" class="com.kbit.eem.repository.student.ReligionRepository"></bean>
+	<bean id="schemeRepository" class="com.kbit.eem.repository.student.SchemeRepository"></bean>
+	<bean id="stateRepository" class="com.kbit.eem.repository.student.StateRepository"></bean>
+	<bean id="yearRepository" class="com.kbit.eem.repository.student.YearRepository"></bean>    -->
+</beans>

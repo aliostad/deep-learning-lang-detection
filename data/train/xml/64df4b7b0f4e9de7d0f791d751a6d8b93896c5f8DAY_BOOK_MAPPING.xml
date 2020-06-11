@@ -1,0 +1,82 @@
+<?xml version="1.0" ?>
+    <workbook>
+		<worksheet name="PAYMENTS">
+            <loop startRow="2" endRow="2" items="dayBook.paymentsList" var="payments" varType="com.bfp.valueobjects.PaymentsNReceivedVO">
+                <section startRow="2" endRow="2">
+                    <mapping row="2" col="0">payments.serialNum</mapping>
+                    <mapping row="2" col="1">payments.category</mapping>
+                    <mapping row="2" col="2">payments.header</mapping>
+                    <mapping row="2" col="3">payments.loanNum</mapping>
+                    <mapping row="2" col="4">payments.scheme</mapping>
+                    <mapping row="2" col="5">payments.days</mapping>
+                    <mapping row="2" col="6">payments.roi</mapping>
+                    <mapping row="2" col="7">payments.depositNum</mapping>                    
+                    <mapping row="2" col="8">payments.nameOrParticulars</mapping>                    
+                    <mapping row="2" col="9">payments.contactNum</mapping>                    
+                    <mapping row="2" col="10">payments.grams</mapping>                    
+                    <mapping row="2" col="11">payments.noOfPoc</mapping>                    
+                    <mapping row="2" col="12">payments.amount</mapping>                    
+                </section>  
+                <loopbreakcondition>
+					<rowcheck offset="0">
+						<cellcheck offset="0"/>
+					</rowcheck>
+				</loopbreakcondition>
+            </loop>
+        </worksheet>
+		
+		<worksheet name="RECEIVED">
+            <loop startRow="2" endRow="2" items="dayBook.receivedList" var="received" varType="com.bfp.valueobjects.PaymentsNReceivedVO">
+                <section startRow="2" endRow="2">
+                    <mapping row="2" col="0">received.serialNum</mapping>
+                    <mapping row="2" col="1">received.category</mapping>
+                    <mapping row="2" col="2">received.header</mapping>
+                    <mapping row="2" col="3">received.loanNum</mapping>
+                    <mapping row="2" col="4">received.scheme</mapping>
+                    <mapping row="2" col="5">received.days</mapping>
+                    <mapping row="2" col="6">received.roi</mapping>
+                    <mapping row="2" col="7">received.depositNum</mapping>                    
+                    <mapping row="2" col="8">received.nameOrParticulars</mapping>                    
+                    <mapping row="2" col="9">received.contactNum</mapping>                    
+                    <mapping row="2" col="10">received.grams</mapping>                    
+                    <mapping row="2" col="11">received.noOfPoc</mapping>                    
+                    <mapping row="2" col="12">received.amount</mapping>                    
+                </section>  
+                <loopbreakcondition>
+					<rowcheck offset="0">
+						<cellcheck offset="0"/>
+					</rowcheck>
+				</loopbreakcondition>
+            </loop>
+        </worksheet>
+        
+		<worksheet name="DENOMINATION">
+			<section startRow="0" endRow="0">
+                <mapping cell="B3">dayBook.noOf_1000</mapping>
+                <mapping cell="B4">dayBook.noOf_500</mapping>
+                <mapping cell="B5">dayBook.noOf_100</mapping>
+                <mapping cell="B6">dayBook.noOf_50</mapping>
+                <mapping cell="B7">dayBook.noOf_20</mapping>
+                <mapping cell="B8">dayBook.noOf_10</mapping>
+                <mapping cell="B9">dayBook.noOf_5</mapping>
+                <mapping cell="B10">dayBook.noOf_1</mapping>
+                <mapping cell="C12">dayBook.shortageAmt</mapping>
+				<mapping cell="C13">dayBook.totalAmt</mapping>
+				
+				<mapping cell="C16">dayBook.lockerGoldGrams</mapping>
+                <mapping cell="D16">dayBook.lockerGoldNoOfPoc</mapping>
+				<mapping cell="C17">dayBook.lockerSilverGrams</mapping>
+                <mapping cell="D17">dayBook.lockerSilverNoOfPoc</mapping>
+				
+				<mapping cell="C19">dayBook.salesGoldGrams</mapping>
+                <mapping cell="D19">dayBook.salesGoldNoOfPoc</mapping>
+				<mapping cell="C20">dayBook.salesSilverGrams</mapping>
+                <mapping cell="D20">dayBook.salesSilverNoOfPoc</mapping>
+				
+				<mapping cell="C22">dayBook.auctionGoldGrams</mapping>
+                <mapping cell="D22">dayBook.auctionGoldNoOfPoc</mapping>
+				<mapping cell="C23">dayBook.auctionSilverGrams</mapping>
+                <mapping cell="D23">dayBook.auctionSilverNoOfPoc</mapping>
+            </section>
+		</worksheet>
+    </workbook>

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+tmp="'"
+uptime=$(which uptime)
+system_load=$($uptime | awk -F':' '{print $NF}' | sed 's/,//g')
+one_load=$(echo $system_load| awk '{print $1}')
+five_load=$(echo $system_load| awk '{print $2}')
+fifteen_load=$(echo $system_load| awk '{print $3}')
+
+case $1 in
+1)echo $one_load;;
+5)echo $five_load;;
+15)echo $fifteen_load;;
+*)echo "\"loadstat\":{\"fifteen\":"$fifteen_load",\"five\":"$five_load",\"one\":"$one_load"}"
+#*)echo '##check_load##=>##{"1min":"'$one_load'","5min":"'$five_load'","15min":"'$fifteen_load'"}##||' | sed "s/##/$tmp/g";;
+esac

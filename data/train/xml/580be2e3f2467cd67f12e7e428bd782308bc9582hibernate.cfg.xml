@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <mapping class = "com.springapp.mvc.domain.Cost"></mapping>
+        <mapping class = "com.springapp.mvc.domain.Goal"></mapping>
+        <mapping class = "com.springapp.mvc.domain.GroupCost"></mapping>
+        <mapping class = "com.springapp.mvc.domain.GroupIncome"></mapping>
+        <mapping class = "com.springapp.mvc.domain.Income"></mapping>
+        <mapping class = "com.springapp.mvc.domain.Authority"></mapping>
+        <mapping class = "com.springapp.mvc.domain.MemberOfFamily"></mapping>
+        <mapping class = "com.springapp.mvc.domain.PropertiesCost"></mapping>
+        <mapping class = "com.springapp.mvc.domain.PropertiesIncome"></mapping>
+    </session-factory>
+</hibernate-configuration>

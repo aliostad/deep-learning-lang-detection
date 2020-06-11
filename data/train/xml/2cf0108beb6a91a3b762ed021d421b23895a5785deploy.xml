@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03" xmlns:LabCallbackService="http://www.PAHospital.org/LabCallbackService/" xmlns:LabService="http://www.PAHospital.org/LabService/" xmlns:PatService="http://www.PAHospital.org/PatService/" xmlns:PhysicianService="http://www.PAHopital.org/PhysicianService/" xmlns:RadiologyCallbackService="http://www.PAHospital.org/RadiologyCallbackService/" xmlns:RadiologyService="http://www.PAHospital.org/RadiologyService/" xmlns:TransportationService="http://www.PAHospital.org/TransportationService/" xmlns:WardService="http://www.PAHospital.org/WardService/">
+  <process name="WardService:Ward">
+    <active>true</active>
+    <retired>false</retired>
+    <process-events generate="all"/>
+    <provide partnerLink="WardService">
+      <service name="WardService:Ward" port="WardPort"/>
+    </provide>
+    <provide partnerLink="LabService">
+      <service name="LabCallbackService:LabCallbackService" port="LabCallbackPort"/>
+    </provide>
+    <provide partnerLink="RadService">
+      <service name="RadiologyCallbackService:RadiologyCallbackService" port="RadiologyCallbackPort"/>
+    </provide>
+    <invoke partnerLink="TranspService">
+      <service name="TransportationService:TransportationService" port="TransportationPort"/>
+    </invoke>
+    <invoke partnerLink="LabService">
+      <service name="LabService:LabService" port="LabPort"/>
+    </invoke>
+    <invoke partnerLink="PatService">
+      <service name="PatService:PatService" port="PatientRecordPort"/>
+    </invoke>
+    <invoke partnerLink="RadService">
+      <service name="RadiologyService:RadiologyService" port="RadiologyPort"/>
+    </invoke>
+    <invoke partnerLink="PhysicianService">
+      <service name="PhysicianService:PhysicianService" port="PhysicianServiceSOAP"/>
+    </invoke>
+  </process>
+</deploy>

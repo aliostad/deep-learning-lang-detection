@@ -1,0 +1,54 @@
+/* Styling of API data elements */
+
+.api-preliminary {
+	font-style : italic;
+}
+
+.api-deprecated {
+	text-decoration : line-through;
+}
+
+.api-value-type {
+	color : rgb(110, 165, 10);
+}
+
+.api-member-name,
+.api-enum-name {
+	font-weight : bold;
+	color       : rgb(65,85,65);
+}
+
+.api-class-icon,
+.api-member-icon,
+.api-enum-icon,
+.api-enum-item-icon {
+	display        : inline-block;
+	vertical-align : middle;
+	height         : 16px;
+	width          : 16px;
+	margin-right   : 4px;
+}
+
+.api-class-icon {
+	background-image : url('/api/img/icon-explorer.png');
+}
+/* background-position sets icon offset */
+
+.api-member-icon {
+	background-image : url('/api/img/icon-objectbrowser.png');
+}
+/* background-position sets icon offset */
+
+.api-enum-icon {
+	background-image    : url('/api/img/icon-objectbrowser.png');
+	background-position : -144px;
+}
+
+.api-enum-item-icon {
+	background-image    : url('/api/img/icon-objectbrowser.png');
+	background-position : -160px;
+}
+
+.api-argument {
+	white-space : nowrap;
+}

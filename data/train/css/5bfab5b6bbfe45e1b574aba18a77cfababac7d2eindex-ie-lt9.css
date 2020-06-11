@@ -1,0 +1,26 @@
+﻿
+/* Modify for colorbox (ie) */
+#shell-view { width: 690px; }
+#shell-view .shell-view { width: 690px; }
+#header-view { width: 690px; }
+#content-view,
+#content-view .content-view { width: 690px; }
+#outage-map-view .outage-map-view { width: 678px; }
+#outage-report-view .outage-report-view { width: 678px; }
+#footer-view,
+#footer-view .footer-view { width: 690px; }
+
+body { line-height: 0; }
+#header-view *,
+.outage-report-view * { line-height: 1; }
+
+/*
+#header-view .row { display: table; }
+#header-view #twitter-link-container { display:table-cell; vertical-align: middle; }
+#header-view #facebook-link-container { display:table-cell; vertical-align: middle;  }
+#header-view .two.small-2.columns { display:table-cell; vertical-align: middle;  }
+*/
+
+#header-view .two.small-2.columns * { line-height: 24px; }
+#twitter-icon,
+#facebook-icon { vertical-align: middle; }

@@ -1,0 +1,230 @@
+.content_section {
+    background-color: white;
+}
+.servcie_status_main_section {
+    background: transparent;
+}
+
+.search_action_lnk a {
+    width: 96px;
+    height: 32px;
+    display: block;
+    background: url('../images/optus/search_button_sprite.png') no-repeat;
+    background-position: 0 -5px;
+}
+
+.search_action_lnk a:hover {
+    background: url('../images/optus/search_button_sprite.png') no-repeat;
+    background-position: 0 -45px;
+}
+
+.search_action_lnk a:active {
+    background: url('../images/optus/search_button_sprite.png') no-repeat;
+    background-position: 0 -85px;
+}
+
+.search_title_panel, .service_status_content, .service_status_detail_content,
+.service_status_content .system_error_section,  .service_status_detail_content .system_error_section,
+.service_status_content .loading_panel,  .service_status_detail_content .loading_panel {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.service_status_content .system_error_section,  .service_status_detail_content .system_error_section,
+.service_status_content .loading_panel,  .service_status_detail_content .loading_panel
+{
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.search_title_panel h1.search_title {
+    color: #006685;
+    font-size: 2.3em;
+}
+
+.service_status_content .search_intro_section h3.search_prompt {
+    font-size: 1.5em;
+}
+
+.unexpected_issues_panel h2, .planned_repairs_maintenance_panel h2 {
+    color: #006685;
+    font-size: 2em;
+}
+
+.service_status_detail_content h2 {
+    color: #000000;
+    font-weight: bold;
+}
+
+.service_status_detail_content h5 {
+    color: #000000;
+    font-weight: bold;
+}
+
+.service_status_detail_content a.back_link {
+    color: #006685;;
+    font-size: 1.3em;
+    margin-top: 15px;
+}
+
+.unexpected_issues_panel {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.planned_repairs_maintenance_panel {
+    margin-bottom: 20px;
+}
+
+#suburbInput {
+    color: #006685;
+    font-family: Arial,sans-serif,Helvetica;
+    font-size: 1.2em;
+    background: none repeat scroll 0 0 white;
+    border-color: #E5EFF3 #E5EFF3 #E5EFF3 #E5EFF3;
+    border-image: none;
+    border-radius: 5px 0 0 5px;
+    border-style: solid solid solid solid;
+    border-width: 2px medium 2px 2px;
+    display: block;
+    padding: 5px 0 4px 5px;
+    position: relative;
+    vertical-align: bottom;
+    width: 150px;
+    line-height: 1.3em;
+}
+
+.search_panel {
+    width: 200px;
+}
+
+.search_panel .search_action_lnk {
+    text-align:center;
+    vertical-align:middle;
+}
+
+#service_status_search_lnk {
+    font-size: 1.2em;
+}
+
+.none_found_panel {
+    margin-top: 5px;
+    height: 30px;
+    border-top: 2px solid #d1d1d1;
+}
+
+.none_found_panel p {
+    margin: 5px 10px 10px 5px;
+}
+
+.service_status_content .dataTables_wrapper {
+    position: relative;
+    clear: both;
+    zoom: 1; /* Feeling sorry for IE */
+}
+
+.service_status_content .dataTables_length {
+    width: 40%;
+    float: left;
+}
+
+.service_status_content .dataTables_filter {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+.service_status_content .dataTables_info {
+    width: 60%;
+    float: left;
+}
+
+.service_status_content .dataTables_paginate {
+    float: right;
+    text-align: right;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables display
+ */
+table.service_status_table {
+    table-layout: auto;
+    margin: 0 auto;
+    clear: both;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.service_status_table th {
+    padding: 7px 18px 7px 10px;
+    border: 1px #A7A7A7 solid;
+    background-color: #dddddd;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    * cursor: hand;
+
+    border: 1px #A7A7A7 solid;
+}
+
+table.service_status_table tr {
+    border: 1px #dddddd solid;
+}
+
+table.service_status_table td {
+    padding: 3px 10px;
+    font-family: Arial;
+    border: 1px #A7A7A7 solid;
+    vertical-align: middle;
+    background-color: transparent;
+    line-height: 1.5em;
+}
+
+.unexpected_issues_list_panel table.service_status_table td.col1, .planned_repairs_maintenance_panel table.service_status_table td.col1 {
+    width: 20%;
+}
+
+.unexpected_issues_list_panel table.service_status_table td.col2 {
+    width: 20%;
+}
+
+.planned_repairs_maintenance_panel table.service_status_table td.col2 {
+    width: 40%;
+}
+
+.unexpected_issues_list_panel table.service_status_table td.col3 {
+    width: 40%;
+}
+
+.planned_repairs_maintenance_panel table.service_status_table td.col3 {
+    width: 30%;
+}
+
+.unexpected_issues_list_panel table.service_status_table td.col5, .planned_repairs_maintenance_panel table.service_status_table td.col4 {
+    width: 10%;
+}
+
+.unexpected_issues_list_panel table.service_status_table td.col4 {
+    width: 10%;
+}
+
+.unexpected_issues_list_panel table.service_status_table td.col4, .unexpected_issues_list_panel table.service_status_table td.col5 {
+    text-align: center;
+}
+
+/*
+ * Row highlighting example
+ */
+table.service_status_table tbody tr.even:hover, table.service_status_table tbody tr.even td.highlighted {
+    background-color: #E2FF89;
+}
+
+table.service_status_table tbody tr.odd:hover, table.service_status_table tbody tr.odd td.highlighted {
+    background-color: #E6FF99;
+}
+
+table.service_status_table tr.even:hover {
+    background-color: #ECFFB3;
+}

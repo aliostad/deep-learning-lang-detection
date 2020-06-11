@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root> 
+  <item display="solid" label="证照管理"> 
+    <item display="solid" label="证照信息维护"> 
+      <item label="证照信息维护" process="/OA/license/process/licenseManage/licenseManageProcess"
+        activity="licenseManageActivity" url="$UI/OA/license/process/licenseManage/licenseManageActivity.w"/>  
+      <item label="证照信息查询" process="/OA/license/process/licenseManageQuery/licenseManageQueryProcess"
+        activity="licenseManageQueryActivity" url="$UI/OA/license/process/licenseManageQuery/licenseManageQueryActivity.a"/> 
+    </item>  
+    <item display="solid" label="证照借用申请"> 
+      <item label="证照借用申请" process="/OA/license/process/licenseApply/licenseApplyProcess"
+        activity="startActivity" url="$UI/OA/license/process/licenseApply/startActivity.a"/>  
+      <item label="证照借用申请" display="hide" process="/OA/license/process/licenseApply/licenseApplyProcess"
+        activity="lendApplyActivity" url="$UI/OA/license/process/licenseApply/lendApplyActivity.a"/>  
+      <item label="部门审批" display="hide" process="/OA/license/process/licenseApply/licenseApplyProcess"
+        activity="deptAuditActivity" url="$UI/OA/license/process/licenseApply/deptAuditActivity.a"/>  
+      <item label="申请人处理" display="hide" process="/OA/license/process/licenseApply/licenseApplyProcess"
+        activity="ApplyActivity" url="$UI/OA/license/process/licenseApply/ApplyActivity.a"/>  
+      <item label="证照借用登记" display="hide" process="/OA/license/process/licenseApply/licenseApplyProcess"
+        activity="lendRegisterActivity" url="$UI/OA/license/process/licenseApply/lendRegisterActivity.a"/>  
+      <item label="证照借用申请查询" process="/OA/license/process/licenseApplyQuery/licenseApplyQueryProcess"
+        activity="licenseApplyQueryActivity" url="$UI/OA/license/process/licenseApplyQuery/licenseApplyQueryActivity.a"/> 
+    </item>  
+    <item label="证照归还" process="/OA/license/process/licenseBack/licenseBackProcess"
+      activity="licenseBackActivity" url="$UI/OA/license/process/licenseBack/licenseBackActivity.a"/>  
+    <item label="证照申请历史" process="/OA/license/process/licenseApplyHistory/licenseApplyHistoryProcess"
+      activity="licenseApplyHistoryActivity" url="$UI/OA/license/process/licenseApplyHistory/licenseApplyHistoryActivity.a"/>  
+    <item label="证照年检提醒" process="/OA/license/process/licanseAnnualReminder/licanseAnnualReminderProcess"
+      activity="licanseAnnualReminderActivity" url="$UI/OA/license/process/licanseAnnualReminder/licanseAnnualReminderActivity.a"/> 
+  </item> 
+</root>

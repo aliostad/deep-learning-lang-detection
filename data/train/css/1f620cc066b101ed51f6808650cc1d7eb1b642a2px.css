@@ -1,0 +1,102 @@
+/* ---------------------------------------- css base 基础部分---------------------------------------- */
+* {margin:0;padding:0; border:0; word-break:normal; font-family:Helvetica, arial, sans-serif; background-size:100% 100%; -webkit-tap-highlight-color: rgba(0,0,0,0); font-size: 20px; }
+html,body{ width:100%; height:100%; -webkit-text-size-adjust: 100%!important;}
+table{border-collapse:collapse;border-spacing:0;}
+th,tr,td,h1,h2,h3,h4,h5,h6,i,b,em{font-style:normal;font-weight:normal;}
+ol,ul,li {list-style-type:none; display:block;}
+select,input,img{vertical-align:middle;border:none;outline:none;}
+textarea {resize: none;} /*webkit核心中textare取消拖动调整大小*/
+textarea:focus {outline: none;} /*textarea聚焦时默认边框颜色不变*/
+select,input[type=text],input[type=tel],input[type=password],input[type=number],textarea{ -webkit-appearance:none; border:none; border-radius:0; background-color:transparent;}
+input::-webkit-input-placeholder,input:focus::-webkit-input-placeholder{color:#555;}/* input 标签placeholder文字的颜色*/
+video{ background:#000;}
+a{ text-decoration:none; display:inline-block;}
+a>img{ width:100%;}
+.clearFix {display: block;}
+.clearFix:after {clear: both;content: ".";display: block;height: 0;visibility: hidden;}
+.fl{float:left;display:inline;}
+.fr{float:right;display:inline;}
+.noEvent{pointer-events:none;}/* 禁止触摸互动事件 */
+.noDefault{-webkit-touch-callout: none;}/* 禁止ios 长按时不触发系统的菜单，禁止ios&android长按时下载图片 */
+.noSelect{-webkit-user-select:none;}/* 禁止ios和android用户选中文字 */
+
+
+/* ---------------------------------------- css common 公共部分 ---------------------------------------- */
+
+/* load浮层 */
+aside.loadBox{ position:fixed; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:996; display: none;}
+aside.loadBox>span{ display:block; position:absolute; left:50%; top:50%; margin-left:-10px; margin-top:-20px; -webkit-transform:scale(0.4); -webkit-transform-origin: 50% 50%;}
+aside.loadBox>span i{ display:block; position:absolute; left:0; top:0; width:40px; height:10px; border-radius:8px; background:rgba(255,255,255,0.5); box-shadow:0 0 10px rgba(255,255,255,1);}
+aside.loadBox>span i:nth-child(1){ -webkit-transform:translate(60px, 0) rotate(0deg); -webkit-animation:loadCircle 2.4s 0s linear infinite;}
+aside.loadBox>span i:nth-child(2){ -webkit-transform:translate(51.96px, 30px) rotate(30deg); -webkit-animation:loadCircle 2.4s 0.2s linear infinite;}
+aside.loadBox>span i:nth-child(3){ -webkit-transform:translate(30px, 51.96px) rotate(60deg); -webkit-animation:loadCircle 2.4s 0.4s linear infinite;}
+aside.loadBox>span i:nth-child(4){ -webkit-transform:translate(0, 60px) rotate(90deg); -webkit-animation:loadCircle 2.4s 0.6s linear infinite;}
+aside.loadBox>span i:nth-child(5){ -webkit-transform:translate(-30px, 51.96px) rotate(120deg); -webkit-animation:loadCircle 2.4s 0.8s linear infinite;}
+aside.loadBox>span i:nth-child(6){ -webkit-transform:translate(-51.96px, 30px) rotate(150deg); -webkit-animation:loadCircle 2.4s 1.0s linear infinite;}
+aside.loadBox>span i:nth-child(7){ -webkit-transform:translate(-60px, 0) rotate(180deg); -webkit-animation:loadCircle 2.4s 1.2s linear infinite;}
+aside.loadBox>span i:nth-child(8){ -webkit-transform:translate(-51.96px, -30px) rotate(210deg); -webkit-animation:loadCircle 2.4s 1.4s linear infinite;}
+aside.loadBox>span i:nth-child(9){ -webkit-transform:translate(-30px, -51.96px) rotate(240deg); -webkit-animation:loadCircle 2.4s 1.6s linear infinite;}
+aside.loadBox>span i:nth-child(10){ -webkit-transform:translate(0, -60px) rotate(270deg); -webkit-animation:loadCircle 2.4s 1.8s linear infinite;}
+aside.loadBox>span i:nth-child(11){ -webkit-transform:translate(30px, -51.96px) rotate(300deg); -webkit-animation:loadCircle 2.4s 2.0s linear infinite;}
+aside.loadBox>span i:nth-child(12){ -webkit-transform:translate(51.96px, -30px) rotate(330deg); -webkit-animation:loadCircle 2.4s 2.2s linear infinite;}
+aside.loadBox>b{ display:block; position:absolute; left:0; top:50%; width:100%; height:40px; line-height:40px; margin-left:-10px; margin-top:-34px; text-align:center; font-size:20px; color:rgba(255,255,255,0.7);}
+@-webkit-keyframes loadCircle{0%{opacity:1}8.3%{opacity:0}50%{opacity:1}100%{opacity:1}}
+
+/* png sprite loading */
+.ui-loading-black {width:40px;height:40px;display:block;background:url(../images/common/loading_black.png);-webkit-background-size:auto 40px;-webkit-animation:am-loading-black 1s steps(12) infinite;}
+.ui-loading-white {width:40px;height:40px;display:block;background-image:url(../images/common/loading_white.png);-webkit-background-size:auto 40px;-webkit-animation:am-loading-white 1s steps(12) infinite;}
+@-webkit-keyframes am-loading-black {
+	from {background-position:0 0}
+	to {background-position:-480px 0}
+}
+@-webkit-keyframes am-loading-white {
+	from {background-position:0 0}
+	to {background-position:-480px 0}
+}
+
+/* 竖屏翻转提示浮层 */
+aside.turnBoxPortrait{ position:fixed; left:0; top:0; width:100%; height:100%; background:#000; z-index:999;}
+aside.turnBoxPortrait>img.turn{ display:block; padding-top:7%; margin:0 auto 5%; height:58%;}
+aside.turnBoxPortrait>p{ text-align:center; font-size:32px; color:#fff;}
+
+/* 横屏翻转提示浮层 */
+aside.turnBoxLandscape{ position:fixed; left:0; top:0; width:100%; height:100%; background:#000; z-index:999; }
+aside.turnBoxLandscape>img.turn{ display:block; margin:40% auto 40px; width:80%;}
+aside.turnBoxLandscape>p{ text-align:center; font-size:28px; color:#fff;}
+
+/* 取代系统alert的警告提示弹窗 */
+aside.alertBox{ position:fixed; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:998;}
+aside.alertBox>div{ position: absolute; left: 50%; top: 50%; width:85%; -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%); background-color:#FAFAFC;  border-radius:6px; padding-top: 40px; text-align:center; }
+aside.alertBox>div>p.text{font-size:30px; line-height: 40px; color:#888; padding: 0 40px;}
+aside.alertBox>div>p.btn{ display: flex; border-top: 1px solid #D5D5D6; margin-top: 40px; position: relative; }
+aside.alertBox>div>p.btn a{ -webkit-flex: 1; flex:1; text-align: center; color:#0BB20C; font-size:34px; line-height: 84px;}
+aside.alertBox>div>p.btn a:active{ background-color: #eeeeee;}
+
+/* 视频 */
+aside.videoBox{position:fixed; left:0; top:0; width:100%; height:100%; background:#000; z-index:996; display:none;}
+aside.videoBox>iframe,aside.videoBox>video{position:absolute; left:0;}
+aside.videoBox>a.close{ position:absolute; right:40px; top:40px; width:60px; height:60px; background-image: url(../images/common/close_video.png);}
+
+/* 照片文件选择框*/
+#fileBox{ position:fixed; left:0; top:0; width:1px; height:1px; overflow:hidden; visibility: hidden;}
+
+/* 电子罗盘数据面板 */
+#compassPanel{ position:fixed; right:0; top:0; width:40%; background:rgba(0,0,0,0.5); z-index: 99; display:none;}
+#compassPanel h3{color:#fff; background:rgba(255,255,255,0.2); padding:10px 20px; margin-bottom:10px; font-size: 24px;}
+#compassPanel p{ color:#fff; font-size:22px; margin-bottom:10px; margin-left:20px;}
+
+/* 测试版本提示信息 */
+#signBar{position:fixed; top:0; left:0; width:100%; background:rgba(0,0,0,0.7); box-shadow:0 2px 10px #888; padding:10px 0; text-align:center; pointer-events:none; z-index:99;}
+#signBar>span{font-size:32px; text-shadow:0 0 2px #000; color:rgba(255,255,255,0.9);}
+
+/* 分享浮层 */
+aside.shareBox{position:fixed; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:997; display:none;}
+aside.shareBox>img{ width:100%;}
+
+/* 根标签 */
+article{ width:100%; height:100%; position:relative; overflow: hidden; }
+
+/* 背景音乐按钮 */
+a.bgmBtn{ position: absolute; right: 20px; top: 20px; width: 50px; height: 50px;}
+a.bgmPlay{ background-image: url(../images/common/bgm_on.png);}
+a.bgmStop{ background-image: url(../images/common/bgm_off.png);}

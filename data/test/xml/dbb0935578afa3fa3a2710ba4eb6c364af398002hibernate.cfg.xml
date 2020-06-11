@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+ 	 <mapping class="lxyg.domain.Artical" />
+		<mapping class="lxyg.domain.Regionlist" />
+		<mapping class="lxyg.domain.Customerstatistics" />
+		<mapping class="lxyg.domain.Proshoorder" />
+		<mapping class="lxyg.domain.Typetable" />
+		<mapping class="lxyg.domain.Displaytype" />
+		<mapping class="lxyg.domain.Occasiontable" />
+		<mapping class="lxyg.domain.Cart" />
+		<mapping class="lxyg.domain.Memberregistrationitems" />
+		<mapping class="lxyg.domain.Shopinformation" />
+		<mapping class="lxyg.domain.Orderstate" />
+		<mapping class="lxyg.domain.Emailserver" />
+		<mapping class="lxyg.domain.Dailyspecials" />
+		<mapping class="lxyg.domain.Promotionalofferstable" />
+		<mapping class="lxyg.domain.Procomment" />
+		<mapping class="lxyg.domain.Gifttablecontents" />
+		<mapping class="lxyg.domain.Holidayspecialarea" />
+		<mapping class="lxyg.domain.Gifttable" />
+		<mapping class="lxyg.domain.Membercollectiontable" />
+		<mapping class="lxyg.domain.Order" />
+		<mapping class="lxyg.domain.Product" />
+		<mapping class="lxyg.domain.Procover" />
+		<mapping class="lxyg.domain.Administratorlist" />
+		<mapping class="lxyg.domain.Preferentialtype" />
+		<mapping class="lxyg.domain.Procategory" />
+		<mapping class="lxyg.domain.Accesspurchaserate" />
+		<mapping class="lxyg.domain.Rolemanagement" />
+		<mapping class="lxyg.domain.Articleclassification" />
+		<mapping class="lxyg.domain.Member" />
+		<mapping class="lxyg.domain.Ordercomments" />
+		<mapping class="lxyg.domain.Link" />
+		<mapping class="lxyg.domain.Regionleveltable" />
+		<mapping class="lxyg.domain.Storesettings" />
+		<mapping class="lxyg.domain.Harvestaddresstable" />
+		 
+	</session-factory>
+</hibernate-configuration>

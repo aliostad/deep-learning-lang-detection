@@ -1,0 +1,36 @@
+.system-message-container{
+	font-family:Arial, Helvetica, sans-serif;  
+	font-size:13px;  
+}
+.system-message .info, .system-message .success, .system-message .warning, .system-message .error, .system-message .validation {
+	border: 1px solid; 
+	margin: 10px 0px; 
+	padding:10px 10px 10px 50px; 
+	background-repeat: no-repeat; 
+	background-position: 10px center; 
+}
+dt.info, dt.success, dt.warning, dt.error, dt.validation{display: none;}
+.system-message .message ul {
+	margin: 0px;
+	margin-left: 10px;
+}
+.system-message .info {
+	color: #00529B; 
+	background-color: #BDE5F8;
+}
+.system-message .success {
+	color: #4F8A10; 
+	background-color: #DFF2BF;
+}
+.system-message .warning {
+	color: #9F6000; 
+	background-color: #FEEFB3;
+}
+.system-message .error {
+	color: #D8000C; 
+	background-color: #FFBABA;
+}
+.system-message .validation {
+	color: #D63301; 
+	background-color: #FFCCBA; 
+}

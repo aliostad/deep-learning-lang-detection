@@ -1,0 +1,46 @@
+#overlay{
+	display:none;
+	top:0;
+	left:0;
+	z-index:5000;
+	background-color:#000;
+	width:100%;
+	height:100%;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+}
+#lbLoadMessage{
+	display:none;
+	top:10%; 
+	left:15%; 
+	z-index:9999; 
+	width:70%; 
+	height:50%; 
+	float:left; 
+	background:#EFEFEF; 
+	text-align:left;
+}
+#lbLoadMessage[id]{
+	position:fixed;
+}
+
+#overlay[id]{
+	position:fixed;
+}
+#lbLoadMessage .detail tr td {
+border-bottom:none;
+}
+#lbLoadMessage .detail tr td span table tbody tr td {
+border:none;
+}
+/*
+#lbLoadMessage .detail tr td {
+border-bottom:#CBDAE6 1px solid;
+}
+#lbLoadMessage .detail tr td[scope="row"] {
+background-color:#F6F6F6;
+border-bottom:#CBDAE6 1px solid;
+}
+*/
+#closeButton{float:right;}

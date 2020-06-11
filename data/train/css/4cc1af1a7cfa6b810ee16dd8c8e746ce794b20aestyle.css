@@ -1,0 +1,137 @@
+body {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  /* Visual */
+  /* Misc */
+}
+
+div.header {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  text-align: center;
+  /* Visual */
+  /* Misc */
+}
+
+
+div.header i {
+  /* Positioning */
+  /* Box-model */
+  line-height: 1;
+  /* Typography */
+  font-size: 100px;
+  /* Visual */
+  /* Misc */
+}
+
+div.header h1 {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  margin-top: 0;
+  font-weight: 100;
+  /* Visual */
+  /* Misc */
+}
+
+nav.ns-nav {
+  /* Positioning */
+  /* Box-model */
+  margin: 0 auto;
+  max-width: 99%;
+  /* Typography */
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  /* Visual */
+  /* Misc */
+}
+
+nav.ns-nav li a {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  color: #e18853;
+  text-decoration: none;
+  /* Misc */
+  -webkit-transition: all .4s ease-in-out;
+     -moz-transition: all .4s ease-in-out;
+          transition: all .4s ease-in-out;
+
+}
+
+nav.ns-nav li a:hover {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  color: #333;
+  /* Misc */
+}
+
+div.footer {
+  /* Positioning */
+  /* Box-model */
+  margin: 0 auto;
+  max-width: 99%;
+  /* Typography */
+  text-align: center;
+  /* Visual */
+  /* Misc */
+}
+
+div.footer i {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  font-size: 40px;
+  /* Visual */
+  color: #333;
+  /* Misc */
+  -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+
+}
+
+div.footer i:hover {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  color: #e18853;
+  /* Misc */
+}
+
+
+.img-responsive {
+  /* Positioning */
+  display: block;
+  /* Box-model */
+  max-width: 100%;
+  height: auto;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+.list-inline > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}

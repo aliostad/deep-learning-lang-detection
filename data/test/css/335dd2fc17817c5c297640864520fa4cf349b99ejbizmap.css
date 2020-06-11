@@ -1,0 +1,46 @@
+@CHARSET "ISO-8859-1";
+
+.map-wrapper{}
+#map-canvas{}
+
+#adminForm{}
+.field-label{}
+.input-field{}
+
+.fb-comments{}
+
+h1{}
+h2{}
+h3{}
+h4{}
+
+#view-biz-bizdetail{}
+#view-biz-bizdetail h2{}
+#view-biz-bizdetail #adminForm{}
+#view-biz-bizdetail #td-bizdetail{}
+#view-biz-bizdetail .tbl-bizdetail{}
+#view-biz-bizdetail #td-map{}
+#view-biz-bizdetail #td-fb-comments{}
+#view-biz-bizdetail .fb-comments{}
+
+
+
+#view-default-default{}
+#view-default-default #adminForm{}
+#view-default-default .tbl-bizlist{}
+
+#view-default-map{}
+#view-default-map #adminForm{}
+
+
+#view-addbulk-default{}
+#view-addbulk-default #adminForm{}
+#view-addbulk-default #biz-files-list{}
+#view-addbulk-default .field-label{}
+#view-addbulk-default .input-field{}
+
+#view-add-default{}
+#view-add-default #adminForm{}
+#view-add-default .field-label{}
+#view-add-default .input-field{}
+

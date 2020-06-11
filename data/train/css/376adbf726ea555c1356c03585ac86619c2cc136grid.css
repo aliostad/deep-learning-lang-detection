@@ -1,0 +1,33 @@
+/*------------------------------------------------------------------
+
+[Dashboard Stylesheet]
+
+    Project:        Maniadmin V2.0 - Responsive Admin Theme
+    Version:        2.0
+    Last change:    07/12/2012
+    Assigned to:    Turbo
+-------------------------------------------------------------------*/
+/** *************************************
+       Grid Page
+************************************ **/
+#grid .show-grid {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+#grid .show-grid [class*="span"] {
+  background-color: #EEEEEE;
+  border-radius: 3px 3px 3px 3px;
+  line-height: 30px;
+  min-height: 30px;
+  text-align: center;
+}
+#grid .show-grid .show-grid {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+#grid .show-grid:hover [class*="span"] {
+  background: none repeat scroll 0 0 #DDDDDD;
+}
+#grid .show-grid .show-grid [class*="span"] {
+  background-color: #CCCCCC;
+}

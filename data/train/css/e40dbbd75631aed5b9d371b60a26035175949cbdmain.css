@@ -1,0 +1,51 @@
+.getCities{
+	margin : 20px 0
+}
+
+.getCities .col-xs-1{
+	width : 105px
+}
+
+.getCities .col-xs-1 > h3{
+    margin : 4px 0 0 0
+}
+
+.thumbnail{
+	padding : 12px 15px
+}
+
+.weather .img img{
+	margin : 10px 25px;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.clear{
+	width: 100%;
+	float: none;
+	position: relative;
+	display: block;
+	clear: both;
+}
+
+.displayNone{
+	display: none
+}
+
+.weather .thumbnail.load{
+	min-height : 150px;
+	background-position : center center;
+	background-repeat : no-repeat;
+	background-image : url('../img/preloader.gif');
+	background-size : 32px 32px;
+}
+
+.weather .thumbnail.load *{
+	display : none
+}

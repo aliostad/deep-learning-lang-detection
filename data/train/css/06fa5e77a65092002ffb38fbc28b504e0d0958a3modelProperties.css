@@ -1,0 +1,31 @@
+/**
+ * CSS-Rules for displaying modelProperties.
+ */
+
+div#documentBody dl.modelProperties {
+	float:            left;
+	clear:            both;
+    margin:           10px 0;
+}
+
+div#documentBody dl.modelProperties dt {
+	float:            left;
+	font-style:       italic;
+    margin:           0;
+    width:            10.5em;
+    clear:            both;
+}
+
+div#documentBody dl.modelProperties dd {
+	margin:           0;
+	float:            left;
+}
+
+div#documentBody dl.modelProperties dd + dd:before {
+	content:          ", ";
+}
+
+div#documentBody dl.modelProperties dd + dt,
+div#documentBody dl.modelProperties dd + dt + dd {
+	margin-top:       10px;
+}

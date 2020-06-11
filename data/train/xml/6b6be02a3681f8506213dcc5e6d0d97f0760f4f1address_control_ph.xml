@@ -1,0 +1,75 @@
+<workunit>
+    <invokers>
+        <invoker type="control:addressformat" index="1" caption="PH Address" format="ph"/>
+    </invokers>
+    
+    <code>
+        <![CDATA[
+        import com.rameses.rcp.common.*;
+        import com.rameses.rcp.annotations.*;
+        
+        
+        public class PhAddressController {
+        
+            def properties;
+            def context = [:];
+        
+            //this should fix the data
+            public void fixFormat( def c ) {
+                context = c;
+                context.country = "ph";
+                def street = context.remove("street" );
+                if(!context.address1) context.address1 = street;
+                def street2 = context.remove("street2" );
+                if(!context.address2) context.address2 = street2;
+            }
+
+            public def getHtmlFormat() {
+                def buff = new StringBuffer();
+                if( context.address1 ) buff.append( context.address1 );
+                if( context.address2 ) buff.append( "<br>" + context.address2 );
+                if( context.city || context.province || context.zipcode ) {
+                    buff.append( "<br>" );
+                    if(context.city) buff.append( context.city ); 
+                    if( context.province ) {
+                        if(context.city) buff.append( "&nbsp;&nbsp;" );
+                        buff.append( context.province );
+                    }
+                    if( context.zipcode ) {
+                        if(context.city || context.province ) buff.append( "&nbsp;&nbsp;" );
+                        buff.append( context.zipcode );
+                    }
+                }
+                if(context.country) buff.append( "<br>" + context.country );
+                return buff.toString();
+            }
+            
+            public def getPrintFormat() {
+                def buff = new StringBuffer();
+                if( context.address1 ) buff.append( context.address1 );
+                if( context.address2 ) buff.append( ", " + context.address2 );
+                if( context.city || context.province || context.zipcode ) {
+                    buff.append( ", " );
+                    if(context.city) buff.append( context.city ); 
+                    if( context.province ) {
+                        if(context.city) buff.append( " " );
+                        buff.append( context.province );
+                    }
+                    if( context.zipcode ) {
+                        if(context.city || context.province ) buff.append( " " );
+                        buff.append( context.zipcode );
+                    }
+                }
+                if(context.country) buff.append( ", " + context.country );
+                return buff.toString();
+            }
+            
+        }
+        ]]>
+    </code>
+    
+    <pages>
+        <page template="shared.custom.address.PhAddressControl"/>
+    </pages>
+    
+</workunit>

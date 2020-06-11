@@ -1,0 +1,68 @@
+ul.nav{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(85,85,85)
+}
+.nav > li{
+  height: 48px;
+}
+.nav > li > a:focus{
+  outline: none;
+}
+.nav > li > a,
+.nav > li > a > div{
+  height: 100%;
+}
+.nav > li > a > div > .icon{
+  width: 65px;
+  padding-top: 12px;
+  padding-left: 32px;
+}
+.nav > li > a > div > .icon svg{
+  fill: white;
+}
+.nav > li > a > div > .icon > img{
+  color: white;
+  height: 24px;
+}
+.nav > li > a > div > .text{
+  padding-top: 12px;
+  padding-left: 8px;
+}
+
+.nav > li:hover,
+.nav > li.selected
+{
+  cursor: pointer;
+  color: white;
+}
+.nav > li.orange .icon,
+.nav > li.orange:hover,
+.nav > li.orange.selected{
+  background-color: #fb8521;
+}
+.nav > li.red .icon,
+.nav > li.red:hover,
+.nav > li.red.selected{
+  background-color: #ce5043;
+}
+.nav > li.azure .icon,
+.nav > li.azure:hover,
+.nav > li.azure.selected{
+  background-color: #1aa1e1;
+}
+.nav > li.green .icon,
+.nav > li.green:hover,
+.nav > li.green.selected{
+  background-color: #b3c833;
+}
+
+.nav > li.grey .icon,
+.nav > li.grey:hover,
+.nav > li.grey.selected{
+  background-color: #658092;
+}

@@ -1,0 +1,42 @@
+﻿div, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    float: left;
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, Freesans, sans-serif;
+    font-weight: bold;
+    color: #a6162d;
+    line-height: 50px;
+}
+
+#nav-left, #nav-right, .nav-separator {
+    width: 5px;
+    height: 50px;
+}
+
+#nav-left {
+    background: url(images/nav-left.png);
+}
+
+#nav-right {
+    background: url(images/nav-right.png);
+}
+
+.nav-separator {
+    background: url(images/nav-separator.png);
+}
+
+.nav-center {
+    height: 50px;
+    background: url(images/nav-center.png);
+    padding: 0 10px;
+}
+

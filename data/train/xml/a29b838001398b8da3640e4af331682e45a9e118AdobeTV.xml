@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <service_name>AdobeTV</service_name>
+  <service_media>video</service_media>
+  <service_regex><![CDATA[http://tv\.adobe\.[a-z]+/watch/(?P<sval1>[\w-/]+)]]></service_regex>
+  <service_playlist><![CDATA[]]></service_playlist>
+  <service_url><![CDATA[http://tv.adobe.com/watch/{serviceVAL}]]></service_url>
+  <service_callback>EWRmedio_Services_Adobe</service_callback>
+  <service_width>640</service_width>
+  <service_height>366</service_height>
+  <service_embed><![CDATA[<iframe width="100%" height="{h}"  style="max-width: {w}px" src="http://tv.adobe.com/embed/{serviceVAL2}" frameborder="0"></iframe>]]></service_embed>
+  <service_local>0</service_local>
+</service>

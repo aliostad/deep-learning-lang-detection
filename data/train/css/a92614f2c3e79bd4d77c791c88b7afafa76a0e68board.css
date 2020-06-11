@@ -1,0 +1,56 @@
+#contanier {width:100%; height:100%;}
+
+.panel-heading h1.panel-title {position: static;}
+
+.title {font-size:50px; font-weight:bold; color:#000; text-align:center;}
+#list {width:800px; height:100%; margin:0 auto; position:relative;}
+#list table {border:1px solid grey; text-align:center;}
+#list table th {font-weight:bold; text-align:center;}
+#list table td:first-child {font-weight:bold;}
+
+.comment {height: 100px; border:1px solid grey;}
+
+#list_view {width:800px; height:500px; margin:0 auto; position:relative;}
+#list_view table {border:1px solid grey; text-align:center;}
+#list_view table th:first-child {border-right:1px solid grey;}
+#list_view table th {text-align: center; vertical-align: middle; border:1px solid #666;}
+#list_view table td {text-align:center; font-size: 12px; border:1px solid #666;}
+
+#addWrite {width:800px; height:500px; margin:0 auto;}
+#addWrite table {text-align: center; border:1px solid #666;}
+#addWrite table input {width: 100%;}
+#addWrite table textarea {width: 100%; cursor: text;}
+#addWrite p.last {text-align: right;}
+#addWrite p.last button, p.last a {width:50px;}
+
+#list_modify {width:800px; height: 100%; margin:0 auto;}
+#list_modify table {text-align: center; border:1px solid #666;}
+#list_modify table th {text-align: center;}
+#list_modify table textarea {width:100%; height: 100%; cursor: text;}
+#list_modify table td.cont {width:100%; height:500px;}
+#list_modify .edit input.complete {width:100px; height: 35px;}
+
+/*.btn {width: 100%; height: 50px;}
+ a.main {width:80px; height:35px; position:absolute; left:0;}
+a.write {width:80px; height:35px; position:absolute; right:0;} */
+a.prev {width:65px; height:35px; position:absolute; right:11%;}
+a.next {width:65px; height:35px; position:absolute; right:20%;}
+.page {width:200px; margin:0 auto;}
+.page img {vertical-align:middle; margin:0 5px;}
+
+textarea {width: 100%; height:400px; resize:none; border:none 0; cursor:default; }
+a.list {margin-left: 10px;}
+
+.edit {text-align: right;}
+.edit a.modify {width:100px; height: 35px;} 
+.edit a.delete {width:100px; height: 35px;} 
+
+.comment {padding: 15px;}
+.comment input {width: 630px; border:1px solid #000; padding:0 5px;}
+.comment input.submit {width: 80px; height: 30px;}
+
+table.board th {text-align: center;}
+span.pull-right {padding-top: 10px;}
+
+
+

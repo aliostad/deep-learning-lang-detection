@@ -1,0 +1,71 @@
+.init_loader {
+	margin-top: 20px;
+	height: 30px;
+	width: 10px;
+	background: #ffcc00;
+	transition: 12s;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #00FFA9;
+	margin-bottom: 20px;
+}
+
+.load {
+	width: 800px;
+	box-shadow: 0 0 30px #00FFA9;
+	background: #00FFA9;
+	opacity: 0.8;
+	
+}
+
+.loader_INIT {
+	
+	width: 800px;
+	position: relative;
+}
+.load_sustem_finish_start {
+	overflow: hidden;
+	height: 0px;
+
+}
+.load_sustem_finish {
+	border: 1px solid: #49A93E;
+	background: #DAFCD6;
+	margin-top: 20px;
+	width: 400px;
+	height: 200px;
+	transition: 1s;
+}
+
+
+
+.close {
+	display: none;
+}
+
+
+
+.open_view1 {
+	overflow: hidden;
+	height: 0px;
+}
+.open_view2 {
+		overflow: hidden;
+	height: 0px;
+}
+.open_view3 {
+		overflow: hidden;
+	height: 0px;
+}
+.open_view4 {
+		overflow: hidden;
+	height: 0px;
+}
+
+.view_init_stat {
+	width: 100%;
+	height: 30px;
+}
+
+.init_1 {
+	height: 30px;
+}

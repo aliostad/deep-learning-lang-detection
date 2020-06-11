@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+#inicio .navbar.navbar-inverse.navbar-fixed-top .container .navbar-collapse.collapse .nav.navbar-nav #inicio a, 
+#nosotros .navbar.navbar-inverse.navbar-fixed-top .container .navbar-collapse.collapse .nav.navbar-nav #nosotros a, 
+#sitiosweb .navbar.navbar-inverse.navbar-fixed-top .container .navbar-collapse.collapse .nav.navbar-nav #sitiosweb a, 
+#personalizado .navbar.navbar-inverse.navbar-fixed-top .container .navbar-collapse.collapse .nav.navbar-nav #personalizado a, 
+#plantillas .navbar.navbar-inverse.navbar-fixed-top .container .navbar-collapse.collapse .nav.navbar-nav #plantillas a, 
+#tienda .navbar.navbar-inverse.navbar-fixed-top .container .navbar-collapse.collapse .nav.navbar-nav #tienda a, 
+#sistemasweb .navbar.navbar-inverse.navbar-fixed-top .container .navbar-collapse.collapse .nav.navbar-nav #sistemasweb a, 
+#dominios .navbar.navbar-inverse.navbar-fixed-top .container .navbar-collapse.collapse .nav.navbar-nav #dominios a, 
+#hospedaje .navbar.navbar-inverse.navbar-fixed-top .container .navbar-collapse.collapse .nav.navbar-nav #hospedaje a, 
+#contacto .navbar.navbar-inverse.navbar-fixed-top .container .navbar-collapse.collapse .nav.navbar-nav #contacto a
+{
+  color: #fff;
+  background-color:#3E3E3E;
+}

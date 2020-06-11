@@ -1,0 +1,33 @@
+.grid {
+    border: 1px solid rgb(212,212,212);
+    width: 400px;
+    height: 300px
+}
+
+.count{
+    color: #C76C6C;
+}
+
+.pagination, .carousel a { cursor: pointer; }
+
+.datetimepicker-wrapper {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.datetimepicker-wrapper > input {
+    margin-bottom: 0 !important;
+    width: 130px;
+}
+
+.datetimepicker-wrapper [ng-model=hours], [ng-model=minutes] {
+    width: 46px !important;
+}
+
+.ta-editor {
+    min-height: 400px;
+    height: auto;
+    overflow: auto;
+    font-family: inherit;
+    font-size: 100%;
+}

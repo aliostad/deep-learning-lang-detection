@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mac-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	name="Test3_AppendStrings" graphics-resolution="704x480"
+	major-version="1" minor-version="0" application-id="3"
+	organization-id="FFFFFF">
+
+	<page-resource name="Test3_AppendStrings" main="true">
+		<palette src="../service/common/style/palette.xml" />
+		<stylesheet src="../service/common/style/stylesheet.xml" />
+		<page name="Test3_AppendStrings" main="true" src="Test3_AppendStrings/page-resource/page/Test3_AppendStrings.xml" />
+		
+		<collection name="MicrotestTemplate-collection" src="common/code/MicrotestTemplate.xml" />
+	</page-resource>
+
+</mac-app>

@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'Wallpoet';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Wallpoet'), url(font/36uu2cNBs_030nkiOViRZ_esZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+html,
+body {
+  background: #222222;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Wallpoet', '微软雅黑', cursive;
+  font-size: 18px;
+  color: #DDD;
+}
+.load-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+}
+.load-scene {
+  perspective: 500px;
+  -moz-perspective: 500px;
+  -webkit-perspective: 500px;
+  width: 135px;
+  height: 135px;
+  position: absolute;
+}
+.load-scene .load-box {
+  margin-top: -11.25px;
+  width: 135px;
+  height: 135px;
+  -moz-transform-style: preserve-3d;
+  -moz-transform-origin: 50% 50%;
+  -moz-backface-visibility: visiable;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-backface-visibility: visiable;
+  -webkit-animation: load 7s linear infinite;
+  -moz-animation: load 7s linear infinite;
+}
+.load-scene .load-box ul li {
+  position: absolute;
+  list-style: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 24px;
+  box-shadow: 0 0 2px 1px #555;
+}
+.load-scene .load-box ul li:nth-of-type(1) {
+  top: 0px;
+  left: 45px;
+  background: rgba(11, 11, 11, 0.94) url('../image/antiylogo.png') center no-repeat;
+  background-size: contain;
+  -moz-transform-origin: bottom;
+  -moz-transform: translateZ(-22.5px) rotateX(-90deg);
+  -webkit-transform-origin: bottom;
+  -webkit-transform: translateZ(-22.5px) rotateX(-90deg);
+}
+.load-scene .load-box ul li:nth-of-type(2) {
+  top: 45px;
+  left: 45px;
+  background: rgba(11, 11, 11, 0.94) url('../image/antiylogo.png') center no-repeat;
+  background-size: contain;
+  -moz-transform: translateZ(-22.5px) rotateY(180deg);
+  -webkit-transform: translateZ(-22.5px) rotateY(180deg);
+}
+.load-scene .load-box ul li:nth-of-type(3) {
+  top: 90px;
+  left: 45px;
+  background: rgba(11, 11, 11, 0.94) url('../image/antiylogo.png') center no-repeat;
+  background-size: contain;
+  -moz-transform-origin: top;
+  -moz-transform: translateZ(-22.5px) rotateX(90deg);
+  -webkit-transform-origin: top;
+  -webkit-transform: translateZ(-22.5px) rotateX(90deg);
+}
+.load-scene .load-box ul li:nth-of-type(4) {
+  top: 45px;
+  left: 0px;
+  background: rgba(11, 11, 11, 0.94) url('../image/antiylogo.png') center no-repeat;
+  background-size: contain;
+  -moz-transform-origin: right;
+  -moz-transform: translateZ(22.5px) rotateY(-90deg);
+  -webkit-transform-origin: right;
+  -webkit-transform: translateZ(22.5px) rotateY(-90deg);
+}
+.load-scene .load-box ul li:nth-of-type(5) {
+  top: 45px;
+  left: 90px;
+  background: rgba(11, 11, 11, 0.94) url('../image/antiylogo.png') center no-repeat;
+  background-size: contain;
+  -moz-transform-origin: left;
+  -moz-transform: translateZ(22.5px) rotateY(90deg);
+  -webkit-transform-origin: left;
+  -webkit-transform: translateZ(22.5px) rotateY(90deg);
+}
+.load-scene .load-box ul li:nth-of-type(6) {
+  top: 45px;
+  left: 45px;
+  background: rgba(11, 11, 11, 0.94) url('../image/antiylogo.png') center no-repeat;
+  background-size: contain;
+  -moz-transform: translateZ(22.5px);
+  -webkit-transform: translateZ(22.5px);
+}
+@-webkit-keyframes load {
+  100% {
+    -webkit-transform: rotateY(-360deg);
+  }
+}
+@-moz-keyframes load {
+  100% {
+    -moz-transform: rotateY(-360deg);
+  }
+}
+@-o-keyframes load {
+  100% {
+    -o-transform: rotateY(-360deg);
+  }
+}
+@keyframes load {
+  100% {
+    transform: rotateY(-360deg);
+  }
+}

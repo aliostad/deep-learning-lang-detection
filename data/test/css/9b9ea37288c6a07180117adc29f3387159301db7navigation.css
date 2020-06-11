@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document 
+
+#collapseOne {nav-right: #img1;}
+#collapseTwo {nav-right: #img1;}
+#collapseThree {nav-right: #img1;}
+#collapseFour {nav-right: #img1;}
+#collapseFive {nav-right: #img1;}
+#collapseSix {nav-right: #img1;}
+
+#img1 {nav-right: #img2; nav-left: #collapseOne; nav-down: #img4}
+#img2 {nav-right: #img3; nav-left: #img1; nav-down: #img5}
+#img3 {nav-left: #img2; nav-down: #img6}
+
+
+#img4 {nav-right: #img5; nav-left: #collapseOne; nav-down: #img7; nav-up:#1}
+#img5 {nav-right: #img6; nav-left: #img4; nav-down: #img8; nav-up:#img2}
+#img6 {nav-left: #img5; nav-down: #img9; nav-up:#img3;}
+
+
+#img7 {nav-right: #img8; nav-left: #collapseOne; nav-up: #img4;}
+#img8 {nav-right: #img9; nav-left: #img7; nav-up: #img5; nav-down:#;}
+#img9 {nav-left: #img8; nav-up: #img6; nav-down:#}
+
+*/	

@@ -1,0 +1,66 @@
+#! ../virtual/bin/python
+
+"""
+Usage: bingo
+    bingo connector --node=<nodenumber> [--mode=<modevalue>] [-f <config>]
+    bingo room      --node=<nodenumber> [--mode=<modevalue>] [-f <config>]
+    bingo broker    (down|up)           [--mode=<modevalue>] [-f <config>]
+    bingo -h | --help
+    bingo --version
+
+Options:
+    -h --help           Show this screen.
+    -f                  Special configure file.
+    --version           Show version.
+    --mode=<modevalue>  Current running mode [defaults : dev].
+    --node=<nodenumber> Which node it is.
+"""
+
+import os.path
+import sys
+def add_search_path():
+    sys.path.append(os.path.abspath(os.path.dirname(__file__)))
+add_search_path()
+
+from docopt import docopt
+from conf import config
+from server.connector import ConnectorServer
+from server.room import RoomServer
+from server.broker import start_broker_server
+from zmq.eventloop import ioloop, zmqstream
+ioloop.install()
+
+def startConnector(mode,connector_config,broker_config):
+    server = ConnectorServer(mode,connector_config,broker_config)
+    server.listen(connector_config['port'])
+    print 'start connector server at localhost',connector_config['port']
+
+def startRoom(mode,room_config,broker_config):
+    server = RoomServer(mode,room_config,broker_config)
+    print 'start room server at subpoint',broker_config['down']['backend']
+
+def startDownBroker(mode,config):
+    start_broker_server(mode,config)
+    
+def startUpBroker(mode,config):
+    start_broker_server(mode,config)
+
+
+if __name__ == "__main__":
+    arguments = docopt(__doc__)
+    mode = 'dev'
+    if arguments['--mode']:
+        mode = arguments['--mode']
+    if arguments['connector']:
+        startConnector(mode,config['connector'][mode][int(arguments['--node'])],config['brokerserver'][mode])
+        ioloop.IOLoop.instance().start()
+    elif arguments['room']:
+        startRoom(mode,config['roomserver'][mode][int(arguments['--node'])],config['brokerserver'][mode])
+        ioloop.IOLoop.instance().start()
+    elif arguments['broker']:
+        if arguments['down']:
+            startDownBroker(mode,config['brokerserver'][mode]['down'])
+        else:
+            startUpBroker(mode,config['brokerserver'][mode]['up'])
+
+

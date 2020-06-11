@@ -1,0 +1,14 @@
+#!/bin/zsh
+mkdir panels
+mkdir panels/cs5
+mkdir panels/cs5/Save\ Panel
+mkdir panels/cs6
+mkdir panels/cs6/Save\ Panel
+cp -R Save\ Panel\ CS5.assets/ /Applications/Adobe\ Photoshop\ CC/Plug-ins/Panels/Save\ Panel/content/Save\ Panel.assets/
+cp -R /Applications/Adobe\ Photoshop\ CS5/Plug-ins/Panels/Save\ Panel/content panels/cs5/Save\ Panel/
+cp -R /Applications/Adobe\ Photoshop\ CC/Plug-ins/Panels/Save\ Panel/content panels/cs6/Save\ Panel/
+
+zip savepanel.zip scripts/**/* panels/**/* icon.png readme.txt Save\ Panel.mxi 
+mv savepanel.zip savepanel.zxp
+rm -rf panels
+

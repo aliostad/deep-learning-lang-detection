@@ -1,0 +1,27 @@
+#!/bin/bash
+
+LOAD_PATH=$(action-get path)
+if [ -z "$LOAD_PATH" ]; then
+	action-fail "'path' parameter is required."
+	exit 0
+fi
+
+if [ ! -d "$LOAD_PATH" ]; then
+	action-fail "$LOAD_PATH: not found or not a directory"
+	exit 0
+fi
+
+DEPLOYMENT=$(config-get deployment)
+CONF_PATH=/srv/hockeypuck/${DEPLOYMENT}/etc/hockeypuck.conf
+LOG_FILE=/srv/hockeypuck/${DEPLOYMENT}/log/load-$(date +%Y%m%d%H%M%S).log
+
+service hockeypuck stop || true
+
+action-set log-file=$LOG_FILE
+su - hockeypuck -c "hockeypuck-load -config ${CONF_PATH} $LOAD_PATH/\*" 2>&1 >$LOG_FILE
+if [ "$?" != "0" ]; then
+	action-fail "hockeypuck-load had errors, check the log for details."
+fi
+
+service hockeypuck start || true
+

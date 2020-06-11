@@ -1,0 +1,158 @@
+body {
+	padding: 4em 0 20em 0;
+	overflow-y: scroll;
+}
+.created-by {
+	position: relative;
+	bottom: -10em;
+}
+dl.panel-body {
+	margin-bottom: 0;
+}
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:hover {
+	background-color: #f4f4f4;
+}
+.api-term {
+	background-color: transparent;
+}
+.api-arg-arrow {
+	color: #d0d0d0;
+}
+.api-modules {
+	color: #727272;
+	padding-left: 15px;
+}
+.api-type {
+	font-size: 50%;
+}
+.api-term .api-arg-type {
+	font-size: inherit;
+}
+.api-type,
+.api-arg-type,
+.api-prop-type {
+	color: #bbbbbb !important;
+}
+.api-arg {
+	font-size: 95%;
+	color: #58D3E4;
+}
+.api-arg-type,
+.api-prop-type {
+	font-style: italic;
+}
+.api-module {
+	color: #555555;
+}
+.api-class,
+.api-class > * {
+	color: #486eb8;
+}
+.api-code.api-class {
+	font-size: 200%;
+}
+.api-requires,
+.api-requires a,
+.api-requires a:link,
+.api-requires a:visited,
+.api-requires a:hover,
+.api-requires a:active {
+	color: #31ac94;
+}
+.api-requires {
+	border-left-color: #31ac94;
+	padding-left: 1.2em;
+}
+.api-property {
+	border-left-color: #e7bd50;
+	color: #e7bd50;
+}
+.api-method,
+.api-additional-methods {
+	color: #539fd1;
+}
+.api-method {
+	border-left-color: #539fd1;
+}
+.api-additional-methods {
+	padding-left: 15px;
+	margin-bottom: 10px;
+}
+.api-src {
+	border-left-color: #346f42;
+	color: #346f42;
+}
+.api-function {
+	border-left-color: #a07494;
+	color: #a07494;
+}
+.api-event {
+	border-left-color: #769e76;
+	color: #769e76;
+}
+.api-section {
+	border-left-style: solid;
+	border-left-width: 2px;
+	padding-left: 0.6em;
+}
+.api-code {
+	border-width: 0;
+	background-color: transparent;
+	font-size: 125%;
+}
+.api-items li {
+	padding: 0.6em;
+}
+.api-description {
+	font-size: 85%;
+	padding-left: 0.6em;
+}
+.api-description dl {
+	margin-bottom: 0;
+	padding-left: 10px;
+}
+.api-description,
+.api-description a,
+.api-description a:link,
+.api-description a:visited,
+.api-description a:hover,
+.api-description a:active {
+	color: #999999;
+}
+.api-anchor {
+	display: block;
+	position: relative;
+	top: -70px;
+	visibility: hidden;	
+}
+.api-module-links .api-module-links {
+	font-size: 90%;
+	display: none;
+	padding-left: 10px;
+}
+.active .api-module-links {
+	display: block;
+}
+.api-module-links li a {
+	color: #999999;
+	padding: 5px 15px;
+	border: 0px solid #999999;
+	cursor: pointer;
+}
+.api-module-links li a:hover {
+	border-left-width: 1px;
+	margin-left: -1px;
+}
+.api-module-links li.active > a {
+	border-left-width: 2px;
+	margin-left: -2px;
+}
+.api-module-links li.current > a {
+	border-color: #0031f2;
+	background-color: #f7f7f7;
+}
+.api-module-contents > li {
+	margin-top: 2.5em;
+}

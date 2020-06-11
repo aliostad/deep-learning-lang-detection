@@ -1,0 +1,59 @@
+/*css code goes here*/
+header{padding:30px 0;}
+header .content{width:100%;margin:0 auto;}
+header .content h1{margin:0;text-align:center;font-size:40px}
+
+body{font-family:'Helvetica Neue',Helvetica,sans-serif;background-image:url("/images/grey.png");background-repeat:repeat;margin:0;min-width:980px;}
+a{text-decoration:none}
+h1,h2,h3,h4,h5,h6{color:#525252;font-weight:normal}
+header{padding:30px 0;}
+
+#vis .container #loading{text-align:center;position:absolute;left:0;right:0;top:260px;font-size:80px;color:#737373}
+#vis{padding:35px 0 20px;height:1350px;background-color:rgba(255,255,255,0.75);-webkit-box-shadow:0 0 10px rgba(0,0,0,0.5);-moz-box-shadow:0 0 10px rgba(0,0,0,0.5);-ms-box-shadow:0 0 10px rgba(0,0,0,0.5);-o-box-shadow:0 0 10px rgba(0,0,0,0.5);box-shadow:0 0 10px rgba(0,0,0,0.5);}
+#vis .container{width:1300px;padding:0 0px;margin:0 auto;position:relative;}
+#vis .container .legend-element{font-size:10px}
+#vis .container text.legend-element{fill:#737373}
+#vis .container svg.legends { width:100%;height: 500px}
+#vis .container .title {font-size: 28px;}
+#vis .container .traffic_line, .traffic_line2 {
+	stroke-width: 1.5px;
+}
+
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
+.axis path, .axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+.axis2 path, .axis2 line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+.tipsy p{ margin-top: 0; margin-bottom: 4px;}
+.tipsy .tipsy-inner div.point-info {
+	text-align: left;
+	font-size: 12px;
+	margin-bottom: 4px
+}
+
+.tipsy .tipsy-inner div.row-info {
+	text-align: left;
+	font-size: 12px;
+	margin-bottom: 4px
+}
+
+
+
+#write-up{padding:35px 0 20px;color:#525252;}
+#write-up .content{width:1160px;margin:0 auto;}
+#write-up .content p{font-size:25px;line-height:1.5;margin:15px 0}
+#write-up .content h2{font-size:30px;border-left:solid #bdbdbd;padding-left:15px;-webkit-transition:border-left-color .25s;-moz-transition:border-left-color .25s;-ms-transition:border-left-color .25s;-o-transition:border-left-color .25s;transition:border-left-color .25s;line-height:1.25}
+#write-up .content li{font-size:22px;line-height:1.5;margin:15px 0}
+#write-up .content ul{font-size:25px;line-height:1.5;margin:15px 0}
+#write-up .content ul li b{margin-right:1em}

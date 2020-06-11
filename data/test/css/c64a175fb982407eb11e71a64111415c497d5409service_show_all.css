@@ -1,0 +1,53 @@
+.service-display-panel {
+	position: absolute;
+	z-index: 10;
+	width: 600px;
+	height: 600px;
+	background-color: #ffffff;
+	padding: 10px;
+	border: 3px solid #6B6868;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.service-display-panel-head {
+	background-color: #000;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.service-display-panel-content {
+	max-height: 600px;
+	overflow: auto;
+}
+
+.service-type-head {
+	background-color: #c0c0c0;
+	color: #000;
+}
+
+.service-type-content {
+	margin-bottom: 10px;
+	
+	min-height: 200px;
+	max-height: 300px;
+	overflow: auto;
+}
+.service-type-content .service {
+	float: left;
+	margin: 5px 5px;
+	align: center;
+}
+
+.service-type-content .service .service-icon {
+	background: url(images/apibg.png) no-repeat;
+	margin:5px 0px;
+	width: 100px;
+	height: 100px;
+}
+
+.service-type-content .service .service-name {
+	text-align: center;
+
+}

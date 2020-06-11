@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services>
+	<service id="PersistenceManager" enable="true" priority="-1">org.omni.db.PersistenceManager</service>
+	<service id="resourcesCenter" enable="false" priority="-1">org.omni.service.resources.ResourceCenter</service>
+	<service id="messagebus" enable="false" priority="-1">org.omni.service.message.MessageBus</service>
+	<service id="JmxServer" enable="false" priority="11111">org.omni.service.jmx.JmxServer</service>
+	<service id="SqliteService" enable="true">org.omni.db.sqlite.SQLiteService</service>
+	<service id="SqliteStorage" enable="true">org.omni.service.sqlite.SqliteStorage</service>
+	<service id="DemoService" enable="true" priority="11111" dependency="SqliteService">org.omni.service.demo.DemoService</service>
+	<service id="MinaServer" enable="false" priority="11">org.omni.service.mina.MinaServer</service>
+	<service id="MinaClient" enable="false">org.omni.service.mina.client.MinaClient</service>
+</services>

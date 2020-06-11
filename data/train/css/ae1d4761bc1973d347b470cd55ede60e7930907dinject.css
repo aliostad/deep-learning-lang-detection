@@ -1,0 +1,69 @@
+/*.chat-header-wrapper {
+  display: none !important;
+}
+
+li.chat-message.message.me {
+  background-color: #f0f0ff;
+}
+
+li.chat-message .message-actions {
+  min-width: 30px;
+  min-height: 30px;
+  z-index: 999;
+  position: absolute;
+}
+
+li.chat-message.action-message.message.join,
+li.chat-message.action-message.message.invite,
+li.chat-message.action-message.message.add-people {
+  display: none;
+}
+
+li.chat-message {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  border-color: #ddd !important;
+}
+
+li.chat-message.message-monologue {
+  border-width: 0 !important;
+}
+
+li.chat-message.line-message {
+  background-color: #fff !important;
+  font-style: italic;
+}
+
+.time-separator[class*=message] {
+  border-width: 1px !important;
+}
+
+.time-separator[class*=message] time.timestamp {
+  visibility: visible;
+}
+
+li.chat-message time.timestamp {
+  bottom: 1em !important;
+  z-index: 998 !important;
+  padding-right: 40px !important;
+}
+
+.last-read-message-text {
+  display: none;
+}*/
+
+.chat-message.me[title*='has seen this message'] {
+  background-color: seashell;
+}
+.chat-message.message.deleted {
+  display: none;
+}
+
+img.emojie:hover {
+  transform: scale(2.0);
+}
+
+a[data-tag-search='overholt']{
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}

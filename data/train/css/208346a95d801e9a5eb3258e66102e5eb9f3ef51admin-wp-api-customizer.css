@@ -1,0 +1,35 @@
+/* line 6, ../_scss/admin-wp-api-customizer.scss */
+#the-list tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+/* line 12, ../_scss/admin-wp-api-customizer.scss */
+#the-list td input {
+  width: 100%;
+}
+
+/* line 19, ../_scss/admin-wp-api-customizer.scss */
+.column-remove,
+.column-add {
+  width: 1.5em;
+  padding: 0 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 25, ../_scss/admin-wp-api-customizer.scss */
+.column-remove > .dashicons-before,
+.column-add > .dashicons-before {
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  border-radius: 14px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e5e5e5;
+}
+/* line 30, ../_scss/admin-wp-api-customizer.scss */
+.column-remove > .dashicons-before:before,
+.column-add > .dashicons-before:before {
+  vertical-align: middle;
+}

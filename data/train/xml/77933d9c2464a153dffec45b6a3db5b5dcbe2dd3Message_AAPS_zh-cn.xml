@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MessageData>
+	<MessageSet name="zh_cn" message="中文">
+		<Description>Chiness Default</Description>
+		<Message name="AAPS" message="AAPS 消息">
+			<Message name="System" message="系统">
+				<Message name="Error" message="由于内部错误无法认证"/>
+			</Message>
+			<Message name="Placement" message="定位">
+				<Message name="TenantID" message="TenantID">
+					<Message name="isNull" message="请输入TenantCode，TenantID为空." />
+					<Message name="CanNotFound" message="找不到TenantID [%1]。" />
+				</Message>
+				<Message name="NoFound" message="请输入ServerName或SessionID"/>
+				<Message name="ServerName" message="ServerName">
+					<Message name="isNull" message="请输入ServerName"/>
+					<Message name="NotFound" message="找不到ServerName [%1]."/>
+				</Message>
+				<Message name="ServiceName" message="ServiceName">
+					<Message name="isNull" message="请输入ServiceName"/>
+					<Message name="NotFound" message="找不到ServiceName [%1]."/>
+				</Message>
+				<Message name="SessionID" message="SessionID">
+					<Message name="isNull" message="请输入SessionID"/>
+					<Message name="NotFound" message="找不到SessionID [%1]。"/>
+				</Message>
+				<Message name="RequestName" message="RequestName">
+					<Message name="isNull" message="请输入RequestName"/>
+					<Message name="NotFound" message="找不到RequestName [%1]."/>
+				</Message>
+			</Message>
+			<Message name="AuthenticationService" message="Authentication Service">
+				<Message name="CanNotFound" message="找不到AuthenticationService">
+					<Message name="UserCertification" message="找不到对象用户证书。"/>
+				</Message>
+				<Message name="SuperUser" message="Super user">
+					<Message name="NotSet" message="未设置Super User"/>
+				</Message>
+				<Message name="User" message="用户">
+					<Message name="PasswordPolicyError" message="检查密码策略返回错误[%1]。"/>
+					<Message name="NotFound" message="找不到用户[%1][%2]。"/>
+					<Message name="NotMatch" message="找不到用户或密码不正确"/>
+					<Message name="Expired" message="[TenantID:%1][LoginID:%2] 用户已过期，请联系管理员。"/>
+					<Message name="Disabled" message="[TenantID:%1][LoginID:%2] 用户被禁用，请联系管理员。"/>
+					<Message name="GetACL" message="获取用户session[%1][%2]的ACL出错。"/>
+					<Message name="GetUserMenu" message="获取用户session[%1][%2]的用户菜单时出错。"/>
+				</Message>
+				<Message name="UserLogin" message="用户">
+					<Message name="isNull" message="请输入UserID"/>
+				</Message>
+				<Message name="UserPassword" message="用户密码">
+					<Message name="isNull" message="请输入用户密码"/>
+				</Message>
+				<Message name="TenantID" message="Tenant ID">
+					<Message name="isNull" message="请输入TenantID，检查配置后刷新网页。"/>
+				</Message>
+			</Message>
+			<Message name="Session" message="Session">
+				<Message name="SessionNotFound" message="找不到session [%1]"/>
+				<Message name="SessionID" message="SessionID">
+					<Message name="isNull" message="SessionID找不到或为空"/>
+				</Message>
+			</Message>
+		</Message>
+	</MessageSet>
+</MessageData>

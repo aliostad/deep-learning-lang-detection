@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LogStash::Event#append when event field is a string" tests="4" time="0.001" failures="0" errors="0" skipped="0">
+  <testcase name="LogStash::Event#append when event field is a string should concatenate values in an array" time="0.0">
+  </testcase>
+  <testcase name="LogStash::Event#append when event field is a string should join array, removing duplicates" time="0.001">
+  </testcase>
+  <testcase name="LogStash::Event#append when event field is a string should append string to values, if different from current" time="0.0">
+  </testcase>
+  <testcase name="LogStash::Event#append when event field is a string should not change value, if appended value is equal current" time="0.0">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>

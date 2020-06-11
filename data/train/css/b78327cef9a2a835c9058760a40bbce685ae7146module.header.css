@@ -1,0 +1,29 @@
+#header {
+  *position: relative;
+  *z-index: 2;
+}
+#header #mobile-header {
+  height: 42px;
+}
+#header #mobile-header .nav-bar-ctn .nav-bar {
+  min-height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #808080;
+}
+#header #mobile-header .nav-bar-ctn .nav-bar .content-ctn .content-wrap .main-nav {
+  position: relative;
+}
+#header #mobile-header .nav-bar-ctn .nav-bar .content-ctn .content-wrap .main-nav #main-nav-toggler {
+  position: absolute;
+  padding: 11px;
+  top: 0;
+  left: -12px;
+}
+#header #mobile-header .nav-bar-ctn .nav-bar .content-ctn .content-wrap .main-nav #main-nav-toggler .toggler {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: url('../../src/img/nav-toggler.png') no-repeat;
+  background-size: 100% auto;
+}

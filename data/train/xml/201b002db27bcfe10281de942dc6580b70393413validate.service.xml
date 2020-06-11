@@ -1,0 +1,22 @@
+<service-components>
+	<service-component type="org.tinygroup.service.test.validate.ValidateService"
+		group-id="org.tinygroup.service.test.validate" artifact-id="ValidateService">
+
+		<service-method name="validateServiceAdd" local-name="validateServiceAdd"
+			service-id="validateServiceAdd" version="" description=""
+			method-name="add">
+			<service-parameters>
+				<service-parameter name="validateUser" validate-scene="china"
+					type="org.tinygroup.service.test.validate.ValidateUser" required="true"
+					is-array="false" />
+				<service-parameter name="string" type="java.lang.String"
+					required="true" is-array="false" />
+				<service-parameter name="a" validate-scene="buyNum" type="int" required="true"
+					is-array="false" />
+			</service-parameters>
+			<service-result name="result" required="false"
+				is-array="false" type="void" />
+		</service-method>
+	</service-component>
+
+</service-components>

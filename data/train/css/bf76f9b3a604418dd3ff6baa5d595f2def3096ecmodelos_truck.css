@@ -1,0 +1,178 @@
+div#model-details {
+    margin: 0 auto;
+    width: 990px;
+    overflow: visible;
+    position: relative;
+    left: -34px;
+}
+
+div#model-head {
+    text-align: center;
+    position: relative;
+}
+
+div#model-version-dialog {
+    font-size: 12px;
+}
+
+div#model-actions {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+div#model-body {
+
+}
+
+div#model-body-left {
+    float: left;
+    text-align: right;
+}
+
+div#model-body-right {
+    float: right;
+    text-align: left;
+}
+
+div.unfloat {
+    clear: both;
+}
+
+div.model-body-column {
+    display: inline-block;
+    width: 45%;
+    position: relative;
+}
+
+div.model-body-table-caption {
+    display: inline-block;
+    min-width: 30%;
+    background-color: #f6921e;
+    padding: 2px 8px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: arial, serif;
+}
+
+div.model-body-column table {
+    width: 100%;
+    font-size: 10px;
+    font-family: arial, serif;
+    border-spacing: 0;
+    margin-bottom: 20px;
+    border: 1px solid #dcdcde;
+    padding: 0 16px 16px 16px;
+}
+
+div.model-body-column table tr:nth-child(2n) {
+    background-color: #dcdcde;
+}
+
+div.model-body-column table tr:nth-child(2n+1) {
+    background-color: white;
+}
+
+div.model-body-column table tr td:last-child {
+    text-align: center;
+}
+
+div.model-body-column table tr td:first-child {
+    text-align: left;
+}
+
+div.model-body-column table tr td {
+    text-align: left;
+    padding: 2px;
+}
+
+div#model-foot {
+    text-align: center;
+}
+
+#foot-table {
+    width: 900px;
+    margin: 0 auto;
+}
+
+#foot-table-row td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#dimensions-container {
+    display: inline-block;
+    width: 80%;
+}
+
+#foot-table-row td:first-child #dimensions-container {
+    text-align: right;
+}
+
+#foot-table-row td:last-child #dimensions-container {
+    text-align: left;
+}
+
+#dimensions-container table tr td:first-child {
+    text-align: left;
+}
+
+#dimensions-container table tr td:last-child {
+    text-align: center;
+}
+
+#dimensions-container table {
+    width: 100%;
+    font-size: 10px;
+    font-family: arial, serif;
+    border-spacing: 0;
+    margin-bottom: 20px;
+    border: 1px solid #dcdcde;
+    padding: 0 16px 16px 16px;
+}
+
+#dimensions-container table tr:nth-child(2n) {
+    background-color: #dcdcde;
+}
+
+#dimensions-container table tr:nth-child(2n+1) {
+    background-color: white;
+}
+
+#dimensions-container table tr td:last-child {
+    text-align: center;
+}
+
+#dimensions-container table tr td:first-child {
+    text-align: left;
+}
+
+#dimensions-container table tr td {
+    text-align: left;
+    padding: 2px;
+}
+
+div#model-version-dialog {
+    font-size: 12px;
+}
+
+div#model-version-dialog div.title {
+    margin-bottom: 16px;
+}
+
+div#model-version-dialog div.menu {
+    text-align: center;
+}
+
+div#model-version-dialog ul {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+div#model-version-dialog ul li {
+    list-style: none;
+}

@@ -1,0 +1,39 @@
+body {
+  padding: 50px;
+  font: 13px Helvetica, Arial, sans-serif;
+}
+
+form ul {
+    list-style: none;
+}
+
+#container {
+    padding: 40px 15px;
+}
+
+/*-------------------------------- table */
+table.api {
+    border-collapse: collapse;
+}
+table.api, th.api, td.api {
+    border: 1px solid black;
+}
+td.api {
+    padding: 5px;
+    min-width: 50px; 
+}
+
+/*-------------------------------- internal */
+.internal, .internal > a {
+    color: #999;
+}
+
+.notsync, .notsync > a {
+    color: #f0ad4e;
+}
+
+.btn-notsync {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+}

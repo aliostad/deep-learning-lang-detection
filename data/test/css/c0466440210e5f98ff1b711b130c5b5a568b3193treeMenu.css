@@ -1,0 +1,123 @@
+
+div[data-tree-model] ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    white-space:nowrap;
+}
+
+div[data-tree-model] li {
+    position: relative;
+    padding: 0 0 0 20px;
+    white-space:nowrap;
+}
+
+div[data-tree-model] li .openFolder {
+    padding: 1px 10px;
+    background: url("../icons/iconSet2/16/openFolder-icon_16.png") no-repeat;
+    white-space:nowrap;
+}
+
+div[data-tree-model] li .normal {
+    padding: 1px 10px;
+    background: url("../icons/iconSet2/16/file.png") no-repeat;
+    white-space:nowrap;
+}
+
+div[data-tree-model] li .closedFolder {
+    padding: 1px 10px;
+    background: url("../icons/iconSet2/16/closedFolder-icon_16.png") no-repeat;
+    white-space:nowrap;
+}
+
+div[data-tree-model] li .emptyFolder {
+    padding: 1px 10px;
+    background: url("../icons/iconSet2/16/emptyFolder-icon_16.png") no-repeat;
+    white-space:nowrap;
+}
+
+div[data-tree-model] li .csi {
+    padding: 1px 10px;
+    background: url("../icons/iconSet2/16/csi.png") no-repeat;
+    white-space:nowrap;
+}
+
+div[data-tree-model] li .csiFolderOpen {
+    padding: 1px 10px;
+    background: url("../icons/iconSet2/16/openCsiFolder-icon_16.png") no-repeat;
+    white-space:nowrap;
+}
+div[data-tree-model] li .csiFolderClosed {
+    padding: 1px 10px;
+    background: url("../icons/iconSet2/16/closedCsiFolder-icon_16.png") no-repeat;
+    white-space:nowrap;
+}
+
+div[data-tree-model] li .protocolForm {
+    padding: 1px 10px;
+    background: url("../icons/iconSet2/16/protocol.png") no-repeat;
+    white-space:nowrap;
+}
+
+div[data-tree-model] li .protocolFolderOpen {
+    padding: 1px 10px;
+    background: url("../icons/iconSet2/16/protocolOpenFolder.png") no-repeat;
+    white-space:nowrap;
+}
+
+
+div[data-tree-model] li .protocolFolderClosed {
+    padding: 1px 10px;
+    background: url("../icons/iconSet2/16/protocolClosedFolder.png") no-repeat;
+    white-space:nowrap;
+}
+
+div[data-tree-model] li .tester {
+    padding: 1px 10px;
+    background: url("../icons/iconSet2/16/file.png") no-repeat;
+    white-space:nowrap;
+}
+
+div[data-tree-model] li i, div[data-tree-model] li span {
+    cursor: pointer;
+    white-space:nowrap;
+}
+
+div[data-tree-model] li .selected {
+    background-color: #cceeee;
+    font-weight: bold;
+    padding: 1px 5px;
+    white-space:nowrap;
+}
+
+/* For fade in/fade out of the child tree, when user selects a tab  */
+.ng-hide-add, .ng-hide-remove {
+    /* ensure visibility during the transition */
+    display: block !important;
+}
+
+.cssFade {
+    transition: 0.35s linear all;
+    opacity: 1;
+}
+
+.cssFade.ng-hide {
+    opacity: 0;
+}
+
+/* The caption at the top of the current tree */
+.tabCaptionWrapper {
+    background: #1A4660;
+    color: #ffffd0;
+    padding-left: 16px;
+    padding-top: 2px;
+    padding-bottom: 6px;
+}
+
+.tabCaption {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: italic;
+}
+

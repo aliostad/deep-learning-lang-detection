@@ -1,0 +1,57 @@
+
+<COMMANDO>
+<UI>
+<CAPTION LABEL="php_beautifier">
+<FILE_ENTRY LABEL="script" VARNAME="file" EVAL="buffer.getName()"/>
+</CAPTION>
+<CAPTION LABEL="Path to bin">
+<ENTRY LABEL="(no spaces)" VARNAME="bin_path" DEFAULT="/usr/bin/"/>
+</CAPTION>
+
+<!--
+<CAPTION LABEL="Choose compile or run">
+<CHOICE LABEL="Select" VARNAME="type" DEFAULT="run" >
+<OPTION  LABEL="run" VALUE="run"/>
+<OPTION LABEL="compile" VALUE="compile"/>
+</CHOICE>
+</CAPTION>
+-->
+
+
+</UI>
+
+<COMMANDS>
+
+
+
+<COMMAND SHELL="System" CONFIRM="FALSE">
+
+buf = new StringBuilder("");
+buf.append("/data/bin_tools/php_fmt");
+buf.append(" ");
+buf.append(MiscUtilities.getParentOfPath(buffer.getPath()));
+buf.append(file);
+buf.toString();
+
+</COMMAND>
+
+
+
+<!-- multiple comands example
+<COMMAND SHELL="System" CONFIRM="FALSE">
+</COMMAND>
+-->
+<!--
+<COMMAND SHELL="System" CONFIRM="FALSE">
+// mv beuty in orig
+buf = new StringBuilder("");
+buf.append("mv /tmp/");
+buf.append(file);
+buf.append("B ");
+buf.append(file);
+buf.append("");
+</COMMAND>
+-->
+
+</COMMANDS>
+</COMMANDO>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transaction classpath="/engine/WEB-INF/trans_rules/classes/" evaluation="shortcut" name="stat-hist-user" type="statistic" xmlns="http://kalio.net/empweb/schema/transaction/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://kalio.net/empweb/schema/transaction/v1                                   ../../../../common/xml/schema/transaction/v1/empweb-transaction-1-0.xsd">
+<environment>
+    <param name="env1">env1_value</param>
+</environment>
+
+
+<process class="net.kalio.empweb.engine.rules.GroovyInterpreter" name="getUserHistory"><params>
+    <param name="script">
+<![CDATA[
+
+te = tc.get(TransactionContext.TRANSACTION_EXTRAS);
+userId = te.get("userId");
+userDb = te.get("userDb");
+onlyCounts = te.get("onlyCounts");
+
+loanFilter        = ewdb.getEwdbObjectFactory().createLoan();
+reservationFilter = ewdb.getEwdbObjectFactory().createReservation();
+fineFilter        = ewdb.getEwdbObjectFactory().createFine();
+suspensionFilter  = ewdb.getEwdbObjectFactory().createSuspension();
+
+loanFilter.setUserId(userId);
+reservationFilter.setUserId(userId);
+fineFilter.setUserId(userId);
+suspensionFilter.setUserId(userId);
+
+loanFilter.setUserDb(userDb);
+reservationFilter.setUserDb(userDb);
+fineFilter.setUserDb(userDb);
+suspensionFilter.setUserDb(userDb);
+
+EmpwebDB ewdb = WSBroker.getEwdb();
+
+List loansList        = ewdb.listTransactionLogIds(loanFilter);
+List reservationsList = ewdb.listTransactionLogIds(reservationFilter);
+List suspensionsList  = ewdb.listTransactionLogIds(suspensionFilter);
+List finesList        = ewdb.listTransactionLog(fineFilter); // we need the actual fine object so that we can postprocess the list accordingly
+
+// postprocess the fine list 
+finesList = finesList.findAll{ fine -> fine.refId == null }   // leave only 'original' fines and drop the rest
+finesList = finesList.collect{ fine -> fine.id }              // rebuild the list with ids only
+
+result.append("<values>");
+result.append("<value name='loanCount'>").append(loansList.size()).append("</value>");
+result.append("<value name='reservationsCount'>").append(reservationsList.size()).append("</value>");
+result.append("<value name='finesCount'>").append(finesList.size()).append("</value>");
+result.append("<value name='suspensionCount'>").append(suspensionsList.size()).append("</value>");
+
+if (onlyCounts != "true") {
+        result.append("  <value name='loanIds'>");
+        for (item in loansList) { result.append("  <id>"+item+"</id>");}
+        result.append("  </value>");
+        result.append("  <value name='reservationIds'>");
+        for (item in reservationsList) { result.append("  <id>"+item+"</id>");}
+        result.append("  </value>");
+        result.append("  <value name='fineIds'>");
+        for (item in finesList) { result.append("  <id>"+item+"</id>");}
+        result.append("  </value>");
+        result.append("  <value name='suspensionIds'>");
+        for (item in suspensionsList) { result.append("  <id>"+item+"</id>");}
+        result.append("  </value>");
+}
+result.append("</values>");
+return true;
+]]>
+    </param>
+  </params>
+</process>
+</transaction>

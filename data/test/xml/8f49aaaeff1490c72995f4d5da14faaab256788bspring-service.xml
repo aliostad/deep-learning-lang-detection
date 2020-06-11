@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans default-autowire="byName">
+
+	<bean id="areaService" class="com.imxiaomai.service.impl.AreaServiceImpl" />
+	<bean id="cityService" class="com.imxiaomai.service.impl.CityServiceImpl" />
+	<bean id="collegeService" class="com.imxiaomai.service.impl.CollegeServiceImpl" />
+	<bean id="deviceService" class="com.imxiaomai.service.impl.DeviceServiceImpl" />
+	<bean id="expressService" class="com.imxiaomai.service.impl.ExpressServiceImpl" />
+	<bean id="expressPriceService" class="com.imxiaomai.service.impl.ExpressPriceServiceImpl" />
+	<bean id="favorableService" class="com.imxiaomai.service.impl.FavorableServiceImpl" />
+	<bean id="feedBackService" class="com.imxiaomai.service.impl.FeedBackServiceImpl" />
+	<bean id="miDeviceService" class="com.imxiaomai.service.impl.MiDeviceServiceImpl" />
+	<bean id="smsRecordsService" class="com.imxiaomai.service.impl.SmsRecordsServiceImpl" />
+	<bean id="storeService" class="com.imxiaomai.service.impl.StoreServiceImpl" />
+	<bean id="storeExpressService" class="com.imxiaomai.service.impl.StoreExpressServiceImpl" />
+	<bean id="scorelistService" class="com.imxiaomai.service.impl.ScorelistServiceImpl" />
+	<bean id="userService" class="com.imxiaomai.service.impl.UserServiceImpl" />
+	<bean id="userStatService" class="com.imxiaomai.service.impl.UserStatServiceImpl" />
+	<bean id="upgradeService" class="com.imxiaomai.service.impl.UpgradeServiceImpl" />
+	<bean id="upgradePloyService" class="com.imxiaomai.service.impl.UpgradePloyServiceImpl" />
+	<bean id="versionsservice" class="com.imxiaomai.service.impl.VersionsServiceImpl" />
+	<bean id="wxBindUserService" class="com.imxiaomai.service.impl.WxBindUserServiceImpl" />
+	<bean id="loginService" class="com.imxiaomai.service.impl.LoginServiceImpl" />
+	<bean id="userSourceService" class="com.imxiaomai.service.impl.UserSourceServiceImpl" />
+	
+</beans>

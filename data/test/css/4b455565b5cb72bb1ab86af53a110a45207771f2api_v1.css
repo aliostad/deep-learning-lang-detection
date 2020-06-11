@@ -1,0 +1,68 @@
+body{background:#fff; font-family:Verdana;height:100%;width:100%;overflow:hidden; }
+a{color:#336699;text-decoration:none;}
+a:hover{color:#ff5500;}
+header{height:80px;width:100%; position:absolute;z-index:1; background:#93D5EF url(header.png) repeat-x left bottom;}
+
+.api_aside,.api_main{ position:absolute; left:0;top:80px; bottom:0; }/*绝对定位一个方向即可*/
+.api_main{ width:100%; z-index:2}
+.api_article{ margin:25px 20px 20px 240px; height:100%;}
+.api_aside { width:220px; background:#eaf2f5; z-index:3}
+.api_aside nav{ height:100%; border-right:1px solid #d3e2e8}
+
+.space_bottom,.space_top{height:10px; background:#fff;left:220px;right:20px;position:absolute;z-index:3;}
+.space_bottom{bottom:0}
+.space_top{top:80px}
+
+.logo{padding-left:10px;}
+.logo a{background:url(logo.png) no-repeat center 5px;width:350px;height:80px;float:left;overflow:hidden;display:block;text-indent:-2000em;line-height:50000px;}
+
+.api_aside ul{padding:30px 0 0 10px; margin-right:-1px;}
+.api_aside li{line-height:30px;height:30px;overflow:hidden;}
+.api_aside li a{color:#333;display:block;padding:0 15px;margin:2px 1px; }
+.api_aside li a:hover{background:#dde9ed; text-decoration:none}
+.api_aside li ul{display:none;margin-left:13px; padding:0}
+.api_aside .current{height:auto;}
+.api_aside .current a,.api_aside .current a:hover{background:#fff;height:28px;line-height:28px;padding:0 13px;margin: 0; color:#F30;border:1px solid #d3e2e8; border-right-color:#fff}
+.api_aside .current ul{display:block;}
+.api_aside .current ul a{background:none;border:0;color:#336699;padding:0 13px;}
+.api_aside .current ul a:hover{border:0;background:#dde9ed;color:#333;}
+.api_aside .current ul li{ margin:0; padding:0}
+
+.api_article{line-height:2;color:#555;}
+.api_article a{ white-space:nowrap;}
+.api_article td{padding:0 5px;_padding:5px;font-size:12px }
+
+footer{color:#bfd4ea; position:absolute;top:30px;right:15px; text-align:right; z-index:3}
+
+
+h2{ font-size:16px;color:#369; font-weight:700;padding-left:20px;}
+.div_hr{border-bottom:1px solid #fff;height:1px;overflow:hidden;background:#d0ceca;margin:10px 0;}
+.box{padding:5px 20px;}
+.box p{text-indent:2em;}
+
+.article h1,.content h2,.content h3{font-size:13px; font-weight:700; padding:0 10px; height:30px; line-height:30px; margin:10px 0; border:1px solid #dedede; text-indent:1.5em; background:#f8f8f8 url(h1A.png) 1em center no-repeat;-moz-border-radius: 15px;
+-khtml-border-radius: 15px;
+-webkit-border-radius: 15px;
+border-radius: 15px;}
+.content h2,.content h3{}
+.content{ padding:10px 20px; color:#666;line-height:2;}
+ol.ul1A { margin-top:1em; margin-bottom:1em}
+ol.ul1A li{color:#F30; margin-bottom:1em}
+ol.ul1A li p{color:#666}
+ol.ul1A li p{ padding:.5em 0}
+
+.table1A{ table-layout:fixed; border:1px solid #d3e2e8; background:#fff; ; width:95%; margin:.5em 0 1em;}
+.table1A td,.table1A th{ border-collapse:collapse; border:1px solid #d3e2e8; padding:.5em 1em; vertical-align: top; font-weight:100;color:#666}
+.table1A th{ background:#f8f8f8; color:#333;}
+
+i{ color:#099}
+
+.s1{ color:#F00}
+.s2{ color:#F90}
+.s3{ color:#CC0}
+.s4{ color:#090}
+.s5{ color:#099}
+.s6{ color:#069}
+
+table{border-top:1px solid #ccc;border-right:1px solid #ccc;}
+table td{padding:5px;border-bottom:1px solid #ccc;border-left:1px solid #ccc;}

@@ -1,0 +1,91 @@
+/**loadmail页面样式*/
+.load-container {
+    display: table;
+    height: 100%;
+}
+
+.ci-load-option-checkbox {
+    display: inline-block;
+    margin: 5px;
+}
+
+.ci-load-progress-container {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.ci-load-report-errors {
+    border: solid #3c8dbc 1px;
+    border-radius: 3px;
+    overflow: auto;
+    height: 189px;
+}
+
+.progress {
+    height: 30px !important;
+    margin-bottom: 10px !important;;
+}
+
+.progress-bar {
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.ci-progress-bar-number {
+    color: green;
+}
+
+.ci-load-progress-time {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.ci-load-progress-count {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.ci-load-report-head {
+    border: solid #3c8dbc 1px;
+    border-radius: 3px;
+    height: 30px;
+    text-align: center;
+}
+
+.ci-load-report-text {
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+
+.ci-load-report-title {
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/**configuration组件样式*/
+.ci-load-configuration {
+    width: auto;
+    min-height: 0px;
+    max-height: none;
+}
+
+.ci-fieldset-configuration {
+    border: solid #3c8dbc 1px;
+    border-radius: 3px;
+    padding: 0px 5px 5px 5px;
+}
+
+.ci-title-configuration {
+    border-bottom: 0;
+    width: auto;
+    margin-left: 48px;
+    padding: 8px 8px 0px 8px;
+    font-size: 1px;
+    margin-bottom: auto
+}
+
+
+
+
+

@@ -1,0 +1,9 @@
+﻿
+.ui-helpdesk-talks-wellcome-container { background-image: none !important; padding:0em 0.5em 0 0.5em;}
+.ui-helpdesk-talks-wellcome-container .ui-helpdesk-talks-wellcome-userIcon {font-size:4em; padding:0.2em;float:left;margin:0 0.5em 0.5em 0;cursor:pointer;}
+.ui-helpdesk-talks-wellcome-container .ui-helpdesk-talks-wellcome-buttonsBox {text-align:center;margin:2em;}
+.ui-helpdesk-talks-wellcome-container button {font-size:150% !important;margin:0 auto 0 auto;}
+
+.image-model-box {width:90%;margin:0 auto 0 auto;}
+.image-model-box img {width:100%;}
+

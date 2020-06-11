@@ -1,0 +1,22 @@
+.glyphicons.btn-mini{
+	  padding: 6px 6px 1px 33px!important;
+	  margin-left: 5px!important;
+}
+.input-append .add-on:last-child, .input-append 
+.btn:last-child, .input-append .btn-group:last-child > .dropdown-toggle{
+	border-radius:1px!important;
+}
+
+.input-append .add-on, .input-prepend .add-on, 
+.input-append .btn, .input-prepend .btn, .input-append 
+.btn-group > .dropdown-toggle, .input-prepend .btn-group > .dropdown-toggle{
+	border-radius:1px!important;
+}
+.autocomplete{
+	width: 402px!important;
+}
+
+.campoObrigatorio:after {
+	color: #FF0000;
+	content: "*";
+}

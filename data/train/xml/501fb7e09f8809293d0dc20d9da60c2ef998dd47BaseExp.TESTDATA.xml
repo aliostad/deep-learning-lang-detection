@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<marionette_info>
+  <expected_messages>
+    <message type="starts_with">selection = 1 </message>
+    <message type="starts_with">selection = 2 </message>
+    <message type="starts_with">selection = 3 </message>
+    <message type="starts_with">selection = 4 </message>
+    <message type="starts_with">selection = 5 </message>
+    <message type="starts_with">selection = 6 </message>
+    <message type="starts_with">selection = 7 </message>
+    <message type="starts_with">selection = 8 </message>
+    <message type="starts_with">selection = 9 </message>
+    <message type="starts_with">selection = 10 </message>
+    <message type="whole_message">WARNING: Autoresetting selection object [at line 15]</message>
+  </expected_messages>
+</marionette_info>

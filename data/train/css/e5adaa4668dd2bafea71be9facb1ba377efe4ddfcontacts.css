@@ -1,0 +1,138 @@
+/*--------------------------------------------------------------------*/
+/*---------------------------Contact Page------------------------------*/
+/*--------------------------------------------------------------------*/
+/*global*/
+.feedback{
+    float: left;
+    width: 450px;
+    margin: 0 0 30px 0;
+}
+.write-to-us{
+    float: left;
+    width: 450px;
+    margin: 0 0 30px 0;
+}
+/*feedback*/
+.contacts-page-title{
+    height: 77px;
+    padding: 25px 0 0 0;
+    border-bottom: 1px solid #E1E1E1;
+    font: 30px 'DaxPro-Bold';
+    line-height: 1;
+}
+.feedback dl{
+    margin: 0 17px 0 0;
+}
+.feedback dt{
+    position: relative;
+    float: left;
+    width: 225px;
+    height: 40px;
+    padding: 12px 30px 0 0;
+    border-bottom: 1px solid #E1E1E1;
+    text-align: right;
+    font-size: 14px;
+}
+.feedback dd{
+    overflow: hidden;
+    padding: 10px 0 0 12px;
+    height: 40px;
+    border-bottom: 1px solid #E1E1E1;
+}
+.feedback dd:hover {
+    color: #F2602C;
+}
+.feedback span{
+    position: absolute;
+    top: 11px;
+    right: 0;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0px 0px 0 8px;
+    width: 18px;
+    height: 20px;
+    background: url(../images/spritebox-contacts-feedback.png) no-repeat;
+}
+.feedback .city-com span{
+    background-position: 2px 1px;
+}
+.feedback .life-com span{
+    background-position: -25px 2px;
+}
+.feedback .mts-com span{
+    background-position: -52px 2px;
+}
+.feedback .kievstar-com span{
+    background-position: -80px 0px;
+}
+.feedback .skype span{
+    background-position: -106px 0px;
+}
+.feedback .icq-link span{
+    background-position: -128px 0px;
+}
+/*write-to-us*/
+.write-to-us-title{
+    height: 77px;
+    padding: 26px 0 0 15px;
+    margin: 0 0 16px 0;
+    border-bottom: 1px solid #E1E1E1;
+    font-size: 24px;
+}
+.write-to-us-form{
+    margin: 0 0 0 15px;
+}
+.write-to-us-form label{
+    display: block;
+    margin: 0 0 7px 0;
+    font: 14px 'DaxPro-Bold';
+    text-transform: uppercase;
+    color: #F2602C;
+    line-height: 1;
+}
+.write-to-us-form .email input,
+.write-to-us-form .mail-subject input{
+    width: 100%;
+    padding: 10px 8px;
+    margin: 0 0 16px 0;
+    border: 1px solid #E1E1E1;
+}
+.write-to-us-form .mail-subject input{
+    margin: 0 0 18px 0;
+}
+.write-to-us-form .text-subject textarea{
+    width: 100%;
+    height: 255px;
+    overflow-y: auto;
+    margin: 0 0 20px 0;
+    padding: 5px;
+    border: 1px solid #E1E1E1;
+    resize: none;
+}
+.write-to-us-form .captcha{
+    margin: 0 0 30px 0;
+}
+.write-to-us-form .captcha input{
+    float: left;
+    width: 168px;
+    padding: 10px 8px;
+    border: 1px solid #E1E1E1;
+}
+.write-to-us-form .captcha img{
+    overflow: hidden;
+    margin: 0 0 0 10px;
+}
+.write-to-us-form .enter-form input{
+    font: 20px 'DaxPro-Bold';
+    color: #fff;
+    line-height: 1;
+    border: none;
+    padding: 11px 93px 13px 93px;
+ 
+}
+.write-to-us-form input:focus,
+.write-to-us-form textarea:focus{
+    outline: none;
+    border: 1px solid #FA902C;
+;    
+}

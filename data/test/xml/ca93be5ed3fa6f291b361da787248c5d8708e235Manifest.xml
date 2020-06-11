@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<component format="1" id="facebook-sdk">
+  <name>Facebook SDK</name>
+  <publisher>The Outercurve Foundation</publisher>
+  <publisher-url>http://csharpsdk.org</publisher-url>
+  <version>6.2.2</version>
+  <summary>Build great social experiences and get more installs by adding Facebook to your app.</summary>
+  <screenshots>
+    <img src="screenshots/screenshot1.png" title="screenshot1" />
+  </screenshots>
+  <samples>
+    <sample id="FacebookSample.iOS">
+      <name>iOS Sample Unified</name>
+      <summary>iOS Sample Unified</summary>
+    </sample>
+    <sample id="FacebookSample.iOS-Classic">
+      <name>iOS Sample Classic</name>
+      <summary>iOS Sample Classic</summary>
+    </sample>
+    <sample id="FacebookSample.Android">
+      <name>Android Sample</name>
+      <summary>Android Sample</summary>
+    </sample>
+  </samples>
+</component>

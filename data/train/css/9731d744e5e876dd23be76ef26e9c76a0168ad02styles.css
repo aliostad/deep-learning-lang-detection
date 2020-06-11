@@ -1,0 +1,99 @@
+/* RJS Web App Styles */
+
+/*
+Per Angularjs instructions
+https://angular-ui.github.io/bootstrap/
+*/
+.nav, .pagination, .carousel, .panel-title a{
+    cursor :pointer;
+}
+body{
+    background-image :none !important;
+}
+#container{
+    width            :100% !important;
+    background-image :none !important;
+}
+#sidebar{
+    display :none;
+}
+.st-sort-ascent:before{
+    content :'\25B2';
+}
+.st-sort-descent:before{
+    content :'\25BC';
+}
+@media (min-width :768px){
+    .wfc-modal-dialog .modal-dialog{
+        /*width :70%;*/
+    }
+    #wfc-rjs-container table{
+        font-size :12px;
+        /*width:1240px;*/
+        /*margin: 0 auto;*/
+    }
+    #wfc-rjs-container .table > thead > tr > th, #wfc-rjs-container .table > tbody > tr > td{
+        padding    :2px;
+        text-align :center;
+
+    }
+    .acf-fields > .acf-field.wfc-acf-message{
+        border-top :none;
+    }
+    .acf-fields > .acf-field.wfc-acf-message .acf-input-wrap{
+        overflow :visible;
+    }
+    .wfc-quick-field > li.acf-input input{
+        /*width :20px;*/
+    }
+    ul.wfc-quick-field{
+        width :135px !important;
+    }
+    .acf-field.wfc-quick-field .acf-label{
+        vertical-align :top;
+        margin         :0;
+    }
+    .wfc-quick-post-form .acf-form-submit{
+        float       :right;
+        padding-top :36px;
+    }
+    .wfc-quick-post-form .acf-field .acf-label label{
+        font-size :12px;
+        margin    :0;
+    }
+    .wfc-acf-first{
+        clear :left !important;
+    }
+    #post-load-tab .acf-fields > .acf-field{
+        padding :10px 12px
+    }
+    #post-load-tab .acf-label{
+        display:none;
+    }
+    #post-load-tab .acf-field input[type="text"], #post-load-tab .acf-field input[type="password"], #post-load-tab .acf-field input[type="number"], #post-load-tab .acf-field input[type="search"], #post-load-tab .acf-field input[type="email"], #post-load-tab .acf-field input[type="url"], #post-load-tab .acf-field textarea, #post-load-tab .acf-field select{
+        font-size   :11px;
+        line-height :12px;
+    }
+    .form-horizontal .control-label {
+        display: block;
+        text-align: left;
+        padding-left: 6px;
+    }
+    .modal-content {
+        padding: 10px;
+    }
+    .button, input, select, textarea {
+        margin: 6px;
+    }
+    .checkbox-inline+.checkbox-inline, .radio-inline+.radio-inline {
+
+        display: block;
+        margin-left: 0px;
+    }
+    .button, input, select, textarea {
+        padding-bottom: 13px;
+    }
+
+
+
+}

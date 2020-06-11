@@ -1,0 +1,7 @@
+questZone	escortShipType	escortPath	numAttackShipLists	attackShips1	attackShips2	attackShips3	attackShips4	attackShips5	attackShips6	attackShips7	attackShips8	attackPeriod	attackListType	numResponses	damageMultiplier	hateModifier	triggerEvent	triggerSplitCondition	triggerArg	triggerArg2	triggerOn	triggerEndsMission	triggerDelay	noDistancePolling	customDistanceMessages	destroyIsSuccess	autoReward	questDelay	_DESIGNER NOTES_	questSeries
+s	s	s	i	s	s	s	s	s	s	s	s	i	e(sequential=0,random=1)[sequential]	i	i	i	e(none=0,splitquest=1,surpriseattack=2)[none]	e(triggerOn=0,success=1,failure=2,both=3)[triggerOn]	s	s	i	i	i	i	i	i	i	i	s	s
+space_corellia	freightermedium_tier5	space_corellia:no_rank2_01_03_nav_01	3	blacksun_ace_s04_tier5	blacksun_bomber_ace_s04_tier5	blacksun_ace_s04_tier5						120	sequential	5	0	1000	splitquest	success	escort:no_rank2_01_04		-1	0	0	0	0	0	0	0		nova_orion
+		space_corellia:no_rank2_01_03_nav_02		blacksun_bomber_s01_tier5	blacksun_bomber_s02_tier5	blacksun_bomber_s02_tier5																								
+		space_corellia:no_rank2_01_03_nav_03		blacksun_heavy_fighter_tier5	blacksun_bomber_s02_tier5	blacksun_gunship_tier5																								
+		space_corellia:no_rank2_01_03_nav_04		blacksun_heavy_fighter_tier5	blacksun_dark_eclipse_tier5	blacksun_fighter_s03_tier5																								
+		space_corellia:no_rank2_01_03_nav_05				blacksun_fighter_s03_tier5																								

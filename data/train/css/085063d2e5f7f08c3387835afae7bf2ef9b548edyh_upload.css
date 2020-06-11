@@ -1,0 +1,58 @@
+/* Çå¸¡¶¯ */
+.clearFix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clearFix {
+    zoom: 1;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.upLoad_wrap {
+    width: 1000px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+
+.upLoad_button {
+    width: 200px;
+    height: 300px;
+}
+
+.upLoad_button input {
+    margin-top: 50px;
+}
+
+.upLoad_content {
+    width: 700px;
+    height: 300px;
+    border: 1px solid black;
+    margin-left: 50px;
+    margin-top: 50px;
+    overflow: auto;
+}
+.upLoad_content img{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.upLoad_button {
+    margin-top: 50px;
+}
+.upLoad_confirm{
+    margin-top:100px;
+    margin-left: 150px;
+}

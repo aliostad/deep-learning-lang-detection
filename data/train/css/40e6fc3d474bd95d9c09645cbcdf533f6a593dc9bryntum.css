@@ -1,0 +1,63 @@
+#north-region {
+    background: none;
+    
+    background-image   : url(../images/headBG.png);
+}
+
+#header-content {
+    background         : url(../images/bryntum-logo-16.jpg) no-repeat;
+    
+    color               : #0085bc;
+    
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 16px;
+    padding-left: 25px;
+}
+
+.notice {
+	float                  : left;
+	background-color       : transparent;
+}
+
+.notice p {
+     
+}
+
+.notice ul {
+	font-weight             : normal;
+    list-style-type         : disc;
+    text-align              : left;  
+}
+
+.notice ul li {
+    list-style              : disc inside;
+}
+
+#loading .title
+{
+    display:none;
+}
+
+.model-fields thead {
+    border-bottom:  1px solid black;
+    background-color: #d9e8fb;
+}
+
+.model-fields tbody td {
+    font-weight: normal !important;
+    color: #484848 !important;
+}
+
+.model-fields tbody tr:nth-child(even) {
+    background-color: #d9e8fb;
+}
+
+.model-fields tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.model-fields td,
+.model-fields th {
+    padding: 5px 20px 5px 5px !important;
+}

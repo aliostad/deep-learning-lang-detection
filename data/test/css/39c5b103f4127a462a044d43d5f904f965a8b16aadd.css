@@ -1,0 +1,218 @@
+@charset "utf-8";
+/* CSS Document */
+#add_button
+{
+	width:85px;
+	height:26px;
+	border:0px;
+	cursor:pointer;
+	background:url(../img/addModel/button-addParam.png) no-repeat;
+}
+#cancel_button
+{
+	width:85px;
+	height:26px;
+	border:0px;
+	cursor:pointer;
+	background:url(../img/addModel/button-cancel.png) no-repeat;
+}
+
+#add_button:hover
+{
+	background-image:url(../img/addModel/button-addParam-hover.png);
+}
+
+#cancel_button:hover
+{
+	background-image:url(../img/addModel/button-cancel-hover.png);
+}
+
+.search_input
+{
+	background:url(../img/addModel/searchParam-inputBox.png) no-repeat;
+	width:123px;
+	height:26px;	
+	border:0px;
+	font-family:微软雅黑;
+	font-size:14px;
+	line-height:16px;
+	padding:0 6px;
+	margin:12px 0 0 8px;
+}
+.search_input:hover
+{
+	background-image:url(../img/addModel/searchParam-inputBox-hover.png);
+}
+#search_button
+{
+	float:left;
+	background:url(../img/addModel/searchParam-searchButton.png) no-repeat;
+	width:33px;
+	height:25px;
+	border:0px;
+	cursor:pointer;
+	margin:13px 0 0 1px;	
+}
+
+#search_button:hover
+{
+	background-image:url(../img/addModel/searchParam-searchButton-hover.png);	
+}
+
+.cal_button
+{
+	width:23px;
+	height:23px;
+	cursor:pointer;
+	border:0px;
+	float:left;
+	margin:13px 0 0 2px;	
+}
+#left_paren
+{
+	background:url(../img/addModel/button-leftBracket.png) no-repeat;
+}
+#right_paren
+{
+	background:url(../img/addModel/button-rightBracket.png) no-repeat;
+}
+#add_cal
+{
+	background:url(../img/addModel/button-add.png) no-repeat;
+}
+#redu_cal
+{
+	background:url(../img/addModel/button-subtract.png) no-repeat;
+}
+#multi_cal
+{
+	background:url(../img/addModel/button-multiply.png) no-repeat;
+}
+#divi_cal
+{
+	background:url(../img/addModel/button-division.png) no-repeat;
+}
+#sin_cal
+{
+	background:url(../img/addModel/button-sin.png)no-repeat;
+}
+#cos_cal
+{
+	background:url(../img/addModel/button-cos.png) no-repeat;
+}
+#integral_cal
+{
+	background:url(../img/addModel/button-integral.png) no-repeat;
+}
+#even_add
+{
+	background:url(../img/addModel/button-sum.png) no-repeat;
+}
+#even_multi
+{
+	background:url(../img/addModel/button-quadrature.png) no-repeat;
+}
+#more_button
+{
+	background:url(../img/addModel/button-more.png) no-repeat;
+}
+#left_paren:hover
+{
+	background-image:url(../img/addModel/button-leftBracket-hover.png);
+}
+#right_paren:hover
+{
+	background-image:url(../img/addModel/button-rightBracket-hover.png);
+}
+#add_cal:hover
+{
+	background-image:url(../img/addModel/button-add-hover.png);
+}
+#redu_cal:hover
+{
+	background-image:url(../img/addModel/button-subtract-hover.png);
+}
+#multi_cal:hover
+{
+	background-image:url(../img/addModel/button-multiply-hover.png);
+}
+#divi_cal:hover
+{
+	background-image:url(../img/addModel/button-division-hover.png);
+}
+#sin_cal:hover
+{
+	background-image:url(../img/addModel/button-sin-hover.png);
+}
+#cos_cal:hover
+{
+	background-image:url(../img/addModel/button-cos-hover.png);
+}
+#integral_cal:hover
+{
+	background-image:url(../img/addModel/button-integral-hover.png);
+}
+#even_add:hover
+{
+	background-image:url(../img/addModel/button-sum-hover.png);
+}
+#even_multi:hover
+{
+	background-image:url(../img/addModel/button-quadrature-hover.png);
+}
+#more_button:hover
+{
+	background-image:url(../img/addModel/button-more-hover.png);
+}
+#merge_button
+{
+	margin:14px 0 0 30px;	
+	float:left;
+	width:73px;
+	height:22px;
+	border:0px;
+	cursor:pointer;
+	background:url(../img/addModel/button-combineFormula.png) no-repeat;
+}
+#merge_button:hover
+{
+	background-image:url(../img/addModel/button-combineFormula-hover.png);
+}
+
+#generate_button
+{
+	margin:14px 0 0 10px;	
+	float:left;
+	width:73px;
+	height:22px;
+	border:0px;
+	cursor:pointer;
+	background:url(../img/addModel/button-generateModel.png) no-repeat;
+}
+#generate_button:hover
+{
+	background-image:url(../img/addModel/button-generateModel-hover.png);
+}
+
+.data_span
+{
+	font-family:微软雅黑;
+	font-size:14px;
+	margin:2px 15px;
+	width:140px;
+	display:inline-block;
+	cursor:pointer;
+	text-align:center;
+	word-break:break-all;
+}
+.newdata_span
+{
+	font-family:微软雅黑;
+	font-size:14px;
+	margin:2px 15px;
+	width:110px;
+	display:inline-block;
+	cursor:pointer;
+	text-align:center;
+	word-break:break-all;
+}

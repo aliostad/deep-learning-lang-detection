@@ -1,0 +1,63 @@
+html, body { height: 100%; }
+.container { min-height: calc(100% - 200px); }
+body {
+  background-color: #ffe
+}
+
+#nav .navbar {
+  padding-bottom: 0px;
+  background-color: #E4E130;
+  border-bottom: 5px solid #a00;
+}
+
+#nav .navbar a.navbar-brand {
+  padding-bottom: 0px;
+}
+
+#nav ul.nav.navbar-nav a, ul.nav.navbar-nav a:visited {
+  color: #a00;
+}
+
+#nav ul.nav.navbar-nav a:focus, ul.nav.navbar-nav a:hover, ul.nav.navbar-nav a:active {
+  color: #a00;
+  background-color: #d4d120;
+}
+
+#navbar .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: #d4d120;
+}
+
+#nav .nav .caret{
+  border-top-color: #a00;
+  border-bottom-color: #a00;
+}
+
+#nav .nav .menu-box {
+  background-color: #a00;
+  color: #E4E130;
+  border: 1px solid #ffb;
+  padding: 2px 5px;
+  margin: 2px;
+}
+
+#nav .navbar h1 {
+  margin: 2px 0px 0px 0px;
+  padding: 0px;
+}
+
+#nav .navbar a.btn.btn-primary:hover {
+  background-color: #3275c1;
+}
+
+#nav ul.nav.navbar-nav {
+  margin-top: 30px;
+  font-size: 14pt;
+}
+
+li.veritcal-divider {
+  padding: 0px;
+  margin: 10px 0px 0px 0px;
+  height: 35px;
+  width: 1px;
+  border-left: 1px solid #ccc;
+}

@@ -1,0 +1,25 @@
+/* Power Reviews */
+
+.pr-snippet { margin-bottom: 10px; }
+.multiDetail .pr-snippet { margin-top: 15px; }
+.pr-snippet-wrapper { border: none; padding: 9px; }
+.pr-snippet-stars { background: transparent none; border: 0; padding: 0; margin-top: 1px; }
+.pr-snippet-write-first-review { padding-left: 1em; }
+.pr-snippet-rating-decimal, .pr-snippet-review-count { display: none; }
+.pr-snippet-read-write { font-size: 1em; clear: none; float: right; border: 0; margin: 0; padding: 0; background: transparent none; }
+.pr-snippet-read-write a.pr-snippet-link {color:#666;text-transform:uppercase;}
+.pr-facebook-like-snippet { display: none; }
+
+.pr-snapshot-head, .pr-snapshot-body, .pr-snapshot-body-wrapper, .pr-contents, .pr-contents-wrapper { border: none; background: transparent none; padding: 0; }
+.pr-snapshot-head { border: 1px solid #ccc; background: url(../images/boxBackground.png) repeat-x scroll left bottom #f9f9f9; margin-bottom: 10px; }
+.pr-snapshot-cobrand { display: none; }
+.pr-review-sort { background: url(../images/boxBackground.png) repeat-x scroll left bottom #f9f9f9; border-width: 1px; margin-top: 10px; border-color: #ccc; }
+.pr-review-count { font-weight: normal; line-height: 1.6em; }
+.pr-review-sort-wrapper { padding: .5em; }
+.pr-pagination-top, .pr-pagination-bottom { padding: .7em .9em; }
+.pr-review-tools a { font-weight: bold; }
+
+.prods .pr-snippet-wrapper { border: 0; background: transparent none; padding: 0; text-align: center; }
+.prods .pr-snippet-stars { background: transparent none; border: 0; padding: 0; float: none; margin: 2px 0; display: inline-block; }
+.prods .pr-snippet-read-write { display: none; }
+

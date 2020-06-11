@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1727, "Plugin Name", "4.1.1", "trunk", "4.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34332, 1727, "footer_code_append", "/footer-code.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (208786, 1727, "FooterCode", "__construct", "/options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (208787, 1727, "FooterCode", "admin_page", "/options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (208788, 1727, "FooterCode", "field_callback", "/options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (208789, 1727, "FooterCode", "admin_menu", "/options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (208790, 1727, "FooterCode", "admin_init", "/options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (208791, 1727, "FooterCode", "load_textdomain", "/options.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19006, 1727, "admin_menu", "array($this,'admin_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19007, 1727, "init", "array($this,'load_textdomain')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19008, 1727, "admin_init", "array($this,'admin_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19009, 1727, "wp_footer", "'footer_code_append'", 10, now(), now());

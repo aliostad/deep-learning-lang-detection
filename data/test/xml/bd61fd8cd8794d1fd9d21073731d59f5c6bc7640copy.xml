@@ -1,0 +1,31 @@
+<project>
+    <target name="copy">
+        <copy file="js/require.js" tofile="bin/js/require.js" />
+        <copy file="vendor/threejs/three.min.js" tofile="bin/vendor/threejs/three.min.js" />
+        <copy file="vendor/threex/rendererstats/threex.rendererstats.js" tofile="bin/vendor/threex/rendererstats/threex.rendererstats.js" />
+        <copy file="index.html" tofile="bin/index.html" />
+        <copy todir="bin/images">
+            <fileset dir="images">
+                <include name="**/*.png" />
+            </fileset>
+        </copy>
+        <copy todir="bin/audio">
+            <fileset dir="audio">
+                <include name="**/*.ogg" />
+            </fileset>
+        </copy>
+        <copy todir="bin/fonts">
+            <fileset dir="fonts">
+                <include name="**/*.ttf" />
+                <include name="**/*.woff" />
+                <include name="**/*.css" />
+            </fileset>
+        </copy>
+        <copy todir="bin/3d">
+            <fileset dir="3d">
+                <include name="**/*.png" />
+                <include name="**/*.js" />
+            </fileset>
+        </copy>
+    </target>
+</project>

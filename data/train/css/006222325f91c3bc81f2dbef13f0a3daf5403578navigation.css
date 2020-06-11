@@ -1,0 +1,62 @@
+/* @Navigation */
+.navbar { width: 100%; float: left; clear: both; }
+.nav-block { clear: both }
+.nav-block-title { font-weight: 400 } }
+
+/* =nav */
+.nav { margin: 0; }
+.nav li { list-style-type: none; margin-left: 0 }
+.nav ul { margin-left: 12px }
+/* @end Navigation */
+
+/* =nav-main */
+.nav-main li,
+.nav-main a { display: block; float: left; margin: 0; padding: 0 }
+.nav-main a { padding: 5px 10px; }
+.nav-main ul { margin-left: 0; }
+.nav-main ul li,
+.nav-main ul a { float: none; border: 0; }
+.nav-main a:hover {} 
+
+/* =gestione tendina */
+.nav-main li { position: relative; margin-bottom: 0; /* tendina */ }
+.nav-main ul {
+	position: absolute; z-index: 100000;
+	left: -99999em;
+	width: 160px; /* non necessario */
+	display: block; float: left;
+	padding: 0; margin: 0; /* tendina */
+}
+/*.nav-main ul,*/
+.nav-main li:hover > ul { left: 0; top: 100%;
+}
+/*.nav-main ul ul,*/
+.nav-main ul li:hover > ul { left: 100%; top: -1px;
+}
+/* =gestione apertura tendina a sinistra e a destra */
+/*.nav-main .right ul,*/
+.nav-main .right:hover > ul { left: auto; right: 0;
+}
+/*.nav-main .right ul ul,*/
+.nav-main .right li:hover > ul { left: auto; right: 100%;
+}
+.nav-main li { text-align: center; }
+.nav-main li li { text-align: left; }
+.nav-main .has-submenu { padding-right: 15px; }
+.nav-main ul .has-submenu {}
+.nav-main .right ul .has-submenu { padding-right: 10px; padding-left: 15px; }
+.nav-main .right li { text-align: right; }
+
+/* @Color */
+.nav-main a { border-right: 1px solid #ccc }
+.nav-main ul { background: #efefef; border: 1px solid #ccc }
+.nav-main a:hover { background-color: #fff; color: #000 } 
+.nav-main .has-submenu { background: url(../img/freccia_bottom.gif) no-repeat 97%; }
+.nav-main ul .has-submenu { background: url(../img/freccia_right.gif) no-repeat 97%; }
+.nav-main .right ul .has-submenu { background: url(../img/freccia_left.gif) no-repeat 2%; }
+/*
+.nav-main ul { left: 0; top: 100%;}
+.nav-main ul li:hover > ul { left: 100%; top: -1px;}
+.nav-main .right ul { left: auto; right: 0;}
+.nav-main .right ul ul { left: auto; right: 100%;}
+*/

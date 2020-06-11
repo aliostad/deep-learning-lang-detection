@@ -1,0 +1,5 @@
+questZone	navPoints	laps	specialTarget	triggerEvent	triggerSplitCondition	triggerArg	triggerArg2	triggerOn	triggerEndsMission	triggerDelay	autoReward	questDelay	_DESIGNER NOTES_	questSeries
+s	s	i[1]	s	"e(none=0,splitquest=1,surpriseattack=2)[none]"	"e(triggerOn=0,success=1,failure=2,both=3)[triggerOn]"	s	s	i	i	i	i	i	s	s
+space_naboo	space_naboo:stn_yavin4_smuggler_patrol_rt1_01	1		splitquest	triggerOn	destroy_surpriseattack:stn_yavin4_company_smuggler_tier2_3		2	0	20	0	0		
+	space_naboo:stn_yavin4_smuggler_patrol_rt1_02													
+	space_naboo:stn_yavin4_smuggler_patrol_rt1_03													

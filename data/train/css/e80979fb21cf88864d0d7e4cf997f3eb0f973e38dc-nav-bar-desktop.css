@@ -1,0 +1,86 @@
+.dc-nav-bar {
+  text-align: center;
+  height: 65px;
+}
+
+.dc-nav-bar-item, .dc-nav-bar-faq, .dc-nav-bar-about, .dc-nav-bar-contact, .dc-nav-bar-follow, .dc-nav-bar-twitter, .dc-nav-bar-facebook, .dc-nav-bar-x, .dc-nav-bar-x-1, .dc-nav-bar-x-2, .dc-nav-bar-x-3 {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  background-image: url("http://cdn.drinkingcinema.com/Images/buttons.jpg");
+  height: 65px;
+  position: relative;
+}
+.dc-nav-bar-item span, .dc-nav-bar-faq span, .dc-nav-bar-about span, .dc-nav-bar-contact span, .dc-nav-bar-follow span, .dc-nav-bar-twitter span, .dc-nav-bar-facebook span, .dc-nav-bar-x span, .dc-nav-bar-x-1 span, .dc-nav-bar-x-2 span, .dc-nav-bar-x-3 span {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  margin-top: -8px;
+  z-index: -1;
+  color: #ffffff;
+}
+
+.dc-nav-bar-faq {
+  background-position: -9px -367px;
+  width: 71px;
+}
+.dc-nav-bar-faq:hover, .dc-nav-bar-faq.selected {
+  background-position: -9px -8px;
+}
+
+.dc-nav-bar-about {
+  background-position: -130px -367px;
+  width: 107px;
+}
+.dc-nav-bar-about:hover, .dc-nav-bar-about.selected {
+  background-position: -130px -8px;
+}
+
+.dc-nav-bar-contact {
+  background-position: -290px -367px;
+  width: 157px;
+}
+.dc-nav-bar-contact:hover, .dc-nav-bar-contact.selected {
+  background-position: -290px -8px;
+}
+
+.dc-nav-bar-follow {
+  background-position: -502px -8px;
+  width: 135px;
+  cursor: default;
+}
+
+.dc-nav-bar-twitter {
+  background-position: -660px -8px;
+  width: 37px;
+  margin-left: 19px;
+  margin-right: 13px;
+}
+.dc-nav-bar-twitter:hover {
+  background-position: -660px -172px;
+}
+
+.dc-nav-bar-facebook {
+  background-position: -709px -8px;
+  width: 37px;
+}
+.dc-nav-bar-facebook:hover {
+  background-position: -709px -172px;
+}
+
+.dc-nav-bar-x, .dc-nav-bar-x-1, .dc-nav-bar-x-2, .dc-nav-bar-x-3 {
+  width: 15px;
+  margin: 0px 19px;
+}
+
+.dc-nav-bar-x-1 {
+  background-position: -100px -8px;
+}
+
+.dc-nav-bar-x-2 {
+  background-position: -257px -8px;
+}
+
+.dc-nav-bar-x-3 {
+  background-position: -468px -8px;
+}

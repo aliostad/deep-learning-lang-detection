@@ -1,0 +1,16 @@
+<module name="sampleModule" class="sample.module.SampleModule">
+
+    <Description>This is a sample module</Description>
+
+    <InFlow>
+        <handler name="SampleInFlowHandler" class="sample.module.handler.SampleInFlowHandler">
+            <order phase="SamplePhase" phaseFirst="true"/>
+        </handler>
+    </InFlow>
+
+    <OutFlow>
+        <handler name="SampleOutFlowHandler" class="sample.module.handler.SampleOutFlowHandler">
+            <order phase="SamplePhase" phaseFirst="true"/>
+        </handler>
+    </OutFlow>
+</module>

@@ -1,0 +1,42 @@
+
+h2 {
+    margin: 27px 0 16px 0;
+    color: #337;
+    font-weight: normal;
+}
+
+.dashboard-model {
+    width: 26%;
+    height: 70px;
+    background-color: #f3f3f3;
+    margin: 0 15px 15px 0;
+    padding: 15px;
+    float: left;
+}
+
+.dashboard-model h3 {
+    margin: 23px 0 4px 0;
+    color: #337;
+    font-weight: bold;
+}
+
+.dashboard-model.dark {
+    background-color: #605e6b;
+    color: #ccc;
+}
+
+.dashboard-model.dark h3 {
+    color: #fff;
+}
+
+.dashboard-model .fa {
+    font-size: 13px;
+}
+
+a .fa {
+    color: #999;
+}
+
+a .fa-play-circle {
+    padding-right: 5px;
+}

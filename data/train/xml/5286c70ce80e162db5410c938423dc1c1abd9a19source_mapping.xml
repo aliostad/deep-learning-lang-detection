@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbook>
+	<worksheet name="Sheet1">
+		<section startRow="0" endRow="0" />
+		<loop startRow="1" endRow="1" items="sourceList" var="source"
+			varType="com.isoftstone.tyw.entity.info.Source">
+			<section startRow="1" endRow="1">
+				<mapping row="1" col="0">source.id</mapping>
+				<mapping row="1" col="1">source.standardType</mapping>
+				<mapping row="1" col="2">source.standardName</mapping>
+				<mapping row="1" col="3">source.standardNo</mapping>
+				<mapping row="1" col="4">source.changeNo</mapping>
+				<mapping row="1" col="5">source.englishName</mapping>
+				<mapping row="1" col="6">source.editDepartment</mapping>
+				<mapping row="1" col="7">source.approveDepartment</mapping>
+				<mapping row="1" col="8">source.executeDate</mapping>
+				<mapping row="1" col="9">source.catalog</mapping>
+				<mapping row="1" col="10">source.goal</mapping>
+				<mapping row="1" col="11">source.scope</mapping>
+				<mapping row="1" col="12">source.description</mapping>
+				<mapping row="1" col="13">source.sourceType</mapping>
+				<mapping row="1" col="14">source.sortNo</mapping>
+			</section>
+			<loopbreakcondition>
+				<rowcheck offset="0">
+					<cellcheck offset="0">END</cellcheck>
+				</rowcheck>
+			</loopbreakcondition>
+		</loop>
+	</worksheet>
+</workbook> 

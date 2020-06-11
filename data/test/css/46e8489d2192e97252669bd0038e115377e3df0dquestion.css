@@ -1,0 +1,51 @@
+﻿.loadWrap {
+  overflow: hidden;
+}
+.loadWrap .loadInner {
+  width: 1179px;
+  margin-left: -8px;
+  padding-top: 31px;
+}
+.loadWrap .loadInner .item {
+  width: 345px;
+  padding: 0 15px;
+  border: 1px dashed #959595;
+  float: left;
+  margin: 12px 8px;
+  border-radius: 5px;
+}
+.loadWrap .loadInner .item .title {
+  font-size: 30.7px;
+  line-height: 76px;
+  border-bottom: 1px dotted #b0b0b0;
+}
+.loadWrap .loadInner .item a {
+  float: left;
+  width: 111px;
+  height: 44px;
+  text-align: right;
+  padding: 0 14px;
+  background-color: #00b7ee;
+  color: #fff;
+  font-size: 19.13px;
+  border-radius: 5px;
+  line-height: 43px;
+  margin: 21px 0;
+}
+.loadWrap .loadInner .item a:hover {
+  background-color: #3299de;
+}
+.loadWrap .loadInner .item .load {
+  margin-right: 48px;
+  margin-left: 6px;
+  background: #00b7ee url('../images/loadIcon.png') 14px center no-repeat;
+}
+.loadWrap .loadInner .item .preview {
+  background: #00b7ee url('../images/webIcon.png') 14px center no-repeat;
+}
+.question {
+  padding-top: 10px;
+  color: #1e1e1e;
+  line-height: 25px;
+}
+/*# sourceMappingURL=question.css.map */

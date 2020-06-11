@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+
+
+<hibernate-configuration>
+    <session-factory >
+
+		<!-- local connection properties -->
+		<!-- local connection will be put programmaticaly to be dynamic -->
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		
+		
+		<!-- property name="hibernate.connection.pool_size"></property -->
+
+		<!-- dialect for PostgreSQL -->
+        <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+       <property name="current_session_context_class">thread</property>
+        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.use_outer_join">true</property>
+        <property name="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
+        
+        <property name="hibernate.jdbc.batch_size">30</property>
+         
+        
+        <!-- mapping files for workspace level--> 
+        
+        <mapping resource="mapping/workspace/Project.hbm" />
+        
+        <!-- mapping files for terminological level--> 
+        
+        <mapping resource="mapping/terminological/Corpus.hbm" />
+        <mapping resource="mapping/terminological/Document.hbm" />
+		<mapping resource="mapping/terminological/Method.hbm" />
+		<mapping resource="mapping/terminological/Sentence.hbm" />
+		<mapping resource="mapping/terminological/TermProperty.hbm" />
+		<mapping resource="mapping/terminological/Term.hbm" />
+		<mapping resource="mapping/terminological/Terminology.hbm" />
+			    
+	    <mapping resource="mapping/terminological/TermSyntacticRelation.hbm" />
+		<mapping resource="mapping/terminological/OriginRelation.hbm" />
+		<mapping resource="mapping/terminological/TermRelation.hbm" />
+		<mapping resource="mapping/terminological/TypeRelation.hbm" />
+		<mapping resource="mapping/terminological/TermOccurrence.hbm" />
+		<mapping resource="mapping/terminological/TermSaillance.hbm" />
+		
+		
+		<mapping resource="mapping/terminological/TermAnnotation.hbm" />
+		<mapping resource="mapping/terminological/TerminoAnnotationType.hbm" />
+		
+		
+		
+		<!-- mapping files for terminoontological level management -->		
+		
+		<mapping resource="mapping/terminoontological/TerminoOntology.hbm" />
+	
+		<mapping resource="mapping/terminoontological/TerminoConcept.hbm" />
+		<mapping resource="mapping/terminoontological/TerminoConceptRelation.hbm" />
+		<mapping resource="mapping/terminoontological/TcCollection.hbm" />
+		<mapping resource="mapping/terminoontological/TerminoConceptOccur.hbm" />
+		<mapping resource="mapping/terminoontological/TypeRelationTC.hbm" />
+		<mapping resource="mapping/terminoontological/TerminoProperty.hbm" />
+
+		<mapping resource="mapping/terminoontological/TerminoConceptRelationMember.hbm" />
+		<mapping resource="mapping/terminoontological/TerminoConceptRole.hbm" />
+		
+		<mapping resource="mapping/terminoontological/TerminoOntoAnnotationType.hbm" />
+		<mapping resource="mapping/terminoontological/TerminoConceptAnnotation.hbm" />
+		<mapping resource="mapping/terminoontological/TerminoConceptRelationAnnotation.hbm" />
+		<mapping resource="mapping/terminoontological/TypeRelationTcAnnotation.hbm" />
+		
+		
+		
+		
+		<!-- mapping files for ontological level management -->		
+		
+		<mapping resource="mapping/ontological/BasicDatatype.hbm" />
+		<mapping resource="mapping/ontological/Classe.hbm" />
+		<mapping resource="mapping/ontological/ClassInstance.hbm" />
+		<mapping resource="mapping/ontological/DatatypeProperty.hbm" />
+		<mapping resource="mapping/ontological/ObjectProperty.hbm" />
+		<mapping resource="mapping/ontological/Ontology.hbm" />
+		<mapping resource="mapping/ontological/OntoAnnotationType.hbm" />
+		<mapping resource="mapping/ontological/ClassAnnotation.hbm" />
+		<mapping resource="mapping/ontological/ObjectPropertyAnnotation.hbm" />
+		<mapping resource="mapping/ontological/DataTypePropertyAnnotation.hbm" />
+		
+		<mapping resource="mapping/ontological/Enumeration.hbm" />
+		<mapping resource="mapping/ontological/EnumerationValue.hbm" />
+		<mapping resource="mapping/ontological/ConstraintAllValueFrom.hbm" />
+		<mapping resource="mapping/ontological/ConstraintHasValue.hbm" />
+		<mapping resource="mapping/ontological/ConstraintHighThan.hbm" />
+		<mapping resource="mapping/ontological/ConstraintLessThan.hbm" />
+		<mapping resource="mapping/ontological/ConstraintLike.hbm" />
+		<mapping resource="mapping/ontological/ConstraintMinMax.hbm" />
+		<mapping resource="mapping/ontological/ConstraintOneOf.hbm" />
+		<mapping resource="mapping/ontological/ConstraintSomeValueFrom.hbm" />
+		
+		
+		
+		
+
+    </session-factory>
+</hibernate-configuration>

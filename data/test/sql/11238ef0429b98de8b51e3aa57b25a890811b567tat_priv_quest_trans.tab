@@ -1,0 +1,3 @@
+questZone	navPoints	laps	specialTarget	triggerEvent	triggerSplitCondition	triggerArg	triggerArg2	triggerOn	triggerEndsMission	triggerDelay	autoReward	questDelay	_DESIGNER NOTES_	questSeries
+s	s	i[1]	s	"e(none=0,splitquest=1,surpriseattack=2)[none]"	"e(triggerOn=0,success=1,failure=2,both=3)[triggerOn]"	s	s	i	i	i	i	i	s	s
+space_lok	space_lok:corellia_privateer_tier3_recovery_point_5	1		splitquest	success	assassinate:tat_priv_quest_trans		1	1	2	0	0	Single Point Patrol to simulate a missed meeting.	pilot_profession

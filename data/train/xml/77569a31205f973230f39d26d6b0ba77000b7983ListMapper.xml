@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.quotation.web.sample.service.ListService">
+
+    <select id="findList" resultType="com.quotation.web.sample.entity.SampleEntity" parameterType="com.quotation.core.bean.BaseParam">
+        SELECT
+            SAMPLE_UID AS sampleUid,
+            SAMPLE_ID AS sampleId,
+            SAMPLE_CODE AS sampleCode,
+            SAMPLE_CONTENT AS sampleContent,
+            CREATED_BY AS createdBy,
+            CREATED_DATE AS createdDate,
+            UPDATED_BY AS updatedBy,
+            UPDATED_DATE AS updatedDate,
+            VERSION AS version
+        FROM
+            QUOTATION.SAMPLE_LIST
+        ORDER BY
+            SAMPLE_ID
+    </select>
+    <select id="findPageListCount" parameterType="com.quotation.core.bean.BaseParam" resultType="int">
+        SELECT
+        COUNT (1)
+        FROM
+        QUOTATION.SAMPLE_LIST
+        <where>
+            <if test="filters.sampleUid!=null and filters.sampleUid!=''">
+                AND SAMPLE_UID = #{filters.sampleUid}
+            </if>
+        </where>
+    </select>
+    <select id="findOne" resultType="com.quotation.web.sample.entity.SampleEntity" parameterType="com.quotation.core.bean.BaseParam">
+        SELECT
+            list.SAMPLE_UID AS sampleUid,
+            list.SAMPLE_ID AS sampleId,
+            list.SAMPLE_CODE AS sampleCode,
+            list.SAMPLE_CONTENT AS sampleContent,
+            list.CREATED_BY AS createdBy,
+            list.CREATED_DATE AS createdDate,
+            list.UPDATED_BY AS updatedBy,
+            list.UPDATED_DATE AS updatedDate,
+            list.VERSION AS version
+        FROM
+          QUOTATION.SAMPLE_LIST list
+        <where>
+            <if test="filters.sampleUid!=null and filters.sampleUid!=''">
+                AND list.SAMPLE_UID = #{filters.sampleUid}
+            </if>
+        </where>
+    </select>
+
+    <insert id="insertOne" parameterType="com.quotation.web.sample.entity.SampleEntity">
+        INSERT INTO QUOTATION.SAMPLE_LIST(
+            SAMPLE_UID
+          , SAMPLE_ID
+          , SAMPLE_CODE
+          , SAMPLE_CONTENT
+          , CREATED_BY
+          , CREATED_DATE
+          , UPDATED_BY
+          , UPDATED_DATE
+          , VERSION
+        ) VALUES (
+            #{sampleUid,jdbcType=VARCHAR}
+          , #{sampleId,jdbcType=INTEGER}
+          , #{sampleCode,jdbcType=VARCHAR}
+          , #{sampleContent,jdbcType=VARCHAR}
+          , #{createdBy,jdbcType=INTEGER}
+          , #{createdDate,jdbcType=TIMESTAMP}
+          , #{updatedBy,jdbcType=INTEGER}
+          , #{updatedDate,jdbcType=TIMESTAMP}
+          , #{version,jdbcType=INTEGER}
+        )
+    </insert>
+
+    <select id="findMaxId" resultType="com.quotation.web.sample.entity.SampleEntity" parameterType="com.quotation.core.bean.BaseParam">
+        SELECT
+          coalesce(max(SAMPLE_ID), 0) + 1 AS sampleId
+        FROM
+          QUOTATION.SAMPLE_LIST
+    </select>
+
+    <update id="updateOne" parameterType="com.quotation.web.sample.entity.SampleEntity">
+        UPDATE
+            QUOTATION.SAMPLE_LIST
+        SET
+            SAMPLE_CODE = #{sampleCode}
+          , SAMPLE_CONTENT = #{sampleContent}
+          , UPDATED_BY = #{updatedBy}
+          , UPDATED_DATE = #{updatedDate}
+          , VERSION = VERSION + 1
+        WHERE
+        SAMPLE_UID = #{sampleUid}
+    </update>
+
+    <delete id="deleteOne" parameterType="com.quotation.web.sample.entity.SampleEntity">
+        DELETE FROM QUOTATION.SAMPLE_LIST
+        WHERE SAMPLE_UID = #{sampleUid}
+    </delete>
+</mapper>

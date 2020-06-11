@@ -1,0 +1,159 @@
+.header-nav-container {}
+#nav {}
+
+/************** ALL LEVELS  *************/ /* Style consistent throughout all nav levels */
+#nav li {
+	position: relative;
+	text-align: left;
+	margin-right: 1px;
+}
+
+#nav li.over {
+	z-index: 999;
+}
+
+#nav a, #nav a:hover, #nav a:active, #nav a:focus {
+	display: block;
+	text-decoration: none;
+}
+
+#nav span {
+	display: block;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+#nav li ul span {
+	white-space: normal;
+}
+
+/************ 0 LEVEL  ***************/
+#nav li {
+	float: left;
+	padding-right: 1px;
+}
+
+#nav li.parent {
+background: url(../images/nav-sep.png) no-repeat center right;
+list-style: none;
+padding-top: 1px;
+padding-right: 1px;
+}
+
+#nav li.parent li.parent {
+	/* background: url(../images/mainnav-parent-arrow-2.gif) no-repeat right center; */
+}
+
+#nav a {
+	float: left;
+	text-decoration: none;
+	padding: 0 0 0 5px;
+	line-height: 30px;
+	color: #454545;
+	font-weight: bold;
+	font-size: 100%;
+	text-transform: uppercase;
+}
+
+#nav a span {
+	float: left;
+	display: block;
+	padding: 0 10px 0 0;
+	line-height: 35px;
+}
+
+#nav li.active a {
+	color: #FFFFFF;
+	/* background: url(../images/mainnav-active-parent.gif) no-repeat left #BF4F14; */
+}
+
+#nav li.active a span {
+	background: url(../images/nen_02.png) no-repeat center bottom;
+}
+
+#nav li.over a, #nav a:hover, #nav a:active, #nav a:focus, #nav a.over,
+#nav li.active a:hover, #nav li.active a:active, #nav li.active a:focus {
+	color: #FFFFFF;
+	/* background: url(../images/mainnav-hover-parent.gif) no-repeat left; */
+}
+
+#nav li.over a span, #nav a.over span, #nav a:hover span, #nav a:active span, #nav a:focus span,
+#nav li.active a:hover span, #nav li.active a:active span, #nav li.active a:focus span {
+	background: url(../images/nen_02.png) no-repeat center bottom;
+}
+
+/************ 1ST LEVEL ************/
+#nav ul li,
+#nav ul li.active {
+	float: none;
+	margin: 0;
+	padding:0;
+}
+
+/*#nav ul li.over { background:#d5e4eb url(../images/nav_divider.gif) repeat-x 0 100%; }*/
+
+#nav ul li.last {
+	padding-bottom: 0;
+}
+
+#nav ul a,
+#nav ul a:hover, #nav ul a.over {
+	float: none;
+	background: none;
+}
+
+#nav ul a span,
+#nav ul a:hover span, #nav ul a.over span {
+	float: none;
+	display: inline;
+}
+
+
+#nav ul li a, #nav ul li a span {
+	font-weight: normal !important;
+	line-height: normal !important;
+	background: none !important;
+}
+
+/************ 2ND LEVEL ************/
+#nav ul {
+	position: absolute;
+	width: 15em;
+	top: 35px;
+	left: -10000px;
+	border: 1px solid #fff;
+	border-top: 0;	
+	background: #1596E0;
+}
+
+#nav ul li {
+	border-bottom: 1px dotted #CCC;
+	border-right: 0;
+	background: none;
+	width: 100%;
+}
+
+/* Show menu */
+#nav li.over > ul { left:0; }
+#nav li.over > ul li.over > ul { left:150px; }
+#nav li.over ul ul { left:-10000px; }
+
+#nav ul li a,  #nav li.active li a {
+	border: none;
+	margin: 0;
+	color: #fff;
+	background: url(../images/blank.png);
+	font-size: 100%;
+	text-transform: none;
+	padding: 7px 15px;
+}
+
+#nav ul li a:hover, #nav ul li a:active, #nav ul li a:focus, #nav ul li a.over {
+	background: #333333 !important;
+	color: #FFFFFF;
+}
+
+/************ 3RD+ LEVEL ************/
+#nav ul ul { top: 5px; }
+
+

@@ -1,0 +1,69 @@
+.view_viewSelectionDialogClass {
+    width: 450px;
+}
+
+.view_viewSelectionDialog_titleIcon {
+    display: inline;
+    background: url('/images/magnify.png') no-repeat;
+    width: 16px;
+    height: 16px;
+}
+
+.view_viewSelectionDialog_titleIcon:before {
+    content: '.....';
+    visibility: hidden;
+}
+
+.view_viewSelectionDialog_actionButtonsContainer {
+    height: 35px !important;
+}
+
+.view_viewSelectionDialog_tabContainerClass {
+    width: 100%;
+    height: 250px;
+}
+
+.dijitContentPane.view_viewSelectionDialog_tabPaneClass {
+    padding: 10px;
+}
+
+.view_viewSelectionDialog_layoutTableLayout {
+    width: 100%;
+}
+
+.view_viewSelectionDialog_layoutTableRow {
+    width: 100%;
+}
+
+.view_viewSelectionDialog_layoutTableCellFullWidth {
+    width: 100%;
+    padding: 5px;
+}
+
+.view_viewSelectionDialog_gridSelectedColumn {
+    padding-left: 15px;
+}
+
+.view_viewSelectionDialog_gridCaptionColumn {
+    padding-left: 5px;
+}
+
+.view_viewSelectionDialog_grid {
+    width: 100%;
+    height: 200px;
+}
+
+.view_viewSelectionDialog_valueRangeTableClass {
+    width: 100%;
+}
+
+.view_viewSelectionDialog_valueRangeTableRow { }
+
+.view_viewSelectionDialog_valueRangeTableCellLeft {
+    width: 100px;
+    padding: 15px;
+}
+
+.view_viewSelectionDialog_valueRangeTableCellCenter {
+    padding: 15px;
+}

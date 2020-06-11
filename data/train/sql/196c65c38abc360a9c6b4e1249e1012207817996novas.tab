@@ -1,0 +1,49 @@
+$fsdbVersion check=plicompileNoArgs call=plitaskVersion
+$fsdbSubstituteHier check=plicompileSubstituteHier call=plitaskSubstituteHier
+$fsdbDumpfile check=plicompileDumpfile call=plitaskDumpfile 
+$fsdbDumpvars check=plicompileDumpvars call=plitaskDumpvars misc=plimiscFSDB acc=read,callback_all:*
+$fsdbDumpSC   check=plicompileDumpSC   call=plitaskDumpSC   misc=plimiscFSDB acc=read,callback_all:*
+$fsdbDumpPattern check=plicompileDumpPattern call=plitaskDumpPattern misc=plimiscFSDB acc=read,callback_all:*
+$fsdbDumpvarsES  check=plicompileDumpvarsES call=plitaskDumpvarsES misc=plimiscFSDB acc=read,callback_all:*
+$fsdbDumpvarsToFile check=plicompileDumpvarsToFile call=plitaskDumpvarsToFile  misc=plimiscFSDB acc=read,callback_all:*
+$fsdbSwitchDumpfile check=plicompileSwitchFile call=plitaskSwitchFile 
+$fsdbAutoSwitchDumpfile check=plicompileAutoSwitchFile call=plitaskAutoSwitchFile 
+$fsdbDumpon check=plicompileNoArgs call=plitaskDumpon misc=plimiscDumpon 
+$fsdbDumpoff check=plicompileNoArgs call=plitaskDumpoff 
+$fsdbDumpflush check=plicompileNoArgs call=plitaskDumpflush
+$fsdbDumplimit check=plicompileDumplimit call=plitaskDumplimit
+$fsdbDumpStrength check=plicompileDumpStrength call=plitaskDumpStrength
+$fsdbDumpMem check=plicompileDumpMem call=plitaskDumpMem misc=plimiscDumpMem acc=read,callback_all:*
+$fsdbDumpMemNow check=plicompileDumpMem call=plitaskDumpMemNow misc=plimiscDumpMem acc=read,callback_all:*
+$fsdbDumpMemInFile check=plicompileDumpMemInFile call=plitaskDumpMemInFile misc=plimiscDumpMem acc=read,callback_all:*
+$fsdbDumpMemInScope check=plicompileDumpMemInScope call=plitaskDumpMemInScope misc=plimiscDumpMem acc=read,callback_all:*
+$fsdbDumpMDA check=plicompileDumpMDA call=plitaskDumpMDA misc=plimiscDumpMem acc=read,callback_all:*
+$fsdbDumpMDANow check=plicompileDumpMDA call=plitaskDumpMDANow misc=plimiscDumpMem acc=read,callback_all:*
+$fsdbDumpMDAInScope check=plicompileDumpMDAInScope call=plitaskDumpMDAInScope misc=plimiscDumpMem acc=read,callback_all:*
+$fsdbDumpFinish check=plicompileNoArgs call=plitaskDumpFinish
+$fsdbInteractive check=plicompileNoArgs call=plitaskInteractive misc=plimiscInteractive 
+$fsdbDisplay check=plicompileDisplay call=plitaskDisplay misc=plimiscFSDB acc=read,callback_all:*
+$fsdbSuppress check=plicompileSuppress call=plitaskSuppress
+$fsdbTest call=plitaskTest
+$fsdbDebug check=plicompileDebug call=plitaskDebug
+$debussy check=plicompileDebussy call=plitaskDebussyVCS 
+$vericom check=plicompileVericom call=plitaskVericom
+$db_breakatline check=plicompileLineBreak call=plitaskLineBreak
+$db_breakonceatline check=plicompileLineBreak call=plitaskOnceLineBreak
+$db_deletelinebreak check=plicompileDeleteLineBreak call=plitaskDeleteLineBreak
+$db_showlinebreak check=plicompileNoArgs call=plitaskShowLineBreak
+$db_setfocus check=plicompileSetFocus call=plitaskSetFocus
+$db_deletefocus check=plicompileDeleteFocus call=plitaskDeleteFocus
+$db_enablefocus check=plicompileEnableFocus call=plitaskEnableFocus
+$db_disablefocus check=plicompileDisableFocus call=plitaskDisableFocus
+$db_stopatfocus check=plicompileNoArgs call=plitaskStopAtFocus
+$fsdbDumpOVA check=plicompileDumpOVA call=plitaskDumpOVA misc=plimiscFSDB acc=read:*
+$fsdbDumpOVAon call=plitaskDumpOVAon
+$fsdbDumpOVAoff call=plitaskDumpOVAoff
+$fsdbDumpSVA check=plicompileDumpSVA call=plitaskDumpSVA misc=plimiscFSDB acc=read:*
+$fsdbDumpSVAon call=plitaskDumpSVAon
+$fsdbDumpSVAoff call=plitaskDumpSVAoff
+$fsdbDumpPSL check=plicompileDumpPSL call=plitaskDumpPSL misc=plimiscFSDB acc=read:*
+$fsdbRecSVAasTrans check=plicompileRecSVAasTrans call=plitaskRecSVAasTrans misc=plimiscFSDB acc=read:*
+$fsdbDumpPSLon call=plitaskDumpPSLon
+$fsdbDumpPSLoff call=plitaskDumpPSLoff

@@ -1,0 +1,46 @@
+/* settings page */
+div#icon-api-manager {
+	background:url(../img/apimanager-icon.png) no-repeat 0 0;
+}
+
+#api-key-rows {
+	margin: 0 0 10px;
+}
+
+.api-key-row input.remove-key {
+	background:url(../img/key-remove.png) no-repeat 0 0;
+	width: 16px;
+	height: 16px;
+	margin: 0 0 0 7px;
+	padding: 0;
+	border: none;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+
+.api-key-row input.key-duplicate {
+	border-color: #A00000;
+	-moz-box-shadow: 0 0 5px #A00000;
+	-webkit-box-shadow: 0 0 5px#A00000;
+	box-shadow: 0 0 5px #A00000;
+}
+
+input#api-clone {
+	background:url(../img/key-add.png) no-repeat 5px 2px;
+    padding: 0 10px 1px 27px;
+    margin: 0 0 0 5px;
+}
+
+div.inner-form-options {
+	margin:0 0 20px 0;
+}
+
+div.akm-sidebox {}
+
+div.akm-sidebox hr {
+	margin: 1em 0;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}

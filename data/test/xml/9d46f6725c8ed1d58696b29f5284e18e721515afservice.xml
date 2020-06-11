@@ -1,0 +1,12 @@
+<service auto-start="false">
+    <name>ChatService</name>
+    <public-id>ns://www.cubeia.com/chat/service</public-id>
+    <contract>com.cubeia.firebase.service.chat.ChatServiceContract</contract>
+    <service>com.cubeia.firebase.service.chat.local.LocalChat</service>
+    <dependencies>
+    	<contract>com.cubeia.firebase.server.service.systemstate.SystemStateServiceContract</contract>
+    	<contract>com.cubeia.firebase.service.messagebus.MBusContract</contract>
+    </dependencies>
+    <description />
+    <exported />
+</service>

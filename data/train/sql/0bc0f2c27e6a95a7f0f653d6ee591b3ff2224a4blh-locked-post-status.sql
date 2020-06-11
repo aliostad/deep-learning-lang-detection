@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2485, "LH Locked Post Status", "4.1", "0.01", "3.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349308, 2485, "LH_locked_post_status_plugin", "append_post_status_list", "/lh-locked-post-status.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349309, 2485, "LH_locked_post_status_plugin", "display_locked_state", "/lh-locked-post-status.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349310, 2485, "LH_locked_post_status_plugin", "protect_locked_posts", "/lh-locked-post-status.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349311, 2485, "LH_locked_post_status_plugin", "current_user_can_view", "/lh-locked-post-status.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349312, 2485, "LH_locked_post_status_plugin", "__construct", "/lh-locked-post-status.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349313, 2485, "LH_locked_post_status_plugin", "create_locked_custom_post_status", "/lh-locked-post-status.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27012, 2485, "init", "array($this,'create_locked_custom_post_status')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27013, 2485, "admin_footer-post.php", "array($this,'append_post_status_list')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9038, 2485, "display_post_states", "array($this,'display_locked_state')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9039, 2485, "map_meta_cap", "array($this,'protect_locked_posts')", 9, now(), now());

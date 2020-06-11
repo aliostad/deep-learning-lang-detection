@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages nplurals='2' plural="n==1 ? 0 : 1">
+
+    <message id='wc.captcha.Get_audio'>Get audio</message>
+    <message id='wc.captcha.Get_image'>Get image</message>
+    <message id='wc.captcha.Internal_error'>Internal error</message>
+    <message id='wc.captcha.Too_often'>Too frequent attempts</message>
+    <message id='wc.captcha.Wrong_response'>Wrong response</message>
+
+    <message id='wc.common.Update'>Update</message>
+
+    <message id='wc.time.days'>days</message>
+    <message id='wc.time.hours'>hours</message>
+    <message id='wc.time.interval_template'>from ${min} to ${max}</message>
+    <message id='wc.time.minutes'>minutes</message>
+    <message id='wc.time.seconds'>seconds</message>
+    <message id='wc.time.weeks'>weeks</message>
+
+    <message id='wc.wbi.Cancel'>Cancel</message>
+    <message id='wc.wbi.Download'>Download</message>
+    <message id='wc.wbi.Error_empty'>The field cannot be empty</message>
+    <message id='wc.wbi.Error_invalid'>The input is invalid</message>
+    <message id='wc.wbi.Error_parsing'>Options parsing error: {1}</message>
+    <message id='wc.wbi.Error_runtime'>Runtime error: {1}</message>
+    <message id='wc.wbi.Error_too_large'>The file is too large</message>
+    <message id='wc.wbi.Finished'>Finished</message>
+    <message id='wc.wbi.Finished_errors'>Finished with errors</message>
+    <message id='wc.wbi.Inputs'>Inputs</message>
+    <message id='wc.wbi.New'>New</message>
+    <message id='wc.wbi.Outputs'>Outputs</message>
+    <message id='wc.wbi.Queued'>Queued</message>
+    <message id='wc.wbi.Run'>Run</message>
+    <message id='wc.wbi.State_is'>State: {1}</message>
+    <message id='wc.wbi.View'>View</message>
+    <message id='wc.wbi.Working'>Working</message>
+
+</messages>
+

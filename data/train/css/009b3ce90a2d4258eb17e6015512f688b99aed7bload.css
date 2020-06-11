@@ -1,0 +1,156 @@
+/* ========================================================================== */
+/*                        FORMULAIRE DE MODIFICATION                          */
+/* ========================================================================== */
+
+form.load fieldset
+{
+    border: 1px solid #663366;
+    background-color: #E9E4F1;
+    margin: 0.5em;
+}
+
+form.load fieldset legend
+{
+    font-weight: bold;
+    /*color: #663366;*/
+    color: #FFF;
+    padding: 0.05em 0.5em 0.1em 0.5em;
+    background-color: #663399;
+}
+
+/* DEBUT patch pour IE */
+/* lorsqu'on applique une couleur de fond à un fieldset, IE fait déborder la couleur au dessus du bord haut.
+pour corriger ça, on décale la légende vers le bas */ 
+
+form.load fieldset
+{
+    position: relative;
+    margin-top: 2em;
+}
+html>body form.load fieldset
+{    
+    margin-top: 1em;
+}
+form.load legend
+{
+    position: relative;
+    top: -0.6em;
+} 
+/* FIN patch pour IE */
+
+form.load div
+{
+    clear: left;
+    margin-bottom: 1px;
+}
+
+form.load label.text,
+form.load label.textarea
+{
+/*  font-weight: bold;*/
+    width: 8em;
+    float: left;
+    text-align: left;
+    padding-right: 1em;
+}
+
+form.load input.text,
+form.load textarea
+{
+    border: 1px solid #a0a0a0;
+    font-size: 1em;
+    font-family: 'courier new', monospace;
+    padding: 0.2em 0.2em 0.2em 0.2em;
+}
+
+form.load input.fullwidth,
+form.load textarea.fullwidth
+{
+    width: 52em;
+    max-width: 95%;
+}
+
+form.load fieldset div input.fullwidth,
+form.load fieldset div textarea.fullwidth
+{
+    width: 43.5em;
+    max-width: 78.8%;
+}
+
+form.load div.checklist,
+form.load div.radiolist
+{
+    width: 100%;
+    padding: 0;
+}
+
+form.load input.text:focus,
+form.load textarea:focus,
+form.load input.text:active,
+form.load textarea:active
+{
+    background-color: #FFEFEF;
+}
+
+form.load fieldset.mandatory legend,
+form.load label.mandatory
+{
+/*  color: #FF0000;*/
+/*    background-image: url('loc.png');*/
+/*    background-image: url('/asco/web/FabWeb/images/famfamfam/sylk/asterisk_orange.png');*/
+/*
+        background-image: url('arrow_right.gif');
+    
+    background-repeat: no-repeat;
+    background-position: top left;
+    text-indent: 20px;
+*/
+/*    padding-left: 20px;*/
+}
+
+/* Zones de saisie obligatoire */
+textarea.mandatory,
+input.text.mandatory
+{
+    border: 1px solid red!important;
+}
+/* Supprime le style appliqué pour les input.text.mandatory (pour IE) */
+input.mandatory.radio
+{
+    border: 0px !important;
+}
+label.mandatory
+{
+    font-weight: bold;
+}
+
+/* Lien vers l'aide à la saisie */
+a.help
+{
+    padding-left: 11px;
+    padding-top: 1px;
+    background: url('help.png') no-repeat center center;
+}
+
+/* Texte du lien vers l'aide caché - remplacé par une image */
+a.help span
+{
+    display: none;
+}
+
+/* Liste des doublons potentiels */
+form.load #DuplicatesContainer
+{
+    display: none;
+    border: 2px solid #000;
+    background-color: #eee;
+    padding: 0em;
+    margin-top: 1em;
+}
+
+/* Liste des doublons potentiels : bouton Fermer */
+form.load #DuplicatesContainer button
+{
+   float: right;
+   margin: 1em 1em 0 0;
+}

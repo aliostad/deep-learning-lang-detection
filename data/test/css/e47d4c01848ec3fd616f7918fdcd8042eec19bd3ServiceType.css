@@ -1,0 +1,22 @@
+﻿#ServiceTypeBinding table thead tr .ServiceTypeCode {
+  width: 33%;
+}
+#ServiceTypeBinding table thead tr .ServiceTypeName {
+  width: 33%;
+}
+#ServiceTypeBinding table thead tr .ServiceTypeDiscription {
+  width: 33%;
+}
+#ServiceTypeBinding #ServiceTypeEditor {
+  margin-top: 15px;
+}
+#ServiceTypeBinding #ServiceTypeEditor .detailsContainer {
+  width: 100%;
+}
+#ServiceTypeBinding #ServiceTypeEditor .detailsContainer .detailsHeaderSection {
+  float: left;
+  width: 85%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=ServiceType.css.map */

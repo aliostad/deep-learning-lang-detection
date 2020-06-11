@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+if [ $(whoami) != root ]; then
+    echo >2& "[ERROR] Should be root to perform this action."
+    exit 1
+fi
+
+# the user you want uploading images to this repo should have read/write access
+REPO_USER=${REPO_USER-jenkins}
+REPO_USER_HOME=$(runuser -l ${REPO_USER} -s /usr/bin/bash -c "echo \$HOME")
+REPO_DIR=${REPO_DIR-${REPO_USER_HOME}/virt-builder/repo}
+INDEX_FILE=${REPO_DIR}/index
+
+runuser -l ${REPO_USER} -s /usr/bin/bash -c "mkdir -p ${REPO_DIR}"
+runuser -l ${REPO_USER} -s /usr/bin/bash -c"touch ${INDEX_FILE}"
+
+cat > /etc/virt-builder/repos.d/local.conf << EOF
+[${REPO_USER}]
+uri=file://${INDEX_FILE}
+proxy=off
+EOF

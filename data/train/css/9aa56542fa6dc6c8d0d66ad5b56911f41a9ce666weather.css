@@ -1,0 +1,61 @@
+.show-temperature-container {
+    border: 0.1em solid;
+    border-radius: 0.9em;
+    padding: 0.4em;
+    width: 30em;
+}
+
+/***/
+
+.show-temperature-location {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.show-temperature-date {
+    font-size: 0.6em;
+}
+
+/***/
+
+.show-temperature-body {
+}
+
+.show-temperature-body > div {
+    float: left;
+    height: 10em;
+    width: 33%;
+}
+
+.show-temperature-body > div > div {
+    position: relative;
+    top: 20%;
+}
+
+.show-temperature-body img {
+    width: 10em;
+    height: 10em;
+}
+
+.show-temperature-temperature {
+    font-size: 2em;
+}
+
+.show-temperature-main {
+    font-size: 1.2em;
+}
+
+.show-temperature-description {
+    font-size: 0.9em;
+}
+
+.show-temperature-extra {
+}
+
+/***/
+
+.show-temperature-clear {
+    clear: both;
+}
+
+/***/

@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (610, "Bop Search Box Item Type For Nav Menus", "4.1", "1.1.0", "3.4", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (10591, 610, "bop_nav_search_box_item", "/init.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54910, 610, "Bop_Nav_Search_Box_Item", "wp_update_nav_menu_item", "/init.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54911, 610, "Bop_Nav_Search_Box_Item", "admin_init", "/init.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54912, 610, "Bop_Nav_Search_Box_Item", "init", "/init.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54913, 610, "Bop_Nav_Search_Box_Item", "walker_nav_menu_start_el", "/init.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54914, 610, "Bop_Nav_Search_Box_Item", "__construct", "/init.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54915, 610, "Bop_Nav_Search_Box_Item", "wp_setup_nav_menu_item", "/init.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54916, 610, "Bop_Nav_Search_Box_Item", "admin_enqueue_styles_and_scripts", "/init.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54917, 610, "Bop_Nav_Search_Box_Item", "add_nav_menu_meta_box", "/init.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54918, 610, "Bop_Nav_Search_Box_Item", "search_meta_box_render", "/init.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (6011, 610, "admin_enqueue_scripts", "array($this,'admin_enqueue_styles_and_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (6012, 610, "init", "array($this,'init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (6013, 610, "admin_init", "array($this,'admin_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (6014, 610, "wp_update_nav_menu_item", "array($this,'wp_update_nav_menu_item')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (2035, 610, "wp_setup_nav_menu_item", "array($this,'wp_setup_nav_menu_item')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (2036, 610, "walker_nav_menu_start_el", "array($this,'walker_nav_menu_start_el')", 1, now(), now());

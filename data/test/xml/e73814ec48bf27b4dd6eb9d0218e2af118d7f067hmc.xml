@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+	<!--
+		[y] hybris Platform Copyright (c) 2000-2014 hybris AG All rights
+		reserved. This software is the confidential and proprietary
+		information of hybris ("Confidential Information"). You shall not
+		disclose such Confidential Information and shall use it only in
+		accordance with the terms of the license agreement you entered into
+		with hybris.
+	-->
+<configuration xmlns="hybris.de/schemas/hmc/generic"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="hybris.de/schemas/hmc/generic hmc.xsd">
+
+
+	<!-- Configuration for extension mobileoptionals -->
+
+
+
+<!--  Barcode optionals -->
+
+	<type name="ContentPage" mode="append">
+		<organizer>
+			<editor mode="append">
+				<tabref idref="mobile-barcode" />
+			</editor>
+		</organizer>
+	</type>
+
+<!-- Removed voucher support see: ACC-2599, ACC-2202
+	<type name="Voucher" mode="append">
+		<organizer>
+			<editor mode="append">
+				<tabref idref="mobile-barcode" />
+			</editor>
+		</organizer>
+	</type>
+-->
+	<type name="AbstractPromotion" mode="append">
+		<organizer>
+			<editor mode="append">
+				<tabref idref="mobile-barcode" />
+			</editor>
+		</organizer>
+	</type>
+	
+	
+	<!-- text/sms optionals-->
+	<type name="MobileReceiveAndSendVoucherAction" mode="append">
+		<organizer mode="append">
+			<result defaultview="list" mode="append">
+				<listview mode="append">
+					<itemlayout mode="append">
+						<attribute name="voucher" width="200" mode="append" />
+					</itemlayout>
+				</listview>
+				<treeview mode="append">
+					<itemlayout mode="append">
+						<attribute name="voucher" width="200" mode="append" />
+					</itemlayout>
+				</treeview>
+			</result>
+			<editor mode="append">
+				<tab name="text.sms" mode="append">
+					<section name="text.voucher">
+						<listlayout>
+							<attribute name="voucher" width="150" />
+							<attribute name="message" width="200" />
+						</listlayout>
+					</section>
+				</tab>
+			</editor>
+		</organizer>
+	</type>
+
+</configuration>

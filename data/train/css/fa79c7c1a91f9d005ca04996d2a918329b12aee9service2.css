@@ -1,0 +1,308 @@
+/* original
+.services_page_title{
+    padding: 10px 0px 5px 30px;
+    font-size:20px;
+    font-weight:bolder;
+    background-color:#ccc;
+}
+.services_page_title #title_category{
+    font-size:20px;
+    font-weight:bolder;
+}
+*/
+/* app-spec */
+.page_title{
+    color: #36361B;
+    font-family: "Trebuchet MS",Arial Black,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    height: 35px;
+    line-height: 25px;
+}
+/* end app-spec */
+
+input:focus,
+textarea:focus,
+select:focus{
+    background-color:lightyellow;
+    -moz-box-shadow: 5px 5px 5px #ccc;
+    -webkit-box-shadow: 5px 5px 5px #ccc;
+    -box-shadow: 5px 5px 5px #ccc;
+}
+
+/* copy from application_evergreen.css due to firefox css length limit */
+.explanation {
+    background: none repeat scroll 0 0 #f3f3f3;
+    border: 1px solid #ddd;
+    color: #333333;
+    margin: 10px 0;
+    padding: 10px;
+}
+.constraint{ 
+    display:inline-block;
+    vertical-align: top;
+    background: none repeat scroll 0 0 lightyellow;
+    border: 1px solid #ddd;
+    color: #333333;
+    margin: 4px 5px;;
+    padding: 5px;
+}
+
+.services_page_content{
+    padding:20px 20px;
+}
+.services_page_content label{
+    display:inline-block;
+    margin:5px 0px 5px 20px;
+    float:none;
+    text-align: right;
+    width:auto;
+    text-transform:none;
+}
+.services_page_content input,
+.services_page_content textarea{
+    margin: 5px 5px 5px 0px;
+}
+.services_page_content span.om-contact-icon-button a{ color:navy; } /* app-spec */
+
+.services_search_box{
+    width:100%;
+    height: 30px;
+    padding: 0px 0px 10px 0px;
+}
+#search_text{
+    font-size:12px;
+}
+
+.services_bread_crumb{
+    padding-top:10px;
+}
+.services_list{
+    padding-bottom:10px;
+    /* max-height:470px;
+    overflow: auto; */    /* page length limit */
+}
+
+.service_head .service_registration_status{float:right; margin:0px 10px 0px 0px; font-weight:bold; font-style:italic;}
+.service_head .service_capacity{float:right; margin:0px 10px 0px 0px;}
+.service_head .service_capacity span{font-weight:bold; font-style:italic;}
+.service_body{ border:1px solid #ccc; }
+.service_body .label{display:inline-block; min-width:100px;}
+.service_body .item{ margin:15px; padding:5px; background-color:#eee; }
+.service_body .item_title{ font-style:italic; color:#555; }
+.service_body .item .label{margin-left:20px; display:inline-block; min-width:100px;}
+
+.service_left_links { float:left; }
+.service_right_links { float:right; }
+.services_left_links a{ float:left; margin-right:20px; }
+.services_right_links a{ float:right; }
+
+.services_operation_links{
+    padding:10px 10px;
+    margin-bottom:5px;
+}
+.services_operation_links a{
+    font-size: 15px;
+}
+
+.bread_crumb a{ font-style:italic; color:navy }
+.service_registration_status{ float:left; }
+#service-registration-new-dialog-form .select_registrant{margin-left:50px}
+
+
+
+/*--------- form builder */
+.service_form_builder_tools{
+    padding:5px;
+    margin-left:680px;
+    width:200px;
+    height:520px;
+}
+
+.service_form_builder_tools #edit_validation label{float:none; width:auto; margin:5px 0px 5px 5px; font-size:12px; display:inline-block;}
+.service_form_builder_tools #edit_validation input{float:none; margin:5px 5px 5px 5px; display:inline-block;}
+.service_form_builder_tools #edit_validation select{float:none; width:95px; margin:5px 5px 5px 5px; padding:2px; display:inline-block;}
+.service_form_builder_tools #edit_content input[type="text"] { width:90%; font-size:14px;}
+.service_form_builder_tools #edit_validation .non_negative_integer{width:35px; padding:2px;}
+.service_form_builder_tools #edit_validation .unlimited_non_negative_integer{width:80px; padding:2px;}
+
+.service_form_builder_view{
+    padding:5px;
+    float:left;
+    width:670px;
+    height:520px;
+}
+
+.service_form_builder_tabs{
+    height:520px;
+}
+.service_form_builder_tabs .tab_content_options{
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight:bold;
+}
+.service_form_builder_tabs .tab_content_options span label{
+    float:none;
+    width:auto;
+    font-size:13px;
+    margin:0px 10px 0px 20px;
+}
+.service_form_builder_tabs .tab_content_options span input{
+    display:inline;
+}
+.service_form_builder_tabs .tab_content{
+    height:410px;
+    overflow:auto;
+    color:black;
+}
+.service_form_builder_tabs .tab_content label{
+  width: 10em;
+  float: left;
+  text-align: right;
+  margin-right: 10px;
+  display: block;
+}
+
+.service_customization_form li {padding:5px 0px;}
+.service_customization_form li label{ font-size:13px; text-align:right; float:left; display:block; width:150px; line-height: 100%; margin:10px 10px 0px 20px; text-transform:none;}
+.service_customization_form li input{ display:inline-block; font:-webkit-small-control;}
+.service_customization_form li textarea{ display:inline-block;}
+.service_customization_form li select{ display:inline-block; width:280px; height:30px;}
+.service_customization_form.editable_list li:hover {cursor:move; background-color: #bbb}
+.service_customization_form.editable_list .editing{background-color: #ddd}
+
+.required{color:green}
+
+/* for adjusting jquery UI component*/
+#service_form_builder_nav{ height:32px; }
+#service_form_builder_nav a{cursor:pointer;}
+.service_leaf{ background:none; background-color:green}
+.dialog{ display:none; }
+.anytime-pkr .anytime-cur-btn{background: none;}
+
+/* app-spec */
+.item-list-actions-wrapper{ right:42px; }
+.service_form_builder_tabs .tab_content li:hover .item-list-actions-wrapper {display:block;}
+#admin-edit-em textarea {width:96%; height:100px;}
+/* end app-spec */
+
+
+/*----------------- service form --------------------*/
+.service_form .disabled{ color:#ccc }
+.service_form{
+}
+
+.service_form .part{
+    margin: 15px 0px;
+}
+
+.service_form .show_part{ border-top: 1px solid #aaa }
+
+/* title */
+.service_form h3{
+    font-size:16px;
+    font-family:"Trebuchet MS";
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    height:25px;
+    padding: 5px 0 0 20px;
+    margin: 0px 0 10px 0;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    
+}
+.service_form .edit_part h3{
+    background: #B8CE6C;
+    text-shadow: 1px 1px 1px #666;
+    color: #fff;
+}
+.service_form .show_part h3{
+    color: green;  
+}
+.service_form .service_right_links{ margin-right:20px; }
+.service_form .update_links span.om-contact-icon-button a{ color:white; } /* app-spec */
+.service_form .show_part .update_links{ display:none; }
+.service_form .edit_part .edit_links{ display:none; }
+
+
+/* show body */
+.service_form .edit_part .show_body{ display:none; }
+.service_form .show_body{
+}
+.service_form .show_body span{
+    font-size:13px;
+}
+.service_form .show_body .item{
+    margin: 0px 0px 10px 20px;
+    background-color:#eee;
+    padding: 5px;
+}
+.service_form .show_body .field{
+    margin: 0px 0px 0px 20px;
+}
+.service_form .show_body .label{
+    margin: 0px 0px 0px 0px;
+    display:block;
+    float:left;
+    width:100px;
+    vertical-align: top;
+}
+.service_form .show_body .value{
+    display:block;
+    margin-left:110px;
+}
+.service_form .item_title{
+    font-weight:bolder;
+    font-size:16px;
+    font-style:italic;
+    color:#555;
+}
+.blank_sign{ color:#aaa }
+#service_capacity{ width:80px; }
+
+
+/* edit body */
+.service_form .show_part .edit_body{ display:none; }
+.service_form .edit_body .field select{ margin:5px 0px 2px 0px; }
+.service_form .edit_body label{
+    font-size:13px;
+    float:left;
+    line-height: 100%;
+    width:150px;
+    text-align:right;
+    margin:10px 10px 0px 20px;
+}
+.service_form .edit_body input{
+    font-size:13px;
+    display:block;
+}
+
+#service_description{ width:400px; }
+
+.service_section_form .delete_service_section,
+.service_section_form .remove_service_section{float:right; display:none;} /* .remove_service_section not in use */
+.service_section_form .remove_service_section label{width:auto; margin:0px 5px; float:left;} /* not in use */
+.service_section_form .remove_service_section input{width:auto; margin:0px; float:left;} /* not in use */
+
+.service_form .edit_body .service_sections_recurrence_checkbox{ float:left; margin:10px 10px 0px 0px }
+.service_sections_recurrence_fields{display:none;}
+.service_sections_recurrence_interval span{
+    float:left;
+    font-size:13px;
+    line-height: 100%;
+    font-weight:bold;
+    color:#555;
+    margin:10px 5px 0px 0px
+}
+.service_sections_recurrence_interval .numeric{
+    float:left;
+    width:30px;
+    padding:3px;
+    font-size:13px;
+    line-height: 100%;
+    font-weight:bold;
+    color:#555;
+}
+
+

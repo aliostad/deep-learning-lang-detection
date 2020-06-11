@@ -1,0 +1,90 @@
+div[data-angular-treeview] {
+  /* prevent user selection */
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+}
+
+div[data-tree-model] ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+}
+div[data-tree-model] ul ul {margin-left: 15px;}
+
+div[data-tree-model] li {
+  position: relative;
+  line-height: 22px;
+  display: block;
+  white-space: nowrap;
+  border-top: 1px solid #ccc;
+}
+
+div[data-tree-model] li i
+{margin: 0 1px 0 0; padding: 0; width: 14px; height: 17px; display: inline-block; vertical-align: middle; float: left; line-height: 22px;}
+
+div[data-tree-model] li img
+{  height: 16px;}
+
+
+div[data-tree-model] li .expanded {
+  background-image: url("/images/menu_arrow.png");
+  background-repeat: no-repeat;
+  background-position: 0 -36px;
+}
+
+div[data-tree-model] li .collapsed {
+  background-image: url("/images/menu_arrow.png");
+  background-repeat: no-repeat;
+  background-position: 0 6px;
+}
+
+div[data-tree-model] li .normal {
+}
+
+div[data-tree-model] li i, div[data-tree-model] li span {
+  cursor: pointer;
+}
+
+div[data-tree-model] li .selected {
+  font-weight: bold;
+}
+
+div.table1{
+    display:table;
+
+    border-color:#3A87AD;
+    width:100%;
+    border-collapse: collapse;
+
+
+}
+
+ div.row{
+  width: 100%;
+  text-align:center;
+    line-height: 22px;
+    border-color:#B94A48;
+}
+
+ div.cell{
+    display:inline-block;
+    border-left:1px solid #ccc;
+    border-top:1px solid #ccc;
+    width:25%;
+    box-sizing: border-box;
+
+}
+ div.cell:last-child{
+    border-right:1px solid #ccc;
+}
+
+.thead .cell{
+    font-weight: bold;
+}
+.row.red .cell {background-color: #F6BABA;}
+.row.green .cell {background-color: #D2F6BA;}

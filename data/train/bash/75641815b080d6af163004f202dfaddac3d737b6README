@@ -1,0 +1,174 @@
+#!/bin/bash -e -u
+
+# test the prepend-history-without-sha-mod feature of git
+
+# https://git.wiki.kernel.org/articles/g/r/a/GraftPoint_2c06.html
+
+# Though I'd never heard of this feature of git before, it does make
+# complete sense from a "real world use case" point of view. If it's
+# true, it's money. It's even more money if this feature is also
+# available in hg (that's a stretch goal).
+#
+# Before assuming that this will solve all our problems, I want to
+# see it work for myself. This script will do that verification.
+# Roughly, we'll:
+#   - create an "old repo" as a git repo
+#   - export the tip of that as "last old system"
+#   - create a "new repo" from just that import
+#   - make changes to the "new repo"
+#   - create a "blended repo" of old and new
+#   - verify shasums match for code in both new repo & blended repo
+#   - make changes in new repo, and pull them into blended rep
+#       - does this work?
+#   - make changes in blended repo and push to new repo:
+#       - does this work?
+#       - does it push just new or history upstream?
+
+# Simple, right? Start with the boilerplate
+
+DIR_TO_USE=${DIR_TO_USE:-$PWD}
+
+warn() { for m; do echo "$m"; done 1>&2 ; }
+die() { warn "$@"; exit 1; }
+
+test -d $DIR_TO_USE || die "Not a directory: '$DIR_TO_USE'"
+
+
+#   - create an "old repo" as a git repo
+OLD_REPO=$DIR_TO_USE/01-old_repo
+if ! test -d $OLD_REPO; then
+    mkdir $OLD_REPO
+    cd $OLD_REPO
+    git init
+    # create some files - no variation in content
+    echo "file 1" > file_1
+    git add file_1
+    git commit -m "added file 1"
+    echo "file 1" >> file_1
+    echo "file 2" > file_2
+    git add file_2
+    git commit -a -m "added file 2"
+    for i in 1 2; do echo "$i$i$i$i" >> file_$i; done
+    git commit -a -m "final mods"
+fi
+
+#   - export the tip of that as "last old system"
+EXPORT_DIR=$DIR_TO_USE/02-export_directory
+if ! test -d $EXPORT_DIR; then
+    mkdir $EXPORT_DIR
+    cp $OLD_REPO/* $EXPORT_DIR
+fi
+
+#   - create a "new repo" from just that import
+NEW_REPO=$DIR_TO_USE/03-new_repo
+if ! test -d $NEW_REPO; then
+    cp -a $EXPORT_DIR $NEW_REPO
+    cd $NEW_REPO
+    git init
+    git add *
+    git commit -m "initial import for new repo"
+fi
+
+#   - make changes to the "new repo"
+if test -r $NEW_REPO/file_1; then
+    cd $NEW_REPO
+    git rm file_1
+    echo "keeping file 2" >> file_2
+    git commit -a -m "removed one file, modified another"
+fi
+
+#   - create a "blended repo" of old and new
+BLEND_REPO=$DIR_TO_USE/04-blended_repo
+if ! test -d $BLEND_REPO; then
+    mkdir $BLEND_REPO
+    cd $BLEND_REPO
+    # we need a packed copy of the old repo
+    git clone $OLD_REPO old_repo
+    cd old_repo
+    git repack -ad  # repack doesn't honor --git-dir or --work-tree
+                    # options
+    cd -
+    # and a copy of the new repo
+    git clone $NEW_REPO blended_repo
+    # and now we do the graft
+    # istructions at http://progit.org/2010/03/17/replace.html are much
+    # clearer, and uses the newer 'replace' command instead of directly
+    # munging files in .git/
+    cd blended_repo
+    git remote add history ../old_repo
+    git fetch history --keep
+    # in the real case, we'll always be working with two known
+    # repositories, so the hashes can be hard coded.
+    # during testing, the hashes do change, so I compute them. They are
+    # computed based on the cannonical repos, not the local ones, to
+    # show they really are GUIDs
+    last_commit_in_old_repo=$(git --git-dir $OLD_REPO/.git log --oneline | head -1 | cut -d\  -f1)
+    first_commit_in_new_repo=$(git --git-dir $NEW_REPO/.git log --oneline | tail -1 | cut -d\  -f1)
+    git replace $first_commit_in_new_repo $last_commit_in_old_repo
+    cd -
+fi
+#   - verify shasums match for code in both new repo & blended repo
+last_commit_in_new_repo=$(git --git-dir $NEW_REPO/.git log --oneline | head -1 | cut -d\  -f1)
+last_commit_in_blended_repo=$(git --git-dir $BLEND_REPO/blended_repo/.git log --oneline | head -1 | cut -d\  -f1)
+test $last_commit_in_blended_repo = $last_commit_in_new_repo
+
+first_commit_in_old_repo=$(git --git-dir $OLD_REPO/.git log --oneline | tail -1 | cut -d\  -f1)
+first_commit_in_blended_repo=$(git --git-dir $BLEND_REPO/blended_repo/.git log --oneline | tail -1 | cut -d\  -f1)
+test $first_commit_in_blended_repo = $first_commit_in_old_repo
+
+#   - make changes in new repo, and pull them into blended rep
+#       - does this work?
+pull_from_upstream=$DIR_TO_USE/05_pull_from_upstream
+if ! test -d $pull_from_upstream; then
+    mkdir $pull_from_upstream
+    cd $pull_from_upstream
+    # clone new and blended so we can make local changes
+    git clone $NEW_REPO new_repo
+    git clone $BLEND_REPO/blended_repo blended_repo
+    cd new_repo
+    echo "file 3" >> file_3
+    git add file_3
+    git commit -m "add file 3"
+    cd -
+    cd blended_repo
+    git remote add --mirror=fetch local_new ../new_repo
+    git pull local_new master
+    cd -
+    #   - verify shasums match for code in both new repo & blended repo
+    last_commit_in_new_repo=$(git --git-dir new_repo/.git log --oneline | head -1 | cut -d\  -f1)
+    last_commit_in_blended_repo=$(git --git-dir blended_repo/.git log --oneline | head -1 | cut -d\  -f1)
+    test $last_commit_in_blended_repo = $last_commit_in_new_repo
+fi
+
+#   - make changes in blended repo and push to new repo:
+#       - does this work?
+#       - does it push just new or history upstream?
+push_to_upstream=$DIR_TO_USE/06_push_to_upstream
+if ! test -d $push_to_upstream; then
+    mkdir $push_to_upstream
+    cd $push_to_upstream
+    # clone new and blended so we can make local changes
+    git clone --bare $NEW_REPO new_repo
+    git clone $BLEND_REPO/blended_repo blended_repo
+    cd blended_repo
+    git remote add --mirror=fetch local_new ../new_repo
+    echo "file 4" >> file_4
+    git add file_4
+    git commit -m "add file 4"
+    git push local_new
+    cd -
+    cd new_repo
+    cd -
+    #   - verify shasums match for code in both new repo & blended repo
+    last_commit_in_new_repo=$(git --git-dir new_repo log --oneline | head -1 | cut -d\  -f1)
+    last_commit_in_blended_repo=$(git --git-dir blended_repo/.git log --oneline | head -1 | cut -d\  -f1)
+    test $last_commit_in_blended_repo = $last_commit_in_new_repo
+
+    # we don't expect the grafted history to be pushed
+    first_commit_in_new_repo=$(git --git-dir new_repo log --oneline | tail -1 | cut -d\  -f1)
+    first_commit_in_blended_repo=$(git --git-dir blended_repo/.git log --oneline | tail -1 | cut -d\  -f1)
+    test $first_commit_in_blended_repo != $first_commit_in_old_repo
+fi
+
+echo "SUCCESS by eyeball!!"
+

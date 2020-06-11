@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <service_name>Ustream.TV</service_name>
+  <service_bbcode>ustream,ustreamtv,ustream.tv</service_bbcode>
+  <service_regex><![CDATA[https?://[\w\.]*?ustream\.tv/channel/(?P<sval1>[\w-]+)]]></service_regex>
+  <service_url><![CDATA[http://www.ustream.tv/channel/{serviceVAL1}]]></service_url>
+  <service_callback>EWRrio_Services_Ustream</service_callback>
+  <service_channel>dumpChannel</service_channel>
+  <service_streams>dumpStreams</service_streams>
+  <service_video><![CDATA[<iframe width="100%" height="100%" scrolling="no" frameborder="0" src="http://www.ustream.tv/embed/{serviceVAL2}?autoplay=true"></iframe>]]></service_video>
+  <service_chat><![CDATA[<iframe width="100%" height="100%" scrolling="no" frameborder="0" src="http://www.ustream.tv/socialstream/{serviceVAL2}"></iframe>]]></service_chat>
+</service>

@@ -1,0 +1,122 @@
+/* A container should group your entire grid. */
+.container {
+	min-width: 950px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.container .grid {
+	display: inline;
+	float: left;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-bottom: 5em;
+}
+
+
+.container .grid_1 { width: 2.15%; }
+.container .grid_2 { width: 6.3%; }
+.container .grid_3 { width: 10.45%; }
+.container .grid_4 { width: 14.6%; }
+.container .grid_5 { width: 18.75%; }
+.container .grid_6 { width: 22.9%; }
+.container .grid_7 { width: 27.05%; }
+.container .grid_8 { width: 31.2%; }
+.container .grid_9 { width: 35.35%; }
+.container .grid_10 { width: 39.5%; }
+.container .grid_11 { width: 43.65%; } 
+.container .grid_12 { width: 47.8%; }
+.container .grid_13 { width: 51.95%; }
+.container .grid_14 { width: 56.1%; }
+.container .grid_15 { width: 60.25%; }
+.container .grid_16 { width: 64.4%; }
+.container .grid_17 { width: 68.55%; }
+.container .grid_18 { width: 72.7%; }
+.container .grid_19 { width: 76.85%; }
+.container .grid_20 { width: 81%; }
+.container .grid_21 { width: 85.15%; }
+.container .grid_22 { width: 89.3%; }
+.container .grid_23 { width: 93.45%; }
+.container .grid_24 { width: 97.6%; }
+
+.container .prepend_1 { padding-left: 4.15%; }	
+.container .prepend_2 { padding-left: 8.3%; }	
+.container .prepend_3 { padding-left: 12.45%; }	
+.container .prepend_4 { padding-left: 16.6%; }	
+.container .prepend_5 { padding-left: 20.75%; }	
+.container .prepend_6 { padding-left: 24.9%; }	
+.container .prepend_7 { padding-left: 29.05%; }	
+.container .prepend_8 { padding-left: 33.2%; }	
+.container .prepend_9 { padding-left: 37.35%; }	
+.container .prepend_10 { padding-left: 41.5%; }	
+.container .prepend_11 { padding-left: 45.65%; }	
+.container .prepend_12 { padding-left: 49.8%; }	
+.container .prepend_13 { padding-left: 53.95%; }	
+.container .prepend_14 { padding-left: 58.1%; }	
+.container .prepend_15 { padding-left: 62.25%; }	
+.container .prepend_16 { padding-left: 66.4%; }	
+.container .prepend_17 { padding-left: 70.55%; }	
+.container .prepend_18 { padding-left: 74.7%; }	
+.container .prepend_19 { padding-left: 78.85%; }	
+.container .prepend_20 { padding-left: 83%; }	
+.container .prepend_21 { padding-left: 87.15%; }	
+.container .prepend_22 { padding-left: 91.3%; }	
+.container .prepend_23 { padding-left: 95.45%; }	
+.container .prepend_24 { padding-left: 99.6%; }	
+
+.container .append_1 { padding-right: 4.15%; }	
+.container .append_2 { padding-right: 8.3%; }	
+.container .append_3 { padding-right: 12.45%; }	
+.container .append_4 { padding-right: 16.6%; }	
+.container .append_5 { padding-right: 20.75%; }	
+.container .append_6 { padding-right: 24.9%; }	
+.container .append_7 { padding-right: 29.05%; }	
+.container .append_8 { padding-right: 33.2%; }	
+.container .append_9 { padding-right: 37.35%; }	
+.container .append_10 { padding-right: 41.5%; }	
+.container .append_11 { padding-right: 45.65%; }	
+.container .append_12 { padding-right: 49.8%; }	
+.container .append_13 { padding-right: 53.95%; }	
+.container .append_14 { padding-right: 58.1%; }	
+.container .append_15 { padding-right: 62.25%; }	
+.container .append_16 { padding-right: 66.4%; }	
+.container .append_17 { padding-right: 70.55%; }	
+.container .append_18 { padding-right: 74.7%; }	
+.container .append_19 { padding-right: 78.85%; }	
+.container .append_20 { padding-right: 83%; }	
+.container .append_21 { padding-right: 87.15%; }	
+.container .append_22 { padding-right: 91.3%; }	
+.container .append_23 { padding-right: 95.45%; }	
+.container .append_24 { padding-right: 99.6%; }	
+
+
+/* Misc classes and elements
+-------------------------------------------------------------- */
+
+/* Use a .box to create a padded box inside a column.  */ 
+.box { 
+  padding: 1.5em; 
+  margin-bottom: 1.5em; 
+  background: #EBEBEB; 
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+
+
+/* Clear the .container
+-------------------------------------------------------------- */
+.container:after {
+    content:"";
+    display:table;
+}
+
+.container:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.container {
+    zoom:1;
+}

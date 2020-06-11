@@ -1,0 +1,4 @@
+-- SELECT record, app_label, name from data for ContentType
+SELECT d0.record, d1.value, d0.value FROM data AS d0 JOIN (SELECT model, record, value FROM data WHERE model='django_content_type' AND field='app_label') AS d1 ON d0.model=d1.model AND d0.record=d1.record WHERE d0.model='django_content_type' AND d0.field='model';
+-- select id of gw|gwuser
+-- SELECT d0.record FROM data AS d0 JOIN (SELECT model, record, value FROM data WHERE model='django_content_type' AND field='app_label') AS d1 ON d0.model=d1.model AND d0.record=d1.record WHERE d0.model='django_content_type' AND d0.field='model' AND d1.value='gw' AND d0.value='gwuser';

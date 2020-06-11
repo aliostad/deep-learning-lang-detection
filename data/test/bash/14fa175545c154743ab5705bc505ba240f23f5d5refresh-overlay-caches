@@ -1,0 +1,20 @@
+#!/bin/bash
+# from https://github.com/microcai/gentoo-zh/issues/138#issuecomment-30921624
+# thanks, CasperVector!
+
+source /etc/init.d/functions.sh
+
+EROOT="/"
+
+#PORTDIR_OVERLAY="$(portageq envvar PORTDIR_OVERLAY)"
+PORTDIR_OVERLAY="$(portageq repositories_configuration ${EROOT} | grep '^location' | sed 's/^location = \(.*\)$/\1/' | grep -v '^/usr/portage$')"
+
+NJOBS=8
+
+for repo in $PORTDIR_OVERLAY ;
+do
+    repo="$(cat "${repo}"/profiles/repo_name)"
+    ebegin "Regenerating cache for overlay \`${repo}'"
+        egencache --jobs="${NJOBS}" --repo="${repo}" --update
+    eend "$?"
+done

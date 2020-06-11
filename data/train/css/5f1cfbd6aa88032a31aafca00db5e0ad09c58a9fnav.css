@@ -1,0 +1,193 @@
+.nav-center {
+    text-align:center;
+}
+
+.nav-right {
+    text-align:right;
+}
+
+/*******************************************
+These are the color styles for the desktop navbar
+********************************************/
+
+nav ul.nav:not(.mobile) ul {
+    padding:0px;
+}
+
+nav ul.nav:not(.mobile) a{
+    display:block;
+    text-decoration:none;
+    padding:.5em .8em;
+    white-space:nowrap;
+}
+
+nav ul.nav:not(.mobile) {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.nav:not(.mobile) li{
+    display: inline-block;
+    vertical-align: middle;
+    position:relative;
+    display:block;
+}
+
+nav ul.nav:not(.mobile) > li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav ul.nav:not(.mobile) > li:hover > ul {
+    display:block;
+}
+
+nav ul.nav:not(.mobile) > li:hover > ul a{
+    padding-right:1.5em;
+}
+
+nav ul.nav:not(.mobile) > li > ul li:hover >ul {
+    display:block;
+    top:0;
+}
+
+nav ul.nav:not(.mobile) > li > ul {
+    position:absolute;
+    display:none;
+    z-index:10;
+}
+
+nav ul.nav:not(.mobile) > li > ul i{
+    position:absolute;
+    right:.5em;
+    top:.7em;
+    line-height:inherit;
+}
+
+nav ul.nav:not(.mobile) > li > ul > li ul {
+    position:absolute;
+    left:100%;
+    top:0px;
+    display:none;
+}
+
+nav ul.nav.nav-right {
+    text-align:right;
+}
+nav ul.nav.nav-right > li > ul {
+    left:auto;
+    right:0px
+}
+nav ul.nav.nav-right > li > ul > li ul {
+    left:auto;
+    right:100%;
+}
+
+nav ul.nav.nav-right > li > ul i.dropdown{
+    right:auto;
+}
+
+nav ul.nav:not(.mobile) > li > ul i.dropdown
+{
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+ul.nav.mobile {
+    display:none;
+}
+
+@media (max-width: 768px) {
+
+    /* Hide the standard navbar */
+    nav ul.nav:not(.mobile) {
+        display:none;
+    }
+    
+    /*******************************************
+    Override nav left and nav center on mobile nav
+    ********************************************/
+    .nav-center ul.nav.mobile{
+        text-align:left;
+    }
+
+    .nav-right ul.nav.mobile{
+        text-align:left;
+    }
+
+    /*******************************************
+    These are the color styles for the desktop navbar
+    ********************************************/
+
+    nav ul.nav.mobile li {
+        position:relative;
+        height:auto;
+    }
+
+    nav ul.nav.mobile li li a
+    {
+        padding-left:15px;
+    }
+
+    nav .nav.mobile, nav .nav.mobile ul {
+        display:block;
+        list-style-type: none;
+        padding:0px;
+        margin:0px;
+    }
+
+    nav ul.nav.mobile a {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        -ms-text-overflow: ellipsis;
+        padding:.5em .8em;
+        display:block;
+        text-decoration:none;
+    }
+    
+    nav ul.nav.mobile li ul{
+        display:none;
+    }
+
+    nav ul.nav.mobile i.dropdown
+    {
+        position:absolute;
+        right:10px !important;
+        top:10px;
+    }
+    
+    nav ul.nav.mobile > li > ul i.dropdown
+    {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+    }
+
+    nav.pills  ul.nav.mobile {
+        background-color:transparent;
+        border:0;
+    }
+
+    nav.pills ul.nav.mobile li, nav.pills ul.nav.mobile li:hover{
+        margin:2px 1px;
+        border:0;
+        background:0;
+    }
+
+    nav.pills ul.nav.mobile li ul li:hover>a, nav.pills ul.nav.mobile>li:hover>a{
+        border:0;
+    }
+
+    nav.pills ul.nav.mobile>li ul {
+        border:0px;
+        margin-left:15px;
+    }
+}

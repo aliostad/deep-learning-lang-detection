@@ -1,0 +1,30 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+    remove)
+	# if bind is running, stop it before removing
+	if pidof named >/dev/null 2>&1; then
+		# test if invoke-rc.d command is present on this system
+		if command -v invoke-rc.d >/dev/null 2>&1; then
+		    invoke-rc.d bind9 stop
+		# if really not, use initscript
+		else
+		    /etc/init.d/bind9 stop
+		fi
+	fi
+    ;;
+
+    upgrade)
+	# leave bind running during the upgrade
+    ;;
+
+    *)
+	echo "prerm called with unknown argument \`$1'" >&2
+	exit 1
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0

@@ -1,0 +1,25 @@
+.main-service a{display:block;padding:15px 10px;overflow:hidden;}
+.main-service .pic{float:left;width:40%;text-align:center;}
+.main-service .pic img{width:70%;}
+.main-service .des{width:60%;float:left;}
+.main-service .des p{margin:0;height:20px;line-height:20px;margin-top:5px;}
+.main-service .des span{font-size:12px;color:#999;height:20px;line-height:20px;}
+
+.other-service ul{list-style:none;padding:0;}
+.other-service li{text-align:center;}
+.other-service li a{display:block;padding:15px;}
+.other-service li span{display:block;height:30px;line-height:30px;}
+.other-service li img{width:40%;}
+
+
+.more-service .more-title{height:40px;line-height:40px;border-bottom:thin solid #eee;padding:0 10px;margin:0;background:#FAFAFA;}
+.more-service .more-title em{display:block;float:left;background:#B28500;width:3px;height:12px;margin:15px 10px 0 0;}
+.more-service .more-list{border-bottom:thin solid #eee;overflow:hidden;padding:5px 0;}
+.more-service .more-list a{display:block;float:left;width:25%;text-align:center;padding:10px 0;}
+.more-service .more-list p{margin:0;height:20px;line-height:20px;font-size:12px;}
+.more-service .more-list img{width:40%;}
+
+
+.send-form .row{overflow:hidden;border-bottom:thin solid #EEE;padding:0;}
+.send-form .icon{float:left;width:10%;text-align:center;color:#999;height:50px;line-height:60px;overflow:hidden;font-size:16px;}
+.send-form .line-input{border:none;float:left;background:#FFF;height:50px;width:90%;padding-top:12px;overflow:hidden;}

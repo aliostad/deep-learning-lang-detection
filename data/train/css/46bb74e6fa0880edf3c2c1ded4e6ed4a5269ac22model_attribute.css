@@ -1,0 +1,66 @@
+
+a,a:visited{cursor:pointer;}
+
+.model
+{
+  width: 98% ;
+  background: #fdfcdc;
+  margin:  4px;
+  padding: 4px;
+  border:thin groove #dcdcdc;
+}
+
+.model h4
+{ 
+ 	font-size: 12pt;
+ 	padding-left: 20px;
+}
+ 
+.prompt
+{
+   padding-left: 10px;
+   line-height: 200%;
+   font-style: italic;
+   font-size: 10pt;
+}
+
+ 
+.title
+{
+   padding-left: 8px;
+   font-size: 11pt;
+   font-weight:bold;
+}
+
+ 
+.prompt_show
+{
+   float:right;
+   padding-right: 13px;
+   font-style: normal;
+   font-size: 9pt;
+   font-weight:normal;
+}
+
+.model_box
+{
+	height: auto;
+	background: #feeecd;
+    margin: 4px;
+	margin-bottom: 15px;
+	padding-bottom:8px;
+}
+
+
+table.attr.boards a.board, 
+
+.desc
+{
+	font-size:9pt;
+}
+
+
+
+.current_model {
+    background-color: #D7FECD
+}

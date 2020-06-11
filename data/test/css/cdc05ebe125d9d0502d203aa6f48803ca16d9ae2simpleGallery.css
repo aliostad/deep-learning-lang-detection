@@ -1,0 +1,127 @@
+.gallery {
+	clear: both;
+}
+
+.gallery > img {
+	height: 100px;
+	cursor: pointer;
+}
+
+.gallery > img:hover {
+	opacity: 0.9;
+}
+
+.view {
+	display: none;
+	position: fixed;
+	z-index: 9999;
+	margin: auto;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(128, 128, 128, 0.9);
+}
+
+.view img {
+	position: absolute;
+	margin: auto;
+	max-width: 76%;
+	max-height: 76%;
+	top: 5px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.view .control {
+	cursor: pointer;
+	position: absolute;
+	display: block;
+	width: 30px;
+	background-color: rgba(0, 0, 0, 0.2);
+
+	-webkit-background-size: 20px;
+	-moz-background-size: 20px;
+	background-size: 20px;
+}
+
+.view .control:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.prev,.next {
+	height: 100%;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAM1BMVEUAAADn5+fMzMybm5v+/v4aGho7Ozvs7Ow9PT1paWnNzc319fX39/fGxsbOzs7X19f///9a5cBWAAAAEHRSTlMAx5ZR8gMUyhY0l+nuk5edQKeKOwAAAExJREFUOMvtyjkOgDAQBMEZ1vjg3P+/lphkVgIjEbjTajyrktqLM/CSf+71jfNbz4E3OpXDkp+QteTHHB1Lh2Max+3YoY9thc4M3boAUF4EQhWxxtYAAAAASUVORK5CYII=) no-repeat center center;
+}
+
+.next {
+	right: 0;
+
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.close {
+	height: 30px;
+	margin: auto;
+	left: 0;
+	right: 0;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAARVBMVEUAAACSkpLv7+8sLCyampqXl5dmZmZkZGSYmJj8/PxgYGCVlZW8vLz7+/sPDw+7u7u7u7v19fXV1dXDw8Nra2v////8/PyAUl8bAAAAFXRSTlMAet8agFJPKlboTGRy4QhhqPisrFAcDNbVAAAAlUlEQVQ4y4XRyxKDIBBEUSAhEB+Jjxr+/1NFWPSibZ2FUnVusWDc8/x8SIJiGOp3NPuma6/SbhBFNrPYTm8U7Ci0o2Dngp0LuCrgXJBTAVeF9l7MU3dVFGuuZ6s+3Xg+bwhJu1nZ5fa7f8Ru4WL7cBTCUQhHoRwFOxfsXMBlEbvL4g/nYq6/17IO4u198e4sslMzSsEcAD0OzXhIFX4AAAAASUVORK5CYII=) no-repeat center center;
+}
+
+.load {
+    display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    margin: auto;
+	width: 100px;
+	height: 15px;
+	border: 3px solid white;
+	border-radius: 15px;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.load:before {
+	position: absolute;
+	left: 0;
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	background-color: white;
+	content: "";
+
+	-webkit-animation: load 1s infinite alternate;
+	-moz-animation: load 1s infinite alternate;
+	-ms-animation: load 1s infinite alternate;
+	-o-animation: load 1s infinite alternate;
+	animation: load 1s infinite alternate;
+}
+
+@keyframes "load" {
+ 100% { left: 85px; }
+}
+
+@-moz-keyframes load {
+ 100% { left: 85px; }
+}
+
+@-webkit-keyframes "load" {
+ 100% { left: 85px; }
+}
+
+@-ms-keyframes "load" {
+ 100% { left: 85px; }
+}
+
+@-o-keyframes "load" {
+ 100% { left: 85px; }
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+       <record id="duplicate_bom_wizard_form" model="ir.ui.view">
+            <field name="name">Duplicazione BOM</field>
+            <field name="model">duplicate.bom.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Duplicazione distinta base">
+                    <field name="duplicate_to" domain="[('id','!=',active_id)]" />
+                    <field name="create_duplicate_to" />
+                    <field name="clear" />
+                    <group colspan="4">
+                        <button string="Cancel" special="cancel" icon="gtk-cancel"/>
+                        <button string="Duplica" name="duplicate_bom" type="object" icon="gtk-ok"/>
+                    </group>
+                </form>
+            </field>
+      </record>
+
+      <act_window
+          id="action_duplicate_bom_wizard"
+          name="Duplica distinta base"
+          res_model="duplicate.bom.wizard"
+          src_model="mrp.bom"
+          view_mode="form"
+          target="new"
+          view_type="form"/>
+    </data>
+</openerp>

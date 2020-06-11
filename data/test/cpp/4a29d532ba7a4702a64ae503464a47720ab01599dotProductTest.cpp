@@ -1,0 +1,83 @@
+#include <cstdio>
+#include <cstdlib>
+#include <iostream>
+
+#include <ScoreStream.h>
+
+#include "tdfc_dgemv.h"
+
+using namespace std;
+
+int main() {
+	score_init();
+	
+        DOUBLE_SCORE_STREAM A1=NEW_DOUBLE_SCORE_STREAM();
+	DOUBLE_SCORE_STREAM A2=NEW_DOUBLE_SCORE_STREAM();
+	DOUBLE_SCORE_STREAM A3=NEW_DOUBLE_SCORE_STREAM();
+	DOUBLE_SCORE_STREAM A4=NEW_DOUBLE_SCORE_STREAM();
+
+	DOUBLE_SCORE_STREAM x=NEW_DOUBLE_SCORE_STREAM();
+	
+
+	DOUBLE_SCORE_STREAM b1=NEW_DOUBLE_SCORE_STREAM();
+	DOUBLE_SCORE_STREAM b2=NEW_DOUBLE_SCORE_STREAM();
+	DOUBLE_SCORE_STREAM b3=NEW_DOUBLE_SCORE_STREAM();
+	DOUBLE_SCORE_STREAM b4=NEW_DOUBLE_SCORE_STREAM();
+	
+	NEW_tdfc_dgemv(4,4,A1,A2,A3,A4,x,b1,b2,b3,b4);
+
+	STREAM_WRITE_DOUBLE(A1, 1.0);
+	STREAM_WRITE_DOUBLE(A1, 2.0);
+	STREAM_WRITE_DOUBLE(A1, 3.0);
+	STREAM_WRITE_DOUBLE(A1, 3.0);
+        FRAME_CLOSE(A1);	
+	
+	STREAM_WRITE_DOUBLE(A2, 1.0);
+	STREAM_WRITE_DOUBLE(A2, 2.0);
+	STREAM_WRITE_DOUBLE(A2, 3.0);
+	STREAM_WRITE_DOUBLE(A2, 3.0);
+        FRAME_CLOSE(A2);	
+	
+
+	STREAM_WRITE_DOUBLE(A3, 1.0);
+	STREAM_WRITE_DOUBLE(A3, 2.0);
+	STREAM_WRITE_DOUBLE(A3, 3.0);
+	STREAM_WRITE_DOUBLE(A3, 3.0);
+        FRAME_CLOSE(A3);	
+
+	
+	STREAM_WRITE_DOUBLE(A4, 1.0);
+	STREAM_WRITE_DOUBLE(A4, 2.0);
+	STREAM_WRITE_DOUBLE(A4, 3.0);
+	STREAM_WRITE_DOUBLE(A4, 3.0);
+        FRAME_CLOSE(A4);	
+	
+	STREAM_WRITE_DOUBLE(x, 1.0);
+	STREAM_WRITE_DOUBLE(x, 2.0);
+	STREAM_WRITE_DOUBLE(x, 3.0);
+	STREAM_WRITE_DOUBLE(x, 3.0);
+        FRAME_CLOSE(x);	
+
+
+        
+//	STREAM_CLOSE(A1);
+//	STREAM_CLOSE(A2);
+//	STREAM_CLOSE(A3);
+//	STREAM_CLOSE(A4);
+
+//	STREAM_CLOSE(x);
+
+       cout<<"About to get Result"<<endl;
+	bool done=false;
+	while(!done) {
+		done=STREAM_EOS(b1);
+		cout << "b1=" << STREAM_READ_DOUBLE(b1) << endl;
+		cout << "b2=" << STREAM_READ_DOUBLE(b2) << endl;
+		cout << "b3=" << STREAM_READ_DOUBLE(b3) << endl;
+		cout << "b4=" << STREAM_READ_DOUBLE(b4) << endl;
+
+	}
+
+	
+	score_exit();
+}

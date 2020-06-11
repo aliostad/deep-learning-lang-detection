@@ -1,0 +1,67 @@
+
+/********** < Navigation */
+.ma-nav-container { }
+#nav { margin:0 auto; font-size:12px; padding:0; position: relative; z-index: 1000; }
+
+/* All Levels */ /* Style consistent throughout all nav levels */
+#nav li { text-align:left; }
+#nav li.last {  }
+#nav li.over { z-index:998; }
+#nav a,
+#nav a:hover { display:block; line-height:1.3em; text-decoration:none; }
+#nav span { display:block; cursor:pointer; white-space:nowrap; }
+#nav li ul span {white-space:normal; }
+#nav ul li.parent a {}
+#nav ul li.parent li a { }
+
+/* 0 Level */
+#nav li { float:left; padding: 5px 5px 5px 0; position:relative; }
+#nav li.last{ background:none;  }
+#nav li.home { padding-left: 0; }
+
+#nav a { float:left; padding: 10px 18px 11px; color:#434343; font-weight: normal; font-size:18px; font-family:helveticaLT; text-transform:uppercase; }
+#nav a span{ }
+
+#nav li.active a,
+#nav li.over a,
+#nav a:hover {  }
+#nav li.over a,
+#nav a:hover { }
+
+#nav li.active a span,
+#nav li.over a span,
+#nav a:hover span{ }
+
+/* 1st Level */
+#nav ul li,
+#nav ul li.active { float:none; margin:0; padding: 0; background: none;}
+#nav ul li.last { border: 0;}
+
+#nav ul a,
+#nav ul a:hover { float:none;  }
+#nav ul li a { font-weight:normal !important; }
+
+/* 2nd Level */
+#nav ul,
+#nav div { position:absolute; width:210px; padding:10px 0; top: 55px; left:-10000px; background: #fff; }
+#nav div ul { position:static; width:auto; border:none; }
+
+/* 3rd+ Level */
+#nav ul ul,
+#nav ul div { top: 0; }
+#nav ul ul,
+#nav ul div {  }
+
+#nav ul li a { background: url("../images/bg-li.png") no-repeat scroll 0 50% transparent !important; font-weight: normal; padding: 0 0 0  15px; font-size: 16px; line-height: 20px; text-transform:capitalize; position: relative; z-index: 1000;  border: 0; margin: 0 0 0 15px; }
+#nav ul li a span{ padding: 3px 0; }
+#nav ul li a:hover { background: url("../images/bg-li-hover.png") no-repeat scroll 0 50% transparent !important;  line-height: 20px !important; }
+#nav ul span,
+#nav ul li.last li span { }
+
+/* Show menu */
+#nav li ul.shown-sub,
+#nav li div.shown-sub { left:0; z-index:999; }
+#nav li .shown-sub ul.shown-sub,
+#nav li .shown-sub li div.shown-sub { left:210px; }
+/********** Navigation > */
+/* ======================================================================================= */

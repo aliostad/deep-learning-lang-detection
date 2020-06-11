@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<process-definition xmlns="urn:jbpm.org:jpdl-3.2"
+	name="simple2">
+
+
+
+
+	<start-state name="inicio">
+		<transition to="servicos">
+		</transition>
+	</start-state>
+
+
+	<fork name="servicos">
+		<event type="node-enter">
+			
+		</event>
+		<transition name="1"  to="process-state1"></transition>
+		<transition name="2"  to="process-state2"></transition>
+	</fork>
+
+	<join name="uniao">
+		<transition to="end-state1"></transition>
+	</join>
+
+	<process-state name="process-state1">
+		<sub-process name="process1"/>
+		<transition to="uniao"></transition>
+	</process-state>
+
+	<process-state name="process-state2">
+		<sub-process name="process2"/>
+		<transition to="uniao"></transition>
+	</process-state>
+
+
+	<end-state name="end-state1"></end-state>
+
+
+</process-definition>

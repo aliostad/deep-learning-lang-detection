@@ -1,0 +1,58 @@
+/**
+Author: kliew
+Description: New script tracking rare upgrade issues
+Date: 4/7/2016
+**/
+
+Col object_name format a40;
+spool vpoc.diag append
+select object_name, object_type, status from user_objects where object_name in (
+'VPX_HIST_STAT1',
+'VPX_HIST_STAT2',
+'VPX_HIST_STAT3',
+'VPX_HIST_STAT4',
+'VPXV_ENTITY',
+'VPXV_HIST_STAT_DAILY',
+'VPXV_HIST_STAT_WEEKLY',
+'VPXV_HIST_STAT_MONTHLY',
+'VPXV_HIST_STAT_YEARLY',
+'VPXV_STAT_COUNTERS',
+'VPXV_STAT_HISTORICAL_INTERVALS',
+'VPXV_HOST_DATASTORE',
+'VPXV_HOST_NETWORK',
+'VPXV_VM_DATASTORE',
+'VPXV_VM_NETWORK',
+'VPXV_COMPUTE_RESOURCE_NETWORK',
+'VPXV_RESOURCE_POOL',
+'VPXV_COMPUTE_RESOURCE',
+'VPXV_HOSTS',
+'VPXV_VMS',
+'VPXV_FARMGROUPS',
+'VPXV_VMGROUPS',
+'VPXV_FIELDS',
+'VPXV_HOST_FIELDS',
+'VPXV_VM_FIELDS',
+'VPXV_ALARMS',
+'VPXV_TEMPLATES',
+'VPXV_TASKS',
+'VPXV_EVENTS',
+'VPXV_ENTITY_MOID',
+'VPXV_DS_LUN_INFO',
+'VPXV_VM_RDM_LUN_INFO',
+'VPXV_SN_RDM_LUN_INFO',
+'VPXV_DATASTORE',
+'VPXV_HOST_CPU',
+'VPXV_OBJECT_TYPE',
+'VPXV_CUSTOMIZED_FIELD',
+'VPXV_COMPUTE_RESOURCE_DAS_VM',
+'VPXV_COMPUTE_RESOURCE_DRS_VM',
+'VPXV_ENTITY_VMOP_COUNT',
+'VPXV_SNAPSHOT',
+'VPXV_LIC_USAGE_HISTORY',
+'VPXV_LIC_VC_GROUPS');
+
+select object_name, status, object_type from user_objects where status = 'INVALID';
+
+select count(*) from user_objects;
+
+spool off;

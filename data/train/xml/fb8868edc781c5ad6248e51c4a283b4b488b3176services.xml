@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="accountService" class="com.cerberus.service.system.AccountService" scope="prototype"></bean>
+	<bean id="consumptionService" class="com.cerberus.service.system.ConsumptionService" scope="prototype"></bean>
+	<bean id="outletService" class="com.cerberus.service.system.OutletService" scope="prototype"></bean>
+	<bean id="rfidService" class="com.cerberus.service.system.RfidService" scope="prototype"></bean>
+	<bean id="schedulingService" class="com.cerberus.service.system.SchedulingService" scope="prototype"></bean>
+	<bean id="statisticService" class="com.cerberus.service.system.StatisticService" scope="prototype"></bean>
+	<bean id="systemService" class="com.cerberus.service.system.SystemService" scope="prototype"></bean>
+	<bean id="userService" class="com.cerberus.service.system.UserService" scope="prototype"></bean>
+	
+	<bean id="serviceFactory" class="com.cerberus.service.pool.ServiceFactory" scope="prototype">
+		<property name="accountService" ref="accountService"></property>
+		<property name="consumptionService" ref="consumptionService"></property>
+		<property name="outletService" ref="outletService"></property>
+		<property name="rfidService" ref="rfidService"></property>
+		<property name="schedulingService" ref="schedulingService"></property>
+		<property name="statisticService" ref="statisticService"></property>
+		<property name="systemService" ref="systemService"></property>
+		<property name="userService" ref="userService"></property>
+	</bean>
+	
+	
+
+</beans>

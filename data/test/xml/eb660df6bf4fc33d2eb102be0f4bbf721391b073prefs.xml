@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:summary="Main settings"
+        android:title="Main settings" >
+        <CheckBoxPreference
+            android:key="appendSignature"
+            android:summary="Append signature to every message sent from Pebble"
+            android:title="Append signature"
+            android:defaultValue="true" />
+        <EditTextPreference
+            android:key="signature"
+            android:summary="Signature to append"
+            android:title="Signature"
+            android:defaultValue="@string/message_append" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

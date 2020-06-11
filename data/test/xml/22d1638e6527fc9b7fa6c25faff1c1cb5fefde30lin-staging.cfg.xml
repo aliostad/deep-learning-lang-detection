@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/lin_staging_db</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">Charisfyp!</property>
+    <mapping resource="com/lin/entities/Post.hbm.xml"/>
+    <mapping resource="com/lin/entities/Friendship.hbm.xml"/>
+    <mapping resource="com/lin/entities/Enquiry.hbm.xml"/>
+    <mapping resource="com/lin/entities/OpenRule.hbm.xml"/>
+    <mapping resource="com/lin/entities/UserTemp.hbm.xml"/>
+    <mapping resource="com/lin/entities/Booking.hbm.xml"/>
+    <mapping resource="com/lin/entities/LimitRule.hbm.xml"/>
+    <mapping resource="com/lin/entities/FacilityType.hbm.xml"/>
+    <mapping resource="com/lin/entities/Facility.hbm.xml"/>
+    <mapping resource="com/lin/entities/SubmittedForm.hbm.xml"/>
+    <mapping resource="com/lin/entities/CloseRule.hbm.xml"/>
+    <mapping resource="com/lin/entities/AmenityCategory.hbm.xml"/>
+    <mapping resource="com/lin/entities/Block.hbm.xml"/>
+    <mapping resource="com/lin/entities/ResourceCategory.hbm.xml"/>
+    <mapping resource="com/lin/entities/Amenity.hbm.xml"/>
+    <mapping resource="com/lin/entities/Resource.hbm.xml"/>
+    <mapping resource="com/lin/entities/User.hbm.xml"/>
+    <mapping resource="com/lin/entities/ResourceCategories.hbm.xml"/>
+    <mapping resource="com/lin/entities/Role.hbm.xml"/>
+    <mapping resource="com/lin/entities/AdvanceRule.hbm.xml"/>
+    <mapping resource="com/lin/entities/FormTemplate.hbm.xml"/>
+    <mapping resource="com/lin/entities/Comment.hbm.xml"/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping resource="com/lin/entities/EventComment.hbm.xml"/>
+    <mapping/>
+    <mapping resource="com/lin/entities/Notification.hbm.xml"/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping resource="com/lin/entities/EventLike.hbm.xml"/>
+    <mapping resource="com/lin/entities/EventInappropriate.hbm.xml"/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping resource="com/lin/entities/EventInvite.hbm.xml"/>
+    <mapping resource="com/lin/entities/PostUserTag.hbm.xml"/>
+    <mapping resource="com/lin/entities/PostInappropriate.hbm.xml"/>
+    <mapping resource="com/lin/entities/Event.hbm.xml"/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping resource="com/lin/entities/PostLike.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

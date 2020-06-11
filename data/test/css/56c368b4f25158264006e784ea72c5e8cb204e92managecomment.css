@@ -1,0 +1,57 @@
+.view-managecomment .column-right {
+    float: right;
+    width: 35%
+}
+
+.view-managecomment .column-left {
+    width: 65%;
+}
+
+.view-managecomment .column-right .blogfactory-edit-box {
+    margin-left: 15px;
+}
+
+.view-managecomment .status-box {
+    border-top: 1px solid #dddddd;
+}
+
+.view-managecomment .button-delete,
+.view-managecomment .button-delete:hover {
+    color: #ff0000;
+}
+
+.view-managecomment .button-update {
+    float: right;
+}
+
+.view-managecomment #comment_user_id_name,
+.view-managecomment #comment_name,
+.view-managecomment #comment_url,
+.view-managecomment #comment_email,
+.view-managecomment #comment_approved,
+.view-managecomment #comment_reported,
+.view-managecomment #comment_text {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 28px;
+}
+
+.view-managecomment select {
+    width: auto;
+}
+
+.view-managecomment #comment_user_id_name,
+.view-managecomment #comment_name,
+.view-managecomment #comment_url,
+.view-managecomment #comment_email,
+.view-managecomment #comment_text {
+    width: 100%;
+}
+
+.view-managecomment #comment_text {
+    resize: vertical;
+    margin: 0;
+    border: 0;
+    box-shadow: none !important;
+    padding: 15px;
+}

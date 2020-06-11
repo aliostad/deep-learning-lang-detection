@@ -1,0 +1,99 @@
+#!/bin/bash
+
+# Waits until a process terminates.
+
+function print_help
+{
+cat <<EOF
+NAME
+    WaitProcess
+USAGE
+    WaitProcess -i processId
+    WaitProcess -n processName
+DESCRIPTION
+    Waits until a process terminates. Actually it does not monitor one process,
+    but the process list. (It checks it in every second.) So if e.g.
+    "WaitProcess -n gvim" is invoked, WaitProcess will terminate only when
+    there is no gvim in the process list.
+OPTIONS
+    -h, --help
+        This help
+    -i, --identifier processId
+        The identifier of the process.
+    -n, --name processName
+        The name of the process.
+    -nppl, --doNotPrintProcessList
+        Do not print the process list in the beginning.
+AUTHOR
+    Csaba Hoch <csaba.hoch@gmail.com>
+EOF
+}
+
+# Options
+processByName=false #identify process by name and not by pid
+process="" # name or pid of the process
+printProcessList=true
+
+# Processing the arguments.
+while [ "$#" != "0" ]
+do
+    if [ "$1" = "-h" -o  "$1" = "--help" ]
+    then
+        print_help
+        exit 0
+    elif [ "$1" = "-nppl" -o "$1" = "--doNotPrintProcessList" ]
+    then
+        printProcessList=false
+    elif [ "$1" = "-i" -o "$1" = "--identifier" ]
+    then
+        if [ "$#" -ge "2" ]
+        then
+            process="$2"
+            shift
+        else
+            echo "Argument expected after option '$1'"
+            exit 1
+        fi
+    elif [ "$1" = "-n" -o "$1" = "--name" ]
+    then
+        if [ "$#" -ge "2" ]
+        then
+            process="$2"
+            processByName=true
+            shift
+        else
+            echo "Argument expected after option '$1'"
+            exit 1
+        fi
+    else
+        echo "Unexpected argument: '$1'"
+        echo "Try \"-h\" for help"
+        exit 1
+    fi
+    shift
+done
+
+if $printProcessList; then
+    echo "Process list:"
+    if $processByName; then
+        ps -eo comm | grep "$process"
+    else
+        ps -eo pid | grep "$process"
+    fi
+fi
+
+while true
+do
+    if $processByName; then
+        ps_result=`ps -eo comm | grep "$process"`
+    else
+        ps_result=`ps -eo pid | grep "$process"`
+    fi
+
+    if [ "$ps_result" == "" ]
+    then
+        break
+    fi
+    sleep 1
+done
+

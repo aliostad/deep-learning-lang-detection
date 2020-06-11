@@ -1,0 +1,427 @@
+#column1 {
+  padding: 30px;
+}
+
+.common,
+.vt_model {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top; 
+  text-align: center;
+}
+
+.common {
+  border-right: 1px dotted #D8D8DB;
+  margin-right: 2%;
+}
+
+.common_model, 
+.model {
+  margin: 0 auto;
+}
+
+.model {
+  padding-top: 12px;
+}
+
+.vt_model h2,
+.vt_model h3{
+  color: #1c74bc;
+}
+
+.model_heading h2 {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.model_heading p {
+   margin-top: 0;
+}
+
+/* common model styles */ 
+.common_model {
+  display: block;
+  padding: 20px;
+  width: 280px;
+}
+
+.common_model p {
+  display: block;
+  width: 250px;
+  text-align: center;
+  padding: 70px 0;
+  font-size: 13px;
+  border: 1px solid #D8D8DB;
+  background-color: #E9ECEC;
+  margin: 0;
+}
+
+.common_model p.then {
+  display: block;
+  text-indent: -4000em;
+  width: 0;
+  height: 0;
+  padding: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 12px solid #D8D8DB;
+  border-bottom: 0;
+  background-color: transparent;
+  margin: 5px auto;
+}
+
+/*------------------------VT Model ------------------------*/
+.model {
+  width: 300px;
+  display: block;
+  position: relative;
+}
+
+.model .circle {
+  background-color: #EDF0F0;
+  border: 8px solid #edf0f0;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+
+/*background styles */ 
+.model .background .circle {
+    background-color: rgba(237, 240, 240, 0.7);
+    border: 0 none;
+    position: absolute;
+}
+
+.model .background .circle.one {
+    height: 280px;
+    left: 16px;
+    top: 260px;
+    width: 280px;
+}
+
+.model .background .circle.two {
+    height: 300px;
+    left: 0;
+    top: 420px;
+    width: 300px;
+}
+
+
+.model .background .circle.three {
+    height: 235px;
+    left: 26px;
+    top: 620px;
+    width: 235px;
+}
+
+/* top circle styles */
+
+.model .circle.top {
+}
+
+.model .circle.top, 
+.model .circle.top .circle {
+  overflow: hidden;
+}
+
+.model .circle .circle {
+  border: none; 
+}
+
+.model .circle.green {
+  background-color: #4B9F77;
+}
+
+.model .circle.green, 
+.model .circle.teal {
+  height: 290px;
+  width: 290px;
+}
+
+.model .green .circle, 
+.model .teal .circle {
+  height: 280px;
+  width: 280px;
+}
+
+.model .green .circle {
+  background-color: #79CEA6;
+  border: 2px solid #43AC75;
+}
+
+.model .green .circle.left {
+  position: absolute;
+  top: 10%;
+  left: -45%;
+}
+
+.model .green .circle.right {
+  position: absolute;
+  top: 10%;
+  right: -45%;
+}
+
+.model .circle.teal {
+  background-color: #2D8F94;
+  border: 2px solid #2c8f94;
+  position: absolute; 
+  top: 33%;
+}
+
+.model .teal .circle {
+  background-color: #61B3B6;
+  border: 2px solid #72BCBF;
+}
+
+.model .teal .circle.left {
+  position: absolute;
+  top: 10%;
+  left: -55%;
+}
+
+.model .teal .circle.right {
+  position: absolute;
+  top: 10%;
+  right: -55%;
+}
+
+/* paragraph styles */ 
+
+.model .circle p {
+  font-family: 'AmbleRegular';
+  font-size: 14px;
+}
+
+.model .circle.green p,
+.model .circle.teal p {
+  width: 100px;
+  display: block;
+  text-align: center;
+  margin: 15px auto 0;
+}
+
+.model .circle.left p, 
+.model .circle.right p {
+  display: block;
+  width: 70px;
+}
+
+.model .circle.left p {
+  text-align: left; 
+}
+
+.model .circle.right p {
+  text-align: right;
+}
+
+.model .green .circle.left p {
+  padding-top: 12px;
+  margin-left: 60%;
+} 
+
+.model .green .circle.right p {
+  padding-top: 15px;
+  margin-right: 58%;
+}
+
+.model .teal .circle.left p {
+  padding-top: 48px;
+}
+
+.model .teal .circle.right p {
+  padding-top: 40px;
+}
+
+.model .teal .circle.left p {
+  margin-left: 180px;
+}
+
+.model .teal .circle.right p {
+  margin-right: 195px;
+}
+
+/* lower circles colors */
+
+.model .blue .circle {
+  background-color: rgba(39, 114, 190, 0.6);
+  border: 2px solid #2772BE;
+}
+
+.model .violet .circle {
+  background-color: rgba(165, 74, 158, 0.6);
+  border: 2px solid #A54A9E;
+}
+
+.model .purple .circle {
+  background-color: rgba(94, 46, 147, 0.5);
+  border: 2px solid #5E2E93;
+}
+
+/*circle sizes */ 
+.model .circle.small {
+  height: 100px;
+  width: 100px;
+}
+
+.model .circle.mid {
+  height: 120px;
+  width: 120px;
+}
+
+.model .circle.large {
+  height: 160px;
+  width: 160px;
+}
+
+.model .violet .circle.large {
+  height: 130px;
+  width: 130px;
+}
+
+/* lower circles placement */ 
+.model .blue, 
+.model .violet, 
+.model .purple {
+  position: relative; 
+}
+
+.model .blue .circle, 
+.model .violet .circle, 
+.model .purple .circle {
+  position: absolute;
+}
+
+.model .blue {
+  height: 200px;
+  width: 200px;
+}
+
+.model .blue .small {
+  top: -40px;
+  left: 103px;
+}
+
+.model .blue .mid {
+  top: 20px;
+  left: 26px;
+}
+
+.model .blue .large {
+  top: 38px;
+  left: 125px;
+}
+
+.model .violet {
+  height: 215px;
+  width: 215px;
+}
+
+.model .violet .small {
+  top: -74px;
+  left: 54px;
+}
+
+.model .violet .large {
+  top: -22px;
+  left: 118px;
+}
+
+.model .violet .mid {
+  top: 8px;
+  left: 14px;
+}
+
+.model .violet .mid.last {
+  top: 87px;
+  left: 87px;
+}
+
+.model .purple {
+  height: 180px;
+  width: 180px;
+}
+
+.model .purple .grow {
+  top: -40px;
+  left: 30px;
+}
+
+.model .purple .sell {
+  top: -28px;
+  left: 135px;
+}
+
+/* lower circles text styles */ 
+.model .small p {
+  display: block;
+  margin: 40px auto 0;
+  width: 90px;
+}
+
+.model .violet .small p {
+  margin-top: 30px;
+}
+
+.model .mid p {
+  display: block;
+  margin: 40px auto 0;
+  width: 100px;
+}
+
+.model .violet .mid p, 
+.model .purple .sell.mid p {
+  margin-top: 50px;
+}
+
+.model .blue .large p{
+  display: block;
+  margin: 63px auto 0;
+  width: 100px;
+}
+
+.model .violet .large p {
+  margin-top: 48px;
+}
+
+/* results styles */ 
+.results h3, 
+.relationship h3{
+  text-align: center;
+  font-size: 26px;
+  margin: 0.5em 0;
+}
+
+.results,
+.relationship {
+  text-align: left; 
+}
+
+.relationship {
+  margin: 2em 0;
+}
+
+ul.green {
+color: #43AC75;
+}
+
+ul.teal {
+color: #2c8f94;
+}
+
+ul.blue {
+color: #2772BE;
+}
+
+ul.violet {
+color: #A54A9E;
+}
+
+ul.purple {
+color: #5E2E93;
+}

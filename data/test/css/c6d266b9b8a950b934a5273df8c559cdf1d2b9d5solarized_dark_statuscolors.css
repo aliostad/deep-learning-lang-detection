@@ -1,0 +1,11 @@
+.away .message { color: #d33682; }
+.away_message .message { color: #d33682; }
+.return_away .message { color: #268bd2; }
+.date_separator .message { color: #555; }
+.idle .message { color: #586e75; }
+.return_idle .message { color: #586e75; }
+.offline .message, .contact_left .message { color: #586e75; }
+.online .message, .contact_joined .message { color: #268bd2; }
+.error .message, .timed_out .message { color:#dc322f; }
+.encryption .message{color:#859900;}
+.fileTransferBegan .message, .fileTransferComplete .message{ color:#2aa198; }

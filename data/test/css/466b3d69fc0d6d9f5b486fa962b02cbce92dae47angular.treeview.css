@@ -1,0 +1,81 @@
+div[data-angular-treeview] {
+  /* prevent user selection */
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  /* default */
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:1em;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+div[data-tree-model] ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; 
+  border: none;
+  overflow: hidden;
+}
+
+div[data-tree-model] li {
+  position: relative;
+  padding: 0 0 0 20px;
+  line-height: 20px;
+}
+
+div[data-tree-model] li .expanded {
+  padding: 1px 10px;
+  /*background-image: url("../img/folder.png");*/
+  background-repeat: no-repeat;
+}
+
+div[data-tree-model] li .collapsed {
+  padding: 1px 10px;
+  /*background-i mage: url("../img/folder-closed.png");*/
+  background-repeat: no-repeat;
+}
+
+div[data-tree-model] li .normal {
+  padding: 1px 10px;
+  /*background-image: url("../img/file.png");*/
+  background-repeat: no-repeat;
+}
+
+div[data-tree-model] li i, div[data-tree-model] li span {
+  cursor: pointer;
+}
+
+div[data-tree-model] li .selected {
+  background-color: #aaddff;
+  /*font-weight: bold;*/
+  padding: 1px 5px;
+}
+
+div[data-tree-model] .dropdown-menu li {
+  position: relative;
+  padding: 0;
+  line-height: 20px;
+}
+ 
+div[data-tree-model] .dropdown-menu li a {
+  padding: 3px 5px;
+  cursor: pointer;
+}
+ 
+div[data-tree-model] div.dropdown {
+  z-index: 6;
+}
+
+#area {
+  z-index: -1;
+}
+ 
+#files {
+  z-index: 5;
+}
+

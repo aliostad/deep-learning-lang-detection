@@ -1,0 +1,46 @@
+html,body {
+  font-family: 'Hind', sans-serif;
+}
+
+#page-header {
+  margin-bottom:2em;
+  margin-top:2em;
+}
+
+#info-sign {
+  color:black;
+  vertical-align:top;
+}
+
+body,.btn,.form-control {
+  font-size: 15px;
+}
+
+#api-table {
+  background-color: #eee;
+  border-collapse: collapse;
+}
+#api-table th {
+  background-color: #000;
+  color: white;
+}
+#api-table td, #api-table th {
+  padding: 5px;
+  border: 1px solid #000;
+}
+
+.panel-group .panel + .panel {
+  margin-top: .1em;
+}
+
+.panel-group {
+  margin-bottom: 0;
+}
+
+#show-welcome-dialog {
+  margin-top: .15em;
+}
+
+.modal-footer {
+  padding: .3em 1em;
+}

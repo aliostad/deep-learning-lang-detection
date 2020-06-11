@@ -1,0 +1,73 @@
+.main-writeStory{
+	padding: 20px 40px;
+}
+.main-writeStory-title{
+	text-align: center;
+}
+.writeStory-title{
+	margin-top: 20px;
+	max-width: 700px;
+	border: 0;
+	font-size: 24px;
+	border-bottom:2px solid #ddd;
+	outline: none;
+	padding: 2px 5px;
+	font-weight: bold;
+	text-align: center;
+}
+.writeStory-title:focus{
+	border-color: #666;
+}
+.main-writeStory-body{
+	margin-top: 20px;
+	text-align: center;
+	
+}
+.writeStory-content{
+
+	border: 1px solid #DDD;
+	width: 100%;
+	height: 300px;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 16px;
+
+}
+
+.writeStory-content:focus{
+	border-color: #666;
+	box-shadow: 0px 0px 10px ;
+
+}
+
+.main-writeStory-addon{
+	margin-top:20px;
+}
+.main-writeStory-addon  .add-node-btn{
+	margin: 10px 20px;
+}
+.main-writeStory-bottom{
+	margin-top: 20px;
+	text-align: center;
+}
+.writeStory-label{
+	font-size: 12px;
+	border-left: 4px solid #DDD;
+	padding-left:4px;
+	margin-left: -10px;
+}
+.writeStory-input-pre{
+
+}
+.writeStory-node-input{
+	margin: 10px 0;
+	border: 0;
+	outline: none;
+	width:60%;
+	padding: 2px 5px;
+	border-bottom: 1px solid #DDD;
+}
+.writeStory-node-input:focus{
+	border-color: #666;
+}

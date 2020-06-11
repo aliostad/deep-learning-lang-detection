@@ -1,0 +1,43 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00b7ff;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.btn {
+  margin-right: 7px;
+}
+.no-padding {
+  padding: 0 !important;
+}
+.no-margin {
+  margin: 0 !important;
+}
+.cms-load {
+  margin: 0;
+}
+.cms-load li {
+  cursor: pointer;
+  padding: 10px;
+  -webkit-transition: background 0.2s;
+}
+.menu-selected {
+  background: #4890c0;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+}
+.thaana {
+  color: #000;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  line-height: 25px;
+  font-size: 16px;
+}
+.thaana-textarea {
+  width: 98%;
+  height: 600px;
+}

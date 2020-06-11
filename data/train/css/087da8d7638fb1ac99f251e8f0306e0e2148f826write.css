@@ -1,0 +1,49 @@
+write-page{
+	width:90%;
+	margin: 2em auto;
+	max-width:1000px;
+}
+write-page .asset{
+	position:relative;
+	width:100%;
+	box-sizing:border-box;
+	padding:2em 2em 1em;
+}
+write-page .asset icon-button.delete{
+	width: 1.5em;
+    height: 1.5em;
+    position: absolute;
+    top: 2em;
+    left: -0.75em;
+}
+write-page icon-button.add{
+	position:absolute;
+	width: 2.5em;
+    height: 2.5em;
+    top:0px;
+    right:0px;
+    margin:1em;
+    z-index:100;
+
+}
+write-page .asset .title{
+	font-weight:bold;
+	font-size:1.2em;
+	color:black;
+	margin-bottom:1em;
+}
+write-page .asset textarea{
+    resize: none;
+    position: relative;
+    display: block;
+    font-size: 1.1em;
+    border: 0px;
+    width: 100%;
+    font-weight: 200;
+    font-family: inherit;
+    color:gray;
+}
+write-page .asset textarea:hover{
+	color:black;
+
+}

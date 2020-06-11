@@ -1,0 +1,59 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container {
+    padding: 5px;
+}
+
+.btn-preview, .btn-publish {
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    width: 80px;
+}
+
+.btn-publish {
+    top: 55%;
+}
+
+.write-zone {
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+    width: 49%;
+    /*height: 842px;*/
+}
+
+.write-zone-toggle {
+    display: inline-block;
+    float: left;
+}
+
+#paper {
+    width: 95%;
+    margin: 0 auto;
+    min-height: 500px;
+    display: block;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.preview-zone {
+    float: right;
+    visibility: hidden;
+    text-align: left;
+    border: 1px solid #ccc;
+    width: 49%;
+    min-height: 500px;
+    display: inline-block;
+}
+
+    .preview-zone .toggle {
+    }
+
+#html {
+    /*border: 1px solid red;*/
+    width: 95%;
+}

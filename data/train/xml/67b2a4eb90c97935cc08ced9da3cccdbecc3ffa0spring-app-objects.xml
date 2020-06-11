@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+	<object id="Repository" abstract="true" type="RezervacniSystem.Data.NHibernate.NHibernateRepository, RezervacniSystem.Data">
+		<property name="SessionFactory" ref="DataSessionFactory" />
+	</object>
+
+	<object id="PoskytovatelRepository" parent="Repository" type="RezervacniSystem.Data.NHibernate.PoskytovatelRepository, RezervacniSystem.Data.NHibernate" />
+	<object id="UdalostRepository" parent="Repository" type="RezervacniSystem.Data.NHibernate.UdalostRepository, RezervacniSystem.Data.NHibernate" />
+	<object id="TerminUdalostiRepository" parent="Repository" type="RezervacniSystem.Data.NHibernate.TerminUdalostiRepository, RezervacniSystem.Data.NHibernate" />
+	<object id="KlientRepository" parent="Repository" type="RezervacniSystem.Data.NHibernate.KlientRepository, RezervacniSystem.Data.NHibernate" />
+	<object id="TerminRezervaceRepository" parent="Repository" type="RezervacniSystem.Data.NHibernate.TerminRezervaceRepository, RezervacniSystem.Data.NHibernate" />
+	<object id="RezervaceTerminuRepository" parent="Repository" type="RezervacniSystem.Data.NHibernate.RezervaceTerminuRepository, RezervacniSystem.Data.NHibernate" />
+	<object id="RegistraceKlientaRepository" parent="Repository" type="RezervacniSystem.Data.NHibernate.RegistraceKlientaRepository, RezervacniSystem.Data.NHibernate" />
+	<object id="KlientskaZpravaRepository" parent="Repository" type="RezervacniSystem.Data.NHibernate.KlientskaZpravaRepository, RezervacniSystem.Data.NHibernate" />
+	<object id="PozadavekNaRegistraciKlientaRepository" parent="Repository" type="RezervacniSystem.Data.NHibernate.PozadavekNaRegistraciKlientaRepository, RezervacniSystem.Data.NHibernate" />
+
+	<object id="UdalostFactory" type="RezervacniSystem.Domain.Model.Udalosti.UdalostFactory, RezervacniSystem.Domain">
+		<constructor-arg ref="PoskytovatelRepository" />
+	</object>
+
+	<object id="SpravaUdalostiService" type="RezervacniSystem.Application.Impl.SpravaUdalostiService, RezervacniSystem.Application">
+		<constructor-arg ref="UdalostRepository" />
+		<constructor-arg ref="PoskytovatelRepository" />
+		<constructor-arg ref="TerminUdalostiRepository" />
+		<constructor-arg ref="UdalostFactory" />
+		<constructor-arg ref="RezervaceTerminuRepository" />
+		<constructor-arg ref="KlientskaZpravaRepository" />
+		<constructor-arg ref="TerminRezervaceRepository" />
+	</object>
+	<object id="SpravaTerminuService" type="RezervacniSystem.Application.Impl.SpravaTerminuService, RezervacniSystem.Application">
+		<constructor-arg ref="UdalostRepository" />
+		<constructor-arg ref="TerminUdalostiRepository" />
+		<constructor-arg ref="RezervaceTerminuRepository" />
+		<constructor-arg ref="KlientskaZpravaRepository" />
+		<constructor-arg ref="TerminRezervaceRepository" />
+	</object>
+	<object id="SpravaPoskytovateluService" type="RezervacniSystem.Application.Impl.SpravaPoskytovateluService, RezervacniSystem.Application">
+		<constructor-arg ref="PoskytovatelRepository" />
+		<constructor-arg ref="UdalostRepository" />
+		<constructor-arg ref="TerminUdalostiRepository" />
+		<constructor-arg ref="RezervaceTerminuRepository" />
+		<constructor-arg ref="KlientskaZpravaRepository" />
+		<constructor-arg ref="TerminRezervaceRepository" />
+		<constructor-arg ref="RegistraceKlientaRepository" />
+		<constructor-arg ref="KlientRepository" />
+	</object>
+	<object id="RezervaceService" type="RezervacniSystem.Application.Impl.RezervaceService, RezervacniSystem.Application">
+		<constructor-arg ref="PoskytovatelRepository" />
+		<constructor-arg ref="UdalostRepository" />
+		<constructor-arg ref="TerminUdalostiRepository" />
+		<constructor-arg ref="KlientRepository" />
+		<constructor-arg ref="TerminRezervaceRepository" />
+		<constructor-arg ref="RezervaceTerminuRepository" />
+		<constructor-arg ref="RegistraceKlientaRepository" />
+		<constructor-arg ref="KlientskaZpravaRepository" />
+	</object>
+	<object id="RegistraceKlientaUPoskytovateleService" type="RezervacniSystem.Application.Impl.RegistraceKlientaUPoskytovateleService, RezervacniSystem.Application">
+		<constructor-arg ref="PoskytovatelRepository" />
+		<constructor-arg ref="KlientRepository" />
+		<constructor-arg ref="RegistraceKlientaRepository" />
+		<constructor-arg ref="PozadavekNaRegistraciKlientaRepository" />
+		<constructor-arg ref="KlientskaZpravaRepository" />
+	</object>
+</objects>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codesense version="1.0">
+
+	<!--Language keywords-->
+
+	<set name="io.7th.golang.keywords.control">
+		<completion string="break">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(;)|[^;]</matched-suffix>
+					<transform-into>(?1::;)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="case">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>([^\n\r]?)|[\n\r]</matched-suffix>
+					<transform-into>(?1:: ${1:condition}:)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="catch">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\()|\s*[^(]|[^\s(]</matched-suffix>
+					<transform-into>(?1:: (${1:error}\) {
+	$0
+})</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="continue">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(;)|[^;]</matched-suffix>
+					<transform-into>(?1::;)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="default">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(:)|[^:]</matched-suffix>
+					<transform-into>(?1:::)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="else">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\{)|\s*[^{]|[^\s{]</matched-suffix>
+					<transform-into>(?1:: {
+	$0
+})</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="finally">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\{)|\s*[^{]|[^\s{]</matched-suffix>
+					<transform-into>(?1:: {
+	$0
+})</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="for">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\()|\s*[^(]|[^\s(]</matched-suffix>
+					<transform-into>(?1:: (${1:${2:var i = 0}; ${3:i &lt; count}; ${4:i++}}\) {
+	$0
+})</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="if">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\()|(\s*\{)|\s*[^(]|[^\s(]</matched-suffix>
+					<transform-into>(?1::(?2: ($0\): ($1\) {
+	$0
+}))</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="return" />
+		<completion string="switch">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\()|\s*[^(]|[^\s(]</matched-suffix>
+					<transform-into>(?1:: ($1\) {
+	$0
+})</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="throw" />
+		<completion string="try">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\{)|\s*[^{]|[^\s{]</matched-suffix>
+					<transform-into>(?1:: {
+	$0
+})</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="nil" />
+	</set>
+	
+	<set name="io.7th.golang.keywords.elseif">
+		<completion string="else if">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\()|(\s*\{)|\s*[^(]|[^\s(]</matched-suffix>
+					<transform-into>(?1::(?2: ($0\): ($1\) {
+	$0
+}))</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+	</set>
+	
+	<set name="io.7th.golang.keywords">
+		<completion string="func">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\(|\s+[a-zA-Z_$])|\s*[^(a-zA-Z_$]|[^\s(]</matched-suffix>
+					<transform-into>(?1:: ${1:name}($2\) {$3})</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string="go"/>
+		<completion string="goto"/>
+		<completion string="new"/>
+		<completion string="var" />
+		<completion string="fallthrough"/>
+		<completion string="defer"/>
+		
+		<completion string="type" />
+		<completion string="const" />
+		<completion string="import" />
+		<completion string="package" />
+		<completion string="chan" />
+		<completion string="struct" />
+		<completion string="interface" />
+		<completion string="select" />
+		<completion string="map" />
+		<completion string="range" />
+		
+		<completion string="true" />
+		<completion string="false" />
+		<completion string="nil" />
+	</set>
+	
+	<!--Natives and static class properties-->
+	
+	<set name="io.7th.golang.natives">
+		<behavior>
+			<append-dynamic>
+				<matched-suffix>(\()|[^(]</matched-suffix>
+				<transform-into>(?1::($1\))</transform-into>
+			</append-dynamic>
+		</behavior>
+		
+		<completion string="byte" />
+		<completion string="string" />
+		<completion string="boolean" />
+		<completion string="uint" />
+		<completion string="int" />
+		<completion string="uintptr" />
+		
+		<completion string="uint8" />
+		<completion string="uint16" />
+		<completion string="uint32" />
+		<completion string="uint64" />
+		<completion string="int8" />
+		<completion string="int16" />
+		<completion string="int32" />
+		<completion string="int64" />
+		<completion string="float32" />
+		<completion string="float64" />
+		<completion string="complex64" />
+		<completion string="complex128" />
+		<completion string="byte" />
+		<completion string="rune" />
+	</set>
+	
+	<!--Language functions-->
+	
+	<set name="io.7th.golang.functions">
+		<!--Of the following, the largest group uses strings-->
+		<behavior>
+			<append-dynamic>
+				<matched-suffix>(\()|[^(]</matched-suffix>
+				<transform-into>(?1::(${1:string}\))</transform-into>
+			</append-dynamic>
+		</behavior>
+		<completion string="make">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\()|[^(]</matched-suffix>
+					<transform-into>(?1::(${1:sliceType}, ${2:length}, ${3:capacity}\))</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+	</set>
+
+</codesense>

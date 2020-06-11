@@ -1,0 +1,89 @@
+.contentroot {
+    margin-left: 10px;
+}
+
+.hidden {
+    display : none;
+}
+
+.visible {
+    display: block;
+}
+
+#load-screen, #level-complete {
+    padding-top : 50px;
+    width : 600px;
+    height : 300px;
+    background-color: Black; 
+    text-align : center;   
+    color: white;
+}
+
+#load-screen {
+    background-image: url("../Images/VikingTitle.png");
+    background-repeat: no-repeat;
+    background-size: 100% 110%;
+}
+
+#load-screen input {
+    height : 30px;
+    width : auto;
+    margin-right : 10px;
+    border-style : none;
+    cursor : pointer;
+}
+
+#load {
+    margin-top: 150px;
+    width : 500px;
+    height : 40px;
+    display : inline-block;
+}
+
+#progress {
+    background-color: white;
+    width : 0%;
+    height : 100%;
+}
+
+#game-display {
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    width : 610px;
+    text-align: center;
+    font-size: 1em;
+    font-family : 'Segoe UI';
+    color : #FFF;
+}
+
+#coords {
+    text-align : left;
+    float: left;
+    padding-left: 10px;
+}
+
+#clock {
+
+    text-align : right;
+    float: right;
+    padding-right: 10px;
+}
+
+#buttons {
+    width: 610px;
+}
+
+#keys {
+   clear : both;
+}
+
+#output {
+    height : 300px;
+    width: 300px;   
+    border-style: solid; 
+    overflow : scroll;
+    clear : both;
+    padding : 5px;
+    display : block;
+}

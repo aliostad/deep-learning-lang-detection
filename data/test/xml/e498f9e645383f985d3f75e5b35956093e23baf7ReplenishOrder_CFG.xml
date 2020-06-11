@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<workbook>
+	<worksheet name="Sheet1">
+
+		<loop startRow="0" endRow="0" items="replenishOrderVoList" var="replenishOrderVo"
+			varType="com.tjhx.entity.order.ReplenishOrderVo">
+			<section startRow="0" endRow="0">
+				<mapping row="0" col="0">replenishOrderVo.productNo</mapping><!-- 
+					货号 -->
+				<mapping row="0" col="3">replenishOrderVo.productNum1</mapping>
+				<mapping row="0" col="4">replenishOrderVo.productNum2</mapping>
+				<mapping row="0" col="5">replenishOrderVo.productNum3</mapping>
+				<mapping row="0" col="6">replenishOrderVo.productNum4</mapping>
+				<mapping row="0" col="7">replenishOrderVo.productNum5</mapping>
+				<mapping row="0" col="8">replenishOrderVo.productNum6</mapping>
+				<mapping row="0" col="9">replenishOrderVo.productNum7</mapping>
+				<mapping row="0" col="10">replenishOrderVo.productNum8</mapping>
+				<mapping row="0" col="11">replenishOrderVo.productNum9</mapping>
+				<mapping row="0" col="12">replenishOrderVo.productNum10</mapping>
+				<mapping row="0" col="13">replenishOrderVo.productNum11</mapping>
+				<mapping row="0" col="14">replenishOrderVo.productNum13</mapping>
+				<mapping row="0" col="15">replenishOrderVo.productNum15</mapping>
+				<mapping row="0" col="16">replenishOrderVo.productNum16</mapping>
+				<mapping row="0" col="17">replenishOrderVo.productNum17</mapping>
+				<mapping row="0" col="18">replenishOrderVo.productNum18</mapping>
+				<mapping row="0" col="19">replenishOrderVo.productNum19</mapping>
+				<mapping row="0" col="20">replenishOrderVo.productNum20</mapping>
+				<mapping row="0" col="21">replenishOrderVo.productNum21</mapping>
+				<mapping row="0" col="22">replenishOrderVo.productNum22</mapping>
+				<mapping row="0" col="23">replenishOrderVo.productNum23</mapping>
+				<mapping row="0" col="24">replenishOrderVo.productNum24</mapping>
+				<mapping row="0" col="25">replenishOrderVo.productNum25</mapping>
+				<mapping row="0" col="26">replenishOrderVo.productNum26</mapping>
+				<mapping row="0" col="27">replenishOrderVo.productNum27</mapping>
+				<!-- -->
+			</section>
+			<loopbreakcondition>
+				<rowcheck offset="0">
+					<cellcheck offset="0"></cellcheck>
+				</rowcheck>
+			</loopbreakcondition>
+		</loop>
+	</worksheet>
+</workbook>

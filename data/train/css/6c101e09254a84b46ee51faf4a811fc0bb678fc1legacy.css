@@ -1,0 +1,81 @@
+h1,h2,h3,h4 { font-family: sans-serif; font-weight: light }
+h2 { color: navy }
+
+h1 { font-size: 250%; line-height: 90%; }
+h1 small { font-size: 60%; color: #bfbfbf; font-weight: 200; }
+
+table.api {
+  min-width: 900px;
+  /*border-spacing: 0*/
+}
+table.api > tbody > tr > td:first-child {
+  font-size: normal;
+  padding: 1em;
+  color: navy;
+  font-family: 'Gotham Narrow SSm', 'Helvetica Neue', Helvetica, sans-serif;
+  vertical-align: top;
+  background-color: #ffffff;
+  border-right: 2px solid navy;
+  width: 200px;
+}
+
+table.api > tbody > tr > td:nth-child(2) {
+/*    padding: 0.2em 0.75em;*/
+  padding: 0.75em 0.75em 0.75em 0.5em;
+  width: 700px;
+/*    border-bottom: 0.75em solid transparent;
+  border-top: 0.75em solid transparent;
+*/  }
+
+.url { font-family: monospace; font-size: large }
+.http-verb {
+  background-color: blue;
+  border-radius: 3pt;
+  color: white;
+  padding: 0.3em;
+  margin-right: 1em;
+  font-size: 90%;
+  font-family: sans-serif;
+}
+pre.code {
+  border-radius: 5pt;
+  /*background-color: #dfdfdf;*/
+  background-color: #002039;
+  color: white;
+  font-family: monospace;
+  padding: 1em;
+  min-width: 500px
+}
+table.api pre.code {
+  max-width: 680px;
+  white-space: pre-wrap;
+}
+table.api p {
+  margin: 0;
+}
+
+/*table.api table > tbody > tr > td ul { margin: 0; padding-left: 1.5em }*/
+/*table.api table > tbody > tr > td li { margin: 0; }*/
+ul { margin: 0; padding-left: 1.5em; }
+li { margin: 0; }
+
+table.api table > tbody > tr > td small { font-family: sans-serif; color: #9d9d9d; font-size: smaller }
+
+table.api table.params > tbody > tr > td { vertical-align: middle; padding: 0.5em }
+table.api table.params > tbody > tr > td:first-child { font-family: monospace; font-size: large; width: 20% }
+/*  table.api table.params > tbody > tr > td:first-child small { font-family: sans-serif; color: #bfbfbf; font-size: small }*/
+table.api table.params > tbody > tr > td:nth-child(2) { font-family: monospace; width: 15%; color: grey }
+
+table.api table { padding: 0; width: 100%; margin: 0.5em 0 }
+/* table.api table > tbody > tr:nth-child(2n) { background-color: #ffe1ee } */
+table.api table > tbody > tr > td { border-bottom: 1px solid lightgrey }
+table.api table > tbody > tr:last-child > td { border-bottom: 0px }
+
+table.http-status-codes > tbody > tr > td:first-child { width: 3em; background-color: white; vertical-align: top; }
+table.api table.http-status-codes > tbody > tr > td { border-bottom: 0 }
+span.http-status-code { background-color: green; border-radius: 3pt; color: white; padding: 0.3em; margin-right: 1em; font-size: 75%; font-family: sans-serif; }
+span.http-status-code.error { background-color: red;  }
+span.http-status-code.misc { background-color: #CCCC00;  }
+
+table.api table.enum > tbody > tr > td { border-bottom: 0 }
+table.api table.enum > tbody > tr > td:first-child { font-family: monospace; font-size:large; }

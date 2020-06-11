@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document 启动页 */
+.show-start .smartbanner,.show-start .m-home,.show-start .ios{ display:none;}.show-start .m-start{ display:block;}.show-start{ margin:0!important;}
+.m-start{ padding:0; height:100%;}
+.open-show{ position:absolute;min-height:416px; max-height:740px; width:100%; height:100%;display:box;display:-webkit-box;display:-moz-box;display:-o-box;box-orient:vertical;-webkit-box-orient:vertical;-moz-box-orient:vertical;-o-box-orient:vertical;}
+.open-show p{ text-align:center; overflow:hidden; width:100%;}
+.open-show .p1{ padding-top:20px;box-flex:1.0; -moz-box-flex:1.0; -webkit-box-flex:1.0; -o-box-flex:1.0; min-height:43px;}
+.open-show .p1 img{ width:290px; height:43px;}
+.open-show .p2{text-align:center; width:100%; height:42px; line-height:40px;}
+.open-show .p2 a{ border-radius:5px; overflow:hidden; border:1px solid #7f7f7f; display:inline-block; margin:0 10px; width:133px;}
+.open-show .p3{ padding-bottom:20px;}
+.open-show .p3 i{ background-image:url(http://i0.letvimg.com/img/201312/10/1443/open-icon.png); width:16px; height:16px; background-size:100%; margin-top:9px;}
+.open-show .p3 b{ color:#fff; padding-left:5px;}
+.open-show .p3 span{ padding-left:160px;}
+.open-show .p3 .active i{ background-position:left -16px;}
+.open-show .p4{box-flex:1.0; -moz-box-flex:1.0; -webkit-box-flex:1.0; -o-box-flex:1.0;}
+.open-show .p4 img{ width:320px; height:275px;}
+.a-btn,.nextOff{ background-color:#fff;}
+@media screen and (min-width:480px){
+	/*
+	.open-show img{ width:480px;}
+	.open-show .p2{ bottom:22.5%;}
+	.open-show .p3{ bottom:13%;}
+	*/
+}

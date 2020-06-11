@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project>
+
+<sequence default="duplicate">
+
+	<property name="ip" value="123.1232.123.123"/>
+
+	<order name="duplicate">
+		<foreach items="//instance" item-name="svr">
+			<set-attribute-value target-element="§[svr]§" target-attribute="IP_priv" new-value=""/>
+			<echo message="instance §[§[svr]§/@name]§ / IP:§[§[svr]§/@IP_priv]§"/>
+	
+			<set-attribute-value target-element="§[svr]§" target-attribute="IP_priv" new-value="§[ip]§"/>
+			<echo message="instance §[§[svr]§/@name]§ / IP:§[§[svr]§/@IP_priv]§"/>
+		</foreach>
+	</order>
+
+	<order name="duplicate">
+		<echo/>	
+	</order>
+
+</sequence>

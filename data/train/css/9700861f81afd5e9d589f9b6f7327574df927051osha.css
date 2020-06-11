@@ -1,0 +1,107 @@
+#edit-changed-wrapper {
+  width: 500px;
+}
+
+#edit-changed-wrapper label,
+#edit-changed-wrapper div.views-widget label:first-child,
+#edit-changed-wrapper div.form-item,
+#edit-changed-wrapper #edit-changed-min,
+#edit-changed-wrapper div.views-widget
+{
+  display: inline;
+}
+
+#edit-changed-wrapper label:first-child {
+  display: block;
+}
+
+
+.view-id-tmgmt_node_selection_view div.sort-by-wrapper {
+  clear: both;
+}
+
+tr.osha_newsletter_section_admin_content {
+  background: #d3e7f4;
+}
+
+
+/* newsletter wrapper */
+.newsletter-wrapper table,
+.newsletter-wrapper tr td:last-child {
+  border: 0px;
+  margin-bottom: 0px;
+}
+
+.newsletter-wrapper .blue-line td,
+.newsletter-wrapper .right-column td,
+.newsletter-wrapper .left-column td {
+  padding: 0px;
+}
+
+.newsletter-wrapper .newsletter-month,
+.newsletter-wrapper .newsletter-number {
+  height: 31px;
+}
+
+.newsletter-wrapper .category-name td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+/* view-id-reporting_view */
+.view-id-reporting_view .view-header{
+  padding: 10px;
+  background-color: #DDDDDD;
+  border-radius: 5px;
+}
+.view-id-reporting_view .view-header h4{
+  color: #606060;
+}
+.view-id-reporting_view .view-header h4 > span{
+  color: #3399FF;
+}
+.view-id-reporting_view .views-exposed-form {
+    border: 1px solid #000;
+    margin-top: 20px;
+}
+.view-id-reporting_view #views-exposed-form-reporting-view-page .views-exposed-widget{
+  margin: 4px 0 4px;
+  text-align: left;
+  padding-left: 10px;
+}
+.view-id-reporting_view #views-exposed-form-reporting-view-page .views-submit-button{
+  padding-left: 20px;
+}
+
+.view-id-reporting_view .view-content{
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.view-id-reporting_view .view-content h3{
+  padding-left: 30px;
+  font-size: 1.2em;
+  background-color: 
+}
+.view-id-reporting_view .view-content h3 ~ .views-row{
+  padding: 10px;
+}
+.view-id-reporting_view .view-content h3 ~ .views-row-odd{
+  background-color: #ededed;
+  padding: 10px;
+}
+.view-id-reporting_view .view-content h3 ~ .views-row-even{
+  background-color: #e4e4e4;
+  padding: 10px;
+}
+
+.view-id-reporting_view .view-footer{
+  padding-top: 10px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+ul.primary {
+  height: auto;
+}

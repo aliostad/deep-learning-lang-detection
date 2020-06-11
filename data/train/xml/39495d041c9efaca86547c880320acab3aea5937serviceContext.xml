@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+    
+	<!-- 角色 service -->	
+	<bean id="roleService" class="com.dihaiboyun.cms.service.impl.RoleServiceImpl"/>
+	
+	<!-- 菜单 service -->	
+	  <bean id="menuService" class="com.dihaiboyun.cms.service.impl.MenuServiceImpl"/>
+	
+	<!-- 目录 service -->	
+	  <bean id="catalogService" class="com.dihaiboyun.cms.service.impl.CatalogServiceImpl"/>
+	
+	<!-- 模块 service -->	
+	  <bean id="moduleService" class="com.dihaiboyun.cms.service.impl.ModuleServiceImpl"/>
+	
+	<!-- 用户角色 service -->	
+	  <bean id="managerRoleService" class="com.dihaiboyun.cms.service.impl.ManagerRoleServiceImpl"/>
+	  
+	  <!-- 日志 service -->	
+	  <bean id="logsService" class="com.dihaiboyun.cms.service.impl.LogsServiceImpl"/>
+	  
+	  <!-- 频道 service -->	
+	  <bean id="channelService" class="com.dihaiboyun.cms.service.impl.ChannelServiceImpl"/>
+	  
+	  <!-- 模板 service -->	
+	  <bean id="templeteService" class="com.dihaiboyun.cms.service.impl.TempleteServiceImpl"/>
+	  
+	  <!-- 模板标签 service -->	
+	  <bean id="templeteTagService" class="com.dihaiboyun.cms.service.impl.TempleteTagServiceImpl"/>
+	  
+	  <!-- 文章栏目 service -->	
+	  <bean id="articleColumnService" class="com.dihaiboyun.cms.service.impl.ArticleColumnServiceImpl"/>
+	  
+	  <!-- 文章类别 service -->	
+	  <bean id="articleCategoryService" class="com.dihaiboyun.cms.service.impl.ArticleCategoryServiceImpl"/>
+	  
+	  <!-- 文章 service -->	
+	  <bean id="articleService" class="com.dihaiboyun.cms.service.impl.ArticleServiceImpl"/>
+	  
+	  <!-- 块 service -->	
+	  <bean id="blockService" class="com.dihaiboyun.cms.service.impl.BlockServiceImpl"/>
+	  
+	  <!-- 友链网站 service -->	
+	  <bean id="linkSiteService" class="com.dihaiboyun.cms.service.impl.LinkSiteServiceImpl"/>
+	  
+	  <!-- 友链页面 service -->	
+	  <bean id="linkPageService" class="com.dihaiboyun.cms.service.impl.LinkPageServiceImpl"/>
+	  
+	  <!-- 友链网页与网站关系 service -->	
+	  <bean id="linkRelationService" class="com.dihaiboyun.cms.service.impl.LinkRelationServiceImpl"/>
+	  
+</beans>

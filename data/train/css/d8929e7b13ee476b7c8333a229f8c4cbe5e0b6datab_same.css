@@ -1,0 +1,16 @@
+/* 表单样式相同的 */
+.order_form table a:hover{ color:#ef1818; }
+.order_form table tr th{ height:36px; background:#f7f5f6; font-weight:bold; }
+.order_form table tr td{ height:25px; border-bottom:1px solid #f4f4f4; background:#fff; text-align:center;}
+.model{ width:168px;  /* background:url(../images/square.gif) no-repeat;*/}
+.size{ width:112px; }
+.guige{ width:190px; }
+.number{ width:122px; }
+.total{ width:198px; }
+.operation{ width:150px;}
+.order_form table tr td.model_infor{ background:url(../images/square.gif) no-repeat 21px center;}
+.model_infor a{ color:#040404; }
+.money,.freight{ display:block; }
+.money{ color:#060606; }
+.freight{ color:#b9b9bb; }
+.delet{ color:#565455; }

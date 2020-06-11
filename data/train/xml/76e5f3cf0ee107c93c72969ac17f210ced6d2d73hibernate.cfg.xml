@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+  "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+   <session-factory>
+        <mapping package="server" />
+        <mapping class="server.data.ObjectSystemData" />
+        <mapping class="server.Acl" />
+        <mapping class="server.AclEntry" />
+        <mapping class="server.AclEntryPermission" />
+        <mapping class="server.trigger.ChangeTriggerType"/>
+        <mapping class="server.trigger.ChangeTrigger"/>
+        <mapping class="server.ConfigEntry" />
+        <mapping class="server.CustomTable" />
+        <mapping class="server.Folder" />
+        <mapping class="server.FolderMetaset" />
+        <mapping class="server.FolderType" />
+        <mapping class="server.Format" />
+        <mapping class="server.Group" />
+        <mapping class="server.GroupUser" />
+        <mapping class="server.index.IndexItem"/>
+		<mapping class="server.index.IndexType"/>
+		<mapping class="server.index.IndexGroup"/>
+		<mapping class="server.i18n.Language" />
+		<mapping class="server.i18n.Message" />
+        <mapping class="server.lifecycle.LifeCycle"/>
+        <mapping class="server.lifecycle.LifeCycleState"/>
+        <mapping class="server.Metaset" />
+        <mapping class="server.MetasetType" />
+        <mapping class="server.ObjectType" />
+        <mapping class="server.OsdMetaset" />
+        <mapping class="server.Permission" />
+        <mapping class="server.Relation" />
+        <mapping class="server.RelationResolver"/>
+        <mapping class="server.RelationType" />
+        <mapping class="server.Session" />
+        <mapping class="server.transformation.Transformer"/>
+        <mapping class="server.i18n.UiLanguage"/>
+        <mapping class="server.User" />
+    </session-factory>
+
+</hibernate-configuration>

@@ -1,0 +1,409 @@
+@import url(../reset.css);
+html,
+body,
+.warp {
+  width: 100%;
+  height: 100%;
+  background: #f1f1f1;
+}
+.warp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.warp header {
+  width: 100%;
+  height: 3.6rem;
+  background: #f7f7f7;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 3.6rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eaeaea;
+}
+.warp header .sap-header-left {
+  display: block;
+  width: 1.4rem;
+  height: 3.6rem;
+  background: none;
+}
+.warp header .sap-header-left > img {
+  width: 1.4rem;
+  height: auto;
+  background: none;
+  vertical-align: middle;
+}
+.warp header .sap-header-title {
+  -webkit-box-flex: 1;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+.warp header .sap-header-right {
+  display: block;
+  width: 1.6rem;
+  height: 3.6rem;
+  background: none;
+}
+.warp header .sap-header-right > img {
+  width: 1.6rem;
+  height: auto;
+  background: none;
+  vertical-align: middle;
+}
+.warp section {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: auto;
+}
+.warp section::-webkit-scrollbar {
+  width: 0;
+}
+.warp section .banner-bg {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.warp section .banner-bg > img {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.warp section .sap-signature {
+  width: 100%;
+  height: 5.5rem;
+  background: #ffffff;
+  border-bottom: 1px solid #fafafa;
+  padding: 0 1rem;
+  margin-bottom: 0.4rem;
+  box-sizing: border-box;
+  position: relative;
+}
+.warp section .sap-signature .sap-portrait {
+  display: inline-block;
+  width: 3.8rem;
+  height: 3.8rem;
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: -2.4rem;
+}
+.warp section .sap-signature .sap-portrait > img {
+  width: 3.8rem;
+  height: auto;
+  background: none;
+}
+.warp section .sap-signature .sap-personal-info {
+  font-size: 1rem;
+  color: #b9b9b9;
+  word-wrap: break-word;
+  position: relative;
+  padding-left: 4.5rem;
+  box-sizing: border-box;
+}
+.warp section .sap-signature .sap-personal-info .sap-personal-name {
+  color: #e4e4e4;
+  position: absolute;
+  top: -2rem;
+  left: 4.5rem;
+}
+.warp section .sap-signature .sap-personal-info > img {
+  width: 1rem;
+  height: auto;
+  background: none;
+}
+.warp section .sap-signature .sap-personal-info .sap-dream {
+  color: #7577bd;
+  float: right;
+}
+.warp section .sap-signature .sap-describe {
+  color: #686868;
+  padding-top: 0.8rem;
+  box-sizing: border-box;
+}
+.warp section .sap-write-info {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border-top: 1px solid #fafafa;
+  border-bottom: 1px solid #fbfbfb;
+  margin-bottom: 0.4rem;
+}
+.warp section .sap-write-info > h3 {
+  width: 100%;
+  height: 3rem;
+  background: none;
+  line-height: 3rem;
+  font-size: 14px;
+  color: #2e2e2e;
+  padding-left: 1rem;
+  box-sizing: border-box;
+  border-bottom: 2px solid #fbfbfb;
+}
+.warp section .sap-write-info .write-ness {
+  width: 100%;
+  height: 2.5rem;
+  background: none;
+  line-height: 2.5rem;
+  padding: 0 0.9rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #fbfbfb;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.warp section .sap-write-info .write-ness .write-left {
+  display: block;
+  width: 1.4rem;
+  height: 2.5rem;
+  background: none;
+}
+.warp section .sap-write-info .write-ness .write-left > img {
+  width: 1.4rem;
+  height: auto;
+  background: none;
+  vertical-align: middle;
+}
+.warp section .sap-write-info .write-ness > span {
+  -webkit-box-flex: 1;
+  display: block;
+  font-size: 12px;
+  color: #5a5a5a;
+  letter-spacing: 2px;
+  padding-left: 0.6rem;
+  padding-top: 0.1rem;
+  box-sizing: border-box;
+}
+.warp section .sap-write-info .write-ness .write-right {
+  display: block;
+  width: 0.8rem;
+  height: 2.5rem;
+  background: none;
+}
+.warp section .sap-write-info .write-ness .write-right > img {
+  width: 0.8rem;
+  height: auto;
+  background: none;
+  vertical-align: middle;
+}
+.warp section .sap-write-choose {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border-top: 1px solid #fafafa;
+  border-bottom: 1px solid #fbfbfb;
+  margin-bottom: 0.4rem;
+}
+.warp section .sap-write-choose > h3 {
+  width: 100%;
+  height: 3rem;
+  background: none;
+  line-height: 3rem;
+  font-size: 14px;
+  color: #2e2e2e;
+  padding-left: 1rem;
+  box-sizing: border-box;
+  border-bottom: 2px solid #fbfbfb;
+}
+.warp section .sap-write-choose .write-ness {
+  width: 100%;
+  height: 2.5rem;
+  background: none;
+  line-height: 2.5rem;
+  padding: 0 0.9rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #fbfbfb;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.warp section .sap-write-choose .write-ness .write-left {
+  display: block;
+  width: 1.2rem;
+  height: 2.5rem;
+  background: none;
+}
+.warp section .sap-write-choose .write-ness .write-left > img {
+  width: 1.2rem;
+  height: auto;
+  background: none;
+  vertical-align: middle;
+}
+.warp section .sap-write-choose .write-ness > span {
+  -webkit-box-flex: 1;
+  display: block;
+  font-size: 12px;
+  color: #5a5a5a;
+  letter-spacing: 2px;
+  padding-left: 0.6rem;
+  padding-top: 0.1rem;
+  box-sizing: border-box;
+}
+.warp section .sap-write-choose .write-ness .write-eyes {
+  display: block;
+  width: 1.9rem;
+  height: 2.5rem;
+  background: none;
+  margin-right: 0.9rem;
+}
+.warp section .sap-write-choose .write-ness .write-eyes > img {
+  width: 1.9rem;
+  height: auto;
+  background: none;
+  vertical-align: middle;
+}
+.warp section .sap-write-choose .write-ness .write-right {
+  display: block;
+  width: 0.8rem;
+  height: 2.5rem;
+  background: none;
+}
+.warp section .sap-write-choose .write-ness .write-right > img {
+  width: 0.8rem;
+  height: auto;
+  background: none;
+  vertical-align: middle;
+}
+.warp section .sap-qrcode {
+  width: 100%;
+  height: 2.4rem;
+  background: #ffffff;
+  border-top: 1px solid #f8f8f8;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  line-height: 2.4rem;
+  margin-bottom: 0.4rem;
+}
+.warp section .sap-qrcode > i {
+  float: left;
+  font-style: normal;
+  font-size: 14px;
+  color: #484848;
+}
+.warp section .sap-qrcode > a {
+  float: right;
+  width: 0.8rem;
+  height: 2.5rem;
+  background: none;
+}
+.warp section .sap-qrcode > a > img {
+  width: 0.8rem;
+  height: auto;
+  background: none;
+  vertical-align: middle;
+}
+.warp section .shop-baseinfo {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border-top: 1px solid #fafafa;
+  border-bottom: 1px solid #fbfbfb;
+  margin-bottom: 0.4rem;
+}
+.warp section .shop-baseinfo > h3 {
+  width: 100%;
+  height: 3rem;
+  background: none;
+  line-height: 3rem;
+  font-size: 14px;
+  color: #2e2e2e;
+  padding-left: 1rem;
+  box-sizing: border-box;
+  border-bottom: 2px solid #fbfbfb;
+}
+.warp section .shop-baseinfo .baseinfo {
+  width: 100%;
+  height: 2.5rem;
+  background: none;
+  line-height: 2.5rem;
+  padding: 0 0.9rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #fbfbfb;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.warp section .shop-baseinfo .baseinfo .baseinfo-left {
+  display: block;
+  width: 1.2rem;
+  height: 2.5rem;
+  background: none;
+}
+.warp section .shop-baseinfo .baseinfo .baseinfo-left > img {
+  width: 1.2rem;
+  height: auto;
+  background: none;
+  vertical-align: middle;
+}
+.warp section .shop-baseinfo .baseinfo > span {
+  -webkit-box-flex: 1;
+  display: block;
+  font-size: 12px;
+  color: #5a5a5a;
+  letter-spacing: 2px;
+  padding-left: 0.6rem;
+  padding-top: 0.1rem;
+  box-sizing: border-box;
+}
+.warp section .shop-baseinfo .baseinfo .baseinfo-right {
+  display: block;
+  width: 0.8rem;
+  height: 2.5rem;
+  background: none;
+}
+.warp section .shop-baseinfo .baseinfo .baseinfo-right > img {
+  width: 0.8rem;
+  height: auto;
+  background: none;
+  vertical-align: middle;
+}
+.warp section .addressee-info {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border-top: 1px solid #fafafa;
+  border-bottom: 1px solid #fbfbfb;
+}
+.warp section .addressee-info > h3 {
+  width: 100%;
+  height: 3rem;
+  background: none;
+  line-height: 3rem;
+  font-size: 14px;
+  color: #2e2e2e;
+  padding-left: 1rem;
+  box-sizing: border-box;
+  border-bottom: 2px solid #fbfbfb;
+}
+.warp section .addressee-info .addressee {
+  height: 4.6rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.warp section .addressee-info .addressee .addressee-left {
+  -webkit-box-flex: 1;
+  line-height: 2rem;
+  padding-top: 0.4rem;
+  box-sizing: border-box;
+}
+.warp section .addressee-info .addressee .addressee-left i {
+  font-style: normal;
+  color: #323232;
+  font-weight: bold;
+}
+.warp section .addressee-info .addressee .addressee-left i:first-child {
+  margin-right: 1rem;
+}
+.warp section .addressee-info .addressee .addressee-right {
+  display: block;
+  width: 0.8rem;
+  height: 2.5rem;
+  background: none;
+  line-height: 4.6rem;
+}
+.warp section .addressee-info .addressee .addressee-right > img {
+  width: 0.8rem;
+  height: auto;
+  background: none;
+  vertical-align: middle;
+}

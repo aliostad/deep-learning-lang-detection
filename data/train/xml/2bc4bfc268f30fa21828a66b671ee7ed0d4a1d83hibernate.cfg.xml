@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/databasename</property>
+        <property name="hibernate.connection.username">username</property>
+        <property name="hibernate.connection.password">password</property>
+
+        <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.max_size">20</property>
+        <property name="hibernate.c3p0.timeout">300</property>
+        <property name="hibernate.c3p0.max_statements">50</property>
+        <property name="hibernate.c3p0.idle_test_period">3000</property>
+
+        <mapping class="ranktracker.entity.Commonseo" />
+        <mapping class="ranktracker.entity.Relatedwebsite" />
+        <mapping class="ranktracker.entity.Headingcount" />
+        <mapping class="ranktracker.entity.Headingelements" />
+        <mapping class="ranktracker.entity.Image" />
+        <mapping class="ranktracker.entity.Xmldata" />
+        <mapping class="ranktracker.entity.Technology" />
+        <mapping class="ranktracker.entity.Visitorarray" />
+        <mapping class="ranktracker.entity.Pagelinks" />
+        <mapping class="ranktracker.entity.Webmastergraph" />
+        <mapping class="ranktracker.entity.Webmasterquery" />
+        <mapping class="ranktracker.entity.Webmasterurl" />
+        <mapping class="ranktracker.entity.Webmastersitemap" />
+        <mapping class="ranktracker.entity.Webmastercrawlerrorscount" />
+        <mapping class="ranktracker.entity.Webmastercrawlerrorssamples" />
+        <mapping class="ranktracker.entity.Campaigns" />
+        <mapping class="ranktracker.entity.Serpkeywords" />
+        <mapping class="ranktracker.entity.Seokeyworddetails" />
+        <mapping class ="ranktracker.entity.Alertsdata" />
+        <mapping class ="ranktracker.entity.Campaigns" />
+        <mapping class ="ranktracker.entity.Customers" />
+        <mapping class ="ranktracker.entity.Serpkeywords" />
+        <mapping class ="ranktracker.entity.Mailhistory" />
+        <mapping class ="ranktracker.entity.Payments" />
+        <mapping class ="ranktracker.entity.Plans" />
+        <mapping class ="ranktracker.entity.Proxydata" />
+        <mapping class ="ranktracker.entity.Trackhistory" />
+        <mapping class ="ranktracker.entity.Users" />
+        <mapping class ="ranktracker.entity.Reportfrequency" />
+        <mapping class ="ranktracker.entity.Site" />
+        <mapping class ="ranktracker.entity.Campaignkeywords" />
+        <mapping class ="ranktracker.entity.CampaignkeywordsPK" />
+        <mapping class ="ranktracker.entity.Serpstrackhistory" />
+        <mapping class ="ranktracker.entity.Videotrackhistory" />
+        <mapping class ="ranktracker.entity.Videokeywords" />
+        <mapping class ="ranktracker.entity.Displaysettings" />
+        <mapping class ="ranktracker.entity.Seokeyworddetails" />
+        <mapping class ="ranktracker.entity.Serpkeywordgoal" />
+        <mapping class ="ranktracker.entity.Globustrackerevents" />
+        <mapping class ="ranktracker.entity.Socialtrackhistory" />
+        <mapping class ="ranktracker.entity.Socialsignalurls" />
+        <mapping class ="ranktracker.entity.Reviewsite" />
+        <mapping class ="ranktracker.entity.Socialreview" />
+    </session-factory>
+</hibernate-configuration>

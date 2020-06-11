@@ -1,0 +1,104 @@
+#shreder-setting-btn {
+	margin-right: 5px;
+}
+
+#shreder-message-layer .close {
+	position: absolute;
+	right: 30px;
+}
+
+#shreder-main .modal-header, #shreder-main .modal-body, #shreder-main .modal-footer {
+	width: 600px;
+}
+
+#shreder-main.modal.v033 {
+	position: fixed;
+	top: calc(50% - 300px);
+	left: calc(50% - 300px);
+}
+
+#shreder-settings {
+	display: none;
+}
+
+#shreder-main textarea {
+	width: 100%;
+	cursor: default;
+}
+
+/* icon */
+#shreder-launch {
+	width: 24px;
+	height: 24px;
+	background-color: transparent;
+	background-image: url(images/shreder-icon.svg);
+}
+
+#api-viewer {
+	position: relative;
+	background-color: #fff;
+	overflow: auto;
+}
+
+#api-viewer blockquote {
+	margin-bottom: 0px; 
+}
+
+#api-viewer .well {
+	margin: 10px;
+	padding: 10px;
+}
+
+#api-viewer .media {
+	margin-top: 0px;
+}
+
+#api-viewer .vert-resizer {
+	display: none;
+}
+
+#api-viewer .media-body .title {
+	cursor: pointer;
+	display: inline;
+}
+
+#api-viewer .media-body h4 {
+	display: inline;
+}
+
+#api-viewer .media-body em {
+	color: red;
+}
+
+#api-viewer .media-body p.text-info {
+	margin-top: 10px;
+}
+
+#api-viewer .media-body p.text-info .annotation-padding {
+	/*margin-left: 5px;*/
+}
+
+#api-viewer .pull-left div {
+	width: 20px;
+	line-height: 1px;
+}
+
+#api-viewer .wrap-array > .media {
+	margin-left: -30px;
+}
+
+#api-viewer .modal-bar {
+	position: fixed;
+}
+
+#shreder-content {
+	margin-top: 48px;
+}
+
+#api-viewer .rawtype {
+	display: none;
+}
+
+#api-viewer .rawtype.org-springframework-ui-model {
+	display: inline-block;
+}

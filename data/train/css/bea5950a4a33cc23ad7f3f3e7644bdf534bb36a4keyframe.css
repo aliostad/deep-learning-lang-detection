@@ -1,0 +1,33 @@
+/*.write contenedor de texto con animacion */
+.write #var, #igual{
+  color:#42033D;
+}
+.write #variable{
+  color:#f7b617;
+}
+.write{
+  display: inline-flex;
+  text-align: justify;
+}
+.write p {
+  color: #8ACB88;
+  overflow: hidden;
+  border-right: .15em solid #f7b617;/*borde cursor*/
+  white-space: nowrap; /*mantiene en una sola linea el p*/
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end) infinite alternate,
+    blink-caret .75s step-end infinite alternate;
+}
+
+/* efecto de escritura que ocupa el ancho del parrafo */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* efecto del cursor*/
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #f7b617; }
+}

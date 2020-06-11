@@ -1,0 +1,56 @@
+/* line 3, ../../../app/stylesheets/own/show.sass */
+#user #show #top_section {
+  height: 60px;
+}
+/* line 5, ../../../app/stylesheets/own/show.sass */
+#user #show #main_section {
+  background: url("/images/section_middle.png") repeat-y scroll center top;
+}
+/* line 7, ../../../app/stylesheets/own/show.sass */
+#user #show #main_section #word_sets {
+  padding-top: 15px;
+}
+/* line 9, ../../../app/stylesheets/own/show.sass */
+#user #show #bottom_section {
+  background: url("/images/dashboard_content_section_bottom_bright.png") top center no-repeat;
+}
+/* line 11, ../../../app/stylesheets/own/show.sass */
+#user #show #show_call_to_action {
+  margin: -40px 0px 0px 366px;
+  position: absolute;
+}
+/* line 14, ../../../app/stylesheets/own/show.sass */
+#user #show #show_call_to_action.w_background {
+  background-color: white;
+}
+/* line 16, ../../../app/stylesheets/own/show.sass */
+#user #show #register_bubble {
+  position: absolute;
+  margin: 12px 0px 0px 802px;
+}
+/* line 19, ../../../app/stylesheets/own/show.sass */
+#user #show .word_field {
+  margin-top: 15px;
+  border: solid 1px #999999;
+  width: 230px;
+}
+/* line 23, ../../../app/stylesheets/own/show.sass */
+#user #show #add_note_to_words {
+  margin-top: 15px;
+}
+/* line 25, ../../../app/stylesheets/own/show.sass */
+#user #show #avatar {
+  text-align: right;
+}
+/* line 27, ../../../app/stylesheets/own/show.sass */
+#user #show #avatar h1 {
+  color: white;
+  font-size: 33px;
+  margin-bottom: 0px;
+}
+/* line 31, ../../../app/stylesheets/own/show.sass */
+#user #show #avatar .medium_avatar {
+  border: solid 5px #6b1a00;
+  float: right;
+  height: 100px;
+}

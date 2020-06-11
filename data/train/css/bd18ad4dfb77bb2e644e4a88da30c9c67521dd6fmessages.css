@@ -1,0 +1,244 @@
+.elation_irc_messages {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.elation_irc_messages.elation_irc_messages_group {
+  margin-right: 10em;
+}
+
+.elation_irc_message {
+  position: relative;
+  padding-left: 4em;
+}
+.elation_irc_message_unhandled {
+  color: red;
+}
+.elation_irc_timestamp {
+  color: #666;
+  border-right: 1px solid #ccc;
+  padding-right: .5em;
+  margin-right: .5em;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.elation_irc_message_error {
+  color: #900;
+}
+.elation_irc_message_public {
+}
+
+.irc_message_style_bold {
+  font-weight: bold;
+}
+.irc_message_style_reverse {
+  color: white;
+  background: black;
+}
+.irc_message_style_underline {
+  text-decoration: underline;
+}
+/* foreground colors */
+.irc_message_color_white {
+  color: #fff;
+}
+.irc_message_color_black {
+  color: #000;
+}
+.irc_message_color_blue {
+  color: #009;
+}
+.irc_message_color_green {
+  color: #090;
+}
+.irc_message_color_lightred {
+  color: #f00;
+}
+.irc_message_color_brown {
+  color: #900;
+}
+.irc_message_color_purple {
+  color: #909;
+}
+.irc_message_color_orange {
+  color: #f60;
+}
+.irc_message_color_yellow {
+  color: #ff0;
+}
+.irc_message_color_lightgreen {
+  color: #0f0;
+}
+.irc_message_color_cyan {
+  color: #099;
+}
+.irc_message_color_lightcyan {
+  color: #0ff;
+}
+.irc_message_color_lightblue {
+  color: #00f;
+}
+.irc_message_color_pink {
+  color: #f0f;
+}
+.irc_message_color_grey {
+  color: #666;
+}
+.irc_message_color_lightgrey {
+  color: #ccc;
+}
+/* background colors */
+.irc_message_background_white {
+  background: #fff;
+}
+.irc_message_background_black {
+  background: #000;
+}
+.irc_message_background_blue {
+  background: #009;
+}
+.irc_message_background_green {
+  background: #090;
+}
+.irc_message_background_lightred {
+  background: #f00;
+}
+.irc_message_background_brown {
+  background: #900;
+}
+.irc_message_background_purple {
+  background: #909;
+}
+.irc_message_background_orange {
+  background: #f60;
+}
+.irc_message_background_yellow {
+  background: #ff0;
+}
+.irc_message_background_lightgreen {
+  background: #0f0;
+}
+.irc_message_background_cyan {
+  background: #099;
+}
+.irc_message_background_lightcyan {
+  background: #0ff;
+}
+.irc_message_background_lightblue {
+  background: #00f;
+}
+.irc_message_background_pink {
+  background: #f0f;
+}
+.irc_message_background_grey {
+  background: #666;
+}
+.irc_message_background_lightgrey {
+  background: #ccc;
+}
+
+/* special handling for when foreground and background colors are the same */
+.irc_message_background_white.irc_message_color_white {
+  color: #ddd;
+}
+.irc_message_background_black.irc_message_color_black {
+  color: #222;
+}
+.irc_message_background_blue.irc_message_color_blue {
+  color: #22b;
+}
+.irc_message_background_green.irc_message_color_green {
+  color: #2b2;
+}
+.irc_message_background_lightred.irc_message_color_lightred {
+  color: #d00;
+}
+.irc_message_background_brown.irc_message_color_brown {
+  color: #b22;
+}
+.irc_message_background_purple.irc_message_color_purple {
+  color: #b2b;
+}
+.irc_message_background_orange.irc_message_color_orange {
+  color: #d40;
+}
+.irc_message_background_yellow.irc_message_color_yellow {
+  color: #dd0;
+}
+.irc_message_background_lightgreen.irc_message_color_lightgreen {
+  color: #0d0;
+}
+.irc_message_background_cyan.irc_message_color_cyan {
+  color: #2bb;
+}
+.irc_message_background_lightcyan.irc_message_color_lightcyan {
+  color: #0dd;
+}
+.irc_message_background_lightblue.irc_message_color_lightblue {
+  color: #00d;
+}
+.irc_message_background_pink.irc_message_color_pink {
+  color: #d0d;
+}
+.irc_message_background_grey.irc_message_color_grey {
+  color: #888;
+}
+.irc_message_background_lightgrey.irc_message_color_lightgrey {
+  color: #ddd;
+}
+
+/* user display for various commands */
+.elation_irc_messages .elation_irc_user {
+}
+.elation_irc_message_self .elation_irc_user {
+  font-weight: bold;
+}
+/* public message: <nick> */
+.elation_irc_message_msg .elation_irc_user:before,
+.elation_irc_message_self .elation_irc_user:before {
+  content: '<';
+  color: #999;
+}
+.elation_irc_message_msg .elation_irc_user:after,
+.elation_irc_message_self .elation_irc_user:after {
+  content: '>';
+  color: #999;
+}
+/* channel names list: [nick] */
+.elation_irc_message_names .elation_irc_user {
+  display: inline-block;
+  width: 8em;
+  white-space: nowrap;
+}
+.elation_irc_message_names .elation_irc_user:before {
+  content: '[';
+  color: #666;
+}
+.elation_irc_message_names .elation_irc_user:after {
+  content: ']';
+  color: #666;
+}
+/* notice: (nick) */
+.elation_irc_message_notice .elation_irc_user {
+  color: purple;
+}
+.elation_irc_message_notice .elation_irc_user:before {
+  content: '-(';
+}
+.elation_irc_message_notice .elation_irc_user:after {
+  content: ')-';
+}

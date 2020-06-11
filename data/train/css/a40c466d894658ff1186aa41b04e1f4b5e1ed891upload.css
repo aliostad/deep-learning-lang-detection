@@ -1,0 +1,150 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18.04.2014, 15:41:37
+    Author     : senj
+*/
+.form-load{
+    font-family:'PT Sans Narrow', sans-serif;
+    background-color:#373a3d;
+
+    background-image:-webkit-linear-gradient(top, #373a3d, #313437);
+    background-image:-moz-linear-gradient(top, #373a3d, #313437);
+    background-image:linear-gradient(top, #373a3d, #313437);
+
+    width:90%;
+    padding:30px;
+    border-radius:3px;
+
+    margin:10px auto 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#drop{
+    background-color: #2E3134;
+    padding: 40px 50px;
+    margin-bottom: 30px;
+    border: 20px solid rgba(0, 0, 0, 0);
+    border-radius: 3px;
+    text-align: center;
+    text-transform: uppercase;
+
+    font-size:16px;
+    font-weight:bold;
+    color:#7f858a;
+}
+
+#drop a{
+    background-color:#007a96;
+    padding:12px 26px;
+    color:#fff;
+    font-size:14px;
+    border-radius:2px;
+    cursor:pointer;
+    display:inline-block;
+    margin-top:12px;
+    line-height:1;
+}
+
+#drop a:hover{
+    background-color:#0986a3;
+}
+
+#drop input{
+    display:none;
+}
+
+.form-load ul{
+    list-style:none;
+    margin:0 -30px;
+    border-top:1px solid #2b2e31;
+    border-bottom:1px solid #3d4043;
+}
+
+.form-load ul li{
+
+    background-color:#333639;
+
+    background-image:-webkit-linear-gradient(top, #333639, #303335);
+    background-image:-moz-linear-gradient(top, #333639, #303335);
+    background-image:linear-gradient(top, #333639, #303335);
+
+    border-top:1px solid #3d4043;
+    border-bottom:1px solid #2b2e31;
+    padding:15px;
+    height: 52px;
+
+    position: relative;
+}
+
+.form-load ul li input{
+    display: none;
+}
+
+.form-load ul li p{
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #EEE;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+
+.form-load ul li i{
+    font-weight: normal;
+    font-style:normal;
+    color:#7f7f7f;
+    display:block;
+}
+
+.form-load ul li canvas{
+    top: 15px;
+    left: 32px;
+    position: absolute;
+}
+
+.form-load ul li span{
+    width: 15px;
+    height: 12px;
+    background: url('/media/img/icons.png') no-repeat;
+    background-position: 0px -13px;
+    position: absolute;
+    top: 34px;
+    right: 33px;
+    cursor:pointer;
+}
+
+.form-load ul li.working span{
+    height: 16px;
+    background-position: 0 -12px;
+}
+
+.form-load ul li.error p{
+    color:red;
+}
+
+.img-input-text{
+    width: 30%;
+    margin: 1%;
+    float: left;
+    position: relative;
+}
+.img-input-text img{
+    width: 100%;
+}
+.img-input-text a.del-photo{
+    background: url(/media/img/delete.png);
+    display: block;
+    position: absolute;
+    right: -11px;
+    top: -11px;
+    width: 32px;
+    height: 32px;
+}
+

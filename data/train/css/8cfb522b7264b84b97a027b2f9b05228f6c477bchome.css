@@ -1,0 +1,39 @@
+@charset "utf-8";
+#main_con{width:859px; margin:0 auto; background-color:#FFF; }
+#jido{width:80px;float:right;margin-right:170px;margin-top:20px;}
+    
+#con .table{width:610px; margin:15px 0 15px 15px; 
+
+a:hover,a:focus { outline : none; background - color : whites moke; }
+
+.BoardWrite {
+margin:0 10px 0 0;
+width:600px;
+border-top:2px solid #1147c2;
+border-bottom:1px solid #1147c2;
+}
+    .BoardWrite th {
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    background:#eee;
+    color:#666;
+    padding:7px 5px 5px 5px;
+    }
+    .BoardWrite td {
+    border-bottom:1px solid #ccc;
+    padding:5px 10px 3px 10px;
+    }
+.BoardWriteBtm {
+    text-align:center;
+    float: none;
+    margin-top:10px;
+    margin-left:182px;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    }
+.BoardWrite input,textarea {color:#777;}
+
+
+#contentsTable{margin: 0 auto;margin-top:20px;}

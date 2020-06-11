@@ -1,0 +1,130 @@
+#!/bin/bash
+
+# [Info\]
+# [Organization]: workVM
+#      [Contact]: admin@workvm.com
+#
+#         [Host]: code.workvm.com
+#         [File]: /opt/workvm/intengine/library/framework/engi/configure/repo.lib
+#  [Description]: Additional Software Repository Configuration Framework Library
+# [Info/]
+
+# \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ #
+# Additional Software Repository Configuration \\\\\ #
+
+# Function Variables \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ #
+	
+# Validate Target Repository \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ #
+	
+validate_target_repo() {
+	
+	# Validate the target software repository
+	TARGET_REPO="$(validate_array_value "ARRAY_ENGINE_REPO_TYPES[@]" "$TARGET_REPO")"
+
+	# If the target repository is invalid
+	if [ "$TARGET_REPO" = "$FALSE" ]; then
+		show_help "configure_repository" "$(print_array "ARRAY_ENGINE_REPO_TYPES[@]" "$LANG_CONF_REPO_TYPES")"
+		exit 1
+	fi
+	
+}
+
+readonly -f validate_target_repo
+	
+# Validate Repository Properties \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ #	
+	
+validate_repo_properties() {
+	
+	# Get the target repository properties
+	TARGET_REPO_KEY="$(econf "`echo $TARGET_REPO`_repo_key")"
+	TARGET_REPO_URL="$(econf "`echo $TARGET_REPO`_installer_url")"
+	TARGET_REPO_TMPFILE="$(econf "`echo $TARGET_REPO`_tmp_file")"
+	TARGET_REPO_CONFIG="$(econf "`echo $TARGET_REPO`_repo_config")"
+	
+	# If any of the values are not defined
+	if [ "$TARGET_REPO_KEY" = "$NULL" ] \
+	|| [ "$TARGET_REPO_URL" = "$NULL" ] \
+	|| [ "$TARGET_REPO_TMPFILE" = "$NULL" ] \
+	|| [ "$TARGET_REPO_CONFIG" = "$NULL" ]; then
+		show_help "configure_repository" "$LANG_CONF_REPO_MISSING_PROPERTIES: $TARGET_REPO"
+		exit 1
+	fi
+	
+}
+
+readonly -f validate_repo_properties
+				
+# Check Repository Configuration \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ #
+
+check_repo_config() {
+	
+	# Check if the system is configured as the specified repository type
+	REPO_CONFIG_STATUS="$(ixquery "engine" "repo.$TARGET_REPO")"
+	
+	# If the repository is already configured
+	if [ ! -z "$REPO_CONFIG_STATUS" ]; then
+	
+		# If the force argument hasn't been supplied
+		if [ "$REPO_MOD" != "force" ]; then
+			show_help "configure_repository_force" "$LANG_CONF_REPO_ALREADY_CONFIGURED: $TARGET_REPO"
+			exit 1
+		else
+			
+			# Delete the repository files and erase the package
+			rm -f /etc/yum.repos.d/*$TARGET_REPO*
+			yum erase $TARGET_REPO-release -y &> /dev/null
+		
+		fi
+		
+		# Display reconfiguration message
+		feedback "user" "$LANG_CONF_REPO_RECONFIGURE: $TARGET_REPO"
+		
+		format "divider"
+		
+	fi
+	
+}
+
+readonly -f check_repo_config
+
+# Configure Repository \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ #
+	
+configure_repo() {
+
+	# Installing repository message
+	feedback "proc" "$LANG_CONF_REPO_INSTALLING"
+		
+	# Import the repository's GPG key
+	rpm --import $TARGET_REPO_KEY &> /dev/null
+	
+	# Download the repository package and install
+	wget -O $TARGET_REPO_TMPFILE $TARGET_REPO_URL &> /dev/null
+	rpm -i $TARGET_REPO_TMPFILE &> /dev/null
+	
+	# If the target repository configuration was created
+	if [ -f "$TARGET_REPO_CONFIG" ]; then
+		feedback "user" "$LANG_SUCCESS"
+		
+		# Delete the temporary repository file
+		rm -f $TARGET_REPO_TMPFILE
+		
+		# Disable all repositories in the configuration file
+		sed -i "s/^\(enabled.*=[^0-9]*\).*$/\10/g" $TARGET_REPO_CONFIG
+		
+		# Update the engine index
+		update_index_state "engine" "repo" "$TARGET_REPO" "enable"
+		
+	# If the target repository configuration was not created
+	else
+		feedback "user" "$LANG_FAILED"
+		
+		format "divider"
+		
+		# Failed to generate target repository configuration file
+		feedback "error" "$LANG_CONF_REPO_CONFIG_GEN_FAILED"
+		feedback "user" "> $TARGET_REPO_CONFIG"
+	fi
+			
+}
+
+readonly -f configure_repo

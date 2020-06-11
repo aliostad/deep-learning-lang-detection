@@ -1,0 +1,189 @@
+/* CSS Document */
+
+.dj-write-box {
+    padding: 16px 16px 34px;
+}
+
+.dj-write-box .i-item .title {
+    display: block;
+    float: left;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: right;
+    width: 49px;
+}
+
+.dj-write-box .i-item .item-input {
+    float: left;
+    padding-bottom: 20px;
+    padding-left: 9px;
+}
+.dj-write-box .i-item .p-input {
+    height: 14px;
+    padding: 7px;
+}
+.dj-write-box .i-item .e-content {
+    background-color: #F9F9F9;
+    height: 103px;
+    padding: 9px 7px;
+    width: 404px;
+}
+.dj-write-box .i-item .check-code {
+    float: left;
+    height: 14px;
+    padding: 7px;
+    width: 114px;
+}
+.dj-write-box .i-item .code-img {
+    border: 1px solid #BFBEBF;
+    float: left;
+    height: 28px;
+    margin-left: 9px;
+    width: 83px;
+}
+.dj-write-box .i-item .i-action {
+    margin-left: 60px;
+    position: relative;
+}
+.dj-write-box .i-item .i-action .server-error {
+    color: #FF0000;
+    display: none;
+    margin-left: 10px;
+}
+.dj-write-box .i-item .i-action .success-tip {
+    background-image: url("http://0.assets.dajieimg.com/up/msgcenter/image/success-tip.png");
+    display: block;
+    height: 54px;
+    left: 106px;
+    position: absolute;
+    text-indent: -1000em;
+    top: -12px;
+    width: 134px;
+}
+.dj-write-box .i-item .send-btn {
+    width: 48px;
+}
+
+.dj-write-box .ms-wrap {
+    width: 410px;
+}
+.dj-write-box .input-txt {
+    border-color: #C6C6C6 #EEEEEE #EEEEEE #C6C6C6;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.ms-wrap {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #F9F9F9;
+    border-color: #C6C6C6 #EEEEEE #EEEEEE #C6C6C6;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    padding: 4px 4px 0;
+    width: 300px;
+}
+
+input.ms-add:focus {
+    outline: medium none;
+}
+.ms-data {
+    overflow: hidden;
+}
+.ms-data-wrap {
+    font-size: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.ms-data-wrap .ms-data {
+    float: left;
+}
+
+.ms-disabled a.ms-selected-item, .ms-disabled a.ms-selected-item:hover {
+    color: #999999;
+}
+
+a.ms-selected-item {
+    background: url("http://7.assets.dajieimg.com/images/chrome/pickpad.gif") no-repeat scroll left top rgba(0, 0, 0, 0);
+    color: #1357A2;
+    cursor: default;
+    display: inline-block;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 5px 4px 2px;
+    padding-left: 8px;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+a.ms-selected-item:hover {
+    background-position: left bottom;
+    color: #333333;
+    text-decoration: none;
+}
+a.ms-selected-item:hover .delete {
+    background-position: right bottom;
+}
+.ms-disabled a.ms-selected-item:hover {
+    background-position: left top;
+    color: #1357A2;
+    text-decoration: none;
+}
+.ms-disabled a.ms-selected-item:hover .delete {
+    background-position: right top;
+    cursor: default;
+}
+.ms-disabled a.ms-selected-item, .ms-disabled a.ms-selected-item:hover {
+    color: #999999;
+}
+input.ms-add {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    display: inline-block;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 0 4px;
+    padding: 0;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 50px;
+    word-wrap: normal;
+}
+input.ms-add:focus {
+    outline: medium none;
+}
+
+.dj-write-box .action-item {
+    margin-top: 10px;
+}
+
+.dj-write-box .i-item .i-action {
+    margin-left: 60px;
+    position: relative;
+}
+
+.i_copylink_btn a {
+    background: url("../images/all_btn.gif") no-repeat scroll -15px -8px rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    display: inline;
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+	margin-left:200px;
+    width: 104px;
+	text-decoration: none;
+}
+.i_copylink_btn a:hover {
+    background: url("../images/all_btn.gif") no-repeat scroll -166px -8px rgba(0, 0, 0, 0);
+    text-decoration: none;
+}
+

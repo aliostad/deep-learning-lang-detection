@@ -1,0 +1,54 @@
+body {
+  transition: all 1s ease;
+}
+
+#pre-load {
+  text-align: center;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 25%;
+  width: 100%;
+}
+
+#pre-load img {
+  display: block;
+  margin: auto;
+}
+
+#album-wrapper {
+    position: relative;
+    display: block;
+    margin: 20px auto;
+}
+
+#album-inner {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.image-wrapper {
+    display:block;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#album-inner .as-current {
+    opacity: .85;
+}
+
+#album-wrapper.smooth #album-inner > * {
+    transition: all .3s ease;
+}
+
+.ac-image {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}

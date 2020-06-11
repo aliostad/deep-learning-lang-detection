@@ -1,0 +1,55 @@
+.modelDetails {
+  width: 290px;
+  height: 100%;
+  left: -1000px;
+  position: absolute;
+  z-index: 999999;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)); }
+  .modelDetails .modelHeader {
+    width: 275px;
+    height: 65px;
+    word-break: break-all;
+    background-color: #9933FF;
+    padding-bottom: 62px;
+    color: white; }
+    .modelDetails .modelHeader .content {
+      position: relative;
+      top: 21px;
+      padding-left: 22px;
+      font-size: 16px; }
+      .modelDetails .modelHeader .content .imgHeader {
+        margin-right: 5px; }
+      .modelDetails .modelHeader .content .corner {
+        background-color: #9933FF;
+        border-radius: 10px;
+        padding-bottom: 14px;
+        position: relative;
+        bottom: 15px;
+        right: 0px;
+        width: 45px;
+        height: 50px; }
+        .modelDetails .modelHeader .content .corner .arrow {
+          position: relative;
+          top: 11px;
+          left: 15px;
+          cursor: pointer; }
+  .modelDetails .error h3 {
+    color: red; }
+  .modelDetails .details {
+    background-color: #ffffff;
+    width: 275px;
+    height: 92%;
+    overflow: auto;
+    font-size: 13px;
+    padding-top: 10px;
+    padding-left: 22px; }
+    .modelDetails .details .title {
+      font-weight: bold;
+      word-wrap: break-word; }
+    .modelDetails .details .detailText {
+      word-wrap: break-word;
+      margin-left: 5px;
+      font-weight: normal;
+      color: #908E8E; }
+
+/*# sourceMappingURL=modelDetails.css.map */

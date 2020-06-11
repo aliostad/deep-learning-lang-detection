@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings>
+   <mapping from="Builtins.html">
+      <to>/all</to>
+   </mapping>
+   <mapping from="AdminBuiltins.html">
+      <to>/xdmp/admin</to>
+   </mapping>
+   <mapping from="AppServerBuiltins.html">
+      <to>/xdmp/appserver</to>
+   </mapping>
+   <mapping from="Classifier.html">
+      <to>/cts/classifier</to>
+   </mapping>
+   <mapping from="DebugBuiltins.html">
+      <to>/dbg</to>
+   </mapping>
+   <mapping from="Document-Conversion.html">
+      <to>/xdmp/conversion</to>
+   </mapping>
+   <mapping from="Extension.html">
+      <to>/xdmp</to>
+   </mapping>
+   <mapping from="Ext-9.html">
+      <to>/xdmp/documents</to>
+   </mapping>
+   <mapping from="Ext-1.html">
+      <to>/xdmp/extension</to>
+   </mapping>
+   <mapping from="Ext-8.html">
+      <to>/xdmp/function-values</to>
+   </mapping>
+   <mapping from="Ext-2.html">
+      <to>/xdmp/http</to>
+   </mapping>
+   <mapping from="Ext-3.html">
+      <to>/xdmp/json</to>
+   </mapping>
+   <mapping from="Ext-7.html">
+      <to>/xdmp/server</to>
+   </mapping>
+   <mapping from="Ext-4.html">
+      <to>/xdmp/search</to>
+   </mapping>
+   <mapping from="Ext-5.html">
+      <to>/xdmp/xml</to>
+   </mapping>
+   <mapping from="Ext-6.html">
+      <to>/xdmp/context</to>
+   </mapping>
+   <mapping from="Ext-10.html">
+      <to>/xdmp/xslt</to>
+   </mapping>
+   <mapping from="map.html">
+      <to>/map</to>
+   </mapping>
+   <mapping from="MathBuiltins.html">
+      <to>/math</to>
+   </mapping>
+   <mapping from="ProfileBuiltins.html">
+      <to>/prof</to>
+   </mapping>
+   <mapping from="Search.html">
+      <to>/cts</to>
+   </mapping>
+   <mapping from="cts-query.html">
+      <to>/cts/constructors</to>
+   </mapping>
+   <mapping from="GeospatialBuiltins.html">
+      <to>/cts/geospatial</to>
+   </mapping>
+   <mapping from="GeospatialLexicons.html">
+      <to>/cts/geospatial-lexicon</to>
+   </mapping>
+   <mapping from="Lexicons.html">
+      <to>/cts/lexicon</to>
+   </mapping>
+   <mapping from="SearchBuiltins.html">
+      <to>/cts/search</to>
+   </mapping>
+   <mapping from="Clusterer.html">
+      <to>/cts/search-clustering</to>
+   </mapping>
+   <mapping from="Security.html">
+      <to>/xdmp/security</to>
+   </mapping>
+   <mapping from="ServerMonitoring.html">
+      <to>/xdmp/server-monitoring</to>
+   </mapping>
+   <mapping from="SpellBuiltins.html">
+      <to>/spell</to>
+   </mapping>
+   <mapping from="TransactionBuiltins.html">
+      <to>/xdmp/transaction</to>
+   </mapping>
+   <mapping from="UpdateBuiltins.html">
+      <to>/xdmp/update</to>
+   </mapping>
+   <mapping from="Modules.html">
+      <to>/all</to>
+   </mapping>
+   <mapping from="AdminLibrary.html">
+      <to>/admin</to>
+   </mapping>
+   <mapping from="AdminLibraryActions.html">
+      <to>/admin/actions</to>
+   </mapping>
+   <mapping from="AdminLibraryAppserver.html">
+      <to>/admin/appserver</to>
+   </mapping>
+   <mapping from="AdminLibraryCluster.html">
+      <to>/admin/cluster</to>
+   </mapping>
+   <mapping from="AdminLibraryDatabase.html">
+      <to>/admin/database</to>
+   </mapping>
+   <mapping from="AdminLibraryDBrep.html">
+      <to>/admin/database-replication</to>
+   </mapping>
+   <mapping from="AdminLibraryForest.html">
+      <to>/admin/forest</to>
+   </mapping>
+   <mapping from="AdminLibraryGroup.html">
+      <to>/admin/group</to>
+   </mapping>
+   <mapping from="AdminLibraryHost.html">
+      <to>/admin/host</to>
+   </mapping>
+   <mapping from="AdminLibraryMimetype.html">
+      <to>/admin/mimetypes</to>
+   </mapping>
+   <mapping from="AdminLibraryScheduler.html">
+      <to>/admin/scheduler</to>
+   </mapping>
+   <mapping from="alerting.html">
+      <to>/alert</to>
+   </mapping>
+   <mapping from="package-api.html">
+      <to>/package</to>
+   </mapping>
+   <mapping from="custom-dictionary.html">
+      <to>/cdict</to>
+   </mapping>
+   <mapping from="ec2-2009-11-30.html">
+      <to>/ec2</to>
+   </mapping>
+   <mapping from="Entity.html">
+      <to>/entity</to>
+   </mapping>
+   <mapping from="flexrep.html">
+      <to>/flexrep</to>
+   </mapping>
+   <mapping from="GeoFunctions.html">
+      <to>/all</to>
+   </mapping>
+   <mapping from="GEO.html">
+      <to>/geo</to>
+   </mapping>
+   <mapping from="GeoRSS.html">
+      <to>/georss</to>
+   </mapping>
+   <mapping from="GML.html">
+      <to>/gml</to>
+   </mapping>
+   <mapping from="KML.html">
+      <to>/kml</to>
+   </mapping>
+   <mapping from="MCGM.html">
+      <to>/mcgm</to>
+   </mapping>
+   <mapping from="info.html">
+      <to>/info</to>
+   </mapping>
+   <mapping from="infodev.html">
+      <to>/infodev</to>
+   </mapping>
+   <mapping from="dls.html">
+      <to>/dls</to>
+   </mapping>
+   <mapping from="dls-2.html">
+      <to>/dls/constructors</to>
+   </mapping>
+   <mapping from="dls-3.html">
+      <to>/dls/management</to>
+   </mapping>
+   <mapping from="dls-4.html">
+      <to>/dls/update</to>
+   </mapping>
+   <mapping from="dls-5.html">
+      <to>/dls/retention</to>
+   </mapping>
+   <mapping from="dls-6.html">
+      <to>/dls/xinclude</to>
+   </mapping>
+   <mapping from="mod-docs.html">
+      <to>/all</to>
+   </mapping>
+   <mapping from="XInclude.html">
+      <to>/xinc</to>
+   </mapping>
+   <mapping from="XPointer.html">
+      <to>/xp</to>
+   </mapping>
+   <mapping from="pki.html">
+      <to>/pki</to>
+   </mapping>
+   <mapping from="plugin.html">
+      <to>/plugin</to>
+   </mapping>
+   <mapping from="rest.html">
+      <to>/rest-lib</to>
+   </mapping>
+   <mapping from="SearchAPI.html">
+      <to>/search</to>
+   </mapping>
+   <mapping from="Securitysec.html">
+      <to>/sec</to>
+   </mapping>
+   <mapping from="Spell.html">
+      <to>/spell-lib</to>
+   </mapping>
+   <mapping from="Thesaurus.html">
+      <to>/thsr</to>
+   </mapping>
+   <mapping from="Triggers.html">
+      <to>/trgr</to>
+   </mapping>
+   <mapping from="word-processing-ml.html">
+      <to>/ooxml/wordml</to>
+   </mapping>
+   <mapping from="package.html">
+      <to>/ooxml/zip</to>
+   </mapping>
+   <mapping from="CPFFunctions.html">
+      <to>/all</to>
+   </mapping>
+   <mapping from="Content-Processing-Framework.html">
+      <to>/cpf</to>
+   </mapping>
+   <mapping from="Css.html">
+      <to>/css</to>
+   </mapping>
+   <mapping from="Docbook.html">
+      <to>/dbk</to>
+   </mapping>
+   <mapping from="Domains.html">
+      <to>/dom</to>
+   </mapping>
+   <mapping from="Excel.html">
+      <to>/excel</to>
+   </mapping>
+   <mapping from="Convert.html">
+      <to>/cvt</to>
+   </mapping>
+   <mapping from="Links.html">
+      <to>/lnk</to>
+   </mapping>
+   <mapping from="Msword.html">
+      <to>/msword</to>
+   </mapping>
+   <mapping from="Pdf.html">
+      <to>/pdf</to>
+   </mapping>
+   <mapping from="Pipelines.html">
+      <to>/p</to>
+   </mapping>
+   <mapping from="Powerpoint.html">
+      <to>/ppt</to>
+   </mapping>
+   <mapping from="Xhtml.html">
+      <to>/xhtml</to>
+   </mapping>
+   <mapping from="W3C.html">
+      <to>/fn</to>
+   </mapping>
+   <mapping from="AccessorBuiltins.html">
+      <to>/fn/accessor</to>
+   </mapping>
+   <mapping from="AnyURIBuiltins.html">
+      <to>/fn/anyuri</to>
+   </mapping>
+   <mapping from="BooleanBuiltins.html">
+      <to>/fn/boolean</to>
+   </mapping>
+   <mapping from="ContextBuiltins.html">
+      <to>/fn/context</to>
+   </mapping>
+   <mapping from="DurationDateTimeBuiltins.html">
+      <to>/fn/dates</to>
+   </mapping>
+   <mapping from="ErrorTrace.html">
+      <to>/fn/error-and-trace</to>
+   </mapping>
+   <mapping from="NodeBuiltins.html">
+      <to>/fn/node</to>
+   </mapping>
+   <mapping from="NumericBuiltins.html">
+      <to>/fn/numeric</to>
+   </mapping>
+   <mapping from="QNameBuiltins.html">
+      <to>/fn/qname</to>
+   </mapping>
+   <mapping from="SequenceBuiltins.html">
+      <to>/fn/sequence</to>
+   </mapping>
+   <mapping from="StringBuiltins.html">
+      <to>/fn/string</to>
+   </mapping>
+   <mapping from="XSLTBuiltins.html">
+      <to>/fn/xslt</to>
+   </mapping>
+</mappings>

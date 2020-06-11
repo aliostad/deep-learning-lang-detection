@@ -1,0 +1,28 @@
+.deckView {
+}
+
+    .deckView .deckView-header,
+    .deckView .deckView-questions,
+    .deckView .deckView-score {
+        display: none;
+    }
+
+    /* initial state */
+    .deckView__browsing .deckView-header {
+        display: block;
+    }
+
+    /* user is answering questions */
+    .deckView__testing .deckView-questions {
+        display: block;
+    }
+
+    /* user reviews her score */
+    .deckView__scoring .deckView-score {
+        display: block;
+    }
+
+    .deckView-header .deckView-cardForm {
+        clear: both;
+        margin-top: 3em;
+    }

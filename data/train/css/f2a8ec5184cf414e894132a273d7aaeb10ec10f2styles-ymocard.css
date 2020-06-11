@@ -1,0 +1,41 @@
+/*Reset styles*/
+@import url("reset-ymocard.css");
+
+/*Load custom styles bootstrap*/
+@import url("custom-bootstrap.css");
+
+/*Global styles */
+@import url("global-ymocard.css");
+
+/*Load external styles*/
+@import url("theme-ymocard.css");
+
+/*Load custom styles card-holder
+@import url("card-holder-ymocard.css");*/
+
+/*Load custom styles partner
+@import url("partner-ymocard.css");*/
+
+/*Load custom styles partner seller
+@import url("partner-seller-ymocard.css");*/
+
+/*Load custom styles partner supervisor
+@import url("partner-supervisor-ymocard.css");*/
+
+/*Load custom styles staff call
+@import url("staff-call-ymocard.css");*/
+
+/*Load custom styles staff compliance
+@import url("staff-compliance-ymocard.css");*/
+
+/*Load custom styles staff emission
+@import url("staff-emission-ymocard.css");*/
+
+/*Load custom styles staff treasury
+@import url("staff-treasury-ymocard.css");*/
+
+/*Load custom styles super user
+@import url("super-user-ymocard.css");*/
+
+/*Load custom styles supervisor
+@import url("supervisor-ymocard.css");*/

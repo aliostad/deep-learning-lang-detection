@@ -1,0 +1,32 @@
+#TB_window .tb_top_left {background:url(../images/tb_top_left.png); height:33px;}
+#TB_window .tb_top_middle {background:url(../images/top_border_mdl.png); height:33px; color:#fff;}
+#TB_window .tb_top_right {background:url(../images/tb_top_right.png);height:33px;}
+#TB_window .tb_center_left {background:url(../images/border_left_bg_mdl.png) repeat-y bottom;}
+#TB_window .tb_center_right {background:url(../images/border_right_bg_mdl.png) repeat-y bottom; width:8px;}
+#TB_window .tb_bottom_left {background:url(../images/bottom_left_mdl.png);}
+#TB_window .tb_bottom_middle{background:url(../images/border_bottom_mdl.png);height:20px;}
+#TB_window .tb_bottom_right{background:url(../images/bottom_right_mdl.png);}
+#TB_window .tb_body {background:#e7f3f8;}
+#TB_window .close_x {background:url(../images/close_mdl.png) no-repeat; height:16px;padding-right:20px;}
+#TB_window table {border-collapse: collapse;}
+#TB_window form table{border-collapse: separate;}
+#TB_window .tb_top_left, #TB_window .tb_top_right, #TB_window .tb_bottom_left, #TB_window .tb_bottom_right {height: 10px;width: 10px;overflow: hidden;padding: 0;}
+#TB_overlay { z-index: 100;left: 0;top: 0; position: fixed;height: 100%;width: 100%; }
+
+#TB_window {background: transparent; border: 0px solid #CCCCCC !important;color: #000000;display: none;left: 50%;position: fixed;text-align: left;top: 50%;z-index: 102;}
+.TB_overlayBG {background-color:#000;}
+.TB_overlayBG {filter:alpha(opacity=28);-moz-opacity:0.28;opacity: 0.28;}
+#TB_HideSelect{filter:alpha(opacity=0);-moz-opacity: 0;opacity: 0;}
+#TB_load{margin: -6px 0 0 -104px; /* -height/2 0 0 -width/2 */}
+#TB_ajaxWindowTitle { float: left; text-align: right; font-weight: bold; font-size:109.1%; color: #FFFFFF; margin-bottom: 1px;  padding:7px 0 5px 10px;}
+#TB_closeAjaxWindow {text-align: right;	float: right;	margin-bottom: 1px; padding-top: 7px 10px 5px 0;margin-top: 6px; }
+#TB_closeWindowButton {	background:url(../images/close_icon.png) no-repeat;float: left;	width: 14px;height: 14px;cursor: pointer; }
+
+.w208p, #TB_load{width:208px;}
+.h13p, #TB_load, .arrow_up, .arrow_down{height:13px;}
+#TB_overlay, #TB_load, #TB_HideSelect{position:fixed;}
+#TB_load{z-index:103;}
+p#vtip, #TB_window, #TB_load, .hidden_action, .tabs-hide{display:none;}
+#TB_window, #TB_load{top:50%;left:50%;}
+#TB_load{margin: -6px 0 0 -104px; /* -height/2 0 0 -width/2 */}
+* html #TB_load {position: absolute;margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');}

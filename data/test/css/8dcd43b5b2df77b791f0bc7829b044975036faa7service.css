@@ -1,0 +1,74 @@
+/*********************************************************************************/
+/* Service                                                                */
+/*********************************************************************************/
+
+	#service
+	{
+		overflow: hidden;
+		text-align: center;
+		color: #525252;
+	}
+	
+	#service h2
+	{
+		margin: 1em 0em;
+		text-transform: uppercase;
+		font-size: 1.5em;
+		font-weight: 700;
+		color: #454445;
+	}
+	
+	#service .icon
+	{
+		position: static;
+		display: block;
+		margin: 0px auto 0.80em auto;
+		line-height: 150px;
+		font-size: 4em;
+		background: #FFF;
+		width: 150px;
+		height: 150px;
+		border-radius: 100px;
+		border: 6px solid #00A4D9;
+		text-align: center;
+		color: #00A4D9;
+	}
+	
+	#service #boxes
+	{
+	}
+		
+	#service .tbox
+	{
+		width: 320px;
+		padding: 40px 20px 40px 20px;
+		margin: auto;
+		display: inline-block;
+	}
+	
+	#service .title
+	{
+		letter-spacing: 0.10em;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	
+	#service .title h2
+	{
+		font-size: 1.60em;
+		font-weight: 900;
+		font-family: 'Open Sans', sans-serif;
+		color: #00A4D9;
+	}
+	
+	#service .title .byline
+	{
+		padding-top: 0.50em;
+		font-size: 0.90em;
+		color: #858585;
+	}
+
+	#service .arrow-down
+	{
+		border-top-color: #292929;
+	}

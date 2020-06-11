@@ -1,0 +1,18 @@
+require 'rubygems'
+require 'echoe'
+
+require File.dirname(__FILE__) << "/lib/fiveruns/manage/version"
+
+Echoe.new 'fiveruns_manage' do |p|
+  p.version = Fiveruns::Manage::Version::STRING
+  p.author = "FiveRuns Development Team"
+  p.email  = 'dev@fiveruns.com'
+  p.project = 'fiveruns'
+  p.summary = "Instrumentation for the FiveRuns Manage 2.0 product."
+  p.url = "http://github.com/fiveruns/fiveruns_manage"
+  p.dependencies = %w(activesupport)
+  p.development_dependencies = []
+  p.include_rakefile = true
+  p.rubygems_version = nil
+end
+

@@ -1,0 +1,9 @@
+insert into contact (first_name, last_name, birth_date, description, photo) values ('Zep', 'Brennigan', '1988-09-09', 'Default description', FILE_READ('classpath:1.jpg'));
+insert into contact (first_name, last_name, birth_date, description, photo) values ('Bender', 'Rodriges', '1988-08-09', 'Default description', FILE_READ('classpath:1.jpg'));
+insert into contact (first_name, last_name, birth_date, description, photo) values ('Rakkaus', 'Prophet', '1988-09-09', 'Default description', FILE_READ('classpath:1.jpg'));
+insert into contact (first_name, last_name, birth_date, description, photo) values ('Lila', 'Singleye', '1988-04-06', 'Default description', FILE_READ('classpath:1.jpg'));
+insert into contact (first_name, last_name, birth_date, description, photo) values ('Doctor', 'Zoildberg', '1988-05-09', 'Default description', FILE_READ('classpath:1.jpg'));
+insert into contact (first_name, last_name, birth_date, description, photo) values ('Pudge', 'Chinchope', '1988-01-09', 'Default description', FILE_READ('classpath:1.jpg'));
+insert into contact (first_name, last_name, birth_date, description, photo) values ('Hulk', 'Incredible', '1988-02-09', 'Default description', FILE_READ('classpath:1.jpg'));
+insert into contact (first_name, last_name, birth_date, description, photo) values ('Capitan', 'America', '1988-04-09', 'Default description', FILE_READ('classpath:1.jpg'));
+insert into contact (first_name, last_name, birth_date, description, photo) values ('Willy', 'Wonka', '1988-03-09', 'Default description', FILE_READ('classpath:1.jpg'));

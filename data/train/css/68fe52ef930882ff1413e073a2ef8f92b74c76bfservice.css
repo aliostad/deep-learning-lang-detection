@@ -1,0 +1,37 @@
+.ads-slides {
+  min-height: 250px;
+}
+.content-wrapper .main-content pre {
+  line-height: 2;
+  background-color: inherit;
+  border: none;
+  font-size: inherit;
+}
+/*服务对象*/
+.main-content.service-target-content p {
+  color: #0e65b4;
+}
+.main-content.service-target-content ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+  line-height: 1.8;
+}
+.main-content.service-target-content h3 {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #fff;
+}
+.main-content.service-target-content .bg-static-rect1 {
+  background-color: #7bc5a0;
+}
+.main-content.service-target-content .bg-static-rect2 {
+  background-color: #8e84b8;
+}
+.main-content.service-target-content .bg-static-rect3 {
+  background-color: #99ae6b;
+}
+.main-content.service-target-content .bg-static-rect4 {
+  background-color: #d3a574;
+}

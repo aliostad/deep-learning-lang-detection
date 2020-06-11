@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- Database dialect -->
+		<property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
+		<!-- Echo all executed SQL to stdout -->
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		<!-- mapping resources -->
+
+		<!-- Global Criteria START -->
+		<mapping resource="com/isg/ifrend/persistence/ElementTypes.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/ElementFormats.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/DateFormats.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/FunctionMaxID.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/GlobalMaxID.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/CriteriaMaxID.mapping.xml" />
+		
+		<mapping resource="com/isg/ifrend/persistence/Country.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/Function.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/Priority.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/UserField.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/Action.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/LanguageCode.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/Operator.mapping.xml" />
+
+		<mapping resource="com/isg/ifrend/persistence/Element.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/Criteria.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/EnhancedCriterion.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/MLI.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/Script.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/Label.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/CodeType.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/Code.mapping.xml" />
+
+		<mapping resource="com/isg/ifrend/persistence/TmpElement.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/TempCriteria.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/TempEnhancedCriterion.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/TmpMLI.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/TmpScript.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/TmpLabel.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/TmpCodeType.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/TmpCode.mapping.xml" />
+
+		<mapping resource="com/isg/ifrend/persistence/HstElement.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/HistCriteria.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/HistEnhancedCriteria.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/HstMLI.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/HstScript.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/HstLabel.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/HstCodeType.mapping.xml" />
+		<mapping resource="com/isg/ifrend/persistence/HstCode.mapping.xml" />
+		<!-- Global Criteria END -->
+
+		<!-- Security Admin Mappings START -->
+		<mapping class="com.isg.ifrend.model.bean.Functions" />
+		<mapping class="com.isg.ifrend.model.bean.TmpSaUserGroup" />
+		<mapping class="com.isg.ifrend.model.bean.SelectedFunctions" />
+		<mapping class="com.isg.ifrend.model.bean.SaUserGroup" />
+		<mapping class="com.isg.ifrend.model.bean.SaSelectedFunctions" />
+		<mapping class="com.isg.ifrend.model.bean.SaUserGroupHistory" />
+		<mapping resource="com/isg/ifrend/persistence/User.hbm.xml" />
+		<mapping resource="com/isg/ifrend/persistence/TempUserOrganization.hbm.xml" />
+		<mapping resource="com/isg/ifrend/persistence/BusinessEntity.hbm.xml" />
+		<mapping resource="com/isg/ifrend/persistence/UserOrganization.hbm.xml" />
+		<mapping resource="com/isg/ifrend/persistence/TempUser.hbm.xml" />
+		<mapping resource="com/isg/ifrend/persistence/HistUser.hbm.xml" />
+		<mapping resource="com/isg/ifrend/persistence/HistUserOrganization.hbm.xml" />
+		<!-- Security Admin Mappings END -->
+	</session-factory>
+</hibernate-configuration>

@@ -1,0 +1,230 @@
+<interact>
+	<overWorld>
+		<sign1>
+			<messages>
+				<message>ASH's house</message>
+				<message> </message>
+			</messages>
+		</sign1>
+		<sign2>
+			<messages>
+				<message>GARY's house</message>
+				<message> </message>
+			</messages>
+		</sign2>
+		<sign3>
+			<messages>
+				<message>PALLET TOWN</message>
+				<message>Shades of your</message>
+				<message>journey await!</message>
+			</messages>
+		</sign3>
+		<sign4>
+			<messages>
+				<message>OAK POK*MON</message>
+				<message>RESEARCH LAB</message>
+			</messages>
+		</sign4>
+		<p1>
+			<messages>
+				<message>Technology is</message>
+				<message>incredible!</message>
+				<message>You can now store</message>
+				<message>and recall items</message>
+				<message>and POK*MON</message>
+				<message>data via PC!</message>
+			</messages>
+		</p1>
+		<p2>
+			<messages>
+				<message>I'm raising</message>
+				<message>POK*MON too!</message>
+				<message>When they get</message>
+				<message>strong, they can</message>
+				<message>protect me!</message>
+			</messages>
+		</p2>
+	</overWorld>
+
+
+
+
+	<oaksLab>
+		<book>
+			<messages>
+				<message>Crammed full of</message>
+				<message>POK*MON books!</message>
+			</messages>
+		</book>
+		<comp>
+			<messages>
+				<message>There's an e-mail</message>
+				<message>message here!</message>
+				<message>...</message>
+				<message>Calling all</message>
+				<message>POK*MON trainers!</message>
+				<message>The elite trainers</message>
+				<message>of POK*MON LEAGUE</message>
+				<message>are ready to take</message>
+				<message>on all comers!</message>
+				<message>Bring your best</message>
+				<message>POK*MON and see</message>
+				<message>how you rate as a</message>
+				<message>trainer!</message>
+				<message>POK*MON LEAGUE HQ</message>
+				<message>INDIGO PLATEAU</message>
+				<message>PS: PROF.OAK,</message>
+				<message>please visit us!</message>
+				<message>...</message>				
+			</messages>
+		</comp>
+		<table>
+			<messages>
+				<message>Its encyclopedia-</message>
+				<message>like, but the</message>
+				<message>pages are blank!</message>
+			</messages>
+		</table>
+		<pokedex>
+			<messages>
+				<message>Push START to</message>
+				<message>open the MENU!</message>
+			</messages>
+		</pokedex>
+		<p1>
+			<messages>
+				<message>I study POK*MON as</message>
+				<message>PROF.OAK's AIDE.</message>
+			</messages>
+		</p1>
+		<p2>
+			<messages>
+				<message>I study POK*MON as</message>
+				<message>PROF.OAK's AIDE.</message>
+			</messages>
+		</p2>
+		<p3>
+			<messages>
+				<message>PROF. OAK is the</message>
+				<message>authority on</message>
+				<message>POK*MON!</message>
+				<message>Many POK*MON</message>
+				<message>trainers hold him</message>
+				<message>in high regard!</message>
+			</messages>
+		</p3>
+		<pokeball>
+			<messages>
+				<message>Those are POK*</message>
+				<message>BALLs. They</message>
+				<message>contain POK*MON!</message>
+			</messages>
+		</pokeball>
+		<gary>
+			<messages>
+				<message>GARY: Yo</message>
+				<message>ASH! Gramps</message>
+				<message>isn't around!</message>
+			</messages>
+		</gary>
+		<gary2>
+			<messages>
+				<message>GARY: My</message>
+				<message>POK*MON looks a</message>
+				<message>lot stronger.</message>
+			</messages>
+		</gary2>
+		<oak>
+			<messages>
+				<message>OAK: If a wild</message>
+				<message>POK*MON appears,</message>
+				<message>your POK*MON can</message>
+				<message>fight against it!</message>
+			</messages>
+		</oak>
+	</oaksLab>
+
+
+
+
+	<house1>
+		<book>
+			<messages>
+				<message>Crammed full of</message>
+				<message>POK*MON books!</message>
+			</messages>
+		</book>
+		<map>
+			<messages>
+				<message>A TOWN MAP.</message>
+				<message> </message>
+			</messages>
+		</map>
+		<p1>
+			<messages>
+				<message>Hi ASH!</message>
+				<message>GARY is out at</message>
+				<message>Grandpa's lab.</message>
+			</messages>
+		</p1>
+		<object>
+			<messages>
+				<message>It's a big map!</message>
+				<message>This is useful!</message>
+			</messages>
+		</object>
+	</house1>
+
+
+
+
+	<home-floor1>
+		<book>
+			<messages>
+				<message>Crammed full of</message>
+				<message>POK*MON books!</message>
+			</messages>
+		</book>
+		<tv>
+			<messages>
+				<message> There's a movie </message>
+				<message> on TV. Four boys </message>
+				<message> are walking on </message>
+				<message> railroad tracks. </message>
+				<message> I better go too. </message>
+			</messages>
+		</tv>
+		<p1>
+			<messages>
+				<message> MOM: Right. </message>
+				<message> All boys leave </message>
+				<message> home some day. </message>
+				<message> It said so on TV. </message>
+				<message> PROF. OAK, next </message>
+				<message> door, is looking </message>
+				<message> for you. </message>
+			</messages>
+		</p1>
+	</home-floor1>
+
+
+
+
+	<home-floor2>
+		<sega>
+			<messages>
+				<message> ASH is </message>
+				<message> playing the SNES! </message>
+				<message> ...Okay! </message>
+				<message> It's time to go! </message>
+			</messages>
+		</sega>
+		<comp>
+			<messages>
+				<message>ASH is building</message>
+				<message>a game on Unity!</message>
+			</messages>
+		</comp>
+	</home-floor2>
+
+</interact>

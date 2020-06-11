@@ -1,0 +1,27 @@
+.coloredTableView
+{
+    selection-mode:         multiple;
+    row-height:             30px;
+    separator-color:        red;
+    separator-style:        single-line;
+}
+
+.coloredTableView label
+{
+    font-size:              14px;
+}
+
+.coloredTableView table-view-headerfooter-view view
+{
+    background-image:       linear-gradient(rgba(246,246,246,1), lightgrey);
+}
+
+.coloredTableView table-view-headerfooter-view label
+{
+    color:                  red;
+}
+
+.coloredTableViewCell:selected
+{
+    background-color:       blue;
+}

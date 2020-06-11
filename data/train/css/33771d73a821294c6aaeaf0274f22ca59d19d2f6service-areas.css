@@ -1,0 +1,86 @@
+/**
+ * Service Areas CSS
+**/
+body {
+color: #333333;
+font: 11px Verdana,Tahoma,Helvetica,Arial,sans-serif;
+}
+a {
+outline:none;
+}
+a:hover {
+text-decoration:none;
+}
+form input {
+    border: 1px solid #D4D2D2;
+    color: #666666;
+    font-size: 9px;
+    padding: 3px 8px;
+}
+#service-areas .error {
+	padding: 1em;
+	background: #ffd0d0;
+	border: 2px solid #ff8888;
+	margin-bottom: 1em;
+}
+
+#service-areas #service-areas-map {
+	height: 400px;
+	border: 1px solid #C0C0C0;
+	overflow: hidden;
+}
+
+#service-areas #service-areas-control-panel {
+	margin-bottom: 1em;
+}
+
+#service-areas-control-panel .inner {
+	
+}
+
+#service-areas #service-areas-form {
+	float: left;
+	margin-right: 2em;
+}
+
+#service-areas #service-areas-form #address {
+	width: 200px;
+	margin-right: 1em;
+	vertical-align: top;
+}
+
+#service-areas #service-areas-form button {
+	vertical-align: top;
+}
+
+#service-areas #service-areas-controls {
+	float: left;
+	width: 440px;
+}
+
+#service-areas #service-areas-controls label{
+color: #333333;
+font: 11px Verdana,Tahoma,Helvetica,Arial,sans-serif;
+}
+
+#service-areas #service-areas-controls .service-areas-legend-entry {
+	/*float: left;
+	width: 140px;*/
+	margin-top: 0.25em;
+}
+
+#service-areas #service-areas-controls .service-areas-legend-entry input {
+	vertical-align: bottom;
+}
+
+#service-areas #service-areas-controls .service-areas-legend-color-square {
+	padding: 0 4px;
+	border: 1px solid #999;
+	margin-right: 0.5em;
+	line-height: 1.333em;
+}
+
+#service-areas #service-areas-form label {
+  display: block;
+  margin: 7px 0;
+}

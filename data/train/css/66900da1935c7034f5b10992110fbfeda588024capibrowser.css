@@ -1,0 +1,98 @@
+.modApiBrowser .sidebar {
+    position: fixed;
+    background-color: #333;
+    width: 270px;
+    height: 100%;
+    color: #FFF;
+    font-size: 12px;
+    overflow: auto;
+}
+
+.modApiBrowser .sidebar .logo {
+    display: block;
+    font-family:'Lexia W01 Regular', helvetica, arial, sans-serif;
+    font-size: 30px;
+    border-bottom: 1px solid #222;
+    padding: 30px 45px;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.modApiBrowser .content {
+    margin-left: 270px;
+}
+
+.modApiBrowser .head {
+    overflow: hidden;
+    border-bottom: 1px solid #DDD;
+}
+
+.modApiBrowser .head:hover .actions {
+    display: block;
+}
+
+.modApiBrowser .actions {
+    float: left;
+    padding-top: 36px;
+}
+
+.modApiBrowser .actions a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 8px;
+    color: #666;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.modApiBrowser .actions a:hover {
+    background: #d8684a;
+    color: #FFF;
+    border: 1px solid transparent;
+}
+
+.modApiBrowser h2 {
+    float: left;
+    font-family:'Lexia W01 Thin', helvetica, arial, sans-serif;
+    font-size: 30px;
+    padding: 30px 45px;
+    color: #454545;
+}
+
+.modApiBrowser .services {
+	padding: 30px 45px;
+}
+
+.modApiBrowser .services h3 {
+    font-family:'Lexia W01 Regular', helvetica, arial, sans-serif;
+    font-size: 20px;
+    color: #454545;
+    margin-bottom: 30px;
+}
+
+.modApiBrowser .services ul {
+	margin-bottom: 30px;
+}
+
+.modApiBrowser .services ul li {
+	font-family:'Lexia W01 Thin', helvetica, arial, sans-serif;
+	display: block;
+	border-bottom: 1px solid #EEE;
+	font-size: 18px;
+	line-height: 1.8;
+	color: #666;
+}
+.modApiBrowser .services ul li .icon-question-sign {
+    color: #DDD;
+}
+.modApiBrowser .icon-ok {
+	color: #b2d643;
+}
+.modApiBrowser .services ul li .time {
+    font-family:'Lexia W01 Regular', helvetica, arial, sans-serif;
+    color: #739116;
+    font-size: 14px;
+}

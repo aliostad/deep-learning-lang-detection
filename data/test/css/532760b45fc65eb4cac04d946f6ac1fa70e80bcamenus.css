@@ -1,0 +1,41 @@
+#menu {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    z-index: 20;
+}
+
+.load-viewpoint-button {
+    display: none;
+}
+
+.load-viewpoint-button.active {
+    display: block;
+}
+
+.viewpoint-saved-indicator-wrapper {
+    position: relative;
+    left: -10em;
+    width: 0;
+    top: -2.5em;
+    height: 0;
+    border: none;
+    padding:0;
+    margin:0;
+}
+
+.viewpoint-saved-indicator-wrapper div {
+    background-color: slategray;
+    color: white;
+    position: absolute;
+    width: 8em;
+    padding: 0.5em;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+.viewpoint-saved-indicator-wrapper div.enabled {
+    opacity: 1;
+    transition: none;
+}

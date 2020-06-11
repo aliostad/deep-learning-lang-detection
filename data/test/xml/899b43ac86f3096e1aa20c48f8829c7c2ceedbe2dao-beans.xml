@@ -1,0 +1,26 @@
+    <!-- Start - Generated at 07 Jul,2015 13:46:23 -->
+    <beans:bean id="bookingHistoryRepository" class="com.filmiguru.fg.gen.repository.BookingHistoryRepository">
+        <beans:property name="sessionFactory" ref="sessionFactory" />
+    </beans:bean>
+    <beans:bean id="geoLocationRepository" class="com.filmiguru.fg.gen.repository.GeoLocationRepository">
+        <beans:property name="sessionFactory" ref="sessionFactory" />
+    </beans:bean>
+    <beans:bean id="movieRepository" class="com.filmiguru.fg.gen.repository.MovieRepository">
+        <beans:property name="sessionFactory" ref="sessionFactory" />
+    </beans:bean>
+    <beans:bean id="paymentHistoryRepository" class="com.filmiguru.fg.gen.repository.PaymentHistoryRepository">
+        <beans:property name="sessionFactory" ref="sessionFactory" />
+    </beans:bean>
+    <beans:bean id="subscriptionRepository" class="com.filmiguru.fg.gen.repository.SubscriptionRepository">
+        <beans:property name="sessionFactory" ref="sessionFactory" />
+    </beans:bean>
+    <beans:bean id="subscriptionTypeRepository" class="com.filmiguru.fg.gen.repository.SubscriptionTypeRepository">
+        <beans:property name="sessionFactory" ref="sessionFactory" />
+    </beans:bean>
+    <beans:bean id="theatreRepository" class="com.filmiguru.fg.gen.repository.TheatreRepository">
+        <beans:property name="sessionFactory" ref="sessionFactory" />
+    </beans:bean>
+    <beans:bean id="userRepository" class="com.filmiguru.fg.gen.repository.UserRepository">
+        <beans:property name="sessionFactory" ref="sessionFactory" />
+    </beans:bean>
+    <!-- End - Generated at 07 Jul,2015 13:46:23 -->

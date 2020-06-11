@@ -1,0 +1,21 @@
+#!/bin/sh
+
+CWD=`dirname $0`
+MICRO_MESSAGE_DIR=${CWD}/..
+ETC=${MICRO_MESSAGE_DIR}/etc
+PROCESS_CLIENT_DIR=${MICRO_MESSAGE_DIR}/process-client
+PROCESS_CLIENT_VERSION=0.0.1-SNAPSHOT
+PID_FILE=${ETC}/process-client.pid
+
+case "$1" in
+  start)
+  echo "Starting process-client..."
+  cd ${PROCESS_CLIENT_DIR}/target && java -jar process-client-${PROCESS_CLIENT_VERSION}-shaded.jar
+  echo $! > ${PID_FILE}
+  echo "Started with pid: $(cat ${PID_FILE})"
+  ;;
+  stop)
+  echo "Stopping process-client..."
+  kill $(cat ${PID_FILE})
+  ;;
+esac

@@ -1,0 +1,24 @@
+# -*- mode: bash -*-
+
+#SPICA_REPO_BASE=git://orion.spf.cl.nec.co.jp/git/openstack
+
+#CINDER_REPO=$SPICA_REPO_BASE/cinder.git
+#CINDERCLIENT_REPO=$SPICA_REPO_BASE/python-cinderclient.git
+#NOVA_REPO=$SPICA_REPO_BASE/nova.git
+#NOVACLIENT_REPO=$SPICA_REPO_BASE/python-novaclient.git
+#SWIFT_REPO=$SPICA_REPO_BASE/swift.git
+#SWIFTCLIENT_REPO=$SPICA_REPO_BASE/python-swiftclient.git
+#GLANCE_REPO=$SPICA_REPO_BASE/glance.git
+#GLANCECLIENT_REPO=$SPICA_REPO_BASE/python-glanceclient.git
+#KEYSTONE_REPO=$SPICA_REPO_BASE/keystone.git
+#KEYSTONECLIENT_REPO=$SPICA_REPO_BASE/python-keystoneclient.git
+#HORIZON_REPO=$SPICA_REPO_BASE/horizon.git
+#OPENSTACKCLIENT_REPO=$SPICA_REPO_BASE/python-openstackclient.git
+#NEUTRON_REPO=$SPICA_REPO_BASE/neutron.git
+#NEUTRON_CLIENT_REPO=$SPICA_REPO_BASE/python-neutronclient.git
+#NOVNC_REPO=$SPICA_REPO_BASE/noVNC.git
+
+IMAGE_URLS=http://download.cirros-cloud.net/0.3.1/cirros-0.3.1-x86_64-uec.tar.gz,http://download.cirros-cloud.net/0.3.2/cirros-0.3.2-x86_64-uec.tar.gz
+IMAGE_URLS+=,http://orion.svp.cl.nec.co.jp/images/tty-quantum.tgz
+#IMAGE_NAME=cirros-0.3.0-x86_64-uec
+#IMAGE_NAME=tty-quantum

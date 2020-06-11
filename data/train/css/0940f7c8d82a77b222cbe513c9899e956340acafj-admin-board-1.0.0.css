@@ -1,0 +1,110 @@
+.list {
+	border: 1px solid #cfceca;
+	width: 100%;
+	border-collapse: collapse;
+	vertical-align: top;
+	-moz-border-radius: 8px; 
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 1px 2px 4px #D7D7D7;
+}
+
+.list thead tr {
+	height: 40px;
+	font-size: 17px;
+	font-weight: bold;
+	color: #eeeeee;
+	background-color: #252525;
+}
+
+.list thead tr td {
+	text-align: center;
+	border-bottom: 1px solid #dcdcdc;
+}
+
+.list tbody tr {
+	height: 30px;
+	background-color: white;
+}
+
+.list tbody tr td {
+	text-align: center;
+	border-bottom: 1px solid #dcdcdc;
+}
+
+.list tfoot tr {
+	height: 100px;
+	background-color: white;
+}
+
+.list tfoot tr td {
+	text-align: center;
+	border-bottom: 1px solid #dcdcdc;
+}
+
+#write_title {
+	height: 30px;
+}
+
+#write_title input{
+	width: 100%;
+	height: 30px;
+}
+
+#write_contents {
+	margin-top: 20px;
+	height: 400px;
+}
+
+#write_contents textarea{
+	width: 100%;
+	height: 400px;
+}
+
+.toolbar {
+	height: 30px;
+	margin: 10px;
+	float: right;
+}
+
+.toolbar * {
+	height: 30px;
+	float: left;
+	margin-left: 5px;
+}
+
+.toolbar input {
+	width: 400px;
+}
+
+.toolbar button {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+#detail_box {
+	background-color: white;
+}
+
+#detail_box #detail_title{
+	height: 40px;
+	line-height: 40px;
+	padding-left:10px;
+	font-weight: bold;
+	border-bottom: 1px solid #dcdcdc;
+}
+
+#detail_box #detail_contents{
+	padding-top: 10px;
+	padding-left:10px;
+	min-height: 390px;
+	white-space: pre-wrap;
+}
+
+
+
+
+
+
+

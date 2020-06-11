@@ -1,0 +1,51 @@
+#!/bin/sh
+
+#
+# This file is released under the terms of the Artistic License.
+# Please see the file LICENSE, included in this package, for details.
+#
+# Copyright (C) 2002-2008 Mark Wong & Open Source Development Labss, Inc.
+#
+
+DIR=`dirname $0`
+. ${DIR}/mysql_profile || exit 1
+
+# Load tables
+# This background stuff is honestly kinda ugly. IMO the right way to do this is to utilize make -j
+load_table() {
+    table=${1}
+    if [ x${2} == x ]; then
+	file=${table}.tbl
+    else
+	file=${2}.tbl
+    fi
+    # This disable/enable trick only works on MyISAM for the moment. 
+    mysql --defaults-file=${DEFAULTS_FILE} -D $DBNAME -e "alter table $table disable keys;"
+    mysqlimport --defaults-file=${DEFAULTS_FILE} --fields-terminated-by='|' ${DBNAME} ${DBDATA}/${file}
+    mysql --defaults-file=${DEFAULTS_FILE} -D $DBNAME -e "alter table $table enable keys;"
+}
+
+while getopts "bd:e:" OPT; do
+    case ${OPT} in
+	b)
+	BACKGROUND=yes
+	;;
+	d)
+	DBDATA=${OPTARG}
+	;;
+    esac
+done
+
+
+load_table supplier &
+load_table part &
+load_table partsupp &
+load_table customer &
+load_table orders &
+load_table lineitem &
+load_table nation &
+load_table region &
+
+wait
+
+exit 0

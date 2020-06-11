@@ -1,0 +1,14 @@
+<workflow id="sdrIngestWF">
+   <process name="start-ingest" status="completed" />
+   <process name="register-sdr" status="waiting" />
+   <process name="transfer-object" status="waiting" />
+   <process name="validate-bag" status="waiting"/>
+   <process name="verify-agreement" status="waiting" />
+   <process name="complete-deposit" status="waiting" />
+   <process name="update-catalog" status="waiting" />
+   <process name="create-replica" status="waiting" />
+   <process name="ingest-cleanup" status="waiting" />
+</workflow>
+
+<!-- Outdated file, replaced by workflowDefinition.xml -->
+<!-- This file is used by the `ingest` CLI -->

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mappings>
+    <mapping extension=".cs" profile="csharp" />
+    <mapping extension=".xml" profile="xml" />
+    <mapping extension=".config" profile="xml" />
+    <mapping extension=".csproj" profile="xml" />
+    <mapping extension=".resx" profile="xml" />
+    <mapping extension=".ps1" profile="powershell" />
+    <mapping extension=".cmd" profile="bat" />
+    <mapping extension=".bat" profile="bat" />
+    <mapping extension=".cpp" profile="cpp" />
+    <mapping extension=".h" profile="cpp" />
+    <mapping extension=".c" profile="cpp" />
+    <mapping extension=".js" profile="javascript" />
+    <mapping extension=".sql" profile="sql" />
+    <mapping extension=".aspx" profile="aspx" />
+    <mapping extension=".master" profile="aspx" />
+</mappings>

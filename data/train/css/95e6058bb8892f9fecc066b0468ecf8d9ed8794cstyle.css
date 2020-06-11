@@ -1,0 +1,96 @@
+#model table, #vocabulary table {
+	background-color: white;	
+}
+
+#model td, #vocabulary td {
+	border: thin black solid;
+	padding: 5px;
+}
+
+.container, .containerCell {
+	border: none;
+	background: none;
+}
+
+.columnFamily {
+	border: thin black solid;
+}
+
+.columnFamilyName {
+	font-size:14px;
+	font-weight: bold;
+}
+
+.componenent {
+	text-align: left;
+}
+
+.type {
+	color: gray;
+	font-style: italic;
+}
+
+#step2, #step3, #step4, #step5, #step6, #step7, #li2, #li3, #li4, #li5, #li6, #li7 {
+	display: none;
+}
+
+.applicationID {
+	color:#790000;	
+}
+
+.applicationListID {
+	color:#8a00ff;	
+}
+
+.applciationControllerID {
+	color: red;
+}
+
+.applicationModelID {
+	color: green;	
+}
+
+.applicationViewID {
+	color: blue;
+}
+
+.ontologyID {
+	color: #8c9100;	
+}
+
+.ontologyListID {
+	color: #77b5a1;	
+}
+
+.typeID {
+	color: #c6600e;	
+}
+
+.modelID {
+	color: #838cff;	
+}
+
+.userID {
+	color: #1c19ab;	
+}
+
+.userListID {
+	color: #ff0090;	
+}
+
+.loginID {
+	color: #19ab19;	
+}
+
+.interactionID {
+	color: #008c8a;	
+}
+
+.interactionListID {
+	color: #2cfffd;	
+}
+
+#dataStructure {
+	position: relative;
+}
+

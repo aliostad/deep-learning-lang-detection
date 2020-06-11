@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process name="qingdao_openbid" xmlns="http://jbpm.org/4.3/jpdl">
+   <start g="132,120,48,48" name="start1">
+      <transition g="-47,-51" name="to 任务立项" to="任务立项"/>
+   </start>
+   <end g="132,228,48,48" name="end1"/>
+   <sub-process g="228,120,97,49" name="任务立项" sub-process-key="qingdao_taskplan">
+      <transition g="-38,-48" name="to 编制文件" to="编制文件"/>
+   </sub-process>
+   <sub-process g="360,120,97,49" name="编制文件" sub-process-key="qingdao_bzwj">
+      <transition g="-41,-41" name="to 采购公告" to="采购公告"/>
+   </sub-process>
+   <sub-process g="492,120,97,49" name="采购公告" sub-process-key="AUDIT_PURBULLETIN">
+      <transition g="-41,-47" name="to 发售文件" to="发售文件"/>
+   </sub-process>
+   <sub-process g="624,120,97,49" name="发售文件" sub-process-key="qingdao_fswj">
+      <transition name="to 递交文件" to="递交文件" g="12,-6"/>
+   </sub-process>
+   <sub-process g="492,228,92,49" name="项目评审" sub-process-key="qingdao_xmps">
+      <transition g="-30,-35" name="to 结果公告" to="结果公告"/>
+   </sub-process>
+   <sub-process g="360,228,92,49" name="结果公告" sub-process-key="qingdao_jggg">
+      <transition name="to 项目结项" to="项目结项" g="-39,-42"/>
+   </sub-process>
+   <sub-process g="228,228,97,49" name="项目结项">
+      <transition g="-21,-17" name="to end1" to="end1"/>
+   </sub-process>
+   <sub-process name="递交文件" g="624,228,97,49" sub-process-key="qingdao_djwj">
+      <transition name="to 项目评审" to="项目评审" g="-28,-36"/>
+   </sub-process>
+</process>

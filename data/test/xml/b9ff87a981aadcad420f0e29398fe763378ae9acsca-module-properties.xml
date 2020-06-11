@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sibxscaresources:SCAModule xmlns:sibxscaresources="http://www.ibm.com/websphere/appserver/schemas/6.0/sibxscaresources.xmi" identifier="EDOTicketService">
+  <sCAModuleProperty identifier="ServiceInvoke1.retryOn" value="0" type="STRING" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryCount" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryDelay" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryOn1" value="0" type="STRING" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryCount1" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryDelay1" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryOn2" value="0" type="STRING" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryCount2" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryDelay2" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryOn4" value="0" type="STRING" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryCount4" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryDelay4" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryOn5" value="0" type="STRING" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryCount5" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryDelay5" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryOn10" value="0" type="STRING" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryCount10" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryDelay10" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryOn11" value="0" type="STRING" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryCount11" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryDelay11" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryOn9" value="0" type="STRING" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryCount9" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryDelay9" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryOn8" value="0" type="STRING" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryCount8" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryDelay8" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryOn3" value="0" type="STRING" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryCount3" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryDelay3" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryOn6" value="0" type="STRING" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryCount6" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryDelay6" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryOn7" value="0" type="STRING" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryCount7" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryDelay7" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryOn12" value="0" type="STRING" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryCount12" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+  <sCAModuleProperty identifier="ServiceInvoke1.retryDelay12" value="0" type="INTEGER" group="EDOTicketService.EDOTicketService"/>
+</sibxscaresources:SCAModule>

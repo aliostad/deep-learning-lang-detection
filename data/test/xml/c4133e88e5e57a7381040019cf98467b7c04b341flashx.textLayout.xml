@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<apiPackage id="flashx.textLayout"><apiName>flashx.textLayout</apiName><apiDetail/><apiClassifier id="flashx.textLayout:BuildInfo"><apiName>BuildInfo</apiName><shortdesc>
+	 現在のビルドの識別情報です。</shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 現在のビルドの識別情報です。これは、この情報が最終 API で表されるフォームと異なる場合があります。
+	 </apiDesc></apiClassifierDetail><apiValue id="flashx.textLayout:BuildInfo:VERSION"><apiName>VERSION</apiName><shortdesc>
+		 現在のバージョン番号です。</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>1.0</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 現在のバージョン番号です。 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="flashx.textLayout:BuildInfo:kBranch"><apiName>kBranch</apiName><shortdesc>
+		 ブランチ名です。</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>main</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 ブランチ名です。 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="flashx.textLayout:BuildInfo:kBuildNumber"><apiName>kBuildNumber</apiName><shortdesc>
+		 現在のビルド番号です。</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>571 (732141)</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 現在のビルド番号です。これは静的で、<codeph>BuildInfo.kBuildNumber</codeph> により呼び出されます。
+		 <p>ストリング形式："BuildNumber (Changelist)"</p>
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

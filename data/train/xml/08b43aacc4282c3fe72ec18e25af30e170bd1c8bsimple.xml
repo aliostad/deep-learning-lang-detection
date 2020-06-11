@@ -1,0 +1,38 @@
+<configuration>
+	<services>
+		<service name="http" timeRefresh="10000">
+			<port number="80"/>
+		</service>
+		<service name="smtp">
+			<port number="35"/>
+		</service>
+		<service name="ssh">
+			<port number="22"/>
+		</service>
+		<service name="ftp" timeRefresh="100">
+			<port number="21"/>
+		</service>
+		<service name="bazaar">
+			<port number="4155"/>
+		</service>
+	</services>
+	<hosts>
+		<host name="localhost" label="Moi">
+			<service name="http"/>
+			<service name="ssh"/>
+			<service name="smtp"/>
+			<service name="bazaar"/>
+		</host>
+		<host name="192.168.0.1" label="jolivier">
+			<service name="http"/>
+			<service name="ssh"/>
+			<service name="ftp"/>
+			<service name="bazaar"/>
+		</host>
+		<host name="192.168.0.2" label="Madjar">
+			<service name="http"/>
+			<service name="ssh"/>
+			<service name="bazaar"/>
+		</host>
+	</hosts>
+</configuration>

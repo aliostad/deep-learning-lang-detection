@@ -1,0 +1,39 @@
+/*****IGNORE THE CONTAINER CLASS*****/
+.container {
+	height: 100vh;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+/*****IGNORE THE CONTAINER CLASS*****/
+
+/*
+THE BAR SHOULD:
+1. Load from left to right
+2. Load over 7 seconds
+3. Load using the color red
+4. The border of the loading bar should not be overflowed (stay inside the border)
+5. If you're stuck open the hint file!
+ADD ANY OTHER CSS CODE BELOW HERE!
+*/
+
+.loading-bar {
+	width: 400px;
+	height: 20px;
+	border: 5px solid black;
+	border-radius: 5px;
+}
+
+.loading-insert {
+	width: 398px;
+	height: 18px;
+	padding: 1px;
+	background-color: red;
+	animation: load-animation 7s 1;
+}
+
+/*Add any other css code here*/
+@keyframes load-animation {
+	0%   {width: 0;}
+	100% {width: 398;}
+}

@@ -1,0 +1,110 @@
+.h1_header{
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	font-size: 16px;
+	background-color: #E9F2FF;
+	border-left: 2px solid #1F4E7C;
+}
+
+.api_content{
+	padding : 30px 0;
+	margin: 0;
+	height: 700px;
+}
+
+.api_left_nav{
+	float: left; 
+	width: 150px; 
+	margin: -10px 10px 0 0;
+	height: 100%;
+}
+
+.api_right_content{
+	float: right;
+	width: 800px;
+	font-weight: normal;
+	font-family: "微软雅黑","宋体","SimSun","Arial Narrow", Arial, Helvetica, sans-serif;
+}
+
+.api_right_content h2{
+	font-size: 19px;
+}
+
+.api_right_content h3{
+	font-size: 16px;
+	margin: 10px 0;
+}
+
+.api_right_content p{
+	font-size: 14px;
+	line-height: 2;
+	text-indent: 2em;
+}
+
+.api_index ul{
+	font-size: 14px;
+	height: 62px;
+	line-height: 62px;
+	width: auto;
+	padding-left: 20px;
+}
+
+.api_index li{
+	float: left;
+	width: 190px;
+	padding-left: 4px;
+	list-style:disc;
+}
+
+
+.document_header_line{
+	border-bottom: solid 1px #e1e1e3;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+#cataLog a{
+	font-size: 14px;
+	
+}
+#cataLog li{
+	margin: 7px 0;
+}
+
+#cataLog{
+	margin: 0px 0px 20px 0px;
+	width: 700px;
+	border-left: 3px solid #d7d9e2;
+	box-sizing: border-box;
+	padding-left: 20px;
+}
+
+#hide_show_btn{
+	float: right;
+	font-size: 14px;
+}
+
+.display_none{
+	height: 0;
+}
+
+.display_business{
+	height: 100px;
+}
+
+.display_platform{
+	height: 120px;
+}
+
+.display_base{
+	display: block;
+	overflow: hidden;
+	
+	transition: height  1s ease-out; 
+	-moz-transition: height  1s ease-out; 
+	-webkit-transition: height  1s ease-out; 
+	-o-transition: height  1s ease-out; 
+}
+
+

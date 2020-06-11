@@ -1,0 +1,43 @@
+<save arq="/home/adriano/github/VPE-qGM/VPE-qGM/src/processes/CircuitosFuzzy/xOR_expanded.xml" pos="0">
+<process repr="env" tipo="seq" pos="0">
+<process repr="terminicio" x="1022" y="1133" cor="BLACK"></process>
+<process repr="env" tipo="seq" pos="0">
+<process repr="env" tipo="seq" pos="">
+<process repr="iterativo" tipo="iterativo" range="0:32:1" acao="parfor" x="1081.0" y="1133.0" cor="BLACK">
+<process repr="conselem" qubits= "5" acao= "X,X,Id,Id,Id" pos= "0" parametro= "" x="1081.0" y="1133.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:32:1" acao="parfor" x="1171.0" y="1133.0" cor="BLACK">
+<process repr="conselem" qubits= "5" acao= "(Control1(1),Control1(1),Target1(X),Id,Id)" pos= "0" parametro= "" x="1171.0" y="1133.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:32:1" acao="parfor" x="1261.0" y="1133.0" cor="BLACK">
+<process repr="conselem" qubits= "5" acao= "X,X,X,Id,Id" pos= "0" parametro= "" x="1261.0" y="1133.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:32:1" acao="parfor" x="1351.0" y="1133.0" cor="BLACK">
+<process repr="conselem" qubits= "5" acao= "(Control1(1),Control1(1),Id,Target1(X),Id)" pos= "0" parametro= "" x="1351.0" y="1133.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:32:1" acao="parfor" x="1441.0" y="1133.0" cor="BLACK">
+<process repr="conselem" qubits= "5" acao= "Id,Id,Id,X,Id" pos= "0" parametro= "" x="1441.0" y="1133.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:32:1" acao="parfor" x="1531.0" y="1133.0" cor="BLACK">
+<process repr="conselem" qubits= "5" acao= "(Id,Id,Control1(1),Control1(1),Target1(X))" pos= "0" parametro= "" x="1531.0" y="1133.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:32:1" acao="parfor" x="1621.0" y="1133.0" cor="BLACK">
+<process repr="conselem" qubits= "5" acao= "Id,Id,Id,X,X" pos= "0" parametro= "" x="1621.0" y="1133.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="env" tipo="seq" pos="0">
+<process repr="env" tipo="nondet1" pos="0">
+<process repr="detproj" parametro=""></process>
+<process repr="iterativo" tipo="iterativo" range="0:32:1" acao="parfor" x="1725.0" y="1067.0" cor="BLACK">
+<process repr="conselem" qubits= "5" acao= "Id,Id,Id,Id,P0" pos= "0" parametro= "" x="1725.0" y="1067.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:32:1" acao="parfor" x="1725.0" y="1198.0" cor="BLACK">
+<process repr="conselem" qubits= "5" acao= "Id,Id,Id,Id,P1" pos= "0" parametro= "" x="1725.0" y="1198.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr= "probability" acao= "QGMAnalyzer" pos= "32" parametro= "Probability" x="1829.0" y="1133.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="termfim" x="1890" y="1133" cor="BLACK"></process>
+</process>
+</save>

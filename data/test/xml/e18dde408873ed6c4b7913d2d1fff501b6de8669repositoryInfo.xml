@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resultPage>
+ <repositoryInfo>
+  <AdminInfo>The contents of this page is just an example, 
+  you may edit it in repositoryInfo.xml,
+  and it is displayed by the getRepositoryInfo operation
+  with the adminGetRepositoryInfoToHtml.xslt stylesheet.</AdminInfo>
+  <RepositoryShortName>REPOSNAME</RepositoryShortName>
+  <RepositoryLongName>Repository for REPOSNAME configuration</RepositoryLongName>
+  <RepositoryDeveloper>Gert Schmeltz Pedersen, DTIC@DTU</RepositoryDeveloper>
+  <RepositoryContact>gsp@dtic.dtu.dk</RepositoryContact>
+ </repositoryInfo>
+</resultPage>

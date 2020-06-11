@@ -1,0 +1,62 @@
+#model-viewer{
+  width:970px;
+}
+
+#viewerCanvas {
+  display: block;
+  width: 970px;
+  height:540px;
+  float:left;
+  z-index: 100;
+  cursor: move;
+  margin-bottom:-66px;
+
+}
+#viewerModelsWrapper{
+  width: 970px;
+  height:66px;
+  overflow-x:hidden;
+  float:left;
+}
+
+#viewerModelsStrip {
+  float:left;
+  width: 3000px;
+  height: auto;
+  margin:0;
+}
+#viewerModels{
+  position:relative;
+  font-family:futura;
+  float:left;
+  left:0;
+  width: auto;
+  height: 64px;
+}
+
+a.modelLink{
+  display:block;
+  font-size:10px;
+  width:64px;
+  height:64px;
+  background-size: 64px;
+  background-color:#fff;
+  opacity:0.66;
+  float:left;
+  margin:0 2px 0 2px;
+  overflow:hidden;
+  z-index:200;
+}
+a:hover.modelLink{
+  opacity:1;
+}
+
+#viewerSettings {
+  float:left;
+  width:960px;
+  height:auto;
+}
+
+#model-viewer div.clear {
+  clear: both;
+}

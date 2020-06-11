@@ -1,0 +1,81 @@
+@font-face {
+	font-family: 'hearst-api';
+	src:url('hearst-api.eot');
+	src:url('hearst-api.eot?#iefix') format('embedded-opentype'),
+		url('hearst-api.woff') format('woff'),
+		url('hearst-api.ttf') format('truetype'),
+		url('hearst-api.svg#hearst-api') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'hearst-api';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[data-icon]:before {
+        font-family: 'hearst-api';
+        content: attr(data-icon);
+        speak: none;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+}
+
+.icon-key-arrow:before {
+	content: "\e600";
+}
+.icon-api:before {
+	content: "\e601";
+}
+.icon-documentation:before {
+	content: "\e602";
+}
+.icon-key:before {
+	content: "\e603";
+}
+.icon-code:before {
+	content: "\e604";
+}
+.icon-arrow:before {
+	content: "\e605";
+}
+.icon-check:before {
+	content: "\e606";
+}
+.icon-thex:before {
+	content: "\e607";
+}
+.icon-email:before {
+	content: "\e608";
+}
+.icon-email-exclaim:before {
+	content: "\e609";
+}
+.icon-unlock:before {
+	content: "\e60a";
+}
+.icon-lock:before {
+	content: "\e60b";
+}
+.icon-documentation-papers:before {
+	content: "\e60c";
+}
+.icon-iodocs:before {
+	content: "\e60d";
+}

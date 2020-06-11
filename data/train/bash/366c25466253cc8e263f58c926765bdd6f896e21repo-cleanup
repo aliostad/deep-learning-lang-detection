@@ -1,0 +1,38 @@
+#!/usr/bin/env zsh
+
+pushd ${1:-./}
+for repo in *; do;
+  pushd $repo
+  if [[ -d ".git" ]]; then
+    if [[ $(( `git status --porcelain | wc -l` )) -ne 0 ]]; then
+      echo "Repo $repo has uncommited changes."
+      popd
+    else
+      git checkout master &> /dev/null
+      git ff &> /dev/null
+      git cleanup &> /dev/null
+
+      if [[ $(( `git branch | wc -l` + 0 )) -gt 1 ]]; then
+        echo "Repo $repo has dangling branches, attempting cleanup..."
+
+        for branch in $(git branch | grep -v '^* '); do
+          git push -u origin $branch &> /dev/null
+          git branch -d $branch &> /dev/null
+        done
+      fi
+
+      if [[ $(( `git branch | wc -l` + 0 )) -gt 1 ]]; then
+        echo "Repo $repo still has dangling branches.";
+        popd
+      else
+        popd
+        echo "Repo $repo is clean, goodbye!"
+        rm -fr $repo
+      fi
+    fi
+  else
+    echo "Folder $repo does not look like a git repo, skipping it."
+    popd
+  fi
+done
+popd

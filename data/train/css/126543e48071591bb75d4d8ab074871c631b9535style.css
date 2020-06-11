@@ -1,0 +1,190 @@
+/* NAV COLORS */
+
+nav {
+	background-color: $drawerNavColor;
+}
+
+.nav-story-title a {
+	color: $navLinkColor-hover;
+	&:hover {
+		color: $navLinkColor-hover;
+	}
+}
+
+nav li a {
+	color: $navLinkColor;
+	background-color: $navLinkColorBackgroundColor;
+}
+
+nav li:hover a {
+	color: $navLinkColor-hover;
+	background-color: $navLinkColorBackgroundColor-hover;
+}
+
+nav li a.current-nav, nav li a.current-nav:hover {
+	color: $navLinkColor-currentSection;
+	background-color: $navLinkColorBackgroundColor-currentSection;
+}
+
+@media screen and (max-width: $mediumBreakpoint) {
+
+	.nav-menu-button rect {
+		fill: $hamburgerButtonBackgroundFill;
+	}
+
+	.nav-menu-button path, 
+	.nav-menu-button:hover path {
+		fill: $alternateTextColor;
+	}
+}
+
+
+/* CORE LEFT NAV SIZING, SPACING, AND STYLES */
+
+.article-wrapper {
+	overflow: hidden; 
+	width: 100%;
+}
+
+.nav-wrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow-x: hidden;
+	box-sizing: border-box;
+	z-index: 0;
+	-webkit-overflow-scrolling: touch;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: $navWidth;
+	height: 100%;
+	z-index: -1;
+	padding-top: $leftNavPaddingTop;
+	padding-bottom: $leftNavPaddingBottom;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	@include box-sizing(border-box);
+	-webkit-font-smoothing: antialiased;
+	opacity: 0;
+
+	@media screen and (max-width: $smallBreakpoint) {
+		width: $navWidth-smallBreakpoint;
+	}
+}
+
+[data-animation="push"] nav {
+	@include transition(transform $defaultTransitionDuration, opacity 0ms);
+	@include transform(translateX(-$navWidth));
+	@media screen and (max-width: $smallBreakpoint) {
+		@include transform(translateX(-$navWidth-smallBreakpoint));
+	}		
+
+	&.nav-revealed {
+		@include transform(translateX(0));			
+	}
+}
+
+nav a, 
+nav a:hover {
+	border-bottom: none;
+}
+
+.nav-above-in-view {
+	z-index: 1;
+}
+
+article.nav-revealed, 
+.nav-menu-button.nav-revealed, 
+footer.nav-revealed,
+.left-arrow.nav-revealed > * {
+	@include transform(translateX($navWidth));
+
+	@media screen and (max-width: $smallBreakpoint) {
+		@include transform(translateX($navWidth-smallBreakpoint));
+	}
+}
+
+.nav-story-title {
+	@include left-nav-story-title;
+}
+
+.nav-chapter-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.nav-chapter-list a {
+	@include section-listing;
+}
+
+.nav-story-title a:after {
+	content: "\00A0\2191";
+	font-size: 0.75em;
+	opacity: 0;
+}
+
+.nav-story-title a:hover:after {
+	opacity: 0.375;
+}
+
+.nav-share-and-soundtrack-icons {
+	display: block;
+}
+
+.mobile-nav-icons {
+	display: none;
+	padding-left: $leftNavPaddingLeft;
+	padding-right: $leftNavPaddingRight;
+	margin-bottom: 2em;
+	margin-top: -0.75em;
+}
+
+.mobile-nav-icons a {
+	margin-right: 0.5em;
+	opacity: 0.25;
+	&:hover {
+		opacity: 0.75;
+	}
+}
+
+.mobile-nav-icons .template-icon path, 
+.mobile-nav-icons .template-icon:hover path {
+	stroke: none;
+	fill: #f5f5f5;
+	fill-opacity: 1;
+}
+
+@media screen and (max-width: $mediumBreakpoint) {
+
+	.nav-share-and-soundtrack-icons {
+		display: none;
+	}
+
+	.mobile-nav-icons {
+		display: block;
+	}
+
+	.nav-menu-button {
+		opacity: 0.75;
+		top: 0.97rem;
+		margin-left: 0.9rem;
+	}
+
+	.nav-menu-button svg {
+		width: 28px;
+		height: 28px;
+	}
+
+	.nav-menu-button path, 
+	.nav-menu-button:hover path {
+		stroke: none;
+		fill-opacity: 1;
+	}
+}

@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*- CAIXAS ISOLADAS -----------------------------------------------------------------------------------*/
+
+/*pagination*/
+#paginner { clear: both; text-align: center; font-weight: bold; font-size: 11px; margin-top: 30px; }
+#paginner .pagination {}
+#paginner .pagination span, #paginner .pagination a { padding: 4px 3px; margin: 0 1px; }
+#paginner .pagination .current { background: #fff; }
+#paginner .pagination .prev.current, #paginner .pagination .next.current { background: none; color: #b8b8b8; }
+#paginner .pagination a { color: #474444; }
+
+/*formulários*/
+.model-widgets .message-super-bar { margin-bottom: 17px; padding: 4px 2px; background: #ececec; color: #bf2d2d; font-weight: bold; }
+.model-widgets .input-wrap-round
+{
+	background: white;
+	border: solid 1px #D5D5D5;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	behavior: url(border-radius.htc);
+}
+.model-widgets .input-wrap-round input { display: block; position: relative; z-index: 999; padding: 0 5px; height: 24px; color: #858585; }
+.model-widgets .input-wrap-round.ie input { line-height: 24px; }
+.model-widgets .input-wrap-round input.error { background: #FAFFBD; }
+.model-widgets .input-wrap-round select { border: none; margin-top: 3px; }
+.model-widgets label.error { color: #385F9C; font-weight: bold; float: left; margin-left: 4px; margin-top: 5px; }
+
+.model-lightform .fieldset { padding-top: 18px; padding-bottom: 15px; }
+.model-lightform .fieldset h2 { margin: 0; font: 24px  Arial, Helvetica, sans-serif; letter-spacing: -0px; }
+.model-lightform .fieldset hr { margin-top: 3px; }
+.model-lightform .widget-line { display: block; overflow: hidden; margin-bottom: 13px; }
+.model-lightform .widget-line .label-joint { float: left; width: 148px; margin-top: 5px; font-weight: bold; }
+.model-lightform .widget-line .label-joint.minor { width: 48px; margin-left: 7px; }
+.model-lightform .widget-line .label-joint span { color: #5ca209 }
+.model-lightform .widget-line .input-joint { float: left; width: 292px; }
+.model-lightform .widget-line .input-wrap-round { float: left; }
+.model-lightform .widget-line .input-wrap-round input { width: 280px; }
+.model-lightform .widget-line .input-wrap-round.lesser input { width: 172px; }
+.model-lightform .widget-line .input-wrap-round.medium input { width: 106px; }
+
+
+/*site crumb*/
+#strip-crumb { padding-bottom: 29px; }
+#strip-crumb a, #strip-crumb span {}
+#strip-crumb spa{ padding: 0 4px 0 4px; }
+#strip-crumb a.active { font-weight: bold; }
+
+hr.line { clear: both; border: none; border-top: solid 1px #ececec; margin: 18px 0; height: 0; }
+
+
+/*- CAIXAS LISTAGEM -----------------------------------------------------------------------------------*/
+.for-product-list { margin-right: -14px; }
+.for-product-list a { float: left; width: 140px; margin-right: 14px; margin-bottom: 18px; }
+.for-product-list a #thumb { background: center left no-repeat; height: 115px; }
+.for-product-list a #sub-height { height: 90px; }
+.for-product-list a #sub-height #label-name { color: #26157e; }
+.for-product-list a #sub-height #label-brand { color: #8372d3; font-size: 11px; }
+.for-product-list a #sub-height #label-price-base { color: #5ca209; font-size: 13px; }
+.for-product-list a #sub-height #label-price-promo { color: #494949; font-size: 11px; }
+

@@ -1,0 +1,131 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]; then
+    echo "Usage: $0 ACTION [ARG]
+Actions:
+  clone [fast]
+  update [fast]
+  notclean
+  merged
+  stash
+  coderage
+  notmaster
+  notmerged
+  make TARGET"
+    exit 1
+fi
+
+if [ "$1" = "clone" ]; then
+    for repo in $(cat chaperon.list); do
+        dir=$(basename ${repo/%.git})
+        if [ ! -e "$dir" ]; then
+            echo "Cloning $dir .."
+            if [ "$2" = "fast" ]; then
+                git clone -q $repo &
+            else
+                git clone -q $repo
+            fi
+        fi
+    done
+    if [ "$2" = "fast" ]; then
+        echo "(waiting for all to complete)"
+        wait
+    fi
+elif [ "$1" = "update" ]; then
+    for repo in *; do
+        [ ! -d "$repo/.git" ] && continue
+        cd "$repo"
+        if git status | tr '\n' ' ' | grep -Eqv 'nothing to commit, working (tree|directory) clean'; then
+          echo "Repo $repo is not clean, cannot update!"
+          cd "$OLDPWD"
+          continue
+        fi
+        [ "$(cat .git/HEAD)" != "ref: refs/heads/master" ] && git checkout -q master
+        echo "Updating $repo.."
+        if [ "$2" = "fast" ]; then
+            ( git fetch -p && git merge origin/master ) &
+        else
+            git fetch -p && git merge origin/master
+        fi
+        cd "$OLDPWD"
+    done
+    if [ "$2" = "fast" ]; then
+        echo "(waiting for all to complete)"
+        wait
+    fi
+elif [ "$1" = "notclean" ]; then
+    for repo in *; do
+        [ ! -d "$repo/.git" ] && continue
+        cd "$repo"
+        if git status | tr '\n' ' ' | grep -Eqv 'nothing to commit, working (tree|directory) clean'; then
+          echo "$repo is not clean"
+        fi
+        cd "$OLDPWD"
+    done
+elif [ "$1" = "merged" ]; then
+    for repo in *; do
+        [ ! -d "$repo/.git" ] && continue
+        cd "$repo"
+        out=$(git branch --merged master | grep -v master)
+        if [ -n "$out" ]; then
+            echo "$repo"
+            echo "$out"
+        fi
+        cd "$OLDPWD"
+    done
+elif [ "$1" = "stash" ]; then
+    for repo in *; do
+        [ ! -d "$repo/.git" ] && continue
+        cd "$repo"
+        echo "$repo"
+        git stash list
+        cd "$OLDPWD"
+    done
+elif [ "$1" = "coderage" ]; then
+    file=$(\
+        find . \
+            -not -name "*test*" \
+            -type f -name "*.py" \
+        | sort -R \
+        | head -n 1)
+    echo "Picked ${file}"
+    read -p "(press enter)"
+    vim "${file}"
+elif [ "$1" = "notmaster" ]; then
+    for repo in *; do
+        [ ! -d "$repo/.git" ] && continue
+        cd "$repo"
+        if [ "$(cat .git/HEAD)" != "ref: refs/heads/master" ]; then
+            echo "$repo is not on master"
+        fi
+        cd "$OLDPWD"
+    done
+elif [ "$1" = "notmerged" ]; then
+    for repo in *; do
+        [ ! -d "$repo/.git" ] && continue
+        cd "$repo"
+        out=$(git branch --no-merged master)
+        if [ -n "$out" ]; then
+            echo "$repo"
+            echo "$out"
+        fi
+        cd "$OLDPWD"
+    done
+elif [ "$1" = "make" ]; then
+    if [ -z "$2" ]; then
+        echo "Usage $0 make TARGET
+e.g.: $0 make test; $0 make clean; .."
+        exit 1
+    fi
+    for repo in *; do
+        [ ! -e "$repo/Makefile" ] && continue
+        if grep -q "^$2:" "$repo/Makefile"; then
+            cd "$repo"
+            make "$2" || break
+            cd "$OLDPWD"
+        fi
+    done
+else
+    echo "Unknown action '$1'."
+    exit 1
+fi

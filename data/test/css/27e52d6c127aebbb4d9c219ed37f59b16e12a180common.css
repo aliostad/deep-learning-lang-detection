@@ -1,0 +1,183 @@
+﻿body {
+    font-family: Arial;
+}
+
+.map-shell {
+    height: 600px;
+    width: 100%;
+    float: left;
+    clear: both;
+    position: relative;
+}
+
+    .map-shell #map-canvas {
+        width: 100%;
+        height: 100%;
+    }
+
+    .map-shell .closest-customer-service-shell {
+        margin-top: 90px;
+        z-index: 2;
+        position: absolute;
+        left: calc(50% - 470px);
+        top: 0;
+        width: 940px;
+        height: 1px;
+    }
+
+        .map-shell .closest-customer-service-shell .closest-customer-service-setting {
+            clear: both;
+            float: right;
+            padding: 24px 25px 20px 25px;
+            background-color: #e5ebf0;
+            color: #334450;
+        }
+
+            .map-shell .closest-customer-service-shell .closest-customer-service-setting .css-title {
+                line-height: 20px;
+                font-size: 16px;
+                width: 280px;
+            }
+
+            .map-shell .closest-customer-service-shell .closest-customer-service-setting .dropdown-city {
+                margin-top: 15px;
+                width: 280px;
+                height: 45px;
+                background-color: #fff;
+            }
+
+                .map-shell .closest-customer-service-shell .closest-customer-service-setting .dropdown-city .select-city {
+                    padding: 10px 0 10px 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url('../img/map-gray-arrown-down.png');
+                    background-repeat: no-repeat;
+                    background-position: 250px center;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    border-color: #fff;
+                    outline: 0;
+                    border: none;
+                    padding-left: 15px;
+                    font-size: 15px;
+                }
+
+                    .map-shell .closest-customer-service-shell .closest-customer-service-setting .dropdown-city .select-city:hover {
+                        outline: none;
+                        border: none;
+                    }
+
+                    .map-shell .closest-customer-service-shell .closest-customer-service-setting .dropdown-city .select-city:focus {
+                        outline: none;
+                        border: none;
+                    }
+
+                    .map-shell .closest-customer-service-shell .closest-customer-service-setting .dropdown-city .select-city::-ms-expand {
+                        display: none;
+                    }
+
+                    .map-shell .closest-customer-service-shell .closest-customer-service-setting .dropdown-city .select-city option {
+                        border: none;
+                        outline: none;
+                    }
+
+            .map-shell .closest-customer-service-shell .closest-customer-service-setting .dropdown-region {
+                width: 280px;
+                margin-top: 15px;
+                height: 45px;
+                background-color: #fff;
+            }
+
+                .map-shell .closest-customer-service-shell .closest-customer-service-setting .dropdown-region .select-region {
+                    width: 100%;
+                    height: 100%;
+                    background-image: url('../img/map-gray-arrown-down.png');
+                    background-repeat: no-repeat;
+                    background-position: 250px center;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    border-color: #fff;
+                    outline: 0;
+                    border: none;
+                    padding-left: 15px;
+                    font-size: 15px;
+                    text-transform: capitalize;
+                }
+
+                    .map-shell .closest-customer-service-shell .closest-customer-service-setting .dropdown-region .select-region:hover {
+                        outline: none;
+                        border: none;
+                    }
+
+                    .map-shell .closest-customer-service-shell .closest-customer-service-setting .dropdown-region .select-region:focus {
+                        outline: none;
+                        border: none;
+                    }
+
+                    .map-shell .closest-customer-service-shell .closest-customer-service-setting .dropdown-region .select-region::-ms-expand {
+                        display: none;
+                    }
+
+        .map-shell .closest-customer-service-shell .closest-customer-service-result {
+            -webkit-box-shadow: 0 4px 5px -5px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+            -ms-box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+            -o-box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+            clear: both;
+            float: right;
+            padding: 30px 40px 20px 40px;
+            background-color: #fff;
+        }
+
+            .map-shell .closest-customer-service-shell .closest-customer-service-result .result-name {
+                width: 250px;
+                font-weight: bold;
+                font-size: 15px;
+                color: #334450;
+            }
+
+            .map-shell .closest-customer-service-shell .closest-customer-service-result .result-address {
+                margin-top: 20px;
+                width: 250px;
+                font-size: 15px;
+                color: #334450;
+                font-weight:normal !important;
+            }
+
+            .map-shell .closest-customer-service-shell .closest-customer-service-result .result-print {
+                font-size: 16px;
+                float: left;
+                width: 50%;
+                text-align: left;
+                margin-top: 20px;
+            }
+
+                .map-shell .closest-customer-service-shell .closest-customer-service-result .result-print button {
+                    color: #334450;
+                    font-weight: bold;
+                    font-size: 16px;
+                    background: none;
+                    border: none;
+                    outline: none;
+                    padding: 0;
+                }
+
+            .map-shell .closest-customer-service-shell .closest-customer-service-result .all-customer-services {
+                margin-top: 20px;
+                float: left;
+                width: 50%;
+                text-align: right;
+            }
+
+                .map-shell .closest-customer-service-shell .closest-customer-service-result .all-customer-services a {
+                    color: #faa300;
+                    font-weight: bold;
+                    font-size: 16px;
+                    background: none;
+                    border: none;
+                    outline: none;
+                    padding: 0;
+                }

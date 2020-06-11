@@ -1,0 +1,54 @@
+
+/* Brage Yellow - #edea00 */
+
+.customer-center {background-color: #dedede;}
+
+#nav li.active a,
+#nav li.over a,
+#nav li.over a span,
+#nav-container,
+#nav li.over a span,
+#nav li.active a span,
+.breadcrumb-and-search,
+.breadcrumb-and-search a,
+#nav li a:hover span,
+#nav li a:hover,
+#nav li ul {
+	background-color:#edea00;
+	color: #666;	
+}
+
+#nav ul li,
+#nav ul li a,
+#nav ul li a span,
+#nav ul li.over a,
+#nav ul li.over a span,
+#nav ul li.active a span,
+#nav ul li a:hover,
+#nav ul li a:hover span {
+	color: #666;
+}
+
+#nav ul li {
+	border-bottom: 1px solid #666;
+}
+
+.header-container {
+	border-top: 7px solid #edea00;
+}
+.customer-center > ul,
+#nav li a,
+.form-search .button,
+.sidebar .block .block-title {
+	color: #666;
+}
+#nav li a {
+	color: #666;
+}
+.sidebar .block {
+	border-top-color: #edea00;
+	border-bottom-color: #edea00;
+}
+.footer, .opc .step-title {
+	border-top-color: #edea00;
+}

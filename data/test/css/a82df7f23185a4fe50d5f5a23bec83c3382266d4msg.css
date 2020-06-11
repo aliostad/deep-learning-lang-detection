@@ -1,0 +1,32 @@
+#message-display{
+    
+}
+#message-display .message{
+   display: block; 
+   padding: 10px;
+   font-size: 0.9em;
+}
+#message-display .icon{
+    padding-right: 10px;
+}
+#message-display .success{
+    border: thin solid #42892A; 
+    background-color: #D3EBCC;
+}
+#message-display .help{
+    border: thin solid #2479CE;
+    background-color: #F0F0F0;
+}
+#message-display .info{
+    border: thin solid #2479CE;
+    background-color: #F0F0F0;
+}
+#message-display .warning{
+    border: thin solid #E67F17;
+    background-color: #F5E45F; 
+}
+#message-display .error{
+    border: thin solid #990000;
+    background-color: #EBCCCC;
+}
+                                                                                                                                      

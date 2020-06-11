@@ -1,0 +1,42 @@
+body {
+  width: 100%;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00B7FF;
+}
+.right-column {
+  width: 80%;
+  float: right;
+}
+.left-column {
+  width: 20%;
+  float: left;
+}
+.model-input {
+  margin-bottom: 200px; 
+}
+.model-input label {
+  width: 25%;
+}
+.model-input input {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 5px;
+}
+.model-input span {
+  width: 20%;
+}
+.model-input input[type=radio] {
+  width: 10% !important;
+}
+.model-input button {
+  margin-bottom: 10px;
+}
+.survivability-data button {
+  margin-bottom: 20px;
+}
+.survivability-data textarea {
+  height: 200px;
+}

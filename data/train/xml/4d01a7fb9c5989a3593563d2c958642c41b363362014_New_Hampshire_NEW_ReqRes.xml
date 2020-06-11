@@ -1,0 +1,96 @@
+<!-- request -->
+<Search Source="EPBYMINW0689" Product="WestlawNext-QED" BusinessUnit="LEGAL-US-CORE"
+        RequestId="0a8f0cfd14a620b7ab06c994787" RootId="9bd5ff30b8344ff28891502d13c46ae4"
+        EventId="i0a8f0cfd0000014a620b796cbef68e60" RouteTag="cobalt" UserId="i0acc051b00000149435a5b87cce9f3e7"
+        Version="1" UseMore="true">
+    <SearchRequest PIT="MAXPIT" StageID="0" Debug="0" DebugIndexSet="">
+        <Query QueryText="lk(NHSTS273-A:1)" QueryType="BL" SyntaxType="NA" PluralType="SINGULARTOPLURAL"
+               NativeDateFormat="m-d-y" DocumentPortion="" GlobalViewExpression="" ExactMatch="false"
+               OptionalWildcard="false" IgnoreStopwords="false" ExpandNormalizedTerms="true"
+               RelevanceRankElementRanges="false" NLUserPhraseBehavior="false"
+               UserPhraseHighlightBehavior="false"></Query>
+        <Collection CollectionName="w_codesslotksp" CollectionSetName="" IndexSetName="" CollectionType="1" QueryView=""
+                    RankOption="" ViewExpression="" FieldSet="" QFDSetName="" DuplicateDeleteElementName=""
+                    DuplicateDeleteAttributeName="" DuplicatePreferenceElementName=""
+                    DuplicatePreferenceAttributeName="" DuplicatePreferenceSortOption="" NoisewordSetName=""
+                    EquivalencySetName="" CollectionRank="1" NLQuerySetName="" AutoPhraseSetName="" MisspellSetName=""
+                    NLNoiseWordSetName="" NoisePhraseSetName="" ConceptWeightSetName=""
+                    DuplicateOptionName=""></Collection>
+        <Collection CollectionName="w_codesslotmtp" CollectionSetName="" IndexSetName="" CollectionType="1" QueryView=""
+                    RankOption="" ViewExpression="" FieldSet="" QFDSetName="" DuplicateDeleteElementName=""
+                    DuplicateDeleteAttributeName="" DuplicatePreferenceElementName=""
+                    DuplicatePreferenceAttributeName="" DuplicatePreferenceSortOption="" NoisewordSetName=""
+                    EquivalencySetName="" CollectionRank="1" NLQuerySetName="" AutoPhraseSetName="" MisspellSetName=""
+                    NLNoiseWordSetName="" NoisePhraseSetName="" ConceptWeightSetName=""
+                    DuplicateOptionName=""></Collection>
+        <Collection CollectionName="w_codesslotmsp" CollectionSetName="" IndexSetName="" CollectionType="1" QueryView=""
+                    RankOption="" ViewExpression="" FieldSet="" QFDSetName="" DuplicateDeleteElementName=""
+                    DuplicateDeleteAttributeName="" DuplicatePreferenceElementName=""
+                    DuplicatePreferenceAttributeName="" DuplicatePreferenceSortOption="" NoisewordSetName=""
+                    EquivalencySetName="" CollectionRank="1" NLQuerySetName="" AutoPhraseSetName="" MisspellSetName=""
+                    NLNoiseWordSetName="" NoisePhraseSetName="" ConceptWeightSetName=""
+                    DuplicateOptionName=""></Collection>
+        <Collection CollectionName="w_codesslotnhp" CollectionSetName="" IndexSetName="" CollectionType="1" QueryView=""
+                    RankOption="" ViewExpression="" FieldSet="" QFDSetName="" DuplicateDeleteElementName=""
+                    DuplicateDeleteAttributeName="" DuplicatePreferenceElementName=""
+                    DuplicatePreferenceAttributeName="" DuplicatePreferenceSortOption="" NoisewordSetName=""
+                    EquivalencySetName="" CollectionRank="1" NLQuerySetName="" AutoPhraseSetName="" MisspellSetName=""
+                    NLNoiseWordSetName="" NoisePhraseSetName="" ConceptWeightSetName=""
+                    DuplicateOptionName=""></Collection>
+        <Collection CollectionName="w_codesslotohp" CollectionSetName="" IndexSetName="" CollectionType="1" QueryView=""
+                    RankOption="" ViewExpression="" FieldSet="" QFDSetName="" DuplicateDeleteElementName=""
+                    DuplicateDeleteAttributeName="" DuplicatePreferenceElementName=""
+                    DuplicatePreferenceAttributeName="" DuplicatePreferenceSortOption="" NoisewordSetName=""
+                    EquivalencySetName="" CollectionRank="1" NLQuerySetName="" AutoPhraseSetName="" MisspellSetName=""
+                    NLNoiseWordSetName="" NoisePhraseSetName="" ConceptWeightSetName=""
+                    DuplicateOptionName=""></Collection>
+        <Collection CollectionName="w_codesslotorp" CollectionSetName="" IndexSetName="" CollectionType="1" QueryView=""
+                    RankOption="" ViewExpression="" FieldSet="" QFDSetName="" DuplicateDeleteElementName=""
+                    DuplicateDeleteAttributeName="" DuplicatePreferenceElementName=""
+                    DuplicatePreferenceAttributeName="" DuplicatePreferenceSortOption="" NoisewordSetName=""
+                    EquivalencySetName="" CollectionRank="1" NLQuerySetName="" AutoPhraseSetName="" MisspellSetName=""
+                    NLNoiseWordSetName="" NoisePhraseSetName="" ConceptWeightSetName=""
+                    DuplicateOptionName=""></Collection>
+        <Collection CollectionName="w_codesslotscp" CollectionSetName="" IndexSetName="" CollectionType="1" QueryView=""
+                    RankOption="" ViewExpression="" FieldSet="" QFDSetName="" DuplicateDeleteElementName=""
+                    DuplicateDeleteAttributeName="" DuplicatePreferenceElementName=""
+                    DuplicatePreferenceAttributeName="" DuplicatePreferenceSortOption="" NoisewordSetName=""
+                    EquivalencySetName="" CollectionRank="1" NLQuerySetName="" AutoPhraseSetName="" MisspellSetName=""
+                    NLNoiseWordSetName="" NoisePhraseSetName="" ConceptWeightSetName=""
+                    DuplicateOptionName=""></Collection>
+        <Collection CollectionName="w_codesslotvtp" CollectionSetName="" IndexSetName="" CollectionType="1" QueryView=""
+                    RankOption="" ViewExpression="" FieldSet="" QFDSetName="" DuplicateDeleteElementName=""
+                    DuplicateDeleteAttributeName="" DuplicatePreferenceElementName=""
+                    DuplicatePreferenceAttributeName="" DuplicatePreferenceSortOption="" NoisewordSetName=""
+                    EquivalencySetName="" CollectionRank="1" NLQuerySetName="" AutoPhraseSetName="" MisspellSetName=""
+                    NLNoiseWordSetName="" NoisePhraseSetName="" ConceptWeightSetName=""
+                    DuplicateOptionName=""></Collection>
+        <Collection CollectionName="w_codesslotdcp" CollectionSetName="" IndexSetName="" CollectionType="1" QueryView=""
+                    RankOption="" ViewExpression="" FieldSet="" QFDSetName="" DuplicateDeleteElementName=""
+                    DuplicateDeleteAttributeName="" DuplicatePreferenceElementName=""
+                    DuplicatePreferenceAttributeName="" DuplicatePreferenceSortOption="" NoisewordSetName=""
+                    EquivalencySetName="" CollectionRank="1" NLQuerySetName="" AutoPhraseSetName="" MisspellSetName=""
+                    NLNoiseWordSetName="" NoisePhraseSetName="" ConceptWeightSetName=""
+                    DuplicateOptionName=""></Collection>
+        <ClientOptions DocumentLimit="2000" TimeLimit="0" QueryWarningFlag="true" HighlightFlag="true" RankFlag="true"
+                       isTocScan="false" LargeResultsForNL="false" ReturnIDFTable="false" PersistRankKeys="false"
+                       PersistDuplicateKeys="true" HighlightElementRanges="false" DuplicateProcessingMode="0"
+                       RetrieveDocumentCountsByCollection="false" HighLightAllDocs="false"
+                       ExpandFamilyMainToQuicks="true" EnableNLLargeResultsThreshold="false"
+                       EnableConceptCount="false"></ClientOptions>
+    </SearchRequest>
+    <ServerParmsQuery Query="startTime,markInterval"></ServerParmsQuery>
+</Search>
+
+<!-- response -->
+<Search>
+<SearchResponse SearchResultGuid="i0ad6248c0000014a620ba2a27ec417af" DocsReturned="0" DocsFound="0" CompletionFlag="0"
+                ErrorCode="246" ErrorCodeType="1" ElapsedTime="38" AllContentAvailableCode="1" IndexSetCount="9"
+                ProcessedDuplicatesInSearch="false">
+    <QueryErrorRange ErrorCode="246" ErrorCodeType="1" BeginOffset="4" EndOffset="15"></QueryErrorRange>
+</SearchResponse>
+<ServerParmsResult>
+    <ResultPair Name="startTime" Value="1418984137342"></ResultPair>
+    <ResultPair Name="markInterval" Value="38"></ResultPair>
+</ServerParmsResult>
+</Search>

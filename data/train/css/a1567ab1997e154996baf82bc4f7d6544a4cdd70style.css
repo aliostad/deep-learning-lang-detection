@@ -1,0 +1,109 @@
+.api-query-container input {
+	width: 90%;
+	border: 0;
+}
+
+.api-query-container {
+	width: 100%;
+	border-spacing: 0;
+}
+
+pre.api-query-container,
+.api-query-container input,
+.api-query-container code {
+	font-family: Monaco, monospace, Consolas, 'Courier New', Courier; 
+	font-size: 32px;
+	color: black;
+	background-color: #e0e0e0;
+	border: none;
+}
+
+td.method {
+	width: 80px;
+	padding-left: 6px;
+}
+
+.api-query-container input {
+	width: 100%;
+}
+
+pre.api-output-container {
+	height: 500px;
+	width: 100%;
+}
+
+pre.api-output-container > code {
+	overflow: scroll;
+	font-size: 18px;
+	line-height: 24px;
+	max-height: 500px;
+}
+
+pre.export {
+	vertical-align: center;
+	font-size: 36px;
+	padding: 12px;
+}
+
+.reveal h2,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+	line-height: 1em;
+}
+
+.reveal li {
+	font-size: 42px;
+	line-height: 60px;
+}
+
+.reveal ul li ul li {
+	font-size: 36px;
+	line-height: 48px;
+}
+
+.reveal section img {
+	border: 0;
+}
+
+div.title {
+	font-size: 72px;
+	line-height: 86px;
+	margin: 12px 0;
+}
+
+.reveal small {
+	vertical-align: text-bottom;
+}
+
+.reveal .fragment {
+	line-height: 1.2em;	
+}
+
+pre.maro {
+	font-family: IPAMonaPGothic,'ＭＳ Ｐゴシック', sans-serif;
+	font-size  : 18px;
+	line-height: 20px;
+}
+
+.zip {
+	display: inline;
+	color: yellow;
+	font-weight: bold;
+}
+
+.reveal .strong h2,
+.strong {
+	color: yellow;
+	font-weight: bold;	
+}
+
+.demo {
+	background-color: black;
+}
+
+.demo video {
+	width: 100%;	
+	height: 100%;
+}
+

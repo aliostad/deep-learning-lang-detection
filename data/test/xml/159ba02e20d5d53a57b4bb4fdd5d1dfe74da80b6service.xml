@@ -1,0 +1,15 @@
+<service auto-start="false">
+    <name>ClientRegistryService</name>
+    <public-id>ns://www.cubeia.com/clientreg/service</public-id>
+    <contract>com.cubeia.firebase.service.clientreg.ClientRegistryServiceContract</contract>
+    <service>com.cubeia.firebase.service.clientreg.ClientRegistryService</service>
+    <description />
+    <dependencies>
+        <contract>com.cubeia.firebase.server.service.systemstate.SystemStateServiceContract</contract>
+        <contract>com.cubeia.firebase.service.messagebus.MBusContract</contract>
+        <contract>com.cubeia.firebase.server.service.lobby.LobbyServiceContract</contract>
+        <contract>com.cubeia.firebase.service.wlist.FilteredJoinServiceContract</contract>
+        <contract>com.cubeia.firebase.service.chat.ChatServiceContract</contract>
+    </dependencies>
+    <exported />
+</service>

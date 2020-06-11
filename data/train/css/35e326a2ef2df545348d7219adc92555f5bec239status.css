@@ -1,0 +1,45 @@
+body{
+	background: lightgrey;
+}
+
+li {
+	font-size: 20px;
+}
+/*Colors for features*/
+.available {
+    color: green;
+}
+
+.not-available {
+	color: rgb(189, 152, 5);
+}
+.not-available:after {
+	 content: "----Not available";
+}
+
+
+.required.not-available {
+	color: red;
+}
+.required.not-available:after {
+	 content: "----Not available:Required !";
+}
+
+
+/*Colors for folders*/
+.not-exists {
+    color: red;
+}
+.not-exists:after {
+	 content: "----Missing";
+} 
+.exists {
+	color: green;
+}
+
+.requires-write.not-writeable {
+	color: rgb(189, 152, 5);
+}
+.requires-write.not-writeable:after {
+	 content: "----No write permissions";
+}

@@ -1,0 +1,28 @@
+/* smaless: V 0.5.4 */
+.nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  height: 50px; }
+  .nav:before, .nav:after {
+    content: " ";
+    display: table; }
+  .nav:after {
+    clear: both; }
+  .nav .nav-item {
+    line-height: 20px;
+    display: block;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 15px; }
+    .nav .nav-item:hover, .nav .nav-item:focus, .nav .nav-item:active {
+      background-color: #3D4247;
+      color: #fff; }
+  .nav .fa-bars {
+    line-height: 20px;
+    font-size: 20px; }
+
+.nav-toolbar > li {
+  float: left; }
+
+/*# sourceMappingURL=navs.css.map */

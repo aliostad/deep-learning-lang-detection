@@ -1,0 +1,40 @@
+.zxLotteryItem{
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+}
+.zxLotteryLoadMsg{
+    position: absolute; top: -30px;
+    height: 30px; line-height: 30px; width: 100%;
+    background: #000000; color: #ffffff;
+    text-align: center;
+}
+.zxLotteryLoadText{
+    float: left;
+}
+.zxLotteryLoadPer{
+    float: right;
+}
+
+.zxLotteryName{
+    color: #ffffff;
+    margin-left: auto; margin-right: auto;
+    text-align: center; line-height: 30px;
+    display: none;
+}
+
+.zxWinnerName{
+    position: absolute; height: 30px; line-height: 30px; width: 100%;
+    bottom: -30px; font-size: 13px;
+    text-align: center; color: #ffffff;
+}
+
+.fliped{
+    transform: rotate3d(0, 1, 0, -180deg);
+    -webkit-transform: rotate3d(0, 1, 0, -180deg);
+    transition-duration: 0.4;
+}
+
+.flip{
+    transform: rotate3d(0, 1, 0, 0deg);
+    -webkit-transform: rotate3d(0, 1, 0, 0deg);
+    transition-duration: 0.4;
+}

@@ -1,0 +1,60 @@
+/** Tab Help CSS **/
+
+.and_load_help_credits_section {
+  margin-top: 10px;
+}
+
+.external_link {
+  margin-right: 5px;
+}
+
+#and_load_donation_container {
+  width: 150px;
+  float: right;
+  text-align: center;
+}
+
+#and_load_help_getting_started {
+  margin: 20px;
+}
+
+.and_load_help_section {
+  border: 3px solid #FEFEFE;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+ul > li {
+  margin-top: 10px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+ul > li > h4 {
+  margin: 0 0 15px 10px;
+  border-left: 2px dotted #FEFEFE;
+  display: inline-block;
+  padding: 5px;
+}
+
+ul > li > ul {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 5px solid #FEFEFE;
+  border-top: 5px solid #FEFEFE;
+}
+
+ul > li > ul > li {
+  margin-left: 10px;
+  font-weight: normal;
+}
+
+ul > li > ul > li > ul {
+  margin-left: 10px;
+  border: 0;
+}
+
+#show_hide_error_list {
+  font-size: 1.2em;
+  padding: 10px;
+}

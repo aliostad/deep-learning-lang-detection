@@ -1,0 +1,114 @@
+/*
+	genomicAPI styles
+	important: these should be namespaced
+	example:
+		let's say you are creating an app called "calculator"; you should prefix all your styles with your application's name like so
+
+		.calculator img {
+			border: 1px solid #000;
+		}
+		.calculator p {
+			margin: 10px 0;
+		}
+		etc...
+
+	other notes:
+	* don't use ids - there may be more than one of your apps open; use classes!
+	* the toolbar element is absolutely positioned and 100% wide (and therefor 0px high);
+	  any elements inside it should also be absolutely positioned
+*/
+
+.genomicAPI img.genomicAPI_icon {
+	width: 55px;
+	height: 55px;
+	position: absolute;
+	top: 27px;
+	left: 3px;
+}
+
+.variants p {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  font-style: italic;
+}
+
+/* General */
+.genomicAPI .info {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.genomicAPI .great-info {
+  display: inline-block;
+  width: 100%;
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+
+.genomicAPI .bad-info {
+  display: inline-block;
+  width: 100%;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+.invisible {
+  display: none;
+}
+
+/* query.mako */
+.genomicAPI .queryForm .left-box{
+  display: inline-block;
+  width: 10%;
+  text-align: right;
+  vertical-align: top;
+}
+
+.genomicAPI .queryForm .right-box{
+  display: inline-block;
+  width: 80%;
+  text-align: left;
+}
+
+/* query.mako, query_insert.mako */
+.genomicAPI .queryForm, .genomicAPI .insertForm {
+  text-align: center;
+}
+
+/* query_insert.mako */
+.genomicAPI .insertForm .left-box{
+  display: inline-block;
+  width: 40%;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.genomicAPI .insertForm .left-top-box{
+  display: inline-block;
+  width: 40%;
+  text-align: right;
+  vertical-align: top;
+}
+
+.genomicAPI .insertForm .right-box{
+  display: inline-block;
+  width: 55%;
+  text-align: left;
+}
+
+/* New code related to variants and not genomicAPI */
+
+.variants .insert-samples form{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.variants .insert-samples .left-box{display: inline-block; text-align: center; width: 200px;}
+.variants .insert-samples .right-boxes{display: inline-block; text-align: left; }
+.variants .insert-samples .right-box{display: inline-block; text-align: center; width: 200px;}
+.variants .insert-samples .cell{display: inline-block; height: 50px; width: 190px;}

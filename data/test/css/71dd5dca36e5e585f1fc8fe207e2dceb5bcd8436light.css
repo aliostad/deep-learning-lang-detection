@@ -1,0 +1,53 @@
+html
+{
+	color: #959595;
+	background: #ffffff;
+}
+
+#blog-load-more,
+#to-top
+{
+	color: #673653;
+}
+
+#blog-load-more,
+#blog-load-more:before,
+#to-top,
+#to-top:before
+{
+	border-color: #673653;
+}
+
+.page-title
+{
+	color: #505050;
+	border-bottom-color: #e5e5e5;
+}
+
+.page-title:after { background-position: top left; }
+
+#option-set a
+{
+	color: #797979;
+}
+
+#option-set a:hover,
+#option-set a.selected
+{
+	color: #673653;
+}
+
+#option-set a:hover,
+#option-set a:hover:before,
+#option-set a.selected,
+#option-set a.selected:before
+{
+	border-color: #673653;
+}
+
+#about span.title { color: #505050; }
+
+#about .text:after { background-color: #e5e5e5; }
+
+#copyright { color: #8c8c8c; }
+#copyright a { color: #673653; }

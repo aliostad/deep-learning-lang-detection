@@ -1,0 +1,110 @@
+.icon-th {
+    background-position: -240px 0;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    background-image: url("/img/glyphicons-halflings.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    vertical-align: text-top;
+    width: 14px;
+}
+
+.input-append .add-on, .input-prepend .add-on {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 0 1px 0 #ffffff;
+}
+
+.input-append, .input-prepend {
+    white-space: nowrap;
+}
+
+.input-append .add-on:last-child, .input-append .btn:last-child, .input-append .btn-group:last-child > .dropdown-toggle {
+    border-radius: 0 4px 4px 0;
+}
+
+.input-append .add-on, .input-append .btn, .input-append .btn-group {
+    margin-left: -1px;
+}
+
+.input-append .add-on, .input-prepend .add-on, .input-append .btn, .input-prepend .btn, .input-append .btn-group > .dropdown-toggle, .input-prepend .btn-group > .dropdown-toggle {
+    vertical-align: top;
+}
+
+.input-append .add-on, .input-prepend .add-on {
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    height: 43px;
+    line-height: 20px;
+    min-width: 16px;
+    padding: 4px 5px;
+    text-align: center;
+    text-shadow: 0 1px 0 #ffffff;
+    width: auto;
+}
+
+.input-append, .input-prepend {
+    white-space: nowrap;
+}
+
+.input-append {
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.input-append input, .input-append select, .input-append .uneditable-input {
+    border-radius: 4px 0 0 4px;
+}
+
+.input-append input, .input-prepend input, .input-append select, .input-prepend select, .input-append .uneditable-input, .input-prepend .uneditable-input {
+    position: relative;
+}
+
+.input-append input, .input-prepend input, .input-append select, .input-prepend select, .input-append .uneditable-input, .input-prepend .uneditable-input, .input-append .dropdown-menu, .input-prepend .dropdown-menu, .input-append .popover, .input-prepend .popover {
+    font-size: 14px;
+}
+
+input[class*="span"], select[class*="span"], textarea[class*="span"], .uneditable-input[class*="span"], .row-fluid input[class*="span"], .row-fluid select[class*="span"], .row-fluid textarea[class*="span"], .row-fluid .uneditable-input[class*="span"] {
+    float: none;
+    margin-left: 0;
+}
+
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+}
+
+.span2 {
+    color: #555555;
+    height: 43px;
+    line-height: 20px;
+    padding: 10px 15px;    
+}
+
+.input-append {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    font-size: 0;
+    white-space: nowrap;
+    line-height: 20px;
+}
+
+#sandbox-container {
+    margin-bottom: 15px;
+}
+
+.span2::-moz-placeholder {
+    color: #acb6c0;
+    font-weight: bold;
+    opacity: 1;
+}

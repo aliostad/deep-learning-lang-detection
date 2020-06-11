@@ -1,0 +1,24 @@
+/**
+ * Classes for default views.
+ */
+div.view-node-gallery-gallery-item-views .node h2,
+#content div.view-node-gallery-gallery-item-views .node h2 {
+    font-size: 110%;
+    margin-top: 0;
+}
+div.view-node-gallery-gallery-item-views table.views-view-grid tr,
+div.view-node-gallery-gallery-summaries table.views-view-grid tr {
+    background: transparent;
+}
+div.view-node-gallery-gallery-item-views table.views-view-grid td,
+div.view-node-gallery-gallery-summaries table.views-view-grid td {
+    text-align: center;
+}
+
+div.view-node-gallery-gallery-item-views table.views-view-grid td:hover,
+div.view-node-gallery-gallery-summaries table.views-view-grid td:hover{
+    background-color: #eeeeee;
+}
+
+
+

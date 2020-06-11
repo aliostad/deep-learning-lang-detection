@@ -1,0 +1,24 @@
+.you .nav-left {
+  border-top-color: #2e3092; }
+  .you .nav-left .nav-heading {
+    background-color: #2e3092; }
+  .you .nav-left .nav .active > a {
+    background-color: #2e3092; }
+  .you .nav-left .nav li a:hover {
+    background-color: #2e3092; }
+  .you .nav-left .sub-nav .active > a {
+    background-color: #2e3092; }
+  .you .nav-left .sub-nav li a:hover {
+    background-color: #2e3092; }
+.you .temp-name {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 300;
+  left: 64px;
+  position: absolute;
+  top: 150px;
+  z-index: 1; }
+.you .page-view {
+  border-top-color: #2e3092; }
+
+/*# sourceMappingURL=you.css.map */

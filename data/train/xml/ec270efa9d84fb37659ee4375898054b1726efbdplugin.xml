@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.bluexml.side.Util.dependencies.com_bluexml_side_framework_module_repository">
+      <repository
+            activator="com.bluexml.side.util.dependencies.repository.Activator"
+            pluginId="com.bluexml.side.Util.dependencies.repository"
+            repositoryName="com.bluexml.side.Util.dependencies.repository"
+            repositoryPath="/com/bluexml/side/util/dependencies/repository/mavenRepository/m2repositoryForSIDE.zip">
+      </repository>
+   </extension>
+
+</plugin>

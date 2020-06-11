@@ -1,0 +1,83 @@
+body{
+	  font-family: ¸¼Àº °íµñ,ÈÞ¸Õ¸ÅÁ÷Ã¼;
+	  font-size: 9pt;
+}
+h3{
+	 text-align: center;
+}
+#wrapper{
+	border:5px solid #ededed;
+	width: 500px;
+	margin: 0px auto;
+	border-radius:10px;
+	padding: 15px;
+}
+#writeForm{
+	display: table;
+	margin: 10px auto;
+	border-collapse: collapse;
+}
+#writeForm p{
+	display: table-row;
+	padding: 5px;
+	border-bottom: 1px solid #898989;
+}
+#writeForm label{
+	display: table-cell;
+	padding-left: 40px;
+}
+
+#writeForm #username{
+	width: 100px;
+}
+#writeForm #userpwd{
+	width: 80px;
+}
+#writeForm #useremail{
+	width: 250px;
+}
+
+#writeForm #usersubject{
+	width: 250px;
+}
+
+#writeForm input[type="text"],
+#writeForm input[type="password"],
+#writeForm #usercontent{
+	border:1px solid,#FF3399;
+	padding: 3px;
+	background-color: #fff;
+	margin: 5px;
+	width: 60px;
+}
+#writeForm #usercontent{
+	width: 250px;
+	height: 80px;
+	
+}
+#writeForm input[type="button"],
+#writeForm input[type="submit"]{
+	background-color: #fff;
+	border: 2px solid #F39;
+	padding: 3px 10px;
+	border-radius:10px;
+}
+
+#writeForm .btnSubmit{
+	display: block;
+	text-align: center;
+	position: relative;
+	left: 250px;
+	top:2px;
+	border-bottom-style: none;
+}
+
+
+
+
+
+
+
+
+
+

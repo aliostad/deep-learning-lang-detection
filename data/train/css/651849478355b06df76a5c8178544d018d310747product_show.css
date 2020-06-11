@@ -1,0 +1,53 @@
+body.product.show h1
+{
+}
+
+body.product.show h1 > img
+{
+    float: left;
+    width: 2.5em;
+    margin-right: 0.5em;
+}
+
+body.product.show h1 span.name
+{
+    display: block;
+}
+
+body.product.show h1 span.seller.name
+{
+    font-size: 0.6em;
+}
+
+body.product.show p.short.desciption
+{
+    max-width: 35em;
+}
+
+body.product.show p.details > span
+{
+    margin-right: 2em;
+    margin-bottom: 0.75em;
+    display: block;
+    float: left;
+}
+
+body.product.show form#windowPicker
+{
+    display: none;
+    background: #eee;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 0.5em;
+    margin-top: 1em;
+}
+
+body.product.show form#windowPicker h4
+{
+    margin-bottom: 0;
+}
+
+body.product.show form#windowPicker h4 + p
+{
+    margin-top: 0;
+}

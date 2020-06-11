@@ -1,0 +1,100 @@
+/* line 6, ../scss/load.scss */
+#contain {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0;
+  animation: fadeIn 1s 1;
+  animation-fill-mode: forwards;
+}
+
+/* line 17, ../scss/load.scss */
+.wrap {
+  animation: translate 1000ms infinite ease-in-out alternate, zindex 2000ms infinite ease-in-out;
+  position: absolute;
+}
+
+/* line 22, ../scss/load.scss */
+.part {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.1) 65%, rgba(0, 0, 0, 0.1));
+  background-color: #E3746B;
+  border-radius: 50%;
+  animation: scale 1000ms infinite ease-in-out alternate;
+  animation-delay: -500ms;
+  transform: scale(0.5);
+}
+
+/* line 34, ../scss/load.scss */
+.part:after {
+  content: '';
+  width: 100px;
+  height: 10px;
+  background: #eee;
+  position: absolute;
+  top: 130px;
+  border-radius: 50%;
+}
+
+/* line 44, ../scss/load.scss */
+#wrap2 {
+  animation-delay: -1000ms;
+}
+
+/* line 48, ../scss/load.scss */
+#part2 {
+  background-color: #397BF9;
+  animation-delay: -1500ms;
+}
+
+/* line 53, ../scss/load.scss */
+#wrap3 {
+  animation-delay: -1500ms;
+}
+
+/* line 57, ../scss/load.scss */
+#part3 {
+  background-color: #F4B400;
+  animation-delay: -2000ms;
+}
+
+/* line 62, ../scss/load.scss */
+#wrap4 {
+  animation-delay: -2500ms;
+}
+
+/* line 66, ../scss/load.scss */
+#part4 {
+  background-color: #0F9D58;
+  animation-delay: -3000ms;
+}
+
+@keyframes translate {
+  100% {
+    transform: translateX(200px);
+  }
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes zindex {
+  25% {
+    z-index: 1;
+  }
+  75% {
+    z-index: -1;
+  }
+}
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}

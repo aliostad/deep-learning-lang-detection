@@ -1,0 +1,43 @@
+/* Source: https://github.com/azavea/civic-apps/blob/master/waffle.css */
+
+[data-waffle-url^="https://api.github.com/repos/azavea/usace"] .card-body,
+[data-waffle-url^="https://api.github.com/repos/azavea/usace"] .card-body textarea {
+background-color: #FC74E8 !important;
+}
+
+[data-waffle-url^="https://api.github.com/repos/CoastalResilienceNetwork"] .card-body,
+[data-waffle-url^="https://api.github.com/repos/CoastalResilienceNetwork"] .card-body textarea {
+background-color: #62526E !important;
+color: #eee !important;
+}
+
+[data-waffle-url^="https://api.github.com/repos/azavea/pwd"] .card-body,
+[data-waffle-url^="https://api.github.com/repos/azavea/pwd"] .card-body textarea {
+background-color: #7FD7FA !important;
+}
+
+[data-waffle-url^="https://api.github.com/repos/azavea/oit-ulrs"] .card-body,
+[data-waffle-url^="https://api.github.com/repos/azavea/oit-ulrs"] .card-body textarea {
+background-color: #6DE3BC !important;
+}
+
+[data-waffle-url^="https://api.github.com/repos/azavea/dor"] .card-body,
+[data-waffle-url^="https://api.github.com/repos/azavea/dor"] .card-body textarea {
+background-color: lawnGreen !important;
+}
+
+[data-waffle-url^="https://api.github.com/repos/WikiWatershed"] .card-body,
+[data-waffle-url^="https://api.github.com/repos/WikiWatershed"] .card-body textarea {
+background-color: papayaWhip !important;
+}
+
+[data-waffle-url^="https://api.github.com/repos/azavea/raster-foundry"] .card-body,
+[data-waffle-url^="https://api.github.com/repos/azavea/raster-foundry"] .card-body textarea {
+background-color: #FCA5A5 !important;
+}
+
+[data-waffle-url^="https://api.github.com/repos/azavea/modellab"] .card-body,
+[data-waffle-url^="https://api.github.com/repos/azavea/modellab"] .card-body textarea {
+background-color: #EBC300 !important;
+color: #333 !important;
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Ajzele
+ * @package     Ajzele_Mapy
+ * @copyright   Copyright (c) Branko Ajzele (http://activecodeline.com)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+	<modules>
+		<Ajzele_Mapy>
+			<version>1.0.0.0.0</version>
+		</Ajzele_Mapy>
+	</modules>
+	<global>
+		<models>
+		
+			<mapy>
+				<class>Ajzele_Mapy_Model</class>
+			</mapy>
+		
+			<customer>
+				<rewrite>
+					<customer_api>Ajzele_Mapy_Model_Customer_Customer_Api</customer_api>
+					<group_api>Ajzele_Mapy_Model_Customer_Group_Api</group_api>
+					<address_api>Ajzele_Mapy_Model_Customer_Address_Api</address_api>
+				</rewrite>
+			</customer>
+			<directory>
+				<rewrite>
+					<country_api>Ajzele_Mapy_Model_Directory_Country_Api</country_api>
+					<region_api>Ajzele_Mapy_Model_Directory_Region_Api</region_api>
+				</rewrite>
+			</directory>
+			<catalog>
+				<rewrite>
+					<category_api>Ajzele_Mapy_Model_Catalog_Category_Api</category_api>
+					<category_attribute_api>Ajzele_Mapy_Model_Catalog_Category_Attribute_Api</category_attribute_api>
+					<product_api>Ajzele_Mapy_Model_Catalog_Product_Api</product_api>
+					<product_attribute_api>Ajzele_Mapy_Model_Catalog_Product_Attribute_Api</product_attribute_api>
+					<product_attribute_media_api>Ajzele_Mapy_Model_Catalog_Product_Attribute_Media_Api</product_attribute_media_api>
+					<product_attribute_set_api>Ajzele_Mapy_Model_Catalog_Product_Attribute_Set_Api</product_attribute_set_api>
+					<product_attribute_tierprice_api>Ajzele_Mapy_Model_Catalog_Product_Attribute_Tierprice_Api</product_attribute_tierprice_api>
+					<product_link_api>Ajzele_Mapy_Model_Catalog_Product_Link_Api</product_link_api>
+					<product_type_api>Ajzele_Mapy_Model_Catalog_Product_Type_Api</product_type_api>
+				</rewrite>
+			</catalog>
+			<cataloginventory>
+				<rewrite>
+					<stock_item_api>Ajzele_Mapy_Model_CatalogInventory_Stock_Item_Api</stock_item_api>
+				</rewrite>
+			</cataloginventory>
+			<directory>
+				<rewrite>
+					<country_api>Ajzele_Mapy_Model_Directory_Country_Api</country_api>
+					<region_api>Ajzele_Mapy_Model_Directory_Region_Api</region_api>
+				</rewrite>
+			</directory>
+			<sales>
+				<rewrite>
+					<order_api>Ajzele_Mapy_Model_Sales_Order_Api</order_api>
+					<order_invoice_api>Ajzele_Mapy_Model_Sales_Order_Invoice_Api</order_invoice_api>
+					<order_shipment_api>Ajzele_Mapy_Model_Sales_Order_Shipment_Api</order_shipment_api>
+				</rewrite>
+			</sales>
+		</models>
+	
+		<helpers>
+			<mapy>
+				<class>Ajzele_Mapy_Helper</class>
+			</mapy>
+		</helpers>
+	
+	</global>
+</config>

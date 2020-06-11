@@ -1,0 +1,36 @@
+﻿@* 10.11.12 - JB - Created *@
+
+@*
+/* Authors:
+ *      Jonathan Baier (jbaier@usgs.gov)
+ * Copyright:
+ *      2012 USGS - WiM
+ * Purpose:
+ *      Display a list of all Instruments
+ */
+ *@
+
+@using STNServices;
+
+@model List<INSTRUMENT>
+
+@{
+    ViewBag.Title = "Instruments Listing";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+     <h2>Instrument Listing</h2>
+
+        <div>
+                <ul>
+                @foreach (var anInstrument in Model as List<INSTRUMENT>)
+                {
+                   
+                    <li>
+                        @Html.ActionLink(anInstrument.SERIAL_NUMBER, "Details", "Instruments", new { id = anInstrument.INSTRUMENT_ID }, null)                                                        
+                    </li>                                              
+                }                    
+                </ul>
+                                    
+		</div>

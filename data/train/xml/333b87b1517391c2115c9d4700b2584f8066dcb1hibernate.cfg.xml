@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/pdv?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.query.factory_class">org.hibernate.hql.internal.classic.ClassicQueryTranslatorFactory</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <mapping resource="model/persistencia/mapping/Produtograde.hbm.xml"/>
+    <mapping resource="model/persistencia/mapping/Usuario.hbm.xml"/>
+    <mapping resource="model/persistencia/mapping/Pagamentovenda.hbm.xml"/>
+    <mapping resource="model/persistencia/mapping/Unidade.hbm.xml"/>
+    <mapping resource="model/persistencia/mapping/Cor.hbm.xml"/>
+    <mapping resource="model/persistencia/mapping/Colaborador.hbm.xml"/>
+    <mapping resource="model/persistencia/mapping/Vendaitem.hbm.xml"/>
+    <mapping resource="model/persistencia/mapping/Produto.hbm.xml"/>
+    <mapping resource="model/persistencia/mapping/Tamanho.hbm.xml"/>
+    <mapping resource="model/persistencia/mapping/Caixa.hbm.xml"/>
+    <mapping resource="model/persistencia/mapping/Tipopagamento.hbm.xml"/>
+    <mapping resource="model/persistencia/mapping/Venda.hbm.xml"/>
+    <mapping resource="model/persistencia/mapping/Cargo.hbm.xml"/>
+    <mapping resource="model/persistencia/mapping/Caixasuprimento.hbm.xml"/>
+    <mapping resource="model/persistencia/mapping/Caixasangria.hbm.xml"/>
+    <mapping resource="model/persistencia/mapping/Feature.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

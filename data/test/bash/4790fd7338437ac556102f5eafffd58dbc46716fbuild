@@ -1,0 +1,20 @@
+#!/bin/bash
+echo "BUILD action hooks execute start"
+# clean repo
+
+#rm -rf $OPENSHIFT_HOMEDIR/app-root/repo/javafutbolee-ear/target
+#rm -rf $OPENSHIFT_HOMEDIR/app-root/repo/javafutbolee-ejb/target
+rm -rf $OPENSHIFT_HOMEDIR/app-root/repo/javafutbolee-web/target
+
+
+# clean deploy
+
+#rm -rf $OPENSHIFT_HOMEDIR/app-deployments/current/repo/javafutbolee-ear/target
+#rm -rf $OPENSHIFT_HOMEDIR/app-deployments/current/repo/javafutbolee-ejb/target
+rm -rf $OPENSHIFT_HOMEDIR/app-deployments/current/repo/javafutbolee-web/target
+
+
+echo "BUILD action hooks execute end"
+
+
+

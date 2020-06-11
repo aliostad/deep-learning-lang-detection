@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<website>
+  <application>
+    <name>Framework</name>
+    <version>1.0</version>
+    <mode>Developent</mode>
+    <sessionmanagement>true</sessionmanagement>
+    <setclientcookies>true</setclientcookies>
+    <timeout>
+      <days>1</days>
+      <hours>7</hours>
+      <mins>9</mins>
+      <seconds>6</seconds>
+    </timeout>
+    <enviroment>
+      <appserver>Ralio</appserver>
+      <platform>linux</platform>
+    </enviroment>
+    <directory>
+      <webroot>var.www</webroot>
+      <approot>development.Framework</approot>
+      <mappings>
+        <mapping name="App">application</mapping>
+        <mapping name="Library">library</mapping>
+        <mapping name="Test">test</mapping>
+        <mapping name="www">www</mapping>
+        <mapping name="Config">application.config</mapping>
+        <mapping name="Controller">application.controller</mapping>
+        <mapping name="Metadata">application.model.Metadata</mapping>
+        <mapping name="Entity">application.model.Entity</mapping>
+        <mapping name="UnitOfWork">application.model.UnitOfWork</mapping>
+      </mappings>
+    </directory>
+  </application>
+</website>

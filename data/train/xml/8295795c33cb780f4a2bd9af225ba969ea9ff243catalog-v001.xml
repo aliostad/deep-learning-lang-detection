@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1394888108172" name="duplicate:http://www.w3.org/2002/07/owl" uri="authors.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1394888108172" name="duplicate:http://www.w3.org/2002/07/owl" uri="eswc2013_023.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1394888108172" name="duplicate:http://www.w3.org/2002/07/owl" uri="eswc2013_V3.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1394888108172" name="duplicate:http://www.w3.org/2002/07/owl" uri="events.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1394888108172" name="duplicate:http://www.w3.org/2002/07/owl" uri="locations.rdf"/>
+    </group>
+</catalog>

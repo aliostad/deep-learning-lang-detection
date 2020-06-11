@@ -1,0 +1,34 @@
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.table td p {
+  margin-bottom: 0;
+}
+.label-null {
+  background-color: #5F5FFF;
+}
+@media (max-width: 979px) {
+  body {
+    padding-top: 0;
+  }
+}
+@media (max-width: 979px) and (min-width: 768px) {
+  .input-append input {
+    width: 112px;
+  }
+  .table th, .table td {
+    vertical-align: middle;
+    padding: 4px;
+  }
+}
+@media (min-width: 979px) {
+  .input-append input {
+    width: 167px;
+  }
+}
+@media (min-width: 1200px) {
+  .input-append input {
+    width: 217px;
+  }
+}

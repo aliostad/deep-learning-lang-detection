@@ -1,0 +1,105 @@
+nav, nav > *, nav > * > * {
+	-webkit-transition-duration: 500ms;
+	-moz-transition-duration: 500ms;
+	transition-duration: 500ms;
+
+	display: block;
+}
+
+nav > * > * {
+	cursor: pointer;
+}
+
+nav {
+	z-index: 1000;
+	color: white;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 200px;
+	left: -200px;
+	font-family: "Lato", sans-serif;
+}
+
+nav.visible {
+	left: 0;
+}
+
+nav > .nav-links, nav > .nav-icons > * {
+	opacity: 0.2;
+	background-color: #535353;
+}
+
+nav.visible > .nav-links, nav.visible > .nav-icons > * {
+	opacity: 0.95;
+}
+
+nav.visible > * > :hover {
+	background-color: black;
+}
+
+nav:not(.visible) > .nav-icons > :hover {
+	opacity: 0.6;
+}
+
+nav > .nav-links {
+	height: 100%;
+}
+
+nav:not(.visible) > .nav-icons .fa-times {
+	display: none;
+}
+
+nav.visible > .nav-icons .fa-bars {
+	display: none;
+}
+
+nav > .nav-icons {
+	position: absolute;
+	top: 0;
+	left: 200px;
+	border: 0;
+	width: 60px;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+nav > .nav-icons > * {
+	margin-bottom: 20px;
+	line-height: 40px;
+	width: 40px;
+	font-size: 25px;
+	text-align: center;
+	padding: 0;
+}
+
+nav > .nav-links > * {
+	font-size: 2.5rem;
+	line-height: 7rem;
+	text-align: left;
+
+	position: relative;
+	padding: 0 1rem 0 3rem;
+}
+
+nav > .nav-links > *::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 1px;
+	top: 1.5rem;
+	left: 1.5rem;
+	height: 4rem;
+	background-color: #30D5C8;
+}
+
+
+.active-koniec nav > .nav-links, .active-koniec nav > .nav-icons > * {
+	background-color: white;
+	color: black;
+}
+
+.active-koniec nav > * > *:hover {
+	background-color: #ccc;
+}
+

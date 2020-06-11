@@ -1,0 +1,40 @@
+
+
+
+/* Toolbar Button */
+/* kill normal */
+.sc-theme .sc-view.sc-button-view.toolbar-button-view.square {
+	background: none;
+}
+
+.sc-theme .sc-view.sc-button-view.toolbar-button-view.square .sc-button-label {
+	background: none;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.sc-theme .sc-view.sc-button-view.toolbar-button-view.square .sc-button-inner{
+	background: none;
+}
+
+/* kill sel*/
+.sc-theme .sc-view.sc-button-view.toolbar-button-view.square.sel,
+.sc-theme .sc-view.sc-button-view.toolbar-button-view.square.active,
+.sc-theme .sc-view.sc-button-view.toolbar-button-view.square.sel.active,
+.sc-theme .sc-view.sc-button-view.toolbar-button-view.square.def {
+	background: none;
+}
+
+.sc-theme .sc-view.sc-button-view.toolbar-button-view.square.sel .sc-button-label,
+.sc-theme .sc-view.sc-button-view.toolbar-button-view.square.active .sc-button-label,
+.sc-theme .sc-view.sc-button-view.toolbar-button-view.square.sel.active .sc-button-label,
+.sc-theme .sc-view.sc-button-view.toolbar-button-view.square.def .sc-button-label {
+	background: none;
+}
+
+.sc-theme .sc-view.sc-button-view.toolbar-button-view.square.sel .sc-button-inner,
+.sc-theme .sc-view.sc-button-view.toolbar-button-view.square.active .sc-button-inner,
+.sc-theme .sc-view.sc-button-view.toolbar-button-view.square.sel.active .sc-button-inner,
+.sc-theme .sc-view.sc-button-view.toolbar-button-view.square.def .sc-button-inner{
+	background: none;
+}

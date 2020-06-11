@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet xmlns="http://www.unioninvestment.de/eai/portal/crud-portlet"
+	title="Beispiel zum Duplizieren einer Zeile/Hinzufügen einer neuer Zeile mit Vorbelegung">
+	<page>
+		<table onInitialize="setDuplicateButtonVisibility(it, false)" onModeChange="setDuplicateButtonVisibility(it, mode == 'EDIT')">
+			<database-table datasource="test" tablename="test_crud2" />
+			<action id="duplicate-button" onExecution="duplicateRow(it.table)" title="Zeile duplizieren" />
+		</table>
+	</page>
+	<script><![CDATA[
+	
+	def setDuplicateButtonVisibility(table, visible) {
+		table.setTableActionVisibility('duplicate-button', visible)
+	}
+	
+	def duplicateRow(table) {
+		if (!table.selection || table.selection.empty) {
+			showPopup "Keine Zeile ausgewählt", "Bitte wählen Sie eine Zeile zum Duplizieren aus." 
+		} else if (table.selection && table.selection.size() > 1) {
+			showPopup "Mehrere Zeilen ausgewählt", "Bitte wählen Sie nur eine Zeile zum Duplizieren aus." 
+		} else {
+			def selectedRow = table.selectedRows[0]
+			table.createNewRow([
+				'CNUMBER5_2': selectedRow.values['CNUMBER5_2'],
+				'CVARCHAR5_NN': selectedRow.values['CVARCHAR5_NN'],
+				'CNUMBER5_2_NN': selectedRow.values['CNUMBER5_2_NN']				
+			])
+		}
+	}
+	
+	]]></script>
+</portlet>

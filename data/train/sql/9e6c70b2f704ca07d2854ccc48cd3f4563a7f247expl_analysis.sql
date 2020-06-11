@@ -1,0 +1,80 @@
+x = read.csv(file="expl_aggr_data.txt",head=TRUE,sep="\t")
+cor(x$AVGQREADS, x$AVGQWRITES)
+cor(x$AVGQREADS, x$AVGUREADS)
+cor(x$AVGQREADS, x$AVGDREADS)
+
+SELECT SUM(t0.id4) FROM ft_HT1 t0
+SELECT t0.id3, SUM(t0.id1) FROM ft_HT1 t0 GROUP BY t0.id3
+SELECT t0.id2, t0.id3, t0.id4, SUM(t0.id1) FROM ft_HT1 t0 GROUP BY t0.id2, t0.id3, t0.id4
+SELECT t0.id1, t0.id2, t0.id4, SUM(t0.id3) FROM ft_HT1 t0 GROUP BY t0.id1, t0.id2, t0.id4
+SELECT t0.id2, t0.id3, t0.id4, SUM(t0.id1) FROM ft_HT1 t0 GROUP BY t0.id2, t0.id3, t0.id4
+SELECT t0.id1, t0.id2, t0.id3, SUM(t0.id4) FROM ft_HT1 t0 GROUP BY t0.id1, t0.id2, t0.id3
+SELECT SUM(t0.id3) FROM ft_HT1 t0
+SELECT t0.id2, SUM(t0.id3) FROM ft_HT1 t0 GROUP BY t0.id2
+SELECT SUM(t0.id3) FROM ft_HT1 t0
+SELECT t0.id1, t0.id2, t0.id4, SUM(t0.id3) FROM ft_HT1 t0 GROUP BY t0.id1, t0.id2, t0.id4
+
+select  version,
+        experimentname,
+	dbms, 
+	runid,
+	querynum,
+	card, 
+	AVG_QP_READ_SYSCALLS_CNT as avgQReads,
+	AVG_QP_WRITE_SYSCALLS_CNT as avgQWrites,
+	AVG_UP_READ_SYSCALLS_CNT as avgUReads,
+	AVG_UP_WRITE_SYSCALLS_CNT as avgUWrites,
+	AVG_DP_READ_SYSCALLS_CNT as avgDReads,
+	AVG_DP_WRITE_SYSCALLS_CNT as avgDWrites,
+from Explrtry99
+where querynum IN (0, 20, 40, 60, 80) 
+and runID IN (228, 229, 230, 231, 246, 247, 248, 412)
+order by runid, querynum, card desc
+
+select  version,
+        experimentname,
+	dbms, 
+	runid,
+	querynum,
+	card, 
+	MIN_QP_READ_SYSCALLS_CNT as minQReads, 
+	MAX_QP_READ_SYSCALLS_CNT as maxQReads,	
+	AVG_QP_READ_SYSCALLS_CNT as avgQReads,
+	MIN_QP_WRITE_SYSCALLS_CNT as minQWrites, 
+	MAX_QP_WRITE_SYSCALLS_CNT as maxQWrites,	
+	AVG_QP_WRITE_SYSCALLS_CNT as avgQWrites,
+	MIN_UP_READ_SYSCALLS_CNT as minUReads, 
+	MAX_UP_READ_SYSCALLS_CNT as maxUReads,	
+	AVG_UP_READ_SYSCALLS_CNT as avgUReads,
+	MIN_UP_WRITE_SYSCALLS_CNT as minUWrites, 
+	MAX_UP_WRITE_SYSCALLS_CNT as maxUWrites,	
+	AVG_UP_WRITE_SYSCALLS_CNT as avgUWrites,
+	MIN_DP_READ_SYSCALLS_CNT as minDReads, 
+	MAX_DP_READ_SYSCALLS_CNT as maxDReads,	
+	AVG_DP_READ_SYSCALLS_CNT as avgDReads,
+	MIN_DP_WRITE_SYSCALLS_CNT as minDWrites, 
+	MAX_DP_WRITE_SYSCALLS_CNT as maxDWrites,	
+	AVG_DP_WRITE_SYSCALLS_CNT as avgDWrites,
+from Explrtry99
+where querynum IN (0, 20, 40, 60, 80) 
+and runID IN (228, 229, 230, 231, 246, 247, 248, 412)
+order by runid, querynum, card desc
+
+
+MIN(QP_READ_BYTES_CNT) AS MIN_QP_READ_BYTES_CNT, 
+MAX(QP_READ_BYTES_CNT) AS MAX_QP_READ_BYTES_CNT,	
+ROUND(AVG(QP_READ_BYTES_CNT),2) AS AVG_QP_READ_BYTES_CNT, 
+ROUND(STDDEV(QP_READ_BYTES_CNT),2) AS STD_QP_READ_BYTES_CNT, 
+ROUND(MEDIAN(QP_READ_BYTES_CNT),2) AS MED_QP_READ_BYTES_CNT, 
+-- query process read chars
+MIN(QP_READ_CHAR_CNT) AS MIN_QP_READ_CHAR_CNT, 
+MAX(QP_READ_CHAR_CNT) AS MAX_QP_READ_CHAR_CNT, 
+ROUND(AVG(QP_READ_CHAR_CNT),2) AS AVG_QP_READ_CHAR_CNT, 
+ROUND(STDDEV(QP_READ_CHAR_CNT),2) AS STD_QP_READ_CHAR_CNT, 
+ROUND(MEDIAN(QP_READ_CHAR_CNT),2) AS MED_QP_READ_CHAR_CNT, 
+-- query process read syscalls
+MIN(QP_READ_SYSCALLS_CNT) AS MIN_QP_READ_SYSCALLS_CNT, 
+MAX(QP_READ_SYSCALLS_CNT) AS MAX_QP_READ_SYSCALLS_CNT,	
+ROUND(AVG(QP_READ_SYSCALLS_CNT),2) AS AVG_QP_READ_SYSCALLS_CNT, 
+ROUND(STDDEV(QP_READ_SYSCALLS_CNT),2) AS STD_QP_READ_SYSCALLS_CNT, 
+ROUND(MEDIAN(QP_READ_SYSCALLS_CNT),2) AS MED_QP_READ_SYSCALLS_CNT, 

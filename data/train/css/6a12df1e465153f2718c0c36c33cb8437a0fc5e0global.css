@@ -1,0 +1,27 @@
+/* Reset */
+@import url("reset.css");
+
+/* Global styles */
+#main-wrapper {width:100%; margin-left: auto; margin-right: auto; text-align: center; vertical-align: top;}
+	#main-wrapper #main {float: none; width: 100%; text-align: center; margin-bottom: 20px;}
+   #content {float: none; width: 972px; text-align: left; margin-left: auto; margin-right: auto; background: #fff; border: 1px red solid;}
+   
+/* top nav */
+	#top-nav ul {overflow: hidden;}
+		#top-nav ul li {float: left; width: 100px; height: 50px; overflow: hidden; background: url(../img/spr_topnav.png) 0 0;}
+			#top-nav ul li a {display: block; width: 100px; height: 50px;}
+				#top-nav ul li a span {position: relative; left: -10000px;}
+		#top-nav ul li:nav-home {background-position: 0 10px;}
+		#top-nav ul li:nav-home:hover {background-position: 0 10px;}
+		#top-nav ul li:nav-about {background-position: 0 10px;}
+		#top-nav ul li:nav-about:hover {background-position: 0 10px;}
+		#top-nav ul li:nav-treatments {background-position: 0 10px;}
+		#top-nav ul li:nav-treatments:hover {background-position: 0 10px;}
+		#top-nav ul li:nav-surgical {background-position: 0 10px;}
+		#top-nav ul li:nav-surgical:hover {background-position: 0 10px;}
+		#top-nav ul li:nav-new {background-position: 0 10px;}
+		#top-nav ul li:nav-new:hover {background-position: 0 10px;}
+		#top-nav ul li:nav-contact {background-position: 0 10px;}
+		#top-nav ul li:nav-contact:hover {background-position: 0 10px;}
+		#top-nav ul li:nav-feedback {background-position: 0 10px;}
+		#top-nav ul li:nav-feedback:hover {background-position: 0 10px;}   

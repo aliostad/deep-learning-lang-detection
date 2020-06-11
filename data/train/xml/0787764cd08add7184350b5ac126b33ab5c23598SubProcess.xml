@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" 
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="SubProcess">
+
+    <typeAlias alias="SubProcess" type="com.shengli.clinic.model.SubProcess"/>
+
+	
+    <resultMap id="subProcessResult" class="SubProcess">
+        <result property="id" column="id"/>
+        <result property="orderNum" column="order_num"/>
+        <result property="processValue" column="process_value"/>
+        <result property="createdDate" column="created_date"/>
+        <result property="yangshiProcessId" column="yangshi_process_id"/>
+    </resultMap>
+    
+    <select id="getSubProcessByProcessId" resultMap="subProcessResult">
+	    <![CDATA[
+	        SELECT 	id, order_num, process_value, created_date, yangshi_process_id
+	        FROM sub_process           
+	        WHERE yangshi_process_id = #id#;
+	    ]]>
+    </select>
+
+  
+    
+     <insert id="insertSubProcess" parameterClass="SubProcess">
+      <![CDATA[
+	    INSERT INTO sub_process (
+	     	order_num, process_value, created_date, yangshi_process_id
+	    )VALUES (
+	        #orderNum#, #processValue#, now(), #yangshiProcessId#
+	    )
+	   ]]>
+    </insert>
+    
+     <update id="updateASubProcessById" parameterClass="SubProcess">
+     <![CDATA[
+       UPDATE sub_process 
+       SET process_value = #processValue#
+       WHERE id = #id#
+      ]]>
+    </update> 
+    
+     <delete id="removeSubProcessByProcessId" >
+     <![CDATA[
+       DELETE FROM sub_process  WHERE yangshi_process_id = #processId#
+      ]]>
+    </delete> 
+    
+     <delete id="removeSubProcessById" >
+     <![CDATA[
+       DELETE FROM sub_process  WHERE id = #id#
+      ]]>
+    </delete> 
+ 
+</sqlMap>

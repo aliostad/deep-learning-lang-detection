@@ -1,0 +1,38 @@
+#!/bin/bash
+# Usage ./invoke_session
+
+# Copy invoke session
+cp /bin/invoke_session /etc/init.d/invoke_session
+
+# Obtain target IP and Hostname
+ip_addr=$(ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}')
+hostname=$(cat /etc/hostname)
+
+# Set the PATH to use the LAVA api
+echo "export PATH=/lava/bin/:$PATH" > ~/.bashrc
+
+echo ""
+echo ""
+echo "*********************************************************************************************"
+echo -n "Please connect to: "
+echo -n "ssh "
+echo -n "-o StrictHostKeyChecking=no "
+echo -n "root:lava@"
+echo -n $ip_addr
+echo -n " "
+echo -n "("
+echo -n $hostname
+echo ")"
+echo "*********************************************************************************************"
+echo ""
+echo ""
+mkdir -p /run
+mkdir -p /run/hacking
+echo $$ > /run/hacking/hacking.pid
+echo "Hacking session active..."
+while [ -f /run/hacking/hacking.pid ]
+do
+	sleep 10
+done
+echo "Hacking session ended..."
+echo "<LAVA_TEST_RUNNER>: exiting"

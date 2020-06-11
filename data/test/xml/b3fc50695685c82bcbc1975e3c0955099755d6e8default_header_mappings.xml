@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<headers-mapping xmlns:mapping="http://schemas.android.com/apk/res-auto">
+    <item mapping:prefKey="wireless_section" mapping:id="@id/wireless_section" />
+    <item mapping:prefKey="personal_section" mapping:id="@id/personal_section" />
+    <item mapping:prefKey="base_section" mapping:id="@id/base_section" />
+    <item mapping:prefKey="account_settings" mapping:id="@id/account_settings" />
+    <item mapping:prefKey="system_section" mapping:id="@id/system_section" />
+</headers-mapping>

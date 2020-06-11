@@ -1,0 +1,274 @@
+<?xml version='1.0'?>
+<!DOCTYPE platform SYSTEM "http://simgrid.gforge.inria.fr/simgrid.dtd">
+<platform version="3">
+  <process function="agentMngt.cacheAgent" host="Jacquelin">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Boivin">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Jean_Yves">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="TeX">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Geoff">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Disney">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="iRMX">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="McGee">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Gatien">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Laroche">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Tanguay">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Morin">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Ethernet">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Bellemarre">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Kuenning">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Gaston">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Harry">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Bousquet">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Paul">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="St_Jean">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Jill">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Marcel">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Wright">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Jackson">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Fernand">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Soucy">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Ste_Julie">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Victoria">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Lessard">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Florient">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Marcoux">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Gavrel">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Bescherelle">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Pierre">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Jamie">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Rubin">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Olivier">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Boucherville">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Pointe_Claire">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Kansas">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="King">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Lapointe">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Julian">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Lafontaine">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Gordon">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Drouin">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Robert">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Jocelyne">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Stephen">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Provost">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Juneau">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Casavant">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="St_Antoine">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Louis">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Julien">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="St_Paul">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Mathematica">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="LaTeX">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Sirois">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Monique">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Audy">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Bourassa">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="OHara">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Boston">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Papineau">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Fraser">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Browne">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="SunOS">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Varennes">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Jacques">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Thierry">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Lachapelle">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="kV">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Yolande">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Pronovost">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="SPICE">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Europe">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Roy">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Amadeus">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Intel">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Cambridge">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Tremblay">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="UNIX">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Domey">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="St_Bruno">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Jean_Claude">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Doyon">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Fafard">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Croteau">
+    <argument value="hosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Dodge">
+    <argument value="hosts.csv"/>
+  </process>
+</platform>

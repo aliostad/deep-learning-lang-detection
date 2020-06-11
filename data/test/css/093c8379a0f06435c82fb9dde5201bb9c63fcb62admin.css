@@ -1,0 +1,37 @@
+.array-field {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    position: relative;
+}
+
+.embedded-model {
+    padding: 15px 10px 0;
+}
+
+.embedded-model > .btn {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+}
+
+.collapsible:before {
+    content: '\25BC';
+    display: inline-block;
+    -webkit-transition: .35s ease;
+    -moz-transition: .35s ease;
+    -o-transition: .35s ease;
+    transition: .35s ease;
+}
+.collapsible.collapsed:before {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.selected-facets .label {
+    font-size: 100%;
+    font-weight: normal;
+}

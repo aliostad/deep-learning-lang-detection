@@ -1,0 +1,153 @@
+.viewDataModel .dataModel-box {
+	display: inline-block;
+	vertical-align: top;
+	width: 49%;
+	text-align: center;
+	padding-top: 10px;
+	margin-top: 15px;
+}
+
+.viewDataModel .dataModel-box-content.fade {
+	opacity: 0.4;
+}
+
+.viewDataModel .dataModel-box:nth-child(2) {
+	padding-right: 5px;
+}
+
+.viewDataModel .dataModel-box:nth-child(3) {
+	margin-left: 4px;
+}
+
+.viewDataModel .dataModel-box > img {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.viewDataModel .dataModel-box {
+	min-height: 250px;
+}
+
+.viewDataModel .dataModel-box button {
+	display: inline-block;
+}
+
+.viewDataModel .dataModel-box .selectedDataModel {
+	font-weight: bold;
+	line-height: 30px;
+	display: none;
+}
+
+.viewDataModel span.dataModel-box:nth-child(2) {
+	border-right: 1px solid black;
+}
+
+.viewDataModel .dataModel-box.selected .selectedDataModel {
+	display: block;
+}
+
+.viewDataModel .dataModel-box.selected button {
+	display: none;
+}
+
+.selected{
+	display: inline-block !important;
+}
+
+.dataModel-box-title {
+	font-weight: bold;
+	line-height: 26px;
+}
+
+/*
+ * Left side
+ */
+
+.viewDataModel #mapLayers {
+	margin-top: 6px;
+}
+
+.viewDataModel .layersWarning {
+	font-style: italic;
+	height: 72px;
+	overflow-y: auto;
+}
+
+.viewDataModel .dataModel-box:nth-child(2) .selectedDataModel {
+	margin-top: 22px;
+}
+
+.viewDataModel .dataModel-box:nth-child(2) .btnSelect {
+	margin-top: 24px;
+}
+
+/*
+ * Right side
+ */
+
+.viewDataModel .twoMapsInput label {
+	text-align: left;
+	margin-left: 42px;
+}
+
+#initPopup .twoMapsInput label {
+	margin-left: 26px;
+}
+
+.viewDataModel .alert {
+	margin-top: 5px;
+	margin-bottom: 12px;
+}
+
+.viewDataModel .webmapidtooltip {
+	border-bottom: 1px dotted #999999;
+}
+
+.viewDataModel .webmapidtooltip {
+	font-weight: inherit;
+	color: inherit;
+}
+
+.viewDataModel .webmapidtooltip:hover {
+	text-decoration: none;
+}
+
+.layer1Label{
+	display: inline-block !important;
+}
+
+.dropdown-menu > li > a {
+	text-align: center !important;
+}
+
+.switchMapIds{
+	position: absolute;
+	right: 17px;
+	bottom: 125px;
+}
+
+.viewDataModel .model2 { 
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.switchMapIds.settings{
+	bottom: 100px;
+}
+
+.miniInput{
+	text-align: left;
+	margin-left: -35px;
+	width: 170px;
+}
+
+.viewDataModel .dataModel-box .browseMaps {
+	display: inline-block;
+	position: absolute;
+	right: 60px;
+	bottom: 136px;
+}
+
+.browseMaps2 {
+	bottom: 71px !important;
+}

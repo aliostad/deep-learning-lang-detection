@@ -1,0 +1,181 @@
+
+
+/*
+  dark: #2F2933
+  dark blue: #01A2A6
+  light blue: #29D9C2
+  green: #BDF271
+  orange:#ff7600
+  light green: #FFFFA6
+*/
+
+body{ height:100%;width:100%; position:relative;
+  background-image:url(../images/BG.gif);
+  background-repeat:repeat;
+  text-align:left; }
+
+select{
+  padding:2px;
+}
+
+::-moz-selection{ background: #BDF271; color:#fff; text-shadow: none; }
+::selection { background:#BDF271; color:#fff; text-shadow: none; }
+
+
+h1 { font-size:40px;  }
+h1 span { font-size:20px;margin-left:-10px; }
+
+.byline { float:right; font-size:12px; font-style:italic; }
+
+#header_tier{
+  position:relative;
+}
+  #header_tier .byline{
+    position:absolute;
+    right:0px;
+    top:24px;
+  }
+
+#app{
+ color:#2F2933;
+ padding:10px;
+ margin-right:10px;
+}
+
+.tier{
+  margin-bottom:10px;
+}
+
+
+#query{
+  position:absolute;
+  z-index:9999;
+  background-color:white;
+  left:200px;
+}
+#query a{ font-size:14px; font-style:italic; margin-left:7px; }
+
+.infopane{
+  position:fixed;
+  z-index:9999;
+  right:0px;
+  top:0px;
+  text-align:right;
+  padding:1px 1px 0px 0px;
+}
+
+.infopane li{
+  background-color:white;
+  padding:3px;
+  margin:1px;
+  display:inline-block;
+  float:right;
+  clear:right;
+  border:1px solid #193451;
+}
+
+.infopane p{
+  display:inline-block;
+}
+
+#map {
+  height: 100%;
+  width:100%;
+  position:relative;
+  margin:auto;
+  display:block;
+}
+
+#map .canvas{ position:absolute; }
+
+.api-form{
+  font-size:12px;
+  text-align:left;
+  background-color:white;
+  display:block;
+  height:300px;
+  border:1px solid #2F2933;
+}
+  .api-form .bd{
+    margin:10px;
+  }
+  .api-form .CodeMirror-wrapping{
+    border:1px solid #2F2933;
+    margin-bottom:5px;
+  }
+  .api-form .ft{
+    
+  }
+    .api-form .ft .left{
+      float:left;
+    }
+    .api-form .bd .right{
+      float:right;
+    }
+  
+.api-info{
+  font-size:12px;
+  text-align:left;
+  background-color:white;
+  display:block;
+  height:300px;
+  overflow-y:scroll;
+  border:1px solid #2F2933;
+}
+  .api-info .bd{
+    margin:10px;
+    padding-bottom:15px;
+  }
+  
+  .api-info .bd .italic{
+    font-style:italic;margin-bottom:5px;
+  }
+  .api-info .bd .padded{
+    padding-left:10px;
+  }
+  .api-info .bd .alert{
+    color:#ff7600;
+  }
+  .api-info .bd .no-wrap{
+    white-space:nowrap;
+  }
+  
+
+.api-results{
+  font-size:12px;
+  text-align:left;
+  background-color:white;
+  min-height:10px;
+  border:1px solid #2F2933;
+}
+  .api-results .bd{
+    margin:10px;
+  }
+    .api-results .bd textarea.plaintext-results{
+      width:100%;
+      height:500px;
+    }
+  
+
+table.csv-table{  }
+table.csv-table tbody{  }
+table.csv-table tr{  }
+table.csv-table tr th,
+table.csv-table tr td{ padding:3px; border:1px solid #cfcfcf;  }
+table.csv-table tr th{  }
+table.csv-table tr td{  }
+table.csv-table tr td strong{  }
+
+table.parameter_table{ 
+  width:100%;
+  margin-bottom:15px;
+}
+table.parameter_table tbody{
+  border-top:1px solid #ebf0d6;
+}
+table.parameter_table tr{  }
+table.parameter_table tr th,
+table.parameter_table tr td{ padding:3px;  }
+table.parameter_table tr th{font-size:13px; padding-top:5px;font-style:italic;}
+table.parameter_table tr td{  }
+table.parameter_table tr td strong{  }

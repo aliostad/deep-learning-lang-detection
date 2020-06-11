@@ -1,0 +1,27 @@
+.sc-view .sc-text-field-view.console .padding {
+  left: 10px;
+  right: 10px;
+}
+
+.sc-view.sc-collection-view.sc-list-view {
+  background-color: #222;
+}
+
+.sc-view.sc-collection-view.sc-list-view .sc-list-item-view {
+  border-bottom: 1px solid #333;
+  color: #999;
+  height: 23px !important; /* make room for border */
+  margin-top: 1px;
+}
+
+.sc-view.sc-collection-view.sc-list-view .sc-list-item-view.new-session {
+  border-color: #555;
+}
+
+.sc-view.sc-collection-view.sc-list-view .sc-list-item-view.error {
+  background-color: #333;
+}
+
+.sc-view.sc-collection-view.sc-list-view .sc-list-item-view.warn {
+  background-color: #02212b;
+}

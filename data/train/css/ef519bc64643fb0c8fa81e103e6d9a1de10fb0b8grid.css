@@ -1,0 +1,45 @@
+#grid960
+{
+  display: none;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  overflow: hidden;
+}
+
+#grid960 #v
+{
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#grid960 #h
+{
+  position: absolute;
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#grid960 #v #on
+{
+  box-model: border-box;
+  float: left;
+  width: 60px;
+  height: 100%;
+  margin: 0px 10px;
+  background: rgba(128, 128, 128, 0.5);
+}
+
+#grid960 #h #on
+{
+  box-model: border-box;
+  width: 940px;
+  height: 60px;
+  margin: 10px 10px;
+  background: rgba(128, 128, 128, 0.2);
+}
+

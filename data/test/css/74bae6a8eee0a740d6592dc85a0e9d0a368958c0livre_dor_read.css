@@ -1,0 +1,71 @@
+@import "livre_dor.css";
+
+
+#loadingLivre{
+    background: none repeat scroll 0 0 transparent;
+    position: absolute;
+    right: 150px;
+    text-align: center;
+    top: 200px;
+	z-index:999;
+	display:none;
+}
+
+#mybook{
+
+}
+
+.form_livre h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+.form_livre{
+	padding-top:25px;
+	padding-left: 7px;
+}
+
+.top{
+
+}
+
+.page{
+position:relative;
+margin:0;
+padding:0;
+}
+
+.write{
+position:absolute;
+top:-10px;
+right:50px;
+}
+
+.writeUs{
+margin:20px auto;
+text-align:center;
+}
+
+.plume{
+margin:0;
+padding:0;
+height:100px;
+}
+
+.intro{
+padding-top:20px;
+text-align:center;
+}
+
+.firstLetter{
+    float: left;
+    font-size: 5em;
+    margin-bottom: -35px;
+    margin-right: 35px;
+	text-transform:uppercase;
+	font-family:'TangerineRegular';
+}
+
+#livre_dor_image{
+width:800px;
+}

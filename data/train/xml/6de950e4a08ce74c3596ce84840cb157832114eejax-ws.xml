@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="RateWebService">
+      <implementation-class>ws.RateWebService</implementation-class>
+    </service>
+    <service name="CustomerWebService">
+      <implementation-class>ws.CustomerWebService</implementation-class>
+    </service>
+    <service name="TransactionWebService">
+      <implementation-class>transaction.TransactionWebService</implementation-class>
+    </service>
+    <service name="DirectDebitWebService">
+      <implementation-class>transaction.DirectDebitWebService</implementation-class>
+    </service>
+  </services>
+  <clients/>
+</jax-ws>

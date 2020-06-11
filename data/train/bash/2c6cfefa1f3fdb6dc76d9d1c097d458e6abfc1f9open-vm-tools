@@ -1,0 +1,92 @@
+#!/bin/sh
+# Start, stop, and restart vmtoolsd
+echo "`date` started '$0'" > /var/log/vmtools.init.sh
+
+OPT="--background /var/run/vmtoolsd.pid"
+
+unload_module() {
+  lsmod|grep -q ^$1 && rmmod $1
+  #/sbin/udevadm settle
+}
+
+load_module() {
+  lsmod|grep -q ^$1 || modprobe $1
+  #/sbin/udevadm settle
+}
+
+case "$1" in
+start)
+  # Ensure kernel modules can be loaded
+  depmod -a
+
+  # Interface check
+  NIF1=$(wc -l < /proc/net/dev)
+
+  # Load vmhgfs module
+  load_module vmhgfs
+
+  # Mount vmhgfs
+  vmhgfs_mnt=/mnt/hgfs
+  if [ ! -e $vmhgfs_mnt ]; then mkdir $vmhgfs_mnt; fi
+  sed /hgfs/d -i /etc/fstab
+  echo ".host:/ /mnt/hgfs vmhgfs defaults,user,ttl=5,uid=root,gid=root,fmask=0133,dmask=0022 0 0" >> /etc/fstab
+  grep -q vmhgfs /etc/mtab || mount $vmhgfs_mnt &>/dev/null
+
+  # Load vmmemctl
+  # load_module vmmemctl
+
+  # Load vmxnet
+  load_module vmxnet
+
+  # Load vmxnet3
+  load_module vmxnet3
+
+  # Load vmci
+  load_module vmci
+
+  # Load vsock
+  load_module vsock
+
+  # Load vmblock
+  vmblock_dev=/tmp/VMwareDnd
+  mkdir -p $vmblock_dev
+  chmod 1777 $vmblock_dev
+  load_module vmblock
+  vmware-vmblock-fuse  /tmp/VMwareDnd
+
+  # Load vmsync
+  #load_module vmsync
+
+  # Start vmtoolsd
+  if pidof vmtoolsd &>/dev/null; then
+    echo vmtoolsd already running
+  else
+    rm -f /var/run/vmtoolsd.pid
+    /usr/local/bin/vmtoolsd $OPT
+  fi
+
+  # Start DHCP client for new interfaces
+  if ! grep -q nodhcp /proc/cmdline; then
+    NIF2=$(wc -l < /proc/net/dev)
+    if [ $NIF2 -gt $NIF1 ]; then
+      /etc/init.d/dhcp.sh
+    fi
+  fi
+;;
+stop)
+   if pidof vmtoolsd &>/dev/null; then
+      killall vmtoolsd
+      echo stopped vmtoolsd
+   else
+      echo vmtoolsd is not running
+   fi
+;;
+restart)
+   $0 stop
+   $0 start
+;;
+*)
+   echo "Usage: $0 (start|stop|restart)"
+   exit 1
+;;
+esac

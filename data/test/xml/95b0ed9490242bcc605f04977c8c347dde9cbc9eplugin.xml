@@ -1,0 +1,7 @@
+<Plugin name="Messages" identifier="net.wkbae.quickprogrammer.plugin.message">
+	<Block name="Plain Message" class="net.wkbae.quickprogrammer.plugin.message.PlainMessageBlock" />
+	<Block name="Information Message" class="net.wkbae.quickprogrammer.plugin.message.InformationMessageBlock" />
+	<Block name="Question Message" class="net.wkbae.quickprogrammer.plugin.message.QuestionMessageBlock" />
+	<Block name="Warning Message" class="net.wkbae.quickprogrammer.plugin.message.WarningMessageBlock" />
+	<Block name="Error Message" class="net.wkbae.quickprogrammer.plugin.message.ErrorMessageBlock" />
+</Plugin>

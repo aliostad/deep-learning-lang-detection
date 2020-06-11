@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.k1005.contacts" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_clear_contacts"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".module.duplicate.DuplicateListActivity"
+            android:label="Duplicate" />
+        <activity
+            android:name=".module.duplicate.DuplicateFoundedListActivity"
+            android:label="Founded Duplicate" />
+        <activity
+            android:name=".module.empty.EmptyListActivity"
+            android:label="Empty List" />
+        <activity
+            android:name=".module.keywordgroup.KeywordInputActivity"
+            android:label="@string/title_keyword_input" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+</manifest>

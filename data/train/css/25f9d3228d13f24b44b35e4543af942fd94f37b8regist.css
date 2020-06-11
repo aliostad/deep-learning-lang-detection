@@ -1,0 +1,315 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*注册*/
+.load_wrap {
+    background: #f7f7f7;
+    width: 100%;
+    height:550px;
+}
+/*头部*/
+.load_top {
+    padding-left: 11px;
+    width: 989px;
+    margin: 0 auto;
+    height: 60px;
+    padding-top: 40px;
+}
+/*logo*/
+.load_top .top_l {
+    float: left;
+}
+.load_top .top_l .top_l1 {
+    background:url(../img/regist/load1101.png) no-repeat -111px -104px;
+    width: 177px;
+    height: 60px;
+    padding-right: 25px;
+    border-right: 1px solid #d2d0d3;
+    float: left;
+}
+.load_top .top_l .top_l1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/*登录*/
+.load_top .top_l .top_l2 {
+    float: left;
+    line-height: 60px;
+    padding: 0 15px;
+    color: #626262;
+    font-size: 20px;
+    font-family: microsoft yahei;
+}
+
+/*真...100%正品*/
+.load_top .top_r {
+    float: right;
+    margin-top: 15px;
+    font-family: microsoft yahei;
+}
+.load_top .top_r li {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #313131;
+}
+.load_top .top_r li.top_r1 {
+    background: url(../img/regist/load1101.png) no-repeat -389px -59px;
+    padding-left: 40px;
+    width: 100px;
+}
+.load_top .top_r li.top_r2 {
+    background: url(../img/regist/load1101.png) no-repeat -389px -90px;
+    padding-left: 40px;
+    width: 100px;
+}
+.load_top .top_r li.top_r3 {
+    background: url(../img/regist/load1101.png) no-repeat -389px -121px;
+    padding-left: 40px;
+    width: 100px;
+}
+
+/*中间注册*/
+.load_con {
+    width: 1000px;
+    margin: 50px auto 0;
+    height:400px;
+}
+/*图片区域*/
+.load_con_l_reg {
+    width: 540px;
+    height: 400px;
+    float: left;
+    border-style: none;
+    cursor: pointer;
+    background: url(../img/regist/0223xinrenzhuce.jpg) no-repeat;
+}
+/*注册框*/
+.load_con_r {
+    width: 402px;
+    float: left;
+    padding-left: 34px;
+}
+/*登录文字*/
+.load_con_r .re_back {
+    padding-top: 0px;
+}
+.load_con_r .r_con {
+    width: 340px;
+    height: 375px;
+    padding: 60px 0 0 60px;
+    padding-top: 0px;
+}
+.load_con_r .re_back_link {
+    height: 30px;
+    color: #666;
+    text-align: right;
+    line-height: 30px;
+    padding-right: 60px;
+    font-size: 14px;
+}
+.load_con_r .re_back_link a {
+    color: #c8030a;
+    margin: 0 0 0 5px;
+    font-size: 14px;
+}
+/*手机号*/
+.load_con_r .r_con .cell {
+    width: 280px;
+    height: 40px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.load_con_r .r_con .cell label {
+    font-size: 14px;
+    padding: 0 15px;
+    color: #aaa;
+    cursor: text;
+    line-height: 38px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.load_con_r .r_con .cell .text {
+    width: 248px;
+    height: 16px;
+    color: #000;
+    font-size: 14px;
+    padding: 11px 15px;
+    /*color: 000;*/
+    font-size: 14px;
+    border: 1px solid #cfcfd1;
+    border-radius: 3px;
+    line-height: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/*隐藏框*/
+.load_con_r .r_con .cell .ok {
+    background:url(../img/regist/load1101.png) no-repeat -176px -66px;
+    width: 17px;
+    height: 17px;
+    display: none;
+    position: absolute;
+    right: 14px;
+    top: 12px;
+}
+
+/*验证码*/
+.load_con_r .r_con .vcode .text {
+    width: 86px;
+}
+.load_con_r .r_con .vcode .ok {
+    right: 168px;
+}
+/*隐藏框1*/
+.load_con_r .r_con .cell .cell_hid {
+    color: #e20000;
+    padding-right: 20px;
+    white-space: nowrap;
+    height: 28px;
+    padding-left: 38px;
+    border: 1px solid #de3a39;
+    border-radius: 3px;
+    line-height: 28px;
+    background: #fef1f7 url(../img/regist/load1101.png) no-repeat -395px -163px;
+    position: absolute;
+    left: 0;
+    top: -32px;
+    z-index: 3;
+    display: none;
+}
+.load_con_r .r_con .cell .cell_hid .sanj {
+    position: absolute;
+    left: 20px;
+    top: 28px;
+    background: url(../img/regist/load1101.png) no-repeat -35px -168px;
+    width: 15px;
+    height: 8px;
+    display: block;
+}
+/*验证码图片*/
+.load_con_r .r_con .vcode .c_img {
+    width: 130px;
+    height: 38px;
+    border: 1px solid #cfcfd1;
+    border-radius: 3px;
+    position: absolute;
+    left: 123px;
+    top: 0;
+}
+.load_con_r .r_con .vcode .c_img img {
+    height: 38px;
+    width: 130px;
+}
+img {
+    border: none;
+    display: block;
+}
+/*看不清*/
+.load_con_r .r_con .vcode .c_ts {
+    font-size: 12px;
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    left: 263px;
+    top: 3px;
+    line-height: 18px;
+}
+.c_ts {
+    font-size: 12px;
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    left: 263px;
+    top: 3px;
+    line-height: 18px;
+}
+.load_con_r .r_con .vcode .c_ts a {
+    color: #666666;
+    cursor: pointer;
+}
+
+/*获取验证码*/
+.load_con_r .r_con .vcode .c_yz {
+    width: 118px;
+    height: 40px;
+    position: absolute;
+    left: 128px;
+    top: 0;
+}
+.load_con_r .r_con .vcode .c_yz a {
+    width: 116px;
+    height: 38px;
+    border: 1px solid #cfcfd1;
+    border-radius: 3px;
+    background:url(../img/regist/load1101.png) no-repeat -57px -220px;
+    display: block;
+    color: #666;
+    line-height: 38px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*注意协议*/
+.load_con_r .r_con .r_load {
+    line-height: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.load_con_r .r_con .r_load_btn {
+    background:url(../img/regist/load1101.png)  no-repeat -34px -64px;
+    border: 0;
+    font-size: 15px;
+    width: 140px;
+    height: 40px;
+    font-family: microsoft yahei;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    margin-right: 60px;
+}
+.load_con_r span.re_back_link{
+    height: 30px;
+    color: #666;
+    text-align: left;	
+    line-height: 30px;
+    padding-right: 60px;
+}
+.load_con_r .re_back_link a {
+    color: #c8030a;
+    margin: 0 0 0 5px;
+}
+.load_con_r .r_con_sd {
+    height: 22px;
+    width: 400px;
+}
+
+/*尾部*/
+.load_foot {
+    width: 1000px;
+    margin: 60px auto 0;
+}
+.load_foot p {
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #898989;
+    font-size: 14px;
+}
+.load_foot p a {
+    color: #898989;
+}
+.load_foot p i {
+    font-style: normal;
+}
+.load_foot p a:hover{
+    color: #c00;
+}
+	

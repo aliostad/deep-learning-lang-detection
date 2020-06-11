@@ -1,0 +1,122 @@
+#!/bin/bash
+#set -x
+# Usage:
+# interpret a file: ./interpret mzscheme < scheme.scm
+# interpret code: ./interpret <<< "(display \"hello\nworld\")(newline)"   
+# use SLIB: ./interpret-slib <<< "(slib:report)"
+
+# tricky examples:
+# ./interpret bigloo <<< "(display (eq? (string->symbol \"\`\") '|\`|)))(newline)"
+# ./interpret bigloo <<< '(display (eq? (string->symbol "`") '\''|`|)))(newline)'
+
+# LOAD_SLIB=$(if [[ $0 == *slib* ]]; then echo "slib"; else echo ""; fi)
+if [[ $0 = *slib* ]]; then LOAD_SLIB="slib"; fi
+
+#echo "${LOAD_SLIB}"
+
+read -r -d "" PROGRAM
+echo "PROGRAM = ${PROGRAM}"
+PROGRAM="(begin ${PROGRAM} (newline))"
+
+IMPLEMENTATION="${1:-all}"
+
+make_load_expression() {
+    echo "(load \"/usr/share/slib/$1.init\")"
+}
+
+run_bigloo() {
+    SLIB_INIT="bigloo"
+    echo "bigloo:"
+#    bigloo -s -eval "$([[ -z ${LOAD_SLIB} ]] && echo "${PROGRAM}" || echo "$(make_load_expression ${SLIB_INIT}) ${PROGRAM}") (exit)" 
+    if [[ $LOAD_SLIB ]]; then bigloo -s -eval "$(make_load_expression $SLIB_INIT) $PROGRAM (exit)"; else bigloo -s -eval "$PROGRAM (exit)"; fi
+}
+
+run_chicken() {
+    SLIB_INIT="chicken"
+    echo "chicken:"
+#    csi -require-extension syntax-case -eval \
+    csi -eval "$([[ -z ${LOAD_SLIB} ]] && echo "${PROGRAM}" || echo "$(make_load_expression ${SLIB_INIT}) ${PROGRAM}")"
+}
+
+run_gambit() {
+    SLIB_INIT="gambit"
+    echo "gambit:"
+    gambit-interpreter -e "(load \"~~/lib/syntax-case\") $([[ -z ${LOAD_SLIB} ]] && echo "${PROGRAM}" || echo "$(make_load_expression ${SLIB_INIT}) ${PROGRAM}")"
+}
+
+run_gauche() {
+    SLIB_INIT="gauche"
+    echo "gauche:"
+    gosh -e "$([[ -z ${LOAD_SLIB} ]] && echo "${PROGRAM}" || echo "$(make_load_expression ${SLIB_INIT}) ${PROGRAM}")"
+}
+
+run_guile() {
+    SLIB_INIT="guile"
+    echo "guile:"
+    guile -c "(use-modules (ice-9 syncase)) $([[ -z ${LOAD_SLIB} ]] && echo "${PROGRAM}" || echo "$(make_load_expression ${SLIB_INIT}) ${PROGRAM}")"
+}
+
+run_mit-scheme() {
+    SLIB_INIT="mitscheme"
+    echo "mit-scheme:"
+#mit-scheme --batch-mode --eval "(set! load-noisily? #t) (load \"$1\")"
+#echo "(set! load-noisily? #t) (load \"$1\")" | mit-scheme --batch-mode
+#mit-scheme --batch-mode --eval "(set! load/suppress-loading-message? #t)" #  (load \"$1\")"
+    echo "(set! load/suppress-loading-message? #t) $([[ -z ${LOAD_SLIB} ]] && echo "${PROGRAM}" || echo "$(make_load_expression ${SLIB_INIT}) ${PROGRAM}")" | mit-scheme --batch-mode
+#echo "(load \"$1\")" | mit-scheme --batch-mode
+}
+
+run_mzscheme() {
+    SLIB_INIT="DrScheme"
+    echo "mzscheme:"
+    mzscheme -vme "$([[ -z ${LOAD_SLIB} ]] && echo "${PROGRAM}" || echo "(begin $(make_load_expression ${SLIB_INIT}) ${PROGRAM})")"
+}
+
+run_scm() {
+    SLIB_INIT="scm"
+    echo "scm:"
+    scm -e "$([[ -z ${LOAD_SLIB} ]] && echo "${PROGRAM}" || echo "$(make_load_expression ${SLIB_INIT}) ${PROGRAM}")"
+}
+
+run_stklos() {
+    SLIB_INIT="STk"
+    [[ -z ${LOAD_SLIB} ]] || PROGRAM="$(make_load_expression STk) ${PROGRAM}"
+    echo "stklos with full-syntax:"
+    stklos -e "(begin (require \"full-syntax\") $([[ -z ${LOAD_SLIB} ]] && echo "${PROGRAM}" || echo "$(make_load_expression ${SLIB_INIT}) ${PROGRAM}"))"
+    echo "stklos:"
+    stklos -e "$([[ -z ${LOAD_SLIB} ]] && echo "${PROGRAM}" || echo "$(make_load_expression ${SLIB_INIT}) ${PROGRAM}")"
+}
+
+run_elk() {
+    SLIB_INIT="elk"
+    echo "elk:"
+#    echo "$([[ -z ${LOAD_SLIB} ]] && echo "${PROGRAM}" || echo "$(make_load_expression ${SLIB_INIT}) ${PROGRAM}")" | elk -l -
+    { [[ -z $LOAD_SLIB ]] && echo "$PROGRAM" || echo "$(make_load_expression "$SLIB_INIT" "$PROGRAM")"; } | elk -l -
+}
+
+run_all() {
+    run_bigloo
+    [[ -z ${LOAD_SLIB} ]] && run_chicken
+    [[ -z ${LOAD_SLIB} ]] && run_elk
+    run_gambit
+    [[ -z ${LOAD_SLIB} ]] && run_gauche
+    run_guile
+    [[ -z ${LOAD_SLIB} ]] && run_mit-scheme
+    run_mzscheme
+    run_scm
+    [[ -z ${LOAD_SLIB} ]] && run_stklos
+}
+
+case ${IMPLEMENTATION} in
+    bigloo) run_bigloo;;
+    chicken) run_chicken;;
+    elk) run_elk;;
+    gambit) run_gambit;;
+    gauche) run_gauche;;
+    guile) run_guile;;
+    mit-scheme) run_mit-scheme;;
+    mzscheme) run_mzscheme;;
+    scm) run_scm;;
+    stklos) run_stklos;;
+    all) run_all;;
+esac	

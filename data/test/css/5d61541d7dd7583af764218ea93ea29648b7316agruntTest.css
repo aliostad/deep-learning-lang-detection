@@ -1,0 +1,59 @@
+/*
+ * User: l8823520x
+ * Date: 7/7/14
+ * Time: 11:34 AM
+*/
+
+body {
+    font: 13px/24px arial, sans-serif;
+    color: #333;
+}
+a:link,
+a:visited {
+    color: #366097;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: #2F6FAD;
+}
+::selection {
+    background: #444;
+    color: #f4f4f4;
+}
+ul,
+li,
+dl,
+dt,
+dd {
+    list-style: none;
+}
+img {
+    border: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: #ccc;
+}
+/*
+ * User: l8823520x
+ * Date: 7/7/14
+ * Time: 11:43 AM
+*/
+
+.model-sya {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+    background: #f5f5f5;
+}
+.model-sya .title-sya {
+    background: #5890AD;
+    color: #000;
+    height: 25px;
+    font: 500 14px/25px'microsoft yahei';
+}
+.model-sya .content-sya {
+    padding: 10px;
+}

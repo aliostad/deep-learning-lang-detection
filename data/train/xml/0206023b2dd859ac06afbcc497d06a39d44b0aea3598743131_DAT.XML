@@ -1,0 +1,83 @@
+<xml>
+  <service_ids territory="scee">
+  <cross_providers>
+      <service id="EP9000-NPEQ10001_00" />
+      <service id="EP9000-NPER10001_00" />
+    </cross_providers>
+    <individual_providers>
+      <service id="EP9000-NPEQ00003_00" />
+      <service id="EP9000-NPEQ00006_00" />
+      <service id="EP9000-NPEQ00008_00" />
+      <service id="EP9000-NPEQ00009_00" />
+      <service id="EP9000-NPEQ00010_00" />
+      <service id="EP9000-NPEQ00011_00" />
+      <service id="EP9000-NPEQ00012_00" />
+      <service id="EP9000-NPEQ00013_00" />
+      <service id="EP9000-NPEQ00014_00" />
+      <service id="EP9000-NPEQ00015_00" />
+      <service id="EP9000-NPEQ00016_00" />
+      <service id="EP9000-NPEQ00017_00" />
+      <service id="EP9000-NPEQ00018_00" />
+      <service id="EP9000-NPEQ00019_00" />
+      <service id="EP9000-NPEQ00020_00" />
+      <service id="EP4063-NPER00002_00" />
+      <service id="EP4066-NPER00004_00" />
+      <service id="EP0102-NPER00005_00" />
+      <service id="EP4067-NPER00006_00" />
+      <service id="EP9000-NPEQ00009_00" />
+      <service id="EP0700-NPER00007_00" />
+      <service id="EP2007-NPER00009_00" />
+      <service id="EP4114-NPER00011_00" />
+      <service id="EP4121-NPER00012_00" />
+      <service id="EP4120-NPER00013_00" />
+      <service id="EP0001-NPER00016_00" />
+      <service id="EP0006-NPER00018_00" />
+      <service id="EP4055-NPER00020_00" />
+      <service id="EP1005-NPER00021_00" />
+      <service id="EP1001-NPER00022_00" />
+      <service id="EP0082-NPER00023_00" />
+      <service id="EP1004-NPER00026_00" />
+    </individual_providers>
+	<service_id>EP0177-NPER00010_00</service_id>
+    <service_id>EP4127-NPER00050_00</service_id>
+    <service_id>EP5020-NPER00048_00</service_id>
+    <service_id>EP9000-NPEQ00001_00</service_id>
+    <service_id>EP9000-NPEQ00002_00</service_id>
+    <service_id>EP9000-NPEQ00004_00</service_id>
+    <service_id>EP9000-NPEQ00005_00</service_id>
+    <service_id>EP4065-NPER00003_00</service_id>
+    <service_id>EP0644-NPER00008_00</service_id>
+    <service_id>EP4127-NPER00014_00</service_id>
+    <service_id>EP0024-NPER00017_00</service_id>
+    <service_id>EP1010-NPER00024_00</service_id>
+    <service_id>EP2020-NPER00025_00</service_id>
+    <service_id>EP1006-NPER00027_00</service_id>
+    <service_id>EP2017-NPER00028_00</service_id>
+    <service_id>EP0555-NPER00029_00</service_id>
+    <service_id>EP0002-NPER00031_00</service_id>
+    <service_id>EP4297-NPER00033_00</service_id>
+    <service_id>EP0101-NPER00034_00</service_id>
+    <service_id>ET0002-NPER00035_00</service_id>
+    <service_id>EP2017-NPEB00176_00</service_id>
+    <service_id>IP9102-NPIA90006_00</service_id>
+	<service_id>EP4302-NPER00030_00</service_id>
+	<service_id>EP4305-NPER00037_00</service_id>
+	<service_id>EP4075-NPER00038_00</service_id>
+	<service_id>EP2037-NPER00032_00</service_id>
+	<service_id>EP2043-NPER00040_00</service_id>
+	<service_id>EP2145-NPER00041_00</service_id>
+	<service_id>EP4143-NPER00042_00</service_id>
+	<service_id>EP9000-NPEO00113_00</service_id>
+	<service_id>EP5017-NPER00046_00</service_id>
+	<service_id>EP4114-NPER00011_00</service_id>
+	<service_id>EP4306-NPER00043_00</service_id>
+	<service_id>EP5019-NPER00047_00</service_id>
+	<service_id>EP4348-NPER00049_00</service_id>
+	<service_id>EP9000-NPEQ00022_00</service_id>
+	<service_id>EP4065-NPER00053_00</service_id>
+    <service_id>EP0101-NPER00034_00</service_id>
+    <service_id>EP4375-NPER00055_00</service_id>
+    <service_id>EP4376-NPER00056_00</service_id>
+    <service_id>EP4377-NPER00057_00</service_id>
+  </service_ids>
+</xml>

@@ -1,0 +1,52 @@
+HbListViewItem[layoutName="editviewlist"][modelItemType="SeparatorItem"]{
+    layout:custom-separator-1;
+}
+
+HbListViewItem::text-1[layoutName="editviewlist"][modelItemType="SeparatorItem"]{
+	text-height: var(hb-param-text-height-secondary);
+	font-variant: secondary;
+	pref-width:-1;
+	text-align: left;
+	size-policy-horizontal: ignored;
+	text-line-count-min:1;
+	text-line-count-max:1;
+	text-wrap-mode:no-wrap;
+}
+
+HbListViewItem::icon-1[layoutName="editviewlist"][modelItemType="StandardItem"]{
+    fixed-width:var(hb-param-graphic-size-primary-small);
+	fixed-height:var(hb-param-graphic-size-primary-small);
+}
+
+HbListViewItem::text-1[layoutName="editviewlist"][modelItemType="StandardItem"]{
+    text-height:var(hb-param-text-height-secondary);
+    font-variant:secondary;
+	pref-width:-1;
+	text-align: left;
+	size-policy-horizontal: ignored;
+	text-line-count-min:1;
+	text-line-count-max:1;
+	text-wrap-mode:no-wrap;
+}
+
+HbListViewItem::text-1[layoutName="editviewlist"][modelItemType="StandardItem"][!text-2]{
+    text-height:var(hb-param-text-height-primary);
+    font-variant:primary;
+	pref-width:-1;
+	text-align: left;
+	size-policy-horizontal: ignored;
+	text-line-count-min:1;
+	text-line-count-max:1;
+	text-wrap-mode:no-wrap;
+}
+
+HbListViewItem::text-2[layoutName="editviewlist"][modelItemType="StandardItem"]{
+    text-height:var(hb-param-text-height-primary);
+    font-variant:primary;
+	pref-width:-1;
+	text-align: left top;
+	size-policy-horizontal: ignored;
+	text-line-count-min:1;
+	text-line-count-max:1;
+	text-wrap-mode:no-wrap;
+}

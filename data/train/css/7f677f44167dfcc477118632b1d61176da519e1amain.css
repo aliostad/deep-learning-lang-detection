@@ -1,0 +1,122 @@
+body,
+html {
+  padding-top: 30px;
+  background-color: #ebebeb !important;
+  background: #ebebeb !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+div.introduction {
+  color: #2A68C9 !important;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  padding: 36px 0;
+}
+
+div.service-div {
+  padding-bottom: 20px;
+  margin: 0px 22px 50px 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+div.service-main {
+  padding: 0;
+}
+
+div.service-title.purchase {
+  background-color: #2ab8c9;
+}
+
+div.service-title.transfer {
+  background-color: #2A68C9;
+}
+
+div.service-title.payment {
+  background-color: #3b2ac9;
+}
+
+div.service-title.purchase,
+div.service-title.transfer,
+div.service-title.payment {
+  padding: 10px 0;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+div.service-title.purchase h2,
+div.service-title.transfer h2,
+div.service-title.payment h2 {
+  color: #fff !important;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  margin: 10px 0 !important;
+  /*text-shadow: 0px 1px 0px #fff;*/
+}
+
+.service-div img {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 15px;
+}
+
+
+/*.service-div a p{
+  padding-bottom: 30px;
+  margin-top: 30px;
+  
+}*/
+
+
+/*.service-div p{
+  padding: 0 20px;
+} */
+
+.service-text {
+  padding: 0 20px;
+}
+
+.service-text a {
+  text-decoration: none;
+}
+
+.purchase-link p {
+  color: #2ab8c9;
+  /*   color: 48284d;
+  font-size: 12px;*/
+}
+
+.transfer-link p {
+  color: #2A68C9;
+  /*    color: #fff;
+  font-size: 12px;*/
+}
+
+.payment-link p {
+  /* color: #fff;
+  font-size: 12px;*/
+  color: #3b2ac9;
+}
+.register-form {
+  color: #2A68C9;
+}
+
+.register-form .controls .input-xlarge {
+  background-image: none !important;
+}
+
+.single-service-page {
+  margin-top: 40px;
+  border: 1px solid transparent;
+}
+
+.single-service-page p {
+  margin-top: 348px;
+  font-size: 20px;
+}

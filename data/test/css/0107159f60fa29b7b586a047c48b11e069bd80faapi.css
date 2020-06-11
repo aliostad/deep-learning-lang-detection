@@ -1,0 +1,70 @@
+/* line 3, ../api.scss */
+.vertmenu {
+  margin-top: 20px !important;
+  float: left;
+  margin-left: 20px !important;
+}
+
+/* line 10, ../api.scss */
+.apiheader {
+  float: left;
+  width: 100%;
+  height: 70vh;
+  background-image: url("/images/homepage/api.png");
+  margin-top: 0px;
+  padding-top: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -50px;
+}
+
+/* line 25, ../api.scss */
+.headergrad {
+  width: 100%;
+  height: 100%;
+  background: -moz-linear-gradient(top, transparent 0%, black 99%, black 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(99%, black), color-stop(100%, black));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, transparent 0%, black 99%, black 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, transparent 0%, black 99%, black 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, transparent 0%, black 99%, black 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, transparent 0%, black 99%, black 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */
+  opacity: 0.6;
+}
+
+/* line 39, ../api.scss */
+.apicontent {
+  margin-top: 20px;
+  margin-left: 20px;
+  max-width: 800px;
+  min-width: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(39, 41, 43, 0.14902) 0px 0px 0px 1px, rgba(0, 0, 0, 0.04706) 0px 1px 2px 0px;
+  float: left;
+}
+
+/* line 51, ../api.scss */
+pre {
+  max-width: 550px;
+}
+
+/* line 56, ../api.scss */
+.mainview {
+  overflow: visible;
+  display: block;
+  height: auto !important;
+}
+
+/* line 64, ../api.scss */
+.container {
+  overflow: visible;
+  height: auto !important;
+}

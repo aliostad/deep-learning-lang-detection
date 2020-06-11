@@ -1,0 +1,58 @@
+<dialogue>
+	<!-- multiline dialogue:
+	
+	<![CDATA[text here
+	second line here]]>
+	
+	-->
+	<ENUM_0> <!-- UNNAMED astronaut -->
+		<message>Hello there!</message>
+		<message>Oh no!</message>
+		<message><![CDATA[Well, this isn't exactly
+		what I would call a vacation.]]></message>
+		<message>Could you help me out, please?</message>
+		<message>Don't leave me.</message>
+		<message>I hate space.</message>
+		<message>Am I upside down?</message>
+		<message>I hope I can float my way to a bathroom...</message>
+		<message>WHY DID YOU LET ME GO??</message>
+		<message>Oh no, not again!</message>
+		<message>Captain...</message>
+		<message>Yolo</message>
+		<message>Marco?</message>
+		<message>Polo?</message>
+		<message>Am I supposed to feel connected right now?</message>
+		<message>If I don't come back, tell my wife "Hello."</message>
+		<message><![CDATA[If a tree falls in
+		space can you hear it?]]></message>
+		<message><![CDATA[If a tree falls in
+		space...how the hell did it get there?]]></message>
+		<message>Can we talk for a moment?</message>
+		<message><![CDATA[Whatever you do...
+		DON'T LET GO!]]></message>
+		<!--
+		<message></message>
+		<message></message>
+		<message></message>
+		<message></message>
+		<message></message>
+		<message></message>
+		<message></message>
+		-->
+		
+	</ENUM_0>
+	<ENUM_1> <!-- TUTORIAL_ONE astronaut -->
+		<message>Captain --over here! ARROW over here!</message>
+		<message><![CDATA[Cap'n, we can jump in SPACE..
+		We'll have to...
+		jump into the sun.]]></message>
+	</ENUM_1>
+	<ENUM_2> <!-- TUTORIAL_TWO astronaut -->
+		<message>This is the perfect SPACE to use a jet pack</message>
+		<message>You can use your jet pack in SPACE to get to the sun</message>
+		
+	</ENUM_2>
+	<ENUM_3> <!-- TUTORIAL_THREE astronaut -->
+		<message>Captain,the oxygen supply is low!</message>
+	</ENUM_3>
+</dialogue>

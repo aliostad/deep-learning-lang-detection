@@ -1,0 +1,55 @@
+<!DOCTYPE hibernate-configuration PUBLIC 
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+       
+    <mapping class="Model.entity.GoodItem" />
+    <mapping class="Model.entity.Comment" />
+    <mapping class="Model.entity.User" />
+    <mapping class="Model.entity.Bucket" />
+    <mapping class="Model.entity.Order" />
+    <mapping class="Model.entity.OrderRow" />
+    <mapping class="Model.entity.Category" />
+    <mapping class="Model.entity.Property" />
+   	<mapping class="Model.entity.Value" />
+   	<mapping class="Model.entity.Image" />
+   	<mapping class="Model.entity.Video" />
+    <mapping class="Model.entity.GoodState" />
+    <mapping class="Model.entity.Vote" />
+    <mapping class="Model.entity.Role" />
+    <mapping class="Model.entity.AnonimEmailWatcher" />
+    <mapping class="Model.entity.PhoneNumber" />
+    <mapping class="Model.entity.PropSegment" />
+    <mapping class="Model.entity.Country" />
+    <mapping class="Model.entity.Region" />
+    <mapping class="Model.entity.Town" />
+    <mapping class="Model.entity.DeliveryType" />
+    <mapping class="Model.entity.PayType" />
+    <mapping class="Model.entity.Adress" />
+	<mapping class="Model.entity.News" />
+    <mapping class="Model.entity.Action" />
+    <mapping class="Model.entity.TextPart" />
+    <mapping class="Model.others.Town_Delivery" />
+    <mapping class="Model.EntityField" />
+    <mapping class="Model.entity.Page" />
+    <mapping class="Model.entity.NewsType" />
+    <mapping class="Model.entity.Configuration" />
+    <mapping class="Model.entity.Producer" />
+    <mapping class="Model.entity.PageGroup" />
+     <mapping class="Model.entity.Guarantie" />
+     <mapping class="Model.entity.GoodStatus" />
+     <mapping class="Model.entity.Good_Guarantie" />
+     <mapping class="Model.entity.Slider" />
+     <mapping class="Model.entity.SliderImage" />
+     
+     <mapping class="Model.entity.Adress_Delivery" />
+    <mapping class="Model.filters.AdminFormat" />
+    <mapping class="Model.filters.FieldPriority" />
+    <mapping class="Model.filters.PropRangeFilter" />
+    <mapping class="Model.filters.PropValueFilter" />
+    <mapping class="Model.entity.BasicConfiguration" />
+    
+  </session-factory>
+
+</hibernate-configuration>

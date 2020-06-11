@@ -1,0 +1,24 @@
+(ns homepage.appboard.index
+      (:require
+        [homepage.layout :refer [secondary-header section-header] :as layout]
+        [appboard.features :refer [feature-items feature]]))
+
+(def page-header {:header "The AppBoard"
+                  :sub-header "Get a grip on your [apps]"})
+
+(defn pg []
+  (layout/primary
+  :page-title "The AppBoard | Build Manage Promote"
+  :description " The App Portfolio management system that allows you to build, manage and promote your mobile applications"
+  :keywords "Exicon, What Is Mobile Relationship Management, MRM, Analytics, App Store data, Mobile App Management Tools, 
+            Suppliers of Mobile Expertise, Mobile Relationship Management, Mobile Best Practices, 
+            How Can I See My Competitors Mobile Download Numbers, Top Android Appstores, Are There Other Appstores"
+
+  (secondary-header :header (:header page-header)
+                    :sub-header (:sub-header page-header)
+                    :page "appboard"
+                    :id "intro")
+  (div
+    (loop-tpl :bindings [item feature-items]
+              (feature @item)))
+  (div :class "ui hidden divider")))

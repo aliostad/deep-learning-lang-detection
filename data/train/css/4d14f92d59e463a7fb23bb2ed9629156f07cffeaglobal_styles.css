@@ -1,0 +1,117 @@
+﻿body {
+}
+
+.page{
+	height: 100%;
+	width: 100%;
+}
+
+
+.main-container{
+	margin: 0px;
+}
+
+
+
+/*------*/
+.view-enter-setup, .view-leave-setup {
+  -webkit-transition:all ease 0.5s;
+  -moz-transition:all ease 0.5s;
+  -o-transition:all ease 0.5s;
+  transition:all ease 0.5s;
+}
+
+
+
+.view-enter-setup {
+  -webkit-transform: translate3d(-100%, 0, 0);
+  position:absolute;
+}
+
+.view-enter-setup.view-enter-start {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.view-leave-setup {
+  position:absolute;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.view-leave-setup.view-leave-start {
+  -webkit-transform: translate3d(100%, 0, 0);
+}
+
+
+
+.from-left .view-enter-setup {
+  -webkit-transform: translate3d(-100%, 0, 0);
+  position:absolute;
+}
+
+.from-left .view-enter-setup.view-enter-start {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.from-left .view-leave-setup {
+  position:absolute;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.from-left .view-leave-setup.view-leave-start {
+  -webkit-transform: translate3d(100%, 0, 0);
+}
+
+
+
+.from-right .view-enter-setup {
+  -webkit-transform: translate3d(100%, 0, 0);
+  position:absolute;
+}
+
+.from-right .view-enter-setup.view-enter-start {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.from-right .view-leave-setup {
+  position:absolute;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.from-right .view-leave-setup.view-leave-start {
+  -webkit-transform: translate3d(-100%, 0, 0);
+}
+
+
+.from-bottom .view-enter-setup {
+  -webkit-transform: translate3d(0, 100%, 0);
+  position:absolute;
+}
+
+.from-bottom .view-enter-setup.view-enter-start {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.from-bottom .view-leave-setup {
+  position:absolute;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.from-bottom .view-leave-setup.view-leave-start {
+  -webkit-transform: translate3d(0, -100%, 0);
+}
+
+
+
+.from-top .view-enter-setup {
+  -webkit-transform: translate3d(0, -100%, 0);
+  position:absolute;
+}
+
+.from-top .view-enter-setup.view-enter-start {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.from-top .view-leave-setup {
+  position:absolute;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.from-top .view-leave-setup.view-leave-start {
+  -webkit-transform: translate3d(0, 100%, 0);
+}
+

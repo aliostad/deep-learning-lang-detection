@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--
+  This is used to map the C# language primitive types names
+  to C# wrapper type names.
+-->
+<mappings name="CsWrapper">
+    <mapping>
+        <from>int</from>
+        <to>int?</to>
+    </mapping>
+    <mapping>
+        <from>char</from>
+        <to>char?</to>
+    </mapping>
+    <mapping>
+        <from>byte</from>
+        <to>byte?</to>
+    </mapping>
+    <mapping>
+        <from>short</from>
+        <to>short?</to>
+    </mapping>
+    <mapping>
+        <from>long</from>
+        <to>long?</to>
+    </mapping>
+    <mapping>
+        <from>float</from>
+        <to>float?</to>
+    </mapping>
+    <mapping>
+        <from>double</from>
+        <to>double?</to>
+    </mapping>
+    <mapping>
+          <from>bool</from>
+          <to>bool?</to>
+    </mapping>
+    <mapping>
+        <from>System.Guid</from>
+        <to>System.Guid?</to>
+    </mapping>
+</mappings>

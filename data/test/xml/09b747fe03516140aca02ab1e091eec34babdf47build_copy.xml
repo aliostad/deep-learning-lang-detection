@@ -1,0 +1,23 @@
+<project name="copy" basedir="." default="copy">
+
+	<property name="copy.path" value="D:/copy" />
+
+	<target name="copy" description="copy">
+
+		<!-- copy单个文件 -->
+		<copy file="${copy.path}/copy.txt" tofile="${copy.path}/copied.txt" />
+
+		<!-- copy单个文件到指定目录 -->
+		<copy file="${copy.path}/copy.txt" todir="${copy.path}/copy" />
+
+		<!-- copy目录到指定目录 -->
+		<copy todir="${copy.path}/classes">
+			<fileset dir="${copy.path}/src" excludes="**/*.java" />
+			<fileset dir="${copy.path}/resource">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+
+	</target>
+
+</project>

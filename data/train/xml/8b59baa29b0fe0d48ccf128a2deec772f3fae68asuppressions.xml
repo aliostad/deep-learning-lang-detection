@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suppressions PUBLIC
+    "-//Puppy Crawl//DTD Suppressions 1.1//EN"
+    "http://www.puppycrawl.com/dtds/suppressions_1_1.dtd">
+
+<suppressions>
+    <suppress checks="MagicNumberCheck" files="[\\/]*Test.java"/>
+    <suppress checks="MagicNumberCheck" files="[\\/]*Queries.java"/>
+    <suppress checks="MagicNumberCheck" files="[\\/]*FileLoader.java"/>
+    <suppress checks="StrictDuplicateCodeCheck" files="[\\/]domain[\\/]"/>
+    <suppress checks="StrictDuplicateCodeCheck" files="[\\/]spring-config[\\/]"/>
+    <suppress checks="StrictDuplicateCodeCheck" files="[\\/]*.properties"/>
+    <suppress checks="StrictDuplicateCodeCheck" files="[\\/]test[\\/]"/>
+    <suppress checks="StrictDuplicateCodeCheck" files="[\\/]*Test.java"/>
+    <suppress checks="StrictDuplicateCodeCheck" files="[\\/]*DTO.java"/>
+    <suppress checks="StrictDuplicateCodeCheck" files="[\\/]*Form.java"/>
+    <suppress checks="MultipleStringLiteralsCheck" files="[\\/]*Queries.java"/>
+    <suppress checks="MultipleStringLiteralsCheck" files="[\\/]*Test.java"/>
+    <suppress checks="DeclarationOrderCheck" files="[\\/]*Queries.java"/>
+    <suppress checks="ParameterNumberCheck" files="com.codeapes.checklist.util.query.PagingQueryCriteria"/>
+    <suppress checks="ParameterNumberCheck" files="[\\/]*Controller.java"/>
+    <suppress checks="MethodCountCheck" files="[\\/]domain[\\/]"/>
+    <suppress checks="MethodCountCheck" files="[\\/]*DTO.java"/>
+    <suppress checks="ClassDataAbstractionCouplingCheck" files="[\\/]*Service.java"/>
+    <suppress checks="ClassFanOutComplexityCheck" files="com.codeapes.checklist.web.load.TestDataController.java"/>
+</suppressions>

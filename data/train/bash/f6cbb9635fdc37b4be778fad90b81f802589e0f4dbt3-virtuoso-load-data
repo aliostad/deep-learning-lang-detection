@@ -1,0 +1,29 @@
+#!/bin/sh
+#
+# This file is released under the terms of the Artistic License.
+# Please see the file LICENSE, included in this package, for details.
+#
+# Copyright (C) 2015      Mark Wong
+#               2015      2ndQuadrant, Ltd.
+#
+
+load_table()
+{
+	TABLE=$1
+
+	isql PROMPT=OFF ERRORS=STDOUT VERBOSE=OFF << __
+csv_load_file('$DSS_PATH/$TABLE.tbl', 0, NULL, '$TABLE', 2,
+              vector('csv-delimiter', '|'));
+__
+}
+
+load_table supplier &
+load_table part &
+load_table partsupp &
+load_table customer &
+load_table orders &
+load_table lineitem &
+load_table nation &
+load_table region &
+
+wait

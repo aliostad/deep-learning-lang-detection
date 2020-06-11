@@ -1,0 +1,146 @@
+﻿/* Remove bullets in cfdp-blogs on adult pages, left sidebar */
+div#voksne-generelt.panel-flexible ul {
+    list-style-type: none;
+}
+
+div#voksne-generelt.panel-flexible .item-list ul li {
+    list-style: none outside none;
+}
+
+/* Remove blog-it icon and more-link from cfdp-blogs on adult pages, left sidebar */
+.voksne-blog .item-list .icon, .voksne-blog .more-link {
+    display: none;  
+}
+
+.voksne-blog {
+    background: #DDDDDD;
+}
+
+/* Style headers for the individual blog-blocks on adult pages, left sidebar */
+div#voksne-generelt.panel-flexible .voksne-blog h2.pane-title {
+    font-size: 15px;
+}
+
+/* Style table showing chat opening hours, right sidebar */
+#opening-hours-table {
+	margin-left: 8px;
+}
+
+#opening-hours-table td {
+    color: #666666;
+    font-weight: bold;
+}
+
+/* Style header of page På den anden side */
+body.page-node-14447 div.title-image h2.title {
+    color: #FFFBF5;
+    padding-left: 4px;
+}
+
+/* Style header of page "Din mening er vigtig!" and "Din mening om gruppechatten" */
+body.page-din_mening_er_vigtig div.title-image h2.title,
+body.page-din-mening-gruppechat div.title-image h2.title {
+    color: #FF9900;
+    background-color: #000000;
+    opacity: 0.8;
+    padding: 5px;
+}
+
+/* Style header of page "Vi sover lige nu i kunstværkstedet" */
+body.page-node-19086 div#content-header h2.title {
+    color: #34A1CF;
+    background-color: #000000;
+    opacity: 0.8;
+    padding: 5px;
+}
+
+/* CSS for "hidden" forums "Vil du være med til at gøre Cyberhus endnu bedre" og "Ungeblogs v.2" */
+
+/* CSS to hide forums in forum list */
+#forum-list-1970,
+#forum-list-1966 {
+  display: none;
+}
+
+/* Remove possibility to change forum when adding a forum subject */
+/* For logged in users */
+body.logged-in.page-node-add-forum-1970 div#edit-taxonomy-1-wrapper,
+body.logged-in.page-node-add-forum-1966 div#edit-taxonomy-1-wrapper {
+  display: none;
+}
+
+/* For not logged in users */
+body.not-logged-in.page-node-add-forum-1970 div#content-area fieldset.collapsible,
+body.not-logged-in.page-node-add-forum-1966 div#content-area fieldset.collapsible {
+  display: none;
+} 
+
+/* Remove "Opret nyt forumemne" and "Marker alle emner som læst" links on forum pages */
+body.page-forum-1970 #forum .forum-top-links,
+body.page-forum-1966 #forum .forum-top-links {
+  display: none;
+}
+
+
+/* Highlight Blogmaster's blog on /ungeblogs */
+body.section-ungeblogs div.view.view-blogs.view-id-blogs.view-display-id-page_3.view-dom-id-1{
+   border: 1px solid #3399CC;
+}
+
+/* Limit max number of indentations on comments, to maintain readability */
+.indented .indented .indented .indented .indented .indented .indented .indented .indented .indented .indented .indented {
+  margin-left: 0;
+}
+
+/*Vacation closing for FAQ (supplement to form-overrides): Remove "Skriv til Brevkassen"-button*/
+
+
+/*Sundhed og sygdom:*/
+/*.page-faq-74 .write_to_faq_button,*/
+/*Klar, parat, teenageliv*/
+/*.page-faq-75 .write_to_faq_button,*/
+/*Sport og fritid:*/
+/*.page-faq-71 .write_to_faq_button,*/
+/*Tandzonen*/
+/*.page-faq-651 .write_to_faq_button,*/
+/*At miste og sorgen der følger med*/
+/*.page-faq-62 .write_to_faq_button,*/
+/*Studievejlederne*/
+/*.page-faq-1834 .write_to_faq_button,*/
+/*Musik og talentudvikling*/
+/*.page-faq-64 .write_to_faq_button*/
+/*Voldtægt og seksuelle overgreb*/
+/*.page-faq-883 .write_to_faq_button,*/
+/*Spørg om Cyberhus*/
+/*.page-faq-77 .write_to_faq_button,*/
+/*Dig på nettet*/
+/*.page-faq-424 .write_to_faq_button,*/
+/*Dine rettigheder*/
+/*.page-faq-68 .write_to_faq_button*/
+/*Sex, lyst og erotik:*/
+/*Når det gør ondt inderst inde:*/
+.page-faq-67 .write_to_faq_button,
+.page-faq-73 .write_to_faq_button {
+  display: none;
+}
+
+/*New CSS for FAQ front page*/
+body.page-faq.section-faq .faq_tax_image {
+    display: none;
+}
+
+body.page-faq .faq-table-right {
+    padding: 10px;
+    vertical-align: top;
+}
+
+body.page-faq.section-faq h1 {
+	font-weight: lighter;
+}
+
+/* Match Chatrådgivning page title style with FAQ page*/
+body.page-stue-397 div.panels-flexible-region.vaerelse-center h2.pane-title {
+	font-size: 24px;
+    font-weight: lighter;
+    padding-bottom: 10px;
+}

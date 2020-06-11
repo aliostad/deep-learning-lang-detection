@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <service_type>mrss</service_type>
+  <service_media>video</service_media>
+  <service_name>-Video- WMV</service_name>
+  <service_slug>video-wmv</service_slug>
+  <service_url><![CDATA[video:{serviceVAL}]]></service_url>
+  <service_feed><![CDATA[null]]></service_feed>
+  <service_regex><![CDATA[video:(?P<sval1>.*\.(wmv))$]]></service_regex>
+  <service_movie><![CDATA[null]]></service_movie>
+  <service_value2><![CDATA[null]]></service_value2>
+  <service_thumb><![CDATA["styles/8wayrun/media_video.jpg"]]></service_thumb>
+  <service_title><![CDATA[$service['service_value']]]></service_title>
+  <service_description><![CDATA[$titl]]></service_description>
+  <service_duration><![CDATA[null]]></service_duration>
+  <service_keywords><![CDATA[null]]></service_keywords>
+  <service_errors><![CDATA[file_exists(XenForo_Helper_File::getExternalDataPath().'/local/'.$service['service_value']) ? null : new XenForo_Phrase('file_does_not_exist').': '.$service['service_value'];]]></service_errors>
+  <service_parameters><![CDATA[<script type="text/javascript">
+$.getScript("{scriptjw}/silverlight.js")
+$.getScript("{scriptjw}/wmvplayer.js", function () {
+	var elm = document.getElementById("embed_player");
+	var src = "{scriptjw}/wmvplayer.xaml";
+	var cfg = {
+		file: "{external}/{serviceVAL}",
+		autostart: '{apTF}',
+		width: "{w}",
+		height: "{h}",
+	};
+	var ply = new jeroenwijering.Player(elm,src,cfg);
+});
+</script>]]></service_parameters>
+  <service_width>640</service_width>
+  <service_height>380</service_height>
+</service>

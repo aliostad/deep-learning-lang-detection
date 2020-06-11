@@ -1,0 +1,76 @@
+/* CSS declarations go here */
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; /* Disable selection/Copy of UIWebView */
+}
+
+body {
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+html, body, #map {
+    height: 100%;
+}
+
+.leaflet-marker-icon {
+    transition-property: transform;
+    transition-duration: 0.3s;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 0.3s;
+}
+
+.controlpanel-container {
+    display: block;
+    position: fixed;
+    width: 75%;
+    height: 40px;
+    bottom: 50px;
+    left: 50%;
+    margin: 0 0 0 -37.5%;
+    text-align: center;
+}
+
+.controlpanel-progress-bg {
+    width: 100%;
+    height: 20px;
+    background-color: darkslategrey;
+}
+
+.controlpanel-progress {
+    background-color: #00d6b2;
+    width: 0%;
+    height: 100%;
+}
+
+.controlpanel-message {
+    font-family: 'hunger_gamesregular', sans;
+    font-size: 24pt;
+    color: white;
+}
+
+.controlpanel-progress-load {
+    animation-name: progress-load;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: webkit-progress-load;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-fill-mode: forwards
+}
+
+@keyframes progress-load /* Safari and Chrome */
+{
+    from {width: 0%;}
+    to {width: 100%;}
+}
+
+@-webkit-keyframes webkit-progress-load /* Safari and Chrome */
+{
+    from {width: 0%;}
+    to {width: 100%;}
+}

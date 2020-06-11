@@ -1,0 +1,177 @@
+/* line 4, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.search-result-link .upmin-model {
+  margin-bottom: 10px;
+}
+
+/* line 9, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model {
+  padding: 20px;
+  margin: 10px 0px 250px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+/* line 20, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.yellow {
+  border-left-color: #f1c40f;
+}
+/* line 22, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.yellow > h3, .upmin-model.yellow > h4 {
+  color: #f1c40f;
+}
+/* line 24, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.yellow > h3 > a, .upmin-model.yellow > h4 > a {
+  color: #f1c40f;
+}
+/* line 20, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.orange {
+  border-left-color: #f39c12;
+}
+/* line 22, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.orange > h3, .upmin-model.orange > h4 {
+  color: #f39c12;
+}
+/* line 24, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.orange > h3 > a, .upmin-model.orange > h4 > a {
+  color: #f39c12;
+}
+/* line 20, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.red {
+  border-left-color: #e74c3c;
+}
+/* line 22, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.red > h3, .upmin-model.red > h4 {
+  color: #e74c3c;
+}
+/* line 24, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.red > h3 > a, .upmin-model.red > h4 > a {
+  color: #e74c3c;
+}
+/* line 20, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.dark_red {
+  border-left-color: #ab3326;
+}
+/* line 22, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.dark_red > h3, .upmin-model.dark_red > h4 {
+  color: #ab3326;
+}
+/* line 24, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.dark_red > h3 > a, .upmin-model.dark_red > h4 > a {
+  color: #ab3326;
+}
+/* line 20, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.purple {
+  border-left-color: #9b59b6;
+}
+/* line 22, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.purple > h3, .upmin-model.purple > h4 {
+  color: #9b59b6;
+}
+/* line 24, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.purple > h3 > a, .upmin-model.purple > h4 > a {
+  color: #9b59b6;
+}
+/* line 20, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.dark_blue {
+  border-left-color: #2c3e50;
+}
+/* line 22, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.dark_blue > h3, .upmin-model.dark_blue > h4 {
+  color: #2c3e50;
+}
+/* line 24, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.dark_blue > h3 > a, .upmin-model.dark_blue > h4 > a {
+  color: #2c3e50;
+}
+/* line 20, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.light_blue {
+  border-left-color: #3498db;
+}
+/* line 22, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.light_blue > h3, .upmin-model.light_blue > h4 {
+  color: #3498db;
+}
+/* line 24, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.light_blue > h3 > a, .upmin-model.light_blue > h4 > a {
+  color: #3498db;
+}
+/* line 20, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.blue_green {
+  border-left-color: #18bc9c;
+}
+/* line 22, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.blue_green > h3, .upmin-model.blue_green > h4 {
+  color: #18bc9c;
+}
+/* line 24, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.blue_green > h3 > a, .upmin-model.blue_green > h4 > a {
+  color: #18bc9c;
+}
+/* line 20, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.green {
+  border-left-color: #01c94f;
+}
+/* line 22, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.green > h3, .upmin-model.green > h4 {
+  color: #01c94f;
+}
+/* line 24, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model.green > h3 > a, .upmin-model.green > h4 > a {
+  color: #01c94f;
+}
+/* line 31, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model h3 {
+  margin-top: 6px;
+  font-size: 1.3em;
+}
+/* line 35, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model h4 {
+  margin-top: 4px;
+  font-size: 1.1em;
+}
+/* line 39, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model h5 {
+  margin-top: 24px;
+  margin-bottom: 6px;
+}
+/* line 43, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model h6 {
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+/* line 48, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model dd {
+  word-wrap: break-word;
+}
+/* line 53, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model .collection-search {
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+/* line 59, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model .collection-search .input-group-btn button.btn-default {
+  padding: 9px;
+}
+/* line 65, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model input {
+  height: 40px;
+  font-size: 1.1em;
+}
+/* line 70, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model .well {
+  padding: 9px;
+  margin-bottom: 0;
+  min-height: 40px;
+}
+/* line 75, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model .well.action-well {
+  margin-bottom: 32px;
+}
+/* line 80, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model a.active-tag-link {
+  text-decoration: none;
+}
+/* line 82, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/upmin-admin-0.1.01/app/assets/stylesheets/upmin/instances.css.scss */
+.upmin-model a.active-tag-link .label {
+  padding: 4px 6px 5px 6px;
+}

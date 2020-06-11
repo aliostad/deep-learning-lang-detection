@@ -1,0 +1,23 @@
+select P.R12_MODEL_NUMBER,P.R12_PRICING_CATEGORY,P.* from fdpdb_prod_mast_dn P
+
+select P.R12_MODEL_NUMBER,P.R12_PRICING_CATEGORY,P.PRODUCT_CODE,P.* from fdpdb_prod_mast_dn P 
+where P.MODEL_NUMBER='TWE090E300A'
+
+--YSC048EWRHA1UD5
+select P.R12_MODEL_NUMBER,P.R12_PRICING_CATEGORY,P.PRODUCT_CODE,P.* from fdpdb_prod_mast_dn P 
+where P.MODEL_NUMBER='YSC048EWRHA1UD5'
+
+select P.R12_MODEL_NUMBER,P.R12_PRICING_CATEGORY,P.PRODUCT_CODE,P.* from fdpdb_prod_mast_dn P 
+where P.MODEL_NUMBER='YSD150FWRZA1UD9'
+
+select P.R12_MODEL_NUMBER,P.R12_PRICING_CATEGORY,P.PRODUCT_CODE,P.* from fdpdb_prod_mast_dn P 
+where P.MODEL_NUMBER='YSD150F3RHA0000'
+
+select P.R12_MODEL_NUMBER,P.R12_PRICING_CATEGORY,P.PRODUCT_CODE,P.* from fdpdb_prod_mast_dn P 
+where P.R12_MODEL_NUMBER like 'YSD150FWRZA1%'
+
+select * from fdpdb_prod_mast_dn where R12_MODEL_NUMBER like 'YSD150FWRZA1%'
+
+select * from fdpdb_prod_mast_dn where MODEL_NUMBER like 'YSD150F3RHA%'
+
+

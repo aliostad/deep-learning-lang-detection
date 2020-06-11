@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <workbook>
+        <worksheet name="Site Information">
+           
+            <loop startRow="1" endRow="1" items="fbparser.sites" var="site" varType="org.strasa.web.createfieldbook.view.pojos.ExtSiteInformationModel">
+                <section startRow="1" endRow="1">
+                    <mapping row="1" col="0">site.sitename</mapping>
+                    <mapping row="1" col="1">site.str_locationid</mapping>
+                    <mapping row="1" col="2">site.sitelocation</mapping>
+                    <mapping row="1" col="3">site.year</mapping>
+                    <mapping row="1" col="4">site.season</mapping>
+                    <mapping row="1" col="5">site.ecoSystem</mapping>
+                    <mapping row="1" col="6">site.soiltype</mapping>
+                    <mapping row="1" col="7">site.soilph</mapping>
+                    <mapping row="1" col="8">site.selectedSitePlantingType.planting</mapping>  
+                    <mapping row="1" col="9">site.str_sowingdate</mapping>
+                    <mapping row="1" col="10">site.str_harvestdate</mapping>
+                    <mapping row="1" col="11">site.selectedAgroInfo.fertilization</mapping>
+                    <mapping row="1" col="12">site.selectedAgroInfo.density</mapping>
+                    <mapping row="1" col="13">site.selectedDesignInfo.plotsize</mapping>
+                    <mapping row="1" col="14">site.selectedDesignInfo.designstructure</mapping>
+                    <mapping row="1" col="15">site.selectedDesignInfo.treatmentstructure</mapping>
+                    <mapping row="1" col="16">site.selectedDesignInfo.designfactor1</mapping>
+                    <mapping row="1" col="17">site.selectedDesignInfo.designfactor2</mapping> 
+                    <mapping row="1" col="18">site.selectedDesignInfo.designfactor3</mapping> 
+                    <mapping row="1" col="19">site.selectedDesignInfo.designfactor4</mapping>               
+                </section>  
+                <loopbreakcondition>
+                    <rowcheck offset="0">
+                        <cellcheck offset="0"></cellcheck>
+                    </rowcheck>
+                </loopbreakcondition>
+            </loop>
+        </worksheet>
+    </workbook>

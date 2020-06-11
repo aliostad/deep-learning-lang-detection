@@ -1,0 +1,112 @@
+(ns homepage.developers.index
+      (:require
+        [homepage.layout :refer [secondary-header contact-us-btn] :as layout]
+        [homepage.image :as image]))
+
+(def developers-list
+  [{:title "Connect"
+    :image "/images/developers/connect.png"
+    :details "...with new, serious business prospects"}
+   {:title "Be Discovered"
+    :image "/images/developers/be-discovered.png"
+    :details "...by brands and OEMs looking for your specific skill set"}
+   {:title "Additional benefits"
+    :image "/images/developers/additional-benefits.png"
+    :details "...using the AppBoard to manage client apps that you've already built"}])
+
+(defn developers-options [opts]
+  (div :class "center aligned column"
+       (h2 :class "developers-title" (text (:title opts)))
+       (image/elem :class-opts "developers-icon" :src (cell= (:image opts)))
+       (p :class "developers-details" (text (:details opts)))))
+
+(defn developers-options-section []
+  (section
+    :id "developers-list"
+    (div :class "ui three column doubling container grid"
+         (loop-tpl :bindings [opt developers-list]
+                   (developers-options opt)))))
+
+
+(defn pg []
+  (layout/primary
+  :id "developers"
+  :page-title "Developers"
+  :description "Exicon's Developer Network"
+  :keywords "App Developers, Developer Network, Great App Developers, App Development Companies, App Development Company, Mobile App Development Company, The Right Developer, Developer Matching,"
+  :page-css "index.inc.css"
+
+  (secondary-header :header "Developers")
+  (section
+    :class "ui one column container grid"
+    (div :id "page-subtitle" :class "center aligned row"
+         (div :class "column"
+              (h2 "Exicon connects its clients with the best developers around the world")
+              (h3 "If you're the best, show us why"))))
+
+  (developers-options-section)
+
+  (section
+    :class "ui one column container grid"
+    (div :id "page-subtitle" :class "center aligned row"
+         (div :class "column"
+              (h3 "Over 1,500 development houses matched with exciting projects")
+              (contact-us-btn
+                :css-class "teal"
+                :txt "Contact us for more information"))))
+
+  (div :class "ui hidden divider")
+
+  (section
+    :class "ui two column doubling container grid"
+    (div :class "column"
+         (p :class "developers-testimonials-title"
+            "Exicon helped us connect with people looking
+            for small app development.
+            They have very defined and seamless process on vendor on-boarding and proposal
+            engagements processes. We found Exicon a trustworthy, professional and helpful
+            organization.")
+         (p :class "testimonials-name" "Ambuj Tayal")
+         (p "AlgoWorks"))
+
+    (div :class "column"
+         (p :class "developers-testimonials-title"
+            "Exicon connected us with Fox, a client that
+            was ready to create something
+            unique for the Brew platform. The app was built as an amalgamation of what FOX
+            local station devotees are seeking: familiarity and trust. Whether at home or on
+            the road, viewers are able to stay tuned in to the news most valuable to them from
+            sources they have come to know.")
+         (p :class "testimonials-name" "Nimish Shrivastava")
+         (p "CEO of eMbience")))
+
+  (div :class "ui hidden divider")
+
+  (section
+    :class "ui one column container grid"
+    (div :id "page-subtitle" :class "center aligned row exicon-connect"
+         (div :class "column"
+              (image/elem :src "/images/developers/puz.png")
+              (h2 "Exicon connects its clients with the best developers around the world"))))
+
+  (section
+    (div :class "ui two column doubling container grid"
+         (div :class "column"
+              (p :class "developers-connects-title" "Developer Network Directory")
+              (p "Exicon and its clients realize that in a world of fast-changing technologies,
+                 true creativity is in the hands of the developer.")
+              (p "That's why we're building an ecosystem of developers around the infrastructure,
+                 services, and products you use. Join us to work more closely together with major
+                 brands, OEMs, and service operators (all at their cost, not yours)."))
+         (div :class "column"
+              (p :class "developers-connects-title" "Developer Matching Services")
+              (p "If our client has no developer, we match them with a developer in our worldwide network.")
+              (p "3 developers are asked to bid for each project and the client chooses the best
+                 offer, based on your skill set, experience, language, location, and price. No matter
+                 what your specialty may be, we'll soon find clients looking for a developer like you.")))
+
+    (div :class "ui one column doubling container grid"
+         (div :class "column center aligned apply-button"
+              (contact-us-btn
+                :css-class "teal"
+                :txt "Contact us to join our Network"))))))

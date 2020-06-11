@@ -1,0 +1,132 @@
+#!/bin/bash
+#
+# carton_repo_list.sh tests
+#
+# Copyright (c) 2013 Red Hat, Inc. All rights reserved.
+#
+# This copyrighted material is made available to anyone wishing
+# to use, modify, copy, or redistribute it subject to the terms
+# and conditions of the GNU General Public License version 2.
+#
+# This program is distributed in the hope that it will be
+# useful, but WITHOUT ANY WARRANTY; without even the implied
+# warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+# PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public
+# License along with this program; if not, write to the Free
+# Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+# Boston, MA 02110-1301, USA.
+
+eval "`ep_env && carton-env || echo exit 1`"
+. ep.sh
+. thud_arr.sh
+ep_suite_init "$@"
+
+declare CARTON_DATA_DIR=`mktemp --tmpdir -d carton-test.XXXXXXXX`
+ep_teardown_push rm -Rf "$CARTON_DATA_DIR"
+eval "`carton-env || echo false`"
+
+# Workaround vim subshell syntax highlighting issue
+{
+
+ep_test_begin source; (
+    ep_test_init
+    . carton_repo_list.sh
+); ep_test_end
+
+. carton_repo_list.sh
+
+ep_suite_begin add; (
+    ep_suite_init
+
+    ep_suite_begin exec; (
+        ep_suite_init
+        mkdir "$CARTON_REPO_LIST_DIR"
+        ep_teardown_push rm -Rf "$CARTON_REPO_LIST_DIR"
+        ep_test do carton_repo_list_add_repo test >/dev/null
+    ); ep_suite_end
+
+    ep_suite_begin verify; (
+        ep_suite_init
+        mkdir "$CARTON_REPO_LIST_DIR"
+        ep_teardown_push rm -Rf "$CARTON_REPO_LIST_DIR"
+        declare repo_str
+        repo_str=`carton_repo_list_add_repo test`
+        declare -A repo=()
+        thud_arr_parse repo <<<"$repo_str"
+        ep_test dir_path_correct \
+                test "$CARTON_REPO_LIST_DIR/test" == "${repo[dir]}"
+        ep_test dir_exists test -d "${repo[dir]}"
+    ); ep_suite_end
+); ep_suite_end
+
+ep_suite_begin has; (
+    ep_suite_init
+    mkdir "$CARTON_REPO_LIST_DIR"
+    ep_teardown_push rm -Rf "$CARTON_REPO_LIST_DIR"
+    ep_test false -e 1 carton_repo_list_has_repo test
+    carton_repo_list_add_repo test >/dev/null
+    ep_test true -e 0 carton_repo_list_has_repo test
+); ep_suite_end
+
+ep_suite_begin del; (
+    ep_suite_init
+
+    ep_suite_begin exec; (
+        ep_suite_init
+        mkdir "$CARTON_REPO_LIST_DIR"
+        ep_teardown_push rm -Rf "$CARTON_REPO_LIST_DIR"
+        carton_repo_list_add_repo test >/dev/null
+        ep_test do carton_repo_list_del_repo test
+    ); ep_suite_end
+
+    ep_suite_begin verify; (
+        ep_suite_init
+        mkdir "$CARTON_REPO_LIST_DIR"
+        ep_teardown_push rm -Rf "$CARTON_REPO_LIST_DIR"
+        carton_repo_list_add_repo test >/dev/null
+        carton_repo_list_del_repo test
+        ep_test not_exists -e 1 carton_repo_list_has_repo test
+    ); ep_suite_end
+); ep_suite_end
+
+mkdir "$CARTON_REPO_LIST_DIR"
+ep_teardown_push rm -Rf "$CARTON_REPO_LIST_DIR"
+
+ep_suite_begin get; (
+    ep_suite_init
+
+    carton_repo_list_add_repo test >/dev/null
+    ep_teardown_push carton_repo_list_del_repo test
+
+    ep_suite_begin exec; (
+        ep_suite_init
+        ep_test do carton_repo_list_get_repo test >/dev/null
+    ); ep_suite_end
+
+    ep_suite_begin verify; (
+        ep_suite_init
+        declare repo_str
+        repo_str=`carton_repo_list_get_repo test`
+        declare -A repo=()
+        thud_arr_parse repo <<<"$repo_str"
+        ep_test dir_path_correct \
+                test "$CARTON_REPO_LIST_DIR/test" == "${repo[dir]}"
+        ep_test dir_exists test -d "${repo[dir]}"
+    ); ep_suite_end
+); ep_suite_end
+
+ep_suite_begin list; (
+    ep_suite_init
+    ep_test exec carton_repo_list_list_repos
+    ep_test empty test "`carton_repo_list_list_repos`" == ""
+    carton_repo_list_add_repo test1 >/dev/null
+    ep_teardown_push carton_repo_list_del_repo test1
+    ep_test one test "`carton_repo_list_list_repos`" == "test1"
+    carton_repo_list_add_repo test2 >/dev/null
+    ep_teardown_push carton_repo_list_del_repo test2
+    ep_test two test "`carton_repo_list_list_repos`" == $'test1\ntest2'
+); ep_suite_end
+
+} # Workaround vim subshell syntax highlighting issue

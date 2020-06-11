@@ -1,0 +1,14 @@
+#bike, #butterfly, #birds, #fungi, #model, #trail { background:transparent url(sprite.png) no-repeat top left; position: absolute;} 
+
+#trail { background-position: 0px -359px; height: 153px; width: 204px; }
+
+#model { background-position: 0px -647px; height: 135px; width: 180px; }
+
+#fungi { background-position: 0px -151px; height: 96px; width: 240px; }
+
+#birds { background-position: 0px 0px; height: 151px; width: 300px; }
+
+#butterfly { background-position: 0px -247px; height: 112px; width: 240px; }
+
+#bike { background-position: 0px -512px; height: 135px; width: 180px; }
+

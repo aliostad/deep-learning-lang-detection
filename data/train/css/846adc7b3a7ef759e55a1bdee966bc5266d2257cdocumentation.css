@@ -1,0 +1,450 @@
+/** General */
+h1.title {
+  display: none;
+}
+
+#copyright {
+  display: none;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 1em;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+}
+
+div.syntaxhighlighter {
+  position: relative !important;
+  top: -0.5em !important;
+}
+
+.syntaxhighlighter {
+  margin: 0 !important;
+  padding: 3px 0px !important;
+  background-color: #ccc !important;
+  width: auto !important;
+  margin-right: 5px !important;
+}
+
+.syntaxhighlighter .line.alt2 {
+  background-color: #e0e0e0 !important;
+}
+.syntaxhighlighter .line.alt1 {
+  background-color: #e8e8e8 !important;
+}
+
+#new-window {
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  font-size: 11px;
+  text-decoration: none;
+  padding-right: 18px;
+  background-image: url(../img/icon-in-new-window.gif);
+  background-position: right 1px;
+  background-repeat: no-repeat;
+} 
+
+#new-window:hover {
+  text-decoration: underline;
+}
+
+/** Code examples */
+a.run {
+  position: relative;
+  top: -0.3em;
+  display: block;
+  float: right;
+  margin-right: 5px;
+  padding-left: 16px;
+  background-image: url(../img/resultset_next.png);
+  background-repeat: no-repeat;
+  background-position: 0 1px;
+}
+
+.folded > a.run {
+  display: none;
+}
+
+
+/** API */
+ul.api {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.api > li {
+  margin: 0;
+  padding: 0;
+}
+
+ul.api dl {
+  clear: both;
+  overflow: hidden;
+  margin: 0;
+  padding: 0 0 0 18px;
+  position: relative;
+  background-color: red;
+}
+
+ul.api dd, 
+ul.api dt {
+  clear: both;
+  margin: 0;
+}
+
+ul.api dt {
+  font-weight: bold;
+  padding-top: 1em;
+}
+
+ul.api dt.name, 
+ul.api dt.desc, 
+ul.api dt.signature.brief,
+ul.api dt.signature.single {
+    display: none !important;
+}
+
+ul.api dt.name + dd,
+ul.api dt.sig,
+ul.api dt.sig + dd {
+  float: left;
+  clear: none;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ul.api dt.name,
+ul.api dt.sig {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+ul.api dt.name + dd {
+  width: 15em;
+  cursor: pointer;
+}
+
+ul.api dt.signature.brief.extra + dd,
+ul.api dt.extra {
+  float: left;
+  margin-left: 15em;
+}
+
+ul.api dt.desc + dd {
+  padding-top: 0.1em;
+}
+
+ul.api dt.signature.extra + dd,
+ul.api dt.extra {
+  clear: both;
+  *clear: none;
+}
+
+ul.api dt.signature.brief,
+ul.api dt.type,
+ul.api dt.sig.extra {
+  margin-right: 0.2em;
+}
+
+ul.api dt.type + dd > small {
+  font-size: 10px;
+  padding-left: 8px;
+}
+
+ul.api dt.extra + dd {
+  float: left;
+}
+
+ul.api dt.desc + dd,
+ul.api dt.signature.full + dd {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  float: left;
+  *width: 100%;
+}
+
+ul.api dt.signature.full + dd > p:first-child,
+ul.api dt.desc + dd > p:first-child {
+  margin-top: 0;
+}
+
+ul.api dt.signature.full + dd > p:last-child,
+ul.api dt.desc + dd > p:last-child {
+  margin-bottom: 0;
+}
+
+ul.api dt.sig:after {
+  content: ":";
+}
+
+ul.api dt.code + dd {
+  margin-top: 0.5em;
+}
+
+ul.api dd li {
+  margin-bottom: 0.5em;
+}
+
+body.dark ul.api dt.sig {
+  color: #aaa;
+}
+
+ul.api .folded,
+ul.api .unfolded {
+  clear: both;
+} 
+
+ul.api .folded > * {
+  display: none;
+}
+
+ul.api .folded > dt:first-child + dd,
+ul.api .unfolded > dt:first-child + dd,
+ul.api .folded > dt:first-child + dd + dt,
+ul.api .unfolded > dt:first-child + dd + dt,
+ul.api .folded > dt:first-child + dd + dt + dd,
+ul.api .unfolded > dt:first-child + dd + dt + dd {
+  display: block;
+  padding: 4px 0;
+}
+
+ul.api dl.folded > dt.name + dd,
+ul.api dl.unfolded > dt.name + dd {
+  padding-left: 18px;
+}
+ul.api dt.name + dd,
+ul.api dt.name + dd,
+ul.api dt.name + dd + dt,
+ul.api dt.name + dd + dt + dd {
+  position: relative;
+  left: -18px;
+}
+
+ul.api li:target > dl {
+  background-image: -moz-linear-gradient(top, #33b3ff, #0780cb 2px, #164d6e 3px, #222 40px);
+  background-image: -webkit-gradient(linear, left top, left bottom,  from(#33b3ff), to(#222), color-stop(2%, #0780cb), color-stop(3%, #164d6e), color-stop(40%, #222));
+  -webkit-background-size: 100% 40px;
+  background-repeat: no-repeat;
+}
+
+body.dark ul.api dl {
+  background-color: #222;
+  border-bottom: 1px solid #333;
+}
+body.dark ul.api li:first-child dl {
+  border-top: 1px solid #333;
+}
+body.dark ul.api dl.unfolded > dt.name + dd {
+  background-image: url(../img/arrow-small-dark-down.png);
+  background-repeat: no-repeat;
+  background-position: 4px 8px;
+}
+body.dark ul.api dl.folded > dt.name + dd {
+  background-image: url(../img/arrow-small-dark-right.png);
+  background-repeat: no-repeat;
+  background-position: 4px 8px;
+}
+
+ul.api div.syntaxhighlighter {
+  position: static !important;
+  margin: 0 0 1em 0 !important;
+}
+
+
+/** Print version */
+body.standalone {
+  background-color: white;
+  width: 760px;
+  padding: 10px;
+  margin: 0 auto;
+  font-size: 15px;
+}
+
+body.standalone,
+body.standalone h1,
+body.standalone h2,
+body.standalone em.brand {
+  color: black;
+}
+
+body.standalone h1.title {
+  display: block;
+  line-height: 80px;
+  font-size: 36px;
+}
+
+h1.title > em.brand {
+  background-repeat: no-repeat !important;
+  background-position: center left !important;
+  font-size: 0;
+  color: white;
+  padding: 45px 0 15px 240px;
+}
+
+body.standalone h1,
+body.standalone h2 {
+  text-shadow: none;
+  text-decoration: none !important;
+  cursor: auto;
+  padding-left: 0 !important;
+  border: none;
+}
+
+body.standalone h1 {
+  font-size: 26px;
+  margin-top: 30px;
+}
+body.standalone h2 {
+  font-size: 18px;
+  font-weight: normal;
+}
+body.standalone h3 {
+  font-size: 15px;
+  font-weight: bold;
+}
+body.standalone h4 {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+body.standalone h1 {
+  background: none !important;
+}
+
+body.standalone #toc,
+body.standalone.folded > *,
+body.standalone .folded > * {
+  display: block;
+}
+
+body.standalone.folded > script {
+  display: none;
+}
+
+body.standalone a {
+  color: #1678C4;
+}
+
+body.standalone #new-window {
+  display: none;
+}
+
+body.standalone .syntaxhighlighter {
+  background-color: transparent !important;
+}
+
+body.standalone .syntaxhighlighter .line.alt2 {
+  background-color: #fcfcfc !important;
+}
+body.standalone .syntaxhighlighter .line.alt1 {
+  background-color: #f9f9f9 !important;
+}
+
+body.standalone #copyright {
+  margin-top: 50px;
+  padding: 20px 0;
+  border-top: 1px solid #f0f0f0;
+  display: block;
+  background-image: url(../img/carrot-search-white.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+
+/** API */
+
+body.standalone ul.api dl {
+  background-color: transparent;
+}
+
+body.standalone ul.api dl {
+  border-bottom: 1px solid #f0f0f0;
+}
+body.standalone ul.api li:first-child dl {
+  border-top: 1px solid #f0f0f0;
+}
+body.standalone ul.api li:last-child dl {
+  margin-bottom: 20px;
+  border-bottom: none;
+}
+    
+body.standalone tt {
+  background-color: #f4f4f4;
+  color: black;
+  font-family: monospace !important;
+}
+
+body.standalone tt > a {
+	color: #1571b9;
+}
+
+body.standalone dt.name + dd {
+  background: none !important;
+}
+
+body.standalone dt.name + dd {
+  padding-left: 0px !important;
+}
+body.standalone dl {
+  padding-left: 10px !important;
+}
+
+body.standalone dd,
+body.standalone dt {
+  position: static !important;
+}
+
+body.standalone dl {
+  background: -moz-linear-gradient(top, #f8f8f8, #fcfcfc 20px, white 60px);
+  background: -webkit-gradient(linear, left top, left bottom,  from(#f8f8f8), to(#fff), color-stop(50%, #fcfcfc), color-stop(100%, #fff));
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 60px;
+  padding-bottom: 30px;
+}
+
+body.standalone li:target > dl {
+  background: -moz-linear-gradient(top, #fff5c4, #fffbe7 20px, white 60px);
+  background: -webkit-gradient(linear, left top, left bottom,  from(#fff5c4), to(#fff), color-stop(50%, #fffbe7), color-stop(100%, #fff));
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 60px;
+  border-top: 1px solid #ffeea0;
+}
+
+body.standalone dt.name + dd {
+  width: 20em;
+}
+
+body.standalone dt.signature.brief.extra + dd,
+body.standalone dt.extra {
+  margin-left: 20em;
+}
+
+tt > a {
+  text-decoration: none;
+}
+
+body.standalone .toc1 {
+  margin-bottom: 0.7em;
+}
+body.standalone #toc {
+  color: #888;
+}
+body.standalone #toc a {
+  text-decoration: none;
+}
+body.standalone #toc a:hover {
+  text-decoration: underline;
+}
+body.standalone .toc1 > a:first-child {
+  font-weight: bold;
+}

@@ -1,0 +1,75 @@
+﻿
+.countLabel {
+  color: #878A92;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.storageBox {
+  display: none;
+}
+
+.copiedOption {
+  background-color: #E9F3FD;
+}
+
+.listbox-menu {
+  margin-left: 0;
+  list-style: none;
+}
+
+.listbox-menu.inline > li {
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+.listbox-menu .btn {
+  margin: 0 0 5px
+}
+
+.listbox-menu:before,
+.listbox-menu:after {
+  display: table;
+  content: "";
+}
+
+.listbox-menu:after {
+  clear: both;
+}
+
+/*
+.listbox-left {}
+.listbox-control {}
+.listbox-right {}
+*/
+
+.listbox-control .btn {
+  margin: 5px 0
+}
+
+.listbox-control .divider {
+ *width: 100%;
+  height: 1px;
+  margin: 9px 1px;
+ *margin: -5px 0 5px;
+  overflow: hidden;
+  background-color: #C8CCCE;
+  border-bottom: 1px solid #ffffff;
+}
+/*
+.input-append.append-percent {
+  position: relative;
+  padding-left: 10px;
+}
+
+.input-append.append-percent input {
+  padding-right: 0;
+  margin-left: -10px;
+}
+
+.input-append.append-percent .btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}

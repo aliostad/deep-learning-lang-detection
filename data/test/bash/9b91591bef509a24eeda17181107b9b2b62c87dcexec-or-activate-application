@@ -1,0 +1,42 @@
+#!/bin/sh
+
+#START_PROCESS="google-chrome-unstable"
+#CHECK_PROCESS="chrome"
+
+START_PROCESS=$1
+CHECK_PROCESS=$2
+
+if [ -z "$START_PROCESS" ]; then
+	echo "Checks, if a specific application is running. If so, the window will focused. If not, the application will be launched."
+	echo "Syntax: exec-or-activate-application <start> [<scan>]"
+	echo "start: The application, that you wish to start"
+	echo "scan: Scan for this application to determine, if the app is still running. Default: <start>"
+	exit 1
+fi
+
+if [ -z "$CHECK_PROCESS" ]; then
+	CHECK_PROCESS="$START_PROCESS"
+fi
+
+CHECK_PROCESS=$(basename "$CHECK_PROCESS")
+
+echo "$START_PROCESS"
+echo "$CHECK_PROCESS"
+
+output=$(wmctrl -lp)
+IFS=$'\n'
+for line in $output ; do
+	window=${line:0:10}
+	pid=${line:14:6}
+	pid="$pid" | tr -d ' '
+	cmd="ps -p $pid -o comm="
+	process=$(eval "$cmd")
+	if [ "$process" == "$CHECK_PROCESS" ]; then
+		wmctrl -ia $window
+		exit 0
+	fi
+done
+
+echo "starting $START_PROCESS"
+$START_PROCESS &
+exit 0

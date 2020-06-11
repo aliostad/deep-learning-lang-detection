@@ -1,0 +1,55 @@
+body .cleanslate.api-41q-widget-wrapper {
+  background-color:white !important;
+  font-family: Arial !important;
+  font-size:13px !important;
+}
+body .cleanslate a {
+  color: rgb(255, 66, 0) !important;
+}
+body .cleanslate p {
+  padding:8px 0 !important;
+}
+body .cleanslate .api-41q-question-wrapper {
+}
+body .cleanslate .api-41q-controls {
+  font-size:11px !important;
+}
+body .cleanslate .api-41q-answer {
+  display:block !important;
+  cursor:pointer !important;
+  padding:4px 0 !important;
+}
+body .cleanslate .api-41q-question {
+  font-size:15px !important;
+}
+body .cleanslate .api-41q-labeled {
+  font-size:11px !important;
+  color:#666666 !important;
+  text-align: right !important;
+}
+body .cleanslate .api-41q-question-wrapper,
+body .cleanslate .api-41q-labeled,
+body .cleanslate .api-41q-controls,
+body .cleanslate .api-41q-result-wrapper,
+body .cleanslate .api-41q-info-wrapper,
+body .cleanslate .api-41q-loading-wrapper {
+  padding:15px !important;
+}
+body .cleanslate .api-41q-question-wrapper-hidden {
+  display:none !important;
+}
+body .cleanslate .api-41q-result-title {
+  font-weight: bold !important;
+}
+body .cleanslate .api-41q-controls a {
+  display:inline-block !important;
+  margin-right: 15px !important;
+}
+body .cleanslate ul li {
+  list-style-position: inside !important;
+}
+body .cleanslate h2 {
+  text-align: center !important;
+  font-weight: bold !important;
+  font-size: larger !important;
+}

@@ -1,0 +1,44 @@
+.api {
+margin-top: 7px;
+background: #CCEEFF;
+padding: 3px 0px 3px 10px;
+color: #07415E;
+border-top-right-radius: 10px;
+}
+.api .title {
+color: #005C8A;
+margin-top: 5px;
+}
+.api ul ul li {
+list-style: none;
+}
+.api ul ul  {
+margin-top: 5px;
+margin-bottom: 15px;
+}
+.api ul ul li {
+margin-bottom: 0;
+}
+.api code b {
+font-size: 14px;
+}
+.api code {
+background: #AFE1FA;
+}
+.api .help {
+float: right;
+margin-right: 3px;
+padding: 2px 4px;
+background: #56BBED;
+color: #fff;
+border-radius: 10px;
+}
+
+.api li {
+margin-bottom: 7px;
+list-style: square;
+}
+.api ul {
+margin-left: 0;
+padding-left: 20px;
+}

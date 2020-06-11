@@ -1,0 +1,131 @@
+body
+{
+  padding:0px;
+  margin:10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:#202020;  
+}
+h1
+{
+  font-variant:small-caps;
+  font-size:28pt;
+  font-weight:bold;
+  margin:0px 0px 20px 0px;
+  text-align: center;
+  padding: 0px 0px 10px 0px;
+  border-bottom: 2px solid #b0b0b0;  
+}
+h2
+{  
+  padding:10px;
+  margin:0px;  
+}
+a
+{
+  text-decoration: none;  
+  color:#000000;
+}
+a:hover
+{
+  text-decoration: underline;  
+}
+.author
+{
+  text-align:center;
+  margin-bottom:20px;
+}
+.project-name
+{
+  color:#b0b0b0;
+}
+.project-description,
+.model-description,
+.diagram-description,
+.element-description
+{
+  max-width:700px;
+  margin:0px auto 20px auto;
+  background-color:#e0e0e0;
+  padding:10px;  
+  overflow:hidden;
+}
+.project-content,
+.model-content,
+.diagram-content,
+.element-content
+{
+  width:900px;
+  margin:0px auto 0px auto;
+  overflow:hidden;
+}
+.model-group
+{
+  overflow:hidden;
+}
+.model-group .footer
+{
+  padding:10px;
+  border-bottom: 2px solid #e0e0e0;
+}
+.model-group .diagrams
+{
+  overflow:hidden;
+}
+.model-group .diagram,
+.diagram-group .diagram
+{
+  display:block;
+  width:200px;  
+  float:left;
+  margin:10px;  
+}
+.diagram .thumb
+{
+  display:block;
+  width:200px;
+  height:150px;  
+  background-image:url(images/diagram_loading.png);
+  border:2px solid #d0d0d0;
+}
+.diagram .name
+{
+  display:block;
+  text-align:center;
+}
+.diagram:hover .thumb
+{
+  border:2px solid #000000;
+}
+.diagram:hover .name 
+{
+  color:#000000;
+} 
+.standard-table
+{
+  width:100%;
+  border-collapse: collapse;
+}
+.standard-table th
+{
+  background-color:#d0d0d0;    
+  padding:5px;
+  text-align:left;
+}
+.standard-table td
+{
+  border-bottom: 1px solid #d0d0d0;
+  padding:5px;
+}
+.diagram-image,
+.element-image
+{
+  width:800px;
+  margin:20px auto 20px auto;  
+  text-align:center;
+}
+.diagram-image img,
+.element-image img
+{  
+  max-width:800px;  
+  margin:0px auto 0px auto;  
+}

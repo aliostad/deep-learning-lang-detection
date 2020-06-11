@@ -1,0 +1,171 @@
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #666666;
+}
+ :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #666666;
+    opacity: 1;
+}
+ ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #666666;
+    opacity: 1;
+}
+ :-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #666666;
+}
+
+.productService-main{
+	margin-top: 0.69rem;
+	margin-bottom: 1.97rem;
+}
+
+/*产品介绍*/
+#productService .ibox-2{
+	color: #282828;
+}
+
+#productService .ibox-2 .intro-item{
+	margin-bottom: 0.2rem;
+}
+
+#productService .ibox-2 h2{
+	font-size: 0.18rem;
+	padding-bottom: 5px;
+}
+
+#productService .ibox-2 li{
+	display: inline-block;
+	font-size: 0.14rem;
+	padding: 0.02rem 0;
+	line-height: 0.2rem;
+}
+
+/*网店查询*/
+._citys { width: 450px; display: inline-block; border: 2px solid #eee; padding: 5px; position: relative; background-color: #FFFFFF;}
+._citys span { color: #56b4f8; height: 15px; width: 15px; line-height: 15px; text-align: center; border-radius: 3px; position: absolute; right: 10px; top: 10px; border: 1px solid #56b4f8; cursor: pointer; }
+._citys0 { width: 100%; height: 34px; display: inline-block; border-bottom: 2px solid #56b4f8; padding: 0; margin: 0; }
+._citys0 li { display: inline-block; line-height: 34px; font-size: 15px; color: #888; width: 80px; text-align: center; cursor: pointer; }
+.citySel { background-color: #56b4f8; color: #fff !important; }
+._citys1 { width: 100%; display: inline-block; padding: 10px 0; }
+._citys1 a { width: 83px; height: 35px; display: inline-block; background-color: #f5f5f5; color: #666; margin-left: 6px; margin-top: 3px; line-height: 35px; text-align: center; cursor: pointer; font-size: 13px; overflow: hidden; }
+._citys1 a:hover { color: #fff; background-color: #56b4f8; }
+.AreaS { background-color: #56b4f8 !important; color: #fff !important; }
+
+#productService .ibox-3 .website-query-search{
+	width: 100%;
+}
+
+#productService .ibox-3 .website-query-search{
+	margin-bottom: 0.48rem;
+}
+
+#productService .ibox-3 input{
+	width: 79%;
+	height: 0.48rem;
+	margin-right: 7%;
+	text-align: center;
+}
+
+#productService .ibox-3 .website-query-search-btn{
+	width: 13%;
+	height: 0.48rem;
+	background-color: #3BC7DD;
+	color: #FFFFFF;
+}
+
+/*收费标准*/
+#productService .ibox-4 {
+	color: #282828;
+}
+
+#productService .ibox-4 a{
+	color: #1865C0;
+}
+
+#productService .ibox-4 h2{
+	font-size: 0.23rem;
+}
+
+#productService .ibox-4 h3{
+	font-size: 0.18rem;
+}
+
+#productService .ibox-4 .service{
+	padding-top: 0.15rem;
+}
+
+#productService .ibox-4 a{
+	text-decoration: none;
+}
+
+#productService .ibox-4 a:hover{
+	text-decoration: none;
+}
+
+#productService .ibox-4 a:active{
+	text-decoration: none;
+}
+
+#sidebar-nav .selected{
+	color: #0a5cbd;
+}
+
+/*运单查询*/
+#productService .ps-orderquery-main{
+	width: 7.99rem;
+	height: 1.13rem;
+	background-color: #FFFFFF;
+	text-align: center;
+	padding:0.33rem 0 0.33rem 0.33rem;
+}
+
+#productService .ps-orderquery-main input{
+	width: 5.9rem;
+	height: 0.48rem;
+	border: none;
+	border: solid 1px #B8B8B8;
+	text-align: center;
+	margin-right: 0.35rem;
+}
+
+
+#productService .ps-orderquery-main button{
+	width: 1.1rem;
+	height: 0.48rem;
+	background-color: #3BC7DD;
+	color: #ffffff;
+}
+
+#productService .ibox-5 .panel-group{
+	margin-top: 0.32rem ;
+}
+
+#productService .ibox-5 .panel-group{
+	width: 7.99rem;
+	background-color: #FFFFFF;
+	padding: 0.32rem 0.32rem 0.17rem 0.36rem;
+}
+
+#productService .ibox-5 .panel{
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+#productService .ibox-5 .panel-body{
+	border: none;
+}
+
+#productService .ibox-5 .panel-heading{
+	padding-top: 0.16rem;
+	padding-bottom: 0.15rem;
+	border-left: solid 0.08rem #3bc7dd;
+	border-radius: 0;
+}
+
+#productService .ibox-5 .panel-heading a{
+	text-decoration: none;
+}

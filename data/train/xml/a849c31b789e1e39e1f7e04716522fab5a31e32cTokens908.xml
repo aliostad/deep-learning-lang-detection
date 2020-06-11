@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ElasticLoadBalancingDuplicateListenerException.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ElasticLoadBalancingDuplicateListenerException</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;
+A
+&lt;code&gt;Listener&lt;/code&gt; already exists for the given
+&lt;code&gt;LoadBalancerName&lt;/code&gt; and &lt;code&gt;LoadBalancerPort&lt;/code&gt; ,
+but with a different &lt;code&gt;InstancePort&lt;/code&gt; ,
+&lt;code&gt;Protocol&lt;/code&gt; ,
+or &lt;code&gt;SSLCertificateId&lt;/code&gt; .</Abstract>
+			<DeclaredIn>ElasticLoadBalancingDuplicateListenerException.h</DeclaredIn>
+			
+			<NodeRef refid="908"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ElasticLoadBalancingDuplicateListenerException/initWithMessage:</TokenIdentifier>
+			<Abstract type="html">Initialize the exception with a message.</Abstract>
+			<DeclaredIn>ElasticLoadBalancingDuplicateListenerException.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithMessage:(NSString *)message</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The message.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithMessage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ElasticLoadBalancingDuplicateListenerException/description</TokenIdentifier>
+			<Abstract type="html">Returns a string representation of this object; useful for testing and
+debugging.</Abstract>
+			<DeclaredIn>ElasticLoadBalancingDuplicateListenerException.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)description</Declaration>
+			
+			<ReturnValue><Abstract type="html">A string representation of this object.</Abstract></ReturnValue>
+			<Anchor>//api/name/description</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

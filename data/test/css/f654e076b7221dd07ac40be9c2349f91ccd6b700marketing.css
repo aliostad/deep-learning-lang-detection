@@ -1,0 +1,139 @@
+.message-container .mobile {
+  display: none; }
+.message-container .brand-logo {
+  padding: 15px 0 10px; }
+.message-container .brand-message-type {
+  padding: 17px 0 10px; }
+.message-container .message-layout {
+  display: block; }
+  .message-container .message-layout.mobile {
+    display: none; }
+.message-container .message-banner h1 {
+  font-family: 'Lucida Sans Unicode', sans-serif;
+  margin: 33px 0 2px; }
+.message-container .message-banner h2 {
+  margin: 0 0 24px; }
+.message-container .message-banner-border td {
+  display: block;
+  height: 10px; }
+.message-container tbody .message-body-content.message-layout {
+  background-color: #FFFFFF;
+  border: 1px solid #F2F3F3;
+  margin-top: 7px; }
+  .message-container tbody .message-body-content.message-layout .message-content-block td {
+    padding: 13px 30px 10px 0 !important; }
+  .message-container tbody .message-body-content.message-layout .message-content-block td[valign="top"] {
+    padding: 19px 15px 14px 17px !important; }
+  .message-container tbody .message-body-content.message-layout .message-content-block .hero-title {
+    text-transform: none;
+    font-size: 22px;
+    font-weight: bold; }
+  .message-container tbody .message-body-content.message-layout .message-content-block a.button {
+    float: right;
+    margin: 2px 18px 14px 0; }
+  .message-container tbody .message-body-content.message-layout .message-content-block .alignleft {
+    float: left;
+    margin: 0 20px 0 0; }
+  .message-container tbody .message-body-content.message-layout .message-content-block .alignleft-list {
+    float: left;
+    width: 46%; }
+  .message-container tbody .message-body-content.message-layout .message-content-block .button-link {
+    background: #d5644f;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    width: 462px;
+    text-align: center;
+    float: left;
+    line-height: 18px;
+    padding: 15px 42px 14px; }
+    .message-container tbody .message-body-content.message-layout .message-content-block .button-link.width-auto {
+      width: auto; }
+  .message-container tbody .message-body-content.message-layout .message-content-block.three-blocks .three-blocks-text {
+    padding: 0 10px 14px; }
+  .message-container tbody .message-body-content.message-layout .message-content-block.no-margin {
+    margin: 0; }
+  .message-container tbody .message-body-content.message-layout .message-content-block .click-here-text {
+    float: left;
+    font-weight: bold;
+    color: #167999;
+    font-size: 20px;
+    font-style: italic;
+    font-family: Arial;
+    width: 315px;
+    text-align: right;
+    margin: 0 6px 0 0; }
+  .message-container tbody .message-body-content.message-layout .message-content-block .advertsement-body {
+    border: 1px solid #ACA198;
+    background: #f1f1f2;
+    width: 580px; }
+    .message-container tbody .message-body-content.message-layout .message-content-block .advertsement-body .advertsement-text {
+      padding: 10px; }
+  .message-container tbody .message-body-content.message-layout .message-content-block p.advertsement-title {
+    width: 570px;
+    font-size: 8px;
+    background: #aca198;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 0 0 12px; }
+  .message-container tbody .message-body-content.message-layout .message-content-block .no-padding {
+    padding: 0 !important; }
+
+@media (max-width: 600px) {
+  .pc {
+    display: block; }
+
+  .mobile {
+    display: table; }
+
+  .message-header .message-layout {
+    text-align: center; }
+
+  .message-type,
+  .brand-message-type {
+    text-align: center; }
+
+  .mobile .module-hero {
+    text-align: center; }
+
+  .module-hero td {
+    padding: 0 8px 14px; }
+
+  .color-block .module-hero td {
+    padding: 0; }
+
+  .three-blocks {
+    width: 100%;
+    margin: 0;
+    text-align: center; }
+
+  .three-blocks p {
+    text-align: center;
+    margin: 0 0 10px; }
+
+  .message-content-block {
+    width: 100%; }
+
+  .message-content-block .button-link {
+    width: 100%;
+    padding: 15px 0 14px; }
+
+  .message-content-block .button-link.width-auto {
+    width: auto;
+    padding: 15px 42px 14px; }
+
+  .message-container tbody .message-body-content.message-layout .message-content-block td {
+    padding: 0 !important; }
+
+  .message-content-block {
+    width: auto; }
+
+  .message-container tbody .message-body-content.message-layout .message-content-block .button-link {
+    width: auto; }
+
+  .message-container tbody .message-body-content.message-layout .message-content-block p.advertsement-title,
+  .message-container tbody .message-body-content.message-layout .message-content-block .advertsement-body {
+    width: auto; } }

@@ -1,0 +1,83 @@
+.headline {
+  *line-height: 36px; }
+
+/*---------*/
+/* General */
+/*---------*/
+.quick_nav_btns,
+.blue_header {
+  font-family: Arial, serif, sans-serif !important; }
+
+/*-------*/
+/* Gigya */
+/*-------*/
+.gig-rating-writeYourReview,
+*:link.gig-rating-writeYourReview,
+*:active.gig-rating-writeYourReview,
+*:visited.gig-rating-writeYourReview {
+  background-color: #FFFFFF !important; }
+
+/*--------------*/
+/* Profile Sort */
+/*--------------*/
+.list_tab form select {
+  padding: 3px 2px 2px 2px;
+  height: 23px; }
+
+.action_bar form select {
+  padding: 3px 2px 2px 2px;
+  height: 23px; }
+
+/*-----------------*/
+/* Dashboard Fixes */
+/*-----------------*/
+.payment_method .payment_input .choices-group li label input {
+  border: none !important;
+  margin-top: -2px !important; }
+
+.silver .btn_text {
+  text-shadow: none !important; }
+
+.blue .btn_text {
+  text-shadow: none !important; }
+
+.orange .btn_text {
+  text-shadow: none !important; }
+
+/*---------*/
+/* Tickets */
+/*---------*/
+#site_container #wrapper #left_container .pod #object_page_header .buy_sml_cont .buy_ticket,
+#site_container #wrapper #left_container .pod #object_page_header .buy_sml_cont .buy_ticket:link,
+#site_container #wrapper #left_container .pod #object_page_header .buy_sml_cont .buy_ticket:visited {
+  letter-spacing: 0 !important; }
+
+.ticket_form select {
+  padding: 5px !important; }
+
+.payment_method input[type=radio] {
+  background: none !important;
+  border: none !important;
+  margin: -1px 0 0 0 !important;
+  padding: 4px 0 0 0 !important; }
+
+/*--------*/
+/* Footer */
+/*--------*/
+#footer_content {
+  *position: static;
+  *margin: 10px 0 0 -3px; }
+  #footer_content .pod .subtitle {
+    font-size: 11pt;
+    line-height: 1.05em; }
+
+/*------------------*/
+/* Newsletter Popup */
+/*------------------*/
+.ui-widget-overlay {
+  width: 99.99% !important; }
+/**
+ * ie8.css
+ *
+
+ */

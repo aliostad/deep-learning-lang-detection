@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<allClasses>
+   <apiPackage id="__Global__">
+      <apiName>__Global__</apiName>
+      <apiDetail/>
+      <apiClassifier id="globalClassifier:Main">
+         <apiName>Main</apiName>
+         <shortdesc>
+     </shortdesc>
+         <prolog>
+            <author>victorpotasso
+     </author>
+            <asMetadata/>
+         </prolog>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.display:Sprite</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+     </apiDesc>
+         </apiClassifierDetail>
+         <Keywords>
+            <meta name="keywords" content="Main,globalClassifier.Main"/>
+         </Keywords>
+      </apiClassifier>
+   </apiPackage>
+</allClasses>

@@ -1,0 +1,31 @@
+/*
+* LightBlue Style
+* author: Liufengchun
+* creat: 2013-06-26
+* update: 2013-06-30
+*/
+
+/* # Top part
+================================================== */
+#top { background: #161F56; }
+
+/* # Header part
+================================================== */
+#header { background: #214196; filter: none; }
+
+.mainNav { background: #153077; border: none; height: 35px; }
+.mainNav .nav li .ddmenu {border-color:#337CFF; background:#FFF;}
+.mainNav .nav .ddmenu ul {border-color: #DDD; }
+.mainNav .nav .ddmenu ul ul {border-bottom: 1px solid #EEE; }
+.mainNav .nav li a {line-height: 35px;}
+.mainNav .nav li.active a {background: #FFF; color: #2546A5; }
+.mainNav .nav li.hover a,
+.mainNav .nav li:hover a {background: #337CFF; color: #FFF; }
+.mainNav .nav li.active li a,
+.mainNav .nav li.hover li a,
+.mainNav .nav li:hover li a,
+.mainNav .nav li li a {background: none; color: #2546A5; }
+.mainNav .nav li.active li a:hover,
+.mainNav .nav li.hover li a:hover,
+.mainNav .nav li:hover li a:hover,
+.mainNav .nav li li a:hover { color: #F60; }

@@ -1,0 +1,50 @@
+$fsdbVersion check=novas_plicompileNoArgs call=novas_plitaskVersion
+$fsdbSubstituteHier check=novas_plicompileSubstituteHier call=novas_plitaskSubstituteHier
+$fsdbDumpfile check=novas_plicompileDumpfile call=novas_plitaskDumpfile 
+$fsdbDumpvars check=novas_plicompileDumpvars call=novas_plitaskDumpvars misc=novas_plimiscFSDB acc=read,callback_all:*
+$fsdbDumpSC   check=novas_plicompileDumpSC   call=novas_plitaskDumpSC   misc=novas_plimiscFSDB acc=read,callback_all:*
+$fsdbDumpPattern check=novas_plicompileDumpPattern call=novas_plitaskDumpPattern misc=novas_plimiscFSDB acc=read,callback_all:*
+$fsdbESDump check=novas_plicompileESDump call=novas_plitaskESDump misc=novas_plimiscFSDB acc=read,callback_all:*
+$fsdbDumpvarsES  check=novas_plicompileDumpvarsES call=novas_plitaskDumpvarsES misc=novas_plimiscFSDB acc=read,callback_all:*
+$fsdbDumpvarsToFile check=novas_plicompileDumpvarsToFile call=novas_plitaskDumpvarsToFile  misc=novas_plimiscFSDB acc=read,callback_all:*
+$fsdbSwitchDumpfile check=novas_plicompileSwitchFile call=novas_plitaskSwitchFile 
+$fsdbAutoSwitchDumpfile check=novas_plicompileAutoSwitchFile call=novas_plitaskAutoSwitchFile 
+$fsdbDumpon check=novas_plicompileNoArgs call=novas_plitaskDumpon misc=novas_plimiscDumpon 
+$fsdbDumpoff check=novas_plicompileNoArgs call=novas_plitaskDumpoff 
+$fsdbDumpflush check=novas_plicompileNoArgs call=novas_plitaskDumpflush
+$fsdbDumplimit check=novas_plicompileDumplimit call=novas_plitaskDumplimit
+$fsdbDumpStrength check=novas_plicompileDumpStrength call=novas_plitaskDumpStrength
+$fsdbDumpMem check=novas_plicompileDumpMem call=novas_plitaskDumpMem misc=novas_plimiscDumpMem acc=read,callback_all:*
+$fsdbDumpMemNow check=novas_plicompileDumpMem call=novas_plitaskDumpMemNow misc=novas_plimiscDumpMem acc=read,callback_all:*
+$fsdbDumpMemInFile check=novas_plicompileDumpMemInFile call=novas_plitaskDumpMemInFile misc=novas_plimiscDumpMem acc=read,callback_all:*
+$fsdbDumpMemInScope check=novas_plicompileDumpMemInScope call=novas_plitaskDumpMemInScope misc=novas_plimiscDumpMem acc=read,callback_all:*
+$fsdbDumpMDA check=novas_plicompileDumpMDA call=novas_plitaskDumpMDA misc=novas_plimiscDumpMem acc=read,callback_all:*
+$fsdbDumpMDANow check=novas_plicompileDumpMDA call=novas_plitaskDumpMDANow misc=novas_plimiscDumpMem acc=read,callback_all:*
+$fsdbDumpMDAInScope check=novas_plicompileDumpMDAInScope call=novas_plitaskDumpMDAInScope misc=novas_plimiscDumpMem acc=read,callback_all:*
+$fsdbDumpFinish check=novas_plicompileNoArgs call=novas_plitaskDumpFinish
+$fsdbInteractive check=novas_plicompileNoArgs call=novas_plitaskInteractive misc=novas_plimiscInteractive 
+$fsdbDisplay check=novas_plicompileDisplay call=novas_plitaskDisplay misc=novas_plimiscFSDB acc=read,callback_all:*
+$fsdbSuppress check=novas_plicompileSuppress call=novas_plitaskSuppress
+$fsdbTest call=novas_plitaskTest
+$fsdbDebug check=novas_plicompileDebug call=novas_plitaskDebug
+$debussy check=novas_plicompileDebussy call=novas_plitaskDebussyVCS 
+$vericom check=novas_plicompileVericom call=novas_plitaskVericom
+$db_breakatline check=novas_plicompileLineBreak call=novas_plitaskLineBreak
+$db_breakonceatline check=novas_plicompileLineBreak call=novas_plitaskOnceLineBreak
+$db_deletelinebreak check=novas_plicompileDeleteLineBreak call=novas_plitaskDeleteLineBreak
+$db_showlinebreak check=novas_plicompileNoArgs call=novas_plitaskShowLineBreak
+$db_setfocus check=novas_plicompileSetFocus call=novas_plitaskSetFocus
+$db_deletefocus check=novas_plicompileDeleteFocus call=novas_plitaskDeleteFocus
+$db_enablefocus check=novas_plicompileEnableFocus call=novas_plitaskEnableFocus
+$db_disablefocus check=novas_plicompileDisableFocus call=novas_plitaskDisableFocus
+$db_stopatfocus check=novas_plicompileNoArgs call=novas_plitaskStopAtFocus
+$fsdbDumpOVA check=novas_plicompileDumpOVA call=novas_plitaskDumpOVA misc=novas_plimiscFSDB acc=read:*
+$fsdbDumpOVAon call=novas_plitaskDumpOVAon
+$fsdbDumpOVAoff call=novas_plitaskDumpOVAoff
+$fsdbDumpSVA check=novas_plicompileDumpSVA call=novas_plitaskDumpSVA misc=novas_plimiscFSDB acc=read:*
+$fsdbDumpSVAon call=novas_plitaskDumpSVAon
+$fsdbDumpSVAoff call=novas_plitaskDumpSVAoff
+$fsdbDumpPSL check=novas_plicompileDumpPSL call=novas_plitaskDumpPSL misc=novas_plimiscFSDB acc=read:*
+$fsdbRecSVAasTrans check=novas_plicompileRecSVAasTrans call=novas_plitaskRecSVAasTrans misc=novas_plimiscFSDB acc=read:*
+$fsdbDumpPSLon call=novas_plitaskDumpPSLon
+$fsdbDumpPSLoff call=novas_plitaskDumpPSLoff

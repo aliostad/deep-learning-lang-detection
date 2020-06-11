@@ -1,0 +1,22 @@
+#!/bin/bash
+
+cd $(dirname $0)
+
+repo=$1
+
+if [[ -z "${repo}" ]]; then
+    echo "usage: $0 REPO"
+    exit 1
+fi
+
+ccgrepo=$(echo ${repo} | sed -e 's=^repo=ccg=')
+
+# upload everything, including new indexes
+s3cmd sync --no-progress --recursive \
+      "--exclude=*.sh" "--exclude=*.txt" --exclude=.created \
+      ${repo}/ "<%=@s3dest%>/${ccgrepo}/"
+
+#  # clobber anything we don't have locally
+#  s3cmd sync --no-progress --recursive --delete-removed \
+#        "--exclude=*.sh" "--exclude=*.txt" --exclude=.created \
+#        ${repo}/ "<%=@s3dest%>/${ccgrepo}/"

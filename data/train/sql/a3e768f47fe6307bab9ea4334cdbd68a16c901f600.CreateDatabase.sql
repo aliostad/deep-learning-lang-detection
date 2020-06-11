@@ -1,0 +1,104 @@
+USE [master]
+GO
+
+/****** Object:  Database [<!Freetime.Model!>]    Script Date: 07/01/2011 12:10:55 ******/
+CREATE DATABASE [<!Freetime.Model!>] ON  PRIMARY 
+( NAME = N'<!Freetime.Model!>', FILENAME = N'<!Freetime.Database.Location!>\<!Freetime.Model!>.mdf' , SIZE = 2048KB , MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
+ LOG ON 
+( NAME = N'<!Freetime.Model!>_log', FILENAME = N'<!Freetime.Database.Location!>\<!Freetime.Model!>_log.ldf' , SIZE = 1024KB , MAXSIZE = 2048GB , FILEGROWTH = 10%)
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET COMPATIBILITY_LEVEL = 100
+GO
+
+IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
+begin
+EXEC [<!Freetime.Model!>].[dbo].[sp_fulltext_database] @action = 'enable'
+end
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET ANSI_NULL_DEFAULT OFF 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET ANSI_NULLS OFF 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET ANSI_PADDING OFF 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET ANSI_WARNINGS OFF 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET ARITHABORT OFF 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET AUTO_CLOSE OFF 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET AUTO_CREATE_STATISTICS ON 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET AUTO_SHRINK OFF 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET AUTO_UPDATE_STATISTICS ON 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET CURSOR_CLOSE_ON_COMMIT OFF 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET CURSOR_DEFAULT  GLOBAL 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET CONCAT_NULL_YIELDS_NULL OFF 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET NUMERIC_ROUNDABORT OFF 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET QUOTED_IDENTIFIER OFF 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET RECURSIVE_TRIGGERS OFF 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET  DISABLE_BROKER 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET DATE_CORRELATION_OPTIMIZATION OFF 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET TRUSTWORTHY OFF 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET ALLOW_SNAPSHOT_ISOLATION OFF 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET PARAMETERIZATION SIMPLE 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET READ_COMMITTED_SNAPSHOT OFF 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET HONOR_BROKER_PRIORITY OFF 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET  READ_WRITE 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET RECOVERY FULL 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET  MULTI_USER 
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET PAGE_VERIFY CHECKSUM  
+GO
+
+ALTER DATABASE [<!Freetime.Model!>] SET DB_CHAINING OFF 
+GO
+
+

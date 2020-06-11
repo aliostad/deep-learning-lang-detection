@@ -1,0 +1,12 @@
+.service-links ul.links li{display:inline-block;}
+.sprites.service-links span{display:block;}
+.service-links span.hide{display:none;}
+.sprites.service-links {background-repeat: no-repeat; float:left;}
+.sprites.service-links.w16 {padding-left: 18px; background-image:url("sl_sprites16.png");}
+.sprites.service-links-favorite {background-position: 0 0px; height:16px}
+.sprites.service-links-facebook-widget {background-position: 0 -16px; height:16px}
+.sprites.service-links-twitter-widget {background-position: 0 -32px; height:16px}
+.sprites.service-links-facebook-like {background-position: 0 -48px; height:16px}
+.sprites.service-links-digg-smart-button {background-position: 0 -64px; height:16px}
+.sprites.service-links-google-plus-one {background-position: 0 -80px; height:16px}
+.sprites.service-links-linkedin-share-button {background-position: 0 -96px; height:16px}

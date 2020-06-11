@@ -1,0 +1,57 @@
+.liz-write-true-false .main-img {
+  max-width: 40%;
+  float: left;
+}
+.liz-write-true-false .items {
+  float: left;
+  margin-left: 20px;
+}
+.liz-write-true-false .true-false-container p {
+  margin-top: 11px;
+  font-size: 18px;
+}
+.liz-write-true-false .true-false-container .btn-primary {
+  float: left;
+  margin-top: 0;
+  margin-right: 6px;
+  width: auto;
+  font-size: 23px;
+}
+.liz-write-true-false .true-false-container .input-primary {
+  padding: 6px 9px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.liz-write-true-false .true-false-container .text.block {
+  margin-bottom: 5px;
+}
+.liz-write-true-false .overlay {
+  background: #fff;
+}
+.liz-write-true-false .big-img {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 151;
+  top: 0;
+  left: 0;
+  overflow: scroll;
+}
+.liz-write-true-false .big-img img {
+  color: #fff;
+}
+.liz-write-true-false .close-btn {
+  z-index: 152;
+  position: fixed;
+  top: 16px;
+  right: 32px;
+  font-size: 22px;
+  width: 2em;
+  height: 2em;
+}
+.liz-write-true-false .face {
+  margin-left: -72px;
+  width: 124px;
+  left: 50%;
+  z-index: 6;
+}

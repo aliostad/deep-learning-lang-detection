@@ -1,0 +1,86 @@
+/* Generic context menu styles */
+.contextMenu {
+	position: absolute;
+	width: 120px;
+	z-index: 99999;
+	border: solid 1px #CCC;
+	background: #EEE;
+	padding: 0px;
+	margin: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	display: none;
+	cursor:default;
+}
+
+.contextMenu LI {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.contextMenu A {
+	color: #333;
+	text-decoration: none;
+	display: block;
+	line-height: 20px;
+	height: 20px;
+	background-position: 6px center;
+	background-repeat: no-repeat;
+	outline: none;
+	padding: 1px 5px;
+	padding-left: 28px;
+	border: 1px #EEE solid;
+}
+
+.contextMenu LI:hover A {
+	background-color: #D2E6FF;
+	color: black;
+	border: 1px #84ACDD solid;
+	opacity: 0.8;
+	filter: alpha(opacity = 80);
+}
+
+.contextMenu LI.disabled A {
+	color: #AAA;
+	cursor: default;
+}
+
+.contextMenu LI.disabled :hover A {
+	color: #FFF;
+	background-color: transparent;
+}
+
+.contextMenu LI.separator {
+	border-top: solid 1px #CCC;
+}
+
+/*
+	Adding Icons
+	
+	You can add icons to the context menu by adding
+	classes to the respective LI element(s)  /Adminlvcn/1ref/controls/UpLoad/Images
+*/
+.contextMenu LI.edit A {
+	background-image: url( /Adminlvcn/1ref/controls/UpLoad/Images/page_white_edit.png);
+}
+
+.contextMenu LI.cut A {
+	background-image: url( /Adminlvcn/1ref/controls/UpLoad/Images/cut.png);
+}
+
+.contextMenu LI.copy A {
+	background-image: url( /Adminlvcn/1ref/controls/UpLoad/Images/page_white_copy.png);
+}
+
+.contextMenu LI.paste A {
+	background-image: url( /Adminlvcn/1ref/controls/UpLoad/Images/page_white_paste.png);
+}
+
+.contextMenu LI.delete A {
+	background-image: url( /Adminlvcn/1ref/controls/UpLoad/Images/page_white_delete.png);
+}
+
+.contextMenu LI.quit A {
+	background-image: url( /Adminlvcn/1ref/controls/UpLoad/Images/door.png);
+}

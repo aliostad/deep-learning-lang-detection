@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SAMPLE_SET xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SAMPLE alias="HG03237" center_name="NCBI" accession="SRS352794">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRS352794</PRIMARY_ID>
+      <SUBMITTER_ID namespace="NCBI">HG03237</SUBMITTER_ID>
+    </IDENTIFIERS>
+    <TITLE>Human 1000 genomes individual HG03237</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>9606</TAXON_ID>
+      <ANONYMIZED_NAME>HG03237</ANONYMIZED_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Human 1000 genomes individual HG03237</DESCRIPTION>
+    <SAMPLE_LINKS>
+      <SAMPLE_LINK>
+        <XREF_LINK>
+          <DB>biosample</DB>
+          <ID>1096659</ID>
+        </XREF_LINK>
+      </SAMPLE_LINK>
+    </SAMPLE_LINKS>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>population</TAG>
+        <VALUE>PJL</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>Coriell_family_ID</TAG>
+        <VALUE>PK41</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sex</TAG>
+        <VALUE>male</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>relationship_type</TAG>
+        <VALUE>father</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>local_family_id</TAG>
+        <VALUE>PG41</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>type</TAG>
+        <VALUE>trio</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="HG03238" center_name="NCBI" accession="SRS352795">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRS352795</PRIMARY_ID>
+      <SUBMITTER_ID namespace="NCBI">HG03238</SUBMITTER_ID>
+    </IDENTIFIERS>
+    <TITLE>Human 1000 genomes individual HG03238</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>9606</TAXON_ID>
+      <ANONYMIZED_NAME>HG03238</ANONYMIZED_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Human 1000 genomes individual HG03238</DESCRIPTION>
+    <SAMPLE_LINKS>
+      <SAMPLE_LINK>
+        <XREF_LINK>
+          <DB>biosample</DB>
+          <ID>1096660</ID>
+        </XREF_LINK>
+      </SAMPLE_LINK>
+    </SAMPLE_LINKS>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>population</TAG>
+        <VALUE>PJL</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>Coriell_family_ID</TAG>
+        <VALUE>PK41</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sex</TAG>
+        <VALUE>female</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>relationship_type</TAG>
+        <VALUE>mother</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>local_family_id</TAG>
+        <VALUE>PG41</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>type</TAG>
+        <VALUE>trio</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="HG03239" center_name="NCBI" accession="SRS352796">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRS352796</PRIMARY_ID>
+      <SUBMITTER_ID namespace="NCBI">HG03239</SUBMITTER_ID>
+    </IDENTIFIERS>
+    <TITLE>Human 1000 genomes individual HG03239</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>9606</TAXON_ID>
+      <ANONYMIZED_NAME>HG03239</ANONYMIZED_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Human 1000 genomes individual HG03239</DESCRIPTION>
+    <SAMPLE_LINKS>
+      <SAMPLE_LINK>
+        <XREF_LINK>
+          <DB>biosample</DB>
+          <ID>1096661</ID>
+        </XREF_LINK>
+      </SAMPLE_LINK>
+    </SAMPLE_LINKS>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>population</TAG>
+        <VALUE>PJL</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>Coriell_family_ID</TAG>
+        <VALUE>PK41</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sex</TAG>
+        <VALUE>female</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>relationship_type</TAG>
+        <VALUE>child</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>local_family_id</TAG>
+        <VALUE>PG41</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>type</TAG>
+        <VALUE>trio</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+</SAMPLE_SET>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services vendor="ruijie" os-version="common">
+    <!-- AC BAK -->
+    <service id="acConfigBakService" class="com.riil.wireless.adapter.service.ruijie.AcConfigBakService"/>
+
+    <!-- BaseInfo -->
+    <service id="baseInfoService" class="com.riil.wireless.adapter.service.ruijie.AcBaseInfoService"/>
+    
+    <!-- VLAN -->
+    <service id="vlanService" class="com.riil.wireless.adapter.service.ruijie.VlanService"/>
+    
+    <!-- IP ROUTE -->
+    <service id="routeService" class="com.riil.wireless.adapter.service.ruijie.RouteService"/>
+    
+    <!-- DHCP -->
+    <service id="dhcpService" class="com.riil.wireless.adapter.service.ruijie.DhcpService"/>
+    
+    <!-- WLAN -->
+    <service id="wlanService" class="com.riil.wireless.adapter.service.ruijie.WlanService"/>
+    
+    <!-- AP -->
+    <service id="apService" class="com.riil.wireless.adapter.service.ruijie.ApService"/>
+    
+    <!-- AP GROUP -->
+    <service id="apGroupService" class="com.riil.wireless.adapter.service.ruijie.ApGroupService"/>
+    
+    <!-- Mobility -->
+    <service id="mobilityService" class="com.riil.wireless.adapter.service.ruijie.MobilityService"/>
+    
+    <!-- Redundance -->
+    <service id="apRedundanceService" class="com.riil.wireless.adapter.service.ruijie.ApRedundanceService"/>
+    
+    <!-- AP Qos -->
+    <service id="apQoSRuleService" class="com.riil.wireless.adapter.service.ruijie.ApQoSRuleService"/>
+    
+    <!-- Client Qos -->
+    <service id="clientQoSRuleService" class="com.riil.wireless.adapter.service.ruijie.ClientQoSRuleService"/>
+    
+    <!-- WLAN Qos -->
+    <service id="wlanQoSRuleService" class="com.riil.wireless.adapter.service.ruijie.WlanQoSRuleService"/>
+    
+    <!-- AAA -->
+    <service id="aAAService" class="com.riil.wireless.adapter.service.ruijie.AAAService"/>
+	
+	<!-- AAA Web -->
+	<service id="aAAWebService" class="com.riil.wireless.adapter.service.ruijie.AAAWebService"/>
+    
+    <!-- Rogue -->
+    <service id="rogueService" class="com.riil.wireless.adapter.service.ruijie.RogueService"/>
+    
+    <!-- AC Detail -->
+    <service id="acDetailService" class="com.riil.wireless.adapter.service.ruijie.AcDetailService"/>
+    
+    <!-- AP AND RADIO Detail -->
+    <service id="apDetailService" class="com.riil.wireless.adapter.service.ruijie.ApDetailService"/>
+    
+    <!-- Online User Detail -->
+    <service id="onlineUserDetailService" class="com.riil.wireless.adapter.service.ruijie.OnlineUserDetailService"/>
+    
+    <!-- WLAN Detail -->
+    <service id="wlanDetailService" class="com.riil.wireless.adapter.service.ruijie.WlanDetailService"/>
+</services>

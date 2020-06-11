@@ -1,0 +1,101 @@
+#!/bin/bash
+set -ex
+
+# FIXME: use perestroika from openstack/fuel-mirror
+# checkout fuel-mirror to ${{WORKSPACE}}/fuel-mirror
+# and then copy perestroika directory to root ${{WORKSPACE}}
+cp -rv ${{WORKSPACE}}/fuel-mirror/perestroika/* ${{WORKSPACE}}
+
+# Gerrit parameters
+export GERRIT_HOST=${{GERRIT_HOST:-{gerrit-host}}}
+export GERRIT_PORT=${{GERRIT_PORT:-{gerrit-port}}}
+export GERRIT_USER=${{GERRIT_USER:-{gerrit-user}}}
+
+############################
+# Project parameters
+############################
+
+export PROJECT_NAME={project-name}
+export PROJECT_VERSION={mos_version}
+
+############################
+# Global parameters
+############################
+
+export SRC_PROJECT_PATH=openstack
+export SPEC_PROJECT_PATH=openstack-build
+export IS_UPDATES=false
+export IS_OPENSTACK=true
+export IS_DOWNGRADE=true
+export DIST="${{DIST:-{distro}}}"
+export SPEC_PREFIX_PATH="{spec_path_prefix}"
+export REPO_REQUEST_PATH_PREFIX="{cr-path-prefix}"
+
+# Publish host parameters
+export REMOTE_REPO_HOST={repo-host}
+
+# Parameters for package specs
+export SPEC_PROJECT_SUFFIX=-build
+
+
+if [ "{mos_version}" = "master" ]
+then
+    export SOURCE_BRANCH={mos_version}
+    export SPEC_BRANCH={mos_version}
+else
+    export SOURCE_BRANCH=${{SOURCE_BRANCH:-openstack-ci/fuel-{mos_version}/liberty}}
+    export SPEC_BRANCH=${{SPEC_BRANCH:-openstack-ci/fuel-{mos_version}/liberty}}
+fi
+
+DEB_DIST_NAME={deb-dist-name}
+RPM_DIST_NAME={rpm-dist-name}
+DEB_REPO_PATH={mos-deb-repo-path}/{mos_version}
+RPM_REPO_PATH={mos-rpm-repo-path}/os/x86_64/
+export DEB_DIST_NAME DEB_REPO_PATH RPM_REPO_PATH
+
+# DEB-specific parameters
+export ORIGIN=Mirantis
+export DEB_PROPOSED_REPO_PATH=
+export DEB_PROPOSED_DIST_NAME={project-name}{mos_version}-proposed
+export DEB_UPDATES_REPO_PATH=
+export DEB_UPDATES_DIST_NAME={project-name}{mos_version}-updates
+export DEB_SECURITY_REPO_PATH=
+export DEB_SECURITY_DIST_NAME={project-name}{mos_version}-security
+export DEB_HOLDBACK_REPO_PATH=
+export DEB_HOLDBACK_DIST_NAME={project-name}{mos_version}-holdback
+
+# RPM-specific parameters
+export RPM_OS_REPO_PATH={mos-rpm-repo-path}/os
+export RPM_PROPOSED_REPO_PATH={mos-rpm-repo-path}/proposed
+export RPM_UPDATES_REPO_PATH={mos-rpm-repo-path}/updates
+export RPM_SECURITY_REPO_PATH={mos-rpm-repo-path}/security
+export RPM_HOLDBACK_REPO_PATH={mos-rpm-repo-path}/holdback
+
+############################
+# Build package
+############################
+
+bash build-${{IS_FUEL:+fuel-}}{pkg_type}.sh
+
+# Extra parameters for publisher
+cat >> buildresult.params <<EOF
+
+# Added for publisher
+ORIGIN=${{ORIGIN}}
+REPO_REQUEST_PATH_PREFIX=${{REPO_REQUEST_PATH_PREFIX}}
+REPO_BASE_PATH={repo-base-path}
+DEB_DIST_NAME=${{DEB_DIST_NAME}}
+DEB_REPO_PATH=${{DEB_REPO_PATH}}
+RPM_REPO_PATH=${{RPM_REPO_PATH}}
+RPM_OS_REPO_PATH=${{RPM_OS_REPO_PATH}}
+RPM_PROPOSED_REPO_PATH=${{RPM_PROPOSED_REPO_PATH}}
+RPM_UPDATES_REPO_PATH=${{RPM_UPDATES_REPO_PATH}}
+RPM_SECURITY_REPO_PATH=${{RPM_SECURITY_REPO_PATH}}
+RPM_HOLDBACK_REPO_PATH=${{RPM_HOLDBACK_REPO_PATH}}
+REMOTE_REPO_HOST=${{REMOTE_REPO_HOST}}
+IS_DOWNGRADE=${{IS_DOWNGRADE}}
+EOF
+
+BUILD_SUCCEEDED=$(awk -F= '/^BUILD_SUCCEEDED=/ {{gsub(/"/,""); print $2}}' buildresult.params)
+test "${{BUILD_SUCCEEDED}}" = "false" && exit 1
+exit 0

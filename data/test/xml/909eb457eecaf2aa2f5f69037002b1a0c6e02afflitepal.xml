@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="qsdb.db" >
+    </dbname>
+
+    <version value="10" >
+    </version>
+
+    <list>
+        <mapping class="com.aptentity.aptqstools.model.dao.ScreenDBEntity"></mapping>
+        <mapping class="com.aptentity.aptqstools.model.dao.AppUseDBEntity"></mapping>
+        <mapping class="com.aptentity.aptqstools.model.dao.WeightDBEntity"></mapping>
+        <mapping class="com.aptentity.aptqstools.model.dao.HeartRateDBEntity"></mapping>
+        <mapping class="com.aptentity.aptqstools.model.dao.LocationDBEntity"></mapping>
+        <mapping class="com.aptentity.aptqstools.model.dao.TaskDescribe"></mapping>
+    </list>
+
+</litepal>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<mappings>
+  <mapping physical="@src.dir@/MachII" virtual="/MachII"></mapping>
+  <mapping physical="@src.dir@/cfwheels" virtual="/cfwheels"></mapping>
+  <mapping physical="@src.dir@/coldbox" virtual="/coldbox"></mapping>
+  <mapping physical="@src.dir@/fw1app" virtual="/fw1app"></mapping>
+  <mapping physical="@src.dir@/machiiapp" virtual="/machiiapp"></mapping>
+  <mapping physical="@src.dir@/mxunit" virtual="/mxunit"></mapping>
+  <mapping physical="@src.dir@/taffy" virtual="/taffy"></mapping>
+  <mapping physical="@src.dir@/taffyapp" virtual="/taffyapp"></mapping>
+  <mapping physical="@src.dir@/org" virtual="/org"></mapping>
+</mappings>

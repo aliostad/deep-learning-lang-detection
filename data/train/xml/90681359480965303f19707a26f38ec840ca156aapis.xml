@@ -1,0 +1,31 @@
+<apis>
+	<!-- 短信相关 -->
+    <api type="SMS" method=".abortBroadcast()">屏蔽广播</api>
+    <api type="SMS" method=".sendDataMessage">发送数据短信</api>
+    <api type="SMS" method=".sendMultipartTextMessage">发送长短信</api>
+    <api type="SMS" method=".sendTextMessage">发送文本短信</api>
+    <api type="SMS" method=".getDisplayMessageBody">获取短信内容</api>
+    <api type="SMS" method=".getDisplayOriginatingAddress">获取短信号码</api>
+    <api type="SMS" method=".getMessageBody">获取短信内容</api>
+    
+    <!-- 手机信息相关 -->
+    <api type="PHONE_INFO" method="TelephonyManager;.getLine1Number">获取手机号码</api>
+    <api type="PHONE_INFO" method="TelephonyManager;.getDeviceId">获取 IMEI</api>
+    <api type="PHONE_INFO" method="TelephonyManager;.getSubscriberId">获取 IMSI</api>
+    
+    <!-- 网络相关 -->
+    <api type="NETWORK" method="HttpClient;.execute">使用 execute 方式打开网络</api>
+    <api type="NETWORK" method="URL;.openConnection">使用 openConnection 方式打开网络</api>
+    <api type="NETWORK" method="Socket;.connect">使用 Socket 方式打开网络</api>
+    <api type="NETWORK" method="HttpURLConnection;.getInputStream()">读取网络数据</api>
+    <api type="NETWORK" method="Entity;.getContent">读取网络数据</api>
+    
+    <!-- 执行命令相关 -->
+    <api type="SHELL" method="Runtime;.exec">执行命令和脚本</api>
+    <api type="SHELL" method="ProcessBuilder;.start">执行命令和脚本</api>
+
+    <!-- 测试相关的代码跟在后面,如下面的录音代码, 跟踪结果显示在NONE标签里面 -->
+    <api type="TEST" method="AudioRecord;.startRecording">录音</api>
+    <api type="TEST" method="DexClassLoader;.loadClass">录音</api>
+
+</apis>

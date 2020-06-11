@@ -1,0 +1,52 @@
+* {
+	font-family: Sans-Serif, Monospace;
+}
+
+body {
+	margin: 0;
+}
+
+#header {
+	background-color: #080808;
+	height: 102px;
+}
+
+#header > div {
+	float: left;
+}
+
+#header #title {
+	color: #eeeeee;
+	font-family: Consolas, Monospace;
+	padding-top: 30px;
+}
+
+.service {
+	border: 1px solid #000;
+	margin: 5px auto;
+	padding: 5px;
+	max-width: 700px;
+}
+
+.running {
+	background-color: #88ff88;
+}
+
+.service .name {
+	font-weight: bold;
+}
+
+.service .info {
+}
+
+.service .status {
+	border-top: 1px solid #080808;
+	border-right: 1px solid #080808;
+}
+
+.service .action {
+	width: 80px;
+	text-align: right;
+	padding-right: 20px;
+	float: right;
+}

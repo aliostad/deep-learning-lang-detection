@@ -1,0 +1,57 @@
+
+article.show {
+    background-color: #E7E7E7;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+article.show header {
+    background-color: rgb(200,200,200);
+    color: #5FD7FF;
+    font-size: 1.5em;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px #7F7F7F;
+    border-bottom: 2px solid #ccc;
+    margin: 0px;
+    padding: 0.4em;
+    text-align: center;
+}
+
+article.show div.noimage {
+    border: 1px solid black;
+    width: 150px;
+    height: 200px;
+}
+
+article.show img {
+    height: 200px;
+    width: 150px;
+}
+article.show aside {
+    float: left;
+    max-width: 40%;
+}
+
+article.show section {
+    padding: 20px;
+    display: inline-block;
+}
+
+article.show section.right {
+    float: right;
+    background-color: #bababa;
+    height: 100%;
+}
+
+article.show footer {
+    background: #29C7FF;
+}
+
+article.show footer a {
+    color: #142da6;
+}
+
+article.show footer a:hover {
+    color: #a65a0b;
+}

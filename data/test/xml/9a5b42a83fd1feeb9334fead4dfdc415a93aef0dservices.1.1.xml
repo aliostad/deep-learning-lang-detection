@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<container>
+  <services>
+    <service id="bar_service" class="StdClass" injected="true">
+    </service>
+
+    <service id="bar_child" class="StdClass" injected="false" parent="bar_service">
+    </service>
+
+    <service id="factory_service" class="StdClass" factory="MyFactory" factory-method="make">
+    </service>
+
+    <service id="test" class="StdClass">
+      <arguments>
+        <argument>$bar_child</argument>
+      </arguments>
+    </service>
+  </services>
+</container>

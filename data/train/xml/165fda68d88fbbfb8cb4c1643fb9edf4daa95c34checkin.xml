@@ -1,0 +1,14 @@
+<Alloy>
+    <Window class="container">
+        <ScrollView id="scrollView">
+            <Label class="frame">
+                <Label id="description">
+                    This is sample. This is sample. This is sample. This is sample. This is sample. This is sample.
+                    This is sample. This is sample. This is sample. This is sample. This is sample. This is sample.
+                </Label>
+            </Label>
+            <TextArea id="comment" class="frame"/>
+            <Button id="checkinButton" title="Checkin" onClick="checkinSpot" />
+        </ScrollView>
+    </Window>
+</Alloy>

@@ -1,0 +1,41 @@
+#api-tester h4 {
+    border-bottom: 1px solid lightgray;
+}
+
+#api-tester small {
+    color: black;
+    font-weight: normal;
+}
+
+#api-tester button.pull-right {
+    margin-left: 0.4em;
+}
+
+#api-tester #request-resource div {
+    margin-bottom: 0.25em;
+}
+
+#api-tester #request-resource label, #api-tester #request-auth label {
+    width:35%;
+}
+
+#api-tester #request-resource input, #api-tester #request-resource select, #api-tester #request-auth input {
+    width:63%;
+}
+
+#api-tester #request-parameters {
+    min-height: 5em;
+}
+
+#api-tester #request-parameters #parameters-info {
+    height:2em;
+}
+
+#api-tester #request-parameters .request-param {
+    clear:both;
+    margin-top:0.25em;
+}
+
+#api-tester #request-parameters .request-param input {
+    width: 42%;
+}

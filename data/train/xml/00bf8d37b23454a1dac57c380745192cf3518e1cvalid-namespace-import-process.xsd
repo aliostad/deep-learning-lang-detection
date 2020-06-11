@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://process.schemas.nykreditnet.net/process/p/v1"
+           targetNamespace="http://process.schemas.nykreditnet.net/process/p/v1"
+           elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+    <!-- process schemas are allowed to import schemas from http://process.schemas.nykreditnet.net/process/* -->
+    <xs:import namespace="http://process.schemas.nykreditnet.net/process/abc" />
+
+</xs:schema>

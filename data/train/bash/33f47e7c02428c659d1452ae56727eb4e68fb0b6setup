@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if [ $(whoami) != "root" ]; then
+    echo "You must be root to run this!" ; echo ; exit 1
+fi
+
+if [[ $1 == "install" ]];then
+   mkdir /etc/sysconfig/wan-load-balance
+   cp src/wlb.conf /etc/sysconfig/wan-load-balance/
+   cp src/wan_load_balance /usr/sbin/
+   cp src/dead_router_detection /usr/sbin/
+   cp src/apply_failover /usr/sbin/
+   cp src/wan-load-balance /etc/init.d/
+elif [[ $1 == "remove" ]];then
+   rm -rf /etc/sysconfig/wan-load-balance
+   rm -rf /usr/sbin/wan_load_balance
+   rm -rf /usr/sbin/dead_router_detection
+   rm -rf /usr/sbin/apply_failover
+   rm -rf /etc/init.d/wan-load-balance
+else
+    echo "bash setup <install|remove>"
+fi

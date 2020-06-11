@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Colour palette 
+	#F90 orange
+	#F60 dark orange
+	#FFF white */
+.nav a, 
+.nav a:link,
+.nav a:visited{
+	display: block;
+	padding: 1rem;
+	text-align:center;
+	color: #fff;
+	text-decoration: none;
+	background-color: #F90;
+	/* border-width || border-style || border-color */
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active{
+	background-color: #F60;
+	border: 2px dotted #FFF;
+	padding: 8px;
+}
+
+footer{
+	clear: both;
+}
+	
+@media only screen and (min-width: 33em){
+.nav{
+	overflow: auto;
+}
+
+.nav a{
+	font-size: 80%;
+}
+
+.nav li{
+	float: left;
+	width: 25%;
+}
+	
+}
+
+@media only screen and (min-width: 35em){
+.nav{
+	background-color: #F90;
+	text-align: center;
+}
+
+.nav li{
+	display: inline-block;
+	float: none;
+	margin: 0;
+	width:auto;
+}
+	
+.nav a, 
+.nav a:link,
+.nav a:visited{
+	border-top: 0;
+	font-size: 100%;
+}
+
+}
+
+@media only screen and (min-width: 75em){
+.nav a,
+.nav a:link,
+.nav a:visited{
+	text-align: center;
+}	
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active{
+	background-color: #F69;
+}
+}

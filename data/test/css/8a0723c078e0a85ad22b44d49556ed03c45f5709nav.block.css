@@ -1,0 +1,35 @@
+#region-header .block-nav{
+    margin-top:54px;
+    margin-left:80px;
+}
+
+#region-header .block-nav .nav-item{
+    width: auto;
+    float:left;
+}
+
+#region-header .block-nav .nav-item a{
+    display:inline-block;
+    /*padding:18px 15px;*/
+    padding:10px 15px;
+    background:#EEE;
+    margin:0 1px;
+    color:#525252;
+    font-size:1.5em;
+    border-radius:8px 8px 0 0;
+}
+
+#region-header .block-nav .nav-item a:hover{
+    background:#458B74;
+    color:#EEE;
+}
+
+#region-header .block-nav .nav-item.nav-item-home,
+#region-header .block-nav .nav-item.nav-item-square{
+    /*border-right:1px #DDD solid;*/
+}
+
+#region-header .block-nav .nav-item.active-nav a{
+    background:#458B74;
+    color:#EEE;
+}

@@ -1,0 +1,24 @@
+.nav-left .main-header,
+.nav-right .main-header {position: static; width: auto; text-align: left; margin-bottom: 20px; overflow: hidden;}
+.main-header > h1,
+.nav-left .main-header > h1.logo,
+.nav-right .main-header > h1.logo,
+.main-header > .global-nav {width: 715px; margin: 20px auto;}
+.nav-left h1.logo img {float: none; max-width: 735px;}
+.main-header h1.text {margin-top: 20px;}
+.main-header h1.text a {padding: 0;}
+.global-nav li {text-align: left; margin-right: 1em;}
+.global-nav .grouping {padding: 0; margin-bottom: 10px;}
+.global-nav ul,
+.global-nav li,
+.global-nav a,
+.global-nav .basket {display: inline-block; vertical-align: top;}
+.global-nav li ul,
+.global-nav li li,
+.global-nav li li a {display: block;}
+.global-nav a {padding: 0;}
+.global-nav .basket {margin-top: 0; margin-bottom: 20px; float: right;}
+.nav-left .main-content,
+.nav-left .main-footer,
+.nav-right .main-content,
+.nav-right .main-footer {float: none; margin: 0 auto; width: 735px; }

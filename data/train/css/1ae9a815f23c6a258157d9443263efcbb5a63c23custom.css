@@ -1,0 +1,42 @@
+.add-new {
+    margin-bottom:10px;
+}
+.open-file {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.pic-upload {
+    margin-right: 20px;
+}
+.image-alert {
+    margin: 20px 30% 0;
+}
+a.model-name {
+    font-size: 17px;
+    font-family: inherit;
+    font-weight: bold;
+    line-height: 20px;
+    color: inherit;
+    text-rendering: optimizelegibility;
+}
+a.model-name:hover, a.model-name:focus {
+    text-decoration: underline;
+}
+
+a.product-img > img {
+    width: 160px;
+    height: 160px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    display: block;
+}
+
+
+/*ul.nav li.dropdown:hover ul.dropdown-menu{*/
+    /*display: block;*/
+/*}*/
+
+/* if you want to hide the arrow */
+/*a.menu:after, .dropdown-toggle:after {*/
+    /*content: none;*/

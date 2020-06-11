@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+{ (( $# == 1 )) && [ -d "$1" ] && [ -n "${1/ */}" ]; } || {
+  thisScript="$(basename "$(readlink -f "${BASH_SOURCE[0]}")")"; declare -r thisScript
+  printf \
+    '`usage: %s DIR_GIT_REPO` updates current branch on repo and fetches all remotes \n' \
+    "$thisScript" >&2
+  exit 1
+}
+
+repoDir="$1"; declare -r repoDir
+cd "$repoDir"
+currentBranch="$(git rev-parse --abbrev-ref HEAD)"; declare -r currentBranch
+
+isRepoClean() (
+  local diff stat
+  diff="$(git diff --shortstat 2>&1)"
+  stat="$(git status --porcelain 2>&1)"
+
+  [ -z "${diff/ */}" ] && [ -z "${stat/ */}" ]
+)
+
+isRepoClean || {
+  printf 'Repo %s is dirty, leaving untouched\n' "$(basename "$repoDir")" >&2
+  exit 1
+}
+
+git fetch --all
+
+git pull origin "$currentBranch"
+
+git status

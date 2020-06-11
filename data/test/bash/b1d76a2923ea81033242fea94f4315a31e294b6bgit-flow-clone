@@ -1,0 +1,62 @@
+#!/bin/sh
+
+USAGE='Clone a git repo with support for the gitflow branching model.
+    usage: git flow clone [options] [--] <repo> [<dir>]
+  options: -p Create intermediate directories as required.'
+
+# Something went wrong
+function fail { echo "$USAGE" >&2; exit 1; }
+
+# Extracts and creates the following from default git arguments:
+#   DIR_STRUCTURE - intermediate directories to the repo
+#   REPO - the name of the remote git repo
+#   LOCAL_REPO (optional) - the name of the cloned git repo
+function parse_git_args {
+  web='https?://[^/]+/'
+  ssh='[^:]+:'
+  path=`echo "$1" | sed -E "s,($web|$ssh),,"`
+  DIR_STRUCTURE=`dirname "$path"`
+  REPO=`basename "$path" | sed -E "s/.git$//"`
+  if [ -n "$2" ]; then
+    LOCAL_REPO=$2
+  else
+    LOCAL_REPO=$REPO
+  fi
+}
+
+# Clones a repo and performs Gitflow setup
+function clone_as_gitflow_repo {
+  git clone $@ -b master || fail
+  cd "$LOCAL_REPO"
+  if (git checkout develop 2> /dev/null); then
+    git flow init -d
+  else
+    echo "converting a non-Gitflow repo into a Gitflow repo"
+    git flow init -d
+    git push -u origin develop
+  fi
+}
+
+# Missing <repo> arg
+if [ $# -eq 0 ]; then fail; fi
+
+if [ $1 = '-p' ]; then
+  COPY_DIR_STRUCTURE=true
+  shift
+fi
+
+parse_git_args $@
+if [ "$COPY_DIR_STRUCTURE" = true ]; then
+  mkdir -p "$DIR_STRUCTURE" || fail
+  cd "$DIR_STRUCTURE"
+fi
+clone_as_gitflow_repo $@
+if [ "$COPY_DIR_STRUCTURE" = true ]; then
+  echo "Gitflow repo cloned to ${DIR_STRUCTURE}/${LOCAL_REPO}"
+else
+  echo "Gitflow repo cloned to ${LOCAL_REPO}"
+fi
+
+
+# exit so we don't continue continue up the git call stack
+exit 0

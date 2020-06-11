@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE beans PUBLIC
+	"-//SPRING//DTD BEAN 2.0//EN"
+	"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+	
+	<beans default-autowire="byName">
+	
+	<!-- service -->
+	<bean scope="prototype" id="getAllServiceInfo" class="repository.actions.service.GetAllServiceInfoAction">
+		<property name="serviceService" ref="serviceService" />
+	</bean>
+	<bean scope="prototype" id="serviceOverView" class="repository.actions.service.ServiceOverViewAction">
+		<property name="serviceService" ref="serviceService" />
+		<property name="tagService" ref="tagService" />
+		<property name="tagServiceService" ref="tagServiceService" />
+	</bean>
+	<bean scope="prototype" id="editInformation" class="repository.actions.service.EditInformationAction">
+		<property name="serviceService" ref="serviceService" />
+	</bean>
+	<bean  scope="prototype" id="serviceOperations" class="repository.actions.service.ServiceOperationsAction" >
+		<property name="width" value="30" />
+		<property name="serviceService" ref="serviceService" />
+		<property name="operationService" ref="operationService" />
+	</bean>
+	<bean  scope="prototype" id="serviceGraph" class="repository.actions.service.ServiceGraphAction" >
+		<property name="serviceService" ref="serviceService" />
+		<property name="operationService" ref="operationService" />
+		<property name="serviceGraphService" ref="serviceGraphService" />
+	</bean>
+	<bean scope="prototype" id="servicesByTag" class="repository.actions.service.ServicesByTagAction">
+		<property name="serviceService" ref="serviceService" />
+		<property name="tagServiceService" ref="tagServiceService" />
+	</bean>
+	<bean id="servicePreUpdate" class="repository.actions.service.ServicePreUpdateAction">
+		<property name="serviceService" ref="serviceService" />
+	</bean>
+	<bean scope="prototype" id="serviceUpdate" class="repository.actions.service.ServiceUpdateAction">
+		<property name="serviceService" ref="serviceService" />
+	</bean>
+	<bean scope="prototype" id="serviceSubscription" class="repository.actions.service.ServiceSubscriptionAction">
+		<property name="serviceService" ref="serviceService" />
+		<property name="serviceSubscriptionService" ref="serviceSubscriptionService" />
+	</bean>
+	<bean scope="prototype" id="serviceTryit" class="repository.actions.service.ServiceTryitAction">
+		<property name="serviceDetail" ref="serviceDetail" />
+		<property name="serviceService" ref="serviceService" />
+		<property name="operationService" ref="operationService" />
+	</bean>
+	
+	<bean scope="prototype" id="test" class="repository.actions.service.Test"></bean>
+	
+	<!-- comments -->
+	<bean scope="prototype" id="getComments" class="repository.actions.comments.GetCommentsAction">
+		<property name="serviceService" ref="serviceService" />
+		<property name="commentsService" ref="commentsService" />
+	</bean>
+	<bean scope="prototype" id="saveComments" class="repository.actions.comments.SaveCommentsAction">
+		<property name="commentsService" ref="commentsService" />
+	</bean>
+	<bean scope="prototype" id="appraiseComments" class="repository.actions.comments.AppraiseCommentsAction">
+		<property name="commentsService" ref="commentsService" />
+	</bean>
+	<bean scope="prototype" id="recommendation" class="repository.actions.comments.RecommendationAction">
+		<property name="serviceService" ref="serviceService" />
+	</bean>
+	
+	<!-- news -->
+	<bean scope="prototype" id="getNews" class="repository.actions.news.GetNewsAction">
+		<property name="newsService" ref="newsService" />
+	</bean>
+	<bean scope="prototype" id="getAllNews" class="repository.actions.news.GetAllNewsAction">
+		<property name="newsService" ref="newsService" />
+	</bean>
+	<bean scope="prototype" id="newsDetails" class="repository.actions.news.NewsDetailsAction">
+		<property name="newsService" ref="newsService" />
+	</bean>
+	
+	<!-- cluster -->
+	<bean scope="prototype" id="categoryTree" class="repository.actions.cluster.CategoryTreeAction">
+		<property name="clusterNum" value="10" />
+		<property name="serviceClusterService" ref="serviceClusterService" />
+	</bean>
+	<bean scope="prototype" id="servicesByCluster" class="repository.actions.cluster.ServicesByClusterAction">
+		<property name="serviceService" ref="serviceService" />
+		<property name="serviceClusterService" ref="serviceClusterService" />
+	</bean>
+		
+	<!-- tag -->
+	<bean scope="prototype" id="hotTags" class="repository.actions.tags.HotTagsAction">
+		<property name="num" value="20" />
+		<property name="tagService" ref="tagService" />
+	</bean>
+	<bean scope="prototype" id="addTag" class="repository.actions.tags.AddTagAction">
+		<property name="tagService" ref="tagService" />
+		<property name="tagServiceService" ref="tagServiceService" />
+		<property name="validate" ref="validate"></property>
+	</bean>
+	<bean scope="prototype" id="serviceTags" class="repository.actions.tags.ServiceTagsAction">
+		<property name="tagService" ref="tagService" />
+		<property name="tagServiceService" ref="tagServiceService" />
+	</bean>
+	
+	<!-- user -->
+	<bean scope="prototype" id="user" class="repository.actions.user.UserAction">
+		<property name="userService" ref="userService" />
+	</bean>
+	
+	<!-- search -->
+	<bean scope="prototype" id="searchBeans" class="repository.actions.search.SearchBeansAction">
+		<property name="keywordService" ref="keywordService" />
+		<property name="serviceKeywordService" ref="serviceKeywordService" />
+		<property name="serviceService" ref="serviceService" />
+	</bean>
+	
+	<!-- register -->
+	<bean id="registerServicePre" class="repository.actions.register.RegisterServicePreAction" />
+	<bean scope="prototype" id="registerService" class="repository.actions.register.RegisterServiceAction">
+		<property name="businessId" value="1" />	<!-- default business id -->
+		<property name="registryImpl" ref="registryImpl" />
+	</bean>
+	
+	<!-- log -->
+	<bean scope="prototype" id="serviceLog" class="repository.actions.log.ServiceLogAction">
+		<property name="serviceService" ref="serviceService" />
+		<property name="serviceLogService" ref="serviceLogService" />
+	</bean>
+	<bean scope="prototype" id="queryLog" class="repository.actions.log.QueryLogAction">
+		<property name="serviceService" ref="serviceService" />
+		<property name="queryLogService" ref="queryLogService" />
+	</bean>
+	<bean scope="prototype" id="serviceSubscriptionLog" class="repository.actions.log.ServiceSubscriptionLog">
+		<property name="serviceService" ref="serviceService" />
+		<property name="serviceSubscriptionService" ref="serviceSubscriptionService" />
+	</bean>
+</beans> 

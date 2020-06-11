@@ -1,0 +1,61 @@
+.blocks-analytics-service #process_container,
+.blocks-analytics-service #summary_container,
+.blocks-analytics-service #users_container,
+.blocks-analytics-service #courses_container,
+.blocks-analytics-service #activities_container{
+	border: none;
+    margin: 0 auto;
+	width: 60%;
+}
+.blocks-analytics-service #process_info_container{
+	border: 1px solid #AAA;
+	padding: 10px;
+	margin: 20px auto;
+	width: 75%
+	
+}
+
+.blocks-analytics-service #reset_container, 
+.blocks-analytics-service #process_button_container{
+	margin: 20px 0 20px 0;
+	text-align: center;
+}
+
+.blocks-analytics-service #process_intro_container{
+	margin-bottom: 20px;
+}
+
+.blocks-analytics-service #summary_container table, 
+.blocks-analytics-service #users_container table, 
+.blocks-analytics-service #courses_container table,
+.blocks-analytics-service #activities_container table{
+	width: 500px;
+}
+
+.blocks-analytics-service #summary_container .name{
+    font-weight: bold;
+	text-align: right;
+}
+
+.blocks-analytics-service #users_container .name,
+.blocks-analytics-service #courses_container .name{
+    font-weight: bold;
+	text-align: left;
+}
+
+.blocks-analytics-service #summary_container .value,
+.blocks-analytics-service #summary_container .actions,
+.blocks-analytics-service #users_container .count,
+.blocks-analytics-service #courses_container .count,
+.blocks-analytics-service #activities_container .count{
+	text-align: center;
+}
+
+.blocks-analytics-service #activities_container .usage{
+    text-align: left;
+}
+
+.blocks-analytics-service label{
+	font-weight: bold;
+}
+

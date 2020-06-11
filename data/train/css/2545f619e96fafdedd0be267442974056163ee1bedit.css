@@ -1,0 +1,197 @@
+.write_container {
+	width: 800px;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 150px;
+}
+.write_title {
+	/*margin: 0 auto;*/
+	width: 400px;
+}
+.write_title input {
+	border: 1px solid transparent;
+	padding: 10px 20px;
+	width: 360px;
+	outline:0;
+	font-size: 14px;
+}
+.write_content {
+	width: 800px;
+	margin-top: 20px;
+	position: relative;
+	overflow: hidden;
+}
+.write_content .write_text {
+	width: 760px;
+	height: 400px;
+	padding: 10px 20px;
+	border: 1px solid transparent;
+	outline: 0;
+	font-size: 14px;
+}
+.write_content .write_wordsnum {
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+	font-size: 14px;
+}
+.write_tags {
+	width: 800px;
+	margin-top: 20px;
+}
+.write_tags input {
+	border: 1px solid transparent;
+	padding: 10px 20px;
+	width: 360px;
+	outline: 0;
+	font-size: 14px;
+	/*float: left;*/
+}
+.write_tags .show_tags {
+	/*float: left;*/
+	width: 800px;
+	margin-top: 10px;
+	/*padding-left: 20px;*/
+	/*padding-top: 15px;*/
+}
+.write_tags .show_tags a {
+	border: 1px solid #3592DD;
+	padding: 3px 10px;
+	border-radius: 100px;
+	cursor: pointer;
+	color: black;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	/*display: block;*/
+	float: left;
+	font-size: 12px;
+}
+.write_tags .show_tags a:hover {
+	background-color: #3592DD;
+	color: white;
+}
+.write_tool {
+	width: 800px;
+	/*height: 40px;*/
+	margin-top: 20px;
+	/*background-color: white;*/
+}
+.write_tool ul {
+	/*height: 38px;*/
+	/*line-height: 40px;*/
+}
+.write_tool ul li {
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 14px;
+	height: 40px;
+	line-height: 40px;
+	/*border: 1px solid #3592DD;*/
+	border-right: 1px solid #F2F2F2;
+	border-bottom: 1px solid #F2F2F2;
+	background-color: #ffffff;
+	float: left;
+	cursor: pointer;
+}
+.write_tool ul li:hover {
+	background-color: #3592DD;
+	color: white;
+}
+.CodeMirror {
+	height: 600px;
+}
+.CodeMirror-lines {
+	padding: 10px;
+	line-height: 20px;
+}
+.show_preview {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	height: 600px;
+	width: 100%;
+	background-color: #f2f2f2;
+	z-index: 2;
+	overflow: auto;
+}
+.write_input {
+	width: 100%;
+	padding: 10px 0;
+}
+.write_save {
+	padding: 5px 10px;
+	color: white;
+	background-color: #6cd465;
+	border-radius: 5px;
+	-webkit-transition: all 0.25s ease 0;
+	-moz-transition: all 0.25s ease 0;
+	transition: all 0.25s ease 0;
+}
+.write_save:hover {
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+.write_msg {
+	font-size: 12px;
+	margin-left: 20px;
+	color: red;
+}
+
+/*栏目*/
+.write_cat {
+	position: relative;
+	margin-top: 10px;
+	width: 100%;
+	/*height: 200px;*/
+	background-color: white;
+	overflow: hidden;
+	display: none;
+}
+.write_cat .write_cat_select {
+	margin: 10px;
+}
+.write_cat .write_cat_select ul li {
+	border:1px solid #6cd465;
+	float: left;
+	padding: 2px 10px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 12px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.write_cat .write_cat_select ul li.select {
+	/*border:1px solid #6cd465;*/
+	background-color: #6cd465;
+	color: white;
+}
+/*文章状态*/
+.write_state {
+	position: relative;
+	margin-top: 10px;
+	width: 100%;
+	/*height: 200px;*/
+	background-color: white;
+	overflow: hidden;
+	display: none;
+}
+.write_state .write_state_select {
+	margin: 10px;
+}
+.write_state .write_state_select ul li {
+	border:1px solid #6cd465;
+	float: left;
+	padding: 2px 10px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 12px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.write_state .write_state_select ul li.select {
+	background-color: #6cd465;
+	color: white;
+}
+
+

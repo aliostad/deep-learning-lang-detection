@@ -1,0 +1,42 @@
+/**
+ * 店铺装修-客户服务模块
+ * @authors 	Inman Shaw
+ * @date 		2014-06-10 15:01:58
+ * @version 	1.0.0
+ */
+
+.mod-service{border:3px solid #e6e6e6;background-color: #fff;margin-bottom: 10px;font-size: 0}
+.mod-service-title{background-image: url(../../img/sc/zx/service.png);background-repeat: no-repeat;}
+.mod-service-title{width: 21.3%;height: 0;padding-top: 94px;overflow: hidden;float: left;background-position:18px 14px;}
+.mod-service-l, .mod-service-r{height: 94px;line-height: 94px;}
+.mod-service-l{background-position: 5px -80px;float: left;width: 40.5%;}
+.mod-service-r{background-position: 5px -180px;margin-left: 61.8%;padding-right: 10%;}
+.mod-service-cnt{font-size: 0}
+.mod-service-list{line-height: 20px;display: inline-block; vertical-align: middle;margin-left: -10px;max-height: 94px;}
+.mod-service-list a{font-size: 13px;display: inline-block;height: 20px;margin-left: 20px;color: #333}
+.mod-service-l .mod-service-list{width: 90%;}
+.mod-service-r .mod-service-list{width: 80%;}
+/* icons */
+.mod-service .ico-cat, .mod-service .ico-qq{display: inline-block;width: 20px;height: 20px;vertical-align: -5px;background-repeat: no-repeat;background-position: center center;margin-right: 6px;}
+.mod-service .ico-cat{background-image: url(../../img/public/icon/16x16/cat_static.png);}
+.mod-service .ico-qq{background-image: url(../../img/public/icon/16x16/qq.gif);}
+
+.mod-service .ico-presales,.mod-service .ico-aftersales{display: inline-block;width: 35px;height: 0;padding-top: 94px;overflow: hidden;background-image:url(../../img/sc/zx/service.png);background-repeat: no-repeat;vertical-align: top;background-color: #f1f1f1;}
+.mod-service .ico-presales{background-position:5px -80px }
+.mod-service .ico-aftersales{background-position:5px -180px }
+
+/* 窄 */
+.wrap-small .mod-service-title{width: 26.5%;}
+.wrap-small .mod-service-r{margin-left: 67%;padding-right: 0;}
+
+/* 侧栏 */
+.aside .mod-service{border: 1px solid #e6e6e6;border-radius: 3px}
+.aside .mod-service-title{float: none;width: auto;background-color: #333;background-position: 10px -282px;border-radius: 3px;margin: -1px;}
+.aside .mod-service .ico-presales,.aside .mod-service .ico-aftersales{display: block;font-size: 13px;height: auto;width: auto;padding: 8px 10px 5px;background: none}
+.aside .mod-service .ico-aftersales{border-top: 1px dotted #e8e8e8;}
+.aside .mod-service-list{max-height: 500px;margin: 0;padding: 0 10px 10px;display: block;width: auto;}
+.aside .mod-service-list a{margin: 0 20px 0 0;}
+.aside .mod-service-r .mod-service-list{}
+.aside .mod-service-l,.aside .mod-service-r{float: none;width: 100%;margin: 0;padding: 0;line-height: 1.5;height: auto;}
+.aside .mod-service-inner{height: auto;line-height: 1.5;}
+

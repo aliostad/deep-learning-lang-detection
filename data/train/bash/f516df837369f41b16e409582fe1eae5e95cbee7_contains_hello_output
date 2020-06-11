@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# check if stdin contains the output of the program "hello",
+# the shape is like(assuming 8 processes):
+# Hello World! Process 0 of 8
+# Hello World! Process 5 of 8
+# Hello World! Process 1 of 8
+# Hello World! Process 6 of 8
+# Hello World! Process 3 of 8
+# Hello World! Process 4 of 8
+# Hello World! Process 7 of 8
+# Hello World! Process 2 of 8
+# with the order can be changed
+
+result="true"
+actual=$(cat)
+
+for (( i=0; i<$1; i=i+1 ))
+do
+	echo $actual| grep "Hello World! Process $i of $procs." >/dev/null
+	if [ ! $? -eq 0 ]; then
+		result="false"
+		pos=$i
+		break
+	fi
+done
+
+# show result
+if [ $result == "false" ]; then
+	echo "false; cannot find message from No.$pos processes."
+else
+	echo true
+fi

@@ -1,0 +1,49 @@
+/* Basscss Utility Responsive States */
+
+.xsm-show, .sm-show, .md-show, .lg-show, .xlg-show {
+  display: none !important
+}
+
+.xsm-show-inline, .sm-show-inline, .md-show-inline, .lg-show-inline, .xlg-show-inline {
+  display: none !important
+}
+
+@media (--breakpoint-xsm) {
+  .xsm-show-inline { display: inline-block !important }
+  .xsm-show { display: block !important }
+  .xsm-hide { display: none !important }
+}
+
+@media (--breakpoint-sm) {
+  .sm-show-inline { display: inline-block !important }
+  .sm-show { display: block !important }
+  .sm-hide { display: none !important }
+}
+
+@media (--breakpoint-md) {
+  .md-show-inline { display: inline-block !important }
+  .md-show { display: block !important }
+  .md-hide { display: none !important }
+}
+
+@media (--breakpoint-lg) {
+  .lg-show-inline { display: inline-block !important }
+  .lg-show { display: block !important }
+  .lg-hide { display: none !important }
+}
+
+@media (--breakpoint-xlg) {
+  .xlg-show-inline { display: inline-block !important }
+  .xlg-show { display: block !important }
+  .xlg-hide { display: none !important }
+}
+
+.display-none { display: none !important }
+
+.hide {
+  position: absolute !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}

@@ -1,0 +1,75 @@
+.write-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    position: relative;
+    top: 60px;
+}
+
+.write-center .writing-card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;
+    align-items: center; */
+    height: 80vh;
+}
+.write-center .writing-card #title {
+    padding: 4px 10px;
+    width: 100%;
+    height: 60px;
+    font-size: 38px;
+    border: none;
+    font-weight: 600;
+}
+
+.write-center .writing-card #location {
+    padding: 4px 10px;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.write-center .writing-card textarea {
+    padding: 4px 10px;
+    width: 100%;
+    min-height: 80%;
+    border: none;
+    font-size: 20px;
+}
+
+.write-center .writing-card button{
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin: 0 auto;
+    height: 35px;
+    width: 90px;
+    background-color: white;
+    border: #ededed 2px solid;
+    color: #bdbdbd;
+    border-radius: 17.5px;
+}
+
+.write-center .writing-card button:hover{
+    border-color: #F57170;
+    color: #F57170;
+    -webkit-transition: border-color .5s, color .5s;
+    transition: border-color .5s, color .5s;
+}
+
+#countries {
+  padding: 4px 10px;
+  width: 100%;
+  height: 20px;
+  border: none;
+  box-shadow: none;
+}
+
+
+
+    
+    

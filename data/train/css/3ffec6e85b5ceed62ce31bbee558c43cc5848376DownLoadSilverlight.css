@@ -1,0 +1,35 @@
+﻿body {
+}
+
+.D_DownLoadContainer
+{    
+     width:660px;
+     margin:0 auto;
+    font-size:14px;
+    color:rgb(53,53,53);
+       }
+       
+.SpanBold
+{
+   color:rgb(255,96,0) ;
+    font-weight:bold;
+ padding-left:28px;
+       padding-bottom:30px;
+      padding-top:30px;
+      display:block;
+    }
+  .DownLoadUrl
+  {
+      padding-bottom:40px;
+      padding-top:10px;
+      
+      }
+        .D_DownLoadContainer a
+        {
+               color:rgb(255,96,0) ;
+            }
+.D_DownLoadContainer span
+{
+    display:block;
+    padding-top:10px;
+    }

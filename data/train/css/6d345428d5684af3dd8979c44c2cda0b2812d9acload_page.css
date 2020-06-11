@@ -1,0 +1,162 @@
+
+/*---------------------------------------*
+	パネルをクリックした後のレイアウト
+
+
+
+
+/*------------------------------*
+index の　親 li　w100 h150 が基準
+/*------------------------------*/
+
+		#load_wrapper{
+			position:absolute;
+			width:100%;
+			height:100%;
+		}
+
+
+
+
+
+
+
+/*------------------------------*
+	パネルのタイトル部分
+/*------------------------------*/
+
+		#load_wrapper #page_title{
+			position:absolute;
+			z-index:9000;
+			width:100%;
+			height:20%;
+		}
+
+
+		#load_wrapper #title_text{
+
+			padding:20px 0 0 20px;
+		}
+
+
+		#load_wrapper h2{
+			margin:0;
+			padding:0;
+		}
+
+
+
+
+
+
+
+
+/*------------------------------*
+	UI　を表示する場所
+/*------------------------------*/
+
+		#load_wrapper #load_stage{
+
+			position:absolute;
+			top:50%;
+			left:50%;
+			background:rgba(255,255,255,0.8);
+			
+			
+			width:100%;
+			margin-left:-50%;
+			height:300px;
+			margin-top:-150px;
+		}
+
+
+
+
+
+
+
+
+/*------------------------------*
+	ステージ内に　テキストを表示する
+/*------------------------------*/
+
+
+		#load_stage_text{
+			position:absolute;
+			z-index: 9999;
+			width:100%;
+		}
+		#load_stage_text ul{
+			margin:0;
+			padding:0;
+		}
+		#load_stage_text li,#load_stage_text h3{
+			position:absolute;
+			top:0;
+			border-bottom: 1px solid #333;
+			width:200px;
+			height:50px;
+			text-align: center;
+			line-height: 3;
+		}
+		#load_stage_text li a{}
+		#load_stage_text li a:hover{}
+
+
+
+
+
+
+
+
+
+/*------------------------------*
+	さらに都合でリンクをつけたい場合
+/*------------------------------*/
+
+
+		#link_area{
+
+			position: absolute;
+			bottom:0;
+			width:100%;
+			height:20%;
+			/*border:1px solid;*/
+		}
+
+
+		#link_area div{
+
+			background:#333;
+			width:33.333%;
+			height:100%;
+			float:left;
+			text-align: center;
+			font-size: 1.2em;
+			line-height: 5;
+			color:#eee;
+		}
+
+
+		#link_area a,#link_area p{
+			display:block;
+			width:100%;
+			height:100%;
+			color:#eee;
+		}
+
+		#link_area a:hover,#link_area p:hover{
+			background:#999;
+		}
+
+
+		.none{
+
+			display:none;
+		}
+
+
+		#sphere_obj{
+
+			background:rgba(0,0,0,0.5);
+		}

@@ -1,0 +1,126 @@
+.modeloverlay {
+  top: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+}
+.modeloverlay-overlay {
+  top: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+.ninja-hide {
+  opacity: 0;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+.loadingifempty:empty {
+  min-height: 200px;
+  background-image: url('loading.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.confirmModel {
+  top: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+}
+.confirmModel .confirmModel-overlay {
+  top: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+.confirmModel .container .panel {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+.settingsModel {
+  top: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+}
+.settingsModel .settingsModel-overlay {
+  top: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+.panel-user {
+  padding: 10px;
+  background-color: #eee;
+}
+.panel-user li {
+  border: none !important;
+}
+.panel-user .page-loading {
+  border-radius: 3px !important;
+  background-color: #fff !important;
+}
+.anim-3 {
+  -webkit-transition: all .3s !important;
+  transition: all .3s !important;
+}
+.anim-2 {
+  -webkit-transition: all .2s !important;
+  transition: all .2s !important;
+}
+.anim-4 {
+  -webkit-transition: all .4s !important;
+  transition: all .4s !important;
+}
+.anim-hide {
+  -webkit-transform: scale(0.8) !important;
+  -ms-transform: scale(0.8) !important;
+  transform: scale(0.8) !important;
+  opacity: 0 !important;
+}
+.page-loading {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  padding: 10px 15px;
+  color: white;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+.page-loading.ninja-hide {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  right: -100px;
+}
+.font3x {
+  font-size: 3em !important;
+}
+.font2x {
+  font-size: 2em !important;
+}
+.font4x {
+  font-size: 4em !important;
+}
+.font5x {
+  font-size: 5em !important;
+}

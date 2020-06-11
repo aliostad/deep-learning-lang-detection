@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <service_name>-Video- FLV</service_name>
+  <service_media>video</service_media>
+  <service_regex><![CDATA[video:(?P<sval1>.*\.(flv|f4v|m4v|mp4|3gp|3g2))$]]></service_regex>
+  <service_playlist><![CDATA[]]></service_playlist>
+  <service_url><![CDATA[video:{serviceVAL}]]></service_url>
+  <service_callback>EWRmedio_Services_VideoFLV</service_callback>
+  <service_width>640</service_width>
+  <service_height>360</service_height>
+  <service_embed><![CDATA[<script type="text/javascript">
+$.getScript("{scriptjw}/jwplayer.js", function () {
+	jwplayer("embed_player").setup({
+		flashplayer: "{scriptjw}/player.swf",
+		file: "{external}/{serviceVAL}",
+		skin: "{scriptjw}/video.xml",
+		autostart: "{apTF}",
+		width: "{w}",
+		height: "{h}",
+		'controlbar.position': "over"
+	});
+});
+</script>]]></service_embed>
+  <service_local>1</service_local>
+</service>

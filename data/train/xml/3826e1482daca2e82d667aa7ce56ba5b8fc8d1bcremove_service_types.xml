@@ -1,0 +1,205 @@
+<openerp>
+<data>
+
+	<delete id="fleet.type_service_service_1" model="fleet.service.type"/>
+	<delete id="fleet.type_service_service_2" model="fleet.service.type"/>
+	<delete id="fleet.type_service_service_3" model="fleet.service.type"/>
+	<delete id="fleet.type_service_service_5" model="fleet.service.type"/>
+	<delete id="fleet.type_service_service_6" model="fleet.service.type"/>
+	<delete id="fleet.type_service_service_7" model="fleet.service.type"/>
+<!-- 	<delete id="fleet.type_service_service_8" model="fleet.service.type"/> da bi imao "repair and maintenance"-->
+	<record id="fleet.type_service_service_8" model="fleet.service.type">
+		<field name="name">Redovan servis</field>
+	</record>
+	
+
+	<delete id="fleet.type_service_service_9" model="fleet.service.type"/>
+	<delete id="fleet.type_service_service_10" model="fleet.service.type"/>
+	<delete id="fleet.type_service_service_11" model="fleet.service.type"/>
+	<delete id="fleet.type_service_service_12" model="fleet.service.type"/>
+	<delete id="fleet.type_service_service_13" model="fleet.service.type"/>
+	<delete id="fleet.type_service_service_14" model="fleet.service.type"/>
+	<delete id="fleet.type_service_service_15" model="fleet.service.type"/>
+	<delete id="fleet.type_service_service_16" model="fleet.service.type"/>
+	<delete id="fleet.type_service_service_17" model="fleet.service.type"/>
+	<delete id="fleet.type_service_service_18" model="fleet.service.type"/>
+	<delete id="fleet.type_service_service_19" model="fleet.service.type"/>
+	
+	<delete id="fleet.type_service_1" model="fleet.service.type"/>
+	<delete id="fleet.type_service_2" model="fleet.service.type"/>
+	<delete id="fleet.type_service_3" model="fleet.service.type"/>
+	<delete id="fleet.type_service_4" model="fleet.service.type"/>
+	<delete id="fleet.type_service_5" model="fleet.service.type"/>
+	<delete id="fleet.type_service_6" model="fleet.service.type"/>
+	<delete id="fleet.type_service_7" model="fleet.service.type"/>
+	<delete id="fleet.type_service_8" model="fleet.service.type"/>
+	<delete id="fleet.type_service_9" model="fleet.service.type"/>
+	<delete id="fleet.type_service_10" model="fleet.service.type"/>
+	<delete id="fleet.type_service_11" model="fleet.service.type"/>
+	<delete id="fleet.type_service_12" model="fleet.service.type"/>
+	<delete id="fleet.type_service_13" model="fleet.service.type"/>
+	<delete id="fleet.type_service_14" model="fleet.service.type"/>	
+	<delete id="fleet.type_service_15" model="fleet.service.type"/>
+	<delete id="fleet.type_service_16" model="fleet.service.type"/>
+	<delete id="fleet.type_service_17" model="fleet.service.type"/>
+	<delete id="fleet.type_service_18" model="fleet.service.type"/>
+	<delete id="fleet.type_service_19" model="fleet.service.type"/>
+	<delete id="fleet.type_service_20" model="fleet.service.type"/>
+	<delete id="fleet.type_service_21" model="fleet.service.type"/>	
+	<delete id="fleet.type_service_22" model="fleet.service.type"/>
+	<delete id="fleet.type_service_23" model="fleet.service.type"/>
+	<delete id="fleet.type_service_24" model="fleet.service.type"/>
+	<delete id="fleet.type_service_25" model="fleet.service.type"/>
+	<delete id="fleet.type_service_26" model="fleet.service.type"/>
+	<delete id="fleet.type_service_27" model="fleet.service.type"/>
+	<delete id="fleet.type_service_28" model="fleet.service.type"/>	
+	<delete id="fleet.type_service_29" model="fleet.service.type"/>
+	<delete id="fleet.type_service_30" model="fleet.service.type"/>
+	<delete id="fleet.type_service_31" model="fleet.service.type"/>
+	<delete id="fleet.type_service_32" model="fleet.service.type"/>
+	<delete id="fleet.type_service_33" model="fleet.service.type"/>
+	<delete id="fleet.type_service_34" model="fleet.service.type"/>
+	<delete id="fleet.type_service_35" model="fleet.service.type"/>	
+	<delete id="fleet.type_service_36" model="fleet.service.type"/>
+	<delete id="fleet.type_service_37" model="fleet.service.type"/>
+	<delete id="fleet.type_service_38" model="fleet.service.type"/>
+	<delete id="fleet.type_service_39" model="fleet.service.type"/>
+	<delete id="fleet.type_service_40" model="fleet.service.type"/>
+	<delete id="fleet.type_service_41" model="fleet.service.type"/>		
+	<delete id="fleet.type_service_42" model="fleet.service.type"/>
+	<delete id="fleet.type_service_43" model="fleet.service.type"/>
+	<delete id="fleet.type_service_44" model="fleet.service.type"/>
+	<delete id="fleet.type_service_45" model="fleet.service.type"/>
+	<delete id="fleet.type_service_46" model="fleet.service.type"/>
+	<delete id="fleet.type_service_47" model="fleet.service.type"/>		
+	<delete id="fleet.type_service_48" model="fleet.service.type"/>
+	<delete id="fleet.type_service_49" model="fleet.service.type"/>
+	<delete id="fleet.type_service_50" model="fleet.service.type"/>
+	<delete id="fleet.type_service_51" model="fleet.service.type"/>
+	<delete id="fleet.type_service_52" model="fleet.service.type"/>
+	<delete id="fleet.type_service_53" model="fleet.service.type"/>
+	
+	<delete id="fleet.type_contract_omnium" model="fleet.service.type"/>
+	<delete id="fleet.type_contract_repairing" model="fleet.service.type"/>
+	
+<!-- 	<delete id="fleet.type_contract_leasing" model="fleet.service.type"/> da bi imali za cost type registracije-->
+	<record id="fleet.type_contract_leasing" model="fleet.service.type">
+          <field name="name">Lizing</field>
+    </record>
+	
+	<record id="type_service_casco" model="fleet.service.type">
+          <field name="name">Kasko</field>
+          <field name="category">contract</field>
+    </record>
+	
+	<record id="fleet.type_service_refueling" model="fleet.service.type">
+          <field name="name">Gorivo</field>
+          <field name="category">fuel</field>
+    </record>
+	
+	<record id="type_service_agregat" model="fleet.service.type">
+          <field name="name">Agregat</field>
+          <field name="category">service</field>
+    </record>
+    
+    <record id="type_service_filteri" model="fleet.service.type">
+          <field name="name">Filteri</field>
+          <field name="category">service</field>
+          <field name="parent_id" ref="type_service_agregat" />
+    </record>
+    
+    <record id="type_service_donjiPostroj" model="fleet.service.type">
+          <field name="name">Donji postroj</field>
+          <field name="category">service</field>
+    </record>
+    
+    <record id="type_service_diskovi" model="fleet.service.type">
+          <field name="name">Diskovi</field>
+          <field name="category">service</field>
+          <field name="parent_id" ref="type_service_donjiPostroj" />
+    </record>
+    
+    <record id="type_service_diskPlocice" model="fleet.service.type">
+          <field name="name">Disk pločice</field>
+          <field name="category">service</field>
+          <field name="parent_id" ref="type_service_donjiPostroj" />
+    </record>
+    
+    <record id="type_service_elektro" model="fleet.service.type">
+          <field name="name">Elektro</field>
+          <field name="category">service</field>
+    </record>
+    
+    <record id="type_service_gume" model="fleet.service.type">
+          <field name="name">Gume</field>
+          <field name="category">service</field>
+    </record>
+    
+    <record id="type_service_nadgradnja" model="fleet.service.type">
+          <field name="name">Nadgradnja</field>
+          <field name="category">service</field>
+    </record>
+   
+    <record id="type_service_agregat" model="fleet.service.type">
+          <field name="name">Agregat</field>
+          <field name="category">service</field>
+    </record>
+   
+	<record id="type_service_ulje" model="fleet.service.type">
+          <field name="name">Ulje</field>
+          <field name="category">service</field>
+          <field name="parent_id" ref="type_service_agregat" />
+    </record>   
+   
+    
+    <record id="type_service_putarina" model="fleet.service.type">
+          <field name="name">Putarina</field>
+          <field name="category">other</field>
+    </record>
+    
+    <record id="type_service_putniTroskovi" model="fleet.service.type">
+          <field name="name">Putni troškovi</field>
+          <field name="category">other</field>
+    </record>
+    
+    <record id="type_service_dnevniceZaradeVozaca" model="fleet.service.type">
+          <field name="name">Dnevnice i zarade vozača</field>
+          <field name="category">other</field>
+    </record>
+    
+    <record id="type_service_terminali" model="fleet.service.type">
+          <field name="name">Terminali</field>
+          <field name="category">other</field>
+    </record>
+    
+    <record id="type_service_penalty" model="fleet.service.type">
+          <field name="name">Kazna</field>
+          <field name="category">other</field>
+    </record>
+    
+    <record id="type_service_black" model="fleet.service.type">
+          <field name="name">Crni trošak</field>
+          <field name="category">other</field>
+    </record>
+    
+    <record id="type_service_devizno" model="fleet.service.type">
+          <field name="name">Devizno</field>
+          <field name="category">other</field>
+    </record>
+    
+    <record id="type_service_spediterskeUsluge" model="fleet.service.type">
+          <field name="name">Špediterske usluge</field>
+          <field name="category">other</field>
+    </record>
+    
+    
+    
+	
+	
+	
+	
+	
+	
+	
+</data>
+</openerp>

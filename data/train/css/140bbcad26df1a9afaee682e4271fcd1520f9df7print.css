@@ -1,0 +1,56 @@
+.print-logo,
+.print-site_name,
+.print-breadcrumb,
+.view-calendar .pager,
+.print-hr,
+.view-calendar .feed-icon,
+.view-calendar .view-header p,
+.view-calendar .view-filters {
+  display: none;
+}
+
+.view-calendar .view-header {
+  background-image: url('../logo.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.ocha-logo .view-calendar .view-header {
+  background-image: url('../images/ocha-logo.jpg');
+}
+
+.calendar-calendar .week-view .full div.single-day div.weekview, .calendar-calendar .day-view .full div.single-day div.dayview {
+  color: black;
+  background: #ffffff;
+  position: relative;
+}
+
+.calendar-calendar .month-view .full td.single-day div.monthview, .calendar-calendar .week-view .full td.single-day div.weekview, .calendar-calendar .day-view .full td.single-day div.dayview {
+  background: #ffffff;
+  color: black;
+}
+
+.calendar-calendar .week-view td.first, .calendar-calendar .day-view td.first {
+  visibility: hidden;
+}
+
+.calendar-calendar .week-view #multi-day-container, .calendar-calendar .week-view #single-day-container, .calendar-calendar .day-view #multi-day-container, .calendar-calendar .day-view #single-day-container {
+  overflow-y: hidden;
+}
+
+.calendar-calendar td a {
+  color: black;
+}
+
+.calendar-calendar .week-view .full div.calendar-agenda-hour, .calendar-calendar .day-view .full div.calendar-agenda-hour, .calendar-calendar .week-view .full div.calendar-agenda-items, .calendar-calendar .day-view .full div.calendar-agenda-items {
+  height: auto;
+}
+
+.calendar-calendar .week-view div.single-day .view-item, .calendar-calendar .day-view div.single-day .view-item {
+  position: relative;
+}
+
+#single-day-container {
+  height: auto !important;
+}
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<s:scufl xmlns:s="http://org.embl.ebi.escience/xscufl/0.1alpha" version="0.2" log="0">
+  <s:workflowdescription lsid="urn:lsid:net.sf.taverna:wfDefinition:f43db36c-a3ed-4f78-8d1c-89f27dfb53f7" author="" title="Flatten_and_make_unique" />
+  <s:processor name="Remove_duplicate_strings">
+    <s:local>org.embl.ebi.escience.scuflworkers.java.StringStripDuplicates</s:local>
+  </s:processor>
+  <s:processor name="Flatten_list">
+    <s:local>
+      org.embl.ebi.escience.scuflworkers.java.FlattenList
+      <s:extensions>
+        <s:flattenlist s:depth="2" />
+      </s:extensions>
+    </s:local>
+  </s:processor>
+  <s:link source="input" sink="Flatten_list:inputlist" />
+  <s:link source="Flatten_list:outputlist" sink="Remove_duplicate_strings:stringlist" />
+  <s:link source="Remove_duplicate_strings:strippedlist" sink="flattened_unique_output" />
+  <s:source name="input" />
+  <s:sink name="flattened_unique_output" />
+</s:scufl>
+

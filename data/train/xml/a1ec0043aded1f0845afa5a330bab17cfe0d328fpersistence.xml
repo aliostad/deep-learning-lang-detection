@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+	version="2.1">
+	<persistence-unit name="sdrepPU" transaction-type="JTA">
+		<jta-data-source>jdbc/ServiceDesk</jta-data-source>
+		<mapping-file>META-INF/mappings/global.xml</mapping-file>
+		<mapping-file>META-INF/mappings/ApprovalStatus.xml</mapping-file>
+		<mapping-file>META-INF/mappings/BusinessArea.xml</mapping-file>
+		<mapping-file>META-INF/mappings/Category.xml</mapping-file>
+		<mapping-file>META-INF/mappings/ContactInfo.xml</mapping-file>
+		<mapping-file>META-INF/mappings/Department.xml</mapping-file>
+		<mapping-file>META-INF/mappings/HumanResource.xml</mapping-file>
+		<mapping-file>META-INF/mappings/HumanResourceHoliday.xml</mapping-file>
+		<mapping-file>META-INF/mappings/Impact.xml</mapping-file>
+		<mapping-file>META-INF/mappings/Item.xml</mapping-file>
+		<mapping-file>META-INF/mappings/Level.xml</mapping-file>
+		<mapping-file>META-INF/mappings/Login.xml</mapping-file>
+		<mapping-file>META-INF/mappings/Mode.xml</mapping-file>
+		<mapping-file>META-INF/mappings/Priority.xml</mapping-file>
+		<mapping-file>META-INF/mappings/Request.xml</mapping-file>
+		<mapping-file>META-INF/mappings/RequestStatus.xml</mapping-file>
+		<mapping-file>META-INF/mappings/RequestType.xml</mapping-file>
+		<mapping-file>META-INF/mappings/Site.xml</mapping-file>
+		<mapping-file>META-INF/mappings/SLA.xml</mapping-file>
+		<mapping-file>META-INF/mappings/SubCategory.xml</mapping-file>
+		<mapping-file>META-INF/mappings/Urgency.xml</mapping-file>
+		<mapping-file>META-INF/mappings/User.xml</mapping-file>
+		<mapping-file>META-INF/mappings/WorkloadDailyHistory.xml</mapping-file>
+		<mapping-file>META-INF/mappings/WorkloadQuota.xml</mapping-file>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<validation-mode>NONE</validation-mode>
+		<properties>
+			<property name="eclipselink.logging.level.sql" value="FINER" />
+			<property name="eclipselink.logging.parameters" value="true" />
+		</properties>
+	</persistence-unit>
+</persistence>

@@ -1,0 +1,57 @@
+#card-image-title{
+    color: white;
+}
+
+#card-image-title.background--light {
+    color: black;
+}
+#card-image-title.background--dark {
+    color: white;
+}
+#card-image-title.background--complex {
+    color: whitesmoke;
+}
+
+#show-send-text{
+    color: white;
+}
+#show-send-text.background--light {
+    color: black;
+}
+#show-send-text.background--dark {
+    color: white;
+}
+#show-send-text.background--complex {
+    color: whitesmoke;
+}
+
+#hashtag{
+    color: white;
+}
+#hashtag.background--light {
+    color: black;
+}
+#hashtag.background--dark {
+    color: white;
+}
+#hashtag.background--complex {
+    color: whitesmoke;
+}
+
+#show-send-content{
+    color: white;
+}
+
+#show-text-content{
+    color: white;
+}
+
+#show-text-content.background--light {
+    color: black;
+}
+#show-text-content.background--dark {
+    color: white;
+}
+#show-text-content.background--complex {
+    color: whitesmoke;
+}

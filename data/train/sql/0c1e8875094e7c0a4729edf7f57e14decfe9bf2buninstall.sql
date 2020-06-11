@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS `#__quipforum_boards`;
+DROP TABLE IF EXISTS `#__quipforum_board_access`;
+DROP TABLE IF EXISTS `#__quipforum_boards_read`;
+DROP TABLE IF EXISTS `#__quipforum_flagged_posts`;
+DROP TABLE IF EXISTS `#__quipforum_links`;
+DROP TABLE IF EXISTS `#__quipforum_posts`;
+DROP TABLE IF EXISTS `#__quipforum_post_read`;
+DROP TABLE IF EXISTS `#__quipforum_post_logs`;
+DROP TABLE IF EXISTS `#__quipforum_post_references`;
+DROP TABLE IF EXISTS `#__quipforum_threads`;
+DROP TABLE IF EXISTS `#__quipforum_user_settings`;

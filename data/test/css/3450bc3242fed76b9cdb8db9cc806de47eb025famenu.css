@@ -1,0 +1,86 @@
+#nav, #nav ul {
+	padding: 0 0 0 3px;
+	margin: 0;
+	list-style: none;
+	width: 35.5em;
+	line-height: 1;
+}
+
+#nav a {
+  text-decoration: none;
+	color: black;
+	display: block;
+	width: 10em;
+}
+
+#nav li {
+	float: left;
+	width: 7em;
+}
+
+#nav li ul li ul {
+  width: 12em;
+}
+
+#nav li ul li ul li a {
+  width: 12em;
+}
+
+#nav li ul {
+	position: absolute;
+	padding: 3px;
+	width: 10em;
+	left: -999em;
+	background: #d4d0c8;
+	border-color: #ffffff #808080 #808080 #ffffff;
+	border-style: solid;
+	border-width: 1px;
+}
+
+#nav li ul ul {
+	margin: -1em 0 0 10em;
+}
+
+#nav li.sfhover ul ul {
+	left: -999em;
+}
+
+#nav li.sfhover ul, #nav li li.sfhover ul { /* lists nested under hovered list items */
+	left: auto;
+}
+
+#nav li ul li a:hover {
+	background-color: #808080;
+}
+
+#nav li.menufile {
+  width: 3em;
+}
+
+#nav li.menugame {
+  width: 4em;
+}
+
+#nav li.menuaction {
+  width: 4.5em;
+}
+
+#nav li.menuview {
+  width: 4em;
+}
+
+#nav li.menushow {
+  width: 4em;
+}
+
+#nav li.menucommunications {
+  width: 8em;
+}
+
+#nav li.menuoptions {
+  width: 5em;
+}
+
+#nav li.menuhelp {
+  width: 3em;
+}

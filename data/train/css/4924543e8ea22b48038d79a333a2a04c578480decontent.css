@@ -1,0 +1,21 @@
+body.ukofea-squareAvatars .avatar img,
+body.ukofea-squareAvatars .avatar .img,
+body.ukofea-squareAvatars .avatarCropper{
+    border-radius:0;
+    -webkit-border-radius:0;
+}
+li.ukofea-firstFetched {
+    border-bottom: 10px solid #f0f0f0;
+}
+.message .messageNotices a,
+.message.subIgnored .messageInfo div,
+.message.subIgnored .messageUserInfo,
+.message.subIgnored .useressLastEdit,
+.messageSimple .messageNotices a,
+.messageSimple.subIgnored .messageInfo div,
+.messageSimple.subIgnored .messageUserInfo,
+.messageSimple.subIgnored .useressLastEdit,
+.messageSimple.subIgnored .messageResponse,
+bbCodeQuote.subIgnored blockquote{
+    display:none;
+}

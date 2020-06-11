@@ -1,0 +1,25 @@
+/* by Edgar 110214 */
+.ali-nav .extended-nav-list-double li{
+    float:left;
+    width:51px;
+    margin:0;
+}
+.ali-nav .extended-nav-list-double .col-odd{
+    margin-left:0;
+}
+.ali-nav .extended-nav-list-double .col-even{
+    margin-right:0;
+}
+.ali-nav .extended-nav-list-double .first-row{
+    margin:0;
+}
+.ali-nav .extended-nav-list-double .last-row{
+    width:103px;
+}
+.ali-nav .extended-nav-list-double li a{
+    padding-left:10px;
+    width:32px;
+}
+.ali-nav .extended-nav-list-double .col-odd a{
+    margin-left:8px;
+}

@@ -1,0 +1,70 @@
+ul.TreeView,
+ul.TreeView li,
+ul.ExpandableTreeView,
+ul.ExpandableTreeView li{
+	list-style-type : none;
+	margin : 0;
+	pading : 0;
+}
+
+
+ul.TreeView,
+ul.TreeView ul,
+ul.ExpandableTreeView ul,
+ul.ExpandableTreeView{
+	padding-left: 1em !important;
+	padding-left : 0;
+	margin-left : 0 !important; 
+	margin-left: 1em;
+}
+
+ul.TreeView li,
+ul.ExpandableTreeView li{
+	border : none;
+}
+
+ul.TreeView li li,
+ul.ExpandableTreeView li li{
+	padding-left: 1em; 
+	border: 1px dotted #808080; 
+	border-width: 0 0 1px 1px;
+}
+
+ul.TreeView li.TreeViewHasChildNodes,
+ul.ExpandableTreeView li.ExpandableTreeViewHasChildNodes{
+	border-bottom: 0px;
+}
+
+ul.TreeView li p,
+ul.ExpandableTreeView li p{
+	margin : 0;
+	background: white; 
+	position: relative; 
+	top: 0.6em; 
+}
+
+ul.ExpandableTreeView li a.TreeViewControlColapsed span,
+ul.ExpandableTreeView li a.TreeViewControlExpanded span{
+	display : none;
+}
+
+ul.ExpandableTreeView li span.TreeViewControlLeaf,
+ul.ExpandableTreeView li a.TreeViewControlColapsed,
+ul.ExpandableTreeView li a.TreeViewControlExpanded{
+	text-decoration : none;
+	background-repeat : no-repeat;
+	background-position : left center;	
+	padding-left : 14px;
+	margin-left : 0.5em;
+	width : 14px;
+	height : 1em;
+/*	border : solid 1px red;*/
+}
+
+ul.ExpandableTreeView li a.TreeViewControlColapsed{
+	background-image : url('../images/nolines_plus.gif');
+}
+
+ul.ExpandableTreeView li a.TreeViewControlExpanded{
+	background-image : url('../images/nolines_minus.gif');
+}

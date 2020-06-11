@@ -1,0 +1,187 @@
+  body{ padding: 0px; margin: 0px; margin: auto; font-family: Arial;}
+#inbound-wrapper {
+  width: 615px;
+  padding: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}  
+#inbound-hero {
+  width: 35%;
+float: left;
+margin-right: 4%;
+margin-left: 4%;
+position: relative;
+}
+#inbound-content {
+width: 50%;
+float: left;
+padding-left: 20px;
+position: relative;
+}
+.inbound-hero-img {
+  width: 100%;
+}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+.container {
+  width: 500px;
+
+}
+
+h1 {
+  font-family: "Open Sans", sans;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 0px;
+margin-top: 0px;
+font-size: 25px;
+}
+
+.service-details {
+  /*width: 460px;*/
+  height: 250px;
+  /*height: 230px;*/
+  overflow: hidden;
+  position: relative;
+}
+
+.service-details img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: 50%;
+  height: 100%;
+  float: left;
+  transition: all 0.8s;
+  -moz-transition: all 0.8s;
+}
+
+.service-details:hover img {
+  /*opacity: 0.4 !important;*/
+}
+
+.service-details .service-hover-text h3 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 25px;
+  font-weight: 300;
+  font-family: "Open Sans";
+}
+
+.service-details .service-hover-text h4 {
+  padding: 0px;
+  padding-bottom: 5px;
+  margin: 0px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  width: 90%;
+  font-family: "Open Sans";
+
+  border-bottom: 2px solid #000;
+}
+
+.service-details .service-hover-text p {
+  padding-top: 0px;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Open Sans";
+}
+
+.service-details .service-hover-text {
+  width: 44%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  padding: 3% 4%;
+  background: #D90E0E;
+  color: white;
+  /*  display: none;*/
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.4s;
+}
+
+.service-details:hover .service-hover-text {
+  display: block !important;
+  color: white;
+  background: rgba(217, 14, 14, 0.85);
+  left: 0px;
+  top: 0px;
+}
+
+.service-details .service-text {
+  width: 50%;
+  height: inherit;
+  background: #000;
+  float: left;
+  position: absolute;
+  left: 50%;
+}
+
+.service-details .service-text p {
+  padding: 0px 0px 0px 20px;
+font-size: 24px;
+font-family: "Open Sans";
+font-weight: 700;
+  color: #fff;
+}
+
+.service-details .service-text p span {
+  font-family: "Open Sans" !important;
+}
+
+.service-details .service-text a, .service-white .service-text {
+  padding: 0px 0px 0px 20px;
+  font-size: 14px !important;
+  color: #FF5A22 !important;
+  font-family: "Open Sans" !important;
+  text-decoration: none !important;
+}
+
+.service-details .service-text {
+  float: left;
+}
+
+.service-white {
+  background: #eee !important;
+  width: 50% !important;
+  height: inherit !important;
+}
+
+.service-white p {
+  color: #000 !important;
+}
+
+.inbound-horizontal input {
+margin-right: 10px;
+padding: 3px;
+padding-top: 2px;
+
+}
+.inbound-horizontal {
+display: inline-block;
+vertical-align: middle;
+}
+.inbound-horizontal label {
+margin-right: 5px;
+font-size: 20px;
+vertical-align: middle;
+}
+input[type="submit"] {
+background: #E14D4D;
+border: none;
+border-radius: 5px;
+color: #FFF;
+font-size: 23px;
+font-weight: bold;
+padding: 0px;
+padding-left: 10px;
+text-align: center;
+vertical-align: top;
+padding-right: 10px;
+margin-bottom: 4px;
+}
+
+ input[type="submit"]:hover {
+  background: #f15958;
+}

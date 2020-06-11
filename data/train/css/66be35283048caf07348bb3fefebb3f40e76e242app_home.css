@@ -1,0 +1,47 @@
+.backdrop_loading {
+    opacity: 1;
+    /*background-color: white;*/
+}
+.home_load {
+    margin-top: -60.5px; 
+    margin-left: -125px;
+    width: 250px !important;
+}
+.home_load .popup-head {
+    border: 0px;
+}
+.home_load .spending{
+    
+}
+
+@keyframes fade {
+    from { 
+        background-color: #333333;
+        opacity: 1.0; 
+    }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; 
+        background-color: #4B946A;
+    }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; 
+        background-color: #333333;
+    }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; 
+        background-color: #4B946A;
+    }
+}
+ 
+#animated_loading {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:16px;
+    margin:0px 30px;
+    padding:2px 0px;
+}

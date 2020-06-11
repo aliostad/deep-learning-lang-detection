@@ -1,0 +1,77 @@
+#keyControl {
+	width: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	border: 0px solid transparent;
+	overflow: hidden;
+}
+
+#slideShow {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: Helvetica, Arial, sans-serif;
+	list-style-type: none;
+	font-size: 22px;
+}
+
+#slideShow h1, #slideShow h3 {
+	text-align: center;
+}
+
+#slideShow h1 {
+	color: #f90;
+}
+
+#slideShow h1, #slideShow h2, #slideShow h3, #slideShow h4, #slideShow h5, #slideShow h6, #slideShow p, #slideShow ul {
+	width: inherit;
+}
+
+#slideShow h1 {
+	margin: 1em 0;
+	font-size: 2em;
+}
+
+#slideShow h1.compact {
+	margin: 0.5em 0;
+}
+
+#slideShow li {
+	margin: 0.5em 0;
+}
+
+#slideShow p, #slideShow pre {
+	margin: 1em 3em;
+}
+
+#slideShow li li p {
+	margin-left: 0;
+}
+
+#slideShow pre {
+	display: block;
+	padding: 0.5em;
+	background-color: #eee;
+	font-size: inherit;
+}
+
+#slideShow code {
+	font-size: 0.8em;
+}
+
+#slideShow pre code {
+	width: 100%;
+}
+
+#slideShow p.definition {
+	font-size: 22px;
+	font-style: italic;
+	text-align: center;
+
+	margin: 180px 0;
+}

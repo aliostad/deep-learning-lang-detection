@@ -1,0 +1,37 @@
+#content ul.features {
+  margin: 0px 0px;
+}
+#usage-template .CodeMirror-scroll,
+#usage-custom .CodeMirror-scroll {
+  max-height: 640px;
+}
+#usage-template .render,
+#usage-custom .render {
+  margin: 0px;
+}
+#usage-template .render {
+  height: 340px;
+}
+#usage-custom .render {
+  height: 372px;
+}
+#content .editor {
+  margin-bottom: 28px;
+}
+
+/* API */
+#content section.api h4 code {
+  margin-left: 5px;
+  font-size: 16px;
+}
+#content section.api h4 {
+  margin-bottom: 0px;
+}
+section.api .class-description {
+  margin: 2px 0px 0px 6px;
+  padding: 1px 0px 0px 12px;
+  border-left: 1px solid #ddd;
+}
+section.api .class-description li code {
+  margin-right: 5px;
+}

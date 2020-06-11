@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://LengthyProcess" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" name="LengthyProcess" targetNamespace="http://LengthyProcess" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <plnk:partnerLinkType name="LengthyProcess">
+    <plnk:role name="LengthyProcessProvider" portType="tns:LengthyProcess" />
+  </plnk:partnerLinkType>
+  <types>
+    <schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://LengthyProcess" xmlns="http://www.w3.org/2001/XMLSchema">
+      <element name="LengthyProcessRequest">
+        <complexType>
+          <sequence>
+            <element name="input" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="LengthyProcessResponse">
+        <complexType>
+          <sequence>
+            <element name="result" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+    </schema>
+  </types>
+  <message name="LengthyProcessRequestMessage">
+    <part name="payload" element="tns:LengthyProcessRequest" />
+  </message>
+  <message name="LengthyProcessResponseMessage">
+    <part name="payload" element="tns:LengthyProcessResponse" />
+  </message>
+  <portType name="LengthyProcess">
+    <operation name="process">
+      <input message="tns:LengthyProcessRequestMessage" />
+      <output message="tns:LengthyProcessResponseMessage" />
+    </operation>
+  </portType>
+  <binding name="LengthyProcessBinding" type="tns:LengthyProcess">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="process">
+      <soap:operation soapAction="http://LengthyProcess/process" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="LengthyProcessService">
+    <port name="LengthyProcessPort" binding="tns:LengthyProcessBinding">
+      <soap:address location="http://localhost:8080/ode/processes/LengthyProcess" />
+    </port>
+  </service>
+</definitions>

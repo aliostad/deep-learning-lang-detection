@@ -1,0 +1,17 @@
+#!/bin/bash
+
+ln -sfv ~/repo/ubiquitous/vimrc    ~/.vimrc
+ln -sfv ~/repo/ubiquitous/bashrc   ~/.bashrc
+ln -sfv ~/repo/ubiquitous/profile  ~/.bash_profile
+ln -sfv ~/repo/ubiquitous/inputrc  ~/.inputrc
+ln -sfv ~/repo/ubiquitous/laptop   ~/.bash_laptop
+ln -sfv ~/repo/ubiquitous/config   ~/.ssh/config
+
+ln -sfv ~/repo/ubiquitous/socksproxy     /usr/local/bin/socksproxy
+
+ln -sfv ~/repo/ubiquitous/y/bashrc	~/.ybashrc
+ln -sfv ~/repo/ubiquitous/y/screen	~/.screen
+ln -sfv ~/repo/ubiquitous/y/go  	~/.go
+
+# init shell config
+source ~/.bashrc

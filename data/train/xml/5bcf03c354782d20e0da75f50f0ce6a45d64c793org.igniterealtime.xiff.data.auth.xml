@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.igniterealtime.xiff.data.auth"><apiName>org.igniterealtime.xiff.data.auth</apiName><apiDetail/><apiClassifier id="org.igniterealtime.xiff.data.auth:AuthExtension"><apiName>AuthExtension</apiName><shortdesc>
+         XEP-0078: Non-SASL Authentication
+                  OBSOLETE
+         	 </shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.igniterealtime.xiff.data:IExtension</apiBaseInterface><apiBaseClassifier>org.igniterealtime.xiff.data:Extension</apiBaseClassifier></apiClassifierDef><apiDesc>
+         XEP-0078: Non-SASL Authentication
+                  <p><b>OBSOLETE</b></p>
+         	 </apiDesc></apiClassifierDetail><related-links><link href="http://xmpp.org/extensions/xep-0078.html"><linktext>http://xmpp.org/extensions/xep-0078.html</linktext></link></related-links><apiConstructor id="org.igniterealtime.xiff.data.auth:AuthExtension:AuthExtension"><apiName>AuthExtension</apiName><shortdesc/><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>parent</apiItemName><apiType value="XML"/><apiData>null</apiData></apiParam></apiConstructorDef></apiConstructorDetail></apiConstructor><apiOperation id="org.igniterealtime.xiff.data.auth:AuthExtension:computeDigest"><apiName>computeDigest</apiName><shortdesc>
+		 Computes the SHA1 digest of the password and session ID for use when
+		 authenticating with the server.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiStatic/><apiReturn><apiType value="String"/></apiReturn><apiParam><apiItemName>sessionID</apiItemName><apiType value="String"/><apiDesc>The session ID provided by the server
+		 </apiDesc></apiParam><apiParam><apiItemName>password</apiItemName><apiType value="String"/><apiDesc>The user's password
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Computes the SHA1 digest of the password and session ID for use when
+		 authenticating with the server.
+		 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.igniterealtime.xiff.data.auth:AuthExtension:getElementName"><apiName>getElementName</apiName><shortdesc>
+		 Gets the element name associated with this extension.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>The element name
+		 </apiDesc><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 Gets the element name associated with this extension.
+		 The element for this extension is "query".
+		 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.igniterealtime.xiff.data.auth:AuthExtension:getNS"><apiName>getNS</apiName><shortdesc>
+		 Gets the namespace associated with this extension.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>The namespace
+		 </apiDesc><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 Gets the namespace associated with this extension.
+		 The namespace for the AuthExtension is "jabber:iq:auth".
+		 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.igniterealtime.xiff.data.auth:AuthExtension:isDigest"><apiName>isDigest</apiName><shortdesc>
+		 Determines whether this is a digest (SHA1) authentication.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>It is a digest (true); it is not a digest (false)
+		 </apiDesc><apiType value="Boolean"/></apiReturn></apiOperationDef><apiDesc>
+		 Determines whether this is a digest (SHA1) authentication.
+		 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.igniterealtime.xiff.data.auth:AuthExtension:isPassword"><apiName>isPassword</apiName><shortdesc>
+		 Determines whether this is a plain-text password authentication.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>It is plain-text password (true); it is not plain-text
+		 password (false)
+		 </apiDesc><apiType value="Boolean"/></apiReturn></apiOperationDef><apiDesc>
+		 Determines whether this is a plain-text password authentication.
+		 		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.igniterealtime.xiff.data.auth:AuthExtension:ELEMENT_NAME"><apiName>ELEMENT_NAME</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>query</apiData><apiType value="String"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.igniterealtime.xiff.data.auth:AuthExtension:NS"><apiName>NS</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>jabber:iq:auth</apiData><apiType value="String"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.igniterealtime.xiff.data.auth:AuthExtension:digest:get"><apiName>digest</apiName><shortdesc>
+		 The SHA1 digest to use for authentication.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="String"/></apiValueDef><apiDesc>
+		 The SHA1 digest to use for authentication.
+		 While assigned, password is removed.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.igniterealtime.xiff.data.auth:AuthExtension:password:get"><apiName>password</apiName><shortdesc>
+		 The password to use for authentication.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="String"/></apiValueDef><apiDesc>
+		 The password to use for authentication.
+		 While assigned, digest is removed.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.igniterealtime.xiff.data.auth:AuthExtension:resource:get"><apiName>resource</apiName><shortdesc>
+		 The resource to use for authentication.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="String"/></apiValueDef><apiDesc>
+		 The resource to use for authentication.
+		 		 </apiDesc></apiValueDetail><related-links><link href="org.igniterealtime.xiff.core.xml#XMPPConnection/resource"><linktext>org.igniterealtime.xiff.core.XMPPConnection.resource</linktext></link></related-links></apiValue><apiValue id="org.igniterealtime.xiff.data.auth:AuthExtension:username:get"><apiName>username</apiName><shortdesc>
+		 The username to use for authentication.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="String"/></apiValueDef><apiDesc>
+		 The username to use for authentication.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

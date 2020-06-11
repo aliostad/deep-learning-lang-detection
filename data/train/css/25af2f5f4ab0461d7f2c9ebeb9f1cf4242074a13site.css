@@ -1,0 +1,120 @@
+.hljs {
+    background-color: #3C3C3C !important;
+    max-height:500px;
+    overflow-y: auto;
+}
+.header-main-fixed {
+    padding: 1em 1em 0em 1em !important;
+    text-align: left !important;
+}
+
+.header-main-fixed:after {
+    /*height: 0 !important;*/
+}
+
+.header-main-fixed a {
+    border-bottom: none !important;
+}
+
+.header-main-fixed h4 {
+    display: inline-block;
+}
+.header-main-fixed .fa-2x {
+    font-size: 1.3em !important;
+}
+
+.header-main-fixed .actions {
+    margin: 0 !important;
+    display: inline-block !important;
+    float: right !important;
+}
+
+.header-main-fixed .actions:after {
+    background: transparent !important;
+
+    height: 0 !important;
+    left: 50%;
+    position: absolute;
+
+    width: 0 !important;
+}
+
+.footer-main {
+    padding: 2em 0 2em 0 !important;
+}
+.padding-top-xl {
+   padding-top: 3em;
+}
+.margin-bottom-xl {
+    margin-top: 8em;
+}
+
+span.help-block strong {
+    color: tomato;
+}
+
+.api-endpoint, .data-sets {
+    border:1px solid #eee;
+    padding:0.6em;
+    font-size: 0.8em;
+    margin-bottom: 4em;
+}
+.api-endpoint header {
+    background-color: #CBE4CC;
+    margin-bottom:0.5em;
+    font-size: 1.3em;
+}
+.api-endpoint header span {
+    background-color: #69e471;
+    display: inline-block;
+    padding: 0 0.5em;
+    margin-right: 0.5em;
+    color: #fff;
+
+}
+.api-endpoint table {
+    margin-bottom: 0;
+}
+.api-endpoint ul {
+
+}
+.api-endpoint ul.alt li {
+    padding :0;
+}
+.api-endpoint table td strong {
+
+}
+.api-endpoint table td em {
+    margin-left:0.9em;
+}
+.api-endpoint table td {
+    line-height: 1.5em;
+    vertical-align: bottom;
+    padding: 0.45em 0.75em;
+}
+code.optional {
+    color: #aaa;
+}
+.api-endpoint table code {
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 1em;
+    padding: 0;
+
+}
+
+.data-sets header {
+    background-color: #DADADA;
+    padding: 0 0.5em;
+    margin-bottom: 1em;
+}
+
+.data-sets ul li {
+    line-height: 1.5em;
+    padding-bottom:0;
+}
+.data-sets ul {
+    padding-left:0.2em;
+    padding-right:0.2em;
+}

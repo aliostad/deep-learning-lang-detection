@@ -1,0 +1,20 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:process="http://processsequence.com#" > 
+  <rdf:Description rdf:about="http://processsequence.com#P1">
+    <process:hasProcessType>Sampling</process:hasProcessType>
+    <process:hasQualityOfResultModel>http://DataAnalyticServiceDemand.com#ResultQualityOfSampling</process:hasQualityOfResultModel>
+    <process:hasEndNode>http://processsequence.com#P2</process:hasEndNode>
+    <process:hasStartNode>START</process:hasStartNode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://processsequence.com#ProcessControlFlow">
+    <process:hasObject rdf:resource="http://processsequence.com#P2"/>
+    <process:hasObject rdf:resource="http://processsequence.com#P1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://processsequence.com#P2">
+    <process:hasProcessType>Querying</process:hasProcessType>
+    <process:hasQualityOfResultModel>http://DataAnalyticServiceDemand.com#ResultQualityOfQuerying</process:hasQualityOfResultModel>
+    <process:hasEndNode>END</process:hasEndNode>
+    <process:hasStartNode>http://processsequence.com#P1</process:hasStartNode>
+  </rdf:Description>
+</rdf:RDF>

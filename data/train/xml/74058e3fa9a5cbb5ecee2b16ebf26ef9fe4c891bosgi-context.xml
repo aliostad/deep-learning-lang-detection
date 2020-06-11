@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:osgi="http://www.springframework.org/schema/osgi"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+       http://www.springframework.org/schema/beans/spring-beans.xsd                      
+       http://www.springframework.org/schema/osgi  
+       http://www.springframework.org/schema/osgi/spring-osgi.xsd">
+
+	<!-- import the DataSource from OSGi -->
+	<osgi:reference id="dataSource" interface="javax.sql.DataSource" />
+		
+	<osgi:service ref="bascEmployeeRepository"
+		interface="com.jije.boh.core.jpa.repository.BascEmployeeRepository" />
+		
+	<osgi:service ref="bascStoreRepository"
+		interface="com.jije.boh.core.jpa.repository.BascStoreRepository" />
+		
+	<osgi:service ref="bascJobRepository"
+		interface="com.jije.boh.core.jpa.repository.BascJobRepository" />
+		
+	<osgi:service ref="bascDictionaryRepository"
+		interface="com.jije.boh.core.jpa.repository.BascDictionaryRepository" />
+		
+	<osgi:service ref="bascUserRepository"
+		interface="com.jije.boh.core.jpa.repository.BascUserRepository" />
+		
+	<osgi:service ref="bascDeviceRepository"
+		interface="com.jije.boh.core.jpa.repository.BascDeviceRepository" />
+		
+	<osgi:service ref="bascDeviceStatusRepository"
+		interface="com.jije.boh.core.jpa.repository.BascDeviceStatusRepository" />
+		
+	<osgi:service ref="bascMessageRepository"
+		interface="com.jije.boh.core.jpa.repository.BascMessageRepository" />
+		
+	<osgi:service ref="bascVersionRepository"
+		interface="com.jije.boh.core.jpa.repository.BascVersionRepository" />
+</beans>

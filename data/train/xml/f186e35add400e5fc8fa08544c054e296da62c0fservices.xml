@@ -1,0 +1,51 @@
+<services>
+	
+	<service id="file_storage" interface="base_interface_sotrager" optname="图片存储引擎">
+		<class>base_storage_filesystem</class>
+	</service>
+
+	<service id="view_compile_helper">
+		<class>base_view_compiler</class>
+	</service>
+
+	<service id="view_helper">
+		<class orderby="1">base_view_helper</class>
+	</service>
+	
+	<service id="html_input">
+		<class>base_view_input</class>
+	</service>
+
+	<service id="openapi.rpc_callback">
+		<class>base_rpc_service</class>
+	</service>
+
+	<service id="autotask">
+		<class>base_misc_task</class>
+	</service>
+	
+	<service id="openapi.check">
+		<class>base_rpc_check</class>
+	</service>
+	
+	<service id="openapi.queue">
+		<class>base_service_queue</class>
+	</service>
+
+	<service id="cachemgr_global_vary">
+		<class>base_service_cachevary</class>
+	</service>
+	
+	<service id="base_render_pre_display">
+		<class>base_service_render</class>
+	</service>
+
+	<service id="base_charset">
+		<class>base_charset_default</class>
+	</service>
+	
+	<service id="status">
+		<class>base_status_system</class>
+	</service>
+
+</services>

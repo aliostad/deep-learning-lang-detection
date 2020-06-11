@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>	
+
+	<!-- =================== Respository Finders ======================== -->
+
+	<bean id="memoryRepositoryFinder" class="base.repository.MemoryRepositoryFinder">
+		<property name="itemTrackerRepository">
+			<ref bean="memoryItemTrackerRepository"/>
+		</property>
+		<property name="userRepository">
+			<ref bean="memoryUserRepository"/>
+		</property>
+		<property name="projectRepository">
+			<ref bean="memoryProjectRepository"/>
+		</property>
+		<property name="teamRepository">
+			<ref bean="memoryTeamRepository"/>
+		</property>
+		<property name="workflowRepository">
+			<ref bean="memoryWorkflowRepository"/>
+		</property>
+		<property name="itemRepository">
+			<ref bean="memoryItemRepository"/>
+		</property>	
+		<property name="itemStateRepository">
+			<ref bean="memoryItemStateRepository"/>
+		</property>	
+		<property name="itemTypeRepository">
+			<ref bean="memoryItemTypeRepository"/>
+		</property>	
+	</bean>
+
+	<bean id="hibernateRepositoryFinder" class="base.repository.HibernateRepositoryFinder">
+		<property name="itemTrackerRepository">
+			<ref bean="hibernateItemTrackerRepository"/>
+		</property>				
+		<property name="userRepository">
+			<ref bean="hibernateUserRepository"/>
+		</property>
+		<property name="projectRepository">
+			<ref bean="hibernateProjectRepository"/>
+		</property>
+		<property name="teamRepository">
+			<ref bean="hibernateTeamRepository"/>
+		</property>
+		<property name="workflowRepository">
+			<ref bean="hibernateWorkflowRepository"/>
+		</property>
+		<property name="itemRepository">
+			<ref bean="hibernateItemRepository"/>
+		</property>
+		<property name="itemStateRepository">
+			<ref bean="hibernateItemStateRepository"/>
+		</property>	
+		<property name="itemTypeRepository">
+			<ref bean="hibernateItemTypeRepository"/>
+		</property>	
+	</bean>
+
+		<!-- ==================================================
+	 Repositorios para obtener datos desde hibernate.
+		================================================== -->
+	<bean id="hibernateItemTrackerRepository" class="itemTracker.repository.HibernateItemTrackerRepository">
+		<property name="sessionFactory">
+			 <ref bean="sessionFactory"/>
+		</property>
+	</bean>
+
+	<bean id="hibernateUserRepository" class="user.repository.HibernateUserRepository">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="hibernateProjectRepository" class="project.repository.HibernateProjectRepository">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="hibernateTeamRepository" class="user.repository.team.HibernateTeamRepository">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="hibernateWorkflowRepository" class="workflow.repository.HibernateWorkflowRepository">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+
+	<bean id="hibernateItemRepository" class="item.repository.HibernateItemRepository">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="hibernateItemStateRepository" class="workflow.repository.state.HibernateItemStateRepository">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>	
+
+	<bean id="hibernateItemTypeRepository" class="item.repository.itemType.HibernateItemTypeRepository">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>	
+	<!-- =====================================================
+		Repositorios para obtener datos desde memoria. 
+		======================================================= -->
+
+	<bean id="memoryItemTrackerRepository" class="itemTracker.repository.MemoryItemTrackerRepository"/>
+	<bean id="memoryUserRepository" class="user.repository.MemoryUserRepository"/>
+	<bean id="memoryProjectRepository" class="project.repository.MemoryProjectRepository"/>
+	<bean id="memoryTeamRepository" class="user.repository.team.MemoryTeamRepository"/>
+	<bean id="memoryWorkflowRepository" class="workflow.repository.MemoryWorkflowRepository"/>
+	<bean id="memoryItemRepository" class="item.repository.MemoryItemRepository"/>
+	<bean id="memoryItemStateRepository" class="workflow.repository.state.MemoryItemStateRepository"/>
+	<bean id="memoryItemTypeRepository" class="item.repository.itemType.MemoryItemTypeRepository"/>
+</beans>

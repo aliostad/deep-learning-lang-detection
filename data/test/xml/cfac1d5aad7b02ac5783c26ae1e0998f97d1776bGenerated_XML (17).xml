@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sample:risk-register-row
+	xmlns:sample="http://lexsure.com/ns/Report/2013">
+	<sample:sra-risk-id>sra-risk-id</sample:sra-risk-id>
+	<sample:date>2006-05-31</sample:date>
+	<sample:source-register>source-register</sample:source-register>
+	<sample:practice-area>practice-area</sample:practice-area>
+	<sample:trigger-event>trigger-event</sample:trigger-event>
+	<sample:compliance-officer>compliance-officer</sample:compliance-officer>
+	<sample:action-taken>action-taken</sample:action-taken>
+	<sample:comments>comments</sample:comments>
+</sample:risk-register-row>

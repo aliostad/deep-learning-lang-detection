@@ -1,0 +1,88 @@
+.widget-messages .message {
+  padding: 9px 0;
+  position: relative;
+}
+.widget-messages .message:before,
+.widget-messages .message:after {
+  content: " ";
+  display: table;
+}
+.widget-messages .message:after {
+  clear: both;
+}
+.widget-messages .message > * {
+  line-height: 19px;
+}
+.widget-messages .message .action-checkbox,
+.widget-messages .message .from {
+  display: block;
+  float: left;
+}
+.widget-messages .message .action-checkbox {
+  width: 20px;
+}
+.widget-messages .message .action-checkbox > label,
+.widget-messages .message .action-checkbox > input {
+  display: inline-block;
+  margin: 0;
+  position: relative;
+}
+.widget-messages .message .action-checkbox > label,
+.widget-messages .message .action-checkbox > input {
+  vertical-align: middle;
+}
+.widget-messages .message .action-checkbox > input,
+.widget-messages .message .action-checkbox > label {
+  top: -1px;
+}
+.widget-messages .message .from {
+  min-width: 115px;
+  max-width: 180px;
+  width: 25%;
+  padding-left: 5px;
+  overflow: hidden;
+  color: #555555;
+}
+.widget-messages .message .from:hover {
+  color: #888;
+}
+.widget-messages .message .title {
+  display: block;
+  float: none;
+  overflow: hidden;
+  padding-right: 60px;
+}
+.widget-messages .message .date {
+  display: block;
+  position: absolute;
+  color: #888;
+  width: 50px;
+  right: 0;
+  text-align: right;
+  top: 9px;
+}
+.widget-messages .message .message-title-icon {
+  font-weight: 400 !important;
+  color: #555555;
+  display: inline-block;
+  margin-right: 7px;
+  font-size: 14px;
+  text-decoration: none !important;
+}
+.widget-messages .message.unread .title {
+  font-weight: 600;
+}
+.widget-messages .message + .message {
+  border-top: 1px solid;
+  border-top-color: #e4e4e4;
+}
+.panel.widget-messages .message,
+.panel .widget-messages .message {
+  margin: 0 -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.panel.widget-messages .message .date,
+.panel .widget-messages .message .date {
+  right: 20px;
+}

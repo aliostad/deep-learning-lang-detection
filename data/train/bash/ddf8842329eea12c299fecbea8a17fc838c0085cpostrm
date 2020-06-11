@@ -1,0 +1,33 @@
+#! /bin/sh
+
+set -e
+
+case "$1" in
+    upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
+        ;;
+    remove)
+        if [ -x "/etc/init.d/buildbot" ]; then
+	    if [ -x "`which invoke-rc.d 2>/dev/null`" ]; then
+                invoke-rc.d buildbot stop || exit 0
+	    else
+                /etc/init.d/buildbot stop || exit 0
+	    fi
+	fi
+        ;;
+    purge)
+        getent passwd buildbot >/dev/null && \
+	if [ -x /usr/sbin/deluser ]; then
+	    deluser --quiet --system buildbot
+	fi
+	rm -rf /var/run/buildbot
+	rm -rf /var/lib/buildbot
+        ;;
+    *)
+        echo "postrm called with unknown argument \`$1'" >&2
+        exit 1
+
+esac
+
+#DEBHELPER#
+
+exit 0

@@ -1,0 +1,46 @@
+@CHARSET "UTF-8";
+
+/* admin_bbs_list.jsp ui */
+#abList_wrap{
+	width:700px; padding:10px;
+	border:1px solid blue; border-radius:15px;
+	margin-left:auto; margin-right:auto;
+	margin-top:10px;
+}
+#abList_wrap .abList_title{
+	margin:20px 0 0 230px; width:200px;
+	font-size:20px; background:pink; padding:3px;
+	border-radius:15px;text-align:center;
+}
+
+/* admin_bbs_write.jsp ui */
+#abWrite_wrap{
+	width:420px; height:400px; border:1px solid blue;
+	border-radius:15px; 
+	margin-left:auto; margin-right:auto;
+	margin-top:30px;
+}
+#abWrite_wrap .abWrite_title{
+	margin:20px 0 0 100px; width:220px; font-size:20px;
+	border-radius:15px; background:pink; padding:3px;
+	text-align:center;
+}
+
+/*admin_bbs_cont.jsp ui*/
+#aBbs_cont{
+	width:400px; padding:10px;
+	border:1px solid blue; border-radius:15px;
+	margin-left:auto; margin-right:auto;
+	margin-top:50px;
+}
+#aBbs_cont .aBbscont_title{
+	margin:20px 0 0 100px; width:200px; font-size:20px;
+	background:pink; border-radius:15px; 
+	padding:3px; text-align:center;
+}
+#aBbscont_t{
+	margin:15px 0 0 38px;
+}
+
+
+

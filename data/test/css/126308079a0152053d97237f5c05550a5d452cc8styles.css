@@ -1,0 +1,40 @@
+/* CSS Document */
+
+/* Services */
+
+table.im_service_table {
+	margin: 50px 0;
+}
+
+table.im_service_table th {
+	background: #82c2e1;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+	text-align: left;
+	padding: 10px 15px;
+}
+table.im_service_table .head-desc td {
+  background: #82c2e1;
+  padding: 0px 15px 10px;
+  color: #fff;
+	font-size: 0.9em;
+	font-style: italic;
+	line-height: 1.4em;
+}
+
+.im_service_table td {
+	padding: 15px 0;
+	text-align: left;
+}
+.im_service_table td.serv_price { padding: 15px 15px; }
+.im_service_table tbody tr { border-bottom: 1px solid #eaeaea; }
+.im_service_table td.serv_title { font-weight: bold; padding-left: 15px; }
+.im_service_table tr.has_desc {border-bottom: none; }
+.im_service_table tr.has_desc td { padding-bottom: 0; }
+.im_service_table td.serv_desc {
+	font-size: 0.9em;
+	font-style: italic;
+	padding-top: 0;
+	 padding-left: 15px;
+}

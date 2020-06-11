@@ -1,0 +1,273 @@
+.model{
+	width: 1200px;
+}
+.model .lan{
+	width:1198px;
+	height:30px;
+	border:1px #eee solid;
+	background:#FBFBFB;
+	margin:10px
+}
+.model .lan p{
+	font-size:14px;
+	margin:10px 5px;
+}
+.model .content{
+	width:1200px;
+	height:900px;
+}
+.model .content .left{
+	border:1px solid #eee;
+	width:300px;
+	height:800px;
+	border-radius:5px;
+	float:left;
+	margin-right:30px;
+}
+.model .content .left .title p,.consult p{
+	font-size:22px;
+	line-height:22px;
+	letter-spacing:10px;
+	color:#FFF;
+	font-weight:bolder;
+	text-align:center;
+	padding:5px 0;
+}
+.model .content .left  .classify{
+	width:260px;
+	text-align:center;
+	margin:20px 0 0 20px;
+}
+.model .content .left  .classify  ul{
+	list-style:none;
+	text-align:center;
+}
+.model .content .left  .classify  ul li{
+	background:#FdFdFd;
+	border:1px solid #ddd;
+	display:block;
+	width:260px;
+	height:40px;
+	line-height:40px;
+	border-radius:5px;
+	margin:10px 0px;
+}
+.model .content .left  .classify .wave{
+	background:#099;
+	display: block;
+}
+.model .content .left  .classify  ul li a{
+	text-decoration:none;
+	color:#666;
+	font-size:16px;
+}
+.model .content .left  .classify  ul li a:hover{
+	color:#F00;
+	cursor:pointer;
+	text-decoration:underline;
+}
+.model .content .right{
+	border:1px solid #eee;
+	width:866px;
+	height:800px;
+	border-radius:5px;
+	float:left;
+}
+.model .content .right .news{
+	width: 866px;
+	height:800px;
+	float:left;
+}
+.model .content .right .news ul{
+	margin-top:30px;
+	padding-left:10px;
+	float: left;
+	width: 100px
+}
+.model .content .right .news ul li{
+	margin-left:50px;
+	width:100px;
+}
+.model .content .right .news #keySearch{
+	width:80px;
+	border:1px solid blue;
+	border-radius: 5px;
+	font-size: 18px;
+	cursor: auto;
+}
+.model .content .right .news .news_right{
+	width:680px;
+	height: 90%;
+	border:1px solid red;
+	float: right;
+	margin: 10px;
+	padding: 10px;
+	font-size: 16px;
+}
+.model .content .right .news .news_right2{
+	text-indent:2em;
+	border-radius: 15px;
+	background-color:infobackground;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	width:820px;
+	height:45%;
+	border-left:1px solid #8080ff;
+	border-top:1px solid #8080ff;
+	margin: 10px;
+	padding: 10px;
+	font-size: 14px;
+}
+.model .content .right .news #comment,#commentReply{
+	margin-left:10px;
+	font-size:14px;
+}
+.model .content .right .news .news_right2 #lawtitle{
+	margin: 10px;
+	font-size: 18px;
+	display: block;
+	text-align: center;
+}
+
+.model .content .right .news .news_comment{
+	overflow-y:scroll;
+	overflow-x:hidden;
+	width:820px;
+	height:30%;
+	margin: 10px;
+	padding: 10px;
+	font-size: 14px;
+}
+.model .content .right .news .news_comment .news_commentdetail{
+	width:820px;
+	height:15%;
+	padding: 10px;
+	font-size: 16px;
+	float:left;
+}
+
+.model .content .right .news #publicComment{
+	width:80px;
+	height:40px;
+	padding: 10px;
+	font-size: 16px;
+	margin-top:10px;
+	margin-right:30px;
+	background-color:rgb(189,199,252);
+	border-radius: 15px;
+	float: right;
+}
+.model .content .right .news .news_right #searchKey{
+	width:290px;
+	border:1px solid gray;
+	border-radius: 5px;
+	margin:25px 5px;
+	font-size: 18px;
+	cursor: auto;
+}
+.model .content .right .news .news_right #news_right_search{
+	margin-top:10px;
+	margin-left:80px;
+	height:10%;
+	width:90%;
+}
+.model .content .right .news .news_right ul{
+	width:80%;
+	height:85%;
+}
+
+.model .content .right .news .news_right ul li{
+	float:left;
+	width:100%;
+}
+.model .content .right .news .news_right #date{
+	float:right;
+	color:#666;
+	font-size:14px;
+}
+
+.right .news li a{
+	margin-top:80px;
+	font-size:30px;
+}
+.model .content .right .news .consult{
+	text-indent:2em;
+	border-radius: 15px;
+	background-color:infobackground;
+	width:820px;
+	height:30%;
+	border:1px solid #8080ff;
+	margin: 10px;
+	padding: 10px;
+	font-size: 14px;
+}
+
+.model .content .right .news .consult a{
+	margin-left:100px;
+	background-color:infobackground;
+	border:1px solid #8080ff;
+	background-color:purple;
+	font-size: 18px;
+	color:white;
+}
+.model .content .right .news .consult #lawer{
+	float:right;
+	margin-right:20px;
+	margin-top:-110px;
+	width:250px;
+	height:200px;
+	border:1px solid #8080ff;
+	font-size: 18px;
+}
+.model .content .right .news .consult #lawer span{
+	display:inline-block;
+	margin-top:20px;
+	margin-left:10px;
+	line-height:14px;
+	font-size:14px;
+	color:black;
+}
+.model .content .right .news #consultRecord{
+	width:800px;
+	height: 80%;
+}
+
+.model .content .right .news #showComments{
+	overflow-y:scroll;
+	overflow-x:hidden;
+	background-color:rgb(243,248,253);
+	margin:10px;
+	width:840px;
+	height: 40%;
+}
+.model .content .right .news #showComments #showTop,.news_comment #showTop{
+	height: 35px;
+	width: 100%;
+	background-color:rgb(146,215,255);
+	border-radius: 8px;
+	margin:0px;
+}
+.model .content .right .news #problemDetail01{
+	height:55px;
+	margin:6px;
+	width:840px;
+	text-indent:2em;
+}
+.model .content .right .news #problemDetail01:hover{
+	background-color:rgb(223,236,250);
+}
+.model .content .right .news #lawerPart{
+	height: 30%;
+	width:840px;
+	border-radius: 15px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	margin: 10px;
+	background-color:infobackground;
+}
+
+.model .content .right .news #replys,.news_comment #newsReply{
+	margin:4px;
+	width:840px;
+	margin-left:5px;
+}

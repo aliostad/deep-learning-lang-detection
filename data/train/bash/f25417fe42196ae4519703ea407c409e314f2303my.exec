@@ -1,0 +1,63 @@
+#!/usr/bin/env bash
+echo `hostname`
+module load idl/8.1
+FLAGS="-r -d -i data/admask"
+
+case $1 in
+    0 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 0 9 . data ;;
+    1 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 10 19 . data ;;
+    2 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 20 29 . data ;;
+    3 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 30 39 . data ;;
+    4 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 40 49 . data ;;
+    5 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 50 59 . data ;;
+    6 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 60 69 . data ;;
+    7 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 70 79 . data ;;
+    8 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 80 89 . data ;;
+    9 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 90 99 . data ;;
+    10 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 100 109 . data ;;
+    11 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 110 119 . data ;;
+    12 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 120 129 . data ;;
+    13 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 130 139 . data ;;
+    14 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 140 149 . data ;;
+    15 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 150 159 . data ;;
+    16 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 160 169 . data ;;
+    17 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 170 179 . data ;;
+    18 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 180 189 . data ;;
+    19 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 190 199 . data ;;
+    20 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 200 209 . data ;;
+    21 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 210 219 . data ;;
+    22 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 220 229 . data ;;
+    23 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 230 239 . data ;;
+    24 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 240 249 . data ;;
+    25 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 250 259 . data ;;
+    26 )
+        fit_sample $FLAGS input_n2Exp.fits n2Exp:16 260 268 . data ;;
+    * )
+        echo "invalid input";;
+esac

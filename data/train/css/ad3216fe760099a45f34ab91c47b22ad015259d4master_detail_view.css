@@ -1,0 +1,25 @@
+@view(sc-master-detail-view) {
+  background: #9eaaaf;
+}
+
+@view(sc-master-detail-view).round-toolbars .sc-toolbar-view {
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-raidus-topright: 10px;
+}
+
+@view(sc-master-detail-view) > .sc-view {
+  background: #f1f1f1;
+}
+
+@view(sc-master-detail-view) > .sc-view {
+  background: #f1f1f1;
+}
+
+@view(sc-master-detail-view).round-toolbars > .sc-view {
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-raidus-topright: 10px;
+}

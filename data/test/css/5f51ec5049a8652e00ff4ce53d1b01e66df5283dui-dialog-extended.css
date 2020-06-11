@@ -1,0 +1,76 @@
+.ui-dialog-message {
+    color: #2a2a2b;
+    display: none;
+    padding: 10px 5px;
+    font-size: .8em;
+
+    position: relative;
+}
+
+.ui-dialog-message-icon {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    display: none;
+    position: absolute;
+    margin-top: -16px;
+    top: 50%;
+    left: 5px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.4;
+}
+
+.ui-dialog-message ul {
+    padding: 0;
+    margin: 0 15px;
+    list-style: none;
+}
+
+.ui-dialog-message li {
+    margin: 0;
+    padding: 0;
+    line-height: 18px;
+}
+
+.ui-dialog-message .ui-icon-close {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    margin-top: -8px;
+}
+
+.ui-dialog-message-error {
+    background: #CC342C;
+    color: #fff;
+}
+.ui-dialog-message-error .ui-dialog-message-icon {}
+
+.ui-dialog-message-success {
+    background: #7cb02a;
+    color: #fff;
+}
+.ui-dialog-message-success .ui-dialog-message-icon {}
+
+.ui-dialog-message-warning {
+    background: #fee690;
+    color: #665c3a;
+}
+.ui-dialog-message-warning .ui-dialog-message-icon {}
+
+.ui-dialog-message-info {
+    background: #4889f0;
+    color: #fff;
+}
+.ui-dialog-message-info .ui-dialog-message-icon {}
+
+.ui-dialog > .ui-progressbar {
+  display: none;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+    margin: 0;
+}

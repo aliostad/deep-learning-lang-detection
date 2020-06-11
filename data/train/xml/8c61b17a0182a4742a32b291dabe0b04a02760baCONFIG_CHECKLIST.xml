@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+	<WindowService>
+		<ServiceList>
+			<ServiceName>IISADMIN</ServiceName>
+			<DisplayName>IIS Admin Service</DisplayName>
+			<AlarmCode>ALM_IIS_Process_Down</AlarmCode>
+			<ProcessName>IIS_Process</ProcessName>
+			<Select>N</Select>
+			<Active>Y</Active>
+		</ServiceList>
+		<ServiceList>
+			<ServiceName>W3SVC</ServiceName>
+			<DisplayName>IIS Management Service</DisplayName>
+			<AlarmCode>ALM_W3SVC_Process_Down</AlarmCode>
+			<ProcessName>W3SVC_Process</ProcessName>
+			<Select>N</Select>
+			<Active>Y</Active>
+		</ServiceList>
+		<ServiceList>
+			<ServiceName>MSSQLSERVER</ServiceName>
+			<DisplayName>SQL Server (MSSQLSERVER)</DisplayName>
+			<AlarmCode>ALM_MSSQL_Process_Down</AlarmCode>
+			<ProcessName>MSSQL_Process</ProcessName>
+			<Select>N</Select>
+			<Active>Y</Active>
+		</ServiceList>
+		<ServiceList>
+			<ServiceName>SQLSERVERAGENT</ServiceName>
+			<DisplayName>SQL Server Agent (MSSQLSERVER)</DisplayName>
+			<AlarmCode>ALM_SQLSERVERAGENT_Process_Down</AlarmCode>
+			<ProcessName>SQLSERVERAGENT_Process</ProcessName>
+			<Select>N</Select>
+			<Active>Y</Active>
+		</ServiceList>
+		<ServiceList>
+			<ServiceName>FileZilla Server</ServiceName>
+			<DisplayName>FileZilla Server FTP server</DisplayName>
+			<AlarmCode>ALM_FileZilla Server FTP server_Process_Down</AlarmCode>
+			<ProcessName>FILEZILLA_Process</ProcessName>
+			<Select>N</Select>
+			<Active>Y</Active>
+		</ServiceList>
+	</WindowService>
+  	<WindowProcess>
+		<ProcessList>
+			<WindowProcessName>Dashboard</WindowProcessName>
+			<DisplayName>Dashboard</DisplayName>
+			<AlarmCode>JOB_Dashboard_Process_Down</AlarmCode>
+			<ProcessName>Dashboard_Process</ProcessName>
+			<Select>N</Select>
+			<Active>Y</Active>
+		</ProcessList>
+		<ProcessList>
+			<WindowProcessName>SoundExtension</WindowProcessName>
+			<DisplayName>Sound Extension</DisplayName>
+			<AlarmCode>JOB_SoundExtension_Process_Down</AlarmCode>
+			<ProcessName>SoundExtension_Process</ProcessName>
+			<Select>N</Select>
+			<Active>Y</Active>
+		</ProcessList>
+		<ProcessList>
+			<WindowProcessName>SMSAlertAgent</WindowProcessName>
+			<DisplayName>SMS Notify</DisplayName>
+			<AlarmCode>JOB_SMSAlertAgent_Process_Down</AlarmCode>
+			<ProcessName>SMSAlertAgent_Process</ProcessName>
+			<Select>N</Select>
+			<Active>Y</Active>
+		</ProcessList>
+		<ProcessList>
+			<WindowProcessName>MainDisplayFlash</WindowProcessName>
+			<DisplayName>MainDisplay</DisplayName>
+			<AlarmCode>JOB_MainDisplayFlash_Process_Down</AlarmCode>
+			<ProcessName>MainDisplayFlash_Process</ProcessName>
+			<Select>N</Select>
+			<Active>Y</Active>
+		</ProcessList>
+		<ProcessList>
+			<WindowProcessName>FileZilla Server Interface</WindowProcessName>
+			<DisplayName>File Zilla</DisplayName>
+			<AlarmCode>JOB_FileZilla_Process_Down</AlarmCode>
+			<ProcessName>FileZilla_Process</ProcessName>
+			<Select>N</Select>
+			<Active>Y</Active>
+		</ProcessList>
+		<ProcessList>
+			<WindowProcessName>Unitdisplay Extension Server</WindowProcessName>
+			<DisplayName>Unitdisplay Extension Server</DisplayName>
+			<AlarmCode>JOB_UnitdisplayExtensionServer_Process_Down</AlarmCode>
+			<ProcessName>UnitdisplayExtensionServer_Process</ProcessName>
+			<Select>N</Select>
+			<Active>Y</Active>
+		</ProcessList>
+	</WindowProcess>
+	<WebApplication>
+		<WebApplicationList>
+			<WebSiteName>ShopWebService</WebSiteName>
+			<DisplayName>ShopWebService</DisplayName>
+			<AlarmCode>WEB_ShopWebService_Process_Down</AlarmCode>
+			<ProcessName>ShopWebService_Process</ProcessName>
+			<Select>N</Select>
+			<Active>Y</Active>
+		</WebApplicationList>
+		<WebApplicationList>
+			<WebSiteName>ShopWebQM</WebSiteName>
+			<DisplayName>ShopWebQM</DisplayName>
+			<AlarmCode>WEB_ShopWebQM_Process_Down</AlarmCode>
+			<ProcessName>ShopWebQM_Process</ProcessName>
+			<Select>N</Select>
+			<Active>Y</Active>
+		</WebApplicationList>
+		<WebApplicationList>
+			<WebSiteName>QisReports</WebSiteName>
+			<DisplayName>Web Report</DisplayName>
+			<AlarmCode>WEB_QisReport_Process_Down</AlarmCode>
+			<ProcessName>QisReport_Process</ProcessName>
+			<Select>N</Select>
+			<Active>Y</Active>
+		</WebApplicationList>
+		<WebApplicationList>
+			<WebSiteName>QisQM</WebSiteName>
+			<DisplayName>Web QM</DisplayName>
+			<AlarmCode>WEB_QisQM_Process_Down</AlarmCode>
+			<ProcessName>QisQM_Process</ProcessName>
+			<Select>N</Select>
+			<Active>Y</Active>
+		</WebApplicationList>
+		<WebApplicationList>
+			<WebSiteName>QisCSI</WebSiteName>
+			<DisplayName>WebCSI</DisplayName>
+			<AlarmCode>WEB_QisCSI_Process_Down</AlarmCode>
+			<ProcessName>QisCSI_Process</ProcessName>
+			<Select>N</Select>
+			<Active>Y</Active>
+		</WebApplicationList>
+		<WebApplicationList>
+			<WebSiteName>QisCSITWS</WebSiteName>
+			<DisplayName>Web CSI TWS</DisplayName>
+			<AlarmCode>WEB_QisCSITWS_Process_Down</AlarmCode>
+			<ProcessName>QisCSITWS_Process</ProcessName>
+			<Select>N</Select>
+			<Active>Y</Active>
+		</WebApplicationList>
+		<WebApplicationList>
+			<WebSiteName>QisWebAppointment</WebSiteName>
+			<DisplayName>Web Appointment</DisplayName>
+			<AlarmCode>WEB_QisWebAppointment_Process_Down</AlarmCode>
+			<ProcessName>QisWebAppointment_Process</ProcessName>
+			<Select>N</Select>
+			<Active>Y</Active>
+		</WebApplicationList>
+		<WebApplicationList>
+			<WebSiteName>Web Configuration</WebSiteName>
+			<DisplayName>QisWebConfiguration</DisplayName>
+			<AlarmCode>WEB_QisWebConfiguration_Process_Down</AlarmCode>
+			<ProcessName>QisWebConfiguration_Process</ProcessName>
+			<Select>N</Select>
+			<Active>Y</Active>
+		</WebApplicationList>
+		<WebApplicationList>
+			<WebSiteName>Web Fault Management</WebSiteName>
+			<DisplayName>QisWebFaultManagement</DisplayName>
+			<AlarmCode>WEB_QisWebFaultManagement_Process_Down</AlarmCode>
+			<ProcessName>QisWebFaultManagement_Process</ProcessName>
+			<Select>N</Select>
+			<Active>Y</Active>
+		</WebApplicationList>
+		<WebApplicationList>
+			<WebSiteName>DCWebServiceAPI</WebSiteName>
+			<DisplayName>DCWebServiceAPI</DisplayName>
+			<AlarmCode>WEB_DCWebServiceAPI_Process_Down</AlarmCode>
+			<ProcessName>DCWebServiceAPI_Process</ProcessName>
+			<Select>N</Select>
+			<Active>Y</Active>
+		</WebApplicationList>
+	</WebApplication>
+</Config>

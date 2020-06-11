@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyprocess>
+        <process name="八门神器">cn.mc.sq</process>
+        <process name="葫芦侠修改器">com.huluxia.gametools</process>
+        <process name="烧饼修改器">org.sbtools.gamehack</process>
+        <process name="安卓游戏大师">org.game.master</process>
+        <process name="烧饼大师">org.sbtools.master</process>
+        <process name="叉叉助手">com.xxAssistant</process>
+        <process name="叉叉加速器">com.xxassistant.gamespeed</process>
+        <process name="烧饼加速器">org.sbtools.gamespeed</process>
+        <process name="八门神器">cn.mc1.sq</process>
+</keyprocess>

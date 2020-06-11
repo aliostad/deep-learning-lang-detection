@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	
+	<!-- 角色 service -->	
+	<bean id="roleService" class="com.dihaiboyun.shop.service.impl.RoleServiceImpl"/>
+	
+	<!-- 菜单 service -->	
+	  <bean id="menuService" class="com.dihaiboyun.shop.service.impl.MenuServiceImpl"/>
+	
+	<!-- 目录 service -->	
+	  <bean id="catalogService" class="com.dihaiboyun.shop.service.impl.CatalogServiceImpl"/>
+	
+	<!-- 模块 service -->	
+	  <bean id="moduleService" class="com.dihaiboyun.shop.service.impl.ModuleServiceImpl"/>
+	  
+	  <!-- 日志 service -->	
+	  <bean id="logsService" class="com.dihaiboyun.shop.service.impl.LogsServiceImpl"/>
+	  
+	  <!-- 用户角色 service -->	
+	  <bean id="managerRoleService" class="com.dihaiboyun.shop.service.impl.ManagerRoleServiceImpl"/>
+	  
+	  <!-- 产品产地 service -->	
+	  <bean id="yieldlyService" class="com.dihaiboyun.shop.service.impl.YieldlyServiceImpl"/>
+	  
+	  <!-- 产品单位 service -->	
+	  <bean id="unitService" class="com.dihaiboyun.shop.service.impl.UnitServiceImpl"/>
+	  
+	  <!-- 产品颜色 service -->	
+	  <bean id="colorService" class="com.dihaiboyun.shop.service.impl.ColorServiceImpl"/>
+	  
+	  <!-- 产品类别 service -->	
+	  <bean id="categoryService" class="com.dihaiboyun.shop.service.impl.CategoryServiceImpl"/>
+	  
+	  <!-- 产品品牌 service -->	
+	  <bean id="brandService" class="com.dihaiboyun.shop.service.impl.BrandServiceImpl"/>
+	  
+	  <!-- 产品三级类别与品牌关联 service -->	
+	  <bean id="categoryBrandRelService" class="com.dihaiboyun.shop.service.impl.CategoryBrandRelServiceImpl"/>
+	  
+	  <!-- 产品系列 service -->	
+	  <bean id="seriesService" class="com.dihaiboyun.shop.service.impl.SeriesServiceImpl"/>
+	  
+	  <!-- 产品三级类别之间关联 service -->	
+	  <bean id="categoryRelService" class="com.dihaiboyun.shop.service.impl.CategoryRelServiceImpl"/>
+	  
+	  <!-- 产品三级类别与颜色关联 service -->	
+	  <bean id="categoryColorRelService" class="com.dihaiboyun.shop.service.impl.CategoryColorRelServiceImpl"/>
+	  
+	  <!-- 产品参数组 service -->	
+	  <bean id="parameterGroupService" class="com.dihaiboyun.shop.service.impl.ParameterGroupServiceImpl"/>
+	  
+	  <!-- 产品三级类别与参数组关联 service -->	
+	  <bean id="categoryParameterGroupRelService" class="com.dihaiboyun.shop.service.impl.CategoryParameterGroupRelServiceImpl"/>
+	  
+	  <!-- 产品参数项 service -->	
+	  <bean id="parameterItemService" class="com.dihaiboyun.shop.service.impl.ParameterItemServiceImpl"/>
+	  
+	  <!-- 数据表操作 service -->	
+	  <bean id="tableService" class="com.dihaiboyun.shop.service.impl.TableServiceImpl"/>
+	  
+	  <!-- 产品参数项预设值 service -->	
+	  <bean id="parameterPresetService" class="com.dihaiboyun.shop.service.impl.ParameterPresetServiceImpl"/>
+	  
+	  <!-- 数据表字段操作 service -->	
+	  <bean id="columnService" class="com.dihaiboyun.shop.service.impl.ColumnServiceImpl"/>
+	  
+	  <!-- 产品 service -->	
+	  <bean id="productService" class="com.dihaiboyun.shop.service.impl.ProductServiceImpl"/>
+	  
+	  <!-- 产品介绍组 service -->	
+	  <bean id="descriptionGroupService" class="com.dihaiboyun.shop.service.impl.DescriptionGroupServiceImpl"/>
+	  
+	  <!-- 产品三级类别与介绍组关联 service -->	
+	  <bean id="categoryDescriptionGroupRelService" class="com.dihaiboyun.shop.service.impl.CategoryDescriptionGroupRelServiceImpl"/>
+	  
+	  <!-- 产品图片组 service -->	
+	  <bean id="imageGroupService" class="com.dihaiboyun.shop.service.impl.ImageGroupServiceImpl"/>
+	  
+	  <!-- 产品三级类别与图片组关联 service -->	
+	  <bean id="categoryImageGroupRelService" class="com.dihaiboyun.shop.service.impl.CategoryImageGroupRelServiceImpl"/>
+	  
+	  <!-- 产品图片项 service -->	
+	  <bean id="imageItemService" class="com.dihaiboyun.shop.service.impl.ImageItemServiceImpl"/>
+	  
+	  <!-- 产品清单项 service -->	
+	  <bean id="detailedlistItemService" class="com.dihaiboyun.shop.service.impl.DetailedlistItemServiceImpl"/>
+	  
+	  <!-- 产品前台显示名 service -->	
+	  <bean id="frontNameService" class="com.dihaiboyun.shop.service.impl.FrontNameServiceImpl"/>
+	  
+	  <!-- 产品介绍 service -->	
+	  <bean id="descriptionService" class="com.dihaiboyun.shop.service.impl.DescriptionServiceImpl"/>
+	  
+	  <!-- 产品售后服务 service -->	
+	  <bean id="afterServiceService" class="com.dihaiboyun.shop.service.impl.AfterServiceServiceImpl"/>
+	  
+	  <!-- 产品图片 service -->	
+	  <bean id="imageService" class="com.dihaiboyun.shop.service.impl.ImageServiceImpl"/>
+	  
+	  <!-- 产品清单 service -->	
+	  <bean id="detailedlistService" class="com.dihaiboyun.shop.service.impl.DetailedlistServiceImpl"/>
+	  
+	  <!-- 快递公司 service -->	
+	  <bean id="expressCompanyService" class="com.dihaiboyun.shop.service.impl.ExpressCompanyServiceImpl"/>
+	  
+	  <!-- 库存报价 service -->	
+	  <bean id="priceStockService" class="com.dihaiboyun.shop.service.impl.PriceStockServiceImpl"/>
+	  
+	  <!-- 公告 service -->	
+	  <bean id="noticeService" class="com.dihaiboyun.shop.service.impl.NoticeServiceImpl"/>
+	  
+	  <!-- 广告位 service -->	
+	  <bean id="adSpaceService" class="com.dihaiboyun.shop.service.impl.AdSpaceServiceImpl"/>
+	  
+	  <!-- 广告 service -->	
+	  <bean id="adService" class="com.dihaiboyun.shop.service.impl.AdServiceImpl"/>
+	  
+	  
+	  <!-- 会员 service -->	
+	  <bean id="memberService" class="com.dihaiboyun.shop.service.impl.MemberServiceImpl"/>
+	  
+	  <!-- 会员详情 service -->	
+	  <bean id="memberInfoService" class="com.dihaiboyun.shop.service.impl.MemberInfoServiceImpl"/>
+	  
+	  <!-- 市 service -->	
+	  <bean id="cityService" class="com.dihaiboyun.shop.service.impl.CityServiceImpl"/>
+	  
+	<!-- 省 service -->	
+	  <bean id="provinceService" class="com.dihaiboyun.shop.service.impl.ProvinceServiceImpl"/>
+	  
+	<!-- 区 service -->	
+	  <bean id="areaService" class="com.dihaiboyun.shop.service.impl.AreaServiceImpl"/>
+	
+	<!-- 订单 service -->	
+	  <bean id="orderService" class="com.dihaiboyun.shop.service.impl.OrderServiceImpl"/>
+	  
+	<!-- 配送地址 service -->	
+	  <bean id="addressService" class="com.dihaiboyun.shop.service.impl.AddressServiceImpl"/>
+	<!-- 订单内产品 service -->	
+	  <bean id="orderProductService" class="com.dihaiboyun.shop.service.impl.OrderProductServiceImpl"/>
+	    
+	<!-- 配送 service -->	
+	  <bean id="dispatchingService" class="com.dihaiboyun.shop.service.impl.DispatchingServiceImpl"/>
+	  
+	  
+</beans>

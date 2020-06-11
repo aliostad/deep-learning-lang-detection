@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sanjjaya_rasavimana?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <mapping resource="mapping/Stockdeli.hbm.xml"/>
+    <mapping resource="mapping/Magexpence.hbm.xml"/>
+    <mapping resource="mapping/Agenthas.hbm.xml"/>
+    <mapping resource="mapping/Magazine.hbm.xml"/>
+    <mapping resource="mapping/Rtn.hbm.xml"/>
+    <mapping resource="mapping/Delibook.hbm.xml"/>
+    <mapping resource="mapping/Stock.hbm.xml"/>
+    <mapping resource="mapping/Account.hbm.xml"/>
+    <mapping resource="mapping/Deliver.hbm.xml"/>
+    <mapping resource="mapping/Distributors.hbm.xml"/>
+    <mapping resource="mapping/Personal.hbm.xml"/>
+    <mapping resource="mapping/Supplier.hbm.xml"/>
+    <mapping resource="mapping/Route.hbm.xml"/>
+    <mapping resource="mapping/Rtnbook.hbm.xml"/>
+    <mapping resource="mapping/Userlog.hbm.xml"/>
+    <mapping resource="mapping/Invbook.hbm.xml"/>
+    <mapping resource="mapping/District.hbm.xml"/>
+    <mapping resource="mapping/Check.hbm.xml"/>
+    <mapping resource="mapping/User.hbm.xml"/>
+    <mapping resource="mapping/Invoice.hbm.xml"/>
+    <mapping resource="mapping/Agent.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MessageData>
+	<MessageSet name="en_us" message="English">
+		<Description>English Default</Description>
+		<Message name="System" message="System">
+			<Message name="Error" message="Can not cerificate by internal error."/>
+			<Message name="FailCredential" message="Can not login by Super User. Credential fail."/>
+			<Message name="Platform" message="System base platform error">
+				<Message name="SecurityFail" message="Need securityKey. did not setup base platform or did not login. You have to check system configuration." />
+				<Message name="SocketException" message="Network error." />
+				<Message name="CanNotConnect" message="Can not connect to server[%1]." />
+				<Message name="ResultIsNull" message="Result is null." />
+				<Message name="CanNotFoundReturnID" message="Can not found return ID." />
+				<Message name="CommandNotFound" message="Command not foun." />
+				<Message name="UnmarshalException" message="Return XML error." />
+			</Message>
+			<Message name="RegisteringServer" message="RegisteringServer">
+				<Message name="DoNotSupportServerType" message="Can not registering Server. not support server type [%1]."/>
+				<Message name="DuplicationServerInfo" message="Can not registering Server. Has already been registered name[%1] or IP[%2] and Port[%3]."/>
+				<Message name="InserDBError" message="Fail to insert for Registering Server."/>
+			</Message>
+			<Message name="RunAction" message="Run fail message">
+				<Message name="NoSuchMethodException" message="[%1] class has not [%2] method." />
+			</Message>
+			<Message name="WebViewModule" message="WebView module error">
+				<Message name="ViewItemsNotFoundException" message="[%1] view item has not [%2] view Items." />
+			</Message>
+		</Message>
+		<Message name="Common" message="Common">
+			<Message name="Input" message="Input">
+				<Message name="Required" message="This is required" />
+			</Message>
+			<Message name="InputError" message="Input error">
+				<Message name="NotNull" message="This is not null field." />
+				<Message name="NumberFormat" message="This field is only number." />
+				<Message name="BooleanFormat" message="This field is only boolean(True/False)." />
+				<Message name="MaxSize" message="Over max size(max size is %1)" />
+				<Message name="PasswordConfirm" message="Not match password confirm">
+					<Message name="IsNull" message="Password confirm field is not null." />
+					<Message name="NotMatch" message="Not match password confirm" />
+				</Message>
+			</Message>
+		</Message>
+		<Message name="StoreAction" message="Store action">
+			<Message name="NotFoundStoreName" message="Can not found store name[%1]." />
+			<Message name="CanNotConnection" message="Can not connect to store[%1]." />
+			<Message name="CreateError" message="Create(input) fale">
+				<Message name="SameName" message="Duplicate name" />
+				<Message name="ObjectClassViolation" message="Object class violation." />
+				<Message name="InputValue" message="Required field null or input type violation." />
+			</Message>
+		</Message>
+		<Message name="Management" message="Management action">
+			<Message name="InputError" message="Input data error">
+				<Message name="KeyField" message="This is Key field">
+					<Message name="IsNull" message="Key field is null" />
+				</Message>
+			</Message>
+			<Message name="EditView" message="Read data error for Edit">
+			</Message>
+		</Message>
+		<Message name="StoreManagement" message="Store management">
+			<Message name="InputError" message="Input data error">
+				<Message name="KeyField" message="This is Key field">
+					<Message name="IsNull" message="Key field is null" />
+				</Message>
+			</Message>
+			<Message name="EditView" message="Read data error for Edit">
+			</Message>
+		</Message>
+		<Message name="Authentication" message="User Authentication">
+			<Message name="System" message="System">
+				<Message name="Error" message="Can not cerificate by internal error."/>
+			</Message>
+			<Message name="AuthenticationAction" message="Authentication action">
+				<Message name="NotFound" message="Can not found Authentication action. need more than one of AuthenticationAction"/>
+			</Message>
+			<Message name="SuperUser" message="Super user">
+				<Message name="NotSet" message="Not set Super User"/>
+			</Message>
+			<Message name="User" message="User">
+				<Message name="NotMatch" message="Can not found User or not match password."/>
+			</Message>
+			<Message name="UserID" message="User">
+				<Message name="isNull" message="Need input user id"/>
+			</Message>
+			<Message name="UserPassword" message="User Password">
+				<Message name="isNull" message="Need input password"/>
+			</Message>
+		</Message>
+	</MessageSet>
+</MessageData>

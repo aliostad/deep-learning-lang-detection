@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03" xmlns:b4m="http://bpel4mobile.com/schemas" xmlns:bpel4mobile.holiday.process="http://bpel4mobile.holiday.process" xmlns:holiday.text="http://holiday.text">
+
+  <process name="bpel4mobile.holiday.process:HolidayProcess">
+	<active>true</active>
+    <retired>false</retired>
+    <process-events generate="all"/>
+    <provide partnerLink="client">
+      <service name="bpel4mobile.holiday.process:HolidayProcessService" port="HolidayProcessPort"/>
+    </provide>
+    <invoke partnerLink="client">
+      <service name="bpel4mobile.holiday.process:HolidayProcessServiceCallback" port="HolidayProcessPortCallbackPort"/>
+    </invoke>
+    <invoke partnerLink="HolidayMobilePartner">
+      <service name="b4m:HumanResourceService" port="HumanResourceSoap11"/>
+    </invoke>
+  </process>
+</deploy>

@@ -1,0 +1,98 @@
+/* --------------------------------------------------------------------- */
+/* MESSAGES */
+/* --------------------------------------------------------------------- */
+
+/*
+
+	MESSAGE MARKUP
+	-------------------------------------------------------------
+
+	<div class="message error">
+		<ul>
+			<li>[error message]</li>
+			<li>[error message]</li>
+			<li>[error message]</li>
+		</ul>
+	</div>
+
+	<div class="message notice">
+		<ul>
+			<li>[notice message]</li>
+			...
+		</ul>
+	</div>
+
+	<div class="message success">
+		<ul>
+			<li>[success message]</li>
+			...
+		</ul>
+	</div>
+
+*/
+
+.message {
+	_height:0;
+	position:relative;
+	border-width:2px;
+	border-style:solid;
+	-moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  z-index:0;
+	margin-top:1em;
+	}
+.assessment li .message {
+	margin:0;
+	}
+.message img {
+	position:absolute;
+	top:4px;
+	right:4px;
+	cursor:pointer;
+	width:14px;
+	height:14px;
+	}
+.message ul {
+	margin:0 !important;
+	}
+.message p {
+	padding:5px 10px;
+	font-weight:bold;
+	}
+.message li {
+	padding:5px 10px !important;
+	list-style:none !important;
+	}
+.message li:last-child {
+	border-bottom-width:0 !important;
+	}
+
+/* Error */
+
+.message.error {
+	background:#f1d0d0;
+	border-color:#e7a8a8;
+	}
+.message.error li,.message.error p {
+	border-bottom:1px dotted #e7a8a8;
+	}
+
+/* Notice */
+
+.message.notice {
+	background:#f9f0bb;
+	border-color:#e0c52e;
+	}
+.message.notice li,.message.notice p {
+	border-bottom:1px dotted #e0c52e;
+	}
+
+/* Success */
+
+.message.success {
+	background:#bee4fa;
+	border-color:#529cc7;
+	}
+.message.success li,.message.success p {
+	border-bottom:1px dotted #529cc7;
+	}

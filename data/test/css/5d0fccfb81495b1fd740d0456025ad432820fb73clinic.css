@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+/************** sub navigation **************/
+body#clinic div#sub_navi_title {
+	width:220px;
+	height:70px;
+	background:url(../../clinic/img/sub_navi_clinic.gif) 0 0 no-repeat;
+	line-height:0;
+	text-indent:-9999px;
+	overflow:hiden;
+	margin-bottom:0;
+}
+*:first-child+html body#clinic div#sub_navi_title {
+margin-bottom:-4px;
+}
+
+body#clinic div#left_area ul {
+	margin:0;
+	padding:0;
+}
+
+body#clinic div#left_area li {
+	width:220px;
+	height:38px;
+	line-height:0;
+	font-size:1%;
+	overflow:hiden;
+	text-indent:-9999px;
+}
+
+body#access div#left_area li a {
+	outline:none;
+	display:block;
+	width:220px;
+	height:38px;
+	line-height:normal;
+}
+
+/* sub cont01 */
+body#clinic div#left_area li.cont_one {
+	background:url(../../clinic/img/sub_navi_clinic.gif) 0 -70px no-repeat;
+}
+
+/*コンテンツブロック*/
+.service_area {
+width:681px;
+margin-bottom:20px;
+}
+
+.service_area .right {
+margin-left:23px;
+}
+
+
+.service_area .service_block {
+width:317px;
+border-top:1px solid #969696;
+border-left:1px solid #969696;
+float:left;
+}
+
+.service_area .service_block .thumb{
+width:100px;
+height:100px;
+overflow:hidden;
+float:left;
+}
+
+.service_area .service_block .title{
+width:201px;
+margin-top:20px;
+float:right;
+}
+
+.service_area .service_block .title h4{
+font-size:108%;
+font-weight:bold;
+line-height:138.5%;
+}
+
+.service_area .service_block .title span.category{
+font-size:85%;
+line-height:138.5%;
+}
+
+.service_area .service_block .title .service_logo{
+margin-top:15px;
+}
+
+/*最下部の幅広用*/
+.service_area .service_block_wide {
+width:660px;
+border-top:1px solid #969696;
+border-left:1px solid #969696;
+}
+
+.service_area .service_block_wide .thumb_wide{
+width:133px;
+height:100px;
+overflow:hidden;
+float:left;
+}
+
+.service_area .service_block_wide .title_wide{
+width:510px;
+margin-top:20px;
+float:right;
+}
+
+.service_area .service_block_wide .title_wide h4{
+font-size:108%;
+font-weight:bold;
+line-height:138.5%;
+}
+
+.service_area .service_block_wide .title_wide span.category{
+font-size:85%;
+line-height:138.5%;
+}
+
+

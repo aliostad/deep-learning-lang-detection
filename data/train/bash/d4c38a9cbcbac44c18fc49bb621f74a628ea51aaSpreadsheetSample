@@ -1,0 +1,24 @@
+#!/bin/sh
+
+# Starts the SpreadsheetSample.exe from the <ooo-home>/program directory
+# It should not be needed any longer. The sample should work from
+# anywhere just by running:
+#
+#	mono $sample_dir/SpreadsheetSample.exe
+
+soffice_link=`which soffice`
+soffice_path=`readlink -f $soffice_link`
+ooo_program_dir=$(dirname $soffice_path)
+
+
+# FIXME: It does not work using the LD_LIBRARY_PATH
+#        We have chnage directory to $ooo_program_dir"
+# export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$ooo_program_dir"
+
+sample_dir=`pwd`
+cd $ooo_program_dir
+pwd
+echo mono $sample_dir/SpreadsheetSample.exe
+mono $sample_dir/SpreadsheetSample.exe
+cd -
+

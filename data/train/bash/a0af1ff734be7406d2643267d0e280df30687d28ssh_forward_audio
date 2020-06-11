@@ -1,0 +1,53 @@
+#!/bin/bash
+
+usage() {
+  echo "Usage: $0 -h hostname [-s|--save filename] [-q|--quality quality] [-m|--mono] [-C|--compress] [-P|--player playerApplication]"
+}
+
+QUALITY="0"
+PLAYER="vlc vlc://pause:${VLC_PAUSE-7} -"
+
+
+while test "$1" != ""; do
+  cur_arg="$1"; shift
+  case "$cur_arg" in
+    "-h"|"--host")
+      HOST_TO_SPY="$1"; shift
+      ;;
+    "-s"|"--save")
+      SAVE_FILENAME="$1"; shift
+      ;;
+    "-q"|"--quality")
+      QUALITY="$1"; shift
+      ;;
+    "-m"|"--mono")
+      DOWNMIX_OPTS="--downmix"; shift
+      ;;
+    "-C"|"--compress")
+      EXTRA_SSH_ARGS="$EXTRA_SSH_ARGS -C"
+      ;;
+    "-P"|"--player")
+      PLAYER="$1"; shift
+      ;;
+    *)
+      usage
+      exit 1
+      ;;
+  esac
+done
+
+if test "$HOST_TO_SPY" == ""; then
+  usage
+  exit 1
+fi
+
+SAVE_CMD="cat"
+if test "$SAVE_FILENAME" != ""; then
+  SAVE_CMD="tee"
+else
+  SAVE_FILENAME="-"
+fi
+
+
+
+ssh $EXTRA_SSH_ARGS $HOST_TO_SPY "arecord -f cd - | oggenc $DOWNMIX_OPTS -Q -q $QUALITY -" | pv -ratb | $SAVE_CMD "$SAVE_FILENAME" | $PLAYER

@@ -1,0 +1,57 @@
+@CHARSET "UTF-8";
+#firstShow{
+  color:#0000cc;
+  cursor:hand;
+  cursor:pointer;
+}
+
+#preShow{
+  color:#0000cc;
+  cursor:hand;
+  cursor:pointer;
+}
+#ajaxPageInfo{
+  color:#000000;
+}
+
+#nextShow{
+  color:#0000cc;
+  cursor:hand;
+  cursor:pointer;
+}
+#lastShow{
+  color:#0000cc;
+  cursor:hand;
+  cursor:pointer;
+}
+
+
+#ajaxSelectText{
+   color:#000000;
+}
+
+#ajaxMaxText{
+   color:#000000;
+}
+#firstNoShow{
+}
+
+#preNoShow{
+
+}
+
+#nextNoShow{
+}
+
+#lastNoShow{
+}
+#ajaxPage{
+    float:right;
+    width:600px;
+    font-size:12px;
+}
+/*2011-03-05 16:07*/
+.IDcardImageSize{width:360px; height:190px;}
+.RegistrShowInfo{width:955px;}
+.RegistrShowInfo .Textd{width:155px;height:30px;}
+.RegistrShowInfo .Imagetd{width:800px;}

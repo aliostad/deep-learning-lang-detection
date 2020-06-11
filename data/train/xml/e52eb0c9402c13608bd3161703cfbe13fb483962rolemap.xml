@@ -1,0 +1,26 @@
+<rolemap>
+
+    <roles>
+        <role name="Repository Administrator" />
+        <role name="Repository Contributor" />
+    </roles>
+
+    <permissions>
+        <permission name="gu.repository.content: Add Repository Container" acquire="False">
+            <role name="Repository Administrator" />
+            <role name="Manager" />
+        </permission>
+
+        <permission name="gu.repository.content: Add Repository Item" acquire="False">
+            <role name="Repository Administrator" />
+            <role name="Repository Contributor" />
+            <role name="Manager" />
+        </permission>
+
+        <permission name="gu.repository.content: Manage Repository Container" acquire="False">
+            <role name="Repository Administrator" />
+            <role name="Manager" />
+        </permission>
+
+    </permissions>
+</rolemap>

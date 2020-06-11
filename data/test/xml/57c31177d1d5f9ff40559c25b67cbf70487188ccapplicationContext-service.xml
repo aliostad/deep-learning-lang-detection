@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+ 
+	<bean id="remoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean" abstract="true">
+		<property name="username" value="${username}"/>
+		<property name="password" value="${password}"/>
+ 	</bean>
+ 
+    <bean id="adminService" parent="remoteService">
+		<property name="serviceUrl" value="${service.remote.root}/adminService"/>
+		<property name="serviceInterface" value="com.readidtech.kgarten.server.service.AdminService"/>
+	</bean>
+	
+		<bean id="loginService" parent="remoteService">
+		<property name="serviceUrl" value="${service.remote.root}/loginService"/>
+		<property name="serviceInterface" value="com.readidtech.kgarten.server.service.LoginService"/>
+	</bean>
+	
+	<bean id="cardService" parent="remoteService">
+		<property name="serviceUrl" value="${service.remote.root}/cardService" />
+		<property name="serviceInterface"
+			value="com.readidtech.kgarten.server.service.CardService" />
+	</bean>
+	
+	<bean id="attendanceDeviceService" parent="remoteService">
+		<property name="serviceUrl" value="${service.remote.root}/attendanceDeviceService" />
+		<property name="serviceInterface"
+			value="com.readidtech.kgarten.server.service.AttendanceDeviceService" />
+	</bean>
+	
+	<bean id="attendanceTimeSettingService" parent="remoteService">
+		<property name="serviceUrl" value="${service.remote.root}/attendanceTimeSettingService" />
+		<property name="serviceInterface"
+			value="com.readidtech.kgarten.server.service.AttendanceTimeSettingService" />
+	</bean>
+	
+	<bean id="departmentService" parent="remoteService">
+		<property name="serviceUrl" value="${service.remote.root}/departmentService" />
+		<property name="serviceInterface"
+			value="com.readidtech.kgarten.server.service.DepartmentService" />
+	</bean>
+	
+	<bean id="deviceWarningMessageService" parent="remoteService">
+		<property name="serviceUrl" value="${service.remote.root}/deviceWarningMessageService" />
+		<property name="serviceInterface"
+			value="com.readidtech.kgarten.server.service.DeviceWarningMessageService" />
+	</bean>
+	
+	<bean id="deviceWarningSettingService" parent="remoteService">
+		<property name="serviceUrl" value="${service.remote.root}/deviceWarningSettingService" />
+		<property name="serviceInterface"
+			value="com.readidtech.kgarten.server.service.DeviceWarningSettingService" />
+	</bean>
+	
+	<bean id="locatorAreaService" parent="remoteService">
+		<property name="serviceUrl" value="${service.remote.root}/locatorAreaService" />
+		<property name="serviceInterface"
+			value="com.readidtech.kgarten.server.service.LocatorAreaService" />
+	</bean>
+	
+	<bean id="locatorDeviceService" parent="remoteService">
+		<property name="serviceUrl" value="${service.remote.root}/locatorDeviceService" />
+		<property name="serviceInterface"
+			value="com.readidtech.kgarten.server.service.LocatorDeviceService" />
+	</bean>
+	
+	<bean id="locatorRecordService" parent="remoteService">
+		<property name="serviceUrl" value="${service.remote.root}/locatorRecordService" />
+		<property name="serviceInterface"
+			value="com.readidtech.kgarten.server.service.LocatorRecordService" />
+	</bean>
+	
+	<bean id="parentService" parent="remoteService">
+		<property name="serviceUrl" value="${service.remote.root}/parentService" />
+		<property name="serviceInterface"
+			value="com.readidtech.kgarten.server.service.ParentService" />
+	</bean>
+	
+	<bean id="pickupRecordService" parent="remoteService">
+		<property name="serviceUrl" value="${service.remote.root}/pickupRecordService" />
+		<property name="serviceInterface"
+			value="com.readidtech.kgarten.server.service.PickupRecordService" />
+	</bean>
+	
+	<bean id="schoolClassService" parent="remoteService">
+		<property name="serviceUrl" value="${service.remote.root}/schoolClassService" />
+		<property name="serviceInterface"
+			value="com.readidtech.kgarten.server.service.SchoolClassService" />
+	</bean>
+	
+	<bean id="smsSendLogService" parent="remoteService">
+		<property name="serviceUrl" value="${service.remote.root}/smsSendLogService" />
+		<property name="serviceInterface"
+			value="com.readidtech.kgarten.server.service.SmsSendLogService" />
+	</bean>
+	
+	<bean id="smsTemplateService" parent="remoteService">
+		<property name="serviceUrl" value="${service.remote.root}/smsTemplateService" />
+		<property name="serviceInterface"
+			value="com.readidtech.kgarten.server.service.SmsTemplateService" />
+	</bean>
+	
+	<bean id="studentAttendanceService" parent="remoteService">
+		<property name="serviceUrl" value="${service.remote.root}/studentAttendanceService" />
+		<property name="serviceInterface"
+			value="com.readidtech.kgarten.server.service.StudentAttendanceService" />
+	</bean>
+	
+	<bean id="studentService" parent="remoteService">
+		<property name="serviceUrl" value="${service.remote.root}/studentService" />
+		<property name="serviceInterface"
+			value="com.readidtech.kgarten.server.service.StudentService" />
+	</bean>
+	
+	<bean id="studentWarningMessageService" parent="remoteService">
+		<property name="serviceUrl" value="${service.remote.root}/studentWarningMessageService" />
+		<property name="serviceInterface"
+			value="com.readidtech.kgarten.server.service.StudentWarningMessageService" />
+	</bean>
+	
+	<bean id="teacherAttendanceService" parent="remoteService">
+		<property name="serviceUrl" value="${service.remote.root}/teacherAttendanceService" />
+		<property name="serviceInterface"
+			value="com.readidtech.kgarten.server.service.TeacherAttendanceService" />
+	</bean>
+	
+	<bean id="teacherClassService" parent="remoteService">
+		<property name="serviceUrl" value="${service.remote.root}/teacherClassService" />
+		<property name="serviceInterface"
+			value="com.readidtech.kgarten.server.service.TeacherClassService" />
+	</bean>
+	
+	<bean id="teacherDepartmentService" parent="remoteService">
+		<property name="serviceUrl" value="${service.remote.root}/teacherDepartmentService" />
+		<property name="serviceInterface"
+			value="com.readidtech.kgarten.server.service.TeacherDepartmentService" />
+	</bean>
+	
+	<bean id="teacherService" parent="remoteService">
+		<property name="serviceUrl" value="${service.remote.root}/teacherService" />
+		<property name="serviceInterface"
+			value="com.readidtech.kgarten.server.service.TeacherService" />
+	</bean>
+	
+	<bean id="warningTimeSettingService" parent="remoteService">
+		<property name="serviceUrl" value="${service.remote.root}/warningTimeSettingService" />
+		<property name="serviceInterface"
+			value="com.readidtech.kgarten.server.service.WarningTimeSettingService" />
+	</bean>
+   
+</beans>

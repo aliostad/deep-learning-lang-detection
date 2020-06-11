@@ -1,0 +1,280 @@
+/*reset*/
+/*reset*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+body {
+  font-family: Arial, "STHeiti", Helvetica, sans-serif;
+  background: #fff;
+  font-size: 14px;
+  height: 100%;
+  max-width: 750px;
+  min-width: 20pc;
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+legend {
+  display: none;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before,
+q:after {
+  content: '';
+}
+abbr,
+acronym {
+  border: 0;
+}
+html {
+  -webkit-text-size-adjust: none;
+  width: 100%;
+  height: 100%;
+}
+/*????iphone??safari????????????*/
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+input[type="search"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+html,
+body {
+  position: relative;
+  color: #333;
+}
+body {
+  overflow: hidden;
+  position: relative;
+}
+.load-page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+}
+.load-page .img-load-now {
+  width: 1.89333333rem;
+  height: 2.66666667rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.load-page .img-load-now .loading {
+  background-image: url(../img/loading.gif);
+  background-size: 1.89333333rem 1.90666667rem;
+  width: 1.89333333rem;
+  height: 1.90666667rem;
+  margin-bottom: 0.26666667rem;
+}
+.load-page .img-load-now span {
+  font-size: 0.29333333rem;
+}
+.load-page .img-load-now .readyGo {
+  display: none;
+  text-align: center;
+}
+/**音乐播放**/
+.btn-music {
+  width: 0.88rem;
+  height: 0.88rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  position: absolute;
+  top: 0.48rem;
+  right: 0.48rem;
+  z-index: 999;
+}
+.music {
+  width: 100%;
+  height: 100%;
+}
+@-webkit-keyframes music-btn {
+  form {
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes music-btn {
+  form {
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+.page-landscape {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.page-landscape h3 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 0.37333333rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.page-portrait {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.page-portrait .load-page {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+.page-portrait .box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: pink;
+  left: 0;
+  top: 0;
+}
+.page-portrait .box #animation_container {
+  position: absolute;
+  left: 0;
+  top: 0;
+}

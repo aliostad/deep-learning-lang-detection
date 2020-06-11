@@ -1,0 +1,16 @@
+$:.unshift File.dirname(__FILE__)
+
+require 'test/unit'
+require 'custom_fields_controller_test'
+require 'information_controller_test'
+require 'issue_categories_controller_test'
+require 'issue_priorities_controller_test'
+require 'issue_status_controller_test'
+require 'issues_controller_test'
+require 'projects_controller_test'
+require 'queries_controller_test'
+require 'settings_controller_test'
+require 'time_entry_activities_controller_test'
+require 'trackers_controller_test'
+require 'users_controller_test'
+require 'versions_controller_test'

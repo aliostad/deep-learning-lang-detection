@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 3.0//EN" "http://www.springframework.org/dtd/spring-beans-3.0.dtd">
+
+<beans>
+    <bean id="Derby"
+          class="org.springframework.jdbc.support.SQLErrorCodes">
+        <property name="databaseProductName">
+            <value>Apache Derby</value>
+        </property>
+        <property name="useSqlStateForTranslation">
+            <value>true</value>
+        </property>
+        <property name="customTranslations">
+            <list>
+                <ref local="myDuplicateKeyTranslation"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="myDuplicateKeyTranslation"
+          class="org.springframework.jdbc.support.CustomSQLErrorCodesTranslation">
+        <property name="errorCodes">
+            <value>23505</value>
+        </property>
+        <property name="exceptionClass">
+            <value>
+                com.apress.springrecipes.vehicle.MyDuplicateKeyException
+            </value>
+        </property>
+    </bean>
+</beans>

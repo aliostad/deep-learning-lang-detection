@@ -1,0 +1,43 @@
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  
+  .earth
+  {
+    position: absolute;
+    width: 400px;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -175px;
+    z-index: 20;
+  }
+  
+  .service_item
+  {
+    font-size: 0.875rem;
+  }
+
+  .service_desc
+  {
+    width: 305px;
+    bottom: 3px;
+  }
+
+  .service_desc.__left
+  {
+    left: -210px;
+    text-align: right;
+  }
+
+  .service_desc.__right
+  {
+    right: -210px;
+  }
+
+  .service_item.__line_1
+  {
+    width: 475px;
+  }
+
+
+}

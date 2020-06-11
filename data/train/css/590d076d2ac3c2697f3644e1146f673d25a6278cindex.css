@@ -1,0 +1,92 @@
+#content {
+   margin: auto;
+    width:60%;
+}
+
+strong {
+    color: #e74949;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #e74949;}
+    h2 a {
+        color: #e74949;}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#header {}
+    #header > a > img.logo {
+        width: 120px;}
+    #header > em {
+        float: right;}
+    #header > ul {
+        margin: 50px 0;}
+        #header > ul > li {
+            list-style: none;}
+            #header > ul > li > a {
+                color: #0089bc;
+                font-size: 20px;}
+
+#document {}
+    #document div.general-information {
+        font-size: 20px;}
+        #document div.general-information div.api-url {
+            padding-left: 50px;}
+            #document div.general-information div.api-url strong {
+                font-size: 18px;}
+        #document div.general-information div.default-parameters {
+            padding-left: 20px;
+            font-size: 18px;}
+            #document div.general-information div.default-parameters p.param {
+                margin: 2px;
+                padding-left: 30px;}
+    #document section.api-block {
+        margin-top: 40px;
+        font-size: 16px;}
+        #document section.api-block p.title {
+            margin-bottom: 0;
+            color: #e74949;
+            font-weight: bold;
+            font-size: 24px;}
+        #document section.api-block p.summary {
+            padding-left: 20px;}
+        #document section.api-block div.parameter-block {
+            padding-left: 50px;}
+            #document section.api-block div.parameter-block p {
+                margin: 0 0 10px;
+                float: left;}
+                #document section.api-block div.parameter-block p:first-child {
+                    width: 20%;}
+                #document section.api-block div.parameter-block p:last-child {
+                    width: 80%;}
+        #document section.api-block div.example {
+            padding-left: 20px;}
+        #document section.api-block div.example > p {
+            margin: 5px 0;
+            font-size: 20px;}
+        #document section.api-block div.example > div {
+            padding-bottom: 10px;
+            padding-left: 75px;}
+            #document section.api-block div.example > div > p {
+                margin: 5px 0;
+                padding-left: 30px;}
+            #document section.api-block div.example > div > ol {
+                margin-left: 20px;}
+                #document section.api-block div.example > div > ol > li.tab0 {
+                    padding-left: 20px;}
+                #document section.api-block div.example > div > ol > li.tab1 {
+                    padding-left: 30px;}
+                #document section.api-block div.example > div > ol > li.tab2 {
+                    padding-left: 40px;}
+                #document section.api-block div.example > div > ol > li.tab3 {
+                    padding-left: 50px;}
+        #document section.api-block div.example > textarea {
+            min-width: 600px;
+            resize: vertical;
+            margin-left: 50px;
+            min-height: 200px;}
+

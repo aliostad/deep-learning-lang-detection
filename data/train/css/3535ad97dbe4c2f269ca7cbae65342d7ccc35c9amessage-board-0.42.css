@@ -1,0 +1,164 @@
+#message-board {
+	font-size: 13px;
+	text-align: center;
+	color: #333;
+}
+
+#message-board-body {
+	position: fixed;
+	bottom: 26px;
+	right: 1px;
+	border: 1px solid rgb(190, 190, 190);
+	background: white;
+	z-index: 10001;
+	height: 300px;
+	width: 283px;
+}
+
+#message-board-tip {
+	width: 70px;
+	height: 23px;
+	line-height: 23px;
+	cursor: pointer;
+	font-weight: bold;
+	color: dimgray;
+	right: 1px;
+	bottom: 2px;
+	position: fixed;
+	border: 1px solid rgb(190, 190, 190);
+	background: white;
+	z-index: 10002;
+}
+
+#message-board-body #message-footer {
+	height: 27px;
+	width: 279px;
+	text-align: left;
+}
+
+#message-board-body #message-footer a {
+	color: rgb(173, 173, 173);
+	padding-top: 7px;
+	padding-left: 8px;
+	display: block;
+	font-size: 12px;
+}
+
+#message-board-body #message-footer i {
+	font-size: 15px;
+}
+
+#message-board-body #message-content {
+	padding: 0 8px;
+	height: 242px;
+	width: 267px;
+	overflow: auto;
+}
+
+#message-board-body #message-content .message-info {
+	margin-top: 15px;
+}
+
+#message-board-body #message-content .message-item {
+	word-break: break-all;
+	text-align: left;
+	font-size: 12px;
+	padding: 8px 0;
+	border-bottom: #DDD dashed 1px;
+	width: 255px;
+	color: rgb(173, 173, 173);
+}
+
+#message-board-body a:hover {
+	text-decoration: none;
+}
+
+#message-board-body #message-content .message-item a {
+	padding: 0 5px;
+	color: rgb(90, 158, 192);
+}
+
+#message-board-body #message-content .message-item a:hover {
+	color: rgb(102, 129, 143);
+}
+
+#message-board-body #message-content .message-item.underway {
+	color: #333;
+}
+
+#message-board-body #message-content .message-item.underway a {
+	color: rgb(28, 199, 214);
+}
+
+#message-board-body #message-content .message-item.underway a:hover {
+	color: rgb(0, 112, 168);
+}
+
+#message-board-body #message-content .message-item p {
+	display: inline;
+}
+
+#message-board-body #message-content .message-item span.assignment-step
+	{
+	color: #999;
+}
+
+#message-board-body #message-content .message-item img {
+	max-height: 20px;
+	max-width: 20px;
+}
+
+#message-board #message-board-body #message-header {
+	width: 283px;
+	height: 30px;
+}
+
+#message-board #message-board-body #message-header li {
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: bold;
+	float: left;
+	width: 140px;
+	border-bottom: 1px solid #ddd;
+	position: relative;
+	background: white;
+}
+
+#message-board #message-board-body #message-header li.current {
+	border-bottom: none;
+}
+
+#message-board #message-board-body #message-header li .count-tip-block {
+	right: 15px;
+	top: 7px;
+}
+
+#message-board #message-board-body #message-header li.current .count-tip-block
+	{
+	background: rgb(47, 195, 94);
+}
+
+#message-board #message-board-body #message-header li.current[category='userAssignments'] .count-tip-block
+	{
+	background: #c3412f;
+}
+
+#message-board #message-board-body #message-header li:hover {
+	cursor: pointer;
+}
+
+#message-board #message-board-body #message-header li a {
+	color: #AAA;
+}
+
+#message-board #message-board-body #message-header li:hover a {
+	color: #999;
+}
+
+#message-board #message-board-body #message-header li.current a {
+	color: rgb(28, 199, 214);
+}
+
+#underway-message-count {
+	bottom: 17px;
+}

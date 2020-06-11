@@ -1,0 +1,136 @@
+/*	Dashboard */
+
+#blog_list_container {
+	width: 96%;
+	position: absolute;
+	right: 0;
+	border: solid 1px #006579;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+	border-radius: 20px;
+	padding: 2%;
+	color: #006579;
+	background: #fff;
+	box-shadow: 1px 1px 1px #000;
+}
+
+#blog_list_table th {
+	text-align: left;
+#blog_list_table th:first-child,
+#blog_list_table td:first-child {
+	width: 10%;
+}
+
+#blog_list_table th:nth-child(2),
+}
+
+#blog_list_table td:nth-child(2) {
+	width: 30%;
+}
+
+#blog_list_table th:nth-child(3),
+#blog_list_table td:nth-child(3) {
+	width: 5%;
+}
+
+#blog_list_table th:nth-child(4),
+#blog_list_table td:nth-child(4) {
+	width: 5%;
+}
+
+#blog_list_table th:nth-child(5),
+#blog_list_table td:nth-child(5) {
+	width: 5%;
+}
+
+#blog_list_table th:nth-child(6),
+#blog_list_table td:nth-child(6) {
+	width: 5%;
+}
+
+#blog_list tr:hover {
+	background: rgba( 0, 101, 121, 0.5 );
+	cursor: pointer;
+}
+
+#blog_list a {
+	color: #006579;
+}
+
+#blog_list a:hover {
+	color: #fff;
+}
+
+#write_blog {
+	display: block;
+	width: 100%;
+	margin-bottom: 0px;
+}
+
+
+#write_blog_holder {
+	width: 95.5%;
+	min-height: 15px;
+	padding: 20px 2% 0px 2%;
+	margin-bottom: -35px; /* make tab behind list */
+	background: #006579;
+	color: #fff;
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    border-radius: 0 20px 0 0;
+}
+
+#write_blog_holder.open {
+	padding: 20px 2% 50px 2%;
+	width: 96%;
+}
+
+
+a#write_blog_switch {
+	display: block;
+	background: #006579;
+	border-radius: 20px 20px 0 0;
+	color: #fff;
+	width: 50px;
+	padding: 10px;
+	text-align: center;
+}
+
+#write_blog_form fieldset {
+	border: solid 1px #fff;
+	border-radius: 20px;
+}
+
+#write_blog_form ul,
+#write_blog_form li {
+	list-style: none;
+}
+
+#write_blog_form li:first-child {
+	margin: 10px auto 10px auto;
+	line-height: 25px;
+}
+
+#write_blog_form li:last-child {
+	text-align: right;
+}
+
+#write_blog_title {
+	width: 93%;
+	float: right;
+}
+
+#write_blog_entry {
+	width: 99.2%;
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+#blog_list_container {
+	z-index: 1;
+}

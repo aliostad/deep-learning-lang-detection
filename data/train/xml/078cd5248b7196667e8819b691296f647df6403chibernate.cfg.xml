@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <mapping class="com.mum.edu.cs490.gpasystem.domain.UserEntity"></mapping>
+    <mapping class="com.mum.edu.cs490.gpasystem.domain.RoleEntity"></mapping>
+    <mapping class="com.mum.edu.cs490.gpasystem.domain.CourseEntity"></mapping>
+    <mapping class="com.mum.edu.cs490.gpasystem.domain.StudentCourseEntity"></mapping>
+    <mapping class="com.mum.edu.cs490.gpasystem.domain.NotificationEntity"></mapping>
+    <mapping class="com.mum.edu.cs490.gpasystem.domain.TransactionEntity"></mapping>
+    <mapping class="com.mum.edu.cs490.gpasystem.domain.FeedbackEntity"></mapping>
+  </session-factory>
+</hibernate-configuration>

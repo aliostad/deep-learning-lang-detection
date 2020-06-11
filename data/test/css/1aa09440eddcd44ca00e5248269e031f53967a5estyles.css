@@ -1,0 +1,77 @@
+h2, h3 {
+    margin: 5px 0;
+}
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 10px;
+    background: #f1f1f1;
+    box-shadow: 0 2px 10px;
+}
+.header {
+    font-weight: bold;
+    /*font-size: 25px;*/
+    margin: 20px 10px;
+    display: inline-block;
+}
+.footer {
+    color: gray;
+    font-style: italic;
+    margin: 20px auto 10px;
+    display: inline-block;
+}
+.bold {
+    font-weight: bold;
+}
+.entity {
+    padding: 10px;
+}
+.entity h3 {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+.entity > .description {
+    display: block;
+    padding-left: 40px;
+    margin: 5px 0;
+}
+.entity .fields {
+    padding-left: 40px;
+    margin: 15px 0;
+    display: block;
+}
+.entity span.field {
+    width: 100%;
+    margin: 5px 0;
+    display: block;
+}
+.entity span.field span{
+    display: inline-block;
+}
+span.field .name {
+    width: 15%;
+    font-weight: bold;
+}
+span.field .type {
+    width: 15%;
+    font-style: italic;
+}
+span.field .description {
+    width: 69%;
+}
+.api {
+    padding: 10px;
+}
+.api table{
+    width: 100%;
+}
+.api table, .api table th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.api table td {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    padding: 5px 5px;
+}

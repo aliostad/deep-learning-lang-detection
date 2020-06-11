@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="languages">
+        <item>en_US</item><item>English</item>
+        <item>es_MX</item><item>Spanish</item>
+    </array>
+    <array name="categories">
+        <item>@array/Category1</item>
+        <item>@array/Category2</item>
+    </array>
+    <array name="Category1">
+        <item>Sample topic 1</item><item>Sample note 1.</item>
+        <item>Sample topic 2</item><item>Sample note 2.</item>
+        <item>Sample topic 3</item><item>Sample note 3.</item>
+        <item>Sample topic 4</item><item>Sample note 4.</item>
+    </array>
+    <array name="Category2">
+        <item>Sample topic 1</item><item>Sample note 1.</item>
+        <item>Sample topic 2</item><item>Sample note 2.</item>
+        <item>Sample topic 3</item><item>Sample note 3.</item>
+        <item>Sample topic 4</item><item>Sample note 4.</item>
+    </array>
+</resources>

@@ -1,0 +1,23 @@
+#!/usr/bin/env zsh
+
+source "$(dirname "$0")/script-helpers"
+
+if ! [[ "$1" =~ ([^\/:]+)\/([^\/.]+)(.git)?$ ]]; then
+	error "$1 unable to extract owner and repo"
+fi
+
+GITHUB_OWNER="${match[1]}"
+GITHUB_REPO_NAME="${match[2]}"
+GITHUB_NAME_WITH_OWNER="${GITHUB_OWNER}/${GITHUB_REPO_NAME}"
+
+DEST="$HOME/src/github.com/$GITHUB_NAME_WITH_OWNER"
+REPO_URL="git@github.com:$GITHUB_NAME_WITH_OWNER.git"
+
+if [[ ! -d "$DEST" ]]; then
+	msg "Cloning $REPO_URL to $DEST"
+	git clone "$REPO_URL" "$DEST"
+else
+	msg "Updating cloned repo in $DEST"
+	cd "$DEST"
+	git pull --rebase
+fi

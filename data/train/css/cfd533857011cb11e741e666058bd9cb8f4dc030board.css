@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* the saltware Web Standardization Team (http://www.saltware.co.kr) keh 2010-08-03 */
+
+div.txt_div{position:relative;font-weight:bold;}
+div.txt_div div{position:absolute;right:10px;top:5px;font-weight:normal;}
+div.txt_div div span{font-weight:bold;color:#f8981d;}
+
+/* wirte */
+table.write{width:100%;border-top:2px solid #aab7d4;border-bottom:2px solid #aab7d4;}
+table.write th,
+table.write td{border:1px solid #c4cee2;padding:6px 5px;white-space:nowrap;word-wrap:break-word}
+/* table.write th{text-align:left;padding-left:17px;background:#e7f0f9;color:#1274ca;} */
+table.write th{text-align:center;background:#e7f0f9;color:#1274ca;} /* write 항목 가운데 정렬 */
+table.write td textarea.input_txta{padding:5px;border:1px solid #ccc;}
+table.write td.email{padding:20px 10px 10px 10px;text-align:center;}
+table.write td.email label{padding-right:30px;}
+table.write td.email textarea.input_txta{margin-top:20px;}
+table.write td table.content3 th{text-align:center;}
+
+/*content table*/
+table.content1{width:100%;}
+table.content1 th,
+table.content1 td{border:1px solid #c4cee2;padding:4px 5px 2px 5px;}
+table.content1 th{background:#e7f0f9;color:#1274ca;}
+
+/* button */
+div.btn_center{margin-top:25px;text-align:center;}
+div.btn_center_mgt0{margin-top:0px;text-align:center;}
+div.btn_center_mgt200{margin-top:200px;text-align:center;}
+div.btn_right{margin-top:10px;text-align:right;}
+div.btn_right_mgt0{margin-top:0px;text-align:right;}
+
+/* paging */
+div.paging{margin-top:25px;text-align:center;}
+div.paging a{padding:0 3px; cursor: pointer;}
+div.paging strong{padding:0 3px; color:#f8981d;}
+div.paging img{vertical-align:-10%;}
+div.paging .first{margin-right:5px;}
+div.paging .last{margin-left:5px;}

@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           ">
+    <bean id="repositoryFactory" class="org.leialearns.graph.FakeRepositoryFactory" />
+
+    <bean class="org.leialearns.graph.interaction.InteractionContextRepository" factory-bean="repositoryFactory" factory-method="createRepository">
+        <constructor-arg value="org.leialearns.graph.interaction.InteractionContextRepository" />
+    </bean>
+
+    <bean class="org.leialearns.graph.interaction.AlphabetRepository" factory-bean="repositoryFactory" factory-method="createRepository">
+        <constructor-arg value="org.leialearns.graph.interaction.AlphabetRepository" />
+    </bean>
+
+    <bean class="org.leialearns.graph.interaction.SymbolRepository" factory-bean="repositoryFactory" factory-method="createRepository">
+        <constructor-arg value="org.leialearns.graph.interaction.SymbolRepository" />
+    </bean>
+
+    <bean class="org.leialearns.graph.model.CounterRepository" factory-bean="repositoryFactory" factory-method="createRepository">
+        <constructor-arg value="org.leialearns.graph.model.CounterRepository" />
+    </bean>
+
+    <bean class="org.leialearns.graph.model.EstimateRepository" factory-bean="repositoryFactory" factory-method="createRepository">
+        <constructor-arg value="org.leialearns.graph.model.EstimateRepository" />
+    </bean>
+
+    <bean class="org.leialearns.graph.model.FractionEstimateRepository" factory-bean="repositoryFactory" factory-method="createRepository">
+        <constructor-arg value="org.leialearns.graph.model.FractionEstimateRepository" />
+    </bean>
+
+    <bean class="org.leialearns.graph.model.FractionOracleRepository" factory-bean="repositoryFactory" factory-method="createRepository">
+        <constructor-arg value="org.leialearns.graph.model.FractionOracleRepository" />
+    </bean>
+
+    <bean class="org.leialearns.graph.model.ObservedRepository" factory-bean="repositoryFactory" factory-method="createRepository">
+        <constructor-arg value="org.leialearns.graph.model.ObservedRepository" />
+    </bean>
+
+    <bean class="org.leialearns.graph.model.ToggledRepository" factory-bean="repositoryFactory" factory-method="createRepository">
+        <constructor-arg value="org.leialearns.graph.model.ToggledRepository" />
+    </bean>
+
+    <bean class="org.leialearns.graph.model.ExpectedRepository" factory-bean="repositoryFactory" factory-method="createRepository">
+        <constructor-arg value="org.leialearns.graph.model.ExpectedRepository" />
+    </bean>
+
+    <bean class="org.leialearns.graph.model.VersionRepository" factory-bean="repositoryFactory" factory-method="createRepository">
+        <constructor-arg value="org.leialearns.graph.model.VersionRepository" />
+    </bean>
+
+    <bean class="org.leialearns.graph.session.SessionRepository" factory-bean="repositoryFactory" factory-method="createRepository">
+        <constructor-arg value="org.leialearns.graph.session.SessionRepository" />
+    </bean>
+
+    <bean class="org.leialearns.graph.structure.NodeRepository" factory-bean="repositoryFactory" factory-method="createRepository">
+        <constructor-arg value="org.leialearns.graph.structure.NodeRepository" />
+    </bean>
+
+    <bean class="org.leialearns.graph.structure.StructureRepository" factory-bean="repositoryFactory" factory-method="createRepository">
+        <constructor-arg value="org.leialearns.graph.structure.StructureRepository" />
+    </bean>
+
+</beans>

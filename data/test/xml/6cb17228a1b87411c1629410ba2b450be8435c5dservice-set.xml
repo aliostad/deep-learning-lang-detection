@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service.set xmlns="http://service.alpaca.vdrinkup.net/definition">	
+        <service name="messageInProxyService" class="net.vdrinkup.alpaca.messageset.MessageSetInProxyService"/>
+        <service name="messageOutProxyService" class="net.vdrinkup.alpaca.messageset.MessageSetOutProxyService"/>
+        <service name="protocolConsumerProxyService" class="net.vdrinkup.alpaca.protocol.ProtocolConsumerProxyService"/>
+        <service name="jdbcDmsProxyService" class="net.vdrinkup.alpaca.jdbc.JdbcDmsProxyService"/>	
+</service.set>

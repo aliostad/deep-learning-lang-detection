@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeList is_valid="Y" name="game.template.daily.copy" label="每日引导副本" data_name="GM_TPL_DAILY_COPY">
+  <Code is_valid="Y" type="I" name="shenhai_copy" label="每日引导副本深海秘境" data_name="ShenhaiCopy" data_value="2" />
+  <Code is_valid="Y" type="I" name="huanxiang_copy" label="每日引导副本幻象天宫" data_name="HuanxiangCopy" data_value="3" />
+  <Code is_valid="Y" type="I" name="mojia_copy" label="每日引导副本墨家遗迹" data_name="MojiaCopy" data_value="4" />
+  <Code is_valid="Y" type="I" name="huangling_copy" label="每日引导副本皇陵深渊" data_name="HuanglingCopy" data_value="5" />
+  <Code is_valid="Y" type="I" name="fengmo_copy" label="每日引导副本封魔窟" data_name="FengmoCopy" data_value="6" />
+</CodeList>

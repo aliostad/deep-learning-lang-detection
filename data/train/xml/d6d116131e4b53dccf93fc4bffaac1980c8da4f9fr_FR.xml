@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.polls.bo.useractionlogger" lcid="fr_FR">
+  <key id="insert-poll">insert.poll {lang} {documentlabel}</key>
+  <key id="log-insert-poll">log insert poll</key>
+  <key id="delete-poll">delete.poll {documentlabel} {lang}</key>
+  <key id="log-delete-poll">log delete poll</key>
+  <key id="insert-question">insert.question {lang} {documentlabel}</key>
+  <key id="log-insert-question">log insert question</key>
+  <key id="insert-answer">insert.answer {lang} {documentlabel}</key>
+  <key id="log-insert-answer">log insert answer</key>
+  <key id="update-answer">update.answer {lang} {documentlabel}</key>
+  <key id="log-update-answer">log update answer</key>
+  <key id="update-poll">update.poll {lang} {documentlabel}</key>
+  <key id="log-update-poll">log update poll</key>
+  <key id="update-question">update.question {lang} {documentlabel}</key>
+  <key id="log-update-question">log update question</key>
+  <key id="move-question">move.question {destinationlabel} {lang} {documentlabel}</key>
+  <key id="log-move-question">log move question</key>
+  <key id="move-answer">move.answer {destinationlabel} {lang} {documentlabel}</key>
+  <key id="log-move-answer">log move answer</key>
+  <key id="duplicate-poll">duplicate.poll {lang} {documentlabel}</key>
+  <key id="log-duplicate-poll">log duplicate poll</key>
+  <key id="duplicate-question">duplicate.question {lang} {documentlabel}</key>
+  <key id="log-duplicate-question">log duplicate question</key>
+  <key id="duplicate-answer">duplicate.answer {lang} {documentlabel}</key>
+  <key id="log-duplicate-answer">log duplicate answer</key>
+  <key id="delete-question">delete.question {documentlabel} {lang}</key>
+  <key id="log-delete-question">log delete question</key>
+</i18n>

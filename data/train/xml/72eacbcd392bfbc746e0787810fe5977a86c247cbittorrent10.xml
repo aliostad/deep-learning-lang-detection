@@ -1,0 +1,14 @@
+<?xml version='1.0'?>
+<!DOCTYPE platform SYSTEM "http://simgrid.gforge.inria.fr/simgrid.dtd">
+<platform version="3">
+  <process host="c-0.me" function="bittorrent.Tracker"><argument value="10000"/></process>
+  <process host="c-1.me" function="bittorrent.Peer"><argument value="2645535" /><argument value="10000" /><argument value="1" /></process>
+  <process host="c-2.me" function="bittorrent.Peer"><argument value="777632" /><argument value="10000" /></process>
+  <process host="c-3.me" function="bittorrent.Peer"><argument value="12909358" /><argument value="10000" /></process>
+  <process host="c-4.me" function="bittorrent.Peer"><argument value="4282968" /><argument value="10000" /></process>
+  <process host="c-5.me" function="bittorrent.Peer"><argument value="12718629" /><argument value="10000" /></process>
+  <process host="c-6.me" function="bittorrent.Peer"><argument value="8941773" /><argument value="10000" /></process>
+  <process host="c-7.me" function="bittorrent.Peer"><argument value="14235839" /><argument value="10000" /></process>
+  <process host="c-8.me" function="bittorrent.Peer"><argument value="13185926" /><argument value="10000" /></process>
+  <process host="c-9.me" function="bittorrent.Peer"><argument value="11813502" /><argument value="10000" /></process>
+</platform>

@@ -1,0 +1,162 @@
+body,nav,ul,li,a,h1,h2,h3,h4,h5,p{
+	margin: 0;
+	padding: 0;
+}
+body{
+	margin: 0 auto;
+	width: 900px;
+	max-width: 900px;
+}
+a:hover{
+	border-bottom: 1px solid gray;
+}
+.logo{
+	display: none;
+	height: 150px;
+	width: 100%;
+}
+.logo img{
+	width: 100%;
+	height: auto;
+	max-height: 150px;
+}
+nav{
+	margin: 5px 0;
+	height: 50px;
+	background: black;
+}
+nav ul{
+	list-style: none;
+}
+nav ul li{
+	float: left;
+	width: 150px;
+	line-height: 50px;
+	text-align: center;
+}
+nav ul li>a{
+	color: white;
+	font-size: 15px;
+	text-decoration: none;
+	font-weight: normal;
+	transition: all ease 500ms;
+}
+nav ul li>a:hover{
+	font-size: 18px;
+	border-bottom: 2px solid white;
+}
+.content{
+	min-height: 480px;
+}
+
+/*首页文章列表*/
+.article-list{
+	padding: 20px 0px;	
+}
+.article-item{
+	padding: 10px 0px;
+	border-bottom: 1px dotted lightgray;
+}
+.article-item .title{
+	padding: 15px;
+}
+.article-item a{
+	color: #000;
+	font-size: 20px;
+	text-decoration: none;
+	text-shadow:1px 2px 3px gray;
+}
+.article-item .info{
+	padding: 10px 30px;
+	color: #999;
+	font-size: 12px;
+}
+.article-item img{
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+	border-radius: 5px;
+}
+.article-item .text{
+	padding: 30px;
+	color: #666;
+}
+/*文章*/
+.article-title{
+	padding: 15px 0px;
+	color: #000;
+	font-size: 27px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 1px 2px 3px #999;
+}
+.article-img img{
+	margin: 10px auto;
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+.article-info{
+	padding: 0px 10px;
+	color: #999;
+	font-size: 12px;
+	text-align: right;
+}
+.article-text{
+	padding: 30px 0px;
+	text-indent: 20px;
+	font-size: 15px;
+	line-height: 25px;
+    letter-spacing: 1px;
+	border-right: 1px dotted #000;
+	border-left: 1px dotted #000;
+}
+.article-text::first-letter{
+	font-size: 20px;
+	font-weight:bold;
+}
+/*创建*/
+.new-write{
+	padding: 10px 0px;
+	font-size: 30px;
+}
+.write-title label{
+	padding: 10px 30px;
+	font-size: 20px;
+}
+.write-title input{
+	width: 400px;
+	height: 30px;
+	font-size: 14px;
+	border: 1px solid #999;
+	border-radius: 5px; 
+}
+.write-img label{
+	padding: 10px 30px;
+	font-size: 20px;
+}
+.write-txt{
+	padding: 10px 30px;
+	height: 100px;
+	width: 100%;
+}
+.write-txt textarea{
+	font-size: 15px;
+	width: 100%;
+	height: 100%;
+	resize:none;
+}
+.write-sub{
+	margin-left: 30px;
+	height: 35px;
+	width: 50px;
+	text-align: center;
+	color: white;
+	border: none;
+	background: #006DBB;
+}
+.footer{
+	padding: 30px 0;
+	color: #666;
+	text-align: center;
+}

@@ -1,0 +1,39 @@
+/* CSS Document */
+.loadBar  
+       {  
+           width: 371px;  
+           height: 2px;  
+           border: none;
+           position:relative;  
+		   left:0px;
+		   top:717px;
+       }  
+  
+.loadBar span  
+       {  
+           width: 100%/*68%*/;  
+           display: block;  
+           height: 100%;  
+           position: absolute;  
+           top: 0;  
+           left: 0;  
+       }  
+  
+.loadBar span  
+       {  
+           -webkit-animation: move .8s linear infinite;  
+           background:red;  
+       }  
+  
+  
+@-webkit-keyframes move  
+       {  
+           0%  
+           {  
+               background-position: 0 0;  
+           }  
+           100%  
+           {  
+               background-position: 40px 0;  
+           }  
+       }  

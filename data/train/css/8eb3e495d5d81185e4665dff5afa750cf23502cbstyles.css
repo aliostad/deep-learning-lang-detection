@@ -1,0 +1,47 @@
+#panles{
+	width:1212px;
+	height:676px;
+	position: relative;
+	overflow:hidden;
+	background: white;
+}
+.panelHolder{
+	float:left;
+	position: relative;
+	padding-right: 8px;
+	width:100px;
+	height:676px;
+	overflow:hidden;
+	background:white;
+}
+.contentHolder{
+	float:left;
+	position: relative;
+	background:white;
+	width:772px;
+}
+.tab{
+	width:100px;
+	position: absolute; 
+	z-index: 1;
+}
+.model{
+	position: absolute; 
+	opacity: 0; 
+	width:100%;
+	height:676px;
+}
+.panelTitle.last{
+	padding: 0;	
+}
+.active.panelHolder{
+	width: 772px;
+}
+.active .tab{
+	opacity: 0;
+}
+.active .model{
+	visibility: visible;
+	z-index: 0;
+	opacity: 1;
+}

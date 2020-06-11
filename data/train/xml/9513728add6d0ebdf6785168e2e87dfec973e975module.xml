@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moduledefinition>
+ <general>
+  <default name="repository" descriptioni18n="repository.description" longdescriptioni18n="repository.longdescription" />
+ </general>
+ <parameters>
+	<parameter name="repositorypath" captioni18n="repository.parameter.repositorypath" default="repository" />
+	<!--<parameter name="enableTag" captioni18n="repository.parameter.enabletag" default="0"/>-->
+ </parameters>
+ <admin>
+ 	<link url="repository|repository|addfile" captioni18n="repository.admin.description" credentials="basic:registered"></link>
+ </admin>
+</moduledefinition>

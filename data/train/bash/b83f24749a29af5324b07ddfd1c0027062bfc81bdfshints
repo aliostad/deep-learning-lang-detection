@@ -1,0 +1,22 @@
+#!/bin/sh
+# arch-tag: dfshints: display useful hints
+
+cat <<EOF
+Here are some useful DFS commands:
+Command                     Description
+--------------------------- -------------------------------------------------
+dfshelp                     Access primary DFS documentation. 
+dfshints                    Display this information
+reboot                      Reboot the system
+elinks, lftp                Web browser / FTP client
+invoke-rc.d sysklogd start  Start logging subsystem -- use keys below
+                            to view log messages
+invoke-rc.d lvm start       Initialize LVM subsystem
+invoke-rc.d discover start  Autodetect hardware, method 1
+invoke-rc.d udev start      Initialize support for USB devices, 
+                            autodetect hardware method 2
+invoke-rc.d pcmcia start    Initialize PCMCIA subsystem
+nano, vim, joe, or emacs    Text editors
+Alt-F1 through Alt-F6       Switch to other virtual terminals
+Alt-F7, Alt-F8              Display log (F7) or debug (F8) messages
+EOF

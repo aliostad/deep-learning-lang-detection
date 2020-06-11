@@ -1,0 +1,339 @@
+/*TODO 全局变量*/
+/*TODO 初始化*/
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+iframe,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+button,
+input,
+textarea,
+th,
+td,
+a {
+  margin: 0;
+  padding: 0;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font-family: '微软雅黑', Arial, Helvetica, Tahoma, sans-serif;
+  color: #363636;
+}
+body {
+  font-size: 0.5rem;
+  background-color: #f2f2f2;
+}
+hr {
+  border-width: 0;
+}
+button {
+  cursor: pointer;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  color: #333;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+a:hover {
+  text-decoration: underline;
+}
+input[type=button],
+input[type=submit],
+button {
+  cursor: pointer;
+  overflow: visible;
+  -webkit-tap-highlight-color: transparent;
+}
+input {
+  border-width: 0;
+  outline: none;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none ;
+}
+i,
+em {
+  font-style: normal;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+::-webkit-scrollbar {
+  display: none;
+}
+/*TODO 布局相关*/
+/*TODO 文本*/
+/*TODO 布局*/
+/*TODO 特殊*/
+.h_2rem {
+  height: 0.4rem;
+}
+.loan_head {
+  padding-top: 0.34rem;
+  padding-bottom: 0.24rem;
+  background: #ffffff;
+}
+.loan_head .loan_record {
+  display: inline-block;
+  position: absolute;
+  right: 0.5rem;
+  width: 0.47rem;
+  height: 1rem;
+  background: url("../images/loan_record.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.loan_head .round_panel {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.34rem;
+  height: 4.95rem;
+  width: 4.95rem;
+  background: #fecea3;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.loan_head .round_panel_warp {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -2.265rem;
+  margin-top: -2.265rem;
+  width: 4.53rem;
+  height: 4.53rem;
+  background: #ff9c4a;
+  color: #ffffff;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.loan_head .round_panel_title {
+  margin-top: 0.9rem;
+  font-size: 0.4rem;
+  line-height: 0.32rem;
+}
+.loan_head .round_panel_info {
+  font-size: 0.34rem;
+  line-height: 0.5rem;
+}
+.loan_head .round_panel_body {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  font-size: 0.76rem;
+  height: 1.36rem;
+  line-height: 1.36rem;
+}
+.loan_head .past_remind {
+  display: inline-block;
+  position: absolute;
+  right: 0.5rem;
+  width: 1.35rem;
+  height: 1rem;
+  background: url("../images/count_time.png") no-repeat 0 -0.06rem;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.loan_head .past_remind_info {
+  display: inline-block;
+  margin-top: 0.16rem;
+  margin-left: 0.16rem;
+  color: #FFFFFF;
+  font-size: 0.24rem;
+}
+.loan_head .loan_info {
+  *zoom: 1;
+}
+.loan_head .loan_info:before,
+.loan_head .loan_info:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.loan_head .loan_info:after {
+  clear: both;
+}
+.loan_head .loan_info li {
+  width: 32%;
+  float: left;
+  text-align: center;
+}
+.loan_head .loan_info li p:nth-of-type(1) {
+  margin-bottom: 0.14rem;
+  color: #c6c6c6;
+  font-size: 0.3rem;
+  line-height: 0.3rem;
+}
+.loan_head .loan_info li p:nth-of-type(2) {
+  font-size: 0.7rem;
+  color: #9f9f9f;
+}
+.loan_head .loan_info li:nth-of-type(2) {
+  width: 36%;
+}
+.loan_head .loan_info .loan_info_border {
+  border-left: 1px solid #9f9f9f;
+  border-right: 1px solid #9f9f9f;
+}
+.count_time {
+  display: inline-block;
+  width: 1.2rem;
+  background: url("../images/count_time.png") no-repeat 0 -0.23rem;
+  -webkit-background-size: 107%;
+  background-size: 107%;
+  height: 0.9rem;
+  color: #FFFFFF;
+  text-align: center;
+}
+.loan_txc {
+  height: 0.8rem;
+  background: url("../images/txc_say.png") no-repeat 1rem;
+  -webkit-background-size: 80%;
+  background-size: 80%;
+  margin-top: 0.2rem;
+  margin-bottom: 0.4rem;
+  position: relative;
+}
+.loan_txc p {
+  position: absolute;
+  color: #ffffff;
+  font-size: 0.26rem;
+  left: 1.3rem;
+  top: 0.24rem;
+}
+.loan_bottom {
+  position: absolute;
+  bottom: 0.2rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  width: 100%;
+  text-align: center;
+}
+.loan_bottom .default_btn {
+  margin-top: 0.12rem;
+  margin-bottom: 0.12rem;
+}
+.loan_bottom p {
+  font-size: 0.24rem;
+}
+.loan_bottom_r {
+  position: relative;
+  margin-top: 0.4rem;
+}
+.load_detail {
+  font-size: 0.3rem;
+}
+.load_detail section {
+  padding: 0.36rem 0.3rem;
+  background: #ffffff;
+}
+.load_detail .load_wrap_auto {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+}
+.load_detail .load_wrap {
+  position: relative;
+  height: 3.6rem;
+  overflow: hidden;
+}
+.load_detail .watch_more {
+  position: absolute;
+  bottom: 0;
+  width: 99%;
+  height: 0.72rem;
+  background-color: #FFFFFF;
+  line-height: 0.68rem;
+  text-align: center;
+  border: 1px solid #eaeaea;
+}
+.load_detail table,
+.load_detail th,
+.load_detail td {
+  border: 1px solid #eaeaea;
+}
+.load_detail thead {
+  background-color: #f2f2f2;
+}
+.load_detail tfoot {
+  color: #9f9f9f;
+}
+.load_detail tr {
+  height: 0.72rem;
+}
+.load_detail td {
+  width: 33%;
+}
+.load_detail .load_detail {
+  width: 100%;
+  text-align: center;
+  border: 1px solid #cccccc;
+}
+.load_detail .to_down {
+  display: inline-block;
+  position: absolute;
+  margin-left: .1rem;
+  margin-top: .19rem;
+  width: 0.36rem;
+  height: 0.36rem;
+  background: url("../images/todown.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  transition: all .5s;
+}
+.load_detail .to_up {
+  -webkit-transform: rotateZ(180deg);
+  -moz-transform: rotateZ(180deg);
+  -o-transform: rotateZ(180deg);
+  -ms-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+.load_detail .load_info_title {
+  *zoom: 1;
+  margin-bottom: 0.2rem;
+}
+.load_detail .load_info_title:before,
+.load_detail .load_info_title:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.load_detail .load_info_title:after {
+  clear: both;
+}
+.load_detail .load_info_title span:first-child {
+  float: left;
+}
+.load_detail .load_info_title span:last-child {
+  float: right;
+}

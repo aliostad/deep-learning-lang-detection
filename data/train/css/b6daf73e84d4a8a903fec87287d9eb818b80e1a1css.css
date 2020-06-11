@@ -1,0 +1,121 @@
+.speak_api{
+    margin: 20px auto;
+    width: 70%;
+}
+.speak_api h1{
+    padding-bottom: 20px;
+}
+.speak_api .txt-long{
+    width: 85%;
+}
+.speak_api label{
+    float: left;
+}
+.speak_api .sp-first{
+    width: 20%;
+}
+.speak_api .sp-second{
+    width: 80%;
+}
+.speak_api .sp-second label{
+    width: 100%;
+}
+.speak_api .sp-second input[type="checkbox"]{
+
+}
+.speak_api #check-api-keys{
+    background: none repeat scroll 0 0 #2ea2cc;
+    border-color: #0074a2;
+    box-shadow: 0 1px 0 rgba(120, 200, 230, 0.5) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 10px;
+    padding: 4px 10px;
+    text-align: center;
+}
+.speak_api #loader-form{
+    background: url("../images/spinner.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    float: right;
+    height: 20px;
+    padding-right: 10px;
+    width: 20px;
+    display: none;
+}
+.speak_api #check-api-form-msg{
+    font-size: 12px;
+    padding: 5px 10px;
+    text-align: left;
+    clear: both;
+}
+.alert-success{
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.alert-danger{
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.speak_api #speak_api_submit{
+    background: none repeat scroll 0 0 #2ea2cc;
+    border: medium none;
+    border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 1px 0 rgba(120, 200, 230, 0.5) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 10px;
+    padding: 8px 22px;
+    text-align: center;
+    text-decoration: none;
+}
+.speak_api #active-icon{
+    background: url(../images/check-icon.png) no-repeat;
+    display: block;
+    float: right;
+    height: 20px;
+    padding-right: 10px;
+    width: 20px;
+}
+.speak_api #deactive-icon{
+    background: url(../images/warning-icon.png) no-repeat;
+    display: block;
+    float: right;
+    height: 20px;
+    padding-right: 10px;
+    width: 20px;
+}
+#cform_form{
+    margin-top: 50px;
+}
+#cform_form div{
+    margin: 10px 0;
+}
+#cform_form div label{
+    float: left;
+    padding-right: 20px;
+    text-align: right;
+    width: 30%;
+}
+#cform_form div input[type="text"]{
+    width: 50%;
+}
+#cform_form div input[type="submit"]{
+    display: table;
+    height: auto;
+    margin: 20px auto 0;
+    padding: 2px 20px;
+}

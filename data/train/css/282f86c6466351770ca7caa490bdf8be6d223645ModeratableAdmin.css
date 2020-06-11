@@ -1,0 +1,20 @@
+body.ModelAdmin #ModelAdminPanel { position: relative; }
+
+#searchinfo { float: left; font-size: 16px; margin: 0.6em 0.7em 0; }
+
+#moderation { padding: 1em; margin-top: 3em; }
+#moderation form { display: none; }
+
+#moderation-oscroll { position: absolute; padding: 1em; top: 3em; left: 0; }
+#moderation-oscroll form { display: none; }
+
+.moderation-block { overflow: hidden; padding: 0.5em; background: #fafafa; border: 1px solid #aaa; margin-bottom: 1em; }
+.moderation-block input { float: right; margin-bottom: 0.25em; }
+
+#pagination { float: right; margin-right: 1em; margin-top: 0.8em; }
+#pagination * { display: inline; margin-left: 0.2em; }
+
+/* Override some ModelAdmin styles */
+
+body.ModelAdmin #right { overflow: hidden !important; }
+body.ModelAdmin #right #ModelAdminPanel { padding-bottom: 20px; }

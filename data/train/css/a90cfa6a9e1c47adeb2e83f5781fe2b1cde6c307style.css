@@ -1,0 +1,83 @@
+/*
+Each of these CSS elements is associated with an HTML Element, Class, or ID.
+Flip between this CSS file and the HTML to see how things line up.
+Experiment with deleting lines of code from the CSS to see how it affects the web page when you refresh in the browser.
+*/
+
+body {
+  /* Box-model */
+  padding: 0;
+
+  /* Positioning */
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+
+  /* Typography */
+  font-size: 18px;
+  line-height: 150%;
+  color: #333;
+
+  /* Visual */
+  background: #efeee7;
+}
+
+header {
+  background: #d21034;
+}
+
+h1 {
+  /* Box-model */
+  padding: 20px 0;
+
+  /* Positioning */
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+
+  /* Typography */
+  color: #eee;
+  text-align: center;
+
+  /* Visual */
+  background: #333;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+a {
+  color: #d21034;
+}
+
+.container {
+  /* Box-model */
+  width: 1024px;
+
+  /* Positioning */
+  margin: 0 auto;
+}
+
+#main-bio,
+#contact-info,
+#bio-image {
+  float: left;
+}
+
+#main-bio {
+  width: 70%;
+}
+
+#contact-info {
+  width: 30%;
+}
+
+#bio-image {
+  /* Box-model */
+  width: 200px;
+  height: 200px;
+
+  /* Positioning */
+
+  margin-right: 20px;
+}

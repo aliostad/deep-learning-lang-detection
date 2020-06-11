@@ -1,0 +1,46 @@
+/*
+ * =============================================================================
+ * Overall Layout
+ * =============================================================================
+ */
+div#nav_header {
+    margin-bottom: 20px;
+}
+
+p#nav_header_logo {
+    background-color: #67E300;
+}
+
+p#nav_header_links {
+    text-align: right;
+}
+
+div#nav_side {
+}
+
+div#nav_main {
+}
+
+div#nav_footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p#nav_footer_links {
+    text-align: center;
+}
+
+div#nav_debug {
+	background-color: #EEEEEE;
+}
+
+/*
+ * ===========
+ * NAV ELEMENTS.
+ * ===========
+ */
+
+div.basic_item {
+	margin: 0px;
+	margin-bottom: 10px;
+}

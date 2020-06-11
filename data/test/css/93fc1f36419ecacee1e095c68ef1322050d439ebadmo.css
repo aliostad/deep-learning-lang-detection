@@ -1,0 +1,41 @@
+#header {
+  background-color: transparent !important;
+}
+.main-docs{
+  margin-top: 150px;
+}
+
+#api_selector .hidden{
+  display:none;
+}
+
+header .wrapper h1 {
+  height: 50px;
+}
+
+body #header form#api_selector {
+    display: block;
+    clear: none;
+    float: right;
+}
+
+body #header form#api_selector .input {
+    display: block;
+    clear: none;
+    float: left;
+    margin: 0 10px 0 0;
+    padding: 6px 20px;;
+}
+
+body #header form#api_selector .input input {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+body #header form#api_selector .input input#input_baseUrl {
+    width: 400px;
+}
+
+body #header form#api_selector .input input#input_apiKey {
+    width: 200px;
+}

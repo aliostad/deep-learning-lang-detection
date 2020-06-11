@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taxes>
+    <tax>
+        <name>营业税</name>
+        <mapping>getA1</mapping>
+    </tax>
+
+    <tax>
+        <name>企业所得税</name>
+        <mapping>getA2</mapping>
+    </tax>
+    <tax>
+        <name>个人所得税</name>
+        <mapping>getA3</mapping>
+    </tax>
+    <tax>
+        <name>资源税</name>
+        <mapping>getA4</mapping>
+    </tax>
+    <tax>
+        <name>城市维护建设税</name>
+        <mapping>getA5</mapping>
+    </tax>
+    <tax>
+        <name>房产税</name>
+        <mapping>getA6</mapping>
+    </tax>
+    <tax>
+        <name>印花税</name>
+        <mapping>getA7</mapping>
+    </tax>
+    <tax>
+        <name>土地使用税</name>
+        <mapping>getA8</mapping>
+    </tax>
+    <tax>
+        <name>土地增值税</name>
+        <mapping>getA9</mapping>
+    </tax>
+    <tax>
+        <name>车船税</name>
+        <mapping>getA10</mapping>
+    </tax>
+    <tax>
+        <name>烟叶税</name>
+        <mapping>getA11</mapping>
+    </tax>
+</taxes>

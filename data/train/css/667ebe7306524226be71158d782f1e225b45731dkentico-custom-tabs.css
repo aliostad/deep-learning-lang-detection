@@ -1,0 +1,32 @@
+#int-course-nav .ui-helper-reset
+{
+	line-height: 1.4;
+}
+#int-course-nav .ui-tabs-nav
+{
+	border-bottom: 0 !important;
+	height: auto;
+}
+#int-course-nav .ui-tabs-nav li
+{
+	margin: 0;
+	top: 0;
+	--float: none;
+}
+#int-course-nav .ui-tabs-nav .ui-state-default, #int-course-nav .ui-tabs-nav .ui-state-active
+{
+	background-image: none;
+	border: 0;
+}
+@media (max-width: 767px)
+{
+	#int-course-nav .ui-tabs-nav li
+	{
+		float: none;
+	}
+	#int-course-nav .ui-tabs-nav li a
+	{
+		float: none;
+		padding: 12px 15px;
+	}
+}

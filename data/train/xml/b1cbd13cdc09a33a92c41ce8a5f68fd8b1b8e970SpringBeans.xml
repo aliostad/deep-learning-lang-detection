@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd"
+	default-autowire="byType" default-autowire-candidates="*Logger">
+
+	<bean id="logger" name="logger"
+		class="com.tamil.learnspring.loggers.CustomLogger">
+	</bean>
+	<!-- This duplicate entity can be rejected by making one Console logger as Primary -->
+	<bean id="consoleLogger" name="consoleLogger"
+		class="com.tamil.learnspring.loggers.ConsoleLogger" primary="true">
+	</bean>
+	<bean id="consoleDuplicateLogger" name="consoleDuplicateLogger"
+		class="com.tamil.learnspring.loggers.ConsoleLogger">
+	</bean>
+	
+	<bean id="dbLogger" name="dbLogger" class="com.tamil.learnspring.loggers.DBLogger">
+	</bean>
+	<!-- This duplicate entity can be rejected by ignoring it from the auto-wire candidates -->
+	<bean id="dbLoggerDuplicate" name="dbLoggerDuplicate" class="com.tamil.learnspring.loggers.DBLogger">
+	</bean>	
+	
+	<bean id="fileLogger" name="fileLogger"
+		class="com.tamil.learnspring.loggers.FileLogger">
+	</bean>
+	<!-- This duplicate entity can be rejected by making auto-wire candidate as FALSE -->
+	<bean id="fileDuplicateLogger" name="fileDuplicateLogger"
+		class="com.tamil.learnspring.loggers.FileLogger"
+		autowire-candidate="false">
+	</bean>
+</beans>

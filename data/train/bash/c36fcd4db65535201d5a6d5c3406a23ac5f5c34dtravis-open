@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+
+# check if current directory is a git repo
+IS_GITHUB_REPO=$(git rev-parse --is-inside-work-tree)
+if [ -z $IS_GITHUB_REPO ];
+then
+  echo "Not a Github repository"
+  exit 1
+fi
+
+# get github url
+GIT_URL=$(git config --get remote.origin.url)
+if grep -q git@github.com <<<$GIT_URL;
+then
+  REPO_NAME=${GIT_URL/git\@github\.com\:/}
+  REPO_NAME=${REPO_NAME/\.git/}
+elif grep -q https://github.com <<<$GIT_URL;
+then
+  REPO_NAME=${GIT_URL/http\:\/\/github\.com/}
+  REPO_NAME=${REPO_NAME/\.git/}
+fi
+if [ -z $REPO_NAME ];
+then
+  echo "Sorry but I dont know what kind of url is this, $GIT_URL"
+  exit 1
+fi
+
+#create travis repo url
+TRAVIS_URL="https://travis-ci.org/$REPO_NAME"
+
+# get current open browser command
+case $( uname -s ) in
+  Darwin)  open=open;;
+  MINGW*)  open=start;;
+  CYGWIN*) open=cygstart;;
+  *)       open=${BROWSER:-xdg-open};;
+esac
+
+# open travis repo url in your browser
+$open "$TRAVIS_URL" &> /dev/null
+exit 0

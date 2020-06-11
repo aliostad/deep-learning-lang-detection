@@ -1,0 +1,27 @@
+#!/bin/sh
+
+set -e
+
+PIDFILE=/var/run/brickd.pid
+
+if [ "$1" = "remove" ] && [ -x /etc/init.d/brickd ] && [ -n "${PIDFILE:-}" -a -r "$PIDFILE" ]; then
+	PID=`cat "$PIDFILE"`
+
+	if [ -n "${PID:-}" ]; then
+		if $(kill -0 "${PID:-}" 2> /dev/null); then
+			if [ -x /usr/sbin/invoke-rc.d ]; then
+				invoke-rc.d brickd stop
+			else
+				/etc/init.d/brickd stop
+			fi
+		elif ps "${PID:-}" > /dev/null 2>&1; then
+			if [ -x /usr/sbin/invoke-rc.d ]; then
+				invoke-rc.d brickd stop
+			else
+				/etc/init.d/brickd stop
+			fi
+		fi
+	fi
+fi
+
+exit 0

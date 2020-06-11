@@ -1,0 +1,82 @@
+/*Accordion overrides*/
+dl#apiDocs dt{
+	padding-bottom: 0;
+}
+
+/*New API documentation styling*/
+dl .acMethod{
+	float: right;
+	text-transform: uppercase;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3) inset;
+	background: #009900;
+	color: #fff;
+	font-weight: 300;
+	border-radius: 4px;
+	padding: 4px 6px;
+	margin: 6px;
+}
+dl .apimethod_post{
+	background: #CC9900;
+}
+dl .apiEndpoint{
+	float: right;
+    font-family: Monaco, monospace;
+    margin: 10px 10px 10px 3px;
+    color: #61555A;
+}
+
+/* DD styling */
+.ddContent {
+	padding: 0.5em 1em 0;
+}
+
+/* Params table styling */
+.apiParamsDesc {
+	margin: 1em 0;
+	width: 100%;
+}
+.apiParamsDesc th{
+	color: #bbb;
+}
+.apiParamsDesc th, .apiParamsDesc td {
+	padding: 0 1em;
+}
+.apiParamsDesc td {
+	height: 2.2em;
+	background: #eee;
+}
+.apiParamsDesc th{
+	border-bottom: none;
+	font-size: 0.8em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+.paramMandatory, .apiParamsDesc th.thCenter {
+	text-align: center;
+}
+.paramName {
+	color: #444;
+}
+.paramMandatory{
+	font-size: 1.2em;
+	color: #CC3300;
+}
+.paramType {
+	color: #bebebe;
+}
+#ccRight a.exLink {
+	font-family: monospace;
+	background: #F16022;
+	border: solid 1px #F16022;
+	color: #fff;
+    border-radius: 3px;
+    padding: 0 3px 0 3px;
+    margin-right: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#ccRight a.exLink:hover {
+	color: #F16022;
+	background: #fff;
+}

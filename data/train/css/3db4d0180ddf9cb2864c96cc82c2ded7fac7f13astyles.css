@@ -1,0 +1,106 @@
+/* GENERAL SITE LAYOUT */
+* { margin: 0px; padding: 0px;}
+
+body, #canvas { background:#fdfdfd; }
+
+body {
+	margin-top:40px;
+	font-family:"Verdana", "Arial", sans-serif;
+}
+
+#wrapper {
+	margin: 0 auto;
+	width:920px;
+}
+
+#canvas {
+	margin-top:40px;
+	float:left;
+}
+
+div.slider {
+	width:130px;
+
+}
+
+div#options {
+	width:360px;
+	float:left;
+}
+
+div#graph {
+	width:560px;
+	float:left;
+}
+
+table {
+	border-spacing:0px;
+}
+
+table#model-parameters td {
+	font-size:12px;
+	border-bottom: dotted 1px #ccc;
+	padding:20px 10px;
+	font-weight:900;
+}
+
+table#model-parameters td#prey-heading {
+	border-bottom: solid 1px #aaa;
+	padding:40px 10px 10px 10px; 
+	color:#f00;
+	font-size:16px;
+}
+
+table#model-parameters td#predator-heading {
+	border-bottom: solid 1px #aaa;
+	padding:40px 10px 10px 10px;
+	color:#369;
+	font-size:16px;
+}
+
+table#model-parameters td#compare-to-td {
+	padding:30px 10px 0px 10px;
+	border:none;
+	font-weight:normal;
+}
+
+table#model-parameters td#compare-to-td input {
+	margin-right:10px;
+	border:none;
+	float:left;
+}
+
+table#model-parameters td:nth-child(3) {
+	width:30px;
+	font-weight:normal;
+}
+
+table#model-parameters tr:last-child td {
+	border-bottom:none;
+	text-align:center;
+}
+
+input#simulate-button {
+	padding: 10px 20px;
+	margin-top:0px;
+	font-weight: 900;
+}
+
+a {
+	font-size:12px;
+	color:#362;
+}
+
+a:hover {
+	color:#695;
+}
+
+div#save-graph {
+	float:right;
+	width:250px;
+	text-align:right;
+}
+
+div#save-graph p {
+	font-size:10px;
+}

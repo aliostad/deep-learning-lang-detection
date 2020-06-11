@@ -1,0 +1,125 @@
+.game {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.game * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.game-view-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+
+.game-view-scroller {
+  /*padding-bottom: 66.67%;  todo put responsiveness back in*/
+  position: absolute;
+  overflow: hidden;
+}
+
+.model-maker {
+  position: absolute;
+  height: 35px;
+  width: 220px;
+  top: 0;
+  left: 0;
+  outline: 1px solid gold;
+  z-index: 10;
+  display: table;
+}
+
+.model-maker.not-showing {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.model-maker .model-picker {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  width: 50%;
+  padding: 0 10px;
+}
+
+.model-maker .model-picker select {
+  width: 100%;
+}
+
+.model-maker .spawning-pit {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  width: 50%;
+}
+
+.model-maker .spawning-pit .potential-model{
+  height: 20px;
+  width: 20px;
+  float: right;
+  margin: 10px;
+  background: red;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: auto !important;
+}
+
+svg.game-entities {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.model {
+  stroke: black;
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.model * {
+  vector-effect: non-scaling-stroke;
+}
+
+.model.selected {
+  stroke: yellow;
+}
+
+.model.move-shadow, .model .move-shadow {
+  fill-opacity: 0.3;
+  stroke-opacity: 0.3;
+}
+
+
+.range-line {
+  stroke: red;
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+}
+
+.range-info-text {
+  font-size: 5px;
+  fill: white;
+}
+
+.select-box {
+  fill: none;
+  stroke: lime;
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+

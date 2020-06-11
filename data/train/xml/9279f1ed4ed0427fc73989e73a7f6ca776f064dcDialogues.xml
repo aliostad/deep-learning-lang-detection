@@ -1,0 +1,18 @@
+<DialogueSystem>
+  <Dialogue id = "1">
+    <Message>Testing testing</Message>
+    <Message>Even more testing</Message>
+    <Message>What are you doing?</Message>
+    <Message>Staph man!</Message>
+    <Message>You don't know when to
+quit do ya?</Message>
+    <Message>Just leave me alone</Message>
+    <Message>It's no use talking to you...</Message>
+    <Message>Come on man, what do you want?</Message>
+    <Message>Internet is a thing.</Message>
+    <Message>I hope your car is dead now.</Message>
+    <Message>Staph man!</Message>
+    <Message>Please</Message>
+    <Message>Fuck off!</Message>
+  </Dialogue>
+</DialogueSystem>

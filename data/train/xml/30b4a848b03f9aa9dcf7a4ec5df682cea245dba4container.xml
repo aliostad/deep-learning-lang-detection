@@ -1,0 +1,103 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony-project.org/2.0/container">
+    <services>
+        <service id="pageService" class="Core\Service\Page">
+            <argument type="service" id="doctrine" />
+            <call method="setBlockService">
+                <argument type="service" id="blockService" />
+            </call>
+            <call method="setRouteService">
+                <argument type="service" id="routeService" />
+            </call>
+            <call method="setAuth">
+                <argument type="service" id="auth" />
+            </call>
+        </service>
+        <service id="blockService" class="Core\Service\Block">
+            <argument type="service" id="doctrine" />
+            <call method="setModuleRegistry">
+                <argument type="service" id="moduleRegistry" />
+            </call>
+            <call method="setLocationService">
+                <argument type="service" id="locationService" />
+            </call>
+            <call method="setServiceContainer">
+                <argument type="service" id="service_container" />
+            </call>
+            <call method="setStaticBlockService">
+                <argument type="service" id="staticBlockService" />
+            </call>
+            <call method="setAuth">
+                <argument type="service" id="auth" />
+            </call>
+        </service>
+        <service id="routeService" class="Core\Service\Route">
+            <argument type="service" id="doctrine" />
+        </service>
+        <service id="moduleRegistry" class="Core\Module\Registry" constructor="getInstance">
+        </service>
+        <service id="pageRendererService" class="Core\Service\PageRenderer">
+            <argument type="service" id="doctrine" />
+            <call method="setBlockService">
+                <argument type="service" id="blockService" />
+            </call>
+        </service>
+        <service id="moduleService" class="Core\Service\Module">
+            <argument type="service" id="doctrine" />
+            <call method="setModuleRegistry">
+                <argument type="service" id="moduleRegistry" />
+            </call>
+        </service>
+        <service id="staticBlockService" class="Core\Service\Block\StaticBlock">
+            <argument type="service" id="doctrine" />
+            <call method="setModuleService">
+                <argument type="service" id="moduleService" />
+            </call>
+            <call method="setTextService">
+                <argument type="service" id="textService" />
+            </call>
+        </service>
+        <service id="metadataLoader" class="Core\Model\MetadataLoader">
+            <call method="setRegistry">
+                <argument type="service" id="moduleRegistry" />
+            </call>
+        </service>
+        <service id="dynamicBlockService" class="Core\Service\Block\DynamicBlock">
+            <argument type="service" id="doctrine" />
+        </service>
+        <service id="textService" class="Core\Service\Text">
+            <argument type="service" id="doctrine" />
+        </service>
+        <service id="contentService" class="Core\Service\Content">
+            <argument type="service" id="doctrine" />
+            <call method="setTermService">
+                <argument type="service" id="termService" />
+            </call>
+            <call method="setModuleRegistry">
+                <argument type="service" id="moduleRegistry" />
+            </call>
+            <call method="setServiceContainer">
+                <argument type="service" id="service_container" />
+            </call>
+        </service>
+        <service id="locationService" class="Core\Service\Layout\Location">
+            <argument type="service" id="doctrine" />
+        </service>
+        <service id="addressService" class="Core\Service\Address">
+            <argument type="service" id="doctrine" />
+        </service>
+        <service id="middleManService" class="Core\Service\MiddleMan">
+            <argument type="service" id="doctrine" />
+        </service>
+        <service id="pageRouteService" class="Core\Service\PageRoute">
+            <argument type="service" id="doctrine" />
+            <call method="setRouteService">
+                <argument type="service" id="routeService" />
+            </call>
+            <call method="setPageService">
+                <argument type="service" id="pageService" />
+            </call>
+        </service>
+    </services>
+</container>

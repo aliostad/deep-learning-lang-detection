@@ -1,0 +1,482 @@
+@font-face{
+    font-family: custom1;
+    src : url(custom1.ttf);
+}
+body {
+    background-color: #ffF;
+    color : #444;
+}
+.dotswrapper {
+    top: 38%;
+    position: fixed !important;
+    width: 200px !important;
+    height: 50px !important;
+    left: calc(48% - 50px) !important;
+    background: #fff;
+}
+.dota{
+    top:49%;
+    position:fixed;
+    width: 200px !important;
+    height: 50px !important;
+    left:calc(40%) !important;
+    background:#fff;
+}
+.loader{
+   background-color:#fff;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+}
+
+.dot {
+    position: absolute !important;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+}
+
+.dot:nth-child(1) {
+    animation: load 1.6s linear infinite;
+    animation-delay: 0.1s;
+    -webkit-animation: load 1.6s linear infinite;
+    -webkit-animation-delay: 0.1s;
+}
+
+@keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+@-webkit-keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+.dot:nth-child(2) {
+    animation: load 1.6s linear infinite;
+    animation-delay: 0.2s;
+    -webkit-animation: load 1.6s linear infinite;
+    -webkit-animation-delay: 0.2s;
+}
+
+@keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+@-webkit-keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+.dot:nth-child(3) {
+    animation: load 1.6s linear infinite;
+    animation-delay: 0.3s;
+    -webkit-animation: load 1.6s linear infinite;
+    -webkit-animation-delay: 0.3s;
+}
+
+@keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+@-webkit-keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+.dot:nth-child(4) {
+    animation: load 1.6s linear infinite;
+    animation-delay: 0.4s;
+    -webkit-animation: load 1.6s linear infinite;
+    -webkit-animation-delay: 0.4s;
+}
+
+@keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+@-webkit-keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+.dot:nth-child(5) {
+    animation: load 1.6s linear infinite;
+    animation-delay: 0.5s;
+    -webkit-animation: load 1.6s linear infinite;
+    -webkit-animation-delay: 0.5s;
+}
+
+@keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+@-webkit-keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+.dot:nth-child(6) {
+    animation: load 1.6s linear infinite;
+    animation-delay: 0.6s;
+    -webkit-animation: load 1.6s linear infinite;
+    -webkit-animation-delay: 0.6s;
+}
+
+@keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+@-webkit-keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+.dot:nth-child(7) {
+    animation: load 1.6s linear infinite;
+    animation-delay: 0.7s;
+    -webkit-animation: load 1.6s linear infinite;
+    -webkit-animation-delay: 0.7s;
+}
+
+@keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+@-webkit-keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+.dot:nth-child(8) {
+    animation: load 1.6s linear infinite;
+    animation-delay: 0.8s;
+    -webkit-animation: load 1.6s linear infinite;
+    -webkit-animation-delay: 0.8s;
+}
+
+@keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+@-webkit-keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+.dot:nth-child(9) {
+    animation: load 1.6s linear infinite;
+    animation-delay: 0.9s;
+    -webkit-animation: load 1.6s linear infinite;
+    -webkit-animation-delay: 0.9s;
+}
+
+@keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+@-webkit-keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+.dot:nth-child(10) {
+    animation: load 1.6s linear infinite;
+    animation-delay: 1s;
+    -webkit-animation: load 1.6s linear infinite;
+    -webkit-animation-delay: 1s;
+}
+
+@keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+@-webkit-keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+.dot:nth-child(11) {
+    animation: load 1.6s linear infinite;
+    animation-delay: 1.1s;
+    -webkit-animation: load 1.6s linear infinite;
+    -webkit-animation-delay: 1.1s;
+}
+
+@keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+@-webkit-keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+.dot:nth-child(12) {
+    animation: load 1.6s linear infinite;
+    animation-delay: 1.2s;
+    -webkit-animation: load 1.6s linear infinite;
+    -webkit-animation-delay: 1.2s;
+}
+
+@keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+@-webkit-keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+.dot:nth-child(13) {
+    animation: load 1.6s linear infinite;
+    animation-delay: 1.3s;
+    -webkit-animation: load 1.6s linear infinite;
+    -webkit-animation-delay: 1.3s;
+}
+
+@keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+@-webkit-keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+.dot:nth-child(14) {
+    animation: load 1.6s linear infinite;
+    animation-delay: 1.4s;
+    -webkit-animation: load 1.6s linear infinite;
+    -webkit-animation-delay: 1.4s;
+}
+
+@keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+@-webkit-keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+.dot:nth-child(15) {
+    animation: load 1.6s linear infinite;
+    animation-delay: 1.5s;
+    -webkit-animation: load 1.6s linear infinite;
+    -webkit-animation-delay: 1.5s;
+}
+
+@keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+@-webkit-keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+.dot:nth-child(16) {
+    animation: load 1.6s linear infinite;
+    animation-delay: 1.6s;
+    -webkit-animation: load 1.6s linear infinite;
+    -webkit-animation-delay: 1.6s;
+}
+
+@keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+@-webkit-keyframes load {
+    5% {
+        background: #333;
+    }
+}
+
+.dot:nth-child(1) {
+    top: 20px;
+    left: 0;
+}
+
+.dot:nth-child(2) {
+    top: 10px;
+    left: 10px;
+}
+
+.dot:nth-child(3) {
+    top: 0;
+    left: 20px;
+}
+
+.dot:nth-child(4) {
+    top: 10px;
+    left: 30px;
+}
+
+.dot:nth-child(5) {
+    top: 20px;
+    left: 40px;
+}
+
+.dot:nth-child(6) {
+    top: 30px;
+    left: 50px;
+}
+
+.dot:nth-child(7) {
+    top: 40px;
+    left: 60px;
+}
+
+.dot:nth-child(8) {
+    top: 30px;
+    left: 70px;
+}
+
+.dot:nth-child(9) {
+    top: 20px;
+    left: 80px;
+}
+
+.dot:nth-child(10) {
+    top: 10px;
+    left: 70px;
+}
+
+.dot:nth-child(11) {
+    top: 0;
+    left: 60px;
+}
+
+.dot:nth-child(12) {
+    top: 10px;
+    left: 50px;
+}
+
+.dot:nth-child(13) {
+    top: 20px;
+    left: 40px;
+}
+
+.dot:nth-child(14) {
+    top: 30px;
+    left: 30px;
+}
+
+.dot:nth-child(15) {
+    top: 40px;
+    left: 20px;
+}
+
+.dot:nth-child(16) {
+    top: 30px;
+    left: 10px;
+}
+
+
+
+div.mainheader {
+    padding:5px;
+    width:100%;
+    text-align: center;
+    
+    font-size: 70px;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    color: #fff;
+    margin-top:2px;
+    background-color:#444;
+}
+div.bottom {
+    position:fixed;
+    bottom:0px;
+    padding:5px;
+    width:100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    color: #000;
+    margin-top:2px;
+    background-color:#33ff99;
+}
+div.intro {
+    width:80%;
+    height : 200px;
+    padding: 0.5px;
+    border-bottom:2px solid #ccc;
+    border-left:2px solid #ccc;
+    border-right:2px solid #ccc;
+    border-radius: 10px;
+    border-top:1px solid #ccc;
+    border-color: #000;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:18px;
+}
+a.fa:hover {
+    color:#fff;
+    text-decoration: none;
+    transition:all 0.1s ease-in-out;
+    -webkit-transform: rotate(0deg) scale(1.4) skew(0deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.4) skew(0deg) translate(0px);
+}
+a.fa {
+    color:#000;
+    transition:all 0.1s ease-in-out;
+    -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+}
+div.dota>a {
+    color:#000;
+}

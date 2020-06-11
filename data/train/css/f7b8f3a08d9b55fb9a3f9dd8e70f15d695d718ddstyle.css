@@ -1,0 +1,92 @@
+
+.box {
+	box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+	height: 200px;
+	position: relative;
+	float: left;
+	-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+			border-radius: 4px;
+}
+
+.box-header, .box-header-mini, .box-header-mini-right {
+	position: absolute;
+	background-color: #f5f5f5;
+	border: 1px solid #ddd;
+	color: #333;
+}
+.box-header-mini-right {
+	right: -1px;
+	top: -1px;
+	padding: 3px 7px;
+	-webkit-border-radius: 0 4px 0 4px;
+		-moz-border-radius: 0 4px 0 4px;
+			border-radius: 0 4px 0 4px;
+}
+
+.server-load {width: 300px; margin: 10px; padding: 10px;}
+.server-load.single-server {width: auto;}
+.server-load.simple-mode {height: 150px;}
+@media (max-width: 480px) {
+	.server-load.simple-mode {height: 200px;}
+	.load .span3 {width: 50%; float: left;}
+}
+@media (max-width: 767px) {
+	.server-load.simple-mode {height: 200px;}
+	.load .span3 {width: 50%; float: left;}
+}
+.server-load .server-name {height: 30px; margin: 0 0 10px 0;}
+.server-load .uptime {min-height: 20px; display: block;}
+.server-load .load_1min {min-height: 50px; font-size: 40px; padding-top: 15px; text-align: center;}
+.server-load .load_5min, .server-load .load_15min {min-height: 25px; font-size: 20px; padding-top: 5px;}
+.server-load.inactive {color: #CCC !important;}
+.server-load.warning {color: red !important;}
+
+.cpu-all {height: 25px; margin-top: 5px;}
+.simple-mode .cpu {display: none;}
+
+.cpu-bar {
+	display: block;
+	height: 10px;
+	padding: 2px;
+	width: 300px;
+	float: left;
+}
+.cpu.cpu-4 .cpu-bar {width: 300px;}
+.cpu.cpu-6 .cpu-bar, .cpu.cpu-8 .cpu-bar {width: 135px;}
+.cpu.cpu-10 .cpu-bar, .cpu.cpu-12 .cpu-bar, .cpu.cpu-16 .cpu-bar {width: 70px;}
+.cpu.cpu-32 .cpu-bar {width: 70px;}
+.cpu-bar .user, .cpu-bar .system, .cpu-bar .free, .cpu-bar .cpu-pct, .cpu-bar .cpu-load-types {
+	display: block;
+	float: left;
+	height: 10px;
+}
+.cpu-bar .cpu-load-types {
+	width: 250px;
+	border: 1px solid #EEE;
+	overflow: hidden;
+}
+.cpu.cpu-6 .cpu-load-types, .cpu.cpu-8 .cpu-load-types {width: 110px;}
+.cpu.cpu-16 .cpu-load-types, .cpu.cpu-32 .cpu-load-types {width: 45px;}
+.cpu-bar .cpu-pct {
+	font-size: 8px;
+	padding: 0;
+	width: 20px;
+	line-height: 10px;
+	font-weight: bold;
+	overflow: hidden;
+}
+.cpu-bar .user {background-color: green;}
+.server-load.inactive .user {background-color: #DDD;}
+.cpu-bar .system {background-color: red;}
+.server-load.inactive .system {background-color: #CCC;}
+.cpu-bar .free {background-color: #CCC;}
+.diskspace-container, .memory-container {position: relative;}
+.diskspace, .memory {position: absolute; left: 0; top: 0px; padding-top: 5px; font-size: 18px; z-index: 10;}
+.diskspace-bar, .memory-bar {position: absolute; left: 0; top: 2px; height: 24px; background-color: #EEE; border: 1px solid #CCC; z-index: 1;}
+
+.form-horizontal .control-label {width: 100px; margin-right: 5px;}
+.form-horizontal .control-group {margin-bottom: 0px;}
+
+#messageContainer {position: fixed; top: 50px; left: 10px; right: 10px; z-index: 10000;}
+#messageContainer .alert {margin-bottom: 5px;}

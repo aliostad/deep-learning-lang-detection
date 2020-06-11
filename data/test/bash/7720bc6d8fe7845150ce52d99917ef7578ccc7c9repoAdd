@@ -1,0 +1,24 @@
+#!/bin/bash
+# Description
+#   Adds a repository.
+#
+# Syntax:
+#   $0 repoName repoAddress
+#     repoName is the name you'd like the repo to be known as when it's reffered to from other scripts.
+#     repoAddress is where to get the repo from.
+#
+# Examples:
+#   Adding a github repo.
+#     $0 something http://github.com/ksandom/something
+#
+#   Another way to add the same repo.
+#     $0 something git@github.com:ksandom/something
+#
+#   How to add a repo that is stored on your local machine.
+#     $0 something /usr/local/something
+
+requiredParms="$2"
+. `dirname $0`/libs/includeLibs.sh
+. $libDir/getRepo.sh
+
+addRepo "$2" "$1"

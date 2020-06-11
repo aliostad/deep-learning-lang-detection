@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE site_page SYSTEM "C:\hg\egoroff\apache\entities.dtd">
+<!-- $Id: messages.xml,v 1.3 2004/05/27 14:41:48 egr Exp $ -->
+<!--                   -->
+<!-- Language: Russian -->
+<!--                   -->
+
+<!-- Some strings might be used in other contexts, than stated in the -->
+<!-- comments...                                                      -->
+<messages lang="ru">
+ <!-- Названия разделов и некоторых заголовков -->
+ <message name="site_descr_title">???</message>
+ <message name="site_descr_title_descr">Куда меня занесло? :)</message>
+ <message name="latest_title">Из последнего</message>
+ <message name="related_links">Полезное</message>
+ <message name="map">Карта сайта</message>
+ <message name="beta_testing">Бета-тестирование парсера</message>
+ <message name="main_sections">Основные разделы</message>
+ <message name="services">Разное</message>
+ <message name="additional">Дополнительно</message>
+ <message name="export">Экспорт</message>
+ <message name="loading">Загрузка</message>
+
+ <!-- Основные разделы сайта -->
+ <message name="sections">Разделы</message> 
+ <!-- Заголовок для меню подразделов некоего раздела -->
+ <message name="sub_sections">Подразделы</message>
+ <!-- Название журнала изменений в исходниках -->
+ <message name="change_log">Журнал изменений</message>
+ 
+ <message name="archives">Архив</message>
+
+ <message name="last_edition">Последняя редакция</message>
+
+ <!-- titles -->
+ <message name="site_short_title">Egoroff</message>
+ <message name="home_page_title">До дому</message>
+ <message name="skin">Морда</message>
+ <message name="color1">Стандартная</message>
+ <message name="color2">Серая</message>
+ <message name="color3">Зеленая</message>
+ <message name="skin_button_name">Изменить</message>
+ <message name="skin_button_title">Изменить морду сайта</message>
+
+ <!-- Материалы -->
+ <message name="author">Автор</message>
+ <message name="date">Опубликовано</message>
+ <message name="update">Изменено</message>
+ <message name="content">Содержание</message>
+ <message name="prev_file">Предыдущий материал</message>
+ <message name="next_file">Следующий материал</message>
+ <message name="up_message">Наверх</message>
+
+ <!-- Разное -->
+ <message name="size">Размер</message>
+ <message name="moreNews">Больше новостей</message>
+
+ <!-- Регистрация -->
+ <message name="registration_user">Имя(ник)</message>
+ <message name="registration_email">E-mail</message>
+ <message name="registration_passwd">Пароль</message>
+ <message name="old_passwd">Старый пароль</message>
+ <message name="new_passwd">Новый пароль</message>
+ <message name="registration_passwd_confirm">Подтверждение</message>
+ <message name="registration_button_name">Зарегистрировать пользователя</message>
+ <message name="update_button_name">Изменить данные</message>
+ <message name="logon_button_name">Войти</message>
+ <message name="logout_button_name">Выйти</message>
+ <message name="logon_wrong">Неправильные имя пользователя или пароль</message>
+ <message name="registration_success">Вы успешно зарегистировались или обновили свои данные.</message>
+ <message name="registration_data_error">Не задано имя, пароль или email в некоректном формате</message>
+ <message name="registration_exist_user">Пользователь с таким именем уже существует</message>
+ <message name="registration_wrong_pass_confirm">Неверно подтвержден пароль</message>
+ <message name="registration_promt">Регистрация</message>
+ <message name="registration_unknown">Неизвестная ошибка</message>
+ <message name="update_promt">Настройки</message>
+ <message name="is_persistent">Запомнить</message>
+ <message name="options_title">Опции</message>
+ <message name="back">Назад</message>
+
+ <!-- Apache docs strings -->
+
+ <!-- Used for the moduleindex -->
+ <message name="corefeatures">Особенности ядра и мульти-процессные модули</message>
+ <message name="othermodules">Другие модули</message>
+
+ <!-- Used for the modulesynopsis and sitemap -->
+ <message name="apachemodule">Модуль Apache</message>
+ <message name="apachecore">Особенности ядра Apache</message>
+ <message name="apachempmcommon">Общие для всех МП-модулей директивы Apache</message>
+ <message name="apachempm">Мульти-процессные модули Apache</message>
+
+ <!-- Used in description box for modulesynopsis -->
+ <message name="description">Описание</message>
+ <message name="seealso">См. также</message>
+ <message name="topics">Темы</message>
+ <message name="status">Статус</message>
+ <message name="moduleidentifier">Идентификатор модуля</message>
+ <message name="sourcefile">Исходный код</message>
+ <message name="compatibility">Совместимость</message>
+
+ <!-- Used in manualpage -->
+ <message name="relatedmodules">Смотрите также модули</message>
+ <message name="relateddirectives">Смотрите также директивы</message>
+
+ <!-- Used in description box for directives -->
+ <message name="syntax">Синтаксис</message>
+ <message name="default">Значение по умолчанию</message>
+ <message name="context">Контекст</message>
+ <message name="override">Разрешение</message>
+ <message name="status">Статус</message>
+ <message name="module">Модуль</message>
+
+ <!-- Used for directive lists -->
+ <message name="directives">Директивы</message>
+ <message name="directive">Директива</message>
+ <message name="nodirectives">Этот модуль не предоставляет никаких директив.</message>
+
+ <!-- Used in summaries -->
+ <message name="summary">Резюме</message>
+
+ <!-- Used in headers and footers -->
+ <message name="apachetitle">- HTTP сервер Apache</message>
+ <message name="apachehttpserver">HTTP сервер Apache Версия 2.0</message>
+ <message name="apachedocalt">">[ДОКУМЕНТАЦИЯ APACHE]</message>
+ <message name="index">Оглавление</message> <!-- deprecated -->
+ <message name="home">На главную страницу</message> <!-- deprecated -->
+
+ <!-- breadcrumb links -->
+ <message name="apache">Apache</message>
+ <message name="http-server">HTTP сервер</message>
+ <message name="documentation">Документация</message>
+ <message name="version">Версия 2.0</message>
+
+
+ <!-- super menu -->
+ <message name="modules">Модули</message>
+ <message name="faq">FAQ</message>
+ <message name="glossary">Глоссарий</message>
+ <message name="sitemap">Карта сайта</message>
+
+ <!-- footer line -->
+ <message name="maintainedby">Поддержка осуществляется</message>
+
+<errors>
+	<message status="404">
+	Похоже что вы ошиблись, - такой страницы на сервере нет. 
+	Если вы уверены что это не ваша ошибка, сообщите об этом по e-mail: mail@egoroff.spb.ru
+	</message>
+
+	<message status="412">
+	На сервере случилось чего-то страшное. Возможно он обслуживается, возможно я дал маху, но
+	вы не огорчайтесь, - он скоро заработает. Да, - и сообщите об этом по e-mail: mail@egoroff.spb.ru
+	</message>
+</errors>
+
+</messages>

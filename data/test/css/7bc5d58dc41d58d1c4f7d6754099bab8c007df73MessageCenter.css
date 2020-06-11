@@ -1,0 +1,44 @@
+.messageGrid {
+  margin-bottom: 1.5em;
+  border-collapse: collapse;
+  width: 100%;
+  }
+.messageGrid th,
+.messageGrid td {
+  border: solid 1px #ccc;
+  }
+.messageGrid th {
+  padding: .25em .5em;
+  background: #eee;
+  width: 13em;
+  }
+.messageGrid th.messageType {
+  font-size: 80%;
+  }
+.messageGrid th.from {
+  font-weight: normal;
+  vertical-align: top;
+  }
+.messageGrid td.subject {
+  padding: .25em .5em;
+  background: #ccc;
+  font-weight: bold;
+  }
+.messageGrid td.sent {
+  padding: .25em .5em;
+  background: #eee;
+  font-size: 80%;
+  }
+.messageGrid td.body {
+  padding: .5em;
+  vertical-align: top;
+  }
+
+.messageCenter .reply {
+  text-align: right;
+  background: #eee;
+  border-left: none !important;
+  }
+.messageCenter .sent {
+  border-right: none !important;
+  }

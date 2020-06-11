@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<catalogue xml:lang="no">
+    <message key="About">Om</message>
+    <message key="Index">Indeks</message>
+    <message key="Changes">Endringer</message>
+    <message key="Todo">Oppgave liste</message>
+    <message key="Samples">Eksempler</message>
+    <message key="Apache document">Apache Dokument</message>
+    <message key="Static content">Statisk innhold</message>
+    <message key="Wiki page">Wiki side</message>
+    <message key="ihtml page">ihtml side</message>
+    <message key="ehtml page">ehtml side</message>
+    <message key="FAQ">FAQ</message>
+    <message key="Simplifed Docbook">Simplifed Docbook</message>
+    <message key="XSP page">XSP side</message>
+</catalogue>

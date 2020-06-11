@@ -1,0 +1,53 @@
+﻿/*@*Money Format Style*@*/
+.input-append .add-on:last-child, .input-append .btn:last-child, .input-append .btn-group:last-child > .dropdown-toggle {
+    -webkit-border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.input-append .add-on, .input-prepend .add-on {
+    background-color: #f2f5f9;
+    border: 1px solid #d6e2eb;
+    padding: 4px 8px;
+    font-size: 13px;
+}
+
+.input-append .add-on, .input-append .btn, .input-append .btn-group {
+    margin-left: -1px;
+}
+
+    .input-append .add-on, .input-prepend .add-on, .input-append .btn, .input-prepend .btn, .input-append .btn-group > .dropdown-toggle, .input-prepend .btn-group > .dropdown-toggle {
+        vertical-align: top;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+
+.input-append .add-on, .input-prepend .add-on {
+    display: inline-block;
+    width: auto;
+    height: 20px;
+    min-width: 16px;
+    padding: 4px 5px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: center;
+    text-shadow: 0 1px 0 #ffffff;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+}
+
+div.input-append .input-append, .input-prepend {
+    font-size: 0;
+    white-space: nowrap;
+}
+input[readonly="readonly"],textarea[readonly="readonly"] {
+color: #000 !important;
+background-color: #ebebe4 !important;
+}
+
+/* to increase the shadow around the jquery dialogs*/
+.ui-widget-overlay {
+    opacity: 0.8 !important;
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.common.dao.workflow.ProcessConfigureRepository">
+	<resultMap type="ProcessConfigure" id="ProcessConfigureResult">
+		<result property="id" column="id"/>
+		<result property="processKey" column="process_key"/>
+		<result property="processName" column="process_name"/>
+		<result property="taskName" column="task_name"/>
+		<result property="taskDesc" column="task_desc"/>
+		<result property="taskDealUrl" column="task_deal_url"/>
+		<result property="createTime" column="create_time"/>
+	</resultMap>
+	
+	<insert id="save" parameterType="ProcessConfigure">
+		insert into workoa_process_configure(process_key,process_name,task_name,task_desc,task_deal_url,create_time) 
+		values(#{processKey},#{processName},#{taskName},#{taskDesc},#{taskDealUrl},#{createTime});
+	</insert>
+	
+	<select id="selectProcessConfigureByCondition" parameterType="java.util.Map" resultMap="ProcessConfigureResult">
+		select * from workoa_process_configure where process_key=#{processKey} and task_name=#{taskName}
+	</select>
+	
+	<select id="selectProcessConfigureById" parameterType="long" resultMap="ProcessConfigureResult">
+		select * from workoa_process_configure where id=#{id}
+	</select>
+	
+	<update id="update" parameterType="ProcessConfigure">
+		update workoa_process_configure set process_key=#{processKey},process_name=#{processName},task_name=#{taskName},task_desc=#{taskDesc},task_deal_url=#{taskDealUrl}
+		where id=#{id};
+	</update>
+	
+	<delete id="delete" parameterType="long">
+		delete from workoa_process_configure where id=#{id}
+	</delete>
+	
+	<select id="selectProcessConfigureCountByPage" parameterType="java.util.Map" resultType="int">
+		select count(*) from workoa_process_configure
+		<if test="processKey!=null and processKey!=''">
+			where process_key=#{processKey}
+		</if>		
+	</select>
+
+	<select id="selectProcessConfigureListByPage" parameterType="java.util.Map" resultMap="ProcessConfigureResult">
+		select * from workoa_process_configure
+		<if test="processKey!=null and processKey!=''">
+			where process_key=#{processKey}
+		</if>
+		limit #{limitNum} offset #{offset};
+	</select>
+</mapper>

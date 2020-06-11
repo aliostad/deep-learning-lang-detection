@@ -1,0 +1,81 @@
+tr.message_read td{
+	background-color: #f0f0f0;
+	color: #999;
+
+	.description {
+		color: #999;
+	}
+
+	h4 a {
+		color: #666;
+	}
+}
+
+tr.message_unread td{
+	background-color: #fff;
+}
+
+.message_content {
+	border: 2px solid #eee;
+}
+
+.message_content h1,
+.message_content h2,
+.message_content h3,
+.message_content h4,
+.message_content h5,
+.message_content h6,
+.message_content p,
+.message_content pre,
+.message_content ul,
+.message_content table {
+	margin-bottom: 6px;
+}
+
+.message_content h1 {
+	font-size: 180%;
+	border-bottom: 2px solid #999;
+}
+
+.message_content h2 {
+	font-size: 160%;
+	border-bottom: 1px dotted #ccc;
+}
+
+.message_content h3 {
+	font-size: 140%;
+	border-bottom: 1px dotted #eee;
+}
+
+.message_content h4 {
+	font-size: 120%;
+}
+
+.message_body a {
+	color: #36C;
+	font-weight:bold;
+}
+
+.message_body a:hover {
+	text-decoration: underline;
+}
+/*
+guoping.zhang2010.12.29
+*/
+ul.token_box li.active {
+	background-color: #3366CC;
+	color: #eee;
+}
+td div.token_box {
+	position:static;
+}
+
+table.message_receiver {
+	margin: -2px 0;
+}
+
+.addressee_value {
+    min-height: 20px;
+    /*IE6下高度设定 hack*/
+	*height: 20px;
+}

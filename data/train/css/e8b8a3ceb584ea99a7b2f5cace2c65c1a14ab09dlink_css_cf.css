@@ -1,0 +1,47 @@
+.image
+{
+
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+}
+.type01
+{
+	background: url(http://d1ssxphynhel0u.cloudfront.net/web_acceleration_sample/load_sample_image_01.png) no-repeat;
+}
+.type02
+{
+	background: url(http://d1ssxphynhel0u.cloudfront.net/web_acceleration_sample/load_sample_image_02.png) no-repeat;
+}
+.type03
+{
+	background: url(http://d1ssxphynhel0u.cloudfront.net/web_acceleration_sample/load_sample_image_03.png) no-repeat;
+}
+.type04
+{
+	background: url(http://d1ssxphynhel0u.cloudfront.net/web_acceleration_sample/load_sample_image_04.png) no-repeat;
+}
+.type05
+{
+	background: url(http://d1ssxphynhel0u.cloudfront.net/web_acceleration_sample/load_sample_image_05.png) no-repeat;
+}
+.type06
+{
+	background: url(http://d1ssxphynhel0u.cloudfront.net/web_acceleration_sample/load_sample_image_06.png) no-repeat;
+}
+.type07
+{
+	background: url(http://d1ssxphynhel0u.cloudfront.net/web_acceleration_sample/load_sample_image_07.png) no-repeat;
+}
+.type08
+{
+	background: url(http://d1ssxphynhel0u.cloudfront.net/web_acceleration_sample/load_sample_image_08.png) no-repeat;
+}
+.type09
+{
+	background: url(http://d1ssxphynhel0u.cloudfront.net/web_acceleration_sample/load_sample_image_09.png) no-repeat;
+}
+.type10
+{
+	background: url(http://d1ssxphynhel0u.cloudfront.net/web_acceleration_sample/load_sample_image_10.png) no-repeat;
+}

@@ -1,0 +1,48 @@
+.threesixty {
+	overflow: hidden;
+	width: 100%;
+}
+
+.threesixty .model-images {
+	display: none;
+}
+
+.threesixty img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+
+.current-image {
+	visibility: visible;
+	width: 100%;
+}
+
+.previous-image {
+	visibility:hidden;
+	width: 0;
+}
+
+.model-spinner {
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:90px;
+	height:90px;
+	margin-left:-45px;
+	margin-top:-50px;
+	display:none;
+}
+
+.model-spinner span {
+	position:absolute;
+	top:50%;
+	width:100%;
+	color:#ffffff;
+	font:0.8em 'Roboto';
+	text-align:center;
+	line-height:0.6em;
+	margin-top:-0.3em;
+}

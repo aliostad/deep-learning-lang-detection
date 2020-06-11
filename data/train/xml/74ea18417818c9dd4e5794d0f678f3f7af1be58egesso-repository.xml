@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="repositoryWrapper" class="ec.com.gesso.repository.impl.RepositoryWrapper">
+		<constructor-arg index="0">
+			<ref bean="hibernate4AnnotatedSessionFactory" />
+		</constructor-arg>
+	</bean>
+	
+	<bean id="repositoryProcess" class="ec.com.gesso.repository.impl.RepositoryProcess">
+		<property name="repositoryEntity">
+			<ref bean="repositoryWrapper"/>
+		</property>
+	</bean>
+	
+	<bean id="repositorySubProcess" class="ec.com.gesso.repository.impl.RepositorySubProcess">
+		<property name="repositoryEntity">
+			<ref bean="repositoryWrapper"/>
+		</property>
+	</bean>
+	
+	<bean id="repositoryJob" class="ec.com.gesso.repository.impl.RepositoryJob">
+		<property name="repositoryEntity">
+			<ref bean="repositoryWrapper"/>
+		</property>
+	</bean>
+	
+	<bean id="repositoryCompany" class="ec.com.gesso.repository.impl.RepositoryCompany">
+		<property name="repositoryEntity">
+			<ref bean="repositoryWrapper"/>
+		</property>
+	</bean>
+	
+	<bean id="repositoryDocument" class="ec.com.gesso.repository.impl.RepositoryDocument">
+		<property name="repositoryEntity">
+			<ref bean="repositoryWrapper"/>
+		</property>
+	</bean>
+	
+	<bean id="repositoryActivityEconomicCompany" class="ec.com.gesso.repository.impl.RepositoryActivityEconomicCompany">
+		<property name="repositoryEntity">
+			<ref bean="repositoryWrapper"/>
+		</property>
+	</bean>
+	
+	<bean id="repositoryScheduleWork" class="ec.com.gesso.repository.impl.RepositoryScheduleWork">
+		<property name="repositoryEntity">
+			<ref bean="repositoryWrapper"/>
+		</property>
+	</bean>
+	
+	<bean id="repositoryEmail" class="ec.com.gesso.repository.impl.RepositoryEmail">
+		<property name="repositoryEntity">
+			<ref bean="repositoryWrapper"/>
+		</property>
+	</bean>
+	
+	<bean id="repositoryAddress" class="ec.com.gesso.repository.impl.RepositoryAddress">
+		<property name="repositoryEntity">
+			<ref bean="repositoryWrapper"/>
+		</property>
+	</bean>
+	
+	<bean id="repositoryPhone" class="ec.com.gesso.repository.impl.RepositoryPhone">
+		<property name="repositoryEntity">
+			<ref bean="repositoryWrapper"/>
+		</property>
+	</bean>
+	
+	<bean id="repositoryContactData" class="ec.com.gesso.repository.impl.RepositoryContactData">
+		<property name="repositoryEntity">
+			<ref bean="repositoryWrapper"/>
+		</property>
+	</bean>
+	
+</beans>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+
+	<bean id="exampleService" class="com.ahamojo.www.example.service.impl.ExampleServiceImpl" init-method="startUp">
+		<property name="logService" ref="logService" />
+	</bean>
+
+	<service ref="exampleService" interface="com.ahamojo.www.example.service.ExampleService"/>
+
+	<reference id="logService" interface="org.osgi.service.log.LogService">
+    	<reference-listener bind-method="setLogService" ref="exampleService" />
+  	</reference>
+
+</blueprint>

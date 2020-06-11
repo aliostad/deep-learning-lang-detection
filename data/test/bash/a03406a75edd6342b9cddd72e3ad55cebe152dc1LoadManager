@@ -1,0 +1,90 @@
+#!/bin/bash
+date
+
+SLEEP_TIME=".5"
+STATUS_DIRECTORY="Status/"
+MAXAGE="5"
+red='\E[31;41m'
+green='\E[32;42m'
+yellow='\E[33;43m'
+blue='\E[34;44m'
+reset_cols="tput sgr0" 
+
+	echo "Sattelite Optimizer Script"
+	echo "-Simon Watt"
+	echo "============================================================================================"
+	echo "This program iterates through all of the Satellite Status Files and determines the best one."
+	echo "It then modifies the .htaccess file to a 302 re-direct to that satellite."
+	echo "============================================================================================"
+	sleep 10
+while true;
+do
+	date
+	#echo "Scanning Status Directory: \"$STATUS_DIRECTORY\""
+	BEST_SAT_IP=""
+	BEST_SAT_LOAD="9999"
+	for CURRENT_FILE in $STATUS_DIRECTORY*;
+	do
+		if [ -f $CURRENT_FILE ]
+		then
+			SYSTIME=`date +%s`
+			FILETIME=`stat -c '%Y' "$CURRENT_FILE"`
+			FILEAGE=$(($SYSTIME - $FILETIME))
+			if [ $FILEAGE -lt $MAXAGE ]
+			then
+				#echo -n "$CURRENT_FILE "
+				CURRENT_IP=`awk '{print $1}' $CURRENT_FILE`
+				CURRENT_LOAD=`awk '{print $2}' $CURRENT_FILE`
+				CURRENT_LOAD_INT=`echo $CURRENT_LOAD | awk -F "." '{print $1}'`
+				if [ $CURRENT_LOAD_INT -gt "0" ]
+				then
+					echo -en "$blue"
+				fi
+				if [ $CURRENT_LOAD_INT -gt "25" ]
+				then
+					echo -en "$green"
+				fi
+				if [ $CURRENT_LOAD_INT -gt "50" ]
+				then
+					echo -en "$yellow"
+				fi
+				if [ $CURRENT_LOAD_INT -gt "75" ]
+				then
+					echo -en "$red"
+				fi
+				BAR=0
+				while [ $BAR -lt $CURRENT_LOAD_INT ]
+				do
+					echo -n " "
+					BAR=$(($BAR + 1))
+				done
+				tput sgr0
+				echo
+				echo "IP: $CURRENT_IP LOAD: $CURRENT_LOAD"
+				compare_result=`echo "$CURRENT_LOAD < $BEST_SAT_LOAD" | bc`
+				if [ $compare_result -eq "1" ]
+				then
+					BEST_SAT_IP=$CURRENT_IP
+					BEST_SAT_LOAD=$CURRENT_LOAD
+				fi
+			else
+				rm $CURRENT_FILE
+			fi
+		fi
+	done
+	#echo "============================================================================================"
+	if [ $BEST_SAT_LOAD -eq "9999" ]
+	then
+		echo "No Satellites Found, Clearing .htaccess file"
+		echo "" > /var/www/.htaccess
+	else
+		echo "Best satellite found IP: $BEST_SAT_IP LOAD: $BEST_SAT_LOAD Writing 302 Re-Direct to .htaccess file"
+		#This still needs to be done
+		echo "Redirect 302 / http://$BEST_SAT_IP" > /var/www/.htaccess
+		
+	fi
+	#echo "============================================================================================"
+	#echo "Sleeping for $SLEEP_TIME seconds"
+	sleep $SLEEP_TIME
+	clear
+done

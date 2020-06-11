@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbook> 
+   <worksheet name="model"> 
+	    <section startRow="0" endRow="2">
+	        <mapping row="1" col="0">model.tableName</mapping>
+	        <mapping row="1" col="1">model.pkg</mapping>
+	        <mapping row="1" col="2">model.hasUser</mapping>
+	    </section>  
+	      
+	    <loop startRow="3" endRow="3" items="model.mdlst" var="dl" varType="com.lyods.beans.ModelDetail"> 
+		    <section startRow="3" endRow="3"> 
+			    <mapping row="3" col="0">dl.name</mapping> 
+			    <mapping row="3" col="1">dl.refObj</mapping> 
+			    <mapping row="3" col="2">dl.type</mapping> 
+			    <mapping row="3" col="3">dl.pkey</mapping> 
+			    <mapping row="3" col="4">dl.required</mapping> 
+			    <mapping row="3" col="5">dl.maxSize</mapping> 
+			    <mapping row="3" col="6">dl.pattern</mapping> 
+			    <mapping row="3" col="7">dl.search</mapping> 
+			</section> 
+			
+		 	<loopbreakcondition> 
+		     	<rowcheck offset="0"> 
+		        	<cellcheck offset="0"></cellcheck> 
+		      	</rowcheck> 
+		    </loopbreakcondition>
+    	</loop> 
+    </worksheet> 
+    
+    <worksheet name="controller"> 
+	    <section startRow="0" endRow="2">
+	        <mapping row="1" col="0">controller.tableName</mapping>
+	        <mapping row="1" col="1">controller.pkg</mapping>
+	        <mapping row="1" col="2">controller.auto</mapping>
+	        <mapping row="1" col="3">controller.home</mapping>
+	    </section>  
+    </worksheet> 
+    
+     <worksheet name="dao"> 
+	    <section startRow="0" endRow="2">
+	        <mapping row="1" col="0">dao.tableName</mapping>
+	        <mapping row="1" col="1">dao.pkg</mapping>
+	        <mapping row="1" col="2">dao.page</mapping>
+	    </section>  
+    </worksheet> 
+    
+     <worksheet name="service"> 
+	    <section startRow="0" endRow="2">
+	        <mapping row="1" col="0">service.tableName</mapping>
+	        <mapping row="1" col="1">service.pkg</mapping>
+	        <mapping row="1" col="2">service.auto</mapping>
+	    </section>  
+    </worksheet> 
+    
+     <worksheet name="jsp"> 
+	    <section startRow="0" endRow="2">
+	        <mapping row="1" col="0">jsp.tableName</mapping>
+	        <mapping row="1" col="1">jsp.singlePage</mapping>
+	        <mapping row="1" col="4">jsp.auto</mapping>
+	        <mapping row="1" col="5">jsp.home</mapping>
+	    </section>  
+    </worksheet> 
+    
+</workbook> 

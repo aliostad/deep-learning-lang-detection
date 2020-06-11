@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+      "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+      "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+      
+<hibernate-configuration>
+<session-factory> 
+ <!--  
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.GoogleDriver</property>
+
+<property name="hibernate.connection.url">jdbc:google:mysql://cloud-clinic:patientdb/elevatordb</property>
+
+<property name="hibernate.connection.username">root</property>
+<property name="connection.password">c50k0yk9</property>
+<property name="hibernate.hbm2ddl.auto">update</property> 
+
+<property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property> -->
+   	
+	<property name="hibernate.connection.driver.class">com.mysql.jdbc.Driver</property>	
+	<property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/elevatordb</property>
+	<property name="hibernate.connection.username">root</property>
+	<property name="connection.password"></property>
+	<property name="hibernate.hbm2ddl.auto">update</property>
+	<property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>	 	
+	<mapping class="com.cloud.clinic.model.PersonalDetails"></mapping>
+	<mapping class="com.cloud.clinic.model.PatientHistory"></mapping>
+	<mapping class="com.cloud.clinic.model.Patient"></mapping>	
+	<mapping class="com.cloud.clinic.model.MedHistory"></mapping>
+	<mapping class="com.cloud.clinic.model.DrugHistory"></mapping>
+	<mapping class="com.cloud.clinic.model.NeuroHistory"></mapping>
+	<mapping class="com.cloud.clinic.model.PsychHistory"></mapping>
+	<mapping class="com.cloud.clinic.model.Concerns"></mapping>
+	<mapping class="com.cloud.clinic.model.EventsActivities"></mapping>
+	<mapping class="com.cloud.clinic.model.LivingSit"></mapping>
+	<mapping class="com.cloud.clinic.model.Lifestyle"></mapping>
+	<mapping class="com.cloud.clinic.model.TestBattery"></mapping>
+	<mapping class="com.cloud.clinic.model.Analysis"></mapping>
+	<mapping class="com.cloud.clinic.model.Activity"></mapping>
+	<mapping class="com.cloud.clinic.model.LifestyleActivity"></mapping>
+	<mapping class="com.cloud.clinic.model.GP_Info"></mapping>
+	<mapping class="com.cloud.clinic.model.Outcome"></mapping>
+	<mapping class="com.cloud.clinic.model.Impression"></mapping>
+	<mapping class="com.cloud.clinic.model.Form"></mapping>
+	<mapping class="com.cloud.clinic.model.Clinic"></mapping>
+	<mapping class="com.cloud.clinic.model.Clinician"></mapping>	
+	
+</session-factory>
+</hibernate-configuration>

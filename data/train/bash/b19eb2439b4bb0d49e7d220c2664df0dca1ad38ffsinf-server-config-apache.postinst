@@ -1,0 +1,48 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    configure|reconfigure)
+        # Enable macro dependencies
+        if [ -e "/etc/apache2/macros-enabled/ssl" -a ! -e "/etc/apache2/macros-enabled/ssl-hpkp-startssl-class1" ]; then
+            ln -s /etc/apache2/macros-available/ssl-hpkp-startssl-class1 /etc/apache2/macros-enabled/ssl-hpkp-startssl-class1
+        fi
+        if [ -e "/etc/apache2/macros-enabled/ssl" -a ! -e "/etc/apache2/macros-enabled/ssl-hpkp-startssl-class2" ]; then
+            ln -s /etc/apache2/macros-available/ssl-hpkp-startssl-class2 /etc/apache2/macros-enabled/ssl-hpkp-startssl-class2
+        fi
+        if [ -e "/etc/apache2/macros-enabled/ssl" -a ! -e "/etc/apache2/macros-enabled/ssl-common" ]; then
+            ln -s /etc/apache2/macros-available/ssl-common /etc/apache2/macros-enabled/ssl-common
+        fi
+        if [ -e "/etc/apache2/macros-enabled/ssl-fsinf" -a ! -e "/etc/apache2/macros-enabled/ssl-common" ]; then
+            ln -s /etc/apache2/macros-available/ssl-common /etc/apache2/macros-enabled/ssl-common
+        fi
+        if [ -e "/etc/apache2/macros-enabled/ssl-letsencrypt" -a ! -e "/etc/apache2/macros-enabled/ssl-common" ]; then
+            ln -s /etc/apache2/macros-available/ssl-common /etc/apache2/macros-enabled/ssl-common
+        fi
+
+        # enable necessary modules and configuration
+        if [ -e /usr/share/apache2/apache2-maintscript-helper ] ; then
+            . /usr/share/apache2/apache2-maintscript-helper
+            apache2_invoke enmod macro
+            apache2_invoke enmod headers
+            apache2_invoke enmod ssl
+            apache2_invoke enmod rewrite
+            apache2_invoke enconf fsinf-server-config-apache.conf
+        fi
+
+        # remove old configuration
+        rm -f /etc/apache2/conf-available/fsinf-server-config-apache-macros.conf
+        rm -f /etc/apache2/conf-available/fsinf-server-config.conf
+        rm -f /etc/apache2/conf-enabled/fsinf-server-config-apache-macros.conf
+        rm -f /etc/apache2/conf-enabled/fsinf-server-config.conf
+
+        # reload the webserver (unconditionally, new macros might change sites)
+        apache2ctl -t && invoke-rc.d apache2 reload
+
+        ;;
+    *) 
+        ;;
+esac
+
+#DEBHELPER#

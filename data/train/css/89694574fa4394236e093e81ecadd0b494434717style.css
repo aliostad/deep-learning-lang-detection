@@ -1,0 +1,140 @@
+.label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+#tx_title{
+   -fx-font-size: 24px;
+   -fx-font-family: "Arial Black";
+   -fx-font-weight: bold;
+   -fx-fill: #818181;
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+#lb_error {
+	-fx-text-fill: red;	
+}
+
+#tx_date {
+   -fx-font-size: 8px;
+   -fx-font-family: "Arial Black";
+   -fx-fill: #818181;
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+.h1 {
+	-fx-font-size: 20;
+	-fx-font-weight: bold;
+}
+
+.h2 {
+	-fx-font-size: 18;
+	-fx-font-weight: bold;
+}
+
+.h3 {
+	-fx-font-size: 16;
+	-fx-font-weight: bold;
+}
+
+.container {
+	-fx-padding: 20;
+}
+
+.seat {
+	-fx-padding: 5;
+	-fx-alignment: center;
+	-fx-spacing: 2;
+	-fx-border-width: 1;
+	-fx-border-color: #999999;
+	-fx-border-style: solid;
+	-fx-cursor: hand;
+	-fx-fill-width: true;
+	-fx-background-color: rgba(0,0,0,0);
+}
+
+.seat.selected {
+	-fx-background-color: #00c500;
+	-fx-border-color: #00c500;
+}
+.seat.unselected {
+	-fx-background-color: rgba(0,0,0,0);
+	-fx-border-color: #999999;
+}
+
+.seat.unavailable {
+	-fx-cursor: default;
+}
+
+.reserved {
+	-fx-background-color: #FF773D;
+}
+
+.ordered {
+	-fx-background-color: #38B2B7;
+}
+
+.highlight {
+	-fx-background-color: #E9C474;
+}
+
+.textField {
+	-fx-padding: 5;
+}
+
+.button {
+	-fx-cursor: hand;
+	-fx-padding: 5 15 5 15;
+}
+
+.success-message {
+	-fx-background-color: #00c500;
+	-fx-padding: 10 50 10 50;
+}
+
+
+/* .loadButton {
+    -fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #1d1d1d;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+	-fx-font-weight: normal;
+}
+
+.loadButton:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+.loadButton:pressed, .loadButton:default:hover:pressed {
+  -fx-background-color: white;
+  -fx-text-fill: #1d1d1d;
+}
+
+.loadButton:focused {
+    -fx-border-color: white, white;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.loadButton:disabled, .loadButton:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+
+.loadButton:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+}
+
+.loadButton:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+} */

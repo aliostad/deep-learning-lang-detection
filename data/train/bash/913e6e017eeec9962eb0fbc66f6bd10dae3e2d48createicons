@@ -1,0 +1,30 @@
+#!/bin/bash
+
+cd `dirname $0`
+cd ..
+cd res
+
+ICONS="image video sound unknown zip tar txt document binary"
+ICONDIR=/usr/share/icons/Faenza/mimetypes/scalable
+
+function process(){
+	for icon in $ICONS; do
+		echo '#' converting  $icon $1 $2
+		
+		convert $ICONDIR/${icon}.svg -resize ${2}x${2} drawable-${1}/${icon}.png  
+	done	
+	convert $ICONDIR/../../places/scalable/folder.svg -resize ${2}x${2} drawable-${1}/folder.png
+}
+
+process  ldpi 24
+process  mdpi 32
+process  hdpi 48
+process  xhdpi 72
+process xxhdpi 96
+
+#process  ldpi 24
+#process  mdpi 48
+#process  hdpi 72
+#process  xhdpi 96
+#process xxhdpi 144
+

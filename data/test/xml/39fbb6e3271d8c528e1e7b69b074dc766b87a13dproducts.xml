@@ -1,0 +1,13 @@
+<products>
+	<product-family name="sample-product-1" upgrade-id="{sample-upgrade-id-guid-1}">
+		<product-version name="sample-product-alpha" version="0.8" product-id="{sample-product-id-1}"/>
+		<product-version name="sample-product-beta" version="0.9" product-id="{sample-product-id-2}"/>
+		<product-version name="sample-product-first-release" version="1.0" product-id="{sample-product-id-3}"/>
+	</product-family>
+
+	<product-family name="another=sample-product-1" upgrade-id="{another-sample-upgrade-id-guid-1}">
+		<product-version name="another-sample-product-alpha" version="0.8" product-id="{another-sample-product-id-1}"/>
+		<product-version name="another-sample-product-beta" version="0.9" product-id="{another-sample-product-id-2}"/>
+		<product-version name="another-sample-product-first-release" version="1.0" product-id="{another-sample-product-id-3}"/>
+	</product-family>
+</products>

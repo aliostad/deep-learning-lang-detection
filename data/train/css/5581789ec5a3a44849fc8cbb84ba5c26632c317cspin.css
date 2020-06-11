@@ -1,0 +1,139 @@
+.spin {
+    position: absolute * * * calc(50% - 35px);
+    size: 70px;
+    overflow: hidden;
+
+    &--new {
+        top: 0;
+        z-index: 3;
+
+        .spin__btn {
+            transform: translateY(-17px);
+
+            &:hover, &--active {
+                transform: translateY(7px);
+            }
+            @media (--all-mobile-devices){
+                transform: translateY(7px);
+            }
+        }
+    }
+    &--old{
+        bottom: auto;
+        z-index: 2;
+
+        .spin__btn {
+            transform: translateY(39px);
+
+            &:hover, &--active {
+                transform: translateY(15px);
+            }
+            @media (--all-mobile-devices){
+                transform: translateY(15px);
+            }
+        }
+    }
+
+    &--initLoad {
+        position: absolute calc(50% - 35px) * * !important;
+
+        &.spin--new .spin__btn,
+        &.spin--old .spin__btn {
+            transform: translateY(11px)!important;
+        }
+    }
+
+    &__btn {
+        position: relative;
+        size: 48px;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        font-size: var(--font-size-base);
+        border-radius: 50%;
+        background-color: var(--color-white);
+
+        &--count::before {
+            content: attr(data-count);
+            position: absolute 0 * * 0;
+            size: 100%;
+            color: var(--color-gray-drak);
+            text-align: center;
+            line-height: 48px;
+            z-index: 4;
+        }
+        &--loading {
+            &[class~="spin__btn--new"] {
+                transform: translateY(7px)!important;
+            }
+            &[class~="spin__btn--old"] {
+                transform: translateY(15px)!important;
+            }
+            cursor: default;
+            &::before {
+                content: '';
+            }
+
+            circle {
+                fill: var(--color-gray);
+            }
+            circle:nth-child(1) {
+                animation: loadAnimate--twitter 1.7s linear infinite;
+            }
+            circle:nth-child(2) {
+                animation: loadAnimate--weibo 1.7s linear infinite;
+            }
+            circle:nth-child(3) {
+                animation: loadAnimate--unsplash 1.7s linear infinite;
+            }
+
+            &--fail {
+                background-color: var(--color-black) !important;
+                cursor: pointer;
+
+                &::before {
+                    color: var(--color-white);
+                }
+
+                circle {
+                    animation: none !important;
+                    fill: none;
+                }
+            }
+        }
+        &--twitter {
+            background-color: var(--color-twitter);
+        }
+        &--weibo {
+            background-color: var(--color-weibo);
+        }
+        &--unsplash {
+            background-color: var(--color-unsplash);
+        }
+    }
+}
+
+@keyframes loadAnimate--twitter {
+    0, 33.3%, 100% {
+        fill: var(--color-gray);
+    }
+    16.6% {
+        fill: var(--color-twitter);
+    }
+}
+@keyframes loadAnimate--unsplash {
+    0, 33.3%, 66.7%, 100% {
+        fill: var(--color-gray);
+    }
+    50% {
+        fill: var(--color-unsplash);
+    }
+}
+@keyframes loadAnimate--weibo {
+    0, 66.7%, 100% {
+        fill: var(--color-gray);
+    }
+    83.3% {
+        fill: var(--color-weibo);
+    }
+}

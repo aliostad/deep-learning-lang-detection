@@ -1,0 +1,218 @@
+body, html {
+  background-color: #EDEDED;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+}
+
+.fancy_input {
+  width: 100%;
+  border: 0px solid black;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.fancy_select {
+  width: 100%;
+  border: 0px solid black;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.pad {
+  padding: 20px;
+}
+
+.move_panel_button {
+  text-align: right;
+  margin: 0px;
+}
+
+.container {
+  z-index: 100;
+  padding: 20px;
+  position: relative;
+  width: 300px;
+  min-height: 100%;
+  color: white;
+  border-right: 1px solid white;
+  background-color: #2E4259;
+}
+.container .form label {
+  display: block;
+}
+.container .form select {
+  width: 100%;
+}
+.container .glyphicon:HOVER {
+  color: #009722;
+}
+.container .menu {
+  list-style-type: none;
+  margin-left: 0px;
+  margin-top: 10px;
+  padding: 0px;
+}
+.container .menu li {
+  float: left;
+  width: 33.3333333%;
+  list-decoration: none;
+  text-align: center;
+  color: #D4E8F4;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #2E4259;
+}
+.container .menu li.active {
+  background-color: #D4E8F4;
+  color: #036AA9;
+}
+
+.property_form, .endpoint_form {
+  margin-bottom: 15px;
+}
+
+h1 {
+  margin-top: 0px;
+  text-align: center;
+}
+
+.dark_bg {
+  color: #036AA9;
+  background-color: #D4E8F4;
+}
+
+#canvas_envelope {
+  background-image: url("../assets/grid_bright.png");
+}
+
+#canvas {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.glyphicon {
+  color: #EABC03;
+}
+
+/**
+*   FancyButton
+*/
+.btn {
+  background-color: #EABC03;
+  color: #EDEDED;
+  border: 0px solid white;
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+}
+
+.btn:HOVER {
+  background-color: #009722;
+}
+
+/**
+*   model
+*/
+.model {
+  color: #EDEDED;
+  background-color: #2E4259;
+  border: 1px solid white;
+  padding: 20px;
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
+  z-index: 20;
+}
+.model h3 {
+  padding-top: 0px;
+  margin-top: 0px;
+  text-align: center;
+  border-bottom: 1px dotted white;
+}
+.model table {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+.model table tr td {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.model .property_form, .model .endpoint_form {
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px dotted white;
+  max-width: 200px;
+  font-size: 10px;
+  color: #036AA9;
+}
+.model .model-icons-wrapper {
+  min-width: 100px;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px dotted white;
+}
+.model .model-icons-wrapper .model-icons {
+  float: left;
+  width: 50%;
+}
+.model .model-icons-wrapper .model-icons a {
+  padding-right: 10px;
+}
+.model .model-icons-wrapper .model-options {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+.model .glyphicon {
+  color: #03C8FA;
+}
+.model .glyphicon:HOVER {
+  color: white;
+}
+.model .active {
+  color: white;
+}
+
+/**
+*   Relation
+*/
+.relation {
+  z-index: 19;
+  color: #2E4259;
+  border-bottom: 1px solid white;
+  position: absolute;
+  text-align: center;
+  font-size: 10px;
+  -webkit-transform-origin: left bottom;
+}
+
+.area_input {
+  background: transparent;
+  border: 0px solid black;
+  color: #737373;
+  text-align: center;
+  font-style: italic;
+}
+
+.json_text_area {
+  width: 100%;
+  border: 0px solid black;
+  color: #2E4259;
+  padding: 10px;
+}
+
+.margined {
+  margin-left: 15px;
+}
+
+.clear {
+  clear: both;
+}
+
+/*# sourceMappingURL=main.css.map */

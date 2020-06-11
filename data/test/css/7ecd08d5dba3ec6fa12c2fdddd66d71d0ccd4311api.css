@@ -1,0 +1,55 @@
+.api h6:not(:first-of-type) {
+  padding-top: 0 !important;
+}
+
+.api h6 em {
+  text-decoration: underline;
+}
+
+.api h6 span {
+  position: relative;
+  font-weight: 400;
+}
+
+.api h6 a {
+  text-decoration: none;
+}
+
+.api h6 a:after {
+  content: ', ';
+}
+
+.api h6 a:last-of-type:after {
+  display: none;
+}
+
+.api .class {
+  color: var(--color-link);
+}
+
+.api .arrow {
+  color: var(--color-link);
+  margin: 0 0.25em;
+}
+
+.api .key {
+  font-style: italic;
+}
+
+.api .parameter {
+  color: var(--color-literal);
+}
+
+.api .return {
+  color: var(--color-attribute);
+}
+
+.api > hr {
+  height: calc(var(--line-height) * 5 / 3);
+  border: 0;
+  margin: 0;
+}
+
+.api > hr:last-of-type {
+  display: none;
+}

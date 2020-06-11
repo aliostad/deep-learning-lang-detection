@@ -1,0 +1,141 @@
+.view-code{
+	position: absolute;
+	left: 300px;
+	top: 0;
+	right: 0;
+	height: 100%;
+}
+/* 滚动条样式 */
+.view-code .scrollbar{
+	position:absolute;
+	top:0;
+	right:0;
+	width:8px;
+	height:100%;
+	background-color:#444;
+}
+.view-code .scrollbar-btn{
+	position:absolute;
+	left:0;
+	top:0px;
+	width:8px;
+	background-color:#999;
+	border-radius:4px;
+}
+/* 代码样式 */
+.view-code .code{
+	height: 100%;
+	overflow: hidden;
+}
+.view-code .js,
+.view-code .css,
+.view-code .chtml,
+.view-code .tpl,
+.view-code .html,
+.view-code .txt{
+	padding: 10px;
+	margin: 0;
+	font-family: Consolas,微软雅黑;
+	word-break: break-word;
+	color: #fff;
+	line-height: 18px;
+	font-size: 14px;
+}
+/* 行号 */
+.view-code ol{
+	color: #999;
+	margin: 0;
+}
+.view-code li{
+	list-style-type: decimal;
+	line-height: 18px;
+	border-left: 2px solid #666;
+	color: #fff;
+	padding-left:20px;
+}
+.view-code li:hover{
+	background-color: #222;
+}
+
+
+/* 代码高亮 */
+.view-code .comments{
+	color: #999;
+	font-style: italic;
+}
+/* js代码高亮 */
+.view-code .js .string{
+	/*color: #f36;*/
+	/*color: #FF8613;*/
+	color: #f66;
+	font-weight: bold;
+}
+.view-code .js .keyword{
+	/*color: #9cf;*/
+	color: #66d9ef;
+}
+.view-code .js .operator{
+	color: #f92659;
+}
+.view-code .js .regex{
+	color: #6f9;
+	font-weight: bold;
+}
+.view-code .js .struct{
+	/*color: #B1D631;*/
+	color: #e6db74;
+}
+.view-code .js .commonjs{
+	font-style: italic;
+	font-weight: bold;
+	color: #f33;
+}
+.view-code .js .key{
+	color: #B1D631;
+}
+
+/* css代码高亮 */
+.view-code .css .id{
+	color: #f33;
+}
+.view-code .css .class{
+	color: #B1D631;
+}
+.view-code .css .keyword{
+	color: #66d9ef;
+}
+.view-code .css .unit{
+	color: #f92659;
+}
+.view-code .css .struct{
+	color: #ccc;
+}
+.view-code .css .pseudo-class{
+	color: #e6db74;
+}
+/* html代码高亮 */
+.view-code .html .attr-name,
+.view-code .chtml .attr-name,
+.view-code .tpl .attr-name{
+	color: #B1D631;
+}
+.view-code .html .attr-value,
+.view-code .chtml .attr-value,
+.view-code .tpl .attr-value{
+	color: #e6db74;
+}
+.view-code .html .tag,
+.view-code .chtml .tag,
+.view-code .tpl .tag{
+	color: #f66;
+}
+
+.view-code .tpl .tpl-tag{
+	color: #666;
+	font-weight: bold;
+}
+.view-code .chtml .require{
+	font-style: italic;
+	font-weight: bold;
+	color: #f33;
+}

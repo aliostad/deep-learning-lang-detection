@@ -1,0 +1,94 @@
+<dialogue>
+	<!-- multiline dialogue:
+	
+	<![CDATA[text here
+	second line here]]>
+	
+	-->
+	<ENUM_0> <!-- UNNAMED astronaut -->
+		<message>Hello there!</message>
+		<message>Oh no!</message>
+		<message><![CDATA[Well, this isn't exactly
+		what I would call a vacation.]]></message>
+		<message>Could you help me out, please?</message>
+		<message>Don't leave me.</message>
+		<message>I hate space.</message>
+		<message>Am I upside down?</message>
+		<message>I hope I can float my way to a bathroom...</message>
+		<message>Where am I?</message>
+		<message><![CDATA[So, this one time I was in the
+		airlock and I had to pee...]]></message>
+		<message>Oh no, not again!</message>
+		<message>Captain...</message>
+		<message>This suit is the worst.</message>
+		<message>I just want to die.</message>
+		<message>I'm never going home, huh?</message>
+		<message>Can I ride a comet?</message>
+		<message>How long have we been here?</message>
+		<message>I'm over here!</message>
+		<message>Captain, over here!</message>
+		<message>I feel like my suit should be red.</message>
+		<message>We can't get back without our ship.</message>
+		<message>I'll never know!</message>
+		<message>I wonder if he loved me?</message>
+		<message>I wonder if she loved me?</message>
+		<message>My nose itches.</message>
+		<message>You're really bad at this, aren't you?</message>
+		<message>Yolo</message>
+		<message>Marco?</message>
+		<message>Polo?</message>
+		<message>Am I supposed to feel connected right now?</message>
+		<message>If I don't come back, tell my partner "Hello."</message>
+		<message><![CDATA[If a tree falls in
+		space can you hear it?]]></message>
+		<message><![CDATA[If a tree falls in
+		space...how the hell did it get there?]]></message>
+		<message>Can we talk for a moment?</message>
+		<message><![CDATA[Whatever you do...
+		DON'T LET GO!]]></message>
+		<!--
+		<message></message>
+		<message></message>
+		<message></message>
+		<message></message>
+		<message></message>
+		<message></message>
+		<message></message>
+		-->
+		
+	</ENUM_0>
+	<ENUM_1> <!-- TUTORIAL_ONE astronaut -->
+		<message>Captain --over here! ARROW over here!</message>
+		<message><![CDATA[Cap'n, we can jump in SPACE..
+		We'll have to...
+		jump into the sun.]]></message>
+	</ENUM_1>
+	<ENUM_2> <!-- TUTORIAL_TWO astronaut -->
+		<message>This is the perfect SPACE to use a jet pack</message>
+		<message>You can use your jet pack in SPACE to get to the sun</message>
+		
+	</ENUM_2>
+	<ENUM_3> <!-- TUTORIAL_THREE astronaut -->
+		<message>Captain, the oxygen supply is low!</message>
+	</ENUM_3>
+	<ENUM_4> <!-- LEFT_BEHIND astronaut -->
+		<message>You left me!</message>
+		<message>Captain, how could you?</message>
+		<message>...</message>
+		<message>...Why?</message>
+		<message>Why did you leave me?</message>
+		<message>Come back...</message>
+		<message>No...</message>
+		<message>I'm so lonely...</message>
+		<message>Captain? Where are you?</message>
+		<message>All alone...</message>
+		<message>I'll be waiting...</message>
+		<message>The sun...it's so close.</message>
+		<message>I wish I could die.</message>
+		<message>I want to die.</message>
+		<message>I wish you'd just kill me</message>
+		<message>I'm always left behind.</message>
+	</ENUM_4>
+	<ENUM_5> <!-- COMMON statements -->
+	</ENUM_5>
+</dialogue>

@@ -1,0 +1,82 @@
+﻿ html, body {
+      margin: 0;
+      padding: 0;
+      font-family:'Microsoft YaHei','微软雅黑',Arial;
+    }
+
+img {
+    max-width:100%;
+}
+
+.pull-left {
+    float:left;
+}
+.text-center {
+    text-align:center;
+}
+.container {
+    padding:0 15px 45px;
+}
+.title {
+    color:#4a4a4a;
+    font-size:24px;
+    font-weight:normal;
+}
+.describe {
+    color:#797878;
+}
+.downLoadWrap {
+    padding:0 15%;
+}
+.downLoadIphone,.downLoadAndroid {
+    
+    display:block;
+    border-radius:5px;
+    padding:10px 15px;
+    overflow:hidden;
+    line-height:36px;
+     
+    color:#fff;
+    text-decoration:none;
+    font-size:16px;
+}
+
+.downLoadIphone {   
+    background:#bababa;  
+    margin-bottom:15px; 
+}
+.downLoadAndroid {
+    background:#85c808; 
+      
+}
+
+    .downLoadIphone i, .downLoadAndroid i {
+        width: 30px;
+        height: 36px;
+        display: block;
+        padding-left: 7%;    
+
+        
+    }
+@media (min-width:361px) {
+    .downLoadIphone i, .downLoadAndroid i {
+        padding-left: 12%;
+    }
+}    
+@media (min-width:415px) {
+    .downLoadIphone i, .downLoadAndroid i {
+        padding-left: 30%;
+    }
+}
+
+.downLoadIphone span, .downLoadAndroid span {
+    padding-left:15px;
+}
+.weixinWrap {
+    padding:0 20%;
+}
+
+.pcAndPhone {
+    margin-bottom:15px;
+}
+ 

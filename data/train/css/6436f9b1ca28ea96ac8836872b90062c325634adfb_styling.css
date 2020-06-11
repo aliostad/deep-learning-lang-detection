@@ -1,0 +1,97 @@
+header{padding:30px 0;}
+header .content{width:1160px;margin:0 auto;}
+header .content h1{margin:0;text-align:center;font-size:40px}
+
+body{font-family:'Helvetica Neue',Helvetica,sans-serif;background-image:url("/images/grey.png");background-repeat:repeat;margin:0;min-width:980px;}
+
+.color,a{color:inherit;-webkit-transition:color .25s;-moz-transition:color .25s;-ms-transition:color .25s;-o-transition:color .25s;transition:color .25s}
+a{text-decoration:none}
+h1,h2,h3,h4,h5,h6{color:#525252;font-weight:normal}
+header{padding:30px 0;}
+
+
+#vis{padding:35px 0 20px;height:1000px;background-color:rgba(255,255,255,0.75);-webkit-box-shadow:0 0 10px rgba(0,0,0,0.5);-moz-box-shadow:0 0 10px rgba(0,0,0,0.5);-ms-box-shadow:0 0 10px rgba(0,0,0,0.5);-o-box-shadow:0 0 10px rgba(0,0,0,0.5);box-shadow:0 0 10px rgba(0,0,0,0.5);}
+#vis .content{width:1360px;padding:0 10px;margin:0 auto;position:relative;}
+#vis .content .legend-element{font-size:10px}
+#vis .content text.legend-element{fill:#737373}
+#vis .content #barcharts{display:block;}
+
+/*,#vis .content #barcharts > nav ,#vis .content #barcharts > ul*/
+/*
+#vis .content #barcharts > div,#vis .content #barcharts > li {float:left}
+*/
+#vis .content #traffic {float: left;}
+
+#vis .content #barcharts:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+
+
+
+#vis .content #barcharts #barchart-wrapper svg.barchart path.line{fill: none; stroke-width: 3px;}
+#vis .content #barcharts #barchart-wrapper svg.barchart .axis path, .axis line { fill:none; stroke: #000; shape-rendering: crispEdges;}
+#vis .content #barcharts #barchart-wrapper svg.barchart .y.axisRight path, .axisRight line { fill:none; stroke: #000; shape-rendering: crispEdges;}
+#vis .content #barcharts #barchart-wrapper svg.barchart .y.axisRight text { font-size: 10px;}
+#vis .content #barcharts #barchart-wrapper svg.barchart .y.axis text { font-size: 10px;}
+#vis .content #barcharts #barchart-wrapper svg.barchart .x.axis path { display: none;}
+#vis .content #barcharts #barchart-wrapper svg.barchart .x.axis text { font-size: 15px;}
+#vis .content #barcharts #barchart-wrapper svg.barchart .axis, .axisRight {font: 10px sans-serif;}
+#vis .content #barcharts #barchart-wrapper svg.barchart .barchart-title,.barchart-net-title{font-size:20px;}
+
+#vis .content #barcharts #barchart-net-wrapper svg.barchart-net .axis path, .axis line { fill:none; stroke: #000; shape-rendering: crispEdges;}
+#vis .content #barcharts #barchart-net-wrapper svg.barchart-net .y.axis text { font-size: 10px;}
+
+#vis .content #barcharts table{float:right; font: 16px sans-serif; vertical-align: middle; text-align: left; border-collapse: collapse;}
+#vis .content #barcharts td,th{padding-top: 2px;padding-bottom: 2px;}
+#vis .content #barcharts th{padding-left: 0px;}
+#vis .content #barcharts th.total_pct, th.total_value, th.average_value{text-align: right;}
+#vis .content #barcharts td.data{padding-left: 10px;}
+#vis .content #barcharts td.value{text-align: right;}
+#vis .content #barcharts td.total{text-align: right;}
+
+#vis .content #barcharts td.satotal{text-align: right;}
+#vis .content #barcharts td.savalue{text-align: right;}
+
+#vis .content #barcharts #barchart-sa-wrapper svg.barchart-sa path.line{fill: none; stroke-width: 3px;}
+#vis .content #barcharts #barchart-sa-wrapper svg.barchart-sa .axis path, .axis line { fill:none; stroke: #000; shape-rendering: crispEdges;}
+#vis .content #barcharts #barchart-sa-wrapper svg.barchart-sa .y.axisRight path, .axisRight line { fill:none; stroke: #000; shape-rendering: crispEdges;}
+#vis .content #barcharts #barchart-sa-wrapper svg.barchart-sa .y.axisRight text { font-size: 10px;}
+#vis .content #barcharts #barchart-sa-wrapper svg.barchart-sa .y.axis text { font-size: 10px;}
+#vis .content #barcharts #barchart-sa-wrapper svg.barchart-sa .x.axis path { display: none;}
+#vis .content #barcharts #barchart-sa-wrapper svg.barchart-sa .x.axis text { font-size: 15px;}
+#vis .content #barcharts #barchart-sa-wrapper svg.barchart-sa .axis, .axisRight {font: 10px sans-serif;}
+#vis .content #barcharts #barchart-sa-wrapper svg.barchart-sa .barchart-sa-title,.barchart-sa-net-title{font-size:20px;}
+
+#vis .content #barcharts #barchart-sa-net-wrapper svg.barchart-sa-net .axis path, .axis line { fill:none; stroke: #000; shape-rendering: crispEdges;}
+#vis .content #barcharts #barchart-sa-net-wrapper svg.barchart-sa-net .y.axis text { font-size: 10px;}
+
+#vis .content #loading{text-align:center;position:absolute;left:0;right:0;top:260px;font-size:80px;color:#737373}
+
+#vis .content #publisher-selector .publisher{width:140px;display:inline-block;text-align:center;padding:12px 0;line-height:12px;border-top:5px solid;border-bottom:3px solid;cursor:pointer;opacity:.5;-webkit-transition:opacity .5s;-moz-transition:opacity .5s;-ms-transition:opacity .5s;-o-transition:opacity .5s;transition:opacity .5s;color:#525252;}
+#vis .content #publisher-selector{clear:both;margin-top:40px;text-align:center;}
+#vis .content #publisher-selector .publisher:hover{opacity:.7}
+#vis .content #publisher-selector .publisher.active{opacity:1}
+#vis .content #publisher-selector .publisher sub{vertical-align:sub;font-size:.75em;display:inline-block;margin-bottom:-1em}
+
+.tooltip {position: absolute;text-align: center;width: 60px;height: 60px;padding: 2px;font: 18px sans-serif;background: none;border: 0px;border-radius: 8px;pointer-events: none;font-weight: bolder;}
+#ix-hint{position:fixed;bottom:-50px;left:0;right:0;background-color:rgba(0,0,0,0.5);text-align:center;color:#737373;padding:15px 0;color:#fff;-webkit-transition:background-color .25s,bottom 1s;-moz-transition:background-color .25s,bottom 1s;-ms-transition:background-color .25s,bottom 1s;-o-transition:background-color .25s,bottom 1s;transition:background-color .25s,bottom 1s;text-shadow:0 -1px rgba(0,0,0,0.25);}
+#ix-hint.active{bottom:0}
+
+#write-up{padding:35px 0 20px;color:#525252;}
+#write-up .content{width:1160px;margin:0 auto;}
+#write-up .content p{font-size:25px;line-height:1.5;margin:15px 0}
+#write-up .content h2{font-size:30px;border-left:solid #bdbdbd;padding-left:15px;-webkit-transition:border-left-color .25s;-moz-transition:border-left-color .25s;-ms-transition:border-left-color .25s;-o-transition:border-left-color .25s;transition:border-left-color .25s;line-height:1.25}
+#write-up .content li{font-size:22px;line-height:1.5;margin:15px 0}
+#write-up .content ul{font-size:25px;line-height:1.5;margin:15px 0}
+#write-up .content ul li b{margin-right:1em}
+
+/*
+#write-up .content b{font-weight:bold}
+#write-up .content i{font-style:italic}
+#write-up .content h2,#write-up .content h3,#write-up .content h4,#write-up .content h5,#write-up .content h6{border-left:solid #bdbdbd;padding-left:15px;-webkit-transition:border-left-color .25s;-moz-transition:border-left-color .25s;-ms-transition:border-left-color .25s;-o-transition:border-left-color .25s;transition:border-left-color .25s;line-height:1.25}
+#write-up .content h2{font-size:30px;margin-top:40px;margin-bottom:20px;border-left-width:5px;margin-left:-20px}
+#write-up .content h3{font-size:20px;margin-top:25px;margin-bottom:15px;border-left-width:3px;margin-left:-17px}
+#write-up .content p,#write-up .content ul{font-size:25px;line-height:1.5;margin:15px 0}
+#write-up .content sub{vertical-align:sub;font-size:.75em;display:inline-block;margin-bottom:-1em}
+#write-up .content ul{margin-left:20px;list-style:circle;}
+#write-up .content ul li b{margin-right:1em}
+
+*/

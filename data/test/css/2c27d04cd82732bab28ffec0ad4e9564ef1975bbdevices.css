@@ -1,0 +1,130 @@
+/* Styles for tablets */
+@media only screen and (max-device-width: 768px) and (orientation:portrait),
+	   only screen and (max-device-width: 1024px) and (orientation:landscape) {
+	
+	button.write-us-open { display: none }
+	#contacts .write-us { display: block; opacity: 1 }
+}
+
+@media all and (max-width: 1023px) { #countdown .info { top: -136px } }
+
+@media all and (max-width: 767px),
+	   all and (max-device-width: 767px) {
+	
+	/* --- HEADER --- */
+	#head-space,
+	body > header { height: 0px }
+	
+	body > header > .logo,
+	body > header > .logo img { width: 85px }
+
+	#just-scroll > div { opacity: 1 !important }
+	/* /// HEADER /// */
+
+	/* --- SLIDER --- */
+	#slider > .text > h1 {
+		font-size: 2.7em;
+		font-weight: 600;
+		text-shadow: 0px 1px 2px #333;
+	}
+	
+	#slider > .text > h3 {
+		width: 95%;
+		text-align: center;
+	}
+	
+	#countdown { display: none !important }
+	/* /// SLIDER /// */
+	
+	/* --- PAGES --- */	
+	.page > header,
+	.page > .body {
+		margin: 0 auto;
+		padding: 20px 0;
+		width: 100%;
+	}
+	
+	#about .text {
+		margin: 0 auto;
+		width: 90%;
+		color: #444;
+		font-size: 0.9em
+	}
+
+	#contacts .newsletter { 
+		margin: 0 auto;
+		padding-top: 0!important;
+		width: 80%;
+		border-bottom: 1px dashed #ccc;
+	}
+	
+	#contacts .newsletter > form { text-align: center }
+	
+	#contacts .newsletter > form input,
+	#contacts .newsletter > form button {
+		-webkit-border-radius: 3px;
+		   -moz-border-radius: 3px;
+		        border-radius: 3px;
+	}
+	
+	#contacts .newsletter > form button { margin-top: 5px }
+	
+	#contacts .social > ul.twitter,
+	#contacts .social > ul.twitter > li > div,
+	#contacts .write-us { width: 90% }
+	
+		
+	#contacts .write-us input,
+	#contacts .write-us textarea {
+		margin: 3px 0;
+		width: 90%;
+	}
+	
+	#contacts .write-us textarea { max-width: none }
+	
+	#contacts .write-us form {
+		margin: 0 auto;
+		width: 90%;
+		text-align: center;
+	}
+	
+	#send { 
+		margin: 10px auto !important;
+		display: block;
+	}
+	/* /// PAGES /// */
+}
+
+@media all and (max-width: 640px),
+	   all and (max-device-width: 640px) {
+	   
+	#about .photos { display: none } 
+	
+}
+
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+	   only screen and (   min--moz-device-pixel-ratio: 2),
+	   only screen and (     -o-min-device-pixel-ratio: 2/1),
+	   only screen and (        min-device-pixel-ratio: 2),
+	   only screen and (                min-resolution: 192dpi),
+	   only screen and (                min-resolution: 2dppx) { 
+   
+    #about {
+	    background-image: url(../img/textures/linedpaper_@2x.png);
+	    -webkit-background-size: 412px 300px;
+	       -moz-background-size: 412px 300px;
+	         -o-background-size: 412px 300px;
+	    		background-size: 412px 300px;
+    }
+   
+	#contacts { 
+		background-image: url(../img/textures/gray_jean_@2X.jpg);
+		-webkit-background-size: 150px;
+		   -moz-background-size: 150px;
+		     -o-background-size: 150px;
+				background-size: 150px;
+	}
+	
+}

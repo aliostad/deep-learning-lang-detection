@@ -1,0 +1,58 @@
+@CHARSET "ISO-8859-1";
+
+.viewToolbar {
+	width: 100%;
+}
+
+.viewToolbar .viewTitle {
+	width: 100%;
+	margin: 2px 0 2px 2px;
+	white-space: nowrap;
+	font-size: 110%;
+	font-weight: bold;
+}
+
+/*
+.viewToolbar .button-up-hovering {
+  border: 1px solid #EAEAEA;
+	background-color: #EAEAEA;
+}
+.viewToolbar .button-up-disabled {
+  border: 1px solid #EAEAEA;
+  cursor: default;
+}
+*/
+
+.viewContainer {
+}
+
+.viewContainer-pinned {
+	width: 100%;
+	overflow: auto;
+}
+
+.viewContainer-pinned .view {
+	margin-top: 10px;
+	width: 100%;
+}
+
+.viewContainer-popped {
+	border:2px solid #DFDFDF;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.viewContainer-popped .viewTitle {
+	cursor: move;
+	/*-moz-user-select:none;*/ 
+}
+
+.viewContainer-popped .view {
+	overflow: visible;
+	height: auto;
+	margin: 2px;
+}
+
+.viewContainer-popped .portal {
+	height: inherit !important;
+}

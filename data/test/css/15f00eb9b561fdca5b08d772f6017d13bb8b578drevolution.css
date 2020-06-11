@@ -1,0 +1,35 @@
+ /*��Ҫ����*/
+.revolution{ width: 100%; position: relative; overflow: hidden;}
+.revolution img{display: block;}
+.revolution .banner img{width: 100%;}
+.revolution .banner{width: 100%;display: block;height: 868px;}
+.revolution .content{width: 1000px; height:5422px; margin: 0 auto; position: relative;}
+.revolution .content ul{width: 1920px;position: absolute;left: -460px;top:0;}
+.dataTimeShadow{height: 106px;width: 100%;background-color: #f00;/*opacity: 0.7;filter:alpha(opacity=70);*/ position: fixed;left: 0;z-index: 1;bottom: 0;}
+.dataTime{height: 106px;color: #000;font-size:36px;z-index: 3;position: fixed;background:none;line-height: 156px;bottom: 0;left: 50%;margin-left: -480px;}
+.dataTime span{display: block;float: left;width: 85px;height: 83px;background: url(../../images/pc/time_bg.png) no-repeat 0 center;
+    line-height: 83px; letter-spacing: 30px;padding-left: 15px;}
+.dataTime b{display: block;float: left;font-weight: normal;line-height: 83px;color: #fff;font-size: 18px;}
+.dataTime .width50{width: 50px;text-align: center;}
+.dataTime .bigFont{font-size: 36px;}
+.timeCount{margin-top: 13px;}
+.bgColor{height: 106px;background-color: #5d0001;}
+.slidePosition{width:194px;height: 642px;background: url(../../images/pc/position.png) no-repeat 0 0;position: fixed;right: 0;z-index: 88;top: 15%;color: #fff;display: none;}
+.slidePosition ul{ margin-top: 107px;}
+.slidePosition li{font-size: 20px;margin-bottom: 32px;cursor: pointer;padding-left: 58px;}
+.suspend{position: fixed;left: 0;top: 10%;width: 187px;background:none;border:none; }
+.suspend .write{background-color:#fff; }
+.suspend .write p{padding: 15px;background-color:#fff; }
+.suspend .write input{display: block;height: 37px;border:1px solid #dcdcdc;width:147px;}
+.suspend .write input.text{margin-bottom: 19px;padding-left:10px;font-family:"微软雅黑";width:145px;}
+.suspend .write input.btn{width: 157px;background-color:#ff3737;color: #fff;border:none; font-size: 16px;font-family:"微软雅黑";}
+.suspend .write h2{background-color: #ffd804;height: 44px;font-size: 20px;text-align: center;line-height: 44px;color: #333;}
+.suspend .write span{display: block;text-align: center;font-size: 12px;color:#666;margin-top: 8px;width: 157px;line-height: 14px;}
+.suspend .write b{display: block;width: 160px;text-align: left;margin-top: 14px;font-weight: normal;line-height: 16px;}
+.suspend .write b i.select{display: inline-block;background: url(../../images/pc/big_radio_blue.png) no-repeat left center;width: 14px;height: 14px;margin-right: 7px;vertical-align: bottom;}
+.suspend .write b i{display: inline-block;background: url(../../images/pc/big_radio_grey.png) no-repeat left center;width: 14px;height: 14px;margin-right: 7px;vertical-align: bottom;}
+.suspend .write b strong{font-weight: normal;}
+.suspend .saoweixin{width: 120px;text-align: center;padding:10px;color: #fff;}
+.suspend .saoweixin span{display: block;}
+.suspend .saoweixin img{margin: 10px 0;width: 129px;height: 129px;}
+.purple{background-color:#310f36;}

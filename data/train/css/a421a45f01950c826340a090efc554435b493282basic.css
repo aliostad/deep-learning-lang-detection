@@ -1,0 +1,612 @@
+.service-catalogue {
+	font-family: sans-serif;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #4D87C7;
+	
+
+}
+
+h1 {
+  
+    font-size: 2em;
+  
+}
+
+a.service-catalogue-home-link {
+	color: #999 !important;
+}
+a.service-catalogue-home-link:hover {
+	color: #4D87C7 !important;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.service-catalogue h1 {
+  
+  margin-right: 4em;
+  
+}
+
+.non-catalogue-ready-service h2 {
+	font-size: 100%;
+	margin: 0;
+	font-weight: normal;
+}
+
+h2 {
+  
+    font-size: 1.7em;
+  
+}
+
+h3 {
+  
+    font-size: 1.4em;
+  
+}
+
+h4{
+  
+    font-size: 1.1em;
+  
+}
+
+.hidden {
+	text-indent: -9999px;
+	position: absolute;
+	z-index: -10;
+	border: none;
+}
+
+.service-catalogue a, .service-catalogue a:link, .service-catalogue a:visited {
+	color: #999;
+	text-decoration: none;
+}
+
+.service-catalogue a:hover, .service-catalogue a:focus, .service-catalogue a:active,
+.service-catalogue h1 a:hover, .service-catalogue h1 a:focus, .service-catalogue h1 a:active {
+	background: none;
+	color: #002147;
+}
+
+.service-catalogue h1 a
+.service-catalogue h1 a:link,
+.service-catalogue h1 a:visited {
+	color: #4D87C7;
+}
+
+section#service-groups {
+
+	position: relative;	
+}
+
+
+
+
+.service-catalogue aside.groups .active a,
+.service-catalogue aside.groups a:hover,
+.service-catalogue aside.groups a:focus {
+	background-color: #4D87C7;
+	color: #fff;
+}
+
+aside ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.groups > ul {
+	padding-left: 0;
+}
+
+li.group {
+	height: 150px;
+	width: 33%;
+	margin: 0 0 10px 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.service-catalogue ul.featured-services {
+	margin-top: 1em;
+	margin-left: 5em;
+	padding: 5px;
+	background-color: #999;
+	border-radius: 5px;
+	cursor: default;
+}
+
+.service-catalogue ul.featured-services a {
+	font-size: 80%;
+	color: #fff;
+	text-decoration: underline;
+}
+
+div.group-inner {
+	margin-right: 10px;
+}
+
+div.group-inner a {
+	display: block;
+	text-decoration: none;
+	margin: 0 0 0 0;
+	position: relative;
+	padding: 10px;
+	color: #fff;
+	height: 130px;
+	border-radius: 3px;
+}
+
+li.service-group div.group-inner a {
+	background-color: #435870;
+}
+li.user-group div.group-inner a {
+	background-color: #002147;
+}
+li.service-group div.group-inner a:hover,
+li.service-group div.group-inner a:focus {
+	background-color: #002147;
+}
+li.user-group div.group-inner a:hover,
+li.user-group div.group-inner a:focus {
+	background-color: #435870;
+}
+
+
+.service-catalogue div.group-inner > a {
+	color: #fff;
+}
+
+/*
+section.groups li.group {
+	text-decoration: none;
+	display: block;
+	
+	margin: 1%;
+	background-color: #435870;
+	display: inline-block;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+	border-radius: 3px;
+	width: 30%;
+	float: left;
+	color: #fff;
+	padding: 1%;
+	height: 150px;
+
+	}
+*/
+
+li.user-group a {
+	font-size: 1.5em;
+}
+
+section#service-groups i.fa {
+	position: absolute;
+	left: 0.2em;
+	text-align: center;
+	top: 50%;
+	line-height: 0;
+	font-size: 3em;
+}
+
+#container {
+/*	padding-right: 360px;
+	position: relative;
+*/
+}
+
+#container .sidebar-right {
+/*	position: absolute;
+	top: 0;
+	right: 20px;
+	width: 320px;
+	*/
+}
+
+#services ul {
+	list-style: none;
+	padding: 0;
+	margin-left: 0;
+	padding: 5px;
+	overflow-y: scroll;
+	border: 1px solid #bfc9d2;
+	border-radius: 3px;
+	background-color: #edf1f4;
+}
+
+#services ul li {
+
+	line-height: 1em;
+	margin: 0px 0px 1em 0px;
+}
+
+#services ul li a{
+
+color:#666;
+
+}
+
+#services ul li .service-item-inner{
+
+color:#bbb;
+
+}
+
+
+#services ul li a:hover,
+#services ul li a:focus{
+
+text-decoration: underline;
+
+}
+
+
+
+.services, .service-groups {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.services > li, .service-group {
+        margin: 0;
+}
+
+.service h2 {
+        border: 0;
+}
+
+.service a:hover,
+.service a:focus {
+
+color: #001247;  
+background-color: transparent;
+}
+
+.catalogue-ready-service h2 {
+	margin: 0.3em 0px 0.7em 0px;
+}
+
+/* service search form */
+
+
+
+ 
+form.filter-services-form input {
+   
+   	border: 1px solid #435870;
+	border-radius: 3px;
+		background-color: #4D87C7;
+	color: #fff;
+	display: inline;
+	font-size: 1em;
+	color: #fff;
+  padding: 0px 5px;
+	height: 2em;
+   
+ }
+ 
+
+/* text input field */
+form.filter-services-form input[type="text"] {
+   border-color: #bfc9d2;
+   width: 13em;
+   	background-color: #e8ecef;
+   	color: #333;
+}
+ 
+ 
+ /* clear button */
+ form.filter-services-form input[type="reset"] {
+   
+   padding: 3px 5px;
+   margin-left: 0px;
+   
+ }
+ 
+
+.service-links {
+	position: absolute;
+	top: 0;
+	left: -3em;
+	width: 1.5em;
+	padding: 0.3em;
+}
+
+
+
+
+
+.sidebar-right li {
+ 
+ margin-bottom: 0.7em; 
+ line-height: 1.2em;
+  
+}
+
+
+/* category page */
+
+aside.groups a{
+
+display: block;
+border-radius: 2px;
+padding: 3px;
+	
+}
+
+
+.category-view .service a{
+	border-radius: 3px;
+	background-color: #ebeff3;
+	padding: 0.5em 1em;
+	display: block;
+	color: #4D87C7;
+	border-left: 30px solid #4D87C7;
+	margin: 0.7em 0px 0px 0px;
+}
+
+.category-view .service span.service-item-inner {
+	border-radius: 3px;
+	background-color: #ebeff3;
+	padding: 0.5em 1em;
+	display: block;
+	color: #B2B2B2;
+	border-left: 30px solid #B2B2B2;
+	margin: 0.7em 0px 0px 0px;
+}
+
+.category-view .service span.service-item-inner h2 {
+	color: #B2B2B2;
+}
+
+.category-view .service a:hover,
+.category-view .service a:focus, 
+.category-view .service a:hover h2,
+.category-view .service a:focus h2{
+	background-color: #4D87C7;
+	color: #fff;
+}
+
+.category-view .catalogue-ready-service a{
+  
+  
+  border-right: 30px solid #4D87C7;
+
+
+}
+
+
+
+#service-category-services .service a,
+#service-category-services .service a h2 {
+  
+  	background-color: #4D87C7;
+  	color: #fff;
+  
+}
+
+
+#service-category-services .service a:hover,
+#service-category-services .service a:focus,
+#service-category-services .service a:hover h2,
+#service-category-services .service a:focus h2 {
+  
+  	background-color: #ebeff3;
+  	color: #4D87C7;
+  
+}
+/*  individual service page */
+
+
+ .service-description {
+  
+  
+  border-radius: 3px;
+  background-color: #ebeff3;
+  margin: 2em 0px ;
+  padding: 0.5em 1em;
+}
+
+
+.service-description p{
+  
+  
+margin-top: 0px;
+
+}
+
+table.service-details  {
+	clear: both;
+	font-size: 1.1em;
+}
+
+table.service-details th,
+table.service-details td {
+	padding-bottom: 5px;
+	vertical-align: bottom;
+}
+
+
+table.service-details th, table.service-details td {
+	border: none;
+	vertical-align: bottom;
+	padding: 30px 0 0 0;
+}
+
+table.service-details tr:first-child th, table.service-details tr:first-child td {
+	padding-top: 10px;
+}
+
+table.service-details th {
+	text-align: right;
+	font-size: 1.5em;
+	font-weight: normal;
+	color: #a0adb9;
+	color: #4D87C7;
+	line-height: 1.5em;
+}
+
+
+tr.service-details-group-item th, tr.service-details-group-item td {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+tr.service-details-group-item th {
+	font-size: 100%;
+}
+
+table.service-details td {
+	padding-left: 2em;
+	color: #333;
+}
+
+
+table.service-details th {
+
+
+
+}
+
+
+
+table.service-sub-details {
+  
+  margin: 3px  0 0 0 ;
+}
+
+table.service-details table.service-sub-details th,
+table.service-details table.service-sub-details td{
+
+
+
+    padding: 0.3em;
+
+
+}
+
+
+table.service-details table.service-sub-details th{
+
+font-size: 1em;
+text-align: left;
+padding-right: 1em;
+
+}
+
+div.main-left {
+	position: relative;
+}
+
+
+.service-catalogue table.service-details a {
+	display: inline-block;
+	/*padding: 0.6em ;*/ 
+	color: #333;
+}
+
+
+table.service-details a:hover,
+table.service-details a:focus{
+  
+background-color: transparent;
+color: #002147;
+text-decoration: underline;
+
+}
+
+
+
+/* status styling */
+
+
+div.service-status-display {
+  position: absolute;
+  top: 22px;
+  right: 0;
+}
+
+div.service-status-display a {
+  font-size: 0.85em;
+  padding: 0.5em;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.service-catalogue div.service-status-display a,
+.service-catalogue div.service-status-display a:hover {
+	color: #fff;
+}
+
+div.service-status-display a.service-status-down {
+background-color: #B94A48;
+border-color: #B94A48;
+}
+
+div.service-status-display a.service-status-down:hover,
+div.service-status-display a.service-status-down:focus  {
+background-color: #a74341;
+border-color: #a74341;
+}
+
+div.service-status-display a.service-status-up {
+background-color: #019208;
+border-color: #019208;
+}
+
+div.service-status-display a.service-status-up:hover,
+div.service-status-display a.service-status-up:focus  {
+background-color: #018407;
+border-color: #018407;
+}
+
+div.service-status-display a.service-status-partial {
+background-color: #F89406;
+border-color: #F89406;
+}
+
+div.service-status-display a.service-status-partial:hover,
+div.service-status-display a.service-status-partial:focus  {
+background-color: #e08405;
+border-color: #e08405;
+}
+
+div.service-status-display a.service-status-unknown {
+background-color: #505050;
+border-color: #505050;
+}
+
+div.service-status-display a.service-status-unknown:hover,
+div.service-status-display a.service-status-unknown:focus  {
+background-color: #868686;
+border-color: #868686;
+}
+
+
+
+.featured-services {
+	list-style: none;
+}
+
+.featured-services li {
+	display: inline;
+}
+
+.featured-services li:before {
+	content: ', ';
+}
+
+.featured-services li:first-child:before {
+	content: '';
+}
+
+#services ul {
+	height: 578px;
+}

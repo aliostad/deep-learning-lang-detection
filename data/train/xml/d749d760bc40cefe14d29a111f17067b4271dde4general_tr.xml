@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+
+
+<message id='Add Node'>Düğüm Ekle</message>
+
+<message id='Remove Node'>Düğüm Kaldır</message>
+
+<message id='Move Node Up'>Düğümü Yukarı Taşı</message>
+
+<message id='Move Node Down'>Düğümü Aşağı Taşı</message>
+
+<message id='Add File'>Dosya Ekle</message>
+
+<message id='Remove File'>Dosya Kaldır</message>
+
+<message id='Move File'>Dosyayı Taşı</message>
+
+<message id='Add Code'>Kod Ekle</message>
+
+<message id='Remove Code'>Kodu Kaldır</message>
+
+<message id='Move Code'>Kodu Taşı</message>
+
+<message id='Codes'>Kodlar</message>
+
+<message id='Files'>Dosyalar</message>
+
+<message id='Save'>Kaydet</message>
+
+<message id='Upload'>Yükle</message>
+
+<message id='Admin'>Yönetici</message>
+
+<message id='Guest'>Misafir</message>
+
+<message id='Cannot be saved!'>Kaydedilemedi!</message>
+
+<message id='Saved.'>Kaydedildi.</message>
+
+<message id='Cannot be added!'>Eklenemedi!</message>
+
+<message id='Added.'>Eklendi.</message>
+
+<message id='Cannot be removed!'>Kaldırılamadı!</message>
+
+<message id='Removed.'>Kaldırıldı.</message>
+
+<message id='Cannot be moved!'>Taşınamadı!</message>
+
+<message id='Moved.'>Taşındı.</message>
+
+<message id='Error!'>Hata!</message>
+
+<message id='Ok'>Tamam</message>
+
+<message id='Cancel'>Vazgeç</message>
+
+<message id='There is no node!'>Düğüm yok!</message>
+
+<message id='Do you want to remove node?'>Düğümü kaldırmak istiyor musunuz?</message>
+
+<message id='Do you want to move node up?'>Düğümü yukarıya taşımak istiyor musunuz?</message>
+
+<message id='Do you want to move node down?'>Düğümü aşağıya taşımak istiyor musunuz?</message>
+
+<message id='Empty!'>Boş!</message>
+
+<message id='Add'>Ekle</message>
+
+<message id='Remove'>Kaldır</message>
+
+<message id='Too Large!'>Çok Büyük!</message>
+
+<message id='There is nothing to remove!'>Kaldırılacak birşey yok!</message>
+
+<message id='Do you want to remove?'>Kaldırmak istiyor musunuz?</message>
+
+<message id='Upload'>Yükle</message>
+
+<message id='Reset'>Sıfırla</message>
+
+<message id='Paste Content'>İçeriği Yapıştır</message>
+
+<message id='Paste Name'>İsmi Yapıştır</message>
+
+<message id='There is no other language!'>Başka dil yok!</message>
+
+<message id='Select Language'>Dil Seç</message>
+
+<message id='Search'>Ara</message>
+
+<message id='Node Config'>Düğüm Ayar</message>
+
+<message id='Global Config'>Genel Ayar</message>
+
+<message id='!!! EMPTY !!!'>!!! BOŞ !!!</message>
+
+<message id='Contents'>İçerik</message>
+
+<message id='Find'>Ara</message>
+
+<message id='No matches found!'>Kayıt bulunamadı!</message>
+
+<message id='Suspicious'>Süpheli</message>
+
+<message id='Editor'>Editör</message>
+
+
+</messages>

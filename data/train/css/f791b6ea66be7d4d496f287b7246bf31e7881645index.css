@@ -1,0 +1,25 @@
+/** Models index panel
+*/
+.panel .model-index td {
+    vertical-align: middle;
+}
+.panel .model-index h3 {
+    font-size: 1.0em;
+    line-height: 1.0em;
+}
+    /** Normal-fonts design variant */
+    .panel .model-index .model-name {
+        font-size: 1.0em;
+        line-height: 1.0em;
+    }
+    .panel .model-index td {
+        padding: 0.25em;
+    }
+    /** Big-fonts design variant */
+    .panel-big .model-index .model-name {
+        font-size: 1.4em;
+        line-height: 1.4em;
+    }
+    .panel-big .model-index td {
+        padding: 0.5em;
+    }

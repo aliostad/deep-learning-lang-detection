@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structX86Test__CallDuplicateArgs" kind="struct" prot="public">
+    <compoundname>X86Test_CallDuplicateArgs</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">X86Test</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structX86Test__CallDuplicateArgs_1a524ef2d1cf8371558f990b98e2a49845" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>X86Test_CallDuplicateArgs::X86Test_CallDuplicateArgs</definition>
+        <argsstring>()</argsstring>
+        <name>X86Test_CallDuplicateArgs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1829" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1829" bodyend="1829"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__CallDuplicateArgs_1a0ae0175ab8117b204c05d3f4b7d245a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void X86Test_CallDuplicateArgs::compile</definition>
+        <argsstring>(Compiler &amp;c)</argsstring>
+        <name>compile</name>
+        <param>
+          <type>Compiler &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1839" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1839" bodyend="1866"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__CallDuplicateArgs_1a9f81c52d6084af69d7e9940334ac76df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool X86Test_CallDuplicateArgs::run</definition>
+        <argsstring>(void *_func, StringBuilder &amp;result, StringBuilder &amp;expect)</argsstring>
+        <name>run</name>
+        <param>
+          <type>void *</type>
+          <declname>_func</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>expect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1868" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1868" bodyend="1879"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structX86Test__CallDuplicateArgs_1a3a19252227557b05f57211a23f21fb11" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void X86Test_CallDuplicateArgs::add</definition>
+        <argsstring>(PodVector&lt; X86Test * &gt; &amp;tests)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="structasmjit_1_1PodVector" kindref="compound">PodVector</ref>&lt; X86Test * &gt; &amp;</type>
+          <declname>tests</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1831" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1831" bodyend="1833"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__CallDuplicateArgs_1a00cca13c2ac6982a62e92e58df614ca2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int X86Test_CallDuplicateArgs::calledFunc</definition>
+        <argsstring>(int a, int b, int c, int d, int e, int f, int g, int h, int i, int j)</argsstring>
+        <name>calledFunc</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1835" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1835" bodyend="1837"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1828" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1828" bodyend="1880"/>
+    <listofallmembers>
+      <member refid="structX86Test_1ad0ff0e52a5eee3292982b9456c7cb76e" prot="public" virt="non-virtual"><scope>X86Test_CallDuplicateArgs</scope><name>_name</name></member>
+      <member refid="structX86Test__CallDuplicateArgs_1a3a19252227557b05f57211a23f21fb11" prot="public" virt="non-virtual"><scope>X86Test_CallDuplicateArgs</scope><name>add</name></member>
+      <member refid="structX86Test__CallDuplicateArgs_1a00cca13c2ac6982a62e92e58df614ca2" prot="public" virt="non-virtual"><scope>X86Test_CallDuplicateArgs</scope><name>calledFunc</name></member>
+      <member refid="structX86Test__CallDuplicateArgs_1a0ae0175ab8117b204c05d3f4b7d245a8" prot="public" virt="virtual"><scope>X86Test_CallDuplicateArgs</scope><name>compile</name></member>
+      <member refid="structX86Test_1a89f06af1dca4b972b062757d49c87b7e" prot="public" virt="non-virtual"><scope>X86Test_CallDuplicateArgs</scope><name>getName</name></member>
+      <member refid="structX86Test__CallDuplicateArgs_1a9f81c52d6084af69d7e9940334ac76df" prot="public" virt="virtual"><scope>X86Test_CallDuplicateArgs</scope><name>run</name></member>
+      <member refid="structX86Test_1afe6e04f46e99989b9ca923cb56cf4615" prot="public" virt="non-virtual"><scope>X86Test_CallDuplicateArgs</scope><name>X86Test</name></member>
+      <member refid="structX86Test__CallDuplicateArgs_1a524ef2d1cf8371558f990b98e2a49845" prot="public" virt="non-virtual"><scope>X86Test_CallDuplicateArgs</scope><name>X86Test_CallDuplicateArgs</name></member>
+      <member refid="structX86Test_1a8a094564d1826777794e991cae0fec3c" prot="public" virt="virtual"><scope>X86Test_CallDuplicateArgs</scope><name>~X86Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

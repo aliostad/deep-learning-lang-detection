@@ -1,0 +1,49 @@
+nav { 
+    background: #444444;
+    margin: 0 2em 0 0 ;
+    float: left;
+    text-align: center;
+    font-size: 120%;
+}
+
+nav a, nav a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul, nav li { 
+    padding: 0; 
+    margin: 0; 
+    display: block; 
+}
+
+nav ul li {  
+    position: relative;
+}
+
+nav ul li:hover { 
+    background: #222;
+}
+
+nav ul li a { 
+    display: block; 
+    padding: 1em; 
+    white-space:nowrap; 
+}
+
+nav ul ul li a {
+    padding: 0.5em;
+}
+
+nav ul ul { 
+    position: absolute; 
+    display: none;
+    background: #333; 
+    border:1px solid #444; 
+}
+
+nav ul li:hover>ul { 
+    top: 0;
+    left: 100%;
+    display: block;
+}

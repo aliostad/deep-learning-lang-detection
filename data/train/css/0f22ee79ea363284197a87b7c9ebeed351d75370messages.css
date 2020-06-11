@@ -1,0 +1,33 @@
+/* ===========================================================================
+
+   |{}| Messages
+   
+   =========================================================================== */
+.message {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+  background: #3498db;
+  border: 2px solid #2b94d9;
+  text-align: center;
+}
+.message p {
+  margin: 0;
+  padding: .6em;
+  color: white;
+}
+.message.message--success {
+  background: #2ecc71;
+  border: 2px solid #2cc46c;
+}
+.message.message--error {
+  background: #e74c3c;
+  border: 2px solid #e64433;
+}
+.message.message--warning {
+  background: #f1c40f;
+  border: 2px solid #e8bd0e;
+}
+.message.message--warning p {
+  color: #1e1e1e;
+}

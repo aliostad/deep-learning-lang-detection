@@ -1,0 +1,28 @@
+#!/bin/bash
+set -eo pipefail
+
+target_folder="/srv/buildpacks"
+mkdir -p $target_folder
+pushd $target_folder
+
+# We use all repo that don't begin with a comment #
+buildpacks=$(cat /srv/conf/buildpacks | grep '^[^#].*' )
+
+for repo in $buildpacks; do
+
+  repo_name=$(echo $repo | sed 's/.*\///' | sed 's/\.git//')
+
+  if [[ -d "$repo_name" ]]; then
+    echo "Pulling for changes in $repo_name"
+    pushd $repo_name
+    git pull origin master
+    popd
+  else
+	  /usr/bin/git clone --depth=1 $repo
+  fi
+
+done
+
+popd # return to previous pwd
+
+exit 0

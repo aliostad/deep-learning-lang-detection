@@ -1,0 +1,31 @@
+﻿
+
+[ng-show] {
+}
+
+    [ng-show].ng-enter {
+        -webkit-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+        transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    }
+
+    [ng-show].ng-enter,
+    [ng-show].ng-leave.ng-leave-active {
+        opacity: 0;
+    }
+
+        [ng-show].ng-leave,
+        [ng-show].ng-enter.ng-enter-active {
+            opacity: 1;
+        }
+
+
+
+.block {
+    min-width: 300px;
+    margin-right:10px;
+    vertical-align:top;
+}
+.content {
+
+  padding-bottom: 0;
+}

@@ -1,0 +1,67 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+body {
+	background-color: #47499D;
+	font-family: 'Oswald', sans-serif;
+}
+
+.load-box {
+	display: inline-block;
+	margin-top: 2%;
+	margin-left: 7%;
+	margin-right: 7%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-color: #FFF;
+	border-width: 2px;
+	border-style: solid;
+	background-color: #7678D0;
+	width: 25%;
+	float: left;
+}
+
+.load-box span {
+	font-size: 2em;
+	width: 50%;
+	float: right;
+}
+
+.load-box .load-slots {
+	font-size: 2em;
+}
+
+.load-box .load-slots-name {
+	padding-right: 10px;
+}
+
+table tr td:empty {
+    width: 28%;
+}
+
+.load-box .load-slot-activity {
+}
+
+.load-box .load-slot {
+	margin-bottom: 10px;
+}
+
+.load-box .clearfix:after {
+   content: " ";
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 3em;
+}

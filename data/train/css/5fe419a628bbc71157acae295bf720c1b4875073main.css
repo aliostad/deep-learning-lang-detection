@@ -1,0 +1,65 @@
+#write-form-skin {
+	font-family: '맑은 고딕', AppleGothic;
+}
+
+#write-form-skin > #reminder, #write-form-skin > #secret-password-wrapper {
+	margin-bottom: 5px;
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+}
+
+#write-form-skin > #secret-password-wrapper input[type='password'] {
+	margin-left: 10px;
+}
+
+#write-form-skin > #category-wrapper {
+	margin-bottom: 10px;
+}
+
+#write-form-skin > #subject {
+	margin-bottom: 10px;
+}
+#write-form-skin .title {
+	font-size: 11pt;
+	font-weight: bold;
+	color: #313131;
+	margin-right: 10px;
+}
+
+#write-form-skin > #subject input[type='text'] {
+	padding: 3px 10px;
+	width: 80%;
+}
+
+#write-form-skin > #write-content {
+	height: 300px;
+}
+
+#write-form-skin #secret_password {
+	display: none;
+}
+
+#write-form-skin > .write-form-extra-info-box {
+	border: 1px solid #666666;
+	padding: 10px;
+	border-radius: 3px;
+	margin-bottom: 10px;
+}
+
+#write-form-skin > .write-form-extra-info-box > .row > .sub-title {
+	display:inline-block;
+	padding: 5px 10px;
+	width: 70px;
+	font-family: dotum;
+	margin-right: 5px;
+	color: #666666;
+}
+
+#write-form-skin > .write-form-extra-info-box > .row {
+	margin-bottom: 5px;
+}
+
+#write-form-skin > .write-form-extra-info-box > .row > input[type='text'], #write-form-skin > .write-form-extra-info-box > .row > input[type='password'] {
+	padding: 5px 10px;
+}

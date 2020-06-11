@@ -1,0 +1,90 @@
+/**
+ * @file
+ * Administration styles for the Search API module.
+ */
+
+/*
+ * Search API overview page
+ */
+#search-api-entity-list {
+  margin-bottom: 2em;
+}
+#search-api-entity-list tr {
+  border-bottom: none;
+}
+
+#search-api-entity-list tr.search-api-list-server {
+  border-top: 1px solid #E6E4DF;
+}
+#search-api-entity-list tr.search-api-list-index:last-of-type {
+  border-bottom: 1px solid #E6E4DF;
+}
+
+#search-api-entity-list tr.search-api-list-server .search-api-type,
+#search-api-entity-list tr.search-api-list-server .search-api-title {
+  font-weight: bold;
+}
+#search-api-entity-list tr.search-api-list-index .search-api-type {
+  padding-left: 3em;
+}
+
+#search-api-entity-list tr.search-api-list-disabled .search-api-type,
+#search-api-entity-list tr.search-api-list-disabled .search-api-title {
+  font-style: italic;
+}
+
+/*
+ * Server view page
+ */
+.search-api-server-summary ul.inline {
+  margin: 0;
+}
+
+.search-api-server-summary ul.inline li {
+  padding-left: 0;
+}
+
+#search-api-backend-config-form .messages,
+#search-api-datasource-config-form .messages {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/*
+ * Index summary page
+ */
+.search-api-index-status {
+  margin-bottom: 6em;
+}
+/* Remove animation */
+.search-api-index-status .progress__bar {
+  background-image: none;
+}
+.search-api-index-summary {
+  margin-bottom: 2em;
+}
+
+/*
+ * Processors page
+ */
+.search-api-stage-wrapper.form-item {
+  width: 31%;
+  min-width: 16em;
+  float: left;
+  margin-right: 1%;
+}
+
+.search-api-stage-wrapper-preprocess_query {
+}
+
+.search-api-stage-wrapper-postprocess.form-item {
+  margin-right: 0;
+}
+
+/*
+ * Miscellaneous
+ */
+.search-api-checkboxes-list div {
+  max-height: 12em;
+  overflow: auto;
+}

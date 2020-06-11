@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hook PUBLIC "-//Liferay//DTD Hook 6.1.0//EN" "http://www.liferay.com/dtd/liferay-hook_6_1_0.dtd">
+
+<hook>
+	<custom-jsp-dir>/WEB-INF/jsp/</custom-jsp-dir>
+	 <service>
+    	<service-type>com.liferay.portlet.messageboards.service.MBMessageLocalService</service-type>
+    	<service-impl>com.b2b2000.agbar.commons.service.WrapperAgbarMBMessageLocalService</service-impl>
+    </service>
+   
+    <service>         
+    	<service-type>com.liferay.portlet.documentlibrary.service.DLFileEntryLocalService</service-type>
+    	<service-impl>com.b2b2000.agbar.commons.service.WrappedDLFileEntryLocalService</service-impl>
+    </service>
+</hook>

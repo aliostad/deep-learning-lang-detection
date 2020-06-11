@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+
+root_repo="basex"
+init_commit="Initial commit of unified BaseX repository"
+
+core_repo_name="upstream-basex-core"
+api_repo_name="upstream-basex-api"
+
+core_repo_url="git://github.com/BaseXdb/basex.git"
+api_repo_url="git://github.com/BaseXdb/basex-api.git"
+
+core_repo_url="$HOME/Development/basex/basex-core"
+api_repo_url="$HOME/Development/basex/basex-api"
+
+function merge_git_tree() {
+  repo_name="$1"
+  repo_url="$2"
+  subdir="$3"
+
+  # add remote repository url and fetch all commits, branches, and tags
+  git remote add -f "$repo_name" "$repo_url"
+
+  # add the files to the index
+  git read-tree --prefix="$subdir/" -u "$repo_name/master"
+
+  # prepare a merge commit
+  git merge -s subtree --no-commit "$repo_name/master"
+
+  # make the merge commit
+  git commit -m "Merge $repo_url into $subdir"
+
+  return 0
+}
+
+rm -fR "$root_repo"
+git init "$root_repo"
+cd "$root_repo"
+
+touch readme.md
+git add readme.md
+git commit -m "$init_commit"
+
+merge_git_tree "$core_repo_name" "$core_repo_url" "basex-core"
+merge_git_tree "$api_repo_name" "$api_repo_url" "basex-api"
+

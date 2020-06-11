@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- based upon http://java.sun.com/j2se/1.3/docs/guide/jdbc/getstart/mapping.html -->
+
+<types>
+	<type number="2003" name="ARRAY" mapping="java.sql.Array" />
+	<type number="-5" name="BIGINT" mapping="long" />
+	<type number="-2" name="BINARY" mapping="byte[]" />
+	<type number="-7" name="BIT" mapping="boolean" />
+	<type number="2004" name="BLOB" mapping="java.sql.Blob" />
+	<type number="-7" name="BOOLEAN" mapping="boolean" />
+	<type number="1" name="CHAR" mapping="java.lang.String" />
+	<type number="2005" name="CLOB" mapping="java.sql.Clob" />
+	<type number="" name="DATALINK" mapping="" />
+	<type number="91" name="DATE" mapping="java.sql.Date" />
+	<type number="3" name="DECIMAL" mapping="java.math.BigDecimal" />
+	<type number="" name="DISTINCT" mapping="" />
+	<type number="8" name="DOUBLE" mapping="double" />
+	<type number="6" name="FLOAT" mapping="double" />
+	<type number="4" name="INTEGER" mapping="int" />
+	<type number="" name="JAVA_OBJECT" mapping="" />
+	<type number="-4" name="LONGVARBINARY" mapping="byte[]" />
+	<type number="-1" name="LONGVARCHAR" mapping="java.lang.String" />
+	<type number="" name="NULL" mapping="" />
+	<type number="2" name="NUMERIC" mapping="java.math.BigDecimal" />
+	<type number="" name="OTHER" mapping="" />
+	<type number="7" name="REAL" mapping="float" />
+	<type number="" name="REF" mapping="java.sql.Ref" />
+	<type number="5" name="SMALLINT" mapping="short" />
+	<type number="2002" name="STRUCT" mapping="java.sql.Struct" />
+	<type number="92" name="TIME" mapping="java.sql.Date" />
+	<type number="93" name="TIMESTAMP" mapping="java.sql.Timestamp" />
+	<type number="1111" name="TIMESTAMP" mapping="java.sql.Timestamp" />
+	<type number="-6" name="TINYINT" mapping="byte" />
+	<type number="-3" name="VARBINARY" mapping="byte[]" />
+	<type number="12" name="VARCHAR" mapping="java.lang.String" />
+</types>

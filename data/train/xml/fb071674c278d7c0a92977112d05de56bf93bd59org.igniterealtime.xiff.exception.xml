@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.igniterealtime.xiff.exception"><apiName>org.igniterealtime.xiff.exception</apiName><apiDetail/><apiClassifier id="org.igniterealtime.xiff.exception:SerializationException"><apiName>SerializationException</apiName><shortdesc>
+	 This exception is thrown whenever there is a problem serializing or
+	 deserializing data for sending to the server.</shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Error</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 This exception is thrown whenever there is a problem serializing or
+	 deserializing data for sending to the server.
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.igniterealtime.xiff.exception:SerializationException:SerializationException"><apiName>SerializationException</apiName><shortdesc>
+		 		 </shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
+		 		 </apiDesc></apiConstructorDetail></apiConstructor></apiClassifier></apiPackage>

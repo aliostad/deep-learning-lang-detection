@@ -1,0 +1,54 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Admin interface styles
+ *
+ * @author    Qualiteam software Ltd <info@x-cart.com>
+ * @copyright Copyright (c) 2011-2015 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+ * @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+ * @link      http://www.x-cart.com/
+ */
+
+/**
+ * Canada Post configuration
+ */
+div.table-value span.input-text-dimension input {
+  text-align: right;
+  width: 80px;
+}
+
+.model-properties .default-section ul.table div.table-label label {
+  width: 140px;
+}
+
+.model-properties ul.table div.table-label.debug-enabled-label label {
+  width: 510px;
+}
+
+div.model-properties li.separator.last h2 {
+  font-size: 12px;
+  font-family: Helvetica, Arial, Sans-serif;
+  color: #333333;
+}
+
+.model-properties .input-text-symbol .symbol.text {
+  top: 6px;
+}
+
+.model-properties ul.table li div.star {
+  padding-top: 16px;
+}
+
+.model-properties div.table-label {
+  padding-top: 4px;
+  padding-right: 0px;
+  width: 300px;
+}
+
+.model-properties div.table-value {
+  vertical-align: middle;
+}
+
+.tab-content .model-properties .model-form-buttons {
+  padding-left: 264px;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="UserWebService">
+      <implementation-class>com.potatoni.userws.UserWebService</implementation-class>
+    </service>
+    <service name="BookinfoWebService">
+      <implementation-class>com.potatoni.bookinfows.BookinfoWebService</implementation-class>
+    </service>
+    <service name="BookWebService">
+      <implementation-class>com.potatoni.bookws.BookWebService</implementation-class>
+    </service>
+    <service name="BidWebService">
+      <implementation-class>org.potatoni.bidws.BidWebService</implementation-class>
+    </service>
+    <service name="OrderWebService">
+      <implementation-class>com.potatoni.orderws.OrderWebService</implementation-class>
+    </service>
+  </services>
+  <clients/>
+</jax-ws>

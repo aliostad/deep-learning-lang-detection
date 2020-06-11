@@ -1,0 +1,32 @@
+#!/bin/bash
+
+set -e
+
+chunkSizes=( 500 1000 2000 )
+highWaterMarks=( 500 1000 2000 )
+timeoutBetweenChunks=( 0 10 20 30 )
+valueSizes=( 10 100 1000 )
+maxConcurrentBatcheValues=( 1 2 3 4 )
+
+for chunkSize in "${chunkSizes[@]}"
+do
+  for hwm in "${highWaterMarks[@]}"
+  do
+    if [ $chunkSize -le $hwm ]
+      then
+        for timeout in "${timeoutBetweenChunks[@]}"
+        do
+          for valueSize in "${valueSizes[@]}"
+          do
+            for maxConcurrentBatches in "${maxConcurrentBatcheValues[@]}"
+            do
+              node lib/benchmark.js 100000 $chunkSize $hwm $maxConcurrentBatches $timeout $valueSize false
+              node lib/benchmark.js 100000 $chunkSize $hwm $maxConcurrentBatches $timeout $valueSize true
+            done
+          done
+        done
+    fi
+  done
+
+done
+

@@ -1,0 +1,24 @@
+<soto:app xmlns:soto="http://www.sapia-oss.org/soto/2003"
+          xmlns:test="http://www.sapia-oss.org/soto/test">
+  
+  <soto:namespace prefix="test">
+    <def class="org.sapia.soto.TestService" name="testService" />
+  </soto:namespace>
+
+  <soto:service id="some/service"> 
+    <test:testService>
+      <child>
+        <test:testService/>
+      </child>
+    </test:testService>
+  </soto:service>
+  
+  <soto:service id="some/other/service"> 
+    <test:testService>
+      <child>
+        <soto:serviceRef id="some/service" />
+      </child>
+    </test:testService>
+  </soto:service>  
+
+</soto:app>

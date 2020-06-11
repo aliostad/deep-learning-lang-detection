@@ -1,0 +1,59 @@
+<tags>
+	<tag>
+		<field>11</field>
+		<path/>
+		<process>
+			<object>com.bpcbt.sv.camel.converters.ibank.process.GenerateStan</object>
+		</process>
+	</tag>
+	
+	<tag>
+		<field>2</field>
+		<path>/CardDetailsResponse/card_number</path>
+	</tag>
+	
+	<tag>
+		<field>3</field>
+		<const>360000</const>
+	</tag>
+	
+	<tag>
+		<field>7</field>
+		<path/>
+		<process>
+			<object>com.bpcbt.sv.camel.converters.ibank.process.ConversionCurrDateMMDDhhmmss</object>
+		</process>
+	</tag>
+	
+	<tag>
+		<field>12</field>
+		<path/>
+		<process>
+			<object>com.bpcbt.sv.camel.converters.ibank.process.ConversionCurrDateMMDDhhmmss</object>
+		</process>
+	</tag>
+	
+	<tag>
+		<field>18</field>
+		<path/>
+		<process>
+			<object>com.bpcbt.sv.camel.converters.ibank.process.Configurable</object>
+		</process>
+	</tag>
+	
+	<tag>
+		<field>41</field>
+		<path/>
+		<process>
+			<object>com.bpcbt.sv.camel.converters.ibank.process.Configurable</object>
+		</process>
+	</tag>
+	
+	<tag>
+		<field>42</field>
+		<path/>
+		<process>
+			<object>com.bpcbt.sv.camel.converters.ibank.process.Configurable</object>
+		</process>
+	</tag>
+</tags>

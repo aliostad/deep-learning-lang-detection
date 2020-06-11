@@ -1,0 +1,25 @@
+#!/bin/bash
+
+vtb() {
+    if [ "$1" == "repo" ]; then
+        local repo=$2
+        if [ "$3" == "-v" ]; then
+            cd $VIDEO_VAGRANT_DIR
+            vagrant ssh -- -t "cd ~/$repo; /bin/bash"
+        else
+            local dir="$VIDEO_PROJECT_DIR/$repo"
+            cd $dir
+        fi
+    elif [ "$1" == "vagrant" ]; then
+        cd $VIDEO_VAGRANT_DIR
+    else
+        cat > usage << EOF
+vtb : command usage
+    repo <repo-name> [-v] : open repo directory
+        -v : in vagrant
+    vagrant : go to the vagrant
+EOF
+
+        cat usage
+    fi
+}

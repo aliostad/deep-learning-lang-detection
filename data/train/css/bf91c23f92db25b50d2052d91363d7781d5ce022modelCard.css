@@ -1,0 +1,5 @@
+.modelCard{height:350px;width:415px;margin:0px 60px 80px 0;display:inline-block;text-align:center;vertical-align:top;}.modelCard .modelPic{position:relative;width:100%;height:265px;border-radius:10px;overflow:hidden;background-image:url(/img/defaultPreview.jpg);}.modelCard .modelPic img{width:100%;}
+.modelCard .modelPic .hoverCover{display:none;}
+.modelCard h3{margin:16px auto auto auto;color:#000;}
+.modelCard p{margin:0px auto auto auto;color:#444444;font-size:17px;}
+.modelCard:hover .hoverCover{position:absolute;top:0;left:0;display:block;}

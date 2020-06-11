@@ -1,0 +1,108 @@
+/*------------------------------------------------------------------------------------------------
+ | Navigation Styles (for use with bullet-proof nav)
+ |
+ |
+ | <nav>
+ |     <ul class="primary">
+ |         <li>...</li>
+ |         <li>
+ |             <a href="#">...</a>
+ |             <ul>
+ |                 <li>...</li>
+ |             </ul>
+ |         </li>
+ |     </ul>
+ | </nav>
+ |
+ *-----------------------------------------------------------------------------------------------*/
+
+ nav a,
+.nav a {
+	text-decoration: none;
+	display: block;
+	padding: .5em 1em;
+}
+
+ nav ol,
+ nav ul,
+.nav ol,
+.nav ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+ nav > ol > li,
+ nav > ul > li,
+.nav > ol > li,
+.nav > ul > li {
+	overflow: hidden;
+}
+
+ nav > ol > li > ol,
+ nav > ol > li > ul,
+ nav > ul > li > ol,
+ nav > ul > li > ul,
+.nav > ol > li > ol,
+.nav > ol > li > ul,
+.nav > ul > li > ol,
+.nav > ul > li > ul {
+	position: absolute;
+	left: 0;
+}
+
+/*---- UNCOMMENT FOR HORIZONTAL SUBNAV
+
+	 nav > ol,
+	 nav > ul,
+	.nav > ol,
+	.nav > ul {
+		position: relative;
+	}
+
+	 nav > ol > li > ol,
+	 nav > ol > li > ul,
+	 nav > ul > li > ol,
+	 nav > ul > li > ul,
+	.nav > ol > li > ol,
+	.nav > ol > li > ul,
+	.nav > ul > li > ol,
+	.nav > ul > li > ul {
+		with: 100%;
+	}
+
+----*/
+
+/*---- UNCOMMENT FOR VERTICAL SUBNAV
+
+	 nav > ol > li,
+	 nav > ul > li,
+	.nav > ol > li,
+	.nav > ul > li {
+		position: relative;
+	}
+
+	 nav > ol > li > ol > li,
+	 nav > ol > li > ul > li,
+	 nav > ul > li > ol > li,
+	 nav > ul > li > ul > li,
+	.nav > ol > li > ol > li,
+	.nav > ol > li > ul > li,
+	.nav > ul > li > ol > li,
+	.nav > ul > li > ul > li {
+		with: 100%;
+	}
+
+
+	 nav > ol > li > ol > li > a,
+	 nav > ol > li > ul > li > a,
+	 nav > ul > li > ol > li > a,
+	 nav > ul > li > ul > li > a,
+	.nav > ol > li > ol > li > a,
+	.nav > ol > li > ul > li > a,
+	.nav > ul > li > ol > li > a,
+	.nav > ul > li > ul > li > a {
+		width: 100%;
+		text-wrap: no-wrap;
+	}
+
+----*/

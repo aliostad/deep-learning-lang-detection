@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# Script para subir un objeto a la mesa del pr2_mesa_lata.launch
+
+#rosservice call /gazebo/set_model_state "{model_state: {model_name : '$1'}, pose: {position: {x: 1.4, y: 0, z: 0,55}, orientation: {x: 0, y: 0, z: 0, w: 1}}, twist : {linear: {x: 0, y: 0, z: 0}, angular: {x: 0}}, reference_frame : ''}"
+rosservice call /gazebo/set_model_state "
+model_state:
+  model_name: '$1'
+  pose:
+    position:
+      x: "$2"
+      y: "$3"
+      z: "$4"
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      w: 1
+  twist:
+    linear:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    angular:
+      x: 0.0
+  reference_frame: ''"
+
+#"model_state:
+#  model_name: ''
+#  pose:
+#    position:
+#      x: 0.0
+#      y: 0.0
+#      z: 0.0
+#    orientation:
+#      x: 0.0
+#      y: 0.0
+#      z: 0.0
+#      w: 0.0
+#  twist:
+#    linear:
+#      x: 0.0
+#      y: 0.0
+#      z: 0.0
+#    angular:
+#      x: 0.0
+#  reference_frame: ''" 

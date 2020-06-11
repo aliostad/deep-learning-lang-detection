@@ -1,0 +1,61 @@
+/* MAKE COMMENTS TO TAKE NOTES FOR EACH SECTION!!!! */
+
+/* 1. Write styles for the body tag to give your page a background color, image or texture. */
+
+
+/* 2. Write styles for div id text-display so that it displays below your self-orbit */
+
+
+/* The below styles position icons into circle  */
+
+#circle-container {
+	position: relative; 
+	/* CHALLENGE: Can you explain why this div is positioned 'relative'? */
+	width: 24em;
+	height: 24em;
+	padding: 2.8em; /* = 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
+	border-radius: 50%;
+	background-color: #FFF;
+	margin: 5em auto 0;	
+}
+
+#circle-container a {
+
+	/* 3. Let's write the styles for the circle-container links div id together. */
+
+}
+
+#circle-container img { display: block; width: 100%; }
+#deg0 { transform: translate(12em); } /* 12em = half the width of the wrapper */
+#deg45 { transform: rotate(45deg) translate(12em) rotate(-45deg); }
+#deg135 { transform: rotate(135deg) translate(12em) rotate(-135deg); }
+#deg180 { transform: translate(-12em); }
+#deg225 { transform: rotate(225deg) translate(12em) rotate(-225deg); }
+#deg315 { transform: rotate(315deg) translate(12em) rotate(-315deg); }
+
+
+/* this is for showing the circle on which the images are placed */
+#circle-container:after {
+	/* 4. We'll write the styles for the circle-container for the circle border together. */
+}
+
+/* this is for showing the hover state of the circle on which the images are placed */
+#circle-container:hover:after { 
+	/* 5. We'll write the styles for the circle-container for the circle border together. */
+}
+
+
+/* 6. What do the below styles control? */
+#circle-container a:not(#center):after {
+	position: absolute;
+	top: 50%; left: 50%;
+	width: 4px; height: 4px;
+	border-radius: 50%;
+	box-shadow: 0 0 .5em .5em white;
+	margin: -2px;
+	background: black;
+	opacity: .3;
+	content: '';
+}
+
+#circle-container:hover a:after { opacity: 1; }

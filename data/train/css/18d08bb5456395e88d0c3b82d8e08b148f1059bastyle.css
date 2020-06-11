@@ -1,0 +1,66 @@
+header{padding:30px 0;}
+header .content{width:1100px;margin:0 auto;}
+header .content h1{margin:0;text-align:center;font-size:40px}
+body{font-family:'Helvetica Neue',Helvetica,sans-serif;background-image:url("/images/grey.png");background-repeat:repeat;margin:0;min-width:1100px;}
+
+
+#vis{padding:35px 0 20px;height:1400px;background-color:rgba(255,255,255,0.75);-webkit-box-shadow:0 0 10px rgba(0,0,0,0.5);-moz-box-shadow:0 0 10px rgba(0,0,0,0.5);-ms-box-shadow:0 0 10px rgba(0,0,0,0.5);-o-box-shadow:0 0 10px rgba(0,0,0,0.5);box-shadow:0 0 10px rgba(0,0,0,0.5);}
+#vis .content{width:1100px;padding:0 10px;margin:0 auto;position:relative;}
+
+.ms-container { width: 400px;}
+
+#vis .content #chart-wrapper .linecharts .axis path, .axis line { fill: none; stroke: #000; shape-rendering: crispEdges;}
+#vis .content #chart-wrapper .linecharts .x.axis path { display: none;}
+#vis .content #chart-wrapper .linecharts .ts_line { fill: none; stroke-width: 3px;}
+#vis .content #chart-wrapper .grid .tick {stroke: lightgrey; opacity: 0.7;}
+#vis .content #chart-wrapper .x_text {font-size: 20px;}
+#vis .content #chart-wrapper .y_text {font-size: 20px;}
+#vis .content #chart-wrapper .title {font-size: 28px;}
+
+#vis .content #groupbars-wrapper .barcharts .axis path, .axis line { fill: none; stroke: #000; shape-rendering: crispEdges;}
+#vis .content #groupbars-wrapper .barcharts .x.axis path { display: none;}
+#vis .content #groupbars-wrapper .grid .tick {stroke: lightgrey; opacity: 0.7;}
+#vis .content #groupbars-wrapper .x_text {font-size: 30px;}
+#vis .content #groupbars-wrapper .y_text {font-size: 20px;}
+#vis .content #groupbars-wrapper .title {font-size: 28px;}
+
+
+#vis .content #multi-publishers {float: left;}
+#vis .content #multi-features {float: right;}
+
+
+.tipsy .tipsy-inner div.circle-info{
+	text-align: left;
+}
+
+.tipsy .tipsy-inner div.bar-info{
+	text-align: left;
+}
+
+.tipsy .tipsy-inner {
+ 
+  border: 1px solid #f0f0f0;
+  display: block;
+
+}
+
+.tipsy .tipsy-inner div.circle-info p{
+  margin-bottom: 2px;
+  margin-top: 1px;
+  font-size: 15px;
+}
+
+.tipsy .tipsy-inner div.bar-info p{
+  margin-bottom: 2px;
+  margin-top: 1px;
+  font-size: 15px;
+}
+
+
+#write-up{padding:35px 0 20px;color:#525252;}
+#write-up .content{width:1160px;margin:0 auto;}
+#write-up .content p{font-size:25px;line-height:1.5;margin:15px 0}
+#write-up .content h2{font-size:30px;border-left:solid #bdbdbd;padding-left:15px;-webkit-transition:border-left-color .25s;-moz-transition:border-left-color .25s;-ms-transition:border-left-color .25s;-o-transition:border-left-color .25s;transition:border-left-color .25s;line-height:1.25}
+#write-up .content li{font-size:22px;line-height:1.5;margin:15px 0}
+#write-up .content ul{font-size:25px;line-height:1.5;margin:15px 0}
+#write-up .content ul li b{margin-right:1em}

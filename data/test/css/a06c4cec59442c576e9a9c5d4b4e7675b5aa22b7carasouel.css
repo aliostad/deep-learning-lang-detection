@@ -1,0 +1,31 @@
+﻿#myCarousel .nav a small {
+    display:block;
+}
+#myCarousel .nav {
+	background-color:#333;
+}
+#myCarousel .nav a {
+    border-radius:0px;
+    color: #ccc;
+    background-color:#333;
+    font-weight:bold;
+}
+#myCarousel .nav a:hover {
+    
+    color: #ccc;
+    background-color: #4c96a8;
+    font-weight:bold;
+}
+#myCarousel .nav a:active {
+    
+    color: #333;
+    font-weight:bold;
+}
+#myCarousel .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    background-color: #0b6b83;
+}
+
+#myCarousel .nav > li > a:hover, .nav > li > a:focus  {
+	
+
+}

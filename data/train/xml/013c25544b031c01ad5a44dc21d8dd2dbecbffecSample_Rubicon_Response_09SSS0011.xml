@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetChippingSelectionsResponse xmlns="http://www.monsanto.com/rubicon/getchippingselections"
+                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Project>
+    <RubiconName>CN01227</RubiconName>
+    <LIMSProjectID>09SSS0011</LIMSProjectID>
+    <AdvancementProgram>01</AdvancementProgram>
+    <Inventory>
+      <InventoryID>12354567890</InventoryID>
+      <BulkSelection groupNumber="1">
+        <SampleID>1</SampleID>
+        <SampleID>3</SampleID>
+        <SampleID>5</SampleID>
+        <SampleID>7</SampleID>
+      </BulkSelection>
+    </Inventory>
+    <Inventory>
+      <InventoryID>112233445566</InventoryID>
+      <BulkSelection groupNumber="2">
+        <SampleID>2</SampleID>
+        <SampleID>4</SampleID>
+        <SampleID>6</SampleID>
+        <SampleID>8</SampleID>
+        <SampleID>9</SampleID>
+        <SampleID>10</SampleID>
+      </BulkSelection>
+    </Inventory>
+    <Inventory>
+      <InventoryID>9876543210987</InventoryID>
+      <BulkSelection groupNumber="3">
+        <SampleID>12</SampleID>
+      </BulkSelection>
+    </Inventory>
+    <Inventory>
+      <InventoryID>111333555888</InventoryID>
+      <BulkSelection groupNumber="4">
+        <SampleID>13</SampleID>
+      </BulkSelection>
+    </Inventory>
+  </Project>  
+</GetChippingSelectionsResponse>

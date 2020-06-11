@@ -1,0 +1,16 @@
+<package>
+<!-- THIS FILE IS GENERATED! EDITS _WILL_ BE LOST ON UPDATE! -->
+<name>DigitalRepository</name>
+<namespace>DigitalRepository</namespace>
+<test>
+<sunit></sunit>
+</test>
+<filein>DigitalRepository\DRConverter.st</filein>
+<filein>DigitalRepository\DRFileUpload.st</filein>
+<filein>DigitalRepository\DRGateAND.st</filein>
+<filein>DigitalRepository\DRImageDatabase.st</filein>
+<file>DigitalRepository\DRConverter.st</file>
+<file>DigitalRepository\DRFileUpload.st</file>
+<file>DigitalRepository\DRGateAND.st</file>
+<file>DigitalRepository\DRImageDatabase.st</file>
+</package>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="AddressService">
+      <implementation-class>chapter45.AddressService</implementation-class>
+    </service>
+    <service name="ScoreService">
+      <implementation-class>chapter45.ScoreService</implementation-class>
+    </service>
+    <service name="QuizService">
+      <implementation-class>chapter45.QuizService</implementation-class>
+    </service>
+  </services>
+  <clients/>
+  <jsr109>true</jsr109>
+</jax-ws>

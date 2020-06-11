@@ -1,0 +1,27 @@
+
+.priorities .state-background,
+.reveal.overview .slides section.priorities ,
+.print .reveal .slides section.priorities {
+    background: url('../img/priorities.png') no-repeat center;
+    background-size: 100%;
+}
+
+.write-concerns .state-background,
+.reveal.overview .slides section.write-concerns,
+.print .reveal .slides section.write-concerns {
+    background: url('../img/write-concerns.png') no-repeat center;
+    background-size: 100%;
+}
+
+.tagging .state-background,
+.reveal.overview .slides section.tagging,
+.print .reveal .slides section.tagging {
+    background: url('../img/tagging.png') no-repeat center;
+    background-size: 100%;
+}
+.eventual-consistency .state-background,
+.reveal.overview .slides section.eventual-consistency,
+.print .reveal .slides section.eventual-consistency {
+    background: url('../img/eventual-consistency.png') no-repeat center;
+    background-size: 100%;
+}

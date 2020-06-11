@@ -1,0 +1,628 @@
+body
+{
+	
+	padding:0px;
+	margin:0px;
+	
+}
+#main
+{
+    color: white;
+
+    font-family: Segoe UI, Tahoma, Verdana, sans-serif;
+    font-weight: 500;
+
+	height:100%;
+}
+#mailContent
+{
+    width:795px;
+    height:400px;
+}
+#registerDBScreen .closeButton
+{
+    border:none;
+    height:50px;
+    width:50px;
+    background-image:url("../img/closeModelButton.png");
+    background-color: transparent;
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+    position:absolute;
+    right:2px;
+    top:2px;
+}
+#selectModelScreen
+{
+    left:0px;
+    right:0px;
+    display:block;
+    position:absolute;
+}
+
+#selectModelScreen .header
+{
+    background: #0072ba;
+    height: 50px;
+
+}
+
+#selectModelScreen .header .search
+{
+    width:500px;
+    position:absolute;
+    top:0px;
+    right:0px;
+    margin: 10px 0;
+    margin-right: 50px;
+    display:block;
+}
+
+#selectModelScreen .header .textArea
+{
+    color: white;
+    text-align:center;
+    font-family: Segoe UI, Tahoma, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height:50px;
+    margin-right:350px;
+    margin-left:70px;
+    top: 0px;
+    position: absolute;
+
+}
+#selectModelScreen .header .closeArea
+{
+    height:50px;
+    width:50px;
+    margin-right:10px;
+    position:absolute;
+    right:0px;
+    top:0px;
+}
+
+#selectModelScreen .header .buttonArea
+{
+    height:50px;
+    width:50px;
+    margin-left:10px;
+}
+
+#selectModelScreen .header .closeButton
+{
+    border:none;
+    height:50px;
+    width:50px;
+    background-image:url("../img/closeModelButton.png");
+    background-color: transparent;
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+
+}
+#selectModelScreen .header .closeButton:hover
+{
+    background-color: #009cff;
+}
+.moveToParent
+{
+    border:none;
+    height:50px;
+    width:50px;
+    background-image:url("../img/browseUpButton.png");
+    background-color: transparent;
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+}
+.moveToParent:active
+{
+    /*background-image:url("../img/browseUpButtonHover.png");*/
+}
+.moveToParent:hover
+{
+    background-color: #009cff;
+}
+
+#modelItems
+{
+    position:relative;
+    font-family: Segoe UI, Tahoma, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    overflow-y:auto;
+    overflow-y:hidden;
+}
+
+#modelItems .modelItem
+{
+    width:100%;
+    background-color:white;
+    color: black;
+    height: 32px;
+    line-height: 32px;
+    border-bottom:1px solid grey;
+    position:relative;
+}
+
+
+
+#modelItems .modelItem:hover
+{
+    background: rgba(0, 180, 255, 0.13);
+}
+
+#modelItems .modelItem:active
+{
+    /*background: rgba(0, 180, 255, 0.44);*/
+}
+
+#modelItems .modelItem .iconArea
+{
+    width:32px;
+    height:32px;
+    background-image:url("../img/modelIcon.png");
+    background-color: transparent;
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+    margin-left:5px;
+
+}
+
+
+#modelItems .collection .iconArea
+{
+    background-image:url("../img/collectionIcon.png");
+}
+#modelItems .history .iconArea
+{
+    background-image:url("../img/modelRevisionIcon.png");
+}
+#modelItems .modelItem .historyArea
+{
+    width:32px;
+    height:32px;
+    background-image:url("../img/modelHistoryIcon.png");
+    background-color: transparent;
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    border:0px;
+}
+#modelItems .collection .historyArea
+{
+    display:none;
+}
+#modelItems .history .historyArea
+{
+    display:none;
+}
+
+#modelItems .modelItem .historyArea:hover
+{
+    background-color: rgba(5, 64, 255, 0.45);
+}
+#modelItems .modelItem .textArea
+{
+    margin-left:38px;
+
+
+    position:absolute;
+    left:0px;
+    right:30%;
+    top:0px;
+    /*border-right:1px solid grey;*/
+    padding: 0 5px;
+}
+
+#modelItems .modelItem .infoArea
+{
+
+    position:absolute;
+    left:70%;
+    right:30px;
+    top:0px;
+    padding: 0 5px;
+
+
+}
+#modelItems .history .textArea
+{
+    margin-left:73px;
+    right:50%;
+}
+#modelItems .history .infoArea
+{
+    left:50%;
+}
+#modelItems .history .iconArea
+{
+    margin-left:35px;
+}
+#controls
+{
+	background: #0073de;
+	display: block;
+	height: 100%;
+	position: fixed;
+	width: 300px;
+	border-right: 1px solid grey;
+	font-family: Segoe UI, Tahoma, Verdana, sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	color: white;	
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+#controlsInner,#loginContainer
+{
+	margin:14px;
+	position:relative;
+	height:96%;
+	min-height: 640px;
+}
+.control
+{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	margin-bottom:20px;
+	
+}
+.controlTitle
+{
+    font-family: Segoe UI, Tahoma, Verdana, sans-serif;
+    font-weight: 500;
+
+    color: white;
+    font-weight: 600;
+	font-size:20px;
+	margin-bottom:10px;
+	text-align:center;
+}
+#selectSearchBox
+{
+    float:right;
+    right:460px;
+    width:200px;
+    text-align:right;
+    top:0px;
+    position: absolute;
+
+}
+#selectTypeBox
+{
+    float:right;
+
+    width:200px;
+    right:250px;
+    top:0px;
+    position: absolute;
+
+}
+.dropDown
+{
+    height:28px;
+    border:none;
+}
+select {
+    display: inline-block;
+    padding: 4px 30px 3px 5px;
+    margin: 0;
+    line-height: 1.2;
+
+    -webkit-appearance: none;
+    overflow: hidden;
+    color:black;
+    width:150px;
+
+    background: url("../img/arrowDown.png") no-repeat right #fff;
+    border: 1px solid #ccc;
+}
+
+
+.searchBox
+{
+
+	position:absolute;
+	padding:0px;
+
+	width:290px;
+    text-align: left;
+}
+
+.search .searchBox
+{
+    right:0px;
+    top:0px;
+}
+
+.searchField
+{
+	width: 235px;
+	border:none;
+	height:28px;
+    padding: 0px 2px;
+
+	position: relative;
+	line-height:22px;	
+}
+.loginField
+{
+	width: 100%;
+	border:none;
+	height:28px;	
+	position: relative;
+	line-height:22px;	
+	margin-top:5px;
+}
+.searchButton
+{
+	height: 25px;
+	position: absolute;
+	right: 20px;
+	width: 25px;
+	background-image:url("../img/search.png");
+	background-color: transparent;
+	background-repeat:no-repeat;
+	background-position: 50% 50%;	
+	border: none;	
+	top:0px;
+}
+
+.searchButton:active
+{
+	margin-top:1px;
+}
+.controlButton
+{
+	border:none;
+	width:100%;
+	height:30px;
+	
+	font-family: Segoe UI, Tahoma, Verdana, sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color:white;
+	background:#004382;
+	margin: 3px 0px;
+}
+
+.reloadButton
+{
+
+    border:none;
+    width:30px;
+    height:30px;
+    background-image:url("../img/reloadButton.png");
+    background-color:transparent;
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+    float:right;
+}
+.reloadButton:active
+{
+    margin-top:2px;
+}
+
+.controlButton:active
+{	
+	border:1px solid white;
+}
+.controlButton:hover
+{
+	background:#00519d;
+}
+#registerDBScreen
+{
+    height:500px;
+    width:800px;
+    position:fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -250px;
+    margin-left: -400px;
+    background: #0085d2;
+    z-index:4000;
+    padding:10px;
+}
+.panel
+{	
+	padding:10px;
+	background: #005e9a;
+}
+.textColumn
+{
+	text-align:left;
+	
+}
+.horizontalSeparator
+{
+	position: absolute;
+	left:0px;
+	width: 100%;
+	height:2px;
+	background:	#0059ab;
+	margin: 15px 0;
+}
+.controlSpacer
+{
+	height:35px;
+}
+#resultBox
+{
+	margin-top:50px;
+	max-height:200px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+.searchResult
+{
+	text-align:left;
+	background:#0059ab;
+	margin:2px 0;
+	
+	padding: 5px;
+}
+
+.searchResult:hover
+{
+	background:#2b83d5;
+}
+#maximizeButton
+{
+	height: 30px;
+	position: absolute;
+	right: 0px;	
+	width: 30px;
+	background-image:url("../img/maximizeButton.png");
+	background-color: transparent;
+	background-repeat:no-repeat;
+	background-position: 50% 50%;	
+	border: none;	
+	top:0px;
+	margin:5px;
+	z-index:100;
+}
+#maximizeButton:hover
+{
+	width:28px;
+	height:28px;
+	background-size: cover;
+	margin:6px;
+	
+}
+
+#helpButton
+{
+    height: 30px;
+    position: fixed;
+    right: 0px;
+    width: 30px;
+    background-image:url("../img/helpButton.png");
+    background-color: transparent;
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+    border: none;
+    bottom:0px;
+    margin:8px;
+    z-index:100;
+}
+#helpButton:hover
+{
+    width:28px;
+    height:28px;
+    background-size: cover;
+    margin:9px;
+
+}
+
+#legend
+{
+    position:fixed;
+    height: 707px;
+    width: 500px;
+    padding:8px;
+    border:1px solid gray;
+    background-image:url("../img/legend.png");
+    right:50px;
+    bottom:50px;
+
+    z-index:99;
+}
+html
+{
+	/*background: #0073de;*/
+}
+
+#viewContainer
+{
+	margin-left:300px;	
+	position:relative;
+	
+}
+#view ,#welcomeScreen
+{ 
+	background-color: #ffffff;
+	width:100%;
+	display:block;
+	position:absolute;
+	
+	
+	/*background: url("testGraphWithControls.svg");*/	
+}
+#modelTitle
+{
+    float:left;
+    font-weight:500;
+    font-size:18px;
+}
+#svg
+{
+	width:100%;
+	height:100%;
+	display:block;
+
+	position:fixed;
+	
+	
+}
+#svgControlElements
+{
+	height: 300px;
+	position: absolute;
+	left: 0px;	
+	width: 100px;
+	
+	background: transparent;
+	top:0px;
+	margin:5px;
+	
+	z-index:100;
+}
+.row_40
+{
+	display:block;
+	height:40px;
+	line-height:40px;
+}
+object
+{
+	display:block;
+	width:100%;
+	height:100%;	
+	margin-left:auto;
+	margin-right:auto;
+	position:absolute;
+}
+svg{
+	display:block; 
+	position:absolute;
+    width:100%; 
+	height:100%; 
+	background:transparent;
+	
+	
+}
+.colorSelector {
+	position: relative;
+	width: 36px;
+	height: 36px;
+	background: url(../images/select2.png);
+	float:left;
+	margin-right:5px;
+}
+.colorSelector div {
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 30px;
+	height: 30px;
+	background: url(../images/select2.png) center;
+}
+
+.opentip-container
+{
+    font-family: Segoe UI, Tahoma, Verdana, sans-serif;
+}

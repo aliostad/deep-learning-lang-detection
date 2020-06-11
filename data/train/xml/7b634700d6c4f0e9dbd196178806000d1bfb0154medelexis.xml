@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service:service category="feature" id="ch.elexis.support.dbshaker" name="Elexis DB-Shaker" provider="weirich@elexis.ch" type="Zusätze / Support" version="1.0.0" xmlns:service="http://www.medelexis.ch/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.medelexis.ch/services ../medelexis-commons/rsc/service.xsd ">
+  <service:conditions>
+  	<service:roles>
+  		<service:role></service:role>
+  	</service:roles>
+  </service:conditions>
+  <service:description>Datenbankanonymisierung (ACHTUNG: irreversibel!)</service:description>
+</service:service>

@@ -1,0 +1,47 @@
+<messages>
+	<message> 
+		<code>123 </code>
+		<type> type1</type>
+		<data> message x </data>
+	</message>
+	<message> 
+		<code>243 </code>
+		<type> type12</type>
+		<data> message y </data>
+	</message>
+	<message> 
+		<code>345 </code>
+		<type> type11</type>
+		<data> message A </data>
+	</message>
+	<message> 
+		<code>652 </code>
+		<type> type13</type>
+		<data> message B </data>
+	</message>
+	<message> 
+		<code>831 </code>
+		<type> type8</type>
+		<data> message C </data>
+	</message>
+	<message> 
+		<code>983 </code>
+		<type> type17</type>
+		<data> message D </data>
+	</message>
+	<message> 
+		<code>836 </code>
+		<type> type14</type>
+		<data> message E </data>
+	</message>
+	<message> 
+		<code>909 </code>
+		<type> type62</type>
+		<data> message F </data>
+	</message>
+	<message> 
+		<code>123 </code>
+		<type> type9</type>
+		<data> message G </data>
+	</message>
+</messages>

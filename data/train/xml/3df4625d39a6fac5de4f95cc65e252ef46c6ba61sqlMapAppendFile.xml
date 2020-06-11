@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.seoul.his.acc.resol.dao.AppendFileDAO">
+<cache flushInterval="86400000" eviction="LRU" />
+
+    <!-- 지불내역 상세 조회 -->
+    <select id="selectAppendFileDetail" flushCache="false"  useCache="true" resultType="AppendFileBean">
+        SELECT
+            SEQ
+            ,FILE_SAVE_LOC
+            ,FILE_SIZE
+            ,FILE_SAVE_NAME
+            ,RESOL_NO
+            ,SLIP_NO
+        FROM
+            AR_APPEND_FILE
+        WHERE  
+            RESOL_NO = #{resolNo}
+ </select>
+</mapper>

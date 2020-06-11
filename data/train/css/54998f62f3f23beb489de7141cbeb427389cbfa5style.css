@@ -1,0 +1,31 @@
+<?wsx5 document.write("#" + currentObject.id) ?> .post_title {
+	display: block;
+	font-family: '<?wsx5 document.write(parameters.title_font.family) ?>';
+	font-size: <?wsx5 document.write(parameters.title_font.size) ?>pt;
+	text-align: <?wsx5 document.write(parameters.title_alignment.value) ?>;
+	color: <?wsx5 document.write(parameters.title_color.value) ?>;
+	font-style: <?wsx5 document.write(parameters.title_font.italic ? "italic" : "normal") ?>;
+	font-weight: <?wsx5 document.write(parameters.title_font.bold ? "bold" : "normal") ?>;
+	text-decoration: <?wsx5 document.write(parameters.title_underline.checked ? "underline" : "none") ?>;
+	margin-bottom: 5px;
+}
+
+<?wsx5 document.write("#" + currentObject.id) ?> .post_body {
+	font-family: '<?wsx5 document.write(parameters.text_font.family) ?>';
+	font-size: <?wsx5 document.write(parameters.text_font.size) ?>pt;
+	text-align: <?wsx5 document.write(parameters.text_alignment.value) ?>;
+	color: <?wsx5 document.write(parameters.text_color.value) ?>;
+	font-style: <?wsx5 document.write(parameters.text_font.italic ? "italic" : "normal") ?>;
+	font-weight: <?wsx5 document.write(parameters.text_font.bold ? "bold" : "normal") ?>;
+	margin-bottom: 5px;
+}
+
+<?wsx5 document.write("#" + currentObject.id) ?> .post_data {
+	font-size: <?wsx5 document.write(parameters.text_font.size - 1) ?>pt;
+	font-family: '<?wsx5 document.write(parameters.text_font.family) ?>';
+	text-align: <?wsx5 document.write(parameters.text_alignment.value) ?>;
+	color: <?wsx5 document.write(parameters.text_color.value) ?>;
+	font-style: <?wsx5 document.write(parameters.text_font.italic ? "italic" : "normal") ?>;
+	font-weight: <?wsx5 document.write(parameters.text_font.bold ? "bold" : "normal") ?>;
+	margin-bottom: 8px;
+}

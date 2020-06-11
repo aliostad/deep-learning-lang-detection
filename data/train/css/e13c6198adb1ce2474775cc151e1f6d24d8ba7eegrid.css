@@ -1,0 +1,105 @@
+/* --------------------------------------------------------------
+
+   grid.css
+
+-------------------------------------------------------------- */
+
+.span-5, .span-10, .span-15, .span-20, .span-25, .span-30, .span-35, 
+.span-40, .span-45, .span-50, .span-55, .span-60, .span-65, .span-70, 
+.span-75, .span-80, .span-85, .span-90, .span-95, .span-100, 
+.span-18, .span-82, .span-16_6, .span-33,
+.span-50-left, .span-50-right
+ { float: left; padding: 0; margin: 0;}
+
+.span-5 { width: 5%; }
+.span-10 { width: 10%; }
+.span-15 { width: 15%; }
+.span-20 { width: 20%; }
+.span-25 { width: 25%; }
+.span-30 { width: 30%; }
+.span-33 { width: 33%; }
+.span-35 { width: 35%; }
+.span-40 { width: 40%; }
+.span-45 { width: 45%; }
+.span-50 { width: 50%; }
+.span-55 { width: 55%; }
+.span-60 { width: 60%; }
+.span-65 { width: 65%; }
+.span-70 { width: 70%; }
+.span-75 { width: 75%; }
+.span-80 { width: 80%; }
+.span-85 { width: 85%; }
+.span-90 { width: 90%; }
+.span-95 { width: 95%; }
+.span-100 { width: 100%; }
+
+.span-18 { width: 18%; }
+.span-82 { width: 82%; }
+
+.span-16_6 {width: 16.6%}
+
+.span-50-left { width: 47.5%; margin-right: 2.5%; }
+.span-50-right { width: 47.5%; margin-left: 2.5%; }
+
+.span-33 {width: 33%}
+
+
+.prepend-5 { padding-left: 5%; }
+.prepend-10 { padding-left: 10%; }
+.prepend-15 { padding-left: 15%; }
+.prepend-20 { padding-left: 20%; }
+.prepend-25 { padding-left: 25%; }
+.prepend-30 { padding-left: 30%; }
+.prepend-35 { padding-left: 35%; }
+.prepend-40 { padding-left: 40%; }
+.prepend-45 { padding-left: 45%; }
+.prepend-50 { padding-left: 50%; }
+.prepend-55 { padding-left: 55%; }
+.prepend-60 { padding-left: 60%; }
+.prepend-65 { padding-left: 65%; }
+.prepend-70 { padding-left: 70%; }
+.prepend-75 { padding-left: 75%; }
+.prepend-80 { padding-left: 80%; }
+.prepend-85 { padding-left: 85%; }
+.prepend-90 { padding-left: 90%; }
+.prepend-95 { padding-left: 95%; }
+
+
+.append-5 { padding-right: 5%; }
+.append-10 { padding-right: 10%; }
+.append-15 { padding-right: 15%; }
+.append-20 { padding-right: 20%; }
+.append-25 { padding-right: 25%; }
+.append-30 { padding-right: 30%; }
+.append-35 { padding-right: 35%; }
+.append-40 { padding-right: 40%; }
+.append-45 { padding-right: 45%; }
+.append-50 { padding-right: 50%; }
+.append-55 { padding-right: 55%; }
+.append-60 { padding-right: 60%; }
+.append-65 { padding-right: 65%; }
+.append-70 { padding-right: 70%; }
+.append-75 { padding-right: 75%; }
+.append-80 { padding-right: 80%; }
+.append-85 { padding-right: 85%; }
+.append-90 { padding-right: 90%; }
+.append-95 { padding-right: 95%; }
+
+/* Clearing floats without extra markup
+   Based on How To Clear Floats Without Structural Markup by PiE
+   [http://www.positioniseverything.net/easyclearing.html] */
+
+.clearfix:after, .container:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    overflow:hidden;
+}
+.clearfix, .container {display: block;}
+
+/* Regular clearing
+   apply to column that should drop below previous ones. */
+
+.clear { clear:both; }

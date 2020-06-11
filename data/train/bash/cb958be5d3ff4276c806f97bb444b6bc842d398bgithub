@@ -1,0 +1,70 @@
+#!/bin/bash
+# for when you have a sub-part of a repo that you want to publish to github
+# but you don't want to submodule it
+repo_cfg="${HOME}/.github"
+repo_find() { grep "$1" $repo_cfg | awk '{ print $2 }'; }
+root_find() { grep "$1" $repo_cfg | awk '{ print $1 }'; }
+repo_add() { echo "${1} ${2}" >> $repo_cfg; }
+
+tmpdir="${HOME}/tmp/git-repos"
+test -d $tmpdir || mkdir $tmpdir
+die() { echo "$@"; exit 1; }
+
+repo_init() {
+	dirent="$1"
+	repo="$2"
+
+	tmpdir="${tmpdir}$(basename $dirent)"
+
+	grep -qs $repo $repo_cfg && { 
+		die "repo already exists: $repo"
+	}
+	repo_add ${PWD}/$dirent $repo
+
+	! git clone $repo $tmpdir 2>&1 | grep -qs 'empty repository'  && { 
+		die "remote repo already exists: $repo"
+	}
+	cp -r $dirent $tmpdir
+	(
+		cd $tmpdir
+		git init 
+		git add *
+		git commit -m initial -a
+		git push -u origin master
+	)
+	exit 0
+}
+
+repo_push() {
+	dirent="$1"
+	repo=$( repo_find $PWD )
+	root=$( root_find $PWD )
+	rel=${PWD##$root}
+	[[ ${#PWD} -lt ${#root} ]] && rel="."
+
+	tmpdir="${tmpdir}$(basename $dirent)"
+
+	[[ -d $tmpdir ]] || git clone -q $repo $tmpdir
+	cp -r $dirent ${tmpdir}/${rel}/.
+	( 
+		cd $tmpdir
+		git add .
+		git commit -m 'trivial change' -a
+		git push -q origin master
+	)
+}
+
+[[ "$1" = "" ]] && { #n00b
+cat<<EOF
+To init a remote repo:
+	$0 DIR github_repo 
+To push to the repo
+	$0 push FILE
+To pull from the repo
+	$0 pull 
+EOF
+}
+
+[[ -e "$1" && "$2" != "" ]] && { repo_init $1 $2 ; exit 0; }
+[[ -e "$1" ]] && { repo_push $1; exit 0; }
+echo "lol. wut?"

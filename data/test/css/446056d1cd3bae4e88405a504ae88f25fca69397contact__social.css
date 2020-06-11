@@ -1,0 +1,57 @@
+.contact__social
+{
+    display: inline-block;
+
+    width: 19px;
+    height: 19px;
+    margin-right: 6px;
+
+    text-indent: -1000%;
+
+    background: url(contact__social.png);
+}
+
+.contact__social:last-child
+{
+    margin-right: 0;
+}
+
+.contact__social_service_facebook:hover
+{
+    background-position: 0 -21px;
+}
+
+.contact__social_service_facebook:active
+{
+    background-position: 0 -42px;
+}
+
+.contact__social_service_vkontakte
+{
+    background-position: -21px 0;
+}
+
+.contact__social_service_vkontakte:hover
+{
+    background-position: -21px -21px;
+}
+
+.contact__social_service_vkontakte:active
+{
+    background-position: -21px -42px;
+}
+
+.contact__social_service_twitter
+{
+    background-position: -42px 0;
+}
+
+.contact__social_service_twitter:hover
+{
+    background-position: -42px -21px;
+}
+
+.contact__social_service_twitter:active
+{
+    background-position: -42px -42px;
+}

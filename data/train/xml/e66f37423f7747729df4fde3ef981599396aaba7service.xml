@@ -1,0 +1,12 @@
+<service auto-start="false">
+    <name>WaitingListService</name>
+    <public-id>ns://www.cubeia.com/wlist/service</public-id>
+    <contract>com.cubeia.firebase.service.wlist.FilteredJoinServiceContract</contract>
+    <service>com.cubeia.firebase.service.wlist.FilteredJoinServiceImpl</service>
+    <description />
+    <exported />
+    <dependencies>
+        <contract>com.cubeia.firebase.server.service.systemstate.SystemStateServiceContract</contract>
+        <contract>com.cubeia.firebase.server.service.lobby.LobbyServiceContract</contract>
+    </dependencies>
+</service>

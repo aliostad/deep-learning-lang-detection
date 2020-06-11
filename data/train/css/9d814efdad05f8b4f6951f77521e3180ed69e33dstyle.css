@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+.load-results,
+.search-form {
+  margin-top: 10px; }
+
+.load-results {
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  height: auto;
+  padding: 10px; }
+  .load-results > div .item {
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    width: 120px;
+    height: auto;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    min-height: 250px;
+    text-align: center; }
+    .load-results > div .item.album {
+      border-color: #D80000; }
+    .load-results > div .item.artist {
+      border-color: #0000CC; }
+    .load-results > div .item.track {
+      border-color: #FF9900; }
+    .load-results > div .item span {
+      font-family: "Open Sans", sans-serif;
+      color: #555555; }
+
+/*# sourceMappingURL=style.css.map */

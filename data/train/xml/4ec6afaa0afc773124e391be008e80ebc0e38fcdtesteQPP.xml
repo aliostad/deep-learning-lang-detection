@@ -1,0 +1,10 @@
+<save arq="/home/adriano/Ubuntu One/workspace/VPE-qGM_noGraphs/src/processes/testeQPP.xml" pos="">
+<process repr="env" tipo="seq" pos="">
+<process repr="terminicio" x="1084" y="1079" cor="BLACK"></process>
+<process repr="env" tipo="paralelo" pos="">
+<process repr="partquantum" qubits= "3" acao= "H,H,H" start_pos= "0" end_pos= "3" parametro= "" x="1157" y="1043.0" cor="BLACK"></process>
+<process repr="partquantum" qubits= "3" acao= "H,H,H" start_pos= "4" end_pos= "7" parametro= "" x="1157" y="1114.0" cor="BLACK"></process>
+</process>
+<process repr="termfim" x="1232" y="1079" cor="BLACK"></process>
+</process>
+</save>

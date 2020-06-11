@@ -1,0 +1,31 @@
+form {
+	width: 300px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	margin: 50px auto;
+}
+form > div {
+	margin-bottom: 10px;
+}
+input[type="text"] {
+	border: 1px solid orange;
+	padding: 5px;
+	background: #fff;
+	border-radius: 5px;
+}
+input[type="text"]:-moz-read-only {
+	border-color: #ccc;
+}
+input[type="text"]:read-only {
+	border-color: #ccc;
+}
+input[type="text"]:-moz-read-write {
+	border: 2px solid red;
+}
+/*input[type="text"]? {
+	border: 2px solid red;
+}*/
+
+input[type="text"]:read-write {
+	border: 2px solid red;
+}

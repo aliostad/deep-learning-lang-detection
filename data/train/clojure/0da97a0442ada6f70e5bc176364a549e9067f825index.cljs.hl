@@ -1,0 +1,421 @@
+(ns homepage.reports.index
+      (:require
+        [homepage.layout :refer [secondary-header] :as layout]
+        [homepage.image :as image]))
+
+(def page-header {:header "Reports & Infographics"})
+
+(def reports-list
+  [
+    {
+    :title "5 steps to defining your app"
+    :detail "Get your kit for building a really great app!"
+    :image "http://cdn2.hubspot.net/hub/511335/hubfs/Research_download_pages/5-step-deck-prev.png"
+    :link "http://info.exiconglobal.com/download-template-5-steps-to-defining-your-app"
+    }
+
+    {
+    :title "Empowering Education through technology "
+    :detail "Education is being changed from within by mobile"
+    :image "http://cdn2.hubspot.net/hubfs/511335/Research_download_pages/Education-and-Apps-prev.png"
+    :link "http://info.exiconglobal.com/download-our-report-empowering-education-through-tech"
+    }
+
+   {
+    :title "Options for managing your apps "
+    :detail "The role of mobile asset management - you know you should be doing more to get better returns."
+    :image "http://info.exiconglobal.com/hubfs/Research_download_pages/Options-for-managing-your-apps-prev.png"
+    :link "http://info.exiconglobal.com/download-options-for-managing-your-apps"
+    }
+
+   {
+    :title "The costs & risks of managing apps "
+    :detail "Your company has embraced the need to be mobile. Apps have been, and are being, built."
+    :image "http://info.exiconglobal.com/hubfs/Research_download_pages/Costs_of_Managing_your_own_apps.png"
+    :link "http://info.exiconglobal.com/download-the-costs-risks-of-managing-apps"
+    }
+
+   {
+    :title "The Mobile Relationship Management 'Pipe' "
+    :detail "Step-by-Step, getting mobile right."
+    :image "/images/reports/how-to-manage-your-apps-thumb.png"
+    :link "http://info.exiconglobal.com/download-free-infographic-on-mobile-relationship-management-pipe"
+    }
+
+   {
+    :title "China's App Addicts"
+    :detail "Todays Chinese urbanite does everything on their phone and it tells in the numbers."
+    :image "/images/reports/china-s-addiction-to-apps.png"
+    :link "http://info.exiconglobal.com/download-our-china-app-addict-infographic"
+    }
+
+   {
+    :title "App Glossary"
+    :detail "The App Glossary of key terms to know when building an app"
+    :image "/images/reports/glossary-preview.png"
+    :link "http://info.exiconglobal.com/download-the-app-glossary-key-terms-for-an-appbuilder"
+    }
+
+   {
+    :title "The Top Android Appstores and Marketplaces Globally"
+    :detail "Get noticed on the top Android Appstores Globally"
+    :image "http://cdn2.hubspot.net/hubfs/511335/Research_download_pages/Preview-top-android-marketplaces-globally.png"
+    :link "http://info.exiconglobal.com/the-top-android-app-marketplaces-globally"
+    }
+
+   {
+    :title "This is how you create a great app!"
+    :detail "What should you do in order to create your best app yet?"
+    :image "http://info.exiconglobal.com/hubfs/Research_download_pages/2-key-steps-preview.png"
+    :link "http://info.exiconglobal.com/download-infographic-2-key-steps-to-creating-a-great-app"
+    }
+
+   {
+    :title "Checklist Build an App"
+    :detail "We've put together a starter-level checklist to help you get your mobile app project started and get you on the way to becoming mobile app experts."
+    :image "/images/reports/preview-db-checklist.png"
+    :link "http://info.exiconglobal.com/download-your-building-an-app-checklist"
+    }
+
+   {
+    :title "Checklist Managing an App"
+    :detail "This checklist follows our Build, Manage and Promote apps flow and picks up where the \"Building an App\" checklist left off"
+    :image "/images/reports/manage-a-mobie-app-checklist.jpg"
+    :link "http://info.exiconglobal.com/download-the-managing-a-mobile-app-checklist"
+    }
+
+   {
+    :title "Increase your App Downloads Ebook"
+    :detail "A successful app is about functionality and discoverability; great design is not enough. Get to know more about the importance of being where your users can find you."
+    :image "/images/reports/ebook-1.png"
+    :link "http://info.exiconglobal.com/download-e-book-increasing-app-downloads-part-1?"
+    }
+
+   {
+    :title "Mobile Insurance"
+    :detail "The Do's and Don'ts of Mobile Insurance Apps, including real-world examples."
+    :image "/images/reports/insurance-mobile.png"
+    :link "http://info.exiconglobal.com/download-insurance-and-mobile-app-report"
+    }
+
+   {
+    :title "The Business Revenue of Building an Apple Watch App"
+    :detail "The Apple Watch - Apple’s changing the world. Apple’s changed the way we use apps. Now its changing the way we use watches."
+    :image "/images/reports/What-is-the-Business-Revenue-of-Building-an-Apple-Watch-App.png"
+    :link "http://info.exiconglobal.com/download-infographic-business-revenue-of-building-an-apple-watch-app"
+    }
+
+   {
+    :title "Once you've built your app"
+    :detail "With more than 3 million apps on the top 5 international app stores, you want to make sure your app get’s discovered, and the users you're targeting know your app."
+    :image "/images/reports/Once-You-Built-Your-App.png"
+    :link "http://info.exiconglobal.com/download-infograhic-once-youve-built-your-app"
+    }
+
+   {
+    :title "Enterprise apps are exploding"
+    :detail "Enterprises have had to evolve in the face of a world gone mobile. Get to know more about the next wave in enterprise apps."
+    :image "/images/reports/Enterprise-Apps-Exploding.png"
+    :link "http://info.exiconglobal.com/enterprise-apps-are-exploding"
+    }
+
+   {
+    :title "If building an app was like building a house"
+    :detail "Spending the time to define just what your app should do is just as important as the thinking needed when you build a house. Check out the infographic to see how similar those considerations can be."
+    :image "/images/reports/Building-An-App.png"
+    :link "http://info.exiconglobal.com/if-building-app-was-like-building-a-house"
+    }
+
+   {
+    :title "Winning In mobile"
+    :detail "Here's what you need to know."
+    :image "/images/reports/Winning-In-Mobile.png"
+    :link "http://info.exiconglobal.com/winning-in-mobile"
+    }
+
+   ; {
+   ;  :title "The number of apps is growing"
+   ;  :detail "Have you noticed the increased number of apps showing up in the app stores? How much time are you spending inside mobile apps every day? Check out the infographic. Where do you fit in these facts?"
+   ;  :image "/images/reports/Number-Of-Apps.png"
+   ;  :link "/report-download/number-of-apps"
+   ;  }
+
+   {
+    :title "How to improve app performance?"
+    :detail "You’ve probably noticed that the app stores are getting fuller. Mobile app usage is increasing with big numbers every year. How do you make sure you’ll get noticed on these app stores? Check out this infographic."
+    :image "/images/reports/How-To-Improve.png"
+    :link "http://info.exiconglobal.com/how-to-improve-app-performance"
+    }
+
+   {
+    :title "Are you tracking your apps properly?"
+    :detail "How are you keeping an eye on whats happening without losing your mind? How many sources do you have to check to see how your app is doing? Check out the infographic."
+    :image "/images/reports/Are-You-Tracking.png"
+    :link "http://info.exiconglobal.com/are-you-tracking-your-apps-properly"
+    }
+
+   ; {
+   ;  :title "Mobile Ad Spend"
+   ;  :detail "Why should your brand invest in Mobile Marketing in 2014? Check out the Infographic."
+   ;  :image "/images/reports/Mobile-Ad-Spend.png"
+   ;  :link "/report-download/mobile-ad-spend"
+   ;  }
+
+   {
+    :title "The Power of APIs"
+    :detail "Everyone is talking about data but a lot of people think about data in a “straight line” going from where it is generated to where it is recorded."
+    :image "/images/reports/The-Power-Of-APIs.png"
+    :link "http://info.exiconglobal.com/the-power-of-apis"
+    }
+
+   ;{
+   ; :title "Mobile Ecosystem"
+   ; :detail "App Creation is a complicated business because there are so many different parties involved."
+   ; :image "/images/reports/Mobile-Ecosystem.png"
+   ; :link "http://info.exiconglobal.com/download-mobile-ecosystem-infographic"
+   ; }
+
+   {
+    :title "11 Signs of a Poorly Planned App"
+    :detail "It's sad to see apps sitting alone in an app store, with only a few dozen downloads to their name. We know that with a little bit of help, they could be so much better."
+    :image "/images/reports/Eleven-Reasons.png"
+    :link "http://info.exiconglobal.com/download-expert-guide-11-signs-of-a-poorly-planned-app"
+    }
+
+   {
+    :title "The Internet of Things"
+    :detail "From a pipe dream in 1991 to a $19 trillion dollar industry in the near future, the world continues to merge itself into the Internet of Things."
+    :image "/images/reports/The-Evolution-of-Iot.png"
+    :link "http://info.exiconglobal.com/the-internet-of-things"
+    }
+
+   {
+    :title "The LTE Direct Discovery Opportunity"
+    :detail "This Exicon 9 page report highlights both conclusions and discussions during the Qualcomm Samsung workshop in Santa Clara in November 2014."
+    :image "/images/reports/The-LTE-Direct-Discovery-Opportunity.png"
+    :link "http://info.exiconglobal.com/the-lte-direct-discovery-opportunity"
+    }
+
+   {
+    :title "Wearables & APIs"
+    :detail "Get insights to the expanding wearables market and understand the impact of APIs."
+    :image "http://info.exiconglobal.com/hubfs/Research_download_pages/Wearables-API.png"
+    :link "http://info.exiconglobal.com/wearables-landscape"
+    }
+
+   ; {
+   ;  :title "Who Uses Which Social Channels For Doing What"
+   ;  :detail "Check out the 'Who uses which social channels for doing what' infographic."
+   ;  :image "/images/reports/Who-Uses-Which-Social-Channels-For-Doing-What.png"
+   ;  :link "/report-download/who-uses-which-social-channels-for-doing-what"
+   ;  }
+
+  ; {
+  ;  :title "If Building An App Was Like Building A House"
+  ;  :detail "Check out the 'If buidling an app was like building a house' infographic."
+  ;  :image "/images/reports/If-Building-An-App-Was-Like-Building-A-House.png"
+  ;  :link "http://info.exiconglobal.com/if-building-app-was-like-building-a-house"
+  ;  }
+
+   {
+    :title "Future Travel Experience"
+    :detail "'Apps are for loyalty, web is for acquisition.' Travel apps have one of the highest user retention rates of any category of app, with 50% of users retaining apps after 90 days..."
+    :image "/images/reports/Future-Travel-Experience.png"
+    :link "http://info.exiconglobal.com/future-travel-experience"
+    }
+
+   {
+    :title "The True Connectivity of Mobile"
+    :detail "Today connectivity is about how everything we do on mobile is powered by someone else's data..."
+    :image "/images/reports/The-True-Connectivity-of-Mobile.png"
+    :link "http://info.exiconglobal.com/the-true-connectivity-of-mobile"
+    }
+
+   ; {
+   ;  :title "Why Successful Marketer Thinks Mobile Marketing First"
+   ;  :detail "The ongoing shift to mobile channels is top of mind for marketers or CMOs, as there will be estimated nearly 1.4 million mobile devices per capita as well as the mobile social ..."
+   ;  :image "/images/reports/Why-Successful-Marketer-Thinks-Mobile-Marketing-First.png"
+   ;  :link "/report-download/why-successful-marketer-thinks-mobile-marketing-first"
+   ;  }
+
+   ; {
+   ;  :title "Marketing & Mobile"
+   ;  :detail "Check out the mobile marketing presentation for more details on how it's all about the app and that the web is dead."
+   ;  :image "/images/reports/Marketing-and-Mobile.png"
+   ;  :link "/report-download/marketing-and-mobile"
+   ;  }
+
+   ; {
+   ;  :title "Mobility Roadmap - Define Phase"
+   ;  :detail "10 steps to creating an app your users will love. Understand what is going on in your industry and with your competitors as well as learning how parallel industries are succeeding."
+   ;  :image "/images/reports/Mobility-Define-Phase.png"
+   ;  :link "/report-download/mobility-define-phase"
+   ;  }
+
+   ; {
+   ;  :title "What's working with the big brands"
+   ;  :detail "What are the 5 core benefits enterprises offer to bring consumer value? Today it's all about the app. It's no longer the mobile business, it is businesses going mobile."
+   ;  :image "/images/reports/Its-All-About-the-App.png"
+   ;  :link "/report-download/its-all-about-the-app"
+   ;  }
+
+   {
+    :title "6 key challenges when entering mobile"
+    :detail "Mobile is the remote control to your lifestyle and as technology evolves so does the ability of mobile to do more. Your app is, therefore, a continually evolving proposition..."
+    :image "http://info.exiconglobal.com/hubfs/Research_download_pages/Screen_Shot_2015-06-18_at_9.56.39_am.png"
+    :link "http://info.exiconglobal.com/download-whitepaper-6-key-challenges-when-entering-mobile"
+    }
+
+   ; {
+    ; :title "Mobile & Hotel"
+    ; :detail "What's happening in the Hotel industry? Snapshot of the key metrics for going mobile and how industry players are now heading towards digitization..."
+    ; :image "/images/reports/Mobile-and-Hotel.png"
+    ; :link "/report-download/mobile-and-hotel"
+    ; }
+
+   ; {
+   ;  :title "How mobile can accelerate your business"
+   ;  :detail "Find out what mobile could be doing for your business. Get some of the statistics, key trends and how businesses are looking at how to go beyond the app..."
+   ;  :image "/images/reports/Embrace-or-die.png"
+   ;  :link "/report-download/embrace-or-die"
+   ;  }
+
+   ; {
+   ;  :title "Life of a Start Up Presentation"
+   ;  :detail "Exicon COO and Founder, Cat Purvis gave a presentation at HKUST to executives on the world number one Kellogg EMBA programme...Hotel Industry Disruption"
+   ;  :image "/images/reports/Lifeofastartup.png"
+   ;  :link "/report-download/life-of-a-start-up"
+   ;  }
+
+   ; {
+   ;  :title "Hotel Industry Disruption"
+   ;  :detail "What's happening in the Hotel industry? Snapshot on the key metrics..."
+   ;  :image "/images/reports/Hotel.png"
+   ;  :link "/report-download/hotel-industry-disruption"
+   ;  }
+
+   ; {
+   ;  :title "Going Mobile at World Travel Market 2012"
+   ;  :detail "As PC sales fall, smartphone sales continue to rocket with Android taking the lions share. Is mobile working for your organization or are you in danger of being left behind?"
+   ;  :image "/images/reports/GoingMobile.png"
+   ;  :link "/report-download/going-mobile"
+   ;  }
+
+   ; {
+   ;  :title "Mobile Industry in China"
+   ;  :detail "Still undecided whether to enter the China market? This report will give you some key insights and metrics into this huge country from GDP to Mobile Operator subscribers - a great starting point."
+   ;  :image "/images/reports/Lost-in-Translation-Mobile-Industry-in-China.png"
+   ;  :link "/report-download/mobile-industry-in-china"
+   ;  }
+
+   ; {
+   ;  :title "Software as a Service"
+   ;  :detail "The SaaS industry is about to go under a massive shift driven by cloud and mobility with a strong focus on mobile..."
+   ;  :image "/images/reports/saas2.png"
+   ;  :link "/report-download/saas"
+   ;  }
+
+   ; {
+   ;  :title "Olympics"
+   ;  :detail "Check out our new 31 page report on mobile apps for London Olympics 2012!"
+   ;  :image "/images/reports/Olympics1.png"
+   ;  :link "/report-download/olympics2012"
+   ;  }
+
+   ; {
+   ;  :title "FMCG"
+   ;  :detail "Opportunities galore from games, to online shopping, mobile barcode campaigns and more. See what Kraft, Pampers, Tide, Red Bull and Godiva are up to."
+   ;  :image "/images/reports/FMCG.png"
+   ;  :link "/report-download/fmcg"
+   ;  }
+
+   ; {
+   ;  :title "Cosmetics"
+   ;  :detail "This industry is personalizing beauty with \"how-to-guides\" from Estee Lauder, build your own perfume, Dr Brandt dermalogical advice and in store shopping aids."
+   ;  :image "/images/reports/Cosmetics.png"
+   ;  :link "/report-download/cosmetics"
+   ;  }
+
+   ; {
+   ;  :title "Hospitality"
+   ;  :detail "The Travel & Leisure Industry gets 25% conversion rates, upsells impulse purchases and provides relevant information that inspires travel. Customers get mobile check ins, direct bookings and rewards."
+   ;  :image "/images/reports/Hospitality.png"
+   ;  :link "/report-download/hospitality"
+   ;  }
+
+   ; {
+   ;  :title "Sportswear"
+   ;  :detail "Track your speed and map your route with Nike, snow reports with Northface and find the perfect lense on your ipad with Oakley."
+   ;  :image "/images/reports/Sportswear.png"
+   ;  :link "/report-download/sportswear"
+   ;  }
+
+   ; {
+   ;  :title "Alcohol"
+   ;  :detail "Despite highly regulated marketing there are many ways that this industry can communicate with its customers. Using Augmented Reality, GPS trackers..."
+   ;  :image "/images/reports/Alcohol.png"
+   ;  :link "/report-download/alcohol"
+   ;  }
+
+   ; {
+   ;  :title "Finance"
+   ;  :detail "Keep track of your investments with Bloomberg, Paypal bump app payments and locate an ATM with augmented reality technology."
+   ;  :image "/images/reports/Finance.png"
+   ;  :link "/report-download/finance"
+   ;  }
+
+   ; {
+   ;  :title "Airline"
+   ;  :detail "Check in on your mobile with Cathay Pacific, board with a QR code and manage your fear of flying with Virgin Atlantic all whilst tracking your flight."
+   ;  :image "/images/reports/Airline.png"
+   ;  :link "/report-download/air-line"
+   ;  }
+
+   ; {
+   ;  :title "Luxury Fashion"
+   ;  :detail "Designer labels such as Gucci, Louis Vuitton and DVF lead the way with sneak previews, exclusive app offers but there is room in this industry for more big hitters."
+   ;  :image "/images/reports/Luxury.png"
+   ;  :link "/report-download/luxury-fashion"
+   ;  }
+
+   ; {
+   ;  :title "Automotive"
+   ;  :detail "From location aware and integrated apps, to motorsport games and “Top Trump” style stats, the industry has been leading the way in consumer engagement. Read more..."
+   ;  :image "/images/reports/Automotive.png"
+   ;  :link "/report-download/automotive"
+   ;  }
+
+   ; {
+   ;  :title "Retail"
+   ;  :detail "The best companies are tailoring the retail experience for mobile and tablet devices separately, from the Amazon bar code scanner..."
+   ;  :image "/images/reports/Retail.png"
+   ;  :link "/report-download/retail"
+   ;  }
+
+   ])
+
+
+(defn reports-options [opts]
+  (div :class "column"
+       (a :href (cell= (:link opts))
+          (div :class "ui center aligned segment"
+               (h2 :class "reports-title" (text (:title opts)))
+               (p :class "reports-issue" (text (:detail opts)))
+               (div :class "reports-screenshot-box"
+                    (image/elem :class-opts "reports-screenshot" :src (cell= (:image opts))))))))
+
+(defn reports-options-section []
+  (loop-tpl :bindings [opt reports-list]
+            (reports-options opt)))
+
+(defn pg []
+  (layout/primary
+  :id "reports"
+  :page-title "Exicon | Reports & Infographics"
+  :description "Exicons Reports, Infographics And White Papers On Apps"
+  :keywords "Mobile Research, Mobile Insights, Mobile App Strategy, App Strategy"
+  :page-css "index.inc.css"
+  (secondary-header :header (:header page-header))
+  (section :id "reports-list"
+           (div :class "ui three column vertically padded doubling container grid"
+                (reports-options-section)))))

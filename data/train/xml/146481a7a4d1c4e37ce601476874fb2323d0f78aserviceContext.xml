@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<!-- 管理员 service -->	
+	<bean id="managerService" class="com.dihaiboyun.managercenter.service.impl.ManagerServiceImpl"/>
+	
+	<!-- 角色 service -->	
+	<bean id="roleService" class="com.dihaiboyun.managercenter.service.impl.RoleServiceImpl"/>
+	
+	<!-- 菜单 service -->	
+	  <bean id="menuService" class="com.dihaiboyun.managercenter.service.impl.MenuServiceImpl"/>
+	
+	<!-- 目录 service -->	
+	  <bean id="catalogService" class="com.dihaiboyun.managercenter.service.impl.CatalogServiceImpl"/>
+	
+	<!-- 模块 service -->	
+	  <bean id="moduleService" class="com.dihaiboyun.managercenter.service.impl.ModuleServiceImpl"/>
+	  
+	<!-- 市 service -->	
+	  <bean id="cityService" class="com.dihaiboyun.managercenter.service.impl.CityServiceImpl"/>
+	  
+	<!-- 省 service -->	
+	  <bean id="provinceService" class="com.dihaiboyun.managercenter.service.impl.ProvinceServiceImpl"/>
+	  
+	<!-- 区 service -->	
+	  <bean id="areaService" class="com.dihaiboyun.managercenter.service.impl.AreaServiceImpl"/>
+	  
+	  <!-- 日志 service -->	
+	  <bean id="logsService" class="com.dihaiboyun.managercenter.service.impl.LogsServiceImpl"/>
+	  
+	  <!-- 字典 service -->	
+	  <bean id="dictService" class="com.dihaiboyun.managercenter.service.impl.DictServiceImpl"/>
+	  
+	  <!-- 管理员详细信息 service -->	
+	  <bean id="managerInfoService" class="com.dihaiboyun.managercenter.service.impl.ManagerInfoServiceImpl"/>
+	  
+	  <!-- 部门 service -->	
+	  <bean id="departmentService" class="com.dihaiboyun.managercenter.service.impl.DepartmentServiceImpl"/>
+	  
+	  <!-- 职位 service -->	
+	  <bean id="positionService" class="com.dihaiboyun.managercenter.service.impl.PositionServiceImpl"/>
+	  
+	  <!-- 部门职位 service -->	
+	  <bean id="depPosService" class="com.dihaiboyun.managercenter.service.impl.DepPosServiceImpl"/>
+</beans>

@@ -1,0 +1,27 @@
+
+.icon-32-download {
+    background-image: url(../images/1.6/icon-32-download.png);
+}
+
+.icon-32-print {
+    background-image: url(../images/1.6/icon-32-print.png);
+}
+
+form#adminForm .pagination div.limit select#limit {
+    width: 55px;
+}
+
+.input-append .add-on, .input-append .btn,
+.input-prepend .add-on, .input-prepend .btn {
+    height: 20px;
+}
+
+
+.control-group .controls .btn-group .input-prepend i.icomoon,
+.control-group .controls .btn-group .input-append i.icomoon {
+	line-height: 20px !important;
+}
+
+.addVar option {
+	max-width: 400px;
+}

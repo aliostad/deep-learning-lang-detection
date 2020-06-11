@@ -1,0 +1,22 @@
+#!/bin/sh
+sed -e 's#\.\(\.\/schemas\/p-o-p-profile-schema.*\.xsd\)#\1#' cerif/OND1292597.xml >sample-RU01-OND1292597-collaboration.xml
+sed -e 's#\.\(\.\/schemas\/p-o-p-profile-schema.*\.xsd\)#\1#' cerif/OND1300897.xml >sample-RU02-OND1300897-secretariat.xml
+sed -e 's#\.\(\.\/schemas\/p-o-p-profile-schema.*\.xsd\)#\1#' cerif/OND1329949.xml >sample-RU03-OND1329949-secretariat.xml
+sed -e 's#\.\(\.\/schemas\/p-o-p-profile-schema.*\.xsd\)#\1#' cerif/OND1297251.xml >sample-RU04-OND1297251-secretariat.xml
+sed -e 's#\.\(\.\/schemas\/p-o-p-profile-schema.*\.xsd\)#\1#' cerif/OND1315843.xml >sample-RU05-OND1315843-secretariat.xml
+sed -e 's#\.\(\.\/schemas\/p-o-p-profile-schema.*\.xsd\)#\1#' cerif/OND1308092.xml >sample-RU06-OND1308092-secretariat.xml
+sed -e 's#\.\(\.\/schemas\/p-o-p-profile-schema.*\.xsd\)#\1#' cerif/OND1318450.xml >sample-RU07-OND1318450-secretariat.xml
+sed -e 's#\.\(\.\/schemas\/p-o-p-profile-schema.*\.xsd\)#\1#' cerif/OND1308557.xml >sample-RU08-OND1308557-secretariat.xml
+sed -e 's#\.\(\.\/schemas\/p-o-p-profile-schema.*\.xsd\)#\1#' cerif/OND1292597.xml >sample-RU09-OND1292597-collaboration.xml
+sed -e 's#\.\(\.\/schemas\/p-o-p-profile-schema.*\.xsd\)#\1#' cerif/OND1234811.xml >sample-RU10-OND1234811-secretariat.xml
+sed -e 's#\.\(\.\/schemas\/p-o-p-profile-schema.*\.xsd\)#\1#' cerif/OND1353009.xml >sample-UU01-OND1353009-secretariat-with-call-info.xml
+sed -e 's#\.\(\.\/schemas\/p-o-p-profile-schema.*\.xsd\)#\1#' cerif/OND1353032.xml >sample-UU02-OND1353032-secretariat-with-call-info.xml
+sed -e 's#\.\(\.\/schemas\/p-o-p-profile-schema.*\.xsd\)#\1#' cerif/OND1287435.xml >sample-UU03-OND1287435-collaboration.xml
+sed -e 's#\.\(\.\/schemas\/p-o-p-profile-schema.*\.xsd\)#\1#' cerif/OND1293284.xml >sample-UU04-OND1293284-secretariat.xml
+sed -e 's#\.\(\.\/schemas\/p-o-p-profile-schema.*\.xsd\)#\1#' cerif/OND1297840.xml >sample-UU05-OND1297840-secretariat.xml
+sed -e 's#\.\(\.\/schemas\/p-o-p-profile-schema.*\.xsd\)#\1#' cerif/OND1307082.xml >sample-UU06-OND1307082-secretariat.xml
+sed -e 's#\.\(\.\/schemas\/p-o-p-profile-schema.*\.xsd\)#\1#' cerif/OND1318938.xml >sample-UU07-OND1318938-secretariat.xml
+sed -e 's#\.\(\.\/schemas\/p-o-p-profile-schema.*\.xsd\)#\1#' cerif/OND1318757.xml >sample-UU08-OND1318757-collaboration.xml
+sed -e 's#\.\(\.\/schemas\/p-o-p-profile-schema.*\.xsd\)#\1#' cerif/OND1302630.xml >sample-UU09-OND1302630-secretariat.xml
+sed -e 's#\.\(\.\/schemas\/p-o-p-profile-schema.*\.xsd\)#\1#' cerif/OND1322042.xml >sample-UU10-OND1322042-secretariat.xml
+sed -e 's#\.\(\.\/schemas\/p-o-p-profile-schema.*\.xsd\)#\1#' cerif/OND1306111.xml >sample-XX01-OND1306111-UU-secretariat-RU-collaboration.xml

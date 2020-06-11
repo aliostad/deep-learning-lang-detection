@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.igniterealtime.xiff.data.id"><apiName>org.igniterealtime.xiff.data.id</apiName><apiDetail/><apiClassifier id="org.igniterealtime.xiff.data.id:UUIDGenerator"><apiName>UUIDGenerator</apiName><shortdesc>
+	 Generates a universally unique identifier.</shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.igniterealtime.xiff.data.id:IIDGenerator</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 Generates a universally unique identifier.
+	 RFC4122 Version 4.
+	 http://tools.ietf.org/html/rfc4122#section-4.4
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.igniterealtime.xiff.data.id:UUIDGenerator:UUIDGenerator"><apiName>UUIDGenerator</apiName><shortdesc/><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef></apiConstructorDetail></apiConstructor><apiOperation id="org.igniterealtime.xiff.data.id:UUIDGenerator:generateID"><apiName>generateID</apiName><shortdesc>
+		 Generates the unique ID.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>The generated ID
+		 </apiDesc><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 Generates the unique ID.
+		 		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.igniterealtime.xiff.data.id:UUIDGenerator:prefix:get"><apiName>prefix</apiName><shortdesc>
+		 The prefix to use for the generated ID (for namespacing purposes).</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="String"/></apiValueDef><apiDesc>
+		 The prefix to use for the generated ID (for namespacing purposes).
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.igniterealtime.xiff.data.id:SOIncrementalGenerator"><apiName>SOIncrementalGenerator</apiName><shortdesc>
+	 Generates an incrementing ID and saves the last value in a local shared object.</shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.igniterealtime.xiff.data.id:IIDGenerator</apiBaseInterface><apiBaseClassifier>org.igniterealtime.xiff.data.id:IncrementalGenerator</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 Generates an incrementing ID and saves the last value in a local shared object.
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.igniterealtime.xiff.data.id:SOIncrementalGenerator:SOIncrementalGenerator"><apiName>SOIncrementalGenerator</apiName><shortdesc/><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>prefix</apiItemName><apiType value="String"/><apiData>null</apiData></apiParam></apiConstructorDef></apiConstructorDetail></apiConstructor><apiOperation id="org.igniterealtime.xiff.data.id:SOIncrementalGenerator:generateID"><apiName>generateID</apiName><shortdesc>
+		 Generates a unique ID.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiIsOverride/><apiReturn><apiDesc>The generated ID
+		 </apiDesc><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 Generates a unique ID.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.igniterealtime.xiff.data.id:IncrementalGenerator"><apiName>IncrementalGenerator</apiName><shortdesc>
+	 Uses a simple incrementation of a variable to generate new IDs.</shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.igniterealtime.xiff.data.id:IIDGenerator</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 Uses a simple incrementation of a variable to generate new IDs.
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.igniterealtime.xiff.data.id:IncrementalGenerator:IncrementalGenerator"><apiName>IncrementalGenerator</apiName><shortdesc/><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>prefix</apiItemName><apiType value="String"/><apiData>null</apiData></apiParam></apiConstructorDef></apiConstructorDetail></apiConstructor><apiOperation id="org.igniterealtime.xiff.data.id:IncrementalGenerator:generateID"><apiName>generateID</apiName><shortdesc>
+		 Generates a unique ID.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>The generated ID
+		 </apiDesc><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 Generates a unique ID.
+		 		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.igniterealtime.xiff.data.id:IncrementalGenerator:protected:_prefix"><apiName>_prefix</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="protected"/><apiDynamic/><apiType value="String"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.igniterealtime.xiff.data.id:IncrementalGenerator:protected:counter"><apiName>counter</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="protected"/><apiDynamic/><apiData>0</apiData><apiType value="int"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.igniterealtime.xiff.data.id:IncrementalGenerator:prefix:get"><apiName>prefix</apiName><shortdesc>
+		 The prefix to use for the generated ID (for namespacing purposes).</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="String"/></apiValueDef><apiDesc>
+		 The prefix to use for the generated ID (for namespacing purposes).
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.igniterealtime.xiff.data.id:IIDGenerator"><apiName>IIDGenerator</apiName><shortdesc>
+	 To use custom ID generators call the static function on the
+	 XMPPStanza class with an instance that implements IIDGenerator.</shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 To use custom ID generators call the static function on the
+	 XMPPStanza class with an instance that implements IIDGenerator.
+	 	 </apiDesc><example><codeph>XMPPStanza.idGenerator = new SOIncrementalGenerator();</codeph>
+	 </example></apiClassifierDetail><apiOperation id="org.igniterealtime.xiff.data.id:IIDGenerator:org.igniterealtime.xiff.data.id:IIDGenerator:generateID"><apiName>generateID</apiName><shortdesc>
+		 Generates an ID.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>The generated ID
+		 </apiDesc><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 Generates an ID.
+		 		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.igniterealtime.xiff.data.id:IIDGenerator:org.igniterealtime.xiff.data.id:IIDGenerator:prefix:get"><apiName>prefix</apiName><shortdesc>
+		 The prefix to use for the generated ID (for namespacing purposes).</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="String"/></apiValueDef><apiDesc>
+		 The prefix to use for the generated ID (for namespacing purposes).
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

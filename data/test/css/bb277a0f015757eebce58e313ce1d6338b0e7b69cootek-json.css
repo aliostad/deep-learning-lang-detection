@@ -1,0 +1,450 @@
+﻿
+/* 左边导航条部分 */
+.panel-title {
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.panel-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+nav.panel {
+    z-index: 1;
+}
+
+/* 第一层 li的链接 */
+.sidebar-nav>li>a,
+.sidebar-nav .nav>li>a {
+    display: block;
+    padding: 6px 30px;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: #767676;
+}
+
+.sidebar-nav>li>a:focus,
+.sidebar-nav>li>a:hover,
+.sidebar-nav .nav>li>a:focus,
+.sidebar-nav .nav>li>a:hover {
+    padding-left: 29px;
+    color: #337ab7;
+    background-color: transparent;
+    border-left: 1px solid #337ab7;
+}
+
+.sidebar-nav>.active:focus>a,
+.sidebar-nav>.active:hover>a,
+.sidebar-nav>.active>a,
+.sidebar-nav .nav>.active:focus>a,
+.sidebar-nav .nav>.active:hover>a,
+.sidebar-nav .nav>.active>a {
+    padding-left: 28px;
+    font-weight: 700;
+    color: #337ab7;
+    background-color: transparent;
+    border-left: 2px solid #337ab7;
+}
+
+/* 第二层 li的链接 */
+.sidebar-nav .nav>li>a {
+    padding: 0 0 0 50px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.sidebar-nav .nav>li>a:focus,
+.sidebar-nav .nav>li>a:hover {
+    padding-left: 49px;
+    color: #337ab7;
+    background-color: transparent;
+    border-left: 1px solid #337ab7;
+}
+
+.sidebar-nav .nav>.active:focus>a,
+.sidebar-nav .nav>.active:hover>a,
+.sidebar-nav .nav>.active>a {
+    padding-left: 48px;
+    font-weight: 500;
+}
+
+/* 第三层 li的链接 */
+.sidebar-nav .nav .nav>li>a {
+    padding: 0 0 0 70px;
+}
+
+.sidebar-nav .nav .nav>li>a:focus,
+.sidebar-nav .nav .nav>li>a:hover {
+    padding-left: 69px;
+}
+
+.sidebar-nav .nav .nav>.active:focus>a,
+.sidebar-nav .nav .nav>.active:hover>a,
+.sidebar-nav .nav .nav>.active>a {
+    padding-left: 68px;
+    font-weight: 500;
+}
+
+/* 第四层 li的链接 */
+.sidebar-nav .nav .nav .nav>li>a {
+    padding: 0 0 0 90px;
+}
+
+.sidebar-nav .nav .nav .nav>li>a:focus,
+.sidebar-nav .nav .nav .nav>li>a:hover {
+    padding-left: 89px;
+}
+
+.sidebar-nav .nav .nav .nav>.active:focus>a,
+.sidebar-nav .nav .nav .nav>.active:hover>a,
+.sidebar-nav .nav .nav .nav>.active>a {
+    padding-left: 88px;
+    font-weight: 500;
+}
+
+/* 第五层 li的链接 */
+.sidebar-nav .nav .nav .nav .nav>li>a {
+    padding: 0 0 0 110px;
+}
+
+.sidebar-nav .nav .nav .nav .nav>li>a:focus,
+.sidebar-nav .nav .nav .nav .nav>li>a:hover {
+    padding-left: 109px;
+}
+
+.sidebar-nav .nav .nav .nav .nav>.active:focus>a,
+.sidebar-nav .nav .nav .nav .nav>.active:hover>a,
+.sidebar-nav .nav .nav .nav .nav>.active>a {
+    padding-left: 108px;
+    font-weight: 500;
+}
+
+/* 第六层 li的链接 */
+.sidebar-nav .nav .nav .nav .nav .nav>li>a {
+    padding: 0 0 0 130px;
+}
+
+.sidebar-nav .nav .nav .nav .nav .nav>li>a:focus,
+.sidebar-nav .nav .nav .nav .nav .nav>li>a:hover {
+    padding-left: 129px;
+}
+
+.sidebar-nav .nav .nav .nav .nav .nav>.active:focus>a,
+.sidebar-nav .nav .nav .nav .nav .nav>.active:hover>a,
+.sidebar-nav .nav .nav .nav .nav .nav>.active>a {
+    padding-left: 128px;
+    font-weight: 500;
+}
+
+/* 第七层 li的链接 */
+.sidebar-nav .nav .nav .nav .nav .nav .nav>li>a {
+    padding: 0 0 0 150px;
+}
+
+.sidebar-nav .nav .nav .nav .nav .nav .nav>li>a:focus,
+.sidebar-nav .nav .nav .nav .nav .nav .nav>li>a:hover {
+    padding-left: 149px;
+}
+
+.sidebar-nav .nav .nav .nav .nav .nav .nav>.active:focus>a,
+.sidebar-nav .nav .nav .nav .nav .nav .nav>.active:hover>a,
+.sidebar-nav .nav .nav .nav .nav .nav .nav>.active>a {
+    padding-left: 148px;
+    font-weight: 500;
+}
+
+/* 第八层 li的链接 */
+.sidebar-nav .nav .nav .nav .nav .nav .nav .nav>li>a {
+    padding: 0 0 0 170px;
+}
+
+.sidebar-nav .nav .nav .nav .nav .nav .nav .nav>li>a:focus,
+.sidebar-nav .nav .nav .nav .nav .nav .nav .nav>li>a:hover {
+    padding-left: 169px;
+}
+
+.sidebar-nav .nav .nav .nav .nav .nav .nav .nav>.active:focus>a,
+.sidebar-nav .nav .nav .nav .nav .nav .nav .nav>.active:hover>a,
+.sidebar-nav .nav .nav .nav .nav .nav .nav .nav>.active>a {
+    padding-left: 168px;
+    font-weight: 500;
+}
+
+
+body { 
+    position: relative;
+    font-family: "Helvetica Neue", Helvetica, Arial, "microsoft yahei", "微软雅黑", sans-serif;
+}
+
+.margin-top-70 { margin-top:  70px; }
+
+.display-none {
+    display: none !important;
+}
+
+.affix { top: 20px; width: 360px;}
+.affix-bottom { position: absolute; width: 360px; }
+
+.sidebar-nav {
+    max-height: 480px;
+    overflow: auto;
+}
+
+.nav .nav { display: none; }
+.nav .active>.nav { display: block; }
+
+
+/* JSON代码输入框与显示部分 */
+.code-label {
+    margin: 3px 0 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.both-fix {
+    resize: none;
+}
+
+.code-pre {
+    position: relative;
+    height: 540px;
+}
+
+.code-pre-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 50%;
+    font-size: 0;
+}
+
+.code-pre-btn .glyphicon {
+    float: right;
+    margin-left: 10px;
+    font-size: 16px;
+    color: rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.code-pre-btn .glyphicon:hover {
+    color: rgba(0,0,0,0.7);
+}
+
+/* JSON代码按钮 */
+.form-btn {
+    float: right;
+    margin-top: 15px;
+}
+
+.form-btn .btn {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.form-btn i {
+    margin: 0 10px
+}
+
+/* 警告框部分 */
+.tip-label {
+    position: fixed;
+    top: 30px;
+    left: 495px;
+    right: 104px;
+    z-index: 1031;
+    text-align: center;
+}
+
+
+/* 整个模块 第一级 */
+.module {
+    padding-left: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* 模块标题部分 */
+.module-title {
+    padding: 15px 0 10px;
+    margin: 10px -10px 15px;
+
+    background-color: #F7F7F7;
+    border-bottom: 3px solid #337ab7;
+
+    -webkit-webkit-border-radius    : 6px 6px 0 0;
+    -moz-webkit-border-radius       : 6px 6px 0 0;
+    -ms-webkit-border-radius        : 6px 6px 0 0;
+    -o-webkit-border-radius         : 6px 6px 0 0;
+    border-radius                   : 6px 6px 0 0;
+
+}
+
+.module-title h4 {
+    margin: 0;
+}
+
+.module-title h4:before {
+    margin-left: 10px;
+    margin-right: 5px;
+
+    counter-increment: module-title;
+    content: counter(module-title)".";
+}
+body { counter-reset: module-title; }
+
+/* 模块内容 一行 */
+/* 模块内容一行中的 key 与 value */
+.module {
+    padding-right: 10px;
+}
+
+.module .module-row,
+.module-item,
+.module-content {
+    margin: 0;
+}
+
+.module-item,
+.module-content {
+    float: left;
+}
+
+.module-row input,
+.module-row .radio-btn {
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+.module-item {
+    position: relative;
+    width: 100px;
+    margin-top: 6px;
+    padding: 6px 0 0 6px;
+    word-break: break-all;
+}
+
+.module-row .module-content { width: 630px; }
+.module-row .module-row .module-content { width: 530px; }
+.module-row .module-row .module-row .module-content { width: 430px; }
+.module-row .module-row .module-row .module-row .module-content { width: 330px; }
+.module-row .module-row .module-row .module-row .module-row .module-content { width: 230px; }
+.module-row .module-row .module-row .module-row .module-row .module-row .module-content { width: 230px; margin-right: -100px }
+.module-row .module-row .module-row .module-row .module-row .module-row .module-content { margin-right: -100px }
+
+.module-edit,
+.module-remove {
+    position: absolute;
+    right: 3px;
+    top: 11px;
+    display: none;
+
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #999;
+}
+.module-edit { right: 22px; }
+.module-edit:hover,
+.module-remove:hover { color: #337ab7; }
+
+.module-item:hover .module-edit,
+.module-item:hover .module-remove{
+    display: block;
+}
+
+.required-item:after {
+    content: '*';
+    margin: 2px;
+    color: #cc0000;
+}
+
+#footer {
+    height: 60px;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+
+/* bootstrap组件 更改 */
+.module-content .radio-inline {
+    padding-top: 6px;
+    line-height: 1.3;
+}
+
+.btn-block {
+    width: auto;
+    margin-top: 6px;
+    margin-bottom: 8px;
+
+    text-indent: 5px;
+    color: #337AB7;
+    background-color: #f7f7f7;
+    border: 1px solid #2e6da4;
+}
+
+.btn-block:hover,
+.btn-block:active {
+    color: #FFF;
+    background-color: #337AB7;
+    border-color: #2E6DA4;
+}
+
+.btn-block.disabled {
+    color: #FFFFFF;
+}
+
+.btn-block .glyphicon:after {
+    content: "添加新Item";
+    margin-left: 5px;
+}
+
+.generate-json {
+    display: block;
+    margin: 10px 10px 30px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.btn .caret {
+    margin-left: 7px;
+}
+
+    /*模态框样式,部分覆盖bootstrap原有样式*/
+.add-style{
+    margin-left: 15px;
+    width:300px;
+}
+h3{
+    margin-top: 0px;
+}
+.modal-header{
+      padding-bottom: 0;    
+             }
+.modal-body{
+     padding-top: 25px;
+}
+#add-type{
+     margin-top: 15px;
+}
+#add-style2{
+    margin-left:28px;
+}
+.form-control1 {
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}

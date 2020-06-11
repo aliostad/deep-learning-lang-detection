@@ -1,0 +1,198 @@
+.zm-datatable tr td:nth-child(4) {
+  width: 200px;
+}
+.form-view {
+  text-decoration: none;
+}
+.form-view:hover {
+  color: #3BA6F1;
+}
+.assignPermissions {
+  cursor: pointer;
+  margin-left: 30px;
+  border: none;
+  color: #363636;
+}
+.assignPermissions:hover {
+  color: #3BA6F1;
+}
+.zm-click-jump:hover {
+  color: #3BA6F1;
+}
+.zm-model-content {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+.zm-model-content .modal {
+  width: 500px;
+  height: 811px;
+  border-radius: 20px;
+}
+.zm-model-content .modal .modal-dialog {
+  width: 500px;
+  height: 811px;
+}
+.zm-model-content .modal .modal-dialog .modal-content {
+  width: 500px;
+  height: 811px;
+}
+.zm-model-content .modal .modal-dialog .modal-content .modal-head {
+  width: 500px;
+  height: 51px;
+  background-color: #3BA6F1;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.zm-model-content .modal .modal-dialog .modal-content .modal-head h4 {
+  float: left;
+  height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  line-height: 51px;
+  margin-left: 40px;
+}
+.zm-model-content .modal .modal-dialog .modal-content .modal-head button {
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #9DD2F8;
+  opacity: 1;
+}
+.zm-model-content .modal .modal-dialog .modal-content .user-elect {
+  width: 80%;
+  height: 45px;
+  padding: 10px 0 15px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 1;
+}
+.zm-model-content .modal .modal-dialog .modal-content .user-elect button {
+  width: 60px;
+  height: 20px;
+  background-color: #3BA6F1;
+  color: #ffffff;
+  margin-right: 10px;
+  font-size: 13px;
+}
+.zm-model-content .modal .modal-dialog .modal-content .user-elect button:hover {
+  background-color: #2882CA;
+}
+.zm-model-content .modal .modal-dialog .modal-content .modal-body {
+  width: 500px;
+  height: 690px;
+  max-height: 690px;
+  background-color: #ffffff;
+  padding: 0;
+  overflow: hidden;
+}
+.zm-model-content .modal .modal-dialog .modal-content .modal-body .nano .nano-pane {
+  width: 12px;
+  border-radius: 0px;
+  opacity: 1;
+  background-color: #f2f2f2;
+}
+.zm-model-content .modal .modal-dialog .modal-content .modal-body .nano .nano-pane:hover {
+  background-color: #d7d7d7;
+}
+.zm-model-content .modal .modal-dialog .modal-content .modal-body .nano .nano-pane:hover .nano-slider {
+  background-color: #888888;
+}
+.zm-model-content .modal .modal-dialog .modal-content .modal-body .nano .nano-pane .nano-slider {
+  width: 10px;
+  border-radius: 0px;
+  background-color: #d7d7d7;
+}
+.zm-model-content .modal .modal-dialog .modal-content .modal-footer {
+  width: 100%;
+  height: 70px;
+  border-top: 1px solid #d7d7d7;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #ffffff;
+  padding: 0;
+}
+.zm-model-content .modal .modal-dialog .modal-content .modal-footer .role-save {
+  width: 80px;
+  height: 30px;
+  background-color: #3BA6F1;
+  color: #ffffff;
+  margin: 20px 30px 0 0;
+}
+.zm-model-content .modal .modal-dialog .modal-content .modal-footer .role-save:hover {
+  background-color: #2882CA;
+}
+.iconfont-jiantou {
+  margin-right: 10px;
+  font-size: 12px;
+  color: #363636;
+}
+.iconfont-jiantou:hover {
+  color: #3BA6F1;
+}
+li label {
+  width: 80px;
+}
+.modal-body .user-accordion1 {
+  width: 100%;
+  height: 100%;
+  padding: 45px 0 10px 40px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.modal-body .user-accordion1 .user-link2 {
+  width: 100%;
+  height: 25px;
+  font-size: 14px;
+}
+.user-accordion2 {
+  padding-left: 20px;
+}
+.user-accordion2 .user-link3 {
+  width: 100%;
+  height: 25px;
+}
+.user-accordion3 {
+  padding-left: 20px;
+}
+.user-accordion3 .user-link4 {
+  width: 100%;
+  height: 25px;
+}
+.user-accordion4 {
+  padding-left: 20px;
+  font-size: 14px;
+}
+.user-accordion4 input {
+  width: 14px;
+  height: 14px;
+  display: none;
+}
+.user-accordion4 li {
+  height: 20px;
+}
+.user-accordion4 li .pane {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #d7d7d7;
+  float: left;
+  margin-right: 10px;
+  margin-top: 3px;
+}
+.user-accordion4 li .pane img {
+  display: none;
+}
+.user-accordion4 li input[type="checkbox"]:checked + i {
+  display: block;
+  border: none;
+}
+.user-accordion4 li input[type="checkbox"]:checked + i img {
+  display: block;
+}

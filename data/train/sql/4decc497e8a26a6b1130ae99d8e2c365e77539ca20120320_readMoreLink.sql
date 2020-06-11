@@ -1,0 +1,24 @@
+ALTER TABLE `page-DEFAULT_STARTPAGE-1-Instances` ADD `read_more_text` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `shortdescription`;
+ALTER TABLE `page-DEFAULT_PROCESS-1-Instances` ADD `read_more_text` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `shortdescription`;
+ALTER TABLE `page-DEFAULT_PRESS_AREA-1-Instances` ADD `read_more_text` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `shortdescription`;
+ALTER TABLE `page-DEFAULT_PAGE_1-1-Instances` ADD `read_more_text` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `shortdescription`;
+ALTER TABLE `page-DEFAULT_OVERVIEW-1-Instances` ADD `read_more_text` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `shortdescription`;
+ALTER TABLE `page-DEFAULT_LOCATION_C-1-Instances` ADD `read_more_text` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `shortdescription`;
+ALTER TABLE `page-DEFAULT_IFRAME-1-Instances` ADD `read_more_text` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `shortdescription`;
+ALTER TABLE `page-DEFAULT_FORM-1-Instances` ADD `read_more_text` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `shortdescription`;
+ALTER TABLE `page-DEFAULT_EXTERNAL-1-Instances` ADD `read_more_text` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `shortdescription`;
+ALTER TABLE `page-DEFAULT_EVENT_OVERVIEW-1-Instances` ADD `read_more_text` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `shortdescription`;
+ALTER TABLE `page-DEFAULT_EVENTS-1-Instances` ADD `read_more_text` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `shortdescription`;
+ALTER TABLE `page-DEFAULT_EVENT-1-Instances` ADD `read_more_text` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `shortdescription`;
+ALTER TABLE `page-DEFAULT_DOWNLOAD_CENTER-1-Instances` ADD `read_more_text` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `shortdescription`;
+ALTER TABLE `page-DEFAULT_COURSES-1-Instances` ADD `read_more_text` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `shortdescription`;
+ALTER TABLE `page-DEFAULT_COLLECTION-1-Instances` ADD `read_more_text` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `shortdescription`;
+
+ALTER TABLE `global-DEFAULT_COURSE_OVERVIEW-1-Instances` ADD `read_more_text` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `shortdescription`;
+ALTER TABLE `global-DEFAULT_PRODUCT_OVERVIEW-1-Instances` ADD `read_more_text` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `shortdescription`;
+ALTER TABLE `global-DEFAULT_PRODUCT-1-Instances` ADD `read_more_text` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `shortdescription`;
+ALTER TABLE `global-DEFAULT_PRESS_OVERVIEW-1-Instances` ADD `read_more_text` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `shortdescription`;
+ALTER TABLE `global-DEFAULT_PRESS-1-Instances` ADD `read_more_text` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `shortdescription`;
+ALTER TABLE `global-DEFAULT_EVENT_OVERVIEW-1-Instances` ADD `read_more_text` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `shortdescription`;
+ALTER TABLE `global-DEFAULT_EVENT-1-Instances` ADD `read_more_text` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `shortdescription`;
+ALTER TABLE `global-DEFAULT_COURSE-1-Instances` ADD `read_more_text` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `shortdescription`;

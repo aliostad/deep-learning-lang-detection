@@ -1,0 +1,33 @@
+#ApiUtils, .ApiUtils{min-width: 200px;min-height: 200px;background-color: white;box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3); border: 1px solid grey;max-height: 200px;overflow-y: auto;overflow-x: hidden;}
+#ApiUtils ul , .ApiUtils ul{padding: 6px 12px;margin-top: 2px;margin-bottom: 2px;list-style-type: none; font-size: 14px;}
+#ApiUtils ul li, .ApiUtils ul li{padding-left:5px;}
+#ApiUtils ul li:hover, #ApiUtils ul li.first, .ApiUtils ul li:hover, .ApiUtils ul li.first{background-color:#3399ff; color: #fff;}
+
+input[type="text"].ui-autocomplete-input.done{ background: url(../images/check.png) no-repeat right center;}
+input[type="text"].ui-autocomplete-input.wait{ background: url(../images/icon-loader.gif) no-repeat right center;}
+input[type="text"].ui-autocomplete-input{
+  display: block;
+  width: auto;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+input[type="text"].ui-autocomplete-input:focus{
+	border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+select.ui-autocomplete-select{width: 200px;}
+select.ui-autocomplete-select.wait{ background: url(../images/icon-loader.gif) no-repeat 157px center transparent;}

@@ -1,0 +1,62 @@
+
+.api #jobPlug h2,
+.api #jobPlug #jobContact {
+    background-color: #D62727;
+}
+
+
+.api .apiLogo .apiImage {
+    background: url(http://r.api.no/local/v3/publications/www.ba.no/gfx/normal_logo.gif) 0 0 no-repeat;
+}
+
+
+.api .apiModDividerTab {
+    border-color: #D62727;
+}
+
+
+.api .apiModDividerTab {
+    background-color: #D62727;
+}
+
+
+.api .apiModDividerTab h4 {
+    background-color: #D62727;
+}
+
+
+.api .apiModule .apiTeaserTitle,
+.api .apiArticleTop .apiTeaserTitle,
+.api .apiModDivider h4 {
+    background-color: #D62727;
+}
+
+
+.api .apiSecHead {
+    background-color: #D62727;
+}
+
+
+.api .apiSlimLogo .apiImage {
+    background: url(http://r.api.no/local/v3/publications/www.ba.no/gfx/lav_logo.gif) 0 0 no-repeat;
+}
+
+
+.api div#apiTopMenu ul li a {
+    border-color: #FFFFFF;
+}
+
+
+.api div#apiTopMenu ul ul.expanded,
+.api div#apiTopMenu ul ul.apiDate,
+.api div#apiTopMenu a.active {
+    background-color: #FFFFFF;
+}
+
+
+.api div#apiTopMenu ul,
+.api div#apiSlimMenu ul,
+.api div#apiTopMenuWrapper {
+    background-color: #D62727;
+}
+

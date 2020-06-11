@@ -1,0 +1,41 @@
+<save arq="/home/adriano/workspace/VPE-qGM/src/processes/exemploWSL(macro).xml" pos="0:4">
+<process repr="env" tipo="seq" pos="0:4">
+<process repr="terminicio" x="1025" y="1116" cor="BLACK"></process>
+<process repr="env" tipo="seq" pos="0:4">
+<process repr="env" tipo="seq" pos="">
+<process repr="macro" tipo="quantum" pos= "0:4" parametro= "H,H" name="Default Macro Name" x="1081" y="1116.0" cor="BLACK">
+<process repr="iterativo" tipo="iterativo" range="0:4:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr="conselem" qubits= "2" acao= "QGMAnalyzer" pos= "0" parametro= "H,H" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="macro" tipo="quantum" pos= "0:4" parametro= "(Control1(1),Target1(X))" name="Default Macro Name" x="1249" y="1116.0" cor="BLACK">
+<process repr="iterativo" tipo="iterativo" range="0:4:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr="conselem" qubits= "2" acao= "QGMAnalyzer" pos= "0" parametro= "(Control1(1),Target1(X))" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="macro" tipo="quantum" pos= "0:4" parametro= "H,Id" name="Default Macro Name" x="1421" y="1116.0" cor="BLACK">
+<process repr="iterativo" tipo="iterativo" range="0:4:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr="conselem" qubits= "2" acao= "QGMAnalyzer" pos= "0" parametro= "H,Id" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+</process>
+</process>
+<process repr="env" tipo="seq" pos="0:4">
+<process repr="env" tipo="nondet1" pos="0:4">
+<process repr="detproj" parametro="P0,Id;P1,Id"></process>
+<process repr="macro" tipo="quantum" pos= "0:4" parametro= "P0,Id" name="Default Macro Name" x="1533.0" y="1081.0" cor="BLACK">
+<process repr="iterativo" tipo="iterativo" range="0:4:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr= "projection" acao= "QGMAnalyzer" pos= "0" parametro= "P0,Id" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="macro" tipo="quantum" pos= "0:4" parametro= "P1,Id" name="Default Macro Name" x="1533.0" y="1151.0" cor="BLACK">
+<process repr="iterativo" tipo="iterativo" range="0:4:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr= "projection" acao= "QGMAnalyzer" pos= "0" parametro= "P1,Id" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+</process>
+</process>
+<process repr= "probability" acao= "QGMAnalyzer" pos= "4" parametro= "Probability" x="1642.0" y="1116.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="termfim" x="1705" y="1116" cor="BLACK"></process>
+</process>
+</save>

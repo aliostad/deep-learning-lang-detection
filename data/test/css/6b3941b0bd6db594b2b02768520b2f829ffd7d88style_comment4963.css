@@ -1,0 +1,35 @@
+.post_comment .comment_write {margin-top:10px;}
+.post_comment .comment_write.reply_write {padding-left:20px;}
+.post_comment .comment_write.reply_modify, .post_comment .comment_write.comment_modify {padding-left:0;margin-top:0;margin-bottom:3px;} /* 2012.04.23 ?߰?*/
+.post_comment .comment_write .comment_info {margin:0;}
+.post_comment .comment_write .comment_info span.comment_name,
+.post_comment .comment_write .comment_info span.comment_passwd,
+.post_comment .comment_write .comment_info span.comment_blog {display:block;padding:0 0 2px 0;clear:both;}
+.post_comment .comment_write .comment_info span.comment_blog {float:left;}
+.post_comment .comment_write .comment_info span.comment_name label,
+.post_comment .comment_write .comment_info span.comment_passwd label,
+.post_comment .comment_write .comment_info span.comment_blog label {display:block;float:left;width:55px;}
+.post_comment .comment_write .comment_info input {padding:1px 0 0 1px;vertical-align:middle;}
+.post_comment .comment_write .comment_info input.name {width:100px;}
+.post_comment .comment_write .comment_info input.passwd {width:60px;}
+.post_comment .comment_write .comment_info input.blog {width:200px;font-family:tahoma,sans-serif;font-size:11px;}
+.post_comment .comment_write .comment_info span.comment_now {}
+.post_comment .comment_write .comment_info span.comment_now img {width:33px;height:33px;border:2px solid #efefef;vertical-align:middle;}
+.post_comment .reply_write .comment_info span.comment_now img,  .post_comment .reply_modify .comment_info span.comment_now img{width:15px;height:15px;}  /* 2012.04.23 ????*/
+.post_comment .comment_write .comment_info span.comment_now span.nateinfo {font-family:'????',sans-serif;font-size:11px;}
+.post_comment .comment_write .comment_info span.comment_login {float:right;}
+.post_comment .comment_write textarea {margin:2px 0;padding:0;width:99%;height:100px;margin-left:0 !important;}
+.post_comment .reply_write textarea {height:100px;}
+.post_comment .comment_write .comment_btn {height:23px;position:relative;*position:static;*text-align:right;}
+.post_comment .comment_write .comment_btn .comment_submit {position:absolute;top:0;right:5px;*position:static;*text-align:right;}
+
+/* 트랙백 페이징 20140327 */
+.post_trackback .paginate{padding:10px 0 30px;text-align:center;font-family:"굴림";font-size:12px}
+.post_trackback .paginate .btn{display:inline;vertical-align:top;}
+.post_trackback .paginate .btn a{color:#b3b3b3;background:url("../img/trackback/ico_paginate.gif") no-repeat;}
+.post_trackback .paginate .btn a:hover{text-decoration:none}
+.post_trackback .paginate .btn .btn_pre{background-position:0 2px;padding-left:8px;}
+.post_trackback .paginate .btn .btn_next{background-position:right -17px;padding-right:8px;margin-left:3px;}
+.post_trackback .paginate .num{color:#b3b3b3;vertical-align:top;margin:0 5px;}
+.post_trackback .paginate .num a{font-weight:bold;text-decoration:none;padding:0 8px}
+.post_trackback .paginate .num a:hover, .paginate .num a.current{color:#5bc4f1;}

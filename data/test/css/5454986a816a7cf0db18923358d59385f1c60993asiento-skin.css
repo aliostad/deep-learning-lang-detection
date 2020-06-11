@@ -1,0 +1,25 @@
+.yui3-skin-sam .ze-view-asiento-view {
+    margin: 3px 1em;
+    overflow: hidden;
+}
+.yui3-skin-sam .ze-view-asiento-view label {
+    clear: both;
+    float: left;
+    width: 49%;
+    border: thin solid silver;
+}
+.yui3-skin-sam .ze-view-asiento-view div {
+    float: left;
+    width: 49%;
+    border: thin solid silver;
+}
+.yui3-skin-sam .ze-view-asiento-view .asiento {
+    text-align: right;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+.yui3-skin-sam .ze-view-asiento-view .fecha {
+    text-align: right;
+}

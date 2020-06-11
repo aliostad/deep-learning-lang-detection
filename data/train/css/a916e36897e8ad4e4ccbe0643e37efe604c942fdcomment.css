@@ -1,0 +1,14 @@
+
+
+/*评论部分*/
+/*用户评论*/
+.stn-comment{ margin:.72rem 0 1.09rem; padding:0 3.205%; }
+
+/*填写评论*/
+.stn-comment .d-write{width: 100%;margin-top:3%;}
+.stn-comment .d-write .d-border{position:relative;border:1px solid #d2d2d2;height:8rem;padding-top:.2rem;background-color: #fff;}
+.stn-comment .d-write textarea{display: block;color:#000;width: 100%;height: 100%;resize:none;line-height: 1.6;padding:0 .2rem;box-sizing: border-box;outline: none;border:none;}
+.stn-comment .d-write textarea::-webkit-input-placeholder {color:#d2d2d2;}
+.stn-comment .d-write .p-num{position:absolute;bottom:0;right:.2rem;color:#d2d2d2;}
+.stn-comment .d-write .a-confirm{display: block;width:92%;margin:4.7% auto 3.1%;line-height: 2.8;background-color: #69c2c0;color: #fff;text-align: center;border-radius:.2rem;}
+

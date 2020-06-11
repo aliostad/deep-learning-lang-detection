@@ -1,0 +1,68 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.wrap_all_apiEx {padding-bottom:50px}
+
+/*text basic setup*/
+.wrap_all_apiEx * {font-size:13px}
+
+/*heading text setup*/
+.wrap_all_apiEx h1 {font-size:2em; font-weight:bold; color:#000}
+.wrap_all_apiEx h2 {font-size:1.5em; font-weight:bold; color:#000}
+.wrap_all_apiEx h3 {font-size:1.1em; font-weight:bold}
+.wrap_all_apiEx h4 {font-size:0.9em; font-weight:bold}
+.wrap_all_apiEx h5 {font-size:0.7em; font-weight:bold}
+.wrap_all_apiEx h6 {font-size:0.7em; font-weight:normal}
+
+
+/*heading text init*/
+.wrap_all_apiEx h1, .wrap_all_apiEx h2, .wrap_all_apiEx h3, .wrap_all_apiEx h4, .wrap_all_apiEx h5, .wrap_all_apiEx h6 {margin:0; padding:0}
+/*heading text layout*/
+.wrap_all_apiEx h1 {margin-bottom:10px; padding-bottom:5px; border-bottom:1px solid #ccc}
+.wrap_all_apiEx h2 {margin-top:60px; margin-bottom:7px}
+.wrap_all_apiEx h3 {margin-top:20px}
+
+
+/*content setup*/
+/*.wrap_all_apiEx .content:last-child {margin-bottom:0}*/
+.wrap_all_apiEx .content_apiEx {padding-left:15px}
+.wrap_all_apiEx .content_apiEx table {margin-top:8px; margin-bottom:8px}
+.wrap_all_apiEx .content_apiEx table, tr, th, td {border-collapse:collapse; border:1px solid #666; padding:3px; background:#fff}
+.wrap_all_apiEx .content_apiEx table thead, .wrap_all_apiEx .content_apiEx table th {background:#999CA2; color:#fff}
+.wrap_all_apiEx pre.syntax * {font-family:"Lucida Console", Monaco, monospace !important; font-size:1em; line-height:16px}
+.wrap_all_apiEx pre.syntax {margin:20px 0px 20px 0px;}
+.wrap_all_apiEx .file {border:none; margin-bottom:10px}
+.wrap_all_apiEx img 
+{
+    margin:20px 0px 20px 0px; 
+    display:block; 
+}
+.wrap_all_apiEx .bq 
+{
+    /*
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+    padding: 15px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;    
+    */
+    padding:15px; 
+    border:1px solid #eee;
+    border-left:4px solid #EEAC7B;
+    background:#fcfcfc;
+}
+
+/*anchor setup*/
+.wrap_all_apiEx a:link {
+	color:#06C; text-decoration:underline
+}
+.wrap_all_apiEx a:visited {
+	color:#06C; text-decoration:underline
+}
+.wrap_all_apiEx a:hover {
+	color:#F60; text-decoration:underline
+}
+.wrap_all_apiEx a:active {
+	color:#F60; text-decoration:underline
+}

@@ -1,0 +1,31 @@
+<save arq="/home/adriano/Ubuntu One/workspace/VPE-qGM/VPE-qGM/src/processes/CircuitosFuzzy/Diferenca2.xml" pos="0">
+<process repr="env" tipo="seq" pos="0">
+<process repr="terminicio" x="1127.0" y="1227.0" cor="BLACK"></process>
+<process repr="env" tipo="seq" pos="0">
+<process repr="env" tipo="seq" pos="">
+<process repr="iterativo" tipo="iterativo" range="0:8:1" acao="parfor" x="1186.0" y="1227.0" cor="BLACK">
+<process repr="conselem" qubits= "3" acao= "Id,X,Id" pos= "0" parametro= "" x="1186.0" y="1227.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:8:1" acao="parfor" x="1276.0" y="1227.0" cor="BLACK">
+<process repr="conselem" qubits= "3" acao= "(Control1(1),Control1(1),Target1(X))" pos= "0" parametro= "" x="1276.0" y="1227.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:8:1" acao="parfor" x="1366.0" y="1227.0" cor="BLACK">
+<process repr="conselem" qubits= "3" acao= "Id,Id,X" pos= "0" parametro= "" x="1366.0" y="1227.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="env" tipo="seq" pos="0">
+<process repr="env" tipo="nondet1" pos="0">
+<process repr="detproj" parametro=""></process>
+<process repr="iterativo" tipo="iterativo" range="0:8:1" acao="parfor" x="1470.0" y="1161.0" cor="BLACK">
+<process repr="conselem" qubits= "3" acao= "Id,Id,P0" pos= "0" parametro= "" x="1470.0" y="1161.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:8:1" acao="parfor" x="1470.0" y="1292.0" cor="BLACK">
+<process repr="conselem" qubits= "3" acao= "Id,Id,P1" pos= "0" parametro= "" x="1470.0" y="1292.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr= "probability" acao= "QGMAnalyzer" pos= "8" parametro= "Probability" x="1574.0" y="1227.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="termfim" x="1635.0" y="1227.0" cor="BLACK"></process>
+</process>
+</save>

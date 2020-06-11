@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><allClasses><apiPackage id="__Global__"><apiName>__Global__</apiName><apiClassifier id="globalClassifier:Main"><apiName>Main</apiName><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.display:Sprite</apiBaseClassifier></apiClassifierDef></apiClassifierDetail><apiOperation id="Main:init"><apiName>init</apiName><shortdesc>
+		 This is the init function.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 This is the init function.
+		 </apiDesc></apiOperationDetail></apiOperation><apiConstructor id="Main:Main"><apiName>Main</apiName><shortdesc>
+		 constructor
+		 </shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
+		 constructor
+		 </apiDesc></apiConstructorDetail></apiConstructor></apiClassifier></apiPackage><apiPackage id="view"><apiName>view</apiName><apiClassifier id="view:TFComponent"><apiName>TFComponent</apiName><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.display:Sprite</apiBaseClassifier></apiClassifierDef></apiClassifierDetail><apiOperation id="view:TFComponent:init"><apiName>init</apiName><shortdesc>
+		 This the the TFComponent init() function.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>str</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 This the the TFComponent <codeph>init()</codeph> function.
+		 </apiDesc></apiOperationDetail></apiOperation><apiConstructor id="view:TFComponent:TFComponent"><apiName>TFComponent</apiName><shortdesc>
+		 constructor
+		 </shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
+		 constructor
+		 </apiDesc></apiConstructorDetail></apiConstructor></apiClassifier></apiPackage></allClasses>

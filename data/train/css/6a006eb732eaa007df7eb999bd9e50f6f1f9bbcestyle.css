@@ -1,0 +1,106 @@
+/* new Plugins */
+
+/* handWrite */
+.ui-dialog.handWrite {background:rgba(255, 255, 255, 0.5);}
+.sketch_app.handWrite {padding:20px 30px 40px;}
+.sketch_app.handWrite .tools{display:none;}
+.sketch_app.handWrite .buttons-set {margin:0 0 15px;overflow:hidden;}
+.sketch_app.handWrite .buttons-set .btn-undo{width:38px;height:39px;float:left;background:url("/images/jxb/btn-undo.png") no-repeat;cursor:pointer;text-indent:-9999em;}
+.sketch_app.handWrite .buttons-set .btn-undo:hover{background-position:0 -39px;}
+.sketch_app.handWrite .buttons-set .btn-redo{width:38px;height:39px;float:left;background:url("/images/jxb/btn-undo.png") no-repeat -38px 0;cursor:pointer;text-indent:-9999em;margin:0 0 0 20px;}
+.sketch_app.handWrite .buttons-set .btn-redo:hover{background-position:-38px -39px;}
+.sketch_app.handWrite input[type=button],.sketch_app.handWrite .color_setting{display: none;}
+.sketch_app.handWrite .buttons-set .btn{margin: 10px;}
+.sketch_app.handWrite .container {border: 2px solid #666;}
+.ui-widget-overlay{background:#fff;}
+
+
+/* drawing */
+.mceIframeContainer{position: relative;}
+.sketch_app.paint {padding:0.5em 30px;}
+.sketch_app.paint ul{list-style: none;}
+.sketch_app .container{border: 2px solid #999;position: relative;overflow: hidden;padding: 0;}
+.ui-dialog.paint .container{margin-top: 120px; z-index: 1; background: #fff;}
+.sketch_app .containerDraft canvas {display: none;}
+.setLineSize,.setBrushSize{margin: 20px;display: none;}
+.setLineSize > label,.setBrushSize > label{float: left;}
+.setLineSize > div,.setBrushSize > div{float: left;width: 100px;margin: 0 0 0 20px;}
+.setLineSize input,.setBrushSize input{width: 30px;margin: 0 0 0 20px;}
+.color_setting {position: absolute; top: 30px; right: 25px; z-index: 0;}
+.color_setting input[type="button"] {position: relative;}
+.color_setting input[type="button"]:focus{outline:none;}
+.color_setting button{display:none;}
+
+.color_setting.toolSet-line {top:45px;}
+.color_setting.toolSet-line input[type="button"]{float: left;width: 30px;height: 200px;background: url("/images/jxb/painter-pen.png") no-repeat;border: none;margin: 0 0 0 10px;text-indent: -9999em;cursor: pointer;padding:0;outline:none;}
+.color_setting.toolSet-line input[type="button"].active{top: -15px;}
+.color_setting.toolSet-line input.black{background-position: 0 0;}
+.color_setting.toolSet-line input.blue{background-position: -155px 0;}
+.color_setting.toolSet-line input.red{background-position: -39px 0;}
+.color_setting.toolSet-line input.green{background-position: -193px 0;}
+.color_setting.toolSet-line input.orange{background-position: -232px 0;}
+.color_setting.toolSet-line input.yellow{background-position: -232px 0;display: none;}
+.color_setting.toolSet-line input.purple{background-position: -77px 0;}
+.color_setting.toolSet-line input.pink{background-position: -116px 0;}
+
+.color_setting.toolSet-ink {top:45px;}
+.color_setting.toolSet-ink input[type="button"]{float: left;width: 34px;height: 200px;background: url("/images/jxb/painter-ink.png") no-repeat;border: none;margin: 0 0 0 10px;text-indent: -9999em;cursor: pointer;padding:0;outline:none;}
+.color_setting.toolSet-ink input[type="button"].active{top: -15px;}
+.color_setting.toolSet-ink input.black{background-position: 0 0;}
+.color_setting.toolSet-ink input.blue{background-position: -151px 0;}
+.color_setting.toolSet-ink input.red{background-position: -39px 0;}
+.color_setting.toolSet-ink input.green{background-position: -187px 0;}
+.color_setting.toolSet-ink input.orange{background-position: -225px 0;}
+.color_setting.toolSet-ink input.yellow{background-position: -225px 0;display: none;}
+.color_setting.toolSet-ink input.purple{background-position: -77px 0;}
+.color_setting.toolSet-ink input.pink{background-position: -116px 0;}
+
+.color_setting.toolSet-big_brush {top:75px;}
+.color_setting.toolSet-big_brush input[type="button"]{float: left;width: 37px;height: 34px;margin: 0 0 0 2px;text-indent: -9999em;cursor: pointer;padding:0;outline:none;border:none;}
+.color_setting.toolSet-big_brush input[type="button"].active{width: 50px;height: 47px;position: relative;top: -5px;}
+.color_setting.toolSet-big_brush input.black{background: #333;}
+.color_setting.toolSet-big_brush input.blue{background: #0000ff;}
+.color_setting.toolSet-big_brush input.red{background: #ff0000;}
+.color_setting.toolSet-big_brush input.green{background: #7cfc00;}
+.color_setting.toolSet-big_brush input.orange{background: #FF7940;}
+.color_setting.toolSet-big_brush input.yellow{background: #FFFF00;}
+.color_setting.toolSet-big_brush input.purple{background: #9932cc;}
+.color_setting.toolSet-big_brush input.pink{background: #ff69b4;}
+
+
+.color_setting.toolSet-eraser input{display:none;}
+.color_setting.toolSet-eraser button{display:inline-block;}
+
+.ui-dialog.paint .ui-dialog-buttonpane,.ui-dialog.handWrite .ui-dialog-buttonpane{float: right;;background: none;border: none;margin: 30px 10px;}
+
+.sketch_app ul.tools {position:absolute; left:0; top:55px;}
+.sketch_app ul.tools li{width: 50px;height: 47px;background: url("/images/jxb/painter-tools.png") no-repeat 0 -47px;float: left;margin-left: -1px;cursor: pointer;}
+.sketch_app ul.tools li:hover, .sketch_app ul.tools li.active{background-position: 0 0;}
+.sketch_app ul.tools li i{background: url("/images/jxb/painter-tools.png") no-repeat;width: 50px;height: 47px;display: inline-block;}
+.sketch_app ul.tools li.clear_all i{background-position: -50px 0;}
+.sketch_app ul.tools li.line i{background-position: -100px 0;}
+.sketch_app ul.tools li.ink i{background-position: -150px 0;}
+.sketch_app ul.tools li.big_brush i{background-position: -200px 0;}
+.sketch_app ul.tools li.eraser i{background-position: -250px 0;}
+
+
+/* embed */
+.instructure_embed .ui-dialog-content { color: #01abf2; font-size: 15px; padding: 20px 30px; }
+.instructure_embed .instructure_embed_prompt_form { padding: 10px 0;}
+.instructure_embed .formtable td { color: #666; font-size: 12px; padding-bottom: 10px!important; }
+.instructure_embed .flickr_search_link { color: #01abf2; font-size: 15px; padding: 15px 0; margin: 30px 0; border-top: 1px dashed #333333; border-bottom: 1px dashed #333333; display: block; text-decoration: underline;}
+.instructure_embed tr { margin: 15px 0; }
+.instructure_embed tr td:first-child{ text-align: right; }
+
+.instructure_embed form:last-child td { padding-bottom: 10px!important; }
+.instructure_embed .alt_text[type=text] { width: 150px; }
+
+.instructure_embed form { margin: 15px 0;}
+
+/* editor button icon */
+.mce-i-drawing, .mce-i-handwrite, .mce-i-uploadimage {
+    font-family: 'Glyphicons Halflings'!important
+}
+.mce-i-drawing:before{content:"\e060"}
+.mce-i-handwrite:before{content:"\270f"}
+.mce-i-uploadimage:before{content:"\e027"}

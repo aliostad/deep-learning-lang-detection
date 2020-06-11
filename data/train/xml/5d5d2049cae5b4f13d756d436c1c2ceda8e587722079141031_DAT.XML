@@ -1,0 +1,102 @@
+<xml>
+  <service_ids territory="scea">
+    <cross_providers>
+	<service id="UP9000-NPUR10010_00"/>
+    <service id="UP9000-NPUR10011_00"/>
+	<service id="UP9000-NPUR10012_00"/>
+	<service id="UP9000-NPUR10013_00"/>
+	<service id="UP9000-NPUR10014_00"/>
+	<service id="UP9000-NPUR10015_00"/>
+	<service id="UP9000-NPUR10016_00"/>
+	<service id="UP9000-NPUQ10001_00"/>
+    </cross_providers>
+	<individual_providers>
+	  <service id="UP0001-NPUR30140_00"/>
+	  <service id="UT5016-NPUR00160_00"/>
+	  <service id="UP0082-NPUR30170_00"/>
+	  <service id="UP0177-NPUR30180_00"/>
+	  <service id="UP0700-NPUR30040_00"/>
+	  <service id="UP0776-NPUR30030_00"/>
+	  <service id="UP1063-NPUR30100_00"/>
+	  <service id="UP2007-NPUR30070_00"/>
+	  <service id="UP0006-NPUR30020_00"/>
+	  <service id="UP1004-NPUR30190_00"/>
+	  <service id="UP1010-NPUR30060_00"/>
+	  <service id="UP2019-NPUR30080_00"/>
+	  <service id="UP2021-NPUR30130_00"/>
+	  <service id="UP2045-NPUR30290_00"/>
+	  <service id="UP4055-NPUR30120_00"/>
+	  <service id="US0001-NPUR00002_00"/>
+	  <service id="UT5003-NPUR00040_00"/>
+	  <service id="UP0002-NPUR30220_00"/>
+	  <service id="UP0555-NPUR30200_00"/>
+	  <service id="UP1001-NPUR30160_00"/>
+	  <service id="UP1005-NPUR30110_00"/>
+	  <service id="UP1082-NPUR30210_00"/>
+	  <service id="US0003-NPUR00003_00"/>
+	  <service id="UP2037-NPUR30250_00"/>
+	  <service id="UT5001-NPUR00020_00"/>
+	  <service id="UT5007-NPUR00080_00"/>
+	  <service id="UP4075-NPUR30270_00"/>
+	  <service id="UT5010-NPUR00100_00"/>
+	  <service id="UT5004-NPUR00050_00"/>
+	  <service id="UT5005-NPUR00060_00"/>
+	  <service id="UP2043-NPUR30260_00"/>
+	  <service id="UT5009-NPUR00090_00"/>
+	  <service id="UP9000-NPUQ00005_00"/>
+	  <service id="UP9000-NPUQ00002_00"/>
+	  <service id="UP9000-NPUQ00011_00"/>
+	  <service id="UP9000-NPUQ00007_00"/>
+	  <service id="UP9000-NPUQ00012_00"/>
+	  <service id="UT5014-NPUR00140_00"/>
+	  <service id="UT5015-NPUR00150_00"/>
+	  <service id="UP2020-NPUR30090_00"/>
+	  <service id="UP1012-NPUR30310_00"/>
+	  <service id="UP2043-NPUR30261_00"/>
+	  <service id="UP2047-NPUR30300_00"/>
+	  <service id="UT5013-NPUR00130_00"/>
+	  <service id="UT5020-NPUR00170_00"/>
+	  <service id="UP0182-NPUR30050_00"/>
+	  <service id="UT5017-NPUR30320_00"/>
+	  <service id="UT5012-NPUR00120_00"/>	  
+	  <service id="UT5023-NPUR00210_00"/>
+	  <service id="UT5019-NPUR00190_00"/>
+	  <service id="UT5018-NPUR00180_00"/>
+	  <service id="UT5022-NPUR00205_00"/>
+	  <service id="UT5021-NPUR00200_00"/>
+	  <service id="UT5024-NPUR00215_00"/>
+	  <service id="UP2043-NPUR30262_00"/>
+	  <service id="UT5028-NPUR00240_00"/>
+      <service id="UT5025-NPUR00220_00"/>
+      <service id="UP4306-NPUR30330_00"/>
+	  <service id="UP2066-NPUR30340_00"/>
+  	  <service id="UT5026-NPUR00225_00"/>
+  	  <service id="UT5029-NPUR00250_00"/>
+  	  <service id="UT5031-NPUR00270_00"/>	
+	  <service id="UT5032-NPUR00280_00"/>	  
+    </individual_providers>
+    <service_id>UP9000-NPUQ00001_00</service_id>
+    <service_id>US0002-NPUR00001_00</service_id>
+    <service_id>UP9000-NPUQ00003_00</service_id>
+    <service_id>UP9000-NPUQ00004_00</service_id>
+    <service_id>UP9000-NPUQ00006_00</service_id>
+    <service_id>UP0102-NPUR30001_00</service_id>
+    <service_id>UP9000-NPUA80191_00</service_id>
+    <service_id>UP9000-NPUQ00010_00</service_id>
+    <service_id>UT5000-NPUR00010_00</service_id>
+    <service_id>UT5006-NPUR00070_00</service_id>
+	<service_id>UT5000-NPUR00012_00</service_id>
+    <service_id>UP0024-NPUR30151_00</service_id>
+    <service_id>UP9000-NPUQ00020_00</service_id>
+    <service_id>UP0017-BLUS30583_00</service_id>
+    <service_id>IP9101-NPIA90005_00</service_id>
+    <service_id>UT5002-NPUR00031_00</service_id>
+	<service_id>UP9000-NPUQ00030_00</service_id>
+	<service_id>UT5012-NPUR00120_00</service_id>
+	<service_id>UT5002-NPUR00030_00</service_id>
+	<service_id>UT5012-NPUR00121_00</service_id>
+	<service_id>UP9000-NPUQ00016_00</service_id>
+	<service_id>UP0101-NPUR30230_00</service_id>
+	<service_id>UT5006-NPUR00070_00</service_id>	
+	</service_ids>
+</xml>

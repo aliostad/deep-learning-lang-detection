@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sece</property>
+    <property name="hibernate.connection.username">cpml</property>
+    <property name="hibernate.connection.password">kmd/*cpml*/</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="hibernate.c3p0.min_size">5</property>
+    <property name="hibernate.c3p0.max_size">20</property>
+    <property name="hibernate.c3p0.timeout">300</property>
+    <property name="hibernate.c3p0.max_statements">50</property>
+    <property name="hibernate.c3p0.idle_test_period">3000</property>
+    <mapping resource="mapping/Zone.hbm.xml"/>
+    <mapping resource="mapping/Item.hbm.xml"/>
+    <mapping resource="mapping/Sugerencia.hbm.xml"/>
+    <mapping resource="mapping/AsignacionCapaContra.hbm.xml"/>
+    <mapping resource="mapping/Pais.hbm.xml"/>
+    <mapping resource="mapping/AsignacionSugItem.hbm.xml"/>
+    <mapping resource="mapping/Variable.hbm.xml"/>
+    <mapping resource="mapping/Escala.hbm.xml"/>
+    <mapping resource="mapping/DelegacionIndiUsu.hbm.xml"/>
+    <mapping resource="mapping/Usuario.hbm.xml"/>
+    <mapping resource="mapping/Operacion.hbm.xml"/>
+    <mapping resource="mapping/Indicador.hbm.xml"/>
+    <mapping resource="mapping/Bitacora.hbm.xml"/>
+    <mapping resource="mapping/Contrato.hbm.xml"/>
+    <mapping resource="mapping/RespItem.hbm.xml"/>
+    <mapping resource="mapping/Acceso.hbm.xml"/>
+    <mapping resource="mapping/Empresa.hbm.xml"/>
+    <mapping resource="mapping/Avance.hbm.xml"/>
+    <mapping resource="mapping/HistorialResultado.hbm.xml"/>
+    <mapping resource="mapping/EmpresaContratos.hbm.xml"/>
+    <mapping resource="mapping/Noticias.hbm.xml"/>
+    <mapping resource="mapping/EmailSent.hbm.xml"/>
+    <mapping resource="mapping/Valoracion.hbm.xml"/>
+    <mapping resource="mapping/EmailInactividad.hbm.xml"/>
+    <mapping resource="mapping/avanceVCE.hbm.xml"/>
+    <mapping resource="mapping/valoracionVCE.hbm.xml"/>
+    <mapping resource="mapping/Producto.hbm.xml"/>
+    <mapping resource="mapping/EmpresaCompleta.hbm.xml"/>
+    <mapping resource="mapping/AreasInter.hbm.xml"/>
+    <mapping resource="mapping/ResultadoInter.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

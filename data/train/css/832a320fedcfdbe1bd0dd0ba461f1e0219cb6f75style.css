@@ -1,0 +1,66 @@
+#googlelogo {
+	width: 40%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#logo{
+	background-color: #FFF;
+	position: absolute;
+	z-index: 99;
+	width:100%;
+}
+#loader{
+	display: block;
+	margin: auto;
+	height: 50px;
+	width: 50px;
+	-webkit-animation: load linear 1.5s infinite ;
+	-moz-animation: load linear 1.5s infinite ;
+	-o-animation: load linear 1.5s infinite ;
+	-ms-animation: load linear 1.5s infinite ;
+	animation: load linear 1.5s infinite ;
+}
+.loadanim {
+	position: relative;
+	top:50%;
+}
+nav{
+	position: fixed !important;
+	z-index: 1000;
+	/*bottom: 0px !important;*/
+
+}
+/*animatio*/
+@-webkit-keyframes load {
+	from {
+		-webkit-transfrom:rotate(0deg);
+	}
+	to {
+		-webkit-transform:rotate(360deg);
+	}
+}
+@-moz-keyframes load {
+	from {
+		-moz-transfrom:rotate(0deg);
+	}
+	to {
+		-moz-transform:rotate(360deg);
+	}
+}
+@-o-keyframes load {
+	from {
+		-o-transfrom:rotate(0deg);
+	}
+	to {
+		-o-transform:rotate(360deg);
+	}
+}
+@-ms-keyframes load {
+	from {
+		-ms-transfrom:rotate(0deg);
+	}
+	to {
+		-ms-transform:rotate(360deg);
+	}
+}

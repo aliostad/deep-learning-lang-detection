@@ -1,0 +1,109 @@
+
+/*############companyProÖ÷ÌåCSS###############*/
+
+/*¹«Ë¾¸Å¿ö*/
+.model-img{
+	margin:0px auto;
+}
+.row-3{
+	margin-top:30px;
+}
+.model-title{
+	text-align:center;
+	color:#fff;
+	font-size:22px;
+	padding:15px 0px;
+}
+.model-list li{
+	text-align:center;
+	background-color:#f6f6f6;
+	font-size:16px;
+}
+.model-list li a{
+	color:#545353;
+}
+.model-list li a:hover{
+	text-decoration:none;
+	color:#005197;
+}
+.model-details-title{
+	padding:15px 0px;
+	font-size:18px;
+	border-bottom:1px #005197 solid;
+	color:#005197;
+	margin-bottom:10px;
+}
+.model-details p{
+	line-height:30px;
+	text-indent:2em;
+	text-align:justify;
+	text-justify:inter-ideograph;
+}
+.model-details img{
+	margin:0px auto;
+}
+.news-model{
+	margin-top:15px;
+}
+.news-model span{
+	float:right;
+}
+.news-model a{
+	color:#666;
+	font-size:16px;
+}
+.news-model a:hover, .news-model a:focus{
+	text-decoration:none;
+	color:#d30a1c;
+}
+
+.news-model p{
+	margin-top:5px;
+	font-size:13px;
+}
+.paging{
+	text-align:center;
+}
+.pagination .active a{
+	background-color:#005197;
+	border-color:#005197;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

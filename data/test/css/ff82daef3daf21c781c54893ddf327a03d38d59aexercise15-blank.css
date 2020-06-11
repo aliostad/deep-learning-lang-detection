@@ -1,0 +1,148 @@
+/*Zero browser defaults*/
+body * {margin:0; padding:0; border:none;text-indent:0;text-decoration: none;outline:none;}
+
+/* ------------------------
+	Basic style 
+ ------------------------ */
+body			{font-family:georgia; margin:0; padding:0;}
+h1, h2, p, ul, ol {font-weight:normal;margin-bottom:15px; font-size:15px; line-height:21px; }
+a 				{color:#00b4ff; /*blue*/}
+
+
+
+
+/* ------------------------
+	Layout
+ ------------------------ */
+
+/* Write a rule that puts the color #fffabe (blue) 
+   in the background of the page */
+
+
+/* Write a rule for the #wrap div that...
+   - sets its width to 90% of the page
+   - pushes it 20px from the left edge of the browser
+   - restricts its width to 90% of the browser window */
+
+
+
+/* Write a rule for the #main div that ...
+   - gives it a white background
+   - sets its width to 80% of #main
+   - sets a min-width of 400px and a max-width of 800px
+   - floats it left
+   - creates 20px of padding all around it
+   - adds a left-hand margin of 120px */
+
+
+
+
+/* Write a rule for all images inside #main
+   that limits their width to a maximum of 
+   100% of their container */
+
+
+
+
+
+/* ------------------------
+	Nav
+ ------------------------ */
+
+/* Write a rule for the #nav list that...
+   - sets the width to 100px
+   - adds 20px of padding on all sides
+   - sets the bg color to white
+   - applies position:fixed;
+   - turns off bullets 
+  */
+
+
+
+
+/* Write a rule for the all links inside #nav that...
+   - applies the icons.png as a bg image
+   - sets both height and width to 24px
+   - sets a bottom margin of 10px
+   - makes the links and images clickable (hint: use the display property)
+   - moves the link texts 30px to the right of their background images */
+
+
+
+
+
+/* Write a set of rules, one for each nav link, that...
+   - uses background-position to reveal the correct icon for each link
+   - color codes the icons AND link text: #78b1d9 for home, #7dd978 for info, #ffb006 for contact
+
+   Use the same color coding on the background color of the body of each page 
+   while you're at it. Hint: start by writing a rule for "#home, #n-home a" 
+   and extrapolate from there */
+
+
+
+/* Write a general rule for all nav links that 
+   changes their color on hover to gray */...
+
+
+
+
+/* ------------------------
+	Home Page
+ ------------------------ */
+
+/* Write a rule for the image on the home page that
+   - floats it to the right 
+   - gives it a 20px left margin */
+
+
+
+
+/* ------------------------
+	Info Page
+ ------------------------ */
+
+/* Write a rule for paragraphs on the info page that
+   - floats them to the left
+   - gives them a 20px bottom margin
+   - sets their maximum width to 100% */
+
+
+
+/* Write a rule for images on the info page that
+   - floats them to the left
+   - sets their maximum width to 75% of their container */
+
+
+/* Write a rule for the caption texts on the info page that
+   - floats them to the RIGHT
+   - sets their maximum width to 25%  of their container
+   - adds a 1px border to the top, colored #7dd978
+   - adds 8px between the text and the border 
+   - sets the font and leading to 10px/12px Arial, colored #333 */
+
+
+
+/* ------------------------
+	Contact Page
+ ------------------------ */
+
+/* Write a rule for the #table div that
+   - sets its maximum width to 100% of its container 
+   - ensures that child elements will be positioned 
+     according to the table div's top-left corner */
+
+
+
+/* Write a rule for the the top, left, and foot paragraphs that
+   - sets their maximum width to 25% of their container 
+   - positions them according to the table div's top-left corner */
+
+
+/* Write a set of rules for the the top, left, and foot paragraphs that
+   - positions them with percentages
+   - adds a 1px solid line to serve as a pointer
+   - adds padding where necessary */
+
+
+

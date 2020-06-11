@@ -1,0 +1,123 @@
+/**
+* @package JomSocial
+* @subpackage Template
+* @copyright (C) 2011 by Slashes & Dots Sdn Bhd - All rights reserved!
+* @license GNU/GPL, see LICENSE.php
+*
+*
+* style.messaging.css - Contains inbox tyles (global)
+*/
+
+#community-wrap .cInbox-Message {
+	position: relative;
+	margin-bottom: 8px;
+	padding-bottom: 8px;
+}
+
+#community-wrap .cInbox-Message .cAvatar {
+	position: absolute;
+	left: 0;
+	top: 8px;
+}
+
+#community-wrap .cInbox-Message + .cInbox-Message,
+#community-wrap .cInbox-ReplyForm {
+	border-top: 1px dotted #ccc;
+}
+
+#community-wrap .cMessage-Body {
+	position: relative;
+	margin: 0 0 0 46px;
+	min-height: 30px;
+	padding: 8px 8px 26px 8px;
+	background-color: #fff;
+}
+
+#community-wrap .cMessage-Content {
+	margin-top: 4px;
+}
+
+#community-wrap .cMessage-Body .cMeta {
+	position: absolute;
+	bottom: 0px;
+	left: 8px;
+}
+
+#community-wrap .cMessage-Author {
+	font-weight: bold;
+}
+
+#community-wrap .cInbox-ReplyForm .replybox {
+	min-height: 40px;
+	height: 40px;
+}
+
+/* Multiple recipient at private Messaging function */
+
+#community-wrap #writeMessageForm .title {
+	font-size:100%;
+	font-weight:bold;
+	color:inherit;
+}
+
+#writeMessageForm #addRecipient {
+	background:#424242;
+	color:white;
+	padding:4px 10px;
+	display:inline-block;
+}
+
+#writeMessageForm #addRecipient:hover {
+	background:#808080;
+}
+
+#writeMessageForm #inbox-selected-to {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+#writeMessageForm #inbox-selected-to li {
+	display:inline-block;
+	border:1px solid #e6e6e6;
+	margin:0 7px 7px 0;
+	height:27px;
+	line-height:27px;
+	background:#f7f7f7;
+	position:relative;
+}
+
+#writeMessageForm #inbox-selected-to .invitation-avatar {
+	float:left;
+	width:27px;
+	height:27px;
+	border-right:1px solid #f0f0f0;
+}
+
+#writeMessageForm #inbox-selected-to div {
+	float:left;
+	display:inline;
+}
+
+#writeMessageForm #inbox-selected-to .invitation-name {
+	margin:0 10px;
+	font-style:italic;
+	color:#424242;
+	font-weight:lighter;
+	font-size:12px;
+}
+
+#writeMessageForm #inbox-selected-to .invitation-check input[type=checkbox] {
+	display:none;
+}
+
+#writeMessageForm #inbox-selected-to .invitation-check input[type=checkbox]:checked + label {
+	background:url('../images/remove.png') no-repeat;
+	display:inline-block;
+	position:absolute;
+	width:10px;
+	height:10px;
+	right:-3px;
+	top:-3px;
+	cursor:pointer;
+}

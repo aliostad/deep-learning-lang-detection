@@ -1,0 +1,53 @@
+.chart-editor {
+}
+
+.header {
+    flex-basis: 100%;
+}
+
+.chart-model {
+}
+
+    .chart-model > .fields {
+        display: flex;
+        flex-direction: row;
+
+        list-style: none;
+    }
+
+    .chart-model > .fields > .field {
+        flex-align: stretch;
+        flex-basis: 250px;
+
+        margin: 10px;
+        padding: 10px;
+        background-color: #eee;
+    }
+
+.chart-container {
+    min-height: 300px;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+    select.fields,
+    select.aggregates {
+        display: block;
+        width: 100%;
+
+        margin-top: 5px;
+    }
+
+        .field i {
+            float: left;
+        }
+
+.chart-editor select,
+.chart-editor option {
+    padding-top: 3px;
+    padding-bottom: 1px;
+}

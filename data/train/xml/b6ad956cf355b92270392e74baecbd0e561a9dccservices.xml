@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<services>
+  <service id="1000010001" class="org.young.isocket.service.TestService" desc="测试的服务1">
+  </service>
+   <service id="1000010002" class="org.young.isocket.service.TestErrorService" desc="测试的服务2" >
+  </service>
+  
+  <service id="1000010003" class="org.young.isocket.service.TestNotifyService" desc="测试的通知服务3" >
+  </service>
+  
+  <service id="0000000001" class="org.young.isocket.service.AuthService" desc="认证服务" >
+  </service> 
+   <service id="0000000002" class="org.young.isocket.service.StopServerService" desc="停止服务" >
+  </service>
+</services>

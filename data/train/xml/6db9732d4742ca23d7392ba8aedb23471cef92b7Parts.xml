@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipes>
+	<recipe outId="$partAcxiumCore" stackSize="1">
+	    <layout>
+	        XAX
+	        ARA
+	        XAX
+	    </layout>
+	    <mapping id="$ingotAcxium">A</mapping>
+	    <mapping id="$item.redstone">R</mapping>
+	</recipe>
+	<recipe outId="$partAlloyCasing" stackSize="2">
+	    <layout>
+	        AAA
+	        BBB
+	        CCC
+	    </layout>
+	    <mapping id="$ingotAcxium">A</mapping>
+	    <mapping id="$ingotBisogen">B</mapping>
+	    <mapping id="$ingotCydrine">C</mapping>
+	</recipe>
+	<recipe outId="$partAcxogenScreen" stackSize="1">
+	    <layout>
+	        ARA
+	        GPG
+	        BRB
+	    </layout>
+	    <mapping id="$ingotAcxium">A</mapping>
+	    <mapping id="$ingotBisogen">B</mapping>
+	    <mapping id="$item.yellowDust">G</mapping>
+	    <mapping id="$tile.thinGlass">P</mapping>
+	    <mapping id="$item.redstone">R</mapping>
+	</recipe>
+	<recipe outId="$partBisogenGear" stackSize="1">
+	    <layout>
+	        XBX
+	        BIB
+	        XBX
+	    </layout>
+	    <mapping id="$ingotBisogen">B</mapping>
+	    <mapping id="$item.ingotIron">I</mapping>
+	</recipe>
+	<recipe outId="$partCydrineMotor" stackSize="1">
+	    <layout>
+	        XCX
+	        CRC
+	        XCX
+	    </layout>
+	    <mapping id="$ingotCydrine">C</mapping>
+	    <mapping id="$item.redstone">R</mapping>
+	</recipe>
+	<recipe outId="$partCydriumSensor" stackSize="1">
+	    <layout>
+	        CPC
+	        AGA
+	        XCX
+	    </layout>
+	    <mapping id="$ingotAcxium">A</mapping>
+	    <mapping id="$ingotBisogen">B</mapping>
+	    <mapping id="$item.yellowDust">G</mapping>
+	    <mapping id="$tile.thinGlass">P</mapping>
+	    <mapping id="$item.redstone">R</mapping>
+	</recipe>
+</recipes>

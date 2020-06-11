@@ -1,0 +1,34 @@
+<itens-mapping>
+	
+	<mapping id="main">
+		<item file="content/main.php" />
+	</mapping>
+	
+	<mapping id="addtest">
+		<item file="content/add_test.php" />
+	</mapping>
+	
+	<mapping id="topbar">
+		<item file="content/instructions.php" />
+		<item file="content/login_bar.php" />
+		<item file="content/login_status.php" />
+	</mapping>
+	
+	<mapping id="bottombar">
+		<item file="content/expectations.php" />
+		<item file="content/result_buttons.php" />
+	</mapping>
+	
+	<mapping id="random">
+		<item file="content/random_test.php" />
+	</mapping>
+	
+	<mapping id="jquery-ui-javascript">
+		<item file="content-javascript/jquery-ui.php" />
+	</mapping>
+
+	<mapping id="jquery-plugins-javascript">
+		<item file="content-javascript/jquery-plugins.php" />
+	</mapping>
+	
+</itens-mapping>

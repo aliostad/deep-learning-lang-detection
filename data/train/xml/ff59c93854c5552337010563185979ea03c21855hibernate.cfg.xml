@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="rss_db_session">
+  <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+  <property name="hibernate.connection.password">@greguojam</property>
+  <property name="hibernate.connection.url">jdbc:postgresql://158.129.0.129:5432/ernestos</property>
+  <property name="hibernate.connection.username">ernesta</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+  <property name="connection_pool_size">1</property>
+  <property name="show_sql">false</property>
+  
+  <mapping resource="com/ernkebe/mapping/Sites.hbm.xml"/>
+  <mapping resource="com/ernkebe/mapping/UserData.hbm.xml"/>
+  <mapping resource="com/ernkebe/mapping/ArticlesUncommonWordsStem.hbm.xml"/>
+  <mapping resource="com/ernkebe/mapping/CommonWordsEnds.hbm.xml"/>
+  <mapping resource="com/ernkebe/mapping/AnalizedDataClassifier.hbm.xml"/>
+  <mapping resource="com/ernkebe/mapping/ArticlesUncommonWords.hbm.xml"/>
+  <mapping resource="com/ernkebe/mapping/CommonWords.hbm.xml"/>
+  
+  <mapping resource="com/ernkebe/mapping/VwCommonWordsEndsSimpe.hbm.xml"/>
+  <mapping resource="com/ernkebe/mapping/VwCommonWordsSimpe.hbm.xml"/>
+    
+  <mapping resource="com/ernkebe/mapping/ProvidedCategories.hbm.xml"/>
+  <mapping resource="com/ernkebe/mapping/ArticleCategories.hbm.xml"/>
+  <mapping resource="com/ernkebe/mapping/Article.hbm.xml"/>
+
+  <mapping resource="com/ernkebe/mapping/KmeansUncommonWords.hbm.xml"/>
+  <mapping resource="com/ernkebe/mapping/KmeansUncommonStemWords.hbm.xml"/>
+  <mapping resource="com/ernkebe/mapping/CarrotArticle.hbm.xml"/>
+  <mapping resource="com/ernkebe/mapping/CarrotCategories.hbm.xml"/>
+  <mapping resource="com/ernkebe/mapping/CarrotArticle2.hbm.xml"/>
+  <mapping resource="com/ernkebe/mapping/CarrotCategories2.hbm.xml"/>
+  
+  <mapping resource="com/ernkebe/mapping/newsWords/ArticleNewsWords.hbm.xml"/>
+  <mapping resource="com/ernkebe/mapping/newsWords/NewsWords.hbm.xml"/>
+  <mapping resource="com/ernkebe/mapping/newsWords/ArticleNewsWordsStem.hbm.xml"/>
+  <mapping resource="com/ernkebe/mapping/newsWords/NewsWordsStem.hbm.xml"/>
+  
+  
+ </session-factory>
+</hibernate-configuration>

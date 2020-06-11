@@ -1,0 +1,69 @@
+
+
+.nav, .pagination, .carousel a { cursor: pointer; } 
+
+div[data-angular-treeview] {
+  /* prevent user selection */
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  /* default */
+  font-family: Ariel;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+div[data-tree-model] ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+}
+
+div[data-tree-model] li {
+  padding: 0 0 0 20px;
+  line-height: 20px;
+  margin: 0;
+}
+
+
+
+div[data-tree-model] .icon-caret-down {
+  font-size: 30px;
+  padding-left: 0;
+}
+
+div[data-tree-model] .icon-caret-right {
+  font-size: 30px;
+  padding-left: 7px;
+}
+
+div[data-tree-model] li .normal {
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+
+
+div[data-tree-model] li i, 
+div[data-tree-model] li span {
+  cursor: pointer;
+}
+
+
+
+div[data-tree-model] li .icon-expand {
+  display: block;
+  float: right;
+  color: #555;
+}
+
+div[data-tree-model] li .icon-collapse {
+  display: block;
+  float: right;
+  color: #555;
+}
+
+

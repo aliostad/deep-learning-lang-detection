@@ -1,0 +1,89 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * ____file_title____
+ *
+ * @author    Qualiteam software Ltd <info@x-cart.com>
+ * @copyright Copyright (c) 2011-2014 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+ * @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+ * @link      http://www.x-cart.com/
+ */
+
+ul.items-list,
+  .no-items-found,
+  .enter-more-characters
+{
+  display: block;
+  position: absolute;
+  border: 1px solid #c3c3c3;
+  border-radius: 4px;
+  margin: -24px 0px 0px 0px;
+}
+
+ul.items-list li,
+  .no-items-found,
+  .enter-more-characters
+{
+  overflow: hidden;
+  position: relative;
+  padding: 2px 8px;
+  background-color: #ffffff;
+}
+
+ul.items-list li:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+ul.items-list li:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+ul.items-list li.active,
+  ul.items-list li.active .right-fade
+{
+  background: #c3f9ec;
+}
+
+ul.items-list li:hover {
+  cursor: pointer;
+}
+
+.no-items-found,
+  .enter-more-characters
+{
+  position: absolute;
+  margin-top: 3px;
+}
+
+.ui-dialog .ui-dialog-content {
+  overflow: visible !important;
+}
+
+.model-definition {
+  display: block;
+  color: #8f8f8f;
+  font-style: italic;
+  font-size: 14px;
+  padding-top: 4px;
+}
+
+.model-definition.model-not-defined {
+  visibility: hidden;
+  height: 16px;
+}
+
+.spinner {
+  position: absolute;
+  margin-top: -31px;
+  right: 11px;
+}
+
+.model-selector input.model-input-selector {
+  padding-right: 40px !important;
+}
+
+.model-selector .items-list {
+  z-index: 10;
+}

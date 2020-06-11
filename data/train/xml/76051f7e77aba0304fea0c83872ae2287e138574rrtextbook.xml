@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProcessList>
+	<Process>
+		<name>P1</name>
+		<burstList>
+			<burst>24</burst>
+		</burstList>
+		<ioList>
+		</ioList>
+		<arrivalTime>0</arrivalTime>
+	</Process>
+	<Process>
+		<name>P2</name>
+		<burstList>
+			<burst>3</burst>
+		</burstList>
+		<ioList>
+		</ioList>
+		<arrivalTime>0</arrivalTime>
+	</Process>
+	<Process>
+		<name>P3</name>
+		<burstList>
+			<burst>3</burst>
+		</burstList>
+		<ioList>
+		</ioList>
+		<arrivalTime>0</arrivalTime>
+	</Process>
+</ProcessList>

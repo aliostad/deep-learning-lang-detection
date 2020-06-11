@@ -1,0 +1,144 @@
+/* Music uploadbar */
+.music #uploadbar{
+  margin-top: 100px;
+  height: calc(100% - 130px);
+}
+
+/* Music content */
+.music #content{
+  margin-top:30px;
+}
+.music #content article{
+  height: 35px;
+  border-bottom: 1px solid #8E001C;
+  line-height: 35px;
+  padding:5px 5px 5px 45px;
+  position:relative;
+  cursor: default;
+}
+.music #content article:hover{
+  background: #FFF5F5;
+}
+.music #content article figure {
+  position:absolute;
+  left:5px;
+  width:35px;
+  line-height:34px;
+  text-align: center;
+}
+.music #content article figure img{
+  max-width:35px;
+  max-height:35px;
+  vertical-align: middle;
+}
+.music #content article.jp-playing figure:before {
+  background: url("/images/icon_play.png") no-repeat center center;
+  background-size: 20px 20px;
+  content: "";
+  height: 35px;
+  left: 0px;
+  opacity: 0.7;
+  position: absolute;
+  top: 0px;
+  width: 35px;
+  z-index: 2;
+}
+.music #content article.folder figure img:nth-of-type(2){
+  background: #FFFFFF;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+.music #content article.selected, .music #content article.ui-selected, .music #content article.ui-selecting{
+  background: #FFDCDC;
+}
+.music #content article div.meta{
+  display: none;
+}
+.music #content article.audio div.info{
+  float:right;
+}
+.music #content article.audio div.meta{
+  float:left;
+  line-height: 18px;
+  color: #424242;
+  display:block;
+}
+.music #content article.audio div.meta .track{
+  float:left;
+  font-weight:bold;
+}
+.music #content article.audio div.meta .track:after{
+  content: "-";
+  padding: 0px 3px;
+}
+.music #content article.audio div.meta .title{
+  float:left;
+  font-weight:bold;
+}
+.music #content article.audio div.meta .artist{
+  float:left;
+  font-style:italic;
+}
+.music #content article.audio div.meta .album{
+  clear:both;
+  float:left;
+  font-style:italic;
+}
+.music #content article.audio div.meta .album:after {
+  content: "-";
+  padding: 0px 3px;
+}
+.music #content article.audio div.meta .rating {
+  float: left;
+  clear: right;
+  margin-left: 10px;
+  margin-top: 1px;
+}
+.music #content article.audio div.meta .rating img {
+  width: 12px;
+  float: left;
+  margin-top: 1px;
+}
+
+/* Statut des fichiers */
+.write .music #content article.private figure:after, .write .music #content article.cover figure:after {
+  background: none repeat scroll 0 0 #8E001C;
+  color: #FFFFFF;
+  font-size: 19px;
+  font-style: italic;
+  height: 35px;
+  left: 0px;
+  line-height: 35px;
+  margin: 0;
+  opacity: 0.5;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  width: 35px;
+  z-index: 99;
+}
+.write .music #content article.private:hover figure:after, .write .music #content article.cover:hover figure:after {
+  content: "";
+  height: 0;
+  width: 0;
+}
+.write .music #content article.private figure:after{
+  content: "P";
+}
+.write .music #content article.cover figure:after {
+  content: "C";
+}
+.write .music #content article.cover.private figure:after {
+  content: "C / P";
+}
+.music #content article.toremove:before{
+  width: 35px;
+  height: 35px;
+  background: #000000;
+  content: " ";
+  position: absolute;
+  z-index: 1000;
+  opacity: 0.8;
+}

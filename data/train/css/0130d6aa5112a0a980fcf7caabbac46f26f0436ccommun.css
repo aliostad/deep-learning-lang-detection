@@ -1,0 +1,45 @@
+/**
+* Généralités
+*/
+
+body {
+	width: 300px;
+	height: 250px;
+	margin: auto;
+	margin-top: 75px;
+}
+
+
+/**
+* Outils (eau, soleil, graines, pipeau, lettre N et temps)
+*/
+
+nav#navOutils a.boutonOutil {
+	cursor: pointer;
+	height: 30px;
+	width: 40px;
+	padding: 1px;
+	text-decoration: none;
+	display: block;
+}
+
+nav#navOutils a.boutonOutil:hover {
+	border: 2px orange solid;
+}
+
+nav#navOutils a.boutonOutil:active {
+	border: 1px orange solid;
+}
+
+
+/**
+* positionnement des blocs outils, messages et scenes
+*/
+
+nav#navOutils, section#sectionPrincipale, nav#navMusique {
+	display: inline-block;
+}
+
+nav#navOutils {
+	margin: 8px;
+}

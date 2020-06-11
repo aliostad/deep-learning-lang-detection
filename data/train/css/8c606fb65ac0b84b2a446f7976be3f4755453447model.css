@@ -1,0 +1,119 @@
+.main_content{margin-left:280px;}
+ul li{list-style:none;}
+a{text-decoration:none;}
+/*****禱羹묏야으湳駕********/
+.dotWebFloatEditorBar{position : absolute ;z-index:99 !important;display : none ;}
+.dotWebFloatEditorBar .dotWebToolBarButton{display : inline-block ;margin : 2px ;cursor : pointer ;border:1px solid transparent;}
+
+.Model_LeftBox_TitleList li:hover{background-color:rgb(237,237,237);}
+
+/****禱羹鎧乞****/
+.Model_Element_Find{border:1px solid yellow}
+/****禱羹토零긍서으湳駕零*****/
+.Element_Label_added{border:1px solid red !important;}
+.Model_EditBox{min-height:450px;}
+.Element_Styles{position:absolute;display:none;background:#fff}
+.Element_Style{position:absolute;background:#fff}
+.Element_Style_Close{float:right;}
+.Element_CategoryStyle{display:none;}
+.Element_TableStyle{display:none;}
+.Element_TextStyle{display:none;}
+.Model_NewTemplateDialog{line-height:3em;}
+.my-dialog .ui-dialog-titlebar-close{display:none;}
+.Model_NewTemplateDialog input{width:340px;}
+/********친겼눼쉔**********/
+
+
+.Model_TemplateName{width:200px;height:25px;border:1px solid #D0D0D0;margin:10px;padding:0px;}
+.Model_TemplateType{width:110px;height:27px;border:1px solid #D0D0D0;margin:10px;font-family:Microsoft YaHei;font-size:14px;}
+
+
+/****친겼긍서혐湳駕零*****/
+.Model_Element{margin:0px auto;padding:1em 2em;}
+.Model_Element:hover{background:rgb(237,237,237);}
+.Model_Element_Name{font-weight:bold;font-size:14px;text-align:center;}
+.Model_ModelName_Bar{font-weight:bold;font-size:24px;text-align:center;margin:10px 0;}
+.Model_Bar{float:left;}
+.LeftBox_Title{font-size:14px;margin:10px 0px;}
+.LeftBox_Items{margin-top:10px;line-height:20px;height:375px;overflow-y:scroll;}
+.LeftBox_SearchContent{height:23px;width:188px;border:1px solid #E0E0E0;}
+.LeftBox_SearchButton{height:25px;width:50px;border:1px solid #E0E0E0;}
+.Element_Style {border:1px solid #ebebeb}
+.Element_EType{display:none;position:absolute;min-width:160px;min-height:120px;background:#fff;border:1px solid #ccc;padding:6px;}
+.Element_EType>div{line-height:24px;float:left;margin-right:30px;}
+.Element_Type{cursor:pointer;}
+
+.Element_BaseTitle{color:#777;}
+.Element_LayoutTitle{color:#777;}
+.Element_CloseBar{float:right;}
+.Model_ComDialog_List{height:400px;}
+
+
+
+
+/*****警속禱羹*******/
+.Model_AddElement{height:25px;width:75px;border:1px solid #D0D0D0;float:left;margin:20px 0px 10px 10px;font-size:14px;background-color:#4672C4;color:#fff;}
+/*****괏닸객큐*****/
+.Model_Save{background-color:#4672C4; border: 1px solid #4672C4;color: #fff; font-size: 14px;height:25px;margin:20px 10px 10px 0px;}
+/*****친겼朞嶝움湳駕*******/
+/******禱羹朞嶝뚤뺐움*********/
+/*.Model_AddElement_div,.Model_AddElement_next{font-family:Microsoft YaHei;font-size:14px;z-index:101;width:600px;height:430px;border:1px solid #B7B7B7;margin:0 auto;}		*/
+.Model_AE_Search{height:23px;width:500px;border:1px solid #CBCBCB;margin:0px 0px 10px 0px;}
+.Model_btn_AE_Search{height:25px;width:50px;border:1px solid #CBCBCB;margin:0px 0px 10px 0px;cursor:pointer;}
+/*.Model_AddElement_data_div,.Model_AddElement_data_next{width:560px;height:370px;border:1px solid #fff;overflow:auto;margin:0 auto;}*/
+/*.Model_AddElement_data_div,.Model_AddElement_data_next{height:370px;overflow:auto;margin:0 auto;}*/
+.Model_AddElement_data_next{height:415px;}
+.Model_AE_content{height:380px;overflow-y:scroll;}
+.Model_AE_content_table{width:100%;border-collapse:collapse;}
+.Model_AE_content_table tr{line-height: 2em;}
+.Model_AE_content_table tr td{padding:0.3em;}
+.Model_AE_content_table tr td:nth-last-child(1){text-align: right;}
+.Model_AE_content_table .hidden{display:none;}
+.Model_AE_content_table tr:hover{background:#ebebeb}
+/*.Model_AE_content_table_td1{width:470px;}
+.Model_AE_content_table_td2{width:60px;}*/
+
+.Model_btn_next,.Model_btn_cancel,.Model_btn_finish,.Model_btn_back{margin:10px 10px 0px 0px;padding:0em 1em;line-height:24px;border:1px solid #D6D6D6;}
+.Model_btn_add_Element{height:23px;width:50px;border:1px solid #D8D8D8;cursor:pointer;background-color:#fff;}
+.Model_btn_finish,.Model_btn_next{background-color:#4672C4;color:#fff;}
+.Model_add_ul{list-style:none;padding:0px;margin:0px;cursor:move;}
+.Model_add_check_title{margin-left:30px;width:150px;display:table-cell;padding:5px;}
+.Model_add_li{list-style: none;display:table-row;}
+.Model_add_li:hover{background-color:#E8E5E5;}
+.Model_add_li_value{width:400px;display:table-cell;padding:5px;}
+.add_li_del{margin-left:30px;border:1px solid #CBCBCB;background-color:#fff;cursor:pointer;font-family:Microsoft YaHei;font-size:14px;} 
+.add_li_del:hover{border:1px solid red;background-color:#ED7D31;color:#fff;}
+.AESearch { background-color:#3399FF;color:#fff;} /**鎧乞써벎競뻣奈**/
+/*********END********/
+
+
+.sys_fontfamily{cursor:pointer;}
+
+/*tsform*/
+.layoutTd{background:#ebebeb;}
+.tsFormNavigation{background:#ebebeb;width:56px;margin:0;padding:0}
+.sys_tsform{min-width:311px;min-height:500px;background:#FAFAFA;}
+.tsFormNavigation .ui-state-highlight{background:#FAFAFA;border:0px solid #FAFAFA;color:#D35B5B;}
+.tsFormWrapper .tsFormNavigation{margin:0;padding:0}
+.tsFormContentZone{margin:0;padding:0}
+.tsFormNavigation .navigationItem{margin:0;padding:0}
+.tsFormNavigation{width:90px;text-align:center;}
+.navigationItem{height:35px;line-height:35px;border:none;border-bottom:1px solid #e0e0e0;}
+.tsFormContentZone{background:#FAFAFA;}
+.input_text{background:transparent;border-style: none none solid;border-color:gray;}
+.more_text{color: #FA9300;cursor: pointer; font-size: 10px; margin-left: 8px;}
+
+/*눼쉔貢籃눗왯*/
+.sys_theme{float:left;}
+
+/*****토零******/
+
+
+
+.ui-dialog .tsFormContentZone{margin:0;background: white;}
+/*
+.ui-dialog .tsFormContentZone table[type="text"]{width:100%;}
+.ui-dialog .tsFormContentZone table input[type="text"]{width:90%;}*/
+.ui-dialog .form_text,.ui-dialog .form_input_txt{width: 5em;}
+
+/****鎧乞******/

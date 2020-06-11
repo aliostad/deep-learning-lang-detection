@@ -1,0 +1,40 @@
+/*服务栏目列表页*/
+.service-list{
+	width:996px;margin:0px auto;overflow:hidden;
+position:relative;padding-top:87px;margin-bottom:18px;_padding-top:0px;
+}
+.service-list h1{
+	padding-top:33px;width:996px;font-size:58px;
+	margin-bottom:24px;color:#333333;line-height:60px;font-weight:normal;
+}
+.service-list ul{
+	width:996px;overflow: hidden;
+}
+.service-list ul li{
+	height:321px; float:left;
+	margin-right:6px; margin-left:6px;width:316px;overflow: hidden;
+}
+
+.service-list ul li em{
+	display:block; width:316px;height:214px; margin-bottom:17px;overflow: hidden;
+}
+.service-list ul li h2{
+	height:30px;font-weight:normal;display:block;
+}
+.service-list ul li h2 a{
+	color:#55BD35;line-height:30px;display:block;width:100%;
+}
+.service-list ul li p{
+	font-size:12px;
+}
+
+.service-list-son ul li{
+	height:279px; float:left;
+	margin-right:3px;width:240px;margin-left:3px;
+}
+.service-list-son ul li em{
+	width:240px;height:180px;
+}
+.service-list-son .right-list-li{
+	margin:0px;
+}

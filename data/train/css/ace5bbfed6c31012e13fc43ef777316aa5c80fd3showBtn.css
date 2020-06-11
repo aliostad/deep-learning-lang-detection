@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+#view{ width:768px; height:1024px;  position:relative; overflow:hidden;}
+.showBtn { position:absolute;}
+.showBtn.show{ z-index:100;}
+.showBtn .button{ width:44px; height:44px; position:absolute;padding:7px;-webkit-transition:all 0.5s ease-out; }
+.showBtn.rt1{right:66px; top:50px;}
+.showBtn.rt2{right:166px; top:50px;}
+.showBtn.lt .button{left:-29px; top:-29px;}
+.showBtn.rt .button{right:-29px; top:-29px;}
+.showBtn.lb .button{left:-29px; bottom:-29px;}
+.showBtn.rb .button{right:-29px; bottom:-29px;}
+
+
+
+.showBtn .text{ line-height:1.5em;position:absolute;border-radius:5px; opacity:0; -webkit-transition:all 0.5s ease-out;  
+text-align:justify;text-justify:inter-ideograph;font:nomral 16px TrebuchetMS; pointer-events:none;
+width:17em;
+color:#FFF;
+}
+.showBtn.lt .text{-webkit-transform-origin:left top; -webkit-transform:rotate(-180deg) ;left:0; top:0; }
+.showBtn.rt .text{-webkit-transform-origin:right top; -webkit-transform:rotate(180deg) ;right:0; top:0; }
+.showBtn.lb .text{-webkit-transform-origin:left bottom;-webkit-transform:rotate(-180deg) ;left:0; bottom:0;  }
+.showBtn.rb .text{-webkit-transform-origin:right bottom; -webkit-transform:rotate(180deg) ;right:0; bottom:0; }
+
+.showBtn.show.lt .button,.showBtn.show.lb .button{-webkit-transform:rotate(135deg); } 
+.showBtn.show.rt .button,.showBtn.show.rb .button{-webkit-transform:rotate(-135deg); }
+.showBtn.show .text{-webkit-transform:rotate(0deg);opacity:1; } 
+
+
+
+/*圆形的弹出*/
+.showBtn.circle .text{ padding:0;border-radius:0px; background:none;  -webkit-transform:scale(0); width:auto; line-height:0; }
+.showBtn.circle .t1{-webkit-transition-delay:0.1s;}
+.showBtn.circle .t2{-webkit-transition-delay:0.2s;}
+.showBtn.circle .t3{-webkit-transition-delay:0.3s;}
+.showBtn.circle .text img{ display:block;}
+.showBtn.circle.show .text{ -webkit-transform:scale(1) }
+.showBtn.circle .button{left:-25px; top:-25px; }
+.showBtn.show.circle .button{-webkit-transform:rotate(135deg); } 
+
+
+
+/*显示前图*/
+#front{ position:absolute; left:0; top:0; opacity:0; -webkit-transition:all 0.3s; pointer-events:none; }
+#front.show{ opacity:1; }
+#front img{ display:block;}
+#showFront_btn{ z-index:100;}
+
+
+

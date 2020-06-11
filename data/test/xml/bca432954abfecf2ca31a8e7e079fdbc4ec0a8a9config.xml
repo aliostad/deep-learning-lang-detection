@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <database name="databasename" username="test" password="testing" piggyback="false">
+    <tables>
+      <table name="tablename" primaryKey="tablename.Id" foreignKey="foreignkey"/>
+    </tables>
+  </database>
+  <recordTemplates>
+   <template name="OAI" schema="http://www.openarchives.org/OAI/oai_marc" location="org/jafer/conf/jdbcConfig/OAITemplate.xml"/>
+   <template name="MODS" schema="http://www.loc.gov/mods/" location="org/jafer/conf/jdbcConfig/MODSTemplate.xml"/>
+  </recordTemplates>
+  <attributes>
+    <semantic value="1" name="personal_name" column="tablename.Author" prefix="%" append="%"/>
+    <semantic value="2" name="corporate_name" column="" prefix="%" append="%"/>
+    <semantic value="3" name="conference_name" column="" prefix="%" append="%"/>
+    <semantic value="4" name="title" column="tablename.Title" prefix="%" append="%"/>
+    <semantic value="5" name="title_series" column="" prefix="%" append="%"/>
+    <semantic value="6" name="title_uniform" column="" prefix="%" append="%"/>
+    <semantic value="7" name="isbn" column="" prefix="%" append="%"/>
+    <semantic value="8" name="issn" column="" prefix="%" append="%"/>
+    <semantic value="9" name="lc_card_number" column="" prefix="%" append="%"/>
+    <semantic value="10" name="bnb_card_number" column="" prefix="%" append="%"/>
+    <semantic value="11" name="bgf_number" column="" prefix="%" append="%"/>
+    <semantic value="12" name="local_number" column="" prefix="%" append="%"/>
+    <semantic value="13" name="dewey_classification" column="" prefix="%" append="%"/>
+    <semantic value="14" name="udc_classification" column="" prefix="%" append="%"/>
+    <semantic value="15" name="bliss_classification" column="" prefix="%" append="%"/>
+    <semantic value="16" name="lc_call_number" column="" prefix="%" append="%"/>
+    <semantic value="17" name="nlm_call_number" column="" prefix="%" append="%"/>
+    <semantic value="18" name="nal_call_number" column="" prefix="%" append="%"/>
+    <semantic value="19" name="mos_call_number" column="" prefix="%" append="%"/>
+    <semantic value="20" name="local_classification" column="" prefix="%" append="%"/>
+    <semantic value="21" name="subject_heading" column="tablename.Subject" prefix="%" append="%"/>
+    <semantic value="22" name="subject_rameau" column="" prefix="%" append="%"/>
+    <semantic value="23" name="bdi_index_subject" column="" prefix="%" append="%"/>
+    <semantic value="24" name="inspec_subject" column="" prefix="%" append="%"/>
+    <semantic value="25" name="mesh_subject" column="" prefix="%" append="%"/>
+    <semantic value="26" name="pa_subject" column="" prefix="%" append="%"/>
+    <semantic value="27" name="lc_subject_heading" column="" prefix="%" append="%"/>
+    <semantic value="28" name="rvm_subject_heading" column="" prefix="%" append="%"/>
+    <semantic value="29" name="local_subject_index" column="" prefix="%" append="%"/>
+    <semantic value="30" name="date" column="" prefix="%" append="%"/>
+    <semantic value="31" name="date_of_publication" column="" prefix="%" append="%"/>
+    <semantic value="32" name="date_of_acquisition" column="" prefix="%" append="%"/>
+    <semantic value="33" name="title_key" column="" prefix="%" append="%"/>
+    <semantic value="34" name="title_collective" column="" prefix="%" append="%"/>
+    <semantic value="35" name="title_parallel" column="" prefix="%" append="%"/>
+    <semantic value="36" name="title_cover" column="" prefix="%" append="%"/>
+    <semantic value="37" name="title_added_title_page" column="" prefix="%" append="%"/>
+    <semantic value="38" name="title_caption" column="" prefix="%" append="%"/>
+    <semantic value="39" name="title_running" column="" prefix="%" append="%"/>
+    <semantic value="40" name="title_spine" column="" prefix="%" append="%"/>
+    <semantic value="41" name="title_other_variant" column="" prefix="%" append="%"/>
+    <semantic value="42" name="title_former" column="" prefix="%" append="%"/>
+    <semantic value="43" name="title_abbreviated" column="" prefix="%" append="%"/>
+    <semantic value="44" name="title_expanded" column="" prefix="%" append="%"/>
+    <semantic value="45" name="subject_precis" column="" prefix="%" append="%"/>
+    <semantic value="46" name="subject_rswk" column="" prefix="%" append="%"/>
+    <semantic value="47" name="subject_subdivision" column="" prefix="%" append="%"/>
+    <semantic value="48" name="no_natl_biblio" column="" prefix="%" append="%"/>
+    <semantic value="49" name="no_legal_deposit" column="" prefix="%" append="%"/>
+    <semantic value="50" name="no_govt_pub" column="" prefix="%" append="%"/>
+    <semantic value="51" name="no_music_publisher" column="" prefix="%" append="%"/>
+    <semantic value="52" name="number_db" column="" prefix="%" append="%"/>
+    <semantic value="53" name="number_local_call" column="" prefix="%" append="%"/>
+    <semantic value="54" name="code_language" column="" prefix="%" append="%"/>
+    <semantic value="55" name="code_geographic_area" column="" prefix="%" append="%"/>
+    <semantic value="56" name="code_institution" column="" prefix="%" append="%"/>
+    <semantic value="57" name="name_and_title" column="" prefix="%" append="%"/>
+    <semantic value="58" name="name_geographic" column="" prefix="%" append="%"/>
+    <semantic value="59" name="place_publication" column="" prefix="%" append="%"/>
+    <semantic value="60" name="coden" column="" prefix="%" append="%"/>
+    <semantic value="61" name="microform_generation" column="" prefix="%" append="%"/>
+    <semantic value="62" name="abstract" column="" prefix="%" append="%"/>
+    <semantic value="63" name="note" column="" prefix="%" append="%"/>
+    <semantic value="1000" name="author_title" column="" prefix="%" append="%"/>
+    <semantic value="1001" name="record_type" column="" prefix="%" append="%"/>
+    <semantic value="1002" name="name" column="" prefix="%" append="%"/>
+    <semantic value="1003" name="author" column="tablename.Author" prefix="%" append="%"/>
+    <semantic value="1004" name="author_name_personal" column="" prefix="%" append="%"/>
+    <semantic value="1005" name="author_name_corporate" column="" prefix="%" append="%"/>
+    <semantic value="1006" name="author_name_conference" column="" prefix="%" append="%"/>
+    <semantic value="1007" name="identifier_standard" column="" prefix="%" append="%"/>
+    <semantic value="1008" name="subject_lc_children" column="" prefix="%" append="%"/>
+    <semantic value="1009" name="subject_name_personal" column="" prefix="%" append="%"/>
+    <semantic value="1010" name="body_of_text" column="" prefix="%" append="%"/>
+    <semantic value="1011" name="date_time_added_to_db" column="" prefix="%" append="%"/>
+    <semantic value="1012" name="date_time_last_modified" column="" prefix="%" append="%"/>
+    <semantic value="1013" name="authority_format_id" column="" prefix="%" append="%"/>
+    <semantic value="1014" name="concept_text" column="" prefix="%" append="%"/>
+    <semantic value="1015" name="concept_reference" column="" prefix="%" append="%"/>
+    <semantic value="1016" name="any" column="" prefix="%" append="%"/>
+    <semantic value="1017" name="server_choice" column="" prefix="%" append="%"/>
+    <semantic value="1018" name="publisher" column="" prefix="%" append="%"/>
+    <semantic value="1019" name="record_source" column="" prefix="%" append="%"/>
+    <semantic value="1020" name="editor" column="" prefix="%" append="%"/>
+    <semantic value="1021" name="bib_level" column="" prefix="%" append="%"/>
+    <semantic value="1022" name="geographic_class" column="" prefix="%" append="%"/>
+    <semantic value="1023" name="indexed_by" column="" prefix="%" append="%"/>
+    <semantic value="1024" name="map_scale" column="" prefix="%" append="%"/>
+    <semantic value="1025" name="music_key" column="" prefix="%" append="%"/>
+    <semantic value="1026" name="related_periodical" column="" prefix="%" append="%"/>
+    <semantic value="1027" name="report_number" column="" prefix="%" append="%"/>
+    <semantic value="1028" name="stock_number" column="" prefix="%" append="%"/>
+    <semantic value="1030" name="thematic_number" column="" prefix="%" append="%"/>
+    <semantic value="1031" name="material_type" column="" prefix="%" append="%"/>
+    <semantic value="1032" name="doc_id" column="tablename.Id" prefix="%" append="%"/>
+    <semantic value="1033" name="host_item" column="" prefix="%" append="%"/>
+    <semantic value="1034" name="content_type" column="" prefix="%" append="%"/>
+    <semantic value="1035" name="anywhere" column="" prefix="%" append="%"/>
+    <semantic value="1036" name="author_title_subject" column="" prefix="%" append="%"/>
+
+    <relation value="1" name="lt" SQL=" &lt; "/>
+    <relation value="2" name="le" SQL=" &lt;= "/>
+    <relation value="3" name="eq" SQL=" LIKE "/>
+    <relation value="4" name="ge" SQL=" &gt;= "/>
+    <relation value="5" name="gt" SQL=" &gt; "/>
+    <relation value="6" name="ne" SQL=" != "/>
+    <relation value="100" name="phonetic" SQL=""/>
+    <relation value="101" name="stem" SQL=""/>
+    <relation value="102" name="relevance" SQL=""/>
+    <relation value="103" name="always_matches" SQL=""/>
+  </attributes>
+</config>

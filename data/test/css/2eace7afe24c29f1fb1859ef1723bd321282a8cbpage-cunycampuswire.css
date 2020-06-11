@@ -1,0 +1,96 @@
+body.page-template-page-cunycampuswire-php .sidebar {
+	background-repeat: no-repeat;
+	margin-left: -20px;
+	padding-left: 20px;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+body.page-template-page-cunycampuswire-php .sidebar ul li {
+	margin-bottom: 10px;
+}
+
+body.page-template-page-cunycampuswire-php .sidebar ul li p {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	color: #666666;
+	font-style: italic;
+}
+
+body.page-template-page-cunycampuswire-php .message.loading {
+	background-color: #FFFFFF;
+	border-color: #CCCCCC;
+}
+
+body.page-template-page-cunycampuswire-php .main {
+	background-color: #EEEEEE;
+	padding-right: 0px;
+	padding-left:0px;
+	padding-top: 10px;
+}
+
+body.page-template-page-cunycampuswire-php h2 {
+	background-image: url(../images/pages/nycneighborhoodstile_h1385.jpg);
+	color: #EEEEEE;
+	padding: 8px 10px;
+	text-transform: uppercase;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+body.page-template-page-cunycampuswire-php .content {
+	background-color: #EEEEEE;
+	width: 650px;
+}
+
+body.page-template-page-cunycampuswire-php #cuny-campus-wire-dynamic-load {
+	
+}
+
+body.page-template-page-cunycampuswire-php .wire-date {
+	color: #999999;
+	font-size: 14px;
+	line-height: 18px;
+	float:left;
+	width: 25px;
+	text-align: center;
+	margin-top: 5px;
+}
+
+body.page-template-page-cunycampuswire-php #cuny-campus-wire-dynamic-load .wire-item {
+	margin-bottom: 15px;
+	padding: 10px;
+	background-color: #FFFFFF;
+	margin-left: 30px;
+	border:#CCCCCC solid 1px;
+}
+
+body.page-template-page-cunycampuswire-php #cuny-campus-wire-dynamic-load .wire-item a {
+	text-decoration: none;
+}
+
+body.page-template-page-cunycampuswire-php #cuny-campus-wire-dynamic-load .wire-item:hover {
+	border-color: #0066CC;
+}
+
+body.page-template-page-cunycampuswire-php #cuny-campus-wire-dynamic-load .wire-item h4 {
+	font-size: 16px;
+	line-height: 22px;
+	color: #0066CC;
+}
+
+body.page-template-page-cunycampuswire-php #cuny-campus-wire-dynamic-load .wire-item span.wire-item-publication {
+	color: #999999;
+	margin-left: 20px;
+}
+
+body.page-template-page-cunycampuswire-php #cuny-campus-wire-dynamic-load .wire-item p {
+	padding-bottom:0;
+	padding-top: 10px;
+	color: #555555;
+}

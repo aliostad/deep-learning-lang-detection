@@ -1,0 +1,46 @@
+#!/bin/sh
+
+# Open specific pages on GitHub.
+#
+# If Hub (defunkt/hub) is a Swiss army penknife,
+# this is a bottle opener.
+#
+# Usage:
+#
+#   $ gh [repo | <commit> | username/repo]
+#
+#   $ gh                  # open current repo
+#   $ gh <commit>         # open current repo @ <commit>
+#   $ gh repo             # open current user's repo
+#   $ gh username/repo    # open username's repo
+
+set -e
+
+GITHUB="https://github.com"
+
+case "$1" in
+
+  */*)
+    # username / repo
+    open "$GITHUB/$1"
+    ;;
+
+  "")
+    # current repo
+    remote_username_repo=$(git config --get remote.origin.url | cut -d : -f 2 | cut -d  . -f 1)
+    open "$GITHUB/$remote_username_repo"
+    ;;
+
+  *)
+    # current repo @ commit
+    if git branch -a --contains "$1" &> /dev/null; then
+      remote_username_repo=$(git config --get remote.origin.url | cut -d : -f 2 | cut -d  . -f 1)
+      open "$GITHUB/$remote_username_repo/commit/$1"
+    # current user's repo
+    else
+      username=$(git config --get github.user)
+      open "$GITHUB/$username/$1"
+    fi
+    ;;
+
+esac

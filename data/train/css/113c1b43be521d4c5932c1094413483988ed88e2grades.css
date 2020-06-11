@@ -1,0 +1,48 @@
+.grade-show {
+  width: 600px;
+  height: 400px;
+  padding: 30px;
+}
+
+.grade-show-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.grade-show-info {
+  padding: 20px;
+  display: block;
+}
+
+.grade-show-score {
+  float: left;
+  display: block;
+  font-weight: 100;
+}
+
+.grade-show-score h1 {
+    font-size: 60px;
+}
+
+.grade-show-score label{
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.grade-show-info .grade-show-stats {
+  float: right;
+  display: block;
+  font-size: 20px;
+}
+
+.grade-show-stats {
+  font-weight: 100;
+}
+
+.grade-show-stats .correct {
+  color: rgb(33, 233, 70);
+}
+
+.grade-show-stats .wrong {
+  color: rgb(246, 37, 37);
+}

@@ -1,0 +1,138 @@
+#help_contents {
+  margin:0 40px;
+  font-size:14px;
+}
+#help_contents h1 {
+  margin-left:0;
+}
+#help_contents h2 {
+  margin-top:60px;
+  color:#000;
+  font-size:20px;
+}
+#help_contents h4 {
+  margin-top:40px;
+  font-size:15px;
+}
+#help_contents .mod_head_standard {
+  margin-top:20px;
+  font-size:18px;
+}
+#help_contents .help_intro {
+  margin:20px 0;
+}
+
+.back_to_top {
+  font-size:11px;
+  padding-left:20px;
+}
+
+.write_helper, .write_helper_dn, .write_helper_180 a {
+  overflow: hidden;
+  text-align: right;
+  display: inline;
+}
+
+.write_helper, .write_helper_dn {
+  float: right;
+}
+
+.write_helper_180 a {
+  float: right;
+}
+
+.help_layer {
+  border: 1px solid #339900;
+}
+
+.help_caption1 {
+  font-size: 11px;
+  width: 200px;
+  float: right;
+}
+
+#help-contents table.recognition {
+  border-spacing: 0;
+  margin: 10px 0 20px 20px;
+}
+
+#help-contents table.recognition th {
+  border-bottom: thin solid black;
+}
+
+#help-contents table.recognition td {
+  border-top: thin dotted #c2c2c2;
+  padding: 5px 20px 5px 0;
+}
+
+#help-contents table.recognition td.first {
+  border: none;
+}
+
+#help-contents table.sywr_badges th,
+#help-contents table.sywr_badges td {
+  text-align: center;
+  padding: 5px 20px 5px 0;
+}
+
+#help-contents table.badges {
+  border-bottom: thin dotted #c2c2c2;
+  width: 625px;
+}
+
+#help-contents table.badges td {
+  padding: 15px 0 15px 0;
+  vertical-align: top;
+}
+
+#help-contents table.badges td.image {
+  width: 150px;
+}
+
+#help-contents table.badges span.award {
+  font-weight: bold;
+}
+
+#help-contents .badge_anchor {
+  position: relative;
+  top: -25px;
+  display: block;
+  width: 0;
+  height: 0;
+}
+#sitemap {
+  margin:30px;
+}
+#sitemap .col_2 {
+  padding-left:20px;
+}
+#sitemap a.category {
+  clear: both;
+  font-size:15px;
+}
+
+#sitemap .sub_category {
+  font-size:13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#sitemap ul {
+  overflow: hidden;
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+
+#sitemap ul li {
+  list-style-image: url(/images/b_null3_15.gif);
+  float: left;
+  margin-right: 20px;
+  padding-right: 5px;
+  position: relative;
+}
+
+#sitemap ul.non_floating_list li {
+  float: none;
+  margin-right: 0;
+}
+

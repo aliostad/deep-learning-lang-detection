@@ -1,0 +1,44 @@
+#view {
+    height: 100%;
+    position: relative;
+}
+#view section {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 2s, top 5s;
+}
+#view section.active {
+    opacity: 1;
+}
+#view.file {
+    top: 0%;
+}
+#view.login {
+    top: -100%;
+}
+#view.news {
+    top: -200%;
+}
+#view.duel {
+    top: -300%;
+}
+#view.chat {
+    top: -400%;
+}
+#view.forum {
+    top: -500%;
+}
+#view.rank {
+    top: -600%;
+}
+#view.settings {
+    top: -700%;
+}
+#view.language {
+    top: -800%;
+}
+#view.deckeditor {
+    top: -900%;
+}

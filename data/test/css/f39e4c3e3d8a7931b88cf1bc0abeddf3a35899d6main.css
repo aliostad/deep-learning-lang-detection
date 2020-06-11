@@ -1,0 +1,47 @@
+body {
+    position: relative;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+#load {
+    background: url('../images/load.gif') no-repeat center center #fff;
+    color: #000;
+
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    transition: opacity 0.3s 0.3s;
+    -webkit-transition: opacity 0.3s 0.3s;
+}
+
+#view {
+    z-index: -100;
+    background: #fff;
+    color: #000;
+
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    transition: opacity 0.3s 0.6s;
+    -webkit-transition: opacity 0.3s 0.6s;
+}
+
+body #view, body.load #load {
+    opacity: 1;
+}
+
+body #load, body.load #view {
+    opacity: 0;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+@media screen and (max-width: 640px) {
+    /*  Mobile view */
+}

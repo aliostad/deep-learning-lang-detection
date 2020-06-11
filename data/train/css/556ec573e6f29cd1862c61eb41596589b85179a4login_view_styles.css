@@ -1,0 +1,35 @@
+/* line 1, ../../../sass/layout_styles/user_view_styles/login_view_styles.scss */
+#login_view {
+  background-color: transparent;
+}
+/* line 6, ../../../sass/layout_styles/user_view_styles/login_view_styles.scss */
+#login_view .alignCenter {
+  margin-top: 100px;
+}
+/* line 10, ../../../sass/layout_styles/user_view_styles/login_view_styles.scss */
+#login_view h4 {
+  text-align: center;
+}
+/* line 14, ../../../sass/layout_styles/user_view_styles/login_view_styles.scss */
+#login_view h2 {
+  margin-left: -18px;
+}
+/* line 18, ../../../sass/layout_styles/user_view_styles/login_view_styles.scss */
+#login_view .btn {
+  margin-top: 10px;
+}
+/* line 22, ../../../sass/layout_styles/user_view_styles/login_view_styles.scss */
+#login_view .divider {
+  height: 1px;
+  background: #e75849;
+  border-bottom: 5px solid #e75849;
+}
+/* line 28, ../../../sass/layout_styles/user_view_styles/login_view_styles.scss */
+#login_view #socialSignIn {
+  text-align: center;
+}
+/* line 33, ../../../sass/layout_styles/user_view_styles/login_view_styles.scss */
+#login_view #googleLogin, #login_view #facebookLogin {
+  margin-right: 5px;
+  display: inline-block;
+}

@@ -1,0 +1,148 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is Raindrop.
+ *
+ * The Initial Developer of the Original Code is
+ * Mozilla Messaging, Inc..
+ * Portions created by the Initial Developer are Copyright (C) 2009
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ * */
+
+@import url("ContactSelector.css");
+@import url("Attachments.css");
+
+.rdwMessage {
+  outline: none;
+  width: 100%;
+}
+
+.rdwMessage .total {
+  display: none;
+}
+
+.rdwMessage.reply .total {
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  color: #888;
+  font-size: 10px;
+}
+
+.rdwMessage > .message  > .header { 
+  padding: 3px 5px 4px;
+}
+
+.rdwMessage > .message > .header > .author > .from {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+.rdwMessage > .message  > .header > .allRecipients > .recipients {
+  display: inline;
+  list-style: none;
+  font-size: 10px;
+}
+
+.rdwMessage > .message  > .header > .allRecipients > .recipients:empty {
+  display: none;
+}
+
+.rdwMessage > .message  > .header > .allRecipients > .recipients > .recipient {
+  display: inline;
+  color: #888;
+}
+
+.rdwMessage > .message  > .header > .allRecipients .recipient.to { }
+.rdwMessage > .message  > .header > .allRecipients .recipient.cc { }
+
+.rdwMessage > .message  > .header > .allRecipients .recipient:after {
+  content: ", ";
+}
+
+.rdwMessage > .message  > .header > .allRecipients .recipient:last-child:after {
+  content: "";
+}
+
+/*i18n: We might need this content translated*/
+.rdwMessage > .message  > .header > .allRecipients > .recipients.to:before {
+  content: "to: ";
+  color: #1a1a1a;
+}
+
+/*i18n: We might need this content translated*/
+.rdwMessage > .message  > .header > .allRecipients > .recipients.cc:before {
+  content: "cc: ";
+  color: #1a1a1a;
+}
+
+.rdwMessage > .message > .content { 
+  padding: 0 5px;
+}
+
+/*Any links that appear appear in the message body */
+.rdwMessage > .message > .content a {
+  color: #666;
+  text-decoration: none;
+}
+
+.rdwMessage > .message > .content a:hover {
+  text-decoration: underline;
+}
+
+.rdwMessage > .message > .header > .published > .value:not(:empty):before {
+  content: " - ";
+}
+
+.rdwMessage > .message > .header > .published {
+  font-size: 10px;
+  color: #888;
+}
+
+.rdwMessage > .message > .header > .published > .additional {
+  display: none;
+}
+
+.rdwMessage > .message > .header > .published:hover > .additional {
+  display: inline;
+}
+
+/* ### REPLY ### */
+
+.rdwMessage.reply {
+  margin: 4px 0 0 0;
+  padding: 0 0 0 58px;
+  border-top: 1px solid #e6e6e6;
+  position: relative;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* ### TWITTER ### */
+.rdwExtTwitterMessage .picture {
+  width: 48px;
+  height: 48px;
+  margin: 5px 10px 0 5px;
+}
+
+.rdwMessage.rdwExtTwitterMessage > .message > .header {
+  padding: 3px 5px 4px 0;
+}
+
+.rdwMessage.rdwExtTwitterMessage > .message > .content {
+  padding: 0 5px 0 0;
+}

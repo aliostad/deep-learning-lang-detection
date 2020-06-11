@@ -1,0 +1,168 @@
+/* ==========================================================================
+   Golden.css
+   ========================================================================== */
+
+/*
+ * Sections:
+ *
+ *   0. Common
+ *   1. Header
+ *   2. Hero
+ *   3. Services
+ *   4. Portfolio
+ *   5. About
+ *   6. Team
+ *   7. Clients
+ *   8. Contact
+ *   9. Footer
+ */
+
+/* 1. Header
+   ========================================================================== */
+
+body > header {
+  /* Display & Box Model */
+  display: -webkit-flex;
+  -webkit-justify-content: space-between;
+}
+
+nav > ul {
+  /* Display & Box Model */
+  display: -webkit-flex;
+}
+
+nav > ul > li {
+  /* Display & Box Model */
+  -webkit-justify-content: flex-end;
+}
+
+@media only screen and (max-width: 760px) {
+  nav {
+    /* Display & Box Model */
+    -webkit-flex-direction: column;
+  }
+
+  nav > ul {
+    /* Display & Box Model */
+    -webkit-flex-direction: column;
+  }
+}
+
+/* 2. Hero
+   ========================================================================== */
+
+#hero > header {
+  /* Display & Box Model */
+  display: -webkit-flex;
+  -webkit-flex-direction: column-reverse;
+  -webkit-justify-content: flex-start;
+}
+
+/* 3. Services
+   ========================================================================== */
+
+#services > div {
+  /* Display & Box Model */
+  display: -webkit-flex;
+  -webkit-justify-content: space-between;
+}
+
+#services > div > section {
+  /* Display & Box Model */
+  -webkit-flex-basis: 29.787234%;
+}
+
+@media only screen and (max-width: 900px) {
+  /* Display & Box Model */
+  #services > div {
+    -webkit-flex-direction: column;
+  }
+
+  /* Display & Box Model */
+  #services > div > section {
+    -webkit-flex-basis: auto;
+  }
+}
+
+/* 4. Portfolio
+   ========================================================================== */
+
+#portfolio > div {
+  /* Display & Box Model */
+  display: -webkit-flex;
+  -webkit-justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+}
+
+#portfolio figure {
+  /* Display & Box Model */
+  -webkit-flex-basis: 30.851063%;
+}
+
+@media only screen and (max-width: 940px) {
+  #portfolio figure {
+    /* Display & Box Model */
+    -webkit-flex-basis: 47.682119%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #portfolio figure {
+    /* Display & Box Model */
+    -webkit-flex-basis: 100%;
+  }
+}
+
+/* 5. About
+   ========================================================================== */
+
+#about > article {
+  /* Display & Box Model */
+  display: -webkit-flex;
+}
+
+#about article:nth-child(even) {
+  /* Display & Box Model */
+  -webkit-flex-direction: row-reverse;
+}
+
+#about > article > figure {
+  /* Display & Box Model */
+  -webkit-flex: 0 0 260px;
+}
+
+/* 6. Team
+   ========================================================================== */
+
+#staff {
+  /* Display & Box Model */
+  display: -webkit-flex;
+  -webkit-justify-content: space-between;
+}
+
+#staff dl {
+  /* Display & Box Model */
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+}
+
+#staff dd:nth-child(2) {
+  /* Display & Box Model */
+  -webkit-order: -1;
+}
+
+@media only screen and (max-width: 930px) {
+  #staff  {
+    /* Display & Box Model */
+    -webkit-flex-direction: column;
+  }
+}
+
+/* 8. Contact
+   ========================================================================== */
+
+#contact input,
+#contact textarea {
+  /* Other */
+  -webkit-appearance: none;
+}

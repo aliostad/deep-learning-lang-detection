@@ -1,0 +1,132 @@
+@font-face {
+font-family: handWrite;
+src: url( "../fonts/PassingNotes.ttf" );
+}
+
+body {
+margin: 0px; 
+min-width: 1400px;
+}
+
+/* TABLE STYLE */
+
+table { 
+border-collapse: collapse;
+margin: auto;
+}
+
+/* EMPLOYEE HEADERS */ 
+th { 
+font-family: "Comic Sans MS";
+font-size: 23px;
+text-align: center;
+}
+th:hover {
+cursor: pointer;
+color: grey;
+}
+.employeeSelect {
+font-family: "Comic Sans MS";
+font-size: 23px;
+text-align: center;
+}
+
+/* CELLS */
+td { 
+background-color: lightgrey;
+border: 1px solid black;
+margin: 0px;
+padding: 0px;
+}
+td.cell_0, td.cell_30, td.cell_0_out, td.cell_30_out {
+background-color: white;
+}
+td.hour {
+border: 3px solid black;
+}
+td.cell_0, td.cell_15, td.cell_30, td.cell_45,
+td.cell_0_out, td.cell_15_out, td.cell_30_out, td.cell_45_out {
+border-right: 3px solid black;
+border-left: 3px solid black;
+}
+td.cell_0, td.cell_0_out {
+border-top: 3px solid black;
+}
+td.cell_45, td.cell_45_out {
+border-bottom: 3px solid black;
+}
+p.cell_right, p.cell_left, p.cell_right_new, p.cell_left_new {
+height: 14px;
+width: 148px;
+margin: 0px;
+font-family: "Comic Sans MS";
+font-size: 13px;
+}
+input.new_input {
+width: 148px;
+margin: 0px;
+font-family: "Comic Sans MS";
+font-size: 13px;
+text-align: center;
+}
+
+
+td#cellHover:hover, 
+.write_left:hover, .write_right:hover {
+opacity: .7;
+cursor: pointer;
+}
+
+
+
+
+
+
+p.cell_right, p.cell_right_new {
+text-align: right;
+padding: 0px 3px 2px 0px;
+}
+p.cell_left, p.cell_left_new {
+text-align: left;
+padding: 0px 0px 2px 3px;
+}
+.write_left, .write_right, .write_left_out, .write_right_out {
+color: blue; 
+float: left;
+z-index: 1000;
+margin: 0px;
+width: 129px;
+height: 18px; 
+position: absolute;
+/top: -2px;
+text-align: center;
+font-family: handWrite;
+font-size: 15px;
+/background-color: green;
+overflow:hidden;
+line-height: 17px;
+}
+.write_left_out, .write_right_out {
+color: black;
+}
+.write_right, .write_right_out {
+margin-left: 2px;
+}
+.write_left, .write_left_out {
+margin-left: 20px;
+}
+p.hour {
+height: 40px;
+margin: 0px;
+font-family: "Comic Sans MS";
+font-size: 36px;
+text-align: center;
+}
+.AM, .PM { 
+height: 21px;
+margin: 0px;
+font-family: "Comic Sans MS";
+font-size: 15px;
+text-align: center;
+}
+

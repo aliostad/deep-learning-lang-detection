@@ -1,0 +1,39 @@
+body {
+  font: 16px/1.4 Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.downsized {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.pushy {
+  margin-bottom: 40px;
+}
+
+.operation {
+  margin: 0 auto;
+  display: inline-block;
+  width: 398px;
+  vertical-align: top;
+}
+
+.gutter {
+  display: inline-block;
+  width: 5%;
+}
+
+.main {
+  width: 960px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+}
+
+/*==================================*/
+/* Write Your Styles below!!! */
+/*==================================*/

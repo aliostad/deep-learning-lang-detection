@@ -1,0 +1,258 @@
+@charset "utf-8";
+/* CSS Document */
+#mymessage{
+	height:650px;
+	width:850px;
+	background-color:#FFF;
+}
+.recommendInfoBar{
+	height:51px;
+	border-bottom:1px solid #B70409;
+}
+.recommendInfoBar ul li{
+    float:left;
+	display:block;
+	padding:10px 0px;
+	margin-top:10px;
+	margin-left:10px;
+
+}
+.recommendInfoBar ul li:hover{
+	border-bottom:3px solid #F03; 	
+}
+.recommendInfoBar ul li a{
+	font-size:16px;
+	text-decoration:none;
+	font-size:16px;
+	font-weight:bold;
+	color:#FF3366;
+}
+.recommendInfoBar ul li a:hover{
+	text-decoration:none;
+	color:#F03;
+}
+.drafts{
+	float:right;
+	position:relative;
+	top:20px;
+	right:80px;
+	width:80px;
+	height:20px;
+}
+.drafts1{
+	float:left;
+}
+.drafts2{
+	float:left;
+}
+.drafts2 a{
+	text-decoration:none;
+	color:#000;
+}
+.drafts2 a:hover{
+	color:#B70409;
+}
+   
+.recycleBin{
+	float:right;
+	left:80px;
+	position:relative;
+	top:20px;
+	width:80px;
+	height:20px;
+}
+.recycleBin1{
+	float:left;
+}
+.recycleBin2{
+	float:left;
+}
+.recycleBin2 a{
+	text-decoration:none;
+	color:#000;
+}
+.recycleBin2 a:hover{
+	color:#B70409;
+}
+
+.picture_recommendInfo{
+	float:left;
+	position:relative;
+	left:100px;
+	top:18px;
+	width:85px;
+}
+.picture_recommendInfo1{
+	width:60px;
+	height:60px;
+	border:1px solid #B70409;
+   border-radius:50%;
+}
+.picture_recommendInfo1{
+	padding-left:15px;
+	padding-top:10px;
+    position:relative;
+	margin-top:8px;
+}
+
+.recommendInfoList{
+	float:left;
+	width:550px;
+	height:500px;
+	position:relative;
+	left:120px;
+	top:20px;
+}
+
+.recommendInfoList a{
+	text-decoration:none;
+	color:#000;
+}
+.recommendInfoList a:hover{
+	text-decoration:underline;
+	color:#B70409;
+}
+
+.recommendInfoList1,.recommendInfoList2,.recommendInfoList3,.recommendInfoList4,.recommendInfoList5,.recommendInfoList6{
+	width:510px;
+	height:20px;
+    border-bottom:1px dashed #B70409;
+}
+.recommendInfoList1{
+	margin-top:50px;
+}
+.recommendInfoList2{
+	margin-top:50px;
+}
+.recommendInfoList3{
+	margin-top:60px;
+}
+.recommendInfoList4{
+	margin-top:60px;
+}
+.recommendInfoList5{
+	margin-top:60px;
+}
+.recommendInfoList6{
+	margin-top:60px;
+}
+.recommendInfoList11,.recommendInfoList12,.recommendInfoList13,.recommendInfoList14{
+	float:left;
+}
+.recommendInfoList11{
+	width:350px;
+	height:20px;
+}
+.recommendInfoList12{
+	width:100px;
+	height:20px;
+}	
+.recommendInfoList13{
+	width:30px;
+	height:20px;
+}
+.recommendInfoList14{
+	width:30px;
+	height:20px;
+}
+.write_RecommendInfo{
+	width:800px;
+	height:600px;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+.write_RecommendInfoTitleText{
+	 border-bottom:#000 1px solid;
+	 border-left-width:0px;
+	 border-right-width:0px;
+	 border-top-width:0px;
+	 width:600px;
+	 height:80px;
+	 font-size:36px;
+	 position:relative;
+	 left:100px;
+	 top:20px;
+}
+.write_RecommendInfoHref{
+	width:200px;
+	height:30px;
+	position:relative;
+	top:20px;
+	left:80px;
+}
+.write_RecommendInfoHref1,.write_RecommendInfoHref2{
+	width:60px;
+	height:30px;
+}
+.write_RecommendInfoHref1,.write_RecommendInfoHref2{
+	float:left;
+	position:relative;
+	top:50px;
+	left:20px;
+}
+.write_RecommendInfoHref1 a,.write_RecommendInfoHref2 a{
+	text-decoration:none;
+	color:#000;
+	font-size:14px;
+}
+.write_RecommendInfoHref2{
+	margin-left:20px;
+}
+.write_RecommendInfoHref1 a:hover,.write_RecommendInfoHref2 a:hover{
+	color:#C60D0D;
+	text-decoration:underline;
+}
+.write_RecommendInfoText{
+	width:600px;
+	height:350px;
+	position:relative;
+	left:100px;
+	top:60px;
+}
+.write_RecommendInfoButton{
+	width:340px;
+	position:relative;
+	top:60px;
+	left:350px;
+	border:none;
+}
+.write_RecommendInfoButton1{
+	width:80px;
+	float:left;
+	margin-left:140px;
+}
+.write_RecommendInfoButton2{
+	width:50px;
+	float:left;
+	margin-right:10px;
+}
+
+
+.tab {
+	position:relative;
+	left:25px;
+	top:20px;
+	width:800px;
+}
+.tab .tab-head {
+	float:left;
+}
+.tab .tab-nav {
+	list-style:none;
+}
+.tab .tab-nav .active {
+	background-color:#fff;
+}
+.tab .tab-nav .active a {
+	cursor:default;
+}
+.tab .tab-body {
+	float:left;
+	border-top:solid 1px #ddd;
+}
+.tab .tab-body .tab-panel {
+	display:none;
+}
+.tab .tab-body .active {
+	display:block;
+}

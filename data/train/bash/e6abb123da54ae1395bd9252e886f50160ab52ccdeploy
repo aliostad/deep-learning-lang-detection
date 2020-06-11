@@ -1,0 +1,56 @@
+#!/bin/sh
+
+repo=$1
+
+src_base=/srv/buildbot/master/staging
+current_src_dir=$src_base/"$repo"
+
+repo_base=/srv/http/pacnas/repo
+current_repo_dir=$repo_base/"$repo"/os
+
+pool_dir=$repo_base/pool/packages
+pool_src_dir=$repo_base/sources/packages
+
+# src is not strictly an arch, but...
+archs=(any i686 x86_64 src)
+
+for arch in "${archs[@]}"
+do
+  for f in $current_src_dir/*${arch}*
+  do
+    if [ -f $f ]
+    then
+      echo "${arch}: $f"
+
+      if [ "$arch" == "src" ]
+      then
+        cp $f $pool_src_dir
+        sudo chown root:tu $pool_src_dir/$(basename $f)
+        sudo chmod 664 $pool_src_dir/$(basename $f)
+      else
+        cp $f $pool_dir
+        sudo chown root:tu $pool_dir/$(basename $f)
+        sudo chmod 664 $pool_dir/$(basename $f)
+
+        if [ "${arch}" == "any" ]
+        then
+          rm $current_repo_dir/i686/$(basename $f)
+          ln -s $pool_dir/$(basename $f) $current_repo_dir/i686/$(basename $f)
+
+          rm $current_repo_dir/x86_64/$(basename $f)
+          ln -s $pool_dir/$(basename $f) $current_repo_dir/x86_64/$(basename $f)
+
+          repo-add $current_repo_dir/i686/${repo}.db.tar.gz $current_repo_dir/i686/$(basename $f)
+          repo-add $current_repo_dir/x86_64/${repo}.db.tar.gz $current_repo_dir/x86_64/$(basename $f)
+        else
+          rm $current_repo_dir/${arch}/$(basename $f)
+          ln -s $pool_dir/$(basename $f) $current_repo_dir/${arch}/$(basename $f)
+
+          repo-add $current_repo_dir/${arch}/${repo}.db.tar.gz $current_repo_dir/${arch}/$(basename $f)
+        fi
+      fi
+
+      rm $f
+    fi
+  done
+done

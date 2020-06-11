@@ -1,0 +1,33 @@
+   body {
+        margin: 0px;
+        overflow: hidden;
+        background-color: black;
+      }
+  #example {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+      }
+      #loadMsg {
+        /*position: absolute;*/
+        z-index: 2;
+        color: white;
+        font-size: 50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: pink;
+        text-align: center;
+      }
+
+      .loadButton {
+        text-align: center;
+        align: center;
+      }
+      #goButton {
+        align: center;
+        text-align: center;
+      }

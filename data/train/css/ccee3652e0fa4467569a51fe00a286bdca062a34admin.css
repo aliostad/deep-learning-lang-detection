@@ -1,0 +1,51 @@
+﻿.modelField {
+    overflow:auto;
+    text-align:center;
+}
+.modelField td {
+    border: 1px solid #DDDDDD;
+}
+.dataTypeSelector {
+    width:90px;
+}
+.modelField i { cursor: hand; cursor: pointer; }
+
+.fieldName {
+    width:100px;
+}
+.followable {
+    border: 1px  ridge #fbf7f7;
+}
+.followableModel {
+    padding-left:5px;
+}
+.followableFeedContent {
+    padding-left:5px;
+}
+.serverResponse {
+    padding-left:20px;
+}
+.installInfo {
+    background-color:white;
+}
+
+.table th {
+    border-bottom: 0 none;
+    color: #000000;
+    font-size: 12px;
+    height: auto;
+    padding: 4px 9px 3px;
+    text-align: center;
+    background-color: #EFEFEF;
+    background-image: -moz-linear-gradient(center top , #FDFDFD 0%, #EAEAEA 100%);
+}
+
+#content {
+    background: #e7c8fc;
+    border-top-left-radius: 8px;
+    margin-left: 100px;
+    width: auto;
+}
+.serverResponse {
+    font-size:20px;
+}

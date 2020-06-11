@@ -1,0 +1,50 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+}
+
+#userNav {
+    margin: 0 auto;
+    width: auto;
+}
+
+#get-new-tweets {
+    horizontal-align: right;
+}
+
+#writeTweet {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 450px;
+}
+
+#innerWriteBox {
+    font-size: 17.5px;
+    font-family: "Helvetic Neue",Helvetica,Arial,sans-serif;
+    padding: 10px;
+    width: 450px;
+}
+
+#submitTweet {
+    text-align: right;
+}
+
+#tweetBox {
+    margin-top: 10px;
+}
+
+.tweet {
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+blockquote {
+    border-left: none;
+    padding: 30px;
+}

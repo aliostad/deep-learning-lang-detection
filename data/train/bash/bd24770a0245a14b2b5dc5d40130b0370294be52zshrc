@@ -1,0 +1,37 @@
+#!/bin/zsh
+#
+# zshrc
+# zsh-specific interactive settings
+emulate -R zsh
+
+# Don't recurse
+test -z "$SH_RC_DONE" || return
+SH_RC_DONE=t
+
+# Load common settings
+source_all $HOME/.sh.d
+
+# Autoload zsh modules
+autoload -Uz colors run-help zargs zcalc zed zmv
+
+# Load options
+source_maybe $HOME/.zsh_options
+
+# Load prompting
+source_maybe $HOME/.zsh_prompt
+
+# Load aliases
+source_all $HOME/.alias.d
+
+# Load advanced completion
+source_maybe $HOME/.zsh_completion
+
+# Load key bindings
+source_maybe $HOME/.zsh_keys
+
+# Augment PATH
+path=($HOME/bin $path)
+# path=($HOME/bin $path .)
+
+# Load local overrides
+source_maybe $HOME/.zshrc_local

@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+
+.ly,.replyTitle,.write{
+	width:80%;
+	margin:0 auto;
+	font-size:12px;
+	color:#7d8993;
+	}
+.ly h2{ 
+   background:#ebeff1 url(../img/icon_ly.gif) no-repeat 5px center;
+   padding-left:25px;
+   font-size:14px;
+   height:25px;
+   padding-top:5px;
+   
+   }
+.ly div,ul#reply li div{height:20px;}
+.ly div span,ul#reply li span{color:#ccc;} 
+.ly p,ul#reply li p{
+	line-height:19px;
+	text-indent:8px;
+	}
+.replyTitle h2{ 
+   background:#ebeff1 url(../img/inco_coll.gif) no-repeat 5px center;
+   padding-left:25px;
+   font-size:14px;
+   height:25px;
+   padding-top:5px;
+   cursor:pointer;
+   
+   }
+.replyTitle h2.on{ 
+   background:#ebeff1 url(../img/icon_exp.gif) no-repeat 5px center;
+
+   
+   }
+.replyTitle h2 span{
+	float:right
+	}
+ul#reply{ 
+list-style:none;
+
+}
+ul#reply li{ 
+background:#f6fbfe;
+border:1px #ccc dashed;
+margin:5px;
+}
+
+.write h2{ 
+   background:#ebeff1 url(../img/icon_write.gif) no-repeat 5px center;
+   padding-left:25px;
+   font-size:14px;
+   height:25px;
+   padding-top:5px;
+   
+   }
+.write table{width:80%}
+.write th{text-align:right;font-weight:normal;}
+.write .inputText {
+	border:1px solid #ccc;
+	height:21px;
+	padding-left:2px;
+	line-height:19px;
+	background:url(../img/inputtext_bg.gif) repeat-x;
+	color:#000;
+	text-align:left;
+	width:200px;
+	
+}
+.btn{
+  background-color:#fff;
+  background-image:url(../img/btnBg.gif);
+  padding-top:0px;
+  padding-bottom:0px;
+  padding-left:5px;
+  padding-right:5px;
+  height:21px;
+  border:1px solid #69f;
+  line-height:19px;
+  color:#2e52a1;
+  cursor:pointer;
+  }
+.write textarea{width:70%;}

@@ -1,0 +1,65 @@
+/*
+    Document   : index
+    Created on : Sep 9, 2011, 2:23:41 PM
+    Author     : marc
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root {
+    display: block;
+}
+
+#wrapper.admin #datatables {
+    border: 1px solid #221E15;
+    min-height: 300px;
+    overflow: hidden;
+    display: block;
+}
+
+#datatables .title {
+    display: block;
+    border-bottom: 3px solid #221E15;
+}
+
+#datatables #menu-wrapper {
+    width: 200px;
+    border: 1px solid #221E15;
+    min-height: 300px;
+    float: left;
+}
+
+#datatables .model-list {
+    padding: 10px;
+    border-bottom: 1px dotted;
+}
+
+#datatables .model-list.last {
+    border-bottom: none;
+}
+
+#datatables .model-list a {
+    width: 100%;
+    display: block;
+    height: 100%;
+    color: #1C1811;
+}
+
+#datatables .model-list a:hover {
+    background: #1C1811;
+    text-decoration: none;
+    color: #fff;
+}
+
+#datatables #model_details {
+    display: block;
+}
+
+#datatables #model_details h1 {
+    font-size: 20px;
+}

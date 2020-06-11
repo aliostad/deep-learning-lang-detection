@@ -1,0 +1,153 @@
+
+/* Header of the page having navigation and logo
+======================================================================================*/
+.head-blue-line img {
+	/*box model */
+	width: 960px;
+	height: 10px;
+}
+
+.logo {
+
+	/*box model*/
+	width: 170px;
+	height: 120px;
+	margin: 10px 10px 30px 10px;
+	/*display*/
+	display: inline-block;
+}
+
+.nav > li ,a {
+	/*other*/
+	color: black;
+	font-size: 13px;
+	list-style: none;
+	text-decoration: none;
+}
+
+.nav  a {
+	/*box model */
+	width: 100px;
+	height: 40px;
+
+	/*display*/
+	display: inline-block;
+
+	/*other*/
+	text-align: center;
+}
+
+.nav > li {
+	/*display*/
+	display: inline-block;
+	vertical-align: top;
+}
+
+.nav {
+	/*box model */
+	margin-top: 50px;
+	/*display*/
+	float: right;
+}
+
+.nav a:hover {
+	color: #ccc;
+}
+
+/* Section of the page 
+=====================================================================================*/
+.list {
+	/*box model*/
+	margin-top: 5px;
+	margin-left: -40px;
+	/*other*/
+	list-style-image: url(../images/bullet.png);
+}
+
+.para1,
+.para2,
+.para3 {
+	/*box model */
+	width: 500px;
+	margin-bottom:30px;
+
+}
+
+.para4 {
+	width:580px;
+}
+
+.section-content {
+	font-size: 15px;
+}
+
+.section-sideimages {
+	float: right;
+
+}
+
+.img-text {
+
+	/*position*/
+	position: relative;
+	top:-140px;
+	left: 30px;
+
+	/*other*/
+	color: #4D504D;
+	font-size: 25px;
+}
+
+/* Footer of the page 
+=====================================================================================*/
+.footer {
+	color: #fff;
+	background: #000;
+}
+.footer  a {
+	border-bottom: 1px solid blue;
+	/*other*/
+	color: #fff;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+.footer li {
+	/*box model*/
+	padding: 5px;
+	/*display*/
+	display: inline;
+}
+
+.footer > ul {
+	/*box model*/
+	padding-top: 20px;
+}
+
+.footer > img {
+	margin-left: 760px;
+	
+}
+
+.foot {
+	width: 960px;
+	height: 10px;	
+}
+.footer > span {
+	/*box model*/
+	margin-left: 40px;
+	/*other*/
+	font-size: 10px;
+}
+.footer a:hover {
+	color: #0000FF;
+}
+
+/* Wrapper to hold the content of whole page 
+=====================================================================================*/
+
+.wrapper {
+	/*box model */
+	width: 960px;
+	margin: 0px auto;
+}

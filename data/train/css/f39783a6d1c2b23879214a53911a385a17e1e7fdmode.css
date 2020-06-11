@@ -1,0 +1,181 @@
+.write-mode #view{
+	display: none;
+}
+.write-mode #write{
+	display: block;
+}
+
+.write-mode #text-area{
+	display: block;
+}
+
+.write-mode #draw-area{
+	display: none;
+}
+
+/*draw mode*/
+
+.draw-mode #view{
+	display: none;
+}
+
+.draw-mode #write{
+	display: block;
+}
+
+.draw-mode #text-area{
+	display: none;
+}
+
+.draw-mode #draw-area{
+	display: block;
+}
+
+.draw-mode #full-screen,.draw-mode #edit{
+	display: none;
+}
+
+/*view mode*/
+
+.view-mode #view{
+	display: block;
+}
+.view-mode #write{
+	display: none;
+}
+
+
+.view-mode #edit{
+	display: block;
+}
+.view-mode #save{
+	display: none;
+}
+
+.view-mode #full-screen{
+	display: block;
+}
+
+
+
+.view-mode #select-category-ul{
+	display: none;
+}
+
+#new-notebook-popup,#delete-note-popup,#delete-notebook-popup,#rename-notebook-popup{
+	display: none;
+}
+.add-note-book-page #new-notebook-popup{
+	display: block;
+}
+.delete-note-page #delete-note-popup{
+	display: block;
+}
+
+.delete-notebook-page #delete-notebook-popup{
+	display: block;
+}
+
+.rename-notebook-page #rename-notebook-popup{
+	display: block;
+}
+
+
+.view-noteList #notebook-list{
+	display: none;
+}
+
+
+
+.view-noteList #note-list{
+	display: block;
+}
+
+#notebook-list{
+	display: none;
+}
+
+.view-notebookList #notebook-list{
+	display: block;
+}
+
+.view-notebookList  #note-list{
+	display: none;
+}
+
+
+
+
+.full-screen-mode .sidebar{
+	display: none!important;
+}
+
+.full-screen-mode .note-list{
+	display: none!important;
+}
+
+.full-screen-mode .note-content{
+	margin-left: 0;
+}
+
+.full-screen-mode .input-area input{
+	width: 70%;
+	margin: 0 15%;
+}
+
+
+.full-screen-mode .input-area textarea{
+	width: 70%;
+	padding: 0 15%;
+}
+
+.full-screen-mode #full-screen{
+	display: none;
+}
+
+.draw-mode #full-screen , .view-draw-mode #full-screen{
+	display: none;
+}
+
+
+
+#exit{
+	display: none;
+}
+
+.full-screen-mode #exit{
+	display: block;
+}
+
+.write-mode  #select-category-ul{
+	display: inline-block;
+}
+
+
+.write-mode #edit{
+	display: none;
+}
+.write-mode #save{
+	display: block;
+}
+
+.full-screen-mode .content{
+	width:70%;
+	margin: 0 15%;
+}
+.full-screen-mode #view>header{
+	width:70%;
+	margin: 0 15%;	
+}
+
+.full-screen-mode .note-content>header{
+	width:70%;
+	margin: 0 15%;	
+}
+
+.full-screen-mode .draw-area{
+	width: 70%;
+	margin: 0 15%;
+}
+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <service_name>FlickR</service_name>
+  <service_media>gallery</service_media>
+  <service_regex><![CDATA[http://[\w\.]*?flickr\.[a-z]+/photos/(?P<sval1>.+?)/sets/(?P<sval2>\d+)]]></service_regex>
+  <service_playlist><![CDATA[]]></service_playlist>
+  <service_url><![CDATA[http://www.flickr.com/photos/{serviceVAL}/sets/{serviceVAL2}]]></service_url>
+  <service_callback>EWRmedio_Services_FlickR</service_callback>
+  <service_width>640</service_width>
+  <service_height>480</service_height>
+  <service_embed><![CDATA[<object type="application/x-shockwave-flash" width="{w}" height="{h}" data="http://www.flickr.com/apps/slideshow/show.swf">
+	<param name="movie" value="http://www.flickr.com/apps/slideshow/show.swf">
+	<param name="flashvars" value="page_show_url=/photos/{serviceVAL}/sets/{serviceVAL2}/show/&set_id={serviceVAL2}&offsite=true">
+	<param name="allowfullscreen" value="true">
+	<param name="allowscriptaccess" value="always">
+	<param name="allownetworking" value="all" />
+</object>]]></service_embed>
+  <service_local>0</service_local>
+</service>

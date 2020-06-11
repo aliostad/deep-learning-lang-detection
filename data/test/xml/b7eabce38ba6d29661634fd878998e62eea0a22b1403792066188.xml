@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="Shift_JIS" standalone="no"?>
+<OperationHistory version="5.0.2">
+<basicData>
+<developer>jmatsu</developer>
+</basicData>
+<operations>
+<fileOperation file="/CreateAudio/src/jp/maju/createaudio/MainActivity.java" time="1403792065122" type="OPEN">
+<code>package jp.maju.createaudio;
+
+import jp.maju.createaudio.audio.SoundContainer;
+import jp.maju.createaudio.utils.AudioUtil;
+import android.media.AudioTrack;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBarActivity;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+
+public class MainActivity extends ActionBarActivity {
+    private static final String TAG = MainActivity.class.getSimpleName();
+    private SoundContainer mSoundContainer;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.container, new PlaceholderFragment()).commit();
+        }
+        
+        mSoundContainer = new SoundContainer();
+        mSoundContainer.play();
+
+        StringBuilder sb = new StringBuilder();
+
+        sb.append("ch/4:");
+        sb.append("/4:");
+        sb.append("a/4:");
+        sb.append("/4:");
+        sb.append("g/4:");
+        sb.append("a/4:");
+        sb.append("e/4:");
+        sb.append("/4:");
+        sb.append("ch/4:");
+        sb.append("ch/4:");
+        sb.append("ch/8:");
+        sb.append("b/8:");
+        sb.append("a/4:");
+        sb.append("g/4:");
+        sb.append("a/4:");
+        sb.append("e/4:");
+        sb.append("e/4:");
+        
+        sb.append("eh/4:");
+        sb.append("eh/4:");
+        sb.append("eh/4:");
+        sb.append("dh/4:");
+        sb.append("ch/4:");
+        sb.append("ch/4:");
+        sb.append("ch/4:");
+        sb.append("b/4:");
+        sb.append("a/4:");
+        sb.append("b/4:");
+        sb.append("ch/8:");
+        sb.append("b/8:");
+        sb.append("a/4:");
+        sb.append("b/4:");
+        sb.append("b/4:");
+        sb.append("b/4:");
+        sb.append("/4:");
+        sb.append("ch/4:");
+        sb.append("ch/4:");
+        sb.append("a/4:");
+        sb.append("a/4:");
+        sb.append("g/4:");
+        sb.append("a/4:");
+        sb.append("e/4:");
+        sb.append("e/4:");
+        sb.append("ch/4:");
+        sb.append("ch/4:");
+        sb.append("ch/8:");
+        sb.append("b/8:");
+        sb.append("a/4:");
+        sb.append("g/4:");
+        sb.append("b/4:");
+        sb.append("eh/4:");
+        sb.append("eh/8:");
+        sb.append("/8:");
+        sb.append("eh/4:");
+        sb.append("eh/4:");
+        sb.append("eh/4:");
+        sb.append("dh/4:");
+        sb.append("ch/4:");
+        sb.append("ch/4:");
+        sb.append("ch/4:");
+        sb.append("b/4:");
+        sb.append("a/4:");
+        sb.append("ch/4:");
+        sb.append("b/8:");
+        sb.append("a/8:");
+        sb.append("g/4:");
+        sb.append("a/4:");
+        sb.append("a/4:");
+        sb.append("a/8:");
+        sb.append("/4:");
+        
+        mSoundContainer.play(sb.toString().split(":"));
+    }
+    
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mSoundContainer.back();
+    }
+    
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mSoundContainer.stop();
+    }
+    
+    @Override
+    protected void onDestroy() {
+        mSoundContainer.release();
+        super.onDestroy();
+    }
+    
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+        if (id == R.id.action_settings) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    /**
+     * A placeholder fragment containing a simple view.
+     */
+    public static class PlaceholderFragment extends Fragment {
+
+        public PlaceholderFragment() {
+        }
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.fragment_main, container,
+                    false);
+            return rootView;
+        }
+    }
+
+}
+</code>
+</fileOperation>
+<fileOperation file="/CreateAudio/src/jp/maju/createaudio/MainActivity.java" time="1403792065275" type="ACT"/>
+<fileOperation file="/CreateAudio/src/jp/maju/createaudio/MainActivity.java" time="1403792065334" type="ACT"/>
+<fileOperation file="/CreateAudio/src/jp/maju/createaudio/MainActivity.java" time="1403792065389" type="ACT"/>
+<fileOperation file="/CreateAudio/src/jp/maju/createaudio/MainActivity.java" time="1403792066187" type="CLOSE"/>
+</operations>
+</OperationHistory>

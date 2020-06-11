@@ -1,0 +1,109 @@
+@media screen and (min-width: 948px){
+    .ie7 .wdg_matchesresult_sprite{
+        text-indent: 0px;
+    }
+    .ie7 .wdg_matchesresult_sprite.uparrow{
+        margin-bottom: 4px;
+    }
+    .ie7 .wdg_matchesresult_sprite.downarrow{
+        margin-bottom: 4px;
+    }
+    .nav_smex_header_01{
+        width: 100%;
+    }
+    .nav_smex_header_01 .nav_smex_header_01_container{
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    .nav_smex_header_01 .nav_smex_header_01_container .nav_smex_header_01_left{
+        height: 575px;
+        width: 190px;
+        float: left;
+        display: block;
+    }
+
+    .td_stats_goals_by_team_01 .main .c3_banner
+    {
+        display: block !important;
+    }
+    
+    .nav_smex_header_01 .nav_smex_header_01_container .nav_smex_header_01_right .nav_smex_header_01_components ul li{
+        float: left;
+        margin-right: 15px;
+    }
+    .nav_smex_header_01 .nav_smex_header_01_container .nav_smex_header_01_right .nav_smex_header_01_navcontainer .nav_smex_header_01_nav{
+        height: 35px;
+        width: 750px;
+        margin-bottom: 30px;
+        margin-top: 18px;
+    }
+
+    .nav_smex_header_01 .nav_smex_header_01_container .nav_smex_header_01_right .nav_smex_header_01_components{
+        width: 748px;
+        height: 400px;
+        overflow: hidden;
+        float: none;
+    }
+    .nav_smex_header_01 .nav_smex_header_01_container .nav_smex_header_01_right .nav_smex_header_01_components .nav_smex_header_01_list{
+        height: 400px;
+    } 
+    .nav_smex_header_01 .nav_smex_header_01_container .nav_smex_header_01_right .nav_smex_header_01_navcontainer .nav_smex_header_01_nav ul li{
+        float: left;
+    }    
+    .nav_smex_header_01 .nav_smex_header_01_container .nav_smex_header_01_right .nav_smex_header_01_navcontainer .nav_smex_header_01_nav ul li.selected{
+        border-bottom: 3px solid #569269;
+
+    }
+    .nav_smex_header_01 .nav_smex_header_01_container .nav_smex_header_01_right .nav_smex_header_01_navcontainer .nav_smex_header_01_nav ul li.selected a{
+        color: #569269;
+    }
+    .nav_smex_header_01 .nav_smex_header_01_container .nav_smex_header_01_right .nav_smex_header_01_navcontainer .nav_smex_header_01_nav ul li a{
+        color: #8f8f8f;
+        text-decoration: none;
+    }
+    .nav_smex_header_01 .nav_smex_header_01_container .nav_smex_header_01_right .nav_smex_header_01_navcontainer .nav_smex_header_01_nav ul li a p{
+        height: 17px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    .nav_smex_header_01 .nav_smex_header_01_container .nav_smex_header_01_right .nav_smex_header_01_navcontainer .nav_smex_header_01_nav ul li:nth-child(1) a p{
+        padding-left: 0px;
+    }
+    
+    .nav_smex_header_01 .nav_smex_header_01_container .nav_smex_header_01_right .nav_smex_header_01_arrows{
+        margin-top: 15px;
+    }
+    .nav_smex_header_01 .nav_smex_header_01_bottom{
+        display: none;
+        height: 360px;
+    }
+	.nav_smex_header_01 .fondo{
+		height: 82px;
+		margin: 0 auto;
+		width: 100%;
+	}
+	.nav_smex_header_01 .sombra{
+		width:978px;
+	}
+    .ie7 .nav_smex_header_01 .nav_smex_header_01_container{
+        height: 47px;
+    }
+	.ie7 .nav_smex_header_01 .nav_smex_header_01_container{
+        height: 47px;
+    }
+	
+	.ie9 .nav_smex_header_01 .nav_smex_header_01_container .nav_smex_header_01_right .nav_smex_header_01_navcontainer .nav_smex_header_01_nav ul{
+		width: 375px;
+	}
+	
+	.ie10 .nav_smex_header_01 .nav_smex_header_01_container, 
+	.ie9 .nav_smex_header_01 .nav_smex_header_01_container {
+		border-bottom: 1px solid #8f8f8f; 
+		height: 30px !important;
+	}
+}

@@ -1,0 +1,70 @@
+﻿/* Services Box */
+.service-box p {
+    color: #656565;
+    font-size: 13px;
+}
+
+.service-box .service-box-heading {
+    padding: 12px 0;
+}
+
+    .service-box .service-box-heading i {
+        padding: 0;
+        -webkit-border-radius: 34px;
+        -moz-border-radius: 34px;
+        border-radius: 34px;
+        font-size: 18px;
+        height: 32px;
+        width: 32px;
+        line-height: 32px;
+        text-align: center;
+        vertical-align: baseline;
+    }
+
+        .service-box .service-box-heading i.blue {
+            color: #0da3e2;
+            border: 1px solid #0da3e2;
+        }
+
+        .service-box .service-box-heading i.red {
+            color: #db3a1b;
+            border: 1px solid #db3a1b;
+        }
+
+        .service-box .service-box-heading i.green {
+            color: #35aa47;
+            border: 1px solid #35aa47;
+        }
+
+    .service-box .service-box-heading span {
+        color: #444;
+        font-size: 21px;
+        line-height: 25px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        display: inline-block;
+    }
+
+    .service-box .service-box-heading [class^="icon-"],
+    .service-box [class*=" icon-"] {
+        display: inline-block;
+        text-align: center;
+    }
+
+        .service-box .service-box-heading [class^="icon-"].icon-large,
+        .service-box .service-box-heading [class*=" icon-"].icon-large {
+            /* increased font size for icon-large */
+            width: 1.5625em;
+        }
+
+@media (max-width: 992px) {
+    .service-box p, .service-box .service-box-heading em, .service-box .service-box-heading span {
+        display: block;
+        text-align: center;
+    }
+
+    .service-box .service-box-heading em {
+        margin-bottom: 10px;
+    }
+}

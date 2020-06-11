@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process>
+	<tag>${pom.version}</tag>
+	<roles>
+		<initiator>
+			<role name="tothom"/>
+		</initiator>
+		<supervisor>
+			<role name="u07286"/>
+		</supervisor>
+		<observer>
+			<role name="dgticseg"/>
+		</observer>
+	</roles>
+	<task name="Sol·licitud per accedir a un host com administrador">
+		<file path="ui/sol.licitudacces.zul"/>
+	</task>
+	<task name="Aprovació d'accés a host com a administrador">
+		<file path="ui/aprovacio.zul"/>
+	</task>
+	<upgrade>
+		<process>
+			<tag>1.0.0</tag>
+		</process>	
+		<process>
+			<tag>1.0.1</tag>
+		</process>
+		<process>
+			<tag>1.0.2</tag>
+		</process>	
+		<process>
+			<tag>1.0.3</tag>
+		</process>
+		<process>
+			<tag>1.0.4</tag>
+		</process>		
+			
+		<process>
+			<tag>${project.version}</tag>
+		</process>	
+	</upgrade>
+</process>

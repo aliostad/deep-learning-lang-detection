@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="all" name="IcleveretWatcherLogCongif" packages="com.icleveret.watchers">
+    <Properties>
+        <Property name="log-path">../icleveretwatcher/logs</Property>
+    </Properties>
+    <Appenders>
+        <File name="AppendTraceLog" fileName="${log-path}/appTraceLog.log">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+        </File>
+        <File name="AppendDebugLog" fileName="${log-path}/appDebugLog.log">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+        </File>
+        <File name="AppendInfoLog" fileName="${log-path}/appInfoLog.log">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+        </File>
+        <File name="AppendWarnLog" fileName="${log-path}/appWarnLog.log">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+        </File>
+        <File name="AppendErrorLog" fileName="${log-path}/appErrorLog.log">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+        </File>
+        <File name="AppendFatalLog" fileName="${log-path}/appFatalLog.log">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="IcleveretWatcherLogger" level="all">
+            <AppenderRef ref="AppendTraceLog" level="trace"/>
+            <AppenderRef ref="AppendDebugLog" level="debug"/>
+            <AppenderRef ref="AppendInfoLog" level="info"/>
+            <AppenderRef ref="AppendWarnLog" level="warn"/>
+            <AppenderRef ref="AppendErrorLog" level="error"/>
+            <AppenderRef ref="AppendFatalLog" level="fatal"/>
+        </Logger>
+    </Loggers>
+</Configuration>

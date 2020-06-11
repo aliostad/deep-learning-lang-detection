@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/WPYTransactionDuplicateCheckType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/WPYTransactionDuplicateCheckType</TokenIdentifier>
+			<Abstract type="html">Indicates how checks for duplicate transactions should behave. Duplicates are evaluated on the basis of
+amount, card number, and order ID; these evaluation criteria can be extended to also include customer ID,
+invoice number, or a user-defined field. Valid values for this parameter are:</Abstract>
+			<DeclaredIn>WPYDomainObject.h</DeclaredIn>
+            
+			
+			<NodeRef refid="92"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYTransactionDuplicateCheckTypeUnset</TokenIdentifier>
+            <Abstract type="html">Unset</Abstract>
+            <Declaration>WPYTransactionDuplicateCheckTypeUnset</Declaration>
+            
+            <DeclaredIn>WPYDomainObject.h</DeclaredIn>
+            
+            <NodeRef refid="92"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYTransactionDuplicateCheckTypeNone</TokenIdentifier>
+            <Abstract type="html">No duplicate check</Abstract>
+            <Declaration>WPYTransactionDuplicateCheckTypeNone</Declaration>
+            
+            <DeclaredIn>WPYDomainObject.h</DeclaredIn>
+            
+            <NodeRef refid="92"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYTransactionDuplicateCheckTypeException</TokenIdentifier>
+            <Abstract type="html">Exception code is returned in case of duplicate</Abstract>
+            <Declaration>WPYTransactionDuplicateCheckTypeException</Declaration>
+            
+            <DeclaredIn>WPYDomainObject.h</DeclaredIn>
+            
+            <NodeRef refid="92"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYTransactionDuplicateCheckTypePreviousTransaction</TokenIdentifier>
+            <Abstract type="html">Previously existing transaction is returned in case of duplicate</Abstract>
+            <Declaration>WPYTransactionDuplicateCheckTypePreviousTransaction</Declaration>
+            
+            <DeclaredIn>WPYDomainObject.h</DeclaredIn>
+            
+            <NodeRef refid="92"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYTransactionDuplicateCheckTypeExceptionNoOrderId</TokenIdentifier>
+            <Abstract type="html">Check is performed as above but without using order ID, and exception code is returned in case of duplicate</Abstract>
+            <Declaration>WPYTransactionDuplicateCheckTypeExceptionNoOrderId</Declaration>
+            
+            <DeclaredIn>WPYDomainObject.h</DeclaredIn>
+            
+            <NodeRef refid="92"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

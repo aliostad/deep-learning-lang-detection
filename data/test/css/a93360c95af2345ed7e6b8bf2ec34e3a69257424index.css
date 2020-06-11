@@ -1,0 +1,20 @@
+/* CSS Document */
+
+#WrapperServiceDeviceDescription label{
+	width:45px !important
+	}
+#WrapperEmail label{
+	width:45px !important	
+	}
+#ServiceDeviceShowPerPage{
+	width:60px !important;}
+.button_area_filter{
+	margin:0 auto;
+	}
+#WrapperServiceDevicename,#WrapperServiceDevicedevice_type_id,#WrapperServiceDevicedevice_brand_id,#WrapperServiceDevicedevice_model_id{
+	width:auto;
+	float:left;
+	padding-left:20px;}
+#WrapperServiceDevicename label,#WrapperServiceDevicedevice_type_id label,#WrapperServiceDevicedevice_brand_id label,#WrapperServiceDevicedevice_model_id label{
+ 	width:50px;}
+	

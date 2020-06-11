@@ -1,0 +1,39 @@
+#footerHolder
+{
+  background-color: #FFFFFF;
+  clear:both;
+  margin-left:280px;
+}
+
+#footerBar
+{
+  border-top:1px solid #B3B3B3;
+  margin-bottom:30px;
+  position:relative;
+  padding:8px;
+}
+
+#copyrightText
+{
+  float:left;
+  margin-right:20px;
+  color:gray;
+  font-weight:400;
+  font-size:11px;
+}
+
+#footerNavigation
+{
+	text-align: right;
+	color:gray;
+	font-weight:400;
+    font-size:11px;
+}
+
+#footerBar a
+{
+	text-decoration: none;
+	write-space: nowrap;
+	color: #3B5998;
+	cursor: pointer;
+}

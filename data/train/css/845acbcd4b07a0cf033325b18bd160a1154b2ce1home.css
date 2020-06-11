@@ -1,0 +1,136 @@
+
+.errorMessage {
+  color: red;
+  font-weight: bolder;
+}
+
+.growl {
+  z-index: 10000;
+}
+
+.growl-container.growl-fixed.top-right {
+  top: 40px;
+  right: 15px;
+}
+
+.pad-10 {
+  padding: 10px;
+}
+
+.pad-10-bottom {
+  padding-bottom: 10px;
+}
+
+.pad-15 {
+  padding: 15px 0 15px;
+}
+
+.margin-10 {
+  margin: 10px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.logo-font {
+  font-weight: bolder;
+  font-size: 72px;
+  color: white;
+}
+
+.image-bg-fluid-height,
+.image-bg-fixed-height {
+  text-align: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.image-bg-fluid-height {
+  background: url('../../assets/images/burger.jpg') no-repeat center center scroll;
+}
+
+.image-bg-fixed-height {
+  background: url('../../assets/images/burger.jpg') no-repeat center center scroll;
+  height: 450px;
+}
+
+.img-center {
+  margin: 0 auto;
+}
+
+.section-heading {
+  margin: 30px 0;
+  font-size: 3em;
+}
+
+.section-paragraph {
+  margin: 30px 0;
+  font-size: 16px;
+}
+
+.margin-bottom-40 {
+  margin-bottom: 40px;
+}
+
+/* Services Box */
+.service-box p {
+  color: #656565;
+  font-size: 13px;
+}
+.service-box .service-box-heading {
+  padding: 12px 0;
+}
+.service-box .service-box-heading i {
+  padding: 0;
+  -webkit-border-radius: 34px;
+  -moz-border-radius: 34px;
+  border-radius: 34px;
+  font-size:18px;
+  height:32px;
+  width:32px;
+  line-height: 32px;
+  text-align:center;
+  vertical-align: baseline;
+}
+.service-box .service-box-heading i.blue {
+  color: #0da3e2;
+  border:1px solid #0da3e2;
+}
+.service-box .service-box-heading i.red {
+  color: #db3a1b;
+  border:1px solid #db3a1b;
+}
+.service-box .service-box-heading i.green {
+  color: #35aa47;
+  border:1px solid #35aa47;
+}
+.service-box .service-box-heading span {
+  color: #444;
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  display: inline-block;
+}
+.service-box .service-box-heading [class^="icon-"],
+.service-box [class*=" icon-"] {
+  display: inline-block;
+  text-align: center;
+}
+.service-box .service-box-heading [class^="icon-"].icon-large,
+.service-box .service-box-heading [class*=" icon-"].icon-large {
+  /* increased font size for icon-large */
+  width: 1.5625em;
+}
+
+.service-box p, .service-box .service-box-heading em, .service-box .service-box-heading span {
+  display: block;
+  text-align: center;
+}
+.service-box .service-box-heading em {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,375 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.mui-page {
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+}
+
+.mui-img {
+  width: auto;
+  height: 100%;
+  display: block;
+  margin: 0px auto;
+}
+
+.mui-control {
+  position: absolute;
+  overflow: hidden;
+  display: none;
+}
+
+.mui-bg {
+  top: 0px;
+  left: 0px;
+}
+
+.mui-bg .mui-img {
+  width: 100%;
+  height: 100%;
+}
+
+.mui-title {
+  text-align: center;
+  width: 100%;
+  left: 0px;
+  color: #FFFFFF;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.mui-tip1, .mui-tip2 {
+  width: 100%;
+  text-align: center;
+}
+
+.mui-luck {
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.mui-luck-panel {
+  display: inline-block;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 46.875%;
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+  .mui-luck-title {
+    font-weight: bolder;
+    margin: 3px 0 3px;
+    font-size: 1em;
+  }
+
+  .mui-luck-content {
+    font-size: 0.8em;
+    text-align: left;
+  }
+
+  .mui-luck-content > div > span:nth-child(1) {
+    display: inline-block;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 374px) and (max-width: 413px) {
+  .mui-luck-title {
+    font-weight: bolder;
+    margin: 5px 0 3px;
+    font-size: 1.2em;
+  }
+
+  .mui-luck-content {
+    font-size: 1em;
+    text-align: left;
+  }
+
+  .mui-luck-content > div > span:nth-child(1) {
+    display: inline-block;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 413px) {
+  .mui-luck-title {
+    font-weight: bolder;
+    margin: 7px 0 5px;
+    font-size: 1.4em;
+  }
+
+  .mui-luck-content {
+    font-size: 1.2em;
+    text-align: left;
+  }
+
+  .mui-luck-content > div > span:nth-child(1) {
+    display: inline-block;
+    padding-right: 30px;
+  }
+}
+
+.mui-visited, .mui-winning, .mui-loading {
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  position: absolute;
+  top: 0px;
+}
+
+.mui-loading {
+  background-color: #000000;
+}
+
+.mui-loading > ul {
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  padding: 10px 0px;
+  margin-top: -25px;
+  margin-left: -25px;
+  text-align: center;
+}
+
+.mui-loading > ul > li {
+  display: inline-block;
+  width: 5px;
+  height: 30px;
+  background-color: #FFFFFF;
+}
+
+.mui-visited-shadow, .mui-winning-shadow {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.8;
+  left: 0px;
+  top: 0px;
+
+}
+
+.mui-visited-back, .mui-visited-ok, .mui-winning-back, .mui-winning-ok {
+  z-index: 101;
+}
+
+.mui-winning-text {
+  width: 60%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%);
+  z-index: 101;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: bolder;
+
+}
+
+@-webkit-keyframes load {
+  0% {
+    background-color: #FFFFFF;
+    -webkit-transform: scale(1, 1);
+  }
+  100% {
+    background-color: #ff00ff;
+    -webkit-transform: scale(1, 0.1);
+  }
+}
+
+@-moz-keyframes load {
+  0% {
+    background-color: #FFFFFF;
+    -moz-transform: scale(1);
+  }
+  100% {
+    background-color: #000000;
+    -moz-transform: scale(1, 0.1);
+  }
+}
+
+@-o-keyframes load {
+  0% {
+    background-color: #FFFFFF;
+    -o-transform: scale(1);
+  }
+  100% {
+    background-color: #000000;
+    -o-transform: scale(1, 0.1);
+  }
+}
+
+@keyframes load {
+  0% {
+    background-color: #FFFFFF;
+    transform: scale(1);
+  }
+  100% {
+    background-color: #ffff00;
+    transform: scale(1, 0.1);
+  }
+}
+
+.mui-loading > ul > li:nth-child(1) {
+  -webkit-animation: load 1s ease-in-out infinite alternate;
+  -moz-animation: load 1s ease-in-out infinite alternate;
+  -o-animation: load 1s ease-in-out infinite alternate;
+  animation: load 1s ease-in-out infinite alternate;
+}
+
+.mui-loading > ul > li:nth-child(2) {
+  -webkit-animation: load 1s ease-in-out infinite alternate 0.2s;
+  -moz-animation: load 1s ease-in-out infinite alternate 0.2s;
+  -o-animation: load 1s ease-in-out infinite alternate 0.2s;
+  animation: load 1s ease-in-out infinite alternate 0.2s;
+}
+
+.mui-loading > ul > li:nth-child(3) {
+  -webkit-animation: load 1s ease-in-out infinite alternate 0.4s;
+  -moz-animation: load 1s ease-in-out infinite alternate 0.4s;
+  -o-animation: load 1s ease-in-out infinite alternate 0.4s;
+  animation: load 1s ease-in-out infinite alternate 0.4s;
+}
+
+.mui-loading > ul > li:nth-child(4) {
+  -webkit-animation: load 1s ease-in-out infinite alternate 0.6s;
+  -moz-animation: load 1s ease-in-out infinite alternate 0.6s;
+  -o-animation: load 1s ease-in-out infinite alternate 0.6s;
+  animation: load 1s ease-in-out infinite alternate 0.6s;
+}
+
+.mui-loading > ul > li:nth-child(5) {
+  -webkit-animation: load 1s ease-in-out infinite alternate 0.8s;
+  -moz-animation: load 1s ease-in-out infinite alternate 0.8s;
+  -o-animation: load 1s ease-in-out infinite alternate 0.8s;
+  animation: load 1s ease-in-out infinite alternate 0.8s;
+}
+
+.animated {
+  /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
+  backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  animation-fill-mode: both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000;
+
+  -o-animation-fill-mode: both;
+  -o-transform: translate3d(0, 0, 0);
+  -o-perspective: 1000;
+
+  -moz-animation-fill-mode: both;
+  -moz-transform: translate3d(0, 0, 0);
+  -moz-perspective: 1000;
+
+  -webkit-animation-fill-mode: both;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-perspective: 1000;
+}
+
+/*扇形*/
+.sectors-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-weight: bold;
+  background: url(../img/n_rbg_prize.png) no-repeat center center;
+  background-size: 100%;
+}
+
+.sectors {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-transform-origin: 100% 100%;
+  pointer-events: none;
+}
+
+.sector-a {
+  -webkit-transform: rotate(55deg) skew(18deg);
+  -ms-transform: rotate(55deg) skew(18deg);
+  -moz-transform: rotate(55deg) skew(18deg);
+  transform: rotate(55deg) skew(18deg);
+}
+
+.sector-b {
+  -webkit-transform: rotate(127deg) skew(18deg);
+  -ms-transform: rotate(127deg) skew(18deg);
+  -moz-transform: rotate(127deg) skew(18deg);
+  transform: rotate(127deg) skew(18deg);
+}
+
+.sector-c {
+  -webkit-transform: rotate(199deg) skew(18deg);
+  -ms-transform: rotate(199deg) skew(18deg);
+  -moz-transform: rotate(199deg) skew(18deg);
+  transform: rotate(199deg) skew(18deg);
+}
+
+.sector-d {
+  -webkit-transform: rotate(271deg) skew(18deg);
+  -ms-transform: rotate(271deg) skew(18deg);
+  -moz-transform: rotate(271deg) skew(18deg);
+  transform: rotate(271deg) skew(18deg);
+}
+
+.sector-e {
+  -webkit-transform: rotate(-17deg) skew(18deg);
+  -ms-transform: rotate(-17deg) skew(18deg);
+  -moz-transform: rotate(-17deg) skew(18deg);
+  transform: rotate(-17deg) skew(18deg);
+}
+.sectors-txt{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 45%;
+  font-size: 130%;
+  -webkit-transform: skew(-18deg) rotate(-55deg) scale(1);
+  -ms-transform: skew(-18deg) rotate(-55deg) scale(1);
+  -moz-transform: skew(-18deg) rotate(-55deg) scale(1);
+  transform: skew(-18deg) rotate(-55deg) scale(1);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: opacity 0.3s, color 0.3s;
+  -moz-transition: opacity 0.3s, color 0.3s;
+  transition: opacity 0.3s, color 0.3s;
+}
+.n-start{
+  display: block;
+  width: 100%;
+}
+.n-start>img{
+  width: 100%;
+}
+
+.overTextH {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.overText {
+  /*文本文字超过容器以省略号显示*/
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

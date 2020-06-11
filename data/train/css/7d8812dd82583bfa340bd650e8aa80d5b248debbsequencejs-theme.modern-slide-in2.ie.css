@@ -1,0 +1,137 @@
+ /* Sequence slider (2 theme (index4.html) for ie)
+ ===================================================================*/
+ 
+#nav li {
+	display: inline;
+}
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 767px) {
+        #sequence-theme    { 
+			height: 235px;
+						margin:0;
+			padding:0;
+		}
+		#sequence-theme .model{
+			left: 50%;
+			bottom: -20%;
+			min-width: 65%; 
+			width: 65%;
+
+		}
+		
+		#sequence-theme .animate-in .model {
+			left: 50%;
+			margin-left: -33%;
+		}
+		
+		#sequence-theme .animate-out .model {
+			left: 50%;
+			margin-left: -30%;
+		}
+		
+		#sequence-theme .title{
+			background-color: #535961;
+			bottom: 0;
+			left: 100%;
+			padding: 4%;
+			bottom: -50%;
+			width: 280px;
+			z-index: 10;
+			color: #fff;
+		}
+		#sequence-theme .box-main-container {
+			background-color: #535961;
+			color: #fff;
+			padding-bottom: 15px;
+			padding-top: 15px;
+			text-align: center;
+		}
+		
+		#sequence-theme .animate-in .title{
+			left: 0%;
+		}
+		
+		#sequence-theme .animate-out .title{
+			left: -100%;	
+		}
+		#sequence-theme .subtitle{
+			visibility: hidden;
+		}
+		#sequence-theme .subtitle-3{
+			visibility: hidden;
+		}
+		#sequence-theme .subtitle-2{
+			visibility: hidden;
+		}
+		
+		#nav{
+			bottom: 40px;
+		}
+		
+		#nav li img{
+			height: 100px;
+		}
+
+    }
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        #sequence-theme    { 
+			height: 265px;
+			margin:0;
+			padding:0;
+		}
+		#sequence-theme .model{
+			left: 50%;
+			bottom: -20%;
+			min-width: 65%; 
+			width: 65%;
+		}
+		
+		#sequence-theme .animate-in .model {
+			left: 50%;
+			margin-left: -33%;
+		}
+		
+		#sequence-theme .animate-out .model {
+			left: 50%;
+			margin-left: -30%;
+		}
+		
+		#sequence-theme .title{
+			background-color: #535961;
+			bottom: 0;
+			left: 100%;
+			padding: 4%;
+			bottom: -50%;
+			width: 400px;
+			z-index: 10;
+			color: #fff;
+		}
+		#sequence-theme .box-main-container {
+			background-color: #535961;
+			color: #fff;
+			padding-bottom: 15px;
+			padding-top: 15px;
+			text-align: center;
+		}
+		
+		#sequence-theme .animate-in .title{
+			left: 0%;
+		}
+		
+		#sequence-theme .animate-out .title{
+			left: -100%;	
+		}
+
+    }

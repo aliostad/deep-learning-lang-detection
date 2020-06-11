@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<!-- Mapeia as entidades.. -->
+<hibernate-configuration>
+	<session-factory>
+
+		<property name="hibernate.cache.region.factory_class">net.sf.ehcache.hibernate.EhCacheRegionFactory</property>
+		<property name="hibernate.cache.use_query_cache">true</property>
+		<property name="hibernate.cache.use_second_level_cache">true</property>
+		<property name="hibernate.cache.provider_class"> net.sf.ehcache.hibernate.EhCacheProvider</property>
+		<property name="hibernate.cache.provider_configuration_file_resource_path">ehcache.xml</property>
+
+		<mapping class="br.com.webhomebeta.entity.Usuario"></mapping>
+		<mapping class="br.com.webhomebeta.entity.Comentario"></mapping>
+		<mapping class="br.com.webhomebeta.entity.Publicacao"></mapping>
+		<mapping class="br.com.webhomebeta.entity.AtasEntity"></mapping>
+		<mapping class="br.com.webhomebeta.entity.DescricaoCondominio"></mapping>
+		<mapping class="br.com.webhomebeta.entity.Assembleia"></mapping>
+		<mapping class="br.com.webhomebeta.entity.Funcionario"></mapping>
+		<mapping class="br.com.webhomebeta.entity.EspacoCondominio"></mapping>
+		<mapping class="br.com.webhomebeta.entity.Notificacao"></mapping>
+		<mapping class="br.com.webhomebeta.entity.Perfil"></mapping>
+		<mapping class="br.com.webhomebeta.entity.Gostou"></mapping>
+		<mapping class="br.com.webhomebeta.entity.NaoGostou"></mapping>
+		<mapping class="br.com.webhomebeta.entity.Enquetes"></mapping>
+		<mapping class="br.com.webhomebeta.entity.Opcao"></mapping>
+		<mapping class="br.com.webhomebeta.entity.OpcaoVotada"></mapping>
+		<mapping class="br.com.webhomebeta.entity.Mural"></mapping>
+		<mapping class="br.com.webhomebeta.entity.Informativo"></mapping>
+		<mapping class="br.com.webhomebeta.entity.Reserva"></mapping>
+		<mapping class="br.com.webhomebeta.entity.CalendarEvent"></mapping>
+		<mapping class="br.com.webhomebeta.entity.Gasto"></mapping>
+		<mapping class="br.com.webhomebeta.entity.Visitante"></mapping>
+		<mapping class="br.com.webhomebeta.entity.TentativaLogin"></mapping>
+
+
+	</session-factory>
+</hibernate-configuration>

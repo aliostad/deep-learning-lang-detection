@@ -1,0 +1,86 @@
+/* Bas */
+table.issues .priority-1 .priority {
+}
+
+/* Normal */
+table.issues .priority-2 .priority {
+  color: #1B4F08;
+}
+
+/* Haut */
+table.issues .priority-3 .priority {
+  color: #FFFFFF;
+  background-color: #F89406;
+}
+
+/* Urgent */
+table.issues .priority-4 .priority {
+  color: #FFFFFF;
+  background-color: #B94A48;
+}
+
+/* Immédiat */
+table.issues .priority-5 .priority {
+  color: #FFFFFF;
+  background-color: #333333;
+}
+
+table.issues tr.parent td.estimated_hours, 
+table.issues tr.parent td.remaining_hours, 
+table.issues tr.parent td.total_spent_hours, 
+table.issues tr.parent td.total_hours, 
+table.issues tr.parent td.spent_hours, 
+table.issues tr.parent td.delta_hours {
+    font-weight: bold
+}
+
+div.issue table.attributes .delta-hours-less,
+table.list tr.delta-hours-less td.delta_hours {
+    color: #800
+}
+
+div.issue table.attributes .delta-hours-more,
+table.list tr.delta-hours-more td.delta_hours {
+    color: #005f00
+}
+
+div.issue table.attributes .delta-hours-exact,
+table.list tr.delta-hours-exact td.delta_hours  {
+    color: #F89406
+}
+
+.controller-load_following #sidebar {
+    display: none
+}
+
+.controller-load_following #content {
+    width: 100%
+}
+
+.controller-load_following table.list {
+    border: 1px solid #e4e4e4
+}
+
+.controller-load_following table.list th {
+    white-space: normal
+}
+
+.controller-load_following table.list tr.project {
+    background: #EEEEEE
+}
+
+.controller-load_following table.list tr.issue:nth-child(even) {
+    background: #ffffff
+}
+
+.controller-load_following table.list tr.issue:nth-child(odd) {
+    background-color: #f6f7f8
+}
+
+.controller-load_following table.list tfoot {
+    font-weight: bold
+}
+
+.controller-load_following table.list td.zero_value {
+    font-size: 75%;
+}

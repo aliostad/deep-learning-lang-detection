@@ -1,0 +1,16 @@
+<pentaho-system>
+
+	<log-file>d:/server.log</log-file>
+	<log-level>DEBUG</log-level>
+
+	<objects>
+		<ISolutionEngine scope="global">org.pentaho.solution.SolutionEngine</ISolutionEngine>
+		<ISolutionRepository scope="session">org.pentaho.repository.filebased.solution.SolutionRepository</ISolutionRepository>
+		<IRuntimeRepository scope="session">org.pentaho.repository.runtime.SimpleRuntimeRepository</IRuntimeRepository>
+	</objects>
+
+	<system-listeners>
+		<globalObjects>org.pentaho.system.GlobalObjectInitializer</globalObjects>
+	</system-listeners>
+
+</pentaho-system>

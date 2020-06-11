@@ -1,0 +1,17 @@
+<DuplicatesReport>
+    <duplicatesReportItem pid="UQ:4" title="Title UQ:4">
+        <duplicateItem pid="UQ:5" probability="0.7" title="Title UQ:5"/>
+        <duplicateItem pid="UQ:7" probability="0.7" title="Title UQ:7"/>
+        <duplicateItem pid="UQ:6" probability="0.7" title="Title UQ:6"/>
+    </duplicatesReportItem>
+    <duplicatesReportItem pid="UQ:3" title="Title UQ:3">
+        <duplicateItem pid="UQ:5" probability="0.7" title="Title UQ:5"/>
+        <duplicateItem pid="UQ:7" probability="0.7" title="Title UQ:7"/>
+        <duplicateItem pid="UQ:6" probability="0.7" title="Title UQ:6"/>
+    </duplicatesReportItem>
+    <duplicatesReportItem pid="UQ:2" title="Title UQ:2">
+        <duplicateItem pid="UQ:5" probability="0.7" title="Title UQ:5"/>
+        <duplicateItem pid="UQ:7" probability="0.7" title="Title UQ:7"/>
+        <duplicateItem pid="UQ:8" probability="0.8" title="Title UQ:8"/>
+    </duplicatesReportItem>
+</DuplicatesReport>

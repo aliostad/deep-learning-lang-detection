@@ -1,0 +1,64 @@
+.users-load-container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.users-load-headers, .users-load-body {
+    display: block;
+    text-align: center;
+}
+
+.users-load-headers > li {
+    display: inline-block;
+    padding: 0 0 .4% 0;
+    margin: .4% 0 .8% 0;
+    border-bottom: 1px solid #ED1C24;
+}
+
+.users-load-body > li {
+    display: inline-block;
+    text-align: left;
+}
+
+.users-load-body > li > a {
+    color: #ED1C24;
+    transition: 0.3s all;
+}
+
+.users-load-body > li > a:hover {
+    color: #A00000;
+}
+
+.users-load-headers-user {
+    width: 19%;
+}
+
+.users-load-headers-load {
+    width: 5%;
+}
+
+.users-load-body-user {
+    width: 18%;
+    padding: .2% .5%;
+}
+
+.users-load-body-load {
+    width: 5%;
+    text-align: center;
+}
+
+.users-load-headers-alert {
+    width: 4%;
+}
+
+.users-load-body-alert {
+    width: 4%;
+}
+
+.users-load-headers-alert {
+    visibility: hidden;
+}
+
+.background-yellow {
+    background: #FFFF00;
+}

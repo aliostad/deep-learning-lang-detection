@@ -1,0 +1,22 @@
+body { font-family: Trebuchet MS; }
+.docMenu { height:90%; overflow-y:auto; overflow-x:hidden; }
+
+.sub-nav { margin-left:20px; }
+.sub-nav li { padding:2px; }
+.sub-nav li a {  padding:3px; }
+
+.affix { width:200px !important; height: 90%; }
+
+.slateExample { min-height:300px; width:100%; border:1px dashed #000; background-color:#f8f8f8; }
+
+.apiMain { padding: 3px; }
+.apiSub { padding: 10px; margin-top:30px; }
+.apiSub:nth-child(2n+2) {  
+  background-color: #0D151F;
+}
+.apiSub div { margin: 10px; }
+.apiHeader { font-size:15pt; }
+.apiIntro { margin:10px 20px 10px 20px; }
+.apiArguments { }
+.apiReturn { }
+.apiReturnDetail { }

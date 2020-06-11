@@ -1,0 +1,65 @@
+/*------iframe (begin)------*/
+body {
+    padding: 30px 0;
+    height: 100%;
+    width: 1200px;
+    background: url("../img/3.jpg") 50% 50% repeat-y;
+    margin: 0 auto;
+}
+iframe {
+    border: none;
+    width: 100%;
+    margin-bottom: 15px;
+}
+/*------iframe (end)------*/
+
+/*------ bootstrap做的修改 (begin)------*/
+.tab-content{
+    padding: 15px 0;
+}
+/*------ bootstrap做的修改 (end)------*/
+
+/*------ 搜索自动提示的样式 (begin) ------*/
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; cursor: default; overflow: auto; -webkit-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); -moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-no-suggestion { padding: 2px 5px;}
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+/*------ 搜索自动提示的样式 (begin) ------*/
+
+/*------ api文档页面的样式 (begin) ------*/
+#apiTemp{
+    font-family: Tahoma, '宋体';
+    font-size: 14px;
+    color: #666;
+    line-height: 20px;
+}
+#apiTemp h3, #apiTemp h4{
+    color: #0071bc;
+    font-size: 15px;
+}
+#apiTemp th{
+    background-color: #dfeefe;
+}
+#apiTemp td:first-child,#apiTemp td:nth-child(2){
+    color: #267620;
+    font-style: italic;
+}
+#apiTemp td:nth-child(2){
+    color: #888;
+}
+#apiTemp p{
+    background-color: #fbfbfb;
+    padding: 15px 20px;
+}
+/*------ api文档页面的样式 (begin) ------*/
+.user-top{
+    margin-bottom: 0;
+}
+.user-main{
+    padding-top: 20px;
+    height: auto;
+    min-height: 700px;
+    background-color: #fff;
+
+}

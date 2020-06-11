@@ -1,0 +1,96 @@
+#!/bin/sh
+
+#
+# This file is released under the terms of the Artistic License.
+# Please see # the file LICENSE, included in this package, for details.
+#
+# Copyright (C) 2002-2008 Mark Wong & Open Source Development Labs, Inc.
+#
+
+if [ -z ${DBT2DBNAME} ]; then
+	echo "DBT2DBNAME not defined."
+	exit 1
+fi
+
+BACKGROUND="no"
+
+usage()
+{
+	echo "usage: `basename $0` -d <dir> [-b] [-l <port>] [-t]"
+	echo "  <dir> is where the data files are."
+}
+
+while getopts "bd:l:t" OPT; do
+	case ${OPT} in
+	b)
+		BACKGROUND="yes"
+		;;
+	d)
+		DBDATA=${OPTARG}
+		;;
+	l)
+		PORT=${OPTARG}
+		;;
+	t)
+		TABLESPACES_FLAG="-t"
+		;;
+	esac
+done
+
+if [ "x${DBDATA}" = "x" ]; then
+	usage
+	exit 1
+fi
+
+if [ ! "x${PORT}" = "x" ]; then
+	PORTARG="-p ${PORT}"
+fi
+
+# Load tables
+# This background stuff is honestly kinda ugly. IMO the right way to do this
+# is to utilize make -j
+
+load_table2() {
+	$1 "$2" || exit 1
+	$1 "$3" || exit 1
+}
+
+load_table() {
+	table=$1
+	if [ "x$2" == "x" ]; then
+		file=$table.data
+	else
+		file=$2.data
+	fi
+
+	local sql="COPY $table FROM '${DBDATA}/$file' WITH NULL AS '';"
+	local cmd="psql ${PORTARG} -e -d ${DBT2DBNAME} -c "
+	if [ "${BACKGROUND}" == "yes" ]; then
+		echo "Loading $table table in the background..."
+		load_table2 "${cmd}" "${sql}" "VACUUM ANALYZE $table;" &
+	else
+		echo "Loading $table table..."
+		${cmd} "${sql}" || exit 1
+	fi
+}
+
+load_table customer
+load_table district
+load_table history
+load_table item
+load_table new_order
+load_table order_line
+load_table orders order
+load_table stock
+load_table warehouse
+
+wait
+
+# load C or pl/pgsql implementation of the stored procedures
+#if true; then
+#  ${DIR}/dbt2-pgsql-load-stored-procs -l ${PORT} -t c|| exit 1
+#else
+#  ${DIR}/dbt2-pgsql-load-stored-procs -l ${PORT} -t plpgsql || exit 1
+#fi
+
+exit 0

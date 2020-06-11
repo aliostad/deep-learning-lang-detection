@@ -1,0 +1,30 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/mx";
+@namespace view "widgets.Zillow.main.view.ui.*";
+
+view|ViewManager
+{
+    skinClass: ClassReference("widgets.Zillow.main.view.components.skins.ViewManagerSkin");
+}
+
+view|PostingSearchView
+{
+    skinClass: ClassReference("widgets.Zillow.main.view.components.skins.PostingSearchViewSkin");
+}
+
+view|GetSearchResultsView
+{
+	skinClass: ClassReference("widgets.Zillow.main.view.components.skins.GetSearchResultsViewSkin");
+}
+
+/*.details
+{
+    fontSize: 8;
+}
+
+.headerDetail
+{
+    fontSize: 10;
+    fontWeight: bold;
+}*/

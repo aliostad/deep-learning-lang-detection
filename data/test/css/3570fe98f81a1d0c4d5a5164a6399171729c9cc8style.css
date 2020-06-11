@@ -1,0 +1,242 @@
+body {
+    /* Box-model */
+    min-width: 800px;
+    margin: 0;
+    padding: 0;
+    /* Typography */
+    font-family: PT Sans Narrow;
+	font-size: 14px;
+	line-height: 24px;
+	color: #000000;
+	font-weight: bold;
+}
+h1 {
+    /* Typography */
+	font-size: 30px;
+	line-height: 42px;
+	color: #000000;
+	font-weight: bold;
+	font-family: PT Sans Narrow;
+	text-transform: uppercase;
+}
+h2 {
+    /* Typography */
+    font-family: PT Sans Narrow;
+	font-size: 24px;
+	line-height: 42px;
+	color: #000000;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.main-header {
+    /* Box-model */
+    padding: 5px 0;
+    /* Visual */
+    background-color: #68df68; 
+}
+.container {
+    /* Box-model */
+    min-height: 20px;
+    padding: 5px 0;
+    width: 940px;
+    margin: 0 auto;
+    /* Visual */
+    outline: 3px dotted #f81374;
+    
+}
+.main-navigation {
+    /* Box-model */
+    float: left;
+    width: 720px;
+    min-height: 52px;
+    /* Visual */
+    background-color: yellow;
+}
+.user-block {
+    /* Box-model */
+    float: right;
+    min-height: 52px;
+    width: 170px;
+    /* Visual */
+    background-color: yellow;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.main-container {
+    margin: 57px auto;
+}
+.logo {
+    /* Box-model */
+    width: 368px;
+    margin: 0 auto;
+    margin-bottom: 27px;
+    /* Visual */
+    outline: 3px dotted #7d73c9;
+}
+.features-row {
+    /* Box-model */
+    margin-bottom: 65px;
+    padding: 5px;
+    /* Visual */
+    outline: 3px dotted #7d73c9;
+}
+.features-item {
+    /* Box-model */
+    float: left;
+    width: 290px;
+    min-height: 186px;
+    margin-right: 30px;
+    /* Visual */
+    background-color:#d8664b;
+}
+.features-item:last-child {
+    margin-right: 0;   
+}
+.index-content {
+    /* Box-model */
+    margin-bottom: 34px;
+    padding: 55px 80px;
+    /* Visual */
+    outline: 3px dotted #7d73c9;
+}
+.content-column-left,
+.content-column-right {
+    /* Box-model */
+    width: 300px;
+    min-height: 319px;
+    /* Visual */
+    background-color:#d8664b;
+}
+.content-column-left {
+    float: left;
+}
+.content-column-right {
+    float: right;
+}
+.gallery-content {
+    margin: 0;   
+}
+.main-footer {
+    /* Box-model */
+     padding: 37px 0;  
+    /* Visual */
+    background-color: #68df68;
+}
+.footer-contacts{
+    /* Box-model */
+    width: 310px;
+    float: left;
+    margin-right: 90px;
+    /* Visual */
+    background-color: yellow;  
+}
+.footer-social {
+    /* Box-model */
+    width: 141px;
+    float: left;
+    /* Visual */
+    background-color: yellow;
+}
+.footer-copyright {
+    /* Box-model */
+    width: 310px;
+    float: right;
+    /* Visual */
+    background-color: yellow;
+}
+.container-breadcrumbs {
+    margin: 47px auto;
+}
+.page-breadcrumbs {
+    /* Visual */
+    outline: 3px dotted #7d73c9;
+    padding-bottom: 60px;
+}
+.breadcrumbs {
+    /* Box-model */
+    margin: 0;
+    margin-top: 28px;
+    /* Visual */
+    background-color:#d8664b;
+}
+.filter {
+    /* Box-model */
+    float: left;
+    width: 180px;
+    /* Visual */
+    background-color:#d8664b;
+}
+.catalog {
+    /* Box-model */
+    float: right; 
+    width: 706px;
+    /* Visual */
+    outline: 3px dotted #7d73c9;
+}
+.catalog-content {
+    /* Box-model */
+    margin-bottom: 24px;
+    /* Visual */
+    background-color:#d8664b;
+}
+.catalog-item {
+    /* Box-model */
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+.catalog-item:nth-child(3n) {
+    margin-right:0; 
+}
+.catalog-pagination {
+    /* Box-model */
+    float: left;
+    /* Visual */
+    background-color:#d8664b;
+}
+.item-image {
+    /* Box-model */
+    width: 460px;
+    float: left;
+    margin-right: 90px;
+    /* Visual */
+    background-color:#d8664b;
+    outline: 1px solid green;
+}
+.item-image-main {
+    /* Box-model */
+    height: 498px;
+    margin-bottom: 21px;
+}
+.item-image-small {
+    /* Box-model */
+    float: left;
+    margin-right: 20px;
+    height: 149px;
+}
+.item-image-small:last-child {
+    margin-right: 0; 
+}
+.item-info {
+    /* Box-model */
+    float: right;
+    width: 376px;
+    padding-top: 24px;
+    /* Visual */
+    outline: 1px solid green;  
+}
+.item-description {
+    /* Box-model */
+    margin-bottom: 67px;
+    /* Visual */
+    background-color:#d8664b; 
+}
+.item-feature {
+    /* Visual */
+    background-color:#d8664b; 
+}

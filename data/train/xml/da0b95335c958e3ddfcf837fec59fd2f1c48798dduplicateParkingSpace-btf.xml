@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="duplicateParkingSpace-btf">
+    <default-activity id="__1">ExecuteWithParams</default-activity>
+    <input-parameter-definition id="__18">
+      <name id="__17">parkingSpaceId</name>
+      <value>#{pageFlowScope.parkingSpaceId}</value>
+      <class>java.lang.Integer</class>
+    </input-parameter-definition>
+    <managed-bean id="__14">
+      <managed-bean-name id="__13">DuplicateParkingSpacePageBean</managed-bean-name>
+      <managed-bean-class id="__15">duplicateparkingspace.backing.DuplicateParkingSpaceBackingBean</managed-bean-class>
+      <managed-bean-scope id="__12">request</managed-bean-scope>
+    </managed-bean>
+    <method-call id="ExecuteWithParams">
+      <method>#{bindings.ExecuteWithParams.execute}</method>
+      <outcome id="__2">
+        <fixed-outcome>ExecuteWithParams</fixed-outcome>
+      </outcome>
+    </method-call>
+    <view id="DuplicateParkingSpace">
+      <page>/DuplicateParkingSpacePage.jspx</page>
+    </view>
+    <method-call id="CallDuplicateParkingSpace">
+      <method>#{bindings.CallDuplicateParkingSpace.execute}</method>
+      <return-value id="__33">#{pageFlowScope.duplicationMessage}</return-value>
+      <outcome id="__26">
+        <fixed-outcome>CallDuplicateParkingSpace</fixed-outcome>
+      </outcome>
+    </method-call>
+    <task-flow-return id="exitDuplicateParkingSpace">
+      <outcome id="__8">
+        <name>exitDuplicateParkingSpace</name>
+      </outcome>
+    </task-flow-return>
+    <control-flow-rule id="__3">
+      <from-activity-id id="__4">ExecuteWithParams</from-activity-id>
+      <control-flow-case id="__7">
+        <from-outcome id="__6">ExecuteWithParams</from-outcome>
+        <to-activity-id id="__5">DuplicateParkingSpace</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__9">
+      <from-activity-id id="__10">DuplicateParkingSpace</from-activity-id>
+      <control-flow-case id="__19">
+        <to-activity-id id="__11">CallDuplicateParkingSpace</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__30">
+      <from-activity-id id="__31">CallDuplicateParkingSpace</from-activity-id>
+      <control-flow-case id="__34">
+        <to-activity-id id="__32">DuplicateParkingSpace</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <visibility id="__16">
+      <url-invoke-allowed/>
+    </visibility>
+  </task-flow-definition>
+</adfc-config>

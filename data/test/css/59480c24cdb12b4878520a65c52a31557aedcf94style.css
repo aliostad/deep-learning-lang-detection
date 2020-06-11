@@ -1,0 +1,114 @@
+/*
+Autor: Sancho BBDO (http://www.sanchobbdo.com.co)
+*/
+
+/* GLOBAL SETTINGS
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+/* Viewport ----------- */
+@-webkit-viewport {
+  width: device-width; }
+
+@-moz-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@viewport {
+  width: device-width; }
+
+/* Selections ----------- */
+::-moz-selection {
+  background: #000;
+  color: #f7f7f7;
+}
+
+::selection {
+  background: #000;
+  color: #f7f7f7;
+}
+
+::selection:window-inactive {
+  background: #333;
+  color: #eee;
+}
+
+/* =1 BODY AND LAYOUTS
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+html {
+  background-color: #f7f7f7;
+}
+
+body {
+  color: #333;
+  font: normal 100%/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  vertical-align: top;
+}
+
+/* Layout Styles ----------- */
+.l-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60em;
+  position: relative;
+  width: 90%;
+}
+  .l-container:before,
+  .l-container:after {
+    content: " ";
+    display: table;
+  }
+
+  .l-container:after {
+    clear: both;
+  }
+
+.l-header {
+  /* @todo Write header layout element styles */
+}
+
+.l-content {
+  /* @todo Write content layout element styles */
+}
+
+.l-footer {
+  /* @todo Write footer layout element styles */
+}
+
+/* =2 LINKS
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+a:link,
+a:visited {
+  color: #333;
+}
+
+a:hover {
+  color: #333;
+}
+
+a:active {
+  color: #333;
+}
+
+/* =3 HEADINGS
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+/* @todo Write headings CSS */
+
+/* =4 HEADER
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+/* @todo Write Header CSS */
+
+/* =5 CONTENT
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+/* Section A Styles ----------- */
+/* @todo Write Content CSS */
+
+/* Section B Styles ----------- */
+/* @todo Write Content CSS */
+
+/* =6 FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+/* @todo Write Footer CSS */

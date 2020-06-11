@@ -1,0 +1,20 @@
+/* Load basic components */
+@import url('basic.reset.css');
+@import url('basic.helpers.css');
+
+/* Load basic theme */
+@import url('basic.theme.screen.css');
+
+/* ============================================================================
+ == LAYOUT =====
+ =========================================================================== */
+
+#header { margin: 1em; }
+#navigation { margin: 1em; }
+#body { margin: 1em; padding: 1em 0; border: 1px dotted silver; border-left: none; border-right: none; }
+#footer { margin: 1em; }
+
+#body p.hint { font-size: 10px; margin: 0; padding: 0; }
+
+
+

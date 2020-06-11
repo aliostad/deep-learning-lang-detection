@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "UpdateData";
+}
+
+<h2>Update Data</h2>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Phone NUmber</th>
+                <th>Instrument Name</th>
+                <th>Type</th>
+                <th>Price</th>
+
+
+
+            </tr>
+        </thead>
+   
+
+@foreach (var instrument in ViewBag.instruments)
+{
+    if (instrument.Client != null)
+    {
+        <tbody>
+            <tr>
+                <td>@instrument.Client.Firstname</td>
+           
+
+           
+                <td>@instrument.Client.Lastname</td>
+            
+            
+                <td>@instrument.Client.Address</td>
+           
+
+           
+                <td>@instrument.Client.City</td>
+            
+
+           
+                <td>@instrument.Client.State</td>
+          
+
+          
+                <td>@instrument.Client.Phone</td>
+           
+
+           
+                <td>@instrument.Description</td>
+          
+
+           
+                <td>@instrument.Type</td>
+        
+                <td>@instrument.Price</td>
+
+                <td>
+                    <a href="@Url.Action("Edit", "Clients", new { id=instrument.Client.ClientID})">Edit</a>
+                    <a href="@Url.Action("Delete", "Clients", new { id = instrument.Client.ClientID })">Delete</a>
+                </td>
+            </tr>
+            </tbody>
+            }
+        }
+
+        
+    </table>
+ </div>
+ 

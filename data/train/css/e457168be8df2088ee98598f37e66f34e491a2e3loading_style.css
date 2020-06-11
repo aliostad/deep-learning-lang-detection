@@ -1,0 +1,92 @@
+.load-scene a {
+  font: 400 100%/1em 'Proxima Nova', sans-serif;
+}
+
+.load-scene {
+  text-align:center;
+  position:relative;
+  height:100%;
+  width:100%;
+  z-index:10;
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(150,150,150,1) 0%, rgba(34,34,34,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(150,150,150,1)), color-stop(100%,rgba(34,34,34,1))); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(150,150,150,1) 0%,rgba(34,34,34,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  rgba(150,150,150,1) 0%,rgba(34,34,34,1) 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(150,150,150,1) 0%,rgba(34,34,34,1) 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  rgba(150,150,150,1) 0%,rgba(34,34,34,1) 100%); /* W3C */
+}
+
+.load-verold {
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  height:150px;
+  width:auto;
+  margin: auto;
+  z-index:10;
+}
+
+.load-cube {
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  height:75px;
+  width:75px;
+  margin: auto;
+  z-index:2; 
+  background-color:white;
+  -webkit-animation:fade 5s linear infinite;
+  -moz-animation:fade 5s linear infinite;
+  animation:fade 5s linear infinite;
+}
+
+.load-progress{
+  margin:auto;
+  width:100%;
+  position:absolute;
+  bottom : 5%;
+  text-align:center;
+  z-index:2;
+}
+
+.load-progress a{
+  color:white;
+}
+
+.load-bar {
+  max-width:80%;
+  width:0%;
+  height:4px;
+  background-color:#EEEEEE;
+  margin:auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s;
+}
+
+@-webkit-keyframes fade /* Safari and Chrome */
+{
+  0%   {background: white;}
+  50%  {background: rgb(150,150,150);}
+  100% {background: white;}
+}
+
+@-moz-keyframes fade /* Safari and Chrome */
+{
+  0%   {background: white;}
+  50%  {background: rgb(150,150,150);}
+  100% {background: white;}
+}
+
+@keyframes fade /* Safari and Chrome */
+{
+  0%   {background: white;}
+  50%  {background: rgb(150,150,150);}
+  100% {background: white;}
+}

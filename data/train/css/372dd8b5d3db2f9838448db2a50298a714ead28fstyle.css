@@ -1,0 +1,129 @@
+html, body {
+    background-color: #0d0d0d;
+    color: #eee;
+
+    margin-left: 0;
+    margin-right: 0;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+
+    text-align: center;
+}
+
+h1 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: lighter;
+}
+a {
+    cursor: pointer;
+    color: #0090dd;
+    text-decoration: none;
+}
+a:hover {
+    color: #079;
+}
+.muted {
+    color: #555;
+}
+
+input {
+    border-radius: 0px;
+    border: 1px solid #555;
+    background-color: #444;
+    color: #eee;
+    padding: 7px;
+}
+
+button {
+    border-radius: 0px;
+    border: 1px solid #555;
+    padding: 7px;
+
+    color: #eee;
+    background: -webkit-linear-gradient(top, #555 0%, #444 100%);
+}
+
+hr {
+    border: 1px solid #121212;
+    border-bottom: none;
+    margin: 0px;
+    position: relative;
+    left: -8px;
+}
+
+#footer {
+    color: #888;
+}
+
+#gallery {
+    font-size: 0;
+    display: block;
+    width: calc(100% - 16px);
+    height: 100%;
+    margin-right: 0px;
+    margin-left: 16px;
+    margin-bottom: 20px;
+}
+
+.gthumb {
+    display: inline-block;
+}
+
+#load-button {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 64px;
+    height: 64px;
+    background-color: #444;
+    z-index: 10;
+}
+#load-button:hover {
+    background-color: #3E3E3E;
+}
+#load-button:active {
+    background-color: #333;
+}
+
+#load-button img {
+    width: 70%;
+    height: 100%;
+}
+
+#load-container {
+    position: relative;
+    background: #222;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+#load-input {
+    width: 80%;
+}
+
+#load-submit {
+    width: 50px;
+    margin: 5px 0px 0px 10px;
+}
+
+#loader, #error {
+    display: none;
+}
+
+#error {
+    color: #f33;
+}
+
+.swipebox-video-container {
+    padding: 0% !important;
+}
+
+.swipebox-video-html5 {
+    max-width: 100%;
+}

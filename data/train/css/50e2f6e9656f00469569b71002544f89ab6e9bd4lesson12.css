@@ -1,0 +1,31 @@
+/*
+	Ross Studtman
+	CIS 131 - Web Dev 2
+	Lesson 11: JQuery
+	Shane May
+	11/29/2012
+*/
+
+/* Thins with id="slideshow" */
+	#slideShow{
+		position: relative;
+		height: 350px;
+	}
+
+/* Images that are children of id="slidShow" */
+	#slideShow IMG{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 8;
+	}
+
+/* Images with clase="active" that are children of id="slideShow" */
+	#slideShow IMG.active{
+		z-index: 10;
+	}
+
+/* Images with class="last-active" that are children of id="slideShow" */
+	#slideShow IMG.last-active{
+		z-index: 9;
+	}

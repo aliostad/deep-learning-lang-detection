@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mutation-execution id="mutant_5386" time="84951">
+  <failing>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppend_Object</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppend_String</case>
+    <case>org.apache.commons.lang3.text.StrSubstitutorTest.testStaticReplaceSystemProperties</case>
+    <case>org.apache.commons.lang3.text.StrSubstitutorTest.testCyclicReplacement</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendWithSeparatorsWithNullText</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendWithSeparators_Collection</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendln_StrBuilder_int_int</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendln_FormattedString</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendln_StringBuilder_int_int</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendln_String</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendNewLine</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendln_CharArray_int_int</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendln_String_int_int</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendln_CharArray</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendln_StrBuilder</case>
+    <case>org.apache.commons.lang3.text.StrBuilderTest.testIndexOf_StrMatcher_int</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendln_StringBuilder</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendAll_Array</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendSeparator_String_String</case>
+    <case>org.apache.commons.lang3.text.StrBuilderTest.testIndexOf_StrMatcher</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendln_StringBuffer_int_int</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendWithSeparators_Array</case>
+    <case>org.apache.commons.lang3.text.StrBuilderTest.testLastIndexOf_StrMatcher</case>
+    <case>org.apache.commons.lang3.text.StrBuilderTest.testLastIndexOf_StrMatcher_int</case>
+    <case>org.apache.commons.lang3.text.StrBuilderTest.testAsTokenizer</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendAll_Iterator</case>
+    <case>org.apache.commons.lang3.text.StrBuilderTest.testAsBuilder</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendWithNullText</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendln_Object</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppend_PrimitiveNumber</case>
+    <case>org.apache.commons.lang3.text.StrBuilderTest.testAsWriter</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendln_PrimitiveNumber</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendWithSeparators_Iterator</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendln_Boolean</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendAll_Collection</case>
+    <case>org.apache.commons.lang3.ObjectUtilsTest.testIdentityToStringStrBuilder</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendln_StringBuffer</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendSeparator_String</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendSeparator_String_int</case>
+    <case>org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendSeparator_char_char</case>
+  </failing>
+  <ignored>
+    <case>org.apache.commons.lang3.builder.ReflectionToStringBuilderConcurrencyTest.testArrayList</case>
+    <case>org.apache.commons.lang3.builder.ReflectionToStringBuilderConcurrencyTest.testLinkedList</case>
+    <case>org.apache.commons.lang3.builder.ReflectionToStringBuilderMutateInspectConcurrencyTest.testConcurrency</case>
+    <case>org.apache.commons.lang3.builder.ReflectionToStringBuilderConcurrencyTest.testCopyOnWriteArrayList</case>
+  </ignored>
+  <hanging />
+</mutation-execution>

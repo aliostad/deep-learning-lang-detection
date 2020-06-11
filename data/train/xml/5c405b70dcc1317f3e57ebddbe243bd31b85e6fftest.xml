@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Smoker>
+   <Mail>
+		<MailHost>DhanjalNSFtoSQL</MailHost>
+        <Recipient>Amandeep.Dhanjal@Dhanjal.com</Recipient>
+        <From>SmokerDhanjal</From>
+        <Protocol>smtp</Protocol>
+   </Mail>
+  <Process>
+		<ProcessShortName>DhanjalNSFtoSQL</ProcessShortName>
+        <ProcessName>"c:\Program Files (x86)\IBM\Lotus\Notes\jvm\bin\java.exe" -jar "C:\Analysis\AppAssessment\Templates\DhanjalNSFtoSQL.jar"</ProcessName>
+        <CommandLineArgs>"C:\Analysis\AppAssessment\Templates\test.ini"</CommandLineArgs>
+        <LogFile>C:\Analysis\AppAssessment\Templates\test_NSF_to_SQL.log</LogFile>
+		<EmailLog>true</EmailLog>
+   </Process>
+  <Process>
+		<ProcessShortName>RobinTest</ProcessShortName>
+        <ProcessName>Robin</ProcessName>
+        <CommandLineArgs>3675</CommandLineArgs>
+        <LogFile>25</LogFile>
+		<EmailLog>false</EmailLog>
+  </Process>
+  <Process>
+		<ProcessShortName>CrowTest</ProcessShortName>
+		<ProcessName>Crow</ProcessName>
+        <CommandLineArgs>3676</CommandLineArgs>
+        <LogFile>28</LogFile>
+		<EmailLog>true</EmailLog>
+    </Process>
+</Smoker>

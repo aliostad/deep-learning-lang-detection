@@ -1,0 +1,279 @@
+.model-data{
+	text-align: center;
+	font-family: Verdana,Arial,Sans-serif;
+	font-weight: normal;
+	font-size: 8px;
+	color: #000000;
+	background-color: #c0c0c0;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	letter-spacing: 0px;
+/*	width:770px; */
+	width:100%;
+	cursor:pointer;
+	/*table-layout:fixed;*/
+}
+
+
+.model-data-content-td{
+	vertical-align:bottom;
+	border: 1px #dadada solid;
+}
+
+
+
+.model-data-vert-middle-td{
+	vertical-align:middle;
+}
+
+
+
+.model-data-one-day{
+	text-align: center;
+	font-family: Verdana,Arial,Sans-serif;
+	font-weight: normal;
+	font-size: 8px;
+	color: #000000;
+	background-color: #c0c0c0;
+	border-collapse: separate;
+	border-spacing: 0px;
+	letter-spacing: 0px;
+	width:710px;
+	cursor:pointer;
+	/*table-layout:fixed;*/
+}
+
+
+.model-data-one-day-container{
+    margin-left: 30px;
+    border-left: 15px #3D4263 solid;
+    border-right: 15px #3D4263 solid;
+    border-bottom: 15px #3D4263 solid;
+   	width:710px;
+}
+
+.model-data-model-title-one-day{
+    margin-left: 30px;
+    background-color: #3D4263;
+    border: 5px #3D4263 solid;
+    color: #ffffff;
+    width:730px;
+}
+
+
+
+
+.model-data-col{
+	background-image:url("/widgets/images/bg_col_grad_2.png");
+	background-repeat:repeat-y;
+	background-position:0px 2px;
+}
+
+
+.model-data-unit{
+	/*color: #DAFFD9;*/
+	color: #000000;
+}
+/*.model-data-label-td{
+	font-weight: bold;
+	vertical-align:middle;
+	border-top: 1px #b0b0b0 solid;
+	color: #ffffff;
+	background-color: #888888;
+	width: 30px;
+}
+*/
+
+.model-data-label-td{
+	font-weight: bold;
+	vertical-align:middle;
+	color: #000000;
+	background-color: #ffffff;
+	width: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+.model-data-start-day-on{
+	border-right: 1px red solid;
+}
+.model-data-start-day-0{
+	border-right: 1px #888888 solid;
+}
+.model-data-start-day-1{
+	border-right: 1px #888888 solid;
+}
+.model-data-start-day-2{
+	border-right: 1px #888888 solid;
+}
+.model-data-start-day-3{
+	border-right: 1px #888888 solid;
+}
+.model-data-start-day-4{
+	border-right: 1px #888888 solid;
+}
+.model-data-start-day-5{
+	border-right: 1px #888888 solid;
+}
+.model-data-start-day-6{
+	border-right: 1px #888888 solid;
+}
+.model-data-start-day-7{
+	border-right: 1px #888888 solid;
+}
+
+.model-data-odd-day{
+	background-color: #D4D4D4;
+}
+
+.model-data-end-of-data{
+	background-color: #989898;
+}
+
+
+
+.model-data-show-additional-data{
+	background-color: #ffffff;
+	letter-spacing: 0px;
+	font-size: 10px;
+}
+
+.model-data-model-title{
+	font-size: 12px;
+    font-weight: bold;
+	padding-left:3px;
+	padding-right:3px;
+	padding-bottom:3px;
+	padding-top:10px;
+}
+    
+.model-data-content{
+	min-width:12px;
+	/*max-width:12px;*/
+	overflow:hidden;
+}
+
+
+.model-data-popup{
+	font-family: Verdana,Arial,Sans-serif;
+	font-weight: normal;
+	font-size: 10px;
+	color: #000000;
+	background-color: #D4D4D4;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+
+
+.model-data-hour{
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+
+.model-data-header{
+	font-weight: bold;
+	background-color: #ffffff;
+	letter-spacing: 0px;
+	font-size: 10px;
+}
+
+.model-data-connect{
+	background-color: #ffffff;
+	border: 1px #ffffff solid;
+}
+
+
+.model-data-temp{
+	color: #e8e8e8;
+	/*letter-spacing: -1px;*/
+	/*padding:1px;*/
+	font-weight: bold;
+}
+.model-data-temp2{
+	color: #000000;
+	/*letter-spacing: -1px;*/
+	/*padding:1px;*/
+	/*font-weight: bold;*/
+}
+
+
+.model-data-windspeed{
+	height:15px;
+	padding-top:4px;
+}
+
+
+.model-data-wave{
+	color: #ffffff;
+	letter-spacing: -1px;
+	padding:0px;
+	/*background-repeat:no-repeat;*/
+	/*background-position:bottom;*/
+	background-color:#4169E1;
+}
+
+.model-data-header-link-on{
+	text-decoration:none;
+	color:#ffffff;
+}
+.model-data-header-link-on:hover{
+	text-decoration:none;
+	color:#ffffff;
+}
+
+.model-data-header-link{
+	text-decoration:none;
+	color:blue;
+}
+.model-data-header-link:hover{
+	color:#3366FF;
+}
+
+
+
+#model-data-table-popup{
+	width:160px;
+	border: 8px white solid;
+	display:none;
+	position:absolute;
+
+}
+
+#model-data-end-popup{
+	border: 8px white solid;
+	background-color:#c0c0c0;
+	display:none;
+	position:absolute;
+	padding:30px;
+}
+
+#model-data-table-popup td{
+	border: 1px #dadada solid;
+}
+
+.model-data-table-popup-label{
+	width:80px;
+	text-align:right;
+	padding:4px;
+}
+
+.model-data-table-popup-value{
+	width:64px;
+	background-color:#c0c0c0;
+	padding:4px;
+}
+
+#model-data-control {
+    color:#4D4D4D;
+    float:right;
+    margin-right:10px;
+    padding-bottom:8px;
+    padding-top:4px;
+}

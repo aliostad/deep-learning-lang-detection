@@ -1,0 +1,30 @@
+.doc-sidebar {
+    background: #FAFAFA;
+
+}
+.doc-sidebar .nav .nav {
+    padding-left: 10px;
+}
+.doc-sidebar .nav .nav .nav {
+    display: none;
+}
+.doc-sidebar > .nav > li > a {
+    font-weight: bold;
+    color: #333;
+}
+.doc-sidebar .active {
+    font-weight: bold;
+}
+.doc-sidebar .nav .nav .active::before {
+    content: '';
+    background-color: #428BCA;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    z-index: 999;
+}
+#show-resource {
+    margin: 10px 0 10px 0;
+}

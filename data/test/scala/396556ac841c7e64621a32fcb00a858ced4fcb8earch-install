@@ -1,0 +1,65 @@
+#!/bin/sh
+exec scala -feature "$0" "$@"
+!#
+
+import sys.process._
+
+object ArchPackage {
+
+  implicit class stringColors(val s: String) {
+    import Console._
+
+    def red = RED + s + RESET
+    def green = GREEN + s + RESET
+    def blue = BLUE + s + RESET
+  }
+
+  def listPackages:List[String] = {
+    def parsePackageName(line: String): String = line.split(" ")(0).split("/")(1).toString
+    "yaourt -Qe".!!.split("\n").toList.filter(!_.contains("base")).map(parsePackageName)
+  }
+
+  def write(dump:String):Unit = {
+    import java.io._
+    val pw = new PrintWriter(new File(".arch-packages" ))
+    pw.write(dump)
+    pw.close
+  }
+
+  def dump:Unit = {
+    val installedPackages = listPackages
+    write(installedPackages.mkString("\n"))
+    println(".arch-install has been written with the list of packages")
+    println("Success".green)
+  }
+
+  def install:Unit = {
+    for(line <- scala.io.Source.fromFile(".arch-packages").getLines) {
+      val packageName = line.toString.trim
+      val pacmanPackage = ("pacman -Qs " + packageName).!!
+      val isInstalled = !pacmanPackage.isEmpty
+      if (isInstalled) {
+        println(packageName + " is already installed.".green)
+      } else {
+        println(packageName + " is going to be installed...".red)
+        ("pacman --noconfirm -S " + packageName).!
+        println(packageName + " should be installed.")
+      }
+    }
+  }
+
+  def displayRules:Unit = println("Take one parameters. Try sh arch-install install or sh arch-install dump")
+
+  def main(args: Array[String]) {
+    if (args.isEmpty) displayRules
+    else {
+      val action:String = args(0)
+      action match {
+        case "install" => install
+        case "dump" => dump
+        case _ => displayRules
+      }
+    }
+  }
+}
+ArchPackage.main(args)

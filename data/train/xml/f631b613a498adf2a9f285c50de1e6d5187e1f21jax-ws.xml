@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="ServiceSupplier">
+      <implementation-class>org.me.service.ServiceSupplier</implementation-class>
+    </service>
+    <service name="ServiceSolicitude">
+      <implementation-class>org.me.service.ServiceSolicitude</implementation-class>
+    </service>
+    <service name="ServiceMedicalInput">
+      <implementation-class>org.me.service.ServiceMedicalInput</implementation-class>
+    </service>
+  </services>
+  <clients/>
+</jax-ws>

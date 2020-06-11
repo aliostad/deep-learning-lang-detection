@@ -1,0 +1,40 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'tempfile'
+def set_rlimit
+  m = 1024*1024 # 1MB
+  Process.setrlimit(Process::RLIMIT_CORE,   0, m)
+  Process.setrlimit(Process::RLIMIT_CPU,    60)
+  Process.setrlimit(Process::RLIMIT_DATA,   m)
+  Process.setrlimit(Process::RLIMIT_FSIZE,  0)
+  Process.setrlimit(Process::RLIMIT_NOFILE, 0)
+  Process.setrlimit(Process::RLIMIT_STACK,  m)
+  Process.setrlimit(Process::RLIMIT_AS,     m)
+  Process.setrlimit(Process::RLIMIT_NPROC,  100)
+  Process.setrlimit(Process::RLIMIT_RSS,    m)
+end
+
+# Set rlimit to current process
+#set_rlimit
+
+# run file
+filepath = ARGV.first
+exit(1) if filepath.nil?
+exit(2) unless File.exist?(filepath)
+res  = nil
+
+begin
+  file = Tempfile.new('foo')
+  puts file.path
+  res = eval(code)
+rescue Exception => e
+  puts e.class
+  puts e.message
+  puts e.backtrace.join("\n")
+ensure
+  file.close
+  file.unlink
+end
+
+puts "\n#=> #{res.inspect}"

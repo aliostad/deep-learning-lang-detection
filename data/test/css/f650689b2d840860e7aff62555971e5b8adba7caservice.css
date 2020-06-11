@@ -1,0 +1,134 @@
+#service_info label,
+#service_list_info label {
+  display: block;
+  text-align: right;
+}
+
+#service_info td,
+#service_list_info td {
+  width: 250px;
+  height: 50px;
+  padding: 5px 5px;
+}
+
+#service_info {
+  margin: 0 auto;
+}
+
+#service_info input[type="text"],
+#service_info textarea,
+#service_info select,
+#service_info option,
+#service_list_info select,
+#service_list_info option {
+  width: 100%;
+  height: 100%;
+}
+
+#service_info textarea {
+  resize: none;
+  overflow: auto;
+  min-height: 150px;
+}
+
+#service_regist {
+  text-align: center;
+}
+
+#service_regist button {
+  width: 200px;
+}
+
+#service_page dt {
+  text-align: center;
+  font-weight: bold;
+}
+dt#service_regist_area {
+  color: #F2AECF;
+  border: solid 1px #F2AECF;
+}
+dt#service_list_area {
+  color: #BAD8D9;
+  border: solid 1px #BAD8D9;
+}
+
+#service_page dd {
+  padding: 1em;
+  margin-left: 0em;
+  margin-top: 0.5em;
+  margin-bottom: 3em;
+}
+
+dt#service_regist_area + dd {
+  border: solid 1px #F2AECF;
+}
+dt#service_list_area + dd {
+  border: solid 1px #BAD8D9;
+}
+
+img.service_image_img {
+  width:auto;
+  height:auto;
+	max-width: 100%;
+	max-height: 100%;
+  position: relative;
+  background-color: white;
+  color: #CCCCCC;
+  text-align: center;
+}
+/*
+  width: 180px;
+  height: 200px;
+
+#stylist_image_path img{
+	width:auto;
+	height:auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+*/
+
+#service_list_info {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0px;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+#service_list_info th {
+  width: 16%;
+  padding: 4px;
+  text-align: center;
+  vertical-align: top;
+  color: #EDF6F5;
+  background-color: #75BFBF;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+#service_list_info td {
+  text-align: center;
+  padding: 4px 10px;
+  background-color: #fafafa;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+#service_list_info img {
+  width: auto;
+  height: auto;
+  	max-width: 100%;
+	max-height: 100%;
+}
+/*
+  width: 180px;
+  height: 200px;
+*/
+
+
+.edit, .delete {
+  cursor: pointer;
+}

@@ -1,0 +1,22 @@
+<comps>
+ <group>
+  <id>GElux</id>
+  <version>040716</version>
+  <name>GElux</name>
+  <repositorylist>
+  <repository type="debian">http://ftp.fr.debian.org/debian/</repository>
+  <repository type="debian">ftp://mirror.switch.ch/mirror/debian</repository>
+  <repository type="plain">http://deb.programmers.ch</repository>
+  <repository type="plain">http://www.morphix.org/debian</repository>
+  </repositorylist>
+  <description>Gelux Gnome mainmodule</description>
+  <type>mainmod</type>
+  <suite>sid</suite>
+  <packagelist>
+
+   <packagereq>morphix-init-gnome</packagereq>
+   <packagereq>gelux-init-gnome</packagereq>
+
+  </packagelist>
+ </group>
+</comps>

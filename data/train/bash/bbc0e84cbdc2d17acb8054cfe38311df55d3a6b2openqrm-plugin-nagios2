@@ -1,0 +1,153 @@
+#!/bin/bash
+# init script for the openQRM nagios2 plugin
+#
+# This file is part of openQRM.
+#
+# openQRM is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License version 2
+# as published by the Free Software Foundation.
+#
+# openQRM is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with openQRM.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Copyright 2009, Matthias Rechenburg <matt@openqrm.com>
+#
+OPENQRM_SERVER_BASE_DIR=$(pushd $(dirname $0)/../../../../.. > /dev/null; echo $PWD; popd > /dev/null)
+. $OPENQRM_SERVER_BASE_DIR/openqrm/etc/openqrm-server.conf
+. $OPENQRM_SERVER_BASE_DIR/openqrm/include/openqrm-functions
+. $OPENQRM_SERVER_BASE_DIR/openqrm/include/openqrm-server-functions
+. $OPENQRM_SERVER_BASE_DIR/openqrm/plugins/nagios2/include/openqrm-plugin-nagios2-functions
+. $OPENQRM_SERVER_BASE_DIR/openqrm/plugins/nagios2/etc/openqrm-plugin-nagios2.conf
+
+HTPASSWD="htpasswd"
+if [ -f /etc/SuSE-release ]; then
+	HTPASSWD="htpasswd2"
+fi
+
+function openqrm_plugin_nagios2_start() {
+	echo "Starting the openQRM nagios2-plugin"
+	openqrm_plugin_nagios2_stop 1>/dev/null 2>&1
+    # for debian/ubuntu we starting also ndoutils
+    if [ -f /etc/debian_version ]; then
+        if [ -x "/etc/init.d/ndoutils" ]; then
+            if [ -x "`which invoke-rc.d 2>/dev/null`" ]; then
+                invoke-rc.d ndoutils start || exit $?
+            else
+                /etc/init.d/ndoutils start || exit $?
+            fi
+        fi
+    fi
+
+    if [ -x "/etc/init.d/nagios2" ]; then
+        if [ -x "`which invoke-rc.d 2>/dev/null`" ]; then
+            invoke-rc.d nagios2 start || exit $?
+        else
+            /etc/init.d/nagios2 start || exit $?
+        fi
+    elif [ -x /etc/init.d/nagios ]; then
+        if [ -x "`which invoke-rc.d 2>/dev/null`" ]; then
+            invoke-rc.d nagios start || exit $?
+        else
+            /etc/init.d/nagios start || exit $?
+        fi
+	else
+		nagios_manager_lock release
+		openqrm_post_event 0 "get" 3 "openqrm-nagios-manager" "Could not start Nagios. Init script not found !."
+		exit 1
+	fi
+	touch $OPENQRM_WEBSERVER_DOCUMENT_ROOT/openqrm/base/plugins/nagios2/.running
+	return 0
+}
+
+
+function openqrm_plugin_nagios2_stop() {
+	echo "Stopping the openQRM nagios2-plugin"
+    # for debian/ubuntu we stopping also ndoutils
+    if [ -f /etc/debian_version ]; then
+        if [ -x "/etc/init.d/ndoutils" ]; then
+            if [ -x "`which invoke-rc.d 2>/dev/null`" ]; then
+                invoke-rc.d ndoutils stop || exit $?
+            else
+                /etc/init.d/ndoutils stop || exit $?
+            fi
+        fi
+    fi
+
+    if [ -x "/etc/init.d/nagios2" ]; then
+        if [ -x "`which invoke-rc.d 2>/dev/null`" ]; then
+            invoke-rc.d nagios2 stop || exit $?
+        else
+            /etc/init.d/nagios2 stop || exit $?
+        fi
+    elif [ -x /etc/init.d/nagios ]; then
+        if [ -x "`which invoke-rc.d 2>/dev/null`" ]; then
+            invoke-rc.d nagios stop || exit $?
+        else
+            /etc/init.d/nagios stop || exit $?
+        fi
+	else
+		nagios_manager_lock release
+		openqrm_post_event 0 "get" 3 "openqrm-nagios-manager" "Could not stop Nagios. Init script not found !."
+		exit 1
+	fi
+	rm -f $OPENQRM_WEBSERVER_DOCUMENT_ROOT/openqrm/base/plugins/nagios2/.running
+	return 0
+}
+
+
+function openqrm_plugin_nagios2_init() {
+	echo "Initializing the openQRM nagios2-plugin"
+    if ! $OPENQRM_SERVER_BASE_DIR/openqrm/plugins/nagios2/bin/openqrm-nagios-manager init; then
+		nagios_manager_lock release
+		openqrm_post_event 0 "openqrm_plugin_nagios2_stop" 3 "openqrm-plugin-nagios2" "Could not init the  Nagios2 plugin !."
+        return 1
+    fi
+
+
+	return 0
+}
+
+
+function openqrm_plugin_nagios2_uninstall() {
+	echo "Uninstalling the openQRM nagios2-plugin"
+	openqrm_plugin_nagios2_stop
+	# unlinking the web dir
+	rm -f $OPENQRM_WEBSERVER_DOCUMENT_ROOT/openqrm/base/plugins/nagios2
+	rm -f $OPENQRM_WEBSERVER_DOCUMENT_ROOT/openqrm/boot-service/boot-service-nagios2.tgz
+	# restore old nagios htpasswd
+	mv $NAGIOS_ETC_DIRECTORY/htpasswd.users.bkp $NAGIOS_ETC_DIRECTORY/htpasswd.users
+}
+
+
+
+case "$1" in
+	start)
+		openqrm_plugin_nagios2_start
+		;;
+	stop)
+		openqrm_plugin_nagios2_stop
+		;;
+	restart)
+		openqrm_plugin_nagios2_stop
+		sleep 1
+		openqrm_plugin_nagios2_start
+		;;
+	init)
+		openqrm_plugin_nagios2_init
+		;;
+	uninstall)
+		openqrm_plugin_nagios2_uninstall
+		;;
+	*)
+		echo "Usage: $0 {start|stop|restart|init|uninstall}"
+		exit 1
+
+esac
+exit $?
+
+

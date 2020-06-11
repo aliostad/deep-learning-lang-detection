@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<!DOCTYPE platform SYSTEM "http://simgrid.gforge.inria.fr/simgrid.dtd">
+<platform version="3">
+  <process host="host0" function="p0"/>
+  <process host="host1" function="p1"/>
+  <process host="host2" function="p2"/>
+  <process host="host3" function="p3"/>
+  <process host="host4" function="p4"/>
+  <process host="host5" function="p5"/>
+  <process host="host6" function="p6"/>
+  <process host="host7" function="p7"/>
+  <process host="host8" function="p8"/>
+  <process host="host9" function="p9"/>
+  <process host="host10" function="p10"/>
+  <process host="host11" function="p11"/>
+  <process host="host12" function="p12"/>
+  <process host="host13" function="p13"/>
+  <process host="host14" function="p14"/>
+  <process host="host15" function="p15"/>
+</platform>

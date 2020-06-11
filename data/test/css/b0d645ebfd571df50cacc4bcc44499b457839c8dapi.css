@@ -1,0 +1,366 @@
+/* General styles */
+
+.api_explorer {
+	background-color: #e9eaed;
+
+}
+
+.api_explorer table {
+	display: table;
+	border-collapse: separate;
+	border-color: gray;
+	border-spacing: 0;
+}
+.api_explorer tbody {
+	display: table-row-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+.api_explorer tr {
+	display: table-row;
+	border-color: inherit;
+}
+
+.api_explorer td{
+	white-space: nowrap;
+}
+
+.api_explorer select {
+   height: 28px;
+   border: 1px solid #5b74a8;
+}
+
+.api_explorer .container {
+	
+	margin: 0 auto;
+	padding-top: 12px;
+	width: 924px;		
+}
+
+.api_explorer .disclaimer {
+	margin: 0 auto;
+	width: 924px;
+	margin-bottom: 20px;
+	font-size: 0.6em;
+	margin-top: 2px;
+	text-align: right;
+}
+
+.api_explorer .panel {
+	background: #fff;
+	border: 1px solid;
+	border-color: #d6d7da #d5d8dd #c7c8ca;
+	border-radius: 3px;
+	margin-bottom: 0;
+}
+
+.api_explorer .panel_header{
+	border-top: none;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	background-color: #f6f7f8;
+	padding: 12px;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+
+.api_explorer .panel_body{
+	border-top: 1px solid #e5e5e5;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	padding: 12px;
+	margin-bottom: 20px;
+}
+
+
+.api_explorer .full_width_cell {
+	width: 86%;
+	border: none;
+	padding: 0;
+	margin: 0;
+	white-space: nowrap;
+}
+
+.api_explorer .inputtext{
+	
+	margin: 0 0 0 -2px;
+	outline: 0;
+	width: 100%;
+	border: 1px solid #bdc7d8;
+	border-left: none;
+	padding: 3px 3px 4px 0;
+	-webkit-appearance: none;
+	border-radius: 0;
+	background-color: white;
+	display: inline-block;
+}
+
+
+.api_explorer #api_explorer_submit{
+	background-color: #5b74a8;
+	border: 1px solid #e9eaed;
+	color: #fff;
+	padding: 4px 8px;
+	cursor: pointer;
+}
+
+.api_explorer #api_prefix{
+	border: 1px solid #bdc7d8;
+	border-right: none;
+	color: #777;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 11px;
+	height: 20px;
+	line-height: 20px;
+	padding: 0 5px 0 3px;
+}
+
+
+.api_explorer .fields_section{
+	margin-top: 20px;
+	padding: 10px 30px 20px;
+	font-weight: bold;
+	border: 2px solid #f6f7f8;
+	display: none;
+	position: relative;
+}
+
+.api_explorer #method_description{
+	display: none;
+	margin: 10px 0 20px 0;
+	font-style: italic;
+}
+
+.api_explorer .fields_section h2{ 
+	font-weight: bold;
+	color: #5b74a8;
+	margin-top: 5px;
+	font-size: 19px;
+}
+
+/* Sections */
+.api_explorer .fields_section #clear_parameters, .api_explorer .fields_section #clear_headers,
+.api_explorer .fields_section #clear_authentication{
+	width: 30px;
+	height: 30px;
+	background-size: cover;
+	background-image: url(clear.png);
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.api_explorer .editor-label{
+	float: left;
+    width: 200px;
+    font-size: 15px;
+    padding-top: 8px;
+}
+
+
+.api_explorer .editor-field{
+	margin-left: 200px;
+}
+
+.api_explorer .parameter_input{
+	color: #333;
+	padding: 5px;
+	border: none;
+	box-shadow: none;
+	border-bottom: solid thin #CCC;
+	border-radius: 0;
+	outline: none;
+	margin-right: 10px;
+	width: 224px;
+	line-height: 16px;
+}
+
+.api_explorer .editor-field input {
+	position: relative;
+	top: -4px;   
+}
+
+.api_explorer .delete_btn{
+	width: 18px;
+	height: 18px;
+	background-image: url(delete.png);
+	cursor: pointer;
+}
+
+.api_explorer #headers_container .delete_btn{
+	display: inline-block;
+	position: relative;
+	top: 10px;
+}
+
+.api_explorer #headers_container .header_field{
+	display:inline-block;
+	width: 230px;
+	margin-right: 20px;
+}
+
+/* Font size 0 will remove spaces between inline-block elements. Dirty hack but works. */
+.api_explorer .headers_line{
+	font-size: 0;
+}
+
+/* Minimize and maximize sections */
+.api_explorer .minimize {
+	width: 30px;
+	height: 30px;
+	background-image: url(minimize.png);
+	background-size: cover;
+	cursor: pointer;
+}
+
+.api_explorer .maximize {
+	width: 30px;
+	height: 30px;
+	background-image: url(maximize.png);
+	background-size: cover;
+	cursor: pointer;
+}
+		
+	
+.api_explorer .fields_section .minimize, .api_explorer .fields_section .maximize{
+	position: absolute;
+	top: 10px;
+	right: 45px;
+}
+
+.api_explorer .fields_section.minimized {
+	height: 25px;
+	overflow: hidden;
+}
+
+/* TABS */
+
+.api_explorer .tabs {
+	position: relative;
+	min-height: 700px;
+	clear: both;
+	margin: 25px 0;
+}
+
+.api_explorer .tab {
+	float: left;
+}
+
+.api_explorer .tab [type=radio] {
+	display: none;
+}
+
+.api_explorer .tabs [type=radio]:checked ~ label ~ .content {
+	z-index: 1;
+}
+
+.api_explorer .tabs [type=radio]:checked ~ label ~ .content > * {
+	opacity: 1;
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+}
+
+.api_explorer .tabs [type=radio]:checked ~ label {
+	background: white;
+	border-bottom: 1px solid white;
+	z-index: 2;
+}
+
+.api_explorer .tab label {
+	background: #eee;
+	padding: 10px;
+	border: 1px solid #ccc;
+	margin-left: -1px;
+	position: relative;
+	left: 1px;
+}
+
+.api_explorer  .tabs .content {
+	position: absolute;
+	top: 28px;
+	left: 0;
+	background: white;
+	right: 0;
+	bottom: 0;
+	padding: 20px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+.api_explorer  .tabs .content.overflow {
+	overflow: auto;
+}
+
+.api_explorer  .content > * {
+	opacity: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-ms-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+}
+
+/* History */
+
+.api_explorer .history_menu {
+	float: right;
+	max-width: 250px;
+	font-size: 0.8em;
+	background: #eee;
+}
+
+.api_explorer .history_item {
+	padding: 10px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+
+.api_explorer .history_item.active {
+	background-color: #5b74a8;
+	color: white;
+}
+
+
+.api_explorer .history_wrapper {
+	border: 1px solid #ccc;
+}
+
+.api_explorer .history_wrapper .content_wrapper{
+	display:none;
+}
+
+.api_explorer .history_content
+{
+	float: left;
+	max-width: 500px;
+	padding-left: 15px;
+}
+
+/* Authentication */
+.api_explorer #basic_auth, .api_explorer #hash_url_auth{
+	margin-left: 80px;
+	margin-top: 20px;
+	display: none;
+}
+
+
+.api_explorer #hash_url_auth .information_field {
+	margin-bottom: 10px;
+}
+
+.api_explorer #hash_url_auth .auth_method_description{
+	margin: 10px 0 20px 0;
+	font-style: italic;
+	font-weight: normal;
+}

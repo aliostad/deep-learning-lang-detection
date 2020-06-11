@@ -1,0 +1,78 @@
+/*
+    main styles
+    version: 12.10.2013
+
+   service
+
+*/
+.site__content{
+    padding-left: 60px;
+}
+/*------------ service ----------*/
+.service h2{
+    font-family: pfcentroslabproblack;
+    font-size: 32px;
+    color: #131313;
+    padding-top: 45px;
+}
+.service a{
+    font-size: 17px;
+    color: #448ccb;
+    display: inline-block;
+    padding-top: 11px;
+    padding-right: 22px;
+    text-decoration: underline;
+}
+.service .active{
+    text-decoration: none;
+    color: #bc301b;
+}
+.service a:hover{
+    text-decoration: none;
+}
+.service p{
+    font-size: 16px;
+    color: #050505;
+    padding-top: 34px;
+    width: 520px;
+    line-height: 24px;
+}
+.service span{
+    font-size: 15px;
+    color: #050505;
+    padding-top:24px;
+    font-weight: bold;
+    width: 680px;
+    display: inline-block;
+    line-height: 24px;
+}
+.service span a{
+    padding: 0;
+    font-size: 15px;
+
+}
+.service div p{
+    width: 100%;
+    padding-top: 24px;
+}
+/*------------ service ----------*/
+
+.mission{
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 96px;
+    background: url("../img/service1.png")no-repeat 2px 46px;
+}
+.staff{
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 96px;
+    margin-left: 42px;
+    background: url("../img/service2.png")no-repeat 2px 46px;
+}
+.staff a{
+    padding-top: 27px;
+    display: block;
+}

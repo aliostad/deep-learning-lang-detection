@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -e
+
+chgrp logix /etc/logix/logix.conf 2>/dev/null || addgroup --system logix
+chown logix /etc/logix/logix.conf 2>/dev/null || adduser --system --disabled-login --home /var/run/logix --no-create-home --disabled-password --ingroup logix logix
+
+if [ -x "/etc/init.d/logix" ]; then
+    
+	update-rc.d logix defaults >/dev/null
+	if [ -x "`which invoke-rc.d 2>/dev/null`" ]; then
+		invoke-rc.d logix start || exit $?
+		invoke-rc.d rsyslog start || exit $?
+	else
+		/etc/init.d/logix start || exit $?
+		/etc/init.d/rsyslog start || exit $?
+	fi
+fi

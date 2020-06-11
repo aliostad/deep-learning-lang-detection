@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?bw onLoad="initialize"?>
+<?bwinclude url="scenes/UnderWater.lws"?>
+<?bwinclude url="./DefaultPreferences.min.xml"?>
+<Session>
+	<!-- Customize default preferences for this content-->
+	<ConnectOutputs targetContainer="Camera" sourceEvaluator="SceneInspector" connectionType="sceneInspection"/>
+	<Set target="Selector" computePivotDistance="true"/>
+	<Stop/>
+	<Set target="SceneInspector" evaluate="true"/>
+	<Set target="RenderDirective" antialiasType="4" antialiasWaitTimeMs="1000"/>
+  <Group name="SteamBubbles" proxyChildAttrs="true"/>
+  <AppendNode parent="Root" child="SteamBubbles"/>
+  <AppendNode parent="SteamBubbles" child="Steam (1)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (2)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (3)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (4)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (5)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (6)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (7)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (8)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (9)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (10)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (11)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (12)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (13)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (14)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (15)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (16)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (17)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (18)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (19)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (20)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (21)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (22)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (23)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (24)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (25)"/>
+  <AppendNode parent="SteamBubbles" child="Steam (26)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (1)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (2)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (3)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (4)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (5)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (6)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (7)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (8)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (9)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (10)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (11)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (12)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (13)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (14)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (15)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (16)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (17)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (18)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (19)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (20)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (21)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (22)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (23)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (24)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (25)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (26)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (27)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (28)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (29)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (30)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (31)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (32)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (33)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (34)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (35)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (36)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (37)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (38)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (39)"/>
+  <AppendNode parent="SteamBubbles" child="Bubble (40)"/>
+  <Set target="Steam_Bubbles" show="false"/>
+</Session>

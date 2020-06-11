@@ -1,0 +1,40 @@
+﻿<?xml version="1.0"?>
+
+<resource name="AdvParts">
+	<canTransfer/>
+	<canBeCargo/>
+	<recycle pct="0.5"/>
+	<duplicate>Electronics,Metals</duplicate>
+</resource>
+
+<resource name="Food">
+	<canTransfer/>
+	<canBeCargo/>
+</resource>
+
+<resource name="Labr">
+	<recycle pct="0.0"/>
+</resource>
+
+<resource name="Ore">
+	<canTransfer/>
+	<canBeCargo/>
+	<alwaysVisible/>
+	<duplicate>H3</duplicate>
+</resource>
+
+<resource name="Fuel">
+	<canTransfer/>
+	<isEssential/>
+	<duplicate>Ammo</duplicate>
+	<recycle pct="1.0"/>
+</resource>
+
+<resource name="Damage">
+	<alwaysVisible/>
+	<duplicate>Shields,Workers</duplicate>
+</resource>
+
+<resource name="TradeMode">
+   <isSetting/>
+</resource>

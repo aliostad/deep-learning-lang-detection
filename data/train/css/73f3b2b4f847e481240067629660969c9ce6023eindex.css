@@ -1,0 +1,67 @@
+/*加载页面*/
+#load_page{
+	width: 100%;
+	height: 100%;
+	background-color: #FFD82B;
+	padding-top: 0.1;
+	position:fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+.all_current{
+	width:100%;
+	height:0.09375rem;
+	
+}
+.position_current{
+	width:0;
+	height: 0.09375rem;
+	background-color: #00bf12;
+}
+.load_logo{
+	width: 6.5468rem;
+	height: 3.28125rem;
+	background: url(../images/load_logo.png) no-repeat;
+	background-size: 6.5468rem 3.28125rem;
+	margin: 3.78125rem auto 0;
+}
+.position{
+	margin: 1.1718rem auto 0;
+	width: 1.375rem;
+}
+.position img{
+	display: block;
+	width: 1.125rem;
+	height: 1.125rem;
+	margin: 0 auto;
+	animation: play 1s linear infinite alternate forwards;
+}
+.position span{
+	display: block;
+	width: 100%;
+	font-size: 0.406rem;
+	color: #333333;
+	text-align: center;
+	line-height: 0.625rem;
+}
+@keyframes play{
+	0%{opacity: 0.1;},
+	50%{opacity: 0.6;},
+	100%{0.3}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

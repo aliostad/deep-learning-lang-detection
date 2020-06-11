@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>.append()</name>
+
+<category>Data</category>
+
+<subcategory>List Methods</subcategory>
+
+<usage></usage>
+
+<example>
+<code><![CDATA[
+a = ['carrot', 'cucumber']
+print(a)  # Prints ['carrot', 'cucumber']
+a.append('cabbage')
+print(a)  # Prints ['carrot', 'cucumber', 'cabbage']
+]]></code>
+</example>
+
+<description><![CDATA[
+Add an item to the end of the list.
+]]></description>
+
+<syntax>
+<c>a</c>.append(<c>x</c>)
+</syntax>
+
+<parameter>
+<label>a</label>
+<description>list to append to</description>
+</parameter>
+
+<parameter>
+<label>x</label>
+<description>item to append</description>
+</parameter>
+
+<returns></returns>
+
+<related>list_insert</related>
+<related>list_pop</related>
+<related>list_reverse</related>
+<related>list_index</related>
+
+<availability>1.0</availability>
+
+<type></type>
+
+<partof>PYDE</partof>
+
+
+
+
+
+
+
+
+</root>

@@ -1,0 +1,71 @@
+body {
+  position: relative;
+  padding-top:30px;
+  padding-bottom:150px;
+  background:#FFF;
+  max-width:1340px;
+  margin:0px auto;
+}
+a, a:link{color:#F30}
+a:hover{color:#F99}
+.btn-primary {color:#FFF !important;}
+.jumbotron {background:#EEE;}
+p {margin:20px 0px;}
+section {margin-bottom:30px;}
+.pull-left{margin-right:30px}
+.pull-right{margin-left:30px}
+/* sidebar */
+.nav-sidebar {
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* all links */
+.nav-sidebar .nav>li>a {
+    color: #999;
+    padding: 4px 20px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* nested links */
+.nav-sidebar .nav .nav>li>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+}
+/* all links */
+.nav-sidebar .nav>li>a {
+    /*add trasnparent border */
+    border-left: 2px solid transparent;
+}
+/* active & hover links */
+.nav-sidebar .nav>.active>a, 
+.nav-sidebar .nav>li>a:hover, 
+.nav-sidebar .nav>li>a:focus {
+    color: #563d7c;                 
+    text-decoration: none;          
+    background-color: transparent;  
+    border-left: 2px solid #563d7c; 
+}
+/* all active links */
+.nav-sidebar .nav>.active>a, 
+.nav-sidebar .nav>.active:hover>a,
+.nav-sidebar .nav>.active:focus>a {
+    font-weight: 700;
+}
+/* nested active links */
+.nav-sidebar .nav .nav>.active>a, 
+.nav-sidebar .nav .nav>.active:hover>a,
+.nav-sidebar .nav .nav>.active:focus>a {
+    font-weight: 500;
+}
+/* hide all (inactive) nested list */
+.nav-sidebar .nav ul.nav {
+    display: none;           
+}
+/* show active nested list */
+.nav-sidebar .nav>.active>ul.nav {
+    display: block;           
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <body>
+    <scriptRunner id="com.sample.javascriptRunner">
+  	  <script src="http://sample-web-server/sample-xml/js/objects/logging.js"/>
+  	  <script src="http://sample-web-server/sample-xml/js/objects/crypto.js"/>
+  	  <script src="http://sample-web-server/sample-xml/js/objects/http.js"/>
+  	  <script src="http://sample-web-server/sample-xml/js/objects/json.js"/>
+  	  <script src="http://sample-web-server/sample-xml/js/objects/device.js"/>
+  	  <script src="http://sample-web-server/sample-xml/js/objects/date.js"/>
+  	  <script src="http://sample-web-server/sample-xml/js/objects/math.js"/>
+  	  <script src="http://sample-web-server/sample-xml/js/objects/regexp.js"/>
+  	  <script src="http://sample-web-server/sample-xml/js/objects/atv.js"/>
+  	  <script src="http://sample-web-server/sample-xml/js/objects/dom.js"/>
+  	  <script src="http://sample-web-server/sample-xml/js/objects/timers.js"/>
+    </scriptRunner>
+  </body>
+</atv>

@@ -1,0 +1,41 @@
+#message-container {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+	width: 100%;
+}
+	#message-container #message {
+		position: relative;
+		/*width: 330px;
+		height: 100px;*/
+		background-color: #000000;
+		text-align: center;
+		margin: auto;
+		padding: 10px;
+	}
+		
+		#message-container #message a.close {
+			position: absolute;
+			top: 5px;
+			right: 5px;
+		}
+		#message-container #message p {
+			margin-top:3px;
+		}
+		
+	#message-container .general {
+		color: #333333;
+		font-size:14px;
+		line-height:18px;
+	}
+	#message-container .success {
+		color: #a0eea0;
+		font-size:14px;
+		line-height:18px;
+	}
+	#message-container .failure {
+		color: #ff9999;
+		font-size:14px;
+		line-height:18px;
+	}

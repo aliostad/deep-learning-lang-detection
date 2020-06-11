@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.alfresco:alfresco-repository:config:4.2.e">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/alfresco/alfresco-repository/4.2.e/alfresco-repository-4.2.e-config.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/alfresco/alfresco-repository/4.2.e/alfresco-repository-4.2.e-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/alfresco/alfresco-repository/4.2.e/alfresco-repository-4.2.e-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

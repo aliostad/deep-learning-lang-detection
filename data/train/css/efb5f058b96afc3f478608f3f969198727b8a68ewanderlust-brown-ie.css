@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* wanderlust-brown-ie.css - version 0.2 - Spry Pre-Release 1.7 */
+
+/* Copyright (c) 2010. Adobe Systems Incorporated. All rights reserved. */
+
+.WLBSlideShow .SSPreviousButton {
+	background-position: 0 -90px;
+}
+
+.WLBSlideShow .SSPreviousButtonHover {
+	background-position: -60px -90px;
+}
+
+.WLBSlideShow .SSPreviousButtonDown {
+}
+
+.WLBSlideShow .SSPreviousButtonDisabled {
+}
+
+.WLBSlideShow .SSNextButton {
+	background-position: -30px -90px;
+}
+
+.WLBSlideShow .SSNextButtonHover {
+	background-position: -90px -90px;
+}
+
+.WLBSlideShow .SSNextButtonDown {
+}
+
+.WLBSlideShow .SSNextButtonDisabled {
+}
+
+.WLBSlideShow a.SSSlideLink {
+	background-image: url(images/slideshow-controls.png);
+	background-position: 0 -60px;
+}
+
+.WLBSlideShow a.SSSlideLinkHover {
+	background-position: -30px -60px;
+}
+
+.WLBSlideShow a.SSSlideLinkSelected {
+	background-position: -90px -60px;
+}
+
+.WLBSlideShow a.SSSlideLinkDisabled {
+}
+
+.WLBSlideShow .content button span {
+	background-image: url(images/button-left-ie.gif);
+}
+
+.WLBSlideShow .content button span span{
+	background-image: url(images/button-right-ie.gif);
+}
+
+.WLBSlideShow .content button span span span{
+	background-image: url(images/button-center-ie.gif);
+}

@@ -1,0 +1,50 @@
+.mobile-service.mobile-function .container > h2 {
+	padding-top: 30px;
+}
+.mobile-service .items {
+	margin-left: -25px;
+}
+	.mobile-service .items .item {
+		padding-left: 25px;
+		width: 100%;
+		display: table;
+		padding-bottom: 20px;
+	}
+		.mobile-service .items .item .adaptive {
+			display: table-cell;
+			width: 100%;
+		}
+		.mobile-service .items .item p {
+			display: table-cell;
+			vertical-align: middle;
+			font-weight: 300;
+			width: 66%;
+			padding-left: 10px;
+			line-height: 1.2;
+			font-size: 1.2em;
+		}
+@media (min-width: 500px) {
+	.mobile-service .items .item {
+		width: 50%;
+		padding-bottom: 60px;
+	}
+}
+@media (min-width: 700px) {
+	.mobile-service .items {
+		margin-left: -50px;
+	}
+		.mobile-service .items .item {
+			padding-left: 50px;
+		}
+	.mobile-service .items .item p {
+		padding-left: 40px;
+	}
+}
+@media (min-width: 900px) {
+	.mobile-service .items {
+		margin-left: -150px;
+	}
+		.mobile-service .items .item {
+			padding-left: 150px;
+		}
+}

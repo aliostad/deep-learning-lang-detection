@@ -1,0 +1,319 @@
+<?xml version="1.0" ?>
+<oaiPmhFormat>
+
+    <formatName>nsdl_dc</formatName>
+    <tagName>nsdl_dc:nsdl_dc</tagName>
+    <schema>
+        <namespace>http://ns.nsdl.org/nsdl_dc_v1.01</namespace>
+        <definition>http://ns.nsdl.org/schemas/nsdl_dc/nsdl_dc_v1.01.xsd</definition>
+        <version>1.01.001</version>
+    </schema>
+
+    <!--==== NAMESPACES =============================================-->
+    <namespace>
+        <name>nsdl_dc</name>
+        <uri>http://ns.nsdl.org/nsdl_dc_v1.01</uri>
+    </namespace>
+    <namespace>
+        <name>dc</name>
+        <uri>http://purl.org/dc/elements/1.1/</uri>
+    </namespace>
+    <namespace>
+        <name>dct</name>
+        <uri>http://purl.org/dc/terms/</uri>
+    </namespace>
+    <namespace>
+        <name>ieee</name>
+        <uri>http://www.ieee.org/xsd/LOMv1p0</uri>
+    </namespace>
+
+    <!--==== ELEMENTS ===============================================-->
+    <element>
+        <name>dc:title</name>
+        <recommendedMapping>Title</recommendedMapping>
+    </element>
+    <element>
+        <name>dc:creator</name>
+        <recommendedMapping>Creator</recommendedMapping>
+    </element>
+    <element>
+        <name>dc:subject</name>
+        <recommendedMapping>Subject</recommendedMapping>
+    </element>
+    <element>
+        <name>dc:description</name>
+        <recommendedMapping>Description</recommendedMapping>
+    </element>
+    <element>
+        <name>dc:publisher</name>
+        <recommendedMapping>Publisher</recommendedMapping>
+    </element>
+    <element>
+        <name>dc:contributor</name>
+        <recommendedMapping>Contributor</recommendedMapping>
+    </element>
+    <element>
+        <name>dc:date</name>
+        <recommendedMapping>Date Issued</recommendedMapping>
+        <alternateMapping>Creation Date</alternateMapping>
+        <alternateMapping>Date Submitted</alternateMapping>
+        <alternateMapping>Date Accepted</alternateMapping>
+    </element>
+    <element>
+        <name>dc:type</name>
+        <recommendedMapping>Type</recommendedMapping>
+    </element>
+    <element>
+        <name>dc:format</name>
+        <recommendedMapping>Format</recommendedMapping>
+    </element>
+    <element>
+        <name>dc:identifier</name>
+        <recommendedMapping></recommendedMapping>
+    </element>
+    <element>
+        <name>dc:source</name>
+        <recommendedMapping>Source</recommendedMapping>
+    </element>
+    <element>
+        <name>dc:language</name>
+        <recommendedMapping>Language</recommendedMapping>
+    </element>
+    <element>
+        <name>dc:relation</name>
+        <recommendedMapping>Relation</recommendedMapping>
+    </element>
+    <element>
+        <name>dc:coverage</name>
+        <recommendedMapping>Coverage</recommendedMapping>
+    </element>
+    <element>
+        <name>dc:rights</name>
+        <recommendedMapping>Rights</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:audience</name>
+        <recommendedMapping>Audience</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:alternative</name>
+        <recommendedMapping></recommendedMapping>
+    </element>
+    <element>
+        <name>dct:tableOfContents</name>
+        <recommendedMapping>Table of Contents</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:abstract</name>
+        <recommendedMapping>Abstract</recommendedMapping>
+        <alternateMapping>Description</alternateMapping>
+    </element>
+    <element>
+        <name>dct:created</name>
+        <recommendedMapping>Creation Date</recommendedMapping>
+        <alternateMapping>Date Issued</alternateMapping>
+        <alternateMapping>Date Copyrighted</alternateMapping>
+    </element>
+    <element>
+        <name>dct:valid</name>
+        <recommendedMapping>Valid Date</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:available</name>
+        <recommendedMapping>Available Date</recommendedMapping>
+        <alternateMapping>Date Issued</alternateMapping>
+        <alternateMapping>Creation Date</alternateMapping>
+    </element>
+    <element>
+        <name>dct:issued</name>
+        <recommendedMapping>Date Issued</recommendedMapping>
+        <alternateMapping>Available Date</alternateMapping>
+        <alternateMapping>Creation Date</alternateMapping>
+    </element>
+    <element>
+        <name>dct:modified</name>
+        <recommendedMapping>Modified Date</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:extent</name>
+        <recommendedMapping>Extent</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:medium</name>
+        <recommendedMapping>Medium</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:isVersionOf</name>
+        <recommendedMapping>Is Version Of</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:hasVersion</name>
+        <recommendedMapping>Has Version</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:isReplacedBy</name>
+        <recommendedMapping>Is Replaced By</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:replaces</name>
+        <recommendedMapping>Replaces</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:isRequiredBy</name>
+        <recommendedMapping>Is Required By</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:requires</name>
+        <recommendedMapping>Requires</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:isPartOf</name>
+        <recommendedMapping>Is Part Of</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:hasPart</name>
+        <recommendedMapping>Has Part</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:isReferencedBy</name>
+        <recommendedMapping>Is Referenced By</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:references</name>
+        <recommendedMapping>References</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:isFormatOf</name>
+        <recommendedMapping>Is Format Of</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:hasFormat</name>
+        <recommendedMapping>Has Format</recommendedMapping>
+        <alternateMapping>Format</alternateMapping>
+    </element>
+    <element>
+        <name>dct:conformsTo</name>
+        <recommendedMapping>Conforms To</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:spatial</name>
+        <recommendedMapping>Spacial</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:temporal</name>
+        <recommendedMapping>Temporal</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:mediator</name>
+        <recommendedMapping>Mediator</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:dateAccepted</name>
+        <recommendedMapping>Date Accepted</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:dateCopyrighted</name>
+        <recommendedMapping>Date Copyrighted</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:dateSubmitted</name>
+        <recommendedMapping>Date Submitted</recommendedMapping>
+        <alternateMapping>Date Of Record Creation</alternateMapping>
+    </element>
+    <element>
+        <name>dct:educationLevel</name>
+        <recommendedMapping>Educational Level</recommendedMapping>
+    </element>
+    <element>
+        <name>dct:accessRights</name>
+        <recommendedMapping>Access Rights</recommendedMapping>
+        <alternateMapping>Rights</alternateMapping>
+    </element>
+    <element>
+        <name>dct:bibliographicCitation</name>
+        <recommendedMapping>Bibliographic Citation</recommendedMapping>
+    </element>
+    <element>
+        <name>ieee:interactivityType</name>
+        <recommendedMapping>Interactivity Type</recommendedMapping>
+    </element>
+    <element>
+        <name>ieee:interactivityLevel</name>
+        <recommendedMapping>Interactivity Level</recommendedMapping>
+    </element>
+    <element>
+        <name>ieee:typicalLearningTime</name>
+        <recommendedMapping>Typical Learning Time</recommendedMapping>
+    </element>
+
+    <!--==== QUALIFIERS =============================================-->
+    <qualifier>
+        <name>dct:LCSH</name>
+        <recommendedMapping>LCSH</recommendedMapping>
+    </qualifier>
+    <qualifier>
+        <name>dct:MESH</name>
+        <recommendedMapping>MeSH</recommendedMapping>
+    </qualifier>
+    <qualifier>
+        <name>dct:DDC</name>
+        <recommendedMapping>DDC</recommendedMapping>
+    </qualifier>
+    <qualifier>
+        <name>dct:LCC</name>
+        <recommendedMapping>LCC</recommendedMapping>
+    </qualifier>
+    <qualifier>
+        <name>dct:UDC</name>
+        <recommendedMapping>UDC</recommendedMapping>
+    </qualifier>
+    <qualifier>
+        <name>dct:DCMIType</name>
+        <recommendedMapping>DCMI Type Vocabulary</recommendedMapping>
+    </qualifier>
+    <qualifier>
+        <name>dct:IMT</name>
+        <recommendedMapping>IMT</recommendedMapping>
+    </qualifier>
+    <qualifier>
+        <name>dct:ISO639-2</name>
+        <recommendedMapping>ISO 639-2</recommendedMapping>
+    </qualifier>
+    <qualifier>
+        <name>dct:RFC1766</name>
+        <recommendedMapping>RFC 1766</recommendedMapping>
+    </qualifier>
+    <qualifier>
+        <name>dct:URI</name>
+        <recommendedMapping>URI</recommendedMapping>
+    </qualifier>
+    <qualifier>
+        <name>dct:Point</name>
+        <recommendedMapping>DCMI Point</recommendedMapping>
+    </qualifier>
+    <qualifier>
+        <name>dct:ISO3166</name>
+        <recommendedMapping>ISO 3166</recommendedMapping>
+    </qualifier>
+    <qualifier>
+        <name>dct:Box</name>
+        <recommendedMapping>DCMI Box</recommendedMapping>
+    </qualifier>
+    <qualifier>
+        <name>dct:TGN</name>
+        <recommendedMapping>TGN</recommendedMapping>
+    </qualifier>
+    <qualifier>
+        <name>dct:Period</name>
+        <recommendedMapping>DCMI Period</recommendedMapping>
+    </qualifier>
+    <qualifier>
+        <name>dct:W3CDTF</name>
+        <recommendedMapping>W3C-DTF</recommendedMapping>
+    </qualifier>
+    <qualifier>
+        <name>dct:RFC3066</name>
+        <recommendedMapping>RFC 3066</recommendedMapping>
+    </qualifier>
+
+</oaiPmhFormat>

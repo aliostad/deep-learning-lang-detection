@@ -1,0 +1,155 @@
+.main-nav
+{
+    list-style: none;
+}
+.main-nav li
+{
+    float: left;
+    width: 14%;
+    position: relative;
+    -moz-transition: background-color 0.4s ease;
+    -o-transition: background-color 0.4s ease;
+    -webkit-transition: background-color 0.4s ease;
+    -ms-transition: background-color 0.4s ease;
+}
+.main-nav li:hover
+{
+    
+}
+.main-nav a
+{
+    border-top: 0;
+    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 5px 10px 10px;
+    font: bold 18px Tahoma,Serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    overflow: hidden;
+}
+.main-nav a:before
+{
+    content: "";
+    display: block;
+    height: 40px;
+    background: url('images/nav-sprite.png') top center no-repeat;
+}
+.main-nav span
+{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    white-space: nowrap;
+}
+.main-nav .logotyp a:before
+{
+    background: url('images/');
+}
+.main-nav .curs a:before
+{
+    background-position: center -40px;
+}
+.main-nav .news a:before
+{
+    background-position: center -80px;
+}
+.main-nav .useful a:before
+{
+    background-position: center -160px;
+}
+.main-nav .rules a:before
+{
+    background-position: center -120px;
+}
+.main-nav .phone a:before
+{
+    background: url('images/phone.png') no-repeat center;
+}
+
+.main-nav li:before
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 8px;
+}
+.main-nav .main.current a, .main-nav .curs.current a, .main-nav .news.current a, .main-nav .useful.current a, .main-nav .rules.current a, .main-nav .logotyp.current a, .main-nav .phone.current a
+{
+    color: White;
+}
+.main-nav a:hover
+{
+    text-decoration: none;
+}
+.main-nav .main:hover
+{
+    background: #0074FF;
+}
+.main-nav .main.current:before
+{
+    background: #07509D;
+}
+.main-nav .logotyp.current, .main-nav .logotyp:hover, 
+{
+    background-color: #7f33e6;
+    z-index: 2;
+}
+
+
+ .main-nav .curs:hover
+{
+    background: #01B0EC;
+}
+.main-nav .curs.current:before
+{
+    background: #006699;
+}
+.main-nav .news:hover
+{
+    background: #17DA28;
+}
+.main-nav .news.current:before
+{
+    background: #009933;
+}
+ .main-nav .useful:hover
+{
+    background: #C9D934;
+}
+.main-nav .useful.current:before
+{
+    background: #7A8C1A;
+}
+.main-nav .rules:hover
+{
+    background: #e3a333;
+}
+.main-nav .rules.current:before
+{
+    background: #FF7F10;
+}
+
+@-webkit-keyframes nav-1 {50% {background:#0074FF}}
+@-moz-keyframes nav-1 {50% {background:#0074FF}}
+.home .main-nav .main {-webkit-animation:nav-1 1.5s 1s ease 1;-moz-animation:nav-1 1.5s 1s ease 1}
+@-webkit-keyframes nav-2 {50% {background:#01B0EC}}
+@-moz-keyframes nav-2 {50% {background:#01B0EC}}
+.home .main-nav .curs {-webkit-animation:nav-2 1.5s 1.1s ease 1;-moz-animation:nav-2 1.5s 1.1s ease 1}
+@-webkit-keyframes nav-3 {50% {background:#17DA28}}
+@-moz-keyframes nav-3 {50% {background:#17DA28}}
+.home .main-nav .news {-webkit-animation:nav-3 1.5s 1.2s ease 1;-moz-animation:nav-3 1.5s 1.2s ease 1}
+@-webkit-keyframes nav-4 {50% {background:#C9D934}}
+@-moz-keyframes nav-4 {50% {background:#C9D934}}
+.home .main-nav .useful {-webkit-animation:nav-4 1.5s 1.3s ease 1;-moz-animation:nav-4 1.5s 1.3s ease 1}
+@-webkit-keyframes nav-5 {50% {background:#FF7F10}}
+@-moz-keyframes nav-5 {50% {background:#FF7F10}}
+.home .main-nav .rules {-webkit-animation:nav-5 1.5s 1.4s ease 1;-moz-animation:nav-5 1.5s 1.4s ease 1}
+/*@-webkit-keyframes nav-6 {50% {background:#CC0000}}
+@-moz-keyframes nav-6 {50% {background:#CC0000}}
+.home .main-nav .rules {-webkit-animation:nav-6 1.5s 1.5s ease 1;-moz-animation:nav-6 1.5s 1.5s ease 1}*/

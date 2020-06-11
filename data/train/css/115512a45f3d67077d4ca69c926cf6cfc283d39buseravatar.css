@@ -1,0 +1,74 @@
+.message-pane .message .upper {
+  border-bottom: 1px solid rgba(200, 200, 200, 0.4);
+}
+
+.message-pane .message .col-md-1 {
+  float: left;
+  width: 52px;
+}
+
+.message-pane .message .col-md-1 img {
+  border-radius: 4px;
+  float: right;
+  margin-right: 4px;
+  min-height: 52px;
+}
+
+.message-pane .message .col-md-11 {
+  background-color: rgba(200, 200, 200, 0.2);
+  border: 1px solid rgba(200, 200, 200, 0.8);
+  border-radius: 4px;
+  float: right;
+  margin: 4px;
+  padding: 3px;
+  width: calc(100% - 52px);
+}
+
+.message-pane .message.me .col-md-11 {
+  background-color: #e2edf8;
+}
+
+.message-pane .message:hover .col-md-11 {
+  background-color: #DFDFDF;
+}
+
+.message-pane .message.me:hover .col-md-11 {
+  background-color: #C3DCF5;
+}
+
+.message-pane .message .col-md-11 .label.name {
+  margin-left: 5px;
+}
+
+/* Left menu avatar styling. */
+#left-menu-wrapper .avatar-icon {
+  border-radius: 3px;
+  margin: 1px 10px 1px 1px;
+}
+
+/* Overrides for default message styling, potentially Connect-specific. */
+#candy .message-pane li {
+  border: 0;
+}
+
+#candy .message-pane li > div {
+  border-top: initial;
+}
+
+#candy .message-pane li:hover {
+  background-color: #fff;
+}
+
+#candy .message-pane .message {
+  background-color: #fff;
+  margin: initial;
+  padding: 5px 5px 5px 8px;
+}
+
+#candy .message-pane .message .message-body {
+  padding-left: 5px;
+}
+
+#candy .message-pane-wrapper {
+  background: #fff !important;
+}

@@ -1,0 +1,178 @@
+/* @Group Message */
+
+.list .filter input.txt {
+	width: 20.75em;
+}
+
+#memberListresults li {
+	line-height: 1.2em;
+}
+
+#memberListresults .buttons {
+	display: none;
+}
+
+#message {
+	padding: 0;
+}
+
+div#messageReply form.formMessage {
+	padding: 3em 0pt 1em 9em;
+}
+
+div#messageReply form.formMessage dl {
+	width: 47em;
+}
+
+#message form.formMessage h3 {
+	padding-left: 0em;
+}
+
+div#messageReply form.formMessage fieldset.panel {
+	background-color: #EFEFEF;
+}
+
+#form-message-filter {
+	width: 27.65em;
+}
+
+/* @Group Message Form */
+
+form.formMessage dt {
+	float: left;
+	padding: 0 1em 0 0em;
+	text-align: right;
+	width: 6.5em;
+}
+
+form.formMessage dt label {
+	display: block;
+	font-size: larger;
+	padding-top: 0.5em;
+}
+
+form.formMessage dd {
+	float: left;
+	margin: 0 0 1em;
+	width: 39em;
+}
+
+form.formMessage input.txt,
+form.formMessage textarea {
+	overflow: auto;
+	padding: 0.4em 0 0.4em 0.2em;
+	width: 28.9em;
+}
+
+form.formMessage select {
+	width: 29.2em;
+}
+
+form.formMessage .select-list {
+	width: 38.74em;
+}
+
+
+#message .select-list ul li {
+	margin-top: 0;
+}
+
+/* @end Message Form */
+
+
+/* @Group Message Read */
+
+#message div.read {
+	padding: 1em;
+}
+
+#message h3 {
+	border-bottom: 1px solid #B3B3B3;
+	clear: none;
+	color: #333;
+	margin: 1em;
+	padding: 0.1em 1em 1em;
+	text-align: center;
+}
+
+#message .column {
+	padding: 0 0 1em;
+}
+
+#message .thumb {
+	padding-bottom: 0;
+	width: 5em;
+}
+
+#message .thumb img {
+	width: 5em;
+}
+
+#message .info {
+	clear: none;
+	font-size: 0.9em;
+	font-weight: normal;
+	margin: 0;
+	padding: 0 1.1em 0 0;
+	text-align: right;
+	width: 15em;
+}
+
+#message .info .name {
+	font-size: 1.1em;
+	font-weight: bold;
+	overflow: hidden;
+	padding: 0em 0.2em 0;
+}
+
+#message .info .date {
+	font-size: 9pt;
+	padding: 0em 0.5em 0.2em 0;
+}
+
+#message .body {
+	border-bottom: 1px solid #CCC;
+	padding: 0.2em 0 1.5em 0.5em;
+}
+
+#message .body .text {
+	font-size:10pt;
+	width:35em;
+}
+
+#message a.msg-next,
+#message a.msg-prev {
+	font-size: 14pt;
+	height: 9px;
+	line-height: 1.5em;
+	margin: 0.5em;
+	width: 9px;
+}
+
+#message a.msg-next {
+	/*background: #FFF url(../images/buttons/arrowRight.gif);*/
+	float: right;
+}
+
+.read ul {
+	margin: 0;
+	padding: 0;
+}
+
+.read ul li {
+	margin-top : 1em;
+}
+
+#message a.msg-prev {
+	/*background: #FFF url(../images/buttons/arrowLeft.gif);*/
+	float: left;
+}
+
+#message a.msg-next:hover,
+#message a.msg-prev:hover {
+	background-color: #FF9;
+}
+
+/* @end Message Read*/
+
+/* @end Message */

@@ -1,0 +1,88 @@
+#write_box{
+   border:1px #769995 solid;
+   background-color:#474747;
+   padding:15px;
+   border-radius:5px;  
+}
+   #content #write_box h1{
+      color:red;
+      text-align:center;
+      padding:0px;
+      margin-top:0px;
+      margin-bottom:10px;
+	font-size: 2.5em;
+}
+   
+   #write_box p{
+      font-size: 1em;
+   }
+      
+   #write_box .desc {
+      margin-left:50px;
+      margin-right:50px;
+      background-color:#202020;
+      padding:10px;
+      color:#9DF8FF;
+      font-size:.9em;
+      font-style:italic;
+      font-weight:bold;
+   }
+   
+   #write_box form{
+      width: 500px;
+      text-align:center;
+      margin-left:auto;
+      margin-right:auto;
+   }
+      
+   #write_box form input{
+      text-align:center;
+      border: 1px solid white;
+      background-color: black;
+      color:white;
+	font-size: 1.5em;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+   
+   #write_box form #title{
+      width:500px;
+   }
+   #write_box form #text_content{
+      height:300px;
+      width:500px;
+      margin: 5px 0px;
+      background-color:#E9E9E9;
+      font-size:1.1em;
+      border-left:1px white solid;
+      border-right:1px white solid;
+      border-bottom:1px white solid;
+   }
+   
+   #submit:hover{
+      color:red;
+   }
+   
+#instructionBox {
+   border:1px #769995 solid;
+   background-color:#474747;
+   padding: 10px;
+   margin-bottom: 20px;
+   border-radius:5px;
+}
+
+#instructionBox h1{
+	font-size: 1.2em;
+	text-align: left;
+	text-decoration: underline;
+}
+
+#instructionBox p{
+	font-size: .8em;
+}
+
+#instructionBox .signature{
+	font-size: .9em;
+	color: red;
+	text-align: right;
+}   

@@ -1,0 +1,98 @@
+.mask{
+    width: 7.5rem;
+    height: 100%;
+    background: url("../icon/bg.png");
+    padding: 1px;
+    box-sizing: border-box;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1000;
+}
+.load_animate{
+    width: 6.5rem;
+    height: 1.6rem;
+    margin-top: 2.34rem;
+    overflow: hidden;
+    margin-left:auto;
+    margin-right: auto;
+}
+.load_animate > li{
+    float: left;
+    height: 0.9rem;
+    margin-right: 0.22rem;
+    display: inline-block;
+    border-radius: 50%;
+
+    -webkit-animation: stretchdelay 3s infinite ease-in-out;
+}
+/*-----------------动画效果----------------------*/
+@-webkit-keyframes stretchdelay {
+    0%, 40%, 100% { -webkit-transform: translate(0rem,0.7rem) }
+    16.7% { -webkit-transform:translate(0rem,0rem) }
+}
+/*------------------------------------------------------*/
+.load_animate>li:last-child{
+    margin-right: 0;
+}
+.load_animate .animate_1{
+    width: 0.9rem;
+    background: url("../icon/dog_loading_2.png") no-repeat;
+    background-size: 6rem 0.9rem;
+    background-position-x: 0;
+    background-position-y: 0;
+}
+.load_animate .animate_2{
+    width: 0.9rem;
+    background: url("../icon/dog_loading_2.png") no-repeat;
+    background-size: 6rem 0.9rem;
+    background-position-x: -1.02rem;
+
+    -webkit-animation-delay: -2.5s;
+}
+.load_animate .animate_3{
+    width: 0.9rem;
+    background: url("../icon/dog_loading_2.png") no-repeat;
+    background-size: 6rem 0.9rem;
+    background-position-x: -2.04rem;
+
+    -webkit-animation-delay: -2s;
+}
+.load_animate .animate_4{
+    width: 0.9rem;
+    background: url("../icon/dog_loading_2.png") no-repeat;
+    background-size: 6rem 0.9rem;
+    background-position-x: -3.055rem;
+
+    -webkit-animation-delay: -1.5s;
+}
+.load_animate .animate_5{
+    width: 0.9rem;
+    background: url("../icon/dog_loading_2.png") no-repeat;
+    background-size: 6rem 0.9rem;
+    background-position-x: -4.075rem;
+
+    -webkit-animation-delay: -1s;
+}
+.load_animate .animate_6{
+    width: 0.9rem;
+    background: url("../icon/dog_loading_2.png") no-repeat;
+    background-size: 6rem 0.9rem;
+    background-position-x: -5.095rem;
+
+    -webkit-animation-delay: -0.5s;
+}
+.loading_in{
+    width: 2.06rem;
+    height: 0.55rem;
+}
+.loading_text{
+    width: 5.16rem;
+    line-height: 0.42rem;
+    font-size: 0.24rem;
+    color: #65675e;
+    margin: 0 auto;
+    padding-top: 0.8rem;
+}

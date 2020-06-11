@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+#title{
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#wrap{
+	text-align: center;
+}
+
+.loading_circle{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 10px;
+	border-radius: 50%;
+	background-color: #7EF5F1;
+	
+	transform: translateZ(0);/*启用硬件加速*/
+	-webkit-transform: translateZ(0);
+	
+	animation: load .5s infinite alternate;
+	-webkit-animation: load .5s infinite alternate;
+}
+
+.loading_circle:nth-child(2){
+	animation-delay: .25s;
+	-webkit-animation-delay: .25s;
+}
+
+.loading_circle:nth-child(3){
+	animation-delay: .5s;
+	-webkit-animation-delay: .5s;
+}
+
+@keyframes load{
+	to{
+		transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+	}
+}
+
+@-webkit-keyframes load{
+	to{
+		transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+	}
+}

@@ -1,0 +1,43 @@
+/* =================================== */
+
+#mail {
+
+}
+
+.messageList {
+    margin-bottom: 5px;
+    width: 270px; 
+    height: 600px; 
+    float: left; 
+    overflow: auto;
+}
+
+.messageList .message {
+    cursor: pointer;
+    text-align: right;
+}
+
+.messageList .message .sender {
+    padding: 3px;
+    font-style: italic;
+}
+
+.messageList .message .date{
+    padding: 3px;
+}
+
+.messageList .message .title {
+    padding: 3px;
+    font-weight: bold;
+}
+
+#mail .messageHeader {
+}
+
+#mail .messageBody {
+    margin-left: 280px;
+}
+
+#mail .messageContent {
+    padding: 10px;
+}

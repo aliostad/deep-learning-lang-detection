@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<nodes>
+
+	<node>
+		<ID>00000000000</ID>
+		<data>empty</data>
+		<rxMessage>empty</rxMessage>
+		<txMessage>empty</txMessage>
+	</node>
+
+	<node>
+		<ID>11111010010000111111110101010</ID>
+		<data>empty</data>
+		<rxMessage>empty</rxMessage>
+		<txMessage>empty</txMessage>
+	</node>
+
+	
+
+	<node>
+		<ID>10100101010</ID>
+		<data>empty</data>
+		<rxMessage>empty</rxMessage>
+		<txMessage>empty</txMessage>
+	</node>
+
+	<node>
+		<ID>10000100010</ID>
+		<data>empty</data>
+		<rxMessage>empty</rxMessage>
+		<txMessage>empty</txMessage>
+	</node>
+	
+	<node>
+		<ID>11111111111</ID>
+		<data>empty</data>
+		<rxMessage>empty</rxMessage>
+		<txMessage>empty</txMessage>
+	</node>
+	
+	<node>
+		<ID>00000000000000000011111111111</ID>
+		<data>empty</data>
+		<rxMessage>empty</rxMessage>
+		<txMessage>empty</txMessage>
+	</node>
+	
+
+<node>
+<ID>11111111110</ID>
+<data>empty</data>
+<rxMessage>empty</rxMessage>
+<txMessage>empty</txMessage>
+</node>
+<node>
+<ID>11111111100</ID>
+<data>empty</data>
+<rxMessage>empty</rxMessage>
+<txMessage>empty</txMessage>
+</node>
+</nodes>

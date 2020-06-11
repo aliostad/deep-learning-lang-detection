@@ -1,0 +1,25 @@
+#!/bin/bash
+set -e
+
+FILE_PHP5_LOAD=/etc/apache2/mods-available/php5.load
+
+bin/_unset_perm_dirs
+
+VERSION=$(bin/_get_version)
+PHP_SUBVERSION=${1:-$VERSION}
+[ -z $PHP_SUBVERSION ] && exit 1;
+
+bin/_set_perm_dirs
+
+source ~/.phpbrew/bashrc
+echo phpbrew switch $PHP_SUBVERSION
+phpbrew switch $PHP_SUBVERSION
+
+if [ -e "$FILE_PHP5_LOAD" ]; then 
+#  echo "sed \"s/libphp[0-9]*\.[0-9]*\.[0-9]*\(.*\)/libphp$PHP_SUBVERSION\1/\" \"$FILE_PHP5_LOAD\""
+  sed -i.bak "s/\(libphp\)[0-9]*\.[0-9]*\.[0-9]*\(.*\)$/\1$PHP_SUBVERSION\2/" "$FILE_PHP5_LOAD"
+fi
+
+sudo service apache2 restart
+bin/_unset_perm_dirs
+

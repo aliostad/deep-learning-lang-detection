@@ -1,0 +1,19 @@
+.writers-process .part-intro {
+  background-position: center -8190px; }
+.writers-process .nav-left {
+  background-color: #555;
+  border-top-color: #555; }
+  .writers-process .nav-left .nav-heading {
+    background-color: #555; }
+  .writers-process .nav-left .nav .active > a {
+    background-color: #bbb; }
+  .writers-process .nav-left .nav li a:hover {
+    background-color: #bbb; }
+  .writers-process .nav-left .sub-nav .active > a {
+    background-color: #eee; }
+  .writers-process .nav-left .sub-nav li a:hover {
+    background-color: #eee; }
+.writers-process .page-view {
+  border-top-color: #555; }
+
+/*# sourceMappingURL=writers-process.css.map */

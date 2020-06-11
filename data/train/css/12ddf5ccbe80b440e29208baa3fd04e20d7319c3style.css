@@ -1,0 +1,191 @@
+#mainContent{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	display:none;
+}
+
+#mainContent #background{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+#mainContent #background #cover{
+	position:absolute;
+	top:0;
+	left:24%;
+	width:75%;
+	height:100%;
+	background-color:black;
+	opacity:0.55;
+	filter:alpha(opacity=55); /* For IE8 and earlier */
+}
+
+#mainContent #loadContent{
+	position:absolute;
+	left:24%;
+	top:22%;
+	width:65%;
+	height:46%;
+}
+
+#mainContent #loadContent #title{
+	width:100%;
+	height:10%;
+	display:table;
+	overflow:hidden;
+}
+
+#mainContent #loadContent #title h1{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	color:red;
+	font-weight:bold;
+}
+
+#mainContent #loadContent #subTitle{
+	width:100%;
+	height:10%;
+	display:table;
+	overflow:hidden;
+}
+
+#mainContent #loadContent #subTitle h3{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	color:red;
+	font-weight:bold;
+}
+
+#mainContent #loadContent #sections{
+	width:100%;
+	height:60%;
+	overflow:hidden;
+}
+
+#mainContent #loadContent #sections .section{
+	display:inline;
+	width:33%;
+	height:100%;
+}
+
+#mainContent #loadContent #sections .section p{
+	color:white;
+}
+
+#mainContent #loadContent #seeMore{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	text-align:center;
+}
+
+#mainContent #loadContent #seeMore a{
+	text-align:center;
+	color:red;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:1.1em;
+}
+
+#mainContent #menu{
+	position:absolute;
+	top:0;
+	left:24%;
+	width:68%;
+	height:90%;
+	overflow:hidden;
+}
+
+#mainContent #menu .rect{
+	width:12.5%;
+	height:50%;
+}
+
+#mainContent #menu .rect .picSquare{
+	width:100%;
+	height:50%;
+}
+
+#mainContent #menu .rect .picSquare .button{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+#mainContent #menu .rect .picSquare .button .buttonBackground{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:#330000;
+	opacity:0.80;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+}
+
+#mainContent #menu .rect .picSquare .button .outButton{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+#mainContent #menu .rect .picSquare .button .inButton{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	display:none;
+}
+
+#mainContent #menu .rect .picSquare .buttonPhoto{
+	position:absolute;
+	top:25%;
+	left:25%;
+	width:50%;
+	height:50%;
+}
+
+#mainContent #menu .rect .picSquare .bite{
+	position:absolute;
+	left:0;
+	width:100%;
+	height:50%;
+	visibility:hidden;
+}
+
+#mainContent #menu .rect .mouseListenerCover{
+	position:absolute;
+	left:0;
+	width:100%;
+	height:50%;
+}
+
+#mainContent #menu .rect .coverRow1{bottom:0;}
+#mainContent #menu .rect .coverRow2{top:0;}
+
+#mainContent #menu .rect .signSquare{
+	visibility:hidden;
+	width:100%;
+	height:50%;
+}
+
+#mainContent #candyWrapper{
+	position:absolute;
+	right:0;
+	top:20%;
+	width:83%;
+	height:51%;
+}

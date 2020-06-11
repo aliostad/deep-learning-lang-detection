@@ -1,0 +1,20 @@
+﻿/* Write : TBL */
+
+.write_tbl { border-collapse:collapse; BACKGROUND-COLOR: white;} 
+.write_tbl td, .write_tbl th { border:0px; border-bottom:1px solid #ddd; padding:6px 10px; line-height:20px; }
+.write_tbl .td_head { BACKGROUND-COLOR: #f5f5f5; letter-spacing:-1px; text-align:center; font:normal 12px tahoma;}
+.write_tbl a{text-decoration:none; outline:none; select-dummy:expression(this.hideFocus=true);}
+.write_tbl a:link, .write_tbl a:visited, .write_tbl a:active { text-decoration:none; color:#333; }
+.write_tbl a:hover, .write_tbl a:active, .write_tbl a:focus{text-decoration:none; color:orangered; }
+
+.write_tbl2 { border-collapse:collapse; } 
+.write_tbl2 td, .write_tbl2 th { border:0px; padding:4px; }
+.write_tbl2 td_head { BACKGROUND-COLOR: #f5f5f5; letter-spacing:-1px; text-align:center; }
+
+.star_tbl { border-collapse:collapse; } 
+.star_tbl td, .star_tbl th { border:0px; padding:0px; }
+.star_tbl td_head { BACKGROUND-COLOR: #f5f5f5; letter-spacing:-1px; text-align:center; }
+
+.color_tbl { border-collapse:collapse; BACKGROUND-COLOR: white;} 
+.color_tbl td, .color_tbl th { border:1px solid #333; padding:4px; }
+.color_tbl td.color { cursor:pointer;width:10px;height:15px;font:1px;padding:0; }

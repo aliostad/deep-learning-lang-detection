@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <testsuite tests="4" failures="0" time="0.1010835">
+      <testcase name="process Id returns the pid" classname="Process Suite" time="0"></testcase>
+      <testcase name="process Wait waits for the StreamOpen channel to close" classname="Process Suite" time="0"></testcase>
+      <testcase name="process Wait returns an erorr if one is sent over StreamOpen channel to close" classname="Process Suite" time="0"></testcase>
+      <testcase name="process Wait times out waiting for the StreamOpen channel to close" classname="Process Suite" time="0.1000607"></testcase>
+  </testsuite>

@@ -1,0 +1,14 @@
+#!/bin/bash
+remote=$(git config --get save.remote)
+branch=$(git config --get save.branch)
+default_remote="origin"
+default_branch="wip"
+
+[ "$remote" ] || remote=$default_remote && echo "Loading from remote $default_remote. Please specify a remote in .git/config under [save] if that is incorrect."
+[ "$branch" ] || branch=$default_branch && echo "Saving to branch $default_branch. Please specify a branch in .git/config under [save] if that is incorrect."
+
+[[ -z "$remote" || -z "$branch" ]] && exit 1
+
+git fetch $remote
+git cherry-pick $remote/$branch
+git reset head^

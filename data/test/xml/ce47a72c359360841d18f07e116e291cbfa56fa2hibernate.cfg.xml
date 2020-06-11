@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <mapping class="persistance.model.Student" />
+        <mapping class="persistance.model.Student"/>
+        <mapping class="persistance.model.Review"/>
+        <mapping class="persistance.model.Value"/>
+        <mapping class="persistance.model.Attribute"/>
+        <mapping class="persistance.model.Feedbacker"/>
+        <mapping class="persistance.model.Group"/>
+        <mapping class="persistance.model.HRWorker" />
+        <mapping class="persistance.model.User" />
+        <mapping class="persistance.model.UserRole" />
+        <mapping class="persistance.model.Rating" />
+        <mapping class="persistance.model.Technology" />
+        <mapping class="persistance.model.Admin" />
+        <mapping class="persistance.model.Notification" />
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,51 @@
+USE [SnackOverflowDB]
+GO
+IF EXISTS(SELECT * FROM sys.objects WHERE type = 'P' AND  name = 'sp_update_vehicle')
+BEGIN
+DROP PROCEDURE sp_update_vehicle
+Print '' print  ' *** dropping procedure sp_update_vehicle'
+End
+GO
+
+Print '' print  ' *** creating procedure sp_update_vehicle'
+GO
+Create PROCEDURE sp_update_vehicle
+(
+@old_VEHICLE_ID[INT],
+@old_VIN[NVARCHAR](20),
+@new_VIN[NVARCHAR](20),
+@old_MAKE[NVARCHAR](15),
+@new_MAKE[NVARCHAR](15),
+@old_MODEL[NVARCHAR](20),
+@new_MODEL[NVARCHAR](20),
+@old_MILEAGE[INT],
+@new_MILEAGE[INT],
+@old_YEAR[NVARCHAR](4),
+@new_YEAR[NVARCHAR](4),
+@old_COLOR[NVARCHAR](20),
+@new_COLOR[NVARCHAR](20),
+@old_ACTIVE[BIT],
+@new_ACTIVE[BIT],
+@old_LATEST_REPAIR_DATE[DATE]=null,
+@new_LATEST_REPAIR_DATE[DATE],
+@old_LAST_DRIVER_ID[INT]=null,
+@new_LAST_DRIVER_ID[INT],
+@old_VEHICLE_TYPE_ID[NVARCHAR](50),
+@new_VEHICLE_TYPE_ID[NVARCHAR](50)
+)
+AS
+BEGIN
+UPDATE vehicle
+SET VIN = @new_VIN, MAKE = @new_MAKE, MODEL = @new_MODEL, MILEAGE = @new_MILEAGE, YEAR = @new_YEAR, COLOR = @new_COLOR, ACTIVE = @new_ACTIVE, LATEST_REPAIR_DATE = @new_LATEST_REPAIR_DATE, LAST_DRIVER_ID = @new_LAST_DRIVER_ID, VEHICLE_TYPE_ID = @new_VEHICLE_TYPE_ID
+WHERE (VEHICLE_ID = @old_VEHICLE_ID)
+AND (VIN = @old_VIN)
+AND (MAKE = @old_MAKE)
+AND (MODEL = @old_MODEL)
+AND (MILEAGE = @old_MILEAGE)
+AND (YEAR = @old_YEAR)
+AND (COLOR = @old_COLOR)
+AND (ACTIVE = @old_ACTIVE)
+AND (LATEST_REPAIR_DATE = @old_LATEST_REPAIR_DATE OR ISNULL(LATEST_REPAIR_DATE, @old_LATEST_REPAIR_DATE) IS NULL)
+AND (LAST_DRIVER_ID = @old_LAST_DRIVER_ID OR ISNULL(LAST_DRIVER_ID, @old_LAST_DRIVER_ID) IS NULL)
+AND (VEHICLE_TYPE_ID = @old_VEHICLE_TYPE_ID)
+END

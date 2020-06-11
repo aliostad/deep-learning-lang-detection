@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<catalogue xml:lang="en">
+   <!--ecommerce-->
+   <!--Order-->
+    <message key="interface.orders">Orders</message>
+    <message key="Orders">Orders</message>
+    <message key="Order">Order</message>
+    <message key="Order.totalPrice">total Price</message>
+    <message key="Order.orderStatus">order Status</message>
+    <message key="Order.orderType">order Type</message>
+    <message key="Order.orderNumber">order Number</message>
+    <message key="Order.submittedDate">submitted Date</message>
+    <message key="Order.addNew">AddNew Order</message>
+    <message key="Order.list">Order List</message>
+
+    <!--OrderItem-->
+    <message key="OrderItems">Order Items</message>
+    <message key="OrderItem">Order Item</message>
+    <message key="OrderItem.unitPrice">unitPrice</message>
+    <message key="OrderItem.extendedPrice">extendedPrice</message>
+    <message key="OrderItem.orderItemNumber">orderItemNumber</message>
+    <message key="OrderItem.quantity">quantity</message>
+    <message key="OrderItem.list">Order Item List</message>
+
+
+    <!--Photo-->
+    <message key="interface.photos">Photos</message>
+    <message key="Photos">Photos</message>
+    <message key="Photo">Photo</message>
+    <message key="Photo.season">Season</message>
+    <message key="Photo.daytime">Daytime</message>
+    <message key="Photo.format">Format</message>
+    <message key="Photo.author">Author</message>
+    <message key="Photo.date">Date</message>
+    <message key="Photo.addNew">Add New Photo</message>
+    <message key="Photo.list">Photo List</message>
+
+    <!--Product-->
+    <message key="interface.products">Products</message>
+    <message key="Products">Products</message>
+    <message key="Product">Product</message>
+    <message key="Product.name">Name</message>
+    <message key="Product.model">Model</message>
+    <message key="Product.vendor">Vendor</message>
+    <message key="Product.sku">Sku</message>
+    <message key="Product.upc">Upc</message>
+    <message key="Product.sellingUOM">Selling UOM</message>
+    <message key="Product.basePrice">Base Price</message>
+    <message key="Product.specialPrice">Special Price</message>
+    <message key="Product.discount">Discount</message>
+    <message key="Product.minimumSellingUnits">Minumum Selling Units</message>
+    <message key="Product.onHandQuantity">On Hand Quantity</message>
+    <message key="Product.addNew">Add New Product</message>
+    <message key="Product.hide">Hide Product</message>
+    <message key="Product.choose">Choose Product</message>
+    <message key="Product.root">Root Product</message>
+    <message key="Product.list">Product List</message>
+    <!--Catalogue-->
+    <message key="Catalogues">Catalogues</message>
+    <message key="Catalogue">Catalogue</message>
+    <message key="Catalogue.category">Category</message>
+    <message key="Catalogue.addNew">AddNew Catalogue</message>
+    <message key="Catalogue.attachedProducts">Product's List</message>
+    <message key="Catalogue.list">Catalogue List</message>
+
+</catalogue>

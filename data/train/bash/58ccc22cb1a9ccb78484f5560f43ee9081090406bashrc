@@ -1,0 +1,271 @@
+# ~/.bashrc
+# used for bash non-login shells.
+# non-login shells include:
+# * X sessions (xdm, gdm, kdm)
+# * X Terminals (xterm, konsole, gnome-terminal)
+# * running remote commands via ssh
+
+# svn paths
+#setting directory structure for SVN repository
+SVNDIR=https://svn.ices.utexas.edu/repos/PSDNS
+SVNDIR_TURB=https://svn.ices.utexas.edu/repos/turbulence
+SVNDIR_PECOS=https://svn.ices.utexas.edu/repos/pecos
+SVNDIR_INCITE=https://svn.ices.utexas.edu/repos/boundarylayer
+SVNDIR_CANTERA=https://cantera.googlecode.com/svn
+SVNDIR_2nd=http://tri.dynalias.org/svn/2nd
+
+Second="git@github.com:secondfoundation/Second-Foundation-Src.git"
+SECOND="git@github.com:secondfoundation/Second-Foundation-Src.git"
+GITMASA="git@github.com:manufactured-solutions/MASA"
+
+#duplicates
+SVNDIR_first=http://tri.dynalias.org/svn/1st
+SVNDIR_FIRST=http://tri.dynalias.org/svn/1st
+SVNDIR_second=http://tri.dynalias.org/svn/2nd
+SVNDIR_SECOND=http://tri.dynalias.org/svn/2nd
+SVNDIR_TRI=http://tri.dynalias.org/svn/tri
+SVNDIR_tri=http://tri.dynalias.org/svn/tri
+
+REYNOLDS=nick@reynolds.ae.utexas.edu:
+BGP=nick@intrepid.alcf.anl.gov:
+BGQ=nick@mira.alcf.anl.gov:
+MIRA=nick@mira.alcf.anl.gov:
+TRI=nick@tri.dynalias.org:
+RANGER=npm7@ranger.tacc.utexas.edu:
+LONESTAR=npm7@lonestar.tacc.utexas.edu:
+RANCH=npm7@ranch.tacc.utexas.edu:
+VOLCANO=malaya@vulcano.dmt.upm.es:
+KRAKEN=nmalaya@kraken.nics.tennessee.edu:
+MINERVA=nick@minerva.ices.utexas.edu:
+ATHENA=nick@athena.ices.utexas.edu:
+
+# NOTE: some programs (ie, winscp) fail if this generates any output.
+# first, source the system bashrc
+if [ -r /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+
+MACHINE=$(hostname -s 2>&1)
+OS=$(uname 2>&1)
+
+# Add any aliases from .aliases
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
+fi
+
+# 
+if [ -f ~/.config.site ]; then
+    export CONFIG_SITE=~/.config.site    
+fi
+
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:$HOME/lib
+
+# MAIL is used by mutt
+export MAIL=/mail/${USER}/Maildir/
+
+# default printer: change this to suit your needs.
+export PRINTER=pr6406
+#export PRINTER=pr6414
+#export PRINTER=pr6412 is the tara printer
+# cp 6412 is the one by tara
+#export PRINTER=pr6406d  #for double sides
+
+# default editor: this is used by svn, etc.
+# the only safe default for EDITOR is one which instructs the user how to quit.
+# most users will change this to vim or emacs.
+export EDITOR="emacs -nw"
+export SVN_editor="emacs -nw"
+
+# add your customizations below
+export PATH=$PATH:/h2/nick/bin
+export PATH=$PATH:bin
+
+# pythonpath for paraview
+#export PYTHONPATH=$PYTHONPATH:/opt/apps/ossw/applications/paraview/paraview-3.14.1/sl6/bin: 
+#export PYTHONPATH=$PYTHONPATH:/opt/apps/ossw/applications/paraview/paraview-3.14.1/sl6/lib/paraview-3.14/site-packages/paraview
+#export PYTHONPATH=$PYTHONPATH:/opt/apps/ossw/applications/paraview/paraview-3.14.1/sl6/lib/paraview-3.14
+
+eval `dircolors ~/.dir_colors`
+alias ls="ls --color=auto"
+
+#what does this do again?
+export HISTCONTROL="ignoredups"
+
+#bash color prompt
+PS1='\[\e[1;31m\][\u@\h \W]\$\[\e[0m\] '  # red 
+
+ulimit -s unlimited
+
+case $MACHINE in
+    magus)
+        # interactive mode stuff goes here
+	case $- in *i*)
+		echo Welcome to $MACHINE, $USER
+		echo Today is : $(date +"%A %B %-d, %Y")
+		echo Loading BASHRC-*NIX CentOS7
+		echo All Systems Nominal
+	esac
+	module purge
+	module purge
+	module load c7
+	module load gcc
+	module load mpich2
+	module load mkl
+      	module load boost 
+	module load autotools 
+	module load pfftw3 
+	module load phdf5
+	module load autotools
+	module load python
+	module load texlive
+	module load gsl
+	module load pfftw3
+	module load eigen
+	module load masa 
+	module load pecos
+	module load antioch
+	module load paraview
+	module load tbb
+	module load trilinos
+	module load petsc
+	module load vtk
+	;;
+    athena)
+# interactive mode stuff goes here
+	case $- in *i*)
+		echo Welcome to $MACHINE, $USER
+		echo Today is : $(date +"%A %B %-d, %Y")
+		echo Loading BASHRC-*NIX
+		echo All Systems Nominal
+	esac
+	module load sl6
+	module load intel
+	module load mpich2
+	module load mkl
+	module load pfftw3 
+	module load gsl 
+	module load boost 
+	module load texlive
+	module load masa 
+	#module load phdf5
+        module load hdf5
+	module load esio
+	module load epd
+	;;
+
+    leela)
+        # interactive mode stuff goes here
+	case $- in *i*)
+		echo Welcome to $MACHINE, $USER
+		echo Today is : $(date +"%A %B %-d, %Y")
+		echo Loading BASHRC-*NIX CentOS7
+		echo All Systems Nominal
+	esac
+	module purge
+	module load c7
+	module load gcc
+	module load mpich2
+	module load mkl
+      	module load boost 
+	module load autotools 
+	module load pfftw3 
+	module load phdf5
+	module load autotools
+	module load python
+	module load texlive
+	module load gsl
+	module load pfftw3
+	module load eigen
+	module load masa 
+	module load pecos
+	module load antioch
+	module load paraview
+	module load tbb
+	module load trilinos
+	module load petsc
+	module load vtk
+	;;
+    fry)
+        # interactive mode stuff goes here
+	case $- in *i*)
+		echo Welcome to $MACHINE, $USER
+		echo Today is : $(date +"%A %B %-d, %Y")
+		echo Loading BASHRC-*NIX CentOS7
+		echo All Systems Nominal
+	esac
+	module purge
+	module load c7
+	module load gcc
+	module load mpich2
+	module load mkl
+      	module load boost 
+	module load autotools 
+	module load pfftw3 
+	module load phdf5
+	module load autotools
+	module load python
+	module load texlive
+	module load gsl
+	module load pfftw3
+	module load eigen
+	module load masa 
+	module load pecos
+	module load antioch
+	module load paraview
+	module load tbb
+	module load trilinos
+	module load petsc
+	module load vtk
+	;;
+    bender)
+        # interactive mode stuff goes here
+	case $- in *i*)
+		echo Welcome to $MACHINE, $USER
+		echo Today is : $(date +"%A %B %-d, %Y")
+		echo Loading BASHRC-*NIX CentOS7
+		echo All Systems Nominal
+	esac
+	module purge
+	module load c7
+	module load gcc
+	module load mpich2
+	module load mkl
+      	module load boost 
+	module load autotools 
+	module load pfftw3 
+	module load phdf5
+	module load autotools
+	module load python
+	module load texlive
+	module load gsl
+	module load pfftw3
+	module load eigen
+	module load masa 
+	module load pecos
+	module load antioch
+	module load paraview
+	module load tbb
+	module load trilinos
+	module load petsc
+	module load vtk
+	;;
+	*)
+	case $- in *i*)
+		echo "Unknown Machine: Loading Default System Modules"
+	esac
+	module load sl6
+	module load intel
+	module load mpich2
+	;;
+esac
+
+alias srcgrep="find . -iname '*.C' -or -iname '*.cpp' -or -iname '*.c' \
+                    -or -iname '*.cc' -or -iname '*.hh' \
+                    -or -iname '*.hpp' -or -iname '*.h' \
+                    -or -iname '*.F90' -or -iname '*.f90' \
+                    -or -iname '*.F' -or -iname '*.f' | xargs grep --color=auto"
+
+if test "$SSH_CONNECTION" != ""
+then
+  export PINENTRY_USER_DATA="USE_CURSES=1"
+fi

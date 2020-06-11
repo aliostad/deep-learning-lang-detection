@@ -1,0 +1,84 @@
+@CHARSET "UTF-8";
+
+#wrapper{
+	width:1080px;
+	margin:0 auto;
+	
+}
+
+.top_area{
+	width:1080px;
+	height:170px;
+	margin-top:50px;
+}
+
+.top_area p {
+	color:red;
+	font-weight:bold;
+}
+
+.write_area{
+	width:1080px;
+	margin:0 auto;
+	display:block;	
+}
+
+.write_table{
+	width:900px;
+	margin:0 auto;
+	display:block;
+	
+}
+
+.title{
+	width:900px;
+	border-top:none;
+	border-right:none;
+	border-left:none;
+	border-bottom:1px solid #000;;	
+}
+
+.content{
+	width:900px !important;
+	border-top:none !important;
+	border-right:none !important;
+	border-left:none !important;
+	border-bottom:1px solid #000 !important;	
+}
+
+#autocomplete{	
+	width:600px;
+	border-top:none;
+	border-right:none;
+	border-left:none;
+	border-bottom:1px solid #000;
+	margin-top:20px;
+}
+
+.comp_write{
+	background-image: url('/dev/resources/image/write_complete_icon.png');
+    background-position:  0px 0px;
+    background-repeat: no-repeat;
+    width: 77px;
+    height: 21px;
+    border: 0px;
+	cursor:pointer;
+ 	outline: 0;
+ 	background-color:#fff;
+ 	margin-left:25px;
+}
+
+.btn_area{
+	margin:0 auto;
+	display:block;
+	width:300px;
+	margin-top:30px;
+	margin-bottom:50px;
+}
+
+
+.add_file_area{
+	float:left;
+	margin-right:10px;
+	margin-top:30px;
+}

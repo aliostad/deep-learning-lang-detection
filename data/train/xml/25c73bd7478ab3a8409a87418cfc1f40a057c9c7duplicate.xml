@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="wppipes-processor" method="upgrade">
+	<name>Duplicate</name>
+	<author>wppipes.com</author>
+	<creationDate>Sep 2012</creationDate>
+	<copyright>© 2007-2012 wppipes.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<authorEmail>info@wppipes.com</authorEmail>
+	<authorUrl>http://www.wppipes.com</authorUrl>
+	<version>2.1</version>
+	<description>WPPipes Processor check Duplicate</description>
+	<files>
+		<filename plugin="duplicate">duplicate.php</filename>
+		<filename plugin="duplicate">duplicate.xml</filename>
+		<filename>duplicate.png</filename>
+		<filename>CHANGELOG</filename>
+		<filename>LICENSE</filename>
+		<filename>README</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/wp-content/plugins/pipes/plugins/processors/duplicate/fields/">
+				<field name="adapters" type="list" default="auto" label="Adapter"
+					   description="Check Duplicate for adapter">
+					<option value="auto">Auto Detect</option>
+					<option value="content">Content</option>
+					<option value="k2">K2</option>
+					<option value="zoo">Zoo</option>
+				</field>
+				<field name="note" type="hidden" default=""/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

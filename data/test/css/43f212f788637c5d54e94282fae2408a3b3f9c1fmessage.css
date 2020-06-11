@@ -1,0 +1,148 @@
+.message {
+    position: relative;
+    padding: 20px 0 20px;
+    list-style: none;
+}
+
+.message > li {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.message > li:before,
+.message > li:after {
+    content: " ";
+    display: table;
+}
+
+.message > li:after {
+    clear: both;
+}
+
+.message > li:before,
+.message > li:after {
+    content: " ";
+    display: table;
+}
+
+.message > li:after {
+    clear: both;
+}
+
+.message > li > .message-panel {
+    /*float: left;*/
+    float: right;
+    position: relative;
+    /*width: 46%;*/
+    width: calc(100% - 90px);
+    width: -moz-calc(100% - 90px);
+    width: -webkit-calc(100% - 90px);
+    padding: 15px;
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 6px rgba(0,0,0,0.175);
+    box-shadow: 0 1px 6px rgba(0,0,0,0.175);
+}
+
+.message > li > .message-panel:before {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 26px;
+    /*right: -15px;*/
+    right: auto;
+    left: -15px;
+    border-top: 15px solid transparent;
+    /*border-right: 0 solid #ccc;*/
+    border-right: 15px solid #ccc;
+    border-bottom: 15px solid transparent;
+    /*border-left: 15px solid #ccc;*/
+    border-left: 0 solid #ccc;
+}
+
+.message > li > .message-panel:after {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 27px;
+    /*right: -14px;*/
+    right: auto;
+    left: -14px;
+    border-top: 14px solid transparent;
+    /*border-right: 0 solid #fff;*/
+    border-right: 14px solid #fff;
+    border-bottom: 14px solid transparent;
+    /*border-left: 14px solid #fff;*/
+    border-left: 0 solid #fff;
+}
+
+.message > li > .message-badge {
+    z-index: 100;
+    position: absolute;
+    /*top: 16px;*/
+    top: 16px;
+    /*left: 50%;*/
+    left: 15px;
+    width: 50px;
+    height: 50px;
+    /*margin-left: -25px;*/
+    margin-left: 0;
+    border-radius: 50% 50% 50% 50%;
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 50px;
+    color: #fff;
+    background-color: #999999;
+}
+
+.message > li.message-inverted > .message-panel {
+    float: right;
+}
+
+.message > li.message-inverted > .message-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.message > li.message-inverted > .message-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.message-badge.primary {
+    background-color: #2e6da4 !important;
+}
+
+.message-badge.success {
+    background-color: #3f903f !important;
+}
+
+.message-badge.warning {
+    background-color: #f0ad4e !important;
+}
+
+.message-badge.danger {
+    background-color: #d9534f !important;
+}
+
+.message-badge.info {
+    background-color: #5bc0de !important;
+}
+
+.message-title {
+    margin-top: 0;
+    color: inherit;
+}
+
+.message-body > p,
+.message-body > ul {
+    margin-bottom: 0;
+}
+
+.message-body > p + p {
+    margin-top: 5px;
+}

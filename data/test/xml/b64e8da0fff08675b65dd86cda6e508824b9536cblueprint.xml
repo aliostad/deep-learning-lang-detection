@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+	<service id="accountRepository" interface="org.jbserv.mail.data.repository.AccountRepository"
+		ref="accountRepositoryBean" />
+
+	<service id="mailboxRepository" interface="org.jbserv.mail.data.repository.MailboxRepository"
+		ref="mailboxRepositoryBean" />
+
+	<service id="messageRepository" interface="org.jbserv.mail.data.repository.MessageRepository"
+		ref="messageRepositoryBean" />
+
+	<bean class="org.jbserv.mail.persistence.repository.AccountRepositoryImpl"
+		id="accountRepositoryBean" />
+
+	<bean class="org.jbserv.mail.persistence.repository.MailboxRepositoryImpl"
+		id="mailboxRepositoryBean" />
+
+	<bean class="org.jbserv.mail.persistence.repository.MessageRepositoryImpl"
+		id="messageRepositoryBean" />
+
+	<bean class="org.jbserv.mail.persistence.TestDataPopulator" id="populatorBean"
+		init-method="populate">
+		<property name="accountRepository" ref="accountRepositoryBean" />
+		<property name="mailboxRepository" ref="mailboxRepositoryBean" />
+		<property name="messageRepository" ref="messageRepositoryBean" />
+	</bean>
+</blueprint>

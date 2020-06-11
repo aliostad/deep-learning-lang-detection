@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/DlsVerwaltung</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">passwort</property>
+        
+        <property name="connection.pool_size">1</property>
+        
+        <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+        
+        <property name="show_sql">false</property>
+        <property name="format_sql">true</property>
+        
+        <!-- create (Always create the DB new), update (Only if newer) -->
+        <property name="hbm2ddl.auto">update</property>
+        
+        <mapping class="de.juette.model.Campaign"></mapping>
+        <mapping class="de.juette.model.Booking"></mapping>
+        <mapping class="de.juette.model.ColumnMapping"></mapping>
+        <mapping class="de.juette.model.CourseOfYear"></mapping>
+        <mapping class="de.juette.model.Role"></mapping>
+        <mapping class="de.juette.model.User"></mapping>
+        <mapping class="de.juette.model.Settings"></mapping>
+        <mapping class="de.juette.model.Group"></mapping>
+        <mapping class="de.juette.model.Sector"></mapping>
+        <mapping class="de.juette.model.Category"></mapping>
+        <mapping class="de.juette.model.Year"></mapping>
+        <mapping class="de.juette.model.Member"></mapping>
+        <mapping class="de.juette.model.MemberChanges"></mapping>
+        <mapping class="de.juette.model.BasicMember"></mapping>
+        <mapping class="de.juette.model.GroupChanges"></mapping>
+        <mapping class="de.juette.model.BasicGroup"></mapping>
+    </session-factory>
+</hibernate-configuration>

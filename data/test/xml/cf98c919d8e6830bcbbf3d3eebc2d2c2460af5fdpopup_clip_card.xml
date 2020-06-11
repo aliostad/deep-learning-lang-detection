@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_edit_card"
+        android:showAsAction="never"
+        android:title="@string/edit_card"/>
+    <item
+        android:id="@+id/menu_change_goal"
+        android:showAsAction="never"
+        android:title="@string/change_goal"
+        android:visible="false" />
+    <item
+        android:id="@+id/menu_duplicate_card"
+        android:showAsAction="never"
+        android:title="@string/duplicate_card"
+        android:visible="true" />
+    <item
+        android:id="@+id/menu_duplicate_clip"
+        android:showAsAction="never"
+        android:title="@string/duplicate_clip"
+        android:visible="false" />
+    <item
+        android:id="@+id/menu_remove_card"
+        android:showAsAction="never"
+        android:title="@string/remove_card"
+        android:visible="false" />
+</menu>

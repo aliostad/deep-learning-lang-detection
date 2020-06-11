@@ -1,0 +1,48 @@
+.action-info {
+    font-weight: bold;
+    color: green;
+}
+#ft {
+    margin-top: 20px;
+}
+a, a:hover, a:visited {
+    font-weight: bold;
+    color: green;
+}
+
+h3 a, a:hover, a:visited {
+    color: blue;
+}
+
+.action-details {
+    margin-top: 5px;
+}
+
+.status img {
+    text-align: left;
+    float: left;
+    vertical-align: top;
+    padding-right: 5px;
+}
+
+.break {
+    clear: both;
+    height: 5px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.status a, a:hover, a:visited {
+    text-decoration: none;
+}
+
+.loading {
+    vertical-align: middle;
+}
+
+#loadError {
+    color: red;
+}
+
+#searchSpinner, #loadError {
+}

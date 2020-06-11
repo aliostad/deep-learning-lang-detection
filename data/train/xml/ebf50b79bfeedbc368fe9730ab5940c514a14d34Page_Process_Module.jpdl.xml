@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process name="Page_Process_Module" xmlns="http://jbpm.org/4.3/jpdl">
+
+	<start g="136,16,80,40">
+		<transition g="154,73;154,79:" to="Image_Process_Create_OCR_Input_Plugin"/>
+	</start>
+
+	<sub-process continue="async" g="88,88,253,59" name="Image_Process_Create_OCR_Input_Plugin" sub-process-key="Image_Process_Create_OCR_Input_Plugin">
+		<parameter-in subvar="batchInstanceID" var="batchInstanceID"/>
+		<transition to="Image_Process_Create_Display_Image_Plugin"/>
+	</sub-process>
+	
+	<sub-process continue="async" g="88,179,257,59" name="Image_Process_Create_Display_Image_Plugin" sub-process-key="Image_Process_Create_Display_Image_Plugin">
+		<parameter-in subvar="batchInstanceID" var="batchInstanceID"/>
+		<transition to="Image_Process_Create_Thumbnails_Plugin"/>
+	</sub-process>
+	
+	<sub-process continue="async" g="88,270,239,59" name="Image_Process_Create_Thumbnails_Plugin" sub-process-key="Image_Process_Create_Thumbnails_Plugin">
+		<parameter-in subvar="batchInstanceID" var="batchInstanceID"/>
+		<transition to="Image_Process_Classify_Images_Plugin"/>
+	</sub-process>
+	
+	<sub-process continue="async" g="30,361,293,59" name="Image_Process_Classify_Images_Plugin" sub-process-key="Image_Process_Classify_Images_Plugin">
+		<parameter-in subvar="batchInstanceID" var="batchInstanceID"/>
+		<transition to="OCROPS_Generate_HOCR_Plugin"/>
+	</sub-process>
+
+	
+	<sub-process continue="async" g="41,452,266,55" name="OCROPS_Generate_HOCR_Plugin" sub-process-key="OCROPS_Generate_HOCR_Plugin">
+		<parameter-in subvar="batchInstanceID" var="batchInstanceID"/>
+		<transition to="HTML_To_XML_Generation_Plugin"/>
+	</sub-process>
+
+	<sub-process continue="async" g="16,539,321,55" name="HTML_To_XML_Generation_Plugin" sub-process-key="HTML_To_XML_Generation_Plugin">
+		<parameter-in subvar="batchInstanceID" var="batchInstanceID"/>
+		<transition to="Zxing_Extract_BarCode_Plugin"/>
+	</sub-process>
+	
+	<sub-process continue="async" g="31,626,290,54" name="Zxing_Extract_BarCode_Plugin" sub-process-key="Zxing_Extract_BarCode_Plugin">
+		<parameter-in subvar="batchInstanceID" var="batchInstanceID"/>
+		<transition to="Page_Process_Scripting_Plugin"/>
+	</sub-process>
+	
+	<sub-process continue="async" g="81,340,201,59" name="Page_Process_Scripting_Plugin" sub-process-key="Page_Process_Scripting_Plugin">
+		<parameter-in subvar="batchInstanceID" var="batchInstanceID"/>
+		<parameter-in subvar="backUpFileName" expr="Page_Process_Module_Scripting_Plugin"/>
+		<parameter-in subvar="scriptName" expr="ScriptPageProcessing"/>
+		<transition to="end"/>
+	</sub-process>
+
+	<end g="136,712,80,40" name="end"/>
+</process>

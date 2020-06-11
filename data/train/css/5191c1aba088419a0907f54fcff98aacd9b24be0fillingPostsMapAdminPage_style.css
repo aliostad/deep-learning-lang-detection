@@ -1,0 +1,60 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5/out/2015, 14:27:50
+    Author     : caoc1
+*/
+
+body{
+    background-image: url("../images/stardust.png");
+}
+
+#container {
+    position: relative;
+    font-family: "Montserrat";
+}
+
+#map{
+    width: 1000px;
+    height: 450px;
+    margin-top: 60px;
+    margin-left: 220px;
+    border-radius: 15px;
+    border: solid 10px;
+    border-color: rgba(255, 255, 255, .3);
+    position: absolute;
+}
+
+#load_div{
+    width: 1000px;
+    height: 450px;
+    margin-top: 60px;
+    margin-left: 220px;
+    background-color: rgba(68, 67, 73, .7);
+    border-radius: 15px;
+    border: solid 10px;
+    border-color: rgba(255, 255, 255, .0);
+    position: absolute;
+}
+
+#load_div p{
+    margin-top: 200px;
+    margin-left: 410px;
+    font-size: 25px;
+    color: rgba(255, 255, 255, .7);
+}
+
+#load_div #load{
+    display: none;
+    width: 30px;
+    margin-left: 475px;
+}
+
+body button{
+    margin-top: 600px;
+    margin-left: 650px;
+}
+

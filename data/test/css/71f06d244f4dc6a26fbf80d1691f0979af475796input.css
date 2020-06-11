@@ -1,0 +1,57 @@
+
+/*   */
+.sc-view.input-view{
+	border-radius: 10px;	
+	border: solid;
+	border-width: 1px;
+	border-color: gray;
+	background: white;
+}
+
+/*
+	blue
+*/
+.sc-view.input-view .sc-label-view {
+	color: rgb(47,106,186);
+	font-size: 13px;
+	font-family: arial;
+	text-align: right;
+}
+
+.sc-view.input-view .input-textfield input {
+	font-size: 12px;
+  	font-family: arial;
+}
+
+/*
+	textfield
+	no borders nor outline nor shadow
+*/
+.sc-view.input-view .sc-text-field-view {
+  border: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.sc-view.input-view .sc-text-field-view.focus {
+  border-color: none;
+  outline: 0;
+}
+
+.msie .sc-view.input-view .sc-text-field-view input {
+  margin-top: 5px;
+}
+
+
+.safari .sc-view.input-view .sc-text-field-view .border {
+  -webkit-appearance: none;
+}
+
+.mozilla .sc-view.input-view .sc-text-field-view .border {
+  -moz-appearance: none;
+}
+
+.msie .sc-view.input-view .sc-text-field-view .border {
+  border: 0;
+}

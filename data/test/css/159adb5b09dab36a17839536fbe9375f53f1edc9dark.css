@@ -1,0 +1,30 @@
+body.palm-dark .feedItem .unreadCount
+{
+	color:#E0E0E0;
+	background-color:#36454F;
+}
+body.palm-dark .feedItem.starred .unreadCount
+{
+	background-color: transparent;
+}
+body.palm-dark .loader
+{
+	background: transparent url('../images/dark/loader.gif') center center no-repeat;
+}
+body.palm-dark .loading
+{
+	background: transparent url('../images/dark/loading.gif') center center no-repeat;
+}
+body.palm-dark div.sectionHead
+{
+	-webkit-border-image: url(../images/dark/section_header.png) 0 19 0 19 stretch stretch;
+}
+body.palm-dark #loadMore
+{
+	background: transparent url('../images/dark/loadmore.png') bottom center no-repeat;
+}
+body.palm-dark #loadMore.loading
+{
+	background: transparent url('../images/dark/load_more.gif') center center no-repeat;
+	height:32px;
+}

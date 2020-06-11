@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbook>
+	<worksheet name="Sheet1">
+		<section startRow="0" endRow="0" />
+		<loop startRow="1" items="result01" var="h"
+			varType="com.sp.net.domain.rule.redmine.Case">
+			<section startRow="1" endRow="1">
+				<mapping row="1" col="0">h.subject</mapping>
+				<mapping row="1" col="1">h.statue</mapping>
+				<mapping row="1" col="2">h.priority</mapping>
+				<mapping row="1" col="3">h.no</mapping>
+				<mapping row="1" col="4">h.orderDate</mapping>
+				<mapping row="1" col="5">h.applier</mapping>
+				<mapping row="1" col="6">h.regCountry</mapping>
+				<mapping row="1" col="7">h.caseType</mapping>
+				<mapping row="1" col="8">h.businessProj</mapping>
+				<mapping row="1" col="9">h.type</mapping>
+				<mapping row="1" col="10">h.acceptDate</mapping>
+				<mapping row="1" col="11">h.regNo</mapping>
+				<mapping row="1" col="12">h.applyNo</mapping>
+				<mapping row="1" col="13">h.noticeDate</mapping>
+				<mapping row="1" col="14">h.regDate</mapping>
+				<mapping row="1" col="15">h.endDate</mapping>
+				<mapping row="1" col="16">h.fee</mapping>
+				<mapping row="1" col="17">h.unpay</mapping>
+				<mapping row="1" col="18">h.settleStatue</mapping>
+				<mapping row="1" col="19">h.customerType</mapping>
+				<mapping row="1" col="20">h.contactFrequent</mapping>
+				<mapping row="1" col="21">h.contactMan</mapping>
+				<mapping row="1" col="22">h.phone</mapping>
+				<mapping row="1" col="23">h.fax</mapping>
+				<mapping row="1" col="24">h.qqNemail</mapping>
+				<mapping row="1" col="25">h.address</mapping>
+				<mapping row="1" col="26">h.shoutongArrivalDate</mapping>
+				<mapping row="1" col="27">h.rejectArrivalDate</mapping>
+				<mapping row="1" col="28">h.certificateArrivalDate</mapping>
+				<mapping row="1" col="29">h.annualDay</mapping>
+				<mapping row="1" col="30">h.certifHasSend</mapping>
+				<mapping row="1" col="31">h.certifSendRemark</mapping>
+				<mapping row="1" col="32">h.isSaleable</mapping>
+				<mapping row="1" col="33">h.caseStatue</mapping>
+				<mapping row="1" col="34">h.traceDate</mapping>
+			</section>
+			<loopbreakcondition>
+				<rowcheck offset="0">
+					<cellcheck offset="0" />
+				</rowcheck>
+			</loopbreakcondition>
+		</loop>
+	</worksheet>
+</workbook>

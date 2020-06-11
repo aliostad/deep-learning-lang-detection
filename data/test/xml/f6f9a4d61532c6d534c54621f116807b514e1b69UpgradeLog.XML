@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ProcessDissector">
+</Property><Property Name="Solution File" Value="E:\Code\ProcessDissector\ProcessDissector.sln">
+</Property><Property Name="User Options File" Value="E:\Code\ProcessDissector\ProcessDissector.suo">
+</Property><Property Name="Date" Value="Friday, April 17, 2015">
+</Property><Property Name="Time" Value="16:42 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="ProcessDissector.sln" Description="File successfully backed up as E:\Code\ProcessDissector\ProcessDissector.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="ProcessDissector.suo" Description="File successfully backed up as E:\Code\ProcessDissector\ProcessDissector.suo.old">
+</Event><Event ErrorLevel="0" Project="ProcessDissector" Source="ProcessDissector\ProcessDissector.vcproj" Description="Converting project file 'E:\Code\ProcessDissector\ProcessDissector\ProcessDissector.vcproj'.">
+</Event><Event ErrorLevel="1" Project="ProcessDissector" Source="ProcessDissector\ProcessDissector.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="ProcessDissector" Source="ProcessDissector\ProcessDissector.vcproj" Description="Done converting to new project file 'E:\Code\ProcessDissector\ProcessDissector\ProcessDissector.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="ProcessDissector" Source="ProcessDissector\ProcessDissector.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ProcessDissector.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ProcessDissector.sln" Description="Converted">
+</Event></UpgradeLog>

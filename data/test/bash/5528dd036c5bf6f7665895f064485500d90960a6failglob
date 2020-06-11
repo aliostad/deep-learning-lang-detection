@@ -1,0 +1,45 @@
+#!/usr/bin/env sh
+
+include shopts
+
+if shopts_test failglob; then
+	SHOPTS_FAILGLOB_SAVE=()
+	SHOPTS_FAILGLOB_SAVE_COUNT=0
+
+
+	shopts_register failglob
+
+
+	function shopts_failglob_on {
+		shopt -s failglob
+	}
+
+
+	function shopts_failglob_off {
+		shopt -u failglob
+	}
+
+
+	function shopts_failglob_save {
+		SHOPTS_FAILGLOB_SAVE[SHOPTS_FAILGLOB_SAVE_COUNT++]=$(shopt -p failglob)
+	}
+
+
+	function shopts_failglob_restore {
+		if [[ SHOPTS_FAILGLOB_SAVE_COUNT -gt 0 ]]; then
+			eval "${SHOPTS_FAILGLOB_SAVE[--SHOPTS_FAILGLOB_SAVE_COUNT]}"
+			unset SHOPTS_FAILGLOB_SAVE\[SHOPTS_FAILGLOB_SAVE_COUNT\]
+		fi
+	}
+
+
+	function shopts_failglob_available {
+		true
+	}
+else
+	function shopts_failglob_on { false; }
+	function shopts_failglob_off { false; }
+	function shopts_failglob_save { false; }
+	function shopts_failglob_restore { false; }
+	function shopts_failglob_available { false; }
+fi

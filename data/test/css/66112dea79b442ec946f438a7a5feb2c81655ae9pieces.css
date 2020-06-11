@@ -1,0 +1,32 @@
+.btn-load-more-pieces {
+  width: 200px;
+  margin: 50px auto 0 auto;
+  padding: 10px 0;
+  display: block;
+  color: #999;
+  outline: none;
+}
+.btn-load-more-pieces:hover {
+  background-color: #eee;
+  color: #666;
+  outline: none;
+}
+.btn-load-more-pieces:focus,
+.btn-load-more-pieces:active,
+.btn-load-more-pieces:focus:active {
+  background-color: white;
+  color: #666;
+  outline: none;
+}
+.btn-load-more-pieces .for-not-loading {
+  display: inline-block;
+}
+.btn-load-more-pieces .for-loading {
+  display: none;
+}
+.btn-load-more-pieces.loading .for-not-loading {
+  display: none;
+}
+.btn-load-more-pieces.loading .for-loading {
+  display: inline-block;
+}

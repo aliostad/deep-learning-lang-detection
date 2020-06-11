@@ -1,0 +1,31 @@
+#!/bin/bash
+set -e
+
+export SYMFONY__MYSQL__HOST=$OPENSHIFT_MYSQL_DB_HOST
+export SYMFONY__MYSQL__PORT=$OPENSHIFT_MYSQL_DB_PORT
+export SYMFONY__MYSQL__NAME=$OPENSHIFT_APP_NAME
+export SYMFONY__MYSQL__USERNAME=$OPENSHIFT_MYSQL_DB_USERNAME
+export SYMFONY__MYSQL__PASSWORD=$OPENSHIFT_MYSQL_DB_PASSWORD
+
+# Create cache dir if needed
+if [ ! -d $OPENSHIFT_REPO_DIR/app/cache ]; then
+    mkdir $OPENSHIFT_REPO_DIR/app/cache
+fi
+chmod -v 777 $OPENSHIFT_REPO_DIR/app/cache
+
+# Create logs dir if needed
+if [ ! -d $OPENSHIFT_REPO_DIR/app/logs ]; then
+    mkdir $OPENSHIFT_REPO_DIR/app/logs
+fi
+chmod -v 777 $OPENSHIFT_REPO_DIR/app/logs
+
+cd $OPENSHIFT_REPO_DIR
+if [ ! -d $OPENSHIFT_REPO_DIR/composer.phar ]; then
+     curl -sS https://getcomposer.org/installer | php -- --install-dir=$OPENSHIFT_REPO_DIR
+else
+    $OPENSHIFT_REPO_DIR/composer.phar self-update
+fi
+
+if [ ! -d $OPENSHIFT_REPO_DIR/vendors ]; then
+     $OPENSHIFT_REPO_DIR/composer.phar install --no-interaction
+fi

@@ -1,0 +1,24 @@
+<drum-slave>
+  <gain-mapping sample-mapping-group-name="Acoustic" pad-name="Crash 1" gain="0.75"/>
+  <gain-mapping sample-mapping-group-name="Acoustic" pad-name="Crash 2" gain="0.6"/>
+  <gain-mapping sample-mapping-group-name="Acoustic" pad-name="Tom 2" gain="0.6"/>
+  <gain-mapping sample-mapping-group-name="Acoustic" pad-name="Hi-Hat" gain="0.65"/>
+  <gain-mapping sample-mapping-group-name="Acoustic" pad-name="Tom 3" gain="0.5"/>
+  <gain-mapping sample-mapping-group-name="Acoustic" pad-name="Tom 4" gain="0.5"/>
+  <gain-mapping sample-mapping-group-name="Acoustic" pad-name="Ride" gain="0.45"/>
+  <gain-mapping sample-mapping-group-name="Acoustic" pad-name="Tom 1" gain="0.75"/>
+  <gain-mapping sample-mapping-group-name="Acoustic" pad-name="Bass" gain="1.1"/>
+  <gain-mapping sample-mapping-group-name="Acoustic" pad-name="Splash 1" gain="0.7"/>
+  <gain-mapping sample-mapping-group-name="Acoustic" pad-name="Snare" gain="0.4"/>
+  <gain-mapping sample-mapping-group-name="Electronic" pad-name="Crash 1" gain="1.0"/>
+  <gain-mapping sample-mapping-group-name="Electronic" pad-name="Crash 2" gain="1.0"/>
+  <gain-mapping sample-mapping-group-name="Electronic" pad-name="Tom 2" gain="1.0"/>
+  <gain-mapping sample-mapping-group-name="Electronic" pad-name="Hi-Hat" gain="1.0"/>
+  <gain-mapping sample-mapping-group-name="Electronic" pad-name="Tom 3" gain="1.0"/>
+  <gain-mapping sample-mapping-group-name="Electronic" pad-name="Tom 4" gain="1.0"/>
+  <gain-mapping sample-mapping-group-name="Electronic" pad-name="Ride" gain="1.0"/>
+  <gain-mapping sample-mapping-group-name="Electronic" pad-name="Tom 1" gain="1.0"/>
+  <gain-mapping sample-mapping-group-name="Electronic" pad-name="Bass" gain="1.0"/>
+  <gain-mapping sample-mapping-group-name="Electronic" pad-name="Splash 1" gain="1.0"/>
+  <gain-mapping sample-mapping-group-name="Electronic" pad-name="Snare" gain="1.0"/>
+</drum-slave>

@@ -1,0 +1,70 @@
+<apiPackage id="com.supermap.web.utils"><apiName>com.supermap.web.utils</apiName><apiDetail/><apiClassifier id="com.supermap.web.utils:JsonUtil"><apiName>JsonUtil</apiName><shortdesc>
+	 JSON 对象辅助类.</shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 JSON 对象辅助类.
+	 <p>该类用于实现客户端对象与 JSON 对象之间的相互转换。JSON 对象用于实现客户端与服务端之间的参数传递。</p> 
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="com.supermap.web.utils:JsonUtil:JsonUtil"><apiName>JsonUtil</apiName><shortdesc>
+		 初始化 JsonUtil 类的新实例。 
+		 
+		 </shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
+		 初始化 JsonUtil 类的新实例。 
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="com.supermap.web.utils:JsonUtil:fromArray"><apiName>fromArray</apiName><shortdesc>
+		 将 Array 对象转换为 JSON 对象。 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiStatic/><apiReturn><apiDesc>返回 JSON 对象。
+		 
+		 </apiDesc><apiType value="String"/></apiReturn><apiParam><apiItemName>array</apiItemName><apiType value="Array"/><apiDesc>被转换的 Array 对象。
+		 </apiDesc></apiParam><apiParam><apiItemName>key</apiItemName><apiType value="String"/><apiData>null</apiData><apiDesc>与 Array 关联的 key 值。
+		 </apiDesc></apiParam><apiParam><apiItemName>other</apiItemName><apiType value="String"/><apiData>null</apiData><apiDesc>其它相关信息。
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 将 Array 对象转换为 JSON 对象。 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="com.supermap.web.utils:JsonUtil:fromPoint2Ds"><apiName>fromPoint2Ds</apiName><shortdesc>
+		 将 Point2D 对象集合转换为 JSON 对象。 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiStatic/><apiReturn><apiDesc>返回 JSON 对象。
+		 
+		 </apiDesc><apiType value="String"/></apiReturn><apiParam><apiItemName>points</apiItemName><apiType value="Array"/><apiDesc>被转换的 Point2D 对象集合。
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 将 Point2D 对象集合转换为 JSON 对象。 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="com.supermap.web.utils:JsonUtil:fromPoint2D"><apiName>fromPoint2D</apiName><shortdesc>
+		 将 Point2D 对象转换为 JSON 对象。 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiStatic/><apiReturn><apiDesc>返回 JSON 对象。
+		 
+		 </apiDesc><apiType value="String"/></apiReturn><apiParam><apiItemName>point</apiItemName><apiOperationClassifier>com.supermap.web.core:Point2D</apiOperationClassifier><apiDesc>被转换的 Point2D 对象。
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 将 Point2D 对象转换为 JSON 对象。 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="com.supermap.web.utils:JsonUtil:fromRectangle2D"><apiName>fromRectangle2D</apiName><shortdesc>
+		 将 Rectangle2D 对象转换为 JSON 对象。 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiStatic/><apiReturn><apiDesc>返回 JSON 对象。
+		 
+		 </apiDesc><apiType value="String"/></apiReturn><apiParam><apiItemName>rectangle2D</apiItemName><apiOperationClassifier>com.supermap.web.core:Rectangle2D</apiOperationClassifier><apiDesc>被转换的 Rectangle2D 对象。
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 将 Rectangle2D 对象转换为 JSON 对象。 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="com.supermap.web.utils:JsonUtil:toCRS"><apiName>toCRS</apiName><shortdesc>
+		 将 JSON 对象转换为 CoordinateReferenceSystem 对象。 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiStatic/><apiReturn><apiDesc>返回 CoordinateReferenceSystem 对象。
+		 
+		 </apiDesc><apiOperationClassifier>com.supermap.web.core:CoordinateReferenceSystem</apiOperationClassifier></apiReturn><apiParam><apiItemName>jsonObject</apiItemName><apiType value="Object"/><apiDesc>被转换的 JSON 对象。
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 将 JSON 对象转换为 CoordinateReferenceSystem 对象。 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="com.supermap.web.utils:JsonUtil:toPoint2D"><apiName>toPoint2D</apiName><shortdesc>
+		 将 JSON 对象转换为 Point2D 对象。 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiStatic/><apiReturn><apiDesc>返回 Point2D 对象。
+		 
+		 </apiDesc><apiOperationClassifier>com.supermap.web.core:Point2D</apiOperationClassifier></apiReturn><apiParam><apiItemName>jsonObject</apiItemName><apiType value="Object"/><apiDesc>被转换的 JSON 对象。
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 将 JSON 对象转换为 Point2D 对象。 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="com.supermap.web.utils:JsonUtil:toRectangle2D"><apiName>toRectangle2D</apiName><shortdesc>
+		 将 JSON 对象转换为 Rectangle 对象。 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiStatic/><apiReturn><apiDesc>返回 Rectangle 对象。
+		 
+		 </apiDesc><apiOperationClassifier>com.supermap.web.core:Rectangle2D</apiOperationClassifier></apiReturn><apiParam><apiItemName>jsonObject</apiItemName><apiType value="Object"/><apiDesc>被转换的 JSON 对象。
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 将 JSON 对象转换为 Rectangle 对象。 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="com.supermap.web.utils:JsonUtil:toRectangle"><apiName>toRectangle</apiName><shortdesc>
+		 将 JSON 对象转换为 Rectangle 对象。 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiStatic/><apiReturn><apiDesc>返回 Rectangle 对象。
+		 
+		 </apiDesc><apiType value="flash.geom:Rectangle"/></apiReturn><apiParam><apiItemName>jsonObject</apiItemName><apiType value="Object"/><apiDesc>被转换的 JSON 对象。
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 将 JSON 对象转换为 Rectangle 对象。 
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier></apiPackage>

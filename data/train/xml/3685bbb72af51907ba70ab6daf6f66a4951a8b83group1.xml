@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Group>
+    <Folder>..\GeoConfig\ProcessDescriptions</Folder>
+    <Identifier>openDatasource</Identifier>
+    <Title>中文caption</Title>
+    <Abstract>描述信息</Abstract>
+    <ProcessDescription>OpenDatasource</ProcessDescription>
+    <ProcessDescription>ClipDataset</ProcessDescription>
+    <ProcessDescription>DisplayModelResult</ProcessDescription>
+    <ProcessDescription>ExtractModelParameter</ProcessDescription>
+    <ProcessDescription>RunModel</ProcessDescription>
+    <ProcessDescription>SettingModelParameter</ProcessDescription>
+    <ProcessDescription>ValidateModelFile</ProcessDescription>
+    <ProcessDescription>ValidateModelFileWithProcessList</ProcessDescription>
+    <ProcessDescription>ValidateProcessListFile</ProcessDescription>
+</Group>

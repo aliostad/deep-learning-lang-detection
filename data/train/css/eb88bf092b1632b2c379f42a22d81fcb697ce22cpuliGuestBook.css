@@ -1,0 +1,92 @@
+.puli-guest-book .admin-photo {
+    float:left;
+    margin-right: 5px;
+    width:20px; 
+    height: 20px;
+    display:block;
+}
+
+.puli-guest-book .guest-book-list {
+	border: 3px solid #D2CBBD;
+	max-height: 300px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	color: #5B5743;
+	font-size:90%;
+    
+	padding: 0;
+	margin: 0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.puli-guest-book .guest-book-list .guest-book-li {
+	background-image:none;
+	background-color: white !important;
+	margin: 0;
+	padding: 5px;
+	list-style:none;
+	clear:both;
+    text-indent: 0px !important;
+    color: #5B5743 !important;
+}
+
+.puli-guest-book .guest-book-list .guest-book-li .date {
+	background-image:none !important;
+	background-color: transparent !important;
+	padding: 0 !important;
+	list-style:none;
+    text-indent: 0px !important;
+    color: #5B5743 !important;
+    width: auto !important;
+    height: auto !important;
+    
+    
+	display: block;
+	float:right;
+	text-align: right;
+	color: #B4AF98;
+	font-size:70%;
+	margin: 0 !important;
+	margin-left: 10px !important;
+}
+
+.puli-guest-book .guest-book-list .guest-book-li.readmore {
+	text-align:center;
+	font-weight: bold;
+	border-top: 1px solid #5B5743;
+	background-color: white;
+	padding: 10px 0;
+}
+
+.puli-guest-book .guestbook-write {
+	text-align:center;
+	font-weight: bold;
+	padding: 10px 0;
+}
+
+.puli-guest-book .guestbook-write a.write {
+	color: #5B5743;
+	border: 1px solid #D2CBBD;
+	background-color:white;
+	padding: 5px;
+	margin: 5px;
+	text-decoration:none;
+	font-size:90%;
+	cursor:pointer;
+    
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.puli-guest-book .guestbook-write a.write:hover {
+    color: #5B5743;
+    border-color: #5B5743;
+}
+
+.puli-guest-book .guest-book-list .guest-book-li.guest-book-li-0 {
+	background-color: #F6F3E0 !important;
+}
+.puli-guest-book .guest-book-list .guest-book-li.guest-book-li-1 {
+	background-color: white !important;
+}

@@ -1,0 +1,35 @@
+.destacados-futbol {
+    margin-bottom: 20px;
+}
+
+.destacados-futbol .item-list {
+    clear: both;
+    padding-top: 60px;
+    margin-top: 20px;
+}
+
+.destacados-futbol  .view-content .item-list {
+    padding: 26px 0 0;
+}
+
+.destacados-futbol .pager-load-more li a {
+    padding: 15px 35px;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .destacados-futbol {
+        margin-bottom: 40px;
+    }
+
+    .destacados-futbol .pager-load-more li a {
+        padding: 18.5px 78px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .destacados-futbol {
+        margin-bottom: 55px;
+    }
+}

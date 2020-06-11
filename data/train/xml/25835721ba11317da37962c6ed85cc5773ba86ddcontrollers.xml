@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net" default-autowire="constructor">
+
+  <!-- StandardCodeRepository-->
+  <object type="Com.Ktbl.FontHP.Web.Controllers.CommonController, Com.Ktbl.FontHP.Web" singleton="false" >
+    <property name="StandardCodeRepository"  ref="standardCodeRepository" />
+    <property name="OccupationRepository"  ref="occupationRepository" />
+    <property name="PositionRepository"  ref="positionRepository" />
+    <property name="CareerRepository"  ref="careerRepository" />
+   
+
+  </object>
+  <object type="Com.Ktbl.FontHP.Web.Controllers.MarketingController, Com.Ktbl.FontHP.Web" singleton="false" >
+    <property name="MainRequestRepository"  ref="mainRequestRepository" />
+    <property name="OccupationRepository"  ref="occupationRepository" />
+    <property name="LeadHeaderRepository"  ref="leadHeaderRepository" />
+    <property name="LeadMarketingRepository"  ref="leadMarketingRepository" />
+     <property name="ThirdPartyMarketingRepository"  ref="thirdPartyMarketingRepository" />
+    
+  </object>
+  
+</objects>

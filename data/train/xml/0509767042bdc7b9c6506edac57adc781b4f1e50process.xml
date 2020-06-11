@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+	default-autowire="byName" default-lazy-init="true">
+
+	<bean id="processFactory" class="net.sourceforge.atunes.kernel.modules.process.ProcessFactory"/>
+
+	<bean id="abstractProcess" class="net.sourceforge.atunes.kernel.modules.process.AbstractProcess" abstract="true"/>
+	<bean id="abstractChangeTagProcess" class="net.sourceforge.atunes.kernel.modules.process.AbstractChangeTagProcess" abstract="true" parent="abstractProcess"/>
+	<bean id="abstractLocalAudioObjectTransferProcess" class="net.sourceforge.atunes.kernel.modules.process.AbstractLocalAudioObjectTransferProcess" abstract="true" parent="abstractProcess"/>
+	
+	<bean id="clearTagsProcess" class="net.sourceforge.atunes.kernel.modules.process.ClearTagsProcess" parent="abstractChangeTagProcess" scope="prototype"/>
+	<bean id="editTagFromFileNamePatternProcess" class="net.sourceforge.atunes.kernel.modules.process.EditTagFromFileNamePatternProcess" parent="abstractChangeTagProcess" scope="prototype"/>
+	<bean id="editTagFromFolderNamePatternProcess" class="net.sourceforge.atunes.kernel.modules.process.EditTagFromFolderNamePatternProcess" parent="abstractChangeTagProcess" scope="prototype"/>
+	<bean id="editTagsProcess" class="net.sourceforge.atunes.kernel.modules.process.EditTagsProcess" parent="abstractChangeTagProcess" scope="prototype"/>
+	<bean id="editTitlesProcess" class="net.sourceforge.atunes.kernel.modules.process.EditTitlesProcess" parent="abstractChangeTagProcess" scope="prototype"/>
+	<bean id="exportFilesProcess" class="net.sourceforge.atunes.kernel.modules.process.ExportFilesProcess" parent="abstractLocalAudioObjectTransferProcess" scope="prototype"/>
+	<bean id="getCoversProcess" class="net.sourceforge.atunes.kernel.modules.process.GetCoversProcess" parent="abstractProcess" scope="prototype"/>
+	<bean id="importFilesProcess" class="net.sourceforge.atunes.kernel.modules.process.ImportFilesProcess" parent="abstractLocalAudioObjectTransferProcess" scope="prototype"/>
+	<bean id="loadPlayListProcess" class="net.sourceforge.atunes.kernel.modules.process.LoadPlayListProcess" parent="abstractProcess" scope="prototype"/>
+	<bean id="setAlbumNamesProcess" class="net.sourceforge.atunes.kernel.modules.process.SetAlbumNamesProcess" parent="abstractChangeTagProcess" scope="prototype"/>
+	<bean id="setCoversProcess" class="net.sourceforge.atunes.kernel.modules.process.SetCoversProcess" parent="abstractChangeTagProcess" scope="prototype"/>
+	<bean id="setGenresProcess" class="net.sourceforge.atunes.kernel.modules.process.SetGenresProcess" parent="abstractChangeTagProcess" scope="prototype"/>
+	<bean id="setLyricsProcess" class="net.sourceforge.atunes.kernel.modules.process.SetLyricsProcess" parent="abstractChangeTagProcess" scope="prototype"/>
+	<bean id="setTrackNumberProcess" class="net.sourceforge.atunes.kernel.modules.process.SetTrackNumberProcess" parent="abstractChangeTagProcess" scope="prototype"/>
+	<bean id="transferToDeviceProcess" class="net.sourceforge.atunes.kernel.modules.process.TransferToDeviceProcess" parent="abstractLocalAudioObjectTransferProcess" scope="prototype"/>
+	<bean id="transferToRepositoryProcess" class="net.sourceforge.atunes.kernel.modules.process.TransferToRepositoryProcess" parent="abstractLocalAudioObjectTransferProcess" scope="prototype"/>
+
+	<bean id="setStarsProcess" class="net.sourceforge.atunes.kernel.modules.process.SetStarsProcess" parent="abstractChangeTagProcess" scope="prototype"/>
+
+	<bean id="removeCommonPrefixProcess" class="net.sourceforge.atunes.kernel.modules.process.RemoveCommonPrefixProcess" parent="abstractChangeTagProcess" scope="prototype"/>
+	<bean id="removeCommonSuffixProcess" class="net.sourceforge.atunes.kernel.modules.process.RemoveCommonSuffixProcess" parent="abstractChangeTagProcess" scope="prototype"/>
+
+	
+	<bean id="audioObjectExporter" class="net.sourceforge.atunes.kernel.modules.process.AudioObjectExporter"/>
+
+</beans>

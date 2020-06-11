@@ -1,0 +1,51 @@
+.gc-nav-top {
+  background: #121827;
+}
+.gc-nav-top > .container {
+  position: relative;
+}
+.gc-nav-top .navbar-brand {
+  padding: 3px 15px;
+}
+.gc-nav-top .navbar-brand img {
+  max-height: 46px;
+}
+.gc-nav-top .icon-bar {
+  background: #fff;
+}
+@media (min-width: 768px) {
+  .gc-nav-top {
+    position: absolute;
+    background: transparent;
+  }
+  .gc-nav-top .navbar-brand {
+    padding: 15px 15px 0 15px;
+    height: auto;
+  }
+  .gc-nav-top .navbar-brand img {
+    max-height: 88px;
+  }
+  .gc-nav-top .navbar-header {
+    min-height: 110px;
+  }
+  .gc-nav-top .navbar-nav.navbar-right {
+    margin-top: 35px;
+  }
+  .gc-nav-top .navbar-nav > li:hover {
+    background: none;
+  }
+  .gc-nav-top .navbar-nav > li > a {
+    color: #2f90e3;
+    font-size: 14px;
+    padding: 15px 12px;
+  }
+  .gc-nav-top .navbar-nav > li > a:hover,
+  .gc-nav-top .navbar-nav > li.active > a,
+  .gc-nav-top .navbar-nav > li > a:active {
+    background: none;
+    color: #fff;
+  }
+  .gc-nav-top .navbar-nav > li > a > .glyphicon {
+    font-size: 12px;
+  }
+}

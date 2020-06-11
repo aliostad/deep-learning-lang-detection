@@ -1,0 +1,34 @@
+/* service */
+.service {
+  background-color: #F5F5F5; }
+  .service .service-item {
+    position: relative;
+    margin: 1rem 0; }
+    .service .service-item .service-hover {
+      width: 100%; }
+    .service .service-item:hover .service-des {
+      display: block; }
+    .service .service-item .service-des {
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      text-align: left;
+      color: #FFF;
+      z-index: 1; }
+      .service .service-item .service-des img {
+        width: 118%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -mo-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%); }
+      .service .service-item .service-des .service-title .service-icon {
+        width: 30%; }
+
+/*# sourceMappingURL=service.css.map */

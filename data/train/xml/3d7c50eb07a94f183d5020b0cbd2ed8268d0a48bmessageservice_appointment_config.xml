@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 预约服务 -->
+<message-services>
+	<!-- 查询服务类型服务 -->
+	<service>
+		<key>Appointment_QueryServiceTypeService</key>
+		<class>org.lookingpig.DurkAuto.PC.message.service.appointment.QueryServiceTypeService</class>
+	</service>
+	
+	<!-- 查询可用预约类型服务 -->
+	<service>
+		<key>Appointment_QueryAppointTypeService</key>
+		<class>org.lookingpig.DurkAuto.PC.message.service.DefaultQueryService</class>
+	</service>
+	
+	<!-- 新增服务类型服务 -->
+	<service>
+		<key>Appointment_AddServiceTypeService</key>
+		<class>org.lookingpig.DurkAuto.PC.message.service.appointment.AddServiceTypeService</class>
+	</service>
+	
+	<!-- 删除服务类型服务 -->
+	<service>
+		<key>Appointment_DelServiceTypeService</key>
+		<class>org.lookingpig.DurkAuto.PC.message.service.appointment.DelServiceTypeService</class>
+	</service>
+	
+	<!-- 查询预约服务 -->
+	<service>
+		<key>Appointment_QueryAppointService</key>
+		<class>org.lookingpig.DurkAuto.PC.message.service.appointment.QueryAppointService</class>
+	</service>
+	
+	<!-- 添加预约服务 -->
+	<service>
+		<key>Appointment_AddAppointService</key>
+		<class>org.lookingpig.DurkAuto.PC.message.service.appointment.AddAppointService</class>
+	</service>
+</message-services>

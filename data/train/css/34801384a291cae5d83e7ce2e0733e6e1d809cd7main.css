@@ -1,0 +1,25 @@
+ul
+{
+  list-style-type: none;
+}
+
+
+.load-message {
+    text-align: center;
+    margin: 20% auto 0 auto;
+    font-size: 400%;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    -webkit-text-shadow: 2px 2px #000000;
+    text-shadow: 2px 2px #000000;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.15);
+    text-decoration: bold;
+    font-variant:small-caps;
+    color: #777	;
+    padding: 0;
+}
+
+.load-message.page-splash-message-subtle {
+    margin: 30% auto 0 auto;
+    font-size: 150%;
+}

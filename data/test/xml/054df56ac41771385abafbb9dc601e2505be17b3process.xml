@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+    <bean id="processContext" class="is.ruframework.process.RuProcessContext">
+        <property name="processName">
+            <value>TripImportProcess</value>
+        </property>
+        <property name="importURL">
+            <value>http://olafurandri.com/honn/history2.json</value>
+        </property>
+        <property name="processClass">
+            <value>is.ru.honn.ruber.process.TripImportProcess</value>
+        </property>
+
+    </bean>
+</beans>

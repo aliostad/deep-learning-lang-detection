@@ -1,0 +1,107 @@
+
+/*
+INTERP
+Jeff Thompson | 2013-14 | www.jeffreythompson.org
+
+INTERP is a 2013 commission of New Radio and Performing Arts, Inc, for
+its Turbulence.org website. It was made possible with funding from the
+National Endowment for the Arts.
+*/
+
+/* MODEL PAGE */
+/* override base styles */
+html, body, #wrapper {
+	background-color: rgb(34,34,34);
+	color: white;
+	margin: 0;					/* required for fullscreen model */
+	padding: 0;
+}
+
+/* nav links at top */
+#nav {
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	width: 300px;
+	margin-left: -150px;
+}
+#navLink, #navLink:link, #navLink:visited {
+	color: rgb(200,200,200);
+}
+.navArrow, .navArrow:link, .navArrow:visited {
+	color: rgb(160,160,160);
+}
+#navLink:active, #navLink:hover, .navArrow:active, .navArrow:hover {
+	/*color: rgb(255,150,0);*/
+	color: rgb(200,100,0);
+}
+
+/* model */
+#model { 
+
+}
+
+/* loading animation */
+#loadingAnimation {
+	position: absolute;
+	width: 300px;
+	height: 240px;
+	top: 50%;
+	left: 50%;
+	margin-top: -120px;
+	margin-left: -150px;
+}
+#loadingAnimation i {
+	margin-bottom: 20px;
+}
+
+/* model stats */
+#stats {
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+	width: 90%;
+}
+#stats ul {
+	text-align: left;
+	margin-top: 15px;
+}
+#stats li {
+	display: inline;
+	padding-right: 20px;
+}
+#stats a, #stats a:link, #stats a:visited {
+	color: white;
+	font-weight: 400;
+}
+#stats a:active, #stats a:hover {
+	/*color: rgb(255,150,0);*/
+	color: rgb(200,100,0);
+}
+#modelName {
+	font-size: 3em;		/* 48/16 */
+	font-weight: 100;
+}
+.key {
+	color: rgb(230,230,230);
+	margin-right: 8px;
+}
+
+/* no break between download logo and text */
+span#download {
+	white-space: nowrap;
+}
+
+/* vertical list for smaller screens */
+@media screen and (max-width: 500px) {
+	#stats {
+		margin-top: 30px;
+		text-align: center;
+	}
+	#stats li {
+		display: block;
+	}
+	#downloadLink {
+		padding-top: 20px;
+	}
+}

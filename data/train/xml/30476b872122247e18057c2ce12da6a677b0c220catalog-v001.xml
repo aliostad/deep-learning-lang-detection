@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1383806223978" name="duplicate:http://www.semanticweb.org/uqwwan10/ontologies/2013/9/untitled-ontology-10" uri="annotationTest.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1383806223978" name="duplicate:http://www.semanticweb.org/uqwwan10/ontologies/2013/9/untitled-ontology-10" uri="COMON_relTest.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1383806223978" name="duplicate:http://www.semanticweb.org/uqwwan10/ontologies/2013/9/untitled-ontology-10" uri="COMON_v4_full_rel.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1383806223978" name="duplicate:http://www.semanticweb.org/uqwwan10/ontologies/2013/9/untitled-ontology-10" uri="COMON_v5_annotation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1383806223978" name="duplicate:http://www.semanticweb.org/uqwwan10/ontologies/2013/9/untitled-ontology-10" uri="COMON_v6_full_annotation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1383806223978" name="duplicate:http://www.semanticweb.org/uqwwan10/ontologies/2013/9/untitled-ontology-10" uri="COMON_v7.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1383806223978" name="duplicate:http://www.semanticweb.org/uqwwan10/ontologies/2013/9/untitled-ontology-10" uri="COMON_v8_HenryNewRel.owl"/>
+    </group>
+</catalog>

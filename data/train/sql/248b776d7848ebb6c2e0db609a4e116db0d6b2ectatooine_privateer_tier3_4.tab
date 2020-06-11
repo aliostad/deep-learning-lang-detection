@@ -1,0 +1,5 @@
+questZone	navPoints	laps	specialTarget	triggerEvent	triggerSplitCondition	triggerArg	triggerArg2	triggerOn	triggerEndsMission	triggerDelay	autoReward	questDelay	_DESIGNER NOTES_	questSeries
+s	s	i[1]	s	"e(none=0,splitquest=1,surpriseattack=2)[none]"	"e(triggerOn=0,success=1,failure=2,both=3)[triggerOn]"	s	s	i	i	i	i	i	s	s
+space_dathomir	space_dathomir:tier3_privateer_patrol_01	1		splitquest	triggerOn	space_battle:tatooine_privateer_tier3_4_a		2	1	8	0	0	Patrol looking for Rancor Clan members... interrupted with space battle	pilot_profession
+	space_dathomir:tier3_privateer_patrol_02													
+	space_dathomir:tier3_privateer_patrol_03													

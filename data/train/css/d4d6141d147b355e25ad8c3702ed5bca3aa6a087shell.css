@@ -1,0 +1,142 @@
+#SHELL {
+	background-color: #0B614B;
+	height: 50px;
+	padding: 0 20px;
+}
+
+#SHELL div.nav {
+	height: 50px;
+}
+
+#SHELL div.nav div.menuitem {
+	float: left;
+	font-size: 18px;
+	padding: 16px;
+	cursor: pointer;
+	margin: 0 1px;
+	color: #FBFBEF;
+}
+
+#SHELL div.nav div.serviceItem {
+	float: left;
+	font-size: 16px;
+	padding: 12px 16px;
+	cursor: pointer;
+	margin: 0 1px;
+	color: #FBFBEF;
+}
+
+#SHELL div.nav div.serviceItem img{
+	max-width: 30px;
+	height: 25px;
+	margin: 0 5px 0 -10px;
+}
+
+/*#SHELL div.nav div.menuitem:hover {
+	background-color: #088A85;
+}*/
+
+#SHELL div.nav div.serviceItem:hover {
+	background-color: #088A85;
+}
+
+#SHELL div.nav div.active {
+	background-color: #088A85;
+}
+
+#SHELL div.nav div.small {
+	background-color: #339966;
+}
+
+#SHELL p#title{
+	float: left;
+	color: #FBFBEF;
+	font-size: 24px;
+	margin: 12px 75px 0px 10px;
+}
+
+
+#SHELL #serviceDiv {
+	padding: 15px;
+}
+
+#SHELL #serviceDiv div.service {
+	width: 49%;
+	margin: 5px;
+	float: left;
+	border: 2px solid #bbb;
+	background-color: #fefefe;
+}
+
+#SHELL #serviceDiv div.scrollableTable {
+	height: 300px;
+	overflow: auto;
+}
+
+#SHELL #serviceDiv table {
+	min-width: 100%;
+}
+
+#SHELL #serviceDiv table tr {
+	cursor: default;
+}
+
+#SHELL #serviceDiv table thead {
+	
+}
+
+#SHELL #serviceDiv table thead tr {
+	background-color: #8cc540;
+	color: floralwhite;
+	border-top: 1px solid #0B614B;
+}
+
+#SHELL #serviceDiv table thead th {
+	padding: 5px 3px;
+}
+
+#SHELL #serviceDiv table tbody {
+	
+}
+
+#SHELL #serviceDiv table tbody tr {
+	background-color: #fefefe;
+	border-top: 1px solid #0B614B;
+	color: #0B614B;
+}
+#SHELL #serviceDiv table tbody tr.active {
+	background-color: #ffc;
+}
+
+#SHELL #serviceDiv table tbody tr:hover {
+	background-color: #ffc;
+}
+
+#SHELL #serviceDiv table tbody td {
+	padding: 5px 3px;
+	max-width: 150px;
+	overflow-wrap: break-word;
+}
+
+#SHELL #serviceDiv table tbody td span {
+	
+}
+
+#SHELL #serviceDiv table tbody td span.glyphicon {
+	font-size: 14px;
+	color: #0B614B;
+}
+
+#SHELL #serviceDiv table tbody td span.action {
+	cursor: pointer;
+	margin: 3px;
+}
+
+#SHELL #serviceDiv table tbody td img.typeIcon {
+	width: 10px;
+	height: 10px;
+}
+
+#SHELL #serviceDiv table tbody td p {
+	margin: 0;
+}

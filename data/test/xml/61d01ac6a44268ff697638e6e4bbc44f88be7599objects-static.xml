@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects-static>
+	<networks>
+		<network>
+			<id>world</id>
+			<value>0.0.0.0/0</value>
+		</network>
+	</networks>
+	<times>
+		<time>
+			<id>work-time</id>
+			<description>Work Time</description>
+			<timestart>09:00</timestart>
+			<timestop>18:00</timestop>
+			<days>Mon,Tue,Wed,Thu,Fri</days>
+		</time>
+	</times>
+	<services>
+		<service><id>aim</id><layer7>aim</layer7></service>
+		<service><id>citrix</id><layer7>citrix</layer7></service>
+		<service><id>dhcp</id><layer7>dhcp</layer7></service>
+		<service><id>dns</id><layer7>dns</layer7></service>
+		<service><id>ftp</id><layer7>ftp</layer7></service>
+		<service><id>h323</id><layer7>h323</layer7></service>
+		<service><id>http</id><layer7>http</layer7></service>
+		<service><id>imap</id><layer7>imap</layer7></service>
+		<service><id>irc</id><layer7>irc</layer7></service>
+		<service><id>msn-filetransfer</id><layer7>msn-filetransfer</layer7></service>
+		<service><id>msnmessenger</id><layer7>msnmessenger</layer7></service>
+		<service><id>netbios</id><layer7>netbios</layer7></service>
+		<service><id>nntp</id><layer7>nntp</layer7></service>
+		<service><id>p2p-bittorrent</id><layer7>bittorrent</layer7></service>
+		<service><id>p2p-edonkey</id><layer7>edonkey</layer7></service>
+		<service><id>p2p-gnutella</id><layer7>gnutella</layer7></service>
+		<service><id>p2p-kazaa</id><layer7>fasttrack</layer7></service>
+		<service><id>p2p-soulseek</id><layer7>soulseek</layer7></service>
+		<service><id>pop3</id><layer7>pop3</layer7></service>
+		<service><id>rdp</id><layer7>rdp</layer7></service>
+		<service><id>sip</id><layer7>sip</layer7></service>
+		<service><id>skypeout</id><layer7>skypeout</layer7></service>
+		<service><id>smb</id><layer7>smb</layer7></service>
+		<service><id>smtp</id><layer7>smtp</layer7></service>
+		<service><id>snmp</id><layer7>snmp</layer7></service>
+		<service><id>ssh</id><layer7>ssh</layer7></service>
+		<service><id>telnet</id><layer7>telnet</layer7></service>
+		<service><id>vnc</id><layer7>vnc</layer7></service>
+		<servicegroup>
+			<id>p2p</id>
+			<value>p2p-bittorrent;p2p-edonkey;p2p-kazaa;p2p-gnutella;p2p-soulseek</value>
+		</servicegroup>
+	</services>
+</objects-static>

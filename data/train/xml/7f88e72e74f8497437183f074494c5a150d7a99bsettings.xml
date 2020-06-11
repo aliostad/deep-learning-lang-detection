@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+	<localRepository>${user.home}/.m2/clean-repository</localRepository>
+	<profiles>
+
+		<!-- Configure the JBoss EAP Maven repository -->
+		<!-- this is recommend additional repository which comes with JBoss EAP 
+			6 -->
+		<profile>
+			<id>jboss-public-repository</id>
+			<repositories>
+				<repository>
+					<id>jboss-public-repository-group</id>
+					<name>JBoss Public Maven Repository Group</name>
+					<url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+					<layout>default</layout>
+					<releases>
+						<enabled>true</enabled>
+						<updatePolicy>never</updatePolicy>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+						<updatePolicy>never</updatePolicy>
+					</snapshots>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>jboss-public-repository-group</id>
+					<name>JBoss Public Maven Repository Group</name>
+					<url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+					<layout>default</layout>
+					<releases>
+						<enabled>true</enabled>
+						<updatePolicy>never</updatePolicy>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+						<updatePolicy>never</updatePolicy>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+
+		<profile>
+			<id>jboss-eap-maven-online-repository</id>
+			<repositories>
+				<repository>
+					<id>jboss-eap</id>
+					<url>http://maven.repository.redhat.com/techpreview/all/</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>jboss-eap-maven-plugin-repository</id>
+					<url>http://maven.repository.redhat.com/techpreview/all/</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+
+		<profile>
+			<id>jboss-eap-maven-repository</id>
+			<repositories>
+				<repository>
+					<id>jboss-eap</id>
+					<url>file:///home/rhopp/repositories/jboss-eap-6.0.0-maven-repository</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>jboss-eap-maven-plugin-repository</id>
+					<url>file:///home/rhopp/repositories/jboss-eap-6.0.0.CR1-maven-repository</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+
+		<profile>
+			<id>jboss-wfk-repository</id>
+			<repositories>
+				<repository>
+					<id>jboss-wfk-repository</id>
+					<name>JBoss WFK Maven Repository</name>
+					<url>file:///home/rhopp/repositories/jboss-wfk-2.0.0-maven-repository</url>
+					<layout>default</layout>
+					<releases>
+						<enabled>true</enabled>
+						<updatePolicy>never</updatePolicy>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+						<updatePolicy>never</updatePolicy>
+					</snapshots>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>jboss-wfk-repository-group</id>
+					<name>JBoss WFK Maven Repository</name>
+					<url>file:///home/rhopp/repositories/jboss-wfk-2.0.0-maven-repository</url>
+					<layout>default</layout>
+					<releases>
+						<enabled>true</enabled>
+						<updatePolicy>never</updatePolicy>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+						<updatePolicy>never</updatePolicy>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+		
+		<profile>
+			<id>jboss-wfk-online-repository</id>
+			<repositories>
+				<repository>
+					<id>jboss-wfk-repository</id>
+					<name>JBoss WFK Maven Repository</name>
+					<url>http://maven.repository.redhat.com/techpreview/wfk2/2.0.0/maven-repository/</url>
+					<layout>default</layout>
+					<releases>
+						<enabled>true</enabled>
+						<updatePolicy>never</updatePolicy>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+						<updatePolicy>never</updatePolicy>
+					</snapshots>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>jboss-wfk-repository-group</id>
+					<name>JBoss WFK Maven Repository</name>
+					<url>http://maven.repository.redhat.com/techpreview/wfk2/2.0.0/maven-repository/</url>
+					<layout>default</layout>
+					<releases>
+						<enabled>true</enabled>
+						<updatePolicy>never</updatePolicy>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+						<updatePolicy>never</updatePolicy>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+
+	</profiles>
+
+	<activeProfiles>
+		<!-- Optionally, make the repository active by default -->
+		<!-- <activeProfile>jboss-public-repository</activeProfile> -->
+<!-- 		<activeProfile>jboss-eap-maven-repository</activeProfile> -->
+		<!--<activeProfile>jboss-wfk-repository</activeProfile>-->
+		<activeProfile>jboss-eap-maven-online-repository</activeProfile>
+		<activeProfile>jboss-wfk-online-repository</activeProfile>
+	</activeProfiles>
+
+</settings>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost/clinique3</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">1234</property>
+		<property name="hibernate.connection.pool_size">50</property>
+
+		<!-- <property name="hibernate.connection.datasource">java:comp/env/jdbc/Clinique</property> 
+			<property name="hibernate.transaction.Factory_class">org.hibernate.transaction.CMTTransactionFactory 
+			</property> -->
+		<property name="hibernate.connection.characterEncoding">UTF-8</property>
+
+		<property name="hibernate.cache.use_query_cache">false</property>
+		<property name="hibernate.validator.apply_to_ddl">false</property>
+		<property name="hibernate.connection.isolation">2</property>
+
+		<property name="show_sql">true</property>
+
+		<!-- dialecte SQL -->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="current_session_context_class">thread</property>
+
+		<mapping resource="clinique/mapping/acte.hbm.xml" />
+		<mapping resource="clinique/mapping/acteur.hbm.xml" />
+		<mapping resource="clinique/mapping/acteurActe.hbm.xml" />
+		<mapping resource="clinique/mapping/assureur.hbm.xml" />
+		<mapping resource="clinique/mapping/blackListe.hbm.xml" />
+		<mapping resource="clinique/mapping/categorie.hbm.xml" />
+		<mapping resource="clinique/mapping/chambre.hbm.xml" />
+		<mapping resource="clinique/mapping/classe.hbm.xml" />
+		<mapping resource="clinique/mapping/detailFacture.hbm.xml" />
+		<mapping resource="clinique/mapping/droitAcces.hbm.xml" />
+		<mapping resource="clinique/mapping/entreprise.hbm.xml" />
+		<mapping resource="clinique/mapping/facture.hbm.xml" />
+		<mapping resource="clinique/mapping/famillePrestation.hbm.xml" />
+		<mapping resource="clinique/mapping/hospitalisation.hbm.xml" />
+		<mapping resource="clinique/mapping/menu.hbm.xml" />
+		<mapping resource="clinique/mapping/module.hbm.xml" />
+		<mapping resource="clinique/mapping/patient.hbm.xml" />
+		<mapping resource="clinique/mapping/prestationCouvertesPc.hbm.xml" />
+		<mapping resource="clinique/mapping/priseEnCharge.hbm.xml" />
+		<mapping resource="clinique/mapping/profil.hbm.xml" />
+		<mapping resource="clinique/mapping/reglement.hbm.xml" />
+		<mapping resource="clinique/mapping/typePayement.hbm.xml" />
+		<mapping resource="clinique/mapping/user.hbm.xml" />
+		<mapping resource="clinique/mapping/produit.hbm.xml" />
+		<mapping resource="clinique/mapping/fournisseur.hbm.xml" />
+		<mapping resource="clinique/mapping/entreeStock.hbm.xml" />
+		<mapping resource="clinique/mapping/sortieStock.hbm.xml" />
+		<mapping resource="clinique/mapping/recu.hbm.xml" />
+		<mapping resource="clinique/mapping/personnel.hbm.xml" />
+		<mapping resource="clinique/mapping/pcPersonnel.hbm.xml" />
+		<mapping resource="clinique/mapping/chambresHospitalisation.hbm.xml" />
+		<mapping resource="clinique/mapping/badge.hbm.xml" />
+		<mapping resource="clinique/mapping/acteH.hbm.xml" />
+		<mapping resource="clinique/mapping/acteurActeH.hbm.xml" />
+		<mapping resource="clinique/mapping/categorieH.hbm.xml" />
+		<mapping resource="clinique/mapping/chambreH.hbm.xml" />
+		<mapping resource="clinique/mapping/acteAssureur.hbm.xml" />
+		<mapping resource="clinique/mapping/acteAssureurH.hbm.xml" />
+		<mapping resource="clinique/mapping/chambreAssureur.hbm.xml" />
+		<mapping resource="clinique/mapping/chambreAssureurH.hbm.xml" />
+		<mapping resource="clinique/mapping/drgCnam.hbm.xml" />
+		<mapping resource="clinique/mapping/drgCnamH.hbm.xml" />
+		<mapping resource="clinique/mapping/detailFactureModifiees.hbm.xml" />
+		<mapping resource="clinique/mapping/patientPcActuel.hbm.xml" />
+		<mapping resource="clinique/mapping/factureModifiees.hbm.xml" />
+		<mapping resource="clinique/mapping/reglementFactureModifiees.hbm.xml" />
+		<mapping resource="clinique/mapping/acteurActeAssureur.hbm.xml" />
+		<mapping resource="clinique/mapping/acteurActeAssureurH.hbm.xml" />
+		<mapping resource="clinique/mapping/prestationCouvertesPcModifiee.hbm.xml" />
+		<mapping resource="clinique/mapping/priseEnChargeModifiee.hbm.xml" />
+		<mapping resource="clinique/mapping/compte.hbm.xml" />
+		<mapping resource="clinique/mapping/devisActes.hbm.xml" />
+		<mapping resource="clinique/mapping/devisAssureur.hbm.xml" />
+		<mapping resource="clinique/mapping/exclusionActeAssureur.hbm.xml" />
+		<mapping resource="clinique/mapping/factureGlobalFacture.hbm.xml" />
+		<mapping resource="clinique/mapping/factureGlobal.hbm.xml" />
+		<mapping resource="clinique/mapping/transactionCompte.hbm.xml" />
+		<mapping resource="clinique/mapping/parametresClinique.hbm.xml" />
+		<mapping resource="clinique/mapping/compteCategorie.hbm.xml" />
+		<mapping resource="clinique/mapping/transactionCompteCategorie.hbm.xml" />
+		<mapping resource="clinique/mapping/detailDgrCnamFacture.hbm.xml" />
+		<mapping resource="clinique/mapping/detailFactureChirurgie.hbm.xml" />
+		<mapping resource="clinique/mapping/detailFactureServices.hbm.xml" />
+		
+		
+	</session-factory>
+</hibernate-configuration>

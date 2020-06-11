@@ -1,0 +1,18 @@
+    .contButGreen {position:relative;} 
+    .gb_left,.gb_right,.bb_left,.bb_right { display:none;} 
+		.big .bb_left ,.big .bb_right { display:none;} 
+	.vq_content_menu li{float:left;}
+	.vq_content_menu{height:40px;}
+.usr_choise_photos .brdpic2{float:left;}
+.usr_choise_photos .brdpic2 img{margin-top:4px;}
+	.clr2 { display:none;}
+	.header{height:100px;}
+	#write_answer,.pr4{float:left;}
+	#write_answer{width:130px; top:4px;}
+		.vq_content_menu {height: 30px}
+	
+	.wq_myanswer_left {width:183px;}
+	.bcon_right {float: left; margin-left: 10px; width: 600px;}
+	.brdpic2 IMG {margin-top: 4px}
+	.bcon_right .ieClass {padding-left: 250px;}
+	.bic_up_name_bot {bottom: -13px;}

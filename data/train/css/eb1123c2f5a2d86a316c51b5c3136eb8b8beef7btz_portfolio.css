@@ -1,0 +1,41 @@
+.tz_append{
+    width: 100%;
+}
+#tz_append{
+    position: relative;
+    border: 1px solid #CCCCCC;
+    text-align: center;
+}
+#infscr-loading{
+    position: relative;
+}
+#tz_append {
+    display: block;
+    color: #777777;
+    text-align: center;
+    cursor: pointer;
+    height: 50px;
+    line-height: 50px;
+}
+
+#tz_append a {
+    display: block;
+    background: none;
+    text-decoration: none;
+    color: #777777;
+}
+
+#tz_append a:hover {
+    background: #cccccc;
+    color: #ffffff;
+}
+.tzLoading{
+    background: #000;
+}
+.TzPortfolioExtraField{
+    color: #333;
+}
+.TzPortfolioExtraField li{
+    float: left;
+    margin-right: 5px !important;
+}

@@ -1,0 +1,45 @@
+#!/usr/bin/env sh
+
+include shopts
+
+if shopts_test nocasematch; then
+	SHOPTS_NOCASEMATCH_SAVE=()
+	SHOPTS_NOCASEMATCH_SAVE_COUNT=0
+
+
+	shopts_register nocasematch
+
+
+	function shopts_nocasematch_on {
+		shopt -s nocasematch
+	}
+
+
+	function shopts_nocasematch_off {
+		shopt -u nocasematch
+	}
+
+
+	function shopts_nocasematch_save {
+		SHOPTS_NOCASEMATCH_SAVE[SHOPTS_NOCASEMATCH_SAVE_COUNT++]=$(shopt -p nocasematch)
+	}
+
+
+	function shopts_nocasematch_restore {
+		if [[ SHOPTS_NOCASEMATCH_SAVE_COUNT -gt 0 ]]; then
+			eval "${SHOPTS_NOCASEMATCH_SAVE[--SHOPTS_NOCASEMATCH_SAVE_COUNT]}"
+			unset SHOPTS_NOCASEMATCH_SAVE\[SHOPTS_NOCASEMATCH_SAVE_COUNT\]
+		fi
+	}
+
+
+	function shopts_nocasematch_available {
+		true
+	}
+else
+	function shopts_nocasematch_on { false; }
+	function shopts_nocasematch_off { false; }
+	function shopts_nocasematch_save { false; }
+	function shopts_nocasematch_restore { false; }
+	function shopts_nocasematch_available { false; }
+fi

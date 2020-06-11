@@ -1,0 +1,27 @@
+<configuration>
+
+    <appender name="MAIN" class="ch.qos.logback.core.FileAppender">
+        <file>night-owl.log</file>
+        <append>false</append>
+        <encoder>
+            <pattern>%date %level %logger{10} %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="STAR_IMPORTER_APPENDER" class="ch.qos.logback.core.FileAppender">
+        <file>star-importer.log</file>
+        <append>false</append>
+        <encoder>
+            <pattern>%date %level %logger{10} %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="MAIN"/>
+    </root>
+
+    <logger name="STAR_IMPORTER" additivity="false" level="INFO">
+        <appender-ref ref="STAR_IMPORTER_APPENDER"/>
+    </logger>
+
+</configuration>

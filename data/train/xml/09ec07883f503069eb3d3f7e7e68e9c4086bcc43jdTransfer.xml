@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbook>
+    <worksheet idx="0">
+        <section startRow="0" endRow="0"/>
+        <loop startRow="1" endRow="1" items="logistics" var="logistic"
+              varType="models.order.LogisticImportData">
+            <section startRow="1" endRow="1">
+                <mapping row="1" col="0">logistic.outerOrderNo</mapping>
+                <mapping row="1" col="1">logistic.salePrice</mapping>
+                <mapping row="1" col="2">logistic.buyNumber</mapping>
+                <mapping row="1" col="3">logistic.paidAtStr</mapping>
+                <mapping row="1" col="4">logistic.remarks</mapping>
+                <mapping row="1" col="5">logistic.expressInfo</mapping>
+                <mapping row="1" col="6">logistic.receiver</mapping>
+                <mapping row="1" col="7">logistic.phone</mapping>
+                <mapping row="1" col="8">logistic.zipCode</mapping>
+                <mapping row="1" col="9">logistic.address</mapping>
+            </section>
+            <loopbreakcondition>
+                <rowcheck offset="0"/>
+            </loopbreakcondition>
+        </loop>
+    </worksheet>
+</workbook>

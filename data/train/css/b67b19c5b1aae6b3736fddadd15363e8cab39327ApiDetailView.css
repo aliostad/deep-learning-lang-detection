@@ -1,0 +1,41 @@
+.latte-view.api-detail{
+    font-size: 13px;
+
+}
+.latte-view.api-detail > .container{
+    padding: 30px 10px;
+}
+
+table.api-table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+table.api-table,
+table.api-table th,
+table.api-table td{
+    border: solid 1px #dbdbdb;
+    padding: 8px 10px;
+}
+
+table.api-table th{
+    background-color: #ededed;
+    color: #636363;
+}
+
+.latte-view .static-icon{
+    display: block;
+    float: left;
+    padding: 0px 4px;
+    margin: 3px;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.latte-view.api-detail .latte-item.label.title-2{
+    color: #555;
+    margin-top: 30px;
+}

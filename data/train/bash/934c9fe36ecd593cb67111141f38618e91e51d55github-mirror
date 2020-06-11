@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+set -e
+
+cd ~/github
+
+username="$1"
+repo="$2"
+
+if [ -z "$repo" ]
+then
+    echo "usage: $(basename $0) username repo [private]" 
+    echo
+    echo "   username and repo to clone from github"
+    echo
+    echo
+fi
+
+upstream_repo="git://github.com/$username/$repo.git"
+github_username="`git config --get github.username`"
+new_repo="git@github.com:$github_username/$repo.git"
+
+git clone "$upstream_repo"
+
+curl \
+    -F "access_token=`git config --get github.oauthtoken`" \
+    -F "name=$repo" \
+    -F "description=$repo - upstream $upstream" \
+    -F "private=$private" \
+    https://api.github.com/user/repos
+
+cd  "$repo"
+git remote rename origin upstream
+git add    remote origin
+git push --mirror "$new_repo"

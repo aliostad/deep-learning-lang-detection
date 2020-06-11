@@ -1,0 +1,84 @@
+/** 带图标信息提示
+@name: ui-message
+@author: wkylin(wkylin@sina.cn)
+@description: 信息提示, 错误提示、成功提示、警告提示、禁止提示、等待提示、疑问提示。
+@require: null
+@name ui-message
+@example
+成功提示
+<div class="ui-message ui-message-success"></div>
+
+禁止提示
+<div class="ui-message ui-message-forbidden"></div>
+
+信息提示
+<div class="ui-message ui-message-cue"></div>
+
+警告提示
+<div class="ui-message ui-message-warn"></div>
+
+错误提示
+<div class="ui-message ui-message-error"></div>
+
+疑问提示
+<div class="ui-message ui-message-doubt"></div>
+
+等待提示
+<div class="ui-message ui-message-wait"></div>
+
+*/
+
+.ui-message {
+    padding:0 0 0 20px;
+    background:url("../../../images/icons.png") no-repeat 0 0;
+    zoom:1;
+    line-height:23px;
+}
+
+.ui-message-success {
+    background-position: -485px -525px;
+    *background-position:-485px -521px;
+    _background-position:-485px -520px;
+}
+
+.ui-message-forbidden {
+    background-position: -457px -550px;
+    *background-position:-457px -546px;
+    _background-position:-457px -545px;
+}
+
+.ui-message-cue {
+    background-position: -430px -575px;
+    *background-position:-430px -571px;
+    _background-position:-430px -570px;
+}
+
+.ui-message-warn {
+    background-position: -399px -601px;
+    *background-position:-399px -597px;
+    _background-position:-399px -596px;
+}
+
+.ui-message-error {
+    background-position: -367px -630px;
+    *background-position:-367px -626px;
+    _background-position:-367px -625px;
+}
+
+.ui-message-doubt {
+    background-position: -337px -657px;
+    *background-position:-337px -653px;
+    _background-position:-337px -652px;
+}
+
+.ui-message-wait {
+    background-position: -304px -685px;
+    *background-position:-304px -681px;
+    _background-position:-304px -680px;
+}
+
+.ui-message-error, .ui-message-forbidden {
+    color:#f00;
+}
+
+

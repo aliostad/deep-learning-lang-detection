@@ -1,0 +1,138 @@
+body {
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+body > .container {
+    width: 95%;
+}
+nav .container {
+    width: 95%;
+}
+
+.navbar-inverse {
+  background-image: -webkit-linear-gradient(top, #3c3c3c 0%, #222 100%);
+  background-image:      -o-linear-gradient(top, #3c3c3c 0%, #222 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c), to(#222));
+  background-image:         linear-gradient(to bottom, #3c3c3c 0%, #222 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+}
+.navbar-header .navbar-brand {
+    color: #eee;
+}
+
+.jumbotron {
+    border: 1px solid #ccc;
+}
+
+.jumbotron, .container .jumbotron, .container-fluid .jumbotron {
+    padding: 20px;
+}
+.jumbotron .row {
+    text-align: center;
+}
+.api-console-form button.btn {
+    width: 100%;
+}
+
+.api-console-form > div:first-child {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.api-console-form > div:last-child {
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.api-console-form .resource-url, .api-console-form .api-domain {
+    /*text-align: center;*/
+    font-size: 0.9em;
+}
+.api-console-form .api-url,
+.api-console-form .api-url-endpoints {
+    cursor: pointer;
+}
+.api-console-form .api-url-text {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.api-console-form .resource-url {
+    color: #333;
+    font-family: monospace;
+    letter-spacing: 0.5px;
+}
+.api-console-form .api-url-endpoints {
+    padding: 0px;
+}
+.api-console-form .api-url-endpoints .btn-group button {
+    border: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.api-console-form .api-url-endpoints .btn-group li span {
+    display: block;
+    padding: 3px 20px;
+    line-height: 1.42857143;
+    color: #333;
+}
+.api-console-panel .container-fluid {
+    padding: 0px;
+}
+.api-console-panel .container-fluid .reqres-btn {
+    margin: 0 10px 10px 0;
+}
+.api-console-panel .navbar-header, .api-console-panel .navbar-nav {
+    margin: 0px;
+}
+.api-console-panel .navbar {
+    margin-bottom: 0px;
+}
+.api-console-panel h3 {
+    margin: 0px;
+    color: #555;
+    border: 1px solid transparent;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    height: 32px;
+}
+.api-console-panel pre {
+    font-size: 0.9em;
+    margin: 0px;
+    border:none;
+}
+.api-console-panel .input-group .dropdown-menu {
+    /*position: relative;*/ 
+    margin-left: 35px;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(-100%);
+}
+.api-console-panel .well {
+    margin-bottom: 0px;
+    padding: 0px;
+}
+.api-console-panel .alert {
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .api-console-form > div {
+        margin-bottom: 10px;
+    }
+    .api-console-form input {
+        font-size: 0.8em;
+    }
+}
+
+
+@media (max-width: 768px) {
+.api-console-panel .navbar {
+    margin-bottom: 20px;
+}
+}

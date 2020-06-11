@@ -1,0 +1,56 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]; then
+    echo "usage: mongo-remove-shard <server-port> <shard>"
+    exit 1
+fi
+
+if [ -z "$MONGO_DIR" ]; then
+    echo "Need to set MONGO_DIR"
+    exit 1
+fi
+if [ ! -d "$MONGO_DIR" ]; then
+    echo "Need to create directory MONGO_DIR"
+    exit 1
+fi
+
+LOG_FILE=remove-shard.log
+rm -f ${LOG_FILE}
+
+TEMP_FILE=/tmp/tmc-mongo-remove-shard.txt
+rm -f ${TEMP_FILE}
+
+$MONGO_DIR/bin/mongo admin --port ${1} --eval "printjson(db.runCommand({ removeShard: \"${2}\"}));"
+sleep 10
+
+T="$(date +%s)"
+
+lastNumChunks="INITIALIZED"
+lastChunkTime="$(date +%s)"
+
+# stay in a loop
+while [ 1 ]; do
+    $MONGO_DIR/bin/mongo admin --port ${1} --eval "printjson(db.runCommand({ removeShard: \"${2}\"}));" > ${TEMP_FILE}
+
+    isDraining=`grep "draining ongoing" ${TEMP_FILE}`
+    if [ $? -eq 0 ]; then
+        numChunks=`grep "chunks" ${TEMP_FILE}`
+        if [ "$numChunks" != "$lastNumChunks" ] ; then
+            thisChunkTime="$(date +%s)"
+            thisChunkSeconds=$(($thisChunkTime - $lastChunkTime))
+            echo "`date` | ${thisChunkSeconds} | ${numChunks}" | tee -a ${LOG_FILE}
+            lastChunkTime="$(date +%s)"
+        fi
+        lastNumChunks=${numChunks}
+    else
+        break
+    fi
+
+    sleep 5
+done
+
+T="$(($(date +%s)-T))"
+printf "`date` | removeShard duration = %02d:%02d:%02d:%02d\n" "$((T/86400))" "$((T/3600%24))" "$((T/60%60))" "$((T%60))" | tee -a ${LOG_FILE}
+
+rm -f ${TEMP_FILE}
+

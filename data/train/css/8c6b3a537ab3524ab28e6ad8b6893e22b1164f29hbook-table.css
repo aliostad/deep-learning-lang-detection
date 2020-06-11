@@ -1,0 +1,129 @@
+/*====== Table ========*/
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%; }
+  .table th {
+    color: #8c8c8c;
+    text-align: left;
+    border-top: none !important;
+    font-weight: 700; }
+  .table td, .table th {
+    line-height: 22px;
+    padding: 16px;
+    border-top: 1px solid #ddd;
+    color: #5D5A5A;
+    background: #FFF;
+    font-size: 14px; }
+
+.table-bordered {
+  border: 1px solid #ddd;
+  border-collapse: separate;
+  border-left: 0; }
+  .table-bordered td, .table-bordered th {
+    border-left: 1px solid #E9E9E9; }
+
+.table-hover tbody tr:hover > td, .table-hover tbody .table tr:hover > th, .table .table-hover tbody tr:hover > th, .table-hover tbody .table-bordered tr:hover > th, .table-bordered .table-hover tbody tr:hover > th {
+  background-color: #f5f5f5; }
+
+.table-zebra tbody > tr:nth-child(odd) > td, .table-zebra .table tbody > tr:nth-child(odd) > th, .table .table-zebra tbody > tr:nth-child(odd) > th, .table-zebra .table-bordered tbody > tr:nth-child(odd) > th, .table-bordered .table-zebra tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9; }
+
+.table-view {
+  position: relative; }
+  .table-view .table-view-cell {
+    width: 100%;
+    position: relative;
+    padding: 15px;
+    overflow: hidden; }
+    .table-view .table-view-cell.table-view-hover:hover {
+      background: #FAFAFA; }
+      .table-view .table-view-cell.table-view-hover:hover .table-view-operation {
+        opacity: 1; }
+    .table-view .table-view-cell .media-tit a {
+      color: #4B4B4B; }
+    .table-view .table-view-cell .media-object {
+      margin-right: 10px;
+      position: relative;
+      overflow: hidden;
+      text-align: center; }
+      .table-view .table-view-cell .media-object .media-view {
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; }
+      .table-view .table-view-cell .media-object img {
+        max-width: 100%; }
+  .table-view.table-view-one .media-object .media-view {
+    width: 60px;
+    height: 60px;
+    line-height: 60px; }
+  .table-view.table-view-one .table-view-cell .media-body {
+    margin-top: 6px; }
+    .table-view.table-view-one .table-view-cell .media-body .media-tit {
+      font-size: 1.6rem;
+      line-height: 19px; }
+      .table-view.table-view-one .table-view-cell .media-body .media-tit a {
+        font-size: 1.6rem;
+        margin-right: 5px; }
+    .table-view.table-view-one .table-view-cell .media-body .media-sum {
+      display: block;
+      line-height: 18px;
+      margin-top: 10px;
+      font-size: 12px;
+      color: #999;
+      overflow: hidden; }
+      .table-view.table-view-one .table-view-cell .media-body .media-sum a {
+        color: #999; }
+  .table-view.table-view-two .table-view-cell {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
+    .table-view.table-view-two .table-view-cell .media-object {
+      margin-right: 20px; }
+      .table-view.table-view-two .table-view-cell .media-object .media-view {
+        width: 160px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 2rem; }
+    .table-view.table-view-two .table-view-cell .media-tit {
+      margin-bottom: 10px;
+      color: #666;
+      font-size: 1.6rem;
+      font-weight: normal; }
+    .table-view.table-view-two .table-view-cell .media-sum {
+      height: 38px;
+      margin-bottom: 10px;
+      line-height: 20px;
+      color: #999;
+      font-size: 1.4rem;
+      overflow: hidden; }
+      .table-view.table-view-two .table-view-cell .media-sum a {
+        color: #999; }
+    .table-view.table-view-two .table-view-cell .media-body {
+      line-height: 22px;
+      overflow: hidden; }
+      .table-view.table-view-two .table-view-cell .media-body .media-footer {
+        position: relative; }
+        .table-view.table-view-two .table-view-cell .media-body .media-footer a {
+          display: inline-block;
+          position: relative; }
+        .table-view.table-view-two .table-view-cell .media-body .media-footer img {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          vertical-align: middle; }
+        .table-view.table-view-two .table-view-cell .media-body .media-footer span {
+          color: #999;
+          font-size: 12px;
+          vertical-align: middle; }
+          .table-view.table-view-two .table-view-cell .media-body .media-footer span i {
+            color: #666;
+            display: inline-block;
+            margin-left: 3px; }
+        .table-view.table-view-two .table-view-cell .media-body .media-footer .media-name {
+          color: #000;
+          font-weight: 700;
+          margin: 0 5px; }
+        .table-view.table-view-two .table-view-cell .media-body .media-footer .media-span {
+          margin: 0 10px;
+          color: #E4E4E4; }

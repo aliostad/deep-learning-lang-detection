@@ -1,0 +1,57 @@
+#!/bin/bash -x
+#
+# This example illustrates some operations with simple nucleotide
+# models. Although nucleotide model analyses were not discussed in the
+# initial CodeAxe paper, this example is included because it presents
+# results which can be computed very quickly compared to codon or
+# extended codon models.
+#
+# In this example we create a simple nucleotide model with randomized
+# parameters. This model is parameterized with Kimura80 mutation, and
+# and is altered to behave as a reversible model. (CodeAxe always
+# assumes nonreversibility)
+# 
+# Data are simulated from this model and analyzed by a second model
+# using default starting parameters. The example shows how confidence
+# intervals are calculated for parameters in the trained model, and
+# shows a summarization of the trained model parameters and
+# likelihood.
+#
+
+
+
+# -- write phylogenetic tree
+#
+echo "((((A,B),C),(D,E)),(F,(G,H)));" >| ex0.tree
+
+# -- create a simple nuc model with randomized parameters, and
+#    equilibrate model.
+#
+../bin/CodeAxe -create-model -site-model nuc -rate-model k80 -tree-file ex0.tree -reversible-tree -random-param |\
+../bin/CodeAxe -norm -in-model - >| ex0.model.random
+
+# -- simulate sequences from the equilibrated random model
+#
+../bin/CodeAxe -sim -sim-size 100000 -sim-model iss -in-model ex0.model.random >| ex0.data.sim
+
+# -- create a starting model for likelihood minimization.
+#
+../bin/CodeAxe -create-model -site-model nuc -rate-model k80 -root-model obs-avg -tree-file ex0.tree -reversible-tree -in-data ex0.data.sim >| ex0.model.start
+
+# -- train model
+#
+../bin/CodeAxe -ml -in-model ex0.model.start -in-data ex0.data.sim >| ex0.model.trained 2>| ex0.model.ml.stderr
+
+# -- get the likelihood & likelihood/codon of the trained model
+#
+../bin/CodeAxe -lhood -in-model ex0.model.trained -in-data ex0.data.sim >| ex0.model.trained.lhood
+
+# -- calculate confidence intervals for trained model parameters
+#
+>| ex0.model.ci
+../bin/CodeAxe -confidence -in-model ex0.model.trained -in-data ex0.data.sim -out ex0.model.ci 2>| ex0.model.ci.stderr
+
+# -- summarize parameters from the trained model, with confidence intervals
+#
+../bin/CodeAxe -report-model -in-model ex0.model.trained -in-confidence ex0.model.ci >| ex0.model.trained.report
+

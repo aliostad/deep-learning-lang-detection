@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-03-27T15:25:25Z">
+		<header>
+			<authorName>Dirk Wenzel</authorName>
+			<authorEmail>dirk.wenzel@cps-it.de</authorEmail>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="label.duplicateStatus" xml:space="preserve">
+			<source>Duplicate Status</source>
+		</trans-unit>
+		<trans-unit id="label.failed" xml:space="preserve">
+			<source>Failed!</source>
+		</trans-unit>
+		<trans-unit id="label.notProcessedYet" xml:space="preserve">
+			<source>Not yet processed.</source>
+		</trans-unit>
+		<trans-unit id="label.passed" xml:space="preserve">
+			<source>Passed!</source>
+		</trans-unit>
+		<trans-unit id="label.tab.dataQuality" xml:space="preserve">
+			<source>Data Quality</source>
+		</trans-unit>
+		<trans-unit id="message.hasDuplicates" xml:space="preserve">
+			<source>There are %s duplicates of this record:</source>
+		</trans-unit>
+		<trans-unit id="message.hasOneDuplicate" xml:space="preserve">
+			<source>There is one duplicate of this record:</source>
+		</trans-unit>
+		<trans-unit id="message.isDuplicateOf" xml:space="preserve">
+			<source>This record is a duplicate of:</source>
+		</trans-unit>
+		<trans-unit id="message.noDuplicates" xml:space="preserve">
+			<source>There is no duplicate!</source>
+		</trans-unit>
+		<trans-unit id="question.duplicateTestPassed" xml:space="preserve">
+			<source>Test for duplicates passed?</source>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

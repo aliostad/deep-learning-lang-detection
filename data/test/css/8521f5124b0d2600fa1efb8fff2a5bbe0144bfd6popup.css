@@ -1,0 +1,48 @@
+
+body {
+  min-width: 500px;
+  min-height: 250px;
+  overflow-x: hidden;
+  padding: 8px;
+}
+
+#spinner {
+  display: none;
+}
+
+#load_timeline_status {
+  display: none;
+}
+
+.status {
+  display: none;
+}
+
+#spinner img {
+  border-width: 0px;
+  width: 16px;
+  height: 16px;
+}
+
+#message {
+}
+
+.show-default {
+  display: none;
+}
+
+body.default .show-timeline, body.default .show-home {
+  display: none;
+}
+
+body.default .show-default {
+  display: block;
+}
+
+body.home .show-timeline, body.timeline .show-home {
+  display: none;
+}
+
+body.home .show-home, body.timeline .show-timeline {
+  display: block;
+}

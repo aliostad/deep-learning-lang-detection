@@ -1,0 +1,44 @@
+.model-overlay
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    z-index: 9;
+}
+
+.modal-container
+{
+    /*position: absolute;*/
+    position:absolute;
+    background: url(tint20.png) 0 0 repeat;
+    background: rgba(0,0,0,0.2);
+    border-radius: 14px;
+    padding: 4px;
+    z-index: 10;
+}
+
+.model-content
+{
+    border-radius: 8px;
+    background: #fff;
+    padding: 20px;
+    float: left;
+    width: 94.5%;
+}
+
+.modal-close
+{
+    position: absolute;
+    background: url(Images/close.png) 0 0 no-repeat;
+    width: 24px;
+    height: 26px;
+    display: block;
+    text-indent: -9999px;
+    top: -6px;
+    right: -6px;
+}

@@ -1,0 +1,98 @@
+/* 글쓰기 */
+/*.write_table {border-top:2px solid #4383fc;}*/
+.write_table > li {padding:8px 40px 8px 100px; border-top:1px solid #ececec; position:relative;} 
+.write_table > li:first-child {border-top:none;}
+.write_table .bh {width:90px; text-align:right; font-weight:bold; color:#272727; position:absolute; left:0px; font-size:15px; top:10px;}
+.write_table .bh .small {color:#777777; font-size:11px; font-weight:normal;}
+.write_table > li textarea {width:100%; box-sizing:border-box; padding:8px; border: 1px solid #cdd2d7}
+.write_table > li input[type="file"] {display:block; margin-top:5px; width:40%;}
+.write_table > li input[type="checkbox"] {position:relative; top:2px; margin-left:4px;}
+.write_table > li.file {min-height:34px;}
+.write_table .parent_info {border:1px solid #cdd2d7; padding:8px; margin-bottom:10px;}
+.write_table .ptitle {font-size:16px; font-weight:bold; padding-bottom:10px;}
+.write_table .pcontent {max-height:500px; min-height:50px; overflow:auto; width:715px;}
+
+/* 버튼 css*/
+.submit_zone {text-align:center; padding:10px 0px;}
+.msButton {border:none; background:#fc4359; padding:16px; width:100px; text-align:center; color:#FFFFFF; display:inline-block; box-sizing:border-box; cursor:pointer; font-size:15px; font-weight:bold;}
+.msButton.gray {background-color:#c5c5c5;}
+.msButton.blue {background-color:#4383fc;}
+.msButton:hover,.msButton:focus {text-decoration:none; color:yellow;}
+.msButton.verysmall {font-size:11px; padding:2px 4px; width:auto;}
+.fileinsert {display:block; position:absolute; bottom:9px; left:530px;}
+.msButton.medium {font-size:14px; padding:6px}
+
+/* 리스트 페이지 */
+.list_table {padding-bottom:10px; /*border-top:2px solid #4383fc;*/}
+.list_table .left {text-align:left}
+.list_table .center {text-align:center}
+.list_table .right {text-align:right}
+.list_table table {width:100%; border-collapse:collapse;}
+.list_table table caption {display:none;}
+.list_table table thead > tr {border-bottom:1px solid #272727;}
+.list_table table thead th {color:#777777; font-size:16px; padding:17px 5px 12px;white-space:nowrap;}
+.list_table table tbody td {color:#272727; font-size:14px; padding:10px 5px; height:20px;}
+.list_table table tbody tr {border-bottom:1px solid #ececec; padding:3px 0px;}
+.list_table table tbody .subject {padding:0px 0px 0px 20px; position:relative; height:30px; line-height:30px}
+.list_table table tbody tr td a{color:#272727; border-bottom:1px solid transparent; display:inline-block; max-width:480px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.list_table table tbody tr td a:hover {color:#4383fc;text-decoration:none; border-bottom:1px solid #4383fc;}
+.list_table table tbody tr td .secret { position:absolute; left:0px; top:8px;}
+.list_table table tbody tr td .reply {position:relative; top:-10px; padding-right:8px;}
+.list_table table tbody tr td .file {margin-left:10px;}
+.list_table table tbody tr.first, .list_table table tbody tr.last {background-color:#f2f2f2;}
+.list_table table tbody tr td.white {background:#fff;}
+
+
+/* 페이지 탐색 스타일 */
+.page {text-align:center; padding:0px 0px 30px;}
+.page > a , .page b {display:inline-block; font-size:18px; color:#272727; width:22px; height:42px; line-height:42px; position:relative; font-weight:bold; margin:0 6px;}
+.page > a:hover, .page a:focus {text-decoration:none; color:#4383fc;}
+.page > a.first, .page a.last {background:#272727; color:#FFFFFF; width:42px}
+.page > a.first:before {content:""; display:block; position:absolute; width:1px; height:16px; background-color:#ffffff; left:12px; top:14px;}
+.page > a.last:after {content:""; display:block; position:absolute; width:1px; height:16px; background-color:#ffffff; right:12px; top:14px;}
+.page > a.first:hover, .page a.first:focus,
+.page > a.last:hover, .page a.last:focus {text-decoration:none; color:#F90;}
+.page > a.first:hover:before, .page a.first:focus:before,
+.page > a.last:hover:after, .page a.last:focus:after {background-color:#F90}
+.page > a.prev, .page a.next {background:#e8e8e8; color:#4383fc; width:42px}
+.page > a.prev:hover, .page a.prev:focus,
+.page > a.next:hover, .page a.next:focus {color:#F90;}
+.page b {color:#4383fc;}
+
+/* 명령 버튼 하단 */
+.command {padding:10px 0px; text-align:center;}
+.command:after {content:""; display:block; clear:both;}
+.command .right {float:right; margin-left:6px;}
+.command .left {float:left; margin-right:6px;}
+
+/* 검색 바 스타일 */
+.searchbar {text-align:center; padding-bottom:20px;}
+.searchbar select {height:22px; border:1px solid #cdd2d7; color:#919191}
+.searchbar input[type="text"] {margin:0 3px;}
+.searchbar .verysmall {height:22px; width:60px;}
+
+/* 글읽기 */
+.read_table {padding-bottom:10px; border-top:2px solid #4383fc;}
+.read_table > h4 {font-size:16px;padding:17px; color:#272727; }
+.read_table > h4 span {font-size:12px; color:#777777; margin-left:20px;}
+.read_table > h4 .side {float:right;}
+.read_table .board_contents {padding:10px 19px; line-height:28px;}
+.read_table .board_contents .cssReset{ width:960px; overflow:auto;}
+.read_table .board_contents .cssReset img {max-width:960px;}
+.read_table .downfiles {padding-bottom:10px; line-height:32px;}
+.read_table .downfiles img { vertical-align:middle;}
+.read_table .downfiles a {margin-left:20px; font-size:14px;}
+.read_table .downfiles a .filesize {font-size:11px; color:#777777;}
+.read_table .downfiles a .downcount {font-size:11px; color:#fc4359;}
+.bbs_bottom {padding-bottom:50px;}
+/* 리플 리스트 */
+.reply_list {border-top:2px solid #4383fc;}
+.reply_list > ul > li {position:relative; padding:5px; border-bottom:1px solid #cccccc; border-top:1px solid #f7f7f7;}
+.reply_list .reply_name {font-size:14px; color:#272727; margin-right:30px;}
+.reply_list .reply_date {font-size:12px; color:#fc4359; margin-right:30px;}
+.reply_list .reply_ip {font-size:12px; color:777777; margin-right:30px;}
+.reply_list .reply_comment {padding:5px 10px; border:1px solid #ccc; margin-top:5px; margin-right:70px; background:#F7F7F7; white-space:pre-wrap; line-height:18px; max-height:60px; overflow:auto;}
+.reply_list .btn {position:absolute; right:7px; bottom:7px;}
+.reply_list .reply_write {position:relative; padding:5px 5px 10px 5px;}
+.reply_list  textarea {height:40px; padding:5px 10px; border:1px solid #ccc; margin-right:10px; width:865px;}
+.reply_list .reply_write_btn {position:absolute; right:0px; bottom: 14px;}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Interchanges>
+	<Interchange>
+		<Identifier>CDS</Identifier>
+		<InteractionId>CommissionDataSet</InteractionId>
+		<ClientId>urn:spine:edt:edtClient</ClientId>
+		<ProcessStages>
+			<Process name="Validation">
+				<meta key="xsdLocation" value="D:/EDT_APPS_HOME/xsd/cds.xsd"/>
+				<meta key="onError" value="continue"/>
+			</Process>
+			<Process name="Compression">
+				<meta key="onError" value="continue"/>
+			</Process>
+		</ProcessStages>
+	</Interchange>
+	<Interchange>
+		<Identifier>MHMDS</Identifier>
+		<InteractionId>MHMinimumDataSet</InteractionId>
+		<ClientId>urn:spine:edt:edtClient</ClientId>
+		<ProcessStages>
+			<Process name="Validation">
+				<meta key="xsdLocation" value="D:/EDT_APPS_HOME/xsd/mhmds.xsd"/>
+				<meta key="onError" value="continue"/>
+			</Process>
+			<Process name="Compression">
+				<meta key="onError" value="continue"/>
+			</Process>
+		</ProcessStages>
+	</Interchange>	
+	<Interchange>
+		<Identifier>CAB</Identifier>
+		<InteractionId>CabDataSet</InteractionId>
+		<ClientId>urn:spine:edt:edtClient</ClientId>
+		<ProcessStages>
+			<Process name="Filter">
+				<meta key="include" value="ctl"/>
+			</Process>
+			<Process name="Dependancy">
+				<meta key="ctl" value="dat"/>
+			</Process>
+			<Process name="AddFiles">
+				<meta key="ctl" value="dat"/>
+			</Process>
+			<Process name="Validation">
+				<meta key="xsdLocation" value="D:/EDT_APPS_HOME/xsd/mhmds.xsd"/>
+				<meta key="onError" value="continue"/>
+			</Process>
+			<Process name="Compression">
+				<meta key="onError" value="continue"/>
+			</Process>
+		</ProcessStages>
+	</Interchange>	
+	<Interchange>
+		<Identifier>DBS</Identifier>
+		<InteractionId>batchtracerequest</InteractionId>
+		<ClientId>urn:spine:sfts:sftsClient</ClientId>
+		<ProcessStages>
+			<Process name="Compression">
+				<meta key="onError" value="continue"/>
+			</Process>
+		</ProcessStages>
+	</Interchange>	
+	<Interchange>
+		<Identifier>DBSDownload</Identifier>
+		<InteractionId>batchtraceresponse</InteractionId>
+		<ClientId>urn:spine:sfts:sftsClient</ClientId>
+		<ProcessStages>
+			<Process name="Authentication"/>
+			<Process name="Download">
+				<meta key="destination" value="/OUTBOX/DBS"/>
+				<meta key="onError" value="continue"/>
+			</Process>
+			<Process name="ChecksumValidity">
+				<meta key="onError" value="continue"/>
+			</Process>
+		</ProcessStages>
+	</Interchange>	
+</Interchanges>

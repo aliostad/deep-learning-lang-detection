@@ -1,0 +1,28 @@
+<!-- 总的索引文件 -->
+<root name="服务">
+	<category name="制造服务">
+		<category name="计算机行业">
+			<service name="制造CPU" url="cpu.service.xml" />
+			<service name="制造内存" url="memory.service.xml" />
+			<service name="制造主板" url="主板.service.xml" />
+			<service name="制造硬盘" url="硬盘.service.xml" />
+			<service name="制造显示屏" url="显示屏.service.xml" />
+			<service name="组装" url="组装.service.xml" />
+			<service name="整机测试" url="整机测试.service.xml" />
+
+		</category>
+		<category name="制造行业2">
+			<service name="制造服务1" url="" />
+			<service name="制造服务2" url="" />
+			<service name="制造服务3" url="" />
+			<service name="制造服务4" url="" />
+		</category>
+	</category>
+
+	<category name="服务类别2">
+		<service name="服务2-1" url="" />
+		<service name="服务2-2" url="" />
+		<service name="服务2-3" url="" />
+		<service name="服务2-4" url="" />
+	</category>
+</root>

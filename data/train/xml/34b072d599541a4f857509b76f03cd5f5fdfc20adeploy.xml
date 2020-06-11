@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE project SYSTEM "../ant.dtd">
+<project name="zsm_deploy" default="deploy">
+  <property name="version" value="0.3a" />
+  <property name="appname" value="zipslitmail" />
+  <property name="release" value="${appname}-${version}" />
+  <target name="deploy_cli">
+    <mkdir dir="${destDir}" />
+    <mkdir dir="${destDir}/doc" />
+    <delete dir="${destDir}/bin"></delete>
+    <delete dir="${destDir}/lib"></delete>
+    <mkdir dir="${destDir}/bin" />
+    <mkdir dir="${destDir}/lib" />
+    <copy file="zsm.jar" todir="${destDir}/bin"></copy>
+    <copy file="zsm.bat" todir="${destDir}/bin"></copy>
+    <copy file="zsm.properties" todir="${destDir}/doc"></copy>
+<copy file="../doc/zipsplitmail_howto.pdf" todir="${destDir}/doc"></copy>
+    <copy file="../lib/ant.jar" todir="${destDir}/lib"></copy>
+    <copy file="../lib/ant-javamail.jar" todir="${destDir}/lib"></copy>
+    <copy file="../lib/LICENSE.ant.txt" todir="${destDir}/lib"></copy>
+    <copy file="../lib/dsn.jar" todir="${destDir}/lib"></copy>
+    <copy file="../lib/mail.jar" todir="${destDir}/lib"></copy>
+    <copy file="../lib/pop3.jar" todir="${destDir}/lib"></copy>
+    <copy file="../lib/imap.jar" todir="${destDir}/lib"></copy>
+    <copy file="../lib/mailapi.jar" todir="${destDir}/lib"></copy>
+    <copy file="../lib/smtp.jar" todir="${destDir}/lib"></copy>
+    <copy file="../lib/LICENSE.javamail.txt" todir="${destDir}/lib"></copy>
+    <!-- Lizenz ist nicht klar copy file="../lib/options.jar" todir="${destDir}/lib"></copy-->
+    <zip zipfile="${release}_cli.zip" basedir="${destDir}" update="true"></zip>
+  </target>
+  <target name="deploy_gui">
+    <mkdir dir="${destDir}" />
+    <mkdir dir="${destDir}/doc" />
+    <delete dir="${destDir}/bin"></delete>
+    <delete dir="${destDir}/lib"></delete>
+    <mkdir dir="${destDir}/bin" />
+    <mkdir dir="${destDir}/lib" />
+    <copy file="zsm.properties" todir="${destDir}/doc"></copy>
+<copy file="../doc/zipsplitmail_howto.pdf" todir="${destDir}/doc"></copy>
+    <copy file="../build/ZSMGui.exe" todir="${destDir}/bin"></copy>
+    <copy file="../build/ZSMGuiC.exe" todir="${destDir}/bin"></copy>
+    <copy file="../iconZipSplitMail.gif" todir="${destDir}"></copy>
+    <copy file="../iconZipSplitMail.gif" todir="${destDir}/bin"></copy>
+    <copy file="zsm_gui.jar" todir="${destDir}/bin"></copy>
+    <copy file="zsm_gui.bat" todir="${destDir}/bin"></copy>
+    <copy file="zsm.properties" todir="${destDir}/doc"></copy>
+    <copy file="../lib/ant.jar" todir="${destDir}/lib"></copy>
+    <copy file="../lib/ant-javamail.jar" todir="${destDir}/lib"></copy>
+    <copy file="../lib/LICENSE.ant.txt" todir="${destDir}/lib"></copy>
+    <copy file="../lib/dsn.jar" todir="${destDir}/lib"></copy>
+    <copy file="../lib/mail.jar" todir="${destDir}/lib"></copy>
+    <copy file="../lib/pop3.jar" todir="${destDir}/lib"></copy>
+    <copy file="../lib/imap.jar" todir="${destDir}/lib"></copy>
+    <copy file="../lib/mailapi.jar" todir="${destDir}/lib"></copy>
+    <copy file="../lib/smtp.jar" todir="${destDir}/lib"></copy>
+    <copy file="../lib/LICENSE.javamail.txt" todir="${destDir}/lib"></copy>
+    <zip zipfile="${release}_gui.zip" basedir="${destDir}" update="true"></zip>
+  </target>
+  <target name="deploy">
+    <antcall target="deploy_cli"></antcall>
+    <antcall target="deploy_gui"></antcall>
+  </target>
+</project>

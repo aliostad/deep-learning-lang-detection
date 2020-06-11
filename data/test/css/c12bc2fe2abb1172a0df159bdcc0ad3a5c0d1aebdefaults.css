@@ -1,0 +1,36 @@
+DebugPanel {
+	background-color: black;
+	background-alpha: 0.5;
+	padding-left: 5;
+	padding-top: 5;
+	padding-right: 5;
+	padding-bottom: 5;
+}
+
+MessageNotifier {
+	padding-left: 10;
+	padding-top: 10;
+	padding-right: 10;
+	message-style-name: messageStyle;
+	error-message-style-name: errorMessageStyle;
+}
+
+.messageStyle, .errorMessageStyle {
+	padding-left: 3;
+	padding-top: 3;
+	padding-right: 3;
+	padding-bottom: 3;
+	border-style: solid;
+	border-thickness: 2;
+	corner-radius: 8;
+	background-color: #FFFFFF;
+	font-weight: bold;
+}
+
+.errorMessageStyle {
+	color: #FF0000;
+}
+
+BetterFormItem {
+	default-selectable: true;
+}

@@ -1,0 +1,52 @@
+/**
+ * For general admin styles
+ */
+
+/**
+ * datatables view setup
+ */
+#view-toggle {
+	display: block;
+	margin-bottom: 2em;
+}
+#view-toggle .btn {
+	float: none;
+}
+.view-top,
+.view-bottom {
+	display: block;
+}
+#view_filter,
+.view-top .dt-buttons,
+.view-bottom > * {
+	display: inline-block;
+}
+#view_filter,
+.view-top .dt-buttons {
+	float: right;
+}
+.view-top .dt-buttons {
+	margin-right: 10px;
+}
+.view-table {
+	display: block;
+}
+
+.view {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 2em;
+	margin-bottom: 2em;
+}
+.view .loading-message {
+	display: block;
+}
+.view .view-container {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 2em;
+	margin-bottom: 2em;
+}
+.view-updates {
+	width: 100%;
+}

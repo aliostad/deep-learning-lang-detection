@@ -1,0 +1,83 @@
+#!/bin/sh -e
+#
+# bss_processes: bss module for system load averages
+#
+# Copyright (C) 2013 Kristoffer Smith
+#
+# Authors: Kristoffer Smith <http://theksmith.com>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, version 3 of the License.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+. "$BYOBU_CONFIG_DIR/bin/bss_config"
+. "$BYOBU_CONFIG_DIR/bin/bss_common"
+
+__bss_load() {
+	local cpus cmdout one five fifteen
+
+	[ -n "$BSS_LOAD_PREFIX" ] || BSS_LOAD_PREFIX="LD$BSS_SEPARATOR0"
+	[ "$BSS_LOAD_PREFIX" = "0" ] && BSS_LOAD_PREFIX=""
+
+	[ -n "$BSS_LOAD_SHOW_1" ] || BSS_LOAD_SHOW_1=1
+	[ -n "$BSS_LOAD_SHOW_5" ] || BSS_LOAD_SHOW_5=1
+	[ -n "$BSS_LOAD_SHOW_15" ] || BSS_LOAD_SHOW_15=1
+
+	[ -n "$BSS_LOAD_MULTIPLYCPU" ] || BSS_LOAD_MULTIPLYCPU=1
+
+	[ "$BSS_LOAD_MULTIPLYCPU" = "1" ] && cpus=$(bss_cpu_count)
+	[ -n "$cpus" ] || cpus=1
+
+	[ -n "$BSS_LOAD_NOTICE_1" ] || BSS_LOAD_NOTICE_1=$(echo "" | awk "{print 1.50 * $cpus}")
+	[ -n "$BSS_LOAD_WARN_1" ] || BSS_LOAD_WARN_1=$(echo "" | awk "{print 2.00 * $cpus}")
+
+	[ -n "$BSS_LOAD_NOTICE_5" ] || BSS_LOAD_NOTICE_5=$(echo "" | awk "{print 1.00 * $cpus}")
+	[ -n "$BSS_LOAD_WARN_5" ] || BSS_LOAD_WARN_5=$(echo "" | awk "{print 1.50 * $cpus}")
+
+	[ -n "$BSS_LOAD_NOTICE_15" ] || BSS_LOAD_NOTICE_15=$(echo "" | awk "{print 0.75 * $cpus}")
+	[ -n "$BSS_LOAD_WARN_15" ] || BSS_LOAD_WARN_15=$(echo "" | awk "{print 1.00 * $cpus}")
+
+	if [ -r "/proc/loadavg" ]; then
+		read one five fifteen xtra < /proc/loadavg
+	else
+		cmdout=$(uptime | sed -e "s/.*: //; s/,//g")
+		[ -n "$cmdout" ] || return;
+		one=$(echo "$cmdout" | awk '{print $1}')
+		five=$(echo "$cmdout" | awk '{print $2}')
+		fifteen=$(echo "$cmdout" | awk '{print $3}')
+	fi
+	[ -n "$one" ] || return;
+
+	bss_color ok
+	printf "$BSS_LOAD_PREFIX"
+
+	if [ "$BSS_LOAD_SHOW_1" = "1" ]; then
+		bss_color_alerth "$one" "$BSS_LOAD_NOTICE_1" "$BSS_LOAD_WARN_1"
+		printf "$one"
+		[ "$BSS_LOAD_SHOW_15" = "1" -o "$BSS_LOAD_SHOW_15" = "1" ] && bss_color ok; printf "$BSS_SEPARATOR0"
+	fi
+
+	if [ "$BSS_LOAD_SHOW_5" = "1" ]; then
+		bss_color_alerth "$five" "$BSS_LOAD_NOTICE_5" "$BSS_LOAD_WARN_5"
+		printf "$five"
+		[ "$BSS_LOAD_SHOW_15" = "1" ] && bss_color ok; printf "$BSS_SEPARATOR0"
+	fi
+
+	if [ "$BSS_LOAD_SHOW_15" = "1" ]; then
+		bss_color_alerth "$fifteen" "$BSS_LOAD_NOTICE_15" "$BSS_LOAD_WARN_15"
+		printf "$fifteen"
+	fi
+
+	[ "$BSS_LAST" = "load" ] || bss_color --
+}
+
+__bss_load

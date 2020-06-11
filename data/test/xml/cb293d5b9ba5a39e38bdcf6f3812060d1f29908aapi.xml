@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="api_material_all">http://api.kotakwarna.co.id/index.php/api/material/</string>
+    <string name="api_material_view">http://api.kotakwarna.co.id/index.php/api/material/view/</string>
+    <string name="api_material_update">http://api.kotakwarna.co.id/index.php/api/material/update/</string>
+
+    <string name="news_getall">http://api.kotakwarna.co.id/index.php/api/news/</string>
+    <string name="news_getspec">http://api.kotakwarna.co.id/index.php/api/news/view/</string>
+</resources>

@@ -1,0 +1,84 @@
+<div
+  xmlns:tal="http://xml.zope.org/namespaces/tal"
+  xmlns:metal="http://xml.zope.org/namespaces/metal"
+  xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+  id="portlet-actions"
+  class="portlet vertical"
+  tal:define="context_menu context/menu:context"
+>
+  <ul id="duplicate-actions">
+    <li
+        tal:define="link context_menu/markduplicate"
+        tal:condition="python: link.enabled and not
+                      context.duplicateof"
+        class="sprite bug-dupe"
+    >
+    <span id="mark-duplicate-text">
+    <a
+      tal:attributes="href link/path"
+      class="menu-link-mark-dupe">Mark as duplicate</a>
+    </span>
+    </li>
+    <tal:block
+      tal:define="duplicateof context/duplicateof"
+      tal:condition="duplicateof"
+    >
+      <li class="bug-duplicate-details"><a
+        tal:define="link context_menu/markduplicate"
+        tal:condition="python: link.enabled"
+        id="change-duplicate-bug"
+        title="Edit or remove linked duplicate bug"
+        class="sprite edit change-duplicate-bug"
+        tal:attributes="href link/url"></a>
+      <span id="mark-duplicate-text">Duplicate of
+        <tal:bug_link define="dupe_active view/is_duplicate_active">
+          <tal:active condition="dupe_active">
+            <a
+              tal:condition="duplicateof/required:launchpad.View"
+              tal:attributes="href duplicateof/fmt:url; title
+                  duplicateof/title; style string:margin-right: 4px;
+                  id string:duplicate-of;"
+              tal:content="string:bug #${duplicateof/id}"
+            >bug #42</a>
+            <span
+              tal:condition="not:duplicateof/required:launchpad.View"
+              tal:replace="string:a private bug" />
+          </tal:active>
+
+          <tal:inactive condition="not: dupe_active">
+            <span tal:content="string: bug #${duplicateof/id}" />
+          </tal:inactive>
+        </tal:bug_link>
+      </span>
+
+
+      <a id="remove-duplicate-bug"
+          href="+duplicate"
+          title="Remove linked duplicate bug"
+          class="sprite remove action-icon remove-duplicate-bug"
+          style="float: right;">Remove</a>
+
+      </li>
+    </tal:block>
+    <li
+      tal:define="link context_menu/createquestion"
+      tal:condition="link/enabled"
+      tal:content="structure link/render" />
+    <li
+      tal:define="link context_menu/removequestion"
+      tal:condition="link/enabled"
+      tal:content="structure link/render" />
+    <li
+      tal:define="link context_menu/addbranch"
+      tal:condition="link/enabled"
+      tal:content="structure link/render" />
+    <li
+      tal:define="link context_menu/linktocve"
+      tal:condition="link/enabled"
+      tal:content="structure link/render" />
+    <li
+      tal:define="link context_menu/unlinkcve"
+      tal:condition="link/enabled"
+      tal:content="structure link/render" />
+  </ul>
+</div>

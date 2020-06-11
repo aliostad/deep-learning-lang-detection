@@ -1,0 +1,86 @@
+/* @override http://domepage.net/css/write.css */
+
+#write_box{
+   border:1px #769995 solid;
+   
+	padding: 10px;
+   border-radius:5px;
+	background-color: #eaeaea;
+}
+
+	#write_box h1{
+	font-size: 26px;
+	color: #f00;
+	margin-bottom: 15px;
+}
+   
+   #write_box form{
+      width: 500px;
+      text-align:center;
+      margin-left:auto;
+      margin-right:auto;
+   }
+      
+   #write_box form input{
+      text-align:center;
+      border: 1px solid white;
+      background-color: #797979;
+	font-size: 1.5em;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #eaeaea;
+}
+   
+   #write_box form #title{
+      width:500px;
+   }
+
+#text_content{
+      height:200px;
+      width:500px;
+      margin: 5px 0px;
+      background-color:#white;
+      font-size:1.1em;
+   }
+   
+   #submit:hover{
+      color:red;
+   }
+   
+#instructionBox {
+   border:1px #769995 solid;
+   padding: 10px;
+   margin-bottom: 20px;
+   border-radius:5px;
+	background-color: rgba(0,255,212,0.49);
+}
+
+#instructionBox h1{
+	text-decoration: underline;
+	font-size: .8em;
+}
+
+#instructionBox p{
+	margin: 5px;
+}
+
+#link_title{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#link_url{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#link_submit{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#link_submit:hover{
+	color: #f00;
+}
+

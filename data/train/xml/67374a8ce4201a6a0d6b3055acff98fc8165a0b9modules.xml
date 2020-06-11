@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ActionBarSample/ActionBarSample.iml" filepath="$PROJECT_DIR$/ActionBarSample/ActionBarSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NavigationDrawerSample/NavigationDrawerSample.iml" filepath="$PROJECT_DIR$/NavigationDrawerSample/NavigationDrawerSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NavigationUi.iml" filepath="$PROJECT_DIR$/NavigationUi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SwipeSample/SwipeSample.iml" filepath="$PROJECT_DIR$/SwipeSample/SwipeSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TabActionBarSample/TabActionBarSample.iml" filepath="$PROJECT_DIR$/TabActionBarSample/TabActionBarSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TabSwipeSample/TabSwipeSample.iml" filepath="$PROJECT_DIR$/TabSwipeSample/TabSwipeSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ToolBarSample/ToolBarSample.iml" filepath="$PROJECT_DIR$/ToolBarSample/ToolBarSample.iml" />
+    </modules>
+  </component>
+</project>

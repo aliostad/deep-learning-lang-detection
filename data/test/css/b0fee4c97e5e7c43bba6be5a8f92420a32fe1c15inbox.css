@@ -1,0 +1,55 @@
+/* CSS Document */
+
+/* overwrite */
+#submitPostMessage {
+	margin-right: 3em;
+}
+
+/* inbox message groups */
+.inbox-message-group-container {
+	width: 96%;
+	padding: .5em 2%;
+	border-top: 1px solid #e9e9e9;
+}
+
+.inbox-message-group-container:last-child {
+	border-bottom: 1px solid #e9e9e9;
+}
+
+.inbox-message-group-container.light-back {
+	border-top: 1px solid #ddd;
+}
+
+.inbox-message-group-name {
+	margin-top: .1em;
+	width: 7.1em;
+}
+
+.inbox-message-group-preview,.inbox-message-group-time {
+	margin: 1em 0 0;
+}
+
+
+/* individual message page */
+.message-container {
+	width:96%;
+	padding: 1em 2%;
+	border-bottom: 1px solid #e9e9e9;
+}
+
+.inbox-message-right-container {
+	margin: 0 0 0 1em;
+	width: 80%;
+}
+
+#inbox-post-message {
+	border: none;
+}
+
+#message-header {
+	margin-bottom: .5em;
+}
+
+/* post message */
+
+

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<typeface_information>
+    <typeface_set language="zh" country="CN">
+        <typeface_mapping role="Primary" family="Courier New" weight="bold"></typeface_mapping>
+        <typeface_mapping role="Secondary" family="Nokia Sans"></typeface_mapping>
+        <typeface_mapping role="Title" family="Nokia Sans Title SemiBold"></typeface_mapping>
+        <typeface_mapping role="PrimarySmall" family="Nokia Sans" weight="bold"></typeface_mapping>
+        <typeface_mapping role="Digital" family="OCR A Extended"></typeface_mapping>
+    </typeface_set>
+    <typeface_set language="zh" country="HK">
+        <typeface_mapping role="Primary" family="OCR A Extended" weight="bold"></typeface_mapping>
+        <typeface_mapping role="Secondary" family="Nokia Sans"></typeface_mapping>
+        <typeface_mapping role="Title" family="Nokia Sans Title SemiBold"></typeface_mapping>
+        <typeface_mapping role="PrimarySmall" family="Nokia Sans" weight="bold"></typeface_mapping>
+        <typeface_mapping role="Digital" family="OCR A Extended"></typeface_mapping>
+    </typeface_set>
+    <typeface_set language="zh" country="TW">
+        <typeface_mapping role="Primary" family="Times New Roman" weight="bold"></typeface_mapping>
+        <typeface_mapping role="Secondary" family="Nokia Sans"></typeface_mapping>
+        <typeface_mapping role="Title" family="Nokia Sans Title SemiBold"></typeface_mapping>
+        <typeface_mapping role="PrimarySmall" family="Nokia Sans" weight="bold"></typeface_mapping>
+        <typeface_mapping role="Digital" family="OCR A Extended"></typeface_mapping>
+    </typeface_set>
+    <typeface_set language="en" country="CN">
+        <typeface_mapping role="Primary" family="Arial Black" weight="bold"></typeface_mapping>
+        <typeface_mapping role="Secondary" family="Nokia Sans"></typeface_mapping>
+        <typeface_mapping role="Title" family="Nokia Sans Title SemiBold"></typeface_mapping>
+        <typeface_mapping role="PrimarySmall" family="Nokia Sans" weight="bold"></typeface_mapping>
+        <typeface_mapping role="Digital" family="OCR A Extended"></typeface_mapping>
+    </typeface_set>
+    <typeface_set language="en" country="HK">
+        <typeface_mapping role="Primary" family="Bell MT" weight="bold"></typeface_mapping>
+        <typeface_mapping role="Secondary" family="Nokia Sans"></typeface_mapping>
+        <typeface_mapping role="Title" family="Nokia Sans Title SemiBold"></typeface_mapping>
+        <typeface_mapping role="PrimarySmall" family="Nokia Sans" weight="bold"></typeface_mapping>
+        <typeface_mapping role="Digital" family="OCR A Extended"></typeface_mapping>
+    </typeface_set>
+    <typeface_set language="en" country="TW">
+        <typeface_mapping role="Primary" family="Broadway" weight="bold"></typeface_mapping>
+        <typeface_mapping role="Secondary" family="Nokia Sans"></typeface_mapping>
+        <typeface_mapping role="Title" family="Nokia Sans Title SemiBold"></typeface_mapping>
+        <typeface_mapping role="PrimarySmall" family="Nokia Sans" weight="bold"></typeface_mapping>
+        <typeface_mapping role="Digital" family="OCR A Extended"></typeface_mapping>
+    </typeface_set>
+    <typeface_set language="ja">
+        <typeface_mapping role="Primary" family="Arial" weight="bold"></typeface_mapping>
+        <typeface_mapping role="Secondary" family="Nokia Sans"></typeface_mapping>
+        <typeface_mapping role="Title" family="Nokia Sans Title SemiBold"></typeface_mapping>
+        <typeface_mapping role="PrimarySmall" family="Nokia Sans" weight="bold"></typeface_mapping>
+        <typeface_mapping role="Digital" family="OCR A Extended"></typeface_mapping>
+    </typeface_set>
+    <typeface_set language="ko">
+        <typeface_mapping role="Primary" family="Book Antiqua" weight="bold"></typeface_mapping>
+        <typeface_mapping role="Secondary" family="Nokia Sans"></typeface_mapping>
+        <typeface_mapping role="Title" family="Nokia Sans Title SemiBold"></typeface_mapping>
+        <typeface_mapping role="PrimarySmall" family="Nokia Sans" weight="bold"></typeface_mapping>
+        <typeface_mapping role="Digital" family="OCR A Extended"></typeface_mapping>
+    </typeface_set>
+    <typeface_set>
+        <typeface_mapping role="Primary" family="Nokia Sans" weight="bold"></typeface_mapping>
+        <typeface_mapping role="Secondary" family="Nokia Sans"></typeface_mapping>
+        <typeface_mapping role="Title" family="Nokia Sans Title SemiBold"></typeface_mapping>
+        <typeface_mapping role="PrimarySmall" family="Nokia Sans" weight="bold"></typeface_mapping>
+        <typeface_mapping role="Digital" family="OCR A Extended"></typeface_mapping>
+    </typeface_set>
+<Information_Set>
+    <ul> Language is a lowercase, two-letter, ISO 639 language code </ul>
+    <ul> Country is an uppercase, two-letter, ISO 3166 country cod </ul>
+    <ul> The default set do not carry any language or country tag </ul>
+    <ul> Anything after default typeface_set is not read </ul>
+    <ul> First fill all the entrier with both language & country, then only language and finally default </ul>
+</Information_Set>
+</typeface_information>

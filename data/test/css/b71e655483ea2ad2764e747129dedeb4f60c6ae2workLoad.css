@@ -1,0 +1,114 @@
+@charset "UTF-8";
+.work_load .work_load_list {
+  float: left;
+  margin-bottom: 100px;
+  box-sizing: border-box; }
+  .work_load .work_load_list .work_load_list_title {
+    font-size: 0;
+    position: relative; }
+    .work_load .work_load_list .work_load_list_title li {
+      float: left;
+      display: inline-block;
+      border-bottom: 1px solid #ddd;
+      box-sizing: border-box;
+      padding: 10px 0 10px 20px; }
+      .work_load .work_load_list .work_load_list_title li.name {
+        width: 10%; }
+      .work_load .work_load_list .work_load_list_title li.description {
+        width: 60%; }
+      .work_load .work_load_list .work_load_list_title li.position {
+        width: 10%;
+        text-align: center; }
+      .work_load .work_load_list .work_load_list_title li.unit {
+        width: 10%;
+        text-align: center; }
+      .work_load .work_load_list .work_load_list_title li.work_qty {
+        width: 10%;
+        text-align: center; }
+  .work_load .work_load_list ul li ul {
+    clear: both; }
+    .work_load .work_load_list ul li ul li span:nth-child(2) {
+      padding-left: 30px; }
+    .work_load .work_load_list ul li ul li span img {
+      margin: 0 10px; }
+    .work_load .work_load_list ul li ul li ul li span:nth-child(2) {
+      padding-left: 60px; }
+  .work_load .work_load_list ul li span {
+    display: inline-block;
+    float: left;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 10px 0 10px 20px; }
+    .work_load .work_load_list ul li span:nth-child(1) {
+      width: 10%; }
+    .work_load .work_load_list ul li span:nth-child(2) {
+      width: 60%; }
+    .work_load .work_load_list ul li span:nth-child(3) {
+      width: 10%;
+      text-align: center; }
+    .work_load .work_load_list ul li span:nth-child(4) {
+      width: 10%;
+      text-align: center; }
+    .work_load .work_load_list ul li span:nth-child(5) {
+      width: 10%;
+      text-align: center; }
+      .work_load .work_load_list ul li span:nth-child(5) input {
+        width: 60px;
+        text-align: center; }
+        .work_load .work_load_list ul li span:nth-child(5) input:disabled {
+          border: 1px solid #ddd;
+          color: #666; }
+
+/* project amount 工程量 */
+#amount {
+  position: relative; }
+  #amount .designer_list_head, #amount .designer_list_content {
+    margin: 0; }
+    #amount .designer_list_head li, #amount .designer_list_content li {
+      padding: 5px 15px; }
+    #amount .designer_list_head span, #amount .designer_list_content span {
+      display: inline-block;
+      padding: 5px 15px; }
+    #amount .designer_list_head .designer_list_num, #amount .designer_list_content .designer_list_num {
+      width: 5%; }
+    #amount .designer_list_head .designer_list_name, #amount .designer_list_content .designer_list_name {
+      width: 20%; }
+    #amount .designer_list_head .designer_list_description, #amount .designer_list_content .designer_list_description {
+      width: 30%;
+      vertical-align: middle; }
+    #amount .designer_list_head .designer_list_position, #amount .designer_list_content .designer_list_position {
+      width: 10%; }
+    #amount .designer_list_head .designer_list_unit, #amount .designer_list_content .designer_list_unit {
+      width: 10%;
+      text-align: center; }
+    #amount .designer_list_head .designer_list_amount, #amount .designer_list_content .designer_list_amount {
+      width: 20%; }
+    #amount .designer_list_head:after, #amount .designer_list_content:after {
+      clear: both;
+      content: "";
+      display: block; }
+  #amount .designer_list_head {
+    background: #eee;
+    margin-top: 15px; }
+  #amount .designer_list_content li {
+    padding: 0; }
+    #amount .designer_list_content li span:last-child:after {
+      content: "";
+      display: block;
+      clear: both; }
+  #amount .designer_list_content ul li {
+    float: none; }
+    #amount .designer_list_content ul li span.designer_list_name {
+      text-align: right; }
+      #amount .designer_list_content ul li span.designer_list_name img {
+        display: inline-block; }
+    #amount .designer_list_content ul li ul li .designer_list_description {
+      padding-left: 50px; }
+  #amount .btn_group {
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    bottom: 0;
+    padding: 15px 0;
+    text-align: center;
+    background: #eee; }

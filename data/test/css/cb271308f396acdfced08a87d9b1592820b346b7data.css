@@ -1,0 +1,156 @@
+form input[type=text], input[type=password] {
+    font-size: 14pt;
+    padding: 3px 5px;
+}
+
+/*h2.feature {
+	font-size: 1.8em;
+	margin-bottom: 40px;
+}
+
+h3.section {
+	color: #F26720;
+	font-size: 1.4em;
+	margin-bottom: 20px;
+}
+
+div.section {
+	border: 1px solid #a0a0a0;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+
+span.model_label {
+	color: #AB2B0D;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+label.model_label {
+	color: #5F3E2C;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+span.model_data, span.not_applicable, div.model_data {
+	color: #555;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+span.not_applicable {
+	font-style: italic;
+}
+
+span.model_name {
+	color: #444;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+a.action {
+	font-size: 1.1em;
+	margin-left: 1px;
+	font-weight: bold;
+}
+
+span.secondary_action {
+	font-size: 1em;
+	margin-left: 1px;
+	font-weight: bold;
+}
+
+span.unavailable_action {
+	font-size: 1.1em;
+	margin-left: 1px;
+	font-weight: bold;
+	color: #666;
+	text-decoration: underline;
+}
+
+p.model_data {
+	margin-bottom: 15px;
+}
+
+table.model_data {
+	color: #555;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+table.model_data th {
+	color: #ab2b0d;
+	font-size: 1.1em;
+	font-weight: bold;
+	border-bottom: 1px solid #ab2b0d;
+}
+
+table.model_data tbody tr {
+	border-bottom: 1px dashed #a0a0a0;
+}
+
+table.model_data td {
+	padding: 10px 20px 10px 20px;
+}
+
+img.preview_logo {
+	border: 10px solid #D8D8D8;
+}
+
+.required {
+	color: red;
+}
+
+.field_with_errors_message {
+	color: #F26720;
+	font-weight: bold;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+span.hint {
+	font-size: .8em;
+	color: #AB2B0D;
+	font-style: italic;
+	margin-left: 5px;
+}
+
+input[type=text] {
+	width: 25em;
+	font-size: 1.1em;
+  padding: 0.25em;
+}
+
+input[type=text].narrow {
+	width: 10em;
+}
+
+input[type=password] {
+	width: 20em;
+  padding: 0.25em;
+}
+
+input[type=password].narrow {
+	width: 10em;
+}
+
+button {
+	font-weight: bold;
+}
+
+input[type="submit"] {
+	font-weight: bold;
+}
+
+input[type=radio] {
+	color: #5F3E2C;
+	margin: 0 5px 10px 0;
+	font-weight: bold;
+}
+
+ul.points li {
+	list-style-image: url("/images/gray_arrow_bullet.gif");
+	list-style-type: circle;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}*/

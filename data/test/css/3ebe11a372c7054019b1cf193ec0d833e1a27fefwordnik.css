@@ -1,0 +1,30 @@
+body {
+  background-image: url('http://www.motionbackgroundsforfree.com/wp-content/uploads/2012/05/Screen-shot-2012-05-21-at-11.11.01-AM.png');
+  background-attachment: fixed;
+  background-size: 100%;
+  
+}
+#NewWord {
+  
+  background-color: cyan;
+  margin-bottom:20px;
+  border-radius: 50px;
+  opacity: 0.7;
+}
+#wordAppend, #defAppend {
+  border-radius: 20px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  font-family: Courier, Monaco, monospace;
+  text-shadow: 10px 10px 10px black;
+}
+#defAppend {
+  margin-top: 20px;
+}
+#NewWord > p {
+  color: black;
+}
+#wordAppend {
+  
+}

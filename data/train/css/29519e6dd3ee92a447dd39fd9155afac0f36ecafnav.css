@@ -1,0 +1,106 @@
+/* Navigation
+------------------------------ */
+.nav-primary {
+   clear: left;
+   margin: 0 0 2em;
+}
+.nav-primary h3 {
+   position: absolute;
+   left: -999em;
+}
+.nav-primary ul {
+   border: 1px solid #e6e6e6;
+}
+.nav-primary li {
+   font-size: 1.8em;
+   border-bottom: 1px solid #eee;
+   margin-right:10px;
+   padding:3px;
+}
+.nav-primary li:last-child {
+   border-bottom: 0;
+   margin-right:0;
+}
+.nav-primary a {
+   display: block;
+   padding: .5em .8em;
+   text-decoration: none;
+   color: #333;
+}
+.nav-primary a:hover,
+.nav-primary a:focus {
+   background-color: #f8f8f8;
+}
+.nav-primary .nav-current {
+   font-weight: bold;
+}
+
+/* drop down menu formatting when all menu items won't fit in a single line */
+.nav-menu .nav-primary {
+   margin: 0 0 1.5em;
+   position: relative;
+   overflow: hidden;
+}
+.nav-menu .nav-primary a {
+   padding-right: 3em;
+}
+.nav-menu .nav-primary h3 {
+   position: absolute;
+   top: 0;
+   left: auto;
+   right: 0;
+   display: block;
+   width: 4em;
+   height: 4.5em; 
+   background: #ccc url(img/icons.png) no-repeat -205px 45%;
+   text-indent: -999em;
+   cursor: pointer;
+}
+.nav-menu .nav-primary.expanded h3 {
+   background-position: -169px 45%;
+}
+.nav-menu .nav-primary li {
+   clear: left;
+   display: none;
+}    
+.nav-menu .nav-primary.expanded li,
+.nav-menu .nav-primary li.nav-current {
+   display: list-item;
+} 
+.nav-menu .nav-primary li.nav-current {
+   border-bottom-width: 0;
+}
+.nav-menu .nav-primary.expanded li.nav-current {
+   border-bottom-width: 1px;
+}
+
+
+/* Media queries
+------------------------------ */
+
+@media screen and (min-width: 640px) {
+   .nav-primary,
+   .nav-primary ul {
+      float: left;
+   }
+   .nav-primary li {
+      float: left;
+      font-size: 1.5em;
+      border-bottom: 0;
+   }
+   .nav-menu .nav-primary {
+      float: right;
+      clear: none;
+   }    
+}
+
+@media screen and (min-width: 800px) {
+   .nav-primary {
+      float: right;
+      clear: none;
+   }   
+   
+   span.dropdown {
+		display:none;
+   }
+}

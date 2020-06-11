@@ -1,0 +1,119 @@
+/* message STARTS */
+.message-list{
+
+}
+.message-item{
+    padding: 0px 15px 0px 15px;
+}
+.message-item .message-wrap{
+    border-bottom: 1px solid #dddcdc;
+    padding: 10px 15px;
+}
+.message-item .message-wrap:hover{
+    background-color: #f3f3f3;
+}
+.message-item .user-head{
+    height: 60px;
+    width: 60px;
+}
+.message-item .message-info{
+    color: #222;
+    margin-left: 20px;
+}
+.message-item .message-info .user-info{
+    display: inline-block;
+    width: 450px;
+}
+.message-item .message-info .user-info a{
+    color: #222;
+    font-size: 16px;
+}
+.message-item .message-info .message-time{
+    display: inline-block;
+    width: 140px;
+}
+.message-item .message-info .message-status{
+    display: inline-block;
+    width: 100px;
+}
+.message-item .message-operation{
+    display: none;
+    width: 100px;
+}
+.message-item:hover .message-operation{
+    display: inline-block;
+}
+.message-item .message-operation a{
+    color: #666;
+    font-size: 20px;
+    margin-right: 5px;
+}
+.message-item .message-operation a:hover,
+.message-item .message-operation a:focus{
+    color: #c04f50;
+}
+.message-item .message-content{
+    color: #666;
+    margin-left: 20px;
+    padding-top: 5px;
+    width: 440px;
+}
+.message-item .message-content .message-text{
+
+}
+.message-item .message-content .message-image{
+    max-height: 100px;
+}
+.message-item .message-content .message-voice{
+
+}
+.message-item .reply-wrap{
+    margin: 10px 0 0 20px;
+}
+/* message ENDS */
+
+/* datetime STARTS */
+.datetime-group input[readonly]{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.datetime-group .input-group-addon{
+    background-color: #eee;
+    cursor: pointer;
+}
+.datetime-group .input-group-addon i{
+    color: black;
+}
+/* datetime ENDSS */
+
+/* quick reply STARTS */
+#quickReplyDiv{
+    width: 601px;
+}
+#quickReplyDiv > div{
+    margin-bottom: 8px;
+}
+#replyInput{
+    border: 1px solid #c3c3c3;
+    box-shadow: 0 2px 2px 0 #e3e3e3;
+    -webkit-box-shadow: 0 2px 2px 0 #e3e3e3;
+    -moz-box-shadow: 0 2px 2px 0 #e3e3e3;
+    height: 80px;
+    outline: none;
+    padding: 8px 12px;
+    resize: none;
+    width: 600px;
+}
+#replyOk{
+    width: 100px;
+}
+#replyCancel{
+    color: #0088cc;
+    margin-left: 20px;
+}
+#wordsCount em.text-warn{
+    color: #b11516;
+    font-weight: bold;
+}
+/* quick reply ENDS */

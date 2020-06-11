@@ -1,0 +1,21 @@
+#!/bin/sh
+
+set -e
+
+# Automatically added by dh_installinit, edited for use with debconf
+# Not added anymore due to dh_installinit -n, so we manage it manually.
+if [ -x "/etc/init.d/ircd-hybrid" ]; then
+    if [ -e /usr/share/debconf/confmodule ]; then
+	. /usr/share/debconf/confmodule
+	db_get ircd-hybrid/restart_on_upgrade
+	if [ "$RET" = "true" ]; then
+	    invoke-rc.d ircd-hybrid stop || exit $?
+	fi
+	db_stop
+    else
+	invoke-rc.d ircd-hybrid stop || exit $?
+    fi
+fi
+# End automatically added section
+
+#DEBHELPER#

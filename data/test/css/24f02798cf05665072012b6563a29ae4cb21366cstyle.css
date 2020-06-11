@@ -1,0 +1,44 @@
+.loader {
+  position: relative;
+  background: #3b5998;
+  width: 400px;
+  height: 20px;
+  border: 2px solid #333;
+  top: 250px;
+  left: 35%;
+}
+
+.loading-bar {
+  background: lightcyan;
+  max-width: 20px;
+  height: 20px;
+  animation: load 3s cubic-bezier(1, 0, 0, 1) infinite;
+}
+
+@keyframes load {
+  0% {
+    opacity: 0;
+    max-width: 0;
+  }
+  1% {
+    opacity: 1;
+    max-width: 0px;
+  }
+  10% {
+    opacity: 1;
+    max-width: 20px;
+  }
+  50% {
+    max-width: 380px;
+  }
+  99% {
+    opacity: 1;
+    max-width: 0;
+    margin-left: 400px;
+  }
+  100% {
+    opacity: 0;
+    max-width: 0;
+    margin-left: 400px;
+  }
+}

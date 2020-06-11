@@ -1,0 +1,21 @@
+body{font-size:14px;font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体"}
+.api-main{margin:20px 0 0 20px;width:95%;}
+/*标题*/
+.api-h2{ background-color: #5F9336;color: #fff;font-size: 13px;padding: 3px 6px;text-align: left;}
+.api-title{font-weight:bold; color:#000;font-size:16px;margin-top:20px;}
+/*段落*/
+.api-p {font-size:14px;margin-top:8px;}
+/*表格*/
+.api-table{margin-top:12px; width:100%; border-bottom: 1px solid #c1c1c1;border-right: 1px solid #c1c1c1;}
+.api-table thead{}
+.api-table td, .api-table th{  border-left: 1px solid #c1c1c1;border-top: 1px solid #c1c1c1;padding:8px}
+.api-table thead th{background:#DBDBDB;}
+.api-table .th1{width:auto;}
+.api-table .th2{width:auto;}
+.api-table .th3{width:500px;}
+.api-table .th4{width:auto;}
+.api-table .th5{width:200px;}
+.api-fun-table .th1{width:auto;}
+.api-fun-table .th2{width:150px;}
+.api-fun-table .th3{width:600px;}
+.api-table tbody{}

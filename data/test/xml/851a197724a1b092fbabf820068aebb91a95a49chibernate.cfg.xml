@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<!-- shared properties -->
+
+	<!-- properties for this SessionFactory only -->
+	<session-factory>
+
+		<property name="show_sql">false</property>
+
+		<!-- Drop and re-create the database schema on startup -->
+		<property name="hbm2ddl.auto">create</property>
+		
+		<property name="use_outer_join">true</property>
+		<!-- <property name="SetBigStringTryClob">true</property> -->
+
+		<property name="jdbc.batch_size">0</property>
+
+		<property name="query.substitutions">true 1, false 0, yes 'Y', no 'N'</property>
+
+		<property name="connection.provider_class">org.hibernate.connection.DriverManagerConnectionProvider</property>
+		<property name="connection.username">sa</property>
+		<property name="connection.password"></property>
+		<property name="connection.url">jdbc:hsqldb:mem:squale</property>
+		<property name="connection.driver_class">org.hsqldb.jdbcDriver</property>
+	
+		<property name="dialect">org.hibernate.dialect.HSQLDialect</property>
+		<property name="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
+
+		<property name="jdbc.use_streams_for_binary">true</property>
+
+		<!-- begin mapping files -->
+		<mapping resource="mapping/access/UserAccessBO.hbm.xml" />
+		
+		<mapping resource="mapping/component/AbstractComponentBO.hbm.xml" />
+		<mapping resource="mapping/component/AuditBO.hbm.xml" />
+		<mapping resource="mapping/component/AuditDisplayConfBO.hbm.xml" />
+		<mapping resource="mapping/component/AuditGridBO.hbm.xml" />
+		<mapping resource="mapping/component/parameters/ProjectParameterBO.hbm.xml" />
+		
+		<mapping resource="mapping/config/AdminParamsBO.hbm.xml"/>
+		<mapping resource="mapping/config/AbstractTasksUserBO.hbm.xml" />
+		<mapping resource="mapping/config/AuditFrequencyBO.hbm.xml" />
+		<mapping resource="mapping/config/Profile_DisplayConfBO.hbm.xml" />
+		<mapping resource="mapping/config/ServeurBO.hbm.xml" />
+		<mapping resource="mapping/config/SqualeParamsBO.hbm.xml"/>
+		<mapping resource="mapping/config/StopTimeBO.hbm.xml" />
+		<mapping resource="mapping/config/TaskBO.hbm.xml" />
+		<mapping resource="mapping/config/TaskParameterBO.hbm.xml" />
+		<mapping resource="mapping/config/TaskRefBO.hbm.xml" />
+		<mapping resource="mapping/config/web/AbstractDisplayConfBO.hbm.xml" />
+		<mapping resource="mapping/config/web/HomepageComponentBO.hbm.xml"/>
+		
+		<mapping resource="mapping/job/JobBO.hbm.xml" />
+		
+		<mapping resource="mapping/message/MessageBO.hbm.xml" />
+		<mapping resource="mapping/message/NewsBO.hbm.xml" />
+		
+		<mapping resource="mapping/profile/AtomicRightsBO.hbm.xml" />
+		<mapping resource="mapping/profile/ProfileBO.hbm.xml" />
+		<mapping resource="mapping/profile/UserBO.hbm.xml" />
+		
+		<mapping resource="mapping/result/ErrorBO.hbm.xml" />
+		<mapping resource="mapping/result/MarkBO.hbm.xml" />
+		<mapping resource="mapping/result/MeasureBO.hbm.xml" />
+		<mapping resource="mapping/result/MetricBO.hbm.xml" />
+		<mapping resource="mapping/result/QualityResultBO.hbm.xml" />
+		<mapping resource="mapping/result/QualityResultCommentBO.hbm.xml" />
+		<mapping resource="mapping/result/SqualeReferenceBO.hbm.xml" />
+		<mapping resource="mapping/result/rulechecking/RuleCheckingTransgressionItemBO.hbm.xml" />
+		
+		<mapping resource="mapping/rule/AbstractFormulaBO.hbm.xml" />
+		<mapping resource="mapping/rule/QualityGridBO.hbm.xml" />		
+		<mapping resource="mapping/rule/QualityRuleBO.hbm.xml" />		
+		
+		<mapping resource="mapping/rulechecking/RuleBO.hbm.xml" />		
+		<mapping resource="mapping/rulechecking/RuleSetBO.hbm.xml" />		
+		<mapping resource="mapping/rulechecking/checkstyle/CheckstyleModuleBO.hbm.xml" />
+		
+		<mapping resource="mapping/sharedrepository/ApplicationExportBO.hbm.xml"/>
+		<mapping resource="mapping/sharedrepository/SegmentationBO.hbm.xml"/>
+		<mapping resource="mapping/sharedrepository/SharedRepoStatsBO.hbm.xml"/>
+		<mapping resource="mapping/sharedrepository/segment/SegmentBO.hbm.xml"/>
+		<mapping resource="mapping/sharedrepository/segment/SegmentCategoryBO.hbm.xml"/>
+		
+		<mapping resource="mapping/stats/SiteStatsDICTBO.hbm.xml" />
+		<mapping resource="mapping/stats/SiteAndProfilStatsDICTBO.hbm.xml" />
+		
+		<mapping resource="mapping/tag/TagBO.hbm.xml" />
+		<mapping resource="mapping/tag/TagCategoryBO.hbm.xml" />
+		<!-- end mapping files   -->
+
+	</session-factory>
+
+</hibernate-configuration>
+

@@ -1,0 +1,144 @@
+#!/bin/bash
+
+if [ -z "$1" -o -z "$2" ]
+  then
+    echo "Error: not enough arguments"
+    exit 0;
+  fi
+
+case $1 in
+  "init")
+     if [ ! -f "$2" ]
+       then 
+         echo "Error: This file doesn't exist"
+         exit 0
+       fi 
+     repo=$2
+     repo=${repo##*/}
+     repo=".$repo"
+     if [ -a "$repo" ]
+       then
+         if [ -d "$repo" ]
+           then
+             echo "Error: Repo exists"
+           else
+	     echo "Error: What is it?"
+           fi
+         exit 0
+       fi
+     mkdir "$repo" 
+     echo "Repo has been created=)"
+  ;;
+  "commit")
+     repo=$2
+     repo=${repo##*/}
+     repo=".$repo"
+     if [ ! -d "$repo" ]
+       then
+         echo "Repo doesn't exist"
+         exit 0
+       fi
+    if [ -f "$repo/vers" ]
+      then
+	v=$(( $(cat "$repo/vers") + 1 ))
+        x=$(diff "$repo/last" $2)
+        x=${x##* }
+	if [ -z $x ]
+        then
+          echo "Last revision and file are similar"
+          exit 0
+        else
+          diff "$repo/last" $2 > "$repo/diff$v"
+          cp "$2" "$repo/last"
+          echo "Revision #$v was committed"
+          echo "$v" > "$repo/vers"
+        fi 
+      else
+        echo "0" > "$repo/vers"
+	cp $2 "$repo/origin"
+        cp $2 "$repo/last"
+	echo "Revision #0 was commited"
+      fi
+  ;; 
+  "status")
+    repo=$2
+    repo=${repo##*/}
+    repo=".$repo"
+    if [ ! -d "$repo" ]
+    then
+        echo "Repo doesn't exist"
+    else
+        if [ ! -f "$repo/last" ]
+        then 
+          echo "No files were committed"
+        else
+          x=$(diff "$repo/last" $2)
+          x=${x##* }
+	  if [ -z $x ]
+          then
+             echo "No changes"
+             exit 0
+          else
+             echo "File has been changed"
+             exit 1
+          fi
+        fi 
+     fi
+  ;;
+  "update")
+    repo=$2
+    repo=${repo##*/}
+    repo=".$repo"
+    if [ ! -d "$repo" ]
+    then
+        echo "Repo doesn't exist"
+    else
+        if [ ! -f "$repo/last" ]
+        then 
+          echo "No files were committed"
+        else
+          if [ -z $3 ]
+          then
+            echo "No third argument"
+          else
+            if [ $3 -gt $(cat "$repo/vers") -o $3 -lt 0 ]
+            then
+              echo "Incorrect revision number"
+            else
+              cp "$repo/origin" "$repo/curr.tmp"
+              for i in $(seq 1 $3)
+	      do
+ 		patch "$repo/curr.tmp" "$repo/diff$i" > /dev/null
+              done
+              cp "$repo/curr.tmp" $2 
+              cat $2
+              rm "$repo/curr.tmp"
+            fi
+          fi
+        fi 
+     fi    
+  ;;
+  "diff")
+    repo=$2
+    repo=${repo##*/}
+    repo=".$repo"
+    if [ ! -d "$repo" ]
+    then
+        echo "Repo doesn't exist"
+    else
+        if [ ! -f "$repo/last" ]
+        then 
+          echo "No files were committed"
+        else
+          diff "$repo/last" $2
+        fi 
+     fi
+  ;;
+  *)
+    echo "Unknown command"
+  ;;
+esac
+
+exit 0
+
+

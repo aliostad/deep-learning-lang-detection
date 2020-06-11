@@ -1,0 +1,35 @@
+.viewTable td, .viewTable tr {
+	max-height: 100px;
+	overflow: hidden;
+}
+
+.notesView {
+	width: 100%;
+}
+.notesView span.xspPanelViewColumnHeader {
+	font-weight: bold !important;
+	color: #F16D0E;
+	/*white-space: nowrap;*/
+}
+.notesView .xspDataTable tbody tr:nth-child(even) { background-color: rgba(0, 0, 0, 0.035) }
+/*.notesView div.xspPanelViewColumnHeader { display: inline }*/
+
+
+
+table.hideHeader > tbody > tr:first-child { display: none }
+table.hideFooter > tbody > tr:last-child { display: none }
+
+.notesView td { overflow: hidden }
+
+.notesView .xspDataTable td {
+	padding: 8px;
+}
+
+/*.notesView .headerRow, .notesView .footerRow { display: none }*/
+
+/*.lotusView th, .lotusView td {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	height: 50px;
+}*/

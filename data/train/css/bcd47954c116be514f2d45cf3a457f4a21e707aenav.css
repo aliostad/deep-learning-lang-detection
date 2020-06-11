@@ -1,0 +1,50 @@
+/***
+ * NAV OBJECT
+ * ==========
+ *
+ * @name         nav
+ * @desc         Horizontaly alignes items (nav, breadcrumbs, ...)
+ *               HTML: `ul.nav li` preferably, or `div.nav div.nav__item`
+ * @author       quentind
+ * @tested       IE7+
+ * @requires     -
+ */
+.nav {
+
+	/* Reset list, just in case */
+	margin:0;
+	list-style:none;
+	padding:0;
+}
+
+/* Clearfix the nav */
+.nav:before,
+.nav:after {
+	content:" ";
+	display:table;
+}
+
+.nav:after {
+	clear:both;
+}
+
+.nav {
+	*zoom:1;
+}
+
+	.nav > li,
+	.nav__item {
+		float:left;
+	}
+
+/*
+ * With gutters
+ */
+.nav--gutter {
+	margin-left:-20px; /* (gutter size) */
+}
+
+	.nav--gutter > li,
+	.nav--gutter .nav__item {
+		padding:0 0 20px 20px; /* 0 0 (gutter size) (gutter size) */
+	}

@@ -1,0 +1,152 @@
+/* Popups with messages */
+#axiom_modal_bg {
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	background-color: rgba(0,0,0,0.3);
+	display:none;
+	z-index:100000;
+}
+.axiom_message {
+	display:block;
+	position:absolute;
+	max-width:800px;
+	min-width:280px;
+	overflow:hidden;
+	border-radius:4px;
+	border:2px solid #e5e5e5;
+	background-color:#ffffff;
+	color:#4c4c4c;
+	opacity:0;
+	top:0;
+	left:40%;
+	margin-left:-200px;
+	padding:12px;
+	line-height:140%;
+	z-index:100001
+}
+.axiom_message .axiom_message_close {
+	display:block;
+	position:absolute;
+	width:16px;
+	height:16px;
+	line-height:16px;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+	right:6px;
+	top:4px;
+	cursor:pointer;
+	color:#4c4c4c;
+}
+.axiom_message .axiom_message_icon {
+	float:left;
+	display:block;
+	width:35px;
+	height:35px;
+	line-height:28px;
+	text-align:center;
+	border: 4px solid #c9c9c9;
+	border-radius:50%;
+	margin: 0 20px 6px 0;
+	font-size:24px;
+	font-weight:bold;
+	color:#c9c9c9;
+}
+.axiom_message .axiom_message_icon:before {
+	padding:0;
+	margin:0;
+}
+.axiom_message .axiom_message_header {
+	color:#4c4c4c;
+	padding: 0;
+	font-size:18px;
+	font-weight:bold;
+}
+.axiom_message:not(.axiom_message_dialog) .axiom_message_body {
+	padding:12px 0 0 63px;
+}
+
+/* Warning popup */
+.axiom_message_warning {
+	border-color:#d7a9b1;
+	background-color:#ffcdde;
+	color:#a63a4b;
+}
+.axiom_message_warning .axiom_message_close {
+	color:#a63a4b;
+}
+.axiom_message_warning .axiom_message_icon {
+	border-color: #a63a4b;
+	color:#a63a4b;
+}
+.axiom_message_warning .axiom_message_icon {
+	line-height:34px;
+}
+.axiom_message_warning .axiom_message_header {
+	color:#a63a4b;
+}
+/* Success popup */
+.axiom_message_success {
+	border-color:#b3e7a8;
+	background-color:#d8ffd0;
+	color:#517d48;
+}
+.axiom_message_success .axiom_message_close {
+	color:#517d48;
+}
+.axiom_message_success .axiom_message_icon {
+	border-color: #517d48;
+	color:#517d48;
+}
+.axiom_message_success .axiom_message_icon {
+	line-height:34px;
+}
+.axiom_message_success .axiom_message_header {
+	color:#517d48;
+}
+/* Info popup */
+.axiom_message_info {
+	border-color:#9ecade;
+	background-color:#ebf7fe;
+	color:#4cb2e1;
+}
+.axiom_message_info .axiom_message_close {
+	color:#4cb2e1;
+}
+.axiom_message_info .axiom_message_icon {
+	border-color: #4cb2e1;
+	color:#4cb2e1;
+}
+.axiom_message_info .axiom_message_icon {
+	line-height:34px;
+}
+.axiom_message_info .axiom_message_header {
+	color:#4cb2e1;
+}
+/* Dialog popup */
+.axiom_message_dialog .axiom_message_icon {
+	line-height:36px;
+}
+.axiom_message_dialog .axiom_message_buttons {
+	margin-top:20px;
+}
+.axiom_message_dialog .axiom_message_button {
+	display:inline-block;
+	padding:0 12px;
+	margin-right:6px;
+	min-width:60px;
+	height:30px;
+	line-height:30px;
+	background-color:#4b4b4b;
+	border-radius:6px;
+	color:#ffffff;
+	cursor:pointer;
+	text-align:center;
+	font-weight:bold;
+}
+.axiom_message_dialog .axiom_message_button:hover {
+	background-color:#4cb2e1;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service:service category="feature" id="ch.elexis.laborimport_lg1"
+	name="Laborimport LG1" provider="support@medelexis.ch" type="Laboranbindung"
+	version="2.0.0" xmlns:service="http://www.medelexis.ch/services"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.medelexis.ch/services ../medelexis-commons/rsc/service.xsd ">
+	<service:conditions>
+		<service:roles>
+			<service:role priceClass="fixed-low">
+				<service:pricePerMandator amount="8.50" currency="CHF" />
+			</service:role>
+		</service:roles>
+	</service:conditions>
+	<service:docURL>http://www.medelexis.ch/index.php?id=64</service:docURL>
+	<service:description>Laborimport LG1</service:description>
+	<service:depends>ch.medelexis.nucleus ch.elexis.importer.div</service:depends>
+</service:service>

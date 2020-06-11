@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="PrereqMeetService">
+      <implementation-class>team.soa.cms.ws.basicCheck.PrereqMeetService</implementation-class>
+    </service>
+    <service name="StudentValidService">
+      <implementation-class>team.soa.cms.ws.basicCheck.StudentValidService</implementation-class>
+    </service>
+    <service name="StudentDropClass">
+      <implementation-class>team.soa.cms.ws.StudentDropClass</implementation-class>
+    </service>
+    <service name="PermsConfmMsgService">
+      <implementation-class>team.soa.cms.msgQueueService.PermsConfmMsgService</implementation-class>
+    </service>
+    <service name="UpdateClass">
+      <implementation-class>team.soa.cms.ws.UpdateClass</implementation-class>
+    </service>
+    <service name="RequestPermission">
+      <implementation-class>team.soa.cms.ws.RequestPermission</implementation-class>
+    </service>
+    <service name="ClassValidService">
+      <implementation-class>team.soa.cms.ws.basicCheck.ClassValidService</implementation-class>
+    </service>
+    <service name="PermissionRequestService">
+      <implementation-class>team.soa.cms.ws.permission.PermissionRequestService</implementation-class>
+    </service>
+    <service name="ClassCanRegisterService">
+      <implementation-class>team.soa.cms.ws.basicCheck.ClassCanRegisterService</implementation-class>
+    </service>
+    <service name="PermsReqMsgService">
+      <implementation-class>team.soa.cms.msgQueueService.PermsReqMsgService</implementation-class>
+    </service>
+    <service name="InsertStudentEnrollment">
+      <implementation-class>team.soa.cms.ws.InsertStudentEnrollment</implementation-class>
+    </service>
+    <service name="RegCheckService">
+      <implementation-class>team.soa.cms.ws.RegCheckService</implementation-class>
+    </service>
+    <service name="DAOService">
+      <implementation-class>team.soa.cms.ws.daoService.DAOService</implementation-class>
+    </service>
+    <service name="MailService">
+      <implementation-class>team.soa.cms.mail.MailService</implementation-class>
+    </service>
+    <service name="StudentEnrollmentService">
+      <implementation-class>team.soa.cms.ws.StudentEnrollmentService</implementation-class>
+    </service>
+    <service name="getWaitlist">
+      <implementation-class>team.soa.cms.ws.getWaitlist</implementation-class>
+    </service>
+  </services>
+  <clients/>
+  <jsr109>true</jsr109>
+</jax-ws>

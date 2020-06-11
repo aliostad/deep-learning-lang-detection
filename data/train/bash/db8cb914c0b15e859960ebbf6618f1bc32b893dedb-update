@@ -1,0 +1,105 @@
+#!/bin/bash
+
+. "$(dirname $0)/config"
+. "$(dirname $0)/db-functions"
+
+if [ $# -ge 1 ]; then
+	warning "Calling ${0##*/} with a specific repository is no longer supported"
+	exit 1
+fi
+
+# Find repos with packages to release
+staging_repos=($(find  "${STAGING}" -mindepth 1 -type f -name "*${PKGEXT}" -printf '%h\n' | sort -u))
+if [ $? -ge 1 ]; then
+	die "Could not read ${STAGING}"
+fi
+
+repos=()
+for staging_repo in ${staging_repos[@]##*/}; do
+	if in_array ${staging_repo} ${PKGREPOS[@]}; then
+		repos+=(${staging_repo})
+	fi
+done
+
+# TODO: this might lock too much (architectures)
+for repo in ${repos[@]}; do
+	for pkgarch in ${ARCHES[@]}; do
+		repo_lock ${repo} ${pkgarch} || exit 1
+	done
+done
+
+# check if packages are valid
+for repo in ${repos[@]}; do
+	if ! check_repo_permission "${repo}"; then
+		die "You don't have permission to update packages in ${repo}"
+	fi
+	pkgs=($(getpkgfiles "${STAGING}/${repo}/"*${PKGEXT}))
+	if [ $? -eq 0 ]; then
+		for pkg in ${pkgs[@]}; do
+			if [ -h "${pkg}" ]; then
+				die "Package ${repo}/${pkg##*/} is a symbolic link"
+			fi
+			if ! check_pkgfile "${pkg}"; then
+				die "Package ${repo}/${pkg##*/} is not consistent with its meta data"
+			fi
+			if ${REQUIRE_SIGNATURE} && ! pacman-key -v "${pkg}.sig" >/dev/null 2>&1; then
+				die "Package ${repo}/${pkg##*/} does not have a valid signature"
+			fi
+			if ! check_pkgsvn "${pkg}" "${repo}"; then
+				die "Package ${repo}/${pkg##*/} is not consistent with svn repository"
+			fi
+			if ! check_pkgrepos "${pkg}"; then
+				die "Package ${repo}/${pkg##*/} already exists in another repository"
+			fi
+			if ! check_packager "${pkg}"; then
+				die "Package ${repo}/${pkg##*/} does not have a valid packager"
+			fi
+			if ! check_buildinfo "${pkg}"; then
+				die "Package ${repo}/${pkg##*/} does not have a .BUILDINFO file"
+			fi
+			if ! check_builddir "${pkg}"; then
+				die "Package ${repo}/${pkg##*/} was not built in a chroot"
+			fi
+		done
+		if ! check_splitpkgs ${repo} ${pkgs[@]}; then
+			die "Missing split packages for ${repo}"
+		fi
+	else
+		die "Could not read ${STAGING}"
+	fi
+done
+
+for repo in ${repos[@]}; do
+	msg "Updating [${repo}]..."
+	any_pkgs=($(getpkgfiles "${STAGING}/${repo}/"*-any${PKGEXT} 2>/dev/null))
+	for pkgarch in ${ARCHES[@]}; do
+		add_pkgs=()
+		arch_pkgs=($(getpkgfiles "${STAGING}/${repo}/"*-${pkgarch}${PKGEXT} 2>/dev/null))
+		for pkg in ${arch_pkgs[@]} ${any_pkgs[@]}; do
+			pkgfile="${pkg##*/}"
+			msg2 "${pkgfile} (${pkgarch})"
+			# any packages might have been moved by the previous run
+			if [ -f "${pkg}" ]; then
+				mv "${pkg}" "$FTP_BASE/${PKGPOOL}"
+			fi
+			ln -s "../../../${PKGPOOL}/${pkgfile}" "$FTP_BASE/$repo/os/${pkgarch}"
+			# also move signatures
+			if [ -f "${pkg}.sig" ]; then
+				mv "${pkg}.sig" "$FTP_BASE/${PKGPOOL}"
+			fi
+			if [ -f "$FTP_BASE/${PKGPOOL}/${pkgfile}.sig" ]; then
+				ln -s "../../../${PKGPOOL}/${pkgfile}.sig" "$FTP_BASE/$repo/os/${pkgarch}"
+			fi
+			add_pkgs[${#add_pkgs[*]}]=${pkgfile}
+		done
+		if [ ${#add_pkgs[@]} -ge 1 ]; then
+			arch_repo_add "${repo}" "${pkgarch}" ${add_pkgs[@]}
+		fi
+	done
+done
+
+for repo in ${repos[@]}; do
+	for pkgarch in ${ARCHES[@]}; do
+		repo_unlock ${repo} ${pkgarch}
+	done
+done

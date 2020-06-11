@@ -1,0 +1,39 @@
+
+.write, .write * {
+	margin:0;
+	display:inline;
+	width:100%;
+/*	background-color:inherit;
+	text-align:inherit;
+	padding:inherit;
+*/}
+.write .input {
+	resize:none;
+	border:0;
+	font-style:oblique;
+	font-size:.9em;
+}
+.write .input:focus {
+	outline:none;
+}
+
+#confirm {
+	display:inline-block;
+	overflow:hidden;
+	max-width:0%;
+	height:0;
+	opacity:0;
+	white-space:nowrap;
+	transition:max-width 1s,opacity 1s;
+	-webkit-transition:max-width 1s,opacity 1s;
+	-moz-transition:max-width 1s,opacity 1s;
+	-ms-transition:max-width 1s,opacity 1s;
+	-o-transition:max-width 1s,opacity 1s;
+}
+#confirm, #confirm * {
+	line-height:1.5em;
+	font-size:.9em;
+}
+#confirm>ul>* {
+	margin:5px;
+}

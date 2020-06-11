@@ -1,0 +1,26 @@
+<StyleList>
+  <Sample Name="Cluster Style" Class="ClusterPointStyleSample"  Image="clusterstyle">
+    <Description></Description>
+  </Sample>
+  <Sample Name="Custom Style" Class="CustomStyleSample"  Image="customstyle">
+    <Description></Description>
+  </Sample>
+  <Sample Name="Filter Style" Class="FilterStyleSample"  Image="filterstyle">
+    <Description></Description>
+  </Sample>
+  <Sample Name="Class Break Style" Class="ClassBreakStyleSample" Image="classbreak">
+    <Description></Description>
+  </Sample>
+  <Sample Name="Dot Densty Style" Class="DotDenstyStyleSample"  Image="dotdensity">
+    <Description></Description>
+  </Sample>
+  <Sample Name="Isoline Line Style" Class="IsolineStyleSample"  Image="isoline">
+    <Description></Description>
+  </Sample>
+  <Sample Name="Heat Style" Class="HeatStyleSample"  Image="heatmap">
+    <Description></Description>
+  </Sample>
+  <Sample Name="Icon Style" Class="IconStyleSample"  Image="iconstyle">
+    <Description></Description>
+  </Sample>
+</StyleList>

@@ -1,0 +1,292 @@
+/*
+
+# API's
+
+Some styles for API's
+
+## API List
+
+```
+<ul class="api-list">
+  <li class="api-list-item">
+    <img class="api-list-pic" src="http://www.gravatar.com/avatar/31ee0210738731b5751582f23244a19b?d=identicon&s=92" />
+    <div class="api-list-info">
+      <h4 class="api-list-title fixie"></h4>
+      <ul class="profile-links">
+        <li><span class="icon">a</span><a href="somewhere">Harry Wilson</a></span></li>
+        <li><span class="icon">c</span><a href="somewhere">4 collaborators</a></span></li>
+      </ul>
+    <div style="clear: both;"></div>
+      <p class="api-list-desc fixie"></p>
+    </div>
+    <div class="api-list-buttons"><button class="btn triangle-border right">19</button>
+      <button class="btn btn-regular">FOLLOWERS</button>
+    </div>
+    <div style="clear: both;"></div>
+  </li>
+  <li class="api-list-item">
+    <img class="api-list-pic" src="http://www.gravatar.com/avatar/31ee0210738731b5751582f23244a19b?d=identicon&s=92" />
+    <div class="api-list-info">
+      <h4 class="api-list-title fixie"></h4>
+      <p class="api-list-desc fixie"></p>
+    </div>
+    <div class="api-list-buttons">
+      <button class="btn triangle-border right">19</button>
+      <button class="btn btn-regular">FOLLOWERS</button>
+    </div>
+    <div style="clear: both;"></div>
+  </li>
+</ul>
+```
+
+*/
+.profile-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 5px;
+  height: 20px;
+}
+.profile-links li { 
+  float: left;
+  margin-right: 15px;
+}
+.profile-links .icon {
+  font-size: 18px;
+}
+.profile-links a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #39f;
+  margin-left: 5px;
+}
+.api-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.api-list li.api-list-item.single {
+  border-bottom: none;
+}
+.api-list li.api-list-item {
+  padding: 30px 0 30px 15px;
+  border-bottom: 1px solid #ccc;
+}
+.api-list-pic {
+  padding: 3px;
+  border: 1px solid #ccc;
+  float: left;
+}
+.api-list-info {
+  float: left;
+  width: 620px;
+  margin-left: 15px;
+  color: #6c6d6f;
+}
+.api-list-title {
+  margin: 4px 0 15px 0;
+  font-size: 24px;
+  line-height: 18px;
+  font-weight: normal;
+}
+.api-list-title a {
+  color: #171717;
+  text-decoration: none;
+}
+.api-list-desc {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  margin-top: 5px;
+  line-height: 18px;
+}
+.api-list-buttons {
+  float: right;
+}
+.api-list-buttons .btn-share {
+  float: right;
+  margin-top: 15px;
+}
+.no-more {
+  text-align: center;
+  padding: 50px;
+  color: #ccc;
+}
+
+/*
+  ## Featured
+
+```
+  <h2 class="featured-heading">FEATURED API</h2>
+```
+*/
+.featured-heading {
+  font-size: 26px;
+  font-family: 'Nexa';
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.menu-title {
+    font-size: 34px;
+    border-bottom: 1px solid #ccc;
+    width: 302px; 
+    padding-bottom: 15px;
+    font-family: 'Nexa';
+}
+.method-container .menu-title {
+  padding-left: 40px;
+  width: auto;
+}
+/*
+## Overview page
+
+```
+<div class="overview-page">
+  <h4>End point</h4>
+  <p>asdasd</p>
+</div>
+```
+*/
+.overview-page {
+  padding: 20px 0 20px 60px;
+}
+.overview-page p {
+  font-size: 14px;
+}
+.side-menu {
+  float: left;
+  width: 302px;
+}
+.api-details-container {
+  padding-top: 50px;
+}
+
+
+  th.request-body-header {
+    background: #08C !important;
+    color: #fff !important;
+  }
+
+
+  .api-name {
+    font-size: 26px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 2px 0 10px 0;
+    padding: 0;
+    height: 21px;
+    line-height: 26px;
+    color: #161717;
+  }
+  .api-description {
+    font-size: 14px;
+    color: #161717;
+    line-height: 18px;
+    height: 50px;
+  }
+  .quicklinks {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+  }
+  .quicklinks li {
+    float: left;
+    margin-right: 35px;
+  }
+  .quicklinks li a {
+    text-decoration :none;
+    margin-left: 5px;
+    color: #4a92fd;
+  }
+
+
+  .api-icon-col {
+    width: 150px;
+    float: left;
+  }
+  .api-desc-col {
+    float: left;
+    width: 643px;
+  }
+  .api-actions-col {
+    width: 230px;
+    float: left;
+    position: relative;
+  }
+
+
+  .actions-menu {
+    list-style: none;
+  }
+  .actions-menu li {
+    margin-bottom: 10px;
+    text-align: right;
+  }
+
+  .descriptive {
+    font-size: 14px;
+    color: #333;
+  }
+
+    .method-title {
+height: 40px;
+line-height: 44px;
+    font-size: 26px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #161717;
+  }
+  .request-table {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .request-table td {
+    height: 40px;
+    line-height: 40px;
+    padding: 5px;
+    vertical-align: middle;
+    line-height: 12px;
+  }
+    .request-table td:hover {
+      background: #eee;
+
+  }
+
+
+.edit-api-description:hover {
+  outline: 1px solid #ccc;
+  background: #ebebeb;
+}
+.method-page-container {
+  padding: 20px 0 20px 40px;
+}
+.method-section {
+  overflow: auto;
+  margin-bottom: 40px;
+}
+.method-section h3 {
+  margin: 0 0 15px 0;
+  font-weight: normal;
+  font-family: 'Nexa Bold';
+}
+.http-request {
+}
+.http-request-text {
+  line-height: 22px;
+  color: #555;
+}
+.resource-tablelist-container h3 {
+  font-size: 15px;
+  font-family: 'Nexa';
+
+}
+
+.api-container em {
+  color: #ccc;
+}

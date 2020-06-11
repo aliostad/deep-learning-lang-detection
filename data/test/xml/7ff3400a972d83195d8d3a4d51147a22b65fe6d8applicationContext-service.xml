@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"
+	default-autowire="byName">
+	<bean id="txProxyTemplate" abstract="true"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager" ref="transactionManager" />
+		<property name="proxyTargetClass" value="true"/>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="find*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="load*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="save*">PROPAGATION_REQUIRED</prop>
+				<prop key="add*">PROPAGATION_REQUIRED</prop>
+				<prop key="update*">PROPAGATION_REQUIRED</prop>
+				<prop key="remove*">PROPAGATION_REQUIRED</prop>
+				<prop key="*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="proxyFactoryBean" abstract="true" class="org.springframework.aop.framework.ProxyFactoryBean">
+	<property name="interceptorNames">
+		<list>
+		<value>sessionAccessInterceptor</value>
+		</list>
+	</property>
+	</bean>
+	<bean id="userService" class="com.tcl.portal.service.UserService"/>
+	<bean id="roleService" class="com.tcl.portal.service.RoleService"/>
+	<bean id="resourceService" class="com.tcl.portal.service.ResourceService"/>
+	<bean id="countryService" class="com.tcl.portal.service.CountryService"/>
+	<bean id="provinceService" class="com.tcl.portal.service.ProvinceService"/>
+	<bean id="cityService" class="com.tcl.portal.service.CityService"/>
+	<bean id="telecomoperatorsService" class="com.tcl.portal.service.TelecomoperatorsService"/>
+	<bean id="languageService" class="com.tcl.portal.service.LanguageService"/>
+	<bean id="spinfoService" class="com.tcl.portal.service.SpinfoService"/>
+	<bean id="ipinfoService" class="com.tcl.portal.service.IpinfoService"/>
+	<bean id="javaparameterService" class="com.tcl.portal.service.JavaparameterService"/>
+	<bean id="mobileinfoService" class="com.tcl.portal.service.MobileinfoService"/>
+	<bean id="gameinfoService" class="com.tcl.portal.service.GameinfoService"/>
+	<bean id="gameresouceService" class="com.tcl.portal.service.GameresouceService"/>
+	<bean id="pageinfoService" class="com.tcl.portal.service.PageinfoService"/>
+	<bean id="locationpageService" class="com.tcl.portal.service.LocationpageService"/>
+	<bean id="visiteinfoService" class="com.tcl.portal.service.VisiteinfoService"/>
+	<bean id="downloadinfoService" class="com.tcl.portal.service.DownloadinfoService"/>
+	<bean id="changelogService" class="com.tcl.portal.service.ChangelogService"/>
+	<bean id="logsService" class="com.tcl.portal.service.LogsService"/>
+	<bean id="customerService" class="com.tcl.portal.service.CustomerService"/>
+	<bean id="commentService" class="com.tcl.portal.service.CommentService"/>
+	<bean id="approvalService" class="com.tcl.portal.service.ApprovalService"/>
+	<bean id="typesService" class="com.tcl.portal.service.TypesService"/>
+	<bean id="systemparameterService" class="com.tcl.portal.service.SystemparameterService"/>
+</beans>

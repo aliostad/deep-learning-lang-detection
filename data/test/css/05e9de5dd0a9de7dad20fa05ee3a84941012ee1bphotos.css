@@ -1,0 +1,37 @@
+p.introduction {
+  margin: 1em auto;
+  max-width: 80%;
+  padding: 1em;
+  background: lemonchiffon;
+}
+div.content {
+  max-width: 90%;
+  margin: 1em auto;
+}
+nav.photo-nav {
+  width: 100%;
+}
+nav.photo-nav a {
+  width: 50%;
+  display: inline-block;
+  text-decoration: none;
+}
+nav.photo-nav div {
+  padding: 1em;
+}
+nav.photo-nav div:not(.disabled):hover {
+  background: lightgrey;
+}
+nav.photo-nav div.disabled {
+  color: grey;
+}
+nav.photo-nav div.next {
+  text-align: right;
+}
+figure {
+  margin: 0;
+  text-align: center;
+}
+figure img {
+  max-width: 100%;
+}

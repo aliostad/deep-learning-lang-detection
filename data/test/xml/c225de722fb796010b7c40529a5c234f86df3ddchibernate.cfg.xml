@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+<!--          <property name="hibernate.connection.password">abc@12345</property> -->
+
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/school_db</property>
+<!--         <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/school_data</property> -->
+<!-- 		<property name="hibernate.connection.username">xxx</property> -->
+<!--         <property name="hibernate.connection.password">xxxxx</property> -->
+<!--         <property name="hibernate.connection.url">jdbc:mysql://xxxxxx:3306/school_db</property> -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.cache.use_second_level_cache">false</property>
+		<property name="hibernate.cache.use_query_cache">false</property>
+		<property name="hibernate.cache.provider_class">org.hibernate.cache.HashtableCacheProvider</property>
+		<property name="current_session_context_class">thread</property>
+		<property name="current_session_context_class">org.hibernate.context.ManagedSessionContext</property>
+		<property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+        <property name="net.sf.ehcache.configurationResourceName">/ehcache.xml</property>
+        <property name="hibernate.connection.pool_size">25</property>
+        <property name="show_sql">false</property>
+
+		<mapping class="org.school.admin.model.Accessories"></mapping>
+        <mapping class="org.school.admin.model.AdminUser"></mapping>
+        <mapping class="org.school.admin.model.AdminUserRole"></mapping>
+        <mapping class="org.school.admin.model.AreaUnit"></mapping>
+        <mapping class="org.school.admin.model.BoardType"></mapping>
+        <mapping class="org.school.admin.model.BloodGroup"></mapping>
+        <mapping class="org.school.admin.model.BusInfo"></mapping>
+        <mapping class="org.school.admin.model.BusStop"></mapping>
+        <mapping class="org.school.admin.model.CampusInfo"></mapping>
+        <mapping class="org.school.admin.model.Cast"></mapping>
+        <mapping class="org.school.admin.model.CertificateType"></mapping>
+        <mapping class="org.school.admin.model.City"></mapping>
+        <mapping class="org.school.admin.model.ClassAccessories"></mapping>
+        <mapping class="org.school.admin.model.ClassInfo"></mapping>
+        <mapping class="org.school.admin.model.ClassFee"></mapping>
+        <mapping class="org.school.admin.model.ClassSection"></mapping>
+        <mapping class="org.school.admin.model.ClassSubjects"></mapping>
+        <mapping class="org.school.admin.model.ContactInfo"></mapping>
+		<mapping class="org.school.admin.model.Country"></mapping>
+		<mapping class="org.school.admin.model.District"></mapping>
+		<mapping class="org.school.admin.model.EducationType"></mapping>
+		<mapping class="org.school.admin.model.ExamType"></mapping>
+		<mapping class="org.school.admin.model.FacultyType"></mapping>
+		<mapping class="org.school.admin.model.FeeType"></mapping>
+		<mapping class="org.school.admin.model.LeaveType"></mapping>
+		<mapping class="org.school.admin.model.Locality"></mapping>
+		<mapping class="org.school.admin.model.MediumType"></mapping>
+		<mapping class="org.school.admin.model.NotificationType"></mapping>
+		<mapping class="org.school.admin.model.OccupationType"></mapping>
+		<mapping class="org.school.admin.model.PaymentMode"></mapping>
+		<mapping class="org.school.admin.model.PrevStudentProfile"></mapping>
+		<mapping class="org.school.admin.model.RatingCategoryType"></mapping>
+		<mapping class="org.school.admin.model.Role"></mapping>
+		<mapping class="org.school.admin.model.SalesInfo"></mapping>
+		<mapping class="org.school.admin.model.School"></mapping>
+		<mapping class="org.school.admin.model.SchoolBoard"></mapping>
+		<mapping class="org.school.admin.model.SchoolCategoryType"></mapping>
+		<mapping class="org.school.admin.model.SchoolClassificationType"></mapping>
+		<mapping class="org.school.admin.model.SchoolInfo"></mapping>
+		<mapping class="org.school.admin.model.SchoolMedium"></mapping>
+		<mapping class="org.school.admin.model.SchoolTimeline"></mapping>
+		<mapping class="org.school.admin.model.SchoolTimelineMilestone"></mapping>
+		<mapping class="org.school.admin.model.SchoolHighlight"></mapping>
+		<mapping class="org.school.admin.model.SchoolType"></mapping>
+		<mapping class="org.school.admin.model.StreamType"></mapping>
+		<mapping class="org.school.admin.model.SecondaryRole"></mapping>
+		<mapping class="org.school.admin.model.SectionType"></mapping>
+		<mapping class="org.school.admin.model.StandardType"></mapping>
+		<mapping class="org.school.admin.model.State"></mapping>
+		<mapping class="org.school.admin.model.Subject"></mapping>
+		<mapping class="org.school.admin.model.TeachingApproachType"></mapping>
+		<mapping class="org.school.admin.model.Tehsil"></mapping>
+		<mapping class="org.school.admin.model.TransportDetails"></mapping>
+		<mapping class="org.school.admin.model.SafetyCategory"></mapping>
+		<mapping class="org.school.admin.model.SafetyCategoryItem"></mapping>
+		<mapping class="org.school.admin.model.SchoolSafetyCatItem"></mapping>
+		<mapping class="org.school.admin.model.ActivityCategory"></mapping>
+		<mapping class="org.school.admin.model.ActivityCategoryItem"></mapping>
+		<mapping class="org.school.admin.model.SchoolActivityCatItem"></mapping>
+		<mapping class="org.school.admin.model.InfrastructureCategory"></mapping>
+		<mapping class="org.school.admin.model.InfrastructureCategoryItem"></mapping>
+		<mapping class="org.school.admin.model.SchoolInfrastructureCatItem"></mapping>
+		<mapping class="org.school.admin.model.Route"></mapping>
+		<mapping class="org.school.admin.model.BusRoute"></mapping>
+		<mapping class="org.school.admin.model.BusRouteStop"></mapping>
+		<mapping class="org.school.admin.model.SchoolImageGallery"></mapping>
+		<mapping class="org.school.admin.model.TabControl"></mapping>
+		<mapping class="org.school.admin.model.SchoolSearch"></mapping>
+		<mapping class="org.school.admin.model.SchoolReview"></mapping>
+		<mapping class="org.school.admin.model.SchoolRating"></mapping>
+		<mapping class="org.school.admin.model.SchoolSearchUser"></mapping>
+		<mapping class="org.school.admin.model.SchoolSuggestion"></mapping>
+		<mapping class="org.school.admin.model.UserRegistrationInfo" />
+		<mapping class="org.school.admin.model.UserRating" />
+		<mapping class="org.school.admin.model.PostRequirement" />
+        <mapping class="org.school.admin.model.ApplicantPreSchoolDetail" />
+        <mapping class="org.school.admin.model.AppliedSchool" />
+        <mapping class="org.school.admin.model.ApplicantBasicDetail" />
+        <mapping class="org.school.admin.model.ApplicantPaymentDetail" />
+        <mapping class="org.school.admin.model.ApplicantParentDetail" />
+        <mapping class="org.school.admin.model.ShortListedSchool" />
+        <mapping class="org.school.admin.model.ViewSchool" />
+        <mapping class="org.school.admin.model.ViewContact" />
+        <mapping class="org.school.admin.model.SchoolLog" />
+        <mapping class="org.school.admin.model.SchoolAnalytics" />
+        <mapping class="org.school.admin.model.SchoolPanoramicImage" />
+        <mapping class="org.school.admin.model.ContactUs" />
+         <mapping class="org.school.admin.model.ClassBatchTime" />
+    </session-factory>
+
+</hibernate-configuration>

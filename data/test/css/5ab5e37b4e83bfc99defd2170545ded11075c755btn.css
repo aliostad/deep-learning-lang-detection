@@ -1,0 +1,24 @@
+.activlists-btn .a-btn{ display:block; width:88.43%; height:2.5rem; line-height:2.5rem; text-align:center; margin:1.27rem auto 1.78rem; background:#efe939; color:#cf2d22; border-radius:6px; }
+.box-write{ width:84.37%; background:#fff; position:fixed; left:7.81%; border-radius:10px; z-index:10; display:none; }
+.box-write h1{ padding-left:4%; position:relative; background:url(../img/name.jpg) no-repeat left 4px; background-size:.25rem 1.01rem; margin:1.09rem 5%; }
+.box-write h1 p{ color:#989898; margin-top:.1rem; }
+.box-write h1 .a-close{ display:block; background:url(../img/close.png) no-repeat; background-size:1.23rem 1.23rem; width:1.23rem; height:1.23rem; font-size:0; line-height:0; text-indent:-9999px; position:absolute; top:0; right:0; }
+.box-write input{ display:block; width:82.88%; height:2.3rem; line-height:2.3rem; margin:0 auto .72rem; padding:0 3%; border:1px solid #cccccc; color:#000; border-radius:6px; }
+.box-write input::-webkit-input-placeholder{ color:#cccccc; }
+.box-write .a-btn{ display:block; width:83.33%; height:2.4rem; line-height:2.4rem; text-align:center; margin:.21rem auto .9rem; background:#eb1305; color:#fff; border-radius:6px; }
+
+#Background {
+	width: 100%;
+	height: 100%;
+	z-index: 8;
+	background: #000;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	opacity: 0.5;
+	display: none;
+}
+
+
+
+

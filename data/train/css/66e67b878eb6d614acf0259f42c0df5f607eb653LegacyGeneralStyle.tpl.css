@@ -1,0 +1,36 @@
+/*
+ * Aria Templates
+ * Copyright Amadeus s.a.s.
+ */
+{CSSTemplate {
+    $classpath : "aria.templates.LegacyGeneralStyle",
+    $dependencies : ["aria.widgets.AriaSkinInterface"],
+    $csslibs : {
+        text : "aria.widgets.TextStyle"
+    }
+}}
+
+{macro main()}
+    {var general = aria.widgets.AriaSkinInterface.getGeneral() /}
+    {call writeGeneralStyle(general) /}
+{/macro}
+
+{macro writeGeneralStyle(general)}
+    {if general.font}
+        body, textarea, select, input, button, table {
+            {call text.writeFontStyleInner(general.font) /}
+        }
+    {/if}
+
+    {if general.anchor && general.anchor.states}
+        {call text.writeAnchorsStyle(general.anchor.states) /}
+    {/if}
+
+
+    {if !general.disable || !general.disable.ul.list.style}
+        ul, li {list-style-type:none;}
+    {/if}
+
+{/macro}
+
+{/CSSTemplate}

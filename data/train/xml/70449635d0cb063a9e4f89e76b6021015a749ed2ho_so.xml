@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="yes"?>
+<DatasetMsg xmlns="http://tempuri.org/DatasetMsg.xsd">
+  <Message>
+    <Message>Bạn chưa nhập Mã nhân viên, hoặc Mã nhân viên không hợp lệ.</Message>
+    <ID>201</ID>
+  </Message>
+  <Message>
+    <Message>Bạn chưa nhập Họ đệm, hoặc Họ đệm không hợp lệ.</Message>
+    <ID>202</ID>
+  </Message>
+  <Message>
+    <Message>Bạn chưa nhập Tên, hoặc Tên không hợp lệ.</Message>
+    <ID>203</ID>
+  </Message>
+  <Message>
+    <Message>Bạn chưa chọn giới tính.</Message>
+    <ID>204</ID>
+  </Message>
+  <Message>
+    <Message>Ngày sinh không hợp lệ.</Message>
+    <ID>205</ID>
+  </Message>
+  <Message>
+    <Message>Nơi sinh không hợp lệ.</Message>
+    <ID>206</ID>
+  </Message>
+  <Message>
+    <Message>Nguyên quán không hợp lệ.</Message>
+    <ID>207</ID>
+  </Message>
+  <Message>
+    <Message>Số CMND không hợp lệ.</Message>
+    <ID>208</ID>
+  </Message>
+  <Message>
+    <Message>Ngày cấp không hợp lệ.</Message>
+    <ID>209</ID>
+  </Message>
+  <Message>
+    <Message>Số điện thoại không hợp lệ.</Message>
+    <ID>210</ID>
+  </Message>
+</DatasetMsg>

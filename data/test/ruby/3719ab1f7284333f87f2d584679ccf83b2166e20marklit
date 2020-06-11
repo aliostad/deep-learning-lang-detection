@@ -1,0 +1,68 @@
+#!/usr/bin/env ruby
+# Marklit: a tiny tool for writing literate C code with
+# markdown formatting. (itself ironically, not commented)
+
+def die(msg)
+   $stderr.puts "#{File.basename $0}: #{msg}"
+   exit 1
+end
+
+if (ARGV.include? "-h") || (ARGV.include? "--help")
+   die <<-EOF.gsub /^ +/, ""
+      Usage: marklit [--github-flavor]
+      Converts stdin to formatted Markdown output
+   EOF
+end
+
+$github_flavored = (ARGV[0] == "--github-flavor")
+
+class Chunk
+    def text
+        @text ||= ""
+    end
+end
+class DocumentationChunk < Chunk
+    def to_s
+        escaped_text = text.gsub /^\/\/\//, ''
+        indent = escaped_text[/\A[ ]*/].length
+        escaped_text.gsub! /^[ ]{0,#{indent}}/m, ""
+        escaped_text.strip
+    end
+end
+class CodeChunk < Chunk
+    def to_s
+        "```#{$github_flavored ? 'c' : ''}\n#{text.rstrip}\n```"
+    end
+end
+class SeparatorChunk < Chunk
+    def to_s
+        " * * *"
+    end
+end
+
+chunks = []
+chunk  = nil
+$stdin.each_line do |line|
+   if line.strip == ''
+        chunk.text << line unless chunk.nil?
+   elsif line =~ /^\/[\/]+\s*-[\s-]+$/
+       chunks << chunk unless chunk.nil?
+       chunk = SeparatorChunk.new
+   elsif line =~ /^\s*\/\/\//
+       if !chunk.is_a? DocumentationChunk
+           chunks << chunk unless chunk.nil?
+           chunk = DocumentationChunk.new
+       end
+       chunk.text << line.lstrip
+   else 
+       if !chunk.is_a? CodeChunk
+           chunks << chunk unless chunk.nil?
+           chunk = CodeChunk.new
+      end
+      chunk.text << line
+   end
+end
+chunks << chunk unless chunk.nil?
+
+puts (chunks.map &:to_s).join "\n\n"
+

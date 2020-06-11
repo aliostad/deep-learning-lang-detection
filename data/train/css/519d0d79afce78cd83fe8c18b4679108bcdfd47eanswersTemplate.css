@@ -1,0 +1,89 @@
+.messageList .message
+{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-top: 1px solid #d7edfc;
+    list-style-type: none;
+}
+
+.messageList .message
+{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-top: 1px solid #d7edfc;
+    list-style-type: none;
+
+}
+
+.message .messageInfo
+{
+    padding: 0;
+    margin-left: 140px;
+    border-bottom: 1px none black;
+    list-style-type: none;
+
+}
+
+.message .messageContent
+{
+    padding-bottom: 2px;
+    min-height: 100px;
+    overflow: hidden;
+    background-color: #eceff1;
+    border-radius: 5px;
+    width: 800px;
+}
+
+.message .messageMeta
+{
+    font-size: 11px;
+    padding: 15px 5px 5px;
+    margin: -5px;
+    overflow: hidden;
+}
+
+.messageUserInfo
+{
+    float: left;
+    width: 124px;
+}
+
+.messageUserBlock
+{
+    background: #d7edfc;
+    border: 1px solid #d7edfc;
+    border-radius: 5px;
+    position: relative;
+}
+
+.messageText {
+    width: 800px;
+    height: 166px;
+    background-color: #eceff1;
+    padding: 16px;
+}
+
+.messageUserBlock div.avatarHolder
+{
+    background-color: #f0f7fc;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.messageUserBlock h3.userText
+{
+    padding: 6px;
+}
+
+.messageUserBlock a.username
+{
+    font-weight: bold;
+    display: block;
+    line-height: 16px;
+}
+
+.messageUserBlock .userTitle
+{
+    font-size: 11px;
+    display: block;
+}

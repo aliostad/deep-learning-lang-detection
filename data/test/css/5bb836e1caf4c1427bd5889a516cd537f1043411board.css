@@ -1,0 +1,77 @@
+.list{
+  padding: 1.5em;
+  background: #f0f0f0;
+}
+.list .heading a i{
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 1em;
+  width: 1em;
+}
+.list .heading h3{
+  color: #0099ff;
+  text-shadow: 1px 1px 1px #007399;
+}
+
+.list .write{
+  color: #555;
+  font-size: .9em;
+}
+.list .write sub{
+  color: #777;
+}
+
+.list .title{
+  cursor: hand;
+}
+
+.list table{
+  box-shadow: 1px 1px 1px 1px #777;
+}
+.list table tr:hover{
+  background: #ddf1ff;
+}
+
+/* Document */
+.document, .comments{
+  background: #f7f7f7;
+  padding: 1.5em;
+}
+.document h4{
+  border-bottom: 1px dotted #0070bb;
+  font-weight: bold;
+  color: #0070bb;
+}
+.document textarea{
+  resize: vertical;
+  min-height: 30em;
+}
+
+img.profile{
+  width: 2em;
+  height: 2em;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px #777;
+}
+
+.comments .write q{
+  font-size: .8em;
+  color: #0070bb;
+}
+.comments p{
+  padding: .5em;
+}
+.comments .row:nth-child(2n){
+  background: #f0f0f0;
+}
+
+/* write */
+.fixed-right{
+  position:fixed;
+  bottom: -1em;
+  right: 0;
+}

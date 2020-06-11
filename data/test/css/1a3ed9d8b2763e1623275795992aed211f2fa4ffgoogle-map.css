@@ -1,0 +1,28 @@
+/*
+* @subsection GOOGLE-MAP.css
+* @description  RD-Google Map - v0.1. Easy as hell Google Map Api Jquery plugin.
+* @author       Evgeniy Gusarov (Stmechanus || Diversant)
+* @license      MIT license - http://opensource.org/licenses/MIT
+*/
+.map_model {
+  height: 347px;
+}
+.map_model--1 {
+  height: 415px;
+}
+.map_model img {
+  max-width: none !important;
+}
+@media (max-width: 767px) {
+  .map_model {
+    height: 250px;
+  }
+}
+@media (max-width: 479px) {
+  .map_model {
+    height: 200px;
+  }
+}
+.map_locations {
+  display: none;
+}

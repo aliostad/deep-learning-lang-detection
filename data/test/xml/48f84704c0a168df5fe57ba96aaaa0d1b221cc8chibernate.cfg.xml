@@ -1,0 +1,17 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+    <session-factory>
+        <mapping class = "com.springapp.mvc.domain.Authority"></mapping>
+        <mapping class = "com.springapp.mvc.domain.Client"></mapping>
+        <mapping class = "com.springapp.mvc.domain.User"></mapping>
+        <mapping class = "com.springapp.mvc.domain.OrderDish"></mapping>
+        <mapping class = "com.springapp.mvc.domain.Reservation"></mapping>
+        <mapping class = "com.springapp.mvc.domain.DishType"></mapping>
+        <mapping class = "com.springapp.mvc.domain.MyTable"></mapping>
+        <mapping class = "com.springapp.mvc.domain.MyOrder"></mapping>
+        <mapping class = "com.springapp.mvc.domain.Dish"></mapping>
+    </session-factory>
+</hibernate-configuration>

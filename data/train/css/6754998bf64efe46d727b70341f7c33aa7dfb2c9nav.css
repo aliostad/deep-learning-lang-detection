@@ -1,0 +1,96 @@
+/* nav */
+nav {
+	background: #000;
+}
+
+.nav {
+	margin: 0;
+	padding: 58px 0 0 0;
+	position: relative;
+	z-index: 998;
+}
+
+.nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.nav li {
+	margin: 0;
+	padding: 10px;
+	list-style: none;
+	display: inline-block;
+	position: relative;
+}
+
+.nav a {
+	padding: 0;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 600;
+	font-size: 12pt;
+	line-height: 100%;
+	display: inline;
+}
+
+.nav a:hover, .nav li:hover {
+	color: #fff;
+	background: #353535;
+}
+
+/* nav sub-menus */
+.nav ul ul {
+	display: none;
+}
+
+.nav ul li:hover > ul {
+	display: block;
+}
+
+.nav ul ul {
+	position: absolute;
+	top: 100%;
+	background: #353535;
+	left: 0;
+	width: 200px;
+}
+
+.nav ul ul li {
+	display: block; 
+	position: relative;
+	padding: 10px;
+	margin: 0;
+	text-align: left;
+}
+
+.nav ul ul li a {
+	padding: 0;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 400;
+}
+	
+.nav ul ul li a:hover, .nav ul ul li:hover {
+	background: #5a5a5a;
+}
+
+/* right nav */
+.nav.right ul {
+	text-align: right;
+}
+
+/* center nav */
+.nav.center ul {
+	text-align: center;
+}
+
+/* Nav Arrows */
+.nav ul li > a:after {
+	content:url('../images/nav-arrow.png');
+	padding-left: 10px;
+}
+
+.nav ul li > a:only-child:after {
+	content: '';
+	padding-left: 0;
+}

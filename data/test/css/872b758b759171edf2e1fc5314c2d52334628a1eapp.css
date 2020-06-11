@@ -1,0 +1,59 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.ng-enter {background: red;}
+.ng-leave {background: blue;}
+.ng-move  {background: green;}
+.load-panel.ng-enter {background: red;}
+.load-panel.ng-leave {background: blue;}
+.load-panel.ng-move  {background: green;}
+
+ .load-panel.ng-enter { }        
+ .load-panel.ng-enter-active { } 
+ .load-panel.ng-leave { }        
+ .load-panel.ng-leave-active { } 
+ 
+ .item {
+     margin-bottom: 10px;
+ }
+ .item .button:hover {
+     background-color: #333;
+     color: #fff;
+ }
+ .item .button {
+     padding: 0 10px;
+     background-color: #ccc;
+     cursor: pointer;
+     border-radius: 10px;
+     overflow: hidden; 
+}
+ .detail .item .button { height: 170px;}
+ .search .item .button { height: 80px; }

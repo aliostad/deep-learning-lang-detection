@@ -1,0 +1,45 @@
+#section-name input{
+	padding: 5px 10px;
+	font-size: 150%;
+	line-height: 1.1;
+}
+
+#section-amount input[type="number"]{
+	width: 60px;
+	display: inline-block;
+}
+
+#section-service p{
+	margin: 15px 0 0;
+}
+
+#section-service p + p{
+	margin: 5px 0 0;
+}
+
+#section-service a[data-external],
+#section-service button{
+	vertical-align: middle;
+	margin: 0 15px 0 0;
+}
+
+#section-service a[data-external]{
+	display: inline-block;
+}
+
+#section-service a img{
+	display: block;
+}
+
+#section-donators{
+	padding-right: 30px;
+	text-align: justify;
+}
+
+	#section-donators span{
+		margin: 0 10px 5px 0;
+	}
+
+	#section-donators span:hover{
+		color: #62B000 !important;
+	}

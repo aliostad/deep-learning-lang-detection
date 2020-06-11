@@ -1,0 +1,65 @@
+#!/bin/sh -e
+# postinst for starleth-init
+
+action="$1"
+oldversion="$2"
+
+if [ "$action" != configure ]; then
+  exit 0
+fi
+
+if [ -x /etc/init.d/starleth-roscore ]; then
+  update-rc.d starleth-roscore start 80 2 3 4 5 . stop 20 0 1 6 . >/dev/null
+  if [ -x /usr/sbin/invoke-rc.d ]; then
+    invoke-rc.d starleth-roscore restart
+  else
+    /etc/init.d/starleth-roscore restart
+  fi
+fi
+
+if [ -x /etc/init.d/starleth-system-monitors ]; then
+  update-rc.d starleth-system-monitors start 98 2 3 4 5 . stop 2 0 1 6 . >/dev/null
+  if [ -x /usr/sbin/invoke-rc.d ]; then
+    invoke-rc.d starleth-system-monitors restart
+  else
+    /etc/init.d/starleth-system-monitors restart
+  fi
+fi
+
+if [ -x /etc/init.d/starleth-diagnostic-aggregator ]; then
+  update-rc.d starleth-diagnostic-aggregator start 99 2 3 4 5 . stop 1 0 1 6 . >/dev/null
+  if [ -x /usr/sbin/invoke-rc.d ]; then
+    invoke-rc.d starleth-diagnostic-aggregator restart
+  else
+    /etc/init.d/starleth-diagnostic-aggregator restart
+  fi
+fi
+
+if [ -x /etc/init.d/starleth-velodyne ]; then
+  update-rc.d starleth-velodyne start 99 2 3 4 5 . stop 1 0 1 6 . >/dev/null
+  if [ -x /usr/sbin/invoke-rc.d ]; then
+    invoke-rc.d starleth-velodyne restart
+  else
+    /etc/init.d/starleth-velodyne restart
+  fi
+fi
+
+if [ -x /etc/init.d/starleth-velodyne-post ]; then
+  update-rc.d starleth-velodyne-post start 99 2 3 4 5 . stop 1 0 1 6 . >/dev/null
+  if [ -x /usr/sbin/invoke-rc.d ]; then
+    invoke-rc.d starleth-velodyne-post restart
+  else
+    /etc/init.d/starleth-velodyne-post restart
+  fi
+fi
+
+if [ -x /etc/init.d/starleth-xsensmt ]; then
+  update-rc.d starleth-xsensmt start 99 2 3 4 5 . stop 1 0 1 6 . >/dev/null
+  if [ -x /usr/sbin/invoke-rc.d ]; then
+    invoke-rc.d starleth-xsensmt restart
+  else
+    /etc/init.d/starleth-xsensmt restart
+  fi
+fi
+
+exit 0

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <service_name>Blip.TV</service_name>
+  <service_media>video</service_media>
+  <service_regex><![CDATA[http://[\w\.]*?blip\.tv/[\w-/]+-(?P<sval1>\d+)]]></service_regex>
+  <service_playlist><![CDATA[]]></service_playlist>
+  <service_url><![CDATA[http://blip.tv/channel/video-{serviceVAL}]]></service_url>
+  <service_callback>EWRmedio_Services_Blip</service_callback>
+  <service_width>640</service_width>
+  <service_height>385</service_height>
+  <service_embed><![CDATA[<iframe width="100%" height="{h}"  style="max-width: {w}px" src="http://blip.tv/play/{serviceVAL2}.x" frameborder="0"></iframe>]]></service_embed>
+  <service_local>0</service_local>
+</service>

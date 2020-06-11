@@ -1,0 +1,35 @@
+#!/bin/bash
+
+if [[ "$1" == "--help" ]]; then
+  echo "Clone a repository containing dottle topics"
+  exit 0
+fi
+
+REPO=$1
+if [[ -z $REPO ]]
+then
+  echo Usage: dottle-clone repo [local-repo]
+  exit 1
+fi
+
+LOCAL_REPO=$2
+if [[ -z $LOCAL_REPO ]]
+then
+  LOCAL_REPO=$(basename $REPO)
+fi
+
+REPO_DESTINATION=$DOTTLE_HOME/topics/$LOCAL_REPO
+
+git clone git@github.com:$REPO.git $REPO_DESTINATION
+
+pushd $REPO_DESTINATION > /dev/null
+NEW_TOPICS=$(ls)
+popd > /dev/null
+
+echo Topics now available in $LOCAL_REPO:
+for topic in $NEW_TOPICS 
+do
+  echo "-> $LOCAL_REPO/$topic"
+done
+
+

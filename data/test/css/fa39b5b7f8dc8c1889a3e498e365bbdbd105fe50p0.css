@@ -1,0 +1,60 @@
+#slide0 .g-content {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#slide0 .g-bd{
+	background:url(../img/p0-bg.jpg) no-repeat;
+	background-size:100% 100%;
+}
+
+#slide0 .load{
+	width:46.875%;
+	margin-top:57.8125%;
+	margin-left:25.78125%;
+	position:relative;
+}
+
+#slide0 .load-info{
+	position:relative;
+	width:100%;
+	padding-bottom:25.33333333333333%;
+}
+
+#slide0 .load-count{
+	background: url(../img/p0-img0.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    width: 25.33333333333333%;
+    height: 100%;
+    text-align: center;
+    line-height: 3.4em;
+    color: #FFF;
+	font-size:1.4em;
+}
+#slide0 .load-tit{
+	background:url(../img/p0-img1.png) no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	width:74.66666666666667%;
+	height:100%;
+	right:0px;
+}
+#slide0 .load-product{
+	background:url(../img/loading0.png) no-repeat;
+	background-size:100% 100%;
+	padding-bottom:23.33333333333333%;
+	position:relative;
+	
+}
+
+.load-tit-div{
+	position: absolute;
+	width: 0;
+	overflow: hidden;
+}
+.load-tit-div img{
+	max-width: none;
+}
+

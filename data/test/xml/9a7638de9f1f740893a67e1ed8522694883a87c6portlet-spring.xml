@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="org.fit.portlet.service.service.InserAccioFormacioInsercioLocalService" class="org.fit.portlet.service.service.impl.InserAccioFormacioInsercioLocalServiceImpl" />
+	<bean id="org.fit.portlet.service.service.persistence.InserAccioFormacioInsercioPersistence" class="org.fit.portlet.service.service.persistence.InserAccioFormacioInsercioPersistenceImpl" parent="basePersistence" />
+	<bean id="org.fit.portlet.service.service.InserComAccedeixLocalService" class="org.fit.portlet.service.service.impl.InserComAccedeixLocalServiceImpl" />
+	<bean id="org.fit.portlet.service.service.persistence.InserComAccedeixPersistence" class="org.fit.portlet.service.service.persistence.InserComAccedeixPersistenceImpl" parent="basePersistence" />
+	<bean id="org.fit.portlet.service.service.InserDadesServeisSocialsLocalService" class="org.fit.portlet.service.service.impl.InserDadesServeisSocialsLocalServiceImpl" />
+	<bean id="org.fit.portlet.service.service.persistence.InserDadesServeisSocialsPersistence" class="org.fit.portlet.service.service.persistence.InserDadesServeisSocialsPersistenceImpl" parent="basePersistence" />
+	<bean id="org.fit.portlet.service.service.InserDemandaLocalService" class="org.fit.portlet.service.service.impl.InserDemandaLocalServiceImpl" />
+	<bean id="org.fit.portlet.service.service.persistence.InserDemandaPersistence" class="org.fit.portlet.service.service.persistence.InserDemandaPersistenceImpl" parent="basePersistence" />
+	<bean id="org.fit.portlet.service.service.InserDiscapacitatTipusLocalService" class="org.fit.portlet.service.service.impl.InserDiscapacitatTipusLocalServiceImpl" />
+	<bean id="org.fit.portlet.service.service.persistence.InserDiscapacitatTipusPersistence" class="org.fit.portlet.service.service.persistence.InserDiscapacitatTipusPersistenceImpl" parent="basePersistence" />
+	<bean id="org.fit.portlet.service.service.InserDocumentacioLocalService" class="org.fit.portlet.service.service.impl.InserDocumentacioLocalServiceImpl" />
+	<bean id="org.fit.portlet.service.service.persistence.InserDocumentacioPersistence" class="org.fit.portlet.service.service.persistence.InserDocumentacioPersistenceImpl" parent="basePersistence" />
+	<bean id="org.fit.portlet.service.service.InserDuradaLocalService" class="org.fit.portlet.service.service.impl.InserDuradaLocalServiceImpl" />
+	<bean id="org.fit.portlet.service.service.persistence.InserDuradaPersistence" class="org.fit.portlet.service.service.persistence.InserDuradaPersistenceImpl" parent="basePersistence" />
+	<bean id="org.fit.portlet.service.service.InserEstatFormacioInsercioLocalService" class="org.fit.portlet.service.service.impl.InserEstatFormacioInsercioLocalServiceImpl" />
+	<bean id="org.fit.portlet.service.service.persistence.InserEstatFormacioInsercioPersistence" class="org.fit.portlet.service.service.persistence.InserEstatFormacioInsercioPersistenceImpl" parent="basePersistence" />
+	<bean id="org.fit.portlet.service.service.InserEstudisLocalService" class="org.fit.portlet.service.service.impl.InserEstudisLocalServiceImpl" />
+	<bean id="org.fit.portlet.service.service.persistence.InserEstudisPersistence" class="org.fit.portlet.service.service.persistence.InserEstudisPersistenceImpl" parent="basePersistence" />
+	<bean id="org.fit.portlet.service.service.InserFitxaPersonalLocalService" class="org.fit.portlet.service.service.impl.InserFitxaPersonalLocalServiceImpl" />
+	<bean id="org.fit.portlet.service.service.persistence.InserFitxaPersonalPersistence" class="org.fit.portlet.service.service.persistence.InserFitxaPersonalPersistenceImpl" parent="basePersistence" />
+	<bean id="org.fit.portlet.service.service.InserFormacioInsercioLocalService" class="org.fit.portlet.service.service.impl.InserFormacioInsercioLocalServiceImpl" />
+	<bean id="org.fit.portlet.service.service.persistence.InserFormacioInsercioPersistence" class="org.fit.portlet.service.service.persistence.InserFormacioInsercioPersistenceImpl" parent="basePersistence" />
+	<bean id="org.fit.portlet.service.service.InserInsercioLaboralLocalService" class="org.fit.portlet.service.service.impl.InserInsercioLaboralLocalServiceImpl" />
+	<bean id="org.fit.portlet.service.service.persistence.InserInsercioLaboralPersistence" class="org.fit.portlet.service.service.persistence.InserInsercioLaboralPersistenceImpl" parent="basePersistence" />
+	<bean id="org.fit.portlet.service.service.InserInsertoresLocalService" class="org.fit.portlet.service.service.impl.InserInsertoresLocalServiceImpl" />
+	<bean id="org.fit.portlet.service.service.persistence.InserInsertoresPersistence" class="org.fit.portlet.service.service.persistence.InserInsertoresPersistenceImpl" parent="basePersistence" />
+	<bean id="org.fit.portlet.service.service.InserMotiuBaixaFitLocalService" class="org.fit.portlet.service.service.impl.InserMotiuBaixaFitLocalServiceImpl" />
+	<bean id="org.fit.portlet.service.service.persistence.InserMotiuBaixaFitPersistence" class="org.fit.portlet.service.service.persistence.InserMotiuBaixaFitPersistenceImpl" parent="basePersistence" />
+	<bean id="org.fit.portlet.service.service.InserMotiuBaixaFormacioInsercioLocalService" class="org.fit.portlet.service.service.impl.InserMotiuBaixaFormacioInsercioLocalServiceImpl" />
+	<bean id="org.fit.portlet.service.service.persistence.InserMotiuBaixaFormacioInsercioPersistence" class="org.fit.portlet.service.service.persistence.InserMotiuBaixaFormacioInsercioPersistenceImpl" parent="basePersistence" />
+	<bean id="org.fit.portlet.service.service.InserMotiuFormacioInsercioLocalService" class="org.fit.portlet.service.service.impl.InserMotiuFormacioInsercioLocalServiceImpl" />
+	<bean id="org.fit.portlet.service.service.persistence.InserMotiuFormacioInsercioPersistence" class="org.fit.portlet.service.service.persistence.InserMotiuFormacioInsercioPersistenceImpl" parent="basePersistence" />
+	<bean id="org.fit.portlet.service.service.InserNacionalitatLocalService" class="org.fit.portlet.service.service.impl.InserNacionalitatLocalServiceImpl" />
+	<bean id="org.fit.portlet.service.service.persistence.InserNacionalitatPersistence" class="org.fit.portlet.service.service.persistence.InserNacionalitatPersistenceImpl" parent="basePersistence" />
+	<bean id="org.fit.portlet.service.service.InserObservacioBaixaFitLocalService" class="org.fit.portlet.service.service.impl.InserObservacioBaixaFitLocalServiceImpl" />
+	<bean id="org.fit.portlet.service.service.persistence.InserObservacioBaixaFitPersistence" class="org.fit.portlet.service.service.persistence.InserObservacioBaixaFitPersistenceImpl" parent="basePersistence" />
+	<bean id="org.fit.portlet.service.service.InserPrestacioLocalService" class="org.fit.portlet.service.service.impl.InserPrestacioLocalServiceImpl" />
+	<bean id="org.fit.portlet.service.service.persistence.InserPrestacioPersistence" class="org.fit.portlet.service.service.persistence.InserPrestacioPersistenceImpl" parent="basePersistence" />
+	<bean id="org.fit.portlet.service.service.InserProjecteFormacioInsercioLocalService" class="org.fit.portlet.service.service.impl.InserProjecteFormacioInsercioLocalServiceImpl" />
+	<bean id="org.fit.portlet.service.service.persistence.InserProjecteFormacioInsercioPersistence" class="org.fit.portlet.service.service.persistence.InserProjecteFormacioInsercioPersistenceImpl" parent="basePersistence" />
+	<bean id="org.fit.portlet.service.service.InserServeiSocialLocalService" class="org.fit.portlet.service.service.impl.InserServeiSocialLocalServiceImpl" />
+	<bean id="org.fit.portlet.service.service.persistence.InserServeiSocialPersistence" class="org.fit.portlet.service.service.persistence.InserServeiSocialPersistenceImpl" parent="basePersistence" />
+	<bean id="org.fit.portlet.service.service.InserSexeLocalService" class="org.fit.portlet.service.service.impl.InserSexeLocalServiceImpl" />
+	<bean id="org.fit.portlet.service.service.persistence.InserSexePersistence" class="org.fit.portlet.service.service.persistence.InserSexePersistenceImpl" parent="basePersistence" />
+	<bean id="org.fit.portlet.service.service.InserSituacioFamiliarLocalService" class="org.fit.portlet.service.service.impl.InserSituacioFamiliarLocalServiceImpl" />
+	<bean id="org.fit.portlet.service.service.persistence.InserSituacioFamiliarPersistence" class="org.fit.portlet.service.service.persistence.InserSituacioFamiliarPersistenceImpl" parent="basePersistence" />
+	<bean id="org.fit.portlet.service.service.InserTipusProjecteFormacioInsercioLocalService" class="org.fit.portlet.service.service.impl.InserTipusProjecteFormacioInsercioLocalServiceImpl" />
+	<bean id="org.fit.portlet.service.service.persistence.InserTipusProjecteFormacioInsercioPersistence" class="org.fit.portlet.service.service.persistence.InserTipusProjecteFormacioInsercioPersistenceImpl" parent="basePersistence" />
+</beans>

@@ -1,0 +1,33 @@
+#multi_image_view_gallery, #multi_image_view_expand, #multi_image_view_thmb {
+}
+
+#multi_image_view_gallery {
+}
+#multi_image_view_expand {
+}
+
+#multi_image_view_thmb {
+}
+
+#multi_image_view_thmb div {
+}
+
+#multi_image_view_thmb img {
+}
+
+#multi_image_view_thmb div.selected_thmb{
+}
+
+#multi_image_view_thmb img.selected_thmb{
+}
+
+#multi_image_view_thmb div{
+}
+
+#multi_image_view_thmb div.selected_thmb {
+/*    background-color:#98FB98;*/
+}
+#multi_image_view_thmb img.selected_thmb {
+/*    border: 1px solid #DC143C;*/
+}
+

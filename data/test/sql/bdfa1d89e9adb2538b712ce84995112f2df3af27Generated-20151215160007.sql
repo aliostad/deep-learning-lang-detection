@@ -1,0 +1,23 @@
+--------------------------------------------------------
+--  File created - Tuesday-December-15-2015   
+--------------------------------------------------------
+@C:\Users\Chinnie\Desktop\dump_database\DROP.sql
+@C:\Users\Chinnie\Desktop\dump_database\CON_PHOTO.sql
+@C:\Users\Chinnie\Desktop\dump_database\CON_PRODUCT.sql
+@C:\Users\Chinnie\Desktop\dump_database\CON_TRANSACTION.sql
+@C:\Users\Chinnie\Desktop\dump_database\CON_USER.sql
+--@C:\Users\Chinnie\Desktop\dump_database\CON_PHOTO_DATA_TABLE.tsv
+--@C:\Users\Chinnie\Desktop\dump_database\CON_PRODUCT_DATA_TABLE.tsv
+--@C:\Users\Chinnie\Desktop\dump_database\CON_TRANSACTION_DATA_TABLE.tsv
+--@C:\Users\Chinnie\Desktop\dump_database\CON_USER_DATA_TABLE.tsv
+@C:\Users\Chinnie\Desktop\dump_database\P_ID_PK.sql
+@C:\Users\Chinnie\Desktop\dump_database\CON_PRODUCT_PK.sql
+@C:\Users\Chinnie\Desktop\dump_database\CON_TRANSACTION_PK.sql
+@C:\Users\Chinnie\Desktop\dump_database\CON_USER_PK.sql
+@C:\Users\Chinnie\Desktop\dump_database\CON_PHOTO_CONSTRAINT.sql
+@C:\Users\Chinnie\Desktop\dump_database\CON_PRODUCT_CONSTRAINT.sql
+@C:\Users\Chinnie\Desktop\dump_database\CON_TRANSACTION_CONSTRAINT.sql
+@C:\Users\Chinnie\Desktop\dump_database\CON_USER_CONSTRAINT.sql
+@C:\Users\Chinnie\Desktop\dump_database\CON_PHOTO_REFCONSTRAINT.sql
+@C:\Users\Chinnie\Desktop\dump_database\CON_PRODUCT_REFCONSTRAINT.sql
+@C:\Users\Chinnie\Desktop\dump_database\CON_TRANSACTION_REFCONSTRAINT.sql

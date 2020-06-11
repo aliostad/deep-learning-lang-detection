@@ -1,0 +1,39 @@
+.model-link {
+	color: black;
+	text-align: center;
+	width: 300px;
+	height: 300px;
+	border: 1px solid;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaB9XFKqn1epd5W4TlYqwfK0pWPXCFEubQnedoSRdW4aNjKJ9FHQ");
+}
+.model-link:hover .model-link-text{
+	position: relative;
+	top: 50px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	height: 250px;
+}
+.model-link:hover .model-link-text {
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+}
+.model-link-text {
+	position: relative;
+	top: 250px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	background-color: rgba(255,255,255,0.5);
+	height: 50px;
+	width: 300px;
+	overflow: hidden;
+}
+.model-link-text-header {
+	position: relative;
+	top: -20px;
+	left: 0px;
+	right: 0px;
+	font-family: cursive;
+	line-height: 50px;
+}

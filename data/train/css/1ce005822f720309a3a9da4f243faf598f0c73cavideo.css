@@ -1,0 +1,39 @@
+/*公共样式*/
+/*新闻视频*/
+.opusView .newsViews {
+    
+   overflow:hidden;
+}
+.viewText .newsViews object, .viewText .newsViews embed,.viewText .opusView object,.viewText .opusView embed {
+    width: 100%;
+    height: 80%;
+}
+.viewText .newsViews .slid{
+    z-index: 999999;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    padding: 0px;
+    background-color:#DDD;
+    opacity: 0.8;
+}
+.viewText .newsViews p {
+    height: 20%;
+    width: 100%;
+    padding-top: 20px;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+/*作品视频--小品*/
+.viewText .opusView {
+    border: 1px solid darkgray;
+
+}
+.viewText .opusView .summary{
+    font-size: 14px;
+    /*border-top: 1px solid darkgray;*/
+    text-indent: 2em;
+    width: 100%;
+}

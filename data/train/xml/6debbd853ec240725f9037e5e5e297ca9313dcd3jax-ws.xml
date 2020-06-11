@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="FonctionServiceCrud">
+      <implementation-class>services.crud.FonctionServiceCrud</implementation-class>
+    </service>
+    <service name="GroupeServiceCrud">
+      <implementation-class>services.crud.GroupeServiceCrud</implementation-class>
+    </service>
+    <service name="ServicesServiceCrud">
+      <implementation-class>services.crud.ServicesServiceCrud</implementation-class>
+    </service>
+    <service name="RightServiceCrud">
+      <implementation-class>services.crud.RightServiceCrud</implementation-class>
+    </service>
+    <service name="PersonnelServiceCrud">
+      <implementation-class>services.crud.PersonnelServiceCrud</implementation-class>
+    </service>
+    <service name="QualificationServiceCrud">
+      <implementation-class>services.crud.QualificationServiceCrud</implementation-class>
+    </service>
+    <service name="UserServiceCrud">
+      <implementation-class>services.crud.UserServiceCrud</implementation-class>
+    </service>
+    <service name="BonSortieRetourService">
+      <implementation-class>services.crud.BonSortieRetourService</implementation-class>
+    </service>
+    <service name="EtudeDeveloppementService">
+      <implementation-class>services.crud.EtudeDeveloppementService</implementation-class>
+    </service>
+    <service name="ConsultationService">
+      <implementation-class>services.crud.ConsultationService</implementation-class>
+    </service>
+    <service name="CommandefournisseurService">
+      <implementation-class>services.crud.CommandefournisseurService</implementation-class>
+    </service>
+    <service name="EtudeindustrielService">
+      <implementation-class>services.crud.EtudeindustrielService</implementation-class>
+    </service>
+    <service name="FicheControlService">
+      <implementation-class>services.crud.FicheControlService</implementation-class>
+    </service>
+    <service name="BonSortieService">
+      <implementation-class>services.crud.BonSortieService</implementation-class>
+    </service>
+    <service name="ConsommableEtudeFaisabiliteService">
+      <implementation-class>services.crud.ConsommableEtudeFaisabiliteService</implementation-class>
+    </service>
+    <service name="EtenduPrestationService">
+      <implementation-class>services.crud.EtenduPrestationService</implementation-class>
+    </service>
+    <service name="ContactService">
+      <implementation-class>services.crud.ContactService</implementation-class>
+    </service>
+    <service name="CongeService">
+      <implementation-class>services.crud.CongeService</implementation-class>
+    </service>
+    <service name="CommandeClientService">
+      <implementation-class>services.crud.CommandeClientService</implementation-class>
+    </service>
+    <service name="BorderauService">
+      <implementation-class>services.crud.BorderauService</implementation-class>
+    </service>
+    <service name="DemandeAchatService">
+      <implementation-class>services.crud.DemandeAchatService</implementation-class>
+    </service>
+    <service name="ContactUserService">
+      <implementation-class>services.crud.ContactUserService</implementation-class>
+    </service>
+    <service name="ConsommableService">
+      <implementation-class>services.crud.ConsommableService</implementation-class>
+    </service>
+    <service name="OffreCommercialeService">
+      <implementation-class>services.crud.OffreCommercialeService</implementation-class>
+    </service>
+    <service name="LigneConsoFournisseurService">
+      <implementation-class>services.crud.LigneConsoFournisseurService</implementation-class>
+    </service>
+    <service name="LigneMatFournisseurService">
+      <implementation-class>services.crud.LigneMatFournisseurService</implementation-class>
+    </service>
+    <service name="LigneConsommableService">
+      <implementation-class>services.crud.LigneConsommableService</implementation-class>
+    </service>
+    <service name="MaterielEtudeFaisabiliteService">
+      <implementation-class>services.crud.MaterielEtudeFaisabiliteService</implementation-class>
+    </service>
+    <service name="LignePrestationService">
+      <implementation-class>services.crud.LignePrestationService</implementation-class>
+    </service>
+    <service name="LigneMaterielService">
+      <implementation-class>services.crud.LigneMaterielService</implementation-class>
+    </service>
+    <service name="NoteCongeService">
+      <implementation-class>services.crud.NoteCongeService</implementation-class>
+    </service>
+    <service name="MaterielService">
+      <implementation-class>services.crud.MaterielService</implementation-class>
+    </service>
+    <service name="NoteConsultationService">
+      <implementation-class>services.crud.NoteConsultationService</implementation-class>
+    </service>
+    <service name="NoteDemandeAchatService">
+      <implementation-class>services.crud.NoteDemandeAchatService</implementation-class>
+    </service>
+    <service name="TiersServiceCrud">
+      <implementation-class>services.crud.TiersServiceCrud</implementation-class>
+    </service>
+    <service name="PrestationServiceCrud">
+      <implementation-class>services.crud.PrestationServiceCrud</implementation-class>
+    </service>
+    <service name="EtudeFaisabiliteServiceCrud">
+      <implementation-class>services.crud.EtudeFaisabiliteServiceCrud</implementation-class>
+    </service>
+    <service name="QualificationRequisesServiceCrud">
+      <implementation-class>services.crud.QualificationRequisesServiceCrud</implementation-class>
+    </service>
+    <service name="OffreTechniqueService">
+      <implementation-class>services.crud.OffreTechniqueService</implementation-class>
+    </service>
+    <service name="OrdreMissionService">
+      <implementation-class>services.crud.OrdreMissionService</implementation-class>
+    </service>
+  </services>
+  <clients/>
+</jax-ws>

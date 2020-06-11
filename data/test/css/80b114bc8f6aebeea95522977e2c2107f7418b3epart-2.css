@@ -1,0 +1,18 @@
+.part-2 .part-intro {
+  background-position: center -1260px; }
+.part-2 .nav-left {
+  border-top-color: #6e78a7; }
+  .part-2 .nav-left .nav-heading {
+    background-color: #6e78a7; }
+  .part-2 .nav-left .nav .active > a {
+    background-color: #afb7dd; }
+  .part-2 .nav-left .nav li a:hover {
+    background-color: #afb7dd; }
+  .part-2 .nav-left .sub-nav .active > a {
+    background-color: #c8cee9; }
+  .part-2 .nav-left .sub-nav li a:hover {
+    background-color: #c8cee9; }
+.part-2 .page-view {
+  border-top-color: #6e78a7; }
+
+/*# sourceMappingURL=part-2.css.map */

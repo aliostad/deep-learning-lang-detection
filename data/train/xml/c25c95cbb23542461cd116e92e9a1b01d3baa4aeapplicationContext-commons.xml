@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE beans PUBLIC
+	"-//SPRING//DTD BEAN 2.0//EN"
+	"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+	
+	<beans default-autowire="byName">
+	
+	<bean id="registryImpl" class="cn.org.act.sdp.repository.crust.impl.RegistryImpl" />
+	
+	<bean id="validate" class="repository.util.Validate" />
+	
+	<bean id="newsService" class="repository.service.impl.NewsServiceImpl" />
+	<bean id="serviceClusterService" class="repository.service.impl.ServiceClusterServiceImpl" />
+	<bean id="serviceService" class="repository.service.impl.ServiceServiceImpl" />
+	<bean id="tagService" class="repository.service.impl.TagServiceImpl" />
+	<bean id="tagServiceService" class="repository.service.impl.TagServiceServiceImpl" />
+	<bean id="userService" class="repository.service.impl.UserServiceImpl" />
+	<bean id="operationService" class="repository.service.impl.OperationServiceImpl" />
+	<bean id="commentsService" class="repository.service.impl.CommentsServiceImpl" />
+	<bean id="serviceGraphService" class="repository.service.impl.ServiceGraphServiceImpl" />
+	<bean id="keywordService" class="repository.service.impl.KeywordServiceImpl" />
+	<bean id="serviceKeywordService" class="repository.service.impl.ServiceKeywordServiceImpl" />
+	
+	<bean id="serviceLogService" class="repository.service.impl.ServiceLogServiceImpl" />
+	<bean id="serviceSubscriptionService" class="repository.service.impl.ServiceSubscriptionServiceImpl" />
+	<bean id="queryLogService" class="repository.service.impl.QueryLogServiceImpl" />
+	
+</beans> 

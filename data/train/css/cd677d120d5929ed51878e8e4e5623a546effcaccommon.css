@@ -1,0 +1,56 @@
+body { font-family: "Lucida Grande", "Lucida Sans", sans-serif; width: 800px; margin-left: 1em; }
+
+.red { color: red; }
+.error { font-weight: bold; color: red; }
+
+.mp-enter #instructions { width: 350px; float: left; }
+.mp-enter #mp-form { width: 400px; float: left; margin: 4em 0 0 2em; position: relative; }
+.mp-enter #mp-form form div { margin: 1em 0; position: relative; height: 1em; }
+.mp-enter #mp-form form div label { position: absolute; left: 0; width: 130px; font-weight: bold; text-align: right; }
+.mp-enter #mp-form form div .mpform-field { position: absolute; left: 140px; width: 170px; }
+.mp-enter #mp-form .mpform-submit { position: absolute; right: 60px; }
+
+.mp-write { width: 900px; }
+.mp-write #mp-details #mp-photo { margin-right: 8px; }
+.mp-write #advice { float: left; width: 396px; padding: 0; margin-right: 1em; }
+.mp-write #advice #finally { font-size: 80%; margin-top: 2.5em; }
+.mp-write #advice #finally img { margin-top: 0.5em; }
+.mp-write .click-to-expand { display: inline-block; position: relative; font: 14px/1.2em "Lucida Grande", "Lucida Sans", Arial, Helvetica, sans-serif; width: 14em; height: 2em; }
+.mp-write .click-to-expand span { position: absolute; left: 6px; top: 12px; width: 14em; }
+.mp-write #advice .active { cursor: pointer; }
+.mp-write #advice .active.closed { background: url(/mp/images/more.png) no-repeat right bottom; }
+.mp-write #advice .active.open { background: url(/mp/images/close.png) no-repeat right bottom; }
+.mp-write #advice #specific-advice ol { padding: 0; }
+.mp-write #advice #specific-advice ol li { list-style: decimal inside; margin-bottom: 6px; }
+.mp-write #advice #specific-advice ol li ul { margin: 1em 0; }
+.mp-write #advice #specific-advice ol li p { padding: 0; margin: 0; }
+.mp-write #advice #specific-advice ol li .big-number { display: inline-block; font-size: 24px; color: #2F9F3E; width: 24px; margin: 0 6px 0 0; }
+.mp-write #advice #specific-advice ul { list-style-type: disc; }
+.mp-write #advice #specific-advice ul li { list-style: disc outside; margin-left: 1em; }
+
+.mp-write #writetothem { width: 450px; float: left; }
+.mp-write #writetothem form { position: relative; }
+.mp-write #writetothem form #address div { height: 2.2em; }
+.mp-write #writetothem form div label { display: inline-block; width: 100px; height: 100%; font-weight: bold; }
+.mp-write #writetothem form div .textfield { width: 200px; height: 1.8em; }
+.mp-write #writetothem form #phone { margin-top: 6px; }
+.mp-write #writetothem form textarea { margin: 1em 0; width: 390px; height: 200px; }
+.mp-write #writetothem form .required { margin-left: 3px; color: red; }
+.mp-write #writetothem #not-your-mp,
+.mp-write #writetothem #not-your-mp a { font-size: 12px; color: black; }
+.mp-write #writetothem form .error-message { display: none; }
+.mp-write #writetothem form .error .error-message { display: inline-block; margin-left: 1em; font-weight: bold; background: hsl(128, 80%, 80%); color: hsl(0, 80%, 40%); line-height: 1.5em; padding: 0 3px 2px 3px; -webkit-border-radius: 2px 2px; -moz-border-radius: 2px 2px; border-radius: 2px 2px; }
+.mp-write #writetothem .submit { padding: 1em 0; }
+
+.mp-enter .inner #mp-form .highlighted { color: hsl(0, 90%, 90%); }
+
+
+.mp-admin-list a.positions { text-decoration: none; }
+
+.mp-admin { width: 600px; }
+.mp-admin #mp-group-form #blurb-help { color: #999; margin: 6px 0 3px 0; }
+.mp-admin #mp-group-form textarea { width: 600px; height: 200px; margin: 0 0 1em 0; }
+.mp-admin #mp-group-form #new-group { float: right; }
+.mp-admin #mps { margin-top: 1em; }
+.mp-admin #mps #mp-name { width: 300px; }
+.mp-admin #default-group { margin-top: 1em; }

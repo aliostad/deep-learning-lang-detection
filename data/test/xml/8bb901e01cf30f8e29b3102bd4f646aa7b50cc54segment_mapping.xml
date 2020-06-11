@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbook>
+	<worksheet name="Sheet1">
+		<section startRow="0" endRow="0" />
+		<loop startRow="1" endRow="1" items="segmentList" var="segment"  
+			varType="com.isoftstone.tyw.entity.info.Segment">
+			<section startRow="1" endRow="1">
+				<mapping row="1" col="0" >segment.id</mapping>
+				<mapping row="1" col="1" >segment.title</mapping>
+				<mapping row="1" col="2" >segment.segItem</mapping>
+				<mapping row="1" col="3">segment.source</mapping>
+				<mapping row="1" col="4">segment.personnelTag</mapping>
+				<mapping row="1" col="5">segment.areaTag</mapping>
+				<mapping row="1" col="6">segment.knowledgeTag</mapping>
+				<mapping row="1" col="7">segment.subitemTag</mapping>
+				<mapping row="1" col="8">segment.begincreateDate</mapping>
+			</section>
+			<loopbreakcondition>
+				<rowcheck offset="0">
+					<cellcheck offset="0">END</cellcheck>
+				</rowcheck>
+			</loopbreakcondition>
+		</loop>
+	</worksheet>
+</workbook>

@@ -1,0 +1,37 @@
+ol.brands {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+/* 	background-color: #ccc; */
+}
+
+li.brand a:link,
+li.brand a:visited {
+	display: block;
+	padding: 10px;
+	border: solid 1px #ccc;
+	font-size: 24px;
+	background-color: #eee;
+}
+
+ol.models {
+	margin: 0px;
+	padding: 10px 0px;
+	list-style: none;
+/* 	background-color: #ccc; */
+}
+
+li.model {
+	float: left;
+	margin-right: 10px;
+}
+
+li.model a:link,
+li.model a:visited {
+	display: block;
+	padding: 10px;
+	width: 120px;
+	text-align: left;
+	font-size: 100%;
+	background-color: #fff;
+}

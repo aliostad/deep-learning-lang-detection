@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="gb2312"?>
+<LocalServices>
+	<LocalService class="com.joymeng.core.base.net.service.EchoService" />
+	<LocalService class="com.joymeng.game.net.service.EnterGameService" />
+	<LocalService class="com.joymeng.game.net.service.BuildingService" />
+	<LocalService class="com.joymeng.game.net.service.HeroService" />
+	<LocalService class="com.joymeng.game.net.service.UserService"/>
+	<LocalService class="com.joymeng.game.net.service.ItemService" />
+	<LocalService class="com.joymeng.game.net.service.FightService" />
+	<LocalService class="com.joymeng.game.net.service.SystemService" />
+	<LocalService class="com.joymeng.game.net.service.HeartbeatService" />
+	<LocalService class="com.joymeng.game.net.service.NationService" />
+	<LocalService class="com.joymeng.game.net.service.ShopService" />
+	<LocalService class="com.joymeng.game.net.service.SkillService" />
+	<LocalService class="com.joymeng.game.net.service.ChatService" />
+	<LocalService class="com.joymeng.game.net.service.BoxService"/>
+	<LocalService class="com.joymeng.game.net.service.RankService"/>
+	<LocalService class="com.joymeng.game.net.service.BattleFieldService"/>
+	<LocalService class="com.joymeng.game.net.service.ArenaService"/>
+	<LocalService class="com.joymeng.game.net.service.PropsBoxService"/>
+	<LocalService class="com.joymeng.game.net.service.RegionBattleService"/>
+	<LocalService class="com.joymeng.game.net.service.MissionService"/>
+	<LocalService class="com.joymeng.game.net.service.CardService"/>
+	<LocalService class="com.joymeng.game.net.service.FriendService"/>
+	<LocalService class="com.joymeng.game.net.service.RechargeService"/>
+	<LocalService class="com.joymeng.game.net.service.ExitGameService"/>
+	<LocalService class="com.joymeng.game.net.service.FlagService"/>
+	<LocalService class="com.joymeng.game.net.service.GameListService"/>
+	<LocalService class="com.joymeng.game.net.service.UserQuestionService"/>
+	<LocalService class="com.joymeng.game.net.service.SignService"/>
+</LocalServices>

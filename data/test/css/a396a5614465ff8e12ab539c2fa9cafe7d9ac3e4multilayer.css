@@ -1,0 +1,33 @@
+/* 
+    Document   : catalogfilters
+    Created on : 19.04.2011, 17:19:22
+    Author     : vinc
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.catalogfilter {
+    width:100%;
+}
+
+.cf-ajax-load{
+    
+    height: 100%;
+    left: 0;
+    opacity: 0.99;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.cf-ajax-load img{
+    left: 50%;
+    top:50%;
+    position: absolute;
+}

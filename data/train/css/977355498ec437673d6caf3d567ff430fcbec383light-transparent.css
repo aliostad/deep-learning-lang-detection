@@ -1,0 +1,11 @@
+
+/* LIGHT NAV MENU */
+/* Background Color */
+#header nav ul:after, #header nav ul:before { border-color:rgba(255,255,255,.5); }
+#header nav ul span { background:rgba(255,255,255,.5); }
+#header nav ul span:before, #header nav ul span:after { border-bottom-color:rgba(255,255,255,.5); }
+/* Hover State */
+#header nav ul a:hover span, #header nav ul a.waiting span { background:rgba(255,255,255,.7); }
+/* Ribbon shadows */
+#header nav ul span:before {  border-right-color: rgba(0,0,0,.1); }
+#header nav ul span:after { border-left-color: rgba(0,0,0,.1); }

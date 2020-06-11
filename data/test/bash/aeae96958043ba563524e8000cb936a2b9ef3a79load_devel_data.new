@@ -1,0 +1,26 @@
+#!/bin/bash
+
+main(){
+    make -C db &&
+    { rake db:drop --trace || true; } &&
+    rake db:create --trace &&
+    rake db:schema:load --trace &&
+    test -f db/devel_data.sql &&
+    { cat db/devel_data.sql | psql fgdb_development; } &&
+    { echo "Returning with success"; return 0; }
+    echo "Returning with failure"
+    return 1
+}
+
+echo -n > log/load_devel_data.log
+tail -f log/load_devel_data.log &
+main 2>>log/load_devel_data.log >>log/load_devel_data.log
+RET=$?
+sleep 3
+kill %1
+wait
+#if [ "$1" = "--slexy" -o "$RET" = "1" ]; then
+if [ "$1" = "--slexy" ]; then
+    echo "Tell Ryan or Chris or whoever this: $(./script/slexy.rb < log/load_devel_data.log)"
+fi
+exit $RET

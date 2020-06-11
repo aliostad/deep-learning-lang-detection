@@ -1,0 +1,52 @@
+<save arq="/home/adriano/Ubuntu One/workspace/VPE-qGM/VPE-qGM/src/processes/h4.xml" pos="0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15">
+<process repr="env" tipo="seq" pos="0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15">
+<process repr="terminicio" x="1118" y="1298" cor="BLACK"></process>
+<process repr="env" tipo="paralelo" pos="0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15">
+<process repr="env" tipo="paralelo" pos="0, 1, 2, 3, 4, 5, 6, 7">
+<process repr="env" tipo="paralelo" pos="0, 1, 2, 3">
+<process repr="env" tipo="paralelo" pos="0, 1">
+<process repr="conselem" qubits= "4" acao= "H,H,H,H" pos= "0" parametro= "" x="1233" y="655" cor="BLACK"></process>
+<process repr="conselem" qubits= "4" acao= "H,H,H,H" pos= "1" parametro= "" x="1233" y="726" cor="BLACK"></process>
+</process>
+<process repr="env" tipo="paralelo" pos="2, 3">
+<process repr="conselem" qubits= "4" acao= "H,H,H,H" pos= "2" parametro= "" x="1233" y="817" cor="BLACK"></process>
+<process repr="conselem" qubits= "4" acao= "H,H,H,H" pos= "3" parametro= "" x="1233" y="888" cor="BLACK"></process>
+</process>
+</process>
+<process repr="env" tipo="paralelo" pos="4, 5, 6, 7">
+<process repr="env" tipo="paralelo" pos="4, 5">
+<process repr="conselem" qubits= "4" acao= "H,H,H,H" pos= "4" parametro= "" x="1233" y="999" cor="BLACK"></process>
+<process repr="conselem" qubits= "4" acao= "H,H,H,H" pos= "5" parametro= "" x="1233" y="1070" cor="BLACK"></process>
+</process>
+<process repr="env" tipo="paralelo" pos="6, 7">
+<process repr="conselem" qubits= "4" acao= "H,H,H,H" pos= "6" parametro= "" x="1233" y="1161" cor="BLACK"></process>
+<process repr="conselem" qubits= "4" acao= "H,H,H,H" pos= "7" parametro= "" x="1233" y="1232" cor="BLACK"></process>
+</process>
+</process>
+</process>
+<process repr="env" tipo="paralelo" pos="8, 9, 10, 11, 12, 13, 14, 15">
+<process repr="env" tipo="paralelo" pos="8, 9, 10, 11">
+<process repr="env" tipo="paralelo" pos="8, 9">
+<process repr="conselem" qubits= "4" acao= "H,H,H,H" pos= "8" parametro= "" x="1233" y="1363" cor="BLACK"></process>
+<process repr="conselem" qubits= "4" acao= "H,H,H,H" pos= "9" parametro= "" x="1233" y="1434" cor="BLACK"></process>
+</process>
+<process repr="env" tipo="paralelo" pos="10, 11">
+<process repr="conselem" qubits= "4" acao= "H,H,H,H" pos= "10" parametro= "" x="1233" y="1525" cor="BLACK"></process>
+<process repr="conselem" qubits= "4" acao= "H,H,H,H" pos= "11" parametro= "" x="1233" y="1596" cor="BLACK"></process>
+</process>
+</process>
+<process repr="env" tipo="paralelo" pos="12, 13, 14, 15">
+<process repr="env" tipo="paralelo" pos="12, 13">
+<process repr="conselem" qubits= "4" acao= "H,H,H,H" pos= "12" parametro= "" x="1233" y="1707" cor="BLACK"></process>
+<process repr="conselem" qubits= "4" acao= "H,H,H,H" pos= "13" parametro= "" x="1233" y="1778" cor="BLACK"></process>
+</process>
+<process repr="env" tipo="paralelo" pos="14, 15">
+<process repr="conselem" qubits= "4" acao= "H,H,H,H" pos= "14" parametro= "" x="1233" y="1869" cor="BLACK"></process>
+<process repr="conselem" qubits= "4" acao= "H,H,H,H" pos= "15" parametro= "" x="1233" y="1940" cor="BLACK"></process>
+</process>
+</process>
+</process>
+</process>
+<process repr="termfim" x="1350" y="1298" cor="BLACK"></process>
+</process>
+</save>

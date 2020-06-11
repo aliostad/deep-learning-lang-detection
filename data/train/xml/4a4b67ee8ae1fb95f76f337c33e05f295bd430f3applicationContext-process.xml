@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:flow="http://www.springframework.org/schema/webflow-config"
+	xmlns:camel="http://camel.apache.org/schema/spring" xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	 http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd
+     http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd
+     http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd"
+	default-lazy-init="false">
+
+	<bean id="helloProcess" class="com.sample.webserviceprocess.HelloProcess">
+	</bean>
+	
+	<bean id="propStateDaoProcess" class="com.vstar.dao.process.PropStateDaoProcess">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="propCityDaoProcess" class="com.vstar.dao.process.PropCityDaoProcess">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="propCompanyDaoProcess" class="com.vstar.dao.process.PropCompanyDaoProcess">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="propLocationDaoProcess" class="com.vstar.dao.process.PropLocationDaoProcess">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="propLocationDataProcessImpl" class="com.vstar.process.masterData.infoBean.PropLocationDataProcessImpl">
+		<property name="propStateDaoProcess" ref="propStateDaoProcess"></property>
+		<property name="propCityDaoProcess" ref="propCityDaoProcess"></property>
+		<property name="propLocationDaoProcess" ref="propLocationDaoProcess"></property>
+	</bean>
+
+	<bean id="masterDataProcess" class="com.vstar.process.masterData.MasterDataProcessImpl">
+		<property name="mergedProperties" ref="mergedProperties"></property>
+		<property name="propLocationDataProcessImpl" ref="propLocationDataProcessImpl"></property>
+	</bean>
+
+	<bean id="propertySearchProcess"
+		class="com.vstar.process.property.search.PropertySearchProcessImpl">
+		<property name="mergedProperties" ref="mergedProperties"></property>
+		<property name="propInfoDaoProcess" ref="propInfoDaoProcess"></property>
+	</bean>
+
+	<bean id="masterDataInitializedListener" class="com.vstar.process.listeners.MasterDataInitialized">
+		<property name="masterDataProcess" ref="masterDataProcess"></property>
+		<property name="mergedProperties" ref="mergedProperties"></property>
+		<property name="sessionFactory" ref="sessionFactory" />
+		<property name="transManager" ref="transactionManager" />
+	</bean>
+
+	<bean id="propUsersDaoProcess" class="com.vstar.dao.process.PropUsersDaoProcess">
+		<property name="userDetailsManager" ref="jdbcUserDetailsManager" />
+		<property name="accountNonExpired" value="true" />
+		<property name="accountNonLocked" value="true" />
+		<property name="saltSource" ref="defaultSaltSource" />
+		<property name="passwordEncoder" ref="defaultPasswordEncoder" />
+	</bean>
+    
+    <bean id="propUserDaoExtnProcess"
+		class="com.vstar.dao.process.PropUserDaoExtnProcess">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="propAreaDaoProcess"
+		class="com.vstar.dao.process.PropAreaDaoProcess">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="propFeaturesDaoProcess"
+		class="com.vstar.dao.process.PropFeaturesDaoProcess">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="propInfoDaoProcess"
+		class="com.vstar.dao.process.PropInfoDaoProcess">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="propPriceDaoProcess"
+		class="com.vstar.dao.process.PropPriceDaoProcess">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="propTransactionDaoProcess"
+		class="com.vstar.dao.process.PropTransactionDaoProcess">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="propLocationInfoDaoProcess"
+		class="com.vstar.dao.process.PropLocationInfoDaoProcess">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="propTermsCondDaoProcess"
+		class="com.vstar.dao.process.PropTermsCondDaoProcess">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="reqPropTypeDaoProcess"
+		class="com.vstar.dao.process.ReqPropTypeDaoProcess">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="propRequirementDaoProcess"
+		class="com.vstar.dao.process.PropRequirementDaoProcess">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="propOwnerDaoProcess"
+		class="com.vstar.dao.process.PropOwnerDaoProcess">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="requirementOwnerDaoProcess"
+		class="com.vstar.dao.process.RequirementOwnerDaoProcess">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="propImageDaoProcess"
+		class="com.vstar.dao.process.PropImageDaoProcess">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="userProcess"
+		class="com.vstar.dao.process.propertyUpload.UserProcess">
+	</bean>
+	
+	<bean id="registrationProcess"
+		class="com.vstar.dao.process.propertyUpload.RegistrationProcess">
+		<property name="propUserDaoExtnProcess" ref="propUserDaoExtnProcess" />
+		<property name="propUsersDaoProcess" ref="propUsersDaoProcess" />
+		<property name="propCompanyDaoProcess" ref="propCompanyDaoProcess" />
+		<property name="userProcess" ref="userProcess" />
+		<property name="propOwnerDaoProcess" ref="propOwnerDaoProcess" />
+	</bean>
+    
+    <bean id="propertyUploadProcess"
+		class="com.vstar.dao.process.propertyUpload.PropertyUploadProcess">
+		<property name="propAreaDaoProcess" ref="propAreaDaoProcess" />
+		<property name="propFeaturesDaoProcess" ref="propFeaturesDaoProcess" />
+		<property name="propInfoDaoProcess" ref="propInfoDaoProcess" />
+		<property name="propPriceDaoProcess" ref="propPriceDaoProcess" />
+		<property name="propTransactionDaoProcess" ref="propTransactionDaoProcess" />
+		<property name="propLocationInfoDaoProcess" ref="propLocationInfoDaoProcess" />
+		<property name="propTermsCondDaoProcess" ref="propTermsCondDaoProcess" />
+		<property name="reqPropTypeDaoProcess" ref="reqPropTypeDaoProcess" />
+		<property name="propRequirementDaoProcess" ref="propRequirementDaoProcess" />
+		<property name="registrationProcess" ref="registrationProcess" />
+		<property name="propOwnerDaoProcess" ref="propOwnerDaoProcess" />
+		<property name="requirementOwnerDaoProcess" ref="requirementOwnerDaoProcess" />
+		<property name="userProcess" ref="userProcess" />
+		<property name="propImageDaoProcess" ref="propImageDaoProcess" />
+	</bean>
+	
+</beans>

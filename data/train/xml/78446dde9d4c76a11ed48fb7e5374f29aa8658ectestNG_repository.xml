@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="repositoryTest" parallel="instances" thread-count="5">
+    <test name="petOwnerRepositoryTest">
+        <classes>
+            <class name="PetOwnerRepositoryTest" />
+        </classes>
+    </test>
+    <test name="veterinaryRepositoryTest">
+        <classes>
+            <class name="VeterinaryRepositoryTest" />
+        </classes>
+    </test>
+    <test name="petRepositoryTest">
+        <classes>
+            <class name="PetRepositoryTest" />
+        </classes>
+    </test>
+    <test name="visitHistoryRepositoryTest">
+        <classes>
+            <class name="VisitHistoryRepositoryTest" />
+        </classes>
+    </test>
+</suite>

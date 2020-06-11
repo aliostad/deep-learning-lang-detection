@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+	<message name="CHASE">{user}已经追回任务</message>
+	<message name="CHASEALL">{user}已经全部追回任务</message>
+	<message name="ASSIGN">{user}派发给{actor}</message>
+	<message name="REASSIGN">{user}移交给{actor}</message>
+	<message name="APPENDASSIGN">{user}补派给{actor}</message>
+	<message name="MAKECOPY">{user}抄送给{actor}</message>
+	<message name="AUDIT">{user}提交给{actor}审批</message>
+	<message name="REAUDIT">{user}审批通过并转给{actor}审批</message>
+	<message name="ASSIST">{user}派发给{actor}协办</message>
+	<message name="FINISH">您派出的任务已完成，完成人为：{user}</message>
+	<message name="REJECT">您派出的任务被{user}驳回</message>
+	<message name="ORGANIZEAUDIT">{user}提交给{actor}会审</message>
+	<message name="defaultInfo">处理成功！</message>
+</messages>

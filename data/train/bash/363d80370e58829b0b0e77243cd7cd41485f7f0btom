@@ -1,0 +1,147 @@
+#!/bin/bash
+
+REDSHELL_MODTOM_NAME="mod_tomcat"
+
+unset REDSHELL_MODTOM_DEFAULTS
+declare -Ag REDSHELL_MODTOM_DEFAULTS
+
+unset REDSHELL_MODTOM_HELP
+declare -Ag REDSHELL_MODTOM_HELP
+REDSHELL_MODTOM_HELP[clean]="tom_clean - clean a context - 1=context"
+REDSHELL_MODTOM_HELP[debug]="tom_debug - invoke catalina.sh debug"
+REDSHELL_MODTOM_HELP[deploy]="tom_deploy - deploy a web application [war|directory] into a context - 1=webapp 2=context"
+REDSHELL_MODTOM_HELP[env]="tom_env - log the catalina environment"
+REDSHELL_MODTOM_HELP[help]="tom_help - display this help"
+REDSHELL_MODTOM_HELP[invoke]="tom_invoke - run catalina.sh"
+REDSHELL_MODTOM_HELP[redeploy]="tom_redeploy - redeploy the most recent web application/context"
+REDSHELL_MODTOM_HELP[run]="tom_run - invoke catalina.sh run"
+REDSHELL_MODTOM_HELP[start]="tom_start - invoke catalina.sh start"
+REDSHELL_MODTOM_HELP[stop]="tom_stop - invoke catalina.sh stop"
+REDSHELL_MODTOM_HELP[tail]="tom_tail - tail the server log"
+REDSHELL_MODTOM_HELP[version]="tom_version - invoke catalina.sh version"
+
+# clean all deployed webapps
+function tom_clean() {
+	CC_CONTEXT=$1
+	if [ -z "$CC_CONTEXT" ]; then
+		log_warn "catalina clean" "no context specified" "${REDSHELL_MODTOM_HELP[clean]}"
+		return
+	fi
+	CC_DEPLOYROOT=$CATALINA_HOME/webapps/$CC_CONTEXT
+	if [ -e "$CC_DEPLOYROOT" ]; then
+		rm -rf "$CC_DEPLOYROOT"
+	else
+		log_warn "catalina clean" "no such context:$CC_CONTEXT"
+	fi
+}
+
+function tom_debug() {
+	catalina_invoke "debug"
+}
+
+function tom_deploy() {
+	CD_WEBAPP=$1
+	CD_CONTEXT=$2
+	if [ -z "$CD_WEBAPP" ]; then
+		log_warn "catalina deploy" "no webapp specified" "${REDSHELL_MODTOM_HELP[deploy]}"
+		return
+	fi
+	if [ -z "$CD_CONTEXT" ]; then
+		log_warn "catalina deploy" "no context specified" "${REDSHELL_MODTOM_HELP[deploy]}"
+		return
+	fi
+	# reference the deploy root in the catalina webapps directory
+	CD_DEPLOYROOT="$CATALINA_HOME/webapps/$CD_CONTEXT"
+	log_debug "catalina deploy" "webapp=$CD_WEBAPP;context=$CD_CONTEXT;deploy root=$CD_DEPLOYROOT"
+	if [[ -e "$CD_WEBAPP" && -f "$CD_WEBAPP" ]]; then
+		# the webapp is a file copy it onto the context war file in the catalina
+		# webapps directory if the webapp file is newer than the context war
+		if [[ -e "$CD_DEPLOYROOT.war" && "$CD_WEBAPP" -ot "$CD_DEPLOYROOT.war" ]]; then
+			log_warn "catalina deploy" "deployed context is newer than webappp"
+			return
+		fi
+		CD_CPSTDOUT=`cp -uv "$CD_WEBAPP" "$CD_DEPLOYROOT.war"`
+		log "catalina deploy" "$CD_CPSTDOUT"
+	elif [[ -e "$CD_WEBAPP" && -d "$CD_WEBAPP" ]]; then
+		# create a requisite deploy root directory if it doesn't exist
+		if [ ! -e "$CD_DEPLOYROOT" ]; then
+			mkdir $CD_DEPLOYROOT
+		fi
+		# the webapp is a directory; do a recursive copy (only updating when
+		# required (-u) into the deploy root
+		CD_WEBAPPDIR=${CD_WEBAPP%/}
+		CD_CPSTDOUT=`cp -Ruv "$CD_WEBAPPDIR"/* "$CD_DEPLOYROOT/"`
+		log "catalina deploy" "$CD_CPSTDOUT"
+	else
+		log_warn "catalina deploy" "unsupported webapp:$CD_WEBAPP" "${REDSHELL_MODTOM_HELP[deploy]}"
+		return
+	fi
+	REDSHELL_MODTOM_DEFAULTS[webapp]="$CD_WEBAPP"
+	REDSHELL_MODTOM_DEFAULTS[context]="$CD_CONTEXT"
+}
+
+# log help details for catalina functions
+function tom_help() {
+	for i in "${!REDSHELL_MODTOM_HELP[@]}"
+	do
+		log "${REDSHELL_MODTOM_HELP[$i]}"
+	done
+}
+
+# log the catalina environment including home; pid and webapps
+function tom_env() {
+	log "CATALINA_HOME:$CATALINA_HOME"
+	log "CATALINA_PID:$CATALINA_PID"
+	for w in `ls "$CATALINA_HOME/webapps/"`
+	do
+		log "CATALINA_WEBAPP:$w"
+	done
+}
+
+# redeploy a default (most recently deployed) webapp
+function tom_redeploy() {
+	if [ -z "${REDSHELL_MODTOM_DEFAULTS[webapp]}" ]; then
+		log_warn "catalina redeploy" "no default webapp set" "${REDSHELL_MODTOM_HELP[redeploy]}"
+		return
+	fi
+	if [ -z "${REDSHELL_MODTOM_DEFAULTS[context]}" ]; then
+		log_warn "catalina_redeploy" "no default context set" "${REDSHELL_MODTOM_HELP[redeploy]}"
+		return
+	fi
+	catalina_deploy "${REDSHELL_MODTOM_DEFAULTS[webapp]}" "${REDSHELL_MODTOM_DEFAULTS[context]}"
+}
+
+function tom_run() {
+	catalina_invoke "run"
+}
+
+# invoke catalina start
+function tom_start() {
+	catalina_invoke "start"
+}
+
+# invoke catalina stop
+function tom_stop() {
+	catalina_invoke "stop"
+}
+
+# tail catalina.out
+function tom_tail() {
+	tail_files "$CATALINA_HOME/logs/catalina.out" $@
+}
+
+# invoke catalina version
+function tom_version() {
+	catalina_invoke "version"
+}
+
+function tom_init() {
+	log "$REDSHELL_NAME $REDSHELL_MODTOM_NAME init"	
+}
+
+# invoke catalina.sh passing all parameters
+function tom_invoke() {
+	"$CATALINA_HOME/bin/catalina.sh" $@
+}
+
+tom_init

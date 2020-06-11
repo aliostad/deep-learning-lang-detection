@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ [y] hybris Platform
+
+ Copyright (c) 2000-2014 hybris AG
+ All rights reserved.
+
+ This software is the confidential and proprietary information of hybris
+ ("Confidential Information"). You shall not disclose such Confidential
+ Information and shall use it only in accordance with the terms of the
+ license agreement you entered into with hybris.
+-->
+<configuration xmlns="hybris.de/schemas/hmc/generic"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="hybris.de/schemas/hmc/generic hmc.xsd">
+
+
+	<!-- Configuration for extension acceleratorcms -->
+
+	<explorertree>
+		<group name="cms2" description="typeref.cms.description" mode="append">
+			<typeref type="SimpleCMSAction" description="nav.simplecmsaction.description" position="9"/>
+		</group>
+	</explorertree>
+
+
+	<type name="ProductFeatureComponent" mode="append">
+		<organizer mode="append">
+			<editor mode="append">
+				<tab name="properties" position="0">
+					<section name="section.cmscomponent.features">
+						<listlayout>
+							<attribute name="product"/>
+							<attribute name="title"/>
+							<attribute name="description"/>
+							<attribute name="media"/>
+						</listlayout>
+					</section>
+				</tab>
+			</editor>
+		</organizer>
+	</type>
+
+	<type name="CategoryFeatureComponent" mode="append">
+		<organizer mode="append">
+			<editor mode="append">
+				<tab name="properties" position="0">
+					<section name="section.cmscomponent.features">
+						<listlayout>
+							<attribute name="category"/>
+							<attribute name="title"/>
+							<attribute name="description"/>
+							<attribute name="media"/>
+						</listlayout>
+					</section>
+				</tab>
+			</editor>
+		</organizer>
+	</type>
+
+	<type name="MiniCartComponent" mode="append">
+		<organizer mode="append">
+			<editor mode="append">
+				<tab name="properties" position="0">
+					<section name="section.cmscomponent.features">
+						<listlayout>
+							<attribute name="title"/>
+							<attribute name="totalDisplay"/>
+							<attribute name="shownProductCount"/>
+						</listlayout>
+					</section>
+				</tab>
+			</editor>
+		</organizer>
+	</type>
+
+	<type name="NavigationBarComponent" mode="append">
+		<organizer mode="append">
+			<editor mode="append">
+				<tab name="properties" position="0">
+					<section name="section.cmscomponent.features">
+						<listlayout>
+							<attribute name="navigationNode"/>
+							<attribute name="link"/>
+							<attribute name="dropDownLayout"/>
+							<attribute name="styleClass"/>
+							<attribute name="wrapAfter"/>
+						</listlayout>
+					</section>
+				</tab>
+			</editor>
+		</organizer>
+	</type>
+
+	<type name="FooterComponent" mode="append">
+		<organizer mode="append">
+			<editor mode="append">
+				<tab name="properties" position="0">
+					<section name="section.cmscomponent.features">
+						<listlayout>
+							<attribute name="navigationNodes"/>
+							<attribute name="notice"/>
+							<attribute name="wrapAfter"/>
+						</listlayout>
+					</section>
+				</tab>
+			</editor>
+		</organizer>
+	</type>
+
+	<type name="ImageMapComponent" mode="append">
+		<organizer mode="append">
+			<editor mode="append">
+				<tab name="properties" position="0">
+					<section name="section.cmscomponent.features">
+						<listlayout>
+							<attribute name="imageMapHTML">
+								<textareaeditor/>
+							</attribute>
+						</listlayout>
+					</section>
+				</tab>
+			</editor>
+		</organizer>
+	</type>
+
+	<type name="CMSUiExperienceRestriction" mode="append"
+	      icon="images/cms2/restrictioncategory.gif">
+		<organizer mode="append">
+			<editor mode="append">
+				<tab name="properties" position="0">
+					<section name="section.restriction.objects">
+						<listlayout>
+							<attribute name="uiExperience"/>
+						</listlayout>
+					</section>
+				</tab>
+			</editor>
+		</organizer>
+	</type>
+
+	<type name="CMSLinkComponent" mode="append"
+	      icon="images/cms2/contentelementlink.gif">
+		<organizer mode="append">
+			<editor mode="append">
+				<tab name="properties" position="0">
+					<section name="properties" mode="append">
+						<listlayout>
+							<attribute name="linkName"/>
+							<attribute name="external"/>
+							<attribute name="contentPage"/>
+							<attribute name="category"/>
+							<attribute name="product"/>
+							<attribute name="url"/>
+							<attribute name="target"/>
+							<attribute name="styleAttributes"/>
+						</listlayout>
+					</section>
+				</tab>
+				<tab name="administration" mode="append">
+					<section name="section.cms.admin" mode="append">
+						<listlayout>
+							<attribute name="containers"/>
+							<attribute name="productCode"/>
+							<attribute name="categoryCode"/>
+							<attribute name="contentPageLabelOrId"/>
+						</listlayout>
+					</section>
+				</tab>
+			</editor>
+		</organizer>
+	</type>
+
+	<type name="SimpleCMSAction" mode="append" icon="images/cms2/simplecomponent.gif">
+		<organizer mode="append">
+			<editor mode="append">
+				<tab name="tab.components.contentslots" mode="delete"/>
+				<tab name="properties" position="0">
+					<section name="properties" mode="append">
+						<listlayout>
+							<attribute name="url"/>
+						</listlayout>
+					</section>
+					<section name="components" mode="append">
+						<listlayout>
+							<attribute name="components"/>
+						</listlayout>
+					</section>
+				</tab>
+			</editor>
+		</organizer>
+	</type>
+
+</configuration>

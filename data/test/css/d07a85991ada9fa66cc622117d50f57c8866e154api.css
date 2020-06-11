@@ -1,0 +1,20 @@
+body.api { font-size: 100%; font-family: "Helvetica", "Arial", sans-serif;}
+h1 > * { display:block; float:left; }
+h1 span { margin-top: 10px; margin-left: 10px; }
+
+.api-header { padding: 10px; background-color: #EFEDE6;}
+.api-nav { float:left; margin-top: 20px;}
+.api-nav li { list-style-type:none; padding: 5px 10px; }
+.api-nav > li { float:left; margin-left: 20px; }
+.api-nav > li .submenu { 
+  display: none;
+  position:absolute; 
+  margin-left: 0px; 
+  background-color: #ededed; 
+  border:1px #cecece solid;
+  font-size: 90%;
+}
+.api-header .salutation { float:right; margin-top: 20px;}
+.api-nav > li:hover > .submenu { display: block; }
+/*table { border-collapse: collapse; }
+tr > * { border: 1px solid #222; padding: 10px; }*/

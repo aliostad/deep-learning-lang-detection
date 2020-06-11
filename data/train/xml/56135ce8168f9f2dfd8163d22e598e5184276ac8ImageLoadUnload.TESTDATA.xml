@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<marionette_info>
+  <expected_messages>
+    <message type="whole_message">initializing image loader facility</message>
+    <message type="whole_message">Image loaded into texture_map 1</message>
+    <message type="whole_message">Starting state system....</message>
+    <message type="starts_with">Queuing normal (</message>
+    <message type="starts_with">Queuing deferred (</message>
+    <message type="whole_message">Image loaded into texture_map 2</message>
+    <message type="starts_with">Queuing explicit (</message>
+    <!-- For some reason, the error message is announced twice -->
+    <message type="whole_message">ERROR: Stimulus image is not loaded.  Displaying nothing.</message>
+    <message type="whole_message">ERROR: Stimulus image is not loaded.  Displaying nothing.</message>
+    <message type="starts_with">Loading normal (</message>
+    <message type="starts_with">Loading deferred (</message>
+    <message type="starts_with">Loading explicit (</message>
+    <message type="whole_message">Image loaded into texture_map 3</message>
+    <message type="starts_with">Unloading normal (</message>
+    <message type="whole_message">Image unloaded from texture_map 1</message>
+    <message type="starts_with">Unloading deferrred (</message>
+    <message type="whole_message">Image unloaded from texture_map 2</message>
+    <message type="starts_with">Unloading explicit (</message>
+    <message type="whole_message">Image unloaded from texture_map 3</message>
+    <!-- For some reason, the error messages are announced twice -->
+    <message type="whole_message">ERROR: Stimulus image is not loaded.  Displaying nothing.</message>
+    <message type="whole_message">ERROR: Stimulus image is not loaded.  Displaying nothing.</message>
+    <message type="whole_message">ERROR: Stimulus image is not loaded.  Displaying nothing.</message>
+    <message type="whole_message">ERROR: Stimulus image is not loaded.  Displaying nothing.</message>
+    <message type="whole_message">ERROR: Stimulus image is not loaded.  Displaying nothing.</message>
+    <message type="whole_message">ERROR: Stimulus image is not loaded.  Displaying nothing.</message>
+    <message type="whole_message">State system ending</message>
+  </expected_messages>
+</marionette_info>

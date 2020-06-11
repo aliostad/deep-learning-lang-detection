@@ -1,0 +1,83 @@
+#sidebar div.api #formApiSearch {
+	margin-bottom: 18px;
+}
+
+#sidebar div.api #formApiSearchQuery {
+    width: 175px;	
+}
+
+#sidebar div.api ul li {
+	list-style: none;
+	margin-left: 0;
+}
+
+#sidebar div.api ul li.current {
+	font-weight: bold;
+}
+
+#api #breadcrumbs {
+    margin-bottom: 18px;
+}
+
+#api div.detail p.namespace {
+    margin: -18px 0 12px 0;
+}
+
+#api .hierarchy li {
+	list-style: url(../../images/api/hierarchy.png);
+}
+
+#api .hierarchy li.first {
+	list-style: none;
+}
+
+#api ul.exceptions li,
+#api ul.parameters li,
+#api ul.methods li,
+#api ul.properties li {
+	line-height: 120%;
+}
+
+#api span.description {
+	color: #777;
+}
+
+#api .inheritedMethods {
+	margin-bottom: 18px;
+	line-height: 120%;
+}
+
+#api .inheritedMethods p {
+	margin-bottom: 3px;
+}
+
+#api p.top {
+	font-size: smaller;
+	margin: 24px 0 24px 0;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #DDD;
+}
+
+#api div.deprecated {
+	background-color: #FFC;
+	border: 1px solid #DF6F74;
+	color: #DF1B23;
+	padding: 12px;
+	margin-bottom: 12px;
+}
+
+#api ul.properties div.deprecated {
+	margin-top: 12px;
+}
+
+#api div.todo {
+	background-color: #FFC;
+	border: 1px solid #6F78DF;
+	color: #3340CF;
+	padding: 12px;
+	margin-bottom: 12px;
+}
+
+#api div.todo ul {
+	margin: 0;
+}

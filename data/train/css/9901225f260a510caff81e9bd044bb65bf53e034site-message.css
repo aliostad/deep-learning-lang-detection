@@ -1,0 +1,37 @@
+/* ERROR MESSAGE */
+.message-container {
+  position: fixed;
+  top: 0;
+  color: white;
+  text-align: center;
+  z-index: 1000;
+  width: 100%;
+  cursor: pointer; }
+
+.message-container.success {
+  background: rgba(105, 200, 199, 0.7); }
+
+.message-container.success:hover {
+  background: rgba(105, 200, 199, 0.8); }
+
+.message-container.error {
+  background: rgba(169, 68, 66, 0.7); }
+
+.message-container.error:hover {
+  background: rgba(169, 68, 66, 0.8); }
+
+.message-container.loading {
+  background: rgba(66, 139, 202, 0.7); }
+
+.message-container.loading:hover {
+  background: rgba(66, 139, 202, 0.8); }
+
+.message-header {
+  font-size: 30px;
+  margin: 10px; }
+
+.message {
+  font-size: 20px;
+  margin: 0; }
+
+/*# sourceMappingURL=site-message.css.map */

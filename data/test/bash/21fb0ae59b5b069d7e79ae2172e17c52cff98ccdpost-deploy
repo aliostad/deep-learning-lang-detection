@@ -1,0 +1,25 @@
+#!/bin/bash
+set -ex;
+
+REMOTE=$1
+REPO=$2
+
+# get current DATABASE_URL
+DATABASE_URL=$(ssh $REMOTE config:get $REPO DATABASE_URL || true)
+echo $DATABASE_URL
+[[ "$DATABASE_URL" == "" ]]
+
+# try link to non-existing database
+ssh $REMOTE postgresql:link $REPO $REPO || true
+
+# create and destroy
+ssh $REMOTE postgresql:create $REPO
+ssh $REMOTE postgresql:destroy $REPO
+
+# create and link database
+ssh $REMOTE postgresql:create $REPO
+ssh $REMOTE postgresql:link $REPO $REPO
+ssh $REMOTE config $REPO
+TEST_DB_URL=$(ssh $REMOTE config:get $REPO DATABASE_URL)
+echo $TEST_DB_URL
+[[ "$TEST_DB_URL" != "" ]]

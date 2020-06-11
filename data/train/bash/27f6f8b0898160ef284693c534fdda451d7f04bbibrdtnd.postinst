@@ -1,0 +1,44 @@
+#!/bin/bash -e
+
+. /usr/share/debconf/confmodule
+
+if [ -n "$DEBIAN_SCRIPT_DEBUG" ]; then set -v -x; DEBIAN_SCRIPT_TRACE=1; fi
+${DEBIAN_SCRIPT_TRACE:+ echo "#42#DEBUG# RUNNING $0 $*" 1>&2 }
+
+invoke() {
+  if [ -x /usr/sbin/invoke-rc.d ]; then
+    invoke-rc.d ibrdtnd $1
+  else
+    /etc/init.d/ibrdtnd $1
+  fi
+}
+
+gendhparams() {
+  if [ ! -e "/etc/ibrdtn/bpsec/dh_params.pem" ]; then
+    openssl dhparam -out /etc/ibrdtn/bpsec/dh_params.pem 1024
+    chown dtnd.root /etc/ibrdtn/bpsec/dh_params.pem
+    chmod 600 /etc/ibrdtn/bpsec/dh_params.pem
+  fi
+}
+
+# stop the server
+set +e; invoke stop; set -e
+
+case "$1" in
+  configure)
+    gendhparams
+    invoke start
+  ;;
+	
+  abort-upgrade|abort-remove|abort-configure)
+  ;;
+	
+  *)
+    echo "$0: didn't understand being called with \`$1'" 1>&2
+    exit 0
+  ;;
+esac
+
+#DEBHELPER#
+
+exit 0

@@ -1,0 +1,53 @@
+.messages-message-type > .panel-body {
+  min-height: 290px;
+  max-height: 290px;
+  overflow-y: scroll;
+}
+
+.messages-message-type > .messages-private-message {
+  background-color: #26A65B;
+}
+
+.messages-message-type > .messages-group-message {
+  background-color: #CF000F;
+}
+
+.messages-message-board > .panel-body {
+  min-height: 550px;
+  max-height: 550px;
+  overflow-y: scroll;
+}
+
+.messages-message-board img {
+  width: 100%;
+}
+
+.messages-message-board > .messages-message-board-new {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  background-color: #00A6B6;
+}
+
+.messages-message-board > .messages-message-board-new textarea {
+  resize: none;
+  width: 100%;
+  height: 65px;
+}
+
+.messages-message-board > .messages-message-board-new button {
+  margin-top: 15px;
+}
+
+.messages-message-type h4:hover {
+  color: #26A65B;
+}
+
+.BIGDATA {
+  background-color: #ccc;
+}
+
+.transferedBIGDATA {
+  background-color: #ccc;
+}

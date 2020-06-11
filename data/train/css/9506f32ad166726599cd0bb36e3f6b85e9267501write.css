@@ -1,0 +1,76 @@
+.write .wrapper {
+	width: 50%;
+	margin: 0 auto;
+    padding-top: 50px;
+}
+
+.write input, .write textarea, .saved {
+	width: 100%;
+    padding: 10px;
+    font-size: 12pt;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+}
+
+.write, .write input, .write textarea, .saved, .note-editor .note-editing-area .note-editable {
+    font-family: 'Exo 2', sans-serif;
+    color: #484848;
+}
+
+.write input[type="submit"], .saved {
+	background-color: #9EE69E;
+    border: 1px solid #7FC17F;
+    color: #67AF82;
+    box-shadow: inset 1px 1px 0px #C8F5C6;
+}
+
+.write input[type="submit"].error {
+    background-color: #FF7B7B;
+    color: #922424;
+    border-color: red;
+    box-shadow: inset 1px 1px 0px #FFC9C9;
+}
+
+.write label {
+	color: #BFBFBF;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 12px;
+}
+
+.right {
+    position: fixed;
+    right: 30px;
+    top: 15px;
+}
+
+.saved {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    text-align: right;
+    display: none;
+    position: fixed;
+    z-index: 3;
+    width: 49%;
+    top: 3px;
+    pointer-events: none;
+}
+
+#editor {
+    min-height: 200px;
+    background-color: #505050;
+    color: #F3F3F3;
+    box-shadow: inset 2px 2px 5px #353535;
+    overflow: hidden;
+}
+
+#editor:focus {
+    outline: none;
+}
+
+#editor::selection {
+    background-color: white;
+}

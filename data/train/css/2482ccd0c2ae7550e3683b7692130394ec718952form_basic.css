@@ -1,0 +1,142 @@
+.form_basic_write table {
+    width: 100%;
+}
+.form_basic_write th, .form_basic_write td {
+    border-bottom: 1px solid #d1d1d1;
+}
+.form_basic_write th label, .form_basic_write th span {
+    display: inline-block;
+    margin: 10px 0;
+}
+.form_basic_write .input {
+    width: 110px;
+    height: 20px;
+}
+.form_basic_write th {
+    vertical-align: top;
+    width: 85px;
+    background: url("./img/kids_join05_th_bg.gif") bottom right no-repeat;
+    text-align: left;
+}
+.form_basic_write td {
+    padding: 8px 0 6px 20px;
+    width: 555px;
+}
+.form_basic_write td .text {
+    display: block;
+    margin-top: 7px;
+}
+.form_basic_write td .checkbox_box {
+    margin-left: 0;
+}
+.form_basic_write .title .input {
+    width: 549px;
+}
+.form_basic_write .file .input {
+    width: 549px;
+}
+.form_basic_write .file02 .input {
+    width: 488px;
+}
+.form_basic_write .damage .input {
+    padding: 10px;
+    width: 534px;
+    height: 248px;
+}
+.form_basic_write .damage th, .form_basic_write .damage td {
+    border: none;
+    background: none;
+}
+
+.form_basic_write .e_mail .input, .form_basic_write .e_mail02 .input, .form_basic_write .account .input, .form_basic_write .device .input{ /* 2014-06-16 마지막 셀렉터 추가*/
+    width: 150px;
+}
+.form_basic_write .phon01, .form_basic_write .phon02 {
+    width: 65px;
+    margin: 0 2px;
+}
+.form_basic_write .phon_box .checkbox_box {
+    display: inline-block;
+}
+.lt-ie8 .form_basic_write .phon_box .checkbox_box {
+    display: inline;
+}
+.form_basic_write .name .input, .form_basic_write .id .input {
+    width: 190px;
+}
+.form_basic_write .id .input {
+    margin-right: 2px;
+}
+.form_basic_write .id a {
+    margin: 0 2px;
+}
+.form_basic_write .btn {
+    text-align: right;
+    padding: 25px 0 10px 0;
+}
+/*form_basic_write02*/
+.form_basic_write02 .remote {
+    display: none;
+}
+/*form_basic_write02,form_basic_write03,form_basic_write04,form_basic_write05*/
+.form_basic_write02 th, .form_basic_write03 th, .form_basic_write04 th, .form_basic_write05 th {
+    width: 122px;
+}
+.form_basic_write02 td, .form_basic_write03 td, .form_basic_write04 td, .form_basic_write05 td {
+    width: 518px;
+}
+.form_basic_write02 .title .input, .form_basic_write03 .title .input, .form_basic_write04 .title .input, .form_basic_write05 .title .input {
+    width: 502px;
+}
+.form_basic_write02 .file .input, .form_basic_write03 .file .input, .form_basic_write04 .file .input, .form_basic_write05 .file .input {
+    width: 502px;
+}
+.form_basic_write02 .damage .input, .form_basic_write03 .damage .input, .form_basic_write04 .damage .input, .form_basic_write05 .damage .input {
+    width: 488px;
+}
+.form_basic_write02 .damage .input, .form_basic_write03 .damage .input, .form_basic_write04 .damage .input, .form_basic_write05 .damage .input {
+    height: 90px;
+}
+/*form_basic_write03,form_basic_write04,form_basic_write05*/
+.form_basic_write03 .damage th, .form_basic_write04 .damage th, .form_basic_write05 .damage th {
+    background: url("./img/kids_join05_th_bg.gif") bottom right no-repeat;
+}
+.form_basic_write03 .damage th, .form_basic_write03 .damage td, .form_basic_write04 .damage th, .form_basic_write04 .damage td, .form_basic_write05 .damage th, .form_basic_write05 .damage td {
+    border-bottom: 1px solid #d1d1d1;
+}
+.form_basic_write03 .btn, .form_basic_write04 .btn, .form_basic_write05 .btn {
+    padding: 15px 0 10px 0;
+}
+/*form_basic_write04,form_basic_write05*/
+.form_basic_write04 .server .server_tit, .form_basic_write05 .server .server_tit {
+    width: 128px;
+}
+.form_basic_write04 .server .server_txt, .form_basic_write05 .server .server_txt {
+    width: 210px;
+}
+.form_basic_write04 .server .server_txt select, .form_basic_write05 .server .server_txt select {
+    width: 116px;
+}
+.form_basic_write04 .server .char_tit, .form_basic_write05 .server .char_tit {
+    width: 86px;
+}
+.form_basic_write04 .server .char_txt, .form_basic_write05 .server .char_txt {
+    width: 126px;
+}
+.form_basic_write04 .server .char_btn, .form_basic_write05 .server .char_btn {
+    padding-left: 0;
+    width: 76px;
+}
+.form_basic_write04 .server .char_txt span, .form_basic_write05 .server .char_txt span {
+    display: inline-block;
+    margin-top: 2px;
+    width: 116px;
+}
+/* 2014-05-29 모바일게임 문의 추가 */
+.form_basic_write06 .desc .input {width:488px;height:90px;padding:10px;resize:none;}
+.form_basic_write06 .agree td {line-height:1.6em;}
+.form_basic_write06 .agree td label {float:right;margin:0 5px 0 0;}
+.form_basic_write06 th {width: 122px;}
+.form_basic_write06 td {width: 518px;}
+.form_basic_write06 .title .input {width: 502px;}
+.form_basic_write06 .file .input {width: 502px;}

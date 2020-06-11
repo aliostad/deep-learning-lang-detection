@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE services>
+<services xmlns="http://framework.opsbears.com/config/services">
+    <service>\OBF\Configuration\Service\ConfigurationService</service>
+    <service>\OBF\Event\Service\EventDispatcherService</service>
+    <service>\OBF\Log\LogService</service>
+	<service>\Opsbears\Blog\OpsbearsBlogApplication</service>
+    <service>\OBF\Net\HTTP\Service\HTTPService</service>
+	<service>\OBF\Routing\XML\XMLRouteLoaderService</service>
+    <service>\OBF\Routing\Service\RoutingService</service>
+</services>

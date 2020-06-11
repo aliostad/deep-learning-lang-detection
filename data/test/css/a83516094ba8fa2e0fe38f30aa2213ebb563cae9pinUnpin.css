@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+.pinLink, .unpinLink{
+	display:block;
+	width:20px;
+	height:20px;
+	text-decoration:none;
+	position:absolute; right:10px; top:5px
+}
+
+.pinLink span, .unpinLink span{
+	position:absolute;
+	left:-9999px;
+}
+
+.pinLink{
+	background:url(img/pinLoadOpen.gif);
+}
+
+.pinLink:hover{
+	background:url(img/pinHoverOpen.gif)	
+	
+}
+
+
+.unpinLink{
+	background:url(img/pinLoadClosed.gif);
+}
+
+.unpinLink:hover{
+	background:url(img/pinHoverClosed.gif)	
+}
+
+.currentlyPinned{
+	width:100%;
+	left:0;
+	z-index:200;
+	opacity:0.95;
+}

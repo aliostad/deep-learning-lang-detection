@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cinder>
+<block
+	name="Awesomium"
+	id="nl.cowlumbus.awesomium"
+	author="Paul Houx"
+	license="GPL, Commercial"
+	summary="Awesomium library for Cinder"
+	url="https://github.com/paulhoux/Cinder-Awesomium"
+	git="https://github.com/paulhoux/Cinder-Awesomium.git"
+	>
+	<includePath>include</includePath>
+	<!--platform os="macosx">
+		<dynamicLibrary>lib/macosx/libfmodex.dylib</dynamicLibrary>
+		<buildCopy>lib/macosx/libfmodex.dylib</buildCopy>
+	</platform-->
+	<platform os="msw">
+		<staticLibrary>build/lib/msw/awesomium.lib</staticLibrary>
+		<buildCopy>build/bin/msw/avcodec-53.dll</buildCopy>
+		<buildCopy>build/bin/msw/avformat-53.dll</buildCopy>
+		<buildCopy>build/bin/msw/avutil-51.dll</buildCopy>
+		<buildCopy>build/bin/msw/awesomium.dll</buildCopy>
+		<buildCopy>build/bin/msw/awesomium_pak_utility.exe</buildCopy>
+		<buildCopy>build/bin/msw/awesomium_process.exe</buildCopy>
+		<buildCopy>build/bin/msw/awesomium_process.pdb</buildCopy>
+		<buildCopy>build/bin/msw/awesomium_symbols.pdb</buildCopy>
+		<buildCopy>build/bin/msw/icudt.dll</buildCopy>
+		<buildCopy>build/bin/msw/inspector.pak</buildCopy>
+		<buildCopy>build/bin/msw/libEGL.dll</buildCopy>
+		<buildCopy>build/bin/msw/libGLESv2.dll</buildCopy>
+		<buildCopy>build/bin/msw/SDL.dll</buildCopy>
+		<buildCopy>build/bin/msw/webui_assets.pak</buildCopy>
+	</platform>
+	<!--platform os="ios" sdk="device">
+		<staticLibrary>lib/ios/libfmodex_iphoneos.a</staticLibrary>
+	</platform>
+	<platform os="ios" sdk="simulator">
+		<staticLibrary>lib/ios/libfmodex_iphonesimulator.a</staticLibrary>
+	</platform-->
+	<copyExclude>samples</copyExclude>
+</block>
+<template>templates/Basic Awesomium/template.xml</template>
+</cinder>

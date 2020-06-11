@@ -1,0 +1,102 @@
+#!/bin/sh /etc/rc.common
+
+START=90
+NAME=chilli
+RUN_D=/var/run
+CMDSOCK=$RUN_D/$NAME.sock
+PIDFILE=$RUN_D/$NAME.pid
+
+append_switch() {
+    local section="$1"                                     
+    local option="$2"                                      
+    local switch="$3"                                      
+    local _loctmp                                          
+    config_get _loctmp "$section" "$option"       
+    [ -z "$_loctmp" ] || [ "$_loctmp" == "0" ] && return 0                 
+    #append args "$switch $_loctmp"
+    append args "$switch"
+}  
+
+append_parm() {                                                
+    local section="$1"                                     
+    local option="$2"                                      
+    local switch="$3"
+    local quoted="$4"
+    local _loctmp                                          
+    config_get _loctmp "$section" "$option"       
+    [ -z "$_loctmp" ] && return 0                 
+    append args "$switch=$quoted$_loctmp$quoted"
+}  
+
+start() {
+    # check if we are running
+    if [ -f $PIDFILE ] && [ -f /proc/$(cat $PIDFILE)/exe ]; then
+        echo "chilli is already active. exiting."
+        exit
+    fi
+
+    # build chilli arguments
+    local args=""
+    config_load   chilli
+    append_switch options debug         "--fg --debug"
+    append_parm   options dhcpif        "--dhcpif"
+    append_parm   options tundev        "--tundev"
+    append_switch options usetap        "--usetap"
+    append_parm   options net           "--net"
+    append_parm   options dhcpstart     "--dhcpstart"
+    append_parm   options dhcpend       "--dhcpend"
+    append_parm   options uamlisten     "--uamlisten"
+    append_parm   options dns1          "--dns1"
+    append_parm   options dns2          "--dns2"
+    append_parm   options ipup          "--ipup"
+    append_parm   options ipdown        "--ipdown"
+    append_parm   options wwwdir        "--wwwdir"
+    append_parm   options wwwbin        "--wwwbin"
+    append_switch options usestatusfile "--usestatusfile"
+    append_switch options layer3        "--layer3"
+
+    # select active configuration
+    config_get configuration options configuration
+    for section in ${CONFIG_SECTIONS}; do
+        config_get name "$section" name
+        [ "$configuration" == "$name" ] && break;
+    done
+    append_parm   $section locationname  "--locationname" 
+    append_parm   $section uamallowed    "--uamallowed"
+    append_parm   $section uamdomain     "--uamdomain"
+    append_parm   $section radiusserver1 "--radiusserver1"
+    append_parm   $section radiusserver2 "--radiusserver2"
+    append_parm   $section radiussecret  "--radiussecret"
+    append_parm   $section radiusnasid   "--radiusnasid"
+    append_switch $section nouamsuccess  "--nouamsuccess"
+    append_parm   $section uamserver     "--uamserver"
+    append_parm   $section uamhomepage   "--uamhomepage"
+    append_parm   $section uamaliasname  "--uamaliasname" 
+    append_parm   $section uamsecret     "--uamsecret"
+    append_parm   $section uamformat     "--uamformat"
+    append_parm   $section adminuser     "--adminuser"
+    append_parm   $section adminpasswd   "--adminpasswd"
+    append_switch $section mschapv2      "--mschapv2"
+    append_switch $section eapolenable   "--eapolenable"
+    append_switch $section ieee8021q     "--ieee8021q"
+    append_parm   $section vlan          "--vlan"
+    append_switch $section acctupdate    "--acctupdate"
+
+    
+    # install tunnel
+    #iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+    [ -d $RUN_D ] || mkdir -p $RUN_D
+    /sbin/insmod tun >&- 2>&-    
+
+    # start chilli
+    [ $CONFIG_options_debug == 1 ] && echo "running: /usr/sbin/chilli $args"
+    /usr/sbin/chilli $args
+}
+
+stop() {
+    [ -f $PIDFILE ] && kill $(cat $PIDFILE) 
+    rm -rf /tmp/chilli-$(cat $PIDFILE)
+    rm -f $PIDFILE $LKFILE $CMDSOCK 2>/dev/null
+    #iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE    
+    #rm /tmp/device.hotspot
+}

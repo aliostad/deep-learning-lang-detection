@@ -1,0 +1,100 @@
+.icon-48-galleries {
+      background-image: url(../images/l_galleries.png);
+      padding-left:60px!important;
+}
+
+.icon-48-gallerie {
+      background-image: url(../images/l_galleries.png);
+      padding-left:60px!important;
+}
+
+#gallerie-form table{
+    display:block;
+}
+
+#gallerie-form .title{
+    background-color:#F4F4F4;
+    text-align:center;
+    border:1px solid #CCC;
+    margin:2px;
+    padding:2px;
+    cursor:pointer;
+    width:500px;
+}
+
+#gallerie-form .text{
+    background-color:#F4F4F4;
+    text-align:center;
+    border:1px solid #CCC;
+    margin:2px;
+    padding:2px;
+}
+
+#gallerie-form input[type="checkbox"]{
+    margin-left:2px;
+}
+
+#load-image, #load-video{
+    border-spacing: 1px;
+    color: #444;
+    width: 100%;
+}
+
+#load-image th, #load-video th{
+    background:#F3F3F3;
+    text-align: center;
+    width: 70px;
+}
+
+#load-image th:first-child, #load-video th:first-child{
+    width: 400px;
+}
+
+#load-image td, #load-video td{
+   border:1px solid #eee;
+   text-align:center;
+}
+
+#load-image td input[type="text"], #load-video td input[type="text"]{
+    margin-left:20px;
+}
+
+.delete{
+    background-image:url('../images/cancel.png');
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: 30px;
+    cursor:pointer;
+}
+
+.error{
+    width:170px;
+    color:red;
+}
+
+fieldset ul.art label, fieldset ul.cat label {
+    display: inline-block;
+    float: none;
+    margin: 0;
+    padding: 5px;
+    cursor:pointer; 
+}
+
+.art input, .cat input {
+    float: none;
+    margin: 5px;
+    padding: 0;
+}
+
+.art li, .cat li {
+    padding: 0px;
+}
+
+.art li {
+    padding-left: 45px;
+}
+
+.cat {
+    background: none repeat scroll 0 0 #F3F3F3;
+    margin: 1px;
+}

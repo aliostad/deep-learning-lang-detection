@@ -1,0 +1,42 @@
+#LoadingScreen {
+	font-family: 'electrolize';
+}
+
+#loadingBackground {
+	position: fixed;
+	z-index: -1;
+	left: -320px;
+	top: 0px;
+}
+
+#loadingTitle, #loadingManifests, #loadingFiles, #manifestsContainer {
+	font-size: 30px;
+}
+
+#loadingTitle {
+	font-size: 48px;
+}
+
+#manifestsContainer {
+	margin-top: 50px;
+}
+
+.manifestLoad {
+	font-size: 24px;
+}
+
+.manifestName {
+	display: inline-block;
+	width: 400px;
+}
+
+.fileLoad {
+	font-size: 20px;
+	margin-top: 0px;
+	list-style-type: none;
+}
+
+.fileName {
+	display: inline-block;
+	width: 400px;
+}

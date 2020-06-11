@@ -1,0 +1,76 @@
+.squid-api-admin-widget-columns-management .Metric-primary .ok, .squid-api-admin-widgets-modal-form .Dimension-primary .ok {
+    display: none;
+}
+
+.squid-api-admin-widget-columns-management .bootstrap-duallistbox-container .info {
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.squid-api-admin-widget-columns-management .bootstrap-duallistbox-container label {
+    float: left;
+    width: auto;
+}
+
+.squid-api-admin-widget-columns-management .Metric-primary .modal-body, .squid-api-admin-widgets-modal-form .Dimension-primary .modal-body {
+    background: #f9f9f9;
+}
+
+.squid-api-admin-widget-columns-management .management {
+    display: inline-block;
+    width: 100%;
+}
+
+.squid-api-admin-widget-columns-management .management button.create, .squid-api-admin-widget-columns-management .management button.edit, .squid-api-admin-widget-columns-management .management button.delete, .squid-api-admin-widget-columns-management .management button.close-modal {
+    float: left;
+    margin: 15px 10px 0px 0px;
+}
+
+.squid-api-admin-widget-columns-management .management button.close-modal {
+    float: right;
+    margin-right: 0px;
+}
+
+.squid-api-admin-widget-columns-management .management button.relations {
+    float: right;
+    margin: 15px 10px 0px 0px;
+}
+
+.squid-api-admin-widget-columns-management .management button.edit, .squid-api-admin-widget-columns-management .management button.delete {
+    max-width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.squid-api-admin-widget-columns-management .management button.edit {
+    margin-right: 10px;
+}
+
+.squid-api-admin-widget-columns-management select .child1 {
+    padding-left: 20px;
+}
+
+.squid-api-admin-widget-columns-management select .child2 {
+    padding-left: 40px;
+}
+
+.squid-api-admin-widget-columns-management select .child3 {
+    padding-left: 60px;
+}
+
+.squid-api-admin-widget-columns-management select .child4 {
+    padding-left: 80px;
+}
+
+.squid-api-admin-widget-columns-management select .child5 {
+    padding-left: 100px;
+}
+
+.squid-api-admin-widget-columns-management .bootstrap-duallistbox-container label {
+    display: inline-block;
+}
+
+.squid-api-admin-widget-columns-management select {
+    padding: 7px;
+}

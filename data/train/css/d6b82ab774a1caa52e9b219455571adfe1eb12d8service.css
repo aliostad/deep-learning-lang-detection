@@ -1,0 +1,28 @@
+#service {
+  background-image: url("..//images/food.jpg");
+  background-size: cover;
+  height: 80vh;
+  text-align: left;
+  background-position: 100% 40%;
+  color: #FFFFFF;
+  position: relative; }
+  #service .service_container {
+    position: absolute;
+    bottom: 2em;
+    left: 3em; }
+  #service .tag {
+    border: 1px solid #FFF;
+    height: 2em;
+    line-height: 2em;
+    padding: 0 2.5em;
+    border-radius: 1em;
+    display: inline-block; }
+  #service .author {
+    line-height: 2em; }
+    #service .author img {
+      height: 2em;
+      width: 2em;
+      margin-right: 1em;
+      border-radius: 50%; }
+
+/*# sourceMappingURL=service.css.map */

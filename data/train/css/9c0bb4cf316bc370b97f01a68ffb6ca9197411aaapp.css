@@ -1,0 +1,23 @@
+
+/*App下载改版页 冉*/
+    .app_acc{ height: 500px; background:url(../../../front/sanhai/images/imgs_app/app_load/carousel.jpg) no-repeat center;text-align: center;}
+    .app_acc .app_acc_cont{ top:0; left: 0;}
+    .app_acc  .cont_phone1{ top:30px; left: 120px;}
+    .app_acc .cont_answer {top:98px; left: 540px;}
+    .app_acc .cont_solve {top:346px; left: 540px;}
+    .app_acc  .cont_phone2{ top:30px; left: 120px;}
+    .app_acc .cont_accompany {top:50px; left: 540px;}
+    .app_acc .cont_complete {top:398px; left: 540px;}
+    .app_acc .app_acc_list{bottom:6px; left:50%; width:68px; margin-left: -34px;}
+    .app_acc .app_acc_list li{ border:1px solid #fff; width:20px; height: 20px; border-radius: 50%; float: left; margin-left:12px; cursor: pointer; }
+    .app_acc .app_acc_list li.ac{ background: #fff;}
+    .app_download{ height: 370px; padding-top: 30px;}
+    .app_download .download_l{ width:600px; height: 100%; }
+    .app_download .download_l h2{color:#333; border-left: 5px solid #4aacf3; font-size: 24px; height: 40px; line-height: 40px; padding-left: 8px; }
+    .app_download .download_l h2 img{ vertical-align: middle; margin-left: 14px;}
+    .app_download .download_QRcode{top:20px;left:20px;}
+    .app_download .download_load_btn_1,.app_download .download_load_btn_3{top:66px;left:330px;}
+    .app_download .download_load_btn_2,.app_download .download_load_btn_4{top:164px;left:330px;}
+
+
+.download_type a{ border:2px solid #4aacf3; padding:4px; border-radius:16px;}

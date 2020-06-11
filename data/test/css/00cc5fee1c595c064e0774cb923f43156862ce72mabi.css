@@ -1,0 +1,133 @@
+/*
+  font-family for monospace
+*/
+.models {
+  margin-bottom: 14px;
+  padding-bottom: 7px;
+  border-bottom: solid 1px #eeeeee;
+}
+.models .model {
+  font-size: 14px;
+  border: 1px solid #eeeeee;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  margin: 10px 0;
+  background: lightgrey;
+  border-color: #adadad;
+}
+.models .model .label {
+  background-color: #571d1d;
+}
+.models .model th, .models .model td {
+  border-bottom: 1px solid #a0a0a0;
+}
+.models .model .title {
+  overflow: hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.models .model .title:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.models .model .title:hover span {
+  text-decoration: underline;
+}
+.models .model .title:hover span.http-method {
+  text-decoration: none;
+}
+.models .model .title span {
+  margin: 0 10px 0;
+  line-height: 33px;
+  float: left;
+}
+.models .model .title .name {
+  font-size: 16px;
+}
+.models .model .title .label {
+  padding: 0 10px;
+  width: 40px;
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+  font-family: "Inconsolata", "Monaco", "Consolas", "Bitstream Vera Mono", monospace;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  line-height: 33px;
+  float: left;
+}
+.models .model table {
+  margin: 15px;
+}
+.models .model tr.required {
+  font-weight: bold;
+}
+.models .model th {
+  font-weight: bold;
+  text-align: left;
+}
+.models .model th, .models .model td {
+  padding: 5px 10px;
+  vertical-align: middle;
+}
+.models .model td, .models .model pre {
+  font-family: "Inconsolata", "Monaco", "Consolas", "Bitstream Vera Mono", monospace;
+}
+.models .model h2 {
+  margin-top: 15px;
+  margin-bottom: 3px;
+}
+.models .model pre {
+  font-size: 12px;
+  overflow: auto;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.models .model pre.response {
+  max-height: 500px;
+}
+.models .model pre.error {
+  background-color: rgba(255, 66, 66, 0.2);
+}
+.models .model .desccol {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  width: 100%;
+}
+
+.endpoint .description ul {
+  list-style-type: disc;
+  padding-left: 40px;
+}
+.endpoint .description li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  list-style-type: disc;
+}
+.endpoint .description p {
+  margin-bottom: 14px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 14px;
+}
+.endpoint .endpointdetails {
+  padding: 10px 10px 20px 10px;
+  /*
+  .description {
+    padding-bottom: 10px;
+  }
+  */
+}
+.endpoint .method .description {
+  padding: 10px 10px 20px 10px;
+}

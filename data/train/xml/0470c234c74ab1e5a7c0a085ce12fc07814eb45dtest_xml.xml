@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+
+     <message ID="9">
+          <message_process process="periodic">
+              <period>2</period>
+              <phase>1</phase>
+              <window>0.2</window> 
+          </message_process>
+     </message>
+     
+     <message ID="10">
+          <message_process process="sporadic">
+               <min_interarriaval_time>2</min_interarriaval_time>
+               <max_interarriaval_time>1</max_interarriaval_time>
+               <window>0.2</window> 
+           </message_process>
+     </message>
+     
+     <message ID="2">
+          <message_process process="periodic">
+              <period>100</period>
+              <phase>0</phase>
+              <window>10</window> 
+          </message_process>
+     </message>     
+     
+</messages>

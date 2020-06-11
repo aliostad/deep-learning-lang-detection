@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<messages>
+
+ <message id="fhtmlEditor_tbi_open">Open</message>
+ <message id="fhtmlEditor_tbi_open_tooltips">Open existing file</message>
+ <message id="fhtmlEditor_tbi_save">Save</message>
+ <message id="fhtmlEditor_tbi_save_tooltips">Save your work ?</message>
+ <message id="fhtmlEditor_tbi_saveas">Save as ...</message>
+ <message id="fhtmlEditor_tbi_saveas_tooltips">Save as ...</message>
+
+ <message id="fhtmlEditor_error_title">Error !</message>
+  <message id="fhtmlEditor_error_norootpath">No root path specified !</message>
+</messages>
+

@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="lifecycle_logging_service">lifecycle service</string>
+    <string name="lifecycle_logging_service_started">service started</string>
+    <string name="lifecycle_logging_service_stopped">service stopped</string>
+    <string name="lifecycle_logging_service_label">lifecycle service</string>
+    <string name="lifecycle_service_controller">lifecycle service controller</string>
+    <string name="lifecycle_service_stop">lifecycle service stop</string>
+    <string name="lifecycle_service_start">lifecycle service start</string>
+    <string name="local_service_connected">lifecycle service connected</string>
+    <string name="local_service_disconnected">lifecycle service disconnected</string>
+    <string name="lifecycle_service_binding">lifecycle service binding</string>
+    <string name="bind_service">bind service</string>
+    <string name="unbind_service">unbind service</string>
+
+</resources>

@@ -1,0 +1,73 @@
+.instaWrap figure {
+  width: 50%;
+  padding: 5px;
+  margin-bottom: 0;
+  float: left;
+}
+
+
+.instaWrap:before,
+.instaWrap:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.instaWrap:after {
+  clear: both;
+}
+
+.instaWrap {
+    *zoom: 1;
+}
+
+.instaWrap figure {
+  position: relative;
+}
+
+.instaWrap figure img {
+  padding: 0;
+  margin: 0;
+}
+
+.instaWrap figure figcaption {
+  position: absolute;
+  bottom:0;
+  left: 0;
+  font-size: 10px;
+  padding: 5px;
+  background: #222;
+  color: #fff;
+  display: block;
+}
+
+
+@media screen and (min-width:700px) {
+  .instaWrap figure {
+    width: 25%;
+    padding: 5px;
+    margin-bottom: 0;
+    float: left;
+  }
+}
+
+.loadMore {
+  display: block;
+  margin: 1em 0;
+  text-align: center;
+}
+
+.loadMore  #loadMore {
+  padding: 5px 30px;
+  background: #efefef;
+  color:#222;
+  border: 1px solid #222;
+  font-size: 1.5em;
+  font-family: inherit;
+  text-transform: uppercase;
+}
+
+.loadMore  #loadMore:hover {
+  background: #222;
+  color: #efefef;
+
+}

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net"
+         xmlns:db="http://www.springframework.net/database">
+  
+  <object id="DemoContext" type="Demo.Repository.Bootstrap.EntityFramework.DemoContext, Demo.Repository" />
+
+  <object id="DemoUnitOfWork" type="Demo.Repository.UnitOfWork.DemoUnitOfWork, Demo.Repository" >
+    <constructor-arg name="context" ref="DemoContext"/>
+  </object>
+
+ 
+  <object id="FormConfigRepository" type="Demo.Repository.Repositories.FormConfigRepository, Demo.Repository">
+    <property name="UnitOfWork" ref="DemoUnitOfWork"></property>
+  </object>
+  
+  <object id="ArticleConfigRepository" type="Demo.Repository.Repositories.ArticleConfigRepository, Demo.Repository">
+    <property name="UnitOfWork" ref="DemoUnitOfWork"></property>
+  </object>
+  
+  <object id="DataCollectionRepository" type="Demo.Repository.Repositories.DataCollectionRepository, Demo.Repository">
+    <property name="UnitOfWork" ref="DemoUnitOfWork"></property>
+  </object>
+  
+  <object id="SectionConfigRepository" type="Demo.Repository.Repositories.SectionConfigRepository, Demo.Repository">
+    <property name="UnitOfWork" ref="DemoUnitOfWork"></property>
+  </object>
+   
+</objects>
+

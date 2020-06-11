@@ -1,0 +1,27 @@
+package com.arcusys.valamis.web.portlet.base
+
+object PermissionKeys {
+  val CreateCourse = "CREATE_COURSE"
+  val DeleteCourse = "DELETE_COURSE"
+  val ManageCourseMembers = "MANAGE_COURSE_MEMBERS"
+  val View = "VIEW"
+  val Export = "EXPORT"
+  val Upload = "UPLOAD"
+  val Modify = "MODIFY_ACTION"
+  val Share = "SHARE_ACTION"
+  val Preferences = "PREFERENCES"
+  val Publish = "PUBLISH"
+  val SetVisible = "SET_VISIBLE"
+  val ViewAll = "VIEW_ALL"
+  val ModifyAll = "MODIFY_ALL"
+  val WriteStatus = "WRITE_STATUS"
+  val Comment = "COMMENT"
+  val Like = "LIKE"
+  val HideStatistic = "HIDE_STATISTIC"
+  val ShowAllActivities = "SHOW_ALL"
+  val EditTheme = "EDIT_THEME"
+  val Order = "ORDER_ACTION"
+  val FileAccess = "FILE_ACCESS"
+  val DataAccess = "DATA_ACCESS"
+  val UnlockLesson = "UNLOCK_LESSON"
+}

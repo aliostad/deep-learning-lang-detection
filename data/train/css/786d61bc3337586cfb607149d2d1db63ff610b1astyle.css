@@ -1,0 +1,41 @@
+#services .service {
+    width: 33%;
+    float: left;
+    padding: 0.5em;
+    min-height: 200px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #eee;
+}
+
+@media screen and (max-width: 600px) {
+    #services .service {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #services .service {
+        width: 100%;
+    }
+}
+
+#services .service .service-icon, #services .service .service-description {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    padding: 50px 0;
+    color: #222;
+}
+
+#services .service .service-description {
+    left: 100%;
+    background: #249EC2;
+    color: white;
+    padding: 50px;
+}
+
+#services .service .service-description:hover { cursor: pointer; }

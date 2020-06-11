@@ -1,0 +1,35 @@
+.right { float:right; }
+.left { float:left; }
+.inline { display:inline; }
+
+/*
+.label { display:inline-block; width:15%; }
+.value { display:inline-block; }
+*/
+
+.favorite .favorite-brand { display:none; }
+.unfavorite-brand { display:none; }
+.favorite .unfavorite-brand { display:block; }
+
+h2 { margin-top:.6em; }
+
+.ui-icon-home {
+	background-image:url('/img/House-Icon.png');
+}
+
+#about .ui-content {
+	background: transparent url('/img/bierfrau_sketch_trans.png') no-repeat 0 0;
+}
+#api p { padding-bottom:1em; }
+
+#api .api-route-list code span { color:#2489CE; }
+#api .api-route-list code span:before { content:":"; }
+
+/*
+.ui-btn-up-c {
+	background:transparent;
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,
+	rgba(253, 253, 253, .9)),
+	color-stop(1,rgba(238, 238, 238, .9)));
+}
+*/

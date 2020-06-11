@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:api="http://www.symplectic.co.uk/publications/api">
+<api:object category="publication" id="142658" last-modified-when="2016-02-22T13:21:01.683-05:00" href="https://localhost:9002/elements-secure-api/publications/142658" created-when="2016-02-22T13:21:00.973-05:00" type-id="2" type="book">
+  <!--Publication type 2 is "book"-->
+  <api:ever-approved>true</api:ever-approved>
+  <api:reporting-date-1>2014-05-09</api:reporting-date-1>
+  <api:records>
+	<api:record format="native" id="234450" source-id="16" source-name="google-books" source-display-name="Google Books" id-at-source="c4yToAEACAAJ" is-preferred-record="true">
+	  <api:native>
+		<api:field name="abstract" type="text" display-name="Abstract">
+		  <api:text>This book takes a single line of code -- the extremely concise BASIC program for the Commodore 64 inscribed in the title -- and uses it as a lens through which to consider the phenomenon of creative computing and the way computer programs ...</api:text>
+		</api:field>
+		<api:field name="authors" type="person-list" display-name="Authors">
+		  <api:people>
+			<api:person>
+			  <api:last-name>Montfort</api:last-name>
+			  <api:initials>N</api:initials>
+			  <api:first-names>Nick</api:first-names>
+			</api:person>
+			<api:person>
+			  <api:last-name>Baudoin</api:last-name>
+			  <api:initials>P</api:initials>
+			  <api:first-names>Patsy</api:first-names>
+			</api:person>
+			<api:person>
+			  <api:links>
+				<api:link type="elements/user" id="12" href="https://localhost:9002/elements-secure-api/users/12"/>
+			  </api:links>
+			  <api:last-name>Bell</api:last-name>
+			  <api:initials>J</api:initials>
+			  <api:first-names>John</api:first-names>
+			</api:person>
+			<api:person>
+			  <api:last-name>Bogost</api:last-name>
+			  <api:initials>I</api:initials>
+			  <api:first-names>Ian</api:first-names>
+			</api:person>
+			<api:person>
+			  <api:last-name>Douglass</api:last-name>
+			  <api:initials>J</api:initials>
+			  <api:first-names>Jeremy</api:first-names>
+			</api:person>
+			<api:person>
+			  <api:last-name>Marino</api:last-name>
+			  <api:initials>MC</api:initials>
+			  <api:first-names>Mark C</api:first-names>
+			</api:person>
+			<api:person>
+			  <api:last-name>Mateas</api:last-name>
+			  <api:initials>M</api:initials>
+			</api:person>
+		  </api:people>
+		</api:field>
+		<api:field name="doi" type="text" display-name="DOI">
+		  <api:text>10.1097/00000000-200607000-00004</api:text>
+		  <api:links>
+			<api:link type="doi" href="http://dx.doi.org/10.1097/00000000-200607000-00004"/>
+			<api:link type="altmetric" href="http://www.altmetric.com/details.php?doi=10.1097/00000000-200607000-00004"/>
+		  </api:links>
+		</api:field>
+		<api:field name="isbn-10" type="text" display-name="ISBN-10">
+		  <api:text>0262526743</api:text>
+		</api:field>
+		<api:field name="isbn-13" type="text" display-name="ISBN-13">
+		  <api:text>9780262526746</api:text>
+		</api:field>
+		<api:field name="keywords" type="keyword-list" display-name="Keywords">
+		  <api:keywords>
+			<api:keyword>Computers</api:keyword>
+		  </api:keywords>
+		</api:field>
+		<api:field name="issue" type="text" display-name="Issue">
+		  <api:text>17</api:text>
+		</api:field>
+		<api:field name="journal" type="text" display-name="Journal">
+		  <api:text>TEST JOURNAL</api:text>
+		</api:field>
+		<api:field name="number" type="text" display-name="Article number">
+		  <api:text>S</api:text>
+		</api:field>
+		<api:field name="pagination" type="pagination" display-name="Pagination">
+		  <api:pagination>
+			<api:begin-page>1</api:begin-page>
+			<api:end-page>329</api:end-page>
+			<api:page-count>328</api:page-count>
+		  </api:pagination>
+		</api:field>
+		<api:field name="publication-date" type="date" display-name="Publication date">
+		  <api:date>
+			<api:day>9</api:day>
+			<api:month>5</api:month>
+			<api:year>2014</api:year>
+		  </api:date>
+		</api:field>
+		<api:field name="publication-status" type="text" display-name="Status">
+		  <api:text>Published</api:text>
+		</api:field>
+		<api:field name="publisher" type="text" display-name="Publisher">
+		  <api:text>MIT Press (MA)</api:text>
+		</api:field>
+		<api:field name="title" type="text" display-name="Title">
+		  <api:text>10 Print Chr$(205. 5+rnd(1)); : Goto 10</api:text>
+		</api:field>
+		<api:field name="volume" type="text" display-name="Volume">
+		  <api:text>1</api:text>
+		</api:field>
+	  </api:native>
+	</api:record>
+  </api:records>
+  <api:fields>
+	<api:field name="requested-embargo-period" type="text" display-name="requested-embargo-period">
+	  <api:text>Not known</api:text>
+	</api:field>
+  </api:fields>
+  <api:all-labels type="keyword-list">
+	<api:keywords>
+	  <api:keyword origin="record-data" source="google-books">Computers</api:keyword>
+	</api:keywords>
+  </api:all-labels>
+  <api:relationships href="https://localhost:9002/elements-secure-api/publications/142658/relationships"/>
+</api:object>
+</feed>  

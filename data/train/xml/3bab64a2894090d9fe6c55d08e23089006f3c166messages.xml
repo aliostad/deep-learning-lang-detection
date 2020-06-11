@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Сообщения - конфигуратор продукции (Помощник)  -->
+
+<!DOCTYPE document
+	[
+		<!ELEMENT document (system, task, description, lanquage, message+)>
+			<!ATTLIST	document
+						id		ID		#REQUIRED
+						type	NMTOKEN	#REQUIRED
+			>
+			<!ELEMENT system EMPTY>
+				<!ATTLIST	system
+							id		ID		#REQUIRED
+							version	NMTOKEN	#REQUIRED
+				>
+			<!ELEMENT task EMPTY>
+				<!ATTLIST	task
+							id		ID		#REQUIRED
+							version	NMTOKEN	#REQUIRED
+				>
+			<!ELEMENT description EMPTY>
+				<!ATTLIST	description
+							id		ID		#REQUIRED
+							version	NMTOKEN	#REQUIRED
+				>
+			<!ELEMENT lanquage EMPTY>
+				<!ATTLIST	lanquage
+								id		ID		#REQUIRED
+				>
+			<!ELEMENT message ANY>
+					<!ATTLIST	message
+								id		CDATA	#REQUIRED
+					>
+	]
+>
+
+<document id='messagesDescription' type='Respond'>
+	<system id='-CIS' version='1'/>
+	<task id='CALCHELPER' version='2'/>
+	<description id='Messages' version='1'/>
+	<lanquage id='POL'/>
+	
+	<message id='0'>
+		Lista Wozy nie mają XML.
+	</message>
+	<message id='1'>
+		Cena:$space$
+	</message>
+	<message id='2'>
+		n/a
+	</message>
+	<message id='3'>
+		Instruction error:$space$
+	</message>
+	<message id='4'>
+		$space$incorrect value$space$
+	</message>
+	<message id='5'>
+		<!--(W/O rabaty)-->
+		$space$
+	</message>
+	<message id='6'>
+		pusty
+	</message>
+	<message id='7'>Dokumenty źródłowe</message>
+	<message id='8'>Błąd krytyczny, raport do autora, proszę.</message>
+	<message id='9'>DD.MM.YYYY</message>
+	<message id='10'>tworząc rozpocząć</message>
+	<message id='11'>tworząc koniec</message>
+	<message id='12'>Korporacyjnego systemu informacyjnego nie posiada informacji na temat cen niektórych opcji.</message>
+	<message id='13'>References are not up to date.</message>
+	<message id='14'>Twój numer aplikacji</message>
+	<message id='15'>na</message>
+	<message id='16'>zarejestrowany.</message>
+	<message id='17'>Usługa jest chwilowo niedostępna. Spróbuj ponownie później.</message>
+	<message id='18'>Ostrzeżenie:$space$</message>
+	<message id='19'>Aby kontrola parametrów</message>
+	<message id='20'>Tak</message>
+	<message id='21'>Nie</message>
+	<message id='22'>Sprawdź dane do obliczenia kosztów ukończenia:</message>
+	<message id='23'>wersja</message>
+	<message id='24'>
+UWAGA!
+Dane do obliczania wartości kompletu nie jest zaznaczony.
+    </message>
+	<message id='25'>Ilość</message>
+    <message id='26'>Request information</message>
+    <message id='27'>NOTICE!</message>
+    <message id='28'>Please, excuse for slight inconveniences.</message>
+    <message id='29'>Email sent to address XXX.</message>
+    <message id='30'>Your request has been sent to responsible staff.</message>
+    <message id='31'>INFORMATION!</message>
+    <message id='32'>WARNING!</message>
+    <message id='33'>BE CAREFUL!</message>
+    <message id='34'>ERROR!</message>
+    <message id='35'>Changes declined.</message>
+    <message id='36'>Instruction error/</message>
+    <message id='37'>Collapse all group items</message>
+    <message id='38'>Expand all group items</message>
+    <message id='39'>Search construction item</message>
+    <message id='40'>Search:</message>
+    <message id='41'>Please, confirm:</message>
+</document>

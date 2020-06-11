@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<workbook>
+    <worksheet name="Sheet1">
+        <section startRow="0" endRow="0"/>
+        <loop startRow="1" endRow="1" items="jobsInforms" var="offer" varType="com.parser.entity.ExportJob">
+            <section startRow="1" endRow="1">
+                <mapping cell="A2">offer.companyName</mapping>
+                <mapping cell="B2">offer.jobTitle</mapping>
+                <mapping cell="C2">offer.jobLink</mapping>
+                <mapping cell="D2">offer.location</mapping>
+                <mapping cell="E2">offer.postingDate</mapping>
+                <mapping cell="F2">offer.sourceName</mapping>
+                <!--<mapping cell="G2">offer.dummy1</mapping>-->
+                <!--<mapping cell="H2">offer.dummy2</mapping>-->
+                <!--<mapping cell="I2">offer.dummy3</mapping>-->
+            </section>
+            <loopbreakcondition>
+                <rowcheck offset="0">
+                    <cellcheck offset="0"/>
+                </rowcheck>
+            </loopbreakcondition>
+        </loop>
+    </worksheet>
+</workbook>

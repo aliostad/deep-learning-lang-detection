@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean name="dataBaseDao" class="com.tmwsoft.sns.db.DataBaseDaoImpl" />
+	<bean name="dataBaseService" class="com.tmwsoft.sns.service.DataBaseService" />
+	<bean name="mainService" class="com.tmwsoft.sns.service.MainService" />
+	<bean name="cacheService" class="com.tmwsoft.sns.service.CacheService" />
+	<bean name="zoneService" class="com.tmwsoft.sns.service.ZoneService" />
+	<bean name="adminDeleteService" class="com.tmwsoft.sns.service.AdminDeleteService" />
+	<bean name="operateService" class="com.tmwsoft.sns.service.OperateService" />
+	<bean name="statService" class="com.tmwsoft.sns.service.StatService" />
+	<bean name="cronService" class="com.tmwsoft.sns.service.CronService" />
+	<bean name="feedService" class="com.tmwsoft.sns.service.FeedService" />
+	<bean name="blogService" class="com.tmwsoft.sns.service.BlogService" />
+	<bean name="propsService" class="com.tmwsoft.sns.service.PropsService" />
+	<bean name="pmService" class="com.tmwsoft.sns.service.PmService" />
+</beans>

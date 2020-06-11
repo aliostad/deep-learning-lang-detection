@@ -1,0 +1,18 @@
+.student-portal-view-info-sessions-semesters-container > li.student-portal-view-info-session {
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+.student-portal-view-info-sessions-semesters-container > li.student-portal-view-info-session .student-portal-view-info-session-label {
+  padding-top: 0;
+  font-size: 18px;
+}
+.student-portal-view-info-sessions-semesters-container > li.student-portal-view-info-session .student-portal-view-info-semester-label {
+  padding-top: 0;
+  font-size: 16px;
+}
+.student-portal-view-info-sessions-semesters-container > li.student-portal-view-info-session .student-portal-view-semester-info-link {
+  color: #337AB7;
+}
+.student-portal-view-info-sessions-semesters-container > li.student-portal-view-info-session .student-portal-view-semester-info-link:hover {
+  text-decoration: underline;
+}

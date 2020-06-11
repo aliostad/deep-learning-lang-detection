@@ -1,0 +1,260 @@
+
+.busy {
+	background: url('/images/spinner.gif') no-repeat left center !important;
+}
+
+.navigation {
+	height: 70px;
+	background-color: #111;
+}
+
+.navigation span a {
+	background: transparent url('/images/kakuteru.png') no-repeat left 10px;
+	display: block;
+	float: left;
+	padding: 25px;
+	text-indent: 50px;
+  color: #eee;
+	font-size: 25px;
+	width: 200px;
+}
+
+.navigation ul {
+	float: right;
+	padding: 10px;
+}
+
+div.login {
+	background-color: #ddd;
+	width: 500px;
+	padding: 1em;
+	margin: 2em auto;
+}
+
+.login h2 {
+	margin: 0.4em 0;
+}
+
+ul,li {
+	list-style-type: none;
+}
+
+a.return_to_index {
+	float: right;
+}
+
+.navigation li {
+	float: left;
+	display: block;
+	margin: 1em 1em;
+}
+
+.page {
+	margin: 2em;
+}
+
+.page h1 {
+	margin: 1em 0;
+}
+
+.settings input[type=checkbox],
+input[type=text],
+input[type=password],
+input[type=submit],
+textarea,
+select {
+	font-size: 20px;
+	padding: 4px;
+}
+
+input[type=text],
+textarea {
+	width: 500px;
+}
+
+input[type=hidden] {
+	display: none;
+}
+
+form input,
+.settings form label,
+form select {
+	display: block;
+	margin: 0 0 10px 0;
+	font-size: 18px;
+}
+
+form p {
+	clear: both;
+	margin-bottom: 0.8em;
+}
+
+form p.description {
+	color: #666;
+}
+
+form h2 {
+	margin-bottom: 0.4em;
+}
+
+textarea.body,
+textarea.summary {
+	font-size: 14px;
+	width: 600px;
+}
+
+/* Settings */
+
+.settings form p span {
+	float: left;
+}
+
+.settings form .stream_filter label {
+	width: 200px;
+}
+
+.settings form label {
+	float: left;
+	margin-right: 2em;
+	width: 160px;
+}
+
+.settings div {
+	padding: 0.8em;
+	clear: both;
+}
+
+.settings .base {
+	background-color: #ccc;
+}
+
+.settings textarea {
+	width: 100%;
+}
+
+/* Services */
+
+.services li {
+	border-bottom: 1px dotted #333;
+	padding: 1em 0;
+	margin: 1em 0;
+}
+
+.services li .actions {
+	float: left;
+	clear: both;
+	margin-right: 2em;
+}
+
+.services li input {
+	display: inline;
+}
+
+/* Stream */
+
+.stream li .caption {
+	font-size: 16px;
+}
+
+/* Articles */
+
+.articles li {
+	padding: 0.4em;
+}
+
+.stream li:hover,
+.services li:hover,
+.assets li:hover,
+.articles li:hover {
+	background-color: #F7F7F7;
+}
+
+li span.caption {
+	font-size: 18px;
+}
+
+li span.actions {
+	display: block;
+	float: right;
+	margin: 0.2em 0;
+}
+
+a.edit {
+	background: url('/images/icons/24-frame.png') no-repeat left center;
+	padding-left: 30px;
+}
+
+a.edit:hover {
+	background: url('/images/icons/16-em-pencil.png') no-repeat 5px center;
+	padding-left: 30px;
+}
+
+a.delete {
+	background: url('/images/icons/16-em-cross.png') no-repeat left center;
+	padding-left: 20px;
+}
+
+/* Write article */
+
+.write input[type="text"],
+.write textarea {
+	width: 600px;
+}
+
+.write textarea.summary {
+	height: 10em;
+}
+
+div.write {
+	float: left;
+	margin-right: 1em;
+}
+
+.write form input[type=checkbox] {
+	display: block;
+	float: left;
+	margin-right: 1em;
+}
+
+.write textarea {
+	margin-bottom: 0.4em;
+}
+
+.write label {
+	display: block;
+	margin: 0.4em 0;
+}
+
+/* Assets */
+
+.assets {
+	margin-top: 100px;
+	background-color: #ddd;
+	padding: 1em;
+	-moz-border-radius: 10px;
+	margin-left: 640px;
+}
+
+.assets li {
+	background: url('/images/icons/16-file-page.png') no-repeat left center;
+	font-size: 12px;
+	padding: 0.4em 0 0.4em 20px;
+	margin: 0.1em 0;
+	border-top: 1px solid #eee;
+}
+
+
+.assets li:hover {
+	background: url('/images/icons/16-em-plus.png') no-repeat left center;
+	background-color: #eee;
+}
+
+.assets .upload {
+	background: url('/images/icons/24-em-up.png') no-repeat left center;
+	padding-left: 30px;
+	margin: 1em 0;
+}
+
+.assets h2 {
+	margin-bottom: 0.4em;
+}

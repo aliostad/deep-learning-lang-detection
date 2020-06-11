@@ -1,0 +1,69 @@
+/* CSS Document 
+*
+* CSS Layout
+*
+* Author: Jesse Burcsik
+* Date: 14/11/20009
+*
+*
+*/
+
+
+.container{
+	width:100%;
+	text-align:center;
+	/* Testing */
+	border: 1px dotted blue; /**/
+}
+
+.page-section{
+	width:760px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+}
+
+/* Header
+
+---------------------------------------------------------- */
+
+#header{
+	padding:	0;
+		/* testing */
+		border: 1px dotted pink;
+		/**/
+}
+
+/* Body
+-----------------------------------------------------------*/
+
+#content{
+	padding:	0;
+		/* testing*/
+		border: 1px dotted pink;
+		/**/
+}
+
+/* Footer
+---------------------------------------------------------- */
+
+#footer{
+	padding:	0;
+		/* testing */
+		border: 1px dotted pink;
+		/**/
+}
+
+/* Footer
+---------------------------------------------------------- */
+
+#copy-write{
+	padding:	0;
+		/* testing */
+		border: 1px dotted pink;
+		/**/
+}
+
+#copy-write p{
+	font-size:xx-small;
+}

@@ -1,0 +1,46 @@
+div.banner{width:100%;height:600px;background:url(../images/load/1.jpg) no-repeat center}
+div.banner .grow1{height:83px}
+div.banner .grow2{height:460px}
+div.banner .grow2 div.load{position:relative;width:306px;height:460px;background:#fff;border:1px solid #e8e8e8;padding:0 40px;}
+div.banner .grow2 div.load h3{height:24px;line-height:24px;font-size:18px;margin:30px 40px}
+div.banner .grow2 div.load div.zh{width:302px;height:38px;border:1px solid #e8e8e8;border-radius:2px}
+div.banner .grow2 div.load div.mima{width:302px;height:38px;border:1px solid #e8e8e8;margin-top:10px;border-radius:2px}
+div.banner .grow2 div.load div.zh div.zh1{width:29px;height:24px;margin:7px 0 0 7px;border-right:1px solid #e8e8e8;background:url(../images/load/1.png) no-repeat 0 3px}
+div.banner .grow2 div.load div.zh input.yx{width:224px;height:38px;border:none;line-height:38px;padding-left:8px}
+div.banner .grow2 div.load div.zh input.yx::placeholder{color:#bdbdbd}
+
+div.banner .grow2 div.load div.mima div.zh1{width:29px;height:24px;margin:7px 0 0 7px;border-right:1px solid #e8e8e8;background:url(../images/load/2.png) no-repeat 0 3px}
+div.banner .grow2 div.load div.mima input.yx{width:224px;height:38px;border:none;line-height:38px;padding-left:8px}
+div.banner .grow2 div.load div.mima input.yx::placeholder{color:#bdbdbd}
+div.banner .grow2 div.load input.sub{border:none;display:block;width:100%;height:48px;font-size:18px;line-height:48px;text-align:center;color:#fff;border-radius:2px;background:#b4a078;margin:40px 0 15px}
+div.banner .grow2 div.load div.lost{width:100%;height:16px;line-height:16px;margin-top:5px}
+div.banner .grow2 div.load div.lost a:hover{color:#333}
+div.banner .grow2 div.load div.other{width:120px;height:26px;font-size:14px;text-align:center;margin:5px auto;color:#999;position:relative;line-height:26px}
+div.banner .grow2 div.load div.other div.xian{width:90px;height:1px;background:#ddd;position:absolute;top:12px;left:-90px;}
+div.banner .grow2 div.load div.other div.xian1{width:90px;height:1px;background:#ddd;position:absolute;top:12px;left:120px;}
+div.banner .grow2 div.load div.btm{width:278px;height:50px;padding-top:30px;text-align:center;margin:0 auto}
+div.banner .grow2 div.load div.btm div.s{width:68px;height:50px}
+div.banner .grow2 div.load div.btm div.btm4{width:74px;height:50px}
+div.banner .grow2 div.load div.btm div.l a.first{display:block;width:30px;height:30px;margin:0 auto;margin-bottom:4px;}
+div.banner .grow2 div.load div.btm div.l a.last{display:block;height:16px;line-height:16px;text-align:center}
+div.banner .grow2 div.load div.btm div.btm1 a.first{background:url(../images/load/3.png) no-repeat 1px 1px}
+div.banner .grow2 div.load div.btm div.btm2 a.first{background:url(../images/load/3.png) no-repeat -74px 1px}
+div.banner .grow2 div.load div.btm div.btm3 a.first{background:url(../images/load/3.png) no-repeat -146px 1px}
+div.banner .grow2 div.load div.btm div.btm4 a.first{background:url(../images/load/4.png) no-repeat}
+div.banner .grow2 div.load div.btm div.btm1:hover a{color:#b4a078}
+div.banner .grow2 div.load div.btm div.btm1:hover a.first{background-position:1px -31px}
+div.banner .grow2 div.load div.btm div.btm2:hover a{color:#b4a078}
+div.banner .grow2 div.load div.btm div.btm2:hover a.first{background-position:-74px -31px}
+div.banner .grow2 div.load div.btm div.btm3:hover a{color:#b4a078}
+div.banner .grow2 div.load div.btm div.btm3:hover a.first{background-position:-146px -31px}
+div.banner .grow2 div.load div.btm div.btm4:hover a{color:#b4a078}
+div.banner .grow2 div.load div.btm div.btm4:hover a.first{background:url(../images/load/5.png) no-repeat}
+
+#errmsg{display:block;position:absolute;top:184px;left:-1px;color:red;font-size:16px;width:388px;height:20px;line-height:20px;text-align:center}
+/*------footer����-----*/
+footer{height:204px}
+header .w .r a.dl{visibility:hidden}
+
+
+
+

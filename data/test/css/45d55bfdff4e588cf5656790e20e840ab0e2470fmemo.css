@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+ /* bodexList memo */
+.exList th {text-align:left}
+.exList tr.docList td {border-bottom:1px solid}
+
+.exList .title .exWriteMoFrm  {position:relative; left:0; top:0}
+.exList .title .exWriteMoFrm div {float:left;position:absolute; left:0; top:-4px; margin:0; padding:0; *top:-7px}
+.exList .title .exWriteMoFrm .userName{width:50px;background:url(../images/common/text_id.gif) no-repeat right bottom}
+.exList .title .exWriteMoFrm .userPass{width:50px;background:url(../images/common/text_pw.gif) no-repeat right bottom}
+.exList .title .exWriteMoFrm .userText{width:200px}
+
+.exList td.checkbox {padding:0}
+.exList td.nocheckbox {padding:0 0 0 5px}
+
+.exCtrDelFrm .exIPas {position:relative; border:none}
+.exCtrDelFrm .exIPas input {float:right; width:5em}
+.exCtrDelFrm .exIPas input.userPw {margin-right:5px;width:7em}
+.exCtrDelFrm .button {margin-right:5px;float:right}
+

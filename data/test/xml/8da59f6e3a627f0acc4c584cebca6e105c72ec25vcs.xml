@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+<<<<<<< HEAD
+    <mapping directory="" vcs="Git" />
+=======
+    <mapping directory="" vcs="" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Garbage" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Garbage" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Garbage" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Garbage" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/calculator" vcs="Git" />
+>>>>>>> f47acc0e25ec65fd4526439739f8e3c557747991
+  </component>
+</project>

@@ -1,0 +1,10 @@
+<MonitoredElement id="CloudService" level="SERVICE">
+    <MonitoredElement id="DataEndServiceTopology" level="SERVICE_TOPOLOGY">
+        <MonitoredElement id="DataControllerServiceUnit" level="SERVICE_UNIT"/>
+        <MonitoredElement id="DataNodeServiceUnit" level="SERVICE_UNIT"/>
+    </MonitoredElement>
+    <MonitoredElement id="EventProcessingServiceTopology" level="SERVICE_TOPOLOGY">
+        <MonitoredElement id="LoadBalancerServiceUnit" level="SERVICE_UNIT"/>
+        <MonitoredElement id="EventProcessingServiceUnit" level="SERVICE_UNIT"/>
+    </MonitoredElement>
+</MonitoredElement>

@@ -1,0 +1,40 @@
+#preview {
+  height: 650px;
+}
+.model-list {
+  margin-top: 20px;
+}
+.model-list__item {
+  height: 650px !important;
+  width: 100%;
+  margin: 20px 0 20px;
+}
+.model-list__item__image {
+  height: 650px !important;
+  width: 100%;
+}
+.ash_large {
+  display: none;
+}
+.instruments_large {
+  display: none;
+}
+.model__images {
+  margin: 10px auto;
+  width: 360px;
+}
+.nav {
+  min-width: 100%;
+}
+.nav_item {
+  width: 40%;
+  margin: 5px 10px !important;
+  display: inline-block;
+}
+#media-icons {
+  right: 26px;
+  top: 13px;
+}
+#langs {
+  right: 30px;
+}

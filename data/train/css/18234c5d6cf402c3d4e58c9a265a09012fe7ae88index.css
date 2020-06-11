@@ -1,0 +1,21 @@
+.content{
+    /*background:firebrick;*/
+    /*background: url("http://www.easyicon.net/api/resizeApi.php?id=1191430&size=128");
+    background: url("${require(`../../static/Desert.jpg`)}");*/
+    background: url("/static/Desert.jpg");
+    width: 100px;  
+    height: 100px;
+
+}.table1 {
+  border: 1px solid darkcyan;
+}
+.table1 tr {
+  min-width: 100px;
+}
+.table2 {
+  border: 1px solid goldenrod; }
+  .table2 tr {
+    min-width: 300px; }
+    .table2 tr th {
+      background: yellowgreen;
+      border: 1px solid pink; }

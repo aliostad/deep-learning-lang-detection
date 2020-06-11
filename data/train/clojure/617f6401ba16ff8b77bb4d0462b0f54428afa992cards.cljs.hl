@@ -1,0 +1,184 @@
+(ns lounge.dash.cards
+  (:require [semantic-ui.collections.grid :as semgrid]
+            [semantic-ui.collections.menu :as semmenu]
+            [semantic-ui.elements.segment :as semseg]
+            [semantic-ui.views.card :as semcard]
+            [lounge.ui :as ui]
+            [lounge.route :as route]))
+
+;;Dashboard Cards
+(defelem org-card [attr kids]
+  (ui/card
+    :click route/org!
+    :success route/org?
+    :info route/not-org?
+    (semcard/content
+      (i :class [:building :outline :black :huge :icon]))
+    (semcard/content
+      (semcard/content-header "Organization")
+      (semcard/content-description "Organization profile, employees and sites."))))
+
+(defelem infra-card [attr kids]
+  (ui/card
+    :click route/infra!
+    :success route/infra?
+    :info route/not-infra?
+    (semcard/content
+      (i :class [:sitemap :black :huge :icon]))
+    (semcard/content
+      (semcard/content-header "Infrastructure")
+      (semcard/content-description "Manage Clouds and On-Premise Hardware."))))
+
+(defelem svc-card [attr kids]
+  (ui/card
+    :click route/svc!
+    :success route/svc?
+    :info route/not-svc?
+    (semcard/content
+        (i :class [:rocket :black :huge :icon]))
+    (semcard/content
+      (semcard/content-header "Services")
+      (semcard/content-description "Manage end-user services, such as file shares, email and applications."))))
+
+(defelem support-card [attr kids]
+  (ui/card
+    :click route/support!
+    :success route/support?
+    :info route/not-support?
+    (semcard/content
+        (i :class [:life :ring :black :huge :icon]))
+    (semcard/content
+      (semcard/content-header "Support")
+      (semcard/content-description "Get help or manage support options."))))
+
+;;Organization Cards
+(defelem org-profile [attr kids]
+  (ui/card
+    :click route/org-profile!
+    :success route/org-profile?
+    :info route/not-org-profile?
+    (semcard/content
+      (i :class [:building :black :huge :icon]))
+    (semcard/content
+      (semcard/content-header "Organization Profile")
+      (semcard/content-description "Meta-data and billing"))))
+
+(defelem org-sites [attr kids]
+  (ui/card
+    :click route/org-sites!
+    :success route/org-sites?
+    :info route/not-org-sites?
+    (semcard/content
+      (i :class [:globe :huge :black :icon]))
+    (semcard/content
+      (semcard/content-header "Sites")
+      (semcard/content-description "Office Locations"))))
+
+(defelem org-staff [attr kids]
+  (ui/card
+    :click route/org-staff!
+    :success route/org-staff?
+    :info route/not-org-staff?
+    (semcard/content
+      (i :class [:users :huge :black :icon]))
+    (semcard/content
+      (semcard/content-header "Employees")
+      (semcard/content-description "User management and provisioning"))))
+
+;;Infrastructure Cards
+(defelem infra-pub [attr kids]
+  (ui/card
+    :click route/infra-pub!
+    :success route/infra-pub?
+    :info route/not-infra-pub?
+    (semcard/content
+      (i :class "cloud huge black icon"))
+    (semcard/content
+      (semcard/content-header "Public Clouds")
+      (semcard/content-description "Microsoft Azure"(br)"(Coming Soon: GCE, AWS)"))))
+
+(defelem infra-priv [attr kids]
+  (ui/card
+    :click route/infra-priv!
+    :success route/infra-priv?
+    :info route/not-infra-priv?
+    (semcard/content
+      (i :class "cloud huge black icon"))
+    (semcard/content
+      (semcard/content-header "Private Clouds")
+      (semcard/content-description "Full-Stack Cloud deployed on your own hardware!"))))
+
+(defelem infra-net [attr kids]
+  (ui/card
+    :success route/infra-net?
+    :info route/not-infra-net?
+    (semcard/content
+      (i :class "laptop huge icon"))
+    (semcard/content
+      (semcard/content-header "Networks & Client Devices")
+      (semcard/content-description "Networking Gear, Tablets/Workstations and Point of Sale."))))
+
+(defelem priv-azure [attr kids]
+  (ui/card
+    :error true
+    (semcard/content
+      (i :class [:windows :huge :icon]))
+    (semcard/content
+      (semcard/content-header "Microsoft Azure Stack")
+      (semcard/content-description "Deployed On-Premise"(br)"(Coming Soon)"))))
+
+(defelem pub-azure [attr kids]
+  (ui/card
+    :success route/org?
+    :info route/not-org?
+    (semcard/content
+      (i :class [:windows :huge :icon]))
+    (semcard/content
+      (semcard/content-header "Microsoft Azure")
+      (semcard/content-description "Deployed on Microsoft Azure."))))
+
+
+;;Service Cards
+(defelem ad-card [attr kids]
+  (ui/card
+    :success route/org?
+    :info route/not-org?
+    (semcard/content
+      :class [:ui :centered :tiny]
+      (img :class "ui centered tiny image" :src "images/CnE_Cloud/Azure Active Directory.png"))
+    (semcard/content
+      (semcard/content-header "Active Directory")
+      (semcard/content-meta "Status: Not Deployed"))))
+
+(defelem domain-card [attr kids]
+  (ui/card
+    :click route/svc-domains!
+    :success route/org?
+    :info route/not-org?
+    (semcard/content
+      (i :class [:browser :black :huge :icon]))
+    (semcard/content
+      (semcard/content-header "Domain Names")
+      (semcard/content-description "Register and Manage your domains."))))
+
+(defelem email-card [attr kids]
+  (ui/card
+    :click route/svc-email!
+    :success route/svc-email?
+    :info route/not-svc-email?
+    (semcard/content
+      (i :class [:mail :outline :black :huge :icon]))
+    (semcard/content
+      (semcard/content-header "Email")
+      (semcard/content-description "Manage your email provider."))))
+
+(defelem web-card [attr kids]
+  (ui/card
+    :click route/svc-web!
+    :success route/svc-web?
+    :info route/not-svc-web?
+    (semcard/content
+      (i :class [:world :black :huge :icon]))
+    (semcard/content
+      (semcard/content-header "Blogs and Websites")
+      (semcard/content-description "Create and Manage websites."))))

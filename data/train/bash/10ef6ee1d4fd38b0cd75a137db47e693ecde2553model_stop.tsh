@@ -1,0 +1,37 @@
+#!/bin/sh
+#
+# Stop script for |MODEL|
+#   
+# created by |MODEL|.mk
+
+self=|SELF|
+
+if [ "$1"a != a ]
+then
+remote=$1
+else
+remote=""
+fi
+
+if [ "$remote"a != a ] && [ $remote != `uname -n` ]
+then
+  echo "Killing |MODEL| on $remote ..."
+  |SSH_CMD|$remote $self
+  exit
+fi
+
+if [ "`ps -e | grep \".[ |/]|MODEL|$\"`"a != a ]
+then
+  kill -INT `ps -e | grep ".[ |/]|MODEL|$" |awk '{print $1}'`
+  sleep 3
+  if [ "`ps -e | grep \".[ |/]|MODEL|$\"`"a != a ]
+  then
+    kill -9 `ps -e | grep ".[ |/]|MODEL|$" |awk '{print $1}'`
+    echo "... killed |MODEL|!"
+  else
+    echo "... stopped |MODEL|"
+   fi
+else
+  echo "... there was no model |MODEL| running"
+fi
+

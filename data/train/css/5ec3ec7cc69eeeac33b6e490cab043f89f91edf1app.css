@@ -1,0 +1,53 @@
+#main {
+    margin-top: 2em;
+}
+
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: block;
+}
+
+.tabs {
+    text-align: center;
+}
+
+.tabs li {
+    display: inline;
+    font-size: 1.5em;
+    margin: 1em;
+    padding: 1em;
+    border: solid 1px;
+    list-style-type: none;
+}
+
+.tabs li:hover, .selected {
+    background-color: black;
+}
+
+.tabs a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+}
+label {
+    display: block;
+    text-align: right;
+    float: left;
+    padding-top: 4px;
+    margin-right: 4px;
+}
+#browser-load-box {
+    border: 1px solid;
+}
+#browser-load-box > span {
+    text-align: center;
+}
+input[type='radio'] {
+    display: block;
+    float: left;
+}

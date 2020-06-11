@@ -1,0 +1,30 @@
+#!/usr/bin/env sh
+
+THIS=$(basename $0)
+DIR="$( cd -P "$( dirname "$0" )" && pwd )"
+cd $DIR
+cd ..
+CURR_FOLDER=`pwd`
+
+# Root
+cd $CURR_FOLDER
+
+# Babel
+mkdir -p out
+node_modules/volo/bin/volo add -skipexists
+node_modules/babel/bin/babel/index.js -m umd index.js -o out/index.js
+node_modules/babel/bin/babel/index.js -m umd src --out-dir out/src
+node_modules/babel/bin/babel/index.js -m umd node_modules/chunk/src/chunk.js -o out/chunk.js
+cp node_modules/babel/node_modules/babel-core/browser-polyfill.js out/.
+
+echo "                                "
+echo "< Babei... Yeahh!!             >"
+echo "------------------------------  "
+echo "        \   ^__^                "
+echo "         \  (oo)\_______        "
+echo "            (__)\       )\/\    "
+echo "                ||----w |       "
+echo "                ||     ||       "
+echo "                                "
+
+exit 0

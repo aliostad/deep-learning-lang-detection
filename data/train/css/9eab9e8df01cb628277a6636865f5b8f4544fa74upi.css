@@ -1,0 +1,39 @@
+.pure-table-jumbotron {
+  width: 100%;
+  margin: 50px 0
+}
+
+.info-link {
+  color: #666;
+}
+
+ul.api-endpoint {
+  padding: 0;
+  margin: 0;
+  padding-left: 10px;
+  list-style: none;
+}
+
+ul.api-endpoint li {
+  margin: 10px 0;
+}
+
+ul.api-endpoint li > strong {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+ul.api-endpoint li > ul {
+  margin-left: 50px;
+  padding: 0;
+  list-style: none;
+}
+ul.api-endpoint li > ul span {
+  font-weight: bolder;
+}
+
+.pure-form select {
+  height: 36px;
+}

@@ -1,0 +1,66 @@
+/*
+    Layout selection
+*/
+
+HbTreeViewItem[layoutName="default"][modelItemType="ParentItem"]{
+	layout:parentitemlayout-1;
+}
+
+/*
+    Standard primitive properties
+*/
+
+HbTreeViewItem::subitem-indicator{
+	fixed-height: var(hb-param-graphic-size-secondary);
+	fixed-width: var(hb-param-graphic-size-secondary);
+}
+
+HbTreeViewItem::text-1{
+        size-policy-horizontal: preferred;
+}
+
+HbTreeViewItem::text-1[modelItemType="ParentItem"]{
+        text-height: var(hb-param-text-height-secondary);
+        font-variant: secondary;
+        text-line-count-min: 1;
+        text-line-count-max: 1;
+        text-wrap-mode: no-wrap;
+}
+
+HbTreeViewItem::text-2{
+        size-policy-horizontal: preferred;
+}
+
+HbTreeViewItem::text-2[modelItemType="ParentItem"]{
+	minimum-height: 0.0un;
+	minimum-width: 0.0un;
+	fixed-height: 0.0un;
+	fixed-width: 0.0un;
+        text-line-count-min: 1;
+        text-line-count-max: 1;
+        text-wrap-mode: no-wrap;
+}
+
+HbTreeViewItem::text-3[modelItemType="ParentItem"]{
+	minimum-height: 0.0un;
+	minimum-width: 0.0un;
+	fixed-height: 0.0un;
+	fixed-width: 0.0un;
+        text-line-count-min: 1;
+        text-line-count-max: 1;
+        text-wrap-mode: no-wrap;
+}
+
+HbTreeViewItem::icon-1[modelItemType="ParentItem"]{
+	minimum-height: 0.0un;
+	minimum-width: 0.0un;
+	fixed-height: 0.0un;
+	fixed-width: 0.0un;
+}
+
+HbTreeViewItem::icon-2[modelItemType="ParentItem"]{
+	minimum-height: 0.0un;
+	minimum-width: 0.0un;
+	fixed-height: 0.0un;
+	fixed-width: 0.0un;
+}

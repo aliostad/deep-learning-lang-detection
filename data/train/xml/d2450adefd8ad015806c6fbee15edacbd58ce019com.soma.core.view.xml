@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="com.soma.core.view"><apiName>com.soma.core.view</apiName><apiDetail/><apiClassifier id="com.soma.core.view:SomaViews"><apiName>SomaViews</apiName><shortdesc>
+	 Author: Romuald Quantin - www.soundstep.com
+	 Resources: http://www.soundstep.com/downloads/somacore
+	 Actionscript version: 3.0
+	 Copyright:
+	 Mozilla Public License 1.1 (MPL 1.1) 
+	 http://www.opensource.org/licenses/mozilla1.1.php
+	 The SomaViews class handles the views of the application (DisplayObject).</shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 <p><b>Author:</b> Romuald Quantin - <xref href="http://www.soundstep.com/" scope="external">www.soundstep.com</xref></p>
+	 <p><b>Resources:</b> <xref href="http://www.soundstep.com/downloads/somacore" scope="external">http://www.soundstep.com/downloads/somacore</xref></p>
+	 <p><b>Actionscript version:</b> 3.0</p>
+	 <p><b>Copyright:</b>
+	 Mozilla Public License 1.1 (MPL 1.1) 
+	 <xref href="http://www.opensource.org/licenses/mozilla1.1.php" scope="external">http://www.opensource.org/licenses/mozilla1.1.php</xref></p>
+	 The SomaViews class handles the views of the application (DisplayObject).
+	 </apiDesc><example>Add a view.
+	 <codeblock rev="3.0">
+addView(MySprite.NAME, new MySprite());
+	 </codeblock>
+	 Remove a view.
+	 <codeblock rev="3.0">
+removeView(MySprite.NAME);
+	 </codeblock>
+	 Retrieve a view.
+	 <codeblock rev="3.0">
+var sprite:MySprite = getView(MySprite.NAME) as MySprite;
+	 </codeblock>
+	 Create a shortcut to retrieve a view is a good practice (not necessary with injection enabled).
+	 <codeblock rev="3.0">
+private function get mySprite():MySprite {
+	return getView(MySprite.NAME) as MySprite;
+}
+private function doSomething():void {
+	trace(mySprite);
+}
+	 </codeblock>
+	 </example></apiClassifierDetail><apiConstructor id="com.soma.core.view:SomaViews:SomaViews"><apiName>SomaViews</apiName><shortdesc>
+		 Create an instance of the SomaViews class.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
+		 Create an instance of the SomaViews class. Should not be directly instantiated, the framework will instantiate the class.
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="com.soma.core.view:SomaViews:addView"><apiName>addView</apiName><shortdesc>
+		 Registers a view to the framework.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>The view instance.
+		 </apiDesc><apiType value="Object"/></apiReturn><apiParam><apiItemName>viewName</apiItemName><apiType value="String"/><apiDesc>Name of the view.
+		 </apiDesc></apiParam><apiParam><apiItemName>view</apiItemName><apiType value="Object"/><apiDesc>Instance of the view.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Registers a view to the framework.
+		 </apiDesc><example><codeblock rev="3.0">addView(MySprite.NAME, new MySprite());</codeblock>
+		 </example></apiOperationDetail></apiOperation><apiOperation id="com.soma.core.view:SomaViews:dispose"><apiName>dispose</apiName><shortdesc>
+		 Destroys all the views and properties.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 Destroys all the views and properties. The class will call the dispose method of each view instance.
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="com.soma.core.view:SomaViews:getView"><apiName>getView</apiName><shortdesc>
+		 Retrieves the view instance that has been registered using its name.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>An Object instance.
+		 </apiDesc><apiType value="Object"/></apiReturn><apiParam><apiItemName>viewName</apiItemName><apiType value="String"/><apiDesc>Name of the view.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Retrieves the view instance that has been registered using its name.
+		 </apiDesc><example><codeblock rev="3.0">var mySprite:MySprite = getView(MySprite.NAME) as MySprite;</codeblock>
+		 </example></apiOperationDetail></apiOperation><apiOperation id="com.soma.core.view:SomaViews:getViews"><apiName>getViews</apiName><shortdesc>
+		 Retrieves all the view instances that have been registered to the framework.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>A Dictionary (the key of the Dictionary is the name used for the registration).
+		 </apiDesc><apiType value="flash.utils:Dictionary"/></apiReturn></apiOperationDef><apiDesc>
+		 Retrieves all the view instances that have been registered to the framework.
+		 </apiDesc><example><codeblock rev="3.0">var sprites:Dictionary = getViews();</codeblock>
+		 </example></apiOperationDetail></apiOperation><apiOperation id="com.soma.core.view:SomaViews:hasView"><apiName>hasView</apiName><shortdesc>
+		 Indicates whether a view has been registered to the framework.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>A Boolean.
+		 </apiDesc><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>viewName</apiItemName><apiType value="String"/><apiDesc>Name of the view.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Indicates whether a view has been registered to the framework.
+		 </apiDesc><example><codeblock rev="3.0">hasView(MySprite.NAME);</codeblock>
+		 </example></apiOperationDetail></apiOperation><apiOperation id="com.soma.core.view:SomaViews:removeView"><apiName>removeView</apiName><shortdesc>
+		 Removes a view from the framework and call the (optional) dispose method of this view.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>viewName</apiItemName><apiType value="String"/><apiDesc>Name of the view.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Removes a view from the framework and call the (optional) dispose method of this view.
+		 </apiDesc><example><codeblock rev="3.0">removeView(MySprite.NAME);</codeblock>
+		 </example></apiOperationDetail></apiOperation></apiClassifier></apiPackage>

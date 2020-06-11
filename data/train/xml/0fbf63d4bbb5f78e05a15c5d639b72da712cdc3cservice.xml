@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-autowire="byName"
+ xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+<!--所有继承了service类都要在这写一个bean,id和service的接口初始化的变量名要相同 -->
+	<bean id="friendService" class="com.hoyotech.prison.service.impl.FriendService"></bean>
+    <bean id="carService" class="com.hoyotech.prison.service.impl.CarService"></bean>	
+    <bean id="medicalService" class="com.hoyotech.prison.service.impl.MedicalService"></bean>	
+	<bean id="dictionaryService" class="com.hoyotech.prison.service.impl.DictionaryService"></bean>	
+	<bean id="prisonService" class="com.hoyotech.prison.service.impl.PrisonInfoService"></bean>	
+	<bean id="prisonerServer" class="com.hoyotech.prison.service.impl.PrisonerService"></bean>
+	<bean id="organizationService" class="com.hoyotech.prison.service.impl.OrganizationService"></bean>	
+	<bean id="policeService" class="com.hoyotech.prison.service.impl.PoliceService"></bean>	
+	<bean id="prisonDeviceService" class="com.hoyotech.prison.service.impl.PrisonDeviceService"></bean>	
+	<bean id="civiService" class="com.hoyotech.prison.service.impl.CivilianService"></bean>	
+	<bean id="logiService" class="com.hoyotech.prison.service.impl.LogisticService"></bean>	
+	<bean id="detentionInfoService" class="com.hoyotech.prison.service.impl.DetentionInfoService"></bean>	
+	<bean id="detentionAreaService" class="com.hoyotech.prison.service.impl.DetentionAreaService"></bean>	
+	<bean id="photoQueryService" class="com.hoyotech.prison.service.impl.PhotoQueryService"></bean>	
+	<!-- 以下为法律文书 -->
+	<bean id="prisonerHealthService" class="com.hoyotech.prison.service.impl.PrisonerHealthService"></bean>	
+	<bean id="prisonerContrabandGoodsService" class="com.hoyotech.prison.service.impl.PrisonerContrabandGoodsService"></bean>	
+	<bean id="prisonerGoodsService" class="com.hoyotech.prison.service.impl.PrisonerGoodsService"></bean>	
+	<bean id="sendExamineService" class="com.hoyotech.prison.service.impl.SendExamineService"></bean>	
+	<bean id="riskAssessService" class="com.hoyotech.prison.service.impl.RiskAssessService"></bean>
+	
+	<bean id="stopdetainService" class="com.hoyotech.prison.service.impl.StopDetainService"></bean>	
+	<bean id="outprisonService" class="com.hoyotech.prison.service.impl.OutPrisonService"></bean>	
+	<bean id="leaveExService" class="com.hoyotech.prison.service.impl.LeaveExpiresService"></bean>	
+	<bean id="exeDetainService" class="com.hoyotech.prison.service.impl.ExecutionDetainService"></bean>	
+	<bean id="exeReturnService" class="com.hoyotech.prison.service.impl.ExecuteReturnService"></bean>	
+	<bean id="userService" class="com.hoyotech.prison.service.impl.UserService"></bean>		
+	<bean id="roleService" class="com.hoyotech.prison.service.impl.RoleService"></bean>		
+	<bean id="loginService" class="com.hoyotech.prison.service.impl.LoginService"></bean>	
+	<bean id="useWeaponService" class="com.hoyotech.prison.service.impl.UseWeaponService"></bean>		
+	<bean id="askRegiService" class="com.hoyotech.prison.service.impl.AskRegistrationService"></bean>		
+	<bean id="arraignService" class="com.hoyotech.prison.service.impl.ArraignService"></bean>		
+	<bean id="appealDataPassService" class="com.hoyotech.prison.service.impl.AppealDataPassService"></bean>		
+	<bean id="deathNoticeService" class="com.hoyotech.prison.service.impl.DeathNoticeService"></bean>	
+	<bean id="removeDetainService" class="com.hoyotech.prison.service.impl.RemoveDetainService"></bean>	
+	<bean id="handleSeparateService" class="com.hoyotech.prison.service.impl.HandleSeparateService"></bean>	
+	<bean id="wrongDetainService" class="com.hoyotech.prison.service.impl.WrongDetainService"></bean>	
+	<bean id="detainReturnService" class="com.hoyotech.prison.service.impl.DetainReturnService"></bean>	
+	<bean id="refuseDetainService" class="com.hoyotech.prison.service.impl.RefuseDetainService"></bean>	
+	<bean id="crimeKeyPassService" class="com.hoyotech.prison.service.impl.CrimeKeyPassService"></bean>
+	<bean id="memconService" class="com.hoyotech.prison.service.impl.MemconService"></bean>
+	<bean id="userDetentionService" class="com.hoyotech.prison.service.impl.UserDetentionService"></bean>
+	<bean id="userDutyService" class="com.hoyotech.prison.service.impl.UserDutyService"></bean>
+	<bean id="devChannelService" class="com.hoyotech.prison.service.impl.DevChannelService"></bean>
+	<bean id="failureAlarmService" class="com.hoyotech.prison.service.impl.FailureAlarmService"></bean>
+	<bean id="outRegiService" class="com.hoyotech.prison.service.impl.OutRegisterService"></bean>
+	<bean id="workUnitService" class="com.hoyotech.prison.service.impl.WorkUnitService"></bean>
+	<bean id="nameSearchService" class="com.hoyotech.prison.service.impl.NameSearchService"></bean>
+	<bean id="mapService" class="com.hoyotech.prison.service.impl.MapService"></bean>
+	<bean id="logService" class="com.hoyotech.prison.service.impl.LogService"></bean>
+	<bean id="countService" class="com.hoyotech.prison.service.impl.CountService"></bean>
+	<bean id="analysisService" class="com.hoyotech.prison.service.impl.AnalysisService"></bean>
+	<bean id="jiangchengService" class="com.hoyotech.prison.service.impl.JiangChengService"></bean>
+	
+	<!-- 以下是台账的 -->
+	<bean id="interviewService" class="com.hoyotech.prison.service.impl.InterviewService"></bean>
+	<bean id="deepCrimeService" class="com.hoyotech.prison.service.impl.DeepCrimeService"></bean>
+	<bean id="doctorService" class="com.hoyotech.prison.service.impl.DoctorService"></bean>
+	<bean id="outDoctorService" class="com.hoyotech.prison.service.impl.OutDoctorService"></bean>
+	<bean id="strictManageService" class="com.hoyotech.prison.service.impl.StrictManageService"></bean>
+	<bean id="daiShouService" class="com.hoyotech.prison.service.impl.DaiShouService"></bean>
+	<bean id="emergencyService" class="com.hoyotech.prison.service.impl.EmergencyService"></bean>
+	<bean id="safeCheckService" class="com.hoyotech.prison.service.impl.SafeCheckService"></bean>
+	<bean id="inspectService" class="com.hoyotech.prison.service.impl.InspectService"></bean>
+	<bean id="educationService" class="com.hoyotech.prison.service.impl.EducationService"></bean>
+	<bean id="receptionService" class="com.hoyotech.prison.service.impl.ReceptionService"></bean>
+	<bean id="handOverService" class="com.hoyotech.prison.service.impl.HandOverService"></bean>
+	<bean id="meetingRecordService" class="com.hoyotech.prison.service.impl.MeetingRecordService"></bean>
+	<bean id="analysisMeetingService" class="com.hoyotech.prison.service.impl.AnalysisMeetingService"></bean>
+	<bean id="societyOpenService" class="com.hoyotech.prison.service.impl.SocietyOpenService"></bean>
+	<bean id="handleConflictService" class="com.hoyotech.prison.service.impl.HandleConflictService"></bean>
+	<bean id="talkEducationService" class="com.hoyotech.prison.service.impl.TalkEducationService"></bean>
+	<bean id="patrolRecordService" class="com.hoyotech.prison.service.impl.PatrolRecordService"></bean>
+	<bean id="mainService" class="com.hoyotech.prison.service.impl.MainService"></bean>
+	<bean id="provinceService" class="com.hoyotech.prison.service.impl.ProvinceService"></bean>
+	
+	<!-- 日志相关 -->
+	<bean id="log" class="com.hoyotech.prison.log.LogFactory"></bean>
+	<bean id="differ" class="com.hoyotech.prison.log.DifferHelper"></bean>
+	<bean id="posit" class="com.hoyotech.prison.log.ip.IPSeeker"></bean>
+	<bean id="goodItemService" class="com.hoyotech.prison.service.impl.GoodItemService"></bean>
+	<bean id="medicalTreatmentService" class="com.hoyotech.prison.service.impl.MedicalTreatmentService"></bean>
+    <!--	卢志明2015年1月19日-->
+    <bean id="messageReleasesService" class="com.hoyotech.prison.service.impl.MessageReleasesService"></bean>
+    <bean id="achievementService" class="com.hoyotech.prison.service.impl.AchievementService"></bean>
+    <bean id="inexepensiveTextService" class="com.hoyotech.prison.service.impl.InexepensiveTextService"></bean>
+    <bean id="specialScoreService" class="com.hoyotech.prison.service.impl.SpecialScoreService"></bean>
+    <!-- 闵高 2015年1月19日 -->
+    <bean id="pageService" class="com.hoyotech.prison.service.impl.HomePageService"></bean>
+    <bean id="quarterService" class="com.hoyotech.prison.service.impl.QuarterService"></bean>
+    <bean id="empService" class="com.hoyotech.prison.service.impl.EmployeeService"></bean>
+    <!-- 绩效管理 -->
+    <bean id="performanceService" class="com.hoyotech.prison.service.impl.PerformanceService"></bean>
+    <!-- 邵云波2015年1月22日 -->
+    <bean id="recordManageService" class="com.hoyotech.prison.service.impl.RecordManageService"></bean>
+	<!--    刘泉2015.01.28-->
+    <bean id="jx_DepartmentService" class="com.hoyotech.prison.service.impl.JX_DepartmentService"></bean>
+    <bean id="jx_UserService" class="com.hoyotech.prison.service.impl.JX_UserService"></bean>
+    <bean id="jx_RoleService" class="com.hoyotech.prison.service.impl.JX_RoleService"></bean>
+    <!--卢志明2015年4月8日    房间管理-->
+    <bean id="roomService" class="com.hoyotech.prison.service.impl.RoomService"></bean>
+</beans>

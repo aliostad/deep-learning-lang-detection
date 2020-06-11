@@ -1,0 +1,265 @@
+/* Navigation */
+header {
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin:0;
+    display: inline;
+}
+
+header nav {
+    display:inline;
+}
+
+header nav ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+header nav ul li {
+    display: inline;
+    padding:0px 20px;
+    text-align: right;
+}
+
+header nav ul li a {
+    color:#2c3e50;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color:#959595;
+}
+
+#menu-icon {
+    display: hidden;
+    width: 30px;
+    height: 30px;
+    background: url(http://i.imgur.com/cMicJDh.png) center;
+}
+
+#menu-icon:hover {
+  color:#fff;
+  opacity:.8;
+}
+
+/* jQuery quote slider stuff */
+.textItem {
+  margin:0 auto;
+  display:none;
+  height: 100px;
+}
+
+#quotes {  
+  font-size:20px;
+}
+
+
+
+/*Sections*/
+#come-write {
+    background-image: url(http://i.imgur.com/ftDolY5.gif?1);
+    background-size: cover;
+    background-position: center center;
+    min-height: 500px;
+    
+}
+
+#quote {
+    background-color: #fff;
+    min-height: 450px;
+    vertical-align: middle;
+}
+
+#copy-editors {
+    background-color: #ebebeb;
+    min-height: 450px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.half, .half2 {
+    width: 48%;
+    float: left;
+}
+
+.macbook, .need-writers {
+    margin: 85px 0;
+}
+
+#copy-editors .half2 {
+    width: 48%;
+    float: right;
+
+}
+.need-writers {
+    margin: 134px 0;
+}
+
+#key-features {
+    background-color: #fff;
+    margin: 0;
+    min-height: 450px;
+}
+
+.centered{
+    text-align: center;
+}
+
+#key-features img {
+    padding: 15px;
+}
+
+#join-us {
+    background-image: url(http://i.imgur.com/PM66uIP.png?1);
+    background-size: cover;
+    background-position: center center;
+    min-height: 450px;   
+}
+
+#footer .logo:hover {
+  color:#fff;
+  opacity:.7;
+}
+
+.center{
+    text-align: center;
+}
+
+
+/* Type */
+
+#textslide, #come-write h1, h1, h2 {
+    font-family: "Museo Slab", "Sanchez Slab", serif; 
+}
+
+#come-write h1, h1, #join-us h1 {
+   font-size:38px;  
+   line-height: 41px;
+   font-weight: 500;
+}
+
+h3, .navbar-item {
+    font-size:16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: .02em;
+}
+
+h1, #join-us h1, h2, .navbar-item {
+    color:#2c3e50;
+}
+
+#come-write h1, h1 {
+    text-align: left
+}
+
+#join-us h1, h2, h3 {
+    text-align: center; 
+}
+
+#come-write h1, #come-write p {
+    color:#FFF;
+}
+
+#textslide, h2 {
+    font-size:25px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 33px;
+    text-align: center;
+}
+
+h3 {
+    color:#959595;
+}
+
+p, #come-write p, h3, h4 {
+    font-family: "Proxima Nova", Helvetica, Arial, sans-serif; 
+}
+
+p, #come-write p, {
+    font-size:18px;
+    line-height: 22px;
+}
+
+p {
+    color:#2c3e50;
+    text-align: left;
+}
+
+#come-write p {
+    color:#FFF;
+    text-align: left;
+}
+
+#join-us p, #key-features p {
+    text-align: center;
+}
+
+#join-us p {
+    color:#2c3e50;    
+}
+
+.herotype {
+    margin: 147px 0;
+}
+
+#key-features h1 {
+    margin-top: 80px;
+}
+
+/* Footer */
+#footer {
+    background-color: #317F80;
+    min-height: 60px;
+}
+
+#footer nav {
+    display:inline;
+}
+
+#footer nav ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+#footer nav ul li {
+    display: inline;
+    padding:0px 15px;
+    text-align: right;
+    font-family: "Proxima Nova", Helvetica, Arial, sans-serif; 
+    font-size:14px;
+}
+
+#footer nav ul li a {
+    color:#fff;
+    text-decoration: none;
+}
+
+#footer nav ul li a:hover {
+    color:#e1e1e1;
+}
+
+#footer .logo {
+    display:inline;
+    float: left;
+    padding:0px 10px;
+    margin-top: 15px;
+}
+
+.sticky {  
+    position: fixed;  
+    width: 100%;  
+    left: 0;  
+    top: 0;  
+    z-index: 100;  
+    border-top: 0;  
+}  

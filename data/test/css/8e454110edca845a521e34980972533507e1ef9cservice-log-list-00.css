@@ -1,0 +1,153 @@
+/*
+    Document   : service-log-list
+    Created on : Feb 26, 2012, 1:32:46 PM
+    Author     : josh
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#service-logs {
+
+}
+
+ul#service-logs, ul#new-service-log {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* New Entry */
+#new-service-log {
+	margin-bottom: 25px;
+}
+#new-service-log .service-log.new .container {
+	border: 1px dashed black;
+	background-color: #E9FFE6;
+}
+
+.service-log {
+	margin-top: 7px;
+}
+
+.service-log > .container {
+	border-radius: 15px;
+	color: #000000;
+	display: block;
+	padding: 7px;
+	position: relative;
+	text-decoration: none;
+}
+
+.service-log:nth-child(odd) > .container {
+	background-color: #f8f8f8;
+}
+
+.service-log.new > .container {
+	background-color: #fffe9d;
+}
+
+.service-log.new > .container:hover {
+	background-color: #ffffc2;
+}
+
+.service-log > .container:hover {
+	background-color: #ececec;
+}
+
+.service-log > .container.edit {
+	display: none;
+}
+
+.service-log.editing > .container.edit {
+	display: block;
+}
+
+.service-log.editing > .container.view {
+	display: none;
+}
+
+.service-log .units {
+	color: #d1d1d1;
+}
+
+.service-log .log-date, .service-log .odometer, .service-log .cost {
+	left: 0;
+	position: absolute;
+	top: 11px;
+}
+
+.service-log .cost {
+	left: 32px;
+	top: 40px;
+}
+
+.service-log .cost input {
+	width: 183px;
+}
+
+.service-log .cost .units {
+	display: block;
+	left: -10px;
+	position: absolute;
+	top: 0;
+}
+
+.service-log.edit .cost .units {
+	top: 2px;
+}
+
+.service-log .log-date {
+	left: 32px;
+	color: #c7c7c7;
+}
+
+.service-log .log-date input {
+	width: 183px;
+}
+
+.service-log .odometer {
+	left: 227px;
+}
+
+.service-log .odometer input {
+	padding-right: 7px;
+	text-align: right;
+	width: 120px;
+}
+
+.service-log .odometer .number, .service-log .odometer .number input {
+	font-size: 17pt;
+}
+
+/*.service-log .summary {
+	left: 32px;
+	top: 69px;
+}*/
+
+.service-log .summary, .service-log .summary input {
+	font-size: 17pt;
+}
+
+.service-log .summary {
+	margin: 61px 0 0 25px;
+}
+
+.service-log .summary input {
+	width: 98%;
+}
+
+.service-log .description {
+	margin: 4px 0 14px 25px;
+}
+
+.service-log .description textarea {
+	height: 100px;
+	width: 98%;
+}
+
+.service-log .tag {
+	background-color: #EAEAFF;
+	border: 1px solid blue;
+	border-radius: 5px;
+	padding: 0 5px;
+}

@@ -1,0 +1,475 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+fieldset,img{border:0;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+input,button,textarea,select{font:inherit;font-size:100%;}
+body{font:14px/1.5 'Microsoft Yahei UI','Microsoft YaHei',Helvetica,'����',Arial,sans-serif;color:#464646;}
+ol,ul{list-style:none;}
+/* tables still need 'cellspacing="0"' in the markup */
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;}
+a{text-decoration:none;coloegame_statisticr:#505050;}
+a:hover{text-decoration:none}
+.fix{*zoom:1;}
+.fix:after{display:table;content:'';clear:both;}
+
+
+
+
+
+/*  menu button   */
+.menuBtn{
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100px;
+    height: 42px;
+    background: rgb(223, 192, 167);
+    z-index: 1000;
+    border: 3px solid #000;
+    border-left: 0;
+}
+.menuSignal{
+    display: inline-block;
+    position: absolute;
+    padding: 18px 10px;
+    left: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    z-index: 3000;
+
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -moz-transition: -moz-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    -ms-transiton: -ms-transform .3s ease-out;
+    transition: transform .3s ease-out;
+}
+.slice{
+    position: relative;
+    width: 25px;
+    height: 4px;
+    background: #000;
+}
+.slice::after,
+.slice::before{
+    display: block;
+    content: "";
+    height: 4px;
+    width: 25px;
+    background: #000;
+    position: absolute;
+    z-index: -1;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+
+}
+.slice::after{
+    top: 8px;
+}
+.slice::before{
+    top: -8px;
+}
+.menuTitle{
+    display: block;
+    position: absolute;
+    right: 0;
+    left: auto;
+    padding: 11px 12px 11px 12px;
+    border-right: 0;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/*  full srceen menu*/
+.fullMenuBtn{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.97);
+    z-index: 900;
+    text-align: center;
+    display: none;
+    opacity: 0;
+    -webkit-transition: opacity .3s ease-out;
+    -moz-transition: opacity .3s ease-out;
+    -o-transition: opacity .3s ease-out;
+    -ms-transition: opacity .3s ease-out;
+    transition: opacity .3s ease-out;
+}
+.fullMenuBtnActive{
+}
+
+.fullMenuList{
+    display: inline-block;
+    position: absolute;
+    vertical-align: middle;
+    width: 100%;
+    top: 15%;
+    left: 0;
+    text-align: center;
+}
+.fullMenuList a{
+    display: block;
+    font-size: 2em;
+    padding: .5em 0 .3em;
+}
+.fullMenuList a:hover{
+    background: rgba(0,0,0,.1);
+}
+.fullMenuList a.currentMenu{
+    background: #000;
+    color: #fff;
+}
+
+
+
+
+
+
+
+/*  loading bar   */
+.loadingBar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    display: block;
+    z-index: 100;
+}
+.loadingBar span{
+    width: 0;
+    height: 5px;
+    position: absolute;
+    left: 50%;
+}
+.color-1{
+    z-index: 101;
+}
+.color-2{
+    z-index: 102;
+}
+.color-3{
+    z-index: 103;
+}
+.color-4{
+    z-index: 104;
+}
+.skyColor{
+    background: #f897ba;
+}
+.loading{
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-delay: 0s;
+    -o-animation-duration: 4s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    -o-animation-delay: 0s;
+    -ms-animation-duration: 4s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -ms-animation-delay: 0s;
+}
+.loading-1{
+    animation-name: 'loadBar-1';
+    -webkit-animation-name: 'loadBar-1';
+    -moz-animation-name: 'loadBar-1';
+    -o-animation-name: 'loadBar-1';
+    -ms-animation-name: 'loadBar-1';
+}
+.loading-2{
+    animation-name: 'loadBar-2';
+    -webkit-animation-name: 'loadBar-2';
+    -moz-animation-name: 'loadBar-2';
+    -o-animation-name: 'loadBar-2';
+    -ms-animation-name: 'loadBar-2';
+}
+.loading-3{
+    animation-name: 'loadBar-3';
+    -webkit-animation-name: 'loadBar-3';
+    -moz-animation-name: 'loadBar-3';
+    -o-animation-name: 'loadBar-3';
+    -ms-animation-name: 'loadBar-3';
+}
+.loading-4{
+    animation-name: 'loadBar-4';
+    -webkit-animation-name: 'loadBar-4';
+    -moz-animation-name: 'loadBar-4';
+    -o-animation-name: 'loadBar-4';
+    -ms-animation-name: 'loadBar-4';
+}
+@-webkit-keyframes loadBar-1 {
+    from {
+        width: 0px;
+        left: 50%;
+    }
+    25%{
+        width: 100%;
+        left: 0%;
+    }
+    to {
+        width: 100%;
+        left: 0%;
+    }
+}
+@-webkit-keyframes loadBar-2 {
+    from {
+        width: 0px;
+        left: 50%;
+    }
+    19%{
+        width: 0%;
+        left: 50%;
+    }
+    50%{
+        width: 100%;
+        left: 0%;
+    }
+    to {
+        width: 100%;
+        left: 0%;
+    }
+}
+@-webkit-keyframes loadBar-3 {
+    from {
+        width: 0px;
+        left: 50%;
+    }
+    38%{
+        width: 0%;
+        left: 50%;
+    }
+    75%{
+        width: 100%;
+        left: 0%;
+    }
+    to {
+        width: 100%;
+        left: 0%;
+    }
+}
+@-webkit-keyframes loadBar-4 {
+    from {
+        width: 0px;
+        left: 50%;
+    }
+    57%{
+        width: 0%;
+        left: 50%;
+    }
+    to {
+        width: 100%;
+        left: 0%;
+    }
+}
+
+@-moz-keyframes loadBar-1 {
+    from {
+        width: 0px;
+        left: 50%;
+    }
+    25%{
+        width: 100%;
+        left: 0%;
+    }
+    to {
+        width: 100%;
+        left: 0%;
+    }
+}
+@-moz-keyframes loadBar-2 {
+    from {
+        width: 0px;
+        left: 50%;
+    }
+    19%{
+        width: 0%;
+        left: 50%;
+    }
+    50%{
+        width: 100%;
+        left: 0%;
+    }
+    to {
+        width: 100%;
+        left: 0%;
+    }
+}
+@-moz-keyframes loadBar-3 {
+    from {
+        width: 0px;
+        left: 50%;
+    }
+    38%{
+        width: 0%;
+        left: 50%;
+    }
+    75%{
+        width: 100%;
+        left: 0%;
+    }
+    to {
+        width: 100%;
+        left: 0%;
+    }
+}
+@-moz-keyframes loadBar-4 {
+    from {
+        width: 0px;
+        left: 50%;
+    }
+    57%{
+        width: 0%;
+        left: 50%;
+    }
+    to {
+        width: 100%;
+        left: 0%;
+    }
+}
+@-o-keyframes loadBar-1 {
+    from {
+        width: 0px;
+        left: 50%;
+    }
+    25%{
+        width: 100%;
+        left: 0%;
+    }
+    to {
+        width: 100%;
+        left: 0%;
+    }
+}
+@-o-keyframes loadBar-2 {
+    from {
+        width: 0px;
+        left: 50%;
+    }
+    19%{
+        width: 0%;
+        left: 50%;
+    }
+    50%{
+        width: 100%;
+        left: 0%;
+    }
+    to {
+        width: 100%;
+        left: 0%;
+    }
+}
+@-o-keyframes loadBar-3 {
+    from {
+        width: 0px;
+        left: 50%;
+    }
+    38%{
+        width: 0%;
+        left: 50%;
+    }
+    75%{
+        width: 100%;
+        left: 0%;
+    }
+    to {
+        width: 100%;
+        left: 0%;
+    }
+}
+@-o-keyframes loadBar-4 {
+    from {
+        width: 0px;
+        left: 50%;
+    }
+    57%{
+        width: 0%;
+        left: 50%;
+    }
+    to {
+        width: 100%;
+        left: 0%;
+    }
+}
+@-ms-keyframes loadBar-1 {
+    from {
+        width: 0px;
+        left: 50%;
+    }
+    25%{
+        width: 100%;
+        left: 0%;
+    }
+    to {
+        width: 100%;
+        left: 0%;
+    }
+}
+@-ms-keyframes loadBar-2 {
+    from {
+        width: 0px;
+        left: 50%;
+    }
+    19%{
+        width: 0%;
+        left: 50%;
+    }
+    50%{
+        width: 100%;
+        left: 0%;
+    }
+    to {
+        width: 100%;
+        left: 0%;
+    }
+}
+@-ms-keyframes loadBar-3 {
+    from {
+        width: 0px;
+        left: 50%;
+    }
+    38%{
+        width: 0%;
+        left: 50%;
+    }
+    75%{
+        width: 100%;
+        left: 0%;
+    }
+    to {
+        width: 100%;
+        left: 0%;
+    }
+}
+@-ms-keyframes loadBar-4 {
+    from {
+        width: 0px;
+        left: 50%;
+    }
+    57%{
+        width: 0%;
+        left: 50%;
+    }
+    to {
+        width: 100%;
+        left: 0%;
+    }
+}

@@ -1,0 +1,74 @@
+.notice 
+{
+  background-color:lightgoldenRodYellow;
+  border:1px solid darkgoldenrod;
+  color:darkgoldenrod;
+  margin-left:35%;
+  margin-right:35%;
+  padding-left:5%;
+  width:30%;
+  padding-right:5%;
+  padding-top:.5em;
+  padding-bottom:.5em;
+  overflow:auto;;
+  position:absolute;
+  top:3em;
+  opacity:.9;
+}
+.gwt-rails-breadcrumbs *
+{
+  float: right;
+  display: inline;
+}
+.gwt-rails-breadcrumbs *
+{
+  margin-left: 1em;
+}
+.gwt-rails-menu *
+{
+  float: left;
+  display: inline; 
+}
+.gwt-rails-display, .gwt-rails-model-signature, .gwt-rails-model-fields
+{ 
+  clear: both;
+}
+.gwt-rails-model-signature *
+{ 
+  font-size: 0.7em;
+  float: left;
+  display: inline; 
+  margin-right: .3em;
+}
+.gwt-rails-model-signature span
+{ 
+  margin-right: 1em;
+}
+.gwt-rails-model-fields > div > *
+{
+  display: block;
+}
+.gwt-rails-model-signature, .gwt-rails-buttons, .gwt-rails-display
+{
+  margin-top: .3em;
+}
+.gwt-rails-model-fields .gwt-TextBox, .gwt-rails-model-fields .gwt-TextArea
+{
+  width: 30%;
+}
+.gwt-rails-model-fields .gwt-TextArea
+{
+  height: 6em;
+}
+
+.gwt-rails-application-links > div
+{
+  display: inline;
+  border-left: solid darkblue 1px;
+  border-right: solid darkblue 1px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin: 0;
+  margin-left: -1px;
+  font-size: 0.9em;
+}

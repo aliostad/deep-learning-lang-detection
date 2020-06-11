@@ -1,0 +1,37 @@
+/*
+Theme Name: Power Framework 
+Theme URI: https://github.com/traivan98/PowerFramework
+Author: traivan98
+Author URI: https://github.com/traivan98/
+Description: this is a framework which helps web designer .
+Version: 2.0
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: demo, white, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: PowerFramework 
+your comment here
+*/
+
+/* theme Notes start
+--------------------------------------------------------------
+
+Your can kick start your work quickly and easily. 
+How to organige our file
+
+============= Our custom css file list ===============
+
+1. theme-content-color (you can change your theme color )
+2. theme-style (you can change your theme style )
+3. responsive.css (You can responsive your design quickly and easily . just write your css our media queries)
+4. theme-animation.css (write your custom animation)
+5. theme.css (write your theme css )
+6. extra.css (it's useful for css overwritting . For example if you if you overwritte any css code this will be helpful for large project)
+
+
+============= Our custom js file list ===============
+
+1. row.js (write your custom javascript and jquery plugin)
+2. active.js (Active your plugin)
+
+/* theme Notes END
+-------------------------------------------------------------- */

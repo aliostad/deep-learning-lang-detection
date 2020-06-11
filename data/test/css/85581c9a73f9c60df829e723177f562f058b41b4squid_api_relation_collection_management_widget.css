@@ -1,0 +1,20 @@
+.squid-api-Relation-collection-management tr td {
+	width: 25%;
+	padding-left: 10px;
+}
+.squid-api-Relation-collection-management tr td.edit, .squid-api-Relation-collection-management tr td.delete {
+	width: 8%;
+}
+.squid-api-Relation-collection-management .leftIcon {
+	width: 100px;
+	position: relative;
+	left: -13px;
+}
+.squid-api-Relation-collection-management .rightIcon {
+	position: relative;
+	left: -38px;
+}
+.squid-api-Relation-collection-management .leftIcon svg, .squid-api-Relation-collection-management .rightIcon svg {
+	position: relative;
+	left: -25px;
+}

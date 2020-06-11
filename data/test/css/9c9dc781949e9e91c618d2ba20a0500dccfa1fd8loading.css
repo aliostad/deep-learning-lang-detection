@@ -1,0 +1,90 @@
+.loadMask{
+    width:100%;
+    height:100%;
+    position: fixed;
+    left:0;
+    top:0;
+    background:rgba(255,255,255,0.5);
+    z-index: 1100;
+}
+.loadEffect {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left:50%;
+    margin-left:-25px;
+    top:50%;
+    margin-top: -25px;
+    z-index: 1001;
+}
+.loadEffect span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #0090ff;
+    position: absolute;
+    -webkit-animation: load 1.04s ease infinite;
+}
+@-webkit-keyframes load {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+.loadEffect span:nth-child(1) {
+    left: 0;
+    top: 50%;
+    margin-top: -5px;
+    -webkit-animation-delay: 0.13s;
+}
+.loadEffect span:nth-child(2) {
+    left: 14px;
+    top: 14px;
+    -webkit-animation-delay: 0.26s;
+}
+.loadEffect span:nth-child(3) {
+    left: 50%;
+    top: 0;
+    margin-left: -5px;
+    -webkit-animation-delay: 0.39s;
+}
+.loadEffect span:nth-child(4) {
+    top: 14px;
+    right: 14px;
+    -webkit-animation-delay: 0.52s;
+}
+.loadEffect span:nth-child(5) {
+    right: 0;
+    top: 50%;
+    margin-top: -5px;
+    -webkit-animation-delay: 0.65s;
+}
+.loadEffect span:nth-child(6) {
+    right: 14px;
+    bottom: 14px;
+    -webkit-animation-delay: 0.78s;
+}
+.loadEffect span:nth-child(7) {
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    -webkit-animation-delay: 0.91s;
+}
+.loadEffect span:nth-child(8) {
+    bottom: 14px;
+    left: 14px;
+    -webkit-animation-delay: 1.04s;
+}
+.loadMask-transition,.loadEffect-transition{
+    transition: all cubic-bezier(0.36, 0.66, 0.04, 1) 500ms;
+    opacity: 0.5;
+}
+.loadEffect-transition{
+    opacity: .8
+}
+.loadMask-enter,.loadMask-leave,.loadEffect-enter,.loadEffect-leave{
+    opacity: 0;
+}

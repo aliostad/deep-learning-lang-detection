@@ -1,0 +1,58 @@
+/* Empty. Add your own CSS if you like */
+
+#content_demo_image {
+	float: left;
+	margin-bottom: 10px;
+}
+.image_wrapper {
+	float: left;
+	position: relative;
+	display: inline-block;
+}
+.api_face {
+	opacity: 0.8;
+	background: transparent 0 0 repeat;
+	position: absolute;
+	background-image: url('.');
+}
+.api_face_inner {
+	width: 100%;
+	height: 100%;
+	border: 5px solid #88cc00;
+	left: -5px;
+	top: -5px;
+	position: relative;
+}
+.api_face_inner_tid {
+	color: #88cc00;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: -26px;
+}
+.api_face_inner_sim {
+	display: none;
+}
+.api_face_point {
+	position: absolute;
+	width: 3px;
+	height: 3px;
+	background: #88cc00;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	border: 1px solid #88cc00;
+	margin: -2px 0 0 -2px;
+	font-size: 0;
+}
+.api_face_all_point {
+	position: absolute;
+	width: 3px;
+	height: 3px;
+	background: #e4d00a;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	border: 1px solid #e4d00a;
+	margin: -2px 0 0 -2px;
+	font-size: 0;
+}

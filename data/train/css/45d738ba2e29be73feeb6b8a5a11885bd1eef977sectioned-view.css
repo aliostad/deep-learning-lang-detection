@@ -1,0 +1,59 @@
+.sectioned-view-note, .sectioned-view-warning, .sectioned-view-info, .sectioned-view-tip {
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+  text-align: left;
+}
+
+.sectioned-view-note h3, .sectioned-view-warning h3, .sectioned-view-info h3, .sectioned-view-tip h3 {
+  margin: 0 0 5px 0;
+}
+
+.sectioned-view-note div, .sectioned-view-warning div, .sectioned-view-info div, .sectioned-view-tip div {
+  margin-left: 10px;
+}
+
+.sectioned-view-note {
+  background-color: #ffffce;
+  border-color: #f0c000;
+}
+
+.sectioned-view-warning {
+  background-color: #ffcccc;
+  border-color: #cc0000;
+}
+
+.sectioned-view-info {
+  background-color: #d8e4f1;
+  border-color: #3c78b5;
+}
+
+.sectioned-view-tip {
+  background-color: #dfd;
+  border-color: #090;
+}
+
+.sectioned-view-panel {
+  border-color: #6699ff;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom:10px;
+}
+
+.sectioned-view-panel .sectioned-view-panel-header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #6699ff;
+  background-color: #bbbbff;
+  padding: 5px;
+  text-align: center;
+}
+
+.sectioned-view-panel .sectioned-view-panel-header h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.sectioned-view-panel .sectioned-view-panel-content {
+  padding: 5px;
+}

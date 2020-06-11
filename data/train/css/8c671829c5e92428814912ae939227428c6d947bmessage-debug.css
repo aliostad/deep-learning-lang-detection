@@ -1,0 +1,167 @@
+/*! define alimobstyle/message/1.0.0/message-debug.css */
+/* alimobstyle.message 样式模块 */
+
+.ali-message {
+    position: relative;
+    padding: 8px 8px 8px 38px;
+    color: #333;
+}
+.ali-message-noicon{
+    padding-left: 8px;
+}
+.ali-message-icon {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    z-index: 1;
+    margin-top: -12px;
+}
+.ali-message-icon:after {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    z-index: 999;
+    content: "\0020";
+    background-repeat: no-repeat;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius: 13px;
+}
+.ali-message-icon:after,
+.ali-sd .ali-message-icon:after,
+.ali-hd .ali-message-icon:after {
+    /*background-image: url(https://i.alipayobjects.com/e/201402/26AKVpoohh.png);*/
+    background: url(https://i.alipayobjects.com/e/201402/27THO0P2Bp.png) no-repeat;
+    background-size: 320px auto;
+}
+
+.ali-message-info .ali-message-icon:after {
+    border: 3px solid #47bee9;
+    background-position: -2px -3px;
+}
+.ali-message-warn .ali-message-icon:after {
+    border: 3px solid #ff8634;
+    background-position: -2px -26px;
+}
+.ali-message-success .ali-message-icon:after {
+    border: 3px solid #a3d461;
+    background-position: -2px -48px;
+}
+.ali-message-error .ali-message-icon:after {
+    border: 3px solid #ff6900;
+    background-position: -2px -71px;
+}
+
+.ali-message p{
+    font-size: 20px;
+}
+
+.ali-message-small{
+    position: relative;
+    padding: 0 0 0 24px;
+}
+.ali-message-small .ali-message-icon,
+.ali-message-form .ali-message-icon{
+    margin-top: -9px;
+    left: 12px;
+}
+.ali-message-small .ali-message-icon{
+    left: 0;
+}
+.ali-message-small .ali-message-icon:after,
+.ali-message-form .ali-message-icon:after{
+    width: 18px;
+    height: 18px;
+    border: none;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+.ali-message-small.ali-message-info .ali-message-icon:after,
+.ali-message-form.ali-message-info .ali-message-icon:after{
+    background-position: -25px -3px;
+    background-color: #47bee9;
+}
+.ali-message-small.ali-message-warn .ali-message-icon:after,
+.ali-message-form.ali-message-warn .ali-message-icon:after{
+    background-position: -25px -26px;
+    background-color: #ff8634;
+}
+.ali-message-small.ali-message-success .ali-message-icon:after,
+.ali-message-form.ali-message-success .ali-message-icon:after{
+    background-position: -25px -48px;
+    background-color: #a3d461;
+}
+.ali-message-small.ali-message-error .ali-message-icon:after,
+.ali-message-form.ali-message-error .ali-message-icon:after{
+    background-position: -25px -71px;
+    background-color: #ff6900;
+}
+.ali-message-small p,
+.ali-message-form p{
+    font-size: 14px;
+}
+
+.ali-message-form {
+    border: 1px solid #e0e0e0;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    position: relative;
+    padding-left: 36px;
+}
+.ali-message-form.ali-message-error{
+    border-color: #fdb767;
+    background-color: #fdefde;
+}
+
+.ali-message-arrow{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-color: #e0e0e0;
+    border-width: 1px;
+    background: #f7f7f7;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.ali-message-form.ali-message-error .ali-message-arrow{
+    border-color: #fdb767;
+    background-color: #fdefde;
+}
+.ali-message-arrowtop{
+    border-top-style: solid;
+    border-left-style: solid;
+    top: -6px;
+    left: 32px;
+}
+.ali-message-arrowleft{
+    border-bottom-style: solid;
+    border-left-style: solid;
+    top: 50%;
+    margin-top: -5px;
+    left: -6px;
+}
+.ali-message-arrowbottom{
+    border-bottom-style: solid;
+    border-right-style: solid;
+    bottom: -6px;
+    left: 32px;
+}
+.ali-message-arrowright{
+    border-top-style: solid;
+    border-right-style: solid;
+    top: 50%;
+    margin-top: -5px;
+    right: -6px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+    .ali-message-icon, .ali-hd .ali-message-icon:after {
+        /*background-image: url(https://i.alipayobjects.com/e/201402/26AKVpoohh.png);*/
+        background: url(https://i.alipayobjects.com/e/201402/27THO0P2Bp.png) no-repeat;
+    }
+}

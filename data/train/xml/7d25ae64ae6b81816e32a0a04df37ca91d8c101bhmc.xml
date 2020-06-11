@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+	<!--
+		[y] hybris Platform Copyright (c) 2000-2012 hybris AG All rights reserved. This software is the confidential and proprietary
+		information of hybris ("Confidential Information"). You shall not disclose such Confidential Information and shall use it only
+		in accordance with the terms of the license agreement you entered into with hybris.
+	-->
+<configuration xmlns="hybris.de/schemas/hmc/generic" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="hybris.de/schemas/hmc/generic hmc.xsd">
+
+	<type name="BannerComponent" mode="append" icon="images/multitenant/contentelementbanner.gif">
+		<organizer mode="append">
+			<editor mode="append">
+				<tab name="properties" position="0">
+					<section name="properties" mode="append">
+						<listlayout>
+							<attribute name="headline" />
+							<attribute name="media" />
+							<attribute name="urlLink" />
+							<attribute name="page" />
+							<attribute name="external" />
+							<attribute name="content">
+								<wysiwygeditor />
+							</attribute>
+						</listlayout>
+					</section>
+				</tab>
+				<tab name="administration" mode="append">
+					<section name="section.cms.admin" mode="append">
+						<listlayout>
+							<attribute name="pageLabelOrId" />
+						</listlayout>
+					</section>
+				</tab>
+			</editor>
+		</organizer>
+	</type>
+
+	<type name="FlashComponent" mode="append">
+		<organizer mode="append">
+			<editor mode="append">
+				<tab name="properties" mode="append">
+					<section name="properties" mode="append">
+						<listlayout>
+							<attribute name="media" />
+							<attribute name="urlLink" />
+							<attribute name="external" />
+						</listlayout>
+					</section>				
+					<section name="flash.properties">
+						<listlayout>
+							<attribute name="width" />
+							<attribute name="height" />
+							<attribute name="bgcolor" />
+							<attribute name="scale" />
+							<attribute name="sAlign" />
+							<attribute name="quality" />
+							<attribute name="wmode" />
+							<attribute name="play" />
+							<attribute name="loop" />
+							<attribute name="menu" />
+						</listlayout>
+					</section>
+				</tab>
+			</editor>
+		</organizer>
+	</type>
+	
+	<type name="ProductCarouselComponent" mode="append">
+		<organizer mode="append">
+			<editor mode="append">
+				<tab name="properties" mode="append">
+					<section name="properties" mode="append">
+						<listlayout>
+							<attribute name="scroll" />
+							<attribute name="products" />
+							<attribute name="categories" />
+						</listlayout>
+					</section>
+				</tab>
+			</editor>
+		</organizer>
+	</type>
+	
+	<type name="CartSummaryComponent" mode="append">
+		<organizer mode="append">
+			<editor mode="append">
+				<tab name="properties" position="0">
+					<section name="properties" mode="append">
+						<listlayout>
+							<attribute name="cartTitle" />
+							<attribute name="cartImage" />
+							<attribute name="suplementaryText" />
+						</listlayout>
+					</section>
+				</tab>
+			</editor>
+		</organizer>
+	</type>
+
+	<type name="RotatingImagesComponent" mode="append" icon="images/multitenant/contentelementrotatingimages.gif">
+		<organizer mode="append">
+			<editor mode="append">
+				<tab name="properties" position="0">
+					<section name="properties" mode="append">
+						<listlayout>
+							<attribute name="timeout" />
+							<attribute name="effect" />
+							<attribute name="banners">
+								<referencecollectioneditor resortable="true" remove="true" create="true" add="true" autosave="true">
+									<itemlayout>
+										<attribute name="uid" width="100" />
+										<attribute name="media" width="200" />
+										<attribute name="headline" width="300" />
+										<attribute name="catalogversion" width="300" />
+									</itemlayout>
+								</referencecollectioneditor>
+							</attribute>
+						</listlayout>
+					</section>
+				</tab>
+			</editor>
+		</organizer>
+	</type>
+
+	<type name="CategoryTreeComponent" mode="append" icon="images/multitenant/contentelementcategories.gif">
+		<organizer mode="append">
+			<editor mode="append">
+				<tab name="properties" position="0">
+					<section name="properties" mode="append">
+						<listlayout>
+							<attribute name="useFacets" />
+						</listlayout>
+					</section>
+				</tab>
+			</editor>
+		</organizer>
+	</type>
+
+	<type name="ProductListComponent" mode="append" icon="images/multitenant/contentelementproductlist.gif">
+		<organizer mode="append">
+			<editor mode="append">
+				<tab name="properties" position="0">
+					<section name="properties" mode="append">
+						<listlayout>
+							<attribute name="headline" />
+							<attribute name="productsFromContext" />
+							<attribute name="searchQuery" />
+							<attribute name="pagination" />
+							<attribute name="layout" />
+							<attribute name="category" />
+							<attribute name="products">
+								<referencecollectioneditor create="false" add="true" remove="true" editable="false" resortable="false">
+									<itemeditorlayout>
+										<attribute name="code" width="200" />
+										<attribute name="name" width="200" />
+										<attribute name="catalogversion" width="300" />
+									</itemeditorlayout>
+								</referencecollectioneditor>
+							</attribute>
+							<attribute name="headline" />
+						</listlayout>
+					</section>
+				</tab>
+			</editor>
+		</organizer>
+	</type>
+
+	<type name="CatalogListComponent" mode="append" icon="images/multitenant/contentelementcataloglist.gif">
+		<organizer mode="append">
+			<editor mode="append">
+				<tab name="properties" position="0">
+					<section name="properties" mode="append">
+						<listlayout>
+							<attribute name="useCatalogsOfStore" />
+							<attribute name="catalogs" width="300" />
+						</listlayout>
+					</section>
+				</tab>
+			</editor>
+		</organizer>
+	</type>
+
+	<type name="PromotionComponent" mode="append" icon="images/multitenant/contentelementpromotion.gif">
+		<organizer mode="append">
+			<editor mode="append">
+				<tab name="properties" position="0">
+					<section name="properties" mode="append">
+						<listlayout>
+							<attribute name="promotion" />
+						</listlayout>
+					</section>
+				</tab>
+			</editor>
+		</organizer>
+	</type>
+
+	<type name="ProductDetailComponent" mode="append" icon="images/multitenant/contentelementproductdetail.gif">
+		<organizer mode="append">
+			<editor mode="append">
+				<tab name="properties" position="0">
+					<section name="properties" mode="append">
+						<listlayout>
+							<attribute name="product" />
+						</listlayout>
+					</section>
+				</tab>
+				<tab name="administration" mode="append">
+					<section name="section.cms.admin" mode="append">
+						<listlayout>
+							<attribute name="productCode" />
+						</listlayout>
+					</section>
+				</tab>
+			</editor>
+		</organizer>
+	</type>
+
+	<type name="CartAndWishlistComponent" mode="append" icon="images/multitenant/contentelementcartwishlist.gif">
+		<organizer mode="append">
+			<editor mode="append">
+				<tab name="properties" position="0">
+					<section name="properties" mode="append">
+						<listlayout>
+							<attribute name="mode" />
+						</listlayout>
+					</section>
+				</tab>
+			</editor>
+		</organizer>
+	</type>
+
+	<type name="LinkListComponent" mode="append" icon="images/multitenant/contentelementlinklist.gif">
+		<organizer mode="append">
+			<editor mode="append">
+				<tab name="properties" position="0">
+					<section name="properties" mode="append">
+						<listlayout>
+							<attribute name="columns" />
+							<attribute name="containers" />
+							<attribute name="links" />
+						</listlayout>
+					</section>
+				</tab>
+			</editor>
+		</organizer>
+	</type>
+
+</configuration>

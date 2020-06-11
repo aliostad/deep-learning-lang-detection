@@ -1,0 +1,34 @@
+#nav, #nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#nav a {
+	display: block;
+	width: 10em;
+}
+#nav li {
+	float: center;
+	width: 10em;
+}
+#nav li ul {
+	position: absolute;
+	width: 10em;
+	left: -999em;
+}
+#nav li:hover ul {
+	left: auto;
+}
+#nav li:hover ul, #nav li.sfhover ul {
+	left: auto;
+}
+#nav display {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   14px;
+  line-height: 18px;
+}
+#nav display h1 {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   18px;
+  line-height: 18px;
+}

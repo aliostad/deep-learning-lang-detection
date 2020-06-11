@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans default-autowire="byName" default-lazy-init="true">
+
+	<bean id="resumeService" class="com.job528.profile.service.impl.MyResumeService" />
+
+	<bean id="messageService" class="com.job528.profile.service.impl.MessageService" />
+
+	<bean id="userProfileService" class="com.job528.profile.service.impl.UserProfileServiceImpl" />
+	
+	<bean id="weiboService" class="com.job528.profile.service.impl.WeiboServiceImpl" />
+	
+	<bean id="relationshipService" class="com.job528.profile.service.impl.RelationshipServiceImpl"  >
+		<property name="relationshipDao" ref="relationshipDao"></property>
+	</bean>
+	
+	<bean id="relationGroupService" class="com.job528.profile.service.impl.RelationGroupServiceImpl"/>
+	
+	<bean id="favoriteService" class="com.job528.profile.service.impl.FavoriteServiceImpl"/>
+	
+	<bean id="commentService" class="com.job528.profile.service.impl.CommentServiceImpl"/>
+    
+    <bean id="applyService" class="com.job528.profile.service.impl.ApplyService"></bean>
+    
+    <bean id="friendService" class="com.job528.profile.service.impl.FriendService"></bean>
+    
+     <bean id="positionService" class="com.job528.profile.service.impl.PositionService"></bean>
+     
+    <bean id="searchUserService" class="com.job528.lucene.search.impl.SearchUserService"></bean>
+    
+     <bean id="userService" class="com.job528.profile.service.impl.UserServiceImpl" />
+     	
+     <bean id="weiboTokenService" class="com.job528.profile.service.impl.WeiboTokenServiceImpl" />
+     
+     <bean id="recommendPositionService" class="com.job528.profile.service.impl.RecommendPositionServiceImpl" /> 
+     
+     <bean id="tencentWeiBoService" class="com.job528.profile.service.impl.TencentWeiBoServiceImpl"></bean>
+     
+     <bean id="sessionService" class="com.job528.profile.service.impl.SessionServiceImpl"></bean>
+     
+     <bean id="labelService"  class="com.job528.profile.service.impl.LabelServiceImpl"/>
+
+     <bean id="userAccessHistoryService" class="com.job528.profile.service.impl.UserAccessHistoryServiceImpl"></bean>
+     <bean id="ipAddressService" class="com.job528.profile.service.impl.IpAddressService"></bean>
+
+</beans>

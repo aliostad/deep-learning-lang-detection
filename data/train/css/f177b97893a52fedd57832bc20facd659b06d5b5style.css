@@ -1,0 +1,78 @@
+body,html,div,input
+{
+	padding:		0;
+	margin:			0;
+}
+
+body
+{
+	font-family: 	"Courier New", Courier, monospace;
+}
+
+.api-builder, .messages
+{
+	padding: 		2%;
+}
+
+.api-builder div, select
+{
+	display:inline;
+	color:#A5A5A5;
+	padding:0 !important;
+	margin:0;
+}
+
+select
+{
+	outline:none;
+	border:none;
+	font-family: 	"Courier New", Courier, monospace;
+	color:			#A5A5A5;
+	font-size:		1.1em;
+	padding:0;
+	margin:0;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.rootUrl
+{
+	margin-left: -12px !important;
+}
+
+
+.api-builder input[type="text"]
+{
+	outline:none;
+	border:none;
+	font-family: 	"Courier New", Courier, monospace;
+	color:			#9463BF;
+	font-size:		1.2em;
+	padding:0;
+	margin:0;
+}
+
+.api-builder input[type="button"]
+{
+	outline:		none;
+	border:			none;
+	font-family: 	"Courier New", Courier, monospace;
+	background:		#EFEFEF;
+	font-size:		1.2em;
+	padding:		1%;
+	border-radius: 	7px;
+	transition:		1s all;
+}
+
+.api-builder input[type="button"]:hover
+{
+	background:		#FFFFFF;
+	cursor: 		pointer;
+}
+
+.output-content
+{
+	background:		#E9E9E9;
+	padding:		2%;
+}

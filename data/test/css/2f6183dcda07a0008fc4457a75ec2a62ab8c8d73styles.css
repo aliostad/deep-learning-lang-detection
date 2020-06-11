@@ -1,0 +1,99 @@
+﻿body {
+    color: #666;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #000;
+}
+
+.top5 {
+    margin-top: 5px;
+}
+
+.top10 {
+    margin-top: 10px;
+}
+
+.top15 {
+    margin-top: 15px;
+}
+
+.top20 {
+    margin-top: 20px;
+}
+
+.top25 {
+    margin-top: 25px;
+}
+
+.top30 {
+    margin-top: 30px;
+}
+
+.scroll-up-arrow {
+    font-size: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.model-list {
+    font-size: 12px;
+}
+    .model-list .row-item{
+        line-height: 30px;
+    }
+    .model-list .row-item:nth-child(2n+1) {
+        background-color: #f5f5f5;
+    }
+
+    .model-list .row-item.has-changes {
+        background-color: #B5F3B5;
+    }
+    .model-list .row-item.has-error {
+        background-color: #F9C3C8;
+    }
+
+        .model-list .title {
+            margin-top: 10px;
+            padding: 5px 0;
+            border-bottom: 1px solid #ddd;
+            background-color: transparent !important;
+        }
+
+            .model-list .title .first-col {
+                width: 100%;
+            }
+
+            .model-list .sub-title .first-col {
+                margin: 10px 0;
+            }
+                .model-list .title .first-col span {
+                    color: #000;
+                    font-size: 22px;
+                }
+
+                .model-list .sub-title .first-col span {
+                    color: #000;
+                    font-size: 16px;
+                }
+
+        .model-list .form-group {
+            margin: 3px 0;
+        }
+
+            .model-list .form-control {
+                height: 26px;
+                padding: 2px 12px;
+            }
+
+                .model-list .form-control.count {
+                    width: 80px;
+                    display: inline-block;
+                }
+
+                .model-list .has-count {
+                    margin-left: 10px;
+                }

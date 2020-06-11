@@ -1,0 +1,314 @@
+﻿@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0 auto;
+	padding:0;
+}
+img{
+	border:none;
+}
+body{
+	background-color:#dedede;
+	font:12px/1.5 宋体,tahoma,arial,'Hiragino Sans GB',宋体,sans-serif;
+}
+em{
+	font-style:normal;
+}
+a{
+    text-decoration: none;
+	color:#6B6B6B;
+}
+a:hover {
+    text-decoration: underline;
+}
+li{
+	list-style:none;
+	float:left;
+}
+
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+
+.clear{clear:both;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block;}
+.clearfix {display:block;}
+.yahei{
+	font-family:"Microsoft Yahei","微软雅黑",Tahoma,Arial,Helvetica,STHeiti;
+}
+.nav{
+	background:url(banner_bg_line.png) repeat-x;
+	height:51px;
+}
+
+.huanxian{ border-top:1px solid #ececec;}
+
+.wapper{
+	width:1010px;
+}
+.nav .logo{
+	float:left;
+}
+.nav .nav_but{
+	width:580px;
+	float:left;
+	margin-left:25px;
+}
+.nav .nav_but ul li{
+	height:49px;
+	background:url(banner_line.jpg) right top no-repeat;
+}
+.nav .nav_but a{
+	float:left;
+}
+
+/*学生的导航栏*/
+.nav .nav_but span{
+	float:left;
+	color:#ffffff;
+	background:url(nav_text.png) no-repeat;
+	height:49px;
+	text-indent:-999em;
+}
+.nav .nav_but .sy a:hover,.nav .nav_but .xc a:hover,.nav .nav_but .sl a:hover{
+	background:url(nav_on.png);
+	width:88px;
+	float:left;
+}
+.nav .nav_but .sy a.current,.nav .nav_but .xc a.current,.nav .nav_but .sl a.current{
+	background:url(nav_on.png);
+	width:88px;
+	float:left;
+}
+.nav .nav_but .lx a:hover,.nav .nav_but .jc a:hover, .nav .nav_but .ggjc a:hover{
+	background:url(nav_on.png) 0 -49px;
+	width:104px;
+	float:left;
+}
+.nav .nav_but .lx a.current,.nav .nav_but .jc a.current, .nav .nav_but .ggjc a.current{
+	background:url(nav_on.png) 0 -49px;
+	width:104px;
+	float:left;
+}
+.nav .nav_but .sy span{
+	width:88px;
+	background-position:-9px -12px;
+}
+.nav .nav_but .xc span{
+	width:88px;
+	background-position:-9px -78px;
+}
+.nav .nav_but .sl span{
+	width:88px;
+	background-position:-9px -144px;
+}
+.nav .nav_but .ggjc span{
+	width:104px;
+	background-position:-7px -251px;
+}
+.nav .nav_but .lx span{
+	width:104px;
+	background-position:-2px -210px;
+}
+.nav .nav_but .jc span{
+	width:104px;
+	background-position:22px -305px;
+}
+
+/*老师的导航栏*/
+
+.nav .nav_but_ls span{
+	float:left;
+	color:#ffffff;
+	background:url(nav_text_laoshi01.png) no-repeat;
+	height:49px;
+	text-indent:-999em;
+}
+
+.nav .nav_but_ls .sy a:hover,.nav .nav_but_ls .xc a:hover,.nav .nav_but_ls .sl a:hover,.nav .nav_but_ls .lx a:hover,.nav .nav_but_ls .jc a:hover{
+	background:url(nav_on.png) 0 -49px;
+	width:104px;
+	float:left;
+}
+.nav .nav_but_ls .sy a.current,.nav .nav_but_ls .xc a.current,.nav .nav_but_ls .sl a.current,.nav .nav_but_ls .lx a.current,.nav .nav_but_ls .jc a.current{
+	background:url(nav_on.png) 0 -49px;
+	width:104px;
+	float:left;
+}
+/*"首页导航"*/
+.nav .nav_but_ls .sy a:hover{
+	background:url(nav_on.png);
+	width:80px;
+	float:left;
+}
+.nav .nav_but_ls .sy a.current{
+	background:url(nav_on.png);
+	width:80px;
+	float:left;
+}
+.nav .nav_but_ls .sy span{
+	width:80px;
+	background-position:-10px -13px;
+}
+
+.nav .nav_but_ls .xc span{
+	width:104px;
+	background-position:0px -78px;
+}
+.nav .nav_but_ls .sl span{
+	width:104px;
+	background-position:0px -144px;
+}
+.nav .nav_but_ls .ls span{
+	width:104px;
+	background-position:0px -210px;
+}
+.nav .nav_but_ls .lx span{
+	width:104px;
+	background-position:0px -210px;
+}
+.nav .nav_but_ls .jc span{
+	width:100px;
+	background-position:0px -273px;
+}
+
+/*管理员的导航栏*/
+
+.nav .nav_but_admin span{
+	float:left;
+	color:#ffffff;
+	background:url(nav_text_admin01.png) no-repeat;
+	height:49px;
+	text-indent:-999em;
+}
+
+.nav .nav_but_admin .sy a:hover,.nav .nav_but_admin .xc a:hover,.nav .nav_but_admin .sl a:hover,.nav .nav_but_admin .lx a:hover,.nav .nav_but_admin .jc a:hover{
+	background:url(nav_on.png) 0 -49px;
+	width:104px;
+	float:left;
+}
+.nav .nav_but_admin .sy a.current,.nav .nav_but_admin .xc a.current,.nav .nav_but_admin .sl a.current,.nav .nav_but_admin .lx a.current,.nav .nav_but_admin .jc a.current{
+	background:url(nav_on.png) 0 -49px;
+	width:104px;
+	float:left;
+}
+/*"首页导航"*/
+.nav .nav_but_admin .sy a:hover{
+	background:url(nav_on.png);
+	width:80px;
+	float:left;
+}
+.nav .nav_but_admin .sy a.current{
+	background:url(nav_on.png);
+	width:80px;
+	float:left;
+}
+.nav .nav_but_admin .sy span{
+	width:80px;
+	background-position:-10px -13px;
+}
+
+.nav .nav_but_admin .xc span{
+	width:104px;
+	background-position:0px -78px;
+}
+.nav .nav_but_admin .sl span{
+	width:104px;
+	background-position:0px -144px;
+}
+.nav .nav_but_admin .ls span{
+	width:104px;
+	background-position:0px -210px;
+}
+.nav .nav_but_admin .lx span{
+	width:104px;
+	background-position:0px -210px;
+}
+.nav .nav_but_admin .jc span{
+	width:100px;
+	background-position:0px -273px;
+}
+
+/*导航栏结束*/
+
+.main{
+	width:1010px;
+	margin-top:20px;
+}
+.page_content{
+	background:url(page_box_top.jpg) no-repeat top;
+	padding:5px;
+}
+.box{
+	width:1010px;
+	float:left;
+	background:url(box_line_bg.jpg) repeat-y;
+	margin-bottom:20px;
+}
+.toolbar{
+	width:261px;
+	float:left;
+	padding-top:18px;
+}
+.toolbar a{
+	color:#CCC;
+	margin-left:10px;
+	padding-left:10px;
+}
+.toolbar p{
+	color:#CCC;
+	margin-left:10px;
+	padding-left:10px;
+}
+.toolbar .point{
+	background:url(point.png) no-repeat left;
+}
+.footer{
+	width:1010px;
+	font-size:13px;
+	color:#6B6B6B;
+}
+.footer span{
+	width:1010px;
+	float:left;
+	text-align:right;
+	padding-bottom:15px;
+}
+.footer a{
+	margin:0 5px;
+}
+
+/*new*/
+.hide{display:none;}
+.tips_icon,
+.tips_icon_error,
+.tips_icon_success
+{
+	background:url(tips/small.png) 0 -60px no-repeat;
+	padding:0 10px 0 20px;
+	display:inline-block;
+	vertical-align:middle;
+	line-height:18px;
+	min-height:18px;
+	_height:18px;
+	font-size:12px;
+}
+.tips_icon_error{
+	background-position:-20px -40px;
+	color:#B52828;
+}
+.tips_icon_success{
+	background-position:-40px -20px;
+	color:#008800;
+}
+
+.min-inner{width:790px;}
+.session-edge {font-size: 14px;margin-bottom: 100px;margin-top: 80px;}
+.big-title {font-size: 36px;margin: 0 0 20px;}
+.medium-title {font-size: 24px;margin: 0 0 20px;}
+.slug {color: #666666;font-size: 18px;font-weight: normal;margin: 15px 0;}
+.sfid-login,.sfid-register {color: #999999;margin-top: 40px;}
+.title-description {
+    color: #999999;
+    margin: -10px 0 24px;
+}

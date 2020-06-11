@@ -1,0 +1,22 @@
+/*Предпросмотр витрин*/
+#show-variants { margin: 0 0 20px; font-family: arial !important; }
+#show-variants ul { margin: 0; padding: 0 0 0 20px; list-style: none; height: 35px; border-bottom: 1px solid #ccc; }
+#show-variants li { display: inline-block; }
+#show-variants li a { font-size: 13px; margin: 0 0 -1px 5px; border: 1px #ccc solid; border-bottom: 1px #ccc solid; display: block; height: 25px; padding: 0 10px; padding-top: 9px; text-align: center; background: #eee; text-decoration: none; }
+#show-variants li.selected a { background: none; border-bottom: 1px #fff solid; }
+#show-variants-block { padding: 20px 0 0; }
+#show-variants .scc-i { background: none; width: auto; height: auto; position: relative; }
+#show-variants .first-block { clear: left; padding: 10px 0 0; }
+#show-variants .first-block .hor { width: 231px; margin: 0 0 20px; }
+#show-variants .first-block .ver{ width: 218px; }
+#show-variants h3 { margin: 0; background: #e4e4e4 !important; min-height: 32px; padding: 0; font: bold 14px/16px arial; color: #666; }
+#show-variants .top { height: 162px; padding: 11px 0; }
+#show-variants .bottom { height: 152px; padding: 16px 0; }
+#show-variants .sc h3 span { display: table-cell; padding: 4px 6px; vertical-align: middle; }
+#show-variants .sc h3 b { display: table; font-weight: bold !important; height: 40px; }
+#show-variants .sc h3 a:link { color: #1a59c1 !important; }
+#show-variants .sc h3 a:hover,
+#show-variants .sc h3 a:active { color: #900 !important; }
+#show-variants h3.head { font-size: 15px; font-weight: bold; color: #666; background: none !important; min-height: 0; margin: 10px 0 5px; }
+#show-variants .preview { color: #1a59c1; font-size: 15px; }
+#show-variants .scc-i span { position: absolute; left: 22px; top: 31px; text-align: center; color: #999; }

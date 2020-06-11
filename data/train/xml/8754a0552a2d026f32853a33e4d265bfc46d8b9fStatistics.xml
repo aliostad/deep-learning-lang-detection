@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Module>
+  <ModulePrefs title="__msg_title__" />
+  <Content type="html">
+    <![CDATA[ 
+      <table class="list">
+        <colgroup>
+          <col width="*" />
+          <col width="95" />
+        </colgroup>       
+        <tbody />        
+      </table>  
+      <script type="text/javascript">
+        var stat__MODULE_ID__ = {
+
+          render: function() {
+              var widget = new LemoonWidget.init(__MODULE_ID__);
+              widget.startLoading($(".list", widget.handle));
+              
+              $.ajax({
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                url: Lemoon.RootUrl() + "admin/api/content/GetStatistics/",
+                dataType: "json",
+                cache: false,
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                  widget.endLoading($(".list", widget.handle));
+                  if (XMLHttpRequest.statusText.length > 0) {
+                    alert("Statistics widget failed to load: " + XMLHttpRequest.statusText);
+                  }
+                },
+                success: function(data, textStatus) {                  
+                  if (data != null) {                  
+                    var container = $(".list tbody", widget.handle);
+
+                    var row = $("<tr />");
+                    row.append($("<td />").append($("<span />").addClass("icon-12 site")).append("__msg_sites__"));
+                    row.append($("<td />").addClass("right").text(data.Sites));
+                    container.append(row);
+
+                    row = $("<tr />").addClass("alt");
+                    row.append($("<td />").append($("<span />").addClass("icon-12 content")).append("__msg_pages__"));
+                    row.append($("<td />").addClass("right").text(data.Pages));
+                    container.append(row);
+                    
+                    row = $("<tr />");
+                    row.append($("<td />").append($("<span />").addClass("icon-12 file")).append("__msg_files__"));
+                    row.append($("<td />").addClass("right").text(data.Files));
+                    container.append(row);
+                    
+                    row = $("<tr />").addClass("alt");
+                    row.append($("<td />").append($("<span />").addClass("icon-12 comment")).append("__msg_comments__"));
+                    row.append($("<td />").addClass("right").text(data.Comments));
+                    container.append(row);                    
+                    
+                    row = $("<tr />");
+                    row.append($("<td />").append($("<span />").addClass("icon-12 user")).append("__msg_users__"));
+                    row.append($("<td />").addClass("right").text(data.Users));
+                    container.append(row);                   
+
+                    row = $("<tr />").addClass("alt");
+                    row.append($("<td />").append($("<span />").addClass("icon-12 role")).append("__msg_roles__"));
+                    row.append($("<td />").addClass("right").text(data.Roles));
+                    container.append(row);                
+                  }
+                  widget.endLoading($(".list", widget.handle));
+                }
+              });
+            }
+          };  
+          stat__MODULE_ID__.render();
+       </script>
+     ]]>
+  </Content>
+</Module>

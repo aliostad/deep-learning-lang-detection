@@ -1,0 +1,129 @@
+﻿@using Global.Instrument.Models;
+@using GRGTCommonUtils;
+@{
+    ViewBag.Title = "ServiceOwnInstrumentManage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string serviceId = ViewBag.ServiceId;
+    IList<InstrumentModel> instrumentList = ViewBag.InstrumentList as IList<InstrumentModel>;
+    
+}
+<script type="text/javascript">
+    $(function () {
+        WrapTables4Dom("serviceOwnInstrumentList");
+        
+        $("#InstrumentName").autocomplete({
+            minLength: 1,
+            source: "/Instrument/QuickSearchByKeyWord",
+            select: function (event, ui) {
+                $("#InstrumentId").val(ui.item.value);
+                var arr = ui.item.label.split(",");
+                $("#InstrumentName").val(arr[0]);
+                return false;
+            }
+        });
+
+        //关联器具
+        $("#btnAddInstrument").click(function () {
+            var InstrumentId = $("#InstrumentId").val();
+            if (InstrumentId == 0) {
+                alert("未选择器具");
+                return false;
+            }
+            $.post("/Project/AddServiceOwnInstrument", $("#form3").serialize(), function (data) {
+                if (data == "OK") {
+                    $("#tabs").tabs({ actived: 2 });
+                }
+                else alert(data);
+            });
+        });
+
+    });
+    
+    //删除
+    function fnDeleteInstrument(obj) {
+        var instrumentId = $(obj).parent().attr("instrumentId");
+        var instrumentName = $(obj).parent().attr("instrumentName");
+        var serviceId = $("#ServiceId").val();
+        var url = "/Project/DeleteServiceOwnInstrument?serviceId=" + serviceId + "&instrumentId=" + instrumentId;
+        ymPrompt.confirmInfo({ message: "是否删除关联器具'" + instrumentName + "'", title: '确认对话框', handler: function (tp) {
+            if (tp == 'ok') {
+                $.get(url, function (data) {
+                    if ("OK" == data) {
+                        $("#tabs").tabs({ actived: 2 });
+                    }
+                });
+            }
+        }
+        });
+        return false;
+    }
+
+</script>
+<form id="form3" action="/">
+<input type="hidden" id="InstrumentId" name="InstrumentId" value="0" />
+<input type="hidden" id="ServiceId" name="ServiceId" value="@serviceId" />
+<div style="text-align: right; margin: 4px 0px;">
+    <input type="text" id="InstrumentName" class="long_width" />
+    <input type="button" id="btnAddInstrument" class="submit_btn" value="关联器具" />
+</div>
+</form>
+<table id="serviceOwnInstrumentList" cellpadding="0" cellspacing="0" border="0" class="list_table">
+    <thead>
+        <tr class="tbl_tr">
+            <th width="90px">
+                操作
+            </th>
+            <th>
+                名称
+            </th>
+            <th>
+                型号
+            </th>
+            <th>
+                编号
+            </th>
+            <th width="90px">
+                证书编号
+            </th>
+            <th width="180px">
+                有效期
+            </th>
+            <th>
+                科室
+            </th>
+            <th>
+                状态
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in instrumentList)
+        {
+            string belongDepart = !string.IsNullOrWhiteSpace(item.BelongDepart) ? ((Measure.LabCommon.Constants.LabType)int.Parse(item.BelongDepart)).ToString() : "";
+            <tr>
+                <td>
+                    <div instrumentId="@item.InstrumentId" instrumentName="@item.InstrumentName">                       
+                        @if (item.RecordState == (int)UtilConstants.InstrumentState.正常)
+                        {
+                            <a href="#" onclick="fnDeleteInstrument(this);return false;">删除</a>
+                        }
+                    </div>
+                </td>
+                <td>@item.InstrumentName
+                </td>
+                <td>@item.Specification
+                </td>
+                <td>@item.SerialNo
+                </td>
+                <td>@item.CertificateNo
+                </td>
+                <td>@(item.DueStartDate==null ? "": item.DueStartDate.Value.ToString("yyyy-MM-dd") +" 至 "+ (item.DueEndDate == null ? "" : item.DueEndDate.Value.ToString("yyyy-MM-dd")) )
+                </td>
+                <td>@belongDepart
+                </td>
+                <td>@((UtilConstants.InstrumentState)item.RecordState)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

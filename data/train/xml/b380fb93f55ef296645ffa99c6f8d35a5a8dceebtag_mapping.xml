@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbook>
+	<worksheet name="Sheet1">
+		<section startRow="0" endRow="0" />
+		<loop startRow="1" endRow="1" items="tagList" var="tag"
+			varType="com.isoftstone.tyw.entity.info.Tag">
+			<section startRow="1" endRow="1">
+				<mapping row="1" col="0">tag.id</mapping>
+				<mapping row="1" col="1">tag.parentId</mapping>
+				<mapping row="1" col="2">tag.code</mapping>
+				<mapping row="1" col="3">tag.parentCode</mapping>
+				<mapping row="1" col="4">tag.level</mapping>
+				<mapping row="1" col="5">tag.name</mapping>
+				<mapping row="1" col="6">tag.tagNo</mapping>
+				<mapping row="1" col="7">tag.dataDate</mapping>
+				<mapping row="1" col="8">tag.status</mapping>
+				<mapping row="1" col="9">tag.summary</mapping>
+			</section>
+			<loopbreakcondition>
+				<rowcheck offset="0">
+					<cellcheck offset="0"></cellcheck>
+				</rowcheck>
+			</loopbreakcondition>
+		</loop>
+	</worksheet>
+</workbook> 

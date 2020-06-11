@@ -1,0 +1,27 @@
+#!/usr/bin/env python
+import os
+import sys
+import argparse
+
+if 'brainer' not in sys.path:
+    sys.path.append(os.path.join(
+        os.path.dirname(os.path.realpath(__file__)), '..'))
+
+from brainer.node import run_node
+
+parser = argparse.ArgumentParser(description="Launch a Brainer Node.")
+
+parser.add_argument("--broker", dest="broker",
+                    help="Broker Endpoint", default="ipc:///tmp/broker.sock")
+parser.add_argument("--node-endpoint", dest="endpoint",
+                    help="Node Endpoint", required=True)
+parser.add_argument("--debug", dest="debug", action='store_true',
+                    help="Enables debug mode", default=False)
+
+
+args = parser.parse_args()
+
+run_node(
+    host=args.endpoint,
+    broker=args.broker,
+    debug=args.debug)

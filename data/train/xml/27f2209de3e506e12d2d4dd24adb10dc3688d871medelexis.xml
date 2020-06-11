@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service:service category="feature" id="ch.elexis.omnivore" name="Omnivore" provider="weirich@elexis.ch" type="Dokumentenverwaltung" version="2.0.0" xmlns:service="http://www.medelexis.ch/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.medelexis.ch/services ../medelexis-commons/rsc/service.xsd ">
+  <service:conditions>
+  	<service:roles>
+  		<service:role priceClass="fixed-basic">
+  			<service:pricePerMandator amount="5.00" />
+  		</service:role>
+  	</service:roles>
+  </service:conditions>
+  <service:docURL>http://www.medelexis.ch/unsere-produkte/elexis-plugins/plugins-dokumente/omnivore.html</service:docURL>
+  <service:description>Einfaches Dokumentenmanagementsystem zum filesystemzentrierten Import und flacher Speicherung</service:description>
+  <service:depends>ch.medelexis.nucleus</service:depends>
+</service:service>

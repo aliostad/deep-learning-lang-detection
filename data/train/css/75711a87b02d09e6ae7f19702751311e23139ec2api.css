@@ -1,0 +1,52 @@
+﻿.api{
+    margin: auto;
+    line-height: 20px;
+    font-size: 14px;
+}
+.api h3{
+    text-indent: 1em;
+    background-color: #fd7e18;
+    color: #fff;
+    font:bold 16px/40px "Microsofe yahei"
+}
+.api .code{
+    background-color: #f6fed7;
+    text-indent: 1em;
+    border: 1px dashed #8a8a8a;
+    border-top: 0
+}
+.api pre{
+    font-family: Consolas,Monaco,monospace
+}
+.api pre:hover{
+    background-color: #beeaff
+}
+.api .code em{
+    color: #999
+}
+.api .demo{
+    background-color: #bde5fa;
+    text-indent: 0;
+    padding: 20px;
+    *zoom: 1;
+}
+.api .demo:after{
+    display: block;
+    content: "";
+    line-height:0;
+    clear: both;
+}
+.api .butt{
+    display: inline-block;
+    background-color: #e6fb70;
+    color: #999;
+    padding: 0 20px;
+    border: none;
+    line-height: 27px;
+    height: 27px;
+    box-shadow:1px 1px 0 rgba(0,0,0,.4);
+}
+.api .butt:active{
+    margin: 1px 0 0 1px;
+    box-shadow: none
+};

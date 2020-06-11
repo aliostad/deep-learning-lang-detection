@@ -1,0 +1,81 @@
+#service dl b {
+	background-image: url(../Images/20130330A_1.png);
+	background-repeat: no-repeat;
+}
+#service {
+	/*width: 1210px;*/
+	overflow: hidden;
+	text-align: left;
+	padding: 10px 120px;
+	margin-bottom: 20px;
+	background: #FFF;
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #F1F1F1;
+}
+#service dl {
+	float: left;
+	width: 196px;
+}
+#service dt {
+	position: relative;
+	padding: 6px 0 6px 44px;
+	font: 14px "microsoft yahei";
+	zoom: 1;
+}
+#service dd {
+	min-height: 120px;
+	padding-left: 24px;
+	margin-left: 20px;
+	line-height: 20px;
+	color: #333333;
+}
+#service dt b {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 40px;
+	height: 40px;
+}
+#service dl.fore1 b {
+	background-position: 0 -55px;
+}
+#service dl.fore2 b {
+	background-position: -50px -55px;
+}
+#service dl.fore3 b {
+	background-position: 0 -102px;
+}
+#service dl.fore4 b {
+	background-position: -50px -102px;
+}
+#service dl.fore5 b {
+	background-position: 0 -149px;
+}
+#service dl.fore5 {
+	width: 160px;
+}
+#service .fr {
+	display: none;
+}
+.root61 #service dl {
+	width: 252px;
+}
+.root61 #service dl.fore5 {
+	width: 160px;
+}
+#footer {
+	padding-bottom: 30px;
+	text-align: center;
+}
+#footer .links a,#footer .links span {
+	margin: 0 10px;
+}
+#footer .links span a {
+	margin: 0;
+}
+#footer .copyright {
+	margin: 10px 0;
+}
+#footer .authentication a {
+	margin: 0 5px;
+}

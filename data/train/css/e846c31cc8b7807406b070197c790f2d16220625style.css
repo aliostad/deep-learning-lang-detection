@@ -1,0 +1,53 @@
+th.main-window {
+    padding: 15px;
+}
+
+.configure-model {
+    width: 300px;
+}
+
+.configure-model-header input {
+    float: right;
+}
+
+.configure-model-header div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.variable-input {
+    margin-top: 20px;
+}
+
+div.variable-input {
+    border: 1px solid;
+    padding: 8px 3px 8px 8px;
+}
+
+.variable-input div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#numVariablesInput {
+    text-align: right;
+}
+
+.numInput {
+    width: 25px;
+}
+
+.header {
+    padding-bottom: 20px;
+}
+
+.buttons {
+    padding-bottom: 10px;
+}
+
+.chart {
+    clear: left;
+    height: 100%;
+    width: 600px;
+    padding: 30px;
+}

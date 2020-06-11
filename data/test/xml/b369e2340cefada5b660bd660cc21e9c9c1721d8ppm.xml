@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="ppm">
+
+    <dropEmptyFields>true</dropEmptyFields>
+
+    <copy fromField="name" toField="ppmname" dropAfterCopy="false" />
+    <copy fromField="ra" toField="radeg" dropAfterCopy="true" />
+    <copy fromField="dec" toField="decdeg" dropAfterCopy="true" />
+    <copy fromField="ra_prop" toField="rapm" dropAfterCopy="true" />
+    <copy fromField="dec_prop" toField="decpm" dropAfterCopy="true" />
+    <copy fromField="hd" toField="hdname" dropAfterCopy="true" />
+    <copy fromField="cpd" toField="cpdname" dropAfterCopy="true" />
+    <copy fromField="sao" toField="saoname" dropAfterCopy="true" />
+    <copy fromField="dm_number" toField="dmname" dropAfterCopy="true" />
+
+    <exclusions>
+        <exclude pattern="^(.+)_err"/>
+        <exclude pattern="^(.+)_cat"/>
+        <exclude pattern="^ep[a,d]"/>
+        <exclude name="spect_type" />
+        <exclude name="notes" />
+        <exclude name="n_pub" />
+    </exclusions>
+
+    <prefix field="hdname" text="HD " />
+    <prefix field="saoname" text="SAO " />
+    <prefix field="cpdname" text="CPD " />
+</catalog>

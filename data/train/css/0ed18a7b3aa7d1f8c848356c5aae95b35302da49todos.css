@@ -1,0 +1,35 @@
+#todo-list tr.editing-name .view-name .edit {
+	display: block;
+	margin: 0;
+}
+
+#todo-list tr.editing-name .view-name .view {
+	display: none;
+}
+
+#todo-list tr.editing-range .view-range .edit {
+	display: block;
+	margin: 0;
+}
+
+#todo-list tr.editing-range .view-range .view {
+	display: none;
+}
+
+#todo-list tr.editing-meaning .view-meaning .edit {
+	display: block;
+	margin: 0;
+}
+
+#todo-list tr.editing-meaning .view-meaning .view {
+	display: none;
+}
+
+
+#todo-list tr .view label {
+	word-break: break-word;
+}
+
+#todo-list tr .edit {
+	display: none;
+}

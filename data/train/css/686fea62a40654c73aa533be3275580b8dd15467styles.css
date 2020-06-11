@@ -1,0 +1,49 @@
+
+#wrapper{
+  margin: 100px;
+  text-align: center;
+  line-height: 50px;
+}
+
+
+/* Loader CSS start here */
+
+@-webkit-keyframes loadAnnim {
+  from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}
+}
+
+@-ms-keyframes loadAnnim {
+  from {-ms-transform: rotate(0deg);}
+  to {-ms-transform: rotate(360deg);}
+}
+
+@keyframes loadAnnim {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+.loader {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+
+    background-image: url("../img/loader.svg");
+
+    -webkit-animation: loadAnnim 1s steps(12) infinite;
+        -ms-animation: loadAnnim 1s steps(12) infinite;
+            animation: loadAnnim 1s steps(12) infinite;
+}
+
+
+/* Adjust the size of the loader */
+
+.loader-16 {
+    width: 16px;
+    height: 16px;
+}
+
+.loader-25 {
+    width: 25px;
+    height: 25px;
+}

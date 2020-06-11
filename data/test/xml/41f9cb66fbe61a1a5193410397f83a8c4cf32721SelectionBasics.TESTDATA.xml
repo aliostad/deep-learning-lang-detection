@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<marionette_info>
+  <expected_messages>
+    <message type="starts_with">x = 1 </message>
+    <message type="starts_with">x = 2 </message>
+    <message type="starts_with">x = 3 </message>
+    <message type="starts_with">x = 4 </message>
+    <message type="starts_with">x = 5 </message>
+    <message type="starts_with">x = 1 </message>
+    <message type="starts_with">x = 2 </message>
+    <message type="starts_with">x = 3 </message>
+    <message type="starts_with">x = 4 </message>
+    <message type="starts_with">x = 5 </message>
+    <message type="starts_with">x = 5 </message>
+    <message type="starts_with">x = 4 </message>
+    <message type="starts_with">x = 3 </message>
+    <message type="starts_with">x = 0 </message>
+    <message type="starts_with">x = 0 </message>
+  </expected_messages>
+</marionette_info>

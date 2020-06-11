@@ -1,0 +1,161 @@
+/* COMMON */
+.boardList-wrapper,
+.boardDetail-wrapper,
+.boardWrite-wrapper,
+.boardUpdate-wrapper {
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 30px;
+	padding: 0px 20px 20px 20px;
+	border-radius: 10px;
+}
+.boardDetail-wrapper h3, .boardList-wrapper h3, .boardWrite-wrapper h3,
+	.boardUpdate-wrapper h3, .quill-wrapper h3 {
+	font-family: 'LotteMartHappy';
+	color: #50597b;
+}
+.boardDetail-btns, .boardWrite-btns, .boardUpdate-btns {
+	float: right;
+	margin-bottom: 10px;
+}
+
+.boardDetail-table tbody tr th, .boardWrite-table tbody tr th,
+	.boardUpdate-table tbody tr th {
+	background: #50597b;
+	color: white;
+	text-align: center;
+	border-bottom: 1px solid #BDBDBD;
+	border-top: 1px solid #BDBDBD;
+}
+
+.boardWrite-table tbody tr td textarea, .boardWrite-table tbody tr td input,
+	.boardUpdate-table tbody tr td textarea, .boardUpdate-table tbody tr td input
+	{
+	width: 95%;
+	height: 95%;
+	outline: none;
+	border: none;
+	resize: none;
+}
+
+.boardDetail-table tbody tr, .boardWrite-table tbody tr, .boardUpdate-table tbody tr,
+.boardList-table tbody tr {
+	text-align: center;
+	height: 30px;
+	border-bottom: 1px solid #DBDBDB;
+	background: white;
+	}
+	
+.boardDetail-table, .boardWrite-table, .boardUpdate-table {
+	border-top: 1px solid #BDBDBD;
+	width: 100%;
+	border-bottom: 1px solid #BDBDBD;
+}
+
+/* BOARD-DETAIL */
+.boardDetail-wrapper {
+	 padding: 25px 50px 30px 50px;
+}
+.boardDetail-table {
+	border: 1px solid #bdbdbd;
+}
+.boardDetail-table tbody tr:nth-child(4) {
+	text-align: left;
+	vertical-align: top;
+	line-height: 50px;
+}
+.boardDetail-table tbody tr:nth-child(4) td {
+	padding-left: 15px;
+}
+#write {
+	float: right;
+}
+.common_reply {
+	width: 100%;
+}
+.fb_iframe_widget {
+  min-width: 49% !important;
+  width: 49% !important;
+  float: left;
+}
+.social_reply {
+	width: 49%;
+	float: right;
+}
+#reply_tr {
+	border: 1px solid #bdbdbd;
+}
+.common-reply-div {
+	padding: 10px; border-bottom: 1px solid #bdbdbd;
+}
+.common-reply-imgdiv {
+	font-weight: bold; padding: 5px;
+}
+.common-reply-img {
+	 border-radius: 50%;
+}
+.common-reply-date {
+	padding: 5px; font-size: 12px; font-weight: normal; float: right;
+}
+.common-reply-cont {
+	padding: 0 10px 0 10px;
+}
+#fileDiv {
+	border-bottom: 1px solid #BDBDBD;
+	margin: 10px;
+}
+#fileDiv span {
+	font-family: 'LotteMartHappy';
+}
+#fileDiv p input {
+	display: inline;
+}
+
+/* BOARD-LIST */
+.boardList-table {
+	width: 100%;
+	border-top: 1px solid #BDBDBD;
+	border: 1px solid #bdbdbd;
+}
+.boardList-table thead tr th, .boardList-table tbody tr td {
+	text-align: center;
+	height: 35px;
+	border-bottom: 1px solid #DBDBDB;
+}
+.boardList-table thead tr {
+	height: 50px;
+	background: #50597b;
+	color: white;
+	font-size: 15px;
+}
+.boardList-table thead tr th {
+	border-bottom: 1px solid #BDBDBD;
+}
+.boardList-table tbody tr:HOVER {
+	background: #E7E7E7;
+	transition: all 100ms ease-in-out 0s;
+}
+.boardList-table tbody tr td a {
+	text-decoration: none;
+	color: black;
+}
+.boardList-table tbody tr td a:HOVER {
+	transition: all 100ms ease-in-out 0s;
+	color: #ff415c;
+}
+.boardList-btns {
+	margin-bottom: 10px;
+}
+.boardList-h3 {
+	display: inline;
+}
+
+.boardList-pagination {
+	width: 100%; text-align: center;
+}
+
+/* BOARD-WRITE */
+.boardWrite-btns {
+	margin: 10px 0 10px 0;
+}

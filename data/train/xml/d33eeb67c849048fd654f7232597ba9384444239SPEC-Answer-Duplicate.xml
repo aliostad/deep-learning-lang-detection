@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Answer Duplicate" tests="5" time="0.019331" failures="0" errors="0" skipped="0">
+  <testcase name="Answer Duplicate should be case insensitive" time="0.003954">
+  </testcase>
+  <testcase name="Answer Duplicate should not have any leading whitespace" time="0.004">
+  </testcase>
+  <testcase name="Answer Duplicate makes a new answer" time="0.003264">
+  </testcase>
+  <testcase name="Answer Duplicate should not have any trailing whitespace" time="0.003891">
+  </testcase>
+  <testcase name="Answer Duplicate should fail duplicate Answer creation" time="0.003712">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>

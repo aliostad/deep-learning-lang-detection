@@ -1,0 +1,212 @@
+/*----- Tabs -----*/
+.alert-tabs {
+    width:100%;
+    display:inline-block;
+}
+
+/*----- Tab Links -----*/
+/* Clearfix */
+.tab-links:after {
+    display:block;
+    clear:both;
+    content:'';
+}
+
+.tab-links li {
+    margin:0px 5px;
+    float:left;
+    list-style:none;
+}
+
+.tab-links a {
+    padding:9px 15px;
+    display:inline-block;
+    border-radius:3px 3px 0px 0px;
+    background:#F0F0F0;
+    font-size:16px;
+    font-weight:600;
+    color:#4c4c4c;
+    transition:all linear 0.15s;
+}
+
+.tab-links a:hover {
+    background: #533565;
+    color:#f0f0f0;;
+    text-decoration:none;
+}
+
+li.active a, li.active a:hover {
+    background:#6c5c76;
+    color:#fff;
+}
+
+/*----- Content of Tabs -----*/
+.tab-content {
+    padding:2px;
+    border-radius:3px;
+    box-shadow:-1px 1px 1px 1px rgba(0,0,0,0.15);
+    background:#fff;
+}
+
+.tab {
+    display:none;
+}
+
+.tab.active {
+    display:block;
+}
+/*-------------------Schedule Jag Css----------------------------------*/
+
+.inner-container{
+    width: 60%;
+    display: none;
+}
+
+.sch-type {
+    width: 50%;
+    text-indent: 105px;
+    height: 32px;
+}
+
+.load-label:before{
+    vertical-align: top;
+}
+
+.load-content{
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.load-content input{
+    margin-left: 10px;
+    border: 1px #999 solid;
+    padding: 6px 10px;
+}
+
+.load-input{
+    margin-right: 10px;
+}
+
+.load-input select{
+    height: 32px;
+}
+
+#date-time-select{
+    margin-top: 10px;
+    float: right;
+}
+
+.hid-div{
+    margin-bottom: 50px;
+}
+.cron-exp{
+    width: 50%;
+}
+
+.sdul-timepicker{
+    width: 77px;
+}
+
+.picker {
+    width: 77px;
+}
+
+.load-content{
+    display: none;
+    margin-bottom: 10px;
+}
+
+.load-label{
+    margin-right: 10px;
+}
+
+.trigger-type{
+    width: 50%;
+    text-indent: 77px;
+    height: 32px;
+}
+#alert-save-btn{
+    margin-left: 6px;
+}
+#alert-update-btn{
+    margin-left: 6px;
+}
+
+.compare{
+    margin-bottom: 20px;
+    display: none;
+}
+
+.hidden-div{
+    height: 15px;
+}
+
+.drop-down-div{
+    float: right;
+}
+
+.cron-field{
+    margin-top: 10px;
+}
+.cmp-val{
+    height: 32px;
+}
+
+.alert-action{
+    width: 50%;
+    text-indent: 77px;
+    height: 32px;
+}
+
+.action-email-type{
+    width: 50%;
+    text-indent: 77px;
+    height: 32px;
+}
+#add-alert-btn{
+    margin-bottom: 10px;
+}
+#action-logger{
+    display: none;
+}
+
+#action-email{
+    display: none;
+}
+
+#action-sms{
+    display:none;
+}
+
+#alert-update-btn{
+    display: none;
+}
+
+.sl-label-main{
+    border-bottom: 1px inset #8c8b8b;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+
+.container-box{
+    margin-left: 100px;
+    margin-bottom: 40px;
+}
+
+#reportrange{
+    background: #fff;
+    cursor: pointer;
+    border: 1px #999 solid;
+    width: 100%;
+    height: 100%;
+    padding: 6px 10px;
+    z-index: 1;
+    -webkit-appearance: none;
+}
+
+
+
+
+

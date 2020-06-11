@@ -1,0 +1,145 @@
+#!/bin/sh
+
+# --------------------------------------------------------------
+# Configuration file for eppic precalculation on merlin
+#
+# Author: Kumaran Baskaran
+# Date: 14-06-2013
+#
+# 
+# ----------------------------------------------------------------
+
+EPPIC=/gpfs/home/baskaran_k/software/bin/eppic
+EPPICCONF=/gpfs/home/baskaran_k/.eppic.conf
+MMCIF_DIR=/gpfs/home/baskaran_k/data/pdb/data/structures/all/mmCIF
+WORKDIR=`pwd`
+
+if [ $1 -eq 0 ]; then
+RUN=run_$1
+CHUNK_SIZE=30000
+# soft and hard run time limits (default is 1 hour)
+SRT="03:00:00"
+HRT="03:00:30"
+MAXRAM="8G"
+
+if [ ! -f "$EPPIC" ] 
+then
+	echo "Missing file $EPPIC"
+	exit 1
+fi
+
+if [ ! -f "$EPPICCONF" ] 
+then
+	echo "Missing config file $EPPIC_CONF"
+	exit 1
+fi
+
+if [ ! -d $MMCIF_DIR ]
+then 
+	echo "Can't open dir $MMCIF_DIR"
+	exit 1
+fi
+
+if [ -d $WORKDIR/input ]; then echo "WARNING: Directory $WORKDIR/input already exists"; else mkdir $WORKDIR/input; fi
+if [ -d $WORKDIR/qsubscripts ]; then echo "WARNING: Directory $WORKDIR/qsubscripts already exists"; else mkdir $WORKDIR/qsubscripts; fi
+if [ -d $WORKDIR/output ]; then echo "WARNING: Directory $WORKDIR/output already exists"; else mkdir $WORKDIR/output; fi
+
+
+
+#Creating full list of pdbs
+ls $MMCIF_DIR | sed 's/.cif.gz//' > $WORKDIR/input/pdb_all.list || exit 1
+PDBLIST=$WORKDIR/input/pdb_all.list
+MAXJOBS=`grep -v "^#" $PDBLIST | wc -l`
+let CHUNKS=($MAXJOBS/$CHUNK_SIZE)+1
+let LAST_CHUNK=$MAXJOBS%$CHUNK_SIZE 
+
+#echo $MAXJOBS
+#echo $CHUNKS
+#echo $LAST_CHUNK
+
+#echo $RUN
+
+for i in `seq 1 $CHUNKS`
+do
+	PDBCHUNK=$WORKDIR/input/pdbchunk$i$RUN.list
+	let ttt=$i*$CHUNK_SIZE
+	JOBNAME=eppic-set$i
+	if [ $i -lt $CHUNKS ]; then
+		head -$ttt $PDBLIST | tail -$CHUNK_SIZE > $PDBCHUNK
+		JOB_SIZE=$CHUNK_SIZE
+	else
+		tail -$LAST_CHUNK $PDBLIST > $PDBCHUNK
+		JOB_SIZE=$LAST_CHUNK
+	fi
+	if [ -d $WORKDIR/output/chunk$i ]; then echo "WARNING: Directory $WORKDIR/output/chunk$i already exists"; else mkdir $WORKDIR/output/chunk$i; fi
+	if [ -d $WORKDIR/output/chunk$i/data ]; then echo "WARNING: Directory $WORKDIR/output/chunk$i/data already exists"; else mkdir $WORKDIR/output/chunk$i/data; fi
+	if [ -d $WORKDIR/output/chunk$i/logs ]; then echo "WARNING: Directory $WORKDIR/output/chunk$i/logs already exists"; else mkdir $WORKDIR/output/chunk$i/logs; fi
+	if [ -d $WORKDIR/output/chunk$i/data/all ]; then echo "WARNING: Directory $WORKDIR/output/chunk$i/data/all already exists"; else mkdir $WORKDIR/output/chunk$i/data/all; fi
+	if [ -d $WORKDIR/output/chunk$i/data/divided ]; then echo "WARNING: Directory $WORKDIR/output/chunk$i/data/divided already exists"; else mkdir $WORKDIR/output/chunk$i/data/divided; fi
+	ERRORDIR=$WORKDIR/output/chunk$i/logs
+	ER_ESC="${ERRORDIR//\//\\/}"
+	IN_ESC="${PDBCHUNK//\//\\/}"
+	OUTFOLDER=$WORKDIR/output/chunk$i
+	OUT_ESC="${OUTFOLDER//\//\\/}"
+	EPPIC_ESC="${EPPIC//\//\\/}"
+	EPPICCONF_ESC="${EPPICCONF//\//\\/}"
+	sed s/JOBNAME/$JOBNAME/g template.sh | sed s/LOGDIR/$ER_ESC/g |sed s/MAXTASK/$JOB_SIZE/g | sed s/MAXRAM/$MAXRAM/g | sed s/TIMEMIN/$SRT/g | sed s/TIMEMAX/$HRT/g | sed s/INPUTLIST/$IN_ESC/g | sed s/OUTFOLDER/$OUT_ESC/g | sed s/EPPIC/$EPPIC_ESC/g |sed s/CONF/$EPPICCONF_ESC/g > $WORKDIR/qsubscripts/eppic_chunk$i$RUN.sh
+	chmod a+x $WORKDIR/qsubscripts/eppic_chunk$i$RUN.sh
+done
+else
+
+OLD=run_`expr $1 - 1`
+NEW=run_$1
+CHUNKNO=$2
+inputlist=$WORKDIR/input/pdbchunk$CHUNKNO$OLD.list
+outfolder=$WORKDIR/output/chunk$CHUNKNO/data
+for i in $(cat $inputlist)
+do
+	if [[ -e $outfolder/all/$i/$i.log ]] 
+	then
+		isfinished=`fgrep Finished $outfolder/all/$i/$i.log`
+		if [[ -z $isfinished ]]
+		then
+			ismemoryerror=`fgrep "Cannot allocate memory" $outfolder/all/$i/$i.log`
+			pymolerr=`fgrep "Couldn't write thumbnails" $outfolder/all/$i/$i.log`
+			javamem=`tail -1 $outfolder/all/$i/$i.log | grep "Running in host"`
+			strange=`tail -1 $outfolder/all/$i/$i.log | grep "INFO"`
+			concurrency=`tail -1 $outfolder/all/$i/$i.log | grep "File does not conform with"`
+			sqlproblem=`tail -1 $outfolder/all/$i/$i.log | grep "Too many connections"`
+			nolog=`cat $outfolder/all/$i/$i.log`
+			diskquota=`tail -1 $outfolder/all/$i/$i.log | grep "Disk quota exceeded"`
+			diskquota2=`tail -1 $outfolder/all/$i/$i.log | grep "WARN"`
+			fastaerr=`tail -1 $outfolder/all/$i/$i.log | grep "FASTA header"`
+			xmlerror=`tail -1 $outfolder/all/$i/$i.log | grep "Premature end of file"`
+			if [[ -z $ismemoryerror ]] && [[ -z $pymolerr ]] && [[ -z $javamem ]] && [[ -z $strange ]] && [[ -z $concurrency ]] && [[ -z $sqlproblem ]] && [[ ! -z $nolog ]] && [[ -z $diskquota ]] && [[ -z $fastaerr ]] && [[ -z $xmlerror ]] && [[ -z $diskquota2 ]]
+			then
+				errmsg=`tail -1 $outfolder/all/$i/$i.log`
+				echo $i $errmsg >> $WORKDIR/input/pdbchunk$CHUNKNO$NEW.blist
+			
+			else
+				echo $i >> $WORKDIR/input/pdbchunk$CHUNKNO$NEW.list
+			fi
+		#else
+		#	echo $pdb $isfinished
+		fi
+	else
+		echo $i >> $WORKDIR/input/pdbchunk$CHUNKNO$NEW.list
+	fi 
+done 
+ERRORDIR=$WORKDIR/output/chunk$CHUNKNO/logs
+ER_ESC="${ERRORDIR//\//\\/}"
+PDBCHUNK=$WORKDIR/input/pdbchunk$CHUNKNO$NEW.list
+IN_ESC="${PDBCHUNK//\//\\/}"
+OUTFOLDER=$WORKDIR/output/chunk$CHUNKNO
+OUT_ESC="${OUTFOLDER//\//\\/}"
+JOB_SIZE=`wc -l $WORKDIR/input/pdbchunk$CHUNKNO$NEW.list`
+MAXRAM="16G"
+JOBNAME=eppic-set$CHUNKNO
+SRT="03:00:00"
+HRT="03:00:30"
+EPPIC_ESC="${EPPIC//\//\\/}"
+EPPICCONF_ESC="${EPPICCONF//\//\\/}"
+sed s/JOBNAME/$JOBNAME/g template.sh | sed s/LOGDIR/$ER_ESC/g |sed s/MAXTASK/$JOB_SIZE/g | sed s/MAXRAM/$MAXRAM/g | sed s/TIMEMIN/$SRT/g | sed s/TIMEMAX/$HRT/g | sed s/INPUTLIST/$IN_ESC/g | sed s/OUTFOLDER/$OUT_ESC/g | sed s/EPPIC/$EPPIC_ESC/g |sed s/CONF/$EPPICCONF_ESC/g > $WORKDIR/qsubscripts/eppic_chunk$CHUNKNO$NEW.sh
+
+fi
+

@@ -1,0 +1,44 @@
+#tab_container
+{
+    position: absolute;
+    display: block;
+    top:30px;
+    height:530px;
+    width:599px;
+
+}
+.show_load
+{
+    z-index: 100;
+    height: inherit;
+    width: 100%;
+    display: block;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    opacity: .8;
+    background-color: #efefef;
+    -webkit-transition: opacity 0.3s linear, z-index step-end 0.5s;
+    -moz-transition: opacity 0.3s, z-index step-end 0.5s;
+    transition: opacity 0.3s, z-index step-end 0.5s;
+}
+.hide_load
+{
+    opacity: 0;
+    z-index: -10;
+}
+.load_gif
+{
+    position: relative;
+    top: 150px;
+    width: 100px;
+}
+.loading_label
+{
+    position: absolute;
+    top: 102px;
+    left: 248px;
+    font-size: 2em;
+    /* color: darkgreen; */
+    font-family: 'Open Sans';
+}

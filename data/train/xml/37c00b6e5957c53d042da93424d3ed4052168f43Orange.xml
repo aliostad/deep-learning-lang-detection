@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codesense version="1.0">
+
+	<set name="com.orangelit.orangeui.globals">
+	
+		<completion string="Orange" />
+		<completion string="Clementine" />
+		
+		<completion string="app" />
+		
+		<completion string="exports" />
+		
+		<completion string="include">
+                         
+			<behavior>
+				<append-static>('$1')$0;</append-static>
+				<confirm characters="(" />
+			</behavior>
+		 
+		</completion>
+		
+	</set>
+
+	<set name="com.orangelit.orangeui.functions">
+		
+		<completion string="config">
+                         
+			<behavior>
+				<append-static>({
+	$0 
+});</append-static>
+				<confirm characters="(" />
+			</behavior>
+		 
+		</completion>
+		
+		<completion string="add">
+                         
+			<behavior>
+				<append-static>('$1', function(exports) {
+
+	$0
+	 
+}, []);</append-static>
+				<confirm characters="(" />
+			</behavior>
+		 
+		</completion>
+       
+		<completion string="use">
+														 
+			<behavior>
+				<append-static>(function(app) {
+				 
+	$0
+	 
+});</append-static>
+				<confirm characters="(" />
+			</behavior>
+		 
+		</completion>
+		
+	</set>
+	
+	<set name="com.orangelit.orangeui.keywords">
+		<completion string="Application" />
+		<completion string="Browser" />
+		<completion string="Class" />
+		<completion string="Events" />
+		<completion string="Location" />
+		<completion string="Model" />
+		<completion string="Service" />
+		<completion string="Storage" />
+		<completion string="View" />
+		<completion string="ViewController" />
+	</set>
+	
+	<set name="com.orangelit.orangeui.modules">
+		
+		<completion string="extend">
+		 
+			<behavior>
+				<append-static>({
+
+	getType: function() {
+		return '$1';
+	}
+	 
+});</append-static>
+				<confirm characters="(" />
+			</behavior>
+		 
+		</completion>
+		
+	</set>
+	
+	<set name="com.orangelit.orangeui.controller.methods">
+	
+		<completion string="request">
+		 
+			<behavior>
+				<append-static>(${1:url}, ${2:method}, ${3:params}, ${4:map}, ${5:success}, ${6:failure}, ${7:context});</append-static>
+				<confirm characters="("/>
+			</behavior>
+		 
+		</completion>
+		
+		<completion string="getView">
+		 
+			<behavior>
+				<append-static>\(${1:name}\)$2;</append-static>
+				<confirm characters="("/>
+			</behavior>
+		 
+		</completion>
+		 
+		<completion string="getForm">
+		 
+			<behavior>
+				<append-static>\(${1:name}\)$2;</append-static>
+				<confirm characters="("/>
+			</behavior>
+		 
+		</completion>
+		 
+		<completion string="getElement">
+		 
+			<behavior>
+				<append-static>\(${1:name}\)$2;</append-static>
+				<confirm characters="("/>
+			</behavior>
+		 
+		</completion>
+		 
+		<completion string="on">
+		 
+			<behavior>
+				<append-static>(${1:event}, ${2:callback}, ${3:context});</append-static>
+				<confirm characters="("/>
+			</behavior>
+		 
+		</completion>
+		 
+		<completion string="once">
+		 
+			<behavior>
+				<append-static>(${1:event}, ${2:callback}, ${3:context});</append-static>
+				<confirm characters="("/>
+			</behavior>
+		 
+		</completion>
+		 
+		<completion string="fire">
+		 
+			<behavior>
+				<append-static>(${1:event}, ${2:data});</append-static>
+				<confirm characters="("/>
+			</behavior>
+		 
+		</completion>
+		 
+		<completion string="detach">
+		 
+			<behavior>
+				<append-static>(${1:event}, ${2:callback});</append-static>
+				<confirm characters="("/>
+			</behavior>
+		 
+		</completion>
+		 
+		<completion string="_super">
+		 
+			<behavior>
+				<append-static>();</append-static>
+			</behavior>
+		 
+		</completion>
+		 
+		<completion string="load">
+		 
+			<behavior>
+				<append-static>()$1;</append-static>
+			</behavior>
+		 
+		</completion>
+		 
+		<completion string="show">
+		 
+			<behavior>
+				<append-static>()$1;</append-static>
+			</behavior>
+		 
+		</completion>
+		 
+		<completion string="hide">
+		 
+			<behavior>
+				<append-static>()$1;</append-static>
+			</behavior>
+		 
+		</completion>
+		 
+		<completion string="unload">
+		 
+			<behavior>
+				<append-static>()$1;</append-static>
+			</behavior>
+		 
+		</completion>
+		
+		<completion string="destroy">
+		 
+			<behavior>
+				<append-static>()$1;</append-static>
+			</behavior>
+		 
+		</completion>
+		 
+	</set>
+	
+	<set name="com.orangelit.orangeui.controller.functions">
+         
+      <completion string="setup">
+       
+        <behavior>
+          <append-static>: function() {
+  $1
+}</append-static>
+          <confirm characters=":" />
+        </behavior>
+       
+      </completion>
+             
+      <completion string="getType">
+       
+        <behavior>
+          <append-static>: function() {
+  return '$1';
+}</append-static>
+          <confirm characters=":" />
+        </behavior>
+       
+      </completion>
+       
+      <completion string="getBindings">
+       
+        <behavior>
+          <append-static>: function() {
+  return {$0};
+}</append-static>
+          <confirm characters=":" />
+        </behavior>
+       
+      </completion>
+       
+      <completion string="getOutlets">
+       
+        <behavior>
+          <append-static>: function() {
+  return {$0};
+}</append-static>
+          <confirm characters=":" />
+        </behavior>
+       
+      </completion>
+       
+      <completion string="getRoutes">
+       
+        <behavior>
+          <append-static>: function() {
+  return {$0};
+}</append-static>
+          <confirm characters=":" />
+        </behavior>
+       
+      </completion>
+       
+      <completion string="onWillLoad">
+             
+        <behavior>
+          <append-static>: function() {
+           
+  $1
+  
+  this._super();
+   
+}</append-static>
+          <confirm characters=":" />
+        </behavior>
+       
+      </completion>
+       
+      <completion string="onDidLoad">
+                   
+        <behavior>
+          <append-static>: function() {
+           
+  $1
+  
+  this._super();
+   
+}</append-static>
+          <confirm characters=":" />
+        </behavior>
+       
+      </completion>
+             
+      <completion string="onWillAppear">
+                   
+        <behavior>
+          <append-static>: function() {
+           
+  $1
+  
+  this._super();
+   
+}</append-static>
+          <confirm characters=":" />
+        </behavior>
+       
+      </completion>
+             
+      <completion string="onDidAppear">
+                   
+        <behavior>
+          <append-static>: function() {
+           
+  $1
+  
+  this._super();
+   
+}</append-static>
+          <confirm characters=":" />
+        </behavior>
+       
+      </completion>
+             
+      <completion string="onWillDisappear">
+                   
+        <behavior>
+          <append-static>: function() {
+           
+  $1
+  
+  this._super();
+   
+}</append-static>
+          <confirm characters=":" />
+        </behavior>
+       
+      </completion>
+             
+      <completion string="onDidDisappear">
+                   
+        <behavior>
+          <append-static>: function() {
+           
+  $1
+	
+  this._super();
+   
+}</append-static>
+          <confirm characters=":" />
+        </behavior>
+       
+      </completion>
+ 
+      <completion string="onWillUnload">
+                   
+        <behavior>
+          <append-static>: function() {
+           
+  $1
+	
+  this._super();
+   
+}</append-static>
+          <confirm characters=":" />
+        </behavior>
+       
+      </completion>
+ 
+      <completion string="onDidUnload">
+                   
+        <behavior>
+          <append-static>: function() {
+           
+  $1
+	
+  this._super();
+   
+}</append-static>
+          <confirm characters=":" />
+        </behavior>
+       
+      </completion>
+               
+    </set>
+	
+</codesense>

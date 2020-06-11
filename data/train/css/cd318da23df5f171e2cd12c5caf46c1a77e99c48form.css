@@ -1,0 +1,68 @@
+/* Fonts */
+/* /Fonts */
+/* Colors */
+/* /Colors */
+.form {
+  position: relative;
+  padding: 12px 14px 12px 20px;
+  background: #fff; }
+  .form.__load .form_load {
+    display: block; }
+
+.form_row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.form_row_depart {
+  float: left;
+  width: 192px; }
+
+.form_it-depart {
+  border-radius: 2px 0px 0px 2px; }
+
+.form_it-arrive {
+  border-radius: 0px 2px 2px 0px; }
+
+.form_row_way {
+  display: block;
+  width: 30px;
+  float: left;
+  height: 28px;
+  border-top: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8; }
+
+.form_row_arrive {
+  float: left;
+  width: 192px; }
+
+.form_row_price {
+  float: left;
+  width: 192px; }
+
+.form_row_time {
+  float: left;
+  width: 192px;
+  margin-left: 30px; }
+
+.form_row_tel {
+  width: 192px; }
+
+.form_load {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 999; }
+
+.form_load_inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -15px; }
+
+/*# sourceMappingURL=form.css.map */

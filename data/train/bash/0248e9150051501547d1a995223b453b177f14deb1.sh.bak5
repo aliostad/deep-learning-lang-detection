@@ -1,0 +1,101 @@
+#!/bin/bash
+
+
+i() {
+  local myresult=0
+  echo "$myresult"
+}
+
+ri=$(i)
+echo $ri
+
+
+
+j() {
+  local result=0
+}
+
+if [[ $(j) -eq 0 ]]; then
+  echo "true"
+else
+  echo "false"
+fi
+exit
+
+
+echo $ri
+if [ $ri -eq 1 ]; then
+  echo "yep"
+else
+  echo "nope"
+fi
+exit
+
+epelKeyImported="0"
+epelRepoInstalled="0"
+
+isEpelKeyImported() {
+  epelKeyExists="$(rpm -qa gpg* | grep -i 0608B895)"
+
+  if [ -n "$epelKeyExists" ]; then
+    epelKeyImported="1"
+  else
+    epelKeyImported="0"
+  fi
+}
+
+importEpelKey() {
+  # import EPEL gpg key
+  rpm --import https://fedoraproject.org/static/0608B895.txt
+}
+
+installRepo() {
+  rpm -ivh http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+}
+
+isEpelRepoInstalled() {
+  epelRepoFile="/etc/yum.repos.d/epel.repo"
+
+  # -f = exists and is regular file
+  if [ -f $epelRepoFile ]; then
+    epelRepoInstalled="1"
+  else
+    epelRepoInstalled="0"
+  fi
+}
+
+############################## 
+
+isEpelKeyImported
+
+if [ "1" -ne "$epelKeyImported" ]; then
+    importEpelKey
+fi
+
+
+if [ "1" -ne "$epelKeyImported" ]; then
+    echo "Epel repo key not imported"
+    isEpelRepoInstalled
+    if [ "true" -eq "$epelRepoInstalled" ]; then
+        echo "Epel repo previously installed"
+      else
+        echo "Epel repo not installed"
+    fi 
+    exit
+fi
+
+
+# key was imported
+
+echo "repo key imported"
+
+installRepo
+
+isEpelRepoInstalled
+
+if [ "1" -eq "$epelRepoInstalled" ]; then
+    echo "Epel repo installed"
+  else
+    echo "Epel repo not installed" 
+fi
+

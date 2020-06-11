@@ -1,0 +1,78 @@
+/*Colours*/
+/*Variables*/
+/* Fonts */
+/** Devices Breakpoints **/
+/** Mixins for responsive content **/
+.serviceDescription {
+  margin-top: 30px;
+  margin-bottom: 56px;
+  position: relative; }
+  @media screen and (max-width: 1400px) {
+    .serviceDescription .container {
+      padding: 0;
+      width: 100%; } }
+  .serviceDescription .text-center section {
+    padding-bottom: 85px;
+    text-align: center; }
+  .serviceDescription .text-center .title {
+    font-family: "MuseoSans-500", Arial;
+    font-size: 35px; }
+  .serviceDescription .text-center .description {
+    text-align: center;
+    font-family: "MuseoSans-100", Arial;
+    font-size: 25px; }
+  .serviceDescription .services {
+    margin-top: 4%;
+    position: relative; }
+    .serviceDescription .services-image {
+      position: relative;
+      padding-left: 0; }
+    .serviceDescription .services-description {
+      background: rgba(255, 255, 255, 0.8);
+      position: absolute;
+      top: 0;
+      right: 0%;
+      height: 100%;
+      padding-right: 0;
+      text-align: left; }
+      .serviceDescription .services-description__text {
+        padding: 5%; }
+        .serviceDescription .services-description__text p {
+          font-size: 18px;
+          font-family: "RobotoLight", Arial;
+          padding: 5% 0%;
+          line-height: 2;
+          text-align: justify;
+          max-height: 200px;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+        .serviceDescription .services-description__text h3 {
+          color: #de9900;
+          font-size: 35px;
+          font-family: "MuseoSans-500", Arial; }
+  .serviceDescription i {
+    font-size: 15px;
+    vertical-align: -1px;
+    margin-left: 10px; }
+  .serviceDescription .btn-brisas {
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+    font-size: 16px;
+    opacity: 1; }
+    .serviceDescription .btn-brisas, .serviceDescription .btn-brisas:active, .serviceDescription .btn-brisas:focus, .serviceDescription .btn-brisas:active:focus, .serviceDescription .btn-brisas:hover {
+      background-color: #068c8f;
+      color: #fff;
+      width: 200px;
+      height: 40px; }
+    .serviceDescription .btn-brisas:hover {
+      background-color: #07a4a7; }
+  .serviceDescription img {
+    -webkit-filter: brightness(50%);
+    /* Chrome, Safari, Opera */
+    filter: brightness(50%);
+    width: 100%; }
+
+@media print {
+  .serviceDescription {
+    display: none; } }

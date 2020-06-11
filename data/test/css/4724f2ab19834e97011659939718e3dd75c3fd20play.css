@@ -1,0 +1,374 @@
+@font-face {
+    font-family:"Comics";
+    src: url("comics.ttf");
+}
+
+.hud {
+	background-color: rgba(255,255,255,.8);
+	border-radius: 15px;
+}
+
+#watereffect {
+	position:absolute;
+	visibility:hidden;
+	
+	/*small splash, used with splash2(x,y)*/
+	/*background-image: url(splash2.png);
+	background-repeat: none;
+	width:100px;
+	height:100px;
+	border-radius:50%;*/
+
+	/*Big splash, use with splash();*/
+	background-image: url(watereffect.png);
+	width:1280px;
+	height:720px;
+
+	z-index:50;
+}
+
+#tweetme {
+	padding-left: 20px;
+	text-transform: lowercase;
+    font-family:"Comics";
+    src: url("comics.ttf");
+    position: absolute;
+    top:620px;
+    left:20%;
+	width: 300px;
+	height: 40px;
+	margin :50px;
+	vertical-align: middle;
+}
+
+#swingButton {
+    position: absolute;
+    top:665px;
+    left:650px;
+}
+
+body {
+	/*background-image: url(tempbackground.png);
+	background-size: cover;*/
+	background-color: #00ADEF;
+	font-family:"Comics";
+	/*overflow: hidden;*/
+	text-align: center;
+	/*background-image: url("gui_hole1.png");*/
+		user-select:none;
+        -moz-user-select: none; 
+        -khtml-user-select: none; 
+        -webkit-user-select: none; 
+        -o-user-select: none;
+}
+
+/*disables visible scrollbar, still allows scrolling*/
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+#container1 {
+	position: absolute;
+	width: 1280px;
+	text-align: center;
+	/*right:100px;*/
+}
+
+#container2 {
+	position: absolute;
+	top:600px;
+	left:250px;
+}
+
+#myCanvas {
+	/*background-image: url("gui_hole2.png");*/
+	position:absolute;
+	left: 0px;
+	top:0px;
+	/*overflow-y: hidden;*/
+	vertical-align: middle;
+	margin:0;
+	z-index:-1;
+}
+
+#ballcolorhud {
+	visibility: hidden;
+	font-size: 10pt;
+}
+
+#check {
+	position:absolute;
+	left:850px;
+	top:675px;
+	z-index: 20;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+}
+
+label{
+	position:absolute;
+	left:890px;
+	top:675px;
+	z-index: 20;
+}
+
+#messagediv {
+	position: absolute;
+	background-color: red;
+	width:1280px;
+	/*width:100%;*/
+	text-align: center;
+	/*margin: 0 auto;*/
+	/*z-index:-5;*/
+}
+
+#mymessage{
+	font-size: 30pt;
+	background: transparent;
+	visibility: hidden;
+	/*position: absolute;
+	left: 550px;
+	top:280px;*/
+	z-index: 30;
+	margin: auto;  
+  	position: absolute;
+  	left:0;
+  	right: 0;
+  	top: 190px;
+  	bottom: 0;
+}
+
+#waitmessagediv {
+	position: absolute;
+	background-color: red;
+	width:1280px;
+	/*width:100%;*/	
+	text-align: center;
+	/*margin: 0 auto;*/
+	/*z-index:-5;*/
+}
+
+#waitmessage{
+	font-size: 30pt;
+	background: transparent;
+	visibility: hidden;
+	/*position: absolute;
+	left: 550px;
+	top:280px;*/
+	z-index: 30;
+	margin: auto;  
+  	position: absolute;
+  	left:0;
+  	right: 0;
+  	top: 550px;
+  	bottom: 0;
+}
+
+p {
+	font-size:20pt;
+	float: right;
+	margin-right: 200px;
+	background-color: white;
+	/*height: 50px;*/
+	margin: 30px;
+	padding:10px;
+}
+
+.load-button.zoom-in,
+.load-button.zoom-in .spinner,
+.load-button.zoom-in .label,
+.load-button.zoom-out,
+.load-button.zoom-out .spinner,
+.load-button.zoom-out .label {
+	-webkit-transition: 0.3s ease all;
+	   -moz-transition: 0.3s ease all;
+	    -ms-transition: 0.3s ease all;
+	        transition: 0.3s ease all;
+}
+
+/*************************************
+ * ZOOM-IN
+ */
+
+.load-button.zoom-in {
+	overflow: hidden;
+	vertical-align: middle;
+	margin-right:30px;
+}
+	.load-button.zoom-in .spinner {		
+		margin-left: -65px;
+
+		-webkit-transform: scale( 0.2 );
+		   -moz-transform: scale( 0.2 );
+		    -ms-transform: scale( 0.2 );
+		        transform: scale( 0.2 );
+	}
+	.load-button.zoom-in .label {
+		position: relative;
+		display: inline-block;
+	}
+
+.load-button.zoom-in[data-loading] .label {
+	opacity: 0;
+
+	-webkit-transform: scale( 2.2 );
+	   -moz-transform: scale( 2.2 );
+	    -ms-transform: scale( 2.2 );
+	        transform: scale( 2.2 );
+}
+.load-button.zoom-in[data-loading] .spinner {
+	animation: pulsate 1s ease-out;
+    animation-iteration-count: infinite;
+}
+
+/*************************************
+ * EASING
+ */
+
+.load-button,
+.load-button .spinner,
+.load-button .label {
+	-webkit-transition: 0.3s cubic-bezier(0.175, 0.885, 0.320, 1.275) all;
+	   -moz-transition: 0.3s cubic-bezier(0.175, 0.885, 0.320, 1.275) all;
+	    -ms-transition: 0.3s cubic-bezier(0.175, 0.885, 0.320, 1.275) all;
+	        transition: 0.3s cubic-bezier(0.175, 0.885, 0.320, 1.275) all;
+}
+
+.load-button.zoom-in,
+.load-button.zoom-in .spinner,
+.load-button.zoom-in .label,
+.load-button.zoom-out,
+.load-button.zoom-out .spinner,
+.load-button.zoom-out .label {
+	-webkit-transition: 0.3s ease all;
+	   -moz-transition: 0.3s ease all;
+	    -ms-transition: 0.3s ease all;
+	        transition: 0.3s ease all;
+}
+
+.load-button .label {
+	-webkit-transition: 0.3s cubic-bezier(0.175, 0.885, 0.320, 1.275) all;
+	   -moz-transition: 0.3s cubic-bezier(0.175, 0.885, 0.320, 1.275) all;
+	    -ms-transition: 0.3s cubic-bezier(0.175, 0.885, 0.320, 1.275) all;
+	        transition: 0.3s cubic-bezier(0.175, 0.885, 0.320, 1.275) all;
+}
+
+.load-button .spinner {
+	position: absolute;
+	width: 32px;
+	height: 32px;	
+	margin-top: 0px;	
+	opacity: 0;	
+    border: 5px solid #ffffff;
+    border-radius: 30px;
+    height: 32px;    
+}
+
+
+/*Terrains */
+
+.terrain_tee {
+	top: 650px;
+	left:100px;
+	text-align: center;
+	background-color: #77C35F;
+	border: solid;
+	border-color: black;
+	float: left;
+	position: absolute;
+	font-size: 20pt;
+	z-index: 10;
+}
+
+.terrain_bunker {
+	top: 650px;
+	left:100px;
+	text-align: center;
+	background-color: #f0c3a2;
+	border: solid;
+	border-color: black;
+	float: left;
+	position: absolute;
+	font-size: 20pt;
+	z-index: 10;
+}
+
+.terrain_fairway {
+	top: 650px;
+	left:83px;
+	text-align: center;
+	background-color: #3AB54A;
+	border: solid;
+	border-color: black;
+	float: left;
+	position: absolute;
+	font-size: 20pt;
+	z-index: 10;
+}
+
+.terrain_rough {
+	top: 650px;
+	left:100px;
+	text-align: center;
+	background-color: #0B9444;
+	border: solid;
+	border-color: black;
+	float: left;
+	position: absolute;
+	font-size: 20pt;
+	z-index: 10;
+}
+
+.terrain_green{
+	top: 650px;
+	left:100px;
+	text-align: center;
+	background-color: #8FC965;
+	border: solid;
+	border-color: black;
+	float: left;
+	position: absolute;
+	font-size: 20pt;
+	z-index: 10;
+}
+
+
+img {
+	width:30px;
+	height:30px;
+}
+
+/* Modal stuff is for the Score Card at the end of the game*/
+#basic-modal-content {display:none;}
+/* Overlay */
+#simplemodal-overlay {background-color:#000;}
+/* Container */
+#simplemodal-container {height:400px; width:300px; color:#bbb; background-color:#D2B48C; border:4px solid #444; padding:12px;}
+#simplemodal-container .simplemodal-data {padding:8px;}
+
+#simplemodal-container a {color:#ddd;}
+#simplemodal-container a.modalCloseImg {background:url(../img/basic/x.png) no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}
+/* Added CSS */
+#simplemodal-container h1 {color:#000;
+							text-align: center;
+							margin: 0px;
+							padding: 1px;}
+#simplemodal-container h2 {color:#000;
+							margin: 0px;
+							padding: 1px;}
+#simplemodal-container h3 {color:#000;
+							text-align: center;
+							margin: 0px;
+							padding: 1px;}
+#simplemodal-container button {position: absolute; bottom: 10px; left: 30%;}
+#simplemodal-container #nxtlvlbtn {position:absolute; bottom: 70px; left:20%; }
+/* For internet explorer: */
+#simplemodal-container a.modalCloseImg {background:none; right:-14px; width:22px; height:26px; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/basic/x.png',sizingMethod='scale');}
+
+
+#fullscreen-modal-container {height:150px; width:620px; color:#bbb; background-color:#D2B48C; border:4px solid #444; padding:12px;}
+#fullscreen-modal-container h2 {color:#000;
+							margin: 0px;
+							padding: 1px;}

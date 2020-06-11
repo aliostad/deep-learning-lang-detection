@@ -1,0 +1,105 @@
+
+/* ==========================================================================
+   15. Custom Form Elements Append/Prepend Icons to Inputs
+   ========================================================================== */
+
+fieldset
+{
+    position: relative;
+}
+
+input.append_icon,
+input.prepend_icon
+{
+	margin:0;
+}
+
+input.prepend_icon
+{
+    text-indent: 2em;
+}
+
+label.prepend_to,
+label.append_to
+{
+    display: block;
+    position: absolute;
+    top:1.45em;
+	padding: 0.625em !important;
+	text-align: center;
+	background: #cecece;
+    z-index: 1;
+}
+
+label.append_to
+{
+	right: -2px;
+}
+
+form.multi.beside fieldset.form_group
+{
+    display: inline-block;
+}
+form.multi.beside label.prepend_to,
+form.multi.beside label.append_to
+{
+	top:0;
+    width: auto;
+}
+
+form.multi.beside label.append_to
+{
+    left: auto;
+    right: 0.325em;
+}
+form.multi.beside label.prepend_to
+{
+    left: 30%;
+}
+form.multi.beside fieldset.date_picker_set fieldset label
+{
+	margin-bottom: -1px;
+}
+
+form.multi.beside fieldset.date_picker_set fieldset label
+{
+    width: 60px;
+}
+
+form.multi.beside fieldset.date_picker_set fieldset label.prepend_to,
+form.multi.beside fieldset.date_picker_set fieldset label.append_to
+{
+    width: auto;
+	padding: 0.6em 0.625em !important;
+}
+
+form.multi.beside fieldset.date_picker_set fieldset label.prepend_to
+{
+    left: 60px;
+}
+form.multi.beside fieldset.date_picker_set fieldset label.append_to
+{
+    right: 1em;
+}
+
+form.multi.beside fieldset.date_picker_set fieldset:nth-child(2n) label
+{
+    text-align: center;
+}
+
+.append_to [class^="icon-"],
+.append_to [class*=" icon-"],
+.prepend_to [class^="icon-"],
+.prepend_to [class*=" icon-"]
+{
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in;
+}
+.append_to [class^="icon-"]:hover,
+.append_to [class*=" icon-"]:hover,
+.prepend_to [class^="icon-"]:hover,
+.prepend_to [class*=" icon-"]:hover
+{
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+}

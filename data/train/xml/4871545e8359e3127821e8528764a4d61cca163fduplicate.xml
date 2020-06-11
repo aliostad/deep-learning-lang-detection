@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+                       "http://www.docbook.org/xml/4.3/docbookx.dtd">
+<!-- section history:
+  2009-01-25 j.h: reviewed for v2.6
+  2007-12-04 j.h: updated to v2.4 (Activate the command)
+  2007-05-24 Added Spanish translation by AntI
+  2007-02-21 KoSt: adde no
+  2006-01-12 en;fr reviewed by j.h
+  2005/11/03 split of from menu-layer.xml by axel.wernicke
+-->
+<sect2 id="gimp-layer-duplicate">
+  <title>Duplicate layer</title>
+
+  <indexterm>
+    <primary>Layer</primary>
+    <secondary>Stack managing</secondary>
+    <tertiary>Layer duplicate</tertiary>
+  </indexterm>
+  <indexterm>
+    <primary>Duplicate Layer</primary>
+  </indexterm>
+
+  <para>
+    The <guimenuitem>Duplicate Layer</guimenuitem> command adds a new
+    layer to the image which is a nearly identical copy of the active layer.
+    The name of the new layer is the same as the name of the original layer,
+    but with <quote> copy</quote> appended to it.
+  </para>
+  <para>
+    If you duplicate a background layer which does not have an alpha
+    channel, the new layer is provided with one. In addition, if there are
+    any <quote>parasites</quote> attached to the active layer, they are
+    not duplicated. (If your understanding of the word
+    <quote>parasites</quote> is limited to small, unpleasant creatures,
+    please ignore the last sentence.)
+  </para>
+
+  <sect3>
+    <title>Activate the Command</title>
+    <itemizedlist>
+      <listitem>
+        <para>
+          You can access this command from the image menubar through
+          <menuchoice>
+            <guimenu>Layer</guimenu>
+            <guimenuitem>Duplicate Layer</guimenuitem>
+          </menuchoice>,
+          or from the local pop-up menu that you get by right-clicking on
+          the Layer Dialog.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          In addition, at the
+          <link linkend="gimp-layer-dialog">Layer Dialog</link>, you
+          can access it through <guimenuitem>Duplicate</guimenuitem> of its
+          context pop-up menu, or clicking on the
+          <guiicon>
+            <inlinemediaobject>
+              <imageobject>
+                <imagedata
+                  fileref="images/dialogs/stock-duplicate-16.png"/>
+              </imageobject>
+              <textobject>
+                <phrase>Duplicate Layer</phrase>
+              </textobject>
+            </inlinemediaobject>
+          </guiicon>
+          icon button on the bottom of this dialog.
+        </para>
+      </listitem>
+    </itemizedlist>
+  </sect3>
+</sect2>

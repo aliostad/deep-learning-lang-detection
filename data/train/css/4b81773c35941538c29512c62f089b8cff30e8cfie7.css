@@ -1,0 +1,42 @@
+/*
+  Theme by JaL Productions
+  http://jalproductions.co.uk/
+*/
+
+/*===IE7 FIXES===*/
+.product-item {
+  width: 23%;
+}
+nav li a:hover,
+nav li a:focus {
+  background: #CCC;
+  border: 0;
+}
+.home #nav-home a,
+.news #nav-news a,
+.shop #nav-shop a,
+.product #nav-shop a,
+.press #nav-press a,
+.stockist #nav-stockist a,
+.contact #nav-contact a {
+  border-bottom: 2px solid #CCC;
+}
+
+.home #nav-home a:hover,
+.news #nav-news a:hover,
+.shop #nav-shop a:hover,
+.product #nav-shop a:hover,
+.press #nav-press a:hover,
+.stockist #nav-stockist a:hover,
+.contact #nav-contact a:hover,
+
+.home #nav-home a:focus,
+.news #nav-news a:focus,
+.shop #nav-shop a:focus,
+.product #nav-shop a:focus,
+.press #nav-press a:focus,
+.stockist #nav-stockist a:focus,
+.contact #nav-contact a:focus {
+  background: #CCC;
+  border-bottom: 2px solid #CCC;
+}

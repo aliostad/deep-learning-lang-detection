@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans >
+<service xmlns="http://xfire.codehaus.org/config/1.0">  
+    <name>CommonService</name>  
+    <serviceClass>com.amani.services.ICommonService</serviceClass>  
+    <implementationClass>com.amani.services.CommonService</implementationClass>  
+</service>      
+<service xmlns="http://xfire.codehaus.org/config/1.0">  
+    <name>ImageCloudService</name>  
+    <serviceClass>com.amani.services.IImageCloudService</serviceClass>  
+    <implementationClass>com.amani.services.ImageCloudService</implementationClass>  
+</service>      
+</beans>

@@ -1,0 +1,101 @@
+#!/bin/bash
+
+. "$(dirname $0)/config"
+. "$(dirname $0)/db-functions"
+
+if [ $# -lt 3 ]; then
+	msg "usage: ${0##*/} <repo> <arch> <pkgname> ..."
+	exit 1
+fi
+
+repo="$1"
+arch="$2"
+pkgnames=(${@:3})
+
+ftppath="$FTP_BASE/$repo/os"
+ftppath_debug="$FTP_BASE/$repo-$DEBUGSUFFIX/os"
+
+if ! check_repo_permission $repo; then
+	die "You don't have permission to remove packages from ${repo}"
+fi
+
+if [ "$arch" == "all" ]; then
+	tarches=(${ARCHES[@]})
+else
+	tarches=("$arch")
+fi
+
+for tarch in ${tarches[@]}; do
+	repo_lock $repo $tarch || exit 1
+	if [[ ! $repo =~ .*-${DEBUGSUFFIX}$ ]]; then
+		repo_lock $repo-$DEBUGSUFFIX $tarch || exit 1
+	fi
+done
+
+remove_pkgs=()
+remove_dbg_pkgs=()
+for pkgname in ${pkgnames[@]}; do
+	msg "Removing $pkgname from [$repo] ($arch)..."
+	pkgver=$(pkgver_from_db $repo ${tarches[0]} $pkgname)
+
+	# expand name
+	pkg=$(echo "$ftppath/${tarches[0]}/$pkgname-$pkgver"*${PKGEXT})
+
+	if [ -n "$pkgver" ] && [ -f "$pkg" ]; then
+		pkgbase=$(getpkgbase "$pkg")
+		pkgarch=$(getpkgarch "$pkg")
+	else
+		warning "Package $pkgname not found in repo"
+		continue
+	fi
+
+	remove_pkgs+=($pkgname)
+
+	[[ $pkgname =~ .*-${DEBUGSUFFIX}$ ]] && continue # skip if removing a debug package
+
+	get_pkgbuild $repo $pkgbase $pkgver
+	pkgs=($(. "$WORKDIR/pkgbuilds/$repo/$pkgbase-$pkgver"; echo "${pkgname[@]}"))
+
+	extrapkgs=($(uniq_array $pkgname ${remove_pkgs[@]} ${remove_pkgs[@]} ${pkgs[@]}))
+	if [[ ${#extrapkgs[@]} > 0 ]]; then
+		msg "Removing split packages:"
+		for extrapkg in ${extrapkgs[@]}; do
+			msg2 $extrapkg
+		done
+	fi
+
+	remove_pkgs+=(${extrapkgs[@]})
+
+	for pkg in "${pkgs[@]}"; do
+		if [[ -f "$HISTORYREPO/$repo-$DEBUGSUFFIX/${tarches[0]}/$pkg-$DEBUGSUFFIX" ]]; then
+			remove_dbg_pkgs+=("$pkg-$DEBUGSUFFIX")
+		fi
+	done
+done
+
+remove_pkgs=($(dedup_array "${remove_pkgs[@]}"))
+remove_dbg_pkgs=($(dedup_array "${remove_dbg_pkgs[@]}"))
+
+# TODO: assumes all packages are in the same repo, might not be the case for auto-removed split packages
+if [[ ${#remove_pkgs[@]} > 0 ]]; then
+	for tarch in ${tarches[@]}; do
+		arch_db_remove "$repo" "$tarch" ${remove_pkgs[@]}
+	done
+
+	if [[ ${#remove_dbg_pkgs[@]} > 0 ]]; then
+		for tarch in ${tarches[@]}; do
+			arch_db_remove "$repo-$DEBUGSUFFIX" "$tarch" ${remove_dbg_pkgs[@]}
+		done
+	fi
+
+	arch_history_commit "db-remove: ${remove_pkgs[*]}"
+fi
+
+for tarch in ${tarches[@]}; do
+	repo_unlock $repo $tarch
+	if [[ ! $repo =~ .*-${DEBUGSUFFIX}$ ]]; then
+		repo_unlock $repo-$DEBUGSUFFIX $tarch
+	fi
+
+done
+

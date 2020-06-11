@@ -1,0 +1,58 @@
+MessageList {
+	display: block;
+}
+MessageList Message {
+	display: block;
+	margin: 2px;
+	padding: 2px;
+	padding-bottom: 12px;
+	border: solid 1px transparent;
+	border-radius: 4px;
+}
+MessageList Message:hover {
+	border: solid 1px hsl(200,20%,70%);
+}
+MessageList Message:hover ActionLinks {
+	visibility: visible;
+}
+MessageList Message ActionLinks {
+	display:block;
+	visibility: hidden;
+}
+MessageList Message ActionLinks a {
+	font-size: 12px;
+	margin: 0 4px;
+	cursor: pointer;
+}
+
+
+MessageList Message Time {
+	display: block;
+	color: hsl(0,0%,50%);
+	font-size: 12px;
+}
+MessageList Message .UsernameLink,
+MessageList Message Text {
+	display:inline-block;
+	vertical-align:middle;
+}
+
+MessageList Message Text {
+	margin-left: 8px;
+	color: hsl(0,0%,30%);
+}
+
+ChatEditor {
+	position: relative;
+	display: block;
+	height: 40px;
+}
+
+ChatEditor input {
+	display: block;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}

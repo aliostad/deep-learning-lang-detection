@@ -1,0 +1,73 @@
+header { height: 200px; background-color: #eee;}
+footer { height: 100px; background-color: #eee;}
+
+/**
+ * Content and footer model
+ */
+.c-f {}
+.c-f header { display: none;}
+
+/**
+ * Content and right sidebar model
+ */
+.c-rb {}
+.c-rb header { display: none;}
+.c-rb footer { display: none;}
+
+/**
+ * Header, two-column content and footer model
+ */
+.h-c-c-f {}
+
+/**
+ * Header, content and footer model
+ */
+.h-c-f {}
+
+/**
+ * Header, content, right sidebar and footer model
+ */
+.h-c-rb-f {}
+
+/**
+ * Header and content model
+ */
+.h-c {}
+.h-c footer { display: none;}
+
+/**
+ * Header, content, left sidebar aligned with content and footer model
+ */
+.h-clb-c-f {}
+
+/**
+ * Header, content, right sidebar aligned with content and footer model
+ */
+.h-crb-c-f {}
+
+/**
+ * Header, left sidebar, content and footer model
+ */
+.h-lb-c-f {}
+
+/**
+ * Header, content, footer and right sidebar model
+ */
+.h-rb-c-f {}
+
+/**
+ * Left sidebar and content model
+ */
+.lb-c {}
+.lb-c header { display: none;}
+.lb-c footer { display: none;}
+
+/**
+ * Left sidebar, header, content and footer model
+ */
+.lb-h-c-f {}
+
+/**
+ * Right sidebar, header, content and footer model
+ */
+.rb-h-c-f {}

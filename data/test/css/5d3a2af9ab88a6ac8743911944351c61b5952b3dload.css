@@ -1,0 +1,42 @@
+#load_back {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	filter: alpha(opacity=30); /*IE*/
+	opacity: 0.3; /*FF*/
+	z-index: 1;
+	position: absolute; /*IE6*/
+	top: 0;
+	left: 0;
+	z-index: 2000;
+}
+
+#load {
+	border: 1px solid #000;
+	display: block;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -110px;
+	margin-top: -30px;
+	position: absolute;
+	z-index: 2001;
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+#load_con {
+	border: 1px solid #000;
+	background: url("../../images/common/blue-loading.gif")
+		no-repeat scroll 10px 10px transparent;
+	background-color: white;
+	height: 50px;
+	line-height: 50px;
+	width: 185px;
+	text-align: right;
+	padding-right: 10px;
+	padding-left: 5px;
+	letter-spacing: 2px;
+	margin: 3px;
+}

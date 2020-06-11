@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://192.168.40.130:18181/AsynchronousSampleApplication-sun-http-binding/AsynchronousSample/AsynchronousSample.xsd" uri="xml-resources/web-service-references/AsynchronousSample/wsdl/192.168.40.130_18181/AsynchronousSampleApplication-sun-http-binding/AsynchronousSample/AsynchronousSample.xsd"/>
+    <system systemId="http://localhost:18181/AsynchronousSample?wsdl" uri="xml-resources/web-service-references/AsynchronousSample/wsdl/localhost_18181/AsynchronousSample.wsdl"/>
+    <system systemId="http://128.131.194.3:18181/AsynchronousSampleApplication-sun-http-binding/AsynchronousSample/AsynchronousSample.xsd" uri="xml-resources/web-service-references/AsynchronousSample/wsdl/128.131.194.3_18181/AsynchronousSampleApplication-sun-http-binding/AsynchronousSample/AsynchronousSample.xsd"/>
+    <system systemId="http://localhost:18181/AsynchronousSampleApplication-sun-http-binding/AsynchronousSample/AsynchronousSample.xsd" uri="xml-resources/web-service-references/AsynchronousSampleClient/wsdl/localhost_18181/AsynchronousSampleApplication-sun-http-binding/AsynchronousSample/AsynchronousSample.xsd"/>
+    <system systemId="http://localhost:18181/AsynchronousSampleApplication-sun-http-binding/AsynchronousSample/AsynchronousSample.wsdl" uri="xml-resources/web-service-references/AsynchronousSampleClient/wsdl/localhost_18181/AsynchronousSampleApplication-sun-http-binding/AsynchronousSample/AsynchronousSample.wsdl"/>
+    <nextCatalog catalog="nbproject/private/cache/retriever/catalog.xml"/>
+    <system systemId="http://localhost:18181/AsynchronousSampleClient?wsdl" uri="xml-resources/web-service-references/AsynchronousSampleClient/wsdl/localhost_18181/AsynchronousSampleClient.wsdl"/>
+    <system systemId="http://mobiloppression.lan:18181/AsynchronousSampleApplication-sun-http-binding/AsynchronousSample/AsynchronousSample.xsd" uri="xml-resources/web-service-references/AsynchronousSampleClient/wsdl/mobiloppression.lan_18181/AsynchronousSampleApplication-sun-http-binding/AsynchronousSample/AsynchronousSample.xsd"/>
+    <system systemId="http://mobiloppression.lan:18181/AsynchronousSampleApplication-sun-http-binding/AsynchronousSample/AsynchronousSample.wsdl" uri="xml-resources/web-service-references/AsynchronousSampleClient/wsdl/mobiloppression.lan_18181/AsynchronousSampleApplication-sun-http-binding/AsynchronousSample/AsynchronousSample.wsdl"/>
+</catalog>

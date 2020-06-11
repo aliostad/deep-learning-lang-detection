@@ -1,0 +1,68 @@
+#!/bin/bash -x
+#
+#
+
+
+# -- write phylogenetic tree:
+#
+echo "(((A,B)AB,C),(D,E)DE);" >| exR.tree
+
+# -- write category expression:
+#
+cat << ENDE >| exR.cm
+1 { gti{1} gmm{1} }
+0 { gti{0} gmm{ R, mmAB:AB, mmDE:DE } }
+ENDE
+
+# -- create a nuc model with randomized parameters
+#
+../bin/CodeAxe -create-model -site-model nuc -rate-model hky85 -root-model obs-avg -tree-file exR.tree -cat-model-file exR.cm -unlock-cat-prob -random-param -reversible-tree >| exR.model.random
+
+# -- simulate sequences from the random model
+#
+../bin/CodeAxe -sim -sim-size 100000 -sim-model discrete -in-model exR.model.random >| exR.data.sim
+
+# self lhood
+#
+../bin/CodeAxe -lhood -in-model exR.model.random -in-data exR.data.sim >| exR.model.random.lhood
+
+
+
+# no cat trained model::
+#
+# -- create a starting model
+#
+../bin/CodeAxe -create-model -site-model nuc -rate-model hky85 -root-model obs-avg -tree-file exR.tree -in-data exR.data.sim -reversible-tree >| exR.model.start
+
+# -- train model
+#
+../bin/CodeAxe -ml -in-model exR.model.start -in-data exR.data.sim >| exR.model.trained 2>| exR.model.ml.stderr
+
+# -- get the likelihood & likelihood/codon of the trained model
+#
+../bin/CodeAxe -lhood -in-model exR.model.trained -in-data exR.data.sim >| exR.model.trained.lhood
+
+# -- summarize parameters from the trained model
+#
+../bin/CodeAxe -report-model -in-model exR.model.trained >| exR.model.trained.report
+
+
+
+# cat trained_model::
+#
+# -- create a starting model
+#
+../bin/CodeAxe -create-model -site-model nuc -rate-model hky85 -root-model obs-avg -tree-file exR.tree -cat-model-file exR.cm -unlock-cat-prob -in-data exR.data.sim -reversible-tree >| exR.model.2.start
+
+# -- train model
+#
+../bin/CodeAxe -ml -in-model exR.model.2.start -in-data exR.data.sim >| exR.model.2.trained 2>| exR.model.2.ml.stderr
+
+# -- get the likelihood & likelihood/codon of the trained model
+#
+../bin/CodeAxe -lhood -in-model exR.model.2.trained -in-data exR.data.sim >| exR.model.2.trained.lhood
+
+# -- summarize parameters from the trained model
+#
+../bin/CodeAxe -report-model -in-model exR.model.2.trained >| exR.model.2.trained.report
+

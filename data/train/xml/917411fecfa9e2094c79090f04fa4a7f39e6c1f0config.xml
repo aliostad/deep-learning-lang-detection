@@ -1,0 +1,17 @@
+<LPCOpenCfg>
+	<symbol name="prjIgnoreList"  value="periph/periph_hsadc|${prjIgnoreList}"/>
+	<symbol name="varMemTarget"   value="iflash" options="default"/>
+
+	<template section="filelist" name="${varBoardLibName}" tool="xpresso">
+		<import src="${prjDestToRoot}/${prjBoardPath}" dest="src">
+			<copy>../../board_common/lpc_phy_dp83848.c</copy>
+			<copy>../../board_common/uda1380.c</copy>
+			<copy>../../board_common/mem_tests.c</copy>
+		</import>
+		<import src="${prjDestToRoot}/${prjBoardPath}" dest="inc">
+			<copy>../../board_common/lpc_phy.h</copy>
+			<copy>../../board_common/uda1380.h</copy>
+			<copy>../../board_common/mem_tests.h</copy>
+		</import>
+	</template>
+</LPCOpenCfg>

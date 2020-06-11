@@ -1,0 +1,19 @@
+.xans-member-changepasswd { margin:14px 7px 0; padding:0 0 29px; color:#63666e; font-size:13px; }
+.xans-member-changepasswd .info { overflow:hidden; margin-bottom:10px; padding:20px 10px; border:1px solid #ccc; color:#353535; background:#fff; }
+.xans-member-changepasswd .info p { line-height:18px; }
+.xans-member-changepasswd .boardWrite { margin:0 0 7px 0; }
+.xans-member-changepasswd .boardWrite table { border:1px solid #ccc; }
+.xans-member-changepasswd .boardWrite table tr:first-child th,
+.xans-member-changepasswd .boardWrite table tr:first-child td { border-top:1px; }
+.xans-member-changepasswd .boardWrite th { width:105px; padding:7px 0 7px 10px; border-top:1px solid #ececec; color:#757575; font-size:13px; font-weight:normal; text-align:left; vertical-align:middle; background:#fff; }
+.xans-member-changepasswd .boardWrite td { padding:7px 10px; border-top:1px solid #ececec; vertical-align:middle; background:#fff; }
+.xans-member-changepasswd .boardWrite td span.infotext { font-size:11px; line-height:11px; }
+.xans-member-changepasswd .btnArea { overflow:hidden; position:relative; margin:14px auto 0px; text-align:center; }
+.xans-member-changepasswd .btnArea.center { text-align:center; }
+
+/* INPUT SIZE */
+.xans-member-changepasswd input[type=text],
+.xans-member-changepasswd input[type=password],
+.xans-member-changepasswd input[type=number],
+.xans-member-changepasswd input[type=tel],
+.xans-member-changepasswd select { width:100%; }

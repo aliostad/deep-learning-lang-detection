@@ -1,0 +1,65 @@
+/* =============================================
+		+++ 18.07.15 +++
+   ============================================= */
+
+/* Positioning */
+/* Box-model */
+/* Typography */
+/* Visual */
+/* Misc */
+
+canvas {
+
+}
+
+li {
+	list-style: none;
+}
+
+.link-container {
+	/* Positioning */
+	position: fixed;
+	top: 20%;
+	left:20%;
+	/* Box-model */
+	margin: 0;
+	padding: 20px 20px 40px 20px;
+	width: auto;
+	/* Typography */
+	/* Visual */
+	background-color: rgba(255,255,255, 0.7);
+	box-shadow: 0px 7px 5px rgba(0,0,0, 0.7);
+	border: 1px solid blue;
+	/* Misc */
+}
+
+.project-links a:link,
+.project-links a:visited {
+	/* Positioning */
+	/* Box-model */
+	padding: 15px 70px;
+	/* Typography */
+	font-family: monospace;
+	font-size: 14px;
+	line-height: 60px;
+	text-decoration: none;
+	/* Visual */
+	border: 1px solid blue;
+	border-radius: 5px;
+	/* Misc */
+}
+
+#link-title1:hover {
+	color: white;
+	background-color:blue;
+}
+
+#link-title2:hover {
+	color: white;
+	background-color:red;
+}
+
+#link-title3:hover {
+	color: white;
+	background-color:#00FF7F;
+}

@@ -1,0 +1,36 @@
+/* CSS Document */
+#do_load{
+	border-radius:5px;
+	width:90%;
+	text-align:center; 
+	margin-left:auto; 
+	margin-right:auto;
+	margin-top:70px;
+	background:#8fc320;
+	color:#fff;
+	font-size:20px;
+	padding:10px;
+}
+#content_load{ 
+	border:1px solid #8fc320;
+	border-radius:5px;
+	margin:10px;
+}
+#pwd_p{
+	text-align:center;
+	padding-right:5%;
+}
+#pwd_a{
+	text-decoration:none;
+	color:#0D85E4;
+	font-family:Arial, Helvetica, sans-serif, "微软雅黑";
+}
+#reg_a{
+	text-decoration:none;
+}
+#header_p{ 
+	font-family:Arial, Helvetica, sans-serif, "微软雅黑";
+	font-size:20px;
+	font-weight:700;
+	margin-top:5px;
+}

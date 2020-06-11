@@ -1,0 +1,239 @@
+/* line 55, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+/* line 63, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+audio, canvas, video {
+  display: inline-block; }
+
+/* line 74, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/* line 84, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+[hidden], template {
+  display: none; }
+
+/* line 97, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+html {
+  background: #fff;
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* line 113, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+html, button, input, select, textarea {
+  font-family: sans-serif; }
+
+/* line 119, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+body {
+  margin: 0; }
+
+/* line 132, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+a {
+  background: transparent; }
+  /* line 139, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+  a:focus {
+    outline: thin dotted; }
+  /* line 146, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+  a:hover, a:active {
+    outline: 0; }
+
+/* line 159, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* line 164, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0; }
+
+/* line 169, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0; }
+
+/* line 174, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0; }
+
+/* line 179, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0; }
+
+/* line 184, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0; }
+
+/* line 192, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* line 199, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+b, strong {
+  font-weight: bold; }
+
+/* line 211, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+dfn {
+  font-style: italic; }
+
+/* line 217, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/* line 236, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/* line 246, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/* line 254, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/* line 271, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 279, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+small {
+  font-size: 80%; }
+
+/* line 287, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 294, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+sup {
+  top: -0.5em; }
+
+/* line 298, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+sub {
+  bottom: -0.25em; }
+
+/* line 350, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+img {
+  border: 0; }
+
+/* line 359, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* line 369, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+figure {
+  margin: 0; }
+
+/* line 386, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/* line 397, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal; }
+
+/* line 414, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline; }
+
+/* line 426, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+button, input {
+  line-height: normal; }
+
+/* line 436, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+button, select {
+  text-transform: none; }
+
+/* line 451, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+/* line 462, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+button[disabled], input[disabled] {
+  cursor: default; }
+
+/* line 470, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* line 479, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+/* line 490, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 498, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+  /* line 507, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+  input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+/* line 517, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/ext/normalize */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+/* line 1, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/layout/basic */
+svg {
+  display: none; }
+
+/* line 5, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/layout/basic */
+.anim {
+  padding: 20px; }
+  /* line 7, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/layout/basic */
+  .anim .box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #bada55;
+    margin: 10px 0; }
+  /* line 14, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/layout/basic */
+  .anim .inputbox {
+    width: 250px;
+    border: 3px solid #ccc;
+    padding: 5px; }
+  /* line 19, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/layout/basic */
+  .anim span {
+    width: 300px; }
+
+/* line 24, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/layout/basic */
+.controls {
+  padding: 20px; }
+  /* line 26, /Users/karbuc/Sites/Web-Animations-API-playfield/src/styles/layout/basic */
+  .controls .btn {
+    width: 110px;
+    height: 40px;
+    background: -webkit-linear-gradient(#D6E7E6, #92C4CA);
+    background: linear-gradient(#D6E7E6, #92C4CA);
+    border: none; }
+
+
+/*# sourceMappingURL=maps/styles.css.map */

@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XML>
+  <Servers>
+    <Server>
+      <Name>正式站</Name>
+      <Ip>C68E4150F668A69494CE98AFC14A5459</Ip>
+      <Port>E7A40D5CC368807FBD2B65056F6810F3</Port>
+    </Server>
+    <Server>
+      <Name>測試站</Name>
+      <Ip>56F6176029F2A3F9E0F3A1F4750AA8AC</Ip>
+      <Port>E62476619C81B2B0EF7B803DFD980447</Port>
+    </Server>
+    <Server>
+      <Name>新測試站</Name>
+      <Ip>DA9FDF380BB0750B08BF3CB87E3FB0EC</Ip>
+      <Port>E62476619C81B2B0EF7B803DFD980447</Port>
+    </Server>
+    <Server>
+      <Name>本機</Name>
+      <Ip>D229D8A640990C1CD3AECD0A756317D8</Ip>
+      <Port>E62476619C81B2B0EF7B803DFD980447</Port>
+    </Server>
+    <Server>
+      <Name>172.19.8.12</Name>
+      <Ip>78392B761BF241A08EB124A1E1E83CF2</Ip>
+      <Port>E62476619C81B2B0EF7B803DFD980447</Port>
+    </Server>
+    <Server>
+    <Name>正式站new</Name>
+    <Ip>EAE4A83B9B2F501B22B8AF8898792F2E</Ip>
+    <Port>E62476619C81B2B0EF7B803DFD980447</Port>
+    </Server>
+  </Servers>
+  <Processes>
+    <Process>
+      <Name>(Football)</Name>
+      <Description>足球</Description>
+    </Process>
+    <Process>
+      <Name>Cbssports</Name>
+      <Description>足球 國家美式足球聯盟 (NFL) (需開啟比賽伺服器)</Description>
+    </Process>
+    <!--<Process>
+      <Name>(CPBL)</Name>
+      <Description>棒球 中華職棒</Description>
+    </Process>-->
+    <Process>
+      <Name>(NPB-YAHOO)</Name>
+      <Description>棒球 日本職棒 (YAHOO)</Description>
+    </Process>
+    <Process>
+      <Name>(NPB-PlaySport)</Name>
+      <Description>棒球 日本職棒 (玩運彩)</Description>
+    </Process>
+    <Process>
+      <Name>(KBO-NAVER)</Name>
+      <Description>棒球 韓國職棒 (NAVER)</Description>
+    </Process>
+    <Process>
+      <Name>(KBO-PlaySport)</Name>
+      <Description>棒球 韓國職棒 (玩運彩)</Description>
+    </Process>
+    <Process>
+      <Name>(MLB-CBS)</Name>
+      <Description>棒球 美國職棒 (CBS)</Description>
+    </Process>
+    <Process>
+      <Name>(MLB-ESPN)</Name>
+      <Description>棒球 美國職棒 (ESPN)</Description>
+    </Process>
+    <Process>
+      <Name>LMP</Name>
+      <Description>棒球 墨西哥職棒 (LMP)</Description>
+    </Process>
+    <Process>
+      <Name>(LMB)</Name>
+      <Description>棒球 墨西哥夏季聯盟</Description>
+    </Process>
+    <Process>
+      <Name>(IL)</Name>
+      <Description>棒球 美國職棒 3A 國際聯盟 </Description>
+    </Process>
+    <Process>
+      <Name>(PCL)</Name>
+      <Description>棒球 美國職棒 3A 太平洋聯盟</Description>
+    </Process>
+    <Process>
+      <Name>(CBA)</Name>
+      <Description>籃球 中國職籃</Description>
+    </Process>
+    <Process>
+      <Name>(BJ)</Name>
+      <Description>籃球 日本職籃</Description>
+    </Process>
+    <Process>
+      <Name>(KBL)</Name>
+      <Description>籃球 韓國職籃 - 男子</Description>
+    </Process>
+    <Process>
+      <Name>(WKBL)</Name>
+      <Description>籃球 韓國職籃 - 女子</Description>
+    </Process>
+    <Process>
+      <Name>(NBA)</Name>
+      <Description>籃球 美國職籃</Description>
+    </Process>
+    <Process>
+      <Name>(Euroleague)</Name>
+      <Description>籃球 歐洲職籃</Description>
+    </Process>
+    <Process>
+      <Name>(VTB)</Name>
+      <Description>籃球 籃球聯賽</Description>
+    </Process>
+    <Process>
+      <Name>(NBL)</Name>
+      <Description>籃球 澳洲職籃</Description>
+    </Process>
+    <Process>
+      <Name>(ACB)</Name>
+      <Description>籃球 西班牙籃球</Description>
+    </Process>
+    <Process>
+      <Name>(BBL)</Name>
+      <Description>籃球 德國籃球甲級聯賽</Description>
+    </Process>
+    <Process>
+      <Name>(NCAA)</Name>
+      <Description>籃球 美國大學男子籃球</Description>
+    </Process>
+    <Process>
+      <Name>(CNBL)</Name>
+      <Description>籃球 中國男子籃球甲級聯賽</Description>
+    </Process>
+    <Process>
+      <Name>(BKOS)</Name>
+      <Description>籃球 奧訊</Description>
+    </Process>
+    <Process>
+      <Name>(Tennis)</Name>
+      <Description>網球</Description>
+    </Process>
+    <Process>
+      <Name>(NHL)</Name>
+      <Description>曲棍球 國家冰球</Description>
+    </Process>
+    <Process>
+      <Name>(AHL)</Name>
+      <Description>曲棍球 美國冰球</Description>
+    </Process>
+    <Process>
+      <Name>(KHL)</Name>
+      <Description>曲棍球 俄羅斯冰球</Description>
+    </Process>
+    <Process>
+      <Name>(IHBF)</Name>
+      <Description>冰球 BF</Description>
+    </Process>
+    <!--<Process>
+      <Name>GameTrackerConsole</Name>
+      <Description>比賽伺服器 (舊程式使用)</Description>
+    </Process>-->
+  </Processes>
+</XML>

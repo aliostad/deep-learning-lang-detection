@@ -1,0 +1,265 @@
+.service{
+    position: relative;
+    background: white;
+    padding: 50px 37px 50px 44px;
+    box-sizing: border-box;
+    margin: 0 0 26px;
+}
+.service.hoverable:hover{
+    background: #fff000;
+}
+.service:before,
+.service:after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    background: url("../../img/border.png") repeat-x;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+.service:before{
+    left: 0;
+    width: 100%;
+    top: -3px;
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+}
+.service:after{
+    bottom: -3px;
+}
+.service.hoverable:hover:before,
+.service.hoverable:hover:after{
+    background: url("../../img/b-yellow.png") repeat-x;
+}
+.service .icon,
+.service .information,
+.service .serv_sh_info .item,
+.service .serv_sh_info .item .icon,
+.service .serv_sh_info .item .inf{
+    display: inline-block;
+    vertical-align: middle;
+}
+.service .serv_sh_info{
+    position: relative;
+}
+.service .icon,
+.service .information{
+    vertical-align: top;
+}
+.service .information{
+    width: 665px;
+    text-align: left;
+    margin: 0 0 0 30px;
+}
+.service .serv_sh_info h3{
+    color: #39a8c0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0 0 12px;
+    text-align: left;
+}
+.service:not(.active) .serv_sh_info h3{
+    cursor: pointer;
+}
+.service:not(.active) .serv_sh_info h3:hover,
+.service.active .serv_sh_info h3{
+    color: #dc3d9a;
+}
+.service .condition{
+    display: none;
+}
+.service.action .condition{
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    color: #95b8bf;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.service .serv_sh_info .item{
+    padding: 18px 0 15px;
+    position: relative;
+    margin-right: 20px;
+}
+.service .serv_sh_info .item:before,
+.service .serv_sh_info .item:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background-repeat: repeat-x;
+    background-image: url("../../img/h2-line.png");
+}
+.service .serv_sh_info .item:before{
+    top: 0;
+}
+.service .serv_sh_info .item:after{
+    bottom: 0;
+}
+.service .serv_sh_info .item .inf{
+    margin-left: 10px;
+}
+.service .serv_sh_info .item .inf .label{
+    color: #95b8bf;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin: 0 0 12px;
+}
+.service .serv_sh_info .item .inf .value{
+    color: #dc3d9a;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.service .full_info{
+    margin: 30px 0 0;
+}
+.service:not(.active) .full_info{
+    display: none;
+}
+.service .full_info .text{
+    color: #313a40;
+    margin: 0 0 42px;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.service .toggle{
+    float: left;
+    margin: 20px 0 0;
+}
+.service .border{
+    z-index: 2;
+}
+.service .button{
+    float: right;
+    width: 295px;
+    cursor: pointer;
+}
+.service.action .actionBlock{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 106px;
+    height: 106px;
+}
+.service.action .action{
+    position: absolute;
+    background: url("../../img/action.png") no-repeat;
+    width: 106px;
+    height: 106px;
+    z-index: 3;
+}
+.service.action .actionBlock .triangle{
+    content: "";
+    position: absolute;
+    background: #840b0c;
+    width: 5px;
+    height: 5px;
+    z-index: 1;
+}
+.service.action .actionBlock .triangle.top{
+    left: 0;
+    top: 0;
+}
+.service.action .actionBlock .triangle.bottom{
+    right: 0;
+    bottom: 0;
+}
+.service .ul_list{
+    margin: 0 0 35px;
+    color: #dc3d9a;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    list-style: disc;
+    margin-left: 18px;
+}
+.service .ul_list .item{
+    list-style: disc;
+}
+
+/* Garant page */
+.garant .service .full_info{
+    display: block;
+    margin: 20px 0 0;
+}
+.garant .service .full_info .text{
+    margin: 0 0 33px;
+}
+.garant .service .full_info .text:last-child{
+    margin: 0;
+}
+.garant .service .full_info .text .pink,
+.about .service .full_info .text .pink{
+    color: #dc3d9a;
+}
+.garant .service .serv_sh_info h3,
+.payment .service .serv_sh_info h3,
+.review .service .serv_sh_info h3{
+    cursor: default;
+}
+.garant .service .serv_sh_info h3:hover,
+.payment .service .serv_sh_info h3:hover,
+.review .service .serv_sh_info h3:hover{
+    color: #39a8c0;
+}
+
+/* About page */
+.about .service .icon,
+.about .service .information{
+    vertical-align: middle;
+}
+.about .service .full_info,
+.about .service .full_info .text,
+.review .service .full_info,
+.review .service .full_info .text{
+    margin: 0;
+    display: block;
+}
+
+/* Payment page */
+.payments{
+    padding: 0 125px;
+    margin: 0 0 45px;
+}
+.payments .label{
+    color: #39a8c0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 26px;
+    margin: 0 0 30px;
+}
+.payments .list .line:first-child{
+    margin: 0 0 50px;
+}
+.payments .list .item{
+    width: 166px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #39a8c0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+.payments .list .item:nth-child(2){
+    margin: 0 74px;
+}
+.payments .list .item .icon{
+    margin: 0 auto 28px;
+}
+.payment .service{
+    margin: 0 0 35px;
+}

@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<!DOCTYPE platform SYSTEM "http://simgrid.gforge.inria.fr/simgrid.dtd">
+<platform version="3">
+  <process function="agentMngt.cacheAgent" host="Ste_Julie">
+    <argument value="serverHosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Roy">
+    <argument value="serverHosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Jackson">
+    <argument value="serverHosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="St_Antoine">
+    <argument value="serverHosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Geoff">
+    <argument value="serverHosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="kV">
+    <argument value="serverHosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Amadeus">
+    <argument value="serverHosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Boivin">
+    <argument value="serverHosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Gordon">
+    <argument value="serverHosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Lapointe">
+    <argument value="serverHosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="UNIX">
+    <argument value="serverHosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Domey">
+    <argument value="serverHosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="McGee">
+    <argument value="serverHosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Bellemarre">
+    <argument value="serverHosts.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Julian">
+    <argument value="serverHosts.csv"/>
+  </process>
+</platform>

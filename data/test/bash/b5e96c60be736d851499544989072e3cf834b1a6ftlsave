@@ -1,0 +1,113 @@
+#!/bin/bash
+
+ftl_save_dir="$HOME/.local/share/FasterThanLight/"
+ftl_save_file="continue.sav"
+
+user_save_dir="$HOME/.ftlsave/"
+user_save_file="ftlsave_nb_"
+
+opts=("-h" "-n" "-r" "-l")
+
+func_name=("help" "save" "restore" "list")
+
+
+if [ ! -d $user_save_dir ];
+then
+  echo "creating" $user_save_dir "directory"
+  mkdir $user_save_dir
+fi
+
+function help {
+  echo "save the current ftl saved file in order to be used later"
+  echo "./ftlsave"
+  echo "arguments are:"
+  echo "-h                   help"
+  echo "-r [name|number]     restore a file by giving his number or name"
+  echo "-n [name]            save with a specific file name"
+  echo "-l                   list"
+}
+
+function copy {
+  cp $1 $2
+  cp_result=$?
+  diff $1 $2
+  diff_result=$?
+
+  if [ $cp_result -eq 0 ] && [ $diff_result -eq 0 ]; then
+    echo "operation successful"
+  else
+    echo "operation failed"
+  fi
+}
+
+function get_next_number_file {
+  number=`ls $user_save_dir$user_save_file* --format=single-column \
+  2> /dev/null | cut -d _ -f 3 | sort -nr | head -n 1`
+
+
+  if [ ! -n "$number" ];
+  then
+    number=0
+  fi
+
+  echo `expr $number + 1`
+}
+
+function save {
+  if [ -n "$1" ];
+  then
+    new_save=$user_save_dir$1
+  else
+    new_save=$user_save_dir$user_save_file`get_next_number_file`
+  fi
+
+  echo "saving copy into" $new_save
+
+  copy $ftl_save_dir$ftl_save_file $new_save
+}
+
+function restore {
+  if [ ! -n "$1" ];
+  then
+    echo "need an argument. Exiting"
+    exit
+  fi
+
+  if [[ $1 =~ ^-?[0-9]+$ ]];
+  then
+    file=$user_save_dir$user_save_file$1
+  else
+    file=$user_save_dir$1
+  fi
+
+  echo "Finding file" $file"..."
+
+  if [ ! -f $file ];
+  then
+    echo "Could not find file" $file", exiting"
+    exit
+  fi
+
+  echo "copying" $file "into" $ftl_save_dir$ftl_save_file
+  copy $file $ftl_save_dir$ftl_save_file
+}
+
+function list {
+  ls --format=single-column $user_save_dir
+}
+
+index=0
+
+for i in "${opts[@]}"
+do
+
+  if [ $i = $1 ] 2> /dev/null;
+  then
+    ${func_name[$index]} $2
+    exit
+  fi
+
+  index=`expr $index + 1`
+done
+
+save

@@ -1,0 +1,42 @@
+#!/bin/bash
+#
+# bash unix shell script for dividing a sample into subsamples and 
+# performing imputation with Beagle on each subsample separately.
+#
+# paste.jar and cut.jar programs are available from the BEAGLE Utilities web page
+# (http://www.stat.auckland.ac.nz/~bbrowning/beagle_utilities/utilities.html)
+
+sample="?"	# replace ? with name of sample Beagle file
+ref="?"		# replace ? with name of reference panel Beagle file
+missing="?"	# replace ? with missing allele code
+markers="?"	# replace ? with name of markers file with markers in reference panel
+
+sampleCol="?"	# replace ? with number of columns (including first two columns) in sample Beagle file
+windowSize="?"	# replace ? of number of columns of allele data to use per subsample (e.g. 500)
+
+start="3"
+let "end=start+windowSize-1"
+z="10"
+
+while [ "${end}" -lt "${sampleCol}" ]
+do
+  echo "start=${start}  end=${end}  subsample.index=${z}"
+  cat ${sample} | java -jar cut.jar 1:2 ${start}:${end} > ${sample}.${z}
+  java -jar beagle.jar phased=${ref} unphased=${sample}.${z} missing=${missing} markers=${markers} out=out.${z}
+  let "start=end+1"
+  let "end=start+windowSize-1"
+  let "z=z+1"
+done
+
+echo "start=${start}  end=${sampleCol}  subsample.index=${z}"
+cat ${sample} | java -jar cut.jar 1:2 ${start}:${sampleCol} > ${sample}.${z}
+java -jar beagle.jar phased=${ref} unphased=${sample}.${z} missing=${missing} markers=${markers} out=out.${z}
+
+java -jar paste.jar 2 out.[1-9][0-9].${sample}.[1-9][0-9].phased.gz | gzip > ${sample}.phased.gz
+java -jar paste.jar 3 out.[1-9][0-9].${sample}.[1-9][0-9].gprobs.gz | gzip > ${sample}.gprobs.gz
+java -jar paste.jar 3 out.[1-9][0-9].${sample}.[1-9][0-9].dose.gz | gzip > ${sample}.dose.gz
+java -jar paste.jar 1 out.[1-9][0-9].${sample}.[1-9][0-9].r2 > ${sample}.r2
+cat out.[1-9][0-9].log > ${sample}.log
+
+rm ${sample}.[1-9][0-9]
+rm out.[1-9][0-9].*

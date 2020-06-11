@@ -1,0 +1,31 @@
+.model-input-params .fieldset-submit > .form-group label {
+  display: inline-block;
+  width: 80%;
+  word-wrap: break-word;
+}
+.model-input-params .fieldset-submit > .form-group input[type="text"] {
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+  width: 67px;
+}
+
+.model-input-params .form-group {
+  margin-bottom: 0;
+}
+
+.model-input-params .form-group input {
+  height: 2em;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.hidden {
+  display: none;
+}
+
+.slow-timer {
+  color: red;
+}

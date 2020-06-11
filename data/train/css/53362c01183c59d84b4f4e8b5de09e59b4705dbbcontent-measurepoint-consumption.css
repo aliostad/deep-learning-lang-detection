@@ -1,0 +1,144 @@
+#main-content #block-daily-consumption-profile-charts .block-title-picto{
+	background:url(../images/icons-sprite.png) 0 -50px no-repeat;
+}
+
+#main-content #block-consumption-report-charts .block-title-picto{
+	background:url(../images/icons-sprite.png) 0 -25px no-repeat;
+}
+
+#main-content #block-load-profile-charts .block-title-picto{
+	background:url(../images/icons-sprite.png) 0 -400px no-repeat;
+}
+
+#main-content #block-daily-consumption-profile-charts .content #block-daily-consumption-profile-charts-title,
+#main-content #block-consumption-report-charts .content #block-consumption-report-charts-title,
+#main-content #block-load-profile-charts .content #block-load-profile-charts-title{
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#main-content #block-daily-consumption-profile-charts .content #block-daily-consumption-profile-charts-period,
+#main-content #block-consumption-report-charts .content #block-consumption-report-charts-period,
+#main-content #block-load-profile-charts .content #block-load-profile-charts-period{
+	text-align: center;
+	margin-top: 5px;
+}
+
+#main-content #block-daily-consumption-profile-charts .content #block-daily-consumption-profile-charts-options,
+#main-content #block-consumption-report-charts .content #block-consumption-report-charts-options,
+#main-content #block-load-profile-charts .content #block-load-profile-charts-options{
+	text-align: right;	
+	margin-top: 5px; 	
+}
+
+#main-content #block-daily-consumption-profile-charts .content #block-daily-consumption-profile-charts-options a,
+#main-content #block-consumption-report-charts .content #block-consumption-report-charts-options a,
+#main-content #block-load-profile-charts .content #block-load-profile-charts-options a{
+	background: url(../images/chart-option-icon.png) no-repeat;
+	padding-left: 20px;
+	margin-right: 46px;
+}
+
+#main-content #block-daily-consumption-profile-charts .content #block-daily-consumption-profile-charts-options a:active,
+#main-content #block-consumption-report-charts .content #block-consumption-report-charts-options a:active,
+#main-content #block-load-profile-charts .content #block-load-profile-charts-options a:active,
+#main-content #block-daily-consumption-profile-charts .content #block-daily-consumption-profile-charts-options a:visited,
+#main-content #block-consumption-report-charts .content #block-consumption-report-charts-options a:visited,
+#main-content #block-load-profile-charts .content #block-load-profile-charts-options a:visited{
+	color:#0b5676;
+}
+
+#main-content #block-daily-consumption-profile-charts .content #block-daily-consumption-profile-charts-view,
+#main-content #block-consumption-report-charts .content #block-consumption-report-charts-view,
+#main-content #block-load-profile-charts .content #block-load-profile-charts-view{
+	text-align: center;
+	margin-top: 10px;
+}
+
+#main-content #block-consumption-report-charts .content #block-consumption-report-charts-legend{
+	text-align: center;
+}
+
+#main-content #block-consumption-report-charts .content #block-consumption-report-charts-legend .column{
+	width: 280px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px 10px;
+}
+
+#main-content #block-consumption-report-charts .content #block-consumption-report-charts-legend .column .data{
+	margin: 20px 0px 10px 0px; 
+}
+
+#main-content #block-consumption-report-charts .content #block-consumption-report-charts-legend .column .data .data-title{
+	font-weight: bold;	
+	margin-bottom: 2px;
+}
+
+#modal-daily-consumption-profile{	
+	left : 400px;
+	top : 400px;
+	padding-bottom: 20px;
+}
+
+#modal-consumption-report{
+	left : 700px;
+	top : 400px;
+	padding-bottom: 20px;
+}
+
+#modal-load-profile{
+	left : 1000px;
+	top : 400px;
+	padding-bottom: 20px;
+}
+
+.modal .consumption-date-select{
+	margin-bottom: 30px;
+}
+
+.modal .select-wrapper .small-select-wrapper.left-select{
+	margin-right: 8px;
+}
+
+.modal .select-wrapper.included-weekdays-select{
+	margin-top: 20px;
+}
+
+.modal .select-wrapper .radio-wrapper{
+	margin-top: 5px;
+}
+
+.modal .select-wrapper #modal-daily-consumption-profile-input-all-weekdays,
+.modal .select-wrapper #modal-daily-consumption-profile-input-same-weekday{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.modal .select-wrapper label{
+	font-size: 12px;
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 3px;
+}
+
+.modal .button-select{
+	margin-top: 40px;
+	padding: 0px 30px;
+}
+
+.modal .included-weekdays-select table{
+	margin-top: 5px;	
+}
+
+.modal .included-weekdays-select table .day{
+	font-size: 14px;
+	text-align: center;
+}
+
+.modal .included-weekdays-select table .day input{
+	margin-top: 5px;	
+}

@@ -1,0 +1,9 @@
+body {font-size: 1.1em;}
+#nav-search-in #nav-search-in-content {display:none;}
+.nav-aui, .nav-aui .nav-submit-button .nav-submit-input, .nav-aui #nav-subnav-container #nav-subnav .nav-subnav-item, .nav-aui #nav-subnav .nav-category-button, .nav-aui #nav-subnav-container #nav-subnav {font-size: inherit !important;}
+.nav-aui #nav-search-label {left:170px;}
+#nav-subnav {font-size: 1.4em;}
+.carousel-control, .carousel-progress-bar-container {display: none;}
+.scrollover.carousel-control {display: block;position: absolute; top: 7.5em;font-size:1.3em;cursor:pointer;}
+.scrollover.carousel-control:hover {text-decoration:none;}
+.scrollover.carousel-control div {padding-top: .3em;padding-left:.3em;}

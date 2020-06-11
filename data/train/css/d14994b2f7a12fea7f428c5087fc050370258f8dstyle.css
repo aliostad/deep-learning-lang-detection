@@ -1,0 +1,38 @@
+body {
+    font-size: 15px;
+}
+
+.rModel {
+    padding:10px;
+    background: #eee;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,128,255,0.8);
+}
+
+.rModel + .rModel {
+    margin-top: 20px;
+}
+
+.rModel .rModel {
+    padding:10px;
+    background: #ccc;
+    border: 1px solid #bbb;
+}
+
+.rModel > div {
+    margin-top: 8px;
+    padding:4px;
+    border-radius: 6px;
+    border: 1px dashed #888;
+}
+
+.rModel > input {
+    padding:4px;
+    font-size: 15px;
+}
+
+h5 {
+    margin: 4px 0 12px;
+    font-size: 18px;
+    color: #048;
+}

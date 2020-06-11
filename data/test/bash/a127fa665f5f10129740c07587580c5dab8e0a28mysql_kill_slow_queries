@@ -1,0 +1,31 @@
+#!/bin/bash
+
+: ${SLOW:=30}
+: ${LOAD:=9}
+
+while true; do 
+  db_load="$(uptime  | awk '{print $(NF-2)}' | cut -d, -f1 | cut -d. -f1)"
+
+  echo "___ $(date) $(uptime)"
+
+  mysql -e 'show processlist' | grep SELECT | grep Query | sort -k6 -n  | awk -vslow=10 '$6 > slow {print}'
+
+  if [[ "$db_load" > "$LOAD" ]]; then
+    echo "LOAD is $db_load, kill queries > $SLOW seconds"
+    {
+      mysql -e 'show processlist' | grep SELECT | grep Query \
+        | sort -k6 -n | tee -a killed.log \
+        | awk -vslow=$SLOW '$6 > slow {print}' | awk '{print $1}'
+    } | sort -u | while read -r a; do 
+      mysql -e "kill $a"
+    done
+  fi
+ 
+  sleep 5
+done | while read -r l; do
+  echo "$l"
+  set -- $l
+  if [[ "$#" > 0 && "$1" != "___" ]]; then
+    ./bin/mysql_slow_bytid "$1"
+  fi
+done | tee -a slow.log

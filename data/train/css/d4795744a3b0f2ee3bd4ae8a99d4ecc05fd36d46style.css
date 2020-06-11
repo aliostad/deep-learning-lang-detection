@@ -1,0 +1,93 @@
+header{padding:30px 0;}
+header .content{width:1200px;margin:0 auto;}
+header .content h1{margin:0;text-align:center;font-size:40px}
+
+body{font-family:'Helvetica Neue',Helvetica,sans-serif;background-repeat:repeat;margin:0;min-width:980px;}
+h1,h2,h3,h4,h5,h6{color:#525252;font-weight:normal}
+header{padding:30px 0;}
+a{text-decoration:none}
+
+header{padding:30px 0;}
+
+#vis{padding:35px 0 20px;height:1100px;background-color:rgba(255,255,255,0.75);-webkit-box-shadow:0 0 10px rgba(0,0,0,0.5);-moz-box-shadow:0 0 10px rgba(0,0,0,0.5);-ms-box-shadow:0 0 10px rgba(0,0,0,0.5);-o-box-shadow:0 0 10px rgba(0,0,0,0.5);box-shadow:0 0 10px rgba(0,0,0,0.5);}
+#vis .content{width:1200px;padding:0 10px;margin:0 auto;position:relative;}
+
+
+
+.circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.line {
+  stroke: #999;
+  stroke-opacity: .6;
+}
+
+
+.tipsy .tipsy-inner {
+  background-color: rgba(255,255,255,0.85);
+  color: #000;
+  border: 1px solid #f0f0f0;
+  display: block;
+}
+.tipsy .tipsy-inner div.article-info {
+  /*margin-left: 55px;*/
+  text-align: left;
+}
+
+.tipsy .tipsy-inner .title-name {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.tipsy .tipsy-inner .url {
+  
+  margin-bottom: 2px;
+}
+
+
+.tipsy .tipsy-inner:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#legend-wrapper {
+	float: right;
+}
+#pie-wrapper {
+	float:left;
+}
+#table-wrapper {
+	float: right;
+}
+.table {
+	font-size: 26px;
+}
+td, th {
+	padding: 2px 2px;
+	text-align: right;
+
+}
+th {
+	padding-left: 0px;
+	font-weight: bold;
+}
+
+td {
+	width: 250px;
+}
+
+#write-up{padding:35px 0 20px;color:#525252;}
+#write-up .content{width:1160px;margin:0 auto;}
+#write-up .content p{font-size:25px;line-height:1.5;margin:15px 0}
+#write-up .content h2{font-size:30px;border-left:solid #bdbdbd;padding-left:15px;-webkit-transition:border-left-color .25s;-moz-transition:border-left-color .25s;-ms-transition:border-left-color .25s;-o-transition:border-left-color .25s;transition:border-left-color .25s;line-height:1.25}
+#write-up .content li{font-size:22px;line-height:1.5;margin:15px 0}
+#write-up .content ul{font-size:25px;line-height:1.5;margin:15px 0}
+#write-up .content ul li b{margin-right:1em}
+
+
+

@@ -1,0 +1,5 @@
+questZone	navPoints	laps	specialTarget	triggerEvent	triggerSplitCondition	triggerArg	triggerArg2	triggerOn	triggerEndsMission	triggerDelay	autoReward	questDelay	_DESIGNER NOTES_	questSeries
+s	s	i[1]	s	"e(none=0,splitquest=1,surpriseattack=2)[none]"	"e(triggerOn=0,success=1,failure=2,both=3)[triggerOn]"	s	s	i	i	i	i	i	s	s
+space_tatooine	space_tatooine:poi_privateer_patrol_1	1		splitquest	triggerOn	destroy_surpriseattack:poi_tatooine_privateer_2_a		2	1	10	0	0	The player happened to be in the wrong place at the wrong time and is attacked by Valarians. 	
+	space_tatooine:poi_privateer_patrol_2													
+	space_tatooine:poi_privateer_patrol_3													

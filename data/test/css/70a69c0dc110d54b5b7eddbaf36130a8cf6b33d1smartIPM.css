@@ -1,0 +1,129 @@
+
+
+div.dashboard_tile{
+	padding:10px;
+}
+
+div.dashboard_tile h4{
+	overflow: hidden;
+  height:26px;
+}
+
+div.dashboard_tile .panel-body{
+	overflow: hidden;
+}
+
+
+.dashboard_model_res {	
+	text-align: center;
+  margin:0px;
+	padding:0px;
+}
+
+.dashboard_model_res .smartipm_value{
+	height:160pt;	
+}
+
+
+.smartipm_perc{
+  line-height:100%;
+	font-size:80pt;
+}
+
+.smartipm_date{
+  line-height:100%;
+	font-size: 27pt;
+}
+
+#smartipm_footer{
+  text-align: center;
+	padding-top:20px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.dashboard_tile panel-body{
+   padding:0px;
+}
+
+#edit_widget_modal .input-group-addon{
+	width:100px;
+}
+
+#dashboard_title{
+    width: 360px;
+}
+
+#map_widget{
+    width: 360px;
+		height:250px;
+}
+
+#advanced_params_button{
+	margin-top:10px;
+}
+
+#advanced_params input, #advanced_params textarea{
+    width: 360px;
+
+}
+#smartIPM_map{
+   margin-top:10px;
+}
+#startModel, #endModel{
+display:none;
+} 
+#startModelSel,#endModelSel{
+    width: 180px;
+}
+
+#startModelNum,#endModelNum{
+    width: 100px;
+}
+
+#startModelEx,#endModelEx{
+   float:right;
+   margin:3px;
+}
+
+.sipm_change{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+#final_result .sipm_change{
+	bottom: 20px;
+	right: 20px;
+}
+smartipm_icon{
+text-align:center;
+}
+
+.smartipm_title{
+	font-size: 15pt;
+}
+
+.sipm_table{
+	height: 180px;
+	margin:0px;
+	padding:0px;
+}
+
+.sipm_chart{
+	height: 180px;
+	margin:0px;
+	padding:0px;
+}
+
+.sipm_table table td, .sipm_table table td{
+  padding:3px;
+}
+
+.sipm_table {
+ overflow-y: auto;
+}

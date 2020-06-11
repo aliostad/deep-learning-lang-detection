@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+	<profiles>
+		<profile>
+			<id>it-tests</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<repositories>
+				<repository>
+					<id>mule-public</id>
+					<url>https://repository.mulesoft.org/nexus/content/repositories/public/</url>
+				</repository>
+				<repository>
+					<id>mule-ee-releases</id>
+					<url>https://repository.mulesoft.org/nexus/content/repositories/ci-releases/</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+						<id>mule-ee-releases</id>
+						<name>Mule Release Repository</name>
+						<url>https://repository.mulesoft.org/nexus/content/repositories/ci-releases</url>
+					</pluginRepository>
+				<pluginRepository>
+					<id>local.central</id>
+					<url>@localRepositoryUrl@</url>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+	</profiles>
+</settings>

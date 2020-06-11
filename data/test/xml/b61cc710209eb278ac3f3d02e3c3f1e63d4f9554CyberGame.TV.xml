@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <service_name>CyberGame.TV</service_name>
+  <service_bbcode>cybergame,cybergametv,cybergame.tv</service_bbcode>
+  <service_regex><![CDATA[https?://[\w\.]*?cybergame\.tv/(?P<sval1>[\w-]+)]]></service_regex>
+  <service_url><![CDATA[http://www.cybergame.tv/{serviceVAL1}]]></service_url>
+  <service_callback>EWRrio_Services_CyberGame</service_callback>
+  <service_channel>dumpChannel</service_channel>
+  <service_streams>dumpStreams</service_streams>
+  <service_video><![CDATA[<iframe width="100%" height="100%" scrolling="no" frameborder="0" src="http://api.cybergame.tv/p/embed.php?c={serviceVAL1}&w=100pc&h=100pc&type=embed"></iframe>]]></service_video>
+  <service_chat><![CDATA[&nbsp;]]></service_chat>
+</service>

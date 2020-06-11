@@ -1,0 +1,83 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: "微软雅黑";
+	background-color: #e8e8e8;  
+}
+/*more-preferential begin*/
+#more-preferential {
+	width: 100%;
+	margin-top: 20px;	
+}
+
+/*preferential-list begin*/
+.preferential-pic {
+	overflow: hidden;
+	background-color: #fff;
+	margin-bottom: 15px;
+	padding: 8px;
+}
+.preferential-pic .pre-picture {
+	max-width: 70px;
+	float: left;
+}
+.pre-picture img {
+	width:100%; 
+	max-width: 70px;
+	max-height: 70px;
+	margin-top: 13px;
+
+}
+.preferential-info {
+	float: left;
+}
+.product-name ,.old-price{
+	color: #9b9b9b;
+}
+.current-price {
+	color: #ce0910;	
+}
+.product-name {
+	font-size: 150%;
+	margin-left: 10px;
+	display: inline-block;
+	margin-top: 4px;
+}
+.current-price,.old-price {
+	margin-left: 10px;
+	display: inline-block;
+	margin-top: 5px;
+}
+.link-pic {
+	width: 10%;
+	float: right;
+}
+.old-price {
+	text-decoration: line-through;
+}
+a.links {
+	float: right;
+	margin-top: 20px;
+}
+/*add-load begin*/
+#add-load {
+	width: 60%;
+	background-color: #dadad8;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 10px;
+	padding: 5px 0px 5px 0px;
+}
+#add-load a {
+	color: #ce0910;
+}
+/*add-load end*/
+/*preferential-list end*/
+/*footer begin */
+#footer li {
+	width: 40px;
+}
+/*footer end*/
+/*more preferential end*/

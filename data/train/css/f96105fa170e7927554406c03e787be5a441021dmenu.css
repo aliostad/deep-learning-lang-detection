@@ -1,0 +1,38 @@
+
+/* Button */
+#service-command-pallet-container .slicknav_btn {
+	background: none;
+}
+/* Button Lines */
+#service-command-pallet-container .slicknav_menu .slicknav_icon-bar {
+  background-color: #fdf5e6;
+}
+#service-command-pallet-container .slicknav_menu {
+    background: none;
+	padding:0;
+}
+#service-command-pallet-container .slicknav_nav ul, #demo2 .slicknav_nav li {
+	/*border-top:2px solid #192132;*/
+    border-top: 0;
+	margin-top:0;
+	margin-right:0;
+	margin-bottom:0;
+}
+#service-command-pallet-container .slicknav_nav .slicknav_item:hover {
+	background:none;
+	color:#81a9ff;
+}
+#service-command-pallet-container .slicknav_nav a:hover{
+	background:none;
+	color:#81a9ff;
+}
+#service-command-pallet-container .slicknav_nav .slicknav_txtnode {
+    padding: 7px 15px;
+	margin: 0;
+    width: 38px;
+}
+
+aside.figures figure {
+    display: inline-block;
+    border: 1px solid;
+}

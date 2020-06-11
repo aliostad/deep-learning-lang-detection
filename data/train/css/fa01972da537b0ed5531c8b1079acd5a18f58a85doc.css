@@ -1,0 +1,336 @@
+/**
+ * 技术资料
+ */
+
+@charset "UTF-8";
+
+
+/* Banner Start */
+
+.banner {
+    height: 300px;
+    background: url("../images/doc/banner.jpg") no-repeat center center/auto auto;
+}
+
+
+
+/* Banner End */
+
+
+/* 多平台支持开始 */
+
+.platform ul,
+.language ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.platform ul li,
+.language ul li {
+    padding: 0;
+}
+
+.platform ul li .wrapper,
+.language ul li .wrapper {
+    margin: 9px;
+    padding: 20px;
+    border: 1px solid #CCC;
+    -webkit-transition: border-color, color .3s, .3s;
+    transition: border-color, color .3s, .3s;
+}
+
+.platform ul li .wrapper:hover,
+.language ul li .wrapper:hover {
+    border-color: #2277DA;
+    color: #2277DA;
+    -webkit-transition: border-color, color .3s, .3s;
+    transition: border-color, color .3s, .3s;
+}
+
+.platform ul li .wrapper i,
+.language ul li .wrapper i {
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 66px;
+    height: 66px;
+    background: url("../images/doc/platform.png") no-repeat;
+}
+
+.platform ul li .wrapper i.grey,
+.language ul li .wrapper i.grey {
+    background-position-x: 0;
+}
+
+.platform ul li .wrapper i.hl,
+.language ul li .wrapper i.hl {
+    margin-top: -66px;
+    background-position-y: -66px;
+}
+
+.platform ul li.java .wrapper i,
+.language ul li.java .wrapper i {
+    background-position-x: 0;
+}
+
+.platform ul li.android .wrapper i,
+.language ul li.android .wrapper i {
+    background-position-x: -66px;
+}
+
+.platform ul li.ios .wrapper i,
+.language ul li.ios .wrapper i {
+    background-position-x: -132px;
+}
+
+.platform ul li.html5 .wrapper i,
+.language ul li.html5 .wrapper i {
+    background-position-x: -198px;
+}
+
+.platform ul li.linux .wrapper i,
+.language ul li.linux .wrapper i {
+    background-position-x: -264px;
+}
+
+.platform ul li.windows .wrapper i,
+.language ul li.windows .wrapper i {
+    background-position-x: -330px;
+}
+
+.platform ul li.osx .wrapper i,
+.language ul li.osx .wrapper i {
+    background-position-x: -390px;
+}
+
+.platform ul li .wrapper i.grey,
+.language ul li .wrapper i.grey,
+.platform ul li .wrapper:hover i.hl,
+.language ul li .wrapper:hover i.hl {
+    opacity: 1;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+.platform ul li .wrapper i.hl,
+.language ul li .wrapper i.hl,
+.platform ul li .wrapper:hover i.grey,
+.language ul li .wrapper:hover i.grey {
+    opacity: 0;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+.platform ul li .wrapper h4,
+.language ul li .wrapper h4 {
+    font-size: 12px;
+    margin: 20px auto 0 auto;
+}
+
+
+
+/* 多平台支持结束 */
+
+
+/* API 接口开始 */
+
+.api {
+    margin-bottom: 50px;
+}
+
+.api .api-desc {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.api .api-item {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.api .api-item .wrapper {
+    /*max-width: 360px;*/
+    bottom: 0;
+}
+
+.api .api-item .wrapper img {
+    display: inline-block;
+}
+
+.api .api-item .wrapper.pull-right {
+    margin: 35px 45px 23px auto;
+}
+
+.api .api-item .wrapper.pull-left {
+    margin: 35px auto 23px 45px;
+}
+
+.api .api-item .wrapper .api-tit {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.api .api-item .api-sub-desc {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+    margin: 0 26px;
+}
+
+.api .is-support {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.api .is-support i {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 22px;
+    color: #2277DA;
+    border: 2px solid #2277DA;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.api .downloads {
+    margin: 0 auto;
+    width: 605px;
+    overflow: hidden;
+}
+
+.api .downloads .api-down {
+    padding: 16px 22px;
+    line-height: 16px;
+    background-color: #2277DA;
+    color: #FFF;
+    border-radius: 5px;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+}
+
+.api .downloads .api-down:first-child {
+    margin-right: 22px;
+}
+
+.api .downloads .api-down:hover {
+    background-color: #378FF5;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+}
+
+.api .downloads .api-down i {
+    margin-right: 10px;
+}
+
+
+
+/* API 接口结束 */
+
+
+/* SDK 与 OCX 开始 */
+
+.sdk-ocx-common ul li {
+    padding: 0;
+}
+
+.sdk-ocx-common ul li .wrapper {
+    margin: 9px;
+    padding: 16px;
+    border: 1px solid #CCC;
+    position: relative;
+}
+
+.sdk-ocx-common ul li .wrapper:hover {
+    border-color: #2277DA;
+    -webkit-transition: border-color .3s;
+    transition: border-color .3s;
+}
+
+.sdk-ocx-common ul li .wrapper:hover .media-left img.hl,
+.sdk-ocx-common ul li .wrapper .media-left img.gray {
+    opacity: 1;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+.sdk-ocx-common ul li .wrapper .media-left img.hl,
+.sdk-ocx-common ul li .wrapper:hover .media-left img.gray {
+    opacity: 0;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+.sdk-ocx-common ul li .wrapper .media-left img.hl {
+    margin-top: -67px;
+}
+
+.sdk-ocx-common ul li .wrapper h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sdk-ocx-common ul li .wrapper:hover h4 {
+    color: #2277DA;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+}
+
+.sdk-ocx-common ul li .wrapper p {
+    font-size: 12px;
+    line-height: 22px;
+    color: #666;
+}
+
+.sdk-ocx-common ul li .wrapper:hover p {
+    color: #2277DA;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+}
+
+.sdk-ocx-common ul li .wrapper .pltfm-support {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #9A9A9A;
+    color: #FFF;
+    font-size: 18px;
+    line-height: 32px;
+    height: 32px;
+    width: 66px;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+}
+
+.sdk-ocx-common ul li .wrapper:hover .pltfm-support {
+    background-color: #2277DA;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+}
+
+.sdk-ocx-common ul li .wrapper .pltfm-support i {
+    margin: 0 5px;
+}
+
+
+
+/* SDK 与 OCX 结束 */
+
+
+/* OCX 开始 */
+
+.ocx ul {
+    margin-bottom: 41px;
+}
+
+
+
+/* OCX 结束 */

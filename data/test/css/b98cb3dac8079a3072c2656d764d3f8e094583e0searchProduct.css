@@ -1,0 +1,17 @@
+#popup { width:600px; min-height: 360px; }
+.xans-myshop-ordersearchproductform .ec-base-table.typeWrite table { table-layout:fixed; }
+.xans-myshop-ordersearchproductform .ec-base-table.typeWrite img { vertical-align:middle; }
+.xans-myshop-ordersearchproductform .ec-base-table.typeWrite select { max-width:95%; height:24px; }
+.xans-myshop-ordersearchproductform .ec-base-table.typeWrite input { width:340px; }
+.xans-myshop-ordersearchproductform .btnSearch { margin:10px 0 20px; text-align:center; }
+.xans-myshop-ordersearchproductform .listCtrl { overflow:hidden; margin:0 0 10px; }
+.xans-myshop-ordersearchproductform .listCtrl .result { float:left; }
+.xans-myshop-ordersearchproductform .listCtrl .select { float:right; }
+.xans-myshop-ordersearchproductform .ec-base-table .scroll { max-height:285px; }
+.xans-myshop-ordersearchproductform .ec-base-table .scroll .message td { height:84px; }
+.xans-myshop-ordersearchproductform .ec-base-table td.product { overflow:hidden; padding-left:10px; }
+.xans-myshop-ordersearchproductform .ec-base-table td.product a { color:#747474; }
+.xans-myshop-ordersearchproductform .ec-base-table td.product p { margin:0 0 0 10px; max-width:150px; }
+.xans-myshop-ordersearchproductform .ec-base-table td.product p,
+.xans-myshop-ordersearchproductform .ec-base-table td.product .thumbnail { display:inline-block; vertical-align:middle; }
+.xans-myshop-ordersearchproductform .ec-base-table td.product .thumbnail img { width:46px; }

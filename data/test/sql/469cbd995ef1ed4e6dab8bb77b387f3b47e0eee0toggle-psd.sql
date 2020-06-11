@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4424, "Toggle PSD", "4.1", "1.3", NULL, now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77216, 4424, "append_toggle_psd_overlay_images", "/includes/footer.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77217, 4424, "add_toggle_psd_admin_bar", "/includes/admin-bar.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77218, 4424, "load_toggle_psd_assets", "/includes/load-assets.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77219, 4424, "add_toggle_psd_admin_bar_subnodes", "/includes/admin-bar.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77220, 4424, "register_toggle_psd_cpt", "/includes/cpt-toggle-psd.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554441, 4424, "Toggle_PSD_Utils", "update_transient", "/includes/class-utility.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554442, 4424, "Toggle_PSD_Utils", "get_transient", "/includes/class-utility.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554443, 4424, "Toggle_PSD", "get_json", "/includes/class-toggle-psd.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554444, 4424, "Toggle_PSD", "get_psds", "/includes/class-toggle-psd.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47364, 4424, "init", "'register_toggle_psd_cpt'", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47365, 4424, "wp_footer", "'append_toggle_psd_overlay_images'", 30, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47366, 4424, "wp_enqueue_scripts", "'load_toggle_psd_assets'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47367, 4424, "wp_before_admin_bar_render", "'add_toggle_psd_admin_bar'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47368, 4424, "save_post", "array('Toggle_PSD_Utils','update_transient')", 10, now(), now());

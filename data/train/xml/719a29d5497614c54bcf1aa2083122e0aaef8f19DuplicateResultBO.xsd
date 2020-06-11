@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:bons0="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+    <xsd:include schemaLocation="DuplicateSearchCriteriaBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+
+    <xsd:complexType name="DuplicateResultBO">
+        <xsd:sequence>
+      <xsd:element minOccurs="0" name="isExactDuplicateFound" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="isSuspectDuplicateFound" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="isLOBMatched" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="duplicateSearchCriteria" type="bons0:DuplicateSearchCriteriaBO"/>
+        </xsd:sequence>
+        
+                  
+            
+    </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,33 @@
+#!/bin/bash
+set -e
+
+outdir="edmbackend_export_$(date +'%Y-%m-%d')"
+
+models="
+User
+Track
+Document
+Label
+Contract
+Channel
+Album
+"
+
+rm -rf $outdir
+mkdir -p $outdir
+
+for model in $models; do
+  [[ -e "fields/${model}.fields" ]] && args="-f $(tr "\n" "," < "fields/${model}.fields")" || args=""
+  echo "export ${model}"
+  mongoexport -d edmbackend -c $model > "$outdir/${model}.json"
+  <"$outdir/${model}.json" "$(npm bin)/json2csv" "$args" > "$outdir/${model}.csv"
+  echo ""
+done
+
+firsts() {
+  awk '{ print $1 }' | head -c 8
+}
+
+dirhash=$(sha1sum $outdir/* | firsts | sort | sha1sum | firsts)
+
+zip -r "${outdir}_${dirhash}.zip" "$outdir"

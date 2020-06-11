@@ -1,0 +1,255 @@
+.sketch #source {
+    width: 100%;
+    height: 500px;
+}
+
+.sketch #content {
+    height: calc(100% - 63px);
+    height: -webkit-calc(100% - 63px);
+    position: relative;
+    overflow: hidden;
+}
+
+.sketch #source-content {
+    max-width: 740px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.sketch #sketch-loading {
+    display: block;
+    margin: 25vh auto 25vh auto;
+}
+
+.sketch #content > div {
+    display: inline-block;
+}
+
+.sketch {
+    height: calc(100vh - 82px);
+    height: -webkit-calc(100vh - 82px);
+}
+
+.sketch #result-content {
+    position: absolute;
+    transition: left 0.5s ease, width 0.5s ease;
+    z-index: 10;
+    overflow-y: auto;
+    overflow-x: auto;
+    height: 100%;
+    max-width: 100%;
+    background-color: #FFFFFF;
+}
+
+.sketch #result-status {
+    margin-left: 10px;
+    padding: 7px;
+}
+
+.sketch iframe {
+    display: block;
+    position: relative;
+    margin: auto;
+    border: 1px dashed #828282;
+    transition: width 0.5s ease, height 0.5s ease;
+}
+
+.sketch #ajax-status {
+    width: 130px;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.sketch #ajax-status img {
+    width: 100px;
+    height: 100px;
+}
+
+.sketch .CodeMirror {
+    height: auto;
+    border-left: 1px solid #ecf0f1;
+    border-right: 1px solid #ecf0f1;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.sketch .CodeMirror-scroll {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.sketch .CodeMirror pre {
+    font-size: 14px;
+}
+
+.sketch .nav-tabs .btn-group {
+    float: right;
+}
+
+body .navbar {
+    border-radius: 0px;
+}
+
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+body .container.api a {
+    text-decoration: underline;
+}
+
+.api .category-div {
+    background-color: #F7F8FA;
+    padding: 7px;
+    margin: 10px 0px;
+}
+
+.api .breadcrumb {
+    background-color: transparent;
+    padding-left: 0px;
+}
+
+.api .category {
+    margin: 0px 0px 7px 0px;
+}
+
+.api .category a {
+    color: #18bc9c;
+}
+
+.api .subcategory a {
+    color: #3498db;
+}
+
+.api .function a {
+    margin: 5px 0px;
+    color: #2c3e50;
+}
+
+.api .function sup {
+    margin-left: 2px;
+}
+
+.api .function-doc {
+    background-color: #f7f8fa;
+    margin: 10px 0px;
+    padding: 10px 0px 10px 10px;
+}
+
+.api .function-doc dl {
+    margin-bottom: 0px;
+}
+
+.api .function-doc h3 {
+    margin: 0px;
+}
+
+.api .function-index {
+    margin-bottom: 30px;
+}
+
+.api .arg {
+    display: block;
+}
+
+.api .docstring {
+    background-color: transparent;
+    border: 0px;
+    color: initial;
+    padding: 0px;
+    margin: 0px;
+}
+
+.api dt {
+    margin-top: 10px;
+}
+
+.about .features dd {
+    margin-bottom: 10px;
+}
+
+.about dl.features {
+    margin-bottom: 0px;
+}
+
+.about .features dt {
+    font-size: 17px;
+}
+
+.about h4 {
+    margin-top: 0px;
+}
+
+.about .section {
+    margin: 40px 0px;
+}
+
+.example {
+    width: 200px;
+    margin: auto;
+}
+
+.example .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.example .footer * {
+    margin: 0px 5px;
+}
+
+.example .name {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.example .author {
+    text-align: center;
+}
+
+.example .canvas-container {
+    margin-top: 5px;
+    position: relative;
+}
+
+.example .canvas-container .play, .example .canvas-container .hover {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 200px;
+}
+
+.example .canvas-container .play {
+    background-image: url("/img/play.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+.example .canvas-container .play:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#add-example {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.examples-page .example {
+    margin-top: 50px;
+}
+
+.example .pause:hover {
+    cursor: pointer;
+}
+
+#share-dialog input {
+    cursor: pointer;
+    height: 35px;
+    padding: 5px;
+}

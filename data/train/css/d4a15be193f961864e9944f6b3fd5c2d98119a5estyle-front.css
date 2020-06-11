@@ -1,0 +1,18 @@
+nav.navbar { background: #fff; border-color: #ccc; box-shadow: 0 0 2px 0 #ccc; }
+nav.navbar a { color: #18a0e1; }
+nav.navbar ul.navbar-nav a { color: #18a0e1; border-style: solid; border-width: 0 0 2px 0; border-color: #d4d4d4; }
+nav.navbar ul.navbar-nav a:hover { background: #fff; }
+nav.navbar ul.navbar-nav a:visited,
+nav.navbar ul.navbar-nav a:focus,
+nav.navbar ul.navbar-nav a:active { background: #efefef; }
+nav.navbar ul.navbar-nav a:hover { border-color: #18a0e1; }
+nav.navbar li.divider { background: #ccc; }
+nav.navbar button.navbar-toggle { background: #18a0e1; border-radius: 2px; }
+nav.navbar button.navbar-toggle:hover { background: #999; }
+nav.navbar button.navbar-toggle > span.icon-bar { background: #fff; }
+nav.navbar ul.dropdown-menu { border: 0; background: #fff; border-radius: 4px; margin: 4px 0; box-shadow: 0 0 4px 0 #ccc; }
+nav.navbar ul.dropdown-menu > li > a { color: #444; }
+nav.navbar ul.dropdown-menu > li > a:hover { background: #18a0e1; color: #fff; }
+nav.navbar span.badge { background: #18a0e1; font-weight: normal; font-size: 11px; margin: 0 4px; }
+nav.navbar span.badge.new { background: rgba(255, 0, 0, 0.8); color: #fff; }
+

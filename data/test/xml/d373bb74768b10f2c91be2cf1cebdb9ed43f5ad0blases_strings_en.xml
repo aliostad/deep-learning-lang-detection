@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+    <message id="blases.score">
+        Score: $0
+    </message>
+
+    <message id="blases.bubbles">
+        Bubbles: $0
+    </message>
+
+    <message id="level.start">
+        Start
+    </message>
+
+    <message id="level.finish">
+        Finish
+    </message>
+
+    <message id="button.back">
+        Back
+    </message>
+
+    <message id="button.newgame">
+        New Game
+    </message>
+
+    <message id="button.options">
+        Options
+    </message>
+
+    <message id="button.help">
+        Help
+    </message>
+
+    <message id="button.exit">
+        Exit
+    </message>
+
+    <message id="button.screen">
+        Screen
+    </message>
+
+    <message id="button.continue">
+        Continue
+    </message>
+
+    <message id="button.nextlevel">
+        Next Level
+    </message>
+
+    <message id="button.replaylevel">
+        Peplay Level
+    </message>
+
+    <message id="button.tomainmenu">
+        To Main Menu
+    </message>
+
+    <message id="button.playallagain">
+        Play All Levels Again
+    </message>
+
+    <message id="button.levels">
+        Levels
+    </message>
+
+    <message id="level.stats">
+        Best Score: $0 Blases: $1
+    </message>
+
+    <message id="bonus1.condition">
+        Pass levels 1-6 with less than 30 blases
+    </message>
+
+    <message id="pause.winlevel">
+You win! Score for the level: $0
+Overall score: $1
+    </message>
+
+    <message id="pause.wingame">
+        You beat the game! Final score: $0
+    </message>
+
+    <message id="pause.lose">
+        You lose. Final score: $0
+    </message>
+
+    <message id="pause.pause">
+        Pause
+    </message>
+
+    <message id="help.helptext">
+Make it from the start to the finish shooting bubbles!
+
+
+Controls:
+Left Click - shoot a new bubble or select some existing
+Shift + Left Click - shoot a new bubble preserving the current
+bubble selection
+Right Click - pop some bubble
+Space - stop the current selected bubble
+Esc - pause the game
+    </message>
+
+    <message id="button.language">
+        Language
+    </message>
+
+    <message id="button.russian">
+        Russian
+    </message>
+
+    <message id="button.english">
+        English
+    </message>
+</messages>

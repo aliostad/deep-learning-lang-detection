@@ -1,0 +1,56 @@
+.tree > .node-metadata > .head > .toggle {
+  background-image: url(../images/folder_business_model.png);
+}
+
+.tree > .node-metadata .business-model > .head > .toggle {
+  background-image: url(../images/business_model.png);
+}
+
+.tree > .node-metadata .business-model .business-model-category > .head > .toggle {
+  background-image: url(../images/category.png);
+}
+
+.tree > .node-metadata .business-model .business-model-category .business-model-category-column > .head > .toggle {
+  background-image: url(../images/column.png);
+}
+
+.tree > .node-metadata .business-model .business-model-category .field-type-FACT > .head > .toggle {
+  background-image: url(../images/fact.png);
+}
+
+.tree > .node-metadata {
+}
+
+.tree > .node-metadata .business-model .business-model-category .business-model-category-column > .head > .label {
+  padding-left: 20px;
+  background-repeat: no-repeat;
+}
+
+.tree > .node-metadata .business-model .business-model-category .data-type-NUMERIC > .head > .label {
+  background-image: url(../images/data-numeric.png);
+}
+
+.tree > .node-metadata .business-model .business-model-category .data-type-STRING > .head > .label {
+  background-image: url(../images/data-text.png);
+}
+
+.tree > .node-metadata .business-model .business-model-category .data-type-DATE > .head > .label {
+  background-image: url(../images/data-date.png);
+}
+
+.tree > .node-metadata .business-model .business-model-category .business-model-category-column .business-model-category-column-agg > .head > .label:before {
+  font-family: monospace;
+  content: "\A0\A0";
+}
+
+.tree > .node-metadata .business-model .business-model-category .business-model-category-column .agg-type-AVERAGE > .head > .label:before {
+  content: "µ\A0";
+}
+
+.tree > .node-metadata .business-model .business-model-category .business-model-category-column .agg-type-SUM > .head > .label:before {
+  content: "∑\A0";
+}
+
+.tree > .node-metadata .business-model .business-model-category .business-model-category-column .agg-type-COUNT > .head > .label:before {
+  content: "N\A0";
+}

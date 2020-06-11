@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE service-xml PUBLIC "-//Sun Microsystems, Inc.//DTD JAIN SLEE Service 1.1//EN" "http://java.sun.com/dtd/slee-service_1_1.dtd">
+
+<service-xml>
+    <service id="@service.name@">
+        <service-name>SipRegistrationService</service-name>
+        <service-vendor>@service.vendor@</service-vendor>
+        <service-version>@service.version@</service-version>
+        <root-sbb>
+            <sbb-name>SipRegistrarSbb</sbb-name>
+            <sbb-vendor>Opencloud</sbb-vendor>
+            <sbb-version>1.0</sbb-version>
+        </root-sbb>
+        <default-priority>0</default-priority>
+    </service>
+</service-xml>

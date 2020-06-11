@@ -1,0 +1,33 @@
+.class_1 {background-color:green;}
+.class_2 {background-color:blue;}
+.class_3 {background-color:olive;}
+.class_4 {background-color:teal;}
+.class_5 {background-color:purple;}
+.class_6 {background-color:red;}
+.class_7 {background-color:maroon;}
+.class_8 {background-color:navy;}
+.class_9 {background-color:fuchsia;}
+.class_10 {background-color:aqua;}
+
+table{
+    border: 1px solid black;
+    table-layout: fixed;
+    width: 1280px;
+}
+td {
+    border: 1px solid black;
+    overflow: hidden;
+    width: 50px;
+}
+.td_key_model {
+	background-color:aqua;
+}
+.td_model {
+	background-color:fuchsia;
+}
+.td_key {
+	background-color:aqua;
+}
+.class_grey {
+	background-color:gray;
+}

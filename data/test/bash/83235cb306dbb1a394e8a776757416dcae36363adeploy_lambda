@@ -1,0 +1,15 @@
+#!/bin/bash
+set -ex
+rm -f webCrawler.zip input.txt out err
+echo "{}" > input.txt
+zip -r webCrawler.zip *.js  node_modules
+aws lambda delete-function --function-name crawl || /bin/true
+aws lambda upload-function --function-name crawl --function-zip webCrawler.zip \
+--role arn:aws:iam::107728101346:role/lambda_exec_role --mode event \
+--handler webCrawler.handler \
+--runtime nodejs \
+--debug --timeout 20
+aws lambda invoke-async  --debug \
+--function-name crawl \
+--invoke-args input.txt \
+--output json  > out 2> err

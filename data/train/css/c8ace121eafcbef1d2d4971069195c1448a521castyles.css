@@ -1,0 +1,54 @@
+.wavefront {
+
+}
+.dir-rtl .wavefront .wavefront-model-container {
+    display: inline-block;
+    margin: 10px;
+}
+
+.wavefront .wavefront-model-frame {
+    background-color: #fff;
+    display: inline-block;
+    margin: 10px auto;
+    text-align:	center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: box-shadow 150ms, border-color 150ms, background-color 150ms, color 150ms;
+    -webkit-transition: box-shadow 150ms, border-color 150ms, background-color 150ms, color 150ms;
+    color: #696969;
+}
+
+.wavefront .wavefront-model-container .wavefront-model-frame:hover {
+    transition: box-shadow 150ms, border-color 150ms;
+    text-decoration:none;
+    box-shadow: 0 0 15px #ccc;
+    -webkit-box-shadow: 0 0 15px #ccc;
+    border-color: #999;
+    background-color: #f6f6f6;
+    color: #333;
+}
+
+.wavefront .wavefront-model-container .wavefront-model-frame:active {
+    box-shadow: 0 0 15px #666;
+    -webkit-box-shadow: 0 0 15px #666;
+}
+
+.wavefront .wavefront-model-caption {
+    font-family: 'Verdana','Lucida Grande',sans-serif;
+    font-size: 11px;
+    margin-bottom: 3px;
+    text-decoration: none;
+}
+
+.wavefront .wavefront-model-caption {
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+.wavefront .wavefront-model-caption.top {
+    margin-bottom: -3px;
+}
+
+#mod-wavefront-view .generalbox {
+    overflow: auto;
+}

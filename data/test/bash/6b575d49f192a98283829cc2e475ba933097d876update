@@ -1,0 +1,129 @@
+#!/bin/bash
+# A script that stops MyMoney server, updates it to the newest SVN
+# revision and starts again. If any step is unsuccessful, the files
+# are reverted and the old version is run instead.
+
+# Get the trigger mode. If no specified, it's manual.
+if [ -n "$1" ]; then
+	TRIGGER_MODE=$1
+else
+	TRIGGER_MODE=manual
+fi
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# Load settings
+source $SCRIPT_DIR/rab.config
+
+DB_PATH=$SCRIPT_DIR/web_status/db/development.sqlite3
+SQL_FILE=`mktemp /tmp/rab-XXXXXX`
+WORKING_DIR=`pwd`
+
+# Somehow when calling this script from within ruby, the BUNDLE_GEMFILE
+# may be set to the Gemfile of the caller, making further calls to bundler
+# incorrect
+BUNDLE_GEMFILE=
+
+# Function that invokes arbitrary commands and logs them along with output
+# and exit code to the database. The exit code is additionally stored as
+# INVOKE_EXIT_CODE.
+function invoke {
+	COMMAND=$1
+
+	# Start assembling the sql query. This is done via a temp file because
+	# it would otherwise need even crazier escaping than now.
+	echo -n "INSERT INTO commands (build_id, title, output, exit_code) \
+		VALUES ($BUILD_ID, '" > "$SQL_FILE"
+
+	# Escape the command and append to the query. Also store the exit code.
+	echo "$COMMAND" | sed s/\'/\'\'/g >> "$SQL_FILE"
+
+	echo -n "', '" >> $SQL_FILE
+
+	# Invoke the command, escape characters and append to the command.
+	# Optionally change the working directory
+	if [ -n "$2" ]; then cd "$2"; fi
+	eval $COMMAND 2>&1 | sed s/\'/\'\'/g >> "$SQL_FILE"
+	INVOKE_EXIT_CODE=${PIPESTATUS[0]}
+	cd $WORKING_DIR
+
+	echo "', $INVOKE_EXIT_CODE);" >> $SQL_FILE
+	echo ".quit" >> "$SQL_FILE"
+
+	# Finally execute the SQL statements and cleanup
+	sqlite3 $DB_PATH < "$SQL_FILE"
+	rm "$SQL_FILE"
+}
+
+function set_state {
+	sqlite3 "$DB_PATH" "UPDATE builds SET status='$1' WHERE id=$BUILD_ID"
+}
+
+function svn_revision {
+	svn info "$REPO_PATH" | grep -i revision | sed "s/.* //"
+}
+
+function revert_repo_and_start {
+	svn update --revision $OLD_SVN_REVISION $REPO_PATH
+	set_state failed
+	$SCRIPT_DIR/mymoney_ctl start
+}
+
+# Memorize SVN revision
+OLD_SVN_REVISION=`svn_revision`
+
+# Create new build entry with status 'in progress' and get its id
+BUILD_ID=`sqlite3 "$DB_PATH" "INSERT INTO builds (started_at, status, trigger_mode, svn_revision) \
+	VALUES (datetime('now'), 'in_progress', '$TRIGGER_MODE', $OLD_SVN_REVISION); \
+	SELECT last_insert_rowid();"`
+
+# Stop the application
+invoke "./mymoney_ctl stop" "$SCRIPT_DIR"
+
+# Update the repository
+invoke "svn update" "$REPO_PATH"
+
+# Store the new revision
+sqlite3 "$DB_PATH" "UPDATE builds SET svn_revision=`svn_revision` WHERE id=$BUILD_ID"
+
+# If for some reason svn update failed, be sure to revert to the old revision
+# (cause who knows?)
+# end hope for the best
+if [ $INVOKE_EXIT_CODE != 0 ]; then
+	echo "Updating the repository failed. Trying to run previous working version."
+	revert_repo_and_start
+	exit 1
+fi
+
+# Install missing gems
+invoke "bundle install" "$APP_PATH"
+
+# On failure, revert and hope for the best
+if [ $INVOKE_EXIT_CODE != 0 ]; then
+	echo "Installing gems failed. Trying to run previous working version."
+	revert_repo_and_start
+	exit 1
+fi
+
+# Update the database
+invoke "rake db:migrate" "$APP_PATH"
+
+# On failure, revert everything and hope for the best
+if [ $INVOKE_EXIT_CODE != 0 ]; then
+	echo "Migration failed. Trying to run previous working version."
+	revert_repo_and_start
+	exit 1
+fi
+
+# OK! It seems we have up to date system. Start.
+invoke "./mymoney_ctl start" "$SCRIPT_DIR"
+
+# On failure, revert everything and hope for the best
+if [ $INVOKE_EXIT_CODE != 0 ]; then
+	echo "Couldn't start the server. Trying to run previous working version."
+	revert_repo_and_start
+	exit 1
+fi
+
+# Log succes!
+set_state successful

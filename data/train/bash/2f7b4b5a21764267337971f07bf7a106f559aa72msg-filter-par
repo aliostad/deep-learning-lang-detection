@@ -1,0 +1,160 @@
+#!/usr/bin/env bash
+#
+# msg-filter-par
+# by paulp
+# 
+# you probably want to be running   rewrite-commit-messages.sh
+#
+
+# potentially interesting things to modify
+declare -r maxWidth=72
+declare -r maxSubject=50
+export PARINIT='T B=.,?_A_a Q=_s>|'
+
+# less interesting
+declare -a chunks=()
+declare -a rewritable=()
+declare -i idx=0
+declare currentChunkRewritable="true"
+declare currentChunk=""
+declare currentLine=""
+declare subject=""
+declare maxSubjectTrunc=$(( $maxSubject - 3 ))
+
+isEmpty () {
+  [[ $1 =~ ^[[:space:]]*$ ]]
+}
+
+nonEmpty () {
+  ! [[ $1 =~ ^[[:space:]]*$ ]]
+}
+
+matches () {
+  [[ $currentLine =~ $1 ]]
+}
+# Signs of code or other formatting:
+# curlies, method signatures, 'x = y'
+# bullet points
+# and --- means a pretty graph
+declare -a codeRegexes=(
+  '.*[{}]+.*'
+  '.*[[:space:]]def[[:space:]].*'
+  '.*[[:space:]]=[[:space:]].*'
+  '[[:space:]]+\*[[:space:]]+.*'
+  '.*---.*'
+)
+
+# heuristic looking for signs that this is not normal english
+# being spoken, in which case the whole chunk will be passed
+# through the way it is.
+hasCode () {
+  for re in ${codeRegexes[@]}; do
+    [[ $currentLine =~ $re ]] && return 0
+  done
+
+  return 1
+}
+
+currentLineIsRewritable () {
+  ! hasCode && {
+    [[ ${#currentChunk} -gt $maxSubject ]] || [[ ${#currentLine} -gt $maxSubject ]]
+  }
+}
+
+advance () {
+  chunks[$idx]="$currentChunk"
+  rewritable[$idx]="$currentChunkRewritable"
+  (( idx++ ))
+}
+append () {
+  currentChunk=${currentChunk}$'\n'${currentLine}
+}
+
+record () {
+  if isEmpty "$currentLine"; then
+    # blank line; start new chunk-to-reformat
+    if nonEmpty "$currentChunk"; then
+      advance
+      currentChunk=""
+      currentChunkRewritable="true"
+    fi
+  # current chunk not rewritable; append to pass-through chunk
+  elif [[ -z "$currentChunkRewritable" ]]; then
+    append
+  # current line is rewritable; append to chunk-to-reformat
+  elif currentLineIsRewritable; then
+    if [[ -z "$currentChunk" ]]; then
+      currentChunk=$currentLine
+    else
+      append
+    fi
+  # current line not rewritable; start new pass-through chunk
+  else
+    advance
+    currentChunk="$currentLine"
+    currentChunkRewritable=""
+  fi
+}
+
+readInput () {
+  while IFS= read -r line; do
+    currentLine="$line"
+
+    # Empty subject means we haven't seen a non-whitespace line yet
+    if [[ -z "$subject" ]]; then
+      if nonEmpty "$line"; then
+        # If it fits, use it as is and advance the input
+        if [[ ${#line} -le $maxSubject ]]; then
+          subject="$line"
+          currentLine=""
+        else
+          sentence=${line%%. *}
+          len=${#sentence}
+          # Or maybe there's a period in there.
+          if (( $len < $maxSubject )); then
+            (( len += 2 ))
+            subject="${sentence}."
+            currentLine=${sentence:$len}
+          # otherwise truncate it to max width and keep it as part
+          # of the message body.  (This is the situation when people
+          # write commit messages without separate subjects.)
+          else
+            subject="${line:0:$maxSubjectTrunc}..."
+          fi
+        fi
+      fi
+    fi
+
+    record
+  done
+  
+  # straggler
+  [[ -z "$currentChunk" ]] || advance
+}
+
+# process input
+readInput
+
+i=0
+max=${#chunks[@]}
+
+# Echo subject
+printf "%s\n\n" "$subject"
+
+# Echo body
+while (( $i < $max )); do
+  chunk="${chunks[$i]}"
+  if nonEmpty "$chunk"; then
+    if [[ ${rewritable[$i]} ]]; then
+      printf "%s\n" "$chunk" | par  # $maxWidth
+      echo ""
+    else
+      # echo >&2 "rewritable is ${rewritable[$i]}"
+      printf "%s\n\n" "$chunk"
+    fi
+  fi
+  
+  (( i++ ))
+done
+
+exit 0

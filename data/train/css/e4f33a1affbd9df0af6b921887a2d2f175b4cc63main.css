@@ -1,0 +1,151 @@
+@media only screen and (min-width: 960px) {
+  body.new-color-1::before {
+    background-color: #21c3c3; }
+
+  body.new-color-2::before {
+    background-color: #ffff66; }
+
+  body.new-color-3::before {
+    background-color: #21C321; } }
+.cd-container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto; }
+  .cd-container::after {
+    content: '';
+    display: table;
+    clear: both; }
+
+body::before, body::after {
+  content: '';
+  position: fixed;
+  /* trick to remove some annoying flickering on webkit browsers */
+  width: 89.8%;
+  max-width: 960px;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 50%;
+  z-index: -1; }
+
+body::before {
+  top: 0;
+  background-color: #c32121;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  transition: all 0.8s; }
+
+body::after {
+  top: 50%;
+  background-color: #dee8ec; }
+
+.cd-service {
+  position: relative;
+  z-index: 2;
+  min-height: 50px;
+  margin-left: 56px;
+  background-color: #eef3f5;
+  padding: 1em 1em 4em; }
+  .cd-service::before, .cd-service::after {
+    content: '';
+    position: absolute;
+    width: 56px;
+    right: 100%;
+    z-index: 2; }
+  .cd-service::before {
+    top: 0;
+    height: 50px;
+    background-repeat: no-repeat; }
+  .cd-service::after {
+    top: 50px;
+    bottom: 0;
+    background-image: url("../img/cd-pattern-small.svg");
+    background-repeat: repeat-y; }
+  .cd-service.cd-service-divider::after {
+    top: 0; }
+  .cd-service.cd-service-divider:last-child {
+    display: none; }
+  .cd-service.cd-service-1::before {
+    background-image: url("../img/cd-icon-1-large-alt.svg");
+    border-bottom: 7px solid #eef3f5; }
+  .cd-service.cd-service-2::before {
+    background-image: url("../img/cd-icon-1-small.svg");
+    border-right: 1px solid #eef3f5;
+    border-bottom: 1px solid #eef3f5; }
+  .cd-service.cd-service-3::before {
+    background-image: url("../img/cd-icon-3-large-alt.svg");
+    border-bottom: 7px solid #eef3f5; }
+  .cd-service.cd-service-4::before {
+    background-image: url("../img/cd-icon-4-large-alt.svg");
+    border-bottom: 7px solid #eef3f5; }
+  .cd-service.cd-service-5:before {
+    background-image: url("../img/cd-icon-5-large.svg");
+    border-bottom: 7px solid #eef3f5; }
+  .cd-service h2 {
+    text-transform: uppercase;
+    color: #131c21;
+    font-weight: bold;
+    margin-bottom: 1em;
+    font-family: "Fira Sans", sans-serif; }
+  .cd-service p {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    color: rgba(19, 28, 33, 0.5); }
+    .cd-service p a {
+      color: inherit;
+      text-decoration: underline; }
+  @media only screen and (min-width: 960px) {
+    .cd-service {
+      min-height: 525px;
+      margin-left: 420px;
+      padding: 6em 2em; }
+      .cd-service::before, .cd-service::after {
+        width: 420px; }
+      .cd-service::before {
+        height: 325px; }
+      .cd-service::after {
+        top: 325px;
+        background-image: url("../img/cd-pattern-large.svg"); }
+      .cd-service.cd-service-divider:first-child, .cd-service.cd-service-divider:last-child {
+        min-height: 50px;
+        padding: 0; }
+      .cd-service.cd-service-divider:last-child {
+        display: block; }
+      .cd-service.cd-service-1::before {
+        background-image: url("../img/cd-icon-1-large-alt.svg");
+        border: none; }
+      .cd-service.cd-service-2::before {
+        background-image: url("../img/cd-icon-2-large-alt.svg");
+        border: none; }
+      .cd-service.cd-service-3::before {
+        background-image: url("../img/cd-icon-3-large-alt.svg");
+        border: none; }
+      .cd-service.cd-service-4::before {
+        background-image: url("../img/cd-icon-4-large-alt.svg");
+        border: none; }
+      .cd-service.cd-service-5::before {
+        background-image: url("../img/cd-icon-5-large.svg");
+        border: none; }
+      .cd-service h2, .cd-service p {
+        color: #dee8ec;
+        -webkit-transition: color, 0.5s;
+        -moz-transition: color, 0.5s;
+        transition: color, 0.5s; }
+        .cd-service h2 .underline, .cd-service p .underline {
+          text-decoration: underline; }
+      .cd-service h2 {
+        font-size: 50px;
+        font-size: 3.125rem; }
+      .cd-service p {
+        font-size: 25px;
+        font-size: 1.5625rem;
+        line-height: 1.4; }
+      .cd-service.focus h2 {
+        color: #131c21; }
+      .cd-service.focus p {
+        color: #131c21; } }

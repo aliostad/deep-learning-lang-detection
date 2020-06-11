@@ -1,0 +1,30 @@
+/* sfmdev custom styles */
+form#evince-api-test-form div.form-item {
+  clear: left;
+  float: left;
+  margin: 0 0 0.5em 0;
+}
+form#evince-api-test-form label {
+  clear: left;
+  float: left;
+  width: 14em;
+  margin: 0;
+}
+form#evince-api-test-form input,
+form#evince-api-test-form select,
+form#evince-api-test-form div.form-checkboxes,
+form#evince-api-test-form div.form-radios {
+  float: left;
+  marginreigh: 5px;
+}
+form#evince-api-test-form fieldset {
+  clear: left;
+  float: left;
+  margin-left: 14em;
+}
+form#evince-api-test-form div.form-item div.form-checkboxes div.form-item,
+form#evince-api-test-form div.form-item div.form-radios div.form-item {
+  clear: none;
+  border: none;
+}
+

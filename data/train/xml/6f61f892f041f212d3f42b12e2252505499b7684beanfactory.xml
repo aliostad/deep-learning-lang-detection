@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean name="dataBaseDao" class="cn.jcenterhome.dao.DataBaseDaoImpl"/>
+	<bean name="dataBaseService" class="cn.jcenterhome.service.DataBaseService"/>
+	<bean name="cpService" class="cn.jcenterhome.service.CpService"/>
+	<bean name="cacheService" class="cn.jcenterhome.service.CacheService"/>
+	<bean name="spaceService" class="cn.jcenterhome.service.SpaceService"/>
+	<bean name="adminDeleteService" class="cn.jcenterhome.service.AdminDeleteService"/>
+	<bean name="opService" class="cn.jcenterhome.service.OpService"/>
+	<bean name="statService" class="cn.jcenterhome.service.StatService"/>
+	<bean name="cronService" class="cn.jcenterhome.service.CronService"/>
+	<bean name="feedService" class="cn.jcenterhome.service.FeedService"/>
+	<bean name="blogService" class="cn.jcenterhome.service.BlogService"/>
+	<bean name="magicService" class="cn.jcenterhome.service.MagicService"/>
+	<bean name="pmService" class="cn.jcenterhome.service.PmService"/>
+</beans>

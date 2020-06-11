@@ -1,0 +1,23 @@
+.product-show table,invitations-show table {    
+   /* margin:0 auto;*/
+}
+.templates-show table tr td, .templates-show table tr th,
+.product-show table tr td,.product-show table tr th,
+.invitations-show table tr td,.invitations-show table tr th{
+    font-size: 0.9em;
+    border:2px solid white;
+    padding:2px 5px 2px 5px;
+}
+.templates-show table tr:nth-child(even),
+.invitations-show table tr:nth-child(even),
+.product-show table tr:nth-child(even){ 
+    background-color:#eee;
+}
+.invitations-show table tr th,.product-show table tr th{
+    text-transform: capitalize;
+}
+.add-invitation,.add-product{
+    padding:0px;
+    width: 750px;
+    float:right;
+}

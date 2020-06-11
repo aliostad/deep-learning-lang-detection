@@ -1,0 +1,32 @@
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic);
+div.model_order {
+  margin: 100px auto !important;
+  width: 500px;
+    font-family: 'Playfair Display', serif;
+  color: #666;
+}
+
+div.model_order img {
+  width: 164px;
+  margin: 1px;
+}
+
+div.model_order div.info {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+div.model_order div.form {
+  width: 100%;
+  margin: 50px auto;
+}
+
+div.model_order div.form input, textarea {
+  width: 100%;
+}
+
+div.model_order div.form input.btn {
+  width: 60%;
+}

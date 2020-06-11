@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Regular'), local('Lato-Regular'), url('http://64424.selcdn.ru/webfont/lato/lato-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Bold'), local('Lato-Bold'), url('http://64424.selcdn.ru/webfont/lato/lato-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body, div, span, p, input {
+    font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    color: #333333;
+}
+
+#apiPage {
+    padding: 25px;
+}
+
+#apiHeader {
+    font-size: 36px;
+    padding: 3px;
+    color: #353535;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#apiHeader a {
+    color: #353535;
+}
+
+#apiFooter {
+    margin-top: 25px;
+    padding: 10px;
+    color: #aaa;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+#apiFooter a {
+    color: #aaa;
+}

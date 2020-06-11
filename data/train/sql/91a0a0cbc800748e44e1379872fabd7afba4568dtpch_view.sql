@@ -1,0 +1,65 @@
+create view lineitem_p0 as select * from lineitem;
+create view lineitem_p1 as select * from lineitem;
+create view lineitem_p2 as select * from lineitem;
+create view lineitem_p3 as select * from lineitem;
+create view lineitem_p4 as select * from lineitem;
+create view lineitem_p5 as select * from lineitem;
+create view lineitem_p6 as select * from lineitem;
+create view lineitem_p7 as select * from lineitem;
+create view lineitem_p8 as select * from lineitem;
+create view lineitem_p9 as select * from lineitem;
+
+create view orders_p0 as select * from orders;
+create view orders_p1 as select * from orders;
+create view orders_p2 as select * from orders;
+create view orders_p3 as select * from orders;
+create view orders_p4 as select * from orders;
+create view orders_p5 as select * from orders;
+create view orders_p6 as select * from orders;
+create view orders_p7 as select * from orders;
+create view orders_p8 as select * from orders;
+create view orders_p9 as select * from orders;
+
+create view customer_p0 as select * from customer;
+create view customer_p1 as select * from customer;
+create view customer_p2 as select * from customer;
+create view customer_p3 as select * from customer;
+create view customer_p4 as select * from customer;
+create view customer_p5 as select * from customer;
+create view customer_p6 as select * from customer;
+create view customer_p7 as select * from customer;
+create view customer_p8 as select * from customer;
+create view customer_p9 as select * from customer;
+
+create view part_p0 as select * from part;
+create view part_p1 as select * from part;
+create view part_p2 as select * from part;
+create view part_p3 as select * from part;
+create view part_p4 as select * from part;
+create view part_p5 as select * from part;
+create view part_p6 as select * from part;
+create view part_p7 as select * from part;
+create view part_p8 as select * from part;
+create view part_p9 as select * from part;
+
+create view partsupp_p0 as select * from partsupp;
+create view partsupp_p1 as select * from partsupp;
+create view partsupp_p2 as select * from partsupp;
+create view partsupp_p3 as select * from partsupp;
+create view partsupp_p4 as select * from partsupp;
+create view partsupp_p5 as select * from partsupp;
+create view partsupp_p6 as select * from partsupp;
+create view partsupp_p7 as select * from partsupp;
+create view partsupp_p8 as select * from partsupp;
+create view partsupp_p9 as select * from partsupp;
+
+create view supplier_p0 as select * from supplier;
+create view supplier_p1 as select * from supplier;
+create view supplier_p2 as select * from supplier;
+create view supplier_p3 as select * from supplier;
+create view supplier_p4 as select * from supplier;
+create view supplier_p5 as select * from supplier;
+create view supplier_p6 as select * from supplier;
+create view supplier_p7 as select * from supplier;
+create view supplier_p8 as select * from supplier;
+create view supplier_p9 as select * from supplier;

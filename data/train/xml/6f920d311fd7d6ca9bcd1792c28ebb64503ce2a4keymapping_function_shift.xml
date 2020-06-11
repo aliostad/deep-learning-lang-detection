@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <key_mapping>
+        <mapping view_id="@id/key_pos_shift" key_id="@id/softkey_shift" />
+    </key_mapping>
+    <key_mapping state="SHIFT">
+        <mapping view_id="@id/key_pos_shift" key_id="@id/softkey_shift_shifted" />
+    </key_mapping>
+    <key_mapping state="SHIFT_LOCK">
+        <mapping view_id="@id/key_pos_shift" key_id="@id/softkey_shift_locked" />
+    </key_mapping>
+    <key_mapping state="SHIFT_COMBO">
+        <mapping view_id="@id/key_pos_shift" key_id="@id/softkey_shift_shifted_combo" />
+    </key_mapping>
+</framework>

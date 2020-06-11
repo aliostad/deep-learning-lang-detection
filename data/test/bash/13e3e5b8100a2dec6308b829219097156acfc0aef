@@ -1,0 +1,74 @@
+#!/bin/zsh
+# f命令负责将内容放置到磁盘上
+(
+setopt EXTENDED_GLOB
+local -A map
+local store_spec target
+
+function writer.stdout() {
+    <<< ${(F)content}
+}
+
+function writer.file() {
+    # TODO: append writer support ???
+    local file="$1"
+    [[ $file == @stdout ]] && { 
+        <<< ${(F)content} 
+        content=()
+        return
+    }
+
+    [[ $file == @sh ]] && {
+        eval "${(F)content}"
+        content=()
+        return
+    }
+
+    [[ -z $content ]] && @EF "没有输出内容" && return
+    [[ -z $file    ]] && @EF "没有输出文件" && return
+    local parent=$(dirname $file)
+
+    # ensure the directory existed
+    [[ -d $parent ]] || mkdir -p "$parent"
+    <<< ${(F)content} > "$file" && @IF "write to '$file' : ${#content} lines"
+    content=()
+}
+
+#--------------------------------------------------------------------[ body ]
+type=file
+local -a file
+local -a content
+local -a chunk chunk_target
+integer n=0
+integer chunkend
+
+local _path="$1"
+
+if [[ -z $_path ]]; then
+    file=("${(@f)$(<&0)}")
+else
+    file=("${(@f)$(<$_path)}")
+fi
+
+for _line in "${(@)file}"; do
+    # @IF $_line
+    (( n++ ))
+
+    if [[ $_line = (#b)\====(=)#\|(\ )#(*) ]]; then
+        target="$match[3]"
+        chunk_target+="${target%%(\ )#}"
+        chunk+=$n
+        continue
+    fi
+    content+="$_line"
+done
+
+n=0
+for target in "${(@)chunk_target}"; do
+    (( n++ ))
+    chunkend=$chunk[n+1]-1;
+    content=("${(@)file[$chunk[n]+1,chunkend]}")
+    writer.$type ${target%%(\ )#}
+done
+
+)

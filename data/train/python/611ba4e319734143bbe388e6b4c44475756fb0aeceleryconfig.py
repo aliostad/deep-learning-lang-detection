@@ -1,0 +1,20 @@
+from datetime import timedelta
+
+_BROKER_USER = 'fooman'
+_BROKER_PASS = 'iamthefooman'
+_BROKER_IP = '192.168.1.105:5672'
+_BROKER_VHOST = 'theshoe'
+
+BROKER_URL = 'amqp://{}:{}@{}/{}'.format(_BROKER_USER, _BROKER_PASS,
+	            						 _BROKER_IP,   _BROKER_VHOST)
+#CELERY_RESULT_BACKEND = BROKER_URL
+
+CELERY_TASK_SERIALIZER = 'pickle'
+CELERY_MESSAGE_COMPRESSION = 'zlib'
+CELERY_DISABLE_RATE_LIMITS = True
+# CELERYD_PREFETCH_MULTIPLIER = 1
+CELERY_TASK_RESULT_EXPIRES = 3600
+
+CELERY_IMPORTS = ('arachne.scripts')
+
+CELERY_TIMEZONE = 'US/Pacific'

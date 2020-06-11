@@ -1,0 +1,49 @@
+@CHARSET "UTF-8";
+
+section {
+	margin:20px 0 0 10px;
+}
+
+.load {
+  width: 65%;
+}
+
+.recommendation {
+  width: 85%;
+}
+
+.auth-results {
+  display: none;
+  color: red;
+}
+
+.load-results {
+  display: none;
+  color: red;
+}
+
+.summary-results{
+  display:none;
+}
+
+.jobpage-about {
+  display: none;
+}
+
+.form-val-message {
+  display: none;
+  color: red;
+}
+
+.job-history-duration, .job-variability, .job-parallelism, .job-processing-characteristics {
+  display: none;
+}
+
+.job-change-reduce, .job-change-increase, .job-change-neutral {
+  display: none;
+}
+
+.feedback {
+    color: red;
+    
+}

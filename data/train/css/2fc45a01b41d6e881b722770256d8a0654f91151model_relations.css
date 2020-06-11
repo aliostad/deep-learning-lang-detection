@@ -1,0 +1,14 @@
+/* 
+    Document   : model_relations.css
+    Created on : 06-jun-2011, 10:01:23
+    Author     : diego
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+ul.model_relation li { width: 200px; margin-top: 2px;}
+ul.model_relation li a { float: right; width: 14px; height: 14px;}
+ul.model_relation li:hover a.delete { background: url(../px/common/deleteBig.png) no-repeat; }
+ul.model_relation li:hover a.delete:hover { background: url(../px/common/remove.gif) no-repeat; }
+ul.model_relation li:hover { background-color: #eee; }
+

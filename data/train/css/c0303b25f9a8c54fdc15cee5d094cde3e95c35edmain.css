@@ -1,0 +1,146 @@
+html {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #410F0F;
+    margin: 0;
+}
+
+/*clearfix*/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo {
+    background: radial-gradient(#C33434 5%, #5C1414 40%, #410F0F 45%);
+    padding: 80px 0;
+    margin: 0 auto;
+    max-width: 42em;
+    text-align: center;
+}
+
+.logo > h1 {
+    animation-name: cat-eye;
+    animation-duration: 2s;
+    color: #611414;
+    margin: 0;
+}
+
+@keyframes cat-eye {
+    from {
+        color: #992626;
+        opacity: 0;
+    }
+    to {
+        color: #611414;
+        opacity: 1;
+    }
+}
+
+.cats-list {
+    float: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 50px 0;
+    text-align: center;
+}
+
+.cats-list > li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.cats-list > li:first-child {
+    margin-left: 0;
+}
+
+.cats-list > li > img {
+    height: 75px;
+    width: 75px;
+    border: 9px solid #300707;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cat-model {
+    background-color: #300707;
+    color: #fff;
+    float: none;
+    padding: 30px 0;
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+}
+.cat-model__name {
+    margin-top: 0;
+}
+.cat-model__image {
+    max-width: 90%;
+    cursor: pointer;
+}
+.cat-model__click-counter {
+    margin: 10px 0 0;
+    font-size: 2rem;
+}
+.cat-model__click-counter > span {
+    color: #D75D5D;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+@media (min-width: 48em) { /*768px*/
+    .container {
+        width: 580px;
+        margin: 0 auto;
+    }
+    .cats-list {
+        float: left;
+        width: 250px;
+        margin-right: 30px;
+    }
+
+    .cats-list > li {
+        margin-bottom: 10px;
+    }
+
+    .cats-list > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .cat-model {
+        background-color: #300707;
+        float: left;
+        padding: 30px 0;
+        margin: 0;
+        width: 300px;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+@media (max-width: 350px) {
+    .logo {
+        background: none;
+        padding: 60px 0;
+    }
+    .logo > h1 {
+        color: #F29111;
+    }
+
+    @keyframes cat-eye {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}

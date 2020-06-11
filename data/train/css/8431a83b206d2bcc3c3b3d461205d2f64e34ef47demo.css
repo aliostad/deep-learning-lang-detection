@@ -1,0 +1,32 @@
+#js-container .msry-item {
+    padding: 5px;
+    width: 50%
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+    #js-container .msry-item {
+        width: 33.3333333333%
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    #js-container .msry-item {
+        width: 25%
+    }
+}
+
+#js-container .am-panel {
+    margin-bottom: 0
+}
+
+#load-more {
+    padding: 20px 0
+}
+
+#load-more button {
+    width: 100%;
+    display: block;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto
+}

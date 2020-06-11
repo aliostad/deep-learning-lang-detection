@@ -1,0 +1,33 @@
+.message-list{
+	width:100%;
+}
+
+.message-list .list-group-item {
+    cursor:pointer;
+}
+
+.message-list .list-group-item:after{
+	display:block;
+    content:"";
+	clear:both;
+}
+
+.message-list .list-group-item.viewed{
+    background-color:#f1f1f1;
+}
+
+.message-list .list-group-item .message-info > span {
+	display:inline-block;
+    padding:6px 10px;
+}
+
+.message-list .list-group-item .message-content {
+    display:none;
+	margin-top:20px;
+	cursor:initial;
+}
+
+.message-list .list-group-item .btn {
+    float:right;
+	margin-right:5px;
+}

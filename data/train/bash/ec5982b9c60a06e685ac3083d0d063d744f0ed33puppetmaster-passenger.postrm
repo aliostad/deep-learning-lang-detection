@@ -1,0 +1,48 @@
+#!/bin/sh
+
+set -e
+
+sitename="puppetmaster"
+
+# Can be removed when we only support apache >= 2.4
+restart_apache2() {
+    if [ -x "/etc/init.d/apache2" ]; then
+        # Seems that a restart is needed. reload breaks ssl apparently.
+        if [ -x "`which invoke-rc.d 2>/dev/null`" ]; then
+            invoke-rc.d apache2 restart || exit $?
+        else
+            /etc/init.d/apache2 restart || exit $?
+        fi
+    fi
+}
+
+case "$1" in
+    purge)
+	if dpkg-statoverride --list /usr/share/puppet/rack/puppetmasterd/config.ru >/dev/null 2>&1
+	then
+	    dpkg-statoverride --remove /usr/share/puppet/rack/puppetmasterd/config.ru
+	fi
+	# Remove the puppetmaster site configuration on purge
+	rm -f /etc/apache2/sites-available/${sitename}.conf
+	;;
+    remove)
+        # Disable the puppetmaster apache2 site configuration on package removal
+        if [ -e /usr/share/apache2/apache2-maintscript-helper ] ; then
+            . /usr/share/apache2/apache2-maintscript-helper
+            apache2_invoke dissite "${sitename}"
+        else
+            a2dissite puppetmaster
+            restart_apache2
+        fi
+	;;
+    upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
+        ;;
+    *)
+        echo "postrm called with unknown argument \`$1'" >&2
+        exit 1
+
+esac
+
+#DEBHELPER#
+
+exit 0

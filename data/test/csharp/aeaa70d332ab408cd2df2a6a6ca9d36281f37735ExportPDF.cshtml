@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Report";
+    Layout = "~/Views/Shared/_LayoutPDF.cshtml";
+}
+
+
+
+<paragraph style="font-family: Helvetica; font-size: 18px; font-weight: 900; align-content:center;">
+    <chunk style="text-align:center;"><h3 >Financial Statement (Income Statement)</h3></chunk>
+</paragraph>
+<paragraph>
+    <chunk>Property:</chunk>
+       
+</paragraph>
+
+<paragraph>
+    
+    <chunk style="font-family:Times;font-weight:bold;">StartDate: </chunk>
+    <chunk style="font-family:Times;">@Model.StartDate.ToString("M/d/yyyy")</chunk>
+</paragraph>
+
+<paragraph>
+    <chunk style="font-family:Times;font-weight:bold;">End Date: </chunk>
+    <chunk style="font-family:Times;">@Model.EndDate.ToString("M/d/yyyy")</chunk>
+</paragraph>
+
+<paragraph>
+    <chunk style="font-family:Times;font-weight:bold;">Total Repair Costs: </chunk>
+    <chunk style="font-family:Times;">@Model.TotalRepairCosts</chunk>
+</paragraph>
+
+<paragraph>
+    <chunk style="font-family:Times;font-weight:bold;">Total Other Costs: </chunk>
+    <chunk style="font-family:Times;">@Model.TotalOtherCosts</chunk>
+</paragraph>
+
+<paragraph>
+    <chunk style="font-family:Times;font-weight:bold;">Total Management Fees: </chunk>
+    <chunk style="font-family:Times;">@Model.TotalFees</chunk>
+</paragraph>
+
+<paragraph>
+    <chunk style="font-family:Times;font-weight:bold;">Total Rent Revenue: </chunk>
+    <chunk style="font-family:Times;">@Model.TotalRentRevenue</chunk>
+</paragraph>
+
+<paragraph>
+    <chunk style="font-family:Times;font-weight:bold;">Total Net Income: </chunk>
+    <chunk style="font-family:Times;">@Model.TotalNetIncome</chunk>
+</paragraph>

@@ -1,0 +1,149 @@
+@CHARSET "UTF-8";
+
+html {
+	background: #242424;
+}
+
+
+
+#info_write_wrap {
+	width: 1000px;
+}
+
+.info_write_announce {
+	font-size: 75%;
+	margin-top: 3px;
+}
+
+#info_write_announce2 {
+	margin-bottom: 12px;
+	color: red;
+}
+
+#i_w_a1_text1 {
+	color: blue;
+}
+
+.info_write_title_option {
+	font-size: 75%;
+	font-weight: bolder;
+	margin-left: 15px;
+}
+
+#info_write_option {
+	background: #2b2b2b;
+	height: 30px;
+	border-bottom: 1px solid #EAEAEA;
+	border-top: 1px solid #EAEAEA;
+}
+
+#info_write_option font, #info_write_select, #info_write_form {
+	padding-top: 3px;
+	display: inline-block;
+}
+
+#info_write_select {
+	margin-left: 15px;
+}
+
+#info_write_select #info_write_headoption {
+	font-size: 12px;
+	width: 90px;
+}
+
+#info_write_form font {
+	font-size: 75%;
+	margin-left: 22px;
+}
+
+#info_write_form .info_write_check {
+	position: relative;
+	top: 3px;
+}
+
+#info_write_title {
+	padding-top: 3px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #EAEAEA;
+}
+
+#info_write_title_option {
+	position: relative;
+	bottom: 175px;
+}
+
+#info_write_title #info_write_title_input_text {
+	margin-left: 15px;
+	border: 1px solid #EAEAEA;
+	height: 20px;
+	width: 935px;
+}
+
+#info_write_body {
+	background: #2b2b2b;
+}
+
+#info_write_content_announce {
+	margin-left: 60px;
+	background: #2b2b2b;
+	height: 25px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#info_write_content_announce img, #info_write_announce2 {
+	display: inline-block;
+}
+
+#info_write_content_announce img {
+	position: relative;
+	top: 3px;
+}
+
+#info_write_textarea {
+	margin-left: 12px;
+	width: 930px;
+	height: 360px;
+	border: 1px solid #CCCCCC;
+}
+
+#info_write_upload {
+	margin-top: 20px;
+}
+
+#info_write_upload img {
+	margin-bottom: 30px;
+}
+
+#info_write_title_upload {
+	bottom: 100px;
+}
+
+#info_wirte_btns {
+	margin-top: 35px;
+}
+
+.info_bot_btn {
+	height: 25px;
+	width: 65px;
+	font-size: 72%;
+	background: #2b2b2b;
+	border: 1px solid #B2B2B2;
+	border-radius: 3px;
+	margin: 1px;
+}
+
+#info_wirte_btn1 {
+	display: inline-block;
+	float: left
+}
+
+#info_wirte_btn2, #info_wirte_btn3 {
+	float: right;
+	margin: 0;
+}
+
+#write_btn3 {
+	background: #2b2b2b;
+	color: #ffffff;
+}

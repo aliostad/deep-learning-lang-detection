@@ -1,0 +1,73 @@
+body.posts-show h1 {
+  font-size: 24px;
+  line-height: 36px;
+  color: #555555; }
+body.posts-show p.byline {
+  font-size: 12px;
+  color: #777777;
+  margin-left: 44px;
+  margin-bottom: 10px;
+  line-height: 18px; }
+  body.posts-show p.byline span.author {
+    margin: 0px 5px;
+    color: #555555; }
+  body.posts-show p.byline span.spacer {
+    color: #cccccc;
+    margin: 0 5px; }
+  body.posts-show p.byline a:link, body.posts-show p.byline a:visited, body.posts-show p.byline a:active {
+    color: #555555;
+    text-decoration: none; }
+    body.posts-show p.byline a:link img, body.posts-show p.byline a:visited img, body.posts-show p.byline a:active img {
+      vertical-align: top; }
+  body.posts-show p.byline a:hover {
+    text-decoration: underline; }
+body.posts-show .post-body {
+  font-size: 14px;
+  color: #333333;
+  line-height: 18px;
+  margin-bottom: 18px;
+  margin-left: 40px; }
+  body.posts-show .post-body a:link, body.posts-show .post-body a:active {
+    color: blue; }
+  body.posts-show .post-body a:visited {
+    color: #555555; }
+body.posts-show .post-body:last-child {
+  margin-bottom: 0px; }
+body.posts-show .post-comment-form {
+  margin-top: 20px;
+  margin-left: 37px; }
+  body.posts-show .post-comment-form form .field {
+    clear: both;
+    margin-bottom: 5px; }
+    body.posts-show .post-comment-form form .field textarea.text {
+      margin: 3px;
+      padding: 3px;
+      font-size: 14px;
+      line-height: 18px;
+      color: #555555;
+      font-family: Rockwell, Helvetica, Arial, sans-serif; }
+  body.posts-show .post-comment-form form .buttons {
+    margin-top: 10px;
+    margin-left: 3px; }
+body.posts-show #comments {
+  margin-top: 25px; }
+body.posts-show .comment-replies {
+  border-left: solid 3px #aaaaaa;
+  padding-left: 12px;
+  margin-left: 25px;
+  margin-top: 15px; }
+body.posts-show .reply-comment-form {
+  margin-top: 20px; }
+  body.posts-show .reply-comment-form form .field {
+    clear: both;
+    margin-bottom: 5px; }
+    body.posts-show .reply-comment-form form .field textarea.text {
+      margin: 3px;
+      padding: 3px;
+      font-size: 14px;
+      line-height: 18px;
+      color: #555555;
+      font-family: Rockwell, Helvetica, Arial, sans-serif; }
+  body.posts-show .reply-comment-form form .buttons {
+    margin-top: 10px;
+    margin-left: 3px; }

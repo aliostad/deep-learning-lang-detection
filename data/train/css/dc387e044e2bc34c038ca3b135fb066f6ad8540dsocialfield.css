@@ -1,0 +1,74 @@
+.social-links ul {
+  list-style: none;
+  overflow: auto;
+  padding: 0 !important;
+}
+.social-links ul li {
+  float: left;
+  margin: 5px !important;
+  padding: 0 !important;
+}
+.social-links .icon {
+  color: #FFF;
+  font-size: 24px;
+  padding: 8px 4px;
+
+  background-color: #4a6ea9;
+}
+
+.social-links.circle-icons .icon {
+  border-radius: 50%;
+}
+
+/* Service-specific style */
+.social-links .service-reddit .icon {
+  padding: 8px 7px 8px 1px;
+  background-color: #ff4500;
+}
+.social-links .service-slideshare .icon {
+  padding: 8px 2px 8px 6px;
+  background-color: #4a6ea9;
+}
+.social-links .service-yahoo .icon {
+  padding: 8px 8px 8px 0px;
+  background-color: #720e9e;
+}
+.social-links .service-facebook .icon {
+  background-color: #3b5998;
+}
+.social-links .service-twitter .icon {
+  background-color: #55acee;
+}
+.social-links .service-googleplus .icon {
+  background-color: #dc4a38;
+}
+.social-links .service-linkedin .icon {
+  background-color: #0e76a8;
+}
+.social-links .service-youtube .icon {
+  background-color: #c4302b;
+}
+.social-links .service-vimeo .icon {
+  background-color: #44bbff;
+}
+.social-links .service-delicious .icon {
+  background-color: #222222;
+}
+.social-links .service-digg .icon {
+  background-color: #7a9ac2;
+}
+.social-links .service-flickr .icon {
+  background-color: #ff0084;
+}
+.social-links .service-google .icon {
+  background-color: #4285f4;
+}
+.social-links .service-myspace .icon {
+  background-color: #6087bb;
+}
+.social-links .service-pinterest .icon {
+  background-color: #c8232c;
+}
+.social-links .service-stumbleupon .icon {
+  background-color: #f74425;
+}

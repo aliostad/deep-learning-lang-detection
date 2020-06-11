@@ -1,0 +1,29 @@
+#!/usr/bin/env sh
+
+top_working_dir=$1
+remote_repo=$2
+local_repo_1=$3
+local_repo_2=$4
+
+test_repo_root()
+{
+    repo_root=$(pkgit-find-repo-root)
+
+    if [ "$1" != "$repo_root" ]; then
+        echo >2 "Failed test for find repo root. Expected version $1, found $repo_root"
+        exit 1
+    fi    
+}
+
+cd "$local_repo_1/projects/one"  >/dev/null 
+test_repo_root $local_repo_1
+
+cd "$local_repo_1/projects" >/dev/null 
+test_repo_root $local_repo_1
+
+cd "$local_repo_1" >/dev/null 
+test_repo_root $local_repo_1
+
+cd "$local_repo_2/projects/two" >/dev/null 
+test_repo_root $local_repo_2
+

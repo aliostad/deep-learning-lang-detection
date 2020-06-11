@@ -1,0 +1,258 @@
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   speak for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modal_ajax_large {
+
+
+    z-index: 1000;
+    top: 163px;
+    left: 0;
+    height: 44%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.23) url('../images/ajax-loader.gif') 50% 50% no-repeat;
+    position: absolute;
+}
+
+.modal_ajax {
+
+    background: url("../images/ajax-loader.gif") no-repeat scroll 0 0 transparent;
+    float: none;
+    height: 60px;
+    margin-left: 509px;
+    position: inherit;
+    width: 60px;
+
+
+}
+.load_ajax {
+
+    background: url("../images/2.gif") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 21px;
+    position: inherit;
+    width: 20px;
+    margin: auto;
+
+
+}
+.load_ajax_profile_comments {
+
+    background: url("../images/2.gif") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 21px;
+    position: inherit;
+    width: 20px;
+    margin: auto;
+
+
+}
+
+
+.load-ajax-browse {
+
+    background: url("../images/2.gif") no-repeat scroll 0 0 transparent;
+    float: none;
+    height: 21px;
+    position: inherit;
+    width: 20px;
+    margin: auto;
+
+
+}
+
+/*.load_ajax1 {
+   
+      background: url("../images/2.gif") no-repeat scroll 0 0 transparent;
+ float: left;
+    height: 21px;
+    margin: 46px auto auto 175px;
+    position: inherit;
+    width: 20px;
+    z-index: 99999;
+    
+   
+}*/
+.load_ajax1 {
+
+    background: url("../images/2.gif") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 21px;
+    margin: 12px auto auto 223px;
+    position: inherit;
+    width: 20px;
+    z-index: 99999;
+
+
+}
+#single-job-page {
+
+    background: url("../images/2.gif") no-repeat scroll 0 0 transparent;
+     float: left;
+    height: 21px;
+    margin: 52px auto auto 520px;
+    position: inherit;
+    width: 25px;
+    z-index: 99999;
+
+
+}
+.load_ajax_single_page{
+    
+   background: url("../images/2.gif") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 21px;
+    margin: 12px auto auto 223px;
+    position: inherit;
+    width: 20px;
+    z-index: 99999;  
+    
+}
+.load_ajax1_myjobs{
+    background: url("../images/2.gif") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 21px;
+    margin: 12px auto auto 544px;
+    position: inherit;
+    width: 20px;
+    z-index: 99999;  
+
+}
+.load_ajax-crop-upload{
+
+
+    background: url("../images/2.gif") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 21px;
+    margin: 12px auto auto 223px;
+    position: inherit;
+    width: 20px;
+    z-index: 99999;
+
+
+}
+.load_ajax1-1 {
+
+    background: url("../images/2.gif") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 21px;
+    margin: 40px auto auto 269px;
+    position: inherit;
+    width: 20px;
+    z-index: 99999;
+
+}
+
+
+
+.load_ajax2 {
+
+    background: url("../images/2.gif") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 21px;
+    margin: 11px auto auto 114px;
+    position: inherit;
+    width: 20px;
+
+
+}
+
+.load_ajax3 {
+    background: url("../images/2.gif") no-repeat scroll 0 0 transparent;
+    height: 22px;
+    margin: 4px auto auto -27px;
+    position: absolute;
+    width: 20px;
+    z-index: 999;
+
+
+
+}
+
+.load_ajax4 {
+
+    background: url("../images/2.gif") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 21px;
+    margin: 11px auto auto 114px;
+    position: inherit;
+    width: 20px;
+
+
+}
+
+.load_ajax_calendar {
+    background: url("../images/2.gif") no-repeat scroll 50% 50% rgba(0, 0, 0, 0.5);
+    float: none;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    z-index: 9999;
+}
+.modal_ajax_gif {
+
+
+    background: url('../images/ajax-loader.gif');
+    background-repeat: no-repeat;
+    display: block;
+    height: 60px;
+    margin: auto auto auto 22px;
+    width: 60px;
+
+
+}
+
+.modal_ajax_gif_team{
+    background: url("../images/ajax-loader-old.gif") no-repeat scroll 0 0 transparent;
+    display: none;
+    float: right;
+    height: 60px;
+    margin: -46px auto auto 200px;
+    width: 60px;
+}
+.modal_ajax_large_dashboard {
+
+
+    background: url("../images/ajax-loader.gif") no-repeat scroll 0 0 transparent;
+    height: 60px;
+    margin-left: 512px;
+    margin-top: 117px;
+    position: absolute;
+    width: 60px;
+}
+.load_ajaxconfirm {
+    background: url("../images/2.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: none;
+    height: 43px;
+    width: 144px;
+    margin: auto;
+    display: block;
+    background-position: -1px;
+    margin-bottom: -41px;
+}
+
+.load_ajaxsingle_job{
+    
+     background: url("../images/2.gif") no-repeat scroll 0 0 transparent;
+     float: left;
+    height: 34px;
+    margin: 99px auto auto 500px;
+    position: inherit;
+    width: 20px;
+    z-index: 99999;
+    
+}
+
+.load_ajaxsingle_job_minions{
+    
+     background: url("../images/2.gif") no-repeat scroll 0 0 transparent;
+     float: left;
+    height: 34px;
+    margin: 99px auto auto 500px;
+    position: inherit;
+    width: 20px;
+    z-index: 99999;
+    
+}

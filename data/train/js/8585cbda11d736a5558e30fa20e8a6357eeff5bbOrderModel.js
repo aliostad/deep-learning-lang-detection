@@ -1,0 +1,63 @@
+Ext.define('plat.model.business.OrderModel',{
+ 	extend: 'Ext.data.Model',
+    fields: [
+    			'id',
+    			'orderNumber',
+    			'orderStatus',
+    			'transactionPrice',
+    			'userName',
+    			'phone',
+    			'email',
+    			'remark',
+    			'createTime',
+    			'orderSource',
+    			'serviceName',
+    			//买家信息
+    			{name:'buyer.enterprise.name',type:'String'},
+    			//卖家
+    			{name:'service.enterprise.name',type:'String'},
+    			//服务
+    			{name:'service.id',type:'int'},
+    			{name:'service.serviceNo',type:'String'},
+    			{name:'service.serviceSource',type:'Integer'},
+    			{name:'service.serviceName',type:'String'},
+    			{name:'service.category.id',type:'int'},
+    			{name:'service.category.text',type:'String'},
+    			{name:'service.registerTime',type:'String'},
+    			{name:'service.serviceNum',type:'Integer'},
+    			{name:'service.linkMan',type:'String'},
+    			{name:'service.tel',type:'String'},
+    			{name:'service.email',type:'String'},
+    			{name:'service.serviceMethod',type:'String'},
+    			{name:'service.serviceProcedure',type:'String'},
+    			{name:'service.chargeMethod',type:'String'},
+    			{name:'service.costPrice',type:'Integer'},
+    			{name:'service.currentStatus',type:'Integer'},
+    			{name:'service.lastStatus',type:'Integer'},
+    			{name:'service.picture',type:'String'},
+    			{name:'service.totalScore',type:'double'},
+    			{name:'service.evaluateScore',type:'double'},
+    			//招标服务
+    			{name:'biddingService.id',type:'int'},
+    			{name:'biddingService.bidNo',type:'String'},
+    			{name:'biddingService.createTime',type:'String'},
+    			{name:'biddingService.name',type:'String'},
+    			{name:'biddingService.minPrice',type:'Integer'},
+    			{name:'biddingService.maxPrice',type:'Integer'},
+    			{name:'biddingService.attachment',type:'String'},
+    			{name:'biddingService.description',type:'String'},
+    			{name:'biddingService.linkMan',type:'String'},
+    			{name:'biddingService.tel',type:'String'},
+    			{name:'biddingService.email',type:'String'},
+    			{name:'biddingService.status',type:'Integer'},
+    			{name:'biddingService.category.id',type:'int'},
+    			{name:'biddingService.category.text',type:'String'},
+    			{name:'biddingService.user.id',type:'int'},
+    			{name:'biddingService.user.userName',type:'String'},
+    			{name:'biddingService.user.enterprise.name',type:'String'},
+    			{name:'biddingServie.rid',type:'Integer'},
+    			{name:'biddingService.rname',type:'String'}
+    			
+    ]
+	
+});

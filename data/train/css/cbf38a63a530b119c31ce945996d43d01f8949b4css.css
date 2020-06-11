@@ -1,0 +1,34 @@
+.lookup_model_choice, .lookup_multiple_model_choice {
+    padding-right:16px;
+    background: url(
+        %(admin_media_prefix)simg/admin/selector-search.gif
+    ) no-repeat right;
+}
+.lookup_multiple_model_choice {
+    width:150px;
+}
+.del_multiple_model_choices, .del_model_choices {
+    display: none;
+}
+.list_multiple_model_choice{
+    margin-left:5px;
+    list-style-type:none
+    padding:0;
+    margin:0;
+    margin-left:75px;
+}
+.list_multiple_model_choice li{
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+    margin-top:5px;
+}
+.object_repr{
+    float:left;
+    padding-left:2px;
+    border:1px solid #CCCCCC;
+    width:200px;
+    color:#333333;
+    background-color:#EFEFEF;
+}
+.delete_from_m2m{float:left} 

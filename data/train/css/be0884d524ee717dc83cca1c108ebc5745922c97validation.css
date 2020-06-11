@@ -1,0 +1,37 @@
+/* =layout
+====================================================================== */
+
+p.description,
+p.message {
+	margin-top: 0.5em;
+}
+
+p.description + p.message,
+p.message + p.message {
+	margin-top: 0;
+}
+
+/* =presentation
+====================================================================== */
+
+label span.required {
+	color: #999;
+}
+
+p.description,
+p.message {
+	font-size: 0.75em;
+}
+
+p.description {
+	color: #aaa;
+}
+
+div.error label,
+div.error p.message {
+	color: #d00;
+}
+
+div.error p.message {
+	font-weight: bold;
+}

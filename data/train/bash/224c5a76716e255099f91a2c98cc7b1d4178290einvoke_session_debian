@@ -1,0 +1,44 @@
+#!/bin/bash
+# Usage ./invoke_session <gateway>
+
+# Hack for now until lava-test-shell is smart enough to know it's dispatcher ip
+gateway=$1
+echo "Target's Gateway: $gateway"
+
+if ! grep 'invoke_session' /etc/rc.local
+then
+	sed -i '/bin/a invoke_session &' /etc/rc.local
+fi
+
+# Obtain target IP and Hostname
+ip_addr=$(ifconfig `ip route get $gateway | cut -d ' ' -f3` | grep 'inet addr' |awk -F: '{split($2,a," "); print a[1] }')
+hostname=$(cat /etc/hostname)
+
+# Set the PATH to use the LAVA api
+echo "export PATH=/lava/bin/:$PATH" > ~/.bashrc
+
+echo ""
+echo ""
+echo "*******************************************************************************************************"
+echo -n "Please connect to: "
+echo -n "ssh "
+echo -n "-o StrictHostKeyChecking=no "
+echo -n "root@"
+echo -n $ip_addr
+echo -n " "
+echo -n "("
+echo -n $hostname
+echo ")"
+echo "*******************************************************************************************************"
+echo ""
+echo ""
+mkdir -p /run
+mkdir -p /run/hacking
+echo $$ > /run/hacking/hacking.pid
+echo "Hacking session active..."
+while [ -f /run/hacking/hacking.pid ]
+do
+	sleep 10
+done
+echo "Hacking session ended..."
+echo "<LAVA_TEST_RUNNER>: exiting"

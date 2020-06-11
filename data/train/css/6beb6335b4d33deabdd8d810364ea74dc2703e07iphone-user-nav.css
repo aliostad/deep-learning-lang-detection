@@ -1,0 +1,26 @@
+.inner-wrapper nav.user-nav ul li {
+  display: block;
+  vertical-align: top;
+}
+.inner-wrapper nav.user-nav ul {
+  background: none repeat scroll 0 0 #000000;
+  border: none;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 0 10px -5px #000000;
+  display: block;
+  margin: 0;
+  min-width: auto;
+  padding: 0;
+  width: 100%;
+}
+.inner-wrapper nav.user-nav ul li a span {
+  text-align: center;
+  width: auto;
+}
+.inner-wrapper nav.user-nav .yellow-arrow-bk,
+.inner-wrapper nav.user-nav .inner-wrapper nav.user-nav .yellow-arrow-fw {
+  display: none;
+}
+.inner-wrapper nav.user-nav ul li:nth-child(2) a span {
+  display: block;
+}

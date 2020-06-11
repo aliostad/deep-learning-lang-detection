@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+
+set -e
+shopt -s nullglob
+
+. ~/bin/log_helpers.sh
+
+index() {
+  log "  indexing $1"
+  (builtin cd "$1"; ctags -R --languages=ruby)
+}
+
+index_LOAD_PATH() {
+  local LOAD_PATH=()
+
+  if [[ -d "$1"/lib/ruby && -w "$1"/lib/ruby ]]; then
+    LOAD_PATH+=("$1"/lib/ruby/[0-9]*)
+    LOAD_PATH+=("$1"/lib/ruby/shared*)
+    LOAD_PATH+=("$1"/lib/ruby/site_ruby/[0-9]*)
+    LOAD_PATH+=("$1"/lib/ruby/vendor_ruby/[0-9]*)
+  elif [[ -d "$1"/lib && -w "$1"/lib ]]; then
+    LOAD_PATH+=("$1"/lib "$1"/site "$1"/vendor)
+  else
+    err "No \$LOAD_PATH directories found in $1"
+    return 1
+  fi
+
+  log "Generating ctags for $1"
+
+  for dir in ${LOAD_PATH[@]}; do
+    [[ -d "$dir" ]] && index "$dir"
+  done
+}
+
+RUBIES=()
+[[ -d "$PREFIX/opt/rubies/" ]] && RUBIES+=("$PREFIX"/opt/rubies/*)
+[[ -d "$HOME/.rubies" ]] && RUBIES+=("$HOME"/.rubies/*)
+
+case "$#" in
+  0)
+    for dir in ${RUBIES[@]}; do
+      index_LOAD_PATH "$dir"
+    done
+    ;;
+  *)
+    for dir in ${RUBIES[@]}; do
+      [[ "${dir##*/}" == *"$1"* ]] && match="$dir"
+    done
+
+    if [[ -n "$match" ]]; then
+      index_LOAD_PATH "$match"
+    else
+      err "Unknown Ruby: $1"
+      exit 1
+    fi
+    ;;
+esac

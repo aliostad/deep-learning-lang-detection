@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+
+
+<message id='Add Node'>Add Node</message>
+
+<message id='Remove Node'>Remove Node</message>
+
+<message id='Move Node Up'>Move Node Up</message>
+
+<message id='Move Node Down'>Move Node Down</message>
+
+<message id='Add File'>Add File</message>
+
+<message id='Remove File'>Remove File</message>
+
+<message id='Move File'>Move File</message>
+
+<message id='Add Code'>Add Code</message>
+
+<message id='Remove Code'>Remove Code</message>
+
+<message id='Move Code'>Move Code</message>
+
+<message id='Codes'>Codes</message>
+
+<message id='Files'>Files</message>
+
+<message id='Save'>Save</message>
+
+<message id='Upload'>Upload</message>
+
+<message id='Admin'>Admin</message>
+
+<message id='Guest'>Guest</message>
+
+<message id='Cannot be saved!'>Cannot be saved!</message>
+
+<message id='Saved.'>Saved.</message>
+
+<message id='Cannot be added!'>Cannot be added!</message>
+
+<message id='Added.'>Added.</message>
+
+<message id='Cannot be removed!'>Cannot be removed!</message>
+
+<message id='Removed.'>Removed.</message>
+
+<message id='Cannot be moved!'>Cannot be moved!</message>
+
+<message id='Moved.'>Moved.</message>
+
+<message id='Error!'>Error!</message>
+
+<message id='Ok'>Ok</message>
+
+<message id='Cancel'>Cancel</message>
+
+<message id='There is no node!'>There is no node!</message>
+
+<message id='Do you want to remove node?'>Do you want to remove node?</message>
+
+<message id='Do you want to move node up?'>Do you want to move node up?</message>
+
+<message id='Do you want to move node down?'>Do you want to move node down?</message>
+
+<message id='Empty!'>Empty!</message>
+
+<message id='Add'>Add</message>
+
+<message id='Remove'>Remove</message>
+
+<message id='Too Large!'>Too Large!</message>
+
+<message id='There is nothing to remove!'>There is nothing to remove!</message>
+
+<message id='Do you want to remove?'>Do you want to remove?</message>
+
+<message id='Upload'>Upload</message>
+
+<message id='Reset'>Reset</message>
+
+<message id='Paste Content'>Paste Content</message>
+
+<message id='Paste Name'>Paste Name</message>
+
+<message id='There is no other language!'>There is no other language!</message>
+
+<message id='Select Language'>Select Language</message>
+
+<message id='Search'>Search</message>
+
+<message id='Node Config'>Node Config</message>
+
+<message id='Global Config'>Global Config</message>
+
+<message id='!!! EMPTY !!!'>!!! EMPTY !!!</message>
+
+<message id='Contents'>Contents</message>
+
+<message id='Find'>Find</message>
+
+<message id='No matches found!'>No matches found!</message>
+
+<message id='Suspicious'>Suspicious</message>
+
+<message id='Editor'>Editor</message>
+
+
+</messages>

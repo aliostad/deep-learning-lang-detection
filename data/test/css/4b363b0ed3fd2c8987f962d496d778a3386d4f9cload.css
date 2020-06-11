@@ -1,0 +1,174 @@
+/**
+ *
+ * @authors Ted Shiu (tedshd@gmail.com)
+ * @date    2014-12-28 01:25:06
+ * @version $Id$
+ */
+/**
+ *
+ * @authors Ted Shiu (tedshd@gmail.com)
+ * @date    2014-12-28 00:54:39
+ * @version $Id$
+ */
+/**
+ *
+ * @authors Ted Shiu (tedshd@gmail.com)
+ * @date    2014-12-28 00:44:50
+ * @version $Id$
+ */
+/* line 10, ../sass/load.scss */
+#loading_view {
+  z-index: 999;
+  background: #222;
+  opacity: 1;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+/* line 18, ../sass/load.scss */
+.loading #loader {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 100px;
+  height: 80px;
+}
+/* line 27, ../sass/load.scss */
+.loading #loader span {
+  display: inline-block;
+  width: 10px;
+  height: 40px;
+  animation-name: scale;
+  -webkit-animation-name: scale;
+  -moz-animation-name: scale;
+  animation-duration: 1.2s;
+  -webkit-animation-duration: 1.2s;
+  -moz-animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+}
+/* line 41, ../sass/load.scss */
+.loading #loader div {
+  text-align: center;
+}
+/* line 44, ../sass/load.scss */
+.loading #loader span.item-1 {
+  background: #2ecc71;
+}
+/* line 47, ../sass/load.scss */
+.loading #loader span.item-2 {
+  background: #3498db;
+}
+/* line 50, ../sass/load.scss */
+.loading #loader span.item-3 {
+  background: #9b59b6;
+}
+/* line 53, ../sass/load.scss */
+.loading #loader span.item-4 {
+  background: #e67e22;
+}
+/* line 56, ../sass/load.scss */
+.loading #loader span.item-5 {
+  background: #c0392b;
+}
+/* line 59, ../sass/load.scss */
+.loading #loader span.item-6 {
+  background: #e74c3c;
+}
+/* line 62, ../sass/load.scss */
+.loading #loader span.item-7 {
+  background: #e74c8c;
+}
+/* line 65, ../sass/load.scss */
+.loading #loader .item-1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+  -moz-animation-delay: -1s;
+}
+/* line 70, ../sass/load.scss */
+.loading #loader .item-2 {
+  animation-delay: -0.9s;
+  -webkit-animation-delay: -0.9s;
+  -moz-animation-delay: -0.9s;
+}
+/* line 75, ../sass/load.scss */
+.loading #loader .item-3 {
+  animation-delay: -0.8s;
+  -webkit-animation-delay: -0.8s;
+  -moz-animation-delay: -0.8s;
+}
+/* line 80, ../sass/load.scss */
+.loading #loader .item-4 {
+  animation-delay: -0.7s;
+  -webkit-animation-delay: -0.7s;
+  -moz-animation-delay: -0.7s;
+}
+/* line 85, ../sass/load.scss */
+.loading #loader .item-5 {
+  animation-delay: -0.6s;
+  -webkit-animation-delay: -0.6s;
+  -moz-animation-delay: -0.6s;
+}
+/* line 90, ../sass/load.scss */
+.loading #loader .item-6 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+  -moz-animation-delay: -0.5s;
+}
+/* line 95, ../sass/load.scss */
+.loading #loader .item-7 {
+  animation-delay: -0.4s;
+  -webkit-animation-delay: -0.4s;
+  -moz-animation-delay: -0.4s;
+}
+
+@-webkit-keyframes scale {
+  0%, 40%, 100% {
+    -webkit-transform: scaleY(0.2);
+    -moz-transform: scaleY(0.2);
+    transform: scaleY(0.2);
+  }
+  20%, 60% {
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+}
+@-moz-keyframes scale {
+  0%, 40%, 100% {
+    -webkit-transform: scaleY(0.2);
+    -moz-transform: scaleY(0.2);
+    transform: scaleY(0.2);
+  }
+  20%, 60% {
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+}
+@keyframes scale {
+  0%, 40%, 100% {
+    -webkit-transform: scaleY(0.2);
+    -moz-transform: scaleY(0.2);
+    transform: scaleY(0.2);
+  }
+  20%, 60% {
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+}

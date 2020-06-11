@@ -1,0 +1,46 @@
+.bs-example {
+        display: inline;
+      }
+      
+      .show-resume td > div {
+        overflow: hidden;
+        height: 3em;
+      }
+
+      .show-resume tr {
+        cursor: pointer;
+      }
+
+      /*.show-resume td:first-child {
+        word-break: break-all;
+      }
+
+      .show-resume td:nth-child(2) {
+        word-break: break-all;
+      }
+
+      .show-resume td:nth-child(3) {
+        word-break: break-all;
+      }
+
+      .show-resume td:nth-child(4) {
+        word-break: break-all;
+      }
+
+      .show-resume td:nth-child(5) {
+        word-break: break-all;
+      }*/
+
+      .exceed-view {
+        top: auto;
+        left: 100%;
+        bottom: -100%;
+      }
+
+      .resume-icon {
+        margin: 0.2em;
+      }
+
+      .flaticon-youtube17 {
+        color: #DF0101;
+      }

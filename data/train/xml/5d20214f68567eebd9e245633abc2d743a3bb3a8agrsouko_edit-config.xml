@@ -1,0 +1,21 @@
+<flex-config>
+  <use-network>false</use-network>
+  
+  <default-size>
+    <width>720</width>
+    <height>480</height>
+  </default-size>
+  
+  <compiler>
+    <warn-duplicate-variable-def>false</warn-duplicate-variable-def>
+    <show-unused-type-selector-warnings>false</show-unused-type-selector-warnings>
+  </compiler>
+  
+  <metadata>
+    <title></title>
+    <description></description>
+    <publisher>◆nemu90kWw.</publisher>
+    <creator>◆nemu90kWw.</creator>
+    <language>JP</language>
+  </metadata>
+</flex-config>

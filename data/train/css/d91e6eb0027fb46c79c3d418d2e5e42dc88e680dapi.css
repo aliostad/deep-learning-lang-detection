@@ -1,0 +1,97 @@
+/* $Id: api.css,v 1.15 2009/01/26 20:18:46 drumm Exp $ */
+
+/* Expandable regions */
+html.js div.api-expandable div.content {
+  display: none;
+}
+
+/* PHP code */
+.php {
+  font-family: monospace;
+  overflow: auto;
+}
+.php .php-comment {
+  color: #666;
+}
+.php .php-function-or-constant {
+  color: #00a;
+}
+.php .php-function-or-constant a.local {
+  color: #00a;
+  font-weight: bold;
+}
+.php .php-function-or-constant a.php-manual {
+  color: #048;
+  font-weight: bold;
+}
+.php .php-variable {
+  color: #330;
+}
+.php .php-string {
+  color: #a00;
+}
+.php .php-constant {
+  color: #a33;
+}
+.php .php-keyword {
+  color: #060;
+}
+
+/* Lists */
+dl.api-related-topics dt {
+  clear: both;
+  float: left;
+  padding: 0 1em 0 0;
+}
+dl.api-functions dd,
+dl.api-related-topics dd {
+  margin: 0 0 0 1em;
+}
+
+/* Function signature */
+#api-function-signature {
+  font-size: 1.2em;
+}
+#api-function-signature dt {
+  float: left;
+  text-align: right;
+}
+#api-function-signature dt a,
+#api-function-signature dd a,
+#api-function-signature dt a:visited,
+#api-function-signature dd a:visited {
+  font-weight: normal;
+  color: #9d9d93;
+}
+#api-function-signature strong {
+  color: #000;
+  font-weight: normal;
+}
+#api-function-signature dt strong {
+  font-weight: bold;
+}
+#api-function-signature del {
+  text-decoration: none;
+  color: #9e8353;
+}
+#api-function-signature strong del {
+  color: #9e6500;
+}
+#api-function-signature ins {
+  text-decoration: none;
+  color: #96bc44;
+}
+#api-function-signature strong ins {
+  color: #517700;
+}
+
+/* Search block- make the text field the correct width */
+#api-search-form #edit-search-wrapper {
+  display: inline;
+}
+#api-search-form #edit-search {
+  width: 115px;
+}
+#api-search-form #autocomplete {
+  width: 250px !important;
+}

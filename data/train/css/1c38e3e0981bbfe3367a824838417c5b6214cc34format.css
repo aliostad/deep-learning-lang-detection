@@ -1,0 +1,42 @@
+<!-- | -->
+
+#$$$div__show {
+    position:absolute;
+    top:80px;
+    left:10px;
+    width:150px;
+    height:auto;
+}
+#$$$div__show a,
+    #$$$div__show a:link,
+    #$$$div__show a:visited,
+    #$$$div__show a:active,
+    #$$$div__show a:focus
+{
+    display:block;
+    padding:3px;
+    margin:2px;
+    margin-bottom:5px;
+    background:#AAF;
+    cursor:pointer;
+    color:#000;
+    font-weight:normal;
+}
+#$$$div__show a:hover {
+    border:0px;
+    background:#003;
+    color:#FFF;
+}
+.$$$sub a:link,
+    .$$$sub a:visited,
+    .$$$sub
+{
+    padding:1px;
+    font-size:8pt;
+    background:#FF0;
+    color:#000;
+}
+.$$$sub:hover {
+    background:#003;
+    color:#FFF;
+}

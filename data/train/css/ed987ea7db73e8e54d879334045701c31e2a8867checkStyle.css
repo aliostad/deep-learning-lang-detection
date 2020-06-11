@@ -1,0 +1,44 @@
+.model-checked{
+    cursor: pointer;
+}
+
+.model-checked, .data, .remarks, .add-btn {
+    display: inline-block;
+}
+
+.model-checked > div {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    position: relative;
+}
+
+.model-checked > div > .fa-check {
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.model-checked > .no-check {
+    background-color: #eee;
+}
+
+.model-checked > .no-check > .fa-check {
+    display: none;
+}
+
+.model-checked > .check {
+    background-color: #2399ad;
+}
+
+.model-checked > .check > .fa-check {
+    display: block;
+}
+
+.model-checked > input[type="checkbox"] {
+    display: none;
+}

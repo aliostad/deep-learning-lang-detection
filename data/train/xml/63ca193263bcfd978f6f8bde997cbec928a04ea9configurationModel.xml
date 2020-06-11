@@ -1,0 +1,30 @@
+<configurationModel>
+	<configuration>
+		<expression>r</expression>
+		<transformation>
+			<name>selectDtmc</name>
+			<args>simple.dot</args>
+		</transformation>
+	</configuration>
+	<configuration>
+		<expression>p</expression>
+		<transformation>
+			<name>appendDTMC</name>
+			<args>append_errorHandling.dot, errorHandling</args>
+		</transformation>
+	</configuration>
+	<configuration>
+		<expression>o</expression>
+		<transformation>
+			<name>appendDTMC</name>
+			<args>append_temperature.dot, temperature</args>
+		</transformation>
+	</configuration>
+	<configuration>
+		<expression>x</expression>
+		<transformation>
+			<name>appendDTMC</name>
+			<args>append_pulserate.dot, pulserate</args>
+		</transformation>
+	</configuration>
+</configurationModel>

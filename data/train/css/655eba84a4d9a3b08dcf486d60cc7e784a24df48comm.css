@@ -1,0 +1,383 @@
+body {
+	background: #fff;
+	font-size: 12px;
+	font-family: Verdana, Tahoma, Arial, "Helvetica Neue", Helvetica,
+		Sans-Serif;
+	margin: 0;
+	padding: 0;
+}
+
+a:link {
+	color: #1b60ad;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+a:visited {
+	color: #1b60ad;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #1b60ad;
+	text-decoration: none;
+}
+
+a:active {
+	color: #1b60ad;
+}
+
+.table {
+	width: 100%;
+	border: 0;
+	background: #fff;
+	padding: 5px;
+}
+
+.table tr td {
+	padding: 6px;
+	font-size: 12px;
+}
+
+.table tr .t_tip {
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+
+.table tr .t_title {
+	min-width: 100px;
+	text-align: right;
+}
+
+.table tr .t_cont {
+	min-width: 180px;
+	text-align: left;
+}
+
+.table tr .t_operate {
+	text-align: center;
+}
+
+.dlg_panel {
+	background: #fff;
+	padding: 10px;
+}
+
+.dg_toolbar {
+	padding: 3px;
+	height: auto;
+}
+
+.dg_toolbar input {
+	width: 100px;
+}
+
+.dg_toolbar label {
+	color: #999;
+}
+
+.panel_title {
+	padding: 5px;
+	line-height: 20px;
+	color: #15428b;
+	font-size: 12px;
+	background-color: #e0ecff;
+	border-bottom: 1px solid #99BBE8;
+}
+
+.red {
+	color: red;
+}
+
+.w_50 {
+	width: 50px;
+}
+
+.w_100 {
+	width: 100px;
+}
+
+.hidden {
+	display: none;
+}
+
+.past_history_menu {
+	list-style: none;
+	padding: 0px 5px 0px 20px;
+}
+
+.past_history_menu li {
+	height: 25px;
+	line-height: 25px;
+}
+
+.past_history_menu li a {
+	color: blue;
+	text-decoration: none;
+}
+
+.past_history_menu li a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+.dmc_value_panel {
+	width: 720px;
+	text-align: center;
+}
+
+.dmc_value_panel ul.dmc_header {
+	list-style: none;
+	width: 630px;
+	display: inline-block;
+	border: 1px #999 solid;
+	padding: 0px;
+	margin: 0px;
+}
+
+.dmc_value_panel ul.dmc_header li {
+	float: left;
+	width: 90px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.dmc_value_panel ul.dmc_header .dmc_h_1 {
+	background: #698038;
+}
+
+.dmc_value_panel ul.dmc_header .dmc_h_2 {
+	background: #b5cb83;
+}
+
+.dmc_value_panel ul.dmc_header .dmc_h_3 {
+	background: #eaf2dd;
+}
+
+.dmc_value_panel ul.dmc_header .dmc_h_4 {
+	background: #fff;
+}
+
+.dmc_value_panel ul.dmc_header .dmc_h_5 {
+	background: #f8cca7;
+}
+
+.dmc_value_panel ul.dmc_header .dmc_h_6 {
+	background: #d4680d;
+}
+
+.dmc_value_panel ul.dmc_header .dmc_h_7 {
+	background: #fd0000;
+}
+
+.dmc_value_panel ul.dmc_cont {
+	list-style: none;
+	width: 720px;
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
+	font-size: 12px;
+}
+
+.dmc_value_panel ul.dmc_cont li {
+	float: left;
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.dmc_value_panel ul.dmc_cont li input {
+	width: 30px;
+}
+
+.dg_panel {
+	margin: 10px 0px 10px 0px;
+}
+
+.dg_panel .dgc_panel {
+	width: 95%;
+	list-style: none;
+	padding: 0px;
+	margin: 0px 10px 5px 10px;
+	display: inline-block;
+}
+
+.dg_panel .dgc_panel li {
+	float: left;
+	width: 100%;
+	border: 1px #999 solid;
+}
+
+.dg_panel .dgc_panel li.dp_title {
+	background: #f1f1f1;
+	padding: 2px 10px 2px 10px;
+}
+
+.dg_panel .dgc_panel li.dp_title .dpt_name {
+	font-size: 14px;
+	font-weight: bold;
+	min-width: 150px;
+	display: inline-block;
+}
+
+.dg_panel .dgc_panel li.dp_title .dpt_attr {
+	padding-left: 10px;
+	display: inline-block;
+}
+
+.dg_panel .dgc_panel li.dp_cont {
+	padding: 10px;
+}
+
+.dg_panel .dgc_panel li.dp_operate {
+	border-top: 0px;
+	padding: 8px 10px 8px 10px;
+}
+
+.dg_panel .dgc_panel li .dg_table {
+	width: 100%;
+	border: 1px #c4c4c4 solid;
+	background: #fff;
+}
+
+.dg_panel .dgc_panel li .dg_table tr th {
+	padding: 8px;
+	font-size: 12px;
+	font-weight: bold;
+	min-width: 80px;
+}
+
+.dg_panel .dgc_panel li .dg_table tr td {
+	padding: 5px;
+	font-size: 12px;
+}
+
+.dg_panel .dgc_panel li .dg_table tr .dgt_separator {
+	padding-top: 15px;
+	border-bottom: 2px #999 solid;
+}
+
+select,textarea,input[type="text"],input.text,input.text-box {
+	border: 1px solid #e0e0e0;
+	padding: 4px;
+}
+
+input[type="text"],input.text,input.text-box {
+	line-height: 1.2em
+}
+
+select {
+	padding: 3px
+}
+
+select:hover,textarea:hover,input[type="text"]:hover,input.text:hover,input.text-box:hover
+	{
+	border-color: #a9b5c0;
+	background: #f5f6ee;
+}
+
+select:focus,textarea:focus,input[type="text"]:focus,input.text:focus,input.text-box:focus
+	{
+	border-color: #a9b5c0;
+	background: #faffbd;
+}
+
+input.combo-text {
+	padding: 0;
+	border: 0;
+}
+
+.table_bounced {
+	width: 500px;
+	padding: 10px 0px;
+	font: 12px/ 18px "����";
+	color: #333;
+}
+
+.table_bounced .table_bounced_title {
+	margin-left: 10px;
+	font: bold 14px/ 24px "����";
+}
+
+.table_bounced table {
+	border: 1px solid #99BBE8;
+}
+
+.table_bounced table th {
+	background: #c8e6fb;
+	color: #1B60AD;
+	text-align: left;
+	padding: 5px;
+	font: 12px/ 18px "����";
+}
+
+.table_bounced table td {
+	padding: 5px;
+	border-top: 1px solid #99BBE8;
+}
+
+.color_red {
+	color: red;
+}
+
+.table_bounced p {
+	width: 700px;
+}
+
+.table_bounced p span {
+	color: #0000FF;
+}
+
+.model-div {
+	padding: 5px;
+	line-height: 25px;
+	font-size: 12px;
+}
+
+.model-div div {
+	margin-bottom: 5px;
+}
+
+.model-div .md-title {
+	font-weight: bold;
+	min-width: 180px;
+	display: inline-block;
+	text-align: right;
+	margin-right: 10px;
+}
+
+.model-table {
+	font-size: 12px;
+	width: 100%;
+	margin-bottom: 20px;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.model-table thead>tr>th,.model-table tbody>tr>th,.model-table tfoot>tr>th,.model-table thead>tr>td,.model-table tbody>tr>td,.model-table tfoot>tr>td
+	{
+	padding: 8px;
+	line-height: 1.428571429;
+	vertical-align: inherit;
+	text-align: center;
+	border: 1px solid #dddddd;
+}
+
+.model-table thead>tr>th {
+	vertical-align: bottom;
+	border-bottom: 2px solid #dddddd;
+}
+
+.model-table tbody+tbody {
+	border-top: 2px solid #dddddd;
+}
+
+.model-table>thead>tr>td.active,.model-table>tbody>tr>td.active,.model-table>tfoot>tr>td.active,.model-table>thead>tr>th.active,.model-table>tbody>tr>th.active,.model-table>tfoot>tr>th.active,.model-table>thead>tr.active>td,.model-table>tbody>tr.active>td,.model-table>tfoot>tr.active>td,.model-table>thead>tr.active>th,.model-table>tbody>tr.active>th,.model-table>tfoot>tr.active>th
+	{
+	background-color: #f5f5f5;
+}
+
+.blue, a.blue, a.blue:hover{ color:#349cf6;}
+.orange, a.orange, a.orange:hover{ color:#e57100;}
+.green, a.green, a.green:hover{ color:green;}
+.red, a.red, a.red:hover{color: red;}

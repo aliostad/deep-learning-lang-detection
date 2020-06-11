@@ -1,0 +1,19 @@
+#!/bin/sh
+#
+# prime-filesystems
+# MIT License
+# @doublecompile
+# Simple filesystem setup of Debian-based AWS instances
+
+# Add noatime flag to root filesystem
+sed -i "s/defaults,discard/defaults,discard,noatime/g" /etc/fstab
+
+# Make /tmp in-memory with no exec privileges
+echo "tmpfs   /tmp    tmpfs   nodev,nosuid,noexec     0 0" >> /etc/fstab
+
+# Make apt remount /tmp when installing packages
+echo "DPkg::Pre-Invoke{\"mount -o remount,exec /tmp\";};" > /etc/apt/apt.conf.d/17remount
+echo "DPkg::Post-Invoke {\"mount -o remount /tmp\";};" >> /etc/apt/apt.conf.d/17remount
+
+# All done
+echo "Filesystems configured. You should reboot."

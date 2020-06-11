@@ -1,0 +1,79 @@
+﻿
+#view .view-column {
+	padding-left: 0;
+}
+#view .view-column-1 {
+	padding-left: 10px;
+}
+
+#view .view-personal-information {
+	border: 1px solid #ddd;
+	padding: 4px 8px;
+	margin-bottom: 10px;
+	background-color: #91C86E;
+}
+#view .view-header {
+	padding: 2px 8px;
+	margin: 0 0 10px 0;
+	border: 1px #CCCCCC solid;
+	background-color: #DEEFD3;
+	font-size: 18px;
+}
+#view .view-text {
+	border: 1px solid #ddd;
+	padding: 4px 8px;
+	margin-bottom: 10px;
+}
+
+
+
+#view .view-item {
+	border: 1px solid #ddd;
+	padding: 4px 8px;
+	margin-bottom: 10px;
+	display: block;
+	cursor: pointer;
+}
+#view .view-item:hover {
+	background: #eee;
+}
+#view .view-item, #view .view-item * {
+	color: #000;
+	text-decoration: none;
+}
+#view .view-item-header {
+	background: url(../pix/bookmarksnotes.png) 0 2px no-repeat;
+	padding-left: 20px;
+	display: block;
+}
+#view .view-item-type-file .view-item-header {
+	background-image: url(../pix/bookmarksfiles.png);
+}
+#view .view-item-type-link .view-item-header {
+	background-image: url(../pix/bookmarkslinks.png);
+}
+#view .view-item-text {
+	padding: 4px 0 0 0;
+	display: block;
+}
+#view .view-item-link {
+  background-color: #333333;
+  border: 0 none;
+  color: #FFFFFF;
+  display: block;
+  font-size: 12px;
+  margin: 5px 0;
+  text-align: center;
+}
+#view .view-item:hover .view-item-link {
+	text-decoration: underline;
+}
+
+/* Add by Nir 
+------------------------ */
+.forumpost .starter {
+	text-align: right !important;
+}
+.forumpost .content {
+  text-align: right !important;
+}

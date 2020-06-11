@@ -1,0 +1,285 @@
+.spinner {
+  margin: 100px auto;
+  width: 400px;
+  height: 100px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+	margin-left:10px;
+  background-color: rgba(26, 173, 208, .5);
+  height: 100%;
+  width: 10px;
+  display: inline-block;
+
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+.sq-loading {
+    z-index: 3;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.0) }
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.0);
+    -webkit-transform: scaleY(0.0);
+  }  20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+
+#squid_api_pathanalysis_widget {
+  position: relative;
+  height: 450px;
+}
+
+#squid_api_pathanalysis_widget .pathanalysis_header {
+  height: 61px;
+  background: #fff;
+  z-index: 0;
+  position: relative;
+}
+
+#squid_api_pathanalysis_widget .pathanalysis_columns {
+  position: absolute;
+  width: 155px;
+  right: 0px;
+  z-index: 0;
+  height: 100%;
+  background: #f8f8f8;
+  top: 62px;
+}
+
+#squid_api_pathanalysis_widget .pathanalysis_columns .additional-metric {
+  text-align: center;
+  position: relative;
+  left: -20px;
+}
+
+#squid_api_pathanalysis_widget .pathanalysis_columns.additionalMetric {
+  width: 200px;
+}
+
+#squid_api_pathanalysis_widget .pathanalysis_diagram {
+  position: relative;
+  z-index: 2;
+}
+
+#squid_api_pathanalysis_widget .pathanalysis_diagram .data-column text {
+  font-size: 15px;
+}
+
+#squid_api_pathanalysis_widget .pathanalysis_diagram .dataset text {
+  font-weight: bold;
+}
+
+#squid_api_pathanalysis_widget .pathanalysis_diagram .dataset text.small {
+  display: none;
+  fill: rgb(118, 118, 118);
+  color: gray;
+}
+
+#squid_api_pathanalysis_widget .pathanalysis_diagram .expanded .dataset text.small {
+  display: inherit;
+}
+
+#squid_api_pathanalysis_widget svg {
+  margin-top: 20px;
+}
+
+#squid_api_pathanalysis_widget .clock-icon {
+  font-size: 14px;
+  position: relative;
+}
+
+#squid_api_pathanalysis_widget .clock-icon i {
+  font-size: 37px;
+  top: 8px;
+  color: #a7a7a7;
+  position: relative;
+  left: 7px;
+}
+
+#squid_api_pathanalysis_widget .column-header {
+  font-size: 12px;
+  top: -53px;
+  position: relative;
+}
+
+#squid_api_pathanalysis_widget .column-header div {
+  position: relative;
+  height: 50px;
+}
+
+#squid_api_pathanalysis_widget .column-header div span {
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+}
+
+#squid_api_pathanalysis_widget .addbutton text {
+  cursor: pointer;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: orange;
+}
+
+.bar:hover {
+  fill: orangered ;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  z-index: 3;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+#squid_api_pathanalysis_widget .stats {
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+#squid_api_pathanalysis_widget .stats i {
+  font-size: 34px;
+  position: absolute;
+  top: 11px;
+}
+
+#squid_api_pathanalysis_widget .stats span {
+  margin-left: 40px;
+}
+
+#squid_api_pathanalysis_widget .squid-api-data-widgets-dimension-selector {
+  top: 39px;
+  position: relative;
+}
+
+.squid-api-pathanalysis-widget-tooltip {
+  min-width: 100px;
+}
+
+.squid-api-pathanalysis-widget-tooltip .name, .squid-api-pathanalysis-widget-tooltip th.step-number {
+  font-size: 14px;
+  color: #767676;
+  font-weight: bold;
+}
+
+.squid-api-pathanalysis-widget-tooltip .step-number, .squid-api-pathanalysis-widget-tooltip .clock, .squid-api-pathanalysis-widget-tooltip .color, .squid-api-pathanalysis-widget-tooltip .value {
+  float: left;
+  font-weight: normal;
+  margin-top: 10px;
+  color: #767676;
+}
+
+.squid-api-pathanalysis-widget-tooltip tr {
+  margin-bottom: 10px;
+}
+
+.squid-api-pathanalysis-widget-tooltip th.step {
+  color: #767676 !important;
+  margin-left: 15px;
+}
+
+.squid-api-pathanalysis-widget-tooltip .name {
+  font-size: 13px;
+  display: inline-block;
+  padding-right: 15px;
+  position: relative;
+  top: 12px;
+}
+
+.squid-api-pathanalysis-widget-tooltip .line {
+  height: 35px;
+  width: 10px;
+}
+
+.squid-api-pathanalysis-widget-tooltip .color {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.squid-api-pathanalysis-widget-tooltip .clock i {
+  font-size: 20px;
+}
+
+.squid-api-pathanalysis-widget-tooltip .value {
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 13px;
+}
+
+.squid-api-pathanalysis-widget-tooltip .step-number {
+  padding: 7px;
+  position: relative;
+  left: -5px;
+}
+
+.pathanalysis-tip:after {
+  text-align: center !important;
+}

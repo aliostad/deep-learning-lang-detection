@@ -1,0 +1,41 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Admin interface styles
+ *
+ * @author    Qualiteam software Ltd <info@x-cart.com>
+ * @copyright Copyright (c) 2011-2015 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+ * @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+ * @link      http://www.x-cart.com/
+ */
+
+.tab-content td,
+.tab-content p,
+.tab-content div {
+  font-size: 14px;
+}
+
+.tab-content td {
+  line-height: 40px;
+}
+
+.tab-content td:first-child {
+  line-height: inherit;
+}
+
+.model-properties h2,
+.model-properties h3 {
+  font-size: 20px;
+}
+
+.model-properties label {
+  font-size: 14px;
+}
+
+.tab-content .admin-title {
+  font-size: 22px;
+}
+
+.tab-content .model-properties .model-form-buttons {
+  padding-left: 264px;
+}

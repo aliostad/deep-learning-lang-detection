@@ -1,0 +1,32 @@
+#!/bin/bash
+#########################################################################
+#
+# Name:     Load
+# Purpose:  Load jdoor Driver 
+##########################################################################
+
+module=snvme
+module1=jdoor
+module2=nvme
+# Remove module
+nvme_load=`cat /proc/modules | awk "\\$1==\"$module\" {print \\$1}"`
+if [ ! -z $nvme_load ]
+then
+echo 'removing snvme'
+sudo -n /sbin/rmmod $module || exit 1
+fi
+#Insmod module
+#echo 'loading jdoor'
+#sudo /sbin/insmod $module1.ko || exit 1
+#echo 'loading nvme'
+#sudo /sbin/insmod $module2.ko || exit 1
+
+##########################################################################
+# 
+#END:  Load script 
+#
+#########################################################################
+
+
+
+

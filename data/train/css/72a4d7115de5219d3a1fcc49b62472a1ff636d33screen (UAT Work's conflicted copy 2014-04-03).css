@@ -1,0 +1,36 @@
+/* line 2, ../scss/partials/_structure.scss */
+#wrapper {
+  width: 100%;
+}
+
+/* line 1, ../scss/partials/_nav.scss */
+nav {
+  *zoom: 1;
+  width: 100%;
+}
+/* line 38, ../../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 4, ../scss/partials/_nav.scss */
+nav ul#main-nav {
+  *zoom: 1;
+  width: 60em;
+  margin: 0 auto;
+}
+/* line 38, ../../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+nav ul#main-nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 8, ../scss/partials/_nav.scss */
+nav ul#main-nav li {
+  float: left;
+}
+/* line 10, ../scss/partials/_nav.scss */
+nav ul#main-nav li ul {
+  display: none;
+}

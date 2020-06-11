@@ -1,0 +1,33 @@
+/***************************************/
+/* Messages Show */
+/***************************************/
+/* line 7, /home/yuva/Desktop/project/richard/pokerradius/app/assets/stylesheets/messages_show.css.scss */
+#message_show_container {
+  border-top: 1px solid #343434;
+}
+/* line 11, /home/yuva/Desktop/project/richard/pokerradius/app/assets/stylesheets/messages_show.css.scss */
+#message_show_container #message_header {
+  margin-top: 20px;
+}
+/* line 14, /home/yuva/Desktop/project/richard/pokerradius/app/assets/stylesheets/messages_show.css.scss */
+#message_show_container #message_header .profile_pic {
+  margin: 0;
+  width: 20%;
+  display: inline-block;
+}
+/* line 22, /home/yuva/Desktop/project/richard/pokerradius/app/assets/stylesheets/messages_show.css.scss */
+#message_show_container #message_header .right_section {
+  width: 60%;
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  bottom: 10px;
+}
+/* line 32, /home/yuva/Desktop/project/richard/pokerradius/app/assets/stylesheets/messages_show.css.scss */
+#message_show_container #message_header p {
+  margin: 0;
+}
+/* line 39, /home/yuva/Desktop/project/richard/pokerradius/app/assets/stylesheets/messages_show.css.scss */
+#message_show_container #message_body {
+  margin-top: 20px;
+}

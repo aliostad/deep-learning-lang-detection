@@ -1,0 +1,161 @@
+.spark-write-box {
+    margin: 5px 0 0px 0;
+    width: inherit;96%;
+}
+
+.spark-write-box {
+    width: 99.8%;
+}
+
+.spark-write-box textarea {
+    resize:none;
+    width: 97%;
+    margin: 0 auto;
+    padding: ;8px;
+    border: ;1px solid rgba(50,50,50,0.2);
+    border-radius: 3px;
+    background: ;rgba(104,1,56,0.1);
+    background: rgba(125,180,181,0.1);
+    box-shadow:         inset 0 0 5px rgba(0, 0, 0, 0.1), 
+                        0 1px 0 rgba(255, 255, 255, 0.5), 
+                        inset 0 1px 2px rgba(0, 0, 0, 0.3), 
+                        0 0 40px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow:    inset 0 0 5px rgba(0, 0, 0, 0.1), 
+                        0 1px 0 rgba(255, 255, 255, 0.5), 
+                        inset 0 1px 2px rgba(0, 0, 0, 0.3), 
+                        0 0 40px rgba(255, 255, 255, 0.3);
+    -o-box-shadow:      inset 0 0 5px rgba(0, 0, 0, 0.1), 
+                        0 1px 0 rgba(255, 255, 255, 0.5), 
+                        inset 0 1px 2px rgba(0, 0, 0, 0.3), 
+                        0 0 40px rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1), 
+                        0 1px 0 rgba(255, 255, 255, 0.5), 
+                        inset 0 1px 2px rgba(0, 0, 0, 0.3), 
+                        0 0 40px rgba(255, 255, 255, 0.3);
+    
+    color: rgba(0,0,0,0.5);#333;
+    margin: ;137px 80px 0 80px;
+    outline: none;
+    height: 30px;
+    
+    transition:         all .1s linear;
+    -moz-transition:    all .1s linear;
+    -o-transition:      all .1s linear;
+    -webkit-transition: all .1s linear;
+}  
+
+#spark-write-options{
+    width: 98.7%;
+    margin: 5px auto;
+    border: ;1px solid rgba(50,50,50,0.2);
+    background: ;rgba(125,180,181,1.05);
+    display: ;none;
+}
+
+#spark-write-options .submit, #spark-write-options .cancel {
+    padding: 2px 8px;
+    background: gray; rgba(104,1,56,0.1);
+    border: 1px solid rgba(50,50,50,0.2);
+    width:;60px; 
+    float: right;
+    border-radius: 3px;
+    margin: 2px 5px 0px 20px;
+}              
+
+#spark-write-options .submit {
+    background: rgba(51,255,126,0.09);
+}
+
+#spark-write-options .submit:hover {
+    cursor: pointer;
+}
+
+#spark-write-options .cancel {
+    background: rgba(255,112,64,0.5);
+    display: none;
+}
+
+
+.top-header form {
+    background: transparent no-repeat top left;
+    background-clip: padding-box;         
+    padding: 0;
+    width: ;200px;
+    margin: 0 auto;
+}
+
+.top-header input {
+    background: transparent;
+    background:  ;rgba(200,200,200,1);rgba(104,1,56,0.1);rgba(163, 135, 106, 0.15);
+    background-clip: padding-box;
+    
+    border: none;
+    border-radius:         26px;
+    -moz-border-radius:    26px;
+    -o-border-radius:      26px;
+    -webkit-border-radius: 26px;
+    
+    box-shadow:         inset 0 0 5px rgba(0, 0, 0, 0.1), 
+                        0 1px 0 rgba(255, 255, 255, 0.5), 
+                        inset 0 1px 2px rgba(0, 0, 0, 0.3), 
+                        0 0 40px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow:    inset 0 0 5px rgba(0, 0, 0, 0.1), 
+                        0 1px 0 rgba(255, 255, 255, 0.5), 
+                        inset 0 1px 2px rgba(0, 0, 0, 0.3), 
+                        0 0 40px rgba(255, 255, 255, 0.3);
+    -o-box-shadow:      inset 0 0 5px rgba(0, 0, 0, 0.1), 
+                        0 1px 0 rgba(255, 255, 255, 0.5), 
+                        inset 0 1px 2px rgba(0, 0, 0, 0.3), 
+                        0 0 40px rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1), 
+                        0 1px 0 rgba(255, 255, 255, 0.5), 
+                        inset 0 1px 2px rgba(0, 0, 0, 0.3), 
+                        0 0 40px rgba(255, 255, 255, 0.3);
+    
+    color: #333;
+    height: 26px;
+    margin: ;137px 80px 0 80px;
+    outline: none;
+    padding: 0 20px 0 30px;
+    
+    transition:         all .1s linear;
+    -moz-transition:    all .1s linear;
+    -o-transition:      all .1s linear;
+    -webkit-transition: all .1s linear;
+    
+    width: 99%;
+}
+
+.top-header input:focus, #spark-write-box textarea:focus {
+    background: transparent;
+    background: rgba(104,1,56,0.2);rgba(163, 135, 106, 0.2);
+
+    box-shadow:         inset 0 0 5px rgba(0, 0, 0, 0.2), 
+                        0 1px 0 rgba(255, 255, 255, 0.7), 
+                        inset 0 1px 2px rgba(0, 0, 0, 0.4), 
+                        0 0 40px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow:    inset 0 0 5px rgba(0, 0, 0, 0.2), 
+                        0 1px 0 rgba(255, 255, 255, 0.7), 
+                        inset 0 1px 2px rgba(0, 0, 0, 0.4), 
+                        0 0 40px rgba(255, 255, 255, 0.5);
+    -o-box-shadow:      inset 0 0 5px rgba(0, 0, 0, 0.2), 
+                        0 1px 0 rgba(255, 255, 255, 0.7), 
+                        inset 0 1px 2px rgba(0, 0, 0, 0.4), 
+                        0 0 40px rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2), 
+                        0 1px 0 rgba(255, 255, 255, 0.7), 
+                        inset 0 1px 2px rgba(0, 0, 0, 0.4), 
+                        0 0 40px rgba(255, 255, 255, 0.5);
+}
+
+.top-header label {
+    background: transparent url(http://f.cl.ly/items/2a2Z0V0L0J1p3V082d3r/icon-search.png) no-repeat top left;
+    cursor: pointer;
+    display: block;
+    height: 17px;
+    left: 10px;
+    position: relative;
+    text-indent: -99999px;
+    top: -21px;
+    width: 14px;
+}

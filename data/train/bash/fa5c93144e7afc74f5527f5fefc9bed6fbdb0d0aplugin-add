@@ -1,0 +1,39 @@
+#!/bin/bash
+if [ $# -lt 1 ]; then
+	echo 'Usage: '"$0"' REPO_URL' >&2
+	exit 1
+fi
+
+current_root="$(git rev-parse --show-toplevel)"
+
+repo_url="$1"
+target_dir="$current_root/3rd_party"
+
+modules_file="$current_root/.gitmodules"
+git_config_submodules() {
+	git config --file "$modules_file" "$@"
+}
+
+repo_name="${repo_url##*/}"
+repo_name="${repo_name%.git}"
+repo_location="$target_dir/$repo_name"
+
+if [ -d "$repo_location" ]; then
+	echo 'A plugin with the same name exists!'
+	read -p 'Choose a new name(Empty to cancel): ' repo_name
+	if [ -z "$repo_name" ]; then
+		exit 0
+	fi
+fi
+
+pushd "$target_dir" >/dev/null
+	git submodule add --name "$repo_name" "$repo_url"
+	# Refresh the helptags
+	# This will flash the terminal, I can't help it
+	vim +Helptags +q
+	# If there's nothing staged
+	read -p 'Commit changes [y/<CR>]?' prompt
+	if [ -z "$prompt" -o "$prompt" = 'y' ]; then
+		git commit -m "New Plugin: $repo_name"
+	fi
+popd >/dev/null

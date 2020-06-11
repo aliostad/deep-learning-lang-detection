@@ -1,0 +1,101 @@
+/* ---- site nav ---- */
+
+#site-nav {
+}
+
+#site-nav,
+#site-nav h1 {
+  line-height: 44px;
+}
+
+
+/* clear fix */
+#site-nav:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+#site-nav h1 {
+  float: left;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+#site-nav h1 a {
+  padding: 0 0.8em;
+  display: block;
+  color: #D26;
+}
+
+#site-nav h1 a:hover {
+  background: #A2C;
+  color: white;
+}
+
+#site-nav a {
+  background: none;
+}
+
+#site-nav ol {
+  list-style: none;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+#site-nav ol:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+#site-nav li {
+  float: left;
+}
+
+#site-nav ol a {
+  display: block;
+  padding: 0 1.0em;
+}
+
+#site-nav ol a:hover {
+  background: #D26;
+  color: white;
+}
+
+/* selected */
+.options-page #site-nav .nav-options a,
+.methods-page #site-nav .nav-methods a,
+.events-page #site-nav .nav-events a,
+.draggable-page #site-nav .nav-draggable a,
+.license-page #site-nav .nav-license a,
+.appendix-page #site-nav .nav-appendix a,
+.faq-page #site-nav .nav-faq a {
+  color: white;
+}
+
+
+@media screen and ( min-width: 960px ) {
+
+  /* hide h1 on index */
+  .index-page #site-nav h1 {
+    visibility: hidden;
+  }
+
+  #site-nav,
+  #site-nav h1 {
+    line-height: 60px;
+    margin-left: -0.5em;
+  }
+
+  #site-nav h1 {
+    height: 60px;
+    font-size: 2.0em;
+  }
+
+  #site-nav ol {
+    font-size: 17px;
+  }
+
+}

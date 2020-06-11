@@ -1,0 +1,16 @@
+.glossary .nav-left {
+  border-top-color: #ed1c24; }
+  .glossary .nav-left .nav-heading {
+    background-color: #ed1c24; }
+  .glossary .nav-left .nav .active > a {
+    background-color: #ed1c24; }
+  .glossary .nav-left .nav li a:hover {
+    background-color: #ed1c24; }
+  .glossary .nav-left .sub-nav .active > a {
+    background-color: #ed1c24; }
+  .glossary .nav-left .sub-nav li a:hover {
+    background-color: #ed1c24; }
+.glossary .page-view {
+  border-top-color: #ed1c24; }
+
+/*# sourceMappingURL=glossary.css.map */

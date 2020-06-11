@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalogue xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <!-- include plugin language files -->
+    <xi:include href="plugins/blog_fr.xml#xpointer(//catalogue/message)" parse="xml"/>
+    <xi:include href="plugins/gallery_fr.xml#xpointer(//catalogue/message)" parse="xml"/>
+    <xi:include href="plugins/siteoptions_fr.xml#xpointer(//catalogue/message)" parse="xml"/>
+    <xi:include href="plugins/plugin_file_fr.xml#xpointer(//catalogue/message)" parse="xml"/>
+     
+    <message key="Collection">Collection</message>
+    <message key="Create/Edit">Créer/Editer</message>
+    <message key="Configuration">Configuration</message>
+    <message key="Properties">Propriétés</message>
+    <message key="Create new Collection">Créer une nouvelle collection</message>
+    
+    <message key="Add .configxml">ajouter .configxml</message>
+    <message key="Add .configxml.children">ajouter .configxml.children</message>
+    <message key="Edit .configxml">éditer .configxml</message>
+    <message key="Edit .configxml.children">éditer .configxml.children</message>
+    
+    <message key="Edit">Editer</message>
+    <message key="Copy">Copier</message>
+    <message key="Move/Rename">Déplacer/Renommer</message>
+    <message key="Delete">Supprimer</message>
+    <message key="Move">Déplacer</message>
+
+    <message key="Edit in {editor}">Editer avec (editor)</message>
+
+    <!--<message key="Edit in bxe"></message>
+    <message key="Edit in kupu"></message>
+    <message key="Edit in fck"></message>
+    <message key="Edit in oneform"></message>-->
+
+    <message key="Resource {resource}"></message>
+    
+    <message key="Create new {resourcetype}"></message>
+    <message key="Create new xhtml">Créer nouveau ficher XHTML</message>
+    <message key="Create new file">Ajouter nouveau fichier</message>
+    <message key="Create new archive">Ajouter fichier d'un archive ZIP</message>
+    <message key="Create new gallery">Créer nouvelle galerie</message>
+
+    <message key="General Options">Ajustage global</message>
+    <message key="Edit Site-Options">Options page</message>
+    <message key="Edit Users">Gérer utilisateurs</message>
+
+    <!-- create a new collection -->
+    <message key="name">Nom</message>
+    <message key="resource">Ressource</message>
+    <message key="send">Envoyer</message>
+    
+    <!-- create a new resource -->
+    <message key="lang">Langue</message>
+    <message key="template">Modèle</message>
+    <message key="editor">Editeur</message>
+    
+    <message key="Edit in bxe">Editer avec BXE</message>
+    <message key="Edit in kupu">Editer avec Kupu</message>
+    <message key="Edit in fck">Editer avec FCKEditor</message>
+    <message key="Edit in oneform">Editer comme texte</message>
+    <message key="Properties">Propriétés</message>
+
+    
+    <message key="bxe">BXE</message>
+    <message key="kupu">Kupu</message>
+    <message key="fck">FCKeditor</message>
+    <message key="oneform">Oneform</message>
+    <message key="de">Allemand</message>
+    <message key="en">Anglais</message>
+  
+   <message key="Welcome to Flux CMS">Bienvenue chez Flux CMS</message>
+   <message key="Username:">Nom d'utilisateur:</message>
+   <message key="Password:">Mot de passe:</message>
+   <message key="Lost your password?">Oublié le mot de passe?</message>
+   <message key="Get a new one.">Demander un nouveau mot de passe</message>
+   
+   <message key="home">Page d'acceuil</message>
+   <message key="help">Aide</message>
+   <message key="logout">Terminer session</message>
+   <message key="delete tmp">Purger tmp</message>
+   <message key="User:">Utilisateur:</message>
+   
+   
+    <message key="Site-Options">Options page</message>
+    <message key="Post Categories">Catégories post</message>
+    <message key="Post Comments">Commentaires post</message>
+    <message key="Link Categories">Catégories liens</message>
+    
+    <message key="Edit Properties for {0}.">Editer propriétés pour {0}.</message>
+	<message key="Download more themes">Télécharger d'autres thèmes</message>
+	
+	
+    
+</catalogue>

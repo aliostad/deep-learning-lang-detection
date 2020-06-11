@@ -1,0 +1,83 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,
+center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,
+form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,
+object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,
+td,tfoot,th,thead,time,tr,tt,u,ul,var,
+video{margin:0;padding:0;border:0;font-family:'微软雅黑',arial,helvetica,sans-serif;vertical-align:baseline}
+/*font-size:100%;*/
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body{line-height:1;background-color: #eee;}
+ol,ul{list-style:none}blockquote,q{quotes:none}
+blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+
+/*消息中心*/
+.sThead{color: #333;background-color: #eee;height: 30px;font-weight: 700;}
+.sThead table tbody tr td{padding: 8px;font-size: 14px;color: #505050;}
+.sThead table{border-bottom: 1px solid #eee;}
+.checkP{padding-left: 5px;}
+.Tabs{width: 1000px;margin: 0 auto;}
+.Tabs .sx{width:900px;}
+.Tabs .sx thead tr,td{word-spacing: normal;font-size: 12px;word-break: break-all;text-align: center;height: 40px;line-height: 36px;padding: 12px 0px 12px;line-height: 2;vertical-align: middle;border-bottom: 1px solid #eee;}
+.btn3,.btn4{width: 100px;margin: 10px;height: 26px;}
+.btn3,.btn4,.btn5,.input1{border-radius: 2px;cursor: pointer;border: 1px solid #eee;background: #fff;}
+.spana{margin-left: 40px;color: #555;}
+.btn5,.input1{width: 60px;height: 26px;}
+.write-box{background: #fff;}
+.write-box .write-message-box{font-size: 14px;}
+.write-box .write-message-box .left-side{width: 115px;height: 540px;float: left;background: #f5f5f5;padding: 30px 22.5px;}
+.write-box .write-message-box .left-side span{font-size: 14px;color: #FF7E00;line-height: 20px;height: 20px;}
+.write-box .write-message-box .left-side select{margin-top: 10px;width: 115px;height: 400px;font-size: 12px;color: #333;}
+.write-box .write-message-box  .right-side{height: 550px;padding: 25px 190px;}
+.write-box .write-message-box  .right-side .item-box{margin-bottom: 10px;position: relative;padding-left: 90px;}
+.write-box .write-message-box  .right-side .item-box>span{position: absolute;left: 0;display: inline-block;width: 90px;float: left;height: 35px;line-height: 35px;color: #444;}
+.write-box .write-message-box  .right-side .item-box .receives{float: left;width: 490px;min-height: 25px;border-bottom: 1px solid #ddd;}
+.write-box .write-message-box  .right-side .item-box input{height: 35px;border: 1px solid#ddd;width: 460px;line-height: 35px;font-size: 14px;padding: 0 15px;}
+.write-box .write-message-box  .right-side .item-box textarea{width: 460px;padding: 15px;resize: none;border: 1px solid #ddd;}
+.write-box .write-message-box  .right-side .item-box .send-message{margin: 10px 10px 0 0;color: #fff;padding: 0 15px;float: left;cursor: pointer;background: #D64242;}
+.item-box .send-message:hover{background: #AC1716 !important;}
+.receives .receiver {float: left;height: 25px;border: 1px solid #e0f0fa;line-height: 25px;padding: 0 40px 0 10px;color: #D64242;border-radius: 2px;margin-right: 10px;position: relative;margin-bottom: 5px;}
+.receives .receiver .delete-icon {position: absolute;right: 10px;top: 7px;display: inline-block;width: 11px;height: 11px;background: url(/modules/img/messagecenter.png);}
+.receives .receiver:hover .delete-icon {background: url(/modules/img/messagecenter.png) 0 11px;}
+.receives .receiver:hover{border:1px solid #AC1716;}
+.adetail {text-align:left;cursor: pointer;}
+.adetail:hover {color:#AC1716;font-weight: bold;}
+/*功能介绍*/
+.help-Tabs{width: 1000px;margin: 0 auto;}
+.help-Tabs .tf{width: 960px;min-height: 300px;}
+.help-Tabs .tf dl{margin-top: 20px;}
+.help-Tabs .tf p{line-height: 26px;font-family: "微软雅黑",arial;font-size: 14px;color:#555}
+.help-Tabs .tf p img{border: 1px solid #333;padding:0 10px;}
+
+.c-ff0000{color: #FF0000;}
+/*奖金详情*/
+.reward-head{width:1000px ;margin: 0 auto;height: 50px;background: #fff;margin-bottom: 20px;}
+.reward-head ul li{list-style: none;float: left;line-height: 50px;margin: 0 10px 0 20px;}
+
+/*玩法介绍*/
+.help-gTabs{width: 94%;margin: 0 auto;padding-left: 30px;}
+.help-gTabs .tables{width: 100%;margin: 0 auto;}
+.help-gTabs .tables table{width: 96%;margin: 0 auto;}
+.help-gTabs .tables table tr td{border: 1px solid #ff9900;height: 24px;line-height: 24px;padding: 10px;}
+
+
+.alert {background-color: #333;opacity:0.8; font-size: 13px; position: fixed; top:35%; z-index: 99999; 
+         padding:20px;padding-left:40px;  overflow:auto; border-radius:5px;min-width:140px;max-width:260px;}
+.alert .alert-wrap { word-wrap: break-word;  word-break:break-all;color:#fff;font-size:14px;}
+.alert-wrap .alert-icon-right:before {content:"\e613";}
+.alert-wrap .alert-icon-right {color:#fefefe;font-size:20px;float:left;}
+.alert-wrap .alert-icon-warn:before {content:"\e64a";}
+.alert-wrap .alert-icon-warn {color:#fefefe;font-size:20px;float:left;}
+.alert-wrap .alert-msg {float:left;color:#fff;font-size:16px;line-height:24px; padding:0 20px 0 15px;max-width:160px;}
+.alert-wrap .alert-close:before {content:"\e628";}
+.alert-wrap .alert-close {float:left;color:#ddd;font-size:20px;padding-top:0px;cursor:pointer;}
+.alert-wrap .alert-close:hover {color:#fff;}
+/*confirm样式*/
+.confirm-layer {position: fixed; z-index:99998; top:0; left:0;right:0; bottom:0; background-color:#000; opacity:0.7;}
+.confirm { border: 1px solid #ccc; background-color: #fff; font-size: 13px; position: fixed; top:35%; z-index: 99999; width:260px; overflow:auto;padding:20px;border-radius:3px; }
+.confirm .confirm-wrap { word-wrap: break-word;  word-break:break-all;font-size:16px;  }
+.confirm .confirm-bottom { margin-top:20px; text-align:right; }
+.confirm-bottom .sure { padding:10px 24px; background-color:#D64242; color:#fff; border:none; cursor:pointer; display:inline-block; border-radius:3px; }
+.confirm-bottom .sure:hover {  background-color:#AC1716;  }
+.confirm-bottom .close { padding:5px 40px; color:#999; border:none; cursor:pointer; display:inline-block; }
+.confirm-bottom .close:hover {color:#AC1716; }

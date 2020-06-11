@@ -1,0 +1,80 @@
+.overlay{
+    position: absolute;    
+    top: 0;      
+    left: 0;        
+    right: 0;          
+    bottom: 0;            
+    z-index: 2;              
+    background-color: rgba(0, 0, 0, 0.1); /*dim the background*/              
+}
+
+.loading-mask-above {
+  z-index: 2;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.loading-mask.below {
+  z-index: 1;
+}
+
+.load.space {
+  padding: 10%;
+}
+
+.load.container {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  background-color: rgba(52, 221, 221, 0.3);
+}
+
+.load.machine {
+  width: 60vmin;
+  fill: rgba(52, 221, 221, 0.8);
+}
+
+.load.small-shadow,
+.load.medium-shadow,
+.load.large-shadow {
+  fill: rgba(3, 3, 3, 0.05);
+}
+
+.load.small {
+  -webkit-transform-origin: 100.136px 225.345px;
+  transform-origin: 100.136px 225.345px;
+}
+
+.load.small-shadow {
+  -webkit-transform-origin: 110.136px 235.345px;
+  transform-origin: 110.136px 235.345px;
+}
+
+.load.medium {
+  -webkit-transform-origin: 254.675px 379.447px;
+  transform-origin: 254.675px 379.447px;
+}
+
+.load.medium-shadow {
+  -webkit-transform-origin: 264.675px 389.447px;
+  transform-origin: 264.675px 389.447px;
+}
+
+.load.large {
+  -webkit-transform-origin: 461.37px 173.694px;
+  -ms-transform-origin: 461.37px 173.694px;
+  transform-origin: 461.37px 173.694px;
+}
+
+.load.large-shadow {
+  -webkit-transform-origin: 471.37px 183.694px;
+  -ms-transform-origin: 471.37px 183.694px;
+  transform-origin: 471.37px 183.694px;
+}

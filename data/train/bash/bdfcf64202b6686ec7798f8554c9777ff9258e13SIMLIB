@@ -1,0 +1,18 @@
+#!/bin/sh
+# script for compilation of SIMLIB/C++ model if the library is not installed system-wide
+#
+PREFIX=$HOME/local      # EDIT: installation prefix
+SOURCE="$1"             # source file
+MODEL="${1%.cc}"        # executable name
+if [ -z "$SOURCE" -o ! -f "$SOURCE" -o "$MODEL" = "$SOURCE" ]; then
+  echo "Usage: "
+  echo "         $0 model.cc"
+  exit 1
+fi
+echo
+echo "### Creating model $MODEL"
+echo
+#static: g++ -static -I$PREFIX/include -o "$MODEL" "$SOURCE" $PREFIX/lib/simlib.a -lm
+g++ -g -I$PREFIX/include -o "$MODEL" "$SOURCE" $PREFIX/lib/simlib.so -lm
+echo
+

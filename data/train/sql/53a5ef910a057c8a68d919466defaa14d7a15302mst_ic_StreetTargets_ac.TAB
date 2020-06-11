@@ -1,0 +1,39 @@
+!table
+!version 410
+!charset WindowsLatin1
+
+Definition Table
+  Type ACCESS TABLE "mst_ic_StreetTargets_ac" Charset "WindowsLatin1"
+  Fields 32
+    icID Integer Index 1 ;
+    sICID Char (6) ;
+    nGTOStreet Char (7) ;
+    surfSCID Integer ;
+    evaluation Char (1) ;
+    comments Char (254) ;
+    type Char (10) ;
+    streetArea Float ;
+    flowControl Float ;
+    intersection Char (100) ;
+    corner Char (3) ;
+    street1 Char (25) ;
+    street1Area Integer ;
+    street1CExtVol Smallint ;
+    street1CExtFlow Float ;
+    street2 Char (25) ;
+    street2Area Integer ;
+    street2CExtVol Smallint ;
+    street2CExtFlow Float ;
+    orificeArea Integer ;
+    curbExtensionArea Integer ;
+    pondingVol Smallint ;
+    curbExtensionVol Smallint ;
+    comments2 Char (254) ;
+    typeCode Char (1) ;
+    XPSWMM_Name Char (10) Index 2 ;
+    xCoord Integer ;
+    yCoord Integer Index 3;
+    buildModelIC Logical ;
+    source Char (15) ;
+    appendDate Char (17) ;
+    constructed Integer Index 4 ;

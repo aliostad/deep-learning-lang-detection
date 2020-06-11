@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="UsuarioService">
+      <implementation-class>app.webservice.UsuarioService</implementation-class>
+    </service>
+    <service name="ComentarioTesoro">
+      <implementation-class>app.webservice.ComentarioTesoro</implementation-class>
+    </service>
+    <service name="DescubrimientoService">
+      <implementation-class>app.webservice.DescubrimientoService</implementation-class>
+    </service>
+    <service name="AvisoService">
+      <implementation-class>app.webservice.AvisoService</implementation-class>
+    </service>
+    <service name="EquipoService">
+      <implementation-class>app.webservice.EquipoService</implementation-class>
+    </service>
+    <service name="TesoroService">
+      <implementation-class>app.webservice.TesoroService</implementation-class>
+    </service>
+  </services>
+  <clients/>
+</jax-ws>

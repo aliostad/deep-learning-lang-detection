@@ -1,0 +1,23 @@
+// ZCollisionHandler.cpp: implementation of the ZCollisionHandler class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "ZCollisionHandler.h"
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+ZCollisionHandler::ZCollisionHandler()
+{
+
+}
+
+ZCollisionHandler::~ZCollisionHandler()
+{
+
+}
+
+void ZCollisionHandler::OnCollisionBetween(ZMotionObject *a, ZMotionObject *b)
+{
+}

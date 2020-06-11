@@ -1,0 +1,47 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14-Jan-2017, 19:51:07
+    Author     : leokallo
+*/
+li {
+    cursor: pointer;
+}
+
+#header {
+    height: 15%;
+}
+
+img {
+    max-width: 50px;
+    height: auto;
+}
+
+body, html {
+    height: 100%;
+}
+
+#chatArea {
+    height: 85%;
+}
+
+#messageArea {
+    height: 90%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#writeArea {
+    height: 10%;
+}
+
+.writeAreaComponent {
+    height: 100%;
+}
+
+div {
+    height: 100%;
+}

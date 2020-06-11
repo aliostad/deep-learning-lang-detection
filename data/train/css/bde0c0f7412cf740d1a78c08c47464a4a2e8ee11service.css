@@ -1,0 +1,53 @@
+.service{
+	margin: 0 auto;
+	width: 960px;
+}
+
+.service_pic{
+	margin-top: 20px;
+}
+
+.service_clause{
+	border-bottom: 1px dashed #DBDBDB;
+    height: 30px;
+    margin-left: 10px;
+    width: 940px;
+}
+
+.service_clause #service_left{
+	float: left;
+}
+
+.service_clause #service_right{
+	float: right;
+}
+
+.clause_article {
+	width: 940px;
+	margin: 10px;
+}
+
+.clause_article h2{
+	float: left;
+	font: 14px/24px "微软雅黑";
+	color: #589EB7;
+}
+
+.service_bottom{
+	text-align: center;
+}
+
+.service_checkbox{
+	margin-left: 365px;
+    width: 300px;
+    height: 30px;
+}
+
+.service_checkbox #checkbox{
+	float: left;
+    margin: 6px;
+}
+
+.service_checkbox p{
+	width: 230px;
+}

@@ -1,0 +1,44 @@
+#nodeName {
+    background-color: orangered;
+    color: #9aff6f;
+}
+
+.mastWrite {
+    background-color: rgba(251, 255, 103, 0.27);
+}
+
+.freeWrite {
+    background-color: rgba(110, 203, 255, 0.29);
+}
+
+.hideMess{
+    visibility: hidden;
+}
+
+.standartMess{
+    width: 812px;
+    background-color: #4cff8d;
+    padding: 4px;
+    text-align: center;
+}
+
+.standartMessError{
+    width: 812px;
+    background-color: #ff696d;
+    padding: 4px;
+    text-align: center;
+}
+
+.delNode{
+    width: 1142px;
+    background-color: #4cff8d;
+    padding: 4px;
+    text-align: center;
+}
+
+.delNodeError{
+    width: 1142px;
+    background-color: #ff696d;
+    padding: 4px;
+    text-align: center;
+}

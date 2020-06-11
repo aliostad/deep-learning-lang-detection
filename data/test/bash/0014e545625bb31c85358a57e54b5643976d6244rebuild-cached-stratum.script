@@ -1,0 +1,59 @@
+#!/bin/sh
+#
+# Copyright (C) 2011-2014  Codethink Limited
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; version 2 of the License.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+
+## Does a cached stratum get rebuilt if its chunk changes?
+## This tests a bug that is currently in morph, where the stratum does
+## not get rebuilt in that case. Later on, the test will guard against
+## regressions.
+
+set -eu
+
+cache="$DATADIR/cache/artifacts"
+
+# Make a branch in the chunk repo where we can make our own modifications.
+(cd "$DATADIR/chunk-repo" &&
+ git checkout --quiet farrokh &&
+ git checkout --quiet -b rebuild-cached-stratum)
+
+# Make a branch in the morphs repo and modify the stratum to refer to
+# the new chunk branch.
+(cd "$DATADIR/morphs-repo" &&
+ git checkout --quiet -b rebuild-cached-stratum &&
+ sed -i 's/farrokh/rebuild-cached-stratum/' hello-stratum.morph &&
+ sed -i 's/master/rebuild-cached-stratum/' hello-system.morph &&
+ git commit --quiet -m "rebuild-cached-stratum" -a)
+
+# Build the first time.
+"$SRCDIR/scripts/test-morph" build-morphology \
+    test:morphs-repo rebuild-cached-stratum hello-system
+echo "first build:"
+(cd "$cache" && ls *.chunk.*  *hello-stratum-* | sed 's/^[^.]*\./ /' |
+ LC_ALL=C sort -u)
+
+# Change the chunk.
+(cd "$DATADIR/chunk-repo" &&
+ echo >> hello.c &&
+ git commit --quiet -am change)
+
+# Rebuild.
+"$SRCDIR/scripts/test-morph" build-morphology \
+    test:morphs-repo rebuild-cached-stratum hello-system
+echo "second build:"
+(cd "$cache" && ls *.chunk.*  *hello-stratum-* | sed 's/^[^.]*\./ /' |
+ LC_ALL=C sort -u)
+

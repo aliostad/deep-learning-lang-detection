@@ -1,0 +1,127 @@
+#column1 {
+  padding: 33px;
+  text-align: center;
+}
+
+.content_column h1 {
+  margin-bottom: 0; 
+}
+
+.content_column h1 + h2 {
+  margin-top: 0; 
+}
+
+.opportunity {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.opportunity p {
+ text-align: left; 
+}
+
+/* cvg_model styles */ 
+.cvg_model {
+  background: url(/resources/dyn/files/1153236z3805968e/_fn/VT_convergence_final.png) top center no-repeat;
+  display: block;
+  position: relative; 
+  height: 558px;
+  width: 980px;
+  margin: 0 auto;
+}
+
+.cvg_model .text {
+  position: absolute; 
+  width: 250px;
+}
+
+.cvg_model h2 {
+  margin: 20px 50px 23px 50px;
+}
+
+.cvg_model .light {
+  color: #1D75BA;
+}
+
+.cvg_model .dark {
+  color: #2C4779;
+}
+
+.cvg_model .right {
+  text-align: right; 
+  right: 31px;
+}
+
+
+.cvg_model .left {
+  text-align: left;
+  left: 28px;
+}
+
+#ideation,
+#web_tech {
+  top: 33px;
+  width: 300px;
+}
+ 
+#investment, 
+#infrastructure {
+  top: 205px;
+}
+
+#talent, 
+#marketplace {
+  top: 385px;
+}
+
+.cvg_model ul,
+.cvg_model ol {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0;
+  font-size: 0.75em;
+}
+
+.cvg_model #web_tech li, 
+.cvg_model #ideation li {
+  width: 280px;
+}
+
+.cvg_model li {
+  display: block;
+  width: 250px;
+  margin-bottom: 1em;
+}
+
+.cvg_model .left li:before {
+  content: "";
+  display: block;
+  float: left;
+  vertical-align: middle;
+  height: 14px;
+  width: 14px;
+  background-color: #1D75BA;
+  border-radius: 7px;
+  margin-top: 8px;
+  margin-right: 15px;
+}
+
+.cvg_model .right li {
+  float: right;
+}
+
+.cvg_model .right li:before {
+  content: "";
+  display: block;
+  float: right; 
+  height: 14px;
+  width: 14px;
+  background-color: #1D75BA;
+  border-radius: 7px;
+  margin-top: 8px;
+  margin-left: 15px;
+}
+
+.cvg_model .dark li:before {
+  background-color: #2C4779;
+}

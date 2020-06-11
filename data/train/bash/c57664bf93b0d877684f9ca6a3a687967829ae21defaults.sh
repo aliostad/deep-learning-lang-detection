@@ -1,0 +1,59 @@
+../loadClassificationResults -dropAll bioInt /data2/topmodels/CCLEdrugPredictions/results.ra
+../loadClassificationResults bioInt /data2/topmodels/CCLEdrugPredictions2/results.ra
+../loadClassificationResults bioInt /data2/topmodels/CCLEdrugPredictions3/results.ra
+../loadClassificationResults bioInt /data2/topmodels/LGG_survival/results.ra
+../loadClassificationResults bioInt /data2/topmodels/expressionBvL_80_20/results.ra
+../loadClassificationResults bioInt /data2/topmodels/expressionBvL_80_20_2/results.ra
+../loadClassificationResults bioInt /data2/topmodels/expressionLumAvLumB_80_20/results.ra
+../loadClassificationResults bioInt /data2/topmodels/expressionLumAvLumB_80_20_2/results.ra
+#../loadClassificationResults bioInt /data2/topmodels/paradigmBvL_80_20/results.ra
+../loadClassificationResults bioInt /data2/topmodels/paradigmLumAvLumB_80_20/results.ra
+../loadClassificationResults bioInt /data2/topmodels/gclDrugPredictions_run1/results.ra
+../loadClassificationResults bioInt /data2/topmodels/gclDrugPredictions_run2/results.ra
+
+##########OLD HIVE BUILD########
+##../loadClassificationResults -dropAll bioInt /hive/users/cszeto/TCGAcrossCancer1.0/Ba_V_Lu/results.ra
+##../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/Ba_V_Lu_80-20/results.ra
+##../loadClassificationResults -dropAll bioInt /hive/users/cszeto/TCGAcrossCancer1.0/OV_platinumSensitivity/results.ra
+##../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/GBM_survival/results.ra
+##../loadClassificationResults bioInt /hive/users/cszeto/GeneExpressionAtlasMesVgbm/results.ra
+#../loadClassificationResults -dropAll bioInt /hive/users/cszeto/CCLEdrugPredictions/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/CCLEdrugPredictions2/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/CCLEdrugPredictions3/results.ra
+##../loadClassificationResults bioInt /hive/users/cszeto/6n6predictions/untreatedVlowdose/results.ra
+##../loadClassificationResults bioInt /hive/users/cszeto/6n6predictions/untreatedVhighdose/results.ra
+##../loadClassificationResults bioInt /hive/users/cszeto/6n6predictions/untreatedVsurvivor/results.ra
+##../loadClassificationResults bioInt /hive/users/cszeto/6n6predictions/lowdoseVhighdose/results.ra
+##../loadClassificationResults bioInt /hive/users/cszeto/6n6predictions/lowdoseVsurvivor/results.ra
+##../loadClassificationResults bioInt /hive/users/cszeto/6n6predictions/highdoseVsurvivor/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/OV_platinumFreeInterval/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/paradigmBvL_80_20/results.ra
+##../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/paradigmIvM_80_20/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/paradigmIPvDM_80_20/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/paradigmSvL_80_20/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/expressionBvL_80_20/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/expressionBvL_80_20_2/results.ra 
+##../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/expressionIvM_80_20/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/expressionIPvDM_80_20/results.ra
+##../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/expressionIPvDM_80_20_2/results.ra
+##../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/expressionSvL_80_20/results.ra
+##../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/expressionSvL_80_20_2/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/expressionBRCAOV_BvL_80_20/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/expressionBRCAOV_BvL_80_20_2/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/expressionCvN_80_20/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/expressionCvN_80_20_2/results.ra 
+#../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/expressionLumAvLumB_80_20/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/paradigmCvN_80_20/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/paradigmLumAvLumB/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/paradigmBRCAOV_BvL_80_20/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/expressionBRCAOVLUSC_BvL_80_20/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/expressionBRCAOVLUSC_BvL_80_20_2/results.ra 
+#../loadClassificationResults bioInt /hive/users/cszeto/prostatePrimaryVsMet/topmodel/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/prostatePrimaryVsMet/copyNumberTopModel/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/prostatePrimaryVsMet/integratedTopModel/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/LGG_survival/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/LGG_survival_excludeCluster4/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/LGG_cluster1n2n4v3n5/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/LGG_cluster1n2v3n5/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/LGG_cluster1v5/results.ra
+#../loadClassificationResults bioInt /hive/users/cszeto/TCGAcrossCancer1.0/LGG_cluster2v3/results.ra

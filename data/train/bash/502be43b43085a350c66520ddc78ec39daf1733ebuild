@@ -1,0 +1,44 @@
+#!/bin/bash
+
+error() { printf "%s\n" "$@"; exit 1; }
+
+while test -n "$1" && test ${1:0:1} = -; do
+    opt=$1 && shift
+    case $opt in
+        -v|--verbose)   VERBOSE=1;;
+        *) error "unknown option: $opt";;
+    esac
+done
+
+symvar() {
+    name=$1
+    test -L "$name" || return
+    value="$(readlink $name)"
+    value="${value#=}"
+  # printf "%s " $value
+    }
+
+symvar build
+for chunk in $value; do
+
+    test -n "$chunk" || continue
+
+    test ${chunk:0:1} = @ && {
+        test -e $chunk || error "no list property: $chunk"
+        for file in $(<$chunk); do
+            test -n "$VERBOSE" &&
+                printf "#< %s.%s\n" $TOB_object "$file"
+            printf "%s\n\n" "$(<$file)"
+        done
+        continue
+        }
+
+    test -e "$chunk" || error "no property: $chunk"
+
+    test -n "$VERBOSE" &&
+        printf "\n# %s.%s\n" $TOB_object "$chunk"
+
+    printf "%s\n\n" "$(<$chunk)"
+    
+done
+

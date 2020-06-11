@@ -1,0 +1,46 @@
+<service-components>
+	<service-component bean="GeneratorService"
+		type="org.tinygroup.service.test.service.GeneratorService"
+		group-id="org.tinygroup.service.test.service" artifact-id="GeneratorService">
+
+		<service-method name="serviceUserObject" local-name="serviceUserObject"
+			service-id="serviceUserObject" version="" description="用户(对象)"
+			method-name="userObject">
+			<service-parameters>
+				<service-parameter name="user"
+					type="org.tinygroup.service.test.base.ServiceUser"
+					required="true" is-array="false" />
+			</service-parameters>
+			<service-result name="user2" required="true" is-array="false"
+				type="org.tinygroup.service.test.base.ServiceUser" />
+		</service-method>
+
+		<service-method name="serviceUserList" local-name="serviceUserList"
+			service-id="serviceUserList" version="" description="用户(List)"
+			method-name="userList">
+			<service-parameters>
+				<service-parameter name="user"
+					type="org.tinygroup.service.test.base.ServiceUser"
+					required="true" is-array="false" />
+				<service-parameter name="users"
+					type="org.tinygroup.service.test.base.ServiceUser" collection-type="java.util.List"
+					required="true" is-array="false" />
+			</service-parameters>
+			<service-result name="userList" required="true" is-array="true"
+				type="org.tinygroup.service.test.base.ServiceUser" />
+		</service-method>
+
+		<service-method name="serviceUserArray" local-name="serviceUserArray"
+			service-id="serviceUserArray" version="" description="用户(Array)"
+			method-name="userArray">
+			<service-parameters>
+				<service-parameter name="users"
+					type="org.tinygroup.service.test.base.ServiceUser"
+					required="true" is-array="true" />
+			</service-parameters>
+			<service-result name="userArray" required="true"
+				is-array="true" type="org.tinygroup.service.test.base.ServiceUser" />
+		</service-method>
+	</service-component>
+
+</service-components>

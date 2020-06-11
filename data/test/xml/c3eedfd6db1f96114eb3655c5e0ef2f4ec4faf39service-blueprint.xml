@@ -1,0 +1,57 @@
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:jpa="http://aries.apache.org/xmlns/jpa/v1.0.0" 
+	xmlns:tx="http://aries.apache.org/xmlns/transactions/v1.0.0">
+
+	<bean id="beanConfigurationRepository" class="com.scb.event.repository.impl.BeanConfigurationRepositoryImpl" init-method="init">
+	<jpa:context unitname="rdmPersistenceUnit" property="entityManager" />
+	</bean>
+	
+	<bean id="configurationRepository" class="com.scb.event.repository.impl.ConfigurationRepositoryImpl"  init-method="init">
+	<jpa:context unitname="rdmPersistenceUnit" property="entityManager" />
+	</bean>
+	
+	<bean id="retryConfigurationRepository" class="com.scb.event.repository.impl.RetryConfigurationRepositoryImpl" init-method="init">
+	<jpa:context unitname="rdmPersistenceUnit" property="entityManager" />
+	</bean>
+	
+	<bean id="ruleConfigurationRepository" class="com.scb.event.repository.impl.RuleConfigurationRepositoryImpl" init-method="init">
+	<jpa:context unitname="rdmPersistenceUnit" property="entityManager" />
+	</bean>
+	
+	<bean id="subscriberConfigurationRepository" class="com.scb.event.repository.impl.SubscriberConfigurationRepositoryImpl" init-method="init">
+	<jpa:context unitname="rdmPersistenceUnit" property="entityManager" />
+	</bean>
+	
+	<bean id="interfaceMessageRepository" class="com.scb.event.message.repository.impl.InterfaceMessageRepositoryImpl" init-method="init">
+	<jpa:context unitname="rdmPersistenceUnit" property="entityManager" />
+	</bean>
+	
+	<bean id="messageAttributeRepository" class="com.scb.event.message.repository.impl.MessageAttributeRepositoryImpl" init-method="init">
+	<jpa:context unitname="rdmPersistenceUnit" property="entityManager" />
+	</bean>
+	
+	<bean id="messageForkRepository" class="com.scb.event.message.repository.impl.MessageForkRepositoryImpl" init-method="init">
+	<jpa:context unitname="rdmPersistenceUnit" property="entityManager" />
+	</bean>
+	
+	<bean id="messageRepository" class="com.scb.event.message.repository.impl.MessageRepositoryImpl" init-method="init">
+	<jpa:context unitname="rdmPersistenceUnit" property="entityManager" />
+	</bean>
+	
+	<bean id="jobConfigurationRepository" class="com.scb.event.batch.repository.impl.JobConfigurationRepositoryImpl" init-method="init">
+	<jpa:context unitname="rdmPersistenceUnit" property="entityManager" />
+	</bean>
+	
+	<service ref="ruleConfigurationRepository" interface="com.scb.event.repository.RuleConfigurationRepository" />
+	<service ref="beanConfigurationRepository" interface="com.scb.event.repository.BeanConfigurationRepository" />
+	<service ref="configurationRepository" interface="com.scb.event.repository.ConfigurationRepository" />
+	<service ref="retryConfigurationRepository" interface="com.scb.event.repository.RetryConfigurationRepository" />
+	<service ref="subscriberConfigurationRepository" interface="com.scb.event.repository.SubscriberConfigurationRepository" />
+	<service ref="interfaceMessageRepository" interface="com.scb.event.message.repository.InterfaceMessageRepository" />
+	<service ref="messageAttributeRepository" interface="com.scb.event.message.repository.MessageAttributeRepository" />
+	<service ref="messageForkRepository" interface="com.scb.event.message.repository.MessageForkRepository" />
+	<service ref="messageRepository" interface="com.scb.event.message.repository.MessageRepository" />
+	<service ref="jobConfigurationRepository" interface="com.scb.event.batch.repository.JobConfigurationRepository" />
+
+</blueprint>

@@ -1,0 +1,34 @@
+#!/bin/bash
+
+source globals
+
+cd data
+
+echo making fastq files from pairs and adding barcode label
+\rm -rf combined.fastq
+for sample in $SAMPLES
+do
+	echo $sample
+
+	sample_lane=`awk -v sample="$sample" '{ if ($1 == sample) { printf("%03d\n", $2); exit } }' ../$SAMPLE_INFO`
+
+	# verify pairs exist
+	R1=${sample}_L${sample_lane}_R1_001.fastq.gz
+	R2=${sample}_L${sample_lane}_R2_001.fastq.gz
+	exists_or_exit $R1 $R2
+
+	# merge the pairs
+	if [ ! -e ${sample}.fastq ]
+	then
+		# bbmerge.sh in1=<read1> in2=<read2> out=<merged reads> outu1=<unmerged1> outu2=<unmerged2>
+		$BBMERGE in1=$R1 in2=$R2 out=${sample}.fastq outu1=${sample}.unmerged.R1.fastq outu2=${sample}.unmerged.R2.fastq
+	fi
+
+	exists_or_exit ${sample}.fastq	
+	awk -v sample="$sample" '{ if (line % 4 == 0 && substr($0, 1, 1) == "@") { printf("%s;barcodelabel=%s;\n", $1, sample);  } else { printf("%s\n", $0); } ++line; }' ${sample}.fastq >> combined.fastq
+done
+
+echo extracting fastq to fasta
+awk '{ if (line % 4 == 0) { printf(">%s\n", substr($0, 2)); } else if (line % 4 == 1) { print $0 }; ++line; }' combined.fastq > combined.filtered.fasta
+
+cd ../

@@ -1,0 +1,41 @@
+body {margin: 0;}
+
+.page {
+	width: 60rem;
+	margin-top: 2.5rem;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.message {
+	position: relative;
+	max-width: 15.625rem;
+}
+
+.message p {margin: 0;}
+
+.message-content {
+	width: 100%;
+	resize: vertical;
+	font-family: inherit;
+	font-size: inherit;
+	box-sizing: border-box;
+}
+
+.message-counter {
+	position: absolute;
+	right: 1.563rem;
+	bottom: .938rem;
+}
+
+.message-counter--warning {color: #f00;}
+
+.message-send {
+	float: right;
+	margin-top: .625rem;
+	padding: .125rem .313rem;
+}
+
+.message-send:hover {cursor: pointer;}
+
+.message-send[disabled]:hover {cursor: auto;}

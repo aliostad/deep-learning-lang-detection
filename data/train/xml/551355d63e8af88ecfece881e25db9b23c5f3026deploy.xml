@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03" xmlns:DILoanService="http://wso2.org/bps/samples/DILoanService" xmlns:LoanService="http://wso2.org/bps/samples/LoanService" xmlns:XKLoanService="http://wso2.org/bps/samples/XKLoanService">
+  <process name="DILoanService:DILoanService">
+    <active>true</active>
+    <retired>false</retired>
+    <process-events generate="all"/>
+    <provide partnerLink="LoanServicePL">
+      <service name="LoanService:DILoanService" port="LoanServicePort"/>
+    </provide>
+    <invoke partnerLink="LoanServicePL">
+      <service name="LoanService:LoanServiceCallback" port="LoanServiceCallbackPort"/>
+    </invoke>
+  </process>
+  <process name="XKLoanService:XKLoanService">
+    <active>true</active>
+    <retired>false</retired>
+    <process-events generate="all"/>
+    <provide partnerLink="XKLoanServicePL">
+      <service name="LoanService:DILoanService" port="LoanServicePort"/>
+    </provide>
+    <invoke partnerLink="XKLoanServicePL">
+      <service name="LoanService:LoanServiceCallback" port="LoanServiceCallbackPort"/>
+    </invoke>
+  </process>
+</deploy>

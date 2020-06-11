@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+  <!DOCTYPE hibernate-configuration PUBLIC  
+  "-//Hibernate/Hibernate Configuration DTD 3.0//EN"  
+  "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">  
+  
+<hibernate-configuration>  
+  
+  <session-factory>  
+  
+       	<property name="show_sql">false</property>  
+     
+      	  <property name="dialect">  
+           		org.hibernate.dialect.MySQL5Dialect
+      	  </property>  
+     
+          <property name="connection.username">root</property>  
+     
+          <property name="connection.driver_class">com.mysql.jdbc.Driver</property>   
+     
+<!--      	 <property name="connection.password">62811816</property> -->
+		<property name="connection.password"></property>
+  	    <property name="connection.url">jdbc:mysql://localhost:3306/dicks</property>  
+	
+  			
+  <!-- 	
+  		</mapping>
+  		<mapping resource="com/dicks/pojo/OrderDetail.hbm.xml"></mapping>
+  		-->
+  		<mapping resource="com/dicks/pojo/Inventory.hbm.xml"></mapping>
+		<mapping resource="com/dicks/pojo/Customer.hbm.xml"></mapping>
+    	<mapping resource="com/dicks/pojo/Orders.hbm.xml"></mapping>
+  		<mapping resource="com/dicks/pojo/Product.hbm.xml"></mapping>
+  		<mapping resource="com/dicks/pojo/Store.hbm.xml"></mapping>
+  		<mapping resource="com/dicks/pojo/Vendor.hbm.xml"></mapping> 
+  		<mapping resource="com/dicks/pojo/Fee.hbm.xml"></mapping>	
+  	 	<mapping resource="com/dicks/pojo/User.hbm.xml"></mapping>	
+  	 	<mapping resource="com/dicks/pojo/Rule.hbm.xml"></mapping>	
+  	 	<mapping resource="com/dicks/pojo/RuleCate.hbm.xml"></mapping>	
+  	 	<mapping resource="com/dicks/pojo/Packages.hbm.xml"></mapping>
+  	 	<mapping resource="com/dicks/pojo/PackageDetail.hbm.xml"></mapping>
+  		<mapping resource="com/dicks/pojo/OrderDetail.hbm.xml"></mapping>
+  		<mapping resource="com/dicks/pojo/ProdCate.hbm.xml"></mapping>
+  	 	<mapping resource="com/dicks/pojo/StoreCate.hbm.xml"></mapping>
+  	 	<mapping resource="com/dicks/pojo/Log.hbm.xml"></mapping>
+  	    <mapping resource="com/dicks/pojo/Shipment.hbm.xml"></mapping>
+  </session-factory>   
+  
+</hibernate-configuration>

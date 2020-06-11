@@ -1,0 +1,52 @@
+#!/bin/bash
+
+SF_TICKET_FIELDS="assignee closer login private_contact submitter username"
+SF_REPO=""
+SF_REPO="$SF_REPO TclOO "
+SF_REPO="$SF_REPO bwidget"
+SF_REPO="$SF_REPO mclistbox"
+SF_REPO="$SF_REPO sampleextension"
+SF_REPO="$SF_REPO tcl"
+SF_REPO="$SF_REPO tclapps"
+SF_REPO="$SF_REPO tclbench"
+SF_REPO="$SF_REPO tclconfig"
+SF_REPO="$SF_REPO tcllib"
+SF_REPO="$SF_REPO thread"
+SF_REPO="$SF_REPO tk"
+SF_REPO="$SF_REPO tklib"
+SF_REPO="$SF_REPO widget"
+
+STD_TICKET_FIELDS="login private_contact username"
+STD_REPO=""
+STD_REPO="$STD_REPO itcl"
+STD_REPO="$STD_REPO itk"
+STD_REPO="$STD_REPO iwidgets"
+STD_REPO="$STD_REPO tcludp"
+STD_REPO="$STD_REPO tdbc"
+STD_REPO="$STD_REPO tdbcmysql"
+STD_REPO="$STD_REPO tdbcodbc"
+STD_REPO="$STD_REPO tdbcpostgres"
+STD_REPO="$STD_REPO tdbcsqlite3"
+STD_REPO="$STD_REPO wtk"
+
+#Still in flux
+#STD_REPO="$STD_REPO tclhttpd"
+
+OTHER1_TICKET_FIELDS="assigned_to private_contact"
+OTHER1_REPO=""
+OTHER1_REPO="$OTHER1_REPO tclws"
+
+for r in $SF_REPO
+do
+    fx note route field add -R fossil/${r}.fossil $SF_TICKET_FIELDS
+done
+
+for r in $STD_REPO
+do
+    fx note route field add -R fossil/${r}.fossil $STD_TICKET_FIELDS
+done
+
+for r in $OTHER1_REPO
+do
+    fx note route field add -R fossil/${r}.fossil $OTHER1_TICKET_FIELDS
+done

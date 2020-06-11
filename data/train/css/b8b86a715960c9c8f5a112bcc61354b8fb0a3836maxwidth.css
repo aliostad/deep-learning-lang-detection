@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/*--------------------------------------------------------------------
+GRID CALCULATOR
+
+Version: 	1.0 - 2013
+author: 	Load Interactive (João Dias)
+email: 		joao.dias@load-interactive.com
+website: 	http://www.load-interactive.com
+
+How to use: 1- Import this library into your project
+			2- If you'd like, define the column and gutter width, as well as the total number of columns
+			3- Use @include column(NUMBER-OF-COLUMNS-TO-APPLY ) to set the total of columns that your DOM elements will use.
+			Extra - Use @include pull or @include push to push or pull the content (by adding offset columns)
+			
+-----------------------------------------------------------------------*/
+/**
+ * Le Grid
+ */
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before, body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}

@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+set -
+set -o pipefail
+
+. /opt/eai/scripts/ref
+
+format_output(){
+#  sed -n '/deletedEntries/ { s/.*<B>//; s/<\/B>.*//; N; s/\n<TD>/=/; s/<\/TD>//; p; }'
+  sed -n '/deletedEntries/ { N; s/.*\n<TD>//; s/<\/TD>//; p; }'
+}
+elapsedTime_ok=`expr 5 \* 24 \* 60`
+elapsedTime=`expr 30 \* 24 \* 60`
+
+invoke(){
+  url="http://localhost:$1/invoke/exp.purges/sweepSAP?maxTrxCount=$2&$3"
+  while true; do
+    deletedEntries=`curl "$url" 2>/dev/null | format_output` || error "Purge $url failed" >&2
+    expr "$deletedEntries" : '[0-9]*' >/dev/null || error "Purge $url failed" >&2
+    echo "[$3] $deletedEntries entries deleted"
+    test $deletedEntries -ne $2 && break
+  done
+}
+  
+for port in `local_IS_ports`; do
+  echo "Purging $port"
+  invoke $port 1000 "elapsedTime=$elapsedTime_ok&state=Confirmed"
+  invoke $port 1000 "elapsedTime=$elapsedTime_ok&state=Committed"
+  invoke $port 1000 "elapsedTime=$elapsedTime"
+done | info

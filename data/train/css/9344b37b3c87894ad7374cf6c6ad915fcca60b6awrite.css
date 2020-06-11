@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/* CSS Startseite Document */
+
+
+/* Allgemeine Defs */
+
+h4 {
+	margin-bottom:10px;
+	margin-top:10px;
+
+	}
+h7 {
+	margin-bottom:10px;
+	margin-top:10px;
+
+	}
+p {
+	margin-bottom:10px;
+	margin-top:10px;
+	font-size:14px;
+
+	}
+
+
+/*  Ende Allgemeine Defs*/
+
+.write_red
+	{
+		background-color:#CC0000;
+		
+		margin-left:-20px;
+		color:#FFF;
+		font-size:26px;
+		
+		/*
+		width: 940px;
+		padding:10px;
+		padding-left:60px;*/
+		
+		padding: 10px 25px;
+    	width: 930px;
+		
+	}
+	
+.trennlinie
+	{
+	/*width: 1010px;*/	
+	height: 60px;
+	/*margin-left:-20px;*/
+	float: left;
+	margin-top: 20px;
+	background-image: url(../images/Trennlinie.png);
+	background-repeat: repeat;
+	margin-left: -20px;
+	width: 980px;
+	}
+	
+.write_left
+	{
+		float:left;
+		/*width:529px;
+		margin-right:20px;*/
+		width: 600px;
+		
+		
+	}
+	
+	.write_left_list,
+	.write_left_list_textarea,
+	.write_left_list_first,
+	.write_left_list_ort
+	{
+		
+		margin-left:0px;
+		padding-top:20px;
+		padding-bottom:10px;
+		/*width:509px;*/
+		width: 580px;
+		height:auto;
+                float: left;
+		
+	}
+	.write_left_list_first
+	{
+		border-top: 1px;
+	}
+	
+	.write_left_list_textarea
+	{
+		height:420px;
+		
+	}
+	
+	
+	input.write
+	{
+		width:500px;
+		height:20px;
+		float:right;
+		color:#000000;
+		
+		
+		}
+	textarea.write
+	{
+		width:570px;
+		height:370px;
+		float:right;
+		color:#000000;
+		
+		}
+	
+	.write_right
+	{
+		/*float:left;
+		width:420px;*/
+		float: right;
+		width: 320px;
+	}
+	.write_right_list
+	{
+		float:left;
+		width:320px;
+	}
+	
+	.write_right_list_bild
+	{
+		padding-top:20px;
+		width:50px;
+		float:left;
+		
+	}
+	.write_right_list_text
+	{
+		width:270px;
+		float:left;
+	}
+	
+	button.css3button {
+		/*
+	font-family: Arial, Helvetica, sans-serif;
+	float:right;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 6px 30px;
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#00457a);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#ffffff),
+		to(#00457a));
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	border: 1px solid #949494;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0),
+		inset 0px 0px 2px rgba(255,255,255,0);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0),
+		inset 0px 0px 2px rgba(255,255,255,0);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0),
+		inset 0px 0px 2px rgba(255,255,255,0);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,1);
+		*/
+}

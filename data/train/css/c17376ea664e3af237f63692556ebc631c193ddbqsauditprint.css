@@ -1,0 +1,99 @@
+/*
+     This file controls the styling of the printed output for 
+     the 'QSAudit' and 'Model Snapshot' tools.
+*/
+
+html 
+{ 
+  font-family:serif; 
+  font-size:x-small; 
+}
+
+body 
+{ 
+  font-family:serif; 
+  font-size:x-small; 
+}
+
+
+
+thead 
+{
+  font-size:x-small;  
+}
+
+tbody 
+{
+  font-size:x-small; 
+}
+
+.qs_creation_text 
+{
+  font-size:x-small; 
+}
+
+h2
+{
+  font-size:small; 
+}
+h3
+{
+  font-size:small; 
+}
+h4
+{
+  font-size:x-small; 
+}
+
+
+/* 
+ * To enable printing of the high resolution images (as produced when 
+ * the preference [Audits and Snapshots] htmlimages = largepng)
+ * un-comment the blocks below. 
+ */
+
+
+/*
+.qsaudit_smallgraph { display: none; }
+
+.qsaudit_largegraph 
+{ 
+  display: block; 
+  width: 50%; 
+  border: 0; 
+  margin-top:11pt;
+  margin-bottom:11pt; 
+}
+
+
+#qsdt_final_model_image .qsaudit_largegraph
+{
+  display: block; 
+  width: 100%; 
+  border: 0; 
+  margin-top:11pt;
+  margin-bottom:11pt; 
+}
+*/
+
+
+
+
+.qsaudit_backtotop { display: none; }
+.qsaudit_backtotable { display: none; }
+
+
+.qsaudit_svggraph
+{ 
+  margin-top:11pt; 
+  width : 400px;
+  height: 300px;
+  margin-bottom:11pt; 
+}
+
+#qs_model_final_model_image .qsaudit_svggraph
+{ 
+  margin-top:11pt; 
+  width : 600px;
+  margin-bottom:11pt; 
+}

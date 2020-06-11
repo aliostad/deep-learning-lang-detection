@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<allClasses>
+   <apiPackage id="__Global__">
+      <apiName>__Global__</apiName>
+      <apiClassifier id="globalClassifier:GameStates">
+         <apiName>GameStates</apiName>
+         <shortdesc>
+   An enumeration of game states.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiFinal/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+   An enumeration of game states.
+   </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="globalClassifier:Settings">
+         <apiName>Settings</apiName>
+         <shortdesc>
+   An enumeration of application settings.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiFinal/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+   An enumeration of application settings.
+   </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="globalClassifier:PongClient">
+         <apiName>PongClient</apiName>
+         <shortdesc>
+   Represents a client (player) in the pong room.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>net.user1.reactor:CustomClient</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+   Represents a client (player) in the pong room. 
+   </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="globalClassifier:RoomAttributes">
+         <apiName>RoomAttributes</apiName>
+         <shortdesc>
+   An enumeration of pong room attribute names.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiFinal/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+   An enumeration of pong room attribute names.
+   </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="globalClassifier:PongObject">
+         <apiName>PongObject</apiName>
+         <shortdesc>
+   Represents a simple movable 2D object in the pong physics simulation.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+   Represents a simple movable 2D object in the pong physics simulation.
+   </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="globalClassifier:UnionPong">
+         <apiName>UnionPong</apiName>
+         <shortdesc>
+   The pong application's main class.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.display:Sprite</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+   The pong application's main class.
+   </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="globalClassifier:KeyboardController">
+         <apiName>KeyboardController</apiName>
+         <shortdesc>
+   Receives keyboard input from the user and sends it to Union Server
+   </shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+   Receives keyboard input from the user and sends it to Union Server
+   </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="globalClassifier:ClientAttributes">
+         <apiName>ClientAttributes</apiName>
+         <shortdesc>
+   An enumeration of pong client attribute names.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiFinal/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+   An enumeration of pong client attribute names.
+   </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="globalClassifier:GameManager">
+         <apiName>GameManager</apiName>
+         <shortdesc>
+   Manages game flow logic and physics simulation.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+   Manages game flow logic and physics simulation.
+   </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="globalClassifier:Rectangle">
+         <apiName>Rectangle</apiName>
+         <shortdesc>
+   An on-screen rectangle graphic.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.display:Sprite</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+   An on-screen rectangle graphic.
+   </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="globalClassifier:HUD">
+         <apiName>HUD</apiName>
+         <shortdesc>
+   A container for the "heads up display" of the pong game.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.display:Sprite</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+   A container for the "heads up display" of the pong game. Contains the
+   players' scores and a status message text field.
+   </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="globalClassifier:Court">
+         <apiName>Court</apiName>
+         <shortdesc>
+   A container for the graphics in the pong game.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.display:Sprite</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+   A container for the graphics in the pong game.
+   </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="globalClassifier:RoomMessages">
+         <apiName>RoomMessages</apiName>
+         <shortdesc>
+   An enumeration of server-to-client room message names.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiFinal/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+   An enumeration of server-to-client room message names.
+   </apiDesc>
+      </apiClassifier>
+   </apiPackage>
+</allClasses>

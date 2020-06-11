@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+   <session-factory>
+   <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+   <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+   <property name="hibernate.bytecode.use_reflection_optimizer">true</property>
+
+   <!-- Assume test is the database name -->
+   <property name="hibernate.connection.url">jdbc:mysql://localhost/mt1</property>
+   <property name="hibernate.connection.username">root</property>
+   <property name="hibernate.connection.password">Migrate@2013</property>
+   
+   
+   <!-- List of XML mapping files -->
+      <mapping resource="information.hbm.xml"/>
+      <mapping resource="claims.hbm.xml"/>
+      <mapping resource="claimsr.hbm.xml"/>
+      <mapping resource="claimsmsg.hbm.xml"/>
+      <mapping resource="claimsmsgr.hbm.xml"/>
+      <mapping resource="claimsd7.hbm.xml"/>
+      <mapping resource="claimsrd7.hbm.xml"/>
+      <mapping resource="taxdocument.hbm.xml"/>
+      <mapping resource="taxdocumentr.hbm.xml"/>
+      <mapping resource="taxdocumentd7.hbm.xml"/>
+      <mapping resource="taxdocumentrd7.hbm.xml"/>
+      <mapping resource="connection.hbm.xml"/>
+      <mapping resource="policy.hbm.xml"/>
+      <mapping resource="annotation.hbm.xml"/>
+      <mapping resource="documentumacl.hbm.xml"/>
+      <mapping resource="documentumacldetails.hbm.xml"/>
+      <mapping resource="processdata.hbm.xml"/>
+      <mapping resource="processdatapackage.hbm.xml"/>
+      <mapping resource="processdependancy.hbm.xml"/>
+      <mapping resource="sigi_sdt_claims.hbm.xml"/>
+	  <mapping resource="sigi_sdt_selective.hbm.xml"/>
+	  <mapping resource="processvariable1.hbm.xml"/>
+	  <mapping resource="processvariable2.hbm.xml"/>
+	  <mapping resource="processvariable3.hbm.xml"/>
+	  <mapping resource="processtasktemplate.hbm.xml"/>
+	  <mapping resource="processtasklist.hbm.xml"/>
+	  <mapping resource="termlettercustomer.hbm.xml"/>
+	  <mapping resource="termlettercustomersp.hbm.xml"/>
+   <!--List of config files -->
+   	<mapping resource="objectdetails.hbm.xml"/>
+	<mapping resource="connectiondetails.hbm.xml"/>
+	<mapping resource="expressiondetails.hbm.xml"/>
+	<mapping resource="userdetails.hbm.xml"/>
+	<mapping resource="phasedetailsint.hbm.xml"/>
+	<mapping resource="phasedetailsstring.hbm.xml"/>
+	<mapping resource="phasedetailsdate.hbm.xml"/>
+	<mapping resource="phasedetails.hbm.xml"/>
+	<mapping resource="sequencedetails.hbm.xml"/>
+	<mapping resource="sequencedetailsmap.hbm.xml"/>
+	<mapping resource="mappingdetails.hbm.xml"/>
+	<mapping resource="mappingdetailsmap.hbm.xml"/>
+	<mapping resource="batchdetails.hbm.xml"/>
+	<mapping resource="jobserverdetails.hbm.xml"/>
+	<mapping resource="processmappingdetails.hbm.xml"/>
+	<mapping resource="processmappingdetailsmap.hbm.xml"/>
+         
+</session-factory>
+</hibernate-configuration>

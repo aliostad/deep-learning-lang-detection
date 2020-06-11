@@ -1,0 +1,166 @@
+(ns homepage.pricing.index
+  (:require
+    [homepage.layout :refer [contact-us-btn secondary-header]
+     :as layout]
+    [clojure.string :refer [lower-case]])
+  (:require-macros
+    [config :refer
+     [node-appboard-url appboard-url hs-contact-us-id hs-portal-id]]))
+
+(def page-header {:header "AppBoard Pricing"})
+(defn appboard-registration-link [arg] (str (node-appboard-url) "/?package=" (name arg)
+                                            "&returnUri=" (appboard-url)
+                                            "#!/registration/"))
+
+(def basic-color "rgb(89,210,217)")
+(def pro-color "rgb(55,154,166)")
+(def enterprise-color "rgb(77,182,172)")
+
+(def plan-pricing
+  [{:plan          "Basic"
+    :monthly-price "US$ 199"
+    :yearly-price  "US$ 1,999"
+    :info          "An entry level solution for those new to app management"
+    :cta           "Free Trial"}
+   {:plan          "Pro"
+    :monthly-price "US$ 499"
+    :yearly-price  "US$ 4,999"
+    :info          "An integrated solution for managing apps for digital natives"
+    :cta           "Free Trial"}
+   {:plan "Enterprise"
+    :info "An intelligent way to manage your apps for your teams"}])
+
+(def features-list
+  [{:feature "Unlimited Users" :plans #{:basic :pro :enterprise} :bg-color "rgba(89,210,217, 0.3)"}
+   {:feature "Unlimited Apps Tracked" :plans #{:basic :pro :enterprise} :bg-color "rgba(89,210,217, 0.3)"}
+   {:feature "LeaderBoard" :plans #{:basic :pro :enterprise}}
+   {:feature "AppStore Search" :plans #{:basic :pro :enterprise}}
+   {:feature "AppBuilder" :plans #{:basic :pro :enterprise}}
+   {:feature "App Development Calculator" :plans #{:basic :pro :enterprise}}
+   {:feature "App Profile" :plans #{:basic :pro :enterprise}}
+   {:feature "Newsfeed Portfolio Intelligence" :plans #{:basic :pro :enterprise}}
+   {:feature "Notifications" :plans #{:basic :pro :enterprise}}
+   {:feature "AppStore Analytics Integration" :plans #{:basic :pro :enterprise}}
+   {:feature "Appstore Reviews and Ratings" :plans #{:basic :pro :enterprise}}
+   {:feature "In App Analytics Integration" :plans #{:basic :pro :enterprise}}
+   {:feature "Distribution* <br>(up to 33 Global Android Stores)" :plans #{:basic :pro :enterprise}
+    :info    {:basic " 1/mo"
+              :pro   " 5/mo"}}
+   {:feature "Data Export" :plans #{:pro :enterprise}}
+   {:feature "Email Reports" :plans #{:pro :enterprise}}
+   {:feature "Competitor Insights" :plans #{:pro :enterprise}
+    :info    {:pro " 1/mo"}}
+   {:feature "AppLocker Repository integration" :plans #{:enterprise} :bg-color "rgba(245,245,245, 0.4)"}
+   {:feature "AppBuilder App Governance Module" :plans #{:enterprise} :bg-color "rgba(245,245,245, 0.4)"}
+   {:feature "Single Sign On" :plans #{:enterprise} :bg-color "rgba(245,245,245, 0.4)"}
+   {:feature "Marketplace for your apps" :plans #{:enterprise} :bg-color "rgba(245,245,245, 0.4)"}
+   {:feature "SMS alert" :plans #{:enterprise} :bg-color "rgba(245,245,245, 0.4)"}])
+
+(defelem signup-btn [{:keys [] :as attrs} _]
+         ((a attrs)
+           :href (appboard-registration-link :free)
+           "Free Trial"))
+
+(defn plan-color [plan]
+  (case (lower-case plan)
+    "basic" basic-color
+    "pro" pro-color
+    "enterprise" enterprise-color))
+
+(defn feature-row [f]
+  (cell-let [{:keys [feature plans info bg-color]} f]
+            (let [check-icon (fn [color plan]
+                               (div :class "content"
+                                    (i :class "large check circle icon"
+                                       :style (str "color:" color)
+                                       :toggle (cell= (contains? plans plan)))
+                                    (cell= (when info
+                                             (plan info)))))]
+              (div :class "four column feature row" :style "padding:0.10em"
+                   (div :class "column"
+                        :style (cell= (str "background-color:" (or bg-color "rgb(245,245,245)")))
+                        :html feature)
+                   (div :class "feature column" (check-icon basic-color :basic))
+                   (div :class "feature column" (check-icon pro-color :pro))
+                   (div :class "feature column" (check-icon enterprise-color :enterprise))))))
+
+(defn header-content [plan monthly-price yearly-price cta]
+  (spliced
+    (div :class "ui large center aligned header"
+         :style (str "color:" (plan-color @plan)
+                     ";font-weight: 300")
+         @plan)
+    (h2 :class "ui huge center aligned header"
+        :style (str "color:" (plan-color @plan)
+                    ";margin: 0.25em 0em -0.25em 0em")
+        (cell= (or monthly-price "Contact Us"))
+        (span :toggle monthly-price
+              " /mo"))
+    (when @yearly-price
+      (div :class "ui medium center aligned header"
+           (str @yearly-price " per year")))
+    (when @cta
+      (div :class "ui center aligned header"
+           (signup-btn :class "ui tiny button"
+                       :style (str "background-color: " (plan-color @plan)))))))
+
+(defn pricing-section []
+  (section
+    :id "pricing"
+    :class "ui container doubling computer tablet only grid"
+    (div :class "four column header row"
+         (div :class "trial column")
+         (loop-tpl :bindings [{:keys [plan monthly-price yearly-price cta]} plan-pricing]
+                   (div :class (str (lower-case @plan) " column")
+                        (header-content plan monthly-price yearly-price cta))))
+    (div :class "four column info row"
+         (div :class "column")
+         (loop-tpl :bindings [{:keys [plan info]} plan-pricing]
+                   (div :class (str (lower-case @plan) " center aligned info column")
+                        (i info))))
+    (loop-tpl :bindings [f features-list]
+              (feature-row f))
+    (div :class "four column row"
+         (div :class "column")
+         (div :class "center aligned column"
+              (signup-btn :class "ui large button"
+                          :style (str "background-color: " (plan-color "basic"))))
+         (div :class "center aligned column"
+              (signup-btn :class "ui large button"
+                          :style (str "background-color: " (plan-color "pro"))))
+         (div :class "column"))))
+
+(defn pricing-section-mobile []
+  (section :id "pricing"
+           ((div :class "ui one column mobile only container grid"
+                 (loop-tpl :bindings [{:keys [plan monthly-price yearly-price info cta]} plan-pricing]
+                           (div :class "mobile center aligned column"
+                                (div :class "header row"
+                                     (div :class (str (lower-case @plan) " column")
+                                          (header-content plan monthly-price yearly-price cta)))
+                                (div :class "info row"
+                                     (div :class "column"
+                                          :style (str "background-color:" (plan-color @plan)
+                                                      ";color: white;")
+                                          (i info)))
+
+                                (loop-tpl :bindings [{:keys [feature plans]} features-list]
+                                          (when (contains? @plans (keyword (lower-case @plan)))
+                                            (div :class "feature row"
+                                                 (div :class "centered column" :html feature))))))))))
+
+(defn pg []
+  (layout/primary
+    :id "appboard-pricing"
+    :page-title "Product Pricing | Analytics & App Management | Exicon"
+    :description "Pricing For Exicon's App Management & Logistics Platform That Scales With Your App Portfolio, Analytics, Distribution & API Management."
+    :keywords "AppBoard, Analytics, App Management, Exicon Pricing, AppBoard Subscription, Mobile Relationship Management Pricing, Mobile Relationship Management Subscription "
+    :page-css "../../pricing/index.inc.css"
+    (secondary-header :header (:header page-header) :page "pricing")
+    (div :class "ui hidden divider")
+    (pricing-section)
+    (pricing-section-mobile)
+    (div :class "ui hidden divider")
+    (div :class "ui container"
+         "* Distribution to China App Stores on request (not included in the prices above).")
+    (div :class "ui hidden divider")))

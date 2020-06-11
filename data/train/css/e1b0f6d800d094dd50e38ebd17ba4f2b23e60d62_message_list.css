@@ -1,0 +1,46 @@
+.message-list {
+  margin: 0;
+  padding-left: 0; }
+  .message-list > .message-item {
+    display: flex;
+    margin-bottom: 20px; }
+    .message-list > .message-item .avatar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 4px; }
+      .message-list > .message-item .avatar .initials {
+        font-size: 1.8em;
+        font-weight: bold;
+        color: white; }
+    .message-list > .message-item .message-container {
+      flex: 1 1;
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px; }
+      .message-list > .message-item .message-container .meta {
+        display: flex;
+        align-items: baseline;
+        line-height: 1.1rem; }
+        .message-list > .message-item .message-container .meta .author {
+          font-size: 1rem;
+          font-weight: bold;
+          text-transform: lowercase;
+          color: #474646;
+          margin-right: 8px; }
+        .message-list > .message-item .message-container .meta .date {
+          color: #C2C1C1;
+          font-size: 0.9rem;
+          font-weight: 300; }
+      .message-list > .message-item .message-container .message {
+        color: #4f4f4f;
+        font-size: 1rem;
+        line-height: 1.5rem; }
+        .message-list > .message-item .message-container .message .auto-link {
+          color: #417eba; }
+    .message-list > .message-item.notification .message-container {
+      margin-left: 50px; }
+
+/*# sourceMappingURL=_message_list.css.map */

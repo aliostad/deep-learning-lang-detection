@@ -1,0 +1,27 @@
+#!/bin/zsh
+
+gentoo_diff_pkgs() {
+    for x in $(find /var/db/pkg -mindepth 2 -maxdepth 2 -type d); do
+        local repo=$(<$x/repository)
+
+        typeset -A cache
+        if [[ "$repo" = "gentoo" ]]; then
+            repobase=/usr/portage
+        elif [[ -n "$cache[$repo]" ]]; then
+            #echo "got $repo from cache" >&2
+            repobase="$cache[$repo]"
+        else
+            #echo "generated for $repo" >&2
+            repobase=$(portageq get_repo_path / $repo)
+            cache[$repo]="$repobase"
+        fi
+
+        local pkgbase=$(echo $x | cut -d / -f 5,6)
+        local -a atom
+        atom=($(qatom $pkgbase))
+        local src=$repobase/$atom[1]/$atom[2]/${(j:-:)atom[2,-1]}.ebuild
+
+        diff -u -I "^ *#" -I "^	*#" -I '$Header:' -I 'KEYWORDS=' -I '# Copyright' -I 'HOMEPAGE=' -I 'DESCRIPTION=' $x $src 2>/dev/null
+
+    done
+}

@@ -1,0 +1,132 @@
+/*
+ *  borderBox.css
+ *
+ *  Sets box-sizing: border-box to all the html elements.
+ *  Overrides blueprint classes to account for the border-box model.
+ */
+
+
+/* Box model override for the entire window */
+* { -moz-box-sizing: border-box; box-sizing: border-box; -webkit-box-sizing:border-box; }
+
+/* Blueprint override to use new box model */
+div.container .append-1 {margin-right:50px;}
+div.container .append-2 {margin-right:90px;}
+div.container .append-3 {margin-right:130px;}
+div.container .append-4 {margin-right:170px;}
+div.container .append-5 {margin-right:210px;}
+div.container .append-6 {margin-right:250px;}
+div.container .append-7 {margin-right:290px;}
+div.container .append-8 {margin-right:330px;}
+div.container .append-9 {margin-right:370px;}
+div.container .append-10 {margin-right:410px;}
+div.container .append-11 {margin-right:450px;}
+div.container .append-12 {margin-right:490px;}
+div.container .append-13 {margin-right:530px;}
+div.container .append-14 {margin-right:570px;}
+div.container .append-15 {margin-right:610px;}
+div.container .append-16 {margin-right:650px;}
+div.container .append-17 {margin-right:690px;}
+div.container .append-18 {margin-right:730px;}
+div.container .append-19 {margin-right:770px;}
+div.container .append-20 {margin-right:810px;}
+div.container .append-21 {margin-right:850px;}
+div.container .append-22 {margin-right:890px;}
+div.container .append-23 {margin-right:930px;}
+div.container .append-1.last {margin-right:40px;}
+div.container .append-2.last {margin-right:80px;}
+div.container .append-3.last {margin-right:120px;}
+div.container .append-4.last {margin-right:160px;}
+div.container .append-5.last {margin-right:200px;}
+div.container .append-6.last {margin-right:240px;}
+div.container .append-7.last {margin-right:280px;}
+div.container .append-8.last {margin-right:320px;}
+div.container .append-9.last {margin-right:360px;}
+div.container .append-10.last {margin-right:400px;}
+div.container .append-11.last {margin-right:440px;}
+div.container .append-12.last {margin-right:480px;}
+div.container .append-13.last {margin-right:520px;}
+div.container .append-14.last {margin-right:560px;}
+div.container .append-15.last {margin-right:600px;}
+div.container .append-16.last {margin-right:640px;}
+div.container .append-17.last {margin-right:680px;}
+div.container .append-18.last {margin-right:720px;}
+div.container .append-19.last {margin-right:760px;}
+div.container .append-20.last {margin-right:800px;}
+div.container .append-21.last {margin-right:840px;}
+div.container .append-22.last {margin-right:880px;}
+div.container .append-23.last {margin-right:920px;}
+div.container .prepend-1 {margin-left:40px;}
+div.container .prepend-2 {margin-left:80px;}
+div.container .prepend-3 {margin-left:120px;}
+div.container .prepend-4 {margin-left:160px;}
+div.container .prepend-5 {margin-left:200px;}
+div.container .prepend-6 {margin-left:240px;}
+div.container .prepend-7 {margin-left:280px;}
+div.container .prepend-8 {margin-left:320px;}
+div.container .prepend-9 {margin-left:360px;}
+div.container .prepend-10 {margin-left:400px;}
+div.container .prepend-11 {margin-left:440px;}
+div.container .prepend-12 {margin-left:480px;}
+div.container .prepend-13 {margin-left:520px;}
+div.container .prepend-14 {margin-left:560px;}
+div.container .prepend-15 {margin-left:600px;}
+div.container .prepend-16 {margin-left:640px;}
+div.container .prepend-17 {margin-left:680px;}
+div.container .prepend-18 {margin-left:720px;}
+div.container .prepend-19 {margin-left:760px;}
+div.container .prepend-20 {margin-left:800px;}
+div.container .prepend-21 {margin-left:840px;}
+div.container .prepend-22 {margin-left:880px;}
+div.container .prepend-23 {margin-left:920px;}
+
+div.container .append-1 {padding-right:0px;}
+div.container .append-2 {padding-right:0px;}
+div.container .append-3 {padding-right:0px;}
+div.container .append-4 {padding-right:0px;}
+div.container .append-5 {padding-right:0px;}
+div.container .append-6 {padding-right:0px;}
+div.container .append-7 {padding-right:0px;}
+div.container .append-8 {padding-right:0px;}
+div.container .append-9 {padding-right:0px;}
+div.container .append-10 {padding-right:0px;}
+div.container .append-11 {padding-right:0px;}
+div.container .append-12 {padding-right:0px;}
+div.container .append-13 {padding-right:0px;}
+div.container .append-14 {padding-right:0px;}
+div.container .append-15 {padding-right:0px;}
+div.container .append-16 {padding-right:0px;}
+div.container .append-17 {padding-right:0px;}
+div.container .append-18 {padding-right:0px;}
+div.container .append-19 {padding-right:0px;}
+div.container .append-20 {padding-right:0px;}
+div.container .append-21 {padding-right:0px;}
+div.container .append-22 {padding-right:0px;}
+div.container .append-23 {padding-right:0px;}
+div.container .prepend-1 {padding-left:0px;}
+div.container .prepend-2 {padding-left:0px;}
+div.container .prepend-3 {padding-left:0px;}
+div.container .prepend-4 {padding-left:0px;}
+div.container .prepend-5 {padding-left:0px;}
+div.container .prepend-6 {padding-left:0px;}
+div.container .prepend-7 {padding-left:0px;}
+div.container .prepend-8 {padding-left:0px;}
+div.container .prepend-9 {padding-left:0px;}
+div.container .prepend-10 {padding-left:0px;}
+div.container .prepend-11 {padding-left:0px;}
+div.container .prepend-12 {padding-left:0px;}
+div.container .prepend-13 {padding-left:0px;}
+div.container .prepend-14 {padding-left:0px;}
+div.container .prepend-15 {padding-left:0px;}
+div.container .prepend-16 {padding-left:0px;}
+div.container .prepend-17 {padding-left:0px;}
+div.container .prepend-18 {padding-left:0px;}
+div.container .prepend-19 {padding-left:0px;}
+div.container .prepend-20 {padding-left:0px;}
+div.container .prepend-21 {padding-left:0px;}
+div.container .prepend-22 {padding-left:0px;}
+div.container .prepend-23 {padding-left:0px;}
+
+
+
+

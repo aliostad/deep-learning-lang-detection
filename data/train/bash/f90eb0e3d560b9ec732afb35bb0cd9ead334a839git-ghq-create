@@ -1,0 +1,33 @@
+#!/bin/sh
+
+REPO_NAME=$1
+if [ -z "$REPO_NAME" ]; then
+    echo "Usage:"
+    echo "  git ghq-create <repo name>"
+    exit 1
+fi
+ghq root > /dev/null 2>&1
+if [ $? -ne 0 ]; then
+    echo "you need to install ghq."
+    exit 1
+fi
+hub --version > /dev/null 2>&1
+if [ $? -ne 0 ]; then
+    echo "you need to install hub."
+    exit 1
+fi
+TMP_DIR=$(mktemp -d -t ghq-create)
+if [ $? -ne 0 ]; then
+    echo "$0: Can't create temp file, exiting..."
+    exit 1
+fi
+TMP_REPO=$TMP_DIR/$REPO_NAME
+mkdir -p $TMP_REPO
+pushd $TMP_REPO > /dev/null
+git init > /dev/null
+hub create
+REPO=$(git config --get 'remote.origin.url')
+popd > /dev/null
+rm -rf $TMP_DIR
+echo ghq get $REPO
+ghq get $REPO

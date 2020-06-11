@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="service" default="service.build" basedir=".">
+	<import file="../core/common_build.xml" />
+	
+	<property name="service.bin" value="${common.bin}/service_bin" />
+	<property name="service.jarfilename" value="${common.jarpath}/lywz_service.jar" />
+	<property name="service.src" value="src" />
+		
+	<target name="service.init">
+		<mkdir dir="${service.bin}" />
+	</target>
+	
+	<target name="service.compile" depends="service.init">
+		<echo>compile service begine</echo>
+		<javac srcdir="${service.src}" destdir="${service.bin}" >
+			<classpath refid="common_lib_path" />
+			<classpath refid="project_lib_path" />
+			<compilerarg line="-encoding UTF-8 "/>
+		</javac>
+		
+		<copy toDir="${service.src}" flatten="true">
+			<fileset dir="${service.bin}" includes="*.xml" />
+		</copy>
+		<echo>compile service end</echo>
+	</target>
+	
+	<target name="service.build" depends="service.clean, service.compile">
+		<echo>package service begine</echo>
+		<jar destfile="${service.jarfilename}" basedir="${service.bin}" />
+		<echo>package service begine</echo>
+	</target>
+	
+	<target name="service.clean">
+		<delete dir="${service.bin}" />
+		<delete file="${service.jarfilename}" />
+	</target>
+</project>

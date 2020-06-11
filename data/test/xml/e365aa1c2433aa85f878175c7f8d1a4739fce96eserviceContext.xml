@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	
+	<!-- 角色 service -->	
+	<bean id="roleService" class="com.dihaitech.oa.service.impl.RoleServiceImpl"/>
+	
+	<!-- 菜单 service -->	
+	  <bean id="menuService" class="com.dihaitech.oa.service.impl.MenuServiceImpl"/>
+	
+	<!-- 目录 service -->	
+	  <bean id="catalogService" class="com.dihaitech.oa.service.impl.CatalogServiceImpl"/>
+	
+	<!-- 模块 service -->	
+	  <bean id="moduleService" class="com.dihaitech.oa.service.impl.ModuleServiceImpl"/>
+	  
+	<!-- 市 service -->	
+	  <bean id="cityService" class="com.dihaitech.oa.service.impl.CityServiceImpl"/>
+	  
+	<!-- 省 service -->	
+	  <bean id="provinceService" class="com.dihaitech.oa.service.impl.ProvinceServiceImpl"/>
+	  
+	<!-- 区 service -->	
+	  <bean id="areaService" class="com.dihaitech.oa.service.impl.AreaServiceImpl"/>
+	  
+	  <!-- 日志 service -->	
+	  <bean id="logsService" class="com.dihaitech.oa.service.impl.LogsServiceImpl"/>
+	  
+	  <!-- 字典 service -->	
+	  <bean id="dictService" class="com.dihaitech.oa.service.impl.DictServiceImpl"/>
+	  
+	  <!-- 用户角色 service -->	
+	  <bean id="managerRoleService" class="com.dihaitech.oa.service.impl.ManagerRoleServiceImpl"/>
+	  
+	  <!-- 请假单 service -->	
+	  <bean id="leaveBillService" class="com.dihaitech.oa.service.impl.LeaveBillServiceImpl"/>
+	  
+</beans>

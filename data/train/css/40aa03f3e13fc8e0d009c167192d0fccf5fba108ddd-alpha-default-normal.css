@@ -1,0 +1,60 @@
+/* This file will hold styles that are loaded using the same media query as the normal grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+.view-tags .view-content,
+.view-brands .view-content,
+.view-wraps .view-content,
+.view-wraps-search .view-content,
+.view-stashes .view-content,
+.view-members .view-content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between; }
+  .view-tags .view-content .views-row,
+  .view-brands .view-content .views-row,
+  .view-wraps .view-content .views-row,
+  .view-wraps-search .view-content .views-row,
+  .view-stashes .view-content .views-row,
+  .view-members .view-content .views-row {
+    width: 49%; }
+    .view-tags .view-content .views-row .node,
+    .view-tags .view-content .views-row .user-profile,
+    .view-brands .view-content .views-row .node,
+    .view-brands .view-content .views-row .user-profile,
+    .view-wraps .view-content .views-row .node,
+    .view-wraps .view-content .views-row .user-profile,
+    .view-wraps-search .view-content .views-row .node,
+    .view-wraps-search .view-content .views-row .user-profile,
+    .view-stashes .view-content .views-row .node,
+    .view-stashes .view-content .views-row .user-profile,
+    .view-members .view-content .views-row .node,
+    .view-members .view-content .views-row .user-profile {
+      -webkit-flex: 0 0 49%;
+      flex: 0 0 49%; }
+
+#zone-menu {
+  position: relative; }
+
+#region-search-bar {
+  position: absolute;
+  left: 0;
+  min-width: 1px; }
+
+.block-views-exp-wraps-search-page {
+  width: 90%; }
+
+#region-menu {
+  padding-left: 240px;
+  width: 700px; }
+
+.logo-img {
+  width: auto; }
+
+#block-bwd-ads-bwd-header-advert {
+  bottom: 24px;
+  width: auto; }
+
+/*# sourceMappingURL=ddd-alpha-default-normal.css.map */

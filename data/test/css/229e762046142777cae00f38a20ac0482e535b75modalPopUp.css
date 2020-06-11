@@ -1,0 +1,338 @@
+
+#modelBG
+{
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;/**/
+	background-color: #000;
+	width: 100%;
+	height: 100%;
+	opacity: .75;
+	filter: alpha(opacity=50);
+	z-index: 2;
+}
+
+#modelContactWindow
+{
+	display: none;
+	position: absolute;
+	top: 220px;
+	left: 50%;
+	margin-left: -400px;/*-370px*/
+	background-color: #fff;
+	width: 800px;/*740px*/
+	height: 590px;
+	z-index: 5000;
+	/*opacity: .5;*/
+}
+
+.contactContent
+{
+	float: left;
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: bold;
+	width: 260px;
+	margin: 10px 0px 0px 100px;
+	/*border: solid 1px red;*/
+}
+
+#contactContent a
+{
+	color: #928f8b;
+	text-decoration: none;
+}
+
+#contactContent a:hover
+{
+	color: #000;
+	text-decoration: underline;
+}
+
+#sendMessage
+{
+	
+	clear: both;
+	position: relative;
+	top: -60px;
+	left: 90px;/**/
+	background: url(../images/contact/sendMessageSmall.png) no-repeat;
+	/*background-position: bottom left;*/
+	width: 259px;
+	height: 22px;/*34*/
+	/*border: solid 1px red;*/
+}
+
+#contactImage
+{
+	position: relative;
+	top: -40px;
+	right: 85px;/**/
+	float: right;
+	background: url(../images/contact/squarePaintings01.jpg) no-repeat;
+	/*background-position: left;*/
+	width: 300px;
+	height: 300px;
+	/*z-index: -1;*/
+	/*border: solid 1px red;*/
+}
+
+/*#messageContainer
+{
+	width: 600px;
+	margin-left: 100px;
+	border: solid 1px red;
+}*/
+
+#contactForm
+{
+	position: relative;
+	top: -50px;
+	margin-left: 90px;
+	/*border: solid 1px red;*/
+}
+
+
+
+/*#emailAddressContainer
+{
+	
+}*/
+
+/*#submitPosition
+{
+	text-align: right;
+	width: 610px;
+	border: solid 1px green;
+}*/
+
+/*#submitBtn
+{
+	background:url(../images/contact/sendYourMessageBtn.jpg) no-repeat;
+	border: none;
+	cursor: pointer;
+	width: 200px;
+	height: 35px;
+}
+
+#submitBtn:hover
+{
+	background:url(../images/contact/sendYourMessageBtnOver.jpg) no-repeat;
+}*/
+
+#modelWindow
+{
+	display: none;
+	position: absolute;
+	top: 220px;
+	/*margin: 0 auto;
+	left: 50%;
+	margin-left: -400px;*/
+	background-color: #000;
+	width: 800px;
+	height: 630px;
+	z-index: 2;
+	/*opacity: .5;*/
+}
+
+#modelMenuWrapper
+{
+	width: 800px;
+	height: 28px;/**/
+	/*display: inline-block;*/
+	/*padding: 10px 10px 0px 30px;*/
+	margin-top: 10px;
+	/*border: solid 1px green;*/
+}
+
+#imageTopSpacer
+{
+	height: 25px;
+	/*border: solid 1px red;*/
+}
+
+#modelMenuLeftSpacer
+{
+	float: left;
+	width: 30px;
+	height: 28px;
+}
+
+#photographyModelBtn
+{
+	float: left;
+	background: url(../images/model/photographyBtn.png) no-repeat;
+	cursor: pointer;
+	width: 140px;
+	height: 28px;
+	/*border: solid 1px red;*/
+}
+
+#photographyModelBtn:hover
+{
+	background: url(../images/model/photographyBtnOver.png) no-repeat;
+}
+
+#paintingModelBtn
+{
+	float: left;
+	background: url(../images/model/paintingBtn.png) no-repeat;
+	cursor: pointer;
+	width: 140px;
+	height: 28px;
+	/*border: solid 1px red;*/
+}
+
+#paintingModelBtn:hover
+{
+	background: url(../images/model/paintingBtnOver.png) no-repeat;
+}
+
+#mixedMediaModelBtn
+{
+	float: left;
+	background: url(../images/model/mixedMediaBtn.png) no-repeat;
+	cursor: pointer;
+	width: 140px;
+	height: 28px;
+	/*border: solid 1px red;*/
+}
+
+#mixedMediaModelBtn:hover
+{
+	background: url(../images/model/mixedMediaBtnOver.png) no-repeat;
+}
+
+#sculptureModelBtn
+{
+	float: left;
+	background: url(../images/model/sculptureBtn.png) no-repeat;
+	cursor: pointer;
+	width: 140px;
+	height: 28px;
+	/*border: solid 1px red;*/
+}
+
+#sculptureModelBtn:hover
+{
+	background: url(../images/model/sculptureBtnOver.png) no-repeat;
+}
+
+.closeBtn
+{
+	float: right;
+	background: url(../images/model/modelCloseBtn.jpg) no-repeat;
+	cursor: pointer;
+	margin: 0 10px 0 0;
+	width: 21px;
+	height: 21px;
+}
+
+.closeBtn:hover
+{
+	background: url(../images/model/modelCloseBtnOver.jpg) no-repeat;
+}
+
+#previousNextWrapperModel
+{
+	margin: 0 auto;
+	width: 145px;/**/
+	height: 34px;
+	/*border: solid 1px blue;*/
+}
+
+#previousNextTopSpacer
+{ 
+	height: 10px;
+}
+
+#previousModelBtn
+{
+	float: left;
+	background: url(../images/model/previousBtn.png) no-repeat;
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+	/*border: solid 1px yellow;*/
+}
+
+#previousModelBtn:hover
+{
+	background: url(../images/model/previousBtnOver.png);
+}
+
+#imageNumber
+{
+	color: #fff;/*#7f7f7f*/
+	font-family: Arial;
+	font-size: 16px;
+	/*font-weight: bold;*/
+	text-align: center;
+	float: left;
+	/*width: 60px;*/
+	padding: 3px 5px 0px 5px;
+	/*border: solid 1px red;*/
+}
+
+#nextModelBtn
+{
+	float: left;
+	background: url(../images/model/nextBtn.png) no-repeat;
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+	/*border: solid 1px yellow;*/
+}
+
+#nextModelBtn:hover
+{
+	background: url(../images/model/nextBtnOver.png);
+}
+
+
+#imageWrapper
+{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 800px;
+	height: 480px;
+	/*border: solid 1px yellow;*/
+}
+
+#painters
+{
+	/*height: 460px;*/
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	/*border: solid 1px yellow;*/
+}
+
+.imageBottomSpacer
+{
+	height: 15px;
+	/*border: solid 1px blue;*/
+}
+
+.modelFooterText
+{
+	color: #928f8b;
+	padding-top: 5px;
+	text-align: center;
+	font-size: 10px;
+}
+
+.modelFooterText a
+{
+	color: #928f8b;
+	text-decoration: none;
+}
+
+.modelFooterText a:hover
+{
+	color: #fff;
+	text-decoration: underline;
+}
+

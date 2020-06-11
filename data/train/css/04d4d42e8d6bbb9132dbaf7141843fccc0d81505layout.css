@@ -1,0 +1,29 @@
+/* --------------------------------------------------------------------
+************************* Modify in layout.SCSS *************************
+[Table of contents]
+
+1. Body
+
+2. Mixins
+
+3. Views
+	3.1. Aircraft View / #aircraftView
+
+-------------------------------------------------------------------- */
+/*------------------------------------------------------------------
+[3.1. Aircraft View / #aircraftView]
+*/
+#aircraftView {
+  border: 1px solid #eee;
+  display: table;
+  padding: 0.5em; }
+  #aircraftView .airplane, #aircraftView .details {
+    display: table-cell; }
+  #aircraftView .details {
+    vertical-align: top; }
+    #aircraftView .details li {
+      display: table-row; }
+      #aircraftView .details li label, #aircraftView .details li span {
+        display: table-cell;
+        line-height: 1.3em;
+        padding: 0 0.5em; }

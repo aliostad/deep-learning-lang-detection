@@ -1,0 +1,162 @@
+
+body{
+    font-family         :   Helvetica, Arial;
+}
+
+.H2000px{
+    height              :   2000px;
+    border-left         :   3px solid #A3A3A3;
+    margin-left         :   10px;    
+}
+
+.ladder{
+    position            :   absolute;
+    top                 :   0px;
+    left                :   0px;    
+}
+
+.fixedContent{
+    position            :   fixed;
+}
+
+.fcCentered{
+    left                :   50%;
+    top                 :   50%;
+}
+
+.pixelGraduation{
+    position            :   absolute;
+    padding-left        :   10px;
+    padding-right       :   5px;
+    border-bottom       :   2px solid #A3A3A3;    
+}
+
+.top200px{
+    top                 :   200px;
+}
+
+.top400px{
+    top                 :   400px;
+}
+
+.top600px{
+    top                 :   600px;
+}
+
+.top800px{
+    top                 :   800px;
+}
+
+.top1000px{
+    top                 :   1000px;
+}
+
+.top1200px{
+    top                 :   1200px;
+}
+
+.top1400px{
+    top                 :   1400px;
+}
+
+.top1600px{
+    top                 :   1600px;
+}
+
+.top1800px{
+    top                 :   1800px;
+}
+
+.top2000px{
+    top                 :   2000px;
+}
+
+#switchModelDemo{
+    font-size           :   1em;
+    text-align          :   center;
+    width               :   700px;
+    height              :   70px;
+    margin-left         :   -350px;
+    margin-top          :   -35px;
+}
+
+#linearMoveModelDemo{
+    position            :   relative;
+    top                 :   500px;
+    left                :   90px;
+    width               :   700px;
+}
+
+#linearMoveModelDemoItem{
+    position            :   relative;
+    top                 :   0px;
+    left                :   0px;
+    background-color    :   #A3A3A3;
+    width               :   60px;
+    padding             :   5px;
+    text-align          :   center;
+}
+
+#linearMoveModelDemo2{
+    position            :   fixed;
+    top                 :   0px;
+    left                :   0px;
+    width               :   100%;
+    height              :   100%;
+    background-color    :   #E3E3E3;
+    background-image    :   url('../linearMoveAnimation/enter.png');
+    background-position :   center center;
+    background-repeat   :   no-repeat;
+}
+
+#linearMoveModelDemo2LeftDoor{
+    position            :   absolute;
+    top                 :   0px;
+    left                :   0px;
+    width               :   50%;
+    height              :   100%;
+    background-color    :   #B3B3B3;
+    opacity             :   0.9;
+    background-image    :   url('../linearMoveAnimation/left.png');
+    background-repeat   :   no-repeat;
+    background-position :   right center;
+}
+
+#linearMoveModelDemo2RightDoor{
+    position            :   absolute;
+    top                 :   0px;
+    left                :   50%;
+    width               :   50%;
+    height              :   100%;
+    opacity             :   0.9;
+    background-color    :   #B3B3B3;
+    background-image    :   url('../linearMoveAnimation/right.png');
+    background-repeat   :   no-repeat;
+    background-position :   left center;
+}
+
+
+
+.container-display-table{
+    display             :   table-cell;
+    vertical-align      :   middle;
+    width               :   600px;
+    height              :   600px;
+    background-color    :   rgba(179, 179, 179, 0.36);
+}
+
+#smoothSwitchModelDemoContainer{
+    margin-top          :   -300px;
+    margin-left         :   -300px;
+}
+
+#smoothSwitchModelDemo{
+    width               :   300px;
+    height              :   300px;
+    background-color    :   rgba(74, 197, 74, 0.81);
+    margin              :   0 auto;
+}
+
+
+
+

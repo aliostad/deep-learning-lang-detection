@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codesense version="1.0">
+
+    <set name="com.appsome.sugar.dtl.tags">
+        <completion string=" for">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\{)|\s*[^{]</matched-suffix>
+					<transform-into> ${1:item} in ${2:array} \%\}
+	${3:content}
+\{\% endfor \%\}
+					</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string=" if">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\{)|\s*[^{]</matched-suffix>
+					<transform-into> ${1:item} \%\}
+	${2:content}
+\{\% endif \%\}
+					</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string=" block">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\{)|\s*[^{]</matched-suffix>
+					<transform-into> ${1:name} \%\}
+	${2:content}
+\{\% endblock \%\}
+					</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string=" extends">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\{)|\s*[^{]</matched-suffix>
+					<transform-into> \"${1:name}\.html\" \%\}</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string=" url">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\{)|\s*[^{]</matched-suffix>
+					<transform-into> ${1:name} \%\}</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string=" autoescape">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\{)|\s*[^{]</matched-suffix>
+					<transform-into> ${1:on} \%\}
+	${2:content}
+\{\% endautoescape \%\}</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string=" csrf_token">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\{)|\s*[^{]</matched-suffix>
+					<transform-into> \%\}</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string=" cycle">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\{)|\s*[^{]</matched-suffix>
+					<transform-into> ${1:item1} ${2:item2} \%\}</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string=" filter">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\{)|\s*[^{]</matched-suffix>
+					<transform-into> ${1:filter} \%\}
+	${2:content}
+\{\% endfilter \%\}</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string=" firstof">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\{)|\s*[^{]</matched-suffix>
+					<transform-into> ${1:item1} ${2:item2} \%\}</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string=" ifchanged">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\{)|\s*[^{]</matched-suffix>
+					<transform-into> ${1:item} \%\}
+	${2:content}
+\{\% endifchanged \%\}
+					</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string=" ifequal">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\{)|\s*[^{]</matched-suffix>
+					<transform-into> ${1:item} \%\}
+	${2:content}
+\{\% ifequal \%\}
+					</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string=" ifnotequal">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\{)|\s*[^{]</matched-suffix>
+					<transform-into> ${1:item} \%\}
+	${2:content}
+\{\% ifequal \%\}
+					</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string=" include">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\{)|\s*[^{]</matched-suffix>
+					<transform-into> \"${1:name}\.html\" \%\}</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string=" load">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\{)|\s*[^{]</matched-suffix>
+					<transform-into> ${1:library} \%\}</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string=" now">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\{)|\s*[^{]</matched-suffix>
+					<transform-into> \"${1:format}\" \%\}</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string=" spaceless">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\{)|\s*[^{]</matched-suffix>
+					<transform-into> \%\}
+	${1:content}
+\{\% spaceless \%\}
+					</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string=" ssi">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\{)|\s*[^{]</matched-suffix>
+					<transform-into> \"${1:name}\.html\" ${2:parsed} \%\}</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string=" widthratio">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\{)|\s*[^{]</matched-suffix>
+					<transform-into> ${1:this_value} ${2:max_value} ${3:constant} \%\}</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+    </set>
+    
+    <set name="com.appsome.sugar.dtl.values">
+    	<completion string=" ">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*\{)|\s*[^{]</matched-suffix>
+					<transform-into>${1:value} \}\}</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+    </set>
+</codesense>

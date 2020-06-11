@@ -1,0 +1,56 @@
+:root {
+  font-size: 162.5%; }
+
+body {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif, 'Droid Sans';
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: #333333;
+  color: #ddd; }
+
+head * {
+  display: none; }
+
+head {
+  display: block; }
+
+[contenteditable] {
+  -webkit-user-modify: read-write-plaintext-only; }
+
+#editme, #edittemplate {
+  color: white;
+  white-space: pre;
+  display: block;
+  margin: 20px;
+  font-family: monospace;
+  -webkit-user-modify: read-write-plaintext-only;
+  -moz-user-modify: read-write;
+  user-modify: read-write; }
+
+body {
+  margin: 20px;
+  line-height: 1.6; }
+
+p {
+  padding-right: 40px; }
+
+pre, style {
+  text-align: left;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  line-height: 1.6;
+  tab-size: 2; }
+
+pre {
+  max-height: 80vh;
+  overflow: auto;
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=files.css.map */

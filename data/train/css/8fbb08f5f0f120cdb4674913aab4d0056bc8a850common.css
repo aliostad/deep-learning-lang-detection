@@ -1,0 +1,7 @@
+@media (max-width: 480px) { .hidden-xxs {display: none} .page {font-size: 12px}}
+@media (max-width: 400px) { .hidden-xxxs {display: none}}
+.boards li.active{font-weight: bold;}
+.breadcrumb{padding-left: 0; display: inline;}
+.nav.nav-stacked > li > a, .nav.nav-stacked > li.nav-heading {padding: 8px 15px; line-height: 18px;}
+.row .nav.nav-stacked + .nav.nav-stacked {margin-top: 20px;}
+.nav-primary > li.active > a, .nav-primary > li.active > a:hover, .nav-primary > li.active > a:focus {background: #fff !important; color: #229f24!important; border-color: #ddd !important;}

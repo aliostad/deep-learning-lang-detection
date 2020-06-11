@@ -1,0 +1,28 @@
+#view-login .view-inner {
+  border-top: 1px solid #3f4954;
+  border-bottom: 1px solid #3f4954;
+  width: 500px;
+  margin-top: -120px;
+  margin-left: -250px;
+  padding: 30px 0;
+}
+#view-login .view-inner h2 {
+  margin-bottom: 40px;
+}
+#view-login .view-inner p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#view-login .view-inner label {
+  display: inline-block;
+  vertical-align: middle;
+  width: 70px;
+  text-align: start;
+}
+#view-login .view-inner input {
+  width: 60%;
+  text-align: left;
+}
+#view-login .view-inner button {
+  margin-left: 332px;
+}

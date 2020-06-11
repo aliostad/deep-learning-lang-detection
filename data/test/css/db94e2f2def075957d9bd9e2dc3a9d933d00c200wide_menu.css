@@ -1,0 +1,81 @@
+
+/********** < Navigation */
+.ma-nav-container { }
+#nav { margin:0 auto; position: relative; z-index: 1000; }
+
+/* All Levels */ /* Style consistent throughout all nav levels */
+#nav li { text-align:left; }
+#nav li.last {  }
+#nav li.over { z-index:998; }
+
+#nav a:hover { display:block; text-decoration:none; }
+#nav span { display:block; cursor:pointer; white-space:nowrap; }
+#nav li ul span {white-space:normal; }
+#nav ul li.parent a {}
+#nav ul li.parent li a { }
+
+/* 0 Level - Category Names */
+#nav ul, #nav div {
+    left: -10000px;
+}
+#nav li.over ul, #nav li.over div {
+    left: 0;
+}
+.wide_menu .container {  width: 100%; /*padding: 3px 0 0;*/ position: absolute; left: 0; top: 51px; display: none;  }
+
+#nav li { float:left; background: url(../images/nav-li.png) 100% 100% no-repeat;  }
+#nav li.last{ background:none;  }
+#nav li.home { padding-left: 0; }
+
+
+#nav a span{ }
+
+
+#nav li.over a,
+#nav a:hover { }
+
+/* 1st Level - First Drop Down*/
+#nav ul.level0 { position: absolute; background: #fff; float: left; width: 100%; margin: 0; padding: 12px 0 20px; }
+#nav .container ul.level0 { position: static; }
+#nav ul li { float: left; width: 170px; background: none; border: 0; padding: 0 0 0 20px; }
+#nav ul li.first { padding-left: 20px; }
+
+#nav ul li a:hover {  }
+#nav ul li.active { margin: 0; }
+#nav ul li.last {}
+
+/* 2nd Level - Second Drop Down*/
+#nav ul ul { float: left; position: static; padding: 0; background: #f6f6f6; }
+#nav ul ul li { float: none; padding: 0; color: #888; }
+#nav ul ul li.first { padding: 0; }
+
+#nav ul ul li a, #nav ul ul li a:hover { line-height:27px }
+
+#nav ul ul ul li { padding-left: 15px !important; } 
+
+
+/* 3rd+ Level - Third Drop Down*/
+#nav ul ul,
+#nav ul div {
+    border: 0;
+    display: block !important;
+}
+
+
+#nav ul span,
+#nav ul li.last li span { }
+
+/* Show menu */
+#nav li ul.shown-sub { left: 0; top: 36px; }
+#nav li .shown-sub ul.shown-sub { }
+
+/* Drop-Down Width */
+#nav ul, #nav div { /* width: 954px; */ height: auto !important; }
+.nav-1 ul { } 
+.nav-2 ul {  } 
+.nav-3 ul { } 
+.nav-4 ul {  } 
+.nav-5 ul {   } 
+
+/********** Navigation > */
+/* ======================================================================================= */

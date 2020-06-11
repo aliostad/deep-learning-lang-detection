@@ -1,0 +1,33 @@
+#! /bin/bash
+
+# script to get features for each task in each session
+
+save_dir='../../features/task_wise_features'
+rm -r $save_dir
+mkdir $save_dir
+
+for dirs in ../../features/concatenated_features/*
+do
+	for files in $dirs/*
+	do
+		mkdir $save_dir/$(basename $dirs)
+		mkdir $save_dir/$(basename $dirs)/$(basename $files)
+		
+		for task_id in {1..5}
+		do
+			grep "^$task_id" $files > $save_dir/$(basename $dirs)/$(basename $files)/task_features.$task_id
+			num_lines_intensity=$(cut -d' ' -f5 $save_dir/$(basename $dirs)/$(basename $files)/task_features.$task_id | grep -v '^$'| wc -l)
+			num_lines_jit_shim=$(cut -d' ' -f6 $save_dir/$(basename $dirs)/$(basename $files)/task_features.$task_id | grep -v '^$' | wc -l)
+			num_add=`expr $num_lines_intensity - $num_lines_jit_shim`		
+			echo $num_add	
+			cat <(cut -d' ' -f6,7 $save_dir/$(basename $dirs)/$(basename $files)/task_features.$task_id | grep -v '^$') <(yes "\-\-undefined\-\- \-\-undefined\-\-" | head -n $num_add ) | sed 's/\\//g' >$save_dir/$(basename $dirs)/$(basename $files)/task_features.$task_id.jit_shim_ext
+			
+			paste -d' ' <(cut -d' ' -f1-5 $save_dir/$(basename $dirs)/$(basename $files)/task_features.$task_id | head -n $num_lines_intensity) $save_dir/$(basename $dirs)/$(basename $files)/task_features.$task_id.jit_shim_ext > $save_dir/$(basename $dirs)/$(basename $files)/task_features.task_id_rect.$task_id 
+
+			sed -i 's/--undefined--/-99/g' $save_dir/$(basename $dirs)/$(basename $files)/task_features.task_id_rect.$task_id
+
+		done 	
+		
+		
+	done	
+done

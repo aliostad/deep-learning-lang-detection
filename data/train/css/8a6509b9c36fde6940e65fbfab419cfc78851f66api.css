@@ -1,0 +1,192 @@
+.cApi .ipsTable th,
+.cApi .ipsTable td {
+	padding: 10px 15px;
+}
+
+.cApi .ipsTable td {
+	border-bottom: 1px solid rgba(0,0,0,0.025);
+}
+
+.cApi .ipsType_sectionHead {
+	font-weight: bold;
+}
+
+.cApiKey {
+	padding-top: 5px;
+	font-size: 14px;
+	font-family: monospace;
+}
+
+.cApiReference {
+	background: #f9f9f9;
+}
+
+.cApiTree a {
+	padding: 5px 0;
+	display: block;
+	position: relative;
+	color: #333;
+}
+
+.cApiTree a[data-action="toggleBranch"] {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+
+.cApiTree li.cApiTree_inactiveBranch > a:before,
+.cApiTree li.cApiTree_activeBranch > a:before {
+	font-family: 'FontAwesome';
+	display: inline-block;	
+	line-height: 6px;
+	font-size: 14px;
+}
+	html[dir="ltr"] .cApiTree li.cApiTree_inactiveBranch > a:before,
+	html[dir="ltr"] .cApiTree li.cApiTree_activeBranch > a:before {
+		content: '\f0da';
+		margin-right: 7px;
+	}
+	html[dir="rtl"] .cApiTree li.cApiTree_inactiveBranch > a:before,
+	html[dir="rtl"] .cApiTree li.cApiTree_activeBranch > a:before {
+		content: '\f0d9';
+		margin-left: 7px;
+	}
+
+	html[dir="ltr"] .cApiTree li.cApiTree_activeBranch > a:before,
+	html[dir="rtl"] .cApiTree li.cApiTree_activeBranch > a:before {
+		content: '\f0d7';
+	}
+
+.cApiTree li.cApiTree_inactiveBranch > ul {
+	display: none;
+}
+
+html[dir="ltr"] .cApiTree li a {
+	padding-left: 15px;
+}
+html[dir="rtl"] .cApiTree li a {
+	padding-right: 15px;
+}
+
+html[dir="ltr"] .cApiTree li li a {
+	padding-left: 30px;
+}
+html[dir="rtl"] .cApiTree li li a {
+	padding-right: 30px;
+}
+
+	html[dir="ltr"] .cApiTree li li li a {
+		padding-left: 45px;
+	}
+	html[dir="rtl"] .cApiTree li li li a {
+		padding-right: 45px;
+	}
+
+		html[dir="ltr"] .cApiTree li li li li a {
+			padding-left: 70px;
+		}
+		html[dir="rtl"] .cApiTree li li li li a {
+			padding-right: 70px;
+		}
+
+.cApiTree li.cApiTree_activeNode > a {
+	background: #748391;
+	color: #fff;
+}
+
+.cApiTree li:not( .cApiTree_activeNode ) > a:hover {
+	background: #fafafa;
+}
+
+.cApiPermissions_header h2 {
+	display: inline-block;
+}
+
+	html[dir="ltr"] .cApiPermissions_header h2 {
+		margin-right: 15px;
+	}
+	html[dir="rtl"] .cApiPermissions_header h2 {
+		margin-left: 15px;
+	}
+
+html[dir="ltr"] .cApiPermissions {
+	margin: 10px 0 10px 20px;
+}
+html[dir="rtl"] .cApiPermissions {
+	margin: 10px 20px 10px 0;
+}
+
+	.cApiPermissions > li {
+		line-height: 1.6;
+		margin-top: 5px;
+		margin-bottom: 10px;
+	}
+
+	html[dir="ltr"] .cApiPermissions ul {
+		margin-left: 20px;
+	}
+	html[dir="rtl"] .cApiPermissions ul {
+		margin-right: 20px;
+	}
+
+		.cApiPermissions h3 ~ ul > li {
+			margin: 5px 0;
+		}
+
+	.cApiPermissions h3 {
+		font-size: 14px;
+		display: inline-block;
+	}
+		html[dir="ltr"] .cApiPermissions h3 {
+			margin: 0 15px 0 0;
+		}
+		html[dir="rtl"] .cApiPermissions h3 {
+			margin: 0 0 0 15px;
+		}
+
+	.cApiPermissions h3:before {
+		font-family: "FontAwesome";
+	}
+
+	.cApiPermissions_closed h3:before {
+		content: '\f0da';
+	}
+
+		.cApiPermissions_closed ul {
+			display: none;
+		}
+
+	.cApiPermissions_open h3:before {
+		content: '\f0d7';
+		margin-right: 5px;
+	}
+
+	html[dir="ltr"] .cApiPermissions_closed h3:before,
+	html[dir="ltr"] .cApiPermissions_open h3:before {
+		margin-right: 5px;
+	}
+	html[dir="rtl"] .cApiPermissions_closed h3:before,
+	html[dir="rtl"] .cApiPermissions_open h3:before {
+		margin-left: 5px;
+	}
+
+	.cApiPermissions .ipsCustomInput {
+		top: -2px;
+	}
+
+	html[dir="ltr"] .cApiPermissions [data-role="endpointOverview"] {
+		margin-right: 15px;
+	}
+	html[dir="rtl"] .cApiPermissions [data-role="endpointOverview"] {
+		margin-left: 15px;
+	}
+
+.cApiPermissions [data-role="massToggle"],
+.cApiPermissions_header [data-role="massToggle"] {
+	display: none;
+}
+
+.cApiPermissions_header:hover [data-role="massToggle"],
+.cApiPermissions > li:hover [data-role="massToggle"] {
+	display: inline-block;
+}

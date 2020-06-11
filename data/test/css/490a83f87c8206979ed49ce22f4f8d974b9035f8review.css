@@ -1,0 +1,82 @@
+/* review */
+#review {
+	padding-top: 10px;
+	width: 780px;
+	margin-left: 10px;
+}
+
+#review .a {
+	clear: both;
+}
+
+#review .b {
+	float: left;
+	margin-bottom: 5px;
+}
+
+#review .b a {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#review .c {
+	float: right;
+	text-align: right;
+	margin-bottom: 5px;
+}
+
+#review table {
+	width: 780px;
+	margin-bottom: 10px;
+	clear: both;
+}
+
+.review table td {
+	vertical-align: top;
+}
+
+/* review info */
+#review_info{
+	width: 780px;
+	margin-left: 10px;
+}
+#review_info .a {
+	float: right;
+	margin: 10px;
+	font-size: 10px;
+	text-align: center;
+	cursor: pointer;
+}
+
+/* review write */
+#review_write {
+	margin-left: 10px;
+	padding-top: 50px;
+}
+#review_write .a {
+	float: right;
+	margin: 10px;
+	font-size: 10px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#review_write .e .bad {
+	color: #C1002B;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+#review_write .e .good {
+	color: #339900;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+#review_write .d {
+	margin-bottom: 10px;
+}
+
+#review_write .d span {
+	font-weight: bold;
+}

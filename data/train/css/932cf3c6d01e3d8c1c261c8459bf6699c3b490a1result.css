@@ -1,0 +1,136 @@
+
+.headerinformation{
+	width: 90%;
+	margin:auto;
+	margin-top: 10px;
+}
+
+.hostResultontainer, .articleContainer {
+    
+    margin-top: 10px;   
+    padding: 3px;
+    vertical-align: top;    
+    display : inline-block;
+}
+
+.hostContent{
+ 	overflow: hidden;
+	height: 240px;
+	background-color: #F9F9F9;
+	border: 3px solid #F9F9F9;
+}
+
+.popUp{
+	overflow : inherit !important;	
+	height: inherit !important;		
+}
+
+.hostResultontainer-more{
+	font-style: italic;
+	font-size:14px;
+	cursor:pointer;
+	width: 170px;
+}
+
+.hostResultontainer .footer{
+	border-top : 1px solid black;
+}
+
+.resultcontainer{
+	width: 250px;
+	display: inline-block;
+	vertical-align:top;
+}
+
+.resultcontainer:hover{ 	
+    	overflow: scroll;    	
+}
+
+
+.resultcontainertitle a {
+	color : #1E0FBE;
+	text-decoration : none;
+	font-size:16px;
+}
+
+.resultcontainertitle a:hover{	
+	text-decoration : underline !important;
+}
+
+
+.resultcontainerlink{
+	color : #006621;
+}
+
+.resultcontainerhightlight{
+	font-style : italic;
+	font-size : 14px;
+}
+
+
+#loadMore{
+	cursor:pointer;
+	margin-left: 23px;
+	margin-top: 10px;
+}
+
+
+
+#loadMoreContainer{
+	display: inline-block;
+}
+
+.resultcontainecustomrelevance{
+	color : green;
+}
+
+
+.resultcontainerhost {
+	font-size: 15px;
+}
+
+.resultcontainerdate {
+	font-size: 15px;
+}
+
+.resultcontaineraction .recommend{
+	cursor : pointer;
+	font-size : 14px;
+}
+
+.resultcontainerscore{
+	font-size : 11px;
+}
+
+
+.ui-widget-content{
+	background-color : white !important;
+}
+
+
+
+.results{
+	width:90%;
+	margin: auto;
+}
+
+.loadMore{
+	height:240px;
+	width:250px;
+}
+
+.loadMore_plus{
+	background-image :  url('/assets/plus.png');
+	background-repeat : no-repeat;
+}
+
+.loadMore_loading{
+	background-image :  url('/assets/loading.gif');
+	background-repeat : no-repeat;
+	background-position: 45px 60px;
+}
+
+.ui-widget-header{
+background: inherit;	
+color : #b7a600;
+	}

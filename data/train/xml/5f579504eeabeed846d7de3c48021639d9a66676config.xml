@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magja_Catalog>
+            <version>0.0.2</version>
+            <depends>
+                <Mage_Catalog />
+                <Mage_CatalogInventory />
+            </depends>
+        </Magja_Catalog>
+    </modules>
+    <global>
+        <models>
+            <catalog>
+                <rewrite>
+                    <product_attribute_api>Magja_Catalog_Model_Product_Attribute_Api</product_attribute_api>
+                    <product_attribute_media_api>Magja_Catalog_Model_Product_Attribute_Media_Api</product_attribute_media_api>
+                    <product_api>Magja_Catalog_Model_Product_Api</product_api>     
+                    <category_api>Magja_Catalog_Model_Category_Api</category_api>
+                </rewrite>
+            </catalog>
+         	<cataloginventory>
+                <rewrite>
+                	<stock_item_api>Magja_Catalog_Model_CatalogInventory_Api</stock_item_api>
+                </rewrite>
+            </cataloginventory>
+            <sales>
+            	<rewrite>
+            		<order_api>Magja_Catalog_Model_Sales_Order_Api</order_api>
+            	</rewrite>
+            </sales>
+        </models>
+    </global>
+</config>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <service_name>Livestream</service_name>
+  <service_bbcode>livestream</service_bbcode>
+  <service_regex><![CDATA[https?://www\.livestream\.[\w]+/(?P<sval1>[\w-]+)]]></service_regex>
+  <service_url><![CDATA[http://www.livestream.com/{serviceVAL1}]]></service_url>
+  <service_callback>EWRrio_Services_Livestream</service_callback>
+  <service_channel>dumpChannel</service_channel>
+  <service_streams>dumpStreams</service_streams>
+  <service_video><![CDATA[<iframe width="100%" height="100%" scrolling="no" frameborder="0" src="http://cdn.livestream.com/embed/{serviceVAL1}?layout=4&autoPlay=true"></iframe>]]></service_video>
+  <service_chat><![CDATA[<iframe width="100%" height="100%" scrolling="no" frameborder="0" src="http://cdn.livestream.com/embed/{serviceVAL1}?layout=6"></iframe>]]></service_chat>
+</service>

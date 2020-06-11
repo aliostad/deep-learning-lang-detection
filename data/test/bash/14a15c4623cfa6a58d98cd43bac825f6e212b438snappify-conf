@@ -1,0 +1,46 @@
+#!/bin/bash
+#
+# snappify snapshot management suite
+# http://bueller.ca/software/snappify
+#
+# Copyright (c) 2013 Matt Ferris
+# Released under the BSD 2-clause license
+# http://bueller.ca/software/snappify/license
+
+# usage: snappify-conf repo [ option [ value ] ]
+
+repo=$1
+option=$2
+value=$3
+me=`basename "$0"`
+
+if [ -z $repo ]; then
+    echo usage: $me repo [ option [ value ] ]
+    exit 1
+fi
+
+if [ ! -d "$repo" ]; then
+    echo error: repository doesn\'t exist, \"$repo\"
+    exit 1
+fi
+
+if [ ! -d "$repo/conf" ]; then
+    echo error: bad repository, \"$repo/conf\" doesn\'t exist
+    exit 1
+fi
+
+if [ ! -z $option ]; then
+    if [ ! -z $value ]; then
+        if [ "$value" = "-" ]; then
+            rm "$repo/conf/$option"
+        else
+            echo $value > "$repo/conf/$option"
+        fi
+    elif [ -f "$repo/conf/$option" ]; then
+        echo $option = `cat "$repo/conf/$option"`
+    fi
+else
+    for i in `ls -1 "$repo/conf"`; do
+        echo $i = `cat "$repo/conf/$i"`
+    done
+fi

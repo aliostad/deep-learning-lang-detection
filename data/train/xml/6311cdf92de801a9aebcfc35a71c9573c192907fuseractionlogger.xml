@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+  <binding fileName="modules/useractionlogger/persistentdocument/import/useractionlogger_binding.xml"/>
+  <actiondef modulename="mapping" actionname="insert.mapping" label="modules.mapping.bo.useractionlogger.insert-mapping"/>
+  <actiondef modulename="mapping" actionname="delete.circarea" label="modules.mapping.bo.useractionlogger.delete-circarea"/>
+  <actiondef modulename="mapping" actionname="update.rectarea" label="modules.mapping.bo.useractionlogger.update-rectarea"/>
+  <actiondef modulename="mapping" actionname="activate.mapping" label="modules.mapping.bo.useractionlogger.activate-mapping"/>
+  <actiondef modulename="mapping" actionname="update.circarea" label="modules.mapping.bo.useractionlogger.update-circarea"/>
+  <actiondef modulename="mapping" actionname="insert.folder" label="modules.mapping.bo.useractionlogger.insert-folder"/>
+  <actiondef modulename="mapping" actionname="update.folder" label="modules.mapping.bo.useractionlogger.update-folder"/>
+  <actiondef modulename="mapping" actionname="delete.folder" label="modules.mapping.bo.useractionlogger.delete-folder"/>
+  <actiondef modulename="mapping" actionname="deactivated.mapping" label="modules.mapping.bo.useractionlogger.deactivated-mapping"/>
+  <actiondef modulename="mapping" actionname="reactivate.mapping" label="modules.mapping.bo.useractionlogger.reactivate-mapping"/>
+  <actiondef modulename="mapping" actionname="delete.mapping" label="modules.mapping.bo.useractionlogger.delete-mapping"/>
+  <actiondef modulename="mapping" actionname="update.polyarea" label="modules.mapping.bo.useractionlogger.update-polyarea"/>
+  <actiondef modulename="mapping" actionname="activate.circarea" label="modules.mapping.bo.useractionlogger.activate-circarea"/>
+  <actiondef modulename="mapping" actionname="update.mapping" label="modules.mapping.bo.useractionlogger.update-mapping"/>
+</script>

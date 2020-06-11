@@ -1,0 +1,82 @@
+body {
+    padding-top: 0px;
+    padding-bottom: 40px;
+    position: relative;
+}
+.starter-template {
+    padding: 40px 15px;
+    text-align: left;
+    overflow: auto; 
+    top: 50px;
+}
+
+/* affix when in top position*/
+.affix-top {
+    position: relative;
+}
+
+/* place affix when not in top position*/
+.affix {
+    /* give it a little space */
+    top: 30px;
+}
+
+.affix, .affix-top,
+.affix-bottom {
+    width: 213px;
+}
+
+.affix-bottom {
+    position: absolute;
+}
+
+/* style for the nav */
+.nav a {
+    color: black;
+}
+
+.nav li a:hover,
+.nav li a:focus {
+    background: lightBlue
+}
+
+.nav .active {
+    font-weight: bold;
+}
+
+.nav .nav {
+    display: none;
+}
+
+.nav .active .nav {
+    display: block;
+}
+
+.nav .nav a {
+    font-weight: normal;
+    font-size: .85em;
+    padding-left: 30px;
+}
+
+.nav .nav .active a,
+.nav .nav .active:hover a,
+.nav .nav .active:focus a {
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.nav .nav .active span,
+.nav .nav .active:hover span,
+.nav .nav .active:focus span {
+    display: none;
+}
+
+footer {
+    border-top: 1px solid #c1e1ec;
+    height: 50px;
+}
+
+footer p {
+    line-height: 50px;
+    margin-bottom: 0;
+}

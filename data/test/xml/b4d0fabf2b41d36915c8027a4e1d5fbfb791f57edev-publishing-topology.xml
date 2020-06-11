@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE publishing-deployment-topology SYSTEM "http://www.atg.com/dtds/publishing_deployment/publishing_deployment_1.0.dtd">
+<publishing-deployment-topology>
+
+	<target>
+		<target-name>Production</target-name>
+		<description>The Production Site</description>
+		
+		<agent>
+			<agent-name>dev-store</agent-name>
+			<include-asset-destination>/atg/epub/file/ConfigFileSystem</include-asset-destination>
+			<include-asset-destination>/atg/epub/file/WWWFileSystem</include-asset-destination>
+			<transport>
+				<transport-type>RMI</transport-type>
+				<rmi-uri>
+					rmi://127.0.0.1:10060/atg/epub/AgentTransport
+				</rmi-uri>
+			</transport>
+		</agent>
+
+		<repository-mapping>
+			<source-repository>/atg/commerce/catalog/ProductCatalog</source-repository>
+				<destination-repository>
+					/atg/commerce/catalog/ProductCatalog_production
+			</destination-repository>
+		</repository-mapping>
+		
+		<repository-mapping>
+			<source-repository>/atg/commerce/claimable/ClaimableRepository</source-repository>
+				<destination-repository>
+					/atg/commerce/claimable/ClaimableRepository_production
+			</destination-repository>
+		</repository-mapping>
+		
+		<repository-mapping>
+			<source-repository>/atg/commerce/pricing/priceLists/PriceLists</source-repository>
+				<destination-repository>
+					/atg/commerce/pricing/priceLists/PriceLists_production
+			</destination-repository>
+		</repository-mapping>
+		
+		<repository-mapping>
+			<source-repository>/atg/multisite/SiteRepository</source-repository>
+				<destination-repository>
+					/atg/multisite/SiteRepository_production
+			</destination-repository>
+		</repository-mapping>
+		
+		<repository-mapping>
+			<source-repository>/atg/seo/SEORepository</source-repository>
+				<destination-repository>
+					/atg/seo/SEORepository_production
+			</destination-repository>
+		</repository-mapping>
+		
+  		<repository-mapping>
+  			<source-repository>/atg/store/stores/StoreRepository</source-repository>
+  				<destination-repository>
+  					/atg/store/stores/StoreRepository_production
+  			</destination-repository>
+  		</repository-mapping>
+
+  		<repository-mapping>
+  			<source-repository>/atg/userprofiling/PersonalizationRepository</source-repository>
+  				<destination-repository>
+  					/atg/userprofiling/PersonalizationRepository_production
+  			</destination-repository>
+  		</repository-mapping>
+
+	</target>
+
+</publishing-deployment-topology>

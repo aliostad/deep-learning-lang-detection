@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<component format="1" id="websocket4net">
+  <name>WebSocket4Net</name>
+  <publisher>Kerry Jiang</publisher>
+  <publisher-url>https://websocket4net.codeplex.com/</publisher-url>
+  <version>0.13</version>
+  <summary>WebSocket4Net is a websocket protocol client written in C#</summary>
+  <samples>
+    <sample id="Sample.iOSUnifiedTest">
+      <name>iOS Unified Sample</name>
+      <summary>iOS Unified Sample</summary>
+    </sample>
+    <sample id="Sample.AndroidTest">
+      <name>Android Sample</name>
+      <summary>Android Sample</summary>
+    </sample>
+    <sample id="Sample.iOSTest">
+      <name>iOS Sample</name>
+      <summary>iOS Sample</summary>
+    </sample>
+    <sample id="Sample.WindowsPhone8">
+      <name>WindowsPhone 8 Sample</name>
+      <summary>WindowsPhone 8 Sample</summary>
+    </sample>
+  </samples>
+</component>

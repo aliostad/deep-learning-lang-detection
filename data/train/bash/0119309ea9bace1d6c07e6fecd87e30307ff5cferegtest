@@ -1,0 +1,75 @@
+#!/bin/bash
+
+CONTAINED=0
+DYNAMIC=0
+PROCESS=0
+
+ROOT=foo
+
+while [ x"$1" != x ]; do
+  case $1 in
+  -1)
+    DYNAMIC=1
+    shift
+    continue;;
+
+  -2)
+    DYNAMIC=1
+    PROCESS=1
+    shift
+    continue;;
+
+  -3)
+    DYNAMIC=1
+    PROCESS=1
+    CONTAINED=1
+    shift
+    continue;;
+
+  -c)
+    CONTAINED=1
+    shift
+    continue;;
+
+  -d)
+    DYNAMIC=1
+    shift
+    continue;;
+
+  *)
+    shift
+    continue;;
+  esac
+done
+
+if [ $CONTAINED = 0 -a $DYNAMIC = 0 -a $PROCESS = 0 ]; then
+  DYNAMIC=1
+  PROCESS=1
+fi
+
+echo " "
+echo "dynamic=$DYNAMIC process=$PROCESS contained=$CONTAINED"
+
+if [ x$DYNAMIC = x1 ]; then
+  echo "dynamic ..."
+  export REGIONS_PTYPE=d
+  date
+  ./regtests $* >${ROOT}.dy$X 2>&1
+fi
+
+if [ x$PROCESS = x1 ]; then
+  echo "process ..."
+  export REGIONS_PTYPE=p
+  date
+  ./regtests $* >${ROOT}.pr$X 2>&1
+fi
+
+if [ x$CONTAINED = x1 ]; then
+  echo "contained ..."
+  export REGIONS_PTYPE=c
+  date
+  ./regtests $* >${ROOT}.co$X 2>&1
+fi
+
+echo "done"
+date

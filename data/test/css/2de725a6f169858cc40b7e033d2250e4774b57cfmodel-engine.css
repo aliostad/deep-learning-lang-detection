@@ -1,0 +1,55 @@
+aside.left{margin:0px;padding:0px;}
+h3.title{background-color:#eeeeee;}
+.model-form{
+    background-color:#ffffff;
+}
+.model-form form{padding:0px;margin:0px;}
+.model-form .body{
+    padding-right:80px;
+}
+.model-form .controls .file{float:left;margin-right:10px;}
+.model-form .controls .progress{width:100%;clear:both;margin:5px 0px 0px 0px;}
+.model-form .controls div .input-prepend, .model-form .controls div .input-append{
+    margin-left:20px;
+}
+.model-form .controls div:first-child .input-prepend, .model-form .controls div:first-child .input-append{
+    margin-left:0px;
+}
+.model-form header h3{
+    font-size:14px;
+    line-height:300%;
+    font-weight:bold;
+    text-align:center;
+    min-height:15px;
+}
+.model-form header button.close{
+    font-size:28px;
+    padding:5px;
+    position: absolute;
+    top:0px;
+    right:0px;
+}
+
+.model-form footer.form-actions{
+    margin-bottom:0px;
+}
+.model-form footer button{
+    margin: 0px 5px 0px 5px;
+}
+.model-ctrl{float:right;}
+ul.mode-list li.active{background-color:#eeeeee;}
+
+.model-form label.error{
+    position: absolute;
+    z-index: 10000;
+    background-clip: padding-box;
+    background-color: #cc0000;
+    border: 1px solid #cccccc;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    color: #ffffff;
+    position: absolute;
+    text-align: left;
+    white-space: normal;
+}

@@ -1,0 +1,60 @@
+path.link {
+  fill: #A8A8A8;
+  stroke: #A8A8A8;
+  stroke-width: 1.5px;
+}
+
+path.link.external {
+	stroke-dasharray: 5;
+}
+
+.node {
+	cursor: move;
+	stroke: none;
+	stroke-width: 1.5px;
+}
+
+.node text {
+	fill: #000;
+}
+
+.node text.shadow {
+  stroke: #fff;
+  stroke-width: 3px;
+  stroke-opacity: .8;
+}
+
+.dim {
+	opacity: 0.2;
+}
+
+.modelNode.dim {
+	opacity: 1;
+}
+
+
+#stage svg {
+	overflow: hidden;
+}
+
+.hull {
+  stroke-width: 32px;
+  stroke-linejoin: round;
+}
+
+.modelNode .dropZoneRect {
+	display: none;
+	stroke: #C8C8C8;
+	stroke-dasharray: 10;
+	stroke-width: 3;
+}
+
+.modelNode.dropZone .dropZoneRect {
+	display: block;
+	fill: #C3FDB8;
+}
+
+.modelNode.dropZone.canDrop .dropZoneRect {
+	display: block;
+	fill: #50D050;
+}

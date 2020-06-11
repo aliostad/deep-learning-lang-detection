@@ -1,0 +1,95 @@
+/* Playing with CSS*/
+
+/* 
+ * Document Level Styling
+ */
+
+#container {
+	background:url('../img/background.png') no-repeat;
+	background-size:1280px 1007px;
+	overflow: hidden;
+}
+
+/*
+ * Body
+ */ 
+body {
+	max-width: 1280px;
+	margin: 0 auto;
+	background: white;
+}
+
+#content {
+	display:block;
+	margin: 0 auto;
+	max-width:75%;
+}
+
+/* 
+ * Masthead
+ */
+ .header {
+ 	display:block;
+ 	width:500px;
+	font-size:17em;
+	color:white;
+	margin-top:-20px;
+	margin-left: 10%;
+	text-transform: uppercase;
+	font-weight: 100;
+	
+ }
+
+.on_header {
+	letter-spacing: .08em;
+}
+.off_header{
+	margin-top:-90px;
+	letter-spacing: .025em;
+}
+
+ .vol_date {
+	float:right;
+	margin-top:115px;
+	margin-right:10%;
+	color:#b0aeb8;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 1em;
+ }
+
+/* 
+ * Relatives
+ */
+
+#relatives {
+	float:right;
+	width: 57.66%;
+	margin-top:-400px;
+	margin-left:1.6%;
+	margin-right:1;
+}
+
+#relatives img{
+	margin-left:-140px;
+}
+
+/* 
+ * Box Model
+ */
+
+#box_model {
+	display:block;
+	float:left;
+	width: 40.73%;
+	margin-top:-100px;
+}
+
+#box_model h2 p{
+	text-align: center;
+}
+
+#box_model img {
+	margin-left:-50px;
+}

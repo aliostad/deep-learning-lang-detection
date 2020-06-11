@@ -1,0 +1,49 @@
+.review_write_subheader {
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+input#review_write_thumbsup {
+	margin-bottom: 20px;
+}
+
+input#review_write_thumbsdown {
+	margin-bottom: 20px;
+	margin-left: 20px
+}
+
+textarea#review_write_comments {
+	width: 100%;
+}
+
+button.review_write_closingbutton {
+	float: right;
+}
+
+div#review_view_reviews {
+	overflow: auto;
+	height: 80%;
+}
+
+div#review_view_navigation {
+	margin-top: 30px;
+}
+
+button.login_link {
+	float: right;
+}
+
+label.login_label {
+	margin-top: 40px;
+	clear: both;
+}
+
+div#login_buttons {
+	float: right;
+	margin-top: 20px;
+	width: 100%;
+}
+
+input.login_text {
+	width: 100%;
+}

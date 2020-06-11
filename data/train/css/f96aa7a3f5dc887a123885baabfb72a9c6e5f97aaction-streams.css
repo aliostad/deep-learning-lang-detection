@@ -1,0 +1,91 @@
+.action-stream-header {
+    margin:  1em 0 .25em;
+}
+
+.action-stream-list {
+    margin-left: 0px;
+    padding-left: 5px;
+    list-style-type: none;
+}
+
+.action-stream-list li {
+    margin: 0 0 .5em;
+}
+
+.service-icon {
+    display: block;
+    overflow: hidden;
+    background: transparent url(../images/services/other.png) no-repeat;
+    padding-left: 20px;
+    min-height: 18px;
+    min-width: 16px;
+}
+
+.service-lastfm .album { display: none; }
+
+.service-website { background-image: url(../images/services/website.png); }
+
+.service-brightkite { background-image: url(../images/services/brightkite.png); }
+.service-backtype { background-image: url(../images/services/backtype.png); }
+.service-cocomment { background-image: url(../images/services/cocomment.png); }
+.service-oneup { background-image: url(../images/services/oneup.png); }
+.service-fortythreethings { background-image: url(../images/services/fortythreethings.png); }
+.service-aim { background-image: url(../images/services/aim.png); }
+.service-bebo { background-image: url(../images/services/bebo.png); }
+.service-catster { background-image: url(../images/services/catster.png); }
+/*.service-deadjournal { background-image: url(../images/services/deadjournal.png); }*/
+.service-delicious { background-image: url(../images/services/delicious.png); }
+.service-digg { background-image: url(../images/services/digg.png); }
+.service-dodgeball { background-image: url(../images/services/dodgeball.png); }
+.service-dogster { background-image: url(../images/services/dogster.png); }
+.service-dopplr { background-image: url(../images/services/dopplr.png); }
+.service-facebook { background-image: url(../images/services/facebook.png); }
+.service-flickr { background-image: url(../images/services/flickr.png); }
+.service-gametap { background-image: url(../images/services/gametap.png); }
+.service-getsatisfaction { background-image: url(../images/services/getsatisfaction.png); }
+.service-goodreads { background-image: url(../images/services/goodreads.png); }
+.service-googlereader { background-image: url(../images/services/googlereader.png); }
+.service-gtalk { background-image: url(../images/services/gtalk.png); }
+.service-github { background-image: url(../images/services/github.png); }
+.service-hi5 { background-image: url(../images/services/hi5.png); }
+.service-iconbuffet { background-image: url(../images/services/iconbuffet.png); }
+.service-icq { background-image: url(../images/services/icq.png); }
+.service-iusethis { background-image: url(../images/services/iusethis.png); }
+.service-jabber { background-image: url(../images/services/jabber.png); }
+.service-jaiku { background-image: url(../images/services/jaiku.png); }
+.service-lastfm { background-image: url(../images/services/lastfm.png); }
+.service-linkedin { background-image: url(../images/services/linkedin.png); }
+/*.service-livedoor { background-image: url(../images/services/livedoor.png); }*/
+.service-livejournal { background-image: url(../images/services/livejournal.png); }
+.service-magnolia { background-image: url(../images/services/magnolia.png); }
+.service-mog { background-image: url(../images/services/mog.png); }
+.service-msn { background-image: url(../images/services/msn.png); }
+.service-multiply { background-image: url(../images/services/multiply.png); }
+.service-myspace { background-image: url(../images/services/myspace.png); }
+.service-newsvine { background-image: url(../images/services/newsvine.png); }
+.service-ning { background-image: url(../images/services/ning.png); }
+.service-ohloh { background-image: url(../images/services/ohloh.png); }
+.service-orkut { background-image: url(../images/services/orkut.png); }
+.service-pandora { background-image: url(../images/services/pandora.png); }
+.service-pownce { background-image: url(../images/services/pownce.png); }
+.service-reddit { background-image: url(../images/services/reddit.png); }
+.service-skype { background-image: url(../images/services/skype.png); }
+.service-smugmug { background-image: url(../images/services/smugmug.png); }
+.service-sonicliving { background-image: url(../images/services/sonicliving.png); }
+.service-steam { background-image: url(../images/services/steam.png); }
+.service-stumbleupon { background-image: url(../images/services/stumbleupon.png); }
+.service-tabblo { background-image: url(../images/services/tabblo.png); }
+.service-technorati { background-image: url(../images/services/technorati.png); }
+.service-tribe { background-image: url(../images/services/tribe.png); }
+.service-twitter { background-image: url(../images/services/twitter.png); }
+.service-uncrate { background-image: url(../images/services/uncrate.png); }
+.service-upcoming { background-image: url(../images/services/upcoming.png); }
+.service-userscripts { background-image: url(../images/services/userscripts.png); }
+.service-virb { background-image: url(../images/services/virb.png); }
+.service-vox { background-image: url(../images/services/vox.png); }
+.service-xboxlive { background-image: url(../images/services/xboxlive.png); }
+.service-yahoo { background-image: url(../images/services/yahoo.png); }
+.service-youtube { background-image: url(../images/services/youtube.png); }
+.service-zooomr { background-image: url(../images/services/zooomr.png); }
+
+.action-stream-list .hentry abbr.published {display:none;}

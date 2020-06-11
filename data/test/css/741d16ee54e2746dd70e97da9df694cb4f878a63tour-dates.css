@@ -1,0 +1,301 @@
+/*@font-face {
+	font-family: 'WolfShowsFont';
+	src: url('fonts/wolf-shows-font.eot');
+	src: url('fonts/wolf-shows-font.eot?#iefix') format('rembedded-opentype'),
+		url('fonts/wolf-shows-font.svg#wolf-shows-font') format('svg'),
+		url('fonts/wolf-shows-font.woff') format('woff'),
+		url('fonts/wolf-shows-font.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}*/
+@font-face {
+  font-family: "WolfShowsFont";
+  src: url('../fonts/wolf-shows-font.eot');
+  src: url('../fonts/wolf-shows-font.eot?#iefix') format('eot'), url('../fonts/wolf-shows-font.eot?#iefix') format('embedded-opentype'), url('../fonts/wolf-shows-font.svg#wolf-shows-font') format('svg'), url('../fonts/wolf-shows-font.woff') format('woff'), url('../fonts/wolf-shows-font.ttf') format('truetype');
+  font-weight: "normal";
+  font-style: "normal";
+}
+
+.wolf-show-icons .wolf-show-facebook:before,
+.wolf-show-icons .wolf-show-flyer:before,
+.wolf-show-linked .wolf-show-entry-link:before {
+  font-family: 'WolfShowsFont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wolf-show-icons .wolf-show-facebook:before {
+  content: "\e600";
+  color: #3b5997;
+}
+
+/*.icon-google-plus:before {
+	content: "\e601";
+}
+.icon-google:before {
+	content: "\e602";
+}*/
+.wolf-show-icons .wolf-show-flyer:before {
+  content: "\e603";
+}
+
+.wolf-show-linked .wolf-show-entry-link:before {
+  margin-right: 8px;
+  content: "\e00c";
+}
+
+/* Table
+------------------------------------------*/
+.wolf-tour-dates table {
+  margin-bottom: 4rem;
+  width: 100%;
+  border: none;
+}
+.wolf-tour-dates table a {
+  text-decoration: none;
+}
+
+.wolf-tour-dates table tr td {
+  vertical-align: middle;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  text-align: left;
+  border-left: none;
+  border-right: none;
+}
+
+.wolf-show-cancelled .wolf-show-entry-link, .wolf-show-cancelled .wolf-show-venue, .wolf-show-cancelled .wolf-show-image:before {
+  text-decoration: line-through;
+}
+.wolf-show-cancelled.cancelled {
+  text-decoration: none !important;
+}
+
+.wolf-show-action {
+  text-align: right !important;
+}
+
+.wolf-show-date {
+  width: 80px;
+}
+
+.wolf-custom-show-date .wolf-show-day,
+.wolf-custom-show-date .wolf-show-month,
+.wolf-custom-show-date .wolf-show-year {
+  display: block;
+  width: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-align: left;
+}
+
+.wolf-custom-show-date .wolf-show-day {
+  font-size: 28px;
+  line-height: 27px;
+}
+
+.wolf-custom-show-date .wolf-show-month {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.wolf-custom-show-date .wolf-show-year {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.wolf-show-icons .wolf-show-flyer,
+.wolf-show-icons .wolf-show-facebook {
+  display: inline-block;
+  margin: 0 3px;
+  width: 16px;
+  height: 16px;
+}
+
+.wolf-show-actions {
+  margin-top: 0.5rem;
+  zoom: 1;
+}
+.wolf-show-actions:before, .wolf-show-actions:after {
+  content: "";
+  display: table;
+}
+.wolf-show-actions:after {
+  clear: both;
+}
+
+.wolf-show-label {
+  width: 100%;
+  display: block;
+  zoom: 1;
+}
+.wolf-show-label:before, .wolf-show-label:after {
+  content: "";
+  display: table;
+}
+.wolf-show-label:after {
+  clear: both;
+}
+.wolf-show-label.cancelled {
+  text-decoration: none !important;
+  font-style: normal !important;
+  color: grey;
+}
+.wolf-show-label.sold-out {
+  color: red;
+}
+
+/* Single Show
+------------------------------------------*/
+.single-show article.wolf-show {
+  zoom: 1;
+  margin-top: 0 !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+.single-show article.wolf-show:before, .single-show article.wolf-show:after {
+  content: "";
+  display: table;
+}
+.single-show article.wolf-show:after {
+  clear: both;
+}
+
+#wolf-single-show {
+  zoom: 1;
+}
+#wolf-single-show:before, #wolf-single-show:after {
+  content: "";
+  display: table;
+}
+#wolf-single-show:after {
+  clear: both;
+}
+
+#wolf-show-meta {
+  float: left;
+  margin-right: 1%;
+  width: 32%;
+}
+#wolf-show-meta .entry-thumbnail {
+  margin-bottom: 1rem;
+}
+#wolf-show-meta img {
+  max-width: 100%;
+}
+#wolf-show-meta .wolf-single-show-date {
+  font-size: 24px;
+  font-weight: 700;
+}
+#wolf-show-meta .wolf-custom-show-date {
+  zoom: 1;
+}
+#wolf-show-meta .wolf-custom-show-date:before, #wolf-show-meta .wolf-custom-show-date:after {
+  content: "";
+  display: table;
+}
+#wolf-show-meta .wolf-custom-show-date:after {
+  clear: both;
+}
+#wolf-show-meta .wolf-custom-show-date .wolf-show-day, #wolf-show-meta .wolf-custom-show-date .wolf-show-month, #wolf-show-meta .wolf-custom-show-date .wolf-show-year {
+  display: inline;
+  font-size: 24px;
+}
+
+#wolf-show-content {
+  float: right;
+  margin-left: 1%;
+  width: 66%;
+  margin-bottom: 3rem;
+}
+#wolf-show-content iframe {
+  max-width: 100%;
+}
+
+#wolf-show-details {
+  margin-bottom: 1rem;
+}
+#wolf-show-details .wolf-show-details-title {
+  margin-top: 0;
+}
+
+.wolf-show-place {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* Widget */
+.widget_upcoming_shows .wolf-show-year {
+  display: none;
+}
+.widget_upcoming_shows .wolf-show-ticket-text {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.widget_upcoming_shows .wolf-show-date {
+  width: 50px;
+}
+.widget_upcoming_shows table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: none;
+}
+.widget_upcoming_shows table tr td {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  vertical-align: middle;
+  border-left: none;
+  border-right: none;
+}
+.widget_upcoming_shows table tr td.wolf-show-infos {
+  line-height: 1.5;
+}
+
+.wolf-show-mobile-show {
+  display: none;
+}
+
+@media screen and (max-width: 1030px) {
+  .wolf-show-mobile-show {
+    display: block;
+  }
+
+  .wolf-show-mobile-hide {
+    display: none;
+  }
+}
+@media screen and (max-width: 799px) {
+  #wolf-show-meta,
+  #wolf-show-content {
+    zoom: 1;
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  #wolf-show-meta:before, #wolf-show-meta:after,
+  #wolf-show-content:before,
+  #wolf-show-content:after {
+    content: "";
+    display: table;
+  }
+  #wolf-show-meta:after,
+  #wolf-show-content:after {
+    clear: both;
+  }
+}
+@media screen and (max-width: 600px) {
+  .wolf-show-icons,
+  .wolf-show-entry-link:before {
+    display: none;
+  }
+}

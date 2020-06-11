@@ -1,0 +1,72 @@
+#!/bin/bash
+#
+# Polls the load average and runs a command when the load exceeds some threshold.
+
+usage() {
+	echo "$0 [-q(uiet)] [-b(reak)] [-d(ate)] [-n <seconds>] [-l <load>] <command>" >&2
+	echo "  Polls the load average and runs a command when the load exceeds some threshold." >&2
+	exit 1
+}
+
+nproc() {
+	read X Y N < <(grep processor /proc/cpuinfo | tail -n1)
+	echo $(( N+1 ))
+}
+
+load() {
+	read L REST < /proc/loadavg
+	echo $L
+}
+
+QUIET=0
+SEC=10
+LOAD=$(nproc)
+BREAK=0
+DATE=0
+while getopts :qn:l:bd OPTION
+do
+	case $OPTION in
+		d)
+			DATE=1
+		;;
+		b)
+			BREAK=1
+		;;
+		q)
+			QUIET=1
+		;;
+		n)
+			SEC=$OPTARG
+		;;
+		l)
+			if [[ ${OPTARG:0:1} == "+" ]]; then
+				LOAD=$(( LOAD + ${OPTARG:1} ))
+			else
+				LOAD=$OPTARG
+			fi
+		;;
+		?)
+			usage
+		;;
+	esac
+done
+shift $(( $OPTIND-1 ))
+[[ -z "$1" ]] && usage
+[[ $QUIET == 1 ]] || echo -e "SECONDS: $SEC   LOAD: $LOAD   EXEC $@"
+
+while [ 1 ] ; do
+	L=$(load)
+	L=${L%.*}
+	if (( $L >= $LOAD )) ; then
+		echo
+		[[ $DATE == 1 ]] && date
+		$*
+		[[ $BREAK == 1 ]] && break
+	else
+		[[ $QUIET == 1 ]] || echo -n "."
+	fi
+	sleep $SEC || break
+done
+
+
+

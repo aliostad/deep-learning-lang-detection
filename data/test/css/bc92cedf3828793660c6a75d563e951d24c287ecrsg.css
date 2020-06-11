@@ -1,0 +1,41 @@
+p.bible {
+    background-image: url(bible.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    font-weight: bold;
+    font-size: 14px;
+    min-height: 66px;
+    padding-left: 80px;
+}
+
+p.note {
+    font-size: 9px;
+}
+
+div.write {
+    background-image: url(write.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    min-height: 80px;
+    font-style: italic;
+    padding-left: 80px;
+}
+
+div.write p:after {
+    content: "\
+. . . . . . . . . . . . . . . . . . . . . . \
+. . . . . . . . . . . . . . . . . . . . . \
+. . . . . . . . . . . . . . . . . . . . . . \
+. . . . . . . . . . . . . . . . . . . .\A \
+. . . . . . . . . . . . . . . . . . . . . . \
+. . . . . . . . . . . . . . . . . . . . . \
+. . . . . . . . . . . . . . . . . . . . . . \
+. . . . . . . . . . . . . . . . . . . .\A \
+. . . . . . . . . . . . . . . . . . . . . . \
+. . . . . . . . . . . . . . . . . . . . . \
+. . . . . . . . . . . . . . . . . . . . . . \
+. . . . . . . . . . . . . . . . . . . . ";
+    display: block;
+    text-align: left;
+    line-height: 200%;
+}

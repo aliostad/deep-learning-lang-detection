@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xd.zijing.mapper.MessageMapper">
+
+	<select id="count" resultType="int">
+		SELECT
+			count(1)
+		FROM
+			message
+	</select>
+	
+	<select id="findAll" parameterType="int" resultType="Message">
+		SELECT 
+			messageId,userId,messageContent,messageTime,replyMessage 
+		FROM message
+		ORDER BY messageId
+		LIMIT #{offset}, #{size}
+	</select>
+
+	<delete id="delete" parameterType="int">
+		delete from message where messageId = #{messageId}
+	</delete>
+
+	<select id="findById" parameterType="int" resultType="Message">
+		SELECT 
+			messageId,userId,messageContent,messageTime,replyMessage
+		FROM message
+		WHERE messageId = ${messageId}
+	</select>
+
+	<update id="reply" parameterType="Message">
+		update message set replyMessage = '${replyMessage}'
+		where messageId = #{messageId} 
+	</update>
+
+	<insert id="insert" parameterType="Message" keyProperty="messageId">
+		insert into message(userId,messageContent,messageTime) 
+		values(#{userId},#{messageContent},now())
+	</insert>
+
+</mapper>

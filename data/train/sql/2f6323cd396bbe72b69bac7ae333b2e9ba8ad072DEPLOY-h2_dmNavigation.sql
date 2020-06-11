@@ -1,0 +1,21 @@
+CREATE TABLE dmNavigation(
+datetimelastupdated datetime NOT NULL DEFAULT '2214-04-16 04:59:52' ,
+lockedBy varchar(250) NULL DEFAULT NULL ,
+lastupdatedby varchar(250) NOT NULL DEFAULT '' ,
+fu varchar(250) NULL DEFAULT NULL ,
+createdby varchar(250) NOT NULL DEFAULT '' ,
+options varchar(250) NULL DEFAULT NULL ,
+internalRedirectID varchar(50) NULL DEFAULT NULL ,
+datetimecreated datetime NOT NULL DEFAULT '2214-04-16 04:59:52' ,
+locked tinyint(1) NOT NULL DEFAULT 0 ,
+status varchar(250) NOT NULL DEFAULT 'draft' ,
+ExternalLink varchar(50) NULL DEFAULT NULL ,
+ObjectID varchar(50) NOT NULL DEFAULT '' ,
+target varchar(250) NULL DEFAULT NULL ,
+navType varchar(250) NOT NULL DEFAULT 'aObjectIDs' ,
+lNavIDAlias varchar(250) NULL DEFAULT NULL ,
+label varchar(250) NULL DEFAULT NULL ,
+title varchar(250) NULL DEFAULT NULL ,
+externalRedirectURL varchar(250) NULL DEFAULT NULL ,
+ownedby varchar(250) NULL DEFAULT NULL 
+);

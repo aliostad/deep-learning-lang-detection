@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<dataSchema>
+  <ArchaeologicalElement name="Tabgroup">
+    <description/>
+    <property name="Input 3" isIdentifier="true" type="measure">
+      <description/>
+      <formatString><![CDATA[  $3 ]]></formatString>
+      <appendCharacterString><![CDATA[  -  ]]></appendCharacterString>
+    </property>
+    <property name="Input 2" isIdentifier="true" type="measure">
+      <description/>
+      <formatString><![CDATA[$2]]></formatString>
+      <appendCharacterString><![CDATA[-]]></appendCharacterString>
+    </property>
+    <property name="Dummy" isIdentifier="true" type="measure">
+      <description/>
+      <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+      <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+    </property>
+    <property name="Input 1" isIdentifier="true" type="measure">
+      <description/>
+      <formatString><![CDATA[$1]]></formatString>
+      <appendCharacterString><![CDATA[-]]></appendCharacterString>
+    </property>
+  </ArchaeologicalElement>
+</dataSchema>

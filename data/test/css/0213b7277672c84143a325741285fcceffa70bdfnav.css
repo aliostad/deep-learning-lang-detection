@@ -1,0 +1,146 @@
+/*
+ * Nav
+ * Simple OOCSS module for navigation
+ * http://jxnblk.github.io/nav
+ *
+ * Use this for basic navigation, menus, pills, tabs, segmented controls,
+ * navbars, pagination, breadcrumbs, or any other group of links.
+ *
+ * */
+.nav {
+  line-height: 2.5rem; }
+  .nav > a,
+  .nav .nav-item {
+    display: block;
+    line-height: inherit;
+    white-space: nowrap; }
+  .nav > a {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem; }
+
+.mobile-nav-table {
+  display: table; }
+  .mobile-nav-table > a,
+  .mobile-nav-table .nav-item {
+    display: table-cell;
+    vertical-align: middle; }
+
+@media (min-width: 32em) {
+  .nav-table {
+    display: table; }
+    .nav-table > a,
+    .nav-table .nav-item {
+      display: table-cell;
+      vertical-align: middle; } }
+.nav-table-fixed {
+  table-layout: fixed; }
+
+.nav-item-padding {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem; }
+
+.nav-float {
+  line-height: 2.5rem; }
+  .nav-float > a,
+  .nav-float .nav-item {
+    display: block;
+    line-height: inherit;
+    white-space: nowrap; }
+  .nav-float > a {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem; }
+
+@media (min-width: 32em) {
+  .nav-float:before, .nav-float:after {
+    content: '';
+    display: table; }
+  .nav-float:after {
+    clear: both; }
+  .nav-float > a,
+  .nav-float .nav-item {
+    float: left; } }
+.nav-big {
+  line-height: 3rem; }
+
+.nav-small {
+  line-height: 2rem; }
+
+.nav-scroll-x {
+  overflow-x: scroll; }
+
+.nav-flush {
+  margin-right: -0.75rem;
+  margin-left: -0.75rem; }
+
+.nav-dark > a {
+  color: white; }
+  .nav-dark > a:hover, .nav-dark > a:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25); }
+.nav-dark .active {
+  background-color: rgba(0, 0, 0, 0.375); }
+
+.nav-light > a {
+  color: #333333; }
+  .nav-light > a:hover, .nav-light > a:focus {
+    color: #333333;
+    background-color: rgba(0, 0, 0, 0.125); }
+.nav-light .active {
+  background-color: rgba(0, 0, 0, 0.25); }
+
+.nav-borders {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.25); }
+  .nav-borders > a {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgba(0, 0, 0, 0.25); }
+    .nav-borders > a:first-child {
+      border-top: 0; }
+  .nav-borders .active {
+    color: #333333; }
+
+.nav-pills > a {
+  border-radius: 0.25rem; }
+  .nav-pills > a:hover, .nav-pills > a:focus {
+    background-color: rgba(0, 150, 204, 0.125); }
+.nav-pills .active {
+  color: white;
+  background-color: #0096cc; }
+  .nav-pills .active:hover, .nav-pills .active:focus {
+    background-color: #007199; }
+
+.nav-segments {
+  box-shadow: inset 0 0 0 1px #0096cc;
+  border-radius: 0.25rem; }
+  .nav-segments > a {
+    border-right: 1px solid #0096cc;
+    border-bottom: 1px solid #0096cc; }
+    .nav-segments > a:hover, .nav-segments > a:focus {
+      background-color: rgba(0, 150, 204, 0.125); }
+    .nav-segments > a:first-child {
+      border-radius: 0.25rem 0 0 0.25rem; }
+    .nav-segments > a:last-child {
+      border-right: 0;
+      border-radius: 0 0.25rem 0.25rem 0; }
+  .nav-segments .active {
+    color: white;
+    background-color: #0096cc; }
+    .nav-segments .active:hover, .nav-segments .active:focus {
+      background-color: #007199; }
+  .nav-segments .disabled {
+    color: rgba(51, 51, 51, 0.5); }
+    .nav-segments .disabled:hover, .nav-segments .disabled:focus {
+      color: rgba(51, 51, 51, 0.5);
+      background-color: transparent; }
+
+.nav-tabs > a {
+  border-radius: 0.25rem 0.25rem 0 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25); }
+  .nav-tabs > a:hover {
+    background-color: rgba(0, 0, 0, 0.125); }
+.nav-tabs .active {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-bottom-color: transparent; }

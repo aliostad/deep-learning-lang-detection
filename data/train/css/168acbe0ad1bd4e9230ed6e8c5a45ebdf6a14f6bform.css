@@ -1,0 +1,26 @@
+/* 
+    Document   : style
+    Created on : May 25, 2011, 11:08:14 AM
+    Author     : nbanks
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+form#islandora-content-model-forms-list-form div.form-item {
+    display:inline-block;
+    margin: 10px;
+}
+
+form#islandora-content-model-forms-list-form div.form-item select{
+    margin-bottom: 5px;
+}
+
+form#islandora-content-model-forms-list-form input.form-submit {
+    display:block;
+    margin: 10px;
+}

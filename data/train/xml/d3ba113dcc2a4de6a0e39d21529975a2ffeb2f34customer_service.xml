@@ -1,0 +1,106 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+
+    <parameters>
+        <parameter key="neutron_customer_service.doctrine.customer_service_manager.default.class">Neutron\Plugin\CustomerServiceBundle\Doctrine\CustomerServiceManager</parameter>
+        <parameter key="neutron_customer_service.controller.backend.customer_service.default.class">Neutron\Plugin\CustomerServiceBundle\Controller\Backend\CustomerServiceController</parameter>
+        <parameter key="neutron_customer_service.controller.frontend.customer_service.default.class">Neutron\Plugin\CustomerServiceBundle\Controller\Frontend\CustomerServiceController</parameter>
+        <parameter key="neutron_customer_service.datagrid.builder.customer_service_management.class">Neutron\Plugin\CustomerServiceBundle\DataGrid\CustomerServiceManagement</parameter>
+        <parameter key="neutron_customer_service.form.type.customer_service.class">Neutron\Plugin\CustomerServiceBundle\Form\Type\CustomerServiceType</parameter>
+        <parameter key="neutron_customer_service.form.type.customer_service.content.class">Neutron\Plugin\CustomerServiceBundle\Form\Type\CustomerService\ContentType</parameter>
+        <parameter key="neutron_customer_service.form.handler.customer_service.default.class">Neutron\Plugin\CustomerServiceBundle\Form\Handler\CustomerServiceHandler</parameter>
+    </parameters>
+
+    <services>
+    
+        <service id="neutron_customer_service.doctrine.customer_service_manager.default" 
+            class="%neutron_customer_service.doctrine.customer_service_manager.default.class%" 
+        >
+            <call method="setClassName">
+            	<argument>%neutron_customer_service.customer_service_class%</argument>
+            </call>
+            <call method="setObjectManager">
+            	<argument type="service" id="object_manager" />
+            </call>
+        </service>
+        
+        <service id="neutron_customer_service.controller.backend.customer_service.default" 
+            class="%neutron_customer_service.controller.backend.customer_service.default.class%"
+        >
+            <call method="setContainer">
+            	<argument type="service" id="service_container"/>
+            </call>
+       </service>
+       
+        <service id="neutron_customer_service.controller.frontend.customer_service.default" 
+        	class="%neutron_customer_service.controller.frontend.customer_service.default.class%"
+        >
+            <call method="setContainer">
+            	<argument type="service" id="service_container"/>
+            </call>
+       </service>
+       
+       <service id="neutron_customer_service.datagrid.builder.customer_service_management" 
+            class="%neutron_customer_service.datagrid.builder.customer_service_management.class%"
+            scope="request"
+       	>
+            <argument type="service" id="neutron_data_grid.factory" />
+            <argument type="service" id="translator" />
+            <argument type="service" id="router" />
+            <argument type="service" id="neutron_customer_service.customer_service_manager" />
+            <argument>%neutron_customer_service.translation_domain%</argument>
+        </service>
+        
+        <service id="neutron_customer_services.datagrid.neutron_customer_service_management" 
+            class="Neutron\Bundle\DataGridBundle\DataGrid\DataGrid"
+            factory-service="neutron_customer_service.datagrid.builder.customer_service_management"
+            factory-method="build"
+        >
+            <tag name="neutron_data_grid.datagrid" alias="customer_service_management" />
+        </service>
+        
+        <service id="neutron_customer_service.form.type.customer_service" 
+            class="%neutron_customer_service.form.type.customer_service.class%"
+        >
+            
+            <tag name="form.type" alias="neutron_customer_service" />
+        </service>
+        
+        <service id="neutron_customer_service.form.type.customer_service.content" 
+            class="%neutron_customer_service.form.type.customer_service.content.class%"
+        >
+            <argument>%neutron_customer_service.customer_service_class%</argument>
+            <argument>%neutron_customer_service.customer_service_templates%</argument>
+            <argument>%neutron_customer_service.translation_domain%</argument>
+
+            <tag name="form.type" alias="neutron_customer_service_content" />
+        </service>
+        
+        <service id="neutron_customer_service.form.customer_service" factory-method="createNamed" 
+       		factory-service="form.factory" class="Symfony\Component\Form\Form"
+       	>
+            <argument>%neutron_customer_service.form.name.customer_service%</argument>
+            <argument>%neutron_customer_service.form.type.customer_service%</argument>
+        </service>
+        
+        <service id="neutron_customer_service.form.handler.customer_service.default" 
+            class="%neutron_customer_service.form.handler.customer_service.default.class%"
+        >
+            <call method="setContainer">
+                <argument type="service" id="service_container" />
+            </call>
+            <call method="setForm">
+                <argument type="service" id="neutron_customer_service.form.customer_service" />
+            </call>
+            <call method="setTranslationDomain">
+                <argument>%neutron_customer_service.translation_domain%</argument>
+            </call>
+        </service>
+        
+    </services>
+  
+</container>

@@ -1,0 +1,21 @@
+#!/bin/sh
+
+cp -rT $FOAM_SRC/turbulenceModels/incompressible incompressibleTurbulenceModel
+cp sourceFiles/RASModel.[C-H]  incompressibleTurbulenceModel/RAS/RASModel/.
+cp sourceFiles/laminar.[C-H] incompressibleTurbulenceModel/RAS/laminar/.
+cp sourceFiles/kEpsilon.[C-H] incompressibleTurbulenceModel/RAS/kEpsilon/.
+cp sourceFiles/turbulenceModel.[C-H]  incompressibleTurbulenceModel/turbulenceModel/.
+cp sourceFiles/files_1 incompressibleTurbulenceModel/turbulenceModel/Make/files
+cp sourceFiles/files_2 incompressibleTurbulenceModel/RAS/Make/files
+cp sourceFiles/options_1 incompressibleTurbulenceModel/turbulenceModel/Make/options
+cp sourceFiles/options_2 incompressibleTurbulenceModel/RAS/Make/options
+
+wclean incompressibleTurbulenceModel/turbulenceModel
+wclean incompressibleTurbulenceModel/RAS
+wclean incompressibleTransportModel
+
+wmake libso incompressibleTurbulenceModel/turbulenceModel
+wmake libso incompressibleTurbulenceModel/RAS
+wmake libso incompressibleTransportModel
+
+# ----------------------------------------------------------------- end-of-file

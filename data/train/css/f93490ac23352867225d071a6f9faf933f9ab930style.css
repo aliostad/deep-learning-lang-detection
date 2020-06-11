@@ -1,0 +1,84 @@
+
+#apiPresentation {
+    display: none;
+}
+
+pre code.hljs {
+    background-color: #f5f5f5;
+}
+
+
+#api-list, #apiListDiv {
+    clear: both;
+    padding-bottom: 10px;
+}
+
+.filter-form { float: left; width: 100%; margin-bottom: 10px; }
+.filter-form div.col-sm-12 { padding: 0 0 0 0; }
+
+#api-filter {
+    padding: 6px 6px 6px 6px;
+    width: 100%;
+}
+#apiPresentationContent {
+    padding: 20px 15px 20px 15px;
+    border: 1px solid #dddddd;
+    border-top: none;
+    margin-bottom: 15px;
+}
+#apiPresentationContent table, #apiPresentationContent pre {
+    margin-bottom: 0;
+}
+
+.first-cont {
+    margin-top: 70px;
+}
+
+#welcome h2 { margin-top: 0; }
+
+#api-url p:last-child {
+    margin-bottom: 0;
+}
+
+#accordion .first {
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+}
+#accordion .last {
+    margin-top: 0;
+    border-top: 0;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+}
+
+#code-snippet pre { margin: 0; }
+
+#table-view .single-table th {
+    background: #f9f9f9;
+}
+
+.nano { width: 100%; height: 400px; }
+.nano .nano-content { padding: 0 10px 10px 10px; }
+.nano .nano-pane   { background: #dddddd; }
+.nano .nano-slider { background: #111; }
+
+.sidebar { position: fixed; }
+.main-cont { margin-left: 25%; }
+
+
+
+#post-view textarea { width: 100%; height: 200px; }
+#post-view .button-cont { width: 100%; overflow: hidden; }
+#post-view .btn { float: left; }
+#post-view .message { display: none; float: left; margin-left: 15px; margin-top: 5px; }
+#post-view .busy { display: none; float: left; margin-left: 15px; margin-top: 5px; }
+
+#post-view pre {
+    background: none;
+    border: 0;
+    padding: 0;
+}
+
+.delete-item { color: #333333; }

@@ -1,0 +1,27 @@
+﻿#splashContent {
+    display: block;
+    position: absolute;
+    width: 730px;
+    height: 599px;
+    z-index: 999;
+    background: url(../Images/splash/splash.jpg) center top no-repeat;
+    top: 0;
+    left: 0;
+}
+
+#loaderContainer {
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 350px;
+    background: url(../Images/splash//splash_load_bg.png) repeat-x;
+    width: 300px;
+    height: 20px;
+}
+
+#loaderBar {
+    display: block;
+    width: 0;
+    height: 20px;
+    background: url(../Images/splash//splash_load.png);
+}

@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+# Daemon that prints to a /tmp file indefinitely
+# It can be started, stoped, and restarted
+process()
+{
+    # shellcheck disable=SC2078
+    while [ true ];
+    do
+	echo "I am alive!" >> /tmp/my_process
+	sleep 2
+    done
+}
+
+if [ ! "$#" -eq 1 ]
+then
+    echo "Usage: manage_your_process {start|stop|restart}"
+    exit
+fi
+case "$1" in
+    start)
+	process &
+	echo "$!" > /var/run/my_process.pid
+	echo "manage_my_process started"
+	;;
+    stop)
+	kill "$(cat /var/run/my_process.pid)"
+	rm /var/run/my_process.pid
+	rm /tmp/my_process
+	echo "manage_my_process stopped"
+	;;
+    restart)
+	kill "$(cat /var/run/my_process.pid)"
+	rm /var/run/my_process.pid
+	rm /tmp/my_process
+	process &
+	echo "$!" > /var/run/my_process.pid
+	echo "manage_my_process restarted"
+	;;
+    *)
+	echo "Usage: manage_your_process {start|stop|restart}"
+esac

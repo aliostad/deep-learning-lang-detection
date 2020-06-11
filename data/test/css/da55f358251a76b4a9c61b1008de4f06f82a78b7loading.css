@@ -1,0 +1,107 @@
+		   @-webkit-keyframes loading {
+				20% {
+					-webkit-transform: scale(1.2);
+					transform: scale(1.2);
+				}
+
+				40% {
+					-webkit-transform: scale(1);
+					transform: scale(1);
+				}
+			}
+
+			@keyframes loading {
+				20% {
+					-webkit-transform: scale(1.2);
+					-ms-transform: scale(1.2);
+					transform: scale(1.2);
+				}
+
+				40% {
+					-webkit-transform: scale(1);
+					-ms-transform: scale(1);
+					transform: scale(1);
+				}
+			}
+
+			.load-more {
+				position: fixed;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				width: 100%;
+				height: 50px;
+				color: #999;
+				background: -webkit-radial-gradient(50% 100%,farthest-side,rgba(7,130,255,.8),rgba(255,255,255,0)) 0 100%;
+				background: radial-gradient(farthest-side at 50% 100%,rgba(7,130,255,.8),rgba(255,255,255,0)) 0 100%;
+				background-attachment: local;
+				pointer-events: none;
+				opacity: 0;
+				-webkit-transition: opacity 1.5s ease 1s;
+				transition: opacity 1.5s ease 1s;
+				z-index: 1030;
+			}
+
+			.load-more a {
+				color: #999;
+			}
+
+			.load-more a:focus,.load-more a:hover {
+				color: #000;
+			}
+
+			.load-more .load-icon {
+				position: absolute;
+				bottom: 5px;
+				left: 50%;
+				margin-left: -10px;
+				width: 20px;
+				height: 20px;
+				opacity: 0;
+				-webkit-transform: scale(1.4);
+				-ms-transform: scale(1.4);
+				transform: scale(1.4);
+				-webkit-transition: opacity .4s ease .6s,-webkit-transform .6s ease .6s;
+				transition: opacity .4s ease .6s,transform .6s ease .6s;
+			}
+
+			.load-more .load-icon i {
+				width: 10px;
+				height: 10px;
+				-webkit-animation: loading 1.6s ease-out infinite;
+				animation: loading 1.6s ease-out infinite;
+			}
+
+			.load-more.on {
+				opacity: 1;
+				-webkit-transition: opacity .4s ease;
+				transition: opacity .4s ease;
+			}
+
+			.load-more.on .load-icon {
+				opacity: 1;
+				-webkit-transform: scale(1);
+				-ms-transform: scale(1);
+				transform: scale(1);
+				-webkit-transition: opacity .2s ease .9s,-webkit-transform .4s ease .1s;
+				transition: opacity .2s ease .9s,transform .4s ease .1s;		
+				background-image: url('../images/revamp.svg');
+				background-size: 20px;
+				border-radius: 8px;
+				-webkit-animation-delay: .2s;
+				animation-delay: .2s;
+			}
+
+			.load-more-link {
+				padding-top: 5px;
+				padding-bottom: 5px;
+				background: #eee;
+			}
+
+			.load-more-link a {
+				color: #555;
+			}
+
+			.load-more-link a:focus,.load-more-link a:hover {
+				color: #000;
+			}			

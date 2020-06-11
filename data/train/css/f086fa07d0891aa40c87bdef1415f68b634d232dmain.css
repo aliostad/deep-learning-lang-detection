@@ -1,0 +1,72 @@
+#biomart-wrapper h4 {
+    padding-left: 0;
+}
+
+/* Containers */
+.biomart .model-container {
+    position: relative;
+    border: 1px solid #aaa;
+    margin: .2em;
+    padding: .2em;
+    margin-bottom: 10px;
+    -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+    -moz-box-shadow: 1px 1px 3px #999; -webkit-box-shadow: 1px 1px 3px #999; box-shadow: 1px 1px 3px #999;
+    background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#fff)); /* webkit */
+    background: -moz-linear-gradient(top,  #eee,  #fff); /* firefox 3.6+ */
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, 
+            startColorstr='#eeeeee', endColorstr='#ffffff'); /* ie 6/7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, 
+            startColorstr='#eeeeee', endColorstr='#ffffff'); /* ie 8+ */
+}
+
+/* Filters */
+.biomart .model-filter {
+    float: left;
+    margin-right: 5px;
+    width: 400px;
+    padding: 10px 20px 10px 5px;
+    border-bottom: none;
+    position: relative;
+    -moz-border-radius: 5px; -webkit-broder-radius: 5px; border-radius: 5px;
+}
+.biomart .filter-item-name {
+    line-height: 25px;
+}
+.biomart .filter-remove {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    margin-top: -8px;
+}
+.biomart .model-filter-active {
+    background-color: #eee;
+}
+.biomart .filter-field-upload {
+    clear: left;
+}
+.biomart .model-filter .ui-prettybox {
+    display: inline-block;
+}
+.biomart .model-filter .ui-autocomplete-input {
+    width: 350px;
+}
+.biomart .filter-field-values,
+.biomart .filter-field-filters {
+    width: 390px;
+}
+.biomart .filter-field-upload-text {
+    width: 390px;
+}
+
+/* Attributes */
+.biomart .model-attribute {
+    border-bottom: 1px dotted #999;
+    padding-top: 5px;
+    margin: 0 5px 5px 0;
+    width: 250px;
+    float: left;
+}
+.biomart .model-attribute-active {
+    background-color: #eee;
+}
+

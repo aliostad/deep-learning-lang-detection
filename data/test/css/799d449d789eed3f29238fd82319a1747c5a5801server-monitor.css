@@ -1,0 +1,46 @@
+
+.mod-server-monitor .row {
+	margin: 5px;
+}
+.mod-server-monitor .load-1min, .load-5min, .load-15min {
+	text-align: center;
+}
+.mod-server-monitor .span-1 { height: 25px; font-size: 20px; }
+.mod-server-monitor .span-2 { height: 50px; font-size: 36px; }
+.mod-server-monitor .load-1min { }
+
+.mod-server-monitor .memory .progress,
+.mod-server-monitor .diskspace .progress { position: relative; }
+.mod-server-monitor .memory .title,
+.mod-server-monitor .diskspace .title {
+	position: absolute;
+	left: 0;
+	top: 2px;
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+}
+.mod-server-monitor .loadavg .progress-bar {
+	background-color: #CCC;
+}
+
+
+.simple-mode .mod-server-monitor .cpus { display: none; }
+.mod-server-monitor .cpus {
+	height: 120px;
+}
+.mod-server-monitor .cpus .progress {
+	height: 8px;
+	margin-bottom: 5px;
+}
+.mod-server-monitor .cpus .cpu {
+	width: 100%;
+	padding: 0 2px;
+	float: left;
+}
+.mod-server-monitor .cpus.limit16 .cpu {
+	width: 25%;
+}
+.mod-server-monitor .cpus.limit8 .cpu {
+	width: 50%;
+}

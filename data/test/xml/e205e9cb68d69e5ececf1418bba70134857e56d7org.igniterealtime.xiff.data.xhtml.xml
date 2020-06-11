@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.igniterealtime.xiff.data.xhtml"><apiName>org.igniterealtime.xiff.data.xhtml</apiName><apiDetail/><apiClassifier id="org.igniterealtime.xiff.data.xhtml:XHTMLExtension"><apiName>XHTMLExtension</apiName><shortdesc>
+         XEP-0071: XHTML-IM
+                  This class provides an extension for XHTML body text in messages.
+	 html --&gt; http://jabber.org/protocol/xhtml-im
+	 body --&gt; http://www.w3.org/1999/xhtml
+	 	 </shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.igniterealtime.xiff.data:IExtension</apiBaseInterface><apiBaseClassifier>org.igniterealtime.xiff.data:Extension</apiBaseClassifier></apiClassifierDef><apiDesc>
+         XEP-0071: XHTML-IM
+                  <p>This class provides an extension for XHTML body text in messages.</p>
+	 <p>html --&gt; http://jabber.org/protocol/xhtml-im</p>
+	 <p>body --&gt; http://www.w3.org/1999/xhtml</p>
+	 	 </apiDesc></apiClassifierDetail><related-links><link href="http://xmpp.org/extensions/xep-0071.html"><linktext>http://xmpp.org/extensions/xep-0071.html</linktext></link></related-links><apiConstructor id="org.igniterealtime.xiff.data.xhtml:XHTMLExtension:XHTMLExtension"><apiName>XHTMLExtension</apiName><shortdesc>
+		 		 </shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>parent</apiItemName><apiType value="XML"/><apiData>null</apiData><apiDesc>The parent node for this extension
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.igniterealtime.xiff.data.xhtml:XHTMLExtension:getElementName"><apiName>getElementName</apiName><shortdesc>
+		 Gets the element name associated with this extension.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>The element name
+		 </apiDesc><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 Gets the element name associated with this extension.
+		 The element for this extension is "html".
+		 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.igniterealtime.xiff.data.xhtml:XHTMLExtension:getNS"><apiName>getNS</apiName><shortdesc>
+		 Gets the namespace associated with this extension.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>The namespace
+		 </apiDesc><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 Gets the namespace associated with this extension.
+		 The namespace for the XHTMLExtension is "http://www.w3.org/1999/xhtml".
+		 		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.igniterealtime.xiff.data.xhtml:XHTMLExtension:ELEMENT_NAME"><apiName>ELEMENT_NAME</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>html</apiData><apiType value="String"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.igniterealtime.xiff.data.xhtml:XHTMLExtension:NS"><apiName>NS</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>http://jabber.org/protocol/xhtml-im</apiData><apiType value="String"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.igniterealtime.xiff.data.xhtml:XHTMLExtension:body:get"><apiName>body</apiName><shortdesc>
+		 The XHTML body text.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="String"/></apiValueDef><apiDesc>
+		 The XHTML body text. Valid XHTML is REQUIRED. Because XMPP operates using
+		 valid XML, standard HTML, which is not necessarily XML-parser compliant, will
+		 not work.
+		 		 <p>Use <codeph>null</codeph> to remove.</p>
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

@@ -1,0 +1,60 @@
+.object_photos {
+	width:100%;
+	height:auto !important;
+	min-height:100px;
+	float:left;
+}
+	.object_load {
+		width:100px;
+		height:100px;
+		height:75px/*ie*/;
+		float:left;
+		margin-bottom:1px;
+		margin-right:1px;
+		background:#e9e9e9;
+		border:1px solid #e5e5e5;
+		padding-top:25px;
+		text-align:center;
+		position:relative;
+	}
+	.object_over {
+		width:100px;
+		height:100px;
+		z-index:9;
+		position:absolute;
+		left:0;
+		top:0;
+		background:#000000;
+		display:none;
+	    filter:alpha(opacity=45);
+	    -moz-opacity: 0.45;
+    	-khtml-opacity: 0.45;
+	    opacity: 0.45;		
+	}
+	.object_close {
+		width:6px;
+		height:6px;
+		position:absolute;
+		z-index:10;
+		top:3px;
+		right:6px;
+		cursor:pointer;
+	}
+	.object_load:hover {
+		background:#e4e4e4;
+	}
+		.object_load a , .object_load a:hover {
+			color:#c1c1c1;
+			font-size:18px;
+			font-family:Arial;
+		}
+	.object_photo {
+		width:100px;
+		height:100px;
+		float:left;
+		margin-bottom:1px;
+		margin-right:1px;
+	}
+#content {
+	background:none;
+}

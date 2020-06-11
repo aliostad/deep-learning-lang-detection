@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/ClienteServiceBeanService/ClienteWebService?wsdl" uri="src/conf/xml-resources/web-service-references/ClienteWebService/wsdl/localhost_8080/ClienteServiceBeanService/ClienteWebService.wsdl"/>
+    <system systemId="http://localhost:8080/ClienteServiceBeanService/ClienteWebService?xsd=1" uri="src/conf/xml-resources/web-service-references/ClienteWebService/wsdl/localhost_8080/ClienteServiceBeanService/ClienteWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/ClienteWebServiceService/ClienteWebService?wsdl" uri="src/conf/xml-resources/web-service-references/ClienteWebService/wsdl/localhost_8080/ClienteWebServiceService/ClienteWebService.wsdl"/>
+    <system systemId="http://localhost:8080/ClienteWebServiceService/ClienteWebService?xsd=1" uri="src/conf/xml-resources/web-service-references/ClienteWebService/wsdl/localhost_8080/ClienteWebServiceService/ClienteWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/VentaWebServiceService/VentaWebService?wsdl" uri="src/conf/xml-resources/web-service-references/VentaWebService/wsdl/localhost_8080/VentaWebServiceService/VentaWebService.wsdl"/>
+    <system systemId="http://localhost:8080/VentaWebServiceService/VentaWebService?xsd=1" uri="src/conf/xml-resources/web-service-references/VentaWebService/wsdl/localhost_8080/VentaWebServiceService/VentaWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/ClienteWS/ClienteWebService?wsdl" uri="src/conf/xml-resources/web-service-references/ClienteWebService/wsdl/localhost_8080/ClienteWS/ClienteWebService.wsdl"/>
+    <system systemId="http://localhost:8080/ClienteWS/ClienteWebService?xsd=1" uri="src/conf/xml-resources/web-service-references/ClienteWebService/wsdl/localhost_8080/ClienteWS/ClienteWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/VentaWS/VentaWebService?wsdl" uri="src/conf/xml-resources/web-service-references/VentaWebService/wsdl/localhost_8080/VentaWS/VentaWebService.wsdl"/>
+    <system systemId="http://localhost:8080/VentaWS/VentaWebService?xsd=1" uri="src/conf/xml-resources/web-service-references/VentaWebService/wsdl/localhost_8080/VentaWS/VentaWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/NewWebServiceService/NewWebService?wsdl" uri="src/conf/xml-resources/web-service-references/NewWebService/wsdl/localhost_8080/NewWebServiceService/NewWebService.wsdl"/>
+    <system systemId="http://localhost:8080/NewWebServiceService/NewWebService?xsd=1" uri="src/conf/xml-resources/web-service-references/NewWebService/wsdl/localhost_8080/NewWebServiceService/NewWebService.xsd_1.xsd"/>
+</catalog>

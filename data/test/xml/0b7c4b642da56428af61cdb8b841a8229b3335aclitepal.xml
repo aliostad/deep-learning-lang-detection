@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <!--<dbname>用于设定数据库的名字  -->
+    <dbname value="money" ></dbname>
+    <!--<version>用于设定数据库的版本  -->
+    <version value="5" ></version>
+    <!-- <list>用于设定所有的映射模型 -->
+    <list>
+        <mapping class="com.jack.entity.BudgetAll"></mapping>
+        <mapping class="com.jack.entity.BudgetBalance"></mapping>
+        <mapping class="com.jack.entity.CostSubject"></mapping>
+        <mapping class="com.jack.entity.CostTable"></mapping>
+        <mapping class="com.jack.entity.EquityCapital"></mapping>
+        <mapping class="com.jack.entity.EquityInterest"></mapping>
+        <mapping class="com.jack.entity.IncomeSubject"></mapping>
+        <mapping class="com.jack.entity.InOutWay"></mapping>
+        <mapping class="com.jack.entity.ShouRu"></mapping>
+        <mapping class="com.jack.entity.WarnInformation"></mapping>
+        <mapping class="com.jack.entity.WarnTitle"></mapping>
+    </list>
+</litepal>
+

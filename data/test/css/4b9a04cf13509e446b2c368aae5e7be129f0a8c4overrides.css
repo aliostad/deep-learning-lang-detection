@@ -1,0 +1,335 @@
+/* Wiki */
+
+/* Wiki styles */
+
+.side-nav li.namespace span {url("../images/api/namespace.gif") no-repeat scroll 0 50% transparent}
+
+.wikitools {
+	float: right;
+	padding: 4px 0 0;
+}
+
+.wikitools li {
+	margin: 0 0 0 13px;
+}
+
+.wikitools a {
+	background: url("../images/sprite.png") no-repeat scroll 0 -141px transparent;
+	width: 11px;
+	height: 10px;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+
+.wikitools .log {
+	background-position: -26px -141px;
+}
+
+.wikitools .newpage {
+	background-position: -51px -141px;
+}
+
+.wikitools .help {
+	background-position:-72px -141px;
+}
+
+/* API browser */
+.api div {
+	margin-bottom: 10px;
+}
+
+.api table div {
+	margin: 0;
+}
+
+.api .options {
+	margin-top: 10px;
+}
+
+.namespaces th.first, .classes th.first {
+	width: 20%;
+}
+
+.api table td, .api table th {
+	text-align: left;
+	padding-left: 11px;
+	padding-right: 11px;
+}
+
+.classdetails .last {
+	text-align: center;
+	width: 20%;
+}
+
+.classinfo td.first {
+	width: 15%;
+}
+
+.classinfo td.last {
+	text-align: left;
+}
+
+.classinfo ul.inherits {
+	margin: 0; padding: 0;
+}
+
+.classinfo ul.inherits li {
+	margin: 0; padding: 0 5px 0 18px;
+	float: left;
+	background: url(../images/api/inherit-arrow.gif) no-repeat 0 50%;
+}
+
+.classinfo ul.inherits li.first {
+	padding-left: 0;
+	background: transparent;
+}
+
+.namespaces a.namespace {
+	display: block;
+	background: transparent url(../images/api/namespace.gif) no-repeat 2px 50%;
+	padding-left: 20px;
+}
+
+.classes a.class {
+	background: transparent url(../images/api/class.gif) no-repeat 0 50%;
+	padding-left: 20px;
+}
+
+.methods a.member {
+	background: transparent url(../images/api/method.gif) no-repeat 0 50%;
+	padding-left: 20px;
+}
+
+.methods td.constructor a.member {
+	background: transparent url(../images/api/constructor.gif) no-repeat 0 50%;
+	padding-left: 20px;
+}
+
+.events a.member {
+	background: transparent url(../images/api/event.gif) no-repeat 5px 50%;
+	padding-left: 20px;
+}
+
+.properties a.member {
+	display: block;
+	background: transparent url(../images/api/property.gif) no-repeat 5px 50%;
+	padding-left: 20px;
+}
+
+.callbacks a.member {
+	background: transparent url(../images/api/callback.gif) no-repeat 0 50%;
+	padding-left: 20px;
+}
+
+.side-nav .api li li span.method, .side-nav .api li li span.class, .side-nav .api li li span.constructor, .side-nav .api li li span.namespace, .side-nav .api li li span.property, .side-nav .api li li span.event {margin-left: -5px; padding-left:22px;}
+
+.side-nav span.callback {
+	padding-left: 18px;
+	background: url(../images/api/callback.gif) no-repeat 0 50%;
+}
+
+.side-nav span.class {
+	padding-left: 18px;
+	background: url(../images/api/class.gif) no-repeat 0 50% !important;
+}
+
+.side-nav span.constructor {
+	padding-left: 18px;
+	background: url(../images/api/constructor.gif) no-repeat -3px 50% !important;
+	padding-left:15px !important;
+}
+
+.side-nav span.namespace {
+	padding-left: 18px;
+	background: url(../images/api/namespace.gif) no-repeat 0 50%;
+}
+
+.side-nav span.method {
+	padding-left: 18px;
+	background: url(../images/api/method.gif) no-repeat -3px 50% !important;
+	padding-left:16px !important;
+}
+
+.side-nav span.property {
+	padding-left: 18px;
+	background: url(../images/api/property.gif) no-repeat 3px 50%;
+	padding-left:15px !important;
+}
+
+.side-nav span.event {
+	padding-left: 18px;
+	background: url(../images/api/event.gif) no-repeat 3px 50%;
+	padding-left:15px !important;
+}
+
+.side-nav li.active li.active li.namespace a {
+	background:url(../images/api/namespace.gif) no-repeat 2px 50%;
+	padding:0 0 0 18px;
+}
+
+.side-nav li.active li.active li.class a {
+	background:url(../images/api/class.gif) no-repeat 2px 50%;
+	padding:0 0 0 20px;
+}
+
+.side-nav li.active li.active li.callback a {
+	background:url(../images/api/callback.gif) no-repeat 0 50%;
+	padding:0 0 0 20px;
+}
+
+.side-nav li.active li.active li.constructor a {
+	background:url(../images/api/constructor.gif) no-repeat 0 50%;
+	padding:0 0 0 20px;
+}
+
+.side-nav li.active li.active li.method a {
+	background:url(../images/api/method.gif) no-repeat 0 50%;
+	padding:0 0 0 20px;
+}
+
+.side-nav li.active li.active li.property a {
+	background:url(../images/api/property.gif) no-repeat 7px 50%;
+	padding:0 0 0 20px;
+}
+
+.side-nav li.active li.active li.event a {
+	background:url(../images/api/event.gif) no-repeat 7px 50%;
+	padding:0 0 0 20px;
+}
+
+.syntax span {
+	background: #EFEFEF;
+}
+
+.syntax a {
+	color: #868686;
+}
+
+table.wiki-diff { table-layout: fixed; }
+
+.wiki-diff td {
+	word-wrap:break-word;
+	white-space: pre-wrap; /* css-3 */
+	font-size: 11px;
+}
+
+.wiki-diff td.add, .wiki-diff td.remove {
+	text-align: center;
+}
+
+.wiki-diff .add_remove {
+	width: 20px;
+}
+
+.wiki-rev { width: 80px; text-align: center; }
+
+.api td.last {
+	vertical-align: middle;
+}
+
+#wiki input.title {
+	color: #6CAB00;
+	float: left;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 26px;
+	margin: 0;
+	width: 595px;
+}
+
+#wiki textarea.tinymce{
+    height: 400px;
+    visibility: hidden;
+    width: 100%;
+}
+
+#wiki-controls input {
+    width: 100%;
+}
+
+#wiki-edit-tools {
+	width: 500px;
+	overflow: hidden;
+}
+
+table.wiki-diff td.diff-addedline {background: #CCFFCC}
+table.wiki-diff td.diff-deletedline {background: #FFFFAA}
+
+.content-body div.wiki-index ul, .content-body div.wiki-index ul ul {
+	padding: 0;
+	margin: 0;
+}
+
+.content-body div.wiki-index ul {
+	margin-left: 4px;
+}
+
+.content-body div.wiki-index li {
+	padding: 0 0 0 14px;
+}
+
+.content-body div.wiki-toc {
+	border: 1px solid #DDD;
+	margin-bottom: 10px;
+}
+
+.content-body div.wiki-toc ul {
+	padding: 4px;
+	margin: 0;
+}
+
+.content-body div.wiki-toc h2 {
+	font-size: 14px;
+	margin: 0;
+	text-align: center;
+}
+
+/* Search */
+
+#search .pagetools {
+	display: none;
+}
+
+/* Forum recaptcha */
+
+#recaptcha_table {
+	table-layout: auto;
+}
+
+#recaptcha_instructions_image {
+	margin: 0;
+	padding: 0;
+	float: none;
+}
+
+#recaptcha_response_field {
+	left: 0;
+}
+
+.seen-block ul li {
+	padding: 0 22px 15px 0;
+}
+
+.submit-bug-form textarea {
+	width:560px;
+	height:218px;
+	min-width:560px;
+	min-height:218px;
+}
+
+textarea, input, select, option {
+	color: inherit;
+}
+
+/* i18n */
+#develop .i18n-item-editable {	
+	padding-right:10px;
+}
+
+.i18n-item-editable .i18n-text {
+	float:left;	
+}
+
+#develop .halfparent {
+	width:47%;
+}

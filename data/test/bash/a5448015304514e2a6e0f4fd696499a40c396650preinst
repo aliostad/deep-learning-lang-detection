@@ -1,0 +1,27 @@
+#!/bin/sh
+
+set -e
+
+PIDFILE=/var/run/redapid.pid
+
+if [ -x /etc/init.d/redapid ] && [ -n "${PIDFILE:-}" -a -r "$PIDFILE" ]; then
+	PID=`cat "$PIDFILE"`
+
+	if [ -n "${PID:-}" ]; then
+		if $(kill -0 "${PID:-}" 2> /dev/null); then
+			if [ -x /usr/sbin/invoke-rc.d ]; then
+				invoke-rc.d redapid stop
+			else
+				/etc/init.d/redapid stop
+			fi
+		elif ps "${PID:-}" > /dev/null 2>&1; then
+			if [ -x /usr/sbin/invoke-rc.d ]; then
+				invoke-rc.d redapid stop
+			else
+				/etc/init.d/redapid stop
+			fi
+		fi
+	fi
+fi
+
+exit 0

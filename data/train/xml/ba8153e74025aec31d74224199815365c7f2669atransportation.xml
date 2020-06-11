@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<mapping column="nid" filed="NID"/>
+	<mapping column="clicensetype" filed="CLICENSETYPE"/>
+	<mapping column="ccarnumber" filed="CCARNUMBER"/>
+	<mapping column="ccarnumber" filed="CCARNUMBER_NOTANALYZE"/>
+	<mapping column="dcollectiondate" filed="DCOLLECTIONDATE"/>
+	<mapping column="caddresscode" filed="CADDRESSCODE"/>
+	<mapping column="ccollectionaddress" filed="CCOLLECTIONADDRESS"/>
+	<mapping column="ccollectionagencies" filed="CCOLLECTIONAGENCIES"/>
+	<mapping column="cdatasource" filed="CDATASOURCE"/>
+	<mapping column="csnaptype" filed="CSNAPTYPE"/>
+	<mapping column="cdevicecode" filed="CDEVICECODE"/>
+	<mapping column="clanenumber" filed="CLANENUMBER"/>
+	<mapping column="nvehiclespeed" filed="NVEHICLESPEED"/>
+	<mapping column="nderictrion" filed="NDERICTRION"/>
+	<mapping column="carcolor" filed="CARCOLOR"/>
+	<mapping column="carbrand" filed="CARBRAND"/>
+	<mapping column="chiscarnumber" filed="CHISCARNUMBER"/>
+</config>

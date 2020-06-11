@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--/*******************************************************************************
+ * Copyright (c) 2007 Bastian Bergerhoff and others
+ * All rights reserved. This program and the accompanying materials 
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution.
+ * 
+ * Contributors:
+ *     Bastian Bergerhoff - initial contents
+ *******************************************************************************/-->
+<categoryMappings>
+  <categoryMapping proposalKey="?" category="Multiplicities">
+  </categoryMapping>
+  <categoryMapping proposalKey="*" category="Multiplicities">
+  </categoryMapping>
+  <categoryMapping proposalKey="+" category="Multiplicities">
+  </categoryMapping>
+  <categoryMapping proposalKey="{n}" category="Multiplicities">
+  </categoryMapping>
+  <categoryMapping proposalKey="{n,}" category="Multiplicities">
+  </categoryMapping>
+  <categoryMapping proposalKey="{n,m}" category="Multiplicities">
+  </categoryMapping>
+  <categoryMapping proposalKey="??" category="Multiplicities">
+  </categoryMapping>
+  <categoryMapping proposalKey="*?" category="Multiplicities">
+  </categoryMapping>
+  <categoryMapping proposalKey="+?" category="Multiplicities">
+  </categoryMapping>
+  <categoryMapping proposalKey="{n}?" category="Multiplicities">
+  </categoryMapping>
+  <categoryMapping proposalKey="{n,}?" category="Multiplicities">
+  </categoryMapping>
+  <categoryMapping proposalKey="{n,m}?" category="Multiplicities">
+  </categoryMapping>
+  <categoryMapping proposalKey="?+" category="Multiplicities">
+  </categoryMapping>
+  <categoryMapping proposalKey="*+" category="Multiplicities">
+  </categoryMapping>
+  <categoryMapping proposalKey="++" category="Multiplicities">
+  </categoryMapping>
+  <categoryMapping proposalKey="{n}+" category="Multiplicities">
+  </categoryMapping>
+  <categoryMapping proposalKey="{n,}+" category="Multiplicities">
+  </categoryMapping>
+  <categoryMapping proposalKey="{n,m}+" category="Multiplicities">
+  </categoryMapping>
+  <categoryMapping proposalKey="." category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\d" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\D" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\s" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\S" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\w" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\W" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\p{Lower}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\P{Lower}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\p{Upper}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\P{Upper}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\p{ASCII}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\P{ASCII}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\p{Alpha}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\P{Alpha}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\p{Digit}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\P{Digit}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\p{Alnum}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\P{Alnum}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\p{Punct}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\P{Punct}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\p{Graph}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\P{Graph}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\p{Print}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\P{Print}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\p{Blank}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\P{Blank}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\p{Cntrl}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\P{Cntrl}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\p{XDigit}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\P{XDigit}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\p{Space}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\P{Space}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\p{InGreek}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\P{InGreek}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\p{InU}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\P{InU}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\p{Lu}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\p{Sc}" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="[\p{L}&amp;&amp;[^\p{Lu}]]" category="Wildcards">
+  </categoryMapping>
+  <categoryMapping proposalKey="\" category="Special Characters">
+  </categoryMapping>
+  <categoryMapping proposalKey="\\" category="Special Characters">
+  </categoryMapping>
+  <categoryMapping proposalKey="\0" category="Special Characters">
+  </categoryMapping>
+  <categoryMapping proposalKey="\x" category="Special Characters">
+  </categoryMapping>
+  <categoryMapping proposalKey="\u" category="Special Characters">
+  </categoryMapping>
+  <categoryMapping proposalKey="\t" category="Special Characters">
+  </categoryMapping>
+  <categoryMapping proposalKey="\n" category="Special Characters">
+  </categoryMapping>
+  <categoryMapping proposalKey="\r" category="Special Characters">
+  </categoryMapping>
+  <categoryMapping proposalKey="\f" category="Special Characters">
+  </categoryMapping>
+  <categoryMapping proposalKey="\e" category="Special Characters">
+  </categoryMapping>
+  <categoryMapping proposalKey="\Q" category="Special Characters">
+  </categoryMapping>
+  <categoryMapping proposalKey="\E" category="Special Characters">
+  </categoryMapping>
+  <categoryMapping proposalKey="^" category="Boundaries">
+  </categoryMapping>
+  <categoryMapping proposalKey="$" category="Boundaries">
+  </categoryMapping>
+  <categoryMapping proposalKey="\b" category="Boundaries">
+  </categoryMapping>
+  <categoryMapping proposalKey="\B" category="Boundaries">
+  </categoryMapping>
+  <categoryMapping proposalKey="\A" category="Boundaries">
+  </categoryMapping>
+  <categoryMapping proposalKey="\Z" category="Boundaries">
+  </categoryMapping>
+  <categoryMapping proposalKey="\z" category="Boundaries">
+  </categoryMapping>
+  <categoryMapping proposalKey="\G" category="Boundaries">
+  </categoryMapping>
+  <categoryMapping proposalKey="U|V" category="Logical Constructs">
+  </categoryMapping>
+  <categoryMapping proposalKey="(U)" category="Logical Constructs">
+  </categoryMapping>
+  <categoryMapping proposalKey="\i" category="Logical Constructs">
+  </categoryMapping>
+  <categoryMapping proposalKey="[ecq]" category="Logical Constructs">
+  </categoryMapping>
+  <categoryMapping proposalKey="[^ecq]" category="Logical Constructs">
+  </categoryMapping>
+  <categoryMapping proposalKey="[e-q]" category="Logical Constructs">
+  </categoryMapping>
+  <categoryMapping proposalKey="&amp;&amp;" category="Logical Constructs">
+  </categoryMapping>
+  <categoryMapping proposalKey="(?_U)" category="Logical Constructs">
+  </categoryMapping>
+  <categoryMapping proposalKey="(?idmsux)" category="Local Flags">
+  </categoryMapping>
+  <categoryMapping proposalKey="(?-idmsux)" category="Local Flags">
+  </categoryMapping>
+  <categoryMapping proposalKey="(?idmsux_U)" category="Local Flags">
+  </categoryMapping>
+  <categoryMapping proposalKey="(?-idmsux_U)" category="Local Flags">
+  </categoryMapping>
+</categoryMappings>

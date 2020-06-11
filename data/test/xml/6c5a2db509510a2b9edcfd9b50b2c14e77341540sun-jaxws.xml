@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints version="2.0" xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime">
+  <endpoint implementation="com.vss.cardservice.webservice.AlertService" name="AlertService" url-pattern="/AlertService"/>
+  <endpoint implementation="com.vss.cardservice.webservice.VoucherService" name="VoucherService" url-pattern="/VoucherService"/>
+  <endpoint implementation="com.vss.cardservice.webservice.VoucherService" name="VoucherService" url-pattern="/VoucherService"/>
+  <endpoint implementation="com.vss.cardservice.webservice.ManageSessionService" name="ManageSessionService" url-pattern="/ManageSessionService"/>
+  <endpoint implementation="com.vss.cardservice.webservice.AlertService" name="AlertService" url-pattern="/AlertService"/>
+  <endpoint implementation="com.vss.cardservice.webservice.VoucherService" name="VoucherService" url-pattern="/VoucherService"/>
+  <endpoint implementation="com.vss.cardservice.webservice.ManageSessionService" name="ManageSessionService" url-pattern="/ManageSessionService"/>
+  <endpoint implementation="com.vss.cardservice.webservice.AlertService" name="AlertService" url-pattern="/AlertService"/>
+  <endpoint implementation="com.vss.cardservice.webservice.VoucherService" name="VoucherService" url-pattern="/VoucherService"/>
+</endpoints>

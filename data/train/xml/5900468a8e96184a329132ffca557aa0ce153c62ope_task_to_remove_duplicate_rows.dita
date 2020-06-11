@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/task.dtd">
+<task id="ope_task_to_remove_duplicate_rows" xml:lang="en-us">
+    <title>To remove duplicate rows</title>
+    <prolog>
+        <metadata>
+            <keywords><indexterm>rows<indexterm>removing duplicates</indexterm></indexterm><indexterm>removing duplicate rows</indexterm></keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>You can remove duplicate rows where the values in the columns you select are duplicated. When you remove duplicates, Ormetis Professional Edition retains the first row in the set of duplicates and filters out the other rows. The order of the data in the view is crucial in determining which rows are kept.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Select the columns that you want to test for duplicate values.</cmd>
+            </step>
+            <step>
+                <cmd>Click <menucascade><uicontrol>Data</uicontrol><uicontrol>Filter</uicontrol><uicontrol>Remove Duplicate Rows</uicontrol></menucascade>.</cmd>
+                <stepresult>Ormetis Professional Edition removes all rows containing duplicate values in the columns, apart from the first row in the set.</stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

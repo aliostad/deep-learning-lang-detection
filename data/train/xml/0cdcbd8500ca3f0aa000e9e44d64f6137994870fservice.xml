@@ -1,0 +1,12 @@
+<service auto-start="true">
+    <name>jndi-service</name>
+    <public-id>com.cubeia.firebase.service:jndi-service</public-id>
+    <contract>com.cubeia.firebase.server.service.jndi.JndiProvider</contract>
+    <service>com.cubeia.firebase.service.jndi.impl.ServiceImpl</service>
+    <dependencies>
+    	<contract>com.cubeia.firebase.api.service.datasource.DatasourceServiceContract</contract>
+    	<contract>com.cubeia.firebase.service.jta.TransactionManagerProvider</contract>
+    </dependencies>
+    <description />
+    <exported />
+</service>

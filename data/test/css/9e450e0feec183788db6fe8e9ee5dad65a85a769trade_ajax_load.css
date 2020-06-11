@@ -1,0 +1,48 @@
+.trade-ajax-load-process {
+    cursor: wait;
+    position: relative;
+}
+
+.trade-ajax-load-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: .9;
+    border: none;
+    z-index: 9999;
+}
+
+.trade-ajax-load-overlay-center {
+    border: none;
+    opacity: .1;
+}
+
+ul.trade-ajax-load-process {
+    opacity: 1;
+}
+
+.trade-ajax-load-process-wait {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    left: 10px;
+    background: transparent url(../images/progress.gif) 50% 50% repeat-x;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    opacity: 1;
+    z-index: 9999;
+}
+
+.trade-ajax-load-process-wait-center {
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+}

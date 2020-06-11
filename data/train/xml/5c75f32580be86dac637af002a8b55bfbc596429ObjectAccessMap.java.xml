@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--L
+   Copyright Ekagra Software Technologies Ltd.
+   Copyright SAIC, SAIC-Frederick
+
+   Distributed under the OSI-approved BSD 3-Clause License.
+   See http://ncip.github.com/common-security-module/LICENSE.txt for details.
+L-->
+
+<file
+  name="nih/nci/security/authorization/ObjectAccessMap.java"
+  last-modified="0"
+  file="/home/csmuser/nih/nci/security/authorization/ObjectAccessMap.java"
+>
+  <violation
+    line="132"
+    source="InsufficientStringBufferDeclaration"
+    severity="Medium"
+    type="pmd"
+    message="StringBuffer constructor is initialized with size 16, but has at least 76 characters appended."
+    severity-level="2"
+    popup-message="StringBuffer constructor is initialized with size 16, but has at least 76 characters appended."
+  />
+  <violation
+    line="133"
+    source="InefficientStringBuffering"
+    severity="Medium"
+    type="pmd"
+    message="Avoid concatenating nonliterals in a StringBuffer constructor or append()."
+    severity-level="2"
+    popup-message="Avoid concatenating nonliterals in a StringBuffer constructor or append()."
+  />
+  <violation
+    line="134"
+    source="AppendCharacterWithChar"
+    severity="Medium"
+    type="pmd"
+    message="Avoid appending characters as strings in StringBuffer.append."
+    severity-level="2"
+    popup-message="Avoid appending characters as strings in StringBuffer.append."
+  />
+  <violation
+    line="134"
+    source="ConsecutiveLiteralAppends"
+    severity="Medium"
+    type="pmd"
+    message="StringBuffer.append is called 3 consecutive times with literal Strings. Use a single append with a single String."
+    severity-level="2"
+    popup-message="StringBuffer.append is called 3 consecutive times with literal Strings. Use a single append with a single String."
+  />
+  <violation
+    line="136"
+    source="AppendCharacterWithChar"
+    severity="Medium"
+    type="pmd"
+    message="Avoid appending characters as strings in StringBuffer.append."
+    severity-level="2"
+    popup-message="Avoid appending characters as strings in StringBuffer.append."
+  />
+  <violation
+    line="143"
+    source="AppendCharacterWithChar"
+    severity="Medium"
+    type="pmd"
+    message="Avoid appending characters as strings in StringBuffer.append."
+    severity-level="2"
+    popup-message="Avoid appending characters as strings in StringBuffer.append."
+  />
+  <type type='pmd' number='6' suppressed='0'/>
+</file>

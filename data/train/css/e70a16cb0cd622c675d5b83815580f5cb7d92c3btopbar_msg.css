@@ -1,0 +1,64 @@
+body.topbar-message-opened #topbar-message {
+    max-height: 100%;
+}
+body.topbar-message-opened #topbar-message #topbar-message-wrapper {
+    top: 0;
+}
+body.topbar-message-opened #topbar-message #topbar-message-open {
+    top: -33px;
+}
+body.topbar-message-transition #topbar-message #topbar-message-wrapper,
+body.topbar-message-transition #topbar-message #topbar-message-open {
+    -webkit-transition: top 0.5s ease 0s;
+    -moz-transition: top 0.5s ease 0s;
+    -o-transition: top 0.5s ease 0s;
+    -ms-transition: top 0.5s ease 0s;
+    transition: top 0.5s ease 0s;
+}
+#topbar-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    color: #FFF;
+    z-index: 9999;
+    display: block;
+}
+#topbar-message a {
+    color: inherit;
+}
+#topbar-message #topbar-message-wrapper {
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    top: -33px;
+    min-height: 33px;
+    line-height: 33px;
+}
+#topbar-message #topbar-message-content {
+    width: calc(100% - 124px);
+    margin: 0 auto;
+    text-align: center;
+}
+#topbar-message #topbar-message-content #topbar-message-link {
+    margin-left: 10px;
+    text-decoration: underline;
+}
+#topbar-message #topbar-message-content #topbar-message-link:hover {
+    text-decoration: none;
+}
+#topbar-message #topbar-message-open,
+#topbar-message #topbar-message-close {
+    background-color: #000;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 60px;
+    padding: 0 10px;
+    border: 2px solid #FFF;
+    border-radius: 4px;
+    text-decoration: none;
+    line-height: 25px;
+    cursor: pointer;
+}

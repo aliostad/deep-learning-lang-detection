@@ -1,0 +1,30 @@
+/* defaults 
+ * all of the following elements look like
+ * this unless they are overidden
+ * should ONLY start out pink*/
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+p {
+	color: #eee;
+}
+
+/* component */
+/* write selectors defensively */
+/* stratgize how you write your selectors 
+ * write the name of the component before
+ * the type of the selector 
+ * should only start out green
+ * use a second class name to define styles
+ * that pertain to one TYPE of container*/
+
+.tabs {
+	background-color: #eee;
+}
+.tabs button {
+	color: blue;
+}
+.tabs.user-profile {}

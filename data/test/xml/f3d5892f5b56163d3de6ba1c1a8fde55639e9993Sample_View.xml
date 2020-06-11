@@ -1,0 +1,12 @@
+<view>
+  <viewName>Sample View</viewName>
+  <database>adhoc-content</database>
+  <documentType prefix="sample">sampleDoc</documentType>
+  <columns>
+    <column name="DB" evaluateAs="XPath" expr="/sample:sampleDoc/sample:database"/>
+    <column name="URI Ref" evaluateAs="XPath" expr="/sample:sampleDoc/sample:uri"/>
+    <column name="Type" evaluateAs="XPath" expr="/sample:sampleDoc/sample:type"/>
+    <column name="Timestamp" evaluateAs="XPath" expr="/sample:sampleDoc/sample:date"/>
+    <column name="Collection" evaluateAs="XPath" expr="/sample:sampleDoc/sample:collection"/>
+  </columns>
+</view>

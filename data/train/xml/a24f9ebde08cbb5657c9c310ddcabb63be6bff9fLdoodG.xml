@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE dylanClass PUBLIC "-//Gwydion//DTD DITA Dylan API Class//EN" "../../../../dtd/dylanClass.dtd" []>
+<dylanClass id="lib-dood-dood-LdoodG">
+  <apiName>&lt;dood&gt;</apiName>
+  <shortdesc>The class of .</shortdesc>
+
+  <prolog>
+    <author></author>
+    <copyright>
+      <copyryear year="2006"/>
+      <copyrholder>Gwydion Dylan Maintainers</copyrholder>
+    </copyright>
+  </prolog>
+
+  <dylanClassDetail>
+    <dylanClassDef>
+      <dylanOpenClass/>
+      <dylanPrimaryClass/>
+      <dylanSuperClass href="LobjectG.xml">&lt;object&gt;</dylanSuperClass>
+      <dylanInitKeyword>
+	<apiItemName>backups?:</apiItemName>
+        <apiOtherClassifier href="LbooleanG.xml">&lt;boolean&gt;</apiOtherClassifier>
+	<apiDefNote></apiDefNote>
+      </dylanInitKeyword>
+      <dylanInitKeyword>
+	<apiItemName>batch-mode?:</apiItemName>
+        <apiOtherClassifier href="LbooleanG.xml">&lt;boolean&gt;</apiOtherClassifier>
+	<apiDefNote></apiDefNote>
+      </dylanInitKeyword>
+      <dylanInitKeyword>
+	<apiItemName>default-segment:</apiItemName>
+        <apiOtherClassifier href="Ldood_segmentG.xml">&lt;dood-segment&gt;</apiOtherClassifier>
+	<apiDefNote></apiDefNote>
+      </dylanInitKeyword>
+      <dylanInitKeyword>
+	<apiItemName>if-exists:</apiItemName>
+        <apiOtherClassifier href="LobjectG.xml">&lt;object&gt;</apiOtherClassifier>
+	<apiDefNote></apiDefNote>
+      </dylanInitKeyword>
+      <dylanInitKeyword>
+	<apiItemName>locator:</apiItemName>
+        <apiOtherClassifier href="LobjectG.xml">&lt;object&gt;</apiOtherClassifier>
+	<apiDefNote></apiDefNote>
+      </dylanInitKeyword>
+      <dylanInitKeyword>
+	<apiItemName>name:</apiItemName>
+        <apiOtherClassifier href="LobjectG.xml">&lt;object&gt;</apiOtherClassifier>
+	<apiDefNote></apiDefNote>
+      </dylanInitKeyword>
+      <dylanInitKeyword>
+	<apiItemName>read-only?:</apiItemName>
+        <apiOtherClassifier href="LbooleanG.xml">&lt;boolean&gt;</apiOtherClassifier>
+	<apiDefNote></apiDefNote>
+      </dylanInitKeyword>
+      <dylanInitKeyword>
+	<apiItemName>segments:</apiItemName>
+        <apiOtherClassifier href="Lsimple_object_vectorG.xml">&lt;simple-object-vector&gt;</apiOtherClassifier>
+	<apiDefNote></apiDefNote>
+      </dylanInitKeyword>
+      <dylanInitKeyword>
+	<apiItemName>stream:</apiItemName>
+        <apiType value="{complex type}"/>
+	<apiDefNote></apiDefNote>
+      </dylanInitKeyword>
+      <dylanInitKeyword>
+	<apiItemName>version:</apiItemName>
+        <apiOtherClassifier href="LintegerG.xml">&lt;integer&gt;</apiOtherClassifier>
+	<apiDefNote></apiDefNote>
+      </dylanInitKeyword>
+      <dylanInitKeyword>
+	<apiItemName>world:</apiItemName>
+        <apiOtherClassifier href="Ldood_worldG.xml">&lt;dood-world&gt;</apiOtherClassifier>
+	<apiDefNote></apiDefNote>
+      </dylanInitKeyword>
+    </dylanClassDef>
+
+    <apiDesc>
+      <p>This class can be user subclassed and used as the basis for
+      specialized loading and dumping behavior.</p>
+    </apiDesc>
+  </dylanClassDetail>
+</dylanClass>

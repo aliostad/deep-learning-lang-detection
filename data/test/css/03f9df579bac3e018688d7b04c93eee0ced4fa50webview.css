@@ -1,0 +1,103 @@
+
+.scroll-wrapper {
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#webview-iframe {
+    width: 100%;
+    height: 100vh;
+    z-index: 989;
+    margin-botom: 62px;
+}
+
+#webview-wrapper {
+    transform: translateX(100%);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: white;
+}
+
+.loader {
+    z-index: 990;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+
+.load-content{
+    height: 100%;
+    text-align: center;
+    background-color: white;
+    display: block;
+    padding-top: 180px;
+}
+
+.load-content img {
+    animation:spin 4s linear infinite;
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@media screen and (max-height: 1280px) {
+    .load-content {
+        padding-top: 500px;
+    }
+}
+
+@media screen and (max-height: 1024px) {
+    .load-content {
+        padding-top: 400px;
+    }
+}
+
+@media screen and (max-height: 960px) {
+    .load-content {
+        padding-top: 300px;
+    }
+}
+
+@media screen and (max-height: 736px) {
+    .load-content {
+        padding-top: 220px;
+    }
+}
+
+
+@media screen and (max-height: 659px) {
+    .load-content {
+        padding-top: 160px;
+    }
+}
+
+
+@media screen and (max-height: 568px) {
+    .load-content {
+        padding-top: 130px;
+    }
+}
+
+@media screen and (max-height: 480px) {
+    .load-content {
+        padding-top: 100px;
+    }
+}

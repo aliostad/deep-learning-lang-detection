@@ -1,0 +1,63 @@
+.read_mensaje{
+	background: #E1E7FA;
+}
+.read_mensaje .imagen{
+	width: 100px;
+	height: 100px;
+	float: left;
+	padding: 5px;
+}
+.read_mensaje .headertext{
+	width: 460px;
+	float: left;
+	padding: 5px;
+}
+.read_mensaje .headertext .user{
+	font-weight: bold;
+	font-size: 11pt;
+}
+.read_mensaje .headertext .title{
+/* 		font-weight: bold; */
+	font-size: 10pt;
+	padding: 5px 0px;
+	border-bottom: 1px solid gray;
+}
+.read_mensaje .text{
+	clear: both;
+	padding: 5px 0px;
+	margin: 5px;
+}
+.own_read_mensaje {
+	background: white;
+}
+.read_mensaje_respuesta{
+	border-top: 1px solid gray;
+}
+
+.write_mensaje{
+	background: #FFEFA6;
+	padding: 10px;
+	margin-top: 10px;
+}
+.write_mensaje .textarea{
+	text-align: center;
+	height: 125px;
+}
+.write_mensaje .textarea textarea {
+	width: 100%;
+	height: 70px;
+}
+
+.write_mensaje .input{
+	font-weight: bold;
+	padding-bottom: 15px;
+	text-align: left;
+}
+.write_mensaje .input .title {
+	width: 55px;
+}
+.lista_filter {
+	position: relative;
+	top: -30px;
+	width: 400px;
+}

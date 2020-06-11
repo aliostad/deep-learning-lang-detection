@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*btns*/
+.icon {
+	display:inline-block;
+	overflow:hidden;
+}
+/*nav*/
+.nav_bar a i.icon {
+	width:32px;
+	height:32px;
+	background:url(../images/ico_nav.png) no-repeat;
+}
+.nav_bar a.onfocus i.icon {
+	background-position:0 -33px;
+}
+.nav_bar a i.ico_nav_home {
+	background-position:0 0px;
+}
+.nav_bar a i.ico_nav_where {
+	background-position:-65px 0;
+}
+.nav_bar a i.ico_nav_daren {
+	background-position:-33px 0;
+}
+.nav_bar a i {
+	filter:alpha(opacity=40);
+	-moz-opacity:0.4;
+	-khtml-opacity: 0.4;
+	opacity: 0.4;
+}
+.nav_bar a:hover i{filter:alpha(opacity=70);
+	-moz-opacity:0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;}
+.nav_bar a.onfocus:hover i,.nav_bar a.onfocus i {
+	filter:alpha(opacity=100);
+	-moz-opacity:1.0;
+	-khtml-opacity: 1.0;
+	opacity: 1.0;
+}

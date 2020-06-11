@@ -1,0 +1,64 @@
+#!/bin/sh
+
+# git-remote-new - create remote Git repository.
+# Copyright (C) 2008  Will Harris
+# 
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+REPO_NAME=$1
+
+if [[ "$REPO_NAME" == "" ]]; then
+        echo "Syntax: $0 REPO_NAME"
+        exit 1
+fi
+
+if ! git show > /dev/null 2> /dev/null; then
+        echo "Not a valid git repository"
+        exit 1
+fi
+
+if [[ "$REPO_SERVER" == "" ]]; then
+        echo "REPO_SERVER not set"
+        exit 1
+fi
+
+if [[ "$REPO_SERVER_GIT_PATH" == "" ]]; then
+        echo "REPO_SERVER_GIT_PATH not set"
+        exit 1
+fi
+
+if [[ "$REMOTE_NAME" == "" ]]; then
+	REMOTE_NAME=origin
+fi
+
+REPO_SERVER_REPO_PATH="$REPO_SERVER_GIT_PATH/$REPO_NAME.git"
+
+echo "Create bare repo at $REPO_SERVER:$REPO_SERVER_REPO_PATH"
+if ! ssh $REPO_SERVER "mkdir $REPO_SERVER_REPO_PATH && \
+                       cd $REPO_SERVER_REPO_PATH && \
+                       git --bare init"; then
+        echo "Could not create repo"
+        exit 1
+fi
+
+echo "Setup remote $REMOTE_NAME"
+
+if ! git remote add $REMOTE_NAME "ssh://$REPO_SERVER$REPO_SERVER_REPO_PATH"; then
+        echo "Could not add remote $REMOTE_NAME to local repo"
+        exit 1
+fi
+
+echo "Push"
+git push --mirror $REMOTE_NAME

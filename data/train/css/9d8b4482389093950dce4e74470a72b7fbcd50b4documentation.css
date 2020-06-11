@@ -1,0 +1,44 @@
+.nav-documentation > li > a {
+    font-size: small;
+    padding: 5px 7px;
+}
+
+.content-api ol.breadcrumb {
+    margin: 0;
+}
+
+#api ul.hierarchy,
+#api ul.hierarchy li,
+#api ul.methods,
+#api ul.methods li,
+
+#api div.detail p.namespace {
+    margin: -7px 0 12px 0;
+}
+
+body #api .hierarchy {
+    padding: 0;
+}
+    
+body #api .hierarchy li {
+    list-style: url(../img/api-hierarchy.png);
+}
+
+body #api .hierarchy li.first {
+    list-style: none;
+}
+
+#api p.source-link {
+    font-size: smaller;
+}
+
+#api p.top {
+    font-size: smaller;
+    margin: 24px 0 24px 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #DDD;
+}
+
+#api span.description {
+    color: gray;
+}

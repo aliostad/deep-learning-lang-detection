@@ -1,0 +1,37 @@
+.tip-container {
+    display: -webkit-box;
+    width: 100%;
+    height: 100%;
+}
+.tip-container .show {
+    display: block;
+    width: 100%;
+    padding-top: 50px;
+    height: 150px;
+    text-align: center;
+}
+.tip-container .show img {
+    margin-bottom: 1.125rem;
+}
+.tip-container .show p {
+    color: #aeaeae;
+    font-family: "Microsoft Yahei";
+    margin-bottom: 0.5rem;
+}
+.tip-container .show p:nth-child(2) {
+    font-size: 1rem;
+    color: #aeaeae;
+}
+.tip-container .show p:nth-child(3) {
+    font-size: 0.875rem;
+    color: #a3a3a3;
+}
+.tip-container .show p a {
+    color: #777;
+    font-size: 0.675rem;
+    text-decoration: none;
+}
+.tip-container .show p b {
+    color: #fe822f;
+    font-weight: normal;
+}

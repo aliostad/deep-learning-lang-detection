@@ -1,0 +1,58 @@
+<b:widget id='PopularPosts1' locked='false' title='Popular Posts' type='PopularPosts'>
+<b:includable id='main'>
+  <b:if cond='data:title'><h2><data:title/></h2></b:if>
+  <div class='widget-content popular-posts'>
+    <ul expr:id='data:widget.instanceId + &quot;_PopularPosts&quot;'></ul>
+    <script>
+    (function(){
+      function _a(href, title) {
+        return $('<a/>', {href: href, html: title});
+      }
+      function _div(href, title) {
+        return $('<div/>', {'class': 'item-title'})
+               .append($('<a/>', {href: href, html: title}));
+      }
+      function _s(snippet) {
+        return $('<div/>', {'class': 'item-snippet', html: snippet});
+      }
+      function _thumb(href, height, width, src) {
+        var $a = $('<a/>', {href: href, target: '_blank'})
+                 .append($('<img/>', {alt: '', border: '0', height: height, width: width, src: src}));
+        return $('<div/>', {'class': 'item-thumbnail'}).append($a);
+      }
+    <b:if cond='data:showThumbnails == &quot;false&quot;'>
+      <b:if cond='data:showSnippets == &quot;false&quot;'>
+      <!-- (1) No snippet/thumbnail -->
+      $("#<data:widget.instanceId/>_PopularPosts")<b:loop values='data:posts' var='post'>
+        .append($('<li/>').append(_a("<data:post.href/>", "<data:post.title/>")))</b:loop>
+      <b:else/>
+      <!-- (2) Show only snippets -->
+      $("#<data:widget.instanceId/>_PopularPosts")<b:loop values='data:posts' var='post'>
+        .append($('<li/>').append(_("<data:post.href/>", "<data:post.title/>"), _s("<data:post.snippet/>")))</b:loop>
+      </b:if>
+    <b:else/>
+      <b:if cond='data:showSnippets == &quot;false&quot;'>
+      <!-- (3) Show only thumbnails -->
+      $("#<data:widget.instanceId/>_PopularPosts")<b:loop values='data:posts' var='post'>
+        .append($('<div/>', {'class': 'item-thumbnail-only'})
+          .append($('<li/>').append(<b:if cond='data:post.thumbnail'>
+            _thumb("<data:post.href/>", "<data:thumbnailSize/>", "<data:thumbnailSize/>", "<data:post.thumbnail/>"),</b:if>
+            _("<data:post.href/>", "<data:post.title/>"))))
+        .append($('<div/>').css('clear', 'both'))</b:loop>
+      <b:else/>
+      <!-- (4) Show snippets and thumbnails -->
+      $("#<data:widget.instanceId/>_PopularPosts")<b:loop values='data:posts' var='post'>
+        .append($('<div/>', {'class': 'item-content'})
+          .append($('<li/>').append(<b:if cond='data:post.thumbnail'>
+            _thumb("<data:post.href/>", "<data:thumbnailSize/>", "<data:thumbnailSize/>", "<data:post.thumbnail/>"),</b:if>
+            _("<data:post.href/>", "<data:post.title/>"),
+            _s("<data:post.snippet/>"))))
+        .append($('<div/>').css('clear', 'both'))</b:loop>
+      </b:if>
+    </b:if>
+    })();
+    </script>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+</b:widget>

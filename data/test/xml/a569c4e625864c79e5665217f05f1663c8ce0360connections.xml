@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jbi xmlns="http://java.sun.com/xml/ns/jbi" xmlns:ns1="http://j2ee.netbeans.org/wsdl/DuplicateProject" xmlns:ns2="http://enterprise.netbeans.org/bpel/DuplicateProject" version="1.0">
+<service-assembly>
+<identification>
+<name>DuplicateProjectJBI</name>
+<description>Represents the Service Assembly of DuplicateProjectJBI</description>
+</identification>
+<connections>
+<connection>
+<consumer endpoint-name="DuplicateProjectPort" service-name="ns1:DuplicateProjectService"/>
+<provider endpoint-name="DuplicateProjectPortTypeRole_myRole" service-name="ns2:PartnerLink1"/>
+</connection>
+</connections>
+</service-assembly>
+</jbi>

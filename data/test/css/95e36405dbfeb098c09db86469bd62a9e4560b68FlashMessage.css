@@ -1,0 +1,28 @@
+.FlashMessage-Error,
+.FlashMessage-Notice,
+.FlashMessage-Success,
+.FlashMessage-Warning {
+ 	padding: 5px;
+ 	padding-top: 10px;
+ 	padding-bottom: 8px;
+ 	min-height: 18px;
+ 	width: 950px;
+ 	border: 1px solid #41542a;
+ 	margin-bottom: 5px;
+ 	margin-left: 10px;
+ 	margin-right: 10px;
+	font-weight: bold;
+}
+
+.FlashMessage-Error {
+	background-color: #e66265;
+}
+.FlashMessage-Notice {
+	background-color: #5ebce7;
+}
+.FlashMessage-Success {
+	background-color: #7dd750;
+}
+.FlashMessage-Warning {
+	background-color: #e2e75e;
+}

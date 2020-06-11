@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tree-config>
+<table name="addBasis">
+        <field display-name="编号" name="type_id">
+		<depend name="required" />
+		<depend name="duplicate" param0="qcs_config_public_char@type_id@kind"/>
+		</field>
+        <field display-name="名称" name="type_name"><!--以上六个字段为tree必须，名称可变上下顺序不能变-->
+		<depend name="required" />
+		<depend name="duplicate" param0="qcs_config_public_char@type_name@kind"/>
+		</field>
+</table>
+<table name="addLevel">
+        <field display-name="编号" name="type_id">
+		<depend name="required" />
+		<depend name="duplicate" param0="qcs_config_public_char@type_id@kind"/>
+		</field>
+        <field display-name="名称" name="type_name"><!--以上六个字段为tree必须，名称可变上下顺序不能变-->
+		<depend name="required" />
+		<depend name="duplicate" param0="qcs_config_public_char@type_name@kind"/>
+		</field>
+</table>
+</tree-config>

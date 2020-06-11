@@ -1,0 +1,11 @@
+.onShow,.onFocus,.onError,.onCorrect
+{background-image:url(../images/adminSkin.gif); background-repeat:no-repeat; vertical-align:middle;}
+
+.onShow,.onFocus
+{background-position:-586px 2px; color:#999; padding-left:17px;}
+.onError
+{background-position:-586px -19px; color:#FF0000; padding-left:17px;}
+.onCorrect
+{background-position:-586px -39px; color:#4A8F01; padding-left:17px;}
+.onLoad
+{background-image:url(../images/onLoad.gif);background-repeat:no-repeat; background-position:5px 1px; color:#999;padding-left:19px;} 

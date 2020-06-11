@@ -1,0 +1,54 @@
+
+td.service {
+    padding-right: 2em;
+}
+
+td.header {
+    padding-right: 2em;
+    font-weight: bold;
+}
+
+a.service_menu_item {
+    font-size: 16px;
+    margin-right: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-weight: bold;
+}
+
+a.service_menu_item_selected {
+    background: #2173BF;
+    color: white;
+}
+
+a.service_menu_item_selected:hover {
+    background: white;
+    color: #2173BF;
+}
+
+
+div#service {
+    border-style: solid;
+    border-width: 0px;
+    border-color: red;
+}
+
+div#service_menu {
+    border-style: solid;
+    border-width: 0px;
+    border-color: red;
+}
+
+div#service_content {
+    border-style: solid;
+    border-width: 0px;
+    border-color: red;
+    margin: 1em;
+}
+
+table#plan_attr {
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+    margin-top: 1em;
+}

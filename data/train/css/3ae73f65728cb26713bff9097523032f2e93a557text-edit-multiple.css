@@ -1,0 +1,22 @@
+.text-edit-multiple {
+	margin: 0.5em 0;
+	height: 2em;
+	visibility: hidden; /* Prevent flicker on load, javascript will make visible when ready */
+}
+.text-edit-multiple .yui3-menu {
+	visibility: hidden; /* Prevent flicker on load, javascript will make visible when ready */
+}
+a.text-edit-multiple-add {
+	display: block;
+	margin: 0.3em 0;
+	padding: 0.3em;
+	border: 1px solid #FF9900;
+	background-color: #FFE5BF;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+}
+a.text-edit-multiple-add:hover {
+	background-color: #FFCA7C;
+}

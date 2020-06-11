@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  For more info on this file format visit http://docs.nuget.org/docs/reference/nuspec-reference.
+-->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">  
+  <metadata>
+    <id>ReturnNull.Seo.DuplicateContent</id>
+    <version>0.0.6</version>
+    <authors>dipunm</authors>
+    <description>Allows you to handle duplicate urls using permanent redirects and canonical meta tags.</description>
+    <language>en-GB</language>
+    <projectUrl>https://github.com/dipunm/SEO.DuplicateContent</projectUrl>
+    <licenseUrl>https://github.com/dipunm/SEO.DuplicateContent/blob/master/LICENCE</licenseUrl>
+  </metadata>
+</package>

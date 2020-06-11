@@ -1,0 +1,116 @@
+.Message .str {
+    color: #080;
+}
+
+.Message .kwd {
+    color: #008;
+}
+
+.Message .com {
+    color: #800;
+}
+
+.Message .typ {
+    color: #606;
+}
+
+.Message .lit {
+    color: #066;
+}
+
+.Message .pun {
+    color: #660;
+}
+
+.Message .pln {
+    color: #000;
+}
+
+.Message .tag {
+    color: #008;
+}
+
+.Message .atn {
+    color: #606;
+}
+
+.Message .atv {
+    color: #080;
+}
+
+.Message .dec {
+    color: #606;
+}
+
+.Message pre.prettyprint {
+padding: 5px;
+border: 1px solid #888;
+background:#ccc;
+}
+.Message pre.prettyprint li {
+margin: 0 0;
+}
+.Message ol.linenums {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 {
+    list-style-type:decimal!important; 
+   list-style:decimal!important;
+border-top: 1px solid #666;
+}
+
+li.L1, li.L3, li.L5, li.L7, li.L9 {
+background:#adadad;
+list-style: decimal!important;
+border-top: 1px solid #666;
+}
+.Message ol li {
+list-style: decimal !important;
+}
+@media print {
+    .Message .str {
+        color: #060;
+    }
+
+    .Message .kwd {
+        color: #006;
+        font-weight: bold;
+    }
+
+    .Message .com {
+        color: #600;
+        font-style: italic;
+    }
+
+.Message .typ {
+        color: #404;
+        font-weight: bold;
+    }
+
+    .Message .lit {
+        color: #044;
+    }
+
+    .Message .pun {
+        color: #440;
+    }
+
+    .Message .pln {
+        color: #000;
+    }
+
+   .Message .tag {
+        color: #006;
+        font-weight: bold;
+    }
+
+  .Message .atn {
+        color: #404;
+    }
+
+    .Message .atv {
+        color: #060;
+    }
+}

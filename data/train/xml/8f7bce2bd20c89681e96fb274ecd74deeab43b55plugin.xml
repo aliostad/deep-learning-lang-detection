@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="ProcessGenerator"
+            id="ProcessGenerator">
+      </category>
+      <view
+            name="ProcessGenerator"
+            icon="icons/process_generator.gif"
+            category="ProcessGenerator"
+            class="fr.lip6.move.processGenerator.views.ProcessGeneratorView"
+            id="ProcessGenerator.views.ProcessGeneratorView">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.jdt.ui.JavaPerspective">
+         <view
+               ratio="0.5"
+               relative="org.eclipse.ui.views.ProblemView"
+               relationship="right"
+               id="ProcessGenerator.views.ProcessGeneratorView">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.help.contexts">
+      <contexts
+            file="contexts.xml">
+      </contexts>
+   </extension>
+
+</plugin>

@@ -1,0 +1,52 @@
+01/22/15 15:49:29 -processSIGTERM_DA: entry.
+01/22/15 15:49:29 -processSIGTERM_DA:       /dev/disk1 /
+01/22/15 15:49:29 -processSIGTERM_DA:            devfs /dev
+01/22/15 15:49:29 -processSIGTERM_DA:       map -hosts /net
+01/22/15 15:49:29 -processSIGTERM_DA:    map auto_home /home
+01/22/15 15:49:29 -processSIGTERM_DA:     /dev/disk4s1 /Volumes/MediaHuman Audio Converter
+01/22/15 15:49:29 -processSIGTERM_DA: processing "disk4".
+01/22/15 15:49:29 -processSIGTERM_DA: unmount "disk4" failed (-119930879).
+01/22/15 15:49:29 -processSIGTERM_DA: FORCE unmount "disk4" failed (-119930879).
+01/22/15 15:49:29 -processSIGTERM_DA: eject "disk4" failed (-119930879).
+01/22/15 15:49:29 -processSIGTERM_DA: terminating.
+03/26/15 14:58:27 -processSIGTERM_DA: entry.
+03/26/15 14:58:27 -processSIGTERM_DA:       /dev/disk1 /
+03/26/15 14:58:27 -processSIGTERM_DA:            devfs /dev
+03/26/15 14:58:27 -processSIGTERM_DA:       map -hosts /net
+03/26/15 14:58:27 -processSIGTERM_DA:    map auto_home /home
+03/26/15 14:58:27 -processSIGTERM_DA: processing "disk2".
+03/26/15 14:58:27 -processSIGTERM_DA: unmount "disk2" failed (-119930879).
+03/26/15 14:58:27 -processSIGTERM_DA: FORCE unmount "disk2" failed (-119930879).
+03/26/15 14:58:27 -processSIGTERM_DA: eject "disk2" failed (-119930879).
+03/26/15 14:58:27 -processSIGTERM_DA: terminating.
+05/18/15 10:48:01 -processSIGTERM_DA: entry.
+05/18/15 10:48:01 -processSIGTERM_DA:       /dev/disk1 /
+05/18/15 10:48:01 -processSIGTERM_DA:            devfs /dev
+05/18/15 10:48:01 -processSIGTERM_DA:       map -hosts /net
+05/18/15 10:48:01 -processSIGTERM_DA:    map auto_home /home
+05/18/15 10:48:01 -processSIGTERM_DA:     /dev/disk3s1 /Volumes/Chromecast
+05/18/15 10:48:01 -processSIGTERM_DA: processing "disk3".
+05/18/15 10:48:01 -processSIGTERM_DA: unmount "disk3" failed (-119930879).
+05/18/15 10:48:01 -processSIGTERM_DA: FORCE unmount "disk3" failed (-119930879).
+05/18/15 10:48:01 -processSIGTERM_DA: eject "disk3" failed (-119930879).
+05/18/15 10:48:02 -processSIGTERM_DA: processing "disk2".
+05/18/15 10:48:02 -processSIGTERM_DA: unmount "disk2" failed (-119930879).
+05/18/15 10:48:02 -processSIGTERM_DA: FORCE unmount "disk2" failed (-119930879).
+05/18/15 10:48:02 -processSIGTERM_DA: eject "disk2" failed (-119930879).
+05/18/15 10:48:02 -processSIGTERM_DA: terminating.
+06/15/15 16:43:00 -processSIGTERM_DA: entry.
+06/15/15 16:43:00 -processSIGTERM_DA:       /dev/disk1 /
+06/15/15 16:43:00 -processSIGTERM_DA:            devfs /dev
+06/15/15 16:43:00 -processSIGTERM_DA:       map -hosts /net
+06/15/15 16:43:00 -processSIGTERM_DA:    map auto_home /home
+06/15/15 16:43:00 -processSIGTERM_DA:     /dev/disk2s1 /Volumes/HandBrake-0.10.1-MacOSX.6_GUI_x86_64
+06/15/15 16:43:00 -processSIGTERM_DA:     /dev/disk3s2 /Volumes/Sublime Text 2
+06/15/15 16:43:00 -processSIGTERM_DA: processing "disk3".
+06/15/15 16:43:00 -processSIGTERM_DA: unmount "disk3" failed (-119930879).
+06/15/15 16:43:00 -processSIGTERM_DA: FORCE unmount "disk3" failed (-119930879).
+06/15/15 16:43:00 -processSIGTERM_DA: eject "disk3" failed (-119930879).
+06/15/15 16:43:00 -processSIGTERM_DA: processing "disk2".
+06/15/15 16:43:00 -processSIGTERM_DA: unmount "disk2" failed (-119930879).
+06/15/15 16:43:00 -processSIGTERM_DA: FORCE unmount "disk2" failed (-119930879).
+06/15/15 16:43:00 -processSIGTERM_DA: eject "disk2" failed (-119930879).
+06/15/15 16:43:00 -processSIGTERM_DA: terminating.

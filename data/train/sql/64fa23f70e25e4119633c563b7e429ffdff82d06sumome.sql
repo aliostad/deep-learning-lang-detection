@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4239, "Double your Email Subscribers + Double your Sharing by SumoMe", "4.0", "4.5", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74374, 4239, "sumome_plugin_settings_link", "/sumome.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525606, 4239, "WP_Plugin_SumoMe", "deactivate", "/sumome.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525607, 4239, "WP_Plugin_SumoMe", "append_admin_script_code", "/sumome.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525608, 4239, "WP_Plugin_SumoMe", "sanitize_site_id", "/sumome.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525609, 4239, "WP_Plugin_SumoMe", "plugin_settings_page", "/sumome.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525610, 4239, "WP_Plugin_SumoMe", "settings_field_site_id", "/sumome.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525611, 4239, "WP_Plugin_SumoMe", "__construct", "/sumome.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525612, 4239, "WP_Plugin_SumoMe", "append_script_code", "/sumome.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525613, 4239, "WP_Plugin_SumoMe", "check_generate_site_id", "/sumome.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525614, 4239, "WP_Plugin_SumoMe", "admin_menu", "/sumome.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525615, 4239, "WP_Plugin_SumoMe", "admin_init", "/sumome.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525616, 4239, "WP_Plugin_SumoMe", "activate", "/sumome.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45655, 4239, "admin_menu", "array(&$this,'admin_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45656, 4239, "admin_init", "array(&$this,'admin_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45657, 4239, "admin_head", "array(&$this,'append_admin_script_code')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45658, 4239, "wp_head", "array(&$this,'append_script_code')", 10, now(), now());

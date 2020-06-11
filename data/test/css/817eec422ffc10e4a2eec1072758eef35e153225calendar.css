@@ -1,0 +1,134 @@
+/* Default Calendar Css Copy */
+
+#NavigationBar,
+#ViewBar {
+	overflow: hidden;
+}
+
+#NavigationBar div,
+#ViewBar div {
+	float: left;
+	margin: 10px 2px;
+	padding: 0;
+}
+
+#NavigationBar .current,
+#ViewBar .current {
+	font-weight: bold;
+}
+
+#NavigationBar a,
+#NavigationBar .current,
+#ViewBar a,
+#ViewBar .current {
+	background: #FFFFFF none repeat scroll 0% 50%;
+	border: 1px solid #DDDDDD;
+	padding: 2px 6px;
+	text-decoration: none;
+}
+
+#NavigationBar a:hover,
+#ViewBar a:hover {
+	text-decoration: none;
+}
+
+#YearView a,
+#MonthView a,
+#WeekView a,
+#DayView a {
+	padding: 2px;
+}
+
+#YearView th,
+#MonthView th,
+#WeekView th,
+#DayView th {
+	width: 70px;
+	text-align: center;
+	padding: 0 0 2px 0;
+}
+
+#WeekView th#Time,
+#DayView th#Time {
+	width: inherit;
+}
+
+#DayView th.categorie {
+	width: inherit;
+	padding: 0 6px 2px;
+}
+
+#YearView td,
+#MonthView td,
+#WeekView td,
+#DayView td {
+	text-align: center;
+}
+
+/* BlackCandy Css */
+
+#NavigationBar,
+#ViewBar {
+	margin: 0 auto;
+	font-size: 12px;
+}
+
+#NavigationBar {
+	width: 55%;
+}
+
+#ViewBar {
+	width: 84%;
+}
+
+#NavigationBar .current,
+#ViewBar .current {
+	color: #E31212;
+}
+
+#NavigationBar a:hover,
+#ViewBar a:hover {
+	background: #EFECEC none repeat scroll 0%;
+}
+
+#YearView {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#YearView table,
+#MonthView table,
+#WeekView table,
+#DayView table {
+	margin: 0 auto;
+}
+
+td.prevmonth,
+td.nextmonth {
+	background: #eee;
+}
+
+td.today p,
+td.today p a,
+td#Today p,
+td#Today p a {
+	font-weight: bold;
+	color: #E31212;
+}
+
+#WeekView td.today,
+#DayView td.today {
+	background: #def;
+}
+
+td#TodayNow,
+td.todayNow {
+	background: #bcf;
+}
+
+td.prevmonth p,
+td.prevmonth p a,
+td.nextmonth p a,
+td.nextmonth p {
+	color: #999;
+}

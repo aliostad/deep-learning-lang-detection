@@ -1,0 +1,116 @@
+/**
+ * The CSS for the LateLoad project.
+ *
+ *  Date     Who Major changes
+ * --------- --- ----------------------------------------------------------------------------------
+ * 02may2012 jls Created.
+ */
+
+H2 {
+	margin-top: 16px;
+	font-family: Trebuchet MS;
+	font-size: 18px;
+}
+
+H3 {
+	margin-top: 16px;
+}
+
+TABLE.open {
+	margin-left: 4%;
+	border-spacing: 8px;
+	width: 90%;
+}
+
+TABLE.open TH {
+	margin-bottom: 4px;
+	border-bottom: 1px solid #aaaaaa;
+}
+
+TABLE.open > TBODY > TR > TD {
+	vertical-align: top;
+	border-color: white;
+	border-style: solid;
+	border-width: 3px 1px;
+}
+
+TABLE.open > TBODY > TR > TD:first-child {
+	font-weight: bold;
+}
+
+
+.api-docs .method {
+	margin-top: 16px;
+}
+
+.api-docs .signature {
+	margin-bottom: 12px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.api-docs .section-title {
+	margin-top: 8px;
+	margin-bottom: 0;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.api-docs .section {
+	margin: auto 16px;
+}
+
+.api-docs .title-optional {
+	margin-top: 4px;
+	margin-bottom: 0;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.api-docs .params {
+	border: 3px;
+	background-color: #dddddd;
+	width: 100%;
+}
+
+.api-docs TD {
+	padding: 4px;
+}
+
+.api-docs .params TH:first-child,
+.api-docs .params TD:first-child {
+	width: 120px;
+}
+
+.api-docs .params > TBODY > TR > TD {
+	vertical-align: top;
+	border-color: white;
+	border-style: solid;
+	border-width: 3px 1px;
+}
+
+.api-docs .param-values {
+	margin-top: 8px;
+}
+
+.api-docs .param-values TH {
+	margin-bottom: 4px;
+	border-bottom: 2px solid #aaaaaa;
+	font-weight: bold;
+}
+
+.api-docs .param-values TH:first-child,
+.api-docs .param-values TD:first-child {
+	width: 120px;
+}
+
+.api-docs .param-values TD {
+	margin-bottom: 4px;
+	border-bottom: 1px solid #bbbbbb;
+	padding: 4px;
+	vertical-align: top;
+}
+
+.api-docs .param-values TR.last-child TD {
+	border-bottom: 0px;
+}

@@ -1,0 +1,179 @@
+#!/bin/bash
+#
+# carton_repo.sh tests
+#
+# Copyright (c) 2013 Red Hat, Inc. All rights reserved.
+#
+# This copyrighted material is made available to anyone wishing
+# to use, modify, copy, or redistribute it subject to the terms
+# and conditions of the GNU General Public License version 2.
+#
+# This program is distributed in the hope that it will be
+# useful, but WITHOUT ANY WARRANTY; without even the implied
+# warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+# PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public
+# License along with this program; if not, write to the Free
+# Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+# Boston, MA 02110-1301, USA.
+
+eval "`ep_env && carton-env || echo exit 1`"
+. test_git.sh
+. ep.sh
+. thud_arr.sh
+ep_suite_init "$@"
+
+. carton_commit.sh
+
+declare -r DATA_DIR=`mktemp --tmpdir -d carton-test.XXXXXXXX`
+ep_teardown_push rm -Rf "$DATA_DIR"
+declare -r WORK_DIR="$DATA_DIR/work"
+test_git_make "$WORK_DIR"
+declare GIT_DIR="$WORK_DIR/.git"
+declare -r COMMIT_DIR="$DATA_DIR/commit"
+mkdir "$COMMIT_DIR"
+declare commit_str
+commit_str=`carton_commit_init 0123abc "$COMMIT_DIR" < <(
+    GIT_DIR="$GIT_DIR" git archive --format=tar "v2"
+)`
+declare rev_str
+rev_str=`carton_commit_add_rev "$commit_str" 1`
+declare -r REPO_DIR="$DATA_DIR/repo"
+
+# Workaround vim subshell syntax highlighting issue
+{
+
+ep_test_begin source; (
+    ep_test_init
+    . carton_repo.sh
+); ep_test_end
+
+. carton_repo.sh
+
+ep_suite_begin init; (
+    ep_suite_init
+
+    ep_suite_begin exec; (
+        ep_suite_init
+        mkdir "$REPO_DIR"
+        ep_teardown_push rm -Rf "$REPO_DIR"
+        ep_test_begin do; (
+            ep_test_init
+            carton_repo_init "$REPO_DIR" >/dev/null
+        ); ep_test_end
+    ); ep_suite_end
+
+    ep_suite_begin verify; (
+        ep_suite_init
+        mkdir "$REPO_DIR"
+        ep_teardown_push rm -Rf "$REPO_DIR"
+        declare repo_str
+        repo_str=`carton_repo_init "$REPO_DIR"`
+        declare -A repo=()
+        thud_arr_parse repo <<<"$repo_str"
+        ep_test dir_exists test -d "${repo[dir]}"
+    ); ep_suite_end
+); ep_suite_end
+
+ep_suite_begin load; (
+    ep_suite_init
+    mkdir "$REPO_DIR"
+    ep_teardown_push rm -Rf "$REPO_DIR"
+    carton_repo_init "$REPO_DIR" >/dev/null
+
+    ep_test_begin exec; (
+        ep_test_init
+        carton_repo_load "$REPO_DIR" >/dev/null
+    ); ep_test_end
+
+    ep_suite_begin verify; (
+        ep_suite_init
+        declare repo_str
+        repo_str=`carton_repo_load "$REPO_DIR"`
+        declare -A repo=()
+        thud_arr_parse repo <<<"$repo_str"
+        ep_test dir_exists test -d "${repo[dir]}"
+    ); ep_suite_end
+); ep_suite_end
+
+ep_suite_begin publish; (
+    ep_suite_init
+
+    ep_suite_begin exec; (
+        ep_suite_init
+        mkdir "$REPO_DIR"
+        ep_teardown_push rm -Rf "$REPO_DIR"
+        declare repo_str
+        repo_str=`carton_repo_init "$REPO_DIR"`
+        ep_test_begin do; (
+            ep_test_init
+            carton_repo_publish "$repo_str" "$rev_str"
+        ); ep_test_end
+    ); ep_suite_end
+
+    ep_suite_begin verify; (
+        ep_suite_init
+        mkdir "$REPO_DIR"
+        ep_teardown_push rm -Rf "$REPO_DIR"
+        declare repo_str
+        repo_str=`carton_repo_init "$REPO_DIR"`
+        declare -A repo=()
+        thud_arr_parse repo <<<"$repo_str"
+        carton_repo_publish "$repo_str" "$rev_str"
+        ep_test rpm test -f "${repo[rpm_link]}/carton-test-2-1.1.1.0123abc."*noarch.rpm
+        ep_test srpm test -f "${repo[rpm_link]}/carton-test-2-1.1.1.0123abc."*src.rpm
+    ); ep_suite_end
+); ep_suite_end
+
+ep_suite_begin withdraw; (
+    ep_suite_init
+
+    ep_suite_begin exec; (
+        ep_suite_init
+        mkdir "$REPO_DIR"
+        ep_teardown_push rm -Rf "$REPO_DIR"
+        declare repo_str
+        repo_str=`carton_repo_init "$REPO_DIR"`
+        carton_repo_publish "$repo_str" "$rev_str"
+        ep_test_begin do; (
+            ep_test_init
+            carton_repo_withdraw "$repo_str" "$rev_str"
+        ); ep_test_end
+    ); ep_suite_end
+
+    ep_suite_begin verify; (
+        ep_suite_init
+        mkdir "$REPO_DIR"
+        ep_teardown_push rm -Rf "$REPO_DIR"
+        declare repo_str
+        repo_str=`carton_repo_init "$REPO_DIR"`
+        declare -A repo=()
+        thud_arr_parse repo <<<"$repo_str"
+        carton_repo_publish "$repo_str" "$rev_str"
+        carton_repo_withdraw "$repo_str" "$rev_str"
+        ep_test rpm eval \
+                '! test -f "${repo[rpm_link]}/carton-test-2-1.1.1.0123abc."*noarch.rpm'
+        ep_test srpm eval \
+                '! test -f "${repo[rpm_link]}/carton-test-2-1.1.1.0123abc."*src.rpm'
+    ); ep_suite_end
+); ep_suite_end
+
+ep_suite_begin is_published; (
+    ep_suite_init
+    mkdir "$REPO_DIR"
+    ep_teardown_push rm -Rf "$REPO_DIR"
+    declare repo_str
+    repo_str=`carton_repo_init "$REPO_DIR"`
+    ep_test_begin false -e 1; (
+        ep_test_init
+        carton_repo_is_published "$repo_str" "$rev_str"
+    ); ep_test_end
+    carton_repo_publish "$repo_str" "$rev_str"
+    ep_test_begin true -e 0; (
+        ep_test_init
+        carton_repo_is_published "$repo_str" "$rev_str"
+    ); ep_test_end
+); ep_suite_end
+
+} # Workaround vim subshell syntax highlighting issue

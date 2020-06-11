@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<marionette_info>
+  <permitted_error_messages>
+    <message type="contains"> is incompatible with display refresh rate </message>
+    <message type="starts_with" max_matches="3">WARNING: Scheduled action is starting</message>
+  </permitted_error_messages>
+  <expected_messages>
+    <message type="whole_message">Pausing state system</message>
+    <message type="whole_message">Resuming paused state system</message>
+    <message type="whole_message">Pausing state system</message>
+    <message type="whole_message">Resuming paused state system</message>
+    <message type="whole_message">Pausing state system</message>
+    <message type="whole_message">Resuming paused state system</message>
+  </expected_messages>
+</marionette_info>

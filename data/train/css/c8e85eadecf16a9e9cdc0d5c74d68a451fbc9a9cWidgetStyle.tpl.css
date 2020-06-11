@@ -1,0 +1,191 @@
+/*
+ * Aria Templates 1.3.2 - 11 Dec 2012
+ *
+ * Copyright 2009-2012 Amadeus s.a.s.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+{CSSTemplate {
+    $classpath : "aria.widgets.WidgetStyle",
+    $dependencies : ["aria.widgets.AriaSkinInterface"],
+    $hasScript: true
+}}
+
+    {var skinnableClassName="Widget"/}
+    {var useFrame=false/}
+    
+    {macro main()}
+        {call startLooping()/}
+    {/macro}
+
+    {macro startLooping()}
+        {var skinClasses=aria.widgets.AriaSkinInterface.getSkinClasses(skinnableClassName)/}
+        {foreach skinClass in skinClasses}
+            {var info={
+                skinClassName: skinClass_index,
+                skinClass: skinClass
+            }/}
+            {call writeSkinClass(info)/}
+            {call writeAllStates(info)/}
+        {/foreach}
+    {/macro}
+
+    {macro writeAllStates(info)}
+        {var states=aria.widgets.AriaSkinInterface.getWidgetStates(skinnableClassName)/}
+        {if states}
+            {foreach state in states}
+                {var info={
+                    skinClassName: info.skinClassName,
+                    skinClass: info.skinClass,
+                    stateName: state_index,
+                    state: info.skinClass.states[state_index]
+                }/}
+                {if useFrame}
+                    {call writeStateOfFrame(info)/}
+                {/if}
+                {call writeState(info)/}
+            {/foreach}
+        {/if}
+    {/macro}
+
+    {macro writeSkinClass(info)}
+        // to be overridden
+    {/macro}
+
+    {macro writeState(info)}
+        // to be overridden
+    {/macro}
+    
+    {macro background(color,imageurl,otherparams)}
+        {checkDefault color=""/}
+        {checkDefault imageurl=""/}
+        {checkDefault otherparams=""/}
+        ${aria.widgets.AriaSkinInterface.backgroundMacro(color,imageurl,otherparams)}
+    {/macro}
+    
+    {macro opacity(percent)}
+        filter: alpha(opacity=${percent});
+        -moz-opacity: ${percent/100};
+        opacity: ${percent/100};
+    {/macro}
+
+    // Macros for frames:
+
+    /*{macro writeStateOfFrame(info)}
+        {var sprType=info.skinClass.sprType/}
+        {if sprType==}
+            {call writeStateOfTableFrame(info)/}
+        {elseif sprType==""/}
+            {call writeStateOfFixedHeightFrame(info)/}
+        {elseif sprType==6/}
+            {call writeStateOfSimpleFrame(info)/}
+        {/if}        
+    {/macro}*/
+    
+    {macro writeStateOfFixedHeightFrame(info)}
+        {var state=info.state.frame/}
+        {var sprWidth=state.sprWidth/}
+        {var sprHeight=state.sprHeight/}
+        {var sprIndex=state.sprIdx/}
+        {var sprSpacing=state.sprSpacing/}
+        {var refTop=(sprHeight+sprSpacing)*sprIndex/}
+        {var spcLeft=state.spcLeft/}
+        {var spcRight=sprWidth-spcLeft/}
+        {var prefix=cssPrefix(info)/}
+
+        .${prefix}bkgA {
+            {call background("transparent",state.spriteURL,"no-repeat scroll 0 0")/}
+            font-size:1px;
+        }
+        .${prefix}bkgB {
+            {call background("transparent",state.spriteURLv,"repeat-x 0 0")/}
+        }
+        .${prefix}w {
+            height:${sprHeight}px;
+        }
+        .${prefix}c {
+            margin: ${state.marginTop}px ${state.marginRight}px ${state.marginBottom}px ${state.marginLeft}px;
+            color: ${state.color};
+        }
+        {if state.skipLeftBorder!=true}
+        .${prefix}b {width:${spcLeft}px; height:${sprHeight}px; background-position:0 ${-refTop}px;}
+        {/if}
+        .${prefix}m {height:${sprHeight}px; background-position:0 ${-refTop}px;}
+        {if state.skipRightBorder!=true}
+        .${prefix}e {width:${spcRight}px; height:${sprHeight}px; background-position: ${-spcLeft}px ${-refTop}px;}
+        {/if}
+    {/macro}
+
+    {macro writeStateOfSimpleFrame(info)}
+        {var state=info.state.frame/}
+        {var padTop=state.paddingTop/}
+        .${cssPrefix(info)}frame  {
+            border: ${state.borderSize}px ${state.border} ${state.borderColor};
+            padding: ${state.paddingTop}px ${state.paddingRight}px ${state.paddingBottom}px ${state.paddingLeft}px;
+            {if (padTop>1)}
+            *padding-top: ${padTop-1}px;
+            {/if}
+            background-color: ${state.backgroundColor};
+            color: ${state.color};
+            vertical-align: top;
+        }
+    {/macro}
+
+    {macro writeStateOfTableFrame(info)}
+        {var state=info.state.frame/}
+        {var sprWidth=state.sprWidth/}
+        {var sprHeight=state.sprHeight/}
+        {var sprIndex=state.sprIdx/}
+        {var sprSpacing=state.sprSpacing/}
+        {var refTop=(sprHeight+sprSpacing)*sprIndex/}
+        {var refLeft=(sprWidth+sprSpacing)*sprIndex/}
+        {var spcLeft=state.spcLeft/}
+        {var spcTop=state.spcTop/}
+        {var spcRight=sprWidth-spcLeft/}
+        {var spcBottom=sprHeight-spcTop/}
+        {var prefix=cssPrefix(info)/}
+
+        .${prefix}bkgA {
+            {call background("transparent",state.spriteURL,"no-repeat scroll 0 0")/}
+            font-size:1px;
+        }
+        .${prefix}bkgB {
+            {call background("transparent",state.spriteURLv,"repeat-x 0 0")/}
+            font-size:1px;
+        }
+        .${prefix}bkgC {
+            {call background("transparent",state.spriteURLh,"repeat-y 0 0")/}
+            font-size:1px;
+        }
+        .${prefix}c {
+            margin: ${state.marginTop}px ${state.marginRight}px ${state.marginBottom}px ${state.marginLeft}px;
+            color: ${state.color};
+        }
+        .${prefix}m {
+            background-color: ${state.backgroundColor};
+        }
+        .${prefix}tlc {width:${spcLeft}px; height:${spcTop}px; background-position:0 ${-refTop}px;}
+        .${prefix}ts {height:${spcTop}px; background-position:0 ${-refTop}px; }
+        .${prefix}trc {width:${spcRight}px; height:${spcTop}px; background-position: ${-spcLeft}px ${-refTop}px;}
+        .${prefix}rs {width:${spcRight}px; background-position:${-refLeft-spcLeft}px 0;}
+        .${prefix}brc {width:${spcRight}px; height:${spcBottom}px; background-position: ${-spcLeft}px ${-refTop-spcTop}px;}
+        .${prefix}bs {height: ${spcBottom}px; background-position:0 ${-refTop-spcTop}px;}
+        .${prefix}blc {width:${spcLeft}px; height:${spcBottom}px; background-position: 0 ${-refTop-spcTop}px;}
+        .${prefix}ls {width: ${spcLeft}px; background-position:${-refLeft}px 0;}
+        .${prefix}frameIcon {
+                display: block;
+                height:${state.frameHeight}px;
+                {call background("",state.frameIcon,"no-repeat "+state.frameIconHPos)/}
+        }
+    {/macro}
+
+{/CSSTemplate}

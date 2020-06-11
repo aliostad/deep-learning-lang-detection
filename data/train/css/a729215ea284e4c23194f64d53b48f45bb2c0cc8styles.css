@@ -1,0 +1,38 @@
+<?php
+
+// Load CSS compressor
+//$minify = Jackal::loadLibrary("compressCSS");
+
+//
+// This file will load all UI element styles into one stylesheet, faster on the browser
+//
+
+$gradients = Jackal::setting("gradients");
+Jackal::loadHelper("url");
+Jackal::loadHelper("browser");
+
+// Path to include other styles
+$path = dirname(__FILE__)."/css";
+
+// List of files to include
+$css = array(
+	"reset",
+	"template",
+	"tests"
+);
+
+// Now include all the CSS
+foreach ($css as $file) {
+	// ob_start();
+	// echo "/* $file */\n";
+	include("$path/$file.css");
+	echo "\n\n";
+	// $buffer = ob_get_contents();
+	// ob_end_clean();
+	// 
+	// // Compress and output the CSS
+	// $buffer = $minify->process($buffer);
+	// echo $buffer;
+}
+
+?>

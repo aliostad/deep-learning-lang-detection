@@ -1,0 +1,42 @@
+.service-body .jumbotron {
+	height: 358px;
+	background: url(../images/service-01.jpg);
+	/*background-position: -350px 0px;*/
+    background-size: 100% 100%;
+}
+
+.service-body .service-info .container{
+	background-color: #ffffff;
+}
+
+.service-body .service-info .container .title {
+	padding: 76px 0px;
+	text-align: center;
+	border-bottom: 1px solid #a0a0a0;
+}
+
+.service-body .service-info .container .content {
+	padding: 50px 60px 75px 60px;
+}
+
+.service-body .service-info .container .content p{
+	margin-top: 18px;
+	color: #000000;
+	font-size: 16px;
+}
+
+.service-body .service-info .container .content .phone img{
+	margin-top: 170px;
+	border:1px solid #a0a0a0;
+}
+
+
+.service-body .service-info .container .table {
+	margin-top: 28px;
+	width: 842px;
+	text-align: center;
+}
+
+.service-body .service-info .container .table tbody td{
+	color: #a0a0a0;
+}

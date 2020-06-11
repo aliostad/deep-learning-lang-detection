@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<openerp>
+    <data>
+
+        <record id="quality_duplicate_protocol_form" model="ir.ui.view">
+            <field name="name">quality.duplicate.protocol.form</field>
+            <field name="model">quality.duplicate.protocol</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Duplicate protocol">
+                    <group>
+                        <field name="product_ids" widget="many2many_tags"/>
+                    </group>
+                    <button string="duplicate" name="duplicate" type="object" icon="gtk-ok"/>
+                    <button string="Cancel" special="cancel" icon="gtk-cancel"/>
+                </form>
+            </field>
+        </record>
+
+        <act_window name="Duplicate protocol"
+            res_model="quality.duplicate.protocol"
+            view_id="quality_duplicate_protocol_form"
+            view_mode="form"
+            target="new"
+            id="action_duplicate_protocol"/>
+
+    </data>
+</openerp>
+

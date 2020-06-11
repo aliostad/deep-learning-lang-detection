@@ -1,0 +1,47 @@
+#!/bin/bash
+
+#./etc/rc.d/init.d/functions    #descomente/modifique para su killproc
+
+BIN="/usr/local/bin"
+PROCESS="noip2"
+DESC="Noip update tool"
+
+
+case "$1" in
+  start)
+        if pidof -o %PPID $PROCESS > /dev/null; then
+                echo "$PROCESS already running..."
+                exit 0
+        else
+                echo "Starting $PROCESS..."
+                $BIN/$PROCESS
+        fi
+  ;;
+  stop)
+        if pidof -o %PPID $PROCESS > /dev/null; then
+            echo -n "Stopping $PROCESS..."
+            killall $PROCESS
+        else
+            echo "Process $PROCESS already stopped..."
+            exit 0
+        fi
+  ;;
+  status)
+   if pidof -o %PPID $PROCESS >/dev/null; then
+       echo "Process $PROCESS is running"
+   else
+       echo "Process $PROCESS not running"
+   fi
+   exit 0 
+  ;;
+  restart)
+    echo "Not implemented"
+    exit 0
+  ;;
+  *)
+    echo "Uso: $0 {start|stop|restart|status}"
+    exit 1
+
+esac
+exit 0
+

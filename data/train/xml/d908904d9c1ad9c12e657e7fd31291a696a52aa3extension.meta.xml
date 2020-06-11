@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="duplicate_entry">
+	<name>Duplicate Entry</name>
+	<description>Adds a "Save as New" button when editing an existing entry.</description>
+	<repo type="github">https://github.com/nickdunn/duplicate_entry</repo>
+	<url type="discuss">http://symphony-cms.com/discuss/thread/29873/</url>
+	<types>
+		<type>Workflow</type>
+	</types>
+	<authors>
+		<author>
+			<name github="nickdunn" symphony="nickdunn">Nick Dunn</name>
+			<website>http://nick-dunn.co.uk</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="1.2" date="2010-11-29" min="2.0.6" />
+	</releases>
+</extension>

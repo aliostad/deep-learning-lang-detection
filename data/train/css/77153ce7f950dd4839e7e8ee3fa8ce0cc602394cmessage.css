@@ -1,0 +1,65 @@
+.message
+{
+	margin-top: 15px;
+}
+
+.message .timestamp
+{
+	float: right;
+}
+
+.message a
+{
+	border: none;
+	color: black;
+}
+
+.message .user_avatar
+{
+	width: 50px;
+	height: 67px;
+	float: left;
+	clear: left;
+}
+
+.message .standard .container
+{
+	background: url('http://images.hamsterpaj.net/message/message_entry_fill.png');
+	margin-left: 48px;
+	width: 590px;
+}
+
+.message .standard .top_bg
+{
+	background: url('http://images.hamsterpaj.net/message/message_entry_top.png') no-repeat;
+	padding-top: 3px;
+}
+
+.message .standard .bottom_bg
+{
+	padding-bottom: 3px;
+	padding-left: 20px;
+	padding-right: 3px;
+	background: url('http://images.hamsterpaj.net/message/message_entry_bottom.png') no-repeat left bottom;
+}
+
+.message .unread .container
+{
+	background: url('http://images.hamsterpaj.net/message/message_unread_entry_fill.png');
+		margin-left: 48px;
+	width: 590px;
+}
+
+.message .unread .top_bg
+{
+	background: url('http://images.hamsterpaj.net/message/message_unread_entry_top.png') no-repeat;
+	padding-top: 3px;
+}
+
+.message .unread .bottom_bg
+{
+	background: url('http://images.hamsterpaj.net/message/message_unread_entry_bottom.png') no-repeat left bottom;
+	padding-bottom: 3px;
+	padding-left: 20px;
+	padding-right: 3px;
+}

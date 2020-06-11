@@ -1,0 +1,21 @@
+<?php
+
+class APIResponseCode
+{
+    const API_SUCCESS = 0;
+    const API_INVALID_CLASSNAME = 1;
+    const API_INVALID_METHOD = 2;
+    const API_INVALID_METHOD_PARAMS = 3;
+    const API_INVALID_FORMAT = 4;
+    const API_INVALID_CODER = 5;
+    const API_INVALID_ID = 10;
+    
+    const API_RESOURCE_CREATE_ERROR = 100;
+    const API_RESOURCE_UPDATE_ERROR = 101;
+    const API_RESOURCE_DELETE_ERROR = 102;
+    
+    const API_SHEMA_CREATE_ERROR = 200;
+    const API_SHEMA_UPDATE_ERROR = 201;
+    const API_SHEMA_DELETE_ERROR = 202;
+    const API_INVALID_SHEMA_TYPE = 203;
+}

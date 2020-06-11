@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="splash"
+        android:summary="Shows a splash screen at startup"
+        android:title="Splash" />
+    <CheckBoxPreference
+        android:key="duplicate"
+        android:summaryOff="Display unique reports"
+        android:summaryOn="Display Duplicate Reports"
+        android:title="Display Duplicate Reports"
+        android:defaultValue="true" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="gamification"
+        android:summaryOff="Gamification is off."
+        android:summaryOn="You will receive points for eack good deed!"
+        android:title="Gamification" />
+
+</PreferenceScreen>

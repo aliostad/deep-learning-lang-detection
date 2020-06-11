@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+    <message id="blases.score">
+        Счет: $0
+    </message>
+
+    <message id="blases.bubbles">
+        Пузыри: $0
+    </message>
+
+    <message id="level.start">
+        Старт
+    </message>
+
+    <message id="level.finish">
+        Финиш
+    </message>
+
+    <message id="button.back">
+        Назад
+    </message>
+
+    <message id="button.newgame">
+        Новая игра
+    </message>
+
+    <message id="button.options">
+        Настройки
+    </message>
+
+    <message id="button.help">
+        Справка
+    </message>
+
+    <message id="button.exit">
+        Выход
+    </message>
+
+    <message id="button.screen">
+        Экран
+    </message>
+
+    <message id="button.continue">
+        Продолжить
+    </message>
+
+    <message id="button.nextlevel">
+        Следующий уровень
+    </message>
+
+    <message id="button.replaylevel">
+        Уровень сначала
+    </message>
+
+    <message id="button.tomainmenu">
+        В главное меню
+    </message>
+
+    <message id="button.playallagain">
+        Начать сначала
+    </message>
+
+    <message id="button.levels">
+        Уровни
+    </message>
+
+    <message id="level.stats">
+        Лучший счет: $0 Выпущено пузырей: $1
+    </message>
+
+    <message id="bonus1.condition">
+        Пройди уровни 1-6, потратив не больше 30 пузырей
+    </message>
+
+    <message id="pause.winlevel">
+Уровень пройден! Очки за уровень: $0
+Общий счет: $1
+    </message>
+
+    <message id="pause.wingame">
+        Вы прошли игру! Итоговый счет: $0
+    </message>
+
+    <message id="pause.lose">
+        Вы проиграли. Итоговый счет: $0
+    </message>
+
+    <message id="pause.pause">
+        Пауза
+    </message>
+
+    <message id="help.helptext">
+Помоги мыльным пузырям добраться до финиша!
+
+Управление:
+Левый клик - выстрелить новый пузырь, либо выбрать
+существующий
+Шифт+Левый клик - выстрелить новый пузырь, сохранив
+текущий выбор
+Правый клик - лопнуть пузырь
+Пробел - Остановить текущий выбранный пузырь
+Эскейп - пауза
+    </message>
+
+    <message id="button.language">
+        Язык
+    </message>
+
+    <message id="button.russian">
+        Русский
+    </message>
+
+    <message id="button.english">
+        Английский
+    </message>
+</messages>

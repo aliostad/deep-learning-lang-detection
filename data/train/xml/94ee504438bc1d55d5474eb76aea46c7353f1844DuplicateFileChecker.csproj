@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5417FF48-2AAF-425F-AC2E-AB03D5CAA9E3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DuplicateFileChecker</RootNamespace>
+    <AssemblyName>DuplicateFileChecker</AssemblyName>
+    <StartupObject>DuplicateFileChecker.MainClass</StartupObject>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <Commandlineparameters>G:\driver</Commandlineparameters>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+    <Commandlineparameters>"G:\Development Tools"</Commandlineparameters>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="ExitCodes.cs" />
+    <Compile Include="DirectoryWalker.cs" />
+    <Compile Include="DuplicateDetector.cs" />
+    <Compile Include="ReportPrinter.cs" />
+    <Compile Include="DuplicateStrategy.cs" />
+    <Compile Include="Strategies\FileSizeDuplicate.cs" />
+    <Compile Include="Strategies\FirstHundredBytesDuplicate.cs" />
+    <Compile Include="Printers\ConsolePrinter.cs" />
+    <Compile Include="Printers\ConsoleTreePrinter.cs" />
+    <Compile Include="Strategies\SHA256Duplicate.cs" />
+    <Compile Include="Strategies\LastHundredBytesDuplicate.cs" />
+    <Compile Include="Strategies\StrategyLoader.cs" />
+    <Compile Include="Strategies\StrategyProvider.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Strategies\" />
+    <Folder Include="Printers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DuplicateStrategyAddin\DuplicateStrategyAddin.csproj">
+      <Project>{DC6B2965-8865-4D72-996A-A834D8299F22}</Project>
+      <Name>DuplicateStrategyAddin</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

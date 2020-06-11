@@ -1,0 +1,33 @@
+@view(sc-button-view.sc-checkbox-view),
+.sc-checkbox-control {
+  color: #525252;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, .75);
+  line-height: 18px;
+  vertical-align: middle;
+}
+
+@view(sc-checkbox-view) .label,
+.sc-checkbox-control .label {
+  position: absolute;
+  left: 20px;
+  color:#525252;
+  font-weight:normal;
+  line-height: 16px;
+}
+
+@view(sc-checkbox-view) input,
+.sc-checkbox-control input {
+  visibility: hidden;
+  z-index: 1;
+}
+
+@view(sc-button-view.sc-checkbox-view).sel, @view(sc-button-view.sc-checkbox-view).active,
+.sc-checkbox-control.sel, .sc-checkbox-control.active {
+  color: black;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, .75);
+}
+
+@view(sc-checkbox-view).disabled,
+.sc-checkbox-control.disabled {
+  opacity: 1;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="https://www.semantiknit.com/ontologies/KIDS-TBOX.owl" uri="KIDS-TBOX.owl"/>
+    <uri id="Imports Wizard Entry" name="http://solomon.cs.iastate.edu/ontologies/KIDS.owl" uri="KIDS-TBOX.owl"/>
+    <group id="Folder Repository, directory=file:/Users/cstras/Documents/academic-research/projects/2010-PhD-SignalBasedSemanticIDRSMeasurement/KIDS/resources/ontologies/KIDS/, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1426435317138" name="duplicate:http://solomon.cs.iastate.edu/ontologies/KIDS.owl" uri="KIDS-TBOX.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426435317138" name="duplicate:http://solomon.cs.iastate.edu/ontologies/KIDS.owl" uri="kids.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426435317138" name="duplicate:http://www.semantiknit.com/ontologies/2014/03/29/CodeRedExperiment3.owl" uri="ABOX-CodeRed-2013MeasurementPaper-logsOnly.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426435317138" name="duplicate:http://www.semantiknit.com/ontologies/2014/03/29/CodeRedExperiment3.owl" uri="ABOX-CodeRed-2013MeasurementPaper-malPacketsOnly-orig.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426435317138" name="duplicate:http://www.semantiknit.com/ontologies/2014/03/29/CodeRedExperiment3.owl" uri="ABOX-CodeRed-2013MeasurementPaper-malPacketsOnly.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426435317138" name="duplicate:http://www.semantiknit.com/ontologies/2014/03/29/CodeRedExperiment3.owl" uri="ABOX-CodeRed-2013MeasurementPaper-noFakes.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426435317138" name="duplicate:http://www.semantiknit.com/ontologies/2014/03/29/CodeRedExperiment3.owl" uri="ABOX-CodeRed-2013MeasurementPaper-withFakes-test1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426435317138" name="duplicate:http://www.semantiknit.com/ontologies/2014/03/29/CodeRedExperiment3.owl" uri="ABOX-CodeRed-2013MeasurementPaper-withFakes.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426435317138" name="http://www.w3.org/2002/07/owl" uri="transform.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426435317138" name="duplicate:https://solomon.cs.iastate.edu/ontologies/KIDS.owl" uri="kids-20110630-broken.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426435317138" name="duplicate:https://solomon.cs.iastate.edu/ontologies/KIDS.owl" uri="kids-20120125.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426435317138" name="duplicate:https://solomon.cs.iastate.edu/ontologies/KIDS.owl" uri="kids-20120316.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426435317138" name="duplicate:https://solomon.cs.iastate.edu/ontologies/KIDS.owl" uri="kids-20120324-master.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426435317138" name="duplicate:https://solomon.cs.iastate.edu/ontologies/KIDS.owl" uri="kids-20120329-canonicalForms.owl"/>
+    </group>
+</catalog>

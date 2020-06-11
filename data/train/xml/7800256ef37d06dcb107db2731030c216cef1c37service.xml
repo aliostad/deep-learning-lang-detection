@@ -1,0 +1,13 @@
+<service auto-start="false">
+    <name>LobbyService</name>
+    <public-id>ns://www.cubeia.com/lobby/service</public-id>
+    <contract>com.cubeia.firebase.server.service.lobby.LobbyServiceContract</contract>
+    <service>com.game.server.service.lobby.LobbyService</service>
+    <dependencies>
+    	<contract>com.cubeia.firebase.api.service.config.ClusterConfigProviderContract</contract>
+    	<contract>com.cubeia.firebase.server.service.systemstate.SystemStateServiceContract</contract>
+    	<contract>com.cubeia.firebase.api.service.dosprotect.DosProtector</contract>
+    </dependencies>
+    <description/>
+    <exported/>
+</service>

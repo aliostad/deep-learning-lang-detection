@@ -1,0 +1,41 @@
+
+.icon {
+    background-image: url(icon.png);
+}
+
+
+.icon-download {
+    background-position: 0 0;
+    width: 40px;
+    height: 40px;
+}
+
+.icon-list {
+    background-position: 0 -40px;
+    width: 40px;
+    height: 40px;
+}
+
+.icon-location {
+    background-position: 0 -80px;
+    width: 40px;
+    height: 40px;
+}
+
+.icon-profile {
+    background-position: 0 -120px;
+    width: 40px;
+    height: 40px;
+}
+
+.icon-time {
+    background-position: 0 -160px;
+    width: 40px;
+    height: 40px;
+}
+
+.icon-write {
+    background-position: 0 -200px;
+    width: 40px;
+    height: 40px;
+}

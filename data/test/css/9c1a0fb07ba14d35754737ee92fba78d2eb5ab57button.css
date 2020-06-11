@@ -1,0 +1,53 @@
+/***
+ * BUTTON OBJECT
+ * =============
+ *
+ * @name         btn
+ * @desc         Default button
+ * @author       quentind
+ * @tested       IE7+
+ * @requires     -
+ */
+.btn {
+
+	/* Position */
+	margin:0;
+
+	/* Box Model */
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	padding:.25em 1em;
+	
+	/* Visual */
+	border:none; /* <input>, <buttons> */
+	background:none;
+	-webkit-appearance:none;
+
+	/* Text */
+	font:inherit;
+	line-height:1;
+
+	/* Behaviour */
+	cursor:pointer;
+}
+
+.btn,
+.btn:hover {
+	text-decoration:none;
+}
+
+/**
+ * 100% width button
+ */
+.btn--100 {
+
+	/* Box Model */
+	display:block;
+	padding-left:0;
+	padding-right:0;
+	width:100%;
+
+	/* Text */
+	text-align:center;
+}

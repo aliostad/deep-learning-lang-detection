@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<!DOCTYPE platform SYSTEM "http://simgrid.gforge.inria.fr/simgrid.dtd">
+<platform version="3">
+ <process host="denise" function="2682" start_time="0.000000000"/>
+ <process host="denise" function="17727" start_time="10.746784839"/>
+ <process host="denise" function="17729" start_time="10.753098128"/>
+ <process host="denise" function="17732" start_time="10.759128452"/>
+ <process host="denise" function="17735" start_time="10.761954580"/>
+ <process host="denise" function="17737" start_time="10.775618678"/>
+ <process host="denise" function="17738" start_time="11.030921200"/>
+ <process host="denise" function="17742" start_time="11.042729707"/>
+ <process host="denise" function="17743" start_time="11.166097138"/>
+ <process host="denise" function="17744" start_time="11.451448096"/>
+ <process host="denise" function="17745" start_time="11.525910338"/>
+ <process host="denise" function="17945" start_time="74.286774887"/>
+ <process host="denise" function="17949" start_time="75.742514994"/>
+ <process host="denise" function="17950" start_time="75.746503863"/>
+ <process host="denise" function="17951" start_time="75.868706475"/>
+ <process host="denise" function="17955" start_time="76.622058349"/>
+</platform>

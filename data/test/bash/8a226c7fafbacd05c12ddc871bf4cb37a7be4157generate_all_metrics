@@ -1,0 +1,67 @@
+#!/bin/bash
+
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )
+. $DIR/scripts/parse_args.sh
+. $DIR/scripts/samplesheet.sh
+
+# arguments:
+# normal ones
+# spades output dir
+
+if ! [ -d "$OUT_DIR" ] && ! mkdir -p "$OUT_DIR"
+then
+	echo "Unable to make output directory"
+	usage
+fi
+
+if ! mkdir -p "$SCRATCH_DIR"
+then
+	echo "Unable to create scratch dir: $SCRATCH_DIR"
+	usage
+fi
+
+if ! mkdir -p $OUT_DIR/quast
+then
+	echo "Unable to create $OUT_DIR/quast"
+	exit 1
+fi
+SPADES_OUTPUT_ROOT=$1
+failed=false
+
+SAMPLES=$(cd $SPADES_OUTPUT_ROOT && ls)
+for sample in $SAMPLES
+do
+	echo "Processing sample $sample"
+	GENOME=$(get_sample_genome $RUN_DIR/SampleSheet.csv $sample)
+	echo "Sample: $sample, genome: $GENOME"
+	if ! $FORCE && [[ -d "$OUT_DIR/quast/$sample/" ]]
+	then
+		echo "Quast has already been run for sample $sample - skipping"
+	elif ! $DIR/scripts/generate_quast_metrics -r "$RUN_DIR" -o "$OUT_DIR/quast/$sample" $SPADES_OUTPUT_ROOT/$sample $GENOME
+	then
+		echo "Error generating metrics for $sample"
+		failed=true
+	fi
+	if ! $FORCE && [[ -d "$OUT_DIR/firebrand/$sample/" ]]
+	then
+		echo "Firebrand metrics exist for $sample - skipping"
+	elif ! $DIR/scripts/generate_firebrand_metrics -r "$RUN_DIR" -o "$OUT_DIR/firebrand/$sample" $OUT_DIR/Alignment/$sample*bam $GENOME
+	then
+		echo "Error generating Firebrand metrics for $sample"
+		failed=true
+	fi
+	if ! $FORCE && [[ -d "$OUT_DIR/visualization/$sample/" ]]
+	then
+		echo "Visualizations already exist for $sample - skipping"
+	elif ! $DIR/scripts/generate_visualizations -r "$RUN_DIR" -o "$OUT_DIR/visualization/$sample" $SPADES_OUTPUT_ROOT/$sample $GENOME
+	then
+		echo "Error generating visualizations for $sample"
+		failed=true
+	fi
+done
+
+
+if $failed
+then
+	exit 1
+fi

@@ -1,0 +1,37 @@
+<workbook>
+	<worksheet name="Sheet1">
+		<section startRow="0" endRow="0" />
+		<loop startRow="1" items="result01" var="h"
+			varType="com.sp.net.domain.rule.redmine.TempCustomer">
+			<section startRow="1" endRow="1">
+			<mapping row="1" col="0">h.issue_subject</mapping>
+			<mapping row="1" col="1">h.issue_assigned_to_id</mapping>
+			<mapping row="1" col="2">h.issue_custom_field_values_33</mapping>
+			<mapping row="1" col="3">h.issue_custom_field_values_32</mapping>
+			<mapping row="1" col="4">h.issue_custom_field_values_15</mapping>
+			<mapping row="1" col="5">h.issue_custom_field_values_64</mapping>
+			<mapping row="1" col="6">h.issue_custom_field_values_11</mapping>
+			<mapping row="1" col="7">h.issue_custom_field_values_18</mapping>
+			<mapping row="1" col="8">h.issue_custom_field_values_19</mapping>
+			<mapping row="1" col="9">h.issue_custom_field_values_20</mapping>
+			<mapping row="1" col="10">h.issue_custom_field_values_37</mapping>
+			<mapping row="1" col="11">h.issue_custom_field_values_39</mapping>
+			<mapping row="1" col="12">h.issue_custom_field_values_21</mapping>
+			<mapping row="1" col="13">h.issue_custom_field_values_22</mapping>
+			<mapping row="1" col="14">h.issue_custom_field_values_23</mapping>
+			<mapping row="1" col="15">h.issue_custom_field_values_38</mapping>
+			<mapping row="1" col="16">h.issue_custom_field_values_40</mapping>
+			<mapping row="1" col="17">h.issue_custom_field_values_65</mapping>
+			<mapping row="1" col="18">h.issue_custom_field_values_66</mapping>
+			<mapping row="1" col="19">h.issue_custom_field_values_67</mapping>
+			<mapping row="1" col="20">h.issue_custom_field_values_68</mapping>
+			<mapping row="1" col="21">h.issue_custom_field_values_69</mapping>
+			</section>
+			<loopbreakcondition>
+				<rowcheck offset="0">
+					<cellcheck offset="0" />
+				</rowcheck>
+			</loopbreakcondition>
+		</loop>
+	</worksheet>
+</workbook>

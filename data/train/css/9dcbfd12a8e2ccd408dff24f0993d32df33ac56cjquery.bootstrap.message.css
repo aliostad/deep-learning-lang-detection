@@ -1,0 +1,36 @@
+.message {
+    position: relative;
+    padding: 10px;
+}
+    .message > span {
+        padding-right: 5px;
+    }
+    .message > a {
+        position: absolute;
+        top: 12px;
+        right: 9px;
+    }
+    .message > p {
+        margin-right: 15px;
+        display: inline;
+    }
+    .message.alert-danger > a {
+        color: #a94442;
+    }
+    .message.alert-warning > a {
+        color: #8a6d3b;
+    }
+    .message.alert-info > a {
+        color: #31708f;
+    }
+    .message.alert-success > a {
+        color: #3c763d;
+    }
+.fix-msg {
+    position: fixed;
+    z-index: 10001;
+    margin: 20px;
+}
+.fix-msg .message {
+    margin-bottom: 0px;
+}

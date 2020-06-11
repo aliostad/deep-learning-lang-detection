@@ -1,0 +1,31 @@
+<!--
+* Remove all entries to allow the spider to crawl every page, regardless of duplicates
+* Add your own entries to add type of modules that will be indexed even though they share the same tabid
+-->
+<duplicatePatterns>
+  <!-- core entries - 
+	     do not remove unless you want the spider to crawl all pages, including duplicates. 
+	-->
+  <duplicatePattern descr="tabid"><![CDATA[tabid=(?<id>\d*[^&])|tabid/(?<id>\d*[^/])]]></duplicatePattern>
+  <duplicatePattern descr="ctl terms"><![CDATA[ctl=(?<id>terms*[^&])|ctl/(?<id>terms*[^/])]]></duplicatePattern>
+  <duplicatePattern descr="ctl privacy"><![CDATA[ctl=(?<id>privacy*[^&])|ctl/(?<id>privacy*[^/])]]></duplicatePattern>
+  <duplicatePattern descr="linkclick"><![CDATA[linkclick.aspx\W*link=(?<id>[^&]+)|linkclick.aspx\W*fileticket=(?<id>[^&]+)]]></duplicatePattern>
+  <!-- end core entries -->
+  <!-- optional entries - 
+         allow crawling of custom modules. 
+	     just add a regex expression that recognizes a series of parameters that are needed and specific to your module (use below entries as examples)
+	-->
+  <duplicatePattern descr="dnn forum"><![CDATA[forumid/(?<fid>\d*[^/])(?:/threadid/(?<tid>\d*[^/]))?\w*(?:/threadpage/(?<pid>\d*[^/]))?|forumid=(?<fid>\d*[^&])(?:&threadid=(?<tid>\d*[^&]))?\w*(?:&threadpage=(?<pid>\d*[^&]))?]]></duplicatePattern>
+  <duplicatePattern descr="dnn blog"><![CDATA[entryid=(?<id>\d*[^&])|entryid/(?<id>\d*[^/])]]></duplicatePattern>
+  <duplicatePattern descr="active forum"><![CDATA[forumid/(?<fid>\d*[^/])(?:/page/(?<paid>\d*[^/]))?\w*(?:/postid/(?<poid>\d*[^/]))?|forumid=(?<fid>\d*[^&])(?:&page=(?<paid>\d*[^&]))?\w*(?:&postid=(?<poid>\d*[^&]))?]]></duplicatePattern>
+  <duplicatePattern descr="multi page content"><![CDATA[pagecontentid=(?<id>\d*[^&])|pagecontentid/(?<id>\d*[^/])]]></duplicatePattern>
+  <duplicatePattern descr="multilanguage"><![CDATA[language=(?<id>\w*-?\w*[^&]?)|language/(?<id>\w*-?\w*[^/])]]></duplicatePattern>
+  <!--
+	<duplicatePattern descr="dnj classifieds expand"><![CDATA[parentid=(?<id>\d*[^&])|parentid/(?<id>\d*[^/])]]></duplicatePattern>				
+	<duplicatePattern descr="dnj classifieds details"><![CDATA[itemid/(?<iid>\d*[^/])(?:/mode/(?<mid>\w*[^/]))?|itemid=(?<iid>\d*[^&])(?:&mode=(?<mid>\w*[^&]))?]]></duplicatePattern>
+	<duplicatePattern descr="ventrian newsarticles"><![CDATA[articletype/(?<atid>\w*[^/])(?:/articleid/(?<aid>\d*[^/]))?|articletype=(?<atid>\w*[^&])(?:&articleid=(?<aid>\d*[^&]))?]]></duplicatePattern>
+	<duplicatePattern descr="shoping cart"><![CDATA[categoryid/(?<cid>\d*[^/])(?:/list/(?<li>\d*[^/]))?(?:/level/(?<le>\w*[^/]))?(?:/list/(?<li>\d*[^/]))?(?:/productid/(?<pid>\d*[^/]))?|categoryid=(?<cid>\d*[^&])(?:list=(?<li>\d*[^&]))?(?:level=(?<le>\w*[^&]))?(?:list=(?<li>\d*[^&]))?(?:productid=(?<pid>\d*[^&]))?]]></duplicatePattern>
+	-->
+  <!-- end optional entries -->
+
+</duplicatePatterns>

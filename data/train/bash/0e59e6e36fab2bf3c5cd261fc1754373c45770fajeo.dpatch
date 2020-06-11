@@ -1,0 +1,24 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## jeo.dpatch by  <vagrant@trusty64>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: No description.
+
+@DPATCH@
+diff -urNad '--exclude=CVS' '--exclude=.svn' '--exclude=.git' '--exclude=.arch' '--exclude=.hg' '--exclude=_darcs' '--exclude=.bzr' jeo-deb~/bin/jeo jeo-deb/bin/jeo
+--- jeo-deb~/bin/jeo	2015-02-28 11:18:40.000000000 +0000
++++ jeo-deb/bin/jeo	2015-02-28 18:35:41.887921886 +0000
+@@ -88,11 +88,11 @@
+ 
+ if [ -z "$REPO" ]
+ then
+-  REPO="$BASEDIR"/lib
++  REPO=/usr/share/jeo
+ fi
+ 
+ CLASSPATH=$CLASSPATH_PREFIX:"$BASEDIR"/etc:"$REPO"/jeo-csv-0.5.jar:"$REPO"/jeo-0.5.jar:"$REPO"/javacsv-2.1.jar:"$REPO"/jeo-postgis-0.5.jar:"$REPO"/jeo-sql-0.5.jar:"$REPO"/postgresql-9.1-901.jdbc4.jar:"$REPO"/jeo-mongo-0.5.jar:"$REPO"/mongo-java-driver-2.9.3.jar:"$REPO"/jeo-geopkg-0.5.jar:"$REPO"/sqlite-jdbc-3.8.7.jar:"$REPO"/jeo-protobuf-0.5.jar:"$REPO"/protobuf-java-2.4.1.jar:"$REPO"/jeo-gdal-0.5.jar:"$REPO"/gdal-1.11.1.jar:"$REPO"/guava-13.0.jar:"$REPO"/jcommander-1.47.jar:"$REPO"/jline-2.12.1.jar:"$REPO"/jeo-0.5-tests.jar:"$REPO"/jts-1.13.jar:"$REPO"/proj4j-0.1.0-jeo.jar:"$REPO"/slf4j-api-1.7.2.jar:"$REPO"/slf4j-jdk14-1.7.2.jar:"$REPO"/jeo-cli-0.5.jar
+-EXTRA_JVM_ARGUMENTS="-Xmx1024m -Djava.library.path=$BASEDIR/ext"
++EXTRA_JVM_ARGUMENTS="-Xmx1024m -Djava.library.path=$REPO/ext"
+ 
+ # For Cygwin, switch paths to Windows format before running java
+ if $cygwin; then

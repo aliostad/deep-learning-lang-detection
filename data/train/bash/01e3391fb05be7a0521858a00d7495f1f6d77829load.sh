@@ -1,0 +1,22 @@
+./manage.py load_forestry_group
+./manage.py load_forestry
+./manage.py load_rothermel
+./manage.py load_type_polygon
+./manage.py load_geo_kvartal
+./manage.py load_geo_polygon
+./manage.py load_type_value
+./manage.py load_forest_element
+./manage.py load_forest_element2_geo_polygon
+./manage.py load_type_param_polygon
+./manage.py load_value_param_polygon
+./manage.py load_fire_detection
+./manage.py load_fire_cause
+./manage.py load_exting_costs
+./manage.py load_fire_damage
+./manage.py load_fire_worked
+./manage.py load_fires
+./manage.py load_fires2_exting_costs
+./manage.py load_fires2_fire_damage
+./manage.py load_fires2_fire_worked
+
+./manage.py load_meteocondition

@@ -1,0 +1,216 @@
+#!/usr/bin/env bash
+
+set -e
+
+command:version() {
+  cat <<...
+git-hub version '$GIT_HUB_VERSION'
+
+  Copyright 2013-2016. Ingy döt Net.
+
+Run 'git hub info' for more detailed information.
+...
+  msg_ok=0
+}
+
+command:info() {
+  local sha1= user= owner= repo= remote= branch=
+  get-default-remote-name
+  if [[ $0 =~ ^(.+)/lib/git-hub$ ]]; then
+    sha1="$(cd ${BASH_REMATCH[1]}; git rev-parse --short HEAD)"
+  else
+    sha1=n/a
+  fi
+  user="$(get-user || true)";   [[ -n $user ]] || user=n/a
+  owner="$(get-owner || true)"; [[ -n $owner ]] || owner=n/a
+  repo="$(get-repo || true)";   [[ -n $repo ]] || repo=n/a
+  get-remote-name && remote="$value" || remote=n/a
+  get-branch-name; [[ -n $branch_name ]] && branch="$branch_name" || branch=n/a
+
+  cat <<...
+Version:  $GIT_HUB_VERSION
+SHA1:     $sha1
+Path:     $0
+Defaults:
+  user:   $user
+  owner:  $owner
+  repo:   $repo
+  remote: $remote
+  branch: $branch
+Environment:
+...
+local env=(
+  2FA_OTP
+  API_TOKEN
+  API_URI
+  CACHE
+  CONFIG
+  EDIT_MSG
+  EDITOR
+  EXEC_PATH
+  EXT_PATH
+  JSON_LIB
+  MSG_FILE
+  NO_CACHE
+  ORG_NAME
+  OWNER_NAME
+  PAGER
+  PASSWORD
+  PLUGIN_LIBS
+  PLUGIN_PATH
+  REPO_NAME
+  TEST_COLS
+  TEST_INTERACTIVE
+  TEST_LINES
+  TEST_MAKE
+  TEST_RUN
+  TRAVIS_API_TOKEN
+  USE_AUTH
+  USER_DIR
+  USER_NAME
+  VARIABLE_NAME
+  VERSION
+)
+for e in ${env[@]}; do
+  var="GIT_HUB_$e"
+  if [[ -n ${!var} ]]; then
+    printf "%-25s %s\n" "$var" "${!var}"
+  fi
+done
+
+  msg_ok=0
+}
+
+command:followers() {
+  get-args '?user:get-user'
+  report-list \
+    "/users/$user/followers?per_page=PER_PAGE" \
+    login
+}
+
+command:following() {
+  get-args '?user:get-user'
+  report-list \
+    "/users/$user/following?per_page=PER_PAGE" \
+    login
+}
+
+command:follows() {
+  get-args user '?target:get-login'
+  api-get "/users/$user/following/$target"
+  if OK; then
+    msg_ok="'$user' follows '$target'"
+  else
+    msg_ok="'$user' does not follow '$target'"
+  fi
+  OK=0
+  true
+}
+
+command:follow() {
+  require-auth
+  get-args user:get-owner
+  api-put "/user/following/$user"
+  msg_ok="'$login' is now following '$user'"
+}
+
+command:unfollow() {
+  require-auth
+  get-args user:get-owner
+  api-delete "/user/following/$user"
+  msg_ok="'$login' is no longer following '$user'"
+}
+
+command:clone() {
+  get-args '?owner:get-user/repo:get-repo' '?dir'
+  msg_ok=0
+
+  owner_repo="$owner/$repo"
+
+  url="git@github.com:$owner_repo"
+  local cmd="git clone --recursive $url $dir"
+  execute-clone-cmd "$cmd"
+}
+
+command:stars() {
+  get-args '?owner:get-user/repo:get-repo'
+  local title="Stargazers for '$owner/$repo':"
+  report-list \
+    "/repos/$owner/$repo/stargazers?per_page=PER_PAGE" \
+    login
+  msg_fail="Couldn't find Stargazers for '$owner/$repo'"
+}
+
+command:star() {
+  require-auth
+  get-args '?owner:get-user/repo:get-repo'
+  api-put "/user/starred/$owner/$repo"
+  msg_ok="'$owner/$repo' starred"
+}
+
+command:unstar() {
+  require-auth
+  get-args '?owner:get-user/repo:get-repo'
+  api-delete "/user/starred/$owner/$repo"
+  msg_ok="'$owner/$repo' unstarred"
+}
+
+command:watch() {
+  require-auth
+  get-args '?owner:get-user/repo:get-repo'
+  api-put "/user/subscriptions/$owner/$repo"
+  msg_ok="You are watching '$owner/$repo'"
+}
+
+command:unwatch() {
+  require-auth
+  get-args '?owner:get-user/repo:get-repo'
+  api-delete "/user/subscriptions/$owner/$repo"
+  msg_ok="You are no longer watching '$owner/$repo'"
+}
+
+command:watching() {
+  get-args '?user:get-user'
+  say "'$user' is watching:"
+  report-list \
+    "/users/$user/subscriptions?sort=updated;per_page=PER_PAGE" \
+    full_name
+}
+
+command:watchers() {
+  get-args '?owner:get-user/repo:get-repo'
+  say "'$owner/$repo' is being watched by:"
+  report-list \
+    "/repos/$owner/$repo/subscribers" \
+    login
+}
+
+command:starred() {
+  get-args '?user:get-user'
+  report-list \
+    "/users/$user/starred?sort=updated;per_page=PER_PAGE" \
+    full_name
+}
+
+command:collabs() {
+  get-args '?owner:get-user/repo:get-repo'
+  report-list \
+    "/repos/$owner/$repo/collaborators" \
+    login
+}
+
+command:trust() {
+  require-auth
+  get-args '?owner:get-user/repo:get-repo' collaborator
+  api-put "/repos/$owner/$repo/collaborators/$collaborator"
+  msg_ok="'$owner/$repo' commit permission added for: $collaborator"
+}
+
+command:untrust() {
+  require-auth
+  get-args '?owner:get-user/repo:get-repo' collaborator
+  api-delete "/repos/$owner/$repo/collaborators/$collaborator"
+  msg_ok="'$owner/$repo' commit permission removed for: $collaborator"
+}
+
+# vim: set lisp:

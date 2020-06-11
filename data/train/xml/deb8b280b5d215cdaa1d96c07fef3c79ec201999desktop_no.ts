@@ -1,0 +1,52 @@
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="no" version="2.1">
+<context>
+    <name>LauncherPage</name>
+    <message>
+        <source>Icon Size:</source>
+        <translation>Ikonstørrelse:</translation>
+    </message>
+    <message>
+        <source>Small</source>
+        <translation>Liten</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Middels</translation>
+    </message>
+    <message>
+        <source>Large</source>
+        <translation>Stor</translation>
+    </message>
+    <message>
+        <source>Huge</source>
+        <translation>Enorm</translation>
+    </message>
+    <message>
+        <source>Alignment:</source>
+        <translation>Plassering:</translation>
+    </message>
+    <message>
+        <source>Left</source>
+        <translation>Venstre</translation>
+    </message>
+    <message>
+        <source>Right</source>
+        <translation>Høyre</translation>
+    </message>
+    <message>
+        <source>Bottom</source>
+        <translation>Bunn</translation>
+    </message>
+</context>
+<context>
+    <name>Preflet</name>
+    <message>
+        <source>Launcher</source>
+        <translation>Oppstarter</translation>
+    </message>
+    <message>
+        <source>Hot Corners</source>
+        <translation>Hurtighjørner</translation>
+    </message>
+</context>
+</TS>

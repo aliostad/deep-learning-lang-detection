@@ -1,0 +1,63 @@
+nav {
+	height: 100%;
+	width: 60px;
+	position:fixed;
+	left:0;
+	background-color:#333333;
+	text-align:center;
+	/*color:white;*/
+}
+nav .nav-region {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+nav .nav-region ul { margin:0; }
+nav .nav-region li { display:block; padding: 5px; }
+
+nav .nav-region li a {
+	color : white;
+	font-size:26pt;
+}
+
+#nav-logo {
+	background-color:#eee;
+	text-align:center;
+	padding:5px
+}
+#nav-settings-panel {
+	position:fixed;
+	bottom:0;
+}
+
+.nav-region ul, .nav-region ul ul.nav-hover-list {
+    padding:0;
+    margin: 0;
+}
+.nav-region ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+/*Link Appearance*/
+.nav-region ul li a, .nav-region ul li ul.nav-hover-list li a {
+    text-decoration: none;
+    padding: 5px;
+    display:inline-block;
+}
+/*Make the parent of sub-menu relative*/
+.nav-region ul li {
+    position: relative;
+}
+/*sub menu*/
+.nav-region ul li ul.nav-hover-list {
+    display:none;
+    color: #fff;
+    position: absolute;
+    background: #666;
+    top: 15px;
+    left: 55px;
+    width: 150px;
+}
+.nav-region ul li:hover ul.nav-hover-list {
+    display:block;
+}

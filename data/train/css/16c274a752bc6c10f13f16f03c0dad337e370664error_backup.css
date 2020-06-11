@@ -1,0 +1,201 @@
+/*error page*/
+.api-docs #errors .sub-banner {
+    width: 960px;
+    margin: 0 auto;
+}
+.api-docs #errors #api-docs-header {
+    height: 120px;
+}
+.api-docs #errors section:last-child {
+    behavior: url('/css/PIE.htc');
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.api-docs #errors #filters {
+    height: 145px;
+    letter-spacing: normal;
+    margin-bottom: 0;
+}
+.api-docs #errors #filters .inner {
+    margin: 0 auto;
+    padding: 35px 0 45px;
+    width: 960px;
+}
+.api-docs #errors #filters .filter {
+    float: left;
+    padding-top: 25px;
+    position: relative;
+    margin:5px;
+}
+.api-docs #errors #filters .filter label {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+    color: #666666;
+    font-size: 13px;
+    font-weight: normal;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.api-docs #errors #filters .filter .fancy-select {
+    margin-right: 14px;
+    width: 206px;
+}
+.api-docs #errors #filters .filter .fancy-select .text {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: #454545;
+}
+.api-docs #errors #filters .filter .fancy-select select {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 10;
+}
+.api-docs #errors #filters .filter .fancy-select .cover {
+    width: 100%;
+    height: 38px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    behavior: url('/css/PIE.htc');
+    -webkit-box-shadow: inset 0 -6px 10px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 -6px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 -6px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #cccccc;
+    float: left;
+    background-color: #ffffff;
+}
+.api-docs #errors #filters .filter .fancy-select .arrow {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    font-family: clearviewatt_ltbold, 'helvetica neue', helvetica, sans-serif;
+    width: 10px;
+    height: 7px;
+    background-size: 32px!important;
+    background: url('/images/form-icons-sprite.png') no-repeat left -61px;
+}
+.api-docs #errors #filters input#errorcode {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url(/images/icon-search.png) no-repeat 10px 50%;
+    color: #454545;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 11px 14px 11px 35px;
+    width: 520px;
+    margin-top: -4px;
+}
+.api-docs #errors .page .container.short {
+    padding: 15px;
+}
+.api-docs #errors header.error-detail {
+    font-family: omnes_attlight, 'helvetica neue', helvetica, sans-serif;
+    font-size: 26px;
+    letter-spacing: -1px;
+    line-height: 1em;
+    color: #45494d;
+    line-height: normal;
+    width: 100%;
+}
+.api-docs #errors .errors-grid {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 3% 0;
+}
+
+.api-docs #errors .errors-grid .hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.api-docs #errors .errors-grid {
+    padding: 15px;
+
+}
+.api-docs #errors .errors-grid.header{
+    color: #999999;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.api-docs #errors .errors-grid .grid-row {
+    display: table-row;  
+    border-bottom: 1px dashed #dddddd;
+    font: inherit;
+    width: 100%
+}
+.api-docs #errors .errors-grid .status-code,
+.api-docs #errors .errors-grid .error-code,
+.api-docs #errors .errors-grid .message,
+.api-docs #errors .errors-grid .links,
+.api-docs #errors .errors-grid .item{
+    display: table-cell;
+    padding:10px 10px 10px 10px;
+}
+.api-docs #errors .errors-grid .grid-row.header .status-code,
+.api-docs #errors .errors-grid .grid-row.header .error-code,
+.api-docs #errors .errors-grid .grid-row.header .message{
+    color: #616162;
+    font-weight: bold;
+    cursor: default;
+    background-color: #ffffff;
+}
+
+.api-docs #errors .errors-grid .error-code {
+    color: #0679b3;
+    font-weight: bold;
+}
+.api-docs #errors .errors-grid .status-code {
+    color: #009add;
+}
+.api-docs #errors .errors-grid .message{
+    color: #616162;
+    font-weight: normal;
+}
+.api-docs #errors .errors-grid .message span {
+    color: #616162;
+    display: inline;
+    font-size: 0.84em;
+    font-weight: bold;
+}
+
+.api-docs #errors header.error-detail {
+    font-size: 30px;
+    color: #0679b3;
+}
+.api-docs #errors select {
+    width: 100px;
+    height: 40px;
+    top: -4px;
+}
+
+.api-docs #errors .errors-grid .links {
+  margin-left: 30%;
+}
+.api-docs #errors .errors-grid .links a {
+  font-size: 1em;
+  font-weight: bold;
+  margin-right: 3px;
+}
+.api-docs #errors .errors-grid .item {
+  color: #000000;
+  font-weight: bold;
+  
+}
+.api-docs #errors .errors-grid .item span {
+  color: #616162;
+  display: inline;
+  font-size: 0.84em;
+}
+  

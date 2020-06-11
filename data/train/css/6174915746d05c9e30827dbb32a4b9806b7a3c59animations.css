@@ -1,0 +1,97 @@
+.fixed-container {
+  position: relative;
+  perspective: 800px;
+}
+
+.animate-view.ng-enter, .animate-view.ng-leave {
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.animate-view.ng-enter {
+  opacity: 0;
+}
+
+.animate-view.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+.animate-view.ng-leave {
+  opacity: 1;
+  z-index:0;
+  transform: rotateZ(360deg) translateX(0) scale(1,1);
+  -webkit-transform: rotateZ(360deg) translateX(0) scale(1,1);
+}
+.animate-view.ng-leave-active {
+  opacity: 0;
+  z-index:-1;
+  transform: rotateZ(0deg) translateX(-50%) scale(0, 0);
+  -webkit-transform: rotateZ(0deg) translateX(-50%) scale(0,0);
+}
+
+
+.data.ng-enter {
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+	opacity: 0;
+}
+
+.data.ng-enter.ng-enter-active {
+	opacity: 1;
+}
+
+.stagger-animate.ng-enter-stagger {
+  -webkit-transition-delay:0.5s;
+  transition-delay:0.5s;
+
+  -webkit-transition-duration:0;
+  transition-duration:0;
+}
+
+.stagger-animate.ng-enter {
+  -webkit-transition:.5s linear all 1s;
+  transition:.5s linear all 1s;
+
+  opacity:0;
+}
+
+.stagger-animate.ng-enter.ng-enter-active {
+  opacity: .5;
+}
+
+.spinner:after {
+  position: absolute;
+  content: "";
+  /* why 45 and not 50? */
+  left: 45%;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  width: 150px;
+  height: 150px;
+  border-top: 30px solid blue;
+  border-right: 30px solid red;
+  border-left: 30px solid green;
+  border-bottom: 30px solid yellow;
+  border-radius: 70px;
+  -webkit-animation: spin-load .5s infinite;
+  -moz-animation: spin-load .5s infinite;
+  -o-animation: spin-load .5s infinite;
+  animation: spin-load .5s infinite;
+}
+@-webkit-keyframes spin-load {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin-load {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

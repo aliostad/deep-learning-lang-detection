@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+ 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.cglib.use_reflection_optimizer">false</property>
+        <property name="hibernate.statement_cache.size">0</property>    
+        <mapping resource="../mapping/TestProfile.hbm.xml" />
+        <mapping resource="../mapping/Yesnoquestion.hbm.xml" />
+        <mapping resource="../mapping/TestSuite.hbm.xml" />
+        <mapping resource="../mapping/UserUsesUaPlugin.hbm.xml" />
+        <mapping resource="../mapping/Multiplechoice.hbm.xml" />
+        <mapping resource="../mapping/UserUsesUaSetting.hbm.xml" />
+        <mapping resource="../mapping/UserUsesDevice.hbm.xml" />
+        <mapping resource="../mapping/Device.hbm.xml" />
+        <mapping resource="../mapping/TestcasePool.hbm.xml" />
+        <mapping resource="../mapping/Role.hbm.xml" />
+        <mapping resource="../mapping/TestcaseSet.hbm.xml" />
+        <mapping resource="../mapping/UserAgent.hbm.xml" />
+        <mapping resource="../mapping/HoursPerWeek.hbm.xml" />
+        <mapping resource="../mapping/OperatingSystemSetting.hbm.xml" />
+        <mapping resource="../mapping/Openquestion.hbm.xml" />
+        <mapping resource="../mapping/UserUsesUserAgent.hbm.xml" />
+        <mapping resource="../mapping/UserUsesOs.hbm.xml" />
+        <mapping resource="../mapping/UserAgentTypes.hbm.xml" />
+        <mapping resource="../mapping/UserHasRole.hbm.xml" />
+        <mapping resource="../mapping/UserAgentPlugin.hbm.xml" />
+        <mapping resource="../mapping/Yesnoopenquestion.hbm.xml" />
+        <mapping resource="../mapping/Language.hbm.xml" />
+        <mapping resource="../mapping/UserUsesAssistiveTechnology.hbm.xml" />
+        <mapping resource="../mapping/Testresult.hbm.xml" />
+        <mapping resource="../mapping/UserProfile.hbm.xml" />
+        <mapping resource="../mapping/Likertscale.hbm.xml" />
+        <mapping resource="../mapping/OperatingSystem.hbm.xml" />
+        <mapping resource="../mapping/UserUsesOsSetting.hbm.xml" />
+        <mapping resource="../mapping/TestProfileHasTestSuite.hbm.xml" />
+        <mapping resource="../mapping/AtExperience.hbm.xml" />
+        <mapping resource="../mapping/HeaderLog.hbm.xml" />
+        <mapping resource="../mapping/AssistiveTechnology.hbm.xml" />
+        <mapping resource="../mapping/UserAgentSetting.hbm.xml" />
+        <mapping resource="../mapping/User.hbm.xml" />
+        <mapping resource="../mapping/LanguageExperience.hbm.xml" />
+        <mapping resource="../mapping/Sex.hbm.xml" />
+        <mapping resource="../mapping/AssistiveTechnologyTypes.hbm.xml" />
+        <mapping resource="../mapping/AgeRange.hbm.xml" />
+        <mapping resource="../mapping/TestProfileHasUserProfile.hbm.xml" />
+        <mapping resource="../mapping/Disability.hbm.xml" />
+        <mapping resource="../mapping/UserProfileHasDisability.hbm.xml" />  
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,79 @@
+* {
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
+h1, p {
+	padding:0; margin:0;
+}
+.loading2wrapper p a {color:#757575; text-decoration:none;}
+.loading2wrapper .load-bar {
+	width: 100%;
+	height: 25px;
+	border-radius: 30px;
+	background: #dcdbd7;
+	position: relative;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8),  inset 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+.loading2wrapper .load-bar:hover .load-bar-inner, .loading2wrapper .load-bar:hover #counter {
+	animation-play-state: paused;
+	-moz-animation-play-state: paused;
+	-o-animation-play-state: paused;
+	-webkit-animation-play-state: paused;
+}
+.loading2wrapper .load-bar-inner {
+	height: 99%;
+	width: 0%;
+	border-radius: inherit;
+	position: relative;
+	background: #c2d7ac;
+	background: linear-gradient(#e0f6c8, #98ad84);
+	background: -moz-linear-gradient(#e0f6c8, #98ad84);
+	background: -webkit-linear-gradient(#e0f6c8, #98ad84);
+	background: -o-linear-gradient(#e0f6c8, #98ad84);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 1),  0 1px 5px rgba(0, 0, 0, 0.3),  0 4px 5px rgba(0, 0, 0, 0.3);
+	animation: loader 10s linear infinite;
+	-moz-animation: loader 10s linear infinite;
+	/* -webkit-animation: loader 10s linear infinite; */
+	-o-animation: loader 10s linear infinite;
+}
+.loading2wrapper h1 {
+	font-size: 28px;
+	padding: 20px 0 8px 0;
+}
+.loading2wrapper p {
+	font-size: 13px;
+}
+ @keyframes loader {
+ from {
+width: 0%;
+}
+to {
+	width: 100%;
+}
+}
+ @-moz-keyframes loader {
+ from {
+width: 0%;
+}
+to {
+	width: 100%;
+}
+}
+ @-webkit-keyframes loader {
+ from {
+width: 0%;
+}
+to {
+	width: 100%;
+}
+}
+ @-o-keyframes loader {
+ from {
+width: 0%;
+}
+to {
+	width: 100%;
+}
+}

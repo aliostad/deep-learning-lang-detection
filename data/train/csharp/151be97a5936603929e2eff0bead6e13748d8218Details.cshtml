@@ -1,0 +1,26 @@
+﻿@model LogistiX.Models.tbl_Dispatch_Details
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Dispatch Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Dispatch_Details)
+        </dt>
+
+        <dd class="clearfix">
+            @Html.DisplayFor(model => model.Dispatch_Details)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Dispatch_Details_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,41 @@
+body{font-size: 14px;}
+h1{font-size: 24px;}
+h2{font-size: 22px;}
+h3{font-size: 20px;}
+h4{font-size: 18px;}
+h5{font-size: 16px;}
+a{color: #0000EE;}
+
+.topmask{background: #FFFFFF; height: 15px; position: fixed; top: 0px; width: 100%;}
+.page{margin: 15px 0px;}
+
+#api{float: left; width: 33%; margin-left: 1%; padding-top: 45px;}
+
+#api .cap{background: #DDDDDD; display: block; padding: 5px 0px; color: #DB791F; position: fixed; width: 33%; top: 15px;}
+#api .cap span{margin-left: 20px;}
+#api .cap select{margin-right: 20px;}
+
+#api .api-item{padding: 10px 40px; background: #F7F7F7; margin: 10px 0;}
+#api .api-item p{color: #888;}
+#api .api-item h3{color: #666; margin-left: -20px;}
+#api .api-item h3 span{color: #999; font-size: 12px; margin-left: 10px;}
+
+
+#out{position: fixed; top: 15px; right: 1%; width: 30%; min-height: 500px; background: #F7F7F7;}
+#out .cap{background: #DDDDDD; display: block; padding: 5px 20px; color: #DB791F;}
+#out .content{margin: 20px;}
+#out h5{}
+#out .post-view,#out .result-view{min-height: 150px; color: #666; margin: 5px 0px; background: #FFF; border: solid 1px #DDD; padding: 5px;}
+#out textarea{min-height: 150px; width: 100%; border: 0; resize: vertical;}
+
+#form{width: 34%; position: fixed; top: 15px; right: 31.5%; background: #EEE;}
+#form .cap{background: #DDDDDD; display: block; padding: 5px 20px; color: #DB791F;}
+
+#form .api-item-form{padding: 30px 20px; background: #F7F7F7;}
+#form .api-item-form li{margin: 5px 0;}
+#form .api-item-form label{width: 20%; display: inline-block; text-align: right; padding-right: 10px;}
+#form .api-item-form label.must{color: #D01D15;}
+#form .api-item-form .tinp{width: 70%; border: solid 1px #DDD; padding: 2px;}
+#form .api-item-form .btns{text-align: center;}
+#form .api-item-form .submit{background: #666; padding: 3px 8px; color: #FFFFFF; margin-top: 20px; margin-left: 5px; display: inline-block;}
+#form .api-item-form .submit:hover{background: #555;}

@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE COMMANDO SYSTEM "commando.dtd">
+
+<COMMANDO>
+	<UI>
+        <CAPTION LABEL="Run Processing.py">
+           <FILE_ENTRY LABEL="Path to java" VARNAME="java" DEFAULT="/usr/bin/java"/>
+            <FILE_ENTRY LABEL="sketch" VARNAME="sketch" EVAL="buffer.getPath()"/>
+            <FILE_ENTRY LABEL="Path to processing-py.jar" VARNAME="processingpy" DEFAULT="/Applications/processing.py-0022/processing-py.jar'"/>
+		</CAPTION>
+		<CAPTION LABEL="VM settings">
+		<ENTRY LABEL="Initial heap size (Mb)" VARNAME="ms" DEFAULT="32" />
+		<ENTRY LABEL="Maximum heap size (Mb)" VARNAME="mx" DEFAULT="128" />
+		</CAPTION>
+	</UI>
+
+	<COMMANDS>
+		<COMMAND SHELL="System" CONFIRM="FALSE">
+			buf = new StringBuilder(100);
+			buf.append(java);
+			if (!ms.equals("")){
+			buf.append(" -ms");
+			buf.append(ms);
+			buf.append("m");
+			}
+			if (!mx.equals("")){
+			buf.append(" -mx");
+			buf.append(mx);
+			buf.append("m");
+			}
+			buf.append(" -jar ");
+			buf.append(processingpy);
+			buf.append(" '");
+			buf.append(sketch.replace(" ", "\\ "));
+			buf.append("'");
+			buf.toString();
+		</COMMAND>
+	</COMMANDS>
+</COMMANDO>

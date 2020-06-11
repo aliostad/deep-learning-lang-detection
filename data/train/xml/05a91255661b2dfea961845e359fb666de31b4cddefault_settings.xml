@@ -1,0 +1,17 @@
+<ServandoSettings>
+   <services class="java.util.ArrayList">
+
+	<!--		
+	<serviceReflectionInfo>
+         <neededAssemblys class="java.util.ArrayList"/>
+         <serviceAssemblyName>ServiceAssemblyName</serviceAssemblyName>
+         <serviceAssemblyOrigin>local</serviceAssemblyOrigin>
+         <serviceAssemblyType>compiled</serviceAssemblyType>
+         <serviceClassName>ServiceClassName</serviceClassName>
+         <serviceId>ID</serviceId>
+         <servicePackageName>service.package.name</servicePackageName>
+      	</serviceReflectionInfo>
+	-->
+
+   </services>
+</ServandoSettings>

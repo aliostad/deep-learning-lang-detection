@@ -1,0 +1,45 @@
+<!-- | css format -->
+.$$$div__showMail__mail {
+    width:95%;
+    background:#DDC;
+    padding:0px;
+}
+.$$$div__showMail_mailheader {
+    background:#AA8;
+    width:99%;
+    padding:7px;
+}
+.$$$div__showMail__mailheader_subject {
+    float:left;
+    padding:1px;
+    margin:1px;
+    font-weight:bold;
+    font-size:11pt;
+}
+.$$$div__showMail__mailheader_right {
+    float:right;
+}
+.$$$div__showMail_mailcontent {
+    width:99%;
+    overflow:visible;
+    height:auto;
+    min-height:250px;
+}
+.$$$div__showMail__attachments {
+    background:#DDC;
+    padding:10px;
+}
+
+.$$$div__showMail__mailheader_table,
+    .$$$div__showMail__mailheader_table tr,
+    .$$$div__showMail__mailheader_table th,
+    .$$$div__showMail__mailheader_table td {
+    font-size:8pt;
+    background:none;
+    border:0px;
+    padding:2px;
+    margin:0px;
+}
+.$$$div__showMail__mailheader_table th {
+    width:100px;
+}

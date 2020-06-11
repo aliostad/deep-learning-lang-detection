@@ -1,0 +1,199 @@
+
+/*---------------------Navigation (with toggle btn)-------------------------*/
+
+.nav ul{
+	clear: both;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+.nav-top a.current,
+.nav-top a.current:link,
+.nav-top a.current:visited  {
+	background-color: #81cb9f;
+}
+
+.nav-bottom a.current,
+.nav-bottom a.current:link,
+.nav-bottom a.current:visited {
+	border-bottom: 4px solid;
+	border-color: #81cb9f;
+}
+
+
+/*------------*/
+
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited {
+	height: 40px;
+	position: absolute;
+	right: .65rem;
+	top: 20px;
+	width: 46px;
+
+	background: transparent url("../img/icon-nav.svg") no-repeat 0 -40px;
+}
+
+.nav-btn:hover,
+.nav-btn:focus,
+.nav-btn:active {
+	background-color: #81cb9f;
+	background-position: 0 -40px;
+}
+
+.nav-btn[data-state="engaged"] {
+	background-color: #81cb9f;
+	background-position: -46px -40px;
+}
+
+.nav-top,
+.nav-top a,
+.nav-top a:link {
+	max-height: 0;
+
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-webkit-transition: all 300ms ease-in-out;
+}
+
+.nav-top[data-state="expanded"],
+.nav-top[data-state="expanded"] a,
+.nav-top[data-state="expanded"] a:link {
+	max-height: 25rem;
+	padding: .325rem;
+}
+
+/*------------*/
+
+.nav a,
+.nav a:link,
+.nav a:visited {
+	padding: .4rem;
+
+	text-align: center;
+	text-decoration: none;
+}
+
+.nav-top ul {
+	position: relative;
+	top: 8px;
+}
+
+.nav-top a,
+.nav-top a:link,
+.nav-top a:visited {
+	display: block;
+	overflow: hidden;
+
+	color: #fff;
+
+	font-size: 1.35rem;
+	font-family: romeralregular, sans-serif;
+
+	text-transform: lowercase;
+
+}
+
+.nav-bottom a,
+.nav-bottom a:link,
+.nav-bottom a:visited {
+	color: #fff;
+	font-size: .75rem;
+	text-transform: lowercase;
+}
+
+.nav-top a:hover,
+.nav-top a:focus,
+.nav-top a:active {
+	background-color: #81cb9f;
+}
+
+.nav-bottom a:hover,
+.nav-bottom a:focus,
+.nav-bottom a:active {
+	border-bottom: 4px solid;
+	border-color: #81cb9f;
+}
+
+
+.nav-bottom li {
+	display: inline-block;
+}
+
+.nav-bottom {
+	float: right;
+	margin: 8px 0;
+}
+
+@media only screen and (min-width: 20em) {
+
+	.nav-top li,
+	.nav-top li:link,
+	.nav-top li:visited {
+		display: inline-block;
+		width: 47.5%;
+	}
+
+}
+
+@media only screen and (min-width: 38em) {
+
+	.nav-btn {
+		display: none;
+	}
+
+	.nav-top {
+		float: right;
+		/*width: 60%;*/
+		margin-right: 5%;
+		padding: 0;
+	}
+
+	.nav-top ul{
+		float: right;
+	}
+
+	.nav-top,
+	.nav-top a,
+	.nav-top a:link {
+		max-height: 4rem;
+		font-size: 1.25rem;
+	}
+
+	.nav-top li,
+	.nav-top li:link,
+	.nav-top li:visited {
+		width: auto;
+	}
+}
+
+@media only screen and (min-width: 75em) {
+
+		header img {
+		display: block;
+		margin: 20% 20% 18%;
+		width: 60%;
+	}
+
+	.nav-top {
+		float: none;
+		width: 100%;
+	}
+
+	.nav-top li,
+	.nav-top li:link,
+	.nav-top li:visited {
+		display: block;
+		width: 100%;
+	}
+
+	.nav-top a,
+	.nav-top a:link,
+	.nav-top a:visited {
+		font-size: 1.5rem;
+	}
+}

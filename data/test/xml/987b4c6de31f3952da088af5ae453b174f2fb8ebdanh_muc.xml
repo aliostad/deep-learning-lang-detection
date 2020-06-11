@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="yes"?>
+<DatasetMsg xmlns="http://tempuri.org/DatasetMsg.xsd">
+  <Message>
+    <Message>Bạn chưa nhập nhóm  nhà đầu tư</Message>
+    <ID>190</ID>
+  </Message>
+  <Message>
+    <Message>Bạn chưa nhập mã nhà đầu tư.</Message>
+    <ID>191</ID>
+  </Message>
+  <Message>
+    <Message>Bạn chưa nhập tên nhà đầu tư</Message>
+    <ID>192</ID>
+  </Message>
+  <Message>
+    <Message>Bạn chưa nhập mã tham chiếu nhà đầu tư</Message>
+    <ID>193</ID>
+  </Message>
+  <Message>
+    <Message>Mã nhà đầu tư đã tồn tại. Bạn hãy nhập mã khác</Message>
+    <ID>194</ID>
+  </Message>
+  <Message>
+    <Message>Tên nhà đầu tư đã tồn tại. Bạn hãy nhập tên khác</Message>
+    <ID>195</ID>
+  </Message>
+  <Message>
+    <Message>Bạn chưa nhập mã loại cổ phiếu</Message>
+    <ID>196</ID>
+  </Message>
+  <Message>
+    <Message>Bạn chưa nhập tên loại cổ phiếu</Message>
+    <ID>197</ID>
+  </Message>
+</DatasetMsg>

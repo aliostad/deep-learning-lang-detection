@@ -1,0 +1,74 @@
+/* CSS-Notationen für den Servicebereich (Menu) */
+
+#servicebereich {
+  position: fixed;
+  top: 20px;
+  left: 285px;
+  right: 70px;
+  width: auto;
+  height: 30px;
+  line-height: 30px;
+  background-color: #ffffff;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; /* IE8 */
+  filter:Alpha(Opacity=70); /* IE7 */
+  opacity: 0.7;
+}
+
+div#service {
+  width: 100%;
+  position: absolute;
+}
+
+div#service a {
+  color: #434343;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+div#service a:link, div#servicebereich a:visited {
+    color: #434343;
+}
+
+div#service a:hover {
+    color: #cc6633; /*#ffff66;*/
+}
+
+
+div#servicebereich .left {
+  text-align: left;
+}
+
+div#servicebereich .right {
+  text-align: right;
+}
+
+div#service.left {
+  float: left;
+}
+
+div#service.right {
+  float: right;
+}
+
+/* Abstad zwischen den Pipes*/
+div#service ul {
+  padding-left: 3px;
+}
+
+div#service ul li.navi {
+  list-style-type: none;
+  width: auto;
+  display: inline;
+  color: #ffffff;
+}
+
+div#service ul li.navi a {
+  padding: 0 0.5em;
+}
+
+div#service ul li a.active {
+  color: #FF3300;
+  font-style: italic;
+  font-weight: bold;
+  
+}

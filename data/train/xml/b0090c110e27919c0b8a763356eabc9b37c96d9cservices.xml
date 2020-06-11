@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services>
+	<role>
+		<name>Author</name>
+		<service>Create Manuscript</service>
+		<service>Edit Manuscript</service>
+		<service>Read Manuscript</service>		
+		<service>Delete Manuscript</service>
+		<service>Send Manuscript</service>
+		<service>Link to Social Media</service>
+	</role>
+	<role>
+		<name>Editor</name>		
+		<service>Read Manuscript</service>
+		<service>Evaluate Manuscript</service>		
+		<service>Send Manuscript</service>		
+	</role>
+	<role>
+		<name>Agent</name>
+		<service>Edit Manuscript</service>
+		<service>Read Manuscript</service>
+		<service>Evaluate Manuscript</service>
+		<service>Send Manuscript</service>
+	</role>
+</services>

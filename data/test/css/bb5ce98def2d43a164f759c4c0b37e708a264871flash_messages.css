@@ -1,0 +1,56 @@
+#flash_messages {
+    display: block;
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    margin-left: -200px;
+}
+
+.flash_message {
+    display: none;
+    background: #34CFFA;
+    text-align: center;
+    width: 400px;
+    font-size: 13px;
+    padding: 5px 10px;
+    color: #FFF;
+    margin-top: 5px;
+    z-index: 5010;
+}
+
+    .flash_message.error {
+        background: #F62817;
+    }
+
+    .flash_message.info {
+        background: #E16020;
+    }
+
+    .flash_message .close_message {
+        float: right;
+        padding: 5px;
+        margin-top: -6px;
+        font-size: 15px;
+    }
+
+    .flash_message .close_message,
+    .flash_message .close_message:visited,
+    .flash_message .close_message:active,
+    .flash_message .close_message:hover {
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    .flash_message .close_message:hover {
+        cursor: pointer;
+    }
+
+/*          Ajax spinner        */
+#ajax-loading {
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    z-index: 10000;
+}
+

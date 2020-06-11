@@ -1,0 +1,61 @@
+.UIPrivateMessageForm .UITabPane .TabPaneContent {
+	padding: 5px 0px;
+	width: 96%;
+	margin: auto;
+}
+
+.UIPrivateMessageForm .UITabPane .UITabContent {
+	padding: 8px 0px;
+	margin: auto;
+}
+
+.UIPrivateMessageForm .UITabPane .UIGrid {
+	width: 97%;
+	margin: auto;
+}
+
+.UIPrivateMessageForm .ForumMail .UIGrid .IconContent {
+	margin: auto;
+	overflow: auto;
+	width: 40px;
+}
+
+.UIPrivateMessageForm .MessageTab .UIFormGrid {
+	width: 98%;
+}
+
+.UIPrivateMessageForm .ForumMail .MessageContent {
+	border: 1px solid #c7c7c7;
+	padding: 10px;
+}
+
+.UIPrivateMessageForm .ForumMail .HorizontalLayout textarea {
+	width: 400px;
+	height: 45px;
+}
+
+.UIPrivateMessageForm .ForumMail .HorizontalLayout input {
+	width: 400px;
+}
+
+.UIPrivateMessageForm .ForumMail .UIAction {
+	padding: 0px;
+}
+
+.UIPrivateMessageForm .UITabContentContainer .SendMessageTab {
+	padding: 10px 0px 0px 0px;
+}
+
+.UIForumPortlet .UIPrivateMessageForm .FieldComponent div {
+	float: left;
+	width: 98%;
+}
+
+.UIForumPortlet .UIPrivateMessageForm .MessageContainer {
+	border-top: solid 1px #aeaeae;
+}
+
+.UIForumPortlet .UIForm .HorizontalLayout .ForumUserProfile {
+	padding: 0px;
+	padding-bottom: 10px;
+}

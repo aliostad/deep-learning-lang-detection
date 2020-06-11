@@ -1,0 +1,104 @@
+/* CSS definition file containing site wide stylesheets for the navigation bar */
+
+#nav {
+list-style: none;
+margin: 0;
+padding:0;
+}
+
+#nav a:link,
+#nav a:visited {
+    text-align:center;
+    color:black;
+    display: block;
+    padding:10px 0px 0px 0px;
+    text-decoration:none;
+    height: 30px;
+}
+#nav a:link.arrow,
+#nav a:visited.arrow {
+color:red;
+}
+#nav li {
+    float: left;
+    width: 12%;
+    font-size:1em;
+    border-left: thin solid black;
+}
+#nav li, 
+#nav li ul li {
+    padding:0;
+    margin:0;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}   
+#nav li ul li {
+    border-left: thin solid black;
+    border-right: thin solid black;
+    border-top: none;
+    border-bottom: thin solid black;
+    width: 100%;
+    font-size:.75em;
+}
+/* for submenus*/
+#nav li ul li a:hover {
+    color:#202944;
+    background-image: url('../imgs/rollOver.png');
+    text-decoration: underline;
+}
+/*the combination of #Page #Link 'a' says for that combination do the stuff in next set of curly braces*/
+#home #nav-home a,
+#news #nav-news a,
+#training #nav-training a,
+#sites #nav-sites a,
+#contacts #nav-contacts a,
+#calendar #nav-calendar a,
+#hints #nav-hints a,
+#faqs #nav-faqs a,
+#resources #nav-resources a,
+#active_vol #nav-active_vol a, 
+#lcs_eros #nav-lcs_eros a,
+#about #nav-about a,
+#state #nav-state a,
+#state #nav-state a,
+#whatwedo #nav-whatwedo a,
+#thanks #nav-thanks a,
+#org_chart #nav-org_chart a,
+#job_desc #nav-job_desc a,
+#nav a:active {
+    background-image:url('../imgs/Current.png');
+}
+/* for top level menu*/
+#home #nav-home a:hover,
+#news #nav-news a:hover,
+#training #nav-training a:hover,
+#sites #nav-sites a:hover,
+#contacts #nav-contacts a:hover,
+#calendar #nav-calendar a:hover,
+#hints #nav-hints a:hover,
+#faqs #nav-faqs a:hover,
+#resources #nav-resources a:hover,
+#active_vol #nav-active_vol a:hover, 
+#lcs_eros #nav-lcs_eros a:hover,
+#about #nav-about a:hover,
+#state #nav-state a:hover,
+#state #nav-state a:hover,
+#whatwedo #nav-whatwedo a:hover,
+#thanks #nav-thanks a:hover,
+#org_chart #nav-org_chart a:hover,
+#job_desc #nav-job_desc a:hover,
+#nav a:hover {
+    color:#202944;
+    background-image: url('../imgs/rollOver.png');
+}
+#nav li.block ul {
+    position: relative;
+    padding:2px 2px 2px 2px;
+    list-style: none;
+    display: none;
+}
+#nav li.block:hover ul {
+    display: block;
+    position: absolute;
+}

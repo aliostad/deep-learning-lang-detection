@@ -1,0 +1,43 @@
+.load-error{
+	display: none;
+	position: absolute;
+
+	top: .96rem;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	background-color: #fff;
+	font-size: .32rem;
+	text-align: center;
+}
+
+.load-error .icon-panel{
+	margin-top: 3.36rem;
+}
+
+.load-error .load-error-icon{
+	width: 1.8rem;
+	height: 1.24rem;
+	background-image: url(img/failed_load_icon.png);
+}
+
+.load-error .text-panel{
+	margin-top: .56rem;
+	color: #acb4bf;
+}
+
+.load-error .button-panel{
+	margin-top: .32rem;
+}
+
+.load-error .reload-button{
+	display: inline-block;
+	width: 2.54rem;
+	height: .7rem;
+	line-height: .7rem;
+
+	border:1px solid #3d9ddb;
+	border-radius: .35rem;
+	color: #3d9ddb;
+}

@@ -1,0 +1,54 @@
+.grid-view-loading
+{
+	background:url(loading.gif) no-repeat;
+}
+
+.grid-view th a {
+	color:#333;
+}
+.grid-view td, .grid-view th {
+    vertical-align: middle;
+}
+
+.grid-view .summary {   
+    margin: 0 0 5px;
+    text-align: right;
+}
+
+.grid-view th a.asc
+{
+	background:url(up.gif) right center no-repeat;
+	padding-right:10px;
+}
+
+.grid-view th a.desc
+{
+	background:url(down.gif) right center no-repeat;
+	padding-right:10px;
+}
+
+
+.grid-view .button-column { 
+	width: 80px;
+	
+}
+
+
+.grid-view .pager
+{
+	margin:5px 0 0 0;
+	text-align:right;
+}
+
+.grid-view .empty
+{
+	font-style:italic;
+}
+
+.grid-view .filters input, .grid-view .filters select {
+	width: 90%;
+}
+
+.grid-view td.tac {
+	text-align: center;
+}

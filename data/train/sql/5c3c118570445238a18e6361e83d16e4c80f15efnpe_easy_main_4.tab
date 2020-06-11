@@ -1,0 +1,5 @@
+questZone	navPoints	laps	specialTarget	triggerEvent	triggerSplitCondition	triggerArg	triggerArg2	triggerOn	triggerEndsMission	triggerDelay	autoReward	questDelay	_DESIGNER NOTES_	questSeries
+s	s	i[1]	s	"e(none=0,splitquest=1,surpriseattack=2)[none]"	"e(triggerOn=0,success=1,failure=2,both=3)[triggerOn]"	s	s	i	i	i	i	i	s	s
+space_ord_mantell	space_ord_mantell:npe_easy_main_patrol_7	1		splitquest	triggerOn	destroy_surpriseattack:npe_easy_main_4a		2	1	5	0	0	The Player must patrol to the Lurid Aurora.	
+	space_ord_mantell:npe_easy_main_patrol_8													
+	space_ord_mantell:npe_easy_main_patrol_9													

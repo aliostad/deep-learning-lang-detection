@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  min-width: 300px;
+}
+
+p {
+  margin: 0;
+}
+
+.app {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+
+.main {
+  width: 250px;
+}
+
+.status {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 230px;
+}
+
+.reset {
+  margin: 4px auto 0;
+}
+
+.board {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.layer {
+  margin-top: 30px;
+}
+
+.square {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+  font-size: 36px;
+}
+
+.square:hover {
+  cursor: pointer;
+}
+
+.free:hover {
+  background: #5F5;
+  transition: 0.5s;
+}
+
+.taken:hover {
+  background: #F55;
+  transition: 0.5s;
+}
+
+.score {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 220px;
+}
+
+/*----------------------Load screen styles-----------------*/
+
+.load-screen {
+  text-align: center;
+}
+
+.load-screen > h1 {
+  margin-bottom: 5px;
+}
+
+.load-screen > h2 {
+  margin-bottom: 0;
+}
+
+.load-screen > .board {
+  margin-bottom: 30px;
+}
+
+.load-screen > .board > .layer > .line > .free:hover {
+  cursor: default;
+  background: white;
+}
+
+.load-screen > .board > .layer > .line > .taken {
+  background: red;
+}
+
+.load-screen > p {
+  margin: 0 auto 1em;
+  max-width: 630px;
+}
+
+@keyframes fade-in-out {
+  0%    {background: white}
+  50%   {background: #5F5}
+  100%  {background: white}
+}
+
+.load-screen > .click-skip {
+  animation: fade-in-out 1s infinite;
+  width: 260px;
+}
+
+.load-screen > button {
+  height: 45px;
+  width: 115px;
+  border-radius: .5em;
+}
+
+
+/*----------------------------------------------------*/
+
+@media (max-width: 800px) {
+  .main {
+    width: 150px;
+  }
+
+  .status {
+    margin-top: 200px;
+    height: 40px;
+  }
+
+  .reset {
+    width: 140px;
+  }
+
+  .layer {
+    margin-top: 10px;
+  }
+
+  .score {
+    margin-top: 200px;
+  }
+
+  .load-screen > p {
+    max-width: 500px;
+  }
+}
+
+
+
+@media (max-width: 500px) {
+
+  .main {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .status {
+    height: 40px;
+  }
+
+  .reset {
+    width: 100%;
+  }
+
+  .load-screen > h1 {
+    font-size: 25px;
+  }
+
+  .load-screen > h2 {
+    font-size: 17px;
+  }
+
+  .load-screen > p {
+    max-width: 295px;
+  }
+}

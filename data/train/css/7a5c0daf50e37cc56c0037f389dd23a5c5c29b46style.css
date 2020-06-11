@@ -1,0 +1,193 @@
+body{
+font-family: 'Roboto', sans-serif;
+}
+.f_l{
+	float:left;
+}
+.f_r{
+	float:right;
+}
+.hidden{
+	display:none;
+}
+.visible{
+	display:block;
+}
+
+
+/*                   screens setup   */
+#content{
+	position: relative;
+}
+#content>div{
+	position: absolute;
+	outline: 1px solid;
+}
+#content, .view, .tpanel{
+	width: 100%;
+	overflow: hidden;
+	background: white;
+}
+#content, .view{
+	height: 100%;
+}
+.view{
+	will-change: transform;
+	transition: transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+	transform: translate3d(0,0,0);
+}
+.but{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: green;
+}
+.tpanel{
+	height: 50px;
+	line-height: 50px;
+}
+.threeButsInTp{
+	width: 33.333%;
+	float: left;
+	text-align: center;
+}
+#main_screen, #foreign_screen, #cam_screen, #controls_tpanel, #item_tpanel{
+	top: 0;
+	left: 0;
+}
+#mainqr_screen, #foreignqr_screen{
+	top: 0;
+	left: 100%;
+}
+#addlink_screen{
+	top:100%;
+	left: 0;
+}
+#add_but, #scan_but{
+	bottom: 1%;
+	right: 1%
+}
+#main_screen, #mainqr_screen, #foreign_screen, #foreignqr_screen, #addlink_screen, #cam_screen{
+	box-sizing: border-box;
+	padding-top: 60px;
+}
+#main_screen{
+	z-index: 1;
+} 
+#mainqr_screen{
+	z-index: 2;
+} 
+#foreign_screen{
+	z-index: 3;
+}
+#foreignqr_screen{
+	z-index: 4;
+} 
+#addlink_screen{
+	z-index: 5;
+} 
+#cam_screen{
+	z-index: 6;
+} 
+#controls_tpanel{
+	z-index: 7;
+} 
+#item_tpanel{
+	z-index: 8;
+} 
+#add_but{
+	z-index: 9;
+} 
+#scan_but{
+	z-index: 10;
+}
+/*                   screens presets   */
+/*                   main main  */
+.show_main #foreign_screen, .show_main #foreignqr_screen, .show_main #cam_screen, .show_main #item_tpanel, .show_main #scan_but{
+	visibility: hidden;
+	opacity: 0;
+}
+.show_main  .tpanel>div:nth-child(1){
+	font-weight: bold;
+}
+/*                   main qr   */
+.show_main_qr #foreign_screen, .show_main #foreignqr_screen, .show_main_qr #cam_screen, .show_main_qr #controls_tpanel, .show_main_qr #scan_but, .show_main_qr #add_but{
+	visibility: hidden;
+	opacity: 0;
+}
+.show_main_qr #mainqr_screen{
+	transform: translateX(-100%);
+}
+.show_main_qr #item_tpanel{
+	visibility: visible;
+	opacity: 1;
+}
+/*                   main add_link   */
+.show_main_addlink #foreign_screen, .show_main_addlink #foreignqr_screen, .show_main_addlink #cam_screen, .show_main_addlink #item_tpanel, .show_main_addlink #scan_but{
+	visibility: hidden;
+	opacity: 0;
+}
+.show_main_addlink #addlink_screen{
+	transform: translateY(-100%);
+}
+.show_main_addlink #item_tpanel{
+	visibility: visible;
+	opacity: 1;
+}
+/*                   foreign main   */
+.show_foreign_main #main_screen, .show_foreign_main #cam_screen, .show_foreign_main #item_tpanel, .show_foreign_main #add_but{
+	visibility: hidden;
+	opacity: 0;
+}
+.show_foreign_main .tpanel>div:nth-child(2){
+	font-weight: bold;
+}
+/*                   foreign qr   */
+.show_foreign_qr #main_screen, .show_foreign_qr #mainqr_screen, .show_foreign_qr #cam_screen, .show_foreign_qr #controls_tpanel, .show_foreign_qr #scan_but, .show_foreign_qr #add_but{
+	visibility: hidden;
+	opacity: 0;
+}
+.show_foreign_qr #foreignqr_screen{
+	transform: translateX(-100%);
+}
+.show_foreign_qr #item_tpanel{
+	visibility: visible;
+	opacity: 1;
+}
+/*                   cam   */
+.show_cam #main_screen, .show_cam #mainqr_screen, .show_cam #foreign_screen, .show_cam #foreignqr_screen, .show_cam #controls_tpanel, .show_cam #add_but, .show_cam #scan_but{
+	visibility: hidden;
+	opacity: 0;
+}
+.show_cam #item_tpanel, .show_cam #cam_screen{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

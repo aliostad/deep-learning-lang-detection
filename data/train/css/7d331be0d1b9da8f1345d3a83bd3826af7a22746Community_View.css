@@ -1,0 +1,52 @@
+body {
+	background: #f2f2f2;
+	font-family: '함초롬돋움';
+	font-size: 16px;
+	text-align: center;
+	margin: 0;
+}
+#wrapper{
+	padding-top: 10px;
+}
+#top_bar{
+	width: 90%;
+	margin: 0 auto;
+}
+td{
+	border-top: 2px solid #737373;
+	border-bottom: 2px solid #737373;
+	background: white;
+	padding: 5px;
+}
+#title{
+	font-size: 18px;
+}
+#content_wrapper{
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border-bottom: 2px solid #737373;
+	background: white;
+}
+#content{
+	text-align: left;
+	padding: 10px 15px;
+}
+#backtolist_btn{
+	float: left;
+	margin-left: 5%;
+}
+#write_btn{
+	float: right;
+	margin-right: 5%;
+}
+#backtolist_btn, #write_btn{
+	border: 0;
+	background: #7bb080;
+	color: #F2F2F2;
+	padding: 5px 8px;
+	margin-right: 5%;
+	margin-bottom: 5px;
+	
+}
+

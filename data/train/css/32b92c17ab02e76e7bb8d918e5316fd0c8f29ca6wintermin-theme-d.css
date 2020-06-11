@@ -1,0 +1,144 @@
+/* ========================================================================
+   Component: layout
+ ========================================================================== */
+body,
+.wrapper > section {
+  background-color: #ffffff;
+}
+/* ========================================================================
+   Component: top-navbar
+ ========================================================================== */
+.navbar-top .navbar-header {
+  background-color: #4d4645;
+}
+.navbar-top .navbar-nav > li > a,
+.navbar-top .navbar-nav > .open > a {
+  color: #888888;
+}
+.navbar-top .navbar-nav > li > a:hover,
+.navbar-top .navbar-nav > .open > a:hover,
+.navbar-top .navbar-nav > li > a:focus,
+.navbar-top .navbar-nav > .open > a:focus {
+  color: #666666;
+}
+.navbar-top .navbar-nav > .active > a,
+.navbar-top .navbar-nav > .open > a,
+.navbar-top .navbar-nav > .active > a:hover,
+.navbar-top .navbar-nav > .open > a:hover,
+.navbar-top .navbar-nav > .active > a:focus,
+.navbar-top .navbar-nav > .open > a:focus {
+  background-color: transparent;
+}
+.navbar-top .navbar-nav > li > [data-toggle='navbar-search'] {
+  color: #fff;
+}
+.navbar-top .navbar-nav > li > [data-toggle='navbar-search']:hover,
+.navbar-top .navbar-nav > li > [data-toggle='navbar-search']:focus {
+  color: #fff;
+}
+@media only screen and (min-width: 768px) {
+  .navbar-top {
+    background-color: #4d4645;
+  }
+  .navbar-top .navbar-nav > .open > a,
+  .navbar-top .navbar-nav > .open > a:hover,
+  .navbar-top .navbar-nav > .open > a:focus {
+    box-shadow: 0 -3px 0 rgba(255, 255, 255, 0.5) inset;
+  }
+  .navbar-top .navbar-nav > li > a,
+  .navbar-top .navbar-nav > .open > a {
+    color: #cccccc;
+  }
+  .navbar-top .navbar-nav > li > a:hover,
+  .navbar-top .navbar-nav > .open > a:hover,
+  .navbar-top .navbar-nav > li > a:focus,
+  .navbar-top .navbar-nav > .open > a:focus {
+    color: #ffffff;
+  }
+  .navbar-top .navbar-nav > li > [data-toggle='navbar-search'] {
+    color: #cccccc;
+  }
+  .navbar-top .navbar-nav > li > [data-toggle='navbar-search']:hover,
+  .navbar-top .navbar-nav > li > [data-toggle='navbar-search']:focus {
+    color: #ffffff;
+  }
+  .nav-wrapper {
+    background-color: #4d4645;
+  }
+}
+/* ========================================================================
+   Component: sidebar
+ ========================================================================== */
+.sidebar {
+  background-color: #ffffff;
+  border-right-color: #cccccc;
+}
+.sidebar .nav-heading {
+  color: #909090;
+}
+.sidebar .nav-labels > .nav-labels-item > a {
+  color: #909090;
+}
+.sidebar .nav > li > a,
+.sidebar .nav > li > .nav-item {
+  color: #909090;
+}
+.sidebar .nav > li > a:focus,
+.sidebar .nav > li > .nav-item:focus {
+  color: #808080;
+}
+.sidebar .nav > li > a > em,
+.sidebar .nav > li > .nav-item > em {
+  color: #909090;
+}
+.sidebar .nav > li.active,
+.sidebar .nav > li:hover,
+.sidebar .nav > li.active > a,
+.sidebar .nav > li:hover > a,
+.sidebar .nav > li.active > a > .item-text,
+.sidebar .nav > li:hover > a > .item-text,
+.sidebar .nav > li.active .nav,
+.sidebar .nav > li:hover .nav {
+  background-color: #fafafa;
+  color: #808080;
+}
+.sidebar .nav > li.active > a > em,
+.sidebar .nav > li:hover > a > em {
+  color: #6dce9b;
+}
+.sidebar .nav .nav {
+  background-color: #ffffff;
+}
+.sidebar .nav .nav > li > a:focus,
+.sidebar .nav .nav > li > .nav-item:focus,
+.sidebar .nav .nav > li > a:hover,
+.sidebar .nav .nav > li > .nav-item:hover {
+  color: #808080;
+}
+.sidebar .nav .nav > li > a:after,
+.sidebar .nav .nav > li > .nav-item:after {
+  border-color: #909090;
+}
+.sidebar .nav .nav > li.active > a,
+.sidebar .nav .nav > li.active > .nav-item {
+  color: #808080;
+}
+.sidebar .nav .nav > li.active > a:after,
+.sidebar .nav .nav > li.active > .nav-item:after {
+  border-color: #6dce9b;
+  background-color: #6dce9b;
+}
+/* ========================================================================
+   Component: offsidebar
+ ========================================================================== */
+.offsidebar {
+  border-left: 1px solid #2e2e2e;
+  background-color: #665d5c;
+  color: #f1f2f3;
+}
+.offsidebar a {
+  color: #f1f2f3;
+}
+.offsidebar .text-muted {
+  color: #d1d2d3;
+}

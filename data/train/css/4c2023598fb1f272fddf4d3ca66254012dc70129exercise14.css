@@ -1,0 +1,55 @@
+/*Zero browser defaults*/
+body * {margin:0; padding:0; border:none;text-indent:0;text-decoration: none;outline:none;}
+
+/* ------------------------
+	Basic style 
+ ------------------------ */
+body			{font-family:georgia; font-size:15px; line-height:21px;}
+h1, h2, p, ol	{font-weight:normal;margin-bottom:15px;}
+ol li 			{margin-bottom:10px;}
+a 				{color:#00b4ff; /*blue*/}
+
+
+/* ------------------------
+	Nav 
+ ------------------------ */
+body#ex12 li#nav-12 a,
+body#ex13 li#nav-13 a, 
+body#ex14 li#nav-14 a {	
+	color:black;
+	}
+
+/* ------------------------
+	Layout 
+ ------------------------ */
+
+body {background: #fff url(guide14.jpg) no-repeat left top;}
+
+
+/* Write a rule for the main container that ...
+   - moves it to a point 200 px across and and 100 px down on the page 
+   - restricts its width to 550px */
+
+/* Write a rule that separates the image-and-caption groups by 20 px vertically */
+
+
+/* Write a rule for the groups that allows you to position their nested captions 
+   relative to them */
+
+
+/* Write a rule for ALL the caption paragraphs that
+  - positions them in the upper-right corner of their associated image 
+  - assigns tab-blue.png as a background image
+  - sets a width and height to ensure the background image shows through 
+  - positions the background image
+  - centers the text and makes it white */
+
+
+
+/* Write a rule for the Hatch caption paragraph that 
+   sets the bg image to tab-red.png */
+
+/* Write a rule for the Library caption paragraph that 
+   - sets the bg image to tab-white.png
+   - makes the text blue (#54a0ff) */
+

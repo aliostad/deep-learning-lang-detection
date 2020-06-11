@@ -1,0 +1,80 @@
+<service-components>
+	<service-component
+		type="org.tinygroup.service.test.service.UserManagerService"
+		group-id="org.tinygroup.service.test.service" artifact-id="UserManagerService">
+		<service-method name="serviceAddServiceUser" local-name="serviceAddServiceUser"
+			service-id="serviceAddServiceUser" version="" description="添加用户(对象)"
+			method-name="addServiceUser">
+			<service-parameters>
+				<service-parameter name="user"
+					type="org.tinygroup.service.test.base.ServiceUser" required="false" is-array="false" />
+			</service-parameters>
+			<service-result name="user2" required="true" is-array="false"
+				type="org.tinygroup.service.test.base.ServiceUser" />
+		</service-method>
+		
+		
+		<service-method name="serviceAddServiceUserByName" local-name="serviceAddServiceUserByName"
+			service-id="serviceAddServiceUserByName" version="" description="添加用户(名称)"
+			method-name="addServiceUser">
+			<service-parameters>
+				<service-parameter name="name"
+					type="java.lang.String" required="true" is-array="false" />
+			</service-parameters>
+			<service-result name="user2" required="true" is-array="false"
+				type="org.tinygroup.service.test.base.ServiceUser" />
+		</service-method>
+		
+		
+		<service-method name="serviceGetServiceUserAge" local-name="serviceGetServiceUserAge"
+			service-id="serviceGetServiceUserAge" version="" description="获取年龄(名称)"
+			method-name="getServiceUserAge">
+			<service-parameters>
+				<service-parameter name="name"
+					type="java.lang.String" required="true" is-array="false" />
+			</service-parameters>
+			<service-result name="age" required="true" is-array="false"
+				type="int" />
+		</service-method>
+		
+		
+		<service-method name="serviceSetServiceUserAge" local-name="serviceSetServiceUserAge"
+			service-id="serviceSetServiceUserAge" version="" description="设置年龄(名称年龄Integer)"
+			method-name="setServiceUserAge">
+			<service-parameters>
+				<service-parameter name="name"
+					type="java.lang.String" required="true" is-array="false" />
+				<service-parameter name="age"
+					type="java.lang.Integer" required="true" is-array="false" />
+			</service-parameters>
+			<service-result name="i" required="true" is-array="false"
+				type="int" />
+		</service-method>
+		
+		
+		<service-method name="serviceSetServiceUserAgeInt" local-name="serviceSetServiceUserAgeInt"
+			service-id="serviceSetServiceUserAgeInt" version="" description="设置年龄(名称年龄int)"
+			method-name="setServiceUserAge">
+			<service-parameters>
+				<service-parameter name="name"
+					type="java.lang.String" required="true" is-array="false" />
+				<service-parameter name="age"
+					type="int" required="true" is-array="false" />
+			</service-parameters>
+		</service-method>
+		
+		<service-method name="serviceSetServiceUserAgeArray" local-name="serviceSetServiceUserAgeArray"
+			service-id="serviceSetServiceUserAgeArray" version="" description="设置年龄(名称年龄数组)"
+			method-name="setServiceUserAge">
+			<service-parameters>
+				<service-parameter name="names"
+					type="java.lang.String" required="true" is-array="true" />
+				<service-parameter name="ages"
+					type="int" required="true" is-array="true" />
+			</service-parameters>
+			<service-result name="length" required="true" is-array="false"
+				type="int" />
+		</service-method>
+		
+	</service-component>
+</service-components>

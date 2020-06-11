@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <project name="Timeline" default="install">
+     <target name="install" depends="copyJavascript,copyImg,copyDate-chooser,copySlider">
+        <echo>Copying PHP scripts to server</echo>
+        <copy todir="${timeline.docroot}">
+        	<fileset dir="webroot">
+        		<include name="*.php" />
+        		<include name="*.css" />
+        	</fileset>
+        </copy>
+     </target>
+  	 <target name="copyJavascript">
+        <echo>Copying Javascript to server</echo>
+  	 	<copy todir="${timeline.docroot}">
+        	<fileset dir="webroot">
+        		<include name="*.js" />
+        	</fileset>
+  	 	</copy>
+  	 </target>
+  	 <target name="copyImg">
+        <echo>Copying images to server</echo>
+  	 	<copy todir="${timeline.docroot}">
+        	<fileset dir="webroot">
+        		<include name="*.png" />
+        		<include name="*.gif" />
+        	</fileset>
+  	 	</copy>
+  	 </target>
+  	 <target name="copyDate-chooser">
+  	 	<echo>Copying date-chooser code to the server</echo>
+  	 	<copy todir="${timeline.docroot}/date-chooser">
+  	 		<fileset dir="date-chooser" excludes="*.html" /> 
+  	 	</copy>
+  	 </target>
+	 <target name="copySlider">
+  	  	 	<echo>Copying slider code to the server</echo>
+  	  	 	<copy todir="${timeline.docroot}/slider">
+  	  	 		<fileset dir="slider" excludes="*.htm" /> 
+  	  	 	</copy>
+  	  </target>
+  </project>

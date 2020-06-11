@@ -1,0 +1,76 @@
+#my-pic {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+#my-pic:hover {
+  opacity: .7;
+}
+
+.model {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, .9);
+  padding-top: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: auto;
+  display: none;
+}
+
+.model-content {
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+  display: block;
+}
+
+#caption {
+  width: 80%;
+  max-width: 700px;
+  height: 150px;
+  margin: auto;
+  padding: 10px 0;
+  display: block;
+  color: #ccc;
+  text-align: center;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.model-content,
+#caption {
+  animation: zoom .6s ease-in-out;
+}
+
+.close {
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  transition: .3s;
+}
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  color: #bbb;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .model-content {
+    width: 100%;
+  }
+}

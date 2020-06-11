@@ -1,0 +1,156 @@
+#!/bin/bash
+
+
+# echo "Usage: iou_kill [OPTION] [PARAMETERS]"
+# echo 
+# echo " -a: kill all routers and sniffers"
+# echo " -s: kill sniffers"
+# echo " -r: kill routers"
+# echo
+# echo "Parameters"
+# echo " -n: <number of routers> [<origin router> [<origin port>]]"
+# echo " -id: <id of router|sniffer>"
+
+function banner(){
+	echo "Usage: iou_kill [OPTION] [PARAMETERS]"
+	echo 
+	echo " -a: kill all routers and sniffers"
+	echo " -sn: kill n sniffers"
+	echo " -rn: kill n routers"
+	echo " -rid: kill router <router id>"
+	echo " -sid: kill sniffer <sniffer id>"
+	echo
+	echo "Parameters"
+	echo " -rn|sn: <number of routers|sniffers> [<origin router>]"
+	echo " -rid|sid: <router_id|sniffer_id>"
+}
+DEBUG=0
+
+
+#check parameters
+option=`echo $1|cut -f2 -d'-'`
+
+case $1 in
+	"-a")	echo "Killing all routers and sniffers"
+			pkill wrapper-linux
+			pkill sniffer
+			pkill ioucon
+			kill `ps -ef|grep "[i]86bi_linux-adventerprisek9_xsi-ms.*"|awk '{print $2}'`
+			exit
+			;;
+	"-rid")	process=`ps -ef|grep "[w]rapper-linux.* -U $2$"|awk '{print $2}'`
+			if [[ $process == "" ]];
+			then
+				process=`ps -ef|grep "[i]86bi_linux-adventerprisek9_xsi-ms.* $2$"|awk '{print $2}'`
+				if [[ $process == "" ]];
+				then
+					echo "Router $2 not running"
+					echo
+					banner
+					exit
+				fi
+				console_process=`ps -ef|grep "[i]oucon $2$"|awk '{print $2}'`
+				if [[ "$console_process" != "" ]];
+				then
+					echo "Kill console $2: process $console_process"
+					kill $console_process
+				fi
+			fi
+			echo "Killing router ID $2, process $process"
+			kill $process
+			exit
+			;;
+	"-sid")	process=`ps -ef|grep "[s]niffer.*ether $2"|awk '{print $2}'`
+			if [[ $process == "" ]];
+			then
+				echo "Sniffer $2 not running"
+				echo
+				banner
+				exit
+			else
+				echo "Killing sniffer ID $2, process $process"
+				kill $process
+			fi	
+			exit		
+			;;
+	
+	"-rn")	mode="router"
+			;;
+	"-sn")	mode="sniffer"
+			;;
+
+	*)			
+			banner
+			exit
+			;;
+esac
+
+
+#check parameters for options -rn and -sn
+if [[ $# == 3 ]];
+then
+	num_routers=$2
+	source_router=$3 
+elif [[ $# == 2 ]]; 
+then
+	num_routers=$2
+	source_router=1
+else
+	banner
+	exit
+fi
+
+#DEBUG
+if [[ $DEBUG == 1 ]];
+then
+	echo "Num_routers=$num_routers"
+	echo "source_router=$source_router"
+fi
+#END DEBUG
+
+
+for ((i=0; i<$num_routers ; i++)) ;do
+	target_router=`expr $source_router + $i`
+	if [[ $DEBUG == 1 ]];
+	then
+		echo "+++ DEBUG: target_router = $target_router"
+	fi
+	if [[ "$1" == "-rn" ]];
+	then
+  	if [[ $DEBUG == 1 ]];
+	  then
+	  	echo "+++ DEBUG: option = -rn"
+	  fi	
+		process=`ps -ef|grep "[w]rapper.* -U $target_router$"|awk '{print $2}' `
+	 	if [[ $DEBUG == 1 ]];
+	  then
+	  	echo "+++ DEBUG: iou router process = $process"
+	  fi	
+	
+		if [[ "$process" == "" ]];
+		then
+			process=`ps -ef|grep "[i]86bi_linux-adventerprisek9_xsi-ms.* $target_router$"|awk '{print $2}'`
+		 	if [[ $DEBUG == 1 ]];
+		  then
+	  		echo "+++ DEBUG: IOL router process = $process"
+	  	fi	
+	
+		fi
+	else
+		process=`ps -ef|grep "[s]niffer.* ether $target_router$"|awk '{print $2}'`
+		if [[ "$process" == "" ]];
+		then
+			process=`ps -ef|grep "[s]niffer.* ether $target_router "|awk '{print $2}'`
+		fi
+	fi	
+	if [[ "$process" == "" ]];
+	then
+		echo "$mode $target_router not active"
+		continue
+	fi
+	echo "Killing $mode $target_router using process $process"
+	kill $process
+done
+	 
+
+

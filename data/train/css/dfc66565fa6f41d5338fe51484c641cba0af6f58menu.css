@@ -1,0 +1,73 @@
+nav {
+    overflow: hidden;
+	margin-bottom: 25px;
+}
+
+nav ul {
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+	display:block;
+	float:right;
+    position: relative;
+	margin-right: 50px
+}
+
+nav li:first-child {
+    margin-right: 0;
+}
+
+nav li.active a,
+nav li#users_menu a,
+nav li#users_menu.active,
+nav li#users_menu {
+	margin-left: 0px;
+}
+
+nav li.active,
+nav li.active a,
+nav a:hover {
+    color: #cccccc;
+}
+
+nav li.active,
+nav li.active a,
+nav li#users_menu a,
+nav li#users_menu.active {
+	font-weight: bold;
+}
+
+
+nav a {
+    display: block;
+    padding: 10px 0px 0px 0px;
+    text-decoration: none;
+}
+
+nav li.active,
+nav a:hover  {
+    border-width: 2px 0 0 0;
+    padding: 10px 0px 0px 0px;
+}
+
+nav li.active a,
+nav li#users_menu a,
+nav li#users_menu.active {
+    border: 0;
+}
+
+nav li.active a {
+    padding: 0;
+}
+
+nav li#users_menu a, nav li#users_menu.active {
+	color: white;
+	width: 200px;
+	text-align: right;
+	padding: 10px 20px 0px 0px;
+	background: #cccccc url(../images/arrow.png) no-repeat -35px 10px;
+}

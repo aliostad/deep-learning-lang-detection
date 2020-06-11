@@ -1,0 +1,77 @@
+* {
+    margin: 0px;  padding: 0px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: #b9def0;
+}
+
+.bg-image {
+    width: 1024px;
+    height: 600px;
+    border-radius: 5px;
+    background: url("../images/drifterBackground.jpg") -55px -60px no-repeat;
+    background-size: 1080px 670px;
+    margin-top: 2%;
+    position: relative;
+}
+
+.pos-center {
+    top: 15%;
+}
+
+.margin-set {
+    padding-top: 23%;
+}
+.margin-set h1 {
+    color: #ffffff;
+}
+
+.pos-bottom {
+    position: absolute;
+    bottom: 0px;
+}
+
+#resultModal .modal-body {
+    height: 200px;
+}
+
+#resultModal .modal-body .bottle-img {
+    width: 100%;
+    height: 100%;
+}
+
+#resultModal .modal-body .start-img {
+    width: 25%;
+    height: 70%;
+}
+
+#listModel .modal-body .list-group {
+    height: 250px;
+    overflow: auto;
+}
+
+#listModel .modal-body .list-group p {
+    width:500px;
+    line-height:25px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}
+#dialogModel {
+    top: 5%;
+}
+#dialogModel .modal-body .list-group {
+    height: 250px;
+    overflow: auto;
+}
+
+.fix-pos-1 {
+    position: fixed;
+    top: 35%; right: 0.2%;
+}
+.fix-pos-2 {
+    position: fixed;
+    top: 42%; right: 0.2%;
+}

@@ -1,0 +1,40 @@
+#ajax-load {
+	position: absolute;
+	top:400px;
+	left:200px;
+	visibility: hidden;
+}
+
+.loading-bar {
+	position: absolute;
+	bottom: 0px;
+	height:1px;
+	width:10px;
+	background-color:#eee;
+}
+
+.loading-frame {
+	position: absolute;
+	width: 150px;
+	height: 2px;
+	bottom: -13px;
+	left: 0px;
+	border: solid 1px;
+	border-color: rgba(86, 86, 86, 0.51);
+}
+
+.loading-text {
+	position: absolute;
+	width: 1px;
+	height: 2px;
+	bottom: -12px;
+	left: 0px;
+	background-color: #a6aaa9;
+}
+
+.ajax-load-cover {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(37, 37, 37, 0.56);
+}

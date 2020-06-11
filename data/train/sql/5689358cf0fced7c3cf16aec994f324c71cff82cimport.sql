@@ -1,0 +1,17 @@
+INSERT INTO `new_schema`.`users` (`login`, `password`) VALUES ('admin', 'admin');
+INSERT INTO `new_schema`.`users` (`login`, `password`) VALUES ('pinkman_j', 'pinkman_j');
+INSERT INTO `new_schema`.`users` (`login`, `password`) VALUES ('annihilator', 'annihilator');
+INSERT INTO `new_schema`.`lots` (`name`) VALUES ('Gold');
+INSERT INTO `new_schema`.`lots` (`name`) VALUES ('Silver');
+INSERT INTO `new_schema`.`lots` (`name`) VALUES ('Titanium');
+INSERT INTO `new_schema`.`lots` (`name`) VALUES ('Coal');
+INSERT INTO `new_schema`.`lots` (`name`) VALUES ('Iron');
+INSERT INTO `new_schema`.`lots` (`name`) VALUES ('Kryptonite');
+INSERT INTO `new_schema`.`lots` (`name`) VALUES ('Spice');
+INSERT INTO `new_schema`.`lots` (`name`) VALUES ('Tiberium');
+INSERT INTO `new_schema`.`bets` (`price`, `lot_id`, `user_id`) VALUES ('100', '1', '3');
+INSERT INTO `new_schema`.`bets` (`price`, `lot_id`, `user_id`) VALUES ('150', '2', '1');
+INSERT INTO `new_schema`.`bets` (`price`, `lot_id`, `user_id`) VALUES ('50', '3', '2');
+UPDATE `new_schema`.`lots` SET `bet_id`=1 WHERE `id`=1;
+UPDATE `new_schema`.`lots` SET `bet_id`=2 WHERE `id`=2;
+UPDATE `new_schema`.`lots` SET `bet_id`=3 WHERE `id`=3;

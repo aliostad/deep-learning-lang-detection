@@ -1,0 +1,71 @@
+@media screen and (max-width: 801px) {
+    .api-docs {
+        overflow-x: hidden;
+    }
+
+    .api-docs #document-area #api-docs-content .inner > .main {
+        position: relative;
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .api-docs #document-area #api-docs-content .inner > .main {
+        width: 50%;
+    }
+    #toc{
+        display:none;
+    }
+    .api-docs #api-docs-header {
+        width:600px;
+        padding: 15px 0 0 5px;
+    }
+    .api-docs #api-docs-header .inner > aside {
+        margin: 3px 9px 3px 3px;
+        padding: 0;
+        border: 0;
+        vertical-align: middle;
+    }
+    .api-docs #api-docs-header .inner > .main {
+        margin: 3px 3px 0 9px;
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+    }
+    .api-docs #api-docs-header .main .status{
+        margin: 0;
+        line-height: 1.2em;
+        text-align: left;
+        width:100%;
+        //position: relative;
+    }
+    .api-docs #api-docs-header .main .status a.button{
+        width:80px;
+        padding:3px!important;
+    }
+    .api-docs #api-docs-header .inner .main .status .notification-icon{
+        display: none;
+    }
+    .api-docs #document-area #api-docs-content .inner {
+        margin: 0;
+        padding: 0;
+    }
+    .api-docs #document-area #api-docs-content .inner > .main {
+        margin-left: 0px;
+        border: 0;
+        width: 45%;
+        box-shadow: none;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .api-docs #api-docs-header {
+        width:480px;
+    }
+    .api-docs #document-area #api-docs-content .inner > .main {
+        width:40%
+    }
+}
+

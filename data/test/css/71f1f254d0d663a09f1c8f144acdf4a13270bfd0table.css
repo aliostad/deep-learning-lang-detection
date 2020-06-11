@@ -1,0 +1,64 @@
+table{
+	width:100%;
+	border:solid 1px #d0d0d0;
+	text-align:center;
+	margin:10px auto 20px;
+}
+table thead th{
+	padding-bottom:1px;
+	color:#0c79be;
+	height:30px;
+	line-height:30px;
+	border-right: solid 1px #b6d7e9;
+}
+table thead label{
+	background-color:#e3eff9;
+	display:block;
+}
+
+table td {
+	border-top:solid 1px #b6d7e9;
+	border-right:solid 1px #b6d7e9;
+	padding: 10px;
+}
+
+table td a{
+	display:inline-block;
+	cursor:pointer;
+	margin:5px;
+	padding-bottom:5px;
+}
+
+table td input[type='checkbox']{
+	margin-top:10px;
+}
+
+
+.modifyBtn {
+	padding-left:32px;
+	background:url("../images/modify.png") no-repeat 0 0 transparent;
+}
+.upLoadBtn {
+	padding-left:28px;
+	background:url("../images/upLoad.png") no-repeat 0 0 transparent;
+}
+.downLoadBtn {
+	padding-left:26px;
+	background:url("../images/downLoad.png") no-repeat 0 0 transparent;
+}
+.delLoadBtn{
+	padding-left:26px;
+	background:url("../images/del.png") no-repeat 0 0 transparent;
+}
+
+.page{
+	width:290px;
+	float:right;
+	font-size:13px;
+}
+.page input{
+	width: 25px;
+	height: 12px;
+	position: relative;
+	top: 1px;
+}

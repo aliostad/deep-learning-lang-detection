@@ -1,0 +1,11 @@
+<save arq="/home/adriano/workspace/VPE-qGM/src/processes/testeEquivalencia1.xml" pos="">
+<process repr="env" tipo="seq" pos="">
+<process repr="terminicio" x="1075" y="1335" cor="BLACK"></process>
+<process repr="macro" tipo="quantum" pos= "0:16" parametro= "(Control1(1),X,X,Target1(X))" name="Default Macro Name" x="1255" y="1335" cor="BLACK">
+<process repr="iterativo" tipo="iterativo" range="0:16:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr="conselem" qubits= "4" acao= "QGMAnalyzer" pos= "0" parametro= "(Control1(1),X,X,Target1(X))" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="termfim" x="1437" y="1335" cor="BLACK"></process>
+</process>
+</save>

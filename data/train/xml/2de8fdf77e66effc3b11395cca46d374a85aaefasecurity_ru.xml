@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<catalogue xml:lang="ru">
+
+    <!--Customer-->
+    <message key="interface.customers">Покупатели</message>
+    <message key="Customers">Покупатели</message>
+    <message key="Customer">Покупатель</message>
+    <message key="Customer.firstName">Имя</message>
+    <message key="Customer.lastName">Фамилия</message>
+    <message key="Customer.creditStatus">Статус Кредита</message>
+    <message key="Customer.accountStatus">Статус Эккаунта</message>
+    <message key="Customer.account">Аккаунт</message>
+    <message key="Customer.email">Email</message>
+    <message key="Customer.addNew">Добавить Покупателя</message>
+    <message key="Customer.list">Список Покупателей</message>
+    <message key="Customer.edit">Редактировать Информацию о покупателе</message>
+    <!--<message key="Customer.login">Логин</message>-->
+
+    <!--autirize-->
+    <message key="auth.locale_ru">Русский</message>
+    <message key="auth.locale_en">Английский</message>
+    <message key="auth.login">Логин</message>
+    <message key="auth.password">Пароль</message>
+    <message key="auth.enter">Войти</message>
+    <message key="auth.confirm">Повторите</message>
+    <message key="auth.spam">Спам</message>
+    <message key="auth.email">Email</message>
+    <message key="auth.rememberme">запомнить меня</message>
+    <message key="auth.incorrect">Логин или пароль заданы неверно</message>
+    <message key="auth.loggedIn">Вы уже авторизованы!<br/>Вы можете войти текущим пользователем или<br/>сменить
+        пользователя
+    </message>
+    <message key="auth.changeAccount">Сменить пользователя</message>
+
+
+    <message key="really-delete?">Правда удалить {0}?</message>
+    <message key="Do you really want to delete the trash ?">Дейсвительно хотите удалить корзину ?</message>
+    <message key="delete-object">Удалить {0}</message>
+    <message key="delete-object?">Дейсвительно хотите удалить {0}?</message>
+    <message key="Passwd">Пароль</message>
+    <message key="Switch User">Сменить пользователя</message>
+    <message key="Delete Trash">Удалить корзину</message>
+    <message key="Cocoon and Server Status">Cocoon and Server Status</message>
+
+    <!-- Group Administration -->
+    <message key="Profile">Параметры</message>
+    <message key="Members">Участники</message>
+    <message key="IP Ranges">Диапазоны&#160;IP-адресов</message>
+    <message key="EditProfile">Редактировать параметры</message>
+    <message key="Edit Members">Редактировать членов</message>
+    <message key="Group Administration">Администрирование групп</message>
+    <message key="Add Group">Добавить группы</message>
+    <message key="Group Data">Данные группы</message>
+    <message key="Logout">Выйти</message>
+    <message key="SelectLanguage">Выберите язык отображения</message>
+
+    <!-- User Administration -->
+    <message key="User Data">Данные&#160;пользователя</message>
+
+    <message key="CMS User ID">Идентификатор&#160;пользователя&#160;CMS</message>
+    <message key="LDAP ID">Идентификатор&#160;LDAP</message>
+    <message key="Confirm password">Подтвердить&#160;пароль</message>
+    <message key="Add User">Добавить пользователя</message>
+    <message key="User Administration">Управление пользователями</message>
+    <message key="User Details">Детали пользователя</message>
+    <message key="All Groups">Все группы</message>
+    <message key="User Groups">Пользовательские группы</message>
+    <message key="Group Affiliation">Членство в группе</message>
+    <message key="Change Password">Сменить пароль</message>
+    <message key="Edit Group Affiliation">Редактировать членство в группе</message>
+
+    <!-- User Types -->
+    <message key="LDAP User">Пользователь LDAP</message>
+    <message key="Local User">Локальный пользователь</message>
+
+    <!-- IP Range Administration -->
+    <message key="IP Range">Диапазон&#160;IP-адресов</message>
+    <message key="IP Range ID">Идентификатор&#160;диапазона&#160;IP-адресов</message>
+    <message key="Network Address">Сетевой&#160;адрес</message>
+    <message key="Subnet Mask">Маска&#160;подсети</message>
+    <message key="IP Range Administration">Администрирование&#160;диапазонов&#160;IP-адресов</message>
+    <message key="Add IP Range">Добавить&#160;диапазон&#160;IP-адресов</message>
+    <message key="IP Range Profile">Настройки&#160;диапазона&#160;IP-адресов</message>
+
+    <!--User-->
+    <message key="Users">Пользователи</message>
+    <message key="User">Пользователь</message>
+    <message key="User.name">Название</message>
+    <message key="User.lstName">Имя</message>
+    <message key="User.firstName">Фамилия</message>
+    <message key="User.login">Логин</message>
+    <message key="User.password">Пароль</message>
+    <message key="User.confirmPassword">Повторите пароль</message>
+    <message key="User.passwordsNotEqual">Пароли не совпадают</message>
+    <message key="User.creditStatus">Статус Кредита</message>
+    <message key="User.accountStatus">Статус Эккаунта</message>
+
+    <message key="User.email">Email</message>
+    <message key="User.expires">Действителен до</message>
+    <!--Group-->
+    <message key="Groups">Группы</message>
+    <message key="Group.name">Группа</message>
+    <message key="Group.description">Описание</message>
+    <!--Role-->
+    <message key="Roles">Роли</message>
+    <message key="Role.name">Роль</message>
+    <message key="Role.description">Описание</message>
+
+    <!--repository-->
+    <message key="Role.name">Роль</message>
+
+
+    <!--Users-->
+    <message key="User">Пользователь</message>
+    <message key="Users">Пользователи</message>
+
+
+    <message key="User.list">Список Пользователей</message>
+    <message key="User.addNew">Добавить Нового</message>
+    <message key="User.edit">Редактировать пользователя</message>
+
+    <!--Groups-->
+    <message key="Group">Группа</message>
+    <message key="Groups">Группы</message>
+    <message key="Group.name">Группа</message>
+    <message key="Group.list">Список Групп</message>
+    <message key="Group.addNew">Добавить Группу</message>
+    <message key="Group.edit">Редактировать Группу</message>
+
+    <!--Roles-->
+    <message key="Role">Роль</message>
+    <message key="Roles">Роли</message>
+    <message key="Role.name">Роль</message>
+    <message key="Role.authority">Власть</message>
+    <message key="Role.list">Список ролей</message>
+    <message key="Role.addNew">Добавить Роль</message>
+    <message key="Role.edit">Редактировать роль</message>
+
+
+    <!--Transaction-->
+    <message key="TransactionHistory.object">Объект</message>
+    <message key="TransactionHistory.objectType">Тип объекта</message>
+    <message key="TransactionHistory.user">Пользователь</message>
+    <message key="TransactionHistory.userAction">Действие</message>
+    <message key="TransactionHistory.date">Дата</message>
+    <message key="TransactionHistory.ipAddress">IP клиента</message>
+
+
+</catalogue>

@@ -1,0 +1,40 @@
+ /**
+ * sing_cms 公共css
+ * @author singwa
+ */
+/**白色**/
+.imooc_write{
+	color:#fff;
+}
+
+
+/**
+ * 首页框架ifram样式调整
+ */
+.sing-iframe {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.sing-admin {
+  position: fixed;
+  left: 230px;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-color: #eff3f6;
+}
+
+.sing-main-content {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  min-height: 100%;
+  padding: 0;
+}
+.sing_cursor{cursor:pointer}
+.sing_green{color:#308014}

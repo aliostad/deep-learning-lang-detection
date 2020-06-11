@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.traveler.dao.MessageDAO">
+
+	<select id="selectAllMessage" resultType="com.traveler.model.MessageVO">
+		select * from message
+	</select>
+	
+	<select id="selectByIdMessage" parameterType="com.traveler.model.MessageVO" resultType="com.traveler.model.MessageVO">
+		select * from message 
+		where 
+		<choose>
+			<when test="message_get != null">
+			message_get=#{message_get}
+			</when>
+			<when test="message_send != null">
+			message_send=#{message_send}
+			</when>
+		</choose>
+		
+	</select>
+	
+	<insert id="insertMessage" parameterType="com.traveler.model.MessageVO">
+		insert into message ( 
+		  message_send
+	  	, message_get
+	  	, message_message
+	  	, message_date) 
+		values(#{message_send},#{message_get},#{message_message}, now());
+	</insert>
+	
+	<delete id="deleteMessage" parameterType="com.traveler.model.MessageVO">
+		delete from message where message_seq = #{ message_seq }
+	</delete>
+
+</mapper>

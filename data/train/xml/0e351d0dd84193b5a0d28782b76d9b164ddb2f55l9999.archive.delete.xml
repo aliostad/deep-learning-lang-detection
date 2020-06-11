@@ -1,0 +1,13 @@
+<transformList
+  id="l9999.archive.delete"
+>
+  
+  <transform process="delete" xpath=".//*[@dictRef='g:nimag']"/>
+  <transform process="delete" xpath=".//cml:formula/cml:atomArray"/>
+  <transform process="delete" xpath=".//cml:zMatrix[count(*)=0]"/>
+  <transform process="delete" xpath=".//cml:module[count(*)=0]"/>
+  <transform process="delete" xpath=".//cml:list/cml:module"/>
+  <transform process="delete" xpath=".//cml:list[count(*)=0]"/>
+  <transform process="delete" xpath=".//cml:molecule/cml:formula"/>
+  
+</transformList>

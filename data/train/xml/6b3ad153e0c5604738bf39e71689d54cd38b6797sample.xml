@@ -1,0 +1,83 @@
+<xml version="1.0">
+<!--//
+<signal title="FourTop" color="kBlue+3" stack="off">
+  <sample xsec="9.144e-04" xsecup="4.5e-06" xsecdown="4.5e-06">TTTT_TuneZ2star_8TeV-madgraph-tauola</sample>
+</background>
+
+<signal title="tbZ" color="kMagenta+3" stack="off">
+  <sample xsec="0.0114" xsecup="19.4%" xsecdown="15.1%">TBZToLL_4F_TuneZ2star_8TeV-madgraph-tauola</sample>
+</background>
+//-->
+
+<signal title="t#bar{t}" color="kRed" stack="on">
+  <sample xsec="252.89*0.324*0.324">TTJets_FullLeptMGDecays_8TeV-madgraph-tauola</sample>
+<!--
+  <alt name="generator"><sample xsec="245.8" xsecup="2.5%" xsecdown="3.4%">TTJets_MassiveBinDECAY_TuneZ2star_8TeV-madgraph-tauola</sample></alt>
+  <alt name="generator"><sample>TTJets_DileptDecays_8TeV-sherpa</sample></alt>
+  <alt name="generator"><sample>TT_8TeV-mcatnlo</sample></alt>
+  <alt name="generator"><sample>TT_noCorr_8TeV-mcatnlo</sample></alt>
+  <alt name="generator"><sample xsec="23.64">TTTo2L2Nu2B_8TeV-powheg-pythia6</sample></alt>
+  <alt name="generator"><sample>TT_CT10_TuneZ2star_8TeV-powheg-tauola</sample></alt>
+  <alt name="generator">
+    <sample>TT_Mtt-700to1000_CT10_TuneZ2star_8TeV-powheg-tauola</sample>
+    <sample>TT_Mtt-1000toInf_CT10_TuneZ2star_8TeV-powheg-tauola</sample>
+  </alt>
+  <alt name="mtop"><sample>TTJets_mass161_5_TuneZ2star_8TeV-madgraph-tauola</sample></alt>
+  <alt name="mtop"><sample>TTJets_mass163_5_TuneZ2star_8TeV-madgraph-tauola</sample></alt>
+  <alt name="mtop"><sample>TTJets_mass166_5_TuneZ2star_8TeV-madgraph-tauola</sample></alt>
+  <alt name="mtop"><sample>TTJets_mass169_5_TuneZ2star_8TeV-madgraph-tauola</sample></alt>
+  <alt name="mtop"><sample>TTJets_mass175_5_TuneZ2star_8TeV-madgraph-tauola</sample></alt>
+  <alt name="mtop"><sample>TTJets_mass178_5_TuneZ2star_8TeV-madgraph-tauola</sample></alt>
+  <alt name="mtop"><sample>TTJets_mass181_5_TuneZ2star_8TeV-madgraph-tauola</sample></alt>
+  <alt name="mtop"><sample>TTJets_mass184_5_TuneZ2star_8TeV-madgraph-tauola</sample></alt>
+  <alt name="match"><sample>TTJets_matchingdown_TuneZ2star_8TeV-madgraph-tauola</sample></alt>
+  <alt name="match"><sample>TTJets_matchingup_TuneZ2star_8TeV-madgraph-tauola</sample></alt>
+  <alt name="scale"><sample>TTJets_scaledown_TuneZ2star_8TeV-madgraph-tauola</sample></alt>
+  <alt name="scale"><sample>TTJets_scaleup_TuneZ2star_8TeV-madgraph-tauola</sample></alt>
+-->
+</signal>
+
+<background title="t#bar{t} others" color="kRed-3">
+  <sample xsec="252.89*0.676*0.676">TTJets_HadronicMGDecays_8TeV-madgraph</sample>
+  <sample xsec="252.89*0.676*0.324*2">TTJets_SemiLeptMGDecays_8TeV-madgraph-tauola</sample>
+</background>
+
+<background title="Single top" color="kCyan">
+  <sample xsec="11.1773">T_tW-channel-DR_TuneZ2star_8TeV-powheg-tauola</sample>
+  <sample xsec="11.1773">Tbar_tW-channel-DR_TuneZ2star_8TeV-powheg-tauola</sample>
+<!--
+
+  <sample xsec="3.89">T_s-channel_TuneZ2star_8TeV-powheg-tauola</sample>
+  <sample xsec="1.76">Tbar_s-channel_TuneZ2star_8TeV-powheg-tauola</sample>
+  <sample xsec="55.531">T_t-channel_TuneZ2star_8TeV-powheg-tauola</sample>
+  <sample xsec="30">Tbar_t-channel_TuneZ2star_8TeV-powheg-tauola</sample>
+-->
+  
+</background>
+
+<background title="Dibosons" color="kWhite">
+  <sample xsec="7.6">ZZ_TuneZ2star_8TeV_pythia6_tauola</sample>
+  <sample xsec="56">WW_TuneZ2star_8TeV_pythia6_tauola</sample>
+  <sample xsec="33.6">WZ_TuneZ2star_8TeV_pythia6_tauola</sample>
+<!--
+  <sample xsec="5.995">WWJetsTo2L2Nu_TuneZ2star_8TeV-madgraph-tauola</sample>
+  <sample xsec="33.21">WZJetsTo2L2Q_TuneZ2star_8TeV-madgraph-tauola</sample>
+  <sample xsec="33.21">WZJetsTo2Q2Nu_TuneZ2star_8TeV-madgraph-tauloa</sample>
+  <sample xsec="1.057">WZJetsTo3LNu_TuneZ2_8TeV-madgraph-tauola</sample>
+  <sample xsec="17.654">ZZJetsTo2L2Nu_TuneZ2star_8TeV-madgraph-tauola</sample>
+  <sample xsec="17.654">ZZJetsTo2L2Q_TuneZ2star_8TeV-madgraph-tauola</sample>
+  <sample xsec="17.654">ZZJetsTo2Q2Nu_TuneZ2star_8TeV-madgraph-tauloa</sample>
+  <sample xsec="0.7608">ZZJetsTo4L_TuneZ2star_8TeV-madgraph-tauola</sample>
+-->
+</background>
+
+<background title="W#rightarrowl#nu" color="kGreen">
+  <sample xsec="37509">WJetsToLNu_TuneZ2Star_8TeV-madgraph-tarball</sample>
+</background>
+
+<background title="Z/#gamma*#rightarrowl^{+}l^{-}" color="kAzure-1">
+  <sample xsec="1.19*11050.0*0.069">DYJetsToLL_M-10To50filter_8TeV-madgraph</sample>
+  <sample xsec="3503.71">DYJetsToLL_M-50_TuneZ2Star_8TeV-madgraph-tarball</sample>
+</background>
+
+</xml>

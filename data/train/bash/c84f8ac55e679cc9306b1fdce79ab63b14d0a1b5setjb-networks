@@ -1,0 +1,68 @@
+#!/bin/bash
+saveDir="/etc/justbrowsing/data"
+config="${saveDir}/config"
+nmDir="/etc/NetworkManager/system-connections"
+nmDel="/dev/shm/.nm-blacklist"
+keyDir="$HOME/.local/share/keyrings"
+
+listNetworks() {
+  if [ -f "$nmDel" -a -d "$nmDir" ]; then
+    diff -y --suppress-common-lines <(ls --color=none "$nmDir") <(cat "$nmDel" | sort) | awk -F "\t" '{print $1}'
+  else
+    ls --color=none "$nmDir"
+  fi
+}
+
+loadKeyring() {
+  mkdir -p "$keyDir"
+  find "${saveDir}/keyrings" -type f -exec cp {} "$keyDir" \;
+}
+
+saveKeyring() {
+  mkdir -p "${saveDir}/keyrings"
+  find "${saveDir}/keyrings" -type f -exec rm {} \;
+  find "$keyDir" -type f -exec cp {} "${saveDir}/keyrings" \;
+}
+
+loadNetworks() {
+  rm "$nmDel" 2>/dev/null
+  mkdir -p "$nmDir"
+  find "${saveDir}/networks" -type f -exec cp {} "$nmDir" \;
+  find "$nmDir" -type f -exec chmod 600 {} \;
+  systemctl restart NetworkManager
+}
+
+saveNetworks() {
+  mkdir -p "${saveDir}/networks"
+  find "${saveDir}/networks" -type f -exec rm {} \;
+  network="0"
+  IFS=$(echo -en "\n\b");
+  for essid in $(listNetworks); do
+    echo "$essid"
+    cp "${nmDir}/$essid" "${saveDir}/networks"
+    network=$((network+1))
+  done;
+}
+
+if [ -z "$1" ]; then
+  loadKeyring
+elif [ "$1" = "current" ]; then
+  listNetworks
+elif [ "$1" = "load" ]; then
+  loadNetworks
+elif [ "$1" = "reset" ]; then
+  > "$nmDel"
+  sed -i '/^network/d' "$config"
+  echo "network = ${network}" >> "$config"
+elif [ "$1" = "delete" ]; then
+  shift
+  echo "$@" >> "$nmDel"
+  sed -i '/^network/d' "$config"
+  echo "network = ${network}" >> "$config"
+elif [ "$1" = "store" ]; then
+  saveKeyring
+elif [ "$1" = "save" ]; then
+  saveNetworks
+  sed -i '/^network/d' "$config"
+  echo "network = ${network}" >> "$config"
+fi

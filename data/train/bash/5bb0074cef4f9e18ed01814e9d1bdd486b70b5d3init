@@ -1,0 +1,49 @@
+#!/bin/bash
+
+source "$SERVER_ROOT/lib/bash/common.bash"
+
+INIT=`cat $SERVER_ROOT/etc/init.json | json -b`
+LOG="$SERVER_ROOT/var/log/init"
+CONTEXT="$1"
+
+if echo "$CONTEXT" | grep -viq '^\(boot\|halt\)$'; then
+  echo "Invalid context. Exiting..."
+  exit 1
+fi
+
+echo "[$CONTEXT] Starting `date`" >> "$LOG"
+
+function runner() {
+  PROCESS="$1"
+  
+  if echo "$PROCESS" | grep -iq "\&$"; then
+    PROCESS="${PROCESS%&}"
+    echo "[$CONTEXT] $PROCESS starting in background..." >> "$LOG"
+    nohup "$SERVER_ROOT$PROCESS" &> /dev/null &
+    return
+  fi
+
+  echo "[$CONTEXT] $PROCESS starting..." >> "$LOG"
+  if ! "$SERVER_ROOT$PROCESS"; then
+    echo "[$CONTEXT] $PROCESS failed ($?)" >> "$LOG"
+    exit 2
+  fi
+
+  echo "[$CONTEXT] $PROCESS ok ($?)" >> "$LOG"
+}
+
+TASKS=""
+FIRST=true
+
+for ((l=`last "$INIT"`, i=0; i<=l; i++)); do
+  if field "$INIT" $i context | grep -qi "$CONTEXT"; then
+    TASKS="$TASKS`[[ $FIRST == true ]] && echo -n || echo "\n" ``field "$INIT" $i priority`:`field "$INIT" $i process`$(test -z `field "$INIT" $i async` || echo '&')"
+    FIRST=
+  fi
+done
+
+echo -e "$TASKS" | sort -u | cut -d':' -f2 | while read line; do
+  runner "$line"
+done
+
+exit 0

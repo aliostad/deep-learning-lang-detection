@@ -1,0 +1,40 @@
+#!/bin/bash
+  
+get_dimensions() 
+{
+  _dimensions=$(xrandr 2>&1 | grep ", current " | awk -F "," '{print $2}');
+  _width=$(echo "$_dimensions" | awk -F "^ current " '{print $2}' | awk NR==1 | awk '{print $1}');
+  _height=$(echo "$_dimensions" | awk -F "^ current " '{print $2}' | awk NR==1 | awk '{print $3}');
+  
+  # Prioritize by width
+  if [ -z "$_width" -o -z "$_height" ]; then
+    append="1024x768";
+  elif [ "$_width" -le "800" ]; then
+    append="800x600";
+  elif [ "$_width" -le "1024" ]; then
+    append="1024x768";
+  elif [ "$_width" -le "1280" ] && [ "$_height" -le "768" ]; then
+    append="1280x768";
+  elif [ "$_width" -le "1280" ]; then
+    append="1280x1024";
+  elif [ "$_width" -le "1336" ]; then
+    append="1336x768";
+  elif [ "$_width" -le "1600" ]; then
+    append="1600x900";
+  elif [ "$_width" -le "1680" ]; then
+    append="1680x1050";
+  elif [ "$_width" -le "1920" ]; then
+    append="1920x1080";
+  elif [ "$_width" -le "2560" ]; then
+    append="2560x1920";
+  elif [ "$_width" -le "2880" ]; then
+    append="2880x1800";
+  else
+    append="3200x2048";
+  fi  
+}
+
+get_dimensions;
+echo "wallpaper_$append.png" | tee -a /var/log/autosize.log
+cp /opt/justbrowsing/backgrounds/wallpaper_$append.png /home/user/.i3/wallpaper.png
+cp /opt/justbrowsing/backgrounds/lockscreen_$append.png /home/user/.i3/lockscreen.png

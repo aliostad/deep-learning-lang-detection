@@ -1,0 +1,103 @@
+.controller .model-ctrl {
+  border: none;
+  width: 200px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+.controller .model-ctrl:nth-child(1) {
+  background-color: #058;
+}
+.controller .model-ctrl:nth-child(2) {
+  background-color: #085;
+}
+.controller .model-ctrl:nth-child(3) {
+  background-color: #047;
+}
+.controller .model-ctrl:nth-child(4) {
+  background-color: #074;
+}
+.model-mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+.model-box {
+  position: fixed;
+  border: 1px solid #000;
+  background-color: #fff;
+  opacity: 1;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #000;
+}
+.model-box .model-body {
+  text-align: center;
+  font-size: 24px;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  position: absolute;
+  top: 20%;
+  padding: 5px 15px;
+}
+.model-box .model-body input {
+  font-size: 18px;
+  padding: 0 5px;
+}
+.model-box .model-closeBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  display: inline-block;
+  font-weight: 700;
+  width: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 21px;
+}
+.model-box .model-header {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  line-height: 45px;
+}
+.model-box .model-footer {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+}
+.model-box .model-footer button {
+  display: inline-block;
+  border: 1px solid #000;
+  box-shadow: 0 0 12px #e5e5e5;
+  width: 100px;
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.model-box .model-footer .model-confirmBtn {
+  margin-right: 10px;
+}
+.model-box .model-footer .model-cancelBtn {
+  margin-left: 10px;
+}
+.prompt-box.model-box .model-body {
+  text-align: left;
+}

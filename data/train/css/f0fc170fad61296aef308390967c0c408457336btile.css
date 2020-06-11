@@ -1,0 +1,37 @@
+
+.tile-header > input {
+    height: 20px;
+    float: right;
+}
+
+.tile-content { position: relative;}
+.tile-content div table tbody tr {display:inline}
+.tile-content:before, .tile-content:after { content: ""; display: inline;}
+.tile-content:after { clear: both }
+.tile-content div table tbody tr:nth-child(n+5) { display: none; visibility: hidden;}
+
+input[type=checkbox] { 
+    border: 0; 
+    clip: rect(0 0 0 0);  
+    height: 1px;    
+    width: 1px;  
+    margin: -1px;    
+    overflow: hidden;    
+    padding: 0;    
+    position: absolute;
+}
+
+[for$="load_more"] {    
+    bottom: 0em;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.1) inset, -1px -1px rgba(0, 0, 0, 0.1) inset;
+    left: 30px;
+    padding: 0.65rem;
+    position: absolute;
+    text-align: center;
+    width: 85%; }
+[for$="load_more"]:hover { background: #CFCFCF; color: #FFF;}
+[for$="load_more"] span:last-of-type { display: none; visibility: hidden;}
+
+input[type=checkbox]:checked ~ div table tbody tr { display: inline; visibility:visible; }
+input[type=checkbox]:checked ~ [for$="load_more"] span:first-of-type {display: none; visibility: hidden;}
+input[type=checkbox]:checked ~ [for$="load_more"] span:last-of-type {visibility: visible;display:block}

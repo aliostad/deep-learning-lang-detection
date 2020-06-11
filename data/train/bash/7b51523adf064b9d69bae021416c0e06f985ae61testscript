@@ -1,0 +1,28 @@
+#!/bin/bash
+cd ~/Desktop/262/cs262project
+rm sample/*
+rm log/*
+python
+import datamanager
+datamanager.datamanager('/Users/ealexander/Downloads/Crimes_-_2001_to_present(2).csv',100,200,.1,0,5,0,2000,'./sample/oracle','./sample/central','./sample/loc1','./sample/loc2','./sample/loc3','./sample/loc4')
+
+# spin up central and local machines, each in separate terminals
+#from central import central
+#central('./sample/central',5,2000,4)
+#
+#from local import local
+#local('./sample/loc1',5,2000,0,0)
+#
+#from local import local
+#local('./sample/loc2',5,2000,0,1)
+#
+#from local import local
+#local('./sample/loc3',5,2000,0,2)
+#
+#from local import local
+#local('./sample/loc4',5,2000,0,3)
+
+
+# in another, write data to local files and score for oracle
+#import datamanager
+#datamanager.datamanager('/Users/ealexander/Downloads/Crimes_-_2001_to_present(2).csv',100,200,.1,0,5,0,2000,'./log/oracle','./sample/oracle','./sample/central','./sample/loc1','./sample/loc2','./sample/loc3','./sample/loc4')

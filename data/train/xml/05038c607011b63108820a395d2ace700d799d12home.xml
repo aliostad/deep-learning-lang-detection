@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<messages>
+	<message id="strings-hitrequest">What hitje do you want to play?</message>
+	<message id="strings-hitinput-ok">Ok</message>
+	<message id="strings-searchinput-ok">Ok</message>
+	<message id="strings-playing-info">Hitje info</message>
+	<message id="strings-currently-playing">Currently playing</message>
+	<message id="strings-currently-typing">Currently typing</message>
+	<message id="strings-playlist">Next up</message>
+	<message id="strings-playback-controls">Playback controls</message>
+	<message id="strings-control-volume">Volume:</message>
+	<message id="strings-control-play">Playback:</message>
+	<message id="strings-playback-stop">Stop</message>
+	<message id="strings-playback-pause">Pause</message>
+	<message id="strings-playback-play">Play</message>
+</messages>

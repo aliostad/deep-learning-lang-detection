@@ -1,0 +1,26 @@
+#!/bin/sh
+
+XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-$HOME/.config}
+
+VCSH_MR_CONFIG_OVERRIDES=$XDG_CONFIG_HOME/vcsh/mr
+
+VCSH_REMOTE_BASE=ssh://koch.ro:git/vcsh
+VCSH_LOCAL_REPO_BASE=$XDG_CONFIG_HOME/vcsh/repo.d
+
+for REPODIR in $(find ${VCSH_LOCAL_REPO_BASE} -name "*.git" -type d)
+do
+  REPO=$(basename $REPODIR .git)
+
+  if [ -r $VCSH_MR_CONFIG_OVERRIDES/$REPO ]
+  then
+    cat $VCSH_MR_CONFIG_OVERRIDES/$REPO
+  else
+    cat <<EOF
+[${VCSH_LOCAL_REPO_BASE}/${REPO}.git]
+checkout = vcsh clone ${VCSH_REMOTE_BASE}/${REPO}.git ${REPO}
+gc       = vcsh run ${REPO} git gc --aggressivey
+notify   = git-wip | xargs --no-run-if-empty -0 notify-send -t 10000 "git-wip in vcsh repo ${REPO}"
+
+EOF
+  fi
+done

@@ -1,0 +1,53 @@
+.viewPanel {
+    table-layout: fixed;
+}
+
+.viewPanel th.index {
+    width: 2.5em;
+}
+
+.viewPanel th.index.checkbox {
+    width: 3.8em;
+}
+
+.viewPanel th label {
+    font-weight: bold;
+}
+
+.viewPanel th.detail {
+    width: 4em;
+}
+
+.viewPanel th.sort {
+    cursor: pointer;
+}
+
+.viewPanel th.sort span {
+    float: right;
+}
+
+.viewPanel th .sorting {
+    color: #3a87ad;
+}
+
+.viewPanel td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.viewPanel a:visited {
+    color: #a0a0a0;
+}
+
+.viewPanelParent {
+    overflow-x: auto;
+}
+
+.viewPanelParent .sum {
+    float: right;
+}
+
+.viewPanelParent .modal .pageNum {
+    text-align: right;
+}

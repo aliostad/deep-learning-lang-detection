@@ -1,0 +1,75 @@
+﻿/* = #mainNav2 & #mainNav3 & #mainNav4 & #mainNav5
+----------------------------------------------------------------------------------------------------*/
+#mainNav li{
+	height: 5.917em;
+	list-style :none;
+	float: left;
+	background: #EBEBEB url(../_img/navBtn.gif) no-repeat right top;
+}
+
+#mainNav li.current{
+	background-color:#1572C3;
+	background-image: url(../_img/navCurrentBtn.gif);
+}
+
+#mainNav li.lastDone{
+	background-color:#845A37;
+	background-image: url(../_img/navLastDoneBtn.gif);
+}
+
+#mainNav li.done{
+	background-color:#845A37;
+	background-image: url(../_img/navDoneBtn.gif);
+}
+
+#mainNav li a, #mainNav li a:link, #mainNav li a:visited, #mainNav li a:hover, #mainNav li a:active {
+color:#ccc;
+text-decoration:none;
+}
+
+#mainNav li.lastDone a, #mainNav li.lastDone a:link, #mainNav li.lastDone a:visited, #mainNav li.lastDone a:hover, #mainNav li.lastDone a:active, #mainNav li.current a, #mainNav li.current a:link, #mainNav li.current a:visited, #mainNav li.current a:hover, #mainNav li.current a:active, #mainNav li.done a, #mainNav li.done a:link, #mainNav li.done a:visited, #mainNav li.done a:hover, #mainNav li.done a:active {
+color:#fff;
+text-decoration:none;
+}
+
+#mainNav li a:hover
+{
+color:#000;
+cursor:hand;    
+}
+#mainNav li.done a:hover, #mainNav li.lastDone a:hover  {
+color:#FFFF99;
+cursor:hand;
+}
+
+#mainNav li a em{
+width:150px;
+display:block;
+margin:6px 0 0 10px;
+font-style:normal;
+font-weight:bold;
+}
+
+#mainNav li a span{
+width:110px;
+display:block;
+margin-left:10px;
+font-weight:normal;
+}
+
+#mainNav li.preview{
+background-image:none;
+}
+
+#mainNav li a{
+height:71px;
+display:block;
+}
+
+/* #mainNav.sevenStep */
+#mainNav.sevenStep li{width:130px;}
+#mainNav.sevenStep li a{width:130px;}
+
+/* #mainNav.sevenStep */
+#mainNav.eightStep li{width:115px;}
+#mainNav.eightStep li a{width:115px;}

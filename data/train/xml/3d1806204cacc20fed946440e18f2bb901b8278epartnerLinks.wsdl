@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+             xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype"
+             xmlns:po="http://www.bpel4chor.org/splitProcess/test/services/ProcessOrder"
+             xmlns:pp="http://www.bpel4chor.org/splitProcess/test/services/ProcessPayment"
+             name="OrderingProcessPLTs"
+             targetNamespace="http://www.iaas.uni-stuttgart.de/OrderingProcess/partnerLinkTypes">
+
+    <plnk:partnerLinkType name="ProcessOrderPLT">
+        <plnk:role name="ProcessOrder" portType="po:ProcessOrder"/>
+    </plnk:partnerLinkType>
+
+    <plnk:partnerLinkType name="ProcessPaymentPLT">
+        <plnk:role name="ProcessPayment" portType="pp:ProcessPayment"/>
+    </plnk:partnerLinkType>
+
+    <import namespace="http://www.bpel4chor.org/splitProcess/test/services/ProcessOrder" location="ProcessOrder.wsdl"/>
+    <import namespace="http://www.bpel4chor.org/splitProcess/test/services/ProcessPayment" location="ProcessPayment.wsdl"/>
+</definitions>

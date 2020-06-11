@@ -1,0 +1,75 @@
+.markdown-view {
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px; }
+  .markdown-view .markdown-view-btns {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    background-color: #444444; }
+    .markdown-view .markdown-view-btns .markdown-view-btn {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 10px;
+      color: #bbbbbb;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+      cursor: pointer; }
+      .markdown-view .markdown-view-btns .markdown-view-btn:hover {
+        color: #ffffff;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
+  .markdown-view .markdown-view-content {
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    font-family: 'Architects Daughter', cursive; }
+    .markdown-view .markdown-view-content p {
+      margin-top: 3px;
+      margin-bottom: 3px; }
+    .markdown-view .markdown-view-content h1, .markdown-view .markdown-view-content h2, .markdown-view .markdown-view-content h3, .markdown-view .markdown-view-content h4 {
+      letter-spacing: 1px;
+      word-spacing: 2px; }
+      .markdown-view .markdown-view-content h1::first-letter, .markdown-view .markdown-view-content h2::first-letter, .markdown-view .markdown-view-content h3::first-letter, .markdown-view .markdown-view-content h4::first-letter {
+        text-transform: capitalize; }
+    .markdown-view .markdown-view-content h1 {
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    .markdown-view .markdown-view-content h2 {
+      margin-top: 8px;
+      margin-bottom: 8px; }
+    .markdown-view .markdown-view-content h3 {
+      margin-top: 6px;
+      margin-bottom: 6px; }
+    .markdown-view .markdown-view-content h4 {
+      margin-top: 4px;
+      margin-bottom: 4px; }
+    .markdown-view .markdown-view-content ul {
+      width: calc(100% - 20px); }
+    .markdown-view .markdown-view-content pre {
+      padding: 0 10px 20px 10px;
+      width: calc(100% - 20px);
+      background-color: lightslategray;
+      color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 4px silver; }
+
+/*# sourceMappingURL=markdownview.css.map */

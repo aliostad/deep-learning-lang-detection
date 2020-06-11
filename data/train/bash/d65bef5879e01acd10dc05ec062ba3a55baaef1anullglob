@@ -1,0 +1,45 @@
+#!/usr/bin/env sh
+
+include shopts
+
+if shopts_test nullglob; then
+	SHOPTS_NULLGLOB_SAVE=()
+	SHOPTS_NULLGLOB_SAVE_COUNT=0
+
+
+	shopts_register nullglob
+
+
+	function shopts_nullglob_on {
+		shopt -s nullglob
+	}
+
+
+	function shopts_nullglob_off {
+		shopt -u nullglob
+	}
+
+
+	function shopts_nullglob_save {
+		SHOPTS_NULLGLOB_SAVE[SHOPTS_NULLGLOB_SAVE_COUNT++]=$(shopt -p nullglob)
+	}
+
+
+	function shopts_nullglob_restore {
+		if [[ SHOPTS_NULLGLOB_SAVE_COUNT -gt 0 ]]; then
+			eval "${SHOPTS_NULLGLOB_SAVE[--SHOPTS_NULLGLOB_SAVE_COUNT]}"
+			unset SHOPTS_NULLGLOB_SAVE\[SHOPTS_NULLGLOB_SAVE_COUNT\]
+		fi
+	}
+
+
+	function shopts_nullglob_available {
+		true
+	}
+else
+	function shopts_nullglob_on { false; }
+	function shopts_nullglob_off { false; }
+	function shopts_nullglob_save { false; }
+	function shopts_nullglob_restore { false; }
+	function shopts_nullglob_available { false; }
+fi

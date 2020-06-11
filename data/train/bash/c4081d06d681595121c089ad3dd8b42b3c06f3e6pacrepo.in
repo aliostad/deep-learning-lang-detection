@@ -1,0 +1,44 @@
+#!/bin/bash
+#
+# Usage: pacrepo [repo] <pacman args>
+#
+
+. @libexecdir@/pacrepo/bootstrap.sh
+
+config="$CONFIG"
+if [[ ! -r "$config" ]]; then
+	err "Could not read config file %s" "$config"
+	exit 1
+elif egrep -q "^[[:space:]]*\[$1\][[:space:]]*$" "$config"; then
+	repo="$1"
+	shift
+elif egrep -q "^[[:space:]]*\[$REPO\][[:space:]]*$" "$config"; then
+	repo="$REPO"
+else
+	err "Repo not found on command line or in %s" "$config"
+	exit 1
+fi
+
+parse_config() {
+	local repo config
+	repo="$1"
+	config="$2"
+
+	# extract repo from config
+	awk '
+		BEGIN { p = 0 }
+		$1 != "['"$repo"']" && $1 != "[options]" \
+			&& /^[[:space:]]*\[[^]]*\][[:space:]]*$/ { p = 0 }
+		$1 == "['"$repo"']" || $1 == "[options]"     { p = 1 }
+		p == 1 { print }
+	' "$config"
+}
+
+tmpconfig="$(mktemp --tmpdir "pacconfig-${config##*/}.XXXXXX")" \
+	|| exit 1
+trap 'rm -f "$tmpconfig"' EXIT
+
+parse_config "$repo" "$config" > "$tmpconfig"
+
+pacman "$@" --config="$tmpconfig"
+

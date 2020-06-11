@@ -1,0 +1,71 @@
+/**
+ * 模块：tshop-um-service 
+ * 皮肤（主题）: default
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-um-service"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+.tshop-um-service .service_hd {
+  background-color: #5c3001;
+  height: 26px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #FFF;
+  padding: 0 10px;
+}
+.tshop-um-service .service_bd {
+  border: 1px solid #E3E3E1;
+  padding: 8px;
+}
+.tshop-um-service .service_bd li {
+  margin-bottom: 10px;
+  width: 172px;
+  overflow: hidden;
+}
+.tshop-um-service .service_bd li h4 {
+  border-bottom: 1px dotted #ECECEC;
+  color: #484848;
+  padding: 0  0 3px 3px;
+}
+.tshop-um-service .service_bd li.kefu .item_bd {
+  width: 190px;
+}
+.tshop-um-service .service_bd li.kefu .item_bd span {
+  display: inline-block;
+  margin: 7px 16px 0 0;
+}
+.tshop-um-service .service_bd li.kefugroup span {
+  position: relative;
+  left: 3px;
+  top: -5px;
+}
+.tshop-um-service .service_bd li.worktime {
+  line-height: 23px;
+}
+.tshop-um-service .service_bd li.worktime h4 {
+  margin-bottom: 6px;
+}
+.tshop-um-service .service_bd li.code {
+  width: 166px;
+  height: 83px;
+  background-color: #949494;
+  padding: 3px;
+  margin-bottom: 0;
+}
+.tshop-um-service .service_bd li.code .code_pic {
+  float: left;
+}
+.tshop-um-service .service_bd li.code .code_pic img {
+  border: 4px solid #FFF;
+}
+.tshop-um-service .service_bd li.code p {
+  width: 78px;
+  height: 83px;
+  float: left;
+  padding-left: 5px;
+}
+.tshop-um-service .service_bd li.code a {
+  color: #FFF;
+}

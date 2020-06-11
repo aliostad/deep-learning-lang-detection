@@ -1,0 +1,69 @@
+
+
+    /* START OF HELP CSS */
+    
+	div#zp-Zotero-API {
+		background-color: #fff;
+	}
+	
+    div#zp-Zotpress ul#zp-Zotero-API-Menu {
+        background-color: #26292c;
+		display: block;
+		margin: 3em 0 0;
+    }
+	div#zp-Zotpress ul#zp-Zotero-API-Menu:before,
+	div#zp-Zotpress ul#zp-Zotero-API-Menu:after {
+		content: "";
+		display: table;
+	}
+	div#zp-Zotpress ul#zp-Zotero-API-Menu:after {
+		clear: both;
+	}
+	
+	div#zp-Zotpress ul#zp-Zotero-API-Menu li {
+		background: none;
+		display: block;
+		float: left;
+		margin: 0;
+		padding: 0;
+	}
+	div#zp-Zotpress ul#zp-Zotero-API-Menu li a {
+		color: #fff;
+		display: block;
+		font: 400 16px/21px "Oswald","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+		padding: 1em 2em;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	
+	div#zp-Zotpress ul#zp-Zotero-API-Menu li.ui-tabs-active {
+		background-color: #e14d43;
+	}
+	div#zp-Zotpress ul#zp-Zotero-API-Menu li a:focus {
+		box-shadow: none;
+	}
+	
+	
+	div.zp-Zotero-API-Explanation {
+		border-bottom: 3px solid #26292c;
+		padding: 1em 2em 1em;
+	}
+	
+	
+	div.zp-Zotero-API-Attribute {
+		border-bottom: 1px solid #eee;
+		padding: 2em;
+	}
+	
+	div#zp-Zotpress div.zp-Zotero-API-Attribute h4 {
+		font: 600 1em/1em "Source Sans Pro","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+		margin-top: 0.5em;
+		text-transform: uppercase;
+	}
+	div#zp-Zotpress div.zp-Zotero-API-Attribute h4 strong {
+		text-transform: lowercase;
+		font-size: 2em;
+	}
+    
+	/* END OF HELP CSS */
+	

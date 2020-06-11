@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>3.0</version>
+    <date>2016-09-12T14:04:40Z</date>
+    <value_maps>
+        <value_map>
+            <name>VMware - Ethernet port enabled states</name>
+            <mappings>
+                <mapping>
+                    <value>0</value>
+                    <newvalue>Unknown</newvalue>
+                </mapping>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>Other</newvalue>
+                </mapping>
+                <mapping>
+                    <value>2</value>
+                    <newvalue>Enabled</newvalue>
+                </mapping>
+                <mapping>
+                    <value>3</value>
+                    <newvalue>Disabled</newvalue>
+                </mapping>
+                <mapping>
+                    <value>4</value>
+                    <newvalue>Shutting down</newvalue>
+                </mapping>
+                <mapping>
+                    <value>5</value>
+                    <newvalue>Not applicable</newvalue>
+                </mapping>
+                <mapping>
+                    <value>6</value>
+                    <newvalue>Enabled but offline</newvalue>
+                </mapping>
+                <mapping>
+                    <value>7</value>
+                    <newvalue>In test</newvalue>
+                </mapping>
+                <mapping>
+                    <value>8</value>
+                    <newvalue>Deffered</newvalue>
+                </mapping>
+                <mapping>
+                    <value>9</value>
+                    <newvalue>Quiesce</newvalue>
+                </mapping>
+                <mapping>
+                    <value>10</value>
+                    <newvalue>Starting</newvalue>
+                </mapping>
+                <mapping>
+                    <value>11</value>
+                    <newvalue>DMTF reserved</newvalue>
+                </mapping>
+                <mapping>
+                    <value>32768</value>
+                    <newvalue>Vendor Reserved</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+        <value_map>
+            <name>VMware - Ethernet port full duplex status</name>
+            <mappings>
+                <mapping>
+                    <value>0</value>
+                    <newvalue>Disabled</newvalue>
+                </mapping>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>Enabled</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+        <value_map>
+            <name>VMware - Hypervisor status</name>
+            <mappings>
+                <mapping>
+                    <value>0</value>
+                    <newvalue>Unknown (grey)</newvalue>
+                </mapping>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>OK (green)</newvalue>
+                </mapping>
+                <mapping>
+                    <value>2</value>
+                    <newvalue>Degreded (yellow)</newvalue>
+                </mapping>
+                <mapping>
+                    <value>3</value>
+                    <newvalue>Failed (red)</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+        <value_map>
+            <name>VMware - Virtual machine power state</name>
+            <mappings>
+                <mapping>
+                    <value>0</value>
+                    <newvalue>Powered off</newvalue>
+                </mapping>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>Powered on</newvalue>
+                </mapping>
+                <mapping>
+                    <value>2</value>
+                    <newvalue>Suspended</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+        <value_map>
+            <name>VMware CIM - Health Status</name>
+            <mappings>
+                <mapping>
+                    <value>-1</value>
+                    <newvalue>Unsupported</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0</value>
+                    <newvalue>Unknown</newvalue>
+                </mapping>
+                <mapping>
+                    <value>5</value>
+                    <newvalue>OK</newvalue>
+                </mapping>
+                <mapping>
+                    <value>10</value>
+                    <newvalue>Degraded</newvalue>
+                </mapping>
+                <mapping>
+                    <value>15</value>
+                    <newvalue>Minor</newvalue>
+                </mapping>
+                <mapping>
+                    <value>20</value>
+                    <newvalue>Major</newvalue>
+                </mapping>
+                <mapping>
+                    <value>25</value>
+                    <newvalue>Critical</newvalue>
+                </mapping>
+                <mapping>
+                    <value>30</value>
+                    <newvalue>Non-recoverable error</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+        <value_map>
+            <name>VMware CIM - Operational Status</name>
+            <mappings>
+                <mapping>
+                    <value>-1</value>
+                    <newvalue>Unsupported</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0</value>
+                    <newvalue>Unknown</newvalue>
+                </mapping>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>Other</newvalue>
+                </mapping>
+                <mapping>
+                    <value>2</value>
+                    <newvalue>OK</newvalue>
+                </mapping>
+                <mapping>
+                    <value>3</value>
+                    <newvalue>Degraded</newvalue>
+                </mapping>
+                <mapping>
+                    <value>4</value>
+                    <newvalue>Stressed</newvalue>
+                </mapping>
+                <mapping>
+                    <value>5</value>
+                    <newvalue>Predictive failure</newvalue>
+                </mapping>
+                <mapping>
+                    <value>6</value>
+                    <newvalue>Error</newvalue>
+                </mapping>
+                <mapping>
+                    <value>7</value>
+                    <newvalue>Non-recoverable error</newvalue>
+                </mapping>
+                <mapping>
+                    <value>8</value>
+                    <newvalue>Starting</newvalue>
+                </mapping>
+                <mapping>
+                    <value>9</value>
+                    <newvalue>Stopping</newvalue>
+                </mapping>
+                <mapping>
+                    <value>10</value>
+                    <newvalue>Stopped</newvalue>
+                </mapping>
+                <mapping>
+                    <value>11</value>
+                    <newvalue>In service</newvalue>
+                </mapping>
+                <mapping>
+                    <value>12</value>
+                    <newvalue>No contact</newvalue>
+                </mapping>
+                <mapping>
+                    <value>13</value>
+                    <newvalue>Lost communication</newvalue>
+                </mapping>
+                <mapping>
+                    <value>14</value>
+                    <newvalue>Aborted</newvalue>
+                </mapping>
+                <mapping>
+                    <value>15</value>
+                    <newvalue>Dormant</newvalue>
+                </mapping>
+                <mapping>
+                    <value>16</value>
+                    <newvalue>Supporting entity in error</newvalue>
+                </mapping>
+                <mapping>
+                    <value>17</value>
+                    <newvalue>Completed</newvalue>
+                </mapping>
+                <mapping>
+                    <value>18</value>
+                    <newvalue>Power mode</newvalue>
+                </mapping>
+                <mapping>
+                    <value>19</value>
+                    <newvalue>DMTF reserved</newvalue>
+                </mapping>
+                <mapping>
+                    <value>20</value>
+                    <newvalue>Vendor reserved</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+    </value_maps>
+</zabbix_export>

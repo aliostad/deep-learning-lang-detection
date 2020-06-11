@@ -1,0 +1,16 @@
+CREATE TABLE `xr7h81hn_term_taxonomy` (  `term_taxonomy_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,  `term_id` bigint(20) unsigned NOT NULL DEFAULT '0',  `taxonomy` varchar(32) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',  `description` longtext COLLATE utf8mb4_unicode_ci NOT NULL,  `parent` bigint(20) unsigned NOT NULL DEFAULT '0',  `count` bigint(20) NOT NULL DEFAULT '0',  PRIMARY KEY (`term_taxonomy_id`),  UNIQUE KEY `term_id_taxonomy` (`term_id`,`taxonomy`),  KEY `taxonomy` (`taxonomy`)) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40000 ALTER TABLE `xr7h81hn_term_taxonomy` DISABLE KEYS */;
+INSERT INTO `xr7h81hn_term_taxonomy` VALUES('1', '1', 'category', '', '0', '0');
+INSERT INTO `xr7h81hn_term_taxonomy` VALUES('2', '2', 'nav_menu', '', '0', '0');
+INSERT INTO `xr7h81hn_term_taxonomy` VALUES('3', '3', 'nav_menu', '', '0', '0');
+INSERT INTO `xr7h81hn_term_taxonomy` VALUES('4', '4', 'nav_menu', '', '0', '0');
+INSERT INTO `xr7h81hn_term_taxonomy` VALUES('5', '5', 'nav_menu', '', '0', '0');
+INSERT INTO `xr7h81hn_term_taxonomy` VALUES('6', '6', 'nav_menu', '', '0', '0');
+INSERT INTO `xr7h81hn_term_taxonomy` VALUES('7', '7', 'nav_menu', '', '0', '0');
+INSERT INTO `xr7h81hn_term_taxonomy` VALUES('8', '8', 'language', 'a:2:{s:6:\"locale\";s:5:\"fr_FR\";s:3:\"rtl\";i:0;}', '0', '1');
+INSERT INTO `xr7h81hn_term_taxonomy` VALUES('9', '9', 'term_language', '', '0', '1');
+INSERT INTO `xr7h81hn_term_taxonomy` VALUES('10', '10', 'term_translations', 'a:2:{s:2:\"fr\";i:1;s:2:\"en\";i:13;}', '0', '2');
+INSERT INTO `xr7h81hn_term_taxonomy` VALUES('11', '11', 'language', 'a:2:{s:6:\"locale\";s:5:\"en_US\";s:3:\"rtl\";i:0;}', '0', '0');
+INSERT INTO `xr7h81hn_term_taxonomy` VALUES('12', '12', 'term_language', '', '0', '1');
+INSERT INTO `xr7h81hn_term_taxonomy` VALUES('13', '13', 'category', '', '0', '0');
+/*!40000 ALTER TABLE `xr7h81hn_term_taxonomy` ENABLE KEYS */;

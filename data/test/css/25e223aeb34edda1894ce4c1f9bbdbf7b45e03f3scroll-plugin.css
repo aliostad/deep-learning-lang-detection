@@ -1,0 +1,67 @@
+#scroll_plugin{
+	width: 100%;
+	height: 100%;
+}
+#scroll_plugin .tip {
+	text-align: center;
+	position: relative;
+	top: 30%;
+}
+
+#scroll_plugin .content .loadScrollUpDiv {
+	text-align: center;
+	width: 100%;
+	height: 30px;
+}
+
+#scroll_plugin .content .loadScrollUpDiv .img{
+	position: relative;
+	top: 10px;
+	background-image: url("../images/animated_loader.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 11px;
+	display: none;
+}
+
+#scroll_plugin .content .loadScrollDownDiv {
+	text-align: center;
+	width: 100%;
+	height: 30px;
+}
+
+#scroll_plugin .content .loadScrollDownDiv .img{
+	position: relative;
+	top: 10px;
+	background-image: url("../images/animated_loader.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 11px;
+	display: none;
+}
+
+#scroll_plugin .content .container{
+	
+}
+
+#scroll_plugin #dynamic_to_top{
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+	
+	width: 69px;
+	height: 81px;
+	overflow: hidden;
+	display: none;
+	background: url("../images/bg_fhdb.gif") 0 0 no-repeat;
+	cursor: pointer;
+	z-index: 99999;
+}
+
+#scroll_plugin #dynamic_to_top.show{
+	display: block;
+}
+
+#scroll_plugin #dynamic_to_top:hover{
+	background-position: 0 -85px;
+}

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MaterialSample</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <array name="main_item_list">
+        <item>Drawer menu 1</item>
+        <item>Drawer menu 2</item>
+        <item>PagerSlidingTabStrip</item>
+        <item>Floating Action Button</item>
+        <item>Parallax Toolbar ScrollView</item>
+        <item>CardView</item>
+        <item>AppBarSample</item>
+    </array>
+
+    <string name="sample_long_text">Sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text \nSample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text \n\nSample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text </string>
+</resources>

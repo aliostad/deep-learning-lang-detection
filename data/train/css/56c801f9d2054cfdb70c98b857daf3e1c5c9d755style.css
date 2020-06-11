@@ -1,0 +1,112 @@
+#pageTitle {
+	text-align: center;
+	font-size: 30px;
+	margin-top: 10px;
+	margin-bottom: 3px;
+	color: #4D4D4D;
+}
+#pageDescription {
+	padding-top: 20px;
+	margin-left: 20px;
+}
+
+#subtitle {
+	text-align: center;
+	color: #4D4D4D;
+}
+
+.apiCommandSection {
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 5px;
+}
+.apiCommandSectionTitle {
+	margin-left: 20px;
+	margin-bottom: 10px;
+	font-size: 26px;
+	font-weight: bold;
+	color: #4D4D4D;
+}
+.apiCommandSectionExample {
+	margin-top: 20px;
+}
+
+.apiCommandSectionTitle:hover {
+	cursor: pointer;
+}
+
+.apiCommandSectionTable {
+	margin-top: 10px;
+	width: 1000px;
+	margin-left:auto; 
+	margin-right:auto;
+	font-size: 13px;
+}
+.apiCommandSectionTable table {
+	border-collapse: collapse;
+	width: 100%;
+} 
+.apiCommandSectionTable td {
+	border-color: #CCCCCC;
+	border-width: 1px;
+	border-spacing: 0px;
+	border-style: solid;
+}
+
+.apiCommandSectionTable td {
+	vertical-align: top;
+	padding: 7px;
+}
+
+.colParameter {
+	width: 165px;
+}
+.colType {
+	width: 50px;
+}
+.colValue {
+	width: 100px;
+}
+.colDefault {
+	width: 95px;
+}
+
+#header {
+	width: 100%;
+	background-color: #DCF5FF;
+	padding-top:1px;
+	padding-bottom: 10px;
+}
+#wrapper {
+	font-family: "Helvetica Neue";
+	width: 100%;
+}
+#page {
+	margin-left:auto; 
+	margin-right:auto;
+	width: 1100px;
+	background-color: white;
+	padding-bottom: 20px;
+}
+
+body {
+	margin: 0;
+	background-color: #F0F1F2;
+}
+
+.fontCode {
+	font-family: monospace;
+}
+
+.apiCommandSectionTitleIcon {
+	width: 26px;
+	height: 26px;
+}
+
+.apiCommandSectionTitleIconCollapsed {
+	background-image: url(view/images/RightTriangleIcon.png);
+}
+
+.apiCommandSectionTitleIconExpanded {
+	background-image: url(view/images/DownTriangleIcon.png);
+}

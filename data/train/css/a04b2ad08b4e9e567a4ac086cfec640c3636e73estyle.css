@@ -1,0 +1,358 @@
+body {
+  background-color: #0080FF;
+  color: #fff;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.blog-container {
+  background-color: black;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  /*
+  -webkit-box-shadow: 0px 4px 23px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 4px 23px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 4px 23px 0px rgba(0,0,0,0.75); */
+  background-color: transparent;
+}
+
+.blog-container a {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: #fff;
+  padding: 25% 0;
+  text-align: center;
+}
+
+.blog-container h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+}
+
+.blog-left-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.blog-right-container {
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-big-block {
+  background-image: url("../imgs/blog6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+
+.blog-small-block {
+  height: 225px;
+  padding-left: 0;
+  padding-right: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.blog-small-block:nth-child(1) {
+  background-image: url("../imgs/blog2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blog-small-block:nth-child(2) {
+  background-image: url("../imgs/blog4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blog-small-block:nth-child(3) {
+  background-image: url("../imgs/blog3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blog-small-block:nth-child(4) {
+  background-image: url("../imgs/blog5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blog-small-block:hover {
+  transition: scale 2s ease-in;
+  -webkit-transition: background-size 2s ease-in;
+  -o-transition: background-size 2s ease-in;
+  -moz-transition: background-size 2s ease-in;
+}
+
+.big-block {
+  margin-bottom: 200px;
+  overflow: hidden;
+}
+
+.big-block h1 {
+  text-align: center;
+}
+
+.border {
+  height: 5px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 970px;
+}
+
+.animation-container {
+  width: 970px;
+  overflow: hidden;
+}
+
+.animation-container .big-block {
+  opacity: 0;
+  position: relative;
+}
+
+.animation-container .anim1 {
+  left: -970px;
+}
+
+.animation-container .anim2 h1 {
+  top: -900px;
+  position: relative;
+}
+
+.animation-container .anim2 .border {
+  position: relative;
+  left: 970px;
+}
+
+.animation-container .anim2 p {
+  position: relative;
+  top: 900px;
+}
+
+.carousel-progress {
+  height: 3px;
+  background-color: red;
+  width: 0%;
+  margin: 0;
+  border: none;
+  position: relative;
+}
+
+.nav {
+  position: fixed;
+}
+
+.nav li a {
+  color: #fff;
+}
+
+.to-top {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+}
+
+.sig {
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+  opacity: 0;
+}
+
+svg {
+  width: 400px;
+}
+
+.animate.sig {
+  opacity: 1;
+}
+
+path {
+  fill: none;
+  stroke: #2a3745;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.animate #path-S {
+  stroke-dasharray: 602;
+  animation: writeS 4s  linear;
+}
+
+.animate #path-I {
+  stroke-dasharray: 68;
+  animation: writeI 4s  linear;
+}
+
+.animate #path-M {
+  stroke-dasharray: 216;
+  animation: writeM 4s  linear;
+}
+
+.animate #path-O {
+  stroke-dasharray: 146;
+  animation: writeO 4s  linear;
+}
+
+.animate #path-N {
+  stroke-dasharray: 187;
+  animation: writeN 4s  linear;
+}
+
+.animate #path-L {
+  stroke-dasharray: 718;
+  animation: writeL 4s  linear;
+}
+
+.animate #path-O2 {
+  stroke-dasharray: 116;
+  animation: writeO2 4s  linear;
+}
+
+.animate #path-M2 {
+  stroke-dasharray: 141;
+  animation: writeM2 4s  linear;
+}
+
+.animate #path-A {
+  stroke-dasharray: 171;
+  animation: writeA 4s  linear;
+}
+
+.animate #path-X1 {
+  stroke-dasharray: 75;
+  animation: writeX 4s  linear;
+}
+
+.animate #path-X2 {
+  stroke-dasharray: 75;
+  animation: writeX2 4s  linear;
+}
+
+.animate #path-Dot {
+  stroke-dasharray: 13;
+  animation: writeDot 4s  linear;
+}
+
+@keyframes writeS {
+  0% {
+    stroke-dashoffset: 602;
+  }
+  14% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes writeI {
+  0%, 14% {
+    stroke-dashoffset: 68;
+  }
+  17% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes writeM {
+  0%, 17% {
+    stroke-dashoffset: 216;
+  }
+  25% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes writeO {
+  0%, 25% {
+    stroke-dashoffset: 146;
+  }
+  30% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes writeN {
+  0%, 30% {
+    stroke-dashoffset: 187;
+  }
+  35% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes writeL {
+  0%, 35% {
+    stroke-dashoffset: 718;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes writeO2 {
+  0%, 50% {
+    stroke-dashoffset: 116;
+  }
+  55% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes writeM2 {
+  0%, 55% {
+    stroke-dashoffset: 141;
+  }
+  65% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes writeA {
+  0%, 65% {
+    stroke-dashoffset: 171;
+  }
+  75% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes writeX {
+  0%, 75% {
+    stroke-dashoffset: 75;
+  }
+  78% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes writeX2 {
+  0%, 78% {
+    stroke-dashoffset: 75;
+  }
+  81% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes writeDot {
+  0%, 81% {
+    stroke-dashoffset: 13;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

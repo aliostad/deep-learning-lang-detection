@@ -1,0 +1,12 @@
+.ui-dialog.handWrite {background:rgba(255, 255, 255, 0.5);}
+.sketch_app.handWrite {padding:20px 30px 40px;}
+.sketch_app.handWrite .tools{display:none;}
+.sketch_app.handWrite .buttons-set {margin:0 0 15px;overflow:hidden;}
+.sketch_app.handWrite .buttons-set .btn-undo{width:38px;height:39px;float:left;background:url("/images/jxb/btn-undo.png") no-repeat;cursor:pointer;text-indent:-9999em;}
+.sketch_app.handWrite .buttons-set .btn-undo:hover{background-position:0 -39px;}
+.sketch_app.handWrite .buttons-set .btn-redo{width:38px;height:39px;float:left;background:url("/images/jxb/btn-undo.png") no-repeat -38px 0;cursor:pointer;text-indent:-9999em;margin:0 0 0 20px;}
+.sketch_app.handWrite .buttons-set .btn-redo:hover{background-position:-38px -39px;}
+.sketch_app.handWrite input[type=button],.sketch_app.handWrite .color_setting{display: none;}
+.sketch_app.handWrite .buttons-set .btn{margin: 10px;}
+.sketch_app.handWrite .container {border: 2px solid #666;}
+.ui-widget-overlay{background:#fff;}

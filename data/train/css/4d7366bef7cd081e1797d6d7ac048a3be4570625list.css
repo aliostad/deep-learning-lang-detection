@@ -1,0 +1,70 @@
+ul.doc_api_title {
+	padding: 10px;
+}
+ul.doc_api_title h1 {
+	font: 1.6em 'RobotoCondensed';
+	font-weight: normal;
+	padding: 10px 20px;
+	padding-left: 0;
+}
+ul.doc_api_url li{
+	font: 14px 'RobotoRegular';
+	font-weight: normal;
+	margin: 0 0 5px 0;
+	padding: 0px;
+	padding-left: 0px; 
+}
+ul.doc_api_url li span {
+	font-size: 12px;
+} 
+ul.doc_api_url li.doc_api_get_method { 
+	background: #fff;
+	border-left: 2px solid #19B5FE;
+}
+
+ul.doc_api_url li.doc_api_get_method span {
+	color: #3498db;
+}
+ul.doc_api_url li.doc_api_get_method .doc_api_get_label span{
+	color: #3498db;
+	font-size: 12px;	
+}
+
+ul.doc_api_url .doc_api_header {
+	padding: 10px;
+}
+ul.doc_api_url .doc_api_header_trigger {
+	cursor: pointer;
+}
+ul.doc_api_url .doc_api_detail_wrapper {
+	padding: 10px;
+}
+ul.doc_api_url .doc_api_detail {
+	margin-top: 5px;
+}
+ul.doc_api_url .doc_api_header h2 {
+	color: #444;
+	font: 1.1em 'RobotoCondensed';
+	font-weight: normal;
+}
+ul.doc_api_url .doc_api_detail h2 {
+	font: 1.2em 'RobotoCondensed';
+	font-weight: normal;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+ul.doc_api_url .doc_api_detail {
+	font-size: 12px;
+}
+ul.doc_api_url .doc_api_detail p.doc_api_request_url { 
+	font-size: 12px;
+	padding: 5px;
+	padding-left: 0;
+}
+
+/* menu */
+ul.doc_api_menu li a { color: ; text-decoration: none; }
+ul.doc_api_menu li a.active { border-bottom: 5px solid #888; padding: 10px 0; margin: 0 10px 0 0; }
+ul.doc_api_menu { font-size: 3em; font: 'RobotoCondensed'; font-weight: bold; margin: 0 0 20px 0; }
+ul.doc_api_menu li { list-style: none; padding: 5px; margin: 0 30px 10px 0; }
+ul.doc_api_menu li { display: inline ; }

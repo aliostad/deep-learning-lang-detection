@@ -1,0 +1,43 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, pre,
+a, ol, ul, li,form,table,tbody, tfoot, thead, tr, th, td,
+canvas, details,figure, figcaption, footer, header, hgroup, 
+menu, nav, output,section, summary,time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+.load-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.load-wrap .load-cont{
+	min-height: 100%;
+}
+
+.hint {
+  color: #333;
+  font-weight: 700;
+  font-size: 14px;
+  height: 40px;
+  left: 50%;
+  line-height: 40px;
+  margin-left: -5px;
+  text-align: center;
+}

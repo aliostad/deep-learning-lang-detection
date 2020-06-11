@@ -1,0 +1,86 @@
+/*******************************
+	일반 게시판 스타일 (목록)
+********************************************/
+#gallery_list { line-height:1.0; margin-bottom:20px; }
+#gallery_list ul.list { border-top:1px solid #e1e1e1; padding-top:10px; }
+#gallery_list ul.list li { float:left; margin-right:16px; text-align:center; color:#5b5b5b; width:162px; height:160px; }
+#gallery_list ul.list li.last { margin-right:0px; }
+#gallery_list ul.list li div.thumb img { border:3px solid #e1e1e1; margin-bottom:12px; }
+#gallery_list ul.list li div.subject { margin-bottom:12px; width:160px; white-space:nowrap; overflow:hidden; text-align:left; text-overflow:ellipsis; }
+#gallery_list ul.list li div.subject a { color:#1f1f1f; }
+#gallery_list ul.list li div.datetime {  }
+#gallery_list ul.list li.last_line { float:none; clear:both; width:auto; height:1px; margin:0; font-size:1px; border-bottom:1px solid #e1e1e1; }
+
+#gallery_list ul.notice { border-top:1px solid #e1e1e1; }
+#gallery_list ul.notice li { padding:11px 0 11px 91px; background:no-repeat 17px center url(img/notice.gif); }
+#gallery_list ul.notice li a { color:#1f1f1f; }
+
+/* 상단 분류출력 및 Total출력 */
+#ca_line { font-family:Tahoma; font-size:8pt; height:26px; line-height:1.0; margin-bottom:12px; text-align:right; color:#777; }
+#ca_line a.btn_admin { float:right; margin-left:10px; }
+#ca_line div#category { float:left; }
+#ca_line div#category select { margin-right:5px; }
+#ca_line div#total { padding-top:9px; }
+#ca_line div#total img { vertical-align:-3px; }
+
+/* 하단의 버튼 및 검색박스 출력 */
+#search_line { height:30px; padding:5px 0px 5px 0; line-height:1.0; }
+#search_line .buttons { float:right; }
+
+
+/*******************************
+	게시글 보기
+********************************************/
+#write_view { }
+#write_view .title { background:repeat-x left top url(img/thead_bg.gif); }
+#write_view .title_bg_left { background:no-repeat left top url(img/thead_bg_left.gif); }
+#write_view .title_bg_right { background:no-repeat right top url(img/thead_bg_right.gif); }
+#write_view .title h2 { position:relative; font-size:9pt; padding:11px 60px 0 21px; white-space:nowrap; height:21px; overflow:hidden; text-overflow:ellipsis; }
+#write_view .title h2 span { font-weight:normal; color:#3d3d3d; }
+#write_view .title h2 span.hit { position:absolute; right:19px; top:11px; }
+#write_view .title p { padding:7px 20px; color:#1f1f1f; border-bottom:1px solid #e1e1e1; }
+#write_view .title p img { vertical-align:middle; }
+#write_view .title p a { color:#777; }
+#write_view .title p.writer { background-color:#f5f5f5; color:#1f1f1f; }
+#write_view .title p.writer span.datetime { color:#777; float:right; }
+#write_view .title p.link { background:no-repeat 635px center url(img/icon_link.gif); padding-right:75px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+
+#write_view p.files { text-align:right; padding:5px 5px; }
+#write_view p.files a { color:#777; }
+
+#write_view .content { position:relative; padding:20px 20px 40px 20px; border-bottom:1px solid #e1e1e1; margin-bottom:10px; min-height:300px; }
+#write_view .content #tags { position:absolute; left:20px; bottom:10px; background:no-repeat left center url(img/tags_bg.gif); padding-left:25px; }
+#write_view .content #tags a { color:#555; }
+
+
+/*******************************
+	게시글 쓰기
+********************************************/
+#write_form { }
+#write_form .title { background:repeat-x left top url(img/thead_bg.gif); }
+#write_form .title_bg_left { background:no-repeat left top url(img/thead_bg_left.gif); }
+#write_form .title_bg_right { background:no-repeat right top url(img/thead_bg_right.gif); }
+#write_form .title h2 { color:#3d3d3d; position:relative; font-size:9pt; padding:11px 0 0 41px; height:21px; }
+#write_form .title h2 span.separator { position:absolute; left:21px; top:11px; }
+
+#write_form .table_form { width:100%; border-spacing:0 3px; table-layout:fixed; margin-bottom:26px; color:#000; }
+#write_form .table_form tbody th,
+#write_form .table_form tbody td { height:32px; border-bottom:1px solid #e1e1e1; padding-left:10px; }
+#write_form .table_form tbody th { background-color:#f5f5f5; color#1f1f1f; padding-left:21px; }
+#write_form .table_form tbody td.editor { padding:10px 0; }
+
+
+/*******************************
+	비밀번호 체크
+********************************************/
+#check_password { width:350px; border:3px solid #e1e1e1; padding:47px 17px 29px 17px; text-align:center; color:#6f6f6f; }
+#check_password .icon { margin-bottom:38px; }
+#check_password p { margin-bottom:23px; }
+#check_password table { margin-bottom:30px; width:100%; border-collapse:collapse; }
+#check_password table th { border:1px solid #ddd; width:138px; background-color:#eee; color:#222; }
+#check_password table td { border:1px solid #ddd; padding:5px 0px 5px 18px; text-align:left; }
+#check_password table td input { border:1px solid #3e77da; width:162px; }
+
+
+
+

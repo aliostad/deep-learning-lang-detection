@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE multilevelQueue SYSTEM "multilevelQueue.dtd" >
+<multilevelQueues>
+	<multilevelQueue id="SO">
+		<queue algorithmId="SJF" queueType="interactive">
+			<process executionTime="7" arrivalTime="0" processType="INTERACTIVE_PROCESS" processId="P0">
+				<instruction>print "teste SO SJF 1"</instruction>
+				<instruction>print "teste SO SJF 2"</instruction>
+			</process>
+			<process executionTime="10" arrivalTime="5" processType="INTERACTIVE_PROCESS" processId="P1">
+				<instruction>print "teste SO SJF 3"</instruction>
+				<instruction>print "teste SO SJF 4"</instruction>
+			</process>
+			<process executionTime="5" arrivalTime="7" processType="INTERACTIVE_PROCESS" processId="P2">
+				<instruction>print "teste SO SJF 5"</instruction>
+				<instruction>print "teste SO SJF 6"</instruction>
+			</process>
+			<process executionTime="3" arrivalTime="15" processType="INTERACTIVE_PROCESS" processId="P3">
+				<instruction>print "teste SO SJF 5"</instruction>
+				<instruction>print "teste SO SJF 6"</instruction>
+			</process>
+		</queue>
+	</multilevelQueue>
+</multilevelQueues>

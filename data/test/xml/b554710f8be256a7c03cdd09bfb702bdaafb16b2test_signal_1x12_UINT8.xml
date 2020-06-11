@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<signal>
+   <sample>
+      <data>255</data>
+   </sample>
+   <sample>
+      <data>0</data>
+   </sample>
+   <sample>
+      <data>127</data>
+   </sample>
+   <sample>
+      <data>255</data>
+   </sample>
+   <sample>
+      <data>255</data>
+   </sample>
+   <sample>
+      <data>255</data>
+   </sample>
+   <sample>
+      <data>255</data>
+   </sample>
+   <sample>
+      <data>255</data>
+   </sample>
+   <sample>
+      <data>0</data>
+   </sample>
+   <sample>
+      <data>0</data>
+   </sample>
+   <sample>
+      <data>0</data>
+   </sample>
+   <sample>
+      <data>123</data>
+   </sample>
+</signal>

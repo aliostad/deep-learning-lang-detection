@@ -1,0 +1,48 @@
+#!/bin/bash
+
+# Customize to reflect your needs and local configuration
+sl_mirror="rsync://rsync.scientificlinux.org/scientific"
+local_mirror_root=/www/htdocs/packages
+rsync_base_options="-avkSH --delete"
+
+# For each repo, assign it a name in repos_to_mirror and defines the 3
+# 3 variables related to each repo, as in the examples below. source
+# and destination are mandatory, rsync_options is optional.
+repos_to_mirror="sl5x sl6x"
+repo_sl5x_source="${sl_mirror}/5x/x86_64/"
+repo_sl5x_destination="${local_mirror_root}/os/sl5x-x86_64"
+repo_sl5x_rsync_options="--exclude=isolinux --exclude=sites/Fermi"
+repo_sl6x_source="${sl_mirror}/6x/x86_64/"
+repo_sl6x_destination="${local_mirror_root}/os/sl6x-x86_64"
+repo_sl6x_rsync_options="--exclude=iso"
+
+for repo in ${repos_to_mirror}
+do
+  repo_source_var=repo_${repo}_source
+  if [ -n "${!repo_source_var}" ]
+  then
+    repo_source=${!repo_source_var}
+  else
+    echo "Repository source missing for ${repo}"
+    exit 1
+  fi
+  repo_destination_var=repo_${repo}_destination
+  if [ -n "${!repo_destination_var}" ]
+  then
+    repo_destination=${!repo_destination_var}
+  else
+    echo "Repository destination missing for ${repo}"
+    exit 1
+  fi
+  # repo_rsync_options is optional, default: empty
+  repo_rsync_options_var=repo_${repo}_rsync_options
+  if [ -n "${!repo_rsync_options_var}" ]
+  then
+    repo_rsync_options=${!repo_rsync_options_var}
+  else
+    repo_rsync_options=''
+  fi
+
+  echo "Synchronizing ${repo_destination} with upstream repository (${repo_source}) (rsync options=${repo_rsync_options})"
+  rsync ${rsync_base_options} ${repo_rsync_options} ${repo_source} ${repo_destination}
+done

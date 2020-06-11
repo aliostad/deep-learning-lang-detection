@@ -1,0 +1,33 @@
+.testsetting-model{
+    width: 230px;
+    height: 190px;
+    border: 1px solid #DBDBDB;
+    padding-top: 15px;
+    margin: 11px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.testsetting-model:hover{
+    border: 1px solid #35B558;
+}
+.tsm-input{
+    width: 50px;
+}
+.tsm-select{
+    width: 125px;
+    height: 25px;
+}
+
+#header{
+    z-index: 99999;
+    background-color: #FFF;
+
+}
+#header .head-bd .dorp-right .dropmenu{
+    background-color: #fff;
+}
+#aside p{
+    font-size: 18px;
+    padding: 10px 0px 5px 20px;
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<mappings>
+	<mapping csvColumn="Histology_NCode" dbColumn="Pat_Histology"></mapping>
+	<mapping csvColumn="OASS_Code" dbColumn="Pat_Overall_Survival_Status"></mapping>
+	<mapping csvColumn="OAST" dbColumn="Pat_Overall_Survival_Time"></mapping>
+	<mapping csvColumn="Gender" dbColumn="Pat_Gender"></mapping>
+	<mapping csvColumn="age" dbColumn="Pat_Age"></mapping>
+	<mapping csvColumn="smoking_code" dbColumn="Pat_Smoking_code"></mapping>
+	<mapping csvColumn="Packyears" dbColumn="Pat_packs_per_year"></mapping>
+	<mapping csvColumn="race_code" dbColumn="Pat_race"></mapping>
+	<mapping csvColumn="PatientID_Unique" dbColumn="Pat_ID"></mapping>
+</mappings>

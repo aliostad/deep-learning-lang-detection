@@ -1,0 +1,48 @@
+#!/bin/zsh
+
+emulate -L zsh
+
+ROOT_FOLDER=${0:A:h:h}
+REPO_FOLDER=${ROOT_FOLDER}/src/repo
+
+function repo_exists () {
+    [ -e ${REPO_FOLDER} ]
+}
+
+function pull_changes () {
+    (
+        cd ${REPO_FOLDER}
+        git fetch --all --prune --tags
+    )
+}
+
+# The exit status of this indicates if a new tag has been published
+function checkout_latest_tag () {
+    (
+        cd ${REPO_FOLDER}
+
+        local current_tag=$(git describe --tags --abbrev=0)
+        local latest_tag=$(git describe --tags --abbrev=0 origin/master)
+
+        if [ "${current_tag}" != "${latest_tag}" ]
+        then
+            git checkout "${latest_tag}"
+            true
+        else
+            false
+        fi
+    )
+}
+
+function clone_repo () {
+    git clone https://github.com/zsh-users/zsh.git ${REPO_FOLDER}
+}
+
+if repo_exists
+then
+    pull_changes && checkout_latest_tag
+else
+    clone_repo
+fi
+
+# vim: set ai et sw=4 syntax=zsh :

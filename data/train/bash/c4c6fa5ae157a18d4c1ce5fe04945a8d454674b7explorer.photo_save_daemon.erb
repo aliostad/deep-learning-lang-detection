@@ -1,0 +1,72 @@
+#!/bin/sh
+# Comments to support chkconfig on Red Hat Linux
+# chkconfig: 2345 64 36
+# Description: <%= node.default['application']['explorer']['photo_save']['name'] %>
+
+start () {
+    echo "Starting <%= node.default['application']['explorer']['photo_save']['name'] %>... "
+    daemon --name='<%= node.default['application']['explorer']['photo_save']['name'] %>' \
+           --command='<%= node.default['application']['virtual_env'] %>/bin/python <%= node.default['application']['sources_dir'] %>/photo_save/server.py --host=<%= node.default['application']['explorer']['photo_save']['host'] %> --port=<%= node.default['application']['explorer']['photo_save']['port'] %> --fetcher_host=<%= node.default['application']['explorer']['fetcher']['host'] %> --fetcher_port=<%= node.default['application']['explorer']['fetcher']['port'] %> --photos_dir=<%= node.default['application']['photos_dir'] %> --log_path=<%= node.default['application']['explorer']['photo_save']['log'] %> --pidfile_path=<%= node.default['application']['explorer']['photo_save']['pid_file'] %>' \
+           --env='PYTHONPATH=<%= node.default['application']['python_env']['PYTHONPATH'] %>' \
+           --env='DJANGO_SETTINGS_MODULE=<%= node.default['application']['python_env']['DJANGO_SETTINGS_MODULE_API'] %>' \
+           --env='PYTHON_EGG_CACHE=<%= node.default['application']['python_env']['PYTHON_EGG_CACHE'] %>' \
+           --pidfile='<%= node.default['application']['explorer']['photo_save']['daemon']['pid_file'] %>' \
+           --user='<%= node.default['application']['explorer']['user'] %>' \
+           --chdir='<%= node.default['application']['work_dir'] %>' \
+           --unsafe \
+           --respawn \
+           --errlog='<%= node.default['application']['explorer']['photo_save']['daemon']['error_log'] %>' \
+           --dbglog='<%= node.default['application']['explorer']['photo_save']['daemon']['debug_log'] %>' \
+           --verbose
+    return $?
+}
+
+stop () {
+    echo "Stopping <%= node.default['application']['explorer']['photo_save']['name'] %>... "
+    daemon --name='<%= node.default['application']['explorer']['photo_save']['name'] %>' \
+           --pidfile='<%= node.default['application']['explorer']['photo_save']['daemon']['pid_file'] %>' \
+           --stop \
+           --verbose
+    return $?
+}
+
+
+restart () {
+    echo "Restarting <%= node.default['application']['explorer']['photo_save']['name'] %>..."
+    daemon --name='<%= node.default['application']['explorer']['photo_save']['name'] %>' \
+           --pidfile='<%= node.default['application']['explorer']['photo_save']['daemon']['pid_file'] %>' \
+           --restart \
+           --verbose
+    return $?
+}
+
+
+status () {
+    daemon --name='<%= node.default['application']['explorer']['photo_save']['name'] %>' \
+           --pidfile='<%= node.default['application']['explorer']['photo_save']['daemon']['pid_file'] %>' \
+           --running \
+           --verbose
+    return $?
+}
+
+
+case "$1" in
+    start)
+        start
+    ;;
+    status)
+        status
+    ;;
+    stop)
+        stop
+    ;;
+    restart)
+        restart
+    ;;
+    *)
+        echo $"Usage: <%= node.default['application']['explorer']['photo_save']['name'] %> {start|status|stop|restart}"
+        exit 3
+    ;;
+esac
+
+exit $RETVAL

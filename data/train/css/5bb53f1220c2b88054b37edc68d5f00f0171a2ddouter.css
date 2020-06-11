@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* CSS Document */
+#population_model
+{
+	float:left;
+    margin-bottom:1px;
+	width:142px;
+	height:33px;
+	background:url(../img/modelManagement/menu-population.png) no-repeat;
+	border:0px;
+	cursor:pointer;
+}
+#givep_model
+{
+	float:left;
+    margin-bottom:1px;
+	width:142px;
+	height:33px;
+	background:url(../img/modelManagement/menu-paymentPopulation.png) no-repeat;
+	border:0px;
+	cursor:pointer;	
+}
+#comep_model
+{
+	float:left;
+    margin-bottom:1px;
+	width:142px;
+	height:33px;
+	background:url(../img/modelManagement/menu-getMoneyPopulation.png) no-repeat;
+	border:0px;
+	cursor:pointer;		
+}
+#comein_model
+{
+	float:left;
+    margin-bottom:1px;
+	width:142px;
+	height:33px;
+	background:url(../img/modelManagement/menu-pensionIncome.png) no-repeat;
+	border:0px;
+	cursor:pointer;		
+}
+#personalgiveout_model
+{
+	float:left;
+    margin-bottom:1px;
+	width:142px;
+	height:33px;
+	background:url(../img/modelManagement/menu-pensionExpense.png) no-repeat;
+	border:0px;
+	cursor:pointer;		
+}
+#wholegiveout_model
+{
+	float:left;
+    margin-bottom:1px;
+	width:142px;
+	height:33px;
+	background:url(../img/modelManagement/menu-wholeFundExpense.png) no-repeat;
+	border:0px;
+	cursor:pointer;		
+}
+#ruralp_model
+{
+	float:left;
+	margin-left:8px;
+    margin-bottom:1px;
+	width:142px;
+	height:33px;
+	background:url(../img/modelManagement/menu-population-country.png) no-repeat;
+	border:0px;
+	cursor:pointer;	
+}
+#townp_model
+{
+	float:left;
+	margin-left:8px;
+    margin-bottom:1px;
+	width:142px;
+	height:33px;
+	background:url(../img/modelManagement/menu-population-town.png) no-repeat;
+	border:0px;
+	cursor:pointer;		
+}
+#peremptyg_model
+{
+	float:left;
+	margin-left:8px;
+    margin-bottom:1px;
+	width:142px;
+	height:33px;
+	background:url(../img/modelManagement/menu-personalAccountExpense.png) no-repeat;
+	border:0px;
+	cursor:pointer;		
+}
+#basicg_model
+{
+	float:left;
+	margin-left:8px;
+    margin-bottom:1px;
+	width:142px;
+	height:33px;
+	background:url(../img/modelManagement/menu-pensionExpense.png) no-repeat;
+	border:0px;
+	cursor:pointer;		
+}
+#transitiong_model
+{
+	float:left;
+	margin-left:8px;
+    margin-bottom:1px;
+	width:142px;
+	height:33px;
+	background:url(../img/modelManagement/menu-TranspensionExpense.png) no-repeat;
+	border:0px;
+	cursor:pointer;		
+}
+#longevityg_model
+{
+	float:left;
+	margin-left:8px;
+    margin-bottom:1px;
+	width:142px;
+	height:33px;
+	background:url(../img/modelManagement/menu-personalAccountLonglifeExpense.png) no-repeat;
+	border:0px;
+	cursor:pointer;		
+}
+#population_model:hover
+{
+	background-image:url(../img/modelManagement/menu-population-hover.png);
+}
+#givep_model:hover
+{
+	background-image:url(../img/modelManagement/menu-paymentPopulation-hover.png);
+}
+#comep_model:hover
+{
+	background-image:url(../img/modelManagement/menu-getMoneyPopulation-hover.png);
+}
+#comein_model:hover
+{
+	background-image:url(../img/modelManagement/menu-pensionIncome-hover.png);
+}
+#personalgiveout_model:hover
+{
+	background-image:url(../img/modelManagement/menu-pensionExpense-hover.png);
+}
+#wholegiveout_model:hover
+{
+	background-image:url(../img/modelManagement/menu-wholeFundExpense-hover.png);
+}
+#ruralp_model:hover
+{
+	background-image:url(../img/modelManagement/menu-population-country-hover.png);
+}
+#townp_model:hover
+{
+	background-image:url(../img/modelManagement/menu-population-town-hover.png);
+}
+#peremptyg_model:hover
+{
+	background-image:url(../img/modelManagement/menu-personalAccountExpense-hover.png);
+}
+#basicg_model:hover
+{
+	background-image:url(../img/modelManagement/menu-pensionExpense-hover.png);
+}
+#transitiong_model:hover
+{
+	background-image:url(../img/modelManagement/menu-TranspensionExpense-hover.png);
+}
+#longevityg_model:hover
+{
+	background-image:url(../img/modelManagement/menu-personalAccountLonglifeExpense-hover.png);
+}
+
+#search_model
+{
+	width:142px;
+	height:33px;
+	border:0px;
+	cursor:pointer;	
+	background:url(../img/modelManagement/button-lookUpModel.png) no-repeat;
+}
+#search_model:hover
+{
+	background-image:url(../img/modelManagement/button-lookUpModel-hover.png);
+}

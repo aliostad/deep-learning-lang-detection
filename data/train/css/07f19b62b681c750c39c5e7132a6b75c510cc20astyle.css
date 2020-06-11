@@ -1,0 +1,42 @@
+.heading {
+    text-align: center;
+}
+
+h3 {
+    font-weight: normal;
+    text-align: center;
+}
+
+button{
+    border: 1px solid lightsteelblue;
+    background-color: lightsteelblue;
+    border-radius: 30px;
+    width: 1170px;
+    height: 60px;
+    transition: background-color 400ms ease-out;
+    margin-bottom: 10px;
+    margin-left: 46px;
+    color: black;
+    font-family:'Acme';
+    font-size: 17px;
+}
+
+button:hover {
+    visibility: 2;
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+.center {
+    padding-left: 35%;
+}
+
+.content {
+    text-align: center;
+}
+
+var input = +prompt("Enter a number to print it's Multiplication Table");
+    document.write("<h2>Multiplication Table of "+input+" Length 15.</h2>")
+    for (var number = 1; number <= 15; number++)
+        document.write("<p>"+input+" x "+number*1+" = "+input*number+"</p>");
+}

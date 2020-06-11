@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+#top_logo {
+    margin:0 auto;
+    /*padding-top:15px;*/
+    height:115px; width:155px;
+    /*background:#fff url(../../images/login/fedena_logo.jpg) no-repeat;*/
+}
+#top_logo h1 {
+    text-indent:-9999px;
+}
+#help_top {
+    margin:0px auto;
+    width:614px;height:1.5em;
+}
+#help_top #help_link {float:right;}
+#help_top #help_link a {color:#b00;padding-right:10px;}
+
+#login_area {height:362px;width:614px;background-color:#e2e5ea;margin:0px auto;}
+#login_area label {display:block;width:200px;margin-left:50px;padding-top:30px;font-weight:bold;color:#888;padding-bottom:5px;font-size:110%;}
+
+/*#username_textbox_bg, #password_textbox_bg {width:507px;height:58px;margin:0px auto;background:#fff url(../../images/login/text_box.jpg) no-repeat;}*/
+#username_textbox_bg input, #password_textbox_bg input {width:490px;height:54px;margin:2px 0 40px 5px;float:left;border:none;background:transparent;font-size:40px;color:#666;}
+
+#submit_area input {
+    background:#312d2a;
+    height:38px;
+    float:right;
+    margin-right:58px;
+    margin-top:55px;
+    border:none;
+    color:#fff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor:pointer;
+    -moz-border-radius:12px;
+    -webkit-border-radius:12px;
+    padding: 7px 11px;
+
+}
+#submit_area input:hover{
+    background: #0F0E0D;
+
+}
+#resetpw_area input {width:85px;height:38px;float:right;margin-right:58px;margin-top:55px;}
+
+#checkbox_area {width:300px;float:left;}
+#checkbox_area label {margin:0;display:inline;padding-left:5px;}
+#checkbox_area input {margin:25px 5px 0 50px;padding:0;}
+
+#notice {
+    padding:0;
+    width:336px;
+    float:right;
+    margin-top:-40px;
+    margin-right:218px;
+    padding:2px;
+    border:1px solid #999;
+    background-color:#fff1ab;
+    text-align:center;
+    font-size:14px;
+}
+#wrapper  #help_forgot_pw {margin:50px auto;text-align:center;width:614px;}
+#wrapper  #help_forgot_pw a {text-decoration:none;font-weight:bold;color:#b00;}
+#wrapper  #help_forgot_pw a:hover {text-decoration:underline;font-weight:bold;color:#b00;}
+
+#username_texbox_bg input{border:none;margin:0px; padding:0px;text-align:center;}
+
+input[type="text"], input[type="password"], textarea, select {outline: none;}
+
+#footer {
+    /* position : relative;
+    margin-top : -33px; */
+    height : 66px;
+    clear : both;
+    background:#3d5c9c;
+    width:100%;
+}
+#footer_logo {
+    height:66px;
+    position:relative;
+     width:980px;
+     margin:0 auto;
+}
+
+#footer_logo a.footer-logo{
+    display:block;
+    float:right;
+    height:66px;
+    margin-top:-55px;
+    width:210px;
+    background: url(/images/footer-logo.png) no-repeat 0 0 transparent;
+}
+
+#footer_logo a.footer-logo:hover {
+    background: url(/images/footer-logo.png) no-repeat -210px 0 transparent;
+
+}
+
+#powered_by {
+    height:20px;
+    padding:35px 0 0 0;
+    width:auto;
+    margin:0 auto;
+    color:#fff;
+    font-size:12px;
+    font-weight:bold;
+    float: right;
+}
+#powered_by a {
+    color:#fff;
+    font-size:14px;
+    text-decoration:none;
+}
+#powered_by a:hover {
+    color:#fff;
+    font-size:14px;
+    text-decoration:underline;
+}
+
+#wrapper {
+    min-height: 100%;
+    margin-bottom:-66px;
+    position:relative;
+    margin-top: 66px;
+}
+.clearfooter {
+height: 66px;
+clear: both;
+}
+
+.header{
+    margin-top:0;
+    height: 75px;
+    width: 100%;
+    background-color: #3d5c9c;
+}
+
+
+.input-append,
+.input-prepend {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 0;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.input-append input,
+.input-prepend input,
+.input-append select,
+.input-prepend select,
+.input-append .uneditable-input,
+.input-prepend .uneditable-input,
+.input-append .dropdown-menu,
+.input-prepend .dropdown-menu,
+.input-append .popover,
+.input-prepend .popover {
+    font-size: 14px;
+}
+
+.input-append input,
+.input-prepend input,
+.input-append select,
+.input-prepend select,
+.input-append .uneditable-input,
+.input-prepend .uneditable-input {
+    position: relative;
+    margin-bottom: 0;
+    *margin-left: 0;
+    vertical-align: top;
+    -webkit-border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.input-append input:focus,
+.input-prepend input:focus,
+.input-append select:focus,
+.input-prepend select:focus,
+.input-append .uneditable-input:focus,
+.input-prepend .uneditable-input:focus {
+    z-index: 2;
+}
+
+.input-append .add-on,
+.input-prepend .add-on {
+    display: inline-block;
+    width: auto;
+    height: 40px;
+    min-width: 36px;
+    padding: 4px 5px;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 40px;
+    text-align: center;
+    text-shadow: 0 1px 0 #ffffff;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+}
+
+.input-append .add-on,
+.input-prepend .add-on,
+.input-append .btn,
+.input-prepend .btn,
+.input-append .btn-group > .dropdown-toggle,
+.input-prepend .btn-group > .dropdown-toggle {
+    vertical-align: top;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.input-append .active,
+.input-prepend .active {
+    background-color: #a9dba9;
+    border-color: #46a546;
+}
+
+.input-prepend .add-on,
+.input-prepend .btn {
+    margin-right: -1px;
+}
+
+.input-prepend .add-on:first-child,
+.input-prepend .btn:first-child {
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+}
+
+.input-append input,
+.input-append select,
+.input-append .uneditable-input {
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+}
+
+.input-append input + .btn-group .btn:last-child,
+.input-append select + .btn-group .btn:last-child,
+.input-append .uneditable-input + .btn-group .btn:last-child {
+    -webkit-border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.input-append .add-on,
+.input-append .btn,
+.input-append .btn-group {
+    margin-left: -1px;
+}
+
+.input-append .add-on:last-child,
+.input-append .btn:last-child,
+.input-append .btn-group:last-child > .dropdown-toggle {
+    -webkit-border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.input-prepend.input-append input,
+.input-prepend.input-append select,
+.input-prepend.input-append .uneditable-input {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.input-prepend.input-append input + .btn-group .btn,
+.input-prepend.input-append select + .btn-group .btn,
+.input-prepend.input-append .uneditable-input + .btn-group .btn {
+    -webkit-border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.input-prepend.input-append .add-on:first-child,
+.input-prepend.input-append .btn:first-child {
+    margin-right: -1px;
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+}
+
+.input-prepend.input-append .add-on:last-child,
+.input-prepend.input-append .btn:last-child {
+    margin-left: -1px;
+    -webkit-border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.input-prepend.input-append .btn-group:first-child {
+    margin-left: 0;
+}
+
+a.logo_link{
+    background: #3d5c9c url(/images/login/logo.jpg) no-repeat;
+    width: 307px;
+    height: 75px;
+    display: block;
+    text-indent: -9999px;
+}

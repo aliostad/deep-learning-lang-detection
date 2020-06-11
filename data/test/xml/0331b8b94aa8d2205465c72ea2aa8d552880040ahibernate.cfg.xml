@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+
+<hibernate-configuration>
+
+	<session-factory>
+		
+		<property name="configurationClass">org.hibernate.cfg.AnnotationConfiguration</property>
+        
+	    <property name="hibernate.connection.provider_class">org.hibernate.connection.ProxoolConnectionProvider</property>
+		<property name="hibernate.proxool.pool_alias">DBPool</property>   
+        <property name="hibernate.proxool.xml">proxool.xml</property> 
+		
+		<property name="hibernate.show_sql">false</property>
+		<property name="myeclipse.connection.profile">oracle</property>
+		<property name="current_session_context_class">thread</property>
+		<property name="dialect">org.hibernate.dialect.Oracle9Dialect</property>
+		<!--<property name="hibernate.proxool.existing_pool">true</property>-->
+		
+		<!-- uaas -->
+        <mapping class="com.landi.uaas.dept.Dept"></mapping> 
+        <mapping class="com.landi.uaas.artconf.Artconf"></mapping>
+        <mapping class="com.landi.uaas.oper.Oper"></mapping>
+        <mapping class="com.landi.uaas.subsys.SubSys"></mapping>
+        <mapping class="com.landi.uaas.subrole.SubRole"></mapping>
+        <mapping class="com.landi.uaas.realsub.RealSub"></mapping>
+        <mapping class="com.landi.uaas.dict.DictCat"></mapping>
+        <mapping class="com.landi.uaas.dict.DictItem"></mapping>
+        <mapping class="com.landi.uaas.webmenu.WebMenu"></mapping>
+        <mapping class="com.landi.uaas.subrolefunc.SubRoleFunc"></mapping>
+        <mapping class="com.landi.uaas.realrole.RealRole"></mapping>
+        <mapping class="com.landi.uaas.operationlog.OperationLog"></mapping>
+	   
+	    
+         <!-- epay管理-->
+	    <mapping class="com.landi.epay.appdef.AppDef"></mapping>
+	    <mapping class="com.landi.epay.appmenu.AppMenu"></mapping>
+	    <mapping class="com.landi.epay.cards.Cards"></mapping>
+	    <mapping class="com.landi.epay.cenoper.CenOper"></mapping>
+	    <mapping class="com.landi.epay.commands.Commands"></mapping>
+	    <mapping class="com.landi.epay.posconf.PosConf"></mapping>
+	    <mapping class="com.landi.epay.deptconf.DeptConf"></mapping>
+	    <mapping class="com.landi.epay.deptfeerate.DeptFeeRate"></mapping>
+	    <mapping class="com.landi.epay.dynamicmenu.DynamicMenu"></mapping>
+	    <mapping class="com.landi.epay.errorcode.ErrorCode"></mapping>
+	    <mapping class="com.landi.epay.errorinfo.ErrorInfo"></mapping>
+	    <mapping class="com.landi.epay.filesmgr.FilesMgr"></mapping>
+	    <mapping class="com.landi.epay.firstpage.FirstPage"></mapping>
+	    <mapping class="com.landi.epay.functioninfo.FunctionInfo"></mapping>
+	    <mapping class="com.landi.epay.historyls.HistoryLs"></mapping>
+	    <mapping class="com.landi.epay.hosterror.HostError"></mapping>
+	    <mapping class="com.landi.epay.hosttermkey.HostTermKey"></mapping>
+	    <mapping class="com.landi.epay.iso8583.Iso8583"></mapping>
+	    <mapping class="com.landi.epay.localcard.LocalCard"></mapping>
+	    <mapping class="com.landi.epay.market.Market"></mapping>
+	    <mapping class="com.landi.epay.module.Module"></mapping>
+	    <mapping class="com.landi.epay.mycustomer.MyCustomer"></mapping>
+	     <!--
+	    <mapping class="com.landi.epay.oper.Oper"></mapping>
+	    -->
+	    <mapping class="com.landi.epay.operationinfo.OperationInfo"></mapping>
+	     <!--
+	    <mapping class="com.landi.epay.operationlog.OperationLog"></mapping>
+	    -->
+	    <mapping class="com.landi.epay.operationtemp.OperationTemp"></mapping>
+	    <mapping class="com.landi.epay.payclass.PayClass"></mapping>
+	    <mapping class="com.landi.epay.paylist.PayList"></mapping>
+	    <mapping class="com.landi.epay.paytype.PayType"></mapping>
+	    <mapping class="com.landi.epay.poskey.PosKey"></mapping>
+	    <mapping class="com.landi.epay.posls.Posls"></mapping>
+	    <mapping class="com.landi.epay.printdata.PrintData"></mapping>
+	    <mapping class="com.landi.epay.printinfo.PrintInfo"></mapping>
+	    <mapping class="com.landi.epay.printmodule.PrintModule"></mapping>
+	    <mapping class="com.landi.epay.psampara.PsamPara"></mapping>
+	    <mapping class="com.landi.epay.registercard.RegisterCard"></mapping>
+	    <mapping class="com.landi.epay.retdesc.RetDesc"></mapping>
+	    <mapping class="com.landi.epay.shop.Shop"></mapping>
+	    <mapping class="com.landi.epay.shopconf.ShopConf"></mapping>
+	    <mapping class="com.landi.epay.shoptype.ShopType"></mapping>
+	    <mapping class="com.landi.epay.shortmessage.ShortMessage"></mapping>
+	    <mapping class="com.landi.epay.systemparameter.SystemParameter"></mapping>
+	    <mapping class="com.landi.epay.terminal.Terminal"></mapping>
+	    <mapping class="com.landi.epay.terminalpara.TerminalPara"></mapping>
+	    <mapping class="com.landi.epay.transcommands.TransCommands"></mapping>
+	    <mapping class="com.landi.epay.transconf.TransConf"></mapping>
+	    <mapping class="com.landi.epay.transdef.TransDef"></mapping>
+	    <mapping class="com.landi.epay.shopfeerate.ShopFeeRate"></mapping>
+	    <!--
+	    <mapping class="com.landi.epay.transtypes8583.TransTypes8583"></mapping>
+	    -->
+	    <mapping class="com.landi.epay.unitinfo.UnitInfo"></mapping>
+	    <mapping class="com.landi.epay.unknowncard.UnknownCard"></mapping>
+	    
+	    <!-- 8583配置 -->
+	    <mapping class="com.landi.epay.deal.reqfield.ReqField"></mapping>
+	    <mapping class="com.landi.epay.deal.rspfield.RspField"></mapping>
+	    <mapping class="com.landi.epay.deal.tranconf.TranConf"></mapping>
+	    <mapping class="com.landi.epay.deal.transtype.TransType"></mapping>
+	    
+	    <!-- 客户服务 -->
+	    <mapping class="com.landi.epay.firstpage.FirstPage"></mapping>
+	    <mapping class="com.landi.epay.shortmessage.ShortMessage"></mapping>
+	    
+	    
+	    <!-- TMS -->
+        <mapping class="com.landi.tms.factory.Factory"></mapping> 
+        <mapping class="com.landi.tms.model.Model"></mapping>
+        <mapping class="com.landi.tms.app.App"></mapping> 
+        <mapping class="com.landi.tms.appver.AppVer"></mapping>
+        <mapping class="com.landi.tms.appfile.AppFile"></mapping> 
+        <mapping class="com.landi.tms.trade.Trade"></mapping>
+        <mapping class="com.landi.tms.vpos.Vpos"></mapping> 
+        <mapping class="com.landi.tms.vposapp.VposApp"></mapping>
+       
+	</session-factory>
+
+</hibernate-configuration>

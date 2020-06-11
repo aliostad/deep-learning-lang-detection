@@ -1,0 +1,60 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+h1.modelTitle {
+    font-size: 48pt;
+    width: 100%;
+    margin: 0 0;
+    text-align: center;
+}
+
+h2.modelSubtitle {
+    font-size: 24pt;
+    width: 100%;
+    margin: 0 0;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+div.errorMessage {
+    width: 100%;
+    text-align:center;
+}
+
+.modelContent {
+    width: 50%;
+    margin: 10px auto;
+}
+
+.npsgdFloatRange, .npsgdInteger, .npsgdFloat, .npsgdIntegerRange, .npsgdRange {
+    width: 100px;
+}
+
+.finePrint {
+    width: 100%;
+    text-align: center;
+    font-size: 7pt;
+}
+
+.error {
+    color: red;
+    padding: 10px 0;
+}
+
+label.error {
+    display: block;
+    font-size: 8pt;
+}
+
+.modelParameterHelp {
+}
+img {
+    border: 0;
+}

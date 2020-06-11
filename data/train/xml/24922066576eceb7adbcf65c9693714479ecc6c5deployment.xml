@@ -1,0 +1,212 @@
+<?xml version='1.0'?>
+<!DOCTYPE platform SYSTEM "http://simgrid.gforge.inria.fr/simgrid.dtd">
+<?xml version="1.0" ?>
+<platform version="3">
+  <process function="agentMngt.clientAgent" host="Client_0000">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0001">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0002">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0003">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0010">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0011">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0012">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0013">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0020">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0021">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0022">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0023">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0030">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0031">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0032">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0033">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Server_00">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0100">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0101">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0102">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0103">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0110">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0111">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0112">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0113">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0120">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0121">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0122">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0123">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0130">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0131">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0132">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0133">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Server_01">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0200">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0201">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0202">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0203">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0210">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0211">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0212">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0213">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0220">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0221">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0222">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0223">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0230">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0231">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0232">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0233">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Server_02">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0300">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0301">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0302">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0303">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0310">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0311">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0312">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0313">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0320">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0321">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0322">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0323">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0330">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0331">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0332">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.clientAgent" host="Client_0333">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Server_03">
+    <argument value="exp1/servers.csv"/>
+  </process>
+  <process function="agentMngt.cacheAgent" host="Server_0">
+    <argument value="exp1/servers.csv"/>
+  </process>
+</platform>

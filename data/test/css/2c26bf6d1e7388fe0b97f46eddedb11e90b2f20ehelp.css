@@ -1,0 +1,22 @@
+.service {margin:0 auto;width:940px;height:905px;margin-top: 35px;}
+.service .service_bar {width:510px;height:40px;margin-left: 28px;}
+.service .service_bar_line {width:936px;height:4px;background-color: #fff;}
+.service .service_bar_foot {width:936px;height:8px;background:url(../images/help/help_foot_grey.png) no-repeat;}
+.service .service_bar_foot.w {width:936px;height:8px;background:url(../images/help/help_foot_white.png) no-repeat;}
+.service .service_bar li {width:100px;height:40px;background-color: #E0DAD8;float:left;text-align: center;line-height: 39px;color: #998989;font-size: 14px;margin-right: 1px;}
+
+.service .service_bar li:hover, .service .service_bar li.s {background-color: #fff;color: #EC5E60;}
+
+.service .service_body {height:auto;width:936px;margin-top: -1px;}
+.service .service_body div {display:none;}
+.service .service_body div.s {display:block;}
+
+.service .service_body .suggest_body {width:936px;height:746px;background:url(../images/help/suggest.png) no-repeat;}
+.service .service_body .question_body {width:936px;height:746px;background-color:#fff;}
+
+.service .service_foot {width:936px;height:85px;background:url(../images/help/service_foot_grey.png) no-repeat;}
+.service .service_foot.w {background:url(../images/help/service_foot_white.png) no-repeat;}
+
+.service .service_foot .entry_button {width:314px;height:93px;background:url(../images/help/anniu1.png) no-repeat;margin: 0 auto;}
+.service .service_foot .entry_button.on {background:url(../images/help/anniu2.png) no-repeat;}
+

@@ -1,0 +1,140 @@
+/* ========================================================================
+   Component: layout
+ ========================================================================== */
+body,
+.wrapper > section {
+  background-color: #ffffff;
+}
+/* ========================================================================
+   Component: top-navbar
+ ========================================================================== */
+.navbar-top .navbar-header {
+  background-color: #3db1d7;
+}
+.navbar-top .navbar-nav > li > a,
+.navbar-top .navbar-nav > .open > a {
+  color: #888888;
+}
+.navbar-top .navbar-nav > li > a:hover,
+.navbar-top .navbar-nav > .open > a:hover,
+.navbar-top .navbar-nav > li > a:focus,
+.navbar-top .navbar-nav > .open > a:focus {
+  color: #666666;
+}
+.navbar-top .navbar-nav > .active > a,
+.navbar-top .navbar-nav > .open > a,
+.navbar-top .navbar-nav > .active > a:hover,
+.navbar-top .navbar-nav > .open > a:hover,
+.navbar-top .navbar-nav > .active > a:focus,
+.navbar-top .navbar-nav > .open > a:focus {
+  background-color: transparent;
+}
+.navbar-top .navbar-nav > li > [data-toggle='navbar-search'] {
+  color: #e1e2e3;
+}
+.navbar-top .navbar-nav > li > [data-toggle='navbar-search']:hover {
+  color: #fff;
+}
+@media only screen and (min-width: 768px) {
+  .navbar-top {
+    background-color: #ffffff;
+  }
+  .navbar-top .navbar-nav > .open > a:hover,
+  .navbar-top .navbar-nav > li > a:hover,
+  .navbar-top .navbar-nav > .open > a:focus,
+  .navbar-top .navbar-nav > li > a:focus {
+    box-shadow: 0 -3px 0 #3db1d7 inset;
+  }
+  .navbar-top .navbar-nav > li > a,
+  .navbar-top .navbar-nav > .open > a {
+    color: #888888;
+  }
+  .navbar-top .navbar-nav > li > a:hover,
+  .navbar-top .navbar-nav > .open > a:hover,
+  .navbar-top .navbar-nav > li > a:focus,
+  .navbar-top .navbar-nav > .open > a:focus {
+    color: #666666;
+  }
+  .navbar-top .navbar-nav > li > [data-toggle='navbar-search'] {
+    color: #888888;
+  }
+  .navbar-top .navbar-nav > li > [data-toggle='navbar-search']:hover {
+    color: #7b7b7b;
+  }
+  .nav-wrapper {
+    background-color: #ffffff;
+  }
+}
+/* ========================================================================
+   Component: sidebar
+ ========================================================================== */
+.sidebar {
+  background-color: #2e3b42;
+  border-right-color: #050505;
+}
+.sidebar .nav-heading {
+  color: #b1b2b3;
+}
+.sidebar .nav-labels > .nav-labels-item > a {
+  color: #b1b2b3;
+}
+.sidebar .nav > li > a,
+.sidebar .nav > li > .nav-item {
+  color: #b1b2b3;
+}
+.sidebar .nav > li > a:focus,
+.sidebar .nav > li > .nav-item:focus {
+  color: #ffffff;
+}
+.sidebar .nav > li > a > em,
+.sidebar .nav > li > .nav-item > em {
+  color: #b1b2b3;
+}
+.sidebar .nav > li.active,
+.sidebar .nav > li:hover,
+.sidebar .nav > li.active > a,
+.sidebar .nav > li:hover > a,
+.sidebar .nav > li.active > a > .item-text,
+.sidebar .nav > li:hover > a > .item-text,
+.sidebar .nav > li.active .nav,
+.sidebar .nav > li:hover .nav {
+  background-color: #2c383f;
+  color: #ffffff;
+}
+.sidebar .nav > li.active > a > em,
+.sidebar .nav > li:hover > a > em {
+  color: #ffffff;
+}
+.sidebar .nav .nav {
+  background-color: #2e3b42;
+}
+.sidebar .nav .nav > li > a:focus,
+.sidebar .nav .nav > li > .nav-item:focus,
+.sidebar .nav .nav > li > a:hover,
+.sidebar .nav .nav > li > .nav-item:hover {
+  color: #ffffff;
+}
+.sidebar .nav .nav > li > a:after,
+.sidebar .nav .nav > li > .nav-item:after {
+  border-color: #b1b2b3;
+}
+.sidebar .nav .nav > li.active > a,
+.sidebar .nav .nav > li.active > .nav-item {
+  color: #ffffff;
+}
+.sidebar .nav .nav > li.active > a:after,
+.sidebar .nav .nav > li.active > .nav-item:after {
+  border-color: #ffffff;
+  background-color: #ffffff;
+}
+/* ========================================================================
+   Component: offsidebar
+ ========================================================================== */
+.offsidebar {
+  border-left: 1px solid #050505;
+  background-color: #2e3b42;
+  color: #eeeeee;
+}
+.offsidebar .text-muted {
+  color: #ddd;
+}

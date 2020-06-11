@@ -1,0 +1,77 @@
+/* 공통 */
+.xans-member-join { margin:14px 7px 0; padding:0 0 29px; color:#63666e; font-size: 11px; }
+.xans-member-join .titleArea { width:100%; margin:0; border:none; }
+.xans-member-join .titleArea.accountArea { margin:-8px 0 0; }
+.xans-member-join .titleArea h3 { height:30px; padding:13px 0 0 14px; border:1px solid #d5d5d5; font-size:13px; font-weight:bold; color:#4a5164; font-family:"맑은 고딕",Malgun Gothic,"돋움",Dotum; background:#f1f1f1; }
+.xans-member-join .titleArea h3 span { float:right; padding:0 14px 0 0; color:#1b1b1b; font:11px normal; }
+.xans-member-join .titleArea h3 span img { margin:0 3px 0 0; padding:4px 0 0; vertical-align:top; }
+.xans-member-join p.required { margin:-25px 0 6px; color:#6292db; font-size:11px; text-align:right; }
+.xans-member-join p.required img { vertical-align:middle; }
+.xans-member-join div.grid { margin:7px 0 0; }
+.xans-member-join p.grid { margin:0 0 7px 0; }
+.xans-member-join ul.grid li { margin:5px 0 0; }
+.xans-member-join .btnArea { margin: 14px auto 0; font-size: 0; text-align: center; }
+
+/* 정보입력 */
+.xans-member-join .boardWrite { color:#1b1b1b; margin:0 0 7px 0; }
+.xans-member-join .boardWrite table { font-size:13px; word-wrap:break-word; border:1px solid #ccc; border-top:none; }
+.xans-member-join .boardWrite table tr:first-child th,
+.xans-member-join .boardWrite table tr:first-child td { border-top:none; }
+.xans-member-join .boardWrite table th { width:90px; padding:7px 0 7px 10px; border-top:1px solid #ececec; color:#757575; font-size:13px; font-weight:normal; text-align:left; vertical-align:middle; background:#fff; }
+.xans-member-join .boardWrite table th > img { vertical-align:top; padding:4px 0 0; }
+.xans-member-join .boardWrite table td { padding:7px 10px; border-top:1px solid #ececec; vertical-align:middle; background:#fff; }
+.xans-member-join .boardWrite table .idCheck { font-size:11px; }
+.xans-member-join .boardWrite table .idCheck th { vertical-align:top; padding-top:13px; }
+.xans-member-join .boardWrite table .idCheck .error { color:#f00; }
+.xans-member-join .boardWrite table td.thead { border-left:1px solid #ccc; }
+.xans-member-join .boardWrite table td.thead label:last-child { margin-right:0; }
+.xans-member-join .boardWrite table td #foreignerAuth label:last-child { margin-right:0; }
+.xans-member-join .boardWrite table td.thead label input { vertical-align:middle; }
+.xans-member-join .boardWrite table td.thead p { height:30px; padding:6px 0 0; color:#757575; font-size:13px; }
+.xans-member-join .boardWrite table td label { margin:0 14px 0 0; }
+.xans-member-join .boardWrite .interest label { display:inline-block; min-width:90px; margin:0 7px 14px 0; }
+.xans-member-join .boardWrite .interest { font-size:11px; line-height:1.2em; }
+.xans-member-join .boardWrite .interest input { margin:0 3px 0 0; }
+.xans-member-join .boardWrite .interest span { display:inline-block; }
+.xans-member-join .boardWrite select { margin-right:4px; }
+
+.xans-member-join .boardWrite #authWrap #ipinWrap img,
+.xans-member-join .boardWrite #authWrap #mobileWrap img,
+.xans-member-join .boardWrite #authWrap img { width:106px; }
+
+/* INPUT SIZE */
+.xans-member-join input[type=text],
+.xans-member-join input[type=password],
+.xans-member-join input[type=number],
+.xans-member-join input[type=tel],
+.xans-member-join select { width:100%; }
+.xans-member-join #foreigner_ssn { width:auto; }
+.xans-member-join #user_passwd_confirm,
+.xans-member-join #hint,
+.xans-member-join #hint_answer { margin-bottom:7px; }
+.xans-member-join #member_id { width:113px; }
+.xans-member-join #postcode1,
+.xans-member-join #postcode2 { width:40px; text-align:center; }
+.xans-member-join #addr1 { margin:5px 0 0; }
+.xans-member-join #addr2 { margin:5px 0 7px; }
+.xans-member-join #phone1,
+.xans-member-join #mobile1 { width:33%; }
+.xans-member-join #phone2,
+.xans-member-join #phone3,
+.xans-member-join #mobile2,
+.xans-member-join #mobile3 { width:25%; margin:0 4px; }
+.xans-member-join #bssn1,
+.xans-member-join #bssn2 { width:70px; }
+.xans-member-join #email1 { max-width:40%; margin:0 4px 7px 0; }
+.xans-member-join #email2 { max-width:45%; margin:0 4px 7px 4px; }
+.xans-member-join #email3 { height:29px; margin:0 0 7px; }
+
+.xans-member-join #birth_year,
+.xans-member-join #marry_year,
+.xans-member-join #partner_year { width:45px; margin:0 5px 0 0; }
+.xans-member-join #birth_month,
+.xans-member-join #marry_month,
+.xans-member-join #partner_month { width:30px; margin:0 5px; }
+.xans-member-join #birth_day,
+.xans-member-join #marry_day,
+.xans-member-join #partner_day { width:30px; margin:0 5px; }

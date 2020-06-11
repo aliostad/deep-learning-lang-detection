@@ -1,0 +1,56 @@
+0.05	PYTHON_START
+0.06	LANGUAGE
+0.50	LOAD:InfoBar
+0.55	LOAD:GUISkin
+0.58	LOAD:ElementTree
+2.09	LOAD:enigma_skin
+2.68	LoadSkin
+3.03	LoadSkinDefault
+3.27	LoadSkinDefaultDone
+3.28	LOAD:Source
+3.28	LOAD:GUIComponent
+3.84	LOAD:enigma
+3.85	LOAD:InfoBarGenerics
+3.99	ChannelSelection.py 1
+4.65	ChannelSelection.py 2
+9.12	ChannelSelection.py 2.1
+9.16	ChannelSelection.py 2.2
+9.16	ChannelSelection.py 2.3
+9.16	ChannelSelection.py 3
+9.42	ChannelSelection.py 4
+9.45	ChannelSelection.py after imports
+9.83	LOAD:InitBar_Components
+9.84	LOAD:HelpableScreen
+9.86	ParentalControl
+9.91	LOAD:Navigation
+9.95	LOAD:skin
+9.96	LOAD:Tools
+9.97	ReloadProfiles
+10.62	Twisted
+17.60	LOAD:Plugin
+17.61	LOAD:Wizard
+18.05	misc
+18.06	LOAD:ScreenGlobals
+18.16	Screen
+18.17	Standby,PowerKey
+18.18	Scart
+18.19	Load:CI
+18.22	Load:VolumeControl
+18.26	VolumeControl
+18.26	Init:skin
+18.51	InputDevice
+18.53	AVSwitch
+18.60	RecordingConfig
+18.63	UsageConfig
+18.76	keymapparser
+19.67	Network
+19.75	LCD
+19.77	SetupDevices
+23.08	RFMod
+23.09	Init:CI
+23.12	readPluginList
+29.69	Init:Session
+29.76	wizards
+29.88	Init:VolumeControl
+29.97	Init:PowerKey
+30.01	RunReactor

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="AccountInfoAppService">
+      <implementation-class>com.wx.account.service.AccountInfoAppService</implementation-class>
+    </service>
+    <service name="PasswordGenerationService">
+      <implementation-class>com.wx.csm.appservice.PasswordGenerationService</implementation-class>
+    </service>
+    <service name="PurchaseRecordService">
+      <implementation-class>com.wx.purchaseRecord.service.PurchaseRecordService</implementation-class>
+    </service>
+    <service name="EnquiryService">
+      <implementation-class>com.wx.enquiry.service.EnquiryService</implementation-class>
+    </service>
+  </services>
+  <clients/>
+</jax-ws>

@@ -1,0 +1,23 @@
+#!/bin/sh
+# * hook-install
+#   Instala un hook en un repo
+#   ssh git@host hook-install hook script repo [alt-dir]
+
+set -e
+
+hook="${1}"
+script="${HOME}/.ssh/git-hooks/${2}"
+repo="${HOME}/${3}"
+clone="${4:-${repo}}"
+
+# Tests
+test -f "${repo}/HEAD"
+test -f "${clone}/.git/HEAD"
+
+# Installs the generic hook that runs scripts
+test -f "${repo}/hooks/${hook}" || ln -s "${HOME}/.ssh/git-hooks/generic" "${repo}/hooks/${hook}"
+
+# Install the hook on the repo
+git config -f "${repo}/config" --add "hacking.hooks.${hook}.${2}" "${clone}"
+
+exit $?

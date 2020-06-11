@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+        
+        <property name="hbm2ddl.auto">update</property>
+
+	
+		<mapping class="domain.Petit" />
+		<mapping class="domain.Source" />
+		<mapping class="domain.Present" />
+		<mapping class="domain.Conect" />
+		<mapping class="domain.Type" />
+		<mapping class="domain.Ter" />
+		<mapping class="domain.Valid" />
+		<mapping class="domain.Mo" />
+		<mapping class="domain.Hsp" />
+ 		<mapping class="domain.Cause" />
+ 		<mapping class="domain.Rectif1" />
+ 		<mapping class="domain.Rectif2" />
+ 		<mapping class="domain.Rectif3" />
+ 		<mapping class="domain.Rectif4" />
+ 		<mapping class="domain.Insur" />
+ 		<mapping class="domain.BlockGER2016" />
+ 		<mapping class="domain.blOutboindLETTER2016" />
+ 		<mapping class="domain.Outboundmany" /> 		
+	</session-factory>
+</hibernate-configuration>

@@ -1,0 +1,44 @@
+.message-list-single{
+    background-color:#ebebeb;
+    margin:10px 0;
+    padding:10px 5px;
+}
+.message-list-single .message-list-top-head-img .head-img{
+    padding:0;
+}
+.message-list-single p{
+    max-width:46.8%;
+}
+@media (min-width: 992px){
+    .message-list-single p{
+        max-width: 100%;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+
+    }
+}
+.message-list-single .message-list-top-head-img{
+    padding:0;
+    text-align: center;
+}
+.message-list-single .message-list-top-content{
+    border-bottom: 1px solid darkgray;
+}
+.message-list-single span{
+    color: #428bca;
+}
+.message-list-single .message-list-inline{
+    margin:10px 0;
+}
+.message-list-single .message-list-inline .message-list-inline-content{
+    border-bottom: 1px solid darkgray;
+}
+.message-list-single .message-list-inline-img{
+    padding:0px;
+    margin:0px;
+}
+.new_message{
+    padding:10px;
+    margin:10px 0;
+    background-color:#ebebeb;
+}

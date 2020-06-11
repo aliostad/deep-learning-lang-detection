@@ -1,0 +1,64 @@
+<generation>
+    <!-- Hack to load arbitary plugins at runntime -->
+    <!--  
+ 	<property name="REGISTER" type="double">1; pdgf.Controller.getInstance().getDataGenerator().registerGenerationEventListener(new test.GenerationEventListnerTest());</property>
+	 -->   
+
+	<!-- DEFAULT Scheduler for all Tables, if no table specific scheduler is specified -->
+    <scheduler name="DefaultScheduler" />
+    <!-- DEFAULT output for all Tables, if no table specific output is specified -->
+
+    <output name="CSVRowOutput" >
+        <fileTemplate>outputDir + table.getName() + fileEnding</fileTemplate>
+        <outputDir>output/</outputDir>
+        <fileEnding>.tbl</fileEnding>
+        <charset>UTF-8</charset>
+        <delimiter>|</delimiter>		
+        <lineBufferScale>100</lineBufferScale>
+		<delimiterAtLineEnd>false</delimiterAtLineEnd>
+		<sortByRowID>true</sortByRowID>
+    </output>
+
+	<schema name="ssb">
+		<tables>
+			<table name="NATION-REGION" exclude="true" />
+			<table name="QUERY_PARAMETERS" exclude="true" />
+			<table name="LINEORDER" exclude="false">
+				<output name="CompiledTemplateOutput">
+					<fileTemplate>outputDir + table.getName() + fileEnding</fileTemplate>
+        			<outputDir>output/</outputDir>
+        			<fileEnding>.tbl</fileEnding>
+        			<charset>UTF-8</charset>
+        			<sortByRowID>true</sortByRowID>
+        			<delimiter>|</delimiter>	
+					<template><!-- 
+				
+					int noRows =((Number)fields[1].getPlainValue()).intValue();
+					for (int i = 0; i < noRows; i++) {
+						buffer.append( fields[0] ); 				// LO_ORDERKEY
+						buffer.append(DELIMITER).append( fields[2+i] ); 	// LO_LINENUMBER
+						buffer.append(DELIMITER).append( fields[9] );		// LO_CUSTKEY
+						buffer.append(DELIMITER).append( fields[10+i] ); 	// LO_PARTKEY
+						buffer.append(DELIMITER).append( fields[17+i] ); 	// LO_SUPPKEY
+						buffer.append(DELIMITER).append( fields[24] ); 	// LO_ORDERDATE
+						buffer.append(DELIMITER).append( fields[25] ); 	// LO_ORDERPRIORITY
+						buffer.append(DELIMITER).append( fields[26] ); 	// LO_SHIPPRIORITY
+						buffer.append(DELIMITER).append( fields[27+i] ); 	// LO_QUANTITY
+						buffer.append(DELIMITER).append( fields[34+i] ); 	// LO_EXTENDEDPRICE
+						buffer.append(DELIMITER).append( fields[41] ); 	// LO_ORDTOTALPRICE
+						buffer.append(DELIMITER).append( fields[42+i] ); 	// LO_DISCOUNT 
+						buffer.append(DELIMITER).append( fields[49+i] ); 	// LO_REVENUE
+						buffer.append(DELIMITER).append( fields[56+i] ); 	// LO_SUPPLYCOST
+						buffer.append(DELIMITER).append( fields[63+i] ); 	// LO_TAX
+						buffer.append(DELIMITER).append( fields[70+i] ); 	// LO_COMMITDATE
+						buffer.append(DELIMITER).append( fields[77+i] ); 	// LO_SHIPMODE
+						buffer.append(LINESEPARATOR );
+					}
+
+					-->
+					</template>
+				</output>
+			</table>
+		</tables>
+	</schema>
+</generation>

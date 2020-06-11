@@ -1,0 +1,29 @@
+#!/system/bin/sh
+
+# $1 - "cortexbrain_background_process"
+# $2 - value=
+
+if [ "a$2" == "a" ]; then
+	echo "$cortexbrain_background_process";
+else
+	cortexbrain_background_process=$2;
+	echo "$cortexbrain_background_process";
+fi;
+
+case "${cortexbrain_background_process}" in
+	0)
+		pkill -f "/sbin/ext/cortexbrain-tune.sh";
+		sed -i "s/cortexbrain_background_process=[0-1]*/cortexbrain_background_process=0/g" /sbin/ext/cortexbrain-tune.sh;
+		MAX_FREQ=`cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq`;
+		echo "$MAX_FREQ" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_suspend_freq;
+	;;
+	1)
+		sed -i "s/cortexbrain_background_process=[0-1]*/cortexbrain_background_process=1/g" /sbin/ext/cortexbrain-tune.sh;
+		if [ `pgrep -f "cortexbrain-tune.sh" | wc -l` -eq "0" ]; then
+			nohup /sbin/ext/cortexbrain-tune.sh > /dev/null 2>&1;
+		fi;
+	;;
+	*)
+		cortexbrain_background_process=1;
+	;;
+esac;

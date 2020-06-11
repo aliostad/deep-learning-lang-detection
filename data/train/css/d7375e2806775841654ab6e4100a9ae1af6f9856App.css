@@ -1,0 +1,222 @@
+﻿/**
+ * App.css - Important Messages application styles
+ *
+ * Authors: Habanero (Mark Bice)
+ *
+ */
+
+
+/*#region $MAIN */
+
+.app-container .app-loader {
+    background: url('/_layouts/15/images/loadingcirclests16.gif') no-repeat 0 0;
+    display: none;
+    height: 16px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 16px;
+    z-index: 1;
+}
+
+.app-container.loading .app-loader,
+.app-container.updating .app-loader,
+.app-container.error .app-loader {
+    display: block;
+}
+
+.app-container.updating .app-loader,
+.app-container.error .app-loader {
+    left: auto;
+    right: 10px;
+    top: 10px;
+}
+
+.app-container.error .app-loader {
+    background-image: url('../Images/icons/notify.png');
+    height: 15px;
+    width: 15px;
+}
+
+
+/* error messages */
+.app-container .app-message-error,
+.app-container.updating.error .app-message-error {
+    display: none;
+}
+
+.app-container.error .app-message-error {
+    display: block;
+    padding: 5px 0;
+}
+
+.app-messages {
+    position: relative;
+}
+
+    .app-messages p {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+/*#region --$message */
+
+.app-message {
+    margin-bottom: 5px;
+    overflow: auto;
+}
+
+    .app-message .app-message-icon {
+        background: #16406b;
+        float: left;
+        height: 75px;
+        margin: 0 5px 0 0;
+        position: relative;
+        width: 75px;
+    }
+
+    .app-message .app-message-inner {
+        background: #16406b;
+        background: rgba(22, 64, 107, 0.75);
+        color: #fff;
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#bf16406b',endColorstr='#bf16406b');
+        min-height: 75px;
+        overflow: hidden;
+        position: relative;
+    }
+
+        .app-message .app-message-inner > h3 {
+            color: #fff;
+            font-size: 1em;
+            line-height: 1.1em;
+            margin: 0;
+            overflow: hidden;
+            padding: 12px 20px 3px 20px;
+        }
+
+    .app-message .app-message-icon > img {
+        height: 36px;
+        left: 50%;
+        margin: -18px 0 0 -18px;
+        position: absolute;
+        top: 50%;
+        width: 36px;
+    }
+
+    .app-message .app-message-category,
+    .app-message .app-message-title {
+        color: inherit;
+        font-size: 1.62em;
+        line-height: 1.1em;
+    }
+
+    .app-message .app-message-category {
+        font-weight: 700;
+        margin-right: 10px;
+    }
+
+    .app-message .app-message-body {
+        color: inherit;
+        font-size: 1.31em;
+        height: 16px;
+        line-height: 1.5em;
+        margin-top: 2px;
+        overflow: hidden;
+        padding: 0 40px 12px 20px;
+
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+    }
+        .app-message .app-message-body a {
+            color: inherit;
+            text-decoration: underline;
+        }
+
+        .app-message .app-message-body ul,
+        .app-message .app-message-body ol {
+            margin: 0 0 5px 0;
+        }
+
+        .app-message .app-message-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        .app-message .app-message-body h1,
+        .app-message .app-message-body h2,
+        .app-message .app-message-body h3,
+        .app-message .app-message-body h4,
+        .app-message .app-message-body h5,
+        .app-message .app-message-body .ms-rteStyle-Emphasis,
+        .app-message .app-message-body .ms-rteStyle-Accent1,
+        .app-message .app-message-body .ms-rteStyle-Quote,
+        .app-message .app-message-body .ms-rteStyle-References,
+        .app-message .app-message-body .ms-rteStyle-IntenseEmphasis {
+            color: inherit;
+        }
+
+    .app-message .app-message-toggle {
+        background: url('../Images/icons/toggle.png');
+        bottom: 20px;
+        display: none;
+        height: 11px;
+        position: absolute;
+        right: 20px;
+        width: 11px;
+    }
+
+    .app-message.overflow-active .app-message-icon,
+    .app-message.overflow-active .app-message-inner {
+        cursor: pointer;
+        
+    }
+
+    .app-message.overflow-active .app-message-toggle {
+        display: block;
+    }
+
+    .app-message.active .app-message-body,
+    .app-message.active .app-message-inner {
+        height: auto;
+        overflow: auto;
+        white-space: normal;
+    }
+
+    .app-message.active .app-message-toggle {
+        background-position: 0 -13px;
+    }
+
+/*#endregion*/
+
+
+/*#region --$configuration */
+
+.app-configuration .app-icon {
+    float: left;
+    margin-right: 20px;
+}
+
+.app-configuration .app-list-controls {
+    overflow: auto;
+}
+
+.app-configuration .app-list-controls input {
+    float: left;
+    margin: 0 5px 5px 0;
+}
+
+/*#endregion*/
+
+
+/*#region --$util */
+
+.app-hide-text {
+    font-size: 1px;
+    letter-spacing: -1em;
+    line-height: 1px;
+    text-indent: -9999px;
+}
+/*#endregion*/
+
+
+/* #endregion */

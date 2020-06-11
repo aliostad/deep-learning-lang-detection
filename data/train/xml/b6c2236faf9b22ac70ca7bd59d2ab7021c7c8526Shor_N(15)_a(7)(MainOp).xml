@@ -1,0 +1,114 @@
+<save arq="/home/adriano/workspace/VPE-qGM/src/processos/modelagens_Shor(v3)/Shor_N(15)_a(7)(MainOp).xml" pos="0:0:128">
+<process repr="env" tipo="seq" pos="0:0:128">
+<process repr="terminicio" x="736.0" y="1226.0" cor="BLACK"></process>
+<process repr="env" tipo="seq" pos="0:0:128">
+<process repr="macro" tipo="quantum" pos= "0:128" parametro= "H,H,H,Id,Id,Id,Id" name="Inicializa Estados" x="904.0" y="1226.0" cor="BLACK">
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr="conselem" qubits= "7" acao= "QGMAnalyzer" pos= "0" parametro= "H,H,H,Id,Id,Id,Id" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="macro" tipo="quantum" pos= "0:128" parametro= "(Id,Id,Control1,Id,X,Id,Id);(Id,Id,Control1(1),Id,Id,Target1(X),Id);(Id,Id,Id,Control1(1),Id,Target1(X),Id);(Id,Control1(1),Id,Target1(X),Id,Control1(1),Id);(Id,Id,Id,Control1(1),Id,Target1(X),Id);(Id,Id,Id,Id,Target1(X),Id,Control1(1));(Id,Control1(1),Id,Id,Control1(1),Id,Target1(X));(Id,Id,Id,Id,Target1(X),Id,Control1(1))" name="x MOD 15" x="1123.0" y="1226.0" cor="BLACK">
+<process repr="env" tipo="seq" pos="">
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr="conselem" qubits= "7" acao= "QGMAnalyzer" pos= "0" parametro= "(Id,Id,Control1(1),Id,Target1(X),Id,Id)" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr="conselem" qubits= "7" acao= "QGMAnalyzer" pos= "0" parametro= "(Id,Id,Control1(1),Id,Id,Target1(X),Id)" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr="conselem" qubits= "7" acao= "QGMAnalyzer" pos= "0" parametro= "(Id,Id,Id,Control1(1),Id,Target1(X),Id)" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr="conselem" qubits= "7" acao= "QGMAnalyzer" pos= "0" parametro= "(Id,Control1(1),Id,Target1(X),Id,Control1(1),Id)" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr="conselem" qubits= "7" acao= "QGMAnalyzer" pos= "0" parametro= "(Id,Id,Id,Control1(1),Id,Target1(X),Id)" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr="conselem" qubits= "7" acao= "QGMAnalyzer" pos= "0" parametro= "(Id,Id,Id,Id,Target1(X),Id,Control1(1))" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr="conselem" qubits= "7" acao= "QGMAnalyzer" pos= "0" parametro= "(Id,Control1(1),Id,Id,Control1(1),Id,Target1(X))" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr="conselem" qubits= "7" acao= "QGMAnalyzer" pos= "0" parametro= "(Id,Id,Id,Id,Target1(X),Id,Control1(1))" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+</process>
+</process>
+<process repr="macro" tipo="quantum" pos= "0:128" parametro= "H,Id,Id,Id,Id,Id,Id;(Target1(S),Control1(1),Id,Id,Id,Id,Id);(Target1(T),Id,Control1(1),Id,Id,Id,Id);Id,H,Id,Id,Id,Id,Id;(Id,Target1(S),Control1(1),Id,Id,Id,Id);Id,Id,H,Id,Id,Id,Id" name="QFT" x="1236.0" y="1226.0" cor="BLACK">
+<process repr="env" tipo="seq" pos="">
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr="conselem" qubits= "7" acao= "QGMAnalyzer" pos= "0" parametro= "H,Id,Id,Id,Id,Id,Id" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr="conselem" qubits= "7" acao= "QGMAnalyzer" pos= "0" parametro= "(Target1(S),Control1(1),Id,Id,Id,Id,Id)" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr="conselem" qubits= "7" acao= "QGMAnalyzer" pos= "0" parametro= "(Target1(T),Id,Control1(1),Id,Id,Id,Id)" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr="conselem" qubits= "7" acao= "QGMAnalyzer" pos= "0" parametro= "Id,H,Id,Id,Id,Id,Id" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr="conselem" qubits= "7" acao= "QGMAnalyzer" pos= "0" parametro= "(Id,Target1(S),Control1(1),Id,Id,Id,Id)" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr="conselem" qubits= "7" acao= "QGMAnalyzer" pos= "0" parametro= "Id,Id,H,Id,Id,Id,Id" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+</process>
+</process>
+<process repr="macro" tipo="quantum" pos= "0:0:128" parametro= "Swap1,Id,Swap1,Id,Id,Id,Id" name="SWAP" x="1474.0" y="1226.0" cor="BLACK">
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr="conselem" qubits= "7" acao= "QGMAnalyzer" pos= "0" parametro= "Swap1,Id,Swap1,Id,Id,Id,Id" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="env" tipo="seq" pos="0:0:128">
+<process repr="env" tipo="nondet1" pos="0:0:128">
+<process repr="detproj" parametro="P0,P0,P0,Id,Id,Id,Id;P0,P0,P1,Id,Id,Id,Id;P0,P1,P0,Id,Id,Id,Id;P0,P1,P1,Id,Id,Id,Id;P1,P0,P0,Id,Id,Id,Id;P1,P0,P1,Id,Id,Id,Id;P1,P1,P0,Id,Id,Id,Id;P1,P1,P1,Id,Id,Id,Id"></process>
+<process repr="macro" tipo="quantum" pos= "0:0:128" parametro= "P0,P0,P0,Id,Id,Id,Id" name="Default Macro Name" x="1844.0" y="981.0" cor="BLACK">
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr= "projection" acao= "QGMAnalyzer" pos= "0" parametro= "P0,P0,P0,Id,Id,Id,Id" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="macro" tipo="quantum" pos= "0:0:128" parametro= "P0,P0,P1,Id,Id,Id,Id" name="Default Macro Name" x="1844.0" y="1051.0" cor="BLACK">
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr= "projection" acao= "QGMAnalyzer" pos= "0" parametro= "P0,P0,P1,Id,Id,Id,Id" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="macro" tipo="quantum" pos= "0:0:128" parametro= "P0,P1,P0,Id,Id,Id,Id" name="Default Macro Name" x="1844.0" y="1121.0" cor="BLACK">
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr= "projection" acao= "QGMAnalyzer" pos= "0" parametro= "P0,P1,P0,Id,Id,Id,Id" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="macro" tipo="quantum" pos= "0:0:128" parametro= "P0,P1,P1,Id,Id,Id,Id" name="Default Macro Name" x="1844.0" y="1191.0" cor="BLACK">
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr= "projection" acao= "QGMAnalyzer" pos= "0" parametro= "P0,P1,P1,Id,Id,Id,Id" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="macro" tipo="quantum" pos= "0:0:128" parametro= "P1,P0,P0,Id,Id,Id,Id" name="Default Macro Name" x="1844.0" y="1261.0" cor="BLACK">
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr= "projection" acao= "QGMAnalyzer" pos= "0" parametro= "P1,P0,P0,Id,Id,Id,Id" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="macro" tipo="quantum" pos= "0:0:128" parametro= "P1,P0,P1,Id,Id,Id,Id" name="Default Macro Name" x="1844.0" y="1331.0" cor="BLACK">
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr= "projection" acao= "QGMAnalyzer" pos= "0" parametro= "P1,P0,P1,Id,Id,Id,Id" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="macro" tipo="quantum" pos= "0:0:128" parametro= "P1,P1,P0,Id,Id,Id,Id" name="Default Macro Name" x="1844.0" y="1401.0" cor="BLACK">
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr= "projection" acao= "QGMAnalyzer" pos= "0" parametro= "P1,P1,P0,Id,Id,Id,Id" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="macro" tipo="quantum" pos= "0:0:128" parametro= "P1,P1,P1,Id,Id,Id,Id" name="Default Macro Name" x="1844.0" y="1471.0" cor="BLACK">
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr= "projection" acao= "QGMAnalyzer" pos= "0" parametro= "P1,P1,P1,Id,Id,Id,Id" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+</process>
+</process>
+<process repr= "probability" acao= "QGMAnalyzer" pos= "128" parametro= "Probability" x="2069.0" y="1226.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="termfim" x="2134.0" y="1226.0" cor="BLACK"></process>
+</process>
+</save>

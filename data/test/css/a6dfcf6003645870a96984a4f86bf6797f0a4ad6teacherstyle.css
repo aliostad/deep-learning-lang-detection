@@ -1,0 +1,47 @@
+#show_course_list,#show_student_list,#show_2dimensional_code,#show_course_detail{
+	display: none;
+}
+
+.two-dimensional_code,.del_stu,.show_course_detail{
+	cursor: pointer;
+	
+}
+.two-dimensional_code:hover,.del_stu:hover,.show_course_detail:hover{
+	color: #003399;
+}
+
+#show_student_list .glow{
+	float: right;
+	margin-bottom: 30px;
+}
+#attend_wrap .item {
+    display: inline-block;
+    width: 47%;
+}
+#show_course_detail .pop-dialog{
+	margin-top: 20px;
+}
+#show_course_detail .btn-flat{
+	margin-top: 30px;
+	/*margin-right: 70px;*/
+}
+#to_select_btn{
+	float: left;
+}
+
+#to_signin_btn{
+	float: right;
+}
+#show_course_detail .item{
+	line-height: 1.8em;
+	font-size: 1.3em;
+	
+} 
+
+#attend_wrap {
+    z-index: 10000;
+    display: inline-block;
+    position: absolute;
+    width: 400px;
+}
+

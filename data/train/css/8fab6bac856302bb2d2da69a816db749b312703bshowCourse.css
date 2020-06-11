@@ -1,0 +1,43 @@
+@CHARSET "UTF-8";
+
+#showCourse {
+   background-color: #EEEEFF;
+   width: 363px;
+   display: inline-block;
+}
+
+#showCourse form,#showCourse input {
+   width: 100%;
+}
+
+#showColleagues {
+   background-color: white;
+   border: 1px solid black;
+   width: 154px;
+   min-height: 150px;
+   float:right;
+}
+
+#showColleagues ul{
+   list-style-type: none;
+   padding-left: 0px;
+   margin: 0px;
+   text-align: center;
+}
+
+#showColleagues li{
+   margin: 5 0 5 0;
+}
+
+h2{
+ margin:0px;
+}
+   
+   
+#showCourses ul{
+  padding-left: 15px;
+}
+
+#showCourses a{
+  width: 154px;
+}

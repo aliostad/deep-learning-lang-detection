@@ -1,0 +1,169 @@
+.helpWriteSeances td {
+  vertical-align: top;
+}
+
+.helpWriteSeances th, .helpWriteSeances td{
+  padding: 6px
+}
+
+.helpWriteSeances {
+  background-color: white;
+  border-collapse: collapse;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px #888888;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.list-des-dates{
+  margin-top: 10px;
+  padding: 4px;
+}
+
+
+.help-date-ical-title{
+  font-size: 20px;
+  color: #2b669a;
+  text-align: center
+}
+
+.helpWriteSeances .row{
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px
+}
+
+.helpWriteSeances .col-md-3,.helpWriteSeances .col-md-2,.helpWriteSeances .col-md-4,.helpWriteSeances .col-md-6,.helpWriteSeances .col-md-12{
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+.helpWriteSeances hr.soften {
+  background-image: -moz-linear-gradient(left center , rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+  border: 0 none;
+  height: 1px;
+  margin-bottom: 17px;
+  margin-top: -7px;
+}
+.help-user-dates{
+  color: #2b669a;
+  font-size: 18px;
+  margin-bottom: 5px;
+  margin-top: -13px;
+  text-align: center;
+}
+
+.date-item{
+  width: 100%;
+  margin-top: 10px; 
+  border-bottom: solid 1px #b8b8b8; 
+  font-size: 15px
+}
+
+
+.list-des-dates .btn.remove-date{
+  margin-top: -4px;
+}
+
+.message-validation input{
+  width: 100%
+}
+
+.SortirCalendar table {
+  border-collapse: collapse;
+  border: 1px solid #dcdcdc;
+  box-shadow: 0 1px 5px #888888;
+  border-radius: 2px
+ 
+}
+
+.SortirCalendar th, .SortirCalendar td {
+  text-align: center;
+  font-size: 14px;
+  padding: 0.1em 0.2em;
+  border: none;
+}
+
+.SortirCalendar tbody td {
+  color: gray;
+  background-color: white;
+  border: solid 0.5px #dcdcdc;
+}
+
+td.calendar-date{
+  cursor: pointer;
+}
+
+td.calendar-date:hover{
+  background-color: gray;
+  color: white;
+}
+
+.SortirCalendar tbody td.selected {
+   background-color: black !important;
+   color: white;
+}
+
+.SortirCalendar tbody td.selected>a {
+   color: white !important
+}
+
+.SortirCalendar th{
+  color: #eea236
+}
+
+.SortirCalendar tbody td:empty{
+  background-color: #f6f6f6;
+}
+
+.SortirCalendar thead th{
+  background-color: #f6f6f6
+}
+
+.helpWriteSeances .SortirCalendar td a {
+  text-decoration: none;
+  background-color: transparent;
+  color: gray;
+}
+
+.helpWriteSeances .SortirCalendar td a:hover {
+  color: gray;
+}
+
+.SortirCalendar .SortirCalendar_previous_month,
+.SortirCalendar .SortirCalendar_month_year,
+.SortirCalendar .SortirCalendar_next_month,
+.SortirCalendar th {
+  background-color: .fcc300;
+  font-weight: normal;
+  color: #eea236;
+}
+
+.helpWriteSeances .SortirCalendar td.SortirCalendar_previous_month a,
+.helpWriteSeances .SortirCalendar td.SortirCalendar_next_month a {
+  color: black;
+  font-size: 0.8em;
+}
+
+.SortirCalendar .SortirCalendar_today {
+  color: #eea236;
+}
+
+.message-validation{
+  font-size: 16px;
+  text-align: center;
+}
+
+.date-horaire-select{
+  display: inline-block;
+  vertical-align: top
+}
+
+.date-horaire{
+  display: inline-block; 
+  margin-left: 12px
+}
+
+.date-choice-etde{
+  margin-top: 10px
+}

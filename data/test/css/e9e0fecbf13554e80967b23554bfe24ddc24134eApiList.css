@@ -1,0 +1,31 @@
+.apiList a{
+	background-repeat:no-repeat;
+	padding:2px 0px 2px 20px;
+	text-decoration:none;
+	color:black;
+	display:block;
+}
+
+.apiList ._type_class {
+	background-image: url(../resources/moduleType_class.png);
+}
+
+.apiList ._type_method {
+	background-image: url(../resources/moduleType_method.png);
+}
+
+.apiList ._type_module {
+	background-image: url(../resources/moduleType_module.png);
+}
+
+.apiList ._type_mixin {
+	background-image: url(../resources/moduleType_mixin.png);
+}
+
+.apiList ._type_object {
+	background-image: url(../resources/moduleType_object.png);
+}
+
+.apiList a span.highlight{
+	background-color: #DFE8F6;
+}

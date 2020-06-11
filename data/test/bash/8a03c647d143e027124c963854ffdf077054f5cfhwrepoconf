@@ -1,0 +1,127 @@
+#!/bin/sh
+# Quick hack to enable / disable repos configs
+# Or set them back to default (Everything disabled except honeynet)
+# Expects "filenames" (w/ or w/o trailing .repo),*NOT* actual repo IDs
+# Should work fine on a roo 
+# Might work on others w/ 1 repo configured per file in /etc/yum.repos.d
+# Doesnt look at repos in /etc/yum.conf
+
+clear
+
+################################################################################
+# MUST
+################################################################################
+# Be root
+if [ "$(id -u)" -ne 0 ]; then
+	echo "Error: Must be root"
+        exit 1
+fi
+
+################################################################################
+# "Global" VARs
+################################################################################
+PROG=$(basename ${0})
+REPO_DIR="/etc/yum.repos.d"
+
+################################################################################
+# FUNCS
+################################################################################
+do_usage() {
+cat << EOF_USAGE
+
+ ${PROG}: Quick hack to manipulate enable-ness of repo configs
+
+ Usage: ${PROG} <arg(s)>
+
+ No <arg(s)>              Reports usage
+ --enable-all             Enables all repos
+ --disable-all            Disables all repos
+ --enable repo1 repo2...  Enables listed repos
+ --disable repo1 repo2..  Disables listed repos
+ --defaults               Sets things back to default values
+                           (All disabled except "honeynet")
+ --show                   Show current settings
+                           (enabled=1: Enabled)
+                           (enabled=0: Disabled)
+
+ Note: Repo filenames w/ or w/o trailing ".repo" (Not actual repo IDs)
+
+EOF_USAGE
+}
+
+################################################################################
+enable_repos() {
+for REPO in $@; do
+# for consistency
+	REPO="${REPO_DIR}/$(echo ${REPO} | sed 's,.repo,,').repo"
+	if [ ! -f "${REPO}" ]; then
+		echo "Repo ${REPO} not found"
+	else
+		echo "Enabling Repo: ${REPO}"
+		sed -i 's,^enabled=.*$,enabled=1,' ${REPO}
+	fi
+done
+}
+################################################################################
+disable_repos() {
+for REPO in $@; do
+# for consistency
+	REPO="${REPO_DIR}/$(echo ${REPO} | sed 's,.repo,,').repo"
+	if [ ! -f "${REPO}" ]; then
+		echo "Repo ${REPO} not found"
+	else
+		echo "Disabling Repo: ${REPO}"
+                sed -i 's,^enabled=.*$,enabled=0,' ${REPO}
+	fi
+done
+}
+################################################################################
+get_repos() {
+REPO_LIST=$(cd ${REPO_DIR}; ls *.repo)
+if [ -n "${REPO_LIST}" ]; then
+	echo "${REPO_LIST}"
+else
+	echo "Error: No repos found in ${REPO_DIR}"
+	exit 1
+fi
+}
+
+################################################################################
+show_repos() {
+grep '^enabled=' /etc/yum.repos.d/*.repo | \
+sed 's,/etc/yum.repos.d/,,' | \
+sed 's,.repo,,' | \
+column -t -s :
+}
+
+################################################################################
+# "MAIN"
+################################################################################
+
+# Save first arg
+TODO=${1}; shift
+
+# Be sure first command arg was ok
+case ${TODO} in
+
+      --enable) enable_repos "$@"
+	    	;;
+  --enable-all) enable_repos "$(get_repos)"
+	    	;;
+     --disable) disable_repos "$@"
+		;;
+ --disable-all) disable_repos "$(get_repos)"
+		;;
+    --defaults) disable_repos "$(get_repos)"
+		enable_repos "honeynet"
+		;;
+	--show) show_repos
+		;;
+	     *) do_usage; exit 1 
+		;;
+esac
+echo
+
+exit 0
+
+

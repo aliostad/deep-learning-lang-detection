@@ -1,0 +1,45 @@
+#message-container {
+    background-color: rgba(1, 1, 1, 0.5);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+#message-container-2 {
+    -moz-box-sizing: border-box;
+    background-color: white;
+    border: 1px solid #444444;
+/*    border-radius: 15px 15px 15px 15px;*/
+    margin: 0 auto;
+    min-height: 100px;
+    overflow: auto;
+    padding: 15px;
+    width: 900px;
+}
+#message-text {
+}
+#message-text p {
+    margin: 10px 0;
+}
+#message-text td {
+    font-size: 12px;
+}
+#message-close, #message-refresh {
+    cursor: pointer;
+    float: right;
+    height: 32px;
+    opacity: 1;
+    width: 32px;
+}
+#message-refresh {
+    opacity: 0;
+}
+#message-close:hover {
+    opacity: 1;
+}
+
+.showmessage {
+    cursor: pointer;
+}

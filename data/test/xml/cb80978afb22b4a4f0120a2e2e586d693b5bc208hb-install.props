@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="hb-build-defines.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <BinDir>$(SolutionDir)$(Configuration)\$(Platform)\bin</BinDir>
+    <InstalledDlls>$(BinDir)\$(HBDllPrefix)harfbuzz$(HBDllSuffix).dll;$(BinDir)\$(HBDllPrefix)harfbuzz-icu$(HBDllSuffix).dll;$(BinDir)\$(HBDllPrefix)harfbuzz-gobject$(HBDllSuffix).dll</InstalledDlls>
+    <InstalledBins>$(BinDir)\hb-view.exe;$(BinDir)\hb-shape.exe;$(BinDir)\hb-ot-shape-closure.exe</InstalledBins>
+    <HBDoInstall>
+mkdir $(CopyDir)
+
+mkdir $(CopyDir)\bin
+copy $(BinDir)\$(HBDllPrefix)harfbuzz$(HBDllSuffix).dll $(CopyDir)\bin
+copy $(BinDir)\$(HBDllPrefix)harfbuzz$(HBDllSuffix).pdb $(CopyDir)\bin
+copy $(BinDir)\$(HBDllPrefix)harfbuzz-icu$(HBDllSuffix).dll $(CopyDir)\bin
+copy $(BinDir)\$(HBDllPrefix)harfbuzz-icu$(HBDllSuffix).pdb $(CopyDir)\bin
+copy $(BinDir)\$(HBDllPrefix)harfbuzz-gobject$(HBDllSuffix).dll $(CopyDir)\bin
+copy $(BinDir)\$(HBDllPrefix)harfbuzz-gobject$(HBDllSuffix).pdb $(CopyDir)\bin
+copy $(BinDir)\hb-ot-shape-closure.exe $(CopyDir)\bin
+copy $(BinDir)\hb-ot-shape-closure.pdb $(CopyDir)\bin
+copy $(BinDir)\hb-shape.exe $(CopyDir)\bin
+copy $(BinDir)\hb-shape.pdb $(CopyDir)\bin
+copy $(BinDir)\hb-view.exe $(CopyDir)\bin
+copy $(BinDir)\hb-view.pdb $(CopyDir)\bin
+
+mkdir $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb.h $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb-blob.h $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb-buffer.h $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb-common.h $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb-deprecated.h $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb-face.h $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb-font.h $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb-set.h $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb-shape.h $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb-shape-plan.h $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb-unicode.h $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb-version.h $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb-ot.h $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb-ot-font.h $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb-ot-layout.h $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb-ot-shape.h $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb-ot-tag.h $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb-glib.h $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb-ft.h $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb-graphite2.h $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb-uniscribe.h $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb-icu.h $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb-gobject.h $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb-gobject-structs.h $(CopyDir)\include\harfbuzz
+copy ..\..\..\src\hb-gobject-enums.h $(CopyDir)\include\harfbuzz
+
+mkdir $(CopyDir)\lib
+copy $(BinDir)\harfbuzz.lib $(CopyDir)\lib
+copy $(BinDir)\harfbuzz-icu.lib $(CopyDir)\lib
+copy $(BinDir)\harfbuzz-gobject.lib $(CopyDir)\lib
+    </HBDoInstall>
+  </PropertyGroup>
+  <PropertyGroup>
+    <_PropertySheetDisplayName>hbinstallprops</_PropertySheetDisplayName>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="BinDir">
+      <Value>$(BinDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="InstalledDlls">
+      <Value>$(InstalledDlls)</Value>
+    </BuildMacro>
+    <BuildMacro Include="InstalledBins">
+      <Value>$(InstalledBins)</Value>
+    </BuildMacro>
+    <BuildMacro Include="HBDoInstall">
+      <Value>$(HBDoInstall)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,30 @@
+// EXPECTED_RESULT: true
+import java.lang.Math.sqrt
+
+def reduce(default, t, fun) {
+	if(t.isEmpty()) {
+		default
+	} else {
+		fun.apply(t.get(0), reduce(default, t.subTupleEnd(1), fun));
+	}
+}
+
+def sum(a, b) {
+	a + b
+}
+
+def sumSquares(a, b) {
+	a * a + b
+}
+
+let res = rep (v <- [random]) {
+	v.append(random)
+	.append(random)
+	.append(random)
+	.append(random)
+	.append(random)
+};
+let expected = reduce(0, res, sum) / res.size();
+let variance = reduce(0, res, sumSquares) / res.size() - expected ^ 2;
+expected > 0.4 && expected < 0.6 && variance > 0 && variance < 0.2
+

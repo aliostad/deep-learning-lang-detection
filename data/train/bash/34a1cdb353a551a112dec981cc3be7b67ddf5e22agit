@@ -1,0 +1,29 @@
+#!/bin/bash
+
+action=$1
+option=$2
+args1=$3
+args2=$4
+args3=$5
+
+[[ -z $GIT_REPOS ]] && GIT_REPOS=${HOME}/.git_repos
+
+case "$action" in
+    run)
+        ${GIT_REPOS}/${option} $args1 $args2 $args3
+        ;;
+    clone)
+        cd ${GIT_REPOS}
+        git clone $option
+        ;;
+    pullall)
+        for repo in `ls -d ${GIT_REPOS}/*`; do
+            [[ ! -d ${repo}/.git ]] && continue
+            repo_name=`basename ${repo}`
+            echo  -e "\e[32mPulling ${repo_name} ...\e[0m"
+            cd ${repo}
+            git pull origin master
+        done
+        ;;
+    *);;
+esac

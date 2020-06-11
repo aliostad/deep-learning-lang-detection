@@ -1,0 +1,53 @@
+#productList{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.product-control{
+    cursor: pointer;
+}
+
+.product-control:hover{
+    color: #ff0000;
+}
+
+.tool-items a.tool-item{
+    cursor: pointer;
+    padding-top: 10% !important;
+    padding-bottom: 10% !important;
+}
+
+#updateModel{
+    z-index: 99999;
+}
+
+#updateModel form{
+    padding-top: 0;
+    margin-top: 0;
+    border: none;
+}
+
+#productForm .form-group {
+    padding: 30px 0;
+}
+
+#productForm h4 {
+    margin-top: 5px;
+}
+
+#productForm input{
+    border: 1px solid #cccccc;
+}
+
+.clear-margin{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#addBtn{
+    cursor: pointer;
+}
+
+.table-hover td:hover{
+    background-color: #ff0000;
+}

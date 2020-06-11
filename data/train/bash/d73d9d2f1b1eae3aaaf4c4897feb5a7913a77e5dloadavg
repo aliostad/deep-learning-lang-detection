@@ -1,0 +1,25 @@
+#!/bin/sh
+
+if [ $# -ne 5 ];then
+	echo "Usage : $0 TYPE THRESHOLD SEVERITY CELL_NAME EVENT_CLASS"
+	echo "TYPE = 1|5|15"
+	exit 0
+fi
+
+TYPE="$1"
+THRESHOLD="$2"
+SEVERITY="$3"
+CELL_NAME="$4"
+EVENT_CLASS="$5"
+HOSTNAME=`hostname`
+LOAD=''
+
+if [ "$TYPE" = "1" ];then
+	LOAD=`cat /proc/loadavg | awk '{print $1}'`
+elif [ "$TYPE" = "5" ];then
+	LOAD=`cat /proc/loadavg | awk '{print $2}'`
+elif [ "$TYPE" = "15" ];then
+	LOAD=`cat /proc/loadavg | awk '{print $3}'`
+fi
+
+/usr/bin/msend.sh "$SEVERITY" "$CELL_NAME" "load($TYPE min) > ${THRESHOLD}%, current load is $LOAD" "load average" "$EVENT_CLASS" "$HOSTNAME" "load(${TYPE} min)" "$LOAD" "monit"

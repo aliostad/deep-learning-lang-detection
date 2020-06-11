@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration
+    PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory >
+
+		<!-- local connection properties -->
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost/zhgyms</property>
+
+		<property name="hibernate.connection.username">zhgyms</property>
+		<property name="hibernate.connection.password">zhgy</property>
+		
+		<property name="connection.autoReconnect">true</property> 
+        <property name="connection.autoReconnectForPools">true</property> 
+        <property name="connection.is-connection-validation-required">true</property> 
+		
+		<property name="hibernate.connection.pool_size">3</property>
+		
+		<!-- 使用c3p0连接池 -->
+<!-- 		<property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property> -->
+<!-- 		<property name="hibernate.c3p0.max_size">30</property> -->
+<!-- 		<property name="hibernate.c3p0.min_size">5</property> -->
+<!-- 		<property name="hibernate.c3p0.timeout">90</property> -->
+<!-- 		<property name="hibernate.c3p0.max_statements">100</property> -->
+<!-- 		<property name="hibernate.c3p0.idle_test_period">120</property> -->
+<!-- 		<property name="c3p0.preferredTestQuery ">select CATEGORY_ID from category where CATEGORY_ID=1</property> -->
+<!-- 		<property name="hibernate.c3p0.acquire_increment">1</property> -->
+<!-- 		<property name="c3p0.idleConnectionTestPeriod ">18000</property>     -->
+<!-- 		<property name="c3p0.maxIdleTime">25000</property> -->
+<!-- 		<property name="c3p0.testConnectionOnCheckout">true</property> -->
+<!-- 		<property name="hibernate.c3p0.validate">false</property> -->
+		 
+
+		<!-- dialect for MySQL -->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+		<property name="connection.useUnicode">true</property> 
+		<property name="connection.characterEncoding">UTF-8</property> 
+<!--         <property name="hibernate.show_sql">true</property> -->
+        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
+        
+        <!-- framework -->
+        <mapping resource="mapping-files/SysRole.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/SysUser.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/SysModule.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/SysPermissions.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/SysEncoding.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/SysParam.hbm.xml" ></mapping>
+        
+        <!-- business -->
+        <mapping resource="mapping-files/AddressBook.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/Client.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/ExpressDelivery.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/Files.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/ManufactureOrder.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/MaterialsInformation.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/Notice.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/Orders.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/ProcessingInformation.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/Product.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/ProductTestReport.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/PrroductDirectory.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/SalesProgram.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/SemifinishedProduct.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/Suppliers.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/SequenceSimulator.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/ContractNumberSequence.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/Production.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/Contract.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/ContractDetail.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/FinancialStatements.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/OperationLog.hbm.xml" ></mapping>
+        <mapping resource="mapping-files/Trackprogress.hbm.xml" ></mapping>
+        
+    </session-factory>
+</hibernate-configuration>

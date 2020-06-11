@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages id="wmaintian">
+	<message id="create_plan">
+		{0}维修作业计划已经提交给你进行审核，等待你的处理！
+	</message>
+	<message id="approve_notpassed_plan">
+		{0}维修作业计划审核不通过，请你重新填写故障回复！
+	</message>
+	<message id="approve_transfer_plan">
+		{0}维修作业计划已经转审给你，请你进行审核！
+	</message>
+	<message id="approve_passed_plan">
+		{0}维修作业计划审核通过，故障流程已经结束！
+	</message>
+	<message id="create_report">
+		{0}维修作业报告已经提交给你进行审核，等待你的处理！
+	</message>
+	<message id="approve_notpassed_report">
+		{0}维修作业报告审核不通过，请你重新填写故障回复！
+	</message>
+	<message id="approve_transfer_report">
+		{0}维修作业报告已经转审给你，请你进行审核！
+	</message>
+	<message id="approve_passed_report">
+		{0}维修作业报告审核通过，维修作业报告流程已经结束！
+	</message>
+</messages>

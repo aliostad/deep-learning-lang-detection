@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<catalogue xml:lang="it">
+    <message key="About">Riguardo a</message>
+    <message key="Index">Indice</message>
+    <message key="Changes">Cambiamenti</message>
+    <message key="Todo">Cose da fare</message>
+    <message key="Samples">Esempi</message>
+    <message key="Apache document">Apache document</message>
+    <message key="Static content">Contenuto Statico</message>
+    <message key="Wiki page">Pagina Wiki</message>
+    <message key="ihtml page">Pagina ihtml</message>
+    <message key="ehtml page">Pagina ehtml</message>
+    <message key="FAQ">Domande frequenti</message>
+    <message key="Simplifed Docbook">Simplifed Docbook</message>
+    <message key="XSP page">Pagina XSP</message>
+</catalogue>

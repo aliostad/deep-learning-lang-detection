@@ -1,0 +1,44 @@
+/*
+Theme Name: Twenty Seventeen Child
+Description: Demo theme for the course WordPress REST API: Foundations. Adds basic infinite scroll functionality to single posts by automatically loading the previous post on scroll to the bottom through the REST API.
+Author: Morten Rand-Hendriksen
+Author URI: https://lynda.com/mor10
+Template: twentyseventeen
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twenty-seventeen-child
+*/
+
+@import url('../twentyseventeen/style.css');
+
+/* Loading button */
+
+.load-previous {
+    border-top: 1px solid #eee;
+    padding-top: 2em;
+}
+
+.load-previous .nav-subtitle {
+    margin-bottom: 2em;
+}
+
+.load-previous,
+.load-previous .nav-previous {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.load-previous a {
+    margin-top: 2em;
+    padding: 1em 2em;
+    border: 1px solid #eee;
+}
+
+.load-previous a:focus,
+.load-previous a:hover {
+    box-shadow: none;
+    border-color: black;
+}

@@ -1,0 +1,24 @@
+<process-application
+  xmlns="http://www.camunda.org/schema/1.0/ProcessApplication"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  <process-engine name="my-process-engine">
+	<configuration>org.camunda.bpm.engine.impl.cfg.JtaProcessEngineConfiguration</configuration>
+	<datasource>java:jboss/datasources/ProcessEngine</datasource>
+	<properties>
+		<property name="databaseSchemaUpdate">true</property>
+		<property name="jobExecutorActivate">true</property>
+		<property name="transactionManagerJndiName">java:jboss/TransactionManager</property>
+	</properties>
+  </process-engine>
+ 
+  <process-archive name="my-basic-process">
+    <process-engine>my-process-engine</process-engine>
+    <properties>
+      <property name="isDeleteUponUndeploy">true</property>
+      <property name="isScanForProcessDefinitions">true</property>
+    </properties>
+  </process-archive>
+  
+
+</process-application>

@@ -1,0 +1,52 @@
+body {
+	font-family: Helvetica, Trebuchet MS, Arial;
+	font-size: 7rem;
+	margin: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+body > div {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	opacity: 0;
+	transition: opacity 1s;
+	position: absolute;
+	text-align: center;
+}
+
+div > span {
+	transform: translateY(50%);
+    display: block;
+}
+
+@keyframes get-in{
+	from { transform: translateX(100%);}
+	to {transform: translateX(0%);}
+}
+
+@keyframes get-out {
+	from { transform: translateY(0);}
+	to { transform: translateY(-100%);}
+}
+
+.state-1 .show-name-1, 
+.state-2 .show-picture-1,
+.state-3 .show-example-1,
+.state-4 .show-shake-1,
+.state-5 .show-end-1 {
+	animation: get-in 1.5s ease-out;
+	opacity: 1;
+	left: 10%;
+}
+
+.state-2 .show-name-2,
+.state-3 .show-picture-2,
+.state-4 .show-example-2,
+.state-5 .show-shake-2 {
+	animation: get-out 1.5s ease-out;
+	opacity: 0;
+	left: 10%;
+}

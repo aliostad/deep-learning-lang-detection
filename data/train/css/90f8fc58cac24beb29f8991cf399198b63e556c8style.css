@@ -1,0 +1,44 @@
+/**
+ * Colorscheme: http://paletton.com/#uid=a3i0u0k5OTM00++65+84Jt60dhc
+ */
+body {
+  color: #525252;
+  padding-top: 70px;
+}
+
+#top-nav.navbar-default {
+  background-color: #DD2C00;
+  color: #FBE9E7;
+}
+
+#top-nav.navbar-default .navbar-nav>li>a,
+#top-nav.navbar-default .navbar-nav>li>a:hover,
+#top-nav.navbar-default .navbar-nav>li>a:focus,
+#top-nav.navbar-default .navbar-nav>.active>a,
+#top-nav.navbar-default .navbar-nav>.active>a:hover,
+#top-nav.navbar-default .navbar-nav>.active>a:focus,
+#top-nav.navbar-default .navbar-brand {
+  background-color: #DD2C00;
+  color: #FBE9E7;
+}
+
+#top-nav.navbar-default .navbar-nav>.active>a,
+#top-nav.navbar-default .navbar-nav>.active>a:hover,
+#top-nav.navbar-default .navbar-nav>.active>a:focus {
+  font-weight: bold;
+}
+
+
+.norris-sidebar.nav>li>a {
+  background-color: transparent;
+  color: #778B8B;
+}
+
+.norris-sidebar.nav>li>a:hover,
+.norris-sidebar.nav>li>a:focus {
+  text-decoration: none;
+}
+
+.norris-sidebar.nav>li.active>a {
+  font-weight: bold;
+}

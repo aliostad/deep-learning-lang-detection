@@ -1,0 +1,110 @@
+.comments {
+  background-color: #f9c0c0;
+}
+.comments .comments-panel {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.comments .comments-panel .show-comment {
+  height: 300px;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+}
+.comments .comments-panel .show-comment .user-comment {
+  margin: 20px;
+  position: relative;
+  display: inline-block;
+  width: 93%;
+  background-color: #f2d3ee;
+}
+.comments .comments-panel .show-comment .user-comment .avatar {
+  float: left;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  border-radius: 50%;
+  background-color: #f9c0c0;
+  padding: 5px;
+}
+.comments .comments-panel .show-comment .user-comment .avatar img {
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+}
+.comments .comments-panel .show-comment .user-comment .comment {
+  width: 87%;
+  float: right;
+  padding: 10px;
+}
+.comments .comments-panel .show-comment .user-comment .comment .content-comment .rating img {
+  width: 15px;
+  height: 15px;
+}
+.comments .comments-panel .show-comment .user-comment .comment .content-comment .author {
+  font-weight: bold;
+}
+.comments .comments-panel .show-comment .user-comment .comment .content-comment .content {
+  display: inline-block;
+}
+.comments .comments-panel .show-comment .user-comment .comment .content-comment .content p {
+  margin: 0;
+  text-align: justify;
+}
+.comments .comments-panel .write-comment .user-comment {
+  padding: 20px;
+}
+.comments .comments-panel .write-comment .user-comment .comment-form {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  background-color: #ffffff;
+}
+.comments .comments-panel .write-comment .user-comment .comment-form .avatar {
+  float: left;
+  position: relative;
+  left: -20px;
+  top: -20px;
+  border-radius: 50%;
+  background-color: #f9c0c0;
+  padding: 5px;
+}
+.comments .comments-panel .write-comment .user-comment .comment-form .avatar img {
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+}
+.comments .comments-panel .write-comment .user-comment .comment-form .comment {
+  width: 87%;
+  float: right;
+  padding: 10px;
+}
+.comments .comments-panel .write-comment .user-comment .comment-form .comment .content-comment .rating img {
+  width: 15px;
+  height: 15px;
+}
+.comments .comments-panel .write-comment .user-comment .comment-form .comment .content-comment .author {
+  font-weight: bold;
+}
+.comments .comments-panel .write-comment .user-comment .comment-form .comment .content-comment .content {
+  display: inline-block;
+  width: 100%;
+}
+.comments .comments-panel .write-comment .user-comment .comment-form .comment .content-comment .content #input-comment {
+  width: 100%;
+  height: 100px;
+}
+.comments .comments-panel .write-comment .user-comment .comment-form .comment .content-comment .content #input-comment:focus {
+  outline: none !important;
+  border: 2px solid #0099FF;
+}
+.comments .follow {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.comments .follow > div {
+  display: inline-block;
+  float: right;
+  margin-right: 30px;
+}

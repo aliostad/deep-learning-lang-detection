@@ -1,0 +1,15 @@
+#!/bin/sh -e
+./not_peeking.py --interval-size=50 --min-sample-size=200 --max-sample-size=2000 --output=not_peeking_20.png --p-value=0.10 --runs=50 0.20 0.20
+./not_peeking.py --interval-size=50 --min-sample-size=200 --max-sample-size=2000 --output=not_peeking_22.png --p-value=0.10 --runs=50 0.20 0.22
+
+./peeking.py --min-sample-size=200 --sample-size=2000 --output=peeking_20.png --p-value=0.10 --runs=400 0.20 0.20 --peeking-frequency=1
+./peeking.py --min-sample-size=200 --sample-size=2000 --output=peeking_22.png --p-value=0.10 --runs=400 0.20 0.22 --peeking-frequency=1
+
+./thompson.py --output=thompson_20.png --sample-size=2000 --runs=100 0.20 0.20
+./thompson.py --output=thompson_22.png --sample-size=2000 --runs=100 0.20 0.22
+
+./thompson_decision.py --p-value=0.10 --min-sample-size=200 --output=thompson_decision_20.png --sample-size=2000 --runs=200 0.20 0.20
+./thompson_decision.py --p-value=0.10 --min-sample-size=200 --output=thompson_decision_22.png --sample-size=2000 --runs=200 0.20 0.22
+
+./success.py --peeking-frequency=1 --p-value=0.10 --min-sample-size=200 --output=success_16.png --sample-size=14000 --runs=800 0.20 0.16
+./success.py --peeking-frequency=1 --p-value=0.10 --min-sample-size=200 --output=success_22.png --sample-size=14000 --runs=800 0.20 0.22

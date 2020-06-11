@@ -1,0 +1,143 @@
+
+header {
+	background-color: #efefef;
+}
+
+header .title {
+	text-align: center;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+	margin-top: 2rem;
+}
+
+main .refresh {
+	text-align: right;
+	font-style: italic;
+	font-size: 1.2rem;
+	color: grey;
+}
+
+main .service {
+
+}
+
+main .service .card {
+	cursor: pointer;
+}
+
+main .service-featured .card {
+	cursor: initial;
+}
+
+main .service .card:hover {
+	background-color: #efefef;
+}
+
+main .service-featured .card:hover {
+	background-color: initial;
+}
+
+main .service .card-header {
+	padding: 1.5rem;
+}
+
+main .service-featured .card-header {
+	padding: 2rem;
+	padding-bottom: 0px;
+}
+
+main .service .description {
+	width: 80%;
+	display: inline-block;
+}
+
+main .service .screen {
+	width: 100%;
+}
+
+main .service .status {
+	width: 20%;
+	display: inline-block;
+	text-align: right;
+}
+
+main .service .status .color.green {
+	background-color: green;
+}
+
+main .service .status .color.orange {
+	background-color: orange;
+}
+
+main .service .status .color.red {
+	background-color: red;
+}
+
+main .service .status .color.grey {
+	background-color: grey;
+}
+
+main .service .status .time {
+	font-style: italic;
+}
+
+main .service .close {
+	display: none;
+	font-style: normal;
+	position: absolute;
+	margin-top: -20px;
+	font-size: 1.9rem;
+	cursor: pointer;
+}
+
+main .service .close:hover {
+	color: red;
+}
+
+main .service-featured .close {
+	display: initial;
+}
+
+main .service .card-body {
+	display: none;
+}
+
+main .service-featured .card-body {
+	display: block;
+	padding: 2rem;
+	padding-top: 0px;
+}
+
+main .service-featured .show {
+	font-size: 1.3rem;
+	color: blue;
+	cursor: pointer;
+}
+
+main .service-featured .content {
+	display: none;
+}
+
+footer {
+	background-color: #efefef;
+}
+
+footer p {
+	padding-top: 1rem;
+	font-style: italic;
+}
+
+footer p a,
+footer p a:hover {
+	color: grey;
+}

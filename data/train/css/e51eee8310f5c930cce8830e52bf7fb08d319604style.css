@@ -1,0 +1,113 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+
+}
+a:hover { text-decoration: none }
+.single-service-box-bg{
+    background-image: url(../img/service-2.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-color: #ddd;
+    height: 250px;
+}
+.single-service-box-bg.bg2{
+    background-image: url(../img/service-3.jpg);
+}
+.single-service-box-bg.bg3{
+    background-image: url(../img/service-1.jpg);
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+.section-title h2 {
+  color: #222222;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.section-title h2 span {
+  color: #1cc9ce;
+}
+.section-title {
+  color: #848484;
+  margin-bottom: 60px;
+  font-size: 16px;
+}
+.single-service-box-bg i {
+  height: 80px;
+  width: 80px;
+  background: #26395a;
+  display: block;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -40px;
+  bottom: -40px;
+  border: 5px solid #fff;
+  transition: 0.3s;
+}
+.single-service-box-bg {
+  position: relative;
+  z-index: 1;
+}
+.single-service-box-bg i:before {
+  margin: 0;
+  line-height: 80px;
+  font-size: 50px;
+}
+.service-details {
+  text-align: center;
+  transition: 0.3s;
+}
+.service-details h4 {
+  font-weight: 400;
+  color: #222222;
+  padding: 26px;
+  padding-top: 50px;
+  margin: 0;
+  transition: 0.3s;
+}
+.single-service-box {
+  border: 2px solid #e5e5e5;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+.single-service-box:hover .service-details {
+  background: #26395a;
+}
+.single-service-box:hover .service-details h4 {
+  color: #fff;
+}
+.single-service-box:hover .single-service-box-bg i {
+  background: #1cc9ce;
+  border-color: #26395a;
+}

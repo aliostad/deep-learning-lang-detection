@@ -1,0 +1,14 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\users\todor gospodinov\desktop\magicballadvisor - copy - copy - copy - copy\magicballadvisor\magicballadvisor.windowsphone\obj\debug\intermediatexaml\magicballadvisor.windowsphone.exe" HashGuid="78a69d09-0626-31af-f099-0d0c63cac657" />
+    <ReferenceAssembly PathName="c:\users\todor gospodinov\desktop\project\magicballadvisor - copy - copy - copy - copy - copy - copy\packages\mvvmlightlibs.5.0.2.0\lib\wpa81\galasoft.mvvmlight.dll" HashGuid="da07be64-1093-25cd-c992-377d44b6dd02" />
+    <ReferenceAssembly PathName="c:\users\todor gospodinov\desktop\project\magicballadvisor - copy - copy - copy - copy - copy - copy\packages\mvvmlightlibs.5.0.2.0\lib\wpa81\galasoft.mvvmlight.extras.dll" HashGuid="28bb2089-c7a4-73bb-7a72-1ea8b02698b0" />
+    <ReferenceAssembly PathName="c:\users\todor gospodinov\desktop\project\magicballadvisor - copy - copy - copy - copy - copy - copy\packages\mvvmlightlibs.5.0.2.0\lib\wpa81\galasoft.mvvmlight.platform.dll" HashGuid="54c1f1ed-b921-337f-8ad6-f2d8c553df06" />
+    <ReferenceAssembly PathName="c:\users\todor gospodinov\desktop\project\magicballadvisor - copy - copy - copy - copy - copy - copy\packages\commonservicelocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\microsoft.practices.servicelocation.dll" HashGuid="89de7f80-26d8-a17c-5ad9-b855f81ea5b2" />
+    <ReferenceAssembly PathName="c:\users\todor gospodinov\desktop\project\magicballadvisor - copy - copy - copy - copy - copy - copy\magicballadvisor\libs\parse.dll" HashGuid="4aa23e2f-e4a0-423c-41b6-d3a8bf370a51" />
+    <ReferenceAssembly PathName="c:\users\todor gospodinov\desktop\project\magicballadvisor - copy - copy - copy - copy - copy - copy\magicballadvisor\libs\parse.winrt.dll" HashGuid="686a4480-5b84-291b-04f2-3ed7db81ad6f" />
+    <ReferenceAssembly PathName="c:\users\todor gospodinov\desktop\project\magicballadvisor - copy - copy - copy - copy - copy - copy\packages\writeablebitmapex.1.0.14.0\lib\wpa81\writeablebitmapex.winrt.dll" HashGuid="dee9d8f6-a9af-adc9-9daa-4c3d1a5d9570" />
+    <ReferenceAssembly PathName="c:\users\todor gospodinov\desktop\project\magicballadvisor - copy - copy - copy - copy - copy - copy\magicballadvisor\libs\writeablebitmapex_v1.0.14.0\windowsphone8\writeablebitmapexwinphone.dll" HashGuid="25936e97-ec11-17be-6036-6f8176ac9dc2" />
+    <ReferenceAssembly PathName="c:\users\todor gospodinov\desktop\project\magicballadvisor - copy - copy - copy - copy - copy - copy\magicballadvisor\libs\writeablebitmapex_v1.0.14.0\windowsphone8\writeablebitmapexwinphonexnadependant.dll" HashGuid="941a4e09-e734-fec8-5822-dc40db94afcb" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

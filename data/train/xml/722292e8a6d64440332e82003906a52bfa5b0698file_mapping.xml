@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbook>
+	<worksheet name="Sheet1">
+		<section startRow="0" endRow="0" />
+		<loop startRow="1" endRow="1" items="fileList" var="file"  
+			varType="com.isoftstone.tyw.entity.info.Files">
+			<section startRow="1" endRow="1">
+				<mapping row="1" col="0" >file.id</mapping>
+				<mapping row="1" col="1" >file.title</mapping>
+				<mapping row="1" col="2">file.source</mapping>
+				<mapping row="1" col="3">file.personnelTag</mapping>
+				<mapping row="1" col="4">file.areaTag</mapping>
+				<mapping row="1" col="5">file.knowledgeTag</mapping>
+				<mapping row="1" col="6">file.subitemTag</mapping>
+				<mapping row="1" col="7">file.begincreateDate</mapping>
+			</section>
+			<loopbreakcondition>
+				<rowcheck offset="0">
+					<cellcheck offset="0">END</cellcheck>
+				</rowcheck>
+			</loopbreakcondition>
+		</loop>
+	</worksheet>
+</workbook>

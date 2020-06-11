@@ -1,0 +1,150 @@
+/**
+ * Colour codes for templates
+ *
+ *
+ */
+
+/* MISC STYLES
+-------------------------------------------- */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Verdana, Lucida, sans-serif;
+    background-color: #fff;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+}
+
+a img {
+    border: 0;
+}
+
+/* GENERIC POSITIONING
+----------------------------------------- */
+.site-float-left {
+	float: left;
+}
+.site-float-right {
+	float: right;
+}
+.site-float-none {
+	float: none;
+}
+.site-clear-both {
+	clear: both !important;
+}
+
+
+
+/* GENERIC NAVIGATION
+----------------------------------------- */
+.site-nav {
+    list-style: none;
+}
+	.site-nav .site-nav-item {
+		
+	}
+	    .site-nav .site-nav-item .site-nav-link {
+	    	
+	    }
+	    .site-nav .site-nav-link:hover,
+	    .site-nav .current .site-nav-link,
+	    .site-nav .section .site-nav-link {
+	    	
+	    }
+
+	/* MAIN NAV
+	----------------------------------------------- */
+	.site-nav-main {
+	}
+		.site-nav-main .site-nav-item {
+			
+		}
+	    .site-nav-main .site-nav-item.first {
+	    	
+	    }
+		    .site-nav-main .site-nav-item .site-nav-link {
+		    	
+		    }
+		    .site-nav-main .site-nav-item .site-nav-link:hover,
+		    .site-nav-main .current .site-nav-item,
+		    .site-nav-main .section .site-nav-item {
+		    	
+		    }
+	    
+	
+	
+	/* HEADER NAV
+	----------------------------------------------- */
+	.site-nav-header {
+	}
+		.site-nav-header .site-nav-item {
+			
+		}
+	    .site-nav-header .site-nav-item.first {
+	    	
+	    }
+		    .site-nav-header .site-nav-item .site-nav-link {
+		    	
+		    }
+		    .site-nav-header .site-nav-item .site-nav-link:hover,
+		    .site-nav-header .current .site-nav-item,
+		    .site-nav-header .section .site-nav-item {
+		    	
+		    }
+	    
+	
+	/* FOOTER NAV
+	----------------------------------------------- */
+	.site-nav-footer {
+	}
+		.site-nav-footer .site-nav-item {
+			
+		}
+	    .site-nav-footer .site-nav-item.first {
+	    	
+	    }
+		    .site-nav-footer .site-nav-item .site-nav-link {
+		    	
+		    }
+		    .site-nav-footer .site-nav-item .site-nav-link:hover,
+		    .site-nav-footer .current .site-nav-item,
+		    .site-nav-footer .section .site-nav-item {
+		    	
+		    }
+    
+    
+
+/* SITE BORDERS
+----------------------------------------- */
+.site-border-wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+
+	/* HEADER
+	----------------------------------------- */
+	.site-border-header {
+	    padding-top: 20px;
+	}
+	
+	/* BODY
+	----------------------------------------- */
+	.site-border-body {
+	    padding-top: 10px;
+	}
+	
+	
+	/* FOOTER
+	----------------------------------------------- */
+	.site-border-footer {
+	    padding-top: 50px;
+	}

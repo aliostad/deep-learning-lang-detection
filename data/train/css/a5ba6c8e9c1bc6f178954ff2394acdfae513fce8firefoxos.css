@@ -1,0 +1,91 @@
+* {
+    font-family: MozTT, sans-serif;
+}
+
+body {
+    background-color: #F97C17;
+}
+
+header,footer{
+    border: none;
+}
+
+section{
+    background-color: #ffffff;
+}
+
+.li-content, .li-help{
+    background: url('../img/other/pattern.png') repeat scroll left top, url('../img/other/gradient.png') no-repeat scroll left top / 100% 100% transparent;
+    width: 100%;
+    height: 100%;
+}
+
+#load, #save, #snack, #food, #firefoxos, #themedefault {
+    width: 8.8rem;
+}
+
+#li0-content, #li1-content, #li7-content{
+	left: 0%;
+}
+
+ui-progressbar-value ui-widget-header ui-corner-left{
+    height: 0.6rem;
+}
+
+#screen{
+    border: 1px solid #eee;
+}
+
+@media screen and (min-width: 360px){
+    #load, #save, #snack, #food, #firefoxos, #themedefault {
+    width: 9.9rem;
+    }
+}
+
+@media screen and (min-width: 480px){
+    #load, #save, #snack, #food, #firefoxos, #themedefault {
+    width: 13.3rem;
+    }
+}
+
+@media screen and (min-width: 600px){
+    #load, #save, #snack, #food, #firefoxos, #themedefault {
+    width: 16.7rem;
+    }
+}
+
+@media screen and (min-width: 640px){
+    #load, #save, #snack, #food, #firefoxos, #themedefault {
+    width: 17.8rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #load, #save, #snack, #food, #firefoxos, #themedefault {
+    width: 21.4rem;
+    }
+}
+
+@media screen and (min-width: 800px){
+    #load, #save, #snack, #food, #firefoxos, #themedefault {
+    width: 22.3rem;
+    }
+}
+
+@media screen and (min-width: 980px){
+    #load, #save, #snack, #food, #firefoxos, #themedefault {
+    width: 27.4rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    #load, #save, #snack, #food, #firefoxos, #themedefault {
+    width: 28.6rem;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    #load, #save, #snack, #food, #firefoxos, #themedefault {
+    width: 35.8rem;
+    }
+}

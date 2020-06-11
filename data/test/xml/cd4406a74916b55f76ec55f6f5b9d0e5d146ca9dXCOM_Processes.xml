@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Processes>
+		<Row>
+			<Type>PROCESS_XCOM_INITIATIVE</Type>
+			<Description>TXT_KEY_PROCESS_XCOM_INITIATIVE</Description>
+			<Help>TXT_KEY_PROCESS_XCOM_INITIATIVE_HELP</Help>
+			<Strategy>TXT_KEY_PROCESS_XCOM_INITIATIVE_HELP</Strategy>
+			<IconAtlas>INTL_PROJECT_ATLAS_EXP2</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+		</Row>
+	</Processes>
+	<Process_Flavors>
+		<Row>
+			<ProcessType>PROCESS_XCOM_INITIATIVE</ProcessType>
+			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_XCOM_INITIATIVE</ProcessType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_XCOM_INITIATIVE</ProcessType>
+			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_XCOM_INITIATIVE</ProcessType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>25</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_XCOM_INITIATIVE</ProcessType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>40</Flavor>
+		</Row>
+		<Row>
+			<ProcessType>PROCESS_XCOM_INITIATIVE</ProcessType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>40</Flavor>
+		</Row>
+	</Process_Flavors>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_PROCESS_XCOM_INITIATIVE">
+			<Text>XCOM Initiative</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_XCOM_INITIATIVE_HELP">
+			<Text>Contribute this city's [ICON_PRODUCTION] Production towards the XCOM Initiative project.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

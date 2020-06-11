@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repositories-view>
+	<repository id=":pserver:zhaoyifei@192.168.1.200:/website">
+	</repository>
+	<repository id=":pserver:zhaoyifei@192.168.1.200:/callcenter">
+	</repository>
+	<repository id=":pserver:anonymous@anoncvs.forge.jboss.com:/cvsroot/jbpm">
+	</repository>
+	<repository id=":pserver:anonymous@cvs.sourceforge.net:/cvsroot/springframework">
+	</repository>
+	<repository name="MyEclipse Examples" id=":pserver:anonymous@examples.myeclipseide.com:/home/cvs/public/myeclipse/examples">
+	</repository>
+	<repository id=":pserver:zhaoyifei@192.168.1.200:/excellence">
+	</repository>
+	<repository id=":pserver:zhaoyifei@192.168.1.200:/cc">
+	</repository>
+	<repository id=":pserver:zhaoyifei@192.168.1.200:/java">
+	</repository>
+	<repository id=":pserver:zhaoyifei@192.168.1.200:/oa">
+	</repository>
+	<repository id=":pserver:zhaoyifei@192.168.1.200:/forum">
+	</repository>
+</repositories-view>

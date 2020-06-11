@@ -1,0 +1,19 @@
+#!/bin/sh -e
+
+shopt -s nullglob
+
+start_systemd_modules_load () {
+	[ -z "${UHU_PKG_QUIET+x}" ] && echo -n "  Restart systemd-modules-load service ..."
+	systemctl start systemd-modules-load || :
+	true > /var/lib/uhu-pkg/systemd-modules-load
+	while [ ! /var/lib/uhu-pkg/systemd-modules-load -ot /var/lib/dpkg/info \
+	     -a ! /var/lib/uhu-pkg/systemd-modules-load -nt /var/lib/dpkg/info ]; do
+		sleep 0.1
+		true > /var/lib/uhu-pkg/systemd-modules-load
+	done
+	[ -z "${UHU_PKG_QUIET+x}" ] && echo
+}
+
+if [ "$1" = "systemd" -o "$1" = "+" ] ||  grep -q '^/etc/modules-load.d/' /var/lib/dpkg/info/"$1".list; then
+	start_systemd_modules_load
+fi

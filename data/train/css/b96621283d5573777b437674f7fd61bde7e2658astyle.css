@@ -1,0 +1,32 @@
+.tab-pane {
+	padding: 10px;
+	padding-right:15px;
+}
+.panel-group .panel {
+	border-radius:0px;
+}
+.roleTabModel a {
+	text-decoration:none;
+}
+.roleTabModel label {
+	width: 100%;
+	font-weight: normal;
+	margin: 0px;
+}
+.roleTabModel .list-group-item {
+	width:45%;
+	float:left;
+	margin:5px;
+}
+.roleTabModel input[name=checkAll] {
+	margin: 13px;
+}
+.roleTabModel .panel-heading .accordion-toggle:after {
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: grey;         /* adjust as needed */
+}
+.roleTabModel .panel-heading .accordion-toggle.collapsed:after {
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+}

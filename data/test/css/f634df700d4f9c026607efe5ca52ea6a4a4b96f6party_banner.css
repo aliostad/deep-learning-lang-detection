@@ -1,0 +1,67 @@
+@charset "gb2312";
+/* CSS Document of party_banner.html */
+/*banner*/
+.banner{
+	background-image:url(../images/party_banner_bg.gif); background-repeat:repeat-x;
+}
+
+/*main_nav*/
+.main_nav {
+	width:1000px;
+	height:29px;
+	margin:0 auto;
+	background:url(../images/nav_bg.gif) left top repeat-x;
+}
+.main_nav ul {
+	list-style:none;
+}
+
+.main_nav ul li {
+	float:left;
+	display:block;
+}
+
+.main_nav .nav_split {
+	height:14px;
+	margin:7px 0 2px 0;
+	width:1px;
+	background-color:#FFFFFF;
+}
+
+.main_nav .nav_text {
+	color:#FFFFFF;
+	text-align:center;
+	height:20px;
+	padding:7px 0 2px 0;
+	width:64px;
+}
+
+.main_nav .nav_text a:link {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.main_nav .nav_text a:visited {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.main_nav .nav_text a:hover {
+	color:#FFFFFF;
+	text-decoration:none;
+	border-bottom:1px solid #FFFFFF;
+}
+
+.main_nav .nav_text a:active {
+	color:#FF0000;
+	text-decoration:none;
+	border-bottom:1px solid #FF0000;
+}
+
+.main_nav .nav_right_circle {
+	background:url(../images/nav_party_right_circle.gif) left top no-repeat;
+	width:7px;
+	height:29px;
+}
+/*end main_nav*/
+/*end banner*/

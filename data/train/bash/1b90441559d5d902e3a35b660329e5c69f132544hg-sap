@@ -1,0 +1,47 @@
+#!/bin/bash
+
+if hg help phase >/dev/null 2>&1; then
+	HAS_PHASE=1
+fi
+
+squash() {
+	local WORKING_REPO="$1"
+	local PUBLISHING_REPO="$2"
+
+	local SQUASHING_REPO="${WORKING_REPO}-squasing"
+	local TEMPLATE='{node|short}\n'
+	if [[ ! -d "$SQUASHING_REPO" ]]; then
+		hg init "$SQUASHING_REPO"
+		hg init "$PUBLISHING_REPO"
+		local MFROM=$(hg -R "$WORKING_REPO" log -r 1 --template "$TEMPLATE")
+		local MTO=$(hg -R "$WORKING_REPO" tip --template "$TEMPLATE")
+		local DEST=0
+	else
+		local MFROM=$(hg -R "$WORKING_REPO" log -r "children(last_squashed)" --template "$TEMPLATE")
+		local MTO=$(hg -R "$WORKING_REPO" tip --template "$TEMPLATE")
+		local DEST=$(hg -R "$SQUASHING_REPO" tip --template "$TEMPLATE")
+	fi
+	if [[ -z "$MFROM" ]]; then
+		echo "*** Nothing to squash!"
+		exit
+	fi
+	local LOGFILE="$SQUASHING_REPO/.hg/squasing-$MFROM-$MTO.log"
+	echo -n "*** Squashing '$( basename "$WORKING_REPO" )' revs $MFROM:$MTO in '$( basename "$PUBLISHING_REPO" )'... " >&2
+	(
+		set -ex
+		hg -R "$SQUASHING_REPO" pull "$WORKING_REPO"
+		[[ -n "$HAS_PHASE" ]] && hg -R "$SQUASHING_REPO" phase --draft --force 0:tip
+		hg -R "$SQUASHING_REPO" rebase --keep --dest "$DEST" --source "$MFROM" --collapse -l <(echo -e "Squashed from $MFROM to $MTO\n"; hg -R "$WORKING_REPO" log --style changelog -r "$MFROM:$MTO")
+		hg -R "$SQUASHING_REPO" push -r tip "$PUBLISHING_REPO"
+		hg -R "$WORKING_REPO" bookmark -fi last_squashed
+	) > "$LOGFILE" 2>&1
+	if [[ $? -ne 0 ]]; then
+		echo -e " ERORR!\nLogs saved in '$LOGFILE'." >&2
+		exit 1
+	else
+		echo "  done!" >&2
+	fi
+}
+
+squash "$1" "$2"
+

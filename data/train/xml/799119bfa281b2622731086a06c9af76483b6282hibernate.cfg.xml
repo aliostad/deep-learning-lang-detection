@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+ <hibernate-configuration>
+    <session-factory>
+        <mapping class="com.security.app.model.Account"></mapping>
+        <mapping class="com.security.app.model.User"></mapping>
+        <mapping class="com.security.app.model.PersonalInfo"></mapping>
+        <mapping class="com.security.app.model.Role"></mapping>
+        <mapping class="com.security.app.model.Transaction"></mapping>
+        <mapping class="com.security.app.model.TransactionType"></mapping>
+        <!--  <mapping class="com.security.app.model.Authorization"></mapping>
+        <mapping class="com.security.app.model.CrudPermission"></mapping>
+        <mapping class="com.security.app.model.DebitCredit"></mapping>
+        <mapping class="com.security.app.model.Payment"></mapping>
+        <mapping class="com.security.app.model.Privilege"></mapping>
+       
+        <mapping class="com.security.app.model.Transfer"></mapping> 
+        -->
+    </session-factory>
+</hibernate-configuration>

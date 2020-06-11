@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03" xmlns:www.iaas.uni-stuttgart.de="http://www.iaas.uni-stuttgart.de">
+  <process name="www.iaas.uni-stuttgart.de:OrderingProcess">
+    <active>true</active>
+    <retired>false</retired>
+    <process-events generate="all"/>
+    <provide partnerLink="orderingPL">
+      <service name="www.iaas.uni-stuttgart.de:OrderingProcess" port="OrderingProcessPort"/>
+    </provide>
+    <invoke partnerLink="processOrderPL">
+      <service name="www.iaas.uni-stuttgart.de:ProcessOrder" port="ProcessOrderPort"/>
+    </invoke>
+    <invoke partnerLink="processPaymentPL">
+      <service name="www.iaas.uni-stuttgart.de:ProcessPayment" port="ProcessPaymentPort"/>
+    </invoke>
+  </process>
+</deploy>

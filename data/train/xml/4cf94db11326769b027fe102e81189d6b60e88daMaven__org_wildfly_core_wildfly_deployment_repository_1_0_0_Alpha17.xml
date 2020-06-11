@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.wildfly.core:wildfly-deployment-repository:1.0.0.Alpha17">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/wildfly/core/wildfly-deployment-repository/1.0.0.Alpha17/wildfly-deployment-repository-1.0.0.Alpha17.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/wildfly/core/wildfly-deployment-repository/1.0.0.Alpha17/wildfly-deployment-repository-1.0.0.Alpha17-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/wildfly/core/wildfly-deployment-repository/1.0.0.Alpha17/wildfly-deployment-repository-1.0.0.Alpha17-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

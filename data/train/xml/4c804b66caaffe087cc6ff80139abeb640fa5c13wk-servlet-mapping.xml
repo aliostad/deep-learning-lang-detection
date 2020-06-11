@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans>
+	<bean name="mapping" class="org.wikiup.servlet.ServletProcessorContextConfigure">
+		<request-map name="servlet">
+			<servlet-mapping class="org.wikiup.servlet.impl.mapping.ExactlyMatchServletMapping"/>
+			<servlet-mapping class="org.wikiup.servlet.impl.mapping.NamespaceAndSuffixServletMapping"/>
+			<servlet-mapping class="org.wikiup.servlet.impl.mapping.NamespaceServletMapping"/>
+			<servlet-mapping class="org.wikiup.servlet.impl.mapping.SuffixServletMapping"/>
+			<servlet-mapping class="org.wikiup.servlet.impl.mapping.URIRegexpPatternServletMapping"/>
+		</request-map>
+		<request-map name="default-servlet">
+			<servlet-mapping class="org.wikiup.servlet.impl.mapping.ExactlyMatchServletMapping"/>
+			<servlet-mapping class="org.wikiup.servlet.impl.mapping.NamespaceAndSuffixServletMapping"/>
+			<servlet-mapping class="org.wikiup.servlet.impl.mapping.NamespaceServletMapping"/>
+			<servlet-mapping class="org.wikiup.servlet.impl.mapping.SuffixServletMapping"/>
+			<servlet-mapping class="org.wikiup.servlet.impl.mapping.URIRegexpPatternServletMapping"/>
+		</request-map>
+		<request-map name="request">
+			<servlet-mapping class="org.wikiup.servlet.impl.mapping.ByDocumentFileServletMapping"/>
+			<servlet-mapping class="org.wikiup.servlet.impl.mapping.ByPackageNameServletMapping"
+							 host-name="$env.location.hostname" package-name="$env.location.parentname"
+							 class-name="$env.location.filename"/>
+		</request-map>
+	</bean>
+	<bean name="mime-mapping" class="org.wikiup.servlet.beans.MimeTypes"/>
+</beans>

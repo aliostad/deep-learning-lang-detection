@@ -1,0 +1,70 @@
+body { padding-top: 20px; }
+a { text-decoration: none; }
+.container {
+  width: 800px;
+}
+.home {
+  padding-left: 20px;
+  display: block;
+}
+.home > #home {
+  width: 200px;
+  float: left;
+}
+.home > #home_auth_button {
+  float: right;
+  padding-top: 15px;
+}
+.main {
+  padding-top: 20px;
+  width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+.number {
+  width:40px;
+}
+.title {
+  width:300px;
+  text-align: left;
+}
+.category .title {
+  text-align: center;
+}
+.user {
+  width:180px;
+}
+.created_at {
+  width:100px;
+}
+.hits {
+  width:60px;
+}
+.like {
+  width:60px;
+}
+.table {
+  margin: auto;
+  width:800px;
+  font-size:13px;
+  text-align: center;
+}
+.category {
+  text-align: center;
+  font-weight: bold;
+}
+.write_button {
+  padding-top: 10px;
+  width: 770px;
+}
+#write_button {
+  width: 70px;
+  float: right;
+  height: 28px;
+}
+#page_number {
+  padding-left: 30px;
+}
+#sign_up_button > a {
+  font-color: black;
+}

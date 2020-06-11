@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03" xmlns:examples="http://www.jboss.org/bpel/examples" xmlns:sample="http://sample.bpel.org/bpel/sample">
+  <process name="sample:AssignTestProcess">
+    <active>true</active>
+    <retired>false</retired>
+    <process-events generate="all"/>
+    <provide partnerLink="client">
+      <service name="sample:AssignTestProcess" port="AssignTestProcessPort"/>
+    </provide>
+  </process>
+  <process name="examples:TripleHello"/>
+  <process name="examples:scope"/>
+  <process name="examples:Discriminant"/>
+</deploy>

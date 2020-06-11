@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<!--  2014.9.1 add by wxj -->
+	<service xmlns="http://xfire.codehaus.org/config/1.0">
+		<name>CcService</name>
+		<serviceClass>com.cc.validate.service.ICcService</serviceClass>
+		<implementationClass>
+			com.cc.validate.service.CcServiceImpl
+		</implementationClass>
+		<style>wrapped</style>
+		<use>literal</use>
+		<scope>application</scope>
+	</service>
+	<!--  2014.9.27 add by zmx  this WebService is service for Android-->
+	<service xmlns="http://xfire.codehaus.org/config/1.0">
+		<name>CcCommService</name>
+		<serviceClass>com.cc.manage.service.ICcService</serviceClass>
+		<implementationClass>
+			com.cc.manage.service.impl.CcServiceImpl
+		</implementationClass>
+		<style>wrapped</style>
+		<use>literal</use>
+		<scope>application</scope>
+	</service>
+</beans>

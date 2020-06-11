@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>    
+<beans xmlns="http://www.springframework.org/schema/beans"    
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"    
+    xsi:schemaLocation="http://www.springframework.org/schema/beans    
+        http://www.springframework.org/schema/beans/spring-beans.xsd    
+        http://code.alibabatech.com/schema/dubbo    
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd    
+        ">    
+    
+    <dubbo:application name="${dubbo.application.name}" />    
+    
+    <dubbo:registry address="${dubbo.registry.address}" />    
+    
+    <dubbo:protocol name="${dubbo.protocol.name}" port="${dubbo.protocol.port}" />
+    
+    <dubbo:service ref="adminRoleService" interface="cn.threedov.cms.service.AdminRoleService" />
+    <dubbo:service ref="adminService" interface="cn.threedov.cms.service.AdminService" />
+    <dubbo:service ref="rightService" interface="cn.threedov.cms.service.RightService" />
+    <dubbo:service ref="roleRightService" interface="cn.threedov.cms.service.RoleRightService" />
+    <dubbo:service ref="roleService" interface="cn.threedov.cms.service.RoleService" />
+    <dubbo:service ref="adminLogService" interface="cn.threedov.cms.service.AdminLogService" />
+    <dubbo:service ref="testService" interface="cn.threedov.cms.service.TestService" />
+    <dubbo:service ref="userService" interface="cn.threedov.cms.service.UserService" />
+    <dubbo:service ref="versionService" interface="cn.threedov.cms.service.VersionService" />
+    <dubbo:service ref="channelService" interface="cn.threedov.cms.service.ChannelService" />
+    <dubbo:service ref="roomService" interface="cn.threedov.cms.service.RoomService" />
+    <dubbo:service ref="typeService" interface="cn.threedov.cms.service.TypeService" />
+    <dubbo:service ref="verifycodeService" interface="cn.threedov.cms.service.VerifycodeService" />
+    <dubbo:service ref="attentionService" interface="cn.threedov.cms.service.AttentionService" />
+    <dubbo:service ref="messageService" interface="cn.threedov.cms.service.MessageService" />
+    <dubbo:service ref="playRecordService" interface="cn.threedov.cms.service.PlayRecordService" />
+    <dubbo:service ref="redisService" interface="cn.threedov.cms.service.RedisService" />
+    <dubbo:service ref="payService" interface="cn.threedov.cms.service.PayService" />
+    <dubbo:service ref="ChatRoomService" interface="cn.threedov.cms.service.ChatRoomService" />
+</beans>

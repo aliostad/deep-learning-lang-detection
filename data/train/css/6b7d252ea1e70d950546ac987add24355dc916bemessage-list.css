@@ -1,0 +1,112 @@
+/*
+ * 整个私信列表容器的样式
+ */
+#message-main {
+
+}
+
+#message-container {
+  width: 80%;
+}
+
+#message-main p {
+  margin: 0;
+}
+
+/*---------------------------read sift---------------------------*/
+#message-main .read-sift {
+  color: #5a5a5a;
+  font-size: 1.1em;
+}
+
+#message-main .read-sift>span {
+  border-radius: 3px;
+  padding: 6px;
+}
+
+#message-main .read-sift>span:hover {
+  cursor: pointer;
+}
+
+#message-main .read-sift>span.active {
+  background-color: #b5b5b5;
+  color: #ffffff;
+}
+
+
+/*--------------------------单个私信项----------------------------*/
+#message-main .message-table {
+  margin-top: 1.3em;
+
+}
+
+
+
+#message-main .message-table tr {
+  height: 4.9em;
+  border-top: #aaa solid 1px;
+  position: relative;
+}
+
+#message-main .message-table tr .read-image {
+  color: #ff9900;
+}
+
+
+#message-main .message-table tr:last-child {
+  border-bottom: #aaa solid 1px;
+}
+
+/*第一列*/
+#message-main .message-table td.first-col {
+  padding-left: 0;
+}
+
+#message-main .message-table td.first-col img{
+  width: 4em;
+  height: 4em;
+}
+/*第二列*/
+#message-main .message-table td.second-col .username {
+
+}
+
+#message-main .message-table td.second-col .date {
+  color: #999;
+  font-size: .9em;
+}
+
+/*第三列*/
+#message-main .message-table td.third-col {
+  overflow: hidden;
+}
+
+#message-main .message-table td.third-col .title {
+  display: block;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#message-main .message-table td.third-col .title:hover {
+  color: #428bca;
+}
+
+#message-main .message-table td.third-col .content-box {
+  height: 2em;
+
+}
+
+
+
+
+#message-main .message-table td.third-col .content {
+  font-size: .9em;
+  color: #666;
+  display: block;
+  cursor: pointer;
+
+}
+
+#message-main .message-table td.third-col .content:hover {
+  color: #428bca;
+}

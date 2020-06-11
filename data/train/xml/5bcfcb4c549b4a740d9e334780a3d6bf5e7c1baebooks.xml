@@ -1,0 +1,20 @@
+<jedi>
+	<Source name="SampleSource" />
+	<SampleSource class="Class:SampleSource">
+		<LinkTo name="sampleEntryPoint"/>
+	</SampleSource>
+
+	<Source name="SampleDBSource" />
+	<SampleDBSource class="Class:SampleDBSource">
+		<LinkTo name="sampleEntryPoint"/>
+	</SampleDBSource>
+
+	<EntryPoint name="sampleEntryPoint" />
+	<sampleEntryPoint class="Class:SampleEntryPoint">
+		<LinkTo name="sampleResultStage"/>
+	</sampleEntryPoint>
+
+	<Stage name="sampleResultStage"/>
+	<sampleResultStage class="Class:SampleResultStage">		
+	</sampleResultStage>
+</jedi>

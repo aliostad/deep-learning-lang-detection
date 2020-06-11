@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages nplurals="3"
+    plural="(n%10 == 0 || n%10 >= 5 || n/10%10 == 1) ? 2 : n%10==1 ? 0 : 1">
+
+    <message id='wc.captcha.Get_audio'>Прослушать аудио</message>
+    <message id='wc.captcha.Get_image'>Показать картинку</message>
+    <message id='wc.captcha.Internal_error'>Внутренняя ошибка</message>
+    <message id='wc.captcha.Too_often'>Слишком частые попытки</message>
+    <message id='wc.captcha.Wrong_response'>Неправильный ответ</message>
+
+    <message id='wc.common.Update'>Обновить</message>
+
+    <message id='wc.time.days'>дней</message>
+    <message id='wc.time.hours'>часов</message>
+    <message id='wc.time.interval_template'>от ${min} до ${max}</message>
+    <message id='wc.time.minutes'>минут</message>
+    <message id='wc.time.seconds'>секунд</message>
+    <message id='wc.time.weeks'>недель</message>
+
+    <message id='wc.wbi.Cancel'>Отменить</message>
+    <message id='wc.wbi.Download'>Скачать</message>
+    <message id='wc.wbi.Error_empty'>Это поле не может быть пустым</message>
+    <message id='wc.wbi.Error_invalid'>Неверный ввод</message>
+    <message id='wc.wbi.Error_parsing'>Ошибка обработки опций: {1}</message>
+    <message id='wc.wbi.Error_runtime'>Ошибка времени выполнения: {1}</message>
+    <message id='wc.wbi.Error_too_large'>Файл слишком большой</message>
+    <message id='wc.wbi.Finished'>Завершено</message>
+    <message id='wc.wbi.Finished_errors'>Завершено с ошибками</message>
+    <message id='wc.wbi.Inputs'>Входы</message>
+    <message id='wc.wbi.New'>Новое</message>
+    <message id='wc.wbi.Outputs'>Результаты</message>
+    <message id='wc.wbi.Queued'>Отложено</message>
+    <message id='wc.wbi.Run'>Запуск</message>
+    <message id='wc.wbi.State_is'>Состояние: {1}</message>
+    <message id='wc.wbi.View'>Просмотреть</message>
+    <message id='wc.wbi.Working'>В процессе</message>
+
+</messages>
+

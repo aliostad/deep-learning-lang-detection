@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory name="sessionJRS">
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/jrsdbmysql</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.default_schema">jrsdbmysql</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.search.autoregister_listeners">false</property>
+        <mapping resource="Gruppengeb&#252;hren.hbm.xml" />
+        <mapping resource="Adressverbindungen.hbm.xml" />
+        <mapping resource="THonorarabrechnungen.hbm.xml" />
+        <mapping resource="Adressaktionenverweise.hbm.xml" />
+        <mapping resource="Unterrichtstypen.hbm.xml" />
+        <mapping resource="Buchungengeb&#252;hrenverweise.hbm.xml" />
+        <mapping resource="Honorare.hbm.xml" />
+        <mapping resource="Kursgruppen.hbm.xml" />
+        <mapping resource="Staatsverweise.hbm.xml" />
+        <mapping resource="Kurslehrerverweise.hbm.xml" />
+        <mapping resource="Semester.hbm.xml" />
+        <mapping resource="Interessen.hbm.xml" />
+        <mapping resource="Kategorien.hbm.xml" />
+        <mapping resource="Verbindungen.hbm.xml" />
+        <mapping resource="Gebuchtekurse.hbm.xml" />
+        <mapping resource="Buchungen.hbm.xml" />
+        <mapping resource="Schulabschluss.hbm.xml" />
+        <mapping resource="Rechnungen.hbm.xml" />
+        <mapping resource="Differenz.hbm.xml" />
+        <mapping resource="Filter.hbm.xml" />
+        <mapping resource="Schulabschlussverweise.hbm.xml" />
+        <mapping resource="Bankverbindungen.hbm.xml" />
+        <mapping resource="Sch&#252;lerliste.hbm.xml" />
+        <mapping resource="Fachbelegung.hbm.xml" />
+        <mapping resource="Instrumentenverweise.hbm.xml" />
+        <mapping resource="Unterrichtsvertraege.hbm.xml" />
+        <mapping resource="Kurse.hbm.xml" />
+        <mapping resource="Bankeinzugauswertung.hbm.xml" />
+        <mapping resource="Sch&#252;lerinformationen.hbm.xml" />
+        <mapping resource="Tarifbetr&#228;ge.hbm.xml" />
+        <mapping resource="Eingebuehren.hbm.xml" />
+        <mapping resource="Staatsangeh&#246;rigkeit.hbm.xml" />
+        <mapping resource="Adressendruck.hbm.xml" />
+        <mapping resource="Benutzer.hbm.xml" />
+        <mapping resource="THonorarabrechnungenpos.hbm.xml" />
+        <mapping resource="Exportvorschriften.hbm.xml" />
+        <mapping resource="Aktionen.hbm.xml" />
+        <mapping resource="Instrumente.hbm.xml" />
+        <mapping resource="Verweildauer.hbm.xml" />
+        <mapping resource="Turnus.hbm.xml" />
+        <mapping resource="Sch&#252;lerinaktivzeiten.hbm.xml" />
+        <mapping resource="Geb&#252;hren.hbm.xml" />
+        <mapping resource="Sonstigehonorare.hbm.xml" />
+        <mapping resource="Adressgruppenverweise.hbm.xml" />
+        <mapping resource="Lehrerk&#252;rzel.hbm.xml" />
+        <mapping resource="Briefe.hbm.xml" />
+        <mapping resource="Tarif.hbm.xml" />
+        <mapping resource="Konten.hbm.xml" />
+        <mapping resource="Wochenstunden.hbm.xml" />
+        <mapping resource="Adressen.hbm.xml" />
+        <mapping resource="Sql.hbm.xml" />
+        <mapping resource="Interessenverweise.hbm.xml" />
+        <mapping resource="Standardhonorare.hbm.xml" />
+        <mapping resource="Einaus.hbm.xml" />
+        <mapping resource="Kontakte.hbm.xml" />
+        <mapping resource="Rabatte.hbm.xml" />
+        <mapping resource="Anschriften.hbm.xml" />
+        <mapping resource="Zahlungsweisen.hbm.xml" />
+        <mapping resource="Zahlungsarten.hbm.xml" />
+        <mapping resource="Adressaktionen.hbm.xml" />
+        <mapping resource="Adressgruppen.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>

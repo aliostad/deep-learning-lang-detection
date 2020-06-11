@@ -1,0 +1,39 @@
+#!/bin/sh
+# $Id: testdata-8bit,v 1.1 2004/12/19 16:19:12 tom Exp $
+
+# Select one of the "SAMPLE=" lines, to test handling of characters which
+# are nonprinting in a POSIX locale:
+
+case .$1 in
+	# C1 controls
+.8)
+	SAMPLE="€‚ƒ„…†‡ˆ‰Š‹ŒŽ"
+	;;
+.9)
+	SAMPLE="‘’“”•–—˜™š›œžŸ"
+	;;
+
+# Latin-1
+.[aA])
+	SAMPLE=" ¡¢£¤¥¦§¨©ª«¬­®¯"
+	;;
+.[bB])
+	SAMPLE="°±²³´µ¶·¸¹º»¼½¾¿"
+	;;
+.[cC])
+	SAMPLE="ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏ"
+	;;
+.[dD])
+	SAMPLE="ÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞß"
+	;;
+.[eE])
+	SAMPLE="àáâãäåæçèéêëìíîï"
+	;;
+.[fF])
+	SAMPLE="ðñòóôõö÷øùúûüýþÿ"
+	;;
+*)
+	# C0 controls (except a few which are always treated specially by curses):
+	SAMPLE=""
+	;;
+esac

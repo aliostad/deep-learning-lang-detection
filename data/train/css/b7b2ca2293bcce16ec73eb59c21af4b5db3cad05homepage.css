@@ -1,0 +1,38 @@
+.about-container .about-item {
+	padding-right: 2em;
+}
+
+.about-container .choose-item h3 i {
+	margin-right: .4em;
+	
+	color: #F90;
+}
+
+.about-container .choose-item h3 {
+	margin-bottom: 0;
+	
+	font-size: 14px;
+}
+
+.work-container .work-item .thumbnail {
+	margin-bottom: 1.5em;
+}
+
+.service-container .service-item h3 {
+	font-size: 14px;	
+}
+
+.service-container .service-item h3 i {
+	position: relative;
+	top: 3px;
+	
+	margin-right: .25em;
+	
+	color: #F90;
+	
+	font-size: 24px;
+}
+
+h2{
+	line-height:24px;
+}

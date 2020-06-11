@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codesense version="1.0">
+  <set name="com.react.keywords">
+    <completion string="React">
+      <behavior>
+        <append-dynamic>
+          <matched-suffix>(\.)|[^\.]</matched-suffix>
+          <transform-into>(?1::.$1)</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion> 
+  </set>
+  
+  <set name="com.react.methods">  
+    <completion string="Component">
+      <behavior>
+        <append-dynamic>
+          <matched-suffix>(\{)|[^{]</matched-suffix>
+          <transform-into>(?1:: {
+  $1
+})</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="createClass">
+      <behavior>
+        <append-dynamic>
+          <matched-suffix>(\()|[^(]</matched-suffix>
+          <transform-into>(?1::({
+  $1
+}\);)</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="createElement">
+      <behavior>
+        <append-dynamic>
+          <matched-suffix>(\()|[^(]</matched-suffix>
+          <transform-into>(?1::(${1:string/ReactClass}${2:${3:, ${4:[props]}${5:, ${6:[children]}}}}\))</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="cloneElement">
+      <behavior>
+        <append-dynamic>
+          <matched-suffix>(\()|[^(]</matched-suffix>
+          <transform-into>(?1::(${1:ReactElement}${2:${3:, ${4:[props]}${5:, ${6:[children]}}}}\))</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="createFactory">
+      <behavior>
+        <append-dynamic>
+            <matched-suffix>(\()|[^(]</matched-suffix>
+          <transform-into>(?1::(${1:string/ReactClass}\))</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="render">
+      <behavior>
+        <append-dynamic>
+          <matched-suffix>(\()|[^(]</matched-suffix>
+          <transform-into>(?1::(${1:ReactElement}, ${2:DOMElement}${3:, ${4:[callback]}}\))</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="unmountComponentAtNode">
+      <behavior>
+        <append-dynamic>
+          <matched-suffix>(\()|[^(]</matched-suffix>
+          <transform-into>(?1::(${1:DOMElement}\))</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="renderToString">
+      <behavior>
+        <append-dynamic>
+          <matched-suffix>(\()|[^(]</matched-suffix>
+          <transform-into>(?1::(${1:ReactElement}\))</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="renderToStaticMarkup">
+      <behavior>
+        <append-dynamic>
+          <matched-suffix>(\()|[^(]</matched-suffix>
+          <transform-into>(?1::(${1:ReactElement}\))</transform-into>        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="isValidElement">
+      <behavior>
+        <append-dynamic>
+          <matched-suffix>(\()|[^(]</matched-suffix>
+          <transform-into>(?1::($1\))</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="findDOMNode">
+      <behavior>
+        <append-dynamic>
+          <matched-suffix>(\()|[^(]</matched-suffix>
+          <transform-into>(?1::(${1:ReactComponent}\))</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="DOM"></completion>
+    <completion string="PropTypes"></completion>
+    <completion string="initializeTouchEvents">
+      <behavior>
+        <append-dynamic>
+            <matched-suffix>(\()|[^(]</matched-suffix>
+          <transform-into>(?1::(${1:true}\))</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="Children"></completion>
+    <completion string="addons"></completion>
+  </set>
+    
+</codesense>

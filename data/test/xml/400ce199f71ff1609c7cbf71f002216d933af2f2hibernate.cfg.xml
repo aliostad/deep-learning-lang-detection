@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+    <hibernate-configuration>  
+      
+        <session-factory>  
+      
+            <!-- Database connection settings -->  
+        <!--    <property name="connection.url">jdbc:sqlserver://107.180.71.40:49170;database=KSBCL;instanceName=MSSQLSERVER</property>
+    <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+    <property name="connection.username">sa</property>
+    <property name="connection.password">ksbc@123</property>
+    <property name="dialect">org.hibernate.dialect.SQLServerDialect</property>
+          
+            <property name="connection.pool_size">1</property>  
+     <property name="hibernate.default_schema">KSBCL</property>
+          SQL dialect  
+            <property name="dialect">org.hibernate.dialect.SQLServer2005Dialect</property>  
+      
+            Echo all executed SQL to stdout  
+           <property name="show_sql">true</property>  
+      
+            Drop and re-create the database schema on startup  
+            <property name="hbm2ddl.auto">update</property>  
+      
+        -->
+        
+             <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://139.59.34.42:3306/?user=root</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">ksbc@123</property>
+        
+      
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.default_schema">account_software</property> 
+      
+       <property name="hibernate.hbm2ddl.auto">update</property> 
+        <property name="show_sql">true</property> 
+         
+       
+                   <mapping class="com.KSBC.Bean.DomainLoginBean"></mapping>  
+            
+      <mapping class="com.KSBC.Bean.ReceiptDeleteTable"></mapping> 
+ 
+       <mapping class="com.KSBC.Bean.Step1RegistrationForm"></mapping>
+          <mapping class="com.KSBC.Bean.Step2RegistrationForm"></mapping>
+            <mapping class="com.KSBC.Bean.Step3RegistrationForm"></mapping>
+             <mapping class="com.KSBC.Bean.RegistrationFormBean"></mapping>
+      
+             <mapping class="com.KSBC.Bean.FileUploadBean"></mapping> 
+            <mapping class="com.KSBC.Bean.ValidatedPayedRegistrationChallan"></mapping>  
+            <mapping class="com.KSBC.Bean.AbsentBean"></mapping> 
+             <mapping class="com.KSBC.Bean.ScheduleConfirmationBean"></mapping>  
+             <mapping class="com.KSBC.Bean.ScheduleBean"></mapping>
+             <mapping class="com.KSBC.Bean.DateScheduleForInterviewBean"></mapping>  
+             <mapping class="com.KSBC.Bean.ScheduleInterviewListBean"></mapping>  
+              <mapping class="com.KSBC.Bean.ValidatedFinalBean"></mapping>   
+               <mapping class="com.KSBC.Bean.FeeStructure"></mapping>   
+               
+              <mapping class="com.KSBC.Bean.EligibleKARChangesConfirm"></mapping> 
+              <mapping class="com.KSBC.Bean.EligibleKARChanges"></mapping> 
+               <mapping class="com.KSBC.Bean.EligibleKARChangescompleted"></mapping>  
+                <mapping class="com.KSBC.Bean.LifeTimeMembership"></mapping> 
+                <mapping class="com.KSBC.Bean.FiveHundreadPayedAdvocateBean"></mapping> 
+                <mapping class="com.KSBC.Bean.ThousandPayedAdvocateBean"></mapping>
+                <mapping class="com.KSBC.Bean.BillingStatusKAR"></mapping>  
+              <mapping class="com.KSBC.Bean.REGNumberCreation23"></mapping>    
+                <mapping class="com.KSBC.Bean.KARNumberCreation"></mapping>   
+                <mapping class="com.KSBC.Bean.AcceptedCandidate"></mapping>   
+            
+                <mapping class="com.KSBC.Bean.CashSectionMonthlyReport"></mapping> 
+                <mapping class="com.KSBC.Bean.CashSectionMonthlyReportFlow"></mapping> 
+                 <mapping class="com.KSBC.Bean.KSBCMiscReceiptBean"></mapping>  
+       <mapping class="com.KSBC.Bean.EnrollmentNewMemberBean"></mapping>
+                <mapping class="com.KSBC.Bean.CashSectionMonthlyReportDone"></mapping> 
+              <mapping class="com.KSBC.Bean.BCI_FDSBean"></mapping> 
+                <mapping class="com.KSBC.Bean.KAWFLateWelfareFundBean"></mapping> 
+              <mapping class="com.KSBC.Bean.KAWFMiscReceiptBean"></mapping> 
+                  <mapping class="com.KSBC.Bean.KSBCMiscReceiptBean"></mapping> 
+                 <mapping class="com.KSBC.Bean.IndividualStampBean"></mapping>
+                 <mapping class="com.KSBC.Bean.AssociationStampBean"></mapping> 
+                
+                    
+                 <mapping class="com.KSBC.Bean.COPTable"></mapping>    
+               <mapping class="com.KSBC.Bean.Tappal_Inworld"></mapping>    
+                  <mapping class="com.KSBC.Bean.Tappal_Outworld"></mapping>   
+                   <mapping class="com.KSBC.Bean.TappalAssertTable"></mapping> 
+                  <mapping class="com.KSBC.Bean.DC_Committee"></mapping> 
+                  
+                  <mapping class="com.KSBC.Bean.StampSectionIndividualBean"></mapping> 
+                  <mapping class="com.KSBC.Bean.StampSectionAssociationBean"></mapping>
+                  
+                   
+                    
+        </session-factory>  
+      
+    </hibernate-configuration>  

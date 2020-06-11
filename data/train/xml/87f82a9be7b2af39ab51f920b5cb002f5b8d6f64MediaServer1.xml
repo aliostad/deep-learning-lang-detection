@@ -1,0 +1,17 @@
+<device>
+    <serviceList>
+        <service>
+		<Optional/>
+            <serviceType>urn:schemas-upnp-org:service:AVTransport:1</serviceType>
+			<serviceId>AVTransport</serviceId>
+        </service>
+        <service>
+            <serviceType>urn:schemas-upnp-org:service:ContentDirectory:1</serviceType>
+			<serviceId>ContentDirectory</serviceId>
+        </service>
+        <service>
+            <serviceType>urn:schemas-upnp-org:service:ConnectionManager:1</serviceType>
+			<serviceId>ConnectionManager</serviceId>
+        </service>
+    </serviceList>
+</device>

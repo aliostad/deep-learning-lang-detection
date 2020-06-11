@@ -1,0 +1,40 @@
+body {
+	background: #f2f2f2;
+	font-family: '함초롬돋움';
+	font-size: 16px;
+	text-align: center;
+	margin: 0;
+}
+#wrapper{
+	padding-top: 30px;
+}
+#write_post{
+	width: 90%;
+	margin: auto;
+}
+#title{
+	float: left;
+	width: 100%;
+	padding: 5px;
+	border: 1px solid #737373;
+	margin-bottom: 10px;
+	font-family: '함초롬돋움';
+}
+#content{
+	float: left;
+	width: 100%;
+	height: 200px;
+	overflow: auto;
+	padding: 5px;
+	border: 1px solid #737373;
+	margin-bottom: 10px;
+	font-family: '함초롬돋움';
+}
+#write_btn{
+	padding: 5px 8px;
+	border: 0;
+	background: #689470;
+	color: white;
+	font-family: '함초롬돋움';
+}
+

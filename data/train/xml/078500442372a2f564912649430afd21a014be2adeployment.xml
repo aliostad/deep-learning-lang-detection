@@ -1,0 +1,65 @@
+<?xml version='1.0'?>
+ <!DOCTYPE platform SYSTEM "http://simgrid.gforge.inria.fr/simgrid.dtd">
+  <platform version="3">
+
+  <process host="MetaSched" function="metaSched">
+    <argument value="Batch0"/>
+    <argument value="Batch1"/>     
+    <argument value="Batch2"/>
+  </process> 
+  
+  <!-- Cluster 0 -->
+  <process host="Batch0" function="sed">
+    <argument value="MetaSched"/>
+    <argument value="Batch0"/>
+    <argument value="100"/> <!-- waiting time -->
+    <argument value="0"/> <!-- list of services -->
+  </process>      
+  <process host="Batch0" function="SB_batch">
+    <argument value="Node0_0"/>
+    <argument value="Node0_1"/>     
+    <argument value="Node0_2"/>
+    <argument value="Node0_3"/>
+    <argument value="Node0_4"/>
+  </process> 
+  <process host="Node0_0" function="SB_node"/>
+  <process host="Node0_1" function="SB_node"/>
+  <process host="Node0_2" function="SB_node"/>
+  <process host="Node0_3" function="SB_node"/>
+  <process host="Node0_4" function="SB_node"/>
+  
+  <!-- Cluster 1 -->
+  <process host="Batch1" function="sed">
+    <argument value="MetaSched"/>
+    <argument value="Batch1"/>
+    <argument value="100"/>
+    <argument value="0"/>
+  </process>      
+  <process host="Batch1" function="SB_batch">
+    <argument value="Node1_0"/>
+    <argument value="Node1_1"/>     
+    <argument value="Node1_2"/>
+    <argument value="Node1_3"/>
+    <argument value="Node1_4"/>
+  </process> 
+  <process host="Node1_0" function="SB_node"/>
+  <process host="Node1_1" function="SB_node"/>
+  <process host="Node1_2" function="SB_node"/>
+  <process host="Node1_3" function="SB_node"/>
+  <process host="Node1_4" function="SB_node"/>
+  
+  <!-- Cluster 2 -->
+  <process host="Batch2" function="sed">
+    <argument value="MetaSched"/>
+    <argument value="Batch2"/>
+    <argument value="100"/>
+    <argument value="0"/>
+  </process>      
+  <process host="Batch2" function="SB_batch">
+    <argument value="Node2_0"/>
+    <argument value="Node2_1"/>    
+  </process>
+  <process host="Node2_0" function="SB_node"/>
+  <process host="Node2_1" function="SB_node"/>
+  
+</platform>

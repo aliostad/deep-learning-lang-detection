@@ -1,0 +1,10 @@
+* { margin: 0; padding: 0; }
+body { font: 13px/18px 'Lucida Sans Unicode', Tahoma, Sans-serif; background: #f8f8f8; }
+@font-face { font-family: Klavika; src: url('../font/KlavikaNX-Light.otf'); }
+#load-wrap { width: 272px; height: 208px; margin: 125px auto 0; }
+#load-wrap > p { margin-top: 31px; text-align: center; }
+#load-wrap > p a { color: #4f78cf; }
+#nxloader { width: 136px; height: 137px; margin: 0 auto; background: #e7e7e7; position: relative; }
+#canvas { width: 136px; height: 137px; position: absolute; }
+#loadfg { width: 100%; height: 100%; background: transparent url(../img/load-fg.png) 0 0 no-repeat; position: absolute; }
+/*#loadtext { font-family: Klavika, sans-serif; font-size: 11px; color: #0a3255; letter-spacing: 1px; position: absolute; top: 91px; left: 44px; }*/

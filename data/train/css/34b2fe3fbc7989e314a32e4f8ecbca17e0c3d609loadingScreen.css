@@ -1,0 +1,33 @@
+#loadingImage{
+    height: 520px;
+    width: 1024px;
+    background-size: 1024px 520px;
+    background-image:url(../images/loadScreen.png);
+    border: 2px solid #000000;
+    position:absolute;  
+}
+
+#loadButton{
+    background-color: #32CD32;
+    height: 60px;
+    width: 220px;
+    margin-top: 402px;
+    margin-left: 335px;
+    font-size: 28px;
+    font-family: Lucida Console;
+    border: 2px solid #000000;
+    display: none;
+    position:absolute;
+}
+
+#story{
+    width: 1024px;
+    height: 80px;
+    margin-top:520px;
+    border: 2px solid #000000;
+    background-color: #CCFFFF;
+    font-size: 16px;
+    font-family: Lucida Console;
+    text-align:center;
+    position:absolute;
+}

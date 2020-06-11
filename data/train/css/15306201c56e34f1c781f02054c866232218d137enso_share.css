@@ -1,0 +1,48 @@
+/* Hide or show link text */
+.follow-link-text, .service-links-text { vertical-align: middle; padding: 0 10px; font-weight: bold; }
+
+/* Get rid of default Follow background image icon */
+.follow-links a.follow-link { background-image: none; }
+
+/* Set icon size */
+.follow-link-icon, .service-links-icon { font-size: 2em; width: 32px; vertical-align: middle; }
+
+/* Common icon styles */
+.follow-links a, .service-links a { -moz-border-radius-topleft: 10px; -webkit-border-top-left-radius: 10px; border-top-left-radius: 10px; -moz-border-radius-bottomright: 10px; -webkit-border-bottom-right-radius: 10px; border-bottom-right-radius: 10px; -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; -moz-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; -o-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; display: block; padding: 10px; margin: 5px; color: white; text-align: center; float: left; }
+.follow-links a:hover, .follow-links a:focus, .service-links a:hover, .service-links a:focus { text-decoration: none; color: black; }
+
+/* Remove left and right margins from either end of icon set */
+.follow-link-wrapper:first-child a, .service-links ul.links li:first-child a { margin-left: 0; }
+.follow-link-wrapper:last-child a, .service-links ul.links li:last-child a { margin-right: 0; }
+
+/* Follow module icon styles and states */
+a.follow-link { background-color: #666666; }
+a.follow-link:hover, a.follow-link:focus { background-color: #999999; }
+
+/* Service Links module icon styles and states */
+a.service-links-delicious { background-color: #0b79e5; }
+a.service-links-delicious:hover, a.service-links-delicious:focus { background-color: #5facf7; }
+a.service-links-digg { background-color: #356aa0; }
+a.service-links-digg:hover, a.service-links-digg:focus { background-color: #6d9dce; }
+a.service-links-facebook { background-color: #3b5998; }
+a.service-links-facebook:hover, a.service-links-facebook:focus { background-color: #718dc8; }
+a.service-links-google-plus { background-color: #dd4b39; }
+a.service-links-google-plus:hover, a.service-links-google-plus:focus { background-color: #ec9a90; }
+a.service-links-linkedin { background-color: #007bb6; }
+a.service-links-linkedin:hover, a.service-links-linkedin:focus { background-color: #1db6ff; }
+a.service-links-pinterest { background-color: #cb2027; }
+a.service-links-pinterest:hover, a.service-links-pinterest:focus { background-color: #e76a6f; }
+a.service-links-reddit { background-color: #ff4006; }
+a.service-links-reddit:hover, a.service-links-reddit:focus { background-color: #ff8e6c; }
+a.service-links-stumbleupon { background-color: #eb4923; }
+a.service-links-stumbleupon:hover, a.service-links-stumbleupon:focus { background-color: #f39681; }
+a.service-links-twitter { background-color: #00aced; }
+a.service-links-twitter:hover, a.service-links-twitter:focus { background-color: #54d0ff; }
+a.service-links-yahoo { background-color: #7b0097; }
+a.service-links-yahoo:hover, a.service-links-yahoo:focus { background-color: #ce00fd; }
+a.service-links-print { background-color: burlywood; }
+a.service-links-print:hover, a.service-links-print:focus { background-color: #f4e7d7; }
+a.service-links-printmail { background-color: burlywood; }
+a.service-links-printmail:hover, a.service-links-printmail:focus { background-color: #f4e7d7; }
+a.service-links-printpdf { background-color: burlywood; }
+a.service-links-printpdf:hover, a.service-links-printpdf:focus { background-color: #f4e7d7; }

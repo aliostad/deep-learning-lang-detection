@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <SimulationDescriptor Name="AffinityMappingBrokenLords"    Type="AffinityMapping">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMappingRageWizards"    Type="AffinityMapping">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMappingMadFairies"     Type="AffinityMapping">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMappingNecrophages"    Type="AffinityMapping">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMappingVaulters"       Type="AffinityMapping">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMappingRovingClans"    Type="AffinityMapping">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMappingDrakkens"       Type="AffinityMapping">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMappingCultists"       Type="AffinityMapping">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMappingMezari"         Type="AffinityMapping">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMappingTutorial"       Type="AffinityMapping">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMappingUrces"          Type="AffinityMapping">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMappingErycis"         Type="AffinityMapping">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMappingCeratan"        Type="AffinityMapping">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMappingKazanji"        Type="AffinityMapping">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMappingBos"            Type="AffinityMapping">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMappingSilics"         Type="AffinityMapping">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMappingDelvers"        Type="AffinityMapping">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMappingSistersOfMercy" Type="AffinityMapping">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMappingHaunts"         Type="AffinityMapping">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMappingJotus"          Type="AffinityMapping">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMappingHurnas"         Type="AffinityMapping">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMappingGauran"         Type="AffinityMapping">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMappingBirdhive"       Type="AffinityMapping">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMappingGeldirus"       Type="AffinityMapping">
+  </SimulationDescriptor>
+
+</Datatable>

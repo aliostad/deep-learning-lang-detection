@@ -1,0 +1,45 @@
+﻿@using MMApp.Web.Helpers
+@model IEnumerable<MMApp.Domain.Models.Instrument>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>List of Instruments</h2>
+<p>
+    @Html.ActionLink("Add Instrument", "AddInstrument", "Instrument")
+</p>
+
+@Html.ValidationSummary(true)
+
+<table>
+    <tr>
+        <th class="width200">
+            @Html.DisplayNameFor(model => model.InstrumentName)
+        </th>
+        <th class="width200">
+            @Html.DisplayNameFor(model => model.Website)
+        </th>
+        <th class="width100">Update</th>
+        <th class="width100">Remove</th>
+    </tr>
+
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.InstrumentName)
+            </td>
+            <td>
+                @Html.WebsiteLink(item.Website, item.InstrumentName)
+            </td>
+            <td>
+                @Html.ActionLink("Update", "UpdateInstrument", "Instrument", new { instrumentId = item.Id}, null)
+            </td>
+            <td>
+                @Html.ActionLink("Remove", "RemoveInstrument", "Instrument", new { instrumentId = item.Id, instrumentName = item.InstrumentName }, new { onclick = "return confirm('Are you sure you wish to delete Genre ( " + item.InstrumentName + " ) ?');"})
+            </td>
+        </tr>
+    }
+
+</table>

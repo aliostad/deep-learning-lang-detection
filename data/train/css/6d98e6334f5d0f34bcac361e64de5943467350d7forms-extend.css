@@ -1,0 +1,124 @@
+.input-prepend,
+.input-append {
+  letter-spacing: -4px;
+}
+.input-prepend .is-prepend,
+.input-append .is-prepend,
+.input-prepend .is-append,
+.input-append .is-append {
+  display: inline-block;
+  padding: 0.3em 0.6em;
+  height: 2em;
+  letter-spacing: normal;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+  border: 1px solid #aaaaaa;
+  background: #eeeeee;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ie7 .input-prepend .is-prepend,
+.ie7 .input-append .is-prepend,
+.ie7 .input-prepend .is-append,
+.ie7 .input-append .is-append {
+  display: inline;
+  zoom: 1;
+}
+.input-prepend .is-prepend,
+.input-append .is-prepend {
+  margin-right: -2px;
+}
+.input-prepend .is-append,
+.input-append .is-append {
+  margin-left: -2px;
+}
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  height: 2em;
+  padding: 0.3em 0.6em;
+  border: 1px solid #b3b3b3;
+  background: #eeeeee;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  color: #222222;
+  text-decoration: none;
+  background: #e5e5e5;
+  border: 1px solid #808080;
+}
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {
+  border: 1px solid #6f6f6f;
+  background: #cccccc;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="file"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+textarea,
+select {
+  padding: 0.3em;
+  height: 2em;
+  border: 1px solid #aaaaaa;
+  background: #ffffff;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  font-weight: normal;
+}
+select {
+  padding: 0;
+  height: auto;
+}
+textarea {
+  width: auto;
+  height: auto;
+  min-height: 4em;
+}
+label {
+  margin-bottom: 5.28px;
+  margin-bottom: 0.33rem;
+}
+input.is-error,
+textarea.is-error,
+select.is-error {
+  border-color: #dc4e44;
+}
+input.is-success,
+textarea.is-success,
+select.is-success {
+  border-color: #46a546;
+}
+input.is-disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+input:focus,
+textarea:focus {
+  border-color: #049cdb;
+  color: #444444;
+}

@@ -1,0 +1,115 @@
+.LoadHistoryChartView
+{
+
+}
+
+.LoadHistoryChartView .svg
+{
+    
+}
+
+.LoadHistoryChartView .bg
+{
+    fill: #162131;
+}
+
+.LoadHistoryChartView .grid line
+{
+    stroke: rgba(255, 255, 255, 0.2);
+    stroke-wdith: 1px;
+}
+
+.LoadHistoryChartView .xaxis line
+{
+    fill: white;
+    stroke: rgb(0, 204, 204);
+    stroke-width: 8px;
+    shape-rendering: crispEdges;
+}
+
+.LoadHistoryChartView .xaxis path
+{
+    fill: none;
+    stroke: none;
+    shape-rendering: crispEdges;
+}
+
+.LoadHistoryChartView .xaxis text
+{
+    fill: #808080;
+    stroke: none;
+    font-size: 12px;
+}
+
+.LoadHistoryChartView .yaxis
+{   
+    stroke-width: 9px;
+}
+
+.LoadHistoryChartView .yaxis line
+{
+    fill: none;
+    stroke: none;
+    shape-rendering: crispEdges;
+}
+
+.LoadHistoryChartView .yaxis path
+{
+    fill: none;
+    stroke: none;
+    shape-rendering: crispEdges;
+}
+
+.LoadHistoryChartView .yaxis text
+{
+    fill: #808080;
+    font-size: 12px;
+    stroke: none;
+}
+
+.LoadHistoryChartView .title
+{
+    fill: white;
+}
+
+.LoadHistoryChartView .xlabel line
+{
+    stroke: rgb(0, 204, 204);
+    stroke-width: 2px;
+}
+.LoadHistoryChartView .ylabel line
+{
+    stroke: rgb(0, 204, 204);
+    stroke-width: 2px;
+}
+
+
+.LoadHistoryChartView .passenger path
+{
+    fill: #82fef1;
+    opacity: 0.2;
+}
+
+.LoadHistoryChartView .passenger .point
+{
+    fill: #f6c233;
+}
+
+.LoadHistoryChartView .passenger .point text
+{
+    font-size: 12px;
+}
+
+.LoadHistoryChartView .passenger .arc
+{
+    fill: #162131
+}
+
+.LoadHistoryChartView .up text
+{
+    font-size: 16px;
+    fill: rgb(0, 204, 204);
+    stroke: none;
+}
+
+

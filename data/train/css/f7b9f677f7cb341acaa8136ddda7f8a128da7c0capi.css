@@ -1,0 +1,81 @@
+@CHARSET 'UTF-8';
+
+.api_class_box
+{
+	width: 800px;
+	margin: 0 auto;
+}
+.api_class
+{
+	border: 2px solid #7793BC;
+	padding: 6px 10px;
+	margin: auto 10px;
+	font-size: 11pt;
+	display: inline;
+	cursor: pointer;
+}
+.api_box
+{
+	margin: 6px;
+}
+.api_list
+{
+	list-style: none;
+}
+.api_list li
+{
+	padding: 8px;
+}
+.api_name
+{
+	background: #8E9090;
+	margin: 3px 0px;
+	padding: 6px;
+}
+.api_arg
+{
+	background: #D6E0E5;
+	padding: 6px;
+}
+.api_arg_title
+{
+	border-left: 3px solid #EB8033;
+	padding: 3px 6px;
+}
+.api_arg_name
+{
+	margin-left: 6px;
+	color: #EA1C48;
+}
+.api_arg_info
+{
+	margin-left: 56px;
+	color: #676C6C;
+}
+.api_result
+{
+	background: #D6E0E5;
+	margin: 3px 0px;
+	padding: 6px;
+}
+.api_result_title
+{
+	border-left: 3px solid #EB8033;
+	padding: 3px 6px;
+}
+.api_result_name
+{
+	margin-left: 6px;
+	color: #EA1C48;
+}
+.api_result_info
+{
+	margin-left: 66px;
+	color: #676C6C;
+}
+.api_info
+{
+	background: #8E9090;
+	margin: 3px 0px;
+	padding: 6px;
+}

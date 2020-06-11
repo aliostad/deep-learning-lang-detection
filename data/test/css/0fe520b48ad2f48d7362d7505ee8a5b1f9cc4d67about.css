@@ -1,0 +1,166 @@
+
+.service-item {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.service-item.service-right .service-icon {
+    float: left;
+    text-align: left;
+    margin-right: 30px;
+}
+.service-item.service-right .service-content {
+    text-align: left;
+}
+.service-item.service-left .service-icon {
+    float: right;
+    text-align: right;
+    margin-left: 30px;
+}
+.service-item.service-left .service-content {
+    text-align: right;
+}
+.service-item .service-content {
+    overflow: hidden;
+}
+.service-item .service-content h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+.service-item .service-icon {
+    margin-top: 15px;
+    width: 80px;
+    height: 80px;
+    display: block;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.service-item .service-icon i {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #d5d5d5;
+    border-radius: 40px;
+    text-align: center;
+    line-height: 80px;
+    color: #2c2c2c;
+    display: block;
+    font-size: 1.89em;
+}
+.service-item:hover .service-icon {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.service-item:hover .service-icon i {
+    color: #000000;
+    border-color: #000000;
+}
+@media screen and (max-width: 768px) {
+    .service-item .service-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        line-height: 60px;
+        font-size: 1.4em;
+    }
+    .service-item:hover .service-icon {
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+    }
+    .service-item.service-right .service-icon {
+        float: none;
+        margin: 0 auto 40px auto;
+    }
+    .service-item.service-right .service-content {
+        text-align: center;
+    }
+    .service-item.service-left .service-icon {
+        float: none;
+        margin: 0 auto 40px auto;
+    }
+    .service-item.service-left .service-content {
+        text-align: center;
+    }
+}
+.top-section {
+    padding-top: 0px;
+    padding-bottom: 300px;
+}
+
+.top-section p {
+    width: 100%;
+}
+.top-section a:hover {
+    border: 2px solid #000000;
+    color: #000000;
+}
+
+
+.staff-member {
+    margin-bottom: 30px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.staff-member img {
+    width: 100%;
+}
+.staff-member .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    visibility: 0;
+    padding: 25px;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.staff-member .overlay .overlay-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.staff-member .overlay .overlay-inner .social-network {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.staff-member .overlay .overlay-inner .social-network li {
+    display: inline;
+    margin-left: 15px;
+}
+.staff-member .overlay .overlay-inner .social-network li a {
+    color: white;
+}
+.staff-member .overlay .overlay-inner span {
+    color: white;
+    font-size: 1.5em;
+    font-family: "Open Sans", serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.staff-member:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.row-title {
+    margin-bottom: 60px;
+}

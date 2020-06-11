@@ -1,0 +1,27 @@
+#!/bin/sh -e
+
+
+RELOADED=
+
+if [ "$1" = configure ]; then
+
+	# Reload pcmcia config files, as this package drops a new one in.
+	if [ -x /etc/init.d/pcmciautils ]; then
+		# this solves the reload error
+		# but... it's necessary this reload??
+		if [ -z "$PCIC" ]; then
+			PCIC=foo invoke-rc.d pcmciautils reload || RELOADED=fail
+		else
+			invoke-rc.d pcmciautils reload || RELOADED=fail
+		fi
+	elif [ -x /etc/init.d/pcmcia ]; then
+		invoke-rc.d pcmcia reload || RELOADED=fail
+	fi
+
+	if [ "$RELOADED" = "fail" ]; then
+		echo "Reloading of pcmcia configuration files failed."
+	fi
+
+	# Uncomment when debian completely drops #HOTPLUG#
+	rmdir /etc/hotplug 2>/dev/null || true
+fi

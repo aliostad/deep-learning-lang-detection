@@ -1,0 +1,80 @@
+#write-module {
+	position: relative;
+	font-family: dotum;
+}
+
+#write-module-map {
+	margin-top: 10px;
+}
+#write-module > #file-uploader-wrapper {
+	position: relative;
+	top: 10px;
+	left: 0;
+	width: 80%;
+}
+
+#write-module > #write-form > #submit-button-group {
+	position: absolute;
+	bottom: 13px;
+	right: 0;
+}
+
+#write-module > #write-form > #submit-button-group input {
+	display:inline-block;
+	background-color: #6d899e;
+	border: 1px solid #465a69;
+	padding: 5px 10px;
+	color: #ffffff;
+	cursor: pointer;
+	font-family: dotum;
+}
+#write-module > #write-form > #submit-button-group input:hover {
+	background-color: #465a69;
+}
+
+/* ÆÄÀÏ ¾÷·Îµå */
+#file_info {
+	margin-top: 10px;
+}
+#file_info > .row {
+	border: 1px solid #d5d5d5;
+	display: inline-block;
+	padding: 3px 5px;
+	border-radius: 3px;
+	background-color: #e6e6e6;
+	margin-bottom: 3px;
+}
+
+#file_info > .row > span {
+	margin-left: 3px;
+	display:inline-block;
+	background-color: #6d899e;
+	border: 1px solid #465a69;
+	padding: 2px 3px;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+#file_info > .row > span:hover {
+	background-color: #465a69;
+}
+
+#file_info > .row > .delete_file {
+	margin-left: 10px;
+}
+
+#file-uploader-wrapper > #file-upload-button-group > .file-upload-button {
+	display:inline-block;
+	background-color: #6d899e;
+	border: 1px solid #465a69;
+	padding: 2px 3px;
+	color: #ffffff;
+	cursor: pointer;
+}
+#file-uploader-wrapper > #file-upload-button-group > .file-upload-button:hover, #file-uploader-wrapper > #file-upload-button-group > .selected {
+	background-color: #465a69;
+}
+
+#file-uploader-wrapper > #file-upload-button-group {
+	margin-bottom: 5px;
+}

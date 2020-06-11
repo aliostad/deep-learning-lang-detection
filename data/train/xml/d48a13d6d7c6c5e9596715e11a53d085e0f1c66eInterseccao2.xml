@@ -1,0 +1,23 @@
+<save arq="/home/adriano/Ubuntu One/workspace/VPE-qGM/VPE-qGM/src/processes/CircuitosFuzzy/Interseccao2.xml" pos="0">
+<process repr="env" tipo="seq" pos="0">
+<process repr="terminicio" x="1143.0" y="1201.0" cor="BLACK"></process>
+<process repr="env" tipo="seq" pos="0">
+<process repr="iterativo" tipo="iterativo" range="0:8:1" acao="parfor" x="1202.0" y="1201.0" cor="BLACK">
+<process repr="conselem" qubits= "3" acao= "(Control1(1),Control1(1),Target1(X))" pos= "0" parametro= "" x="1202.0" y="1201.0" cor="BLACK"></process>
+</process>
+<process repr="env" tipo="seq" pos="0">
+<process repr="env" tipo="nondet1" pos="0">
+<process repr="detproj" parametro=""></process>
+<process repr="iterativo" tipo="iterativo" range="0:8:1" acao="parfor" x="1306.0" y="1135.0" cor="BLACK">
+<process repr="conselem" qubits= "3" acao= "Id,Id,P0" pos= "0" parametro= "" x="1306.0" y="1135.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:8:1" acao="parfor" x="1306.0" y="1266.0" cor="BLACK">
+<process repr="conselem" qubits= "3" acao= "Id,Id,P1" pos= "0" parametro= "" x="1306.0" y="1266.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr= "probability" acao= "QGMAnalyzer" pos= "8" parametro= "Probability" x="1410.0" y="1201.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="termfim" x="1471.0" y="1201.0" cor="BLACK"></process>
+</process>
+</save>

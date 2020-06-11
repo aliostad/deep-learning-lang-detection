@@ -1,0 +1,83 @@
+					#page-title h1 {
+						float: left;
+					}
+					#page-title p {
+						clear: both;
+					}					
+					.service {
+						float: left;
+						
+						width: 100%;
+						
+						text-align: center;
+					}
+					.service-icon-small {					
+						display: inline;
+						padding: 2px 10px;
+						color: #FFF;
+						margin-left: 10px;
+						font-size: 24px;
+						text-align: center;
+						line-height: 30px;
+						
+						background: #F6B322;
+						
+						border-radius: 50px;
+						display: inline-block;
+						text-shadow: 1px 1px 2px rgba(0,0,0,.45);				
+					}
+					.service-icon {
+						
+						display: inline-block;
+						
+						width: 80px;
+						height: 80px;
+						margin: 0 0 .5em;
+						
+						color: #FFF;
+						
+						font-size: 36px;
+						text-align: center;
+						line-height: 80px;
+						
+						background: #F6B322;
+						
+						border-radius: 100px;
+						text-shadow: 1px 1px 2px rgba(0,0,0,.45);
+					}
+					
+					.service-details a {
+						margin-left: 5px;
+					    font-style: oblique;
+					    font-weight: bold;						
+					}
+					.mobility p {
+						margin-bottom: 5px;				
+					}					
+					#service-web-design .service-icon {						
+						background: #222;
+					}
+					.service-web-design-small {
+						background: #222;
+						margin-left: 10px;
+						display: inline-block;
+					}					
+					#service-web-dev .service-icon {
+						background: #888;
+					}
+					.service-web-dev-small {
+						background: #888;
+						margin-left: 10px;
+						display: inline-block;
+					}
+					.service-details h2 i {
+						color: #FF9900;
+					}
+					
+					@media (max-width: 767px) {
+	
+						.service-icon-small {	
+							font-size: 18px;
+						}
+	
+					}

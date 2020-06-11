@@ -1,0 +1,70 @@
+.fs-send-message__table {
+  width: 100%;
+}
+
+.fs-send-message__group {
+  border-top: 1px solid #CACACA;
+  margin: 5px 0;
+  padding: 10px 0;
+  text-align: left;
+  width: 100%;
+}
+
+.fs-send-message__group:first-child {
+  border-top: 0px solid transparent;
+}
+
+.fs-send-message__cell {
+  display: inline-block;
+  padding: 0;
+  vertical-align: top;
+}
+
+.fs-send-message__label {
+  width: 65px;
+}
+
+.fs-send-message__full-width {
+  width: 100%;
+}
+
+.fs-send-message__button {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.fs-send-message__name,
+.fs-send-message__url {
+  display: block;
+  max-width: 360px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fs-send-message__right {
+  float: right;
+}
+
+.fs-send-message__subject {
+  width: 100%;
+}
+
+.fs-send-message__message {
+  max-height: 260px;
+  min-height: 152px;
+  width: 100%;
+}
+
+.fs-send-message__chars-left {
+  text-align: right;
+}
+
+.fs-send-message__error-message {
+  background-color: #FDE3E3;
+  border: 1px solid #FDAEAE;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #9B0A0A;
+  padding: 10px 20px;
+}

@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C31DCA1-6ADC-4914-B166-C5D950454B2F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Business.DataAccess.Contract</RootNamespace>
+    <AssemblyName>Business.DataAccess.Contract</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\Application\IGroupUserRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\Application\IRoleFunctionRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\Application\IRoleGroupRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\Application\IRoleUserRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\Application\IUserRepository.cs" />
+    <Compile Include="Repository\Application\IRoleRepository.cs" />
+    <Compile Include="Repository\Application\IParameterRepository.cs" />
+    <Compile Include="Repository\Application\IGroupRepository.cs" />
+    <Compile Include="Repository\Application\IFunctionRepository.cs" />
+    <Compile Include="Repository\Application\IApplicationRepository.cs" />
+    <Compile Include="Repository\Application\IDataDictionaryRepository.cs" />
+    <Compile Include="Repository\Inventory\IInboundTaskDetailRepository.cs" />
+    <Compile Include="Repository\Inventory\IInboundTaskRepository.cs" />
+    <Compile Include="Repository\Inventory\Views\ICountBillDetailViewRepository.cs" />
+    <Compile Include="Repository\Inventory\IInboundBillAggregateRepository.cs" />
+    <Compile Include="Repository\Inventory\IInboundBillExceptionRepository.cs" />
+    <Compile Include="Repository\Inventory\ITransferDetailBillRepository.cs" />
+    <Compile Include="Repository\Inventory\ITransferBillRepository.cs" />
+    <Compile Include="Repository\Inventory\IStockSnLogRepository.cs" />
+    <Compile Include="Repository\Inventory\IStockSnRepository.cs" />
+    <Compile Include="Repository\Inventory\IStockLogRepository.cs" />
+    <Compile Include="Repository\Inventory\IStockRepository.cs" />
+    <Compile Include="Repository\Inventory\ISortBillDetailRepository.cs" />
+    <Compile Include="Repository\Inventory\ISortBillRepository.cs" />
+    <Compile Include="Repository\Inventory\ISerialNumberRepository.cs" />
+    <Compile Include="Repository\Inventory\IPickWaveRepository.cs" />
+    <Compile Include="Repository\Inventory\IPickBillDetailRepository.cs" />
+    <Compile Include="Repository\Inventory\IPickBillRepository.cs" />
+    <Compile Include="Repository\Inventory\IPackageDetailRepository.cs" />
+    <Compile Include="Repository\Inventory\IPackageRepository.cs" />
+    <Compile Include="Repository\Inventory\IOutboundPlanDetailRepository.cs" />
+    <Compile Include="Repository\Inventory\IOutboundPlanRepository.cs" />
+    <Compile Include="Repository\Inventory\IOutboundBillDetailRepository.cs" />
+    <Compile Include="Repository\Inventory\IOutboundBillRepository.cs" />
+    <Compile Include="Repository\Inventory\IOperationLogRepository.cs" />
+    <Compile Include="Repository\Inventory\ILockLogRepository.cs" />
+    <Compile Include="Repository\Inventory\ILockRepository.cs" />
+    <Compile Include="Repository\Inventory\IInboundPlanDetailRepository.cs" />
+    <Compile Include="Repository\Inventory\IInboundPlanRepository.cs" />
+    <Compile Include="Repository\Inventory\IInboundBillDetailRepository.cs" />
+    <Compile Include="Repository\Inventory\IInboundBillRepository.cs" />
+    <Compile Include="Repository\Inventory\IInboundBatchRepository.cs" />
+    <Compile Include="Repository\Inventory\IDistributionRepository.cs" />
+    <Compile Include="Repository\Inventory\ICountBillDetailRepository.cs" />
+    <Compile Include="Repository\Inventory\ICountBillRepository.cs" />
+    <Compile Include="Repository\Inventory\IBillSnRepository.cs" />
+    <Compile Include="Repository\Inventory\Views\IStockLogViewRepository.cs" />
+    <Compile Include="Repository\Inventory\Views\IStockViewRepository.cs" />
+    <Compile Include="Repository\Warehouse\ITagRepository.cs" />
+    <Compile Include="Repository\Warehouse\ISkuTagRepository.cs" />
+    <Compile Include="Repository\Warehouse\IShelfRepository.cs" />
+    <Compile Include="Repository\Warehouse\ISettingRepository.cs" />
+    <Compile Include="Repository\Warehouse\ISafetyStockRepository.cs" />
+    <Compile Include="Repository\Warehouse\IOperatorGroupRepository.cs" />
+    <Compile Include="Repository\Warehouse\ILocationTagRepository.cs" />
+    <Compile Include="Repository\Warehouse\ILocationSafetyStockRepository.cs" />
+    <Compile Include="Repository\Warehouse\ILocationRepository.cs" />
+    <Compile Include="Repository\Warehouse\IGroupMemeberRepository.cs" />
+    <Compile Include="Repository\Warehouse\IContainerTypeRepository.cs" />
+    <Compile Include="Repository\Warehouse\IContainerRepository.cs" />
+    <Compile Include="Repository\Warehouse\IAreaGroupRepository.cs" />
+    <Compile Include="Repository\Warehouse\IAreaRepository.cs" />
+    <Compile Include="Repository\Warehouse\IAisleRepository.cs" />
+    <Compile Include="Repository\Warehouse\Views\ILocaionTagViewRepository.cs" />
+    <Compile Include="Repository\Warehouse\Views\ILocationViewRepository.cs" />
+    <Compile Include="Repository\Warehouse\Views\ISkuTagViewRepository.cs" />
+    <Compile Include="Repository\Wms\ISkuImageRepository.cs" />
+    <Compile Include="Repository\Wms\ISkuViewRepository.cs" />
+    <Compile Include="Repository\Wms\IWarehouseUserRepository.cs" />
+    <Compile Include="Repository\Wms\IWarehouseRepository.cs" />
+    <Compile Include="Repository\Wms\ISkuPropertyRepository.cs" />
+    <Compile Include="Repository\Wms\ISkuManagementRepository.cs" />
+    <Compile Include="Repository\Wms\ISkuRepository.cs" />
+    <Compile Include="Repository\Wms\IPackRepository.cs" />
+    <Compile Include="Repository\Wms\IDistrictRepository.cs" />
+    <Compile Include="Repository\Wms\ICompanyTypeRepository.cs" />
+    <Compile Include="Repository\Wms\ICompanyRepository.cs" />
+    <Compile Include="Repository\Wms\ICategoryPropertyRepository.cs" />
+    <Compile Include="Repository\Wms\ICategoryManagementRepository.cs" />
+    <Compile Include="Repository\Wms\IBatchPropertyRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business.Common\Business.Common.csproj">
+      <Project>{9C1A45E0-6FC9-4733-89A4-ED7D169D83B8}</Project>
+      <Name>Business.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Business.Domain\Business.Domain.csproj">
+      <Project>{8A3BB2E6-237C-4CC0-945B-D849C0039DB2}</Project>
+      <Name>Business.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

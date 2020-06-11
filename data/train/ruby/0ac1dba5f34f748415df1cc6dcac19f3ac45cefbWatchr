@@ -1,0 +1,18 @@
+# vim: ft=ruby
+#
+watch('decanter/assets/style/.*\.less$') { |md|
+    system("foreman run python manage.py assets rebuild -b app-css")
+}
+
+watch('decanter/assets/script/.*\.coffee$') { |md|
+    system("foreman run python manage.py assets rebuild -b app-js")
+    system("foreman run python manage.py assets rebuild -b app-admin-js")
+}
+
+watch('decanter/assets/script/kohelpers/.*\.coffee$') { |md|
+    system("foreman run python manage.py assets rebuild -b kohelpers-js")
+}
+
+watch('decanter/assets/manifest.yaml$') { |md|
+    system("foreman run python manage.py assets rebuild")
+}

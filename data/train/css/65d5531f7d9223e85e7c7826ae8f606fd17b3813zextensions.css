@@ -1,0 +1,47 @@
+/* Auto-Generated via TYPO3\CMS\Backend\Sprite\SimpleSpriteHandler */
+
+.t3-icon-extensionmanager-update-script {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3/sysext/extensionmanager/Resources/Public/Images/Icons/ExtensionUpdateScript.png') !important;
+}
+	
+.t3-icon-sys_file_storage-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3/sysext/t3skin/icons/gfx/i/_icon_ftp.gif') !important;
+}
+	
+.t3-icon-sys_filemounts-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3/sysext/t3skin/icons/gfx/i/_icon_ftp_2.gif') !important;
+}
+	
+.t3-icon-backend_layout-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3/sysext/t3skin/icons/gfx/i/backend_layout.gif') !important;
+}
+	
+.t3-icon-sys_note-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3/sysext/sys_note/ext_icon.gif') !important;
+}
+	
+.t3-icon-tx_rtehtmlarea_acronym-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3/sysext/rtehtmlarea/extensions/Acronym/skin/images/acronym.gif') !important;
+}
+	
+.t3-icon-tx_gbevents_domain_model_event-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/gb_events/Resources/Public/Icons/tx_gbevents_domain_model_event.gif') !important;
+}
+	
+.t3-icon-tx_recipes_domain_model_recipe-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/recipes/Resources/Public/Icons/tx_recipes_domain_model_recipe.gif') !important;
+}
+	
+.t3-icon-tx_recipes_domain_model_ingredient-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/recipes/Resources/Public/Icons/tx_recipes_domain_model_ingredient.gif') !important;
+}
+	

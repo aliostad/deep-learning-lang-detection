@@ -1,0 +1,52 @@
+/**
+ * list.css
+ */
+body {
+	background-color: #ECECEC;
+}
+
+.pubtool a {
+	margin-left: 15px;
+}
+
+.comcode-title {
+	font-size: 14px;
+	font-weight: normal;
+	border-bottom: 1px solid #CCC;
+	height: 50px;
+}
+
+.comcode-wrap {
+	margin-top: 15px;
+}
+
+.pageSizeWrap {
+	height: 20px;
+	margin-top: 5px;
+}
+
+.pagination>li>a {
+	padding: 4px 8px;
+}
+
+.pageWrap {
+	margin: 0px;
+}
+
+#loadingImg {
+	width: 500px;
+	margin: 0px auto;
+}
+
+#loadContentWrap>.table>thead th, #loadContentWrap>.table>tbody {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.alert {
+	margin-top: 1%;
+	display: none;
+}
+.reset {
+	display: none;
+}

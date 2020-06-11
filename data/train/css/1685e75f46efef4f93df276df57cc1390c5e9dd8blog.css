@@ -1,0 +1,20 @@
+.write-post{ overflow: hidden;}
+
+.write-post input{ width: 350px; float: right; }
+.write-post label{ float: right; margin-right: 10px;}
+.write-post textarea{ width: 350px; float: right; height: 130px; resize:none; }
+
+#blog_categories{ width: 100%;  overflow: hidden; }
+#blog_categories input{
+    width: auto !important;
+}
+#browse-posts-table{border-spacing: 1px 1px; width: 100%;}
+#browse-posts-table td , #browse-posts-table th{ vertical-align: middle; padding: 2px 5px 2px 5px;}
+#browse-posts-table thead tr {background-color: #0066cc; color: white; font-weight: bold; }
+#browse-posts-table tbody tr.odd{ background-color: #e8e8f9;}
+#browse-posts-table tbody tr:hover{ background-color: #7BB5E3 ; color: white; cursor: pointer;}
+
+#single-post-container{ width: 600px;}
+#single-post-container img { margin-right: 10px;}
+#single-post-container p{ margin-bottom: 10px;}
+

@@ -1,0 +1,7 @@
+/* CSS for resizing the number of columns for the page width */
+@media all and (min-width:300px) {  #membersContainer{  width: 300px;  }   #load{left:-5%;} }
+@media all and (min-width:600px) {  #membersContainer{  width: 590px;  }   #load{left: -3%;}  }
+@media all and (min-width:900px) {  #membersContainer{  width: 880px;  }   #load{left: 0;}  }
+@media all and (min-width:1200px) {  #membersContainer{  width: 1170px;  } #load{left: 13%;}   }
+@media all and (min-width:1500px) {  #membersContainer{  width: 1460px;  } #load{left: 19%;}  }
+@media all and (min-width:1800px) {  #membersContainer{  width: 1750px;  } #load{left: 25%;}  }

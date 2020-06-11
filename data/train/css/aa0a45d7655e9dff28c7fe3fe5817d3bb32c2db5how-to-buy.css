@@ -1,0 +1,71 @@
+body {
+    position: relative;
+}
+
+#menu {
+    margin-top: 20px;
+}
+
+.affix {
+    width: 213px;
+}
+
+@media (min-width: 1200px) {
+    .affix {
+        width: 263px;
+    }
+}
+
+.affix-bottom {
+    position: absolute;
+}
+
+@media (min-width: 1200px) {
+    .affix-bottom {
+        width: 263px;
+    }
+}
+
+#menu.nav .nav {
+    display: none;
+    font-size: 0.85em;
+}
+
+#menu.nav .active .nav,
+#menu.nav .has-submenu:hover .nav {
+    display: block;
+}
+
+#menu.nav a {
+    color: #FFF;
+}
+
+#menu.nav .active {
+    text-decoration: none;
+    background-color: #EEE;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+#menu.nav .active a,
+#menu.nav a:hover,
+#menu.nav a:focus {
+    color: #000;
+}
+
+#menu.nav .nav .active a,
+#menu.nav .nav .active:hover a,
+#menu.nav .nav .active:focus a,
+#menu.nav .nav a:hover,
+#menu.nav .nav a:focus {
+    border-left: 5px solid #5F5F5F;
+}
+
+.anchor:before {
+    content: "";
+    display: block;
+    height: 120px;
+    /* fixed header height*/
+    margin: -120px 0 0;
+    /* negative fixed header height */
+}

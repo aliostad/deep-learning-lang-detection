@@ -1,0 +1,187 @@
+.load_con_l_reg {
+width: 540px;
+height: 400px;
+float: left;
+border-style: none;
+cursor: pointer;
+background: url(../img/0223xinrenzhuce.jpg);
+}
+.load_con_r {
+width: 402px;
+float: left;
+padding-left: 34px;
+}
+.load_con_r .r_con {
+width: 340px;
+height: 375px;
+padding: 60px 0 0 60px;
+}
+.load_con_r .re_back {
+padding-top: 0px;
+}
+.load_con_r .re_back_link {
+height: 30px;
+color: #666;
+text-align: right;
+line-height: 30px;
+padding-right: 60px;
+}
+.load_con_r .re_back_link a {
+color: #c8030a;
+margin: 0 0 0 5px;
+}
+.load_con_r .r_con .cell {
+width: 280px;
+height: 40px;
+position: relative;
+margin-bottom: 20px;
+}
+.load_con_r .r_con .cell label {
+font-size: 14px;
+padding: 0 15px;
+color: #aaa;
+cursor: text;
+line-height: 38px;
+position: absolute;
+left: 0;
+top: 0;
+z-index: 1;
+}
+input{
+	outline: none;
+}
+.load_con_r .r_con .cell .text {
+width: 248px;
+height: 16px;
+color: #000;
+font-size: 14px;
+padding: 11px 15px;
+font-size: 14px;
+border: 1px solid #cfcfd1;
+border-radius: 3px;
+line-height: 16px;
+position: absolute;
+left: 0;
+top: 0;
+}
+.load_con_r .r_con .cell .light{
+	border-color:#7abd54;
+}
+.load_con_r .r_con .cell .ok {
+background: url(../img/load1101.png) no-repeat -176px -66px;
+width: 17px;
+height: 17px;
+display: block;
+position: absolute;
+right: 14px;
+top: 12px;
+}
+.load_con_r .r_con .cell .cell_hid {
+color: #e20000;
+padding-right: 20px;
+white-space: nowrap;
+height: 28px;
+padding-left: 38px;
+border: 1px solid #de3a39;
+border-radius: 3px;
+line-height: 28px;
+background: #fef1f7 url(../img/load1101.png) no-repeat -395px -163px;
+position: absolute;
+left: 0;
+top: -32px;
+z-index: 3;
+}
+.load_con_r .r_con .cell .cell_hid .sanj {
+position: absolute;
+left: 20px;
+top: 28px;
+background: url(../img/load1101.png) no-repeat -35px -168px;
+width: 15px;
+height: 8px;
+display: block;
+}
+.load_con_r .r_con .vcode .text {
+width: 86px;
+}
+
+.load_con_r .r_con .vcode .ok {
+right: 168px;
+}
+.load_con_r .r_con .vcode .c_img {
+width: 130px;
+height: 38px;
+border: 1px solid #cfcfd1;
+border-radius: 3px;
+position: absolute;
+left: 123px;
+top: 0;
+}
+.load_con_r .r_con .vcode .c_img img {
+height: 38px;
+width: 130px;
+}
+.load_con_r .r_con .vcode .c_ts {
+font-size: 12px;
+width: 50px;
+height: 40px;
+position: absolute;
+left: 263px;
+top: 3px;
+line-height: 18px;
+}
+.load_con_r .r_con .vcode .c_ts a {
+color: #666666;
+cursor: pointer;
+}
+.load_con_r .r_con .vcode .c_yz {
+width: 118px;
+height: 40px;
+position: absolute;
+left: 128px;
+top: 0;
+}
+.load_con_r .r_con .vcode .c_yz a {
+width: 116px;
+height: 38px;
+border: 1px solid #cfcfd1;
+border-radius: 3px;
+background: url(../img/load1101.png) no-repeat -57px -220px;
+display: block;
+color: #666;
+line-height: 38px;
+text-align: center;
+cursor: pointer;
+}
+.load_con_r .r_con .r_load {
+line-height: 40px;
+height: 40px;
+margin-bottom: 10px;
+}
+.load_con_r .r_con .r_load_btn {
+background: url(../img/load1101.png?6) no-repeat -34px -64px;
+border: 0;
+font-size: 15px;
+width: 140px;
+height: 40px;
+font-family:"微软雅黑";
+text-align: center;
+color: #fff;
+cursor: pointer;
+float: left;
+margin-right: 60px;
+}
+
+.tiaokuan a {
+color: #c8030a;
+margin: 0 0 0 5px;
+}
+
+
+
+
+
+
+
+
+
+

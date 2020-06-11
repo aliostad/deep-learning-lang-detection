@@ -1,0 +1,30 @@
+.squid-api-core-widgets-status .status-error {
+   	position: fixed;
+   	opacity: 0.9;
+    max-height: 100px;
+   	z-index: 1050;
+   	left:50%;
+   	-webkit-transform: translateX(-50%);
+  	-moz-transform:    translateX(-50%);
+  	-ms-transform:     translateX(-50%);
+  	-o-transform:      translateX(-50%);
+   	transform: 		   translateX(-50%);
+}
+
+.squid-api-core-widgets-status {
+	position: absolute;
+  	top: 10px;
+    z-index: 9999;
+}
+
+.squid-api-core-widgets-status .alert-dismissible .close {
+	 right: -3px;
+}
+
+.squid-api-core-widgets-status .alert-danger  {
+    font-size: 15px;
+    padding: 10px;
+    max-width: 50%;
+    max-height: 145px;
+    overflow-x: hidden;
+}

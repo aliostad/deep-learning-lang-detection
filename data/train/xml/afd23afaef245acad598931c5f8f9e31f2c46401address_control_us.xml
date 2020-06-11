@@ -1,0 +1,106 @@
+<workunit>
+    <invokers>
+        <invoker type="control:addressformat" index="2" caption="US Address" format="us"/>
+    </invokers>
+    
+    <code>
+        <![CDATA[
+        import com.rameses.rcp.common.*;
+        import com.rameses.rcp.annotations.*;
+        import com.rameses.osiris2.client.*;
+        
+        
+        public class USAddressController {
+        
+            @Binding
+            def binding;
+            
+            def properties;
+            def context = [:];
+        
+            //this should fix the data
+            public void fixFormat( def c ) {
+                context = c;
+                context.country = "us";
+                def street = context.remove("street" );
+                if(!context.address1) context.address1 = street;
+                def street2 = context.remove("street2" );
+                if(!context.address2) context.address2 = street2;
+            }
+
+            public def getHtmlFormat() {
+                def buff = new StringBuffer();
+                if( context.address1 ) buff.append( context.address1 );
+                if( context.address2 ) buff.append( "<br>" + context.address2 );
+                if( context.city || context.state || context.zipcode ) {
+                    buff.append( "<br>" );
+                    if(context.city) buff.append( context.city ); 
+                    if( context.state ) {
+                        if(context.city) buff.append( "&nbsp;&nbsp;" );
+                        buff.append( context.state );
+                    }
+                    if( context.zipcode ) {
+                        if(context.city || context.state ) buff.append( "&nbsp;&nbsp;" );
+                        buff.append( context.zipcode );
+                    }
+                }
+                if(context.country) buff.append( "<br>" + context.country );
+                return buff.toString();
+            
+            }
+            
+            public def getPrintFormat() {
+                def buff = new StringBuffer();
+                if( context.address1 ) buff.append( context.address1 );
+                if( context.address2 ) buff.append( ", " + context.address2 );
+                if( context.city || context.state || context.zipcode ) {
+                    buff.append( ", " );
+                    if(context.city) buff.append( context.city ); 
+                    if( context.state ) {
+                        if(context.city) buff.append( " " );
+                        buff.append( context.state );
+                    }
+                    if( context.zipcode ) {
+                        if(context.city || context.state ) buff.append( " " );
+                        buff.append( context.zipcode );
+                    }
+                }
+                if(context.country) buff.append( ", " + context.country );
+                return buff.toString();
+            }
+            
+            def svc;
+            private def getAddressService() {
+                if(svc==null)
+                    svc = InvokerProxy.instance.create("address/USAddressService");
+                return svc;    
+            }
+            
+            public void lookupZipcode() {
+                def a = addressService.findByZipcode( context );
+                context.putAll( a );
+                binding.refresh();
+            }
+            
+            public void verifyAddress() {
+                def m = addressService.verify( context );
+                StringBuffer sb = new StringBuffer();
+                if( m.city.toUpperCase() != context.city ) sb.append( "City is incorrect \n");
+                if( m.state.toUpperCase() != context.state ) sb.append( "State is incorrect \n");
+                if( sb.length() > 0 ) {
+                    MsgBox.alert( sb.toString() );
+                }
+                else {
+                    MsgBox.alert( "Zipcode, City and State is valid" );
+                }
+            }
+            
+        }
+        ]]>
+    </code>
+    
+    <pages>
+        <page template="shared.custom.address.USAddressControl"/>
+    </pages>
+    
+</workunit>

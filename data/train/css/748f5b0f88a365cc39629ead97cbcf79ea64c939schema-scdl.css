@@ -1,0 +1,85 @@
+/*
+CSS3 styles for SCDL object Knockout.js view models.
+*/
+
+#idSchemaAppView { margin: 0px; padding: 5px; font-family: Verdana, Arial; font-size: 10pt; background-color: white;}
+
+
+#idJSONSourceViewer { font-family: Courier; font-size: 8pt;}
+
+#idSchemaEditorView {  margin: 0px; padding: 5px; font-family: Verdana, Arial; font-size: 10pt; background-color: white;  }
+
+
+.classScdlCatalogueShimHost {}
+.classScdlCatalogueShimHost DIV { margin: 2px; padding: 2px;  box-shadow: 1px 1px 1px #666666 inset; }
+
+.classScdlCatalogueShim {}
+
+.classScdlCatalogue { }
+
+
+.classScdlAssetCatalogue { background-color: #99FFCC; }
+.classScdlAssetPeople { background-color: #33FFCC;}
+.classScdlAssetPerson { background-color: #00FF99;  border: 3px solid black; }
+.classScdlAssetOrganizations { background-color: #33FFCC; }
+.classScdlAssetOrganization { background-color: #00FF99;  border: 3px solid black;}
+.classScdlAssetCopyrights { background-color: #33FFCC; }
+.classScdlAssetCopyright { background-color: #00FF99;  border: 3px solid black;}
+.classScdlAssetLicenses { background-color: #33FFCC; }
+.classScdlAssetLicense { background-color: #00FF99;  border: 3px solid black;}
+
+.classScdlModelCatalogue { background-color: #FF9900; }
+
+.classScdlModelTypes { background-color: #FF6600; }
+.classScdlModelType { background-color: #FF3300;  border: 3px solid black;}
+
+.classScdlModelMachines { background-color: #CC99CC; }
+.classScdlModelMachine { background-color: #CC66CC;  border: 3px solid black;}
+
+.classScdlModelMachinePins { background-color: #CC33CC; }
+
+.classScdlModelMachineInputPins { background-color: #009900; }
+.classScdlModelMachineInputPin { background-color: #00CC00;  border: 3px solid green; }
+.classScdlModelMachineOutputPins { background-color: #CC0000; }
+.classScdlModelMachineOutputPin { background-color: #FF0000; border: 3px solid red; }
+
+.classScdlModelMachineStates { background-color: #CC33FF; }
+.classScdlModelMachineState { background-color: #CC66FF; border: 3px solid yellow; }
+
+.classScdlModelMachineTransitions { background-color: #FF33CC; }
+.classScdlModelMachineTransition { background-color: #FF3399; border: 3px solid purple; }
+.classScdlModelMachineTransitionVectors { background-color: #FF6699; }
+.classScdlModelMachineTransitionVector { background-color: #FF9999; border: 3px solid magenta; }
+
+.classScdlModelSockets {  background-color: #FF6600; }
+.classScdlModelSocket { background-color: #FF3300; border: 3px solid black;  }
+
+
+
+.classScdlModelSocketContracts { background-color: #CC99CC; }
+.classScdlModelSocketContract { background-color: #CC66CC; border: 3px solid black; }
+.classScdlModelSocketContractNodes { background-color: #CC33CC; }
+.classScdlModelSocketContractNode { background-color: #CC99CC; border: 3px solid black; }
+
+
+.classScdlModelInputPinInstances { background-color: #00FF99; }
+.classScdlModelInputPinInstance { background-color: #00FF66; }
+.classScdlModelOutputPinInstances { background-color: #FFCC00; }
+.classScdlModelOutputPinInstance { background-color: #FF9900; }
+
+
+
+.classScdlModelSystems { background-color: #FF6600; }
+.classScdlModelSystem { background-color: #FF3300; border: 3px solid black; }
+
+
+.classScdlModelInstances { background-color: #FFCC00; }
+.classScdlModelInstance { background-color: #FF9900; }
+
+
+
+.classScdlSystemCatalogue { background-color: #00CCFF; }
+
+
+
+

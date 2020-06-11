@@ -1,0 +1,26 @@
+.yui3-skin-sam .ze-view-apertura-view {
+    margin: 3px 1em;
+    overflow: hidden;
+}
+.yui3-skin-sam .ze-view-apertura-view label {
+    clear: both;
+    float: left;
+    width: 49%;
+    border: thin solid silver;
+}
+.yui3-skin-sam .ze-view-apertura-view div {
+    float: left;
+    width: 49%;
+    border: thin solid silver;
+}
+.yui3-skin-sam .ze-view-apertura-view .asiento,
+.yui3-skin-sam .ze-view-apertura-view .cerrado {
+    text-align: right;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+.yui3-skin-sam .ze-view-apertura-view .importe {
+    text-align: right;
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="org.athento.nuxeo.athento-nx-metadata-inheritance.extended-config.doctype"
+	version="1.0.0">
+	<require>org.nuxeo.runtime.started</require>
+
+	<extension target="org.nuxeo.ecm.core.schema.TypeService"
+		point="doctype">
+		<doctype name="ExtendedConfig" extends="File" append="true">
+			<schema name="metadataInheritanceConfig" />
+		</doctype>
+	</extension>
+	<extension target="org.nuxeo.ecm.platform.types.TypeService"
+		point="types">
+
+		<type id="ExtendedConfig" append="true">
+			<layouts mode="create" append="true">
+				<layout>layout@formlayout-metadataInheritance-extendedConfig</layout>
+			</layouts>
+			<layouts mode="edit" append="true">
+				<layout>layout@formlayout-metadataInheritance-extendedConfig</layout>
+			</layouts>
+			<layouts mode="view" append="true">
+				<layout>layout@formlayout-metadataInheritance-extendedConfig</layout>
+			</layouts>
+		</type>
+
+	</extension>
+
+</component>

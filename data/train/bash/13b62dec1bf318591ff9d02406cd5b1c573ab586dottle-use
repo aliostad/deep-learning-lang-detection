@@ -1,0 +1,46 @@
+#!/bin/bash
+
+if [[ "$1" == "--help" ]]; then
+  echo "Enable a topic or a repository"
+  exit 0
+fi
+
+if [ -z "$1" ]; then
+  echo "Usage:"
+  echo "  dottle use repo [topic]"
+  exit 1
+fi
+
+repo=$1
+if [[ ! -d $DOTTLE_HOME/topics/$repo ]]; then
+  echo "Cannot find repo or topic $repo"
+  exit 1
+fi
+
+if [[ $(basename $repo) == $1 ]]
+then
+  pushd $DOTTLE_HOME/topics/$repo > /dev/null
+  topics=$(ls)
+  popd > /dev/null
+else
+  repo=$(dirname $1)
+  topics=$(basename $1)
+fi
+
+USING_FILE=$DOTTLE_HOME/topics/topics-enabled
+if [[ ! -f $USING_FILE ]]; then
+  touch $USING_FILE
+fi
+
+for topic in $topics
+do
+  if $(grep "$repo/$topic" $USING_FILE > /dev/null); then
+    echo "* Already using: $repo/$topic"
+  else
+    dottle install $repo/$topic
+    dottle init $repo/$topic
+    echo $repo/$topic >> $USING_FILE
+    echo "* Now using: $repo/$topic"
+  fi
+done
+

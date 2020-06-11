@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<objects xmlns='http://www.springframework.net' xmlns:db="http://www.springframework.net/database">
+
+  <description>
+    The project object definitions for the repository objects.
+  </description>
+    
+  <object id="assemblyRepository" type="Nosson.Core.Repository.NHibernate.AssemblyRepository, Nosson.Core.Repository">
+    <property name="SessionFactory" ref="NHibernateSessionFactory" />
+  </object>
+  
+  <object id="buttonRepository" type="Nosson.Core.Repository.NHibernate.ButtonRepository, Nosson.Core.Repository">
+    <property name="SessionFactory" ref="NHibernateSessionFactory" />
+  </object>
+  
+  <object id="formRepository" type="Nosson.Core.Repository.NHibernate.FormRepository, Nosson.Core.Repository">
+    <property name="SessionFactory" ref="NHibernateSessionFactory" />
+  </object>
+  
+  <object id="menuRepository" type="Nosson.Core.Repository.NHibernate.MenuRepository, Nosson.Core.Repository">
+    <property name="SessionFactory" ref="NHibernateSessionFactory" />
+  </object>
+    
+  <object id="roleRepository" type="Nosson.Core.Repository.NHibernate.RoleRepository, Nosson.Core.Repository">
+    <property name="SessionFactory" ref="NHibernateSessionFactory" />
+  </object>  
+
+  <object id="userProfileRepository" type="Nosson.Core.Repository.NHibernate.UserProfileRepository, Nosson.Core.Repository">
+    <property name="SessionFactory" ref="NHibernateSessionFactory" />
+  </object>
+
+  <object id="userRepository" type="Nosson.Core.Repository.NHibernate.UserRepository, Nosson.Core.Repository">
+    <property name="SessionFactory" ref="NHibernateSessionFactory" />
+  </object>
+  
+</objects>

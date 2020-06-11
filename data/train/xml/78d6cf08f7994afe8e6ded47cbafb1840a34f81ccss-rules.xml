@@ -1,0 +1,26 @@
+<profile> 
+	<name>BlackboardCssProfile</name>
+	<language>css</language>
+	<rules>
+		<rule>
+	    	<repositoryKey>Css</repositoryKey>
+    	  	<key>AvoidUniversalSelectorCheck</key>
+	    </rule>
+	    <rule>
+	    	<repositoryKey>Css</repositoryKey>
+	    	<key>AvoidMalformedSelectorCheck</key>
+	    </rule>
+	    <rule>
+	    	<repositoryKey>Css</repositoryKey>
+	    	<key>AvoidDeepSelectorCheck</key>
+	    </rule>
+	    <rule>
+	    	<repositoryKey>Css</repositoryKey>
+	    	<key>AvoidQualifiedIDSelectorCheck</key>
+	    </rule>
+	    <rule>
+	    	<repositoryKey>Css</repositoryKey>
+	    	<key>AvoidQualifiedClassSelectorCheck</key>
+	    </rule>
+	</rules>
+</profile>

@@ -1,0 +1,47 @@
+#!/bin/bash
+ 
+# Headers
+source /etc/make.conf
+. /etc/init.d/functions.sh
+ 
+# Variables
+REPO_DIR="/home/tampakrap/Source_Code/" # Where to store the symlinks of the repos
+GENTOO_REPO_DIR="${REPO_DIR}gentoo/"  # Gentoo repos
+KDE_REPO_DIR="${REPO_DIR}kde/" # KDE repos
+OVERLAY_DIR="/var/lib/layman"
+ 
+# No root
+if [[ $UID == 0 ]]; then
+	   eerror 'root is forbidden'
+	   exit 1
+fi
+ 
+# Gentoo Overlays
+cd $OVERLAY_DIR
+for repo in `ls -d */`
+do
+	   pushd $repo > /dev/null
+	   einfo "Checking $repo overlay"
+	   if [[ ! -z `grep git.overlays.gentoo.org .git/config` ]]; then
+		      sed -i -e 's:git\://git.overlays.gentoo.org/:gentoo\::' .git/config
+		      ewarn "gentoo git url corrected for $repo overlay"
+	   fi
+	   [[ -L ${GENTOO_REPO_DIR}${repo%/*} ]] || (ln -s /var/lib/layman/$repo ${GENTOO_REPO_DIR} && ewarn "New symlink for $repo overlay")
+	   popd > /dev/null
+done
+ 
+# KDE Repositories
+cd $DISTDIR/egit-src
+for repo in `ls -d */`
+do
+	   pushd $repo > /dev/null
+	   einfo "Checking $repo repository"
+	   if [[ ! -z `grep anongit.kde.org .git/config` ]]; then
+		      sed -i -e 's:git\://anongit.kde.org:kde\::' .git/config
+		      ewarn "kde git url corrected for $repo"
+	   fi
+	   if [[ ! -z `grep kde: .git/config` ]]; then
+		      [[ -L ${KDE_REPO_DIR}${repo%/*} ]] || (ln -s ${DISTDIR}/egit-src/$repo ${KDE_REPO_DIR} && ewarn "New symlink for $repo")
+	   fi
+	   popd > /dev/null
+done

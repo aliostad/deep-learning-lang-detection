@@ -1,0 +1,52 @@
+/**
+ * CSS for GitHub hosted WP plugins admin page
+ */
+table.plugins-list th:nth-child(3),
+table.plugins-list td:nth-child(3) {
+    text-align: right;
+}
+
+@media screen and (max-width: 782px) {
+    table.plugins-list th:nth-child(3),
+    table.plugins-list td:nth-child(3) {
+        text-align: left;
+    }
+}
+
+.corenominal-api-add-plugin-form {
+    background: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 60%;
+    display: none;
+}
+
+@media screen and (max-width: 782px) {
+    .corenominal-api-add-plugin-form {
+        width: calc(100% - 22px);
+    }
+}
+
+.corenominal-api-add-plugin-form input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.corenominal-api-add-plugin-form button {
+    margin-bottom: 10px;
+}
+
+.corenominal-api-repo-form-notify {
+    margin-top: 20px;
+}
+
+.remove-plugin-prompt {
+    display: none;
+    margin-top: 6px;
+}
+
+.remove-plugin-prompt span {
+    display: inline-block;
+    margin: 6px 10px 0 0;
+}

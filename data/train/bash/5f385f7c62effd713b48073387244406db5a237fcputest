@@ -1,0 +1,48 @@
+#!/bin/sh
+
+#set -x
+
+PROCESS_LIST="pppoe cpulimit qbcli"
+
+for PROCESS_NAME in $PROCESS_LIST; do
+
+ `/usr/bin/top -n 1 -b|grep $PROCESS_NAME|awk NR==1 >/tmp/topcpu`
+ CPU_Usage=`cat /tmp/topcpu |awk '{print $( NF - 3 )*100 }'`
+ Process_id=`cat /tmp/topcpu |grep $PROCESS_NAME |awk NR==1 |awk '{print $1}'`
+ if [ "$Process_id" != "" ];then
+ case "$CPU_Usage" in
+     *[a-zA-Z]*)
+                   exit 0
+     ;;
+     *)
+                if [ $CPU_Usage -ge 3000 ]; # The CPU usage of process >=35%
+                then
+                    #check process id again
+                    sleep 120
+                    `/usr/bin/top -n 1 -b|grep $PROCESS_NAME|awk NR==1 >/tmp/topcpu`
+                    CPU_Usage_0=`cat /tmp/topcpu |awk '{print $( NF - 3 )*100 }'`
+                    Process_id_0=`cat /tmp/topcpu |grep $PROCESS_NAME |awk NR==1 |awk '{print $1}'`
+                    if [ "$Process_id_0" = "$Process_id" ] && [ $CPU_Usage_0 -ge 3000 ]; #Same process occupy the CPU
+                    then
+                       kill -9 $Process_id
+                       echo $(date) "Killed Process ID:$Process_id CPU Usage:$CPU_Usage %%" >>/mnt/log/cpusage.log
+                       if [ "$PROCESS_NAME" = "pppoe" ];then
+                        #check link again
+                        if [ ! -f /tmp/temp.xml ]; then
+                        sleep 10
+                        /usr/sbin/pppoechk.pl >/tmp/ppplog/pppoechk &
+                        fi
+                       fi
+                       if [ "$PROCESS_NAME" = "cpulimit" ];then
+                       killall -9 cpulimit
+                       /sbin/cpulimit -e postmaster -l 25 &
+                       /sbin/cpulimit -e php -l 25 & 
+                       fi
+                       sync;sync
+                    fi
+                fi
+                #exit 0
+     ;;
+ esac
+ fi
+done                                           

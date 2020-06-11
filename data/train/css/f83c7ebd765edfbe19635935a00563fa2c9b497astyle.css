@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  height: 2000px; }
+
+.bird-box {
+  height: 600px;
+  width: 100%;
+  background-image: url(../img/bird-bg.jpg);
+  background-size: 100% 600px;
+  position: relative;
+  overflow: hidden; }
+
+.back-bird {
+  height: 298px;
+  width: 264px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/back-bird.png);
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat; }
+
+.fore-bird {
+  height: 733px;
+  width: 40%;
+  position: absolute;
+  right: 0;
+  bottom: -550px;
+  background-image: url(../img/fore-bird.png);
+  background-repeat: no-repeat; }
+
+.logo {
+  height: 200px;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -100px;
+  background-image: url(../img/black-bird-logo.svg);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+h1,
+h2 {
+  text-align: center; }
+
+.content {
+  max-width: 640px;
+  margin: 0 auto; }
+
+.models {
+  margin-top: 50px; }
+
+.model-rows {
+  overflow: auto;
+  background: rgba(0, 255, 0, 0.5); }
+  .model-rows figure {
+    position: relative;
+    float: left;
+    margin: 10px 0 10px 3.5%;
+    width: 31%;
+    overflow: hidden;
+    transform: translateX(-30px);
+    opacity: 0; }
+    .model-rows figure:first-child {
+      margin-left: 0; }
+    .model-rows figure img {
+      display: block;
+      transform: scale(1);
+      width: 100%;
+      transition: all 0.4s ease; }
+    .model-rows figure figcaption {
+      position: absolute;
+      left: -100%;
+      bottom: 20px;
+      background: black;
+      color: white;
+      font-size: 14px;
+      transition: left 0.3s ease; }
+    .model-rows figure:hover figcaption {
+      left: 0; }
+    .model-rows figure:hover img {
+      transform: scale(1.1); }
+    .model-rows figure.showing {
+      opacity: 1;
+      transform: translateX(0); }

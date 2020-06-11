@@ -1,0 +1,54 @@
+
+#footer{
+    width:700px;
+    margin:0 auto;
+    padding-bottom:15px;
+    text-align:center;
+}
+
+#apiList {
+    height: 700px;
+}
+
+#apiList li {
+    cursor:pointer;
+}
+
+#apiList li.nav-header {
+    cursor:default;
+}
+
+.nav.nav-tabs {
+	margin-bottom: 4px;
+}
+
+.page-header {
+	padding-bottom: 5px;
+	margin: 10px 0;
+}
+
+#user {
+    line-height: 24px;
+    padding: 7px 0;
+}
+
+
+#user span {
+    font-size: 14px;
+    padding: 5px 0;
+    color:#999;
+    margin-right: 10px;
+}
+
+#user a {
+    font-size: 16px;
+    padding: 4px 0;
+}
+
+#user img {
+    float: left;
+    margin-right: 5px;
+    width: 26px;
+    height: 26px;
+    border-radius: 3px;
+}

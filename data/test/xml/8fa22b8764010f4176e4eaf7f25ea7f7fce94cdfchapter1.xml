@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<unrefined>
+    <talker>
+        <name>主人公</name>
+        <messages>
+            <message id="0">目標地点へ到着・・・ミッションスタートだ・・・</message>
+            <message id="1">了解した・・・</message>
+            <message id="2">まずはフェンスを爆破するぞ</message>
+			<message id="3">よし 先へ進もう</message>
+			<message id="4">本部へ ミッション１クリア</message>
+        </messages>
+    </talker>
+    <talker>
+    	<name>味方</name>
+    	<messages>
+    		<message id="0">了解 油断するなよ</message>
+			<message id="1">了解 ブラッド６へ 予定通りトラックの爆破をしろ</message>
+    	</messages>
+    </talker>
+    <talker>
+        <name>ブラッド６</name>
+        <messages>
+            <message id="0">了解だ いま小便してるからちょっと待て・・・</message>
+            <message id="1">ん！？ しまった通信してるのがバレた おいやめろ せめて殺すなら最後まで小便を・・・</message>
+			<message id="2">アッー！！</message>
+        </messages>
+    </talker>
+</unrefined>

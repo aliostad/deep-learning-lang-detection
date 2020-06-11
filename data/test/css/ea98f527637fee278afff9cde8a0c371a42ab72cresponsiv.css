@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+header, nav, #graphic, #contents, footer {
+	width: 451px;
+}
+nav ul {
+	margin: 0;
+	list-style-type: none;
+	overflow: hidden;
+}
+#graphic {
+	height: 100px;
+	padding-top: 10px;
+}
+#graphic ul li img {
+	width: 451px;
+}
+#main, #news ul li, h2 {
+	width: auto;
+	float: none;
+}
+nav ul li#nav_course,
+nav ul li#nav_schedule,
+nav ul li#nav_point,
+nav ul li#nav_access {
+	width: 225px;
+}
+nav ul li#nav_course,
+nav ul li#nav_point {
+	border: 1px solid #f3f2e9;
+	border-top: none;
+	border-left: none;
+}
+nav ul li#nav_schedule,
+nav ul li#nav_access {
+	border: 1px solid #f3f2e9;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+}
+nav ul li#nav_course a,
+nav ul li#nav_schedule a,
+nav ul li#nav_point a,
+nav ul li#nav_access a {
+	height: 44px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	background: #342300 none;
+	color: #f3f2e9;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 3;
+}
+nav ul li#nav_course a:hover,
+nav ul li#nav_schedule a:hover,
+nav ul li#nav_point a:hover,
+nav ul li#nav_access a:hover {
+	background-color: #6c5f45;
+}
+#news h2 {
+	margin-bottom: 0;
+}
+#news ul li {
+	padding: 20px 0 12px 0;
+	text-indent: 0;
+}
+#news time {
+	margin-bottom: 10px;
+}
+#side {
+	margin-left: 10px;
+	float: none;
+}
+footer {
+	padding-top: 30px;
+}
+footer p {
+	float: none;
+}
+footer address {
+	width: 452px;
+}

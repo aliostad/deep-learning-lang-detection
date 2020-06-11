@@ -1,0 +1,88 @@
+#!/bin/bash
+#
+# Clone a new repo into a workspace
+#
+
+#function GTWScleanup {
+#}
+
+# Standard functions
+GTWS_LOC=$(readlink -f $(dirname "$0"))
+source ${GTWS_LOC}/gtws.sh
+
+BRANCH="master"
+PROJECT=
+
+if is_gtws; then
+	REPO_BASE=$(gtws_opvn "${GTWS_ORIGIN}" "${GTWS_PROJECT}" "${GTWS_PROJECT_VERSION}" "${GTWS_WSNAME}")
+	SUBMODULE_BASE=$(gtws_smopvn "${GTWS_SUBMODULE_ORIGIN:-${GTWS_ORIGIN}}" "${GTWS_PROJECT}" "${GTWS_PROJECT_VERSION}" "${GTWS_WSNAME}")
+	BRANCH="${GTWS_PROJECT_VERSION}"
+fi
+
+# Set usage output
+DESCRIPTION="Clone a new repo into a workspace"
+USAGE="[-h |--help] [[-p <project> | --project=<project>] | [[-r <repo-base> | --repo-base=<repo-base>] [-s <submodule-base> | --submodule-base=<submodule-base>]]] [-b <branch> | --branch=<branch>] [-d <directory> | --directory=<directory> ] [-V | --verbose] <repo-name>"
+LONGUSAGE="\t-h, --help\n\t\tPrint this help message
+\t-p <project>, --project=<project>\n\t\tClone from project; sets repo-base and submodule-base (default: ${GTWS_PROJECT:-none})
+\t-r <repo-base>, --repo-base=<repo-base>\n\t\tBase dir for repo (default: ${REPO_BASE:-none})
+\t-s <submodule-base>, --submodule-base=<submodule-base>\n\t\tBase dir for submodules (default: ${SUBMODULE_BASE:-none})
+\t-b <branch>, --branch=<branch>\n\t\tRepo branch (default: ${BRANCH})
+\t-d <directory>, --directory=<directory>\n\t\tDirectory to clone into.  Default: <repo-name>
+\t-V, --verbose\n\t\tBe verbose
+\t<repo-name>\n\t\tRepository name"
+
+# Script name
+ME=$(basename $0)
+
+# Parse arguments
+ARGS=`getopt -o hVp:r:s:b:d: --long help,verbose,project:,repo-base:,submodule-base:,branch:,directory: -n "${ME}" -- "$@"`
+
+if [ $? != 0 ] ; then
+	usage 
+fi
+eval set -- "$ARGS"
+
+while true ; do
+	case "$1" in
+		-h|--help) usage; shift ;;
+		-p|--project) PROJECT=$2 ; shift 2 ;;
+		-r|--repo-base) REPO_BASE=$2 ; shift 2 ;;
+		-s|--submodule-base) SUBMODULE_BASE=$2 ; shift 2 ;;
+		-b|--branch) BRANCH=$2 ; shift 2 ;;
+		-d|--directory) DIRECTORY=$2 ; shift 2 ;;
+		-V|--verbose) export GTWS_VERBOSE=yes; shift ;;
+		--) shift ; break ;;
+		* ) usage "Invalid argument $1";;
+	esac
+done
+
+is_gtws || usage "Must be run from inside a workspace"
+
+# Remaining arguments are in $1, $2, etc. as normal
+if [ -z "${1}" ]; then
+	usage "Must give a repository name"
+fi
+REPO="${1}"
+
+# If they gave a project, reset REPO_BASE and SUBMODULE_BASE
+if [ -n "${PROJECT}" ]; then
+	REPO_BASE=$(gtws_opvn "${GTWS_ORIGIN}" "${PROJECT}" "${BRANCH}" "${REPO}")
+	SUBMODULE_BASE=$(gtws_smopvn "${GTWS_SUBMODULE_ORIGIN:-${GTWS_ORIGIN}}" "${PROJECT}" "${BRANCH}" "${REPO}")
+fi
+
+find_git_repo "${REPO_BASE}" "${REPO}" repodir || die "No repository for ${REPO} in ${REPO_BASE}"
+
+echo "Cloning ${REPO}:${BRANCH} from ${REPO_BASE} into ${GTWS_WSNAME}"
+
+# Go to the workspace
+cd "${GTWS_WS_PATH}" || die "Could not cd to ${GTWS_WS_PATH}"
+
+# Clone the repo.
+# XXX TODO - Allow overriding of clone function
+gtws_repo_clone "${REPO_BASE}" "${REPO}" "${BRANCH}" "${SUBMODULE_BASE}" "${DIRECTORY}" || die "gtws_repo_clone failed"
+
+# Set up the repo.
+# XXX TODO - Allow overriding of setup function
+gtws_repo_setup "${GTWS_WSPATH}" "${GTWS_WSPATH}/${REPO}" || die "gtws_repo_setup failed"
+
+echo "Done"

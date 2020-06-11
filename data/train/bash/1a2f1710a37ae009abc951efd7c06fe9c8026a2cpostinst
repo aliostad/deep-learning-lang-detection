@@ -1,0 +1,47 @@
+#!/bin/sh
+set -e
+
+unifiedviews_restart() {
+  echo ">> unifiedviews_restart"
+  if [ -x "/etc/init.d/unifiedviews-backend" ]; then
+     if [ -x /usr/sbin/invoke-rc.d ]; then
+        invoke-rc.d unifiedviews-backend restart || true
+     else
+        /etc/init.d/unifiedviews-backend restart || true
+     fi
+  fi
+
+  if [ -x "/etc/init.d/unifiedviews-frontend" ]; then
+     if [ -x /usr/sbin/invoke-rc.d ]; then
+        invoke-rc.d unifiedviews-frontend restart || true
+       else
+         /etc/init.d/unifiedviews-frontend restart || true
+     fi
+  fi    
+  
+  echo "<< unifiedviews_restart"
+}
+
+set_unifiedviews() {
+    echo ">> set_unifiedviews"
+    
+	sh /usr/share/unifiedviews/dist/qa_plugins/deploy-dpus.sh
+ 
+    unifiedviews_restart
+    echo "<< set_unifiedviews"
+}
+
+case "$1" in
+  configure)
+    set_unifiedviews
+  ;;
+
+  *)
+    echo "$0 called with unknown argument \`$1'" >&2
+    exit 1
+  ;;
+esac
+
+#DEBHELPER#
+
+exit 0

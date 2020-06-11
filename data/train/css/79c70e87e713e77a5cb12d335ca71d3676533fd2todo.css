@@ -1,0 +1,65 @@
+@import 'bower_components/todomvc-common/base.css'; /* the todomvc styling stylesheet */
+
+/* load the model and controller modules */
+model = module(xstyle-todo/todo-model);
+controller = module(xstyle-todo/todo-controller);
+tasks = model/tasks;
+tasks-view = model/tasks-view;
+
+#header {
+	=>
+		h1 'todos',
+		form {
+			=> input#new-todo[autofocus][placeholder='What needs to be done?'] (model/new-item);
+			on-submit: model/add-item(event);
+		}
+}
+#main {
+	=>
+		input#toggle-all[type=checkbox] {
+			on-change: model/complete-all(element);
+		},
+		label,
+		ul#todo-list (tasks-view) {
+			each:
+				li.task {
+					editing = element-class;
+					task-element = element;
+					=>
+						input.toggle[type=checkbox] (item/completed) {
+							on-change: tasks/put(item);
+						},
+						label.view (item/title) {
+							text-decoration: get(item/completed ? 'line-through' : 'none');
+							on-dblclick: set(editing, true);
+							on-dblclick: controller/focus-input(task-element);
+						},
+						input.edit (item/title) {
+							on-focusout: set(editing, false);
+							on-change: set(editing, false);
+						},
+						button.destroy {
+							on-click: model/destroy(item);
+						};
+				},
+		};
+}
+#footer {
+	=>
+		span#todo-count
+			strong (model/todo-count)
+			span (get(model/todo-count > 1 ? ' items left' : ' item left'))
+		ul#filters
+			li a[href='#/all'] 'All ',
+			li a[href='#/active'] 'Active ',
+			li a[href='#/completed'] 'Completed'
+		button#clear-completed ('Clear completed (' + model/completed-count + ')') {
+			on-click: model/clear-completed();
+			visibility: get(model/completed-count > 0 ? 'visible' : 'hidden');	
+		};
+	#todo-count {
+		visibility: get(model/todo-count > 0 ? 'visible' : 'hidden');
+	}
+}
+
+get: controller; /* force it to load now, so that URL hash navigation immediately works*/

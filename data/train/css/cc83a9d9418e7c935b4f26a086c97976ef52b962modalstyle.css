@@ -1,0 +1,10 @@
+@charset "utf-8";
+#invite_model body, ul, dl, dd, dt, ol, li, p, h1, h2, h3, h4, h5, h6, textarea, form, select, fieldset, table, td, div, input {margin:0;padding:0;-webkit-text-size-adjust: none}
+#invite_model h1, h2, h3, h4, h5, h6{font-size:12px;font-weight:normal}
+#invite_model div {text-align:left}
+#invite_model a img {border:0}
+#invite_model body { color: #333; text-align: center; font: 12px "微软雅黑"; }
+#invite_model ul, ol, li {list-style-type:none;vertical-align:0}
+#invite_model a {outline-style:none;color:#535353;text-decoration:none}
+#invite_model a:hover { color: #D40000; text-decoration: none}
+#invite_model .clear{height:0; overflow:hidden; clear:both}

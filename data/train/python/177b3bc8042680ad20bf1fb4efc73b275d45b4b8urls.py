@@ -1,0 +1,46 @@
+from django.conf.urls import patterns , url
+from fms_app import views
+
+urlpatterns = patterns(  # Examples:
+    '',
+    url(r'^$', views.login_check, name='fms_login'),
+    url(r'^manage/fees_type/$', views.manage_fees_type,
+        name='manage_fees_type'),
+    url(r'^manage/add_fee_type/$', views.add_fee_type, name='add_fee_type'),
+    url(r'^manage/edit_fee_type/(?P<ftype_id>[0-9]+)/$', views.edit_fee_type,
+        name='edit_fee_type'),
+    url(r'^manage/delete/$', views.deactivate, name='delete_object'
+        ),
+    url(r'^manage/levels/$', views.manage_levels, name='manage_levels'),
+    url(r'^manage/level/add/$', views.add_level, name='add_level'),
+    url(r'^manage/level/edit/$', views.edit_level, name='edit_level'),
+    url(r'^manage/fees/$', views.manage_fees, name='manage_fees'),
+    url(r'^manage/fees/get_semester/$', views.fees_get_semester,
+        name='fees_get_semester'),
+    url(r'^manage/fees/add/$', views.add_fee, name='add_fee'),
+    url(r'^manage/fees/edit/(?P<fee_id>[0-9]+)/$', views.edit_fee,
+        name='edit_fee'),
+    url(r'^manage/student_fees/$', views.manage_student_fees,
+        name='manage_student_fees'),
+    url(r'^manage/student_fees/add/$', views.add_student_fee,
+        name='add_student_fee'),
+    url(r'^manage/student_fees/edit/(?P<student_payment_id>[0-9]+)/$',
+        views.edit_student_fee, name='edit_student_fee'),
+    url(r'^manage/student_fees/pay/(?P<student_payment_id>[0-9]+)/$',
+        views.student_payment, name='student_payment'),
+    url(r'^manage/student_fees/payment_details/(?P<student_payment_id>[0-9]+)/$',
+        views.show_payment_details, name='show_payment_details'),
+
+    url(r'^manage/fine_type/$', views.manage_fine_type,
+        name='manage_fine_type'),
+    url(r'^manage/fine_type/add/$', views.add_fine_type, name='add_fine_type'
+        ),
+    url(r'^manage/fine_type/edit/(?P<fine_type_id>[0-9]+)/$',
+        views.edit_fine_type, name='edit_fine_type'),
+    url(r'^manage/fees_schedule/(?P<fee_id>[0-9]+)/$',
+        views.manage_fees_schedule, name='manage_fees_schedule'),
+    url(r'^manage/fees_schedule/add/(?P<fee_id>[0-9]+)/$',
+        views.add_fees_schedule, name='add_fees_schedule'),
+    url(r'^manage/fees_schedule/edit/(?P<fee_schedule_id>[0-9]+)/$',
+        views.edit_fees_schedule, name='edit_fees_schedule'),
+    )

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codesense version="1.0">
+
+	<behavior>
+		<append-dynamic>
+			<matched-suffix>(\s*=)|[^=]</matched-suffix>
+			<transform-into>(?1::="$1"$0)</transform-into>
+		</append-dynamic>
+	</behavior>
+	
+	<set name="de.minimalweb.html5.tag.audio.attributes">
+		<completion string="src" />
+		<completion string="preload" />
+		<completion string="autoplay">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*=)|[^=]</matched-suffix>
+					<transform-into>(?1::$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="loop">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*=)|[^=]</matched-suffix>
+					<transform-into>(?1::$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="controls">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*=)|[^=]</matched-suffix>
+					<transform-into>(?1::$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+	</set>
+	
+	<set name="de.minimalweb.html5.tag.input.attributes">
+		<completion string="autocomplete" />
+		<completion string="list" />
+		<completion string="pattern" />
+		<completion string="min" />
+		<completion string="max" />
+		<completion string="step" />
+		<completion string="placeholder" />
+		<completion string="required">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*=)|[^=]</matched-suffix>
+					<transform-into>(?1::$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="autofocus">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*=)|[^=]</matched-suffix>
+					<transform-into>(?1::$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="autofocus">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*=)|[^=]</matched-suffix>
+					<transform-into>(?1::$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="multiple">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*=)|[^=]</matched-suffix>
+					<transform-into>(?1::$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="autofocus">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*=)|[^=]</matched-suffix>
+					<transform-into>(?1::$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+	</set>
+	
+	<set name="de.minimalweb.html5.tag.meter.attributes">
+		<completion string="max" />
+		<completion string="min" />
+		<completion string="high" />
+		<completion string="low" />
+		<completion string="optimum" />
+		<completion string="value" />
+	</set>
+	
+	<set name="de.minimalweb.html5.tag.progress.attributes">
+		<completion string="max" />
+		<completion string="min" />
+		<completion string="value" />
+	</set>
+	
+	<set name="de.minimalweb.html5.tag.source.attributes">
+		<completion string="src" />
+		<completion string="type" />
+		<completion string="media" />
+	</set>
+	
+	<set name="de.minimalweb.html5.tag.track.attributes">
+		<completion string="kind" />
+		<completion string="src" />
+		<completion string="srclang" />
+		<completion string="label" />
+		<completion string="default">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*=)|[^=]</matched-suffix>
+					<transform-into>(?1::$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+	</set>
+	
+	<set name="de.minimalweb.html5.tag.video.attributes">
+		<completion string="src" />
+		<completion string="poster" />
+		<completion string="preload" />
+		<completion string="width" />
+		<completion string="height" />
+		<completion string="autoplay">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*=)|[^=]</matched-suffix>
+					<transform-into>(?1::$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="loop">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*=)|[^=]</matched-suffix>
+					<transform-into>(?1::$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="controls">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*=)|[^=]</matched-suffix>
+					<transform-into>(?1::$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+	</set>
+	
+</codesense>

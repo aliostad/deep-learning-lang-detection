@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<workbook> 
+   <worksheet name="Sheet1"> 
+    <section startRow="0" endRow="0"/> 
+    <loop startRow="1" endRow="1" items="cards" var="card" varType="com.bnu.card.web.form.CardInfoForm"> 
+    <section startRow="1" endRow="1"> 
+    <mapping row="1" col="0">card.name</mapping>
+    <mapping row="1" col="1">card.cardOwner</mapping>
+    <mapping row="1" col="2">card.oldName</mapping>
+    <mapping row="1" col="3">card.gender</mapping>
+    <mapping row="1" col="4">card.birthPlace</mapping>
+    <mapping row="1" col="5">card.nation</mapping>
+    <mapping row="1" col="6">card.nativePlace</mapping>
+    <mapping row="1" col="7">card.birthDay</mapping>
+    <mapping row="1" col="8">card.address</mapping>
+    <mapping row="1" col="9">card.belief</mapping>
+    <mapping row="1" col="10">card.identityCard</mapping>
+    <mapping row="1" col="11">card.height</mapping>
+    <mapping row="1" col="12">card.bloodType</mapping>
+    <mapping row="1" col="13">card.educationInfo</mapping>
+    <mapping row="1" col="14">card.marriageInfo</mapping>
+    <mapping row="1" col="15">card.militarySituation</mapping>
+    <mapping row="1" col="16">card.academe</mapping>
+    <mapping row="1" col="17">card.job</mapping>
+    <mapping row="1" col="18">card.originStudent</mapping>
+    <mapping row="1" col="20">card.whenWhereToThisCity</mapping>
+    <mapping row="1" col="21">card.whenWhereToThisAddress</mapping>
+   </section> 
+    <loopbreakcondition> 
+     <rowcheck offset="0"> 
+        <cellcheck offset="0"></cellcheck> 
+      </rowcheck> 
+    </loopbreakcondition> 
+    </loop> 
+    </worksheet> 
+</workbook> 

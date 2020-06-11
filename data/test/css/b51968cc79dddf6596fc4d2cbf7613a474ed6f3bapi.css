@@ -1,0 +1,15 @@
+/* api */
+.api li { list-style-image: url('../img/list.png'); }
+.api .methods { padding: 0; margin: 0 }
+.api .methods li { list-style: none; font-size: 18px; margin-bottom: 10px}
+.api .methods li a { color: #222; text-decoration: none; }
+.api .methods li a:hover { text-decoration: underline; }
+.api .private, .protected, .public { background-repeat: no-repeat; padding-left: 20px; background-position: left 60%;}
+.api .private { background-image: url('../img/private.png'); }
+.api .private.static { background-image: url('../img/private-static.png'); }
+.api .public { background-image: url('../img/public.png'); }
+.api .public.static { background-image: url('../img/public-static.png'); }
+.api .protected { background-image: url('../img/protected.png'); }
+.api .protected.static { background-image: url('../img/protected-static.png'); }
+.api .optional { font-size: .8em; color: #777; background: #F5F5F5; padding: 0 5px;}
+.letters li a {padding: 4px 6px}

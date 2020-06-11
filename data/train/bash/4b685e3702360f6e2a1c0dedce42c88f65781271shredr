@@ -1,0 +1,50 @@
+#!/bin/bash
+
+PREFIX=''
+
+function process_file
+{
+    FILE="$1"
+    local PREFIX="$2 "
+    [ -n "$VERBOSE" ] && echo -n "${PREFIX}shreding file '$FILE'..."
+    shred --zero --remove "$FILE"
+    [ -n "$VERBOSE" ] && echo "DONE"
+}
+
+function process_directory
+{
+    DIR="$1"
+    local PREFIX="$2 "
+    [ -n "$VERBOSE" ] && echo "${PREFIX}entering directory '$DIR'"
+    (cd "$DIR" && \
+        ls -A | while read ENTRY;
+        do
+            [ -f "$ENTRY" ] && process_file "$ENTRY" "$PREFIX"
+            [ -L "$ENTRY" ] && process_file "$ENTRY" "$PREFIX"
+            [ -d "$ENTRY" ] && process_directory "$ENTRY" "$PREFIX"
+        done
+    )
+    [ -n "$VERBOSE" ] && echo "${PREFIX}removing directory '$DIR'"
+    rmdir "$DIR"
+}
+
+function process_cli
+{
+    while [ -n "$1" ]
+    do
+        [ -f "$1" ] && process_file "$1"
+        [ -L "$1" ] && process_file "$1"
+        [ -d "$1" ] && process_directory "$1"
+        shift
+    done
+}
+
+if [ '-v' = "$1" ]; then
+    VERBOSE=1
+    shift
+else
+    VERBOSE=
+    shift
+fi
+
+process_cli $@

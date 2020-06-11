@@ -1,0 +1,94 @@
+.ace-nav > li.brands ul.brand-nav > li.brand {
+    /* different colors */
+}
+.ace-nav > li.brands ul.brand-nav > li.brand > a {
+    background: #5b2560;
+}
+.ace-nav > li.brands ul.brand-nav > li.brand.active > a:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 12px 22px 0 0;
+    display: block;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    margin-left: -11px;
+}
+.ace-nav > li.brands ul.brand-nav > li.brand.seh > a {
+    border-bottom: 6px solid #ed20af;
+}
+.ace-nav > li.brands ul.brand-nav > li.brand.seh > a:hover,
+.ace-nav > li.brands ul.brand-nav > li.brand.seh > a:focus {
+    background: #ed20af !important;
+    border-bottom: none;
+}
+.ace-nav > li.brands ul.brand-nav > li.brand.active.seh > a {
+    background: #ed20af !important;
+    border-bottom: none;
+}
+.ace-nav > li.brands ul.brand-nav > li.brand.active.seh > a:after {
+    border-color: #ed20af transparent transparent transparent !important;
+}
+.ace-nav > li.brands ul.brand-nav > li.brand.ih > a {
+    border-bottom: 6px solid #9f2426;
+}
+.ace-nav > li.brands ul.brand-nav > li.brand.ih > a:hover,
+.ace-nav > li.brands ul.brand-nav > li.brand.ih > a:focus {
+    background: #9f2426 !important;
+    border-bottom: none;
+}
+.ace-nav > li.brands ul.brand-nav > li.brand.active.ih > a {
+    background: #9f2426 !important;
+    border-bottom: none;
+}
+.ace-nav > li.brands ul.brand-nav > li.brand.active.ih > a:after {
+    border-color: #9f2426 transparent transparent transparent !important;
+}
+.ace-nav > li.brands ul.brand-nav > li.brand.pdj > a {
+    border-bottom: 6px solid #fcbb00;
+}
+.ace-nav > li.brands ul.brand-nav > li.brand.pdj > a:hover,
+.ace-nav > li.brands ul.brand-nav > li.brand.pdj > a:focus {
+    background: #fcbb00 !important;
+    background: #fcbb00 !important;
+    border-bottom: none;
+}
+.ace-nav > li.brands ul.brand-nav > li.brand.active.pdj > a {
+    background: #fcbb00 !important;
+    border-bottom: none;
+}
+.ace-nav > li.brands ul.brand-nav > li.brand.active.pdj > a:after {
+    border-color: #fcbb00 transparent transparent transparent !important;
+}
+.ace-nav > li.brands ul.brand-nav > li.brand.qys > a {
+    border-bottom: 6px solid #906650;
+}
+.ace-nav > li.brands ul.brand-nav > li.brand.qys > a:hover,
+.ace-nav > li.brands ul.brand-nav > li.brand.qys > a:focus {
+    background: #906650 !important;
+    border-bottom: none;
+}
+.ace-nav > li.brands ul.brand-nav > li.brand.active.qys > a {
+    background: #906650 !important;
+    border-bottom: none;
+}
+.ace-nav > li.brands ul.brand-nav > li.brand.active.qys > a:after {
+    border-color: #906650 transparent transparent transparent !important;
+}
+.ace-nav > li.brands ul.brand-nav > li.brand.rds > a {
+    border-bottom: 6px solid #5b7d85;
+}
+.ace-nav > li.brands ul.brand-nav > li.brand.rds > a:hover,
+.ace-nav > li.brands ul.brand-nav > li.brand.rds > a:focus {
+    background: #5b7d85 !important;
+    border-bottom: none;
+}
+.ace-nav > li.brands ul.brand-nav > li.brand.active.rds > a {
+    background: #5b7d85 !important;
+    border-bottom: none;
+}
+.ace-nav > li.brands ul.brand-nav > li.brand.active.rds > a:after {
+    border-color: #5b7d85 transparent transparent transparent !important;
+}

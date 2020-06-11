@@ -1,0 +1,81 @@
+body {
+  position: relative;
+}
+
+.nav-commands-scroll {
+	margin-top: 10px;
+}
+.nav-commands-scroll.affix {
+	width: inherit;
+}
+
+
+.nav-commands li, .nav-commands li>a, .nav-commands li>.nav {
+	border-radius: 5px;
+}
+
+.nav-commands>li>a {
+	color: #fff;
+	font-weight: bold;
+}
+
+.nav-commands>li.active {
+	color: #fff;
+	background-color: #333;
+}
+
+.nav-commands>li.active>a:hover {
+	color: #ddd;
+	background-color: initial;
+}
+
+.nav-commands>li:not(.active)>.nav {
+	visibility: hidden;
+	display: none;
+}
+
+.nav-commands>li>.nav {
+	background-color: #222;
+}
+
+.nav-commands>li>.nav>li>a {
+	color: #888;
+}
+.nav-commands>li>.nav>li>a:hover {
+	color: #bbb;
+}
+.nav-commands>li>.nav>li.active>a {
+	color: #fff;
+	/*background-color: #333;*/
+}
+
+.commands-nav-heading {
+	padding-top: 50px;
+	margin-top: -50px;
+}
+
+
+dd {
+	margin-left: 30px;
+	margin-bottom: 5px;
+}
+
+.access-level {
+	margin-left: 6px;
+}
+
+.access-level-0 {
+  background-color: #616b72;
+}
+.access-level-1 {
+  background-color: #8e44ad;
+}
+.access-level-2 {
+  background-color: #27ae60;
+}
+.access-level-3 {
+  background-color: #c0392b;
+}
+.access-level-99 {
+  background-color: #f39c12;
+}

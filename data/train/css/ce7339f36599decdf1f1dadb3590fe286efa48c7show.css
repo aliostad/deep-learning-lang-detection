@@ -1,0 +1,14 @@
+.series-show-count {color:#777; margin-bottom:.5em}
+.series-show-children {margin-bottom:1em}
+.series-show-description {margin-bottom:.5em}
+.series-show-info-loved {margin-bottom:1em}
+.series-show-info-loved p {display:inline; margin-right:.3em}
+
+.series-show-books {overflow:hidden; margin-top:2em}
+.series-show-books-list-item {float:left; width:115px; margin:0 5px 1em 0; overflow:hidden}
+.series-show-books-list-item-image img {max-height:50px}
+.series-show-books-list-item-info-title {height:2.4em; overflow:hidden}
+.series-show-books-list-item-info-author {height:1.2em; overflow:hidden}
+.series-show-books-list-item-info-author a {color:black; font-size:80%}
+
+.series-show-parrent {margin-bottom:.8em}

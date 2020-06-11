@@ -1,0 +1,313 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.pull-right {
+  float: right; }
+
+.pull-left {
+  float: left; }
+
+.clearfix:after, .clearfix:before {
+  content: "";
+  display: table;
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+a {
+  outline-style: none;
+  color: #333;
+  text-decoration: none; }
+
+a:hover {
+  color: #2bacfe;
+  text-decoration: underline; }
+
+.hidden {
+  display: none; }
+
+.ml15 {
+  margin-left: 15px; }
+
+.mr15 {
+  margin-right: 15px; }
+
+.mt15 {
+  margin-top: 15px; }
+
+.mb15 {
+  margin-bottom: 15px; }
+
+.m15 {
+  margin: 0 15px; }
+
+.pl15 {
+  padding-left: 15px; }
+
+.pr15 {
+  padding-right: 15px; }
+
+.p15 {
+  padding: 0 15px; }
+
+.text-center {
+  text-align: center; }
+
+.active {
+  text-decoration: none;
+  color: #05d2e8;
+  border-bottom: 3px solid #05A1B7; }
+
+.header .header-right .login-model .identifywrap {
+  width: 1200px;
+  margin: 0 auto; }
+
+body {
+  font: 14px/1em "Microsoft YaHei"; }
+
+p {
+  font-family: "Microsoft YaHei";
+  margin: 0; }
+
+.header {
+  background-color: #ffffff;
+  height: 110px;
+  width: 1200px;
+  margin: 0 auto;
+  position: relative; }
+  .header .header-logo {
+    position: absolute;
+    top: 50%;
+    margin-top: -28px; }
+  .header .header-right {
+    position: absolute;
+    top: 50%;
+    margin-top: -17.5px;
+    right: 15px; }
+    .header .header-right .searchform {
+      height: 35px;
+      width: 217px; }
+      .header .header-right .searchform .search {
+        display: block;
+        position: absolute; }
+        .header .header-right .searchform .search input {
+          width: 200px;
+          height: 33px;
+          border-radius: 5px;
+          font-size: 16px;
+          line-height: 33px;
+          border: 1px solid #cccccc; }
+        .header .header-right .searchform .search i {
+          color: #cccccc;
+          position: absolute;
+          font-size: 22px;
+          position: absolute;
+          top: 50%;
+          margin-top: -11px;
+          right: 7px;
+          cursor: pointer; }
+    .header .header-right .login, .header .header-right .reg {
+      display: block;
+      height: 33px;
+      line-height: 35px;
+      color: #333;
+      cursor: pointer;
+      border: 1px solid #cccccc;
+      width: 50px;
+      border-radius: 3px;
+      text-align: center; }
+    .header .header-right .login:hover, .header .header-right .reg:hover {
+      background-color: #e0e0e0; }
+    .header .header-right .login {
+      margin-right: 5px; }
+    .header .header-right .login-model {
+      position: fixed;
+      z-index: 1000;
+      top: 24%;
+      background-color: #fff;
+      left: 50%;
+      width: 480px;
+      margin-left: -250px;
+      text-align: center;
+      box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.3);
+      padding: 40px 0 0 0;
+      box-sizing: border-box; }
+      .header .header-right .login-model .login-model-close {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        font-size: 15px;
+        color: #cccccc;
+        width: 40px;
+        height: 30px;
+        line-height: 30px;
+        border-left: 1px solid #e0e0e0;
+        cursor: pointer; }
+      .header .header-right .login-model .login-model-close:hover {
+        background-color: #f9f9f9; }
+      .header .header-right .login-model .login-model-form {
+        margin-top: 20px; }
+      .header .header-right .login-model label {
+        display: block; }
+      .header .header-right .login-model .failprompt {
+        padding-top: 10px;
+        color: #de1d20; }
+      .header .header-right .login-model h3 {
+        font: 20px/1em "Microsoft YaHei"; }
+      .header .header-right .login-model input {
+        height: 40px;
+        width: 290px;
+        border-radius: 3px;
+        padding-left: 20px;
+        margin: 0 auto;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 1px solid #cccccc; }
+      .header .header-right .login-model .password {
+        margin-top: 15px; }
+      .header .header-right .login-model .identifywrap {
+        width: 290px;
+        margin-top: 15px; }
+        .header .header-right .login-model .identifywrap span:nth-of-type(1) {
+          margin-left: 15px;
+          border: 1px solid #cccccc;
+          width: 78px;
+          height: 38px; }
+          .header .header-right .login-model .identifywrap span:nth-of-type(1) img {
+            width: 100%;
+            height: 100%; }
+        .header .header-right .login-model .identifywrap span:nth-of-type(2) {
+          line-height: 40px;
+          font-size: 14px; }
+      .header .header-right .login-model .identify {
+        width: 138px; }
+      .header .header-right .login-model .login-model-bottom {
+        padding: 30px 0 15px 0;
+        border-bottom: 1px solid #cccccc; }
+        .header .header-right .login-model .login-model-bottom a {
+          padding: 0 5px;
+          font-size: 12px;
+          color: #aaaaaa; }
+        .header .header-right .login-model .login-model-bottom a + a {
+          border-left: 1px solid #cccccc; }
+      .header .header-right .login-model .otherlogin {
+        height: 40px;
+        line-height: 40px;
+        background-color: #f9f9f9; }
+        .header .header-right .login-model .otherlogin .otherlogin-wrap {
+          width: 290px;
+          margin: 0 auto;
+          position: relative; }
+        .header .header-right .login-model .otherlogin p {
+          text-align: left;
+          color: #aaaaaa; }
+        .header .header-right .login-model .otherlogin ul {
+          position: absolute;
+          top: 50%;
+          margin-top: -12px;
+          left: 95px; }
+          .header .header-right .login-model .otherlogin ul li a {
+            display: block;
+            width: 24px;
+            height: 24px;
+            background: url("../img/loginicon.png") no-repeat;
+            margin: 0 8px; }
+          .header .header-right .login-model .otherlogin ul li:nth-of-type(2) a {
+            background-position: -26px 0; }
+      .header .header-right .login-model .loginbtn {
+        margin-top: 15px;
+        border: none;
+        color: #ffffff;
+        outline: none;
+        font: 20px/1em "Microsoft YaHei";
+        padding: 0;
+        cursor: pointer;
+        background-color: #1c96ff; }
+      .header .header-right .login-model .loginbtn:hover, .header .header-right .login-model .login:focus {
+        background-color: #1b81e5; }
+
+.nav {
+  position: absolute;
+  z-index: 1000;
+  top: 110px;
+  left: 50%;
+  margin-left: -600px;
+  width: 1200px;
+  height: 42px;
+  background-color: rgba(0, 0, 0, 0.2); }
+  .nav ul li {
+    float: left; }
+    .nav ul li a {
+      color: #ffffff;
+      display: block;
+      font: 16px/42px "Microsoft YaHei"; }
+    .nav ul li a:hover {
+      text-decoration: none;
+      border-radius: 4px;
+      background-color: rgba(0, 0, 0, 0.4); }
+
+.swiper-container {
+  width: 100%;
+  height: 400px; }
+  .swiper-container .swiper-slide {
+    cursor: pointer; }
+
+.banner img {
+  width: 100%;
+  height: 100%; }
+
+.footer {
+  text-align: center;
+  background-color: #f9f9f9;
+  color: #aaaaaa; }
+  .footer p:nth-of-type(1) {
+    border-bottom: 1px solid #cccccc;
+    padding: 20px 0; }
+    .footer p:nth-of-type(1) a {
+      color: #aaaaaa; }
+  .footer p:nth-of-type(2) {
+    padding: 20px 0; }
+
+/*# sourceMappingURL=common.css.map */

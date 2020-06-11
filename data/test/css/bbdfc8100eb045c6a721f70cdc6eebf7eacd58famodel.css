@@ -1,0 +1,98 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.blue{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.8;
+    z-index: 9998;
+}
+.model{
+    font-family: "微软雅黑";
+    display: block;
+    position: absolute;
+    width: 80%;
+    height: 200px;
+    top: 15%;
+    left: 10%;
+    background: #fff;
+    box-shadow: 3px 1px 15px rgba(208,208,208,0.8);
+    -webkit-box-shadow: 1px 3px 15px rgba(208,208,208,0.8);
+    -moz-box-shadow: 3px 1px 15px rgba(208,208,208,0.8);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: #eee 1px solid;
+    z-index: 9999;
+}
+.model-header{
+    width: 100%;
+    height: 40px;
+    float: left;
+}
+.model-title{
+    position: relative;
+    margin-top: 0px;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: #eee 2px solid;
+    float: left;
+}
+.model-close{
+    color: #42ab35;
+    text-align: center;
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-left: #eee 1px solid;
+}
+.model-center{
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    float: left;
+}
+.model-img{
+    display: block;
+    width: 20%;
+    height:60px;
+    float: left;
+    margin: 15px 5% 30px 5%;
+}
+.model-content{
+    display: block;
+    width: 70%;
+    height: 100px;
+    line-height: 100px;
+    float: left;
+}
+.model-bottom{
+    width: 100%;
+    height: 40px;
+    border-top: #eee 2px solid;
+    float: left;
+}
+.model-cancel,.model-ok{
+    display: block;
+    width: 49%;
+    height: 40px;
+    line-height: 40px;
+    background: none;
+    border: none;
+    float: left;
+}
+.model-cancel{
+    width: 50%;
+    border-right:#eee 1px solid ;
+}

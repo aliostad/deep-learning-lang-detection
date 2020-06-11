@@ -1,0 +1,18 @@
+#!/bin/bash
+
+pp ${dorisProcess}
+
+if [ -z ${pf_in_file} ]; then
+  #if the input file is not defined remove the line
+  grep -v -i -w "pf_in_file" ${outputFolder}/${dorisProcess}.drs > ${outputFolder}/${dorisProcess}.drs.new
+  mv ${outputFolder}/${dorisProcess}.drs.new ${outputFolder}/${dorisProcess}.drs
+fi
+
+if [ -z ${pf_in_kernel2d} ]; then
+  #if the input file is not defined remove the line
+  grep -v -i -w "pf_in_kernel2d" ${outputFolder}/${dorisProcess}.drs > ${outputFolder}/${dorisProcess}.drs.new
+  mv ${outputFolder}/${dorisProcess}.drs.new ${outputFolder}/${dorisProcess}.drs
+fi
+
+doris ${outputFolder}/${dorisProcess}.drs
+[ $? -eq 0 ] && echo "${dorisProcess}: SUCCESS"

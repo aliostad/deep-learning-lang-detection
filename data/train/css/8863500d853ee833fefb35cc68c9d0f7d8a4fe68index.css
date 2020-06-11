@@ -1,0 +1,56 @@
+@charset "gbk";
+/*-------------------------------------------------
+--------------------------------------------------- 
+    注释 DEFINITIONS	: mg
+	作者 AUTHOR 		: mg
+	版本 VERSION		: 2012-02-24
+	
+	内容CONTENTS:
+		1.全局样式
+			1.1 首页高度定义
+		2.首页分类
+		3.banner切换广告
+		4.site_stats首页统计
+		5.guide首页向导
+		6.moving首页动态
+		7.notice公告
+		8.activity活动
+		9.task任务
+		10.shop商城
+		11.news资讯
+		12.case案例展示
+		13.talent人才
+			 	
+	
+/**9.task任务**/
+		* html  .box.model .task .box_detail .tops .item .task_mode{color:#6d6d6d;}
+
+.category .tab{top:-2px; margin:0 -2px 0; position:relative; z-index:2;}
+/* 切换 */
+.category .tab a{ background:#f3f3f3; color:#048fd4;}
+.category .tab a.selected{ background:#fff; color:#333; padding-bottom:1px;}
+#ul_indus_1 a.selected{border-right:none;}
+#ul_indus_2 a.selected{border-left:none;}
+.category .indus_list li a.selected{ position:relative; z-index:1000;border:1px solid #cdcdcd; border-right:none; background:#fff; margin:-1px 0;}
+.category .indus_list li ul.s_nav{background:#fff; border:1px solid #cdcdcd; right:-231px; *right:-232px; top:-1px;}
+.category .indus_list li a:hover{color:#0063a5;}
+.box .guide p{ _line-height:16px;}
+
+.box_header .box_nav a,.box.model .box_header .box_nav a{border:none;}
+	.box_header .box_nav ul li.backLava,.box.model .box_header .box_nav ul li.backLava{border:none; background:#fff;}
+	/* 通告 */
+	.box.default .notice .box_header a{width:50px; text-align:center; height:15px; overflow:hidden;}
+	/* 做什么 */
+	.box.default .notice .box_header,.box.default .moving .box_header{ background:#f3f3f3; padding:0 !important; height:35px; *height:33px; overflow:hidden;}
+		.box_header h2.grid_4{ background:#fff; height:35px; line-height:35px; margin:0; padding-left:15px; overflow:hidden;}
+		.box.default .moving .box_header .grid_9{margin:0;}
+	/* 任务、商城 */	
+	.box.model .task .box_header,.box.model .shop .box_header{padding:0; background:#f3f3f3; height:40px; *height:38px; overflow:hidden;}
+		.box.model .task .box_header .grid_4,.box.model .shop .box_header .grid_4{ background:#fff; margin:0;}
+		.box.model .task .box_header .grid_13,.box.model .shop .box_header .grid_13{margin:0;}
+		.box.model .task .box_header .box_nav,.box.model .shop .box_header .box_nav{padding:0;}	
+			.box.model .task .box_header .box_nav ul li,.box.model .shop .box_header .box_nav ul li{height:30px;}
+				.box.model .task .box_header .box_nav ul li a,.box.model .shop .box_header .box_nav ul li a{ line-height:30px; margin:0;}
+		.box.model .task .box_detail .small_list .item a,.box.model .task .box_detail .small_list .item .task_status,.box.model .shop .box_detail .small_list .item .shop_item_info .title a:hover,.box.model .task .box_detail .small_list .item a:hover{ background:#fff;}	
+	.box.model .case .box_detail .small_list li.first{ background:#fff;}
+

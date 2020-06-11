@@ -1,0 +1,12 @@
+namespace _ { const size_t ss[] = {8,24,24,24,24,24,24,24,24,};
+template<class T> struct ToId { };
+template<> struct ToId<std::string> { const int invoke = 0; };
+template<> struct ToId<std::vector<int> > { const int invoke = 1; };
+template<> struct ToId<std::vector<PArg> > { const int invoke = 2; };
+template<> struct ToId<std::vector<PBuff> > { const int invoke = 3; };
+template<> struct ToId<std::vector<PSkill> > { const int invoke = 4; };
+template<> struct ToId<std::vector<PUnit> > { const int invoke = 5; };
+template<> struct ToId<std::vector<PFlight> > { const int invoke = 6; };
+template<> struct ToId<std::vector<PArea> > { const int invoke = 7; };
+template<> struct ToId<std::vector<Operation> > { const int invoke = 8; };
+};

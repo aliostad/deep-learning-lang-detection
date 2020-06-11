@@ -1,0 +1,276 @@
+﻿/*common*/
+body {
+    font-family: "微软雅黑", "宋体", Arial, sans-serif;
+    font-size: 14px;
+}
+
+a {
+    color: #000;
+    font-family: "微软雅黑", "宋体", Arial, sans-serif;
+    font-size: 14px;
+}
+
+.ah {
+    overflow: auto;
+}
+
+/*common.toolbar*/
+.common-toolbar {
+    position: absolute;
+    top: 0px;
+    margin-top: 5px;
+    z-index: 800;
+}
+/*common.left*/
+.common-left {
+    border-left-width: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+    .common-left .panel-heading .btn {
+        margin-top: -5px;
+        margin-left: 5px;
+    }
+
+    .common-left .panel-body {
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+
+    .common-left .panel {
+        border-top-width: 0px;
+        border-left-width: 0px;
+        margin-bottom: 0px;
+        border-bottom: 0px;
+        border-radius: 0px;
+    }
+/*common.right*/
+
+.common-right {
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+    .common-right .nav-tabs li a {
+        border-top: 0px;
+        border-radius: 0px;
+    }
+
+    .common-right .nav-tabs .first a {
+        border-left: 0px !important;
+    }
+
+    .common-right .nav-tabs .active a {
+        border-top: 0px !important;
+    }
+
+/*node.content.manage*/
+
+.node-content-manage .common-right {
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+    .node-content-manage .common-right .list {
+        border: 0px;
+        width: 99%;
+        height: 99%;
+    }
+/*content.edit*/
+.content-edit .model-part {
+    position: absolute;
+}
+
+.content-edit .form-container {
+    margin-top: 49px;
+    position: relative;
+    overflow: auto;
+}
+
+.content-edit .form-container-more {
+    z-index: 1001;
+}
+
+    .content-edit .form-container-more .panel {
+        border-right: 0px;
+        border-bottom: 0px;
+    }
+
+    .content-edit .form-container-more .form-group {
+        margin-bottom: 2px;
+    }
+/*model.design*/
+.model-design .model-part-list .list-group {
+    height: 520px;
+    overflow: auto;
+}
+
+.model-design .model-part-container {
+    height: 562px;
+    overflow: auto;
+    position: relative;
+}
+
+    .model-design .model-part-container .model-part {
+        position: absolute;
+        cursor: move;
+        border: 1px dashed #ccc;
+        padding: 5px 0px;
+    }
+
+        .model-design .model-part-container .model-part.active {
+            border: 1px dashed #000;
+        }
+
+        .model-design .model-part-container .model-part .setting {
+            position: absolute;
+            left: 5px;
+            top: -2px;
+            color: #000;
+            z-index: 100;
+        }
+
+        .model-design .model-part-container .model-part .setting-edit {
+            color: #000;
+            cursor: pointer;
+        }
+
+        .model-design .model-part-container .model-part .setting-remove {
+            color: #000;
+            cursor: pointer;
+        }
+
+        .model-design .model-part-container .model-part .setting-top {
+            color: #ccc;
+            font-size: 10px;
+            position: absolute;
+            top: -15px;
+            left: -5px;
+            width: 50px;
+        }
+
+        .model-design .model-part-container .model-part .setting-left {
+            color: #ccc;
+            font-size: 10px;
+            position: absolute;
+            top: -15px;
+            left: 50px;
+            width: 50px;
+        }
+
+.model-design .common-right {
+    padding: 0px;
+}
+
+    .model-design .common-right .panel {
+        border-radius: 0px;
+        margin: 0px;
+        border: 0px;
+    }
+/*model.index*/
+.model-index .panel .list-group-item {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+/*contact.index*/
+.contact-index .panel .list-group-item {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+/*template.index*/
+.template-index .code {
+    padding: 0px;
+    margin-top: 50px;
+    position: relative;
+    overflow: auto;
+}
+
+.template-index .CodeMirror {
+    border: 1px solid #eee;
+    height: auto;
+}
+
+.template-index .template-panel {
+    position: absolute;
+    z-index: 998;
+    border-radius: 0px;
+    padding: 0px;
+    margin: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    box-shadow: 0px;
+    margin-top: 50px;
+    display: none;
+}
+
+    .template-index .template-panel .panel-body {
+        overflow: auto;
+    }
+
+/*pages.index*/
+.pages-index .code {
+    padding: 0px;
+    position: relative;
+    overflow: auto;
+}
+
+.pages-index .CodeMirror {
+    border: 1px solid #eee;
+    border-top: 0px;
+    height: auto;
+}
+
+/*menu.button*/
+
+.menu-button .common-right {
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+/*cfile.index*/
+.cfile-index {
+}
+
+    .cfile-index .file-container {
+        border-top: 1px solid #cccccc;
+    }
+
+        .cfile-index .file-container ul {
+            list-style: none;
+            padding: 0px;
+            float: left;
+        }
+
+            .cfile-index .file-container ul li {
+                float: left;
+                margin-left: 5px;
+                text-align: center;
+                margin-top: 5px;
+                width: 100px;
+                height: 150px;
+                overflow: hidden;
+                position: relative;
+            }
+
+                .cfile-index .file-container ul li .file-remove {
+                    position: absolute;
+                    right: 5px;
+                    top: 5px;
+                    cursor: pointer;
+                }
+
+/*user.center*/
+.sidebar-mini.sidebar-collapse .content-wrapper {
+    margin-left: 0px !important;
+}
+
+.sidebar-mini.sidebar-collapse .main-sidebar {
+    left: -50px !important;
+}
+
+.skin-blue .main-header .logo {
+    background-color: #3c8dbc !important;
+}

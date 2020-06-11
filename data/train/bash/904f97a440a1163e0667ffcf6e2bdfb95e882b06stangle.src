@@ -1,0 +1,204 @@
+#!/usr/bin/bash
+         exec "snobol4" "-b" "$0" "$@"
+-TITLE STANGLE
+START
+-INCLUDE 'HOST.INC'
+*
+************************************************************************
+*                                                                      *
+*     #####   #######     #     #     #   #####   #        #######     *
+*    #     #     #       # #    ##    #  #     #  #        #           *
+*    #           #      #   #   # #   #  #        #        #           *
+*     #####      #     #     #  #  #  #  #  ####  #        #####       *
+*          #     #     #######  #   # #  #     #  #        #           *
+*    #     #     #     #     #  #    ##  #     #  #        #           *
+*     #####      #     #     #  #     #   #####   #######  #######     *
+*                                                                      *
+* STANGLE         TANGLE LSS FILE TO SOURCE CODE                       *
+*                                                                      *
+************************************************************************
+*
+* FIXME: LINE TRACKING IS OFF AGAIN
+*
+* THIS IS THE MOST PRIMITIVE OF MY PROGRAMMING UTILITIES. IT TANGLES
+* THE INPUT FILE INTO SOURCE CODE.
+*
+* STANGLE READS A FILE FROM STANDARD INPUT, AND GATHERS CODE CHUNKS.
+* A CODE CHUNK ENDS WITH '@' AS THE ONLY CHARACTER ON A LINE, AND
+* STARTS WITH <<NAME>>=.
+*
+* THE CODE CHUNK IS APPENDED TO ANY OTHER CODE CHUNK WITH THE SAME
+* NAME. OTHER CHUNKS ARE ASSUMED TO BE COMMENT (HTML) CHUNKS, AND
+* ARE DISCARDED.
+*
+* ON COMPLETION OF INPUT, THE "ROOT" (BLANK NAME) CHUNK IS OUTPUT,
+* WITH RECURSIVE EXPANSION OF ANY REFERRED CHUNKS. A CHUNK REFERENCE
+* IS SIMPLY <<NAME>> ON A LINE (WITH OPTIONAL LEADING WHITE SPACE).
+* CHUNK EXPANSION IS RECURSIVE. THIS ALLOWS THE PROGRAM TO BE PRESENTED
+* IN A PLEASING FASHION TO THE PROGRAMMER, AND IN THE NEEDED ORDER
+* TO THE COMPILER.
+*
+* GENERATE -LINE LN "FILENAME" REFERENCES, TO ALLOW TRACKING ERRORS TO
+* ORIGINAL LSS FILE. LN (LINE NUMBER) IS INCREMENTED ON EACH INPUT,
+* FN (FILENAME) IS STATIC FOR THE DURATION OF THE PROGRAM. ON EACH
+* CODE BLOCK DEFINITION (OR ADDITION) START, THE LREF() FUNCTION IS
+* GIVEN AN OPPORTUNITY TO INTRODUCE THE -LINE OR OTHER DIRECTIVE AS
+* APPROPRIATE TO THE TARGET LANGUAGE. THE TARGET LANGUAGE IS TAKEN
+* FROM THE ENVIRONMENT (LSS=LANGUAGE). CURRENTLY, THIS SUPPORT IS
+* LIMITED TO SNOBOL4 (CSNOBOL4), C AND ASSEMBLER (NASM).
+*
+* EXISTING LINE DIRECTIVES ARE INTERPRETED (-LINE, #line AND %LINE)
+* TO ALLOW TRACKING THROUGH PREVIOUS TOOLS.
+*
+* stangle
+*
+         TERMINAL = 'STANGLE (FRI DEC 13 12:21:14 EST 2013)'
+*
+         DEFINE('WRITE_CHUNK(NAME)CHUNK')
+         DEFINE('FIXNAME(S)')
+         DEFINE('LREF(N)')
+         DEFINE('GETLINE()L')
+*
+         LSSTYPE = HOST(HOST_GETENV, 'LSS')
+         ROOT = HOST(HOST_GETENV, 'STANGLE_ROOT')
+         G_LSS = LSSTYPE
+         FN =
+         LN =
+         FN = HOST(HOST_ARGN, HOST(HOST_FIRSTARG))            :F(NONAME)
+         INPUT(.INPUT, 10,, FN)
+NONAME   CHUNKS = TABLE()
+         BL = ' ' | CHAR(9)
+         OPT_WS = SPAN(' ' CHAR(9)) | NULL
+         NL = CHAR(10)
+         NAME_PAT = OPT_WS '<<' BREAK('>') . CHUNK_NAME '>>=' RPOS(0)
+         REF_PAT = OPT_WS '<<' BREAK('>') . CHUNK_NAME '>>' RPOS(0)
+         L_PAT = POS(0) ('#line' | '-LINE' | '-line' '%line' | '%LINE')
++           BL OPT_WS SPAN(&DIGITS) . N
++           ((OPT_WS '"' BREAK('"') . F '"') | NULL)
+*
+* SKIP EMPTY LINES
+*
+TOP      CHUNK_NAME =
+         CHUNK =
+TOP2     L = GETLINE()                                        :F(WRITE2)
+         IDENT(L)                                               :S(TOP2)
+*
+* ARE WE AT THE BEGINNING OF A CODE CHUNK: <<NAME>>= GIVING NAMED
+* CHUNK. TO IMPLEMENT, AS LINES ARE APPENDED TO CHUNKS, ON NEW CHUNK,
+* WE NEED TO TRACK FILENAME/LINE. HOWEVER, THE CHUNK MAY BE ADDED TO
+* LATER, WHICH CAUSES GRIEFING. ADD THE -LINE REFERENCES TO THE CHUNK
+* BEING BUILT DIRECTLY, SO THE EXPANSION DOESN'T NEED ANYTHING FANCY.
+* WE HAVE AN ENVIRONMENT VARIABLE LSS= WHICH, IF IT CONTAINS
+* SNOBOL4, WILL GENERATE -LINE. IF IT CONTAINS OTHER LANGUAGES, OTHER
+* LINE TEMPLATES CAN BE ADDED. THE CHUNK NAME CAN HAVE ",NOL" ADDED
+* WHICH SUPPRESSES -LINE GENERATION. THIS IS USEFUL FOR EMBED MATERIAL
+* (SUCH AS C) -- WE SUPPORT TYPE=SNOBOL4, TYPE=C, TYPE=ASM
+* TEMPORARILY OVERRIDE THE CODE TYPE (FROM LSS=)
+*
+TOP3     CHUNK_NAME =
+         LSSTYPE = G_LSS
+         L NAME_PAT                                       :S(CODE_CHUNK)
+*
+* THIS IS A HTML (COMMENT) CHUNK. SKIP TO NEXT BLANK LINE
+*
+HTML     L POS(0) '@' RPOS(0)                                    :S(TOP)
+         IDENT(L)                                                :S(TOP)
+         L = GETLINE()                                 :S(HTML)F(WRITE2)
+*
+* PROCESSING CODE CHUNK. ADD LINES TO CHUNK UNTIL NEXT BLANK LINE.
+* WE DELIBERATELY DELAY THE -LINE OUTPUT BY THREE LINES FOR BUILDING
+* MAIN SNOBOL4 CODE. THIS ALLOWS A # AND EXEC LINE THROUGH (AND ONE
+* MORE SHELL LINE), WHICH MEETS MY NEEDS (AND DOESN'T THROW OFF THE
+* ERROR OUTPUT THAT MUCH).  THIS IS ONLY DONE FOR THE ROOT CHUNK,
+* AND ONLY IF THE ROOT CHUNK IS EMPTY. THE EXTRA SHELL LINE IS TO
+* ACCOMODATE ANY EXTRA SETUP NEEDED FOR CGI SCRIPTING. AFTER THE
+* DELAY, WE GENERATE THE LINE REFERENCE (OR IMMEDIATELY IF NO DELAY
+* IS NEEDED).
+*
+CODE_CHUNK
+         CHUNK_NAME = FIXNAME(CHUNK_NAME)
+         DIFFER(CHUNK_NAME, ROOT)                             :S(CLOOP4)
+         DIFFER(CHUNKS<CHUNK_NAME>)                           :S(CLOOP4)
+*
+         N =
+         D = 3
+DELAY    L = GETLINE()                                         :F(WRITE)
+         L POS(0) '@' RPOS(0)                                    :S(TOP)
+         CHUNKS<CHUNK_NAME> = CHUNKS<CHUNK_NAME> L NL
+         LT(N = N + 1, D)                                      :S(DELAY)
+*
+         CHUNKS<CHUNK_NAME> = CHUNKS<CHUNK_NAME> VDIFFER(LREF(D - 2))
+*
+* ACCUMULATE THE CODE CHUNK
+*
+CLOOP5   CHUNK =
+CLOOP    L = GETLINE()                                         :F(WRITE)
+* IS THIS THE END OF THE CHUNK?
+         L POS(0) '@' RPOS(0)                              :S(END_CHUNK)
+         CHUNK = CHUNK L NL
+* IF THIS IS AN "EMBED" LINE, GATHER ALL CONTINUATION LINES, AND THEN
+* GENERATE A LINE REFERENCE.
+         L POS(0) ('-SNOBOL' | '-snobol')                      :F(CLOOP)
+CLOOP2   L '+' RPOS(0)                                        :F(CLOOP3)
+         L = GETLINE()                                         :F(WRITE)
+         CHUNK = CHUNK L NL                                    :(CLOOP2)
+CLOOP3   CHUNK = CHUNK LREF(1)                                  :(CLOOP)
+CLOOP4   CHUNKS<CHUNK_NAME> = CHUNKS<CHUNK_NAME> VDIFFER(LREF(1))
+                                                               :(CLOOP5)
+*
+END_CHUNK
+         CHUNKS<CHUNK_NAME> = CHUNKS<CHUNK_NAME> CHUNK            :(TOP)
+*
+* CLOSE CODE CHUNK AND WRITE FROM THE ROOT CHUNK
+*
+WRITE    CHUNKS<CHUNK_NAME> = CHUNKS<CHUNK_NAME> CHUNK
+WRITE2   WRITE_CHUNK(ROOT)                                        :(END)
+*
+WRITE_CHUNK
+         CHUNK = CHUNKS<NAME>
+WLOOP    CHUNK (BREAK(NL) . L NL) =                              :F(WR2)
+         L REF_PAT                                               :F(WR3)
+         WRITE_CHUNK(CHUNK_NAME)                                :(WLOOP)
+WR3      OUTPUT = L                                             :(WLOOP)
+WR2      OUTPUT = VDIFFER(CHUNK)                               :(RETURN)
+*
+LREF     LREF =
+         IDENT(DOLREF)                                        :S(RETURN)
+         LSSTYPE 'SNOBOL4'                                    :F(LREF_C)
+         LREF = '-LINE ' LN + N - 1
+LREF2    LREF = LREF ' "' VDIFFER(FN) '"'
+         LREF = LREF CHAR(10)                                  :(RETURN)
+LREF_C   LSSTYPE 'C'                                        :F(LREF_ASM)
+         LREF = '#line ' LN + N - 1                             :(LREF2)
+LREF_ASM LSSTYPE 'ASM'                                        :F(RETURN)
+         LREF = '%LINE ' LN + N - 1                             :(LREF2)
+*
+FIXNAME  S ',TYPE=C' RPOS(0) =                                   :S(FX4)
+         S ',TYPE=C,' = ','                                      :F(FX3)
+FX4      LSSTYPE = 'C'                                            :(FX2)
+FX3      S ',TYPE=SNOBOL4' RPOS(0) =                             :S(FX5)
+         S ',TYPE=SNOBOL4,' = ','                                :F(FX6)
+FX5      LSSTYPE = 'SNOBOL4'                                      :(FX2)
+FX6      S ',TYPE=ASM' RPOS(0) =                                 :S(FX7)
+         S ',TYPE=ASM,' = ','                                    :F(FX2)
+FX7      LSSTYPE = 'ASM'
+FX2      FIXNAME = S
+         DOLREF = 1
+         S ',NOL' RPOS(0) =                                   :F(RETURN)
+         FIXNAME = S
+         DOLREF =                                              :(RETURN)
+*
+* GET LINE, UPDATE LN, PARSE 'LINE' STATEMENTS (FROM C, SNOBOL4 OR
+* ASSEMBLER)
+*
+GETLINE  LN = LN + 1
+         L = TRIM(INPUT)                                     :F(FRETURN)
+         F =
+         L L_PAT                                               :F(GL2)
+         FN = VDIFFER(F)
+         LN = N
+GL2      GETLINE = L                                           :(RETURN)
+*
+* CE: .MSNOBOL4;
+*
+END START

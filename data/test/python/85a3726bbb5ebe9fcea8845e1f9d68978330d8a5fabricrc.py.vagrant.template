@@ -1,0 +1,43 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# vim: tabstop=4 shiftwidth=4 softtabstop=4
+"""
+Fabric local configuration Vagrant template
+"""
+
+ROLEDEFS = {
+    "couchdb": ["192.168.100.10"],
+    "common":  ["192.168.100.20"],
+    "worker":  ["192.168.100.30", "192.168.100.40", "192.168.100.50"]
+}
+COUCH_HOST = ROLEDEFS['couchdb'][0]
+COUCH_VHOST = "couchdb"
+COUCH_PORT = '80'
+USER_AGENT = "Rdc-Crawler/0.0"
+COUCH_USER = "admin"
+COUCH_PASS = "pass"
+CACHE_BACKEND = "memcached.MemcachedCache"
+CACHE_HOST = ROLEDEFS['common'][0]
+CACHE_PORT = "11211"
+DB_ENGINE = "mysql"
+DB_NAME = "couchdb"
+DB_USER = "root"
+DB_PASS = "pass"
+DB_HOST = ROLEDEFS['common'][0]
+DB_PORT = "3306"
+SECRET_KEY = "999888777666"
+BROKER_HOST = ROLEDEFS['couchdb'][0]
+BROKER_PORT = "80"
+BROKER_USER = "admin"
+BROKER_PASS = "pass"
+BROKER_VHOST = "couchdb/celery"
+CODE_DIR = "/opt/rdc-web-crawler"
+WHOOSH_PATH = "/opt/rdc-web-crawler/whoosh"
+LOCK_ATTEMPTS = '5'
+USER = "crawler"
+PASSWORD = "pass"
+VAGRANT_PATH = "/opt/workspace/chef-crawler"
+ENVIRO = "vagrant"
+KEY_FILENAME = "/home/rdc/.ssh/crawler_rsa.pub"
+NEW_STYLE_TASKS = True
+PORT = '22'

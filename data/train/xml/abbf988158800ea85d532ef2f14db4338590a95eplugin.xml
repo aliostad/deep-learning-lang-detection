@@ -1,0 +1,52 @@
+<idea-plugin version="2">
+  <id>com.github.dgt79.plugin.eclipseactions</id>
+  <name>Eclipse Actions</name>
+  <version>1.0</version>
+  <vendor url="https://github.com/dgt79/EclipseActions">Dgt79</vendor>
+
+  <description><![CDATA[
+      Plugin that offers some actions as Eclipse IDE does.
+      ]]></description>
+
+  <change-notes><![CDATA[
+      This plugin provides some actions as Eclipse IDE does.
+
+      DuplicateLinesEx/CopyLinesEx has equivalent behaviour as Eclipse's DuplicateLines/CopyLines.
+      Behaviour is similar to IntelliJ's Duplicate Line or Block action.
+
+      ]]>
+  </change-notes>
+
+  <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="107.105"/>
+
+  <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+	  <action id="DuplicateLinesExAction" class="com.github.dgt79.action.DuplicateLinesExAction"
+			  text="Duplicate Lines Ex" description="Duplicate Lines Extended Action">
+		  <add-to-group group-id="EditSmartGroup" anchor="last"/>
+	  </action>
+	  <action id="CopyLinesExAction" class="com.github.dgt79.action.CopyLinesExAction" text="Copy Lines Ex"
+			  description="Copy Lines Extended Action">
+		  <add-to-group group-id="EditSmartGroup" anchor="last"/>
+	  </action>
+  </actions>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+</idea-plugin>

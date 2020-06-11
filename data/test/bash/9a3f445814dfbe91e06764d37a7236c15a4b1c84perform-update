@@ -1,0 +1,18 @@
+#!/bin/bash
+
+REPOFILES="fedora.repo fedora-updates.repo fedora-updates-testing.repo nornet.repo"
+SLIVERS=`find /vservers -maxdepth 1 -type d -name "[a-zA-Z]*"`
+HOST=`hostname`
+
+for sliver in $SLIVERS ; do
+   for repoFile in $REPOFILES ; do
+      if [ -e $sliver/etc/yum.repos.d/$repoFile ] ; then
+         if ! diff -q /root/$repoFile $sliver/etc/yum.repos.d/$repoFile >/dev/null ; then
+            echo "Replacing $sliver/etc/yum.repos.d/$repoFile on $HOST ..."
+            cp /root/$repoFile                       $sliver/etc/yum.repos.d/$repoFile.new   && \
+            cp $sliver/etc/yum.repos.d/$repoFile     $sliver/etc/yum.repos.d/${repoFile}~    && \
+            mv $sliver/etc/yum.repos.d/$repoFile.new $sliver/etc/yum.repos.d/$repoFile
+         fi
+      fi
+   done
+done

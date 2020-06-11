@@ -1,0 +1,10 @@
+INSERT INTO `game_event_model_equip` VALUES (25, 12088, 0, 2);
+INSERT INTO `game_event_model_equip` VALUES (25, 12093, 0, 2);
+INSERT INTO `game_event_model_equip` VALUES (25, 12095, 0, 2);
+INSERT INTO `game_event_model_equip` VALUES (25, 79670, 0, 2);
+INSERT INTO `game_event_model_equip` VALUES (25, 79675, 0, 2);
+INSERT INTO `game_event_model_equip` VALUES (25, 79676, 0, 2);
+INSERT INTO `game_event_model_equip` VALUES (25, 79690, 0, 2);
+INSERT INTO `game_event_model_equip` VALUES (25, 79792, 0, 2);
+INSERT INTO `game_event_model_equip` VALUES (25, 79807, 0, 2);
+INSERT INTO `game_event_model_equip` VALUES (25, 79814, 0, 2);

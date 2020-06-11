@@ -1,0 +1,42 @@
+#preview {
+  height: 410px;
+}
+.model-list {
+  margin-top: 20px;
+}
+.model-list__item {
+  height: 410px !important;
+  width: 100%;
+  margin: 20px 0 20px;
+}
+.model-list__item__image {
+  height: 410px !important;
+  width: 100%;
+}
+.nav {
+  min-width: 100%;
+}
+.nav_item {
+  width: 40%;
+  margin: 5px 10px !important;
+  display: inline-block;
+}
+.model__image {
+  width: 129px !important;
+  height: 129px !important;
+}
+.model__images {
+  margin: 10px auto;
+  width: 320px !important;
+}
+#logo {
+  margin-top: 20px;
+}
+#media-icons {
+  top: 0px;
+  right: 75px;
+}
+#langs {
+  top: 0px;
+  right: 40px;
+}

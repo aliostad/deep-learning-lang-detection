@@ -1,0 +1,82 @@
+:host { display: block; }
+
+.message {
+    border-color: #dcdcdc;
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+}
+
+.message:last-child {
+    border-width: 1px;
+}
+
+.message-text {
+    padding: 0.5em 16px;
+}
+
+.message-header {
+    padding: 0.5em 16px;
+    display: flex;
+}
+
+.message-title {
+    flex: 1;
+    display: flex;
+}
+
+.message-number {
+    flex-shrink: 0;
+    min-width: 2em;
+    color: #646464;
+    padding-left: 8px;
+    text-align: right;
+}
+
+.message-author {
+    flex-shrink: 0;
+    font-weight: bold;
+}
+
+.message-preview {
+    color: #646464;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 1em;
+    opacity: 1;
+    transition: -webkit-transform 0.5s, opacity 0.5s;
+    text-overflow: ellipsis;
+}
+
+.polymer-ui-collapsible-header {
+    -webkit-user-select: none;
+    cursor: default;
+}
+
+.message[active] .message-preview {
+    opacity: 0;
+    transition: -webkit-transform 0.5s, opacity 0.2s;
+    -webkit-transform: translateY(2.2em) translateZ(0);
+    pointer-events: none;
+}
+
+.approval .message-header {
+    background-color: #8fdf5f;
+}
+
+.approval .message-preview {
+    color: #222121;
+}
+
+.disapproval .message-header {
+    background-color: #E75D54;
+}
+
+.disapproval .message-header,
+.disapproval .message-preview {
+    color: #F4F4F4;
+}
+
+.selected .message-header,
+.selected .message-preview {
+    background-color: lemonchiffon;
+}

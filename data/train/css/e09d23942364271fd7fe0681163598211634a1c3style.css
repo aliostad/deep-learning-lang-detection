@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.load-wrap{
+    position: absolute;
+    width: 124px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -62px;
+}
+.load-wrap img{/*图片自适应*/
+    width: 100%;
+    height: auto;
+}
+/*加载样式结束*/
+/*canvas样式开始*/
+.canvas-wrap{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../images/busy.jpg") no-repeat 0 0;
+    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+}
+#mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#lottery{
+    position: absolute;
+    top: 0;
+    left: 0;
+}

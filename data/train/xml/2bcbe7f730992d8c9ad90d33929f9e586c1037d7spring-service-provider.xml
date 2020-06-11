@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://code.alibabatech.com/schema/dubbo
+    http://code.alibabatech.com/schema/dubbo/dubbo.xsd ">
+
+	<dubbo:application name="dubboWebServiceProvider" />
+	<!-- zookeeper注册中心 -->
+	<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
+	<!-- 使用multicast广播注册中心暴露服务地址 -->
+	<!-- <impl:registry address="multicast://10.57.41.19:1234" /> -->
+	<dubbo:protocol name="dubbo" port="20880" />
+
+    <bean id="childService" class="com.zs.service.impl.ChildServiceImpl" />
+    <bean id="companyService" class="com.zs.service.impl.CompanyServiceImpl" />
+    <bean id="positionService" class="com.zs.service.impl.PositionServiceImpl" />
+    <bean id="userService" class="com.zs.service.impl.UserServiceImpl" />
+    <bean id="dubboService" class="com.zs.service.impl._DubboServiceImpl" />
+    <bean id="redisService" class="com.zs.service.impl._RedisServiceImpl" />
+
+	<dubbo:service interface="com.zs.service.ChildService" ref="childService" />
+    <dubbo:service interface="com.zs.service.CompanyService" ref="companyService" />
+    <dubbo:service interface="com.zs.service.PositionService" ref="positionService" />
+    <dubbo:service interface="com.zs.service.UserService" ref="userService" />
+    <dubbo:service interface="com.zs.service._DubboService" ref="dubboService" />
+    <dubbo:service interface="com.zs.service._RedisService" ref="redisService" />
+
+</beans>

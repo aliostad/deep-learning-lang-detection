@@ -1,0 +1,37 @@
+.input-business-service-name, .input-business-service-tier3,
+	.input-business-service-slu, .input-business-service-company,
+	.input-business-service-company-inc,
+	.input-business-service-criticality,
+	.input-business-service-environment,
+	.input-business-service-customer-contact,
+	.input-business-service-sla-customer-contact,
+	.input-business-service-sla-customer-contact-dept,
+	.input-business-service-related-db-instances,
+	.input-business-service-maintainance-window,
+	.input-business-service-special-requirements,
+	.input-business-service-weekly-support-hours,
+	.input-business-service-service-description,
+	.input-business-service-backup-restore, .input-business-relation-steps
+	{
+	line-height: 23px;
+	border: solid 1px #ccc;
+	background-color: #FFFAFA;
+	height: 23px;
+	width: 300px;
+}
+
+.select-business-service-status, .select-business-service-tier1,
+	.select-business-service-tier2, .select-business-service-service-type,
+	.select-business-service-service-line,
+	.select-business-service-maintenance-flag,
+	.select-business-service-sox-relevant,
+	.select-business-service-top-service,
+	.select-business-service-pci-relevant,
+	.select-business-service-privacy-type,
+	.select-business-service-customer-db, .select-business-service-domain {
+	line-height: 23px;
+	border: solid 1px #ccc;
+	background-color: #FFFAFA;
+	height: 23px;
+	width: 150px;
+}

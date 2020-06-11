@@ -1,0 +1,130 @@
+body {
+    font-size: 15px;
+}
+header h1 {
+    font-size: 200%;
+    line-height: 41.5px;
+    margin-bottom: 0;
+}
+header ul.nav {
+    margin-top: 20px;
+}
+hr {
+    margin-top: 10px;
+}
+blockquote {
+    font-size: 14px;
+}
+.col-main {
+    padding-left: 32px;
+}
+.markdown-body {
+}
+.markdown-body pre {
+    margin: 1em 3em;
+}
+.markdown-body table {
+    margin: 2em auto;
+    width: auto;
+    display: table;
+}
+a[regex],
+a[regex]:visited {
+    font-weight: bold;
+    color: black !important;
+}
+a.permalink {
+    margin-left: -2ex;
+    width: 2ex;
+    text-decoration: none;
+    color: #888 !important;
+    -moz-user-select: none;
+    position: absolute;
+    text-align: center;
+    font-weight: normal;
+    opacity: 0;
+}
+video {
+    margin: 1em auto;
+    width: auto;
+    display: block;
+}
+
+/**** Affix Navigation ****/
+
+.affix-nav {
+}
+.affix-nav.affix {
+    top: 0;
+    position: fixed;
+}
+.affix-nav.affix-top {
+    position: static;
+}
+.affix-nav.affix-bottom {
+    position: absolute;
+}
+
+/* normal */
+.affix-nav .nav>li>a {
+    color: #777;
+    border-left: 2px solid transparent;
+    padding: 0.3em 0 0.3em 30px;
+    font-weight: normal;
+}
+.affix-nav .nav .nav>li>a {
+    color: #777;
+    border-left: 2px solid transparent;
+    padding: 0 0 0 40px;
+    font-weight: normal;
+    font-size: 90%;
+}
+
+/* hover, focus */
+.affix-nav .nav>li>a:hover,
+.affix-nav .nav>li>a:focus,
+.affix-nav .nav .nav>li>a:hover,
+.affix-nav .nav .nav>li>a:focus {
+    color: #2A5CAA;
+    border-left: solid 1px #2A5CAA;
+    padding-left: 31px;
+    background-color: transparent;
+    text-decoration: none;
+}
+.affix-nav .nav .nav>li>a:hover,
+.affix-nav .nav .nav>li>a:focus {
+    border-left: solid 1px #2A5CAA;
+    padding-left: 41px;
+}
+.affix-nav .nav>.active>a:hover,
+.affix-nav .nav>.active>a:focus {
+    border-left: solid 2px #2A5CAA;
+    padding-left: 30px;
+}
+
+
+/* active normal */
+.affix-nav .nav>.active>a {
+    color: #2A5CAA;
+    font-weight: bold;
+    border-left: solid 2px #2A5CAA;
+    padding-left: 30px;
+}
+
+/* nested active */
+.affix-nav .nav .nav>.active>a {
+    color: #2A5CAA;
+    border-left: solid 2px #2A5CAA;
+    padding-left: 40px;
+}
+.affix-nav .nav .nav>.active>a:hover,
+.affix-nav .nav .nav>.active>a:focus {
+    border-left: solid 2px #2A5CAA;
+    padding-left: 40px;
+}
+.affix-nav .nav ul.nav {
+    display: none;
+}
+.affix-nav .nav>.active>ul.nav {
+    display: block;
+}

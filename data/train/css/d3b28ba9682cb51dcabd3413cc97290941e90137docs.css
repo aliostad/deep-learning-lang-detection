@@ -1,0 +1,70 @@
+#fortune-admin #guide {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 60px;
+    width: 200px;
+}
+#fortune-admin #guide.stick {
+    position: fixed;
+}
+#fortune-admin #api-docs {
+    margin-left: 200px;
+    min-width: 750px;
+    padding-left: 20px;
+}
+#fortune-admin #api-docs .tab-content {
+    margin-left: 50%;
+    position: relative;
+}
+
+#fortune-admin #api-docs .single-resource {
+    clear: left;
+    margin-left: -100%;
+    position: relative;
+    min-height: 400px;
+    padding-top: 50px;
+}
+
+#fortune-admin #api-docs .single-resource .resource-description {
+    float: left;
+    width: 50%;
+    padding: 0 30px;
+}
+
+#fortune-admin #api-docs .single-resource .resource-description table td {
+    vertical-align: top;
+    padding: 10px;
+}
+
+#fortune-admin #api-docs .single-resource .resource-description table td:first-child {
+    text-align: right;
+}
+
+#fortune-admin #api-docs .method .resource-example {
+    position: relative;
+    margin-left: 50%;
+    width: 50%;
+}
+
+#fortune-admin .anchor {
+    padding-top: 40px;
+    margin-top: -40px;
+}
+
+#fortune-admin #api-docs .single-resource .resource-giu {
+    width: 600px;
+}
+
+#fortune-admin #api-docs .single-resource .resource-giu .request {
+    padding: 20px 0 0 0;
+}
+
+#fortune-admin #api-docs .single-resource .resource-giu .response {
+    clear: left;
+    padding-top: 30px;
+}
+
+

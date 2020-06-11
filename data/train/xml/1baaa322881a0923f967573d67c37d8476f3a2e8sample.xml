@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SAMPLE_SET xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="ftp://ftp.sra.ebi.ac.uk/meta/xsd/sra_1_5/SRA.sample.xsd">
+    <SAMPLE alias="Sample001"
+        center_name="BILS">
+        <TITLE>A human sample</TITLE>
+        <SAMPLE_NAME>
+            <TAXON_ID>9606</TAXON_ID>
+            <SCIENTIFIC_NAME>Homo sapiens</SCIENTIFIC_NAME>
+            <COMMON_NAME>human</COMMON_NAME>
+        </SAMPLE_NAME>
+        <DESCRIPTION>Sample from foo individual 1 affected by bar</DESCRIPTION>
+        <SAMPLE_ATTRIBUTES>
+            <SAMPLE_ATTRIBUTE>
+                <TAG>ENA-CHECKLIST</TAG>
+                <VALUE>ERC000011</VALUE>
+                <UNITS></UNITS>
+            </SAMPLE_ATTRIBUTE>
+            <SAMPLE_ATTRIBUTE>
+                <TAG>sex</TAG>
+                <VALUE>male</VALUE>
+                <UNITS></UNITS>
+            </SAMPLE_ATTRIBUTE>
+            <SAMPLE_ATTRIBUTE>
+                <TAG>cell_type</TAG>
+                <VALUE>liver</VALUE>
+                <UNITS></UNITS>
+            </SAMPLE_ATTRIBUTE>
+            <SAMPLE_ATTRIBUTE>
+                <TAG>ngi_sample_id</TAG>
+                <VALUE>X.Xson_15_01_101</VALUE>
+                <UNITS></UNITS>
+            </SAMPLE_ATTRIBUTE>
+        </SAMPLE_ATTRIBUTES>
+    </SAMPLE> 
+    <SAMPLE alias="Sample002"
+        center_name="BILS">
+        <TITLE>A human sample</TITLE>
+        <SAMPLE_NAME>
+            <TAXON_ID>9606</TAXON_ID>
+            <SCIENTIFIC_NAME>Homo sapiens</SCIENTIFIC_NAME>
+            <COMMON_NAME>human</COMMON_NAME>
+        </SAMPLE_NAME>
+        <DESCRIPTION>Sample from foo individual 2 affected by bar</DESCRIPTION>
+        <SAMPLE_ATTRIBUTES>
+            <SAMPLE_ATTRIBUTE>
+                <TAG>ENA-CHECKLIST</TAG>
+                <VALUE>ERC000011</VALUE>
+                <UNITS></UNITS>
+            </SAMPLE_ATTRIBUTE>
+            <SAMPLE_ATTRIBUTE>
+                <TAG>sex</TAG>
+                <VALUE>male</VALUE>
+                <UNITS></UNITS>
+            </SAMPLE_ATTRIBUTE>
+            <SAMPLE_ATTRIBUTE>
+                <TAG>cell_type</TAG>
+                <VALUE>liver</VALUE>
+                <UNITS></UNITS>
+            </SAMPLE_ATTRIBUTE>
+            <SAMPLE_ATTRIBUTE>
+                <TAG>ngi_sample_id</TAG>
+                <VALUE>X.Xson_15_01_102</VALUE>
+                <UNITS></UNITS>
+            </SAMPLE_ATTRIBUTE>
+        </SAMPLE_ATTRIBUTES>
+    </SAMPLE> 
+</SAMPLE_SET>

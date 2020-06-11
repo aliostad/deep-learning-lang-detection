@@ -1,0 +1,71 @@
+<apiPackage id="com.supermap.web.resources"><apiName>com.supermap.web.resources</apiName><apiDetail/><apiClassifier id="com.supermap.web.resources:SmServerResource"><apiName>SmServerResource</apiName><shortdesc>
+	 SuperMap iServer Java 2008 错误消息编码列表.</shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>com.supermap.web.resources:SmResource</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 SuperMap iServer Java 2008 错误消息编码列表.
+	 <p>该类包含与 SuperMap iServer Java 2008 服务关联的相关类的错误消息，若要修改这些错误消息语言（包括英文和中文），右键单击您的”Flex 项目”-->属性，如下图，点击“Flex 编译”，设置红框部分，图中引入的是中文 zh_CN，用户若想切换为英文，只需将 zh_CN 替换为 en_US 即可。<br/><img src="../../../../images/SmResource.png"/><br/>错误消息语言设置与您所使用的 Flash Builder 开发平台的语言无关，即如果您使用的是英文版的 Flash Builder，也可将错误消息语言切换为中文或其它语言，目前系统内部仅提供中文和英文两种语言。</p> 
+	 
+	 </apiDesc></apiClassifierDetail></apiClassifier><apiClassifier id="com.supermap.web.resources:SmError"><apiName>SmError</apiName><shortdesc>
+	 异常信息类.</shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Error</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 异常信息类.
+	 <p>该类用于定义系统内抛出的异常信息，以帮助您排除代码中的故障。通常，将 SmError 对象从 try 代码块中引发，然后由 catch 或 finally 代码块捕获。 </p>
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="com.supermap.web.resources:SmError:SmError"><apiName>SmError</apiName><shortdesc>
+		 初始化 SmError 的新实例。 
+		 </shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>errorCode</apiItemName><apiType value="String"/><apiDesc>引发错误的源代码。
+		 </apiDesc></apiParam><apiParam><apiItemName>args</apiItemName><apiType value="restParam"/><apiDesc>其它参数。
+		 
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 初始化 SmError 的新实例。 
+		 </apiDesc></apiConstructorDetail></apiConstructor></apiClassifier><apiClassifier id="com.supermap.web.resources:SmResource"><apiName>SmResource</apiName><shortdesc>
+	 错误消息编码列表.</shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 错误消息编码列表.
+	 <p>该类列举出了类库中触发的所有错误消息的编码，若要修改这些错误消息语言（包括英文和中文），右键单击您的”Flex 项目”-->属性，如下图，点击“Flex 编译”，设置红框部分，图中引入的是中文 zh_CN，用户若想切换为英文，只需将 zh_CN 替换为 en_US 即可。<br/><img src="../../../../images/smResource.png"/><br/>错误消息语言设置与您所使用的 Flash Builder 开发平台的语言无关，即如果您使用的是英文版的 Flash Builder，也可将错误消息语言切换为中文或其它语言，目前系统内部仅提供中文和英文两种语言。</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="com.supermap.web.resources:SmResource:formatMessage"><apiName>formatMessage</apiName><shortdesc>
+		 根据错误代码和其它相关参数生成错误消息.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiStatic/><apiReturn><apiDesc>返回错误消息。
+		 
+		 </apiDesc><apiType value="String"/></apiReturn><apiParam><apiItemName>errorCode</apiItemName><apiType value="String"/><apiDesc>引发错误的源代码。
+		 </apiDesc></apiParam><apiParam><apiItemName>args</apiItemName><apiType value="restParam"/><apiDesc>其它相关参数。参数类型和个数由用户自定义。
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 根据错误代码和其它相关参数生成错误消息.
+		 <p>使用此方法生成的错误消息名称为：SmResource.SUPERMAP_MESSAGES。</p> 
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="com.supermap.web.resources:SmResource:HEIGHT_LESSTHAN_ZERO"><apiName>HEIGHT_LESSTHAN_ZERO</apiName><shortdesc>
+		 错误 E0001E：高度小于 0。
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>E0001E</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 错误 E0001E：高度小于 0。
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="com.supermap.web.resources:SmResource:NONE_PARAMETERS"><apiName>NONE_PARAMETERS</apiName><shortdesc>
+		错误 E0007E：查询参数为空。
+		</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>E0007E</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		错误 E0007E：查询参数为空。
+		</apiDesc></apiValueDetail></apiValue><apiValue id="com.supermap.web.resources:SmResource:NUMBER_LESSTHAN_OR_EQUAL_ZERO"><apiName>NUMBER_LESSTHAN_OR_EQUAL_ZERO</apiName><shortdesc>
+		 错误 E0008E：数值必须大于0! 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>E0008E</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 错误 E0008E：数值必须大于0! 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="com.supermap.web.resources:SmResource:OUT_OF_ARRAY_RANGE"><apiName>OUT_OF_ARRAY_RANGE</apiName><shortdesc>
+		 	错误 E0003E：索引值超出数组范围。
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>E0003E</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 	错误 E0003E：索引值超出数组范围。
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="com.supermap.web.resources:SmResource:PART_LENGHT_LESSTHAN_THREE"><apiName>PART_LENGHT_LESSTHAN_THREE</apiName><shortdesc>
+		 错误 E0005E：数组的长度至少为 3。
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>E0005E</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 错误 E0005E：数组的长度至少为 3。
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="com.supermap.web.resources:SmResource:PART_LENGHT_LESSTHAN_TWO"><apiName>PART_LENGHT_LESSTHAN_TWO</apiName><shortdesc>
+		 错误 E0004E：数组的长度至少为 2。
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>E0004E</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 错误 E0004E：数组的长度至少为 2。
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="com.supermap.web.resources:SmResource:SUPERMAP_MESSAGES"><apiName>SUPERMAP_MESSAGES</apiName><shortdesc>
+		 错误 SuperMapMessage：SuperMap 异常错误信息。 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>SuperMapMessage</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 错误 SuperMapMessage：SuperMap 异常错误信息。 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="com.supermap.web.resources:SmResource:THEMERANGEITEM_START_END"><apiName>THEMERANGEITEM_START_END</apiName><shortdesc>
+		 错误 E0006E：范围分段专题图相邻子项起始值不相等。
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>E0006E</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 错误 E0006E：范围分段专题图相邻子项起始值不相等。
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="com.supermap.web.resources:SmResource:USE_SUBCLASS"><apiName>USE_SUBCLASS</apiName><shortdesc>
+		 错误 E0002E：不能被实例化。
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>E0002E</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 错误 E0002E：不能被实例化。
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="com.supermap.web.resources:SmResource:WIDTH_LESSTHAN_ZERO"><apiName>WIDTH_LESSTHAN_ZERO</apiName><shortdesc>
+		 错误 E0000E：宽度小于 0。
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>E0000E</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 错误 E0000E：宽度小于 0。
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="com.supermap.web.resources:SmResource:ZOOM_IN"><apiName>ZOOM_IN</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>E0010E</apiData><apiType value="String"/></apiValueDef></apiValueDetail></apiValue><apiValue id="com.supermap.web.resources:SmResource:ZOOM_LEVEL"><apiName>ZOOM_LEVEL</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>E0009E</apiData><apiType value="String"/></apiValueDef></apiValueDetail></apiValue><apiValue id="com.supermap.web.resources:SmResource:ZOOM_OUT"><apiName>ZOOM_OUT</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>E0011E</apiData><apiType value="String"/></apiValueDef></apiValueDetail></apiValue></apiClassifier></apiPackage>

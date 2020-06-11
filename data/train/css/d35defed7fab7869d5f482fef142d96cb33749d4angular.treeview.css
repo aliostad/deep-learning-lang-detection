@@ -1,0 +1,57 @@
+div[data-angular-treeview] {
+  /* prevent user selection */
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  /*font-family: Tahoma;*/
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-size:11px;
+  color: #555;
+  text-decoration: none;
+}
+div[data-tree-model] ul {
+  margin: 0;
+  padding: 0 0 0 5px;
+  list-style: none; 
+  border: none;
+}
+.children {
+  padding-left: 7px;
+}
+div[data-tree-model] li {
+  position: relative;
+  padding: 0 0 0 2px;
+  line-height: 18px;
+}
+div[data-tree-model] li  div.truncated {
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+div[data-tree-model] li i{
+  padding: 1px 8px;
+  background: url("../img/treeview.png") no-repeat top left;
+}
+div[data-tree-model] li i.collapsed{background-position:0 0;width:16px;height:16px;}
+div[data-tree-model] li i.expanded{background-position:-16px 0;width:16px;height:16px;}
+div[data-tree-model] li i.normal{background-position:-32px 0;width:15px;height:14px;}
+
+div[data-tree-model] li i, div[data-tree-model] li span {
+  cursor: pointer;
+}
+div[data-tree-model] li span {
+  border-radius:3px;
+  padding: 0 5px 0 3px;
+}
+div[data-tree-model] li span:hover {background:#E2E2E2;border:1px solid #C2C2C2;}
+div[data-tree-model] li div.selected span {
+  background: #6F6F6F;
+  border: 1px solid #3C3C3C;
+}
+div[data-tree-model] li  div.selected, div[data-tree-model] li div.selected span {
+  color: #FFF;
+  text-shadow: 1px 1px 1px #000;
+}

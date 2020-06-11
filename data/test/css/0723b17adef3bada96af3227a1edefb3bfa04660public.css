@@ -1,0 +1,46 @@
+/* CSS Document */
+#modelNavigate{
+	margin-bottom:15px;
+}
+#modelNavigate .main ul{
+	padding:0px 0px 0px 15px;
+}
+#modelNavigate .main ul li{
+	padding:5px 0px 4px 10px;
+	background:url(../images/navbg.gif) left center no-repeat;
+}
+#modelNavigate .main ul li:hover{
+	background:url(../images/navbgA.gif) left center no-repeat;
+}
+#modelNavigate .main ul li a:hover{
+	color:#ff6600;
+}
+#content{
+	min-height:300px;
+	margin-top:15px;
+	margin-bottom:10px;
+	height:auto;
+}
+#left{
+	width:26%;
+}
+#right .rounded h3 span b{
+	font-weight:100;
+	font-size:12px;
+}
+#right .rounded h3 span b a{
+	color:#003399;
+}
+#right .rounded h3 span b a:hover{
+	color:#ff6600;
+}
+#right .rounded .main {
+	padding:10px 20px 10px 20px;
+}
+strong{
+	color:#F00;
+}
+p{
+	text-indent:2em;
+	line-height:2em;
+}

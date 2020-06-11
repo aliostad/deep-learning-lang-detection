@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <messages>
+    <message id="ezop-menu">Проект ЭЗОП</message>
+    <message id="projects-menu">Проекты</message>
+    <message id="login-menu">Управление пользователями</message>
+    <message id="ezop-menu-morda">О проекте</message>
+    <message id="ezop-menu-docs">Документация</message>
+    <message id="ezop-menu-news">Новости</message>
+    <message id="projects-menu-list">Список проектов</message>
+    <message id="projects-menu-mine">Мои проекты</message>
+    <message id="projects-menu-create">Создание нового проекта</message>
+    <message id="login-menu-login">Вход в систему</message>
+    <message id="login-menu-registration">Регистрация в системе</message>
+    <message id="registration.first">Имя</message>
+    <message id="registration.second">Фамилия</message>
+    <message id="registration.email">Электронная почта</message>
+    <message id="registration.nick">Идентификатор</message>
+    <message id="registration.password">Пароль</message>
+    <message id="registration.push">Зарегистрироваться</message>
+
+    <message id="new-ontology-in-kernel-environment">Онтология в среде ядра</message>
+    <message id="ontology-base">База онтологий</message>
+    <message id="ontology-in-environment">Онтология в среде</message>
+    <message id="onto-dictionary">Словарь понятий</message>
+    <message id="onto-list">Список онтологий</message>
+    <message id="template-dictionary">Словарь шаблонов</message>
+    <message id="template-list">Список шаблонов</message>
+    <message id="project-title">Веб-сервер онтологий системы ЭЗОП</message>
+    <message id="ontologies">Управление онтологиями</message>
+    <message id="user-login">Вход в систему</message>
+    <message id="documentation">Документация</message>
+    <message id="main-page">О проекте</message>
+    <message id="onto.examples">Примеры</message>
+    <message id="main.news">Новости</message>
+    <message id="user.name">Имя пользователя: </message>
+    <message id="user.password">Пароль: </message>
+    <message id="user.login">Войти</message>
+    <message id="message.confirmation">Сообщение</message>
+    <message id="login.ok">Вход произведен успешно</message>
+    <message id="user.anonimus">Аноноимный</message>
+
+    <message id="registration.title">
+       <h2>Регистрация нового пользователя</h2>
+    </message>
+
+    <message id="onto-list-text">
+       <h2>Список онтологий</h2>
+    </message>
+
+    <message id="login.title">
+      <h2>Вход в систему</h2>
+    </message>
+
+    <message id="documentation-text">
+      <h2>Документация к системе</h2>
+    </message>
+
+    <message id="sidebar-title">
+      <h1>Веб-сервер онтологий системы ЭЗОП</h1>
+    </message>
+
+    <message id="morda">
+      <h2>Главная страница проекта</h2>
+
+      <p>Веб-сервер онтологий разрабатываться для библиотеки понятий, используемой системой представления понятий <b>ЭЗОП</b> (<b>Э</b>лементов <b>З</b>адач и <b>Оп</b>ределений).</p>
+
+      <p>Веб-сервер онтологий предполагает многопользовательскую работу с онтологиями, когда необходимо обеспечить пользователям возможность помещать
+         на сервер разработанные библиотеки понятий для последующего общего использования в среде Интернет.</p>
+
+      <p>
+        Веб-сервер онтологий решает следующие задачи:
+        <ul>
+          <li>Предоставление возможности совместной работы пользователей над онтологиями;</li>
+          <li>Предоставление возможности многократно править текст без применения соответствующего ПО на стороне редактора;</li>
+          <li>Проявление изменения сразу после их внесения;</li>
+          <li>Разделение содержимого на именованные страницы;</li>
+          <li>Ведение учёта изменений (учёт версий) онтологий – возможность сравнения редакций и восстановления ранних версий.</li>
+        </ul>
+      </p>
+    </message>
+
+    <message id="ontologies-text">
+      <h2>Управление онтологиями</h2>
+    </message>
+  </messages>
+

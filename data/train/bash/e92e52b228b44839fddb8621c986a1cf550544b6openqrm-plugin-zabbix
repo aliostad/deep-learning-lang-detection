@@ -1,0 +1,136 @@
+#!/bin/bash
+# init script for the openQRM zabbix plugin
+#
+# This file is part of openQRM.
+#
+# openQRM is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License version 2
+# as published by the Free Software Foundation.
+#
+# openQRM is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with openQRM.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Copyright 2009, Matthias Rechenburg <matt@openqrm.com>
+#
+OPENQRM_SERVER_BASE_DIR=$(pushd $(dirname $0)/../../../../.. > /dev/null; echo $PWD; popd > /dev/null)
+. $OPENQRM_SERVER_BASE_DIR/openqrm/etc/openqrm-server.conf
+. $OPENQRM_SERVER_BASE_DIR/openqrm/include/openqrm-functions
+. $OPENQRM_SERVER_BASE_DIR/openqrm/include/openqrm-server-functions
+. $OPENQRM_SERVER_BASE_DIR/openqrm/plugins/zabbix/include/openqrm-plugin-zabbix-functions
+. $OPENQRM_SERVER_BASE_DIR/openqrm/plugins/zabbix/etc/openqrm-plugin-zabbix.conf
+openqrm_server_get_config
+export resource_openqrmserver=$OPENQRM_SERVER_IP_ADDRESS
+export LANG=C
+
+function openqrm_plugin_zabbix_start() {
+	echo "Starting the openQRM zabbix-plugin"
+	openqrm_plugin_zabbix_stop 1>/dev/null 2>&1
+    # start server
+
+    if [ -x "/etc/init.d/zabbix-server" ]; then
+        if [ -x "`which invoke-rc.d 2>/dev/null`" ]; then
+            invoke-rc.d zabbix-server start || exit $?
+        else
+            /etc/init.d/zabbix-server start || exit $?
+        fi
+    elif [ -x /etc/init.d/zabbix ]; then
+        if [ -x "`which invoke-rc.d 2>/dev/null`" ]; then
+            invoke-rc.d zabbix start || exit $?
+        else
+            /etc/init.d/zabbix start || exit $?
+        fi
+	fi
+    # start agent
+    if [ -x "/etc/init.d/zabbix-agent" ]; then
+        if [ -x "`which invoke-rc.d 2>/dev/null`" ]; then
+            invoke-rc.d zabbix-agent start || exit $?
+        else
+            /etc/init.d/zabbix-agent start || exit $?
+        fi
+	fi
+
+	touch $OPENQRM_WEBSERVER_DOCUMENT_ROOT/openqrm/base/plugins/zabbix/.running
+	return 0
+}
+
+
+function openqrm_plugin_zabbix_stop() {
+	echo "Stopping the openQRM zabbix-plugin"
+    if [ -x "/etc/init.d/zabbix-agent" ]; then
+        if [ -x "`which invoke-rc.d 2>/dev/null`" ]; then
+            invoke-rc.d zabbix-agent stop || exit $?
+        else
+            /etc/init.d/zabbix-agent stop || exit $?
+        fi
+	fi
+    if [ -x "/etc/init.d/zabbix-server" ]; then
+        if [ -x "`which invoke-rc.d 2>/dev/null`" ]; then
+            invoke-rc.d zabbix-server stop || exit $?
+        else
+            /etc/init.d/zabbix-server stop || exit $?
+        fi
+    elif [ -x /etc/init.d/zabbix ]; then
+        if [ -x "`which invoke-rc.d 2>/dev/null`" ]; then
+            invoke-rc.d zabbix stop || exit $?
+        else
+            /etc/init.d/zabbix stop || exit $?
+        fi
+	fi
+	rm -f $OPENQRM_WEBSERVER_DOCUMENT_ROOT/openqrm/base/plugins/zabbix/.running
+	return 0
+}
+
+
+function openqrm_plugin_zabbix_init() {
+	echo "Initializing the openQRM zabbix-plugin"
+
+    # linking the web dir
+    ln -sf $OPENQRM_SERVER_BASE_DIR/openqrm/plugins/zabbix/web $OPENQRM_WEBSERVER_DOCUMENT_ROOT/openqrm/base/plugins/zabbix
+    # link the boot-service
+    ln -sf $OPENQRM_SERVER_BASE_DIR/openqrm/plugins/zabbix/web/boot-service-zabbix.tgz $OPENQRM_WEBSERVER_DOCUMENT_ROOT/openqrm/boot-service/boot-service-zabbix.tgz
+	return 0
+}
+
+
+function openqrm_plugin_zabbix_uninstall() {
+	echo "Uninstalling the openQRM zabbix-plugin"
+	openqrm_plugin_zabbix_stop
+	# unlinking the web dir
+	rm -rf $OPENQRM_WEBSERVER_DOCUMENT_ROOT/openqrm/base/plugins/zabbix
+	# unlinking the boot-service
+	rm -f $OPENQRM_WEBSERVER_DOCUMENT_ROOT/openqrm/boot-service/boot-service-zabbix.tgz
+}
+
+
+
+case "$1" in
+	start)
+		openqrm_plugin_zabbix_start
+		;;
+	stop)
+		openqrm_plugin_zabbix_stop
+		;;
+	restart)
+		openqrm_plugin_zabbix_stop
+		sleep 1
+		openqrm_plugin_zabbix_start
+		;;
+	init)
+		openqrm_plugin_zabbix_init
+		;;
+	uninstall)
+		openqrm_plugin_zabbix_uninstall
+		;;
+	*)
+		echo "Usage: $0 {start|stop|restart|init|uninstall}"
+		exit 1
+
+esac
+exit $?
+
+

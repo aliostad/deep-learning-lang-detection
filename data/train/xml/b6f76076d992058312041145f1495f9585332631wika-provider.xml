@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+        ">
+
+	<dubbo:provider timeout="10000"/>
+	
+	<dubbo:service interface="com.dajie.wika.service.AccountService"
+		ref="accountService" >
+		<dubbo:method name="login" timeout="5000" />
+		<dubbo:method name="loginWithDJ" timeout="5000" />
+		<dubbo:method name="register" timeout="5000" />
+		<dubbo:method name="activeDJAccount" timeout="5000" />
+	</dubbo:service>
+	
+	<dubbo:service interface="com.dajie.wika.service.MessageService"
+		ref="messageService" />
+	<dubbo:service interface="com.dajie.wika.service.stub.MessageServiceStub"
+		ref="messageServiceStub" />
+	<dubbo:service interface="com.dajie.wika.service.UserCountService"
+		ref="userCountService" />
+	<dubbo:service interface="com.dajie.wika.service.stub.UserCountServiceStub"
+		ref="userCountServiceStub" />
+	<dubbo:service interface="com.dajie.wika.service.stub.ProfileServiceStub"
+		ref="profileServiceStub" />
+	<dubbo:service interface="com.dajie.wika.service.ResourceService"
+		ref="resourceService" />
+	<dubbo:service interface="com.dajie.wika.service.SystemService"
+		ref="systemService" />
+	<dubbo:service interface="com.dajie.wika.service.RelationService"
+		ref="relationService" />
+    <dubbo:service interface="com.dajie.wika.service.UserSettingsService"
+		ref="userSettingsService" />
+	<dubbo:service interface="com.dajie.wika.service.TemplateService"
+		ref="templateService"/>
+	<dubbo:service interface="com.dajie.wika.service.CorpSearchService"
+		ref="corpSearchService" />
+	<dubbo:service interface="com.dajie.wika.service.ShortUrlService"
+		ref="shortUrlService" />
+	<dubbo:service interface="com.dajie.wika.service.OccupationService"
+		ref="occupationService" />
+	<dubbo:service interface="com.dajie.wika.service.stub.RelationServiceStub"
+	    ref="relationServiceStub" />
+	<dubbo:service interface="com.dajie.wika.service.QRcodeService"
+	    ref="qRcodeService">
+		<dubbo:method name="genQRcode" timeout="5000" />
+    </dubbo:service>
+</beans>

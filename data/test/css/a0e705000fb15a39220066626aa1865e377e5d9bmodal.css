@@ -1,0 +1,32 @@
+/*选中供应商的模态框*/
+#model_cover_supp{width: 100%;height: 100%;position: fixed;top: 0%;left: 0%;z-index: 10;background: rgba(0,0,0,0.2);}
+#model_cover_supp #pop_menu{width: 880px;height: 500px;overflow-y: auto;background: #fff;border:1px solid #666;
+	position: absolute;top: 0%;left: 2%; position: absolute;top:50%;left:50%;margin:-300px 0 0 -440px;}
+#model_cover_supp .pop_list{padding-left: 20px;margin: 10px 0;}
+#model_cover_supp .pop_title{height: 40px;font-size: 20px;padding:0 10px 0 20px;margin-top: 40px;border-bottom: 1px solid #ccc;}
+#model_cover_supp .pop_list span{margin-left: 10px;}
+#model_cover_supp .pop_list .pop_search{width: 160px;height: 28px;line-height: 28px;padding-left:6px;margin-left: 10px;}
+#model_cover_supp .pop_look{display: inline-block;width: 90px;line-height: 28px;background: #0283e4;text-align: center;color: #fff;}
+#model_cover_supp .pop_list a{margin-left: 20px;color:#0283e4;}
+#model_cover_supp table{width: 860px;border: 1px solid #eee;}
+#model_cover_supp table a{color:#0283e4;}
+#model_cover_supp table td,th{text-align: center;}
+#model_cover_supp table tbody td{border-bottom: 1px solid #ccc;}
+#model_cover_supp table thead{background: #e5edef;}
+#model_cover_supp table td input{width: 80px;text-align: center;}
+#model_cover_supp .selected{color: #ccc;}
+#model_cover_supp .pop_footer{margin: 20px 20px;font-size: 14px;}
+#model_cover_supp .pop_footer .pop_num{display: inline-block;width: 30px;border: 1px solid #ccc;
+	line-height: 24px;text-align: center;color: #666;}
+#model_cover_supp .pop_footer .pop_page{background: #0283e4;padding: 2px 8px;font-size: 14px;color: #fff;}
+#model_cover_supp .pop_footer p input{text-align: center;width: 40px;height:24px;}
+#model_cover_supp span.del{display: inline-block;width: 20px;height:20px;border: 1px solid #666;
+    border-radius: 50%;line-height: 16px;text-align: center;}
+#model_cover_supp .del:hover{color:#0283e4;border: 1px solid #0283e4;cursor: pointer;}
+#model_cover_supp .new_add{display: inline-block;background: #0283e4;padding: 2px 8px;
+	font-size: 14px;color: #fff;margin-right: 50px;cursor: pointer;}
+#model_cover_supp .supplier{padding-bottom: 20px;}
+#model_cover_supp .supplier a{display: inline-block;width: 160px;line-height: 35px;
+	text-align: center;font-size: 18px;}
+#model_cover_supp .supplier_sumit{background: #0283e4;color: #fff;margin: 30px 60px 0 240px;}
+#model_cover_supp .supplier_back{border: 1px solid #0283e4;color: #0283e4;}

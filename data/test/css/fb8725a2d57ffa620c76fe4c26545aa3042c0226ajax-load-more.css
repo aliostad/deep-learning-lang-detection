@@ -1,0 +1,129 @@
+button#load-more{	
+   width:auto;
+   font-size:14px !important;  
+   border: none;
+   margin-bottom: 4px;
+   display: inline-block;		
+   position: relative;
+   -webkit-transition: padding 0.25s ease-in-out;
+   -moz-transition: padding 0.25s ease-in-out;
+   transition: padding 0.25s ease-in-out;   
+   line-height: 42px;
+   padding:0;
+   background: transparent;
+   color:#808080;
+   text-align: right;	
+   height: 42px;
+   text-decoration: none !important;
+   border: none;
+   -webkit-appearance: caret;
+   text-transform: uppercase;
+}
+	button#load-more:hover{		
+		color: #000;
+		text-decoration: none;
+
+	}
+	button#load-more:active{
+		text-decoration: none !important;
+	}
+	
+	/* Loading */
+    button#load-more.loading{
+    	padding: 0 20px 0 50px;
+    	text-align: right;
+    	color: #fff;
+    	margin-top: 30px;
+    }
+    /* Loaded / Done */
+	button#load-more.done{
+		padding: 0 20px;
+		color: #ccc;
+
+    }
+    
+    /* Loading Icon */
+	button #load-more:before,
+	button#load-more.done:before{                
+		background: none;
+		width: 0;
+	}
+
+	.listing .list-post-blog .single-content-image{
+		margin-bottom: 15px;
+	}
+	
+	button#load-more.loading:before {
+      background: #fff url(../img/ajax-loader.gif) no-repeat center center;
+      width: 30px;
+      height: 30px;
+      margin: 5px;	     
+      display: inline-block;
+      z-index: 100;
+      content: '';
+      position: absolute;
+      left: 0;
+      overflow: hidden;
+      -webkit-transition: width 0.5s ease-in-out;
+      -moz-transition: width 0.5s ease-in-out;
+      transition: width 0.5s ease-in-out;
+	}
+	
+.load-more-btn-wrap{
+	text-align:right;
+	padding:0;
+	overflow: hidden;
+	display: block;
+	margin-top: -10px;
+	position: absolute;
+	right: 0;
+	width: 100%;
+	bottom: 0;
+}
+
+#ajax-load-more{
+	position: relative;
+	padding-bottom: 30px;
+}
+
+/* Generic Listing Styles */
+
+ul.listing{
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+	ul.listing li{
+		margin: 0 50px 10px;
+		overflow: hidden;
+		padding: 20px 20px 20px 190px;
+		position: relative;
+	}
+		ul.listing li:after{
+			width: 50px;
+			height: 1px;
+			display: block;
+			background: #efefef;
+			content: '';
+			position: absolute;
+			left: 20px;
+			bottom: 0;
+		}					
+		ul.listing li a{
+			color: #34383D;
+		}
+		ul.listing li p{
+			margin: 0;
+		}
+		ul.listing li h3{
+			margin: 0 0 10px;
+		}
+		ul.listing li img{
+			position: absolute;
+			left: 20px;
+			top: 20px;			
+		   -webkit-border-radius:3px;
+		   -moz-border-radius:3px;
+		   border-radius:3px;
+		}	
+			
+		

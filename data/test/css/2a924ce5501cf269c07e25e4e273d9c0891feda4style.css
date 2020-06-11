@@ -1,0 +1,68 @@
+ul.api-doc-nav {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.067);
+  border-radius: 6px;
+}
+ul.api-doc-nav li {
+  font: 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+ul.api-doc-nav.nav-stacked>li+li {
+  margin: 0;
+}
+ul.api-doc-nav li.nav-header {
+  color: #999;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: #e5e5e5;
+  margin-top: 0px;
+  padding-top: 5px;
+  padding-left: 15px;
+}
+
+ul.api-doc-nav.nav-pills>li>a {
+  border-radius: 0;
+}
+ul.api-doc-nav a {
+  border: 1px solid #e5e5e5;
+  border-top: none;
+  padding: 8px 14px;
+}
+ul.api-doc-nav li a .url{
+  color: #aaa;
+  font-size: 10px;
+  line-height: 10px;
+}
+ul.api-doc-nav li.active a .url{
+  color: #ccc;
+}
+ul.api-doc-nav > li:first-child {
+  border-radius: 6px 6px 0px 0px;
+}
+ul.api-doc-nav > li:last-child > a {
+  border-radius: 0px 0px 6px 6px;
+}
+
+
+.request+.request {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 15px;
+  margin-top: 5px;
+}
+.request table tr th {
+  font-size: 11px;
+}
+.request table pre {
+  border: none;
+  background: none;
+  padding-left: 15px;
+  margin: 0;
+}
+.request .back-to-top {
+  margin-right: 20px;
+  background: #ddd;
+  font-size: 10px;
+}
+
+pre {
+  font-size: 11px !important;
+}
+

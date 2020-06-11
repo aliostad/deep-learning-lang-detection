@@ -1,0 +1,39 @@
+#!/bin/bash
+PROCESS=$1
+if [ "$PROCESS" == "" ]; then
+   echo "Usage: $0 process_runner"
+   exit
+fi
+
+WATCH="lib/"
+for SYMLINK in `find lib/ -type l`
+do
+   REF=lib/`readlink $SYMLINK`
+   WATCH="${WATCH} $REF"
+done
+echo WATCH: $WATCH
+
+function on_exit()
+{
+   kill -ILL $PID
+   exit 0
+}
+
+trap on_exit SIGINT SIGTERM EXIT
+
+$PROCESS &
+PID=$!
+
+while true
+do
+   inotifywait -m -q -e modify -r $WATCH | while read P E F
+   do
+      if [[ "$F" = *.pm ]] ; then
+         echo re-run $PID $PROCESS
+         kill -ILL $PID
+         $PROCESS &
+         PID=$!
+      fi
+   done
+done
+

@@ -1,0 +1,114 @@
+@charset "UTF-8";
+.banner {
+    position: relative;
+    height: 300px;
+    background: url("../images/price/banner.jpg") no-repeat center center/auto auto;
+}
+
+.banner .container {
+	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+}
+
+.banner .btn {
+    margin: 20px 10px;
+}
+
+.storage-api ul li {
+    margin-bottom: 30px;
+}
+
+.storage-api .btn.blue {
+    color: #31a0e7;
+    border-color: #31a0e7;
+}
+
+.storage-api .btn.blue:hover {
+    background-color: #31a0e7;
+    color: #fff;
+}
+
+.storage-api h3 {
+    margin-bottom: 80px;
+}
+
+.storage-api h3 a {
+    position: relative;
+    text-decoration: none;
+    color: #666;
+    background-color: #fff;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+.storage-api h3 a.active {
+    color: #2679da;
+}
+
+.storage-api h3 a.active::after {
+    content: "";
+    position: absolute;
+    background-color: #31a0e7;
+    height: 2px;
+    width: 80%;
+    bottom: -10px;
+    left: 10%;
+}
+
+.storage-api h3 a:first-child {
+    border-right: 1px solid #ccc;
+}
+
+.storage-api ul li .wrapper {
+    padding: 25px;
+    border: 1px solid #d0d0d0;
+}
+
+.storage-api ul li .wrapper i.fa {
+    font-size: 56px;
+    background-color: #31a0e7;
+    color: #fff;
+    font-style: normal;
+    width: 112px;
+    height: 112px;
+    line-height: 112px;
+    display: block;
+    margin: 0 auto 25px auto;
+    border-radius: 50%;
+}
+
+.storage-api ul li .wrapper i.fa img.one-yen {
+    padding: 25%;
+}
+
+.storage-api ul li .wrapper p.con {
+    color: #666;
+    font-size: 14px;
+    line-height: 20px;
+    height: 5.7em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 25px;
+}
+
+.price-list a.tab {
+    line-height: 50px;
+    height: 50px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+.price-list a.tab.active {
+    color: #2679da;
+    border-color: #31a0e7;
+}

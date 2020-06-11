@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<oddjob id="this">
+    <job>
+        <sequential>
+            <jobs>
+                <copy id="copy-1" name="Copy Write 1" to="${this.args[0]}/work/io/FileAppendExample.txt">
+                    <from>
+                        <buffer><![CDATA[Hello]]></buffer>
+                    </from>
+                </copy>
+                <copy name="Copy Write 2">
+                    <from>
+                        <buffer><![CDATA[World]]></buffer>
+                    </from>
+                    <output>
+                        <bean append="true" class="org.oddjob.io.FileOutputType" file="${copy-1.from[0]}"/>
+                    </output>
+                </copy>
+                <copy name="Copy Read">
+                    <from>
+                        <file file="${copy-1.from[0]}"/>
+                    </from>
+                    <output>
+                        <stdout/>
+                    </output>
+                </copy>
+            </jobs>
+        </sequential>
+    </job>
+</oddjob>

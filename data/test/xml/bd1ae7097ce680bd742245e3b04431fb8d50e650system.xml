@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<system simulationEnd="100">
+
+  <process role="initiator">
+    <type> iss    </type>
+    <name> iss1   </name>
+    <link> cache1  </link>
+  </process>
+  
+  <process role="initiator">
+    <type> iss    </type>
+    <name> iss2   </name>
+    <link> cache1  </link>
+  </process>
+
+  <process role="interconnect">
+    <type> cache   </type>
+    <name> cache1  </name>
+    <link> memory1  </link>
+  </process>
+
+  <process role="target">
+    <type> memory  </type>
+    <name> memory1 </name>
+  </process>
+
+</system>

@@ -1,0 +1,126 @@
+.hd-board-list-sort {text-align:right; color:#999;}
+.hd-board-list-sort a {color:#999;}
+.hd-board-list-sort a:hover {text-decoration:underline;}
+.hd-board-list-sort a.active {font-weight:bold; color:#ff0000;}
+
+.hd-board-list-gallery {margin-bottom:15px; font-size:12px; border:1px solid #e5e5e5; border-left:0; border-right:0; zoom:1;}
+.hd-board-list-gallery:after {content:""; display:block; clear:both;}
+.hd-board-list-gallery li {display:inline; float:left; margin:0 10px; padding:20px 0;}
+.hd-board-list-gallery .thumb {position:absolute; z-index:1; text-align:center; background:#fff; padding:5px; border:1px solid #e5e5e5;
+-webkit-border-radius:4px 4px; -moz-border-radius:4px 4px; border-radius:4px 4px;
+-moz-box-shadow:0px 0px 8px #AAA; -webkit-box-shadow:0px 0px 8px #AAA; box-shadow:0px 0px 8px #AAA;
+-webkit-transition:-webkit-box-shadow 0.1s ease-out; -moz-transition:-webkit-box-shadow 0.1s ease-out; -o-transition:-webkit-box-shadow 0.1s ease-out; transition:-webkit-box-shadow 0.1s ease-out;
+}
+.hd-board-list-gallery .thumb img {display:inline-block;}
+.hd-board-list-gallery .thumb a.zoom {position:absolute; bottom:0; right:0; width:25px; height:25px; text-indent:-9999em; background:#000 url(../img/icon_zoom.gif) no-repeat center center; opacity:.6; filter:alpha(opacity=60);	 -webkit-border-radius:4px 4px; -moz-border-radius:4px 4px; border-radius:4px 4px;}
+.hd-board-list-gallery div.subject {margin-bottom:5px; font-weight:bold;}
+.hd-board-list-gallery div.category {margin-bottom:5px; color:#797cce; font-size:11px;}
+.hd-board-list-gallery div.category a {color:#797cce;}
+.hd-board-list-gallery div.subject a.comment {font-weight:normal; font-family:'arial'; color:#ff3000;}
+.hd-board-list-gallery div.author {margin-bottom:5px;}
+.hd-board-list-gallery div.info {font-size:11px; line-height:160%; color:#999;}
+.hd-board-list-gallery div.good {font-size:11px; color:#999;}
+.hd-board-list-gallery div.good span.good {color:#779f3e;}
+.hd-board-list-gallery li.hover .thumb {-moz-box-shadow:0px 0px 8px #222; -webkit-box-shadow:0px 0px 8px #222; box-shadow:0px 0px 8px #222;}
+.hd-board-list-gallery li.current {opacity:.3; filter:alpha(opacity=30);}
+.hd-board-list-gallery li.notice {clear:both; width:100%; height:15px; margin:0; padding:10px 0; border-bottom:1px solid #e5e5e5; background:#f5f5f5;}
+.hd-board-list-gallery li.notice div.subject {float:left; padding:0 0 0 10px;}
+.hd-board-list-gallery li.notice div.info {float:right; padding:0 10px 0 0;}
+.hd-board-list-gallery li.notice .thumb,
+.hd-board-list-gallery li.notice div.good,
+.hd-board-list-gallery li.notice div.author,
+.hd-board-list-gallery li.notice div.category {display:none;}
+.hd-board-sw {font-size:11px; color:#999;}
+.hd-board-sw select {vertical-align:middle; color:#999;}
+
+.board-view {margin-bottom:15px; font-size:12px;  border-bottom:1px solid #ddd;}
+.board-view div.board-view-head {height:33px; border:1px solid #ddd; border-left:0; border-right:0; background:url(../img/bg_list-thead.gif) repeat-x; *zoom:1;}
+.board-view div.board-view-head:after {content:""; display:block; clear:both;}
+.board-view div.board-view-head h3 {float:left; height:33px; padding:0 10px; line-height:33px; border:0; color:#444;}
+.board-view ul.board-view-info {}
+.board-view ul.board-view-info li {padding:10px; border-bottom:1px solid #ddd;}
+.board-view ul.board-view-info li * {vertical-align:middle;}
+.board-view ul.board-view-info li span {margin-right:10px; color:#999;}
+.board-view ul.board-view-info li em {margin-right:40px;}
+.board-view ul.board-view-info li em.good {color:#1f7423;}
+.board-view ul.board-view-info li em.nogood {color:#a80003;}
+.board-view ul.board-view-info li.file,
+.board-view ul.board-view-info li.link {padding-left:25px; font-size:11px; border-bottom:1px solid #eee;}
+.board-view ul.board-view-info li.file {background:url(../img/icon_file.gif) no-repeat 10px center;}
+.board-view ul.board-view-info li.link {background:url(../img/icon_link.gif) no-repeat 10px center;}
+.board-view ul.board-view-info li.file a,
+.board-view ul.board-view-info li.link a {color:#999;}
+.board-view div.board-view-content {min-height:150px; _height:150px; padding:20px 10px; line-height:160%;}
+.board-view div.board-view-content div.view_file {margin-bottom:20px;}
+.board-view div.util-button {padding:10px; text-align:right; font-size:11px; zoom:1;}
+.board-view div.util-button:after {content:""; display:block; clear:both;}
+.board-view div.util-button div.fLeft a {display:inline-block; height:24px; padding:0 20px 0 30px; line-height:24px; font-size:20px; font-family:'arial';}
+.board-view div.util-button img {vertical-align:middle; *vertical-align:top;}
+.board-view div.util-button .good {color:#1f7423; background:url(../img/icon_good.gif) no-repeat 0 0;}
+.board-view div.util-button .nogood {color:#a80003; background:url(../img/icon_nogood.gif) no-repeat 0 0;}
+.board-view div.util-button .scrap {padding:0 5px 0 15px; background:url(../img/icon_scrap.gif) no-repeat left 0;}
+.board-view div.util-button .print {padding:0 5px 0 18px; background:url(../img/icon_printer.gif) no-repeat left 0;}
+.board-view div.util-button .notify {padding:0 5px 0 15px; background:url(../img/icon_notify.gif) no-repeat left 0;}
+.board-view div.util-button .blind {padding:0 5px 0 15px; background:url(../img/icon_blind.gif) no-repeat left 0;}
+
+
+.board-view div.sign {padding:15px; border:1px solid #e5e5e5;}
+
+.board-comment-write {margin-bottom:15px; font-size:12px;}
+.board-comment-write div.textarea-wrap {position:relative; zoom:1;}
+.board-comment-write div.textarea-wrap:after {content:""; display:block; clear:both;}
+.board-comment-write div.textarea-wrap label.iLabel {position:absolute; top:6px; left:6px; color:#999;}
+.board-comment-write div.textarea-wrap textarea {float:left; width:88%; height:50px; padding:5px; overflow:auto; border:1px solid #ccc;}
+.board-comment-write div.textarea-wrap input.button-submit {float:right; width:62px; height:62px; line-height:60px; text-align:center; font-size:14px; font-weight:bold; color:#fff; border:1px solid #652ab4; background:#8a50d9; cursor:pointer;}
+.board-comment-write ul {margin-bottom:5px;}
+.board-comment-write ul * {vertical-align:middle;}
+.board-comment-write ul li {display:inline; padding-right:30px;}
+.board-comment-write ul label {padding-right:7px; color:#999;}
+.board-comment-write ul input.iText {width:70px; height:14px; padding:2px 0 0 3px; border:1px solid #ccc;}
+.board-comment-list-wrap .board-comment-write {margin:10px 0 0 0; padding:10px; background:#f9f9f9;}
+.board-comment-list-wrap .board-comment-write ul li {display:inline; margin:0; padding:0 30px 0 0; border:0;}
+.board-comment-list-wrap .board-comment-write div.textarea-wrap textarea {width:88%;}
+
+.board-comment-list-wrap {margin-bottom:15px; font-size:12px;}
+.board-comment-list {margin-top:12px; padding-top:12px; border-top:1px solid #e5e5e5; zoom:1;}
+.board-comment-list:after {content:""; display:block; clear:both;}
+.board-comment-list.indent {padding-left:30px; border-top:0; background:url(../img/bg_comment_indent.gif) no-repeat 10px 12px;}
+.board-comment-list div.photo {float:left; width:60px;}
+.board-comment-list div.photo img {width:50px; height:50px;}
+.board-comment-list div.content {color:#777; line-height:160%;}
+.board-comment-list div.head-wrap {margin-bottom:5px;}
+.board-comment-list div.head-wrap * {vertical-align:middle;}
+.board-comment-list span.author,
+.board-comment-list span.author * {font-weight:bold; color:#444;}
+.board-comment-list span.date {padding:0 10px; color:#999;}
+.board-comment-list span.ipaddress {padding-right:10px; color:#999;}
+.board-comment-list div.head-wrap a.reply {padding:1px 5px 1px 14px; background:url(../img/icon_comment_reply.gif) no-repeat left center;}
+.board-comment-list div.head-wrap a.edit {padding:1px 5px 1px 11px; background:url(../img/icon_comment_edit.gif) no-repeat left center;}
+.board-comment-list div.head-wrap a.delete {padding:1px 5px 1px 11px; background:url(../img/icon_comment_delete.gif) no-repeat left center;}
+.board-comment-list div.head-wrap a.notify {padding:1px 5px 1px 15px; background:url(../img/icon_notify.gif) no-repeat left 0;}
+.board-comment-list div.head-wrap a.blind {padding:1px 5px 1px 15px; background:url(../img/icon_blind.gif) no-repeat left 1px;}
+
+
+.other-post-list {padding:15px; line-height:160%; font-size:12px; border:1px solid #ddd;}
+.other-post-list dt {margin-bottom:10px; color:#444; font-weight:bold;}
+.other-post-list dt strong {color:#9856d6;}
+.other-post-list dd a {color:#999;}
+.other-post-list dd span.date {padding-right:10px; font-size:11px;}
+.other-post-list dd em {padding-left:5px; font-size:11px; color:#ff3000;}
+
+.board-write {width:100%; margin-bottom:20px; font-size:12px; border-top:2px solid #444;}
+.board-write * {vertical-align:middle;}
+.board-write th,
+.board-write td {padding:7px 0; border-bottom:1px solid #e5e5e5;}
+.board-write th {padding-left:15px;}
+.board-write th.essential {font-weight:bold; color:#8e6de3; background:url(../img/member/icon_essential.gif) no-repeat 5px center;}
+.board-write input.iText {height:20px; padding:3px 0 0 3px; border:1px solid #ccc;}
+.board-write textarea.iTextarea {padding:5px; border:1px solid #ccc;}
+.board-write p.help {padding:5px 0 0 0; color:#999; font-size:11px;}
+.board-write span.help {color:#999; font-size:11px;}
+.board-write .textarea_control {width:100%; overflow:hidden; margin-bottom:7px;}
+.board-write .textarea_control div.fLeft span {cursor:pointer;}
+
+@media print {
+.util-button {display:none;}
+}

@@ -1,0 +1,57 @@
+/*CONTACTS SHOW*/
+#contacts {
+	-webkit-animation: contacts_show 1s linear;
+    animation: contacts_show 1s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes contacts_show {
+	from{opacity: 0;}
+	to{opacity:1;}
+}
+
+@keyframes contacts_show {
+	from{opacity: 0;}
+	to{opacity:1;}
+}
+
+/*HISTORY SHOW*/
+#history {
+	-webkit-animation: history_show 1s linear;
+    animation: history_show 1s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 500ms; 
+    animation-delay: 500ms;
+}
+
+@-webkit-keyframes history_show {
+	from{opacity: 0;}
+	to{opacity:1;}
+}
+
+@keyframes history_show {
+	from{opacity: 0;}
+	to{opacity:1;}
+}
+
+/*MESSAGE SHOW*/
+#messages {
+	-webkit-animation: message_show 1s linear;
+    animation: message_show 1s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 1s; 
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes message_show {
+	from{opacity: 0;}
+	to{opacity:1;}
+}
+
+@keyframes message_show {
+	from{opacity: 0;}
+	to{opacity:1;}
+}

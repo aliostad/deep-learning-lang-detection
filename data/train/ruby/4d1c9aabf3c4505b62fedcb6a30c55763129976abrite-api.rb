@@ -1,0 +1,10 @@
+
+require File.expand_path('brite-api/version', File.dirname(__FILE__))
+require File.expand_path('brite-api/api_client', File.dirname(__FILE__))
+require File.expand_path('brite-api/clients/address_api_client', File.dirname(__FILE__))
+require File.expand_path('brite-api/clients/email_api_client', File.dirname(__FILE__))
+require File.expand_path('brite-api/clients/ip_api_client', File.dirname(__FILE__))
+require File.expand_path('brite-api/clients/name_api_client', File.dirname(__FILE__))
+require File.expand_path('brite-api/clients/phone_api_client', File.dirname(__FILE__))
+require File.expand_path('brite-api/client', File.dirname(__FILE__))
+require File.expand_path('brite-api/contact', File.dirname(__FILE__))

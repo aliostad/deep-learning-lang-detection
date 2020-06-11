@@ -1,0 +1,105 @@
+.topic-model{
+	/*cursor: pointer;*/
+	position: relative;
+	/*margin-top: 60px;*/
+	margin-bottom: 20px;	
+	/*background-color: red;*/
+	height: 280px;
+	padding: 0;
+	border-radius: 5px;
+    /*padding: 10px;*/
+    box-sizing: border-box;
+    box-shadow: 0 0 5px gray;
+    transition: 0.4s ease;
+    margin-bottom: 40px;
+}
+.topic-model:hover{
+	box-shadow: 0 0 18px gray;
+}
+.topic-model-author-container{
+	height: 168px;
+	background-color: #67b0f9; 
+    border-top-left-radius:5px ;
+	border-top-right-radius:5px ;
+	
+	/*overflow: hidden;*/
+}
+
+
+.topic-model-author-date{
+	height: 30px;
+	line-height: 30px;
+	text-indent: 2em;
+	text-align: right;
+	padding-right: 2em;
+	/*background-color: purple;*/
+}
+.topic-model-author-content{
+	height: 138px;
+	display: flex;
+	/*background-color: white;*/
+	/*display: flex;*/
+	/*column-count:2;*/
+
+	/*justify-content: space-between;*/
+}
+.topic-model-author-logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: left;
+	/*position: absolute;*/
+	width: 138px;
+	height: 138px;
+	/*background-color: orange;*/
+}
+.topic-model-author-logo>img{
+	border-radius: 10px;
+	width: 50%;
+	height: 50%;
+}
+.topic-model-author-topic{
+	height: 138px;
+	width: 1000px;
+	line-height: 138px;
+	font-size: 3em;
+	font-family: "微软雅黑";
+	text-align: center;
+	overflow: hidden;
+	/*background-color: red;*/
+}
+.topic-model-reviewer{
+	padding: 10px;
+	height: 75px;
+	text-indent: 2em;
+	text-align: left;
+	line-height: 25px;
+	text-overflow: hidden;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	background-color: white;
+	/*border-bottom: 1px dotted gray; */
+}
+.topic-model-footer{
+	display: flex;
+	padding-left: 1em;
+	padding-right: 1em; 
+	justify-content: space-between;
+	padding-left: 20px;
+	height: 37px;
+	line-height: 37px;
+
+    border-bottom-left-radius:5px ;
+	border-bottom-right-radius:5px ;
+	background-color: white;
+}
+.topic-model-footer:hover{
+
+}
+.topic-model-footer>div>a{
+     color: #333;
+     text-decoration: none;
+}
+.topic-model-footer a:hover{
+    text-shadow: 0 0  3px gray;
+}

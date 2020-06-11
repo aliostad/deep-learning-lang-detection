@@ -1,0 +1,105 @@
+<?xml version="1.0" ?>
+
+<!-- Compile current buffer with G77-->
+<!-- Christos Tsironis (ctsir@hotmail.com) 01-12-2005 -->
+
+<!DOCTYPE COMMANDO SYSTEM "commando.dtd">
+
+<COMMANDO>
+  <UI>
+        <CAPTION LABEL="Compile">
+	 <FILE_ENTRY LABEL="G77 command" 
+	        VARNAME="g77" DEFAULT="g77" />
+	 <FILE_ENTRY LABEL="Source file(s)" 
+	        VARNAME="source" EVAL="buffer.getName()" />
+	 <TOGGLE LABEL="Preprocess only; do not compile, assemble or link" 
+	        VARNAME="preproc" DEFAULT="FALSE" />
+	 <TOGGLE LABEL="Compile only; do not assemble or link" 
+	        VARNAME="justcomp" DEFAULT="FALSE" />
+	 <TOGGLE LABEL="Compile and assemble, but do not link" 
+	        VARNAME="nolink" DEFAULT="FALSE" />
+	</CAPTION>
+	<CAPTION LABEL="Compiler Options">
+	  <TOGGLE LABEL="Display warnings"
+	        VARNAME="warn" DEFAULT="TRUE" />
+	  <TOGGLE LABEL="Treat warnings as errors"
+	        VARNAME="warnerr" DEFAULT="FALSE" />
+	  <DIR_ENTRY LABEL="Add directory to the compiler search path"
+	        VARNAME="incldir" DEFAULT="" />	
+	</CAPTION>
+	<CAPTION LABEL="Linker options">
+	 <CHOICE LABEL="Optimizations" VARNAME="optims" DEFAULT="default">
+		<OPTION LABEL="Level 1 - Classical" VALUE="default"/>
+		<OPTION LABEL="Level 2 - Harsh" VALUE="opt2"/>
+		<OPTION LABEL="Level 3 - More harsh (tip: test your output)"
+		               VALUE="opt3"/>
+		</CHOICE>
+	  <ENTRY LABEL="Specify library to link" 
+	        VARNAME="linklib" DEFAULT="" />
+	  <DIR_ENTRY LABEL="Add directory to library search path" 
+	        VARNAME="linkpath" DEFAULT="" />
+	  <ENTRY LABEL="Specify output file name" 
+                VARNAME="output" DEFAULT="" /> 
+	</CAPTION>
+	<CAPTION LABEL="Other options">
+	 <TOGGLE LABEL="Do not delete intermediate files" 
+	        VARNAME="savetemps" DEFAULT="FALSE" />
+	 <TOGGLE LABEL="Time the execution of each subprocess" 
+	        VARNAME="timesub" DEFAULT="FALSE" />
+	 <ENTRY LABEL="Additional G77 options"
+	        VARNAME="addopts" DEFAULT="" />
+	</CAPTION>
+  </UI>
+  <COMMANDS>
+	<COMMAND SHELL="System" CONFIRM="FALSE"><!-- cd to working dir -->
+	  buf = new StringBuffer("cd ");
+	  buf.append(MiscUtilities.getParentOfPath(buffer.getPath()));
+	  buf.toString();
+	</COMMAND>
+	<COMMAND SHELL="System" CONFIRM="FALSE">
+	  buf = new StringBuffer(g77);
+
+	  if(preproc) buf.append(" -E");
+	  if(justcomp) buf.append(" -S");
+	  if(nolink) buf.append(" -c");
+	  if(warn) buf.append(" -Wall");
+	  if(warnerr) buf.append(" --fatal-warnings");
+	  if(!incldir.equals("")) {
+		buf.append(" ");
+         	buf.append("-B "+incldir);
+	  }
+	  if (optims.equals("default")) {
+				buf.append(" -O");
+			}
+			else if (optims.equals("opt2")) {
+				buf.append(" -O2");
+			}
+			else if (optims.equals("opt3")) {
+				buf.append(" -O3");
+			}
+	   if(!linklib.equals("")) {
+		buf.append(" ");
+         	buf.append("-l "+linklib);
+	  }
+	  if(!linkpath.equals("")) {
+		buf.append(" ");
+         	buf.append("-L "+linkpath);
+	  }	  
+	  if(!output.equals("")) {
+		buf.append(" ");
+		buf.append("-o "+output);
+	  }  
+	  if(savetemps) buf.append(" -save-temps");
+	  if(timesub) buf.append(" -time");
+	  if(!addopts.equals("")) {
+		buf.append(" ");
+		buf.append(addopts);
+	  }
+
+	  buf.append(" ");
+	  buf.append(source);
+	  buf.toString();
+	</COMMAND>
+  </COMMANDS>
+</COMMANDO>
+

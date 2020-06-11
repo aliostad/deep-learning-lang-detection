@@ -1,0 +1,284 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	background-attachment:fixed;
+}
+
+#scroller {
+	list-style: none;
+	padding: 1em;
+	margin: 1em 0;
+	margin-top:0px;
+	margin-left:-20px;
+	overflow: auto;
+	margin-bottom:0;
+}
+
+#scroller li {
+	font-weight:bold;
+	border: 1px solid #ddd;
+	width: 14em;
+	margin: 0.25em;
+	padding: 0.5em;
+	background-color: white;
+}
+#scroller li img{
+	width:35px;
+	height:35px;
+}
+#wrapper {
+	width: 1000px;
+	height: 600px;
+	padding: 0;
+	overflow: hidden;
+}
+#panel {
+	width: 1050px;
+	height: 600px;
+	border: 1px solid black;
+}
+.brand strong{
+	font-family: 'Petit Formal Script', cursive;
+}
+#panel {
+	-moz-transform: scale(0.75);
+	-moz-transform-origin: 0 0;
+}
+#contentArea{
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	overflow: auto;
+}
+
+html, body, #map-canvas {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+
+#tagDetailPage {
+	padding-top: 20px;
+}
+#tagDetailPage #map-canvas {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+#tagDetailPage #map-canvas img{
+	max-width: none;
+	/* Google Controls glitch fix*/
+}
+.plus-color {
+	color: rgb(100, 255, 100);
+}
+.neutral-color {
+	color: rgb(200, 200, 200);
+}
+.minus-color {
+	color: rgb(255, 100, 100);
+}
+
+span.huge{
+	line-height: 1.2;
+	font-size: 4.0em;
+	font-weight: bold;
+}
+#tagDetailPage .infoWindow {
+	position: absolute;
+	top: 60px;
+	right: 20px;
+	background-color: rgba(0, 0, 0, 0.5);
+	min-width: 200px;
+	min-height: 100px;
+	z-index: 100;
+	color: white;
+	padding: 20px;
+}
+
+#tagDetailPage .tagWindow {
+	position: absolute;
+	bottom: 40px;
+	right: 20px;
+	background-color: rgba(0, 0, 0, 0.5);
+	min-width: 200px;
+	min-height: 100px;
+	z-index: 100;
+	color: white;
+	max-width: 400px;
+	opacity: 0.7;
+}
+
+#historypage h1 {
+	margin-bottom: 0px !important;
+}
+
+.span10{
+	padding:10px;
+	background:url( {{STATIC_URL}}img/wash-white.png);
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+/* Dante */
+#searchResult {
+    display : none;
+}
+
+#backToArticle {
+    display : none;
+}
+
+.hiddenContent{
+    display: none !important;
+}
+
+/* Temp fix for conflict of css loading from real wikipedia */
+.navbar ul.dropdown-menu {
+    display: none;
+}
+
+.open > ul.dropdown-menu {
+    display : block;
+}
+
+.activate{
+	background:url(ajax-loader.gif) 55px 9px no-repeat #eee;
+}
+
+.accordion{
+	margin-top:10px;
+}
+
+.accordion-heading{
+	background-color:white;
+}
+
+@media (min-width: 1911px){
+        #scroller li{
+        	width:22em;
+        }
+	#loadMore{
+        	width:22em;
+        }
+}
+
+@media (min-width: 1671px) and (max-width: 1910px) {
+        #scroller li{
+        	width:19em;
+        }
+	#loadMore{
+        	width:19em;
+        }
+}
+
+@media (min-width: 1591px) and (max-width: 1670px) {
+        #scroller li{
+        	width:18em;
+        }
+	#loadMore{
+        	width:18em;
+        }
+}
+
+@media (min-width: 1431px) and (max-width: 1590px) {
+        #scroller li{
+        	width:16em;
+        }
+	#loadMore{
+        	width:16em;
+        }
+}
+
+@media (min-width: 1351px) and (max-width: 1430px) {
+        #scroller li{
+        	width:15em;
+        }
+	#loadMore{
+        	width:15em;
+        }
+}
+
+@media (min-width: 1261px) and (max-width: 1350px) {
+        #scroller li{
+        	width:14em;
+        }
+	#loadMore{
+        	width:14em;
+        }
+}
+
+@media (min-width: 1141px) and (max-width: 1260px) {
+        #scroller li{
+        	width:12em;
+        }
+	#loadMore{
+        	width:12em;
+        }
+}
+
+@media (min-width: 1010px) and (max-width: 1140px) {
+        #scroller li{
+        	width:10em;
+        }
+	#loadMore{
+        	width:10em;
+        }
+}
+
+@media (min-width: 750px) and (max-width: 1009px) {
+        #scroller li{
+                width:6em;
+        }
+	#loadMore{
+        	width:6em;
+        }
+}
+
+@media (min-width: 630px) and (max-width: 749px) {
+        #scroller li{
+                width:38em;
+        }
+	#loadMore{
+        	width:38em;
+        }
+}
+
+@media (min-width: 361px) and (max-width: 629px) {
+        #scroller li{
+                width:30em;
+        }
+	#loadMore{
+        	width:30em;
+        }
+}
+
+@media (min-width: 320px) and (max-width: 360px) {
+        #scroller li{
+                width:12em;
+        }
+	#loadMore{
+        	width:12em;
+        }
+}
+
+@media (min-width: 240px) and (max-width: 319px) {
+        #scroller li{
+                width:9em;
+        }
+	#loadMore{
+        	width:9em;
+        }
+}
+
+@media (max-width: 239px) {
+        #scroller li{
+                width:4em;
+        }
+	#loadMore{
+        	width:4em;
+        }
+}

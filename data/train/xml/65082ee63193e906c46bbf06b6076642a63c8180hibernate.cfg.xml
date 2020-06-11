@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+   
+    <property name="connection.pool_size">1</property>
+    <!-- SQL dialect -->
+    <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+    <!-- Disable the second-level cache  -->
+    <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+    <mapping resource="com/example/mapping/Admin.hbm.xml"/>
+    <mapping resource="com/example/mapping/Applicant.hbm.xml"/>
+    <mapping resource="com/example/mapping/Apptostudate.hbm.xml"/>
+    <mapping resource="com/example/mapping/Event.hbm.xml"/>
+    <mapping resource="com/example/mapping/Person.hbm.xml"/>
+    <mapping resource="com/example/mapping/Resource.hbm.xml"/>
+    <mapping resource="com/example/mapping/School.hbm.xml"/>
+    <mapping resource="com/example/mapping/Status.hbm.xml"/>
+    <mapping resource="com/example/mapping/Student.hbm.xml"/>
+    <mapping resource="com/example/mapping/Subject.hbm.xml"/>
+    <mapping resource="com/example/mapping/Timesubject.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

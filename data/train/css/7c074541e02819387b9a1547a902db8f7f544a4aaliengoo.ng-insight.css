@@ -1,0 +1,113 @@
+.ng-model-insight {
+  font-size: 10px; }
+  .ng-model-insight .indicator.scope {
+    font-family: inherit;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px solid #e4149e;
+    margin-top: 1px;
+    padding: 1px;
+    background-color: #e4149e;
+    color: white; }
+  .ng-model-insight .indicator.binding {
+    font-family: inherit;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px solid #9b8be4;
+    margin-top: 1px;
+    padding: 1px;
+    background-color: #9b8be4;
+    color: white; }
+  .ng-model-insight .indicator.dirty {
+    font-family: inherit;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px solid #73481c;
+    margin-top: 1px;
+    padding: 1px;
+    background-color: #73481c;
+    color: white; }
+  .ng-model-insight .indicator.pristine {
+    font-family: inherit;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px solid #249bd5;
+    margin-top: 1px;
+    padding: 1px;
+    background-color: #249bd5;
+    color: white; }
+  .ng-model-insight .indicator.valid {
+    font-family: inherit;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px solid #408037;
+    margin-top: 1px;
+    padding: 1px;
+    background-color: #408037;
+    color: white; }
+  .ng-model-insight .indicator.invalid {
+    font-family: inherit;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px solid #d61720;
+    margin-top: 1px;
+    padding: 1px;
+    background-color: #d61720;
+    color: white; }
+  .ng-model-insight .indicator.error {
+    font-family: inherit;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px solid #d61720;
+    margin-top: 1px;
+    padding: 1px;
+    background-color: #d61720;
+    color: white; }
+  .ng-model-insight .indicator.view-value {
+    font-family: inherit;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px solid #c767d1;
+    margin-top: 1px;
+    padding: 1px;
+    background-color: #c767d1;
+    color: white; }
+  .ng-model-insight .indicator.model-value {
+    font-family: inherit;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px solid #6d896a;
+    margin-top: 1px;
+    padding: 1px;
+    background-color: #6d896a;
+    color: white; }
+
+.ng-walk-scope {
+  font-size: 10px; }
+  .ng-walk-scope .indicator.scope {
+    font-family: inherit;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px solid #e4149e;
+    margin-top: 1px;
+    padding: 1px;
+    background-color: #e4149e;
+    color: white; }
+  .ng-walk-scope .indicator.current-scope {
+    font-family: inherit;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px solid #a2126f;
+    margin-top: 1px;
+    padding: 1px;
+    background-color: #a2126f;
+    color: white; }
+
+.ng-auto-message-insight {
+  font-size: 10px;
+  font-weight: bold;
+  display: inline-block;
+  border: 1px solid;
+  padding: 1px;
+  color: white;
+  background-color: #d61720; }

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Yodii.Lab>
+  <Services>
+    <Service FullName="qsqsqsqs">
+      <Generalization />
+    </Service>
+    <Service FullName="qsqsqsqsq">
+      <Generalization>qsqsqsqs</Generalization>
+    </Service>
+  </Services>
+  <Plugins>
+    <Plugin>
+      <FullName>azaazazaz</FullName>
+      <Service>qsqsqsqsq</Service>
+      <ServiceReferences />
+    </Plugin>
+    <Plugin>
+      <FullName>azaazazazazaz</FullName>
+      <Service />
+      <ServiceReferences />
+    </Plugin>
+    <Plugin>
+      <FullName>azazazazazazaazaz</FullName>
+      <Service>qsqsqsqsq</Service>
+      <ServiceReferences />
+    </Plugin>
+    <Plugin>
+      <FullName>qszszsszszszszs</FullName>
+      <Service>qsqsqsqsq</Service>
+      <ServiceReferences />
+    </Plugin>
+  </Plugins>
+  <Configuration />
+</Yodii.Lab>

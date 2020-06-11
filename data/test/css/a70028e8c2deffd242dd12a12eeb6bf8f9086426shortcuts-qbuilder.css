@@ -1,0 +1,58 @@
+#main-page
+{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	display: table;
+}
+
+#service-panel
+{
+	background: #fff;
+	padding: 5px 0 0;
+	margin: 0;
+	vertical-align: top;
+	display: table-cell;
+	width: 20%;
+	min-width: 350px;
+}
+
+#service-panel.left
+{
+	border-right: 2px #999 solid;
+}
+
+#service-panel .row
+{
+	margin: 0;
+}
+
+#service-panel .row > div
+{
+	padding: 0;
+}
+
+#service-panel .service-panel-page > div > div
+{
+	width: 100%;
+}
+
+#service-panel .headers
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#service-panel .headers .btn.selected,
+#service-panel .headers .btn.selected:hover,
+#service-panel .headers .btn.selected:focus
+{
+	background-color: #C6E2FF !important;
+}
+
+#service-panel .headers .btn:hover,
+#service-panel .headers .btn:focus
+{
+	background-color: #CCC !important;
+}
+

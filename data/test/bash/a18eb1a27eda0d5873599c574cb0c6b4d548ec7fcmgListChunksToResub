@@ -1,0 +1,23 @@
+#!/bin/bash
+if [[ "$1" == "" || "$1" == "-h" || "$1" == "--help" ]]; then
+    echo "Usage: $0 [ -q <queue> ] [ directory ] "
+    echo "Will look in the specified directory (or in the current one if none is specified),  "
+    echo "list failed jobs and print the cmgResubChunk commands to resubmit them."
+    echo "The default queue is 8nh" 
+    exit 1;
+fi
+
+Q=8nh
+if [[ "$1" == "-q" ]]; then
+    Q=$2; shift; shift;
+fi;
+
+BASE="";
+if [[ "$1" != "" && "$1" != "." ]]; then
+    test -d $1 && cd $1 && BASE="$PWD/";
+fi
+
+echo "Will print out the commands to resubmit the chunks that failed "
+for D in *_Chunk[0-9]*; do
+    test -f $D/JSONAnalyzer/JSON.pck || echo cmgResubChunk -q 8nh ${BASE}${D}; 
+done;

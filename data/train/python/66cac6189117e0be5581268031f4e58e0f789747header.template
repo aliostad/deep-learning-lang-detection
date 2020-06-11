@@ -1,0 +1,18 @@
+#!/usr/bin/python
+
+"""
+This file create the network topology and play around it
+"""
+
+from mininet.net import Mininet
+from mininet.node import Controller, OVSSwitch, RemoteController
+from mininet.cli import CLI
+from mininet.log import setLogLevel
+from mininet.topo import Topo
+
+def ControllerNet():
+	"Create a network from semi-scratch with multiple controllers."
+
+	net = Mininet(controller=RemoteController, switch=OVSSwitch )
+	print "*** External Controller 127.0.0.1:6653 :: FloodLight"
+	c1 = net.addController( 'c1', controller=RemoteController, ip='127.0.0.1', port=6653 )

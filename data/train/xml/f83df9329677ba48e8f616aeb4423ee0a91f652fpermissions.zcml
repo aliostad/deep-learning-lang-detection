@@ -1,0 +1,23 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="gu.repository.content"
+    >
+
+    <permission
+        id="gu.repository.content.AddRepositoryContainer"
+        title="gu.repository.content: Add Repository Container"
+    />
+
+    <permission
+        id="gu.repository.content.AddRepositoryItem"
+        title="gu.repository.content: Add Repository Item"
+    />
+
+    <permission
+        id="gu.repository.content.ManageRepositoryContainer"
+        title="gu.repository.content: Manage Repository Container"
+    />
+
+
+</configure>

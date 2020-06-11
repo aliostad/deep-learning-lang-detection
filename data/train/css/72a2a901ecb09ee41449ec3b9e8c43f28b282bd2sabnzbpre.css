@@ -1,0 +1,328 @@
+/* Put Application specific CSS here. */
+
+body.darkbg {
+    background-image: url('../images/backdrop.png');
+}
+
+#historyList .Failed {
+    /*background: url('../images/failbg.png') repeat;*/
+    background: rgba(255, 0, 0, 0.1)
+}
+
+.palm-row-wrapper {
+    padding-bottom: 1px;
+}
+
+.my-scene-fade-top, .my-scene-fade-bottom {
+    position:fixed;
+    z-index: 10;
+    height: 54px;
+    width: 100%;
+}
+
+.my-scene-fade-top {
+    background: url('../images/my-scene-fade-top.png') top center repeat-x;
+    top: 0;
+}
+
+.my-scene-fade-bottom {
+    background: url('../images/my-scene-fade-bottom.png') bottom center repeat-x;
+    bottom: 0;
+}
+
+#headerRight {
+    float: right;
+}
+
+#headerLeft {
+    float: left;
+}
+
+.error-32 {
+    background: url('../images/error-32.png') no-repeat center;
+}
+
+.sab-32 {
+    background: url('../images/sab-32.png') no-repeat center;
+}
+
+.history-32 {
+    background: url('../images/history-32.png') no-repeat center;
+}
+
+.ok-32 {
+    background: url('../images/ok-32.png') no-repeat center;
+}
+
+.warning-32 {
+    background: url('../images/warning-32.png') no-repeat center;
+}
+
+.warning-22 {
+    background: url('../images/warning-22.png') no-repeat center;
+}
+
+.connections-32 {
+    background: url('../images/connections-32.png') no-repeat center;
+}
+
+.preferences-32 {
+    background: url('../images/preferences-32.png') no-repeat center;
+}
+
+.server-information-32 {
+    background: url('../images/server-information-32.png') no-repeat center;
+}
+
+.connections-22{
+    background: url('../images/connections-22.png') no-repeat center;
+}
+
+.preferences-22{
+    background: url('../images/preferences-22.png') no-repeat center;
+}
+
+.server-information-22 {
+    background: url('../images/server-information-22.png') no-repeat center;
+}
+
+.unknown-32 {
+    background: url('../images/unknown-32.png') no-repeat center;
+}
+
+#connectionStatusIndicator {
+    position: relative;
+    top: 2px;
+    right: 4px;
+}
+
+.list-item-status {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.emptyQueue {
+    margin-top: 50%;
+}
+
+.percentage {
+    float: right;
+    color: #7ad;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.Paused {
+    opacity: 0.5;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.Paused .percentage, .list-item-status  {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.palm-header { overflow: visible; } 
+
+.palm-header .palm-header-wrapper {
+    margin: 0 -15px 0px 0px;
+}
+
+.header-button {
+    height: 32px;
+    border-width: 0px 15px;
+    -webkit-border-image: url(../images/selector-headerpress-gray.png) 0 15 0 15 stretch stretch;
+    -webkit-border-image: url(../images/selector-header-gray.png) 0 15 0 15 stretch stretch;
+    -webkit-box-sizing: border-box;
+    float: right;
+    margin-top: 9px;
+}
+
+.header-button.selected {
+    -webkit-border-image: url(../images/selector-headerpress-gray.png) 0 15 0 15 stretch stretch;
+}
+
+.header-button .header-button-wrapper {
+    margin: 0 -5px;
+    line-height: 32px;
+    font-size: 13px;
+    /*font-weight: 500;*/
+}
+
+#header-icon {
+    margin-left: -10px;
+}
+
+#error-icon {
+    width: 22px;
+    height: 22px;
+    margin: -1px 0;
+}
+
+.error-wrapper {
+    padding: 4px 8px 8px 8px;
+}
+
+.error-text {
+    height: 100%;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+    padding: 0 5px 0 5px;
+    /*text-transform: uppercase;*/
+}
+
+.download-progress-bar {
+    height: 60px;
+    background: url('../images/progressbg.png') repeat;
+    overflow: visible;
+    margin-bottom: -60px;
+    position: absolute;
+    opacity: 0.6;
+    z-index: -10;
+}
+
+.palm-menu-icon.load-progress {
+		background-image: url(../images/progress-indicator.png);
+		width: 48px;
+		height: 48px;
+		left: -24px;
+		margin-top: -8px;
+}
+
+.palm-menu-icon.load-progress.progress-0 {
+		background-position: 0px 0px;		
+}
+.palm-menu-icon.load-progress.progress-1 {
+		background-position: 0px -48px;		
+}
+.palm-menu-icon.load-progress.progress-2 {
+		background-position: 0px -96px;		
+}
+.palm-menu-icon.load-progress.progress-3 {
+		background-position: 0px -144px;		
+}
+.palm-menu-icon.load-progress.progress-4 {
+		background-position: 0px -192px;		
+}
+.palm-menu-icon.load-progress.progress-5 {
+		background-position: 0px -240px;		
+}
+.palm-menu-icon.load-progress.progress-6 {
+		background-position: 0px -288px;	
+}
+.palm-menu-icon.load-progress.progress-7 {
+		background-position: 0px -336px;		
+}
+.palm-menu-icon.load-progress.progress-8 {
+		background-position: 0px -384px;	
+}
+.palm-menu-icon.load-progress.progress-9 {
+		background-position: 0px -432px;	
+}
+.palm-menu-icon.load-progress.progress-10 {
+		background-position: 0px -480px;	
+}
+.palm-menu-icon.load-progress.progress-11 {
+		background-position: 0px -528px;	
+}
+.palm-menu-icon.load-progress.progress-12 {
+		background-position: 0px -576px;	
+}
+.palm-menu-icon.load-progress.progress-13 {
+		background-position: 0px -624px;	
+}
+.palm-menu-icon.load-progress.progress-14 {
+		background-position: 0px -672px;	
+}
+.palm-menu-icon.load-progress.progress-15 {
+		background-position: 0px -720px;	
+}
+.palm-menu-icon.load-progress.progress-16 {
+		background-position: 0px -768px;	
+}
+.palm-menu-icon.load-progress.progress-17 {
+		background-position: 0px -816px;	
+}
+.palm-menu-icon.load-progress.progress-18 {
+		background-position: 0px -864px;	
+}
+.palm-menu-icon.load-progress.progress-19 {
+		background-position: 0px -912px;	
+}
+.palm-menu-icon.load-progress.progress-20 {
+		background-position: 0px -960px;	
+}
+.palm-menu-icon.load-progress.progress-21 {
+		background-position: 0px -1008px;	
+}
+.palm-menu-icon.load-progress.progress-22 {
+		background-position: 0px -1056px;	
+}
+.palm-menu-icon.load-progress.progress-23 {
+		background-position: 0px -1104px;	
+}
+.palm-menu-icon.load-progress.progress-24 {
+		background-position: 0px -1152px;	
+}
+.palm-menu-icon.load-progress.progress-25 {
+		background-position: 0px -1200px;	
+}
+
+
+.palm-menu-icon.load-search {
+		background-image: url(../images/browser-indeterminate-progress.png);
+		width: 48px;
+		height: 48px;
+		left: -24px;
+		margin-top: -8px;
+}
+.palm-menu-icon.load-search.progress-0 {
+		background-position: 0px 0px;		
+}
+.palm-menu-icon.load-search.progress-1 {
+		background-position: 0px -48px;		
+}
+.palm-menu-icon.load-search.progress-2 {
+		background-position: 0px -96px;		
+}
+.palm-menu-icon.load-search.progress-3 {
+		background-position: 0px -144px;		
+}
+.palm-menu-icon.load-search.progress-4 {
+		background-position: 0px -192px;		
+}
+.palm-menu-icon.load-search.progress-5 {
+		background-position: 0px -240px;		
+}
+.palm-menu-icon.load-search.progress-6 {
+		background-position: 0px -288px;		
+}
+.palm-menu-icon.load-search.progress-7 {
+		background-position: 0px -336px;		
+}
+.palm-menu-icon.load-search.progress-8 {
+		background-position: 0px -384px;		
+}
+.palm-menu-icon.load-search.progress-9 {
+		background-position: 0px -432px;		
+}
+.palm-menu-icon.load-search.progress-10 {
+		background-position: 0px -480px;		
+}
+.palm-menu-icon.load-search.progress-11 {
+		background-position: 0px -528px;		
+}
+.palm-menu-icon.load-search.progress-12 {
+		background-position: 0px -576px;		
+}
+
+#finishActionSelector, #pauseForText, #speedLimitText {
+    color: #252525;
+}

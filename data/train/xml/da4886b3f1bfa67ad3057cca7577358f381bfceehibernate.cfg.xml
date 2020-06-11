@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>       
+        
+       	<!-- Donnée de connection ! -->        
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/assurance</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="show_sql">false</property>
+<!--         <property name='transaction.auto_close_session'>false</property> -->
+        <property name="hibernate.current_session_context_class">org.hibernate.context.internal.ThreadLocalSessionContext</property>
+        <mapping resource="hibernate/Adresses.hbm.xml"></mapping>
+        <mapping resource="hibernate/AssuranceAnneeListeMedicament.hbm.xml"></mapping>
+        <mapping resource="hibernate/Assurances.hbm.xml"></mapping>
+        <mapping resource="hibernate/AssurancesAnnee.hbm.xml"></mapping>
+        <mapping resource="hibernate/Bases.hbm.xml"></mapping>
+        <mapping resource="hibernate/Clients.hbm.xml"></mapping>
+        <mapping resource="hibernate/Complementaires.hbm.xml"></mapping>
+        <mapping resource="hibernate/Couvertures.hbm.xml"></mapping>
+        <mapping resource="hibernate/DossiersMedical.hbm.xml"></mapping>
+        <mapping resource="hibernate/EntrepriseMedecin.hbm.xml"></mapping>
+        <mapping resource="hibernate/Entreprises.hbm.xml"></mapping>
+        <mapping resource="hibernate/Facturations.hbm.xml"></mapping>
+        <mapping resource="hibernate/FacturesRembourcement.hbm.xml"></mapping>
+        <mapping resource="hibernate/Familles.hbm.xml"></mapping>
+        <mapping resource="hibernate/Frais.hbm.xml"></mapping>
+        <mapping resource="hibernate/ListesMedicament.hbm.xml"></mapping>
+        <mapping resource="hibernate/Medecins.hbm.xml"></mapping>
+        <mapping resource="hibernate/MedicamentListeMedicament.hbm.xml"></mapping>
+        <mapping resource="hibernate/Medicaments.hbm.xml"></mapping>
+        <mapping resource="hibernate/Npa.hbm.xml"></mapping>
+        <mapping resource="hibernate/PolicesAssurance.hbm.xml"></mapping>
+        <mapping resource="hibernate/Prescris.hbm.xml"></mapping>
+        <mapping resource="hibernate/Rembourcements.hbm.xml"></mapping>
+        <mapping resource="hibernate/Rues.hbm.xml"></mapping>
+        <mapping resource="hibernate/TitreMedecin.hbm.xml"></mapping>
+        <mapping resource="hibernate/Titres.hbm.xml"></mapping>
+        <mapping resource="hibernate/TypesFrais.hbm.xml"></mapping>
+        <mapping resource="hibernate/TypesPersonne.hbm.xml"></mapping>
+        <mapping resource="hibernate/Villes.hbm.xml"></mapping>
+    </session-factory>
+</hibernate-configuration>

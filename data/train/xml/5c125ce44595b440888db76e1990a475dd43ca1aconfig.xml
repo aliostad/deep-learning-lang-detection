@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Dunagan_ProcessQueue>
+            <version>0.0.3</version>
+        </Dunagan_ProcessQueue>
+    </modules>
+
+    <global>
+        <models>
+            <dunagan_process_queue>
+                <class>Dunagan_ProcessQueue_Model</class>
+                <resourceModel>dunagan_process_queue_mysql4</resourceModel>
+            </dunagan_process_queue>
+            <dunagan_process_queue_mysql4>
+                <class>Dunagan_ProcessQueue_Model_Mysql4</class>
+                <entities>
+                    <task>
+                        <table>dunagan_process_queue_task</table>
+                    </task>
+                    <task_unique>
+                        <table>dunagan_process_queue_task_unique</table>
+                    </task_unique>
+                </entities>
+            </dunagan_process_queue_mysql4>
+        </models>
+
+        <helpers>
+            <dunagan_process_queue>
+                <class>Dunagan_ProcessQueue_Helper</class>
+            </dunagan_process_queue>
+        </helpers>
+
+        <blocks>
+            <dunagan_process_queue>
+                <class>Dunagan_ProcessQueue_Block</class>
+            </dunagan_process_queue>
+        </blocks>
+
+        <resources>
+            <dunagan_process_queue_setup>
+                <setup>
+                    <module>Dunagan_ProcessQueue</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </dunagan_process_queue_setup>
+        </resources>
+    </global>
+
+    <admin>
+        <routers>
+            <dunagan_process_queue>
+                <use>admin</use>
+                <args>
+                    <module>Dunagan_ProcessQueue</module>
+                    <frontName>dunagan_process_queue</frontName>
+                </args>
+            </dunagan_process_queue>
+        </routers>
+    </admin>
+
+    <crontab>
+        <jobs>
+            <dunagan_process_queue_process_tasks>
+                <schedule>
+                    <cron_expr>* * * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>dunagan_process_queue/cron::processQueueTasks</model>
+                </run>
+            </dunagan_process_queue_process_tasks>
+        </jobs>
+    </crontab>
+</config>

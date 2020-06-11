@@ -1,0 +1,48 @@
+body {
+    padding: 10%;
+}
+
+pre {
+    padding-bottom: 0;
+}
+
+pre.api {
+    position: relative;
+    padding: 45px 15px 15px;
+}
+
+pre.api:before {
+    content: attr(data-api-title);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    color: #888;
+}
+
+pre.api.api-request, pre.api.api-response {
+    border-radius: 0;
+}
+
+pre.api.api-request {
+    background-color: white;
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
+.permalink a {
+    color: inherit;
+}
+
+.permalink a:hover {
+    text-decoration: none;
+}
+
+.permalink:hover a:after {
+    content: '¶';
+    color: #888;
+    margin-left: 10px;
+}

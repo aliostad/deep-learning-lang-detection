@@ -1,0 +1,32 @@
+<keyframes>
+    <key>
+        <sampleX>0.090981372</sampleX>
+        <sampleY>0.000000000</sampleY>
+        <time>00:03:21:603</time>
+        <value>0.381481946</value>
+    </key>
+    <key>
+        <sampleX>0.412770629</sampleX>
+        <sampleY>0.319999963</sampleY>
+        <time>00:10:06:721</time>
+        <value>0.000000000</value>
+    </key>
+    <key>
+        <sampleX>0.000000000</sampleX>
+        <sampleY>0.000000000</sampleY>
+        <time>00:13:26:250</time>
+        <value>0.000000000</value>
+    </key>
+    <key>
+        <sampleX>0.000000000</sampleX>
+        <sampleY>0.999999881</sampleY>
+        <time>00:16:04:687</time>
+        <value>0.000000000</value>
+    </key>
+    <key>
+        <sampleX>0.529999912</sampleX>
+        <sampleY>0.974999905</sampleY>
+        <time>00:21:18:750</time>
+        <value>0.475000024</value>
+    </key>
+</keyframes>

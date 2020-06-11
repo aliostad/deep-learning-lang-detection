@@ -1,0 +1,16 @@
+#!/bin/sh
+
+repo=/Users/ablancas/.m2/repository
+clj=${repo}/org/clojure/clojure/1.2.0/clojure-1.2.0.jar
+ctb=${repo}/org/clojure/clojure-contrib/1.2.0/clojure-contrib-1.2.0.jar
+atr=${repo}/org/antlr/antlr-runtime/3.2/antlr-runtime-3.2.jar
+asm=${repo}/asm/asm/3.2/asm-3.2.jar
+log=${repo}/org/slf4j/slf4j-api/1.6.0/slf4j-api-1.6.0.jar
+log=${log}:${repo}/ch/qos/logback/logback-classic/0.9.24/logback-classic-0.9.24.jar
+log=${log}:${repo}/ch/qos/logback/logback-core/0.9.24/logback-core-0.9.24.jar:.
+
+jline=${repo}/jline/jline/0.9.94/jline-0.9.94.jar
+src=src/main/clojure
+export REPL_OUT=target/classes
+
+java -cp ${clj}:${ctb}:${atr}:${asm}:${log}:${jline}:${src}:${REPL_OUT} jline.ConsoleRunner clojure.main $*

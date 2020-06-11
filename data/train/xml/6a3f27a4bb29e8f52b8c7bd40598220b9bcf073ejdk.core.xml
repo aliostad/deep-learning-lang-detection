@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:typeMappings xmlns:ns2="https://nc.com/cfg">
+	<mappings
+		javans="java.lang"
+		serializersns="com.nc.gs.serializers.java.lang"
+		baseId="1">
+		<mapping type="Z" />
+		<mapping type="C" />
+		<mapping type="B" />
+		<mapping type="S" />
+		<mapping type="I" />
+		<mapping type="F" />
+		<mapping type="J" />
+		<mapping type="D" />
+		<mapping
+			type="Object"
+			opaque="true" />
+		<mapping
+			type="Class"
+			serializer="TypeSerializer" />
+		<mapping
+			type="[Z"
+			autoMapArray="1" />
+		<mapping
+			type="[B"
+			autoMapArray="1" />
+		<mapping
+			type="[S"
+			autoMapArray="1" />
+		<mapping
+			type="[C"
+			autoMapArray="1" />
+		<mapping
+			type="[I"
+			autoMapArray="1" />
+		<mapping
+			type="[F"
+			autoMapArray="1" />
+		<mapping
+			type="[J"
+			autoMapArray="1" />
+		<mapping
+			type="[D"
+			autoMapArray="1" />
+		<mapping
+			type="[Object"
+			autoMapArray="1" />
+		<mapping
+			type="[Class"
+			autoMapArray="1" />
+		<mapping
+			type="Boolean"
+			serializer="BooleanSerializer"
+			autoMapArray="1" />
+		<mapping
+			type="Byte"
+			serializer="ByteSerializer"
+			autoMapArray="1" />
+		<mapping
+			type="Short"
+			serializer="ShortSerializer"
+			autoMapArray="1" />
+		<mapping
+			type="Character"
+			serializer="CharacterSerializer"
+			autoMapArray="1" />
+		<mapping
+			type="Integer"
+			serializer="IntegerSerializer"
+			autoMapArray="1" />
+		<mapping
+			type="Float"
+			serializer="FloatSerializer"
+			autoMapArray="1" />
+		<mapping
+			type="Long"
+			serializer="LongSerializer"
+			autoMapArray="1" />
+		<mapping
+			type="Double"
+			serializer="DoubleSerializer"
+			autoMapArray="1" />
+		<mapping
+			type="String"
+			serializer="StringSerializer"
+			autoMapArray="1" />
+		<mapping type="Runnable" />
+		<mapping
+			type="StringBuffer"
+			opaque="true" />
+		<mapping
+			type="StringBuilder"
+			opaque="true" />
+	</mappings>
+	<mappings
+		javans="java.util"
+		serializersns="com.nc.gs.serializers.java.util"
+		baseId="52">
+		<mapping type="ArrayDeque" />
+		<mapping type="ArrayList" />
+		<mapping type="BitSet" />
+		<mapping type="Comparator" />
+		<mapping type="Currency" />
+		<mapping
+			type="Date"
+			serializer="DateSerializer" />
+		<mapping type="EnumMap" />
+		<mapping
+			type="GregorianCalendar"
+			serializer="GregorianCalendarSerializer"
+			skipReify="true" />
+		<mapping type="HashMap" />
+		<mapping type="HashSet" />
+		<mapping type="Hashtable" />
+		<mapping type="IdentityHashMap" />
+		<mapping type="LinkedHashMap" />
+		<mapping type="LinkedHashSet" />
+		<mapping type="LinkedList" />
+		<mapping type="Locale" />
+		<mapping type="PriorityQueue" />
+		<mapping type="RegularEnumSet" />
+		<mapping type="SimpleTimeZone" />
+		<mapping type="TreeMap" />
+		<mapping type="TreeSet" />
+		<mapping type="UUID" />
+		<mapping type="Vector" />
+		<mapping
+			type="Collections"
+			singletonLookup="emptyList" />
+		<mapping
+			type="Collections"
+			singletonLookup="emptySet" />
+		<mapping
+			type="Collections"
+			singletonLookup="emptyMap" />
+		<mapping
+			type="Collections$SetFromMap"
+			opaque="true" />
+		<mapping
+			type="Collections$SingletonSet"
+			opaque="true" />
+		<mapping
+			type="Collections$SingletonList"
+			opaque="true" />
+		<mapping
+			type="Collections$SingletonMap"
+			opaque="true" />
+		<mapping
+			type="Collections$UnmodifiableCollection"
+			opaque="true" />
+		<mapping
+			type="Collections$UnmodifiableList"
+			opaque="true" />
+		<mapping
+			type="Collections$UnmodifiableRandomAccessList"
+			opaque="true" />
+		<mapping
+			type="Collections$UnmodifiableMap"
+			opaque="true" />
+		<mapping
+			type="Collections$UnmodifiableSet"
+			opaque="true" />
+		<mapping
+			type="Collections$SynchronizedCollection"
+			opaque="true" />
+		<mapping
+			type="Collections$SynchronizedList"
+			opaque="true" />
+		<mapping
+			type="Collections$SynchronizedRandomAccessList"
+			opaque="true" />
+		<mapping
+			type="Collections$SynchronizedSet"
+			opaque="true" />
+		<mapping
+			type="Collections$SynchronizedSortedSet"
+			opaque="true" />
+		<mapping
+			type="Collections$SynchronizedMap"
+			opaque="true" />
+		<mapping
+			type="Collections$SynchronizedSortedMap"
+			opaque="true" />
+		<mapping
+			type="Collections$UnmodifiableMap$UnmodifiableEntrySet"
+			opaque="true" />
+		<mapping
+			type="Arrays$ArrayList"
+			opaque="true" />
+		<mapping
+			type="Collections$AsLIFOQueue"
+			opaque="true" />
+	</mappings>
+	<mappings
+		javans="java.util.concurrent"
+		baseId="98">
+		<mapping type="ArrayBlockingQueue" />
+		<mapping type="Callable" />
+		<mapping type="ConcurrentHashMap" />
+		<mapping type="ConcurrentLinkedDeque" />
+		<mapping type="ConcurrentLinkedQueue" />
+		<mapping type="ConcurrentSkipListMap" />
+		<mapping type="ConcurrentSkipListSet" />
+		<mapping type="CopyOnWriteArrayList" />
+		<mapping type="CopyOnWriteArraySet" />
+		<mapping type="LinkedBlockingDeque" />
+		<mapping type="LinkedBlockingQueue" />
+		<mapping type="LinkedTransferQueue" />
+		<mapping type="PriorityBlockingQueue" />
+		<mapping type="SynchronousQueue" />
+	</mappings>
+	<mappings
+		javans="java.math"
+		serializersns="com.nc.gs.serializers.java.math"
+		baseId="112">
+		<mapping
+			type="BigInteger"
+			serializer="BigIntegerSerializer" />
+		<mapping
+			type="BigDecimal"
+			opaque="true">
+			<includes>
+				<include>intCompact</include>
+				<include>precision</include>
+			</includes>
+		</mapping>
+	</mappings>
+	<mappings
+		javans="javax.xml.ws"
+		serializersns="com.nc.gs.serializers.javax.xml.ws"
+		baseId="114">
+		<mapping
+			type="Holder"
+			serializer="HolderSerializer" />
+	</mappings>
+</ns2:typeMappings>

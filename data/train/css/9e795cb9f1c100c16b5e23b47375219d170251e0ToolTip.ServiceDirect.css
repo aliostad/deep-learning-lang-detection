@@ -1,0 +1,47 @@
+/* RadToolTip Web20 Skin */
+
+.RadToolTip_ServiceDirect.rtLoading
+{	
+	background: url('Common/loading.gif') no-repeat center;
+}
+
+div.RadToolTip_ServiceDirect table.rtWrapper td.rtWrapperTopLeft,
+div.RadToolTip_ServiceDirect table.rtWrapper td.rtWrapperTopRight,
+div.RadToolTip_ServiceDirect table.rtWrapper td.rtWrapperBottomLeft,
+div.RadToolTip_ServiceDirect table.rtWrapper td.rtWrapperBottomRight,
+div.RadToolTip_ServiceDirect table.rtWrapper td.rtWrapperTopCenter,
+div.RadToolTip_ServiceDirect table.rtWrapper td.rtWrapperBottomCenter,
+div.RadToolTip_ServiceDirect table.rtShadow td.rtWrapperTopLeft,
+div.RadToolTip_ServiceDirect table.rtShadow td.rtWrapperTopRight,
+div.RadToolTip_ServiceDirect table.rtShadow td.rtWrapperBottomLeft,
+div.RadToolTip_ServiceDirect table.rtShadow td.rtWrapperBottomRight,
+div.RadToolTip_ServiceDirect table.rtShadow td.rtWrapperTopCenter,
+div.RadToolTip_ServiceDirect table.rtShadow td.rtWrapperBottomCenter,
+div.RadToolTip_ServiceDirect a.rtCloseButton
+{
+	background-image: url('ToolTip/ToolTipSprites.png');
+}
+
+div.RadToolTip_ServiceDirect table.rtWrapper td.rtWrapperLeftMiddle,
+div.RadToolTip_ServiceDirect table.rtWrapper td.rtWrapperRightMiddle,
+div.RadToolTip_ServiceDirect table.rtShadow td.rtWrapperLeftMiddle,
+div.RadToolTip_ServiceDirect table.rtShadow td.rtWrapperRightMiddle
+{
+	background-image:  url('ToolTip/ToolTipVerticalSprites.png');
+}
+
+div.RadToolTip_ServiceDirect table.rtWrapper td.rtWrapperContent
+{
+	background-color: #e9f2ff;	
+	color: #333;
+}
+
+div.RadToolTip_ServiceDirect div.rtTitlebar
+{	
+	color: #333;
+}
+
+div.RadToolTip_ServiceDirect div.rtCallout
+{
+	background-image: url('ToolTip/Callouts.gif');
+}

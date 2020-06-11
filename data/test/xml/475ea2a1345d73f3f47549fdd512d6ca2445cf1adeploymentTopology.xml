@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE publishing-deployment-topology SYSTEM "http://www.atg.com/dtds/publishing_deployment/publishing_deployment_1.0.dtd">
+
+<publishing-deployment-topology>
+  <target>
+    <target-name>Production</target-name>
+    <target-deploy-type>WORKFLOW</target-deploy-type>
+    <agent>
+      <agent-name>PubAgent</agent-name>
+      <include-asset-destination>
+        /atg/epub/file/ConfigFileSystem
+      </include-asset-destination>
+      <include-asset-destination>
+        /atg/epub/file/WWWFileSystem
+      </include-asset-destination>
+      <transport>
+        <transport-type>RMI</transport-type>
+        <rmi-uri>
+          rmi://localhost:8860/atg/epub/AgentTransport
+        </rmi-uri>
+      </transport>
+    </agent>
+
+
+<!--  Order matters. Repository mappings must come after agent tags.
+-->
+
+  <repository-mapping>
+    <source-repository>/atg/commerce/catalog/SecureProductCatalog</source-repository>
+    <destination-repository>/atg/commerce/catalog/ProductCatalog_production</destination-repository>
+  </repository-mapping>
+  <repository-mapping>
+    <source-repository>/atg/store/stores/SecureStoreTextRepository</source-repository>
+    <destination-repository>/atg/store/stores/StoreTextRepository_production</destination-repository>
+  </repository-mapping>
+  <repository-mapping>
+    <source-repository>/atg/commerce/claimable/SecureClaimableRepository</source-repository>
+    <destination-repository>/atg/commerce/claimable/ClaimableRepository_production</destination-repository>
+  </repository-mapping>
+  <repository-mapping>
+    <source-repository>/atg/seo/SecureSEORepository</source-repository>
+    <destination-repository>/atg/seo/SEORepository_production</destination-repository>
+  </repository-mapping>  
+  <repository-mapping>
+    <source-repository>/atg/commerce/pricing/priceLists/SecurePriceLists</source-repository>
+    <destination-repository>/atg/commerce/pricing/priceLists/PriceLists_production</destination-repository>
+  </repository-mapping>  
+  <repository-mapping>
+    <source-repository>/atg/commerce/locations/SecureLocationRepository</source-repository>
+    <destination-repository>/atg/commerce/locations/LocationRepository_production</destination-repository>
+  </repository-mapping> 
+  <repository-mapping>
+    <source-repository>/atg/userprofiling/PersonalizationRepository</source-repository>
+    <destination-repository>/atg/userprofiling/PersonalizationRepository_production</destination-repository>
+  </repository-mapping> 
+  <repository-mapping>
+    <source-repository>/atg/multisite/SecureSiteRepository</source-repository>
+    <destination-repository>/atg/multisite/SiteRepository_production</destination-repository>
+  </repository-mapping> 
+  <repository-mapping>
+    <source-repository>/atg/commerce/catalog/SecureProductCatalog</source-repository>
+    <destination-repository>/atg/commerce/catalog/ProductCatalog_production</destination-repository>
+  </repository-mapping> 
+  </target>
+</publishing-deployment-topology>

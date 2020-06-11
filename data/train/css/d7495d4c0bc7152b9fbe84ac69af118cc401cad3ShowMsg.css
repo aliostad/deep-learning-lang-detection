@@ -1,0 +1,91 @@
+/*消息层盒子*/
+.ShowMsg {
+	display: none;
+	position: fixed;
+	width: 400px;
+	border: 2px solid;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -200px;
+	background: #fff;
+}
+/*消息层标题*/
+.ShowMsg-title {
+	display: block;
+	font-family: "Microsoft YaHei";
+	font-size: 20px;
+	color: #fff;
+	line-height: 25px;
+}
+/*关闭层*/
+.ShowMsg-close {
+	border: 1px solid #fff;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	line-height: 20px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	cursor: pointer;
+}
+.ShowMsg-close:hover {
+	font-weight: bold;
+	transform: rotate(180deg);
+	transition-duration: 0.5s;
+	-webkit-transform: rotate(180deg);
+	-webkit-transition-duration: 0.5s;
+	-moz-transform: rotate(180deg);
+	-moz-transition-duration: 0.5s;
+	background: #fff;
+}
+/*消息内容*/
+.ShowMsg p {
+	width: 90%;
+	font-family: "SimHei";
+	margin-left: auto;
+	margin-right: auto;
+}
+/*不同级别的消息样式*/
+/*info级别*/
+.ShowMsg-info {
+	border-color: #2d9cee;
+}
+.ShowMsg-info .ShowMsg-title {
+	background: #2d9cee;
+}
+.ShowMsg-info .ShowMsg-close:hover {
+	color: #2d9cee;
+}
+/*success级别*/
+.ShowMsg-success {
+	border-color: #15cc1f;
+}
+.ShowMsg-success .ShowMsg-title {
+	background: #15cc1f;
+}
+.ShowMsg-success .ShowMsg-close:hover {
+	color: #15cc1f;
+}
+/*error级别*/
+.ShowMsg-error {
+	border-color: #f32750;
+}
+.ShowMsg-error .ShowMsg-title {
+	background: #f32750;
+}
+.ShowMsg-error .ShowMsg-close:hover {
+	color: #f32750;
+}
+/*warning级别*/
+.ShowMsg-warning {
+	border-color: #faa732;
+}
+.ShowMsg-warning .ShowMsg-title {
+	background: #faa732;
+}
+.ShowMsg-warning .ShowMsg-close:hover {
+	color: #faa732;
+}

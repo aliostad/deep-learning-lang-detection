@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<messages>
+    <!-- Miscelaneous Words -->
+    <message id="Name">Name</message>
+    <message id="Title">Title</message>
+    <message id="Body">Body</message>
+    <message id="ok-btn">OK</message>
+    <message id="cancel-btn">Cancel</message>
+    <message id="OK">OK</message>
+    <message id="Create">Create</message>
+    <message id="Save">Save</message>
+    <message id="Cancel">Cancel</message>
+    <message id="Discard Edits">Discard Edits</message>
+    <message id="you-want-discard">Discard work just done on this page?</message>
+    <message id="Save Changes">Save Changes</message>
+    <message id="you-want-save">Save changes to the database?</message>
+</messages>
+
+
+

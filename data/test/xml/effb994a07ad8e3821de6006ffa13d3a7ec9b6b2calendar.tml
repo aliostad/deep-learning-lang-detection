@@ -1,0 +1,46 @@
+[
+ proc month {{m ""} {func ""} {y ""}} {
+     if {$m == ""} {
+	 set m [clock format [clock scan now] -format %m]
+     }
+     if {$y != ""} {
+	 set y "/$y"
+     }
+     #set year [clock format [clock scan "$m/1$y"] -format %Y]
+
+     set daynum [expr [clock format [clock scan "$m/1$y"] -format %u] % 7]
+     append cal "<table class='month' border='1'>"
+     append cal "<tr><th colspan=7>[lindex {January February March April May June July August September October November December} [expr $m - 1]]</th></tr>"
+     append cal <tr><th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th></tr>
+     append cal "<tr>[string repeat <td></td> $daynum]"
+
+     for {set day 1} {![catch "clock scan $m/$day$y"]} {incr day} {
+	 set daynum [expr ($daynum + 1) % 7]
+	 if {$daynum == 1} {
+	     append cal </tr><tr>
+	 }
+	 if {$func == ""} {
+	     append cal "<td align='center'>$day</td>"
+	 } else {
+	     append cal "<td align='center'>[eval $func $year $month $day]</td>"
+	 }
+     }
+     append cal </tr>
+     append cal "</table>"
+     return $cal
+ }
+
+ proc year {{year ""}} {
+     set html "<table><tr>"
+     for {set i 1} {$i < 13} {incr i} {
+	 if {($i % 4) == 1} {
+	     append html "</tr><tr>"
+	 }
+	 append html "<td valign='top'>[month $i "" $year]</td>"
+     }
+     append html </tr></table>
+     return $html
+ }
+
+ return [year]
+]

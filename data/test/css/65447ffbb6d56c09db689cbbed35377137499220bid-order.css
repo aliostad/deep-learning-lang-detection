@@ -1,0 +1,29 @@
+@charset"utf-8";
+.myorder { position: relative; background: #fff; border: 1px solid #ddd; }
+.myorder .tabtype {padding: 20px 0 20px 10px;}
+.myorder .tabtype ul { margin: 0; }
+.myorder .tabtype li { height: 30px; line-height: 30px; margin-right: 20px; }
+.myorder .tabtype select { width: 120px; margin: 0; }
+/* 订单列表 */
+.service-list { margin: 30px 0 0; }
+.service-list ul { font-size: 0; }
+.service-list ul li { margin: 0; padding: 0; font-size: 14px; line-height: 40px; }
+.service-list .th { height: 40px; line-height: 40px; background: #eee; text-align: center; }
+.service-list .a { width: 40%; }
+.service-list .b { width: 15%; text-align: center; }
+.service-list .c { width: 15%; text-align: center; }
+.service-list .d { width: 30%; text-align: center; }
+.service-list .c span,
+.service-list .c a { display: block; margin-bottom: 10px; line-height: 20px; }
+.service-list .c a { margin-bottom: 0; }
+.service-list .d .btn { display: block; margin: 0 auto 10px;padding: 5px 15px; }
+.service-list .d .btn:last-child { margin-bottom: 0; }
+.service-list .tbody > li { margin-bottom: 20px; }
+.service-list .a .pic { float: left; width: 120px; height: 120px; overflow: hidden; vertical-align: middle; }
+.service-list .a .detail{margin: 0 0 0 130px;line-height: 16px;vertical-align: top;}
+.service-list .a .detail>div{margin-bottom: 5px;}
+.service-list .a .detail em{font-weight: bold;}
+.service-list ul ul { padding: 10px; background: #eee; }
+.service-list .order-num { padding: 0 0 0 10px;color: #999; }
+.service-list .order-num span { padding-right: 20px; }
+.service-list .tbody li li small { display: inline-block; vertical-align: middle; }

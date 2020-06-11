@@ -1,0 +1,33 @@
+#!/bin/zsh
+
+export __CURRENT_SVN_REPO=
+
+parse_svn_repo() {
+    export __CURRENT_SVN_REPO="$(svn info 2> /dev/null | \
+        awk -F '[[:space:]]+|/' '/Repository Root/ {print $NF}')"
+}
+
+zsh_preexec_update_svn_vars() {
+    case "$(history -1)" in
+        *svn*)
+            parse_svn_repo
+            ;;
+    esac
+}
+
+if type svn >& /dev/null; then
+    # we run parse_svn_repo on three occasions:
+    #
+    # 1.  When this file is first loaded;
+    # 2.  When an svn command is run; and
+    # 3.  When cd is run
+    parse_svn_repo
+    preexec_functions[$((${#preexec_functions} + 1))]='zsh_preexec_update_svn_vars'
+    chpwd_functions[$((${#chpwd_functions} + 1))]='parse_svn_repo'
+fi
+
+get_svn_prompt_info() {
+    if [[ -n $__CURRENT_SVN_REPO ]]; then
+        echo "${PR_CYAN}$__CURRENT_SVN_REPO${PR_RESET}"
+    fi
+}

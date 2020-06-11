@@ -1,0 +1,128 @@
+/**
+ * +--------------------------------------------------------------------------+
+ * | Copyright (c) 2008-2017 AddThis, LLC                                     |
+ * +--------------------------------------------------------------------------+
+ * | This program is free software; you can redistribute it and/or modify     |
+ * | it under the terms of the GNU General Public License as published by     |
+ * | the Free Software Foundation; either version 2 of the License, or        |
+ * | (at your option) any later version.                                      |
+ * |                                                                          |
+ * | This program is distributed in the hope that it will be useful,          |
+ * | but WITHOUT ANY WARRANTY; without even the implied warranty of           |
+ * | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the            |
+ * | GNU General Public License for more details.                             |
+ * |                                                                          |
+ * | You should have received a copy of the GNU General Public License        |
+ * | along with this program; if not, write to the Free Software              |
+ * | Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA |
+ * +--------------------------------------------------------------------------+
+ */
+.addthis-settings-page ol.share-service-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 301px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.addthis-settings-page div.share-service-add-header,
+.addthis-settings-page div.share-service-delete-header,
+.addthis-settings-page ol.share-service-list,
+.addthis-settings-page input.share-service-add-search {
+  width: 45%;
+  margin: 2%;
+}
+
+.addthis-settings-page .share-service-picker-container {
+  width: 100%;
+}
+
+.addthis-settings-page ol.share-service-list,
+.addthis-settings-page input.share-service-add-search {
+  border-radius: 3px;
+  border: 1px solid #CCC;
+}
+
+.addthis-settings-page input.share-service-add-search {
+  height: 32px;
+  padding: 5px;
+}
+
+.addthis-settings-page ol.share-service-list li {
+  height: 32px;
+  padding: 5px;
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 0;
+}
+
+.addthis-settings-page ol.share-service-list li:active,
+.addthis-settings-page ol.share-service-list li:hover {
+  background: #F6F6F6;
+}
+
+.addthis-settings-page div.share-service-add-header,
+.addthis-settings-page ol.share-service-list.share-service-add {
+  float: left;
+}
+
+.addthis-settings-page div.share-service-delete-header,
+.addthis-settings-page ol.share-service-list.share-service-delete {
+  float: right;
+}
+
+.addthis-settings-page ol.share-service-list a.share-service-icon .at-icon-wrapper,
+.addthis-settings-page ol.share-service-list a.share-service-icon svg{
+  width: 32px!important;
+  height: 32px!important;
+}
+
+.addthis-settings-page ol.share-service-list a.share-service-icon {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background-size: 32px!important;
+  margin: 0;
+}
+
+.addthis-settings-page ol.share-service-list span.share-service-name {
+  line-height: 32px;
+  padding: 5px;
+}
+
+.addthis-settings-page ol.share-service-list.share-service-delete li .share-service-delete-icon svg .background,
+.addthis-settings-page ol.share-service-list.share-service-delete li .share-service-delete-icon svg .background,
+.addthis-settings-page ol.share-service-list.share-service-add li .share-service-add-icon svg .background,
+.addthis-settings-page ol.share-service-list.share-service-add li .share-service-add-icon svg .background {
+  fill: #3E3F3F;
+}
+
+.addthis-settings-page ol.share-service-list.share-service-delete li:hover .share-service-delete-icon svg .background,
+.addthis-settings-page ol.share-service-list.share-service-delete li:focus .share-service-delete-icon svg .background {
+  fill: #CE2C06;
+}
+
+.addthis-settings-page ol.share-service-list.share-service-add li:hover .share-service-add-icon svg .background,
+.addthis-settings-page ol.share-service-list.share-service-add li:focus .share-service-add-icon svg .background {
+  fill: #7ED321;
+}
+
+.addthis-settings-page .share-service-add-icon,
+.addthis-settings-page .share-service-delete-icon{
+  margin: 0;
+  padding: 6px;
+  float: right;
+  line-height: 20px;
+}
+
+.addthis-settings-page .share-service-add-icon svg,
+.addthis-settings-page .share-service-delete-icon svg{
+  width: 20px;
+  height: 20px;
+}
+
+.addthis-settings-page .share-service-edit-icon-pointer-event-cover-hack {
+  width: 32px!important;
+  height: 32px!important;
+  position: absolute;
+}

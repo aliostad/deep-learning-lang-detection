@@ -1,0 +1,81 @@
+
+/********** < Navigation */
+.ma-nav-container { }
+#nav { margin:0 auto; font-size:12px; background: #ccc; position: relative; z-index: 1000; }
+
+/* All Levels */ /* Style consistent throughout all nav levels */
+#nav li { text-align:left; }
+#nav li.last {  }
+#nav li.over { z-index:998; }
+#nav a,
+#nav a:hover { display:block; line-height:1.3em; text-decoration:none; }
+#nav span { display:block; cursor:pointer; white-space:nowrap; }
+#nav li ul span {white-space:normal; }
+#nav ul li.parent a {}
+#nav ul li.parent li a { }
+
+/* 0 Level - Category Names */
+.wine_menu .container { background: #888; /*padding: 3px 0 0;*/ position: absolute; left: 0; top: 40px; }
+
+#nav li { float:left; padding-right: 5px; }
+#nav li.last{ background:none;  }
+#nav li.home { padding-left: 0; }
+
+#nav a { float:left; padding: 10px 16px; color:#242424; font-weight: normal; font-size:16px; text-transform:capitalize; }
+#nav a span{ }
+
+#nav li.active a,
+#nav li.over a,
+#nav a:hover { color: #fff; background: #888; }
+#nav li.over a,
+#nav a:hover { }
+
+/* 1st Level - First Drop Down*/
+#nav ul.level0 { background: #ccc; float: left; width: 99%; margin: 0.5%; padding: 12px 0; }
+#nav ul li { float: left; width: 150px; background: none; border: 0; padding: 0 0 0 20px; }
+#nav ul li.first { padding-left: 20px; }
+#nav ul li a {   width: 150px; height: auto; background: none; padding: 0 0 2px 0;  background: none; text-transform: capitalize;  }
+#nav ul li a:hover {  }
+#nav ul li.active { margin: 0; }
+#nav ul li.last {}
+
+/* 2nd Level - Second Drop Down*/
+#nav ul ul { float: left; position: static; padding: 0; background: none; }
+#nav ul ul li { float: none; padding: 0; }
+#nav ul ul li.first { padding: 0; }
+#nav ul ul li a { background: url("../images/arrow-menu2.png") no-repeat scroll 5px 7px transparent !important; font-weight: normal; padding: 0 0 0  20px; position: relative; z-index: 1000; color: #444 !important; border: 0; margin: 0; }
+#nav ul ul li a:hover { background: url("../images/arrow-menu2.png") no-repeat scroll 5px -47px transparent !important; color: #D5002A !important; }
+#nav ul ul li a, #nav ul ul li a:hover {  font-size: 13px; line-height: 20px; }
+
+#nav ul ul ul li { padding-left: 15px !important; } 
+
+
+/* 3rd+ Level - Third Drop Down*/
+#nav ul ul,
+#nav ul div {
+    border: 0;
+    display: block !important;
+}
+
+#nav ul li a { }
+#nav ul li a:hover { }
+#nav ul li a,
+#nav ul li a:hover { background: none !important; color: #000 !important; }
+#nav ul li a:hover { color: #D5002A !important; }
+#nav ul span,
+#nav ul li.last li span { }
+
+/* Show menu */
+#nav li ul.shown-sub { left: 0; top: 36px; }
+#nav li .shown-sub ul.shown-sub { }
+
+/* Drop-Down Width */
+#nav ul, #nav div { /* width: 954px; */ height: auto !important; }
+.nav-1 ul { } 
+.nav-2 ul {  } 
+.nav-3 ul { } 
+.nav-4 ul {  } 
+.nav-5 ul {   } 
+
+/********** Navigation > */
+/* ======================================================================================= */

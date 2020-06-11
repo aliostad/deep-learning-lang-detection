@@ -1,0 +1,142 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 Δεκ 2013, 12:21:06 μμ
+    Author     : Jim
+*/
+body{
+    
+  background: url(../images/images.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+   background-size: cover;
+}
+    
+#smallTips {
+    background-color:#003380;
+    width:100%;
+    border:5px solid #FFFFFF;
+    text-align:center;
+    position:absolute;
+    left:0%;
+    top:0%;
+    height:15%; 
+}
+
+#register {
+   width:10%;
+    position:absolute;
+    right:5%;
+    top:6%;
+}
+
+#logout{
+    width:5%;
+    position:absolute;
+    right:4%;
+    top:7%;   
+}
+
+#login { 
+    
+    width:5%;
+    position:absolute;
+    right:15%;
+    top:20%;
+}
+#welcome {
+    
+    width:10%;
+    position:absolute;
+    right:3%;
+    top:20%; 
+}
+
+
+#view_categories {
+    width:20%;
+    padding-top:10%;
+    position:relative;
+    left:45%;  
+    
+}
+
+#view_internetCat {
+    width:5%;
+    padding-top:3%;
+    position:relative;
+    left:45%;
+ 
+}
+
+#view_hardwareCat {
+    width:5%;
+    padding-top:3%;
+    position:relative;
+    left:45%;  
+    
+}
+
+#view_softwareCat {
+    width:5%;
+    padding-top:3%;
+    position:relative;
+    left:45%; 
+    
+}
+
+#write_categories {
+    width:20%;
+    position:absolute;
+    left:10%;
+    top:20%;
+    
+}
+
+#write_internetCat {
+    width:5%;
+    position:absolute;
+    left:10%;
+    top:35%;
+}
+
+#write_hardwareCat {
+    
+    width:5%;
+    position:absolute;
+    left:10%;
+    top:60%;
+    
+}
+
+#write_softwareCat {
+    
+    width:5%;
+    position:absolute;
+    left:10%;
+    top:85%;  
+}
+
+#created {
+    
+    padding-top:70%;
+    position:absolute;
+    left:75%;
+    color:#202020;
+}
+
+#cookie {
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:10%;
+    color:#202020;
+    
+}
+a:link {color:#FFFFFF;}      /* unvisited link */
+a:visited {color:#FFFFFF;}  /* visited link */
+a:hover {color:#FF0000;}  /* mouse over link */
+a:active {color:#FF0000;}  /* selected link */

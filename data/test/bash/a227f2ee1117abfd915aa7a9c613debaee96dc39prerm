@@ -1,0 +1,64 @@
+#!/bin/sh -e
+# prerm for starleth-init
+
+case "$1" in
+  remove|deconfigure)
+    if [ -x /etc/init.d/starleth-roscore ]; then
+      if [ -x /usr/sbin/invoke-rc.d ]; then
+        invoke-rc.d starleth-roscore stop
+      else
+        /etc/init.d/starleth-roscore stop
+      fi
+    fi
+
+    if [ -x /etc/init.d/starleth-system-monitors ]; then
+      if [ -x /usr/sbin/invoke-rc.d ]; then
+        invoke-rc.d starleth-system-monitors stop
+      else
+        /etc/init.d/starleth-system-monitors stop
+      fi
+    fi
+
+    if [ -x /etc/init.d/starleth-diagnostic-aggregator ]; then
+      if [ -x /usr/sbin/invoke-rc.d ]; then
+        invoke-rc.d starleth-diagnostic-aggregator stop
+      else
+        /etc/init.d/starleth-diagnostic-aggregator stop
+      fi
+    fi
+
+    if [ -x /etc/init.d/starleth-velodyne ]; then
+      if [ -x /usr/sbin/invoke-rc.d ]; then
+        invoke-rc.d starleth-velodyne stop
+      else
+        /etc/init.d/starleth-velodyne stop
+      fi
+    fi
+
+    if [ -x /etc/init.d/starleth-velodyne-post ]; then
+      if [ -x /usr/sbin/invoke-rc.d ]; then
+        invoke-rc.d starleth-velodyne-post stop
+      else
+        /etc/init.d/starleth-velodyne-post stop
+      fi
+    fi
+
+    if [ -x /etc/init.d/starleth-xsensmt ]; then
+      if [ -x /usr/sbin/invoke-rc.d ]; then
+        invoke-rc.d starleth-xsensmt stop
+      else
+        /etc/init.d/starleth-xsensmt stop
+      fi
+    fi
+    ;;
+  upgrade)
+    ;;
+  failed-upgrade)
+    ;;
+  *)
+    echo "prerm called with unknown argument \`$1'" >&2
+    exit 0
+    ;;
+esac
+
+exit 0

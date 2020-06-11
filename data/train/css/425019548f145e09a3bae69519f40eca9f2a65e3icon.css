@@ -1,0 +1,100 @@
+.nav-item-sidebar.nav-item-enabled.pin .nav-item-icon		{ background-image:url( 'blue/pin.png' ) !important; }
+
+/* enabled */
+.nav-item-sidebar.nav-item-enabled .nav-icon-company 		{ background-image:url( 'black/company.png' ); }
+.nav-item-sidebar.nav-item-enabled .nav-icon-contact 		{ background-image:url( 'black/contact.png' ); }
+.nav-item-sidebar.nav-item-enabled .nav-icon-document 		{ background-image:url( 'black/document.png' ); }
+.nav-item-sidebar.nav-item-enabled .nav-icon-finance 		{ background-image:url( 'black/finance.png' ); }
+.nav-item-sidebar.nav-item-enabled .nav-icon-knowledgebase 	{ background-image:url( 'black/knowledgebase.png' ); }
+.nav-item-sidebar.nav-item-enabled .nav-icon-mail 		{ background-image:url( 'black/mail.png' ); }
+.nav-item-sidebar.nav-item-enabled .nav-icon-marketing 		{ background-image:url( 'black/marketing.png' ); }
+.nav-item-sidebar.nav-item-enabled .nav-icon-process 		{ background-image:url( 'black/process.png' ); }
+.nav-item-sidebar.nav-item-enabled .nav-icon-product 		{ background-image:url( 'black/product.png' ); }
+.nav-item-sidebar.nav-item-enabled .nav-icon-project 		{ background-image:url( 'black/project.png' ); }
+.nav-item-sidebar.nav-item-enabled .nav-icon-report 		{ background-image:url( 'black/report.png' ); }
+.nav-item-sidebar.nav-item-enabled .nav-icon-sale 		{ background-image:url( 'black/sale.png' ); }
+.nav-item-sidebar.nav-item-enabled .nav-icon-task 		{ background-image:url( 'black/task.png' ); }
+.nav-item-sidebar.nav-item-enabled .nav-icon-calendar 		{ background-image:url( 'black/calendar.png' ); }
+.nav-item-sidebar.nav-item-enabled .nav-icon-warehouse 		{ background-image:url( 'black/warehouse.png' ); }
+.nav-item-sidebar.nav-item-enabled .nav-icon-service 		{ background-image:url( 'black/service.png' ); }
+
+.nav-item-sidebar.nav-item-enabled .nav-icon-user 		{ background-image:url( 'black/account-sm.png' ); }
+.nav-item-sidebar.nav-item-enabled .nav-icon-department 	{ background-image:url( 'black/account-multiple-sm.png' ); }
+.nav-item-sidebar.nav-item-enabled .nav-icon-catalog 		{ background-image:url( 'black/book-sm.png' ); }
+.nav-item-sidebar.nav-item-enabled .nav-icon-extension 		{ background-image:url( 'black/file-sm.png' ); }
+
+/* disabled */
+.nav-item-sidebar.nav-item-disabled .nav-icon-company		{ background-image:url( 'gray/company.png' ); }
+.nav-item-sidebar.nav-item-disabled .nav-icon-contact		{ background-image:url( 'gray/contact.png' ); }
+.nav-item-sidebar.nav-item-disabled .nav-icon-document		{ background-image:url( 'gray/document.png' ); }
+.nav-item-sidebar.nav-item-disabled .nav-icon-finance		{ background-image:url( 'gray/finance.png' ); }
+.nav-item-sidebar.nav-item-disabled .nav-icon-knowledgebase	{ background-image:url( 'gray/knowledgebase.png' ); }
+.nav-item-sidebar.nav-item-disabled .nav-icon-mail 		{ background-image:url( 'gray/mail.png' ); }
+.nav-item-sidebar.nav-item-disabled .nav-icon-marketing 	{ background-image:url( 'gray/marketing.png' ); }
+.nav-item-sidebar.nav-item-disabled .nav-icon-process 		{ background-image:url( 'gray/process.png' ); }
+.nav-item-sidebar.nav-item-disabled .nav-icon-product 		{ background-image:url( 'gray/product.png' ); }
+.nav-item-sidebar.nav-item-disabled .nav-icon-project 		{ background-image:url( 'gray/project.png' ); }
+.nav-item-sidebar.nav-item-disabled .nav-icon-report 		{ background-image:url( 'gray/report.png' ); }
+.nav-item-sidebar.nav-item-disabled .nav-icon-sale 		{ background-image:url( 'gray/sale.png' ); }
+.nav-item-sidebar.nav-item-disabled .nav-icon-task 		{ background-image:url( 'gray/task.png' ); }
+.nav-item-sidebar.nav-item-disabled .nav-icon-calendar 		{ background-image:url( 'gray/calendar.png' ); }
+.nav-item-sidebar.nav-item-disabled .nav-icon-warehouse 	{ background-image:url( 'gray/warehouse.png' ); }
+.nav-item-sidebar.nav-item-disabled .nav-icon-service 		{ background-image:url( 'gray/service.png' ); }
+
+.nav-item-sidebar.nav-item-disabled .nav-icon-user 		{ background-image:url( 'gray/account-sm.png' ); }
+.nav-item-sidebar.nav-item-disabled .nav-icon-department	{ background-image:url( 'gray/account-multiple-sm.png' ); }
+.nav-item-sidebar.nav-item-disabled .nav-icon-catalog 		{ background-image:url( 'gray/book-sm.png' ); }
+.nav-item-sidebar.nav-item-disabled .nav-icon-extension 	{ background-image:url( 'gray/file-sm.png' ); }
+
+
+/* enabled:hover */
+.nav-item-sidebar.nav-item-enabled:hover .nav-icon-company 	{ background-image:url( 'blue/company.png' ); }
+.nav-item-sidebar.nav-item-enabled:hover .nav-icon-contact 	{ background-image:url( 'blue/contact.png' ); }
+.nav-item-sidebar.nav-item-enabled:hover .nav-icon-document 	{ background-image:url( 'blue/document.png' ); }
+.nav-item-sidebar.nav-item-enabled:hover .nav-icon-finance 	{ background-image:url( 'blue/finance.png' ); }
+.nav-item-sidebar.nav-item-enabled:hover .nav-icon-knowledgebase { background-image:url( 'blue/knowledgebase.png' ); }
+.nav-item-sidebar.nav-item-enabled:hover .nav-icon-mail 	{ background-image:url( 'blue/mail.png' ); }
+.nav-item-sidebar.nav-item-enabled:hover .nav-icon-marketing 	{ background-image:url( 'blue/marketing.png' ); }
+.nav-item-sidebar.nav-item-enabled:hover .nav-icon-process 	{ background-image:url( 'blue/process.png' ); }
+.nav-item-sidebar.nav-item-enabled:hover .nav-icon-product 	{ background-image:url( 'blue/product.png' ); }
+.nav-item-sidebar.nav-item-enabled:hover .nav-icon-project 	{ background-image:url( 'blue/project.png' ); }
+.nav-item-sidebar.nav-item-enabled:hover .nav-icon-report 	{ background-image:url( 'blue/report.png' ); }
+.nav-item-sidebar.nav-item-enabled:hover .nav-icon-sale 	{ background-image:url( 'blue/sale.png' ); }
+.nav-item-sidebar.nav-item-enabled:hover .nav-icon-task 	{ background-image:url( 'blue/task.png' ); }
+.nav-item-sidebar.nav-item-enabled:hover .nav-icon-calendar 	{ background-image:url( 'blue/calendar.png' ); }
+.nav-item-sidebar.nav-item-enabled:hover .nav-icon-warehouse 	{ background-image:url( 'blue/warehouse.png' ); }
+.nav-item-sidebar.nav-item-enabled:hover .nav-icon-service 	{ background-image:url( 'blue/service.png' ); }
+
+.nav-item-sidebar.nav-item-enabled:hover .nav-icon-user 	{ background-image:url( 'blue/account-sm.png' ); }
+.nav-item-sidebar.nav-item-enabled:hover .nav-icon-department	{ background-image:url( 'blue/account-multiple-sm.png' ); }
+.nav-item-sidebar.nav-item-enabled:hover .nav-icon-catalog 	{ background-image:url( 'blue/book-sm.png' ); }
+.nav-item-sidebar.nav-item-enabled:hover .nav-icon-extension	{ background-image:url( 'blue/file-sm.png' ); }
+
+
+/* enabled.active */
+.nav-item-sidebar.nav-item-enabled.active .nav-icon-company 	{ background-image:url( 'blue/company.png' ); }
+.nav-item-sidebar.nav-item-enabled.active .nav-icon-contact 	{ background-image:url( 'blue/contact.png' ); }
+.nav-item-sidebar.nav-item-enabled.active .nav-icon-document 	{ background-image:url( 'blue/document.png' ); }
+.nav-item-sidebar.nav-item-enabled.active .nav-icon-finance 	{ background-image:url( 'blue/finance.png' ); }
+.nav-item-sidebar.nav-item-enabled.active .nav-icon-knowledgebase{ background-image:url( 'blue/knowledgebase.png' ); }
+.nav-item-sidebar.nav-item-enabled.active .nav-icon-mail 	{ background-image:url( 'blue/mail.png' ); }
+.nav-item-sidebar.nav-item-enabled.active .nav-icon-marketing 	{ background-image:url( 'blue/marketing.png' ); }
+.nav-item-sidebar.nav-item-enabled.active .nav-icon-process 	{ background-image:url( 'blue/process.png' ); }
+.nav-item-sidebar.nav-item-enabled.active .nav-icon-product 	{ background-image:url( 'blue/product.png' ); }
+.nav-item-sidebar.nav-item-enabled.active .nav-icon-project 	{ background-image:url( 'blue/project.png' ); }
+.nav-item-sidebar.nav-item-enabled.active .nav-icon-report 	{ background-image:url( 'blue/report.png' ); }
+.nav-item-sidebar.nav-item-enabled.active .nav-icon-sale 	{ background-image:url( 'blue/sale.png' ); }
+.nav-item-sidebar.nav-item-enabled.active .nav-icon-task 	{ background-image:url( 'blue/task.png' ); }
+.nav-item-sidebar.nav-item-enabled.active .nav-icon-calendar 	{ background-image:url( 'blue/calendar.png' ); }
+.nav-item-sidebar.nav-item-enabled.active .nav-icon-warehouse 	{ background-image:url( 'blue/warehouse.png' ); }
+.nav-item-sidebar.nav-item-enabled.active .nav-icon-service 	{ background-image:url( 'blue/service.png' ); }
+
+.nav-item-sidebar.nav-item-enabled.active .nav-icon-user	{ background-image:url( 'blue/account-sm.png' ); }
+.nav-item-sidebar.nav-item-enabled.active .nav-icon-department 	{ background-image:url( 'blue/account-multiple-sm.png' ); }
+.nav-item-sidebar.nav-item-enabled.active .nav-icon-catalog 	{ background-image:url( 'blue/book-sm.png' ); }
+.nav-item-sidebar.nav-item-enabled.active .nav-icon-extension 	{ background-image:url( 'blue/file-sm.png' ); }
+
+
+
+
+

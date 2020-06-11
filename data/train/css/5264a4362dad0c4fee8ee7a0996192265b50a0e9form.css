@@ -1,0 +1,83 @@
+.input-append, .input-prepend {
+    font-size: 0;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+.input-append input, .input-prepend input, .input-append select, .input-prepend select, .input-append .uneditable-input, .input-prepend .uneditable-input {
+    border-radius: 0 3px 3px 0;
+    font-size: 14px;
+    margin-bottom: 0;
+    position: relative;
+    vertical-align: top;
+}
+.input-append input:focus, .input-prepend input:focus, .input-append select:focus, .input-prepend select:focus, .input-append .uneditable-input:focus, .input-prepend .uneditable-input:focus {
+    z-index: 2;
+}
+.input-append .add-on, .input-prepend .add-on {
+    background-color: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    height: 20px;
+    line-height: 20px;
+    min-width: 16px;
+    padding: 4px 5px;
+    text-align: center;
+    text-shadow: 0 1px 0 #FFFFFF;
+    width: auto;
+}
+.input-append .add-on, .input-prepend .add-on, .input-append .button, .input-prepend .button {
+    border-radius: 0 0 0 0;
+    margin-left: -1px;
+    vertical-align: top;
+}
+.input-append .active, .input-prepend .active {
+    background-color: #A9DBA9;
+    border-color: #46A546;
+}
+.input-prepend .add-on, .input-prepend .button {
+    margin-right: -1px;
+}
+.input-prepend .add-on:first-child, .input-prepend .button:first-child {
+    border-radius: 3px 0 0 3px;
+}
+.input-append input, .input-append select, .input-append .uneditable-input {
+    border-radius: 3px 0 0 3px;
+}
+.input-append .add-on:last-child, .input-append .button:last-child {
+    border-radius: 0 3px 3px 0;
+}
+.input-prepend.input-append input, .input-prepend.input-append select, .input-prepend.input-append .uneditable-input {
+    border-radius: 0 0 0 0;
+}
+.input-prepend.input-append .add-on:first-child, .input-prepend.input-append .button:first-child {
+    border-radius: 3px 0 0 3px;
+    margin-right: -1px;
+}
+.input-prepend.input-append .add-on:last-child, .input-prepend.input-append .button:last-child {
+    border-radius: 0 3px 3px 0;
+    margin-left: -1px;
+}
+
+.form-actions {
+    background-color: #EEEEEE;
+    border-top: 1px solid #DDDDDD;
+    margin-bottom: 18px;
+    margin-top: 18px;
+    padding: 17px 20px 18px;
+}
+.form-actions:before, .form-actions:after {
+    content: "";
+    display: table;
+}
+.form-actions:after {
+    clear: both;
+}
+.uneditable-input {
+    background-color: #FFFFFF;
+    border-color: #EEEEEE;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.024) inset;
+    cursor: not-allowed;
+    display: block;
+}

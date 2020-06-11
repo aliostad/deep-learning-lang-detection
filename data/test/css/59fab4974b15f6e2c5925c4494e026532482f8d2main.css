@@ -1,0 +1,65 @@
+/**
+ * The CSS for the Play Games UI modules.
+ */
+
+.GoogleGamesApi {
+  background-color: #FFF;
+  line-height: 24px;
+  position: absolute;
+}
+
+.GoogleGamesApi-mask {
+  background: url(../img/333333-0.5.png) repeat;
+  position: absolute;
+}
+
+.GoogleGamesApi-back {
+
+}
+
+.GoogleGamesApi-menu {
+
+}
+
+.GoogleGamesApi-title {
+  float: left;
+  font-size: 24px;
+  padding: 20px 0 20px 20px;
+}
+
+.GoogleGamesApi-subtitle {
+  float: right;
+  padding: 20px 20px 20px 0;
+  right: 0;
+}
+
+.GoogleGamesApi-bar {
+  background-color: #EFEFEF;
+  border: 1px solid #000;
+  height: 22px;
+  position: relative;
+  width: 120px;
+}
+
+.GoogleGamesApi-bar-color {
+  background-color: #adff2f;
+  border-right: 1px solid #000;
+  height: 22px;
+}
+
+.GoogleGamesApi-bar-text {
+  position: absolute;
+  right: 5px;
+  top: 0;
+}
+
+.GoogleGamesApi-content {
+
+}
+
+/**
+ *
+ */
+.GoogleGamesApi-achievement-item {
+
+}

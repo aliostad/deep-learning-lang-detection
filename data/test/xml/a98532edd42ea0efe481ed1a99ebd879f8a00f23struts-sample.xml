@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="sample" extends="struts-erp" namespace="/sample">
+	
+		<action name="showSampleAction" class="sampleAction" method="showSampleAction">
+			<result name="*">/page/sample/samplelist.jsp</result>
+		</action>
+		
+		<action name="querySampleAction" class="sampleAction" method="querySampleAction">
+			<result name="*">/page/sample/samplelist.jsp</result>
+		</action>
+		
+		<action name="turnSampleAction" class="sampleAction" method="turnSampleAction">
+			<result name="*">/page/sample/samplelist.jsp</result>
+		</action>
+		
+		<action name="showAddSampleAction" class="sampleAction" method="showAddSampleAction">
+			<result name="*">/page/sample/addsample.jsp</result>
+		</action>
+		
+		<action name="addSampleAction" class="sampleAction" method="addSampleAction">
+			<result name="*">/page/sample/addsample.jsp</result>
+		</action>
+		
+		<action name="showUpdSampleAction" class="sampleAction" method="showUpdSampleAction">
+			<result name="*">/page/sample/updsample.jsp</result>
+		</action>
+		
+		<action name="updSampleAction" class="sampleAction" method="updSampleAction">
+			<result name="*">/page/sample/updsample.jsp</result>
+		</action>
+		
+		<action name="showSampleSumAction" class="sampleAction" method="showSampleSumAction">
+			<result name="*">/page/sample/samplesum.jsp</result>
+		</action>
+		
+		<action name="querySampleNumByKeysAction" class="sampleAction" method="querySampleNumByKeysAction">
+			<result name="*">/page/sample/samplesum.jsp</result>
+		</action>
+		
+	</package>
+
+</struts>

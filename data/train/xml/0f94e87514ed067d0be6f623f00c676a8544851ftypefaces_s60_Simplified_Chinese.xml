@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<typeface_information >
+    <typeface_set>
+        <typeface_mapping role="Primary" family="S60SCHRSANSSBLF" weight="bold"></typeface_mapping>
+        <typeface_mapping role="Secondary" family="S60SCHRSANSRLF"></typeface_mapping>
+        <typeface_mapping role="Title" family="S60SCHRSANSTTLSMBLDLF"></typeface_mapping>
+        <typeface_mapping role="PrimarySmall" family="S60SCHRSANSSBLF" weight="bold"></typeface_mapping>
+        <typeface_mapping role="Digital" family="Series 60 ZDigi"></typeface_mapping>
+    </typeface_set>
+</typeface_information>

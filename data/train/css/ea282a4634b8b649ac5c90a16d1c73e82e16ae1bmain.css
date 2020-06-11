@@ -1,0 +1,361 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+    background:#fff;
+    font-family:Helvetica,Arial,sans-serif;
+    font-size: 65.2%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a img {
+	border: none;
+}
+
+a {
+	text-decoration: none;
+	color: #CC3131;
+}
+a:hover {
+	
+}
+
+
+/* ----------
+
+	menu nub
+
+---------- */
+html,
+body {
+	height: 100%;
+}
+body {
+	background: -webkit-linear-gradient(#ff5d00 0%, #ff9a00 100%);
+}
+
+#container {
+	margin: 0 auto;
+	position: relative;
+}
+
+#QRCode {
+	word-wrap: break-word;
+	text-align: center;
+	width: 150px;
+	margin: 20px;
+	position: absolute;
+	bottom: 0;
+}
+
+
+/* ----------
+
+	menu nub
+
+---------- */
+#nav .nav_nubber {}
+
+#nav .nav_nubber > a {
+	display: block;
+	padding:10px;
+	width:20px;
+	height:20px;
+	text-indent:-9999px;
+}
+
+#nav .nav_nubber > a {
+	background-color:#df0012;
+	border-radius: 10px 10px 0 10px;
+}
+
+#nav .nav_nubber:hover > a {
+	background-color:#f5ff00;
+}
+
+#nav .nav_nubber > a:active {
+	background-color:#0070ff;
+}
+
+
+/* ----------
+
+	menu menu
+
+---------- */
+#nav {
+	font-size: 1.5em;
+	padding: 30px;
+	overflow: hidden;
+}
+
+#nav > ul {}
+
+
+
+/* ----------
+
+	menu container
+
+---------- */
+#nav .nav_menu ul li .menu_container {
+	display: none;
+	background: #f5ff00;
+	padding: 20px;
+	color: #0070ff;
+	width: 900px;
+	position: absolute;
+	overflow: hidden;
+	border-radius: 0 0 10px 10px;
+}
+#nav .nav_menu ul li:hover > .menu_container {
+	display: block;
+}
+#nav .nav_menu ul li:hover > a {
+	background: #f5ff00;
+	text-shadow: -1px -1px 5px #fff;
+	border-radius: 10px 10px 0 0;
+}
+
+#nav .nav_menu ul li#nav_1 .menu_container,
+#nav .nav_menu ul li#nav_2 .menu_container,
+#nav .nav_menu ul li#nav_3 .menu_container,
+#nav .nav_menu ul li#nav_4 .menu_container,
+#nav .nav_menu ul li#nav_5 .menu_container,
+#nav .nav_menu ul li#nav_6 .menu_container {
+	left: 30px;
+}
+
+#nav .nav_menu ul li .menu_container h2 {
+	font-size: 1.5em;
+}
+#nav .nav_menu ul li .menu_container ul li {
+	padding: 20px;
+}
+#nav .nav_menu ul li .menu_container ul li ol {
+	height: 150px;
+}
+#nav .nav_menu ul li .menu_container ul li ol li {
+	float: none;
+	padding: 0px;
+}
+#nav .nav_menu ul li .menu_container ul li ol li a{
+	display: block;
+}
+
+#nav .tab {
+	padding: 20px;
+	display: block;
+}
+#nav .tab strong {
+	font-size: 1.5em;
+}
+#nav .tab span {
+	font-size:.8em;
+	display: none;
+}
+
+
+
+
+
+
+@media(min-width: 240px) {
+	#container {
+		width: 240px;
+	}
+	#nav .tab strong {
+		font-size: 1em;
+	}
+	#nav .nav_nubber .nav_menu {
+		display: none;
+	}
+	#nav .nav_nubber:hover .nav_menu {
+		display: block;
+	}
+	#QRCode {
+		display: none;
+	}
+	#nav .nav_menu ul li .menu_container {
+		width: 140px;
+		position: relative;
+	}
+	#nav .nav_menu ul li#nav_1 .menu_container,
+	#nav .nav_menu ul li#nav_2 .menu_container,
+	#nav .nav_menu ul li#nav_3 .menu_container,
+	#nav .nav_menu ul li#nav_4 .menu_container,
+	#nav .nav_menu ul li#nav_5 .menu_container,
+	#nav .nav_menu ul li#nav_6 .menu_container {
+		left: 0px;
+	}
+	#nav .nav_menu ul li .menu_container ul li ol li a {
+		font-size: .8em;
+		padding: 2px 3px;
+	}
+	#nav .nav_menu ul li .menu_container ul li ol li a:hover {
+		background: #fff;
+		border-radius: 5px
+	}
+	#nav .nav_menu > ul > li {
+		background: #ff5d00;
+	}
+}
+
+@media(min-width: 320px) {
+	#container {
+		width: 300px;
+	}
+	#nav .nav_menu ul li .menu_container {
+		width: 200px;
+	}
+	#nav .nav_menu ul li .menu_container ul li ol li a {
+		font-size: 1em;
+	}
+}
+
+@media(min-width: 480px) {
+	#container {
+		width: 480px;
+	}
+	#nav .nav_menu ul li ol li {
+		float: left;
+	}
+	#nav .nav_menu ul li {
+		float:none;
+		/* width:50%; */
+	}
+	#nav .tab strong {
+		font-size: .9em;
+	}
+	#nav .nav_menu ul li .menu_container {
+		width: 380px;
+	}
+	#nav .nav_menu ul li .menu_container ul li {
+		float: left;
+		width: 150px;
+	}
+}
+
+
+@media(min-width: 600px) {
+	#container {
+		width: 600px;
+	}
+	#nav .nav_menu ul li {
+		float:left;
+		/* width:50%; */
+	}
+	#nav .nav_nubber > a {
+		display: none;
+	}
+	
+	#nav .tab {
+		padding: 5px;
+	}
+	
+	#nav .nav_nubber .nav_menu {
+		display: block;
+	}
+	#QRCode {
+		display: block;
+	}
+	#nav .nav_menu ul li .menu_container {
+		width: 500px;
+		position: absolute;
+	}
+	#nav .nav_menu ul li#nav_1 .menu_container,
+	#nav .nav_menu ul li#nav_2 .menu_container,
+	#nav .nav_menu ul li#nav_3 .menu_container,
+	#nav .nav_menu ul li#nav_4 .menu_container,
+	#nav .nav_menu ul li#nav_5 .menu_container,
+	#nav .nav_menu ul li#nav_6 .menu_container {
+		left: 30px;
+	}
+	#nav .nav_menu ul li .menu_container ul li ol {
+		width: 150px;
+	}
+	#nav .nav_menu > ul > li {
+		background: none;
+	}
+}
+
+
+@media(min-width: 768px) {
+	#container {
+		width: 768px;
+	}
+	#nav .tab strong {
+		font-size: 1.2em;
+	}
+	#nav .tab span {
+		display: block;
+	}
+	#nav .tab {
+		padding: 10px;
+	}
+	#nav .nav_menu ul li .menu_container {
+		width: 670px;
+	}
+	#nav .nav_menu ul li .menu_container ul li ol {
+		width: 175px;
+	}
+}
+
+
+@media(min-width: 1024px) {
+	#container {
+		width: 1000px;
+	}
+	#nav .tab strong {
+		font-size: 1.5em;
+	}
+	#nav .tab {
+		padding: 20px;
+	}
+	#nav .nav_menu ul li .menu_container {
+		width: 900px;
+	}
+}

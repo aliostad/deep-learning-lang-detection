@@ -1,0 +1,99 @@
+body {
+  font: 12px "Lucida Grande", Verdana, sans-serif;
+  padding: 20px;
+}
+
+body h2:first-child {
+  margin-top: 0;
+}
+
+/** TableView **/
+.TableView {
+  position: relative;
+}
+.TableView .columnsButton {
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 26px;
+  height: 33px;
+  line-height: 33px;
+  z-index: 1;
+}
+table.tableView {
+  border-collapse: collapse;
+  width: 100%;
+  -moz-box-shadow: 0 2px 15px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 2px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 15px rgba(0,0,0,0.3);
+}
+table.tableView thead th {
+  background: #A0A0B0;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+  color: rgba(0,0,0,0.8);
+  text-align: left;
+  vertical-align: baseline;
+}
+table.tableView th, table.tableView td {
+  padding: 6px;
+  line-height: 22px;
+}
+table.tableView tbody tr:nth-child(2n) {
+  background: #EEEEF3;
+}
+
+/** TextFieldView **/
+.TextFieldView input, .ModelFieldView input {
+  width: 300px;
+}
+
+/** Popup menu and ModelFieldView results **/
+ul.popupMenu, .ModelFieldViewResults {
+  background: #F8F8FC;
+  position: absolute;
+  margin: 0;
+  padding: 4px 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+ul.popupMenu li {
+  list-style: none;
+}
+ul.popupMenu a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  color: black;
+}
+ul.popupMenu a:hover, .ModelFieldViewResults tr.selected td {
+  background: #99D;
+}
+.ModelFieldView {
+  position: relative;
+}
+.ModelFieldViewResults {
+  position: absolute;
+  left: 0;
+}
+.ModelFieldViewResults table {
+  border-collapse: collapse;
+}
+.ModelFieldViewResults td {
+  padding: 6px;
+}
+
+/** FormView **/
+table.formView th.label, table.formView td.field {
+  padding: 6px 0;
+}
+table.formView th.label {
+  width: 100px;
+  text-align: left;
+}

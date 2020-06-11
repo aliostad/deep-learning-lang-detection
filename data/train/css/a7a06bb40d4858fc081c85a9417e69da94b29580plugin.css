@@ -1,0 +1,120 @@
+.instagram-api {
+  position: relative;
+  background-color: white;
+  max-width:340px;
+}
+
+.instagram-api h3, .instagram-api p {
+  color: #272727;
+}
+
+.instagram-api h3 {
+  font-size: 22px !important;
+}
+
+.instagram-api .head {
+  padding: 7px 3px;
+  font-weight: 500;
+  height: 64px;
+}
+
+.instagram-api .head .user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  overflow: hidden;
+  float: left;
+  margin-right: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.instagram-api .head .user-image img {
+  width: 100%;
+  height: auto;
+}
+
+.instagram-api .head .user-image:hover {
+  opacity: 0.5;
+}
+
+.instagram-api .head .user-info {
+  width: calc(100% - 75px);
+  float: left;
+}
+
+.instagram-api .head .user-info h3 {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.instagram-api .head .user-info .posts, .instagram-api .head .user-info .followers {
+  font-size: 16px;
+  color: #4c4d4d;
+  float: left;
+}
+
+.instagram-api .head .user-info .posts span, .instagram-api .head .user-info .followers span {
+  color: #0b3c69;
+}
+
+.instagram-api .head .user-info .posts {
+  margin-right: 15px;
+}
+
+.instagram-api .head .user-info .follow {
+  position: absolute;
+  top: 15px;
+  right: 5px;
+  color: #337ad1;
+  border-radius: 4px;
+  border: 1px solid #337ad1;
+  padding: 2px 15px;
+  font-size: 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+.instagram-api .head .user-info .follow:hover {
+  background-color: #337ad1;
+  color: white;
+  text-decoration: none;
+}
+
+.instagram-api .image {
+  float: left;
+  width: 25%;
+  padding: 3px;
+  position: relative;
+}
+
+.instagram-api .image img {
+  width: 100%;
+  height: auto;
+}
+
+.instagram-api .image .cover {
+  opacity: 0;
+  background-color: rgba(11, 60, 105, 0.6);
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  transition: all 0.2s ease-in-out;
+}
+
+.instagram-api .image:hover .cover {
+  opacity: 1;
+}
+
+.instagram-api .image:nth-child(1), .instagram-api .image:nth-child(10) {
+  width: 50%;
+}
+
+.instagram-api .image:nth-child(6) {
+  clear:both;
+}
+
+.instagram-api .image:nth-child(10) {
+  clear: both;
+  float: right;
+}

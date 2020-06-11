@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<catalogue xml:lang="en">
+
+      <!--Customer-->
+    <message key="interface.customers">Customers</message>
+    <message key="Customers">Customers</message>
+    <message key="Customer">Customer</message>
+    <message key="Customer.firstName">First Name</message>
+    <message key="Customer.lastName">Last Name</message>
+    <message key="Customer.account">Account</message>
+    <message key="Customer.creditStatus">Credit Status</message>
+    <message key="Customer.accountStatus">Account Status</message>
+    <message key="Customer.email">Email</message>
+    <message key="Customer.addNew">Customer</message>
+    <message key="Customer.list">Customer List</message>
+    <message key="Customer.login">Login</message>
+
+    <!--autirize-->
+    <message key="auth.locale_ru">Russian</message>
+    <message key="auth.locale_en">English</message>
+    <message key="auth.login">Login</message>
+    <message key="auth.password">Password</message>
+    <message key="auth.enter">Enter</message>
+    <message key="auth.confirm">Confirm</message>
+    <message key="auth.spam">Spam</message>
+    <message key="auth.email">email</message>
+    <message key="auth.rememberme">remember me</message>
+    <message key="auth.incorrect">Login or password are incorrect</message>
+    <message key="auth.loggedIn">You already logged in!<br/>You can enter using current accout or<br/>change account
+    </message>
+    <message key="auth.changeAccount">Change Account</message>
+
+
+<!--User-->
+    <message key="Users">Users</message>
+    <message key="User.name">Name</message>
+    <message key="User.login">Login</message>
+    <message key="User.password">Password</message>
+    <message key="User.confirmPassword">Re-enter Password</message>
+    <message key="User.passwordsNotEqual">The two passwords are not equal.</message>
+    <message key="User.email">Email</message>
+    <message key="User.expires">Expires</message>
+    <!--Group-->
+    <message key="Groups">Groups</message>
+    <message key="Group.name">Name</message>
+    <message key="Group.description">description</message>
+    <!--Role-->
+    <message key="Roles">Roles</message>
+    <message key="Role.name">Name</message>
+    <message key="Role.description">description</message>
+
+
+    <!--services-->
+    <message key="Services">Services</message>
+    <message key="Service.list">List of Services</message>
+    <message key="Service.addNew">Add New</message>
+
+    <!--Users-->
+    <message key="User">User</message>
+    <message key="Users">Users</message>
+    <message key="User.list">List of Users</message>
+    <message key="User.addNew">Add New</message>
+    <message key="User.edit">Edit User</message>
+
+    <!--Groups-->
+    <message key="Group">Group</message>
+    <message key="Groups">Groups</message>
+    <message key="Group.list">List of Groups</message>
+    <message key="Group.addNew">Add New</message>
+    <message key="Group.edit">Edit Group</message>
+
+    <!--Roles-->
+    <message key="Role">Role</message>
+    <message key="Roles">Roles</message>
+    <message key="Role.list">List of Roles</message>
+    <message key="Role.addNew">Add New</message>
+    <message key="Role.edit">Edit Role</message>
+
+
+    <!--Transaction-->
+    <message key="TransactionHistory.object">Object</message>
+    <message key="TransactionHistory.objectType">Object Type</message>
+    <message key="TransactionHistory.user">User</message>
+    <message key="TransactionHistory.userAction">User Action</message>
+    <message key="TransactionHistory.date">Date</message>
+    <message key="TransactionHistory.ipAddress">IP Address</message>
+
+
+</catalogue>

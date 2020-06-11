@@ -1,0 +1,42 @@
+<service-components>
+	<service-component bean="exceptionService"
+		type="org.tinygroup.service.test.service.ExceptionService"
+		group-id="org.tinygroup.service.test.service" artifact-id="ExceptionService">
+
+		<service-method name="exception1" local-name="exception1"
+			service-id="exception1" version="" description="" method-name="exception1">
+			<service-parameters>
+
+			</service-parameters>
+			<service-result name="result" required="false"
+				is-array="false" type="void" />
+		</service-method>
+
+		<service-method name="exception2" local-name="exception2"
+			service-id="exception2" version="" description="" method-name="exception2">
+			<service-parameters>
+
+			</service-parameters>
+			<service-result name="result" required="false"
+				is-array="false" type="void" />
+		</service-method>
+
+		<service-method name="exception3" local-name="exception3"
+			service-id="exception3" version="" description="" method-name="exception3">
+			<service-parameters>
+
+			</service-parameters>
+			<service-result name="result" required="false"
+				is-array="false" type="void" />
+		</service-method>
+		<service-method name="exception4" local-name="exception3"
+			service-id="exception4" version="" description="" method-name="exception4">
+			<service-parameters>
+
+			</service-parameters>
+			<service-result name="result" required="false"
+				is-array="false" type="void" />
+		</service-method>
+	</service-component>
+
+</service-components>

@@ -1,0 +1,17 @@
+/* Simple page */
+.shopify .page { width: 800px; }
+.shopify .page .container { padding: 10px 20px; }
+
+/* Form and elements */
+.shopify form a { color: #f4a022; }
+.shopify form input[type="text"], form input[type="password"] {
+    width: 98%;
+}
+.shopify form label { color: #444444; }
+.shopify form .description, 
+.shopify #shop-label span, 
+.shopify #api_user-label span,
+.shopify #api_password-label span,
+.shopify #api_key-label span
+{ font-size: 13px; color: #aaaaaa; }
+.shopify form .description { text-align: justify; }

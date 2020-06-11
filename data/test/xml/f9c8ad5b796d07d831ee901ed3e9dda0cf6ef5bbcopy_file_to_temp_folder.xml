@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="CopyFile" default="copy_files">
+    <loadproperties srcFile="build.properties"/>
+
+    <target name="copy_files">
+        <echo message="Copy Java files"/>
+        <copy todir="${dist_folder}/src" overwrite="true" encoding="UTF-8" outputencoding="UTF-8">
+            <fileset dir="${source_folder}/src">
+                <include name="**"/>
+            </fileset>
+        </copy>
+
+        <echo message="Copy libratiy files"/>
+        <copy todir="${dist_folder}/libs" overwrite="true">
+            <fileset dir="${source_folder}/libs">
+                <!--  <include name="*.jar" />-->
+                <include name="**"/>
+            </fileset>
+        </copy>
+
+        <echo message="Copy resource files"/>
+        <copy todir="${dist_folder}/res" overwrite="true" encoding="UTF-8">
+            <fileset dir="${source_folder}/res">
+                <include name="**"/>
+                <include name="drawable-xhdpi"></include>
+            </fileset>
+        </copy>
+
+        <echo message="Copy assets files"/>
+        <copy todir="${dist_folder}/assets" overwrite="true" encoding="UTF-8" outputencoding="UTF-8">
+            <fileset dir="${source_folder}/assets">
+                <include name="**"/>
+            </fileset>
+        </copy>
+
+        <echo message="Copy project files"/>
+        <copy todir="${dist_folder}" overwrite="true" encoding="UTF-8" outputencoding="UTF-8">
+            <fileset dir="${source_folder}/">
+                <include name="*"/>
+                <exclude name=".svn"/>
+            </fileset>
+        </copy>
+    </target>
+
+</project>

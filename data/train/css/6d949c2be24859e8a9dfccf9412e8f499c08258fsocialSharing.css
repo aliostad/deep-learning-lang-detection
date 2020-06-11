@@ -1,0 +1,34 @@
+#social-sharing {
+    text-align: center;
+}
+
+[data-service] {
+    display: inline-block;
+    vertical-align: inherit;
+    margin: 3px 0 0 3px;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/socialSharing.png);
+    cursor: pointer;
+}
+
+[data-service="vkontakte"] {
+    background-position: -124px 0;
+}
+
+[data-service="facebook"] {
+    background-position: -0px 0;
+}
+
+[data-service="twitter"] {
+    background-position: -31px 0;
+}
+
+[data-service="odnoklassniki"] {
+    background-position: -93px 0;
+}
+
+[data-service="google"] {
+    background-position: -186px 0;
+}

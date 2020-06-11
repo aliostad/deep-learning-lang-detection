@@ -1,0 +1,84 @@
+#!/bin/bash
+
+
+DEST_DIR="`pwd`/Classes"
+POD_DEST_DIR="`pwd`/PodSpecs"
+
+MY_PATH="`dirname \"$0\"`"
+MY_PATH="`( cd \"$MY_PATH\" && pwd )`"
+
+FOLDER="$1"
+
+if [ "$FOLDER" == "" ]; then
+	echo "[!] needs path to parent folder of fishlamp repos"
+	exit 1;
+fi
+
+FOLDER="`( cd \"$FOLDER\" && pwd )`"
+
+echo "$FOLDER"
+
+source "$MY_PATH/FISHLAMP_LIST.sh"
+
+function find_repos() {
+	mkdir -p "$DEST_DIR"
+
+	for REPO_URL in ${FISHLAMP_LIST[@]}; do
+	
+		REPO_NAME=`basename $REPO_URL`
+
+		REPO_SOURCE_DIR="$FOLDER/$REPO_NAME/Classes"
+
+		if [ -d "$REPO_SOURCE_DIR" ]; then
+			REPO_DEST_DIR="$DEST_DIR/$REPO_NAME"
+
+			if [ -d "$REPO_DEST_DIR" ]; then
+				rm "$REPO_DEST_DIR"
+			fi
+		
+			ln -s "$REPO_SOURCE_DIR" "$REPO_DEST_DIR"
+		
+			echo "[!] $REPO_NAME/Classes -> Classes/$REPO_NAME"
+		else
+			echo "[!] $REPO_NAME/Classes not found"
+		fi
+
+	done
+}
+
+function find_pod_specs() {
+	mkdir -p "$POD_DEST_DIR"
+
+	for REPO_URL in ${FISHLAMP_LIST[@]}; do
+
+		REPO_NAME=`basename $REPO_URL`
+
+		REPO_POD_SPEC="$FOLDER/$REPO_NAME/$REPO_NAME.podspec"
+
+		if [ -f "$REPO_POD_SPEC" ]; then
+			REPO_DEST_FILE="$POD_DEST_DIR/$REPO_NAME.podspec"
+
+			if [ -f "$REPO_DEST_FILE" ]; then
+				rm "$REPO_DEST_FILE"
+			fi
+		
+			ln -s "$REPO_POD_SPEC" "$REPO_DEST_FILE"
+		
+			echo "[!] $REPO_NAME.podspec -> PodSpecs/$REPO_NAME.podspec"
+		else
+			echo "[!] $REPO_NAME.podspec not found"
+		fi
+	done
+}
+
+echo ""
+echo "[!] Finding Repos in $FOLDER"
+echo ""
+
+find_repos
+
+echo ""
+echo "[!] Finding Podspecs in $FOLDER"
+echo ""
+
+find_pod_specs

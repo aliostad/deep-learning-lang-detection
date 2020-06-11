@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="ProcessExecution.views.ProcessElementsViewCategory"
+            name="Process Industrialization">
+      </category>
+      <view
+            category="ProcessExecution.views.ProcessElementsViewCategory"
+            class="org.kermeta.spem.processexecution.view.ProcessPart"
+            id="ProcessExecution.views.ProcessElementsView"
+            name="Process Execution"
+            restorable="true">
+      </view>
+   </extension>
+
+</plugin>

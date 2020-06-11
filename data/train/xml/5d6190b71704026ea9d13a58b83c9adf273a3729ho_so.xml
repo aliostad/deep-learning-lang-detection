@@ -1,0 +1,83 @@
+<?xml version="1.0" standalone="yes"?>
+<DatasetMsg xmlns="http://tempuri.org/DatasetMsg.xsd">
+  <Message>
+    <Message>Bạn chưa nhập Mã nhân viên, hoặc Mã nhân viên không hợp lệ.</Message>
+    <ID>201</ID>
+  </Message>
+  <Message>
+    <Message>Bạn chưa nhập Họ đệm, hoặc Họ đệm không hợp lệ.</Message>
+    <ID>202</ID>
+  </Message>
+  <Message>
+    <Message>Bạn chưa nhập Tên, hoặc Tên không hợp lệ.</Message>
+    <ID>203</ID>
+  </Message>
+  <Message>
+    <Message>Bạn chưa chọn giới tính.</Message>
+    <ID>204</ID>
+  </Message>
+  <Message>
+    <Message>Ngày sinh không hợp lệ.</Message>
+    <ID>205</ID>
+  </Message>
+  <Message>
+    <Message>Nơi sinh không hợp lệ.</Message>
+    <ID>206</ID>
+  </Message>
+  <Message>
+    <Message>Nguyên quán không hợp lệ.</Message>
+    <ID>207</ID>
+  </Message>
+  <Message>
+    <Message>Số CMND không hợp lệ.</Message>
+    <ID>208</ID>
+  </Message>
+  <Message>
+    <Message>Ngày cấp không hợp lệ.</Message>
+    <ID>209</ID>
+  </Message>
+  <Message>
+    <Message>Số điện thoại không hợp lệ.</Message>
+    <ID>210</ID>
+  </Message>
+  <Message>
+    <Message>Mã nhân viên đã tồn tại.</Message>
+    <ID>212</ID>
+  </Message>
+  <Message>
+    <Message>Email không hợp lệ.</Message>
+    <ID>211</ID>
+  </Message>
+  <Message>
+    <Message>Chưa có Mã quyết định.</Message>
+    <ID>213</ID>
+  </Message>
+  <Message>
+    <Message>Chưa có Mã cấp.</Message>
+    <ID>214</ID>
+  </Message>
+  <Message>
+    <Message>Chưa có Mã bậc.</Message>
+    <ID>215</ID>
+  </Message>
+  <Message>
+    <Message>Đã tồn tài Mã quyết định này.</Message>
+    <ID>216</ID>
+  </Message>
+  <Message>
+    <Message>Đã tồn tài Mã cấp này.</Message>
+    <ID>217</ID>
+  </Message>
+  <Message>
+    <Message>Đã tồn tại Mã bậc này.</Message>
+    <ID>218</ID>
+  </Message>
+  <Message>
+    <Message>Ngày cấp CMND không hợp lệ với ngày sinh đã nhập.</Message>
+    <ID>219</ID>
+  </Message>
+  <Message>
+    <Message>Ngày cấp CMND không hợp lệ.</Message>
+    <ID>220</ID>
+  </Message>
+</DatasetMsg>

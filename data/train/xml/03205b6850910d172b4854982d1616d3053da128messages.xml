@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Сообщения - конфигуратор продукции (Помощник)  -->
+
+<!DOCTYPE document
+    [
+        <!ELEMENT document (system, task, description, lanquage, message+)>
+            <!ATTLIST    document
+                        id        ID        #REQUIRED
+                        type    NMTOKEN    #REQUIRED
+            >
+            <!ELEMENT system EMPTY>
+                <!ATTLIST    system
+                            id        ID        #REQUIRED
+                            version    NMTOKEN    #REQUIRED
+                >
+            <!ELEMENT task EMPTY>
+                <!ATTLIST    task
+                            id        ID        #REQUIRED
+                            version    NMTOKEN    #REQUIRED
+                >
+            <!ELEMENT description EMPTY>
+                <!ATTLIST    description
+                            id        ID        #REQUIRED
+                            version    NMTOKEN    #REQUIRED
+                >
+            <!ELEMENT lanquage EMPTY>
+                <!ATTLIST    lanquage
+                                id        ID        #REQUIRED
+                >
+            <!ELEMENT message ANY>
+                    <!ATTLIST    message
+                                id        CDATA    #REQUIRED
+                    >
+    ]
+>
+
+<document id='messagesDescription' type='Respond'>
+    <system id='-CIS' version='1'/>
+    <task id='CALCHELPER' version='2'/>
+    <description id='Messages' version='1'/>
+    <lanquage id='RUS'/>
+    
+    <message id='0'>
+        XML отсутствует в списке обработки.
+    </message>
+    <message id='1'>
+        Сумма:$space$
+    </message>
+    <message id='2'>
+        не рассчитана
+    </message>
+    <message id='3'>
+        Ошибка в инструкции:$space$
+    </message>
+    <message id='4'>
+        $space$некорректное значение$space$
+    </message>
+    <message id='5'>
+        <!-- (без учета скидок) -->
+        $space$
+    </message>
+    <message id='6'>
+        empty
+    </message>
+    <message id='7'>Справочная документация</message>
+    <message id='8'>Произошла фатальная ошибка. Пожалуйста, сообщите о ней разработчикам.</message>
+    <message id='9'>DD.MM.YYYY</message>
+    <message id='10'>в начало формы</message>
+    <message id='11'>в конец формы</message>
+    <message id='12'>Информация о стоимости некоторых опций отсутствует в корпоративной информационной системе.</message>
+    <message id='13'>Не обновлена справочная система 1С.</message>
+    <message id='14'>№</message>
+    <message id='15'>от</message>
+    <message id='16'>Ваш заказ зарегистрирован.</message>
+    <message id='17'>Сервис временно недоступен. Попытайтесь повторить попытку позже.</message>
+    <message id='18'>Внимание!$space$</message>
+    <message id='19'>Контроль параметров заказа</message>
+    <message id='20'>Да</message>
+    <message id='21'>Нет</message>
+    <message id='22'>Проверьте данные для расчёта стоимости комплектации</message>
+    <message id='23'>версия</message>
+    <message id='24'>
+ВНИМАНИЕ!
+Данные для расчета стоимости комплектации не выбраны.
+    </message>
+    <message id='25'>Кол-во</message>
+    <message id='26'>Информация о заказе</message>
+    <message id='27'>ВНИМАНИЕ!</message>
+    <message id='28'>Просим извинения за доставленные неудобства.</message>
+    <message id='29'>На электронный адрес XXX отправлено почтовое уведомление.</message>
+    <message id='30'>Заказ направлен для прохождения процедуры подтверждения в дилерский отдел ГК «».</message>
+    <message id='31'>ИНФОРМАЦИЯ!</message>
+    <message id='32'>ПРЕДУПРЕЖДЕНИЕ!</message>
+    <message id='33'>ВНИМАНИЕ!</message>
+    <message id='34'>ОШИБКА!</message>
+    <message id='35'>Изменения отменены.</message>
+    <message id='36'>Ошибка в инструкции</message>
+    <message id='37'>Свернуть все разделы</message>
+    <message id='38'>Развернуть все разделы</message>
+    <message id='39'>Найти элемент конструкции</message>
+    <message id='40'>Найти:</message>
+    <message id='41'>Пожалуйста, подтвердите:</message>
+</document>

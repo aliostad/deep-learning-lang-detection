@@ -1,0 +1,54 @@
+USE [SnackOverflowDB]
+GO
+IF EXISTS(SELECT * FROM sys.objects WHERE type = 'P' AND  name = 'sp_update_backorder_preorder')
+BEGIN
+DROP PROCEDURE sp_update_backorder_preorder
+Print '' print  ' *** dropping procedure sp_update_backorder_preorder'
+End
+GO
+
+Print '' print  ' *** creating procedure sp_update_backorder_preorder'
+GO
+Create PROCEDURE sp_update_backorder_preorder
+(
+@old_BACKORDER_PREORDER_ID[INT]=null,
+@old_ORDER_ID[INT],
+@new_ORDER_ID[INT],
+@old_CUSTOMER_ID[INT],
+@new_CUSTOMER_ID[INT],
+@old_AMOUNT[DECIMAL](10,2),
+@new_AMOUNT[DECIMAL](10,2),
+@old_DATE_PLACED[DATETIME],
+@new_DATE_PLACED[DATETIME],
+@old_DATE_EXPECTED[DATETIME],
+@new_DATE_EXPECTED[DATETIME],
+@old_HAS_ARRIVED[BIT],
+@new_HAS_ARRIVED[BIT],
+@old_ADDRESS_1[NVARCHAR](50),
+@new_ADDRESS_1[NVARCHAR](50),
+@old_ADDRESS_2[NVARCHAR](50),
+@new_ADDRESS_2[NVARCHAR](50),
+@old_CITY[NVARCHAR](50),
+@new_CITY[NVARCHAR](50),
+@old_STATE[NCHAR](2),
+@new_STATE[NCHAR](2),
+@old_ZIP[NVARCHAR](10),
+@new_ZIP[NVARCHAR](10)
+)
+AS
+BEGIN
+UPDATE backorder_preorder
+SET ORDER_ID = @new_ORDER_ID, CUSTOMER_ID = @new_CUSTOMER_ID, AMOUNT = @new_AMOUNT, DATE_PLACED = @new_DATE_PLACED, DATE_EXPECTED = @new_DATE_EXPECTED, HAS_ARRIVED = @new_HAS_ARRIVED, ADDRESS_1 = @new_ADDRESS_1, ADDRESS_2 = @new_ADDRESS_2, CITY = @new_CITY, STATE = @new_STATE, ZIP = @new_ZIP
+WHERE (BACKORDER_PREORDER_ID = @old_BACKORDER_PREORDER_ID OR ISNULL(BACKORDER_PREORDER_ID, @old_BACKORDER_PREORDER_ID) IS NULL)
+AND (ORDER_ID = @old_ORDER_ID)
+AND (CUSTOMER_ID = @old_CUSTOMER_ID)
+AND (AMOUNT = @old_AMOUNT)
+AND (DATE_PLACED = @old_DATE_PLACED)
+AND (DATE_EXPECTED = @old_DATE_EXPECTED)
+AND (HAS_ARRIVED = @old_HAS_ARRIVED)
+AND (ADDRESS_1 = @old_ADDRESS_1)
+AND (ADDRESS_2 = @old_ADDRESS_2)
+AND (CITY = @old_CITY)
+AND (STATE = @old_STATE)
+AND (ZIP = @old_ZIP)
+END

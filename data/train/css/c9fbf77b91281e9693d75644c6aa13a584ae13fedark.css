@@ -1,0 +1,53 @@
+html
+{
+	color: #ad5788;
+	background: #412033;
+}
+
+#blog-load-more,
+#to-top
+{
+	color: #ffffff;
+}
+
+#blog-load-more,
+#blog-load-more:before,
+#to-top,
+#to-top:before
+{
+	border-color: #ffffff;
+}
+
+.page-title
+{
+	color: #fefefe;
+	border-bottom-color: #642f4d;
+}
+
+.page-title:after { background-position: bottom left; }
+
+#option-set a
+{
+	color: #8d476f;
+}
+
+#option-set a:hover,
+#option-set a.selected
+{
+	color: #ffffff;
+}
+
+#option-set a:hover,
+#option-set a:hover:before,
+#option-set a.selected,
+#option-set a.selected:before
+{
+	border-color: #ffffff;
+}
+
+#about span.title { color: #e9e9e9; }
+
+#about .text:after { background-color: #642f4d; }
+
+#copyright { color: #ad5788; }
+#copyright a { color: #ffffff; }

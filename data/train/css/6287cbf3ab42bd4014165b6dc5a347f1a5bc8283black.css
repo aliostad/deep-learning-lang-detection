@@ -1,0 +1,275 @@
+@charset "utf-8";
+
+body {background-color:#000; color:#eee}
+
+input.exISt {background:url(../images/black/inputBg.gif) no-repeat right bottom}
+
+select.exISt,
+textarea.exISt,
+input.exISt {color:#aaa;background-color:#000; border-color:#444 #666 #666 #444}
+
+select.exISt:hover,
+textarea.exISt:hover,
+input.exISt:hover,
+select.exISt:focus,
+textarea.exISt:focus,
+input.exISt:hover {border-color:#ccc}
+
+/* bodex Title */
+.exHad {border-color:#666; background: url(../images/black/bgH3.png) repeat-x left bottom}
+.exHad h3{border-color:eee;background:url(../images/black/line_H3_3x15.gif) no-repeat right bottom}
+.exHad h3 a{color:#eee}
+.exHad h4{color:#888}
+
+/* bodex Description */
+.exDes {color:#ccc;border-color:#555}
+.exDPCfg li div {color:#555}
+
+/* account Navigation */
+.exANav a {color:#aaa}
+.exANav a:hover {color:#eee}
+.exANav li.exLgin a {background:url(../images/black/line_1x10.gif) no-repeat left bottom }
+.exANav li.exTIco a{background-image:url(../images/black/listTypeIcon.gif)}
+.exANav li.exRss a{background-image:url(../images/common/iconRss.gif)}
+
+/* document count */
+.exANum {color:#eee; background:url(../images/black/iconArticle.gif) no-repeat left top}
+
+/* category Navigation */
+.exCatMnu a {color:#aaa}
+.exCatMnu a:hover {color:#eee}
+.exCatTab li a{color:#aaa; border-color:#555;background:url(../images/black/bgListTh.png) repeat}
+.exCatTab li a:hover{border-color:#999}
+.exCatMnu td .exCatNav,
+.exCatMnu td .exCatNav div.total {border-color:#555}
+.exCatMnu td .exCatNav div.total {border-top-color:#333}
+
+/* secret Content */
+.exAVCnt .title,
+.exSrCnt div.title,
+.exSrCnt {color:#aaa;border-color:#555}
+
+/* search box */
+.exJsSchExBox {border-color:#999;background-color:#444}
+
+/* message box */
+/* multimedia box */
+.exJsMidBox,
+.exJsMidBox h3,
+.exJsSMBox,
+.exJsSMBox h3 {color:#aaa;border-color:#555}
+.exJsSMBox .exBoxHad {color:#eee;background:url(../images/black/bgH3.png) repeat-x left bottom}
+
+/* Page */
+.exPagNav.a1 {color:#ddd}
+.exPagNav a {color:#ccc}
+.exPagNav a:hover {color:#999}
+.exPagNav.a1 a,
+.exPagNav.a1 strong{border-left-color:#ccc; border-right-color:#555}
+
+.exDocNav a {color:#ccc}
+.exDocNav a:hover {color:#999}
+
+/* profile & signature */
+.exMbSign {border-color:#555}
+.exMbSign .signature p {color:#777}
+.exCPFImg span.adoptCmt {color:#666}
+.exMbSign .profile img,
+.exCPFImg .profile .pImg {border-color: #2a2a2a}
+
+/* popup menu */
+#popup_menu_area {background-color:#000}
+#popup_menu_area ul li a {color:#aaa}
+.comment_popup_menu,
+.document_popup_menu {background:url(../images/black/document_menu.gif) no-repeat right top !important}
+
+.exRead .xe_content {color:#ccc}
+#popup_content div {background-color:#000}
+
+/* list */
+.exList ,
+.exList th,
+.exList td,
+.exList thead th,
+.exList tr.notice td {border-color:#555}
+.exList tr.docList td {border-color:#333}
+.exList thead th {border-top-color:#333}
+
+.exList th,
+.exList td {color:#eee}
+.exList span.blind {color:#eee}
+
+.exList th {color:#ddd;background: url(../images/black/bgListTh.png) repeat}
+.exList th a {color:#eee}
+.exList th a:hover {color:#999}
+
+.exList td a {color:#eee}
+.exList td a:hover {color:#999}
+
+.exList td.title a:visited {color:#666}
+
+.exDocNav span.cat,
+.exList td span.category {color:#888; background:url(../images/black/line_1x10.gif) no-repeat right center}
+
+.exList td.user_name {color:#ddd}
+
+.exList td.no,
+.exList td.regdate,
+.exList td.ipaddress,
+.exList td.last_update,
+.exList td.last_updater,
+.exList td.readed_count,
+.exList td.voted_count,
+.exList td.doc_state,
+.exList td.blamed_count {color:#999}
+
+.exList td span.rePoint {background-color:#555; border-color:#bbb; color:#eee}
+.exList td span.reAdopt {background-color:#000;color:#666}
+
+.exList td.extravalue {color:#bbb}
+
+/* bodexList webzine */
+.exList div.summary,
+.exList div.summary a {color:#aaa}
+.exList div.summary a:hover {color:#888}
+.exList .extTblBox th,
+.exList .extTblBox td {color:#555}
+.exList .extTblBox td a {color:#999}
+.exList .extTblBox td a:hover {color:#ccc}
+.exList td.thumb img {border-color:#555}
+
+ /* bodexList gallery */
+.exList .exThumBox li .exJsThumb,
+.exList .exThumBox li .exJsThumb img{border-color: #555}
+.exList .exThumBox li .info{ background:#fff; opacity:.6; filter:alpha(opacity=60); color:#555}
+.exList .exThumBox li .info p {color:#444}
+
+ /* bodexList download */
+.exList .downBox,
+.exList .downBox div.thumb,
+.exList .downBox div.info li.title {border-color:#555}
+.exList .downBox div.info li span.category {color:#888; background:url(../images/white/line_1x10.gif) no-repeat right center}
+.exList .downBox div.info li .star span.average {color:#444}
+.exList .downBox div.info li .star,
+.exList .downBox div.info li .star a,
+.exList .downBox div.info li .last_updater,
+.exList .downBox div.info li .extravalue {color:#888}
+.exList .downBox div.info li .summary {color:#666}
+
+.exList .downBox div.date,
+.exList .downBox div.date a {color:#444}
+.exList .downBox div.date a:hover {color:#666}
+
+/* Bodex Write */
+.exWrite,
+.exWriteHeader {border-color:#555; color:#ddd}
+.exWriteHeader {background: url(../images/black/bgListTh.png) repeat}
+
+.exWrite .info {color:#707070}
+.exWrite .option label {color:#aaa}
+.exWrite .option label:hover {color:#666}
+
+.exWrite .extVLst {border-color:#555}
+.exWrite .extVLst th,
+.exWrite .extVLst td {color:#aaa; border-color:#555}
+
+.exWrite .extVLst select,
+.exWrite .extVLst textarea,
+.exWrite .extVLst input[type="password"],
+.exWrite .extVLst input[type="text"] {color:#aaa;background-color:#000; border-color:#444 #666 #666 #444}
+
+.exWrite .extVLst select:hover,
+.exWrite .extVLst textarea:hover,
+.exWrite .extVLst input[type="password"]:hover,
+.exWrite .extVLst input[type="text"]:hover,
+.exWrite .extVLst select:focus,
+.exWrite .extVLst textarea:focus,
+.exWrite .extVLst input[type="password"]:focus,
+.exWrite .extVLst input[type="text"]:focus {border-color:#ccc}
+
+.exWrite .extVLst input[type="password"],
+.exWrite .extVLst input[type="text"] {background:url(../images/black/inputBg.gif) no-repeat right bottom}
+
+.exCWrite {color:#aaa; border-color:#555}
+.exCWrite .exWtIfo .votePoint {border-bottom-color:#555}
+.exCWrite .exWtIfo .votePoint label  {color:#aaa}
+.exCWrite .exWtIfo .votePoint label:hover  {color:#666}
+
+/* Bodex Read */
+.exRead {color:#ddd}
+.exRead a {color:#eee}
+.exRead a:hover {color:#999}
+
+.exRead .tleAusr {border-bottom-color:#555;background: url(../images/black/bgListTh.png) repeat}
+
+.exRead .dayACut div {color:#999}
+.exRead .dayACut .category a {color:#bbb}
+
+.exRead .extVLst {border-top-color:#555}
+.exRead .extVLst th,
+.exRead .extVLst td {color:#999; border-color:#555}
+.exRead .extVLst td a {color:#999}
+.exRead .extVLst td a:hover {color:#ccc}
+
+.exRead .tag,
+.exRead .readBody.review,
+.exRead div.thumb {border-color:#555}
+.exRead .staRat  {color:#666}
+
+.filelistFrame {color:#eee;border-color: #555;background-color:#000}
+.filelistFrame a {color:#888}
+
+.exRead .fileAtt {border-color:#555; background-color:#222}
+.exRead .fileAtt li a:visited,
+.exRead .fileAtt span.fileDownloaded {color:#666}
+.exRead .fileAtt span.fileError {color:#555}
+
+.exRead .dRIpAUrl .dRIp,
+.exRead .dRIpAUrl .dRUrl a {color:#555}
+
+.exRead .cntBtn {border-top-color:#555}
+
+/* star */
+.exBg0,
+.exSPFrm span.exBg0 {background-color:#000}
+.exBg1,
+.exSPFrm span.exBg1 {background-color:#222}
+.exRepBox .repBg0,
+.exSPFrm span.repBg0 {background-color:#111}
+.exRepBox .repBg1,
+.exSPFrm span.repBg1 {background-color:#222}
+
+/* tag List */
+.exTagBox {border-color:#555}
+.tags div a {color:#555}
+.tags div a:hover {background-color:#666; color:#fff}
+.tags .tagTypA a {color:#aaa; background-color:#333}
+.tags .tagTypB a {color:#ddd}
+.tags .tagTypC a {background-color:#444}
+.tags .tagTypD a {background-color:#222}
+
+.exTagBox .images img {border-color:#555}
+
+/* replyBox */
+.exRepBox {border-color:#555}
+.exRepBox .repItm {border-color:#555}
+.exRepBox .voted {color:#666}
+.exRepBox .voted a {color:#999}
+.exRepBox .date {color:#707070}
+.exRepBox .repCnt .xe_content {color:#999}
+
+/* trackbackBox */
+.exTbcBox {color:#999; border-color:#555}
+.exTbcBox .tbcItm {color:#aaa;background-color:#1A1A1A; border-top-color:#555}
+.exTbcBox address a {color:#aaa}
+.exTbcBox address a:hover {color:#666}
+.exTbcBox address .date {color:#707070}
+.exTbcBox hr {color:#555; border-color:#555}
+
+/* etc */
+.blogView {border-color:#555}
+.nick_name span,
+.nick_name div {color:#ddd}
+.nick_name .anonym {color:#bbb}
+.exRepBox .nick_name span {color:#bbb}
+.exRepBox .nick_name .anonym {color:#777}

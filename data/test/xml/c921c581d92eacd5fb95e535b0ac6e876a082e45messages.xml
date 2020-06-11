@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Сообщения - конфигуратор продукции (Помощник)  -->
+
+<!DOCTYPE document
+    [
+        <!ELEMENT document (system, task, description, lanquage, message+)>
+            <!ATTLIST    document
+                        id        ID        #REQUIRED
+                        type    NMTOKEN    #REQUIRED
+            >
+            <!ELEMENT system EMPTY>
+                <!ATTLIST    system
+                            id        ID        #REQUIRED
+                            version    NMTOKEN    #REQUIRED
+                >
+            <!ELEMENT task EMPTY>
+                <!ATTLIST    task
+                            id        ID        #REQUIRED
+                            version    NMTOKEN    #REQUIRED
+                >
+            <!ELEMENT description EMPTY>
+                <!ATTLIST    description
+                            id        ID        #REQUIRED
+                            version    NMTOKEN    #REQUIRED
+                >
+            <!ELEMENT lanquage EMPTY>
+                <!ATTLIST    lanquage
+                                id        ID        #REQUIRED
+                >
+            <!ELEMENT message ANY>
+                    <!ATTLIST    message
+                                id        CDATA    #REQUIRED
+                    >
+    ]
+>
+
+<document id='messagesDescription' type='Respond'>
+    <system id='-CIS' version='1'/>
+    <task id='CALCHELPER' version='2'/>
+    <description id='Messages' version='1'/>
+    <lanquage id='ENG'/>
+    
+    <message id='0'>
+        Handlers list doesn't have XML.
+    </message>
+    <message id='1'>
+        Price:$space$
+    </message>
+    <message id='2'>
+        n/a
+    </message>
+    <message id='3'>
+        Instruction error:$space$
+    </message>
+    <message id='4'>
+        $space$incorrect value$space$
+    </message>
+    <message id='5'>
+        <!-- (w/o discounts) -->
+        $space$
+    </message>
+    <message id='6'>
+        empty
+    </message>
+    <message id='7'>Reference documents</message>
+    <message id='8'>Fatal error, report to developer, please.</message>
+    <message id='9'>DD.MM.YYYY</message>
+    <message id='10'>to form start</message>
+    <message id='11'>to form end</message>
+    <message id='12'>The corporate information system does not have information on prices of some options.</message>
+    <message id='13'>References are not up to date.</message>
+    <message id='14'>#</message>
+    <message id='15'>from</message>
+    <message id='16'>Your application is registered.</message>
+    <message id='17'>Service is temporarily unavailable. Try again later.</message>
+    <message id='18'>Warning:$space$</message>
+    <message id='19'>Order parameters control form</message>
+    <message id='20'>Yes</message>
+    <message id='21'>No</message>
+    <message id='22'>Check the data to calculate the cost of completing:</message>
+    <message id='23'>version</message>
+    <message id='24'>
+NOTICE!
+Data for calculating the value of a complete set is not selected.
+    </message>
+    <message id='25'>Qty</message>
+    <message id='26'>Request information</message>
+    <message id='27'>NOTICE!</message>
+    <message id='28'>We apologize for the inconvenience.</message>
+    <message id='29'>Email sent to address XXX.</message>
+    <message id='30'>Your request has been sent to responsible staff.</message>
+    <message id='31'>INFORMATION!</message>
+    <message id='32'>WARNING!</message>
+    <message id='33'>BE CAREFUL!</message>
+    <message id='34'>ERROR!</message>
+    <message id='35'>Changes declined.</message>
+    <message id='36'>Instruction error/</message>
+    <message id='37'>Collapse all group items</message>
+    <message id='38'>Expand all group items</message>
+    <message id='39'>Search construction item</message>
+    <message id='40'>Search:</message>
+    <message id='41'>Please, confirm:</message>
+</document>

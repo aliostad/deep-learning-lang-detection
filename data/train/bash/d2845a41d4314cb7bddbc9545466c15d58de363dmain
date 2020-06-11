@@ -1,0 +1,35 @@
+# vim: set filetype=sh : ~
+
+REQUIRED=(login config history path aliases colors complection
+    alias-complection-fix apps)
+
+# http://stackoverflow.com/questions/4774054
+SCRIPTPATH=`dirname "${BASH_SOURCE[0]}"`
+
+load () {
+    FILE=$SCRIPTPATH/$1
+
+    if [ -f $FILE ]; then
+        . $FILE
+    fi
+}
+
+load_required () {
+    load required/$1
+}
+
+load_optional () {
+    load optional/$1
+}
+
+# required part
+for item in ${REQUIRED[*]}; do
+    load_required "$item"
+done
+
+# optional part
+for item in $(ls $SCRIPTPATH/optional/); do
+    load_optional "$item"
+done
+
+load_required logout

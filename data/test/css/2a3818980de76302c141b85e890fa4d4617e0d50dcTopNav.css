@@ -1,0 +1,88 @@
+.dcTopNav {
+	text-align: left;
+	width: 100%;
+}
+
+.dcTopNav ul {
+	margin-bottom: -3px;
+}
+
+.dcTopNav li {
+	display: inline;
+	margin-right: -4px !important;
+}
+
+.dcTopNav a {
+	text-decoration: none;
+}
+
+.dcTopNav .dcSubNav {
+ 	height: 25px;
+ 	padding: 6px 12px 2px 12px;
+}
+
+.dcTopNav .dcSubNav li a:link {
+ text-decoration: none;
+ color:#000000
+}
+.dcTopNav .dcSubNav li a:visited {
+ text-decoration: none;
+ color:#000000
+}
+.dcTopNav .dcSubNav li a:hover {
+ text-decoration: underline;
+ color:#000000
+}
+
+.dcTopNav .dcSubNav .dcDivider {
+	/*background:transparent url(../lib/yui/build/treeview/assets/sprite-menu.gif) no-repeat scroll -8px 250px;*/
+	
+	color: #959595;
+	padding: 0 .75em 0 .75em;	
+}
+
+.dcTopNav .dcSubNavRight {
+	float: right;
+	height: 22px;	
+}
+
+.dcTopicPath {
+	margin-top: -7px;
+	font-size: 11px;
+}
+
+.dcTopicPath a {
+	color: #0157B0 !important;
+}
+
+
+/* non-DCPS effort Phase II */
+.dcTopNavSubNavTopicPath .dcSubNav {
+	padding-bottom: 10px;
+}
+
+.dcTopNavSubNavTopicPath .dcTopicPath {
+	padding-bottom: 0;
+	padding-top: 10px;
+	padding-left: 14px;
+}
+
+
+.dcPageClass_photo .dcTopNavSubNav,
+.dcPageClass_phase2 .dcTopNavSubNav {
+	padding-bottom: 14px;
+}
+
+.dcPageClass_event.dcPageClass_phase2 .dcTopNavSubNav {
+	padding-bottom: 8px;
+}
+
+.dcPageClass_photo .dcTopNavSubNav .dcSubNav,
+.dcPageClass_phase2 .dcTopNavSubNav .dcSubNav {
+	padding-top: 0;
+	position: relative;
+	bottom: -3px;
+}
+
+
+

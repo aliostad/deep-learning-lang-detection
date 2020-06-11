@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<allClasses>
+   <apiPackage id="__Global__">
+      <apiName>__Global__</apiName>
+      <apiDetail/>
+      <apiClassifier id="globalClassifier:Main">
+         <apiName>Main</apiName>
+         <shortdesc/>
+         <prolog>
+            <asMetadata/>
+         </prolog>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.display:Sprite</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <Keywords>
+            <meta name="keywords" content="Main,globalClassifier.Main,init"/>
+         </Keywords>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="view">
+      <apiName>view</apiName>
+      <apiDetail/>
+      <apiClassifier id="view:TFComponent">
+         <apiName>TFComponent</apiName>
+         <shortdesc/>
+         <prolog>
+            <asMetadata/>
+         </prolog>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.display:Sprite</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <Keywords>
+            <meta name="keywords" content="TFComponent,view.TFComponent,init"/>
+         </Keywords>
+      </apiClassifier>
+   </apiPackage>
+</allClasses>

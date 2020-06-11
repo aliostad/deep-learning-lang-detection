@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#
+# restartgdm - Restart GDM.
+# Created to resolve a bug in Beta2.
+# (C) 2010 Eugenio "g7" Paolantonio <morarossa@gmail.com>
+# Work released under the terms of the GNU GPL license, version 3 or later.
+#
+
+unset DISPLAY
+
+DEFAULT="$1"
+[ -z "$1" ] && DEFAULT="gdm3"
+
+if [ "$UID" != "0" ]; then
+	echo "E: You need to be root to restart $DEFAULT."
+fi
+
+invoke-rc.d $DEFAULT restart
+invoke-rc.d $DEFAULT start # If it fails, gdm3 is already running and we are happy. If it not fails, gdm3 will start. We are happy too.
+
+# Exit 0
+exit 0

@@ -1,0 +1,44 @@
+#!/bin/bash
+#####################################################
+# Author          : yunxing - yunxing.cyx
+# Last modified   : 2011-12-28 16:53
+# Function        : show load
+# Usage           : 
+#                    check_load [-h] 
+#####################################################
+
+
+LANG=C
+
+# ##############################################################################
+# Load check.
+# ##############################################################################
+
+## get load
+
+if [ "x$1" = "x-h" ]
+then
+	echo "load [level-value]"
+	exit 0
+fi
+function get_load(){
+	loadavg=$(uptime | sed 's/^.*load average: \([^,][^,]*\),.*$/\1/g')
+}
+
+## main ##
+
+get_load 
+
+if [ $# -ne 0 ]
+then
+        echo "a$1b" >/tmp/a
+	ruslt=$(echo "$loadavg>$1"| bc)
+	if [ $ruslt -eq 1 ]
+	then
+		echo  "[$loadavg]"
+	else
+		echo  "[OK]"
+	fi
+else
+	echo $loadavg
+fi

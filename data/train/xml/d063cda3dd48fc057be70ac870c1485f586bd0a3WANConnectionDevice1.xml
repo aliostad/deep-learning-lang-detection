@@ -1,0 +1,37 @@
+<device>
+    <serviceList>
+        <service>
+			<Optional/>
+            <serviceType>urn:schemas-upnp-org:service:WANPOTSLinkConfig:1</serviceType>
+        </service>
+
+        <service>
+			<Optional/>
+            <serviceType>urn:schemas-upnp-org:service:WANDSLLinkConfig:1</serviceType>
+        </service>
+
+
+        <service>
+			<Optional/>
+            <serviceType>urn:schemas-upnp-org:service:WANCableLinkConfig:1</serviceType>
+        </service>
+
+
+        <service>
+			<Optional/>
+            <serviceType>urn:schemas-upnp-org:service:WANEthernetLinkConfig:1</serviceType>
+        </service>
+
+
+        <service>
+			<Optional/>
+            <serviceType>urn:schemas-upnp-org:service:WANPPPConnection:1</serviceType>
+        </service>
+
+        <service>
+			<Optional/>
+            <serviceType>urn:schemas-upnp-org:service:WANIPConnection:1</serviceType>
+        </service>	
+		 
+    </serviceList>
+</device>

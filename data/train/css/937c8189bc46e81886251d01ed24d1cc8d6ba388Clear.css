@@ -1,0 +1,29 @@
+/* 
+    Document   : Clear.css
+    Created on : Apr 6, 2011, 1:38:25 PM
+    Author     : nbanks
+    Description:
+        Purpose of the stylesheet follows.
+*/
+#content-model-viewer ol, #content-model-viewer ul {
+    list-style: none;
+}
+#content-model-viewer a:link {
+    padding-bottom: 0px;
+}
+#content-model-viewer table, .adr-clear table, .x-window table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+#content-model-viewer form tbody, #content-model-viewer form tbody th, .x-window th, .x-window td {
+    border: 0;
+}
+
+.x-boundlist-item {
+  background: none;
+}

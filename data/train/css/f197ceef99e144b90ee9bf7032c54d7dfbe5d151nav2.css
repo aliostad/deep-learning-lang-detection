@@ -1,0 +1,57 @@
+/* -------------------- */
+/* main                 */
+/* -------------------- */
+#mainNav { background-image: url("images2/global-nav/eng/bg-global-nav.jpg"); background-size: 1000px 120px; }
+#mainNav a { background-image: url("images2/global-nav/eng/bt-global-nav.jpg"); background-size: 749px 126px; }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+     #mainNav { background-image: url("images2/global-nav/eng/bg-global-nav@2x.jpg"); }
+     #mainNav a { background-image: url("images2/global-nav/eng/bt-global-nav@2x.jpg"); }
+}
+
+#mainNav #products { width: 106px; background-position: 0 0; }
+#mainNav #products:hover { background-position: 0 -42px; }
+#mainNav #products.selected { background-position: 0 -84px; }
+
+#mainNav #resellers { width: 96px; background-position: -107px 0; }
+#mainNav #resellers:hover { background-position: -107px -42px; }
+#mainNav #resellers.selected { background-position: -107px -84px; }
+
+#mainNav #support { width: 92px; background-position: -204px 0; }
+#mainNav #support:hover { background-position: -204px -42px; }
+#mainNav #support.selected { background-position: -204px -84px; }
+
+#mainNav #company { width: 101px; background-position: -297px 0; }
+#mainNav #company:hover { background-position: -297px -42px; }
+#mainNav #company.selected { background-position: -297px -84px; }
+
+#mainNav #events { width: 81px; background-position: -399px 0; }
+#mainNav #events:hover { background-position: -399px -42px; }
+#mainNav #events.selected { background-position: -399px -84px; }
+
+#mainNav #press { width: 72px; background-position: -481px 0; }
+#mainNav #press:hover { background-position: -481px -42px; }
+#mainNav #press.selected { background-position: -481px -84px; }
+
+#mainNav #community { width: 113px; background-position: -554px 0; }
+#mainNav #community:hover { background-position: -554px -42px; }
+#mainNav #community.selected { background-position: -554px -84px; }
+
+#mainNav #forum { width: 79px; background-position: -668px 0; }
+#mainNav #forum:hover { background-position: -668px -42px; }
+#mainNav #forum.selected { background-position: -668px -84px; }
+
+/* -------------------- */
+/* sub nav              */
+/* -------------------- */
+body.atemproductionstudio4k nav#subNav a {
+    padding: 0 13px
+}
+body.atemproductionstudio4k nav#subNav a#atemproductionstudio4k {
+    padding-left: 15px
+}
+body.atemproductionstudio4k nav#subNav a#howtobuy {
+    padding: 0 15px
+}
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */

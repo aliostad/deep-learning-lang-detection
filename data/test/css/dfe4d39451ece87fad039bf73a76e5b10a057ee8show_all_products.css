@@ -1,0 +1,47 @@
+/**
+ * Product list
+ */
+.show-all-products .product-list{
+	border-top: 2px solid #A0B333; 	
+	width: 100%;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+ 
+.show-all-products .product-list caption{
+ 	text-align: left;
+ 	font-weight: bold;
+ 	margin-top: 10px;
+}
+
+.show-all-products th{
+	text-align: left;	
+}
+
+.show-all-products .product-list td a{
+	color: #000000;
+	text-decoration: none;	
+}
+
+.show-all-products .product-name{
+	
+}
+
+.show-all-products .currency-sign{
+	text-align: right;	
+	width: 15px;
+}
+
+.show-all-products .price{
+	text-align: right;
+	width: 90px;
+}
+
+.show-all-products tr.alt-row{
+	background-color: #E1EAAC;
+}
+
+.show-all-products .alt-row td{
+	border-top: 1px solid #A0B333;
+	border-bottom: 1px solid #A0B333;
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<script name="cw_etltool._import.entitiesManagement">
+  <label>Entities Management</label>
+  <metaVersion>4</metaVersion>
+  <parameterList>
+    <parameter name="process" type="rifp">
+      <mandatory>true</mandatory>
+      <type>doc_cwf_pm.CWPROCESS</type>
+    </parameter>
+    <parameter name="document" type="rifp">
+      <mandatory>true</mandatory>
+      <type>dstruct_api_common.data.object</type>
+    </parameter>
+  </parameterList>
+  <script><![CDATA[
+    Global.logInfo(" \n\n $$$$$$$$$$$$$$$$$$$$$ Entity Management Script Activity $$$$$$$$$$$$$$$$$$$$$$$$$$ \n\n");
+
+    var  order = process.processOrder;
+
+    try{
+        while( process.processDocument.isThereEntityToProcess() &&  !process.processDocument.IsError){
+
+            cw_etltool._import.loadEntity(process,document);
+
+            if(!process.processDocument.IsError){
+                process.processDocument.incrementProcessedEntitiesCount();
+                process.processDocument.resetCurrentEntityID();
+            }
+        }
+    }catch(ex){
+
+        var errorMsg = "Entity Management Error!" ;
+        process.processDocument.IsError = true;
+        order.header.OrderStatus = cw_etltool._import.$CONSTANT().orderStatus.ERROR;
+        order.header.ErrorMessage = errorMsg + "\n" + ex.message;
+
+    }finally{
+        if(order != null)
+            order.save();
+
+    }
+  ]]></script>
+</script>

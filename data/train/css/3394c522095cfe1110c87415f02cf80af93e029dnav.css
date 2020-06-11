@@ -1,0 +1,121 @@
+/******************************
+ * 
+ * CETEN services header CSS
+ * 
+ * @author Jonathan ARNAULT
+ * @copyright Cercle des Élèves de TELECOM Nancy <bde@telecomnancy.net>
+ * @license MIT
+ * 
+ *****************************/
+
+.main-nav {
+    position: fixed;
+        top: 30px;
+        left: 0;
+        right: 0;
+    z-index: 9999998;
+}
+
+.main-nav .navbar-nav {
+    margin: 0;
+}
+
+.main-nav .navbar-default,
+.main-nav .navbar-collapse {
+    background-color: #6c2466;
+    box-shadow: none;
+    border: 0;
+    padding: 0;
+}
+
+.main-nav .navbar-default {
+    border-bottom: 0;
+
+    /* Reset navbar */
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav .navbar-default .navbar-nav > li > a {
+    padding: 0 20px 0 20px;
+    color: #ffffff;
+    line-height: 50px;
+}
+
+.main-nav .navbar-default .navbar-nav > li > a:hover {
+    background-color: #451041;
+    color: #ffffff;
+}
+
+.main-nav .navbar-default .navbar-nav > li > a:focus,
+.main-nav .navbar-default .navbar-nav > li > a:active,
+.main-nav .nav .open>a, 
+.main-nav .nav .open>a:hover, 
+.main-nav .nav .open>a:focus,
+.main-nav .nav .open>a:active {
+    background: none;
+    color: #ffffff;
+}
+
+.main-nav .dropdown-menu > li > a:hover,
+.main-nav .dropdown-menu > li > a:active,
+.main-nav .dropdown-menu > li > a:focus {
+    background-color: #6c2466;
+    color: #ffffff;
+}
+
+.main-nav .ceten-network-icon {
+    margin-right: 10px;
+}
+
+.main-nav .navbar > .container .navbar-brand, 
+.main-nav .navbar > .container-fluid .navbar-brand {
+    margin-left: 0;
+    font-size: inherit;
+}
+
+.main-nav .navbar-toggle {
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    height: 50px;
+    line-height: 50px;
+    padding: 8px 8px;
+}
+
+.main-nav .navbar-toggle:hover,
+.main-nav .navbar-toggle:active,
+.main-nav .navbar-toggle:focus {
+    background-color: #451041;
+}
+
+.main-nav .navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+.main-nav .navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 767px) {
+    .main-nav .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        background: #6c2466;
+        color: #ffffff;
+    }
+
+    .main-nav .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+        background: #451041;
+    }
+}
+
+.main-nav .navbar-brand img {
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .main-nav .navbar .container-fluid {
+        padding: 0;
+    }
+}

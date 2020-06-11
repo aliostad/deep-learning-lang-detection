@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Getlinks-Repository-TestSuite" parallel="false" verbose="1" >
+  <test name="repositoryTests" >
+    <classes>
+      <class name="fr.getlinks.test.repository.impl.NetworkRepositoryImplTest"/>
+      <class name="fr.getlinks.test.repository.impl.UserRepositoryImplTest"/>   
+      <class name="fr.getlinks.test.repository.impl.UserRegistrationRepositoryImplTest"/>      
+      <class name="fr.getlinks.test.repository.impl.UserNetworkRepositoryImplTest"/>
+    </classes>
+  </test>
+</suite> 

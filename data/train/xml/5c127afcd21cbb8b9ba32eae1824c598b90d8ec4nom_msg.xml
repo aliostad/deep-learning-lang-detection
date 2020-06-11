@@ -1,0 +1,38 @@
+<class
+    name = "nom_msg"
+    signature = "0"
+    title = "nom protocol"
+    script = "zproto_codec_c"
+    header = "../include"
+    source = "."
+    >
+
+    <message name = "OHAI" id = "1">
+
+    </message>
+
+    <message name = "OHAI-OK" id = "2">
+
+    </message>
+
+    <message name = "WTF" id = "3">
+
+    </message>
+
+    <message name = "ICANHAZ" id ="4">
+
+    </message>
+
+    <message name = "CHEEZBURGER" id = "5">
+
+    </message>
+
+    <message name = "HUGZ" id = "6">
+
+    </message>
+
+    <message name = "HUGZ-OK" id = "7">
+
+    </message>
+    
+</class>

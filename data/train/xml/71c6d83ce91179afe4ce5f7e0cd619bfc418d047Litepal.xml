@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<litepal>
+
+    <!-- 制定数据库名字 -->
+
+    <dbname value="litepaldemo" >
+    </dbname>
+    <!-- 数据库版本号 -->
+
+    <version value="2" >
+    </version>
+    <!-- 设置所有的映射模型 -->
+
+    <list>
+
+        <mapping class="com.example.litepaldemo.model.NewsLitePal" >
+        </mapping>
+
+        <mapping class="com.example.litepaldemo.model.CommentLitePal" >
+        </mapping>
+
+        <mapping class="com.example.litepaldemo.model.IntroductionLitePal" >
+        </mapping>
+
+        <mapping class="com.example.litepaldemo.model.CategoryLitePal" >
+        </mapping>
+    </list>
+
+</litepal>

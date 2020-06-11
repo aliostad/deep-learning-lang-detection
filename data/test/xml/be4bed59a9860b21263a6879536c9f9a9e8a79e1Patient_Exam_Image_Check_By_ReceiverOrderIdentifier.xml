@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 1 -->
+<compare>
+	<query>
+		<sql>select @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13, @14, @15, @16 from Obsr_ImagingSeries where ReceiverOrderIdentifier_Id = ?</sql>
+		<aql></aql>
+	</query>
+	<mappings>
+		<mapping>
+			<column>DicomSeriesIdentifier_Id</column>
+			<node></node>
+		</mapping>
+		
+		<mapping>
+			<column>DicomStudyIdentifier_Id</column>
+			<node></node>
+		</mapping>
+		
+		<mapping>
+			<column>EncounterIdentifier</column>
+			<node></node>
+		</mapping>
+		
+		<mapping>
+			<column>Images_ImageAbsolutePath</column>
+			<node></node>
+		</mapping>
+		
+		<mapping>
+			<column>Images_ImageDatetime</column>
+			<node></node>
+		</mapping>
+		
+		<mapping>
+			<column>Images_ImageIdentifier_Id</column>
+			<node></node>
+		</mapping>
+		
+		<mapping>
+			<column>Images_ImageRelativePath</column>
+			<node></node>
+		</mapping>
+		
+		<mapping>
+			<column>Images_Image_Uri</column>
+			<node></node>
+		</mapping>
+		
+		<mapping>
+			<column>Images_KeyImage</column>
+			<node></node>
+		</mapping>
+		
+		<mapping>
+			<column>Images_Position</column>
+			<node></node>
+		</mapping>
+		
+		<mapping>
+			<column>Images_View</column>
+			<node></node>
+		</mapping>
+		
+		<mapping>
+			<column>OrderIdentifier</column>
+			<node></node>
+		</mapping>
+		
+		<mapping>
+			<column>PatientIdentifier_Id</column>
+			<node></node>
+		</mapping>
+		
+		<mapping>
+			<column>ReceiverOrderIdentifier_Id</column>
+			<node></node>
+		</mapping>
+		
+		<mapping>
+			<column>RequesterOrderIdentifier</column>
+			<node></node>
+		</mapping>
+		
+		<mapping>
+			<column>Images_MediaName</column>
+			<node></node>
+		</mapping>
+	</mappings>
+	<parameters></parameters>
+</compare>

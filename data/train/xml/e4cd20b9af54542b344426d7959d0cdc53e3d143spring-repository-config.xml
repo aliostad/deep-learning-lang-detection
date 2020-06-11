@@ -1,0 +1,34 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+    <context:component-scan base-package="org.shop.repository" />
+    <context:property-placeholder location="classpath:prop.properties" />
+
+    <import resource="spring-initializer-config.xml" />
+
+    <bean id="org.shop.repository.ItemRepository" class="org.shop.repository.map.ItemMapRepository" />
+    <bean id="org.shop.repository.OrderRepository" class="org.shop.repository.map.OrderMapRepository">
+        <constructor-arg>
+            <value>${org.shop.repository.map.OrderMapRepository.initialSequence}</value>
+        </constructor-arg>
+    </bean>
+
+    <bean id="org.shop.repository.ProductRepository" class="org.shop.repository.map.ProductMapRepository" />
+
+    <bean id="org.shop.repository.ProposalRepository" class="org.shop.repository.map.ProposalMapRepository" />
+
+    <bean id="org.shop.repository.SellerRepository" class="org.shop.repository.map.SellerMapRepository" />
+
+    <bean id="springFactory" class="org.shop.repository.factory.UserRepositoryFactory" />
+
+    <bean id="org.shop.repository.UserRepository"
+          factory-bean="springFactory"
+          factory-method="createUserRepository" />
+
+
+</beans>

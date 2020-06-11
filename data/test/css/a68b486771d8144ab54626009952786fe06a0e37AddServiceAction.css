@@ -1,0 +1,35 @@
+#add_service_action   .arg-table-display{
+    width: 100%;
+    height: 80px;
+    margin-top: 30px;
+    overflow-y: auto;
+    overflow-x:hidden;
+
+}
+
+#add_service_action .arg-table-display table thead{
+    position: absolute;
+    top: -25px;
+    left: 0px;
+}
+
+#add_service_action .table-warp {
+    position: relative;
+    width: 100%;
+}
+
+#add_service_action table thead th{
+    width: 10%;
+    font-size: 11px;
+    margin: 0px;
+    padding: 0px;
+}
+#add_service_action .error-hint {
+    font-size: 11px;
+    color: #ff0000;
+
+}
+
+#add_service_action .required {
+    color: #ff0000;
+}

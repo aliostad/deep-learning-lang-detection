@@ -1,0 +1,51 @@
+li:nth-of-type(1)
+{
+    
+    padding:10px;
+animation: load 5s infinite
+}
+li:nth-of-type(2)
+{
+     padding:10px;
+animation: load1 5s infinite
+}
+li:nth-of-type(3)
+{
+     padding:10px;
+animation: load2 5s infinite
+}
+li:nth-of-type(4)
+{
+     padding:10px;
+animation: load3 5s infinite
+}
+@-moz-keyframes load
+{
+25%  {background-color:RED;}
+50%  {}
+75%  {}
+100% {}
+}
+
+@-moz-keyframes load1
+{
+25%  {}
+50%  {background-color:BLUE;}
+75%  {}
+100% {}
+}
+
+@-moz-keyframes load2
+{
+25%  {}
+50% {}
+75% {background-color:BROWN;}
+100% {}
+}
+@-moz-keyframes load3
+{
+25%  {}
+50% {}
+75% {}
+100% {background-color:GRAY;}
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <theme href="index2.html" css:if-content="#visual-portal-wrapper"  />
+
+    <!--Head-->
+    <copy css:content="html" css:theme="html" attributes="lang dir" />
+    <copy css:content="head base" css:theme="head base" />
+    <replace css:content="head title" css:theme="head title" />
+    <before css:content="head style, head link, head script, head meta" css:theme-children="head" />
+    
+    <!--These lines loads  '?css_file=mycssfile.css' in request -->
+    
+    <append css:theme="head"  >
+       <link type="text/css" rel="stylesheet" media="all" href="{$css_file}"  />
+    </append>
+    
+    <!--top-->
+    <append css:theme="#portal-header" css:content="#portal-siteactions" />
+    <append css:theme="#portal-header" css:content="#portal-searchbox" />
+    <append css:theme="#portal-header" css:content="#portal-logo" />
+    <append css:theme="#portal-header" css:content="#portal-globalnav" />
+    <append css:theme="#portal-header" css:content="#portal-personaltools-wrapper" />
+    <append css:theme="#portal-header" css:content="#portal-breadcrumbs" />
+    
+    <!-- content -->
+    <append css:theme="#portal-columns" css:content="#portal-columns" />
+
+    <!-- bottom -->
+    <append css:theme="#portal-footercolophon" css:content="#portal-footer" />
+    <append css:theme="#portal-footercolophon" css:content="#portal-colophon" />
+     
+    <!--Hiding the original content-->
+    <drop css:theme="#my-visual-portal-wrapper" />
+    
+</rules>

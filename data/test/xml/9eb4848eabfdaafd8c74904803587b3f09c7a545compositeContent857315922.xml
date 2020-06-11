@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?compositeMetadataRepository version='1.0.0'?>
+<repository name='m2e releases repository'
+    type='org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository' 
+    version='1.0.0'>
+
+  <properties size='1'>
+    <property name='p2.timestamp' value='7'/>
+  </properties>
+
+  <children size='1'>
+    <child location='1.4'/>
+    <child location='1.5'/>
+
+    <!--
+          407797 removed all earlier versions when add 1.4
+          need to make sure no slf4j/logback versions "leak"
+          in Kepler release repository
+    -->
+  </children>
+</repository>

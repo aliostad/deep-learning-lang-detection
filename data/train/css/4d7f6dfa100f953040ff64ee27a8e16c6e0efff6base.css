@@ -1,0 +1,61 @@
+html, body {
+  font-family: "Oxygen", "Helvetica Neue", sans-serif;
+  font-size: 14pt;
+  color: #222;
+  background-color: #f7f7f7;
+  margin: 0 auto;
+  width: 960px;
+  height: 100%;
+}
+
+#container {
+  min-height: 100%;
+  position: relative;
+}
+
+.service {
+    border-bottom: 1px solid #ddd;
+}
+
+.service:last-child {
+    border-bottom: 0;
+}
+
+.service-link {
+    padding-right: 8px;
+}
+
+.service-profiles {
+    position: relative;
+}
+
+.service-profile {
+    border-radius: 4px;
+    border: 1px solid #999;
+    padding: 1px 4px 1px 4px;
+    background-color: #ccc;
+    font-size: 90%;
+    position: absolute;
+    bottom: 8px;
+    color: #333;
+}
+
+.service-link.already-authed {
+    cursor: default;
+}
+
+.service-link.already-authed > a {
+    pointer-events: none;
+}
+
+.service-link.already-authed > a > img {
+    opacity: 0.2;
+}
+
+.service {
+  padding-top: 4px;
+}
+
+.service > a {
+  cursor: pointer;
+}

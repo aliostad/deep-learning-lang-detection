@@ -1,0 +1,18 @@
+<lookupservice>
+	<service>
+		<name>HelloService</name>
+		<URL>http://localhost:8080/HelloService/services/HelloService</URL>
+	</service>
+	<service>
+		<name>HelloService</name>
+		<URL>http://localhost2:8080/HelloService/services/HelloService</URL>
+	</service>
+	<service>
+		<name>HelloWorldService</name>
+		<URL>http://localhost:8080/HelloWorldService/services/HelloWorldService</URL>
+	</service>
+	<service>
+		<name>HelloWorldService</name>
+		<URL>http://localhost2:8080/HelloWorldService/services/HelloWorldService</URL>
+	</service>
+</lookupservice>

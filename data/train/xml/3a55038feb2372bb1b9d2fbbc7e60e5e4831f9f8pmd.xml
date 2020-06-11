@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="4.3" timestamp="2013-04-05T18:46:59.618">
+<file name="/scratch/jenkins/workspace/jclouds-maven-site-1.6.0-rc.3/apis/sts/src/main/java/org/jclouds/aws/filters/FormSigner.java">
+<violation beginline="19" endline="222" begincolumn="1" endcolumn="2" rule="TooManyStaticImports" ruleset="Import Statement Rules" package="org.jclouds.aws.filters" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#TooManyStaticImports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+<violation beginline="27" endline="27" begincolumn="15" endcolumn="61" rule="DuplicateImports" ruleset="Import Statement Rules" package="org.jclouds.aws.filters" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#DuplicateImports" priority="4">
+Avoid duplicate imports such as 'org.jclouds.aws.reference.FormParameters.ACTION'
+</violation>
+<violation beginline="28" endline="28" begincolumn="15" endcolumn="72" rule="DuplicateImports" ruleset="Import Statement Rules" package="org.jclouds.aws.filters" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#DuplicateImports" priority="4">
+Avoid duplicate imports such as 'org.jclouds.aws.reference.FormParameters.AWS_ACCESS_KEY_ID'
+</violation>
+<violation beginline="30" endline="30" begincolumn="15" endcolumn="71" rule="DuplicateImports" ruleset="Import Statement Rules" package="org.jclouds.aws.filters" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#DuplicateImports" priority="4">
+Avoid duplicate imports such as 'org.jclouds.aws.reference.FormParameters.SIGNATURE_METHOD'
+</violation>
+<violation beginline="31" endline="31" begincolumn="15" endcolumn="72" rule="DuplicateImports" ruleset="Import Statement Rules" package="org.jclouds.aws.filters" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#DuplicateImports" priority="4">
+Avoid duplicate imports such as 'org.jclouds.aws.reference.FormParameters.SIGNATURE_VERSION'
+</violation>
+<violation beginline="32" endline="32" begincolumn="15" endcolumn="64" rule="DuplicateImports" ruleset="Import Statement Rules" package="org.jclouds.aws.filters" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#DuplicateImports" priority="4">
+Avoid duplicate imports such as 'org.jclouds.aws.reference.FormParameters.TIMESTAMP'
+</violation>
+<violation beginline="33" endline="33" begincolumn="15" endcolumn="62" rule="DuplicateImports" ruleset="Import Statement Rules" package="org.jclouds.aws.filters" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#DuplicateImports" priority="4">
+Avoid duplicate imports such as 'org.jclouds.aws.reference.FormParameters.VERSION'
+</violation>
+</file>
+<file name="/scratch/jenkins/workspace/jclouds-maven-site-1.6.0-rc.3/apis/sts/src/main/java/org/jclouds/aws/handlers/AWSClientErrorRetryHandler.java">
+<violation beginline="58" endline="64" begincolumn="10" endcolumn="10" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.jclouds.aws.handlers" class="AWSClientErrorRetryHandler" method="shouldRetryRequest" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="/scratch/jenkins/workspace/jclouds-maven-site-1.6.0-rc.3/apis/sts/src/main/java/org/jclouds/aws/handlers/ParseAWSErrorFromXmlContent.java">
+<violation beginline="86" endline="87" begincolumn="18" endcolumn="16" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.jclouds.aws.handlers" class="ParseAWSErrorFromXmlContent" method="handleError" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+</pmd>

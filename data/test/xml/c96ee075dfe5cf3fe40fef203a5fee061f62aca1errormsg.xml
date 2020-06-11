@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<db>
+		<node no="1001">
+			<message>DSN未設定！</message>
+		</node>
+		<node no="1002">
+			<message>未設定DB接続方式！</message>
+		</node>
+		<node no="1003">
+			<message>DB接続失敗！</message>
+		</node>
+		<node no="1004">
+			<message>Statement対象生成失敗！</message>
+		</node>
+		<node no="1005">
+			<message>結果取得失敗！</message>
+		</node>
+		<node no="1006">
+			<message>SQL実行失敗！</message>
+		</node>
+		<node no="1007">
+			<message>未更新任何数据！</message>
+		</node>
+	</db>
+	<app>
+		<node no="2001">
+			<message>用戸名或密碼錯誤！</message>
+		</node>
+		<node no="2002">
+			<message>三次登録失敗、帳号已被管理員鎖定、請聯系管理員！</message>
+		</node>
+		<node no="2003">
+			<message>帳号不存在！</message>
+		</node>
+		<node no="2004">
+			<message>帳号已被管理員鎖定、請聯系管理員！</message>
+		</node>
+		<node no="2005">
+			<message>帳号或密碼不能為空！</message>
+		</node>
+		<node no="2006">
+			<message>請重新登録！</message>
+		</node>
+		<node no="2007">
+			<message>請先登録！</message>
+		</node>
+		<node no="2008">
+			<message>謝謝使用！</message>
+		</node>
+		<node no="2009">
+			<message>系統現在的設置為不能添加用戸！</message>
+		</node>
+		<node no="2010">
+			<message>用戸添加失敗！</message>
+		</node>
+		<node no="2011">
+			<message>用戸更新失敗！</message>
+		</node>
+		<node no="2012">
+			<message>添加新提問失敗！</message>
+		</node>
+		<node no="2013">
+			<message>提問更新失敗！</message>
+		</node>
+		<node no="2014">
+			<message>没有修改権限！</message>
+		</node>
+		<node no="2015">
+			<message>添加新回答失敗！</message>
+		</node>
+		<node no="2016">
+			<message>回答更新失敗！</message>
+		</node>
+	</app>
+	<sys>
+		<node no="3001">
+			<message>発行新Session失敗！</message>
+		</node>
+		<node no="3999">
+			<message>系統錯誤、請重新登録！</message>
+		</node>
+	</sys>
+	<int>
+		<node no="4001">
+			<message>表示範囲未設定！</message>
+		</node>
+	</int>
+</root>

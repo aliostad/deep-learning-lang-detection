@@ -1,0 +1,55 @@
+.car_type{
+	width:94%;
+	margin:0 auto;
+	padding-bottom:50px;
+}
+.carTypeTitle{
+	font-size:18px;
+	padding:2% 0 5%;
+}
+.showCarType{
+	width:94%;
+	margin:0 auto;
+}
+.showCarType .carArea{
+	width:65%;
+	float:left;
+}
+.showCarType .carArea img{
+	width:100%;
+}
+
+.showCarType .tel{
+	float:right;
+	width:32%;
+	font-size:16px;
+	padding:3% 0 0;
+}
+.showCarType .tel p{
+	text-indent:0;
+	padding:0 0 6% 3%;
+}
+.showCarType .tel a{
+	display:block;
+	margin:3% 0 5%;
+}
+.showCarType .tel img{
+	width:100%;
+	display:block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

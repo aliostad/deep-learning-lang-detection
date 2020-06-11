@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+--><DBcopies>
+        <copy>
+            <bookcode>0</bookcode>
+            <isbn>978-84-9908-405-3</isbn>
+            <state>STORED</state>
+        </copy>
+        <copy>
+            <bookcode>1</bookcode>
+            <isbn>978-84-9908-405-3</isbn>
+            <state>STORED</state>
+        </copy>
+        <copy>
+            <bookcode>3</bookcode>
+            <isbn>978-84-9908-405-3</isbn>
+            <state>STORED</state>
+        </copy>
+        <copy>
+            <bookcode>4</bookcode>
+            <isbn>978-84-7669-308-7</isbn>
+            <state>STORED</state>
+        </copy>
+        <copy>
+            <bookcode>5</bookcode>
+            <isbn>978-84-7669-308-7</isbn>
+            <state>STORED</state>
+        </copy>
+        <copy>
+            <bookcode>6</bookcode>
+            <isbn>978-84-7669-308-7</isbn>
+            <state>STORED</state>
+        </copy>
+</DBcopies>

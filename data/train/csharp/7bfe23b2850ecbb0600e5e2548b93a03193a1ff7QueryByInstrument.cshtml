@@ -1,0 +1,25 @@
+﻿@model BandAide.Web.Models.ViewModels.NeedMembersQueryViewModel
+
+@{
+    ViewBag.Title = "Search by instrument";
+}
+
+@Html.AntiForgeryToken()
+
+
+@Html.HiddenFor(model => model.Band.Id)
+<div style="text-align: center;">
+    @foreach (var instrument in Model.InstrumentSelectList)
+    {
+        //public ActionResult QueryByInstrument(Guid bandId, Guid selectedInstrumentId)
+        <a href="@Url.Action("ExecuteQueryByInstrument", new {bandId = Model.Band.Id, selectedInstrumentId = instrument.Value})">
+            <img id=@instrument.Value
+                 src=@("/content/" + instrument.Text + "_icon.png")
+                 width="100px" />
+        </a>
+    }
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

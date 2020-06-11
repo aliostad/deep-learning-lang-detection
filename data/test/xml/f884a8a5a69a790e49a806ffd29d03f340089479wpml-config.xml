@@ -1,0 +1,133 @@
+<wpml-config>
+	<custom-fields>
+		<custom-field action="copy">layout</custom-field>
+		<custom-field action="copy">content_width</custom-field>
+		<custom-field action="copy">post_image</custom-field>
+		<custom-field action="copy">feature_size</custom-field>
+		<custom-field action="copy">image_dimensions</custom-field>
+		<custom-field action="copy">imagefilter_options</custom-field>
+		<custom-field action="copy">imagefilter_options_hover</custom-field>
+		<custom-field action="copy">imagefilter_applyto</custom-field>
+		<custom-field action="copy">hide_post_title</custom-field>
+		<custom-field action="copy">unlink_post_title</custom-field>
+		<custom-field action="copy">hide_meta_multi</custom-field>
+		<custom-field action="copy">hide_post_date</custom-field>
+		<custom-field action="copy">hide_post_image</custom-field>
+		<custom-field action="copy">unlink_post_image</custom-field>
+		<custom-field action="copy">video_url</custom-field>
+		<custom-field action="copy">external_link</custom-field>
+		<custom-field action="copy">multi_lightbox_link</custom-field>
+		<custom-field action="copy">custom_menu</custom-field>
+		<custom-field action="copy">body_background_color</custom-field>
+		<custom-field action="copy">body_background_image</custom-field>
+		<custom-field action="copy">body_background_repeat</custom-field>
+		<custom-field action="copy">color_scheme_mode</custom-field>
+		<custom-field action="copy">color_design</custom-field>
+		<custom-field action="copy">scheme_color</custom-field>
+		<custom-field action="copy">scheme_link</custom-field>
+		<custom-field action="copy">scheme_background</custom-field>
+		<custom-field action="copy">typography_mode</custom-field>
+		<custom-field action="copy">font_design</custom-field>
+		<custom-field action="copy">body_font</custom-field>
+		<custom-field action="copy">body_text_color</custom-field>
+		<custom-field action="copy">body_link_color</custom-field>
+		<custom-field action="copy">heading_font</custom-field>
+		<custom-field action="copy">heading_color</custom-field>
+		<custom-field action="copy">header_design</custom-field>
+		<custom-field action="copy">fixed_header</custom-field>
+		<custom-field action="copy">full_height_header</custom-field>
+		<custom-field action="copy">_multi_header_elements</custom-field>
+		<custom-field action="copy">header_wrap</custom-field>
+		<custom-field action="copy">_animated_colors</custom-field>
+		<custom-field action="copy">background_gallery</custom-field>
+		<custom-field action="copy">_video_select</custom-field>
+		<custom-field action="copy">background_color</custom-field>
+		<custom-field action="copy">background_image</custom-field>
+		<custom-field action="copy">background_repeat</custom-field>
+		<custom-field action="copy">headerwrap_text_color</custom-field>
+		<custom-field action="copy">headerwrap_link_color</custom-field>
+		<custom-field action="copy">footer_design</custom-field>
+		<custom-field action="copy">_multi_footer_elements</custom-field>
+		<custom-field action="copy">page_layout</custom-field>
+		<custom-field action="copy">hide_page_title</custom-field>
+		<custom-field action="copy">_video_select</custom-field>
+		<custom-field action="copy">_query_posts_notice</custom-field>
+		<custom-field action="copy">query_category</custom-field>
+		<custom-field action="copy">order</custom-field>
+		<custom-field action="copy">orderby</custom-field>
+		<custom-field action="copy">layout</custom-field>
+		<custom-field action="copy">post_content_layout</custom-field>
+		<custom-field action="copy">disable_masonry</custom-field>
+		<custom-field action="copy">post_gutter</custom-field>
+		<custom-field action="copy">more_posts</custom-field>
+		<custom-field action="copy">posts_per_page</custom-field>
+		<custom-field action="copy">display_content</custom-field>
+		<custom-field action="copy">feature_size_page</custom-field>
+		<custom-field action="copy">image_dimensions</custom-field>
+		<custom-field action="copy">hide_title</custom-field>
+		<custom-field action="copy">unlink_title</custom-field>
+		<custom-field action="copy">hide_date</custom-field>
+		<custom-field action="copy">hide_image</custom-field>
+		<custom-field action="copy">unlink_image</custom-field>
+		<custom-field action="copy">hide_navigation</custom-field>
+		<custom-field action="copy">portfolio_query_category</custom-field>
+		<custom-field action="copy">portfolio_order</custom-field>
+		<custom-field action="copy">portfolio_orderby</custom-field>
+		<custom-field action="copy">portfolio_layout</custom-field>
+		<custom-field action="copy">portfolio_post_content_layout</custom-field>
+		<custom-field action="copy">portfolio_disable_masonry</custom-field>
+		<custom-field action="copy">portfolio_post_gutter</custom-field>
+		<custom-field action="copy">portfolio_more_posts</custom-field>
+		<custom-field action="copy">portfolio_posts_per_page</custom-field>
+		<custom-field action="copy">portfolio_display_content</custom-field>
+		<custom-field action="copy">portfolio_feature_size_page</custom-field>
+		<custom-field action="copy">_portfolio_image_dimensions</custom-field>
+		<custom-field action="copy">portfolio_hide_title</custom-field>
+		<custom-field action="copy">portfolio_unlink_title</custom-field>
+		<custom-field action="copy">portfolio_hide_meta_all</custom-field>
+		<custom-field action="copy">portfolio_hide_image</custom-field>
+		<custom-field action="copy">portfolio_unlink_image</custom-field>
+		<custom-field action="copy">portfolio_hide_navigation</custom-field>
+		<custom-field action="copy">post_image</custom-field>
+		<custom-field action="copy">feature_size</custom-field>
+		<custom-field action="copy">hide_post_meta</custom-field>
+		<custom-field action="copy">post_id_info</custom-field>
+		<custom-field action="copy">_separator_project_info</custom-field>
+		<custom-field action="copy">project_date</custom-field>
+		<custom-field action="copy">project_client</custom-field>
+		<custom-field action="copy">project_services</custom-field>
+		<custom-field action="copy">project_launch</custom-field>
+		<custom-field action="copy">_video_select</custom-field>
+
+		<custom-field action="copy">image_dimensions</custom-field>
+		<custom-field action="copy">image_width</custom-field>
+		<custom-field action="copy">image_height</custom-field>
+		<custom-field action="copy">hide_meta_multi</custom-field>
+		<custom-field action="copy">hide_meta_all</custom-field>
+		<custom-field action="copy">hide_meta_author</custom-field>
+		<custom-field action="copy">hide_meta_category</custom-field>
+		<custom-field action="copy">hide_meta_comment</custom-field>
+		<custom-field action="copy">hide_meta_tag</custom-field>
+		<custom-field action="copy">iframe_url</custom-field>
+		<custom-field action="copy">lightbox_link</custom-field>
+	</custom-fields>
+	<custom-types>
+		<custom-type translate="1">portfolio</custom-type>
+		<custom-type translate="1">highlight</custom-type>
+		<custom-type translate="1">testimonial</custom-type>
+		<custom-type translate="1">slider</custom-type>
+	</custom-types>    
+	<taxonomies>
+		<taxonomy translate="1">portfolio-category</taxonomy>
+		<taxonomy translate="1">highlight-category</taxonomy>
+		<taxonomy translate="1">testimonial-category</taxonomy>
+		<taxonomy translate="1">slider-category</taxonomy>
+	</taxonomies>    
+	<admin-texts>
+		<key name="themify_data">
+			<key name="setting-header_html" />
+			<key name="setting-footer_html" />
+			<key name="setting-default_more_text" />
+		</key>
+	</admin-texts>
+</wpml-config>

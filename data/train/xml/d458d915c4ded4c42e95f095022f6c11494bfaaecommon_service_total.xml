@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BHNS>
+	<!--服务区-->
+	<!--事件定义-->
+	<CLUSTER PORTALID="1" SERVICE="com.doteyplay.core.bhns.location.ISvrLocationService"/>
+		<ENDPOINT PORTALID="1" ENDPOINTID="0" IP="127.0.0.1" PORT="50001"/>
+		
+	<SERVICE PORTALID="0" IP="127.0.0.1" PORT="50001" SERVICE="com.doteyplay.core.bhns.eventservice.ISvrEventService"/>
+	<!-- 扩展子服务 -->
+	<!-- <SERVICE PORTALID="33" APPERTAIN="100" SERVICE="com.doteyplay.game.service.bo.roleinfo.ext.appearance.IAppearanceService"/> -->
+	
+	<!-- 集群配置-->
+<CLUSTER PORTALID="3" SERVICE="com.doteyplay.game.service.bo.virtualworld.IVirtualWorldService"/>
+	<ENDPOINT PORTALID="3" ENDPOINTID="0" IP="127.0.0.1" PORT="50001"/>
+	
+<CLUSTER PORTALID="2" SERVICE="com.doteyplay.game.service.bo.gateway.IGameGateWayService"/>
+	<ENDPOINT PORTALID="2" ENDPOINTID="0" IP="127.0.0.1" PORT="50001"/>
+
+	<SERVICE PORTALID="4" IP="127.0.0.1" PORT="50001" SERVICE="com.doteyplay.game.service.bo.item.IItemService"/>
+	
+	<SERVICE PORTALID="5" IP="127.0.0.1" PORT="50001" SERVICE="com.doteyplay.game.service.bo.tollgate.ITollgateInfoService"/>
+	<!-- 角色-->
+	<SERVICE PORTALID="6" IP="127.0.0.1" PORT="50001" SERVICE="com.doteyplay.game.service.bo.role.IRoleService"/>
+	
+	
+	
+</BHNS>	
+ 

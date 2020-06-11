@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+	<message id="app.title">Drinking Buddies</message>
+	
+	<message id="start-form.login">Login</message>
+	<message id="start-form.search-beer">Search beer</message>
+	<message id="start-form.search-bar">Search bar</message>
+	
+	<message id="beer-form.brewed-by">Brewed by</message>
+	<message id="beer-form.alcohol">Alcohol</message>
+	<message id="beer-form.favored-by">Favored by</message>
+	<message id="beer-form.score">Score</message>
+	<message id="beer-form.add-to-favorites">Add to favorites</message>
+	<message id="beer-form.tags">Tags</message>
+	<message id="beer-form.add-tag">Add tag</message>
+	<message id="beer-form.in-which-bar-can-i-find">In which bars can I find {1}?</message>
+	<message id="beer-form.reviews">Reviews</message>
+	<message id="beer-form.add-review">Add review</message>
+	<message id="beer-form.add-to-favorites.status">Status</message>
+	<message id="beer-form.add-to-favorites.added">We added "{1}" to your favorites!</message>
+	<message id="beer-form.add-to-favorites.not-added">We did not add "{1}" to your favorites again!<br/>It already belongs to your list of favorite beers.</message>
+	
+	<message id="add-tag-dialog.title">Add a tag to "{1}"</message>
+	<message id="add-tag-dialog.add-new">Add a new tag</message>
+	<message id="add-tag-dialog.provide-new-tag-name">Provide a new tag name</message>
+	<message id="add-tag-dialog.select-existing">Select an existing tag</message>
+	<message id="add-tag-dialog.ok">OK</message>
+	<message id="add-tag-dialog.cancel">Cancel</message>
+	
+	<message id="add-review-dialog.title">Add a review for "{1}"</message>
+	<message id="add-review-dialog.color">Color</message>
+	<message id="add-review-dialog.smell">Smell</message>
+	<message id="add-review-dialog.taste">Taste</message>
+	<message id="add-review-dialog.feel">Feel</message>
+	<message id="add-review-dialog.text">Text</message>
+	<message id="add-review-dialog.ok">OK</message>
+	<message id="add-review-dialog.cancel">Cancel</message>
+	
+	<message id="review.average-score">Score</message>
+	<message id="review.posted-by">Posted by</message>
+	<message id="review.color">Color</message>
+	<message id="review.smell">Smell</message>
+	<message id="review.taste">Taste</message>
+	<message id="review.feel">Feel</message>
+	<message id="review.expand/comment">Expand/Comment</message>
+	<message id="review.collapse">Collapse</message>
+	
+	<message id="comments.all-comments">All comments</message>
+	<message id="comments.please-log-in">Please log in to post a comment</message>
+	
+	<message id="add-comment.leave-a-new-comment">Leave a new comment!</message>
+	<message id="add-comment.clear">Clear</message>
+	<message id="add-comment.post">Post</message>
+	
+	<message id="comment.posted-by">Posted by</message>
+	
+	<message id="beer-search.select-beer">Select beer</message>
+	<message id="beer-search.find-beer">Find beer</message>
+	<message id="beer-search.results">Results</message>
+	<message id="beer-search.no-results">Sorry, we could not find any results for your search.</message>
+	
+	
+	<message id="bar-search.select-bar">Select bar</message>
+	<message id="bar-search.find-bar">Find bar</message>
+	<message id="bar-search.results">Results</message>
+	<message id="bar-search.no-results">Sorry, we could not find any results for your search.</message>
+	<message id="bar-search.add-bar">Add new bar</message>
+	
+	<message id="logged-in-user.logged-in-as">Logged in as</message>
+	
+	<message id="user-form.is-drinking-in">is drinking in "{1}" (located in {2}, {3})</message>
+	<message id="user-form.find-nearby-friends">Find nearby friends</message>
+	<message id="user-form.find-nearby-bars">Find nearby bars</message>
+	<message id="user-form.favorite-beers">Favorite beers</message>
+	<message id="user-form.favorite-bars">Favorite bars</message>
+	<message id="user-form.share-location">Share location</message>
+	<message id="user-form.stop-share-location">Stop sharing location</message>
+	<message id="user-form.friend-import">Import your friends from facebook</message>
+	<message id="user-form.logout">logout</message>
+	
+	<message id="new-bar-form.title">Add a new bar</message>
+	<message id="new-bar-form.name">Name of the bar</message>
+	<message id="new-bar-form.website">Website of the bar</message>
+	<message id="new-bar-form.address">Address of the bar</message>
+	<message id="new-bar-form.street">Street</message>
+	<message id="new-bar-form.zipcode">Zip Code</message>
+	<message id="new-bar-form.number">House number</message>
+	<message id="new-bar-form.city">City</message>
+	<message id="new-bar-form.country">Country</message>
+	<message id="new-bar-form.ok">Save bar</message>
+	<message id="new-bar-form.cancel">Cancel</message>
+	
+	<message id="bar-form.name">Name of the bar</message>
+	<message id="bar-form.website">Website</message>
+	<message id="bar-form.address">Address</message>
+	<message id="bar-form.favored-by">Favored by</message>
+	<message id="bar-form.score">Score</message>
+	<message id="bar-form.beerlist-tile">Available beers</message>
+	<message id="bar-form.add-beer">Add a beer</message>
+	<message id="bar-form.change-score">Change Score</message>
+	<message id="bar-form.upload">Upload</message>
+    <message id="bar-form.add-to-favorites">Add to favorites</message>
+	<message id="bar-form.add-to-favorites.status">Status</message>
+	<message id="bar-form.add-to-favorites.added">We added "{1}" to your favorites!</message>
+	<message id="bar-form.add-to-favorites.not-added">We did not add "{1}" to your favorites again!<br/>It already belongs to your list of favorite bars.</message>
+		
+	<message id="add-beer-dialog.title">Add beer to list of available beers at the bar</message>
+	<message id="add-beer-dialog.add-beer">Add beer</message>
+	<message id="add-beer-dialog.cancel">Cancel</message>
+	
+	<message id="nearby-bars-form.title">Find nearby bars</message>
+	<message id="nearby-bars-form.location">Search location</message>
+	<message id="nearby-bars-form.radius">Radius</message>
+	<message id="nearby-bars-form.beer">Beer on tap</message>
+	<message id="nearby-bars-form.search">Find bars</message>
+    <message id="nearby-bars-form.beer-not-found">Beer not found, no beer used in search</message>
+    <message id="nearby-bars-form.location-not-found">Location not found</message>
+	
+	<message id="friends-bars-form.title">Find bars with friends</message>
+	<message id="friends-bars-form.location">Search location</message>
+	<message id="friends-bars-form.radius">Radius</message>
+	<message id="friends-bars-form.search">Find bars</message>
+	<message id="friends-bars-form.location-not-found">Location not found</message>
+
+</messages>

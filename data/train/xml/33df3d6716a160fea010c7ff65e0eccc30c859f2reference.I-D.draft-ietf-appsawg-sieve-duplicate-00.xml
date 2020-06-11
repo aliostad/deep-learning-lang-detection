@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<reference anchor='I-D.ietf-appsawg-sieve-duplicate'>
+<front>
+<title>Sieve Email Filtering: Detecting Duplicate Deliveries</title>
+
+<author initials='S' surname='Bosch' fullname='Stephan Bosch'>
+    <organization />
+</author>
+
+<date month='May' day='22' year='2013' />
+
+<abstract><t>This document defines a new test command "duplicate" for the "Sieve" email filtering language.  This test adds the ability to detect duplicate message deliveries.  The main application for this new test is handling duplicate deliveries commonly caused by mailing list subscriptions or redirected mail addresses.  The detection is normally performed by matching the message ID to an internal list of message IDs from previously delivered messages.  For more complex applications, the "duplicate" test can also use the content of a specific header or other parts of the message.</t></abstract>
+
+</front>
+
+<seriesInfo name='Internet-Draft' value='draft-ietf-appsawg-sieve-duplicate-00' />
+<format type='TXT'
+        target='http://www.ietf.org/internet-drafts/draft-ietf-appsawg-sieve-duplicate-00.txt' />
+</reference>

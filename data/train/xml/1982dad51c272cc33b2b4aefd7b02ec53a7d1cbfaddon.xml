@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.smallplayer"
+        name="SMALLplayer repository"
+        version="1.0.0"
+        provider-name="SMALLplayer">
+    <extension point="xbmc.addon.repository"
+        name="SMALLplayer Repository">
+        <info>http://repository.smallplayer.nl/addons.xml</info>
+        <checksum>http://repository.smallplayer.nl/addons.xml.md5</checksum>
+        <datadir zip="true">http://repository.smallplayer.nl</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>SMALLplayer Repository</summary>
+        <description>SMALLplayer Repository.</description>
+        <disclaimer>-</disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>

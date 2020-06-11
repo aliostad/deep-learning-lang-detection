@@ -1,0 +1,35 @@
+
+body { background: url(../img/pic_app.gif) repeat; }
+.font {font-size: 10px;}
+
+.container {padding-top: 10%;}
+.container a.esf_down_load { display: block; width: 446px; height: 132px; margin: 0 auto; background: url(../img/pic_app_ui_a.png) no-repeat; margin-bottom: 12px; background-size: 100%; }
+.container a.esf_down_load:hover { display: block; width: 446px; height: 132px; background: url(../img/pic_app_ui_b.png) no-repeat; background-size: 100%; }
+
+.container h1 {font-size: 2.785em; color: #606060; margin-top: 0.75%; margin-bottom: 3.75%;}
+.logo img { max-width: 446px; min-width: 260px; width: 60%; _width:446px; }
+.content span {font-size: 1.25em; color: #7e7e7e;}
+footer {margin-top: 160px; line-height: 2em;}
+
+@media screen and (max-width: 360px) {
+    .container a.esf_down_load {width: 260px; height: 75px;}
+    .container a.esf_down_load:hover {width: 260px; height: 75px;}
+    .container h1 {font-size: 18px;}
+    .content span {font-size: 12px;}
+}
+
+@media screen and (min-width: 360px) {
+    .container a.esf_down_load {width: 300px; height: 86px;}
+    .container a.esf_down_load:hover {width: 300px; height: 86px;}
+}
+
+@media screen and (min-width: 600px) {
+    .container a.esf_down_load {width: 300px; height: 86px;}
+    .container a.esf_down_load:hover {width: 300px; height: 86px;}
+}
+
+@media screen and (min-width: 800px) {
+    .container a.esf_down_load {width: 446px; height: 132px;}
+    .container a.esf_down_load:hover {width: 446px; height: 132px;}
+}
+

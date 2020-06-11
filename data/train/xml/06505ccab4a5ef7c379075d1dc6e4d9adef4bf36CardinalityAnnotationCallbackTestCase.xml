@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<deployment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="urn:jboss:bean-deployer bean-deployer_2_0.xsd"
+            xmlns="urn:jboss:bean-deployer:2.0">
+
+   <bean name="testObject" class="org.jboss.test.kernel.inject.support.AnnotationCardinalityCallbackTestObjectImpl" />
+
+   <bean name="tester1" class="org.jboss.test.kernel.inject.support.DuplicateTester"/>
+   <bean name="tester2" class="org.jboss.test.kernel.inject.support.DuplicateTester"/>
+   <bean name="tester3" class="org.jboss.test.kernel.inject.support.DuplicateTester"/>
+
+</deployment>

@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%; }
+
+.box {
+  width: 100%;
+  height: 100%; }
+
+.header {
+  width: 100%;
+  height: 4.8rem;
+  background: #3b3b3b;
+  text-align: center;
+  line-height: 4.8rem;
+  position: relative; }
+  .header > i {
+    position: absolute;
+    color: #fff;
+    font-size: 2rem;
+    left: 1rem;
+    top: 0; }
+  .header > p {
+    font-size: 1.6rem;
+    color: #fff; }
+  .header > span {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    font-size: 2rem;
+    color: #fff; }
+
+.mark {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5); }
+  .mark .write {
+    width: 90%;
+    height: 60%;
+    background: #fff;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px; }
+    .mark .write > img {
+      width: 50%;
+      height: auto; }
+    .mark .write > p {
+      font-size: 1.6rem; }
+    .mark .write .inp {
+      width: 80%;
+      height: 5rem;
+      margin: auto;
+      padding: 1rem;
+      border-bottom: 1px solid #1f1f1f;
+      position: relative; }
+      .mark .write .inp > span {
+        position: absolute;
+        width: 20px;
+        left: 16px;
+        top: 14px; }
+        .mark .write .inp > span > img {
+          width: 100%; }
+      .mark .write .inp > input {
+        width: 100%;
+        height: 100%;
+        padding-left: 3rem;
+        font-size: 1.6rem;
+        border: none;
+        outline-style: none; }
+    .mark .write > button {
+      width: 80%;
+      height: 4rem;
+      outline-style: none;
+      border: none;
+      background: #47a447;
+      color: #fff;
+      margin-top: 3rem;
+      border-radius: 5px;
+      font-size: 1.6rem; }
+
+/*# sourceMappingURL=style.css.map */

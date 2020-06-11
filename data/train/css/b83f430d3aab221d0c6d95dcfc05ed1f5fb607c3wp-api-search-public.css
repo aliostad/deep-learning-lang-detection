@@ -1,0 +1,39 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+.twitter-typeahead,
+.tt-hint {
+	width: 100%;
+}
+input#wp-api-search-input {
+	width: 100%;
+}
+
+#wp-api-search-suggested-wrapper .tt-hint {
+	height: 0;
+	padding: 0;
+	border: none;
+}
+#wp-api-search-suggested-wrapper .twitter-typeahead {
+	top: -10px;
+}
+#wp-api-search-results img {
+    float: left; 
+    margin: 10px 20px 0 0;
+}
+#wp-api-search-results article {
+	overflow: auto;
+	clear: both;
+	margin-bottom: 20px;
+}
+input[name=wp_api_search_spelling_suggestion] {
+	height: 0;
+	width: 0;
+	margin: 0;
+	float: left;
+	padding: 0;
+	border: 0;
+	clear: both;
+}
+

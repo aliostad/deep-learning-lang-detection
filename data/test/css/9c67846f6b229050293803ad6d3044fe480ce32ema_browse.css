@@ -1,0 +1,52 @@
+.view-ma-browse .views-view-grid {
+  table-layout: fixed;
+}
+
+
+.view-ma-browse .views-view-grid td {
+  width: 100px;
+  vertical-align: top;
+}
+
+.view-ma-browse .view-filters {
+  float: left;
+  width: 200px;
+}
+
+.view-ma-browse .view-filters select {
+  width: 190px;
+}
+
+.view-ma-browse .view-filters input {
+  width: 180px;
+}
+
+.view-ma-browse .view-content {
+  float: left;
+  width: 700px;
+}
+
+.view-ma-browse .views-field-title {
+  font-size: 0.9em;
+}
+
+.page-browse .feed-icon {
+  display: none;
+}
+
+table.views-view-grid {
+  vertical-align: top;
+  padding: 0px;
+  margin: 0px;
+}
+
+table.views-view-grid div.field-name-title {
+  font-size: smaller;
+}
+
+table.views-view-grid div.field-name-field-tags,
+table.views-view-grid div.field-name-field-category,
+table.views-view-grid div.field-name-field-culturalprotocol,
+table.views-view-grid div.field-name-field-communities {
+  font-size: 12px;
+}

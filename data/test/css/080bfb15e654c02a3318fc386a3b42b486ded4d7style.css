@@ -1,0 +1,84 @@
+
+#paper {
+  width: 10000px;
+  height: 10000px;
+  border-top: 1px solid gray;
+}
+
+body.erd-model {
+  margin: 0;
+  padding: 0;
+  background-color: pink; /* default */
+}
+
+.content {
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.postgres .content { background-image: url('img/postgres-sm.png') }
+.mongo .content { background-image: url('img/mongo-sm.png') }
+.mysql .content { background-image: url('img/mysql-sm.png') }
+body.erd-model.postgres { background-color: yellow; }
+body.erd-model.mongo { background-color: orange; }
+body.erd-model.mysql { background-color: green; }
+
+img.relation {
+  width: 10px;
+  height: 10px;
+  padding-right: 3px;
+}
+
+.info {
+  font-size: 9px;
+}
+
+body.erd-model {
+  height: 99%;
+  border: 1px solid black;
+  box-shadow: 0 0 7px 7px #eee;
+}
+
+h4.header {
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+h5 {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.child-klasses {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: #eee;
+  background-color: #444;
+}
+
+ul {
+  padding: 0 0 .5em .5em;
+  margin: 0;
+  overflow: hidden;
+}
+
+ul li {
+  font-size: 10px;
+  font-family: courier;
+  margin: 0;
+  list-style: none;
+}
+
+.content ul li {
+  width: 500px;
+}
+
+.modelName {
+  fill: #ff0;
+}

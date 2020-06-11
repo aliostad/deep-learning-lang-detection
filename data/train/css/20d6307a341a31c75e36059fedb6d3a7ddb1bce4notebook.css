@@ -1,0 +1,116 @@
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+/*
+ * Заголовок
+ */
+
+.menu a
+{
+  padding: 0 15px;
+  font-size: 1.125rem;
+}
+
+
+
+/*
+ * Команда
+ */
+
+.team
+{
+  min-height: 700px;
+  max-height: 800px
+}
+
+.team_photo
+{
+  width: 222px;
+  height: 222px;
+}
+
+.team_header
+{
+  font-size: 1.5625rem;
+}
+
+.team_desc
+{
+  font-size: 1rem;
+  padding: 0 15px;
+}
+
+
+
+/*
+ * Услуги
+ */
+
+.service_desc
+{
+	width: 230px;
+}
+
+.service_item.__line_1
+{
+  width: 420px;
+}
+
+.service_item.__line_2
+{
+  width: 580px;
+}
+
+.service_item.__line_3
+{
+  width: 680px;
+}
+
+.service_item.__line_4
+{
+  width: 735px;
+}
+
+.service_item.__line_5
+{
+  width: 680px;
+}
+
+.service_item.__line_6
+{
+  width: 580px;
+}
+
+.service_item.__line_7
+{
+  width: 520px;
+}
+
+.service_desc.__left
+{
+  left: -120px;
+}
+
+.service_desc.__right
+{
+  right: -120px;
+}
+
+
+
+/*
+ * Футер
+ */
+
+.footer
+{
+  font-size: 1rem;
+}
+
+.fo_header
+{
+  font-size: 1.875rem;
+}
+
+
+} /* <-- Medium devices */

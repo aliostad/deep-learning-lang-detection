@@ -1,0 +1,61 @@
+.write_task input[type="text"] {
+    width:240px;
+    color:black;
+    border: 2px solid black;
+}
+.write_task button {
+   border-color:black;
+   background-color:inherit;
+}
+.btn input[type="submit"] {
+    margin-top:10px;
+    color: black;
+    text-transform: uppercase;
+    border: 2px solid black;
+    border-radius: 2px;
+    background-color:grey ;
+    margin-bottom:10px;
+}
+
+.write_task i{
+    color: black;
+    font-size:14px;
+}
+
+.btn input[type="submit"]:hover {
+   background-color:white ;
+}
+
+.btn input[type="submit"]:active {
+   background-color:white ;
+}
+.write_task i:hover {
+  opacity:0.5;
+ 
+}
+
+.task {
+  width:243px;
+  min-height:20px;
+  border: 1px solid black;
+  margin-bottom:2px;
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  
+}
+
+.task i {
+  color: black;
+  font-size:14px;
+  height:14px;
+  width:14px;
+}
+.task button {
+   border:none;
+   background-color:inherit;
+}
+.task i:hover {
+  opacity:0.2;
+}
+

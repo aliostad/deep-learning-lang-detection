@@ -1,0 +1,58 @@
+#nav { position: relative; }
+
+/* All Levels */ /* Style consistent throughout all nav levels */
+#nav li { text-align:left;	}
+#nav li.over { z-index:998;}
+#nav li.over.parent {  }
+#nav a,
+#nav a:hover { display:block; line-height:1.3em; text-decoration:none; }
+#nav span { display:block; cursor:pointer; white-space:nowrap; }
+#nav li ul span { white-space:normal; }
+#nav a { float:left; }
+#nav li.level0 > a > span { color:white; }
+#nav > li.over,
+#nav > li:hover,
+#nav > li.active { background-color: white; }
+#nav ul.chield > li { display:block; float:left; padding: 0 10px 0 0; border-right: 1px solid #DFDFDC; }
+#nav .chield { width: 964px; margin-left:10px; border:3px solid #e1dfdd; border-top: 0; }
+/* 1st Level */
+#nav ul li {float:none; margin:0; padding:0; }
+#nav ul li.parent { }
+#nav ul li.last { padding-bottom:0; }
+#nav ul li.active { }
+#nav ul a,
+#nav ul a:hover { float:none; background:none; }
+#nav ul a:hover { text-decoration:underline; }
+#nav > li:hover > ul { left:-40px; }
+#nav > li > ul:hover { left:-40px; }
+#nav > li > ul > li > a { }
+#nav > li > ul > li.parent > a span { font-size: 14px; }
+#nav ul li a { font-weight:normal; }
+
+/* 2nd Level */
+#nav li:hover #nav  ul,
+#nav div {left: 100px;}
+#nav  ul,
+#nav div { top: 30px; left:-10000px; padding:3px 0 15px; background:#fff; font-size:12px; }
+#nav > li > ul >li { width: 133px; margin:0 10px 0 0; }
+#nav div ul { position:static; width:auto; border:none; padding:0; }
+
+#nav ul.level0 { position:absolute; z-index: 1500; padding: 20px 15px 15px; }
+
+/* ========================== */
+#nav > li > ul > li ul { margin-left:3px; }
+#nav > li > ul > li ul > li { padding-left: 12px; margin:4px 0 8px 0; background-image: url("../images/li_square.png"); background-position: left center; background-repeat: no-repeat; }
+/* ========================== */
+
+/* 3rd+ Level */
+#nav ul ul,
+#nav ul div { top:5px; padding: 10px 0px 5px; }
+
+
+/* Show menu */
+#nav li ul.shown-sub,
+#nav li div.shown-sub { left:-1px; z-index:999; }
+#nav li .shown-sub ul.shown-sub,
+#nav li .shown-sub li div.shown-sub { left:100px; }
+/********** Navigation > */
+/* ======================================================================================= */

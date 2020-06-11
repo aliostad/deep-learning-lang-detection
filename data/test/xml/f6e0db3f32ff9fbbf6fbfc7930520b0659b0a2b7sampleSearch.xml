@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SolrRequest>
+	<action>search</action>
+	<queries>
+	<query>
+			<append></append>
+			<queryString>(doc_type:"PRODUCT" AND name:*#searchTerm*)</queryString>
+			<parser>com.mt.is.solr.parsers.ReplaceQueryParser</parser>
+			<paramMethod>getReqParams</paramMethod>
+	</query>
+	<query>
+			<append>AND</append>
+			<queryString>#doc_id</queryString>
+			<parser>com.mt.is.solr.parsers.ListQueryParser</parser>
+			<appendList>OR</appendList>
+			<paramMethod>getList</paramMethod>
+	</query>
+	</queries>
+    <handler>com.mt.is.solr.handlers.SolrSearchQueryHandler</handler>
+    <maxResults>100</maxResults>
+</SolrRequest>

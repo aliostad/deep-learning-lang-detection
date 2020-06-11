@@ -1,0 +1,25 @@
+#!/bin/sh
+
+set -e
+
+#DEBHELPER#
+
+case "$1" in
+    configure)
+	ucf --three-way /usr/share/nfs-kernel-server/conffiles/etc.exports /etc/exports
+	ucf --three-way /usr/share/nfs-kernel-server/conffiles/nfs-kernel-server.default /etc/default/nfs-kernel-server
+
+	for f in /var/lib/nfs/etab  \
+		 /var/lib/nfs/rmtab \
+		 /var/lib/nfs/xtab; do
+	    [ -e $f ] || touch $f
+	done
+
+	update-rc.d nfs-kernel-server defaults 20 80 >/dev/null
+    ;;
+esac
+
+act="restart"
+[ "$1:$2" = "configure:" ] && act="start"
+[ "$1:$2" = "configure:" ] && invoke-rc.d nfs-common start
+invoke-rc.d nfs-kernel-server $act

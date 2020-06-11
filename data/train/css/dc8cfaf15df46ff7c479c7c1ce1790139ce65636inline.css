@@ -1,0 +1,58 @@
+<style>
+	/**
+	 * -----------------------------------------
+	 *     Page loading effects 
+	 *     	- Simple effect for every page load 
+	 *     
+	 * -----------------------------------------
+	 */
+	.global-wrapper{
+		
+	}
+	
+
+
+	/**
+	 * -----------------------------------------
+	 *     Scroll Reveal inline styles
+	 *     -Ensure elements load hidden before ScrollReveal runs
+	 *     	
+	 *     
+	 * -----------------------------------------
+	 */
+	.flip-45,
+	#professional-skills img,
+	.packages > section,
+	#cd-timeline > section,
+	.delay-1,
+	.social-icons ul li,
+	form,
+	#summary ,
+	header nav, 
+	.jumbotron,
+	#summary h1,
+	#summary h2,
+	#summary p,
+	#summary .beach
+	{
+		visibility: hidden;
+		will-change: transform;
+	}
+
+	/*Enhance 3D Transitions*/
+	.sr-perspective,
+	.social-icons ul
+	{
+		perspective: 800px;
+	}
+
+	/**
+	 * -----------------------------------------
+	 *     Above the fold inline content
+	 *     	
+	 *     
+	 * -----------------------------------------
+	 */
+
+
+</style>

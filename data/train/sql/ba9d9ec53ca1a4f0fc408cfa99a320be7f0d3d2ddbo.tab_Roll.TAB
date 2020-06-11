@@ -1,0 +1,20 @@
+﻿/****** Objekt:  Tabelle [dbo].[tab_Roll]    Skriptdatum: 07.01.2004 19:23:01 ******/
+if exists (select * from sysobjects where id = object_id(N'[dbo].[tab_Roll]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [dbo].[tab_Roll]
+GO
+
+CREATE TABLE [dbo].[tab_Roll] (
+	[intRecordLID] [int] IDENTITY (1, 1) NOT NULL ,
+	[uniRecordGID] [uniqueidentifier] NOT NULL ,
+	[nvaRecordActor] [nvarchar] (100) NOT NULL ,
+	[datRecordTime] [datetime] NULL ,
+	[nvaRecordChangeActor] [nvarchar] (50) NULL ,
+	[datRecordChangeTime] [datetime] NULL ,
+	[navRollName] [nvarchar] (50) NOT NULL ,
+	CONSTRAINT [PK_tab_UserRolls] PRIMARY KEY  NONCLUSTERED 
+	(
+		[intRecordLID]
+	)  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+

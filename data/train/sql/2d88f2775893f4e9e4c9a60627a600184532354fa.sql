@@ -1,0 +1,2 @@
+INSERT INTO quest(userid, timestamp, key, quest_id, add_exp, add_gold, add_attr1, add_attr2, add_attr3, add_attr4, add_attr5, add_attr6, add_attr7,add_attr8, add_attr9, add_attr10, new_exp, new_gold, new_attr1, new_attr2, new_attr3, new_attr4, new_attr5, new_attr6, new_attr7, new_attr8, new_attr9, new_attr10, new_gold, new_exp, reward_item) VALUES (1092, '2013-03-19_21:04:51.887398', 'pass_single_instance', '', 2521, 410, 5400, 0, 0, 0, 0, 0, 0, 0, 0, 0, 107100, 97192, 3651, 3651, 0, 0, 0, 0
+, 0, 140, 652378, 25580, '')

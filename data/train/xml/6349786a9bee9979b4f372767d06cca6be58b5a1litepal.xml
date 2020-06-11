@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="chenjiang"></dbname>
+
+    <version value="4"></version>
+
+    <storage value="external"></storage>
+
+    <list>
+        <mapping class="com.shtoone.chenjiang.mvp.model.entity.db.GongdianData"></mapping>
+        <mapping class="com.shtoone.chenjiang.mvp.model.entity.db.MeasureSpecificationData"></mapping>
+        <mapping class="com.shtoone.chenjiang.mvp.model.entity.db.StaffData"></mapping>
+        <mapping class="com.shtoone.chenjiang.mvp.model.entity.db.JidianData"></mapping>
+        <mapping class="com.shtoone.chenjiang.mvp.model.entity.db.DuanmianData"></mapping>
+        <mapping class="com.shtoone.chenjiang.mvp.model.entity.db.CedianData"></mapping>
+        <mapping class="com.shtoone.chenjiang.mvp.model.entity.db.YusheshuizhunxianData"></mapping>
+        <mapping class="com.shtoone.chenjiang.mvp.model.entity.db.ShuizhunxianData"></mapping>
+        <mapping class="com.shtoone.chenjiang.mvp.model.entity.db.OriginData"></mapping>
+        <mapping class="com.shtoone.chenjiang.mvp.model.entity.db.RTData"></mapping>
+        <mapping class="com.shtoone.chenjiang.mvp.model.entity.db.DeviceData"></mapping>
+        <mapping class="com.shtoone.chenjiang.mvp.model.entity.db.CezhanData"></mapping>
+    </list>
+</litepal>

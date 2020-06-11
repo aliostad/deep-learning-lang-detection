@@ -1,0 +1,29 @@
+/*--------Ö°Î»Õ¹Ê¾-------*/
+.jobs-show {width:985px; margin:0 auto; margin-top:8px;}
+.jobs-show  .left{width: 710px; float:left}
+.jobs-show  .left .show{width:670px;border:1px solid #E4E4E4; padding:15px;}
+.jobs-show  .left .show h1{font-family:"microsoft yahei","ËÎÌå"; font-size:30px; font-weight:lighter; color:#000000; line-height:30px; padding-bottom:10px;}
+.jobs-show  .left .show .imgtipbox{ width:650px; height:50px; line-height:130%; padding-top:6px;  padding-left:10px; border-bottom:1px #E4E4E4 dashed; margin-bottom:15px;}
+.jobs-show  .left .show .liimg{width:92px; height:40px; float:left; background-color: #FFFFCC; color:#999999; background:url(../images/3.gif) no-repeat 0px 0px; padding-left:38px;}
+.jobs-show  .left .show .liimg.li1{}
+.jobs-show  .left .show .liimg.li2{background:url(../images/3.gif) no-repeat 0px -50px;}
+.jobs-show  .left .show .liimg.li3{background:url(../images/3.gif) no-repeat 0px -100px;}
+.jobs-show  .left .show .liimg.li4{background:url(../images/3.gif) no-repeat 0px -150px;}
+.jobs-show  .left .show .liimg.li5{background:url(../images/3.gif) no-repeat 0px -200px;}
+.jobs-show  .left .show .share{ text-align:center; padding:10px; padding-left:180px;}
+.jobs-show  .left .show .tip{ color: #009900; height:30px;}
+.jobs-show  .left .show .contact{ padding:3px; border:1px   #FF9900 solid; background-color: #FDFBF0; padding-left:8px;}
+.jobs-show  .left .show .jobsshow{ line-height:180%;word-break:break-all;word-wrap:break-word;}
+.jobs-show  .left .show .jobsshow .title{ height:33px ; line-height:33px; font-size:14px; color:#333333}
+.jobs-show  .left .show .jobsshow .remind{ background-color: #FFFDE8; border:1px #FF9900 solid; color:#FF0000; padding:8px 15px;}
+.jobs-show  .left .show .floatli li{width:335px; float:left; height:26px; line-height:26px; overflow:hidden}
+.jobs-show  .right{width:275px;float:left;}
+.jobs-show  .right .txtbox{width:273px;border:1px solid #E4E4E4; margin-bottom:8px;position:relative}
+.jobs-show  .right .txtbox .qrcode{position:absolute; top:38px; left:3px;}
+.jobs-show  .right .txtbox .tit{height:30px;background:url(../images/52.gif) repeat-x 0px -239px; border-bottom:1px solid #E4E4E4; line-height:30px; font-size:14px; font-weight:bold; color:#666666; padding-left:15px;}
+.jobs-show  .right .txtbox .txt{ padding-top:5px; padding-left:75px; }
+.jobs-show  .right .txtbox .txt li{ padding-left:10px;}
+.jobs-show  .right .txtbox .pm{height:30px; border-top:1px #E4E4E4 solid; background-color:#F6F6F6; margin-top:5px;}
+.jobs-show  .right .txtbox .pm .pleft{ width:60px; float:left; height:20px; padding-top:10px; padding-left:60px; background:url(../images/4.gif) no-repeat 42px 11px;}
+.jobs-show  .right .txtbox .pm .pright{ width:60px; float:left; height:20px; padding-top:10px; padding-left:60px; background:url(../images/4.gif) no-repeat 42px -37px;}
+.jobs-show  .right .txtbox .txt1{ padding:5px; padding-left:15px; line-height:180%; border-bottom:1px #E4E4E4 solid}

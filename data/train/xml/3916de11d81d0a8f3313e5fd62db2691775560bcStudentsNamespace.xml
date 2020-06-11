@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="StudentsStyle.xsl"?>
+<sample:students xmlns:sample="http://www.trans.com/students/1.0">
+  <sample:student>
+    <sample:name>Pesho</sample:name>
+    <sample:sex>Transvestite</sample:sex>
+    <sample:birthdate>01.01.1990</sample:birthdate>
+    <sample:phone>0888112233</sample:phone>
+    <sample:email>azsympesho@mail.bg</sample:email>
+    <sample:course>Transvestites for beginners</sample:course>
+    <sample:specialty>Playful fingers</sample:specialty>
+    <sample:facultyN>99</sample:facultyN>
+  </sample:student>
+</sample:students>

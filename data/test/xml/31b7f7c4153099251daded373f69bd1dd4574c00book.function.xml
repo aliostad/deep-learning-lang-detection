@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root> 
+  <item label="图书管理"> 
+    <item label="基础数据"> 
+      <item label="图书类别设置" process="/OA/book/process/bookType/bookTypeProcess"
+        activity="mainActivity" url="/OA/book/process/bookType/bookTypeActivity.w"/> 
+    </item>  
+    <item label="图书管理" process="/OA/book/process/bookManage/bookManageProcess"
+      activity="mainActivity" url="$UI/OA/book/process/bookManage/bookManageActivity.a"/>  
+    <item label="图书查询" process="/OA/book/process/bookQuery/bookQueryProcess"
+      activity="mainActivity" url="$UI/OA/book/process/bookQuery/mainActivity.a"/>  
+    <item label="图书借阅"> 
+      <item label="图书借阅申请" process="/OA/book/process/bookBorrowApply/bookBorrowApplyProcess"
+        activity="mainActivity" url="$UI/OA/book/process/bookBorrowApply/mainActivity.a"/>  
+      <item label="图书借阅申请" display="hide" process="/OA/book/process/bookBorrowApply/bookBorrowApplyProcess"
+        activity="bookBorrowApplyActivity" url="$UI/OA/book/process/bookBorrowApply/bookBorrowApplyActivity.a"/>  
+      <item label="主管人办理" display="hide" process="/OA/book/process/bookBorrowApply/bookBorrowApplyProcess"
+        activity="managerActivity" url="$UI/OA/book/process/bookBorrowApply/managerActivity.a"/> 
+       <item label="图书借阅申请查询" process="/OA/book/process/bookBorrowApplyQuery/bookBorrowApplyQueryProcess"
+        activity="bookBorrowApplyQueryActivity" url="$UI/OA/book/process/bookBorrowApplyQuery/bookBorrowApplyQueryActivity.a"/>
+    </item>  
+    <item label="图书归还" process="/OA/book/process/bookReturn/bookReturnProcess"
+      activity="mainActivity" url="/OA/book/process/bookReturn/bookReturn.w"/> 
+  </item> 
+</root>

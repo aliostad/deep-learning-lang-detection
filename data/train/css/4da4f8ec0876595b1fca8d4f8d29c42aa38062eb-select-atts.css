@@ -1,0 +1,68 @@
+/*
+ * ==================================================
+ * ==================================================
+ * 
+ * Select-atts attribute group
+ * 
+ * http://docs.oasis-open.org/dita/v1.2/os/spec/common/select-atts.html
+ * 
+ * The "select-atts" attribute group includes common metadata attributes, 
+ * several of which support conditional processing (filtering and flagging) or 
+ * the creation of new attribute domain specializations.
+ * 
+ * ==================================================
+ * ==================================================
+ * 
+ */
+
+/* ====================================
+ *
+ * @importance 
+ * 
+ * A range of values that describe an importance or priority attributed 
+ * to an element. For example, in steps of a task, the attribute indicates whether 
+ * a step is optional or required. This attribute is not used for DITAVAL-based 
+ * filtering or flagging; applications may (but need not) use the importance 
+ * value to highlight elements.
+ *  
+ */
+
+@media oxygen{
+
+*[class~="topic/topic"] *[importance]:before{
+    font-weight:bold;   
+}
+
+*[class~="topic/topic"] *[importance='obsolete']:before{
+        -oxy-append-content: "Obsolete: " !important;
+}
+*[class~="topic/topic"] *[importance='deprecated']:before{
+        -oxy-append-content: "Deprecated: " !important;
+}
+*[class~="topic/topic"] *[importance='optional']:before{
+        -oxy-append-content: "Optional: " !important;
+}
+*[class~="topic/topic"] *[importance='low']:before{
+        -oxy-append-content: "Low importance: " !important;
+}
+*[class~="topic/topic"] *[importance='default']:before{
+        -oxy-append-content: "Default importance: " !important;
+}
+*[class~="topic/topic"] *[importance='normal']:before{
+        -oxy-append-content: "Normal importance: " !important;
+}
+*[class~="topic/topic"] *[importance='high']:before{
+        -oxy-append-content: "Important: " !important;
+}
+*[class~="topic/topic"] *[importance='recommended']:before{
+        -oxy-append-content: "Recommended: " !important;
+}
+*[class~="topic/topic"] *[importance='required']:before{
+        -oxy-append-content: "Required: " !important;
+}
+*[class~="topic/topic"] *[importance='urgent']:before{
+        -oxy-append-content: "Urgent: " !important;
+}
+
+
+}

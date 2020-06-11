@@ -1,0 +1,134 @@
+.entando-api.api-resource-list > h2 {
+	text-align: left;
+	font-size: 20px;
+}
+
+.entando-api.api-resource-list > .api-summary {
+	position: absolute;
+	top: -1000em;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.entando-api.api-resource-list > table,
+.entando-api.api-resource-detail > table {
+	margin: 0 0 40px 0;
+	float: left;
+	width: 100%;
+	padding: 0;
+}
+
+.entando-api.api-resource-list > table > caption,
+.entando-api.api-resource-detail > table > caption {
+	font-size: 18px;
+	text-align: left;
+	margin: 0 0 5px 0;
+	background-color: #BEBEBE;
+	color: #171717;
+	text-indent: 10px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	line-height: 32px;
+	vertical-align: middle;
+
+}
+
+.entando-api.api-resource-list > table tr:hover,
+.entando-api.api-resource-detail > table tr:hover {
+	background-color: #C0C0C0;
+	background-color: rgba(79,79,79,0.02);
+}
+
+.entando-api.api-resource-list > table th,
+.entando-api.api-resource-detail > table th {
+	background-color: #DFDFDF;
+	color: #383838;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 0 0 0px 0;
+	line-height: 27px;
+}
+
+.entando-api.api-resource-list > table td,
+.entando-api.api-resource-detail > table td {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.entando-api.api-resource-list > table .icon,
+.entando-api.api-resource-detail > table .icon {
+	text-align: center;
+	width: 30px;
+}
+
+.entando-api.api-resource-list > table .icon > abbr,
+.entando-api.api-resource-detail > table .icon > abbr {
+	cursor: help;
+}
+
+
+/* api detail */
+.entando-api.api-resource-detail h3 {
+	float: left;
+	width: 100%;
+	padding: 0;
+	font-size: 18px;
+	text-align: left;
+	margin: 60px 0 5px 0;
+	background-color: #BEBEBE;
+	color: #171717;
+	text-indent: 10px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	line-height: 32px;
+	vertical-align: middle;
+}
+.entando-api.api-resource-detail .description {
+	margin-bottom: 10px;
+}
+
+.entando-api.api-resource-detail .back {
+	float: left;
+	width: 100%;
+	margin: 20px 0;
+	text-align: center;
+	border-top: 1px solid silver;
+	padding-top: 20px;
+
+}
+
+.entando-api.api-resource-detail > dl {
+	float: left;
+	width: 100%;
+	margin: 10px 0 20px 0;
+	padding: 0;
+}
+.entando-api.api-resource-detail > dl > dt {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.entando-api.api-resource-detail > dl > dd {
+	float: left;
+	width: 90%;
+	padding: 0 5%;
+	margin: 0 0 5px 0;
+
+	border: 1px solid #DFDFDF;
+	/*background-color: #DFDFDF;*/
+	color: #383838;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	line-height: 27px;
+}
+
+.entando-api.api-resource-detail > table > caption {
+	background-color: #fff;
+}

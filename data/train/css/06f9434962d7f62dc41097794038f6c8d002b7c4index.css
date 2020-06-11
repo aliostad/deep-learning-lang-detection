@@ -1,0 +1,113 @@
+.main {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.list-show li {
+    float: left;
+    margin: 0 20px 20px 0;
+    background: #fff;
+    box-shadow: 1px 1px 10px #999;
+}
+
+.list-show .large {
+    width: 460px;
+    height: 385px;
+}
+.list-show .small {
+    width: 300px;
+    height: 290px;
+}
+.list-show li .show-img {
+    position: relative;
+}
+.list-show li .show-img b {
+    background: url("../images/index-dot.gif") no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 7%;
+    width: 22px;
+    height: 14px;
+}
+
+.list-show .large .show-img {
+    height: 260px;
+    display: block;
+}
+.list-show .small .show-img {
+    height: 168px;
+    display: block;
+}
+
+.list-show .large .info {
+    margin: 25px 0 25px 30px;
+}
+.list-show .small .info {
+    margin: 23px 0 20px 18px;
+}
+
+.list-show .info .pic {
+    float: left;
+    margin: 0 15px 0 0;
+    display: inline;
+}
+.list-show .info .list-title {
+    line-height: 14px;
+}
+.list-show .info .list-title a {
+    font-size: 14px;
+    color: #333;
+}
+.list-show .info .author {
+    color: #999;
+}
+.list-show .info .author a {
+    color: #666;
+}
+.list-show .status {
+    margin: 0 10px;
+    border-top: 1px solid #dcdcdc;
+    padding: 10px 0 0 0;
+    text-align: right;
+}
+.list-show .status i {
+    color: #666;
+    font-style: normal;
+    padding: 0 0 0 20px;
+    margin: 0 10px 0 0;
+}
+.list-show .status .fav {
+    background: url("../images/fav-icon.gif") no-repeat;
+}
+.list-show .status .msg {
+    background: url("../images/msg-icon.gif") no-repeat;
+}
+.index h2 {
+    background: url("../images/index-title.png") no-repeat;
+    height: 22px;
+    margin: 0 0 20px 0;
+}
+.index .dress-up {
+ background-position: 0 0;
+}
+.index .home {
+    background-position: 0 -23px;
+}
+.index .digital {
+    background-position: 0 -46px;
+}
+.index .outdoor {
+    background-position: 0 -69px;
+}
+.index .office {
+    background-position: 0 -92px;
+}
+.index .toy {
+    background-position: 0 -116px;
+}
+.index .art-work {
+    background-position: 0 -138px;
+}
+.index {
+    padding: 30px 0 20px 0;
+}

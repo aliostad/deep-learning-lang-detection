@@ -1,0 +1,101 @@
+.ks-message\3A  {
+    min-width: 16em;
+}
+
+
+.pgp-signed-message {
+    white-space: pre;
+    font-style: italic;
+}
+.pgp-signed-message.verification-required {
+    color: red;
+    display: block;
+}
+.pgp-signed-message.verified {
+    color: inherit;
+    display: none;
+}
+
+/** Form **/
+
+form[name=ks-message-form] {
+    min-width: 29em;
+    font-family: monospace;
+}
+
+
+form[name=ks-message-form] [name=message] {
+    width: 99%;
+    height: 3em;
+}
+
+form[name=ks-message-form] input[type=submit] {
+    height: 3em;
+}
+
+form[name=ks-message-form] select[name=message_command],
+form[name=ks-message-form] select[name=message_encryption_options] {
+    width: 99%;
+}
+
+/*form[name=ks-message-form] .pgp-message {*/
+    /*white-space: pre;*/
+
+    /*width: 1em;*/
+    /*height: 1em;*/
+
+    /*border: 2px solid;*/
+    /*overflow: hidden;*/
+    /*background-color: #EEA;*/
+    /*color: #111;*/
+/*}*/
+
+/*form[name=ks-message-form] .pgp-message:hover {*/
+/*/!*     max-height: 8em; *!/*/
+    /*width: 35em;*/
+    /*height: 21em;*/
+/*}*/
+
+form[name=ks-message-form] .ks-message-log\3A {
+    overflow: auto;
+    max-height: 18em;
+    /* max-width: 48em; */
+    /* min-width: 32em; */
+    min-height: 4em;
+    background-color: white;
+}
+
+form[name=ks-message-form] .ks-message-log\3A  .message-log-entry {
+    white-space: pre;
+
+    border: 1px solid transparent;
+    overflow: auto;
+    max-height: 5em;
+    max-width: 46em;
+
+    transition: max-height 2s;
+}
+
+form[name=ks-message-form] .ks-message-log\3A  .message-log-entry:hover {
+    border-radius: 0.2em;
+    border: 1px solid lightgrey;
+/*     overflow: hidden; */
+    max-height: inherit;
+
+    transition: max-height 0.5s;
+}
+
+
+form[name=ks-message-form] .pgp-message\3A.unprocessed:not(:hover) .encrypted-content {
+    max-height: 0;
+    overflow: hidden;
+    display: inline-block;
+    max-width: 0;
+}
+
+.pgp-message\3A  span.action {
+    border-radius: 0.2em;
+    border: 1px solid lightgrey;
+
+}
+/** TODO: show decryption info **/

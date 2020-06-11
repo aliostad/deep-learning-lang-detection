@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.apache.flex.maps.util"><apiName>org.apache.flex.maps.util</apiName><apiDetail/><apiClassifier id="org.apache.flex.maps.util:BinaryUtil"><apiName>BinaryUtil</apiName><shortdesc/><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef></apiClassifierDetail><apiOperation id="org.apache.flex.maps.util:BinaryUtil:convertToBinary"><apiName>convertToBinary</apiName><shortdesc> 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiStatic/><apiReturn><apiDesc>32 digit binary representation of numberToConvert
+		  
+		 NB:- don't use int.toString(2) here because it 
+		 doesn't do what we want with negative numbers - which is
+		 wrap around and pad with 1's. Hence convert to uint first. 
+		 </apiDesc><apiType value="String"/></apiReturn><apiParam><apiItemName>numberToConvert</apiItemName><apiType value="int"/></apiParam></apiOperationDef><apiDesc> 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.apache.flex.maps.util:BinaryUtil:convertToDecimal"><apiName>convertToDecimal</apiName><shortdesc/><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiStatic/><apiReturn><apiType value="int"/></apiReturn><apiParam><apiItemName>binaryRepresentation</apiItemName><apiType value="String"/></apiParam></apiOperationDef></apiOperationDetail></apiOperation></apiClassifier></apiPackage>

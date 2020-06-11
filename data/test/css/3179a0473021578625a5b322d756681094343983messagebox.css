@@ -1,0 +1,102 @@
+.message-box * {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  outline: none;
+  word-wrap: break-word;
+}
+
+#message-box-background {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+
+  z-index: 120;
+}
+
+.message-box {
+  display: none;
+  position: absolute;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 400px;
+  background-color: rgb(255,255,255);
+  box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+
+  z-index: 125;
+}
+
+.message-box .message-box-title, .message-box .message-box-content {
+  padding: 12px;
+}
+
+/* title */
+
+.message-box .message-box-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 13pt;
+}
+
+
+/* content */
+
+.message-box .message-box-content {
+  text-align: center;
+}
+
+
+/* buttons */
+
+.message-box .message-box-buttons {
+  overflow: auto; /* instead of clear: both; after float */
+}
+
+.message-box .message-box-buttons ul {
+  list-style-type: none;
+  float: right;
+}
+
+.message-box .message-box-buttons ul li {
+  float: left;
+}
+
+.message-box .message-box-buttons ul li input[type="button"] {
+  border: none;
+  font-weight: normal;
+  box-shadow: none;
+  background: transparent;
+  background-color: transparent;
+  padding: 12px;
+  cursor: pointer;
+
+  font-size: 10.5pt;
+  text-transform: uppercase;
+  color: #4F5B93;
+  
+  transition-duration: 0.2s;
+  transition-property: background-color, color;
+  transition-timing-function: ease-in;
+}
+
+.message-box .message-box-buttons ul li input[type="button"]:hover {
+  background-color: rgb(245,245,245);
+  color: rgb(0,0,0);
+}
+
+.message-box .message-box-buttons ul li input[type="button"]:focus {
+  font-weight: bold;
+}
+
+.message-box .message-box-buttons ul li:not(:last-child) {
+}

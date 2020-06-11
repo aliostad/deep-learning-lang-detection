@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="http://Example.com" uri="AnnotatedPropertyAssertions.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://example.com/owl/families/" uri="primer.owlxml.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://example.com/owl/families/" uri="primer.rdfxml.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="http://protege.org/ontologies/TestParser10.owl" uri="TestParser10.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="http://purl.org/test/Y.owl" uri="TestParser06.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="http://smi-protege.stanford.edu/ontologies/test01.owl" uri="VersionIRITestCase.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="http://test.org/complexImports/D.owl" uri="imports/D.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="http://test.org/compleximports/A.owl" uri="importscyclic/A.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="http://test.org/compleximports/C.owl" uri="importscyclic/C.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="http://test.org/compleximports/D.owl" uri="importscyclic/D.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="http://test.org/complexontologies/B.owl" uri="importscyclic/B.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="http://www.co-ode.org/ontologies/test.owl" uri="TestParser08.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="http://www.example.org/ISA14#" uri="cardinalitywithwhitespace.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="http://www.semanticweb.org/ontologies/declarations" uri="TestDeclarations.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="http://www.semanticweb.org/ontologies/inverses" uri="AnonymousInverses.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/ontologies/ontologyA" uri="ImportsTestOntologyA.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/ontologies/ontologyA" uri="ImportsTestOntologyAEmpty.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="ComplexSubProperty.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="DataAllValuesFrom.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="DataComplementOf.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="DataHasValue.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="DataIntersectionOf.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="DataMaxCardinality.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="DataMinCardinality.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="DataOneOf.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="DataSomeValuesFrom.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="DatatypeRestriction.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="DataUnionOf.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="Deprecated.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="DisjointClasses.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="EquivalentClassesUntypedOWLClass.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="HasKey.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="InverseOf.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="ObjectAllValuesFrom.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="ObjectCardinality.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="ObjectComplementOf.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="ObjectHasSelf.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="ObjectHasValue.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="ObjectIntersectionOf.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="ObjectMaxCardinality.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="ObjectMaxQualifiedCardinality.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="ObjectMinCardinality.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="ObjectMinQualifiedCardinality.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="ObjectOneOf.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="ObjectQualifiedCardinality.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="ObjectSomeValuesFrom.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="ObjectUnionOf.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="SubClassOf.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="SubClassOfUntypedOWLClass.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="SubClassOfUntypedSomeValuesFrom.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="duplicate:http://www.semanticweb.org/owlapi/test" uri="UntypedSubClassOf.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="http://www.test.com/Ambiguous.owl" uri="ontologyIRI.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="shadowed:http://test.org/compleximports/A.owl" uri="imports/A.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="shadowed:http://test.org/compleximports/C.owl" uri="imports/C.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426608493046" name="shadowed:http://test.org/complexontologies/B.owl" uri="imports/B.owl"/>
+    </group>
+</catalog>

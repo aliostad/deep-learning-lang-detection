@@ -1,0 +1,43 @@
+#!/bin/sh
+# preinst script for zutubi-mbuddy
+#
+# see: dh_installdeb(1)
+
+set -e
+
+# summary of how this script can be called:
+#        * <new-preinst> `install'
+#        * <new-preinst> `install' <old-version>
+#        * <new-preinst> `upgrade' <old-version>
+#        * <old-preinst> `abort-upgrade' <new-version>
+# for details, see http://www.debian.org/doc/debian-policy/ or
+# the debian-policy package
+
+# stop tomcat7 only in case it already exists
+if [ -x "/etc/init.d/tomcat7" ]; then
+	if [ -x /usr/sbin/invoke-rc.d ]; then
+		invoke-rc.d tomcat7 stop
+	else
+		/etc/init.d/tomcat7 stop
+	fi
+fi
+
+case "$1" in
+    install|upgrade)
+        invoke-rc.d tomcat7 stop
+	# invoke-rc.d tomcat stop 2>&1 || true
+
+    ;;
+
+    abort-upgrade)
+        invoke-rc.d tomcat7 stop
+	# invoke-rc.d tomcat stop 2>&1 || true
+    ;;
+
+    *)
+        echo "preinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+exit 0

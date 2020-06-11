@@ -1,0 +1,43 @@
+#!/usr/bin/env python
+# encoding: utf-8
+"""
+celeryconfig.py
+
+Configuration settings for the celery task server
+
+Copyright (c) 2010 Piick.com, Inc. All rights reserved.
+"""
+
+################################################################################
+#
+# Options and settings for Celery (a distributed asynchronous task runner).
+#   
+#
+################################################################################
+
+# List of modules to import when celery starts.
+CELERY_IMPORTS = ('pi_async',)
+
+# Change all async calls into sync calls. Useful to turn on when developing.
+# Tasks will never be sent to the queue, but executed locally instead.
+CELERY_ALWAYS_EAGER = False
+
+# Whether to propgate exceptions back when using CELERY_ALWAYS_EAGER = True.
+# Also suggested that you leave this on to help find bugs when developing.
+CELERY_EAGER_PROPAGATES_EXCEPTIONS = True
+
+# Broker settings.
+BROKER_HOST = "<%= @queue_host %>"
+BROKER_PORT = 5672
+BROKER_VHOST = "/"
+BROKER_USER = "guest"
+BROKER_PASSWORD = "guest"
+
+# Various performance settings.
+CELERY_DISABLE_RATE_LIMITS = True
+CELERYD_TASK_TIME_LIMIT = 3600
+CELERYD_CONCURRENCY = 10
+
+# Result store settings.
+CELERY_RESULT_BACKEND = "amqp"
+CELERY_AMQP_TASK_RESULT_EXPIRES = 3600  # 1 hour.

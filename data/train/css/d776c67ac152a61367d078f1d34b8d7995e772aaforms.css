@@ -1,0 +1,262 @@
+.model-add-small .input
+{
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.model-add-small .submit
+{
+    height: 28px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.model-add-small .input label
+{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.model-add-small .input.checkbox label
+{
+    float: left;
+}
+
+.model-add-small .input.text input,
+.model-add-small .input.password input
+{
+    width: 250px;
+    height: 18px;
+    font-size: 100%;
+    padding: 0px 3px 0px 3px;
+    border: 1px solid #424242;
+    background-color: #F0F0F0;
+}
+
+.model-add-small .input.file input
+{
+    width: 250px;
+    font-size: 100%;
+    padding: 0px 3px 0px 3px;
+    border: 1px solid #424242;
+    background-color: #F0F0F0;
+}
+
+.model-add-small .input.textarea textarea
+{
+    width: 945px;
+    height: 600px;
+}
+
+.model-add-small .input.checkbox input
+{
+    width: 413px;
+}
+
+.model-add-small .submit input
+{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #FFFFFF;
+}
+
+.model-add-small .submit input:hover
+{
+    border-bottom: 1px dotted #000000;
+}
+
+.model-add-small #authMessage
+{
+    color: #FF0000;
+    font-size: 13px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+
+.model-add .input
+{
+    overflow: hidden;
+    margin: 0 0 15px 0;
+}
+
+
+.model-add .submit
+{
+    height: 28px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.model-add .input.text label,
+.model-add .input.select label
+{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.model-add .input.checkbox > label
+{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.model-add .input.text input
+{
+    width: 952px;
+    height: 30px;
+    font-size: 25px;
+    padding: 0px 3px 0px 3px;
+    border: 1px solid #424242;
+    background-color: #F0F0F0;
+}
+
+.model-add .input.select select
+{
+    width: 100%;
+    height: 30px;
+    font-size: 25px;
+    border: 1px solid #424242;
+    background-color: #F0F0F0;
+}
+
+.model-add .input textarea
+{
+    width: 945px;
+    height: 600px;
+}
+
+.model-add .submit input
+{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #FFFFFF;
+}
+
+.model-add .submit input:hover
+{
+    border-bottom: 1px dotted #000000;
+}
+
+
+
+
+
+
+.login-form
+{
+    width: 355px;
+    margin: 0 auto;
+}
+
+.login-form .input
+{
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.login-form .submit
+{
+    height: 28px;
+    margin-top: 15px;
+    text-align: right;
+}
+
+.login-form .input label
+{
+    float: left;
+    display: block;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.login-form .input input
+{
+    float: right;
+    width: 250px;
+    height: 18px;
+    font-size: 100%;
+    padding: 0px 3px 0px 3px;
+    border: 1px solid #424242;
+    
+    background-color: #F0F0F0;
+}
+
+.login-form .submit input
+{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #FFFFFF;
+}
+
+.login-form .submit input:hover
+{
+    border-bottom: 1px dotted #000000;
+}
+
+.login-form #authMessage
+{
+    color: #FF0000;
+    font-size: 13px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.upload-form .input
+{
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.upload-form .submit
+{
+    margin-top: 15px;
+}
+
+.upload-form .input.file input
+{
+    font-size: 100%;
+    padding: 0px 3px 0px 3px;
+    border: 1px solid #424242;
+    background-color: #F0F0F0;
+}
+
+.upload-form .submit input
+{
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    text-align: left;
+    font-weight: bold;
+    line-height: 24px;
+    padding: 0 8px 0 25px;
+    border: 1px solid #000000;
+    
+    
+    background-color: #F0F0F0;
+    
+    background-repeat: no-repeat;
+    background-position: 6px center;
+    background-image: url(/img/backend/add.png);
+}
+
+.upload-form .submit input:hover
+{
+    background-color: #D4D4C6;
+}
+
+input[type="submit"]:focus,
+input[type="button"]:focus
+{
+    outline : none; 
+}
+
+input[type="submit"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner
+{
+    border : 0px;
+}

@@ -1,0 +1,52 @@
+nav {
+	margin: 50px;
+}
+
+nav a {
+	display: block;
+	width: 48px;
+	height: 48px;
+	float: left;
+
+	background-image: url("../images/socialNav.png");
+	background-repeat: no-repeat;
+
+	text-indent: -9999px;
+	overflow: hidden;
+/*
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+*/}
+
+nav a.gmail:hover {
+	background-position: 0 0;
+}
+
+nav a.twitter:hover {
+	background-position: -48px 0;
+}
+
+nav a.facebook:hover {
+	background-position: -97px 0;
+}
+
+nav a.rss:hover {
+	background-position: -146px 0;
+}
+
+nav a.gmail {
+	background-position: 0 -48px;
+}
+
+nav a.twitter {
+	background-position: -48px -48px;
+}
+
+nav a.facebook {
+	background-position: -97px -48px;
+}
+
+nav a.rss {
+	background-position: -146px -48px;
+}

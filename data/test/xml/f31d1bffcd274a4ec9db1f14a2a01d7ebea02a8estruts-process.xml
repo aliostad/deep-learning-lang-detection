@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="process" extends="struts-default">
+		<action name="process_*" class="org.ssh.web.action.process.ProcessAction"
+			method="{1}">
+			<result name="deployedProcess">/WEB-INF/jsp/process/process_deployManagement.jsp
+			</result>
+			<result name="instanceInvolvedUser">/WEB-INF/jsp/process/process_instanceManagement.jsp
+			</result>
+			<result name="userTaskManagement">/WEB-INF/jsp/process/process_taskManagement.jsp
+			</result>
+			<result name="auditImage">/WEB-INF/jsp/process/process_auditImage.jsp
+			</result>
+			<result name="test">/WEB-INF/jsp/process/process_test.jsp
+			</result>
+		</action>
+	</package>
+</struts>

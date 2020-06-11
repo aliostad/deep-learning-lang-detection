@@ -1,0 +1,32 @@
+.swagger-section #header {
+	background-color: #4fc6db;
+	padding: 30px;
+}
+
+.swagger-section #header form#api_selector .input a#explore {
+	background-color: #1A7C8E;
+	padding: 10px 20px 9px;
+}
+
+.swagger-section #header form#api_selector .input a#explore:hover {
+	background-color: #0A6C7E;
+}
+
+.swagger-section #header form#api_selector .input input {
+	padding: 8px;
+	border: none;
+}
+
+.swagger-section #header a#logo {
+	line-height: 1.5;
+	background: none;
+	padding-left: 0;
+}
+
+.swagger-section #header form#api_selector .input input#input_baseUrl {
+	width: 300px;
+}
+
+.swagger-section #header form#api_selector .input input#input_apiKey {
+	width: 380px;
+}

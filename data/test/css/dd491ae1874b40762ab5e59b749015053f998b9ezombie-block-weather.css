@@ -1,0 +1,21 @@
+a,
+a:hover { color: inherit; font-size: 1.5em; text-decoration: inherit; }
+
+.content.no-api-key { display: none; }
+.content.no-api-key p { overflow: auto; position: relative; text-align: center; top: 100px; white-space: normal; }
+.content.no-api-key p a { font-size: inherit; }
+.content.no-api-key p a:hover { text-decoration: underline; }
+.content.no-api-key p iron-icon { height: 16px; width: 16px; }
+
+p.location { margin-bottom: 5px; text-align: center; }
+p.current.conditions { float: left; font-size: 3em; line-height: 80px; text-align: right; width: calc(50% - 4px); }
+p.current.temperature { float: right; font-size: 2em; line-height: 80px; width: calc(50% - 4px); }
+p.temperature:after { content: "\00b0"; }
+
+.forecasts { background-color: rgba(255, 255, 255, 0.1); margin: 0 -10px; padding: 10px 20px; }
+.forecasts p { float: left; line-height: 42px; }
+.forecasts .day { width: 35%; }
+.forecasts .conditions { font-size: 1.5em; text-align: center; width: 25%; }
+.forecasts .temperature.low { width: 15%; }
+.forecasts .temperature.high { text-align: right; width: 25%; }
+.forecasts .temperature.high:after { content: "\00b0\00a0/\00a0"; }

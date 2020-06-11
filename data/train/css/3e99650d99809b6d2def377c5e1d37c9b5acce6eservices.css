@@ -1,0 +1,49 @@
+#services {
+	font-size: 0px;
+	line-height: 340px;
+	margin-top: 55px;
+}
+
+.service, .first-service {
+	display: inline-block;
+	width: 230px;
+	height: 340px;
+	background: white;
+	border-radius: 5px;
+	border-bottom: 5px solid #e5e6e6;
+	margin-left: 30px;
+	font-size: 12pt;
+	line-height: normal;
+	vertical-align: middle;
+	text-align: center;
+	color: #7f8c8c;
+	padding: 20px;
+}
+
+.first-service {
+	margin-left: 0px;
+}
+
+.service-button {
+	height: 50px;
+	line-height: 50px;
+	display: inline-block;
+	width: 200px;
+	position: relative;
+	top: 335px;
+}
+
+.service *, .first-service * {
+	display: inline-block;
+}
+
+.service-title {
+	font-weight: bold;
+	font-size: 12pt;
+	margin-top: 15px;
+}
+
+.service-description {
+	margin-top: 40px;
+	text-align: center;
+}

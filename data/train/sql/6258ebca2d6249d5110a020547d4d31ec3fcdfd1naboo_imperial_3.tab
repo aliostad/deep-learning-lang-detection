@@ -1,0 +1,6 @@
+questZone	navPoints	laps	specialTarget	triggerEvent	triggerSplitCondition	triggerArg	triggerArg2	triggerOn	triggerEndsMission	triggerDelay	autoReward	questDelay	_DESIGNER NOTES_	questSeries
+s	s	i[1]	s	"e(none=0,splitquest=1,surpriseattack=2)[none]"	"e(triggerOn=0,success=1,failure=2,both=3)[triggerOn]"	s	s	i	i	i	i	i	s	s
+space_naboo	space_naboo:naboo_imperial_patrol_1	1		splitquest	triggerOn	escort:naboo_imperial_3		3	1	20	0	0		pilot_profession
+	space_naboo:naboo_imperial_patrol_2													
+	space_naboo:naboo_imperial_patrol_3													
+	space_naboo:naboo_imperial_patrol_4													

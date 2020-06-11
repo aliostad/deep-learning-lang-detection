@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<marionette_info>
+  <expected_messages>
+    <message type="starts_with">"foo" (</message>
+    <message type="starts_with">dir1/1.png (</message>
+    <message type="starts_with">dir1/2.png (</message>
+    <message type="starts_with">dir1/3.png (</message>
+    <message type="starts_with">dir1/4.png (</message>
+    <message type="starts_with">3.2 (</message>
+    <message type="starts_with">dir2/5.png (</message>
+    <message type="starts_with">dir2/6.png (</message>
+    <message type="starts_with">dir2/7.png (</message>
+  </expected_messages>
+</marionette_info>

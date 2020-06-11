@@ -1,0 +1,130 @@
+.service-box .hd {
+    height: 58px;
+}
+.service-box .hd .tab {
+    height: 22px;
+    margin: 0;
+    overflow: hidden;
+    padding: 18px 0;
+}
+.service-box .hd .tab li {
+    border-left: 1px solid #EDEDED;
+    color: #AAB2BD;
+    float: left;
+    font-size: 18px;
+    line-height: 22px;
+    list-style: none outside none;
+    margin-left: -1px;
+    text-align: center;
+    width: 121px;
+}
+.service-box .hd .tab li a {
+    color: #AAB2BD;
+}
+.service-box .hd .tab .on {
+    color: #FF6F3D;
+}
+.service-box .service-list {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.service-box .service-list li {
+    border-bottom: 1px solid #EDEDED;
+    border-right: 1px solid #EDEDED;
+    color: #656D78;
+    float: left;
+    height: 170px;
+    list-style: none outside none;
+    margin-bottom: -1px;
+    margin-right: -1px;
+    text-align: center;
+    width: 170px;
+}
+.service-box .service-list li a {
+    display: block;
+    height: 170px;
+    overflow: hidden;
+    width: 170px;
+}
+.service-box .service-list li a:hover .service-icon, .service-box .service-list li a:hover .download-icon {
+    opacity: 1;
+}
+.service-box .service-list li .service-icon, .service-box .service-list li .download-icon {
+    margin: 45px auto 15px;
+}
+.service-icon {
+    background: url("http://img03.mifile.cn/webfile/images/2013/cn/icon/service/icon-service.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 49px;
+    opacity: 0.9;
+    width: 54px;
+}
+.service-icon-2 {
+    background-position: 0 -49px;
+}
+.service-icon-3 {
+    background-position: 0 -98px;
+}
+.service-icon-4 {
+    background-position: 0 -147px;
+}
+.service-icon-5 {
+    background-position: 0 -196px;
+}
+.service-icon-6 {
+    background-position: 0 -245px;
+}
+.service-icon-7 {
+    background-position: 0 -294px;
+}
+.service-icon-8 {
+    background-position: 0 -343px;
+}
+.service-icon-9 {
+    background-position: 0 -392px;
+}
+.service-icon-10 {
+    background-position: 0 -441px;
+}
+.service-icon-11 {
+    background-position: 0 -490px;
+}
+.service-icon-12 {
+    background-position: 0 -539px;
+}
+.service-icon-13 {
+    background-position: 0 -588px;
+}
+.service-icon-14 {
+    background-position: 0 -637px;
+}
+.service-icon-15 {
+    background-position: 0 -686px;
+}
+.service-icon-1 {
+    background-position: 0 0;
+}
+
+.contact {
+    padding: 100px 0;
+}
+.contact dl, .contact dd {
+    margin: 0;
+    padding: 0;
+}
+.contact dl {
+    float: left;
+    padding-left: 12%;
+    width: 34%;
+}
+.contact .o {
+    border-right: 1px solid #EDEDED;
+}
+.contact dl dt {
+    background: url("http://img03.mifile.cn/webfile/images/2013/cn/icon/service/icon-online.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    font-size: 30px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 60px;
+}

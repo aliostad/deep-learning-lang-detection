@@ -1,0 +1,8 @@
+﻿.message-board-workspace{max-height:545px;min-height:200px;min-width:475px;overflow:hidden}
+.message-board-pnl-entries{max-height:490px;min-height:145px;overflow:auto}
+.message-board-workspace-entry{padding:7px 5px 15px 5px;margin-bottom:5px;border-bottom:1px solid #555}
+.message-board-workspace-entry a{text-decoration:underline}
+#message_board_pnl_entries .messageText p{font-size:17px;line-height:20px}
+#message_board_pnl_entries .messageText ul{list-style:none;padding-top:5px;padding-bottom:5px;padding-left:3px}
+#message_board_pnl_entries .messageText img{display:block;padding-bottom:25px;padding-top:25px}
+#message_board_pnl_entries .OverlayMBLoading{height:30px;padding:5px 15px}

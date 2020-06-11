@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_duplicate_catalogue" model="ir.ui.view">
+            <field name="name">duplicate.catalogue.form</field>
+            <field name="model">duplicate.catalogue</field>
+            <field name="arch" type="xml">
+                <form string="Duplicate Catalogue" version="7.0">
+                    <group>
+                        <field name="catalogue" class="oe_inline" widget="selection"/>
+                       	<label for="start_year" string="Duplicate Catalogue(Duration)"/>
+                        <div>
+                        <field name="start_year" class="oe_inline"/> - <field name="end_year" class="oe_inline"/>
+                    	</div>
+                    </group>
+                    <footer>
+                        <button string="Duplicate" name="duplicate_catalogue_open_window" type="object" class="oe_highlight"/>
+                        or
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_duplicate_catalogue" model="ir.actions.act_window">
+            <field name="name">Duplicate Catalogue</field>
+            <field name="res_model">duplicate.catalogue</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_duplicate_catalogue"/>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem action="action_duplicate_catalogue"
+            id="menu_action_duplicate_catalogue"
+            parent="academics.catalogue_main_menu" groups="group_registrar_ass_registrar"/>
+    </data>
+</openerp>

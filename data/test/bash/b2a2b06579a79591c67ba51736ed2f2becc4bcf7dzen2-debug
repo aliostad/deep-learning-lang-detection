@@ -1,0 +1,18 @@
+#!/bin/bash
+
+source ~/bin/dzen2-env
+
+echo "DZEN_FONT           $DZEN_FONT"
+echo "DZEN_OPTS           $DZEN_OPTS"
+echo "DZEN_TIMEBAR_WIDTH  $DZEN_TIMEBAR_WIDTH"
+echo "DZEN_IDLE_X         $DZEN_IDLE_X"
+echo "DZEN_IDLE_WIDTH     $DZEN_IDLE_WIDTH"
+echo "DZEN_STATUS_X       $DZEN_STATUS_X"
+echo "DZEN_STATUS_WIDTH   $DZEN_STATUS_WIDTH"
+echo "DZEN_LOAD_X         $DZEN_LOAD_X"
+echo "DZEN_LOAD_WIDTH     $DZEN_LOAD_WIDTH"
+echo "CONKY_IF            $CONKY_IF"
+echo "CONKY_NET           $CONKY_NET"
+echo "CONKY_EXTRA         $CONKY_EXTRA"
+echo "CONKY_LOAD_STR      $CONKY_LOAD_STR"
+echo "OS_ID               $(source /etc/os-release ; echo $ID)"

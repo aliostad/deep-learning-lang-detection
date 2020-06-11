@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<catalogue>
+    <message key="Make new Blog Entry">Nouvelle inscription au blog</message>
+    <message key="Blog"></message>
+    <message key="Main">Blog</message>
+	<message key="RSS Comments">RSS Commentaires</message>
+	<message key="RSS Feed (incl. private)">RSS Feed (y.c. privés)</message>
+	<message key="RSS Comments (incl. private)">RSS Commentaires (y.c. privés)</message>
+	<message key="Generate new private key">Générer clé privée</message>
+    <message key="Edit Categories/Links">Catégories/Liens</message>
+    <message key="Diversa"></message>
+    <message key="Blog Posts Overview / Latest Comments">Aperçu des posts et commentaires</message>
+    <message key="Edit Categories">Editer catégories</message>
+    <message key="Edit Links">Editer liens</message>
+    <message key="Edit Links and Linkcategories">Editer liens et catégories de liens</message>
+    <message key="Edit Comments">Editer commentaires</message>
+    <message key="Flux CMS Bookmarklet">Flux CMS favoris</message>
+    <message key="Drag'n'drop to your bookmarks for immediate posting from your browser">Favoris pour accès direct à la création de nouveaux blog posts</message>    
+    <message key="Categories:">Catégories</message>
+    <message key="Space or comma separated.">Utiliser espace ou virgule pour subdivision</message>
+    <message key="No special chars.">Pas de caractères spéciaux</message>
+    <message key="Title">Titre</message>
+    <message key="More options (click to expand)">Plus d'options (cliquer sur flèche)</message>
+	<message key="Make an Extended Post">Post élargi</message>
+	<message key="New Category">Nouvelle catégorie</message>
+	<message key="Parent Category">Catégorie précédente</message>
+	<message key="Expiration Date">Date d'expiration</message>
+    <message key="Comment Mode">Mode pour commentaires</message>
+    <message key="Allow comments for 1 month">Permettre commentaires durant un mois</message>
+    <message key="Always allow comments">Permettre commentaires toujours</message>
+    <message key="No comments allowed">Permettre aucun commentaire</message>
+    <message key="Default  (currently:">Standard:</message>
+    <message key="Author">Auteur</message>
+    <message key="Date">Date</message>
+    <message key="Auto Discovery">Evaluation automatique</message>
+    <message key="Upload Picture">Ajouter image</message>
+    <message key="Content">Contenu</message>
+    <message key="Post Comments">Post commentaires</message>
+    <message key="Preview">Aperçu</message>
+    <message key="New">Nouveau</message>
+    <message key="Delete">Supprimer</message>
+    <message key="Save">Enregistrer</message>
+    <message key="Upload">Mise à jour sur le serveur</message>
+    <message key="Public">Public</message>
+    <message key="Private">Privé</message>
+    <message key="Draft">Projet</message>
+    <message key="Latest Posts">Derniers posts</message>
+    <message key="Make new post">Créer nouveau post</message>
+    <message key="title">Titre</message>
+    <message key="author">Auteur</message>
+    <message key="date">Date</message>
+    <message key="status">Etat</message>
+    <message key="comments">Commentaires</message>
+    <message key="Latest Online and Approved Comments">Derniers commentaires approuvés en ligne</message>
+    <message key="check1">Selectionner tout</message>
+    <message key="Latest Moderated Comments (Auto-deleted after 14 days)">Derniers commentaires animés (supprimés automatiquement après 14 jours)</message>
+    <message key="Latest Rejected Comments (Auto-deleted after 3 days)">Derniers commentaires refusés (supprimés automatiquement après 3 jours)</message>
+    <message key="(Drag'n'drop to your bookmarks for immediate posting from your browser)"> (Drag'n'drop à vos favoris pour afficher de suite dans votre navigateur)</message>
+    <message key="Delete Selected Comments">Supprimer les commentaires sélectionnés</message>
+	<message key="Delete Selected Posts">Supprimer les posts sélectionnés</message>
+	<message key="Blog Categories">Categories Blog</message>
+	 <message key="Edit Image Properties">Editer propriétés de l'image</message>
+	<message key="Submit">Enregistrer</message>
+	<message key="Name">Nom</message>
+	<message key="Rang">Position</message>
+	<message key="Link Category">Catégories de liens</message>
+	<message key="Blog Link">Lien Blog</message>
+	<message key="Text">Texte</message>
+	<message key="Link">Lien</message>
+	<message key="Add Image">Ajouter image</message>
+	<message key="Add a New Image">Ajouter une nouvelle image</message>
+	<message key="Add">Ajouter</message>
+	<message key="Create a New Subgallery">Créer nouvelle sous-galérie</message>
+	<message key="Subgallery">Sous-galérie</message>
+	<message key="Create">Créer</message>
+	<message key="Add File">Ajouter Fichier</message>
+	<message key="Add a New File">Ajouter un nouveau Fichier</message>
+	<message key="Create a New Subcollection">Créer nouvelle sous-collection</message>
+	<message key="Sidebars">Bares latérales</message>
+	<message key="Overview">Aperçu</message>
+	<message key="Links">Liens</message>
+	 <message key="Files">Fichiers</message>
+	  <message key="Blog Options">Options Blog</message>
+	  <message key="send">Enregistrer</message>
+	
+	
+	
+    
+    
+
+
+</catalogue>

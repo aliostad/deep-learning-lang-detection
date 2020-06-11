@@ -1,0 +1,9 @@
+#!/bin/bash -eu
+
+[ -f /opt/repo/versions/1.5.8/conf/.gitignore ] && { rm -f /opt/repo/versions/1.5.8/conf/.gitignore; }
+[ -f /opt/repo/log/.gitignore ] && { rm -f /opt/repo/log/.gitignore; }
+[ -f /opt/repo/versions/1.5.8/conf/haproxy.conf ] && { cp -f /opt/repo/versions/1.5.8/conf/haproxy.conf /opt/repo/versions/1.5.8/conf/haproxy.conf.OLD; }
+
+cp -f /opt/repo/versions/1.5.8/haproxy.conf.default /opt/repo/versions/1.5.8/conf/haproxy.conf
+#sed -i '/'stats auth'/d' /opt/repo/versions/1.5.8/conf/haproxy.conf;
+#sed -i "/stats enable/a stats auth ${OLDCREDS}" /opt/repo/versions/1.5.8/conf/haproxy.conf;

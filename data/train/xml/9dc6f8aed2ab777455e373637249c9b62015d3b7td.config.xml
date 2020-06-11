@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<lookup>
+  <property name="CJP.DuplicateTIPLOC.0" GID="" AID="">9100BODMNMF,9100BODMTSB</property>
+  <property name="CJP.DuplicateTIPLOC.1" GID="" AID="">9100FRNDNLT,9100FNTLSR</property>
+  <property name="CJP.DuplicateTIPLOC.2" GID="" AID="">9100COVNTRY,9100COVNNY</property>
+  <property name="CJP.DuplicateTIPLOC.3" GID="" AID="">9100NMPTN,9100NMPTBAY</property>
+  <property name="CJP.DuplicateTIPLOC.4" GID="" AID="">9100RUGL,9100COLWICH</property>
+  <property name="CJP.DuplicateTIPLOC.5" GID="" AID="">9100GALTILL,9100GALTINT,9100GALTONJ</property>
+</lookup>

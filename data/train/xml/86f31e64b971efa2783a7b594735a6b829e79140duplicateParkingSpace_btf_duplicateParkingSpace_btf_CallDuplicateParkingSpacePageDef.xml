@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.60.13"
+                id="duplicateParkingSpace_btf_duplicateParkingSpace_btf_CallDuplicateParkingSpacePageDef"
+                Package="view.pageDefs" SkipValidation="true">
+  <parameters/>
+  <executables/>
+  <bindings>
+    <methodAction id="CallDuplicateParkingSpace" RequiresUpdateModel="true"
+                  Action="invokeMethod" MethodName="CallDuplicateParkingSpace"
+                  IsViewObjectMethod="false"
+                  DataControl="DuplicateParkingSpaceAMDataControl"
+                  InstanceName="DuplicateParkingSpaceAMDataControl.dataProvider"
+                  ReturnName="data.DuplicateParkingSpaceAMDataControl.methodResults.CallDuplicateParkingSpace_DuplicateParkingSpaceAMDataControl_dataProvider_CallDuplicateParkingSpace_result">
+      <NamedData NDName="parkingSpaceId"
+                 NDValue="#{pageFlowScope.paramParkingSpaceId}"
+                 NDType="java.lang.Number"/>
+      <NamedData NDName="postId" NDValue="#{pageFlowScope.postId}"
+                 NDType="java.lang.String"/>
+      <NamedData NDName="spaceNumber" NDValue="#{pageFlowScope.spaceNumber}"
+                 NDType="java.lang.Number"/>
+      <NamedData NDName="userId" NDValue="#{pageFlowScope.userId}"
+                 NDType="java.lang.String"/>
+    </methodAction>
+  </bindings>
+</pageDefinition>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+	<property>
+		<name>user_add</name>
+		<value>insert into user_add values(?,?) ON DUPLICATE KEY UPDATE addCount=?</value>
+	</property>
+
+	 <property>
+		<name>user_visit</name>
+		<value>insert into user_visit values(?,?,?) ON DUPLICATE KEY UPDATE visitcount=?,visitAllCount=?</value>
+	</property>
+	<property>
+		<name>member_add</name>
+		<value>insert into member_add values(?,?,?) ON DUPLICATE KEY UPDATE addMember=?,memberAllCount=?</value>
+	</property>
+	<property>
+		<name>member_visit</name>
+		<value>insert into member_visit values(?,?) ON DUPLICATE KEY UPDATE memberCount=?</value>
+	</property>
+	
+	<property>
+		<name>session_add</name>
+		<value>insert into session_add values(?,?) ON DUPLICATE KEY UPDATE sessionCount=?</value>
+	</property>
+	<property>
+		<name>session_length</name>
+		<value>insert into session_length values(?,?,?) ON DUPLICATE KEY UPDATE sessionChaValue=?,sessionAvgLength=?</value>
+	</property>
+	
+	
+	<!-- 浏览器 -->
+	
+	<property>
+		<name>browser_add</name>
+		<value>insert into browser_add values(?,?,?) ON DUPLICATE KEY UPDATE addCount=?</value>
+	</property>
+	
+	<property>
+		<name>browser_visit</name>
+		<value>insert into browser_visit values(?,?,?,?) ON DUPLICATE KEY UPDATE addCount=?,AllCount=?</value>
+	</property>
+	
+	<property>
+		<name>browserMember_add</name>
+		<value>insert into browserMember_add values(?,?,?,?) ON DUPLICATE KEY UPDATE addCount=?,AllCount=?</value>
+	</property>
+	
+	<property>
+		<name>browserMember_visit</name>
+		<value>insert into browserMember_visit values(?,?,?) ON DUPLICATE KEY UPDATE addCount=?</value>
+	</property>
+	
+	<property>
+		<name>browserSession_add</name>
+		<value>insert into browserSession_add values(?,?,?) ON DUPLICATE KEY UPDATE addCount=?</value>
+	</property>
+	
+	<property>
+		<name>browserSession_length</name>
+		<value>insert into browserSession_length values(?,?,?,?) ON DUPLICATE KEY UPDATE sessionChaValue=?,sessionAvgLength=?</value>
+	</property>
+	<property>
+		<name>browser_pv</name>
+		<value>insert into browser_pv values(?,?,?) ON DUPLICATE KEY UPDATE pvCount=?</value>
+	</property>
+
+
+</configuration>

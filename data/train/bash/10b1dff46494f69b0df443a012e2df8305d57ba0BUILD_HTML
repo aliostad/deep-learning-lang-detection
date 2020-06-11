@@ -1,0 +1,41 @@
+#!/bin/bash
+
+echo Building HTML..
+
+python - <<EOF
+from mako.template import Template
+from mako.lookup import TemplateLookup
+from htmlmin.minify import html_minify
+import codecs
+
+
+def minifyhtml(html):
+    # minify using html_minify
+    return html_minify(unicode(html).encode('utf-8'))
+
+mylookup = TemplateLookup(directories=[''], input_encoding='utf-8')
+
+def process(name, minify=True):
+    mytemplate = Template(filename=name+'/'+name+'.html', lookup=mylookup)
+    html = mytemplate.render(template=name)
+    if minify:
+	html = minifyhtml(html)
+    file = codecs.open("../build/"+name+".min.html", "w", "utf-8")
+    file.write(html)
+    file.close()
+
+process('submit_event')
+process('user_create')
+process('index', minify=False)
+process('search', minify=False)
+process('about')
+process('403')
+process('404')
+process('login')
+process('admin')
+process('event')
+process('place')
+process('place-edit')
+
+EOF
+

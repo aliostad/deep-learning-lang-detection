@@ -1,0 +1,142 @@
+/*Telerik RadInput Web20 Skin*/
+
+/*global*/
+
+.RadInput_ServiceDirect,
+.RadInputMgr_ServiceDirect
+{
+	font:12px "segoe ui",arial,sans-serif;
+}
+
+/*textbox states*/
+
+html body .RadInput_ServiceDirect .riTextBox,
+html body .RadInputMgr_ServiceDirect
+{
+	border-color:#6788be;
+	background:#fff;
+	color:#000;
+	font:12px "segoe ui",arial,sans-serif;
+}
+
+html body .RadInput_ServiceDirect .riEmpty,
+html body .RadInput_Empty_ServiceDirect
+{
+	color:#777;
+}
+
+html body .RadInput_ServiceDirect .riHover,
+html body .RadInput_Hover_ServiceDirect,
+html body .RadInput_ServiceDirect .riFocused,
+html body .RadInput_Focused_ServiceDirect
+{
+	border-color:#3f5f94;
+}
+
+html body .RadInput_ServiceDirect .riRead,
+html body .RadInput_Read_ServiceDirect
+{
+	border-color:#bebebe;
+}
+
+html body .RadInput_ServiceDirect .riDisabled,
+html body .RadInput_Disabled_ServiceDirect
+{
+	border-color:#bebebe;
+	color:#777;
+	cursor:default;
+}
+
+html body .RadInput_ServiceDirect .riError,
+html body .RadInput_Error_ServiceDirect
+{
+	border-color:#d24000;
+	background:#fff 100% -298px no-repeat url('Input/sprite.gif');
+	color:#b32d34;
+}
+
+.RadForm.rfdTextbox .RadInput_ServiceDirect .riError[type="text"],
+.RadForm.rfdTextbox .RadInput_Error_ServiceDirect[type="text"]
+{
+	border-color:#d24000;
+	background:#fff 100% -298px no-repeat url('Input/sprite.gif');
+	color:#b32d34;
+}
+
+html body .RadInput_ServiceDirect .riNegative,
+html body .RadInput_Negative_ServiceDirect
+{
+	color:#444;
+}
+
+/*buttons*/
+
+.RadInput_ServiceDirect a
+{
+	background:transparent no-repeat url('Input/sprite.gif');
+}
+
+/*go*/
+
+.RadInput_ServiceDirect .riBtn a
+{
+	width:20px;
+	height:18px;
+	line-height:18px;
+	background-position:3px 5px;
+}
+
+.RadInput_ServiceDirect .riBtn a:hover
+{
+	background-position:3px -45px;
+}
+
+/*spin*/
+
+.RadInput_ServiceDirect .riSpin a
+{
+	width:15px;
+	height:7px;
+	line-height:7px;
+}
+
+.RadInput_ServiceDirect a.riUp
+{
+	background-position:4px -98px;
+}
+
+.RadInput_ServiceDirect a.riUp:hover
+{
+	background-position:4px -148px;
+}
+
+.RadInput_ServiceDirect a.riDown
+{
+	background-position:4px -199px;
+}
+
+.RadInput_ServiceDirect a.riDown:hover
+{
+	background-position:4px -249px;
+}
+
+/*label*/
+
+.RadInput_ServiceDirect .riLabel
+{
+	color:#000;
+}
+
+/*rtl*/
+
+html body .RadInputRTL_ServiceDirect .riError,
+html body .RadInputRTL_Error_ServiceDirect
+{
+	background-position:3px -298px;
+}
+
+.RadForm.rfdTextbox .RadInputRTL_ServiceDirect .riError[type="text"],
+.RadForm.rfdTextbox .RadInputRTL_Error_ServiceDirect[type="text"]
+{
+	background-position:3px -298px;
+}

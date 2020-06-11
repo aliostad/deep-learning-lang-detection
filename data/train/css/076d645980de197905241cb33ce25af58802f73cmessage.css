@@ -1,0 +1,70 @@
+/* ========================================================================
+   Component CSS Style: Message
+ ========================================================================== */ 
+
+.mi-message {
+    position: relative;
+    font-size: 14px;
+    line-height: 20px;
+    background: #e5e5e5;
+    padding: 1rem 2.5rem 1rem 1rem;
+    margin-bottom: 24px;
+}
+
+.mi-message a {
+    color: inherit;
+}
+
+.mi-message h2,
+.mi-message h3,
+.mi-message h4,
+.mi-message h5,
+.mi-message h6 {
+    margin-bottom: 0;
+}
+
+.mi-message .mi-close {
+    position: absolute;
+    right: 1rem;
+    top: 0.875rem;
+    cursor: pointer;
+}
+
+.mi-message.mi-message-error {
+    background: #f03c69;
+    color: #fff;
+}
+
+.mi-message.mi-message-success {
+    background: #35beb1;
+    color: #fff;
+}
+
+.mi-message.mi-message-warning {
+    background: #f7ba45;
+}
+
+.mi-message.mi-message-focus {
+    background: #1c86f2;
+    color: #fff;
+}
+
+.mi-message.mi-message-black {
+    background: #0a0a0a;
+    color: #fff;
+}
+
+.mi-message.mi-message-inverted {
+    background: #fff;
+}
+
+.mi-modal-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 200;
+}

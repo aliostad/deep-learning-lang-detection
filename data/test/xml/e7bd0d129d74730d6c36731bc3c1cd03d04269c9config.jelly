@@ -1,0 +1,12 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define"
+	xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+	<f:entry title="Staging Repository Location">
+		<f:textbox name="staging.repositoryLocation" value="${instance.repositoryLocation}" />
+	</f:entry>
+	<f:entry title="Release Repository ID">
+		<f:textbox name="staging.repositoryId" value="${instance.repositoryId}" />
+	</f:entry>
+	<f:entry title="Staging Repository URL">
+		<f:textbox name="staging.repositoryUrl" value="${instance.repositoryUrl}" />
+	</f:entry>
+</j:jelly>

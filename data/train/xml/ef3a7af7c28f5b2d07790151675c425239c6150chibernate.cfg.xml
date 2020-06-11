@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+ 
+<hibernate-configuration>
+    <session-factory>
+      <mapping class="com.finvendor.model.FinVendorUser"></mapping>
+        <mapping class="com.finvendor.model.Roles"></mapping>
+        <mapping class="com.finvendor.model.UserRole"></mapping> 
+        <mapping class="com.finvendor.model.Vendor"></mapping>
+        <mapping class="com.finvendor.model.Consumer"></mapping>
+        <mapping class="com.finvendor.model.AssetClass"></mapping>
+        <mapping class="com.finvendor.model.SecurityType"></mapping>
+        <mapping class="com.finvendor.model.AssetClassSecurityMap"></mapping>
+        <mapping class="com.finvendor.model.Region"></mapping>
+        <mapping class="com.finvendor.model.Country"></mapping>
+        <mapping class="com.finvendor.model.RegionCountryMap"></mapping>
+        <mapping class="com.finvendor.model.Exchange"></mapping>
+        <mapping class="com.finvendor.model.CountryExchangeMap"></mapping>
+        <mapping class="com.finvendor.model.SolutionTypes"></mapping>
+        <mapping class="com.finvendor.model.Solutions"></mapping>
+        <mapping class="com.finvendor.model.VendorOffering"></mapping>
+        <mapping class="com.finvendor.model.VendorRegionCountryExchangeMap"></mapping>
+        <mapping class="com.finvendor.model.VendorSolution"></mapping>
+        <mapping class="com.finvendor.model.Support"></mapping>
+        <mapping class="com.finvendor.model.VendorSupport"></mapping>
+        <mapping class="com.finvendor.model.Currency"></mapping>
+        <mapping class="com.finvendor.model.Cost"></mapping>
+        <mapping class="com.finvendor.model.DistributionMode"></mapping>
+        <mapping class="com.finvendor.model.VendorDistribution"></mapping>
+        <mapping class="com.finvendor.model.Awards"></mapping>
+        <mapping class="com.finvendor.model.VendorAwardsMap"></mapping>
+        <mapping class="com.finvendor.model.AssetClassDataDetails"></mapping>
+    </session-factory>
+	    
+</hibernate-configuration>

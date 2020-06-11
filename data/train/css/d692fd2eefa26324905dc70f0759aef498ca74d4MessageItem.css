@@ -1,0 +1,42 @@
+.message-item {
+  display: flex;
+}
+
+.message-item:not(.avatar) {
+  align-items: baseline;
+}
+
+.message-item:not(.avatar):hover .timestamp {
+  visibility: visible;
+}
+
+.message-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.message-item .left {
+  flex-shrink: 0;
+  margin-right: 12px;
+  text-align: right;
+  width: 60px;
+}
+
+.message-item.avatar .avatar-image {
+  border-radius: 3px;
+  opacity: 0.8;
+  width: 36px;
+}
+
+.message-item .left .timestamp {
+  visibility: hidden;
+}
+
+.message-item .right {
+  /* Make the text top edge align with the avatar top edge. */
+  margin-top: -2px;
+}
+
+.message-item .username {
+  font-weight: 900;
+  margin-right: 6px;
+}

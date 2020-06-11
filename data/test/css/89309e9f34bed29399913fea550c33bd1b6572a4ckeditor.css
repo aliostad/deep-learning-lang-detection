@@ -1,0 +1,83 @@
+/*
+Copyright (c) 2003-2009, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckeditor.com/license
+*/
+
+body
+{
+	/* Remove the background color to make it transparent */
+	/* background-color: #fff; */
+	padding: 20px;
+}
+
+html
+{
+	/* #3658: [IE6] Editor document has horizontal scrollbar on long lines
+	To prevent this misbehavior, we show the scrollbar always */
+	_overflow-y: scroll
+}
+
+img:-moz-broken
+{
+	-moz-force-broken-image-icon : 1;
+	width : 24px;
+	height : 24px;
+}
+img, input, textarea
+{
+	cursor: default;
+}
+
+
+
+
+.cke_show_borders { line-height:20px; }
+
+.cke_show_borders h1,
+.cke_show_borders h2,
+.cke_show_borders h3,
+.cke_show_borders h4,
+.cke_show_borders h5,
+.cke_show_borders h6,
+.cke_show_borders p,
+.cke_show_borders ul,
+.cke_show_borders ol,
+.cke_show_borders pre,
+.cke_show_borders div.codeblock,
+.cke_show_borders blockquote { margin: 0px 0px 20px; }
+
+.cke_show_borders h1,
+.cke_show_borders h2,
+.cke_show_borders h3,
+.cke_show_borders h4,
+.cke_show_borders h5,
+.cke_show_borders h6 { font-weight:bold; }
+.cke_show_borders h1 { font-size:18px; }
+.cke_show_borders h2 { font-size:15px; }
+
+.cke_show_borders pre,
+.cke_show_borders code,
+.cke_show_borders div.codeblock {
+  font-size:11px;
+  font-family: monospace;
+  }
+
+.cke_show_borders pre,
+.cke_show_borders blockquote,
+.cke_show_borders div.codeblock {
+  line-height:20px;
+  background:#f8f8f8;
+  padding:4px 9px;
+  border:1px solid #eee;
+  border-left:5px solid #eee;
+  }
+
+.cke_show_borders ol li,
+.cke_show_borders ul li {
+  display:list-item;
+  list-style:disc;
+  margin:0px 0px 0px 30px;
+  padding:0px;
+  }
+
+.cke_show_borders ol li { list-style:decimal; }

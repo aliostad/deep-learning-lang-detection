@@ -1,0 +1,24 @@
+#!/bin/bash
+
+file_name=$1
+base_name=$(basename $1 .c)
+btcd_name="$base_name.bc"
+dot_name="$base_name.dot"
+opt_name="$base_name.rbc"
+pdf_name="$base_name.pdf"
+
+clang -emit-llvm -c -g $1 -o $btcd_name
+
+#clang -emit-llvm -c $1 -o $btcd_name
+
+opt -instnamer -mem2reg $btcd_name > $opt_name
+
+opt -disable-output -load PADriver.so -load AliasSets.so -load DepGraph.so -load flowTracking.so -flowTracking $opt_name
+
+#opt -load PADriver.so -load AliasSets.so -load DepGraph.so -load bSSA.so -bssa $opt_name
+
+mv /tmp/fullGraph.dot $dot_name
+
+dot -Tpdf $dot_name -o $pdf_name
+
+opt -disable-output -dot-cfg $opt_name

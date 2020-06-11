@@ -1,0 +1,16 @@
+
+<%_.each(services, function(service) { %>
+<div class="api_item" id="service_board_all_<%= service.serviceName%>"
+	title="<%= service.description%>" type="<%= service.serviceName%>">
+	<img src="services/<%= service.serviceName%>/icon/<%= service.icon%>"
+		type="<%= service.serviceName%>" class="
+		api_item_img ">
+		<span class="api_item_text" type="<%= service.serviceName%>"><%= service.serviceName%></span>
+
+		<%if(service.createdBy!="SYSTEM"){%>
+		<div class='api_item_remove_from_myservices' title='Remove this service from My Service'></div>
+		<%}%>
+
+</div>
+<% }); %>
+			

@@ -1,0 +1,73 @@
+@-webkit-keyframes load-one{
+	0%{-webkit-transform:scale(2);background:#eee}
+	20%{-webkit-transform:scale(1);background:#fff}
+}
+@-webkit-keyframes load-two{
+	20%{-webkit-transform:scale(2);background:#eee}
+	40%{-webkit-transform:scale(1);background:#fff}
+}
+@-webkit-keyframes load-three{
+	40%{-webkit-transform:scale(2);background:#eee}
+	60%{-webkit-transform:scale(1);background:#fff}
+}
+@-webkit-keyframes load-four{
+	60%{-webkit-transform:scale(2);background:#eee}
+	80%{-webkit-transform:scale(1);background:#fff}
+}
+@-webkit-keyframes load-five{
+	80%{-webkit-transform:scale(2);background:#eee}
+	100%{-webkit-transform:scale(1);background:#fff}
+}								
+.loader{
+	width:6%;
+	height:100%;
+	margin:0;
+	padding:20% 48%;
+	position:absolute;
+	top:0;
+	left:0;
+	background:#ff0;
+	overflow:hidden;
+	color:#ccc;
+}
+.loader::before{
+	position:absolute;
+	margin-top:80px;
+	font-family:helvetica;
+	font-size:11px;
+	content:"Carregando...";
+}
+.piece{
+	width:8px;
+	height:50px;
+	background:#bbb;
+	float:left;
+	margin-right:5px;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+}
+#one{
+	-webkit-animation-name: load-one;
+}
+#two{
+	-webkit-animation-name: load-two;
+}
+#three{
+	-webkit-animation-name: load-three;
+}
+#four{
+	-webkit-animation-name: load-four;
+}
+#five{
+	-webkit-animation-name: load-five;
+}		
+.ready{
+	opacity:0;
+	-webkit-transition:.7s all ease;
+}
+img{
+	/*visibility:hidden;*/
+	display:none;
+}

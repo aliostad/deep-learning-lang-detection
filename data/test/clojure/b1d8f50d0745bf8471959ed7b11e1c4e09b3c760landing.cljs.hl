@@ -1,0 +1,130 @@
+(ns lounge.landing)
+
+(defelem landing-header [attr kids]
+  (header
+    :id "header"
+    :class [:alt]
+    (h1 (a :href "https://thelounge.io" "theLounge.io"))
+    (nav
+      :id "nav"
+      (ul
+        (li :class "special")))))
+
+(defelem landing-banner [attr kids]
+  (section
+    :id "banner"
+    (div
+      :class [:inner]
+      (h2 "theLounge.io")
+      (p "Another project by: " (a :href "http://degree9.io" "degree9"))
+      (ul :class [:actions]
+          (li (a :href "https://thelounge.io/dash" :class [:special :button] "Public Preview"))))
+    (a :href "#one" :class [:more :scrolly] "Learn More")))
+
+(defelem landing-intro [attr kids]
+  (section
+    :id "one"
+    :class [:wrapper :style1 :special]
+    (div
+      :class [:inner]
+      (header
+        :class [:major]
+        (h2 "an automated way to build and manage the technologies that drive your business.")
+        (p "We build software that lets you setup & manage computers, networking, point of sale and security systems from the cloud.")))))
+
+(defelem landing-spotlight [attr kids]
+  (section
+    (assoc attr :class [:spotlight])
+    (div :class [:image] (first kids))
+    (div :class [:content] (rest kids))))
+
+(defelem landing-industry [attr kids]
+  (section
+    :id "two"
+    :class [:wrapper :alt :style2]
+    (landing-spotlight
+      (img :id "img01" :src "images/pic01.jpg")
+      (h2 "Computer Systems & Networking")
+      (p "Zero Servers. Building your business on the cloud lets you get up and running without investing in on-site hardware."
+         (br)
+         "We provide simple automated enterprise solutions that directly meet the needs of your business and scale as you grow."))
+    (landing-spotlight
+      (img :id "img02" :src "images/pic02.jpg")
+      (h2 "POS Solutions")
+      (p "Restaurant and Retail Point of Sale systems are rapidly becoming more mobile allowing a greater personal customer experience."
+         (br)
+         "We provide solutions tailored to top POS brands regardless of what type of dining or shopping experience you wish to provide."))
+    (landing-spotlight
+      (img :id "img03" :src "images/pic03.jpg")
+      (h2 "Security and Access Control")
+      (p "Your business isnt just on the web. No matter what kind of business you operate, you have assets worth protecting."
+         (br)
+         "On-Premise security cameras and access control solutions protect the things that are most valuable to your business."))))
+
+(defelem landing-preview [attr kids]
+  (section
+    :id "cta"
+    :class [:wrapper :style4]
+    (div
+      :class [:inner]
+      (header
+        (h2 "Preview")
+        (p "Our platform is still under development but we encourage you to check things out and provide feedback, for a better experience."))
+      (ul :class [:actions :vertical]
+          (li (a :href "https://thelounge.io/dash" :class [:button :fit :special] "Login"))
+          (li (a :href "" :class [:button :fit] "Learn More"))))))
+
+(defelem landing-guide [attr kids]
+  (section
+    :id "three"
+    :class [:wrapper  :special]
+    (div
+      :class [:inner]
+      (header :class [:major]
+        (h2 "Getting Started")
+        (p "After logging in, getting up and running is a simple process."))
+      (ul :class [:features]
+          (li :class [:icon :fa-laptop]
+              (h3 "Create a Tenant")
+              (p "To begin create a Tenant ID. This is used for billing, unique identification and separation of organization data."))
+          (li :class [:icon :fa-code]
+              (h3 "New or Existing")
+              (p "Start migrating your existing IT to the cloud or build a new infrastructure from the ground up."))
+          (li :class [:icon :fa-paper-plane-o]
+              (h3 "Deploy Services")
+              (p "Select the things that are important to your business and let our automation do the rest."))
+          (li :class [:icon :fa-heart]
+              (h3 "Fall in Love")
+              (p "Get back to running your business, while we manage your IT."))))))
+
+(defelem social-li [attr kids]
+  (li (a :href (:href attr) :class [:icon (:icon attr)] (span :class [:label] kids))))
+
+(defelem landing-footer [attr kids]
+  (footer
+    :id "footer"
+    (ul :class [:icons]
+        (social-li :href "https://twitter.com/degree9io" :icon :fa-twitter "Twitter")
+        (social-li :href "https://www.facebook.com/Degree9Solutions/" :icon :fa-facebook "Facebook")
+        (social-li :href "https://www.linkedin.com/company/degree9-solutions-inc." :icon :fa-linkedin "Linkedin")
+        (social-li :href "mailto:help@degree9.io" :icon :fa-envelope-o "Email")
+        (social-li :href "https://github.com/degree9" :icon :fa-github "Github"))
+    (ul :class [:copyright]
+        (li "© 2016 Degree9 Solutions Inc.")
+        (li "Design: " (a :href "http://html5up.net" "HTML5 UP") " & " (a :href "http://unsplash.com" "UNSPLASH"))
+        (li "Built with: " (a :href "http://hoplon.io" "HOPLON")))
+    (ul :class [:copyright]
+        (li "We " (i :class [:icon :fa-heart]) (a :href "http://github.com/degree9/theLounge" " Open-Source")))))
+
+(defelem landing-wrapper [attr kids]
+  (div :id "page-wrapper" kids))
+
+(defelem landing [attr kids]
+  (landing-wrapper
+    (landing-header)
+    (landing-banner)
+    (landing-intro)
+    (landing-industry)
+    (landing-preview)
+    (landing-guide)
+    (landing-footer)))

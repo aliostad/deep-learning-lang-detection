@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<marionette_info>
+  <expected_messages>
+    <message type="ends_with">images2/image_+.png</message>
+    <message type="whole_message">Image loaded into texture_map 1</message>
+    <message type="ends_with">images2/image_,.png</message>
+    <message type="whole_message">Image loaded into texture_map 2</message>
+    <message type="ends_with">images2/image_3.png</message>
+    <message type="whole_message">Image loaded into texture_map 3</message>
+    <message type="ends_with">images2/image_4.png</message>
+    <message type="whole_message">Image loaded into texture_map 4</message>
+    <message type="ends_with">images2/image_B.png</message>
+    <message type="whole_message">Image loaded into texture_map 5</message>
+    <message type="ends_with">images2/image_C.png</message>
+    <message type="whole_message">Image loaded into texture_map 6</message>
+    <message type="ends_with">images2/image_d.png</message>
+    <message type="whole_message">Image loaded into texture_map 7</message>
+    <message type="ends_with">images2/image_e.png</message>
+    <message type="whole_message">Image loaded into texture_map 8</message>
+  </expected_messages>
+</marionette_info>

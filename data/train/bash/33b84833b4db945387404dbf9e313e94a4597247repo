@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Edit this to point to repository dir
+REPOSITORYDIR=${HOME}/Repositories/
+
+repo () {
+  local repo_dir=$(echo "${1}" | sed 's/\/*$//')
+  cd "${REPOSITORYDIR}/${repo_dir}"
+  if ! { [ "$TERM" = "screen" ] && [ -n "$TMUX" ]; } then
+    tmux rename-window "${repo_dir}"
+  fi
+}
+
+_repo () {
+  COMPREPLY=()
+  local cur=${COMP_WORDS[COMP_CWORD]}
+	local k=0
+  # http://stackoverflow.com/a/16679640/1040371
+  local delims="${REPOSITORYDIR//[^\/]}/"
+  for d in $( find -L "${REPOSITORYDIR}" -maxdepth 2 -type d | cut -d/ -f${#delims}- ); do
+		[[ $d == ${cur}* ]] && COMPREPLY[k++]="$d/"
+	done
+  return 0
+}
+
+complete -F _repo -o filenames repo

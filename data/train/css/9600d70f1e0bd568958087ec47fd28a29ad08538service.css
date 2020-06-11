@@ -1,0 +1,164 @@
+/* cloud style
+----------------------------------------------------------- */
+@charaset "utf-8";
+section#mainService, section#mainService section.serviceCnt, section#mainService div.wrapper, section#mainService div.wrapper div.cntBox {
+  position: relative;
+  *zoom: 1;
+}
+
+section#mainService {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+div#contents img {
+  line-height: 1;
+}
+
+section#mainService section.serviceCnt h2.ttl {
+  position: absolute;
+  top: 67px;
+}
+section#mainService section.serviceCnt p.icon_arrow {
+  position: absolute;
+  top: 125px;
+  left: 107px;
+}
+section#mainService section.serviceCnt h3.lead {
+  position: absolute;
+  top: 120px;
+  left: 200px;
+}
+section#mainService section.serviceCnt p.nextArrow {
+  position: absolute;
+  top: 128px;
+  right: 0;
+}
+section#mainService div.wrapper {
+  height: 554px;
+}
+section#mainService div.wrapper div.cntBox {
+  width: 163px;
+  padding: 10px;
+}
+section#mainService div.wrapper h4 {
+  padding: 7px 0 15px 6px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 7px;
+}
+section#mainService div.wrapper div.box p {
+  line-height: 1.8;
+  padding: 0 0.5em;
+}
+section#mainService div.wrapper p.ico {
+  position: absolute;
+  top: -7px;
+  right: 2px;
+}
+section#mainService div.wrapper div.box {
+  color: #fff;
+}
+section#mainService div.wrapper div.grn {
+  background: #8fc31f;
+}
+section#mainService div.wrapper div.org {
+  background: #f6ad3a;
+}
+section#mainService div.wrapper div.sky {
+  background: #00b4ed;
+}
+section#mainService div.wrapper div.pnk {
+  background: #eb6ea5;
+}
+section#mainService div.wrapper div.red {
+  background: #ea5464;
+}
+section#mainService div.wrapper div.blu {
+  background: #557ec0;
+}
+section#mainService section#service01 {
+  width: 1569px;
+  float: left;
+}
+section#mainService section#service01 div.wrapper {
+  margin-left: 552px;
+  background: url(../../img/service/bg_service_photo01.png) no-repeat 195px bottom;
+}
+section#mainService section#service01 div.wrapper div.box01 {
+  position: absolute;
+  top: 94px;
+}
+section#mainService section#service01 div.wrapper div.box02 {
+  position: absolute;
+  top: 8px;
+  left: 153px;
+}
+section#mainService section#service01 div.wrapper div.box03 {
+  position: absolute;
+  top: 8px;
+  left: 346px;
+}
+section#mainService section#service01 div.wrapper div.box04 {
+  position: absolute;
+  top: 8px;
+  left: 540px;
+}
+section#mainService section#service01 div.wrapper div.box05 {
+  position: absolute;
+  top: 94px;
+  left: 700px;
+}
+section#mainService section#service02 {
+  width: 1502px;
+  float: left;
+}
+section#mainService section#service02 div.wrapper {
+  margin-left: 552px;
+  background: url(../../img/service/bg_service_photo02.png) no-repeat 170px bottom;
+}
+section#mainService section#service02 div.wrapper div.box01 {
+  position: absolute;
+  top: 94px;
+}
+section#mainService section#service02 div.wrapper div.box02 {
+  position: absolute;
+  top: 8px;
+  left: 203px;
+}
+section#mainService section#service02 div.wrapper div.box03 {
+  position: absolute;
+  top: 8px;
+  left: 406px;
+}
+section#mainService section#service02 div.wrapper div.box04 {
+  position: absolute;
+  top: 94px;
+  left: 609px;
+}
+section#mainService section#service03 {
+  width: 1490px;
+  float: left;
+}
+section#mainService section#service03 div.wrapper {
+  margin-left: 600px;
+  background: url(../../img/service/bg_service_photo03.png) no-repeat 160px bottom;
+}
+section#mainService section#service03 div.wrapper div.box01 {
+  position: absolute;
+  top: 94px;
+}
+section#mainService section#service03 div.wrapper div.box02 {
+  position: absolute;
+  top: 8px;
+  left: 203px;
+}
+section#mainService section#service03 div.wrapper div.box03 {
+  position: absolute;
+  top: 8px;
+  left: 406px;
+}
+section#mainService section#service03 div.wrapper div.box04 {
+  position: absolute;
+  top: 94px;
+  left: 609px;
+}

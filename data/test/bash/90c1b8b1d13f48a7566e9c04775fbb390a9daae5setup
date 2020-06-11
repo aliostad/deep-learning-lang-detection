@@ -1,0 +1,26 @@
+## vim:ft=zsh
+echo "# setting up PKG_ROOT"
+cd $test_proot
+git clone --quiet ${1-git://flux.derf0.net/caretaker} caretaker
+cp caretaker/examples/pkglist pkglist
+for repo in ra rb rc; (
+	mkdir $repo
+	cd $repo
+	git init --quiet
+	git config receive.denyCurrentBranch ignore
+	touch foo
+	mkdir bin
+	touch bin/$repo
+	mkdir -p man/2
+	echo "=head1 WASTED SPACE\n\nhuhu" > man/2/$repo
+	chmod 755 bin/$repo
+	echo 'touch ~/prereq_ok_'$repo > prereqs
+	git add .
+	git commit --quiet -m 'initial commit'
+	cd ..
+	mkdir ${repo}-bare
+	cd ${repo}-bare
+	git --bare init --quiet
+	cd ../$repo
+	git push ../${repo}-bare master
+)

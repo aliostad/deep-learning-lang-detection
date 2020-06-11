@@ -1,0 +1,90 @@
+﻿<?xml version="1.0"?>
+<SecuritySoftware>
+  <AntiVirus>
+    <Products>
+      <Product Name="Mcafee virusscan">
+        <Services>
+          <Service>McAfee McShield</Service>
+          <Service>McAfee SiteAdvisor Enterprise Service</Service>
+        </Services>
+      </Product>
+      <Product Name="Symantec Endpoint">
+        <Services>
+          <Service>Symantec Endpoint Protection</Service>
+        </Services>
+      </Product>
+      <Product Name="Sophos Anti">
+        <Services>
+          <Service>Sophos Anti-Virus</Service>
+          <Service>Sophos Web Intelligence Service</Service>
+        </Services>
+      </Product>
+      <Product Name="Kaspersky Anti">
+        <Services>
+          <Service>Kaspersky Anti-Virus Service</Service>
+        </Services>
+      </Product>
+      <Product Name="Trend Micro">
+        <Services>
+          <Service>Trend Micro Solution Platform</Service>
+        </Services>
+      </Product>
+      <Product Name="G Data TotalSecurity">
+        <Services>
+          <Service>G Data AntiVirus Proxy</Service>
+          <Service>G Data Personal Firewall</Service>
+          <Service>G Data Scanner</Service>
+          <Service>G Data file system monitor</Service>
+        </Services>
+      </Product>
+      <Product Name="AVG">
+        <Services>
+          <Service>AVG WatchDog</Service>
+          <Service>AVGIDSAgent</Service>
+        </Services>
+      </Product>
+      <Product Name="Security Essentials">
+        <Services>
+          <Service>Microsoft Antimalware Service</Service>
+        </Services>
+      </Product>
+      <Product Name="Vipre Business">
+        <Services>
+          <Service>VIPRE Business Premium Site Service</Service>
+        </Services>
+      </Product>
+      <Product Name="Avira">
+        <Services>
+          <Service>Avira Real-Time Protection</Service>
+          <Service>Avira Web Protection</Service>
+        </Services>
+      </Product>
+      <Product Name="AhnLab V3">
+        <Services>
+          <Service>V3 Service</Service>
+        </Services>
+      </Product>
+      <Product Name="Ashampoo Anti">
+        <Services>
+          <Service>AAVService</Service>
+        </Services>
+      </Product>
+    </Products>
+  </AntiVirus>
+  <Firewall>
+    <Products>
+      <Product Name="McAfee Host Intrusion">
+        <Services>
+          <Service>McAfee Firewall Core Service</Service>
+          <Service>McAfee Host Intrusion Prevention Service</Service>
+        </Services>
+      </Product>
+      <Product Name="Sophos client firewall">
+        <Services>
+          <Service>Sophos Client Firewall</Service>
+          <Service>Sophos Client Firewall Manager</Service>
+        </Services>
+      </Product>
+    </Products>
+  </Firewall>
+</SecuritySoftware>

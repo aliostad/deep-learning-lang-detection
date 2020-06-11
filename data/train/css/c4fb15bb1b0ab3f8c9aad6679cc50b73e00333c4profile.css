@@ -1,0 +1,141 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,600");
+@font-face {
+  font-family: 'page icons';
+  src: url("fonts/page icons.eot");
+  src: url("fonts/page icons.eot?#iefix") format('embedded-opentype'), url("fonts/page icons.ttf") format('truetype'), url("fonts/page icons.woff") format('woff'), url("fonts/page icons.svg#page icons") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-family: 'Open Sans';
+}
+#content {
+  padding-left: 160px;
+}
+#profile_title {
+  padding-left: 3em;
+  color: #434a54;
+  margin-bottom: 1.75em;
+}
+#profile_title h1 {
+  font-size: 1.6em;
+  padding-top: 0.75em;
+  font-weight: normal;
+  font-family: 'Open Sans';
+}
+.data_item {
+  padding: 1em 4em;
+}
+.data_item h2 {
+  color: #434a54;
+  font-size: 1.2em;
+}
+.data_item h2.second_h2 {
+  padding-top: 0.75em;
+}
+.data_item p {
+  color: #656d78;
+  width: 100%;
+  padding-top: 0.5em;
+}
+.data_item p label {
+  width: 40%;
+  display: inline-block;
+}
+.data_item p input {
+  display: inline-block;
+  padding: 0.25em;
+  outline: none;
+  border: none;
+  color: #656d78;
+  background-color: #f5f7fa;
+}
+.data_item:nth-child(even) {
+  background-color: #e0e4e9;
+}
+.data_item .up_load_box {
+  margin-top: 0.75em;
+}
+.data_item .up_load_box img {
+  width: 100px;
+  height: auto;
+  display: inline-block;
+}
+.data_item .up_load_box .up_load_section {
+  display: inline-block;
+  height: 100px;
+  vertical-align: top;
+}
+.data_item .up_load_box .up_load_section .up_load_button {
+  height: 100px;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 1em;
+}
+.data_item .up_load_box .up_load_section .up_load_button input {
+  color: #656d78;
+}
+#data_actions {
+  text-align: center;
+  padding: 1em 0;
+}
+#data_actions a, #data_actions button[type="submit"] {
+  margin: 0 1em;
+  text-decoration: none;
+  color: #656d78;
+  border: 1px solid #c8cfd8;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  padding: 0.5em;
+}
+#data_actions a span:before #data_actions button[type="submit"] span:before {
+  color: #16a085;
+}
+#data_actions a .icon-pagesclose:before, #data_actions button[type="submit"] .icon-pagesclose:before {
+  color: #e74c3c;
+}
+[class*="icon-pages"] {
+  font-family: 'page icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+/* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-pagespencil:before {
+  content: "\e600";
+}
+.icon-pagesremove:before {
+  content: "\e601";
+}
+.icon-pagesdisk:before {
+  content: "\e602";
+}
+.icon-pagesplus:before {
+  content: "\e603";
+}
+.icon-pagesclose:before {
+  content: "\e607";
+}
+.icon-pagesuniE604:before {
+  content: "\e604";
+}
+.icon-pagesarrow-right:before {
+  content: "\e605";
+}
+.icon-pagesarrow-right2:before {
+  content: "\e606";
+}
+.icon-pagescross:before {
+  content: "\e608";
+}
+.icon-pagesplus:before {
+  content: "\e609";
+}

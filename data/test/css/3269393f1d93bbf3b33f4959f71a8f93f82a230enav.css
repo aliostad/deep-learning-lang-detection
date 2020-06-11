@@ -1,0 +1,57 @@
+/*! define alice/nav/1.0.0/nav-debug.css */
+.ui-nav {
+	position: relative;
+}
+
+.ui-nav a {
+	text-decoration: none;
+}
+
+.ui-nav a:hover {
+	text-decoration: none
+}
+
+.ui-nav ul,.ui-nav li {
+	list-style-type: none
+}
+
+.ui-nav-main {
+	zoom: 1;
+	margin: 0;
+	padding: 0 10px;
+	background: #fff;
+	border-top: 4px solid #2bb6aa;
+}
+
+.ui-nav-main:before,.ui-nav-main:after {
+	content: "";
+	display: table
+}
+
+.ui-nav-main:after {
+	clear: both
+}
+
+.ui-nav-item {
+	float: left;
+}
+
+.ui-nav-item a {
+	display: inline-block;
+	_display: inline;
+	_zoom: 1;
+	height: 35px;
+	padding: 5px 15px;
+	line-height: 35px;
+	color: #3c3c3c;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.ui-nav-item a:hover {
+	background: #f3f3f3;
+}
+
+.ui-nav-item-current a,.ui-nav-item-current a:hover {
+	background: #eaf8ff;
+}

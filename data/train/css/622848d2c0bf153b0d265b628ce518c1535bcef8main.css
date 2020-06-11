@@ -1,0 +1,52 @@
+body {
+    padding-top: 40px;
+}
+
+#leftbar {
+    padding-top: 40px;
+}
+
+
+/******************* global *******************/
+.jquery-plugin-load {
+    background:url(../img/loading.gif) no-repeat;
+}
+.jquery-plugin-load.after {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+.jquery-plugin-load.in {
+    background-position: 50% 50%;
+}
+.h1-small {
+    font-size: 30px;
+}
+/******************* end_global *******************/
+
+/******************* report *******************/
+.report-section-header {
+    margin-bottom: 2px;
+}
+
+.report-section-grid {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.section-row {
+    font-weight: bold;
+}
+.report-total {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 20px;
+}
+.report-total-sum {
+    text-align: right;
+    font-weight: bold;
+}
+.report-files-table {
+    padding: 0;
+}
+/******************* end_report *******************/

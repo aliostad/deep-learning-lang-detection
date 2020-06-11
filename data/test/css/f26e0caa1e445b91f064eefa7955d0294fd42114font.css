@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'coolvetica_rgregular';
+    src: url('coolvetica_rg-webfont.eot');
+    src: url('coolvetica_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('coolvetica_rg-webfont.woff') format('woff'),
+         url('coolvetica_rg-webfont.ttf') format('truetype'),
+         url('coolvetica_rg-webfont.svg#coolvetica_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'BackToSchoolRegular';
+    src: url('backtoschool.eot');
+    src: url('backtoschool.eot') format('embedded-opentype'),
+         url('backtoschool.woff2') format('woff2'),
+         url('backtoschool.woff') format('woff'),
+         url('backtoschool.ttf') format('truetype'),
+         url('backtoschool.svg#BackToSchoolRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'coolveticaregular';
+    src: url('coolvetica_rg-webfont.eot');
+    src: url('coolvetica_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('coolvetica_rg-webfont.woff') format('woff'),
+         url('coolvetica_rg-webfont.ttf') format('truetype'),
+         url('coolvetica_rg-webfont.svg#coolveticaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'please_write_me_a_songmedium';
+    src: url('please_write_me_a_song-webfont.eot');
+    src: url('please_write_me_a_song-webfont.eot?#iefix') format('embedded-opentype'),
+         url('please_write_me_a_song-webfont.woff') format('woff'),
+         url('please_write_me_a_song-webfont.ttf') format('truetype'),
+         url('please_write_me_a_song-webfont.svg#please_write_me_a_songmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'old_school_unitedhairline';
+    src: url('old_school_united_hairline-webfont.eot');
+    src: url('old_school_united_hairline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('old_school_united_hairline-webfont.woff') format('woff'),
+         url('old_school_united_hairline-webfont.ttf') format('truetype'),
+         url('old_school_united_hairline-webfont.svg#old_school_unitedhairline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'old_school_unitedregular';
+    src: url('old_school_united-webfont.eot');
+    src: url('old_school_united-webfont.eot?#iefix') format('embedded-opentype'),
+         url('old_school_united-webfont.woff') format('woff'),
+         url('old_school_united-webfont.ttf') format('truetype'),
+         url('old_school_united-webfont.svg#old_school_unitedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'old_school_unitedhairlineIt';
+    src: url('old_school_united_hairline_italic-webfont.eot');
+    src: url('old_school_united_hairline_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('old_school_united_hairline_italic-webfont.woff') format('woff'),
+         url('old_school_united_hairline_italic-webfont.ttf') format('truetype'),
+         url('old_school_united_hairline_italic-webfont.svg#old_school_unitedhairlineIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Collector>
+		<PageFrom>1</PageFrom>
+		<PageTo>100</PageTo>
+		<Region>Europe West</Region>
+		<AddPassword>true</AddPassword>
+		<FilterSpecialCharacters>true</FilterSpecialCharacters>
+	</Collector>
+	<Passwords>
+		<Adds>
+			<Add Enabled="true">
+				<Value>qwerty123!$//</Value>
+			</Add>
+		</Adds>
+		<Replaces>
+			<Replace Enabled="true" IgnoreCase="true">
+				<Key>i</Key>
+				<Value>1</Value>
+			</Replace>
+			<Replace Enabled="true" IgnoreCase="true">
+				<Key>a</Key>
+				<Value>4</Value>
+			</Replace>
+			<Replace Enabled="true" IgnoreCase="true">
+				<Key>e</Key>
+				<Value>3</Value>
+			</Replace>
+			<Replace Enabled="true" IgnoreCase="true">
+				<Key>t</Key>
+				<Value>7</Value>
+			</Replace>
+			<Replace Enabled="true" IgnoreCase="true">
+				<Key>o</Key>
+				<Value>0</Value>
+			</Replace>
+			<Replace Enabled="true" IgnoreCase="false">
+				<Key>b</Key>
+				<Value>6</Value>
+			</Replace>
+			<Replace Enabled="true" IgnoreCase="false">
+				<Key>B</Key>
+				<Value>8</Value>
+			</Replace>
+			<Replace Enabled="true" IgnoreCase="true">
+				<Key>s</Key>
+				<Value>5</Value>
+			</Replace>
+			<Replace Enabled="true" IgnoreCase="true">
+				<Key>l</Key>
+				<Value>1</Value>
+			</Replace>
+			<Replace Enabled="true" IgnoreCase="true">
+				<Key>z</Key>
+				<Value>2</Value>
+			</Replace>
+		</Replaces>
+		<Appends>
+			<Append Enabled="true">
+				<Value>1</Value>
+			</Append>
+			<Append Enabled="true">
+				<Value>12</Value>
+			</Append>
+			<Append Enabled="true">
+				<Value>123</Value>
+			</Append>
+			<Append Enabled="true">
+				<Value>1234</Value>
+			</Append>
+			<Append Enabled="true">
+				<Value>12345</Value>
+			</Append>
+			<Append Enabled="true">
+				<Value>123456</Value>
+			</Append>
+			<Append Enabled="true">
+				<Value>123123</Value>
+			</Append>
+			<Append Enabled="true">
+				<Value>!</Value>
+			</Append>
+			<Append Enabled="true">
+				<Value>qwerty</Value>
+			</Append>
+			<Append Enabled="true">
+				<Value>qwerty123</Value>
+			</Append>
+			<Append Enabled="true">
+				<Value>qwerty123456</Value>
+			</Append>
+			<Append Enabled="true">
+				<Value>123456789a</Value>
+			</Append>
+			<Append Enabled="true">
+				<Value>123456a</Value>
+			</Append>
+			<Append Enabled="true">
+				<Value>123123a</Value>
+			</Append>
+		</Appends>
+	</Passwords>
+</Config>

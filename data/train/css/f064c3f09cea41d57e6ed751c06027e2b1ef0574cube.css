@@ -1,0 +1,16 @@
+.load { width: 400px; height: 400px; position: relative; -webkit-perspective: 100px; -webkit-perspective-origin: 50% 50%; -webkit-transform-style: preserve-3d; }
+.load .point { width: 80px; height: 80px; border-radius: 50%; background: skyblue; position: absolute; margin-left: -40px; margin-top: -40px; -webkit-animation: shine linear 0.5s infinite alternate; }
+.load .point:nth-child(1) { left: 200px; top: 40px; }
+.load .point:nth-child(2) { left: 280px; top: 61.43594px; -webkit-animation-delay: 0.08333s; }
+.load .point:nth-child(3) { left: 338.56406px; top: 120.0px; -webkit-animation-delay: 0.16667s; }
+.load .point:nth-child(4) { left: 360px; top: 200px; -webkit-animation-delay: 0.25s; }
+.load .point:nth-child(5) { left: 338.56406px; top: 280px; -webkit-animation-delay: 0.33333s; }
+.load .point:nth-child(6) { left: 280px; top: 338.56406px; -webkit-animation-delay: 0.41667s; }
+.load .point:nth-child(7) { left: 200.0px; top: 360px; -webkit-animation-delay: 0.5s; }
+.load .point:nth-child(8) { left: 120.0px; top: 338.56406px; -webkit-animation-delay: 0.58333s; }
+.load .point:nth-child(9) { left: 61.43594px; top: 280.0px; -webkit-animation-delay: 0.66667s; }
+.load .point:nth-child(10) { left: 40px; top: 200.0px; -webkit-animation-delay: 0.75s; }
+.load .point:nth-child(11) { left: 61.43594px; top: 120px; -webkit-animation-delay: 0.83333s; }
+.load .point:nth-child(12) { left: 120.0px; top: 61.43594px; -webkit-animation-delay: 0.91667s; }
+
+@-webkit-keyframes shine { 100% { -webkit-transfom: translate3d(0, 0, 30px); width: 26.66667px; height: 26.66667px; margin-left: -13.33333px; margin-top: -13.33333px; background: royalblue; } }

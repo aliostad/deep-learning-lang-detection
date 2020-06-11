@@ -1,0 +1,122 @@
+* {
+   margin:0px;
+   padding:0px;
+}
+
+body {
+   background-color : #111;
+   min-width: 1050px;
+}
+
+
+#body {
+   align: center;
+   margin: 10px;
+   margin-top: 0px;
+
+   border-radius: 15px;
+
+   position: relative;
+   z-index:1;
+
+   background-color : white;
+
+   moz-box-shadow:inset 0 0 10px #000000;
+   -webkit-box-shadow:inset 0 0 10px #000000;
+   box-shadow:inset 0 0 10px #000000;
+}
+
+/* help */
+#help {
+   display: block;
+   position: absolute;
+   width: 200px;
+   border-radius: 15px;
+   z-index: 10;
+   padding: 5px;
+   background: rgba(0, 0, 0, 0.3);
+   color: white;
+   box-shadow: 1px 1px 8px #FFFFFF;
+}
+
+#help a {
+   color: white;
+   text-decoration: none;
+   text-shadow:1px 1px 8px #FFFFFF;
+}
+
+#helpclose {
+   float:right;
+}
+
+/* load */
+#popupLoad{
+   visibility: hidden;
+   width: 300px;
+}
+
+#mmList{
+   moz-box-shadow:inset 0 0 5px #333333;
+   -webkit-box-shadow:inset 0 0 5px #333333;
+   box-shadow:inset 0 0 5px #333333;
+   border-radius: 10px;   
+   margin-left: auto;
+   margin-right: auto;
+   height:100px;
+   width:95%;
+   background: white;
+   overflow:scroll=yes;
+   overflow-X:hidden
+}
+
+/* join */
+#popupJoinus{
+   visibility: hidden;
+}
+
+#joinusOk{
+   width: 100px;
+}
+
+.buttonContainer{
+   margin-top: 10px;
+}
+
+#popupJoinOK{
+   display: none;
+}
+
+#popupJoinFail{
+   display: none;
+}
+
+#popupJoinus{
+   display: block;
+}
+
+/* popup load confirm */
+#popupLoadConfirm{
+   visibility: hidden;
+}
+
+#popupLoadConfirm .popupContent {
+   color: white;
+}
+
+/* popup save new confirm */
+#popupSaveNewConfirm {
+   visibility: hidden;  
+}
+
+#popupSaveNewConfirm .popupContent {
+   color: white;   
+}
+
+/* popup ok */
+#popupOk {
+   visibility: hidden;  
+}
+
+#popupOk .popupContent {
+   color: white;   
+}

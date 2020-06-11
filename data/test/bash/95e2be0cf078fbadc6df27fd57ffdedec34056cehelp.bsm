@@ -1,0 +1,24 @@
+#!/bin/bash
+
+DESCRIPTION="Display help text"
+VERSION=0.1.0
+HIDDENMODULE=1
+
+__module(){
+    invoke usage
+
+    # TODO: disabled for now. figure out how to display best...
+    # display all recognized global options
+    # write_list_start "Global options:"
+    # write_kv_list_entry "--color=<yes|no|auto>" "Enable or disable color output (default 'auto')"
+    # echo
+
+    # TODO: shouldn't this be called like "invoke modules list?"
+    # display all available basf modules
+    do_action modules list
+    do_action aliases list
+}
+
+__action(){
+    invoke $action help
+}

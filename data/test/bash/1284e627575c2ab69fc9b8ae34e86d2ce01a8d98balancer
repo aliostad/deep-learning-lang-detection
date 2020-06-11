@@ -1,0 +1,26 @@
+#!/bin/bash
+
+if [ $# -lt 1 ]
+then
+        echo "Usage: balancer [start | stop | restart]"
+        exit
+fi
+
+
+case "$1" in
+
+"start")  echo "Starting load balancer"
+	sudo java -jar LoadBalancer.jar </dev/null > /dev/null 2>&1 &
+    ;;
+"stop")  echo  "Stopping load balancer"
+	sudo kill `ps ax | grep 'LoadBalancer' -m 1 | awk ' { print $1;}'`
+    ;;
+"restart")  echo  "Restarting load balancer"
+        sudo kill `ps ax | grep 'LoadBalancer' -m 1 | awk ' { print $1;}'`
+        sudo java -jar LoadBalancer.jar </dev/null > /dev/null 2>&1 &
+ 
+    ;;
+*) echo "Usage: balancer [start | stop | restart]"
+   ;;
+esac
+

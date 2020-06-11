@@ -1,0 +1,34 @@
+/* management manu */
+#managementMenu-list-box {
+    overflow-y: auto;
+    height: 400px;
+}
+
+#managementMenu ul {
+    padding: 0;
+}
+
+#managementMenu li {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#managementMenu .nav > li.active > a, #managementMenu .nav > li > a:hover,#managementMenu .nav > li > a:focus,
+#managementMenu .nav > li > a:active {
+    cursor: pointer;
+    background-color: #eee;
+}
+
+#managementMenu .nav .sub-nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 40px;
+}
+
+#managementMenu .nav .sub-nav li.active > a, #managementMenu .nav .sub-nav > li > a:hover,#managementMenu .nav .sub-nav > li > a:focus,
+#managementMenu .nav .sub-nav > li > a:active {
+    cursor: pointer;
+    background-color: #eee;
+}

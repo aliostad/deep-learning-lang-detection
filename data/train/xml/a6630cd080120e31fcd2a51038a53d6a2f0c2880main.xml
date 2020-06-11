@@ -1,0 +1,44 @@
+<engine>
+	<platform>
+		<lifecycle/>
+
+		<logging>			
+			<property name="configuration" value="logging.xml"/>
+		</logging>
+	</platform>
+
+	<!-- service configuration -->
+	<services>
+		<service name="MindTarget">
+			<property name="configuration" value="target.xml"/>
+		</service>
+
+		<service name="MindService">
+			<property name="configuration" value="mind.xml"/>
+		</service>
+
+		<service name="MediaService">
+			<property name="configuration" value="media.xml"/>
+		</service>
+
+		<service name="MessagingService">
+			<property name="configuration" value="messaging.xml"/>
+		</service>
+
+		<service name="SchedulerService">
+			<property name="configuration" value="scheduler.xml"/>
+		</service>
+
+		<service name="StatService">
+			<property name="configuration" value="statistics.xml"/>
+		</service>
+
+		<service name="TestService">
+			<property name="configuration" value="testing.xml"/>
+		</service>
+
+		<service name="EnvService"/>
+		<service name="ObjectService"/>
+		<service name="ThreadService"/>
+	</services>
+</engine>

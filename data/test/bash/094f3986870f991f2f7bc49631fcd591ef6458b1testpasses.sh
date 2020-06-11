@@ -1,0 +1,12 @@
+set -x 
+./check.sh SamplePrograms/SampleMiniJavaPrograms/BinarySearch.java
+./check.sh SamplePrograms/SampleMiniJavaPrograms/BinaryTree.java
+./check.sh SamplePrograms/SampleMiniJavaPrograms/BubbleSort.java
+./check.sh SamplePrograms/SampleMiniJavaPrograms/LinearSearch.java
+./check.sh SamplePrograms/SampleMiniJavaPrograms/LinkedList.java
+./check.sh SamplePrograms/SampleMiniJavaPrograms/QuickSort.java
+./check.sh SamplePrograms/SampleMiniJavaPrograms/TreeVisitor.java
+./check.sh SamplePrograms/SampleMiniJavaPrograms/Factorial.java
+./check.sh SamplePrograms/SampleMiniJavaPrograms/pass1.java
+./check.sh SamplePrograms/SampleMiniJavaPrograms/pass2.java
+./check.sh SamplePrograms/SampleMiniJavaPrograms/testarr.java

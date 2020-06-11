@@ -1,0 +1,24 @@
+#! /bin/bash
+
+# script to downsample the all_features directory so that all features with only child speech are retained
+
+# just down sample the train file; keep the test file as it is for easier use later on
+
+rm -r all_features_ds
+mkdir all_features_ds
+
+for dirs in all_features/*
+do
+	save_dir=all_features_ds/$(basename $dirs)
+	mkdir $save_dir
+
+	train_file=$dirs/train_file.arff
+	grep '^[0-9]' $train_file > $save_dir/features.all
+	cut -d',' -f20 $save_dir/features.all > $save_dir/feature.num_child_utr
+	
+	paste $save_dir/feature.num_child_utr $save_dir/features.all | grep -v '^0' | cut -f2- > $save_dir/features.ds_4_child_speech
+
+	cat <(grep -v '^[0-9]' $train_file) $save_dir/features.ds_4_child_speech > $save_dir/train_file.arff
+
+	cp $dirs/test_file.arff $save_dir/test_file.arff
+done

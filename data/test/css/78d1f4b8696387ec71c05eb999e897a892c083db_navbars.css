@@ -1,0 +1,50 @@
+.globalNav {
+  background-image: none;
+  border-color: rgba(0, 0, 0, 0.3);
+  background-color: #E74C3C;
+  -webkit-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.45);
+  -ms-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.45);
+  -o-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.45); }
+  .globalNav .navbar-brand {
+    color: #ECF0F1;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all; }
+    .globalNav .navbar-brand:hover, .globalNav .navbar-brand:focus {
+      color: #FFFFFF; }
+  .globalNav .navbar-nav li {
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all; }
+    .globalNav .navbar-nav li a {
+      color: #ECF0F1; }
+      .globalNav .navbar-nav li a:hover, .globalNav .navbar-nav li a:focus {
+        color: #FFFFFF; }
+    .globalNav .navbar-nav li:hover, .globalNav .navbar-nav li:focus {
+      background-color: rgba(0, 0, 0, 0.4); }
+  .globalNav .navbar-nav .active, .globalNav .navbar-nav .open {
+    background-image: none; }
+    .globalNav .navbar-nav .active a, .globalNav .navbar-nav .active a:hover, .globalNav .navbar-nav .active a:focus, .globalNav .navbar-nav .active a:active, .globalNav .navbar-nav .open a, .globalNav .navbar-nav .open a:hover, .globalNav .navbar-nav .open a:focus, .globalNav .navbar-nav .open a:active {
+      color: #FFFFFF;
+      background-image: none;
+      background-color: rgba(0, 0, 0, 0.4); }
+  .globalNav .navbar-nav .dropdown-menu {
+    background-image: none;
+    background-color: #E74C3C; }
+    .globalNav .navbar-nav .dropdown-menu li a {
+      color: #ECF0F1;
+      background-image: none;
+      -webkit-transition: 0.5s all;
+      -moz-transition: 0.5s all;
+      -ms-transition: 0.5s all;
+      -o-transition: 0.5s all;
+      background-color: transparent; }
+      .globalNav .navbar-nav .dropdown-menu li a:hover, .globalNav .navbar-nav .dropdown-menu li a:focus {
+        color: #FFFFFF;
+        background-color: rgba(0, 0, 0, 0.4); }
+
+/*# sourceMappingURL=_navbars.css.map */

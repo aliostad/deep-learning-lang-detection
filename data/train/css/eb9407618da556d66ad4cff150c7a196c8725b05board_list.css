@@ -1,0 +1,62 @@
+#pollSlider-button {
+    position: fixed;
+    width: 50px;
+    height: 20px;
+    right: 0px;
+    top: 15%;
+}
+
+.pollSlider {
+    position: fixed;
+    height: 100%;
+    background: white;
+    opacity: 0.8;
+    width: 600px;
+    right: 0px;
+    margin-right: -600px;
+    top: 100px;
+    overflow: auto;
+}
+
+#map {
+    margin-top: 100px;
+    height: 600px;
+}
+
+#write-button {
+    position: fixed;
+    width: 50px;
+    height: 20px;
+    top: 80%;
+}
+
+.write-slider {
+    position: fixed;
+    height: 100%;
+    background: white;
+    width: 600px;
+    right: 0px;
+    margin-right: -600px;
+    top: 100px;
+    overflow: auto;
+}
+
+#basket {
+    position: fixed;
+    width: 50px;
+    height: 20px;
+    top: 85%;
+}
+
+#divView {
+    position: absolute;
+    display: none;
+    background-color: #ffffff;
+    border: solid 2px #d0d0d0;
+    width: 360px;
+    height: 150px;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+

@@ -1,0 +1,220 @@
+.anony-nav {
+	padding-bottom: 20px;
+}
+
+.anony-nav .hd a:link,.anony-nav .hd a:visited,.anony-nav .hd a:hover,.anony-nav .hd a:active
+	{
+	background-color: transparent;
+}
+
+.anony-nav .hd {
+	height: 74px;
+}
+
+.anony-nav .hd,.anony-nav .bd {
+	margin: 0 auto;
+	width: 950px;
+}
+
+#db-sidesrh {
+	float: left;
+	margin-bottom: 20px;
+}
+
+#db-sidesrh:after,.anony-nav .hd:after,.anony-nav .bd:after,.anony-nav .login .item:after
+	{
+	clear: both;
+	content: " ";
+	display: block;
+}
+
+.anony-nav .logo {
+	float: left;
+	margin-top: 23px;
+}
+
+.anony-nav .logo a {
+	background: url("http://t.douban.com/pics/nav/ui_nav_logo_4.png")
+		no-repeat scroll 0 -3px transparent;
+	display: block;
+	height: 34px;
+	line-height: 10em;
+	overflow: hidden;
+	width: 168px;
+}
+
+.anony-nav .top-nav-items {
+	float: right;
+	margin: 37px 0 0;
+}
+
+.anony-nav .top-nav-items li {
+	margin: 0 0 0 44px;
+}
+
+.anony-nav a.lnk-book:link,.anony-nav a.lnk-book:visited,.anony-nav a.lnk-book:hover,.anony-nav a.lnk-book:active,.anony-nav a.lnk-movie:link,.anony-nav a.lnk-movie:visited,.anony-nav a.lnk-movie:hover,.anony-nav a.lnk-movie:active,.anony-nav a.lnk-music:link,.anony-nav a.lnk-music:visited,.anony-nav a.lnk-music:hover,.anony-nav a.lnk-music:active,.anony-nav a.lnk-9:link,.anony-nav a.lnk-9:visited,.anony-nav a.lnk-9:hover,.anony-nav a.lnk-9:active,.anony-nav a.lnk-srh:link,.anony-nav a.lnk-srh:visited,.anony-nav a.lnk-srh:hover,.anony-nav a.lnk-srh:active
+	{
+	background: url("http://t.douban.com/pics/nav/ui_nav_logo_4.png")
+		no-repeat scroll -177px 0 transparent;
+	display: inline-block;
+	height: 24px;
+	line-height: 10em;
+	overflow: hidden;
+	vertical-align: text-bottom;
+	width: 100px;
+}
+
+.anony-nav a.lnk-srh:link,.anony-nav a.lnk-srh:visited,.anony-nav a.lnk-srh:hover,.anony-nav a.lnk-srh:active
+	{
+	background-position: 0 -48px;
+	height: 14px;
+	margin-left: 5px;
+	width: 14px;
+}
+
+.anony-nav a.lnk-movie:link,.anony-nav a.lnk-movie:visited,.anony-nav a.lnk-movie:hover,.anony-nav a.lnk-movie:active
+	{
+	background-position: -283px 0;
+}
+
+.anony-nav a.lnk-music:link,.anony-nav a.lnk-music:visited,.anony-nav a.lnk-music:hover,.anony-nav a.lnk-music:active
+	{
+	background-position: -385px 0;
+}
+
+.anony-nav a.lnk-9:link,.anony-nav a.lnk-9:visited,.anony-nav a.lnk-9:hover,.anony-nav a.lnk-9:active
+	{
+	background-position: -485px 0;
+	width: 80px;
+}
+
+.anony-nav fieldset {
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+}
+
+.anony-nav legend {
+	display: none;
+}
+
+.anony-nav .reg {
+	background: url("http://t.douban.com/pics/nav/ui_b_2.png") no-repeat
+		scroll -12px 0 #E9EEF2;
+	color: #666666;
+	float: left;
+	font-size: 14px;
+	height: 134px;
+	line-height: 1.6;
+	position: relative;
+	width: 590px;
+}
+
+.anony-nav .reg div {
+	padding: 22px 0 18px;
+}
+
+.anony-nav .reg strong {
+	float: left;
+	font-size: 24px;
+	height: 80px;
+	padding-top: 46px;
+	text-align: center;
+	width: 200px;
+}
+
+.anony-nav .reg em {
+	color: #666666;
+	font-size: 12px;
+	font-style: normal;
+}
+
+.anony-nav .reg b {
+	font-size: 16px;
+	font-weight: 400;
+	margin-right: 5px;
+}
+
+a.lnk-reg:link,a.lnk-reg:visited,a.lnk-reg:hover,a.lnk-reg:active {
+	background: url("http://t.douban.com/pics/nav/ui_nav_logo_4.png")
+		no-repeat scroll -120px -48px transparent;
+	color: #FFFFFF;
+	display: inline-block;
+	font-size: 12px;
+	height: 27px;
+	line-height: 28px;
+	text-align: left;
+	width: 130px;
+}
+
+.anony-nav .reg .lnk-reg strong {
+	color: #FFFFFF;
+	float: none;
+	font-size: 16px;
+	font-weight: 400;
+	margin: 0 10px 0 16px;
+	padding: 0;
+}
+
+.anony-nav .login {
+	background: url("http://t.douban.com/pics/nav/ui_b_2.png") no-repeat
+		scroll 348px 0 #E9EEF2;
+	float: right;
+	font-size: 14px;
+	height: 134px;
+	width: 310px;
+}
+
+.anony-nav .login form {
+	padding: 23px 0 0 20px;
+	position: relative;
+}
+
+.anony-nav .item label {
+	float: left;
+	width: 4em;
+}
+
+.anony-nav .item input {
+	border: 1px solid #CCCCCC;
+	padding: 3px 2px;
+	width: 200px;
+}
+
+.anony-nav .login .item {
+	margin-bottom: 10px;
+}
+
+.anony-nav .login .item a {
+	font-size: 12px;
+}
+
+.anony-nav .login .item1 {
+	color: #666666;
+	float: left;
+	font-size: 12px;
+	margin: 0 20px 10px 0;
+}
+
+.anony-nav .login .item1 label {
+	display: inline-block;
+	margin-left: 4.5em;
+	margin-top: 4px;
+}
+
+.anony-nav .login .item1 label input {
+	
+}
+
+.anony-nav .bn-submit {
+	background: url("http://t.douban.com/pics/nav/ui_nav_logo_4.png")
+		no-repeat scroll -23px -48px transparent;
+	border: medium none;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 14px;
+	height: 28px;
+	line-height: 28px;
+	padding-bottom: 3px;
+	width: 80px;
+}

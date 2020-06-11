@@ -1,0 +1,31 @@
+#memberNav #arm{
+	display: none;
+}
+
+#siteHeader .navList{
+	display: block;
+	text-align: center;
+}
+#siteHeader .navList li{
+}
+#innerWrap #siteHeader #mainNav {
+  margin: 0;
+  left: 0;
+}
+#innerWrap #siteHeader #mainNav {
+}
+#innerWrap #siteHeader #mainNav .navList{
+}
+#innerWrap #siteHeader #mainNav .navList li{
+	display: inline;
+}
+#innerWrap #siteHeader #mainNav .navList li a{
+	display: inline;
+}
+#innerWrap #siteHeader #mainNav .navList li ul {
+    top:16px;
+}
+#innerWrap #faceplate #siteTitle {
+  left: 0;
+  margin: 0 ;
+}

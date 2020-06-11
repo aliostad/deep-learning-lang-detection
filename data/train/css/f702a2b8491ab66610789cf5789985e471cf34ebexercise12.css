@@ -1,0 +1,65 @@
+/*Zero browser defaults*/
+body * {margin:0; padding:0; border:none;text-indent:0;text-decoration: none;outline:none;}
+
+/* ------------------------
+	Basic style 
+ ------------------------ */
+body			{font-family:georgia; font-size:15px; line-height:21px; }
+h1, h2, p, ol	{font-weight:normal;margin-bottom:15px;}
+ol li 			{margin-bottom:10px;}
+a 				{color:#00b4ff; /*blue*/}
+
+
+/* ------------------------
+	Nav 
+ ------------------------ */
+body#ex12 li#nav-12 a,
+body#ex13 li#nav-13 a, 
+body#ex14 li#nav-14 a {	
+	color:black;
+	}
+
+/* ------------------------
+	Layout 
+ ------------------------ */
+
+body {background: #fff url(guide12.jpg) no-repeat -100px top;}
+
+
+/* Write a rule for the main container that ...
+   - moves it to a point 200 px across and and 100 px down on the page 
+   - restricts its width to 675px */
+
+#main {position:absolute; top:200px; left:100px;
+/* Write a rule for ALL the boxes that..
+   - puts them into horizontally-flowing rows 
+   - separates the boxes by 20px, both horizontally and vertically */
+
+
+/* Write a rule for the BIG boxes that...
+   - creates a blue background color (#cbf7ff)
+   - adds 20px of padding
+   - sets the total width to 300px and the total height to 200px */
+
+
+/* Write a rule for the SMALL boxes that...
+   - creates a yellow background color (#fffcda)
+   - adds 10px of padding
+   - sets the total width to 200px and the total height to 100px   */
+
+
+/* Write a Rule for Boxes 1 that sets the 
+   type to 18px Georgia */
+
+/* Write a Rule for Boxes 2 through 5 that
+   sets the the type to 15px bold Georgia */
+
+
+/* Write a Rule for Box 4 that makes its text red */
+
+
+/* Write a Rule for Box 5 that ..
+   - makes the text blue
+   - overrides the background color and makes it purple (#e8bfff) */
+
+

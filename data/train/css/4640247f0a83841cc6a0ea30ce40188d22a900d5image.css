@@ -1,0 +1,35 @@
+/**SHOW IMAGE*************************************************************************/
+#image-show img{
+	display:inline-block;
+	vertical-align: top;
+	max-width: 78%;
+	transition:all .5s cubic-bezier(.6,2,.4,1);
+}
+
+#image-show img:hover{
+    transform: scale(1.4);
+    z-index: 999;
+    box-shadow:0 0 400px black;
+}
+
+#image-show div {
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	text-align: center;
+}
+
+#image-show div table{
+	border-spacing: 0px;
+	border-collapse: collapse;
+	border:solid 1px #2F4F4F;
+}
+
+#image-show div table thead th{
+	background-color: #2F4F4F;
+	font-size: large;
+	padding: 5px;
+}
+#image-show div table tbody td{
+	padding: 10px;
+}

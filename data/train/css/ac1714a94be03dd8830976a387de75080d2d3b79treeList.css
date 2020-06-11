@@ -1,0 +1,53 @@
+<style>
+ 
+.treeList ul{
+  list-style: none;
+  margin-left: 5px;
+  padding-left: 5px;
+  cursor: auto;
+}
+
+.treeList li{
+  list-style: none;
+  margin-left: 5px;
+  padding-left: 5px;
+  cursor: auto;
+  font-family: arial, sans-serif;
+  font-size: 12px;
+}
+
+.leaf:before {
+  content: "\A0\A0";
+  font-family: "Courier New";
+}
+
+.expanded:before{
+  content: "-\A0";
+  cursor:pointer;
+  font-family: "Courier New";
+}
+
+.collapsed:before{
+  content: "+\A0";
+  cursor:pointer;
+  font-family: "Courier New";
+}
+
+.canWrite {
+  color: rgba(0,0,255,1);
+}
+
+.canNotWrite {
+  color: rgba(0,0,0,0.5);
+}
+
+#selected-not-writable, #selected-not-writable + span{
+  background: rgba(0,0,0,0.4);
+  color:#fff;
+}
+
+#selected-writable, #selected-writable + span{
+  background: rgba(0,0,255,0.4);
+  color:#fff;
+}
+</style>

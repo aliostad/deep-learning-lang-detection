@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Yodii.Lab>
+  <Services>
+    <Service FullName="Service1">
+      <Generalization />
+    </Service>
+    <Service FullName="Service2">
+      <Generalization />
+    </Service>
+    <Service FullName="Service3">
+      <Generalization />
+    </Service>
+    <Service FullName="Service3.1">
+      <Generalization>Service3</Generalization>
+    </Service>
+    <Service FullName="Service3.2">
+      <Generalization>Service3</Generalization>
+    </Service>
+    <Service FullName="Service3.3">
+      <Generalization>Service3</Generalization>
+    </Service>
+    <Service FullName="Service3.4">
+      <Generalization>Service3</Generalization>
+    </Service>
+  </Services>
+  <Plugins>
+    <Plugin>
+      <FullName>Plugin1</FullName>
+      <Service>Service1</Service>
+      <ServiceReferences>
+        <ServiceReference Service="Service3.1" Requirement="Running" />
+      </ServiceReferences>
+    </Plugin>
+    <Plugin>
+      <FullName>Plugin10</FullName>
+      <Service>Service3.3</Service>
+      <ServiceReferences />
+    </Plugin>
+    <Plugin>
+      <FullName>Plugin11</FullName>
+      <Service>Service3.4</Service>
+      <ServiceReferences />
+    </Plugin>
+    <Plugin>
+      <FullName>Plugin12</FullName>
+      <Service>Service3.4</Service>
+      <ServiceReferences />
+    </Plugin>
+    <Plugin>
+      <FullName>Plugin2</FullName>
+      <Service>Service1</Service>
+      <ServiceReferences>
+        <ServiceReference Service="Service3.2" Requirement="Running" />
+      </ServiceReferences>
+    </Plugin>
+    <Plugin>
+      <FullName>Plugin3</FullName>
+      <Service>Service2</Service>
+      <ServiceReferences>
+        <ServiceReference Service="Service3.3" Requirement="Running" />
+      </ServiceReferences>
+    </Plugin>
+    <Plugin>
+      <FullName>Plugin4</FullName>
+      <Service>Service2</Service>
+      <ServiceReferences>
+        <ServiceReference Service="Service3.3" Requirement="Running" />
+      </ServiceReferences>
+    </Plugin>
+    <Plugin>
+      <FullName>Plugin5</FullName>
+      <Service>Service3.1</Service>
+      <ServiceReferences />
+    </Plugin>
+    <Plugin>
+      <FullName>Plugin6</FullName>
+      <Service>Service3.1</Service>
+      <ServiceReferences />
+    </Plugin>
+    <Plugin>
+      <FullName>Plugin7</FullName>
+      <Service>Service3.2</Service>
+      <ServiceReferences />
+    </Plugin>
+    <Plugin>
+      <FullName>Plugin8</FullName>
+      <Service>Service3.2</Service>
+      <ServiceReferences />
+    </Plugin>
+    <Plugin>
+      <FullName>Plugin9</FullName>
+      <Service>Service3.3</Service>
+      <ServiceReferences />
+    </Plugin>
+  </Plugins>
+  <Configuration />
+</Yodii.Lab>

@@ -1,0 +1,189 @@
+
+.nav {
+	width: 961px;
+	height: 48px;
+	background: url(nav.gif) no-repeat;
+	position: absolute;
+	top: 97px;
+	left: 100px;
+}
+.nav li {
+	display: inline;
+}
+.nav li a:link, .nav li a:visited {
+	position: absolute;
+	top: 0;
+	height: 48px;
+	text-indent: -9000px;
+	overflow: hidden;
+	z-index: 10;
+}
+	.nav .home a:link, .nav .home a:visited {
+		left: 23px;
+		width: 152px;
+	}
+	.nav .home a:hover, .nav .home a:focus {
+		background: url(nav.gif) no-repeat -23px -49px;
+	}
+	.nav .home a:active {
+		background: url(nav.gif) no-repeat -23px -98px;
+	}
+	.current-home .home a:link, .current-home .home a:visited {
+		background: url(nav.gif) no-repeat -23px -147px;
+		cursor: default;
+	}
+	.nav-home, .nav-home-click {
+		position: absolute;
+		top: 0;
+		left: 23px;
+		width: 152px;
+		height: 48px;
+		background: url(nav.gif) no-repeat -23px -49px;
+	}
+	.nav-home-click {
+		background: url(nav.gif) no-repeat -23px -98px;
+	}
+
+
+
+	.nav .about a:link, .nav .about a:visited {
+		left: 176px;
+		width: 152px;
+	}
+	.nav .about a:hover, .nav .about a:focus {
+		background: url(nav.gif) no-repeat -176px -49px;
+	}
+	.nav .about a:active {
+		background: url(nav.gif) no-repeat -176px -98px;
+	}
+	.current-about .about a:link, .current-about .about a:visited {
+		background: url(nav.gif) no-repeat -176px -147px;
+		cursor: default;
+	}
+	.nav-about, .nav-about-click {
+		position: absolute;
+		top: 0;
+		left: 176px;
+		width: 152px;
+		height: 48px;
+		background: url(nav.gif) no-repeat -176px -49px;
+	}
+	.nav-about-click {
+		background: url(nav.gif) no-repeat -176px -98px;
+	}
+
+
+
+	.nav .qsedu a:link, .nav .qsedu a:visited {
+		left: 329px;
+		width: 152px;
+	}
+	.nav .qsedu a:hover, .nav .qsedu a:focus {
+		background: url(nav.gif) no-repeat -329px -49px;
+	}
+	.nav .qsedu a:active {
+		background: url(nav.gif) no-repeat -329px -98px;
+	}
+	.current-qsedu .qsedu a:link, .current-qsedu .qsedu a:visited {
+		background: url(nav.gif) no-repeat -329px -147px;
+		cursor: default;
+	}
+	.nav-qsedu, .nav-qsedu-click {
+		position: absolute;
+		top: 0;
+		left: 329px;
+		width: 152px;
+		height: 48px;
+		background: url(nav.gif) no-repeat -329px -49px;
+	}
+	.nav-qsedu-click {
+		background: url(nav.gif) no-repeat -329px -98px;
+	}
+
+
+
+	
+	.nav .services a:link, .nav .services a:visited {
+		left: 482px;
+		width: 152px;
+	}
+	.nav .services a:hover, .nav .services a:focus {
+		background: url(nav.gif) no-repeat -482px -49px;
+	}
+	.nav .services a:active {
+		background: url(nav.gif) no-repeat -482px -98px;
+	}
+	.current-services .services a:link, .current-services .services a:visited {
+		background: url(nav.gif) no-repeat -482px -147px;
+		cursor: default;
+	}
+	.nav-services, .nav-services-click {
+		position: absolute;
+		top: 0;
+		left: 482px;
+		width: 152px;
+		height: 48px;
+		background: url(nav.gif) no-repeat -482px -49px;
+	}
+	.nav-services-click {
+		background: url(nav.gif) no-repeat -482px -98px;
+	}
+	
+
+
+
+
+.nav .hzyuan a:link, .nav .hzyuan a:visited {
+	left: 635px;
+	width: 152px;
+}
+.nav .hzyuan a:hover, .nav .hzyuan a:focus {
+	background: url(nav.gif) no-repeat -635px -49px;
+}
+.nav .hzyuan a:active {
+	background: url(nav.gif) no-repeat -635px -98px;
+}
+.current-hzyuan .hzyuan a:link, .current-hzyuan .hzyuan a:visited {
+	background: url(nav.gif) no-repeat -635px -147px;
+	cursor: default;
+}
+.nav-hzyuan, .nav-hzyuan-click {
+	position: absolute;
+	top: 0;
+	left: 635px;
+	width: 152px;
+	height: 48px;
+	background: url(nav.gif) no-repeat -635px -49px;
+}
+.nav-hzyuan-click {
+	background: url(nav.gif) no-repeat -635px -98px;
+}
+
+
+
+
+.nav .contactn a:link, .nav .contactn a:visited {
+	left: 788px;
+	width: 152px;
+}
+.nav .contactn a:hover, .nav .contactn a:focus {
+	background: url(nav.gif) no-repeat -788px -49px;
+}
+.nav .contactn a:active {
+	background: url(nav.gif) no-repeat -788px -98px;
+}
+.current-contactn .contactn a:link, .current-contactn .contactn a:visited {
+	background: url(nav.gif) no-repeat -788px -147px;
+	cursor: default;
+}
+.nav-contactn, .nav-contactn-click {
+	position: absolute;
+	top: 0;
+	left: 788px;
+	width: 152px;
+	height: 48px;
+	background: url(nav.gif) no-repeat -788px -49px;
+}
+.nav-contactn-click {
+	background: url(nav.gif) no-repeat -788px -98px;
+}		

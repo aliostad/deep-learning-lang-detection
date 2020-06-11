@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+set -e
+
+WORKSPACE=`mktemp -d /tmp/mucflow.XXXX`
+UPSTREAM_REPO=${WORKSPACE}/upstream
+SEED_REPO=${WORKSPACE}/seed
+
+function init() {
+  mkdir -p ${UPSTREAM_REPO} && git init --bare ${UPSTREAM_REPO} > /dev/null
+  git clone --origin upstream ${UPSTREAM_REPO} ${SEED_REPO} > /dev/null 2>&1
+
+  (pushd ${SEED_REPO} && echo first commit > README && git add README \
+                  && git commit -m'initalizing repo' && git push -u upstream master \
+                  && popd) > /dev/null 2>&1
+}
+
+function main() {
+  init
+  (./script/bot ${WORKSPACE} ${UPSTREAM_REPO} bob)
+  (./script/bot ${WORKSPACE} ${UPSTREAM_REPO} alice)
+  cd ${SEED_REPO} && git pull -u upstream master > /dev/null 2>&1 \
+                  && git log --oneline --decorate --graph
+}
+
+main
+

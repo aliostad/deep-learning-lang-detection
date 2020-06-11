@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Addin 
+    id="Banshee.DuplicateSongDetector"
+    version="1.0"
+    compatVersion="1.0"
+    copyright="Copyright © 2011 Kevin Antony. Licensed under the MIT X11 license."
+    name="Duplicate Song Detector"
+    category="Community Extensions"
+    description="Detect and remove duplicate songs in your library."
+    author="Kevin Anthony"
+    url="http://banshee-project.org/"
+    defaultEnabled="false">
+
+  <Localizer type="Gettext" catalog="banshee-community-extensions" location="../../../share/locale"/>
+
+  <Dependencies>
+    <Addin id="Banshee.Services" version="1.0"/>
+    <Addin id="Banshee.ThickClient" version="1.0"/>
+  </Dependencies>
+
+  <Extension path="/Banshee/ThickClient/ActionGroup">
+    <ActionGroup class="Banshee.DuplicateSongDetector.DuplicateSongDetectorAction"/>
+  </Extension>
+
+</Addin>

@@ -1,0 +1,40 @@
+<services>
+    <service id="desktop_finder.starbuy_mdl_promotions_type">
+        <class>starbuy_finder_promotions_type</class>
+    </service>
+
+    <service id="desktop_finder.starbuy_mdl_special">
+        <class>starbuy_finder_special</class>
+    </service>
+
+    <service id="site_menu.starbuy_site_special_index">
+        <class>starbuy_menu_groupbuy</class>
+    </service>
+
+    <service id="b2c_cart_process_apps">
+        <class>starbuy_cart_process_special</class>
+    </service>
+
+    <service id="special_goods">
+        <class>starbuy_special_products</class>
+    </service>
+
+    <service id="cancelorder">
+        <class>starbuy_special_order</class>
+    </service>
+
+    <service id="firevent_type">
+        <class>starbuy_service_firevent_action</class>
+    </service>
+
+    <service id="sepcial_goods_check">
+        <class>starbuy_special_goods</class>
+    </service>
+
+    <service id="b2c_allow_delete_goods">
+        <class>starbuy_special_goods</class>
+    </service>
+
+
+
+</services>

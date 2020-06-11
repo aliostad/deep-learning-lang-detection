@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean name="httpSellerServiceExporter" class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter"
+        p:service-ref="sellerService"
+        p:serviceInterface="com.hung.auction.service.SellerService" />
+        
+    <bean name="httpDomainServiceExporter" class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter"
+        p:service-ref="domainService"
+        p:serviceInterface="com.hung.auction.service.DomainService" />
+        
+    <bean name="httpDomainUserServiceExporter" class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter"
+        p:service-ref="domainUserService"
+        p:serviceInterface="com.hung.auction.service.DomainUserService" />
+
+    <bean name="httpLoginServiceExporter" class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter"
+        p:service-ref="loginService"
+        p:serviceInterface="com.hung.auction.service.LoginService"/>
+
+    <bean name="httpDomainSettingServiceExporter" class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter"
+        p:service-ref="domainSettingService"
+        p:serviceInterface="com.hung.auction.service.DomainSettingService" />
+
+    <bean name="httpClientCacheServiceExporter" class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter"
+        p:service-ref="clientCacheService"
+        p:serviceInterface="com.hung.auction.service.ClientCacheService" />
+        
+    <bean name="httpServerReservationServiceExporter" class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter"
+        p:service-ref="serverReservationService"
+        p:serviceInterface="com.hung.auction.service.ServerReservationService" />
+          
+</beans>

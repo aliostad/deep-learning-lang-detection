@@ -1,0 +1,111 @@
+#!/bin/sh -f
+
+# CPU 速度は各マシンの /proc/cpuinfo に書かれています
+# メモリ容量は普通に free コマンドでわかります
+# OSは/etc/redhat-re?でわかります
+
+# function definition
+function host_view
+{
+#	load=`/usr/bin/rsh $1 cat /proc/loadavg | perl -lane 'print "@F[0], @F[1], @F[2]"'`
+#	echo " loadavg: $load"
+#	echo -n "[33m"
+#	/usr/bin/rsh $1 /bin/ps -elf | sort | \
+#	awk '{ n = split($15,a,"/"); if( \
+#		index(a[n],"_shell")!=0 || \
+#		index(a[n],"erdi")!=0 || \
+#		index(a[n],"vcs") != 0 || \
+#		index(a[n],"virsim")!=0 || \
+#		index(a[n],"simv")!=0 || \
+#		index(a[n],"hspice")!=0 || \
+#		index(a[n], "instimer")!=0 || \
+
+#		index(a[n], "check.Linux2")!=0 || \
+#		index(a[n], "vsim")!=0 || \
+#		index(a[n], "vish")!=0) \
+#	print "  "$2" "$3"\tCPU"$6"%\tSIZE="$10"\t"$12" "$14" "a[n]}'
+	load=`/usr/bin/rsh $1 cat /proc/loadavg | perl -lane 'print "@F[0], @F[1], @F[2],"'`
+	echo " ldavg: $load"
+	echo -n "[33m"
+	/usr/bin/rsh $1 /bin/ps --no-headers -eo state,user,%cpu,%mem,stime,args --sort=-%cpu | \
+	grep -v "tcsh\|rsh" | \
+        perl -lane 'if( $F[2] > 5 or $F[3] > 5 or $F[0] eq "D" ){ 	# CPU MEM usage
+		printf "  @F[0] @F[1]\t@F[2]%\t@F[3]%\t@F[4]\t\t";
+		@G = split(/\//,@F[5]); # remove path
+		print pop(@G);
+	}'
+}
+
+# main
+echo "[35m----------------------------------------------------------------------"
+echo "[36m    User Name	CPU%	Mem%	Start Time	Exec Command"
+echo "[35m----------------------------------------------------------------------"
+
+echo -n "[31mfusion1: Xeon :2.6GHz: 8GB:RHEL4.5   (not for sim)"
+host_view fusion1
+echo -n "[32mart10:   Xeon :3.0GHz:32GB:RHEL4.0   (available)  "
+host_view art10
+echo -n "[32mart11:   Xeon :3.0GHz:16GB:RHEL4.5   (available)  "
+host_view art11
+echo -n "[32mart20:   Xeon :2.6GHz: 8GB:RHEL4.0   (available)  "
+host_view art20
+echo -n "[32mart21:   Xeon :2.6GHz: 8GB:RHEL4.0   (available)  "
+host_view art21
+echo -n "[32mart22:   Xeon :2.6GHz: 8GB:RHEL4.0   (available)  "
+host_view art22
+echo -n "[32mart23:   Xeon :2.6GHz: 8GB:RHEL4.0   (available)  "
+host_view art23
+echo -n "[32mart24:   Xeon :2.6GHz: 8GB:RHEL4.0   (available)  "
+host_view art24
+echo -n "[32mart25:   Xeon :2.6GHz: 8GB:RHEL4.0   (available)  "
+host_view art25
+echo -n "[32mart26:   Xeon :2.6GHz: 8GB:RHEL4.0   (available)  "
+host_view art26
+echo -n "[32mart27:   Xeon :2.6GHz: 8GB:RHEL4.0   (available)  "
+host_view art27
+#echo -n "[32mart28:   Xeon :2.6GHz: 8GB:RHEL4.0   (available)  "
+#host_view art28
+#echo -n "[32mart29:   Xeon :2.6GHz: 8GB:RHEL4.0   (available)  "
+#host_view art29
+#echo -n "[32mthetis:  Pen4 :3.6GHz: 4GB:RHEL4.0   (available)  "
+#host_view thetis
+#echo -n "[32mthemis:  Pen4 :3.6GHz: 4GB:RHEL4.0   (for FPGA)   "
+#host_view themis
+#echo -n "[32mceres(ewsd4302):   Pen4 :3.2GHz: 2GB:Redhat8.0 (canna)      "
+#host_view ceres
+#echo -n "[31mhebe:   AMD64:2.6GHz: 8GB:RHEL4.4   (not for sim)"
+#host_view hebe
+
+
+echo -n "[36m"
+function get_load
+{
+        load=`/usr/bin/rsh $1 cat /proc/loadavg 5> /dev/null`;
+        load=`echo "$load" | perl -lane 'print "@F[0]"'`;
+        if [ "$load" = "" ]; then 
+                load="9";
+        fi
+        echo "$1 $load";
+}
+
+{
+ #       get_load art27;
+ #      get_load art28;
+        get_load art23;
+ #      get_load art29;
+        get_load art26;
+        get_load art25;
+        get_load art24;
+        get_load art22;
+        get_load art21;
+        get_load art20;
+        get_load art11;
+        get_load art10;
+#        get_load art00;
+} | sort -n -k 2 | perl -pe 'exit if $. > 1' | perl -lane 'print "@F[0] is recommended (loadavg = @F[1])"';
+
+
+echo "[35m----------------------------------------------------------------------"
+echo '[35m This command lists all processes which use more than 5% CPU or Memory.'
+echo '[35m Please do NOT add new job to high load average (>2) servers. '
+

@@ -1,0 +1,67 @@
+* {
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 6px;
+  margin: 0;
+  color: #2e3436;
+}
+
+.incoming .sender {
+  color: #4a708b;
+}
+
+.outgoing .sender {
+  color: #2e8b57;
+}
+
+.mention .sender {
+  color: #8b2323;
+  font-weight: bold;
+}
+
+.status {
+  color: #939373;
+}
+
+a {
+  color: #4682b4;
+}
+
+.message.action {
+  color: #8b2323;
+  font-style: italic;
+}
+
+.message.action .sender {
+  display: none;
+}
+
+.message.action .actionMessageUserName {
+  display: inline;
+}
+
+div.message.action span.message::before {
+  content: " * ";
+}
+
+.message.action .actionMessageBody::before,
+.message.action .actionMessageBody::after {
+  content: " ";
+}
+
+::selection {
+  background: #4a90d9;
+}
+
+div.message {
+  padding: 0.3ex 0;
+  line-height: 130%;
+}

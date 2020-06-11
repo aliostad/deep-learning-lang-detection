@@ -1,0 +1,38 @@
+<configure
+  xmlns="http://namespaces.zope.org/browser"
+  xmlns:zcml="http://namespaces.zope.org/zcml"
+  xmlns:zope="http://namespaces.zope.org/zope"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup">
+  
+  <include package="collective.autopermission" />
+  
+  <zope:permission
+     id="Products.NoDuplicateLogin.ExpireSession"
+     title="Products.NoDuplicateLogin: Force session to expire"
+   />
+  
+  <page 
+    name="revoke_session"
+    template="www/revoke_session.pt"
+    class=".views.RevokeSession"
+    for="Products.NoDuplicateLogin.plugin.NoDuplicateLogin"
+    permission="Products.NoDuplicateLogin.ExpireSession"
+  />
+  
+  <page 
+    name="revoke_session_do"
+    class=".views.RevokeSession"
+    attribute="do_remove"
+    for="Products.NoDuplicateLogin.plugin.NoDuplicateLogin"
+    permission="Products.NoDuplicateLogin.ExpireSession"
+  />
+  
+  
+  <genericsetup:importStep
+      name="Products.NoDuplicateLogin"
+      title="Enable NoDuplicateLogin behaviour"
+      description=""
+      handler="Products.NoDuplicateLogin.setuphandlers.setupVarious"
+      />
+  
+</configure>

@@ -1,0 +1,43 @@
+/*
+  Functions
+*/
+/*
+	Patterns
+*/
+/*
+	Grid
+*/
+/*
+	Typography
+*/
+/*
+	User Interface Elements
+*/
+/*
+	Pagination mixin
+*/
+.grid-block {
+  padding-bottom: 1.5em; }
+
+.mask {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.5em; }
+
+.mask img {
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+.ratio--sixteen-nine {
+  padding-top: 56.25%; }
+
+.js .lazy-load img {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  transition: opacity 0.3s; }
+
+.js .lazy-load img.is-lazy-loaded {
+  opacity: 1; }

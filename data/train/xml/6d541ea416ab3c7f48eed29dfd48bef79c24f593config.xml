@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Reverb_Process>
+            <version>0.0.1</version>
+        </Reverb_Process>
+    </modules>
+
+    <global>
+        <models>
+            <reverb_process>
+                <class>Reverb_Process_Model</class>
+                <resourceModel>reverb_process_mysql4</resourceModel>
+            </reverb_process>
+            <reverb_process_mysql4>
+                <class>Reverb_Process_Model_Mysql4</class>
+            </reverb_process_mysql4>
+        </models>
+
+        <helpers>
+            <reverb_process>
+                <class>Reverb_Process_Helper</class>
+            </reverb_process>
+        </helpers>
+
+        <blocks>
+            <reverb_process>
+                <class>Reverb_Process_Block</class>
+            </reverb_process>
+        </blocks>
+
+        <resources>
+            <reverb_process_setup>
+                <setup>
+                    <module>Reverb_Process</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </reverb_process_setup>
+        </resources>
+    </global>
+</config>

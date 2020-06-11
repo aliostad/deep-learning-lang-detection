@@ -1,0 +1,49 @@
+.load{
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	/*position: relative;*/
+	font-size: 12px;
+	color: #666;
+	text-align: center;
+}
+
+.load .lodImg{
+	width: 20px !important;
+	height: 20px !important;
+	float: left;
+	margin-top: 10px;
+}
+.load .loading{
+	width: 80px;
+	height: 40px;
+	margin: 0 auto;
+}
+.load p{
+	width: 100%;
+	padding-left: 30px;
+	line-height: 40px;
+	text-align: left;
+}
+.load p.center{
+	padding-left: 0px;
+	text-align: center;
+}
+.load .on-end {
+    padding-left:0px;
+    text-align:center;
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+.load .pic-no{
+        	width: 40%;
+        	position: absolute;
+        	top: 30%!important;
+        	left: 50%;
+        	-webkit-transform: translate3d(-50%,-50%,0);
+        	transform: translate3d(-50%,-50%,0);
+ }
+
+

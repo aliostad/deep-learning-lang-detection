@@ -1,0 +1,59 @@
+/**
+ * slide-up-message: style sheet
+ */
+
+body {margin: 0;}
+#message-div {
+  position: fixed;
+  bottom: -50px;
+  /*bottom: 0px;*/
+  width: 100%;
+  z-index: 200;
+}
+#message-div .inner {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+}
+#message-div .normal {
+  background: #e0ffff;
+  color: #0000cd;
+}
+#message-div .success {
+  background: #98fb98;
+  color:006400;
+}
+#message-div .error {
+  background: #f08080;
+  color: #8b0000;
+}
+#message-div .inner p {
+  font-size: 1.3em;
+  padding: 15px;
+}
+@media screen and (max-width:767px) { 
+  #message-div {
+    bottom: -40px;
+  }
+  #message-div .inner {
+    height: 40px;
+  }
+  #message-div .inner p {
+    font-size: 1.1em;
+    padding: 12px;
+  }
+}
+@media screen and (max-width:550px) { 
+  #message-div {
+    bottom: -30px;
+  }
+  #message-div .inner {
+    height: 30px;
+  }
+  #message-div .inner p {
+    font-size: 1em;
+    padding: 5px;
+  }
+}
+
+

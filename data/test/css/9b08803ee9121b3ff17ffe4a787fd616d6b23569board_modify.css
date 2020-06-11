@@ -1,0 +1,50 @@
+#board_content {
+  width: 100%;
+}
+#board_content .write_frm {
+  width: 800px;
+  border: 1px solid #e5e5e5;
+  margin: 0 auto;
+}
+#board_content .write_frm th {
+  text-align: center;
+  width: 80px;
+  border-bottom: 1px solid #e5e5e5;
+  background-colord: #f3f3f3;
+}
+#board_content .write_frm td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #e5e5e5;
+}
+#board_content .write_frm input {
+  width: 220px;
+  height: 20px;
+  border: 0px;
+  border-bottom: 1px solid #e5e5e5;
+}
+#board_content .write_frm input:focus {
+  border-bottom: 1px solid #ec3f35;
+  outline: none;
+}
+#board_content .write_frm .subject {
+  min-width: 617px !important;
+}
+#board_content .write_btn {
+  padding: 10px;
+  color: white;
+  border: 1px solid #f3f3f3;
+  margin-top: 5px;
+  border-radius: 4px;
+  background-color: #ec3f35;
+  cursor: pointer;
+}
+#board_content .list_btn {
+  padding: 10px;
+  color: gray;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  border-radius: 4px;
+  background-color: #fefefe;
+  cursor: pointer;
+}

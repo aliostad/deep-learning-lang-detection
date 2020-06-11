@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Usage: $0 $REPO
+# creates /var/git/$REPO{.git,.wrk}
+# and a simple post-receive hook
+# will call sudo for you
+
+REPO="$1"
+[[ -z "$REPO" ]] && echo usage: "$0" repo_name && exit 1
+cd /var/git
+[[ -d "$REPO".git ]] && echo "$REPO".git exists && exit 1
+sudo mkdir "$REPO".{git,wrk}
+sudo chown git:git "$REPO".{git,wrk}
+sudo chmod 2775 "$REPO".{git,wrk}
+cd "$REPO".git
+sudo -u git git init --bare --shared=group
+cat > hooks/post-receive <<EOF
+#!/bin/bash
+
+GIT_WORK_TREE=/var/git/"$REPO".wrk git checkout -f
+EOF
+chmod +x hooks/post-receive

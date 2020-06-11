@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+  <extension point="com.dynatrace.diagnostics.pdk.pluginconfig" id="com.dynatrace.diagnostics.plugins.LinuxProcessStatusPluginNew" name="Linux Process Status Plugin New">
+    <information>
+      <category value="" />
+      <description value="The Linux Process Status Plugin returns the count of running processes defined by process username, process name and process arguments. Process username is optional.&#xA;Uses 'ps -efu' (if username is specified) OR 'ps -ef' cmd to query for specific process names and arguments passed to a process.&#xA;&#xA;" />
+      <license value="dynaTraceBSD.txt" />
+      <supportlevel value="unsupported" />
+      <displayname value="Linux Process Status Plugin New" />
+    </information>
+    <configuration>
+      <property key="serverUsername" label="Username" type="string" description="The username that is used for authorization with the host." default="" multiline="false" />
+      <property key="serverPassword" label="Password" type="password" description="The password for the username." default="" />
+      <property key="method" label="Method" type="list" description="Specify the type of Connection." default="SSH">
+        <list>
+          <item value="SSH" />
+        </list>
+      </property>
+      <property key="authMethod" label="Authentication Method" type="list" description="Specify the type of SSH Authentication." default="PASSWORD">
+        <list>
+          <item value="PASSWORD" />
+        </list>
+      </property>
+      <property key="process_user_name" label="Common Username of Processes " type="string" description="The user the process is running under." default="" multiline="false" />
+      <property key="process-1" label="Details of Process 1" type="string" description="Provide process business name; process name ; process arguments ; min instance count" default="" multiline="false" />
+      <property key="process-2" label="Details of Process 2" type="string" description="Provide process name | process arguments | min instance count | listen port numbers." default="" multiline="false" />
+      <property key="process-3" label="Details of Process 3" type="string" description="Provide process name | process arguments | min instance count | listen port numbers." default="" multiline="false" />
+      <property key="process-4" label="Details of Process 4" type="string" description="Provide process name | process arguments | min instance count | listen port numbers." default="" multiline="false" />
+      <property key="process-5" label="Details of Process 5" type="string" description="Provide process name | process arguments | min instance count | listen port numbers." default="" multiline="false" />
+      <property key="process-6" label="Details of Process 6" type="string" description="Provide process name | process arguments | min instance count | listen port numbers." default="" multiline="false" />
+      <property key="process-7" label="Details of Process 7" type="string" description="Provide process name | process arguments | min instance count | listen port numbers." default="" multiline="false" />
+      <property key="process-8" label="Details of Process 8" type="string" description="Provide process name | process arguments | min instance count | listen port numbers." default="" multiline="false" />
+      <property key="process-9" label="Details of Process 9" type="string" description="Provide process name | process arguments | min instance count | listen port numbers." default="" multiline="false" />
+      <property key="process-10" label="Details of Process 10" type="string" description="Provide process name | process arguments | min instance count | listen port numbers." default="" multiline="false" />
+    </configuration>
+  </extension>
+  <extension point="com.dynatrace.diagnostics.pdk.monitor" id="com.dynatrace.diagnostics.plugins.LinuxProcessStatusPluginNew.monitor" name="Linux Process Status Monitor New">
+    <plugin configid="com.dynatrace.diagnostics.plugins.LinuxProcessStatusPluginNew" class="wp.WPMonitor" />
+  </extension>
+  <extension point="com.dynatrace.diagnostics.pdk.monitormetricgroup" id="com.dynatrace.diagnostics.plugins.LinuxProcessStatusPluginNew.metricgroup1" name="Linux Process Status Monitor">
+    <metricgroup monitorid="com.dynatrace.diagnostics.plugins.LinuxProcessStatusPluginNew.monitor">
+      <metric name="ProcessCount" unit="number" description="Returns count of running processes. " />
+      <metric defaultrate="purepath" name="ProcessAvailability" unit="percent" description="represents Availability percentage of the Process at the time of execution. This should either be 0 (Process not running or no of instances of Process is less than expected threshold) or 100 (Process is running).">
+        <property key="Availability" value="100" optional="false" />
+      </metric>
+      <metric defaultrate="purepath" name="Violation" unit="number" description="No of times the Process was not available.">
+        <property key="Violation" value="0" optional="false" />
+      </metric>
+      <metric defaultrate="purepath" name="ListenPort_Violation" unit="number" description="My metric description ..." />
+    </metricgroup>
+  </extension>
+</plugin>

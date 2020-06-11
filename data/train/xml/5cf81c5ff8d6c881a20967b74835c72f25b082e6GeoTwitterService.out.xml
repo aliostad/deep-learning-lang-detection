@@ -1,0 +1,16 @@
+Generated Codefiles of Service < GeoTwitterService >:
+MobilisAuditorium/Service/GeoTwitterServiceProxy.java
+MobilisAuditorium/Service/XMPPInfo.java
+MobilisAuditorium/Service/XMPPBean.java
+MobilisAuditorium/Service/IGeoTwitterServiceIncoming.java
+MobilisAuditorium/Service/IGeoTwitterServiceOutgoing.java
+MobilisAuditorium/Service/IXMPPCallback.java
+MobilisAuditorium/Service/createTreasureRequest.java
+MobilisAuditorium/Service/createTreasureResponse.java
+MobilisAuditorium/Service/updateLocation.java
+MobilisAuditorium/Service/sendTreasureList.java
+MobilisAuditorium/Service/getTreasureContentRequest.java
+MobilisAuditorium/Service/getTreasureContentResponse.java
+MobilisAuditorium/Service/pushNewTreasure.java
+
+MobilisAuditorium/Service/Treasure.javaMobilisAuditorium/Service/TreasureContent.javaMobilisAuditorium/Service/LocationBean.java

@@ -1,0 +1,56 @@
+#!/bin/sh
+
+echo "Downloading c-ares"
+wget -nv http://c-ares.haxx.se/c-ares-1.6.0.tar.gz
+echo ""
+echo "Downloading cURL"
+wget -nv http://curl.haxx.se/download/curl-7.19.5.tar.gz
+
+echo ""; echo ""
+
+echo "Decompressing c-ares"
+tar -xzf c-ares-1.6.0.tar.gz
+echo ""
+echo "Decompressing cURL"
+tar -xzf curl-7.19.5.tar.gz
+
+echo ""; echo ""
+
+# from curlinstall
+
+save_PWD=`pwd`
+echo "Installing ares"
+cd $save_PWD/c-ares-1.6.0
+./configure --prefix=$save_PWD/ares && make && make install
+
+if [ -f $save_PWD/ares/lib/libcares.a ] ; then
+	if [ -f $save_PWD/ares/lib/libares.a ] ; then
+		rm -f $save_PWD/ares/lib/libares.a
+	fi
+	cp $save_PWD/ares/lib/libcares.a $save_PWD/ares/lib/libares.a
+fi
+
+echo "Installing libcurl"
+cd $save_PWD/curl-7.19.5
+CPPFLAGS="-I$save_PWD/ares/include" ./configure --prefix=$save_PWD/curl --disable-shared \
+ --disable-thread --enable-ares=$save_PWD/ares --disable-ipv6 --with-ssl
+cp -R $save_PWD/ares/lib ares
+make && make install
+
+if [ -f $save_PWD/curl/lib/libares.a ] ; then
+	rm -f $save_PWD/curl/lib/libares.a
+fi
+cp $save_PWD/ares/lib/libares.a $save_PWD/curl/lib
+
+cd $save_PWD
+
+echo ""
+echo ""
+echo "Please make sure the make worked. If it did,"
+echo "libcurl has been installed. When running ./Config specify:"
+echo "$save_PWD/curl"
+echo "for the directory you installed libcurl to."
+echo ""
+echo "Good luck!"
+
+rm -rf c-ares-1.6.0.tar.gz curl-7.19.5.tar.gz c-ares-1.6.0 curl-7.19.5

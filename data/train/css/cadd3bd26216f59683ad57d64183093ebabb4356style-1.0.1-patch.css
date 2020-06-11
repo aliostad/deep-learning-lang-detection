@@ -1,0 +1,63 @@
+/** NAV PILLS CLASSES UPDATE **/
+.nav.nav-pills > li.disabled > a,
+.nav.nav-tabs > li.disabled > a,
+.nav.nav-primary > li.disabled > a,
+.nav.nav-success > li.disabled > a,
+.nav.nav-info > li.disabled > a,
+.nav.nav-danger > li.disabled > a,
+.nav.nav-warning > li.disabled > a,
+.nav.nav-primary > li.disabled > a:hover,
+.nav.nav-success > li.disabled > a:hover,
+.nav.nav-info > li.disabled > a:hover,
+.nav.nav-danger > li.disabled > a:hover,
+.nav.nav-warning > li.disabled > a:hover {
+	color: #D5DAE0;
+	border-color: transparent;
+	background: transparent;
+	pointer-events: none;
+}
+
+/** NAV TABS CLASSES UPDATE **/
+.nav-tabs.item-color.nav-primary > li.disabled > a,
+.nav-tabs.item-color.nav-primary > li.disabled > a:hover,
+.nav-tabs.item-color.nav-primary > li.disabled > a:focus,
+.nav-tabs.item-color.nav-success > li.disabled > a,
+.nav-tabs.item-color.nav-success > li.disabled > a:hover,
+.nav-tabs.item-color.nav-success > li.disabled > a:focus,
+.nav-tabs.item-color.nav-info > li.disabled > a,
+.nav-tabs.item-color.nav-info > li.disabled > a:hover,
+.nav-tabs.item-color.nav-info > li.disabled > a:focus, 
+.nav-tabs.item-color.nav-danger > li.disabled > a,
+.nav-tabs.item-color.nav-danger > li.disabled > a:hover,
+.nav-tabs.item-color.nav-danger > li.disabled > a:focus ,
+.nav-tabs.item-color.nav-warning > li.disabled > a,
+.nav-tabs.item-color.nav-warning > li.disabled > a:hover,
+.nav-tabs.item-color.nav-warning > li.disabled > a:focus {
+	pointer-events: none;
+	cursor: not-allowed;
+	filter: alpha(opacity=65);
+	opacity: .65;
+}
+
+/** DROPDOWN MENU CLASSES UPDATE **/
+.dropdown-menu > .disabled > a,
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus,
+.dropdown-menu.primary > .disabled > a,
+.dropdown-menu.primary > .disabled > a:hover,
+.dropdown-menu.primary > .disabled > a:focus,
+.dropdown-menu.success > .disabled > a,
+.dropdown-menu.success > .disabled > a:hover,
+.dropdown-menu.success > .disabled > a:focus ,
+.dropdown-menu.info > .disabled > a,
+.dropdown-menu.info > .disabled > a:hover,
+.dropdown-menu.info > .disabled > a:focus, 
+.dropdown-menu.danger > .disabled > a,
+.dropdown-menu.danger > .disabled > a:hover,
+.dropdown-menu.danger > .disabled > a:focus,
+.dropdown-menu.warning > .disabled > a,
+.dropdown-menu.warning > .disabled > a:hover,
+.dropdown-menu.warning > .disabled > a:focus {
+	background-color: transparent;
+	color: #D5DAE0;
+}

@@ -1,0 +1,19 @@
+<process-application
+  xmlns="http://www.camunda.org/schema/1.0/ProcessApplication"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <process-engine name="default">
+    <configuration>org.camunda.bpm.engine.impl.cfg.StandaloneInMemProcessEngineConfiguration</configuration>
+    <properties>
+    	<property name="jdbcUrl">jdbc:h2:mem:camunda;DB_CLOSE_DELAY=-1</property>
+    </properties>
+  </process-engine>
+
+  <process-archive>
+    <process-engine>default</process-engine>
+    <properties>
+    <property name="isScanForProcessDefinitions">true</property>
+    </properties>
+  </process-archive>
+
+</process-application>

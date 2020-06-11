@@ -1,0 +1,40 @@
+
+a {
+  cursor: pointer; }
+
+
+.nav-container {
+ ;
+  width: 100%;
+  position: fixed;
+  }
+
+nav {
+  text-align: center;
+  width: 640px;
+  margin: 0px auto; }
+  nav ul {
+    padding: 0px; }
+  nav li {
+    width: 24%;
+    display: inline-block; }
+    nav li a {
+      font-size: 15px;
+      color: white; }
+    nav li a.active {
+      color: #aaaaaa; }
+  @media screen and (max-width: 640px) {
+    nav {
+      width: 90%; }
+      nav li a {
+        font-size: 18px; } }
+
+
+
+
+
+.gist-meta {
+  display: none; }
+
+.file-data {
+  font-size: 14px; }

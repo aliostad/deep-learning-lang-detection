@@ -1,0 +1,103 @@
+/****************************************************************************
+*
+* Texts section styles
+*
+****************************************************************************/
+.cms_texts_edit_block{
+	padding: 10px 5px 10px 5px;
+	border: solid 1px #777;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+.cms_texts_list_item {
+	padding: 5px;
+	border: solid 1px #ddd;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+.cms_texts_list_item:hover {
+	border: solid 1px #555;
+}
+.cms_texts_list_item_title {
+	font-size: 16px;
+	font-weight: bold;
+	color: #999;
+	border-bottom: dashed 1px #999;
+	padding-bottom: 3px;
+	display: block;
+	margin: 10px 0px 10px 0px;
+}
+
+.cms_texts_html_file_load_frame{
+	position: relative;
+	height: 30px;
+}
+.cms_texts_html_file_load_frame input[type="file"]{
+	position:relative;
+	top:4px;
+	left:5px;
+	z-index:2;
+	opacity:0;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+	-khtml-opacity:0
+}
+.cms_texts_html_file_load_frame input[type="text"]{
+	position:absolute;
+	top:3px;
+	left:5px;
+	z-index:1;
+	width:175px;
+}
+.cms_texts_html_load_select_button{
+	position:absolute;
+	top:4px;
+	left:200px;
+	z-index:1;
+}
+.cms_texts_html_load_load_button{
+	position:absolute;
+	top:4px;
+	left:280px;
+	z-index:1;
+	display:none;
+}
+.cms_texts_html_file_load_frame #texts_load_html_wait_icon{
+	position: absolute;
+	display: none;
+	top: 4px;
+	left: 280px;
+}
+.cms_texts_text_edit_tool_panel {
+	position: absolute;
+	padding: 5px 10px 5px 10px;
+	border-top: solid 1px #a3d7ff;
+	border-right: solid 1px #a3d7ff;
+	border-bottom: solid 1px #a3d7ff;
+	border-radius: 0px 5px 5px 0px;
+	margin-top: 20px;
+	width: 201px;
+	display: none;
+	background-color: #f2faff;
+}
+.texts_link_text_list_menu_item {
+	font-size: 14px;
+	font-weight: bold;
+	margin: 5px 0px 10px 0px;
+	color: #999;
+}
+.texts_link_text_list_text, .texts_link_menu_list_text {
+	margin: 5px 0px 5px 15px;
+	cursor: pointer;
+}
+select.texts_link_menu_menu_list {
+	width: 95%;
+	border: solid 1px #555;
+	border-radius: 3px;
+}
+input[type=button].texts_edit_tool_button,  input[type=button].texts_edit_tool_button:focus{
+	width: 100%;
+	background-color: #f7f7f7;
+	margin: 5px 0px 5px 0px;
+	display: block;
+	color: #222;
+}

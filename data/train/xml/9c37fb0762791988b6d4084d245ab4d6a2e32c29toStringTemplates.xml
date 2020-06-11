@@ -1,0 +1,13 @@
+<application>
+  <component name="ToStringTemplates">
+    <option name="defaultTempalteName" value="String concat (+)" />
+    <option name="templates">
+      <list>
+        <TemplateResource>
+          <option name="fileName" value="Custom toString" />
+          <option name="template" value="public String toString() {&#10;final StringBuilder sb = new StringBuilder();&#10;sb.append(super.toString());&#10;#set ($i = 0)&#10;#foreach ($member in $members)&#10;#if (!$member.modifierStatic)&#10;#if ($i == 0)&#10;sb.append(&quot;{##&#10;#else&#10;sb.append(&quot;, ##&#10;#end&#10;#if ($member.string)&#10;$member.name='&quot;)##&#10;#else&#10;$member.name=&quot;)##&#10;#end&#10;#if ($member.primitiveArray)&#10;.append($member.name == null ? &quot;null&quot; : &quot;&quot;);&#10;for (int i = 0; $member.name != null &amp;&amp; i &lt; $member.name .length; ++i)&#10;    sb.append(i == 0 ? &quot;&quot; : &quot;, &quot;).append($member.name[$i]);&#10;#elseif ($member.objectArray)&#10;.append($member.name == null ? &quot;null&quot; : Arrays.asList($member.name).toString());&#10;#elseif ($member.string)&#10;.append($member.accessor).append('\'');&#10;#else&#10;.append($member.accessor);&#10;#end&#10;#set ($i = $i + 1)&#10;#end&#10;#end&#10;#if ($members.size() == 0)&#10;sb.append(&quot;{}&quot;);&#10;#else&#10;sb.append('}');&#10;#end&#10;return sb.toString();&#10;}" />
+        </TemplateResource>
+      </list>
+    </option>
+  </component>
+</application>

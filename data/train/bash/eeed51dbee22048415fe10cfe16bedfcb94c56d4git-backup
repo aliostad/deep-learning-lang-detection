@@ -1,0 +1,71 @@
+#!/bin/bash
+
+: ${REPO_PATH:="$PWD"}
+: ${REPO_NAME:=$(basename "$REPO_PATH")}
+: ${BACKUP_DIR:="$HOME/Dropbox"}
+: ${BACKUP_FILENAME:="$BACKUP_DIR/$REPO_NAME.git.tar.gz.gpg"}
+
+TMP_DIR=$(mktemp -d -t git-backup.XXXXXX)
+trap "rm -rf \"$TMP_DIR\"" EXIT
+
+
+function clone-to-bare-repo() {
+  mkdir "$TMP_DIR/blank-template"
+  git clone --quiet --bare --template="$TMP_DIR/blank-template" -- \
+    "$REPO_PATH" "$TMP_DIR/$REPO_NAME.git"
+}
+
+function clean-bare-repo() {
+  ( cd -- "$TMP_DIR/$REPO_NAME.git" &&
+    git config --unset core.filemode &&
+    git remote rm origin &&
+    git --bare gc --quiet &&
+    git --bare repack -adq &&
+    git --bare prune-packed --quiet &&
+    git --bare pack-refs --all --prune &&
+    { rm info/refs
+      rmdir info
+      rm objects/info/packs
+      rmdir objects/info
+      rmdir refs/heads
+      rmdir refs/tags
+      rmdir rr-cache
+      true
+    } 2>/dev/null
+  ) ||
+    { echo 'Failed to clean bare repo.' >&2
+      return 1
+    }
+}
+
+function verify-bare-repo() {
+  { git clone --quiet -- "$TMP_DIR/$REPO_NAME.git" "$TMP_DIR/clone" &&
+    ( cd "$TMP_DIR/$REPO_NAME.git" &&
+      git log --pretty=format:"Backing up $REPO_NAME at %h (%s) from %cr:" \
+          HEAD^..
+    )
+  } ||
+    { echo "Failed to clone $REPO_NAME.git." >&2
+      return 1
+    }
+}
+
+function encrypt-to() {
+  filename="$1"
+
+  tmpfile="$TMP_DIR/gpg-out"
+  gpg --symmetric - > "$tmpfile" &&
+    mv -- "$tmpfile" "$filename"
+}
+
+function create-encrypted-backup() {
+  tar -czf - -C "$TMP_DIR" -- "$REPO_NAME.git" |
+    encrypt-to "$BACKUP_FILENAME"
+}
+
+
+clone-to-bare-repo &&
+  clean-bare-repo &&
+  verify-bare-repo &&
+  create-encrypted-backup &&
+  ls -l -- "$BACKUP_FILENAME"

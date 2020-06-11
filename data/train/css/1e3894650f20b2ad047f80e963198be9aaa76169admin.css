@@ -1,0 +1,45 @@
+/**
+ * Admin Control Panel Stylesheets
+ * 
+ * @version 1.0.0
+ * @since 1.0.0
+ */
+.related_service_comments_detected h4 {
+	margin-top: 0;
+}
+#related_service_comments_actions .saving.message {
+	padding: 0.25em;
+	display: none;
+}
+#related_service_comments_actions .saving.message.show {
+	display: inline;
+}
+.related_service_comments_detected li label {
+	display: block;
+	height: 32px;
+	background: #efefef;
+	border-radius: 4px;
+	padding: 0.5em 1em;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.related_service_comments_detected li img {
+	display: inline-block;
+	margin: 0 10px;
+	border: solid 1px #333;
+}
+.related_service_comments_detected li input {
+	vertical-align: top;
+	margin-top: 11px;
+}
+.related_service_comments_detected li label .title {
+	display: inline-block;
+	height: 32px;
+	line-height: 32px;
+	vertical-align: top;
+}
+#related_service_comments_actions {
+	padding: 10px 0 2px 0;
+	margin-bottom: 1em;
+}

@@ -1,0 +1,38 @@
+#write_postcard_view {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* Write Page */
+
+
+
+
+#write_postcard_view .controls {
+  text-align:center;
+}
+
+#write_postcard_view .controls button {
+  margin: 20px 10px 0 -5px;
+}
+
+#write_postcard_view div.text aside {
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  top: 40px;
+  left: 100%;
+  padding: 0 20px;
+  width: 270px;
+}
+
+#write_postcard_view div.mailto em {
+  display: block;
+
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  padding: 10px;
+  white-space: nowrap;
+}

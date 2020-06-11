@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<versiones>
+    <version numero="1.5">
+        <nombre>Cupcake</nombre>
+        <api>3</api>
+    </version>
+    <version numero="1.6">
+        <nombre>Donut</nombre>
+        <api>4</api>
+    </version>
+    <version numero="2.0">
+        <nombre>Éclair</nombre>
+        <api>5</api>
+    </version>
+    <version numero="2.2">
+        <nombre>Froyo</nombre>
+        <api>8</api>
+    </version>
+    <version numero="2.3">
+        <nombre>Gingerbread</nombre>
+        <api>9</api>
+    </version>
+    <version numero="3">
+        <nombre>Honeycomb</nombre>
+        <api>11</api>
+    </version>
+    <version numero="4.0">
+        <nombre>Ice Cream Sandwich</nombre>
+        <api>14</api>
+    </version>
+    <version numero="4.1">
+        <nombre>Jelly Bean</nombre>
+        <api>16</api>
+    </version>
+    <version numero="4.4">
+        <nombre>KitKat</nombre>
+        <api>19</api>
+    </version>
+    <version numero="5.0">
+        <nombre>Lollipop</nombre>
+        <api>21</api>
+    </version>
+    <version numero="6.0">
+        <nombre>Marshmallow</nombre>
+        <api>23</api>
+    </version>
+</versiones>

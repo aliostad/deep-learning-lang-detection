@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<fpm-instrumentation> 
+  <application-domain id="CorporateActionsHistorificationApplication"> 
+    <event-producer id="ScheduledEventProducer"/>  
+    <business-process id="HistoricsProcess"> 
+      <node id="ExceptionRollbackNode"/>  
+      <node id="HistorificationMessagesNode1"/>  
+      <node id="HistorificationMessagesNode"/> 
+    </business-process>  
+    <event-producer id="event"/>  
+    <business-process id="ErrorHandler"> 
+      <node id="LogCoacErrorHandler"/> 
+    </business-process>  
+    <business-process id="SecurituPortfolioHistorificationProcess"> 
+      <node id="SecurityPortfolioHistorificationNode"/> 
+    </business-process>  
+    <event-producer id="Events Historification Event"/>  
+    <event-producer id="MessageHistorification event"/>  
+    <event-producer id="SecurityPortfolio Historification Event"/>  
+    <business-process id="EventsHistorificationProcess"> 
+      <node id="EventsHistorificationNode1"/> 
+    </business-process>  
+    <business-process id="Message Historication Process"> 
+      <node id="HistorificationMessagesNode"/> 
+    </business-process>  
+    <business-process id="SecurityPortfolio Historification Process"> 
+      <node id="SecurityPortfolioHistorificationNode"/> 
+    </business-process>  
+    <event-producer id="Delete Logs Event"/>  
+    <business-process id="DeletingLogsProcess"> 
+      <node id="HistorificationLogsNode"/> 
+    </business-process> 
+  </application-domain> 
+</fpm-instrumentation>

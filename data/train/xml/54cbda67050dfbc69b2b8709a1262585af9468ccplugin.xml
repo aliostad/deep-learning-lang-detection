@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension id="obrArtifactRepository"  point="org.eclipse.equinox.p2.artifact.repository.artifactRepositories">
+        <filter suffix="repository.xml"/>
+        <factory class="p2obr.artifact.ObrArtifactRepositoryFactory"/>
+   </extension>
+
+   <extension point="org.eclipse.equinox.p2.metadata.repository.metadataRepositories">
+      <filter suffix="repository.xml" />
+      <factory class="p2obr.metadata.ObrMetadataRepositoryFactory" />
+   </extension>
+
+    
+
+</plugin>

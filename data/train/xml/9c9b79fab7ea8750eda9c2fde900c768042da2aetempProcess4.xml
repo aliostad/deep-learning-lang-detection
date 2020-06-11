@@ -1,0 +1,16 @@
+<save arq="../tempFiles/tempProcess4.xml" pos="">
+<process repr="env" tipo="seq" pos="">
+<process repr="terminicio" x="1105.0" y="1133.0" cor="ORANGE"></process>
+<process repr="env" tipo="seq" pos="">
+<process repr="env" tipo="paralelo" pos="0, 1">
+<process repr="conselem" qubits= "11" acao= "QGMAnalyzer" pos= "0" parametro= "X,X,X,X,X,X,X,X,X,X,Id" x="0.0" y="-36.0" cor="BLACK"></process>
+<process repr="conselem" qubits= "11" acao= "QGMAnalyzer" pos= "1" parametro= "X,X,X,X,X,X,X,X,X,X,Id" x="0.0" y="35.0" cor="BLACK"></process>
+</process>
+<process repr="env" tipo="paralelo" pos="0, 1">
+<process repr="conselem" qubits= "11" acao= "GroupMemory" pos= "0" parametro= "1024" x="0.0" y="-36.0" cor="BLACK"></process>
+<process repr="conselem" qubits= "11" acao= "GroupMemory" pos= "1" parametro= "1024" x="0.0" y="35.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="termfim" x="1591.0" y="1133.0" cor="BLACK"></process>
+</process>
+</save>

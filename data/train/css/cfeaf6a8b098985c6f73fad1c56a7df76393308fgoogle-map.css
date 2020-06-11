@@ -1,0 +1,46 @@
+/*==================  GOOGLE MAP  ======================*/
+.map {
+  position: absolute;
+  left: 50%;
+  width: 50%;
+}
+@media (max-width: 1199px) {
+  .map {
+    position: static;
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+.map_model {
+  height: 760px;
+}
+.map_model img {
+  max-width: none !important;
+}
+@media (max-width: 1199px) {
+  .map_model {
+    height: 450px;
+  }
+}
+@media (max-width: 767px) {
+  .map_model {
+    height: 250px;
+  }
+}
+@media (max-width: 479px) {
+  .map_model {
+    height: 200px;
+  }
+}
+.map_locations {
+  display: none;
+}
+.map .title {
+  line-height: 30px;
+  letter-spacing: normal;
+}
+.map .gm-wrapper div div {
+  background: transparent !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}

@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<!DOCTYPE platform SYSTEM "http://simgrid.gforge.inria.fr/simgrid.dtd">
+<platform version="3">
+  <!-- The com process (with some arguments) -->
+  <process host="Tremblay" function="comm">
+          <argument value="0"/> <!-- Host number -->
+  </process>
+  <!-- The worker processes (with mailbox to listen on as argument) -->
+  <process host="Tremblay" function="worker"></process>
+  <process host="Tremblay" function="worker"></process>
+  <process host="Jupiter" function="comm">
+    <argument value="1"/>
+  </process>
+  <process host="Jupiter" function="worker"></process>
+  <process host="Jupiter" function="worker"></process>
+  <process host="Fafard" function="comm">
+    <argument value="2"/>
+  </process>
+  <process host="Fafard" function="worker"></process>
+  <process host="Fafard" function="worker"></process>
+  <process host="Ginette" function="comm">
+    <argument value="3"/>
+  </process>
+  <process host="Ginette" function="worker"></process>
+  <process host="Ginette" function="worker"></process>
+  <process host="Bourassa" function="comm">
+    <argument value="4"/>
+  </process>
+  <process host="Bourassa" function="worker"></process>
+  <process host="Bourassa" function="worker"></process>
+
+</platform>

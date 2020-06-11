@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<error>
+    <msg-mapping>
+        <mapping code="400">您的密码有误，请核对后重新输入。</mapping>
+        <!-- 非授权设备-->
+        <mapping code="4011">无效授权</mapping>
+        <!-- 非授权设备-->
+        <mapping code="4012">无效授权</mapping>
+        <!-- 无效的授权码-->
+        <mapping code="4013">无效授权</mapping>
+        <mapping code="4014">已激活的授权码</mapping>
+        <mapping code="403">禁止移动登陆</mapping>
+        <!-- 设备未登记-->
+        <mapping code="4041">无效授权</mapping>
+        <mapping code="4042">您的账号不存在或错误，请核对后重新输入。（如当天注册代理人，请在注册第二天再登陆）</mapping>
+        <mapping code="4043">设备未激活</mapping>
+        <mapping code="406">设备未被识别</mapping>
+        <mapping code="500">服务错误</mapping>
+    </msg-mapping>
+
+    <code-mapping>
+        <mapping code="4011">401</mapping>
+        <mapping code="4012">401</mapping>
+        <mapping code="4013">401</mapping>
+        <mapping code="4015">4014</mapping>
+        <mapping code="4041">401</mapping>
+        <mapping code="4031">403</mapping>
+    </code-mapping>
+</error>

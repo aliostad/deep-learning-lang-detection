@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <component name="FileTypeManager" version="11">
+    <ignoreFiles list="CVS;SCCS;RCS;rcs;.DS_Store;.svn;.pyc;.pyo;*.pyc;*.pyo;.git;*.hprof;_svn;.hg;*.lib;*~;__pycache__;.bundle;*.rbc;vssver.scc;vssver2.scc;*.orig;" />
+    <extensionMap>
+      <mapping ext="phtml" type="FTL" />
+      <mapping pattern="blah" type="PLAIN_TEXT" />
+      <mapping pattern="asia" type="PLAIN_TEXT" />
+      <mapping pattern="test" type="PLAIN_TEXT" />
+      <mapping pattern="loghost" type="PLAIN_TEXT" />
+      <mapping pattern="dbservers" type="PLAIN_TEXT" />
+      <mapping pattern="authorized_keys2" type="PLAIN_TEXT" />
+      <mapping pattern="logrotate-munin-node" type="PLAIN_TEXT" />
+      <mapping pattern="cacti_conf" type="PLAIN_TEXT" />
+      <mapping pattern="developper" type="PLAIN_TEXT" />
+      <mapping pattern="KO" type="PLAIN_TEXT" />
+      <mapping pattern="ssh_config" type="PLAIN_TEXT" />
+      <mapping pattern="russia" type="PLAIN_TEXT" />
+      <mapping pattern="exploited-servers" type="PLAIN_TEXT" />
+      <mapping pattern="devboxes" type="PLAIN_TEXT" />
+      <mapping pattern="a" type="PLAIN_TEXT" />
+      <mapping pattern="logstash_upstart" type="PLAIN_TEXT" />
+      <mapping pattern="monitoring_servers" type="PLAIN_TEXT" />
+      <mapping pattern="aFileOnFS" type="PLAIN_TEXT" />
+      <mapping pattern="lbservers" type="PLAIN_TEXT" />
+      <mapping pattern="interfaces" type="PLAIN_TEXT" />
+      <mapping pattern="nginx_upstream_multi_" type="PLAIN_TEXT" />
+      <mapping pattern="OK" type="PLAIN_TEXT" />
+      <mapping pattern="loghosts" type="PLAIN_TEXT" />
+      <mapping pattern="upstart" type="PLAIN_TEXT" />
+      <mapping pattern=".htpasswd" type="PLAIN_TEXT" />
+      <mapping pattern="dev" type="PLAIN_TEXT" />
+      <mapping pattern="apache" type="PLAIN_TEXT" />
+      <mapping pattern="south-america" type="PLAIN_TEXT" />
+      <mapping pattern="keyfile" type="PLAIN_TEXT" />
+      <mapping pattern="hosts" type="PLAIN_TEXT" />
+      <mapping pattern="revaliases" type="PLAIN_TEXT" />
+      <mapping pattern="logrotate" type="PLAIN_TEXT" />
+      <mapping pattern="rsyslog_rule" type="PLAIN_TEXT" />
+      <mapping pattern="crmservers" type="PLAIN_TEXT" />
+      <mapping pattern="rsyslog" type="PLAIN_TEXT" />
+      <mapping pattern="zone_reclaim_mode" type="PLAIN_TEXT" />
+      <mapping pattern="toto" type="PLAIN_TEXT" />
+      <mapping pattern="iptables" type="PLAIN_TEXT" />
+      <mapping pattern="apt-preferences" type="PLAIN_TEXT" />
+      <mapping pattern="iptables_rules" type="PLAIN_TEXT" />
+      <mapping pattern="nginx-combined" type="PLAIN_TEXT" />
+      <mapping pattern="mongodb" type="PLAIN_TEXT" />
+      <mapping pattern="ccapi" type="PLAIN_TEXT" />
+      <mapping ext="step" type="PLAIN_TEXT" />
+      <mapping ext="crt" type="PLAIN_TEXT" />
+      <mapping ext="conf" type="PLAIN_TEXT" />
+      <mapping ext="crt;" type="PLAIN_TEXT" />
+      <mapping ext="pub" type="PLAIN_TEXT" />
+      <mapping ext="com" type="PLAIN_TEXT" />
+      <mapping pattern="redis-speed" type="Perl" />
+      <mapping pattern="redis_" type="Perl" />
+      <mapping pattern="byprojects_access" type="Perl" />
+      <mapping pattern="nginx_memory" type="Perl" />
+      <mapping pattern="nginx-cache-hit-rate" type="Perl" />
+      <mapping pattern="byprojects_bandwidth" type="Perl" />
+      <mapping pattern="byprojects_inout_bandwidth" type="Perl" />
+      <mapping pattern="sshd_config" type="Properties" />
+      <mapping pattern="buildfile" type="Ruby" />
+    </extensionMap>
+  </component>
+</application>
+

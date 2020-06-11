@@ -1,0 +1,67 @@
+#!/bin/bash
+
+# ================================================================
+# John Kerl | 2013-07-04
+#
+# Given words on stdin, formats Java toString() or toCSKV() methods.
+# Intended to be invoked from within a text editor as a dev accelerator,
+# e.g. using !}mktostring from within vim.
+#
+# Examples:
+#
+# $ echo attr fooze bflag component | mktostring
+#    @Override
+#    public String toString() {
+#        StringBuffer sb = new StringBuffer();
+#        sb.append("[attr=").append(attr);
+#        sb.append(",fooze=").append(fooze);
+#        sb.append(",bflag=").append(bflag);
+#        sb.append(",component=").append(component);
+#        sb.append("]");
+#        return sb.toString();
+#    }
+#
+# $ echo attr fooze bflag component | mktostring -c
+#    public String toCSKV() {
+#        StringBuffer sb = new StringBuffer();
+#        sb.append("attr=").append(attr);
+#        sb.append(",fooze=").append(fooze);
+#        sb.append(",bflag=").append(bflag);
+#        sb.append(",component=").append(component);
+#        return sb.toString();
+#    }
+# ================================================================
+
+doCSKV="false"
+if [ "$1" = "-c" ]; then
+	doCSKV="true"
+	shift
+fi
+
+indent="\t"
+if [ $doCSKV = "true" ]; then
+	echo -e "${indent}public String toCSKV() {"
+else
+	echo -e "${indent}@Override"
+	echo -e "${indent}public String toString() {"
+fi
+echo -e "${indent}${indent}StringBuffer sb = new StringBuffer();"
+i=0
+for name in $(cat "$@" | fmt -1); do
+	if [ $i -eq 0 ]; then
+		if [ $doCSKV = "true" ]; then
+			sep=''
+		else
+			sep='['
+		fi
+	else
+		sep=','
+	fi
+	echo -e "${indent}${indent}sb.append(\"${sep}${name}=\").append(${name});"
+	i=$[i+1]
+done
+if [ $doCSKV = "false" ]; then
+	echo -e "${indent}${indent}sb.append(\"]\");"
+fi
+echo -e "${indent}${indent}return sb.toString();"
+echo -e "${indent}}"

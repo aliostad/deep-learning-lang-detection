@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?compositeMetadataRepository version="1.0.0"?>
+<repository name="EMF Loophole Releases Repository"
+    type="org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository" version="1.0.0">
+  <properties size="1">
+    <property name="p2.timestamp" value="43"/>
+  </properties>
+  <children size="5">
+    <child location="2.5/target/repository"/>
+    <child location="2.6/target/repository"/>
+    <child location="2.7/target/repository"/>
+    <child location="2.8/target/repository"/>
+    <child location="2.9/target/repository"/>
+  </children>
+</repository>

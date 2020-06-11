@@ -1,0 +1,36 @@
+#!php
+<?php
+require_once dirname(__FILE__).'/setup.php';
+
+
+T()->plan( 17 );
+
+/* @var $facade RM_ReportValue_Facade */
+
+$facade->srvUsePermissions(0);
+T()->is(isNull($facade->loadObjectById(1)->getParent()),TRUE,'no parent');
+T()->is($facade->loadObjectByName('var23')->id(),$id23,'loadObjectByName');
+T()->is($facade->loadObjectByName('var23')->getParent()->id(),$caption[1]->id(),'getParent');
+T()->is($facade->loadObjectById($id23)->getVarname(),'var23','loadObjectById, getVarname');
+T()->is_exception(array($facade,'createValue'),'RM_Validator_Exception',array(qw2('varname>var23 caption_label>var23')),'Duplicate varname is prohibited');
+
+
+$i=0;
+
+foreach ($facade->getValuesList() as $item)
+{
+	T()->is($item,$caption[$captionMap[$i]],'getValuesList is sorted by ord_id');
+	$i++;
+}
+T()->is(isNull(iterFirst($facade->getValuesList($caption[3]->id()))),TRUE,'getValuesList');
+T()->is(iterFirst(($caption[1]->getChildren())),$facade->loadObjectByName('var24'),'getChildren');
+T()->is(array($caption[1]->hasChildren(),$caption[3]->hasChildren()),qw2('1 0'),'hasChildren');
+T()->is(count($facade->getCountableValuesList())/count($values),1,'getCountableValuesList');
+T()->is($facade->getMaxLevel(),2,'getMaxLevel');
+
+T()->is($facade->loadObjectByName('var22')->show(NULL,qw2('type>Web')),'&nbsp;','show(NULL)');
+T()->is($facade->loadObjectByName('var22')->show(0,qw2('type>Web')),0,'show(0)');
+T()->is($facade->loadObjectByName('var22')->show((object)qw2('var22>0.456'),qw2('type>Web')),45.6,'show(object)');
+T()->is($facade->loadObjectByName('var22')->show((object) array('var22' => NULL),qw2('type>Web')),'&nbsp;','show(object) with null value');
+
+?>

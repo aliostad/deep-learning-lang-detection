@@ -1,0 +1,46 @@
+
+
+.filters .dates label{
+	display: inline-block;
+	min-width: 42px;
+}
+
+.filters .filter {
+	margin:0 0 0.5em;
+}
+
+.grid {
+	width: 100%;
+	height: 450px;
+}
+
+.grid_data_loading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 450px;
+}
+
+/* Disable PDF export */
+.ui-grid-menu #menuitem-3,
+.ui-grid-menu #menuitem-4,
+.ui-grid-menu #menuitem-5 {
+	display: none;
+}
+
+
+.api_urls div {
+	margin-bottom: 1em;
+
+}
+.api_urls label {
+	display: block;
+	font-weight: bold;
+}
+.api_urls input {
+	width:75%;
+}
+.api_urls button {
+	width:20%;
+}

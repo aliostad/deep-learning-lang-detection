@@ -1,0 +1,258 @@
+/* basic style */
+.clearfix {clear:both;line-height:0; height:0}
+
+body{font-family:Verdana,sans-serif; font-size:14px; line-height:20px; color:#555555; background-color:#4a4e5d; margin:0}
+.mid {margin:0 auto; width:962px;}
+a img {border:none}
+#top{margin:20px 0px 0px 10px;!margin:10px 0px 0px 5px; position: relative; }
+#noreg{position: absolute; right: 0; top: 10px;z-index:1001;!padding-right:4px;}
+#signup a {
+	z-index:1001;
+}
+#maftop{margin-top:-42px;}
+#doing{margin-top:5px;float:left;!margin-left:-3px;!padding-bottom:4px;}
+#hasflash{
+	!margin-left:2px;
+	!padding-top:5px;
+	}
+#step1{
+	width:341px;
+	height:157px;
+	float:left;
+	background:url(../images/maf/step1.png) no-repeat;
+	!background:url(../images/maf/step1.gif) no-repeat;
+}
+#step1 table{
+	margin:25px 0 0 92px;
+}
+#step2{
+	float:left;
+	width:313px;
+	height:157px;
+	background:url(../images/maf/step2.png) no-repeat;
+	!background:url(../images/maf/step2.gif) no-repeat;
+}
+#step3{
+	float:left;
+	width:307px;
+	height:157px;
+	background:url(../images/maf/step3.png) no-repeat;
+	!background:url(../images/maf/step3.gif) no-repeat;
+}
+div .centermess_step2{
+	margin:54px 0 0 20px;
+	font-size:14px;
+}
+div .centermess_step3{
+	margin:64px 0 0 40px;	
+}
+div .centermess_step1{
+	margin:54px 0 0 94px;
+	line-height:33px;	
+	font-size:18px;
+	font-weight:blod;
+}
+div .username{
+	float:left; 
+	width:220px; 
+	height:32px; 
+	padding:10px; 
+	background:url(../images/maf/frame1.png) no-repeat;
+	
+}
+div .password{
+	float:left; 
+	width:125px; 
+	height:42px; 
+	padding:10px 5px; 
+	background:url(../images/maf/frame2.png) no-repeat;
+	
+}
+div .login{
+	float:left; 
+	width:96px; 
+	height:40px; 
+	padding:5px; 
+	background:url(../images/maf/login.png) no-repeat;	
+}
+.ui-dialog{
+	!border: 1px solid #e7ebf1;
+}
+#orange{
+	float:left;
+	background:#f16300;
+	height:37px;
+	width:936px;
+	margin:8px 0px 0px 10px;
+	!margin:-5px 0px 0px 5px;	
+	font-size:18px;
+	font-weight:bold;
+	color:#fff;
+	padding:15px 0 0 15px;	
+}
+#orange_header{
+	float:left;
+	background:#f16300;
+	height:38px;
+	width:951px;
+	margin:8px 0px 0px 10px;
+	!margin:4px 0px 0px 5px;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+	color:#fff;
+	padding-top:15px;
+}
+#flash{
+	float:left;
+	background:#fff;
+	height:432px;
+	width:951px;
+	margin-left:10px;
+	!margin-left:5px;
+	!margin-top:-5px;
+	text-align:center;
+}
+
+#signup a{
+	line-height:47px;
+}
+.messagecard{
+	margin-left:10px;
+	!margin-left:5px;
+	float:left;
+	width:951px;
+	height:829px;
+	background:url(../images/maf/write-bg.jpg) no-repeat;
+	
+}
+#write_message{
+	margin:48px 0 0 131px;
+	width: 696px;
+	height:594px;
+	background:#fff;
+	padding:10px 10px 10px 38px;
+	font-weight:bold;
+}
+
+div .review{
+	float:left; 
+	width:96px; 
+	height:40px; 
+	padding:5px; 
+	background:url(../images/maf/prew.png) no-repeat;	
+}
+
+.write_short{
+	float:left; 
+	width:158px; 
+	height:37px; 
+	padding:5px; 
+	background:url(../images/maf/form.jpg) no-repeat;	
+}
+.write_short input{
+	background:none;
+	border:0; 
+	padding:4px; 
+	width:140px;
+	font-size:14px;
+}
+.write_long{
+	float:left; 
+	width:521px; 
+	height:37px; 
+	padding:5px; 
+	background:url(../images/maf/form2.jpg) no-repeat;	
+}
+.write_long input{
+	background:none;
+	border:0; 
+	padding:4px; 
+	width:500px;
+	font-size:14px;
+}
+.write_text{
+	float:left; 
+	width:521px; 
+	height:99px; 
+	padding:5px; 
+	background:url(../images/maf/form3.jpg) no-repeat;	
+}
+.write_text textarea{
+	width: 500px; height: 70px; overflow-y:auto; float: left;background:none;border:0;
+}
+.login{
+	float:left; 
+	width:96px; 
+	height:40px; 
+	padding:5px; 
+	background:url(../images/maf/login.png) no-repeat;	
+}
+
+
+#table_write_message{
+	width:635px;
+}
+#table_write_message td{
+	height:35px;
+}
+#table_write_message .table_line{
+	height:10px;
+	background:url(../images/maf/line.png) no-repeat;	
+}
+#view_message{
+	margin:48px 0 0 131px;
+	width: 696px;
+	height:594px;	
+	padding:10px 10px 10px 38px;	
+}
+#cardmess{
+	float:left;
+	margin-top:117px;
+	width:278px;
+	font-weight:blod;
+}
+#cardhead{
+	float:left;
+	margin:190px 0 0 85px;	
+	width:254px;
+	height:129px;
+	line-height:33px;
+}
+#cardhead li{
+	list-style:none;
+}
+#cardcontrol{
+	float:left;
+	padding:112px 0 0 400px;	
+}
+#orange_box{	
+	background:#f16300;
+	width:100%;
+	height:30px;
+	padding-top:10px;
+	font-size:18px;
+	text-align:center;
+	color:#fff;	
+}
+#messagebox{
+	margin:0 auto;
+	width:283;
+	height:133px;
+	font-size:14px;
+	line-height:30px;	
+}
+div .endok{
+	margin-left:130px;
+	!margin-left:80px;
+	float:left; 
+	text-align:center;
+	width:96px; 
+	height:40px; 
+	padding:5px; 
+}
+.error {color:#834915;margin-top:5px;}
+.sendgetcardshout{
+	color:#0081C4;
+}
+}

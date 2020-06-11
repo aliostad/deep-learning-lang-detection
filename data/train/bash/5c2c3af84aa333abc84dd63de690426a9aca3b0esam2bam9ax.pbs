@@ -1,0 +1,15 @@
+#!/bin/bash
+
+cd /netshare1/home1/szzhongxin/proj1/hansun/mapping/9A
+samtools view -bS -o 9A.solid0734_20110529_PE_9A_Sample_9A_F3.bam 9A.solid0734_20110529_PE_9A_Sample_9A_F3.sam
+samtools  sort 9A.solid0734_20110529_PE_9A_Sample_9A_F3.bam 9A.solid0734_20110529_PE_9A_Sample_9A_F3.sorted
+samtools  flagstat 9A.solid0734_20110529_PE_9A_Sample_9A_F3.sorted.bam >9A.stat
+
+samtools view -bS -o 9A.solid0734_20110614_FRAG_9A_Sample_9A_F3.bam 9A.solid0734_20110614_FRAG_9A_Sample_9A_F3.sam
+samtools sort 9A.solid0734_20110614_FRAG_9A_Sample_9A_F3.bam 9A.solid0734_20110614_FRAG_9A_Sample_9A_F3.sorted
+samtools flagstat 9A.solid0734_20110614_FRAG_9A_Sample_9A_F3.sorted.bam >>9A.stat
+
+
+samtools merge 9A.bam 9A.solid0734_20110529_PE_9A_Sample_9A_F3.sorted.bam 9A.solid0734_20110614_FRAG_9A_Sample_9A_F3.sorted.bam 
+
+samtools index 9A.bam

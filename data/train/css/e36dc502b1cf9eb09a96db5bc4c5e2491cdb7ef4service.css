@@ -1,0 +1,24 @@
+.container{ width: 1200px; margin:0 auto; position: relative; padding-top: 42px; }
+.ur_here{ text-align: left; color: #666; font-size: 12px; padding: 20px 0; }
+a{ color: #666; }
+.service-support{ position: relative; width: 1200px; margin:0 auto; overflow: hidden; margin-bottom: 50px; }
+.service-slide{ width: 1200px; height: 310px; overflow: hidden; }
+.service-slide img{ width: 1200px; height: 310px; }
+.service-list h2{ padding-top: 17px; padding-bottom: 17px; font-size: 18px; border-bottom: 1px solid #d7d7d7; }
+.service-list ul{ margin-top: 20px;  }
+.service-list ul li{ float: left; width: 294px; height: 149px; background: #fafbfd; text-align: center; vertical-align: middle; margin-bottom: 8px; margin-right: 8px; }
+.service-list ul li a{ display: block; height: 149px; }
+.service-list ul li a:hover{ color: #ef3d39; }
+.service-list ul li img{ display: block; margin: 0 auto; padding-top: 37px; margin-bottom: 17px; }
+.service-list ul li span{ font-size: 14px; }
+.service-support .service-list .service-search{ width: 115px; height: 41px; border: solid 1px #999; border-right: solid 1px transparent; margin-top: 56px;}
+.service-support .service-list .service-submit{ width: 45px; height: 41px; background: #fff url(http://theme.xiaolajiao.com/themes/newxlj/images/bg_icon.png) no-repeat 0 -38px; vertical-align: top; border: 1px solid #999; margin-top: 56px;}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,69 @@
+.simpleShow-wrapper {
+    max-width: 1600px;
+    background: #f2f2f2;
+    border-radius: 6px;
+	margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+	font-size: 0;
+}
+.simpleShow-slide {
+    width: 100%;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}  
+.simpleShow-slide:first-child {
+    display: inline;
+}
+.simpleShow-slide img {
+    width: 100%;
+}
+.simpleShow-toLeft, 
+.simpleShow-toRight {
+    position: absolute;
+    z-index: 200;
+    top: 40%;
+    width: 30px;
+    height: 36px;
+    display: block;
+    background-color: #ff0000;
+}
+.simpleShow-toLeft {
+   left: 10px;
+    background-position: 0 -4px;
+}
+.simpleShow-toRight {
+    right: 10px;
+    background-position: -40px -4px;
+}
+.simpleShow-toLeft:hover,
+.simpleShow-toRight:hover {
+    background-color: #ff5300;
+}
+.simpleShow-radios {
+    position: absolute;
+    z-index: 200;
+    bottom: 10px;
+    left: 50px;
+}
+
+.simpleShow-radio {
+    display: block;
+    float: left;
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+    background-color: #ff0000;
+}
+.simpleShow-radio:hover {
+    background-color: #ff5300;
+}
+.simpleShow-radio.simpleShow-active {
+	background-color: #00ff00;
+}
+.simpleShow-zeroBg {
+    width: 100%;
+    height: auto;
+}

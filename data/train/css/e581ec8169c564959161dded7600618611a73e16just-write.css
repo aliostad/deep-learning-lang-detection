@@ -1,0 +1,48 @@
+body.just_write #wphead,body.just_write #adminmenu,body.just_write #footer,body.just_write #screen-meta,body.just_write #icon-edit {display:none;}
+body.just_write #wpwrap {border:0;background:#F6F6F6;}
+body.just_write #wpbody {background:#F6F6F6;}
+body.just_write #wpbody-content {background:#F6F6F6;border:0 none;padding:0;margin:0;-moz-border-radius:0;border-radius:0;}
+body.just_write #wpbody-content .wrap {margin:0 20px;}
+body.just_write #wpbody-content h2 {color:#666;text-transform:uppercase;font-size:12px;font-weight:bold;letter-spacing:5px;text-shadow:1px 1px 0 #FFF;}
+body.just_write #wpbody-content .metabox-holder {padding:0;}
+body.just_write #poststuff #titlewrap {border-bottom:3px double #CCC;}
+body.just_write #titlediv #title {background:#F6F6F6;border:0;font-size:2em;padding:0;line-height:2;margin:0;height:52px;}
+body.just_write #titlediv #title-prompt-text {border:0;font-size:2em;padding:0;line-height:2;text-shadow:1px 1px 0 #FFF;}
+body.just_write #normal-sortables, body.just_write #advanced-sortables,
+body.just_write #side-sortables div#tagsdiv-post_tag,
+body.just_write #side-sortables div#categorydiv,
+body.just_write #side-sortables div#authordiv,
+body.just_write #side-sortables div#commentstatusdiv,
+body.just_write #side-sortables div#postexcerpt,
+body.just_write #side-sortables div#trackbacksdiv,
+body.just_write #side-sortables div#postcustom,
+body.just_write #side-sortables div#slugdiv,
+body.just_write #side-sortables div#postimagediv,
+body.just_write #side-sortables div#pageparentdiv,
+body.just_write #side-sortables div#formatdiv {display:none !important;}
+body.just_write .has-right-sidebar #post-body {margin:0;float:none;}
+body.just_write .has-right-sidebar #post-body-content {margin:0;}
+body.just_write #side-sortables div#submitdiv {z-index:2000;width:100%;position:fixed;bottom:0;left:0;right:0;border:0;border-top:1px solid #DDD;margin:0;-moz-border-radius:0;border-radius:0;background:#EEE;}
+body.just_write #side-sortables div#submitdiv h3.hndle, body.just_write #side-sortables div#submitdiv .handlediv {display:none;}
+body.just_write .inner-sidebar {float:none;position:static;width:auto;}
+body.just_write .inner-sidebar #side-sortables {min-height:0;width:auto;}
+body.just_write .has-right-sidebar .inner-sidebar {display:inline;}
+body.just_write #side-sortables div#submitdiv #misc-publishing-actions div.misc-pub-section {width:32.33%;display:inline;position:relative;float:left;padding:0 0.5%;border:0;}
+body.just_write #side-sortables div#submitdiv #major-publishing-actions {-moz-border-radius:0;border-radius:0;}
+body.just_write #side-sortables div#submitdiv #minor-publishing-actions {position:absolute;right:150px;width:240px;bottom:0;}
+body.just_write #side-sortables div#submitdiv #minor-publishing-actions .preview {padding:3px 8px 2px !important;margin-top:1px;}
+body.just_write #side-sortables div#submitdiv #minor-publishing-actions input {padding:3px 8px !important;}
+body.just_write #save-post, body.just_write #minor-publishing .ajax-loading {float:right;}
+body.just_write #poststuff #media-buttons {float:right;}
+body.just_write #postdivrich {position:relative;margin:0 -20px;}
+body.just_write .wp_themeSkin tr.mceFirst td.mceToolbar {background:none;border:0 none;border-bottom:1px solid #DDD;padding-left:20px;height:30px;}
+body.just_write #editorcontainer {-moz-border-radius:0;border-radius:0;border:0 none;}
+body.just_write #editorcontainer #content {padding:20px;}
+body.just_write #poststuff #editor-toolbar {position:absolute;right:20px;top:4px;}
+body.just_write #poststuff #editor-toolbar .active {background:#FFF;border-bottom-color:#FFF;}
+body.just_write #quicktags {background:none;border:0 none;border-bottom:1px solid #DDD;margin:0;padding-left:20px;}
+body.just_write #quicktags #ed_toolbar {height:30px;padding-top:4px;}
+body.just_write #post-status-info {border:0 none;border-top:1px solid #DDD;-moz-border-radius:0;border-radius:0;}
+body.just_write #post-body .wp_themeSkin .mceStatusbar a.mceResize {display:none;}
+body.just_write .wp_themeSkin .mceIframeContainer {padding:14px;background:#FFF;}
+body.just_write #edit-slug-box {position:absolute;top:-30px;right:285px;}

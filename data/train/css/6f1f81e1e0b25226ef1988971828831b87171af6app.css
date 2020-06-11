@@ -1,0 +1,54 @@
+.clear {
+	clear: both;
+}
+
+form .required {
+    font-weight: bold;
+}
+form .required:after {
+    color: #e32;
+    content: ' *';
+    display:inline;
+}
+
+.chzn-container-multi .chzn-choices .search-field input {
+	width: auto !important;
+}
+
+body {
+    padding-top: 60px;
+}
+
+#load-state {
+    background-image: url('../img/load.gif');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    width: 43px;
+    height: 25px;
+    display: none;
+}
+
+.pagination .current a:empty {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(51, 51, 51, 0.7);
+    z-index: 2000;
+}
+
+.overlay h1{
+	color: white;
+	background-image: url('../img/load.gif');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    width: 320px;
+    height: 25px;
+    margin-left: 35%;
+    margin-top: 15%;
+}

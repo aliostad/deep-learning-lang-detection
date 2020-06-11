@@ -1,0 +1,50 @@
+#changelist table {
+    width: 100%;
+}
+
+#changelist table
+{
+    /*table-layout:fixed;*/
+}
+
+#changelist table tbody td, #changelist table tbody th {
+	word-wrap: break-word;
+	word-break: break-all;
+	white-space: normal;
+	/*overflow: auto;*/ /*hidden*/
+}
+
+#changelist table tbody th {
+    white-space: normal;
+}
+
+/* to let below css width take effort, should remove talbe-layout fix property */
+body.model-paper #changelist table tbody tr td:nth-child(1) {
+    background-color: green;
+}
+
+body.model-paper #changelist table tbody tr th:nth-child(2) {
+    width:5%!important;
+}
+
+body.model-paper #changelist table tbody tr td:nth-child(3) {
+    width:2px!important;
+}
+
+body.model-paper #changelist table tbody tr td:nth-child(4) {
+    width:5%!important;
+}
+
+/* words*/
+
+body.model-word #changelist table tbody tr td:nth-child(1) {
+    background-color: red;
+}
+
+body.model-word #changelist table tbody tr th:nth-child(2) {
+    width:50%!important;
+}
+
+body.model-word #changelist table tbody tr td:nth-child(3) {
+    width:20px!important;
+}

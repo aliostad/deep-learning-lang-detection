@@ -1,0 +1,17 @@
+#!/bin/bash
+APP_CODE=kv_fleet
+CODE_REPO=/home/jamshi/workspace/beta/orchid_addons
+HOME=$CODE_REPO/$APP_CODE
+
+echo "enter model name"
+read model
+
+echo "enter user access as 1,1,1,1"
+read user
+
+echo "enter manager access as 1,1,1,1"
+read manager
+
+echo "" >> $HOME/security/ir.model.access.csv
+echo "$model$1_access_right_user,$model$1_access_right,model_$1$model,fleet.group_fleet_user,$user" >> $HOME/security/ir.model.access.csv
+echo "$model$1_access_right_manager,$model$1_access_right,model_$1$model,fleet.group_fleet_manager,$manager" >> $HOME/security/ir.model.access.csv

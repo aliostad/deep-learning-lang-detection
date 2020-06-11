@@ -1,0 +1,41 @@
+/**
+ * @file
+ * Panels Styling
+ */
+
+/* Vojo Right sidebar layout */
+#vojo-content .panel-content-area {
+  width: 770px;
+  float: left;
+  margin-left: 0;
+  padding-bottom: 1px;
+}
+
+/* Sharing links */
+
+.panel-sidebar .pane-service-links-service-links {
+  border-left: 0px;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 1em;
+}
+
+.panel-sidebar .pane-service-links-service-links ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.panel-sidebar .pane-service-links-service-links ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+.panel-sidebar .pane-service-links-service-links ul li a img {
+  vertical-align: middle;
+}
+
+/* Key Features */
+.pane-key-features a:hover {
+  color: #333;
+  text-decoration: none;
+}

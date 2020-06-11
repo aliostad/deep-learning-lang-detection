@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Invoke Examples";
+}
+
+<h2>Invoke Examples</h2>
+<div class="row">
+    <div class="col-md-12">
+        @await Component.InvokeAsync("InvokeExample1")
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        @await Component.InvokeAsync("InvokeExample2")
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        @await Component.InvokeAsync("InvokeExample4", new { id = 4 })
+    </div>
+</div>
+
+
+<h3>Update from 1.1</h3>
+<div class="row">
+    <div class="col-md-12">
+        <vc:invoke-example4 id="4" is-new="true"></vc:invoke-example4>
+    </div>
+</div>

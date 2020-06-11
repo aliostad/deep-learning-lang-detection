@@ -1,0 +1,272 @@
+.squid-api-admin-widgets-modal-form .modal-body form .error input {
+    border: 2px solid #e74c3c;
+}
+
+.squid-api-admin-widgets-modal-form form ul {
+	padding-left: 10px;
+	display: inline-block;
+}
+
+.squid-api-admin-widgets-modal-form form ul li {
+	float: left;
+	list-style-type: none;
+	min-width: 200px;
+	display: block;
+}
+
+.squid-api-admin-widgets-modal-form form ul li label {
+	padding-left: 10px;
+}
+
+.squid-api-model-management fieldset > div input {
+	margin-bottom: 10px;
+}
+
+.squid-api-model-management input:focus::-webkit-input-placeholder {
+	color:transparent;
+}
+
+.squid-api-model-management input:focus::-moz-placeholder {
+	color:transparent;
+}
+
+.squid-api-model-management input:focus::-moz-placeholder {
+	color:transparent;
+}
+
+.squid-api-model-management input:focus::-ms-input-placeholder {
+	color:transparent;
+}
+
+.squid-api-admin-widgets-modal-form .modal-header {
+    color: #fff;
+    min-width: 135px;
+}
+
+.squid-api-model-widget-popup .create {
+	display: inline-block;
+	float: right;
+	margin-bottom: 15px;
+}
+
+.squid-api-model-widget-popup .no-data {
+    float: left;
+    margin: 20px 0px 0px 37%;
+}
+
+.squid-api-model-management-footer {
+	border-top: 1px solid #e5e5e5;
+	padding: 15px;
+    text-align: right;
+}
+
+.squid-api-model-management-footer .btn-return-collection {
+    float: left;
+}
+
+.squid-api-admin-widgets-modal-form .modal-footer a.ok {
+	position: relative;
+	vertical-align: top;
+	color: #777;
+	text-align: center;
+	background: #ecf0f1;
+	border: 0;
+	border-bottom: 2px solid #bdc3c7;
+	cursor: pointer;
+	-webkit-box-shadow: inset 0 -2px #bdc3c7;
+	box-shadow: inset 0 -2px #bdc3c7;
+}
+
+.squid-api-admin-widgets-modal-form .modal-footer a.cancel {
+	border: 1px solid #e5e5e5;
+  	color: #777;
+}
+
+.squid-api-admin-widgets-modal-form .modal-body {
+    width: 100%;
+    display: inline-block;
+}
+
+.squid-api-admin-widgets-modal-form .modal-body label {
+	font-weight: normal;
+  	margin-top: 10px;
+}
+
+.squid-api-model-management .invalid-expression {
+	box-shadow: 0px 0px 6px 0px #e74c3c;
+}
+
+.squid-api-model-management .invalid-expression:focus, .squid-api-model-management .valid-expression:focus {
+	border: none;
+}
+
+.squid-api-model-management .valid-expression {
+	box-shadow: 0px 0px 6px 0px #27ae60;
+}
+
+.squid-api-model-management fieldset div.dbUrl div div {
+	font-size: 11px;
+	float: right;
+	background: #f3f3f3;
+	border-radius: 10px;
+}
+
+.squid-api-suggestion-dialog {
+	position: absolute;
+	overflow-y: scroll;
+	background-color: #ffffff;
+	max-height: 210px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	cursor: pointer;
+	border: 1px solid #f3f3f3;
+	padding: 5px;
+	opacity: 0.95;
+	z-index: 5000;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.squid-api-suggestion-dialog ul {
+	padding-left: 0px;
+}
+
+.squid-api-suggestion-dialog ul li {
+	list-style-type: none;
+	padding: 0px 10px;
+	cursor: pointer;
+	margin: 2px;
+}
+
+.squid-api-suggestion-dialog ul li:hover {
+	background: #777;
+	color: #fff;
+}
+
+.squid-api-suggestion-dialog:focus {
+	outline: 0;
+}
+
+.squid-api-suggestion-dialog .ui-dialog-titlebar {
+	float: right;
+	position: relative;
+}
+
+.squid-api-suggestion-dialog .ui-dialog-titlebar-close {
+	position: fixed;
+	background-color: #fff;
+	border: 1px solid #f2f2f2;
+	border-radius: 5px;
+	margin: 5px 0px 0px -55px;
+}
+
+.squid-api-suggestion-dialog .ui-dialog-titlebar-close:hover {
+	background-color: #4d4d4d;
+	color: #ffffff;
+}
+
+.squid-api-admin-widgets-modal-form #btn-check {
+    margin: 15px 0px 0px 0px;
+}
+
+.squid-api-admin-widgets-modal-form #btn-check .glyphicon {
+    position: relative;
+    top: 2px;
+    left: -5px;
+}
+
+.squid-api-admin-widgets-modal-form #btn-check.in-progress .glyphicon {
+    -moz-animation: spin .7s infinite linear;
+    -webkit-animation: spin .7s infinite linear;
+}
+
+.squid-api-pre-suggestions li:before {
+	font-family: FontAwesome;
+	margin-right: 15px;
+	padding: 3px;
+	color: #fff;
+	border-radius: 8px;
+}
+.squid-api-pre-suggestions .TABLE:before {
+	content: "\f0ce";
+}
+
+.squid-api-pre-suggestions .COLUMN:before {
+	content: "\f198";
+}
+
+.squid-api-pre-suggestions .DOMAIN:before {
+	content: "\f1c0";
+}
+
+.squid-api-pre-suggestions .valueType {
+	font-size: 11px;
+	padding-left: 5px;
+}
+
+.squid-api-pre-suggestions .table:before {
+	background: #2c3e50;
+}
+
+.squid-api-pre-suggestions .date:before {
+	background: hotpink;
+}
+
+.squid-api-pre-suggestions .domain:before {
+	background: #c0392b;
+}
+
+.squid-api-pre-suggestions .string:before {
+	background: rgb(255,46,95);
+}
+
+.squid-api-pre-suggestions .other:before {
+	background: deepskyblue;
+}
+
+.squid-api-pre-suggestions .numeric:before {
+	background: black;
+}
+
+.squid-api-pre-suggestions .condition:before {
+	background: darkgoldenrod;
+}
+
+.squid-api-pre-suggestions .DOMAIN:before {
+	content: "\f1c0";
+}
+
+.squid-api-pre-suggestions .FORMULA:before {
+    content:  "\f1b2";
+}
+
+.squid-api-pre-suggestions .RELATION:before {
+    content:  "\f061";
+}
+
+.squid-api-pre-suggestions .view:before {
+    background: #7a8799;
+}
+
+.squid-api-pre-suggestions .metric:before {
+    background: grey;
+}
+
+.object-id {
+	padding-top: 5px;
+}
+
+.object-id label {
+	color: #aaa;
+}
+
+div.object-id input {
+	color: #bbb;
+	width: 100%;
+}
+
+div.object-id input[disabled] {
+	color: #bbb;
+	border : none;
+	width: 100%;
+}

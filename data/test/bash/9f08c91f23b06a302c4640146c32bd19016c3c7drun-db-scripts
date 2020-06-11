@@ -1,0 +1,58 @@
+#!/bin/bash
+
+set -e
+set -o pipefail
+
+shift $(($OPTIND - 1))
+
+function main()
+{
+	local directory=$1
+
+	find $directory -type d | sort |
+		while read dirname ;
+	do
+		exec_module_scripts $dirname
+	done
+}
+
+function invoke_psql()
+{
+	psql --no-psqlrc --set ON_ERROR_STOP=1 "$@"
+}
+
+function runsqlscript()
+{
+	local filepath=$1
+
+	invoke_psql $DATABASE --file $filepath
+	# --single-transaction
+}
+
+function runsql()
+{
+	local command="$@"
+
+	invoke_psql --command "$command"
+}
+
+function exec_module_scripts()
+{
+	local module_path=$1
+
+	echo $module_path 
+
+	if [[ -f $module_path/pre-install ]]
+	then
+		bash $module_path/pre-install
+	fi
+
+	scripts=$(find $module_path -maxdepth 1 -type f -name '*.sql' | sort)
+
+	for script in $scripts; do
+		echo $script
+		runsqlscript $script
+	done
+}
+
+main "$@"

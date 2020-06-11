@@ -1,0 +1,74 @@
+/* СТРАНИЦА myStyle-auction-lk-full.css ФАЙЛЫ С ЭТИМИ СТИЛЯМИ: auction_poisk6, auction_poisk8, auction_poisk9 */
+
+	.divBaner {
+		height: 100px;
+		padding: 10px 0 10px 10px;
+		margin: 0 0 10px 0;
+		cursor: pointer;
+		position: relative;
+	}
+
+	.divBaner:hover {
+		background: #f1f2f2;
+		border-radius: 8px;
+	}
+
+	.banerFoto {
+		float: left;
+		height: 100px;
+		width: 100px;
+	}
+
+	.banerInfo {
+		margin: 0 0 0 120px;
+	}
+
+	.banerName {
+		display: block;
+		color: #a7a9ac;
+		font-size: 12px;
+		margin: 0 0 5px 0;
+	}
+
+	.banerName a {
+		color: #0071bc;
+		font-size: 14px;
+		text-decoration: underline;
+	}
+
+	.banerOpi {
+		display: block;
+		color: #58595b;
+		font-size: 12px;
+		line-height: 15px;
+	}
+
+	.bblack {
+		color: #000;
+	}
+
+	.banerOpi a {
+		color: #0071bc;
+		font-size: 12px;
+		text-decoration: underline;
+	}
+
+	.divBaner .write {
+		background: none;
+		float: right;
+		width: 16px;
+		height: 16px;
+		cursor: pointer;
+		margin: 40px 15px 0 0;
+	}
+
+	.divBaner:hover .write {
+		background: url(/img/actButton/write.png);
+		background-position: 0 16px;
+		float: right;
+		width: 16px;
+		height: 16px;
+		cursor: pointer;
+	}
+
+/* ----------------- END ---------------------*/

@@ -1,0 +1,94 @@
+﻿.fontSegoeUISemilight
+{
+    font-family: SegoeUISemilight, 'Segoe UI Semilight';
+}
+
+.fontSegoeUISemibold
+{
+    font-family: SegoeUISemibold, 'Segoe UI Semibold';
+}
+
+.messageDarkBackground {
+    width: 100%;
+    height: 100%;
+    opacity: 0.45;
+    position: absolute;
+    top: 0px;
+    background: #000;
+    z-index: 1006;
+}
+
+.messageContainer { 
+    color: #EC715A; 
+    font-size: 26pt; 
+    line-height: 30pt; 
+    background: #faf8ea;
+    opacity: 1; 
+    position: fixed;
+    top: 40.5%; 
+    width:100%;
+    z-index: 1007;
+}
+    .messageContainer .messageContent {
+        width: 52%;
+        height: 100%;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        .messageContainer .messageContent .messageTitle {
+            margin-top: 31px;
+            font-size: 26.67px;
+            color: #ec715a;
+        }
+
+        .messageContainer .messageContent .messageText {
+            margin-top: 22px;
+            font-size: 14.67px;
+            line-height: 20px;
+            color: #4c4a43;
+            
+        }
+
+        .messageContainer .messageContent .messageLink {
+            font-size: 14.67px;
+            line-height: 20px;
+        }
+
+        .messageContainer .messageContent .messageButtons {
+            margin-top: 20px;
+            margin-bottom: 28px;
+            float: right;
+        }
+            
+            .messageContainer .messageContent .messageButtons .msgButtonRegular {
+                width: 80px;
+                color: #ada896;
+                border: solid;
+                border-color: #ada896;
+                border-width: 2px;
+                font-size: 14.67px;
+                margin-left: 21px;
+            }
+
+            .messageContainer .messageContent .messageButtons .msgButtonRegular:hover {
+                background: #ec715a;
+                color: #faf8ea;
+                border-color: #f28c79;
+            }
+
+            .messageContainer .messageContent .messageButtons .msgButtonWide {
+                width: 96px;
+                color: #ada896;
+                border: solid;
+                border-color: #ada896;
+                border-width: 2px;
+                font-size: 14.67px;
+                margin-left: 21px;
+            }
+
+            .messageContainer .messageContent .messageButtons .msgButtonWide:hover {
+                background: #ec715a;
+                color: #faf8ea;
+                border-color: #f28c79;
+            }

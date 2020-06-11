@@ -1,0 +1,62 @@
+
+#tabsBar {
+    height: 45px;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    border-bottom: 2px solid #356C28;
+    -webkit-border-radius: 0px;
+    overflow-x: hidden;
+}
+
+    #tabsBar li {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    #tabsBar .rightButton {
+        float: right;
+        margin: 0px;
+        margin-right: 5px;
+    }
+
+#tabsBar #saveMenu, #tabsBar #loadMenu{
+    -webkit-transition: all .3s ease;
+    background-color: rgba(0, 0, 0, 0.25);
+    float: right;
+    width: 0;
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+#tabsBar #saveMenu.visible{
+    /* Hard-coded because we can't animate calculated values, unfo. */
+    width: 268px;
+}
+#tabsBar #loadMenu.visible{
+    width: 168px; 
+}
+
+    #tabsBar #saveMenu .rightButton, #tabsBar #loadMenu .rightButton{
+        margin: 0 2px;
+        border-radius: 0px;
+        white-space: nowrap;
+    }
+    #tabsBar #saveMenu .rightButton:first-of-type, #tabsBar #loadMenu .rightButton:first-of-type{
+    }
+    #tabsBar #saveMenu .rightButton:last-of-type, #tabsBar #loadMenu .rightButton:last-of-type{
+        margin-right: 0;
+    }
+
+#tabsBar #saveMenu_button, #tabsBar #loadMenu_button{
+    border-radius: 0px 4px 4px 0px;
+    border-left: rgb(192, 192, 192) 2px solid;
+    padding-right: 0.4em;
+    padding-left: 0.4em;
+}
+
+#tabsBar #save, #tabsBar #load{
+    border-radius: 4px 0px 0px 4px;
+    margin-right: 0;
+}

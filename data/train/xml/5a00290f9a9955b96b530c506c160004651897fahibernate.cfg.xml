@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+ <!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<mapping class="com.tagcmd.timesheets.pojo.ActivityType"></mapping>
+		<mapping class="com.tagcmd.timesheets.pojo.Activity"></mapping>
+		<mapping class="com.tagcmd.timesheets.pojo.Client"></mapping>
+		<mapping class="com.tagcmd.timesheets.pojo.Module"></mapping>
+		<mapping class="com.tagcmd.timesheets.pojo.Status"></mapping>
+		<mapping class="com.tagcmd.timesheets.pojo.Person"></mapping>
+		<mapping class="com.tagcmd.timesheets.pojo.Worklog"></mapping>
+	</session-factory>
+</hibernate-configuration>

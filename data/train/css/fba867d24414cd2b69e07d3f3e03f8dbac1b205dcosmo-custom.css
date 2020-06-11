@@ -1,0 +1,43 @@
+.nav.no-height {
+    height: 0px;
+}
+
+.nav-pills>div {
+    float: left;
+}
+
+.nav-pills > li > a {
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    /*color: #007fff;*/
+    /*background-color: #efeff5;*/
+}
+.nav-pills > li > a:focus {
+    /*background-color: #FFFFFF;*/
+}
+
+.nav > .active > a, .nav > .active > a > div, .nav > .active > a:hover, .nav > .active > a:hover > div {
+    outline:none;
+}
+
+.nav-pills > .ui-state-active > a, .nav-pills > .ui-state-active > a:hover, .nav-pills > .ui-state-active > a:focus {
+    /*color: #ffffff;*/
+    /*background-color: #007fff;*/
+}
+
+.nav-pills > .active > a > div, .nav-pills > .active > a:hover > div {
+    /*color: #ffffff;*/
+    /*background-color: #007fff;*/
+}
+
+.nav-pills > li > a:hover, .nav-pills > li > a:hover > div  {
+    /*background-color: royalblue;*/
+    /*background-color: #efeff7;*/
+    /*color: white;*/
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: inherit;
+    background-image: inherit;
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="__Global__"><apiName>__Global__</apiName><apiDetail/><apiClassifier id="globalClassifier:Main"><apiName>Main</apiName><shortdesc/><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.display:Sprite</apiBaseClassifier></apiClassifierDef></apiClassifierDetail><apiConstructor id="Main:Main"><apiName>Main</apiName><shortdesc>
+		 constructor
+		 </shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
+		 constructor
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="Main:init"><apiName>init</apiName><shortdesc>
+		 This is the init function.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 This is the init function.
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier></apiPackage>

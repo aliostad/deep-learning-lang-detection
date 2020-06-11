@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Type_0xc2 messageNo="0" messageSequenceNo="0"
+	messageSerialNo="0" xmlns="http://www.example.org/msg_0xc2" xmlns:u="http://www.example.org/UType"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/msg_0xc2 ../xsd/msg_0xc2.xsd ">
+	<MessageTypes>
+		<Message>
+			<MessageType>0</MessageType>
+			<MessageSerialNo>0</MessageSerialNo>
+		</Message>
+		<Message>
+			<MessageType>0</MessageType>
+			<MessageSerialNo>0</MessageSerialNo>
+		</Message>
+	</MessageTypes>
+</Type_0xc2>

@@ -1,0 +1,39 @@
+/**** Styles for node view ****/
+
+
+div.view-node-view {
+	width: 448px;
+}
+
+div.view-node-view .views-row a {
+	text-decoration: none;
+	color: #880022;
+	font-weight: bold;
+	font-size: 8pt;
+}
+
+div.view-node-view .views-row {
+	font-size: 8pt;
+	line-height: 1.25em;	
+	margin-bottom: -8px;
+	margin-top: -2px;
+}
+
+div.view-node-view .views-row ul.links.inline {
+	visibility: hidden;
+}
+
+div.view-node-view .more-link {
+	margin-top: 10px;
+}
+
+div.view-node-view .more-link a {
+	font-size:8pt;
+	text-decoration:none;
+	font-weight:bold;
+	color:#880022;
+} 
+
+
+/**** End of Styles for node view ****/
+

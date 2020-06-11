@@ -1,0 +1,20 @@
+.trade-cart-ajax-load a span {
+    display: none !important;
+}
+
+.trade-cart-ajax-load a span.trade-process {
+    display: block !important;
+    height: 20px;
+    margin-top: 10px;
+    width: 20px;
+    background: transparent url(../images/progress.gif) 0 center repeat-x;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.trade-cart-block-inner a {
+    background: url(../images/cart-blue.png) 0 center no-repeat;
+}

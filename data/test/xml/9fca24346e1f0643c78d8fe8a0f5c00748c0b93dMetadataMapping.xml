@@ -1,0 +1,38 @@
+﻿<MetadataMappings>
+  <MetadataMapping serviceObjectId="1010">
+    <ParentalRating>
+      <Mapping from="NC-17" to="X"/>
+    </ParentalRating>
+    <Genre>
+      <Mapping from="Action" to="Action"/>
+      <Mapping from="Food" to="Food"/>
+    </Genre>
+    <Category>
+      <Mapping from="Movies/Comedy" to="Comedy"/>
+      <Mapping from="Movies/Romance" to="Romance"/>
+    </Category>
+  </MetadataMapping>
+  <MetadataMapping serviceObjectId="1020">
+    <Genre>
+      <Mapping from="Action" to="Action"/>
+      <Mapping from="Food" to="Food"/>
+    </Genre>
+    <Category>
+      <Mapping from="Movies/Comedy" to="Comedy"/>
+      <Mapping from="Movies/Romance" to="Romance"/>
+    </Category>
+  </MetadataMapping>
+  <MetadataMapping serviceObjectId="1030">
+    <ParentalRating>
+      <Mapping from="NC-17" to="X"/>
+    </ParentalRating>
+    <Genre>
+      <Mapping from="Action" to="Action"/>
+      <Mapping from="Food" to="Food"/>
+    </Genre>
+    <Category>
+      <Mapping from="Movies/Comedy" to="Comedy"/>
+      <Mapping from="Movies/Romance" to="Romance"/>
+    </Category>
+  </MetadataMapping>
+</MetadataMappings>

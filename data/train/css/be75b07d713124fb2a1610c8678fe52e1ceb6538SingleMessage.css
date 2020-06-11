@@ -1,0 +1,45 @@
+.mobilePlatform .oneui .idxMessageIcon{
+	margin-left: 10px;
+}
+.mobilePlatform .oneui .idxMessageAction{
+	margin: 7px 0 9px 5px;
+}
+.mobilePlatform .oneui .idxMessageCloseIcon{
+	float: right;
+	margin: 8px 10px 8px 15px;
+}
+.mobilePlatform .oneui .idxMessageTopInfo,
+.mobilePlatform .oneui .idxMessageBottomInfo{
+	float:right;
+}
+.mobilePlatform .oneui .idxMessageFakeContent .idxMessageId{
+	display:none;
+}
+.mobilePlatform .oneui .idxMessageSplitter{
+	margin:0 10px 10px;
+	height: 5px;
+}
+.mobilePlatform .oneui .idxMessageBody{
+	margin: 0 10px;
+}
+.mobilePlatform .oneui .idxMessageBody .idxMessageId{
+	margin: 0 5px 0 0;
+	font-style: italic;
+	font-weight: bold;
+}
+.mobilePlatform .oneui .idxMessageCollapsed .idxMessageBody .idxMessageId{
+	display:none;
+}
+.mobilePlatform .oneui .idxMessageCollapsed .idxMessageBottomInfo{
+	display:none;
+}
+.mobilePlatform .oneui .idxMessageBottomInfo{
+	margin: 5px 0 0 0;
+}
+.mobilePlatform .oneui .idxMessageTimestamp {
+	margin: 8px 0 8px 15px;
+}
+.mobilePlatform .oneui .idxMessageRefresh {
+	margin: 8px 10px 8px 5px;
+	padding:0;
+}

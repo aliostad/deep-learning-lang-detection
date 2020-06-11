@@ -1,0 +1,47 @@
+.deepin-message-wrap{
+    border:1px solid;
+}
+
+
+.deepin-message-box{
+    width:300px;
+}
+.deepin-message-menu div{
+    float:right;
+}
+
+.deepin-message-chat-list{
+    height:200px;
+    width:280px;
+    border:1px solid;
+    margin:15px 0 0 0;
+    overflow:scroll;
+}
+.deepin-message-chat-list > div{
+    width:70%;
+}
+.deepin-message-chat-send{
+    float:right;
+    text-align:right;
+    margin:auto 5px auto auto;
+}
+.deepin-message-chat-recevie{
+    float:left;
+    margin:auto auto auto 5px;
+}
+
+.deepin-message-history-bt{
+    float:right;
+}
+.deepin-message-sendbox{
+    height:100px;
+    width:280px;
+}
+
+
+.deepin-message-send-btn-l{
+    float:left;
+}
+.deepin-message-send-btn-r{
+    float:right;
+}

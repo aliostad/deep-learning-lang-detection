@@ -1,0 +1,78 @@
+#services {
+  margin-left: -20px;
+  margin-top: 20px;
+}
+article.service {
+  position: relative;
+  float: left;
+  width: 278px;
+  height: 200px;
+  background-color: #FFFFFF;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border: 1px solid #497FAF;
+}
+
+article.service img {
+  margin-right: 5px;
+}
+
+article.service a.btn {
+  position: absolute;
+  bottom: -15px;
+  right: -10px;
+}
+
+article.service h1 {
+  font-size: 160%;
+  font-weight: 200;
+  color: #F99704;
+  margin:0;
+  margin-left: 110px;  
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+article.service p {
+  color: #237DC1;
+  margin-left: 110px;
+  font-size: 90%;
+  line-height: 15px;
+}
+
+.yellow {
+  color: #F99704; 
+}
+
+@media screen and (max-width: 940px) {
+  article.service {
+    width: 230px;
+    height: 230px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+  article.service .pull-left {
+    width: 20%;
+  }
+  article.service p, article.service h1 {
+    margin-left: 60px;
+  }  
+}
+@media screen and (max-width: 520px) {
+  #services article.service {
+    width: auto;
+    height: auto;
+  }
+  #services article.service img {
+    display:none;
+  }  
+  #services article.service h1, #services article.service p {
+    margin-left: 0;
+  }
+  article.service a.btn {
+    bottom: -25px;
+    right: 10px;
+  }
+}

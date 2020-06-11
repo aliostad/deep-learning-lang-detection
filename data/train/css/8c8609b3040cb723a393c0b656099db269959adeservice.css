@@ -1,0 +1,75 @@
+table.fixed {
+  table-layout: fixed;
+}
+
+th.expand, td.expand {
+  width: 100%;
+}
+
+th.nowrap, td.nowrap {
+  white-space: nowrap;
+}
+
+th.right, td.right {
+  text-align: right;
+}
+
+.io_key, .io_type {
+  font-size: 0.9em;
+}
+
+.io_type:before {
+  content: ':';
+}
+
+.io_key {
+  font-weight: bold;
+}
+
+.io_type {
+  color: #aaa;
+  margin-right: 12px;
+}
+
+.model h3, .model h4 {
+  display: inline-block;
+}
+
+.model h4 {
+  color: #999;
+  margin-left: 22px;
+}
+
+.led input, .led button {
+  height: 30px;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.model .input-prepend, .model input {
+  margin-bottom: 0px;
+}
+
+.color-preview {
+  height: 1.2em !important;
+  width: 1.2em !important;
+  margin-bottom: 0px !important;
+}
+
+.dropdown-toggle {
+  height: 30px;
+}
+
+#rules .compare {
+  width: 50px;
+}
+
+#rules .value-container {
+  display: inline-block;
+}
+
+#rules .value {
+  height: 30px;
+}

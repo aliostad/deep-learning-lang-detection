@@ -1,0 +1,88 @@
+@font-face {
+  font-family: KBKinderWriteBold;
+  src: url('KBKinderWriteBold.ttf') format('truetype');
+}
+body {
+	background-image: url(../images/crowdstory/bg.jpg);
+}
+div.lightbg {
+	background-color: #E8D7BB;
+}
+div.darkbg {
+	background-color: #665d5e;
+}
+
+div.bg {
+	/*background-color: hsla(0, 50%, 97%, 0.95);*/
+	background-image: url(../images/paper_fibers.png);
+}
+
+.brand {
+	background-image: url(../images/crowdstory/logo.png);
+	width: 101px;
+
+}
+
+h2.icon {
+	width: 100%;
+	text-align: center;
+}
+
+body h2 {
+	font-family: KBKinderWriteBold;
+	font-size: 28pt;
+	color: midnightblue;
+}
+
+body h2 {
+	font-family: KBKinderWriteBold;
+	font-size: 28pt;
+	color: midnightblue;
+}
+#fixedChaptersAccordion .accordion-toggle {
+	font-family: KBKinderWriteBold;
+	font-size: 14pt;
+	color: midnightblue;
+}
+
+input#show-comments{
+	
+	background: url(../images/crowdstory/comment.png) no-repeat top left;
+	background-size: 25px 25px;
+	padding-left: 30px;
+	border: 0;
+    cursor:pointer;
+	font-size: 18px;
+}
+
+#chapterDiv {
+	margin-bottom: 10px;
+}
+
+.newChapter {
+	display:inline;
+	margin-right: 10px;
+}
+
+#proposedChapter {
+	margin-bottom: 0px;
+}
+
+textarea {
+  resize: none;
+  width: 800px;
+  min-height: 90px;
+
+}
+
+.thumbnail64 {
+	height: 100px;
+	width: 100px;
+	margin-bottom: 10px;
+}
+
+div.lightlyFramed {
+	border: 1px solid lightgrey;
+	padding: 8px 10px 8px 15px;
+	background-color: white;
+}

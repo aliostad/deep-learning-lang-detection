@@ -1,0 +1,43 @@
+h3.service {
+	text-align: left;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 11pt;
+	font-family: verdana;
+	margin: 0 0 24px;
+	padding: 0;
+}
+ul.service li{
+	list-style-image: url("/public/img/service/v.jpg");
+	margin: 12px 0;
+}
+p.service {
+	margin-top: 5px;
+	padding: 0;
+	font-size: 90%;
+	display: none;
+}
+
+a.service_slider {
+	border-bottom: 1px dashed #000080;
+	text-decoration: none;
+}
+
+a.service {
+	text-decoration: none;
+}
+
+a.service_slider.active {
+	border-bottom: none;
+}
+
+h3.attention {
+	margin-top: 25px;
+	text-align: center;
+	font-size: 120%;
+}
+
+p.attention {
+	text-align: center;
+	font-size: 80%;
+}

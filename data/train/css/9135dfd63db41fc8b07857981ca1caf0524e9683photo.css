@@ -1,0 +1,111 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+section.photo-gallery {
+  width: 735px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.wq-photo-model {
+  margin-top: 30px;
+}
+.wq-photo-model .wq-photo-owner {
+  width: 80px;
+  height: 80px;
+  float: left;
+  border: 1px solid lightgray;
+}
+.wq-photo-model .wq-photo-owner img {
+  width: 100%;
+}
+.wq-photo-model .wq-photo {
+  float: left;
+  width: 620px;
+  margin-left: 30px;
+  position: relative;
+}
+.wq-photo-model .wq-photo * {
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+.wq-photo-model .wq-photo img.wq-photo-image {
+  width: 100%;
+}
+.wq-photo-model .wq-photo:hover img.wq-photo-image {
+  opacity: 0.6;
+}
+.wq-photo-model .wq-photo:hover .wq-photo-overlay {
+  display: block;
+}
+.wq-photo-model .wq-photo .wq-photo-overlay {
+  display: none;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  margin-left: -50px;
+}
+.wq-photo-model .wq-photo .wq-photo-overlay img {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.wq-photo-model .wq-photo .wq-photo-overlay p.likes {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.4em;
+  color: #ff9797;
+}
+.wg-category-photo-model .wg-category-photo-owner {
+  width: 80px;
+  height: 80px;
+  float: left;
+  border: 1px solid lightgray;
+}
+.wg-category-photo-model .wg-category-photo-owner img {
+  width: 100%;
+}
+.wg-category-photo-model .wg-category-photo {
+  float: left;
+  position: relative;
+}
+.wg-category-photo-model .wg-category-photo * {
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+.wg-category-photo-model .wg-category-photo img.wg-category-photo-image {
+  width: 100%;
+}
+.wg-category-photo-model .wg-category-photo:hover img.wg-category-photo-image {
+  opacity: 0.6;
+}
+.wg-category-photo-model .wg-category-photo:hover .wg-category-photo-overlay {
+  display: block;
+}
+.wg-category-photo-model .wg-category-photo .wg-category-photo-overlay {
+  display: none;
+  position: absolute;
+  top: 36%;
+  left: 48%;
+  margin-left: -50px;
+}
+.wg-category-photo-model .wg-category-photo .wg-category-photo-overlay img {
+  width: 40px !important;
+  display: inline !important;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.wg-category-photo-model .wg-category-photo .wg-category-photo-overlay p.likes {
+  display: inline;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.4em;
+  color: #ff9797;
+}

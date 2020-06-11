@@ -1,0 +1,144 @@
+.result-modern4 .mxr-item {
+    /* Box-model and Display */
+    padding: 0px;
+    margin: 5px 15px 25px 15px;
+    /* Visuals */
+    border-bottom: 1px solid #AAA;
+}
+
+.result-modern4 .mxr-refresh {
+    /* Box-model and Display */
+    margin: 7px;
+}
+
+.result-modern4 .mxr-refresh .btn {
+    /* Visuals */
+    border: 1px solid #868686;
+    background: #2E2E2E;
+    /*color: #AAA9A8;*/
+    color: #FFF;
+}
+
+.result-modern4 .mxr-refresh .btn:hover {
+    /* Visuals */
+    background: #AAA9A8;
+    color: #2E2E2E;
+}
+
+.result-modern4 .mxr-refresh .btn i {
+    /* Box-model and Display */
+    padding: 3px;
+}
+
+.result-modern4 a {
+    /* Visuals */
+    color: #094DBD;
+}
+
+.result-modern4 .mxr-title {
+    /* Box-model and Display */
+    padding: 5px 10px;
+    /* Visuals */
+    color: #FFF;
+    font-size: 20px;
+    text-shadow: 1px 1px 3px #000;
+    background: rgb(44,44,44); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(44,44,44,1) 0%, rgba(79,79,79,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(44,44,44,1)), color-stop(100%,rgba(79,79,79,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(44,44,44,1) 0%,rgba(79,79,79,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(44,44,44,1) 0%,rgba(79,79,79,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(44,44,44,1) 0%,rgba(79,79,79,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(44,44,44,1) 0%,rgba(79,79,79,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c2c2c', endColorstr='#4f4f4f',GradientType=0 ); /* IE6-9 */
+}
+
+.result-modern4 .mxr-title span {
+    /* Visuals */
+    color: #F89335;
+}
+
+.result-modern4 .mxr-title img {
+    /* Box-model and Display */
+    margin-right: 10px;
+}
+
+.result-modern4 .mxr-item thead {
+    /* Visuals */
+    background-color: #ACADB0;
+    color: #555;
+}
+
+.result-modern4 .mxr-item table {
+    /* Box-model and Display */
+    margin-bottom: 5px;
+    /* Visuals */
+    border: none;
+}
+
+.result-modern4 .mxr-item td, .result-modern4 .mxr-item th {
+    /* Box-model and Display */
+    padding-left: 10px;
+    /* Visuals */
+    border: none;
+    border-bottom: 1px solid #AAA;
+}
+
+.result-modern4 .table-striped > tbody > tr > td {
+    /* Visuals */
+    background-color: #FFF;
+}
+
+.result-modern4 .table-striped > tbody > tr:nth-child(even) > td {
+    /* Visuals */
+    background-color: #EEE;
+}
+
+.result-modern4 .mxr-related {
+    /* Box-model and Display */
+    padding: 0px 0px 5px 5px;
+}
+
+.result-modern4 .mxr-related-item {
+    /* Positioning */
+    position: relative;
+    /* Box-model and Display */
+    display: inline-block;
+    margin: 0px 2px;
+    padding-left: 5px;
+    border-left: 1px solid #999;
+}
+
+.result-modern4 .mxr-related-item a {
+    /* Box-model and Display */
+    display: block;
+    padding: 3px;
+    /* Typography */
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.result-modern4 .mxr-related-item:first-child {
+    /* Box-model and Display */
+    border-left: none;
+    padding-left: 0px;
+}
+
+.result-modern4 .mxr-related-report {
+    /* Typography */
+    font-size: 12px;
+}
+
+.result-modern4 .mxr-related-report a {
+    /* Box-model and Display */
+    display: inline;
+}
+
+.result-modern4 .transcript_container {
+    /* Typography */
+    font-family: courier, monospace;
+}
+
+.result-modern4 .internetSays {
+    font-family: "Courier New", Courier, monospace;
+    letter-spacing: .01em;
+}

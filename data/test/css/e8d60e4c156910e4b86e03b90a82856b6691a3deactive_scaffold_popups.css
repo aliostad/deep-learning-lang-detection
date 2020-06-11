@@ -1,0 +1,123 @@
+
+/* Nested :: Like popups
+   ============================== */
+
+.empresas-view .nested-view,
+
+.sedes-view .new-view,
+.sedes-view .edit-view,
+.sedes-view .show-view,
+.sedes-view .nested-view,
+
+.empleados-view .new-view,
+.empleados-view .edit-view,
+.empleados-view .show-view,
+
+.paises-view .nested-view,
+
+.familia_residuos-view .nested-view,
+.residuos-view .new-view,
+.residuos-view .edit-view,
+.residuos-view .show-view,
+.residuos-view .nested-view
+{
+  position: fixed;
+  left: 5%;
+  right:5%;
+  top: 12%;
+  background-color: #EEE;
+  border: 1px solid #C7C7C7 !important;
+}
+
+
+.empresas-view .nested-view .popup,
+
+.sedes-view .new-view .popup,
+.sedes-view .edit-view .popup,
+.sedes-view .show-view .popup,
+.sedes-view .nested-view .popup,
+
+.empleados-view .new-view .popup,
+.empleados-view .edit-view .popup,
+.empleados-view .show-view .popup,
+
+.paises-view .nested-view .popup,
+
+.familia_residuos-view .nested-view .popup, 
+.residuos-view .new-view .popup,
+.residuos-view .edit-view .popup,
+.residuos-view .show-view .popup,
+.residuos-view .nested-view .popup {
+}
+
+
+.empresas-view .nested-view .popup .title,
+
+.sedes-view .new-view .popup .title,
+.sedes-view .edit-view .popup .title,
+.sedes-view .show-view .popup .title,
+.sedes-view .nested-view .popup .title,
+
+.empleados-view .new-view .popup .title,
+.empleados-view .edit-view .popup .title,
+.empleados-view .show-view .popup .title,
+
+.paises-view .nested-view .popup .title,
+
+.familia_residuos-view .nested-view .popup .title,
+.residuos-view .new-view .popup .title,
+.residuos-view .edit-view .popup .title,
+.residuos-view .show-view .popup .title,
+.residuos-view .nested-view .popup .title {
+  font-family: helvetica,tahoma,verdana,sans-serif;
+  color: #444;
+  font-size: 10pt;
+}
+
+
+.empresas-view .nested-view .popup .content,
+
+.sedes-view .new-view .popup .content,
+.sedes-view .edit-view .popup .content,
+.sedes-view .show-view .popup .content,
+.sedes-view .nested-view .popup .content,
+
+.empleados-view .new-view .popup .content,
+.empleados-view .edit-view .popup .content,
+.empleados-view .show-view .popup .content,
+
+.paises-view .nested-view .popup .content,
+
+.familia_residuos-view .nested-view .popup .content, 
+.residuos-view .new-view .popup .content,
+.residuos-view .edit-view .popup .content,
+.residuos-view .show-view .popup .content,
+.residuos-view .nested-view .popup .content {
+  height: 420;
+  overflow:auto;
+  padding: 2px !important;
+  border: 1px solid #E7E7E7;
+  background-color: white;
+}
+
+
+.empresas-view .nested-view .popup h4,
+
+.sedes-view .new-view .popup h4,
+.sedes-view .edit-view .popup h4,
+.sedes-view .show-view .popup h4,
+.sedes-view .nested-view .popup h4,
+
+.empleados-view .new-view .popup h4,
+.empleados-view .edit-view .popup h4,
+.empleados-view .show-view .popup h4,
+
+.paises-view .nested-view .popup h4,
+
+.familia_residuos-view .nested-view .popup h4,
+.residuos-view .new-view .popup h4,
+.residuos-view .edit-view .popup h4,
+.residuos-view .show-view .popup h4,
+.residuos-view .nested-view .popup h4 {
+  display: none;
+}

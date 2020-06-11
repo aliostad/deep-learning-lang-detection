@@ -1,0 +1,20 @@
+<keyframes>
+    <key>
+        <sampleX>0.470271885</sampleX>
+        <sampleY>0.719999969</sampleY>
+        <time>00:00:00:546</time>
+        <value>0.100000024</value>
+    </key>
+    <key>
+        <sampleX>0.200927854</sampleX>
+        <sampleY>0.349999964</sampleY>
+        <time>00:00:01:002</time>
+        <value>0.675000012</value>
+    </key>
+    <key>
+        <sampleX>0.275607884</sampleX>
+        <sampleY>0.199999973</sampleY>
+        <time>00:00:01:497</time>
+        <value>0.925000012</value>
+    </key>
+</keyframes>

@@ -1,0 +1,145 @@
+div.message_centre {
+    float: left;
+    display: block;
+}
+
+div.message_centre h2 {
+    float: left;
+    display: block;
+    width: 100%;
+}
+
+div.message_centre ul.messages {
+    float: left;
+    display: block;
+    width: 100%;
+    clear: both;
+    padding: 0;
+    margin: 0;
+}
+
+div.message_centre ul.messages li {
+    float: left;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+div.message_centre ul.messages li .message {
+    float: left;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+div.message_centre ul.messages li .message .main {
+    float: left;
+    display: block;
+    width: 100%;
+}
+
+div.message_centre ul.messages li .message .main .heading {
+    float: left;
+    display: block;
+    width: 100%;
+}
+
+div.message_centre ul.messages li .message .main .heading .icon {
+    float: left;
+    display: block;
+    background-image: url("./images/message_icon.png");
+    width: 37px;
+    height: 31px;
+}
+
+div.message_centre ul.messages li .message .main .heading h3 {
+    float: left;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+div.message_centre ul.messages li .message .main .body {
+    float: left;
+    display: block;
+    width: 100%;
+}
+
+div.message_centre ul.messages li .message .main .body ul {
+    list-style-type: disc;
+    margin-bottom: 10px;
+}
+
+div.message_centre ul.messages li .message .main .body ul li {
+    display: list-item;
+}
+
+div.message_centre ul.messages li .message .main .author {
+    float: left;
+    display: block;
+    width: 100%;
+    text-align: right;
+    color: #666666;
+    font-size: 12px;
+}
+
+div.message_centre ul.messages li .message .main .author b {
+    font-weight: bold;
+}
+
+div.message_centre ul.messages li .message .options {
+    float: left;
+    display: block;
+    width: 20%;
+}
+
+div.message_centre ul.messages li .message .options ul {
+    float: left;
+    display: block;
+}
+
+div.message_centre ul.messages li .message .options ul li {
+    float: left;
+    display: block;
+}
+
+div.message_centre ul.messages li .message .options ul li a {
+    float: left;
+    display: block;
+    width: 40px;
+    height: 40px;
+    clear: left;
+}
+
+div.message_centre ul.messages li .message .options ul li.message-edit,
+div.message_centre ul.messages li .message .options ul li.message-delete {
+    float: left;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+div.message_centre ul.messages li .message .options ul li.message-edit {
+    background-image: url("./images/edit.png");
+}
+
+div.message_centre ul.messages li .message .options ul li.message-delete {
+    background-image: url("./images/trash.png");
+}
+
+div.message_centre ul.messages li .message .options ul li.message-edit span,
+div.message_centre ul.messages li .message .options ul li.message-delete span {
+    display: none;
+}
+
+div.message_centre ul.messages li .message.editor .main {
+    width: 80%;
+}
+div.message_centre ul.action-links{
+    float: left;
+    display: block;
+    clear: both;
+    width: 100%;
+}

@@ -1,0 +1,29 @@
+html, header, body {
+  background-color: #E8E7E4;
+  font-family:"Microsoft YaHei";
+  color: #666666;
+}
+.discount-model {
+  background-color: #ffffff;
+  margin: 5px auto;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px #888888;
+}
+.discount-model-content {
+  width: 100%;
+  text-align: left;
+  padding: 5px 10px;
+}
+.discount-image {
+  display: inline-block;
+  width: 30%;
+  height: auto;
+  vertical-align: middle;
+}
+.discount-name {
+display: inline-block;
+text-align: left;
+vertical-align: middle;
+margin-left: 5px;
+width: 65%;
+}

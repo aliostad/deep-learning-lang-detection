@@ -1,0 +1,57 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+ul.schedule {
+	list-style:none;
+}
+
+.inputs {
+	display:none;
+}
+
+#historyGraph {
+	height:500px;
+}
+
+
+#ptTimeSelectCntr {
+	background-color:#fff;
+	border:1px solid #ddd;
+	border-radius:5px;
+}
+
+.ui-widget-header {
+	font-size:18px;
+	font-weight:bold;
+}
+
+
+.footer {
+	height:200px;
+}
+
+.selected {
+	font-weight:bold !important;
+	color:#44BE3F;
+}
+
+
+#schedulePreview {
+	max-height:200px;
+	overflow:auto;
+}
+
+.loadImage {
+	margin:auto;
+	text-align:center;
+}
+
+.loadImage .progress {
+	width:300px;
+	margin:auto;
+}

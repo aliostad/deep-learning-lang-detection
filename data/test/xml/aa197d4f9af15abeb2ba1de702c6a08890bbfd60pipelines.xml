@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<conan-pipelines xmlns="http://www.ebi.ac.uk/arrayexpress/conan/pipelines"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.ebi.ac.uk/arrayexpress/conan/pipelines
+                                     http://www.ebi.ac.uk/arrayexpress/conan/pipelines.xsd">
+
+    <!--
+    Add xml elements to name your pipeline and chain processes together here
+    Note that the interface will display these pipelines in declaration order, with the first pipeline as the default
+    -->
+
+    <!-- Demo processes -->
+    <pipeline name="demo" creator="tburdett">
+        <processes>
+            <process name="demo process" />
+            <process name="demo process (5 parameters)" />
+        </processes>
+    </pipeline>
+
+    <pipeline name="demo 2" creator="tburdett">
+        <processes>
+            <process name="demo process" />
+            <process name="demo process" displayName="step 2" />
+            <process name="demo process" displayName="step 3" />
+            <process name="demo process" displayName="step 4" />
+            <process name="demo process" displayName="step 5" />
+        </processes>
+    </pipeline>
+
+    <pipeline name="daemon demo" creator="tburdett" daemonized="true">
+        <processes>
+            <process name="daemon demo process" />
+        </processes>
+    </pipeline>
+
+</conan-pipelines>

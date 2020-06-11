@@ -1,0 +1,19 @@
+@define-mixin error-message {
+  background-color: var(--error-message-background-color);
+  color: var(--error-message-font-color);
+  font-size: var(--error-message-font-size);
+  line-height: var(--error-message-line-height);
+  margin-top: var(--error-message-margin-top);
+  padding: var(--error-message-padding);
+  position: relative;
+
+  &:before {
+    border: var(--pointer-width) solid transparent;
+    border-bottom-color: var(--error-message-background-color);
+    content: '';
+    left: 50%;
+    margin-left: -var(--pointer-width);
+    position: absolute;
+    top: -calc((var(--pointer-width) * 2));
+  }
+}

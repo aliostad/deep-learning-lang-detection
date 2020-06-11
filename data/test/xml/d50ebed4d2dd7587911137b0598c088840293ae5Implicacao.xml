@@ -1,0 +1,88 @@
+<save arq="/home/adriano/Ubuntu One/workspace/VPE-qGM/VPE-qGM/src/processes/CircuitosFuzzy/Implicacao.xml" pos="0, 1, 2, 3, 4, 5, 6, 7">
+<process repr="env" tipo="seq" pos="0, 1, 2, 3, 4, 5, 6, 7">
+<process repr="terminicio" x="1128.0" y="1335" cor="BLACK"></process>
+<process repr="env" tipo="seq" pos="0, 1, 2, 3, 4, 5, 6, 7">
+<process repr="env" tipo="seq" pos="0, 1, 2, 3, 4, 5, 6, 7">
+<process repr="env" tipo="paralelo" pos="0, 1, 2, 3, 4, 5, 6, 7">
+<process repr="env" tipo="paralelo" pos="0, 1, 2, 3">
+<process repr="env" tipo="paralelo" pos="0, 1">
+<process repr="conselem" qubits= "3" acao= "Id,X,Id" pos= "0" parametro= "" x="1229.0" y="1046.0" cor="BLACK"></process>
+<process repr="conselem" qubits= "3" acao= "Id,X,Id" pos= "1" parametro= "" x="1229.0" y="1117.0" cor="BLACK"></process>
+</process>
+<process repr="env" tipo="paralelo" pos="2, 3">
+<process repr="conselem" qubits= "3" acao= "Id,X,Id" pos= "2" parametro= "" x="1229.0" y="1208.0" cor="BLACK"></process>
+<process repr="conselem" qubits= "3" acao= "Id,X,Id" pos= "3" parametro= "" x="1229.0" y="1279.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="env" tipo="paralelo" pos="4, 5, 6, 7">
+<process repr="env" tipo="paralelo" pos="4, 5">
+<process repr="conselem" qubits= "3" acao= "Id,X,Id" pos= "4" parametro= "" x="1229.0" y="1390.0" cor="BLACK"></process>
+<process repr="conselem" qubits= "3" acao= "Id,X,Id" pos= "5" parametro= "" x="1229.0" y="1461.0" cor="BLACK"></process>
+</process>
+<process repr="env" tipo="paralelo" pos="6, 7">
+<process repr="conselem" qubits= "3" acao= "Id,X,Id" pos= "6" parametro= "" x="1229.0" y="1552.0" cor="BLACK"></process>
+<process repr="conselem" qubits= "3" acao= "Id,X,Id" pos= "7" parametro= "" x="1229.0" y="1623.0" cor="BLACK"></process>
+</process>
+</process>
+</process>
+<process repr="env" tipo="paralelo" pos="0, 1, 2, 3, 4, 5, 6, 7">
+<process repr="env" tipo="paralelo" pos="0, 1, 2, 3">
+<process repr="env" tipo="paralelo" pos="0, 1">
+<process repr="conselem" qubits= "3" acao= "(Control1(1),Control1(1),Target1(X))" pos= "0" parametro= "" x="1403.0" y="1046.0" cor="BLACK"></process>
+<process repr="conselem" qubits= "3" acao= "(Control1(1),Control1(1),Target1(X))" pos= "1" parametro= "" x="1403.0" y="1117.0" cor="BLACK"></process>
+</process>
+<process repr="env" tipo="paralelo" pos="2, 3">
+<process repr="conselem" qubits= "3" acao= "(Control1(1),Control1(1),Target1(X))" pos= "2" parametro= "" x="1403.0" y="1208.0" cor="BLACK"></process>
+<process repr="conselem" qubits= "3" acao= "(Control1(1),Control1(1),Target1(X))" pos= "3" parametro= "" x="1403.0" y="1279.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="env" tipo="paralelo" pos="4, 5, 6, 7">
+<process repr="env" tipo="paralelo" pos="4, 5">
+<process repr="conselem" qubits= "3" acao= "(Control1(1),Control1(1),Target1(X))" pos= "4" parametro= "" x="1403.0" y="1390.0" cor="BLACK"></process>
+<process repr="conselem" qubits= "3" acao= "(Control1(1),Control1(1),Target1(X))" pos= "5" parametro= "" x="1403.0" y="1461.0" cor="BLACK"></process>
+</process>
+<process repr="env" tipo="paralelo" pos="6, 7">
+<process repr="conselem" qubits= "3" acao= "(Control1(1),Control1(1),Target1(X))" pos= "6" parametro= "" x="1403.0" y="1552.0" cor="BLACK"></process>
+<process repr="conselem" qubits= "3" acao= "(Control1(1),Control1(1),Target1(X))" pos= "7" parametro= "" x="1403.0" y="1623.0" cor="BLACK"></process>
+</process>
+</process>
+</process>
+<process repr="env" tipo="paralelo" pos="0, 1, 2, 3, 4, 5, 6, 7">
+<process repr="env" tipo="paralelo" pos="0, 1, 2, 3">
+<process repr="env" tipo="paralelo" pos="0, 1">
+<process repr="conselem" qubits= "3" acao= "Id,Id,Id" pos= "0" parametro= "" x="1577.0" y="1046.0" cor="BLACK"></process>
+<process repr="conselem" qubits= "3" acao= "Id,Id,Id" pos= "1" parametro= "" x="1577.0" y="1117.0" cor="BLACK"></process>
+</process>
+<process repr="env" tipo="paralelo" pos="2, 3">
+<process repr="conselem" qubits= "3" acao= "Id,Id,Id" pos= "2" parametro= "" x="1577.0" y="1208.0" cor="BLACK"></process>
+<process repr="conselem" qubits= "3" acao= "Id,Id,Id" pos= "3" parametro= "" x="1577.0" y="1279.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="env" tipo="paralelo" pos="4, 5, 6, 7">
+<process repr="env" tipo="paralelo" pos="4, 5">
+<process repr="conselem" qubits= "3" acao= "Id,Id,Id" pos= "4" parametro= "" x="1577.0" y="1390.0" cor="BLACK"></process>
+<process repr="conselem" qubits= "3" acao= "Id,Id,Id" pos= "5" parametro= "" x="1577.0" y="1461.0" cor="BLACK"></process>
+</process>
+<process repr="env" tipo="paralelo" pos="6, 7">
+<process repr="conselem" qubits= "3" acao= "Id,Id,Id" pos= "6" parametro= "" x="1577.0" y="1552.0" cor="BLACK"></process>
+<process repr="conselem" qubits= "3" acao= "Id,Id,Id" pos= "7" parametro= "" x="1577.0" y="1623.0" cor="BLACK"></process>
+</process>
+</process>
+</process>
+</process>
+<process repr="env" tipo="seq" pos="0">
+<process repr="env" tipo="nondet1" pos="0">
+<process repr="detproj" parametro=""></process>
+<process repr="iterativo" tipo="iterativo" range="0:8:1" acao="parfor" x="1723.0" y="1269.0" cor="BLACK">
+<process repr="conselem" qubits= "3" acao= "Id,Id,P0" pos= "0" parametro= "" x="1723.0" y="1269.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:8:1" acao="parfor" x="1723.0" y="1400.0" cor="BLACK">
+<process repr="conselem" qubits= "3" acao= "Id,Id,P1" pos= "0" parametro= "" x="1723.0" y="1400.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr= "probability" acao= "QGMAnalyzer" pos= "8" parametro= "Probability" x="1827.0" y="1335.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="termfim" x="1888.0" y="1335" cor="BLACK"></process>
+</process>
+</save>

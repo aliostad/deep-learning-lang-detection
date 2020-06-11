@@ -1,0 +1,54 @@
+#message{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	margin-top: -100px;
+	padding: 0;
+	height: 50px;
+	z-index: 5000022;
+	border: none;
+	font-size: 12px;
+	text-align: center;
+	border: none;
+	text-align: center;
+}
+
+#message span{
+	display: inline-block;
+	margin: 0;
+	padding: 5px 50px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#message i{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	line-height: 44px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 25px;
+	border: 3px solid rgba(255,255,255,.2);
+}
+
+#message.message-progress i{
+	background: #fbec5d;  
+	color: #fff;   	 
+}
+
+#message.message-error i{
+	background-color: #A4110A;
+	color: #fff;   	
+}
+
+#message.message-success i{
+	background-color: #7ec57e;
+	color: #fff;   	
+}
+
+#message.message-success a.close{
+	display: none;
+}

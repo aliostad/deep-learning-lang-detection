@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE beans PUBLIC '-//SPRING//DTD BEAN//EN' 'http://www.springframework.org/dtd/spring-beans.dtd'>
+
+<beans>
+
+  <bean id="metadata-writer.sample.service" class="org.redpill.alfresco.module.metadatawriter.services.impl.MetadataServiceImpl"
+    init-method="register" parent="metadata-writer.abstract.service">
+    <constructor-arg type="java.lang.String" value="BxMetadaWriterService" />
+    <constructor-arg type="java.util.List">
+      <list>
+      	<ref bean="metadata-writer.DateConverter" />
+      </list>
+    </constructor-arg>
+    <constructor-arg type="java.util.Properties">
+      <props>
+        <prop key="${mapping.attribute1.name}">
+          ${mapping.attribute1.value}
+        </prop>
+        <prop key="${mapping.attribute2.name}">
+          ${mapping.attribute2.value}
+        </prop>
+        <prop key="${mapping.attribute3.name}">
+          ${mapping.attribute3.value}
+        </prop>
+        <prop key="${mapping.attribute4.name}">
+          ${mapping.attribute4.value}
+        </prop>
+        <prop key="${mapping.attribute5.name}">
+          ${mapping.attribute5.value}
+        </prop>
+        <prop key="${mapping.attribute6.name}">
+          ${mapping.attribute6.value}
+        </prop>
+        <prop key="${mapping.attribute7.name}">
+          ${mapping.attribute7.value}
+        </prop>
+        <prop key="${mapping.attribute8.name}">
+          ${mapping.attribute8.value}
+        </prop>
+        <prop key="${mapping.attribute9.name}">
+          ${mapping.attribute9.value}
+        </prop>
+        <prop key="${mapping.attribute10.name}">
+          ${mapping.attribute10.value}
+        </prop>
+        <prop key="${mapping.attribute11.name}">
+          ${mapping.attribute11.value}
+        </prop>
+        <prop key="${mapping.attribute12.name}">
+          ${mapping.attribute12.value}
+        </prop>
+        <prop key="${mapping.attribute13.name}">
+          ${mapping.attribute13.value}
+        </prop>
+        <prop key="${mapping.attribute14.name}">
+          ${mapping.attribute14.value}
+        </prop>
+        <prop key="${mapping.attribute15.name}">
+          ${mapping.attribute15.value}
+        </prop>
+        <prop key="${mapping.attribute16.name}">
+          ${mapping.attribute16.value}
+        </prop>
+        <prop key="${mapping.attribute17.name}">
+          ${mapping.attribute17.value}
+        </prop>
+        <prop key="${mapping.attribute18.name}">
+          ${mapping.attribute18.value}
+        </prop>
+        <prop key="${mapping.attribute19.name}">
+          ${mapping.attribute19.value}
+        </prop>
+        
+        <prop key="${mapping.association1.name}">
+          ${mapping.association1.qname}
+        </prop>
+        <prop key="${mapping.association2.name}">
+          ${mapping.association2.qname}
+        </prop>
+        <prop key="${mapping.association3.name}">
+          ${mapping.association3.qname}
+        </prop>
+        <prop key="${mapping.association4.name}">
+          ${mapping.association4.qname}
+        </prop>
+        
+        <prop key="${mapping.etape1.att1.name}">
+          ${mapping.etape1.att1.value}
+        </prop>
+        <prop key="${mapping.etape1.att2.name}">
+          ${mapping.etape1.att2.value}
+        </prop>
+        <prop key="${mapping.etape1.att3.name}">
+          ${mapping.etape1.att3.value}
+        </prop>
+        <prop key="${mapping.etape1.att4.name}">
+          ${mapping.etape1.att4.value}
+        </prop>
+        <prop key="${mapping.etape1.att5.name}">
+          ${mapping.etape1.att5.value}
+        </prop>
+        
+        <prop key="${mapping.etape2.att1.name}">
+          ${mapping.etape2.att1.value}
+        </prop>
+        <prop key="${mapping.etape2.att2.name}">
+          ${mapping.etape2.att2.value}
+        </prop>
+        <prop key="${mapping.etape2.att3.name}">
+          ${mapping.etape2.att3.value}
+        </prop>
+        <prop key="${mapping.etape2.att4.name}">
+          ${mapping.etape2.att4.value}
+        </prop>
+        <prop key="${mapping.etape2.att5.name}">
+          ${mapping.etape2.att5.value}
+        </prop>
+        
+        <prop key="${mapping.etape3.att1.name}">
+          ${mapping.etape3.att1.value}
+        </prop>
+        <prop key="${mapping.etape3.att2.name}">
+          ${mapping.etape3.att2.value}
+        </prop>
+        <prop key="${mapping.etape3.att3.name}">
+          ${mapping.etape3.att3.value}
+        </prop>
+        <prop key="${mapping.etape3.att4.name}">
+          ${mapping.etape3.att4.value}
+        </prop>
+        <prop key="${mapping.etape3.att5.name}">
+          ${mapping.etape3.att5.value}
+        </prop>
+        
+        <prop key="${mapping.etape4.att1.name}">
+          ${mapping.etape4.att1.value}
+        </prop>
+        <prop key="${mapping.etape4.att2.name}">
+          ${mapping.etape4.att2.value}
+        </prop>
+        <prop key="${mapping.etape4.att3.name}">
+          ${mapping.etape4.att3.value}
+        </prop>
+        <prop key="${mapping.etape4.att4.name}">
+          ${mapping.etape4.att4.value}
+        </prop>
+        <prop key="${mapping.etape4.att5.name}">
+          ${mapping.etape4.att5.value}
+        </prop>
+        
+        <prop key="${mapping.etape5.att1.name}">
+          ${mapping.etape5.att1.value}
+        </prop>
+        <prop key="${mapping.etape5.att2.name}">
+          ${mapping.etape5.att2.value}
+        </prop>
+        <prop key="${mapping.etape5.att3.name}">
+          ${mapping.etape5.att3.value}
+        </prop>
+        <prop key="${mapping.etape5.att4.name}">
+          ${mapping.etape5.att4.value}
+        </prop>
+        <prop key="${mapping.etape5.att5.name}">
+          ${mapping.etape5.att5.value}
+        </prop>
+        
+        <prop key="${mapping.etape6.att1.name}">
+          ${mapping.etape6.att1.value}
+        </prop>
+        <prop key="${mapping.etape6.att2.name}">
+          ${mapping.etape6.att2.value}
+        </prop>
+        <prop key="${mapping.etape6.att3.name}">
+          ${mapping.etape6.att3.value}
+        </prop>
+        <prop key="${mapping.etape6.att4.name}">
+          ${mapping.etape6.att4.value}
+        </prop>
+        <prop key="${mapping.etape6.att5.name}">
+          ${mapping.etape6.att5.value}
+        </prop>
+        
+        <prop key="${mapping.etape7.att1.name}">
+          ${mapping.etape7.att1.value}
+        </prop>
+        <prop key="${mapping.etape7.att2.name}">
+          ${mapping.etape7.att2.value}
+        </prop>
+        <prop key="${mapping.etape7.att3.name}">
+          ${mapping.etape7.att3.value}
+        </prop>
+        <prop key="${mapping.etape7.att4.name}">
+          ${mapping.etape7.att4.value}
+        </prop>
+        <prop key="${mapping.etape7.att5.name}">
+          ${mapping.etape7.att5.value}
+        </prop>
+        
+        <prop key="${mapping.etape8.att1.name}">
+          ${mapping.etape8.att1.value}
+        </prop>
+        <prop key="${mapping.etape8.att2.name}">
+          ${mapping.etape8.att2.value}
+        </prop>
+        <prop key="${mapping.etape8.att3.name}">
+          ${mapping.etape8.att3.value}
+        </prop>
+        <prop key="${mapping.etape8.att4.name}">
+          ${mapping.etape8.att4.value}
+        </prop>
+        <prop key="${mapping.etape8.att5.name}">
+          ${mapping.etape8.att5.value}
+        </prop>
+        
+        <prop key="${mapping.etape9.att1.name}">
+          ${mapping.etape9.att1.value}
+        </prop>
+        <prop key="${mapping.etape9.att2.name}">
+          ${mapping.etape9.att2.value}
+        </prop>
+        <prop key="${mapping.etape9.att3.name}">
+          ${mapping.etape9.att3.value}
+        </prop>
+        <prop key="${mapping.etape9.att4.name}">
+          ${mapping.etape9.att4.value}
+        </prop>
+        <prop key="${mapping.etape9.att5.name}">
+          ${mapping.etape9.att5.value}
+        </prop>
+        
+        <prop key="colonne1">
+          britair:colonne1
+        </prop>
+        <prop key="colonne2">
+          britair:colonne2
+        </prop>
+        <prop key="colonne3">
+          britair:colonne3
+        </prop>
+        <prop key="colonne4">
+          britair:colonne4
+        </prop>
+        <prop key="colonne5">
+          britair:colonne5
+        </prop>
+      </props>
+    </constructor-arg>
+  </bean>
+
+</beans>

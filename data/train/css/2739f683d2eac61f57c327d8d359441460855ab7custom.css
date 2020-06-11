@@ -1,0 +1,189 @@
+body {
+    padding-top: 50px;
+}
+
+
+.site-notfound {
+    font-size: 12px;
+    width: 320px;
+    overflow: hidden;
+    padding-top: 328px;
+    margin: 0px auto 60px;
+    text-align: center;
+    line-height: 32px;
+    background: #FFF url('../res/picture/404.png') center top no-repeat;
+}
+
+    .site-notfound a.homelink {
+        color: #666;
+        text-decoration: underline;
+    }
+
+
+
+
+
+
+
+
+
+
+    
+div.service-wrap {
+  padding-top:345px;
+  font-family:Microsoft Yahei;
+  width:990px;
+  height:100%;
+  margin:0 auto;
+}
+div.service-wrap div.service-tab ul.nav-tabs {
+  height:132px;
+  margin-bottom:0;
+  border-bottom:0px solid #3cace7;
+}
+div.service-wrap div.service-tab ul.nav-tabs li.item {
+  width:93px;
+  height:131px;
+  margin-right:30px;
+}
+div.service-wrap div.service-tab ul.nav-tabs li.item a {
+  padding-left:10px;
+  padding-right:10px;
+  border:1px solid #ddd;
+  border-radius:4px;
+}
+div.service-wrap div.service-tab ul.nav-tabs li.item a span.service-icon {
+  display:block;
+  width:70px;
+  height:62px;
+}
+div.service-wrap div.service-tab ul.nav-tabs li.item a span.service-icon1 { background:url("/static/image/home/loadbalance.png") no-repeat; }
+div.service-wrap div.service-tab ul.nav-tabs li.item a span.service-icon2 { background:url("/static/image/home/webserver.png") no-repeat; }
+div.service-wrap div.service-tab ul.nav-tabs li.item a span.service-icon3 { background:url("/static/image/home/cache.png") no-repeat; }
+div.service-wrap div.service-tab ul.nav-tabs li.item a span.service-icon4 { background:url("/static/image/home/database.png") no-repeat; }
+div.service-wrap div.service-tab ul.nav-tabs li.item a span.service-icon5 { background:url("/static/image/home/security.png") no-repeat; }
+div.service-wrap div.service-tab ul.nav-tabs li.item a span.service-icon6 { background:url("/static/image/home/taskshedule.png") no-repeat; }
+div.service-wrap div.service-tab ul.nav-tabs li.item a span.service-icon7 { background:url("/static/image/home/storage.png") no-repeat; }
+div.service-wrap div.service-tab ul.nav-tabs li.item a span.service-icon8 { background:url("/static/image/home/extension.png") no-repeat; }
+div.service-wrap div.service-tab ul.nav-tabs li.item a span.zh {
+  display:block;
+  width:70px;
+  font-size:13px;
+  color:#666;
+  text-align:center;
+}
+div.service-wrap div.service-tab ul.nav-tabs li.item:hover a span.service-icon1 { background:url("/static/image/home/loadbalance_hover.png") no-repeat; }
+div.service-wrap div.service-tab ul.nav-tabs li.item:hover a span.service-icon2 { background:url("/static/image/home/webserver_hover.png") no-repeat; }
+div.service-wrap div.service-tab ul.nav-tabs li.item:hover a span.service-icon3 { background:url("/static/image/home/cache_hover.png") no-repeat; }
+div.service-wrap div.service-tab ul.nav-tabs li.item:hover a span.service-icon4 { background:url("/static/image/home/database_hover.png") no-repeat; }
+div.service-wrap div.service-tab ul.nav-tabs li.item:hover a span.service-icon5 { background:url("/static/image/home/security_hover.png") no-repeat; }
+div.service-wrap div.service-tab ul.nav-tabs li.item:hover a span.service-icon6 { background:url("/static/image/home/taskshedule_hover.png") no-repeat; }
+div.service-wrap div.service-tab ul.nav-tabs li.item:hover a span.service-icon7 { background:url("/static/image/home/storage_hover.png") no-repeat; }
+div.service-wrap div.service-tab ul.nav-tabs li.item:hover a span.service-icon8 { background:url("/static/image/home/extension_hover.png") no-repeat; }
+div.service-wrap div.service-tab ul.nav-tabs li.active a span.service-icon1 { background:url("/static/image/home/loadbalance_hover.png") no-repeat; }
+div.service-wrap div.service-tab ul.nav-tabs li.active a span.service-icon2 { background:url("/static/image/home/webserver_hover.png") no-repeat; }
+div.service-wrap div.service-tab ul.nav-tabs li.active a span.service-icon3 { background:url("/static/image/home/cache_hover.png") no-repeat; }
+div.service-wrap div.service-tab ul.nav-tabs li.active a span.service-icon4 { background:url("/static/image/home/database_hover.png") no-repeat; }
+div.service-wrap div.service-tab ul.nav-tabs li.active a span.service-icon5 { background:url("/static/image/home/security_hover.png") no-repeat; }
+div.service-wrap div.service-tab ul.nav-tabs li.active a span.service-icon6 { background:url("/static/image/home/taskshedule_hover.png") no-repeat; }
+div.service-wrap div.service-tab ul.nav-tabs li.active a span.service-icon7 { background:url("/static/image/home/storage_hover.png") no-repeat; }
+div.service-wrap div.service-tab ul.nav-tabs li.active a span.service-icon8 { background:url("/static/image/home/extension_hover.png") no-repeat; }
+div.service-wrap div.service-tab ul.nav-tabs li.active {
+  border:1px solid #3cace7;
+  border-bottom-color:#FFF;
+  border-radius:4px 4px 0 0;
+  background-color:#FFF;
+}
+div.service-wrap div.service-tab ul.nav-tabs li.active a { border:none; }
+div.service-wrap div.service-tab div.service-inner {
+  padding-left:20px;
+  padding-bottom:50px;
+  border:1px solid #3cace7;
+  border-radius:0 0 4px 4px;
+}
+div.service-wrap div.service-tab div.service-inner div.item div.text-area h5 {
+  margin-top:40px;
+  margin-bottom:19px;
+}
+div.service-wrap div.service-tab div.service-inner div.item div.text-area h5 a {
+  font-size:16px;
+  color:#3cace7;
+  letter-spacing:1px;
+  text-decoration:none;
+}
+div.service-wrap div.service-tab div.service-inner div.item div.text-area h5.data-safe { margin-top:0; }
+div.service-wrap div.service-tab div.service-inner div.item div.text-area p {
+  font-size:13px;
+  color:#666;
+  letter-spacing:1px;
+}
+div.service-wrap div.service-tab div.service-inner div.item div.text-area ul.storage-list { list-style-type:none; }
+div.service-wrap div.service-tab div.service-inner div.item div.text-area ul.storage-list li {
+  font-size:13px;
+  color:#666;
+  letter-spacing:1px;
+  line-height:30px;
+}
+div.service-wrap div.service-tab div.service-inner div.item div.image-area {
+  margin-top:20px;
+  margin-left:60px;
+}
+div.service-wrap div.service-tab div.service-inner div.item ul.sandbox-list { list-style-type:none; }
+div.service-wrap div.service-tab div.service-inner div.item ul.sandbox-list li {
+  font-size:13px;
+  color:#666;
+  letter-spacing:1px;
+  line-height:40px;
+}
+div.service-wrap div.service-tab div.service-inner div.item div.lang-area { margin-bottom:50px; }
+div.service-wrap div.service-tab div.service-inner div.item div.lang-area h5 {
+  margin-top:40px;
+  margin-bottom:19px;
+  font-size:16px;
+  color:#3cace7;
+  letter-spacing:1px;
+  text-decoration:none;
+}
+div.service-wrap div.service-tab div.service-inner div.item div.lang-area ul.lang-list { list-style-type:none; }
+div.service-wrap div.service-tab div.service-inner div.item div.lang-area ul.lang-list li {
+  float:left;
+  width:300px;
+  text-align:center;
+}
+div.service-wrap div.service-tab div.service-inner div.item div.mem-area h5 {
+  color:#666;
+  letter-spacing:1px;
+}
+div.service-wrap div.service-tab div.service-inner div.item div.mem-area p {
+  font-size:13px;
+  color:#666;
+  letter-spacing:1px;
+}
+div.service-wrap div.service-tab div.service-inner div.item div.mini-icon-area { margin-top:40px; }
+div.service-wrap div.sae-use { margin-top:50px; }
+div.service-wrap div.sae-use div.auth-icon {
+  text-align:center;
+  margin:20px 0;
+}
+div.service-wrap div.sae-use p {
+  font-size:20px;
+  color:#666;
+  letter-spacing:1px;
+  text-align:center;
+}
+div.service-wrap div.sae-use p a {
+  color:#37b2e9;
+  text-decoration:none;
+}
+div.service-wrap div.start-use { margin-bottom:60px; }
+div.service-wrap div.start-use .use-button {
+  text-align:center;
+  background:url("/static/image/home/start_now.png") no-repeat center;
+}
+div.service-wrap div.start-use .use-button a {
+  font-size:20px;
+  color:#fff;
+  letter-spacing:1px;
+  text-decoration:none;
+  line-height:53px;
+}

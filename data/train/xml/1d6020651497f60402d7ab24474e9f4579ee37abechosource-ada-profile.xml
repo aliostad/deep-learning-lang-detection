@@ -1,0 +1,24 @@
+<profile>
+  <name>EchoSource Ada default profile</name>
+  <language>ada</language>
+  <rules>
+    <rule>
+      <repositoryKey>ada-rule-repository</repositoryKey>
+      <key>com.echosource.ada.gnat.metric.rule1</key>
+    </rule>
+    <rule>
+      <repositoryKey>ada-rule-repository</repositoryKey>
+      <key>com.echosource.ada.gnat.metric.rule2</key>
+    </rule>
+    <rule>
+      <repositoryKey>ada-rule-repository</repositoryKey>
+      <key>com.echosource.ada.gnat.metric.rule3</key>
+    </rule>
+    <rule>
+      <repositoryKey>ada-rule-repository</repositoryKey>
+      <key>com.echosource.ada.gnat.metric.rule4</key>
+    </rule>
+  </rules>
+</profile>
+
+

@@ -1,0 +1,19 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## no-chunk-align.dpatch by  <domas.mituzas@gmail.com>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: No description.
+
+@DPATCH@
+diff -urNad memcached-1.2.8~/slabs.c memcached-1.2.8/slabs.c
+--- memcached-1.2.8~/slabs.c	2009-04-11 03:48:08.000000000 +0000
++++ memcached-1.2.8/slabs.c	2009-04-11 09:24:16.000000000 +0000
+@@ -25,7 +25,7 @@
+ #define POWER_SMALLEST 1
+ #define POWER_LARGEST  200
+ #define POWER_BLOCK 1048576
+-#define CHUNK_ALIGN_BYTES 8
++#define CHUNK_ALIGN_BYTES 1
+ #define DONT_PREALLOC_SLABS
+ 
+ /* powers-of-N allocation structures */

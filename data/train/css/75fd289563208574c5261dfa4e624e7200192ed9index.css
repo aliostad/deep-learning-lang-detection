@@ -1,0 +1,431 @@
+@charset "utf-8";
+
+.wrap{
+	background:url(images/bg_01.jpg) center 0px no-repeat #dadee1;
+}
+
+.wrap .container{
+	/*border:1px solid #ccc;*/
+	/*min-height:560px;*/
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+
+/* 主要内容 --- start */
+.main{
+	/*border:1px solid #ccc;*/
+	width:617px;
+}
+
+.main .hotSale{
+	/*border:1px solid #ccc;*/
+	font-size:18px;
+}
+
+.main .hotSale .saleTitle{
+	color:#b20000;
+	height:23px;
+	line-height:23px;
+}
+
+.main .hotSale .saleList{
+}
+
+.main .hotSale .saleList .saleListUl{
+	margin:0px;
+}
+
+.main .hotSale .saleList .item{
+}
+
+.main .hotSale .saleList .item .keyHref{
+	display:block;
+	height:23px;
+	line-height:23px;
+	color:#333;
+	font-size:16px;
+	margin-left:10px;
+}
+
+.main .hotSale .saleList .item .keyHref:hover{
+	color:#b20000;
+}
+
+.main .hotSale .modelList{
+}
+
+.main .modelList .modelListUl{
+	margin:0px;
+}
+
+.main .modelList .modelListUl .item{
+	margin-top:15px;
+}
+
+
+
+.main .modelList .modelListUl .item .itemCont{
+	background:#ffffff;
+	height:174px;
+}
+
+.main .modelList .modelListUl .item .modelInfo{
+	width:190px;
+}
+
+.main .modelList .modelListUl .item .modelInfo .infoTitle{
+}
+
+.main .modelList .modelListUl .item .modelInfo .infoTitle .titleHref{
+	display:block;
+	height:50px;
+	text-indent:-9999px;
+}
+
+.main .modelList .modelListUl .item .modelInfo .infoTitle .news{
+	background:url(images/news_title_01.gif) 31px 12px no-repeat;
+}
+
+.main .modelList .modelListUl .item .modelInfo .infoTitle .study{
+	background:url(images/news_title_02.gif) 31px 12px no-repeat;
+}
+
+.main .modelList .modelListUl .item .modelInfo .infoTitle .growUp{
+	background:url(images/news_title_03.gif) 31px 12px no-repeat;
+}
+
+.main .modelList .modelListUl .item .modelInfo .infoTitle .message{
+	background:url(images/news_title_04.gif) 31px 12px no-repeat;
+}
+
+.main .modelList .modelListUl .item .modelInfo .infoTitle .sns{
+	background:url(images/news_title_05.gif) 31px 12px no-repeat;
+}
+
+.main .modelList .modelListUl .item .modelInfo .infoCont{
+	height:114px;
+	overflow:hidden;
+	padding:0px 10px 10px 10px;
+}
+
+.main .modelList .modelListUl .item .modelInfo .infoCont .newsItem{
+}
+
+.main .modelList .modelListUl .item .modelInfo .infoCont .newsItem .newsHref{
+	display:block;
+	height:20px;
+	line-height:20px;
+	color:#333333;
+	overflow:hidden;
+	margin-top:3px;
+}
+
+.main .modelList .modelListUl .item .modelPic{
+	width:426px;
+}
+
+.main .modelList .modelListUl .item .modelPic .picture{
+	display:block;
+	width:426px;
+	height:174px;
+}
+/* 主要内容 --- end */
+
+
+
+/* 侧边栏 --- start */
+.sideBar{
+	/*border:1px solid #ccc;*/
+	width:305px;
+	padding-top:10px;
+}
+
+.sideBar .sideBarTitle{
+	background:url(../common/images/info_001.gif) 0px 5px no-repeat;
+	height:28px;
+	line-height:23px;
+	color:#333333;
+	text-indent:20px;
+	font-size:14px;
+}
+
+.sideBar .sideBarCont{
+}
+
+.sideBar .sideBarItem{
+	background:#e3e3e5;
+	margin-top:10px;
+}
+
+.sideBar .sideBarItem .itemCont{
+	border:4px solid #e7e7e7;
+}
+
+.sideBar .date{
+	margin-top:0px;
+}
+
+.sideBar .date .itemCont{
+}
+
+.sideBar .date .itemCont .datePicker{
+	background:url(images/date_bg_01.gif) 0px 0px no-repeat;
+	width:171px;
+	height:155px;
+}
+
+.sideBar .date .itemCont .dateInfo{
+	width:100px;
+	height:155px;
+	text-align:center;
+	margin-left:10px;
+}
+
+.sideBar .date .itemCont .dateInfo span{
+	display:block;
+	height:25px;
+	line-height:25px;
+	color:#333333;
+	font-size:18px;
+}
+
+.sideBar .date .itemCont .dateInfo .infoWeek{
+	height:80px;
+	line-height:90px;
+}
+
+.sideBar .date .itemCont .dateInfo .infoWeek .weekNum{
+	font-size:36px;
+	font-style:normal;
+}
+
+.sideBar .date .itemCont .dateInfo .infoDate{
+}
+
+.sideBar .date .itemCont .dateInfo .infoWweekDay{
+}
+
+.sideBar .sideBarItem .itemCont .studentEnter{
+	display:block;
+	background:url(images/sidebar_bg_01.gif) 0px 0px no-repeat;
+	width:298px;
+	height:164px;
+	text-indent:-9999px;
+}
+
+.sideBar .sideBarItem .itemCont .studentEnter:hover{
+	background:url(images/sidebar_bg_02.gif) 0px 0px no-repeat;
+}
+
+.sideBar .sideBarItem .itemCont .referForm{
+	width:298px;
+	height:164px;
+	
+	position:relative;
+}
+
+.sideBar .sideBarItem .itemCont .referForm .referKey{
+	display:block;
+	border:1px solid #666;
+	border-radius:0px;
+	width:132px;
+	height:24px;
+	color:#999;
+	padding:0px 5px 0px 5px;
+	
+	position:absolute;
+	top:85px;
+	left:50px;
+}
+
+.sideBar .sideBarItem .itemCont .referForm .referBtn{
+	display:block;
+	background:url(../common/images/btn_01.gif) 0px 0px no-repeat;
+	border:none;
+	border-radius:0px;
+	width:54px;
+	height:26px;
+	text-indent:-9999px;
+	padding:0px;
+	
+	position:absolute;
+	top:85px;
+	left:192px;
+}
+
+.sideBar .sideBarItem .itemCont .referForm .referBtn:hover{
+	background:url(../common/images/btn_02.gif) 0px 0px no-repeat;
+}
+
+.sideBar .sideBarItem .itemCont .score{
+	background:url(images/sidebar_bg_03.gif) 0px 0px no-repeat;
+}
+
+.sideBar .sideBarItem .itemCont .schedule{
+	background:url(images/sidebar_bg_04.gif) 0px 0px no-repeat;
+}
+
+.sideBar .sideBarItem .itemCont .chargeForm{
+	background:url(images/sidebar_bg_05.gif)  center 10px no-repeat;
+	width:298px;
+	height:125px;
+	padding-top:40px;
+}
+
+.sideBar .sideBarItem .itemCont .chargeForm .fmItem{
+	margin-top:5px;
+}
+
+.sideBar .sideBarItem .itemCont .chargeForm .fmItem .fmItemLable{
+	width:80px;
+	line-height:20px;
+	color:#333;
+	font-size:14px;
+	text-indent:15px;
+}
+
+.sideBar .sideBarItem .itemCont .chargeForm .fmItem .fmItemCont{
+	width:205px;
+	padding-left:10px;
+}
+
+.sideBar .sideBarItem .itemCont .chargeForm .fmItem .fmItemCont .input{
+	display:block;
+	border:1px solid #666;
+	border-radius:0px;
+	width:178px;
+	height:22px;
+	color:#999;
+	padding:0px 5px 0px 5px;
+	margin:0px;
+}
+
+.sideBar .sideBarItem .itemCont .chargeForm .fmItem .fmItemCont .amountList{
+}
+
+.sideBar .sideBarItem .itemCont .chargeForm .fmItem .fmItemCont .amountList .amount{
+	display:block;
+	border:1px solid #666;
+	background:#fff;
+	width:38px;
+	height:23px;
+	line-height:23px;
+	color:#333;
+	text-align:center;
+	margin-right:10px;
+	cursor:pointer;
+}
+
+.sideBar .sideBarItem .itemCont .chargeForm .fmItem .fmItemCont .amountList .currAmount{
+	border:1px solid #b20000;
+	background:url(../common/images/info_002.gif) 28px 13px no-repeat #ffffff;
+	cursor:default;
+}
+
+.sideBar .sideBarItem .itemCont .chargeForm .fmItem .fmItemCont .price{
+	color:#b20000;
+	font-size:14px;
+}
+
+.sideBar .sideBarItem .itemCont .chargeForm .fmItem .referBtn{
+	display:block;
+	background:url(../common/images/btn_04.gif) 0px 0px no-repeat;
+	border:none;
+	border-radius:0px;
+	width:87px;
+	height:25px;
+	text-indent:-9999px;
+	padding:0px;
+	margin:0px auto;
+}
+
+.sideBar .sideBarItem .itemCont .chargeForm .fmItem .referBtn:hover{
+	background:url(../common/images/btn_03.gif) 0px 0px no-repeat;
+}
+/* 侧边栏 --- end */
+
+
+
+
+/* datepicker --- end */
+.ui-datepicker{
+	position:relative;
+}
+
+.ui-datepicker-prev{
+	display:block;
+	background:url(../common/images/info_008.gif) 0px 0px no-repeat;
+	width:10px;
+	height:7px;
+	text-indent:-9999px;
+	cursor:pointer;
+	
+	position:absolute;
+	top:8px;
+	left:10px;
+}
+
+.ui-datepicker-next{
+	display:block;
+	background:url(../common/images/info_009.gif) 0px 0px no-repeat;
+	width:10px;
+	height:7px;
+	text-indent:-9999px;
+	cursor:pointer;
+	
+	position:absolute;
+	top:8px;
+	right:10px;
+}
+
+.ui-datepicker-title{
+	display:block;
+	width:100px;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+	font-weight:bold;
+	
+	position:absolute;
+	top:2px;
+	left:35px;
+}
+
+.ui-datepicker-calendar{
+	/*display:block;*/
+	width:150px;
+	height:120px;
+	text-align:center;
+	
+	position:absolute;
+	top:25px;
+	left:10px;
+}
+
+.ui-datepicker-calendar a{
+	color:#333333;
+}
+
+.ui-datepicker-current-day{
+	background:#666;
+}
+
+.ui-datepicker-current-day a{
+	color:#fff;
+}
+/* datepicker --- end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+

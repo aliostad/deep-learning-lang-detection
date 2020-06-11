@@ -1,0 +1,42 @@
+#article_write.content_wrap .content_header .content_header_title {
+	width: 46px;
+	height : 40px;
+	padding-top : 15px;
+	margin-left : 60px;
+	float : left;
+	background : url('/images/en/board_title/board_write.png') no-repeat;
+	background-position : center;
+}
+#article_write.content_wrap #editor.content_middle .editor_header {
+	width : 771px;
+	height : 36px;
+	background : url("/images/en/boardHeadBackground.png");
+	margin-bottom : 8px;
+}
+#article_write.content_wrap #editor.content_middle .editor_header #subject {
+	width : 400px;
+	height : 20px;
+	border : #eee solid 1px;
+	margin-top : 5px;
+	margin-left : 20px;
+	display : inline;
+}
+#article_write.content_wrap #editor.content_middle .editor_footer {
+	width : 158px;
+	height : 50px;
+	margin : 0 auto;
+}
+#article_write.content_wrap #editor.content_middle .editor_footer #button_submit{
+	float:left; 
+	width:69px; 
+	height: 28px; 
+	cursor:pointer; 
+	background:url("/images/en/board/button_submit.png");
+}
+#article_write.content_wrap #editor.content_middle .editor_footer #button_cancel{
+	width:69px; 
+	height: 28px; 
+	cursor:pointer; 
+	background:url("/images/en/board/button_cancel.png"); 
+	float: right;
+}

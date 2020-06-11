@@ -1,0 +1,39 @@
+<func id="append">
+   <brief>Append data onto the end of a variable.</brief>
+   <args>
+      <arg id="destination" type="list" isLvalue="1">
+         <desc>Destination 'list' or 'str' variable.</desc>
+      </arg>
+      <arg id="source" type="list">
+         <desc>Source data, any type.</desc>
+      </arg>
+   </args>
+   <lvalue id="status" type="str">
+      <ret id="$ACKNOWLEDGE" status="$ACKNOWLEDGE">
+         <desc>The data was appended.</desc>
+      </ret>
+   </lvalue>
+   <body ref="append_insert.htm" />
+
+   <exceptions>
+      <exception status="%INVALID">
+         <desc>The destination is not a list or str variable.</desc>
+      </exception>
+   </exceptions>
+   <examples>
+      <example>append.hyp</example>
+
+      <example>append_insert.hyp</example>
+   </examples>
+
+   <links>
+      <link>insert</link>
+
+      <link>chop</link>
+
+      <link>remove</link>
+
+      <link>detach</link>
+   </links>
+</func>
+

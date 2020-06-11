@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+. ~/bin/lib/require.bash
+
+require packages
+
+ensure-packages rlwrap
+
+LOCAL_REPO=~/.m2/repository/org/clojure
+REMOTE_REPO=http://repo1.maven.org/maven2/org/clojure
+VERSION=1.7.0
+
+if [ ! -e $LOCAL_REPO/clojure/$VERSION/clojure-$VERSION.jar ]; then
+    mkdir -p $LOCAL_REPO/clojure/$VERSION/
+    wget -P $LOCAL_REPO/clojure/$VERSION/ -U "" \
+        $REMOTE_REPO/clojure/$VERSION/clojure-$VERSION.jar \
+        $REMOTE_REPO/clojure/$VERSION/clojure-$VERSION.jar.md5 \
+        $REMOTE_REPO/clojure/$VERSION/clojure-$VERSION.jar.sha1 \
+        $REMOTE_REPO/clojure/$VERSION/clojure-$VERSION.pom \
+        $REMOTE_REPO/clojure/$VERSION/clojure-$VERSION.pom.md5 \
+        $REMOTE_REPO/clojure/$VERSION/clojure-$VERSION.pom.sha1
+fi
+
+exec rlwrap java -Xmx1g $JAVA_OPTS -cp .:$LOCAL_REPO/clojure/$VERSION/clojure-$VERSION.jar clojure.main $@

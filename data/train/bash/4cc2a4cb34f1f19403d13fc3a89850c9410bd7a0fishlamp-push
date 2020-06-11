@@ -1,0 +1,38 @@
+#!/bin/bash
+
+
+MY_PATH="`dirname \"$0\"`"
+MY_PATH="`( cd \"$MY_PATH\" && pwd )`"
+source "$MY_PATH/fishlamp-shared.sh"
+
+count=1
+total=${#REPO_LIST[@]}
+for repo in ${REPO_LIST[@]}; do
+	dir="`basename $repo`"
+
+	echo ""
+	echo "[!] Pushing repo: $repo ($count of $total)"
+	
+	if [ -d "$dir" ]; then
+		pushd "$dir" > /dev/null
+
+		current_branch=`git rev-parse --abbrev-ref HEAD` || { echo "unable to get current branch in: $repo"; exit 1; }
+
+		run_command "git add -A" "unable to add all in: $repo"
+		run_command "git commit"
+
+		run_command "git push origin $current_branch" "unable to push origin $current_branch in: $repo"
+
+	
+# 		echo_tabbed "`git add -A || { echo "unable to add all in: $repo"; exit 1; }`"
+# 		echo_tabbed "`git commit`"
+# 
+# 		echo_tabbed "`git push origin $current_branch 2>&1`" || { echo "unable to push origin $current_branch in: $repo"; exit 1; }
+
+# 		echo_tabbed "`git push origin $current_branch || { echo "unable to push origin $current_branch in: $repo"; exit 1; }`"
+
+		popd > /dev/null
+	fi
+
+	count=`expr $count + 1` 
+done

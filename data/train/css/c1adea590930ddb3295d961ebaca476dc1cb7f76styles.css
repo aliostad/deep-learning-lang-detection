@@ -1,0 +1,391 @@
+
+.center {text-align:center;}
+.align-right {text-align:right;}
+.underline {text-decoration:underline;}
+
+a:hover {
+	text-decoration:none;
+	cursor:pointer !important;
+}
+h1 {
+	font-weight:bold;
+}
+.post-wrapper {
+	padding:0;
+}
+.nav > li > a:hover{
+    background-color:#888 !important;
+    color:white !important;
+}
+.nav {
+}
+
+.top-nav {
+	margin:0;
+}
+.navbar-form {
+	padding:10px;
+}
+.navbar-brand {
+	padding:5px;
+}
+
+.header-login-msg {
+	margin:20px;
+}
+
+.ui-autocomplete {
+	z-index:10000;
+}
+
+.tag-filter {
+	margin-bottom:20px;
+}
+.favorite-form {
+	display:inline-block;
+}
+.delete-favorite-form {
+	display:inline-block;
+}
+
+.board-wrapper {
+	margin-bottom:50px;
+}
+.board-preview > .caption {
+	padding-top:0;
+}
+
+.board-title {
+	font-weight:bold;
+	font-size:16px;
+}
+
+
+.board-article {
+	border-top:1px solid #bbb;
+	padding-left:0;
+	padding-right:0;
+}
+
+.board-article-title,.board-article-date {
+	display:inline-block;
+}
+
+.main-jumbotron {
+	height:300px;
+	background-image:url('../image/main-jumbotron.png');
+	background-position:center;
+	background-size:cover;
+}
+.logout-form {
+	margin:0;
+}
+.logout-form button{
+	height:30px;
+	font-size:12px;
+}
+.login-panel {
+	padding:10px;
+}
+.login-panel .login-header {
+	color:#666;
+	font-size:17px;
+	font-weight:bold;
+}
+.login-panel .login-footer {
+	margin-top:10px;
+}
+.login-panel .login-btn button{
+	margin-top:10px;
+	width:100%;
+}
+.login-panel input.form-control {
+	height:25px;
+	margin:auto;
+}
+
+
+.featured .board {
+	border: 1px solid #bbb;
+	box-shadow:0px 0px 3px #aaa;
+	border-radius:20px;
+	border-top-left-radius:0;
+
+	margin-bottom:20px;
+}
+
+.featured .board.notice {
+	min-height:100px;
+}
+.featured .board.all {
+	min-height:200px;
+}
+.featured .board-posts > div{
+	display:inline-block;
+	float:left;
+}
+.featured .board-name {
+	font-size:16px;
+	font-weight:bold;
+	margin-top:5px;
+}
+.featured .board-posts .board-post-id {
+	width:10%;
+}
+.featured .board-posts .board-post-title {
+	overflow:hidden;
+	white-space: nowrap;
+	max-width:65%;
+	padding-left:5px;
+}
+.featured .board-posts .board-post-comments {
+	padding-left:5px;
+}
+.featured .board-posts .board-post-timestamp {
+	float:right;
+}
+
+
+.board-header {
+	background-color:#EEE;
+	text-align:center;
+	font-weight:bold;
+}
+.board-header > div {
+	border-right:1px solid white;
+	border-left:1px solid white;
+}
+.board-header > div.f {
+	border-left:0;
+}
+.board-header > div.l {
+	border-right:0;
+}
+.board-content {
+	text-align:center;
+	padding:5px 0px;
+	border-bottom:1px solid #DDD;
+}
+.board-content.current {
+	background-color:#EEE;
+}
+.board-content.current.f {
+	border-top:1px solid #DDD;
+}
+.board-content .title {
+	text-align:left;
+	cursor:pointer;
+}
+.board-content .title:hover {
+	text-decoration:underline;
+}
+.board-toolbox {
+	padding:10px 0px;
+}
+.post-info {
+	padding:5px;
+	border-bottom:2px dotted #EEE;
+}
+
+.post-header {
+	background-color:#EEE;
+	text-align:center;
+	height:30px;
+	line-height:30px;
+	font-size:18px;
+}
+.post-content {
+	padding:10px;
+	border-bottom:2px solid #DDD;
+	min-height:100px;
+	word-wrap:break-word;
+}
+.post-tags {
+	margin:20px;
+	margin-top:10px;
+	margin-bottom:0;
+}
+.post-tag {
+	height: 0;
+	color:white;
+	font-weight:bold;
+	line-height: 30px;
+	border-radius:5px;
+	border-left: 10px solid transparent;
+    border-bottom: 20px solid #4c4c4c; 
+	padding:5px;
+	display:inline-block;
+}
+
+.post-tag.header {
+	margin-bottom:10px;
+	margin-right:10px;
+	line-height: 56px;
+	border-left: 15px solid transparent;
+    border-bottom: 40px solid #4c4c4c; 
+    padding:8px;
+    font-size:26px;
+}
+.post-tag.header i {
+	font-size:20px;
+	vertical-align:middle;
+}
+input[name=new-filter] {
+	width:150px;
+	height:40px;
+	margin:0;
+	vertical-align:super;
+	font-size:16px;
+}
+select[name=option] {
+	margin-bottom:10px;
+	background:white;
+	height:40px;
+	line-height:40px;
+	font-size:16px;
+	margin-right:10px;
+	vertical-align: super;
+}
+.post-tag:hover {
+	border-bottom-color:#888888;
+	color:white;
+}
+
+.post-comments {
+	padding:10px 10px;
+	border-bottom:2px solid #DDD;
+}
+.comment-write {
+	width:90%;
+	height:80px;
+	padding:10px;
+	resize:none;
+	border-top-left-radius:15px;
+	border-bottom-left-radius:15px;
+}
+.comment-write:focus {
+	box-shadow:none;
+	outline:none;
+}
+.comment-submit {
+	width:10%;
+	height:80px;
+	vertical-align:bottom;
+	border-radius:15px;
+	border-top-left-radius:0;
+	border-bottom-left-radius:0;
+}
+.comment-submit.qnamode {
+	border-radius:5px;
+	height:40px;
+	width:100px;
+}
+
+.comment {
+	margin:1px;
+	padding:5px;
+	border-bottom:1px solid #DDD;
+}
+.comment.first {
+	border-top:1px solid #DDD;
+}
+.comment.deleted {
+	background-color:#EEE;
+}
+.comment.deleted .comment-body {
+	text-align:center;
+	line-height:40px;
+	padding-top:0px;
+}
+.comment .comment-head {
+	text-align:left;
+	padding-bottom:5px;
+}
+.comment .comment-head div {
+	display:inline-block;
+}
+.comment .comment-head .comment-user {
+	font-weight:bold;
+}
+.comment .comment-body {
+	border-top:1px dotted #DDD;
+	min-height:40px;
+	padding-top:10px;
+}
+.comment .comment-edit-body {
+	display:none;
+	text-align:right;
+}
+.comment .comment-edit-body button {
+	margin-top:5px;
+}
+.comment .comment-tool {
+	padding:0;
+	vertical-align:middle;
+	width:110px;
+	float:right;
+}
+.comment .comment-tool button {
+	width:30px;
+	margin:3px;
+	padding:10px 5px;
+}
+.comment form {
+	display:inline;
+}
+#write-post .write-label,
+#edit-post .write-label {
+	font-size:17px;
+	font-weight:bold;
+}
+#write-post .write-field input,
+#write-post .write-field textarea,
+#edit-post .write-field input,
+#edit-post .write-field textarea {
+	width:100%;
+	resize:none;
+	box-shadow:none;
+}
+#write-post .write-field textarea,
+#edit-post .write-field textarea {
+	height:40%;
+}
+#write-post .write-field input:focus,
+#write-post .write-field textarea:focus,
+#edit-post .write-field input:focus,
+#edit-post .write-field textarea:focus {
+	outline:none;
+	box-shadow:none;
+	border:1px solid black;
+}
+#write-post .write-field input[name=tags],
+#edit-post .write-field input[name=tags]{
+	border:0;
+	border-bottom:1px solid black;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	padding-left:5px;
+	margin-top:5px;
+}
+.tag {
+	display:inline-block;
+	border:1px solid #DDD;
+	padding:5px;
+	margin:2px;
+}
+.remove-tag {
+	cursor:pointer;
+}
+#register .register-label {
+	font-size:17px;
+	font-weight:bold;
+}
+#register .register-label,
+#register .register-field input {
+	width:100%;
+}
+
+.board-nav a {
+	margin-left:5px;
+	margin-right:5px;
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csd:careServicesFunction xmlns:ev="http://www.w3.org/2001/xml-events"
+  xmlns:xforms="http://www.w3.org/2002/xforms"
+  xmlns:hfp="http://www.w3.org/2001/XMLSchema-hasFacetAndProperty"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:csd="urn:ihe:iti:csd:2013" 
+  urn="urn:openhie.org:openinfoman:delete_potential_duplicate" 
+  content-type="text/xml">
+  <csd:description> 
+    Deletes potential duplicate record reference.  This is done by removing a <b>&lt;csd:otherID/&gt;</b> element on the potetnial duplicate record which references the master record.  
+    
+    This a <b>&lt;csd:otherID/&gt;</b> is characterized as follows:
+    <ul>
+      <li>The <b>@assigningAuthorityName</b> attribute will be the fixed value<b>urn:openhie.org:openinfoman</b> attribute of the master record</li>      
+      <li>The <b>@code</b> attribute will be the fixed value 'duplicate' to indicate this is for marking a duplicate</li>
+      <li>The <b>text()</b> value will be the entity ID used to reference to the master record for the entity</li>
+    </ul>
+
+    A Care Services Request can be submitted to delete the mark that the record as potential duplicate with the following request parameters:
+    <ul>
+      <li><b>&lt;masterEntity/&gt;</b> should have attribute <b>@entityID</b> which contains the entity ID of the master record that the duplicate record should refer to</li>
+      <li><b>&lt;duplicateEntity/&gt;</b> should have attribute <b>@entityID</b> which contains the entity ID of the  duplicate record</li>
+    </ul>
+
+  </csd:description>
+  <csd:definition ><xi:include parse='text' href='delete_potential_duplicate.xq'/></csd:definition>
+  <xforms:instance>
+    <masterEntity/>
+    <duplicateEntity/>
+  </xforms:instance>
+
+</csd:careServicesFunction>

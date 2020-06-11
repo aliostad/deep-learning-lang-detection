@@ -1,0 +1,26 @@
+#! /bin/sh
+
+# This script is given the name of an MG 1.2 collection, assumed to be
+# in the current directory.
+# It removes those files which are not required to execute mgquery.
+# They can be recovered by rebuilding the collection, if necessary.
+
+files="${1}.text.dict ${1}.invf.dict  ${1}.invf.idx ${1}.text.stats"
+files=$files" ${1}.text.idx ${1}.weight ${1}.invf.chunk ${1}.invf.chunk.trans"
+files=$files" ${1}.invf.dict.hash ${1}.trace"
+
+for file in $files ; do 
+  if test -f $file ; then rm $file ; fi
+done
+
+
+ 
+
+
+
+
+
+
+
+
+

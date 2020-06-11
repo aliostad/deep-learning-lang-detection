@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<apiPackage id="flashx.textLayout"><apiName>flashx.textLayout</apiName><apiDetail/><apiClassifier id="flashx.textLayout:BuildInfo"><apiName>BuildInfo</apiName><shortdesc>
+	 包含当前内部版本的识别信息。</shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 包含当前内部版本的识别信息。这不可能是在最终 API 中显示该信息的形式。
+	 </apiDesc></apiClassifierDetail><apiValue id="flashx.textLayout:BuildInfo:VERSION"><apiName>VERSION</apiName><shortdesc>
+		 包含当前版本编号。</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>1.0</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 包含当前版本编号。 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="flashx.textLayout:BuildInfo:kBranch"><apiName>kBranch</apiName><shortdesc>
+		 包含分支名称。</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>main</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 包含分支名称。 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="flashx.textLayout:BuildInfo:kBuildNumber"><apiName>kBuildNumber</apiName><shortdesc>
+		 包含当前内部版本编号。</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>571 (732141)</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 包含当前内部版本编号。它是静态的，可以使用 <codeph>BuildInfo.kBuildNumber</codeph> 进行调用。
+		 <p>字符串格式：“BuildNumber (Changelist)”</p>
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

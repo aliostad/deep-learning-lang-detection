@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_process_task" default="compile.module.process_task">
+  <dirname property="module.process_task.basedir" file="${ant.file.module_process_task}"/>
+  
+  <property name="module.jdk.home.process_task" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.process_task" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.process_task" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.process_task" value="-encoding x-windows-874 -source 1.7 ${compiler.args}"/>
+  
+  <property name="process_task.output.dir" value="${module.process_task.basedir}/out/production/Process_Task"/>
+  <property name="process_task.testoutput.dir" value="${module.process_task.basedir}/out/test/Process_Task"/>
+  
+  <path id="process_task.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="process_task.module.production.classpath">
+    <path refid="${module.jdk.classpath.process_task}"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  <path id="process_task.runtime.production.module.classpath">
+    <pathelement location="${process_task.output.dir}"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  <path id="process_task.module.classpath">
+    <path refid="${module.jdk.classpath.process_task}"/>
+    <pathelement location="${process_task.output.dir}"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  <path id="process_task.runtime.module.classpath">
+    <pathelement location="${process_task.testoutput.dir}"/>
+    <pathelement location="${process_task.output.dir}"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.process_task">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.process_task">
+    <patternset refid="excluded.from.module.process_task"/>
+  </patternset>
+  
+  <path id="process_task.module.sourcepath">
+    <dirset dir="${module.process_task.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.process_task" depends="compile.module.process_task.production,compile.module.process_task.tests" description="Compile module Process_Task"/>
+  
+  <target name="compile.module.process_task.production" depends="register.custom.compilers" description="Compile module Process_Task; production classes">
+    <mkdir dir="${process_task.output.dir}"/>
+    <javac2 destdir="${process_task.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.process_task}/javac">
+      <compilerarg line="${compiler.args.process_task}"/>
+      <bootclasspath refid="process_task.module.bootclasspath"/>
+      <classpath refid="process_task.module.production.classpath"/>
+      <src refid="process_task.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.process_task"/>
+    </javac2>
+    
+    <copy todir="${process_task.output.dir}">
+      <fileset dir="${module.process_task.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.process_task.tests" depends="register.custom.compilers,compile.module.process_task.production" description="compile module Process_Task; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.process_task" description="cleanup module">
+    <delete dir="${process_task.output.dir}"/>
+    <delete dir="${process_task.testoutput.dir}"/>
+  </target>
+</project>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<types name="UML" description="" version="1.0" prefix="Uml">
+  <type name="Integer" description="">
+    <mapping for="C#" type="int"></mapping>
+    <mapping for="VB.NET" type="Integer"></mapping>
+    <mapping for="MSSQL" type="int"></mapping>
+  </type>
+  <type name="Real" description="">
+    <mapping for="C#" type="double"></mapping>
+    <mapping for="VB.NET" type="Double"></mapping>
+    <mapping for="MSSQL" type="float"></mapping>
+  </type>
+  <type name="String" description="">
+    <mapping for="C#" type="string"></mapping>
+    <mapping for="VB.NET" type="String"></mapping>
+    <mapping for="MSSQL" type="varchar"></mapping>
+    <mapping for="MSSQL" type="nvarchar"></mapping>
+    <mapping for="MSSQL" type="char"></mapping>
+    <mapping for="MSSQL" type="nchar"></mapping>
+  </type>
+  <type name="Boolean" description="">
+    <mapping for="C#" type="bool"></mapping>
+    <mapping for="VB.NET" type="Boolean"></mapping>
+    <mapping for="MSSQL" type="bit"></mapping>
+  </type>
+</types>

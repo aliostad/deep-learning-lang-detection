@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+    <extension
+         point="org.eclipse.ui.services">
+      <serviceFactory
+            factoryClass="org.dawnsci.plotting.services.PlotImageService">
+         <service
+               serviceClass="org.eclipse.dawnsci.plotting.api.image.IPlotImageService"></service>
+      </serviceFactory>
+      <serviceFactory
+            factoryClass="org.dawnsci.plotting.services.PlotImageService">
+         <service
+               serviceClass="org.eclipse.dawnsci.plotting.api.image.IFileIconService">
+         </service>
+      </serviceFactory>
+      <serviceFactory
+            factoryClass="org.dawnsci.plotting.services.ImageService">
+         <service
+               serviceClass="org.eclipse.dawnsci.plotting.api.histogram.IImageService">
+         </service>
+      </serviceFactory>
+   </extension>
+
+</plugin>

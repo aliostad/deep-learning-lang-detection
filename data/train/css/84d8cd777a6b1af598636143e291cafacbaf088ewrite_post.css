@@ -1,0 +1,56 @@
+#write-post {
+    padding:50px;
+    background-color:#336699;
+}
+
+.write-post-table {
+    margin:0px auto;
+}
+
+.write-post-table th,td {
+    padding:5px;
+    color:#EEE;
+    font-size:14px;
+}
+
+.write-post-table #subject {
+    border:1px solid #AAA;
+    width:400px;
+    height:35px;
+    font-size:20px;
+}
+
+.write-post-table textarea {
+    border:1px solid #AAA;
+    font-size:16px;
+}
+
+.write-post-table #submit {
+    width:70px;
+    height:35px;
+    background-color:#339966;
+    color:#EEE;
+    border:none;
+}
+
+.write-post-table #submit:hover {
+    background-color:#ff8000;
+    color:#336699;
+}
+
+.write-post-table select {
+    background-color:#339966;
+    border:none;
+    width:80px;
+    height:30px;
+    color:#EEE;
+}
+
+.write-post-table select:hover {
+    background-color:#FF8000;
+}
+
+.write-post-table option {
+    background-color:#339966;
+    color:#EEE;
+}

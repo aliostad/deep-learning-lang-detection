@@ -1,0 +1,101 @@
+
+#usernames {
+	display: none;
+}
+
+button[disabled] {
+	opacity: 0.5;
+}
+
+.legend {
+	padding-left: 20px;
+	font-size: 0.8em;
+}
+.monitor {
+	position: relative;
+}
+.loading {
+    position: absolute;
+    top:  150px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%,-50%);
+}
+.loading img {
+	animation: spin 1.5s infinite linear;
+}
+svg {
+	width: 100%;
+	height: 300px;
+	font-size: 0.7em;
+	visibility: hidden;
+}
+
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+
+.line { fill: none; }
+
+.heapTotal {
+	color: steelblue;
+	stroke: steelblue;
+}
+.heapUsed {
+	color: firebrick;
+	stroke: firebrick;
+}
+.rss {
+	color: lightslategrey;
+	stroke: lightslategrey;
+}
+.load {
+	color: darkmagenta;
+	stroke: darkmagenta;
+}
+.dbsize {
+	color: #444;
+	stroke: #444;
+}
+.load text {
+	stroke: none;
+	fill: darkmagenta;
+}
+.axis.load path,
+.axis.load line {
+	stroke: darkmagenta;
+}
+.dbsize text {
+	stroke: none;
+	fill: #444;
+}
+.axis.dbsize path,
+.axis.dbsize line {
+	stroke: #444;
+}
+
+.legend.startup {
+	color: forestgreen;
+}
+.legend.shutdown {
+	color: crimson;
+}
+
+.startup line {
+	shape-rendering: crispEdges;
+	stroke: forestgreen;
+	stroke-width: 2px;
+	opacity: 0.4;
+}
+
+.shutdown line {
+	shape-rendering: crispEdges;
+	stroke: crimson;
+	stroke-width: 2px;
+	opacity: 0.4;
+	/*opacity: 0.5;*/
+}

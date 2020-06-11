@@ -1,0 +1,106 @@
+
+
+
+
+.commentService{
+    overflow: hidden;
+    padding: 25px 35px 30px;
+    border-top: 1px solid #e3ebf1;
+    position: relative;
+    color: #6a6b6c;
+}
+.emptyFieldService{
+    padding: 0px;
+    height: 80px;
+    position: static !important;
+}
+.commentService:hover{
+    background-color: #f8fbfd;
+}
+.commentServiceName a{
+    color:#2098D1;
+    font-size: 20px;
+    padding-right: 45px;
+}
+.commentServiceName{
+    margin-bottom: 20px;
+}
+.commentServicePrice:before {
+    left: -6px;
+    background-position: 0 -85px;
+}
+.commentServicePrice:after {
+    right: -6px;
+    background-position: -7px -85px;
+}
+.commentPhoto img{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+}
+.commentServiceLeft{
+    float: left;
+    width: 250px;
+}
+.commentServiceRight{
+        margin-top: 65px;
+    margin-left: 260px;
+}
+.commentServiceTime{
+    margin: 5px;
+}
+.commentServiceName a:hover{
+    text-decoration: underline !important;
+}
+.commentServiceTime,
+.commentServiceLocation{
+    text-align: right;
+}
+.commentServiceTime i,
+.commentServiceLocation i,
+.commentPhotoOtziv i{
+  color:#2098D1;  
+}
+.commentPhotoName a{
+    color:#2098D1;
+}
+.commentPhotoName{
+    margin: 10px 0 5px 0;
+}
+
+.commentServiceCrumps{
+    text-align: center;
+    font-size: 17px;
+    line-height: 26px;
+    padding: 55px 0 50px;
+    border-top: 1px solid #e3ebf1;
+}
+.commentServiceCrumps ul li{
+        padding: 3px 7px;
+    display: inline-block;
+}
+.commentServiceCrumps ul li a{
+    border-bottom: 1px solid rgba(64,153,251,.5);
+    color: #4099fb;
+    line-height: 20px;
+}
+.commentServiceCrumpsActive{
+    background-color: #fef2b3;
+    font-weight: 700;
+}
+.commentServiceCrumpsActive a{
+    border-bottom: none !important;
+    color: #000 !important;
+}
+.commentServiceCrumps ul{
+    margin-bottom: 20px;
+}
+.logoInFooter:hover{
+    color:#fff;
+}
+.commentServiceCrumps ul li a:hover{
+    border-bottom:0;
+}
+.forAbout-setvice{
+    width: 100%;
+}

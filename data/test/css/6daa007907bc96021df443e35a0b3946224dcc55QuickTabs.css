@@ -1,0 +1,40 @@
+﻿/* GLOBAL STYLES */
+
+.product-details-page .full-description,
+.product-details-page .product-specs-box, 
+.ui-tabs .product-specs-box .title {
+    display: none;
+}
+.ui-tabs .product-specs-box,
+.ui-tabs .product-reviews-page,
+.ui-tabs .full-description  {
+    display: block;
+}
+
+/* THEME STYLES */
+
+.product-essential {
+    border-bottom: 0;
+    margin-bottom: 10px;
+}
+.full-description {
+	margin-bottom: 0;
+}
+.product-specs-box {
+	margin-bottom: 0;
+}
+.product-specs-box .data-table {
+	margin-bottom: 0;
+	background: none;
+	padding-bottom: 0;
+    box-shadow: none;
+}
+
+.write-review .form-fields {
+    box-shadow: none;
+}
+    .write-review .form-fields .title {
+        margin-bottom:0;
+        padding-bottom: 10px;
+        border-bottom: 1px dashed #797979;
+    }

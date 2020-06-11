@@ -1,0 +1,39 @@
+#!/bin/bash
+
+DATA_DIR=$(dirname $0)/../data
+SAVE_TARBALL="$DATA_DIR"/cfg_save.tgz
+AUTH_TARBALL="$DATA_DIR"/auth_save.tgz
+ETC="/etc"
+
+SAVE_FILES="init init.d rc.local rc0.d rc1.d rc2.d rc3.d rc4.d rc5.d rc6.d rcS.d"
+SAVE_FILES="$SAVE_FILES systemd"
+SAVE_FILES="$SAVE_FILES hosts.allow hosts.deny"
+AUTH_FILES="group group- gshadow gshadow- passwd passwd- shadow shadow- sudoers sudoers.d"
+
+
+backup() {
+  tar cfz "$SAVE_TARBALL" -C "$ETC" $SAVE_FILES
+  tar cfz "$AUTH_TARBALL" -C "$ETC" $AUTH_FILES
+}
+
+restore() {
+  tar xf "$SAVE_TARBALL" -C "$ETC"
+  #tar xf "$AUTH_TARBALL" -C "$ETC"
+}
+
+print_help() {
+  echo "Usage: $0 [backup | restore]"
+}
+
+
+case $1 in
+  backup)
+    backup
+    ;;
+  restore)
+    restore
+    ;;
+  *)
+    print_help
+    ;;
+esac

@@ -1,0 +1,48 @@
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map_canvas { height: 100% }
+
+#message {
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.error {
+  background-color: #b94a48;
+}
+
+.warn {
+  background-color: #f89406;
+}
+
+.success {
+  background-color: #468847;
+}
+
+#message span, #message div {
+  padding: 16px;
+}
+
+#left {
+  float: left;
+}
+
+#right {
+  float: right;
+}
+
+#message {
+  *zoom: 1;
+}
+#message:before,
+#message:after {
+  display: table;
+  content: "";
+}
+#message:after {
+  clear: both;
+}

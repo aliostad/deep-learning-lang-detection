@@ -1,0 +1,232 @@
+/* 전체 (wrapper)*/
+#msgWrapper{
+	border     : 1px #D3D4D5 solid;
+	width       : 800px;
+	position    : relative;
+	margin-right: auto;
+	margin-left : auto;
+	margin-top : 30px;
+	padding : 80px 0 40px 0;
+	font-size : 0.9em;
+}
+
+#msgMain_search{
+	padding: 5px;
+	width : 600px;
+	border:1px #D3D4D5 solid;/* 버튼 */
+	margin-bottom : 20px;
+	margin-left : 100px;
+	text-align : center;
+}
+
+/* 	좌측 (nav) */
+#msgNav{
+	*border:1px red solid; 
+	float : left;
+	display : block;
+	margin-left:100px;
+	width:80px;
+	height:500px;   
+	padding:0 15px 15px 15px;
+}
+
+/* #writeMsgDiv { */
+/* 	border : 1px #D3D4D5 solid; */
+/* 	*border-bottom : 1px #0995E0 solid; */
+/* 	display : block; */
+/* 	width : 80px; */
+/* 	height : 30px; */
+/* 	margin : 0 auto 5px auto; */
+/* 	text-align : center; */
+/* 	line-height : 30px; */
+/* 	font-size : 1em; */
+/* } */
+
+#msgNav_menuList{
+	*border : 1px red solid;
+	width:120px;
+	text-align : center;
+}
+
+.msgNavBtnBox {
+	border : 1px #D3D4D5 solid;
+	display : block;
+	width : 80px;
+	height : 30px;
+	line-height : 30px;
+	margin-bottom : 15px;
+	line-height : 30px;
+	font-size : 1em;
+}
+
+.messageBoxCount {
+	*border : 1px blue solid;
+	display : block;
+	position : relative;
+	left : 71px;
+	top : -40px;
+	width : 20px;
+	height : 20px;
+	color : #FFF;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+#unreadUserMsgCount {
+	*border : 1px red solid;
+	width : 20px;
+	height : 20px;
+	top : -65px;
+	margin-left : -1px;
+}
+
+#unreadSysMsg {
+	
+}
+
+#unreadSysMsgCount {
+	width : 20px;
+	height : 20px;
+	top : -65px;
+}
+
+#receivedBoxBtn {
+	height : 30px;
+}
+
+#sysReceivedBoxBtn {
+	height : 30px;
+}
+
+/* 메인 (main) */
+#msgMain{
+	*border:1px blue solid;
+	float : right;
+	display : block;
+	margin: 0px 100px 10px 0px;
+	width:450px;
+	height:500px; 
+}
+
+#msgTable {
+	width : 450px;
+	text-align : center;
+}
+
+#msgTable tr {
+	height : 30px;	
+}
+
+#msgTable th {
+	border    : 1px #D3D4D5 solid;
+}
+
+#msgTable td {
+	border: 1px #D3D4D5 solid;
+	*width : 80px;
+}
+
+/* 메세지 쓰기 팝업 */
+#writeMsgPopupDiv {
+	display : none;
+}
+
+/* 팝업창  */
+#writeMsgDialog {
+	display : block;
+	margin: 30px auto 0 auto;
+}
+
+#writeMsgDialog input {
+	border : 1px solid #EBEBEB;
+	*outline : thin solid #D3D4D5;
+	padding-left : 15px;
+}
+
+#writeMsgDialog input:focus {
+	*outline : thin solid #0995E0;
+	border : 1px solid #0995E0;
+}
+
+#writeMsgDialog textarea {
+	border : 1px solid #EBEBEB;
+	*outline : thin solid #D3D4D5;
+	padding-left : 15px;
+}
+
+#writeMsgDialog textarea:focus {
+	border : 1px solid #0995E0;
+	*outline : thin solid #D3D4D5;
+	padding-left : 15px;
+}
+
+/* 메세지 읽기 팝업 */
+#readMsgPopupDiv {
+	display : none;
+}
+
+
+#readMsgDialog input {
+	border : 1px solid #EBEBEB;
+	*outline : thin solid #D3D4D5;
+	padding-left : 15px;
+}
+
+#readMsgDialog input:focus {
+	*outline : thin solid #0995E0;
+	border : 1px solid #0995E0;
+}
+
+#readMsgDialog textarea {
+	border : 1px solid #EBEBEB;
+	*outline : thin solid #D3D4D5;
+	padding-left : 15px;
+}
+
+#readMsgDialog textarea:focus {
+	border : 1px solid #0995E0;
+	*outline : thin solid #D3D4D5;
+	padding-left : 15px;
+}
+
+#msgPaging {
+	
+	display : block;
+	width : 150px;
+	text-align : center;
+	margin : 0 auto;
+}
+
+#messageClear {
+	clear : both;
+	display : block;
+	width : 100%;
+	height : 2px;
+	*border : 1px red solid;
+}
+
+.msgInput {
+	display : block;
+	width : 80%;
+	height : 40px;
+	margin : 0 auto;
+}
+
+.popupContent {
+	display : block;
+	width : 80%;
+	height : 200px;
+	margin : 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+

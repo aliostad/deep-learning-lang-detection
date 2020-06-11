@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<p><br/>
+@await Component.InvokeAsync("BestPhone")
+</p>
+<p>
+    <br />
+    @await Component.InvokeAsync("MinPricePhone")
+</p>
+<p>
+    <br />
+@await Component.InvokeAsync("PhonePrices", new { maxprice = 55000 })</p>
+<p>@await Component.InvokeAsync("PhonePrices", new { maxprice = 60000, minprice = 20000 })</p>
+
+<p>
+    <br />
+    @await Component.InvokeAsync("BestPhone3")
+</p>
+
+<hr />
+<p>
+    <br />
+    @await Component.InvokeAsync("PhonesList", new { maxprice = 55000 })
+
+</p>
+<hr />
+@await Component.InvokeAsync("Header")
+
+<hr />
+@await Component.InvokeAsync("PhonesList2")
+
+
+

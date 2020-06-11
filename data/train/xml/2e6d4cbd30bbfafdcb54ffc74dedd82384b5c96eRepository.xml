@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net" default-autowire="constructor">
+
+  <object id="AuthenticationClientRepository" type="KotikoBlog.Repository.Authentication.AuthenticationClientRepository.AuthenticationClientRepository, KotikoBlog.Repository">
+    <property name="SessionFactory" ref="NHibernateSessionFactory" />
+  </object>
+  
+  <object id="AuthenticationUsersRepository" type="KotikoBlog.Repository.Authentication.AuthenticationUsersRepository.AuthenticationUsersRepository, KotikoBlog.Repository">
+    <property name="SessionFactory" ref="NHibernateSessionFactory" />
+  </object>
+
+  <object id="AuthenticationRefreshTokenRepository" type="KotikoBlog.Repository.Authentication.AuthenticationRefreshTokenRepository.AuthenticationRefreshTokenRepository, KotikoBlog.Repository">
+    <property name="SessionFactory" ref="NHibernateSessionFactory" />
+  </object>
+
+  <object id="BlogPostRepository" type="KotikoBlog.Repository.BlogPost.BlogPostRepository, KotikoBlog.Repository">
+    <property name="SessionFactory" ref="NHibernateSessionFactory" />
+  </object>
+
+  <object id="BlogCategoryRepository" type="KotikoBlog.Repository.BlogCategory.BlogCategoryRepository, KotikoBlog.Repository">
+    <property name="SessionFactory" ref="NHibernateSessionFactory" />
+  </object>
+
+  <object id="BlogTagRepository" type="KotikoBlog.Repository.BlogTag.BlogTagRepository, KotikoBlog.Repository">
+    <property name="SessionFactory" ref="NHibernateSessionFactory" />
+  </object>
+  
+</objects>

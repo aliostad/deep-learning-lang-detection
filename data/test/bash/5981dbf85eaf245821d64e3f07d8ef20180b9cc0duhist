@@ -1,0 +1,53 @@
+#!/bin/bash
+
+set -e
+
+function usage() {
+  echo "Usage:"
+  echo "$0 --snapshot"
+  echo
+  echo "Arguments:"
+  echo "  --snapshot                  Configuration mode, sometimes called 'environment'."
+}
+
+REPO=/var/lib/duhist
+
+function init_git_repo() {
+  mkdir -p $REPO
+  cd $REPO
+  git init
+}
+
+function commit_snapshot() {
+  cd $REPO
+  git add .
+  git commit -m "Snapshot"
+}
+
+function take_snapshot() {
+  if [ ! -d $REPO ] ; then
+    init_git_repo
+  fi
+  if [ -r /etc/duhist/exclude ] ; then
+    cat /etc/duhist/exclude > $REPO/exclude
+    $exclude_param=--exclude-from=/etc/duhist/exclude
+  else
+    echo > $REPO/exclude
+  fi
+  du $exclude_param / | sort -k 2 > $REPO/usage
+  commit_snapshot
+}
+
+if [ $# -eq 0 ] ; then
+  usage
+  exit 1
+fi
+
+while [ $# -gt 0 ]; do
+  case $1 in
+    --snapshot)    take_snapshot;                       exit 0 ;;
+    --help)        usage;                       exit 0 ;;
+    *)             invalid_arg $1;            					shift ;;
+  esac
+done
+

@@ -1,0 +1,47 @@
+/* Hide some stuff */
+#header,
+#nav,
+#breadcrumbs,
+#footer,
+#page-homes-series-model .series-model-downloads,
+.button-gallery {
+	display:				none;
+}
+
+/* Homes Series Model */
+#page-homes-series-model .series-model-dimensions {
+	clear:					both;
+	overflow:				hidden;
+	padding:				0;
+	margin:					0 0 20px;
+	list-style-type:		none;
+	list-style-image:		none;
+}
+
+	#page-homes-series-model .series-model-dimensions .series-model-rooms {
+		
+	}
+
+	#page-homes-series-model .series-model-dimensions li {
+		float:					left;
+		border-bottom:			solid 1px #999;
+		padding:				5px 0;
+		margin:					0;
+		list-style-type:		none;
+		list-style-image:		none;
+		width:					50%;
+	}
+	
+		#page-homes-series-model .series-model-dimensions li .column-1 {
+			float:					left;
+			width:					50%;
+		}
+		
+		#page-homes-series-model .series-model-dimensions li .column-2 {
+			float:					left;
+			width:					50%;
+		}
+	
+	#page-homes-series-model .series-model-dimensions li.last {
+
+	}

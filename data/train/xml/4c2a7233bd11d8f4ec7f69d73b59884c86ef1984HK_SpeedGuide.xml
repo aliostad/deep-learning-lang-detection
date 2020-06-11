@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Get data from http://www.set.or.th/set/todaynews.do?language=en&country=US and http://www.setsmart.com-->
+<HKSpeedGuideXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <NameConfig>
+    <NameMapping>
+      <OrganisationName>KBC Financial Products International Ltd</OrganisationName>
+      <mappingName>KBC Financial Pr</mappingName>
+    </NameMapping>
+    <NameMapping>
+      <OrganisationName>Macquarie Bank Ltd</OrganisationName>
+      <mappingName>Macquarie Bk Ltd</mappingName>
+    </NameMapping>
+    <NameMapping>
+      <OrganisationName>ABN AMRO Bank NV</OrganisationName>
+      <mappingName>ABN AMRO Bank NV</mappingName>
+    </NameMapping>
+    <NameMapping>
+      <OrganisationName>SGA Societe Generale Acceptance NV</OrganisationName>
+      <mappingName>Societe Generale</mappingName>
+    </NameMapping>
+    <NameMapping>
+      <OrganisationName>BOCI Asia Ltd</OrganisationName>
+      <mappingName>BOCI Asia Ltd</mappingName>
+    </NameMapping>
+    <NameMapping>
+      <OrganisationName>BNP Paribas Arbitrage Issuance B.V.</OrganisationName>
+      <mappingName>BNP Paribas</mappingName>
+    </NameMapping>
+    <NameMapping>
+      <OrganisationName>Deutsche Bank AG</OrganisationName>	
+      <mappingName>Deutsche Bank</mappingName>
+    </NameMapping>
+    <NameMapping>
+      <OrganisationName>Fortis Bank S.A./N.V.</OrganisationName>
+      <mappingName>Fortis Bank</mappingName>
+    </NameMapping>
+    <NameMapping>
+      <OrganisationName>HSBC Holdings PLC</OrganisationName>
+      <mappingName>HSBC Holdings</mappingName>
+    </NameMapping>
+    <NameMapping>
+      <OrganisationName>Goldman Sachs International Ltd</OrganisationName>
+      <mappingName>Goldman Sachs</mappingName>
+    </NameMapping>
+    <NameMapping>
+      <OrganisationName>Citigroup Global Markets Holdings Inc.</OrganisationName>
+      <mappingName>Citigroup Global</mappingName>
+    </NameMapping>
+    <NameMapping>
+      <OrganisationName>UBS AG London</OrganisationName>
+      <mappingName>UBS AG</mappingName>
+    </NameMapping>
+    <NameMapping>
+      <OrganisationName>Calyon Financial Products (Guernsey) Ltd</OrganisationName>
+      <mappingName>Calyon Financial</mappingName>
+    </NameMapping>
+    <NameMapping>
+      <OrganisationName>Rabobank Netherland (Hong Kong Branch)</OrganisationName>
+      <mappingName>Rabobank</mappingName>
+    </NameMapping>
+    <NameMapping>
+      <OrganisationName>JP Morgan International Derivatives Ltd</OrganisationName>
+      <mappingName>JPMorganIntlDerv</mappingName>
+    </NameMapping>
+    <NameMapping>
+      <OrganisationName>MSDW Asia Securities Products LLC</OrganisationName>
+      <mappingName>MSDW Asia Sec</mappingName>
+    </NameMapping>
+    <NameMapping>
+      <OrganisationName>Credit Suisse First Boston</OrganisationName>
+      <mappingName>Credit Suisse Fi</mappingName>
+    </NameMapping>
+    <NameMapping>
+      <OrganisationName>DBS Bank (HK) Ltd</OrganisationName>
+      <mappingName>DBS Bank</mappingName>
+    </NameMapping>
+    <NameMapping>
+      <OrganisationName>Barclays Bank plc</OrganisationName>
+      <mappingName>Barclays Bank PLC</mappingName>
+    </NameMapping>
+      <NameMapping>
+      <OrganisationName>Lehman Brothers Holdings Inc.</OrganisationName>
+      <mappingName>Lehman Brothers</mappingName>
+    </NameMapping>
+    <NameMapping>
+      <OrganisationName>Standard Bank plc</OrganisationName>
+      <mappingName>Standard Bank</mappingName>
+    </NameMapping>
+    <NameMapping>
+      <OrganisationName>Nomura International plc</OrganisationName>
+      <mappingName>Nomura Intl</mappingName>
+    </NameMapping>
+    <NameMapping>
+      <OrganisationName>The Royal Bank of Scotland N.V.</OrganisationName>
+      <mappingName>Royal Bank of Scotland</mappingName>
+    </NameMapping>
+    <NameMapping>
+      <OrganisationName>Standard Chartered Bank</OrganisationName>
+      <mappingName>Standard Chartered</mappingName>
+    </NameMapping>
+    <NameMapping>
+      <OrganisationName>Merrill Lynch &amp; Co., Inc.</OrganisationName>
+      <mappingName>Merrill Lynch Intl</mappingName>
+    </NameMapping>
+    <NameMapping>
+      <OrganisationName>Daiwa Capital Markets Hong Kong Ltd</OrganisationName>
+      <mappingName>Daiwa Capital Markets HK</mappingName>
+    </NameMapping>
+  </NameConfig>
+  
+</HKSpeedGuideXML>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<apiPackage id="flashx.textLayout"><apiName>flashx.textLayout</apiName><apiDetail/><apiClassifier id="flashx.textLayout:BuildInfo"><apiName>BuildInfo</apiName><shortdesc>
+	 Contient des informations d’identification relatives à la compilation actuelle. </shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 Contient des informations d’identification relatives à la compilation actuelle. La présentation de ces informations dans l’API finale peut être différente. 
+	 </apiDesc></apiClassifierDetail><apiValue id="flashx.textLayout:BuildInfo:VERSION"><apiName>VERSION</apiName><shortdesc>
+		 Contient le numéro de version actuel. </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>1.0</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Contient le numéro de version actuel.  
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="flashx.textLayout:BuildInfo:kBranch"><apiName>kBranch</apiName><shortdesc>
+		 Contient le nom de la branche. </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>main</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Contient le nom de la branche.  
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="flashx.textLayout:BuildInfo:kBuildNumber"><apiName>kBuildNumber</apiName><shortdesc>
+		 Contient le numéro de compilation actuel.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>571 (732141)</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Contient le numéro de compilation actuel. Il est statique et peut être appelé avec <codeph>BuildInfo.kBuildNumber</codeph>
+		 <p>Format de chaîne : « BuildNumber (Changelist) »</p>
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

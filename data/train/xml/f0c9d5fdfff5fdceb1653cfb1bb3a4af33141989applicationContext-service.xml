@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans default-autowire="byName">
+
+	<bean id="logService" parent="baseTxService">
+		<property name="target">
+			<bean class="ula.service.admin.LogService" />
+		</property>
+	</bean>
+
+	<bean id="aboutService" parent="baseTxService">
+		<property name="target">
+			<bean class="ula.service.admin.AboutService" />
+		</property>
+	</bean>
+
+	<bean id="contactService" parent="baseTxService">
+		<property name="target">
+			<bean class="ula.service.admin.ContactService" />
+		</property>
+	</bean>
+
+	<bean id="cityServcie" parent="baseTxService">
+		<property name="target">
+			<bean class="ula.service.admin.CityServcie" />
+		</property>
+	</bean>
+
+	<bean id="programService" parent="baseTxService">
+		<property name="target">
+			<bean class="ula.service.admin.ProgramService" />
+		</property>
+	</bean>
+
+	<bean id="paymentService" parent="baseTxService">
+		<property name="target">
+			<bean class="ula.service.admin.PaymentService" />
+		</property>
+	</bean>
+
+
+	<bean id="specialService" parent="baseTxService">
+		<property name="target">
+			<bean class="ula.service.admin.SpecialService" />
+		</property>
+	</bean>
+
+
+	<bean id="linkService" parent="baseTxService">
+		<property name="target">
+			<bean class="ula.service.admin.LinkService" />
+		</property>
+	</bean>
+
+	<bean id="picService" parent="baseTxService">
+		<property name="target">
+			<bean class="ula.service.admin.PicService" />
+		</property>
+	</bean>
+
+	<bean id="userService" parent="baseTxService">
+		<property name="target">
+			<bean class="ula.service.admin.UserService" />
+		</property>
+	</bean>
+
+	<bean id="articleService" parent="baseTxService">
+		<property name="target">
+			<bean class="ula.service.admin.ArticleService" />
+		</property>
+	</bean>
+
+	<bean id="feedbackService" parent="baseTxService">
+		<property name="target">
+			<bean class="ula.service.admin.FeedbackService" />
+		</property>
+	</bean>
+
+	<bean id="reservationService" parent="baseTxService">
+		<property name="target">
+			<bean class="ula.service.admin.ReservationService" />
+		</property>
+	</bean>
+
+	<bean id="hotelService" parent="baseTxService">
+		<property name="target">
+			<bean class="ula.service.admin.HotelService" />
+		</property>
+	</bean>
+
+	<bean id="serviceManager" class="ula.common.ServiceManager" />
+
+</beans>
+
+
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <service_type>mrss</service_type>
+  <service_media>video</service_media>
+  <service_name>-Video- FLV</service_name>
+  <service_slug>video-flv</service_slug>
+  <service_url><![CDATA[video:{serviceVAL}]]></service_url>
+  <service_feed><![CDATA[null]]></service_feed>
+  <service_regex><![CDATA[video:(?P<sval1>.*\.(flv|f4v|m4v|mp4|3gp|3g2))$]]></service_regex>
+  <service_movie><![CDATA[{scriptjw}/player.swf?file={external}/{serviceVAL}&skin={scriptjw}/video.xml&autostart={apTF}&controlbar.position=over]]></service_movie>
+  <service_value2><![CDATA[null]]></service_value2>
+  <service_thumb><![CDATA["styles/8wayrun/media_video.jpg"]]></service_thumb>
+  <service_title><![CDATA[$service['service_value']]]></service_title>
+  <service_description><![CDATA[$titl]]></service_description>
+  <service_duration><![CDATA[null]]></service_duration>
+  <service_keywords><![CDATA[null]]></service_keywords>
+  <service_errors><![CDATA[file_exists(XenForo_Helper_File::getExternalDataPath().'/local/'.$service['service_value']) ? null : new XenForo_Phrase('file_does_not_exist').': '.$service['service_value'];]]></service_errors>
+  <service_parameters><![CDATA[<script type="text/javascript">
+$.getScript("{scriptjw}/jwplayer.js", function () {
+	jwplayer("embed_player").setup({
+		flashplayer: "{scriptjw}/player.swf",
+		file: "{external}/{serviceVAL}",
+		skin: "{scriptjw}/video.xml",
+		autostart: "{apTF}",
+		width: "{w}",
+		height: "{h}",
+		'controlbar.position': "over"
+	});
+});
+</script>]]></service_parameters>
+  <service_width>640</service_width>
+  <service_height>360</service_height>
+</service>

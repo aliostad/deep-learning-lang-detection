@@ -1,0 +1,74 @@
+section.secondary-nav-top, section.secondary-nav-bottom {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  padding: 35px 0;
+  top: 78px;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 10; }
+  section.secondary-nav-top.secondary-nav-bottom, section.secondary-nav-bottom.secondary-nav-bottom {
+    position: relative;
+    top: 0; }
+    section.secondary-nav-top.secondary-nav-bottom .secondary-nav a span, section.secondary-nav-bottom.secondary-nav-bottom .secondary-nav a span {
+      line-height: 0; }
+  @media screen and (max-width: 720px) {
+    section.secondary-nav-top, section.secondary-nav-bottom {
+      top: 168px;
+      background: rgba(0, 0, 0, 0); } }
+  @media screen and (max-width: 480px) {
+    section.secondary-nav-top, section.secondary-nav-bottom {
+      top: 58px; } }
+  section.secondary-nav-top .secondary-nav, section.secondary-nav-bottom .secondary-nav {
+    position: relative;
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 0; }
+    @media screen and (max-width: 1499px) {
+      section.secondary-nav-top .secondary-nav, section.secondary-nav-bottom .secondary-nav {
+        max-width: 942px; } }
+    section.secondary-nav-top .secondary-nav a, section.secondary-nav-bottom .secondary-nav a {
+      position: relative;
+      font-family: Georgia, serif;
+      vertical-align: middle;
+      font-family: Georgia, serif;
+      font-size: 1.25em;
+      font-style: italic;
+      color: #333;
+      line-height: 1; }
+      @media screen and (max-width: 720px) {
+        section.secondary-nav-top .secondary-nav a, section.secondary-nav-bottom .secondary-nav a {
+          font-size: 0; } }
+      section.secondary-nav-top .secondary-nav a:hover, section.secondary-nav-top .secondary-nav a:focus, section.secondary-nav-bottom .secondary-nav a:hover, section.secondary-nav-bottom .secondary-nav a:focus {
+        text-decoration: none;
+        color: #1a1a1a; }
+        section.secondary-nav-top .secondary-nav a:hover span, section.secondary-nav-top .secondary-nav a:focus span, section.secondary-nav-bottom .secondary-nav a:hover span, section.secondary-nav-bottom .secondary-nav a:focus span {
+          color: #2395ac; }
+          @media screen and (max-width: 720px) {
+            section.secondary-nav-top .secondary-nav a:hover span, section.secondary-nav-top .secondary-nav a:focus span, section.secondary-nav-bottom .secondary-nav a:hover span, section.secondary-nav-bottom .secondary-nav a:focus span {
+              color: #1a1a1a; } }
+          section.secondary-nav-top .secondary-nav a:hover span.icon-grid-view, section.secondary-nav-top .secondary-nav a:focus span.icon-grid-view, section.secondary-nav-bottom .secondary-nav a:hover span.icon-grid-view, section.secondary-nav-bottom .secondary-nav a:focus span.icon-grid-view {
+            color: #c56512; }
+      section.secondary-nav-top .secondary-nav a span, section.secondary-nav-bottom .secondary-nav a span {
+        font-size: 47px;
+        line-height: 31px;
+        color: #2eb9d4;
+        vertical-align: middle; }
+        @media screen and (max-width: 720px) {
+          section.secondary-nav-top .secondary-nav a span, section.secondary-nav-bottom .secondary-nav a span {
+            color: #333;
+            font-size: 37px; } }
+        section.secondary-nav-top .secondary-nav a span.icon-grid-view, section.secondary-nav-bottom .secondary-nav a span.icon-grid-view {
+          margin-right: 8px;
+          font-size: 24px;
+          color: #eb7e1f; }
+      section.secondary-nav-top .secondary-nav a.next, section.secondary-nav-top .secondary-nav a.previous, section.secondary-nav-bottom .secondary-nav a.next, section.secondary-nav-bottom .secondary-nav a.previous {
+        position: absolute; }
+      section.secondary-nav-top .secondary-nav a.next, section.secondary-nav-bottom .secondary-nav a.next {
+        right: 0; }
+      section.secondary-nav-top .secondary-nav a.previous, section.secondary-nav-bottom .secondary-nav a.previous {
+        left: 0; }
+      @media screen and (max-width: 720px) {
+        section.secondary-nav-top .secondary-nav a.back, section.secondary-nav-bottom .secondary-nav a.back {
+          display: none; } }

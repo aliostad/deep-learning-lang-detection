@@ -1,0 +1,51 @@
+table.detail-view-custom .null
+{
+	color: pink;
+}
+
+table.detail-view-custom
+{
+	background: white;
+	border-collapse: collapse;
+	width: 100%;
+	margin: 0;
+}
+
+table.detail-view-custom th, table.detail-view-custom td
+{
+	font-size: 0.9em;
+	border: 1px white solid;
+	padding: 0.3em 0.6em;
+    vertical-align: middle;
+}
+table.detail-view-custom th label, table.detail-view-custom th option {
+    font-size: 1em;
+}
+
+table.detail-view-custom td input[type="text"], table.detail-view-custom td select {
+    width: 350px;
+}
+
+table.detail-view-custom th
+{
+	text-align: right;
+	width: 200px;
+}
+
+table.detail-view-custom tr.odd
+{
+	background:#E5F1F4;
+}
+
+table.detail-view-custom tr.even
+{
+	background:#F8F8F8;
+}
+
+table.detail-view-custom tr.odd th
+{
+}
+
+table.detail-view-custom tr.even th
+{
+}

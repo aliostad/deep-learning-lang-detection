@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.knowarth.service.service.EmployeeLocalService" class="com.knowarth.service.service.impl.EmployeeLocalServiceImpl" />
+	<bean id="com.knowarth.service.service.EmployeeService" class="com.knowarth.service.service.impl.EmployeeServiceImpl" />
+	<bean id="com.knowarth.service.service.persistence.EmployeePersistence" class="com.knowarth.service.service.persistence.EmployeePersistenceImpl" parent="basePersistence" />
+	<bean id="com.knowarth.service.service.IndianStateLocalService" class="com.knowarth.service.service.impl.IndianStateLocalServiceImpl" />
+	<bean id="com.knowarth.service.service.IndianStateService" class="com.knowarth.service.service.impl.IndianStateServiceImpl" />
+	<bean id="com.knowarth.service.service.persistence.IndianStatePersistence" class="com.knowarth.service.service.persistence.IndianStatePersistenceImpl" parent="basePersistence" />
+	<bean id="com.knowarth.service.service.patientLocalService" class="com.knowarth.service.service.impl.patientLocalServiceImpl" />
+	<bean id="com.knowarth.service.service.patientService" class="com.knowarth.service.service.impl.patientServiceImpl" />
+	<bean id="com.knowarth.service.service.persistence.patientPersistence" class="com.knowarth.service.service.persistence.patientPersistenceImpl" parent="basePersistence" />
+</beans>

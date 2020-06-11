@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.rcs.service.service.ChatRoomLocalService" class="com.rcs.service.service.impl.ChatRoomLocalServiceImpl" />
+	<bean id="com.rcs.service.service.ChatRoomLocalServiceUtil" class="com.rcs.service.service.ChatRoomLocalServiceUtil">
+		<property name="service" ref="com.rcs.service.service.ChatRoomLocalService" />
+	</bean>
+	<bean id="com.rcs.service.service.persistence.ChatRoomPersistence" class="com.rcs.service.service.persistence.ChatRoomPersistenceImpl" parent="basePersistence" />
+	<bean id="com.rcs.service.service.ChatRoomGroupLocalService" class="com.rcs.service.service.impl.ChatRoomGroupLocalServiceImpl" />
+	<bean id="com.rcs.service.service.ChatRoomGroupLocalServiceUtil" class="com.rcs.service.service.ChatRoomGroupLocalServiceUtil">
+		<property name="service" ref="com.rcs.service.service.ChatRoomGroupLocalService" />
+	</bean>
+	<bean id="com.rcs.service.service.persistence.ChatRoomGroupPersistence" class="com.rcs.service.service.persistence.ChatRoomGroupPersistenceImpl" parent="basePersistence" />
+	<bean id="com.rcs.service.service.ConfigurationLocalService" class="com.rcs.service.service.impl.ConfigurationLocalServiceImpl" />
+	<bean id="com.rcs.service.service.ConfigurationLocalServiceUtil" class="com.rcs.service.service.ConfigurationLocalServiceUtil">
+		<property name="service" ref="com.rcs.service.service.ConfigurationLocalService" />
+	</bean>
+	<bean id="com.rcs.service.service.persistence.ConfigurationPersistence" class="com.rcs.service.service.persistence.ConfigurationPersistenceImpl" parent="basePersistence" />
+</beans>

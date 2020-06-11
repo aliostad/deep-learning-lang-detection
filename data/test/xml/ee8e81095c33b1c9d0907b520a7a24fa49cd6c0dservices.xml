@@ -1,0 +1,104 @@
+<services>
+
+    <service id="desktop_finder.site_mdl_explorers">
+        <class>site_finder_explorers</class>
+    </service>
+    
+    <service id="desktop_finder.site_mdl_link">
+        <class>site_finder_link</class>
+    </service>
+
+    <service id="desktop_finder.site_mdl_modules">
+        <class>site_finder_modules</class>
+    </service>
+
+    <service id="desktop_finder.site_mdl_seo">
+        <class>site_finder_seo</class>
+    </service>
+
+    <service id="desktop_finder.site_mdl_menus">
+        <class>site_finder_menus</class>
+    </service>
+
+    <service id="desktop_finder.site_mdl_route_statics">
+        <class>site_finder_route_static</class>
+    </service>
+
+    <service id="desktop_finder.site_mdl_widgets_proinstance">
+        <class>site_finder_widgets_proinstance</class>
+    </service>
+
+    <service id="desktop_finder_callback.site_mdl_modules">
+        <class>site_finder_callback_modules</class>
+    </service>
+
+
+    <service id="desktop_finder_callback.site_mdl_modules">
+        <class>site_finder_callback_modules</class>
+    </service>
+
+    <service id="app_content_detector">
+        <class>site_application_explorer</class>
+        <class>site_application_module</class>
+        <class>site_application_widgets</class>
+    </service>
+
+    <service id="view_compile_helper">
+        <class>site_view_compiler</class>
+    </service>
+
+    <service id="view_helper">
+        <class>site_view_helper</class>
+    </service>
+
+    <service id="html_input">
+        <class>site_view_input</class>
+    </service>
+    
+
+    <service id="site_view_helper">
+        <class orderby="1">site_service_view_helper</class>
+    </service>
+
+    <service id="cachemgr_global_vary">
+        <class>site_service_cachevary</class>
+    </service>
+
+    <service id="site_service_seo">
+        <class>site_service_seo</class>
+    </service>
+    
+    
+    <service id="desktop_menu">
+        <class>site_service_view_menu</class>
+    </service>
+    
+    <service id="site_maps">
+    </service>
+
+    <service id="dev.project_type">
+        <class>site_devtpl_widget</class>
+        <class>site_devtpl_theme</class>
+    </service>
+
+    <service id="site_theme_content_detector">
+        <class>site_application_themewidgets</class>
+    </service>
+
+    <service id="tpl_source.site_proinstance">
+        <class>site_service_tplsource</class>
+    </service>
+    
+    <service id="tpl_source.theme">
+        <class>site_service_tpltheme</class>
+    </service>
+
+	<service id="site_display_errorpage.conf">
+        <class>site_errorpage_display</class>
+    </service>
+    
+    <service id="desktop_keyboard_setting">
+        <class>site_keyboard_initdata</class>
+    </service>
+
+</services>

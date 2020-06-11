@@ -1,0 +1,31 @@
+#!/bin/bash
+
+REPO_DIRS="$HOME/software/my-repos/ $HOME/software/akvo/ $HOME/software/random/"
+
+
+_project ()
+{
+    local cur
+
+    COMPREPLY=()
+    cur=`_get_cword`
+
+    projects=$(for each in $(find ${REPO_DIRS} -maxdepth 1); do echo `basename $each`; done);
+    COMPREPLY=( $(compgen -W "${projects}" -- "${cur}") );
+
+    return 0;
+}
+
+project () {
+    arr_REPO_DIRS=("${REPO_DIRS}")
+    for repo in ${arr_REPO_DIRS}
+    do
+        if [ -d $repo/$1 ]
+        then
+            cd $repo/$1
+            break
+        fi
+    done
+}
+
+complete -F _project project

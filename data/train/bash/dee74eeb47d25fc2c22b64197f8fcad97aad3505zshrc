@@ -1,0 +1,28 @@
+#!/bin/zsh
+
+load_resource()
+{
+    [[ -s "$1" ]] && source "$1"
+    return 0;
+}
+
+## Load Operating System specific resources
+load_resource "$HOME/.configuration/zsh/resources/os/`uname`.rc"
+
+## Load colors
+eval `dircolors $HOME/.configuration/zsh/colors/colors`
+
+## Load zsh resource files
+load_resource "$HOME/.configuration/zsh/resources/alias.rc"
+load_resource "$HOME/.configuration/zsh/resources/completion.rc"
+load_resource "$HOME/.configuration/zsh/resources/configuration.rc"
+load_resource "$HOME/.configuration/zsh/resources/exports.rc"
+load_resource "$HOME/.configuration/zsh/resources/functions.rc"
+load_resource "$HOME/.configuration/zsh/resources/options.rc"
+load_resource "$HOME/.configuration/zsh/resources/prompt.rc"
+
+## Load Hostname specific resources
+load_resource "$HOME/.configuration/zsh/resources/hostname/`hostname`.rc"
+
+## Load rvm resource files
+load_resource "$HOME/.rvm/scripts/rvm"

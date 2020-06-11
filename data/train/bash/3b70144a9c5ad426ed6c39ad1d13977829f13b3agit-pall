@@ -1,0 +1,34 @@
+#!/bin/bash
+# git-pall: "git pall" pushes to both my VPS and github at the same time
+
+# Usage: git pall [push args]
+#   for example, git pall --tags pushes tags to both remotes
+
+declare -A rMap
+rMap[".config"]="conf-$(hostname)"
+
+declare -A users
+
+declare -A ghMap
+ghMap["jail"]="Jail"
+
+repo="${1-$(basename $(pwd))}"
+
+if [[ -n "${rMap[$repo]}" ]]; then
+	repo="${rMap[$repo]}"
+fi
+
+git push $@ "git@frost.jachapmanii.net:$repo"
+
+if [[ -n "${ghMap[$repo]}" ]]; then
+	repo="${ghMap[$repo]}"
+fi
+
+if [[ -z "${users[$repo]}" ]]; then
+	git push $@ "git@github.com:JAChapmanII/$repo"
+else
+	git push $@ "git@github.com:${users[$repo]}/$repo"
+fi
+
+wait
+

@@ -1,0 +1,35 @@
+.list-name {
+  color: #fff; }
+
+.datepicker-container datepicker {
+  top: 100%;
+  font-family: inherit !important; }
+  .datepicker-container datepicker * {
+    font-family: inherit !important; }
+
+.checklist__list {
+  display: flex;
+  flex-flow: row wrap; }
+  .checklist__list li {
+    width: 33%; }
+
+.message__container {
+  position: relative;
+  overflow-y: scroll; }
+  .message__container .message {
+    position: absolute;
+    width: 100%; }
+    .message__container .message .message__item {
+      max-width: 65%;
+      align-self: flex-start; }
+      .message__container .message .message__item.message__item--right {
+        align-self: flex-end;
+        flex-direction: row-reverse; }
+        .message__container .message .message__item.message__item--right md-card {
+          background-color: #03a9f4;
+          color: #fff; }
+
+.toolbar--bottom .md-toolbar-tools {
+  justify-content: flex-end; }
+
+/*# sourceMappingURL=task.css.map */

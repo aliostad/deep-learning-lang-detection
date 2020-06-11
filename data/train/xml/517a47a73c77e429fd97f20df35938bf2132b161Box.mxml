@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<s:BorderContainer xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
+    xmlns:mx="library://ns.adobe.com/flex/mx"
+    cornerRadius="4"
+    backgroundColor="red"
+    alpha="1"
+    height="30" width="100" creationComplete="init();" >
+
+             <fx:Script><![CDATA[
+                 import com.nicloay.behaviours.Behaviours;
+                 import com.nicloay.behaviours.DraggableWithProxyBehaviour;
+                 import com.nicloay.behaviours.DuplicateInSourceOnDrop;
+                 import com.nicloay.behaviours.GiveUpAndShowBehaviour;
+
+                 import mx.collections.ArrayList;
+                 import mx.core.Container;
+                 import mx.core.UIComponent;
+
+                 import spark.components.Panel;
+                 import spark.components.SkinnableContainer;
+
+                 public var behaviours:Array = new Array();
+
+                 private function init():void {
+                     behaviours[Behaviours.DRAGGABLE_WITH_PROXY]=new DraggableWithProxyBehaviour(this);
+                 }
+
+                 public function addDuplicateOnSourceSupport(parentPanel:Panel):void {
+                     behaviours[Behaviours.DUPLICATE_IN_SOURCE_ON_DROP]=new DuplicateInSourceOnDrop(this, parentPanel);
+                 }
+
+                 public function addGiveUpAndShowSupport(parentContainer:SkinnableContainer):void {
+                     behaviours[Behaviours.GIVE_UP_AND_SHOW]=new GiveUpAndShowBehaviour(this,parentContainer);
+                 }
+
+
+                 public function removeDuplicateOnSourceSupport():void{
+                     if(behaviours[Behaviours.DUPLICATE_IN_SOURCE_ON_DROP]){
+                         behaviours[Behaviours.DUPLICATE_IN_SOURCE_ON_DROP].destroy();
+                         delete behaviours[Behaviours.DUPLICATE_IN_SOURCE_ON_DROP];
+                     }
+
+                 }
+
+                 ]]>
+
+             </fx:Script>
+
+
+</s:BorderContainer>

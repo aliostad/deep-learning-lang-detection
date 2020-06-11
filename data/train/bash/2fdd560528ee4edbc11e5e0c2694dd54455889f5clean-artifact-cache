@@ -1,0 +1,95 @@
+#!/bin/sh
+
+# Copyright (C) 2012  Codethink Limited
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; version 2 of the License.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+# Remove all chunk artifacts in the cache except the newest. Morph does
+# not currently clean its caches at any point, so this script is necessary
+# to avoid running out of disk space.
+
+set -e
+
+usage() {
+        echo "Usage: clean-artifact-cache [--all] [CHUNK_NAME]"
+        echo
+        echo "WARNING: this script removes all but the chunks with the latest"
+        echo "mtimes. This is usually what you want, but you should try the"
+        echo "script on a small chunk first and trigger a rebuild to make sure"
+        echo "that you are not removing artifacts that you still want."
+}
+
+if [ -z $1 ]; then
+        usage
+        exit 0
+fi
+
+CHUNK=
+case $1 in
+        --all)
+                CHUNK=*
+                ;;
+        -*)
+                usage
+                exit 0
+                ;;
+        *)
+                CHUNK=$1
+esac
+
+
+clean_chunk() {
+        ARTIFACT_COUNT=$(ls *.chunk.$1 | wc -l)
+
+        if [ $ARTIFACT_COUNT -lt 2 ]; then
+                return
+        fi
+
+        echo "$1: $(expr $ARTIFACT_COUNT - 1) stale artifact(s)"
+
+        SKIPPED_LATEST=
+        for f in $(ls -1t *.chunk.$1); do
+                if [ -z "$SKIPPED_LATEST" ]; then
+                        SKIPPED_LATEST=yes
+                else
+                        rm $(echo $f | cut -c -64).build-log
+                        rm $(echo $f | cut -c -64).meta
+                        rm $(echo $f | cut -c -64).chunk.$1
+                fi
+        done
+}
+
+test "x$MORPH" = "x" && MORPH=morph
+
+CACHE_DIR=$($MORPH --dump-config | grep cachedir | awk '{print $3}')
+ARTIFACT_CACHE="${CACHE_DIR}/artifacts"
+
+cd $ARTIFACT_CACHE
+SIZE_BEFORE=$(du -sh . | cut -f 1)
+
+if [ "$CHUNK" = "*" ]; then
+        echo "Removing ALL out-of-date chunk artifacts in $ARTIFACT_CACHE"
+
+        for chunk in $(ls *.chunk.* | cut -d '.' -f 3-); do
+                clean_chunk $chunk
+        done
+else
+        echo "Removing out of date artifacts for chunk $CHUNK in" \
+            "$ARTIFACT_CACHE"
+        clean_chunk $CHUNK
+fi
+
+SIZE_AFTER=$(du -sh . | cut -f 1)
+
+echo "Artifact cache size before: $SIZE_BEFORE   after: $SIZE_AFTER"

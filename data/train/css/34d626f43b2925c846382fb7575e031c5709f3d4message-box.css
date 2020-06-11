@@ -1,0 +1,58 @@
+.message-box{
+    padding: 0 0 54px 0;
+}
+
+.message-box .message{
+    padding:1em 1em 0 1em;
+}
+
+.message-box .message .message-bubble{
+    padding:0.4em 0.6em;
+    border-radius: 0.5em;
+    display: inline-block;
+}
+
+.message-box .message.receive{
+    float:left;
+}
+
+.message-box .message.receive .message-bubble{
+    background: white;
+}
+
+.message-box .message.send{
+    float:right;
+}
+
+.message-box .message.send .message-bubble{
+    background: #B2E281;
+}
+
+.message-box .message{
+    max-width:80%;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.message-box .message img{
+    max-width: 100%;
+}
+
+.footer-message-input{
+    position: fixed !important;
+}
+
+.web_online{
+    margin-top: 3.17em;
+    font-size: .7rem;
+    font-weight: normal;
+    padding: 0;
+    text-align: center;
+    display: none;
+    border-bottom: 1px #ccc solid;
+    line-height: 1.4rem;
+    background: #ddd;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+}

@@ -1,0 +1,42 @@
+#!/bin/sh
+
+if test "$1" != "" ; then
+  bin=$1
+else
+  bin="@prefix@/bin/"
+fi
+
+if test "$1" = "clean" ; then
+  rm -f sample-phm.png sample-phm16.png sample-phm.if sample-pj.pj sample-pj.if sample-pj.png sample-pj16.png sample-rec.if sample-rec.png sample-rec16.png
+  exit
+fi
+
+# Generate phantom image
+
+${bin}ctsimtext phm2if sample-phm.if 256 256 --nsample 2 --phantom herman
+if [ -f sample-phm.if ] ; then
+  ${bin}ctsimtext ifexport sample-phm.if sample-phm.png --format png
+  ${bin}ctsimtext ifexport sample-phm.if sample-phm16.png --format png16
+fi
+
+# Simulate CT data collection and generate raysum sinugram for display
+${bin}ctsimtext phm2pj  sample-pj.pj 367 320 --nray 2  --phantom herman
+if [ -f sample-pj.pj ]; then
+  ${bin}ctsimtext pj2if  sample-pj.pj sample-pj.if
+fi
+if [ -f sample-pj.if ]; then
+  ${bin}ctsimtext ifexport sample-pj.if sample-pj.png --format png
+  ${bin}ctsimtext ifexport sample-pj.if sample-pj16.png --format png16
+fi
+
+# Reconstruct raysums and generate image for display
+${bin}ctsimtext pjrec   sample-pj.pj sample-rec.if 256 256 
+if [ -f sample-rec.if ]; then 
+  ${bin}ctsimtext ifexport sample-rec.if sample-rec.png --format png
+  ${bin}ctsimtext ifexport sample-rec.if sample-rec16.png --format png16
+
+  # Display comparison statistics
+  ${bin}ctsimtext if2 sample-phm.if sample-rec.if --comp
+fi
+
+# Files sample-phm.png, sample-pj.png, and sample-rec.png are ready for display

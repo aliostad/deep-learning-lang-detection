@@ -1,0 +1,30 @@
+#!/bin/bash
+
+CloneRepo=
+RemoteRepo=
+Branch=
+RepoDir=/home/konrad/android/repos-cm
+
+echo "Clone Repo URL? "
+read CloneRepo
+
+echo "Remote Repo URL? "
+read RemoteRepo
+
+echo "Branch Name? "
+read Branch
+
+Directory=$(basename "$RemoteRepo")
+Directory=${Directory%.*}
+
+cd $RepoDir
+git clone $CloneRepo
+cd $Directory
+git branch --track cyan origin/$Branch
+git remote add $Branch $RemoteRepo
+git fetch $Branch
+git push $Branch $Branch:refs/heads/$Branch
+git config branch.$Branch.remote $Branch
+git config branch.$Branch.merge refs/heads/$Branch
+
+echo "Repository Setup Complete"

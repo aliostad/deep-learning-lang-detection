@@ -1,0 +1,48 @@
+#!/bin/sh
+#
+# Copyright (C) 2012-2014  Codethink Limited
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; version 2 of the License.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+
+## Try to build a morphless chunk.
+
+set -eu
+
+# Make 'hello' chunk into an auto-detectable chunk.
+
+cd "$DATADIR/chunk-repo"
+git checkout -q farrokh
+
+touch configure
+chmod +x configure
+# FIXME: If we leave the file empty, busybox sh on ARMv7 fails to execute it.
+echo '#!/bin/sh' > configure
+
+cat << EOF > Makefile
+all install:
+EOF
+
+git rm -q hello.morph
+git add Makefile configure
+git commit -q -m "Convert hello into an autodetectable chunk"
+
+
+"$SRCDIR/scripts/test-morph" build-morphology \
+    test:morphs-repo master hello-system
+
+for chunk in "$DATADIR/cache/artifacts/"*.chunk.*
+do
+    tar -tf "$chunk"
+done | cat >/dev/null # No files get installed apart from metadata

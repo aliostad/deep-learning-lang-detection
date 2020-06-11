@@ -1,0 +1,58 @@
+/* All Levels */
+#nav a { line-height:1.3em; text-decoration:none; }
+
+/* Root Level */
+#nav { position: relative; }
+#nav .level0 > a { display:block; }
+
+/* 1st Level */
+#nav ul.level0,
+#nav li.level0 div.nav_block {
+	position:absolute;
+	z-index: 999;
+	width: 922px;
+	left: 0;
+	display: none;
+	background: #fff;
+	border: 4px #ccc solid;
+	border-top: #b3a487 1px dotted;
+	padding: 15px;
+	font-size:12px;
+	color: #666;
+}
+#nav li.level1.parent { display:block; float:left; padding: 0 10px 0 0; }
+
+#nav li.nav-text-block { max-width: 765px; }
+.nav-block-5-col { width: 765px; }
+.nav-block-4-col { width: 612px; }
+.nav-block-3-col { width: 459px; }
+.nav-block-2-col { width: 306px; }
+.nav-block-1-col { width: 153px; }
+
+/* 1st+ level */
+#nav ul.level0 a:hover { text-decoration:underline; }
+#nav ul.level0 li.parent > a:hover { text-decoration:none; }
+
+#nav .nav_block li.parent > a,
+#nav li.level1.parent > a,
+#nav .nav_block h3,
+#nav li.nav-text-block h3 { display: block; padding-bottom: 5px; }
+
+#nav .nav_block li.parent,
+#nav li.level1.parent { margin-bottom: 10px; }
+
+#nav div.nav_block li,
+#nav li.level1 { width: 133px; margin:0 10px 0 0; }
+
+/* 2nd+ Level */
+#nav ul.level1 ul { margin-left: 5px; }
+
+/* Show menu */
+#nav li.level0 ul.shown-sub,
+#nav li.level0 div.shown-sub { display: block; }
+
+/* Thumbnail */
+#nav li.level1.category-thumbnail { float: left; text-align: center; }
+#nav li.level1.category-thumbnail img { max-width: 100%; }
+/********** Navigation > */
+/* ======================================================================================= */

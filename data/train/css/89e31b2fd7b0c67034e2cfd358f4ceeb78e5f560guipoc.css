@@ -1,0 +1,42 @@
+#createModel {
+    margin: 10px;
+}
+
+#modelContainer {
+    width: 300px;
+    height: 300px;
+    border: 1px solid gray;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+#modelName, .attributeName {
+    float: left;
+}
+
+#addAttr, .attributeType{
+    float: right;
+}
+
+.attributeRow {
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+#modelNameContainer, #attributeContainer {
+    overflow: hidden;
+    margin: 5px;
+}
+
+#attributeContainer {
+    background-color: aliceblue;
+    min-height: 250px;
+    overflow: auto;
+    max-height: 250px;
+
+}
+
+#saveModel{
+    overflow: hidden;
+    margin-top: 10px;
+}

@@ -1,0 +1,61 @@
+#editModels
+{
+    width: 500px;
+    margin: 0px auto;
+    margin-top: 70px;
+
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 5px;
+}
+    #editModels > input[type="button"]
+    {
+        display: block;
+        margin: 10px auto;
+    }
+    #modelList{ min-height: 300px;}
+
+
+.modelType {
+
+    margin: 5px;
+    padding: 5px;
+    background: #f5f5f5;
+
+}
+    .modelType > * {margin: 9px 0px;}
+    .modelType  span.modelName
+    {
+        font-size: 15px;
+        font-weight: bold;
+        margin: 12px 0px;
+    }
+      span.tools_editModel
+    {
+        display: inline-block;
+        float: right;
+    }
+    .modelType > div >span.field_name
+    {
+        display: inline-block;
+        width: 100px;
+    }
+
+/*==================================================================*/
+
+.popUP_EDITmodel {
+
+    left: 270px;
+    top: 70px;
+
+    position: absolute;
+    width: 500px;
+    min-height: 300px;
+    padding: 20px;
+
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 5px;
+
+    box-shadow: 1px 1px 27px #ddd;
+}

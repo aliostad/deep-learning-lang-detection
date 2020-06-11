@@ -1,0 +1,18 @@
+<save arq="/home/adriano/github/VPE-qGM/VPE-qGM/src/processes/teste.xml" pos="0">
+<process repr="env" tipo="seq" pos="0">
+<process repr="terminicio" x="1057" y="1290" cor="BLACK"></process>
+<process repr="env" tipo="seq" pos="0">
+<process repr="env" tipo="nondet1" pos="0">
+<process repr="detproj" parametro=""></process>
+<process repr="iterativo" tipo="iterativo" range="0:8:1" acao="parfor" x="1130.0" y="1224.0" cor="BLACK">
+<process repr="conselem" qubits= "3" acao= "P0,Id,Id" pos= "0" parametro= "" x="1130.0" y="1224.0" cor="BLACK"></process>
+</process>
+<process repr="iterativo" tipo="iterativo" range="0:8:1" acao="parfor" x="1130.0" y="1355.0" cor="BLACK">
+<process repr="conselem" qubits= "3" acao= "P1,Id,Id" pos= "0" parametro= "" x="1130.0" y="1355.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr= "probability" acao= "QGMAnalyzer" pos= "8" parametro= "Probability" x="1234.0" y="1290.0" cor="BLACK"></process>
+</process>
+<process repr="termfim" x="1295" y="1290" cor="BLACK"></process>
+</process>
+</save>

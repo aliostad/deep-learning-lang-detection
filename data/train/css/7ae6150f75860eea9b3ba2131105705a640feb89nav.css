@@ -1,0 +1,93 @@
+#nav {
+    box-sizing: border-box;
+    color: white;
+    height: 65px;
+    left: 0;
+    line-height: 65px;
+    padding-right: 4.5%;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    width: 100%;
+    min-width: 1200px;
+    transition: color ease 200ms;
+    z-index: 1000;
+}
+
+#nav img {
+    border-radius: 3px;
+    display: inline-block;
+    float: left;
+    height: 83%;
+    margin-left: 4.5%;
+    margin-top: 5px;
+    z-index: 1;
+}
+
+#nav .nav-el {
+    display: inline-block;
+    width: 150px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+#nav .nav-el::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    border: 1px solid black;
+    margin-right: 5px;
+    transition: all ease 200ms;
+}
+
+#nav .nav-el::after {
+    content: "";
+    border: 1px solid black;
+    margin-left: 5px;
+    transition: all ease 200ms;
+}
+
+#nav .nav-el:hover::after, #nav .nav-el:hover::before, #nav .nav-el.active::after, #nav .nav-el.active::before {
+    border: 1px solid white;
+}
+
+#nav .nav-el:hover::before, #nav .nav-el.active::before  {
+    margin-right: 15px;
+}
+
+#nav .nav-el:hover::after, #nav .nav-el.active::after  {
+    margin-left: 15px;
+}
+
+#nav a {
+    text-decoration: none;
+}
+
+#nav a:link {
+    color: inherit;
+}
+
+#nav a:visited {
+    color: inherit;
+}
+
+iframe.tmblr-iframe.tmblr-iframe--desktop-loggedin-controls.iframe-controls--desktop {
+    display: none;
+}
+
+#nav .nav-background {
+    background-color: chocolate;
+    height: 100%;
+    margin-top: 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: margin-top ease 500ms;
+    z-index: -1;
+}
+
+#nav .nav-background.up {
+    margin-top: -100%;
+}

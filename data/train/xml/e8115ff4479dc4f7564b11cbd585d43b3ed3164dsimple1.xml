@@ -1,0 +1,22 @@
+<process name="test_process" taskClassName="com.xysd.internal_wf.domain.impl.StrTypeWorkflowTask"
+	processVariableClassName="com.xysd.internal_wf.domain.impl.StrTypeProcessVariable" processLockerClassName="com.xysd.internal_wf.domain.impl.StrTypeProcessLocker"
+	processLogClassName="com.xysd.internal_wf.domain.impl.StrTypeProcessLog">
+
+	<begin id="begin">
+		<task name="task1">
+		</task>
+		
+		<transit id="default" to="work" >
+			<action invoker="tester.execute"/>
+		</transit>
+	</begin>
+
+	<processNode id="work">
+		<task name="task2" ></task>
+		<transit id="default2" to="end" >
+			<action invoker="tester.execute"/>
+		</transit>
+	</processNode>
+
+	<end id="end"></end>
+</process>

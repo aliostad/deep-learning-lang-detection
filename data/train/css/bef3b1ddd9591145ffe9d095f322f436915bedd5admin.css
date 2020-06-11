@@ -1,0 +1,52 @@
+h1 {
+  padding:10px 0;
+}
+
+textarea {
+  height:175px;
+}
+
+.adminFormTable tbody tr td {
+  vertical-align:top;
+  padding:10px;
+}
+
+.adminFormTable textarea {
+  height:300px;
+}
+
+a {
+  text-decoration:underline;
+}
+
+table.adminModelIndex tr th,
+table.adminModelIndex tr td {
+  padding:5px;
+}
+
+table.adminModelIndex tr th {
+  font-weight:bold;
+  color:#333333;
+}
+
+table.adminModelIndex tr td.adminModelIndexControls {
+  font-size:13px;
+}
+
+table.adminModelIndex tr td {
+  padding-bottom:30px;
+}
+
+#gblContent {
+  padding-bottom:50px;
+}
+
+.adminShowContainer {
+  margin:15px 0;
+}
+
+#gblNav.admin a,
+#gblNav.admin span.active {
+  font-size:13px !important;
+}
+

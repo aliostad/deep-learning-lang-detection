@@ -1,0 +1,190 @@
+﻿@model SusDulu.Models.Ticket
+@{
+    ViewBag.Title = "Cetak Tiket";
+    Layout = null;
+}
+
+<itext producer="RazorPDF">
+    <table width="100%" cellpadding="0.5" cellspacing="0.5" widths="30;70" borderwidth="1.0" left="false" right="false" top="false" bottom="false" red="0" green="0" blue="0">
+        <row>
+            <cell>
+                <chunk style="font-weight:bold;">ID:</chunk>
+            </cell>
+            <cell>
+                <chunk style="">@Model.ID</chunk>
+            </cell>
+        </row>
+        <row>
+            <cell>
+                <chunk style="font-weight:bold;">ID Flight:</chunk>
+            </cell>
+            <cell>
+                <chunk style="">@Model.ID_flight</chunk>
+            </cell>
+        </row>
+
+        <row>
+            <cell>
+                <chunk style="font-weight:bold;">Email:</chunk>
+            </cell>
+            <cell>
+                <chunk style="">@Model.Email</chunk>
+            </cell>
+        </row>
+
+        <row>
+            <cell>
+                <chunk style="font-weight:bold;">First Name:</chunk>
+            </cell>
+            <cell>
+                <chunk style="">@Model.First_name</chunk>
+            </cell>
+        </row>
+
+        <row>
+            <cell>
+                <chunk style="font-weight:bold;">Middle Name:</chunk>
+            </cell>
+            <cell>
+                <chunk style="">@Model.Middle_name</chunk>
+            </cell>
+        </row>
+
+        <row>
+            <cell>
+                <chunk style="font-weight:bold;">Last Name:</chunk>
+            </cell>
+            <cell>
+                <chunk style="">@Model.Last_name</chunk>
+            </cell>
+        </row>
+
+        <row>
+            <cell>
+                <chunk style="font-weight:bold;">Address:</chunk>
+            </cell>
+            <cell>
+                <chunk style="">@Model.Address</chunk>
+            </cell>
+        </row>
+
+        <row>
+            <cell>
+                <chunk style="font-weight:bold;">Phone:</chunk>
+            </cell>
+            <cell>
+                <chunk style="">@Model.Phone</chunk>
+            </cell>
+        </row>
+
+        <row>
+            <cell>
+                <chunk style="font-weight:bold;">Gender:</chunk>
+            </cell>
+            <cell>
+                <chunk style="">@Model.Gender</chunk>
+            </cell>
+        </row>
+
+        <row>
+            <cell>
+                <chunk style="font-weight:bold;">City:</chunk>
+            </cell>
+            <cell>
+                <chunk style="">@Model.City</chunk>
+            </cell>
+        </row>
+
+        <row>
+            <cell>
+                <chunk style="font-weight:bold;">Province:</chunk>
+            </cell>
+            <cell>
+                <chunk style="">@Model.Province</chunk>
+            </cell>
+        </row>
+
+        <row>
+            <cell>
+                <chunk style="font-weight:bold;">Postcode:</chunk>
+            </cell>
+            <cell>
+                <chunk style="">@Model.Postcode</chunk>
+            </cell>
+        </row>
+
+        <row>
+            <cell>
+                <chunk style="font-weight:bold;">Class:</chunk>
+            </cell>
+            <cell>
+                <chunk style="">@Model.Class</chunk>
+            </cell>
+        </row>
+
+        <row>
+            <cell>
+                <chunk style="font-weight:bold;">Price:</chunk>
+            </cell>
+            <cell>
+                <chunk style="">@Model.Price</chunk>
+            </cell>
+        </row>
+
+        <row>
+            <cell>
+                <chunk style="font-weight:bold;">Seat:</chunk>
+            </cell>
+            <cell>
+                <chunk style="">@Model.Seat</chunk>
+            </cell>
+        </row>
+
+        <row>
+            <cell>
+                <chunk style="font-weight:bold;">Flight Number:</chunk>
+            </cell>
+            <cell>
+                <chunk style="">@Model.getPenerbangan().Flight_number</chunk>
+            </cell>
+        </row>
+
+        <row>
+            <cell>
+                <chunk style="font-weight:bold;">Departure:</chunk>
+            </cell>
+            <cell>
+                <chunk style="">@Model.getPenerbangan().Departure_date , @Model.getPenerbangan().Departure_time </chunk>
+                </cell>
+            </row>
+        <row>
+            <cell>
+                <chunk style="font-weight:bold;">Arrival:</chunk>
+            </cell>
+            <cell>
+                <chunk style="">@Model.getPenerbangan().Arrival_date , @Model.getPenerbangan().Arrival_time </chunk>
+                </cell>
+            </row>
+
+        <row>
+            <cell>
+                <chunk style="font-weight:bold;">Origin:</chunk>
+            </cell>
+            <cell>
+                <chunk style="">@Model.getPenerbangan().Origin</chunk>
+                </cell>
+            </row>
+
+        <row>
+            <cell>
+                <chunk style="font-weight:bold;">Destination:</chunk>
+            </cell>
+            <cell>
+                <chunk style="">@Model.getPenerbangan().Destination</chunk>
+                </cell>
+            </row>
+
+       
+
+    </table>
+</itext>

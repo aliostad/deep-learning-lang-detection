@@ -1,0 +1,27 @@
+/* Youtube Video CSS */
+/* This will only be shown if the script fails to load */
+[data-youtube-embed] {
+  display: block;
+  height: 315px;
+  width: 560px;
+  background: black;
+  position: relative;
+  color: #fff;
+}
+[data-youtube-embed]:before {
+  /* icon */
+  content: "\f166";
+  font-family: FontAwesome;
+  font-size: 240px;
+  position: absolute;
+  top: -20px;
+  left: 50px;
+}
+[data-youtube-embed]:after {
+  /* error message */
+  content: "Youtube Embed script failed to load.";
+  font-size: 30px;
+  position: absolute;
+  top: 100px;
+  left: 280px;
+}

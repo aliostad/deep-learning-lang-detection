@@ -1,0 +1,66 @@
+/* this file provides theme-specific styles that affect the carousel
+ *
+ * these changes have been placed in a separate file because they are included
+ * in the control panel when the carousel is being previewed
+ *
+ * they cannot be included in slide-show.css because that is compiled
+ * automatically from slide-show.scss */
+
+/* fixes incorrect width created by the `slide' transition in the admin preview
+ * modal */
+#slide-show-preview .slide-show-render.slide-show {
+    width: 1030px;
+}
+
+.slide-show-render.slide-show {
+    position: relative;
+    width: 1030px;
+    height: 345px;
+    left: -40px;
+    /* overflow: hidden; */
+}
+.slide-show-render.slide-show .flex-prev, .slide-show-render.slide-show .flex-next {
+    width: 23px;
+    height: 35px;
+}
+.slide-show-render.slide-show .flex-prev {
+    background-image: url('../../Classic/images/Carousel-Navigation-L.png');
+    left: 0;
+}
+.slide-show-render.slide-show .flex-prev:hover {
+    background-image: url('../../Classic/images/Carousel-Navigation-L-Hover.png');
+}
+.slide-show-render.slide-show .flex-next {
+    background-image: url('../../Classic/images/Carousel-Navigation-R.png');
+    right: 0;
+}
+.slide-show-render.slide-show .flex-next:hover {
+    background-image: url('../../Classic/images/Carousel-Navigation-R-Hover.png');
+}
+.slide-show-render.slide-show .flex-control-nav.flex-control-paging {
+    position: absolute;
+    left: 488px;
+    bottom: -25px;
+    width: auto;
+}
+.slide-show-render.slide-show .flex-control-nav.flex-control-paging li {
+    margin-left: 0;
+    margin-right: 7px;
+}
+.slide-show-render.slide-show .flex-control-nav.flex-control-paging li a {
+    width: 11px;
+    height: 11px;
+    border: 1px solid rgb(26, 26, 26);
+    background-color: rgb(26, 26, 26);
+}
+.slide-show-render.slide-show .flex-control-nav.flex-control-paging li a.flex-active {
+    background-color: #c9c9c9;
+}
+
+h2.slide-heading {
+    text-transform: uppercase;
+}
+.slide-show-render .slides li {
+    border-bottom:none;
+}
+

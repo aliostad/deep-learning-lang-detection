@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<process type="main">
+          <task>CalHopperData</task>
+          <task>click_service</task>
+          <task>CalTest</task>
+	</process>
+	
+	
+	<process>
+		<task>import</task>
+	</process>
+	
+	<process>
+		<task>clickstreamlog_etl</task>
+		<task>db_etl</task>
+	</process>
+	
+	<process>
+		<task>conversion</task>
+		<task>other...</task>
+	</process>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    <process type="insurance_order">
+          <task>insurance_order</task>
+    </process>
+	<process type="pre_main">
+    	  <task>insurance_order</task>
+ 	      <task>order_pay_info</task>
+          <task>air_pnr_order_info</task>
+          <task>pax_tkt_info</task>
+          <task>hotel_order</task>
+          <task>seg_info</task>
+    </process>
+	<process type="seg_test">
+          <task>seg_info_test</task>
+    </process>
+    <process type="CalCrt">
+          <task>CalCrt</task>
+    </process>
+    <process type="zz">
+          <task>CalBasicData</task>
+    </process>
+	<process type="main2">
+		  <task>CalUserData</task>
+	</process>
+	<process type="test">
+		  <task>CalRelationData</task>
+	</process>
+</root>

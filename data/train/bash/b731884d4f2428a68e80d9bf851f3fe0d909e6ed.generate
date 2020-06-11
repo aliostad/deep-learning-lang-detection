@@ -1,0 +1,83 @@
+#!/bin/bash
+
+pushd ${0%/*}
+ZOTONIC_SRC=${ZOTONIC_SRC:=/home/kaos/zotonic}
+
+# Get core models
+
+# /path/to/zotonic/src/models/m_model_name.erl
+for f in $ZOTONIC_SRC/src/models/m_*
+do
+    mod=core
+    file=${f##*/m_}
+    model=${file%.erl}
+    echo mod: $mod model: $model
+
+    cat <<EOF > model_$model.rst
+.. This file is generated.
+   To document this model, edit the doc-$model.rst file, which is included in this file.
+
+$model
+${model//?/=}
+
+* Module: $mod
+
+.. include:: doc-$model.rst
+
+EOF
+
+#     cat <<EOF >> ../meta-$mod.rst
+# * Model: :doc:\`models/model_$model\`
+
+# EOF
+
+    if [ ! -e doc-$model.rst ]; then 
+        cat <<EOF > doc-$model.rst
+
+Not yet documented.
+
+EOF
+    fi
+
+done
+
+
+# Get models from modules
+
+# /path/to/zotonic/modules/<mod>/models/m_model_name.erl
+for f in `find $ZOTONIC_SRC/modules -name m_\*`
+do
+    read -r mod model <<EOF
+`echo $f | sed -e 's,.*/\(mod_[^/]*\).*/m_\(.*\).erl,\1 \2,'`
+EOF
+
+    echo mod: $mod model: $model
+
+    cat <<EOF > model_$model.rst
+.. This file is generated.
+   To document this model, edit the doc-$model.rst file, which is included in this file.
+
+$model
+${model//?/=}
+
+* Module: :doc:\`../$mod\`
+
+.. include:: doc-$model.rst
+
+EOF
+
+    cat <<EOF >> ../meta-$mod.rst
+* Model: :doc:\`models/model_$model\`
+
+EOF
+
+    if [ ! -e doc-$model.rst ]; then 
+        cat <<EOF > doc-$model.rst
+
+Not yet documented.
+
+EOF
+    fi
+
+done
+popd

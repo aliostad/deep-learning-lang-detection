@@ -1,0 +1,149 @@
+<message config="ROLE_RIGHTS">
+	<ROLE_RIGHTS>
+		<rights>
+			<processName>
+				<code>Appointments</code>
+			</processName>
+			<id>
+				<root>Archive</root>
+				<extension>1</extension>
+			</id>
+			<id>
+				<root>Restricted</root>
+				<extension>1</extension>
+			</id>
+			<id>
+				<root>Execute</root>
+				<extension>1</extension>
+			</id>
+		</rights>
+		<rights>
+			<processName>
+				<code>Administration</code>
+			</processName>
+			<id>
+				<root>Archive</root>
+				<extension>1</extension>
+			</id>
+			<id>
+				<root>Restricted</root>
+				<extension>0</extension>
+			</id>
+			<id>
+				<root>Execute</root>
+				<extension>1</extension>
+			</id>
+		</rights>
+		<rights>
+			<processName>
+				<code>User Registration</code>
+			</processName>
+		</rights>
+		<rights>
+			<processName>
+				<code>Patient Registration</code>
+			</processName>
+		</rights>
+		<rights>
+			<processName>
+				<code>Age Management Program</code>
+			</processName>
+		</rights>
+		<rights>
+			<processName>
+				<code>Signup</code>
+			</processName>
+		</rights>
+		<rights>
+			<processName>
+				<code>Profile</code>
+			</processName>
+		</rights>
+		<rights>
+			<processName>
+				<code>Process Test</code>
+			</processName>
+		</rights>
+		<rights>
+			<processName>
+				<code>Staff Registration</code>
+			</processName>
+		</rights>
+		<rights>
+			<processName>
+				<code>Accounts</code>
+			</processName>
+		</rights>
+		<rights>
+			<processName>
+				<code>BHRT Program</code>
+			</processName>
+		</rights>
+		<rights>
+			<processName>
+				<code>Licensee Accounts</code>
+			</processName>
+		</rights>
+		<rights>
+			<processName>
+				<code>Licensee Registration Profile</code>
+			</processName>
+		</rights>
+		<rights>
+			<processName>
+				<code>Staff Registration Profile</code>
+			</processName>
+		</rights>
+		<rights>
+			<processName />
+		</rights>
+		<rights>
+			<processName>
+				<code>Demographics And Background</code>
+			</processName>
+		</rights>
+		<rights>
+			<processName />
+		</rights>
+		<rights>
+			<processName>
+				<code>Monitor</code>
+			</processName>
+		</rights>
+		<rights>
+			<processName>
+				<code>RoleDefinition</code>
+			</processName>
+			<id>
+				<root>Archive</root>
+				<extension>0</extension>
+			</id>
+			<id>
+				<root>Restricted</root>
+				<extension>0</extension>
+			</id>
+			<id>
+				<root>Execute</root>
+				<extension>1</extension>
+			</id>
+		</rights>
+		<id>
+			<root>HIN_MSG_ID</root>
+			<extension>13a3eaa2-68eb-2f0b-757c-f80d658e17b3</extension>
+		</id>
+		<id>
+			<root>SUBSCRIBER_ID</root>
+		</id>
+		<id>
+			<root>ROLE_NAME</root>
+		</id>
+		<id>
+			<root>MSG_TITLE</root>
+			<extension>Role Rights Form</extension>
+		</id>
+		<id>
+			<root>TASK_ID</root>
+			<extension>c27e7e0a-c0c6-9ea6-032e-cf47d3b90623</extension>
+		</id>
+	</ROLE_RIGHTS>
+</message>

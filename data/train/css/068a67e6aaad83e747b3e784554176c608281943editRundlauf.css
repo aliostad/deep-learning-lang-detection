@@ -1,0 +1,96 @@
+.inputform form span{
+    white-space: nowrap;
+}    
+
+.inputform form span input{
+    font-size: 1em;
+}
+
+#dauftrfrig {
+    margin-left: 2px;
+}
+#dauftrgrid td.editable{
+    color: green;
+}
+
+#dauftrgrid td.rdonly{
+    color: graytext;
+}
+
+#dauftrgrid td.im{
+}
+
+#dauftrgrid td.teil{
+}
+
+@media screen and (min-width:780px){
+}
+
+@media screen and (max-width:780px){
+    .inputform form span{
+	white-space: nowrap;
+	display: table;
+	width: 100%;
+    }    
+
+    .inputform form span label{
+	display: table-cell;
+	padding-right: 0.5em;
+	width: 25%;
+    }    
+
+    .inputform form span input{
+	width: 99%;
+	display: table-cell;
+    }
+}
+
+.payLoad_I{
+    background-color: #FDD;
+}
+
+.payLoad_E{
+    background-color: #90EE90;
+}
+
+div#exceltable{
+    width: 100%;
+    margin-left: 2px;
+    margin-right:2px;
+}
+
+div.payLoad{
+    color: black;
+    font-size: 0.8em;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-bottom: 1px dashed;
+}
+div.payLoad_I a,div.payLoad_E a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+td.currentRow{
+    background-color: yellow;
+}
+td.currentCol{
+    background-color: lightyellow;
+}
+div.imexStr{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+div.page-header{
+    background-color: lightyellow;
+    text-align: center;
+    margin: 0px 0px 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+legend{
+    margin-bottom: 5px;
+}

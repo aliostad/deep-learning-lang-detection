@@ -1,0 +1,27 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    remove)
+        if [ -f /usr/share/openstack-dashboard/manage.py ]; then
+            (
+              cd /usr/share/openstack-dashboard
+              echo "Collecting and compressing static assets..."
+              rm -rf /usr/share/openstack-dashboard/static/custom/* || :
+              python manage.py collectstatic --noinput 2>&1 > /dev/null
+              python manage.py compress --force 2>&1 > /dev/null
+            )
+        fi
+
+        if [ -x "`which invoke-rc.d 2>/dev/null`" -a -x "/etc/init.d/apache2" ] ; then
+            invoke-rc.d --quiet apache2 reload
+        fi
+        ;;
+    *)
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0

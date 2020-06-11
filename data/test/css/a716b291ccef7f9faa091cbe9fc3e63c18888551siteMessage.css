@@ -1,0 +1,63 @@
+.siteMessage {
+}
+
+  .siteMessage p:first-child, .siteMessage p:first-of-type {
+    margin-top: 0px;
+  }
+
+  .siteMessage p:last-child, .siteMessage p:last-of-type {
+    margin-bottom: 0px;
+  }
+
+  .siteMessage_noIcon {
+    padding: 15px 15px 15px 15px;
+  }
+
+/* ======================================================== */
+/* ALERT */
+.siteMessage_alert {
+	background: #b52b38;
+}
+
+/* ======================================================== */
+/* SUCCESS */
+.siteMessage_success {
+	background: #dbe2c9;
+	color: #556b45;
+}
+
+	.siteMessage_success.siteMessage a:not(.ipsButton) {
+		color: #556b45;
+		border-bottom: 1px dotted #556b45;
+	}
+
+/* ======================================================== */
+/* WARNING */
+.siteMessage_warning {
+	background: #ede6e0;
+	color: #564a3f;
+}
+
+	.siteMessage_warning.siteMessage a:not(.ipsButton) {
+		color: #564a3f;
+		border-bottom: 1px dotted #564a3f;
+	}
+
+/* ======================================================== */
+/* INFO */
+.siteMessage_info, .siteMessage_information {
+	background: #5e707d;
+}
+
+
+/* ======================================================== */
+/* OTHER */
+.siteMessage_general {
+	background: #ebebeb;
+	color: #333;
+}
+
+	.siteMessage_general.siteMessage a:not(.ipsButton) {
+		color: #333;
+		border-bottom: 1px dotted #333;
+	}

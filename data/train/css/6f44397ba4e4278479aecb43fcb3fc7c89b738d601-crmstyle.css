@@ -1,0 +1,79 @@
+.template-box{
+	display:none;
+}
+.model{
+	width:960px;
+	border:1px solid #E2E2E2;
+}
+.remove-model-btn{
+	top:0px;
+	right:0px;
+}
+.add-model{
+	width:70px;
+	border:1px solid #E2E2E2;
+}
+.model-h{
+	padding:1px;
+	border:1px solid #E2E2E2;
+}
+.addsbtn-tb{
+	top:0px;
+	height:15px;
+	line-height:10px;
+	background:#000;
+	color:#FFF;
+	opacity:0.6;
+	z-index: 2;
+}
+.addsbtn-tb span{
+	height:100%;
+}
+.addsbtn-lr{
+	left:0px;
+	width:15px;
+	background:#000;
+	opacity: 0.6;
+	z-index: 2;
+}
+.addsbtn-lr span{
+	left:0px;
+	top:50%;
+	margin-top:-50%;
+	color:#FFF;
+}
+.small-model{
+	border:none;
+	border-bottom:1px solid #E2E2E2;
+}
+.elongate{
+	right:0px;
+	background:#000;
+	width:15px;
+	opacity: 0.6;
+	z-index: 2;
+}
+.heighten{
+	bottom:0px;
+	background:#000;
+	height:15px;
+	opacity: 0.6;
+	z-index: 2;
+}
+.heighten:hover{
+	cursor: s-resize;
+}
+.heighten span{
+	height: 100%;
+	margin-top: -2px;
+	color:#FFF;
+}
+.elongate:hover{
+	cursor: e-resize;
+}
+.elongate span{
+	left:0px;
+	top:50%;
+	margin-top:-50%;
+	color:#FFF;
+}

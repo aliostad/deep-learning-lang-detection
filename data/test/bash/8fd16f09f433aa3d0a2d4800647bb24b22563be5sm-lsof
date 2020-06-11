@@ -1,0 +1,158 @@
+#!/usr/bin/bash
+#
+# sm-lsof - A lsof replacement for SmartMachine's and 
+# a simple alternative to pfiles, fuser.  For detailed
+# information of a process use 'pfiles <pid>'.
+# Joyent 2012.
+
+usage() {
+cat << EOF
+
+Usage: $0 [options]
+
+Options:
+    
+    -p               Display port information for all processes
+    -f		     Display file information for all processes
+    -P <pid>         Show all ports used by this process
+    -F <pid>         Show all files used by this process
+    -o <port>        Show all processes that use this port
+    -i <file>        Show all processes that use this file
+    -d <directory>   Show all processes that use this directory
+
+EOF
+exit 2;
+}
+
+while getopts "pfP:F:o:i:d:" OPTION; do
+	case $OPTION in
+		p)
+			PROCESS_ALL_PORT="ALL";
+			;;
+		f)
+			PROCESS_ALL_FILE="ALL";
+			;;
+		P)
+			PROCESS_PORT_PID=$OPTARG;
+			;;
+		F)
+			PROCESS_FILE_PID=$OPTARG;
+			;;
+		o)
+			PROCESS_PID_PORT=$OPTARG;
+			;;
+		i)
+			PROCESS_PID_FILE=$OPTARG;
+			;;
+		d)
+			PROCESS_PID_DIR=$OPTARG;
+			;;
+		*)
+			usage;
+			;;
+	esac
+done
+
+PATH="/opt/local/bin:/opt/local/gnu/bin:/opt/local/sbin:/usr/bin:/usr/sbin";
+[[ $# -eq 0 ]] && usage;
+
+process_all_port() {
+	echo "* Displaying port information for all processes..";
+	printf "%-7s %-25s %-25s %-7s\n" "PID" "PROCESS" "IP" "PORT";
+	printf "%-65s\n" "-----------------------------------------------------------------";
+
+	for i in `ps -aeo pid | egrep -v "ps|PID" | sort`; do
+		PID_PORT=$(pfiles $i 2>/dev/null | grep "port:" | awk '{ print $5 }');
+		if [[ ! -z ${PID_PORT} ]]; then
+			PID_COMMAND=$(ps -fo comm -p $i | tail -1);
+			pfiles $i | awk -v pid=${i} -v process=${PID_COMMAND:0:23} '/port:/ { printf "%-7s %-25s %-25s %-7s\n", pid, process, $3, $5 }'
+		fi
+	done	
+}
+process_all_file() {
+	echo "* Displaying file information for all processes..";
+	printf "%-7s %-25s %-48s\n" "PID" "PROCESS" "FILE/DEVICE";
+	printf "%-80s\n" "-----------------------------------------------------------------";
+
+	for i in `ps -aeo pid | egrep -v "ps|PID" | sort`; do
+		PID_FILES=$(pfiles $i 2>/dev/null | egrep -A 3 "S_IFREG|S_IFIFO|S_IFDOOR|S_IFCHR" | egrep "/[a-z]*" | sort | uniq);
+		if [[ ! -z ${PID_FILES} ]]; then
+			PID_COMMAND=$(ps -fo comm -p $i | tail -1);
+			for f in ${PID_FILES[@]}; do
+				printf "%-7s %-25s %-48s\n" "$i" "${PID_COMMAND:0:23}" "$f";
+			done
+		fi
+	done
+}
+process_port_pid() {
+	echo "* Displaying process information for pid ${PROCESS_PORT_PID}..";
+	printf "%-7s %-25s %-25s %-7s\n" "PID" "PROCESS" "IP" "PORT";
+	printf "%-65s\n" "-----------------------------------------------------------------";
+
+	PID_PORT=$(pfiles ${PROCESS_PORT_PID} 2>/dev/null | grep "port:" | awk '{ print $5 }');
+	if [[ ! -z ${PID_PORT} ]]; then
+		PID_COMMAND=$(ps -fo comm -p ${PROCESS_PORT_PID} | tail -1);
+		pfiles ${PROCESS_PORT_PID} | awk -v pid=${PROCESS_PORT_PID} -v process=${PID_COMMAND:0:23} '/port:/ { printf "%-7s %-25s %-25s %-7s\n", pid, process, $3, $5 }'
+	fi
+}
+process_file_pid() {
+	echo "* Displaying file information for pid ${PROCESS_FILE_PID}..";
+	printf "%-7s %-25s %-48s\n" "PID" "PROCESS" "FILE/DEVICE";
+	printf "%-80s\n" "-----------------------------------------------------------------";
+
+	PID_FILES=$(pfiles ${PROCESS_FILE_PID} 2>/dev/null | egrep -A 3 "S_IFREG|S_IFIFO|S_IFDOOR|S_IFCHR" | egrep "/[a-z]*" | sort | uniq);
+	if [[ ! -z ${PID_FILES} ]]; then
+		PID_COMMAND=$(ps -fo comm -p ${PROCESS_FILE_PID} | tail -1);
+		for f in ${PID_FILES[@]}; do
+			printf "%-7s %-25s %-48s\n" "${PROCESS_FILE_PID}" "${PID_COMMAND:0:23}" "$f";
+		done
+	fi
+}
+process_pid_port() {
+	echo "* Displaying process information for port ${PROCESS_PID_PORT}..";
+	printf "%-7s %-25s %-25s %-7s\n" "PID" "PROCESS" "IP" "PORT";
+	printf "%-65s\n" "-----------------------------------------------------------------";
+
+	for i in `ps -aeo pid | egrep -v "ps|PID" | sort`; do
+		PID_PORT=$(pfiles $i 2>/dev/null | grep "port: ${PROCESS_PID_PORT}" | awk '{ print $5 }');
+		if [[ ! -z ${PID_PORT} ]]; then
+			PID_COMMAND=$(ps -fo comm -p $i | tail -1);
+			pfiles $i | awk -v pid=${i} -v process=${PID_COMMAND:0:23} '/port:/ { printf "%-7s %-25s %-25s %-7s\n", pid, process, $3, $5 }'
+		fi
+	done	
+}
+process_pid_file() {
+	echo "* Displaying process information for file ${PROCESS_PID_FILE}..";
+	printf "%-7s %-25s %-48s\n" "PID" "PROCESS" "FILE/DEVICE";
+	printf "%-80s\n" "-----------------------------------------------------------------";
+
+	for i in `ps -aeo pid | egrep -v "ps|PID" | sort`; do
+		PID_FILES=$(pfiles $i 2>/dev/null | egrep -A 3 "S_IFREG|S_IFIFO|S_IFDOOR|S_IFCHR" | egrep "/[a-z]*" | sort | uniq | egrep "^*${PROCESS_PID_FILE}$");
+		if [[ ! -z ${PID_FILES} ]]; then
+			PID_COMMAND=$(ps -fo comm -p $i | tail -1);
+			for f in ${PID_FILES[@]}; do
+				printf "%-7s %-25s %-48s\n" "$i" "${PID_COMMAND:0:23}" "$f";
+			done
+		fi
+	done
+}
+process_pid_dir() {
+	echo "* Displaying process information for directory ${PROCESS_PID_DIR}..";
+	printf "%-7s %-25s %-48s\n" "PID" "PROCESS" "DIRECTORY";
+	printf "%-80s\n" "-----------------------------------------------------------------";
+
+	for i in `fuser ${PROCESS_PID_DIR} 2>/dev/null`; do
+		PID_COMMAND=$(ps -fo comm -p $i | tail -1);
+		if [[ ${PID_COMMAND} != "COMMAND" ]]; then
+			printf "%-7s %-25s %-48s\n" "$i" "${PID_COMMAND:0:23}" "${PROCESS_PID_DIR}";
+		fi
+	done
+}
+
+[[ ${PROCESS_ALL_PORT} ]] && process_all_port;
+[[ ${PROCESS_ALL_FILE} ]] && process_all_file;
+[[ ${PROCESS_PORT_PID} ]] && process_port_pid;
+[[ ${PROCESS_FILE_PID} ]] && process_file_pid;
+[[ ${PROCESS_PID_PORT} ]] && process_pid_port;
+[[ ${PROCESS_PID_FILE} ]] && process_pid_file;
+[[ ${PROCESS_PID_DIR} ]] && process_pid_dir;

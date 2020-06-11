@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services>
+
+	<!-- 测试服务 -->
+	<service>
+		<serviceid>testService</serviceid>
+		<class>com.vincesu.testService</class>
+		<method>testmethod</method>
+	</service>
+	
+	<!--   ******************系统模块********************  -->
+	
+	<!-- 系统用户 -->
+	<!-- 是否已登陆服务 -->
+	<service>
+		<serviceid>islogin</serviceid>
+		<class>com.vincesu.framework.service.UserService</class>
+		<method>islogin</method>
+	</service>
+	
+	<!-- 登陆服务 -->
+	<service>
+		<serviceid>login</serviceid>
+		<class>com.vincesu.framework.service.UserService</class>
+		<method>login</method>
+	</service>
+	
+	<!-- 获得用户列表 -->
+	<service>
+		<serviceid>getUsers</serviceid>
+		<class>com.vincesu.framework.service.UserService</class>
+		<method>getUsers</method>
+	</service>
+	
+	<!-- 获得编码表 -->
+	<service>
+		<serviceid>getEncoding</serviceid>
+		<class>com.vincesu.framework.service.UserService</class>
+		<method>getEncoding</method>
+	</service>
+
+	<!-- 获得单个用户 -->
+	<service>
+		<serviceid>getUser</serviceid>
+		<class>com.vincesu.framework.service.UserService</class>
+		<method>getUser</method>
+	</service>
+	
+	<!-- 添加或保存用户 -->
+	<service>
+		<serviceid>restoreUser</serviceid>
+		<class>com.vincesu.framework.service.UserService</class>
+		<method>restoreUser</method>
+	</service>
+	
+	<!-- 删除列表 -->
+	<service>
+		<serviceid>removeUser</serviceid>
+		<class>com.vincesu.framework.service.UserService</class>
+		<method>removeUser</method>
+	</service>
+	
+	<!-- 获得module list -->
+	<service>
+		<serviceid>getModuleList</serviceid>
+		<class>com.vincesu.framework.service.ModuleService</class>
+		<method>getModuleList</method>
+	</service>
+	
+	<!-- 获得module -->
+	<service>
+		<serviceid>getModule</serviceid>
+		<class>com.vincesu.framework.service.ModuleService</class>
+		<method>getModule</method>
+	</service>
+	
+	<!-- 修改或保存module -->
+	<service>
+		<serviceid>restoreModule</serviceid>
+		<class>com.vincesu.framework.service.ModuleService</class>
+		<method>restoreModule</method>
+	</service>
+	
+	<!-- 删除module -->
+	<service>
+		<serviceid>removeModule</serviceid>
+		<class>com.vincesu.framework.service.ModuleService</class>
+		<method>removeModule</method>
+	</service>
+	
+	<!-- 系统角色 -->
+	<!-- 获得role list -->
+	<service>
+		<serviceid>getRoleList</serviceid>
+		<class>com.vincesu.framework.service.RoleService</class>
+		<method>getRoleList</method>
+	</service>
+	
+	<!-- 获得role -->
+	<service>
+		<serviceid>getRole</serviceid>
+		<class>com.vincesu.framework.service.RoleService</class>
+		<method>getRole</method>
+	</service>
+	
+	<!-- 修改或保存role -->
+	<service>
+		<serviceid>restoreRole</serviceid>
+		<class>com.vincesu.framework.service.RoleService</class>
+		<method>restoreRole</method>
+	</service>
+	
+	<!-- 删除role -->
+	<service>
+		<serviceid>removeRole</serviceid>
+		<class>com.vincesu.framework.service.RoleService</class>
+		<method>removeRole</method>
+	</service>
+	
+	<!-- 查看权限 -->
+	<service>
+		<serviceid>getPermissions</serviceid>
+		<class>com.vincesu.framework.service.RoleService</class>
+		<method>getPermissions</method>
+	</service>
+	
+	<!-- 查看未获取权限 -->
+	<service>
+		<serviceid>getPermissionsNotOwn</serviceid>
+		<class>com.vincesu.framework.service.RoleService</class>
+		<method>getPermissionsNotOwn</method>
+	</service>
+	
+	<!-- 删除权限 -->
+	<service>
+		<serviceid>removePermissions</serviceid>
+		<class>com.vincesu.framework.service.RoleService</class>
+		<method>removePermissions</method>
+	</service>
+	
+	<!-- 删除权限 -->
+	<service>
+		<serviceid>addPermissions</serviceid>
+		<class>com.vincesu.framework.service.RoleService</class>
+		<method>addPermissions</method>
+	</service>
+	
+	<!--   **********************************************  -->
+	
+</services>

@@ -1,0 +1,40 @@
+@CHARSET "UTF-8";
+@IMPORT url("common.css");
+.input_area{
+	width: 950px;
+	background-color: #f3f5fa;
+}
+.input_area_ta{
+	width: 829px;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+.reply_write_ta{
+	height: 21px;
+	width: 705px;
+	border: 1px solid #ccc;
+	background: #fff;
+	margin-bottom: 0px;
+}
+.reply_content{
+	background-position: 55px center;
+	padding-left: 110px;
+}
+.reply_write{
+	background-color: #fbfbfb;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 31px;
+}
+.send_reply{
+	margin-top: 0px;
+}
+.reply_text{
+	padding-left: 110px;
+	background-position: 55px center;
+}
+.category{
+	text-align: center;
+}

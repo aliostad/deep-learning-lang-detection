@@ -1,0 +1,15 @@
+/* --------------------------
+    ÔÚÏß¿Í·þ
+   --------------------------*/
+    .online-service { position:fixed; top:220px; right:0px; z-index:99; }
+    .online-service .service-tips { display:block; cursor:pointer; }
+    .online-service .service-list { width:145px; height:140px; display:none; }
+    .online-service .service-list .t { background:url(../img/service-bg.gif) no-repeat left 50%; height:6px; }
+    .online-service .service-list .b { background:url(../img/service-bg.gif) no-repeat right 50%; height:6px; }
+    .online-service .service-list .con { background:url(../img/service-bg.gif) repeat-y -155px 0px; padding:4px; }
+    .online-service .service-list .con h2 { background:url(../img/service-bg.gif) repeat-y -163px 0px; font-size:12px; line-height:22px; font-weight:700; color:#fff; height:22px; text-align:center; }
+    .online-service .service-list .con ul { display:block; background:#fff; width:125px; padding:6px 6px 0 6px; }
+    .online-service .service-list .con ul li { height:23px; padding-bottom:6px; }
+    .online-service .service-list .con ul li a { display:block; line-height:16px; }
+    .online-service.hover .service-tips { display:none; }
+    .online-service.hover .service-list { display:block; }

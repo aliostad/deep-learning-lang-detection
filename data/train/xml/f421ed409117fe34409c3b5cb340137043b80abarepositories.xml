@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services
+        http://symfony.com/schema/dic/services/services-1.0.xsd"
+>
+    <services>
+        <service class="PurpleYellow\Bundle\MatchBundle\Repository\MatchRepository"
+                 id="purple_yellow.match.repository.match_repository">
+            <factory service="doctrine" method="getRepository"/>
+            <argument>PurpleYellowMatchBundle:Match</argument>
+        </service>
+
+        <service class="PurpleYellow\Bundle\MatchBundle\Repository\SessionMatchRepository"
+                 id="purple_yellow.match.repository.session_match_repository">
+            <argument id="purple_yellow.match.repository.match_repository" type="service"/>
+            <argument id="purple_yellow.player.repository.session_player_repository" type="service"/>
+        </service>
+    </services>
+</container>

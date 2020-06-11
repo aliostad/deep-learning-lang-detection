@@ -1,0 +1,19 @@
+#!/usr/bin/env python
+import subprocess
+import argparse
+
+parser = argparse.ArgumentParser(description='git-ls-remote --tags without the fluff',
+    formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+parser.add_argument('repository_url')
+opts = parser.parse_args()
+
+repository_url = opts.repository_url
+if '://' not in repository_url:
+    repository_url = 'git://github.com/' + repository_url
+
+lines = subprocess.check_output(['git', 'ls-remote', '--tags', repository_url])
+for line in lines.strip().split('\n'):
+    sha, tag = line.split()
+    # what are these ^{} tags? I don't need them.
+    if not tag.endswith('^{}'):
+        print tag.split('/')[-1]

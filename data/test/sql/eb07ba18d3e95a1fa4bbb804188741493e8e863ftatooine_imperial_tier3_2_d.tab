@@ -1,0 +1,6 @@
+questZone	navPoints	laps	specialTarget	triggerEvent	triggerSplitCondition	triggerArg	triggerArg2	triggerOn	triggerEndsMission	triggerDelay	autoReward	questDelay	_DESIGNER NOTES_	questSeries
+s	s	i[1]	s	"e(none=0,splitquest=1,surpriseattack=2)[none]"	"e(triggerOn=0,success=1,failure=2,both=3)[triggerOn]"	s	s	i	i	i	i	i	s	s
+space_endor	space_endor:tatooine_imperial_tier3_patrol1_1	1		splitquest	triggerOn	space_battle:tatooine_imperial_tier3_2_e		3	1	20	0	0		pilot_profession
+	space_endor:tatooine_imperial_tier3_patrol1_2													
+	space_endor:tatooine_imperial_tier3_patrol1_3													
+	space_endor:tatooine_imperial_tier3_patrol1_4													

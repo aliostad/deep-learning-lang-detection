@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Version Tiger P2 repository management" default="update.p2">
+	
+	<!-- <property name="remote.repository.location" value="/home/username/www/p2/version-tiger" /> -->
+	<!-- <property name="remote.repository.user" value="username" /> -->
+	<!-- <property name="remote.repository.host" value="hostname" /> -->
+	
+	<property name="workspace.composite.repository.location" value="${basedir}/target/compositeRepository" />
+	<property name="workspace.repository.location" value="${basedir}/target/repository" />
+	
+    <condition property="isSnapshot">
+        <contains string="${version}" substring="SNAPSHOT"/>
+    </condition>
+	<condition property="doDeploy">
+		<and>
+			<isset property="isSnapshot"/>
+			<isset property="remote.repository.location"/>
+			<isset property="remote.repository.user"/>
+			<isset property="remote.repository.host"/>
+		</and>
+	</condition>
+	
+	<target name="clean.p2">
+        <echo>Clearing p2 repository at ${remote.repository.user}@${remote.repository.host}:${remote.repository.location}/</echo>
+		
+        <exec executable="ssh" os="Linux" failifexecutionfails="false">
+            <arg line="${remote.repository.user}@${remote.repository.host} rm -r ${remote.repository.location}/*"/>
+        </exec>
+	</target>
+	
+	<target name="deploy.p2">
+		<echo>Deploying release into p2 repository at ${remote.repository.user}@${remote.repository.host}:${remote.repository.location}/</echo>
+		<exec executable="sh" os="Linux">
+			<arg line="-c 'scp -r ${workspace.repository.location}/* ${remote.repository.user}@${remote.repository.host}:${remote.repository.location}/'" />
+		</exec>
+	</target>
+	
+	<target name="update.p2" depends="clean.p2,deploy.p2" if="doDeploy">
+		<echo>P2 repository updated.</echo>
+	</target>
+
+</project>

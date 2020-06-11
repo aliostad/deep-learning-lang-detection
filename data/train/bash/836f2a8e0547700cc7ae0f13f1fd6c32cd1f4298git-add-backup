@@ -1,0 +1,61 @@
+#!/bin/bash
+
+set -ue
+backupPathBase=~/usr/mnt/winshare/git-backup
+
+DIE () {
+    echo "FATAL ERROR: $*" >&2
+    exit 1
+}
+
+MSG () {
+    echo "$@"
+}
+
+if [ $# -ge 1 ]
+then
+    case $1 in
+        -h|--help) echo "Usage: $0 [LOCAL-GIT-REPO-PATH]"; exit;;
+        -*) DIE "Unknown option $1";;
+        *) cd "$1";;
+    esac
+fi
+
+[ -e "$PWD/.git" ] || DIE "Not in a git repository"
+
+if git remote | grep -q backup
+then
+    DIE "A remote repo 'backup' already exists."
+fi
+
+
+repoPath="${PWD}"
+repoName="${PWD##*/}"
+repoBackup="$backupPathBase/$repoName.git"
+
+if [ -e "$repoBackup" ]
+then
+    DIE "A remote '$repoBackup' already exists. (Name conflict?)"
+else
+    (
+        MSG "No backup repo for '$repoName' found: creating..."
+        cd "$backupPathBase"
+        git clone --bare "$repoPath" "$repoName.git"
+    )
+fi
+
+MSG "Adding remote repo 'backup'"
+git remote -v add backup "$repoBackup"
+
+hook=".git/hooks/post-commit"
+if [ -e "$hook" ]
+then
+    DIE "post commit fook file already exists: $hook"
+else
+    MSG "Adding post-commit hook: $hook"
+    cat >> "$hook" <<-EOF
+	#!/bin/bash
+	git push --mirror backup
+	EOF
+    chmod +x .git/hooks/post-commit
+fi

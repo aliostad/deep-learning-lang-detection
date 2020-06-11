@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# 下载签到助手并展开
+cd ${OPENSHIFT_REPO_DIR}php/
+curl -s http://buildbot.ikk.me/latest/tieba-sign_stable.zip > Tieba-sign.zip
+#cp -rf ${OPENSHIFT_REPO_DIR}.openshift/markers/Tieba_Sign_Stable-20140427_032507.zip Tieba-sign.zip
+unzip Tieba-sign.zip
+rm -rf Tieba-sign.zip
+
+# 安装插件
+cd ${OPENSHIFT_REPO_DIR}.openshift/plugins
+cp -rf ${OPENSHIFT_REPO_DIR}.openshift/plugins/cron/*.php ${OPENSHIFT_REPO_DIR}php/system/function/cron/
+cp -rf ${OPENSHIFT_REPO_DIR}.openshift/plugins/plugins/* ${OPENSHIFT_REPO_DIR}php/plugins/
+
+# 安装风格
+cd ${OPENSHIFT_REPO_DIR}.openshift/plugins
+cp -rf ${OPENSHIFT_REPO_DIR}.openshift/themes/* ${OPENSHIFT_REPO_DIR}php/template/
+
+# 安装文件管理器
+cd ${OPENSHIFT_REPO_DIR}php/
+mkdir filebrowser
+cp -rf ${OPENSHIFT_REPO_DIR}.openshift/tools/filebrowser/* ${OPENSHIFT_REPO_DIR}php/filebrowser/
+
+# 安装数据库备份程序
+cd ${OPENSHIFT_REPO_DIR}.openshift/
+cp ${OPENSHIFT_REPO_DIR}.openshift/tools/backup.php ${OPENSHIFT_REPO_DIR}.openshift/backup/
+mkdir ${OPENSHIFT_REPO_DIR}.openshift/backup/sql

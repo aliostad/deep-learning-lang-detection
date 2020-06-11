@@ -1,0 +1,72 @@
+/* Auto-Generated via TYPO3\CMS\Backend\Sprite\SimpleSpriteHandler */
+
+.t3-icon-extensionmanager-update-script {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3/sysext/extensionmanager/Resources/Public/Images/Icons/ExtensionUpdateScript.png') !important;
+}
+	
+.t3-icon-pages-contains-news {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/news/Resources/Public/Icons/folder.gif') !important;
+}
+	
+.t3-icon-sys_file_storage-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3/sysext/t3skin/icons/gfx/i/_icon_ftp.gif') !important;
+}
+	
+.t3-icon-sys_filemounts-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3/sysext/t3skin/icons/gfx/i/_icon_ftp_2.gif') !important;
+}
+	
+.t3-icon-backend_layout-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3/sysext/t3skin/icons/gfx/i/backend_layout.gif') !important;
+}
+	
+.t3-icon-tx_rtehtmlarea_acronym-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3/sysext/rtehtmlarea/extensions/Acronym/skin/images/acronym.gif') !important;
+}
+	
+.t3-icon-sys_note-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3/sysext/sys_note/ext_icon.gif') !important;
+}
+	
+.t3-icon-tx_news_domain_model_file-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/news/Resources/Public/Icons/news_domain_model_file.gif') !important;
+}
+	
+.t3-icon-tx_news_domain_model_link-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/news/Resources/Public/Icons/news_domain_model_link.gif') !important;
+}
+	
+.t3-icon-tx_news_domain_model_media-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/news/Resources/Public/Icons/news_domain_model_media.gif') !important;
+}
+	
+.t3-icon-tx_news_domain_model_news-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/news/Resources/Public/Icons/news_domain_model_news.gif') !important;
+}
+	
+.t3-icon-tx_news_domain_model_news-1 {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/news/Resources/Public/Icons/news_domain_model_news_internal.gif') !important;
+}
+	
+.t3-icon-tx_news_domain_model_news-2 {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/news/Resources/Public/Icons/news_domain_model_news_external.gif') !important;
+}
+	
+.t3-icon-tx_news_domain_model_tag-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/news/Resources/Public/Icons/news_domain_model_tag.png') !important;
+}
+	

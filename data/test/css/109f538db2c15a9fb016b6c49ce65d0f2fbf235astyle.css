@@ -1,0 +1,84 @@
+html, body {
+  height: 100%;
+  background: #222;
+  color: #efefef;
+  font-family: Arial;
+}
+
+.dashlet {
+  border: 2px solid #272727;
+  font-family: monospace;
+  font-size: 24px;
+  background: #111;
+}
+
+input, button {
+  color: black;
+}
+
+.error {
+  color: red;
+}
+
+.header {
+  font-size: 18px;
+  padding: 20px 20px 10px 20px;
+  background: #1a1a1a;
+}
+
+.latency {
+  float: right;
+}
+
+.body {
+  padding: 10px 20px 20px 20px;
+}
+
+.real-time {
+  background: #333;
+  border: none;
+  color: #cdcdcd;
+  font-size: 18px;
+}
+
+.dashlet .real-time {
+  -webkit-border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-topright: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+#raw {
+  min-height: 680px;
+}
+
+#commands {
+  min-height: 600px;
+
+}
+
+.status-indicator {
+  color: #f0ad4e;
+}
+
+.status-indicator .unknown { display:inline-block; !important; }
+.status-indicator .fail    { display:none !important; }
+.status-indicator .success { display:none !important; }
+
+.status-indicator.api-status-fail {
+  color: #d9534f;
+}
+
+.status-indicator.api-status-fail .unknown { display:none !important; }
+.status-indicator.api-status-fail .fail    { display:inline-block !important; }
+.status-indicator.api-status-fail .success { display:none !important; }
+
+.status-indicator.api-status-success {
+  color: #5cb85c;
+}
+
+.status-indicator.api-status-success .unknown { display:none !important; }
+.status-indicator.api-status-success .fail    { display:none !important; }
+.status-indicator.api-status-success .success { display:inline-block !important; }

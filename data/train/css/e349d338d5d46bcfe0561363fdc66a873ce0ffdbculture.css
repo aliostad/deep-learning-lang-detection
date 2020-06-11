@@ -1,0 +1,118 @@
+.page-culture .m-model-block .m-model-item{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.page-culture .m-model-block .m-model-item .m-model-con{
+    padding: 30px 0;
+}
+.page-culture .m-model-con{
+    overflow: hidden;
+}
+.page-culture .valueIdea{
+    padding: 20px 0;
+}
+.page-culture .staffStyle{
+    overflow: hidden;
+    margin-right: -18px;
+}
+.page-culture .staffStyle li{
+    float: left;
+    width: 388px;
+    margin-right: 18px;
+    overflow: hidden;
+}
+.page-culture .staffStyle li img{
+    display: block;
+    width: 388px;
+    height: 295px;
+}
+.page-culture .staffStyle li p{
+    background: #fff;
+    line-height: 40px;
+    text-align: center;
+    font-size:14px;
+}
+.page-culture .CorporateImage{
+    margin-right: -20px;
+}
+.page-culture .CorporateImage li{
+    float: left;
+    width: 388px;
+    margin-right: 18px;
+}
+.page-culture .CorporateImage li img{
+    display: block;
+    width: 388px;
+    height: 295px;
+}
+.page-culture .CorporateImage li P{
+    font: 400 14px/40px "微软雅黑";
+    text-align: center;
+    color: #333;
+    background-color: #eeeff3;
+    height: 40px;
+}
+
+.imgList{
+    padding-top: 80px;
+}
+.imgList .m-model-block .m-model-item{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.imgList .m-model-block .m-model-item .m-model-con{
+    padding: 30px 0;
+}
+.imgList .m-model-con{
+    overflow: hidden;
+}
+.imgList .valueIdea{
+    padding: 20px 0;
+}
+.imgList .staffStyle{
+    overflow: hidden;
+    margin-right: -18px;
+}
+.imgList .staffStyle li{
+    float: left;
+    width: 388px;
+    margin-right: 18px;
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+.imgList .staffStyle li a{
+    display: block;
+}
+.imgList .staffStyle li img{
+    display: block;
+    width: 388px;
+    height: 295px;
+}
+.imgList .staffStyle li p{
+    background: #fff;
+    line-height: 40px;
+    text-align: center;
+    font-size:14px;
+}
+.imgList .CorporateImage{
+    margin-right: -20px;
+}
+.imgList .CorporateImage li{
+    float: left;
+    width: 388px;
+    margin-right: 18px;
+}
+.imgList .CorporateImage li img{
+    display: block;
+    width: 388px;
+    height: 295px;
+}
+.imgList .CorporateImage li P{
+    font: 400 14px/40px "微软雅黑";
+    text-align: center;
+    color: #333;
+    background-color: #eeeff3;
+    height: 40px;
+}

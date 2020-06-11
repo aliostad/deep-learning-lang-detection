@@ -1,0 +1,121 @@
+@charset "UTF-8";
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+.col-md-6 {
+    padding: 10px 0 0;
+}
+#chat-screen {
+    background-color: #aaebf0;
+    height: 80%;
+    margin: 0;
+    overflow: auto;
+    padding: 0;    
+}
+#chat-block-a {
+  border-right: #ccc solid 1px;
+}
+#input-bar {
+	bottom: 0;
+	margin: 0;
+	width: 100%;
+}
+.button {
+	background-color: #52A4D6;
+	border: #FFF solid 1px;
+	border-radius: 10px;
+	color: #FFF;
+	float: right;
+	margin: 0 10px;
+    padding: 5px 10px;
+}
+.button:hover {
+    background-color: #21658d;
+}
+#title {
+    background-color: #0e7676;
+	color: #FFFFFF;
+	font-size: 20px;
+	text-align: center;
+	width: 100%;	
+}
+#chat-a, #chat-b {
+	float: left;
+	margin: 0 10px 10px;
+	width: 75%;
+}
+.message-list {
+    clear: both;
+    margin: 10px;
+    min-width: 250px;
+}
+.message-a {
+    float: left;
+}
+.message-b {
+    float: right;
+}
+.message-list h3 {
+    font-size: 15px;
+    margin: 0;
+    padding: 5px;
+}
+.message-list span {
+    font-size: 10px;
+    margin-top: 2px;
+    padding: 5px;
+}
+.message-list .control a {
+    cursor: pointer;
+}
+.message-list .control a.remove {
+    padding-left: 10px;
+}
+.message-a .control {
+    font-size: 12px;
+    margin-left: 45px;
+}
+.message-b .control {
+    font-size: 12px;
+    margin-right: 45px;
+    text-align: right;
+}
+.message-a h3, .message-a span {
+    float: left;
+}
+.message-b h3, .message-b span {
+    float: right;
+}
+.message-list .message {
+    background-color: #FFFFFF;
+    border: #5cc8e7 solid 1px;
+    clear: both;
+    padding: 5px 10px;
+}
+.message-list.editing .message {
+    display: none;
+}
+.message-list textarea {
+    clear: both;
+    display: none;
+    width: 70%;
+}
+.message-list.editing textarea {
+    display: block;
+}
+.message-a .message {
+    border-radius: 0 10px 10px;
+    margin-left: 40px;
+}
+.message-a textarea {
+    margin-left: 40px;
+}
+.message-b .message {
+    border-radius: 10px 0 10px 10px;
+    margin-right: 40px;
+}
+.message-b textarea {
+    margin-right: 40px;
+}

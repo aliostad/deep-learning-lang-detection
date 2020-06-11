@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?compositeArtifactRepository version='1.0.0'?>
+<repository name='JBoss Tools Staging Repository' type='org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository' version='1.0.0'>
+<properties size='2'>
+<property name='p2.compressed' value='true'/>
+<!-- 
+     get new time w/ 
+      date +%s000
+-->
+<property name='p2.timestamp' value='1306350337002'/>
+</properties>
+<children size='31'>
+
+<child location='../../../archives/site/target/repository/'/>
+<child location='../../../as/site/target/repository/'/>
+<child location='../../../birt/site/target/repository/'/>
+<child location='../../../bpel/site/target/repository/'/>
+<child location='../../../cdi/site/target/repository/'/>
+
+<child location='../../../common/site/target/repository/'/>
+<child location='../../../deltacloud/site/target/repository/'/>
+<child location='../../../esb/site/target/repository/'/>
+<child location='../../../examples/site/target/repository/'/>
+<child location='../../../flow/site/target/repository/'/>
+
+<child location='../../../forge/site/target/repository/'/>
+<child location='../../../freemarker/site/target/repository/'/>
+<child location='../../../gwt/site/target/repository/'/>
+<child location='../../../hibernatetools/site/target/repository/'/>
+<child location='../../../jbpm/site/target/repository/'/>
+
+<child location='../../../jmx/site/target/repository/'/>
+<child location='../../../jsf/site/target/repository/'/>
+<child location='../../../jst/site/target/repository/'/>
+<child location='../../../maven/site/target/repository/'/>
+<child location='../../../modeshape/site/target/repository/'/>
+
+<child location='../../../portlet/site/target/repository/'/>
+<child location='../../../runtime/site/target/repository/'/>
+<child location='../../../seam/site/target/repository/'/>
+<child location='../../../struts/site/target/repository/'/>
+<child location='../../../tests/site/target/repository/'/>
+
+<child location='../../../usage/site/target/repository/'/>
+<child location='../../../vpe/site/target/repository/'/>
+<child location='../../../ws/site/target/repository/'/>
+<child location='../../../xulrunner/site/target/repository/'/>
+<child location='../../../openshift/site/target/repository/'/>
+
+<child location='../../../central/site/target/repository/'/>
+
+</children>
+</repository>

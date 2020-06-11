@@ -1,0 +1,40 @@
+#!/bin/sh
+
+test=$1
+
+  printf "$test "
+  cd ..
+  nazghul --playback tests/$test.rec --playback_speed 0 tests/$test.scm 2> tests/$test.err > tests/$test.out
+  result=$?
+  echo $result > tests/$test.result
+  if [ $result != 0 ]; then
+    printf "FAIL [exec]\n"
+    exit -1
+  fi
+
+  mv save.scm tests/$test.save
+  mv .console tests/$test.console
+  mv .cmdwin tests/$test.cmdwin
+  cd tests
+
+  diff $test.save $test.save.mstr > $test.save.diff
+  if [ $? != 0 ]; then
+    printf "FAIL [diff save]\n"
+    exit -2
+  fi
+
+  diff $test.cmdwin $test.cmdwin.mstr > $test.cmdwin.diff
+  if [ $? != 0 ]; then
+    printf "FAIL [diff cmdwin]\n"
+    exit -3
+  fi
+
+  diff $test.console $test.console.mstr > $test.console.diff
+  if [ $? != 0 ]; then
+    printf "FAIL [diff console]\n"
+    exit -3
+  fi
+
+  printf " PASS\n"
+
+exit 0

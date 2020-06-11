@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="net.sareweb.mshowcase.service.ActivityLocalService" class="net.sareweb.mshowcase.service.impl.ActivityLocalServiceImpl" />
+	<bean id="net.sareweb.mshowcase.service.ActivityLocalServiceUtil" class="net.sareweb.mshowcase.service.ActivityLocalServiceUtil">
+		<property name="service" ref="net.sareweb.mshowcase.service.ActivityLocalService" />
+	</bean>
+	<bean id="net.sareweb.mshowcase.service.ActivityService" class="net.sareweb.mshowcase.service.impl.ActivityServiceImpl" />
+	<bean id="net.sareweb.mshowcase.service.ActivityServiceUtil" class="net.sareweb.mshowcase.service.ActivityServiceUtil">
+		<property name="service" ref="net.sareweb.mshowcase.service.ActivityService" />
+	</bean>
+	<bean id="net.sareweb.mshowcase.service.persistence.ActivityPersistence" class="net.sareweb.mshowcase.service.persistence.ActivityPersistenceImpl" parent="basePersistence" />
+	<bean id="net.sareweb.mshowcase.service.CategoryLocalService" class="net.sareweb.mshowcase.service.impl.CategoryLocalServiceImpl" />
+	<bean id="net.sareweb.mshowcase.service.CategoryLocalServiceUtil" class="net.sareweb.mshowcase.service.CategoryLocalServiceUtil">
+		<property name="service" ref="net.sareweb.mshowcase.service.CategoryLocalService" />
+	</bean>
+	<bean id="net.sareweb.mshowcase.service.CategoryService" class="net.sareweb.mshowcase.service.impl.CategoryServiceImpl" />
+	<bean id="net.sareweb.mshowcase.service.CategoryServiceUtil" class="net.sareweb.mshowcase.service.CategoryServiceUtil">
+		<property name="service" ref="net.sareweb.mshowcase.service.CategoryService" />
+	</bean>
+	<bean id="net.sareweb.mshowcase.service.persistence.CategoryPersistence" class="net.sareweb.mshowcase.service.persistence.CategoryPersistenceImpl" parent="basePersistence" />
+	<bean id="net.sareweb.mshowcase.service.DealLocalService" class="net.sareweb.mshowcase.service.impl.DealLocalServiceImpl" />
+	<bean id="net.sareweb.mshowcase.service.DealLocalServiceUtil" class="net.sareweb.mshowcase.service.DealLocalServiceUtil">
+		<property name="service" ref="net.sareweb.mshowcase.service.DealLocalService" />
+	</bean>
+	<bean id="net.sareweb.mshowcase.service.DealService" class="net.sareweb.mshowcase.service.impl.DealServiceImpl" />
+	<bean id="net.sareweb.mshowcase.service.DealServiceUtil" class="net.sareweb.mshowcase.service.DealServiceUtil">
+		<property name="service" ref="net.sareweb.mshowcase.service.DealService" />
+	</bean>
+	<bean id="net.sareweb.mshowcase.service.persistence.DealPersistence" class="net.sareweb.mshowcase.service.persistence.DealPersistenceImpl" parent="basePersistence" />
+	<bean id="net.sareweb.mshowcase.service.FriendshipLocalService" class="net.sareweb.mshowcase.service.impl.FriendshipLocalServiceImpl" />
+	<bean id="net.sareweb.mshowcase.service.FriendshipLocalServiceUtil" class="net.sareweb.mshowcase.service.FriendshipLocalServiceUtil">
+		<property name="service" ref="net.sareweb.mshowcase.service.FriendshipLocalService" />
+	</bean>
+	<bean id="net.sareweb.mshowcase.service.FriendshipService" class="net.sareweb.mshowcase.service.impl.FriendshipServiceImpl" />
+	<bean id="net.sareweb.mshowcase.service.FriendshipServiceUtil" class="net.sareweb.mshowcase.service.FriendshipServiceUtil">
+		<property name="service" ref="net.sareweb.mshowcase.service.FriendshipService" />
+	</bean>
+	<bean id="net.sareweb.mshowcase.service.persistence.FriendshipPersistence" class="net.sareweb.mshowcase.service.persistence.FriendshipPersistenceImpl" parent="basePersistence" />
+	<bean id="net.sareweb.mshowcase.service.InstanceLocalService" class="net.sareweb.mshowcase.service.impl.InstanceLocalServiceImpl" />
+	<bean id="net.sareweb.mshowcase.service.InstanceLocalServiceUtil" class="net.sareweb.mshowcase.service.InstanceLocalServiceUtil">
+		<property name="service" ref="net.sareweb.mshowcase.service.InstanceLocalService" />
+	</bean>
+	<bean id="net.sareweb.mshowcase.service.InstanceService" class="net.sareweb.mshowcase.service.impl.InstanceServiceImpl" />
+	<bean id="net.sareweb.mshowcase.service.InstanceServiceUtil" class="net.sareweb.mshowcase.service.InstanceServiceUtil">
+		<property name="service" ref="net.sareweb.mshowcase.service.InstanceService" />
+	</bean>
+	<bean id="net.sareweb.mshowcase.service.persistence.InstancePersistence" class="net.sareweb.mshowcase.service.persistence.InstancePersistenceImpl" parent="basePersistence" />
+	<bean id="net.sareweb.mshowcase.service.InstanceImageLocalService" class="net.sareweb.mshowcase.service.impl.InstanceImageLocalServiceImpl" />
+	<bean id="net.sareweb.mshowcase.service.InstanceImageLocalServiceUtil" class="net.sareweb.mshowcase.service.InstanceImageLocalServiceUtil">
+		<property name="service" ref="net.sareweb.mshowcase.service.InstanceImageLocalService" />
+	</bean>
+	<bean id="net.sareweb.mshowcase.service.InstanceImageService" class="net.sareweb.mshowcase.service.impl.InstanceImageServiceImpl" />
+	<bean id="net.sareweb.mshowcase.service.InstanceImageServiceUtil" class="net.sareweb.mshowcase.service.InstanceImageServiceUtil">
+		<property name="service" ref="net.sareweb.mshowcase.service.InstanceImageService" />
+	</bean>
+	<bean id="net.sareweb.mshowcase.service.persistence.InstanceImagePersistence" class="net.sareweb.mshowcase.service.persistence.InstanceImagePersistenceImpl" parent="basePersistence" />
+	<bean id="net.sareweb.mshowcase.service.LocationLocalService" class="net.sareweb.mshowcase.service.impl.LocationLocalServiceImpl" />
+	<bean id="net.sareweb.mshowcase.service.LocationLocalServiceUtil" class="net.sareweb.mshowcase.service.LocationLocalServiceUtil">
+		<property name="service" ref="net.sareweb.mshowcase.service.LocationLocalService" />
+	</bean>
+	<bean id="net.sareweb.mshowcase.service.LocationService" class="net.sareweb.mshowcase.service.impl.LocationServiceImpl" />
+	<bean id="net.sareweb.mshowcase.service.LocationServiceUtil" class="net.sareweb.mshowcase.service.LocationServiceUtil">
+		<property name="service" ref="net.sareweb.mshowcase.service.LocationService" />
+	</bean>
+	<bean id="net.sareweb.mshowcase.service.persistence.LocationPersistence" class="net.sareweb.mshowcase.service.persistence.LocationPersistenceImpl" parent="basePersistence" />
+	<bean id="net.sareweb.mshowcase.service.OfferLocalService" class="net.sareweb.mshowcase.service.impl.OfferLocalServiceImpl" />
+	<bean id="net.sareweb.mshowcase.service.OfferLocalServiceUtil" class="net.sareweb.mshowcase.service.OfferLocalServiceUtil">
+		<property name="service" ref="net.sareweb.mshowcase.service.OfferLocalService" />
+	</bean>
+	<bean id="net.sareweb.mshowcase.service.OfferService" class="net.sareweb.mshowcase.service.impl.OfferServiceImpl" />
+	<bean id="net.sareweb.mshowcase.service.OfferServiceUtil" class="net.sareweb.mshowcase.service.OfferServiceUtil">
+		<property name="service" ref="net.sareweb.mshowcase.service.OfferService" />
+	</bean>
+	<bean id="net.sareweb.mshowcase.service.persistence.OfferPersistence" class="net.sareweb.mshowcase.service.persistence.OfferPersistenceImpl" parent="basePersistence" />
+</beans>

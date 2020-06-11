@@ -1,0 +1,650 @@
+(ns homepage.about-us.index
+  (:require
+    [homepage.layout :refer [secondary-header section-header] :as layout]
+    [homepage.image :as image])
+  (:require-macros [config :refer [timeline-src]]))
+
+(def page-header
+  {:header "About Us"
+   :sub-header"[app]sessed with mobile"})
+
+(def section-headers
+  {:app-lifecycle
+   {:header (span
+              "Providing you with the tools to "
+              (i "mobilize ")  "your business")
+    :centered true}
+
+   :get-a-grip
+   {:header "Get a grip on your [apps]"
+    :color "orange"
+    :centered true
+    :size "medium"}
+
+   :vision-and-values
+   {:header "Our Vision and Values"
+    :centered true
+    :size "medium"
+    :color "gray"}
+
+   :offices
+   {:header "Let us feed your [app]etite"
+    :size "medium"
+    :centered true}
+   })
+
+(def about-exicon
+  {:content [(p "At Exicon we believe in the power of mobile as a way of connecting companies with users.
+                The AppBoard is a software platform enabling you to manage the relationships with mobile users.")
+             (p "The key problems that we aim to solve are:")]})
+
+(def about-exicon-slider
+  {
+   :build
+   {:id :build
+    :header "\"How to find a great developer for my mobile project\""
+    :description "Not just a list of the top developers but the best development companies for my idea,
+                 my budget, my location, my industry and the features I want "}
+   :manage
+   {:id :manage
+    :header "\"How do I manage all the moving parts of mobile\""
+    :description "As marketing and product divisions across organisations run to meet demand for mobile
+                 there is a need to address the shortage of brand standards, IP protection, best of breed
+                 practices, the enormous duplication of effort and wasted resources."
+                 }
+   :promote
+   {:id :promote
+    :header"\"How do I address mobile as a channel to my customers and not simply a campaign\""
+    :description "Not just the design of your mobile solution but also how you get in front of your users
+                 while continuing to engage going forward."}})
+
+
+(def timeline-description
+  { :content [(p "Exicon was born in 2007 as a developer agency working with the world's leading mobile handset manufacturers.")
+              (p "After 2 years we launched XDC, \"Exicon Developers Connect\" with a qualified network of over 3,000 mobile software
+                 development companies for customers like Sony, Blackberry, Nokia, HP, Qualcomm, and Huawei.")
+              (p "Next we built BAM! \"Branded App Matchmaker\" , an automated solution matching marketers and businesses across all
+                 industries with qualified professional developers' based on skills, location, expertise, language and budget.")
+              (p "To promote XDC and BAM! we partnered with local boutique agencies to pioneer app workshops in over 20 leading cities
+                 around the world, bringing brand managers and mobile development specialists together to build engaging apps.")
+              (p "Over time we realized businesses were struggling with their apps and in some cases entirely absent thereof. ")
+              (p "It was then, in 2013, the AppBoard was born helping companies \"get a grip\" on their apps, putting all these pieces together and managing it from one place.")
+              (p "Combined with our tools and workflows we aggregate and integrate all relevant mobile information so businesses can build,
+                 manage and promote their mobile apps all from one location across an organization everywhere in the world.")
+              (p "We continue to enhance our product with features for businesses both large and small or from the app-preneur or the app-terprise to develop quality engagements with their mobile users.")]})
+
+(def value-items
+  [{:header "Always be learning"
+    :id :learning
+    :icon "book"
+    :content ["Acquire knowledge leveraging our partner network"
+              "Apply lateral thinking to create and develop innovative new models"
+              "Be the expert and teach"]}
+
+   {:header "Innovative"
+    :id :innovative
+    :icon "idea"
+    :content ["Creative thinking"
+              "Design with simple and intuitive user experience"
+              "Continual iteration"]}
+   {:header "Open"
+    :id :open
+    :icon "fork"
+    :content
+    ["Open standards"
+     "Open networks of partners"
+     "Open source and sharing"]}
+
+   {:header "Technology led"
+    :id :technology
+    :icon "mobile"
+    :content
+    ["Use of systems and applications connected to cloud
+     accessible from any device"
+     "Ensure adequate clockspeeds"]}
+
+   {:header "Quality delivery"
+    :id :quality
+    :icon "thumbs up"
+    :content ["Project management"
+              "Manage by metrics"
+              "Capture all data"]}])
+
+(def team
+  {
+   :stefan
+   {
+    :image "/images/about-us/Stefan.png"
+    :birthday-image "/images/about-us/Birthday-Stefan.png"
+    :name "Stefan Rust"
+    :position "Founder"
+    :bio
+    #(vector (p "Stefan Rust is the Founder and CEO at Exicon.
+                He is also the Chairman Emeritus of the
+                Mobile Entertainment Forum and was elected a
+                top 50 Global Mobile Entertainment Executive.")
+             (p "He previously worked with Siemens, Lucent and
+                Sun Microsystems as well as starting up 8 of
+                his own companies in the technology space.")
+             (p "But his proudest achievements are his 4 fabulous kids"))
+    :linkedin "http://hk.linkedin.com/in/stefanrust"
+    :twitter "srust99"
+    }
+
+   :cat {
+         :image "/images/about-us/Cat.png"
+         :birthday-image "/images/about-us/Birthday-Cat.jpg"
+         :name "Cat Purvis"
+         :position "Founder & Marketing"
+         :bio
+         #(vector
+            (p "Cat has built companies, teams and divisions all over the world.")
+            (p "Her previous roles include COO at Icon Medialab and GM at a start up in Beijing which sold to a Sodexho as well as founder of 6 companies.")
+            (p "Cat is Co-chair of the Technology Advisory Committee for the Women's Foundation")
+            (p "She studied Management and Statistics at St Andrews University and has a Diploma in marketing and Process re-engineering.")
+            )
+         :linkedin "http://hk.linkedin.com/in/catrust/"
+         :twitter "CatRust"
+         }
+
+   :tamas {
+           :image "/images/about-us/Tamas.png"
+           :name "Tamas Herman"
+           :position "VP Engineering"
+           :bio
+           #(vector
+              (p "Tamas was born at the dawn of the microelectronics age. His first word was \"trafó\".")
+              (p "The secret weapon he uses for solving problems is unearthing the simplest route to avoid them.")
+              (p "He treats software as a synergy of humans and source code.")
+              )
+           :linkedin "https://hk.linkedin.com/in/TamasHerman"
+           :twitter "onetom"
+           }
+
+   :andrew {
+            :image "/images/about-us/Andrew.png"
+            :name "Andrew Miller"
+            :position "Business Development"
+            :bio
+            #(vector
+               (p "Andrew runs our global business development initiatives, bringing over 20 years of sales and operating experience in enterprise software, digital, and services.")
+               (p "He has led major top and bottom line growth initiatives across 3 continents with both startups and corporates, including Thomson Reuters, Chinadotcom, and Sina.com, and Day Software (now Adobe Marketing Cloud).")
+               (p "Andrew has lived and worked in multiple countries, is an avid sports enthusiast, and resides in San Francisco with his wife and two children.")
+               )
+            :linkedin "https://www.linkedin.com/in/apmiller"
+            :twitter "andrewmtweets"
+            }
+
+   :eleanor {
+             :image "/images/about-us/Eleanor.png"
+             :name "Eleanor Cherry"
+             :position "Onboarding"
+             :bio
+             #(vector
+                (p "Eleanor leads engagement and on-boarding services for global and local customers.")
+                (p "She has over 10 years international experience in project and programme management for corporates and startups and is based in Hong Kong"))
+             :linkedin "https://www.linkedin.com/in/eleanorcherry"
+             }
+
+   :stephany {
+              :image "/images/about-us/Stephany.png"
+              :name "Stephany Lau"
+              :position "Designer"
+              :bio
+              #(vector
+                 (p "Stephany studied Visual Communication at Hong Kong Design Institute. ")
+                 (p "She has got a great passion for graphic and web design. Her strong visual sense helps her reaching her goals.")
+                 (p "Besides designing, marketing activities is also added to her list."))
+              :linkedin "https://hk.linkedin.com/pub/steph-lau/8a/450/199"
+              }
+   :tracy {
+           :image "/images/about-us/Tracy.png"
+           :name "Tracy Shih"
+           :position "Finance"
+           :bio
+           #(vector
+              (p "Tracy graduated with a BBA (Hons) Accounting Degree in Hong Kong.")
+              (p "With working experience from CPA firm and I.T. industry, Tracy specializes in Financial Reporting and Management Accounts Reporting."))
+           :linkedin "https://hk.linkedin.com/in/tracymei"
+           }
+
+   :kenneth {
+             :image "/images/about-us/Kenneth.png"
+             :name "Kenneth Ryall"
+             :position "Developer"
+             :bio
+             #(vector
+                (p "Kenneth was born on a cold Irish winters night in the front seat of a 1978 VW Beetle and has been searching for a warmer climate ever since.")
+                (p "Having now settled in Hong Kong he is putting his experience in research, from his time with Disney Research and Trinity College Dublin, to solving real world problems with Exicon.")
+                (p "Kenneth's strengths lie in his analytical and deliberate approach to problem solving, along with his drive to be constantly learning."))
+             :linkedin "https://hk.linkedin.com/in/ryallk"
+             :twitter "KennethRyall"
+             }
+
+   :ayaz {
+          :image "/images/about-us/Ayaz.png"
+          :name "Ayaz Maroof"
+          :position "Developer"
+          :bio
+          #(vector
+             (p "Ayaz is an international citizen who has lived in various regions around the world.")
+             (p "He brings his knowledge of different cultures and diverse background to the Exicon team. He is passionate about using software to solve real world problems.")
+             (p "He is also a bit of a movie buff so if you ever want to talk about movies or software get in touch with him."))
+          :linkedin "https://hk.linkedin.com/in/ayazmaroof"
+          :twitter "maroofisonfire"
+          }
+
+   :laura {
+           :image "/images/about-us/Laura.png"
+           :name "Laura Sempere"
+           :position "Developer"
+           :bio
+           #(vector
+              (p "Laura has a strong background as a motion graphics animator and video editor and she is passionate about programming.")
+              (p "She is always eager to learn and combines her design skills with her engineering knowledge to achieve the pixel perfect and most efficient implementation of Exicon's products."))
+           }
+
+   :apter {
+           :image "/images/about-us/Apter.png"
+           :name "Apter Fung"
+           :position "Developer"
+           :bio
+           #(vector
+              (p "Apter is a software engineer graduated from CUHK, Computer Science. She is energetic and always enjoys learning new and excellent ideas in the industry."))
+           :linkedin "https://hk.linkedin.com/pub/apter-fung/b9/341/3b2"
+           }
+
+   :antoine {
+             :image "/images/about-us/Anthoine.png"
+             :name "Antoine Blondeau"
+             :position "Director"
+             :bio
+             #(vector
+                (p "Antoine started his career with the Tokyo representation of the French Industrial Development Agency where he negotiated a number of large Japanese technology investments in France. Antoine then moved to Nortel Networks where he managed the OEM and Asia/Pacific unit of the company's cellular handset business. Then, as president and COO of Zi Corporation, a NASDAQ-listed developer of intelligent user interface software, he engineered a turnaround and grew the company's market valuation to a high of $1.4 billion. Zi is now part of Nuance Communications. Antoine was subsequently appointed CEO of Dejima, Inc., a developer of distributed Artificial Intelligence software, which he sold to Sybase, Inc. (now SAP). Dejima was a core member of the consortium that developed the original Siri technology, now present in Apple's devices as a voice-activated virtual assistant. Antoine also worked at salesforce.com as vice president in charge of the mobile/wireless business unit, and at Good Technology as senior vice president corporate development & GM Asia/Pacific.")
+                (p "Antoine is the founder and CEO of Genetic Finance Holdings, a developer of a massively scaled Artificial Intelligence processing engine for advanced decision making. The company applies its technology to the deployment of systematic trading strategies in the most liquid financial markets, and to genomics and healthcare research in partnership with MIT.")
+                (p "Antoine is also an investor in -and director or advisor of - a number of start-ups in California, China and Japan.")
+                (p "Antoine has a MBA from the Paris Graduate School of Management (ESCP Europe). He has studied at the faculties of Economics and Commerce of Chuo University in Tokyo, Japan. He splits his time between Hong Kong and the San Francisco Bay Area.")
+                )
+             :linkedin "https://www.linkedin.com/in/antoineblondeau"
+             }
+
+   :ralph {
+           :image "/images/about-us/Ralph.png"
+           :name "Ralph Simon"
+           :position "Advisory Board"
+           :bio
+           #(vector
+              (p "Ralph Simon is acknowledged as one of the founders of the modern mobile entertainment & content industry. Over the last 17 years, he has been a prominent global mobile trailblazer and innovator, helping grow the mobile entertainment, health and content industry while playing a central role in its impact and presence. Today, mobile is a key platform to reach the over seven billion mobile subscribers worldwide.")
+              (p "Simon heads London-based Mobilium Global Group, which provides high-level strategic counsel and guidance to individuals, brands, companies and organizations across the entire mobile spectrum. He also serves on several boards, including Exicon's advisory board.")
+              (p "Internationally, Simon is known as an impactful and popular speaker on all aspects of mobile commerce, content & the creative digital industries.")
+              (p "Ralph Simon travels the world on a relentless search for the latest in mobile and device innovation, the best new emerging markets’ start-ups, and with special emphasis on relevance to Europe, Africa, Asia & the Americas. He has formidable knowledge about ways to deliver mobile content, “social broadcasting” and entertainment and grow the creative industries. He is a Fellow of the Royal Society of Arts in the UK and is a member of the National Academy of Recording Arts & Sciences in the USA.")
+              )
+           :linkedin "https://www.linkedin.com/pub/ralph-simon-frsa/0/88/a41"
+           :twitter "ralphsimon1"
+           }
+
+   :charles {
+             :image "/images/about-us/Charles.png"
+             :name "Charles Fallon"
+             :position "Advisory Board"
+             :bio
+             #(vector
+                (p "Founder and Managing Partner of  S.I.Partners LLP, an advisor to the marketing, media and technology sectors offering a unique blend of management consultancy and corporate finance services.")
+                (p "Charles has over 25 year of marketing experience with a track record in technology, including; 10 years at Saatchi & Saatchi Advertising working with clients such as Hewlett Packard; founding one of the first digital agencies, Saatchi Interactive in 1994; and being one of the UK’s internet pioneers co-founding a Pan European online retailer – Pets Pyjamas in 1998.")
+                (p "Since the early internet years Charles has been an investor in early stage technology firms and now co-owns a private fund specialising in this sector providing capital and advice on commercialisation of new technologies.")
+                )
+             :linkedin "https://www.linkedin.com/pub/charles-fallon/15/a13/98"
+             }
+
+   :anthony {
+             :image "/images/about-us/Anthony.png"
+             :name "Anthony Tse"
+             :position "Advisory Board"
+             :bio
+             #(vector
+                (p "Anthony Tse joined Galaxy Resources as Executive Director in 2010, and is responsible for various strategic development, corporate finance and M&A activities of the company. He also previously served as Acting Managing Director - China, overseeing the company's lithium carbonate and battery project in Jiangsu.")
+                (p "He has close to 20 years of business management, capital markets and M&A experience in high growth industries, including the media/entertainment, technology, as well as the resource & commodities sectors, across the Greater China and broader Asia-Pacific region. He has formerly served in several senior executive roles, including as CEO of CSN Corp, President of China Entertainment Television, Director of Corporate Development - TOM Group, Deputy General Manager - TOM Online, and was also previously with News Corporation's STAR Group.")
+                )
+             :linkedin "https://www.linkedin.com/pub/anthony-tse/0/430/681"
+             }
+
+   :jeffrey {
+             :image "/images/about-us/Jeffrey.png"
+             :name "Jeffrey Belk"
+             :position "Advisory Board"
+             :bio
+             #(vector
+                (p "Managing Director of ICT168 Capital, LLC, focused on developing and guiding global growth opportunities in the Information and Communication Technology space. Formerly, Belk spent almost 14 years at Qualcomm Incorporated, where prior to his departure in early 2008, he was Qualcomm's senior vice president of strategy and market development, focused on examining changes in the wireless ecosystem and formulating approaches to help accelerate mobile broadband adoption and growth.")
+                (p "From 2000 until 2006, Belk was senior vice president, global marketing, leading a team responsible of all facets of the company's corporate messaging, communications, and marketing worldwide. In 1999-2000, Belk was SVP & GM of Qualcomm Eudora Products, Qualcomm's award winning email client. In 1997, Belk was named VP, marketing of Qualcomm Consumer Products, and initiated the company's global branding and communications efforts.")
+                (p "Prior to Qualcomm, Belk spent ten years in the early growth years of the PC industry, primarily with Proxima Corporation. Belk joined the company in 1983, when the company was less than 25 employees, and was with the company through its IPO in the early 90's in several key distribution, product management, and international roles.")
+                (p "Belk currently serves on the Board of Directors of Peregrine Semiconductor, InterDigital Corporation (Nasdaq: IDCC), and the Wireless Life Science Alliance. Belk is known globally as a commentator and writer on wireless, mobile broadband, and technology evolution.")
+                )
+             :linkedin "http://www.linkedin.com/pub/jeffrey-belk/3/48b/a32"
+             :twitter "jkbelk"
+             }
+
+   :michael {
+             :image "/images/about-us/Michael.png"
+             :name "Michael Ricks"
+             :position "Director"
+             :bio
+             #(vector
+                (p "Michael is a venture/growth capital investor working with technology companies based in Asia. He primarily works from his office in Beijing, and occasionally in Menlo Park, California.")
+                (p " He is currently on boards of a few expansion stage technology companies."))
+             :linkedin "https://www.linkedin.com/pub/michael-ricks/0/b4/385"
+             }
+
+   :yoshihisa {
+               :image "/images/about-us/profile-image.png"
+               :name "Yoshihisa Ueno"
+               :position "Director"
+               :bio
+               #(vector
+                  (p "Mr. Ueno is a serial entrepreneur & an independent venture capitalist with 30 years of extensive global management & operational expertise in the US, Europe and China. Having the entrepreneurial operation experience and building start-ups in the Information Communication & Energy (ICE) technologies spaces. Mr. Ueno has been currently the founding partner of Synapse Partners and servers Synapse’s active portfolio companies.")
+                  (p "Also, Mr. Ueno has been a lead investor and a board member of 21Vianet Group Ltd (NASDAQ:VNET) and its affiliated companies since 2006 and currently leads a corporate venture capital arm of VNET, 21Vianet Ventures, which is focus on the strategic investment in the emerging next generation technologies starts-ups in ICT space."))
+               }})
+
+(def office-list
+  [{
+    :country "HK"
+    :name "Hong Kong"
+    :address "Wilson House, Suite 302, 19 Wyndham St Central, Hong Kong."
+    :phone ""
+    :email "amanda@exiconglobal.com"
+    }
+
+   {
+    :country "SF"
+    :name "United States"
+    :address "Suite 2710, 101 California Street, San Francisco CA 94111, U.S.A."
+    :phone ""
+    :email "andrew@exiconglobal.com"
+    }
+
+   {
+    :country "LN"
+    :name "London"
+    :address "Tech City, 228 Whitechapel Road, London E1 1BJ, United Kingdom."
+    :phone ""
+    :email "cat@exiconglobal.com"
+    }])
+
+(defn office-options [opts]
+  (div :class "left aligned column description sizer"
+       (p (text (:name opts)))
+       (p :class "office-address" (text (:address opts)))
+       (p :class "office-phone" (text (:phone opts)))
+       (p :class "office-email" "E " (a :href (str "mailto:" (:email @opts))  (text (:email opts))))
+       (div :class "ui hidden divider")))
+
+(defn office-options-section []
+  (section :class "ui light-grey basic segment"
+           :id "office-list"
+           (section-header (:offices section-headers))
+           (div :class "ui three column stackable container grid"
+                (loop-tpl :bindings [opt office-list]
+                          (office-options opt)))))
+
+(def exicon-team
+  [:stefan :cat :tamas :eleanor :andrew :tracy
+   :apter :ayaz :kenneth :laura :stephany])
+(def board-team [:antoine
+                 :michael :yoshihisa :cat :stefan])
+(def advisory-team [:ralph :charles :anthony :jeffrey])
+
+(defn team-member [profile]
+  (let [bio-visible (cell false)
+        show-hide-bio #(swap! bio-visible not)]
+    (cell-let
+      [{:keys [image name position linkedin twitter bio]} profile]
+      (div :class "center aligned column description sizer"
+           (image/elem :class-opts "ui small left floated bio link image"
+                       :src image
+                       :click show-hide-bio)
+           (h3 :class "ui small left aligned link header"
+               :click show-hide-bio
+               (span name)
+               (div :class "sub header" :text position))
+           (div :class "ui left aligned basic bio segment"
+                (a :href linkedin
+                   :target "_blank"
+                   :toggle linkedin
+                   (i :class "linkedin square large teal icon"))
+                (a :href (cell= (str "https://twitter.com/" twitter))
+                   :toggle twitter
+                   :target "_blank"
+                   (i :class "twitter square large teal icon")))
+           (div :class "ui left aligned basic bio segment"
+                :toggle bio-visible
+                :style "display:none"
+                (cell= (if bio (bio))))))))
+
+(defelem team-menu [{:keys [active-team is-mobile]} ]
+  [
+   (div :class "ui hidden divider")
+   (div :class "ui secondary fluid stackable menu description sizer"
+        (a :class "item"
+           :click #(reset! active-team "exicon-team")
+           ((span :class "ui medium header")
+            :class (cell= {:teal (= active-team "exicon-team")})
+            "EXICON TEAM"))
+        (div :class "item"
+             :toggle (not is-mobile)
+             (span :class "ui medium header" "|"))
+        (a :class "item"
+           :click #(reset! active-team "advisory-team")
+           ((span :class "ui medium header")
+            :class (cell= {:teal (= active-team "advisory-team")})
+            "ADVISORY BOARD MEMBERS"))
+        (div :class "item"
+             :toggle (not is-mobile)
+             (span :class "ui medium header" "|"))
+        (a :class "item"
+           :click #(reset! active-team "board-team")
+           ((span :class "ui medium header")
+            :class (cell= {:teal (= active-team "board-team")})
+            "BOARD MEMBERS")))])
+
+(defelem team-section [{:keys [id link title members active-team]} _]
+  ((div :class "ui three column doubling stackable container grid")
+   :class (cell= {:visible (= active-team id)
+                  :invisible (not= active-team id)})
+   :style "display: none"
+   (div :class "ui hidden divider")
+   (loop-tpl :bindings [profile (map team members)]
+             (team-member profile))))
+
+(defelem app-lifecycle-section []
+  (div :class "ui light-grey basic vertical segment"
+       (section-header (:app-lifecycle section-headers))
+       (div :class "ui container grid description sizer"
+            (h3 :class "ui medium center aligned header" "Designed to navigate the complexity of the Mobile Ecosystem")
+            (div :class "ui hidden divider"))
+       (div :class "ui hidden divider")
+       (image/elem :class-opts "ui centered image"
+                   :src "/images/about-us/app-lifecycle.jpg")
+       (div :class "ui hidden divider")))
+
+(defelem about-exicon-section []
+  (let [active-content (cell (:build about-exicon-slider))
+        build? (cell= (= :build (:id active-content)))
+        manage? (cell= (= :manage (:id active-content)))
+        promote? (cell= (= :promote (:id active-content)))
+        animate (fn [direction]  (.transition (js/jQuery "#about-exicon .slider-content") (str "slide " direction)))
+        next-click-handler #(do (if @build?
+                                  (reset! active-content (:manage about-exicon-slider))
+                                  (reset! active-content (:promote about-exicon-slider)))
+                              (animate "right")
+                              (animate "left"))
+        prev-click-handler #(do (if (= :promote (:id @active-content))
+                                  (reset! active-content (:manage about-exicon-slider))
+                                  (reset! active-content (:build about-exicon-slider)))
+                              (animate "left")
+                              (animate "right"))]
+
+    (div :id "about-exicon" :class "ui tertiary basic vertical segment"
+         (div :class "ui container grid"
+              (div :class "sixteen wide column"
+                   (div :class "ui hidden divider")
+                   (div :class "description sizer" (:content about-exicon))
+                   (div :class "ui hidden divider"))
+              (div :class "description sizer centered row"
+                   (h2 :class "ui large orange header slider-content"
+                       :text (cell= (:header active-content))))
+              (div :class "three column centered equal height row"
+                   (a :class "two wide description sizer column"
+                      :click prev-click-handler
+                      (i :class "left chevron black icon"
+                         :toggle (cell= (not build?))))
+                   (div :class "twelve wide slider-content description sizer column"
+                        (p :text (cell= (:description active-content))))
+                   (a :class "two wide description sizer right aligned column"
+                      :click next-click-handler
+                      (i :class "right chevron black icon"
+                         :toggle (cell= (not promote?)))))
+              (div :class "centered row"
+                   ((div :class "ui circular orange button")
+                    :class (cell= {:inverted (not build?)})
+                    :click #(reset! active-content (:build about-exicon-slider))
+                    "1")
+                   ((div :class "ui circular orange button")
+                    :class (cell= {:inverted (not manage?)})
+                    :click #(reset! active-content (:manage about-exicon-slider))
+                    "2")
+                   ((div :class "ui circular orange button")
+                    :class (cell= {:inverted (not promote?)})
+                    :click #(reset! active-content (:promote about-exicon-slider))
+                    "3")))
+         (div :class "ui hidden divider")
+         (section-header (:get-a-grip section-headers)))))
+
+(defelem timeline-section []
+  (let [history-visible (cell false)]
+    [(div :class "title sizer ui container grid"
+          (div :class "ui hidden divider")
+          (h2 :class "ui medium center aligned header" "How We Got Here"))
+     (div :class "ui hidden divider")
+     (iframe :src (timeline-src)
+             :width "100%" :height "650" :frameborder "0" )
+
+     (div :class "ui container grid"
+          (div :class "centered row"
+               (div :class "ui medium button"
+                    :click #(swap! history-visible not)
+                    "Exicon's history"))
+
+          (div :class "sixteen wide column"
+               :toggle (cell= history-visible)
+               (div :class "description sizer" (:content timeline-description))
+               (div :class "ui hidden divider")))]))
+
+(defc active-value-content nil)
+
+(defelem value-column
+  [{:keys [header id content icon] :as value}]
+  (cell-let
+    [active? (cell= (= id (:id active-value-content)))
+     inactive? (cell= (not active?))]
+    (div :class "center aligned column description sizer"
+         :click #(reset! active-value-content value)
+         ((div :class "ui circular icon basic teal inverted massive button")
+          :class (cell= {:active active?})
+          (i :class (str "big icon " icon)))
+         (h2 :class "ui medium inverted center aligned header"
+             :toggle inactive?
+             :text header)
+         (div :class "ui hidden divider")
+         (i :class "caret down teal big icon"
+            :toggle active?)
+         (div :class "ui grid"
+              :toggle active?
+              (div :class "mobile only row"
+                   (div :class "ui hidden divider")
+                   (div :class "eleven wide centered left aligned column description sizer"
+                        (h2 :class "ui large teal center aligned header"
+                            :text (cell= (:header active-value-content)))
+                        (ul
+                          (loop-tpl :bindings
+                                    [item (cell= (:content active-value-content))]
+                                    (li :text (cell= item))))))))))
+
+(defelem vision-values-section []
+  (div :id "vision-and-values" :class "ui inverted basic segment"
+       (section-header (:vision-and-values section-headers))
+       (div :class "ui hidden divider")
+       (div :class "title sizer ui basic center aligned segment"
+            (i :class "quote left large inverted icon")
+            (span :class "ui small inverted header" "We believe ")
+            (span :class "ui large inverted header"
+                  "Everything will be appcessorized,")
+            (br)
+            (span :class "ui tiny inverted header" (i "a world where "))
+            (span :class "ui large inverted header"
+                  (i "everything will be connected to an App. "))
+            (i :class "quote right large inverted icon"))
+       (div :class "ui hidden divider")
+       (div :class "ui five column stackable container grid"
+            (loop-tpl :bindings [value value-items]
+                      (value-column @value)))
+       (div :class "ui container grid"
+            :toggle (cell= active-value-content)
+            (div :class "computer tablet only row"
+                 (div :class "eleven wide centered column description sizer"
+                      (h2 :class "ui large teal center aligned header"
+                          :text (cell= (:header active-value-content)))
+                      (ul :class "ui bulleted list"
+                          (loop-tpl :bindings
+                                    [item (cell= (:content active-value-content))]
+                                    (li :text (cell= item))))))
+            (div :class "ui hidden divider"))))
+
+(defn pg []
+  (layout/primary
+    :page-title "About Exicon | App Management & Analytics | Our Team"
+    :description "Our Mission And The Road That Got Us Here As Well As The Team That Makes Exicon Tick."
+    :keywords "Exicon, App Management, Analytics, AppBoard, AppBuilder, How To Find A Great Developer"
+    :page-css "index.inc.css"
+
+    (secondary-header :header (:header page-header)
+                      :sub-header (or (:sub-header page-header) nil)
+                      :page "about-us")
+
+    (div :id "about-us"
+
+         (app-lifecycle-section)
+         (about-exicon-section)
+
+         (div :class "title sizer"
+              (div :class "ui hidden divider")
+              (h2 :class "ui medium center aligned header"
+                  "Who We Are"))
+
+         (let [active-team (cell "exicon-team")]
+           [(section
+              :id "team-section"
+              (div :class "ui center aligned container grid"
+                   (div :class "computer tablet only row"
+                        (team-menu :active-team active-team :is-mobile false))
+                   (div :class "mobile only row"
+                        (team-menu :active-team active-team :is-mobile true)))
+              (team-section :id "exicon-team"
+                            :link "exicon-team"
+                            :title "Exicon Team"
+                            :members exicon-team
+                            :active-team active-team)
+
+              (team-section :id "board-team"
+                            :link "our-board"
+                            :title "Our Board"
+                            :members board-team
+                            :active-team active-team)
+
+              (team-section :id "advisory-team"
+                            :link "advisory-board"
+                            :title "Advisory Board"
+                            :members advisory-team
+                            :active-team active-team))])
+
+         (vision-values-section)
+         (timeline-section)
+         (office-options-section))))

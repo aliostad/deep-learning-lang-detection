@@ -1,0 +1,52 @@
+#!/bin/sh
+#
+# bootstrap: setup build environment.
+#
+# Usage: bootstrap
+
+check_for_tools() {
+  echo "searching tools..."
+
+  for tool in aclocal libtoolize automake autoconf; do
+    which $tool
+    if [ $? -ne 0 ]; then
+      echo "error: $tool has not been found!"
+      exit -1
+    fi
+  done
+}
+
+setup_root_directory() {
+  rm -rf build-aux
+  mkdir build-aux
+}
+
+invoke_aclocal() {
+  aclocal -I m4 || exit -1
+}
+
+invoke_libtoolize() {
+  libtoolize --automake || exit -1
+}
+
+invoke_automake() {
+  automake --add-missing --foreign || exit -1
+}
+
+invoke_autoconf() {
+  autoconf || exit -1
+}
+
+initialize_build_environment() {
+  echo "initialize build environment..."
+
+  setup_root_directory
+  invoke_aclocal
+  invoke_libtoolize
+  invoke_automake
+  invoke_autoconf
+}
+
+# Script entry point.
+check_for_tools
+initialize_build_environment

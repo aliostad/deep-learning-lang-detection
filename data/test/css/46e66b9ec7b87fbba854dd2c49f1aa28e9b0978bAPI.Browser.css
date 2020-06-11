@@ -1,0 +1,176 @@
+body {
+	background-image: none;
+}
+
+#app-content a,
+#app-sidebar a {
+	color:#478CDE;
+}
+
+#app-sidebar {
+	border: none;
+	padding: 0 0 0 15px;
+	width: 200px;
+}
+
+	#app-sidebar h3 {
+		font-weight: bold;
+		border-bottom: 1px solid #E9EDF0;
+		padding-bottom: 3px;
+		margin-bottom: 15px;
+	}
+
+
+#app-body {
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+#api-body {
+
+}
+
+    #api-body h2{
+		padding-top: 20px;
+		font-weight: bold;
+		margin: 10px 0 8px;
+		font-size: 1.5em;
+	}
+
+
+	#api-body h2.UI_Heading {
+		padding-top: 20px;
+		font-weight: bold;
+		margin: 10px 0 8px;
+		font-size: 2.0em;
+	}
+
+
+	#api-body h3 {
+		font-weight: bold;
+		margin: 0 0 8px;
+		font-size: 1.25em;
+	}
+
+	#api-body h3.UI_Heading {
+		margin: 10px 0 8px;
+		margin-top: 30px;
+		padding:5px;
+		font-weight: bold;
+		font-size: 1.5em;
+		border: solid 1px #ECEFF5;
+		background: #ECEFF5;
+	}
+
+	#api-body .markdown {
+
+	}
+
+	#api-body em {
+		font-style: normal;
+	}
+
+	#api-body p {
+		line-height: 20px;
+		color: #666;
+		margin: 10px 0;
+		font-size: .95em;
+	}
+
+		#api-body p code {
+			font-size: .95em;
+			font-family: 'Monaco', Courier, Monospace;
+		}
+
+		#api-body p.api-header
+			{
+			font-weight: bold;
+			margin: 0 0 8px;
+			margin-top: 20px;
+			margin-bottom: -20px;
+			font-size: 1.25em;
+			border: solid 1px #ECEFF5;
+			background: #ECEFF5;
+		}
+
+		#api-body p.api-name
+			{
+			margin: 0 0 8px;
+			margin-top: 30px;
+			font-size: 1.1em;
+			margin-bottom: -10px;
+			font-family: 'Monaco', Courier, Monospace;
+			border: 1px #ECEFF5;
+			border-style: none none solid none;
+		}
+
+		#api-body p.api-element-name
+			{
+			margin: 0 0 8px;
+			margin-top: 30px;
+			margin-bottom: -10px;
+			font-size: 1.1em;
+			font-family: 'Monaco', Courier, Monospace;
+		}
+
+		#api-body p.api-element-header
+			{
+			margin-bottom: -10px;
+			font-weight: bold;
+			font-size: 1.1em;
+		}
+
+		#api-body p.parameter-name
+			{
+			font-size: 1.0em;
+			font-family: 'Monaco', Courier, Monospace;
+			margin-bottom: -10px;
+		}
+
+		#api-body div.parameter
+			{
+			margin-bottom:20px;
+		}
+
+		#api-body div.class-parameter-list
+			{
+			margin-left:40px;
+		}
+
+		#api-body div.function-parameter-list
+			{
+			margin-left:20px;
+		}
+
+		#api-body div.property-list
+			{
+			margin-left:60px;
+		}
+
+		#api-body span.data-type
+			{
+			font-style:italic;
+		}
+
+		#api-body div.object-contents
+			{
+			margin-left:20px;
+		}
+
+
+	#api-body dl dt {
+		margin-top:10px;
+		margin-bottom: -10px;
+		color: #666;
+		font-family: 'Monaco', Courier, Monospace;
+	}
+
+		#api-body dd {
+		}
+
+				#api-body dd dl dt {
+					margin-top:10px;
+					margin-bottom: -10px;
+					color: #666;
+					font-family: 'Monaco', Courier, Monospace;
+}

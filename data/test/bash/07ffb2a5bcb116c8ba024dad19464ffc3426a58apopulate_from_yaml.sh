@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+./script/runner "UncheckedPerson.load_from_file"
+./script/runner "Certificate.load_from_file"
+./script/runner "DistinguishedName.load_from_file"
+./script/runner "AlternativeName.load_from_file"
+./script/runner "Host.load_from_file"
+./script/runner "Organization.load_from_file"
+./script/runner "EmailConfirmation.load_from_file"
+./script/runner "CertificateRequest.load_from_file"
+./script/runner "RaStaffMembership.load_from_file"
+./script/runner "RegistrationAuthority.load_from_file"
+./script/runner "SeeVoRequest.load_from_file"
+./script/runner "UiRequest.load_from_file"

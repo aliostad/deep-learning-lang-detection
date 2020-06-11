@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+img{ border:none; margin:0;}
+.loan_body{ padding-bottom:98px; background:#fff;}
+.loan_top_div{padding:0; margin:0; left:0; display:none; position:relative; background:#25272f;}
+.loan_borrow{ background: #25272f; width:100%; height:auto; text-align:center;}
+.load_top_bj{ width:100%; height:34px; position:absolute; bottom:-34px;}
+
+.loan_bottom_div{ width:100%; position:fixed; left:0; z-index:4; display:none;}
+.loan_bottom{ background:url(../images/loan_lent.png) no-repeat center center; width:256px; height:auto; text-align:center; margin:0 auto;}
+.lent_text{ width:100%; height:256px; vertical-align:middle;}
+.invite_text{ font-size:26px; color:#768292; line-height:58px;}
+
+.load_borrow_btn{ width:100%;}
+.load_borrow_img{ margin:0 auto; border-radius:50%;}
+.load_borrow_btn{left:0;}

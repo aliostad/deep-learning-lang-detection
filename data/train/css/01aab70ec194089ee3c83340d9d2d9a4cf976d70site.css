@@ -1,0 +1,33 @@
+﻿.show-grid {
+    margin-bottom: 15px;
+}
+
+    .show-grid [class^=col-],
+    .show-grid [class^=visible-],
+    .show-grid [class^=hidden-] {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #eee;
+        background-color: rgba(86,61,124,.15);
+        border: 1px solid #ddd;
+        border: 1px solid rgba(86,61,124,.2);
+    }
+
+    .show-grid [class$=-md] {
+        background-color: #ef7b7b;
+    }
+
+    .show-grid [class$=-sm] {
+        background-color: #f9d136;
+    }
+
+    .show-grid [class$=-xs] {
+        background-color: #6eaa67;
+    }
+
+.list-padded {
+}
+
+    .list-padded > li {
+        margin-bottom: 10px;
+    }

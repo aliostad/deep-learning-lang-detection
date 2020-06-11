@@ -1,0 +1,69 @@
+body {
+  background-color: #0F0F0F;
+}
+
+h1 {
+  font-size:24pt;  
+  font-family:times;
+  font-variant:small-caps;
+  font-weight: normal;
+  color:#474747;
+}
+
+div {
+  color:#474747;
+}
+
+.ThreeDModelTitle 
+  { 
+  font-size:16pt;  
+  font-family:times;
+  font-variant:small-caps;
+  color:#474747;
+  }
+
+.model-list
+  {
+  padding-left: 10px;
+  }
+  
+.model-list li
+  {
+  list-style-type: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  }
+  
+.model-preview
+  {
+  display: inline-block;
+  vertical-align: middle;
+  height: 60px;
+  width: 60px;
+  border: 1px solid black;
+  margin-left: 10px;
+  }
+
+#controller
+  {
+  width: 250px;
+  }
+    
+#threedpane
+  {
+  position: absolute;
+  top: 0px;
+  left: 250px;
+  right: 0px;
+  bottom: 0px;
+  margin: 10px;
+  border: 1px solid gray;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  }
+
+input {
+  background-color: #474747;
+  color: #CCCCCC;
+  border-color: #2E0854;
+}

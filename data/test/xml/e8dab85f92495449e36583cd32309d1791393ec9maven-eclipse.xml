@@ -1,0 +1,17 @@
+<project default="copy-resources">
+  <target name="init"/>
+  <target name="copy-resources" depends="init">
+    <copy todir="target/classes/resources" filtering="false">
+      <fileset dir="resources" includes="" excludes="**/*.java"/>
+    </copy>
+    <copy todir="target/classes/properties" filtering="false">
+      <fileset dir="properties" includes="" excludes="**/*.java"/>
+    </copy>
+    <copy todir="target/classes/WEB-INF" filtering="false">
+      <fileset dir="WEB-INF" includes="" excludes="**/*.java"/>
+    </copy>
+    <copy todir="target/classes/META-INF" filtering="false">
+      <fileset dir="WEB-INF/tld" includes="**/*.tld" excludes="**/*.java"/>
+    </copy>
+  </target>
+</project>

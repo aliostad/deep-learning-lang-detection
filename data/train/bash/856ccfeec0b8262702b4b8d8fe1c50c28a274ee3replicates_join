@@ -1,0 +1,47 @@
+#!/bin/bash
+
+source ../globals.sh
+
+SQL=$0.sql
+\rm -rf $SQL
+
+where="WHERE type = 'CDS'"
+if [ $# -ne 2 ]
+then
+        echo "usage: $0 <week, e.g. 4> <O2, e.g. low>"
+        exit 1
+fi
+week=$1
+O2=$2
+
+table=summary_week${week}_O2${O2}
+echo $table
+cat << EOF >> $SQL
+DROP TABLE IF EXISTS $table;
+CREATE TABLE $table AS
+EOF
+# fields
+printf "SELECT g.locus_tag" >> $SQL
+samples=`echo "SELECT sample FROM sample_info WHERE week = $week AND O2 = '$O2' ORDER BY sample;" | mysql -h $HOST $DB -s`
+for sample in $samples
+do
+	printf ", $sample.reads_mapped AS ${sample}_reads_mapped" >> $SQL
+	printf ", ROUND($sample.rpkm) AS ${sample}_rpkm" >> $SQL
+done
+
+# tables
+cat << EOF >> $SQL
+	FROM genes_isolate_genomes AS g
+EOF
+for sample in $samples
+do
+	printf "\t\tLEFT JOIN summary_${sample} AS $sample ON $sample.locus_tag = g.locus_tag\n" >> $SQL
+done
+
+# conditionals
+printf "\t$where\n;" >> $SQL
+cat << EOF >> $SQL
+CREATE INDEX locus_tag ON $table (locus_tag);
+EOF
+
+mysql -h $HOST $DB < $SQL | sed "s/NULL/0/g"

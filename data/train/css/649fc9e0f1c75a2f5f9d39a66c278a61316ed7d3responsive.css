@@ -1,0 +1,124 @@
+@media all and (max-width: 960px){
+	#make-wrapper .make{
+		width: 31%;
+	}
+	#make-wrapper .make img{
+		width: 75%;
+	}
+	#model-wrapper .model{
+		width: 29%;
+		height: 132px;
+	}
+	#model-wrapper .model img{
+		width: 68%;
+	}
+}
+
+@media all and (max-width: 720px){
+	#showcase-trims-left{
+		float: none;
+		clear: both;
+		width: 100%;
+	}
+	#showcase-trims-right{
+		float: none;
+		clear: both;
+		width: 100%;
+	}
+	.showcase-count-message{
+		margin: 2% auto 4%;
+	}
+	#showcase-form-wrapper{
+		margin: 2% auto;
+	}
+	.showcase-similar-item{
+		width: 47%;
+	}
+	.showcase-similar-photo img{
+		width: 60%;
+	}
+}
+
+@media all and (max-width: 480px){
+	#make-wrapper .make{
+		width: 46%;
+	}
+	#model-wrapper .model{
+		width: 96%;
+		max-height: 148px;
+		height: auto;
+	}
+	#model-wrapper .model img{
+		width: 44%;
+	}
+	#showcase-search-filter > h3{
+		width: 100%;
+		float: none;
+		clear: both;
+	}
+	#filter-wrapper{
+		width: 100%;
+		float: none;
+		clear: both;
+	}
+	.trim-item .img-wrapper{
+		float: none;
+		margin: 0 auto;
+	}
+	.trim-item .content-wrapper{
+		float: none;
+		margin: 2% auto;
+		width: 96%;
+	}
+	.trim-item .trim-name{
+		font-size: 32px;
+		line-height: 28px;
+	}
+	.content-wrapper > div{
+		margin: 0;
+		text-align: center;
+	}
+	.content-wrapper .line-two{
+		float: left;
+		width: 48%;
+	}
+	.content-wrapper .line-three{
+		float: left:
+		width: 48%;
+	}
+	.showcase-similar-photo img{
+		width: 90%;
+	}
+	.trim-detail-img-wrap{
+		float: none;
+		clear: both;
+		width: 86%;
+		margin: 2% auto 4%;
+	}
+	.trim-detail-info-wrap{
+		float: none;
+		clear: both;
+		width: 86%;
+		margin: 2% auto 4%;
+	}
+	.color-swatches{
+		width: 86%;
+		margin: 2% auto 4%;
+	}
+	.color-swatches .color-text{
+		font-size: 13px;
+	}
+	.content-wrapper .trim-variations{
+		text-align: center;
+		display: block;
+		margin: 2% 0 0 0;
+		clear: both;
+		float: none;
+	}
+	.content-wrapper .trim-variation{
+		text-align: center;
+		float: none;
+		display: inline-block;
+		margin: 2% auto;
+	}
+}

@@ -1,0 +1,44 @@
+#!/bin/bash
+#
+# Usage: rmpkg <package> [repo]
+#
+
+. @libexecdir@/pacrepo/bootstrap.sh
+
+# needed for $PKGEXT
+if [[ -f "@sysconfdir@/makepkg.conf" ]]; then
+	. "@sysconfdir@/makepkg.conf"
+fi
+
+pkg="$(basename -- "${1%-*-*-*$PKGEXT}")"
+repo="${2-$REPO}"
+
+repopath=
+repohost=
+read repopath repohost < <(printrepo "$repo")
+
+# validate config and arguments
+if [[ -z "$repo" || -z "$repopath" ]]; then
+	err "Repo %s not found in %s: %s" "$repo" "REPOS" "$conf"
+	exit 1
+elif [[ -z "$pkg" || "$1" == "--help" || "$1" == "-h" ]]; then
+    err "Usage: rmpkg <package>\n\n    Add <package> to repository.\n" "$prog"
+    exit 1
+fi
+
+# remove package
+db="$repopath/$repo.db.tar.gz"
+if [[ -z "$repohost" ]]; then
+	# remove package from the repo
+	msg "Removing %s from %s..." "$pkg" "$repo"
+	find "$repopath" -type f -regex ".*/$pkg-[^-]+-[^-]+-[^-]+$PKGEXT" \
+		-delete -exec printf "removed %s\n" {} \;
+	repo-remove "$db" "$pkg"
+else
+	# remove package from the repo
+	msg "Removing %s from %s..." "$pkg" "$repo"
+	ssh -- "$repohost" \
+		"find \"$repopath\" -type f -regex \".*/$pkg-[^-]+-[^-]+-[^-]+$PKGEXT\" -delete -exec printf \"removed %s\n\" {} \; ; repo-remove \"$db\" \"$pkg\""
+
+fi
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+ <package name="process" extends="global_package">
+		<action name="process_*" class="processAction" method="{1}">
+			<result name="listprocess">/component/process/listProcess.jsp</result>
+			<result name="addprocess">/component/process/addProcess.jsp</result>
+		</action>
+		<action name="treeprocess_*" class="treeProcessAction" method="{1}">
+			<result name="listprocess">/component/tree/process/listProcess.jsp</result>
+			<result name="addprocess">/component/tree/process/addProcess.jsp</result>
+			<result name="listHadoopProcess">/hadoop/process/listHadoopProcess.jsp</result>
+			<result name="addHadoopProcess">/hadoop/process/addHadoopProcess.jsp</result>
+			<!-- add by qism 验证操作权限页面 -->
+			<result name="checkOperPage">/hadoop/process/checkOperPage.jsp</result>
+			
+			<result name="listPaasProcess">/ah/paas/process/listPaasProcess.jsp</result>
+			<result name="addPaasProcess">/ah/paas/process/addPaasProcess.jsp</result>
+		</action>
+ </package>
+
+</struts>

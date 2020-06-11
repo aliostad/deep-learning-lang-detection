@@ -1,0 +1,130 @@
+#!/bin/sh
+
+# Remove all test output
+rm -f *.out *.noempty
+
+# Header for config.sample.sys-net
+cat >config.sample.sys-net <<EOF
+* Miscellaneous configuration items for [_Network_]
+
+H     [Network]
+
+* Remote system configuration for [_Network_]
+
+EOF
+
+# Remote systems for config.sample.sys-net
+cat config.sample.rsys* >> config.sample.sys-net
+
+# Device line for config.sample.sys-net
+cat >>config.sample.sys-net <<EOF
+
+* Device configuration for [_Network_]
+
+EOF
+
+# Devices for config.sample.sys-net
+cat config.sample.dev[0124567] >> config.sample.sys-net
+
+# Empty group for config.sample.sys-net
+cat >>config.sample.sys-net <<EOF
+
+* Group configuration for [_Network_]
+
+EOF
+
+
+
+# Header for config.sample.sys
+cat >config.sample.sys <<EOF
+* Miscellaneous configuration items for [foo.bar.org]
+
+H     foo.bar.org                                       ;Solaris
+M     foo             ;15 ;3/C  ; ;DD/MM/YY;0:00 ;0         ;0         ;foo
+L     SYSLOG
+
+* Remote system configuration for [foo.bar.org]
+
+EOF
+
+# Remote systems for config.sample.sys
+cat config.sample.rsys* >> config.sample.sys
+
+# Device line for config.sample.sys
+cat >>config.sample.sys <<EOF
+
+* Device configuration for [foo.bar.org]
+
+EOF
+
+# Devices for config.sample.sys
+cat config.sample.dev[0124567] >> config.sample.sys
+cat config.sample.dev3 >> config.sample.sys
+
+
+
+# Header for config.sample
+cat >config.sample <<EOF
+* UNISPOOL <5.12> configuration dumped on host foo
+
+* Dump date  : WED, FEB 12, 2003,  1:54 PM
+* Dump scope : _Server_, _Script_, _Network_, System=*
+
+
+* Configuration server info for [_Network_]
+
+C     foo.bar.org
+B     foobar.bar.org
+
+* Filter file info for [_Network_]
+
+F     Default /usr/bin/cat default
+F     cat /usr/bin/cat default
+
+
+EOF
+
+cat config.sample.sys-net >>config.sample
+
+cat >>config.sample <<EOF
+
+
+EOF
+
+cat config.sample.sys >>config.sample
+cat >>config.sample <<EOF
+
+
+EOF
+
+cat >>config.sample <<EOF
+* Miscellaneous configuration items for [foobar.bar.org]
+
+H     foobar.bar.org                                    ;Solaris
+M     foo             ;15 ;3/C  ; ;DD/MM/YY;0:00 ;0         ;0         ;foo
+L     SYSLOG
+
+* Remote system configuration for [foobar.bar.org]
+
+EOF
+
+# Remote systems for config.samples
+cat config.sample.rsys* >> config.sample
+
+# Device line for config.sample
+cat >>config.sample <<EOF
+
+* Device configuration for [foobar.bar.org]
+
+EOF
+
+# Devices for config.sample
+cat config.sample.dev[0124567] >> config.sample
+cat config.sample.dev3 | sed 's/foo/foobar/g'>> config.sample
+
+cat >>config.sample <<EOF
+
+
+
+* End of configuration dumped on host foo
+EOF

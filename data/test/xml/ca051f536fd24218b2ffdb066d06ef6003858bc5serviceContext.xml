@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceContext>
+	<service id="boNodeService" class="service.system.BoNodeService"/>	
+	<service id="boPersonService" class="service.system.BoPersonService"/>
+	<service id="boDepartmentService" class="service.system.BoDepartmentService"/>	
+	<service id="boRoleService" class="service.system.BoRoleService"/>
+	<service id="boRoleNodeService" class="service.system.BoRoleNodeService"/>	
+	
+	<service id="boLinksService" class="service.management.BoLinksService"/>
+	<service id="boLinksSortService" class="service.management.BoLinksSortService"/>
+	<service id="boSpecialService" class="service.management.BoSpecialService"/>			
+	
+	<service id="boNewsService" class="service.news.BoNewsService"/>	
+	
+	<service id="boNavigationService" class="service.management.BoNavigationService"/>
+	<service id="boParameterService" class="service.management.BoParameterService"/>	
+	<service id="boFacilityTypeService" class="service.facility.BoFacilityTypeService"/>
+	<service id="boFacilityService" class="service.facility.BoFacilityService"/>
+</serviceContext>
+	
+	

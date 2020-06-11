@@ -1,0 +1,51 @@
+#messages {
+    margin-top: 0.3em;
+}
+
+.message {
+    background: #fff;
+    border-bottom: 1px solid #aaa;
+    box-shadow: 0 1px 0px 0 #999999, 0 0px 1px 0px #999999;
+    min-height: 72px;
+    padding: 0.4em;
+}
+
+.message p {
+    margin: 0;
+}
+
+.message .actions {
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.message .actions a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.message:hover .actions a {
+    color: #888;
+}
+
+.message .actions a:hover {
+    text-decoration: underline;
+}
+
+.message .content {
+    margin-left: 72px;
+    padding-left: 0.3em;
+}
+
+.message .profile-img {
+    float: left;
+    margin: 0;
+    width: 72px;
+}
+
+.message .profile-img img {
+    border-radius: 50%;
+    width: 100%;
+}

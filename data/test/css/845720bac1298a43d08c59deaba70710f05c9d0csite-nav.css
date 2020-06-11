@@ -1,0 +1,37 @@
+
+.site-nav {
+	background-color: #606060;	
+	height: 35px;
+}
+.stie-nav .nav-left {
+	float: left;
+}
+.site-nav .nav-right {
+	float: right;
+}
+.site-nav a,.site-nav em,.site-nav img,.site-nav i {
+	display: block;
+	float: left;
+}
+.site-nav a, .site-nav em {
+	text-decoration: none;
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+}
+.site-nav .nav-left a {
+	color: #ffffff;
+	margin: 10px 30px 0 0;
+}
+
+.site-nav .nav-right a {
+	color: #ffffff;
+	margin: 10px 30px 0 0;
+}
+
+#log-reg {
+	float: left;
+}
+#log-reg a, #log-reg em {
+	margin: 10px 0 0 0;
+	color: #ffffff;
+}

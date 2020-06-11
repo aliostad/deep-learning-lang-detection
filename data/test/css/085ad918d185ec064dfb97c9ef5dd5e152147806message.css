@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+
+.message_box,.message_box_small{position:absolute; z-index:99999; background-color:#EDF3FF; border: 1px solid #91B5D6;border-radius:3px;box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);}
+.message_box{padding:15px 10px; max-width:280px;}
+.message_box_small{padding:7px; max-width:280px;}
+.message_box .message_content{position:relative; font-weight:bolder;padding-left: 32px;padding-top:4px;*padding-top:6px; height: auto; min-height:24px;}
+.message_box .message_content_wait{padding-left: 0px;text-align: center;min-height:20px;}
+.message_box .message_icon{position:absolute;top:0px;left:0px; width:24px; height:24px; background: url("icon_message.png") no-repeat}
+.message_box_small .message_content{position:relative; color:green;padding-left: 20px;*padding-top:2px; height: auto; min-height:16px;}
+.message_box_small .message_icon{position:absolute;top:0px;left:0px; width:16px; height:16px;background: url("icon_message.png") no-repeat 0px 0px;}
+
+.message_box_small .icon_message_ok{background-position: 0 0;}
+.message_box_small .icon_message_warn{background-position: 0 -38px;}
+.message_box_small .icon_message_stop{background-position: 0 -80px;}
+.message_box_small .icon_message_error{background-position: 0 -122px;}
+.message_box_small .icon_message_info{background-position: 0 -164px;}
+.message_box_small .icon_message_question{background-position: 0 -207px;}
+.message_box_small .icon_message_wait{background: url("icon_wait_circle.gif") no-repeat 0 0px;}
+.message_box_small .message_text{font-size: 12px;}
+
+.message_box .icon_message_ok{background-position: 0 -244px;}
+.message_box .icon_message_warn{background-position: 0 -286px;}
+.message_box .icon_message_stop{background-position: 0 -328px;}
+.message_box .icon_message_error{background-position: 0 -370px;}
+.message_box .icon_message_info{background-position: 0 -412px;}
+.message_box .icon_message_question{background-position: 0 -455px;}
+.message_box .icon_message_wait{position:static;display:block; margin:0 auto; width:100px; height:9px; background: url("icon_wait_rectangle.gif") no-repeat 0 0px;}

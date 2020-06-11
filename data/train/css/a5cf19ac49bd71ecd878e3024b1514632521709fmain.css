@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #eee;
+}
+/*nav*/
+#nav {
+  width:465px;
+  height:52px;
+  background:url(imgs/nav_bg.png) no-repeat;
+  margin:10px auto;
+  position:relative;
+}
+#nav ul {
+  position:absolute;
+}
+#nav ul li {
+  width:85px;
+  height:52px;
+  line-height:52px;
+  text-align:center;
+  font-weight:bold;
+  float:left;
+  cursor: pointer;
+  list-style: none;
+}
+#nav .nav_4{
+  z-index: 4;
+  filter:alpha(opacity=0);
+  opacity:0;
+}
+#nav .nav_3{
+  width:425px;
+  color:#fff;
+  z-index:3;
+  left: 0;
+  position: absolute;
+}
+#nav .nav_2 {
+  z-index: 2;
+  width:85px;
+  height:52px;
+  overflow: hidden;
+  background:url(imgs/nav_over.png) no-repeat 0 11px;
+  position: absolute;
+}
+#nav .nav_1{
+  z-index: 1;   
+  left: 20px;
+}
+/*首页on*/
+#nav  .nav_2_on_1{  
+  left: 20px;
+}
+#nav  .nav_3_on_1{  
+  left: 0px;
+}
+/*博文列表on*/
+#nav  .nav_2_on_2{  
+  left: 105px;
+}
+#nav  .nav_3_on_2{  
+  left: -85px;
+}
+/*精彩相册on*/
+#nav  .nav_2_on_3{  
+  left: 190px;
+}
+#nav  .nav_3_on_3{  
+  left: -170px;
+}
+/*动感音乐on*/
+#nav  .nav_2_on_4{  
+  left: 275px;
+}
+#nav  .nav_3_on_4{  
+  left: -255px;
+}
+/*关于我on*/
+#nav  .nav_2_on_5{  
+  left: 360px;
+}
+#nav  .nav_3_on_5{  
+  left: -340px;
+}

@@ -1,0 +1,97 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0; padding: 0; background-color: #efefef;
+}
+
+form {
+ 	width: 500px; margin: 0 auto; margin-top: 50px; margin-bottom: 50px; background-color: #fff;
+	padding: 25px 50px; border-radius: 40px; border: 1px solid #ddd;
+	box-shadow: 0px 0px 20px 5px #999;
+}
+
+h1 {
+	font: 8em 'Gochi Hand', Helvetica, sans-serif;
+	margin: 0; padding: 0;
+	text-shadow: 0px 4px 12px #666;
+}
+
+#grid {
+	display: inline-block;
+}
+
+	#grid:after {
+		content: " ";
+		display: block;
+		height: 0;
+		clear: both;
+		overflow: hidden;
+		visibility: hidden;
+	}
+
+	#grid {
+		display: block; border: 5px solid #333;
+		box-shadow: 10px 10px 10px #999;
+	}
+
+	.r1, .r3, .r5, .r7, .r9 {
+		float: left; background-color: #999; padding: 4px;
+	}
+
+	.r2, .r4, .r6, .r8 {
+		float: left; background-color: #ccc; padding: 4px;
+	}
+
+	.r1, .r2, .r4, .r5, .r7, .r8 {
+		border-right: 5px solid #333;
+	}
+
+	.last {
+		border-bottom: 5px solid #333;
+	}
+
+	#grid input { 
+		width: 36px; height: 32px; margin: 3px; 
+		text-align: center; font-size: 1.4em; 
+		border: 2px solid #333; font-weight: bold;
+		box-shadow: 2px 2px 4px #666;
+	}
+	#grid input.invalid { border-color: darkred; background-color: pink; cursor: pointer; }
+
+#instructions {
+	clear: both; margin: 20px 0 0 0; color: #777; font-style: italic;
+}
+
+#buttons {
+	margin-top: 20px;
+}
+
+#winLoad {
+	position: relative; top: -250px; left: 0px;
+	display: none; width: 330px; background: #333; height: 220px; border: 5px solid #000;
+	padding: 10px 20px; float: left; border-radius: 20px;
+	box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.6);
+}
+	#winLoadFields {
+		width: 200px; float: left;
+	}
+
+		#winLoad label {
+			font-size: 1em; font-weight: bold; display: block; color: #fff;
+		}
+
+		#winLoad textarea {
+			font-size: 1em; display: block; font-family: Monaco, 'Courier New', monospace; 
+			width: 180px; height: 192px; margin-top: 10px; background: #666; color: #fff;
+		}
+
+	#winLoadActions {
+		float: right; width: 130px; padding-top: 25px;
+	}
+	
+		#winLoadActionsSamples {
+			margin-bottom: 110px;
+		}
+
+		#winLoadActionsSamples button {
+			width: 130px;
+		}

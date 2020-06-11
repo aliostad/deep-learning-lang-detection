@@ -1,0 +1,30 @@
+.frontpageCommentblock { position:absolute; left:200px; top:100px; z-index: -1; width:300px; height: inherit; opacity:0; font-family:"Times New Roman", Times, serif; font-size:24px; color:#848484; background-color:#fff; margin-top:-100px; }
+     #commentsHeader {  width:100%; text-align: center; }
+     #seperator { width:95%; height:1px; border-bottom:1px solid black; margin:auto;}
+     #commentSection {width:95%; margin:auto; opacity:0; padding-top:10px; }
+         #commentSection #commenter { width:100%; text-align: left; float:right; color:#0dbeff;}
+         #commentSection #comment { width:100%; text-align: left; }
+         #noComments { width:100%; height: 100%;  text-align: center; }
+         
+#postCommentblock { width:100%; font-size:24px; color:#848484;}
+    #postCommentblock #writeCommentBlock {width:100%; height:60px; margin-top:26px;}
+        #postCommentblock #writeCommentBlock #userImageDiv { width:50px; height: 50px; float:left;}
+        #postCommentblock #writeCommentBlock #userImageDiv #userImage { width:100%; height:100%; }
+        #postCommentblock #writeCommentBlock #writeCommentDiv  { float:right; width:401px; height:48px; background-color:#fff; margin-right:5px;} 
+        #postCommentblock #writeCommentBlock #writeCommentDiv #writeCommentForm { width:100%; height:100%; }
+        #postCommentblock #writeCommentBlock #writeCommentDiv #writeComment { width:100%; height:100%; position:relative;}
+        #postCommentblock #submitButton { height:35px; width:100%;}
+        #postCommentblock #submitButton #commentSubmitButton { float:right; height:100%; width:70px;}
+        #postCommentblock #submitButton #commentErrors { color:red; }
+    #postCommentblock #commentBlock { width:100%; overflow:auto; margin:10px 0px 10px 0px; background-color:#fff;}
+        #postCommentblock #commentBlock #userImageDiv { width:72px; height:100%; float:left; }
+            #postCommentblock #commentBlock #userImageDiv #userImage {width:50px; height:50px; padding: 5px 0px 0px 11px; float:left;}
+        #postCommentblock #commentBlock #respectDiv { width:50px; height:100%; float:right; }
+            .respectCounter { width:100%; height: 15px; padding-top:5px; text-align:center; font-size:16px; }
+            #postCommentblock #commentBlock #respectDiv #respectButtonDiv { width:100%; height: 40px; text-align:center;}
+            .respectButton { width:30px; height:30px; padding:5px 0px 5px 0px;}
+        #postCommentblock #commentBlock #middleSection { width:378px; float:left; }
+            #postCommentblock #commentBlock #middleSection #commentHeader { width:100%; height:100%; height:35px; }
+            #postCommentblock #commentBlock #middleSection #commentHeader #commentUsername { color:#0dbeff; padding-top:3px; float:left;}
+            #postCommentblock #commentBlock #middleSection #commentHeader #commentTime { color:#848484; font-size:16px; padding:8px 0px 0px 5px; float:left; }
+#postCommentBlockBuffer { width:100%; height:50px; }  

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ExtraCopy">
+</Property><Property Name="Solution File" Value="F:\Projects\ExtraCopy\ExtraCopy.sln">
+</Property><Property Name="User Options File" Value="F:\Projects\ExtraCopy\ExtraCopy.suo">
+</Property><Property Name="Date" Value="March-02-10">
+</Property><Property Name="Time" Value="23:06 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="ExtraCopy.sln" Description="File successfully backed up as F:\Projects\ExtraCopy\Backup\ExtraCopy.sln">
+</Event><Event ErrorLevel="0" Project="" Source="ExtraCopy.suo" Description="File successfully backed up as F:\Projects\ExtraCopy\Backup\ExtraCopy.suo">
+</Event><Event ErrorLevel="0" Project="ExtraCopy" Source="ExtraCopy\ExtraCopy.csproj" Description="Project file successfully backed up as F:\Projects\ExtraCopy\Backup\ExtraCopy\ExtraCopy.csproj">
+</Event><Event ErrorLevel="0" Project="ExtraCopy" Source="ExtraCopy\Application.cs" Description="File successfully backed up as F:\Projects\ExtraCopy\Backup\ExtraCopy\Application.cs">
+</Event><Event ErrorLevel="0" Project="ExtraCopy" Source="ExtraCopy\Settings.cs" Description="File successfully backed up as F:\Projects\ExtraCopy\Backup\ExtraCopy\Settings.cs">
+</Event><Event ErrorLevel="0" Project="ExtraCopy" Source="ExtraCopy\SettingsDialog.cs" Description="File successfully backed up as F:\Projects\ExtraCopy\Backup\ExtraCopy\SettingsDialog.cs">
+</Event><Event ErrorLevel="0" Project="ExtraCopy" Source="ExtraCopy\SettingsDialog.Designer.cs" Description="File successfully backed up as F:\Projects\ExtraCopy\Backup\ExtraCopy\SettingsDialog.Designer.cs">
+</Event><Event ErrorLevel="0" Project="ExtraCopy" Source="ExtraCopy\Program.cs" Description="File successfully backed up as F:\Projects\ExtraCopy\Backup\ExtraCopy\Program.cs">
+</Event><Event ErrorLevel="0" Project="ExtraCopy" Source="ExtraCopy\Properties\AssemblyInfo.cs" Description="File successfully backed up as F:\Projects\ExtraCopy\Backup\ExtraCopy\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="ExtraCopy" Source="ExtraCopy\Properties\Resources.Designer.cs" Description="File successfully backed up as F:\Projects\ExtraCopy\Backup\ExtraCopy\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="ExtraCopy" Source="ExtraCopy\Properties\Settings.Designer.cs" Description="File successfully backed up as F:\Projects\ExtraCopy\Backup\ExtraCopy\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="ExtraCopy" Source="ExtraCopy\Properties\Settings.settings" Description="File successfully backed up as F:\Projects\ExtraCopy\Backup\ExtraCopy\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="ExtraCopy" Source="ExtraCopy\Properties\Resources.resx" Description="File successfully backed up as F:\Projects\ExtraCopy\Backup\ExtraCopy\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="ExtraCopy" Source="ExtraCopy\SettingsDialog.resx" Description="File successfully backed up as F:\Projects\ExtraCopy\Backup\ExtraCopy\SettingsDialog.resx">
+</Event><Event ErrorLevel="0" Project="ExtraCopy" Source="ExtraCopy\ExtraCopy.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ExtraCopy" Source="ExtraCopy\ExtraCopy.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ExtraCopy.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ExtraCopy.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ExtraCopy" Source="ExtraCopy\ExtraCopy.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

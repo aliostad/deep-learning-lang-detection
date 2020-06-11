@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<OutputForm String= "StandardDeduction">
+  <Mapping>
+    <PDFField>txtWKTLine5Amount</PDFField>
+    <TROField Type="Integer">tax1040.OutputForms.Tax1040EZPage1.StandardDeduction</TROField>
+  </Mapping>
+  <Mapping>
+    <PDFField>txtWKTLine5LargerAmount</PDFField>
+    <TROField Type="Integer"></TROField>
+  </Mapping>
+  <Mapping>
+    <PDFField>txtWKTLine5MaximumAmount</PDFField>
+    <TROField Type="Integer"></TROField>
+  </Mapping>
+  <Mapping>
+    <PDFField>txtWKTLine5MSmallerAmount</PDFField>
+    <TROField Type="Integer"></TROField>
+  </Mapping>
+  <Mapping>
+    <PDFField>txtWKTLine5ExemptionAmount</PDFField>
+    <TROField Type="Integer"></TROField>
+  </Mapping>
+  <Mapping>
+    <PDFField>txtWKTLine5TotalAddedAmount</PDFField>
+    <TROField Type="Integer"></TROField>
+  </Mapping>
+
+  
+</OutputForm>
+
+
+
+
+
+
+
+
+
+
+

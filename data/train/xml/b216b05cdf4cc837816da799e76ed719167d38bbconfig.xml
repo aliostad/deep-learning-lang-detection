@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Dunagan_Process>
+            <version>0.0.1</version>
+        </Dunagan_Process>
+    </modules>
+
+    <global>
+        <models>
+            <dunagan_process>
+                <class>Dunagan_Process_Model</class>
+                <resourceModel>dunagan_process_mysql4</resourceModel>
+            </dunagan_process>
+            <dunagan_process_mysql4>
+                <class>Dunagan_Process_Model_Mysql4</class>
+            </dunagan_process_mysql4>
+        </models>
+
+        <helpers>
+            <dunagan_process>
+                <class>Dunagan_Process_Helper</class>
+            </dunagan_process>
+        </helpers>
+
+        <blocks>
+            <dunagan_process>
+                <class>Dunagan_Process_Block</class>
+            </dunagan_process>
+        </blocks>
+
+        <resources>
+            <dunagan_process_setup>
+                <setup>
+                    <module>Dunagan_Process</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </dunagan_process_setup>
+        </resources>
+    </global>
+</config>

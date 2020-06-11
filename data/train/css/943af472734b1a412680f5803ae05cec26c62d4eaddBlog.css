@@ -1,0 +1,105 @@
+.write{
+    height: 300px;
+    width: 723px;
+    margin: 0 auto;
+}
+.write textarea{
+    width: 100%;
+    height: 100%;
+}
+.title{
+    text-align: center;
+    height: 80px;
+    padding-top: 20px;
+}
+.title input{
+    width: 500px;
+    height: 40px;
+}
+#show{
+    width: 723px;
+    margin: 100px auto;
+}
+.writeCode{
+    border: none;
+ }
+#MyTitle{
+    margin: 20px 0px 10px 0px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.h300{height: 300px}
+.bcw{background: white}
+.h260{height: 260px}
+.myButton{
+    text-align: right;
+    border-top: 1px solid #949494;
+
+}
+.myButton>input{
+    border: none;
+    margin-top: 5px;
+}
+.bnone{border: none}
+.noResize{
+    resize: none;
+}
+.c787CA8{color: #787CA8;}
+.remove:hover{
+    color: red;
+    cursor: pointer;
+}
+.special{
+    background-color: #f5f2f0;
+    padding: 1em;
+    margin: 2em 2em;
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    border-width: 0.3em;
+    border-color: #e0dfcc;
+    border-style: solid;
+    text-shadow: 0 1px white;
+    overflow: auto;
+
+}
+.hide{display: none}
+.tc{
+    width: 800px;
+    margin: 0 auto;
+}
+.clear{
+    display: block;
+    clear: both;
+    content: "";
+}
+#nav{
+    width:1400px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+#nav li{
+    float:left;
+    list-style: none;
+
+}
+#nav li a{
+    color: orange;
+    text-decoration: none;
+}
+#nav:after{
+    display: block;
+    clear: both;
+    content:""
+}
+.mau{
+    display: block;
+    margin: 0 auto}
+#writeCodeValue{
+    width:97%;
+    height: 98%;
+}
+.border-col{border-bottom:2px solid #D3D3D3;}

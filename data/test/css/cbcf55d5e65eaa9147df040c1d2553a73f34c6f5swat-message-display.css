@@ -1,0 +1,60 @@
+/* SwatMessageDisplay */
+
+.swat-message-display {
+	margin: 1em 0 0 0;
+	padding: 0;
+}
+
+.swat-message-display .swat-message {
+	margin: 1em 0;
+	position: relative;
+	padding: 0;
+	background-position: 8px 8px;
+	background-repeat: no-repeat;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.swat-message-display .swat-message .swat-message-container {
+	padding: 16px 12px 12px 64px;
+	min-height: 32px;
+}
+
+.swat-message-display .swat-message-primary-content {
+	margin: 0;
+	font-weight: bold;
+}
+
+.swat-message-display .swat-message-with-secondary .swat-message-container {
+	padding-top: 12px;
+	min-height: 36px;
+}
+
+.swat-message-with-secondary .swat-message-display-dismiss-link {
+	margin-top: 4px;
+}
+
+.swat-message-display-dismiss-link,
+.swat-message-display-dismiss-link:link,
+.swat-message-display-dismiss-link:visited {
+	float: right;
+	display: block;
+	font-size: 85%;
+	position: relative;
+	top: -8px;
+	right: -4px;
+	height: 14px;
+	width: 14px;
+	background: url(../images/dismiss.png) 0 0 no-repeat;
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-decoration: none;
+	outline: none;
+	line-height: 1;
+}
+
+.swat-message-display-dismiss-link:hover {
+	background-position: 0 -14px;
+}

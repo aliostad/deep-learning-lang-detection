@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+
+WORKDIR=`pwd`
+MERGED_DIR="${WORKDIR}/fastq/"
+FILTERED_DIR="${WORKDIR}/filtered/"
+FASTQC_MERGED_DIR="${WORKDIR}/fastqc/raw/"
+FASTQC_FILTERED_DIR="${WORKDIR}/fastqc/filtered/"
+
+INPUT_DIR=$1
+
+TRIMMOMATIC_JAR="/home/skliver/soft/Trimmomatic-0.35/trimmomatic-0.35.jar"
+TRUESEQ_ADAPTERS_FILE="/home/skliver/soft/Trimmomatic-0.35/adapters/TruSeq2-PE.fa"
+TRIMMOMATIC_THREADS=16
+MIN_READ_LEN=50
+
+mkdir -p ${MERGED_DIR} ${FILTERED_DIR} ${FASTQC_FILTERED_DIR} ${FASTQC_MERGED_DIR}
+
+for SAMPLE_NAME in `ls ${INPUT_DIR}`;
+    do
+
+    RAW_SAMPLE_DIR="${INPUT_DIR}${SAMPLE_NAME}/"
+    echo ${RAW_SAMPLE_DIR}
+    MERGED_SAMPLE_DIR="${MERGED_DIR}${SAMPLE_NAME}/"
+    FILTERED_SAMPLE_DIR="${FILTERED_DIR}${SAMPLE_NAME}/"
+    FASTQC_SAMPLE_MERGED_DIR="${FASTQC_MERGED_DIR}${SAMPLE_NAME}/"
+    FASTQC_SAMPLE_FILTERED_DIR="${FASTQC_FILTERED_DIR}${SAMPLE_NAME}/"
+
+    LEFT_MERGED_READS="${MERGED_SAMPLE_DIR}${SAMPLE_NAME}_1.fq"
+    RIGHT_MERGED_READS="${MERGED_SAMPLE_DIR}${SAMPLE_NAME}_2.fq"
+    FILTERED_READS_PREFIX="${SAMPLE_NAME}_TMC"
+    mkdir -p ${MERGED_SAMPLE_DIR} ${FILTERED_SAMPLE_DIR} ${FASTQC_SAMPLE_MERGED_DIR} ${FASTQC_SAMPLE_FILTERED_DIR}
+    echo "Handling ${SAMPLE_NAME} ..."
+
+    zcat ${RAW_SAMPLE_DIR}/*_1.fq.gz > ${LEFT_MERGED_READS}
+    zcat ${RAW_SAMPLE_DIR}/*_2.fq.gz > ${RIGHT_MERGED_READS}
+
+    fastqc -t 2 -k 10 --nogroup -o ${FASTQC_SAMPLE_MERGED_DIR} ${MERGED_SAMPLE_DIR}/*.fq
+
+    cd ${FILTERED_SAMPLE_DIR}
+    java -jar ${TRIMMOMATIC_JAR} PE -threads ${TRIMMOMATIC_THREADS} -phred64 \
+							    ${LEFT_MERGED_READS} \
+                                ${RIGHT_MERGED_READS} \
+                                ${FILTERED_READS_PREFIX}_1.pe.fq ${FILTERED_READS_PREFIX}_1.se.fq \
+                                ${FILTERED_READS_PREFIX}_2.pe.fq ${FILTERED_READS_PREFIX}_2.se.fq \
+                                ILLUMINACLIP:${TRUESEQ_ADAPTERS_FILE}:2:30:10:1 MINLEN:${MIN_READ_LEN}
+    fastqc -t 4 -k 10 --nogroup -o ${FASTQC_SAMPLE_FILTERED_DIR} ${FILTERED_SAMPLE_DIR}/*.fq
+
+    cd "../../"
+
+    done

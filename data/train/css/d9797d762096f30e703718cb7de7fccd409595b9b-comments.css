@@ -1,0 +1,168 @@
+/*   
+   Created by Антон Шувалов on 2012-02-17.
+   Copyright 2012 Антон Шувалов. All rights reserved.
+*/
+.b-comments_edit_links {
+	padding-top: 3px;
+	text-align: right;
+	float:right;
+	cursor:pointer;
+}
+.b-comments_edit_links .comment-edit-link, .b-comments_edit_links span {
+	display:inline-block;
+	color:#696969;
+	opacity:0.5;
+}
+.comments .comment-edit-link:hover {
+	opacity:1;
+}
+.page__content__comments {
+	
+}
+		.page__content__comments__single_comment p {
+			text-indent:0px;
+		}
+		
+		.page__content__comments__single_comment a {
+				color:#6999ac;
+		}
+		
+		.page__content__comments__single_comment__author a {
+			color:#8e7d7d;
+		}
+
+		.page__content__comments__single_comment {
+			margin-bottom: 2px;	
+		}
+
+		.page__content__comments__single_comment__avatar {
+			float: left;
+			margin-right: 10px;
+		}
+
+		.page__content__comments__single_comment__author, .page__content__comments__single_comment__date {
+			display:block;
+			font-size:16px;
+		}
+		
+		.page__content__comments__single_comment__date {
+			margin-bottom:9px;
+		}
+
+		.page__content__comments__single_comment__content {
+
+		}
+		
+.page__content__comments__comments_write_area {
+	position:relative;
+}
+
+		.page__content__comments__comments_write_area__user_menu {
+			text-align:right;
+		}
+		
+		.page__content__comments__comments_write_area__user_menu a,
+		.page__content__comments__comments_write_area__user_menu span {
+			color:#696969;
+			opacity:0.5;
+		}
+		
+		.page__content__comments__comments_write_area__user_menu a:hover {
+			opacity:1;
+		}
+
+		.page__content__comments__comments_write_area__label_name {
+			height:22px;
+			width:70px;
+			background:url(../images/sprite.png) -150px -120px;
+/*			left: 0;
+			position: absolute;
+			right: auto;*/
+		}
+
+		.page__content__comments__comments_write_area__label_mail {
+			height:22px;
+			width:70px;
+			background:url(../images/sprite.png) -150px -150px;
+/*			left: auto;*/
+/*			position: absolute;*/
+/*			right: 192px;*/
+		}
+		
+		.page__content__comments__comments_write_area__form {
+			position: relative;
+			top: 22px;
+		}
+		
+		.page__content__comments__comments_write_area__form.logined {
+			top: -1px !important;
+		}
+		
+/*		.page__content__comments__comments_write_area__form_mail {
+			position: absolute;
+			right: 0;
+			width: 260px;
+			height: 20px;
+		}
+		
+		.page__content__comments__comments_write_area__form_name {
+			float:left;
+			width:260px;
+			height: 20px;
+		}*/
+		
+		.page__content__comments__comments_write_area__form_content {
+			border: 1px solid #adaeab;
+			width:685px;
+			height:161px;
+			margin-top:23px;
+			line-height:23px;
+			margin-left: auto;
+			margin-right: auto;
+			
+		}
+		
+		.page__content__comments__comments_write_area__form_send {
+			background:url(../images/sprite.png) 0 -149px;
+			height:25px;
+			width:120px;
+			border:0px;
+			margin-top: 23px;
+		}
+		
+		
+		.page__content__comments__comments_write_area__name_,
+		.page__content__comments__comments_write_area__mail_ {
+			height:42px;
+			width:49%;
+			float:left;
+		}		
+		.page__content__comments__comments_write_area__sep_ {
+			height:42px;
+			width:2%;
+			float:left;
+		}
+		
+		.page__content__comments__comments_write_area__name_ input,
+		.page__content__comments__comments_write_area__mail_ input {
+/*			margin-top:20px;*/
+			width:100%;
+			z-index: 9000;
+		}
+		.page__content__comments__comments_write_area__name_ label,
+		.page__content__comments__comments_write_area__mail_ label {
+			overflow: hidden;
+			float:left;
+			z-index:1;
+		} 
+		.page__content__comments__comments_write_area__form_mail,
+		.page__content__comments__comments_write_area__form_name {
+			overflow: hidden;
+			height:22px;
+			float:left;
+			z-index: 200;
+		}
+		
+		
+		
+		

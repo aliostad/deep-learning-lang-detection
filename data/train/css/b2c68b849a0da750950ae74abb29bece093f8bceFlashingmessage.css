@@ -1,0 +1,36 @@
+/**
+ * Stylesheet for the module Flashningmessage\StatusMessage
+ */
+
+ .message-debug,
+ .message-warning,
+ .message-error,
+ .message-success {
+     padding: 10px;
+     width: 96%;
+     border: 1px solid #000;
+     margin-bottom: 15px;
+	 margin-left:10px;
+     font-weight: bold;
+     color:#000;
+	 clear:both;
+ }
+
+.message-debug {
+    background-color: #0771d7;
+ }
+
+.message-warning {
+    background-color: #fcff00;
+ }
+
+.message-error {
+    background-color:#ff0000;
+ }
+
+.message-success {
+    background-color: #00ff06;
+ } 
+
+ #status {
+ clear:both;}

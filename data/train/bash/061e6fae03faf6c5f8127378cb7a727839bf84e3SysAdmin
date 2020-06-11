@@ -1,0 +1,85 @@
+#!/bin/bash
+
+#####							#####
+#####		https://github.com/fika/security	#####
+#####		Authors: Saint, Cosby, Norec		#####
+
+# ~~~~~~~~~~  Environment Setup ~~~~~~~~~~ #
+. ./environment
+# ~~~~~~~~~~  Environment Setup ~~~~~~~~~~ #
+
+#FOR INFO SEE GITHUB
+
+#ENTER MENU
+clear
+echo ""
+echo ""
+echo -e "${RED_TEXT}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${END}"
+echo -e "${RED_TEXT}~~~~~~~~~~~~~~~~~~~~~~~~             MENU            ~~~~~~~~~~~~~~~~~~~~~~~~~${END}"
+echo -e "${RED_TEXT}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${END}"
+echo ""
+echo ""
+echo -e "${BLUE_TEXT}1) Sample text here.${END}"
+echo ""
+echo -e "${BLUE_TEXT}2) Sample text here.${END}"
+echo ""
+echo -e "${BLUE_TEXT}3) Sample text here.${END}"
+echo ""
+echo -e "${BLUE_TEXT}4) Sample text here.${END}"
+echo ""
+echo -e "${BLUE_TEXT}5) Sample text here.${END}"
+echo ""
+echo -e "${BLUE_TEXT}6) Sample text here.${END}"
+echo ""
+echo -e "${BLUE_TEXT}7) Sample text here.${END}"
+echo ""
+echo -e "${BLUE_TEXT}8) Kill all open tunnels.${END}"
+echo ""
+echo -e "${BLUE_TEXT}9) Quit the program${END}"
+
+# Look for options
+echo -e ""
+echo -e "${WARP}SELECT:${END}"
+read option
+
+
+
+if [ "$option" = "1" ]; then
+	#STARTING sample
+	bash sample
+
+elif [ "$option" = "2" ]; then
+	#STARTING sample
+	bash sample
+
+elif [ "$option" = "3" ]; then
+	#STARTING sample
+	bash sample
+
+elif [ "$option" = "4" ]; then
+	#STARTING sample
+	bash sample
+
+elif [ "$option" = "5" ]; then
+	#STARTING sample
+	bash sample
+
+elif [ "$option" = "6" ]; then
+	#STARTING sample
+	python sample
+
+elif [ "$option" = "7" ]; then
+	#STARTING sample
+	bash sample
+
+elif [ "$option" = "8" ]; then
+	#KILL ALL
+	killall ssh
+
+elif [ "$option" = "9" ]; then
+	echo "Exiting"
+	exit 0
+else
+echo "Please try again."
+bash SysAdmin
+fi

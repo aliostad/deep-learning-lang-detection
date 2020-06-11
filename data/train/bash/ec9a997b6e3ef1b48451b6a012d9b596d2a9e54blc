@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# bash file for Test1
+# by lc, chaliu@kth.se
+# 2013.11.15
+
+### Constant ###
+TIMESTAMP=$(date +"%Y-%m-%d, %H:%M:%S")
+FREQUENCY=1s
+
+### Variable ###
+Vruntime=
+ProcessId=
+ProcessName=
+
+### Main ###
+## show all immediate children of init ##
+PID_init=$(ps -eo pid,comm |grep init |awk '{print $1}')
+ps -o pid,comm --ppid=$PID_init |tee >(exec logger)
+
+## choose a process to monitor
+echo "$TIMESTAMP Please type in the PID to choose a process you'd like to monitor: "
+read -t 180 ProcessId
+
+until ps -o comm,pid --ppid=1 | grep $ProcessId > /dev/null
+do 
+	echo -e "$TIMESTAMP Not valid Process"
+	echo "$TIMESTAMP Please type in the PID to choose a process you'd like to monitor: "
+	read -t 180 ProcessId
+done
+
+ProcessName=$(ps -o comm  --no-header  --pid=$ProcessId)
+echo -e "$TIMESTAMP You choose to monitor process: $ProcessName"
+
+## monitor the process ##
+while ps -o comm,pid --ppid=1 | grep $ProcessId > /dev/null
+do
+	Vruntime=$(cat /proc/$ProcessId/sched | grep se.vruntime | awk '{print $3}')
+	sleep $FREQUENCY
+done
+
+echo -e "$TIMESTAMP The process $ProcessName is died; And the last se.vruntime is: $Vruntime nanosecond" |tee >(exec logger) 
+

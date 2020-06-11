@@ -1,0 +1,241 @@
+/* Reset */
+body {
+	margin: 0;
+	padding: 0;
+}
+table {
+    border-collapse: collapse;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+/*---------------------------------------------------------
+// Desktop Nav
+//--------------------------------------------------------*/
+.site-container {
+	width: 95%;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.desktop-nav .primary-nav__item {
+	outline: 1px dashed green;
+}
+.desktop-nav .primary-nav__link {
+	padding: 1em 3em;
+}
+
+.desktop-nav .primary-nav__link {
+	margin-bottom: 0;
+}
+.site-logo__wrpr {
+	width: 60px;
+	min-width: 60px;
+	height: 60px;
+	padding-right: 1em;
+	outline: 1px dashed red;
+}
+
+/* Nav Toggle */
+.nav-toggle {
+	width: 50px;
+	height: 70px;
+}
+.nav-toggle__innr {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	left: 0;
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	font-size: 0;
+}
+.nav-toggle__blip {
+	display: inline-block;
+	background: black;
+	height: 6px;
+	width: 6px;
+	margin: 2px;
+	border-radius: 50%;
+}
+.js-pac-nav--is-mobile .nav-toggle__blip {
+	height: 3px;
+	width: 65%;
+	margin: auto 0 auto auto;
+	margin-bottom: 4px;
+	border-radius: 0;
+}
+.site-header {
+	background: whitesmoke;
+}
+
+/*---------------------------------------------------------
+// Pac-Nav
+//--------------------------------------------------------*/
+.js-pac-nav__inner,
+.js-pac-nav__left,
+.js-pac-nav__right {
+	height: 70px;
+	z-index: 1000;
+}
+.js-pac-nav__inner {
+	position: relative;
+}
+.js-pac-nav__left,
+.js-pac-nav__right {
+	position: absolute;
+	display: table;
+}
+.js-pac-nav__left {
+	top: 50%;
+	left: 0;
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.js-pac-nav__right {
+	right: 0;
+	top: 0;
+}
+.js-pac-nav__pac-item {
+	display: table-cell;
+	vertical-align: middle;
+}
+.js-pac-nav-fix__fixed-item {
+	display: block;
+	cursor: pointer;
+}
+
+/* Desktop Nav */
+.js-pac-nav__desktop-nav {
+	position: relative;
+	opacity: 0;
+	-ms-transition: 0.15s opacity;
+	-webkit-transition: 0.15s opacity;
+	transition: 0.15s opacity;
+}
+.no-js .js-pac-nav__desktop-nav {
+	opacity: 1;
+}
+.js-pac-nav__desktop-nav__item {
+	position: relative;
+	display: table-cell;
+	white-space: nowrap;
+	top: 0;
+	opacity: 1;
+}
+.js-pac-nav__mobile-nav__item a,
+.js-pac-nav__desktop-nav__item a {
+	display: block;
+}
+.js-pac-nav__desktop-nav__item--parent > ul {
+	position: absolute;
+	left: 0;
+	top: -1000em;
+}
+.js-pac-nav__desktop-nav__item--parent:last-child > ul {
+	left: auto;
+	right: 0;
+}
+/* Nav Toggle */
+.js-pac-nav__nav-toggle {
+	position: absolute;
+	top: -1000px;
+	right: 0;
+	cursor: pointer;  /* <= THIS IS VERY IMPORTANT. JS IOS NEEDS IT TO BE ABLE TO 'SEE' IT */
+}
+
+/* Mobile Nav */
+.js-pac-nav__mobile-nav__wrpr {
+	position: relative;
+}
+.js-pac-nav__mobile-nav {
+	position: absolute;
+	top: -1000px;
+	opacity: 0;
+	right: 0;
+}
+.js-pac-nav__mobile-nav__item {
+	display: none;
+}
+.js-pac-nav__mobile-nav__item--parent > ul {
+	display: none;
+}
+.js-pac-nav__mobile-nav__item--is-visible {
+	display: block;
+}
+
+/*---------------------------------------------------------
+// Actions
+//--------------------------------------------------------*/
+.js-pac-nav--is-hybrid .js-pac-nav__nav-toggle,
+.js-pac-nav--is-mobile .js-pac-nav__nav-toggle {
+	top: auto;
+}
+.js-pac-nav--is-loaded .js-pac-nav__desktop-nav {
+	opacity: 1;
+}
+.js-pac-nav--is-loading .js-pac-nav__desktop-nav {
+	right: 0 !important;
+}
+.js-pac-nav--is-mobile  .js-pac-nav__right {
+	width: 100%;
+}
+.js-pac-nav--is-loading .js-pac-nav__right {
+	width: auto !important;
+}
+
+.js-pac-nav__body--is-loaded .js-pac-nav__desktop-nav__item--is-hidden {
+	display: none !important;
+}
+.js-pac-nav__desktop-nav__item--parent {
+	cursor: pointer;
+}
+.js-pac-nav__desktop-nav__item--parent.js-pac-nav__item--is-active .primary-nav__list--2nd {
+	top: 100%;
+}
+
+.js-pac-nav__mobile-nav.js-pac-nav__item--is-active {
+	top: 100%;
+	opacity: 1;
+}
+.js-pac-nav__mobile-nav__item--parent.js-pac-nav__item--is-active > ul {
+	display: block;
+}
+/* Is Mobile */
+.js-pac-nav--is-mobile .nav-toggle__innr {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	left: 0;
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	cursor: pointer;
+	font-size: 0;
+}
+
+/* Debug */
+.js-pac-nav--debug .js-pac-nav__desktop-nav__item:after,
+.js-pac-nav--debug .js-pac-nav__left:after,
+.js-pac-nav--debug .js-pac-nav__right:after {
+	content: attr(data-js-pac-nav-position) "px";
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: rgba(0,0,0,0.75);
+	padding: 0.1em 0.2em;
+	color: white;
+	font-size: 0.85em;
+	font-family: Arial, sans-serif;
+}
+.js-pac-nav--debug .js-pac-nav__right:after {
+	top: auto;
+	bottom: 0;
+}

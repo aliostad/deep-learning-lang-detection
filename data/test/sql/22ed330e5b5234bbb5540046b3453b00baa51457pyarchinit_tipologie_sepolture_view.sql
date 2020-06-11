@@ -1,0 +1,11 @@
+﻿-- View: pyarchinit_tipologie_sepolture_view
+
+-- DROP VIEW pyarchinit_tipologie_sepolture_view;
+
+CREATE OR REPLACE VIEW pyarchinit_tipologie_sepolture_view AS 
+ SELECT pyarchinit_quote_view.gid, pyarchinit_quote_view.sito_q, pyarchinit_quote_view.area_q, pyarchinit_quote_view.us_q, pyarchinit_quote_view.unita_misu_q, pyarchinit_quote_view.quota_q, pyarchinit_quote_view.id_us, pyarchinit_quote_view.sito, pyarchinit_quote_view.area, pyarchinit_quote_view.us, pyarchinit_quote_view.struttura, pyarchinit_quote_view.d_stratigrafica, pyarchinit_quote_view.d_interpretativa, pyarchinit_quote_view.descrizione, pyarchinit_quote_view.interpretazione, pyarchinit_quote_view.rapporti, pyarchinit_quote_view.periodo_iniziale, pyarchinit_quote_view.fase_iniziale, pyarchinit_quote_view.periodo_finale, pyarchinit_quote_view.fase_finale, pyarchinit_quote_view.anno_scavo, pyarchinit_tipologia_sepolture.id_sepoltura, pyarchinit_tipologia_sepolture.azimut, pyarchinit_tipologia_sepolture.tipologia, pyarchinit_tipologia_sepolture.the_geom, pyarchinit_tipologia_sepolture.sito_ts, pyarchinit_tipologia_sepolture.t_progetto AS tipologia_progetto, pyarchinit_tipologia_sepolture.t_gruppo AS tipologia_gruppo, pyarchinit_tipologia_sepolture.t_codice AS tipologia_codice, pyarchinit_tipologia_sepolture.t_sottocodice AS tipologia_sottocodice
+   FROM pyarchinit_quote_view
+   JOIN pyarchinit_tipologia_sepolture ON pyarchinit_quote_view.struttura::text = pyarchinit_tipologia_sepolture.id_sepoltura::text;
+
+ALTER TABLE pyarchinit_tipologie_sepolture_view OWNER TO postgres;
+

@@ -1,0 +1,51 @@
+#notifyMessagePanel {
+    position: fixed;
+    top: 0;
+    text-align: center;
+    display: none;
+    min-height: 45px;
+    min-width: 140px;
+    background: #F5F5F5;
+    color: #648719;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 0px 0px 4px 4px;
+    padding: 0 1px;
+}
+
+#notifyMessagePanel .image-panel, #notifyMessagePanel .message {
+    margin: 4px 8px;
+}
+
+#notifyMessagePanel > div {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    height: 32px;
+    line-height: 32px;
+    min-width: 32px;
+    vertical-align: top;
+}
+
+#notifyMessagePanel .image-panel.loading {
+    background: url("ajax-loader.gif") center no-repeat;
+}
+
+#notifyMessagePanel .image-panel.success {
+    background: url("success.png") center no-repeat;
+}
+
+#notifyMessagePanel .image-panel.failure {
+    background: url("success.png") center no-repeat;
+}
+
+#notifyMessagePanel .image-panel.warning {
+    background: url("success.png") center no-repeat;
+}
+
+#notifyMessagePanel .message.loading, #notifyMessagePanel .message.success {
+    color: #008000;
+}
+
+#notifyMessagePanel .message.failure, #notifyMessagePanel .message.warning {
+    color: #ff0000;
+}

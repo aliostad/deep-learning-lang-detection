@@ -1,0 +1,102 @@
+#!/usr/bin/env bash
+
+# PSD_TEW_monitor is replaced by NDMonitor
+
+mcvine-simulate \
+    --components=source,sample,detector_90tc,detector_90wc,detector_90tt,detector_90wt,detector_90tb,detector_90wb --- \
+    --ncount=10000 \
+    --buffer_size=1000 \
+    --source=SNS_source4 \
+    --sample=V_sample \
+    --detector_90tc="NDMonitor(t)" \
+    --detector_90wc="NDMonitor(w)" \
+    --detector_90tt="NDMonitor(t)" \
+    --detector_90wt="NDMonitor(w)" \
+    --detector_90tb="NDMonitor(t)" \
+    --detector_90wb="NDMonitor(w)" \
+    --source.yh='0.085' \
+    --source.dist='4.3' \
+    --source.Emin='0.01' \
+    --source.Emax='1000' \
+    --source.tinmin='0.0' \
+    --source.sample_t='1' \
+    --source.height='0.12' \
+    --source.width='0.10' \
+    --source.proton_T='0.600' \
+    --source.tinmax='2000.0' \
+    --source.sample_E='2' \
+    --source.S_filename='a1Gw2-8-f5_fit_fit.dat' \
+    --source.xw='0.016' \
+    --geometer.source='(0.00000, 0.00000, 0.00000),(0.00000, 0.00000, 0.00000)' \
+    --sample.target_index='0' \
+    --sample.radius_i='0.015' \
+    --sample.radius_o='0.02' \
+    --sample.focus_aw='0' \
+    --sample.focus_yh='1.30' \
+    --sample.V0='13.827' \
+    --sample.zthick='0' \
+    --sample.focus_ah='0' \
+    --sample.sig_i='4.935' \
+    --sample.f_QE='0' \
+    --sample.frac='1' \
+    --sample.sig_a='5.08' \
+    --sample.target_z='0' \
+    --sample.target_x='-2' \
+    --sample.target_y='0' \
+    --sample.focus_r='0' \
+    --sample.h='0.05' \
+    --sample.yheight='0' \
+    --sample.focus_xw='0.780' \
+    --sample.xwidth='0' \
+    --sample.gamma='0' \
+    --sample.pack='1' \
+    --geometer.sample='relative((0.00000, 0.00000, 2.00000), to="previous"),relative((0.00000, 0.00000, 0.00000), to="previous")' \
+    --detector_90tc.title='detector_l90tc' \
+    --detector_90tc.filename='detector_l90tc.h5' \
+    --detector_90tc.tmin='0' \
+    --detector_90tc.tmax='1' \
+    --detector_90tc.nt='100' \
+    --detector_90tc.yheight='0.385' \
+    --detector_90tc.xwidth='0.770' \
+    --geometer.detector_90tc='relative((-2, 0.00000, 0.00000), to="sample"),relative((0.00000, 90, 0.00000), to="sample")' \
+    --detector_90wc.title='detector_l90wc' \
+    --detector_90wc.filename='detector_l90wc.h5' \
+    --detector_90wc.wmin='0' \
+    --detector_90wc.wmax='10' \
+    --detector_90wc.nw='100' \
+    --detector_90wc.yheight='0.385' \
+    --detector_90wc.xwidth='0.770' \
+    --geometer.detector_90wc='relative((-2, 0.00000, 0.00000), to="sample"),relative((0.00000, 90, 0.00000), to="sample")' \
+    --detector_90tt.title='detector_l90tt' \
+    --detector_90tt.filename='detector_l90tt.h5' \
+    --detector_90tt.tmin='0' \
+    --detector_90tt.tmax='1' \
+    --detector_90tt.nt='100' \
+    --detector_90tt.yheight='0.385' \
+    --detector_90tt.xwidth='0.770' \
+    --geometer.detector_90tt='relative((-1.959, 0.403, 0.00000), to="sample"),relative((0.00000, 90, 0.00000), to="sample")' \
+    --detector_90wt.title='detector_l90wt' \
+    --detector_90wt.filename='detector_l90wt.h5' \
+    --detector_90wt.wmin='0' \
+    --detector_90wt.wmax='10' \
+    --detector_90wt.nw='100' \
+    --detector_90wt.yheight='0.385' \
+    --detector_90wt.xwidth='0.770' \
+    --geometer.detector_90wt='relative((-1.959, 0.403, 0.00000), to="sample"),relative((0.00000, 90, 0.00000), to="sample")' \
+    --detector_90tb.title='detector_l90tb' \
+    --detector_90tb.filename='detector_l90tb.h5' \
+    --detector_90tb.tmin='0' \
+    --detector_90tb.tmax='1' \
+    --detector_90tb.nt='100' \
+    --detector_90tb.yheight='0.385' \
+    --detector_90tb.xwidth='0.770' \
+    --geometer.detector_90tb='relative((-1.959, -0.403, 0.00000), to="sample"),relative((0.00000, 90, 0.00000), to="sample")' \
+    --detector_90wb.title='detector_l90wb' \
+    --detector_90wb.filename='detector_l90wb.h5' \
+    --detector_90wb.wmin='0' \
+    --detector_90wb.wmax='10' \
+    --detector_90wb.nw='100' \
+    --detector_90wb.yheight='0.385' \
+    --detector_90wb.xwidth='0.770' \
+    --geometer.detector_90wb='relative((-1.959, -0.403, 0.00000), to="sample"),relative((0.00000, 90, 0.00000), to="sample")' \
+

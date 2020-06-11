@@ -1,0 +1,113 @@
+/* Start API */
+#apisBlock header.groupTitle .title { margin-top:0; background-image:none; }
+
+#apisBlock .api .prop:nth-of-type(2n+1),
+#apisBlock .api .prop:nth-of-type(2n+1) { background-color:#EDF3FE; }
+
+.api aside .apiParamsBlock .title { margin:5px; }
+.api aside .apiParamsBlock { margin-bottom:20px; }
+.api aside .apiParamsBlock:last-of-type { margin-bottom:0; }
+.api aside .apiParamsBlock .paramsList { padding:0 10px; }
+.api .paramsList .details { margin:0 20px 10px; }
+.js.api .paramsList .details { display:none; }
+.js.api .paramsList .details.expanded { padding-top:10px; display:block; }
+.api .paramsList .details .acceptedValues { margin-top:5px; margin-bottom:10px; display:block; }
+.api aside .paramsList .name { margin-top:15px; padding-left:15px; background-position:0 50%; background-repeat:no-repeat; background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAALCAYAAACtWacbAAAAoUlEQVQY02OYt2QDz+v3nxjwYYYFyzYtAyqcA8RyOBVt2n7wHlDBfyD+BcSTgVgUm6L7UEUw/AWIu4BYCJ8iGP4IxHUgN+NT9H/Fup0PV2/YbYtV0ZpNe/5fvXX/P9Cqw0BsjKJo1fpd/y9evQ2SPA/EHihuWrZm+/8zF2/8f/Xu4w2gYDiG7y7fuLfzxZv3T4GcNCBmxhpOQMISiDnxhTgApM0cgWTlijgAAAAASUVORK5CYII="); }
+.api aside .paramsList .name.expanded { background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAKCAYAAABmBXS+AAAAq0lEQVQY02OYt2TDHCD+jwfPZ7j/+PmyBcs2YVUAEr/76NkqhtfvP0kfOHr2DzZF+w6f/gOUlwMpYnj07NXURSs2oygA8e8/eTEXJA9WBMRCh09c+Ims6MCxcz+B4hLIihievHjTvnjlVrCCxSu2/AeaPgkmB1cExDzHz1z+ClJ05OSF7yDTsSlieP76femaTXv+A01tQRZHUQTEbM9ev7sIMhWfIgZ0BSAMALMxCJgNICGxAAAAAElFTkSuQmCC"); }
+.api aside .paramsList .operators { margin-left:20px; }
+
+#apiParamsSection { padding-bottom:20px; }
+#apisBlock .api.secured { background-repeat:no-repeat; background-position:-2px 25px; /*background-image:none;*/ } 
+#apisBlock > header { display:none; }
+#apisBlock .apis { display:none; padding:20px 10px; }
+#apisBlock .method { min-width:76px; margin-right:20px; display:inline-block; font-size:20px; font-weight:normal; vertical-align:middle; }
+#apisBlock .uri { font-size:20px; font-weight:bold; /*text-transform:lowercase;*/ vertical-align:middle; }
+#apisBlock .mandatory { color:#aaa; } 
+#apisBlock .props { margin:20px 0; }
+#apisBlock .prop { padding:10px 0; }
+#apisBlock .prop .key { width:100px; display:inline-block; text-transform:capitalize; color:#A7A7A7; vertical-align:top; }
+#apisBlock .prop .values { width:100%; display:inline-block; vertical-align:top; word-wrap:break-word; }
+#apisBlock .prop .values .or { margin-left:-10px; padding:3px 0 3px; position:relative; color:red; }
+#apisBlock .prop .samples { display:block; }
+#apisBlock .samplesURI a { display:block; }
+#apisBlock .expectedInputData .required:after { margin-left:2px; display:inline; content:'*'; color:red; }
+#apisBlock .expectedInputData dt,
+#apisBlock .possibleErrors dt { width:40%; display:inline-block; }
+#apisBlock .expectedInputData dd,
+#apisBlock .possibleErrors dd { width:59%; display:inline-block; vertical-align:top; }
+#apisBlock .title { display:inline-block; padding-right:20px; background-repeat:no-repeat; background-position:100% 50%; vertical-align:middle; }
+#apisBlock header .title { margin-top:10px; padding-left:10px; color:#fff; text-shadow:1px 1px 0 rgba(0, 0, 0, .5); font-size:14px; text-transform:uppercase; }
+#apisBlock .apiGroupBlock.active .apis { display:block; }
+
+
+
+.apiGroupBlock .groupTitle,
+#apisBlock .api .title { position:relative; }
+.apiGroupBlock .groupTitle { border-left:10px solid; }
+.apiGroupBlock.notready .groupTitle { border-left-color:red; }
+.apiGroupBlock.pending .groupTitle { border-left-color:orange; }
+.apiGroupBlock.almost .groupTitle { border-left-color:yellow; }
+.apiGroupBlock.ready .groupTitle { border-left-color:green; }
+.api .title:before { display:inline-block; position:absolute; left:0; top:0; bottom:0; content:''; background-color:transparent; vertical-align:middle; }
+.api.notready .title:before { background-color:red; }
+.api.pending .title:before { background-color:orange; }
+.api.almost .title:before { background-color:yellow; }
+.api.ready .title:before { background-color:green; }
+
+
+.apiGroupBlock .groupTitle:before { width:5px; min-height:20px; }
+
+#apisBlock .api .title {  }
+#apisBlock .api .title:before { width:12px; height:12px; margin-right:10px; position:static; border-radius:6px; }
+
+
+.resourceAPIBlock {  }
+.resourceAPIBlock h4 { font-size:100%; }
+.resourceAPIBlock .method { margin-right:10px; }
+.resourceAPIBlock .resourceURI { display:inline-block; font-weight:bold; }
+.resourceAPIBlock .summary { display:block; }
+.resourceAPIBlock .expectedInputData dl { margin-bottom:0; display:inline-block; vertical-align:top; }
+.resourceAPIBlock .possibleErrors dl { max-width:380px; vertical-align:top; }
+.resourceAPIBlock .possibleErrors dt,
+.resourceAPIBlock .possibleErrors dd { display:inline-block; vertical-align:top; }
+.resourceAPIBlock .possibleErrors dt { width:40%; clear:both; }
+.resourceAPIBlock .possibleErrors dd { width:58%; } 
+.resourceAPIBlock li { margin-bottom:0.5em; padding-top:10px; }
+.resourceAPIBlock .prop { margin:0 0 0 30px; padding:2px 0; border-bottom:1px dashed #ddd; color:#7F7F7F; }
+.resourceAPIBlock .prop > .key { width:120px; display:inline-block; font-weight:bold; vertical-align:top; text-transform:capitalize; }
+.resourceAPIBlock .prop > .val { max-width:450px; margin-bottom:0; display:inline-block; }
+.resourceAPIBlock .sampleURI a { display:block; color:#7F7F7F; }
+#apiBox .resourceAPIBlock { margin:0; padding:0; border:1px solid black; border-top:0; }
+#apiBox .resourceAPIBlock:first-of-type,
+#apiBox .resourceAPIBlock.first { border-top:1px solid; }
+#apiBox .resourceAPIBlock h3 { margin-bottom:0; padding:5px 10px; background:gray; }
+#apiBox .resourceAPIBlock h3:before { width:12px; margin-right:10px; padding:2px; display:inline-block; content:'+'; background:white; color:black; text-align:center; }
+#apiBox .resourceAPIBlock h3[class*=ui-state-active]:before { content:'-'; }
+#apiBox .commonParams dl { margin:0 10px 20px; }
+#apiBox .commonParams dt { display:inline-block; clear:left; vertical-align:top; font-size:109%; font-weight:bold; }
+#apiBox .commonParams dd { padding:0 10px; display:inline-block; vertical-align:top; }
+
+.apiDataSection .titleBlock { display:none; }
+.apiDataSection .line {}
+
+/* End API */
+
+
+/* 1024 x 768 */
+@media handheld, only screen and (min-width:980px) 
+{
+	.api #aside { border-right:0; border-width:0 0 0 1px; -webkitbox-shadow:1px 0 0 rgba(255,255,255,0.8) inset; box-shadow:1px 0 0 rgba(255,255,255,0.8) inset; }
+	
+	.api #aside { position:relative; z-index:100; box-shadow:-3px 0 6px rgba(0,0, 0,0.2); }
+	
+	/* Api */
+	#apisBlock .apis { padding-left:20px; padding-right:20px; }
+	#apisBlock .props { margin:20px; }
+	#apisBlock .prop .values { width:450px; }
+}
+
+/* 1280 x 1024 */
+@media screen and (min-width:1240px) 
+{	
+	#apisBlock .prop .values { width:640px; }
+}

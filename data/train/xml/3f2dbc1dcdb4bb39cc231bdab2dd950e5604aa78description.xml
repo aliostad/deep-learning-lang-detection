@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root
+    configId="DEVICE_DESCRIPTION_CONFIG_NUMBER"
+    xmlns="urn:schemas-upnp-org:device-1-0" >
+    <specVersion>
+        <major>
+ 1         
+        </major>
+        <minor>
+ 1         
+        </minor>
+    </specVersion>
+    <device>
+        <deviceType>
+ "urn:schemas-upnp-org:device:deviceType:Restaurant"        
+        </deviceType>
+        <iconList>
+            <icon>
+                <mimetype>
+image/jpeg                
+                </mimetype>
+                <width>
+48                
+                </width>
+                <height>
+48                
+                </height>
+                <depth>
+24                
+                </depth>
+                <url>
+/Logo.jpg                
+                </url>
+            </icon>
+        </iconList>
+        <serviceList>
+            <service>
+                <serviceType>
+urn:schemas-upnp-org:service:Menu                
+                </serviceType>
+                <serviceId>
+"urn:upnp-org:serviceId:Menu"                
+                </serviceId>
+                <SCPDURL>
+/service/menu/menu.xml                
+                </SCPDURL>
+                <controlURL>
+/service/menu/control                
+                </controlURL>
+                <eventSubURL>
+/service/menu/eventSub                
+                </eventSubURL>
+            </service>
+            <service>
+                <serviceType>
+urn:schemas-upnp-org:service:Bill                
+                </serviceType>
+                <serviceId>
+"urn:upnp-org:serviceId:Bill"                
+                </serviceId>
+                <SCPDURL>
+/service/bill/bill.xml                
+                </SCPDURL>
+                <controlURL>
+/service/bill/control                
+                </controlURL>
+                <eventSubURL>
+/service/bill/eventSub                
+                </eventSubURL>
+            </service>
+            <service>
+                <serviceType>
+urn:schemas-upnp-org:service:Table                
+                </serviceType>
+                <serviceId>
+"urn:upnp-org:serviceId:Table"                
+                </serviceId>
+                <SCPDURL>
+/service/table/table.xml                
+                </SCPDURL>
+                <controlURL>
+/service/table/control                
+                </controlURL>
+                <eventSubURL>
+/service/table/eventSub                
+                </eventSubURL>
+            </service>
+            <service>
+                <serviceType>
+urn:schemas-upnp-org:service:Chat                
+                </serviceType>
+                <serviceId>
+"urn:upnp-org:serviceId:Chat"                
+                </serviceId>
+                <SCPDURL>
+/service/chat/chat.xml                
+                </SCPDURL>
+                <controlURL>
+/service/chat/control                
+                </controlURL>
+                <eventSubURL>
+/service/chat/eventSub                
+                </eventSubURL>
+            </service>
+        </serviceList>
+    </device>
+</root>

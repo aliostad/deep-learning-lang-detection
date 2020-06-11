@@ -1,0 +1,19 @@
+[lpage::head Administration "Delete License Key"]
+<p>
+Are you sure you really want to delete this license key?
+This will remove the licenses from the system.
+<p>
+[
+    set _ ""
+    foreach k [ncgi::value key] {
+	append _ "<form action=/srvr/deletelicense method=post>\n"
+	append _ "<input type=hidden name=key value='$k'>\n"
+	append _ "$k [lserver::keyinfo $k] <input type=submit name=delete value='Delete it!'>\n"
+	append _ " <input type=submit name=cancel value='Cancel'>\n"
+	append _ "</form><p>\n"
+    }
+    set _
+]
+
+[lpage::footer]
+

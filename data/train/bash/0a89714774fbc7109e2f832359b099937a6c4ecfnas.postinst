@@ -1,0 +1,66 @@
+#!/bin/sh -e
+
+CONF=/etc/nas/nasd.conf
+CONFEG=/usr/share/nas/nasd.conf.eg
+
+# Source debconf library.
+. /usr/share/debconf/confmodule
+db_version 2.0
+
+set_var ()
+{
+	if [ ! -f $CONF ] ; then
+		cp $CONFEG $CONF
+	fi
+
+	NAME=$1
+	VALUE=$2
+
+#	echo "Setting $NAME to $VALUE" >/dev/stderr
+
+	sed "s/^[[:space:]\#]*$NAME.*/$NAME \"$VALUE\"/g" $CONF >$CONF.tmp
+	mv $CONF.tmp $CONF
+}
+
+case "$1" in
+	configure)
+
+		# Install us in init.d
+		update-rc.d nas defaults >/dev/null
+
+		# Grab config stuff from debconf
+		db_get nas/relinquish
+		if [ "$RET" = "true" ] ; then
+			set_var ReleaseDevice yes
+		else
+			set_var ReleaseDevice no
+		fi
+
+		db_get nas/mixer
+		if [ "$RET" = "true" ] ; then
+			set_var MixerInit yes
+		else
+			set_var MixerInit no
+		fi
+
+		# Start up NAS
+        if which invoke-rc.d >/dev/null 2>&1; then
+            invoke-rc.d nas start
+        else
+            /etc/init.d/nas start
+        fi
+
+		db_stop
+	;;
+	
+	abort-upgrade|abort-remove|abort-deconfigure)
+
+		# Restart NAS
+        if which invoke-rc.d >/dev/null 2>&1; then
+            invoke-rc.d nas start
+        else
+            /etc/init.d/nas start
+        fi
+	;;
+
+esac

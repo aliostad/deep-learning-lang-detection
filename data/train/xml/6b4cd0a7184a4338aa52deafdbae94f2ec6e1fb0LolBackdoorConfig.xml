@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<games>
+  <game name="LeagueOfLegends">
+    <api-key>c72a88f1-2815-4851-b119-1d25d992dd44</api-key>
+    <servers>
+      <server region="BR">
+        <endpoint>br.api.pvp.net</endpoint>
+        <apis>
+          <api name="Champion">
+            <version>1.2</version>
+          </api>
+          <api name="Game">
+            <version>1.3</version>
+          </api>
+          <api name="League">
+            <version>2.5</version>
+          </api>
+          <api name="StaticData">
+            <version>1.2</version>
+          </api>
+          <api name="Status">
+            <version>1.0</version>
+          </api>
+          <api name="Match">
+            <version>2.2</version>
+          </api>
+          <api name="MatchHistory">
+            <version>2.2</version>
+          </api>
+          <api name="Stats">
+            <version>1.3</version>
+          </api>
+          <api name="Summoner">
+            <version>1.4</version>
+          </api>
+          <api name="Team">
+            <version>2.4</version>
+          </api>
+        </apis>
+      </server>
+      <server region="EUNE">
+        <endpoint>eune.api.pvp.net</endpoint>
+        <apis>
+          <api name="Champion">
+            <version>1.2</version>
+          </api>
+          <api name="Game">
+            <version>1.3</version>
+          </api>
+          <api name="League">
+            <version>2.5</version>
+          </api>
+          <api name="StaticData">
+            <version>1.2</version>
+          </api>
+          <api name="Status">
+            <version>1.0</version>
+          </api>
+          <api name="Match">
+            <version>2.2</version>
+          </api>
+          <api name="MatchHistory">
+            <version>2.2</version>
+          </api>
+          <api name="Stats">
+            <version>1.3</version>
+          </api>
+          <api name="Summoner">
+            <version>1.4</version>
+          </api>
+          <api name="Team">
+            <version>2.4</version>
+          </api>
+        </apis>
+      </server>
+      <server region="EUW">
+        <endpoint>euw.api.pvp.net</endpoint>
+        <apis>
+          <api name="Champion">
+            <version>1.2</version>
+          </api>
+          <api name="Game">
+            <version>1.3</version>
+          </api>
+          <api name="League">
+            <version>2.5</version>
+          </api>
+          <api name="StaticData">
+            <version>1.2</version>
+          </api>
+          <api name="Status">
+            <version>1.0</version>
+          </api>
+          <api name="Match">
+            <version>2.2</version>
+          </api>
+          <api name="MatchHistory">
+            <version>2.2</version>
+          </api>
+          <api name="Stats">
+            <version>1.3</version>
+          </api>
+          <api name="Summoner">
+            <version>1.4</version>
+          </api>
+          <api name="Team">
+            <version>2.4</version>
+          </api>
+        </apis>
+      </server>
+      <server region="KR">
+        <endpoint>kr.api.pvp.net</endpoint>
+        <apis>
+          <api name="Champion">
+            <version>1.2</version>
+          </api>
+          <api name="Game">
+            <version>1.3</version>
+          </api>
+          <api name="League">
+            <version>2.5</version>
+          </api>
+          <api name="StaticData">
+            <version>1.2</version>
+          </api>
+          <api name="Status">
+            <version>1.0</version>
+          </api>
+          <api name="Match">
+            <version>2.2</version>
+          </api>
+          <api name="MatchHistory">
+            <version>2.2</version>
+          </api>
+          <api name="Stats">
+            <version>1.3</version>
+          </api>
+          <api name="Summoner">
+            <version>1.4</version>
+          </api>
+          <api name="Team">
+            <version>2.4</version>
+          </api>
+        </apis>
+      </server>
+      <server region="LAS">
+        <endpoint>las.api.pvp.net</endpoint>
+        <apis>
+          <api name="Champion">
+            <version>1.2</version>
+          </api>
+          <api name="Game">
+            <version>1.3</version>
+          </api>
+          <api name="League">
+            <version>2.5</version>
+          </api>
+          <api name="StaticData">
+            <version>1.2</version>
+          </api>
+          <api name="Status">
+            <version>1.0</version>
+          </api>
+          <api name="Match">
+            <version>2.2</version>
+          </api>
+          <api name="MatchHistory">
+            <version>2.2</version>
+          </api>
+          <api name="Stats">
+            <version>1.3</version>
+          </api>
+          <api name="Summoner">
+            <version>1.4</version>
+          </api>
+          <api name="Team">
+            <version>2.4</version>
+          </api>
+        </apis>
+      </server>
+      <server region="LAN">
+        <endpoint>LAN.api.pvp.net</endpoint>
+        <apis>
+          <api name="Champion">
+            <version>1.2</version>
+          </api>
+          <api name="Game">
+            <version>1.3</version>
+          </api>
+          <api name="League">
+            <version>2.5</version>
+          </api>
+          <api name="StaticData">
+            <version>1.2</version>
+          </api>
+          <api name="Status">
+            <version>1.0</version>
+          </api>
+          <api name="Match">
+            <version>2.2</version>
+          </api>
+          <api name="MatchHistory">
+            <version>2.2</version>
+          </api>
+          <api name="Stats">
+            <version>1.3</version>
+          </api>
+          <api name="Summoner">
+            <version>1.4</version>
+          </api>
+          <api name="Team">
+            <version>2.4</version>
+          </api>
+        </apis>
+      </server>
+      <server region="NA">
+        <endpoint>na.api.pvp.net</endpoint>
+        <apis>
+          <api name="Champion">
+            <version>1.2</version>
+          </api>
+          <api name="Game">
+            <version>1.3</version>
+          </api>
+          <api name="League">
+            <version>2.5</version>
+          </api>
+          <api name="StaticData">
+            <version>1.2</version>
+          </api>
+          <api name="Status">
+            <version>1.0</version>
+          </api>
+          <api name="Match">
+            <version>2.2</version>
+          </api>
+          <api name="MatchHistory">
+            <version>2.2</version>
+          </api>
+          <api name="Stats">
+            <version>1.3</version>
+          </api>
+          <api name="Summoner">
+            <version>1.4</version>
+          </api>
+          <api name="Team">
+            <version>2.4</version>
+          </api>
+        </apis>
+      </server>
+      <server region="OCE">
+        <endpoint>oce.api.pvp.net</endpoint>
+        <apis>
+          <api name="Champion">
+            <version>1.2</version>
+          </api>
+          <api name="Game">
+            <version>1.3</version>
+          </api>
+          <api name="League">
+            <version>2.5</version>
+          </api>
+          <api name="StaticData">
+            <version>1.2</version>
+          </api>
+          <api name="Status">
+            <version>1.0</version>
+          </api>
+          <api name="Match">
+            <version>2.2</version>
+          </api>
+          <api name="MatchHistory">
+            <version>2.2</version>
+          </api>
+          <api name="Stats">
+            <version>1.3</version>
+          </api>
+          <api name="Summoner">
+            <version>1.4</version>
+          </api>
+          <api name="Team">
+            <version>2.4</version>
+          </api>
+        </apis>
+      </server>
+      <server region="TR">
+        <endpoint>tr.api.pvp.net</endpoint>
+        <apis>
+          <api name="Champion">
+            <version>1.2</version>
+          </api>
+          <api name="Game">
+            <version>1.3</version>
+          </api>
+          <api name="League">
+            <version>2.5</version>
+          </api>
+          <api name="StaticData">
+            <version>1.2</version>
+          </api>
+          <api name="Status">
+            <version>1.0</version>
+          </api>
+          <api name="Match">
+            <version>2.2</version>
+          </api>
+          <api name="MatchHistory">
+            <version>2.2</version>
+          </api>
+          <api name="Stats">
+            <version>1.3</version>
+          </api>
+          <api name="Summoner">
+            <version>1.4</version>
+          </api>
+          <api name="Team">
+            <version>2.4</version>
+          </api>
+        </apis>
+      </server>
+      <server region="RU">
+        <endpoint>ru.api.pvp.net</endpoint>
+        <apis>
+          <api name="Champion">
+            <version>1.2</version>
+          </api>
+          <api name="Game">
+            <version>1.3</version>
+          </api>
+          <api name="League">
+            <version>2.5</version>
+          </api>
+          <api name="StaticData">
+            <version>1.2</version>
+          </api>
+          <api name="Status">
+            <version>1.0</version>
+          </api>
+          <api name="Match">
+            <version>2.2</version>
+          </api>
+          <api name="MatchHistory">
+            <version>2.2</version>
+          </api>
+          <api name="Stats">
+            <version>1.3</version>
+          </api>
+          <api name="Summoner">
+            <version>1.4</version>
+          </api>
+          <api name="Team">
+            <version>2.4</version>
+          </api>
+        </apis>
+      </server>
+    </servers>
+  </game>
+</games>
+

@@ -1,0 +1,119 @@
+#!/bin/sh -e
+# postinst for naro-init
+
+action="$1"
+oldversion="$2"
+
+if [ "$action" != configure ]; then
+  exit 0
+fi
+
+if [ -x /etc/init.d/naro-roscore ]; then
+  update-rc.d naro-roscore start 80 2 3 4 5 . stop 20 0 1 6 . > /dev/null
+  if [ -x /usr/sbin/invoke-rc.d ]; then
+    invoke-rc.d naro-roscore restart
+  else
+    /etc/init.d/naro-roscore restart
+  fi
+fi
+
+if [ -x /etc/init.d/naro-smc-server ]; then
+  update-rc.d naro-smc-server start 90 2 3 4 5 . stop 10 0 1 6 . > /dev/null
+  if [ -x /usr/sbin/invoke-rc.d ]; then
+    invoke-rc.d naro-smc-server restart
+  else
+    /etc/init.d/naro-smc-server restart
+  fi
+fi
+
+if [ -x /etc/init.d/naro-usc-server ]; then
+  update-rc.d naro-usc-server start 90 2 3 4 5 . stop 10 0 1 6 . > /dev/null
+  if [ -x /usr/sbin/invoke-rc.d ]; then
+    invoke-rc.d naro-usc-server restart
+  else
+    /etc/init.d/naro-usc-server restart
+  fi
+fi
+
+if [ -x /etc/init.d/naro-blinkm-server ]; then
+  update-rc.d naro-blinkm-server start 90 2 3 4 5 . stop 10 0 1 6 . > /dev/null
+  if [ -x /usr/sbin/invoke-rc.d ]; then
+    invoke-rc.d naro-blinkm-server restart
+  else
+    /etc/init.d/naro-blinkm-server restart
+  fi
+fi
+
+if [ -x /etc/init.d/naro-depth-sensor ]; then
+  update-rc.d naro-depth-sensor start 91 2 3 4 5 . stop 9 0 1 6 . > /dev/null
+  if [ -x /usr/sbin/invoke-rc.d ]; then
+    invoke-rc.d naro-depth-sensor restart
+  else
+    /etc/init.d/naro-depth-sensor restart
+  fi
+fi
+
+if [ -x /etc/init.d/naro-fin-controller ]; then
+  update-rc.d naro-fin-controller start 95 2 3 4 5 . stop 5 0 1 6 . > /dev/null
+  if [ -x /usr/sbin/invoke-rc.d ]; then
+    invoke-rc.d naro-fin-controller restart
+  else
+    /etc/init.d/naro-fin-controller restart
+  fi
+fi
+
+if [ -x /etc/init.d/naro-dive-controller ]; then
+  update-rc.d naro-dive-controller start 95 2 3 4 5 . stop 5 0 1 6 . > /dev/null
+  if [ -x /usr/sbin/invoke-rc.d ]; then
+    invoke-rc.d naro-dive-controller restart
+  else
+    /etc/init.d/naro-dive-controller restart
+  fi
+fi
+
+if [ -x /etc/init.d/naro-led-controller ]; then
+  update-rc.d naro-led-controller start 95 2 3 4 5 . stop 5 0 1 6 . > /dev/null
+  if [ -x /usr/sbin/invoke-rc.d ]; then
+    invoke-rc.d naro-led-controller restart
+  else
+    /etc/init.d/naro-led-controller restart
+  fi
+fi
+
+if [ -x /etc/init.d/naro-joy-command ]; then
+  update-rc.d naro-joy-command start 96 2 3 4 5 . stop 5 0 1 6 . > /dev/null
+  if [ -x /usr/sbin/invoke-rc.d ]; then
+    invoke-rc.d naro-joy-command restart
+  else
+    /etc/init.d/naro-joy-command restart
+  fi
+fi
+
+if [ -x /etc/init.d/naro-system-monitors ]; then
+  update-rc.d naro-system-monitors start 98 2 3 4 5 . stop 2 0 1 6 . > /dev/null
+  if [ -x /usr/sbin/invoke-rc.d ]; then
+    invoke-rc.d naro-system-monitors restart
+  else
+    /etc/init.d/naro-system-monitors restart
+  fi
+fi
+
+if [ -x /etc/init.d/naro-diagnostic-aggregator ]; then
+  update-rc.d naro-diagnostic-aggregator start 99 2 3 4 5 . stop 1 0 1 6 . > /dev/null
+  if [ -x /usr/sbin/invoke-rc.d ]; then
+    invoke-rc.d naro-diagnostic-aggregator restart
+  else
+    /etc/init.d/naro-diagnostic-aggregator restart
+  fi
+fi
+
+if [ -x /etc/init.d/naro-joy-control ]; then
+  update-rc.d naro-joy-control start 99 2 3 4 5 . stop 1 0 1 6 . > /dev/null
+  if [ -x /usr/sbin/invoke-rc.d ]; then
+    invoke-rc.d naro-joy-control restart
+  else
+    /etc/init.d/naro-joy-control restart
+  fi
+fi
+
+exit 0

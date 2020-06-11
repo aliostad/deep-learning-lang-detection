@@ -1,0 +1,82 @@
+/* STUDENTS: Take note of the differences 
+   in the file directories of PreDeploy and ReadyToDeploy. */
+/* 
+
+Each of these CSS elements is associated with an HTML Element, Class, or ID.
+Flip between this CSS file and the HTML to see how things line up. 
+Experiment with deleting lines of code from the CSS to see how it affects the web page when you refresh in the browser.
+
+*/
+
+body {
+  
+  /* Positioning */
+  margin: 0;
+
+  /* Box-model */
+  padding: 0;
+
+  /* Typography */
+  font-size: 18px;
+  line-height: 150%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #333333;
+
+  /* Visual */
+  background: #efeee7;
+
+}
+
+header { background: #d21034; }
+
+h1 {
+  
+  /* Positioning */
+  margin-bottom: 20px;
+  margin: 0;
+
+  /* Box-model */
+  padding: 20px 0;
+
+  /* Typography */
+  color: #eee;
+  font-size: 28px;
+  text-align: center;
+  
+  /* Visual */
+  background: #333333;
+  
+}
+
+h2 { font-size: 24px; }
+
+a { color: #d21034; }
+
+.container {
+
+  /* Positioning */
+  margin: 0 auto;
+
+  /* Box-model */
+  width: 1024px;
+  
+}
+
+#main-bio,
+#contact-info,
+#bio-image { float: left; }
+
+#main-bio { width: 70%; }
+
+#contact-info { width: 30%; }
+
+#bio-image {
+
+  /* Positioning */
+  margin-right: 20px;
+
+   /* Box-model */
+  width: 200px;
+  height: 200px;
+  
+}

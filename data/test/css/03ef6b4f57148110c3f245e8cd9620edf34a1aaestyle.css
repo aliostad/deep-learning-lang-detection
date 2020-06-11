@@ -1,0 +1,135 @@
+.clearfix:after {
+	content: "";
+	display: block;
+	overflow: hidden;
+	clear: both;
+}
+
+.nav {
+  background-color:rgb(255,100,100);
+  padding:10px 0;
+}
+.nav .nav__menu {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+.nav .nav__menu .nav__item {
+    display: inline-block;
+    position:relative;
+}
+
+.nav .nav__item .nav__menu {
+    background-color:rgb(225,75,75);
+    position:absolute;
+    left:0;
+    top:40px;
+    width:200px;
+}
+.nav .nav__item .nav__item {
+    position:relative;
+    margin:0;
+    display:block;
+}
+.nav .nav__item .nav__item .nav__menu {
+    position:absolute;
+    top:0;
+    left:200px;
+    margin:0;
+}
+
+.nav .nav__link {
+    line-height:40px;
+    padding:0 12px;
+    margin:0 12px;
+}
+.nav .nav__link {
+    color:#fff;
+    text-decoration:none;
+    display:block;
+}
+.nav .nav__link:hover,
+.nav .nav__link:focus,
+.nav .nav__link:active {
+    color:rgb(50,50,50);
+}
+
+.nav .nav__item .nav__item .nav__link {
+    border-bottom:solid 1px rgb(200,50,50);
+    margin:0 10px;
+    padding:0;
+}
+.nav .nav__item .nav__item:last-child .nav__link {
+    border-bottom:none;
+}
+
+.nav .nav__item.dropdown > .nav__link {
+    background-image:url('../img/arrow-down.png');
+    background-position:right 20px;
+    background-repeat:no-repeat;
+}
+
+.nav .nav__item .nav__item.dropdown > .nav__link {
+    background-image:url('../img/arrow-right.png');
+    background-position:right 16px;
+    background-repeat:no-repeat;
+}
+
+.nav__menu.sub-menu {
+    display:none;
+		z-index: 1;
+}
+
+.niceCheck {
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	cursor: pointer;
+	background: url(../img/checkbox.png);
+	overflow: hidden;
+	position: relative;
+	top: 3px;
+}
+.niceChecked {
+	background-position: 0 -17px;
+}
+.niceCheck input {
+	margin-left: -100px;
+}
+
+.jQueryCheck {
+	margin-left: 855px;
+}
+.niceCheckDisabled {
+	background-image: url(../img/checkbox-disabled.png);
+}
+
+.input[type=checkbox] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+.label {
+	margin-left: 20px;
+	cursor: pointer;
+}
+.label:after {
+	content: " ";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url(../img/checkbox.png);
+	position: relative;
+	top: 3px;
+	margin-left: 4px;
+}
+.input[type=checkbox]:checked + .label:after {
+background-position: 0 -17px;
+}
+#disabled:after {
+	background-image: url(../img/checkbox-disabled.png);
+	background-position: 0 -17px;
+}
+
+.jQueryCheck {
+	float: left;
+}

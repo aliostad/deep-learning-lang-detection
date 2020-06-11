@@ -1,0 +1,55 @@
+.qodef-import-page-holder .qodef-import-button-wrapper {
+	padding: 20px 0;
+}
+
+.qodef-import-page-holder #import_demo_data {
+	margin-bottom: 20px;
+}
+
+.qodef-import-page-holder .alert {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.qodef-import-page-holder .import_load {
+	font-style: italic;
+	color: #a2a9af;
+}
+
+.qodef-import-page-holder .import_load progress {
+	background-color: #f3f3f3;
+	border: 0;
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.qodef-import-page-holder .import_load progress::-webkit-progress-bar {
+	background-color: #f3f3f3;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.qodef-import-page-holder .import_load progress::-webkit-progress-value {
+	background: #3093c7;
+}
+.qodef-import-page-holder .import_load progress::-moz-progress-bar {
+	background: #3093c7;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.qodef-import-page-holder .import_load .alert-success {
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+
+.qodef-import-page-holder .btn.btn-primary,
+.qodef-import-page-holder .btn.btn-primary:hover,
+.qodef-import-page-holder .btn.btn-primary:focus {
+	background-color: #3093c7;
+	outline: none;
+	color: #fff;
+}

@@ -1,0 +1,247 @@
+@CHARSET "UTF-8";
+
+#wrapper{
+	width:1080px;
+	margin:0 auto;
+	
+}
+
+.top_area{
+	width:1080px;
+	height:170px;
+	margin-top:50px;
+}
+
+.top_area ul{
+	padding-left:0px;
+	margin-top:10px;
+	height:6px;
+}
+
+.top_area li{
+	
+	list-style:none;
+	float:left;
+	margin-right:10px;
+}
+
+.top_area p {
+	color:red;
+	font-weight:bold;
+}
+
+.top_area a{
+	color:black;
+	text-decoration:none;
+}
+.top_area a:hover {
+	color:white; 
+	text-decoration:none;
+	background-color:black;
+}
+
+
+
+.detail	_area{
+	width:1080px;
+	margin:0 auto;
+	display:block;	
+}
+
+.seq_area{
+	font-size:10px;
+	
+	width:1080px;
+	
+}
+
+.detail_table{
+	width:900px;
+	margin:0 auto;
+	display:block;
+	margin-top:49px;
+	
+}
+.detail_table tr.first_row{
+	height:20px;
+	border-bottom:1px solid #000;
+	width:900px;
+}
+
+.detail_table td.col_1{
+	padding-left:10px;
+	width:900px;
+	font-weight:bold;
+	font-size:14pt;	
+}
+.detail_table td.col_2{
+	width:900px;
+	padding-left:10px;	
+	font-size:9pt;
+	text-align:right;
+	padding-top:15px;
+}
+
+.detail_table td.col_3{
+	width:900px;
+	min-height:300px;
+	max-height:1500px;
+	padding-top:30px;
+}
+
+.detail_table td.col_4{
+	width:900px;
+	padding-left:10px;	
+	text-align:right;
+	padding-top:15px;
+}
+
+.detail_table td.col_5{
+	width:30px;
+}
+
+.detail_table td.col_file{
+	width:900px;
+	text-align:right;
+}
+
+.update_comp{
+    background-position:  0px 0px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 21px;
+    border: 0px;
+	cursor:pointer;
+ 	outline: 0;
+ 	background-color:#fff;
+ 	margin-left:25px;
+}
+
+.reply_area{
+	width:900px;
+	height:auto;
+	background-color:#f8f8f8;
+	margin:0 auto;
+	display:block;
+}
+
+.view_list{
+	width:900px;
+	margin:0 auto;
+	display:block;
+	text-align:right;
+	margin-bottom:50px;
+}
+
+.reply_table{
+	width:800px;
+	margin:0 auto;
+	display:block;
+}
+
+#listReply{
+	width:900px;
+	height:auto;
+}
+
+.col_top{
+	padding:10px;
+	font-weight:bold;
+	border-bottom:1px solid #999;
+	width:850px;
+}
+
+.deleted_reply{
+	height:50px;
+	padding:10px;
+	border-bottom:1px solid #999;
+}
+
+.reply_col_id{
+	width:800px;
+	padding-left:20px;
+}
+
+.reply_col_id img{
+	width:7px;
+}
+
+.reply_parent{
+	
+}
+
+.OriginContent{
+
+	border-bottom:1px solid #999;
+}
+
+.OriginContent p{
+	padding-left:20px;
+}
+
+.origin_content_para{
+	width:600px;
+}
+
+.upanddel_btn{
+	width:100px;
+	text-align:right;
+}
+
+
+
+
+/*댓글작성부분  */
+
+.reply_write_area{
+	width:800px;	
+	margin:0 auto;
+	display:block;
+	margin-bottom:30px;
+}
+
+.write_col1{
+	width:80px;
+	padding-left:20px;
+}
+.write_col2{
+	width:600px;
+	padding:10px;
+}
+
+.write_col2 textarea{
+	height:80px;
+}
+
+
+.write_col3{
+	width:100px;
+	text-align:right;	
+}
+
+.Comment{
+	border:none;
+}
+
+.write_col1_recommnet{
+	width:80px;
+	padding-left:20px;
+	border-bottom:1px solid #999;
+}
+.write_col2_recommnet{
+	width:600px;
+	padding:10px;
+	border-bottom:1px solid #999;
+}
+
+.write_col2_recommnet textarea{
+	height:80px;
+}
+
+.write_col3_recommnet{
+	width:100px;
+	text-align:right;
+	border-bottom:1px solid #999;
+	padding-top:20px;	
+}
+

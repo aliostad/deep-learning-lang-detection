@@ -1,0 +1,101 @@
+/*
+ * CSS for write_pretty_story,
+ * a writing program for writers who don't want
+ * to edit what they write.
+ */
+body {
+  font-family: "Gentium Book", constantia, palatino;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+h1 {
+  text-align:center;
+  font-size: 1.5em;
+}
+
+h1.story-title {
+  margin: 30px auto;
+  width: 30em;
+}
+
+#bd {
+  width: 30em;
+  margin: 10px auto;
+}
+
+#written-text p {
+  margin-bottom: 1.7em;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #333;
+  text-align: justify;
+}
+
+#writebox textarea {
+  width: 100%;
+  height: 100px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#writebox * {
+  margin: 0 auto;
+}
+
+#title-edit {
+  display: hidden;
+}
+
+#title-edit label {
+  font-size: 0.8em;
+}
+
+#title-edit input {
+  font-size: 1.5em;
+}
+
+/* When we request the title, show it
+ * like an overlay sort of
+ */
+#title-edit {
+  display: none;
+}
+
+#title-edit.requesting {
+  display: block;
+  width: 300px;
+  margin: 120px auto;
+}
+
+h1.app-title {
+  margin: 25px auto;
+}
+
+p.app-description {
+  margin: 14px auto;
+}
+
+#write-submit {
+  display: none;
+}
+
+ol {
+  list-style-type: armenian;
+  margin: 20px 0;
+}
+
+ol li {
+  margin: 2px 2em;
+}
+
+#word-count-p {
+  margin: 15px auto;
+  font-size: 10px;
+}

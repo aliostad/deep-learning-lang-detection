@@ -1,0 +1,45 @@
+#!/usr/bin/env sh
+
+include shopts
+
+if shopts_test -o monitor; then
+	SHOPTS_MONITOR_SAVE=()
+	SHOPTS_MONITOR_SAVE_COUNT=0
+
+
+	shopts_register monitor
+
+
+	function shopts_monitor_on {
+		shopt -s -o monitor
+	}
+
+
+	function shopts_monitor_off {
+		shopt -u -o monitor
+	}
+
+
+	function shopts_monitor_save {
+		SHOPTS_MONITOR_SAVE[SHOPTS_MONITOR_SAVE_COUNT++]=$(shopt -p -o monitor)
+	}
+
+
+	function shopts_monitor_restore {
+		if [[ SHOPTS_MONITOR_SAVE_COUNT -gt 0 ]]; then
+			eval "${SHOPTS_MONITOR_SAVE[--SHOPTS_MONITOR_SAVE_COUNT]}"
+			unset SHOPTS_MONITOR_SAVE\[SHOPTS_MONITOR_SAVE_COUNT\]
+		fi
+	}
+
+
+	function shopts_monitor_available {
+		true
+	}
+else
+	function shopts_monitor_on { false; }
+	function shopts_monitor_off { false; }
+	function shopts_monitor_save { false; }
+	function shopts_monitor_restore { false; }
+	function shopts_monitor_available { false; }
+fi

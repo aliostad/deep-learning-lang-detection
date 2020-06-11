@@ -1,0 +1,55 @@
+<about>
+    <message_0>Date</message_0>
+	<message_1>Client</message_1>
+	<message_2>Authors</message_2>
+	<message_3>url</message_3>
+	<message_4>github</message_4>
+</about>
+<AUDIO>
+    <title>Audio</title>
+    <message_0>Audio</message_0>
+    <message_1>Play</message_1>
+    <message_2>Paused</message_2>
+	<message_3>Volume</message_3>
+    <message_4>Speed</message_4>
+	<message_5>Position</message_5>
+</AUDIO>
+<OSC>
+    <title>OSC</title>
+    <message_0>Port</message_0>
+    <message_1>Host</message_1>
+    <message_2>Addres</message_2>
+</OSC>
+<RECORD>
+    <title>RECORD</title>
+    <message_0>File</message_0>
+	<message_1>Date</message_1>
+    <message_2>Artist</message_2>
+	<message_3>Set</message_3>
+    <message_4>Audio</message_4>
+	<message_5>Format</message_5>
+	<message_6>Side</message_6>
+	<message_7>String</message_7>
+    <message_8>Dialog</message_8>
+    <message_9>Image</message_9>
+</RECORD>
+<REALTAGRECORD>
+    <title>real XML Tags</title>
+    <message_0>file</message_0>
+	<message_1>DATE</message_1>
+    <message_2>artistName</message_2>
+	<message_3>setName</message_3>
+    <message_4>audio</message_4>
+	<message_5>format</message_5>
+	<message_6>side</message_6>
+	<message_7>string</message_7>
+    <message_8>dialogString</message_8>
+    <message_9>dialogImage</message_9>
+</REALTAGRECORD>
+<GETRECORD>
+    <title>get Record</title>
+    <message_0>Record</message_0>
+	<message_1>Phrases</message_1>
+	<message_2>Word</message_2>
+    <message_3>Rec End</message_3>
+</GETRECORD>

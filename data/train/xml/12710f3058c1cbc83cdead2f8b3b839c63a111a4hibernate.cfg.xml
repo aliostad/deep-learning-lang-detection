@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- Hibernate properties -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/test</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password"></property>
+
+		<!-- Mapping resources -->
+		  <!-- University Management App-->
+ 		<mapping resource="com/hoang/mapping/Clazz.hbm.xml"></mapping>
+		<mapping resource="com/hoang/mapping/Course.hbm.xml"></mapping>
+		<mapping resource="com/hoang/mapping/Department.hbm.xml"></mapping>
+		<mapping resource="com/hoang/mapping/Domain.hbm.xml"></mapping>
+		<mapping resource="com/hoang/mapping/Person.hbm.xml"></mapping>
+		<mapping resource="com/hoang/mapping/Role.hbm.xml"></mapping>
+		<mapping resource="com/hoang/mapping/University.hbm.xml"></mapping>
+		<mapping resource="com/hoang/mapping/User.hbm.xml"></mapping>
+
+		  <!-- eCommerce App-->
+		<mapping resource="com/hoang/mapping/Order.hbm.xml"></mapping>
+		<mapping resource="com/hoang/mapping/OrderLine.hbm.xml"></mapping>
+		<mapping resource="com/hoang/mapping/Product.hbm.xml"></mapping>				
+	</session-factory>
+</hibernate-configuration>

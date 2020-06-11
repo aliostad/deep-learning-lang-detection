@@ -1,0 +1,31 @@
+#!/bin/sh
+
+ARCH=$(dpkg-architecture -qDEB_BUILD_ARCH)
+LXC_CACHE_DIR="/var/cache/lxc/debian/rootfs-jessie-${ARCH}"
+
+ourInit() {
+if [ -x /usr/sbin/invoke-rc.d ] && [ ! "`readlink /usr/sbin/invoke-rc.d`" = /bin/true ] ; then
+  invoke-rc.d $1 $2
+else
+  /etc/init.d/$1 $2
+fi
+}
+
+# mkdir -p $LXC_CACHE_DIR
+# tar -C $LXC_CACHE_DIR -xaf /var/lib/untangle-lxc-client/rootfs-jessie-${ARCH}.tar.bz2
+
+cp -f /usr/share/untangle-lxc-client/default.conf /etc/lxc
+
+#if [ -x "/etc/init.d/untangle-lxc-client" ]; then
+#  update-rc.d untangle-lxc-client defaults >/dev/null # early on
+#  ourInit untangle-lxc-client restart
+#fi
+
+
+# delete old files
+rm -f /etc/network/interfaces.d/lxcbr0
+rm -rf /etc/untangle/lxc-client.d
+# disable - should not start automatically
+update-rc.d -f untangle-lxc-client disable
+
+exit 0

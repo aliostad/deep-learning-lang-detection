@@ -1,0 +1,39 @@
+/* center menu
+------------------------------------------------------------ */
+#nav .wrap {
+	margin-left: auto;
+	margin-right: auto;
+	display:table;
+	white-space:nowrap;
+}
+
+#nav{
+	text-align:center
+}
+
+.sub-menu {
+	text-align:left;
+}
+
+#nav ul{
+	list-style:none;
+	display:table-row;
+	white-space:nowrap;
+}
+
+#nav li{
+	display:table-cell;
+}
+
+#nav ul a{
+	display:block;
+}
+
+/* center menu for lt IE7
+------------------------------------------------------------ */
+#nav ul {*display:inline-block;}
+#nav ul{*display:inline; }
+#nav ul li{*display:inline-block}
+#nav ul li{*display:inline;}
+#nav ul a{*display:inline-block;}
+#nav{*text-align:center}

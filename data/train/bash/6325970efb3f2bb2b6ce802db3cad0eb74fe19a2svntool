@@ -1,0 +1,48 @@
+#!/bin/bash
+
+# -----------------------------------------------------------------------------
+#  Load libraries
+# -----------------------------------------------------------------------------
+
+ROOTDIR="$(echo "$(dirname $0)/../")"
+. "${ROOTDIR}/lib/loader.lib.sh"
+. "${ROOTDIR}/lib/scm.lib.sh"
+
+# -----------------------------------------------------------------------------
+#  Local functions
+# -----------------------------------------------------------------------------
+
+HELP_LIST () {
+  CLI_HEADER
+  MSG_INDENT_INC
+  MSG '= Repositories ='
+  MSG_INDENT_INC
+    MESSAGE 'repo copy <repo> <url> - copy a remote repository'
+    MESSAGE 'repo create <repo>     - create a new repositoriy'
+    MESSAGE 'repo delete <repo>     - delete an existing repositories'
+    MESSAGE 'repo info <repo>       - display information from a repository'
+    MESSAGE 'repo init <repo>       - initialize a specified repository'
+    MESSAGE 'repo list              - list all available repositories'
+  MSG_INDENT_DEC
+  BR
+  MSG_INDENT_DEC
+}
+
+# -----------------------------------------------------------------------------
+#  Do things
+# -----------------------------------------------------------------------------
+
+CLI_REGISTER_MENU     'repo'                   'Repository related commands'
+CLI_REGISTER_COMMAND  'repo copy <repo> <url>' 'REPOSITORY_COPY \1 \2'
+CLI_REGISTER_COMMAND  'repo create <repo>'     'REPOSITORY_CREATE \1'
+CLI_REGISTER_COMMAND  'repo delete <repo>'     'REPOSITORY_DELETE \1'
+CLI_REGISTER_COMMAND  'repo info <repo>'       'REPOSITORY_INFO \1'
+CLI_REGISTER_COMMAND  'repo init <repo>'       'REPOSITORY_INIT \1'
+CLI_REGISTER_COMMAND  'repo list'              'REPOSITORIES_LIST'
+CLI_REGISTER_KCOMMAND 'help'                   'HELP_LIST'
+
+CLI_SET_PROMPT "svntool"
+CLI_USE_READLINE --force --history-file ~/.svntool_history
+
+CLI_RUN_SVNTOOL $*
+

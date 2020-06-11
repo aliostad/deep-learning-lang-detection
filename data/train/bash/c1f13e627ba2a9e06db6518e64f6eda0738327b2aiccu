@@ -1,0 +1,19 @@
+#!/bin/sh
+# Restart aiccu if connection is down
+
+CONFIG=/etc/aiccu.conf
+BINARY=/usr/sbin/aiccu
+P6=/bin/ping6
+
+[ -x $BINARY ] || exit $NA
+[ -f $CONFIG ] || exit $NA
+
+# Restart aiccu if ping6 does not exist
+[ -x $P6 ] || invoke-rc.d aiccu restart
+
+# Get aiccu ipv6_interface
+INT=$(grep ^ipv6_interface $CONFIG | cut -d" " -f 2)
+
+# Ping f.root-servers.net (Internet Systems Consortium; distributed using anycast)
+# Restart aiccu if ping failed
+$P6 -I $INT -c 1 f.root-servers.net >/dev/null 2>&1 || invoke-rc.d aiccu restart

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+        <service id="gloomy.pager" class="Gloomy\PagerBundle\Service\PagerService" scope="request">
+            <argument type="service" id="request" />
+            <argument type="service" id="router" />
+            <argument type="service" id="doctrine.orm.entity_manager" />
+        </service>
+
+        <service id="gloomy.datagrid" class="Gloomy\PagerBundle\Service\DataGridService" scope="request">
+            <argument type="service" id="request" />
+            <argument type="service" id="router" />
+            <argument type="service" id="gloomy.pager" />
+        </service>
+
+        <service id="gloomy.crud" class="Gloomy\PagerBundle\Service\CrudService" scope="request">
+            <argument type="service" id="request" />
+            <argument type="service" id="router" />
+            <argument type="service" id="doctrine" />
+            <argument type="service" id="templating" />
+            <argument type="service" id="translator" />
+            <argument type="service" id="session" />
+            <argument type="service" id="gloomy.datagrid" />
+            <argument type="service" id="gloomy.form" />
+        </service>
+
+        <service id="gloomy.form" class="Gloomy\PagerBundle\Service\FormService" scope="request">
+            <argument type="service" id="form.factory" />
+            <argument type="service" id="request" />
+            <argument type="service" id="doctrine" />
+            <argument type="service" id="translator" />
+        </service>
+
+        <service id="gloomy.rest_connector.datatables" class="Gloomy\PagerBundle\Service\RESTConnectorService" scope="request">
+            <argument>DataTables</argument>
+            <argument type="service" id="request" />
+            <argument type="service" id="gloomy.pager" />
+        </service>
+
+        <service id="gloomy.rest_connector.jqgrid" class="Gloomy\PagerBundle\Service\RESTConnectorService" scope="request">
+            <argument>jqGrid</argument>
+            <argument type="service" id="request" />
+            <argument type="service" id="gloomy.pager" />
+        </service>
+
+        <service id="gloomy.rest_connector.slickgrid" class="Gloomy\PagerBundle\Service\RESTConnectorService" scope="request">
+            <argument>SlickGrid</argument>
+            <argument type="service" id="request" />
+            <argument type="service" id="gloomy.pager" />
+        </service>
+
+        <service id="gloomy.rest_connector.autocomplete" class="Gloomy\PagerBundle\Service\RESTConnectorService" scope="request">
+            <argument>Autocomplete</argument>
+            <argument type="service" id="request" />
+            <argument type="service" id="gloomy.pager" />
+        </service>
+
+        <service id="gloomy.rest_connector.typeahead" class="Gloomy\PagerBundle\Service\RESTConnectorService" scope="request">
+            <argument>Typeahead</argument>
+            <argument type="service" id="request" />
+            <argument type="service" id="gloomy.pager" />
+        </service>
+
+        <service id="gloomy.rest_connector.datatheke" class="Gloomy\PagerBundle\Service\RESTConnectorService" scope="request">
+            <argument>Datatheke</argument>
+            <argument type="service" id="request" />
+            <argument type="service" id="gloomy.pager" />
+        </service>
+
+        <service id="gloomy.twig.extension" class="Gloomy\PagerBundle\Twig\GloomyExtension">
+        	<tag name="twig.extension" />
+            <argument type="service" id="router" />
+        </service>
+
+        <service id="gloomy.datagrid.twig.extension" class="Gloomy\PagerBundle\Twig\DataGridExtension">
+        	<tag name="twig.extension" />
+            <argument type="service" id="router" />
+        </service>
+
+        <service id="gloomy.crud.twig.extension" class="Gloomy\PagerBundle\Twig\CrudExtension">
+        	<tag name="twig.extension" />
+            <argument type="service" id="router" />
+        </service>
+    </services>
+</container>

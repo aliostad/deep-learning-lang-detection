@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceConfig>
+	<service>
+		<name>User</name>
+		<class>cn.vlabs.umt.ui.rest.RestUserServiceImpl</class>
+	</service>
+	<service>
+		<name>UserV7</name>
+		<class>cn.vlabs.umt.ui.rest.RestUserServiceV7Impl</class>
+	</service>
+	<service>
+		<name>Oauth</name>
+		<class>cn.vlabs.umt.ui.rest.RestOauthServiceImpl</class>
+	</service>
+    <service>
+		<name>Verify</name>
+		<class>cn.cnic.uaf.common.http.rest.RestVerifyServiceImpl</class>
+	</service>
+    <service>
+		<name>Register</name>
+		<class>cn.cnic.uaf.common.http.rest.RestRegistServiceImpl</class>
+	</service>	
+	<filter>
+		<name>APIFilter</name>
+		<class>cn.vlabs.umt.ui.rest.APIFilter</class>
+		<!-- 不起作用，但是一去掉就报错 -->
+		<init-param>
+			<param-name>ipconfig</param-name>
+			<param-value>accessIPs</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter>APIFilter</filter>
+		<service>User</service>
+		<service>Verify</service>
+		<service>Register</service>
+		<service>UserV7</service>
+		<service>Oauth</service>
+	</filter-mapping>
+</ServiceConfig>

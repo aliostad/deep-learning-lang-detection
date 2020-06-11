@@ -1,0 +1,186 @@
+#identity {
+	text-decoration:none;
+}
+#leftside ul {
+	list-style:none;
+}
+#header #nav_toggler {
+	padding-left:0;
+}
+#nav_toggler #navicon {
+	display:none;
+}
+#nav_breadcrumb a {
+	background:transparent url("arrow-right.png") right center no-repeat;
+	padding-right:1.2em;
+}
+#sm-links-bottom span {
+	display:inline;
+}
+#sm-links-bottom a {
+	font-size:1em;
+}
+#searchbox input,
+#searchbox input[type="text"], 
+#searchbox input[type="search"] {
+	line-height:1.9em;
+	height:1.9em;
+}
+#searchbox button[type="submit"] {
+	filter:none;
+	background:transparent url("magnifier.png") center 6px no-repeat;
+	border:0px solid #fff;
+	zoom:1;
+}
+#service-list {
+	margin-top:2em;
+}
+#service-list a em { /* Fontello icons does not work in IE7 */
+	width:48px;
+	height:48px;
+}
+#service-contact,
+#service-maps,
+#service-photos,
+#service-placenames,
+#service-publications,
+#service-employees,
+#service-link,
+#service-info,
+#service-question,
+#service-species,
+#service-data,
+em.icon-database,
+em.icon-location,
+em.icon-camera-1,
+em.icon-paw,
+em.icon-address-book,
+em.icon-book,
+em.icon-map,
+em.icon-info-circled-1,
+em.icon-help-circled,
+em.icon-link-ext {
+	background:transparent url("icons-paul-48x48.png") 0 0 no-repeat;
+}
+#service-maps,
+em.icon-map {
+	background-position:-48px 0;
+}
+#service-publications,
+em.icon-book {
+	background-position:-96px 0;
+}
+#service-placenames,
+em.icon-location {
+	background-position:-144px 0;
+}
+#service-employees,
+em.icon-address-book {
+	background-position:-192px 0;
+}
+#service-photos,
+em.icon-camera-1 {
+	background-position:-240px 0;
+}
+#service-link,
+em.icon-link-ext {
+	background-position:-288px 0;
+}
+#service-info,
+em.icon-info-circled-1 {
+	background-position:-336px 0;
+}
+#service-species,
+em.icon-paw {
+	background-position:-384px 0;
+}
+#service-question,
+em.icon-help-circled {
+	background-position:-432px 0;
+}
+#service-data,
+em.icon-database {
+	background-position:-480px 0;
+}
+#service-list li a:hover #service-contact {
+	background-position:0 -48px;
+}
+#service-list li a:hover #service-maps {
+	background-position:-48px -48px;
+}
+#service-list li a:hover #service-publications {
+	background-position:-96px -48px;
+}
+#service-list li a:hover #service-placenames {
+	background-position:-144px -48px;
+}
+#service-list li a:hover #service-employees {
+	background-position:-192px -48px;
+}
+#service-list li a:hover #service-photos {
+	background-position:-240px -48px;
+}
+#service-list li a:hover #service-link {
+	background-position:-288px -48px;
+}
+#service-list li a:hover #service-info {
+	background-position:-336px -48px;
+}
+#service-list li a:hover #service-species {
+	background-position:-384px -48px;
+}
+#service-list li a:hover #service-question {
+	background-position:-432px -48px;
+}
+#service-list li a:hover #service-data {
+	background-position:-480px -48px;
+}
+
+.featured-box ul,
+.portal-box ul {
+	margin-left:0;
+}
+.portal-box {
+	margin-bottom:2em;
+}
+.portal .news-list .news {
+	width:23%;
+}
+.portal section h2 {
+	display:block;
+	clear:both;
+}
+.portal .dynamic a .card .card-heading {
+	line-height:normal;
+}
+
+.double .boxes > .span1,
+.quadruple .boxes > .span2 {
+	width:49.9%;
+}
+.triple .boxes > .span1 {
+	width:33.2999%;
+}
+.triple .boxes > .span2 {
+	width:66.5999%;
+}
+.quadruple .boxes > .span1 {
+	width:24.9%;
+}
+.quadruple .boxes > .span3 {
+	width:74.9%;
+}
+a.featured-link,
+a.featured-link * {
+	text-decoration:none;
+	cursor:pointer;
+}
+.form .input.text {
+	/*box-sizing:border-box;
+	zoom:1;
+	display:block;
+	float:none;
+	clear:both;
+	width:auto;*/
+	width:50%
+}

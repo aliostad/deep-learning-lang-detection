@@ -1,0 +1,22 @@
+#cms-content-tools-ModelAdmin div.CompositeField {
+	margin: 0;
+}
+
+#cms-content-tools-ModelAdmin div.CompositeField.dateselector label.left {
+  width: auto;
+  float: none;
+}
+
+#cms-content-tools-ModelAdmin div.dateselectorfield,
+#cms-content-tools-ModelAdmin .rangeselectedfrom div.dropdown,
+#cms-content-tools-ModelAdmin .rangeselectedto div.dropdown {
+	border-bottom: none;
+	width: 33.3333%;
+	float: left;
+	clear: none;
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 10px;
+  padding-left: 0px;
+}

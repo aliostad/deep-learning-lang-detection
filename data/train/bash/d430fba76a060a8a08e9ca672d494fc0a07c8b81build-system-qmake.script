@@ -1,0 +1,65 @@
+#!/bin/sh
+#
+# Copyright (C) 2011-2015  Codethink Limited
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; version 2 of the License.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+## Convert the hello-chunk project to something qmake-like, then
+## build it.
+
+set -eu
+
+if ! command -v qmake > /dev/null ; then
+    # There is no qmake, so skip this test.
+    cat "$SRCDIR/tests.build/build-system-qmake.stdout"
+    exit 0
+fi
+    
+chunkrepo="$DATADIR/chunk-repo"
+cd "$chunkrepo"
+
+git checkout --quiet farrokh
+
+cat <<'EOF' >hello.pro
+TEMPLATE = app
+TARGET = hello
+DEPENDPATH += .
+INCLUDEPATH += .
+
+SOURCES += hello.c
+hello.path = /usr/bin
+hello.files = hello
+INSTALLS += hello
+EOF
+git add hello.pro
+
+cat <<EOF > hello.morph
+name: hello
+kind: chunk
+build-system: qmake
+install-commands:
+  - make INSTALL_ROOT="\$DESTDIR" install
+EOF
+git add hello.morph
+git commit --quiet -m "Convert hello to an qmake project"
+
+"$SRCDIR/scripts/test-morph" build-morphology \
+    test:morphs-repo master hello-system
+
+for chunk in "$DATADIR/cache/artifacts/"*.chunk.*
+do
+    echo "$chunk:" | sed 's/[^.]*//'
+    tar -tf "$chunk" | LC_ALL=C sort | sed '/^\.\/./s:^\./::'
+    echo
+done

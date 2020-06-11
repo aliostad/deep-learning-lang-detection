@@ -1,0 +1,66 @@
+
+/**
+ ******************************* Home ******************************
+ */
+
+/**
+ * Main
+ */
+.home-intro-text{
+	font-size: 1.1em;
+}
+
+/**
+ * Services
+ */
+.home-service-item-container{
+	height: 540px;
+}
+
+.home-service-item-container p, .home-service-item-container img, .home-service-item-container h4{
+	padding: 15px 20px 5px 20px;
+}
+
+.home-service-item-container p{
+	font-size: 1.1em;
+}
+
+
+/**
+ * Clients
+ */
+.home-client-item-container{
+	height: 250px;
+}
+
+@media (min-width: 600px) {
+	/**
+	 * Main
+	 */
+	.home-intro-text{
+		font-size: 1.5em;
+	}
+
+	/**
+	 * Services
+	 */
+	.home-service-item-container{
+		height: 410px;
+	}
+
+
+	.home-service-item-container p, .home-service-item-container img, .home-service-item-container h4{
+		padding: 0;
+	}
+
+	.home-service-item-container p{
+		font-size: 1em;
+	}
+
+	/**
+	 * Clients
+	 */
+	.home-client-item-container{
+		height: 300px;
+	}
+}

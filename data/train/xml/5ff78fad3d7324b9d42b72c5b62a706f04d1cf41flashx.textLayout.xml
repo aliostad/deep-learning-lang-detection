@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<apiPackage id="flashx.textLayout"><apiName>flashx.textLayout</apiName><apiDetail/><apiClassifier id="flashx.textLayout:BuildInfo"><apiName>BuildInfo</apiName><shortdesc>
+	 Содержит информацию идентификации для текущей компоновки.</shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 Содержит информацию идентификации для текущей компоновки. Информация может приводиться в форме, отличной от формы представления в итоговом API-интерфейсе.
+	 </apiDesc></apiClassifierDetail><apiValue id="flashx.textLayout:BuildInfo:VERSION"><apiName>VERSION</apiName><shortdesc>
+		 Содержит текущий номер версии.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>1.0</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Содержит текущий номер версии. 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="flashx.textLayout:BuildInfo:kBranch"><apiName>kBranch</apiName><shortdesc>
+		 Содержит имя ветви.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>main</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Содержит имя ветви. 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="flashx.textLayout:BuildInfo:kBuildNumber"><apiName>kBuildNumber</apiName><shortdesc>
+		 Содержит текущий номер сборки.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>571 (732141)</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Содержит текущий номер сборки. Он является статическим и может быть вызван с помощью <codeph>BuildInfo.kBuildNumber</codeph>
+		 <p>Формат строки: «BuildNumber (Changelist)»</p>
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

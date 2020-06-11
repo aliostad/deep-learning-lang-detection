@@ -1,0 +1,23 @@
+
+    .write_form { }
+    
+        .write_form .input_wrap { }
+            .write_form .input_wrap input[type=text],
+            .write_form .input_wrap input[type=password] { height:34px; line-height:34px; margin-bottom:0; }
+			
+			.write_form .input_wrap .fileinput { margin-left:10px; float:right; }
+
+            .write_form .input_wrap .radio, 
+            .write_form .input_wrap .checkbox { display:inline-block; margin-right:10px; }
+            .write_form .input_wrap .radio+.radio, 
+            .write_form .input_wrap .checkbox+.checkbox { margin-top:10px; }
+
+            .write_form .input_wrap textarea { margin-bottom:0; }
+            .write_form .input_wrap textarea.sub_title { min-height:34px; line-height:24px; padding-top:4px; padding-bottom:4px; }
+            .write_form .input_wrap textarea.content { height:200px; }
+			
+    		.write_form .form-actions { position:absolute; background:#fff; bottom:0; padding:10px; right:0; top:-53px; height:49px; z-index:1000; }
+
+        .write_form .editor .entry-markdown, .write_form .editor .entry-preview { border:1px solid #ccc; }
+        .write_form .editor .entry-markdown { border-right:0; border-top-right-radius: 0; border-bottom-right-radius: 0; }        
+        .write_form .editor .entry-preview { border-top-left-radius: 0; border-bottom-left-radius: 0; }

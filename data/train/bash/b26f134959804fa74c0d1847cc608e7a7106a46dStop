@@ -1,0 +1,39 @@
+#!/bin/bash
+# Verifica si está corriendo Receipt y lo para si está corriendo
+. Helpers
+
+echo_y_log(){
+	echo "$1"
+	Log "$1"
+}
+
+stopProcess(){
+  processPid=$(getProcessPid $1)
+
+  if [ $processPid -eq 0 ]; then
+      echo_y_log "$1 no está ejecutandose"
+  else
+  	local MESSAGE="Deteniendo $1...    "
+    Result=$(kill $processPid)
+    if [ $Result ]; then
+      MESSAGE=$(echo "$MESSAGE[ERROR]")
+    else
+      MESSAGE=$(echo "$MESSAGE[OK]")
+    fi
+    echo_y_log "$MESSAGE"
+  fi
+}
+
+if [ $# -lt 1 ]
+then
+        echo "Uso : $0 <<comando a detener>>"
+        exit
+fi
+
+case "$1" in
+
+$RECEPT)  stopProcess $1
+    ;;
+*) echo_y_log "El comando $1 no existe"
+   ;;
+esac

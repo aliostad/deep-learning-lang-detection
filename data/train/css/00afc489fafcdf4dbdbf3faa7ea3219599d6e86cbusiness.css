@@ -1,0 +1,339 @@
+.business-banner {
+    background: url("../images/business/business_banner.png") no-repeat center #22558A;
+    height: 156px;
+    width: 100%;
+}
+
+#business{
+    width: 1100px;
+    margin-top: 22px;
+}
+
+#business a label {
+    cursor: pointer;
+}
+
+#business div {
+    float: left;
+    text-align: center;
+    height: 290px;
+    width: 190px;
+    padding: 20px;
+    font-size: 17px;
+    color: #333;
+    cursor: pointer;
+}
+
+#business div label{
+    color: #808080;
+    font-size: 12px;
+}
+
+#business div.separate {
+    float: left;
+    width: 20px;
+}
+
+#business i {
+    width: 121px;
+    height: 121px;
+    display: inline-block;
+    margin-bottom: 22px;
+}
+
+#business i.operate {
+    background: url("../images/business.png") no-repeat -50px -38px;
+}
+
+#business i.ztc {
+    background: url("../images/business.png") no-repeat -230px -38px;
+}
+
+#business i.diamond {
+    background: url("../images/business.png") no-repeat -411px -38px;
+}
+
+#business i.learn {
+    background: url("../images/business.png") no-repeat -591px -38px;
+}
+
+#business i.wireless {
+    background: url("../images/business.png") no-repeat -772px -38px;
+}
+
+#business i.view {
+    background: url("../images/business.png") no-repeat -952px -38px;
+}
+
+#business i.integration {
+    background: url("../images/business.png") no-repeat -50px -207px;
+}
+
+#business i.gold {
+    background: url("../images/business.png") no-repeat -230px -207px;
+}
+
+#business i.shoot {
+    background: url("../images/business.png") no-repeat -411px -207px;
+}
+
+#business i.brand {
+    background: url("../images/business.png") no-repeat -591px -207px;
+}
+
+#business i.soft {
+    background: url("../images/business.png") no-repeat -772px -207px;
+}
+
+#business i.consult {
+    background: url("../images/business.png") no-repeat -952px -207px;
+}
+#business i.wuxianxiangqingye {
+    background: url("../images/business/business_icon2.png") no-repeat -32px -17px;
+}
+#business i.shipin {
+    background: url("../images/business/business_icon2.png") no-repeat -184px -17px;
+}
+/*主营业务公共部分css*/
+.hide {
+    display: none;
+}
+.service-icon {
+    background-image: url("../images/business/service_icon.png");
+}
+.service-common {
+    margin: 15px auto;
+    width: 1100px;
+}
+.service-common .service-left {
+    width: 202px;
+    float: left;
+}
+
+.service-common .service-left .service-title {
+    background-position: -42px -279px;
+    width: 177px;
+    height: 52px;
+    line-height: 52px;
+    color: #ffffff;
+    font-size: 18px;
+    padding-left: 25px;
+}
+
+.service-common .service-left .service-menu {
+    width: 202px;
+    background-color: #F6F6F6;
+    padding-top: 15px;
+}
+
+.service-common .service-left .service-menu ul li {
+    width: 202px;
+    line-height: 40px;
+    text-indent: 32px;
+    color: #696969;
+    font-size: 16px;
+    position: relative;
+}
+
+.service-common .service-left .service-menu ul li div {
+    width: 202px;
+    background-color: #F6F6F6;
+}
+.service-common .service-left .service-menu ul li .sec-menu-con a {
+    position: relative;
+}
+.service-common .service-left .service-menu ul li .sec-menu-con a:after {
+    content: ">";
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+}
+.service-common .service-left .service-menu ul li div a:hover {
+    background-color: #e2e2e2;
+}
+.service-common .service-left .service-menu ul li div a.active {
+    color: #0A427D;
+    font-weight: bold;
+}
+.service-common .service-left .service-menu ul li .sec-menu {
+    background-color: #0A427D;
+    width: 202px;
+    text-indent: 27px;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.service-common .service-left .service-menu ul li .menu-selected {
+    width: 197px;
+    border-left: 5px solid #F1C001;
+    text-indent: 22px;
+}
+
+.service-common .service-left .service-menu ul li a {
+    color: #696969;
+    font-size: 16px;
+    width: 202px;
+    line-height: 40px;
+    display: block;
+    text-indent: 27px;
+    position: relative;
+}
+
+.service-common .service-left .service-menu .gt-icon {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    font-size: 20px;
+}
+.service-common .service-left .we-chat-id {
+    width: 202px;
+    background-color: #F6F6F6;
+    margin-top: 5px;
+}
+.service-common .service-left .we-chat-id .two-dimension-code {
+    background-position: -41px -80px;
+    width: 172px;
+    height: 172px;
+    margin: 5px 0 0 15px;
+    display: inline-block;
+}
+
+.service-common .service-left .we-chat-id .subscribe {
+    width: 202px;
+    height: 24px;
+    line-height: 20px;
+    text-align: center;
+    color: #696969;
+    font-size: 16px;
+}
+.service-common .service-right {
+    float: right;
+    width: 880px;
+}
+
+.service-common .service-right .position {
+    width: 880px;
+    height: 52px;
+    line-height: 52px;
+    color: #989898;
+    border-bottom: 1px #d5d5d5 solid;
+}
+
+.service-common .service-right .position .head-right {
+    text-align: right;
+}
+
+.service-common .service-left .service-menu .service-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    top: 10px;
+    _background: none;
+}
+.service-common .service-left .service-menu .add-btn {
+    background-position: -34px -32px;
+}
+.service-common .service-left .service-menu .subtract-btn {
+    background-position: -70px -32px;
+}
+
+/*左侧菜单固定在页面css*/
+.service-stick {
+    position: fixed;
+    top: 75px;
+    left: 50%;
+    margin-left: -550px;
+    z-index: 997;
+}
+.service-bottom {
+    position: fixed;
+    bottom: 205px;
+    left: 50%;
+    margin-left: -550px;
+    z-index: 997;
+}
+
+/*主营业务底部干货分类css*/
+.dry-Classify {
+    width: 880px;
+    margin: 15px auto;
+}
+.dry-Classify .dry-tit {
+    background: url("../images/business/design_icon.png") -641px -405px;
+    width: 325px;
+    height: 57px;
+    line-height: 54px;
+    padding: 0 266px;
+    margin: 60px auto;
+    color: #FDFDFD;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.dry-Classify .dry-con .dry-con-tit {
+    border-bottom: 1px dashed #D5D5D5;
+    position: relative;
+    height: 25px;
+    margin: 20px auto;
+    text-align: right;
+}
+.dry-Classify .dry-con .dry-con-tit .more {
+    background: url("../images/webicon.png") -12px -14px;
+    width: 45px;
+    height: 20px;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    position: absolute;
+    right: 0;
+}
+.dry-Classify .dry-con-left {
+    float: left;
+    position: relative;
+    width: 226px;
+    height: 147px;
+}
+.dry-Classify .dry-con-left .img-tit {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    z-index: 1;
+}
+.dry-Classify .dry-con-left .img-tit-bg {
+    height: 30px;
+}
+.dry-Classify .dry-con-right {
+    float: left;
+    margin-left: 30px;
+    width: 624px;
+}
+.dry-Classify .dry-con-right ul li {
+    width: 295px;
+    height: 32px;
+    float: left;
+    background-color: #4C6AC2;
+    margin-bottom: 6px;
+}
+.dry-Classify .dry-con-right ul li a {
+    width: 285px;
+    height: 32px;
+    line-height:32px;
+    color: #FFFFFF;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-left: 10px;
+    display: block;
+}
+.dry-Classify .dry-con-right ul li:hover {
+    background-color: #0A427D;
+}

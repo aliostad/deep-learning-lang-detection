@@ -1,0 +1,30 @@
+.root {
+	-fx-spacing: 15;
+	-fx-font-family: helvetica;
+	-fx-padding: 100;
+	-fx-margin: auto;
+	-fx-font-size: 30;
+}
+
+#load-button, #new-button, #back-button {
+    -fx-padding: 15;
+    -fx-background-insets: 5,0,5,0;
+    -fx-background-radius: 0;
+    -fx-background-color: #343434;
+    -fx-font-size: 16;
+    -fx-text-fill: #EEE;
+}
+
+#back-button{
+	-fx-background-color: #CCC;
+	-fx-font-size: 12;
+	-fx-text-fill: #FFF;
+}
+
+#back-button:hover{
+	-fx-background-color: #AAA;
+}
+
+#load-button:hover, #new-button:hover{
+	-fx-background-color: #222222;
+}

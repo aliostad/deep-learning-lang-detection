@@ -1,0 +1,50 @@
+
+#self-service-summary table {
+    border-collapse: separate;
+}
+
+#self-service-summary th {
+    text-align: left;
+    padding: 0.25em;
+    padding-right: 1em;
+    vertical-align: top;
+    background-color: #115822;
+    color: #ffffff;
+}
+
+#self-service-summary td {
+    width: 40em;
+    text-align: left;
+    padding: 0.25em;
+    padding-left: .5em;
+    vertical-align: top;
+    background-color: #ebebeb;
+}
+
+#self-service-summary ul {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    padding-left: 0em;
+    list-style-type: none;
+}
+
+#self-service-summary li {
+    /*list-style-type: square;*/
+    /*margin-left: 0px;*/
+}
+
+#self-service-summary .transparent {
+    background-color: transparent;
+    color: #111;
+}
+
+#self-service-summary .error {
+    color: red;
+}
+
+#self-service-summary .error-box {
+    color: red;
+    font-weight: bold;
+    border: thin solid red;
+    padding: 0.5em;
+}

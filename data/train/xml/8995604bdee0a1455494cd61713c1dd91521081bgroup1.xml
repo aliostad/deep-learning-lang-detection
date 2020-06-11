@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<group>
+    <Folder>..\GeoConfig\ProcessDescriptions</Folder>
+    <Identifier>test</Identifier>
+    <Title>中文caption</Title>
+    <Abstract>描述信息</Abstract>
+    <ProcessDescription>PTest1</ProcessDescription>
+    <ProcessDescription>PTest2</ProcessDescription>
+    <ProcessDescription>PTest3</ProcessDescription>   
+	<ProcessDescription>ProcessModelList</ProcessDescription>
+	<ProcessDescription>ProcessGetBaseDirectory</ProcessDescription>
+	<ProcessDescription>ProcessModelDescription</ProcessDescription>
+</group>

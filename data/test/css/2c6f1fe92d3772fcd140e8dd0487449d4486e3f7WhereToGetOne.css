@@ -1,0 +1,131 @@
+<style>
+/*andurstylesheet */
+
+p#test1 {
+   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+div.headerpicture {
+  background: url(andurgraph.png);
+  background-size: 100% 100%;
+  border: 2px solid black;
+}
+
+div.headerpicturebox p
+{
+    
+  text-align: center;
+  margin: 50px 40px;
+  font-weight: bold;
+  font-size: 300%;
+  color: #FF9933;
+}
+
+#footer2 {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+
+
+
+.nav .active {
+  font-weight: bold;
+  background: red;
+    padding-left: 15px;
+}
+ 
+.nav .nav {
+  display: block;
+}
+ 
+.nav .active .nav {
+  display: block;
+    background: purple;
+}
+ 
+.nav .nav a {
+  font-weight: normal;
+  font-size: .95em;
+    padding-left: 30px;
+    color: orange;
+}
+ 
+.nav .nav span {
+  margin: 0 5px 0 2px;
+}
+ 
+.nav .nav .active a,
+.nav .nav .active:hover a,
+.nav .nav .active:focus a {
+  font-weight: bold;
+  padding-left: 30px;
+  border-left: 5px solid black;
+}
+ 
+.nav .nav .active span,
+.nav .nav .active:hover span,
+.nav .nav .active:focus span {
+  display: none;
+}
+
+
+/* this is the third tier */
+
+.nav .nav .nav{
+    display: none;
+}
+.nav .nav .active .nav {
+  display: block;
+    background: white;
+}
+
+.nav .nav .nav a {
+  font-weight: normal;
+  font-size: .85em;
+    color:black;
+        padding-left: 40px;
+}
+ 
+.nav .nav .nav span {
+  margin: 0 5px 0 2px;
+}
+ 
+.nav .nav .nav .active a,
+.nav .nav .nav .active:hover a,
+.nav .nav .nav .active:focus a {
+  font-weight: bold;
+  padding-left: 50px;
+  border-left: 5px solid blue;
+    background: green;
+}
+ 
+.nav .nav .nav .active span,
+.nav .nav .nav .active:hover span,
+.nav .nav. nav .active:focus span {
+  display: none;
+}
+
+
+body {
+  position: relative;
+  background-color: black;
+color:orange;
+}
+/* change color of the edges of the code */
+blockquote {  
+    background: grey;
+    border-color: grey;
+}
+
+/* change color of the background of the code */
+pre{                            
+    background:grey;
+    border-color:grey;
+}
+
+
+</style>

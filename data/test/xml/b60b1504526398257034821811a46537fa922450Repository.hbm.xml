@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="ar.edu.sccs.dao">
+	<class name="RepositoryDTO" table="repository">
+		<id name="repository_id" column="repository_id" type="java.lang.Integer" />
+		<property name="repository_name" column="repository_name" type="java.lang.String" />
+		<property name="repository_protocol" column="repository_protocol" type="java.lang.String" />
+		<property name="repository_server" column="repository_server" type="java.lang.String" />
+		<property name="repository_port" column="repository_port" type="java.lang.String" />
+		<property name="repository_user" column="repository_user" type="java.lang.String" />
+		<property name="repository_password" column="repository_pass" type="java.lang.String" />
+	</class>
+</hibernate-mapping>

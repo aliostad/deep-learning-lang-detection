@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.blue.gis.mapper.SampleMapper">
+ 
+ 
+    <select id="getAll" resultType="com.blue.gis.vo.SampleVO">
+        SELECT  SampleNo
+               ,title
+               ,description
+        FROM   t_sample
+    </select>
+ 	
+ 	<select id="get" resultType="com.blue.gis.vo.SampleVO">
+ 		SELECT  SampleNo
+               ,title
+               ,description
+        FROM   t_sample
+        WHERE  SampleNo = #{sampleNo}
+ 	
+ 	</select>
+ 	<select id="update" resultType="com.blue.gis.vo.SampleVO">
+ 		UPDATE T_SAMPLE
+ 		SET TITLE =#{title}
+ 		,DESCRIPTION = #{description}
+        WHERE  SampleNo = #{sampleNo}
+ 	
+ 	</select>
+ 	
+ 	<insert id="add" parameterType="com.blue.gis.vo.SampleVO">
+ 	  <selectKey keyProperty="sampleNo" resultType="int" order="BEFORE">  
+            SELECT COALESCE(MAX(SampleNo), 0) + 1 AS sampleNo 
+            FROM   t_sample
+        </selectKey>
+
+        INSERT INTO t_sample (
+             SampleNo
+            ,title
+            ,description
+        ) VALUES (
+             #{sampleNo}
+            ,#{title}
+            ,#{description}
+        )
+    </insert>
+    
+    <delete id="delete">
+		DELETE FROM T_SAMPLE WHERE SampleNo=#{SampleNo}
+    </delete>
+</mapper> 

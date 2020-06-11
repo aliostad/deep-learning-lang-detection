@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<GeneticAlgorithmUtil>
+	<InputFile>
+		<name>test.xlsx</name>
+		<prediction>num</prediction>
+		<normalize min="0" max="1"/>
+		<fields>
+			<Field name="age" process="norm"/>	
+			<Field name="sex" process="boolean"/>	
+			<Field name="cp" process="class"/>
+			<Field name="trestbps" process="testbps"/>	
+			<Field name="chol" process="norm"/>	
+			<Field name="fbs" process="class"/>	
+			<Field name="restekg" process="class"/>	
+			<Field name="thalach" process="norm"/>	
+			<Field name="exang" process="class"/>	
+			<Field name="oldpeak" process="norm"/>	
+			<Field name="slope" process="class"/>	
+			<Field name="ca" process="class"/>	
+			<Field name="thal" process="class"/>	
+			<Field name="num" process="class"/>
+		</fields>
+	</InputFile>
+</GeneticAlgorithmUtil>

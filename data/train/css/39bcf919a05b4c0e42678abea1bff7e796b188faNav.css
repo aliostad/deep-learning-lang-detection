@@ -1,0 +1,29 @@
+/* mc-nav =================================================================== */
+.mc-nav{
+    margin-bottom:0;
+    background-color:#fff;
+    border-bottom:0
+}
+/* .bs-home-nav .bs-nav-b{ display:none } */
+.mc-nav .navbar-brand,
+.mc-nav .navbar-nav>li>a{
+    font-weight:500;
+    color:#563d7c
+}
+.mc-nav .navbar-nav>li>a:hover,
+.mc-nav .navbar-nav>.active>a,
+.mc-nav .navbar-nav>.active>a:hover{
+    color:#463265;
+    background-color:#f9f9f9
+}
+.mc-nav .navbar-toggle .icon-bar{
+    background-color:#563d7c
+}
+.mc-nav .navbar-header .navbar-toggle{
+    border-color:#fff
+}
+.mc-nav .navbar-header .navbar-toggle:hover,
+.mc-nav .navbar-header .navbar-toggle:focus{
+    background-color:#f9f9f9;
+    border-color:#f9f9f9
+}

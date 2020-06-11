@@ -1,0 +1,38 @@
+#!/bin/bash
+
+ORIGINAL_REPO="git@github.com:lucastorri/dotfiles-control.git"
+
+GIT_REPO=$ORIGINAL_REPO
+
+DOTFILES=$HOME/.dotfiles
+
+git clone $GIT_REPO $DOTFILES
+
+echo "export PATH=\$PATH:$DOTFILES/bin" >> $HOME/.bashrc
+
+if [ ! -d $DOTFILES/dotfiles ]
+then
+  mkdir $DOTFILES/dotfiles
+fi
+
+if [ "$GIT_REPO" == "$ORIGINAL_REPO" ]
+then
+  cd $DOTFILES
+  read -p "Which is your repo? " GIT_REPO
+  cat install | sed "s|GIT_REPO=\$ORIGINAL_REPO|GIT_REPO=$GIT_REPO|g" > i
+  mv i install
+  git remote rm origin
+  git remote add origin "$GIT_REPO"
+
+  INSTALL_SCRIPT=`echo $GIT_REPO | sed 's|.*github.com.\(.*\)/\(.*\)\(\.git\)*|https://raw.github.com/\1/\2/master/install|g'`
+  echo "$GIT_REPO" > README
+  echo "bash < <(curl -s $INSTALL_SCRIPT)" >> README
+  git commit -am "updating install script and readme"
+  git push -u origin master
+fi
+
+cd $DOTFILES
+git remote add dotfiles $ORIGINAL_REPO
+
+bash $DOTFILES/bin/dotfiles genlinks
+

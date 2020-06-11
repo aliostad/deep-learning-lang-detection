@@ -1,0 +1,94 @@
+#!/bin/bash
+
+echo 'Start preparation of velovities PDF'
+
+mkdir profiles/
+
+./prepare_profiles*.out *_dist.txt *_prmot.txt
+
+echo 'Start analysis of the Maxwellian model'
+
+./evidence_??_maxw_energy.out
+evid_energy_maxw_=`tail -n 1 model.dat`
+evid_energy_maxw=${evid_energy_maxw_/e/"\times 10^{"}
+./evidence_??_maxw_flat.out
+evid_flat_maxw=`tail -n 1 model.dat`
+./analyse_model_??_maxw.out
+val_maxw=`tail -n 1 model.dat` 
+param=`tail -n 1 model.dat` 
+./credential_??_maxw.out $param
+cred_maxw1=`tail -n 2 model.dat | head -n 1`
+cred_maxw2=`tail -n 1 model.dat`
+
+echo 'Start analysis of the normal model'
+
+./evidence_*_norm_energy.out
+evid_energy_norm=`tail -n 1 model.dat`
+./evidence_*_norm_flat.out
+evid_flat_norm=`tail -n 1 model.dat`
+./analyse_model_*_norm.out
+val_norm=`tail -n 1 model.dat`
+param=`tail -n 1 model.dat` 
+./credential_*_norm.out $param
+cred_norm1=`tail -n 2 model.dat | head -n 1`
+cred_norm2=`tail -n 1 model.dat`
+
+
+echo 'Start analysis of the Paczynski model'
+
+./evidence_*_pach_energy.out
+evid_energy_pach=`tail -n 1 model.dat`
+./evidence_*_pach_flat.out
+evid_flat_pach=`tail -n 1 model.dat`
+./analyse_model_*_pach.out
+val_pach=`tail -n 1 model.dat`
+param=`tail -n 1 model.dat` 
+./credential_*_pach.out $param
+cred_pach1=`tail -n 2 model.dat | head -n 1`
+cred_pach2=`tail -n 1 model.dat`
+
+echo 'Start analysis of the uniform model'
+
+./evidence_*_uni_energy.out
+evid_energy_uni=`tail -n 1 model.dat`
+./evidence_*_uni_flat.out
+evid_flat_uni=`tail -n 1 model.dat`
+echo "*" >> model.dat
+echo "*" >> model.dat
+#./analyse_model_*_norm.out
+#param=`tail -n 1 model.dat` 
+#./credential_*_norm.out $param
+
+echo 'Start analysis of the sum of two Maxwellian model'
+
+./evidence_*_sum_maxw_energy.out
+evid_energy_sum_maxw=`tail -n 1 model.dat`
+./evidence_*_sum_maxw_flat.out
+evid_flat_sum_maxw=`tail -n 1 model.dat`
+./analyse_model_*_sum_maxw.out
+val_sum_maxw=`tail -n 1 model.dat`
+param=`tail -n 1 model.dat` 
+./credential_*_sum_maxw.out $param
+cred_sum_maxw1=`tail -n 3 model.dat | head -n 1`
+cred_sum_maxw2=`tail -n 2 model.dat | head -n 1`
+cred_sum_maxw3=`tail -n 1 model.dat`
+
+
+echo 'We finished analysis'
+cat model.dat
+
+cp /Users/IGNOTUR/research/puls_vel/brisken/tex_table.py .
+
+python tex_table.py > table.tex
+
+#echo "Look here first " ${val_maxw} 
+
+#echo "& $ " $val_maxw  "^{" $cred_maxw1  "}_{" $cred_maxw2 "} $ & $ " $val_norm "^{" $cred_norm1  "}_{" $cred_norm2 "} $ & $ "  $val_pach "^{" $cred_pach1  "}_{" $cred_pach2 "} $ & $ 1000 $ & $ "  $val_sum_maxw "^{" $cred_sum_maxw1  "}_{" $cred_sum_maxw2 "} $cred_sum_maxw3 $  \\\\" > table.tex
+#echo "$\mathcal{E(\mathcal{M})_\mathrm{flat}}   $  & $ " $evid_flat_maxw   " $ & $ " $evid_flat_norm   " $ & $ " $evid_flat_pach   " $ & $ " $evid_flat_uni   " $ & $ " $evid_flat_sum_maxw " $ \\\\" >> table.tex
+#echo "$\mathcal{E(\mathcal{M})_\mathrm{energy}} $  & $ " $evid_energy_maxw " $ & $ " $evid_energy_norm " $ & $ " $evid_energy_pach " $ & $ " $evid_energy_uni " $ & $ " $evid_energy_sum_maxw " $ \\\\" >> table.tex 
+
+
+
+
+
+

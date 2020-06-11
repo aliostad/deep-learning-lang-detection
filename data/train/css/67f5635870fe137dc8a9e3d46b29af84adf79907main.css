@@ -1,0 +1,23 @@
+/* Copied from bootstrap, justified navs without stacking on xs */
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+.nav-justified.nav-no-stack > li {
+  display: table-cell;
+  width: 1%;
+}
+.nav-justified.nav-no-stack > li > a {
+  margin-bottom: 0;
+}
+
+.nav-tabs.nav-justified.nav-no-stack > li > a {
+  border-bottom: 1px solid #ddd;
+  border-radius: 4px 4px 0 0;
+}
+.nav-tabs.nav-justified.nav-no-stack > .active > a,
+.nav-tabs.nav-justified.nav-no-stack > .active > a:hover,
+.nav-tabs.nav-justified.nav-no-stack > .active > a:focus {
+  border-bottom-color: #fff;
+}

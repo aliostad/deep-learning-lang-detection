@@ -1,0 +1,52 @@
+.messageTitle {
+	background: none repeat scroll 0 0 #EEF3F7;
+    border-bottom: 1px solid #D5DFE8;
+    color: #333333;
+    font-weight: 600;
+    clear: both;
+    height: 10px;
+    position: relative;
+}
+.messageList {
+	margin-top: 1px;
+	clear: both;
+	overflow: hidden;
+}
+.messageList .messageBlock {
+	padding: 10px 0;
+}
+.messageList .messageBlock .content {
+	height: auto;
+	line-height: 17px;
+	color: #000000;
+	padding: 0px 5px 5px 5px;
+}
+.messageList .messageBlock .status {
+	height: 26px;
+	line-height: 26px;
+	padding: 0 5px;
+	color: #666666;
+	background: #F6F6F6;
+	border-bottom: 1px solid #EEEEEE;
+	clear: both;
+	overflow: hidden;
+}
+.messageList .messageBlock .status .username {
+	padding-left: 10px;
+	min-width: 120px;
+}
+.messageList .messageBlock .status .email {
+	padding-left: 10px;
+}
+.messageList .messageBlock .status .time {
+	float: right;
+}
+.messageList .messageBlock .status .delete {
+	float: right;
+	padding-left: 10px;
+}
+.messageList .messageBlockNull {
+	padding: 10px;
+	text-align: center;
+	background: #F6F6F6;
+}

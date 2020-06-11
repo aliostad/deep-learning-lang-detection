@@ -1,0 +1,51 @@
+@charset "utf-8";
+@IMPORT url("conpfix.css");
+/**common defined**/
+html,body,ul,li{padding:0; margin:0;}
+li{list-style:none;}
+body *{ font-size:12px; font-family:"Microsoft Yahei",Tahoma;} 
+.red{color:red;}
+.icon{float:left; height:16px; width:16px;}
+.tipNoCon{ width:220px; height:120px; margin:0 auto; margin-top:30px;}
+.scrollWrap{overflow:hidden;position: relative;}
+
+.icon,
+.iconSta,
+.iconTable,
+.icon16C .icon,
+.iconShift{width:16px; height:16px; float:left;}
+
+
+.iconNav,
+.iconHeader{width:16px; height:16px; float:left;}
+
+/*iconSta==iconStatus*/
+.sideNav .icon,
+.sideNav .iconSta{background-image:url(../images/iconSideNav.png);}
+.sideNav{ overflow: hidden; border-bottom:1px solid #fff;  }
+.sideNav .navLi{ overflow:hidden; cursor:pointer; vertical-align: bottom;line-height:36px; padding:0;  border-top:1px solid #fff;  }
+.sideNav .navDiv{overflow:hidden; border-bottom:1px solid #c9e1f4;}
+.sideNav .navDiv .icon   {float:left; margin:10px 10px 0 0 ;}
+.sideNav .navDiv .iconSta{ float:right; margin:10px 4px 0 0 ;}
+.sideNav .navDiv .desc{font-size:14px; color:#666; float:left; }
+.sideNav .navDiv .icon   { background-position:-68px -17px;}
+.sideNav .navDiv .iconSta{ background-position:-34px -17px; }
+.sideNav .navDiv1 .iconSta{ background-position:0 -17px;}
+.sideNav .navDiv.active .iconSta{ background-position:-51px -17px;}
+.sideNav .navDiv1.active .icon   { background-position:-85px -17px;}
+.sideNav .navDiv1.active .iconSta{ background-position:-17px -17px;}
+.sideNav .navDiv{background-color:#fff;}
+.sideNav .navDiv1{background-color:#eaf3fe;}
+.sideNav .navDiv.hover,
+.sideNav .navDiv.active{background-color:#fffff7;}
+.sideNav .navDiv1.hover,
+.sideNav .navDiv1.active{background-color:#fffccb;}
+.sideNav .navDiv2.hover,
+.sideNav .navDiv2.active{background-color:#fffeed;}
+.sideNav .navDiv.active .desc{color:#3382cd;}
+.sideNav .navDiv1.active .desc{font-weight:bold; }
+.sideNav .navDiv.withSub .icon   { background-position:-68px 0; }
+.sideNav .navDiv.withSub .iconSta{ background-position:0 0; }
+.sideNav .navDiv.withSub.active .icon   { background-position:-85px 0px;}
+.sideNav .navDiv.withSub.active .iconSta{ background-position:-51px 0px;}
+.sideNav.noIcon .icon{display:none;}

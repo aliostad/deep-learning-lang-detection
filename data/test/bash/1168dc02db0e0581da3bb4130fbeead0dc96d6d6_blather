@@ -1,0 +1,20 @@
+#!/bin/bash -euf
+
+# apply git operation to all repositories in directory
+
+. _strap__inc
+
+[ -z ${__blather_id:-}       ] && fail "__blather_id not set"
+[ -z ${__blather_repo_loc:-} ] && fail "__blather_repo_loc not set"
+
+      id=${__blather_id}
+repo_loc=${__blather_repo_loc}
+
+git_config=${repo_loc}/.git/config
+        fn=${repo_loc}/${id}
+
+[ -d   ${repo_loc} ] || fail "${repo_loc} not found"
+[ -d ${git_config} ] || fail "${repo_loc} is not a git repository"
+[ -f         ${fn} ] || fail "blather file for id=${id} not found"
+
+

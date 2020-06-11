@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services version="1.0">
+    <service>
+		<service-id>access</service-id>
+		<service-class>de.kp.ames.web.function.access.AccessServiceImpl</service-class>
+        <service-desc>
+         Service to manage Accessors and to support access to
+         external data sources.
+        </service-desc>
+	</service>
+    
+    <service>
+		<service-id>bulletin</service-id>
+		<service-class>de.kp.ames.web.function.bulletin.BulletinServiceImpl</service-class>
+        <service-desc>
+         Service to support a posting mechanism between different 
+         communities of interest and their associated members.
+        </service-desc>
+	</service>
+    
+    <service>
+		<service-id>clas</service-id>
+		<service-class>de.kp.ames.web.core.clas.ClasServiceImpl</service-class>
+        <service-desc>
+         Service to retrieve concepts.
+        </service-desc>
+	</service>
+    
+    <service>
+		<service-id>comm</service-id>
+		<service-class>de.kp.ames.web.function.comm.CommServiceImpl</service-class>
+        <service-desc>
+         Service to support the registration (submit) of chat and mail 
+         messages via a predefined client application.
+        </service-desc>
+	</service>
+    
+    <service>
+		<service-id>disclaimer</service-id>
+		<service-class>de.kp.ames.web.function.security.DisclaimerImpl</service-class>
+        <service-desc>
+         Disclaimer Service to represent a disclaimer
+         to the caller's user; a disclaimer is returned
+         after successful login
+        </service-desc>
+	</service>
+
+    <service>
+		<service-id>dms</service-id>
+		<service-class>de.kp.ames.web.function.dms.DmsServiceImpl</service-class>
+        <service-desc>
+         DMS Service is used to retrieve document specific
+         informations
+        </service-desc>
+	</service>
+
+    <service>
+		<service-id>frame</service-id>
+		<service-class>de.kp.ames.web.function.frame.FrameServiceImpl</service-class>
+        <service-desc>
+         Frame Service is used to retrieve content embedded in a HTML frame
+        </service-desc>
+	</service>
+
+    <service>
+		<service-id>group</service-id>
+		<service-class>de.kp.ames.web.function.group.GroupServiceImpl</service-class>
+        <service-desc>
+         Core Group Service is used to manage community
+         of interest specific information objects including
+         organizations
+        </service-desc>
+	</service>
+
+    <service>
+		<service-id>map</service-id>
+		<service-class>de.kp.ames.web.function.map.MapServiceImpl</service-class>
+        <service-desc>
+         Map Service is used to retrieve map specific
+         information such as layers
+        </service-desc>
+	</service>
+
+    <service>
+        <service-id>ns</service-id>
+        <service-class>de.kp.ames.web.function.ns.NsServiceImpl</service-class>
+        <service-desc>
+         Namespace Service is used to retrieve namespace specific
+         information.
+        </service-desc>
+    </service>
+
+    <service>
+		<service-id>product</service-id>
+		<service-class>de.kp.ames.web.function.product.ProductServiceImpl</service-class>
+        <service-desc>
+         Product Service is used to retrieve product specific
+         information 
+        </service-desc>
+	</service>
+
+    <service>
+		<service-id>role</service-id>
+		<service-class>de.kp.ames.web.function.role.RoleServiceImpl</service-class>
+        <service-desc>
+         Role service is used to retrieve role &amp; rights
+         specific information
+        </service-desc>
+	</service>
+
+    <service>
+		<service-id>rule</service-id>
+		<service-class>de.kp.ames.web.function.rule.RuleServiceImpl</service-class>
+        <service-desc>
+         Rule service is used to access &amp; retrieve Rule-based information
+        </service-desc>
+	</service>
+    
+    <service>
+		<service-id>rss</service-id>
+		<service-class>de.kp.ames.web.core.rss.RssServiceImpl</service-class>
+        <service-desc>
+         RSS Service is used to provide actually registered
+         and temporarily cached registry objects as an RSS feed
+        </service-desc>
+	</service>
+
+    <service>
+		<service-id>security</service-id>
+		<service-class>de.kp.ames.web.function.security.SecurityServiceImpl</service-class>
+        <service-desc>
+         Security Service is used to register additional
+         user credentials (i.e. alias, keypass) that
+         are used to access external chat &amp; mail server
+        </service-desc>
+	</service>
+
+    <service>
+		<service-id>search</service-id>
+		<service-class>de.kp.ames.web.core.search.SearchServiceImpl</service-class>
+        <service-desc>
+         Core Search Service that supports access to
+         the Enterprise Search Server Solr
+        </service-desc>
+	</service>
+    
+    <service>
+		<service-id>symbol</service-id>
+		<service-class>de.kp.ames.web.function.symbol.SymbolServiceImpl</service-class>
+        <service-desc>
+         Symbol Service that supports access to
+         the APP-6B symbology
+        </service-desc>
+	</service>
+    
+    <service>
+		<service-id>scm</service-id>
+		<service-class>de.kp.ames.web.function.scm.ScmServiceImpl</service-class>
+        <service-desc>
+         SCM Service that supports the Semantic Software Catalog
+        </service-desc>
+	</service>
+
+    <service>
+		<service-id>transform</service-id>
+		<service-class>de.kp.ames.web.function.transform.TransformServiceImpl</service-class>
+        <service-desc>
+         Transform Service that supports the XSL
+         transformation of registry objects
+        </service-desc>
+	</service>
+
+    <service>
+		<service-id>upload</service-id>
+		<service-class>de.kp.ames.web.function.upload.UploadServiceImpl</service-class>
+        <service-desc>
+         Upload service that supports the upload and
+         malware scan of external files
+        </service-desc>
+	</service>
+
+    <service>
+		<service-id>user</service-id>
+		<service-class>de.kp.ames.web.function.user.UserServiceImpl</service-class>
+        <service-desc>
+         User service is used to retrieve user
+         specific information
+        </service-desc>
+	</service>
+
+    <service>
+		<service-id>vocab</service-id>
+		<service-class>de.kp.ames.web.core.vocab.VocabServiceImpl</service-class>
+        <service-desc>
+         Core Vocabulary Service is used to retrieve all
+         semantic information to classify other objects
+        </service-desc>
+	</service>
+
+    
+    <service>
+		<service-id>workshop</service-id>
+		<service-class>de.kp.ames.web.function.workshop.WorkshopServiceImpl</service-class>
+        <service-desc>
+         Workshop
+        </service-desc>
+	</service>
+</services>

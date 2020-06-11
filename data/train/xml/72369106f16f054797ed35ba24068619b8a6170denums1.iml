@@ -1,0 +1,25 @@
+package SAMPLE_PACKAGE {
+  display "Sample package"
+
+  component ENUMERATION {
+    display "Enumeration as Flavor Data"
+    legal_values  ["OPTION_1" "OPTION_2"]
+    default_value ["OPTION_1"]
+    flavor data
+
+    option ACIVE_IF_ENUMERATION_DUPLICATE {
+      display ""
+      requires [ENUMERATION_DUPLICATE == "OPTION_1"]
+      requires [ENUMERATION == "OPTION_1"]
+			default_value [20]
+      flavor data
+    }
+
+    option ENUMERATION_DUPLICATE {
+      display ""
+        legal_values  ["OPTION_1" "DATA"]
+        flavor data
+    }
+
+  }
+}

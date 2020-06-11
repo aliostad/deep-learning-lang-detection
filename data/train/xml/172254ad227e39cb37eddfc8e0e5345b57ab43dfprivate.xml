@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group name="ProcessWire Modules">
+            <file>file:/mnt/uloziste/Pracoviste/Projekty/ProcessWire-ProcessDeploy/ProcessDeploy.module</file>
+            <file>file:/mnt/uloziste/Pracoviste/Projekty/ProcessWire-ProcessDeploy/script/deployment_helper.php</file>
+            <file>file:/mnt/uloziste/Pracoviste/Projekty/ProcessWire-ProcessDeploy/script/mysql_table_dump.sh</file>
+            <file>file:/mnt/uloziste/Pracoviste/Projekty/ProcessWire-ProcessDeploy/ProcessDeploy.info.json</file>
+            <file>file:/mnt/uloziste/Pracoviste/Projekty/ProcessWire-ProcessDeploy/ProcessDeploy/Connection/SSH.php</file>
+            <file>file:/mnt/uloziste/Pracoviste/Projekty/ProcessWire-ProcessDeploy/ProcessDeploy/Connection/Local.php</file>
+            <file>file:/mnt/uloziste/Pracoviste/Projekty/ProcessWire-ProcessDeploy/ProcessDeploy/Diff.php</file>
+            <file>file:/mnt/uloziste/Pracoviste/Projekty/ProcessWire-ProcessDeploy/vendor/phpseclib/Net/SCP.php</file>
+            <file>file:/mnt/uloziste/Pracoviste/Projekty/ProcessWire-ProcessDeploy/ProcessDeploy/TableDiff.php</file>
+        </group>
+    </open-files>
+</project-private>

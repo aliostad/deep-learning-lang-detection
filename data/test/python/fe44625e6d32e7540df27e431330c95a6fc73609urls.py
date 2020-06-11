@@ -1,0 +1,35 @@
+from apply import views
+from django.conf.urls import patterns, url
+from django.contrib.auth import views as auth_views
+
+urlpatterns = patterns('',
+	url(r'^$', views.home, name='home'),
+	url(r'^profile/$', views.profile, name='profile'),
+	url(r'^contact/$', views.contact, name='contact'),
+	url(r'^login/$', views.applyLogin, name='login'),
+	url(r'^logout/$', views.applyLogout, name='logout'),
+	url(r'^change-password/$', auth_views.password_change, name='change'),
+	url(r'^change-password/done/$', auth_views.password_change_done, name='password_change_done'),
+	url(r'^reset-password/$', auth_views.password_reset, name='reset'),
+	url(r'^reset-password/done/$', auth_views.password_reset_done, name='password_reset_done'),
+	url(r'^reset-password/confirm/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$', auth_views.password_reset_confirm, name='resetconfirm'),
+	url(r'^reset-password/complete/$', auth_views.password_reset_complete, name='password_reset_complete'),
+	url(r'^register/$', views.applyRegister, name='register'),
+	#url(r'^settings/$', views.settings, name='settings'),
+	url(r'^manage/data/entries/$', views.entriesJson, name='entriesjson'),
+	url(r'^manage/people/$', views.managePeople, name='managepeople'),
+	url(r'^manage/people/(?P<id>\d+)/$', views.managePerson, name='manageperson'),
+	url(r'^manage/news/$', views.manageNews, name='managenews'),
+	url(r'^manage/publication/$', views.managePublication, name='managepublication'),
+	url(r'^manage/position/$', views.managePosition, name='manageposition'),
+	#url(r'^manage/applications/(?P<id>\d+)/$', views.manageEntries, name='manageapplications'),
+	url(r'^manage/entries/$', views.manageEntries, name='manageentries'),
+	url(r'^manage/entries/(?P<id>\d+)/$', views.manageEntry, name='manageentry'),
+	url(r'^manage/application/(?P<pos>\d+)/(?P<quarter>\w+)/(?P<year>\d+)/$', views.manageApplication, name='manageapp'),
+	url(r'^manage/application/delete/$', views.manageDeleteApp, name='managedeleteapp'),
+	url(r'^applications/$', views.publications, name='applications'),
+	url(r'^applications/(?P<slug>[-\w]+)/$', views.publication, name='publication'),
+	url(r'^applications/(?P<pub>[-\w]+)/(?P<pos>[-\w]+)/$', views.position, name='position'),
+	url(r'^applications/(?P<pub>[-\w]+)/(?P<pos>[-\w]+)/(?P<app>[-\w]+)/$', views.apply, name='apply'),
+
+)

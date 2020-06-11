@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    # base.viewtransitions
+\*------------------------------------*/
+
+
+[ui-view]{
+}
+.ui-view-container {
+    position: relative;
+}
+[ui-view].ng-enter, [ui-view].ng-leave {
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: all .5s ease-in-out;
+}
+[ui-view].ng-enter {
+    opacity: 0;
+    transform: translateY(-2em);
+}
+[ui-view].ng-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+[ui-view].ng-leave {
+    opacity: 1;
+    transform: translateY(0);
+}
+[ui-view].ng-leave-active {
+    opacity: 0;
+    transform: translateY(-2em);
+}

@@ -1,0 +1,111 @@
+﻿#uml-canvas {
+    min-height: 500px;
+    background-color: #efefef;
+}
+.uml-model {
+    z-index: 100;
+}
+.swimlane.uml-model {
+    z-index: 97;
+}
+.swimlane.uml-model.dragging-uml-model {
+    z-index: 99 !important;
+}
+.uml-model.ui-draggable-dragging {
+    z-index: 100;
+}
+
+.task {
+    border: 5px solid #03396c;
+    background-color: #99d7ff;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    line-height: 40px;
+    width: 100px;
+    text-align: center;
+}
+
+.start {
+    border: 5px solid #03396c;
+    background-color: #99d7ff;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    line-height: 40px;
+    width: 50px;
+    text-align: center;
+}
+
+.end {
+    border: 5px solid #03396c;
+    background-color: #99d7ff;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    line-height: 40px;
+    width: 50px;
+    text-align: center;
+}
+.uml-model-master {
+    position: relative;
+}
+.uml-model-instance {
+    position: absolute;
+}
+/*
+.swimlane.uml-model-instance {
+    position: relative;
+    padding: 5px;
+    width: 200px;
+    height: 600px;
+}
+    .swimlane.uml-model-instance .panel {
+        position: relative;
+        height: 100%;
+        margin: 0;
+    }
+    .swimlane.uml-model-instance .panel-body {
+        position: absolute;
+        top: 41px;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+        padding: 5px;
+    }
+*/
+.panel-horizontal .panel-body.swimlane-hover {
+    background: #fee2b7;
+}
+.panel-horizontal {
+    position: relative;
+    border: 1px solid #efefef;
+    width: 100%;
+    height: 152px;
+}
+.panel-horizontal .panel-heading {
+    position: absolute;
+    background-color: #efefef;
+    width: 25px;
+    top: 0;
+    bottom: 0;
+    background-color: blue;
+    text-align: center;
+    vertical-align: middle;
+    writing-mode: tb-rl;
+}
+.panel-horizontal .panel-body {
+    position: absolute;
+    float: left;
+    left: 30px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: green;
+}

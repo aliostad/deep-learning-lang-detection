@@ -1,0 +1,25 @@
+<t:layout xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd">
+    <head>
+        <title>HTSAnalyzer configure page</title>
+    </head>
+        <t:beaneditform t:id="htsanalyzeParameters" submitlabel="Configure!" >
+
+            <t:parameter name="species">
+                  <t:label for="speciesSet"/>:
+                  <t:select t:id="speciesSet" model="speciesSetModel" t:value="convertSpecies" t:blankOption="never"/>
+              </t:parameter>
+            <t:parameter name="initalIDs">
+                  <t:label for="initalIDsSet"/>:
+                  <t:select t:id="initalIDsSet" model="initalIDsSetModel" t:value="htsanalyzeParameters.initalIds" t:blankOption="never"/>
+              </t:parameter>
+            <t:parameter name="duplicateRemoverMethod">
+                  <t:label for="duplicateRemoverMethodSet"/>:
+                  <t:select t:id="duplicateRemoverMethodSet" model="duplicateRemoverMethodSetModel" t:value="htsanalyzeParameters.duplicateRemoverMethod" t:blankOption="never"/>
+              </t:parameter>
+       </t:beaneditform>
+
+
+    <body>
+
+    </body>
+</t:layout>

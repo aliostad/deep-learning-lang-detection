@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages id="electrictity">
+	<message id="send_dispatch">
+		{0}已经派发给你，请你尽快进行油机调度！
+	</message>
+	<message id="schedule_oilengine">
+		{0}已经派发调度任务给你，请你进行油机发电！
+	</message>
+	<message id="reply_task">
+		{0}已经提交回单给你，请你进行审核！
+	</message>
+	<message id="approve_not_passed">
+		{0}回单审核不通过，请你重新填写供电保障回单！
+	</message>
+	<message id="transfer_approve">
+		{0}回单已经转审给你，请你进行审核！
+	</message>
+	<message id="approve_passed">
+		{0}回单审核通过，供电保障流程已经结束！
+	</message>
+</messages>

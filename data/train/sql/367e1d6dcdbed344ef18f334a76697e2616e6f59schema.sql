@@ -1,0 +1,23 @@
+CREATE TABLE "energy_star_certified_vending_machines" (
+	"pd_id"	real,
+	"energy_star_partner"	text,
+	"model_name"	text,
+	"model_number_or_rebuilt_model_number"	text,
+	"additional_model_information"	text,
+	"product_type"	text,
+	"original_equipment_manufacturer_oem"	text,
+	"oem_model_name"	text,
+	"oem_model_number"	text,
+	"door_type"	text,
+	"machine_use_designation"	text,
+	"vendible_capacity"	real,
+	"energy_consumption_kwh_day"	real,
+	"refrigerated_volume_cubic_feet"	real,
+	"energy_saving_component_type"	text,
+	"energy_saving_kit_or_component_oem"	text,
+	"energy_saving_kit_or_component_model_number"	text,
+	"date_available_on_market"	timestamp,
+	"date_qualified"	timestamp,
+	"markets"	text,
+	"energy_star_model_identifier"	text
+);

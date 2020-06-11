@@ -1,0 +1,29 @@
+#!/bin/bash
+#
+# Script create with puppet. Run this by hand to do an initial .cvmfspublished file by hand
+# on a stratum zero.
+#
+# Should submit a request to have cvmfs_sever support a 'create' option.
+#
+sudo -H -u <%= @user %> sh -c "cvmfs_swissknife create \
+         -t <%= @spool_store %>/<%= @repo %>/tmp \
+         -r  local,<%= @repo_store %>/<%= @repo %>/data/txn,<%= @repo_store %>/<%= @repo %> \
+         -n <%= @repo %> \
+         -R <%= @spool_store %>/<%= @repo %>/reflog.chksum \
+         -a sha1 \
+<% if @garbage_collection -%>
+         -z \
+<% end -%>
+         -o <%= @spool_store %>/<%= @repo %>/tmp/new_manifest" 
+
+sudo -H -u <%= @user %> sh -c "cvmfs_swissknife sign \
+    -c /etc/cvmfs/keys/<%= @repo %>.crt \
+    -k /etc/cvmfs/keys/<%= @repo %>.key \
+    -n <%= @repo %> \
+    -u http://localhost/cvmfs/<%= @repo %> \
+    -R <%= @spool_store %>/<%= @repo %>/reflog.chksum \
+    -m <%= @spool_store %>/<%= @repo %>/tmp/new_manifest \
+    -t <%= @spool_store %>/<%= @repo %>/tmp \
+    -r local,<%= @repo_store %>/<%= @repo %>/data/txn,<%= @repo_store %>/<%= @repo %>"
+
+

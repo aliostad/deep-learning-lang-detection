@@ -1,0 +1,50 @@
+
+#load-impact table {
+    border-collapse: separate;
+}
+
+#load-impact th {
+    text-align: left;
+    padding: 0.25em;
+    padding-right: 1em;
+    vertical-align: top;
+    background-color: #115822;
+    color: #ffffff;
+}
+
+#load-impact td {
+    width: 40em;
+    text-align: left;
+    padding: 0.25em;
+    padding-left: .5em;
+    vertical-align: top;
+    background-color: #ebebeb;
+}
+
+#load-impact ul {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    padding-left: 0em;
+    list-style-type: none;
+}
+
+#load-impact li {
+    /*list-style-type: square;*/
+    /*margin-left: 0px;*/
+}
+
+#load-impact .transparent {
+    background-color: transparent;
+    color: #111;
+}
+
+#load-impact .error {
+    color: red;
+}
+
+#load-impact .error-box {
+    color: red;
+    font-weight: bold;
+    border: thin solid red;
+    padding: 0.5em;
+}

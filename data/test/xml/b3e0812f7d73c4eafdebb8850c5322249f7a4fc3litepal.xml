@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="demo" ></dbname>
+
+    <version value="1" ></version>
+
+    <list>
+        <mapping class="com.xingshijie.calltheroll.DB.Student"></mapping>
+        <mapping class="com.xingshijie.calltheroll.DB.TheClass"></mapping>
+        <mapping class="com.xingshijie.calltheroll.DB.CallTheRoll"></mapping>
+        <mapping class="com.xingshijie.calltheroll.DB.CallTheRollRecord"></mapping>
+        <mapping class="com.xingshijie.calltheroll.DB.AttendanceCount"></mapping>
+    </list>
+</litepal>

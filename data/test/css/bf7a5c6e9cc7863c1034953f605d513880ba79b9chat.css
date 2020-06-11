@@ -1,0 +1,70 @@
+
+.message {
+    text-align:left;
+}
+
+.message h2 {
+    background: #efefef;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    text-align: right;
+    border-right: 1px solid #ccc;
+}
+
+.message p {
+    font-size: 12px;
+    padding: 5px;
+    background: #FFFFCC;
+    margin: 0 0 0 5px;
+}
+
+.message.vous * {
+    background: #FFCCFF;
+}
+
+.message.action * {
+    font-style: italic;
+}
+
+.message.important * {
+    background: #c00;
+    color: #fff;
+}
+
+.message.notice h2 {
+    visibility: hidden;
+}
+
+.message.notice p {
+    margin: 0;
+    padding-left: 25px;
+}
+
+#newMessage {
+    left: 14px;
+    right: 14px;
+}
+
+#newMessage #message {
+    width: 70%;
+    padding: 5px;
+}
+
+.miniButton {
+	margin:0px;
+	font-size: x-small;	
+	padding:1px 1px;
+}
+
+#send {
+	margin:0px;
+	padding:1px 1px;
+}

@@ -1,0 +1,191 @@
+/* layoutctrl.css -- copal-css.net, 2013-07-25 */
+
+/* Activation pads/buttons ... */
+
+a.layoutctrl-sl, a.layoutctrl-ha {
+	display: block;
+	height: 30px;
+	width: 30px;
+	border: none;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	cursor: pointer;
+	font-family: "Helvetica Neue", "Arial", sans-serif;
+	text-decoration: none !important;
+	text-align: center;
+	font-size: 14px;
+	line-height: 14px;
+}
+a.layoutctrl-ha {
+	left: 0;
+}
+.show-layout a.layoutctrl-sl,
+.show-annotations a.layoutctrl-sl,
+.show-layout a.layoutctrl-ha,
+.show-annotations a.layoutctrl-ha {
+	padding: 9px 5px 11px 5px;
+	width: 130px;
+	height: auto;
+	border: 2px solid #999;
+	border-color: rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	background-color: white;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+a.layoutctrl-sl:before,
+a.layoutctrl-ha:before {
+	color: #333;
+}
+.show-annotations a.layoutctrl-sl:before { content: 'Show Layout'; }
+.show-layout a.layoutctrl-sl:before      { content: 'Hide Layout'; }
+.show-layout a.layoutctrl-ha:before      { content: 'Show Annotations'; }
+.show-annotations a.layoutctrl-ha:before { content: 'Hide Annotations'; }
+
+
+
+
+/* Show/hide annotations modifier ... */
+
+.show-annotations del   { text-decoration: line-through; color: gray; }
+.show-annotations ins   { text-decoration: underline; color: green; }
+.show-annotations mark,
+.show-annotations .mark { background-color: yellow; }
+.show-annotations span.annot,
+.show-annotations span.dim { display: inline; }
+.show-annotations div.annot,
+.show-annotations div.dim  { display: block; }
+.show-annotations .annot {
+	background-color: yellow;
+	color: red;
+}
+.show-annotations .dim {
+	background-color: inherit !important;
+	color: gray;
+}
+.show-annotations del[title]:before,
+.show-annotations ins[title]:before,
+.show-annotations mark[title]:before,
+.show-annotations .mark[title]:before,
+.show-annotations .annot[title]:before,
+.show-annotations .dim[title]:before {
+	content: '[' attr(title) '] ';
+	color: red;
+}
+
+.hide-annotations del    { display: none; }
+.hide-annotations ins,
+.hide-annotations ins *  { text-decoration: inherit; color: inherit; }
+.hide-annotations mark,
+.hide-annotations .mark  { background-color: inherit; }
+.hide-annotations .annot,
+.hide-annotations .dim   { display: none; }
+
+
+/* Extended show annotations modifier ... */
+
+.show-annotations abbr,
+.show-annotations acronym {
+	border-bottom: 1px dotted gray;
+}
+.show-annotations abbr[title]:after,
+.show-annotations acronym[title]:after {
+	content: '[' attr(lang) ': ' attr(title) ']';
+	color: gray;
+}
+.show-annotations a {
+	text-decoration: underline;
+}
+.show-annotations h1 a[href]:after,
+.show-annotations h2 a[href]:after,
+.show-annotations h3 a[href]:after,
+.show-annotations h4 a[href]:after,
+.show-annotations h5 a[href]:after,
+.show-annotations h6 a[href]:after,
+.show-annotations blockquote a[href]:after,
+.show-annotations p a[href]:after,
+.show-annotations table a[href]:after,
+.show-annotations li a[href]:after,
+.show-annotations dt a[href]:after,
+.show-annotations dd a[href]:after {
+	content: ' [' attr(href) ']';
+	color: gray;
+}
+.show-annotations h1 [class],
+.show-annotations h2 [class],
+.show-annotations h3 [class],
+.show-annotations h4 [class],
+.show-annotations h5 [class],
+.show-annotations h6 [class],
+.show-annotations blockquote [class],
+.show-annotations p [class],
+.show-annotations table [class],
+.show-annotations li [class],
+.show-annotations dt [class],
+.show-annotations dd [class] {
+	background-color: #E6E6E6;
+	background-color: rgba(204, 204, 204, 0.33);
+}
+.show-annotations h1 [class]:before,
+.show-annotations h2 [class]:before,
+.show-annotations h3 [class]:before,
+.show-annotations h4 [class]:before,
+.show-annotations h5 [class]:before,
+.show-annotations h6 [class]:before,
+.show-annotations blockquote [class]:before,
+.show-annotations p [class]:before,
+.show-annotations table [class]:before,
+.show-annotations li [class]:before,
+.show-annotations dt [class]:before,
+.show-annotations dd [class]:before {
+	content: '[.' attr(class) ']';
+	color: gray;
+}
+
+
+/* Show layout modifier ... */
+
+body.show-layout     {
+	background-image: url(show-layout.grid.10x10.gif);
+}
+.show-layout img,
+.show-layout object  {
+	background-image: url(show-layout.checker.png) !important;
+}
+* html .show-layout img,
+* html .show-layout object  { /* MSIE 6 */
+	background-image: url(show-layout.checker.gif) !important;
+}
+.show-layout div     { background-image: url(show-layout.div.1.gif); }
+.show-layout div div { background-image: url(show-layout.div.2.gif); }
+.show-layout div div div {
+	background-image: url(show-layout.div.3.gif);
+}
+.show-layout div div div div {
+	background-image: url(show-layout.div.4.gif);
+}
+.show-layout div div div div div {
+	background-image: url(show-layout.div.1.gif);
+}
+.show-layout div div div div div div {
+	background-image: url(show-layout.div.2.gif);
+}
+.show-layout div div div div div div div {
+	background-image: url(show-layout.div.3.gif);
+}
+.show-layout div div div div div div div div {
+	background-image: url(show-layout.div.4.gif);
+}
+.show-layout div div div div div div div div div {
+	background-image: url(show-layout.div.1.gif);
+}
+.show-layout div div div div div div div div div div {
+	background-image: url(show-layout.div.2.gif);
+}
+.show-layout div div div div div div div div div div div {
+	background-image: url(show-layout.div.3.gif);
+}
+.show-layout div div div div div div div div div div div div {
+	background-image: url(show-layout.div.4.gif);
+}
+

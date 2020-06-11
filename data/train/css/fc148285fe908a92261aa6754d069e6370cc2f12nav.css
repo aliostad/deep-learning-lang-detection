@@ -1,0 +1,63 @@
+/* line 4, nav.sass */
+.nav {
+  width: 100%;
+  height: 80px;
+}
+/* line 7, nav.sass */
+.nav h2 {
+  font-size: 24px;
+  float: left;
+}
+/* line 12, nav.sass */
+.nav .menu {
+  float: left;
+}
+/* line 14, nav.sass */
+.nav .menu ul {
+  height: 40px;
+}
+/* line 16, nav.sass */
+.nav .menu li {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+/* line 22, nav.sass */
+.nav .menu li.cur {
+  color: #ff6600;
+}
+/* line 24, nav.sass */
+.nav .menu .menu_info {
+  display: none;
+}
+/* line 26, nav.sass */
+.nav .menu dl {
+  display: none;
+  height: 40px;
+}
+/* line 29, nav.sass */
+.nav .menu dd, .nav .menu dt {
+  float: left;
+  padding: 0 10px;
+}
+/* line 34, nav.sass */
+.nav .member {
+  line-height: 40px;
+  float: right;
+}
+/* line 37, nav.sass */
+.nav .member ul {
+  display: none;
+}
+/* line 41, nav.sass */
+.nav .message {
+  float: right;
+  line-height: 40px;
+  margin-left: 16px;
+}
+/* line 45, nav.sass */
+.nav .message dl {
+  display: none;
+}

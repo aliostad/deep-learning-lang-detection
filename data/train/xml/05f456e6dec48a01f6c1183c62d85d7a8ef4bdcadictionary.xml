@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="it.datiaperti.osgi.scr.xml.dictionary.service.api.DictionaryService" immediate="false">
+  <implementation class="it.datiaperti.osgi.scr.xml.dictionary.service.impl.DictionaryServiceImpl" />
+  <property name="service.name" value="Dictionary Service"/>
+  <property name="service.description" value="Dictionary Service based on OSGi Declarative Service" />
+  <property name="service.vendor" value="Dati Aperti" />
+  <service>
+    <provide interface="it.datiaperti.osgi.scr.xml.dictionary.service.api.DictionaryService" />
+  </service>
+</component>

@@ -1,0 +1,199 @@
+﻿/*************************************************************
+ * Command:Start
+ * Control:Header.LogoQueryQuick
+ * Style:Header_LogoQueryQuick
+ * Desc:Header.LogoQueryQuick部件的样式
+ * Quot:site.home|site.welcome
+*************************************************************/
+.Header_LogoQueryQuick #logo
+{
+    float: left;
+    width: 255px;
+    padding-top: 18px;
+}
+
+.Header_LogoQueryQuick .web_tool
+{
+    float: right;
+    width: 679px;
+    text-align: right;
+    height: 100px;
+    position: relative;
+}
+.Header_LogoQueryQuick .web_tip
+{
+    height: 31px;
+    line-height: 31px;
+}
+.Header_LogoQueryQuick .web_tip a
+{
+    height: 21px;
+    line-height: 21px;
+    display: inline-block;
+    padding: 0px 5px 0px 17px;
+    color: #000000;
+    background: url(../images/tool.gif) no-repeat left 3px;
+}
+.Header_LogoQueryQuick .web_tip a.wap
+{
+    background: url(../images/tool.gif) no-repeat 1px -16px;
+    padding-left: 17px;
+    padding-right: 7px;
+}
+.Header_LogoQueryQuick .web_tip a.fav
+{
+    background: url(../images/tool.gif) no-repeat left -36px;
+    padding-right: 0px;
+}
+.Header_LogoQueryQuick .web_tip a.home
+{
+    background: url(../images/tool.gif) no-repeat left -55px;
+    padding-right: 0px;
+    padding-left: 19px;
+}
+.Header_LogoQueryQuick .web_tip a.rss
+{
+    padding-right: 5px;
+}
+.Header_LogoQueryQuick .web_tip a.ask
+{
+    background: url(../images/tool.gif) no-repeat left -84px;
+}
+.Header_LogoQueryQuick .web_tip a.searches
+{
+    background: url(../images/tool.gif) no-repeat left -111px;
+}
+.Header_LogoQueryQuick .web_tip a.reg
+{
+    background: url(../images/tool.gif) no-repeat left -137px;
+    padding-right: 8px;
+}
+.Header_LogoQueryQuick .web_tip a:hover
+{
+    color: #cc0000;
+}
+/*************全模型搜索*************/
+.Header_LogoQueryQuick .top
+{
+    height: 100px;
+}
+.Header_LogoQueryQuick .full_model_search
+{
+    height: 26px;
+    width: 527px;
+    background: url(../images/back.gif) left -778px;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    text-align: left;
+    padding-left: 5px;
+    padding-top: 4px;
+}
+.Header_LogoQueryQuick .full_model_search input.model_search
+{
+    width: 253px;
+    padding-top: 3px;
+    height: 15px;
+    border: none;
+    background: none;
+    padding-left: 55px;
+    color: #c0c0c0;
+}
+.Header_LogoQueryQuick .full_model_search input.model_search_click
+{
+    width: 67px;
+    padding-top: 3px;
+    height: 22px;
+    background: url(../images/back.gif) no-repeat -735px -118px;
+    border: none;
+    margin-left: 7px;
+}
+.Header_LogoQueryQuick .full_model_search a
+{
+    color: #333;
+    padding: 0px 3px;
+}
+.Header_LogoQueryQuick .full_model_search a.model_search_all
+{
+    background: url(../images/model_search.gif) no-repeat left center;
+    height: 30px;
+}
+.Header_LogoQueryQuick .full_model_search a:hover
+{
+    color: #cc0000;
+    text-decoration: underline;
+}
+
+/*************下拉选项***********/
+.Header_LogoQueryQuick .model_list, .model_project
+{
+    width: 50px;
+    position: absolute;
+    top: 85px;
+    left: 152px;
+    z-index: 3;
+}
+.Header_LogoQueryQuick .model_project
+{
+    z-index: 9;
+    top: 68px;
+    left: 147px;
+}
+.Header_LogoQueryQuick .model_project a
+{
+    color: #8a8d8c;
+    padding-right: 15px;
+    background: url(../images/ico_down.gif) no-repeat right center;
+}
+.Header_LogoQueryQuick .model_project a:hover
+{
+    color: #cc0000;
+}
+.Header_LogoQueryQuick .model_list
+{
+    border: 1px solid #ccc;
+    background: #fff;
+    border-top: none;
+    display: none;
+}
+.Header_LogoQueryQuick .model_list ul
+{
+    height: auto !important;
+    min-height: 80px;
+    height: 80px;
+    padding: 0px;
+}
+.Header_LogoQueryQuick .model_list li
+{
+    text-align: left;
+}
+.Header_LogoQueryQuick .model_list li a
+{
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    color: #333;
+    padding-left: 5px;
+}
+.Header_LogoQueryQuick .model_list li a:hover
+{
+    color: #000;
+    background: #f0f0f0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+/*************************************************************
+ * Command:End
+ * Control:Header.LogoQueryQuick
+ * Style:Header_LogoQueryQuick
+ * Desc:Header.LogoQueryQuick部件的样式
+ * Quot:site.home|site.welcome
+*************************************************************/
+
+
+
+
+

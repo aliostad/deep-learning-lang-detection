@@ -1,0 +1,48 @@
+SET DEFINE OFF;
+CREATE TABLE L_MRKFEEDBACK
+(
+  FEEDBACKID      NUMBER(10),
+  RESNUMBER       NUMBER(10),
+  CONTACTID       NUMBER(10),
+  ADDITIONALDATA  CLOB,
+  WHOSTAMP        VARCHAR2(250 BYTE),
+  DATESTAMP       DATE
+)
+LOB (ADDITIONALDATA) STORE AS (
+  TABLESPACE  DTW_ADV_TABLES
+  ENABLE      STORAGE IN ROW
+  CHUNK       16384
+  RETENTION
+  NOCACHE
+  LOGGING
+      STORAGE    (
+                  INITIAL          80K
+                  NEXT             1M
+                  MINEXTENTS       1
+                  MAXEXTENTS       UNLIMITED
+                  PCTINCREASE      0
+                  BUFFER_POOL      DEFAULT
+                  FLASH_CACHE      DEFAULT
+                  CELL_FLASH_CACHE DEFAULT
+                 ))
+TABLESPACE DTW_ADV_TABLES
+RESULT_CACHE (MODE DEFAULT)
+PCTUSED    0
+PCTFREE    10
+INITRANS   1
+MAXTRANS   255
+STORAGE    (
+            INITIAL          80K
+            NEXT             1M
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+            FLASH_CACHE      DEFAULT
+            CELL_FLASH_CACHE DEFAULT
+           )
+LOGGING 
+NOCOMPRESS 
+NOCACHE
+NOPARALLEL
+MONITORING;

@@ -1,0 +1,25 @@
+#!/bin/bash -l
+#$ -S /bin/bash
+#$ -P RCSoftDev
+#$ -l h_rt=${wall}
+#$ -l mem=16G
+#$ -N Bluclobber
+#$ -pe openmpi ${processes}
+#$ -wd ${run_at}
+module unload compilers
+module unload mpi
+module load compilers/gnu/4.6.3
+module load mpi/openmpi/1.6.5/gnu.4.6.3
+module load python/2.7.3
+module load rsd-modules
+module load mpi4py
+module load pyyaml
+module load libxml
+module load libxslt
+module load lxml
+%if subsample:
+gerun /home/${user}/.local/bin/bluclobber ${dest_query} ${corpus} --downsample ${subsample} ${bybook} --outpath ${outpath}
+
+%else:
+gerun /home/${user}/.local/bin/bluclobber ${dest_query} ${corpus} ${bybook} --outpath ${outpath}
+%endif

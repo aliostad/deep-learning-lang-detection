@@ -1,0 +1,71 @@
+package names
+
+func awesomeness(x int) string {
+    switch x {
+    case 0:
+        return "adventurous"
+    case 1:
+        return "affable"
+    case 2:
+        return "affectionate"
+    case 3:
+        return "agreeable"
+    case 4:
+        return "amicable"
+    case 5:
+        return "charming"
+    case 6:
+        return "communicative"
+    case 7:
+        return "compassionate"
+    case 8:
+        return "conscientious"
+    case 9:
+        return "considerate"
+    case 10:
+        return "emotional"
+    case 11:
+        return "enthusiastic"
+    case 12:
+        return "faithful"
+    case 13:
+        return "friendly"
+    case 14:
+        return "funny"
+    case 15:
+        return "generous"
+    case 16:
+        return "gentle"
+    case 17:
+        return "good"
+    case 18:
+        return "kind"
+    case 19:
+        return "loving"
+    case 20:
+        return "modest"
+    case 21:
+        return "nice"
+    case 22:
+        return "optimistic"
+    case 23:
+        return "passionate"
+    case 24:
+        return "rational"
+    case 25:
+        return "sensible"
+    case 26:
+        return "sensitive"
+    case 27:
+        return "sociable"
+    case 28:
+        return "sympathetic"
+    case 29:
+        return "thoughtful"
+    case 30:
+        return "understanding"
+    case 31:
+        return "warmhearted"
+    }
+    return "loving"
+}

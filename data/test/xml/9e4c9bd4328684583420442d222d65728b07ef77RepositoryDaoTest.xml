@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Scenarii SYSTEM "http://scenarii.dtd">
+<Scenarii name="AUTOMATIC">
+    <Scenario id="REPOSITORY">
+        <input>
+            <table name="PM_REPOSITORY" identityInsert="true">
+                <row inheritId="MichelId">
+                    <field name="REPOSITORY_ID" value="1"/>
+                    <field name="REPOSITORY_NAME" value="REPO1"/>
+                </row>
+                <row inheritId="MichelId">
+                    <field name="REPOSITORY_ID" value="2"/>
+                    <field name="REPOSITORY_NAME" value="REPO2"/>
+                </row>
+                <row id="MichelId">
+                    <field name="REPOSITORY_ID" value="3"/>
+                    <field name="REPOSITORY_NAME" value="REPO3"/>
+                </row>
+            </table>
+        </input>
+        <etalon>
+            <table name="PM_REPOSITORY" identityInsert="true">
+                <row inheritId="MichelId">
+                    <field name="REPOSITORY_ID" value="1"/>
+                    <field name="REPOSITORY_NAME" value="REPO1"/>
+                </row>
+                <row inheritId="MichelId">
+                    <field name="REPOSITORY_ID" value="2"/>
+                    <field name="REPOSITORY_NAME" value="REPO2"/>
+                </row>
+                <row>
+                    <field name="REPOSITORY_ID" value="3"/>
+                    <field name="REPOSITORY_NAME" value="REPO3"/>
+                </row>
+            </table>
+        </etalon>
+    </Scenario>
+    <Scenario id="REPOSITORY_DELETE">
+        <input>
+            <table name="PM_REPOSITORY" identityInsert="true">
+                <row>
+                    <field name="REPOSITORY_ID" value="1"/>
+                    <field name="REPOSITORY_NAME" value="REP1"/>
+                </row>
+                <row>
+                    <field name="REPOSITORY_ID" value="2"/>
+                    <field name="REPOSITORY_NAME" value="REP2"/>
+                </row>
+            </table>
+            <table name="PM_REPOSITORY_CONTENT" identityInsert="true">
+                <row>
+                    <field name="REPOSITORY_ID" value="1"/>
+                    <field name="REPOSITORY_CONTENT_ID" value="11"/>
+                    <field name="TREATMENT_ID" value="monTraitement1"/>
+                    <field name="CONTENT" value="toto11"/>
+                </row>
+                <row>
+                    <field name="REPOSITORY_ID" value="1"/>
+                    <field name="REPOSITORY_CONTENT_ID" value="12"/>
+                    <field name="TREATMENT_ID" value="monTraitement2"/>
+                    <field name="CONTENT" value="toto12"/>
+                </row>
+                <row>
+                    <field name="REPOSITORY_ID" value="2"/>
+                    <field name="REPOSITORY_CONTENT_ID" value="21"/>
+                    <field name="TREATMENT_ID" value="monTraitement3"/>
+                    <field name="CONTENT" value="toto21"/>
+                </row>
+                <row>
+                    <field name="REPOSITORY_ID" value="2"/>
+                    <field name="REPOSITORY_CONTENT_ID" value="22"/>
+                    <field name="TREATMENT_ID" value="monTraitement3"/>
+                    <field name="CONTENT" value="toto22"/>
+                </row>
+            </table>
+        </input>
+        <etalon>
+            <table name="PM_REPOSITORY" identityInsert="true" orderClause="REPOSITORY_ID">
+                <row>
+                    <field name="REPOSITORY_ID" value="1"/>
+                    <field name="REPOSITORY_NAME" value="REP1"/>
+                </row>
+            </table>
+            <table name="PM_REPOSITORY_CONTENT" identityInsert="true"
+                   orderClause="REPOSITORY_ID">
+                <row>
+                    <field name="REPOSITORY_ID" value="1"/>
+                    <field name="REPOSITORY_CONTENT_ID" value="11"/>
+                    <field name="TREATMENT_ID" value="monTraitement1"/>
+                    <field name="CONTENT" value="toto11"/>
+                </row>
+                <row>
+                    <field name="REPOSITORY_ID" value="1"/>
+                    <field name="REPOSITORY_CONTENT_ID" value="12"/>
+                    <field name="TREATMENT_ID" value="monTraitement2"/>
+                    <field name="CONTENT" value="toto12"/>
+                </row>
+            </table>
+        </etalon>
+    </Scenario>
+    <Scenario id="REPOSITORY_NEW">
+        <input>
+            <table name="PM_REPOSITORY">
+                <row>
+                    <field name="REPOSITORY_ID" value="1"/>
+                    <field name="REPOSITORY_NAME" value="REP1"/>
+                </row>
+            </table>
+        </input>
+        <etalon>
+            <table name="PM_REPOSITORY" orderClause="REPOSITORY_ID">
+                <row>
+                    <field name="REPOSITORY_ID" value="1"/>
+                    <field name="REPOSITORY_NAME" value="REP1"/>
+                </row>
+                <row>
+                    <field name="REPOSITORY_ID" value="2"/>
+                    <field name="REPOSITORY_NAME" value="REP2"/>
+                </row>
+            </table>
+        </etalon>
+    </Scenario>
+</Scenarii>

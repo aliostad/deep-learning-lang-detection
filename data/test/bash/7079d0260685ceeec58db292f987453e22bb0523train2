@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+set -x
+
+MODEL=model
+SAMPLES=samples
+CLASS=cc.mallet.fst.SimpleTagger
+## --gaussian-variance 0.01 
+## --fully-connected false
+TRAINING_OPTS="--default-label D0 --fully-connected true --viterbi-output true --orders 1"
+rm -rf target
+mkdir -p target
+TRAINING_SAMPLE=target/sample
+SAME_SAMPLE=1
+rm -rf $MODEL
+
+SAMPLE_FILES=($(find ${SAMPLES} -type f))
+
+for SAMPLE_FILE in "${SAMPLE_FILES[@]}"
+do
+	echo "Training file $SAMPLE_FILE"
+	cat $SAMPLE_FILE
+
+	if [ -f $MODEL ] && [ $SAME_SAMPLE -eq 1 ]
+	then
+		echo "" >> $TRAINING_SAMPLE
+	fi
+
+	cat $SAMPLE_FILE >> $TRAINING_SAMPLE
+
+	../mallet $CLASS ${TRAINING_OPTS} --train true --model-file $MODEL ${TRAINING_SAMPLE}
+
+	echo "Test====>"
+	./test
+	echo "<====Test"
+done

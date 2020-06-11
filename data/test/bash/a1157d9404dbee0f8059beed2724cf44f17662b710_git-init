@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+set -eo pipefail; [[ -n "$PLUSHU_TRACE" ]] && set -x
+
+git_hooks_dir=$PLUSHU_PLUGIN_PATH/git-hooks
+
+repo_path=$PLUSHU_REPOS_DIR/$1.git
+
+# If the repo does not yet exist
+if [[ ! -d "$repo_path/hooks" ]]; then
+
+  # Initialize the repo
+  git init --bare "$repo_path" > /dev/null
+
+  # Link to this plugin's hooks
+  rm -rf "$repo_path/hooks"
+  ln -s "$git_hooks_dir" "$repo_path/hooks"
+fi
+
+# If running as root
+if [[ "$EUID" == 0 ]]; then
+  # make sure plushu owns the repo
+  chown -R "$PLUSHU_USER:" "$repo_path"
+fi

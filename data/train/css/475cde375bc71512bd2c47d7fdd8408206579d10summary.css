@@ -1,0 +1,75 @@
+#messages div.message {
+	width: 728px;
+	padding: 10px;
+	background: #444;
+	margin-bottom: 10px;
+	position: relative;
+
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#messages div.message.unread {
+	background: #333;
+}
+
+#messages div.message div.status {
+	position: absolute;
+	top: 31px;
+	left: 10px;
+}
+
+#messages div.message div.avatar {
+	float: left;
+	margin: 0 10px 0 26px;
+}
+
+#messages div.message div.message_content h1 {
+	font-size: 1.6em;
+	line-height: 1.8em;
+	margin: 0 15px 0;
+	font-weight: normal;
+}
+
+#messages div.message div.message_content p {
+	font-size: 1.2em;
+	line-height: 1.2em;
+	margin: 0 15px 15px 0;
+}
+
+#messages div.message.unread div.message_content h1,
+#messages div.message.unread div.message_content p {
+	font-weight: bold;
+}
+
+#messages div.message div.time {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+#messages div.message div.time p {
+	color: #888;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+#messages p.empty {
+	font-size: 1.6em;
+	font-weight: bold;
+	text-align: center;
+	line-height: 8.0em;
+}
+
+#messages div.message div.delete {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#messages div.message div.reply {
+	position: absolute;
+	top: 30px;
+	right: 10px;
+}

@@ -1,0 +1,24 @@
+<services>
+
+    <service id="operatorlog">
+        <class>operatorlog_logs</class>
+    </service>
+    <service id="operatorlog.b2c_mdl_goods">
+        <class>operatorlog_goods</class>
+    </service>
+    <service id="operatorlog.b2c_mdl_members">
+        <class>operatorlog_members</class>
+    </service>
+    <service id="operatorlog.ectools_mdl_payments">
+        <class>operatorlog_payments</class>
+    </service>
+    <service id="operatorlog.ectools_mdl_refunds">
+        <class>operatorlog_refunds</class>
+    </service>
+    <service id="operatorlog.b2c_mdl_delivery">
+        <class>operatorlog_delivery</class>
+    </service>
+    <service id="operatorlog.b2c_mdl_reship">
+        <class>operatorlog_reship</class>
+    </service>
+</services>

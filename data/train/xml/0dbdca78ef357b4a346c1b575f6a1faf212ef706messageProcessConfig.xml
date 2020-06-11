@@ -1,0 +1,63 @@
+<ServerProcess>
+  <Process processClass="com.test.wdoctor.network.messageProcess.LoginResponseMessageProcess">
+    <messageType>800013</messageType>
+    <processName>LoginResponseMessageProcess</processName>
+    <desc>登陆相应消息的处理器</desc>
+  </Process>
+  <Process processClass="com.csu.client.module.messageProcess.RepeatLoginMessageProcess">
+    <messageType>100113</messageType>
+    <processName>RepeatLoginMessageProcess</processName>
+    <desc>重复登陆消息的处理器</desc>
+  </Process>
+  <Process processClass="com.test.wdoctor.network.messageProcess.TalkMessageProcess">
+    <messageType>100021</messageType>
+    <processName>TalkMessageProcess</processName>
+    <desc>聊天消息的处理器</desc>
+  </Process>
+  <Process processClass="com.csu.client.module.messageProcess.ShockFrameMessageProcess">
+    <messageType>100026</messageType>
+    <processName>ShockFrameMessageProcess</processName>
+    <desc>震动聊天框消息的处理器</desc>
+  </Process>
+   <Process processClass="com.csu.client.module.messageProcess.SysMessageProcess">
+    <messageType>100010</messageType>
+    <processName>SysMessageProcess</processName>
+    <desc>系统消息的处理器</desc>
+  </Process>
+  <Process processClass="com.test.wdoctor.network.messageProcess.GroupMessageProcess">
+    <messageType>100027</messageType>
+    <processName>GroupMessageProcess</processName>
+    <desc>系统发送的好友列表消息的处理器</desc>
+  </Process>
+  <Process processClass="com.csu.client.module.messageProcess.FileRequestProcess">
+    <messageType>100023</messageType>
+    <processName>FileRequestProcess</processName>
+    <desc>客户收到的文件传输请求消息的处理器</desc>
+  </Process>
+  <Process processClass="com.csu.client.module.messageProcess.FileResponseProcess">
+    <messageType>800023</messageType>
+    <processName>FileResponseProcess</processName>
+    <desc>客户收到的响应文件传输请求消息的处理器</desc>
+  </Process>
+  <Process processClass="com.csu.client.module.messageProcess.FileMessageProcess">
+    <messageType>100022</messageType>
+    <processName>FileMessageProcess</processName>
+    <desc>收到文件收到的响应消息的处理器</desc>
+  </Process>
+  <Process processClass="com.csu.client.module.messageProcess.FileGetedResponseProcess">
+    <messageType>800022</messageType>
+    <processName>FileGetedResponseProcess</processName>
+    <desc>收到文件收到的响应消息的处理器</desc>
+  </Process>
+  <Process processClass="com.csu.client.module.messageProcess.CinemaRequestProcess">
+    <messageType>100028</messageType>
+    <processName>CinemaMessageProcess</processName>
+    <desc>处理收到的视频请求消息的处理器</desc>
+  </Process>
+  <Process processClass="com.csu.client.module.messageProcess.CinemaResponseProcess">
+    <messageType>800028</messageType>
+    <processName>CinemaMessageProcess</processName>
+    <desc>处理收到回应视频请求消息的处理器</desc>
+  </Process>
+ 
+</ServerProcess>

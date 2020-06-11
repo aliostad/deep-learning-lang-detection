@@ -1,0 +1,21 @@
+<apiPackage id="com.supermap.framework.commands"><apiName>com.supermap.framework.commands</apiName><apiDetail/><apiClassifier id="com.supermap.framework.commands:Command"><apiName>Command</apiName><shortdesc>
+      该类描述了事件回调后的处理逻辑.主要职责是接受事件回调函数返回的事件类型,并从中获取数据.</shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>com.supermap.framework.commands:ICommand</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+      该类描述了事件回调后的处理逻辑.主要职责是接受事件回调函数返回的事件类型,并从中获取数据.
+    
+    </apiDesc></apiClassifierDetail><apiConstructor id="com.supermap.framework.commands:Command:Command"><apiName>Command</apiName><shortdesc>
+          构造函数
+         </shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
+          构造函数
+         </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="com.supermap.framework.commands:Command:execute"><apiName>execute</apiName><shortdesc>
+          绑定事件类型的回调处理函数,一般需要在自定义的Command类里覆写该方法
+          </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>event</apiItemName><apiOperationClassifier>com.supermap.framework.events:BaseEvent</apiOperationClassifier><apiDesc>        </apiDesc></apiParam></apiOperationDef><apiDesc>
+          绑定事件类型的回调处理函数,一般需要在自定义的Command类里覆写该方法
+          </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="com.supermap.framework.commands:ICommand"><apiName>ICommand</apiName><shortdesc>
+     命令处理接口
+     </shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+     命令处理接口
+     </apiDesc></apiClassifierDetail><related-links><link href="com.supermap.framework.commands.xml#Command"><linktext>com.supermap.framework.commands.Command</linktext></link></related-links><apiOperation id="com.supermap.framework.commands:ICommand:com.supermap.framework.commands:ICommand:execute"><apiName>execute</apiName><shortdesc>
+         命令处理回调函数
+         </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>event</apiItemName><apiOperationClassifier>com.supermap.framework.events:BaseEvent</apiOperationClassifier><apiDesc>       </apiDesc></apiParam></apiOperationDef><apiDesc>
+         命令处理回调函数
+         </apiDesc></apiOperationDetail></apiOperation></apiClassifier></apiPackage>

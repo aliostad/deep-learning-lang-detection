@@ -1,0 +1,35 @@
+/**
+ * @file
+ * Views Styling
+ */
+
+/* for the Committe Member view */
+.view-id-committee_members div.views-row {
+  float: left;
+  clear: both;
+  width: 99%;
+  margin-bottom: 1.5em;
+}
+.view-id-committee_members .views-field-field-image img {
+  float: left;
+  clear: left;
+  margin-right: 1em;
+}
+.view-id-committee_members table.views-view-grid {
+  width: 99%;
+}
+
+/* For the Committee Roles view */
+.view-id-committee_roles .view-header {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+.view-id-view_committee_role_occupants table.views-view-grid {
+  width: 99%;
+}
+.view-id-view_committee_role_occupants table.views-view-grid td {
+  width: 25%;
+}
+.view-id-view_committee_role_occupants .views-field-field-image {
+  height: 128px; /* matches size of image in committee role occupants view */
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+	<bean id="imapServer" class="org.jbserv.mail.imap.IMAPServer"
+		init-method="startup">
+		<property name="accountRepository" ref="accountRepository" />
+		<property name="mailboxRepository" ref="mailboxRepository" />
+		<property name="messageRepository" ref="messageRepository" />
+	</bean>
+
+	<reference id="accountRepository"
+		interface="org.jbserv.mail.data.repository.AccountRepository" />
+
+	<reference id="mailboxRepository"
+		interface="org.jbserv.mail.data.repository.MailboxRepository" />
+
+	<reference id="messageRepository"
+		interface="org.jbserv.mail.data.repository.MessageRepository" />
+</blueprint>

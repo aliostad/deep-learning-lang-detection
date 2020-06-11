@@ -1,0 +1,72 @@
+.thumbnail img{
+    height: 100px;
+    height: 100px;
+    box-shadow: 4px 4px 4px rgb(204, 204, 204);
+    border-radius: 10px;
+    border: 1px solid rgb(238, 238, 238);
+}
+.brand_logo_box{
+    width: 200px;
+    margin: 15px 10px;
+    display: inline-block;
+}
+.brand_logo_box .btn{
+    width: 48%;
+}
+.brand_summary{
+    display: none;
+}
+.brand_summary_box{
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.brand_summary_box img{
+    max-width: 150px;
+    margin: 10px;
+    float: left;
+    border: 1px solid #eee;
+}
+#brand_content{
+    margin-bottom: 30px;
+}
+#brand_summary span{
+    line-height: 2em;
+}
+
+#add_model_wrap label span{
+    width: 5em;
+    display:inline-block;
+}
+#add_model_wrap .glyphicon{
+    width: 5px;
+    cursor: pointer;
+    color: #666;
+}
+#add_model_wrap input, #add_model_wrap select{
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    width: 100px;
+}
+#add_model_wrap li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 50px;
+    min-width: 25%;
+}
+.model_box{
+    margin: 10px;
+    border: 1px solid #eee;
+    display: inline-block;
+    width: 46%;
+}
+.model_title{
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+}
+.model_param{
+    display: none;
+}
+

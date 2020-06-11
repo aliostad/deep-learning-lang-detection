@@ -1,0 +1,89 @@
+body,html{margin:0;padding:0;};
+.clearfix{
+  *zoom:1;
+}
+.clearfix:before,.clearfix:after{
+	content: " "; display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+.scrollArea{
+	height:100%;
+	overflow-x:hidden;
+	overflow-y: scroll; /* has to be scroll, not auto */
+	-webkit-overflow-scrolling: touch; 
+
+}
+/*.noScrollArea{
+	height:100%;
+	overflow-y:hidden;
+	overflow:hidden;
+}*/
+
+/*.loadMoreBottom, .loadMoreTop {
+  height: 100px;
+  background: yellow;
+}
+
+.loadMoreBottom.hidden, .loadMoreTop.hidden {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+.loadMoreBottom.hidden {
+  margin-top: -100px;
+}
+*/
+.testInf{
+	height:200px;
+	background:pink;
+}
+
+
+.goButton{
+	float:right;
+	background:green;
+}
+.testItem{
+	box-sizing:border-box;
+	border:4px solid black;
+}
+
+.infinitizerDemo{
+	float:left;
+	width:25%;
+	position:relative;
+}
+.infinitizerItem{
+	float:left;
+}
+.columns1 .infinitizerItem{
+	float:none;
+}
+
+.columns2 .infinitizerItem{
+	width:50%;
+}
+.columns3 .infinitizerItem{
+	width:33%;
+}
+
+
+.columnsmagic .infinitizerItem{
+	width:50%;
+}
+@media screen and (min-width: 1000px) {
+	.columnsmagic .infinitizerItem{
+		width:33%;
+	}
+}
+.infinitizerInner{
+	min-height: 100%;
+	background:orange;
+}
+.infinitizerResults{
+	min-height:100%;
+}

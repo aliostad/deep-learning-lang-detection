@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Dispatch";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    @Html.DevExpress().PageControl(pcDispatchSettings =>
+    {
+    pcDispatchSettings.Name = "pcDispatch";
+    pcDispatchSettings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+    pcDispatchSettings.EnableClientSideAPI = true;
+    pcDispatchSettings.ActiveTabIndex = 0;
+    pcDispatchSettings.Width = System.Web.UI.WebControls.Unit.Percentage(75);
+
+    pcDispatchSettings.TabPages.Add("Progress").SetContent(
+        Html.Partial("_DispatchProgressPartial").ToHtmlString()
+    );
+
+    pcDispatchSettings.TabPages.Add("New").SetContent(
+        Html.Partial("_DispatchNewPartial").ToHtmlString()
+    );
+
+    pcDispatchSettings.TabPages.Add("Scheduling").SetContent(
+        Html.Partial("_DispatchNewPartial").ToHtmlString()
+    );
+
+    pcDispatchSettings.TabPages.Add("Driver Requested").SetContent(
+        Html.Partial("_DispatchNewPartial").ToHtmlString()
+    );
+
+    pcDispatchSettings.TabPages.Add("Dispatch Accepted").SetContent(
+        Html.Partial("_DispatchNewPartial").ToHtmlString()
+    );
+
+    pcDispatchSettings.TabPages.Add("Last Known").SetContent(
+        Html.Partial("_DispatchNewPartial").ToHtmlString()
+    );
+
+    }).GetHtml()
+</div>

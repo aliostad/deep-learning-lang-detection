@@ -1,0 +1,50 @@
+#!/bin/bash
+#Java builder WAR
+
+#megam_java_builder/build tomcat project=orion local_repo=/home/sandbox/tomcat/webaps remote_repo=https://github.com/thomasalrin/orion.git
+
+
+for i in "$@"
+do
+case $i in
+    project=*)
+    project="${i#*=}"
+
+    ;;
+    local_repo=*)
+    local_repo="${i#*=}"
+    ;;
+    remote_repo=*)
+    remote_repo="${i#*=}"
+    ;;
+esac
+done
+
+filename=$(basename "$remote_repo")
+extension="${filename##*.}"
+filename="${filename%.*}"
+
+case "$extension" in
+
+war)  cd $local_repo
+      rm *.war
+      rm -r $project
+      wget $remote_repo
+      chown -R sandbox:sandbox *.war
+      ;;
+git)  cd $local_repo
+      rm *.war
+      cd /home/sandbox/
+      rm -r $filename
+      git clone $remote_repo
+      cd $filename
+      mvn clean
+      mvn package
+      cp target/*.war $local_repo
+      chown -R sandbox:sandbox $local_repo/*.war
+      ;;
+esac
+
+stop tomcat
+start tomcat
+

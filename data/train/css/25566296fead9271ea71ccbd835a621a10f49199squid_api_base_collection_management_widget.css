@@ -1,0 +1,246 @@
+.squid-api-model-widget .selected {
+	color: #666;
+}
+
+.squid-api-collection-management-widget table {
+	color: #666;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.squid-api-collection-management-widget table tbody {
+	max-height: 400px;
+	width: 100%;
+	overflow-y: scroll;
+}
+
+.squid-api-collection-management-widget table tbody.no-values {
+	overflow-y: auto;
+}
+
+.squid-api-collection-management-widgettable td {
+  	padding: 2px 3px;
+	border-bottom: 1px solid #eaebec;
+  	font-size: 12px;
+}
+
+.squid-api-collection-management-widget .ok {
+	display: none;
+}
+
+.squid-api-collection-management-widget button.create {
+	float: right;
+	margin-bottom: 15px;
+}
+
+.squid-api-collection-management-widget table td.select {
+	padding-left: 10px;
+}
+
+.squid-api-collection-management-widget table td {
+	cursor: pointer;
+}
+
+.squid-api-collection-management-widget table tr {
+	background: #fff;
+	height: 45px;
+	border-top: 1px solid #f9f9f9;
+}
+
+.squid-api-collection-management-widget table tr td {
+	cursor: pointer;
+	font-size: 15px;
+}
+
+.squid-api-collection-management-widget table tr {
+	width: 100%;
+}
+
+.squid-api-collection-management-widget table tr.selected, .squid-api-collection-management-widget table tr:hover {
+	background-color: #f3f3f3;
+}
+
+.squid-api-collection-management-widget table tr.selected svg, .squid-api-collection-management-widget table tr.selected i {
+	display: inherit !important;
+}
+
+.squid-api-collection-management-widget table .collection-option {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.squid-api-collection-management-widget table .collection-option:hover {
+	font-size: 20px;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.squid-api-collection-management-widget table .collection-option i, .squid-api-collection-management-widget table .collection-option svg {
+	display: none;
+}
+
+.squid-api-collection-management-widget .new-model {
+	margin-bottom: 20px;
+}
+
+.squid-api-collection-management-widget .new-model button {
+	position: absolute;
+	background: none;
+	right: 0px;
+	border: 0px;
+	top: 4px;
+}
+
+.squid-api-collection-management-widget .ui-widget-header {
+	position: absolute;
+	right: 0px;
+	background: none;
+}
+
+.squid-api-model-widget-popup .ui-widget-header button {
+	display: none;
+}
+
+.squid-api-collection-management-widget .management-type {
+	text-align: center;
+	border-bottom: 1px solid #e0e0e0;
+	background-color: #f9f9f9;
+	left: -15px;
+	min-width: 298px;
+	border-radius: 10px;
+	padding: 10px;
+	top: 0px;
+	position: relative;
+}
+
+.squid-api-admin-widgets-modal-form-collection .ok {
+	display: none;
+}
+
+.squid-api-model-widget .squid-api-action:disabled {
+	pointer-events: none;
+}
+
+.squid-api-admin-widgets-tooltip {
+    background: #777;
+	color: #fff;
+	border-radius: 3px;
+	width: 200px;
+    opacity: 0.8;
+}
+
+.squid-api-admin-widgets-tooltip .ui-tooltip-content {
+    position: relative;
+    padding: 10px;
+}
+
+.squid-api-admin-widgets-tooltip:after, .squid-api-admin-widgets-tooltip:before {
+	bottom: 97%;
+	left: 10%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.squid-api-admin-widgets-tooltip:after {
+	border-bottom-color: #777;
+	border-width: 6px;
+	margin-left: -6px;
+}
+.squid-api-admin-widgets-tooltipx:before {
+	border-bottom-color: #777;
+	border-width: 7px;
+	margin-left: -7px;
+}
+
+.squid-api-model-widget-Domain .create {
+	display: none;
+}
+
+.squid-api-collection-management-footer {
+	border-top: 1px solid #e5e5e5;
+	padding: 15px;
+	text-align: right;
+}
+
+/* Updated Styles */
+.squid-api-collection-management-widget button.squid-api-collection-modal-trigger .glyphicon-refresh {
+	position: relative;
+	top: 2px;
+	right: 3px;
+	-moz-animation: spin .7s infinite linear;
+	-webkit-animation: spin .7s infinite linear;
+}
+
+.squid-api-collection-management-widget .no-data {
+	position: absolute;
+	top: 50%;
+	padding: 10px;
+	left: 50%;
+	border-radius: 8px;
+	transform: translate(-50%, -50%);
+}
+
+@-moz-keyframes spin {
+	0% {
+		-moz-transform: rotate(0deg);
+	}
+	100% {
+		-moz-transform: rotate(360deg);
+	};
+}
+
+/* Form Elements CSS */
+.squid-api-check-db-connection {
+	width: 160px;
+	margin: 10px 0px;
+}
+.squid-api-check-db-connection button:before {
+	font-family: FontAwesome;
+	content: "\f021";
+	position: relative;
+	right: 5px;
+}
+.squid-api-check-db-connection button.in-progress:before {
+	animation: spin .7s infinite linear;
+}
+.squid-api-check-db-connection label {
+	display: none;
+}
+
+.squid-api-collection-management-widget .list {
+	max-height: 500px;
+	overflow-y: scroll;
+	width: 100%;
+}

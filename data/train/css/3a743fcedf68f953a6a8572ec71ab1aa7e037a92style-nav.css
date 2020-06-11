@@ -1,0 +1,243 @@
+.nav-container {
+	float:left;
+	width:887px;
+	height:62px;
+    background-image: url('../img/bg_nav.png');
+}
+#nav {
+	float:left;
+	width:887px;
+	height:62px;
+    font-size: 17px;
+}
+#nav li {
+    /*text-align: left;
+	position:relative;*/
+	float:left;
+}
+#nav li.over {
+    z-index: 998;
+}
+#nav a, #nav a:hover {
+    display: block;
+    text-decoration: none;
+}
+#nav span {
+    cursor: pointer;
+    display: block;
+    max-width:170px;
+	white-space:normal;
+}
+#nav li ul span {
+    white-space: normal;
+}
+#nav ul li.parent a {
+    /*background: url(../images/bkg_nav2.gif) no-repeat scroll 100% 100% transparent;*/
+	background:none;
+	
+}
+#nav ul li.parent li a {
+    background-image: none;
+}
+#nav li.active a {
+    color: #D96708;
+}
+#nav a {
+    color: #fff;
+    float: left;
+	display:block;
+	line-height:1.2em;
+}
+
+
+
+
+#nav .level0 a.level-top {
+   width:100%;
+   padding-top:16px;
+   height:46px;
+   display:block;
+}
+
+#nav .level0 a.level-top:hover {
+	background-image: url('../img/hover_menu.png'); color:#fff; background-repeat:repeat-x;
+}
+
+
+
+#nav li.over a, #nav a:hover {
+    color: #fff;
+}
+#nav ul li, #nav ul li.active {
+    background:#ECF3F6;
+    float: none;
+    margin: 0;
+    padding-bottom: 1px;
+	position:relative;
+}
+#nav ul li.last {
+    background: none repeat scroll 0 0 #ECF3F6;
+    padding-bottom: 0;
+}
+#nav ul a, #nav ul a:hover {
+    background: none repeat scroll 0 0 transparent;
+    float: none;
+}
+#nav ul li a {
+    font-weight: normal !important; display:block;}
+}
+#nav ul, #nav div {
+    /*border: 1px solid #899BA5;*/
+    top:27px;
+    width: 15em;
+	
+}
+#nav div ul {
+    border: medium none;
+    position: static;
+    width: auto;
+}
+#nav ul ul, #nav ul div {
+    top: 5px;
+	
+}
+#nav ul li a {
+    background: none repeat scroll 0 0 #ECF3F6;
+}
+#nav ul li a:hover {
+    background: none repeat scroll 0 0 #D5E4EB;
+}
+#nav ul li a, #nav ul li a:hover {
+    color: #2F2F2F !important;
+}
+#nav ul span, #nav ul li.last li span {
+    padding: 5px 28px;
+}
+#nav li ul.shown-sub, #nav li div.shown-sub {
+    z-index: 999;
+	
+}
+ul.level2{
+	margin-left:10px;	
+}
+ul.level2 > li > a > span{
+color:red !important;
+}
+#nav li.over  div{
+    left: 0px;
+    z-index: 999;
+	
+}
+#nav li .shown-sub ul.shown-sub, #nav li .shown-sub li div.shown-sub {
+	text-align:left;
+	
+
+}
+/* 0 Level */
+#nav li { position:relative; color:#FFFFFF; width:80px;}
+#nav li.active a { }
+/*#nav a { color: gray; float: left; font-weight: bold; padding: 0px 12px 0px 8px; }*/
+#nav li.over a,
+#nav a:hover { }
+
+#nav .children7 .level0 .level1 a span{font-family: Arial, Helvetica, sans-serif;}
+#nav .children2 .level0 .level1 a span{font-family: Arial, Helvetica, sans-serif;}
+#nav .children4 .level0 .level1 a span{font-family: Arial, Helvetica, sans-serif;}
+
+/* 1st Level */
+#nav ul li,
+#nav li.active a { background-image: url('../img/hover_menu.png'); color:#fff; background-repeat:repeat-x;}
+#nav ul li.last {  padding-bottom:0; }
+
+#nav ul a,
+#nav ul a:hover { float:none; padding:0; background:none; }
+#nav ul li a { font-weight:normal; }
+
+/* 2nd Level */
+#nav ul,
+#nav div { top:54px; left:10px; position:static; border:none;}
+#nav div ul { position:static; width:auto; border:none;}
+
+/* 3rd+ Level */
+#nav ul ul,
+#nav ul div { top:5px; }
+
+#nav ul li a {  }
+#nav ul li a:hover {  }
+#nav ul li a{color:#333;}
+#nav ul li a:hover {text-decoration:underline!important; color:#fff!important; }
+#nav ul span,
+#nav ul li.last li span { padding:3px 3 4px 3; }
+
+/* Show menu */
+#nav li ul.shown-sub,
+#nav li div.shown-sub { z-index:999; }
+#nav li .shown-sub ul.shown-sub,
+#nav li .shown-sub li div.shown-sub { left:100px; }
+
+#nav li.level0{height:62px;}
+
+#nav .menu.children7 ul.level0{}
+
+#nav li.level0.level-top span{font-family: MetaNormalRo, Arial, Helvetica, sans-serif;}
+
+#nav li.level0.nav-1{width:152px;}
+#nav li.level0.nav-1:current{width:300px;}
+#nav li.level0.nav-1 .level-top span{margin-left:28px;}
+#nav li.level0.nav-2 {width:130px;}
+#nav li.level0.nav-2 .level-top span{margin-left:31px;}
+#nav li.level0.nav-3{width:104px;}
+#nav li.level0.nav-3 .level-top span{margin-left:28px;}
+#nav li.level0.nav-4{width:183px;}
+#nav li.level0.nav-4 .level-top span{margin-left:28px;}
+#nav li.level0.nav-5{width:110px;}
+#nav li.level0.nav-5 .level-top span{margin-left:28px;}
+#nav li.level0.nav-6{width:97px;}
+#nav li.level0.nav-6 .level-top span{margin-left:28px;}
+#nav li.level0.nav-7{width:111px;}
+#nav li.level0.nav-7 .level-top span{margin-left:26px;}
+
+
+#nav li.level0.final-item{border-right:none;}
+#nav ul li.level a{font-weight:bold;}
+#nav ul li.level1 li a{font-weight:normal; background-color:blue;}
+#nav .menu{position:absolute; left:-10000px;}
+#nav li.nav-3 ul.shown-sub, #nav li.nav-3 div.shown-sub, 
+#nav li.nav-4 ul.shown-sub, #nav li.nav-4 div.shown-sub, 
+#nav li.nav-5 ul.shown-sub, #nav li.nav-5 div.shown-sub {}
+#nav li.nav-6 ul.shown-sub, #nav li.nav-6 div.shown-sub, 
+#nav li.nav-7 ul.shown-sub, #nav li.nav-7 div.shown-sub, 
+#nav li.nav-8 ul.shown-sub, #nav li.nav-8 div.shown-sub{}
+
+#nav .menu.children1 { width:190px;}
+#nav .menu.children2 { width:190px;}
+#nav .menu.children3 { width:190px;}
+#nav .menu.children4 { width:190px;}
+#nav .menu.children5 { width:190px;}
+#nav .menu.children6 { width:190px;}
+#nav .menu.children7 { width:190px;}
+
+
+#nav .menu ul.level0 {width:190px; overflow:hidden;}
+
+#nav .menu.children1  ul.level0{ width:190px;}
+#nav .menu.children2  ul.level0{ width:190px;}
+#nav .menu.children3  ul.level0{ width:190px;}
+#nav .menu.children4  ul.level0{ width:190px;}
+#nav .menu.children5  ul.level0{ width:190px;}
+#nav .menu.children6  ul.level0{ width:190px;}
+#nav .menu.children7  ul.level0{ width:190px;}
+
+#nav .menu ul.level0{color:#FFFFFF; float:left; opacity: .95;}
+
+
+#nav .menu li.level1{width:190px; padding:0; }
+
+
+#nav .menu{ width:auto; overflow:hidden}
+
+#nav ul.level0 li a span{color:#fff; font-size:12px; background-color:#287f9f;}
+#nav ul.level0 li ul li a span{color:#2F2F2F; font-weight:normal; text-decoration:none; border:0 none; font-size:13px;}
+#nav ul.level0 li ul li a span:hover{color:#fff !important; text-decoration:underline;}
+#nav ul.level0 li ul li {word-wrap:break-word;}
+#nav ul.level0 li ul.level1 li {}

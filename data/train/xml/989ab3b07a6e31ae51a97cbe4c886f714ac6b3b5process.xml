@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<processes>
+    <process>
+        <name>process #1</name>
+        <isMain>true</isMain>
+    </process>
+    <process>
+        <name>process #2</name>
+        <isMain>false</isMain>
+    </process>
+    <process>
+        <name>process #3</name>
+        <isMain>false</isMain>
+    </process>
+    <process>
+        <name>process #4</name>
+        <isMain>false</isMain>
+    </process>
+    <process>
+        <name>process #5</name>
+        <isMain>true</isMain>
+    </process>
+    <process>
+        <name>process #6</name>
+        <isMain>false</isMain>
+    </process>
+    <process>
+        <name>process #7</name>
+        <isMain>true</isMain>
+    </process>
+    <process>
+        <name>process #8</name>
+        <isMain>false</isMain>
+    </process>
+    <process>
+        <name>process #9</name>
+        <isMain>false</isMain>
+    </process>
+</processes>

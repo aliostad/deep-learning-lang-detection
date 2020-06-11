@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeList is_valid="Y" name="game.template.gm.duplicate.detail.type" label="副本细分" data_name="GM_TPL_DUPLICATE_DETAIL_TYPE">
+  <Code is_valid="Y" type="I" name="unknown" label="未知" data_name="Unknown" data_value="0" />
+  <Code is_valid="Y" type="I" name="money_duplicate" label="金钱副本" data_name="MoneyDuplicate" data_value="1" />
+  <Code is_valid="Y" type="I" name="monster_duplicate" label="镇妖塔副本" data_name="MonsterDuplicate" data_value="2" />
+  <Code is_valid="Y" type="I" name="level_duplicate" label="等级副本" data_name="LevelDuplicate" data_value="3" />
+  <Code is_valid="Y" type="I" name="other_duplicate" label="其他副本" data_name="OtherDuplicate" data_value="4" />
+</CodeList>

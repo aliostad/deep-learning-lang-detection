@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hook PUBLIC "-//Liferay//DTD Hook 6.2.0//EN" "http://www.liferay.com/dtd/liferay-hook_6_2_0.dtd">
+
+<hook>
+	<portal-properties>portal.properties</portal-properties>
+	<language-properties>
+		content/Language_en_US.properties
+	</language-properties>
+    <custom-jsp-dir>/custom_jsps</custom-jsp-dir>
+	<service> 
+    <service-type>com.liferay.portlet.documentlibrary.service.DLFolderLocalService</service-type>
+    <service-impl>com.weightwatchers.wwhs.service.WWHSDLFolderLocalServiceImpl</service-impl>
+    </service>
+    <service> 
+    <service-type>com.liferay.portal.service.OrganizationLocalService</service-type>
+    <service-impl>com.weightwatchers.wwhs.service.WWHSOrganizationLocalServiceImpl</service-impl>
+    </service>
+</hook>
+

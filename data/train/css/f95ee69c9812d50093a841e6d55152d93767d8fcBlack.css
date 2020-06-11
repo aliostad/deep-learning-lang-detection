@@ -1,0 +1,28 @@
+html {
+  background-color: #000;
+  color: #ccc;
+  font-family: "Monaco", monospace;
+  font-size: 9pt; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.line .time {
+  color: #828282; }
+.line .sender {
+  color: #86c166; }
+  .line .sender[type=myself] {
+    color: #f7d94c; }
+.line .place {
+  color: #86c166; }
+.line .highlight {
+  color: #f596aa;
+  font-weight: normal; }
+.line .url {
+  color: #58b2dc; }
+
+.message[type=privmsg], .message[type=notice], .message[type=action] {
+  color: #ccc; }
+.message[type=system], .message[type=error], .message[type=reply], .message[type=error_reply], .message[type=dcc_send_send], .message[type=dcc_send_receive], .message[type=join], .message[type=part], .message[type=kick], .message[type=quit], .message[type=kill], .message[type=nick], .message[type=mode], .message[type=topic], .message[type=invite], .message[type=wallops], .message[type=debug_send], .message[type=debug_receive] {
+  color: #828282; }

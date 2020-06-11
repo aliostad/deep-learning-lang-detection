@@ -1,0 +1,39 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping pattern="unidata-db-update" type="Bash" />
+      <mapping ext="tps" type="DBN-PSQL" />
+      <mapping ext="tpe" type="DBN-PSQL" />
+      <mapping ext="pks" type="DBN-PSQL" />
+      <mapping ext="fnc" type="DBN-PSQL" />
+      <mapping ext="trg" type="DBN-PSQL" />
+      <mapping ext="pkg" type="DBN-PSQL" />
+      <mapping ext="pkb" type="DBN-PSQL" />
+      <mapping ext="tpb" type="DBN-PSQL" />
+      <mapping ext="prc" type="DBN-PSQL" />
+      <mapping ext="vw" type="DBN-SQL" />
+      <mapping pattern="rlh-db-prod-slaves" type="PLAIN_TEXT" />
+      <mapping pattern="unidata-perf" type="PLAIN_TEXT" />
+      <mapping pattern="sysconfig" type="PLAIN_TEXT" />
+      <mapping pattern="egais-perf" type="PLAIN_TEXT" />
+      <mapping pattern="LICENSE" type="PLAIN_TEXT" />
+      <mapping pattern="rlh-unidata" type="PLAIN_TEXT" />
+      <mapping pattern="rpmrepos" type="PLAIN_TEXT" />
+      <mapping pattern="egais-prod" type="PLAIN_TEXT" />
+      <mapping pattern="unidata-cli" type="PLAIN_TEXT" />
+      <mapping ext="devided" type="PLAIN_TEXT" />
+      <mapping ext="repo" type="PLAIN_TEXT" />
+      <mapping ext="gpg" type="PLAIN_TEXT" />
+      <mapping ext="facts" type="PLAIN_TEXT" />
+      <mapping ext="j2" type="PLAIN_TEXT" />
+      <mapping ext="redeploy" type="PLAIN_TEXT" />
+      <mapping ext="clean" type="PLAIN_TEXT" />
+      <mapping ext="mvn" type="PLAIN_TEXT" />
+      <mapping ext="te" type="PLAIN_TEXT" />
+      <mapping ext="pro" type="PLAIN_TEXT" />
+      <mapping ext="service" type="PLAIN_TEXT" />
+      <mapping ext="default" type="PLAIN_TEXT" />
+      <mapping ext="build" type="PLAIN_TEXT" />
+    </extensionMap>
+  </component>
+</application>

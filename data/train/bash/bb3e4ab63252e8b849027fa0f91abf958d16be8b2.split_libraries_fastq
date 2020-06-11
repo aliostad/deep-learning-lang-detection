@@ -1,0 +1,29 @@
+#!/bin/bash
+
+source globals
+
+DIR=$0.dir
+mkdir -p $DIR
+
+input_arg=""
+sample_arg=""
+first=1
+
+for sample in $SAMPLES
+do
+	paired_fq=1.join_paired_ends.dir/$sample.min_overlap_$J/fastqjoin.join.fastq
+	if [ $first -eq 1 ]
+	then
+		input_arg="$paired_fq"
+		sample_arg="$sample"
+		first=0
+	else
+		input_arg="$input_arg,$paired_fq"
+		sample_arg="$sample_arg,$sample"
+	fi
+done
+
+echo running split_libraries
+head -4 map.txt > fake_map.txt
+split_libraries_fastq.py -i $input_arg --sample_id $sample_arg -o $DIR -m fake_map.txt -q $Q --barcode_type 'not-barcoded'
+\rm -rf fake_map.txt

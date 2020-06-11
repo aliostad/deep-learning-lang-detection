@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+
+<single_machine GCIMShmKey="16888" AddrTemplet="8.8.8.8" __version="1">
+
+    <processList>
+
+        <!--process 是数组类型-->
+        <!--可容纳 1024 个元素-->
+        <!--process.name: MUST be UNIQUE-->
+        <!--process.id: MUST be UNIQUE [0.0.0.1 ~ 255.255.255.254]-->
+        <process name="server_A" id="1.1.1.1"/>
+        <process name="server_B" id="1.1.1.2"/>
+        <process name="server_C" id="1.1.1.3"/>
+        <process name="server_D" id="1.1.1.4"/>
+
+    </processList>
+
+    <communication>
+
+        <!--connection: every communication MUST be UNIQUE-->
+        <!--connection 是数组类型-->
+        <!--可容纳 4096 个元素-->
+        <connection nameOfProcessA="server_A" nameOfProcessB="server_B" bufferSize="20480000"/>
+        <connection nameOfProcessA="server_D" nameOfProcessB="server_B" bufferSize="20480000"/>
+
+    </communication>
+
+</single_machine>
+

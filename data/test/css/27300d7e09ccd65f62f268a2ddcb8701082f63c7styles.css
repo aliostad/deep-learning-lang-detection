@@ -1,0 +1,41 @@
+body {
+    padding-top: 80px;
+}
+
+.servicePickerWrapper {
+    padding: 5px;
+    height: 50px
+}
+
+.servicePickerWrapper .panel {
+    padding: 1px;
+}
+
+.servicePickerWrapper .panel-body {
+    padding: 1px;
+    cursor: pointer;
+}
+
+.servicePickerWrapper .panel-body:hover {
+    padding: 2px 1px;
+    cursor: pointer;
+    background-color: #bce8f1;
+}
+
+.servicePickerWrapper .serviceImage {
+    cursor: pointer;
+}
+
+.servicePickerWrapper .serviceTitle {
+    cursor: pointer;
+}
+
+.servicePickerWrapper .servicePrice {
+    font-size: 13px;
+    margin: 6px;
+    cursor: pointer;
+}
+
+.test_padding {
+    padding: 30px;
+}

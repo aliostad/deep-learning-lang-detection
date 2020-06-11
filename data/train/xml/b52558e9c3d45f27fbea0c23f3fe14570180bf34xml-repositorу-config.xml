@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.springframework.org/schema/context
+                        http://www.springframework.org/schema/context/spring-context.xsd">
+	<description>
+		This configuration file will have all beans
+		which
+		represents repositories.
+	</description>
+	<!-- the ItemMapRepository -->
+	<bean id="itemMapRepository" class="org.shop.repository.map.ItemMapRepository" />
+	<!-- the ProductMapRepository -->
+	<bean id="productMapRepository" class="org.shop.repository.map.ProductMapRepository" />
+	<!-- the ProposalMapRepository -->
+	<bean id="proposalMapRepository" class="org.shop.repository.map.ProposalMapRepository" />
+	<!-- the SellerMapRepository -->
+	<bean id="sellerMapRepository" class="org.shop.repository.map.SellerMapRepository" />
+	<!-- the UserRepositoryFactory bean -->
+	<bean id="userRepositoryFactory" class="org.shop.repository.factory.UserRepositoryFactory" />
+	<!-- the UserRepository -->
+	<bean id="userRepository" factory-bean="userRepositoryFactory"
+		factory-method="createUserRepository" />
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<value>order_repository.properties</value>
+		</property>
+
+	</bean>
+	<!-- the OrderMapRepository -->
+	<bean id="orderMapRepository" class="org.shop.repository.map.OrderMapRepository">
+		<constructor-arg type="long" value="${intitialSequence}"/>
+	</bean>
+</beans>

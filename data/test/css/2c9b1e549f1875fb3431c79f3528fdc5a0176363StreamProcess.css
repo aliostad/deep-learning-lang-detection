@@ -1,0 +1,42 @@
+/* CSS file */
+.home{
+	upSkin:Embed("img/home_1.png");
+	overSkin:Embed("img/home_2.png");
+	downSkin:Embed("img/home_3.png");
+}
+.construct{
+	upSkin:Embed("img/construct_1.png");
+	overSkin:Embed("img/construct_2.png");
+	downSkin:Embed("img/construct_3.png");
+}
+.load{
+	upSkin:Embed("img/load_1.png");
+	overSkin:Embed("img/load_2.png");
+	downSkin:Embed("img/load_3.png");
+}
+.save{
+	upSkin:Embed("img/save_1.png");
+	overSkin:Embed("img/save_2.png");
+	downSkin:Embed("img/save_3.png");
+	disabledSkin:Embed("img/save_4.png");
+}
+.run{
+	upSkin:Embed("img/run_1.png");
+	overSkin:Embed("img/run_2.png");
+	downSkin:Embed("img/run_3.png");
+	disabledSkin:Embed("img/run_4.png");
+}
+.option{
+	upSkin:Embed("img/option_1.png");
+	overSkin:Embed("img/option_2.png");
+	downSkin:Embed("img/option_3.png");
+}
+.linkButton{
+	color:blue;
+	font-size:15;
+}
+.operator{
+	upSkin:Embed("img/operator_1.png");
+	overSkin:Embed("img/operator_2.png");
+	downSkin:Embed("img/operator_3.png");
+}

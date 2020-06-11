@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html {
+  height: 100%;
+  font-size: 62.5%; }
+
+body {
+  height: 100%;
+  background-color: #a8a8a8; }
+
+.model-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 85.94%;
+  margin: auto;
+  height: 36rem;
+  background-color: white;
+  border-radius: 10px; }
+  .model-container .top {
+    font-size: 3.2rem;
+    height: 8.8rem;
+    text-align: center;
+    background-color: #ededed;
+    line-height: 8.8rem;
+    border-radius: 10px; }
+  .model-container .middle {
+    height: 15rem;
+    text-align: center;
+    border-bottom: 3px solid #ddd; }
+    .model-container .middle .first {
+      padding-top: 4.2rem;
+      font-size: 3.2rem; }
+    .model-container .middle .second {
+      font-size: 3.0rem;
+      padding-top: 2rem;
+      color: #fb3d3d; }
+  .model-container .bottom {
+    margin-top: 2.6rem;
+    text-align: center; }
+    .model-container .bottom .confirm {
+      width: 70.31%;
+      height: 6.0rem; }
+
+/*# sourceMappingURL=model.css.map */

@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# check the usage of the script
+if [ $# == 0 ]; then
+   echo "   Usage: $0 [ process_name ] "
+   exit
+fi
+
+# get the process name from user
+PROCESS_NAME=$1
+
+# grep the PID from running processes
+PID_LIST=`ps -ef | grep -i $PROCESS_NAME | grep -v grep | grep -v $0 | awk '{print $2}'`
+
+if [ "$PID_LIST" == "" ]; then
+   echo "  Process $PROCESS_NAME not found. Exiting..."
+   exit
+fi
+
+# now kill the processes
+for pid in $PID_LIST; do
+   echo "killing pid $pid"
+   kill $pid ;
+done;
+
+# end of script, print a msg and unset the variables
+echo "processes related to '$PROCESS_NAME' killed."
+
+unset PROCESS_NAME
+unset PID_LIST

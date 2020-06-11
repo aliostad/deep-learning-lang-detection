@@ -1,0 +1,45 @@
+#!/bin/bash
+
+rails g scaffold SamplingEvent\
+  \
+  site_id:integer\
+  sampling_type:string\
+  sampling_description:text\
+  sampling_date:datetime\
+  submitted_by:string\
+  sampled_by:string\
+  \
+  sample_id_1:integer\
+  sample_location_1:string\
+  sample_time_1:time\
+  analysis_type_1:string\
+  analysis_result_1:string\
+  analysis_average_1:string\
+  \
+  sample_id_2:integer\
+  sample_location_2:string\
+  sample_time_2:time\
+  analysis_type_2:string\
+  analysis_result_2:string\
+  analysis_average_2:string\
+  \
+  sample_id_3:integer\
+  sample_location_3:string\
+  sample_time_3:time\
+  analysis_type_3:string\
+  analysis_result_3:string\
+  analysis_average_3:string\
+  \
+  sample_id_4:integer\
+  sample_location_4:string\
+  sample_time_4:time\
+  analysis_type_4:string\
+  analysis_result_4:string\
+  analysis_average_4:string\
+  \
+  sample_id_5:integer\
+  sample_location_5:string\
+  sample_time_5:time\
+  analysis_type_5:string\
+  analysis_result_5:string\
+  analysis_average_5:string\

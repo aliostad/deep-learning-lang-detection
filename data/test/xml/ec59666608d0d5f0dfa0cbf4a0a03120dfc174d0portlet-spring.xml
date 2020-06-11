@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.service.service.AcademicYearLocalService" class="com.service.service.impl.AcademicYearLocalServiceImpl" />
+	<bean id="com.service.service.AcademicYearService" class="com.service.service.impl.AcademicYearServiceImpl" />
+	<bean id="com.service.service.persistence.AcademicYearPersistence" class="com.service.service.persistence.AcademicYearPersistenceImpl" parent="basePersistence" />
+	<bean id="com.service.service.StudentLocalService" class="com.service.service.impl.StudentLocalServiceImpl" />
+	<bean id="com.service.service.StudentService" class="com.service.service.impl.StudentServiceImpl" />
+	<bean id="com.service.service.persistence.StudentPersistence" class="com.service.service.persistence.StudentPersistenceImpl" parent="basePersistence" />
+	<bean id="com.service.service.SubjectLocalService" class="com.service.service.impl.SubjectLocalServiceImpl" />
+	<bean id="com.service.service.SubjectService" class="com.service.service.impl.SubjectServiceImpl" />
+	<bean id="com.service.service.persistence.SubjectPersistence" class="com.service.service.persistence.SubjectPersistenceImpl" parent="basePersistence" />
+</beans>

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+cd /netshare1/home1/szzhongxin/proj1/hansun/mapping/10A
+samtools view -bS -o 10A.solid0734_20110529_PE_10A_Sample_10A_F3.bam 10A.solid0734_20110529_PE_10A_Sample_10A_F3.sam
+samtools  sort  10A.solid0734_20110529_PE_10A_Sample_10A_F3.bam 10A.solid0734_20110529_PE_10A_Sample_10A_F3.sorted
+samtools  flagstat 10A.solid0734_20110529_PE_10A_Sample_10A_F3.sorted.bam >10A.stat
+
+samtools view -bS -o 10A.solid0734_20110614_FRAG_10A_Sample_10A_F3.bam 10A.solid0734_20110614_FRAG_10A_Sample_10A_F3.sam
+samtools sort 10A.solid0734_20110614_FRAG_10A_Sample_10A_F3.bam 10A.solid0734_20110614_FRAG_10A_Sample_10A_F3.sorted
+samtools flagstat 10A.solid0734_20110614_FRAG_10A_Sample_10A_F3.sorted.bam >>10A.stat
+
+
+samtools merge 10A.bam  10A.solid0734_20110529_PE_10A_Sample_10A_F3.sorted.bam  10A.solid0734_20110614_FRAG_10A_Sample_10A_F3.sorted.bam
+
+samtools index 10A.bam

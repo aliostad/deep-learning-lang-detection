@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+      "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+      "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd" >
+<hibernate-configuration>  
+  
+    <session-factory>  
+  
+        <!-- Database connection settings -->  
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>  
+        <!-- property name="connection.url">jdbc:mysql://192.168.0.15/GECO</property>  
+        <property name="connection.username">root</property>  
+        <property name="connection.password">09050303</property-->
+        <property name="connection.url">jdbc:mysql://5.249.157.108/gecosofttest2</property>
+        <property name="connection.username">lflorido2</property>  
+        <property name="connection.password">svnf0rl0s</property>  
+  
+        <!-- JDBC connection pool (use the built-in) -->  
+        <property name="connection.pool_size">1</property>  
+  
+        <!-- SQL dialect -->  
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>  
+  
+		<property name="hibernate.cache.use_second_level_cache">false</property>
+        <property name="hibernate.cache.use_query_cache">false</property>
+        
+        <!-- Disable the second-level cache  -->
+        <!-- property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property-->  
+        <!-- Echo all executed SQL to stdout -->  
+        <property name="show_sql">true</property>  
+  
+        <!-- Drop and re-create the database schema on startup -->  
+        <!--  >property name="hbm2ddl.auto">create</property-->  
+  		<property name="hibernate.connection.isolation">4</property>
+        
+        <mapping class="qgenerate.pojo.TblPermission"></mapping>
+        <mapping class="qgenerate.pojo.TblUser"></mapping>
+        <mapping class="qgenerate.pojo.TblUser_Permission"></mapping>
+        <mapping class="qgenerate.pojo.TblContact"></mapping>
+        <mapping class="qgenerate.pojo.TblAddress"></mapping>
+        <mapping class="qgenerate.pojo.TblCompany"></mapping>
+        <mapping class="qgenerate.pojo.TblPartner"></mapping>
+        
+        <!-- <mapping class="geco.pojo.TblCounterYear"></mapping>
+        <mapping class="geco.pojo.TblDocument"></mapping>
+        <mapping class="geco.pojo.TblPayment"></mapping>
+        <mapping class="geco.pojo.TblPaymentDeadline"></mapping>  
+  		<mapping class="geco.pojo.TblRole"></mapping> 
+  		<mapping class="geco.pojo.TblStoreMovement"></mapping>
+  		<mapping class="geco.pojo.TblTaxrate"></mapping>
+  		<mapping class="geco.pojo.TblUnitMeasure"></mapping>
+  		<mapping class="geco.pojo.TblUser"></mapping> 	
+  		<mapping class="geco.pojo.TblContact"></mapping>
+  		<mapping class="geco.pojo.TblAddress"></mapping>
+  		<mapping class="geco.pojo.TblBankContact"></mapping>
+  		<mapping class="geco.pojo.TblCompany"></mapping> 
+  		<mapping class="geco.pojo.TblBank"></mapping>
+  		<mapping class="geco.pojo.TblGroupProduct"></mapping>
+  		<mapping class="geco.pojo.TblCategoryProduct"></mapping>
+  		<mapping class="geco.pojo.TblSubCategoryProduct"></mapping>
+  		<mapping class="geco.pojo.TblProduct"></mapping>
+  		<mapping class="geco.pojo.TblUnitMeasureProduct"></mapping>
+  		<mapping class="geco.pojo.TblListProduct"></mapping>
+  		<mapping class="geco.pojo.TblList"></mapping>
+  		<mapping class="geco.pojo.TblGroupCustomer"></mapping>
+  		<mapping class="geco.pojo.TblCategoryCustomer"></mapping>
+  		<mapping class="geco.pojo.TblCustomer"></mapping>
+  		<mapping class="geco.pojo.TblListCustomer"></mapping>
+  		<mapping class="geco.pojo.TblDestination"></mapping>
+  		<mapping class="geco.pojo.TblGroupSupplier"></mapping>
+  		<mapping class="geco.pojo.TblCategorySupplier"></mapping>
+  		<mapping class="geco.pojo.TblListSupplier"></mapping>
+  		<mapping class="geco.pojo.TblSupplier"></mapping>
+  		<mapping class="geco.pojo.TblTransporter"></mapping>
+  		<mapping class="geco.pojo.TblHead"></mapping>	
+  		<mapping class="geco.pojo.TblRow"></mapping>
+  		<mapping class="geco.pojo.TblGenerateHeadRow"></mapping>
+  		<mapping class="geco.pojo.TblStorage"></mapping>
+  		<mapping class="geco.pojo.TblStorageSerialCode"></mapping>
+  		<mapping class="geco.pojo.TblSuspended"></mapping>
+  		<mapping class="geco.pojo.TblDeadline"></mapping>
+  		<mapping class="geco.pojo.TblPaid"></mapping>
+  		<mapping class="geco.pojo.TblPaidSuspended"></mapping>-->
+    </session-factory>  
+  
+</hibernate-configuration>  
+

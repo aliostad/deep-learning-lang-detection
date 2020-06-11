@@ -1,0 +1,27 @@
+/* This file is for your main application css. */
+
+/* Styling for menu bar */
+.nav-pills > li > a {
+    border-radius: 4px;
+}
+
+.nav-pills > li > form > a{
+    border-radius: 4px;
+}
+
+.nav > li > form > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.nav > li > p {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+nav > li > a:focus, .nav > li > a:hover, .nav > li > form > a:hover, .nav > li > form > a:focus {
+    text-decoration: none;
+    background-color: #fff;
+}

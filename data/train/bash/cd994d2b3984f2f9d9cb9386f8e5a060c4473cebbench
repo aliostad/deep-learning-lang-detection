@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# remote side
+# while true; do ib_send_bw -D 10; done
+
+target=$1
+
+if [[ "$target" == "" ]]; then
+    echo "Usage: $0 <target_host>"
+    exit 1
+fi
+
+for inlineSize in 0 400 912; do
+for chunkSize in 128 1024; do
+for numChunks in $(seq 1 32) 64; do
+    ib_send_bw $target \
+        -s $chunkSize \
+        -l $numChunks \
+        -I $inlineSize \
+        -n 5000 \
+            | tail -n 2 | head -n 1 \
+            | awk -v chunkSize=$chunkSize \
+                  -v numChunks=$numChunks \
+                  -v inlineSize=$inlineSize \
+                     '{ print chunkSize " " numChunks " " inlineSize " " $1 " " $2 " " $3 " " $4; }' \
+            | tee bench.log
+    sleep 2
+done
+done
+done

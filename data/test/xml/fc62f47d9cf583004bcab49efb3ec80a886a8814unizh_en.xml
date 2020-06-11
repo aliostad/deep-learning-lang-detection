@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogue xml:lang="de">
+  <message key="section_forschung">Research</message>
+  <message key="section_studium">Studying</message>         
+  <message key="section_services">Services &amp; Products</message>         
+	<message key="section_info">General Information</message>
+	<message key="section_fakultaet">Faculties &amp; Institutes</message>
+	<message key="section_admin">Administration</message>
+	<message key="section_leben">University Life</message>
+	
+	<message key="publication_e-Learning Templates">e-Learning Templates</message>
+	
+  <message key="print_view">Printview</message>
+  <message key="contact">Contact</message>
+  <message key="search">Search</message>
+  
+  <message key="university_zurich">University of Zurich</message>
+  <message key="impressum">Impressum</message>
+</catalogue>

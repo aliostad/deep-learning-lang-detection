@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PluginConfiguration requires="org.eclipse.hyades.test.core">
+	<AgentControllerEnvironment configuration="default">
+		<Variable name="CLASSPATH_ORG_ECLIPSE_HYADES_TEST_TOOLS_CORE" position="append" value="%PLUGINS_HOME%\org.eclipse.hyades.test.tools.core_4.4.200.v200808111750\common.runner.jar"/>
+		<Variable name="CLASSPATH_ORG_ECLIPSE_HYADES_TEST_TOOLS_CORE" position="append" value="%PLUGINS_HOME%\org.eclipse.hyades.test.tools.core_4.4.200.v200808111750\http.runner.jar"/>
+		<Variable name="CLASSPATH_ORG_ECLIPSE_HYADES_TEST_TOOLS_CORE" position="append" value="%PLUGINS_HOME%\org.eclipse.hyades.test.tools.core_4.4.200.v200808111750\java.runner.jar"/>
+		<Variable name="CLASSPATH_ORG_ECLIPSE_HYADES_TEST_TOOLS_CORE" position="append" value="C:\Program Files\IBM\SDPShared\plugins\org.eclipse.hyades.test.tools.core_4.4.200.v200808111750\common.runner.jar"/>
+		<Variable name="CLASSPATH_ORG_ECLIPSE_HYADES_TEST_TOOLS_CORE" position="append" value="C:\Program Files\IBM\SDPShared\plugins\org.eclipse.hyades.test.tools.core_4.4.200.v200808111750\config.jar"/>
+		<Variable name="CLASSPATH_ORG_ECLIPSE_HYADES_TEST_TOOLS_CORE" position="append" value="C:\Program Files\IBM\SDPShared\plugins\org.eclipse.hyades.test.tools.core_4.4.200.v200808111750\http.runner.jar"/>
+		<Variable name="CLASSPATH_ORG_ECLIPSE_HYADES_TEST_TOOLS_CORE" position="append" value="C:\Program Files\IBM\SDPShared\plugins\org.eclipse.hyades.test.tools.core_4.4.200.v200808111750\java.runner.jar"/>
+		<Variable name="CLASSPATH_ORG_ECLIPSE_HYADES_TEST_TOOLS_CORE" position="append" value="C:\Program Files\IBM\SDPShared\plugins\org.eclipse.hyades.test.tools.core_4.4.200.v200808111750\tools-core.jar"/>
+	</AgentControllerEnvironment>
+	<Application configuration="default" executable="HyadesTestingSession" location="%SYS_TEMP_DIR%" path="%JAVA_PATH%">
+		<Parameter position="prepend" value="-Dhyades.test.JVM=&quot;%JAVA_PATH%&quot;"/>
+		<Variable name="CLASSPATH" position="append" value="%CLASSPATH_ORG_ECLIPSE_EQUINOX_COMMON%"/>
+		<Variable name="CLASSPATH" position="append" value="%CLASSPATH_ORG_ECLIPSE_CORE_COMMANDS%"/>
+		<Variable name="CLASSPATH" position="append" value="%CLASSPATH_ORG_ECLIPSE_JFACE%"/>
+		<Variable name="CLASSPATH" position="append" value="%CLASSPATH_ORG_ECLIPSE_SWT%"/>
+		<Variable name="CLASSPATH" position="append" value="%CLASSPATH_ORG_ECLIPSE_EMF_COMMON%"/>
+		<Variable name="CLASSPATH" position="append" value="%CLASSPATH_ORG_ECLIPSE_EMF_ECORE%"/>
+		<Variable name="CLASSPATH" position="append" value="%CLASSPATH_ORG_ECLIPSE_EMF_ECORE_XMI%"/>
+		<Variable name="CLASSPATH" position="append" value="%CLASSPATH_ORG_ECLIPSE_HYADES_EXECUTION%"/>
+		<Variable name="CLASSPATH" position="append" value="%CLASSPATH_ORG_ECLIPSE_HYADES_LOGGING_CORE%"/>
+		<Variable name="CLASSPATH" position="append" value="%CLASSPATH_ORG_ECLIPSE_TPTP_PLATFORM_LOGGING_EVENTS%"/>
+		<Variable name="CLASSPATH" position="append" value="%CLASSPATH_ORG_ECLIPSE_HYADES_TEST_CORE%"/>
+		<Variable name="CLASSPATH" position="append" value="%CLASSPATH_ORG_ECLIPSE_HYADES_TEST_TOOLS_CORE%"/>
+		<Variable name="CLASSPATH" position="append" value="%CLASSPATH_ORG_ECLIPSE_TPTP_PLATFORM_MODELS%"/>
+		<Variable name="CLASSPATH" position="append" value="%CLASSPATH_ORG_ECLIPSE_TPTP_PLATFORM_MODELS_HIERARCHY%"/>
+		<Variable name="CLASSPATH" position="append" value="%CLASSPATH_ORG_JUNIT%"/>
+	</Application>
+	<Option name="org.eclipse.hyades.test.tools.core" type="version" value="4.4.200.v200808111750"/>
+</PluginConfiguration>

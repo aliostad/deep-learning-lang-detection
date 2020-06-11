@@ -1,0 +1,72 @@
+<books priority="1">
+
+	<book>
+		<id>book:software:process</id>
+		<title>Software Process</title>
+		<desc>Development Process and Software Lifecycle with NetKernel</desc>
+		<author/>
+		<publisher/>
+		<date/>
+		<modified/>
+		<icon>res:/doc/sp/book-process.png</icon>
+		<keywords/>
+		<toc>
+			<item id="doc:process:title" title="Introduction">
+				<item id="doc:process:arch"  title="Architecture">
+					<item id="doc:process:arch:engineering" title="Engineering"></item>
+					<item id="doc:process:arch:methodology" title="Methodology"></item>
+					<item id="doc:process:arch:cluster" title="Clustering"></item>
+					<item id="doc:process:arch:modularity" title="Modularity"></item>
+					<item id="doc:process:arch:security" title="Security"></item>
+					<item id="doc:process:feature" title="Technical Features">
+						<item id="doc:process:feature:doc" title="Documenting Modules">
+							<item id="doc:process:wiki:title" title="Wiki Syntax">
+								<item id="doc:process:wiki:ref:mediawiki" title="MediaWiki"/>
+								<item id="doc:process:wiki:ref:textile" title="Textile"/>
+								<item id="doc:process:wiki:ref:confluence" title="Confluence"/>
+								<item id="doc:process:wiki:ref:tracwiki" title="TracWiki"/>
+							</item>							
+						</item>
+						<item id="doc:process:feature:logging" title="Logging"></item>
+						<item id="doc:process:feature:cp" title="Extending Control Panel"></item>
+						<item id="doc:process:feature:hc" title="Adding Health Checks"></item>
+					</item>
+					
+				</item>
+				<item id="doc:process:dev" title="Development">
+					<item id="doc:process:dev:ide" title="IDE">
+            <item id="doc:process:dev:ide:eclipse" title="Eclipse"/>
+            <item id="doc:process:dev:ide:intellij" title="IntelliJ"/>
+					</item>
+					<item id="doc:process:dev:versioning" title="Version Control"></item>
+					<item id="doc:process:dev:build" title="Build"></item>
+					<item id="doc:process:dev:debug" title="Debugging"></item>
+					<item id="doc:process:dev:test" title="Testing">
+						<item id="doc:process:dev:tdd" title="TDD"></item>
+						<item id="doc:process:dev:regression" title="Regression Testing"></item>
+					</item>
+					<item id="doc:process:dev:tuning" title="Tuning">
+						<item id="doc:process:dev:tuning:gc" title="GC/Heap"/>
+					</item>
+					<item id="doc:process:dev:ci" title="Continuous Integration"></item>
+					<item id="doc:process:dev:licensing" title="Licensing"></item>
+				</item>
+				<item id="doc:process:prod" title="Production">
+					<item id="doc:process:prod:platform" title="Platform"></item>
+					<item id="doc:process:prod:repository" title="Repository"></item>
+					<item id="doc:process:prod:management" title="Management"></item>
+					<item id="doc:process:prod:monitor" title="Monitoring"></item>
+					<item id="doc:process:prod:security" title="Security">
+						<item id="doc:process:prod:ssl" title="SSL"/>
+					</item>
+					<item id="doc:process:prod:licensing" title="Licensing">
+						<item id="doc:process:prod:licensing:regular" title="Enterprise Edition"/>
+						<item id="doc:process:prod:licensing:meter" title="Metered"/>
+						
+					</item>
+				</item>
+			</item>
+		</toc>
+	</book>	
+</books>
+        

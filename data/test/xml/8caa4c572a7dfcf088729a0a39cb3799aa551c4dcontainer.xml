@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony-project.org/2.0/container">
+    <services>
+        <service id="asset.assetService" class="Asset\Service\Asset">
+            <call method="setEntityManager">
+                <argument type="service" id="doctrine" />
+            </call>
+            <call method="setExtensionService">
+                <argument type="service" id="asset.extensionService" />
+            </call>
+            <call method="setGroupService">
+                <argument type="service" id="asset.groupService" />
+            </call>
+            <call method="setMimeTypeService">
+                <argument type="service" id="asset.mimeTypeService" />
+            </call>
+        </service>
+        <service id="asset.extensionService" class="Asset\Service\Extension">
+            <call method="setEntityManager">
+                <argument type="service" id="doctrine" />
+            </call>
+        </service>
+        <service id="asset.groupService" class="Asset\Service\Group">
+            <call method="setEntityManager">
+                <argument type="service" id="doctrine" />
+            </call>
+        </service>
+        <service id="asset.mimeTypeService" class="Asset\Service\MimeType">
+            <call method="setEntityManager">
+                <argument type="service" id="doctrine" />
+            </call>
+        </service>
+    </services>
+</container>

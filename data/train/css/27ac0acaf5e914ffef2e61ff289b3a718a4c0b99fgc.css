@@ -1,0 +1,61 @@
+/* 
+    Document   : fgc
+    Created on : Sep 19, 2012, 8:36:21 AM
+    Author     : Trong Thang
+    Description:
+        Purpose of the stylesheet follows.
+*/
+#edit-upload-wrapper{
+    padding: 0;
+    position: relative;
+    margin: 0;
+}
+#main-content #edit-upload-wrapper label{
+    background: url("../images/bgupload.png") no-repeat scroll 0 0 transparent;
+    height: 62px;
+    text-indent: -999px;
+    width: 200px;
+    cursor: pointer;
+}
+#edit-upload{
+    position: absolute;
+	left: -9999em;
+}
+fieldset #edit-import{
+    display: none;
+}
+.views-exposed-form.collapsible.collapsed{
+    margin-bottom: 20px;
+}
+body.node-type-ciclo-customer #content-inner-inner h1.title{
+    /*background: url("../images/circle_sprite.png") no-repeat scroll right -543px #FFFFFF;
+      padding-bottom: 0;*/
+    padding-bottom:12px;
+}
+
+#quicktabs_container_ciclo_model_detail li.views-row, #quicktabs_container_ciclo_customer_detail li.views-row {
+    padding: 15px 0;
+}
+/*body.node-type-ciclo-installation #content-group .buildmode-full, 
+.node-type-ciclo-customer #content-content .buildmode-full,
+.node-type-ciclo-model-machine .buildmode-full,
+#pid-catalog-model-agitador-brinmix-1000 .buildmode-full{
+    padding: 10px 20px 20px;
+}*/
+select.form-select{
+    padding: 3px;
+}
+.node-type-ciclo-model-machine .edit-content-link, #pid-catalog-model-agitador-brinmix-1000 .edit-content-link {
+    right: 50px;
+    top: 18px;
+}
+body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-inner .nd-region-footer .field-ciclo-install-customer{
+    width: 88%;
+    
+}
+.view-ciclo-model-installations .nd-region-left{
+    padding-top: 5px !important;
+}
+.view-public-group-content .views-field-created{
+  font-size: 12px;  
+}

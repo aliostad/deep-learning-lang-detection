@@ -1,0 +1,53 @@
+@import "http://www.priberam.pt/SimpleDLPO/css/styles.css";
+
+* {
+	color: black;
+}
+
+body {
+	margin: 0px;
+	padding-left: 10px;
+	width: 400px;
+	max-height: 550px;
+	font-family: Helvetica;
+	text-align: center;
+}
+
+#palavra {
+	width: 70%;
+	margin: 5px;
+}
+
+#botao {
+	width: 35%;
+	margin: 5px;
+}
+
+#resultado {
+	text-align: left;
+	overflow: auto;
+	max-height: 370px;
+	display: none;
+}
+
+#load_info {
+	margin: 20px;
+	display: none;
+}
+
+#load_info.error {
+	color: white;
+	background: #FF1C1C;
+	border-radius: 5px;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#footer {
+	margin-top: 20px;
+}
+
+a {
+	color: #333;
+}

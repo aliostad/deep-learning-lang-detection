@@ -1,0 +1,20 @@
+#!/bin/sh -e
+
+if [ -x "/etc/init.d/openbsd-inetd" ] && which invoke-rc.d >/dev/null 2>&1; then
+	# Ignore any errors, this should be best-effort as it should not
+	# normally be needed in the first place. See #386469 for details.
+	invoke-rc.d openbsd-inetd stop || true
+fi
+
+# Automatically added by dh_installinit
+if [ -x "/etc/init.d/openbsd-inetd" ]; then
+	update-rc.d openbsd-inetd defaults 20 >/dev/null
+	if [ -x "`which invoke-rc.d 2>/dev/null`" ]; then
+		invoke-rc.d openbsd-inetd start || exit $?
+	else
+		/etc/init.d/openbsd-inetd start || exit $?
+	fi
+fi
+# End automatically added section
+
+

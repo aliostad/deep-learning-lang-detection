@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cinder>
+<block
+	name="CodeEditor"
+	id="Cinder-CodeEditor"
+	author="Simon Geilfus"
+	license="GPL, Commercial"
+	summary="In-App Full-Featured Code Editor."
+	url="https://github.com/simongeilfus/Cinder-CodeEditor"
+	git="git://github.com/simongeilfus/Cinder-CodeEditor.git"
+	>
+	<supports os="macosx" />
+	<supports os="msw" />
+
+	<copyExclude>samples</copyExclude>
+	<includePath>include</includePath>
+	<headerPattern>include/*.h</headerPattern>
+	<source>include/CodeEditor.cpp</source>
+	
+	<platform os="macosx">
+		<buildCopy>resources/CodeEditor</buildCopy>
+	</platform>
+
+	<platform os="msw">
+		<buildCopy>resources/CodeEditor/editor_msw.html</buildCopy>
+		<buildCopy>resources/CodeEditor/css/codemirror.css</buildCopy>
+		<buildCopy>resources/CodeEditor/css/dialog.css</buildCopy>
+		<buildCopy>resources/CodeEditor/css/show-hint.css</buildCopy>
+		<buildCopy>resources/CodeEditor/css/solarized.css</buildCopy>
+		<buildCopy>resources/CodeEditor/js/codemirror.js</buildCopy>
+		<buildCopy>resources/CodeEditor/js/dialog.js</buildCopy>
+		<buildCopy>resources/CodeEditor/js/glsl-hint.js</buildCopy>
+		<buildCopy>resources/CodeEditor/js/glsl.js</buildCopy>
+		<buildCopy>resources/CodeEditor/js/match-highlighter.js</buildCopy>
+		<buildCopy>resources/CodeEditor/js/search.js</buildCopy>
+		<buildCopy>resources/CodeEditor/js/searchcursor.js</buildCopy>
+		<buildCopy>resources/CodeEditor/js/show-hint.js</buildCopy>
+		<buildCopy>resources/CodeEditor/js/jquery.min.js</buildCopy>
+		<buildCopy>resources/CodeEditor/js/jquery.color.js</buildCopy>
+	</platform>
+	
+</block>
+</cinder>

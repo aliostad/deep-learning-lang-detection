@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<hierarchy bundleVersion="1.0.0"><Plot>
+    <Story repositoryId="Story0">
+      <Episode repositoryId="Episode1"/>
+      <Episode repositoryId="Episode14"/>
+      <Episode repositoryId="Episode20"/>
+      <Episode repositoryId="Episode17"/>
+      <Episode repositoryId="Episode18"/>
+      <Episode repositoryId="Episode19"/>
+      <Episode repositoryId="Episode12"/>
+      <Episode repositoryId="Episode36"/>
+      <Episode repositoryId="Episode37"/>
+    </Story>
+    <Story repositoryId="Story1">
+      <Episode repositoryId="Episode0">
+        <Scene repositoryId="Scene0"/>
+        <Scene repositoryId="Scene1"/>
+        <Scene repositoryId="Scene2"/>
+        <Scene repositoryId="Scene3"/>
+        <Scene repositoryId="Scene4"/>
+      </Episode>
+      <Episode repositoryId="Episode21">
+        <Scene repositoryId="Scene5"/>
+        <Scene repositoryId="Scene6"/>
+        <Scene repositoryId="Scene7"/>
+        <Scene repositoryId="Scene8"/>
+        <Scene repositoryId="Scene9"/>
+      </Episode>
+      <Episode repositoryId="Episode2">
+        <Scene repositoryId="Scene10"/>
+        <Scene repositoryId="Scene11"/>
+      </Episode>
+      <Episode repositoryId="Episode3">
+        <Scene repositoryId="Scene12"/>
+        <Scene repositoryId="Scene13"/>
+        <Scene repositoryId="Scene14"/>
+      </Episode>
+    </Story>
+  </Plot></hierarchy>

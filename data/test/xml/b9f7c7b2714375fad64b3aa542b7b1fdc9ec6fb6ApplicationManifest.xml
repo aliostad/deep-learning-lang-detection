@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ApplicationTypeName="CoPSampleType" ApplicationTypeVersion="1.0.0.0" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Parameters>
+    <Parameter Name="WebAPI_InstanceCount" DefaultValue="1" />
+    <Parameter Name="MediaService_InstanceCount" DefaultValue="1" />
+    <Parameter Name="AuthorService_MinReplicaSetSize" DefaultValue="2" />
+    <Parameter Name="AuthorService_PartitionCount" DefaultValue="1" />
+    <Parameter Name="AuthorService_TargetReplicaSetSize" DefaultValue="3" />
+    <Parameter Name="CourseService_InstanceCount" DefaultValue="1" />
+  </Parameters>
+  <ServiceManifestImport>
+    <ServiceManifestRef ServiceManifestName="EmailActorServicePkg" ServiceManifestVersion="1.0.0.0" />
+  </ServiceManifestImport>
+  <ServiceManifestImport>
+    <ServiceManifestRef ServiceManifestName="AuthorActorServicePkg" ServiceManifestVersion="1.0.0.0" />
+  </ServiceManifestImport>
+  <ServiceManifestImport>
+    <ServiceManifestRef ServiceManifestName="CoP.WebAPIPkg" ServiceManifestVersion="1.0.0.0" />
+    <ConfigOverrides />
+  </ServiceManifestImport>
+  <ServiceManifestImport>
+    <ServiceManifestRef ServiceManifestName="MediaServicePkg" ServiceManifestVersion="1.0.0.0" />
+    <ConfigOverrides />
+  </ServiceManifestImport>
+  <ServiceManifestImport>
+    <ServiceManifestRef ServiceManifestName="AuthorServicePkg" ServiceManifestVersion="1.0.0.0" />
+    <ConfigOverrides />
+  </ServiceManifestImport>
+  <ServiceManifestImport>
+    <ServiceManifestRef ServiceManifestName="CourseServicePkg" ServiceManifestVersion="1.0.0.0" />
+    <ConfigOverrides />
+  </ServiceManifestImport>
+  <DefaultServices>
+    <Service Name="EmailActorServiceActorService">
+      <StatelessService ServiceTypeName="EmailActorServiceActorServiceType">
+        <UniformInt64Partition PartitionCount="9" LowKey="-9223372036854775808" HighKey="9223372036854775807" />
+      </StatelessService>
+    </Service>
+    <Service Name="AuthorActorServiceActorService">
+      <StatefulService ServiceTypeName="AuthorActorServiceActorServiceType" TargetReplicaSetSize="3" MinReplicaSetSize="2">
+        <UniformInt64Partition PartitionCount="9" LowKey="-9223372036854775808" HighKey="9223372036854775807" />
+      </StatefulService>
+    </Service>
+    <Service Name="WebAPI">
+      <StatelessService ServiceTypeName="WebAPIType" InstanceCount="[WebAPI_InstanceCount]">
+        <SingletonPartition />
+      </StatelessService>
+    </Service>
+    <Service Name="MediaService">
+      <StatelessService ServiceTypeName="MediaServiceType" InstanceCount="[MediaService_InstanceCount]">
+        <SingletonPartition />
+      </StatelessService>
+    </Service>
+    <Service Name="AuthorService">
+      <StatefulService ServiceTypeName="AuthorServiceType" TargetReplicaSetSize="[AuthorService_TargetReplicaSetSize]" MinReplicaSetSize="[AuthorService_MinReplicaSetSize]">
+        <NamedPartition>
+          <Partition Name="999977808" />
+          <Partition Name="779912808" />
+        </NamedPartition>
+      </StatefulService>
+    </Service>
+    <Service Name="CourseService">
+      <StatelessService ServiceTypeName="CourseServiceType" InstanceCount="[CourseService_InstanceCount]">
+        <SingletonPartition />
+      </StatelessService>
+    </Service>
+  </DefaultServices>
+</ApplicationManifest>

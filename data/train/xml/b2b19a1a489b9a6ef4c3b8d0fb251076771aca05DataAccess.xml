@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Spring configuration for the Repository classess -->
+<objects xmlns="http://www.springframework.net">
+
+  <object id="MySessionFactoryFactory" type="CloudyBank.DataAccess.Configuration.SessionFactoryFactory, CloudyBank.DataAccess">
+    <constructor-arg type="bool" value="false"/>
+  </object>
+  
+  <!-- Static factory based instatiation of SessionFactory-->
+  <object id="SessionFactory"
+          factory-object="MySessionFactoryFactory"
+          factory-method="GetSessionFactory"/>
+
+  <!-- Parent object defining that all DataAccess classes accept SessionFactory as argument in constructor -->
+  <object id="BaseRepository" abstract="true">
+    <constructor-arg ref="SessionFactory"/>
+  </object>
+
+  <object id="AccountRepository" parent="BaseRepository" type="CloudyBank.DataAccess.Repository.AccountRepository, CloudyBank.DataAccess"/>
+  <object id="GenericRepository" parent="BaseRepository" type="CloudyBank.DataAccess.Repository.Repository,CloudyBank.DataAccess"/>
+  <object id="CustomerRepository" parent="BaseRepository" type="CloudyBank.DataAccess.Repository.CustomerRepository,CloudyBank.DataAccess"/>
+  <object id="OperationRepository" parent="BaseRepository" type="CloudyBank.DataAccess.Repository.OperationRepository,CloudyBank.DataAccess"/>
+  <object id="TaskRepository" parent="BaseRepository" type="CloudyBank.DataAccess.Repository.TaskRepository, CloudyBank.DataAccess"/>
+  <object id="AdvisorRepository" parent="BaseRepository" type="CloudyBank.DataAccess.Repository.AdvisorRepository,CloudyBank.DataAccess"/>
+  <object id="UserRepository" parent="BaseRepository" type="CloudyBank.DataAccess.Repository.UserRepository,CloudyBank.DataAccess"/>
+  <object id="TagRepository" parent="BaseRepository" type="CloudyBank.DataAccess.Repository.TagRepository,CloudyBank.DataAccess"/>
+  <object id="PaymentEventRepository" parent="BaseRepository" type="CloudyBank.DataAccess.Repository.PaymentEventRepository,CloudyBank.DataAccess"/>
+  <object id="OAuthRepository" parent="BaseRepository" type="CloudyBank.DataAccess.Repository.OAuthRepository,CloudyBank.DataAccess"/>
+  <object id="ImageRepository" parent="BaseRepository" type="CloudyBank.DataAccess.Repository.ImageRepository,CloudyBank.DataAccess"/>
+</objects>

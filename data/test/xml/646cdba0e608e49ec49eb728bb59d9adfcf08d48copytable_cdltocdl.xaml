@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Batch
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns="http://schemas.dbshell.com/core"
+    >
+    
+    <CopyTable Source="{Table Album}">
+        <CopyTable.Target>
+            <CdlFile Name="test1.cdl" />
+        </CopyTable.Target>
+    </CopyTable>
+
+    <CopyTable>
+        <CopyTable.Source>
+            <CdlFile Name="test1.cdl" />
+        </CopyTable.Source>
+        <CopyTable.Target>
+            <CdlFile Name="test2.cdl" />
+        </CopyTable.Target>
+    </CopyTable>
+    
+    <CopyTable Source="{File test1.cdl}" Target="{File test1.csv}" />
+</Batch>    

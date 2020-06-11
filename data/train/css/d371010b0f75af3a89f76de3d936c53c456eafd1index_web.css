@@ -1,0 +1,155 @@
+.carousel-inner img{
+    width : 100%;
+    height: 300px !important;
+}
+
+
+#productGrid{
+    margin : 0;
+    margin-top : 18px;
+    padding :0;
+}
+
+.product-list{
+    margin:0;
+    padding : 0;
+}
+
+.product-type{
+    color : #777777;
+}
+
+.product-price-box{
+    font-size: 14px;
+    text-align: left;
+}
+
+/*
+    Service
+*/
+
+.service-links {
+    background-color: #fbfbfb;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid #eee;
+    /*
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+     -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    -moz-border-radius-bottomright: 4px;
+    */
+}
+.service-links li {float: left; width: 50%;}
+
+.service-links:before {
+    font-size: 80px;
+    font-weight: 700;
+    color: #8c8bc8;
+    letter-spacing: -5px;
+    position: absolute;
+    white-space: nowrap;
+    top: -6px;
+    left: -7px;
+}
+.service-links a {
+    display: block;
+    padding: 8px 0;
+    text-align: center;
+    border-left: 1px solid #eee;
+    font-size: 12px;
+    text-shadow:none;
+    font-weight:800;
+    color: #777777;
+    padding-bottom: 200px;
+    margin-bottom: -190px;
+    text-decoration: none;
+}
+.service-links li:first-child a {border-left-width: 0;}
+.service-links a:hover {color: #515151 !important;}
+
+.service-links [class*="icon-small-"] {
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #53529b;
+    -webkit-transition: all 0.16s ease;
+    -moz-transition: all 0.16s ease;
+    -ms-transition: all 0.16s ease;
+    transition: all 0.16s ease;
+}
+.service-links .icon-small-prev, .service-links .icon-small-next {font-size: 22px;}
+.service-links a:hover [class*="icon-small-"] {color: #d4e729;}
+
+.service-desc p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 16px;
+}
+.service-image{
+
+}
+
+.service-image img {
+    display: block;
+    width: 250px !important;
+    height : 250px;
+    margin-left :auto;
+    margin-right : auto;
+}
+
+.service-list{
+    width :132px;
+
+}
+
+
+.service-list.team{
+	padding : 0;
+    margin-top: 14px;
+}
+
+.service-list .service-item{
+    /*
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    */
+    border: 1px solid #e7e7e7;
+    border-bottom: none;
+    padding: 14px 0 0px 0;
+}
+
+.ui-block-a .team{
+	padding: 0 3px 0 3px;
+}
+
+.ui-block-b .team{
+	padding: 0 3px 0 3px;
+}
+
+.service-list.team .service-content {
+    padding: 0px 12px 6px 12px;
+    font-size: 12px;
+    height : 335px;
+    overflow: hidden;
+}
+.service-list.team .service-title {font-size: 14px; line-height: 24px; margin-bottom: 8px; text-align: left;}
+.service-list.team .service-title a {color: black; text-decoration: none;}
+.service-list.team .service-title a:hover {
+    text-decoration: underline;
+}
+.service-list.team .service-title a:visited {
+    color: black;
+}
+
+.service-list.team .service-subtitle {color: #bf5d90; text-transform: uppercase; margin-bottom: 22px;}
+.service-list.team .service-image {margin: 0 0px 6px; width : 100%;}
+.service-image img{width : 100%;}
+.service-list.team .service-links li {width: 50%; font-size: 14px;}
+

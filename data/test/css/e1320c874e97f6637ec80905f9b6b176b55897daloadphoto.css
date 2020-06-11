@@ -1,0 +1,22 @@
+﻿#LoadPhotoHolder { width: 550px; height: 425px; overflow: hidden; position: absolute; top: -1000px; left: 200px; border: 4px solid #7F8082; background: White; font-family: Tahoma; }
+#LoadPhotoCenter_LPW { width: 100%; text-decoration: underline; font-weight: bold; padding-bottom: 10px; margin-top: 15px; }
+#LoadPhotoHolder #PhotosHolder_LPW { width: 100%; height: 397px; overflow: hidden; position: relative; }
+#LoadPhotoHolder table { width: 100%; }
+#LoadPhotoHolder #Photos_LPW { padding-left: 40px; }
+#LoadPhotoHolder #Albums_LPW { padding-left: 15px; }
+#LoadPhotoHolder .image_off, #LoadPhotoHolder .image_on { border: none; width: 120px; height: 150px; float: left; margin-left: 20px; margin-bottom: 20px; border: 4px solid White; position: relative; overflow: hidden; cursor: pointer; }
+#LoadPhotoHolder .innerImg { width: 120px; height: 150px; overflow: hidden; position: relative; }
+#LoadPhotoHolder .image_on { border-color: #7F8082; }
+#LoadPhotoHolder .loader { position: relative; top: 150px; left: 250px; }
+#LoadPhotoHolder .delim { height: 5px; border-top: 1px solid #ffffff; }
+#LoadPhotoHolder .album_off { border: none; width: 161px; height: 153px; overflow: hidden; float: left; margin-left: 10px; margin-bottom: 20px; position: relative; background-image: url(Images/album_off.png); background-repeat: no-repeat; font-family: Tahoma; font-size: 11px; color: #808080; }
+#LoadPhotoHolder .album_off:hover { background-image: url(Images/album_on.png); cursor: pointer; }
+#LoadPhotoHolder .album_name { font-weight: bold; color: #3b5998; position: relative; top: 16px; display: block; }
+#LoadPhotoHolder .album_name:hover { text-decoration: underline; cursor: pointer; }
+#LoadPhotoHolder .album_count { position: relative; top: 14px; display: block; }
+#LoadPhotoHolder .album_pic_h { width: 143px; height: 110px; position: relative; overflow: hidden; top: 11px; left: 11px; }
+#LoadPhotoHolder .backAlbum { position: relative; top: -1000px; right: 4px; }
+#LoadPhotoHolder .backAlbum:hover { cursor: pointer; }
+#LoadPhotoHolder .cross_on, #LoadPhotoHolder .cross_off { font-family: Tahoma; font-size: 13px; font-weight: bold; color: Red; position: relative; top: -145px; text-align: right; padding-right: 5px; }
+#LoadPhotoHolder .cross_off { top: 50px; }
+#LoadPhotoHeader { cursor: pointer; }

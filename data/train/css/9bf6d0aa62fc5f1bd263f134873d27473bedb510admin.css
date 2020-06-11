@@ -1,0 +1,17 @@
+/*logo*/
+/*#logo {background-image: url(/media/img/...);}*/
+
+/*color1*/
+a, a:hover {color: <COLOR1_PLACEHOLDER>;}
+#modelItemEditZone span.star {color: <COLOR1_PLACEHOLDER>;}
+#modelItemEditZone .alert {color: <COLOR1_PLACEHOLDER>;}
+
+/*color2*/
+#modelsList a {color: <COLOR2_PLACEHOLDER>;}
+#domainsList a {color: <COLOR2_PLACEHOLDER>;}
+#modelsList strong span.iconPNG {background-color: <COLOR2_PLACEHOLDER>;}
+#iconsDialogBox span.icon a:hover {background-color: <COLOR2_PLACEHOLDER>;}
+
+/*color3*/
+#modelItemEditZone .formItemSbmt {background-color: <COLOR3_PLACEHOLDER>;}
+#adminControls {border-top: 2px solid <COLOR3_PLACEHOLDER>;}

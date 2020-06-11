@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* Review */
+body.loadAllPages_false div#reviewContent { background-color: #F2F2F2; float: none; }
+body.loadAllPages_false div#reviewContent { *zoom: 1; }
+body.loadAllPages_false div#reviewContent:before,
+body.loadAllPages_false div#reviewContent:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+body.loadAllPages_false div#reviewContent:after {
+    clear: both;
+}
+
+/* Save and exit and cancel buttons */
+div[label="Bottom of Page"] {
+    float: left; display: none;
+}
+/* Default page submit button */
+div.templateButtonLayer { display: none !important; }
+
+/* Tab navigation for multiple display pages */
+.loadAllPages_false #globalnav {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #AAA;
+}
+.loadAllPages_false #globalnav {
+    width: auto;
+    margin: 0 0 15px 0;
+}
+#globalnav li { display: inline-block; margin: 0 0 7px 0; }
+#globalnav li a:link { padding: 10px; background-color: #CCCCCC; text-decoration: none; }
+.loadAllPages_false #globalnav a.here:link,
+.loadAllPages_false #globalnav a.here:visited {
+    color: #000000;
+    border-left-color: #939393;
+    border-top-color: #939393;
+    position: relative;
+    z-index: 102;
+}
+.loadAllPages_false #globalnav a:hover { color: #FFFFFF; background-color: #BBBBBB; }
+.loadAllPages_false #globalnav a.selectedTab {
+    background-color: #BBBBBB;
+    color: #FFFFFF;
+    border-left-color: #777777;
+    border-top-color: #777777;
+    border-right-color: #777777;
+}

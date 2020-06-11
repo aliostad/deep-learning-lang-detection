@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="service.xsd" generated="2013-04-07T18:44:33">
+<service>
+<vender_service>Bladecenter IBM</vender_service>
+<price>80</price>
+<delivery_center>India</delivery_center>
+<service_window_hour>24</service_window_hour>
+<service_window_week>7</service_window_week>
+</service>
+<service>
+<vender_service>HP Proliant</vender_service>
+<price>90</price>
+<delivery_center>China</delivery_center>
+<service_window_hour>8</service_window_hour>
+<service_window_week>5</service_window_week>
+</service>
+<service>
+<vender_service>Dell Poweredge</vender_service>
+<price>95</price>
+<delivery_center>Malaysia</delivery_center>
+<service_window_hour>10</service_window_hour>
+<service_window_week>5</service_window_week>
+</service>
+<service>
+<vender_service>Cisco Catalyst</vender_service>
+<price>60</price>
+<delivery_center>India</delivery_center>
+<service_window_hour>24</service_window_hour>
+<service_window_week>7</service_window_week>
+</service>
+<service>
+<vender_service>HP MSR</vender_service>
+<price>80</price>
+<delivery_center>China</delivery_center>
+<service_window_hour>16</service_window_hour>
+<service_window_week>5</service_window_week>
+</service>
+<service>
+<vender_service>NW IBM</vender_service>
+<price>85</price>
+<delivery_center>North Carolina</delivery_center>
+<service_window_hour>10</service_window_hour>
+<service_window_week>5</service_window_week>
+</service>
+<service>
+<vender_service>NW Juniper</vender_service>
+<price>55</price>
+<delivery_center>North Carolina</delivery_center>
+<service_window_hour>24</service_window_hour>
+<service_window_week>7</service_window_week>
+</service>
+<service>
+<vender_service>MS SQL</vender_service>
+<price>75</price>
+<delivery_center>China</delivery_center>
+<service_window_hour>8</service_window_hour>
+<service_window_week>7</service_window_week>
+</service>
+<service>
+<vender_service>MySQL</vender_service>
+<price>65</price>
+<delivery_center>Mexico</delivery_center>
+<service_window_hour>10</service_window_hour>
+<service_window_week>7</service_window_week>
+</service>
+<service>
+<vender_service>DB2</vender_service>
+<price>85</price>
+<delivery_center>Malaysia</delivery_center>
+<service_window_hour>16</service_window_hour>
+<service_window_week>5</service_window_week>
+</service>
+<service>
+<vender_service>Checkpoint</vender_service>
+<price>100</price>
+<delivery_center>North Carolina</delivery_center>
+<service_window_hour>24</service_window_hour>
+<service_window_week>7</service_window_week>
+</service>
+<service>
+<vender_service>Cisco ASA</vender_service>
+<price>95</price>
+<delivery_center>North Carolina</delivery_center>
+<service_window_hour>24</service_window_hour>
+<service_window_week>7</service_window_week>
+</service>
+<service>
+<vender_service>Juniper Security</vender_service>
+<price>90</price>
+<delivery_center>North Carolina</delivery_center>
+<service_window_hour>24</service_window_hour>
+<service_window_week>7</service_window_week>
+</service>
+</dataroot>

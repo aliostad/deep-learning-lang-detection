@@ -1,0 +1,32 @@
+#!/bin/bash
+# this is just for me (project maintainer) to automatically make the
+# package.  don't forget to rename the root package directory to 'sample',
+# if it isnt already.
+
+# start script.
+NOCOLOR=1
+CMPTIME=`date "+%Y\/%m\/%d %T %Z"`
+LSMTIME=`date "+%Y-%m-%d"`
+VERSION=`cat version | grep -v "#"`
+
+rm -f sample-*
+cd ..
+make clean 1>/dev/null 2>&1
+echo $VERSION>VERSION
+sed "s/%VERSION%/$VERSION/g;s/%CMPTIME%/$CMPTIME/g" src/sample.h.in>src/sample.h
+sed "s/%VERSION%/$VERSION/g;s/%GZSIZE%/0 sample-${VERSION}.tar.gz/g;s/%BZ2SIZE%/0 sample-${VERSION}.tar.bz2/g;s/%LSMTIME%/$LSMTIME/g;" sample.lsm.in>sample.lsm
+md5sum * */* 1>MD5SUM 2>/dev/null
+touch * */*
+cd ..
+mv sample sample-${VERSION}
+tar -c sample-${VERSION}/>/tmp/sample-${VERSION}.tar
+gzip /tmp/sample-${VERSION}.tar
+tar -c sample-${VERSION}/>/tmp/sample-${VERSION}.tar
+bzip2 /tmp/sample-${VERSION}.tar
+# doesn't effect the packaged version from here on.
+mv sample-${VERSION} sample
+mv /tmp/sample-${VERSION}.* sample/adm/ 
+cd sample/adm
+GZSIZE=`wc -c sample-${VERSION}.tar.gz|awk {'print $1'}`
+BZ2SIZE=`wc -c sample-${VERSION}.tar.bz2|awk {'print $1'}`
+sed "s/%VERSION%/$VERSION/g;s/%GZSIZE%/$GZSIZE sample-${VERSION}.tar.gz/g;s/%BZ2SIZE%/$BZ2SIZE sample-${VERSION}.tar.bz2/g;s/%LSMTIME%/$LSMTIME/g" ../sample.lsm.in>../sample.lsm

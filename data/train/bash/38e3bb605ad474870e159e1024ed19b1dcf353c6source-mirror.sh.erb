@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+<% node.source_mirror.repos.each do |repo_owner, r| %>
+  <% r = [r] unless r.is_a?(Array) %>
+  <% r.each do |repo| %>
+local_dir=<%= node.source_mirror.data_dir %>/<%= repo_owner %>/<%= repo %>.git
+if [ -d $local_dir ] ; then
+  cd $local_dir
+  git fetch --tags origin master:master
+  cd -
+else
+  mkdir -p `dirname $local_dir`
+  git clone --shared --bare https://github.com/<%= repo_owner %>/<%= repo %>.git $local_dir
+  # Make the repo cloneable over vanilla HTTP
+  cd $local_dir
+  git update-server-info
+  cd -
+fi
+<% end %>
+<% end %>

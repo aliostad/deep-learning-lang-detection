@@ -1,0 +1,20 @@
+# ~~~~~~~~~~~~~~~~~~~
+# bashrc (MXDF::BASH)
+# ~~~~~~~~~~~~~~~~~~~
+
+# Load '!base.system.bash' first, so the needed functions can be used.
+# Note this file will not be loaded thru '_load_component()' due to the
+# '!' in the filename.
+source $MXDF_BASH/system/!base.system.bash
+
+# Load the 'system' component from the BASH section
+_load_component 'system'
+
+# Load the rest of the components from the BASH section
+for component in 'aliases' 'completions' 'plugins'; do
+  _load_component $component
+done
+unset component
+
+# Load the <local-component> from the BASH section
+_load_component $BASH_LOCAL_COMPONENT

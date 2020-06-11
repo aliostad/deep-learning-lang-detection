@@ -1,0 +1,77 @@
+.variation_errors 
+{
+	display : none;
+	margin  : 2.5em 0 6px 0;
+}
+#load-ads-image h4 
+{
+	margin-bottom : 12px;
+	font-size     : 14px;
+	font-weight   : normal; 
+}
+/*
+ *
+ *  Text creatives
+ *  
+ */
+
+#manual_display_url 
+{
+	display : none;
+}
+
+
+label.error {
+	display    : block;
+	background : url("../images/ICON_error.gif") no-repeat scroll 13px 11px #FDDFDE;
+   border     : 1px solid #FBC7C6;
+   color      : #000000;
+   margin     : 1em 0 20px;
+   padding    : 12px 24px 12px 35px;
+}
+
+
+/*
+ * 
+ *  Toggle upload vs load from campaigns
+ * 
+ */
+
+#bulk_load_options {
+	list-style-type : none;
+	margin          : 12px 0 6px 0;
+	padding         : 0;
+}
+#bulk_load_options li {
+	display : inline;
+	margin  : 0 0 0 6px;
+	padding : 0 6px 0 12px;
+}
+.import_options_contracted {
+    background      : url("../images/ICON_contracted.gif") no-repeat scroll 0 3px transparent;
+    color           : #666;
+    cursor          : pointer;
+    font-size       : 8pt;
+    padding-left    : 13px;
+    text-decoration : underline;
+}
+.import_options_expanded {
+    background      : url("../images/ICON_expanded.gif") no-repeat scroll 0 3px transparent;
+    color           : #888;
+    cursor          : pointer;
+    font-size       : 8pt;
+    padding-left    : 13px;
+    text-decoration : none;
+}
+
+#load_ads_section, #upload_ads_section
+{
+	display    : none;
+	background : #eee;
+}
+#load_ads_section .module, #upload_ads_section .module 
+{
+	margin     : 12px 24px;
+}
+
+.variation_errors { display: none; }

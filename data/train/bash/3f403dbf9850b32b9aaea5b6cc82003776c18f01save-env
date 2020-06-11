@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# usage: save-env tech cust
+# e.g.: save-env ldap humanisineat
+
+if [ $# -gt 0 ]; then
+	if [ $1 == "-l" ]; 
+	then
+		if [ $# -eq 2 ];
+		then
+			cat ~/envinfo | grep $2
+		else
+			cat ~/envinfo | cut -f1 -d "-" | sort | uniq
+		fi
+
+	elif [ $1 == "-c" ]; 
+	then
+		cat ~/envinfo | cut -f2 -d "-" | sort | uniq
+
+	elif [ $1 == "-s" ]; 
+	then
+		cat ~/envinfo | grep $2	
+
+	elif [ $# -eq 2 ]; 
+	then
+		echo "$1-$2" >> ~/envinfo
+
+	else
+		echo "usage: save-env technology customer"
+		echo "for example: save-env ldap thespacepro"
+	fi
+fi

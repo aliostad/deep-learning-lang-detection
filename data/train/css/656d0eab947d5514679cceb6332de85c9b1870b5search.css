@@ -1,0 +1,62 @@
+
+/*
+Search textfield
+*/
+
+.sc-view .sc-text-field-view.search {
+  border: none;
+  background: static_url('images/search.png') no-repeat;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+/* focus */
+
+.sc-view .sc-text-field-view.search.focus {
+  border-color: none;
+  outline: 0;
+}
+
+/*
+	input size
+*/
+
+.sc-view .sc-text-field-view.search input {
+  left: 20px;
+  width: 148px;
+  height: 16px;
+}
+
+.sc-view.sc-text-field-view.search .padding {
+  top: 5px;
+}
+
+.mozilla .sc-view.sc-text-field-view.search .padding {
+  top: 4px;
+}
+
+.msie .sc-view.sc-text-field-view.search .padding {
+  top: 7px;
+}
+
+
+.sc-view .sc-text-field-view.search.disabled  {
+  border-color: none;
+}
+
+/*
+ Remove border
+*/
+
+.safari .sc-view  .sc-text-field-view.search .border {
+  -webkit-appearance: none;
+}
+
+.mozilla .sc-view  .sc-text-field-view.search .border {
+  -moz-appearance: none;
+}
+
+.msie .sc-view .sc-text-field-view.search .border {
+  border: 0;
+}
+

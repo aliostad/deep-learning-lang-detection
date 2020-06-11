@@ -1,0 +1,66 @@
+﻿div.message div.success 
+{
+    background-color: #DFF2BF;
+    border: 1px solid #4F8A10;
+}
+
+div.message div.failure 
+{
+    background-color: #FCC;
+    border: 1px solid #F00;
+}
+
+div.message div.warning 
+{
+    background-color: #FFD;
+    border: 1px solid #DD0;
+}
+
+div.message div.info 
+{
+    background-color: #EEFDFF;
+    border: 1px solid #046380;
+}
+
+div.message div.messageBody 
+{
+    padding: 10px;
+    margin: 50px;
+    overflow: auto;
+}
+
+div.message div.messageBody  p
+{
+    margin-top: 0;
+    margin-left: 87px;
+    font-size: 15px;
+}
+
+/* IE 3px jog hack*/
+* html div.message div.messageBody p
+{
+    height: 1%;
+}
+
+div.message div.messageBody img
+{
+    float: left;
+    margin: 8px 24px 8px 8px;
+}
+
+div.message a.messageButton
+{
+    float: right;
+    clear: both;
+}
+
+div.message div.messageBody li
+{
+    list-style-type: none;
+    margin-left: 64px;
+}
+
+div.message div.messageBody li a.button
+{
+    line-height: 32px;
+}

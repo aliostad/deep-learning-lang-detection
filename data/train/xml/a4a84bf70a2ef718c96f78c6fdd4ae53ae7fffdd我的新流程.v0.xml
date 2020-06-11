@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><f:workflow-process xmlns:f="http://www.fireflow.org/schema/workflowprocess" display-name="我的新流程" id="My_New_Process" name="My_New_Process" package-id="hr">
+  <s:services xmlns:s="http://www.fireflow.org/schema/service"/>
+  <r:resources xmlns:r="http://www.fireflow.org/schema/resource">
+    <r:resource display-name="流程实例创建者" id="PROCESS_INSTANCE_CREATOR" name="PROCESS_INSTANCE_CREATOR" resource-type="org.fireflow.constants.resource_type.ProcessInstanceCreator" value="">
+      <r:resolver class-name="org.fireflow.engine.resource.impl.ProcessInstanceCreatorResolver"/>
+    </r:resource>
+  </r:resources>
+  <f:sub-processes>
+    <f:sub-process display-name="main" id="My_New_Process.main" name="main">
+      <f:end-nodes/>
+    </f:sub-process>
+  </f:sub-processes>
+  <f:diagrams/>
+</f:workflow-process>

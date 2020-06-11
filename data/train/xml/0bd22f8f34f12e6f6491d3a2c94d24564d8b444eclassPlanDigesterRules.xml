@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<digester-rules>
+	<pattern value="gooruclassplan">
+		
+		<pattern value="info">
+			<!-- <bean-property-setter-rule pattern="id"	propertyname="classPlanId"/> -->
+           	<bean-property-setter-rule pattern="topic"	propertyname="topic"/>
+			<bean-property-setter-rule pattern="lesson"	propertyname="lesson"/>
+			<bean-property-setter-rule pattern="vocabulary"	propertyname="vocabulary"/>
+			
+			<!--<call-method-rule pattern="subject" methodname="appendContent" paramtype="java.lang.String" paramcount="0" />
+			<call-method-rule pattern="lessonobjectives" methodname="appendContent" paramtype="java.lang.String" paramcount="0" />-->
+			<call-method-rule pattern="studentquestions" methodname="appendContent" paramtype="java.lang.String" paramcount="0" />
+			<call-method-rule pattern="suggestedreading" methodname="appendContent" paramtype="java.lang.String" paramcount="0" />
+			<call-method-rule pattern="instruction" methodname="appendContent" paramtype="java.lang.String" paramcount="0" />
+			<pattern value="curriculums">
+				<call-method-rule pattern="curriculum" methodname="appendContent" paramtype="java.lang.String" paramcount="0" />
+			</pattern>
+		</pattern>	
+			
+		<pattern value="segments">
+			<pattern value="segment">
+				<call-method-rule pattern="title" methodname="appendSegmentTitles" paramtype="java.lang.String" paramcount="0" />
+				<call-method-rule pattern="description" methodname="appendContent" paramtype="java.lang.String" paramcount="0" />
+				<pattern value="resources">
+					<pattern value="resource">
+						<call-method-rule pattern="nativeurl" methodname="appendContent" paramtype="java.lang.String" paramcount="0" />
+						<call-method-rule pattern="label" methodname="appendContent" paramtype="java.lang.String" paramcount="0" />
+						<call-method-rule pattern="description" methodname="appendContent" paramtype="java.lang.String" paramcount="0" />
+						<pattern value="instructornotes">
+							<call-method-rule pattern="instruction" methodname="appendContent" paramtype="java.lang.String" paramcount="0" />
+						</pattern>
+					</pattern>
+				</pattern>
+			</pattern>
+		</pattern>
+		
+	</pattern>
+</digester-rules>

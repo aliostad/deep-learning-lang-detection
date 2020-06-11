@@ -1,0 +1,53 @@
+
+.serviceCards {
+  display: flex;
+  word-break: break-word;
+  hyphen: auto;
+  flex-wrap: wrap;
+}
+
+.serviceCards > *:not(:last-child) {
+}
+
+.serviceCard {
+  min-height: 15rem;
+  background-color: hsl(159, 76%, 43%);
+  color: hsl(0, 100%, 100%);
+  padding: 2rem;
+  flex-grow: 1;
+  border-bottom: 1px solid white;
+  position: relative;
+}
+
+.serviceCard p {
+  border-top: 1px solid white;
+  padding-top: 1rem;
+}
+
+.serviceCard .badge {
+  position: absolute;
+  right: 30px;
+}
+
+
+@media (--md-up) {
+  .serviceCard {
+    width: 50%;
+    border-right: transparent;
+  }
+  .serviceCard:first-child,
+  .serviceCard:nth-child(2n+1) {
+    border-right: 1px solid white;
+  }
+}
+
+@media (--xlg) {
+  .serviceCard {
+    width: 15rem;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  .serviceCard:last-child {
+    border-right: transparent;
+  }
+}

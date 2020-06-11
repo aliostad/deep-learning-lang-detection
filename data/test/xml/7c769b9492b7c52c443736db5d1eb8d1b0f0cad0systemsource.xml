@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbook>
+	<worksheet name="Hoja4">
+		<section startRow="0" endRow="0">
+			<!-- TITULOS -->
+		</section>
+		<loop startRow="1" endRow="1" items="orders.order" var="order"
+			varType="org.gaviot.transformer.model.generic.ElProgresoSystemOrder">
+			<section startRow="1" endRow="1">
+				<mapping row="1" col="0">order.date</mapping>
+				<mapping row="1" col="1">order.type</mapping>
+				<mapping row="1" col="2">order.documentNumber</mapping>
+				<mapping row="1" col="3">order.name</mapping>
+				<mapping row="1" col="4">order.cpa</mapping>
+				<mapping row="1" col="5">order.insured_object</mapping>
+				<mapping row="1" col="6">order.branch</mapping>
+				<mapping row="1" col="7">order.sum</mapping>
+				<mapping row="1" col="8">order.currency</mapping>
+				<mapping row="1" col="9">order.from</mapping>
+				<mapping row="1" col="10">order.to</mapping>
+				<mapping row="1" col="11">order.request</mapping>
+				<mapping row="1" col="12">order.policy</mapping>
+				<mapping row="1" col="13">order.product</mapping>
+				<mapping row="1" col="14">order.vehicle</mapping>
+			</section>
+			<loopbreakcondition>
+				<rowcheck offset="0">
+					<cellcheck offset="0"></cellcheck>
+				</rowcheck>
+			</loopbreakcondition>
+		</loop>
+	</worksheet>
+</workbook>

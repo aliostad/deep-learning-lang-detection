@@ -1,0 +1,17 @@
+.squid-api-relation-model-management .id {
+    display: none;
+}
+.squid-api-relation-model-management .leftId, .squid-api-relation-model-management .rightId, .squid-api-relation-model-management .leftCardinality, .squid-api-relation-model-management .rightCardinality {
+    float: left;
+    width: 25%;
+}
+.squid-api-relation-model-management .leftName, .squid-api-relation-model-management .rightName {
+    width: 50%;
+    float: left;
+}
+.squid-api-relation-model-management fieldset > div {
+    padding-right: 10px;
+}
+.squid-api-relation-model-management .leftId form fieldset > div:first-of-type, .squid-api-relation-model-management .rightId fieldset > div:first-of-type, .squid-api-relation-model-management .leftId > label:first-of-type, .squid-api-relation-model-management .rightId > label:first-of-type {
+    display: none;
+}

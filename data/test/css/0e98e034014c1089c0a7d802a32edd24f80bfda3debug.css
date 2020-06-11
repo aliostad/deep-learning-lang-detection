@@ -1,0 +1,76 @@
+/* $Id: debug.css,v 1.1 2009/06/26 00:33:40 duvien Exp $ */
+
+body.show-grid .container_16 {
+  background-image: url('../images/16_col.gif');
+}
+
+body.show-grid .grid_1:hover,
+body.show-grid .grid_2:hover,
+body.show-grid .grid_3:hover,
+body.show-grid .grid_4:hover,
+body.show-grid .grid_5:hover,
+body.show-grid .grid_6:hover,
+body.show-grid .grid_7:hover,
+body.show-grid .grid_8:hover,
+body.show-grid .grid_9:hover,
+body.show-grid .grid_10:hover,
+body.show-grid .grid_11:hover,
+body.show-grid .grid_12:hover,
+body.show-grid .grid_13:hover,
+body.show-grid .grid_14:hover,
+body.show-grid .grid_15:hover,
+body.show-grid .grid_16:hover {
+  background-color: rgba(0, 255, 255, .2);
+  background-repeat: no-repeat;
+  background-position: top right;
+  outline: 1px solid #d66;
+}
+
+body.show-grid .grid_1:hover {
+  background-image: url('../images/grid_count/1.png');
+}
+body.show-grid .grid_2:hover {
+  background-image: url('../images/grid_count/2.png');
+}
+body.show-grid .grid_3:hover {
+  background-image: url('../images/grid_count/3.png');
+}
+body.show-grid .grid_4:hover {
+  background-image: url'../images/grid_count/4.png');
+}
+body.show-grid .grid_5:hover {
+  background-image: url('../images/grid_count/5.png');
+}
+body.show-grid .grid_6:hover {
+  background-image: url('../images/grid_count/6.png');
+}
+body.show-grid .grid_7:hover {
+  background-image: url('../images/grid_count/7.png');
+}
+body.show-grid .grid_8:hover {
+  background-image: url('../images/grid_count/8.png');
+}
+body.show-grid .grid_9:hover {
+  background-image: url('../images/grid_count/9.png');
+}
+body.show-grid .grid_10:hover {
+  background-image: url('../images/grid_count/10.png');
+}
+body.show-grid .grid_11:hover {
+  background-image: url('../images/grid_count/11.png');
+}
+body.show-grid .grid_12:hover {
+  background-image: url('../images/grid_count/12.png');
+}
+body.show-grid .grid_13:hover {
+  background-image: url('../images/grid_count/13.png');
+}
+body.show-grid .grid_14:hover {
+  background-image: url('../images/grid_count/14.png');
+}
+body.show-grid .grid_15:hover {
+  background-image: url('../images/grid_count/15.png');
+}
+body.show-grid .grid_16:hover {
+  background-image: url('../images/grid_count/16.png');
+}

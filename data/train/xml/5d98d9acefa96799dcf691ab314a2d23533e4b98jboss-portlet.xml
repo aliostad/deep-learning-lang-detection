@@ -1,0 +1,115 @@
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ JBoss, a division of Red Hat                                              ~
+  ~ Copyright 2006, Red Hat Middleware, LLC, and individual                   ~
+  ~ contributors as indicated by the @authors tag. See the                    ~
+  ~ copyright.txt in the distribution for a full listing of                   ~
+  ~ individual contributors.                                                  ~
+  ~                                                                           ~
+  ~ This is free software; you can redistribute it and/or modify it           ~
+  ~ under the terms of the GNU Lesser General Public License as               ~
+  ~ published by the Free Software Foundation; either version 2.1 of          ~
+  ~ the License, or (at your option) any later version.                       ~
+  ~                                                                           ~
+  ~ This software is distributed in the hope that it will be useful,          ~
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of            ~
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU          ~
+  ~ Lesser General Public License for more details.                           ~
+  ~                                                                           ~
+  ~ You should have received a copy of the GNU Lesser General Public          ~
+  ~ License along with this software; if not, write to the Free               ~
+  ~ Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA        ~
+  ~ 02110-1301 USA, or see the FSF site: http://www.fsf.org.                  ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!DOCTYPE portlet-app PUBLIC
+   "-//JBoss Portal//DTD JBoss Portlet 2.6//EN"
+   "http://www.jboss.org/portal/dtd/jboss-portlet_2_6.dtd">
+
+<portlet-app>
+   <portlet>
+      <portlet-name>CMSAdminPortlet</portlet-name>
+      <transaction>
+         <trans-attribute>Required</trans-attribute>
+      </transaction>
+      <header-content>
+         <link rel="stylesheet" type="text/css" href="/images/cms/admin/style.css" media="screen"/>
+      </header-content>
+      <portlet-info>
+         <icon>
+            <small-icon>/images/portletIcon_CMS.gif</small-icon>
+            <large-icon>/images/portletIcon_CMS.gif</large-icon>
+         </icon>
+      </portlet-info>
+   </portlet>
+   <!-- Service injected in the portlet context. -->
+   <service>
+      <service-name>PortalObjectContainer</service-name>
+      <service-class>org.jboss.portal.core.model.portal.PortalObjectContainer</service-class>
+      <service-ref>:container=PortalObject</service-ref>
+   </service>
+   <service>
+      <service-name>InstanceContainer</service-name>
+      <service-class>org.jboss.portal.core.model.instance.InstanceContainer</service-class>
+      <service-ref>:container=Instance</service-ref>
+   </service>
+   <service>
+      <service-name>ThemeService</service-name>
+      <service-class>org.jboss.portal.theme.ThemeService</service-class>
+      <service-ref>:service=ThemeService</service-ref>
+   </service>
+   <service>
+      <service-name>LayoutService</service-name>
+      <service-class>org.jboss.portal.theme.LayoutService</service-class>
+      <service-ref>:service=LayoutService</service-ref>
+   </service>
+   <service>
+      <service-name>CMS</service-name>
+      <service-class>org.jboss.portal.cms.CMS</service-class>
+      <service-ref>:service=CMS</service-ref>
+   </service>
+   <service>
+      <service-name>UserModule</service-name>
+      <service-class>org.jboss.portal.identity.UserModule</service-class>
+      <service-ref>:service=Module,type=User</service-ref>
+   </service>
+   <service>
+      <service-name>RoleModule</service-name>
+      <service-class>org.jboss.portal.identity.RoleModule</service-class>
+      <service-ref>:service=Module,type=Role</service-ref>
+   </service>
+   <service>
+      <service-name>UserProfileModule</service-name>
+      <service-class>org.jboss.portal.identity.UserProfileModule</service-class>
+      <service-ref>:service=Module,type=UserProfile</service-ref>
+   </service>
+   <service>
+      <service-name>MembershipModule</service-name>
+      <service-class>org.jboss.portal.identity.MembershipModule</service-class>
+      <service-ref>:service=Module,type=Membership</service-ref>
+   </service>
+   <service>
+      <service-name>MailModule</service-name>
+      <service-class>org.jboss.portal.core.modules.MailModule</service-class>
+      <service-ref>:service=Module,type=Mail</service-ref>
+   </service>
+   <service>
+      <service-name>PortalAuthorizationManagerFactory</service-name>
+      <service-class>org.jboss.portal.security.spi.auth.PortalAuthorizationManagerFactory</service-class>
+      <service-ref>:service=PortalAuthorizationManagerFactory</service-ref>
+   </service>
+   <service>
+      <service-name>AuthorizationDomainRegistry</service-name>
+      <service-class>org.jboss.portal.security.AuthorizationDomainRegistry</service-class>
+      <service-ref>:service=AuthorizationDomainRegistry</service-ref>
+   </service>
+   <service>
+      <service-name>FederatingPortletInvoker</service-name>
+      <service-class>org.jboss.portal.portlet.federation.FederatingPortletInvoker</service-class>
+      <service-ref>:service=PortletInvoker,type=Federating</service-ref>
+   </service>
+   <service>
+      <service-name>SearchFederationService</service-name>
+      <service-class>org.jboss.portal.search.federation.SearchFederation</service-class>
+      <service-ref>:service=SearchFederationService</service-ref>
+   </service>
+</portlet-app>

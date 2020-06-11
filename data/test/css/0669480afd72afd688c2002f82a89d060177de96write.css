@@ -1,0 +1,15 @@
+.layPop { background:#b4bdc5; }
+.layPop .close { position:absolute; right:18px; top:0; text-align:right; }
+.layPop .close img { cursor:pointer; }
+.layPop h1 { color:#272823; font-size:26px; text-decoration:underline; }
+.layPop h1 span { display:block; padding:28px 25px 25px; }
+.layPop .titleArea h2 { color:#fff; }
+.layInner { padding:20px 25px 0; background:#fff; color:#000; border-top:1px solid #99a2aa; }
+.layPop .btnArea { overflow:hidden; background:#fff; width:100%; padding:30px 30px 30px 27px; margin:0 -60px 0 0; position:relative; left:-25px; text-align:right; }
+.layPop .btnArea img { padding:0 1px 0 0; cursor:pointer; }
+
+.xans-calendar-write table { border:0; border-top:2px solid #99a2aa; border-bottom:2px solid #99a2aa; }
+.xans-calendar-write th { width:100px; padding:4px 0 5px; text-align:left; font-size:11px; font-weight:normal; border-bottom:1px solid #99a2aa; }
+.xans-calendar-write td { padding:4px 0 5px; font-size:11px; border-bottom:1px solid #99a2aa; }
+.xans-calendar-write td input,
+.xans-calendar-write td textarea { padding:2px 2px 1px; border:1px solid #99a2aa; }

@@ -1,0 +1,34 @@
+#!/bin/bash
+
+#
+# Creates new basic repository for puppet module
+#
+
+repo=module-new
+description="nuevo modulo de git "
+
+
+gitdir=/var/cache/git
+
+# Creación de repositorio:
+ mkdir $gitdir/$repo
+
+ chown -R git:users $gitdir/$repo
+ chmod g+ws -R $gitdir/$repo/objects/
+ chmod g+w -R $gitdir/$repo
+ 
+ cd $gitdir/$repo
+ git init --bare
+ 
+ echo $description > $gitdir/$repo/description
+ 
+ 
+# Git Hooks:
+cd $gitdir/$repo/hooks
+git clone https://github.com/drwahl/puppet-Git-hooks
+
+# [[ -e $gitdir/src-git-hooks ]] && cp -rfp $gitdir/src-git-hooks/* $gitdir/$repo/hooks
+
+ 
+  
+  

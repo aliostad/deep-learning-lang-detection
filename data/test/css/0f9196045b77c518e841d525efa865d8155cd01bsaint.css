@@ -1,0 +1,42 @@
+/** Add css rules here for your application. */
+
+
+
+/*
+ *	service CSS styles
+ */
+.service-status-ok {
+	background-color: #33FF00;
+}
+
+.service-status-info {
+	background-color: #00AEFF;
+}
+
+.service-status-warn {
+	background-color: #FFFF00;
+}
+
+.service-status-minor {
+	background-color: #FFDE00;
+}
+
+.service-status-major {
+	background-color: #FF9900;
+}
+
+.service-status-critical {
+	background-color: #E83838;
+}
+
+.service-status-unknown {
+	background-color: #FF83E7;
+}
+
+.service-status-pending {
+	background-color: #ACACAC;
+}
+
+.service-staus-not-final {
+	font-style: italic;
+}

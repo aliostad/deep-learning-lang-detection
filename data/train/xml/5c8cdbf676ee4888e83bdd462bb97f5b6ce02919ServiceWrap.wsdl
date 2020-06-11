@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" 
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:sn="$ServiceNamespace$"
+             targetNamespace="$ServiceNamespace$">
+
+             <import namespace="$ServiceNamespace$" location="$AbsoluteWSDLFilePath$"/>
+
+             <service name="$ServiceName$Consumer$UniqueServiceName$">
+                <port name="$ServiceEndpoint$" binding="sn:$ServiceBinding$">
+                   <soap:address location="Undefined"/>
+                </port>
+             </service>
+
+             <service name="$ServiceName$Provider$UniqueServiceName$">
+                <port name="$ServiceEndpoint$" binding="sn:$ServiceBinding$">
+                   <soap:address location="Undefined"/>
+                </port>
+             </service>
+</definitions>

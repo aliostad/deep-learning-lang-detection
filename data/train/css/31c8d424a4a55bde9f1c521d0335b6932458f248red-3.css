@@ -1,0 +1,14 @@
+/* ---------------------------------
+red-3 Color Skin
+--------------------------------- */
+
+a, strong,.single-title, .grid-gallery figcaption h3, .post-icon,.request-text span {
+	color: #D40436;
+}
+.btn-video-wr, .service-list .service-one > a:hover,.instagram-listing:hover::before,.team-listing:hover::before,#address,.stats-project, .stats-clients, .stats-tweets, .stats-coffee,.service-list .service-box > a:hover{
+	background: #D40436;
+	border-color: #D40436;
+}
+.navbar{
+	background: rgba(212, 4, 54, 0.95);
+}

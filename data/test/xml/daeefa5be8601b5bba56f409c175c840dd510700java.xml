@@ -1,0 +1,26 @@
+<language name="java" fileextension=".java" xmlns="http://www.jah.fr/codegen/">
+	<style>
+		<indent char=" " occurence="4"></indent>
+		<block start="{" end="}" newline="false"></block>
+		<doc start="/**" end="*/"></doc>
+		<instruction end=";"></instruction>
+		<method style="lowercamelcase"></method>
+		<class style="uppercamelcase"></class>
+	</style>
+	<code>
+		<visibilities default="public">
+			<mapping name="public" value="public"></mapping>
+			<mapping name="private" value="private"></mapping>
+			<mapping name="protected" value="protected"></mapping>
+		</visibilities>
+		<types>
+			<mapping name="int" value="int"></mapping>
+			<mapping name="short" value="short"></mapping>
+			<mapping name="long" value="long"></mapping>
+			<mapping name="char" value="char"></mapping>
+			<mapping name="string" value="String"></mapping>
+			<mapping name="bool" value="boolean"></mapping>
+			<mapping name="void" value="void"></mapping>
+		</types>
+	</code>
+</language>

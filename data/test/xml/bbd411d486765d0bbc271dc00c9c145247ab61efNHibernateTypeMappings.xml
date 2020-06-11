@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--
+  This is used to map the model types to
+  hibernate types.
+-->
+<mappings name="NHibernate">
+    <mapping>
+        <from>datatype::Time</from>
+        <from>datatype::Date</from>
+        <from>datatype::DateTime</from>
+        <from>datatype::Timestamp</from>
+        <to>Nullables.NHibernate.NullableDateTimeType, Nullables.NHibernate</to>
+    </mapping>
+    <mapping>
+        <from>datatype::char</from>
+        <to>Char</to>
+    </mapping>
+    <mapping>
+        <from>datatype::Character</from>
+        <to>Nullables.NHibernate.NullableCharType, Nullables.NHibernate</to>
+    </mapping>
+    <mapping>
+        <from>datatype::byte</from>
+        <to>Byte</to>
+    </mapping>
+    <mapping>
+        <from>datatype::Byte</from>
+        <to>Nullables.NHibernate.NullableByteType, Nullables.NHibernate</to>
+    </mapping>
+    <mapping>
+        <from>datatype::short</from>
+        <to>Int16</to>
+    </mapping>
+    <mapping>
+        <from>datatype::Short</from>
+        <to>Nullables.NHibernate.NullableInt16Type, Nullables.NHibernate</to>
+    </mapping>
+    <mapping>
+        <from>datatype::int</from>
+        <to>Int32</to>
+    </mapping>
+    <mapping>
+        <from>datatype::Integer</from>
+        <to>Nullables.NHibernate.NullableInt32Type, Nullables.NHibernate</to>
+    </mapping>
+    <mapping>
+        <from>datatype::long</from>
+        <to>Int64</to>
+    </mapping>
+    <mapping>
+        <from>datatype::Long</from>
+        <to>Nullables.NHibernate.NullableInt64Type, Nullables.NHibernate</to>
+    </mapping>
+    <mapping>
+        <from>datatype::float</from>
+        <to>float</to>
+    </mapping>
+    <mapping>
+        <from>datatype::Float</from>
+        <to>Nullables.NHibernate.NullableSingleType, Nullables.NHibernate</to>
+    </mapping>
+    <mapping>
+        <from>datatype::double</from>
+        <to>Double</to>
+    </mapping>
+    <mapping>
+        <from>datatype::Double</from>
+        <from>datatype::Money</from>
+        <to>Nullables.NHibernate.NullableDoubleType, Nullables.NHibernate</to>
+    </mapping>
+    <mapping>
+        <from>datatype::Decimal</from>
+        <to>Nullables.NHibernate.NullableDecimalType, Nullables.NHibernate</to>
+    </mapping>
+    <mapping>
+        <from>datatype::Boolean</from>
+        <to>Nullables.NHibernate.NullableBooleanType, Nullables.NHibernate</to>
+    </mapping>
+    <mapping>
+        <from>datatype::boolean</from>
+        <to>Boolean</to>
+    </mapping>
+    <mapping>
+        <from>datatype::Guid</from>
+        <to>Guid</to>
+    </mapping>
+    <mapping>
+        <from>datatype::Clob</from>
+        <to>StringClob</to>
+    </mapping>
+    <mapping>
+        <from>datatype::Blob</from>
+        <to>BinaryBlob</to>
+    </mapping>
+</mappings>

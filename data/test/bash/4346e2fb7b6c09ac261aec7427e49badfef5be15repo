@@ -1,0 +1,38 @@
+#!/bin/bash
+
+while :
+do
+
+  clear
+  
+  echo set strength of internet connection
+  echo "  1 - Terrible"
+  echo "  2 - Slightly Better"
+  echo "  3 - Slightly below average"
+  echo "  4 - Average"
+  echo "  5 - Better"
+  echo "  6 - Better then better"
+  echo "  7 - Great"
+  echo "  8 - Fantastic"
+  echo "  x - Go back"
+  echo
+  echo 
+  echo -n "Enter option: "
+  read opt
+  
+  if [ "$?" != "1" ]
+  then
+    case $opt in
+      1) export REPO=1;;
+      2) export REPO=2;;
+      3) export REPO=3;;
+      4) export REPO=4;;
+      5) export REPO=8;;
+      6) export REPO=12;;
+      7) export REPO=16;;
+      8) export REPO=32;;
+      x) ~/scripts/cm_script;;
+    esac
+  fi
+
+done

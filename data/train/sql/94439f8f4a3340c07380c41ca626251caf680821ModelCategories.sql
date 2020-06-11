@@ -1,0 +1,11 @@
+INSERT INTO `ctrlp`.`ModelCategories` (`category_title`) VALUES ('3D Printing');
+INSERT INTO `ctrlp`.`ModelCategories` (`category_title`) VALUES ('Art');
+INSERT INTO `ctrlp`.`ModelCategories` (`category_title`) VALUES ('Fashion');
+INSERT INTO `ctrlp`.`ModelCategories` (`category_title`) VALUES ('Gadgets');
+INSERT INTO `ctrlp`.`ModelCategories` (`category_title`) VALUES ('Hobby');
+INSERT INTO `ctrlp`.`ModelCategories` (`category_title`) VALUES ('Household');
+INSERT INTO `ctrlp`.`ModelCategories` (`category_title`) VALUES ('Learning');
+INSERT INTO `ctrlp`.`ModelCategories` (`category_title`) VALUES ('Models');
+INSERT INTO `ctrlp`.`ModelCategories` (`category_title`) VALUES ('Tools');
+INSERT INTO `ctrlp`.`ModelCategories` (`category_title`) VALUES ('Toys & Games');
+select * from ModelCategories;

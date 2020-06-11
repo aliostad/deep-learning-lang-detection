@@ -1,0 +1,25 @@
+.ui-view.ui-play-time-view-controller .background {
+    fill: rgba(41,36,33,0.9);
+}
+
+.ui-view.ui-play-time-view-controller .ui-label-view-controller .background {
+    fill: rgba(246,246,246,1);
+}
+
+.ui-view.ui-play-time-view-controller .ui-label-view-controller .text {
+    fill: rgba(41,36,33,1);
+    font-size: 90px;
+}
+
+.ui-view.ui-play-time-view-controller .ui-button-view-controller .background {
+    fill: rgba(41,36,33,0);
+}
+
+.ui-view.ui-play-time-view-controller .ui-button-view-controller .title {
+    font-size: 50px;
+    fill: rgba(180,180,180,1);
+}
+
+.ui-view.ui-play-time-view-controller .ui-button-view-controller.selected .title {
+    fill: rgba(246,246,246,1);
+}

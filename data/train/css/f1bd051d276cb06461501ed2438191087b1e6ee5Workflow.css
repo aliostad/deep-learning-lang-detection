@@ -1,0 +1,46 @@
+@import "Admin.css";
+
+.EmergeTk-ModelFormOperation .RecordList , .modelForm .editFieldDependency  {
+	float:none;
+	clear:both;
+}
+
+.EmergeTk-ModelFormOperation .RecordList div label {
+	font-weight:normal;
+	font-size:0.8em;
+	width:32%;
+	float:left;
+}
+
+.EmergeTk-ModelFormOperation hr {
+	clear:both;
+}
+
+.editFieldDependency .link-button {
+	float:right;
+}
+
+.editFieldDependency span {
+	margin-right:0.5em;
+}
+
+.editFieldDependency li {
+	padding-bottom:0.5em;
+	margin-bottom:0.5em;
+	border-bottom:1px solid #aaa;
+}
+
+.OperationDependencySet {
+	border:1px dashed #aaa;
+	padding:0.5em;
+}
+
+.editFieldDependency h4 {
+	color:#888;
+	font-size:0.8em;
+	margin-top:0;
+}
+
+.modelForm div.OperationDependency, .modelForm div.editFieldPermissions {
+	width:100%;
+}

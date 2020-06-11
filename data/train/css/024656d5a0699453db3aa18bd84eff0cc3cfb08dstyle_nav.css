@@ -1,0 +1,208 @@
+/*
+    height: 28px;
+    width: 180px;
+    margin: 15px;
+*/
+
+#nav_home   {
+    height: 28px;
+    width: 180px;
+    margin: 15px;
+    margin-left: 30px;
+    background-image: url("img/nav/nav_home.gif");
+}
+
+#nav_contactus   {
+    height: 28px;
+    width: 180px;
+    margin: 15px;
+    margin-left: 30px;
+    background-image: url("img/nav/nav_contactus.gif");
+}
+
+#nav_act44   {
+    height: 28px;
+    width: 180px;
+    margin: 15px;
+    margin-left: 30px;
+    background-image: url("img/nav/nav_act44.gif");
+}
+
+#nav_righttoknow   {
+    height: 28px;
+    width: 180px;
+    margin: 15px;
+    margin-left: 30px;
+    background-image: url("img/nav/nav_righttoknow.gif");
+}
+
+#nav_history   {
+    height: 28px;
+    width: 180px;
+    margin: 15px;
+    margin-left: 30px;
+    background-image: url("img/nav/nav_history.gif");
+}
+
+#nav_inthecommunity   {
+    height: 28px;
+    width: 180px;
+    margin: 15px;
+    margin-left: 30px;
+    background-image: url("img/nav/nav_inthecommunity.gif");
+}
+
+#nav_firecompany   {
+    height: 28px;
+    width: 180px;
+    margin: 15px;
+    margin-left: 30px;
+    background-image: url("img/nav/nav_firecompany.gif");
+}
+
+#nav_polarbearplunge   {
+    height: 28px;
+    width: 180px;
+    margin: 15px;
+    margin-left: 30px;
+    background-image: url("img/nav/nav_polarbearplunge.gif");
+}
+
+#nav_appointedofficials   {
+    height: 28px;
+    width: 180px;
+    margin: 15px;
+    margin-left: 30px;
+    background-image: url("img/nav/nav_appointedofficials.gif");
+}
+
+#nav_meetingminuites   {
+    height: 28px;
+    width: 180px;
+    margin: 15px;
+    margin-left: 30px;
+    background-image: url("img/nav/nav_meetingminuites.gif");
+}
+
+#nav_ordinances   {
+    height: 28px;
+    width: 180px;
+    margin: 15px;
+    margin-left: 30px;
+    background-image: url("img/nav/nav_ordinanaces.gif");
+}
+
+#nav_watercompany   {
+    height: 28px;
+    width: 180px;
+    margin: 15px;
+    margin-left: 30px;
+    background-image: url("img/nav/nav_watercompany.gif");
+}
+
+#nav_services   {
+    height: 28px;
+    width: 180px;
+    margin: 15px;
+    margin-left: 30px;
+    background-image: url("img/nav/nav_services.gif");
+}
+
+#nav_finances   {
+    height: 28px;
+    width: 180px;
+    margin: 15px;
+    margin-left: 30px;
+    background-image: url("img/nav/nav_finances.gif");
+}
+
+#nav_refuse {
+    height: 28px;
+    width: 180px;
+    margin: 15px;
+    margin-left: 30px;
+    background-image: url("img/nav/nav_refuse.gif");
+}
+
+#nav_events {
+    height: 28px;
+    width: 180px;
+    margin: 15px;
+    margin-left: 30px;
+    background-image: url("img/nav/nav_events.gif");
+}
+
+
+#nav p   {
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+/*
+onHover 's
+*/
+
+
+#nav_home:hover  {
+    background-image: url("img/nav/nav_home_onhover.gif");
+}
+
+#nav_contactus:hover   {
+    background-image: url("img/nav/nav_contactus_onhover.gif");
+}
+
+#nav_act44:hover   {
+    background-image: url("img/nav/nav_act44_onhover.gif");
+}
+
+#nav_righttoknow:hover   {
+    background-image: url("img/nav/nav_righttoknow_onhover.gif");
+}
+
+#nav_history:hover   {
+    background-image: url("img/nav/nav_history_onhover.gif");
+}
+
+#nav_inthecommunity:hover   {
+    background-image: url("img/nav/nav_inthecommunity_onhover.gif");
+}
+
+#nav_firecompany:hover   {
+    background-image: url("img/nav/nav_firecompany_onhover.gif");
+}
+
+#nav_polarbearplunge:hover   {
+    background-image: url("img/nav/nav_polarbearplunge_onhover.gif");
+}
+
+#nav_appointedofficials:hover   {
+    background-image: url("img/nav/nav_appointedofficials_onhover.gif");
+}
+
+#nav_meetingminuites:hover   {
+    background-image: url("img/nav/nav_meetingminuites_onhover.gif");
+}
+
+#nav_ordinances:hover   {
+    background-image: url("img/nav/nav_ordinanaces_onhover.gif");
+}
+
+#nav_watercompany:hover   {
+    background-image: url("img/nav/nav_watercompany_onhover.gif");
+}
+
+#nav_services:hover   {
+    background-image: url("img/nav/nav_services_onhover.gif");
+}
+
+#nav_finances:hover   {
+    background-image: url("img/nav/nav_finances_onhover.gif");
+}
+
+#nav_refuse:hover   {
+    background-image: url("img/nav/nav_refuse_onhover.gif");
+}
+
+#nav_events:hover   {
+    background-image: url("img/nav/nav_events_onhover.gif");
+}

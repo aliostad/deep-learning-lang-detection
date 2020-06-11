@@ -1,0 +1,39 @@
+﻿CREATE TABLE [dbo].[RUNPROC_READONLY] (
+    [PROC_NAME]              VARCHAR (255) NOT NULL,
+    [READ_ONLY]              BIT           CONSTRAINT [DF_RUNPROC_READONLY_READ_ONLY] DEFAULT ((1)) NOT NULL,
+    [IS_AUTO_SET]            BIT           CONSTRAINT [DF_RUNPROC_READONLY_IS_AUTO_SET] DEFAULT ((0)) NOT NULL,
+    [READ_REPLICA_SUPPORTED] AS            (case when [read_only]=(1) AND [is_auto_set]=(0) then (1) else (0) end) PERSISTED NOT NULL,
+    [LAST_MOD_BY]            INT           NULL,
+    [LAST_MODIFIED_DATE_UTC] DATETIME      NULL,
+    CONSTRAINT [PK_RUNPROC_READONLY] PRIMARY KEY CLUSTERED ([PROC_NAME] ASC)
+);
+
+
+GO
+
+CREATE TRIGGER ins_upd_del_RUNPROC_READONLY ON
+	RUNPROC_READONLY
+AFTER INSERT, UPDATE, DELETE
+AS
+	Set nocount on
+	declare @oper char(1)
+	if update(PROC_NAME)
+		set @oper = 'i'
+	else if exists (select 1 from inserted)
+		set @oper = 'u'
+	else
+		set @oper = 'd'
+	
+	if @oper = 'i' or @oper = 'u'
+		BEGIN
+			INSERT INTO RUNPROC_READONLY_HIST (PROC_NAME, READ_ONLY, IS_AUTO_SET, LAST_MOD_BY, LAST_MODIFIED_DATE_UTC, OPERATION)
+			SELECT PROC_NAME, READ_ONLY, IS_AUTO_SET, LAST_MOD_BY, GETUTCDATE(), @oper
+			FROM INSERTED
+		END
+	else
+		BEGIN
+			INSERT INTO RUNPROC_READONLY_HIST (PROC_NAME, READ_ONLY, IS_AUTO_SET, LAST_MOD_BY, LAST_MODIFIED_DATE_UTC, OPERATION)
+			SELECT PROC_NAME, READ_ONLY, IS_AUTO_SET, LAST_MOD_BY, GETUTCDATE(), @oper
+			FROM DELETED
+		END
+	set nocount off

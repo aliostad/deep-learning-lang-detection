@@ -1,0 +1,65 @@
+#!/bin/sh
+#
+# bootstrap: setup build environment.
+#
+# Usage: bootstrap [autoconf-macro-archive-dir]
+#
+# If called without the optional argument, the default location
+# ($HOME/.local/share/aclocal/ac-archive) will be used as the autoconf macro
+# archive directory.
+
+parse_command_line () {
+  echo "searching autoconf macro archive dir..."
+
+  if [ $# -eq 0 ]; then
+    AUTOCONF_MACRO_ARCHIVE="$HOME/.local/share/aclocal/ac-archive"
+  elif [ $# -eq 1 ]; then
+    AUTOCONF_MACRO_ARCHIVE="$1"
+  else
+    echo "usage: bootstrap [autoconf-macro-archive-dir]"
+    exit 1
+  fi
+}
+
+check_for_tools () {
+  echo "searching tools..."
+
+  for tool in aclocal automake autoconf; do
+    which $tool
+    if [ $? -ne 0 ]; then
+      echo "error: $tool has not been found!"
+      exit 1
+    fi
+  done
+}
+
+setup_root_directory () {
+  rm -rf build-aux
+  mkdir build-aux
+}
+
+invoke_aclocal () {
+  aclocal -I m4 -I $AUTOCONF_MACRO_ARCHIVE || exit 1
+}
+
+invoke_automake () {
+  automake --add-missing --foreign
+}
+
+invoke_autoconf () {
+  autoconf
+}
+
+initialize_build_environment () {
+  echo "initialize build environment..."
+
+  setup_root_directory
+  invoke_aclocal
+  invoke_automake
+  invoke_autoconf
+}
+
+# Script entry point.
+parse_command_line $*
+check_for_tools
+initialize_build_environment

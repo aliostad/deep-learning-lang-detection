@@ -1,0 +1,33 @@
+div.image-browser {	
+	padding: 5px;
+	border: 1px solid #2e95ff;
+	background-color: #ebf5ff;
+	color: #00468d;
+}
+
+div.image-browser div.load-icon {
+	background-image: url('css/Images/AjaxLoad.gif');
+	width: 16px;
+	height: 16px;
+}
+
+div.image-browser .image-wrapper {
+	height: 200px;
+}
+
+div.image-browser img {
+	border: 1px solid #999;
+}
+
+div.image-browser .add-image-control {
+	padding: 5px;
+}
+
+div.image-browser .add-image-control .preview-image-wrapper {
+	margin-right: 5px;
+	margin-top: 2px;
+}
+
+div.image-browser image-wrapper {
+	height: 200px;
+}

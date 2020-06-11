@@ -1,0 +1,36 @@
+/* CSS file for collective.mediaShow - presentation mode- by David Jonas */
+
+.embededMediaShow.presentationShow.javascripted
+{
+    height:500px;
+}
+
+.embededMediaShow.presentationShow.javascripted .mediaShowSlide .mediaShowMedia
+{
+    width:50%;
+    height:432px;
+    background-color:#fff;
+}
+
+.embededMediaShow.presentationShow.javascripted .mediaShowSlide .mediaShowInfo .mediaShowDescription
+{
+    position:absolute;
+    top:20px;
+    left:20px;
+    right:20px;
+    color: #555;
+}
+
+.embededMediaShow.presentationShow.javascripted .mediaShowSlide .mediaShowInfo
+{
+    left:50%;
+    top:0px;
+    bottom:auto;
+    height:412px;
+    padding: 10px 10px 10px 10px;
+    background:white;
+    text-align:left;
+    vertical-align : middle;
+    display : table-cell;
+}
+

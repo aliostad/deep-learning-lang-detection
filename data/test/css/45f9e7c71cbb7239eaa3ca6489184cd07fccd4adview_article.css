@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* line 3, ../scss/view_article.scss */
+article {
+  background-color: #F7F7F7;
+  height: auto;
+  overflow: hidden;
+  /* 信息 */
+}
+/* line 5, ../scss/view_article.scss */
+article h1 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+/* line 8, ../scss/view_article.scss */
+article h2 {
+  font-size: 12px;
+  color: #666;
+}
+/* line 13, ../scss/view_article.scss */
+article section {
+  border-top-style: solid;
+  border-top-color: #EAEAEA;
+  border-bottom-style: solid;
+  border-bottom-color: #EAEAEA;
+  border-width: 2px;
+}
+/* line 17, ../scss/view_article.scss */
+article #view-article-headimg {
+  float: left;
+  width: 8%;
+}
+/* line 20, ../scss/view_article.scss */
+article #view-article-content {
+  float: right;
+  width: 90%;
+}
+/* line 23, ../scss/view_article.scss */
+article .view-article-button {
+  padding-left: 2px;
+  height: 25px;
+}
+
+/* line 27, ../scss/view_article.scss */
+#view-article-comment {
+  width: 640px;
+  height: auto;
+  overflow: hidden;
+  display: block;
+  background-color: #F7F7F7;
+  /* 时间 */
+  /* 内容 */
+}
+/* line 29, ../scss/view_article.scss */
+#view-article-comment li {
+  float: right;
+  width: 90%;
+  padding: 10px 0;
+  border-top: solid;
+  border-color: #EAEAEA;
+  border-width: 1px;
+}
+/* line 34, ../scss/view_article.scss */
+#view-article-comment h2 {
+  font-size: 12px;
+  color: #5C5C5C;
+}
+/* line 38, ../scss/view_article.scss */
+#view-article-comment h3 {
+  font-size: 12px;
+  color: #666;
+}
+/* line 41, ../scss/view_article.scss */
+#view-article-comment a {
+  font-size: 12px;
+}
+/* line 44, ../scss/view_article.scss */
+#view-article-comment #comments-num {
+  font-size: 20px;
+  color: #369;
+}
+/* line 47, ../scss/view_article.scss */
+#view-article-comment #view-article-comment-headimg {
+  float: left;
+  width: 10%;
+}
+/* line 50, ../scss/view_article.scss */
+#view-article-comment #view-article-comment-content {
+  float: right;
+  width: 88%;
+}

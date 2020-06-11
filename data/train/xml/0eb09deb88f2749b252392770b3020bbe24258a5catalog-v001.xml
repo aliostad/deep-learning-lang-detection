@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1436600712259" name="duplicate:http://myproject.org/odbs" uri="combinedonto.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1436600712259" name="duplicate:http://myproject.org/odbs" uri="ontology-wil.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1436600712259" name="duplicate:http://myproject.org/odbs" uri="ontology5.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1436600712259" name="duplicate:http://www.example.org/" uri="ontology-boot-sakilas.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1436600712259" name="duplicate:http://www.example.org/" uri="ontology-boot-sakilas2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1436600712259" name="duplicate:http://www.example.org/" uri="ontology-man-sakilas-pro.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1436600712259" name="duplicate:http://www.example.org/" uri="ontology-man-sakilas.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1436600712259" name="duplicate:http://www.example.org/" uri="ontologytemp.owl"/>
+    </group>
+</catalog>

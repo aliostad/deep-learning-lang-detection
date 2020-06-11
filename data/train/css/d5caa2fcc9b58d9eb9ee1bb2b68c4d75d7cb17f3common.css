@@ -1,0 +1,52 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+| CAROUSEL  id="slide_show"
+|--------------------------------------------------------------------------
+|file templates/carousel.php
+| 
+|
+*/
+/*slide show*/
+#slide_show {
+   height: 600px;
+   margin: 0 auto;
+   text-align: center;
+}
+#slide_show .slide_show_custom_center {
+  width: 1024px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+#slide_show .box_slide_show {
+  /* margin-left: 130px;*/
+   margin-top: 25px;
+}

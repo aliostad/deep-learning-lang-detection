@@ -1,0 +1,22 @@
+<resources>
+	<string-array name="service_items">
+		<item>ACTIVITY_SERVICE</item>
+		<item>ALARM_SERVICE</item>
+		<item>AUDIO_SERVICE</item>
+		<item>CLIPBOARD_SERVICE</item>
+		<item>CONNECTIVITY_SERVICE</item>
+		<item>INPUT_METHOD_SERVICE</item>
+		<item>KEYGUARD_SERVICE</item>
+		<item>LAYOUT_INFLATER_SERVICE</item>
+		<item>LOCATION_SERVICE</item>
+		<item>NOTIFICATION_SERVICE</item>
+		<item>POWER_SERVICE</item>
+		<item>SEARCH_SERVICE</item>
+		<item>SENSOR_SERVICE</item>
+		<item>TELEPHONY_SERVICE</item>
+		<item>VIBRATOR_SERVICE</item>
+		<item>WALLPAPER_SERVICE</item>
+		<item>WIFI_SERVICE</item>
+		<item>WINDOW_SERVICE</item>
+	</string-array>
+</resources>

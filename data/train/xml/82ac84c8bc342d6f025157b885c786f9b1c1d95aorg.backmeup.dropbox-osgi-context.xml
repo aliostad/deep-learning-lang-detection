@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"	
+	default-activation="lazy">
+	<service id="dropboxDescriptorService" ref="dropboxDescriptor" auto-export="interfaces">
+		<service-properties>
+			<entry key="name" value="org.backmeup.dropbox"/>
+		</service-properties>
+	</service>
+	<service id="dropboxAuthService" ref="dropboxAuthenticator" auto-export="interfaces">
+		<service-properties>
+			<entry key="name" value="org.backmeup.dropbox"/>
+		</service-properties>
+	</service>
+	<service id="dropboxDatasourceService" ref="dropboxDatasource" auto-export="interfaces">
+		<service-properties>
+			<entry key="name" value="org.backmeup.dropbox"/>
+		</service-properties>
+	</service>
+	
+	<service id="dropboxDatasinkService" ref="dropboxDatasink" auto-export="interfaces">
+		<service-properties>
+			<entry key="name" value="org.backmeup.dropbox"/>
+		</service-properties>
+	</service>
+
+</blueprint>

@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="MQPythonClass.xsl"?>
+<doc>
+ <class>MQMatrix</class>
+ <message lang="en">4x4 matrix.</message>
+ <message lang="ja">4x4の要素を持つ行列です。</message>
+ <methods>
+  <method>
+   <name>get</name>
+   <message lang="en">Get a value.</message>
+   <message lang="ja">行列の指定した要素の値を取得します。</message>
+   <args>
+    <arg>
+     <name>row</name>
+     <type>int</type>
+     <message lang="en">index of row (range of [1:4])</message>
+     <message lang="ja">行 ([1:4]の範囲)</message>
+    </arg>
+    <arg>
+     <name>col</name>
+     <type>int</type>
+     <message lang="en">index of column (range of [1:4])</message>
+     <message lang="ja">列 ([1:4]の範囲)</message>
+    </arg>
+   </args>
+   <return>
+    <type>float</type>
+    <message lang="en">value</message>
+    <message lang="ja">値</message>
+   </return>
+  </method>
+  <method>
+   <name>set</name>
+   <message lang="en">Set a value.</message>
+   <message lang="ja">行列の指定した要素の値を設定します。</message>
+   <args>
+    <arg>
+     <name>row</name>
+     <type>int</type>
+     <message lang="en">index of row (range of [1:4])</message>
+     <message lang="ja">行 ([1:4]の範囲)</message>
+    </arg>
+    <arg>
+     <name>col</name>
+     <type>int</type>
+     <message lang="en">index of column (range of [1:4])</message>
+     <message lang="ja">列 ([1:4]の範囲)</message>
+    </arg>
+    <arg>
+     <name>value</name>
+     <type>float</type>
+     <message lang="en">value</message>
+     <message lang="ja">値</message>
+    </arg>
+   </args>
+  </method>
+  <method>
+   <name>mult</name>
+   <message lang="en">Multiply a vector and matrix.</message>
+   <message lang="ja">ベクトルに行列を掛けた結果のベクトルを算出します。</message>
+   <args>
+    <arg>
+     <name>point</name>
+     <type>MQPoint</type>
+     <message lang="en">vector</message>
+     <message lang="ja">ベクトル</message>
+    </arg>
+   </args>
+   <return>
+    <type>MQPoint</type>
+    <message lang="en">vector</message>
+    <message lang="ja">ベクトル</message>
+   </return>
+  </method>
+  <method>
+   <name>mult3</name>
+   <message lang="en">Multiply a vector and matrix.</message>
+   <message lang="ja">ベクトルに3x3行列を掛けた結果のベクトルを算出します。</message>
+   <args>
+    <arg>
+     <name>point</name>
+     <type>MQPoint</type>
+     <message lang="en">vector</message>
+     <message lang="ja">ベクトル</message>
+    </arg>
+   </args>
+   <return>
+    <type>MQPoint</type>
+    <message lang="en">vector</message>
+    <message lang="ja">ベクトル</message>
+   </return>
+  </method>
+  <method>
+   <name>indentify</name>
+   <message lang="en">Indentity a matrix.</message>
+   <message lang="ja">単位行列として初期化します。</message>
+  </method>
+  <method>
+   <name>transpose</name>
+   <message lang="en">Transpose a matrix.</message>
+   <message lang="ja">行列を転置します。</message>
+  </method>
+  <method>
+   <name>transpose3</name>
+   <message lang="en">Transpose a 3x3 matrix.</message>
+   <message lang="ja">行列の3x3成分のみを転置します。</message>
+  </method>
+  <method>
+   <name>getScaling</name>
+   <message lang="en">Get a scaling factor of SRT transform matrix.</message>
+   <message lang="ja">SRT変換行列の拡大成分を取得します。</message>
+   <return>
+    <type>MQPoint</type>
+    <message lang="en">scaling factor</message>
+    <message lang="ja">拡大成分</message>
+   </return>
+  </method>
+  <method>
+   <name>getRotation</name>
+   <message lang="en">Get a rotation angle of SRT transform matrix.</message>
+   <message lang="ja">SRT変換行列の回転角を取得します。</message>
+   <return>
+    <type>MQAngle</type>
+    <message lang="en">rotation angle</message>
+    <message lang="ja">回転角度</message>
+   </return>
+  </method>
+  <method>
+   <name>getScaling</name>
+   <message lang="en">Get a translation factor of SRT transform matrix.</message>
+   <message lang="ja">SRT変換行列の平行移動成分を取得します。</message>
+   <return>
+    <type>MQPoint</type>
+    <message lang="en">scaling factor</message>
+    <message lang="ja">平行移動成分</message>
+   </return>
+  </method>
+  <method>
+   <name>setTransform</name>
+   <message lang="en">Set a SRT transform matrix.</message>
+   <message lang="ja">SRT変換行列を設定します。</message>
+   <args>
+    <arg>
+     <name>scaling</name>
+     <type>MQPoint</type>
+     <message lang="en">scaling factor</message>
+     <message lang="ja">拡大成分</message>
+    </arg>
+    <arg>
+     <name>rotation</name>
+     <type>MQAngle</type>
+     <message lang="en">rotation angle</message>
+     <message lang="ja">回転角度</message>
+    </arg>
+    <arg>
+     <name>translation</name>
+     <type>MQPoint</type>
+     <message lang="en">translation factor</message>
+     <message lang="ja">平行移動成分</message>
+    </arg>
+   </args>
+  </method>
+  <method>
+   <name>setInverseTransform</name>
+   <message lang="en">Set a SRT inverse transform matrix.</message>
+   <message lang="ja">SRT逆変換行列を設定します。</message>
+   <args>
+    <arg>
+     <name>scaling</name>
+     <type>MQPoint</type>
+     <message lang="en">scaling factor</message>
+     <message lang="ja">拡大成分</message>
+    </arg>
+    <arg>
+     <name>rotation</name>
+     <type>MQAngle</type>
+     <message lang="en">rotation angle</message>
+     <message lang="ja">回転角度</message>
+    </arg>
+    <arg>
+     <name>translation</name>
+     <type>MQPoint</type>
+     <message lang="en">translation factor</message>
+     <message lang="ja">平行移動成分</message>
+    </arg>
+   </args>
+  </method>
+ </methods>
+</doc>

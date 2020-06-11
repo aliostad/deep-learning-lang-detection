@@ -1,0 +1,22 @@
+/*---------*/
+/* General */
+/*---------*/
+.quick_nav_btns,
+.blue_header {
+  font-family: Arial, serif, sans-serif !important; }
+
+/*-------*/
+/* Gigya */
+/*-------*/
+.gig-rating-writeYourReview,
+*:link.gig-rating-writeYourReview,
+*:active.gig-rating-writeYourReview,
+*:visited.gig-rating-writeYourReview {
+  background-color: #FFFFFF !important; }
+
+/*-----------------*/
+/* Dashboard Fixes */
+/*-----------------*/
+.payment_method .payment_input .choices-group li label input {
+  border: none !important;
+  margin-top: -4px !important; }

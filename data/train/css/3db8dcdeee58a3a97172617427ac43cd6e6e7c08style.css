@@ -1,0 +1,54 @@
+/*! Modified version of: Better Web Readability Project - CSS Library
+	@link: https://code.google.com/p/better-web-readability-project
+	@license: Mozilla Public License | http://www.mozilla.org/MPL
+*/
+.CPHtmlView {font-size:1em/1.625em,sans-serif;color:#FFFEF0;font-size-adjust:none;font-style:normal;font-variant:normal;font-weight:normal}
+.CPHtmlView div,.CPHtmlView span,.CPHtmlView object,.CPHtmlView iframe,.CPHtmlView h1,.CPHtmlView h2,.CPHtmlView h3,.CPHtmlView h4,.CPHtmlView h5,.CPHtmlView h6,.CPHtmlView p,.CPHtmlView blockquote,.CPHtmlView pre,.CPHtmlView a,.CPHtmlView abbr,.CPHtmlView acronym,.CPHtmlView address,.CPHtmlView code,.CPHtmlView del,.CPHtmlView dfn,.CPHtmlView em,.CPHtmlView img,.CPHtmlView q,.CPHtmlView dl,.CPHtmlView dt,.CPHtmlView dd,.CPHtmlView ol,.CPHtmlView ul,.CPHtmlView li,.CPHtmlView fieldset,.CPHtmlView form,.CPHtmlView label,.CPHtmlView legend,.CPHtmlView table,.CPHtmlView caption,.CPHtmlView tbody,.CPHtmlView tfoot,.CPHtmlView thead,.CPHtmlView tr,.CPHtmlView th,.CPHtmlView td{margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline}
+.CPHtmlView table{border-collapse:separate;border-spacing:0}
+.CPHtmlView caption,.CPHtmlView th,.CPHtmlView td{text-align:left;font-weight:normal}
+.CPHtmlView table,.CPHtmlView td,.CPHtmlView th{vertical-align:middle}
+.CPHtmlView blockquote:before,.CPHtmlView blockquote:after,.CPHtmlView q:before,.CPHtmlView q:after{content:""}
+.CPHtmlView blockquote,.CPHtmlView q{quotes:"" ""}
+.CPHtmlView a img{border:none}
+.CPHtmlView p{padding:0 0 0.8125em 0;font-weight:300}
+.CPHtmlView p+p{text-indent:1.625em}
+.CPHtmlView p.first:first-letter{float:left;font-family:baskerville,"palatino linotype",serif;font-size:3em;font-weight:700;line-height:1em;margin-bottom:-0.2em;padding:0.2em 0.1em 0 0}
+.CPHtmlView p img{float:left;margin:0.5em 0.8125em 0.8125em 0;padding:0}
+.CPHtmlView p img.right{float:right;margin:.5em 0 .8125em .8125em}
+.CPHtmlView h1,.CPHtmlView h2{font-weight:normal;}
+.CPHtmlView h3,.CPHtmlView h4,.CPHtmlView h5,.CPHtmlView h6{font-weight:normal}
+.CPHtmlView h1{font-size:2.125em;margin-bottom:0.765em}
+.CPHtmlView h2{font-size:1.9em;margin-bottom:0.855em}
+.CPHtmlView h3{font-size:1.7em;margin-bottom:0.956em}
+.CPHtmlView h4{font-size:1.4em;margin-bottom:1.161em}
+.CPHtmlView h5,.CPHtmlView h6{font-size:1.313em;margin-bottom:1.238em}
+.CPHtmlView ul{list-style-position:inside}
+.CPHtmlView li ul,.CPHtmlView li ol{margin:0 1.625em}
+.CPHtmlView ul,.CPHtmlView ol{margin:0 0 1.625em 0}
+.CPHtmlView dl{margin:0 0 1.625em 0}
+.CPHtmlView dl dt{font-weight:bold}
+.CPHtmlView dl dd{margin-left:1.625em}
+.CPHtmlView a{color:#FFF;text-decoration:none}
+.CPHtmlView a:hover{text-decoration:underline}
+.CPHtmlView table{margin-bottom:1.625em;border-collapse:collapse}
+.CPHtmlView th{font-weight:bold}
+.CPHtmlView tr,.CPHtmlView th,.CPHtmlView td{margin:0;padding:0 1.625em 0 1em;height:26px}
+.CPHtmlView tfoot{font-style:italic}
+.CPHtmlView caption{text-align:center}
+.CPHtmlView abbr,.CPHtmlView acronym{border-bottom:1px dotted #000}
+.CPHtmlView address{margin-top:1.625em;font-style:italic}
+.CPHtmlView blockquote{padding:1em 1em 1.625em 1em;font-style:italic}
+.CPHtmlView blockquote:before{content:"\201C";font-size:3em;margin-left:-0.625em;line-height:0}
+.CPHtmlView blockquote>p{padding:0;margin:0}
+.CPHtmlView strong{font-weight:bold}
+.CPHtmlView em,.CPHtmlView dfn{font-style:italic}
+.CPHtmlView dfn{font-weight:bold}
+.CPHtmlView pre,.CPHtmlView code{margin:1.625em 0;white-space:pre}
+.CPHtmlView pre,.CPHtmlView code,.CPHtmlView tt{font:1em monospace;line-height:1.5}
+.CPHtmlView tt{display:block;margin:1.625em 0}
+.CPHtmlView hr{margin-bottom:1.625em}
+
+
+body {
+	background-color: #222;
+}

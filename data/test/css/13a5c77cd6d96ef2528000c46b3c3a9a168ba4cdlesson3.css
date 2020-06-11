@@ -1,0 +1,61 @@
+﻿.lesson3 section[role=main] {
+    /*margin-left: 120px;
+    margin-right: 120px;*/
+}
+.lesson3 section[role=document] div#slideDisplay #boxModel {
+    display: -ms-flexbox;
+    height:90%;
+    width:1fr;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+}
+
+.lesson3 .code {
+    font-size: x-large;
+}
+
+.lesson3 section[role=document] div#slideDisplay #boxModel .boxModel {
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 90px;
+    padding-bottom: 10px;
+    font-size:xx-large;
+    display:block;
+    border:dashed;
+    border-color:yellow;
+    text-align:center;
+    background-color:black;
+    height:70%;
+    box-sizing:border-box;
+}
+    .lesson3 section[role=document] div#slideDisplay #boxModel .boxModel.solid {
+        border:solid;
+    }
+
+    .lesson3 section[role=document] div#slideDisplay #boxModel .boxModel#margin {
+        width:80%;
+        height:90%;
+        display:block;
+    }
+
+    .lesson3 section[role=document] div#slideDisplay #boxModel .boxModel#border {
+        background-color: red;
+    }
+
+    .lesson3 section[role=document] div#slideDisplay #boxModel .boxModel #contents {
+         line-height:100px;
+    }
+
+@media screen and (-ms-view-state: snapped) {
+    .lesson3 section[role=main] {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .lesson3 section[role=main] {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}

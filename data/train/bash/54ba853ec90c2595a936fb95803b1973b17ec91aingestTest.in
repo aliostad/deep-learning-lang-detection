@@ -1,0 +1,37 @@
+#!/bin/sh
+
+# ingest test run
+
+PROG=@KARMAHOME@/bin/sendNotification.sh
+CONFIG=@KARMAHOME@/config/karma.properties
+SAMPLE=@KARMAHOME@/samples/sampleWorkflow1/notification
+
+$PROG $CONFIG  $SAMPLE/workflowInvoked.xml
+$PROG $CONFIG  $SAMPLE/serviceInvoked1.xml
+$PROG $CONFIG  $SAMPLE/serviceInvoked2.xml
+$PROG $CONFIG  $SAMPLE/dataProduced1.xml
+$PROG $CONFIG  $SAMPLE/dataConsumed1.xml
+$PROG $CONFIG  $SAMPLE/dataConsumed2.xml
+$PROG $CONFIG  $SAMPLE/serviceInvoked3.xml
+$PROG $CONFIG  $SAMPLE/dataProduced2.xml
+$PROG $CONFIG  $SAMPLE/dataConsumed3.xml
+$PROG $CONFIG  $SAMPLE/serviceInvoked4.xml
+$PROG $CONFIG  $SAMPLE/serviceInvoked5.xml
+$PROG $CONFIG  $SAMPLE/serviceInvoked6.xml
+$PROG $CONFIG  $SAMPLE/serviceInvoked7.xml
+$PROG $CONFIG  $SAMPLE/serviceInvoked6.xml
+$PROG $CONFIG  $SAMPLE/serviceInvoked7.xml
+$PROG $CONFIG  $SAMPLE/serviceInvoked8.xml
+$PROG $CONFIG  $SAMPLE/serviceInvoked9.xml
+$PROG $CONFIG  $SAMPLE/dataProduced3.xml
+$PROG $CONFIG  $SAMPLE/dataConsumed4.xml
+$PROG $CONFIG  $SAMPLE/dataProduced4.xml
+$PROG $CONFIG  $SAMPLE/dataConsumed5.xml
+$PROG $CONFIG  $SAMPLE/dataProduced5.xml
+$PROG $CONFIG  $SAMPLE/dataConsumed6.xml
+$PROG $CONFIG  $SAMPLE/dataProduced6.xml
+$PROG $CONFIG  $SAMPLE/dataConsumed7.xml
+$PROG $CONFIG  $SAMPLE/dataProduced7.xml
+$PROG $CONFIG  $SAMPLE/linkEntity0.xml
+$PROG $CONFIG  $SAMPLE/linkEntity1.xml
+

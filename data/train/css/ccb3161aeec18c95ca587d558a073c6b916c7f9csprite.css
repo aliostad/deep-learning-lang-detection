@@ -1,0 +1,50 @@
+#nav {
+	list-style:none;
+	width:600px;
+	height:39px;
+	margin:20px auto;
+	overflow:hidden;
+}
+
+#nav li {
+	float:left;
+}
+
+#nav a {
+	float:left;
+	width:113px;
+	padding-top:50px;
+	outline:0;
+	background:url(images/untitled.png);
+
+	/*border: 1px solid #000;*/
+}
+
+
+/* Default State */
+#nav #a{background-position:0 0;} 
+#nav #b{background-position:-101px 0}
+#nav #c{background-position:-217px 0}
+#nav #d{background-position:-323px 0;}
+#nav #e{background-position:-438px 0}
+
+/* Hover/Focus State */
+#nav #a:hover,#nav #a:focus{background-position:0 -37px;}
+#nav #b:hover,#nav #b:focus{background-position:-101px -37px;}
+#nav #c:hover,#nav #c:focus{background-position:-217px -37px;}
+#nav #d:hover,#nav #d:focus{background-position:-323px -37px;}
+#nav #e:hover,#nav #e:focus{background-position:-438px -37px;}
+
+/* Active State */
+#nav #a:active{background-position:0 -100px;}
+#nav #b:active{background-position:-101px -75px;}
+#nav #c:active{background-position:-217px -75px;}
+#nav #d:active{background-position:-323px -75px;}
+#nav #e:active{background-position:-438px -75px;}
+
+/* Current Page */
+#home #nav #a{background-position:0 -265px;}
+#about #nav #b{background-position:-101px -265px;}
+#services #nav #c{background-position:-217px -265px;}
+#map #nav #d{background-position:-323px -265px;}
+#contact #nav #e{background-position:-438px -265px;}

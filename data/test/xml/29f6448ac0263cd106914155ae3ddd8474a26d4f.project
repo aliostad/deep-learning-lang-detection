@@ -1,0 +1,28 @@
+;;;==============
+;;;  JazzScheme
+;;;==============
+;;;
+;;;; Project
+;;;
+
+
+(data jazz.ide.data.project
+
+
+(import (jazz.editor.jazz))
+
+
+(form
+  (<Project>                 name: jazz.process              description-file: {File :context ".package"}
+    (<Project-Directory>                                     directory: {Directory :context "src"}
+      (<Project-Directory>                                   directory: {Directory :context "src" "jazz"}
+        (<Project-Directory>                                 directory: {Directory :context "src" "jazz" "process"}
+          (<Jazz-File>       name: _process                  source: {File :context "src" "jazz" "process" "_process.jazz"})
+          (<Jazz-File>       name: autoload                  source: {File :context "src" "jazz" "process" "autoload.jazz"})
+          (<Jazz-File>       name: Command-Line              source: {File :context "src" "jazz" "process" "Command-Line.jazz"})
+          (<Jazz-File>       name: Process-Preferences       source: {File :context "src" "jazz" "process" "Process-Preferences.jazz"})
+          (<Jazz-File>       name: Process                   source: {File :context "src" "jazz" "process" "Process.jazz"})
+          (<Jazz-File>       name: Save-Environment-Listener source: {File :context "src" "jazz" "process" "Save-Environment-Listener.jazz"})
+          (<Jazz-File>       name: stub                      source: {File :context "src" "jazz" "process" "stub.jazz"})
+          (<Jazz-File>       name: descriptors               source: {File :context "src" "jazz" "process" "descriptors.jazz"})
+          (<Jazz-File>       name: Quit-Listener             source: {File :context "src" "jazz" "process" "Quit-Listener.jazz"})))))))

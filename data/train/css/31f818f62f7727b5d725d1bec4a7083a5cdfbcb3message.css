@@ -1,0 +1,74 @@
+/** 带图标信息提示
+@name: mi-message
+@author: 天孝(chentao.yuan@alipay.com)
+@description: 信息提示, 错误提示、成功提示、警告提示、禁止提示、等待提示、疑问提示。
+@require: iconfont
+@name mi-message
+@example
+成功提示
+<span class="mi-message mi-message-success"><i class="iconfont" title="成功">&#x00EF;</i>删除当前用户成功！</span></span>
+
+禁止提示
+<span class="mi-message mi-message-forbidden"><i class="iconfont" title="阻止">&#x00EE;</i></span>
+
+信息提示
+<span class="mi-message mi-message-cue"><i class="iconfont" title="提示">&#x00ED;</i></span>
+
+警告提示
+<span class="mi-message mi-message-warn"><i class="iconfont" title="警告">&#x00EC;</i></span>
+
+错误提示
+<span class="mi-message mi-message-error"><i class="iconfont" title="出错">&#x006B;</i></span>
+
+疑问提示
+<span class="mi-message mi-message-doubt"><i class="iconfont" title="疑问">&#x00F1;</i></span>
+
+等待提示
+<span class="mi-message mi-message-wait"><i class="iconfont" title="等待">&#x00F3;</i></span>
+
+请求提示
+<span class="mi-message mi-message-loading"></span>
+
+*/
+.mi-message {
+    padding: 0 0 0 25px;
+    zoom: 1;
+    *padding: 1px 0 0 23px;
+    _padding: 0 0 1px 23px;
+    font-size: 14px;
+    line-height: 18px;
+}
+.mi-message-error,
+.mi-message-forbidden {
+    color: #f00;
+}
+.mi-message .iconfont {
+    margin: 0 10px 0 -23px;
+    font-size: 16px;
+    *position: relative;
+    *top: 1px;
+}
+.mi-message-success .iconfont {
+    color: #32cd33;
+}
+.mi-message-forbidden .iconfont {
+    color: #ff3336;
+}
+.mi-message-cue .iconfont {
+    color: #0199fe;
+}
+.mi-message-warn .iconfont {
+    color: #F90;
+}
+.mi-message-error .iconfont {
+    color: #F33;
+}
+.mi-message-doubt .iconfont {
+    color: #0398FC;
+}
+.mi-message-wait .iconfont {
+    color: #CF6500;
+}
+.mi-message-loading {
+    background: url("https://i.alipayobjects.com/e/201205/2budYKAewD.gif") no-repeat 0 1px;
+}

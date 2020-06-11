@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MessageAction>
+  <MessageClass class="001">
+      <MessageDispose subClass="4001">com.tbb.message.center.TeleMessage</MessageDispose>
+      <MessageDispose subClass="4002">com.tbb.message.center.TeleMessage</MessageDispose>
+      <MessageDispose subClass="4003">com.tbb.message.center.TeleMessage</MessageDispose>
+      <MessageDispose subClass="4004">com.tbb.message.center.UserLogMessage</MessageDispose>
+  </MessageClass>
+  <MessageClass class="005">
+      <MessageDispose subClass="1005">com.tbb.cs.monitor.RevMessage</MessageDispose>
+      <MessageDispose subClass="3005">com.tbb.cs.monitor.RevMessage</MessageDispose>
+  </MessageClass>
+  <MessageClass class="007">
+      <MessageDispose subClass="4007">com.tbb.cs.monitor.RevMessage</MessageDispose>
+  </MessageClass>    
+</MessageAction>

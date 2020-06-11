@@ -1,0 +1,29 @@
+﻿@model Presentation.Models.PdfBill
+
+@{
+    Layout = "~/Views/Shared/_PdfLayout.cshtml";
+}
+
+<image url="@Context.Server.MapPath("~/Content/img/logo.png")"/>
+<newline />
+<newline />
+
+<paragraph>
+    <chunk style="font-family:Courier;">Name: </chunk>
+    <chunk style="font-family:Courier;font-weight:bold;">@Model.Name</chunk>
+</paragraph>
+
+<paragraph>
+    <chunk style="font-family:Courier;">Amount: </chunk>
+    <chunk style="font-family:Courier;font-weight:bold;">@Model.Amount @Model.Loan.Application.Currency</chunk>
+</paragraph>
+
+<paragraph>
+    <chunk style="font-family:Courier;">Loan contract id: </chunk>
+    <chunk style="font-family:Courier;font-weight:bold;">@Model.Loan.Id</chunk>
+</paragraph>
+
+<paragraph>
+    <chunk style="font-family:Courier;">Operator: </chunk>
+    <chunk style="font-family:Courier;font-weight:bold;">@Model.Operator</chunk>
+</paragraph>

@@ -1,0 +1,34 @@
+#!/bin/sh
+
+formula=`sed -n "$2{p;q}" $1`
+check=$3
+model=$4
+
+. ./defs || exit 1
+
+cp -r models/$model $TMPDIR/tmp-$$ || exit 1
+cd $TMPDIR/tmp-$$ || exit 1
+
+(
+case $model in
+    *.rg)
+      if [ ! -f $model.snow ]; then
+        $TIME $LTLGSPNSRG $check $model "$formula" `cat $model.ap` 2>&1
+      else
+	PROPS=`echo $formula | sed 's/P[0-9]/&,\n/g' | sed 's/.*P/P/' |
+               grep P | sort -u | tr -d '\n' | sed 's/,$//'`
+	$SNOW -m $model.cami -p $model.snow -f "$PROPS"
+	$TRANS2PL model
+	mv model.nettmp model.net
+        $TIME $LTLGSPNSRG $check $model "$formula" \
+              `echo $PROPS | tr ',' ' '` 2>&1
+      fi;;
+    *)
+      $TIME $LTLGSPNSSP $check $model "$formula" "$model.con" `cat $model.ap` 2>&1 ;;
+esac
+test -f $model.mark || touch $model.mark
+test -f $model.event || touch $model.event
+du -b *.mark *.event | cut -f 1
+)
+
+rm -rf $TMPDIR/tmp-$$

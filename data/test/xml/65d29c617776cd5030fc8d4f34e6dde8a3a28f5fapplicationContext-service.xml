@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"
+	default-autowire="byName" default-merge="true">
+	<!-- Base Service -->
+	<bean id="baseService" class="ula.service.BaseService">
+		<property name="jdbcTemplate" ref="jdbcTemplate" />
+	</bean>
+
+	<bean id="logService" class="ula.service.admin.LogService" parent="baseService" />
+
+	<bean id="aboutService" class="ula.service.admin.AboutService"
+		parent="baseService" />
+
+	<bean id="contactService" class="ula.service.admin.ContactService"
+		parent="baseService" />
+
+	<bean id="cityServcie" class="ula.service.admin.CityServcie"
+		parent="baseService" />
+
+	<bean id="specialService" class="ula.service.admin.SpecialService"
+		parent="baseService" />
+
+	<bean id="linkService" class="ula.service.admin.LinkService"
+		parent="baseService" />
+
+	<bean id="picService" class="ula.service.admin.PicService" parent="baseService" />
+
+	<bean id="userService" class="ula.service.admin.UserService"
+		parent="baseService" />
+
+	<bean id="articleService" class="ula.service.admin.ArticleService"
+		parent="baseService" />
+
+	<bean id="feedbackService" class="ula.service.admin.FeedbackService"
+		parent="baseService" />
+
+	<bean id="reservationService" class="ula.service.admin.ReservationService"
+		parent="baseService" />
+
+	<bean id="hotelService" class="ula.service.admin.HotelService"
+		parent="baseService" />
+
+	<bean id="recommendService" class="ula.service.admin.RecommendService"
+		parent="baseService" />
+
+	<bean id="weatherService" class="ula.service.admin.WeatherService"
+		parent="baseService" />
+
+	<bean id="resourceService" class="ula.service.admin.ResourceService"
+		parent="baseService" />
+
+	<bean id="subscriberService" class="ula.service.admin.SubscriberService"
+		parent="baseService" />
+
+	<bean id="tourService" class="ula.service.admin.TourService"
+		parent="baseService" />
+
+	<bean id="productService" class="ula.service.admin.ProductService"
+		parent="baseService" />
+
+	<bean id="exchangeService" class="ula.service.admin.ExchangeService"
+		parent="baseService" />
+
+	<!-- 前台Service -->
+	<bean id="indexService" class="ula.service.front.IndexService"
+		parent="baseService" />
+	<bean id="frontService" class="ula.service.front.FrontService"
+		parent="baseService" />
+
+
+	<bean id="serviceManager" class="ula.common.ServiceManager" />
+
+</beans>

@@ -1,0 +1,47 @@
+.sidebar-nav > div {
+	background-color: #fff;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	margin-bottom: 24px;
+}
+
+.sidebar-nav .nav a {
+	color: #5c6166;
+}
+
+.sidebar-nav .nav > li+li {
+	margin-top: 8px;
+	margin-left: 0;
+}
+
+.sidebar-nav .nav > li > a {
+	border-radius: 0;
+	padding: 10px 0 10px 20px;
+	border-left: 2px solid transparent;
+}
+
+@media (max-width: 1199px) {
+	.sidebar-nav .nav > li > a {
+		padding-left: 16px;
+	}
+}
+
+.sidebar-nav .nav a:hover, 
+.sidebar-nav .nav a:focus {
+	background-color: #e6e6e6;
+	border-left-color: #c2c7cc;
+}
+
+.sidebar-nav .nav > li.active > a {
+	background-color: transparent;
+}
+
+.sidebar-nav .nav > li.active > a {
+	border-left-color: #3690e0;
+	color: #3690e0;
+}
+
+.sidebar-nav .ads {
+	width: 100%;
+	padding: 0;
+}

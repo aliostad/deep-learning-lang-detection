@@ -1,0 +1,86 @@
+/* 
+* EasUI | A simple & lovely responsive CSS framework.
+* ----------------------------------------------------------
+* https://github.com/interwebstars/EASUI
+* ----------------------------------------------------------
+*
+* Made by : Interwebstars (https://github.com/interwebstars)
+* Licensed under MIT
+* 
+* icons.css
+* Made with the awesome http://weloveiconfonts.com
+*
+*
+* ======================== USAGE ===========================
+* To use an iconset, you just have to uncomment the desired
+* iconset you like. Don't forget to manage them well, if you
+* forget to re-comment an iconset, your pagespeed can suffer
+*
+* if you want to use more than 2 fonts, you should create a
+* single request URL on weloveiconfonts.com
+* ==========================================================
+*
+*/
+
+/* ===================== Brandico ==========================*/
+/*
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
+/**/
+
+/* ====================== Entypo ===========================*/
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+/**/
+
+/* ==================== Fontawesome ========================*/
+/*
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+/**/
+
+/* ===================== Fontelico =========================*/
+/*
+@import url(http://weloveiconfonts.com/api/?family=fontelico);
+[class*="fontelico-"]:before {
+  font-family: 'fontelico', sans-serif;
+}
+/**/
+
+/* ======================= Maki ============================*/
+/*
+@import url(http://weloveiconfonts.com/api/?family=maki);
+[class*="maki-"]:before {
+  font-family: 'maki', sans-serif;
+}
+/**/
+
+/* ==================== Openwebicons =======================*/
+/*
+@import url(http://weloveiconfonts.com/api/?family=openwebicons);
+[class*="openwebicons-"]:before {
+  font-family: 'OpenWeb Icons', sans-serif;
+}
+/**/
+
+/* ===================== Brandico ==========================*/
+/*
+@import url(http://weloveiconfonts.com/api/?family=typicons);
+[class*="typicons-"]:before {
+  font-family: 'Typicons', sans-serif;
+}
+/**/
+
+/* ===================== Zocial ============================*/
+/*
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+/**/

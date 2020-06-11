@@ -1,0 +1,97 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+	border: none 0;
+}
+
+body {
+	line-height: 1;
+	font-family: "Microsoft Yahei", arial, "宋体";
+	font-size: 16px;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+/*@全局reset-end*/
+body {
+	background: url(../Image/body_bg.jpg) repeat-x;
+}
+
+form {
+	width: 500px;
+	margin: 100px auto;
+}
+
+form h1 {
+	font-size: 22px;
+	font-weight: 100;
+	line-height: 45px;
+	height: 45px;
+	text-align: center;
+	color: #fff;
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	background: #5c9dd7;
+	background: -moz-linear-gradient(top, #5c9dd7, #4a8ac8);
+	background: -webkit-gradient(linear, top, 100% 50%, from(#5c9dd7),
+		to(#4a8ac8));
+	background: -webkit-linear-gradient(top, #5c9dd7, #4a8ac8);
+	background: -o-linear-gradient(top, #5c9dd7, #4a8ac8);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,
+		startColorstr=#5c9dd7, endColorstr=#4a8ac8);
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#5c9dd7, endColorstr=#4a8ac8)";
+}
+
+#writeProblem div {
+	padding: 30px 40px;
+	background: #fff;
+	position: relative;
+	border-radius: 0px 0px 5px 5px;
+	overflow:hidden;
+	/* height: 200px; */
+}
+
+#writeProblem {
+	position: relative;
+}
+form#writeProblem span {
+	width: 130px;
+	text-align: right;
+	padding-right: 10px;
+	float: left;
+	display: inline; 
+	height: 40px;
+	line-height:40px;
+	position:relative;
+}
+form input {
+	height: 25px;
+	border: 1px solid #cccccc;
+	font-size: 18px;
+	margin: 4px 0px;
+	padding: 5px 15px;
+	width:194px;
+}
+form#writeProblem ul{
+	padding-left:25px;
+	
+}
+input#login{
+	 border: none;
+    font-size: 16px;
+	margin:20px 0px 0px 293px;
+	padding:3px 0px;
+    height: 31px;
+    width:72px;
+    background: none repeat scroll 0 0 #ffdf75;
+    display: block;
+    line-height: 25px;
+}

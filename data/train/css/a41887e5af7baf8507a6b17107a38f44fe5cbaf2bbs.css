@@ -1,0 +1,244 @@
+/*  
+ * bbs.css
+ * BBSの基本となる部分を記述
+ */ 
+
+@charset "UTF-8";
+
+body {
+    background-color:#f5f5dc;
+}
+
+h1 {
+    margin-bottom:10px;
+}
+
+a#h1  {
+    color: #000;
+}
+
+.red {
+    color:#ff0000;
+    font-weight:bold;
+}
+
+#whole {
+/*  width:500px; */
+    width:90%;
+    margin:10px auto;
+    
+}
+
+#write_box {
+    display:block;
+    margin:0 auto;
+    width:100%;
+    border:2px dotted #8b4513;
+    text-align:center;
+    background-color:#669933;
+    margin-top:10px;
+}
+
+#write_box table {
+    text-align:left;
+    width:70%;
+    margin:10px auto;
+    border-collapse:collapse;
+}
+
+#write_box th {
+    width:150px;
+    padding-left:5px;
+    text-align:right;
+    color:#8b4513;
+    font-weight:bold;
+    vertical-align:top;
+    background-color:#f5f5dc;
+    border:1px solid #669933;
+}
+
+#write_box th.title {
+    width:100%;
+    text-align:center;
+    color:#8b4513;
+    font-weight:bold;
+    background-color:#e0e0e0;
+}
+
+#write_box tr {
+    text-align:left;
+    width:100%;
+}
+
+#write_box input {
+    width:90%;
+}
+
+#write_box td.show {
+    width:80%;
+    font-weight:normal;
+    color: #333;
+    background-color:#ffffff;
+    border:1px solid #669933;
+}
+
+#write_box textarea {
+    width:90%;
+    height:100px;
+}
+
+td#submit_btn {
+    padding:5px auto;
+    text-align:center;
+    color:#ffffff;
+}
+
+td#submit_btn input {
+    width:50%;
+    height:40px;
+}
+
+.board_whole {
+    width:100%;
+    margin:10px auto;
+    border:2px dotted #8b4513;
+    background-color:#ffffff;
+}
+
+.board_title {
+    width:96%;
+    margin:5px 1% 5px 1%;
+    background-color:#d2691e;
+    padding:3px 1% 3px 1%;
+    color:#ffffff;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.board_status {
+    width:96%;
+    text-align:left;
+    padding:1px 1%;
+    background-color:#e0e0e0;
+    margin:0 1%;
+}
+.board_res_no {
+    color:#5555aa;
+    margin-right:5px;
+}
+
+.board_name {
+    margin-right:10px;
+}
+.board_date {
+    margin-right:10px;
+    color:#8b4513;
+}
+.board_id {
+    color:#336633;
+}
+
+.board_body {
+    width:96%;
+    text-align:left;
+    padding:1px 1%;
+    margin:5px 0;
+    margin:0 1%;
+}
+
+#write_button {
+    height:30px;
+    padding:0 10px;
+}
+
+.write_res_whole {
+    width:98%;
+    margin:10px auto 5px auto;
+    border-top:1px solid #8b4513;
+    padding:5px 0;
+}
+
+.write_res_box {
+    width:98%;
+    margin:0 auto;
+    background-color:#ffffff;
+}
+
+.write_res_box form {
+    width:98%;
+    margin:0 auto;
+    padding:0;
+    border:2px dotted #8b4513;
+}
+
+.write_res_menu {
+    width:98%;
+    padding-left:2%;
+    background-color:#e0e0e0;
+    text-align:left;
+    margin-top:10px;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+.write_res_box input.in_name {
+    width:98%;
+}
+
+.write_res_box textarea {
+    width:98%;
+    height:50px;
+}
+
+.write_res_box input.in_submit {
+    width:200px;
+    height:20px;
+    margin:10px auto;
+}
+
+.thread_list_whole {
+    width:100%;
+    background-color:#f5f5dc;
+    border:2px dotted #8b4513;
+    margin-top:20px;
+}
+
+.thread_list_textarea {
+    width:98%;
+    margin:0 1%;
+    text-align:left;
+}
+
+.thread_list_link {
+    margin-right:10px;
+}
+
+.thread_list_link:hover {
+    background-color:#336633;
+    color:#FFF;
+}
+
+.shortcut {
+    width:98%;
+    margin:12px auto 0 auto;
+    border-top:2px dashed #b0b0b0;
+}
+.thread_link {
+    width:97%;
+    padding: 0 1% 3px 0 ;
+    margin:0 auto 5px auto;
+    border-bottom:1px solid #d2691e;
+    text-align:right;
+}
+
+#admin_jump {
+    float:right;
+}
+
+#admin_pass {
+    width:100px;
+}
+
+#admin_cmd  {
+    margin-left:5px;padding:2px;
+}

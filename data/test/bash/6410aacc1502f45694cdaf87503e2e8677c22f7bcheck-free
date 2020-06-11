@@ -1,0 +1,41 @@
+#!/bin/bash
+
+DIR=$(dirname $(readlink -f $0))
+
+source $DIR/lib/helpers.sh
+load defaults
+load prefix
+load messages
+load downloader
+load animation
+load check
+load cleanup
+
+for ((i=1; i<=${#@}; i++)); do
+  case "${@:i:1}" in
+  strict)
+    STRICT=true
+    ;;
+  update)
+    UPDATE=true
+    ;;
+  *)
+    help
+    ;;
+  esac
+done
+
+# Disclaimer. It's long, we only want to show this once.
+if ! $BLACKLIST_FILE_EXISTS; then
+  disclaimer
+  UPDATE=true
+fi
+
+# Fetch blacklist flie from Parabola GNU/Linux
+if $UPDATE; then
+  update_blacklist
+fi
+
+check
+
+cleanup

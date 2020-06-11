@@ -1,0 +1,17 @@
+<application>
+  <component name="FileTypeManager" version="16">
+    <extensionMap>
+      <mapping pattern="PropertyPlaceholder" type="CLASS" />
+      <mapping ext="dust" type="Dust" />
+      <mapping ext="jasper" type="Native" />
+      <mapping pattern=".donotdelete" type="PLAIN_TEXT" />
+      <mapping ext="template" type="PLAIN_TEXT" />
+      <mapping ext="svg" type="PLAIN_TEXT" />
+      <mapping ext="dll" type="PLAIN_TEXT" />
+      <mapping ext="md" type="PLAIN_TEXT" />
+      <mapping ext="conf" type="PLAIN_TEXT" />
+      <mapping ext="woff" type="PLAIN_TEXT" />
+      <removed_mapping ext="dll" type="UNKNOWN" />
+    </extensionMap>
+  </component>
+</application>

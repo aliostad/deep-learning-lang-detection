@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <service_name>DailyMotion</service_name>
+  <service_media>video</service_media>
+  <service_regex><![CDATA[http://[\w\.]*?dailymotion\.[a-z]+/video/(?P<sval1>[A-Za-z0-9]+)]]></service_regex>
+  <service_playlist><![CDATA[http://[\w\.]*?dailymotion\.[a-z]+/playlist/(?P<sval1>[A-Za-z0-9]+)]]></service_playlist>
+  <service_url><![CDATA[http://www.dailymotion.com/video/{serviceVAL}]]></service_url>
+  <service_callback>EWRmedio_Services_DailyMotion</service_callback>
+  <service_width>640</service_width>
+  <service_height>360</service_height>
+  <service_embed><![CDATA[<iframe width="100%" height="{h}"  style="max-width: {w}px" src="http://www.dailymotion.com/embed/video/{serviceVAL}" frameborder="0"></iframe>]]></service_embed>
+  <service_local>0</service_local>
+</service>

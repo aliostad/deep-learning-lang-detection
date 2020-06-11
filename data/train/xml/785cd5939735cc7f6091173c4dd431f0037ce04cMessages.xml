@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE messages [
+	<!ELEMENT messages (message)*>
+	<!ELEMENT message (#PCDATA)>
+]>
+
+<messages>
+	<message>hi</message>
+	<message>ok</message>
+	<message>yeah</message>
+	<message>uh-huh</message>
+	<message>yep</message>
+	<message>That's cool.</message>
+	<message>What?</message>
+	<message>haha, I know.</message>
+	<message>Really?</message>
+	<message>wow</message>
+	<message>cool</message>
+	<message>sure</message>
+	<message>I think so.</message>
+	<message>I don't think so.</message>
+	<message>Please, tell me more.</message>
+	<message>Are you sure?</message>
+	<message>Ask me again later.</message>
+	<message>no</message>
+	<message>yes</message>
+	<message>I don't care.</message>
+	<message>Hold on, I think my kitchen is on fire.</message>
+	<message>good</message>
+	<message>right</message>
+	<message>heh</message>
+	<message>How are you?</message>
+	<message>brb</message>
+	<message>LOL!!! OMGZ!</message>
+	<message>I really should be studying.</message>
+	<message>Did you read my new blog?</message>
+	<message>Isn't that the truth.</message>
+	<message>Shazaam!!!</message>
+	<message>maybe</message>
+	<message>Are you up for a movie tonight?</message>
+	<message>oh noze!</message>
+</messages>

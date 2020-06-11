@@ -1,0 +1,13 @@
+@import url(../main.css);
+
+.away .message { color: #9a5; }
+.away_message .message { color: #443; }
+.return_away .message { color: #9a5; }
+.date_separator .message { color: #555; }
+.idle .message { color: #ccc; }
+.return_idle .message { color: #ccc; }
+.offline .message, .contact_left .message { color: #a88; }
+.online .message, .contact_joined .message { color: #8a8; }
+.teaser, .error .message, .timed_out .message { color:red; }
+.encryption .message{color: green;}
+.fileTransferBegan .message, .fileTransferComplete .message{ color: lightblue; }

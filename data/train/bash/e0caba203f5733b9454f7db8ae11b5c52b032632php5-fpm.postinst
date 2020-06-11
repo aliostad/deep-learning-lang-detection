@@ -1,0 +1,49 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "triggered" ] && [ "$2" = "/etc/php5/fpm/conf.d" ]; then
+    invoke-rc.d php5-fpm restart
+fi
+
+dpkg-maintscript-helper mv_conffile /etc/php5/fpm/main.conf /etc/php5/fpm/php-fpm.conf 5.3.5-1 -- "$@"
+
+CONFDIR=/etc/php5/fpm/conf.d
+
+if [ -L $CONFDIR ]; then
+    rm $CONFDIR
+    mkdir $CONFDIR
+fi
+
+if [ "$1" = "configure" ]; then
+    phpini="/etc/php5/fpm/php.ini"
+
+    if [ "fpm" = "cli" ]; then
+	ucf /usr/share/php5/php.ini-production.fpm $phpini
+    else
+	ucf /usr/share/php5/php.ini-production $phpini
+    fi
+    ucfr php5-fpm $phpini
+
+    if [ -e /usr/share/php5/php5-maintscript-helper ]; then
+	. /usr/share/php5/php5-maintscript-helper
+	
+	mods=$(php5query -M)
+	for mod in $mods; do
+	    php5_invoke enmod fpm $mod
+	done
+    fi
+
+fi
+
+# Automatically added by dh_installinit
+if [ -e "/etc/init/php5-fpm.conf" ]; then
+	invoke-rc.d php5-fpm start || exit $?
+fi
+# End automatically added section
+# Automatically added by dh_installinit
+update-rc.d -f php5-fpm remove >/dev/null || exit $?
+# End automatically added section
+
+
+exit 0

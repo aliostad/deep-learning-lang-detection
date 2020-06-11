@@ -1,0 +1,83 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+code {
+	display: block;
+	padding: 5px;
+}
+
+/*detail.html*/
+
+.api-detail {
+
+}
+
+.api-detail p {
+	margin: 10px 0;
+}
+
+.api-detail .left-cont {
+	position: fixed; 
+	top: 0;
+	bottom: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 25%; 
+	padding: 20px; 
+	background-color: #f8f8f8; 
+}
+
+.api-detail .right-cont {
+	width: 75%; 
+	margin-left: 25%; 
+	padding: 20px;
+}
+
+.api-detail .right-cont .group-name {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+/*test-api.html*/
+
+.api-test {
+	margin-top: 30px;
+}
+
+.api-test p {
+	margin: 10px 0;
+}
+
+.api-test .left-cont {
+	padding-right: 30px;
+	border-right: 1px solid #ddd;
+}
+
+.api-test .right-cont {
+
+}
+
+.api-test .right-cont .send-group {
+
+}
+
+.api-test .right-cont .send-group select {
+	display: inline-block;
+	width: 110px;
+}
+
+.api-test .right-cont .send-group input {
+	display: inline-block;
+	width: 400px;
+}
+
+.api-test .right-cont .param-item {
+	margin: 5px 0;
+}
+
+.api-test .right-cont .param-item input {
+	display: inline-block;
+	width: 200px;
+}

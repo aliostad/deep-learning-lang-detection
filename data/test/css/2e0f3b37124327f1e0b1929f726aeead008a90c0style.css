@@ -1,0 +1,53 @@
+/**
+ * Place your custom styles here.
+ */
+
+.intro-text {
+  padding-left: 0;
+}
+
+.view-images-have-text thead,
+.view-task-transcribe-text thead,
+.view-task-extract-names thead {
+  display: none;
+}
+
+.view-images-have-text .pager {
+  /* display: none; */
+}
+
+.view-task-transcribe-text .views-field-field-inscription-editable .views-row-edit-static {
+  display: none;
+}
+
+.view-images-have-text #edit-actions-submit,
+.view-task-transcribe-text #edit-actions-submit,
+.view-task-extract-names #edit-actions-submit {
+  float: right;
+}
+.view-task-transcribe-text .views-field-rendered {
+  width: 50%
+}
+
+.view-task-extract-names .views-field-field-names-individual-editable .views-row-edit-static,
+.view-task-extract-names .tabledrag-toggle-weight-wrapper,
+.view-task-extract-names .field-name-field-names-individual .control-label {
+  display: none;
+}
+.view-task-extract-names .views-field-field-inscription {
+  width: 30%;
+  white-space: pre-line;
+}
+
+.caption {
+  color: #666;
+  position: relative;
+  top: -1em;
+}
+
+.view-images-have-text .view-footer,
+.view-images-have-text .view-footer a,
+.view-task-transcribe-text .view-footer,
+.view-task-transcribe-text .view-footer a{
+  color: #666;
+}

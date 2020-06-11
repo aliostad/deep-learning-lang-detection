@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/p2.xsl"?>
+<rdf:RDF xmlns="http://usefulinc.com/ns/doap#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		 xmlns:asfext="http://projects.apache.org/ns/asfext#" xml:lang="en">
+	<Project rdf:about="http://perl.apache.org/">
+
+		<repository>
+			<ArchRepository>
+				<browse rdf:resource="http://foo.bar/ArchRepository-browse"/>
+				<location rdf:resource="http://foo.bar/ArchRepository"/>
+			</ArchRepository>
+		</repository>
+
+		<repository>
+			<BazaarBranch>
+				<browse rdf:resource="http://foo.bar/BazaarBranch-browse"/>
+				<location rdf:resource="http://foo.bar/BazaarBranch"/>
+			</BazaarBranch>
+		</repository>
+
+		<repository>
+			<BKRepository>
+				<browse rdf:resource="http://foo.bar/BKRepository-browse"/>
+				<location rdf:resource="http://foo.bar/BKRepository"/>
+			</BKRepository>
+		</repository>
+
+		<repository>
+			<CVSRepository>
+				<browse rdf:resource="http://foo.bar/CVSRepository-browse"/>
+				<location rdf:resource="http://foo.bar/CVSRepository"/>
+			</CVSRepository>
+		</repository>
+
+		<repository>
+			<DarcsRepository>
+				<browse rdf:resource="http://foo.bar/DarcsRepository-browse"/>
+				<location rdf:resource="http://foo.bar/DarcsRepository"/>
+			</DarcsRepository>
+		</repository>
+
+		<repository>
+			<GitRepository>
+				<browse rdf:resource="http://foo.bar/GitRepository-browse"/>
+				<location rdf:resource="http://foo.bar/GitRepository"/>
+			</GitRepository>
+		</repository>
+
+		<repository>
+			<HgRepository>
+				<browse rdf:resource="http://foo.bar/HgRepository-browse"/>
+				<location rdf:resource="http://foo.bar/HgRepository"/>
+			</HgRepository>
+		</repository>
+
+		<repository>
+			<SVNRepository>
+				<browse rdf:resource="http://foo.bar/SVNRepository-browse"/>
+				<location rdf:resource="http://foo.bar/SVNRepository"/>
+			</SVNRepository>
+		</repository>
+
+	</Project>
+
+</rdf:RDF>

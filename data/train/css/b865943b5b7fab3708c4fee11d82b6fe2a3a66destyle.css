@@ -1,0 +1,229 @@
+/*
+DOCUMENT FLOW: id -> class -> elements
+Section Flow: Look -> Box model -> Positioning
+
+Kyle Cedric Kunkel
+15 January 2017
+*/
+
+/*SECTION CONTENT BOX STYLES*/
+#entireContent{
+
+	/*Look & Box Model*/
+	width:960px; /*Forces fit*/
+	margin:20px;
+}
+#mainContent{
+
+	/*Look*/
+	background-color:#ffffff;
+	border-color:#dddddd;
+	border-style:solid;
+	border-width:2px;
+
+	/*Box model*/
+	padding:20px;
+	margin:20px;
+
+	/*Positioning*/
+	float:left;
+	width:566px; /*566+20+20+20+20+4 = 650*/
+}
+#sideBar{
+
+	/*Look*/
+	background-color:#ffffff;
+	border-style:solid;
+	border-width:2px;
+	border-color:#dddddd;
+
+	/*Box model*/
+	padding:18px;
+	margin:20px;
+
+	/*Positioning*/
+	width:230px; /*230+18+18+2+2 = 270 (margin->entire content)*/
+	float:right;
+
+}
+/*----------------------------------------------*/
+
+/*SPECIFIC CONTENT BOX ID STYLES*/
+#profilePic{
+
+	/*Look*/
+	transform:rotate(-90deg);
+	width:185px;
+	height:150px;
+
+	/*Box model*/
+	float:left;
+	margin: 20px 10px 10px 0px;
+}
+#name{
+
+	/*Look*/
+	color:#ffffff;
+	background-color:#4aaaa5;
+	font-size:20px;
+	font-weight:bold;
+	font-family:Georgia;
+
+	/*Box Model*/
+	padding:15px;
+
+	/*Positioning*/
+	float:left;
+	position:relative;
+	left:42px;
+}
+#portDivLeft{ float:left; } /*Positioning*/
+#portDivright{ float:right; } /*Positioning*/
+/*----------------------------------------------*/
+
+/*MULTIPLE CONTENT BOX CLASS STYLES*/
+.contentHeading{
+
+	/*Look*/
+	font-weight:bold;
+	font-size:25px;
+	font-family:Georgia;
+	color:#4aaaa5;
+
+	/*Box model*/
+	padding-bottom:20px;
+	margin-bottom:20px;
+	border-style:solid;
+	border-bottom-width:2px;
+	border-bottom-color:#dddddd;
+}
+.icon{
+	/*Look*/
+	width:58px;
+	height:58px;
+}
+.iconMargin{ /*only 2/3 icons*/
+	/*Box model*/
+	margin-right:20px;
+}
+.icon:hover{
+	/*Look*/
+	outline: 2px solid #4aaaa5;
+}
+.par{
+	/*Look*/
+	font-family:Helvetica;
+	color:#777777;
+	line-height:200%;
+	font-size:16px;
+}
+.link{
+	/*Look*/
+	font-family:Helvetica;
+	color:#777777;
+	text-decoration:none;
+}
+.portfolioImage{
+	/*Look*/
+	padding:0px 15px 0px 15px;
+	height:250px;
+	width:250px;
+}
+.portfolioHeading{
+	/*Look*/
+	background-color:#4aaaa5;
+	color:white;
+	font-size:15px;
+	font-family:Helvetica;
+	width:230px;
+	text-align:center;
+
+	/*Box model*/
+	padding:5px 10px 5px 10px;
+	margin-left:15px;
+
+	/*Positiong*/
+	position:relative;
+	top:-40px;
+}
+.wrapper{
+	/*Positioning*/
+	min-height: calc(100vh - 70px);
+}
+/*----------------------------------------------*/
+
+/*TAG STYLES*/
+header{
+	/*Look*/
+	background-color:#ffffff;
+	width:100%;
+	height:50px;
+
+	/*Box model*/
+	border-color:#cccccc;
+	border-style:solid;
+	border-bottom-width:2px;
+}
+nav{
+	/*Box model*/
+	padding:15px;
+
+	/*Positioning*/
+	position:relative;
+	right:-550px;
+}
+body{
+	/*Look*/
+	background-image:url("../images/background2.png");
+	height:100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+footer{
+	/*Look*/
+	background-color:#666666;
+	text-align:center;
+	color:#ffffff;
+	clear:both;
+	height:30px;
+	width:100%;
+
+	/*Box model*/
+	padding:20px 0px 20px 0px;
+	border-style:solid;
+	border-top-width:5px;
+	border-top-color:#4aaaa5;
+}
+input{
+	/*Look*/
+	width:550px;
+
+	/*Box model*/
+	padding:5px;
+}
+textarea{ /*Contact form message*/
+	/*Look*/
+	height: 200px;
+	width:550px;
+
+	/*Box model*/
+	padding:5px;
+}
+button{
+	/*Look*/
+	text-align:center;
+	font-size:15px;
+	width:100px;
+	background-color:#4aaaa5;
+	color:#ffffff;
+	font-family:Helvetica;
+
+	/*Box model*/
+	padding:10px;
+	border:none;
+	margin-top:10px;
+}
+a:hover{
+	/*Look*/
+	color:#4aaaa5;
+}

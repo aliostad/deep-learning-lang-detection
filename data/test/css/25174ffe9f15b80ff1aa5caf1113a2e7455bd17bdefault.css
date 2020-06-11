@@ -1,0 +1,83 @@
+
+div.amun-service-login
+{
+
+}
+
+div.amun-service-login-description
+{
+
+}
+
+div.amun-service-login-form
+{
+
+}
+
+div.amun-service-login-form-help
+{
+
+}
+
+div.amun-service-login-register
+{
+
+}
+
+div.amun-service-login-register-description
+{
+
+}
+
+div.amun-service-login-register-form
+{
+
+}
+
+div.amun-service-login-app-rights
+{
+	display:none;
+}
+
+div.amun-service-login-app-rights ul
+{
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+}
+
+div.amun-service-login-app-rights li
+{
+	float:left;
+	width:220px;
+}
+
+div.amun-service-login-app-rights hr
+{
+	display:block;
+	clear:both;
+}
+
+img#amun-service-login-register-form-captcha
+{
+	margin:4px 0px;
+}
+
+div.amun-gadget-latestuser
+{
+	margin:2px;
+}
+
+div.amun-gadget-latestuser ul
+{
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+}
+
+div.amun-gadget-latestuser li
+{
+	float:left;
+	margin:4px;
+}
+

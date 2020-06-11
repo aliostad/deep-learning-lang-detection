@@ -1,0 +1,68 @@
+	/* main nav */
+	#nav { clear: both; margin:0 auto; background:#fff; left:1px; position: absolute; width: 278px; z-index: 10000; padding:2px 12px 44px 6px;	 border: 1px solid #d2d2d2; border-top:0 none;	display: none; /* visibility will be toggled with jquery */	}
+	#nav li, .nav-wrap2 #nav li, .nav-wrap2.mn4 #nav li, .nav-wrap2.mn4.darknavi #nav li  { clear: both; float: none; border:0 none; margin-left:10px; padding:10px 1px 7px; border-bottom:1px solid #e5e5e5; }
+	#nav a, #nav ul a, .nav-wrap2 #nav a, .nav-wrap2.darknavi #nav a, .nav-wrap2.mn4 #nav a { width:auto; height:20px; display:block; text-align:left; border:0 none; padding:2px 3px; margin:0; line-height:1.2; }
+	.nav-wrap2.darknavi #nav li a { color:#595959;}
+	.nav-wrap2.mn4 #nav ul li, .nav-wrap2.mn4.darknavi #nav ul li { padding:0; }
+	#nav a.drp-aro { padding:0;}
+	#nav a:hover, #nav ul li, .nav-wrap2 #nav ul li, .nav-wrap2.darknavi #nav ul li, .nav-wrap2.mn4 #nav ul li, .nav-wrap2.mn4.darknavi #nav ul li { border:0 none; }
+	.nav-wrap2.mn4 #nav li:last-of-type, .nav-wrap2.mn4.darknavi #nav li:last-of-type { border-right:0 none; }
+	#nav a span, #nav a:after { display:none; visibility:hidden; }
+	
+	
+	
+	
+	/* dropdown */
+	#nav ul { width: auto; margin:0; box-shadow: none; display: none; border: none;  }
+	#nav:not( :target ) > a:first-of-type, #nav:target > a:last-of-type { display: block; }
+	#nav:target > ul { display:block;}
+	#nav li ul { position: static; margin:0; width: auto; padding-left:20px; }	
+	#nav li.submenux:after {content: "\e3b1"; }
+	
+
+			#nav
+			{
+				position: relative;
+
+			}
+				#nav > a
+				{
+
+					text-indent: -9999px;
+
+					position: relative;
+				}
+
+
+
+				#nav:not( :target ) > a:first-of-type,
+				#nav:target > a:last-of-type
+				{
+					display: block;
+				}
+
+
+			/* first level */
+
+			#nav > ul
+			{
+				display: none;
+				position: absolute;
+
+			}
+				#nav:target > ul
+				{
+					display: block;
+				}
+
+
+
+				/* second level */
+
+				#nav li ul
+				{
+					position: static;
+
+				}
+		}
+

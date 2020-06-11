@@ -1,0 +1,32 @@
+.EntityMessage.EntityMessage--individual {
+  margin-bottom: 20px;
+}
+
+.EntityMessage.EntityMessage--individual .Prompt {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.EntityMessage.EntityMessage--individual .Prompt:before {
+  border: 10px solid transparent;
+  border-top-color: #000;
+  bottom: -20px;
+  content: ' ';
+  height: 0;
+  left: 45px;
+  position: absolute;
+  width: 0;
+}
+
+.EntityMessage.EntityMessage--individual .Prompt.Prompt--error:before {
+  border-top-color: #cd313c;
+}
+
+.EntityMessage.EntityMessage--individual .EntityMessage-body {
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.EntityMessage.EntityMessage--individual img {
+  max-width: 100%;
+}

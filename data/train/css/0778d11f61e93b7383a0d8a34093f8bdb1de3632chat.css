@@ -1,0 +1,87 @@
+.chat { 
+	height:100%; 
+	width:100%; 
+
+}
+.space-message {
+
+	height: 205px;
+	border: 1px solid #555;
+	background: grba(0,0,0,0.7);
+	overflow:auto;
+	
+}
+
+.message{
+padding: 5px;
+border-bottom: 1px dotted #555;
+float: left;
+width: 500px;
+}
+
+.message .autor {
+color: rgb(240, 24, 76);
+margin: 2px;
+width: 477px;
+
+text-align: left;
+float: left;
+}
+
+.message .autor a {
+color: rgb(235, 107, 138);
+
+}
+
+.message .text {
+color:#F3F3F3;
+margin: 2px;
+float: left;
+clear: both;
+width: 400px;
+}
+
+.message .date {
+	font-size: 12px;
+	color: #999;
+	text-align: right;
+	float: right;
+	width: 60px;
+}
+
+.space-for-write {
+	height: 30px;
+	margin-top: 1px;
+
+	
+}
+.space-for-write .input-textarea {
+	width: 440px;
+	padding: 7px;
+	height: 16px;
+	border: none;
+	resize: none;
+	
+}
+.space-for-write .sent-message {
+	
+	vertical-align: top;
+	height: 27px;
+	width: 75px;
+	border: 1px solid #D53D3D;
+	outline: none;
+	background: #ca2525;
+	box-shadow: 0px 3px 0px #7E0E0E;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.56);
+	font-size: 12px;
+	margin-left: 1px;
+	
+}
+.space-for-write .sent-message:active{
+	height:27px;
+	box-shadow: 0px 1px 0px #7E0E0E;
+	position:relative;
+	top:2px
+	
+}

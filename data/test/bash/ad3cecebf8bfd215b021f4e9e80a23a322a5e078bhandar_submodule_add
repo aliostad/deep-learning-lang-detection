@@ -1,0 +1,31 @@
+#!/bin/bash
+
+function help
+{
+    echo "Usage: $0 repo_on_bhandar [path in repo]"
+    exit 1
+}
+
+# This script adds bhandar repository as a submodule. 
+REPO_NAME="$1"
+if [ ! $REPO_NAME ]; then
+    help
+fi
+
+if [ ! "$2" ]; then
+    $SUBMODULE_PATH=$REPO_NAME
+else
+    $SUBMODULE_PATH="$2"
+fi
+
+source client.in
+source server.in 
+
+REPO_URL=$SERVER_URL:$SERVER_REPO_ROOT/$REPO_NAME
+if $GIT submodule add $REPO_URL $SUBMODULE_PATH 
+then
+    echo "Added $REPO_URL to $SUBMODULE_PATH as submodule"
+else
+    echo "Failed to add $REPO_URL to $SUBMODULE_PATH as submodule"
+    exit 1
+fi

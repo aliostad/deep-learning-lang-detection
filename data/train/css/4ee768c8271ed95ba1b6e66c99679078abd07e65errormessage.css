@@ -1,0 +1,68 @@
+.error{
+  color: red; 
+}
+
+.error_message{
+  color: red;
+  font-size: 12px;
+  }
+
+ .error_container{
+  display: none;
+  visibility: hidden;
+  text-align: left !important;
+ }	
+
+
+#header_errorMessage{
+	display: none;
+	padding: 0px 20px;
+}
+
+ 
+/* These are the error message labels to be used for the UI. If you have to make a new error message please follow the format/pattern shown 
+	below. Please ask me for any questions regarding this matter. -David */ 
+ /* //<div class="error_container" id="yearsOfExperience_errorMessageContainer"><label class="error_message" id="yearsOfExperience_errorMessage" name="yearsOfExperience"></label></div>
+  
+  
+  
+  //<div class="error_container" id="email_errorMessageContainer"><label class="error_message" id="email_errorMessage" name="username_errorMessage"></label></div>
+  //<div class="error_container" id="password_errorMessageContainer"><label class="error_message" id="password_errorMessage" name="password_errorMessage"></label></div>
+  //<div class="error_container" id="newPassword_errorMessageContainer"><label class="error_message" id="newPassword_errorMessage" name="newPassword_errorMessage"></label></div>
+  
+  
+  
+  //<div class="error_container" id="companyName_errorMessageContainer"><label class="error_message" id="companyName_errorMessage" name="companyName_errorMessage"></label></div>
+  //<div class="error_container" id="emailAdress_errorMessageContainer"><label class="error_message" id="emailAdress_errorMessage" name="emailAdress_errorMessage"></label></div>
+  //<div class="error_container" id="contactNumber_errorMessageContainer"><label class="error_message" id="contactNumber_errorMessage" name="contactNumber_errorMessage"></label></div>
+  
+  
+  
+  
+    //<div class="error_container" id="email_errorMessageContainer"><label class="error_message" id="email_errorMessage" name="email_errorMessage"></label></div>
+	//<div class="error_container" id="password_errorMessageContainer"><label class="error_message" id="password_errorMessage" name="password_errorMessage"></label></div>
+	
+	
+	
+	//<div class="error_container" id="studentId_errorMessageContainer"><label class="error_message" id="studentId_errorMessage" name="studentId_errorMessage"></label></div>	
+	//<div class="error_container" id="firstName_errorMessageContainer"><label class="error_message" id="firstName_errorMessage" name="firstName_errorMessage"></label></div>	
+	//<div class="error_container" id="middleName_errorMessageContainer"><label class="error_message" id="middleName_errorMessage" name="middleName_errorMessage"></label></div>	
+	//<div class="error_container" id="lastName_errorMessageContainer"><label class="error_message" id="lastName_errorMessage" name="lastName_errorMessage"></label></div>	
+	//<div class="error_container" id="cellNumber_errorMessageContainer"><label class="error_message" id="cellNumber_errorMessage" name="cellNumber_errorMessage"></label></div>	
+	//<div class="error_container" id="adress_errorMessageContainer"><label class="error_message" id="adress_errorMessage" name="adress_errorMessage"></label></div>
+    //<div class="error_container" id="emailAdress_errorMessageContainer"><label class="error_message" id="emailAdress_errorMessage" name="emailAdress_errorMessage"></label></div>
+	//<div class="error_container" id="password_errorMessageContainer"><label class="error_message" id="password_errorMessage" name="password_errorMessage"></label></div>
+	//<div class="error_container" id="confirmPassword_errorMessageContainer"><label class="error_message" id="confirmPassword_errorMessage" name="confirmPassword_errorMessage"></label></div>
+	//<div class="error_container" id="nationality_errorMessageContainer"><label class="error_message" id="nationality_errorMessage" name="nationality_errorMessage"></label></div>
+	//<div class="error_container" id="maritalStatus_errorMessageContainer"><label class="error_message" id="maritalStatus_errorMessage" name="maritalStatus_errorMessage"></label></div>
+	//<div class="error_container" id="gender_errorMessageContainer"><label class="error_message" id="gender_errorMessage" name="gender_errorMessage"></label></div>
+	
+	
+	
+	
+	*/
+	
+	
+	
+  
+  

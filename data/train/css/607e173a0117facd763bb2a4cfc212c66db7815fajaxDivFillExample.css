@@ -1,0 +1,118 @@
+/*Style Sheet! */
+.group:after{
+      content: "";
+      display: table;
+      clear: both;
+ }
+
+body{
+    background-color: black;
+}
+
+#wrapper{
+    background-color:whitesmoke;
+    margin: auto;
+    margin-top: 25px;
+    width: 600px;
+    height:400px;;
+    border-radius:36px;
+    padding: 20px;
+}
+
+#wrapperTitle{
+    margin:auto;   
+    text-align: center;
+}
+
+#buttonContainer{
+    float:left; 
+    margin: auto;
+    margin-left: 10px;
+    margin-top: 25px;
+    align-content: center;
+    height:210px;
+    width: 120px;
+    text-align: center;
+}
+
+
+.dinoButton{
+    margin: 20px 20px;
+    padding:5px;
+    height:50px;
+    width:120px;
+    font-family: fantasy;
+    font-size: auto;
+    display: block;
+}
+
+.dinoButton:hover{
+    font-size: 1.0em;
+    cursor:pointer;
+    text-decoration: underline;
+}
+
+.dinoButton:active{
+    border: solid 1px ghostwhite;
+    box-shadow: 5px;
+}
+
+
+#receivedContentContainer{
+    float:left; 
+    margin: auto;
+    padding: 0px 20px;
+    background-color: whitesmoke;
+    width: 350px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border: solid black 3px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    height: auto;
+}
+
+#loader {
+    display: none;
+    background-color: whitesmoke;
+    margin-left: 150px;
+}
+
+/* Borrowed your format & Tweeked it - Turned out pretty sweet */
+.loadNode {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border-radius: 100%;
+    transition: background-color .4s;
+}
+.loadNode:nth-of-type(1) {
+    margin-left: 40px;
+}
+.loadNode:nth-of-type(2) {
+    margin-left: 20px;
+    margin-top: -20px;
+}
+.loadNode:nth-of-type(3) {
+
+}
+        
+.loadNode:nth-of-type(4) {
+}
+        
+.loadNode:nth-of-type(5) {
+  margin-left: 20px;  
+}
+        
+.loadNode:nth-of-type(6) {
+    margin-left: 40px;
+    margin-top: -20px;
+}
+.loadNode:nth-of-type(7) {
+    margin-left: 60px;
+    margin-top: -40px;
+}
+.loadNode:nth-of-type(8) {
+    margin-left: 60px;
+    margin-top: -40px;
+}

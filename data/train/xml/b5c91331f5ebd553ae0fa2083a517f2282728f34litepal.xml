@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<litepal>
+    <dbname value="PrisonSystem_info"></dbname>
+    <version value="1"></version>
+    <list>
+        <mapping class="com.hengdian.lv.prisonsystem.sqlite.model.CriminalInfo"></mapping>
+        <mapping class="com.hengdian.lv.prisonsystem.sqlite.model.PoliceInfo"></mapping>
+        <mapping class="com.hengdian.lv.prisonsystem.sqlite.model.CorrectBean"></mapping>
+        <mapping class="com.hengdian.lv.prisonsystem.sqlite.model.CrisisCriminal"></mapping>
+        <mapping class="com.hengdian.lv.prisonsystem.sqlite.model.PrivateTalk"></mapping>
+        <mapping class="com.hengdian.lv.prisonsystem.sqlite.model.PsyCounBean"></mapping>
+        <mapping class="com.hengdian.lv.prisonsystem.sqlite.model.DailyObs1"></mapping>
+        <mapping class="com.hengdian.lv.prisonsystem.sqlite.model.DailyObs2"></mapping>
+        <mapping class="com.hengdian.lv.prisonsystem.sqlite.model.KeyPoint"></mapping>
+        <mapping class="com.hengdian.lv.prisonsystem.sqlite.model.TalkInfo1"></mapping>
+        <mapping class="com.hengdian.lv.prisonsystem.sqlite.model.TalkInfo2"></mapping>
+        <mapping class="com.hengdian.lv.prisonsystem.sqlite.model.ToolManage"></mapping>
+        <mapping class="com.hengdian.lv.prisonsystem.sqlite.model.SelfAss"></mapping>
+        <mapping class="com.hengdian.lv.prisonsystem.sqlite.model.PeerAss"></mapping>
+        <mapping class="com.hengdian.lv.prisonsystem.sqlite.model.LittleRep"></mapping>
+        <mapping class="com.hengdian.lv.prisonsystem.sqlite.model.FeedBackBean"></mapping>
+        <mapping class="com.hengdian.lv.prisonsystem.sqlite.model.OpinionBean"></mapping>
+
+    </list>
+</litepal>

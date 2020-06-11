@@ -1,0 +1,87 @@
+/* RadColorPicker Web 2.0 skin */
+.RadColorPicker_ServiceDirect .rcpViews,
+.RadColorPicker_ServiceDirect .rcpHeader,
+.RadColorPicker_ServiceDirect .rcpPageView
+{
+	background-color:#fff;
+}
+
+.RadColorPicker_ServiceDirect .rcpColorPreview,
+.RadColorPicker_ServiceDirect .rcpInput,
+.RadColorPicker_ServiceDirect .rcpHexInput,
+.RadColorPicker_ServiceDirect .rcpMillionColorsPalette,
+.RadColorPicker_ServiceDirect .rcpMillionColorsSlider div.rslTrack
+{
+	border:1px solid #6788be;
+}
+
+.RadColorPicker_ServiceDirect .rcpHexInput[readonly] 
+{
+	background-color:#eee;
+}
+
+.RadColorPicker_ServiceDirect .rcpPalette,
+.RadColorPicker_ServiceDirect input,
+.RadColorPicker_ServiceDirect a
+{
+	color:#000;
+}
+
+.RadColorPicker_ServiceDirect .rcpTabs .rcpSelectedTab a span
+{
+    color:#0f3789;
+}
+
+.RadColorPicker_ServiceDirect .rcpApplyButton span,
+.RadColorPicker_ServiceDirect .rcpButton span
+{
+    color:#fff;
+}
+
+.RadColorPicker_ServiceDirect .rcpApplyButton:hover span,
+.RadColorPicker_ServiceDirect .rcpButton:hover span
+{
+    color:#0f3789;
+}
+
+.RadColorPicker_ServiceDirect .rcpHeader,
+.RadColorPicker_ServiceDirect .rcpHeader .rcpImageButton,
+.RadColorPicker_ServiceDirect .rcpRecentColors,
+.RadColorPicker_ServiceDirect .rcpIcon a,
+.RadColorPicker_ServiceDirect .rcpTabs a,
+.RadColorPicker_ServiceDirect .rcpTabs a span,
+.RadColorPicker_ServiceDirect .rcpButton,
+.RadColorPicker_ServiceDirect .rcpButton span,
+.RadColorPicker_ServiceDirect .rcpMillionColorsHandle,
+.RadColorPicker_ServiceDirect .rcpSlider div.rslTrack,
+/* overwrite sliders */
+.RadColorPicker_ServiceDirect .rcpSlider .rslTrack a.rslDraghandle,
+.RadColorPicker_ServiceDirect div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle
+{
+	background-image:url('ColorPicker/ColorPickerSprites.png');
+	background-repeat:no-repeat;
+}
+
+/* Rounded corners and shadows */
+.RadColorPicker_ServiceDirect .rcpPalette,
+.RadColorPicker_ServiceDirect .rcpRoundedRight,
+.RadColorPicker_ServiceDirect .rcpRoundedBottomRight,
+.RadColorPicker_ServiceDirect .rcpRightShadow,
+.RadColorPicker_ServiceDirect .rcpCornerShadow
+{
+	background-image:url('ColorPicker/rcpVerticalSprites.png');
+}
+
+.RadColorPicker_ServiceDirect .rcpRoundedBottomLeft,
+.RadColorPicker_ServiceDirect .rcpBottomShadow
+{
+	background-image:url('ColorPicker/ColorPickerSprites.png');
+}
+
+* html .RadColorPicker_ServiceDirect .rcpPalette,
+* html .RadColorPicker_ServiceDirect .rcpRoundedRight,
+* html .RadColorPicker_ServiceDirect .rcpRoundedBottomRight,
+* html .RadColorPicker_ServiceDirect .rcpRoundedBottomLeft
+{
+	background-image:url('ColorPicker/rcpVerticalSpritesIE6.png');
+}

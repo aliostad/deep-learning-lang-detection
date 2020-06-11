@@ -1,0 +1,41 @@
+!table
+!version 410
+!charset WindowsLatin1
+
+Definition Table
+  Type ACCESS TABLE "mst_ic_RoofTargets_ac" Charset "WindowsLatin1"
+  Fields 34
+    icID Integer Index 1 ;
+    rICID Char (5) ;
+    parcelID Integer Index 2 ;
+    divideID Smallint ;
+    dscID Integer ;
+    nGTORoof Char (6) ;
+    exICFtRoof Integer ;
+    exRfAreaFt Integer ;
+    externalDS Logical ;
+    dsTotal Smallint ;
+    extoVeg Smallint ;
+    extoStreet Smallint ;
+    extoPlanter Smallint ;
+    extoBioretention Smallint ;
+    extoDrywell Smallint ;
+    extoEcoroof Smallint ;
+    dstoVeg Smallint ;
+    dstoStreet Smallint ;
+    dstoPlanter Smallint ;
+    dstoBioretention Smallint ;
+    dstoDrywell Smallint ;
+    dstoEcoroof Smallint ;
+    dsUncontrollable Smallint ;
+    landscapeAvailable Logical ;
+    fractionDrained Float ;
+    difficulty Smallint ;
+    roofEffDisc Float ;
+    comments Char (254) ;
+    plantersOK Logical ;
+    bioretentionOK Logical ;
+    buildModelIC Logical Index 3 ;
+    source Char (15) ;
+    appendDate Char (17) ;
+    constructed Integer Index 4 ;

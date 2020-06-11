@@ -1,0 +1,20 @@
+﻿.body-wrapper .container,
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+
+.nav.people-nav > li .person-overlay,
+.nav.people-nav > li .person-name {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    height: 92px;
+}
+
+.nav.people-nav > li.active .person-overlay,
+.nav.people-nav > li.active .person-name,
+.nav.people-nav > li > a:hover .person-overlay,
+.nav.people-nav > li > a:hover .person-name {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    
+}

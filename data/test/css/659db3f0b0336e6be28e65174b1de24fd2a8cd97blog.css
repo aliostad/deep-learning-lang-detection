@@ -1,0 +1,105 @@
+
+/* Thanks to http://css-tricks.com/snippets/css/glowing-blue-input-highlights/ 
+   for the border trick */
+
+input[type=text], textarea {
+  border-style: solid;
+  border-width: 1px;
+  border-color: silver;
+  outline: none;
+}
+
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 6px blue;
+}
+
+.tag-view {
+  font-size: 12pt;
+  font-style: italic;
+  text-align: right;
+  margin-bottom: 2em;
+}
+
+.tag-view-tag { font-style: normal; }
+
+.write-form-item { margin-bottom: 1em; display: block; width: 99%; }
+
+#write-title {
+  width: 99%;
+  font-size: 14pt;
+  outline: none;
+}
+
+#write-slug-label { float: left; padding-right: 0.25em; }
+
+#write-slug-container { 
+  display: block; 
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+}
+
+#write-slug {
+  display: block;
+  width: 75%;
+  font-size: 9pt;
+  outline: none;
+}
+
+#write-tags {
+  width: 99%;
+  font-size: 9pt;
+  outline: none;
+}
+
+#write-body {
+  width: 99%;
+  height: 20em;
+  font-size: 10pt;
+  resize: none;
+}
+
+.write-options {
+  margin-bottom: 1em;
+}
+
+article {
+  margin-bottom: 5em;
+}
+
+h2.post-title a { color: inherit; }
+
+.post-body { 
+  margin-left: 0em; 
+  margin-bottom: 2.25em; 
+}
+
+.post-footer {
+  font-size: 80%;
+  text-align: right;
+  line-height: 2em;
+}
+
+table#manage-posts { 
+  width: 99%; 
+  text-align: left; 
+  border-collapse: collapse;
+}
+
+.manage-posts-entry-0 { background-color: gainsboro; }
+.manage-posts-entry-1 { background-color: inherit; }
+
+.manage-posts-published { padding: 0.25em 0.5em; width: 5%;  font-weight: bold; text-align: center; }
+.manage-posts-title     { padding: 0.25em 0.5em; width: 45%; font-weight: bold; }
+.manage-posts-authors   { padding: 0.25em 0.5em; width: 15%; font-size: 80%; }
+.manage-posts-timestamp { padding: 0.25em 0.5em; width: 25%; font-size: 80%; }
+.manage-posts-actions   { padding: 0.25em 0.5em; width: 10%; font-size: 80%; }
+
+.manage-posts-title > a { color: inherit; }
+
+.preview-notification {
+  font-size: 120%;
+  font-weight: bold;
+  padding: 1em;
+  background-color: powderblue;
+}

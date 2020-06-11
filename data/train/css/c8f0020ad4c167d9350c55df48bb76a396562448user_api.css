@@ -1,0 +1,18 @@
+.term span{ display:inline-block; background:url(../images/tip_ico.gif) no-repeat 0 -182px; padding-left:15px; }
+.term span a{ color:#690; font-size:14px; text-decoration:none;}
+.term span a:hover{ color:#9c0; font-size:14px; text-decoration:none;}
+.term{ padding-left:82px;}
+
+.do_api_register{ padding-left:82px;}
+.do_api_login{ padding-left:82px;}
+
+.btn_do_api_register{ background:url(../images/user_btn.gif) no-repeat 0px 0px; width:135px; border:none; height:37px; text-decoration:none;  cursor:pointer; display:inline-block; }
+.btn_do_api_register_hover{ background:url(../images/user_btn.gif) no-repeat 0px -37px; width:135px; border:none; height:37px; text-decoration:none;  cursor:pointer; display:inline-block; }
+.btn_do_api_register_active{ background:url(../images/user_btn.gif) no-repeat 0px -74px; width:135px; border:none; height:37px; text-decoration:none;  cursor:pointer; display:inline-block; }
+
+.radio_row{ font-size:14px; color:#7FA632}
+.radio_row input,.radio_row label{ float:left;}
+
+.btn_do_api_login{ background:url(../images/user_btn.gif) no-repeat 0px -112px; width:135px; border:none; height:37px; text-decoration:none;  cursor:pointer; display:inline-block; }
+.btn_do_api_login_hover{ background:url(../images/user_btn.gif) no-repeat 0px -149px; width:135px; border:none; height:37px; text-decoration:none;  cursor:pointer; display:inline-block; }
+.btn_do_api_login_active{ background:url(../images/user_btn.gif) no-repeat 0px -186px; width:135px; border:none; height:37px; text-decoration:none;  cursor:pointer; display:inline-block; }

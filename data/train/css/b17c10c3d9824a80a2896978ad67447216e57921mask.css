@@ -1,0 +1,82 @@
+.mask{
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background:rgba(0, 0, 0, 0.8);
+	z-index:100;
+}
+.mask-loading{
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background:rgba(255, 255, 255, 0.5);
+	z-index:100;
+}
+.mask-loading .rloading{
+	position: absolute;
+	width:100%;
+	height:90px;
+	top:50%;
+	margin-top:-50px;
+}
+.model-dialog{
+	position: absolute;
+	left:50%;
+	top:50%;
+	width:550px;
+	margin-left:-250px;
+	border-width:0;
+	background:#FFFFFF;
+	font-size:12px;
+}
+.horizontal-dialog{
+	padding:20px 0 10px 0;
+}
+.model-dialog .model-head{
+	padding: 0 10px;
+	background: #4b71c3;
+	height: 30px;
+	line-height: 30px;
+	color: #FFF;
+	text-shadow:none
+}
+.model-dialog .model-head .fa {
+  margin-top: 6px;
+  color: #fff;
+  font-size: 20px;
+}
+.model-dialog .model-foot{
+	padding:5px 15px;
+	background-color:#E4E4E4;
+	border-top:1px solid #CCCCCC;
+}
+.rloading-abs{
+	position:absolute;
+	width:100%;
+	top:50%;
+	height:60px;
+	margin-top:-30px;
+}
+.rloading-abs .fa-spinner{
+	margin-right:15px;
+	vertical-align: middle;
+}
+
+/*amaran*/
+.amaran.default {
+	background: #363c47;
+	background: -webkit-linear-gradient(left,#1b1e24,#1b1e24 15%,#363c47 15%,#363c47);
+	background: -webkit-gradient(linear,left top,right top,from(#1b1e24),color-stop(15%,#1b1e24),color-stop(15%,#363c47),to(#363c47));
+	background: linear-gradient(left,#1b1e24,#1b1e24 15%,#363c47 15%,#363c47);
+	color: #fff;
+	font-size: 13px;
+	font-weight: 300;
+	margin: 5px;
+	overflow: hidden;
+	border-bottom: 1px solid #1b1e24;
+	border-radius: 6px
+}

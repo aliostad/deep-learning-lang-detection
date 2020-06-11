@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceDefinitions>
+	<ServiceDefinition ServiceName="CreateSalesOrder" ServiceClass="com.openappengine.servicedef.order.CreateSalesOrderService" AggregateRoot="SalesHdr">
+	</ServiceDefinition>
+	<ServiceDefinition ServiceName="CreateParty" ServiceClass="com.openappengine.servicedef.party.CreatePartyService" AggregateRoot="Party">
+	</ServiceDefinition>
+	<ServiceDefinition ServiceName="GetCodes" ServiceClass="com.openappengine.servicedef.codes.GetCodesService" AggregateRoot="None">
+	</ServiceDefinition>
+	<ServiceDefinition ServiceName="AddInventory" ServiceClass="com.openappengine.servicedef.inventory.AddInventoryItemService" AggregateRoot="Inventory">
+	</ServiceDefinition>
+	<ServiceDefinition ServiceName="CreateItemMaster" ServiceClass="com.openappengine.servicedef.itemmaster.CreateItemMasterService" AggregateRoot="ItemMaster">
+	</ServiceDefinition>
+</ServiceDefinitions>

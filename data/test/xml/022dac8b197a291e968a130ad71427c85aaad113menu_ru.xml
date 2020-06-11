@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<catalogue xml:lang="ru">
+    <message key="About">О проекте</message>
+    <message key="Index">Содержание</message>
+    <message key="Changes">Изменения</message>
+    <message key="Todo">План</message>
+    <message key="Samples">Примеры</message>
+    <message key="Apache document">Страница документа Apache</message>
+    <message key="Static content">Статическое содержание</message>
+    <message key="Wiki page">Страница Wiki</message>
+    <message key="ihtml page">Страница ihtml</message>
+    <message key="ehtml page">Страница ehtml</message>
+    <message key="FAQ">Вопросы/Ответы</message>
+    <message key="Simplifed Docbook">Docbook страница</message>
+    <message key="XSP page">XSP страница</message>
+</catalogue>

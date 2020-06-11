@@ -1,0 +1,35 @@
+table.VideoGames td.wide {
+	width: 30%;
+}
+
+.rating
+{
+    width:8px;
+    height:16px;
+    float:left;    
+}
+#main
+{
+    width:80px; 
+    height:16px;    
+}
+[ng-model="rating"] {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-image: url(http://upload.wikimedia.org/wikipedia/commons/e/e5/Full_Star_Yellow.svg);
+	background-size: 100%;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+}
+
+[ng-model="rating"]:focus {
+	outline: none!important;
+}
+[ng-model="rating"]:checked ~ [ng-model="rating"] {
+	background-image: url(http://upload.wikimedia.org/wikipedia/commons/e/e7/Empty_Star.svg);
+}
+
+
+

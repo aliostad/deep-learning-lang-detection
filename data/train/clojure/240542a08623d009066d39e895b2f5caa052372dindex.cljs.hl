@@ -1,0 +1,166 @@
+(ns homepage.customers.index
+      (:require
+        [homepage.layout :refer [secondary-header] :as layout]
+        [homepage.image :as image]))
+
+(defc multinational
+  {:image-side :left
+   :screenshot1 "/images/customers/Graphic-Multinational.png"
+   :screenshot2 "/images/customers/Screenshot-Multinational.png"
+   :customer-logo1 "/images/customers/Fox.png"
+   :customer-logo2 "/images/customers/Schneider.png"
+   :title "The Multinational"
+   :challenge
+   "Having developed hundreds of apps over the past decade, your company now has
+   dozens of marketing and IT teams across the enterprise that often are not even
+   aware of each other's existence. Similar apps have been developed for different
+   parts of the world without sharing any insight into the successes and mistakes
+   made previously. Several apps were effectively abandoned when team structures
+   changed."
+   :solution
+   "Exicon supports the aggregation of all your company's existing mobile app assets.
+   Owners are identified, developers are contacted and source files are compiled into individual
+   repositories on the AppBoard platform. Data sources, both from stores and the apps themselves,
+   are integrated into the AppBoard for comparison and analysis. Competitor research from Exicon
+   established how your company's apps were performing in comparison to the outside market."
+   :result
+   "Marketing teams are able to strategically collaborate on the apps they build,
+   learn from each other's experience, and avoid duplicative work. Code loss is mitigated.
+   Without an IT bottleneck, app owners have direct access to all their analytics and the
+   AppBoard automatically lets them know when there are significant changes. Future app
+   development projects are managed with more care and insight, resulting in lower lifetime
+   costs."})
+
+(defc app-newbie
+  {:image-side :right
+   :screenshot1 "/images/customers/Graphic-AppNewbie.png"
+   :screenshot2 "/images/customers/Screenshot-AppNewbie.png"
+   :title "The App Newbie"
+   :challenge
+   "You know that a mobile app could help you engage more with your customers, but you aren't
+   sure how to get started. Can you trust the developers you find using a Google search? How much
+   should you expect to budget? How do I know if the app is actually helping my business?"
+   :solution
+   [(text "The AppBoard isn't only for existing apps, it supports you through the full App LifeCycle.
+         With Exicon's ") (a :href "/appbuilder/" "AppBuilder")
+    (text" you'll get help defining the app you need and Exicon
+         will send your requirements to three experienced developers with the qualifications you need. We
+         help you choose the proposal that makes the most sense for your requirements and negotiate a contract.
+         Exicon can even manage the project all the way to launch and set you up on the AppBoard for continued
+         maintenance.")]
+   :result
+   "Exicon has been matching customers and developers in successful app projects for over seven years.
+   Whether your idea is big or small, we can set you on the right path to success."})
+
+(defc advertising-agency
+  {:image-side :left
+   :screenshot1 "/images/customers/Graphic-Advertising.png"
+   :screenshot2 "/images/customers/Screenshot-Advertising.png"
+   :title "The Advertising Agency"
+   :challenge
+   "You have a strong relationship with your clients, but you know that changes coming in how
+   they approach marketing. Corporate spending on mobile apps continues to rise and their budgets are being
+   passed from the IT department over to marketing. Will your clients trust you to advise them on this part
+   of their business or will they look to another agency for their digital strategy?"
+   :solution
+   "By integrating the Exicon AppBoard into your array of services, you can instantly provide new
+   tools to your clients and add value to their business in newer ways. As a white-labeled platform, the AppBoard
+   can seamlessly blend into your existing offerings. Exicon's expertise is now yours to employ."
+   :result
+   "With new service offerings, your clients have more reason than ever to stick to your agency and expand
+   their business with you. The AppBoard also provides you with new opportunities to upsell services to clients and
+   build a closer relationship with them."})
+
+(defc mobile-apps-developer
+  {:image-side :right
+   :screenshot1 "/images/customers/Graphic-Development.png"
+   :screenshot2 "/images/customers/Screenshot-Development.png"
+   :title "The Mobile Apps Developers"
+   :challenge
+   "Your customers are always satisfied with your work, but your relationship with them tends to end as
+   soon as the app is launched."
+   :solution
+   "Exicon provides a reason for your clients to stick around. With the AppBoard, they'll
+   be more aware of their app's performance and ready to act when it's time to make improvements.
+   The AppBoard platform can also streamline your communication with corporate clients. Enterprises
+   with strict rules for software development can build their governance model into the AppBoard.
+   With all of the steps clearly laid out, you'll have less risk of the project being changed or
+   canceled late into development."
+   :result
+   "With a long-term relationship in place, you'll be in a better position to work with
+   your customers on future projects. You'll see the same data that they see and you'll be able
+   to proactively address any problems that arise."})
+
+(defc data-warehouse
+  {:image-side :left
+   :screenshot1 "/images/customers/Graphic-Warehouse.png"
+   :screenshot2 "/images/customers/Screenshot-Warehouse.png"
+   :title "The Data Warehouse"
+   :challenge
+   "You'd like to make it easier to get data to your customers, but you'd rather focus on your core
+   business than building and maintaining an app. Sometimes, it's better to let the rest of the world build your
+   apps for you. With the right content and a well-documented API, developers will compete with each other to
+   best represent your brand in app stores. But does this mean you lose insight into how your data is being used?"
+   :solution
+   "It doesn't have to. The AppBoard connects with API analytics as well. With an ApiAxle proxy server,
+   you can easily manage developer keys, rate-limit API calls, and collect analytics of your API usage. If you
+   do have an app portfolio, the API data sits on the AppBoard right next to the rest of your analytics."
+   :result
+   "Whether your company is connecting to consumers using apps or APIs, Exicon makes it easy to connect
+   all of your data sources into a common platform."})
+
+
+(defn customer [f]
+  (if (= (:image-side f) :left)
+
+    (div :class "page-details middle aligned two column doubling row"
+         (div :id (cell= (:anchor f)) :class "anchor")
+         (div :class "column left-image"
+              (image/elem :src (cell= (:screenshot1 f)))
+              (image/elem :src (cell= (:screenshot2 f))))
+         (div :class "column"
+              (h2 (:title f))
+              (h4 "Challenge")
+              (p (:challenge f))
+              (h4 "Solution")
+              (p (:solution f))
+              (h4 "Result")
+              (p (:result f))
+              (image/elem :class-opts "customer-logo" :src (cell= (:customer-logo1 f)))
+              (image/elem :class-opts "customer-logo" :src (cell= (:customer-logo2 f)))(br)(br)
+              (a :href "/pricing/"
+                 (div :class "ui button" "Get started now"))))
+
+    (div :class "page-details middle aligned two column doubling row"
+         (div :id (cell= (:anchor f)) :class "anchor")
+         (div :class "column"
+              (image/elem :class-opts "features-icon" :src (cell= (:icon f)))
+              (h2 (:title f))
+              (h4 "Challenge")
+              (p (:challenge f))
+              (h4 "Solution")
+              (p (:solution f))
+              (h4 "Result")
+              (p (:result f)) (br)(br)
+              (a :href "/pricing/"
+                 (div :class "ui button" "Get started now")))
+         (div :class "column right-image"
+              (image/elem :src (cell= (:screenshot1 f)))
+              (image/elem :src (cell= (:screenshot2 f)))))))
+
+
+(defn pg []
+  (layout/primary
+  :id "customers"
+  :page-title "Exicon Customers | Reviews | Testimonials"
+  :description "Global Fans Of Exicon's AppBoard, Products & Services"
+  :keywords "Exicon, Exicon Customers, Exicon Case Studies, Schneider Mobile, Glh Mobile, Standard Chartered Mobile, "
+  :page-css "index.inc.css"
+
+  (secondary-header :header "Customers")
+  (section :class "ui one column container grid"
+           (customer @multinational)
+           (customer @app-newbie)
+           (customer @advertising-agency)
+           (customer @mobile-apps-developer)
+           (customer @data-warehouse))))

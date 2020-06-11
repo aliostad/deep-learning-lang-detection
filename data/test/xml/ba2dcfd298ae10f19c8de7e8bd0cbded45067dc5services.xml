@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE SERVICES SYSTEM "services.dtd">
+<SERVICES>
+
+    <SERVICE NAME="DatabaseService" CLASS="net.contrapt.jeditutil.service.InfoTreeService">
+        net.contrapt.dhlp.jedit.DHLPlugin.getService();
+    </SERVICE>
+
+    <SERVICE NAME="DatabaseCompletionProvider" CLASS="net.contrapt.jeditutil.service.CompletionService">
+        net.contrapt.dhlp.jedit.DatabaseCompletionProvider.getInstance();
+    </SERVICE>
+
+   <SERVICE NAME="DatabaseStatusProvider" CLASS="net.contrapt.jeditutil.service.BufferStatusService">
+      net.contrapt.dhlp.jedit.DatabaseStatusService.getInstance();
+   </SERVICE>
+
+</SERVICES>

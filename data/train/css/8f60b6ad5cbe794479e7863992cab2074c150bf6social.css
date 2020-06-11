@@ -1,0 +1,84 @@
+.social-bookmarks-service a {
+	background-image:url(/images/icons2-off.png);
+	background-position:0 0;
+	background-repeat:no-repeat;
+	display:block;
+	height:16px;
+	text-indent:-5000px;
+	width:16px;
+	float: right;
+}
+
+.social-bookmarks-services:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;}
+.social-bookmarks-services{display:inline-block;}
+/*.social-bookmarks-label{color:#9D9EB0;vertical-align:middle;float:left;display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline;margin-right:8px;}*/
+.social-bookmarks-label{color:#dbdbdb;vertical-align:middle;float:left;display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline;margin-right:8px;}
+.social-bookmarks-service{float:left;height:16px;width:16px;margin:0px 2px 0px 0px;}
+
+.social-bookmarks-service-delicious a{background-position:0 -192px;}
+.social-bookmarks-service-digg a{background-position:0 -208px;}
+.social-bookmarks-service-netvibes a{background-position:0 -432px;}
+.social-bookmarks-service-twitter a{background-position:0 -704px;}
+.social-bookmarks-service-viadeo a{background-position:0 -720px;}
+.social-bookmarks-service-google_bookmarks a{background-position:0 -304px;}
+.social-bookmarks-service-linkedin a{background-position:0 -368px;}
+.social-bookmarks-service-facebook a{background-position:0 -256px;}
+.social-bookmarks-service-mail a{background-position:0 -865px;}
+
+.social-bookmarks-service-netvibes a:hover{background-position:0 -432px;background-image:url(/images/icons2.png);}
+.social-bookmarks-service-delicious a:hover{background-position:0 -192px;background-image:url(/images/icons2.png);}
+.social-bookmarks-service-digg a:hover{background-position:0 -208px;background-image:url(/images/icons2.png);}
+.social-bookmarks-service-twitter a:hover{background-position:0 -704px;background-image:url(/images/icons2.png);}
+.social-bookmarks-service-viadeo a:hover{background-position:0 -720px;background-image:url(/images/icons2.png);}
+.social-bookmarks-service-google_bookmarks a:hover{background-position:0 -304px;background-image:url(/images/icons2.png);}
+.social-bookmarks-service-linkedin a:hover{background-position:0 -368px;background-image:url(/images/icons2.png);}
+.social-bookmarks-service-facebook a:hover{background-position:0 -256px;background-image:url(/images/icons2.png);}
+.social-bookmarks-service-mail a:hover{background-position:0 -865px;background-image:url(/images/icons2.png);}
+
+.social-bookmarks-service-addtoany a{background-position:0 0px;}
+.social-bookmarks-service-ask a{background-position:0 -16px;}
+.social-bookmarks-service-bebo a{background-position:0 -32px;}
+.social-bookmarks-service-blinkbits a{background-position:0 -48px;}
+.social-bookmarks-service-blinklist a{background-position:0 -64px;}
+.social-bookmarks-service-bloglines a{background-position:0 -80px;}
+.social-bookmarks-service-blogmarks a{background-position:0 -96px;}
+.social-bookmarks-service-blogmemes a{background-position:0 -112px;}
+.social-bookmarks-service-bluedot a{background-position:0 -128px;}
+.social-bookmarks-service-bookmarks a{background-position:0 -144px;}
+.social-bookmarks-service-care2 a{background-position:0 -160px;}
+.social-bookmarks-service-connotea a{background-position:0 -176px;}
+.social-bookmarks-service-digg a{background-position:0 -208px;}
+.social-bookmarks-service-diigo a{background-position:0 -224px;}
+.social-bookmarks-service-dzone a{background-position:0 -240px;}
+.social-bookmarks-service-fark a{background-position:0 -272px;}
+.social-bookmarks-service-furl a{background-position:0 -288px;}
+.social-bookmarks-service-google_bookmarks a{background-position:0 -304px;}
+.social-bookmarks-service-hellotxt a{background-position:0 -320px;}
+.social-bookmarks-service-identica a{background-position:0 -336px;}
+.social-bookmarks-service-igoogle a{background-position:0 -352px;}
+.social-bookmarks-service-magnolia a{background-position:0 -384px;}
+.social-bookmarks-service-myspace a{background-position:0 -400px;}
+.social-bookmarks-service-netscape a{background-position:0 -416px;}
+.social-bookmarks-service-newsvine a{background-position:0 -464px;}
+.social-bookmarks-service-rawsugar a{background-position:0 -480px;}
+.social-bookmarks-service-reddit a{background-position:0 -496px;}
+.social-bookmarks-service-shoutwire a{background-position:0 -512px;}
+.social-bookmarks-service-simpy a{background-position:0 -528px;}
+.social-bookmarks-service-slashdot a{background-position:0 -544px;}
+.social-bookmarks-service-smarking a{background-position:0 -560px;}
+.social-bookmarks-service-sphere a{background-position:0 -576px;}
+.social-bookmarks-service-spurl a{background-position:0 -592px;}
+.social-bookmarks-service-squidoo a{background-position:0 -608px;}
+.social-bookmarks-service-stumbleupon a{background-position:0 -624px;}
+.social-bookmarks-service-swik a{background-position:0 -640px;}
+.social-bookmarks-service-tailrank a{background-position:0 -656px;}
+.social-bookmarks-service-tapemoi a{background-position:0 -672px;}
+.social-bookmarks-service-technorati a{background-position:0 -688px;}
+.social-bookmarks-service-wikio a{background-position:0 -736px;}
+.social-bookmarks-service-windows_live a{background-position:0 -752px;}
+.social-bookmarks-service-wists a{background-position:0 -768px;}
+.social-bookmarks-service-yahoo_bookmarks a{background-position:0 -784px;}
+.social-bookmarks-service-yahoo_buzz a{background-position:0 -800px;}
+.social-bookmarks-service-yahoo_feed a{background-position:0 -816px;}
+.social-bookmarks-service-yahoo_my_web a{background-position:0 -832px;}
+.social-bookmarks-service-yoolink a{background-position:0 -848px;}

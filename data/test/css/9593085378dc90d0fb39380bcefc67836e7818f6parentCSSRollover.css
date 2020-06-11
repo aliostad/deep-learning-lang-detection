@@ -1,0 +1,43 @@
+		*{
+			margin:0;
+			padding:0;
+			list-style-type:none;
+		}
+		#nav{
+			font-family:Arial,Sans-Serif;
+			font-size:.9em;
+			height:50px;
+			background:url(navbg.jpg) top left no-repeat #fff;
+			background-position:0 -100px;
+			padding-left:100px;
+			width:600px;
+			float:left;
+		}
+		#home #nav,#boundary #nav.item1{
+			background-position:0 0;
+		}
+		#docs #nav,#boundary #nav.item2{
+			background-position:0 -50px;
+		}
+		#products #nav,#boundary #nav.item3{
+			background-position:0 -100px;
+		}
+		#contact #nav,#boundary #nav.item4{
+			background-position:0 -150px;
+		}		
+		#nav li {
+			float:left;
+			padding:0 1em;
+			padding-top:15px;
+		}
+		#nav a,#nav strong{
+			font-weight:bold;
+			text-decoration:none;
+			text-transform:uppercase;
+			color:#333;
+			display:block;
+		}
+		#nav strong,#nav li.current a,#nav li a:hover{
+			display:block;
+			border-bottom:2px solid #666;
+		}

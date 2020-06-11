@@ -1,0 +1,95 @@
+/* zrt-cssregistry: */
+
+.model-image { 
+  padding-bottom: 1em;
+}
+
+.model-image a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.model-image span {
+  font-size: 80%;
+  color: black;
+  font-weight: normal;
+}
+
+.model-photosContainer {
+  text-align: center !important;
+  padding: 0 10px 10px 10px !important;
+  width: 130px;
+  background-color: contentBackgroundColor;
+}
+
+.model-imagesContainer  {
+  text-align: center !important;
+  padding: 10px ;
+  width: 130px;
+  background-color: contentBackgroundColor;
+}
+
+.model-rightBlock {
+  float: right;
+  background-color: contentBackgroundColor;
+}
+
+.model-leftBlock {
+  float: left;
+  margin-top: 20px;
+  margin-right: 10px;
+  background-color: contentBackgroundColor;
+}
+
+.model-singleImage {
+  height: 175px;
+  width: 143px;
+  padding: 20px 6px 0px 9px;
+  text-align: center;
+}
+
+.model-photoTitle {
+  color: discreetColor;
+  display: block;
+  font-size: fontSmallSize;
+  margin-bottom: 6px;
+}
+
+.model-photoBigTitle {
+  color: discreetColor;
+  display: block;
+  font-size: 110%;
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+
+.model-singleImage .model-photoTitle {
+  font-size: fontSmallSize; !important;
+  margin:0 !important;
+  padding-top:4px;
+  padding-left: 5px;
+  overflow: hidden;
+  width:130px;
+  height:20px;
+}
+
+/* centered block for small images */
+.model-imagesCenterBlock1 {
+  padding:10px;
+  width: 330px;
+  position:relative;
+  top:0;
+  left:50%;
+  margin-left:-180px;
+}
+
+/* centered block for big images */
+.model-imagesCenterBlock2 {
+  padding:10px;
+  width: 550px;
+  position:relative;
+  top:0;
+  left:50%;
+  margin-left:-290px;
+}

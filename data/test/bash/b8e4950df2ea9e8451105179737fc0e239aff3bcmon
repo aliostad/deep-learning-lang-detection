@@ -1,0 +1,55 @@
+#!/bin/bash
+#input
+temp=($(find /sys -name "temp*_input" 2>/dev/null))
+freq=($(find /sys -name "scaling_cur_freq" 2>/dev/null))
+gov=($(find /sys -name "scaling_governor" 2>/dev/null))
+hddtemp=$(sudo smartctl -A /dev/sda)
+hddtemp=(${hddtemp##*194})
+
+# cpu utilization calculation
+IFS=$'\n' # subscript is a line
+stat=($(< /proc/stat))
+IFS=$' \t\n' # subscript is a word
+cpu0=(${stat[1]})
+cpu1=(${stat[2]})
+declare -A previous="($(< /tmp/cpustat))"
+touch /tmp/cpustat
+# [1]=user [2]=nice [3]=sys [4]=idle [5]=iowait [6]=irq [7]=softirq
+load[0]=$((cpu0[1]+cpu0[2]+cpu0[3]+cpu0[5]+cpu0[6]+cpu0[7]))
+load[1]=$((cpu1[1]+cpu1[2]+cpu1[3]+cpu1[5]+cpu1[6]+cpu1[7]))
+printf "%s %s " [load0]=${load[0]} [total0]=$((load[0]+cpu0[4])) >/tmp/cpustat
+printf "%s %s\n" [load1]=${load[1]} [total1]=$((load[1]+cpu1[4])) >>/tmp/cpustat
+cpu[0]=$((100*(load[0]-previous[load0])/(load[0]+cpu0[4]-previous[total0])))
+cpu[1]=$((100*(load[1]-previous[load1])/(load[1]+cpu1[4]-previous[total1])))
+# load=(user+nice+sys+iowait+irq+softirq); total=(load+idle)
+# 100*(load-previous[load]) / (total-previous[total])
+
+#formatting
+s1=%7s
+s2=\\t%s
+
+i=0
+exec 2>/dev/null
+until [[ $i -eq ${#temp[@]} ]]
+do	label=$(< ${temp[$i]/input/label})
+	cur_freq=$(< ${freq[$i]})
+	cur_gov=$(< ${gov[$i]})
+	printf "$s1 $s1" "${label:-temp$i}:" $(( $(< ${temp[$i]})/1000 )),0��C
+	if [[ ! -z $cur_freq ]]
+	then	printf "$s2" ${cur_freq::1},${cur_freq:1:1}GHz
+		printf "%s $s2" @${cpu[$i]}% ${cur_gov}
+	fi
+	printf "\n"
+	((i++))
+done
+if grep -qs fglrx /proc/modules
+then	odgt=($(DISPLAY=:0 aticonfig --odgt))
+	odgt=${odgt[-2]/./,}
+	odgc=$(DISPLAY=:0 aticonfig --odgc)
+	odgc=(${odgc#*:})
+	printf "$s1 $s1" fglrx: ${odgt%0}��C
+printf "$s2 $s2 \n" "${odgc[0]}MHz@${odgc[-1]}" "Mem: ${odgc[1]}MHz"
+printf "$s1 $s1 \n" sda: ${hddtemp[8]},0��C
+df -h
+dmesg |tail
+fi

@@ -1,0 +1,76 @@
+#!/bin/sh /etc/rc.common
+# Copyright (C) 2007 X-Wrt.org
+
+START=98
+
+NAME=gmediaserver
+DAEMON="/usr/sbin/$NAME"
+RUN_D=/var/run
+PID_F=$RUN_D/$NAME.pid
+
+append_bool() {
+	local section="$1"
+	local option="$2"
+	local value="$3"
+	local _loctmp
+	config_get_bool _loctmp "$section" "$option"
+	[ "$_loctmp" -gt 0 ] && append args "$3"
+}
+
+append_parm() {
+	local section="$1"
+	local option="$2"
+	local switch="$3"
+	local default="$4"
+	local _loctmp
+	config_get _loctmp "$section" "$option"
+	[ -z "$_loctmp" ] && _loctmp="$default"
+	[ -n "$_loctmp" ] && append args "$switch$_loctmp"
+}
+
+start_service() {
+	local cfg="$1"
+	local enabled timestamp interface content_directory
+	config_get_bool enabled "$cfg" enabled 0
+	[ 0 -eq "$enabled" ] && return
+
+	args=""
+	append_parm "$cfg" friendlyname "--friendly-name=" OpenWrt
+	append_parm "$cfg" interface "--interface=" br0
+	append_bool "$cfg" disabletags "--disable-tags"
+	append_parm "$cfg" fscharset "--fs-charset="
+	append_parm "$cfg" devicecharset "--device-charset="
+	append_parm "$cfg" logcharset "--log-charset="
+	append_parm "$cfg" verbose "--verbose="
+	append_parm "$cfg" port "--port="
+	append_parm "$cfg" output "--output="
+	config_get timestamp "$cfg" timestamp
+	if [ -n "$timestamp" ]; then
+		if [ -n "$(echo "$timestamp" | sed 's/[^%]//g')" ]; then
+			append args "--timestamp=\"$timestamp\""
+		else
+			config_get_bool timestamp "$cfg" timestamp 0
+			if [ 1 -eq "$enabled" ]; then
+				append args "--timestamp"
+			else
+				append args "--no-timestamp"
+			fi
+		fi
+	fi
+	append_parm "$cfg" profile "--profile="
+	append_parm "$cfg" filetypes "--file-types="
+	append_parm "$cfg" expiretime "--expire-time="
+	config_get content_directory "$cfg" content_directory
+
+	$DAEMON --background --pid-file=$PID_F  $args "${content_directory:-/tmp}"
+}
+
+start() {
+	[ ! -d $RUN_D ] && mkdir -p $RUN_D
+	config_load gmediaserver
+	config_foreach start_service gmediaserver
+}
+
+stop() {
+	[ -f $PID_F ] && kill $(cat $PID_F)
+}

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transaction classpath="/engine/WEB-INF/trans_rules/classes/" evaluation="shortcut" name="stat-status-counts" type="statistic" xmlns="http://kalio.net/empweb/schema/transaction/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://kalio.net/empweb/schema/transaction/v1   ../../../../common/xml/schema/transaction/v1/empweb-transaction-1-0.xsd">
+
+  <environment>
+    <param name="env1">env1_value</param>
+  </environment>
+
+
+  <rule class="net.kalio.empweb.engine.rules.GetCurrentTransactionIds" name="GetCurrentTransactionIds">
+    <params>
+      <param name="useOperatorLocation">true</param>
+    </params>
+  </rule>
+
+  <rule class="net.kalio.empweb.engine.rules.GroovyInterpreter" name="Counts">
+    <params>
+      <param name="script">
+
+<![CDATA[
+
+onlyCounts = "true";
+
+transExtras= tc.get(TransactionContext.TRANSACTION_EXTRAS);
+if (transExtras != null) {
+  location = transExtras.get("operatorLocation");
+  onlyCounts = transExtras.get('onlyCounts');
+}
+
+finesCount         = 0;
+loansCount         = 0;
+lateLoansCount     = 0;
+reservationsCount  = 0;
+suspensionsCount   = 0;
+waitsCount         = 0;
+waitsAssignedCount = 0;
+
+currentIdsFines = tc.get('currentIdsFines');
+if (currentIdsFines != null) finesCount = currentIdsFines.size();
+
+currentIdsLoans = tc.get('currentIdsLoans');
+if (currentIdsLoans != null) loansCount = currentIdsLoans.size();
+
+currentIdsLateLoans = tc.get('currentIdsLateLoans');
+if (currentIdsLateLoans != null)  lateLoansCount = currentIdsLateLoans.size();
+
+currentIdsReservations = tc.get('currentIdsReservations');
+if (currentIdsReservations != null) reservationsCount = currentIdsReservations.size();
+
+currentIdsSuspensions = tc.get('currentIdsSuspensions');
+if (currentIdsSuspensions != null) suspensionsCount = currentIdsSuspensions.size();
+
+currentIdsWaits = tc.get('currentIdsWaits');
+if (currentIdsWaits != null) waitsCount = currentIdsWaits.size();
+
+currentIdsWaitsAssigned = tc.get('currentIdsWaitsAssigned');
+if (currentIdsWaitsAssigned != null) waitsAssignedCount = currentIdsWaitsAssigned.size();
+
+
+result.append("<values>");
+result.append("  <value name='location'>"+location+"</value>");
+result.append("  <value name='finesCount'>"+finesCount+"</value>");
+result.append("  <value name='loansCount'>"+loansCount+"</value>");
+result.append("  <value name='lateLoansCount'>"+lateLoansCount+"</value>");
+result.append("  <value name='reservationsCount'>"+reservationsCount+"</value>");
+result.append("  <value name='suspensionsCount'>"+suspensionsCount+"</value>");
+result.append("  <value name='waitsCount'>"+waitsCount+"</value>");
+result.append("  <value name='waitsAssignedCount'>"+waitsAssignedCount+"</value>");
+
+
+if ("true" != onlyCounts ) {
+
+  result.append("  <value name='finesIds'>");
+  for (item in currentIdsFines) { result.append("  <id>"+item+"</id>");}
+  result.append("  </value>");
+
+  result.append("  <value name='loansIds'>");
+  for (item in currentIdsLoans) { result.append("  <id>"+item+"</id>");}
+  result.append("  </value>");
+
+  result.append("  <value name='lateLoansIds'>");
+  for (item in currentIdsLateLoans) { result.append("  <id>"+item+"</id>");}
+  result.append("  </value>");
+
+  result.append("  <value name='reservationsIds'>");
+  for (item in currentIdsReservations) { result.append("  <id>"+item+"</id>");}
+  result.append("  </value>");
+
+  result.append("  <value name='suspensionsIds'>");
+  for (item in currentIdsSuspensions) { result.append("  <id>"+item+"</id>");}
+  result.append("  </value>");
+
+  result.append("  <value name='waitsIds'>");
+  for (item in currentIdsWaits) { result.append("  <id>"+item+"</id>");}
+  result.append("  </value>");
+
+  result.append("  <value name='waitsAssignedIds'>");
+  for (item in currentIdsWaitsAssigned) { result.append("  <id>"+item+"</id>");}
+  result.append("  </value>");
+
+}
+
+result.append("</values>");
+return true;
+
+]]>
+      </param>
+    </params>
+  </rule>
+</transaction>

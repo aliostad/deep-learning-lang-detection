@@ -1,0 +1,6 @@
+pandaseq -f Sample_EC1/EC1-R1-paired-trimmed.fastq.gz -r Sample_EC1/EC1-R2-paired-trimmed.fastq.gz -d rbfkms -u Sample_EC1/EC1-unpaired.fasta 2> Sample_EC1/EC1-assembledstat.txt 1> Sample_EC1/EC1-merged.fq
+pandaseq -f Sample_EC2/EC2-R1-paired-trimmed.fastq.gz -r Sample_EC2/EC2-R2-paired-trimmed.fastq.gz -d rbfkms -u Sample_EC2/EC2-unpaired.fasta 2> Sample_EC2/EC2-assembledstat.txt 1> Sample_EC2/EC2-merged.fq
+pandaseq -f Sample_EC3/EC3-R1-paired-trimmed.fastq.gz -r Sample_EC3/EC3-R2-paired-trimmed.fastq.gz -d rbfkms -u Sample_EC3/EC3-unpaired.fasta 2> Sample_EC3/EC3-assembledstat.txt 1> Sample_EC3/EC3-merged.fq
+pandaseq -f Sample_EC4/EC4-R1-paired-trimmed.fastq.gz -r Sample_EC4/EC4-R2-paired-trimmed.fastq.gz -d rbfkms -u Sample_EC4/EC4-unpaired.fasta 2> Sample_EC4/EC4-assembledstat.txt 1> Sample_EC4/EC4-merged.fq
+pandaseq -f Sample_EC5/EC5-R1-paired-trimmed.fastq.gz -r Sample_EC5/EC5-R2-paired-trimmed.fastq.gz -d rbfkms -u Sample_EC5/EC5-unpaired.fasta 2> Sample_EC5/EC5-assembledstat.txt 1> Sample_EC5/EC5-merged.fq
+pandaseq -f Sample_EC6/EC6-R1-paired-trimmed.fastq.gz -r Sample_EC6/EC6-R2-paired-trimmed.fastq.gz -d rbfkms -u Sample_EC6/EC6-unpaired.fasta 2> Sample_EC6/EC6-assembledstat.txt 1> Sample_EC6/EC6-merged.fq

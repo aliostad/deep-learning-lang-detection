@@ -1,0 +1,58 @@
+#!/bin/bash
+
+### BEGIN INIT INFO
+# Provides:          firewall
+# Required-Start:    $remote_fs
+# Required-Stop:     $remote_fs
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Start firewall daemon at boot time
+### END INIT INFO
+
+source /lib/lsb/init-functions
+
+SCRIPTBIN="/opt/firewall/firewall.sh"
+IPTABLESBIN="/sbin/iptables"
+IPTABLES_SAVE_BIN="/sbin/iptables-save"
+IPTABLES_RESTORE_BIN="/sbin/iptables-restore"
+IPTABLES_SAVE_FILE="/etc/default/iptables-rules"
+
+case "$1" in
+	save)
+		echo -n "Saving iptables state..."
+		"$IPTABLES_SAVE_BIN" > "$IPTABLES_SAVE_FILE"
+	;;
+	restore)
+		"$IPTABLES_RESTORE_BIN" < "$IPTABLES_SAVE_FILE"
+	;;
+	start)
+		log_begin_msg "Loading iptables state and starting firewall..."
+		$SCRIPTBIN
+		STATUS="$?"
+		if [ "$STATUS" -ne "0" ]
+		then
+			log_end_msg "$STATUS"
+		else
+			$0 save
+			$0 restore
+			log_end_msg "$?"
+		fi
+	;;
+	stop)
+		log_begin_msg "Stopping firewall..."
+		$SCRIPTBIN --flush
+		log_end_msg "$?"
+	;;
+	restart)
+		$0 stop 
+		$0 start 
+	;;
+	show)
+		$SCRIPTBIN --show ||exit 1
+	;;
+	*)
+		echo "Usage: $0 {start|stop|restart|save|restore|show}"
+		exit 1
+    ;;
+esac
+exit "$?"

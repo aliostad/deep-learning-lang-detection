@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//ibatis.apache.org//DTD SQL Map Config 2.0//EN"
+	"http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+
+<sqlMapConfig>
+	<settings cacheModelsEnabled="true" useStatementNamespaces="false" />
+	<sqlMap resource="mapping/user-mapping.xml"/>
+	<sqlMap resource="mapping/parking-mapping.xml"/>
+	<sqlMap resource="mapping/visitor-mapping.xml"/>
+	<sqlMap resource="mapping/visitRecord-mapping.xml"/>
+	<sqlMap resource="mapping/board-mapping.xml"/>
+	<sqlMap resource="mapping/comments-mapping.xml"/>
+	<sqlMap resource="mapping/managerDong-mapping.xml"/>
+	<sqlMap resource="mapping/family-mapping.xml"/>
+	<sqlMap resource="mapping/express-mapping.xml"/>
+	<sqlMap resource="mapping/flag-mapping.xml"/>
+	<sqlMap resource="mapping/tax-mapping.xml"/>
+	
+</sqlMapConfig>
+
+
+
+
+

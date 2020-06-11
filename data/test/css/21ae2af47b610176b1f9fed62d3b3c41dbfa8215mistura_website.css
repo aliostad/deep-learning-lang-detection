@@ -1,0 +1,26 @@
+#load-overlay{
+  position: fixed;
+  z-index: 1000000;
+  left: 0;
+  top: 0;
+  background: url(../images/overlay.png);
+  height: 100%;
+  width: 100%;
+}
+
+#load-overlay span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: white url(../images/loader.gif) no-repeat 6% 50%;
+  margin: -5% 0 0 -5%;
+  padding: 8px 12px 8px 30px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 1px 1px 10px #444;
+  -webkit-box-shadow: 1px 1px 10px #444;
+  box-shadow: 1px 1px 10px #444;
+  color: #5ca03e;
+  font-size: 70%;
+}

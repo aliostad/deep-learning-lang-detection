@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.igniterealtime.xiff.data.rpc"><apiName>org.igniterealtime.xiff.data.rpc</apiName><apiDetail/><apiClassifier id="org.igniterealtime.xiff.data.rpc:XMLRPC"><apiName>XMLRPC</apiName><shortdesc>
+	 Implements client side XML marshalling of methods and parameters into XMLRPC.</shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 Implements client side XML marshalling of methods and parameters into XMLRPC.
+	 	 </apiDesc></apiClassifierDetail><related-links><link href="http://xmpp.org/extensions/xep-0009.html"><linktext>http://xmpp.org/extensions/xep-0009.html</linktext></link><link href="http://www.xmlrpc.com/spec"><linktext>http://www.xmlrpc.com/spec</linktext></link></related-links><apiOperation id="org.igniterealtime.xiff.data.rpc:XMLRPC:fromXML"><apiName>fromXML</apiName><shortdesc>
+		 Extract and marshall the XML-RPC response to Flash types.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiStatic/><apiReturn><apiDesc>Mixed object of either an array of results from the method call or a fault.
+		 If the result is a fault, "result.isFault" will evaulate as true.
+		 </apiDesc><apiType value="Array"/></apiReturn><apiParam><apiItemName>xml</apiItemName><apiType value="XML"/><apiDesc>The XML containing the message response
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Extract and marshall the XML-RPC response to Flash types.
+		 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.igniterealtime.xiff.data.rpc:XMLRPC:toXML"><apiName>toXML</apiName><shortdesc>
+		 The marshalling process, accepting a block of XML, a string description of the remote method,
+		 and an array of flash type parameters.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiStatic/><apiReturn><apiDesc>XML containing the XML marshalled result
+		 </apiDesc><apiType value="XML"/></apiReturn><apiParam><apiItemName>parent</apiItemName><apiType value="XML"/></apiParam><apiParam><apiItemName>method</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>params</apiItemName><apiType value="Array"/></apiParam></apiOperationDef><apiDesc>
+		 The marshalling process, accepting a block of XML, a string description of the remote method,
+		 and an array of flash type parameters.
+		 		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.igniterealtime.xiff.data.rpc:RPCExtension"><apiName>RPCExtension</apiName><shortdesc>
+	 Implements XEP-0009 for XML-RPC over XMPP.</shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.igniterealtime.xiff.data:IExtension</apiBaseInterface><apiBaseClassifier>org.igniterealtime.xiff.data:Extension</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 Implements XEP-0009 for XML-RPC over XMPP.
+	 	 <p>The protocol supports all syntax and semantics of XML-RPC except
+	 that it uses XMPP instead of HTTP as the underlying transport.</p>
+	 	 </apiDesc></apiClassifierDetail><related-links><link href="http://xmpp.org/extensions/xep-0009.html"><linktext>http://xmpp.org/extensions/xep-0009.html</linktext></link></related-links><apiConstructor id="org.igniterealtime.xiff.data.rpc:RPCExtension:RPCExtension"><apiName>RPCExtension</apiName><shortdesc>
+		 		 </shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>parent</apiItemName><apiType value="XML"/><apiData>null</apiData><apiDesc>(Optional) The containing XML for this extension
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.igniterealtime.xiff.data.rpc:RPCExtension:call"><apiName>call</apiName><shortdesc>
+		 Place the remote call.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>methodName</apiItemName><apiType value="String"/><apiDesc>The name of the remote procedure to call
+		 </apiDesc></apiParam><apiParam><apiItemName>params</apiItemName><apiType value="Array"/><apiDesc>A collection of parameters of any type
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Place the remote call.  This method serializes the remote procedure call to XML.
+		 The call will be made on the remote machine when the stanza containing this extension is sent to the server.
+		 		 If this extension is being returned, then check the result property instead.
+		 		 </apiDesc></apiOperationDetail><related-links><link href="org.igniterealtime.xiff.data.rpc.xml#RPCExtension/result"><linktext>result</linktext></link></related-links></apiOperation><apiOperation id="org.igniterealtime.xiff.data.rpc:RPCExtension:getElementName"><apiName>getElementName</apiName><shortdesc>
+		 Interface method, returning the namespace for this extension
+		 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 Interface method, returning the namespace for this extension
+		 		 </apiDesc></apiOperationDetail><related-links><link href="org.igniterealtime.xiff.data.xml#IExtension"><linktext>org.igniterealtime.xiff.data.IExtension</linktext></link></related-links></apiOperation><apiOperation id="org.igniterealtime.xiff.data.rpc:RPCExtension:getNS"><apiName>getNS</apiName><shortdesc>
+		 Interface method, returning the namespace for this extension
+		 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 Interface method, returning the namespace for this extension
+		 		 </apiDesc></apiOperationDetail><related-links><link href="org.igniterealtime.xiff.data.xml#IExtension"><linktext>org.igniterealtime.xiff.data.IExtension</linktext></link></related-links></apiOperation><apiValue id="org.igniterealtime.xiff.data.rpc:RPCExtension:ELEMENT_NAME"><apiName>ELEMENT_NAME</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>query</apiData><apiType value="String"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.igniterealtime.xiff.data.rpc:RPCExtension:NS"><apiName>NS</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>jabber:iq:rpc</apiData><apiType value="String"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.igniterealtime.xiff.data.rpc:RPCExtension:faultCode:get"><apiName>faultCode</apiName><shortdesc>
+		 A common result from most RPC servers to describe a fault
+		 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Number"/></apiValueDef><apiDesc>
+		 A common result from most RPC servers to describe a fault
+		 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.igniterealtime.xiff.data.rpc:RPCExtension:faultString:get"><apiName>faultString</apiName><shortdesc>
+		 A common result from most RPC servers to describe a fault
+		 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 A common result from most RPC servers to describe a fault
+		 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.igniterealtime.xiff.data.rpc:RPCExtension:fault:get"><apiName>fault</apiName><shortdesc>
+		 The object containing the fault of the remote procedure call.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Object"/></apiValueDef><apiDesc>
+		 The object containing the fault of the remote procedure call.
+		 This object could have any properties, as fault results are only structurally defined.
+		 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.igniterealtime.xiff.data.rpc:RPCExtension:isFault:get"><apiName>isFault</apiName><shortdesc>
+		 Check this if property if you wish to determine the remote procedure call produced an error.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Boolean"/></apiValueDef><apiDesc>
+		 Check this if property if you wish to determine the remote procedure call produced an error.
+		 If the XMPP stanza never made it to the RPC service, then the error would be on the
+		 stanza object instead of this extension.
+		 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.igniterealtime.xiff.data.rpc:RPCExtension:result:get"><apiName>result</apiName><shortdesc>
+		 The result of this remote procedure call.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Array"/></apiValueDef><apiDesc>
+		 The result of this remote procedure call.  It can contain elements of any type.
+		 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.igniterealtime.xiff.data.rpc:RPCExtension:xml:set"><apiName>xml</apiName><shortdesc>
+		 Interface method, returning the namespace for this extension
+		 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiIsOverride/><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="XML"/></apiValueDef><apiDesc>
+		 Interface method, returning the namespace for this extension
+		 		 </apiDesc></apiValueDetail><related-links><link href="org.igniterealtime.xiff.data.xml#INodeProxy"><linktext>org.igniterealtime.xiff.data.INodeProxy</linktext></link></related-links></apiValue></apiClassifier></apiPackage>

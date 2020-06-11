@@ -1,0 +1,81 @@
+/*--------------------------------------私信编写样式--------------------------------*/
+/*-------------------------message creating------------------*/
+#message-creating {
+}
+
+#message-creating .message-container {
+  margin-top: 4em;
+  width: 60%;
+}
+
+#message-creating select, #message-creating input {
+  display: inline-block;
+}
+
+
+
+/*------------------receiver add---------------------*/
+#message-creating .receiver-add {
+  margin-bottom: 1em;
+}
+
+
+#message-creating .receiver-add button {
+
+  width: 100%;
+  float: right;
+
+}
+
+
+/*------------------receiver list box -----------------*/
+/*
+#message-creating .receiver-list-box {
+  margin-bottom: 1.5em;
+  border: 1px dashed #aaa;
+
+}
+
+#message-creating .receiver-list-box ul {
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 1em 2em 1em 2em;
+
+}
+
+#message-creating .receiver-list-box ul>li {
+  padding: 3px 5px 3px 5px;
+  border-radius: 4px;
+  float: left;
+  margin-right: .8em;
+  margin-bottom: .5em;
+  background-color: #cbdeee;
+  border: 1px solid #c2d4e3;
+
+
+}
+
+#message-creating .receiver-list-box ul>li .receiver-name {
+  color: #333;
+  padding-right: 4px;
+}
+
+#message-creating .receiver-list-box ul>li .close-button {
+  font-size: 17px;
+
+
+}*/
+
+/*-------------------message----------------------------*/
+#message-creating .message>* {
+  margin-bottom: 1em;
+}
+
+#message-creating .message .button-group button {
+  width: 8em;
+}
+
+#message-creating .message .button-group .submit {
+  margin-right: 3em;
+}

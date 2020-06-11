@@ -1,0 +1,43 @@
+.api-ui-menu{
+    position:fixed;
+    z-index:9999;
+    width: 200px;
+    right:0;
+    top:0;
+    text-align:left;
+    font-size:11px;
+    background-color:white;
+    opacity:0.8;
+}
+.api-data-content{
+    position:fixed;
+    z-index:9990;
+    max-height: 600px;
+    max-width: 1000px;
+    left:0;
+    top:0;
+    text-align:left;
+    font-size:11px;
+    background-color:white;
+    overflow:auto;
+    border:2px solid green
+}
+.api-data-content tr.selected td{
+    border: 1px solid red;
+}
+.api-ui-menu dt:hover{
+    background-color:grey;
+}
+.api-ui-menu .section_options.cols_2 div,
+.api-ui-menu .section_options.cols_2 span{
+    width: 50%;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+.api-ui-menu .section_options.cols_2 br{
+    clear: both;
+    font: 0/0 arial;
+    height: 0;
+    visibility: hidden;
+}

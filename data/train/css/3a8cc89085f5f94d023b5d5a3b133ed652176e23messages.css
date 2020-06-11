@@ -1,0 +1,52 @@
+.message{
+    margin-top:10px;
+    position:relative;
+    min-height:50px;
+//    border-radius:5px;
+    border:1px solid;
+}
+.message i{
+    height:30px;
+    line-height:30px;
+    width:30px;
+    text-align:center;
+    margin:9px 0 0 10px;
+    color:#fff;
+    position:absolute;
+    border-radius:5px;
+}
+.message .text{
+    padding:13px;
+    display:inline-block;
+    margin-left:45px;
+}
+.message.hint{
+    background-color:#D3EEFF;
+    border-color:#B8D1DF;
+}
+.message.hint i{
+    background-color:#55C0E7;
+}
+.message.hint .text{
+    color:#345574;
+}
+.message.error{
+    background-color:#FFD3D3;
+    border-color:#D7A9A9;
+}
+.message.error i{
+    background-color:#E75555;
+}
+.message.error .text{
+    color:#743434;
+}
+.message.warning{
+    background-color:#FFF3D3;
+    border-color:#ECDD93;
+}
+.message.warning i{
+    background-color:#E7B355;
+}
+.message.warning .text{
+    color:#746734;
+}

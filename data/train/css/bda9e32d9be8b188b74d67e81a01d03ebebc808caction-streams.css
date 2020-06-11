@@ -1,0 +1,90 @@
+.action-stream-header {
+    margin:  1em 0 .25em;
+}
+
+.action-stream-list {
+    margin-left: 0px;
+    padding-left: 5px;
+    list-style-type: none;
+}
+
+.action-stream-list li {
+    margin: 0 0 .5em;
+}
+
+.service-icon {
+    display: block;
+    overflow: hidden;
+    background: transparent url(http://mikeenglish.net/icons/other.png) no-repeat;
+    padding-left: 20px;
+    min-height: 18px;
+    min-width: 16px;
+}
+
+.service-website { background-image: url(http://mikeenglish.net/icons/website.png); }
+
+.service-brightkite { background-image: url(http://mikeenglish.net/icons/brightkite.png); }
+.service-cocomment { background-image: url(http://mikeenglish.net/icons/cocomment.png); }
+.service-oneup { background-image: url(http://mikeenglish.net/icons/oneup.png); }
+.service-fortythreethings { background-image: url(http://mikeenglish.net/icons/fortythreethings.png); }
+.service-aim { background-image: url(http://mikeenglish.net/icons/aim.png); }
+.service-bebo { background-image: url(http://mikeenglish.net/icons/bebo.png); }
+.service-catster { background-image: url(http://mikeenglish.net/icons/catster.png); }
+.service-claimid { background-image: url(http://mikeenglish.net/icons/claimid.png); }
+/*.service-deadjournal { background-image: url(http://mikeenglish.net/icons/deadjournal.png); }*/
+.service-delicious { background-image: url(http://mikeenglish.net/icons/delicious.png); }
+.service-digg { background-image: url(http://mikeenglish.net/icons/digg.png); }
+.service-dodgeball { background-image: url(http://mikeenglish.net/icons/dodgeball.png); }
+.service-dogster { background-image: url(http://mikeenglish.net/icons/dogster.png); }
+.service-dopplr { background-image: url(http://mikeenglish.net/icons/dopplr.png); }
+.service-facebook { background-image: url(http://mikeenglish.net/icons/facebook.png); }
+.service-flickr { background-image: url(http://mikeenglish.net/icons/flickr.png); }
+.service-gametap { background-image: url(http://mikeenglish.net/icons/gametap.png); }
+.service-goodreads { background-image: url(http://mikeenglish.net/icons/goodreads.png); }
+.service-googlereader { background-image: url(http://mikeenglish.net/icons/googlereader.png); }
+.service-gtalk { background-image: url(http://mikeenglish.net/icons/gtalk.png); }
+.service-hi5 { background-image: url(http://mikeenglish.net/icons/hi5.png); }
+.service-iconbuffet { background-image: url(http://mikeenglish.net/icons/iconbuffet.png); }
+.service-icq { background-image: url(http://mikeenglish.net/icons/icq.png); }
+.service-iusethis { background-image: url(http://mikeenglish.net/icons/iusethis.png); }
+.service-jabber { background-image: url(http://mikeenglish.net/icons/jabber.png); }
+.service-jaiku { background-image: url(http://mikeenglish.net/icons/jaiku.png); }
+.service-lastfm { background-image: url(http://mikeenglish.net/icons/lastfm.png); }
+.service-linkedin { background-image: url(http://mikeenglish.net/icons/linkedin.png); }
+/*.service-livedoor { background-image: url(http://mikeenglish.net/icons/livedoor.png); }*/
+.service-livejournal { background-image: url(http://mikeenglish.net/icons/livejournal.png); }
+.service-magnolia { background-image: url(http://mikeenglish.net/icons/magnolia.png); }
+.service-mog { background-image: url(http://mikeenglish.net/icons/mog.png); }
+.service-msn { background-image: url(http://mikeenglish.net/icons/msn.png); }
+.service-multiply { background-image: url(http://mikeenglish.net/icons/multiply.png); }
+.service-myspace { background-image: url(http://mikeenglish.net/icons/myspace.png); }
+.service-newsvine { background-image: url(http://mikeenglish.net/icons/newsvine.png); }
+.service-ning { background-image: url(http://mikeenglish.net/icons/ning.png); }
+.service-ohloh { background-image: url(http://mikeenglish.net/icons/ohloh.png); }
+.service-orkut { background-image: url(http://mikeenglish.net/icons/orkut.png); }
+.service-pandora { background-image: url(http://mikeenglish.net/icons/pandora.png); }
+.service-pownce { background-image: url(http://mikeenglish.net/icons/pownce.png); }
+.service-reddit { background-image: url(http://mikeenglish.net/icons/reddit.png); }
+.service-skype { background-image: url(http://mikeenglish.net/icons/skype.png); }
+.service-smugmug { background-image: url(http://mikeenglish.net/icons/smugmug.png); }
+.service-sonicliving { background-image: url(http://mikeenglish.net/icons/sonicliving.png); }
+.service-steam { background-image: url(http://mikeenglish.net/icons/steam.png); }
+.service-stumbleupon { background-image: url(http://mikeenglish.net/icons/stumbleupon.png); }
+.service-tabblo { background-image: url(http://mikeenglish.net/icons/tabblo.png); }
+.service-technorati { background-image: url(http://mikeenglish.net/icons/technorati.png); }
+.service-tribe { background-image: url(http://mikeenglish.net/icons/tribe.png); }
+.service-twitter { background-image: url(http://mikeenglish.net/icons/twitter.png); }
+.service-uncrate { background-image: url(http://mikeenglish.net/icons/uncrate.png); }
+.service-upcoming { background-image: url(http://mikeenglish.net/icons/upcoming.png); }
+.service-virb { background-image: url(http://mikeenglish.net/icons/virb.png); }
+.service-vox { background-image: url(http://mikeenglish.net/icons/vox.png); }
+.service-wordpress { background-image: url(http://mikeenglish.net/icons/wordpress.png); }
+.service-xboxlive { background-image: url(http://mikeenglish.net/icons/xboxlive.png); }
+.service-yahoo { background-image: url(http://mikeenglish.net/icons/yahoo.png); }
+.service-youtube { background-image: url(http://mikeenglish.net/icons/youtube.png); }
+.service-zooomr { background-image: url(http://mikeenglish.net/icons/zooomr.png); }
+
+.service-friendfeed { background-image: url(http://mikeenglish.net/icons/friendfeed.png); }
+
+
+.action-stream-list .hentry abbr.published {display:none;}

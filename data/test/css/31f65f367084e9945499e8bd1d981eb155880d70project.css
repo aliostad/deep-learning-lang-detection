@@ -1,0 +1,59 @@
+p {
+    line-height: 1.4em;
+}
+h1 {
+    font-size: 64px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+.download-list {
+    margin-left: 42px;
+}
+.download-list li {
+    list-style-type: disc;
+}
+
+#profile-image {
+    border: 3px solid #EEEEEE;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    float: left;
+    margin-right: 16px;
+}
+#api {
+    list-style: none;
+    padding: 0;
+}
+#api li {
+    padding: 10px 0;
+}
+#api li:first-child {
+    padding-top: 0;
+}
+#api li {
+    border-bottom: 1px solid #AEAEAE;
+}
+#api li:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+#api p {
+   margin: 0;
+   margin-top: 5px;
+}
+#browsers {
+    padding-left: 20px;
+    font-size: 15px;
+}
+#browsers li {
+    line-height: 1.4em;
+}
+.separator {
+    border-top: 1px solid #AEAEAE;
+    margin: 30px 0;
+}
+.fuse-checkbox {
+    margin-left: 15px;
+    margin-right: 5px;
+}

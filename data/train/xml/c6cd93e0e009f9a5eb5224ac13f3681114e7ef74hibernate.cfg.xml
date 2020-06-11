@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/ssase13</property>
+    <property name="hibernate.connection.username">postgres</property>
+    <property name="hibernate.connection.password">hiei4e9fuF6G</property>
+    <mapping resource="entities/Student.hbm.xml"/>
+    <mapping resource="entities/Relationship.hbm.xml"/>
+    <mapping resource="entities/Hobby.hbm.xml"/>
+    <mapping resource="entities/Interest.hbm.xml"/>
+    <mapping/>
+    <mapping/>
+    <mapping resource="entities/Hug.hbm.xml"/>
+    <mapping/>
+    <mapping/>
+    <mapping resource="/AlienUser.hbm.xml"/>
+    <mapping/>
+    <mapping resource="/AlienRelation.hbm.xml"/>
+    <mapping/>
+    <mapping/>
+    <mapping resource="/AlienUser.hbm.xml"/>
+    <mapping/>
+    <mapping resource="/AlienRelation.hbm.xml"/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping resource="/AlienRelation.hbm.xml"/>
+    <mapping/>
+    <mapping/>
+    <mapping resource="/AlienUser.hbm.xml"/>
+    <mapping/>
+    <mapping resource="/AlienRelation.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,120 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font:100% arial,sans-serif;
+}
+a {
+    text-decoration:none;
+    color:#00F;
+}
+div#ribbon {
+    width:100%;
+    padding-top:6px;
+    padding-bottom:4px;
+    text-align:left;
+    background:#EEE;
+    border-bottom:1px solid #000;
+}
+div#ribbon span {
+    padding:0 16px 0 16px;
+}
+div#ribbon .icon {
+    width:16px;
+    height:16px;
+}
+div#ribbon a, a:link, a:visited, a:hover, a:active {
+    color:#00B;
+    text-decoration:none;
+    font-weight:bold;
+}
+#container {
+    width:700px;
+    margin: 0 auto;
+    text-align:center;
+}
+div#header {
+    position:relative;
+    margin-top:16px;
+    text-align:center;
+}
+div#header .title {
+    font-weight:bold;
+    font-size:180%;
+}
+#content {
+    text-align:left;
+}
+.toc .title {
+    background-color:#F0F0F0;
+    border:1px solid #DDD;
+    width:100%;
+    padding:5px;
+    font-size:120%;
+}
+.api {
+    margin-top:16px;
+}
+.api .title {
+    background-color:#F0F0F0;
+    border:1px solid #DDD;
+    width:100%;
+    padding:5px;
+}
+.api div {
+    margin-bottom:4px;
+}
+.api .url {
+    font-size:120%;
+}
+.api .desc {
+    padding: 5px;
+    margin-left:8px;
+}
+.api .params {
+    margin-left:8px;
+}
+.api .params table {
+    border-collapse:collapse;
+    margin:5px;
+}
+.api .params table th {
+    background-color:#F0F0F0;
+    border:1px solid #DDD;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:8px;
+    padding-right:8px;
+    text-align:left;
+    color:#777;
+}
+.api .params table td {
+    border:1px solid #DDD;
+    color:#000;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:8px;
+    padding-right:8px;
+}
+.api .examples {
+    margin-left:8px;
+}
+.api .examples .example {
+    maring-left:16px;
+}
+.api .examples .exampleUrl {
+    margin-left:8px;
+
+}
+.exampleUrl a, a:link, a:visited, a:hover, a:active {
+    color:#00B;
+    text-decoration:none;
+    font-weight:normal;
+}
+.separator {
+    line-height:1px;
+    margin-top:16px;
+    margin-bottom:16px;
+    border-bottom:1px solid #BBB;
+}

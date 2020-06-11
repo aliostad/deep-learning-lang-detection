@@ -1,0 +1,23 @@
+#!/bin/bash
+
+"./xyz" -model TASK4 ../data/augerat-r/P/P-n016-k08.xml
+"./xyz" -model TASK4 ../data/augerat-r/P/P-n019-k02.xml
+"./xyz" -model TASK4 ../data/augerat-r/P/P-n020-k02.xml
+"./xyz" -model TASK4 ../data/augerat-r/P/P-n021-k02.xml
+"./xyz" -model TASK4 ../data/augerat-r/P/P-n022-k02.xml
+"./xyz" -model TASK4 ../data/augerat-r/P/P-n022-k08.xml
+
+"./xyz" -model TASK4 ../data/augerat-r/P/P-n023-k08.xml
+
+"./xyz" -model TASK4 ../data/augerat-r/P/P-n040-k05.xml
+
+"./xyz" -model TASK4 ../data/augerat-r/P/P-n045-k05.xml
+
+"./xyz" -model TASK4 ../data/augerat-r/P/P-n050-k07.xml
+"./xyz" -model TASK4 ../data/augerat-r/P/P-n050-k08.xml
+"./xyz" -model TASK4 ../data/augerat-r/P/P-n050-k10.xml
+"./xyz" -model TASK4 ../data/augerat-r/P/P-n051-k10.xml
+"./xyz" -model TASK4 ../data/augerat-r/P/P-n055-k07.xml
+"./xyz" -model TASK4 ../data/augerat-r/P/P-n055-k08.xml
+"./xyz" -model TASK4 ../data/augerat-r/P/P-n055-k10.xml
+"./xyz" -model TASK4 ../data/augerat-r/P/P-n055-k15.xml

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+CodeSense Libraries simply define lists of completions, categorized by keys. They don't define any criteria for when they should be used; this is the domain of a CodeSense Provider.
+
+-->
+<codesense version="1.0">
+	
+	<set name="com.digikev.xslt.builtins.templates">
+		<behavior>
+			<append-dynamic>
+				<matched-suffix>(\s*:)|[^:]</matched-suffix>
+				<transform-into>(?1::>$0&lt;/${completion}>)</transform-into>
+			</append-dynamic>
+			<confirm-partial characters="<xsl" />
+		</behavior>
+		
+		<completion string="xsl:apply-templates">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*:)|[^:]</matched-suffix>
+					<transform-into>(?1:: select="$1">${2}&lt;/xsl:apply-templates>$0)</transform-into>
+				</append-dynamic>
+				<confirm-partial characters="<xsl" />
+			</behavior>
+		</completion>
+	</set>
+	
+	<set name="com.digikev.xslt.tags">
+	
+		<!-- Default behavior -->
+		<behavior>
+			<append-dynamic>
+				<matched-suffix>(\s*:)|[^:]</matched-suffix>
+				<transform-into>(?1::>$0&lt;/${completion}>)</transform-into>
+			</append-dynamic>
+		</behavior>
+		
+		<completion string="xsl:attribute">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*:)|[^:]</matched-suffix>
+					<transform-into>(?1:: name="$1"${2: namespace="$3"}&lt;/xsl:attribute>$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string="xsl:attribute-set">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*:)|[^:]</matched-suffix>
+					<transform-into>(?1:: name="$1"${2: use-attribute-sets="$3"}&lt;/xsl:attribute-set>$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string="xsl:call-template">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*:)|[^:]</matched-suffix>
+					<transform-into>(?1:: name="$1" ${2}&lt;/xsl:call-template>$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+	</set>
+	
+	<set name="com.digikev.xslt.tags.self-closing">
+		
+		<behavior>
+			<append-static> /></append-static>
+		</behavior>
+		
+		<completion string="xsl:jibble" />
+		<completion string="xsl:flibble" />
+		
+	</set>
+	
+</codesense>

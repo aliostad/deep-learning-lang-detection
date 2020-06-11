@@ -1,0 +1,62 @@
+/* Template: Appster | Author: eriktailor | Version: 1.1.0  */
+/*----------------------------------------------------------*/
+
+.zoomer-frame {filter: alpha(opacity=100);}
+.showcase .showcase-model.bgimgdiv {filter: alpha(opacity=100);}
+.showcase .showcase-model.clouddiv {filter: alpha(opacity=100);}
+.showcase .showcase-model.cloudicon {filter: alpha(opacity=100);}
+.showcase .showcase-model.headingtxtdiv {filter: alpha(opacity=100);}
+.showcase .showcase-model.textparagraph {filter: alpha(opacity=100);}
+.showcase .showcase-model.imguserbg {filter: alpha(opacity=100);}
+.showcase .showcase-model.userimg1 {filter: alpha(opacity=100);}
+.showcase .showcase-model.userimg2 {filter: alpha(opacity=100);}
+.showcase .showcase-model.task1{filter: alpha(opacity=100);}
+.showcase .showcase-model.task3 {filter: alpha(opacity=100);}
+.showcase .showcase-model.task2 {filter: alpha(opacity=100);}
+.showcase .showcase-model.Data1 {filter: alpha(opacity=100);}
+.showcase .showcase-model.Data2 {filter: alpha(opacity=100);}
+.showcase .showcase-model.Data2 {filter: alpha(opacity=100);}
+.showcase .showcase-model.headingtext1 {filter: alpha(opacity=100);}
+.showcase .showcase-model.headingtext1bottom {filter: alpha(opacity=100);}
+.showcase .showcase-model.ptextcontaint {filter: alpha(opacity=100);}
+.showcase .showcase-model.leftanimation {filter: alpha(opacity=100);}
+.showcase .showcase-model.headerdiv {filter: alpha(opacity=100);}
+.showcase .showcase-model.Excel {filter: alpha(opacity=100);}
+.showcase .showcase-model.leftdata {filter: alpha(opacity=100);}
+.showcase .showcase-model.rightdata {filter: alpha(opacity=100);}
+.showcase .showcase-model.bottomdata {filter: alpha(opacity=100);}
+.showcase .showcase-model.aboutheader {filter: alpha(opacity=100);}
+.showcase .showcase-model.bg {filter: alpha(opacity=100);}
+
+
+
+.showcase .img{filter: alpha(opacity=100);}
+.showcase .showcase-model.h2 {filter: alpha(opacity=100);}
+.showcase .text {filter: alpha(opacity=100);}
+.showcase .textp {filter: alpha(opacity=100);}
+
+
+.showcase .sendbtn{filter: alpha(opacity=100);}
+.carousel-model {filter: alpha(opacity=100);}
+.magnifier {filter: alpha(opacity=100);}
+.zoomer-bg .overlay {filter: alpha(opacity=80);}
+.screenshot {filter: alpha(opacity=0);}
+.screenshot:hover .overlay {filter: alpha(opacity=90);}
+.screenshot-zoom {filter: alpha(opacity=0);}
+.screenshot .overlay {filter: alpha(opacity=0);}
+.screenshot:hover .screenshot-zoom {filter: alpha(opacity=100);}
+.testimonials .overlay {filter: alpha(opacity=90);}
+.twitter-feed .overlay {filter: alpha(opacity=85);}
+.price-table {filter: alpha(opacity=0);}
+.call-to-action .overlay {filter: alpha(opacity=80);}
+.call-to-action .button {filter: alpha(opacity=0);}
+
+.margintop, .socialicon { display:block !important; height:125px !important;}
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/bdmatricula</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">rooot</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.current_session_context_class">thread</property>
+		<property name="hibernate.connection.pool_size">1</property>
+
+		<mapping resource="mapping/Alumno.hbm.xml" />
+		<mapping resource="mapping/AnhoEscolar.hbm.xml" />
+		<mapping resource="mapping/Apoderado.hbm.xml" />
+		<mapping resource="mapping/Asignacion.hbm.xml" />
+		<mapping resource="mapping/Aula.hbm.xml" />
+		<mapping resource="mapping/Colegio.hbm.xml" />
+		<mapping resource="mapping/Curso.hbm.xml" />
+		<mapping resource="mapping/Docente.hbm.xml" />
+		<mapping resource="mapping/Grado.hbm.xml" />
+		<mapping resource="mapping/Horario.hbm.xml" />
+		<mapping resource="mapping/Matricula.hbm.xml" />
+		<mapping resource="mapping/Notas.hbm.xml" />
+		<mapping resource="mapping/Parentesco.hbm.xml" />
+		<mapping resource="mapping/Rol.hbm.xml" />
+		<mapping resource="mapping/RolUsuario.hbm.xml" />
+		<mapping resource="mapping/Seccion.hbm.xml" />
+		<mapping resource="mapping/Usuario.hbm.xml" />
+		<mapping resource="mapping/UsuarioAlumno.hbm.xml" />
+		<mapping resource="mapping/UsuarioDocente.hbm.xml" />
+
+	</session-factory>
+</hibernate-configuration>

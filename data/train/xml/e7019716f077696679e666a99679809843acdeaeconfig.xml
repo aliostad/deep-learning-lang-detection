@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<config>
+
+	<modules>
+		<Df_Api>
+			<version>1.0.0</version>
+		</Df_Api>
+	</modules>
+
+
+	<global>
+
+		<blocks>
+			<df_api>
+				<class>Df_Api_Block</class>
+			</df_api>
+		</blocks>
+
+		<helpers>
+			<df_api>
+				<class>Df_Api_Helper</class>
+			</df_api>
+		</helpers>
+
+		<models>
+			<df_api>
+				<class>Df_Api_Model</class>
+			</df_api>
+		</models>
+
+	</global>
+
+
+
+	<adminhtml>
+        <translate>
+			<modules>
+				<Df_Api>
+					<files>
+						<default>Df_Api.csv</default>
+					</files>
+				</Df_Api>
+			</modules>
+		</translate>
+	</adminhtml>
+
+
+
+
+</config>

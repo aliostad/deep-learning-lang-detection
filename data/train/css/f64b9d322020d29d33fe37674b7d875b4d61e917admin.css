@@ -1,0 +1,45 @@
+/*
+	Admin Navigation
+	Author: Chase Willden;
+*/
+
+/* Non-mobile */
+
+@media (min-width: 768px) {
+	nav.nav-top.admin{
+		background-color: rgb(38, 38, 38);
+		height: 27px;
+	}
+
+	nav.nav-top.admin > ul.menu-right > li.active > a{
+		border: none;
+	}
+
+	nav.nav-top.admin > ul.menu-right a{
+		color: rgb(218, 218, 218);
+	}
+
+	nav.nav-top.admin > ul:nth-child(2){
+		background-color: rgb(38, 38, 38);
+	}
+
+	nav.nav-top.admin > ul.menu-right > li > a{
+		padding: 3px 20px;
+		border-bottom: none;
+	}
+
+	nav.nav-top.admin > ul.menu-right > li > a:hover{
+		color: #4285f4;
+		border-bottom: none;
+		background-color: #353535;
+	}
+
+	nav.nav-top.admin .dropdown{
+		background-color: rgb(38, 38, 38);
+	}
+
+	nav.nav-top.admin .dropdown li a:hover{
+		background-color: #353535;
+		color: #4285f4;
+	}
+}

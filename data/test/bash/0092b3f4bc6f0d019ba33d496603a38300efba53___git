@@ -1,0 +1,39 @@
+#!/bin/sh
+
+git_clone() {
+    local repo=$1
+    local dst=$2
+
+    check_file d n ${dst}
+    mkdir ${dst}
+    cd ${dst} 
+    echo "cloning ${repo}..."
+    git clone -q ${repo}
+    __=`ls`
+}
+
+git_head_id() {
+    local repo_loc=$1
+
+    cd ${repo_loc}
+    __=`git rev-parse HEAD | cut -c1-7`
+}
+
+git_stamp() {
+    local repo_url=${1}
+
+    stamp; stamp=${__}
+
+    clone="${tmp}/${stamp}"               # /tmp/20140101_1212
+    git_clone ${repo_url} ${clone}        # /tmp/20140101_1212/some-dns
+    repo_name=${__}                       # (eg. some-dns)
+
+    git_head_id ${clone}/${repo_name}     # (eg. 76de5)
+    git_comish=${__}
+    ver="${stamp}__${git_comish}__${me}"  # 20140101_1212__76de5__dns-frondle
+    repo_loc="${tmp}/${ver}/${repo_name}" # /tmp/20140101_1212__76de5__dns-frondle/some-dns
+    mv ${clone} ${tmp}/${ver}             # /tmp/20140101_1212 -> /tmp/20140101_1212__76de5__dns-frondle
+    clone="${tmp}/${ver}"                 # /tmp/20140101_1212__76de5__dns-frondle
+
+    __=${repo_loc}
+}

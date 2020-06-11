@@ -1,0 +1,56 @@
+#writeEmail .form {
+	padding-right: 0px;
+	background-color: #fafcfc;
+}
+
+#writeEmail .form ul li {
+	float: left;
+	padding: 0px 0px;
+	height: 20px;
+}
+
+#writeEmail .form label {
+	float: left;
+	padding: 5px 10px;
+	text-align: right;
+	color: #00764b;
+	width: 100px;
+}
+
+/*表单*/
+.inputBox {
+	border: 1px solid #cbe1eb;
+	padding: 5px;
+	width: 50%;
+}
+
+.status {
+	border: 1px solid #cbe1eb;
+	padding: 5px;
+	width: 170px;
+}
+
+.formLiErrorTips {
+	color: red;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.fs13 {
+	font-size: 13px;
+}
+
+.fs14 {
+	font-size: 14px;
+}
+
+.c_007 {
+	color: #00764b;
+}
+
+.tipErrorMsg {
+	color: #FF0000;
+	font-weight: bold;
+}

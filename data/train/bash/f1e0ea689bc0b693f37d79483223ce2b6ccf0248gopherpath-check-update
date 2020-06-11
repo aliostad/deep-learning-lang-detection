@@ -1,0 +1,44 @@
+#!/bin/bash -e
+
+TSV_FILE="rev.tsv"
+
+echoWColor() {
+	clr=$1
+	shift
+	if [[ "x$GOPHERPATH_COLOR" == "xyes" ]]; then
+		echo -n -e "$clr$@\033[0m"
+	else
+		echo -n -e "$@"
+	fi
+}
+
+getRemoteRev() {
+	case "$1" in
+	"git")
+		git ls-remote "https://$2.git" | grep 'HEAD' | awk '{ print $1; }'
+		;;
+	"hg")
+		hg identify --debug "https://$2" | tail -n 1
+		;;
+	*)
+		echo "Unknown CVS" >&2
+		exit 1
+		;;
+	esac
+}
+
+while read line
+do
+	repo=`echo "$line" | awk '{ print $1; }'`
+	repoType=`echo "$line" | awk '{ print $2; }' | sed 's/:[^:]*$//'`
+	repoRev=`echo "$line" | awk '{ print $2; }' | sed 's/^[^:]*://'`
+	remoteRepoRev=$(getRemoteRev $repoType $repo)
+	if [[ "x$repoRev" != "x$remoteRepoRev" ]]; then
+		echoWColor "\033[1;37m" "$repo"
+		echoWColor "\033[0;33m" " [$repoType] "
+		echoWColor "\033[0;31m" "$repoRev"
+		echo -n " --> "
+		echoWColor "\033[0;32m" "$remoteRepoRev"
+		echo
+	fi
+done < "$TSV_FILE"

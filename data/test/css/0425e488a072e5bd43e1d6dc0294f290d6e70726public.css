@@ -1,0 +1,13 @@
+﻿footer{background:#fefefe; padding-top: 0px;clear: both;}
+#ft-service-infr{border-top:#f1f1f1 1px solid;padding:30px 0 20px;text-align:center}
+#ft-service-infr dl{vertical-align:top;display:inline-block}
+#ft-service-infr dt{font-size:1.33em;font-weight:700;font-family:Simsun;letter-spacing:1px;margin-bottom:3px}
+#ft-service-infr .contact-infr{margin:0 20px 0 10px;color:#3c3c3c}
+#ft-service-infr .phone-num{color:#3c3c3c;font-size:1.92em;font-weight:700;margin-bottom:10px}
+#ft-service-infr .nav-service{margin:0 20px}
+#ft-service-infr .erweima{ width:80px; height:80px; display:block}
+#ft-service-infr .weixin{ width:84px;margin-right:16px;text-align:center;}
+#ft-service-infr .weixin .erweima{background:url(../images/qrcode_weixin.png)}
+#ft-service-infr .ewmname{ padding-top:5px; color:#999999;}
+#ft-service-infr .weibo{ width:84px;text-align:center;}
+#ft-service-infr .weibo .erweima{background:url(../images/qrcode_pc.png)}

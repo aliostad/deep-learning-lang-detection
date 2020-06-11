@@ -1,0 +1,108 @@
+body {
+	background-image: none;
+}
+
+#app-content a,
+#app-sidebar a {
+	color:#478CDE;
+}
+
+#app-sidebar {
+	border: none;
+	padding: 0 0 0 15px;
+	width: 200px;
+}
+
+	#app-sidebar h3 {
+		font-weight: bold;
+		border-bottom: 1px solid #E9EDF0;
+		padding-bottom: 3px;
+		margin-bottom: 15px;
+	}
+	
+
+#app-body {
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+#api-body {
+	
+}
+
+	#api-body .markdown {
+		
+	}
+	
+		#api-body .markdown h2 {
+			font-weight: bold;
+			margin: 10px 0 8px;
+			font-size: 1.2em;
+		}
+		
+		#api-body .markdown h3 {
+			font-weight: bold;
+			margin: 0 0 8px;
+			font-size: 1.0em;
+		}
+			
+	#api-body em {
+		font-style: normal;
+	}
+
+	#api-body p {
+		line-height: 20px;
+		color: #666;
+		margin: 10px 0;
+		font-size: .95em;
+	}
+
+		#api-body p code {
+			-moz-border-radius: 3px;
+			background: #ECEFF5;
+			padding: 2px 5px;
+			font-size: .85em;
+			font-family: 'Monaco', Courier, Monospace;
+		}
+		
+	#api-body dl {
+		margin: 10px 0 0;
+	}
+	
+		#api-body dt.ModuleInfo_method {
+			font-weight: bold;
+			margin: 0 0 10px;
+			font-size: 1.0em;
+		}
+		
+		#api-body dd {
+		}
+		
+			#api-body dd dl {
+				margin-left: 20px;
+				font-size: .9em;
+			}
+			
+				#api-body dd dl dt {
+					font-weight: bold;
+					color: #666;
+					margin: 0;
+				}
+				
+					#api-body h4 {
+						font-weight: bold;
+					}
+				
+		
+	#api-body pre {
+		border: solid 1px #ECEFF5;
+		padding: 6px;
+		font-size: .85em;
+		font-family: 'Monaco', Courier, Monospace;
+		-moz-border-radius: 3px;
+		background: #ECEFF5;
+	}
+	
+		#api-body pre code {
+			font-family: 'Monaco', Courier, Monospace;
+		}

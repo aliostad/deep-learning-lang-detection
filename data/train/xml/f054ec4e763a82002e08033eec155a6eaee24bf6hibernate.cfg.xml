@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	'-//Hibernate/Hibernate Configuration DTD 3.0//EN'
+	'http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd'>
+	
+<hibernate-configuration>
+
+	<session-factory>
+	<!--
+		<mapping package='com.books' />
+
+		<mapping class='com.books.Book' />
+
+		<mapping resource='someresource.hbm.xml'/>
+	-->
+		<mapping resource="Role.hbm.xml" />
+		<mapping resource="Person.hbm.xml" />
+		
+		<mapping resource="Address.hbm.xml" />
+		<mapping resource="Telephone.hbm.xml" />
+		<mapping resource="Legacy.hbm.xml" />
+		<mapping resource="Interview.hbm.xml" />
+		<mapping resource="Contact.hbm.xml" />
+		<mapping resource="ChecklistItem.hbm.xml" /> 
+		
+		<mapping resource="Application.hbm.xml" />
+		<mapping resource="Attribute.hbm.xml" />
+		<mapping resource="Test.hbm.xml" />
+		<mapping resource="Major.hbm.xml" />
+		<mapping resource="Rating.hbm.xml" />
+		<mapping resource="Note.hbm.xml" />
+		<mapping resource="Relation.hbm.xml" />
+		<mapping resource="Decision.hbm.xml" />
+		<mapping resource="Ethnicity.hbm.xml" />
+		<mapping resource="FinancialAid.hbm.xml" />
+		<mapping resource="SpecialRating.hbm.xml" />
+		<mapping resource="Interest.hbm.xml" />
+		
+	</session-factory>
+
+</hibernate-configuration>

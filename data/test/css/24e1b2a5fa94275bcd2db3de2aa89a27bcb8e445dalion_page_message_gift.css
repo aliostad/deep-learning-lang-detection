@@ -1,0 +1,63 @@
+/**
+* Страница сообщения с подарками.
+*/
+#spMessageGift
+{
+  height: 320px;
+  overflow: auto;
+  padding: 5px;
+}
+
+#spNavigation
+{
+  margin-top: 5px;
+  text-align: right;
+}
+
+.goToSearchForm
+{
+  margin-bottom: 5px;
+  text-align: left;
+  float: left;
+}
+
+
+.questionGiftTags
+{
+  margin: 5px 0 5px 0;
+  padding: 0;
+  text-align: right;
+}
+
+.messageGift
+{
+  text-align: justify;
+}
+
+.messageGift p
+{
+  text-indent: 23px;
+  text-align: justify;
+}
+
+.messageGift .messageGiftQuestion
+{
+}
+
+.messageGift .messageGiftQuestion .signature
+{
+  margin-top: 5px;
+  text-align: right;
+}
+
+.messageGift .messageGiftAnswer
+{
+  margin-top: 5px;
+}
+
+.messageGift .messageGiftAnswer .signature
+{
+  margin-top: 5px;
+  font-weight: bold;
+  text-align: left;
+}

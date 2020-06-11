@@ -1,0 +1,179 @@
+.navDots {
+	display: table;
+}
+
+.navDots.vertical {
+	width: 34px;
+}
+
+.navDots.horizontal {
+	display: inline-block;
+	height: 28px;
+}
+
+.navDots .navDotsInner {
+	display: table-cell;
+	vertical-align: middle;
+	color: #F00;
+	max-width: 33px;
+	overflow: hidden;
+}
+
+.navDots.horizontal .navDotsInner {
+	max-width: inherit;
+}
+
+/*
+ * Up/down buttons
+ */
+.navDots .navDotsNav {
+	width: 26px;
+	height: 38px;
+	cursor: pointer;
+	margin-left: 4px;
+	opacity: 0.8;
+}
+
+.navDots .navDotsNav:hover {
+	opacity: 1.0;
+}
+
+.navDots.horizontal .navDotsNav {
+	display: inline-block;
+	width: 15px;
+	height: 26px;
+	margin-left: 8px;
+}
+
+.navDots .navDotsNav.disabled {
+	visibility: hidden;
+	cursor: default;
+}
+
+.navDots .navDotsUp {
+	background: url('../../../../../resources/tpl/viewer/icons/dotNavBar-arrows-white.png') no-repeat 0 13px;
+}
+
+.navDots .navDotsDown {
+	background: url('../../../../../resources/tpl/viewer/icons/dotNavBar-arrows-white.png') no-repeat -26px 13px;
+}
+
+.navDots.horizontal .navDotsUp {
+	background: url('../../../../../resources/tpl/viewer/icons/dotNavBar-arrows-white.png') no-repeat -67px 1px;
+}
+
+.navDots.horizontal .navDotsDown {
+	background: url('../../../../../resources/tpl/viewer/icons/dotNavBar-arrows-white.png') no-repeat -52px 1px;
+}
+
+/*
+ * Dot
+ */
+
+.navDots.horizontal .dots {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 2px;
+}
+
+.navDots .dot {
+	font-family: Georgia;
+	height: 21px;
+	line-height: 21px;
+	padding: 0;
+	font-size: 18px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.navDots.horizontal .dot {
+	display: inline-block;
+	width: 21px;
+}
+
+.navDots .dot[data-index="0"] {
+	font-family: 'Glyphicons Halflings';
+	font-size: 15px !important;
+	width: 100%;
+	line-height: 19px;
+}
+
+.navDots .dot:hover {
+	color: #FFF !important;
+}
+
+.navDots .dot.active {
+	color: #FFF !important;
+	font-size: 28px;
+}
+
+.navDots.horizontal .dot.active {
+	vertical-align: -3px;
+}
+
+.navDots .dot:first-child.active {
+	color: #FFF;
+	font-size: 28px;
+	background-position: 10px -16px;
+}
+
+/*
+ * Tooltip
+ */
+ 
+.navDots .tooltip {
+  	max-width: 450px;
+}
+
+.navDots .tooltip-inner {
+    max-width: 450px; /* TODO should depend on container size 90%? */
+    white-space: pre;
+	word-wrap: break-word;
+	text-align: left;
+	/* seems needed to make the text wraps correctly */
+	padding: 3px 7px;
+}
+
+/*
+ * Navigation groups
+ */
+ 
+.navDots .navGroups {
+	color: #444;
+	font-size: 0.7em;
+	text-align: center;
+}
+
+.navDots.horizontal .navGroups {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 6px;
+}
+
+.navDots .navGroup {
+	margin: 2px 0;	
+	cursor: pointer;
+}
+
+.navDots.horizontal .navGroup {
+	display: inline-block;
+	width: 34px;
+}
+
+.navDots .navGroup:hover {
+	color: #FFF;
+}
+
+.navDots .navGroupUp {
+	margin: 0 0 6px 0;
+}
+
+.navDots .navGroupDown {
+	margin: 6px 0 0 0;
+}
+
+.navDots .navGroupUp.disabled,
+.navDots .navGroupDown.disabled
+{
+	display: none;
+}

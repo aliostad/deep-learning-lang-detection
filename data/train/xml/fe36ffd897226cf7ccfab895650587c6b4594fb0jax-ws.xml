@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="ContactsService">
+      <implementation-class>services.ContactsService</implementation-class>
+    </service>
+    <service name="CompaniesService">
+      <implementation-class>services.CompaniesService</implementation-class>
+    </service>
+    <service name="DealsService">
+      <implementation-class>services.DealsService</implementation-class>
+    </service>
+    <service name="EventsService">
+      <implementation-class>services.EventsService</implementation-class>
+    </service>
+    <service name="TasksService">
+      <implementation-class>services.TasksService</implementation-class>
+    </service>
+    <service name="UsersService">
+      <implementation-class>services.UsersService</implementation-class>
+    </service>
+    <service name="AbstractService">
+      <implementation-class>services.AbstractService</implementation-class>
+    </service>
+  </services>
+  <clients/>
+</jax-ws>

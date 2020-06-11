@@ -1,0 +1,47 @@
+/* 
+  Timer 
+*/
+.TimerComponent {
+  color: #FFF;
+  text-align: center;
+}
+.TimerComponent-title {
+  color: lightblue;
+}
+
+/* 
+  ServiceChooser 
+*/
+.ServiceChooserComponent {
+  margin: 0 auto;
+  margin-top: 60px;
+  width: 500px;
+}
+.ServiceChooserComponent-title {
+  color: lightblue;
+  text-align: center;
+}
+.ServiceChooserComponent-service, .ServiceChooserComponent-service--active{
+  display: block;
+  padding: 15px 20px;
+  background-color: #F8F8F8;
+  color: #7B8585;
+  margin-bottom: 3px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.ServiceChooserComponent-service:hover {
+  background-color:#d8f2f1;
+}
+.ServiceChooserComponent-service--active {
+  color:#fff;
+  background-color:#41c7c2;
+}
+.ServiceChooserComponent-total{
+  background: rgba(0,0,0,.5);
+  cursor: default;
+  color: #fff;
+  text-shadow: 0 0 3px #000;
+  padding: 20px;
+}

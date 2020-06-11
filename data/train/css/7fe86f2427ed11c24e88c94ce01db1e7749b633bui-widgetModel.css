@@ -1,0 +1,35 @@
+﻿/* GENERIC FORM */
+.ui-widgetModel {padding:0 0 0 0;margin:0em auto 0em auto;   }
+.ui-widgetModel .ui-state-error {border:0.1em solid;}
+.ui-widgetModel div.ui-widget-header  {padding:1em 1em 1em 1em;border:none;}
+.ui-widgetModel div.ui-widgetModel-content {padding:.5em .5em .5em .5em ;border:none;}
+.ui-widgetModel fieldset {padding:1em;margin:.5em 1em 0 1em;}
+.ui-widgetModel fieldset legend {font-size:.8em;}
+.ui-widgetModel hr {border-top-width:.1em;border-bottom:0;border-left:0;border-right:0;}
+
+.ui-widgetModel .ui-widgetModelItem {padding:.5em .5em .5em .5em;clear:both;margin:0.1em 0.1em 0.1em 0.1em ; border-width:0 !important;}
+.ui-widgetModel .ui-widgetModelItem div.ui-widgetModel-inputLabel {padding:0 0 0 0;width:35%;float:left;}
+.ui-widgetModel .ui-widgetModelItem div.ui-widgetModel-inputValue {width:65%;float:left;}
+.ui-widgetModel .ui-widgetModelItem div.ui-widgetModel-inputValue input {width:96%;}
+.ui-widgetModel .ui-widgetModelItem div.ui-widgetModel-inputValue select {width:100%;}
+.ui-widgetModel .ui-widgetModelItem div.ui-widgetModel-inputError {clear:both;margin: 2em 0 0em 0 !important; width:100%;border:0;padding:0.2em;}
+.ui-widgetModel .ui-widgetModelItem.ui-state-error {background-image:none;}
+.ui-widgetModel .ui-widgetModelItem.ui-state-error div.ui-widgetModel-inputLabel {color:initial;}
+.ui-widgetModel .ui-widgetModelItem.ui-state-error div.ui-widgetModel-inputValue {color:initial;}
+
+.ui-widgetModel .ui-widget-radioHorizontal { float:none;}
+.ui-widgetModel .ui-widget-radioHorizontal div {float:left;}
+.ui-widgetModel .ui-widget-radioHorizontal input[type=radio] {float:left;width:2em !important;margin:0 2em 0 0;}
+.ui-widgetModel .ui-widget-radioVertical { clear:both;width:15em;}
+.ui-widgetModel .ui-widget-radioVertical div {float:left;}
+.ui-widgetModel .ui-widget-radioVertical input[type=radio] {float:right;width:2em !important;margin:0 2em 0 0;}
+
+.ui-widgetModel .ui-widgetModel-buttons {padding:0.5em 0.5em 0.5em 0.5em ;text-align:right;margin:0 0em 0 0;}
+.ui-widgetModel .ui-widgetModel-ValidationSummary {padding:.5em;}
+.ui-widgetModel .ui-widgetModel-ValidationSummary span {}
+.ui-widgetModel .ui-widgetModel-ValidationSummary ul {margin:.5em 0 0 0;}
+.ui-widgetModel .ui-widgetModel-ValidationSummary ul li {}
+
+/* Widget Boolean */
+.ui-widgetModelItemBool {}
+.ui-widgetModelItemBool input {display:none !important;}

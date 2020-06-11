@@ -1,0 +1,32 @@
+nav {
+    position: relative;
+    background: #8A2BE2;
+    width: 900px;
+    margin: 0 auto;
+}
+nav:before,nav:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+nav a:first-child {
+    margin-left: 30px;
+}
+nav a {
+    float: left;
+    font-family: Impact, sans-serif;
+    font-size:20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+nav a:hover,nav .active {
+    cursor:pointer;
+    background: #EEE9E9;
+    color: #8B8989;
+    box-shadow: 0 0 7px #8B8989;
+}
+nav .more {
+    float: right;
+    margin-right: 30px;
+}

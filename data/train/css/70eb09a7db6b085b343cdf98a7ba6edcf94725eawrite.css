@@ -1,0 +1,53 @@
+@CHARSET "UTF-8";
+#formField{
+	margin: o auto;
+	margin-bottom:30px;
+	height: auto;
+	width: 900px;
+	border-radius: 8px;
+	border: 4px solid #888888;
+	padding:15px;
+}
+
+#formField label{
+	margin-right: 50px;
+}
+
+ul li{
+	list-style: none;
+}
+
+li label{
+	line-height: 30px;
+	font-weight: bold;
+}
+
+#writeDiv button {
+	float:right;
+	background-color: #969696;
+	border: 1px solid #dedede;
+	cursor: pointer;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+#writeDiv button:hover{
+	background-color: #eed200;
+}
+
+#title{
+	width: 650px;
+}
+
+#content{
+	width: 650px;
+	height: 300px;
+	resize:none;
+}
+
+#formDiv{
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+

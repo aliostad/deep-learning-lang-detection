@@ -1,0 +1,40 @@
+.engine-model {
+  margin: 50px 0;
+  font-size: 12px; }
+  .engine-model .img {
+    text-align: center; }
+  .engine-model h2 {
+    font-size: 20px; }
+
+.engine-info {
+  font-size: 12px; }
+  .engine-info .row {
+    margin-bottom: 20px; }
+  .engine-info span {
+    font-size: 20px;
+    font-weight: bold; }
+
+.parts {
+  font-size: 12px;
+  margin-bottom: 20px; }
+  .parts .row {
+    margin-bottom: 10px; }
+  .parts select {
+    width: 100%; }
+
+@media (max-width: 767px) {
+  .row {
+    padding: 0 2%; }
+
+  .catalog-grid-row {
+    padding-bottom: 10px;
+    border-top: 1px dashed #aaaaaa;
+    border-bottom: none; }
+
+  .catalog-grid-row .field {
+    width: 95%;
+    background: none;
+    margin: 0 auto !important; }
+
+  .engine-info .span12 > span {
+    display: block; } }

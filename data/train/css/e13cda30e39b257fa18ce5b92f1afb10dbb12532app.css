@@ -1,0 +1,46 @@
+h1 {
+  text-align: center;
+  padding: 5px;
+}
+.message-container {
+  width: 50%;
+  margin-left: 25%;
+  border: 5px solid #00bfff;
+  border-radius: 5px;
+  padding: 25px;
+}
+.message-container .left-message,
+.message-container .right-message {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+}
+.message-container .left-message .message,
+.message-container .right-message .message {
+  padding: 10px;
+}
+.message-container .profile {
+  width: 15%;
+  word-wrap: break-word;
+}
+.message-container .message {
+  width: 70%;
+  word-wrap: break-word;
+}
+.message-container .right-message .message {
+  margin-left: 15%;
+}
+.message-container p {
+  display: inline-block;
+}
+.formZone {
+  text-align: center;
+}
+button {
+  background-color: #00bfff;
+  border: 2px solid #00bfff;
+  color: #fff;
+}
+input {
+  border: 2px solid #00bfff;
+}

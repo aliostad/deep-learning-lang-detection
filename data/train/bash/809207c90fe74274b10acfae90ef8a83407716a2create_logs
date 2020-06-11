@@ -1,0 +1,138 @@
+#!/bin/bash
+
+set -euo pipefail
+
+SCRIPT="$0"
+SCRIPT_DIR="$(cd "$(dirname "$SCRIPT")"; pwd)"
+LOG="$SCRIPT_DIR/../../log"
+
+# Use deterministic dates for deterministic output:
+GIT_DATE=946684800
+
+main()
+{
+    cleanup # any stuff we had leftover from before 
+
+    make_origin origin
+    clone_repo origin repo_a
+    clone_repo origin repo_b
+
+    # A does some work.
+    with repo_a commit
+    with repo_a commit
+    with repo_a push
+
+    # B merges into ongoing work:
+    with repo_b commit
+    with repo_b commit
+    with repo_b push
+
+    # A merges into ongoing work:
+    with repo_a commit
+    with repo_a commit
+    with repo_a push
+
+    # B merges into ongoing work:
+    with repo_b commit
+    with repo_b commit
+    with repo_b push
+
+    # A merges into ongoing work:
+    with repo_a commit
+    with repo_a commit
+    with repo_a push
+
+    with origin git log --graph > "$SCRIPT_DIR/git.log"
+    with origin "$LOG" > "$SCRIPT_DIR/gitlogger.log"
+    #with origin git log --format=raw > "$SCRIPT_DIR/raw.log"
+
+    cleanup
+}
+
+
+cleanup()
+{
+    cd "$SCRIPT_DIR"
+    rm -rf origin repo_a repo_b
+}
+
+make_origin() {
+    local repo_name="$1"
+
+    cd "$SCRIPT_DIR"
+    git init "$repo_name"
+    cd "$repo_name"
+
+    git config user.name "$repo_name"
+    git config user.email "$repo_name@example.com"
+
+    echo 'Hello, world!' > README
+    git add README
+    commit
+
+    # Convert to a bare repo (so we can push to it)
+    cd "$SCRIPT_DIR"
+    mv "$repo_name" "$repo_name.old"
+    git clone --bare "./$repo_name.old" "$repo_name"
+    rm -rf "$repo_name.old"
+}
+
+clone_repo()
+{
+    local origin="$1"
+    local repo_name="$2"
+
+    cd "$SCRIPT_DIR"
+    git clone "./$origin" "$repo_name"
+
+    cd "$repo_name"
+    git config user.name "$repo_name"
+    git config user.email "$repo_name@example.com"
+}
+
+# Perform a deterministic commit:
+commit()
+{
+    GIT_DATE=$(( $GIT_DATE + 1 ))
+    local date="$GIT_DATE +0000"
+    local msg="Commit: $GIT_DATE"
+
+    GIT_COMMITTER_DATE="$date" GIT_AUTHOR_DATE="$date" \
+    git commit --allow-empty -m "$msg"
+}
+
+git_date()
+{
+    echo "$date"
+}
+
+# Perform some commands with (inside) a particular repo:
+with()
+{
+    local repo="$1"; shift
+
+    cd "$SCRIPT_DIR/$repo"
+    "$@"
+}
+
+push()
+{
+    # merge first in case the push isn't a fast-forward:
+    pull
+    git push origin master
+}
+
+pull()
+{
+    GIT_DATE=$(( $GIT_DATE + 1 ))
+    local date="$GIT_DATE +0000"
+
+    git fetch origin
+    GIT_COMMITTER_DATE="$date" GIT_AUTHOR_DATE="$date" \
+    git merge --no-edit -m "Merge origin/master" origin/master 
+}
+
+
+main "$@"
+
+

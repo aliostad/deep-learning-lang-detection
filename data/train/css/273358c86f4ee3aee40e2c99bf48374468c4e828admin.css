@@ -1,0 +1,104 @@
+#login-form {
+	width: 440px;
+	margin: 0 auto;
+	padding-top: 80px;
+	background: transparent url(../images/locker.png) no-repeat scroll 100% 85%;
+}
+
+#login-form ul {
+	list-style-type: none;
+}
+#login-form ul li {
+	margin: 8px 0;
+}
+
+#login-form fieldset {
+	-moz-border-radius: 3em 1em;
+	-webkit-border-radius: 3em 1em;
+	border-radius: 3em 1em;
+}
+
+#login-form label {
+	float: left;
+	width: 100px;
+	font-weight: bolder;
+}
+#category-tbl {
+	width: 100%;
+	border: none;
+	border-collapse: collapse;
+}
+#category-tbl thead {
+	background-image: url(../images/th-bg.gif);
+	height: 21px;
+	text-align: left;
+}
+#category-tbl img {
+	margin-right: 15px;
+	cursor: pointer;
+}
+#model-form ul {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+#model-form ul li {
+	margin: 5px 0;
+}
+#model-form label {
+	float: left;
+	width: 90px;
+	font-weight: bolder;
+}
+#model-form input, #model-form textarea {
+	width: 300px;
+}
+#model-form #model-pics, #model-form div {
+	margin-left: 90px;
+}
+#model-form #model-pics li {
+	float: left;
+	margin-right: 10px;
+}
+#model-pics .ftrigger {
+	visibility: hidden;
+}
+#model-pics li:hover .ftrigger {
+	visibility: visible;
+}
+#pluser {
+	cursor: pointer;
+}
+
+.err-msg {
+	color: #a00;
+}
+.mhover {
+	color: #fff;
+	background-color: #6c3;
+}
+.mhover a {
+	color: #fff;
+}
+.bline {
+	border-bottom: 1px solid #00f;
+	font-style: italic;
+}
+#notifiee h4 {
+	margin: 0;
+}
+#notifiee ol {
+	margin-top: 3px;
+}
+.recipient:hover {
+	background-color: #ffffb5;
+}
+.recipient span {
+}
+.recipient img {
+	margin-left: 10px;
+	visibility: hidden;
+}
+.recipient:hover img {
+	visibility: visible;
+}

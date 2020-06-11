@@ -1,0 +1,37 @@
+#!/bin/bash
+#SBATCH --job-name=undefined
+#SBATCH --output=dirpath/std_err.txt
+#SBATCH --ntasks=1
+#SBATCH --time=30
+#SBATCH --mem-per-cpu=12000
+#SBATCH --workdir=dirpath/
+#SBATCH --partition=all
+#SBATCH --hint=memory_bound
+#SBATCH --cpus-per-task=24
+#SBATCH --mail-type=ALL
+
+## Prepare software environment by loading needed modules.  If running
+## on a system besides the monsoon cluster at NAU, you should change
+## the modules that load here to match what is available in your
+## computing environment.  "module avail" should offer a list of
+## modules that you can use.
+
+module load qiime/1.9.1
+module load usearch/6.1.544
+module load itsx/1.0.10 
+module load smalt/0.7.6
+module load ea-utils/1.1.2-537
+module load fastx_toolkit/0.0.14
+module load hmmer/3.1b1
+module load mafft/7.187
+module load vsearch/1.11.1
+module load fasttree/2.1.7
+module load R/3.2.3
+module load R/bioconductor
+module load datamash/1.1.0
+module load stacks/1.37-gcc-5.2.0
+module load bowtie2
+module load cutadapt/1.10
+
+## Run workflow script as saved.  Enter any commands you wish to run
+## below here.

@@ -1,0 +1,167 @@
+/* CSS file for collective.mediaShow - by David Jonas */
+
+.embededMediaShow
+{
+    background-image: url(++resource++collective.mediaShow.images/ajax-loader.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100px;
+}
+
+/*  Slideshow stub in the tinyMCE editor*/
+
+body.mceContentBody .embededMediaShow {
+    background-image: url("++resource++collective.mediaShow.images/stub.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 1px dotted lightgray;
+    height: 200px;
+}
+
+.embededMediaShow.javascripted
+{
+    position:relative;
+    height:620px;
+    margin:0px;
+    clear: both;
+}
+
+.embededMediaShow.javascripted a
+{
+    
+}
+
+.embededMediaShow.javascripted .mediaShowButtons
+{
+    position: absolute;
+    z-index:100;
+    bottom:0;
+    right:40%;
+    left:40%;
+    text-align:right;
+}
+
+.embededMediaShow.javascripted .mediaShowButtons .buttonPrev, .mediaShowButtons .buttonPrev
+{
+    float:left;
+    cursor:pointer;
+    
+    background-color: #555555;
+    color: white !important;
+    font-family: "Gill Sans MT","Gill Sans",arial,helvetica,sans-serif;
+    font-size: 14px;
+    padding: 0px 14px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+}
+
+.embededMediaShow.javascripted .mediaShowButtons .buttonNext, .mediaShowButtons .buttonNext
+{
+    float:right;
+    cursor:pointer;
+    background-color: #555555;
+    color: white !important;
+    font-family: "Gill Sans MT","Gill Sans",arial,helvetica,sans-serif;
+    font-size: 14px;
+    padding: 0px 14px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+}
+
+/*============== imageButtons ===========*/
+.embededMediaShow.javascripted .mediaShowButtons .buttonPrev, .mediaShowButtons .buttonPrev
+{
+    padding:0;
+    background-color:transparent;
+    width: 40px;
+    height: 40px;
+    color:transparent;
+    text-indent:10000px;
+    overflow:hidden;
+    background-position: 100px -10px;
+}
+
+.embededMediaShow.javascripted .mediaShowButtons .buttonNext, .mediaShowButtons .buttonNext
+{
+    padding:0;
+    background-color:transparent;
+    width: 40px;
+    height: 40px;
+    color:transparent;
+    text-indent:10000px;
+    overflow:hidden;
+    background-position: -160px -10px;
+}
+
+.embededMediaShow.javascripted .mediaShowButtons .buttonPrev:hover
+{
+    background-position: 100px -60px;
+}
+
+.embededMediaShow.javascripted .mediaShowButtons .buttonNext:hover
+{
+    background-position: -160px -60px;
+}
+
+/*======= override on plone link color =======*/
+.mediaShowButtons a, #content .mediaShowButtons a:link, #content .mediaShowButtons a:visited
+{
+    color:white !important;
+}
+
+.embededMediaShow.javascripted .mediaShowSlide
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width:100%;
+    height:100%;
+    display:none;
+}
+
+.embededMediaShow.javascripted .mediaShowSlide a
+{
+    
+}
+
+.embededMediaShow.javascripted .mediaShowSlide .mediaShowInfo
+{
+    position:absolute;
+    top:480px;
+    left:0;
+    right:0;
+    bottom:0;
+    padding: 2.5% 5% 5% 5%;
+    overflow:hidden;
+    text-align:center;
+}
+
+.embededMediaShow.javascripted .mediaShowSlide .mediaShowInfo .mediaShowTitle
+{
+    
+}
+
+.embededMediaShow.javascripted .mediaShowSlide .mediaShowInfo .mediaShowDescription
+{
+    
+}
+
+.embededMediaShow.javascripted .mediaShowSlide .mediaShowMedia
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:480px;
+    text-align:center;
+}
+
+.embededMediaShow.javascripted .mediaShowSlide .mediaShowMedia img
+{
+    max-height:100%;
+    max-width:100%;
+    width:auto;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+}

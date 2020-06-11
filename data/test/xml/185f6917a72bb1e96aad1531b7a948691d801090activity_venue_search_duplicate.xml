@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:soup="http://schemas.android.com/apk/res-auto" >
+	<item
+        android:id="@+id/action_duplicate_cancel"
+        android:orderInCategory="99"
+        soup:showAsAction="always"
+        android:title="@string/action_cancel"
+        android:icon="@drawable/ic_action_cancel_holo_dark" />
+
+    <item
+        android:id="@+id/action_duplicate_mark_duplicate"
+        android:orderInCategory="100"
+        soup:showAsAction="always|withText"
+        android:title="@string/search_duplicate_duplicate"
+        android:titleCondensed="@string/search_duplicate_duplicate_condensed"
+        android:enabled="false" />
+    
+    <item 
+        android:id="@+id/action_duplicate_mark_original"
+        android:orderInCategory="101"
+        soup:showAsAction="always|withText"
+        android:title="@string/search_duplicate_original"
+        android:titleCondensed="@string/search_duplicate_original_condensed"
+        android:enabled="false" />
+</menu>

@@ -1,0 +1,88 @@
+div{
+	padding:0px;
+	margin:0px;
+}
+
+.tooltip{
+	top:25px !important;
+}
+
+.tooltip-arrow{
+	display:none !important;
+}
+
+.loading{
+	background 		 : -webkit-linear-gradient(#979A99, #050505);
+	background 		 :      -o-linear-gradient(#979A99, #050505);
+	background 		 :    -moz-linear-gradient(#979A99, #050505);
+	background 		 :         linear-gradient(#979A99, #050505);
+	background-color : #979A99;
+	position         : absolute;
+	width  	     	 : 200px;
+	height       	 : 100px;
+	margin-left  	 : -100px;
+	margin-top   	 : -50px;
+	top          	 : 50%;
+	left         	 : 50%;
+	border-radius	 : 10px;
+	border       	 : 2px solid black; 
+	text-align   	 : center;
+	line-height  	 : 50px;
+	font-weight  	 : bold;
+	color        	 : white;
+}
+
+@keyframes load{
+    0%  { transform:rotate(0deg); }
+    100%{ transform:rotate(360deg); }
+}
+@-webkit-keyframes load{
+    0%  { -webkit-transform:rotate(0deg); }
+    100%{ -webkit-transform:rotate(360deg); }
+}
+@-moz-keyframes load{
+    0%  { -moz-transform:rotate(0deg); }
+    100%{ -moz-transform:rotate(360deg); }
+}
+
+.loading img{
+	width  : 50px;
+	height : 50px;
+            animation : load 1s linear infinite;
+       -moz-animation : load 1s linear infinite;
+    -webkit-animation : load 1s linear infinite;
+}
+
+.centreSmall{ text-align : center; }
+.imgDescription{ max-width: 100%; max-height : 200px;}
+
+@media (min-width: 768px) {
+  	.centreSmall{ text-align : left; }
+}
+
+@media (min-width: 992px) {
+	.floatLeftBig{ float: left;}
+	.floatRightBig{ float: right;}
+	.imgDescription{ height : 200px; width : auto;}
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

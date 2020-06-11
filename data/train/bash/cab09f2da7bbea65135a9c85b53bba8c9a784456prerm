@@ -1,0 +1,112 @@
+#!/bin/sh -e
+# prerm for naro-init
+
+case "$1" in
+  remove|deconfigure)
+    if [ -x /etc/init.d/naro-roscore ]; then
+      if [ -x /usr/sbin/invoke-rc.d ]; then
+        invoke-rc.d naro-roscore stop
+      else
+        /etc/init.d/naro-roscore stop
+      fi
+    fi
+
+    if [ -x /etc/init.d/naro-smc-server ]; then
+      if [ -x /usr/sbin/invoke-rc.d ]; then
+        invoke-rc.d naro-smc-server stop
+      else
+        /etc/init.d/naro-smc-server stop
+      fi
+    fi
+
+    if [ -x /etc/init.d/naro-usc-server ]; then
+      if [ -x /usr/sbin/invoke-rc.d ]; then
+        invoke-rc.d naro-usc-server stop
+      else
+        /etc/init.d/naro-usc-server stop
+      fi
+    fi
+
+    if [ -x /etc/init.d/naro-blinkm-server ]; then
+      if [ -x /usr/sbin/invoke-rc.d ]; then
+        invoke-rc.d naro-blinkm-server stop
+      else
+        /etc/init.d/naro-blinkm-server stop
+      fi
+    fi
+
+    if [ -x /etc/init.d/naro-depth-sensor ]; then
+      if [ -x /usr/sbin/invoke-rc.d ]; then
+        invoke-rc.d naro-depth-sensor stop
+      else
+        /etc/init.d/naro-depth-sensor stop
+      fi
+    fi
+
+    if [ -x /etc/init.d/naro-fin-controller ]; then
+      if [ -x /usr/sbin/invoke-rc.d ]; then
+        invoke-rc.d naro-fin-controller stop
+      else
+        /etc/init.d/naro-fin-controller stop
+      fi
+    fi
+
+    if [ -x /etc/init.d/naro-dive-controller ]; then
+      if [ -x /usr/sbin/invoke-rc.d ]; then
+        invoke-rc.d naro-dive-controller stop
+      else
+        /etc/init.d/naro-dive-controller stop
+      fi
+    fi
+
+    if [ -x /etc/init.d/naro-led-controller ]; then
+      if [ -x /usr/sbin/invoke-rc.d ]; then
+        invoke-rc.d naro-led-controller stop
+      else
+        /etc/init.d/naro-led-controller stop
+      fi
+    fi
+
+    if [ -x /etc/init.d/naro-joy-command ]; then
+      if [ -x /usr/sbin/invoke-rc.d ]; then
+        invoke-rc.d naro-joy-command stop
+      else
+        /etc/init.d/naro-joy-command stop
+      fi
+    fi
+
+    if [ -x /etc/init.d/naro-system-monitors ]; then
+      if [ -x /usr/sbin/invoke-rc.d ]; then
+        invoke-rc.d naro-system-monitors stop
+      else
+        /etc/init.d/naro-system-monitors stop
+      fi
+    fi
+
+    if [ -x /etc/init.d/naro-diagnostic-aggregator ]; then
+      if [ -x /usr/sbin/invoke-rc.d ]; then
+        invoke-rc.d naro-diagnostic-aggregator stop
+      else
+        /etc/init.d/naro-diagnostic-aggregator stop
+      fi
+    fi
+
+    if [ -x /etc/init.d/naro-joy-control ]; then
+      if [ -x /usr/sbin/invoke-rc.d ]; then
+        invoke-rc.d naro-joy-control stop
+      else
+        /etc/init.d/naro-joy-control stop
+      fi
+    fi
+  ;;
+  upgrade)
+    ;;
+  failed-upgrade)
+    ;;
+  *)
+    echo "prerm called with unknown argument \`$1'" >&2
+    exit 0
+    ;;
+esac
+
+exit 0

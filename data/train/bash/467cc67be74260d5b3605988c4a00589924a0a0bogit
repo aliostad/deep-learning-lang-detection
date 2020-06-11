@@ -1,0 +1,328 @@
+#!/bin/bash
+
+# Copyright 2014 Chad Versace
+# 
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# 
+#     http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# TODO:
+# Fix bad gitlink issue.
+
+: ${ogit_debug:=0}
+if [[ "x$ogit_debug" != "x0" ]]; then
+    set -vx
+fi
+
+set -eu -o pipefail
+
+: ${XDG_CONFIG_HOME:="$HOME/.config"}
+
+declare -r ogit_top="$HOME"
+declare -r ogit_conf_d="$XDG_CONFIG_HOME/ogit"
+declare -r ogit_conf_file="$ogit_conf_d/config"
+declare -r ogit_repo_configs_d="$ogit_conf_d/configs"
+
+function ogit_die {
+    echo >&2 "ogit ${ogit_cmd_name:-}: error: $@"
+    exit 1
+}
+
+function ogit_info {
+    echo "ogit ${ogit_cmd_name:-}: $@"
+}
+
+function ogit_usage_error {
+    echo >&2 "ogit ${ogit_cmd_name:-}: usage error: $@"
+    exit 1
+}
+
+function ogit_is_cmd {
+    ogit_list_cmds | grep -q -e "^$1\$"
+}
+
+function ogit_list_cmds {
+    declare -Ff | awk 'match($3, /^ogit_cmd_(.*)/, m)  { print m[1] }' | sort
+}
+
+function ogit_list_repos {
+    ls "$ogit_repo_configs_d"/*/config | sed -e 's%^.*/\([^/]*\)/config$%\1%'
+}
+
+function ogit_check_repo_name_list {
+    declare repo_name
+
+    for repo_name in "${repo_name_list[@]}"; do
+        ogit_check_repo_name
+    done
+
+    return 0
+}
+
+function ogit_check_repo_name {
+    if ! repo_name_is_valid; then
+        ogit_die "repo name is invalid: '$repo_name'"
+    fi
+}
+
+function ogit_mux_repo_cmd {
+    declare repo_name_list=("$@")
+    declare repo_name
+
+    if [[ "${#repo_name_list[@]}" -eq 0 ]]; then
+        for repo_name in $(ogit_list_repos); do
+            repo_name_list+=("$repo_name")
+        done
+    fi
+
+    ogit_check_repo_name_list
+
+    for repo_name in "${repo_name_list[@]}"; do
+        if [[ "$repo_cmd_name" != "ls-files" ]]; then
+            ogit_info "$repo_name"
+        fi
+        repo_cmd_${repo_cmd_name}
+    done
+}
+
+function repo_exists {
+    ogit_list_repos | grep -q -e "^${repo_name}$"
+}
+
+function repo_name_is_valid {
+    [[ "$repo_name" != */* ]] && [[ "$repo_name" != -* ]]
+}
+
+function repo_git_d {
+    echo "$ogit_conf_d/git-dirs/${repo_name}.git"
+}
+
+function repo_conf_d {
+    echo "$ogit_conf_d/configs/$repo_name"
+}
+
+function repo_hooks_d {
+    echo "$(repo_conf_d)/hooks"
+}
+
+function repo_ogit_conf_file {
+    echo "$(repo_conf_d)/config"
+}
+
+function repo_env {
+    GIT_TEMPLATE_DIR= \
+    GIT_DIR="$(repo_git_d)" \
+    "$@"
+}
+function repo_git {
+    repo_env git "$@"
+}
+
+function repo_ogit_conf_get {
+    git config --file "$(repo_ogit_conf_file)" --get "$@" \
+    | awk "{ gsub(/\\\${ogit_top}/, \"$ogit_top\"); print \$0 }"
+}
+
+function repo_worktree {
+    repo_ogit_conf_get ogit-repo.worktree
+}
+
+function repo_ogit_url {
+    repo_ogit_conf_get ogit-repo.url
+}
+
+function repo_has_git_dir_link {
+    [[ "$(repo_ogit_conf_get --bool ogit-repo.git-dir-link)" != "false" ]]
+}
+
+function repo_update_git_config {
+    repo_git config core.bare false
+    repo_git config core.worktree "$(repo_worktree)"
+    repo_git config core.excludesfile "$(repo_conf_d)/exclude"
+    repo_git config remote.origin.url "$(repo_ogit_url)"
+    repo_git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
+    repo_git config branch.master.remote origin
+    repo_git config branch.master.merge refs/heads/master
+    repo_git config include.path "$ogit_conf_file"
+    repo_git config include.path "$(repo_ogit_conf_file)"
+    ln -sfT "$(repo_hooks_d)" "$(repo_git_d)/hooks"
+}
+
+function repo_is_git_initialized {
+    if repo_git rev-parse --git-dir >&/dev/null; then
+        return 0
+    else
+        return 1
+    fi
+}
+
+function repo_init {
+    declare -a git_args=
+
+    git_args=('git' 'init' '--quiet')
+    if repo_has_git_dir_link; then
+        git_args+=('--separate-git-dir' "$(repo_git_d)" "$(repo_worktree)")
+    else 
+        if ! [[ -d "$(repo_git_d)" ]]; then
+            git_args+=('--bare' "$(repo_git_d)")
+        else
+            git_args+=("$(repo_git_d)")
+        fi
+    fi
+
+    mkdir -p "$(dirname "$(repo_git_d)")"
+    mkdir -p "$(dirname "$(repo_worktree)")"
+    GIT_TEMPLATE_DIR= "${git_args[@]}"
+    repo_update_git_config
+}
+
+function repo_is_clean {
+    repo_git diff --quiet --no-ext-diff \
+    && repo_git diff --quiet --no-ext-diff
+}
+
+function repo_cmd_sync {
+    declare is_reinit=
+
+    if repo_is_git_initialized; then
+        is_reinit='true'
+    else
+        is_reinit='false'
+    fi
+
+    repo_init
+    if [[ "$is_reinit" = 'true' ]]; then
+        repo_git pull
+    else
+        repo_git fetch origin
+        repo_git reset --quiet origin/master
+        repo_git merge origin/master
+    fi
+}
+
+function repo_cmd_status {
+    repo_git status --short
+}
+
+function repo_cmd_ls-files {
+    repo_git ls-files | awk "{ print \"$(repo_worktree)/\" \$0 }" | sort
+}
+
+function repo_cmd_pull {
+    repo_git pull "$@"
+}
+
+function repo_cmd_merge {
+    repo_git merge "$@"
+}
+
+function repo_cmd_push {
+    repo_git push "$@"
+}
+
+function repo_cmd_exec {
+    repo_env exec "$@"
+}
+
+function repo_cmd_shell {
+    repo_env exec "$SHELL" "$@"
+}
+
+function ogit_cmd_help {
+    declare cmd=
+
+    echo "usage: ogit <command> [args]"
+    echo
+    echo "Available commands are:"
+    ogit_list_cmds | awk '{ print "  " $0 }'
+}
+
+function ogit_cmd_list {
+    declare repo_name
+
+    if [[ $# -ne 0 ]]; then
+        ogit_usage_error "too many args"
+    fi
+    
+    for repo_name in $(ogit_list_repos); do
+        printf "%s %s\n" "${repo_name}" "$(repo_worktree)"
+    done | column -t
+}
+
+function ogit_cmd_status {
+    declare -r repo_cmd_name='status'
+    ogit_mux_repo_cmd "$@"
+}
+
+function ogit_cmd_ls-files {
+    declare -r repo_cmd_name='ls-files'
+    ogit_mux_repo_cmd "$@"
+}
+
+function ogit_cmd_exec {
+    if [[ $# -lt 1 ]]; then
+        ogit_usage_error "missing repo argument"
+    fi
+
+    declare -r repo_name="$1"
+    shift
+
+    ogit_check_repo_name
+    repo_cmd_exec "$@"
+}
+
+function ogit_cmd_shell {
+    if [[ $# -lt 1 ]]; then
+        ogit_usage_error "missing repo argument"
+    fi
+
+    declare -r repo_name="$1"
+    shift
+
+    ogit_check_repo_name
+    repo_cmd_shell "$@"
+}
+
+function ogit_cmd_sync {
+    declare -r repo_cmd_name='sync'
+    ogit_mux_repo_cmd "$@"
+}
+
+function main {
+    declare cmd
+
+    if [[ $# = 0 ]]; then
+        cmd='help'
+    else
+        case "$1" in
+            -h|--help)
+                cmd='help'
+                shift
+                ;;
+            -*)
+                ogit_usage_error "unknown option '$1'"
+                ;;
+            *)
+                cmd="$1"
+                shift
+                ;;
+        esac
+    fi
+
+    if ! ogit_is_cmd "$cmd"; then
+        ogit_usage_error "unknown command '$cmd'"
+    fi
+
+    declare -r ogit_cmd_name="$cmd"
+    ogit_cmd_${cmd} "$@"
+}
+
+main "$@"

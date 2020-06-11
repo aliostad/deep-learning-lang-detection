@@ -1,0 +1,25 @@
+
+.nav.navbar-nav > li {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+.nav.navbar-nav > li > a{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.nav.navbar-nav > li > a:hover,
+.nav.navbar-nav.navbar-right > li > a > :hover {
+    padding-bottom: 5px;
+    border-bottom: 5px solid rgba(25, 25, 25, .25);
+}
+
+.nav.navbar-nav > li.location > a,
+.nav.navbar-nav.navbar-right > li.location > a {
+    padding-bottom: 5px;
+    border-bottom: 5px solid rgb(66, 139, 202);
+}

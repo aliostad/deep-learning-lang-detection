@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <service_name>Photobucket</service_name>
+  <service_media>gallery</service_media>
+  <service_regex><![CDATA[http://[\w\.]*?photobucket\.[a-z]+/user/(?P<sval1>[\w%]+)/library/(?P<sval2>[\w%]+)]]></service_regex>
+  <service_playlist><![CDATA[]]></service_playlist>
+  <service_url><![CDATA[http://photobucket.com/user/{serviceVAL}/library/{serviceVAL2}]]></service_url>
+  <service_callback>EWRmedio_Services_Photobucket</service_callback>
+  <service_width>640</service_width>
+  <service_height>480</service_height>
+  <service_embed><![CDATA[<iframe width="100%" height="{h}"  style="max-width: {w}px" src="http://s.photobucket.com/user/{serviceVAL}/slideshow/{serviceVAL2}" frameborder="0"></iframe>]]></service_embed>
+  <service_local>0</service_local>
+</service>

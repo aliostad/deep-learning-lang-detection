@@ -1,0 +1,139 @@
+/** Section **/
+section#write {
+	float: right;
+	width: 60%;
+}
+section#write .slide-items {
+	margin-top: 1em;
+}
+section#write .slide-item {
+	margin-top: 0;
+}
+section#write .media-item {
+	margin-top: 1em;
+}
+section#write fieldset {
+	padding: 1em;
+}
+section#write fieldset.extendable.collapsed {
+	padding: 0 0 0 1em;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+section#write fieldset legend {
+}
+section#write fieldset.extendable legend span.hide {
+	display: none;
+}
+section#write fieldset .wrap {
+	margin-top: 0;
+}
+section#write fieldset.extendable.collapsed > .wrap {
+	display: none;
+}
+section#write .field {
+	margin-top: 1em;
+}
+section#write .field:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+section#write .field:first-child {
+	margin-top: 0;
+}
+section#write .field label {
+	font-size: 12px;
+}
+section#write .field label:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+section#write .field .button {
+	display: inline-block;
+	height: 25px;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+}
+section#write .field label + input,
+section#write .field label + textarea,
+section#write .field label + select {
+	display: block;
+	width: 100%;
+}
+section#write .field label + input,
+section#write .field label + select {
+	max-width: 300px;
+}
+section#write .field label + textarea {
+	max-width: 500px;
+}
+section#write .field input.file,
+section#write .field input.number {
+	display: inline-block;
+}
+section#write .field input.number.date {
+}
+section#write .field input.number.date.year {
+	width: 4em;
+}
+section#write .field input.number.date.month,
+section#write .field input.number.date.day,
+section#write .field input.number.date.hour,
+section#write .field input.number.date.minute,
+section#write .field input.number.date.second {
+	width: 2em;
+}
+section#write .slide-items + * {
+	margin-top: 0;
+}
+section#write .slide-item > .field {
+	margin-top: 0;
+	padding: 10px 0;
+}
+section#write .slide-item > .field + * {
+	margin-top: 0;
+}
+section#write .slide-item > .field .button.add {
+	display: block;
+	width: 100%;
+	height: 10px;
+	overflow: hidden;
+	padding: 0;
+	border: 0;
+	background-color: transparent;
+	text-indent: -10000px;
+}
+section#write .slide-item > .field:hover .button.add {
+	background-color: #EEEEEE;
+}
+section#write .slide-item > .field:hover .button.add:hover {
+	background-color: #CCCCCC;
+}
+/** Override **/
+.ui-widget {
+	font-size: 14px;
+}
+.ui-datepicker-title {
+	font-size: 12px;
+}
+.ui-datepicker select {
+	border: 1px solid #555555;
+	background-color: #DDDDDD;
+}
+.ui-datepicker select:hover {
+	border: 1px solid #000000;
+	background-color: #FFFFFF;
+	
+}
+.ui-datepicker select.ui-datepicker-year {
+	width: 6em;
+}
+.ui-datepicker select.ui-datepicker-month {
+	width: 5em;
+}
+

@@ -1,0 +1,35 @@
+#message_master { position: fixed; top: 0; right: 0; z-index: 5000; padding: 10px; }
+	#message_master .message { position: relative; margin: 0 0 10px 0; box-shadow: 0 2px 3px rgba(0, 0, 0, .35); width: 325px; opacity: 1;
+		-webkit-transition: opacity .350s;
+		-moz-transisition: opacity .350s;
+		transition: opacity .350s;
+	}
+	#message_master .message .box { padding: 7px; border-style: solid; border-width: 3px; min-height: 35px; }
+	#message_master .message.disappear { opacity: 0; }
+
+	#message_master .message.message-error .box { color: #b94a48; border-color: rgba(238, 211, 215, .9); background-color: rgba(242, 222, 222, .9); }
+	#message_master .message.message-success .box { color: #468847; border-color: rgba(214, 233, 198, .9); background-color: rgba(223, 240, 216, .9); }
+	#message_master .message.message-warning .box { color: #c09853; border-color: rgba(251, 238, 213, .9); background-color: rgba(252, 248, 227, .9); }
+	#message_master .message.message-info .box { color: #3a87ad; border-color: rgba(188, 232, 241, .9); background-color: rgba(217, 237, 247, .9); }
+
+	#message_master .message.message-success .box,
+	#message_master .message.message-warning .box,
+	#message_master .message.message-info .box { margin: 0 0 0 29px; }
+
+	#message_master .message.message-info,
+	#message_master .message.message-warning,
+	#message_master .message.message-success { cursor: pointer; }
+
+	#message_master .closetab { display: none; position: absolute; top: 0; left: 0; bottom: 0; width: 28px; background-color: rgba(204, 204, 204, .9); border-right: 1px solid rgba(190, 190, 190, .9); }
+		#message_master .closetab .emblem { position: absolute; top: 50%; margin-top: -20px; line-height: 32px; text-align: center; height: 32px; width: 28px; color: rgba(0, 0, 0, .3); font-size: 25px; }
+
+	#message_master .message.message-success .closetab,
+	#message_master .message.message-warning .closetab,
+	#message_master .message.message-info .closetab { display: block; }
+
+	#message_master .message .icon { float: left; }
+		#message_master .message .icon p { font-size: 50px; line-height: 30px; padding: 0 0 10px 0; opacity: .5; }
+	#message_master .message .copy { margin: 0 0 0 47px; }
+		#message_master .message h3 { font-size: 14px; margin: 0 0 5px 0; line-height: 1.2em; }
+		#message_master .message p { font-size: 12px; padding: 0; margin: 0; }
+		#message_master .message p.dismiss { margin: 10px 0 0 0; text-align: right; }

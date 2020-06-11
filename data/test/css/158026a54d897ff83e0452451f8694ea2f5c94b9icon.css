@@ -1,0 +1,40 @@
+/* enabled */
+.grid .nav-item-enabled .nav-icon-company 	{ background-image:url( 'black/company.png' ); }
+.grid .nav-item-enabled .nav-icon-contact 	{ background-image:url( 'black/contact.png' ); }
+.grid .nav-item-enabled .nav-icon-document	{ background-image:url( 'black/document.png' ); }
+.grid .nav-item-enabled .nav-icon-finance 	{ background-image:url( 'black/finance.png' ); }
+.grid .nav-item-enabled .nav-icon-knowledgebase	{ background-image:url( 'black/knowledgebase.png' ); }
+.grid .nav-item-enabled .nav-icon-mail 		{ background-image:url( 'black/mail.png' ); }
+.grid .nav-item-enabled .nav-icon-marketing 	{ background-image:url( 'black/marketing.png' ); }
+.grid .nav-item-enabled .nav-icon-process 	{ background-image:url( 'black/process.png' ); }
+.grid .nav-item-enabled .nav-icon-product 	{ background-image:url( 'black/product.png' ); }
+.grid .nav-item-enabled .nav-icon-project 	{ background-image:url( 'black/project.png' ); }
+.grid .nav-item-enabled .nav-icon-report 	{ background-image:url( 'black/report.png' ); }
+.grid .nav-item-enabled .nav-icon-sale 		{ background-image:url( 'black/sale.png' ); }
+.grid .nav-item-enabled .nav-icon-task 		{ background-image:url( 'black/task.png' ); }
+.grid .nav-item-enabled .nav-icon-warehouse 	{ background-image:url( 'black/warehouse.png' ); }
+.grid .nav-item-enabled .nav-icon-service 	{ background-image:url( 'black/service.png' ); }
+
+.grid .nav-item-enabled .nav-icon-user 		{ background-image:url( 'black/account.png' ); }
+.grid .nav-item-enabled .nav-icon-department 	{ background-image:url( 'black/account-multiple.png' ); }
+.grid .nav-item-enabled .nav-icon-catalog 	{ background-image:url( 'black/book.png' ); }
+.grid .nav-item-enabled .nav-icon-extension	{ background-image:url( 'black/file.png' ); }
+
+/* disabled */
+.grid .nav-item-disabled .nav-icon-company	{ background-image:url( 'gray/company.png' ); }
+.grid .nav-item-disabled .nav-icon-contact	{ background-image:url( 'gray/contact.png' ); }
+.grid .nav-item-disabled .nav-icon-document	{ background-image:url( 'gray/document.png' ); }
+.grid .nav-item-disabled .nav-icon-finance	{ background-image:url( 'gray/finance.png' ); }
+.grid .nav-item-disabled .nav-icon-knowledgebase{ background-image:url( 'gray/knowledgebase.png' ); }
+.grid .nav-item-disabled .nav-icon-mail 	{ background-image:url( 'gray/mail.png' ); }
+.grid .nav-item-disabled .nav-icon-marketing 	{ background-image:url( 'gray/marketing.png' ); }
+.grid .nav-item-disabled .nav-icon-process 	{ background-image:url( 'gray/process.png' ); }
+.grid .nav-item-disabled .nav-icon-product 	{ background-image:url( 'gray/product.png' ); }
+.grid .nav-item-disabled .nav-icon-project 	{ background-image:url( 'gray/project.png' ); }
+.grid .nav-item-disabled .nav-icon-report 	{ background-image:url( 'gray/report.png' ); }
+.grid .nav-item-disabled .nav-icon-sale 	{ background-image:url( 'gray/sale.png' ); }
+.grid .nav-item-disabled .nav-icon-task 	{ background-image:url( 'gray/task.png' ); }
+.grid .nav-item-disabled .nav-icon-warehouse 	{ background-image:url( 'gray/warehouse.png' ); }
+.grid .nav-item-disabled .nav-icon-service 	{ background-image:url( 'gray/service.png' ); }
+
+

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<settings xmlns="http://maven.apache.org/settings/1.0.0"
+        >
+    <pluginGroups>
+        <pluginGroup>org.jboss.maven.plugins</pluginGroup>
+    </pluginGroups>
+    <profiles>
+
+        <profile>
+            <id>jboss-public-repository</id>
+            <repositories>
+                <repository>
+                    <id>jboss-public-repository-group</id>
+                    <name>JBoss Public Maven Repository Group</name>
+                    <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+                    <layout>default</layout>
+                    <releases>
+                        <enabled>true</enabled>
+                        <updatePolicy>never</updatePolicy>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                        <updatePolicy>never</updatePolicy>
+                    </snapshots>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>jboss-public-repository-group</id>
+                    <name>JBoss Public Maven Repository Group</name>
+                    <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+                    <layout>default</layout>
+                    <releases>
+                        <enabled>true</enabled>
+                        <updatePolicy>never</updatePolicy>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                        <updatePolicy>never</updatePolicy>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+
+        <profile>
+            <id>redhat-earlyaccess-repository</id>
+            <repositories>
+                <repository>
+                    <id>redhat-earlyaccess-repository-group</id>
+                    <name>Red Hat early access repository</name>
+                    <url>http://maven.repository.redhat.com/earlyaccess/all/</url>
+                    <layout>default</layout>
+                    <releases>
+                        <enabled>true</enabled>
+                        <updatePolicy>never</updatePolicy>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                        <updatePolicy>never</updatePolicy>
+                    </snapshots>
+                </repository>
+            </repositories>
+        </profile>
+
+        <profile>
+            <id>sun-repository</id>
+            <repositories>
+                <repository>
+                    <id>Repo ID</id>
+                    <layout>default</layout>
+                    <name>Java.net Maven repo</name>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <url>http://download.java.net/maven/2/</url>
+                </repository>
+            </repositories>
+        </profile>
+
+        <profile>
+            <id>twitter-repository</id>
+            <repositories>
+                <repository>
+                    <id>twitter-twttr</id>
+                    <url>http://maven.twttr.com/</url>
+                </repository>
+            </repositories>
+        </profile>
+
+        <profile>
+            <id>restlet-repository</id>
+            <repositories>
+                <repository>
+                    <id>maven-restlet</id>
+                    <name>Public online Restlet repository</name>
+                    <url>http://maven.restlet.com</url>
+                </repository>
+            </repositories>
+        </profile>
+
+    </profiles>
+
+    <activeProfiles>
+        <activeProfile>jboss-public-repository</activeProfile>
+        <activeProfile>redhat-earlyaccess-repository</activeProfile>
+        <activeProfile>sun-repository</activeProfile>
+        <activeProfile>twitter-repository</activeProfile>
+        <activeProfile>restlet-repository</activeProfile>
+    </activeProfiles>
+
+</settings>

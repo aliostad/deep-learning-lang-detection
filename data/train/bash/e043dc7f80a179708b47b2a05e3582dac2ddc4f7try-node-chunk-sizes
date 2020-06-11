@@ -1,0 +1,43 @@
+#!/bin/sh
+#
+# Run obnam with various node and chunk sizes, in order to see which ones
+# are optimal.
+
+set -e
+
+datadir="$1"
+
+sizes="8kib 16kib 32kib 64kib 128kib 256kib 512kib 1024kib"
+sizes="8kib 16kib"
+
+conf="$(mktemp)"
+
+rm -rf try-sizes
+mkdir try-sizes
+for node_size in $sizes
+do
+    for chunk_size in $sizes
+    do
+        echo --------------------------------
+        echo "node=$node_size chunk=$chunk_size"
+        cat << eof > "$conf"
+[config]
+chunk-size = $chunk_size
+node-size = $node_size
+eof
+        output="try-sizes/${node_size}-${chunk_size}.seivot"
+        $HOME/seivot/trunk/seivot \
+            --output="$output" \
+            --drop-caches \
+            --obnam-config="$conf" \
+            --generations=2 \
+            --incremental=1 \
+            --use-existing="$datadir" \
+            --obnam-branch=. \
+            --larch-branch=$HOME/larch/trunk \
+            --description="node=$node_size chunk=$chunk_size" \
+            --profile-name="real data"
+    done
+done
+
+rm -f "$conf"

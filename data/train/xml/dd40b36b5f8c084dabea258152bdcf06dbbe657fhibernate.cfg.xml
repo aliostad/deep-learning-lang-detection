@@ -1,0 +1,37 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.url">
+			jdbc:mysql://localhost/orcl
+		</property>
+		<property name="hibernate.connection.driver_class">
+			com.mysql.jdbc.Driver
+		</property>
+		<property name="hibernate.connection.username">OCAP</property>
+		<property name="hibernate.connection.password">OCAP</property>
+		<property name="hibernate.dialect">
+			org.hibernate.dialect.MySQLDialect
+		</property>
+	  	<!--  <property name="hbm2ddl.auto">create</property> -->
+	    <mapping class="org.on.orders.Order"></mapping>
+		<mapping class="org.on.orders.Basket"></mapping>
+		<mapping class="org.on.orders.BasketItem"></mapping>
+		<mapping class="org.on.orders.BasketItemCharacteristics"></mapping> 
+		<mapping class="org.on.catalog.CatalogItem"></mapping>
+		<mapping class="org.on.catalog.CatalogItemAttribute"></mapping>
+		<mapping class="org.on.catalog.CatalogItemRelation"></mapping> 
+		<mapping class="org.on.catalog.Identifier"></mapping>
+	    <mapping class="org.on.catalog.CatalogGroup"></mapping>
+	    <mapping class="org.on.catalog.CatalogGroupItems"></mapping>
+	    <mapping class="org.on.authentication.User"></mapping>
+		<mapping class="org.on.authentication.Group"></mapping>
+		<mapping class="org.on.authentication.Privilege"></mapping>
+	    <mapping class="org.on.authentication.UserGroup"></mapping>
+		<mapping class="org.on.authentication.GroupPrivilege"></mapping>
+		<mapping class="org.on.serviceregistry.Associations"></mapping>
+		<mapping class="org.on.serviceregistry.Entities"></mapping>
+		<mapping class="org.on.serviceregistry.EntityValues"></mapping>
+	</session-factory>
+</hibernate-configuration>

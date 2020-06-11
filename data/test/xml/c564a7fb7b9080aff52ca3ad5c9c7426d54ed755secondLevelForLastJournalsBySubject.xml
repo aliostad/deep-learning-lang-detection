@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<secondLevelForLastJournalsBySubject>
+   <journalList collection="Brasil" total="1">
+      <record>
+         <subject>Agricultural Sciences</subject>
+         <processDate>20090430</processDate>
+      </record>
+      <record>
+         <subject>Applied Social Sciences</subject>
+         <processDate>20081124</processDate>
+      </record>
+      <record>
+         <subject>Biological Sciences</subject>
+         <processDate>20090327</processDate>
+      </record>
+      <record>
+         <subject>Engineering</subject>
+         <processDate>20070301</processDate>
+      </record>
+      <record>
+         <subject>Exact and Earth Sciences</subject>
+         <processDate>20071106</processDate>
+      </record>
+      <record>
+         <subject>Health Sciences</subject>
+         <processDate>20090707</processDate>
+      </record>
+      <order by="Health Sciences" total="0">
+         <journal uri="http://www.scielo.br/scielo.php?script=sci_serial&amp;pid=1808-8694&amp;nrm=iso&amp;rep="
+                  status="C"
+                  date="20090707">Brazilian Journal of Otorhinolaryngology (Impresso)</journal>
+      </order>
+      <record>
+         <subject>Human Sciences</subject>
+         <processDate>20090326</processDate>
+      </record>
+      <record>
+         <subject>Linguistics, Letters and Arts</subject>
+         <processDate>20090327</processDate>
+      </record>
+   </journalList>
+   <journalList collection="Saude Publica" total="1">
+      <record>
+         <subject>Agricultural Sciences</subject>
+         <processDate>20090430</processDate>
+      </record>
+      <record>
+         <subject>Applied Social Sciences</subject>
+         <processDate>20081124</processDate>
+      </record>
+      <record>
+         <subject>Biological Sciences</subject>
+         <processDate>20090327</processDate>
+      </record>
+      <record>
+         <subject>Engineering</subject>
+         <processDate>20070301</processDate>
+      </record>
+      <record>
+         <subject>Exact and Earth Sciences</subject>
+         <processDate>20071106</processDate>
+      </record>
+      <record>
+         <subject>Health Sciences</subject>
+         <processDate>20090707</processDate>
+      </record>
+      <order by="Health Sciences" total="0">
+         <journal uri="http://www.scielosp.org/scielo.php?script=sci_serial&amp;pid=0864-3466&amp;nrm=iso&amp;rep="
+                  status="C"
+                  date="20070517">Revista Cubana de Salud Pública</journal>
+      </order>
+      <record>
+         <subject>Human Sciences</subject>
+         <processDate>20090326</processDate>
+      </record>
+      <record>
+         <subject>Linguistics, Letters and Arts</subject>
+         <processDate>20090327</processDate>
+      </record>
+   </journalList>
+</secondLevelForLastJournalsBySubject>

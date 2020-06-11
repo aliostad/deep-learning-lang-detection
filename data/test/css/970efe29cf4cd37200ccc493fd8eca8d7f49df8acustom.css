@@ -1,0 +1,128 @@
+a,
+.button:hover,
+a.button-secondary,
+.load_more_jobs,
+.load_more_resumes,
+#wp-submit:hover,
+.btt:hover i,
+#submitcomment:hover,
+#searchsubmit:hover,
+.jobify_widget_slider .button-secondary:hover,
+input[type="submit"]:hover,
+.site-primary-navigation #searchform button,
+.entry-header a:hover,
+.entry-title a:hover {
+    color: #555;
+}
+
+
+input[type="submit"] {
+    display: block;
+}
+
+.site-header,
+.button,
+.button-secondary:hover,
+.search_jobs,
+.search_resumes
+#wp-submit,
+button.mfp-close,
+#submitcomment,
+#searchsubmit,
+
+.content-grid .featured-image .overlay,
+.nav-menu-primary .sub-menu,
+.nav-menu-primary .children,
+.site-primary-navigation.open,
+.site-primary-navigation.close,
+#pmc_mailchimp div input[type="submit"],
+.pricing-table-widget.woocommerce .pricing-table-widget-title {
+    background: #ffffff;
+}
+
+.load_more_jobs:hover,
+.load_more_resumes:hover,
+.paginate-links .page-numbers:hover {
+}
+
+.button:hover,
+a.button-secondary,
+.load_more_jobs,
+.load_more_resumes,
+.paginate-links .page-numbers:hover,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+select:focus,
+#wp-submit:hover,
+#submitcomment:hover,
+#searchsubmit:hover,
+input[type="submit"]:hover {
+    border-color: #FFCF05;
+    background: #FFCF05;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+
+}
+
+
+.load_more_jobs.grey {
+    border-color: #888;
+    background: #888;
+    color: #fff;
+}
+
+
+ .footer-cta {
+   color: #ffffff;
+   background: #2e3137;
+ }
+
+ul.job_listings .job_listing:hover,
+.job_position_featured {
+    box-shadow: inset 5px 0 0 #01da90;
+}
+.job-type.freelance { background-color: #3399cc; } 
+.job-type.full-time { background-color: #01be7e; } 
+.job-type.internship { background-color: #F6375C; } 
+.job-type.part-time { background-color: #f08d3c; } 
+.job-type.temporary { background-color: #fcc032; } 
+
+
+
+.site-title span {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+.site-branding,
+.site-description,
+.nav-menu-primary ul li a,
+.nav-menu-primary li a,
+.primary-menu-toggle i,
+.site-primary-navigation .primary-menu-toggle,
+.site-primary-navigation #searchform input[type="text"] {
+    color: #888;
+}
+
+.nav-menu-primary li.login > a {
+    border-color: #fff; 
+}
+
+.site-primary-navigation:not(.open) li.login > a:hover {
+    color: #01da90;
+    background: #fff;
+}
+
+.col-lg-10 {
+    display: block;
+    width: 60%;
+}
+
+#loginform {
+    margin: 0 auto;
+    width: 400px;
+}
+

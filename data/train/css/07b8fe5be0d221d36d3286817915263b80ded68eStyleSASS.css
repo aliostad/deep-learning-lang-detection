@@ -1,0 +1,27 @@
+﻿Html * {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, 'Nimbus Mono L', monospace;
+  background-color: #9522F0;
+  color: #ffffff; }
+
+nav {
+  font-size: 1.5em; }
+  nav ul {
+    list-style-type: none; }
+    nav ul li {
+      display: inline-block;
+      padding: 0 5px; }
+      nav ul li a {
+        text-decoration: none; }
+      nav ul li .sub-nav-list {
+        display: none;
+        position: absolute; }
+        nav ul li .sub-nav-list li {
+          display: block; }
+      nav ul li:hover > a {
+        text-decoration: underline; }
+      nav ul li:hover .sub-nav-list {
+        display: block; }
+
+/*# sourceMappingURL=StyleSASS.css.map */

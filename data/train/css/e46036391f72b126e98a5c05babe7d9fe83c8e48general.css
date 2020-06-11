@@ -1,0 +1,21 @@
+body {background-color: #161616; padding-left: 25%; padding-right: 25%;}
+.topPanel {padding-top: 10px; padding-left: 10px; color: #767572;}
+.mTitle {color: #f9f8f2; font-family: helvetica; font-size: 60px;}
+.mDate {color: #767572; font-weight: 900; font-style: italic; font-size: 30px;}
+.lastWrite, .dialog {color: #767572;}
+.lastWrite h2, .yeasturday, .miniWrite {color: #ffffff;}
+/*.lastWrite p {font-size: 20px;}*/
+/*.dialog {color: #767572;}*/
+.miniWrite h3 {line-height: 25px;}
+.hero-unit {color: #767572; background-color: #161616;}
+.secAdd input[type=text], .secAdd textarea {width: 100%; background-color: gainsboro;}
+.secAdd textarea {height: 500px;}
+.secAdd, .secRed {color: white;}
+.secAdd a, .secRed caption, .yeasturday {font-size: 30px;}
+.secRed td {padding: 3px;}
+#importantI {width: 50%; margin: 10px 25%;}
+.boxY {padding: 0 5%;}
+.no-close, .ui-dialog-titlebar-close {display: none;}
+.dialog {display: none; font-size: 13px;}
+.miniWrite:hover {cursor: pointer;}
+.yeasturday {text-align: center;}

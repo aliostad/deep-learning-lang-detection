@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+	<!-- 定义盘点的消息信息 -->
+	<message name="storage.check.havechecked">
+		<![CDATA[批次号{0}已经盘点过,请查询盘点记录！]]>
+	</message>
+	<!-- 定义座位状态 -->
+	<message name="set.free">空闲</message>
+	<message name="set.busy">占用</message>
+	<message name="set.pre">预定</message>
+	<!-- 条件定义 -->
+	<!-- 会员卡 -->
+	<message name="on_vip_card_exist">卡号为{0}在系统中已经配置。</message>
+
+	<!-- 最低消费类型 -->
+	<message name="mincost_00">无</message>
+	<message name="mincost_000">无</message>
+	<message name="mincost_001">人均</message>
+	<message name="mincost_002">总金额</message>
+	<message name="mincost_003">无</message>
+	<!-- 最低消费类型 -->
+
+	<!-- 楼层 -->
+	<message name="floor_001">1楼</message>
+	<message name="floor_002">2楼</message>
+	<message name="floor_003">3楼</message>
+	<message name="floor_004">4楼</message>
+	<message name="floor_005">5楼</message>
+	<!-- 楼层 -->
+
+	<!-- 座位类型 -->
+	<message name="belong_001">大厅</message>
+	<message name="belong_002">包厢</message>
+	<!-- 座位类型 -->
+
+	<!-- 折扣值单位定义 -->
+	<message name="price_unit_0">节省现金{0}元</message>
+	<message name="price_unit_1">{0}%折扣</message>
+	<message name="price_unit_2">增加{0}积分</message>
+	<message name="price_unit_3">{0}元获得1积分</message>
+	<message name="price_unit_4">{0}积分抵1元现金</message>
+	<message name="price_scope_all">所有</message>
+	<!-- 收费 -->
+	<message name="payoff_005">优惠券活动时间已过！</message>
+	<message name="payoff_004">优惠券不存在或已被已使用！</message>
+	<message name="payoff_003">规则互斥，请确认是否正确</message>
+	<message name="payoff_000">收费成功</message>
+	<message name="payoff_001">收费失败，订单已经被其他收银员收取。</message>
+	<!-- 记账 -->
+	<message name="bookbill_000">记账成功</message>
+	<message name="bookbill_002">成功开启记账</message>
+	<message name="bookbill_001">记账失败，订单已经被其他收银员处理。</message>
+	<!-- 员工 -->
+	<message name="no_match_password">密码不匹配!</message>
+	<message name="no_match_password1">原密码不匹配!</message>
+	<message name="not_exist_staff">不存在这个员工!</message>
+	<message name="not_exist_staff_right">这个员工不具有该权限!</message>
+	<message name="not_exist_money">请输入初始金额!</message>
+	<message name="not_exist_staff1">密码不能为空!</message>
+	<message name="not_exist_staff2">新密码与确认密码不一致!</message>
+	<message name="sucess_login">成功登录</message>
+	<message name="login_timeout">登陆超时，请重新登陆</message>
+	<!-- 店面 -->
+	<message name="on_shop_exist">不能删除，系统必须至少有一个店面.</message>
+	<message name="on_dinnerset_exist">座位{0}在系统中已经配置。</message>
+	<!-- 订单 -->
+	<message name="order_open_failed">当前座位已经有客户使用,不能开单.</message>
+	<message name="order_failed">当前座位已经在被人预订或者正在用餐，请换一个时间或者座位预订。</message>
+	<!-- 优惠券 -->
+	<message name="coupon_suc">优惠券编号已存在!</message>
+
+	<message name="printer_0">状态正常!
+ </message>
+	<message name="printer_1">不能连接！   {0}
+	</message>
+	<message name="printer_2">堵塞！   {0}
+	</message>
+	<message name="printer_3">没有响应！   {0}
+	</message>
+	<message name="printer_4">打印时出错！   {0}
+	</message>
+	<message name="printer_5">没有响应！   {0}
+	</message>
+	<message name="printer_6">检查打印机状态发生未知错误,请查看后台日志！   {0}
+	</message>
+	<message name="printer_7">离线！   {0}
+	</message>
+	<message name="printer_8">上盖没有关好！   {0}
+	</message>
+	<message name="printer_9">错误切纸命令！   {0}
+	</message>
+	<message name="printer_10">可恢复错误！   {0}
+	</message>
+	<message name="printer_11">可自动恢复的错误！   {0}
+	</message>
+	<message name="printer_12">没有纸！   {0}
+	</message>
+	<message name="printer_13">其他未知错误！   {0}
+	</message>
+
+</messages>

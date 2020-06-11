@@ -1,0 +1,127 @@
+@CHARSET "UTF-8";
+
+/**
+ * PrivateMessage
+ *
+ * @author Marc Aschmann <marc (at) aschmann.org>
+ * @package privatemessage
+ * $Id: privatemessage.css 34 2010-04-06 21:36:16Z maschmann $
+ *
+ */
+
+@media all
+{
+
+	/* private message layout
+	 *
+	 * ----------------------------------------------------------------------- */
+	div#privateMessage
+	{
+		* height: 300px;
+		min-height: 300px;
+		clear: both;
+	}
+
+	div#privateMessage div.right
+	{
+		float: right;
+		width: 110px;
+	}
+
+	div#privateMessage div.showQueryContainer {}
+
+	div#privateMessage div.messages
+	{
+		margin-right: 120px;
+	}
+
+	/* single message layout
+	 *
+	 * ----------------------------------------------------------------------- */
+
+	div#detailPop div.singleMessage
+	{
+		margin-right: 35px;
+	}
+
+	div#detailPop div.singleMessage p
+	{
+	}
+
+	div#detailPop div.singleMessage p.body
+	{
+		padding-top: 5px;
+		border-top: 1px solid #ddd;
+		display: block;
+	}
+
+	/* list styles
+	 *
+	 * ----------------------------------------------------------------------- */
+
+	div#privateMessage ol,
+	div#privateMessage ul
+	{
+		list-style: none;
+	}
+
+	div#privateMessage span.small,
+	div#privateMessage span.small *
+	{
+		font-size: 10px;
+	}
+
+	/* table layout
+	 *
+	 * ----------------------------------------------------------------------- */
+	div#privateMessage table
+	{
+	}
+
+	div#privateMessage table tr
+	{
+		height: 1.5em;
+	}
+
+	div#privateMessage table tbody tr:hover
+	{
+		background-color: #E0E0E0;
+	}
+
+	div#privateMessage table thead tr th
+	{
+		border-bottom: 1px solid #000;
+	}
+
+	div#privateMessage table tr td,
+	div#privateMessage table tr th
+	{
+		padding: 0px 3px;
+		background-color: transparent;
+	}
+
+	div#privateMessage table tr .col1
+	{
+		width: 10px;
+		border-right: 1px solid #000;
+	}
+
+	div#privateMessage table tr .col2
+	{
+		width: 260px;
+		border-right: 1px solid #000;
+	}
+
+	div#privateMessage table tr .col3,
+	div#privateMessage table tr .col4
+	{
+		width: 120px;
+		border-right: 1px solid #000;
+	}
+
+	div#privateMessage table tr .col5
+	{
+		width: 92px;
+	}
+
+}

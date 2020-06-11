@@ -1,0 +1,54 @@
+#!/usr/bin/env python
+
+from qpid.messaging import *
+from qpidtoollibs import BrokerAgent
+import sys
+
+if len(sys.argv) != 4:
+    print "Usage: link-routers <domain> <broker-url1> <broker-url2>"
+    sys.exit(1)
+
+domain = sys.argv[1]
+left   = sys.argv[2]
+right  = sys.argv[3]
+
+def toTuple(url):
+    host = None
+    port = 5672
+    pos = url.find(':')
+    if pos == -1:
+        host = url
+    else:
+        host = url[:pos]
+        port = int(url[pos + 1:])
+    return (host, port)
+
+c1 = Connection(left)
+c2 = Connection(right)
+
+c1.open()
+c2.open()
+
+q1 = BrokerAgent(c1)
+q2 = BrokerAgent(c2)
+
+r1 = q1.getRouter(domain)
+if not r1:
+    print "Domain %s not configured on broker %s" % (domain, left)
+    sys.exit(1)
+
+r2 = q2.getRouter(domain)
+if not r2:
+    print "Domain %s not configured on broker %s" % (domain, right)
+    sys.exit(1)
+
+t1 = toTuple(right)
+t2 = toTuple(left)
+
+r1.addLink(t1[0], t1[1])
+r2.addLink(t2[0], t2[1])
+
+c1.close()
+c2.close()
+
+

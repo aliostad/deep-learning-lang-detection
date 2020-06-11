@@ -1,0 +1,21 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/**
+* 去掉ios系统中元素被触摸时产生的半透明灰色遮罩
+* 去掉部分android系统中元素被点击时产生的边框
+* -webkit-user-modify有个副作用，就是输入法不再能够输入多个字符
+*/
+a,
+button,
+input,
+textarea {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-modify: read-write-plaintext-only;
+    -moz-user-modify: read-write-plaintext-only;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}

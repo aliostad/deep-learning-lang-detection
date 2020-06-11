@@ -1,0 +1,42 @@
+.modal-nav {
+  width: 160px;
+  float: left;
+  box-sizing: border-box;
+}
+.modal-nav .nav li > a {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 8px 14px;
+}
+.modal-nav .nav i {
+  float: right;
+  opacity: 0.25;
+}
+.modal-nav .nav a:hover i {
+  opacity: 0.5;
+}
+.modal-nav .nav li.active a i {
+  opacity: 1;
+}
+.modal-nav .nav i {
+  margin-top: 2px;
+}
+.modal-nav .nav .badge {
+  color: #fff;
+  padding: 4px;
+  margin: -1px 6px 0 0;
+  min-width: 14px;
+  text-align: center;
+  float: right;
+}
+.modal-nav + .modal-body {
+  width: 100%;
+  margin-right: -160px;
+  padding-right: 175px;
+  float: right;
+  box-sizing: border-box;
+  min-height: 320px;
+  border-left: 1px dotted #e5e5e5;
+}
+.modal-nav + .modal-body + .modal-footer {
+  clear: both;
+}

@@ -1,0 +1,63 @@
+#modelRoster {
+  width: 15%;
+  min-height: 100%;
+  float: left;
+  display: block;
+  position: relative;
+}
+
+#modelCompView {
+  width: auto;
+  height: 85%;
+  position: relative;
+  display: inline-block;
+  /* overflow: hidden; */
+}
+
+#modelWrapper {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+#model_wrap {
+    position: relative;
+    /*display: inline-block;*/
+    right: 0;
+    top: 50px;
+}
+#model {
+    right: 0;
+    width: 500px;
+    height: 500px;
+}
+#divModelTableSummary {
+    bottom: 0;
+    position: relative;
+    display: inline;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#divModelTableSummary table, .modelStats {
+    width: 100%
+}
+#divModelTableSummary th, .modelStats tr td {
+    width: 25%;
+}
+
+.blank_row {
+  height: 10px !important; /* Overwrite any previous rules */
+  background-color: #FFFFFF;
+}
+#buttonList {
+  padding-left: 10px;
+  width: 150px;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+#playerInformation label {
+  color: black;
+  display: inline;
+}

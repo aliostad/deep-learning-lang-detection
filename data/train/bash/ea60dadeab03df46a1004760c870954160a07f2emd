@@ -1,0 +1,59 @@
+#!/bin/sh
+# - raid_level
+# - raid_chunk
+
+: ${raid_level:=JBOD}
+: ${raid_chunk:=256}
+
+check_raid_level()
+{
+	[ "${raid_level#*raid}" != "$raid_level" ] || exit 0
+	[ "${raid_level#*braid}" != "$raid_level" ] && exit 0
+}
+check_raid_level
+
+check_partition_size() {
+	# though we can set 'show_part=1' for brd to make those ram disk to
+	# show up at /proc/partitions, it's new parameter added lately, hence
+	# we still meet troubles with old kernele. Here workaround it.
+	[ "${disk_description#*brd}" != "$disk_description" ] && return
+	for dev do
+		[ "${dev#*:/}" != "$dev" ] && continue
+
+		local part="$(basename $dev)"
+		local size="$(grep -w $part /proc/partitions | awk '{ print $3 }')"
+		[ -n "$size" ] || {
+			echo "failed to get partition size for $dev" >&2
+			exit 1
+		}
+		if [ -n "$prev_size" ]; then
+			[ "$size" != "$prev_size" ] || {
+				echo "non-equal partition size: $dev $size" >&2
+				cat /proc/partitions >&2
+				exit 1
+			}
+		else
+			local prev_size=size
+		fi
+	done
+}
+check_partition_size $partitions
+
+make_md() {
+	echo y | cmd mdadm -q --create /dev/md0 --chunk=$raid_chunk --level=$raid_level --raid-devices=$nr_partitions --force --assume-clean $partitions
+}
+
+. $LKP_SRC/lib/wipefs.sh
+grep -q '^md0 : active' /proc/mdstat && cmd mdadm -q --stop /dev/md0
+destroy_devices
+make_md
+
+cat >> $TMP/env.yaml <<EOF
+
+# setup/md
+nr_partitions: 1
+partitions: /dev/md0
+raid_device: /dev/md0
+raid_level: $raid_level
+raid_chunk: $raid_chunk
+EOF

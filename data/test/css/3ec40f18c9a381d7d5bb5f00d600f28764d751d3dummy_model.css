@@ -1,0 +1,336 @@
+/* Sample model */
+
+.model-cl {
+  position: absolute;
+}
+
+.model-cl__inner {
+  transform-style: preserve-3d;
+}
+
+.model-sample {
+  transform: translateY(-150px);
+}
+
+.planes-container {
+  transform-style: preserve-3d;
+}
+
+.plane {
+  border: 2px solid white;
+  position: absolute;
+
+  box-sizing: border-box;
+  background: black;
+}
+
+.model-sample__head > .plane {
+  width: 50px;
+  height: 50px;
+}
+
+.model-sample__head .plane-front {
+  transform: rotateY(0deg) translateZ(25px);
+}
+
+.model-sample__head .plane-back {
+  transform: rotateX( 180deg ) translateZ(25px);
+}
+
+.model-sample__head .plane-top {
+  transform: rotateX(  90deg ) translateZ(25px);
+}
+
+.model-sample__head .plane-bottom {
+  transform: rotateX( -90deg ) translateZ(25px);
+}
+
+.model-sample__head .plane-right {
+  transform: rotateY(  90deg ) translateZ(25px);
+}
+
+.model-sample__head .plane-left {
+  transform: rotateY( -90deg ) translateZ(25px);
+}
+
+.model-sample__body {
+  transform: translateY(50px);
+}
+
+.model-sample__body > .plane {
+}
+
+.model-sample__body .-big {
+  width: 150px;
+  height: 150px;
+}
+
+.model-sample__body .-small {
+  width: 150px;
+  height: 50px;
+}
+
+.model-sample__body .-side {
+  height: 150px;
+  width: 50px;
+}
+
+.model-sample__body .plane-front {
+  transform: rotateY(0deg) translateZ(25px) translateX(-50px);
+}
+
+.model-sample__body .plane-back {
+  transform: rotateX( 180deg ) translateZ(25px) translateX(-50px);
+}
+
+.model-sample__body .plane-top {
+  transform: rotateX(  90deg ) translateZ(25px) translateX(-50px);
+}
+
+.model-sample__body .plane-bottom {
+  transform: rotateX( -90deg ) translateZ(125px) translateX(-50px);
+}
+
+.model-sample__body .plane-right {
+  transform: rotateY(  90deg ) translateZ(75px);
+}
+
+.model-sample__body .plane-left {
+  transform: rotateY( -90deg ) translateZ(75px);
+}
+
+/* Hand */
+
+.model-sample__hand {
+  transform-origin: 20px 20px 0;
+}
+
+.model-sample__hand .plane.-big {
+  width: 30px;
+  height: 175px;
+}
+
+.model-sample__hand .plane.-small {
+  width: 30px;
+  height: 30px;
+}
+
+.model-sample__hand .plane-front {
+  transform: rotateY(0deg) translateZ(15px) translateX(0px);
+}
+
+.model-sample__hand .plane-back {
+  transform: rotateX( 180deg ) translateZ(15px) translateX(0px);
+}
+
+.model-sample__hand .plane-top {
+  transform: rotateX(  90deg ) translateZ(15px) translateX(0px);
+}
+
+.model-sample__hand .plane-bottom {
+  transform: rotateX( -90deg ) translateZ(160px) translateX(0px);
+}
+
+.model-sample__hand .plane-right {
+  transform: rotateY(  90deg ) translateZ(15px);
+}
+
+.model-sample__hand .plane-left {
+  transform: rotateY( -90deg ) translateZ(15px);
+}
+
+.model-sample__hand.-left {
+  transform: translateX(100px) translateY(60px);
+}
+
+.model-sample__hand.-right {
+  transform: translateX(-80px) translateY(60px);
+}
+
+/* Leg */
+
+.model-sample__leg {
+  transform-origin: 25px 0px 0px;
+}
+
+.model-sample__leg .plane.-big {
+  width: 50px;
+  height: 175px;
+}
+
+.model-sample__leg .plane.-small {
+  width: 50px;
+  height: 50px;
+}
+
+.model-sample__leg .plane-front {
+  transform: rotateY(0deg) translateZ(25px) translateX(0px);
+}
+
+.model-sample__leg .plane-back {
+  transform: rotateX( 180deg ) translateZ(25px) translateX(0px);
+}
+
+.model-sample__leg .plane-top {
+  transform: rotateX(  90deg ) translateZ(25px) translateX(0px);
+}
+
+.model-sample__leg .plane-bottom {
+  transform: rotateX( -90deg ) translateZ(150px) translateX(0px);
+}
+
+.model-sample__leg .plane-right {
+  transform: rotateY(  90deg ) translateZ(25px);
+}
+
+.model-sample__leg .plane-left {
+  transform: rotateY( -90deg ) translateZ(25px);
+}
+
+.model-sample__leg.-left {
+  transform: translateX(35px) translateY(200px);
+}
+
+.model-sample__leg.-right {
+  transform: translateX(-35px) translateY(200px);
+}
+
+/* Hit animation */
+
+@-webkit-keyframes model-sample-animation-hit-right-hand {
+  0% {
+    transform: translateX(-80px) translateY(60px);
+  }
+
+  30% {
+    transform: translateX(-80px) translateY(60px) rotateZ(100deg);
+  }
+
+  37% {
+    transform: translateX(-80px) translateY(60px) rotateZ(100deg);
+  }
+
+  40% {
+    transform: translateX(-80px) translateY(60px) rotateZ(100deg) rotateX(-10deg);
+  }
+
+  55% {
+    transform: translateX(-80px) translateY(60px) rotateZ(100deg) rotateX(140deg);
+  }
+
+  65% {
+    transform: translateX(-80px) translateY(60px) rotateZ(100deg) rotateX(130deg);
+  }
+
+  85% {
+    transform: translateX(-80px) translateY(60px) rotateZ(100deg);
+  }
+
+  100% {
+    transform: translateX(-80px) translateY(60px);
+  }
+}
+
+.model-sample.-animate-hit .model-sample__hand.-right {
+  animation: model-sample-animation-hit-right-hand 2s;
+}
+
+/* Struck animation */
+
+@-webkit-keyframes model-sample-animation-struck {
+  0% {
+    transform: translateY(0px);
+  }
+
+  10%, 30%, 50%, 70% {
+    transform: translateY(-10px) rotateZ(-5deg);
+  }
+
+  20%, 40%, 60%, 80% {
+    transform: translateY(-10px) rotateZ(5deg);
+  }
+
+  90% {
+    transform: translateY(-10px) rotateZ(0deg);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.model-sample.-animate-struck .model-cl__inner {
+  animation: model-sample-animation-struck 1.1s;
+}
+
+/* Died animation */
+
+@-webkit-keyframes model-sample-animation-death {
+  0% {
+    transform: rotateX(0deg);
+  }
+
+  30% {
+    transform: rotateX(-7deg) rotateY(3deg);
+  }
+
+  38% {
+    transform: rotateX(0deg) translateY(-10px) translateZ(0) rotateY(-5deg);
+  }
+
+  90% {
+    transform: rotateX(90deg) translateY(0px) translateZ(-25px) rotateY(0);
+  }
+
+  100% {
+    transform: rotateX(90deg) translateY(0px) translateZ(-25px) rotateY(0);
+  }
+}
+
+@-webkit-keyframes model-sample-animation-death-opacity {
+  85% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes model-sample-animation-death-leg {
+  0% {
+    transform: translateX(-35px) translateY(200px) rotateX(0deg);
+  }
+
+  35% {
+    transform: translateX(-35px) translateY(200px) rotateX(0deg);
+  }
+
+  49% {
+    transform: translateX(-35px) translateY(200px) rotateX(125deg);
+  }
+
+  85% {
+    transform: translateX(-35px) translateY(200px) rotateX(0deg);
+  }
+
+  100% {
+    transform: translateX(-35px) translateY(200px) rotateX(0deg);
+  }
+}
+
+.model-sample.-animate-death .model-cl__inner {
+  transform-origin: 0px 350px 0px;
+  animation: model-sample-animation-death 2s forwards;
+}
+
+.model-sample.-animate-death {
+  animation: model-sample-animation-death-opacity 2s forwards;
+}
+
+.model-sample.-animate-death .model-sample__leg.-right {
+  animation: model-sample-animation-death-leg 2s;
+}
+
+
+

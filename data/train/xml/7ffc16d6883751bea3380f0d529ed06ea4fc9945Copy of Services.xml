@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<services>
+	
+  <service name="DeudorService" type="Implementation.DeudorService, Implementation" descriptor="" >
+    <endpoint name="Common.Interfaces.IDeudorService" descriptor="" />
+  </service>
+
+  <service name="ZonaService" type="Implementation.ZonaService, Implementation" descriptor="" >
+    <endpoint name="Common.Interfaces.IZonaService" descriptor="" />
+  </service>
+
+  <service name="CobradorService" type="Implementation.CobradorService, Implementation" descriptor="" >
+    <endpoint name="Common.Interfaces.ICobradorService" descriptor="" />
+  </service>
+
+  <service name="ClienteService" type="Implementation.ClienteService, Implementation" descriptor="" >
+    <endpoint name="Common.Interfaces.IClienteService" descriptor="" />
+  </service>
+
+  <service name="ConfigurationService" type="Implementation.ConfigurationService, Implementation" descriptor="" >
+	<endpoint name="Common.Interfaces.IConfigurationService" descriptor="" />
+  </service>
+
+	<service name="InterfazFacturaService" type="Implementation.InterfazFacturaService, Implementation" descriptor="" >
+		<endpoint name="Common.Interfaces.IInterfazFacturaService" descriptor="" />
+	</service>
+	<service name="ReporteService" type="Implementation.ReporteService, Implementation" descriptor="">
+    <endpoint name="Common.Interfaces.IReporteService" descriptor="" />
+  </service>
+
+  <service name="FacturaService" type="Implementation.FacturaService, Implementation" descriptor="">
+    <endpoint name="Common.Interfaces.IFacturaService" descriptor="" />
+  </service>
+
+  <service name="AnalistaService" type="Implementation.AnalistaService, Implementation" descriptor="">
+    <endpoint name="Common.Interfaces.IAnalistaService" descriptor="" />
+  </service>
+
+  <service name="LOG_FacturaService" type="Implementation.LOG_FacturaService, Implementation" descriptor="">
+    <endpoint name="Common.Interfaces.ILOG_FacturaService" descriptor="" />
+  </service>
+
+
+  <service name="AccionService" type="Implementation.AccionService, Implementation" descriptor="">
+    <endpoint name="Common.Interfaces.IAccionService" descriptor="" />
+  </service>
+
+  <service name="AgendaService" type="Implementation.AgendaService, Implementation" descriptor="">
+    <endpoint name="Common.Interfaces.IAgendaService" descriptor="" />
+  </service>
+
+  <service name="RemisionService" type="Implementation.RemisionService, Implementation" descriptor="">
+    <endpoint name="Common.Interfaces.IRemisionService" descriptor="" />
+  </service>
+
+
+  <service name="ChequeService" type="Implementation.ChequeService, Implementation" descriptor="">
+    <endpoint name="Common.Interfaces.IChequeService" descriptor="" />
+  </service>
+
+  <service name="ClienteCuentaService" type="Implementation.ClienteCuentaService, Implementation" descriptor="">
+    <endpoint name="Common.Interfaces.IClienteCuentaService" descriptor="" />
+  </service>
+
+  <service name="TipoPagoRaroService" type="Implementation.TipoPagoRaroService, Implementation" descriptor="">
+    <endpoint name="Common.Interfaces.ITipoPagoRaroService" descriptor="" />
+  </service>
+  
+  <service name="LocalidadService" type="Implementation.LocalidadService, Implementation" descriptor="">
+		<endpoint name="Common.Interfaces.ILocalidadService" descriptor="" />
+  </service>
+
+	<service name="DepartamentoService" type="Implementation.DepartamentoService, Implementation" descriptor="">
+		<endpoint name="Common.Interfaces.IDepartamentoService" descriptor="" />
+	</service>
+
+	<service name="ProvinciaService" type="Implementation.ProvinciaService, Implementation" descriptor="">
+		<endpoint name="Common.Interfaces.IProvinciaService" descriptor="" />
+	</service>
+
+	<service name="PaisService" type="Implementation.PaisService, Implementation" descriptor="">
+		<endpoint name="Common.Interfaces.IPaisService" descriptor="" />
+	</service>
+  <service name="DescuentoService" type="Implementation.DescuentoService, Implementation" descriptor="">
+    <endpoint name="Common.Interfaces.IDescuentoService" descriptor="" />
+  </service>
+  <service name="RetencionMTRService" type="Implementation.RetencionMTRService, Implementation" descriptor="">
+    <endpoint name="Common.Interfaces.IRetencionMTRService" descriptor="" />
+  </service>
+
+
+  <service name="ReciboFacturaService" type="Implementation.ReciboFacturaService, Implementation" descriptor="">
+    <endpoint name="Common.Interfaces.IReciboFacturaService" descriptor="" />
+  </service>
+
+  <service name="SubTipoRetencionMTRService" type="Implementation.SubTipoRetencionMTRService, Implementation" descriptor="">
+    <endpoint name="Common.Interfaces.ISubTipoRetencionMTRService" descriptor="" />
+  </service>
+
+
+  <service name="ProntoPagoService" type="Implementation.ProntoPagoService, Implementation" descriptor="">
+    <endpoint name="Common.Interfaces.IProntoPagoService" descriptor="" />
+  </service>
+
+  <service name="DomicilioDeudorService" type="Implementation.DomicilioDeudorService, Implementation" descriptor="" >
+    <endpoint name="Common.Interfaces.IDomicilioDeudorService" descriptor="" />
+  </service>
+
+  <service name="ControlRemisionConcurrenciaService" type="Implementation.ControlRemisionConcurrenciaService, Implementation" descriptor="" >
+    <endpoint name="Common.Interfaces.IControlRemisionConcurrenciaService" descriptor="" />
+  </service>
+
+</services>

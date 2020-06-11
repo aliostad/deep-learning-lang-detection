@@ -1,0 +1,69 @@
+#!/bin/bash -e
+source $OPENSHIFT_BINARYDEPLOY_DIR/usr/lib/util
+
+# args
+# 1 - checksum of artifact to be deployed
+
+checksum=$1
+
+if [ ! -e $OPENSHIFT_BINARYDEPLOY_ARTIFACTS_DIR/$checksum/$checksum ]; then
+  echo "Artifact $checksum has not been distributed to this gear"
+  exit 1
+fi
+
+repo_dir=$OPENSHIFT_HOMEDIR/app-root/runtime/repo
+
+if [ -L $repo_dir ]; then
+  repo_checksum=`cat $repo_dir/../checksum`
+
+  echo "Comparing '$repo_checksum' to '$checksum'"
+
+  if [ "$repo_checksum" == "$checksum" ]; then
+    echo "Checksum $checksum is the current deployment - skipping activation"
+    exit 0
+  fi
+fi
+
+if ! $CHILD_BIN_DIR/validate $checksum > /dev/null; then
+  echo "Release failed checksum validation - skipping activation"
+  exit 1
+fi
+
+echo "Stopping gear"
+gear stop
+
+if [ -L $repo_dir ]; then
+  echo "Deleting old repo symlink"
+  rm $repo_dir
+else
+  echo "First time activating on this gear - moving repo to repo.orig"
+  mv $repo_dir $repo_dir.orig
+fi
+
+deployment_id=`date +%Y%m%d%H%M%S`
+
+echo "Exploding artifact"
+if ! $CHILD_BIN_DIR/explode $deployment_id $checksum; then
+  echo "Unable to explode artifact"
+  exit 1
+fi
+
+deployment_repo_dir=$OPENSHIFT_BINARYDEPLOY_DEPLOYMENTS_DIR/$deployment_id/repo
+
+echo "Linking $deployment_repo_dir to $repo_dir"
+ln -s $deployment_repo_dir $repo_dir
+
+java_artifacts=`find $deployment_repo_dir -iname \*.war -o -iname \*.ear -o -iname \*.sar | wc -l`
+if [ $java_artifacts -ne 0 ] && [ -e $deployment_repo_dir/deployments ] && [ ! -e $deployment_repo_dir/deployments/ROOT.war ]; then
+  cp $OPENSHIFT_BINARYDEPLOY_DIR/support/ROOT.war $deployment_repo_dir/deployments/ROOT.war
+fi
+
+# need to link in user_prepare since that's coming from the git repo and not the artifact
+mkdir -p $deployment_repo_dir/.openshift/action_hooks
+
+if [ -e $OPENSHIFT_BINARYDEPLOY_GITCLONE_DIR/$OPENSHIFT_APP_NAME/.openshift/action_hooks/user_prepare ]; then
+  ln -s $OPENSHIFT_BINARYDEPLOY_GITCLONE_DIR/$OPENSHIFT_APP_NAME/.openshift/action_hooks/user_prepare $deployment_repo_dir/.openshift/action_hooks/user_prepare
+fi
+
+echo "Calling gear remotedeploy"
+gear remotedeploy

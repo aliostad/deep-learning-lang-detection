@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE html PUBLIC
+    "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN"
+    "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">
+<head>
+  <title>Invertieren einer Matrix</title>
+  <style type="text/css"> 
+body { font-family: Courier,monospace; }
+
+h0 { display: inline-flex; align-items: center; }
+ha { display: flex; align-items: center; margin-top: 8px; margin-bottom: 8px; overflow: auto; }
+hb { display: flex; align-items: center; border-left:solid; border-right:solid; border-radius: 15px; border-color: Maroon; padding: 4px; background-color: LightYellow; }
+hd { display: flex; border-left:solid; border-right:solid; border-radius: 10px; padding: 4px; border-color: dimgrey; background-color: WhiteSmoke; }
+hi { display: flex; flex-direction: column; align-items: stretch; }
+hj { display: flex; padding: 4px; }
+hh, hv, hw { display: flex; flex-direction: row-reverse; margin: 2px; border-radius: 4px; min-width: 1.5em; }
+hh { background-color: lightgrey; }
+hv { background-color: Bisque; }
+hw { background-color: Thistle; }
+
+c0, c1, c2, c3 { border-radius: 5px; }
+c0 { background-color: lightgreen; }
+c1 { background-color: HotPink; }
+c2 { background-color: aqua; }
+c3 { background-color: yellow; }
+    </style> 
+<script type="application/ecmascript">
+<![CDATA[
+function invertieren() {
+  event.preventDefault();
+  A=eval(document.getElementById("matrix input").value);
+  AMERK=eval(document.getElementById("matrix input").value);
+  PRO=eval(document.getElementById("matrix input").value);
+  body1=document.getElementById("Ergebnis");
+  body1.removeChild(body1.lastChild);
+  body2=document.getElementById("Probe");
+  body2.removeChild(body2.lastChild);
+  Ergebnis=document.createElement("div");body1.appendChild(Ergebnis);
+  Probe=document.createElement("div");body2.appendChild(Probe);
+  Ausgangsmatrix=document.getElementById("Ausgangsmatrix");
+  n=A.length;
+  NeuerNenner=1;NMERK=NeuerNenner;
+  Ausgangsmatrix.removeChild(Ausgangsmatrix.lastChild);
+  ha = document.createElement("ha");Ausgangsmatrix.appendChild(ha);
+  EDISP(ha,0,true);
+  hap = document.createElement("ha");Probe.appendChild(hap);
+  hap.appendChild(document.createTextNode("Probe: "));
+  EDISP(hap,0,false);
+  hap.appendChild(Rechenzeichen("·"));
+  for (i=0;i<n;i++) {
+    //alert("i="+i);
+    AlterNenner=NeuerNenner;
+    NeuerNenner=A[i][i];Y=[];Z=[];
+    for (j=0;j<n;j++) {
+      Y[j]=A[j][i];
+      Z[j]=A[i][j];
+      }
+    Y[i]=Y[i]+AlterNenner;
+    Z[i]=Z[i]-AlterNenner;
+    ADISP(Ergebnis,i,0);
+    for (j=0;j<n;j++) { for (k=0;k<n;k++) { 
+      A[j][k]=(A[j][k]*NeuerNenner-Y[j]*Z[k])/AlterNenner;
+      } }
+    EDISP(ha,i+1,true);
+    //alert("i="+i+"\nNeuerNenner="+NeuerNenner+" AlterNenner="+AlterNenner+"\nY="+Y+"\nZ="+Z+"\nA=("+A+")/"+NeuerNenner);
+    }
+  ha.appendChild(Rechenzeichen("="));
+  ha.appendChild(Rechenzeichen("1"));
+  ha.appendChild(Rechenzeichen("/"));
+  ha.appendChild(Rechenzeichen("A"));
+  EDISP(hap,n,false);
+  hap.appendChild(Rechenzeichen("="));
+  //alert(A+"#"+AMERK+"#"+PRO);
+  for (i=0;i<n;i++) { for (j=0;j<n;j++) { 
+    PRO[i][j]=0;
+    for (k=0;k<n;k++) { 
+      PRO[i][j]=PRO[i][j]+A[i][k]*AMERK[k][j];
+      } 
+    PRO[i][j]=PRO[i][j]/NeuerNenner/NMERK;
+    } }
+  AMERK=A;A=PRO;
+  EDISP(hap,n,2);
+  A=AMERK;
+  //alert(A+"#"+AMERK+"#"+PRO);
+
+  Ergehnis2=document.getElementById("Ergebnis2");
+  Ergebnis2.removeChild(Ergebnis2.lastChild);
+  E2=document.createElement("div");Ergebnis2.appendChild(E2);
+  ha2 = document.createElement("ha");Ergebnis2.appendChild(ha2);
+  i=0;
+    AlterNenner=NeuerNenner;
+    NeuerNenner=A[i][i]*1+AlterNenner;
+    Y=[];Z=[];
+    for (j=0;j<n;j++) {
+      Y[j]=A[j][i];
+      Z[j]=A[i][j];
+      }
+    ADISP(ha2,i,1);
+    for (j=0;j<n;j++) { for (k=0;k<n;k++) { 
+      A[j][k]=(A[j][k]*NeuerNenner-Y[j]*Z[k])/AlterNenner;
+      } }
+    EDISP(ha2,i+1,true);
+  a00=document.getElementById("a00");
+  a00.removeChild(a00.lastChild);
+  a2=document.createElement("h0");a00.appendChild(a2);
+  ck = document.createElement("c"+eval((i+1)%4));
+  t = document.createTextNode(BAS(NeuerNenner));ck.appendChild(t);   
+  a2.appendChild(ck);
+  a2.appendChild(Rechenzeichen("="));
+  ck = document.createElement("hh");
+  t = document.createTextNode(BAS(A[0][0]));ck.appendChild(t);   
+  a2.appendChild(ck);
+  a2.appendChild(Rechenzeichen("*"));
+  ck = document.createElement("span");
+  t = document.createTextNode(BAS(1));ck.appendChild(t);   
+  a2.appendChild(ck);
+  a2.appendChild(Rechenzeichen("+"));
+  ck = document.createElement("c"+eval(i%4));
+  t = document.createTextNode(BAS(AlterNenner));ck.appendChild(t);   
+  a2.appendChild(ck);
+
+  }
+
+function Rechenzeichen(t) {
+  var hj = document.createElement("hj");
+  var  t = document.createTextNode(t);hj.appendChild(t);
+  return hj;
+  }
+
+var BASNUM=10;
+function BAS(val) { return val.toString(BASNUM).toUpperCase(); }
+
+function ADISP(Ergebnis,i,Variante) {
+  ck = document.createElement("c"+eval((i+1)%4));
+    t = document.createTextNode(BAS(NeuerNenner));ck.appendChild(t);   
+  cl = document.createElement("c"+eval(i%4));
+    t = document.createTextNode(BAS(AlterNenner));cl.appendChild(t);   
+  ha = document.createElement("ha");Ergebnis.appendChild(ha);
+    hb = document.createElement("hb");ha.appendChild(hb);
+      hd = document.createElement("hd");hb.appendChild(hd);
+        for (k=0;k<n;k++) { 
+          hi = document.createElement("hi");hd.appendChild(hi);
+          for (j=0;j<n;j++) { 
+            if (j==i & k==i | k!=i & j!=i) { 
+              hh = document.createElement("hh") } 
+            if (j==i & k!=i ) {
+               hh = document.createElement("hw") }
+            if (k==i & j!=i ) {
+               hh = document.createElement("hv") }
+            hi.appendChild(hh);
+            if (j==i & k==i & Variante==0) {
+              ci = document.createElement("c"+eval((i+1)%4));
+              hh.appendChild(ci);hh=ci; }
+            t = document.createTextNode(BAS(A[j][k]));hh.appendChild(t);
+          } }
+      hb.appendChild(Rechenzeichen("·"));
+      hb.appendChild(ck.cloneNode(true));
+      hb.appendChild(Rechenzeichen("-"));
+      hd = document.createElement("hd");hb.appendChild(hd);
+        hi = document.createElement("hi");hd.appendChild(hi);
+        for (j=0;j<n;j++) { 
+          if (j==i & Variante==0) {
+            hh = document.createElement("hh");hi.appendChild(hh);
+            hh.appendChild(cl.cloneNode(true));
+            t = document.createTextNode("+");
+            hh.appendChild(t);hh.appendChild(ck.cloneNode(true));
+            } else {
+              hh = document.createElement("hv");hi.appendChild(hh);
+              t = document.createTextNode(BAS(A[j][i])) 
+              hh.appendChild(t);
+              };
+          }
+      hb.appendChild(Rechenzeichen("·"));
+      hd = document.createElement("hd");hb.appendChild(hd);
+        for (k=0;k<n;k++) { 
+          if (k==i & Variante==0) {
+            hh = document.createElement("hh");hd.appendChild(hh);
+            hh.appendChild(cl.cloneNode(true));
+            t = document.createTextNode("-");
+            hh.appendChild(t);hh.appendChild(ck.cloneNode(true));
+            }
+            else {
+              hh = document.createElement("hw");hd.appendChild(hh);
+              t = document.createTextNode(BAS(A[i][k]));
+              hh.appendChild(t); };
+          }
+    ha.appendChild(Rechenzeichen("/"));
+    ha.appendChild(cl.cloneNode(true));
+    ha.appendChild(Rechenzeichen("/"));
+    ha.appendChild(ck.cloneNode(true));
+  }
+
+function EDISP(ha,i,T) {
+  if (T==1) { ha.appendChild(Rechenzeichen("=")); }
+  hd = document.createElement("hd");ha.appendChild(hd);
+    for (k=0;k<n;k++) {
+      hi = document.createElement("hi");hd.appendChild(hi);
+      for (j=0;j<n;j++) { 
+        hh = document.createElement("hh");hi.appendChild(hh);
+        t = document.createTextNode(BAS(A[j][k]));hh.appendChild(t);
+      } }
+  if (T<2) {
+    ha.appendChild(Rechenzeichen("/"));
+    ci = document.createElement("c"+eval(i%4));ha.appendChild(ci);
+      t = document.createTextNode(BAS(NeuerNenner));ci.appendChild(t);
+    }
+  }
+
+  ]]>
+</script>
+  </head>
+<body onload="invertieren()">
+<h0>
+A<hj>=</hj><textarea id="matrix input" cols="40" rows="10" >[ [ 1, 1, 1, 1 ],
+  [ 2, 4, 8, 16 ],
+  [ 3, 9, 27, 81 ],
+  [ 4, 16, 64, 256 ] ]
+</textarea>
+<h0 id="Ausgangsmatrix">
+<ha /></h0>
+<hi>
+<button class="butbut" onclick="BASNUM=16;invertieren()">HEX</button>
+<button class="butbut" onclick="BASNUM=10;invertieren()">DEC</button>
+<button class="butbut" onclick="BASNUM=2;invertieren()">BIN</button>
+  </hi>
+<button id="invertieren" class="butbut" onclick="invertieren()">die (geänderte) Eingabematrix invertieren</button>
+  </h0>
+<!--
+<textarea id="matrix input" cols="20" rows="10" >[ [ 2, 2 ],
+  [ 4, 8 ] ]
+</textarea>
+-->
+<div id="Ergebnis"><div /></div>
+<hr />
+<div id="Probe"><div /></div>
+<hr />
+<hr />
+Jetzt wird in der Ausgangsmatrix a(0,0) um 1 vergrößert. Rechne <span id="a00"><span/></span>
+<div id="Ergebnis2"><div /></div>
+<div id="Probe2"><div /></div>
+</body>
+</html>

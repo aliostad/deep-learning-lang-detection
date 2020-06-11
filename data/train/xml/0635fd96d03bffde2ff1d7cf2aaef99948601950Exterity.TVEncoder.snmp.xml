@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Caerus.Snmp.ObjectMapping>
+
+		<InheritsMappings>True</InheritsMappings>
+
+		<FieldMappings>
+
+			<Caerus.Snmp.FieldMapping->
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>Name</Name>
+					<Value>1.3.6.1.4.1.38072.1.3.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>Description</Name>
+					<Value>1.3.6.1.2.1.1.1.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>UpTime.Value</Name>
+					<Value>1.3.6.1.2.1.25.1.1.0</Value>
+					<Transient>True</Transient>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>Contact</Name>
+					<Value>1.3.6.1.2.1.1.4.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>Location</Name>
+					<Value>1.3.6.1.4.1.38072.1.2.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>Services</Name>
+					<Value>1.3.6.1.2.1.1.7.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>TcpCurrentConnections</Name>
+					<Value>1.3.6.1.2.1.6.9.0</Value>
+					<Transient>True</Transient>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>InDatagramsDiscarded</Name>
+					<Value>1.3.6.1.2.1.4.8.0</Value>
+					<Transient>True</Transient>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>OutDatagramsDiscards</Name>
+					<Value>1.3.6.1.2.1.4.11.0</Value>
+					<Transient>True</Transient>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>InDatagramsDelivered</Name>
+					<Value>1.3.6.1.2.1.4.9.0</Value>
+					<Transient>True</Transient>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>OutDatagramsRequests</Name>
+					<Value>1.3.6.1.2.1.4.10.0</Value>
+					<Transient>True</Transient>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>InterfaceCount</Name>
+					<Value>1.3.6.1.2.1.2.1.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>TFTPServer</Name>
+					<Value>1.3.6.1.4.1.38072.1.4.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>SerialNumber</Name>
+					<Value>1.3.6.1.4.1.38072.1.5.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>Type</Name>
+					<Value>1.3.6.1.4.1.38072.1.10.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>Stream</Name>
+					<Value>1.3.6.1.4.1.38072.1.12.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>Version</Name>
+					<Value>1.3.6.1.4.1.38072.1.1.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>VersionName</Name>
+					<Value>1.3.6.1.4.1.38072.1.14.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>TotalResets</Name>
+					<Value>1.3.6.1.4.1.38072.1.7.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>MulticastAddress</Name>
+					<Value>1.3.6.1.4.1.38072.3.4.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>AudioPort</Name>
+					<Value>1.3.6.1.4.1.38072.3.5.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>VideoPort</Name>
+					<Value>1.3.6.1.4.1.38072.3.6.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>VideoFormat</Name>
+					<Value>1.3.6.1.4.1.38072.3.11.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>VideoInterface</Name>
+					<Value>1.3.6.1.4.1.38072.3.12.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>VideoAspect</Name>
+					<Value>1.3.6.1.4.1.38072.3.13.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>VideoBitrate</Name>
+					<Value>1.3.6.1.4.1.38072.3.14.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>Bitrate</Name>
+					<Value>1.3.6.1.4.1.38072.3.15.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>IRClient</Name>
+					<Value>1.3.6.1.4.1.38072.3.19.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>MasterIRClient</Name>
+					<Value>1.3.6.1.4.1.38072.3.20.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>IRTest</Name>
+					<Value>1.3.6.1.4.1.38072.3.21.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>ChannelNumber</Name>
+					<Value>1.3.6.1.4.1.38072.3.22.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>Groups</Name>
+					<Value>1.3.6.1.4.1.38072.3.23.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>MulticastTTL</Name>
+					<Value>1.3.6.1.4.1.38072.3.24.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>SuppressSAP</Name>
+					<Value>1.3.6.1.4.1.38072.3.25.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>AnnouncementFormat</Name>
+					<Value>1.3.6.1.4.1.38072.3.26.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+				<Caerus.Snmp.FieldMapping>
+					<Name>SuppressAudio</Name>
+					<Value>1.3.6.1.4.1.38072.3.27.0</Value>
+				</Caerus.Snmp.FieldMapping>
+
+			</Caerus.Snmp.FieldMapping->
+
+		</FieldMappings>
+
+		<TableMappings>
+
+			<Caerus.Snmp.TableMapping->
+
+				<Caerus.Snmp.TableMapping>
+
+					<Name>Interfaces</Name>
+
+					<MappingType>NetworkInterfaceCollection</MappingType>
+
+					<FieldMappings>
+
+						<Caerus.Snmp.FieldMapping->
+
+							<Caerus.Snmp.FieldMapping>
+								<Name>Index</Name>
+								<Value>1.3.6.1.2.1.2.2.1.1</Value>
+							</Caerus.Snmp.FieldMapping>
+
+						</Caerus.Snmp.FieldMapping->
+
+					</FieldMappings>
+
+				</Caerus.Snmp.TableMapping>
+
+			</Caerus.Snmp.TableMapping->
+
+		</TableMappings>
+
+	</Caerus.Snmp.ObjectMapping>

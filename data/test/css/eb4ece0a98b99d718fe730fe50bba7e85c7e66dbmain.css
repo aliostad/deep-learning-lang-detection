@@ -1,0 +1,330 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+
+  background: #F5F5F5;
+
+}
+
+/* animations */
+
+.fc-animation-load {
+
+  -webkit-animation: load 2s infinte;
+  -moz-animation: load 2s infinte;
+  -o-animation: load 2s infinte;
+  animation: load 2s infinite;
+
+}
+
+@keyframes load {
+
+  0% {
+
+    width: 0;
+
+  }
+
+  100% {
+
+    width: 100%;
+
+  }
+
+}
+
+@-webkit-keyframes load {
+
+  0% {
+
+    width: 0;
+
+  }
+
+  100% {
+
+    width: 100%;
+
+  }
+
+}
+
+@-moz-keyframes load {
+
+  0% {
+
+    width: 0;
+
+  }
+
+  100% {
+
+    width: 100%;
+
+  }
+
+}
+
+@-o-keyframes load {
+
+  0% {
+
+    width: 0;
+
+  }
+
+  100% {
+
+    width: 100%;
+
+  }
+
+}
+
+.fc-container {
+
+  width: 960px;
+  min-height: 500px;
+  margin: 0 auto;
+
+}
+
+.fc-clickable:hover {
+
+  cursor: pointer;
+
+}
+
+/* height */
+
+.fc-height--xs {
+
+  height: 5px;
+
+}
+
+/* gallery */
+
+.fc-gallery {
+
+    min-height: 420px;
+    background-color: rgba(0,0,0, 0.4);
+
+}
+
+#fc-gallery-ul--photos {
+
+  width: 80%;
+
+}
+
+#fc-gallery-ul--photos li {
+
+  float: left;
+  padding: 5px;
+  width: 150px;
+  height: 100px;
+  overflow: hidden;
+
+}
+
+#fc-gallery-ul--photos li:hover {
+
+
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -o-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    cursor: pointer;
+
+}
+
+#fc-gallery-ul--photos li img {
+
+  width: 100%;
+  height: auto;
+}
+
+/* pages */
+
+#fc-gallery-ul--pages li {
+
+  float: left;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px;
+
+}
+
+#fc-gallery-ul--pages li a {
+
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.fc-gallery-ul-pages-li-a--selected {
+
+  font-size: 24px;
+
+}
+
+#fc-gallery-ul--pages li a:hover {
+
+    text-decoration: underline;
+
+}
+
+/* floats */
+
+.fc-float-left {
+
+  float: left;
+
+}
+
+.fc-float-right {
+
+  float: right;
+
+}
+
+/* margins */
+
+.fc-margin--center {
+
+    margin: 0 auto;
+
+}
+
+.fc-margin-top--sm {
+
+  margin-top: 10px;
+
+}
+
+.fc-margin-right--xs {
+
+  margin-right: 5px;
+
+}
+
+.fc-margin-right--md {
+
+  margin-right: 15px;
+
+}
+
+/* list */
+
+.fc-list-style--none {
+
+    list-style: none;
+
+}
+
+/* displays */
+
+.fc-display--table {
+
+  display: table;
+
+}
+
+/* btn */
+
+.fc-btn {
+
+  border: none;
+  padding: 7.2px;
+
+}
+
+/* bg color */
+
+.fc-color--red {
+
+  background-color: #CF3F2E;
+
+}
+
+.fc-color--blue {
+
+  background-color: #186375;
+
+}
+
+/* heights */
+
+.fc-height--lg {
+
+  height: 50px;
+
+}
+
+/* letter spacing */
+
+.fc-letter-spacing--xs {
+
+    letter-spacing: 2px;
+
+}
+
+/* font weight */
+
+.fc-font-weight--bold {
+
+  font-weight: bold;
+
+}
+
+/* text color */
+
+.fc-text-color--white {
+
+  color: #fff;
+
+}
+
+/* text decorations */
+
+.fc-text-decoration--none {
+
+    text-decoration: none;
+
+}
+
+/* padding */
+
+.fc-padding--xs {
+
+  padding: 5px;
+
+}
+
+.fc-padding--sm {
+
+  padding: 10px;
+
+}
+
+.fc-padding-left--md {
+
+  padding-left: 15px;
+
+}
+
+/* overflow */
+
+.fc-overflow--hidden {
+
+  overflow: hidden;
+
+}

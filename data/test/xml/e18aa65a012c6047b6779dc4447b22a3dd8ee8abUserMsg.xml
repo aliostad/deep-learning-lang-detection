@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="yes"?>
+<DatasetMsg xmlns="http://tempuri.org/DatasetMsg.xsd">
+  <Message>
+    <Message>Dữ liệu cần được cập nhật !</Message>
+    <ID>1</ID>
+  </Message>
+  <Message>
+    <Message>Thông số kết nối không đúng. Bạn hãy thiết lập lại</Message>
+    <ID>2</ID>
+  </Message>
+  <Message>
+    <Message>Không thể tìm thấy stored procedure "login"</Message>
+    <ID>3</ID>
+  </Message>
+  <Message>
+    <Message>kết nối không thành công. không thể login với user "sa"</Message>
+    <ID>4</ID>
+  </Message>
+  <Message>
+    <Message>Bạn không được phép sử dụng chức năng này !</Message>
+    <ID>5</ID>
+  </Message>
+  <Message>
+    <Message>Bạn có thực sự muốn xóa dữ liệu này không?</Message>
+    <ID>8</ID>
+  </Message>
+  <Message>
+    <Message>Tên truy cập hoặc mật khẩu chưa chính xác!</Message>
+    <ID>18</ID>
+  </Message>
+  <Message>
+    <Message>Bạn chưa gõ tên truy cập!</Message>
+    <ID>19</ID>
+  </Message>
+  <Message>
+    <Message>Bạn chưa gõ mật khẩu!</Message>
+    <ID>20</ID>
+  </Message>
+  <Message>
+    <Message>Ngày mà bạn nhập không hợp lệ !</Message>
+    <ID>14</ID>
+  </Message>
+</DatasetMsg>

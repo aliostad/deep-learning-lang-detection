@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<marionette_info>
+  <expected_messages>
+    <message type="whole_message">Image loaded into texture_map 1</message>
+    <message type="whole_message">Image loaded into texture_map 2</message>
+    <message type="whole_message">Image loaded into texture_map 3</message>
+    <message type="whole_message">Image loaded into texture_map 4</message>
+    <message type="whole_message">Image loaded into texture_map 5</message>
+    <message type="whole_message">Image loaded into texture_map 6</message>
+    <message type="whole_message">Image loaded into texture_map 7</message>
+    <message type="whole_message">Image loaded into texture_map 8</message>
+    <message type="whole_message">Image loaded into texture_map 9</message>
+    <message type="whole_message">Image loaded into texture_map 10</message>
+    <message type="whole_message">Image loaded into texture_map 11</message>
+    <message type="whole_message">Image loaded into texture_map 12</message>
+    <message type="whole_message">Image loaded into texture_map 13</message>
+    <message type="whole_message">Image loaded into texture_map 14</message>
+    <message type="whole_message">Image loaded into texture_map 15</message>
+    <message type="starts_with">About to queue movie</message>
+    <message type="starts_with">Movie is queued</message>
+    <message type="starts_with">About to queue movie</message>
+    <message type="starts_with">Movie is queued</message>
+  </expected_messages>
+</marionette_info>

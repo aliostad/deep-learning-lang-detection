@@ -1,0 +1,259 @@
+/* GENERAL */
+h4 {
+	margin: 3px 3px 5px 3px;
+}
+
+.overviewHeaderDiv {
+	padding: 0 0 5px 5px;
+	border-bottom: 1px solid;
+	margin: 20px;
+}
+.overviewHeader {
+  font-size: 25px;
+  margin: 0;
+  display: inline;
+}
+.overviewHeader span {
+  padding-left: 10px;
+  font-size: 13px;
+  font-weight: normal;
+}
+.overviewHeader span a {
+  color: blue;
+}
+.overviewHeader span a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* RIGHT LIST */
+#rightList {
+  margin-left: -35px;
+  list-style: none;
+}
+#rightList li {
+  margin-bottom: 10px;
+}
+#rightList a {
+  font-size: 13px;
+  color: black;
+}
+#rightList a:hover {
+  color: red;
+  text-decoration: underline;
+}
+#rightList span {
+  font-size: 11px;
+  color: #A0A0A0;
+  padding-left: 5px;
+  font-style: italic;
+}
+
+
+
+/* NAV BAR */
+.navBar {
+	border: 1px solid #A8A8A8;
+	margin: 0 10px;
+	font-size: 15px;
+	padding: 0;
+}
+.navBar ul {
+	list-style: none;
+	padding: 10px 0;
+	margin: 0;
+}
+.navBar li {
+	display: inline;
+	padding: 0;
+}
+.navBar a {
+	color: black;
+	padding: 10px 15px;
+}
+.navBar a:hover {
+	background-color: #A8A8A8;
+}
+
+/*  */
+.overviewDiv {
+	margin: 20px 10px 40px 10px;
+}
+#polls {
+
+}
+.pollQuestion {
+	font-weight: bold;
+	font-size: 15px;
+}
+.pollButtonsDiv {
+	margin: 12px 2px 10px 2px;
+}
+.pollButtonsDiv button {
+	margin-right: 5px;
+}
+.pollGraphDiv {
+	font-size: 13px;
+	padding: 15px 5px 5px 5px;
+}
+#graphs {
+
+}
+#my-friends {
+	
+}
+#world {
+	
+}
+
+
+/* RESOURCES */
+.resourceLinkDiv {
+	text-align: center;
+	vertical-align: middle;
+	margin: -5px;
+	height: 30px;
+	padding: 10px;
+}
+.resourceLinkDiv a:hover {
+	text-decoration: underline;
+}
+.resourceLinkDiv img {
+	max-width: 90%;
+	max-height: 100%;
+}
+.resourceLinkDiv img:hover {
+	max-width: 95%;
+	width: 95%;
+}
+
+/* OVERVIEW TABLE */
+.overviewTable {
+	width: 100%;
+	border-collapse: collapse;
+}
+.overviewTable td {
+	width: 50%;
+}
+.overviewTable h5 {
+	font-size: 14px;
+	margin: 0 0 5px 10px;
+}
+.overviewTableData {
+	border: 1px solid #A8A8A8;
+	padding: 5px 0 20px 0;
+}
+.innerOverviewHeaderDiv {
+	padding: 5px 0 5px 0;
+}
+.innerOverviewHeaderDiv h4 {
+	display: inline;
+	margin-left: 6px;
+	font-size: 14px;
+	font-weight: normal;
+}
+.innerOverviewHeaderDiv div {
+	float: right;
+	margin-right: 10px;
+}
+.innerOverviewHeaderDiv span {
+	font-size: 12px;
+	margin: 0 5px;
+}
+.innerOverviewHeaderDiv a {
+	font-size: 12px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.innerOverviewHeaderDiv a:hover {
+	background-color: #A8A8A8;
+}
+.innerOverviewTable {
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+	background-color: white;
+}
+.innerOverviewTable td {
+	border: 1px solid #A8A8A8;
+	table-layout: fixed;
+	padding: 5px;
+}
+.innerFeedTable {
+	width: 100%;
+	border-spacing: 15px 0;
+}
+.writtenBy {
+	font-size: 12px;
+	font-weight: normal;
+	color: #A8A8A8;
+}
+.writtenBy a {
+	color: #A8A8A8;
+}
+.writtenBy a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+
+/* WRITE VIEW */
+.writeViewButton {
+	float: right;
+	padding: 7px;
+	border: 1px solid #A8A8A8;
+}
+#writeViewDiv {
+	display: none;
+	background-color: white;
+	border: 1px solid;
+	position: fixed;
+	width: 350px;
+	height: 400px;
+	bottom: 0;
+	right: 3px;
+	font-size: 12px;
+}
+.writeViewHeader {
+	cursor: pointer;
+	padding: 3px 5px;
+	text-align: right;
+	background-color: black;
+}
+.writeViewHeader > button {
+	background-color: black;
+	border: 0;
+	color: white;
+	font-size: 16px;
+}
+.writeViewHeader > button:hover {
+	background-color: gray;
+}
+#writeViewTabDiv {
+	border: 1px solid;
+	background-color: black;
+	position: fixed;
+	bottom: 0;
+	right: 3px;
+	width: 200px;
+}
+#writeViewTextArea {
+	resize: none;
+	width: 344px;
+	height: 330px;
+	outline: none;
+	font-size: 13px;
+}
+.writeViewFooterButton {
+	padding: 3px 7px;
+	border: 1px solid #A8A8A8;
+}
+#sendViewButton {
+	margin: 5px;
+}
+#trashViewButton {
+	margin: 5px;
+	float: right;
+}

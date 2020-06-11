@@ -1,0 +1,126 @@
+#service-request #header-div {
+	font-family: "Helvetica", Arial, sans-serif;
+	text-align: left;
+	color: #4e5565;
+}
+
+#service-request #main-div {
+	padding: 20px;
+	padding-top: 0;
+}
+#service-request #main-div {
+	font-family: "Helvetica", Arial, sans-serif;
+	color: #4e5565;
+}
+#service-request #form-container {
+	margin: 40px auto 0 auto;
+	width: 660px;
+}
+
+#service-request #form-top-half {
+
+}
+#service-request #form-bottom-half {
+	margin-top: 40px;
+}
+
+#service-request #header {
+	border-bottom: 2px solid #ddd;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#service-request #form-title{
+	clear:left;
+	font-size: 41px;
+	font-weight: 200;
+	margin: 0;
+	color: #990000;
+}
+
+#service-request #description-section {
+	margin-top: 30px;
+}
+#service-request #description {
+	width: 100%;
+}
+#service-request #pride {
+	margin-top: 30px;
+}
+#service-request #location-section {
+	margin-top: 30px;
+}
+#service-request #location {
+	width: 100%;
+	height: 20px;
+}
+#service-request #image-section {
+	margin-top: 20px;
+	width: 630px;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+}
+#service-request #image-label {
+  display: block;
+  padding: 1em 2em;
+  color: #4e5565;
+  background: #f8f8f8;
+  border: 2px solid #ddd;
+  border-radius: .4em;
+}
+#service-request #image-button {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 1;
+    width:100%;
+    height: 100%;
+    opacity: 0;
+}
+#service-request #email {
+
+}
+#service-request #phone {
+	
+}
+#service-request #submit {
+	color: #fff;
+	background: #990000;
+	border-radius: 5px;
+	border: none;
+	margin-top: 30px;
+	padding: 12px;
+	font-size: 16px;
+}
+
+/**** Inputs, Buttons, Labels ****/
+#service-request label.description {
+	color: #4e5565;
+	display: block;
+	font-size: 16px;
+	margin: 10px auto 10px auto;
+}
+#service-request .long-text-input {
+	font-family: "Helvetica", Arial, sans-serif;
+	font-size: 100%;
+	width: 100%;
+	height: 10em;
+	resize: none;
+	border: 2px solid #ddd;
+}
+#service-request .medium-text {
+	width: 200px;
+	font-size: 100%;
+	border: 2px solid #ddd;
+}
+
+@media screen and (max-width: 660px) {
+	#service-request #form-container {
+		width: 100%;
+	}
+	#service-request #image-section {
+		width: 100%;
+	}
+}

@@ -1,0 +1,215 @@
+.sheet {
+  position: relative;
+}
+.sheet .guideline {
+  letter-spacing: 10px;
+}
+.sheet.wide-spacing .guideline {
+  letter-spacing: 30px;
+}
+
+.all-caps .guideline {
+  text-transform: uppercase;
+}
+
+.guideline {
+  font-family: 'KG Primary Dots', sans-serif;
+  color: black;
+  text-align: center;
+  border-top: 1px solid #333;
+  font-size: 100px;
+  height: 80px;
+  line-height: 70px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 40px;
+  cursor: default;
+  background-color: white;
+}
+.guideline[contenteditable="true"] {
+  cursor: text;
+}
+.guideline:before {
+  border-top: 1px dashed #333;
+  border-bottom: 1px solid #333;
+  transform: scaleX(5.0) translateX(40%);
+  -ms-transform: scaleX(5.0) translateX(40%);
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 24px;
+  left: 0;
+  width: 20%;
+  height: 41px;
+  z-index: -1;
+}
+
+.write-here {
+  position: absolute;
+  left: -140px;
+  width: 120px;
+  top: -2px;
+}
+.write-here.or {
+  height: 50px;
+  top: 139px;
+}
+.write-here.on {
+  height: 50px;
+  top: 260px;
+}
+.write-here.any {
+  height: 50px;
+  top: 382px;
+}
+.write-here.other {
+  height: 50px;
+  top: 502px;
+}
+.write-here.line {
+  height: 50px;
+  top: 624px;
+}
+.sheet.single-line-mode .write-here.or,
+.sheet.single-line-mode .write-here.on,
+.sheet.single-line-mode .write-here.any,
+.sheet.single-line-mode .write-here.other,
+.sheet.single-line-mode .write-here.line
+{
+  display: none;
+}
+.write-here .instructions {
+  padding: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgba(255,255,255,.9);
+  text-align: center;
+  line-height: 1.2;
+}
+
+.arrow_box {
+	position: relative;
+	background: #3498DB;
+	border-radius: 12px;
+}
+.arrow_box:before {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:before {
+	border-left-color: #3498DB;
+	border-width: 16px;
+	margin-top: -16px;
+}
+
+.web-ui {
+  display: block;
+  margin: 20px auto 30px auto;
+  max-width: 700px;
+}
+.jumbo {
+  background-color: #ECF0F1;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.headline {
+  text-align: center;
+}
+.lead {
+  text-align: center;
+}
+
+.main-logo {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 0 20px 20px 0; 
+}
+.btn-inline {
+  margin-left: 10px;
+}
+.btn .icon-left {
+  margin-right: 8px;
+}
+.checkbox {
+  display: inline;
+}
+.form-control {
+  display: inline;
+  width: auto;
+}
+label {
+  cursor: pointer;
+}
+
+.controls .checkbox,
+.controls .radio {
+  margin: 10px;
+}
+
+.credits p {
+  margin: 5px;
+  text-align: right;
+  color: #95A5A6;
+  font-size: 14px;
+}
+
+.heart {
+  color: #E74C3C;
+  margin: 0 3px;
+}
+
+@media screen {
+  .sheet {
+    max-width: 720px;
+    margin: 0 auto;
+  
+    padding: 20px;
+  }
+}
+
+@media print {
+  .web-ui {
+    display: none;
+  }
+
+  .sheet {
+    margin: 1in 0;
+  }
+
+  .write-here {
+    display: none;
+  }
+}
+
+@media print and (orientation: landscape) {
+  .guideline {
+    font-size: 150px;
+    height: 120px;
+    line-height: 120px;
+    margin-bottom: 60px;
+  }
+  .guideline:before {
+    top: 43px;
+    height: 64px;
+  }
+
+  .guideline.second-page {
+    display:none;
+  }
+}
+
+s {
+  text-decoration: none;
+}
+
+/* vim: sw=2 expandtab
+ */

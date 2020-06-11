@@ -1,0 +1,148 @@
+#!/bin/bash
+# Gerrit commit hook
+CMD="$(basename $0)"
+
+[ "${0:0:2}" == "./" ] && TEST=1 || TEST=0
+
+[ $TEST == 1 ] && {
+	RED="\e[31m"
+	GREEN="\e[32m"
+	#BLUE="\e[34m"
+	BOLD="\e[1m"
+	UNBOLD="\e[0m"
+	RESET="\e[0m"
+} || {
+	BOLD="\002"
+	UNBOLD="\002"
+	RESET="\003"
+	GREEN="\003\063"
+	#BLUE="\003\062"
+	RED="\003\065"
+}
+
+OUT=""
+append() {
+	OUT="${OUT}`echo -e \"$@\"`"
+}
+dump() {
+	[ $TEST == 1 ] && {
+		echo $OUT
+	} || {
+		echo $OUT | nc localhost 12345
+	}
+}
+
+projectpath() {
+	OUT="$@"
+	[ "${OUT:0:8}" == "android_" ] && {
+		# chop of android_
+		OUT="${OUT:8}"
+		# s/_/\//g looks weird in bash
+		OUT="${OUT//_//}"
+	}
+	echo $OUT
+}
+
+removeemail() {
+	OUT="$@"
+	i=`expr index "$OUT" "\("`
+	[ "$i" == "0" ] || OUT="${OUT:0:$[i-1]}"
+	echo $OUT
+}
+
+COMMAND="$CMD"
+until [ -z "$1" ]; do
+	OPTION="$1"
+	shift
+	ARG="$1"
+	shift
+	COMMAND="${COMMAND} ${OPTION} \"${ARG//\"/\\\"}\""
+	case "$OPTION" in
+		"--branch")	BRANCH="$ARG";;
+		"--change")	CHANGE="$ARG";;
+		"--change-url")	CHANGE_URL="$ARG";;
+		"--commit")	COMMIT="${ARG:0:7}";;
+		"--project")	PROJECT="$(projectpath $ARG)";;
+		"--refname")	REFNAME="$ARG";;
+		"--reason")	REASON="$ARG";;
+		"--restorer")	RESTORER="$(removeemail $ARG)";;
+		"--abandoner")	ABANDONER="$(removeemail $ARG)";;
+		"--submitter")	SUBMITTER="$(removeemail $ARG)";;
+		"--uploader")	UPLOADER="$(removeemail $ARG)";;
+		"--patchset")	PATCHSET="$ARG";;
+		"--author")	AUTHOR="$(removeemail $ARG)";;
+		"--comment")	COMMENT="$ARG";;
+		"--newrev")	NEWREV="${ARG:0:7}";;
+		"--oldrev")	OLDREV="${ARG:0:7}";;
+		"--CRVW")	CRVW="${ARG}";;
+		"--VRIF")	VRIF="${ARG}";;
+		*)	append "Unknown $OPTION $ARG";;
+	esac
+done
+
+[ $TEST == 1 ] || {
+	echo "${COMMAND}" >> /home/gerrit2/motomagic/hooks/reallog
+}
+
+append "[${BOLD}"
+append "${GREEN}${PROJECT}${RESET}"
+[ "${BRANCH}" == "" ] || append ":${RED}${BRANCH}${RESET}"
+[ "${REFNAME}" == "" ] || append ":${RED}${REFNAME}${RESET}"
+append "${UNBOLD}] "
+
+[ "${CHANGE_URL}" == "" ] || append "${CHANGE_URL} "
+
+case "$CMD" in
+	"patchset-created")
+		append "${UPLOADER} created patchset ${PATCHSET} at ${COMMIT}"
+		;;
+	"comment-added")
+		# not showing ${COMMIT} cause it's useless
+		append "${AUTHOR} commented"
+		[ "${VRIF}" == "" ] || {
+			case "$VRIF" in
+				-1) append " ${RED}${BOLD}Fails${UNBOLD}${RESET}";;
+				0)  ;;
+				1)  append " ${GREEN}${BOLD}Verified${UNBOLD}${RESET}";;
+				*)  append " ${RED}VRIF=${VRIF}${RESET}";;
+			esac
+		}
+		[ "${CRVW}" == "" ] || {
+			case "$CRVW" in
+				-2) append " ${RED}${BOLD}Do not submit${UNBOLD}${RESET}";;
+				-1) append " ${RED}Do not want${RESET}";;
+				0)  ;;
+				1)  append " ${GREEN}LGTM${RESET}";;
+				2)  append " ${GREEN}${BOLD}Approved${UNBOLD}${RESET}";;
+				*)  append " CRVW=${CRVW}";;
+			esac
+		}
+		append " ${COMMENT}"
+		;;
+	"change-merged")
+		append "${SUBMITTER} merged ${CHANGE}"
+		;;
+	"change-abandoned")
+		append "${ABANDONER} abandoned ${CHANGE} ${REASON}"
+		;;
+	"change-restored")
+		append "${RESTORER} restored ${CHANGE} ${REASON}"
+		;;
+	"ref-updated")
+		append "${SUBMITTER}"
+		[ "$OLDREV" == "0000000" ] && {
+			append " created branch at ${NEWREV}"
+		} || {
+			[ "$NEWREV" == "0000000" ] && {
+				append " deleted branch at ${OLDREV}"
+			} || {
+				append " updated ${OLDREV}..${NEWREV}"
+			}
+		}
+		;;
+	*)
+		append "Unknown command $CMD"
+		;;
+esac
+dump
+

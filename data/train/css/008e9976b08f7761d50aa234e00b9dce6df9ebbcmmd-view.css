@@ -1,0 +1,18 @@
+/**
+ * Dictionaries
+ */
+.view-id-multimedia_dictionary_owner_view {
+  margin-top: 16px;
+}
+.view-id-multimedia_dictionary_owner_view table {
+  width: auto;
+}
+.view-id-multimedia_dictionary_owner_view  .views-field-view-node,
+.view-id-multimedia_dictionary_owner_view  .views-field-edit-node {
+  width: 32px;
+}
+
+.view-id-multimedia_dictionary_owner_view  .views-field-field-mmde-word-audio-value,
+.view-id-multimedia_dictionary_owner_view  .views-field-field-mmde-translation-audio-value {
+  padding-right: 32px;
+}

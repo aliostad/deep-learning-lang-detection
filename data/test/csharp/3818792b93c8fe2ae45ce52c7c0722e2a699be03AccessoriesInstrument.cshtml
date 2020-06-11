@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Title = "配件设备";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="@Url.Content("~/Scripts/InstrumentJs.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.form.js")" type="text/javascript"></script>
+<script type="text/javascript" language="javascript">
+    var oTableAccess = null;
+    $(document).ready(function () {
+        oTableAccess = WrapTables4Ajax("tbAccessoriesInstrumentList", "/Instrument/GetAccessoriesInstrumentList?parentID=@ViewBag.InstrumentId&dataType=@ViewBag.DataType", "100%", true, "auto");
+        if ("0" == "@ViewBag.DataType") {
+            $("#btnAccessoriseAdd")[0].style.display = "none";   //隐藏"新增"按钮
+        }
+    });
+    //增加
+    function fnAccessoriseAdd() {
+        window.open("/Instrument/AddAccessoriesInstrument?instrumentId=" + $("#instrumentId").val());
+    }
+    //修改
+    function fnAccessoriseEdit(obj) {
+        var id = $(obj).attr("id");
+        window.open("/Instrument/InstrumentAccessoriesInstrumentEdit?instrumentId=" + id);
+    }
+    //详细
+    function fnAccessoriesInstrumentDetail(obj) {
+        var id = $(obj).attr("id");
+        window.open("/Instrument/AccessoriesInstrumentDetail?instrumentId=" + id);
+    }
+    //删除
+    function fnAccessoriseDelete(obj) {
+        var instrumentId = $(obj).attr("id");
+        var instrumentName = $(obj).attr("name");
+        fnConfirmWithoutF5('确定删除【' + instrumentName + '】？', '@Url.Content("~/Instrument/Delete?instrumentId=")' + instrumentId, fnReloadInstrument);
+        return false;
+    }
+
+    function fnInnerNewWindow(url, title, width, height) {
+        ymPrompt.win({ message: url, width: width, height: height, title: title, handler: null, iframe: true });
+    }
+    //重新加载
+    function fnReloadInstrument() {
+        //刷新
+        oTableAccess.api().ajax.reload();
+    }
+    
+</script>
+<input id="instrumentId" type="hidden" name="instrumentId" value="@ViewBag.InstrumentId"/>
+<!--Authorization operate="/Instrument/InstrumentInnerCheck"-->
+<input id="btnAccessoriseAdd" type="button" onclick="fnAccessoriseAdd()" class="submit_btn" value="新增" />&nbsp;
+<!--/Authorization-->
+<table id="tbAccessoriesInstrumentList">
+    <thead>
+        <tr>
+            <th style="width: 100px;">
+                操作
+            </th>
+            <th>
+                配件名称
+            </th>
+            <th>
+                管理编号
+            </th>
+            <th>
+                型号规格
+            </th>
+            <th>
+                出厂编号
+            </th>
+            <th>
+                生产厂家
+            </th>
+            <th>
+                保管人
+            </th>
+            <th>
+                备注
+            </th>
+            
+            
+        </tr>
+    </thead>
+</table>
+

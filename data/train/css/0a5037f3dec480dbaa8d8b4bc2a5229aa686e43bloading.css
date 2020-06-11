@@ -1,0 +1,42 @@
+#container {
+  position:absolute;
+  background:lightgray;
+  height:50px;
+  width:200px;
+  border:1px solid black;
+  top:20px;
+  left:20px;
+}
+
+#progress {
+  position:relative;
+  background-color:black;
+  height:100%;
+
+  /* [name] [duration] [type] [iterations] [delay]*/
+  -webkit-animation: load 3s linear 0s;
+     -moz-animation: load 3s linear 0s;
+       -o-animation: load 3s linear 0s;
+          animation: load 3s linear 0s;
+}
+
+@-webkit-keyframes load {
+  0%   { width:0%; }
+  100% { width:100%; }
+}
+
+@-moz-keyframes load {
+  0%   { width:0%; }
+  100% { width:100%; }
+}
+
+@-o-keyframes load {
+  0%   { width:0%; }
+  100% { width:100%; }
+}
+
+@keyframes load {
+  0%   { width:0%; }
+  100% { width:100%; }
+}
+

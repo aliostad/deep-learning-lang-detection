@@ -1,0 +1,90 @@
+#!/bin/bash
+# this is the boot-service init script for the iSCSI-Storage-hosts
+#
+# This file is part of openQRM.
+#
+# openQRM is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License version 2
+# as published by the Free Software Foundation.
+#
+# openQRM is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with openQRM.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Copyright 2009, Matthias Rechenburg <matt@openqrm.com>
+#
+
+OPENQRM_SERVER_BASE_DIR=$(pushd $(dirname $0)/../../../../.. > /dev/null; echo $PWD; popd > /dev/null)
+. $OPENQRM_SERVER_BASE_DIR/openqrm/include/openqrm-functions
+. $OPENQRM_SERVER_BASE_DIR/openqrm/plugins/iscsi-storage/include/openqrm-plugin-iscsi-storage-functions
+LINE_IFS='
+'
+
+# do not start on the intitrd
+if [ -f /etc/initrd-devices.conf ]; then
+	exit 0
+fi
+
+function iscsi_storage_start() {
+	echo "Starting the openQRM iscsi-storage-plugin"
+    if [ -x "/etc/init.d/iscsi-target" ]; then
+        if [ -x "`which invoke-rc.d 2>/dev/null`" ]; then
+            invoke-rc.d iscsi-target start
+        else
+            /etc/init.d/iscsi-target start
+        fi
+    elif [ -x /etc/init.d/iscsitarget ]; then
+        if [ -x "`which invoke-rc.d 2>/dev/null`" ]; then
+            invoke-rc.d iscsitarget start
+        else
+            /etc/init.d/iscsitarget start
+        fi
+    fi
+}
+
+
+function iscsi_storage_stop() {
+	echo "Stopping the openQRM iscsi-storage-plugin"
+    if [ -x "/etc/init.d/iscsi-target" ]; then
+        if [ -x "`which invoke-rc.d 2>/dev/null`" ]; then
+            invoke-rc.d iscsi-target stop
+        else
+            /etc/init.d/iscsi-target stop
+        fi
+    elif [ -x /etc/init.d/iscsitarget ]; then
+        if [ -x "`which invoke-rc.d 2>/dev/null`" ]; then
+            invoke-rc.d iscsitarget stop
+        else
+            /etc/init.d/iscsitarget stop
+        fi
+    fi
+
+}
+
+
+
+
+
+case "$1" in
+	start)
+		iscsi_storage_start
+		;;
+	stop)
+		iscsi_storage_stop
+		;;
+	restart)
+		iscsi_storage_stop
+		sleep 1
+		iscsi_storage_start
+		;;
+	*)
+		echo "Usage: $0 {start|stop|restart}"
+		exit 1
+
+esac
+exit $?
+

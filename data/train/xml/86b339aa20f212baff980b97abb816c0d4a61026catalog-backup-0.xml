@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ENVO/about/ENVO_00001998" uri="http://purl.obolibrary.org/obo/ENVO_00001998"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/plant_trait_ontology.obo" uri="file:/home/alexx/PPIO/Ontologies/plant_trait_ontology.obo"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+<<<<<<< HEAD
+        <uri id="Automatically generated entry, Timestamp=1374484626218" name="duplicate:http://purl.obolibrary.org/obo/to.owl" uri="Other%20versions/converted.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1374484626218" name="duplicate:http://purl.obolibrary.org/obo/to.owl" uri="Other%20versions/PPIO%20edited%20.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1374484626218" name="duplicate:http://purl.oclc.org/PPIO" uri="PPIO_no_IDs.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1374484626218" name="duplicate:http://purl.oclc.org/PPIO" uri="PPIO.owl"/>
+=======
+        <uri id="Automatically generated entry, Timestamp=1374568612702" name="duplicate:http://purl.obolibrary.org/obo/to.owl" uri="Other%20versions/PPIO%20edited%20.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1374568612702" name="duplicate:http://purl.obolibrary.org/obo/to.owl" uri="Other%20versions/converted.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1374568612702" name="duplicate:http://purl.oclc.org/PPIO" uri="PPIO_no_IDs.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1374568612702" name="duplicate:http://purl.oclc.org/PPIO" uri="PPIO.owl"/>
+>>>>>>> a58c59f63de6125114d42eeb99a3dc97c26057f7
+    </group>
+</catalog>

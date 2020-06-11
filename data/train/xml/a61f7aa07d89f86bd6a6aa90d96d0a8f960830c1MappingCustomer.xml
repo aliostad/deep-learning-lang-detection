@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MAPPINGS NAME="Customer">
+	<MAPPING ID="1" COLUMN="CustomerID" SECTION="1"/>
+	<MAPPING ID="2" COLUMN="CustomerName" SECTION="2"/>
+	<MAPPING ID="3" COLUMN="CustomerSurName" SECTION="3"/>
+	<MAPPING ID="4" COLUMN="CustomerAddress" SECTION="4"/>
+	<MAPPING ID="5" COLUMN="CustomerPhone" SECTION="5"/>
+	<MAPPING ID="6" COLUMN="CustomerNation" SECTION="6"/>
+	<MAPPING ID="7" COLUMN="CustomerLanguage" SECTION="7"/>
+	<MAPPING ID="8" COLUMN="CustomerStatus" SECTION="8"/>
+	<MAPPING ID="9" COLUMN="CustomerUpdate" SECTION="9"/>
+	<MAPPING ID="10" COLUMN="TaskRef" SECTION="10"/>
+	<MAPPING ID="11" COLUMN="CustomerGrade" SECTION="11"/>	
+</MAPPINGS>
+
+

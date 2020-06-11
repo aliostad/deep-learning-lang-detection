@@ -1,0 +1,44 @@
+a.cart_quantity_apply {
+    background: #F0F0E9;
+    color: #696763;
+    display: inline-block;
+    font-size: 15px;
+    overflow: hidden;
+    text-align: center;
+    float: left;
+    margin-left: 7px;
+    height: 27px;
+    width: 53px;
+}
+
+.card-continue{
+    padding-left: 39%;
+}
+
+.cart_quantity_button_card{
+     margin-left: 16%;
+}
+
+#writeAddress{
+    display: none;
+}
+
+#writeBankCardNumber{
+    display: none;
+}
+
+.orderCreated{
+    color: rgba(255, 135, 18, 0.92); font-family: 'Raleway',sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    margin-left: -5%;
+}
+
+.empty-card-block{
+    color: rgba(255, 135, 18, 0.92); font-family: 'Raleway',sans-serif;
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 36px;
+        margin-left: 40%;
+}

@@ -1,0 +1,22 @@
+<services>
+	<service id="1" name="Pitsa" type="single" price="10000">
+		<toitained>1</toitained>
+	</service>
+	<service id="2" vehicle="true" driver="true" name="Bensiin" type="slider" price="10000">
+		<bensiin>1</bensiin>
+	</service>
+	<service id="3" name="Hamburger" type="single" price="10000">
+		<toitained>1</toitained>
+	</service>	
+	<service id="4" name="Friikartulid" type="single" price="10000">
+		<toitained>1</toitained>
+	</service>	
+	<service id="5" name="MTA Orange" type="single" price="10000">
+		<toitained>1</toitained>
+	</service>	
+	<group id="6" name="Kiirtoit">
+		<service>1</service>
+		<service>1</service>
+		<service>1</service>
+	</group>
+</services>

@@ -1,0 +1,184 @@
+/**** Isotope CSS3 transitions ****/
+
+.isotope, .isotope-grid {
+  -webkit-transition-duration: 0.6s;
+     -moz-transition-duration: 0.6s;
+       -o-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+}
+
+
+.isotope-grid .isotope-item {
+ /* -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;*/
+}
+
+.isotope, .isotope-grid {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item, .isotope-grid .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+       -o-transition-property:         top, left, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+
+
+/**** Isotope Filtering ****/
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+
+
+/**** Load More ****/
+.load-isotope {
+	position: relative;
+	height: 50px;
+	transition: all 0.4s ease;
+	margin-top: 50px;
+	}
+	.load-isotope.disabled { 
+	transition-delay: 3.2s;
+	height: 0px;
+	margin: 0;
+	opacity: 0;
+	overflow: hidden;
+	}
+	
+.load-isotope > a {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	transition: all 0.3s ease;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+  	-moz-transform: translateX(-50%) translateY(-50%);
+  	-ms-transform: translateX(-50%) translateY(-50%);
+  	-o-transform: translateX(-50%) translateY(-50%);
+  	transform: translateX(-50%) translateY(-50%);
+	z-index: 2;
+	}
+	.load-isotope > a[data-method='infiniteload'] {
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";	
+	visibility: hidden;
+	}
+	.load-isotope.loading > a, .load-isotope.disabled > a {
+	visibility: hidden;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	}
+	
+.load-isotope > .load-message {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 260px;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+  	-moz-transform: translateX(-50%) translateY(-50%);
+  	-ms-transform: translateX(-50%) translateY(-50%);
+  	-o-transform: translateX(-50%) translateY(-50%);
+  	transform: translateX(-50%) translateY(-50%);
+	transition: all 0.3s 0.3s ease;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	visibility: hidden;
+	}
+	.load-isotope.disabled > .load-message {
+	visibility: visible;
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";	
+	}
+	
+.load-isotope:after {
+	content:"";
+	position: absolute;
+	z-index: 2001;
+	top: 50%;
+	left: 50%;
+	width: 6px;
+	height: 6px;
+	border-radius: 10px;
+
+	margin-top: -3px;
+	margin-left: -3px;
+	
+	background: #000000;
+	
+	-webkit-animation: isotope-loading 0.7s infinite ease;
+	-moz-animation: isotope-loading 0.7s infinite ease;
+	-o-animation: isotope-loading 0.7s infinite ease;
+	animation: isotope-loading 0.7s infinite ease;
+	
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	visibility: hidden;
+	transition: all 0.3s ease;
+	}
+	.text-light .load-isotope:after { background: #ffffff; }
+	.load-isotope.loading:not(.disabled):after {
+	visibility: visible;
+	transition-delay: 0.1s;	
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	}
+		
+@-webkit-keyframes isotope-loading {
+  0% { margin-top: 2px; }
+  50% { margin-top: -8px; }
+  100% { margin-top: 2px; }
+}
+@-moz-keyframes isotope-loading {
+  0% { margin-top: 2px; }
+  50% { margin-top: -8px; }
+  100% { margin-top: 2px; }
+}
+@keyframes isotope-loading {
+  0% { margin-top: 2px; }
+  50% { margin-top: -8px; }
+  100% { margin-top: 2px; }
+}

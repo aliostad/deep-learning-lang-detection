@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mappingStruct name="XmlMappingFile">
+    <mapping id="1">
+        <className>fist1</className>
+        <featureName>second1</featureName>
+    </mapping>
+    <mapping id="2">
+        <className>fist2</className>
+        <featureName>second2</featureName>
+    </mapping>
+    <mapping id="3">
+        <className>fist3</className>
+        <featureName>second3</featureName>
+    </mapping>
+    <mapping id="4">
+        <className>fist4</className>
+        <featureName>second4</featureName>
+    </mapping>
+    <mapping id="5">
+        <className>fist5</className>
+        <featureName>second5</featureName>
+    </mapping>
+    <mapping id="6">
+        <className>fist6</className>
+        <featureName>second6</featureName>
+    </mapping>
+    <mapping id="7">
+        <className>fist7</className>
+        <featureName>second7</featureName>
+    </mapping>
+    <mapping id="8">
+        <className>fist8</className>
+        <featureName>second8</featureName>
+    </mapping>
+    <mapping id="9">
+        <className>fist9</className>
+        <featureName>second9</featureName>
+    </mapping>
+    <mapping id="10">
+        <className>fist10</className>
+        <featureName>second10</featureName>
+    </mapping>
+    <mapping id="11">
+        <className>fist11</className>
+        <featureName>second11</featureName>
+    </mapping>
+    <mapping id="12">
+        <className>fist12</className>
+        <featureName>second12</featureName>
+    </mapping>
+    <mapping id="13">
+        <className>fist13</className>
+        <featureName>second13</featureName>
+    </mapping>
+    <mapping id="14">
+        <className>fist14</className>
+        <featureName>second14</featureName>
+    </mapping>
+    <mapping id="15">
+        <className>fist15</className>
+        <featureName>second15</featureName>
+    </mapping>
+    <mapping id="16">
+        <className>fist16</className>
+        <featureName>second16</featureName>
+    </mapping>
+    <mapping id="17">
+        <className>fist17</className>
+        <featureName>second17</featureName>
+    </mapping>
+    <mapping id="18">
+        <className>fist18</className>
+        <featureName>second18</featureName>
+    </mapping>
+    <mapping id="19">
+        <className>fist19</className>
+        <featureName>second19</featureName>
+    </mapping>
+    <mapping id="20">
+        <className>fist20</className>
+        <featureName>second20</featureName>
+    </mapping>
+</mappingStruct>

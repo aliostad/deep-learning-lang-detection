@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<simplepdl:Process xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:simplepdl="http://simplepdl" xsi:schemaLocation="http://simplepdl SimplePDL.ecore" name="processus">
+  <processElements xsi:type="simplepdl:WorkDefinition" linksToSuccessors="//@processElements.4 //@processElements.5 //@processElements.6 //@processElements.7" name="Conception" needSets="//@processElements.14"/>
+  <processElements xsi:type="simplepdl:WorkDefinition" linksToPredecessors="//@processElements.4 //@processElements.5" name="RedactionDoc" needSets="//@processElements.17"/>
+  <processElements xsi:type="simplepdl:WorkDefinition" linksToPredecessors="//@processElements.6" linksToSuccessors="//@processElements.8" name="Developpement" needSets="//@processElements.20"/>
+  <processElements xsi:type="simplepdl:WorkDefinition" linksToPredecessors="//@processElements.7 //@processElements.8" name="RedactionTests" needSets="//@processElements.23"/>
+  <processElements xsi:type="simplepdl:WorkSequence" predecessor="//@processElements.0" successor="//@processElements.1"/>
+  <processElements xsi:type="simplepdl:WorkSequence" linkType="finishToFinish" predecessor="//@processElements.0" successor="//@processElements.1"/>
+  <processElements xsi:type="simplepdl:WorkSequence" linkType="finishToStart" predecessor="//@processElements.0" successor="//@processElements.2"/>
+  <processElements xsi:type="simplepdl:WorkSequence" predecessor="//@processElements.0" successor="//@processElements.3"/>
+  <processElements xsi:type="simplepdl:WorkSequence" linkType="finishToFinish" predecessor="//@processElements.2" successor="//@processElements.3"/>
+  <processElements xsi:type="simplepdl:Ressource" name="concepteur" quantity="3"/>
+  <processElements xsi:type="simplepdl:Ressource" name="developpeur" quantity="2"/>
+  <processElements xsi:type="simplepdl:Ressource" name="machine" quantity="4"/>
+  <processElements xsi:type="simplepdl:Ressource" name="redacteur" quantity="1"/>
+  <processElements xsi:type="simplepdl:Ressource" name="testeur" quantity="2"/>
+  <processElements xsi:type="simplepdl:NeedSet" name="conception" needs="//@processElements.15 //@processElements.16" wd="//@processElements.0"/>
+  <processElements xsi:type="simplepdl:Need" ressource="//@processElements.9" quantity="2" needSet="//@processElements.14"/>
+  <processElements xsi:type="simplepdl:Need" ressource="//@processElements.11" quantity="2" needSet="//@processElements.14"/>
+  <processElements xsi:type="simplepdl:NeedSet" name="redactionDoc" needs="//@processElements.18 //@processElements.19" wd="//@processElements.1"/>
+  <processElements xsi:type="simplepdl:Need" ressource="//@processElements.11" quantity="1" needSet="//@processElements.17"/>
+  <processElements xsi:type="simplepdl:Need" ressource="//@processElements.12" quantity="1" needSet="//@processElements.17"/>
+  <processElements xsi:type="simplepdl:NeedSet" name="developpement" needs="//@processElements.21 //@processElements.22" wd="//@processElements.2"/>
+  <processElements xsi:type="simplepdl:Need" ressource="//@processElements.10" quantity="2" needSet="//@processElements.20"/>
+  <processElements xsi:type="simplepdl:Need" ressource="//@processElements.11" quantity="3" needSet="//@processElements.20"/>
+  <processElements xsi:type="simplepdl:NeedSet" name="redactionTests" needs="//@processElements.24 //@processElements.25" wd="//@processElements.3"/>
+  <processElements xsi:type="simplepdl:Need" ressource="//@processElements.11" quantity="2" needSet="//@processElements.23"/>
+  <processElements xsi:type="simplepdl:Need" ressource="//@processElements.13" quantity="1" needSet="//@processElements.23"/>
+</simplepdl:Process>

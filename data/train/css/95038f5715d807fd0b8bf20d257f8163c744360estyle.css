@@ -1,0 +1,56 @@
+#wrapper {
+    width:960px;
+    margin:10px auto 20px;
+}
+
+/*Write controls*/
+#write_form {
+    display:none;
+}
+#moods label{
+    height: 70px;
+    width: 70px;
+}
+#message_box {
+    width:600px;
+    height:100px;
+}
+
+/*jquery radio */
+.ui-state-active, .ui-state-hover {
+    background:#aaa;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    -moz-box-shadow: 0 0 5px 5px #ddd;
+    -webkit-box-shadow: 0 0 5px 5px#dd;
+    box-shadow: 0 0 5px 5px #ddd;
+}
+.ui-helper-hidden {
+    display: none;
+}
+.ui-helper-hidden-accessible {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+}
+
+/*Message styles*/
+.message {
+    float:left;
+    border:5px solid #eee;
+    height:100px;
+    width:170px;
+    margin:10px;
+    padding:10px;
+}
+
+.hidden {
+    display:none;
+}
+
+.great, .good {
+    border:5px solid green;
+}
+
+.bad {
+    border:5px solid red;
+}

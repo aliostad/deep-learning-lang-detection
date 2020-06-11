@@ -1,0 +1,143 @@
+.load_con_l {
+width: 540px;
+height: 400px;
+float: left;
+border-style: none;
+cursor: pointer;
+background:url(../img/0901denglutu.jpg);
+}
+.load_con_r {
+width: 402px;
+float: left;
+padding-left: 34px;
+}
+.load_con_r .r_con {
+width: 340px;
+height: 375px;
+padding: 60px 0 0 60px;
+}
+.load_con_r .r_con .cell {
+width: 280px;
+height: 40px;
+position: relative;
+margin-bottom: 20px;
+}
+input{outline: none;}
+.load_con_r .r_con .cell label {
+font-size: 14px;
+padding: 0 15px;
+color: #aaa;
+cursor: text;
+line-height: 38px;
+position: absolute;
+left: 0;
+top: 0;
+z-index: 1;
+}
+
+.load_con_r .r_con .cell .text {
+width: 248px;
+height: 16px;
+color: #000;
+font-size: 14px;
+padding: 11px 15px;
+font-size: 14px;
+border: 1px solid #cfcfd1;
+border-radius: 3px;
+line-height: 16px;
+position: absolute;
+left: 0;
+top: 0;
+}
+.load_con_r .r_con .cell .light{
+	border-color:#7abd54;
+}
+.load_con_r .r_con .cell .ok {
+background: url(../img/load1101.png) no-repeat -176px -66px;
+width: 17px;
+height: 17px;
+display: block;
+position: absolute;
+right: 14px;
+top: 12px;
+}
+.load_con_r .r_con .cell .cell_hid {
+color: #e20000;
+padding-right: 20px;
+white-space: nowrap;
+height: 28px;
+padding-left: 38px;
+border: 1px solid #de3a39;
+border-radius: 3px;
+line-height: 28px;
+background: #fef1f7 url(../img/load1101.png) no-repeat -395px -163px;
+position: absolute;
+left: 0;
+top: -32px;
+z-index: 3;
+}
+.load_con_r .r_con .cell .cell_hid .sanj {
+position: absolute;
+left: 20px;
+top: 28px;
+background: url(../img/load1101.png?6) no-repeat -35px -168px;
+width: 15px;
+height: 8px;
+display: block;
+}
+.load_con_r .r_con .r_rem {
+height: 13px;
+margin-bottom: 24px;
+}
+input{
+	border:none;
+}
+.load_con_r .r_con .r_rem .check{
+	height:15px;
+	width: 15px;
+	float: left;
+	margin: 0 5px 0 20px;
+}
+.load_con_r .r_con .r_rem .r_rem1 {
+height: 14px;
+line-height: 14px;
+float: left;
+color: #666;
+margin-right: 15px;
+cursor: pointer;
+}
+.load_con_r .r_con .r_rem .r_rem2 {
+color: #666;
+float: left;
+height: 14px;
+line-height: 14px;
+}
+.load_con_r .r_con .r_load {
+line-height: 40px;
+height: 40px;
+margin-bottom: 10px;
+}
+.load_con_r .r_con .r_load_btn {
+background: url(../img/load1101.png) no-repeat -34px -64px;
+border: 0;
+font-size: 15px;
+width: 140px;
+height: 40px;
+font-family: "微软雅黑";
+text-align: center;
+color: #fff;
+cursor: pointer;
+float: left;
+margin-right: 60px;
+}
+.load_con_r .r_con .r_load_zc {
+float: left;
+color: #c8030a;
+font-size: 14px;
+cursor: pointer;
+}
+
+
+
+
+

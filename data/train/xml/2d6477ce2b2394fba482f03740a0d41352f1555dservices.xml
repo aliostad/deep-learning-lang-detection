@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<container xmlns="http://symfony-project.org/2.0/container">
+  <services>
+    <service id="randomQuote" class="App\Service\RandomQuote" shared="true">
+      <argument type="service" id="randomizer" />
+    </service>
+    <service id="randomizer" class="App\Service\Randomizer" shared="true"> </service>
+    <service id="identity" class="App\Service\Identity" shared="true"></service>
+    <service id="user" class="App\Service\User" shared="true"></service>
+    <service id="card" class="App\Service\Card" shared="true"></service>
+    <service id="address" class="App\Service\Address" shared="true"></service>
+  </services>
+</container>

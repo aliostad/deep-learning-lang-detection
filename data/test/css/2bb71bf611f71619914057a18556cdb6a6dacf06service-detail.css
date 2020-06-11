@@ -1,0 +1,65 @@
+.container{overflow: inherit;height: auto;}
+.container .service-menu{width:190px;float:left;position:relative;background-color:#fafafa;}
+.container .service-menu > h3{height:30px;line-height:30px;/*background-color:#000;*/background-color:#e0b500;color:#fff;padding-left:20px;vertical-align: middle;}
+.container .service-menu > h3 > a{color:#fff;vertical-align: middle;}
+.container .service-menu > h3 span{color: #fff;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width: 100px;display: inline-block;vertical-align: middle;}
+.container .service-menu .list{padding-top:10px;}
+.container .service-menu .list > li{cursor:pointer;padding: 10px 20px;}
+.container .service-menu .list > li:hover{background-color:#ebebeb;}
+.container .service-menu .list > li.selected{background-color:#dcddde;}
+.container .service-menu .list > li.FAQ.selected{background-color:#dcddde;}
+.container .service-menu .list > li span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.container .service-menu .sub-menu{display: none;}
+.container .service-menu .sub-menu > li{cursor:pointer;padding: 10px 40px;}
+.container .service-menu .sub-menu > li:hover{background-color:#ebebeb;}
+.container .service-menu .sub-menu > li.selected{background-color:#ebebeb;}
+.container .service-menu .sub-menu > li span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+/* service detail */
+.container .service-detail{width:800px;background-color:#fdfdfd;float: left;color: #666;}
+.container .service-detail .service-wrap{padding: 15px 20px;min-height: 600px;float: left;width:760px;}
+.container .service-detail .service-wrap h3{color: #cfa42f;font-weight: bold;}
+/* service report */
+.container .service-detail .service-report div{position: relative;background: transparent url("../images/icons.png") 15px -96px no-repeat;height: 24px;line-height: 24px;margin: 10px 0;}
+.container .service-detail .service-report div:hover{background-color: #e6e6e6;}
+.container .service-detail .service-report div:hover a{display: inline;}
+.container .service-detail .service-report div span.text{margin-left: 40px;}
+.container .service-detail .service-report div span.date{position: absolute;left: 300px;top: 0;}
+.container .service-detail .service-report div a{color: #666666;background-image: url("../images/icons.png");position: absolute;display: none;}
+.container .service-detail .service-report div a:hover{text-decoration: underline;}
+.container .service-detail .service-report div a.open{background-position: 0 -145px;padding-left: 24px;top: 0;right: 100px;}
+.container .service-detail .service-report div a.download{background-position: 0 -195px;padding-left: 24px;top: 0;right: 20px;}
+.container .service-report.pagination{padding: 20px 32px;}
+.container .service-report.pagination a{display: inline-block;margin:0 2px;padding: 0 5px;line-height:18px;border: 1px solid #c8c8c8;background-color: #FFF;color: #000;}
+.container .service-report.pagination a:hover, .container .service-report.pagination a.selected{background-color: #666666;color: #fff;border-color: #666666;}
+/* service prompt */
+.container .service-detail .service-prompt h3{color: #666;font-weight: bold;text-align: center;font-size: 14px;}
+.container .service-detail .service-prompt p{line-height: 24px;margin: 20px 10px 0 10px;}
+.container .service-detail .service-prompt div{text-align: center;margin-top: 50px;}
+.container .service-detail .service-prompt div a{color: #fff;display: inline-block;height: 30px;line-height: 30px;width: 80px;text-align: center;background-color: #666;margin: 0 10px;}
+/* service order */
+.container .service-detail .service-order h3{font-weight: normal;text-align: center;color: #666;margin: 30px;}
+.container .service-detail .service-order h3 em, .container .service-detail .service-order .row em{color: #f00;vertical-align: middle;}
+.container .service-detail .service-order .row{}
+.container .service-detail .service-order .row .label{display: inline-block;height: 24px;line-height: 24px;text-align: right;width: 250px;vertical-align: middle;}
+.container .service-detail .service-order .row .text{height: 22px;line-height: 22px;border: 1px solid #dcdcdc;width: 200px;margin: 5px 10px;vertical-align: middle;}
+.container .service-detail .service-order .row textarea{margin: 5px 0 0 10px;border: 1px solid #dcdcdc;width: 288px;height: 100px;resize: none;overflow: auto;}
+.container .service-detail .service-order .row .atop{vertical-align: top;margin-top: 5px;}
+.container .service-detail .service-order .row a.confirm{display: inline-block;width: 80px;height: 30px;line-height: 30px;background-color: #e0b500;text-align: center;color: #fff;margin: 20px 0 0 260px;}
+.container .service-detail .service-order .row select{margin: 5px 7px;width: 200px;height: 23px;padding: 1px;vertical-align: middle;}
+.container .service-detail .service-order label.error{color: #f00;margin: 0 0 0 5px;padding-left: 20px;}
+.container .service-detail .service-order label.success, .container .service-detail .service-order .tips{color: #cfa42f;margin: 0 0 0 5px;}
+.container .service-detail .service-order label.error{background: transparent url("../images/service/icon-error.png") left center no-repeat;}
+.container .service-detail .service-order label.success{background: transparent url("../images/service/icon-success.png") left center no-repeat;}
+.container .service-detail .service-order .tips{display:none;}
+/* service pef */
+.container .service-detail .service-pef h3{margin-bottom: 10px;}
+.container .service-detail .service-pef div div{display: none;}
+.container .service-detail .service-pef div p{line-height: 24px;}
+.container .service-detail .service-pef div p.issue{padding-left: 5px;cursor: pointer;}
+.container .service-detail .service-pef div p.issue:hover, .container .service-detail .service-pef div p.issue.selected{background-color: #e6e6e6;}
+.container .service-detail .service-pef div p.answer{padding: 0 24px;display: none;margin: 10px 0;}
+.container .service-detail .service-pef div table{table-layout: fixed;width: 90%;margin: 10px auto;}
+.container .service-detail .service-pef div table th{font-weight: bold;background-color: #f0f0f0;}
+.container .service-detail .service-pef div table th,
+.container .service-detail .service-pef div table td{border: 1px solid #c8c8c8;text-align: center;height: 30px;line-height: 20px;}
+.container .service-detail .service-pef div table tr td:first-child{font-weight: bold;}

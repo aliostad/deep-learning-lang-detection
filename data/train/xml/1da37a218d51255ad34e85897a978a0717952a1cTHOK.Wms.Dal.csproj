@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB6CC091-9BC6-415C-A0D2-E34289669102}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>THOK.Wms.Dal</RootNamespace>
+    <AssemblyName>THOK.Wms.Dal</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0-rc\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EntityRepository\AreaRepository.cs" />
+    <Compile Include="EntityRepository\BillTypeRepository.cs" />
+    <Compile Include="EntityRepository\BrandRepository.cs" />
+    <Compile Include="EntityRepository\CellRepository.cs" />
+    <Compile Include="EntityRepository\CheckBillDetailRepository.cs" />
+    <Compile Include="EntityRepository\CheckBillMasterRepository.cs" />
+    <Compile Include="EntityRepository\CheckSearchDetailRepository.cs" />
+    <Compile Include="EntityRepository\CompanyRepository.cs" />
+    <Compile Include="EntityRepository\DailyBalanceRepository.cs" />
+    <Compile Include="EntityRepository\DepartmentRepository.cs" />
+    <Compile Include="EntityRepository\DifferSearchDetailRepository.cs" />
+    <Compile Include="EntityRepository\EmployeeRepository.cs" />
+    <Compile Include="EntityRepository\InBillAllotRepository.cs" />
+    <Compile Include="EntityRepository\InBillDetailRepository.cs" />
+    <Compile Include="EntityRepository\InBillMasterRepository.cs" />
+    <Compile Include="EntityRepository\IntoSearchDetailRepository.cs" />
+    <Compile Include="EntityRepository\JobRepository.cs" />
+    <Compile Include="EntityRepository\MoveBillDetailRepository.cs" />
+    <Compile Include="EntityRepository\MoveBillMasterRepository.cs" />
+    <Compile Include="EntityRepository\MoveSearchDetailRepository.cs" />
+    <Compile Include="EntityRepository\OrderSearchDetailRepository.cs" />
+    <Compile Include="EntityRepository\OutBillAllotRepository.cs" />
+    <Compile Include="EntityRepository\OutBillDetailRepository.cs" />
+    <Compile Include="EntityRepository\OutBillMasterRepository.cs" />
+    <Compile Include="EntityRepository\OutSearchDetailRepository.cs" />
+    <Compile Include="EntityRepository\ProductRepository.cs" />
+    <Compile Include="EntityRepository\ProfitLossBillDetailRepository.cs" />
+    <Compile Include="EntityRepository\ProfitLossBillMasterRepository.cs" />
+    <Compile Include="EntityRepository\ShelfRepository.cs" />
+    <Compile Include="EntityRepository\SortingLineRepository.cs" />
+    <Compile Include="EntityRepository\SortingLowerlimitRepository.cs" />
+    <Compile Include="EntityRepository\SortOrderDetailRepository.cs" />
+    <Compile Include="EntityRepository\SortOrderDispatchRepository.cs" />
+    <Compile Include="EntityRepository\SortOrderRepository.cs" />
+    <Compile Include="EntityRepository\SortOrderSearchRepository.cs" />
+    <Compile Include="EntityRepository\SortWorkDispatchRepository.cs" />
+    <Compile Include="EntityRepository\StockCheckSearchRepository.cs" />
+    <Compile Include="EntityRepository\StockDifferSearchRepository.cs" />
+    <Compile Include="EntityRepository\StockIntoSearchRepository.cs" />
+    <Compile Include="EntityRepository\StockMoveSearchRepository.cs" />
+    <Compile Include="EntityRepository\StockOutSearchRepository.cs" />
+    <Compile Include="EntityRepository\StorageRepository.cs" />
+    <Compile Include="EntityRepository\SupplierRepository.cs" />
+    <Compile Include="EntityRepository\UnitListRepository.cs" />
+    <Compile Include="EntityRepository\UnitRepository.cs" />
+    <Compile Include="EntityRepository\WarehouseRepository.cs" />
+    <Compile Include="Interfaces\IAreaRepository.cs" />
+    <Compile Include="Interfaces\IBillTypeRepository.cs" />
+    <Compile Include="Interfaces\IBrandRepository.cs" />
+    <Compile Include="Interfaces\ICellRepository.cs" />
+    <Compile Include="Interfaces\ICheckBillDetailRepository.cs" />
+    <Compile Include="Interfaces\ICheckBillMasterRepository.cs" />
+    <Compile Include="Interfaces\ICheckSearchDetailRepository.cs" />
+    <Compile Include="Interfaces\ICompanyRepository.cs" />
+    <Compile Include="Interfaces\IDailyBalanceRepository.cs" />
+    <Compile Include="Interfaces\IDepartmentRepository.cs" />
+    <Compile Include="Interfaces\IDifferSearchDetailRepository.cs" />
+    <Compile Include="Interfaces\IEmployeeRepository.cs" />
+    <Compile Include="Interfaces\IInBillAllotRepository.cs" />
+    <Compile Include="Interfaces\IInBillDetailRepository.cs" />
+    <Compile Include="Interfaces\IInBillMasterRepository.cs" />
+    <Compile Include="Interfaces\IIntoSearchDetailRepository.cs" />
+    <Compile Include="Interfaces\IJobRepository.cs" />
+    <Compile Include="Interfaces\IMoveBillDetailRepository.cs" />
+    <Compile Include="Interfaces\IMoveBillMasterRepository.cs" />
+    <Compile Include="Interfaces\IMoveSearchDetailRepository.cs" />
+    <Compile Include="Interfaces\IOrderSearchDetailRepository.cs" />
+    <Compile Include="Interfaces\IOutBillAllotRepository.cs" />
+    <Compile Include="Interfaces\IOutBillDetailRepository.cs" />
+    <Compile Include="Interfaces\IOutBillMasterRepository.cs" />
+    <Compile Include="Interfaces\IOutSearchDetailRepository.cs" />
+    <Compile Include="Interfaces\IProductRepository.cs" />
+    <Compile Include="Interfaces\IProfitLossBillDetailRepository.cs" />
+    <Compile Include="Interfaces\IProfitLossBillMasterRepository.cs" />
+    <Compile Include="Interfaces\IShelfRepository.cs" />
+    <Compile Include="Interfaces\ISortingLineRepository.cs" />
+    <Compile Include="Interfaces\ISortingLowerlimitRepository.cs" />
+    <Compile Include="Interfaces\ISortOrderDetailRepository.cs" />
+    <Compile Include="Interfaces\ISortOrderDispatchRepository.cs" />
+    <Compile Include="Interfaces\ISortOrderRepository.cs" />
+    <Compile Include="Interfaces\ISortOrderSearchRepository.cs" />
+    <Compile Include="Interfaces\ISortWorkDispatchRepository.cs" />
+    <Compile Include="Interfaces\IStockCheckSearchRepository.cs" />
+    <Compile Include="Interfaces\IStockDifferSearchRepository.cs" />
+    <Compile Include="Interfaces\IStockIntoSearchRepository.cs" />
+    <Compile Include="Interfaces\IStockMoveSearchRepository.cs" />
+    <Compile Include="Interfaces\IStockOutSearchRepository.cs" />
+    <Compile Include="Interfaces\IStorageRepository.cs" />
+    <Compile Include="Interfaces\ISupplierRepository.cs" />
+    <Compile Include="Interfaces\IUnitListRepository.cs" />
+    <Compile Include="Interfaces\IUnitRepository.cs" />
+    <Compile Include="Interfaces\IWarehouseRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\THOK.Common.Ef\THOK.Common.Ef.csproj">
+      <Project>{59FB8EB5-F5B8-4423-8550-A7819C855CDE}</Project>
+      <Name>THOK.Common.Ef</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOK.Wms.DbModel\THOK.Wms.DbModel.csproj">
+      <Project>{E243AB76-351D-4C97-BFE3-D55E0BA0DECF}</Project>
+      <Name>THOK.Wms.DbModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

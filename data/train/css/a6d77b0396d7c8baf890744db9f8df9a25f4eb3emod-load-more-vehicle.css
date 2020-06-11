@@ -1,0 +1,43 @@
+.mod-load-more-vehicle{
+    margin-top: 5px;
+}
+.mod-load-more-vehicle a,
+.mod-load-more-vehicle span {
+    float: left;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0 3px;
+    padding: 2px 7px 0;
+}
+
+.mod-load-more-vehicle .links, .mod-load-more-vehicle a.page-numbers {
+    background-color: #f0f0f0;
+    color: #43a4a5;
+}
+
+.mod-load-more-vehicle .prev.page-numbers, .mod-load-more-vehicle .next.page-numbers,
+.mod-load-more-vehicle .first.page-numbers, .mod-load-more-vehicle .last.page-numbers {
+    background-color: #FFFFFF;
+    color: #7E7E7E;
+}
+
+.mod-load-more-vehicle .first,
+.mod-load-more-vehicle .last {
+    font-size: 24px;
+    color: #7E7E7E;
+}
+
+.mod-load-more-vehicle .prev,
+.mod-load-more-vehicle .next {
+    font-size: 37px;
+    color: #7E7E7E;
+    margin-top: -4px;
+}
+
+.mod-load-more-vehicle {
+    padding-bottom: 20px;
+}
+
+.screen-reader-text {
+    display: none;
+}

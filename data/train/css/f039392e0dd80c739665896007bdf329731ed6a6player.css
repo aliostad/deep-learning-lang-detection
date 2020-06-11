@@ -1,0 +1,65 @@
+.player:fullscreen {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  text-align: center;
+}
+.player:fullscreen canvas {
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+}
+.player {
+  background: #000;
+  position: relative;
+  overflow: hidden;
+}
+.player canvas {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+.player_no-activity {
+  cursor: none;
+}
+.player__load-progress {
+  display: block;
+  width: 0;
+  background: #4b50ff;
+  height: 3px;
+  transition: width 0.2s ease-out;
+  z-index: 2;
+}
+.player__load-progress-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #8695e2;
+  opacity: 1;
+  transition: opacity 0.2s 0.2s ease-out;
+/*&:after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 4px;
+                background: #4b50ff;
+                animation: load-animation 3s infinite ease-out;
+            }*/
+}
+.player_loaded .player__load-progress-wrap {
+  opacity: 0;
+}
+/*
+@keyframes load-animation {
+    0% {
+        right: 0;
+    }
+
+    100% {
+        right: 100%;
+    }
+}*/

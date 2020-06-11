@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*:before {
+  box-sizing: border-box;
+}
+
+*:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.controls-wrapper {
+  position: relative;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+}
+
+.model-container {
+  background: -webkit-linear-gradient(45deg, #3e3e3e, #9a9a9a);
+  background: linear-gradient(45deg, #3e3e3e, #9a9a9a);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.model-container .model {
+  width: 100%;
+  height: 100%;
+}
+
+.model-container .model-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.model-container .controls {
+  /*background: rgba(255, 255, 255, 0.1);*/
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  min-width: 0;
+  padding: 10px;
+  pointer-events: none;
+  /* Main controls */
+  /* Main controls */
+  /* Animation controls */
+  /* Animation controls */
+}
+
+.model-container .controls .section {
+  display: -webkit-box;
+  display: flex;
+}
+
+.model-container .controls .spacer {
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+}
+
+.model-container .controls p, .model-container .controls a {
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+}
+
+.model-container .controls .control {
+  padding: 3px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  min-width: 0;
+  margin: 0 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+  -webkit-transition: background 200ms linear;
+  transition: background 200ms linear;
+}
+
+.model-container .controls .control .material-icons {
+  font-size: 24px;
+  color: #dedede;
+}
+
+.model-container .controls .control:hover, .model-container .controls .control.active {
+  /*background: rgba(0, 0, 0, 0.75);*/
+  text-shadow: 0 0 5px #000000, 0 0 10px #ffffff;
+}
+
+.model-container .controls .main-controls {
+  display: -webkit-box !important;
+  display: flex !important;
+  font-size: 13px;
+  pointer-events: all;
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+  flex-flow: row nowrap !important;
+}
+
+.model-container .controls .main-controls .control {
+  padding: 5px;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.model-container .controls .main-controls .control .material-icons {
+  font-size: 20px;
+}
+
+.model-container .controls .animation-controls {
+  display: -webkit-box;
+  display: flex;
+  min-width: 0;
+  pointer-events: all;
+  -webkit-box-flex: 0;
+  flex: 0 1 auto;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.model-container .controls .animation-controls p {
+  text-shadow: 0 0 10px #000000;
+}
+
+.model-container .controls .animation-controls .play {
+  width: 35px;
+  height: 35px;
+  padding: 6px;
+  margin: 0 15px 0 0;
+  border-radius: 20px;
+}
+
+.model-container .controls .animation-controls .animation-timer {
+  padding: 2px 4px;
+  margin: 0;
+  font-size: 13px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.model-container .controls .animation-controls .animation-timer > p {
+  padding: 2px 4px;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.model-container .controls .animation-controls .timeline {
+  position: absolute;
+  right: 15px;
+  bottom: 35px;
+  left: 15px;
+  height: 30px;
+}
+
+.model-container .controls .animation-controls .timeline .timeline-wrapper {
+  position: absolute;
+  left: 50%;
+  display: -webkit-box;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: transparent;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row nowrap;
+}
+
+.model-container .controls .animation-controls .timeline .timeline-wrapper .track {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  left: -10px;
+  height: 100%;
+  cursor: pointer;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.model-container .controls .animation-controls .timeline .timeline-wrapper .track .bar {
+  position: absolute;
+  right: 10px;
+  left: 0;
+  left: 10px;
+  height: 1px;
+  margin-top: 14px;
+  background: rgba(238, 238, 238, 0.5);
+  -webkit-transform: none;
+  transform: none;
+}
+
+.model-container .controls .animation-controls .timeline .timeline-wrapper .track .knob {
+  position: absolute;
+  top: 11px;
+  left: 0px;
+  width: 7px;
+  height: 7px;
+  pointer-events: none;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  box-shadow: 0px 0px 12px 2px #ffffff;
+}
+
+.model-container .controls .animation-controls .timeline .timeline-wrapper .track .knob:before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  content: attr(data-frame);
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+  -webkit-transform: translate(-50%, -35px);
+  transform: translate(-50%, -35px);
+}
+
+.model-container .controls .animation-controls .timeline .timeline-wrapper .track .knob:after {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  content: " ";
+  border-top: 4px solid rgba(0, 0, 0, 0.5);
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+  -webkit-transform: translate(-50%, -10px);
+  transform: translate(-50%, -10px);
+}
+
+/* Tooltip */
+.help:not(.popover-container):hover .tooltip {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.help .tooltip {
+  position: absolute;
+  z-index: 4;
+  display: block;
+  width: 130px;
+  padding: 6px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: none;
+  pointer-events: none;
+  /*background: rgba(0, 0, 0, 0.8);*/
+  background: rgba(80, 80, 80, 0.8);
+  border-radius: 6px;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  text-shadow: none;
+}
+
+.help .tooltip:before {
+  position: absolute;
+  z-index: 4;
+  display: block;
+  pointer-events: none;
+  content: "";
+}
+
+.help .tooltip.tooltip-up {
+  top: 0;
+  left: 50%;
+  margin-top: -5px;
+  margin-left: -65px;
+  -webkit-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+}
+
+.help .tooltip.tooltip-up:before {
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border: 5px solid transparent;
+  border-top: 5px solid rgba(80, 80, 80, 0.8);
+  border-bottom: 0;
+}
+
+/* Tooltip */
+
+/*# sourceMappingURL=app.css.map */

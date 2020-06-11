@@ -1,0 +1,26 @@
+#!/bin/bash
+# This script installs arch linux using puppet. It clones the
+# puppet-arch-install repo, and runs arch the installer.
+
+# To use this script, create a ./config.sh that defines BOOT_PART, ENC_PART,
+# PUPPET_SYSTEM_REPO_URL and PUPPET_SYSTEM_REPO (see the example provided config.sh),
+# and set the following to the repo url this script came from:
+readonly PUPPET_INSTALL_REPO_URL=/opt/git/puppet-arch-install
+# and the location to clone it to:
+readonly PUPPET_INSTALL_REPO=/root/arch-install
+
+function die {
+  echo "$0 failed with: $1"
+  exit 1
+}
+
+readonly root_dir="$(cd "$(dirname "$0")" && pwd)"
+config="${root_dir}/config.sh"
+source "${config}"
+
+pacman --noconfirm -Sy
+pacman --noconfirm -S git
+
+git clone "${PUPPET_INSTALL_REPO_URL}" "${PUPPET_INSTALL_REPO}" || die "Couldn't clone ${PUPPET_INSTALL_REPO_URL} to ${PUPPET_INSTALL_REPO}"
+cp "${config}" "${PUPPET_INSTALL_REPO}" && cd "${PUPPET_INSTALL_REPO}"
+bash arch-install

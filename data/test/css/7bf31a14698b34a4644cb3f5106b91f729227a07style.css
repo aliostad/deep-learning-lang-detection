@@ -1,0 +1,129 @@
+/* Empty. Add your own CSS if you like */
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.logbutton {
+  padding: 5px;
+  margin: 10px;
+  width: 85%;
+}
+
+.date {
+	text-align: center;
+}
+
+.pdc-dash {
+	background-color: #fff;
+}
+
+@-webkit-keyframes 
+load { 0% {
+stroke-dashoffset:0
+}
+}
+@-moz-keyframes 
+load { 0% {
+stroke-dashoffset:0
+}
+}
+@keyframes 
+load { 0% {
+stroke-dashoffset:0
+}
+}
+
+/* Container */
+
+#join-race-btn {
+  width: 100%;
+}
+
+.date-container {
+  width: 100%;
+  text-align: center;
+}
+
+.date-inline {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sub-container {
+	width: 100%;
+	text-align: center;
+}
+
+.progress {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+}
+
+/* Item */
+
+.progress>li {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: #000;
+  font-family: Lato;
+  font-weight: 100;
+  margin: 2rem;
+}
+
+.progress>li:before {
+  content: attr(data-name);
+  position: absolute;
+  width: 100%;
+  bottom: 3.5rem;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.progress>li:after {
+  content: attr(data-percent);
+  position: absolute;
+  width: 100%;
+  top: 3.7rem;
+  left: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.progress svg {
+  width: 10rem;
+  height: 10rem;
+}
+
+.progress svg:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+}
+
+.progress svg:nth-child(2) path {
+  fill: none;
+  stroke-width: 25;
+  stroke-dasharray: 629;
+  stroke: rgba(255, 255, 255, 0.9);
+  -webkit-animation: load 4s;
+  -moz-animation: load 4s;
+  -o-animation: load 4s;
+  animation: load 4s;
+}
+
+
+/* Workout */
+

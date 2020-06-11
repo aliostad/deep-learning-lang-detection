@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BioWareApp>
+  <application>
+    <languagetable>
+      <strings language="en">
+        <string name="LearnMore">Learn More</string>
+        <string name="NewsID">0</string>
+      </strings>
+      <strings language="fr">
+        <string name="LearnMore">En savoir plus</string>
+      </strings>
+      <strings language="de">
+        <string name="LearnMore">Weitere Informationen</string>
+      </strings>
+      <strings language="it">
+        <string name="LearnMore">Maggiori dettagli</string>
+      </strings>
+      <strings language="es">
+        <string name="LearnMore">Más información</string>
+      </strings>
+    </languagetable>
+  </application>
+
+  <pages default="News">
+    <page name="News" background="${NEWS_DIR}\register_${Language}.bmp">
+      <xmlbutton name="Link1" action="URL" value="http://masseffect.bioware.com/route/me/pc/ln/reg/${Language}/">
+        <position x="526" y="112" />
+        <size width="161" height="24" />
+        <text normal="LearnMore" duplicate="true" />
+        <textfont normal="Verdana" duplicate="true" />
+        <textsize normal="12" duplicate="true" />
+        <texteffect normal="true" duplicate="true" />
+        <textstyle normal="bold" duplicate="true" />
+        <textcolour normal="72C0D4" duplicate="true" over="FFFFFF"/>
+        <bitmap normal="${NEWS_DIR}\btn_web_n.bmp" duplicate="false" pushed="${NEWS_DIR}\btn_web_d.bmp" over="${NEWS_DIR}\btn_web_h.bmp" disabled="${NEWS_DIR}\btn_web_n.bmp" />
+      </xmlbutton>
+    </page>
+  </pages>
+</BioWareApp>

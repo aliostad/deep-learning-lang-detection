@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+div {
+	outline: 1px dotted lime;
+}
+
+#wrapper {
+	width: 970px;
+	margin: 0 auto;
+}
+
+	#NINJA {
+		min-height: 400px;
+	}
+
+	div #NINJA h1{
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	
+
+
+
+	/*.red{
+	color: red;
+}
+
+		#AddClass button, #AddClass p {
+			display: inline-block;
+		}
+/*	div#After {
+		width: 970px;
+		height: 100px;
+		/*display: inline-block;
+			}
+
+		/*#After button, #After p {
+			display: inline-block;
+		}
+	div.#Append {
+		width: 970px;
+		height: 100px;
+		display: inline-block;
+	}
+		#Append button, #Append p {
+			display: inline-block;
+		}
+	div#Attr {
+		width: 970px;
+		height: 100px;
+		/*display: inline-block;*/
+	}
+		#Attr button, #Attr a {
+			display: inline-block;
+		}*/
+*/*/
+
+

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <mapping class="com.services.core.data.model.Blobs"></mapping>
+        <mapping class="com.services.core.data.model.Item"></mapping>
+        <mapping class="com.services.core.data.model.Meeting"></mapping>
+        <mapping class="com.services.core.data.model.MeetingParticipant"></mapping>
+        <mapping class="com.services.core.data.model.Role"></mapping>
+        
+        <mapping class="com.services.core.data.model.employee.Employee"></mapping>
+        <mapping class="com.services.core.data.model.employee.EmployeeDiscipline"></mapping>
+        <mapping class="com.services.core.data.model.employee.EmployeeLabor"></mapping>
+        <mapping class="com.services.core.data.model.employee.EmployeeLeaves"></mapping>
+        <mapping class="com.services.core.data.model.employee.EmployeeReview"></mapping>
+        <mapping class="com.services.core.data.model.employee.EmployeeSalary"></mapping>
+        
+        <mapping class="com.services.core.data.model.store.Store"></mapping>
+        <mapping class="com.services.core.data.model.store.StoreAccount"></mapping>
+        <mapping class="com.services.core.data.model.store.StoreAlarm"></mapping>
+        <mapping class="com.services.core.data.model.store.StoreDate"></mapping>
+        <mapping class="com.services.core.data.model.store.StoreInvoice"></mapping>
+        <mapping class="com.services.core.data.model.store.StoreInvoiceDetails"></mapping>
+        <mapping class="com.services.core.data.model.store.StoreKey"></mapping>
+        <mapping class="com.services.core.data.model.store.StoreMaintenance"></mapping>
+        <mapping class="com.services.core.data.model.store.StoreStock"></mapping>
+        <mapping class="com.services.core.data.model.store.UploadNotes"></mapping>
+    </session-factory>
+</hibernate-configuration>

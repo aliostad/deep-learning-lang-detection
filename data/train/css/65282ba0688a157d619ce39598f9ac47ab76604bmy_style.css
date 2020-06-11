@@ -1,0 +1,259 @@
+.error_404 {
+	width:933px;
+	height:567px;
+	background: url(./images/404.jpg) no-repeat;
+	margin-bottom:10px;
+	padding-top:40px;
+}
+
+.error_404 .err_title {
+	width:100%;
+	display:block;
+	margin-left:auto;
+	color:#FFFFFF;
+	font-size:26px;
+	text-align:center;
+	width:933px;
+	text-shadow: 1px 1px 3px #999;
+	line-height:25px;
+}
+
+.post-edit-link {
+	background-color: white;
+	background: url(./images/edit.png) no-repeat;
+	height:20px;
+	width:20px;
+	overflow: hidden;	
+	border:solid 1px #ccc; 
+	border-radius: 2px 2px 2px 2px;
+	font-size:11px;
+	font-family: Tahoma;
+	text-decoration: none;
+	color:#666;
+	display:block;
+	position: absolute;
+	text-indent:-99999px;
+	margin-left:-50px;
+}
+
+.where-will-be-data {display:none;}
+
+
+
+
+/* äâåðè ñêðîëë */
+
+.dveri {
+	width: 933px;
+	height:347px;
+	padding: 0px 1px 0px 1px;
+	position:relative;
+}
+
+#dveri-frame {
+	width: 933px;
+	height:347px;
+	overflow: hidden;
+}
+
+#dveri-frame ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#dveri-frame ul li {
+	float: left;
+	width: 287px;
+	padding: 0px 12px 0px 12px;
+}
+
+.dveri h3{
+	margin: 0 0 17px;
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 12px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.dveri .text-block{
+	padding: 0px 6px 20px 0;
+	margin: 0 -6px 0 0;
+}
+
+.dveri .photo {
+	margin: 0 0 17px;
+	border:none;
+}
+
+.dveri .photo  img{
+	border: 1px solid #aeaeae;
+}
+
+.dveri .prev, .dveri .next {
+	top: 108px;
+}
+
+.dveri .prev {
+	margin-left:-35px;
+}
+
+.dveri .next {
+	margin-right:-35px;
+}
+
+/* ñòèëè äëÿ ìîäåëåé ïðîäóêöèè */
+.model {
+    width: 100%;
+}
+
+.model .image {
+    width: 479px;
+	height: 530px;
+	float:left;
+}
+
+.model .image-list {
+    width: 141px;
+		height: 530px;
+    padding: 0px 0px;
+    position: relative;
+    float: right;
+}
+
+
+.model .prev, .model .next {
+    text-indent: -9999px;
+    height: 510px;
+    width: 239px;
+		margin-top:27px;
+		z-index:1;
+		position: relative;
+		background: url(./images/prev.gif) no-repeat 20px center;
+		display:block;
+		float:left;
+}
+
+.model .next {
+    /*margin-left:239px; */
+	background: url(./images/next.gif) no-repeat 199px center;
+	float:right;
+}
+
+
+.model .image ul {
+    width: 219px;
+    margin: 0px;
+	padding:0px;
+    list-style: none outside none;
+    height: 530px;
+	position: relative;
+	margin-left:130px;
+}
+
+.model .image ul li {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+    width: 219px;
+    text-align: center;
+    background: none repeat scroll 0% 0% rgb(255, 255, 255);
+}
+
+.model .image .title {
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    color: rgb(113, 112, 116);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 14px;
+    height: 27px;
+}
+
+
+
+.model .image-list .image-holder {
+    overflow: hidden;
+    height: 480px;
+    margin: 25px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+	width:126px;
+	float:left;
+}
+
+
+.model .slide-list {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    list-style: none outside none;
+    position: relative;
+}
+
+.model .slide-list li {
+	float:left;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 20px 10px 0px;
+}
+
+.model .slide-list li  img{
+	margin-top:10px;
+	border:none;
+}
+
+.model .slide-list li a {
+	width:43px;
+	float:left;
+	margin: 0px;
+	padding: 0px;
+	line-height: 0;	
+}
+
+.model .slide-list li  a.active {
+    background: url("./images/arrow01.gif") no-repeat scroll 50% 0px transparent;
+}
+
+
+
+.model .scrollbar   {
+	margin-top:25px;
+	right:0px;
+	height:480px; 
+	position: absolute;
+	width:13px; 
+}
+
+
+.scrollbar   .handle { 
+	border-radius: 2px; 
+	background: rgb(252, 252, 252); 
+	cursor: pointer; 
+	line-height: 0;
+	-webkit-box-shadow: 0 1px 0 #999;
+	-moz-box-shadow: 0 1px 0 #999;
+	-o-box-shadow: 0 1px 0 #999;
+	box-shadow: 0 1px 0 #999;
+	width:100%;
+}
+
+.scrollbar {
+
+    background: none repeat scroll 0% 0% rgb(182,182,182);
+    border-radius: 2px 2px 2px 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(182,182,182);
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    line-height: 0;
+	
+}
+
+
+/*  Ïîðòôîëèî  */
+
+

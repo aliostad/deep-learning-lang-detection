@@ -1,0 +1,42 @@
+table td {
+	padding-right: 10px;
+}
+
+body {
+  padding-top: 50px;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.error {
+	color: red;
+}
+
+.navbar {
+	background-color: lime;
+}
+
+.navbar .navbar-brand {
+	color: green;	
+}
+
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus {
+	background-color: green;
+}
+
+.displayOnLoad.notLoading { display: none; }
+.hideOnLoad.loading { display: none; }
+
+.calendar td {
+	min-width: 20px;
+	padding-right: 5px;
+}
+
+.calendar thead td {
+	text-align: center;
+}

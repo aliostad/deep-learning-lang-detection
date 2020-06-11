@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/Sales_Org_Service/MasterService?wsdl" uri="xml-resources/web-service-references/MasterService/wsdl/localhost_8080/Sales_Org_Service/MasterService.wsdl"/>
+    <system systemId="http://localhost:8080/Sales_Org_Service/MasterService?wsdl=MasterService.wsdl" uri="xml-resources/web-service-references/MasterService/wsdl/localhost_8080/Sales_Org_Service/MasterService.wsdl_MasterService.wsdl"/>
+</catalog>

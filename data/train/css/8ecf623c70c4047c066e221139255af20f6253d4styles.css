@@ -1,0 +1,59 @@
+/**
+ * NextCMS
+ *
+ * @author		Nguyen Huu Phuoc <thenextcms@gmail.com>
+ * @copyright	Copyright (c) 2011 - 2012, Nguyen Huu Phuoc
+ * @license		http://nextcms.org/license.txt	(GNU GPL version 2 or later)
+ * @link		http://nextcms.org
+ * @category	modules
+ * @package		message
+ * @subpackage	css
+ * @since		1.0
+ * @version		2012-05-11
+ */
+
+/********** MANAGE PRIVATE MESSAGES **********/
+.messageHasAttachments { background: url(images/attachment.png) center right no-repeat; padding: 4px 20px 4px 0; }
+
+/* Icons */
+.messageReadIcon { background-image: url(images/read.png); }
+.messageReplyAllIcon { background-image: url(images/replyAll.png); }
+.messageReplyIcon { background-image: url(images/reply.png); }
+.messageSendIcon { background-image: url(images/send.png); }
+.messageUnreadIcon { background-image: url(images/unread.png); }
+
+/* List messages in a grid */
+.messageUnreadRow { font-weight: bold; }
+
+/* List messages in the same thread */
+.messageItem { position: relative; }
+.messageItemNotstarredSubject { background: url(images/unstar.png) center left no-repeat; padding: 4px 0 4px 20px; }
+.messageItemReadSubject { font-weight: normal; }
+.messageItemStarredSubject { background: url(images/star.png) center left no-repeat; padding: 4px 0 4px 20px; }
+.messageItemUnreadSubject { font-weight: bold; }
+.messageItemMine { /*background-color: #CEE6FA;*/ }
+.messageItemContent {}
+.messageQuoteContent { border-left: 1px solid #B5BCC7; padding-left: 8px; }
+.messageToggleQuote { color: #B5BCC7; cursor: pointer; padding: 4px 0; }
+.messageToggleQuote:before, .messageToggleQuote:after { content: "---"; }
+.messageItemTitle { font-weight: bold; }
+.messageSender, .messageRecipient { font-weight: bold; }
+
+/* Counter */
+.messageViewCounter:before { content: "("; }
+.messageViewCounter:after { content: ")"; }
+
+/* Private message folder */
+.messageFolderItemsContainer { list-style-type: none; margin: 0; padding: 8px; }
+.messageFolderItemsContainer li { clear: both; margin: 0; padding: 4px; }
+.messageStarredFolder .messageFolderName { background: url(images/star.png) center right no-repeat; padding: 4px 20px 4px 0; }
+.messageTrashFolder .messageFolderName { background: url(images/emptyTrash.png) center right no-repeat; padding: 4px 20px 4px 0; }
+.messageFolderSelected { background-color: #769DC0; }
+.messageFolderSelected a, .messageFolderSelected a:visited { color: #FFF; }
+.messageFolderHover { background-color: #CFE5FA; }
+.messageFolderHover a, .messageFolderHover a:visited { color: #FFF; }
+.messageFolderCounter { float: right; }
+.messageFolderItem .messageFolderCounter { color: #000; }
+.messageFolderSelected .messageFolderCounter { color: #FFF; }
+.messageFolderCounter:before { content: "("; }
+.messageFolderCounter:after { content: ")"; }

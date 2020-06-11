@@ -1,0 +1,23 @@
+
+/*NAV*//*NAV*//*NAV*//*NAV*//*NAV*//*NAV*//*NAV*//*NAV*//*NAV*//*NAV*//*NAV*//*NAV*//*NAV*//*NAV*//*NAV*//*NAV*/
+
+#primary-nav li{display:inline;}
+#primary-nav li a{
+display:inline;
+height:29px;
+}
+#primary-nav li a:hover,#primary-nav li.on a{
+background:none;
+text-decoration:underline;
+}
+#primary-nav li:hover,#primary-nav li.on{
+background:none;
+color:#fff;
+}
+#app-store{background:url(../images/btn/appstore.gif) no-repeat left top;}
+
+/*Use gifs instead of pngs for ie6*/
+
+h1{background:url(../images/logo.gif) no-repeat left top;}
+ul.features li{background:url(../images/list-item-right.gif) no-repeat right bottom;}
+ul.features li a{background:url(../images/list-item-left-plus.gif) no-repeat left bottom;}

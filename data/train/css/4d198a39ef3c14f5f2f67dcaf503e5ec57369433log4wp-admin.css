@@ -1,0 +1,28 @@
+.log4wp-page-view-logs .cell-event {
+	font-weight: bold;
+}
+
+.log4wp-page-view-logs .cell-event-severity-ERROR,
+.log4wp-page-view-logs .cell-event-severity-FATAL {
+	color: #ff0000;
+}
+
+.log4wp-page-view-logs .entry-view-more,
+.log4wp-page-view-logs .entry-view-as-json {
+	display: none;
+}
+
+.log4wp-page-view-logs .row-message td {
+	border-bottom: solid 0.1em #ccc;
+}
+
+.log4wp-page-view-logs .row-large-message .entry-view-more,
+.log4wp-page-view-logs .row-json-message .entry-view-as-json {
+	display: block;
+}
+
+.log4wp-page-view-logs .row-large-message .cell-event-message pre {
+	height: 20em;
+	overflow: hidden;
+}
+

@@ -1,0 +1,232 @@
+body{
+	font: 14px 'microsoft yahei';
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+/*图标字体样式*/
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?bh24wf');
+    src:    url('fonts/icomoon.eot?bh24wf#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?bh24wf') format('truetype'),
+        url('fonts/icomoon.woff?bh24wf') format('woff'),
+        url('fonts/icomoon.svg?bh24wf#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-bin::before{
+	content: '\e9ac';
+}
+
+.up_load_file{
+	margin: 100px auto;
+	border: 1px solid #aaa;
+	background-color: #eee;
+	display: none;
+}
+.up_load_file .file_sel{
+	width: 100%;
+	height: 80%;
+	padding: 2% 0;
+	border-bottom: 1px solid #aaa;
+}
+.up_load_file .file_sel .file_input,
+.up_load_file .file_sel .file_drag{
+	float: left;
+	width: 45%;
+	height: 100%;
+	border: 1px dotted #aaa;
+}
+.up_load_file .file_sel .file_input{
+	margin-left: 2%;
+}
+.up_load_file .file_sel .file_drag{
+	float: right;
+	width: 50%;
+	margin-right: 2%;
+	background-color: #fff;
+	text-align: center;
+	display: table;
+}
+.up_load_file .file_sel .file_drag span{
+	display: table-cell;
+	vertical-align: middle;
+	color: #999;
+}
+.up_load_file .file_sel .file_input .sel_file_img{
+	width: 100%;
+	height: 70%;
+	text-align: center;
+	display: table;
+}
+.up_load_file .file_sel .file_input .sel_file_img span{
+	display: table-cell;
+	vertical-align: middle;
+}
+.up_load_file .file_sel .file_input .sel_file_btn{
+	position: relative;
+	width: 100%;
+	height: 30%;
+}
+.up_load_file .file_sel .file_input .sel_file_btn button{
+	background-color: #fff;
+	border: 1px solid #00B7EE;
+	font-size: 16px;
+	color: #999;
+	letter-spacing: 1px;
+}
+.up_load_file .file_sel .file_input .sel_file_btn input,
+.up_load_file .file_sel .file_input .sel_file_btn button{
+	position: absolute;
+	width: 60%;
+	height: 80%;
+	left: 20%;
+	top: 10%;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.up_load_file .file_info_handle{
+	width: 100%;
+	height: 20%;
+	display: table;
+	position: relative;
+}
+.up_load_file .file_info_handle .file_info{
+	width: 100%;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 2%;
+}
+.up_load_file .file_info_handle .file_info input, 
+.up_load_file .file_info_handle .file_info button{
+	position: absolute;
+	width: 20%;
+	height: 80%;
+	top: 10%; 
+	background-color: #fff;
+	border: 1px solid #00B7EE;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.up_load_file .file_info_handle .file_info input,
+.up_load_file .file_info_handle .file_info .continue_sel{
+	right: 25%;
+}
+.up_load_file .file_info_handle .file_info .uploadfile{
+	right: 2%;
+}
+.up_load_file .file_show{
+	width: 100%;
+	padding: 2%;
+	border: 1px solid #aaa;
+	border-top: none;
+	display: none;
+}
+.up_load_file .file_show .img_box,
+.up_load_file.noDrag .file_show .sel_file_btn{
+	position: relative;
+	display: inline-block;
+	width: 86px;
+	height: 86px;
+	padding: 2%;
+	border: 1px dotted #aaa;
+	vertical-align: middle;
+	margin-right: 2%;
+	margin-top: 2%;
+}
+.up_load_file .file_show .img_box img{
+	width: 100%;
+	height: 100%;
+}
+.up_load_file .file_show .img_box .up_load_success{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	right: 0;
+	bottom: 0;
+	background: url('../img/success.png') center center no-repeat;
+	display: none;
+}
+.up_load_file .file_show .img_box .img_handle{
+	position: absolute;
+	width: 100%;
+	height: 0;
+	background-color: rgba(0, 0, 0, .6);
+	top: 0;
+	left: 0;
+	transition: all .5s;
+	-moz-transition: all .5s; 
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	cursor: pointer;
+	overflow: hidden;
+}
+.up_load_file .file_show .img_box .img_handle .icon-bin{
+	content: '\e9ac';
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	color: #ddd;
+	font-size: 14px;	
+}
+.up_load_file .file_show .img_box .img_handle .file_name{
+	display: block;
+	width: 60%;
+	height: 20px;
+	line-height: 20px;
+	padding-left: 5%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #ddd;
+}
+.up_load_file .file_show .img_box:hover .img_handle{
+	height: 20px;
+}
+
+
+
+/*没有拖拽功能时的样式*/
+.up_load_file.noDrag{
+	width: 600px;
+	height: 60px;
+}
+.up_load_file.noDrag .file_info_handle{
+	height: 100%;
+}
+.up_load_file.noDrag .file_show .sel_file_btn input,
+.up_load_file.noDrag .file_show .sel_file_btn .sel_btn{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	cursor: pointer;
+}
+.up_load_file.noDrag .file_show .sel_file_btn input{
+	opacity: 0;
+}
+.up_load_file.noDrag .file_show .sel_file_btn .sel_btn{
+	background: url('../img/add_img.png') center center no-repeat;
+}

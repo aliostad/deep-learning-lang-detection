@@ -1,0 +1,57 @@
+/*-----------------------------------------------------------------------------------*
+/* = Services
+/*-----------------------------------------------------------------------------------*/
+
+#service-tabs #service-content {
+	padding-right: 30px;
+}
+
+#service-tabs  h2.creative-header {
+	font-size: 24px;
+	margin-bottom: 20px;
+	line-height: 40px;
+}
+
+#service-tabs {
+	padding: 5px;
+	float: left;
+	margin-bottom: 20px;
+	height: 60px;
+	width: 25%;
+}
+
+#service-tabs li {
+	list-style: none;
+	min-width: 25%;
+}
+
+#service-tabs a {
+	color: #474747 !important;
+	font-size: 12px;
+	display: block;
+	border: 1px solid #eee;
+	margin-right: 15px;
+	padding:15px !important;
+	margin-bottom: 8px;
+	text-decoration: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	opacity: 9;
+}
+
+#service-tabs a.selected {
+	color: #649EBF !important;
+}
+
+#service-content {
+	display: none;
+	float: left;
+	width: 65%;
+	margin-left: 20px;
+}
+
+#service-tabs ul, #service-tabs a {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+}

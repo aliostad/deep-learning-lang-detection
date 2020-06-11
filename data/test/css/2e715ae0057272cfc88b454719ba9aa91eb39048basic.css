@@ -1,0 +1,15 @@
+a#amp-intro  img, a#amp-users img, a#amp-website img, a#amf-overview img, a#import-projects img, a#run-model img, a#load-example-projects img {
+	background-image: url(../../icons/amp48.png);
+}
+
+a#create-java-model img {
+	background-image: url(../../icons/escape48.png);
+}
+
+a#escape-manual img, a#ascape-website img, a#convert-to-escape img, a#ascape-manual img {
+	background-image: url(../../icons/ascape48.png);
+}
+
+a#metascape-website img {
+	background-image: url(../../icons/MetascapeVertLogoSmall.png);
+}

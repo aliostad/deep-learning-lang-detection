@@ -1,0 +1,46 @@
+.adminSection {
+	margin-bottom: 5px;
+}
+
+.adminHeader {
+	background-color: #ffffaa;
+	color: #333333;
+	border: 1px solid yellow;
+	font-family: Verdana;
+	font-weight: bolder;
+	padding-top: 3px;
+	width: 100%;
+	height: 24px;
+}
+
+.adminContent {
+	padding: 5px;
+	background-color: #ffffee;
+}
+
+.loadDataSection {
+	margin-bottom: 5px;;
+	background-color: #ffffee;
+	width: 100%;
+}
+
+.loadDataHeader {
+	background-color: #bbbbff;
+	border: 1px #8888ff solid;
+	font-family: Verdana;
+	font-weight: bolder;
+	color: white;
+	height: 24px;
+	padding-top: 3px;
+}
+
+.loadDataBody {
+	padding: 5px;
+	background-color: #E5ECF9;
+	
+}
+
+#tajjbVhiew {
+	position: absolute;
+	top: -1000px;
+}

@@ -1,0 +1,166 @@
+
+
+/* CSS3 Loader */
+#loader             { display: none; }
+
+@keyframes load{
+0%{height:10px;
+		margin:20px 2px;}
+	50%{height:50px;
+		margin:0px 2px;}
+	100%{height:10px;margin:20px 2px;}
+}
+@-o-keyframes load{
+0%{height:10px;
+		margin:20px 2px;}
+	50%{height:50px;
+		margin:0px 2px;}
+	100%{height:10px;margin:20px 2px;}
+}
+@-ms-keyframes load{
+0%{height:10px;
+		margin:20px 2px;}
+	50%{height:50px;
+		margin:0px 2px;}
+	100%{height:10px;margin:20px 2px;}
+}
+@-moz-keyframes load{
+0%{height:10px;
+		margin:20px 2px;}
+	50%{height:50px;
+		margin:0px 2px;}
+	100%{height:10px;margin:20px 2px;}
+}
+@-webkit-keyframes load{
+0%{height:10px;
+		margin:20px 2px;}
+	50%{height:50px;
+		margin:0px 2px;}
+	100%{height:10px;margin:20px 2px;}
+}
+
+#loader{
+	width: 72px;
+	height: 55px;
+	margin: 30px auto;
+}
+
+#loader .bar{
+float:left;
+margin:20px 2px;
+width:10px;
+height:0px;
+background:#7bf;
+border-top:0px;
+border-bottom:0px;
+/*border-radius*/
+-webkit-border-radius:10px;
+	 -moz-border-radius:10px;
+				border-radius:10px;
+}
+#loader .bar:nth-child(1){
+/*animation*/
+-webkit-animation:load 1s linear infinite;
+	 -moz-animation:load 1s linear infinite;
+		-ms-animation:load 1s linear infinite;
+		 -o-animation:load 1s linear infinite;
+				animation:load 1s linear infinite;
+}
+#loader .bar:nth-child(2){
+/*animation*/
+-webkit-animation:load 1s linear infinite;
+	 -moz-animation:load 1s linear infinite;
+		-ms-animation:load 1s linear infinite;
+		 -o-animation:load 1s linear infinite;
+				animation:load 1s linear infinite;
+/*animation-delay*/
+-webkit-animation-delay:.2s;
+	 -moz-animation-delay:.2s;
+		-ms-animation-delay:.2s;
+		 -o-animation-delay:.2s;
+				animation-delay:.2s;
+}
+#loader .bar:nth-child(3){
+/*animation*/
+-webkit-animation:load 1s linear infinite;
+	 -moz-animation:load 1s linear infinite;
+		-ms-animation:load 1s linear infinite;
+		 -o-animation:load 1s linear infinite;
+				animation:load 1s linear infinite;
+/*animation-delay*/
+-webkit-animation-delay:.4s;
+	 -moz-animation-delay:.4s;
+		-ms-animation-delay:.4s;
+		 -o-animation-delay:.4s;
+				animation-delay:.4s;
+}
+#loader .bar:nth-child(4){
+/*animation*/
+-webkit-animation:load 1s linear infinite;
+	 -moz-animation:load 1s linear infinite;
+		-ms-animation:load 1s linear infinite;
+		 -o-animation:load 1s linear infinite;
+				animation:load 1s linear infinite;
+/*animation-delay*/
+-webkit-animation-delay:.6s;
+	 -moz-animation-delay:.6s;
+		-ms-animation-delay:.6s;
+		 -o-animation-delay:.6s;
+				animation-delay:.6s;
+}
+#loader .bar:nth-child(5){
+/*animation*/
+-webkit-animation:load 1s linear infinite;
+	 -moz-animation:load 1s linear infinite;
+		-ms-animation:load 1s linear infinite;
+		 -o-animation:load 1s linear infinite;
+				animation:load 1s linear infinite;
+/*animation-delay*/
+-webkit-animation-delay:.8s;
+	 -moz-animation-delay:.8s;
+		-ms-animation-delay:.8s;
+		 -o-animation-delay:.8s;
+				animation-delay:.8s;
+}
+#loader .bar:nth-child(6){
+/*animation*/
+-webkit-animation:load 1s linear infinite;
+	 -moz-animation:load 1s linear infinite;
+		-ms-animation:load 1s linear infinite;
+		 -o-animation:load 1s linear infinite;
+				animation:load 1s linear infinite;
+/*animation-delay*/
+-webkit-animation-delay:1s;
+	 -moz-animation-delay:1s;
+		-ms-animation-delay:1s;
+		 -o-animation-delay:1s;
+				animation-delay:1s;
+}
+
+#loader .bar:nth-child(7){
+/*animation*/
+-webkit-animation:load 1s linear infinite;
+	 -moz-animation:load 1s linear infinite;
+		-ms-animation:load 1s linear infinite;
+		 -o-animation:load 1s linear infinite;
+				animation:load 1s linear infinite;
+/*animation-delay*/
+-webkit-animation-delay:1.2s;
+	 -moz-animation-delay:1.2s;
+		-ms-animation-delay:1.2s;
+		 -o-animation-delay:1.2s;
+				animation-delay:1.2s;
+}
+
+#loader p {
+	text-align:center;
+	font-size:30px;
+	font-family:helvetica neue;
+	font-weight:100; 
+}
+
+#loader a {
+	color:#7bf;
+	text-decoration:none;
+}
+

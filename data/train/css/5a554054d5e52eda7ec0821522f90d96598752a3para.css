@@ -1,0 +1,13 @@
+.name {font-family: Arial, Helvetica, sans-serif; font-size:12pt; color:#330000;font-weight:bold}
+td {font-family: Arial, Helvetica, sans-serif; font-size:12pt}
+.model {font-family: Arial, Helvetica, sans-serif; font-size:10pt; color:003366}
+.modelN {font-family: Arial, Helvetica, sans-serif; font-size:10pt; color:003366}
+.modelOff {font-family: Arial, Helvetica, sans-serif; font-size:10pt; color:#8C8B5F}
+.modelOn {font-family: Arial, Helvetica, sans-serif; font-size:10pt; color:#003366}
+.copy {font-family: arial, tahoma; font-size: 8pt}
+
+A {font-family: Arial, Helvetica, sans-serif; font-size:10pt; color:#8C8B5F}
+A: Active {font-family: Arial, Helvetica, sans-serif; font-size:10pt; color:#8C8B5F}
+A:hover {font-family: Arial, Helvetica, sans-serif; font-size:10pt; color:blue}
+A: Visited {font-family: Arial, Helvetica, sans-serif; font-size:10pt; color:#8C8B5F}
+

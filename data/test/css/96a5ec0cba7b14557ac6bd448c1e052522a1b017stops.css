@@ -1,0 +1,51 @@
+#stops.show h2 {
+  height : 37px;
+  padding-left : 37px;
+  line-height : 37px;
+}
+
+#stops.show #map {
+  width  : 300px;
+  height : 200px;
+  margin-bottom : 20px;
+}
+
+#stops.show ul {
+  margin-top : 15px;
+}
+
+#stops.show ul li {
+  padding : 5px 0;
+  margin-bottom : 10px;
+  min-height : 50px;
+}
+
+#stops.show ul li strong {
+/*  line-height : 50px;*/
+}
+
+#stops.show ul li > .img_wrap {
+  float : left;
+  width : 50px;
+}
+
+#stops.show ul li > .img_wrap img {
+  height : 40px;
+}
+
+#stops.show .date {
+  font-size : 9px;
+}
+
+#stops.show div.description {
+  font-style: italic;
+  width : 500px;
+}
+
+#stops.show div.description p {
+  margin : 5px;
+}
+
+/*#stops.show ul li.odd {
+  background-color : #eee;
+}*/

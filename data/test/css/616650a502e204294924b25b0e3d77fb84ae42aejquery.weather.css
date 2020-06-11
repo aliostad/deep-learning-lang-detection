@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat-Regular'), url(http://fonts.gstatic.com/s/montserrat/v6/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat-Bold'), url(http://fonts.gstatic.com/s/montserrat/v6/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+#jquery-weather {
+    background: #fff;
+    color: #737373;
+    font: 1rem Montserrat;
+}
+
+
+    /* Animation loading */
+    @-webkit-keyframes 'load' {
+        0% {content:'\f08a'}
+        9% {content:'\f08b'}
+        18% {content:'\f08c'}
+        27% {content:'\f08d'}
+        36% {content:'\f08e'}
+        45% {content:'\f08f'}
+        54% {content:'\f090'}
+        63% {content:'\f091'}
+        72% {content:'\f092'}
+        81% {content:'\f093'}
+        90% {content:'\f094'}
+        99% {content:'\f089'}
+    }
+    @-moz-keyframes 'load' {
+        0% {content:'\f08a'}
+        9% {content:'\f08b'}
+        18% {content:'\f08c'}
+        27% {content:'\f08d'}
+        36% {content:'\f08e'}
+        45% {content:'\f08f'}
+        54% {content:'\f090'}
+        63% {content:'\f091'}
+        72% {content:'\f092'}
+        81% {content:'\f093'}
+        90% {content:'\f094'}
+        99% {content:'\f089'}
+    }
+    @-o-keyframes 'load' {
+        0% {content:'\f08a'}
+        9% {content:'\f08b'}
+        18% {content:'\f08c'}
+        27% {content:'\f08d'}
+        36% {content:'\f08e'}
+        45% {content:'\f08f'}
+        54% {content:'\f090'}
+        63% {content:'\f091'}
+        72% {content:'\f092'}
+        81% {content:'\f093'}
+        90% {content:'\f094'}
+        99% {content:'\f089'}
+    }
+    @keyframes 'load' {
+        0% {content:'\f08a'}
+        9% {content:'\f08b'}
+        18% {content:'\f08c'}
+        27% {content:'\f08d'}
+        36% {content:'\f08e'}
+        45% {content:'\f08f'}
+        54% {content:'\f090'}
+        63% {content:'\f091'}
+        72% {content:'\f092'}
+        81% {content:'\f093'}
+        90% {content:'\f094'}
+        99% {content:'\f089'}
+    }
+
+    #jquery-weather .load i {
+        display: block;
+        font-size: 3rem;
+        margin: auto;
+        text-align: center;
+        width: 50px;
+    }
+
+    #jquery-weather .load i:before {
+        content:'\f08a';
+
+        
+        -webkit-animation-name: 'load';
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: infinite;
+
+        -moz-animation-name: 'load';
+        -moz-animation-duration: 5s;
+        -moz-animation-iteration-count: infinite;
+
+        -o-animation-name: 'load';
+        -o-animation-duration: 5s;
+        -o-animation-iteration-count: infinite;
+
+        animation-name: load;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+
+    #jquery-weather h1 {
+        background: #27b6af;
+        color: white;
+        font-size: .913rem;
+        padding: 15px;
+    }
+
+        #jquery-weather .region,
+        #jquery-weather .country {
+            font-size: .750rem;
+        }
+
+    #jquery-weather ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+        #jquery-weather li {
+            border-bottom: 1px solid #d9d9d9;
+            list-style: none;
+            padding: 15px;
+        }
+
+            #jquery-weather .day,
+            #jquery-weather .icon,
+            #jquery-weather .temperature {
+                display: inline-block;
+                width: 33.33%;
+            }
+
+            #jquery-weather .icon {
+                color: #27b6af;
+                font-size: 1.75rem;
+                text-align: center;
+            }
+
+            #jquery-weather .temperature {
+                text-align: right;
+            }
+
+                #jquery-weather .high {
+                    color: #27b6af;
+                    font-weight: bold;
+                }
+
+                #jquery-weather .low {
+                    margin-right: 15px;
+                }

@@ -1,0 +1,229 @@
+
+#liveframe-main {
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  overflow:hidden;
+}
+
+.liveframe-absolute, .liveframe-relative {
+  overflow:hidden;
+  outline:1px solid transparent;
+  height:100px;
+}
+
+.liveframe-overflow {
+  overflow:visible;
+}
+
+.liveframe-hidden {
+  display:none!important;
+}
+
+.liveframe-absolute.liveframe-hover, .liveframe-relative.liveframe-hover, .liveframe-hover div.liveframe-relative, .liveframe-hover div.liveframe-absolute {
+  background-color:#333!important;
+}
+
+.liveframe-absolute {
+  position:absolute!important;
+  width:100px;
+}
+
+div.liveframe-relative {
+  position:relative!important;
+  top:0!important;
+  left:0!important;
+}
+
+div.liveframe-bottom > .ui-resizable-s {
+  background-color: red;
+}
+div.liveframe-right > .ui-resizable-e {
+  background-color: red;
+}
+
+#liveframe-contextmenu, #liveframe-hovertext, #liveframe-nametip {
+  outline:1px solid black;
+  position:absolute;
+  display:none;
+  padding:5px;
+  background-color:white!important;
+  white-space: nowrap;
+  z-index:1000;
+}
+
+#liveframe-contextmenu div {
+  padding:2px 5px;
+  cursor:pointer;
+}
+
+#liveframe-contextmenu div.items div:hover {
+  background-color:lightblue;
+}
+
+#liveframe-nametip {
+  padding:2px;
+  outline-color:#777;
+}
+
+#liveframe-nametip input {
+  width:100px;
+  height:20px;
+  border:none;
+}
+
+/** @group Dialog **/
+
+.ui-dialog .ui-dialog-title {
+  position:relative;
+  left:35px;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+  left: 0.3em;
+  right: auto;
+}
+
+.ui-dialog.minimized {
+  height:26px!important;
+  width:60px!important;
+}
+
+.ui-dialog.minimized #liveframe-load-dialog {
+  display:none;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+  padding: 0;
+}
+
+.ui-resizable-handle {
+  z-index:999;
+}
+
+#liveframe-load-dialog ul.tabs {
+  -moz-border-radius-bottomleft:0;
+  -moz-border-radius-bottomright:0;
+}
+
+#liveframe-load-dialog ul.tabs a {
+  font-size:70%;
+  line-height:1;
+}
+
+#liveframe-load-dialog > div {
+  position:absolute;
+  top:75px;
+  bottom:0;
+  left:1em;
+  right:1em;
+  padding:1em;
+}
+
+/** @group SaveLoad **/
+
+#liveframe-load-dialog #liveframe-saveload fieldset, #liveframe-manage fieldset {
+  padding: 0;
+  border:0;
+  height:100%;
+  position:relative;
+  font-size:.7em;
+}
+
+#liveframe-load-dialog * {
+  position:static;
+  top:auto;
+  left:auto;
+  bottom:auto;
+  right:auto;
+  width:auto;
+  height:auto;
+  background-color:transparent;
+}
+
+#liveframe-load-dialog .loading-indicator {
+  display:none;
+}
+
+#liveframe-load-dialog #liveframe-saveload fieldset input.name {
+  padding:2px;
+}
+
+
+#liveframe-load-dialog #liveframe-saveload fieldset ul, #liveframe-manage ul {
+  position:absolute;
+  top:45px;
+  left:0;
+  right:0;
+  border:1px solid #aaa;
+  padding:5px;
+  bottom:30px;
+  margin:0;
+  overflow:auto;
+}
+
+#liveframe-load-dialog #liveframe-saveload fieldset li, #liveframe-manage ul li {
+  list-style:none;
+  padding:5px 10px;
+  cursor:pointer;
+}
+
+#liveframe-load-dialog #liveframe-saveload fieldset li:hover, #liveframe-manage ul li:hover {
+  background-color:#555;
+}
+
+#liveframe-load-dialog #liveframe-saveload fieldset li.selected, #liveframe-manage ul li.selected {
+  background-color:#777;
+}
+
+#liveframe-saveload div.buttons {
+  position:absolute;
+  bottom:0;
+}
+
+#liveframe-saveload div.buttons button {
+  background-color:white;
+  border:1px solid #777;
+  font-size:15px;
+  cursor:pointer;
+}
+
+/** @end **/
+/** @group Manage **/
+
+#liveframe-manage .applebar {
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  height:20px;
+  background-color:white;
+  
+}
+
+#liveframe-manage .applebar div {
+  float:left;
+  width:20px;
+  height:20px;
+  background-color:#777;
+  text-align:center;
+}
+
+#liveframe-manage .applebar div:hover {
+  background-color:#aaa;
+}
+
+#liveframe-manage ul {
+  top:20px;
+}
+
+#liveframe-manage ul li button.showhide {
+  float:right;
+}
+
+
+
+/** @end **/
+

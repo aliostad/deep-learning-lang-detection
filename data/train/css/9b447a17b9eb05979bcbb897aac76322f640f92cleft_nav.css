@@ -1,0 +1,75 @@
+ul#left_nav{
+	list-style-type: none;
+	padding:0;
+	margin:0;
+	top:0px;
+}
+
+ul#left_nav li{
+	margin:0;
+	padding:0;
+	font-weight:bold;
+	font-size:14px;
+	line-height:46px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	font-size:18px;
+	width:218px;
+}
+
+ul#left_nav li a{
+	text-decoration:none;
+	display:block;
+	color:#c3c3c3;
+	padding-left:25px;
+	background-repeat:no-repeat;
+	background-position:right center;
+}
+
+ul#left_nav li a:hover{
+	color:#efefef;
+}
+
+ul#left_nav li a.active, ul#left_nav li a:hover{
+	color:#0094ec;
+}
+
+ul#left_nav li #Storage_nav{
+	background-image:url(images/nav/storage_off.png);
+}
+ul#left_nav li #Storage_nav.active, ul#left_nav li #Storage_nav:hover{
+	background-image:url(images/nav/storage_over.png);
+}
+ul#left_nav li #online_nav{
+	background-image:url(images/nav/online_off.png);
+}
+ul#left_nav li #online_nav.active, ul#left_nav li #online_nav:hover{
+	background-image:url(images/nav/online_on.png);
+}
+ul#left_nav li #network_nav{
+	background-image:url(images/nav/network_off.png);
+}
+ul#left_nav li #network_nav.active, ul#left_nav li #network_nav:hover{
+	background-image:url(images/nav/network_on.png);
+}
+
+ul#left_nav li #System_nav{
+	background-image:url(images/nav/settings_off.png);
+}
+ul#left_nav li #System_nav.active, ul#left_nav li #System_nav:hover{
+	background-image:url(images/nav/settings_over.png);
+}
+
+
+ul#left_nav li #media_nav{
+	background-image:url(images/nav/media_off.png);
+}
+ul#left_nav li #media_nav.active, ul#left_nav li #media_nav:hover{
+	background-image:url(images/nav/media_over.png);
+}
+ul#left_nav li #support_nav{
+	background-image:url(images/nav/support_off.png);
+}
+ul#left_nav li #support_nav.active, ul#left_nav li #support_nav:hover{
+	background-image:url(images/nav/support_over.png);
+}

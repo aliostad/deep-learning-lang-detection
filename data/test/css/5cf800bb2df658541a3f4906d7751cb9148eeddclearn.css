@@ -1,0 +1,69 @@
+@CHARSET "EUC-KR";
+@IMPORT url("/IES/common.css");
+
+#center{ width: 850px; margin:0 auto; text-align: center;}
+section #top { height:40px; }
+section #top h3 { margin:10px 0 0 20px; }
+section #con { padding-left:20px; width:950px; } 
+
+.listTab { clear:both; width:850px; border-top:2px solid #666666; border-bottom:2px solid #666666; border-spacing: 0px;}
+.listTab th { height:35px; border-bottom:1px solid #CCC; color:#333333; font:12px Dotum 600;  }
+.listTab td { height:30px; border-bottom:1px solid #CCC; color:#666; font:12px Dotum; text-align:center; }
+.listTab td.left { padding-left:30px; text-align:left; }
+
+.writeTab { width:950px; border-top:2px solid #6361A0; border-spacing: 0px;}
+.writeTab th { width:90px; height:35px; padding-left:10px; border-bottom:1px dotted #CCC; color:#6361A0; font:12px Dotum; background-color: #EFEFEF; text-align:left; font-weight:bold;}
+.writeTab td { border-bottom:1px solid #CCC; color: #666; font:12px Dotum; text-align:left; padding: 3px 0px 3px 15px; }
+.writeTab td .chk { vertical-align: text-top;}
+.writeTab td .txt { padding:0 0 0 10px; border:1px solid #CCC; font:12px Dotum; color:#666; }
+.writeTab td .w750 { width:750px; }
+.writeTab td .w150 { width:150px; }
+.writeTab td .cen { text-align:center; padding-left:0; padding-right:0;}
+.writeTab td #contents_tag { width:800px; height:50px; border:1px solid #CCC; font:12px Dotum; }
+.writeTab td ul,li { display:inline-block; margin:0; padding:0 5px 0 0; }
+.writeTab td label { margin:0; padding:0; font:12px Dotum; }
+.writeTab td select,option { font:12px Dotum; color:#666; padding:3px 0 3px 0; }
+.moveTab { width:850px; border-top:1px solid #666666; border-spacing: 0px}
+.moveTab td { height:20px; border-bottom:1px solid #CCC; color: #666; font:12px Dotum; text-align:center; padding: 5px 0px; }
+.moveTab td.left { padding-left:15px; text-align:left; }
+
+#icons { clear:both; margin-top:-3px; vertical-align: text-top;}
+#icons li { margin:0; padding:4px; cursor:pointer; }
+
+.listtop{ width: 850px; height:45px; margin: 0 auto;background-color: #5f6a72; margin-top: 35px; border: 3px #ffffff; border-spacing: 0; padding: 0px;}
+.listtop th {float:left; color: #ffffff; margin: 0px 20px;}
+.listtop td {vertical-align:middle; padding-top: 3px; font-size:80%; color: #ffffff;}
+#align { text-align : left;}
+
+#bot {margin-top:20px; }
+#paging {float:left;}
+#sub{widows:910px;}
+
+.listTab td span.before { padding:3px 5px; border:1px solid #5270e9; background: #b4d1fe; color:#4C4C4D; }
+.listTab td span.doing { padding:3px 5px; border:1px solid #1DC148; background:#bfffcc; color:#4C4C4D; }
+.listTab td span.success { padding:3px 5px; border:1px solid #929292; background:#d9d9d9; color:#4C4C4D; }
+
+
+input[type="text"] {
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  height: 25px;
+  width: 250px;
+}
+input[type="text"]:focus {
+  outline-color: #ffffff;
+}
+
+a:link,
+a:visited,
+a:active				{ text-decoration:none; color:#333; }
+
+.link1:hover			{ text-decoration:underline; color:#529CFF; }
+
+ul#testList { clear:both; display:inline-block; }
+ul#testList li { display:list-item; font:12px Dotum; color:#666; padding-bottom:3px; }
+ul#testList li em { font:10px Dotum; color:#999; }
+ul#testList li em a, a:link { color:#999;
+ul#testList li em a:hover { font-style:underline; }
+

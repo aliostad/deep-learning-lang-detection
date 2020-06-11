@@ -1,0 +1,152 @@
+div#model-details {
+    margin: 0 auto;
+    white-space: nowrap;
+    background: no-repeat center bottom;
+    height: 846px;
+}
+
+div#model-image {
+    position: relative;
+    margin: 16px 0 0;
+    width: 100%;
+    height: 410px;
+    background: no-repeat left top;
+}
+
+#text-seguridad {
+    margin-left: 15px;
+    display: inline-block;
+    width: 480px;
+}
+
+#text-tecnologia {
+    margin: 16px 0 0;
+    width: 254px;
+    display: inline-block;
+}
+
+#text-rendimiento {
+    margin: 16px 0 0;
+    width: 200px;
+    display: inline-block;
+}
+
+.dmax-text p {
+    color: rgb(50, 51, 52);
+    margin-top: 0;
+    font-family: Louis;
+    font-style: italic;
+    font-size: 10px;
+    word-wrap: normal;
+    white-space: normal;
+    line-height: 15px;
+}
+
+.dmax-text p.caption {
+    font-weight: bold;
+}
+
+div#model-left-container {
+    position: relative;
+    width: 507px;
+    margin: 0;
+    display: inline-block;
+}
+
+div#model-data {
+    float: right;
+    width: 464px;
+}
+
+div#model-data .right {
+    float: right;
+}
+
+div#model-data .left {
+    float: left;
+}
+
+div#model-version-dialog {
+    font-size: 12px;
+}
+
+div#model-actions {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+}
+
+div#model-image input#version-change {
+    display: block;
+    width: 100%;
+}
+
+div#model-image input#value-estimate {
+    display: block;
+    width: 100%;
+}
+
+div#model-gallery {
+    margin-top: 16px;
+    position: relative;
+    width: 254px;
+    height: 164px;
+    overflow: hidden;
+}
+
+ul#model-gallery-mark-list {
+    padding: 0;
+    margin: 0;
+    right: 15px;
+    bottom: 7px;
+    position: absolute;
+    white-space: nowrap;
+}
+
+ul#model-gallery-mark-list li.current {
+    color: #f6d466;
+}
+
+ul#model-gallery-mark-list li {
+    display: inline-block;
+    color: #dca62a;
+}
+
+ul#model-gallery-slider {
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    left: -100%;
+}
+
+ul#model-gallery-slider li {
+    display: inline-block;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+img.model-gallery-arrow {
+    cursor: pointer;
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    top: 71px;
+}
+
+img#model-gallery-arrow-left {
+    left: 12px;
+}
+
+img#model-gallery-arrow-right {
+    right: 12px;
+}
+
+img#model-gallery-right {
+    position: absolute;
+}

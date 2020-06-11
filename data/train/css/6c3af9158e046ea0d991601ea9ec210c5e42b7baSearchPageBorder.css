@@ -1,0 +1,44 @@
+
+.service{
+	border: 1px solid #c0c0c0;
+	border-radius: 10%;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 30px;
+	transition: all 0.3s;
+	position: relative;
+	padding: 20px 20px;
+	font-family: Microsoft YaHei;
+	text-align:center;
+	display: inline-block;
+}
+
+.service img{
+	display: inline-block;
+	margin-bottom:10px;
+}
+
+.service:hover>h4,
+.service:hover>span.font-right{
+	color: #c59a6d;
+	font-family: Microsoft YaHei;
+}
+
+.service p{
+	display: none;
+}
+
+.service:hover>span p{
+	display: inline;
+}
+
+.service:hover{
+	border-color: #c59a6d;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	cursor: pointer;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-family: Microsoft YaHei;
+}

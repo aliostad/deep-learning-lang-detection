@@ -1,0 +1,49 @@
+#nav-index {
+    width: 66px;
+    height: 100%;
+    display: inline-block;
+    background-image: url(../image/nav/index.png);
+}
+#nav-index.active {
+    background-image: url(../image/nav/index-active.png);
+}
+#nav-xsh {
+    width: 88px;
+    height: 100%;
+    display: inline-block;
+    margin-left: 7px;
+    background-image: url(../image/nav/xsh.png);
+}
+#nav-xsh.active {
+    background-image: url(../image/nav/xsh-active.png);
+}
+#nav-nkst {
+    width: 116px;
+    height: 100%;
+    display: inline-block;
+    margin-left: 7px;
+    background-image: url(../image/nav/st.png);
+}
+#nav-nkst.active {
+    background-image: url(../image/nav/st-active.png);
+}
+#nav-zgtx {
+    width: 116px;
+    height: 100%;
+    display: inline-block;
+    margin-left: 7px;
+    background-image: url(../image/nav/zgtx.png);
+}
+#nav-zgtx.active {
+    background-image: url(../image/nav/zgtx-active.png);
+}
+#nav-bjhd {
+    width: 116px;
+    height: 100%;
+    display: inline-block;
+    margin-left: 7px;
+    background-image: url(../image/nav/bjhd.png);
+}
+#nav-bjhd.active {
+    background-image: url(../image/nav/bjhd-active.png);
+}

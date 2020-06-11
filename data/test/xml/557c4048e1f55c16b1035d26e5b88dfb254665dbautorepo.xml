@@ -1,0 +1,25 @@
+<repositories>
+	<repository>http://spicefly.f-snet.com/repo.xml</repository>
+	<repository>http://www.tux.org/~peterw/slim/slim7/repodata.xml</repository>
+	<repository>http://triodeplugins.googlecode.com/svn/trunk/repo.xml</repository>
+	<repository>http://bitflip.net/slim/repo.xml</repository>
+	<repository>http://gregbrown.net/squeeze/repo.xml</repository>
+	<repository>http://mdmplugins.googlecode.com/svn/trunk/repo.xml</repository>
+	<repository>http://squeezecenter-seeqpod.googlecode.com/svn/trunk/repodata.xml</repository>
+	<repository>http://www.koldware.com/SlimStuff/repodata.xml</repository>
+	<repository>http://erlandplugins.googlecode.com/svn/repository/trunk/latest.xml</repository>
+	<repository>http://www.herger.net/slim-plugins/repo.xml</repository>
+	<repository>http://kdfplugins.googlecode.com/svn/trunk/repo.xml</repository>
+	<repository>http://alienbbc.googlecode.com/svn/trunk/repo.xml</repository>
+	<repository>http://pluginrepository.penguinlovesmusic.de/pluginrepo.xml</repository>
+	<repository>http://www.gwendesign.com/sc/repo/repo.xml</repository>
+	<repository>http://www.hickinbottom.com/sc-plugins/repo.xml</repository>
+	<repository>http://bpaplugins.googlecode.com/svn/trunk/repo.xml</repository>
+	<repository>http://www.hergest.demon.co.uk/Music/slim/repository.xml</repository>
+	<repository>http://www.erspearson.com/xAP/Slim/Updates.xml</repository>
+	<repository>http://slimscrobbler.sourceforge.net/repository.xml</repository>
+	<repository>http://weathertime.googlecode.com/svn/trunk/repo.xml</repository>
+	<repository>http://wiki.insignificant.org/images/Pluginrepo.xml</repository>
+	<repository>http://petherton.pwp.blueyonder.co.uk/SlimServer/repository.xml</repository>
+	<repository>http://ampache-squeezecenter.googlecode.com/svn/tags/repo.xml</repository>
+</repositories>

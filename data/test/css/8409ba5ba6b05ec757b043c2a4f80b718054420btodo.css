@@ -1,0 +1,48 @@
+.input-view input {
+  padding: 10px;
+  margin-bottom: 25px;
+}
+.todo-list-view {
+  width: 350px;
+  margin: 0 auto;
+  text-align: left;
+}
+.todo-list-view .list-item-view {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.todo-list-view .list-item-view input {
+  display: none;
+  margin-bottom: 0;
+}
+.todo-list-view .list-item-view .icon-set {
+  float: right;
+  display: none;
+}
+.todo-list-view .list-item-view .icon-set i {
+  margin-right: 5px;
+  cursor: pointer;
+}
+.todo-list-view .list-item-view .icon-set .icon-ok:hover {
+  color: #008000;
+}
+.todo-list-view .list-item-view .icon-set .icon-edit:hover {
+  color: #00f;
+}
+.todo-list-view .list-item-view .icon-set .icon-remove:hover {
+  color: #f00;
+}
+.todo-list-view .list-item-view:hover {
+  background-color: #ddd;
+}
+.todo-list-view .list-item-view:hover .icon-set {
+  display: inline-block;
+}
+.todo-list-view .list-item-view.done {
+  background-color: #5ba05b;
+}
+.todo-list-view .list-item-view.done:hover .icon-set {
+  display: none;
+}

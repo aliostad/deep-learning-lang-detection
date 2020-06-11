@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*轮播图css*/
+.is-banner{ width:1200px; margin:0 auto;}
+.index_banner{position:relative; width:1200px;height:343px; margin:0 auto;}
+.index_banner li{position:absolute;top:0;left:0;overflow:hidden;width:100%;height:343px;}
+.index_banner li a{display:block;margin:0 auto;width:1200px;height:350px;}
+.index_banner cite{position:absolute;bottom:0;z-index:10;display:block;width:inherit; padding-left:20px;height:9px;_display:none;}
+.index_banner cite span{float:left;display:block;margin:0 2px 0 0;width:69px;height:9px;background-color:#5fa5d8;text-indent:-999em;opacity:1;cursor:pointer;}
+.index_banner cite span:hover{background-color:#ffffff;}
+.index_banner cite span.cur{background-color:#ffffff;cursor:default;}
+
+.is-model-info{ width:1200px; margin:0 auto; padding-bottom:45px; padding-top:28px;}
+.is-model-info-left{ float:left; display:block; padding-left:39px; width:490px;}
+.is-model-info-left h2{ font-family:Nunito; font-weight:lighter; font-size:18px; padding-top:11px; color:#212121;}
+.is-model-infolist { padding-top:8px;}
+.is-model-infolist a{ display:block; width:100%; line-height:25px; height:25px; overflow:hidden; font-size:13px; color:#41a8d7; font-weight:lighter;}
+.is-model-infolist a:hover{ text-decoration:underline;}
+.is-model-info-right{ float:right; width:660px;}
+/*about us*/
+.is-about-banner{ width:1200px; text-align:center; padding-top:24px;}
+/*become a model*/
+.is-becom-info h2{ font-size:18px; color:#212121; line-height:28px;}
+.is-becom-email{ color:#757575; font-size:13px; padding:22px 0 0 0;}
+.is-becom-email a{ color:#29a1d4; font-size:15px;}
+.is-becom-title{ font-size:#212121; font-size:22px; font-family:Nunito; padding:25px 0 0 0;}
+.is-becom-sex{ font-size:14px; color:#757575; padding-top:20px; line-height:18px;}
+.is-become-banner{ width:1200px; margin:0 auto; text-align:center;}
+
+@media only screen and (max-width:1000px){
+	.is-banner{ width:100%; height:auto;}
+	.index_banner { width:100%; height:auto;}
+	.index_banner ul{ width:100%; height:auto;}
+	.index_banner li a{ width:100%; height:auto;}
+	.index_banner li a img{ width:100%; height:auto;}
+	.index_banner li{ height:auto;}
+	.is-model-info{ padding-top:15px; width:100%;}
+	.is-model-info-left{ width:100%; padding-bottom:20px; padding-left:0; float:none;}
+	.is-model-info-right{ float:none; width:100%; height:auto;}
+	
+	.index_banner cite{ padding-left:1%; width:99%;}
+	
+	/*aboutus*/
+	.is-about-banner{ width:100%; text-align:center;}
+	.is-about-banner img{ width:100%;}
+	.is-become-banner{ width:100%; text-align:center;}
+	.is-become-banner img{ width:100%;}
+	}

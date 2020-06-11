@@ -1,0 +1,55 @@
+#!/bin/bash
+
+flag=false
+src="$1"
+chunk=$(printf "%-$((($(tput cols) - 15)/15))s" "#")
+chunk="${chunk// /#}"
+if [ -z "$src" ] || [ "$src" == "-h" ]
+then
+	echo "Usage:"
+	echo "    mkicns <source> <target>"
+        echo "For best results, <source> should be an image of size 1024x1024."
+elif [ -f "$src" ]
+then
+	echo -n -e "\033[1mProgress\033[0m: \033[40m"
+	if [ "${src##*.}" != "png" ] || [ "${#src}" -gt "4" ]
+	then
+		flag=true
+		sips -s format png "$src" --out "${src%.*}-temp.png" &> /dev/null
+		src="${src%.*}-temp.png"
+	fi
+	echo -n -e "$chunk"
+	mkdir "$2.iconset"
+	echo -n -e "$chunk"
+	sips -z 16 16 "$src" --out "$2.iconset/icon_16x16.png" &> /dev/null
+	echo -n -e "$chunk"
+	sips -z 32 32 "$src" --out "$2.iconset/icon_16x16@2x.png" &> /dev/null
+	echo -n -e "$chunk"
+	sips -z 32 32 "$src" --out "$2.iconset/icon_32x32.png" &> /dev/null
+	echo -n -e "$chunk"
+	sips -z 64 64 "$src" --out "$2.iconset/icon_32x32@2x.png" &> /dev/null
+	echo -n -e "$chunk"
+	sips -z 128 128 "$src" --out "$2.iconset/icon_128x128.png" &> /dev/null
+	echo -n -e "$chunk"
+	sips -z 256 256 "$src" --out "$2.iconset/icon_128x128@2x.png" &> /dev/null
+	echo -n -e "$chunk"
+	sips -z 256 256 "$src" --out "$2.iconset/icon_256x256.png" &> /dev/null
+	echo -n -e "$chunk"
+	sips -z 512 512 "$src" --out "$2.iconset/icon_256x256@2x.png" &> /dev/null
+	echo -n -e "$chunk"
+	sips -z 512 512 "$src" --out "$2.iconset/icon_512x512.png" &> /dev/null
+	echo -n -e "$chunk"
+	cp "$src" "$2.iconset/icon_512x512@2x.png"
+	echo -n -e "$chunk"
+	iconutil -c icns "$2.iconset"
+	echo -n -e "$chunk"
+	rm -R "$2.iconset"
+	echo -n -e "$chunk"
+	if $flag
+	then
+		rm "$src"
+	fi
+	echo -e "$chunk\033[0m Done"
+else
+	echo "The file $src does not exist!"
+fi 

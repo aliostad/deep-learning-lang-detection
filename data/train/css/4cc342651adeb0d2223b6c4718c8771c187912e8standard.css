@@ -1,0 +1,181 @@
+/**
+ * @package FD.sys.head.nav.standard
+ * @version 1.0.110212
+ * @author  Edgar
+ */
+
+.ali-nav,
+.ali-nav .ali-nav-container,
+.ali-nav .primary-nav,
+.ali-nav .primary-nav li,
+.ali-nav .primary-nav a,
+.ali-nav .primary-nav em,
+.ali-nav .extended-nav,
+.ali-nav .extended-nav-over .to-others-a{
+    background:url(http://img.china.alibaba.com/cms/upload/other/sys/nav-v1.31.png) no-repeat -150px 0;
+}
+
+.ali-nav{
+    height:36px;
+    background-position:0 -100px;
+    background-repeat:repeat-x;
+    font:12px/1.5 Tahoma,Arial,"\5b8b\4f53",sans-serif;
+    text-align:left;
+}
+.ali-nav a{
+    text-decoration:none !important;
+}
+.ali-nav .ali-nav-container{
+    height:36px;
+    background-position:right -350px;
+}
+
+.ali-nav .primary-nav{
+    float:left;
+    height:36px;
+    background-position:-110px -50px;
+    padding-left:16px;
+}
+.ali-nav .primary-nav li{
+    float:left;
+    height:31px;
+    padding:5px 2px 0 0;
+    background-position:right 0;
+}
+.ali-nav .primary-nav .nav-last{
+    background-position:-150px 0;
+}
+.ali-nav .primary-nav a{
+    display:inline-block;
+    height:31px;
+    padding-left:17px;
+    font-size:14px;
+    font-weight:700;
+    cursor:pointer;
+    _padding-top:4px;
+    _height:27px;
+    vertical-align:top;
+}
+.ali-nav .primary-nav a:link,
+.ali-nav .primary-nav a:visited,
+.ali-nav .additional-nav a:link,
+.ali-nav .additional-nav a:visited{
+    color:#b75200;
+}
+.ali-nav .primary-nav a:hover,
+.ali-nav .primary-nav a:active,
+.ali-nav .additional-nav a:hover,
+.ali-nav .additional-nav a:active{
+    color:#ff7300;
+}
+.ali-nav .primary-nav em{
+    display:inline-block;
+    height:31px;
+    font-style:normal;
+    padding-right:16px;
+    vertical-align:top;
+    line-height:25px;
+    line-height:28px\9;
+    _line-height:26px;
+    _margin-top:-4px;
+}
+
+.ali-nav .secondary-nav{
+    float:right;
+    height:36px;
+}
+.ali-nav .extended-nav{
+    float:left;
+    position:relative;
+    z-index:100;
+    width:108px;
+    background-position:right -250px;
+}
+.ali-nav .extended-nav-over .fd-hide{
+    display:block;
+}
+.ali-nav .extended-nav-over{
+    width:106px;
+    height:33px;
+    border:1px solid #b75200;
+    border-bottom-width:1px;
+    background-position:-200px 0;
+}
+.ali-nav .extended-nav .to-others{
+    padding-top:1px;
+}
+.ali-nav .extended-nav-over .to-others{
+    width:104px;
+    height:30px;
+    border:1px solid #f90;
+    border-bottom-color:#cfa046;
+}
+.ali-nav .extended-nav .to-others-a{
+    display:block;
+    width:82px;
+    height:29px;
+    padding:3px 23px 3px 3px;
+    color:#b75200 !important;
+    text-align:right;
+    line-height:27px;
+    line-height:30px\9;
+    _line-height:27px;
+}
+.ali-nav .extended-nav-over .to-others-a{
+    overflow:hidden;
+    border:1px solid #fffabd;
+    border-bottom:0 none;
+    padding:0 20px 0 0;
+    background-position:right -300px;
+}
+.ali-nav .extended-nav-list{
+    position:absolute;
+    top:33px;
+    left:-1px;
+    width:106px;
+    border:1px solid #b75200;
+    border-top:0 none;
+    background:#fff;
+}
+.ali-nav .extended-nav-list ul{
+    border:1px solid #f90;
+    border-top:0 none;
+    padding-bottom:3px;
+}
+.ali-nav .extended-nav li{
+    height:20px;
+    margin:0 1px;
+    padding:1px 0;
+    border-top:1px dashed #ccc;
+}
+.ali-nav .extended-nav li.first-row{
+    padding-top:7px;
+    border-top:2px solid #ccc;
+    margin:0;
+    padding-left:1px;
+}
+.ali-nav .extended-nav li a{
+    display:block;
+    width:86px;
+    height:20px;
+    overflow:hidden;
+    line-height:18px;
+    line-height:22px\9;
+    _line-height:18px;
+    padding-left:16px;
+    color:#333 !important;
+}
+.ali-nav .extended-nav li a:hover{
+    background:#ccc;
+}
+.ali-nav .additional-nav{
+    float:left;
+}
+.ali-nav .additional-nav li{
+    float:left;
+    height:34px;
+    line-height:30px;
+    line-height:34px\9;
+    _line-height:30px;
+    padding:2px 8px 0 4px;
+}

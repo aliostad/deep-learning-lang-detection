@@ -1,0 +1,78 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex; 
+  font-family: 'Overpass', sans-serif;
+}
+
+.buttons-container {
+  height: 100%;
+  width: 50%;
+  background-color: #405559;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.buttons {
+  display: grid; 
+  grid-template-columns: repeat(8, 70px); 
+  grid-template-rows: repeat(8, 70px);
+  grid-gap: 5px;
+}
+
+.button { 
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+
+  border-radius: 5px;
+  background-color: #68868C;
+  box-shadow: 0px 1px 0.5px lightsteelblue;
+}
+
+label.load-button input[type="file"] {
+  position: fixed;
+  top: -1000px;
+}
+
+label.remove-button button {
+  position: fixed;
+  top: -1000px;
+}
+
+label.load-button {
+  height: 15px;
+  width: 50%;
+  border-radius: 2px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+label.load-button.empty {
+  background-color: #3E3E3E;
+}
+
+label.load-button.loaded {
+  background-color: #EACF79;
+}
+
+label.remove-button {
+  height: 15px;
+  width: 20%;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  background-color: #A55540;
+}
+
+.video-container {
+  width: 50%;
+  height: 100%;
+  background-color: #3E3E3E;
+}

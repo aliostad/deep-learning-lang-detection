@@ -1,0 +1,37 @@
+.new-api-form .modal-dialog .modal-content .new-api-input {
+  font-family: 'opensans-light-webfont'; }
+
+.new-api-form .modal-dialog .modal-content .new-api-input {
+  font-size: 16px; }
+
+.new-api-form .modal-dialog {
+  height: 100%;
+  width: 600px; }
+  .new-api-form .modal-dialog .modal-content {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    margin-top: -250px;
+    position: relative;
+    left: 50%;
+    margin-left: -300px; }
+    .new-api-form .modal-dialog .modal-content .create-button {
+      position: relative;
+      left: 50%;
+      margin-left: -100px;
+      margin-top: 10px;
+      width: 200px; }
+    .new-api-form .modal-dialog .modal-content .new-api-input {
+      height: 40px;
+      margin: 0 auto; }
+    .new-api-form .modal-dialog .modal-content .btn-group {
+      float: left;
+      margin-right: 10px; }
+    .new-api-form .modal-dialog .modal-content .btn-group .btn {
+      width: 95px;
+      height: 39px; }
+    .new-api-form .modal-dialog .modal-content .dropdown-text {
+      width: 80%;
+      display: inline-block; }
+    .new-api-form .modal-dialog .modal-content .caret {
+      margin-left: 10px; }

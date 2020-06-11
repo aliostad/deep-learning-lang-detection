@@ -1,0 +1,20 @@
+ <prerequisite type="Query" name="Check Credit Cards for valid Customer" >
+  <query>SELECT COUNT(*) = 0 FROM ccard WHERE ccard_cust_id NOT IN (SELECT cust_id FROM custinfo) OR  ccard_cust_id IS NULL;</query>
+  <message>One or more of the Credit Card records in the system do not belong to a valid Customer.</message>
+ </prerequisite>
+ <prerequisite type="Query" name="Check for duplicate planner codes" >
+  <query>SELECT count(*) = 0 FROM (SELECT plancode_code, count(*) FROM plancode GROUP BY plancode_code HAVING count(*) > 1) AS data;</query>
+  <message>Plancode records exist with duplicate codes please ensure each planner has a unique code.</message>
+ </prerequisite>
+ <prerequisite type="Query" name="Check for duplicate reject codes" >
+  <query>SELECT count(*) = 0 FROM (SELECT rjctcode_code, count(*) FROM rjctcode GROUP BY rjctcode_code HAVING count(*) > 1) AS data;</query>
+  <message>Rjctcode records exist with duplicate codes please ensure each reject has a unique code.</message>
+ </prerequisite>
+ <prerequisite type="Query" name="Check for duplicate terms codes" >
+  <query>SELECT count(*) = 0 FROM (SELECT terms_code, count(*) FROM terms GROUP BY terms_code HAVING count(*) > 1) AS data;</query>
+  <message>Terms records exist with duplicate codes please ensure each terms has a unique code.</message>
+ </prerequisite>
+ <prerequisite type="Query" name="Check for duplicate expense category codes" >
+  <query>SELECT count(*) = 0 FROM (SELECT expcat_code, count(*) FROM expcat GROUP BY expcat_code HAVING count(*) > 1) AS data;</query>
+  <message>Expcat records exist with duplicate codes please ensure each expense category has a unique code.</message>
+ </prerequisite>

@@ -1,0 +1,28 @@
+/* enigma service area */
+.enigma_service_iocn {
+  border: 0 solid #dd4814;
+  background-image: linear-gradient(to bottom, #dd4814 50%, #fff 50%);
+}
+.enigma_service_area:hover .enigma_service_iocn i {
+  color: #77216F;
+}
+.enigma_service .enigma_heading_title h2 {
+  border-bottom: 4px solid #77216F;
+  display: inline-block;
+  font-family: "Ubuntu",Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin-top: 0;
+}
+.enigma_service .enigma_heading_title {
+  margin-bottom: 25px;
+}
+.enigma_service {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.enigma_service_iocn .fa-rss:before {
+  margin-left: 5px;
+}
+.enigma_service_iocn .fa-cloud-download:before {
+  margin-right: 10px;
+}
+/* end of enigma service area */

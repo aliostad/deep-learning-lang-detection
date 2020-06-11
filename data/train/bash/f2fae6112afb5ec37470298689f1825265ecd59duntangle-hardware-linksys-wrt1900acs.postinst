@@ -1,0 +1,25 @@
+#!/bin/sh
+
+ourInit() {
+if [ -x /usr/sbin/invoke-rc.d ] && [ ! "`readlink /usr/sbin/invoke-rc.d`" = /bin/true ] ; then
+  invoke-rc.d $1 $2
+else
+  /etc/init.d/$1 $2
+fi
+}
+
+if [ -x "/etc/init.d/untangle-firmware-common" ]; then
+  ourInit untangle-firmware-common restart
+fi
+
+# 12.2.1 upgrade NGFW-10303
+# remove file if it exists
+rm -f /etc/udev/rules.d/70-persistent-net.rules
+
+# 13.0 remove wan balancer limitation
+rm -f /etc/untangle/hardware/firmware.d/50hide
+
+# disable rsyslog by default
+update-rc.d -f rsyslog disable
+
+exit 0

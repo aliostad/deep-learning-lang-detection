@@ -1,0 +1,43 @@
+#!/bin/bash
+
+SHOW_HELP=
+HELP_MESSAGE=
+
+if [ $# != 1 -a $# != 2 ] ; then
+	SHOW_HELP=true
+	HELP_MESSAGE="Invalid number of arguments."
+elif [ "$1" == "help" ] ; then
+	SHOW_HELP=true
+fi
+
+if [ $SHOW_HELP ] ; then
+	echo "usage: description (repository [description]) | help"
+	if [ "$HELP_MESSAGE" ] ; then
+		echo ${HELP_MESSAGE}
+		exit 1
+	fi
+	exit 0
+fi
+
+GIT_HOME="$(dirname ${BASH_SOURCE[0]})/.."
+REPO_NAME=$1
+REPO_PATH="$GIT_HOME/$REPO_NAME.git"
+REPO_DESC=$2
+
+if [ ! -d "$REPO_PATH" ] ; then
+	echo "Repository $REPO_NAME does not exist."
+	exit 1
+fi
+
+if [ $# = 2 ] ; then
+	rm -f "$REPO_PATH/description"
+	echo "$REPO_DESC" >> "$REPO_PATH/description"
+	echo "Repository description updated."
+elif [ ! -e "$REPO_PATH/description" ] ; then
+	echo "Repository has no description."
+	exit 1
+else
+	cat "$REPO_PATH/description"
+fi
+
+

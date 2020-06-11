@@ -1,0 +1,233 @@
+/*
+     This file controls the styling of the html for the 'QSAudit' and 'Model 
+     Snapshot' tools.
+*/
+
+html 
+{
+  font-family:sans-serif; 
+  background:url(demo.gif) top right no-repeat;
+}
+
+/* Due to differences in the way xml (xhtml) and html 
+ * are dealt with, duplicate the html tag for body 
+ */
+body 
+{
+  font-family:sans-serif; 
+  background:url(demo.gif) top right no-repeat;
+}
+
+.qs_summary_list 
+{  
+  margin-top:22pt;
+  font-weight:bold; 
+  margin-bottom:22pt;
+  border-bottom:silver thin solid; 
+}
+
+.qs_summary_list li
+{ 
+  list-style-type: none; 
+  margin-bottom:11pt;  
+  position: relative;
+  left: -28pt;
+}
+
+.qs_summary_list div
+{
+  font-weight:normal;
+  display: inline; 
+  position: absolute;
+  left: 11em;
+}
+
+.qs_creation_text 
+{
+  font-style:italic;  
+  font-size:small; 
+  text-align:right; 
+  margin-bottom:22pt; 
+}
+
+thead 
+{
+  font-size:small;
+  font-weight:bold; 
+  text-align:center; 
+  background-color:silver;
+}
+
+tbody 
+{
+  font-size:small; 
+  text-align:right;
+}
+
+div.qsaudit_field_page, 
+#qs_model_final_model,
+#qs_model_final_model_expr,
+#qs_model_gains, 
+#qs_model_score_distribution,
+#qs_model_model_quality,
+#qs_model_variables,
+#qs_model_gini_graph,
+#qs_model_objectiveandbuild
+{
+  margin-top:11pt; 
+  page-break-before:always;
+  border:silver thin solid; 
+  padding:11pt; 
+  padding-right:11pt; 
+  padding-left:11pt; 
+}
+
+.qs_model_objectiveandbuild_table,
+.qs_model_variables_table
+{
+  margin-top:11pt; 
+}
+
+#qsaudit_focus_notes_text 
+{
+  text-align:justify; 
+  margin-bottom:22pt; 
+}
+
+.qsaudit_svggraph
+{ 
+  margin-left:11pt;
+  margin-top:11pt; 
+  width : 500px;
+  height: 375px;
+  margin-bottom:11pt; 
+}
+
+#qs_model_final_model_image .qsaudit_svggraph
+{ 
+  margin-left:11pt;
+  margin-top:11pt; 
+  width : 800px;
+  margin-bottom:11pt; 
+}
+
+.qsaudit_largegraph { display: none; }
+
+.qsaudit_smallgraph 
+{  
+  margin-left:11pt;
+  margin-top:11pt; 
+  border: 0; 
+  margin-bottom:11pt; 
+}
+
+.qsaudit_backtotop
+{ 
+  padding-top:11pt; 
+  font-size:small;
+}
+
+.qsaudit_backtotable
+{
+  padding-top:11pt;  
+  font-size:small; 
+}
+
+
+/*.qsaudit_colstdev,*/
+.qsaudit_colsum,
+.qsaudit_colginidelta,
+.qsaudit_colrefpval,
+.qsaudit_colcountnullsdelta,
+.qsaudit_colmindeltapc,
+.qsaudit_colmaxdeltapc,
+.qsaudit_colmeandelta,
+.qsaudit_colsumdelta,
+.qsaudit_colsumdeltapc,
+.qsaudit_colcomment
+{ 
+  display: none;
+} 
+
+.qsaudit_details_col_stdev,
+/*.qsaudit_details_col_countnonnull,*/
+.qsaudit_details_col_countnonnull_delta,
+.qsaudit_details_col_countnonnull_deltapc,
+.qsaudit_details_col_stdev_delta,
+.qsaudit_details_col_stdev_deltapc
+{ 
+  display: none;
+} 
+
+.qsaudit_details_col_count_total,
+.qsaudit_details_col_count_total_delta,
+.qsaudit_details_col_count_total_deltapc,
+.qsaudit_details_col_count_diff,
+.qsaudit_details_col_count_diff_delta,
+.qsaudit_details_col_count_diff_deltapc
+{
+  display: none;
+}
+
+.qsaudit_details_col_stdev_total,
+.qsaudit_details_col_stdev_diff,
+.qsaudit_details_col_stdev_control,
+.qsaudit_details_col_stdev_treat,
+.qsaudit_details_col_stdev_total_delta,
+.qsaudit_details_col_stdev_diff_delta,
+.qsaudit_details_col_stdev_control_delta,
+.qsaudit_details_col_stdev_treat_delta,
+.qsaudit_details_col_stdev_total_deltapc,
+.qsaudit_details_col_stdev_diff_deltapc,
+.qsaudit_details_col_stdev_control_deltapc,
+.qsaudit_details_col_stdev_treat_deltapc
+{
+  display: none;
+}
+
+.qsaudit_details_col_countnonnull_total,
+.qsaudit_details_col_countnonnull_diff,
+.qsaudit_details_col_countnonnull_control,
+.qsaudit_details_col_countnonnull_treat,
+.qsaudit_details_col_countnonnull_total_delta,
+.qsaudit_details_col_countnonnull_diff_delta,
+.qsaudit_details_col_countnonnull_control_delta,
+.qsaudit_details_col_countnonnull_treat_delta,
+.qsaudit_details_col_countnonnull_total_deltapc,
+.qsaudit_details_col_countnonnull_diff_deltapc,
+.qsaudit_details_col_countnonnull_control_deltapc,
+.qsaudit_details_col_countnonnull_treat_deltapc
+{
+  display: none;
+}
+
+.qsaudit_details_col_sum_total,
+.qsaudit_details_col_sum_diff
+{
+  display: none;
+}
+
+
+.qsaudit_arrow  {
+    font-family: webdings; color: black; padding: 0pt; font-size: 10px;
+    height: 11px; width: 10px; overflow: hidden;
+    margin-bottom: 2pt; margin-top: -3pt; padding: 0pt; padding-top: 0pt; 
+    padding-bottom: 2pt;
+}
+
+.qssc_table_bin_label
+{
+  font-weight:bold; 
+}
+
+.qssc_model_table_cell
+{
+  text-align:center;
+  white-space:nowrap; 
+}
+
+.qs_deltavalue_neg
+{
+  color: red;   
+}
+

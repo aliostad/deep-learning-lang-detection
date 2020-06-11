@@ -1,0 +1,5 @@
+questZone	navPoints	laps	specialTarget	triggerEvent	triggerSplitCondition	triggerArg	triggerArg2	triggerOn	triggerEndsMission	triggerDelay	autoReward	questDelay	_DESIGNER NOTES_	questSeries
+s	s	i[1]	s	"e(none=0,splitquest=1,surpriseattack=2)[none]"	"e(triggerOn=0,success=1,failure=2,both=3)[triggerOn]"	s	s	i	i	i	i	i	s	s
+space_yavin4	space_yavin4:massassi_investigation_patrol_rt3_01	1		splitquest	triggerOn	rescue:stn_yavin4_company_all_massassi_tier2_9		2	0	15	0	0		
+	space_yavin4:massassi_investigation_patrol_rt3_02													
+	space_yavin4:massassi_investigation_patrol_rt3_03													

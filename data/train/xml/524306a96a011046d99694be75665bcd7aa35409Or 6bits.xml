@@ -1,0 +1,23 @@
+<save arq="/home/adriano/workspace/VPE-qGM/src/processos/Or 6bits.xml" pos="">
+<process repr="env" tipo="seq" pos="">
+<process repr="terminicio" x="1098.0" y="1305.0" cor="BLACK"></process>
+<process repr="env" tipo="seq" pos="">
+<process repr="macro" tipo="quantum" pos= "0:128" parametro= "X,X,X,X,X,X,Id" name="Default Macro Name" x="1254.0" y="1305.0" cor="BLACK">
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr="conselem" qubits= "7" acao= "QGMAnalyzer" pos= "0" parametro= "X,X,X,X,X,X,Id" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="macro" tipo="quantum" pos= "0:128" parametro= "(Control1(1),Control1(1),Control1(1),Control1(1),Control1(1),Control1(1),Target1(X))" name="Default Macro Name" x="1818.0" y="1305.0" cor="BLACK">
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr="conselem" qubits= "7" acao= "QGMAnalyzer" pos= "0" parametro= "(Control1(1),Control1(1),Control1(1),Control1(1),Control1(1),Control1(1),Target1(X))" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+</process>
+<process repr="macro" tipo="quantum" pos= "0:128" parametro= "X,X,X,X,X,X,X" name="Default Macro Name" x="2378.0" y="1305.0" cor="BLACK">
+<process repr="iterativo" tipo="iterativo" range="0:128:1" acao="parfor" x="0.0" y="0.0" cor="BLACK">
+<process repr="conselem" qubits= "7" acao= "QGMAnalyzer" pos= "0" parametro= "X,X,X,X,X,X,X" x="0.0" y="0.0" cor="BLACK"></process>
+</process>
+</process>
+</process>
+<process repr="termfim" x="2534.0" y="1305.0" cor="BLACK"></process>
+</process>
+</save>

@@ -1,0 +1,19 @@
+<pentaho-system>
+
+	<log-file>server.log</log-file>
+	<log-level>INFO</log-level>
+
+	<objects>
+		<ISolutionEngine scope="global">org.pentaho.solution.SolutionEngine</ISolutionEngine>
+		<ISolutionRepository scope="session">org.pentaho.repository.filebased.solution.SolutionRepository</ISolutionRepository>
+		<IRuntimeRepository scope="session">org.pentaho.repository.runtime.SimpleRuntimeRepository</IRuntimeRepository>
+		<IContentRepository scope="session">org.pentaho.repository.content.ContentRepository</IContentRepository>
+	</objects>
+
+	
+	<system-listeners>
+		<globalObjects>org.pentaho.system.GlobalObjectInitializer</globalObjects>
+		<quartz>org.pentaho.scheduler.QuartzSystemListener</quartz>
+	</system-listeners>
+
+</pentaho-system>

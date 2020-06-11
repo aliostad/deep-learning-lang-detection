@@ -1,0 +1,74 @@
+#! /bin/sh
+
+export PYTHONPATH=/udir/stenac/metrolix/install/lib/python2.6/site-packages
+export PATH=/usr/bin:$PATH
+rm metrolix.db
+./manage.py syncdb
+
+exit
+
+cat|./manage.py shell << EOF
+from metrolix.server.models import *
+import metrolix
+
+p = Project(name="EDK")
+p.save()
+
+metric1 = Metric(path="/Test1/QPS", title="QPS For Test 1", project = p)
+metric1.save()
+metric2 = Metric(path="/Test2/QPS", title="QPS For Test 2", project = p)
+metric2.save()
+
+vt1 = ProjectVersion(project=p, branch="trunk", version="V1")
+vt1.save()
+
+vt2 = ProjectVersion(project=p, branch="trunk", version="V2")
+vt2.save()
+
+vt3 = ProjectVersion(project=p, branch="trunk", version="V3")
+vt3.save()
+
+vbr1 = ProjectVersion(project=p, branch="branch", version="V143")
+vbr1.save()
+
+s_vt1_win = Session(name="Windows", project_version=vt1, token="tok_s_vt1_win")
+s_vt1_win.save()
+Result(metric=metric1, session = s_vt1_win, value=42).save()
+Result(metric=metric2, session = s_vt1_win, value=43).save()
+
+s_vt1_linux = Session(name="Linux", project_version=vt1, token="tok_s_vt1_linux")
+s_vt1_linux.save()
+Result(metric=metric1, session = s_vt1_linux, value=52).save()
+Result(metric=metric2, session = s_vt1_linux, value=53).save()
+
+
+# Branch rulez
+s_br1_win = Session(name="Windows", project_version=vbr1, token="tok_s_vbr1_win")
+s_br1_win.save()
+Result(metric=metric1, session = s_br1_win, value=142).save()
+Result(metric=metric2, session = s_br1_win, value=143).save()
+
+s_br1_linux = Session(name="Linux", project_version=vbr1, token="tok_s_vbr1_linux")
+s_br1_linux.save()
+Result(metric=metric1, session = s_br1_linux, value=152).save()
+Result(metric=metric2, session = s_br1_linux, value=153).save()
+
+
+# Trunk 2 is faster but not tested on Windows
+s_vt2_linux = Session(name="Linux", project_version=vt2, token="tok_s_vt2_linux")
+s_vt2_linux.save()
+Result(metric=metric1, session = s_vt2_linux, value=62).save()
+
+# Regression in Trunk 3
+s_vt3_linux = Session(name="Linux", project_version=vt3, token="tok_s_vt3_linux")
+s_vt3_linux.save()
+Result(metric=metric1, session = s_vt3_linux, value=37).save()
+Result(metric=metric2, session = s_vt3_linux, value=38).save()
+# Windows is still slower
+s_vt3_win = Session(name="Windows", project_version=vt3, token="tok_s_vt3_windows")
+s_vt3_win.save()
+Result(metric=metric1, session = s_vt3_win, value=27).save()
+Result(metric=metric2, session = s_vt3_win, value=28).save()
+
+
+EOF

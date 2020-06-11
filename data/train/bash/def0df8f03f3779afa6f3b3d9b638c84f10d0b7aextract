@@ -1,0 +1,27 @@
+#!/bin/bash
+
+source orkhideya
+ork_include malware
+ork_include stdout
+ork_include stdlib
+
+_hash="$(echo $1 | tr '[:upper:]' '[:lower:]')"
+test -z "$_hash" && exit 1
+
+_sample=$(malware_sample_acquire vault "$_hash")
+! test -r "$_sample" && exit 2
+
+stdout_normal "Found sample: $(stdout_color_wrap main-focused "$_sample")."
+_hash_value="${_sample##*/}"
+_hash_path="$(stdlib_tmpfile "$_hash_value")"
+! mkdir -p "$_hash_path" && exit 3
+
+pushd "$_hash_path" &>/dev/null
+_inflated="$(unzip -o -P "$(malware_password)" "$_sample" | grep 'inflating' | awk -F ': ' '{ print $2 }' | head -n1 | sed 's/ *$//g')"
+popd &>/dev/null
+test -z "$_inflated" && exit 4
+
+! mv "$_hash_path/$_inflated" "$_hash_path/sample" && exit 5
+
+echo "$_hash_path/sample"
+exit 0

@@ -1,0 +1,112 @@
+body {
+    font-size:24px;
+    background-color:#232329;
+    color:#FFF;
+    width:98%;
+/*     margin:0 20px 0 10px; */
+}
+a {
+    color:#FFF;
+}
+img { 
+    border:0
+}
+ul {
+    margin:0;
+    padding:0;
+}
+.back {
+    float:right;
+    margin-right:1%;
+}
+#services li, #service li {
+    list-style:none;    
+    margin:10px 0;    
+}
+#services li a, .toolbar a {
+    font-size:44px;
+    text-decoration:none;
+}
+#service li a {
+    font-size:28px;
+    text-decoration:none;
+}
+
+#service li .a-hint {
+    font-size:20px;
+    -o-text-overflow: ellipsis;  
+    text-overflow:    ellipsis;  
+    overflow:hidden;              /* don't show excess chars */
+    white-space:nowrap;           /* force single line */
+    color:#757575
+}
+#services, #service {
+    width:100%;
+/*     border:1px solid #000; */
+}
+#service .service_name {
+    display:inline;
+}
+#service #service_input {
+    height:40px;
+    vertical-align:middle;
+    width:100%;
+    font-size:130%;
+}
+#service #service_submit {
+    height:40px;
+    vertical-align:middle;    
+    width:50%;
+    font-size:130%;
+}
+#service select {
+    height:40px;
+    vertical-align:middle;
+    width:50%;
+    font-size:130%;
+}
+select#sOption_to, select#sOption_from, #tlate_form #service_submit {
+    width:33%;
+}
+#service_result ul {
+    margin:0px;
+}
+#metacritic_form #service_submit {
+    width:100%;
+}
+#deli_form #service_input {
+    width:100%;    
+}
+#deli_form #checker {
+    font-size:130%;
+    width:40%;
+    height:40px;
+    display:inline;
+    margin-right:30px;
+}
+#deli_form #checker #sCheckbox {
+    -webkit-transform: scale(2, 2);
+    vertical-align:middle;
+}
+#deli_form #checker label {
+   vertical-align:middle;
+   margin-left:2%;
+}
+#deli_form #service_submit {
+    width:50%;
+    float:right;
+}
+#tlate_res {
+    margin-top:100px;
+    margin-left:50px;
+}
+#tlate_text {font-size:44px; }
+.weather_icon {
+    float:left;
+    margin: 5px 10px 10px 0;
+}
+.weather_fcast img {
+    margin-right:10px;
+}
+
+

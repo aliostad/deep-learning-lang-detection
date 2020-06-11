@@ -1,0 +1,25 @@
+@media (max-width: 979px){
+
+.navbar-inverse .nav-collapse .nav > li > a:hover, 
+.navbar-inverse .nav-collapse .dropdown-menu a:hover,
+.nav-collapse .nav > li > a:hover, 
+.nav-collapse .dropdown-menu a:hover,
+.navbar-inverse .nav .active > a, 
+.navbar-inverse .nav .active > a:hover, 
+.navbar-inverse .nav .active > a:focus,
+.navbar .nav > .active > a, 
+.navbar .nav > .active > a:hover, 
+.navbar .nav > .active > a:focus, 
+.navbar .nav li.dropdown.open > .dropdown-toggle, 
+.navbar .nav li.dropdown.active > .dropdown-toggle, 
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+		background-color: #3E0C64;
+	}
+	 #toolbar .dropdown-menu a ,
+	  .dropdown-menu a {
+		border-bottom: 1px solid #3E0C64;
+	}
+
+}
+
+

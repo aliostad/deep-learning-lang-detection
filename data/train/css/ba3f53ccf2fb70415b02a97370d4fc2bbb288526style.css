@@ -1,0 +1,57 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.model {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    border: 1px solid black;
+    padding: 1em;
+    background: #eee;
+}
+.model th,
+.model td {
+    font-family: monospace;
+    text-align: left;
+    min-width: 4em;
+}
+.model td {
+    padding-left: 1em;
+    max-width: 4em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.game__background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(http://opengameart.org/sites/default/files/parallax-forest-preview.png);
+    background-size: 100% 100%;
+}
+
+.game__player {
+    display: inline-block;
+    position: absolute;
+    background-image: url(http://opengameart.org/sites/default/files/animal%20-%20horse%20brown.gif);
+    background-size: 100% 100%;
+}
+
+.game__paused-screen {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20vh 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}

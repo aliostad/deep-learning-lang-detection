@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+.conteneur_general_load_10{
+	overflow:hidden;
+	/*	Modificare le seguenti proprietà 'width' e 'height' per ridimensionare la grandezza del container (iniziali 145x85)	*/
+	width:100px;
+	height:65px;
+	border:1px solid;		/*	Impostato da me */
+} 
+.cle_bleu_load_10{
+	border-radius:25px;		/*	Modificato a seguito delle modifiche apportate a contenitore e loader (valore iniziale: 50px)	*/
+	/*	Modificare le seguenti proprietà 'width' e 'height' per ridimensionare la grandezza del loader 	*/
+	width:31px;			
+	height:31px;
+	border-top:10px solid #CB2025; border-right:10px solid #97BF0D; border-bottom:10px solid #F8B334;border-left:10px solid #00A096;
+	-webkit-animation:load_dix 1.4s infinite linear;
+	-moz-animation:load_dix 1.4s infinite linear;
+	-ms-animation:load_dix 1.4s infinite linear;
+	-o-animation:load_dix 1.4s infinite linear;
+	animation:load_dix 1.4s infinite linear;
+} 
+@-webkit-keyframes load_dix{
+	0%{
+		-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)
+	}
+	50%{
+		-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)
+	}100%{
+		-webkit-transform:rotate(720deg);-moz-transform:rotate(720deg);-ms-transform:rotate(720deg);transform:rotate(720deg)
+	}
+}
+/*	
+le successive definizione del keyframes sono identiche. Ho provate ad annullarle lasciando solo la prima e funziona solo in Chrome. Con due funziona in Chrome e Safari. C'è bisogno della terza perchè funzioni anche in Firefox. Con la quarta funziona anche in Opera. Non ho provato in IE.  ????		
+*/
+
+
+@-moz-keyframes load_dix{
+	0%{
+		-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)
+	}50%{
+		-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)
+	}
+	100%{
+		-webkit-transform:rotate(720deg);-moz-transform:rotate(720deg);-ms-transform:rotate(720deg);transform:rotate(720deg)
+	}
+} 
+
+@-ms-keyframes load_dix{
+	0%{
+		-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)
+	}50%{
+		-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)
+	}100%{
+		-webkit-transform:rotate(720deg);-moz-transform:rotate(720deg);-ms-transform:rotate(720deg);transform:rotate(720deg)
+	}
+} 
+
+@keyframes load_dix{
+	0%{
+		-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)
+	}
+	50%{
+		-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)
+	}
+	100%{
+		-webkit-transform:rotate(720deg);-moz-transform:rotate(720deg);-ms-transform:rotate(720deg);transform:rotate(720deg)
+	}
+}
+
+
+
+
+/*
+############ EVENTUALMENTE Ricordarsi di modificare i valori di 'width' e 'height' del container e loader (vedi sopra) ###################
+
+.conteneur_general_load_10{overflow:hidden;width:145px;height:85px} .cle_bleu_load_10{border-radius:50px;width:50px;height:50px;border-top:10px solid #CB2025;border-right:10px solid #97BF0D;border-bottom:10px solid #F8B334;border-left:10px solid #00A096;-webkit-animation:load_dix 1.4s infinite linear;-moz-animation:load_dix 1.4s infinite linear;-ms-animation:load_dix 1.4s infinite linear;-o-animation:load_dix 1.4s infinite linear;animation:load_dix 1.4s infinite linear} @-webkit-keyframes load_dix{0%{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}50%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}100%{-webkit-transform:rotate(720deg);-moz-transform:rotate(720deg);-ms-transform:rotate(720deg);transform:rotate(720deg)}} @-moz-keyframes load_dix{0%{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}50%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}100%{-webkit-transform:rotate(720deg);-moz-transform:rotate(720deg);-ms-transform:rotate(720deg);transform:rotate(720deg)}} @-ms-keyframes load_dix{0%{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}50%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}100%{-webkit-transform:rotate(720deg);-moz-transform:rotate(720deg);-ms-transform:rotate(720deg);transform:rotate(720deg)}} @keyframes load_dix{0%{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}50%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}100%{-webkit-transform:rotate(720deg);-moz-transform:rotate(720deg);-ms-transform:rotate(720deg);transform:rotate(720deg)}}
+
+
+
+*/
+

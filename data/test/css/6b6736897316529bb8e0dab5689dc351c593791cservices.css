@@ -1,0 +1,40 @@
+.service {
+						float: left;
+						
+						width: 100%;
+						
+						text-align: center;
+					}
+					
+					.service-icon {
+						
+						display: inline-block;
+						
+						width: 80px;
+						height: 80px;
+						margin: 0 0 .5em;
+						
+						color: #FFF;
+						
+						font-size: 36px;
+						text-align: center;
+						line-height: 80px;
+						
+						background: #F90;
+						
+						border-radius: 100px;
+						
+						text-shadow: 1px 1px 2px rgba(0,0,0,.45);
+					}
+					
+					.service-details {
+						
+					}
+					
+					#service-web-design .service-icon {						
+						background: #222;
+					}
+					
+					#service-web-dev .service-icon {
+						background: #888;
+					}

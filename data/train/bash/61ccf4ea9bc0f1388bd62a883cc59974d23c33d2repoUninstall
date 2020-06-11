@@ -1,0 +1,30 @@
+#!/bin/bash
+# Description
+#   Uninstalls a repository from start to finish. This is the counterpart to repoInstall.
+#
+# Syntax:
+#   $0 repo [--force]
+#     repo identifies the repository.
+#
+# Examples:
+#   Uninstall a repo by address.
+#     $0 http://github.com/ksandom/something
+#     $0 git@github.com:ksandom/something
+#
+#   Uninstall a repo by path.
+#     $0 /usr/local/something
+
+requiredParms="$1"
+. `dirname $0`/libs/includeLibs.sh
+. $libDir/repoInstall.sh
+. $libDir/getRepo.sh
+. $libDir/cache.sh
+. $libDir/repoParms.sh
+. $libDir/packages.sh
+. $libDir/installLibs.sh
+. $libDir/documentation.sh
+
+repo="$1"
+overRideRepoName="$2"
+
+userUninstallRepo "$repo" "$overRideRepoName"

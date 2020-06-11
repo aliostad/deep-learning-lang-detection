@@ -1,0 +1,100 @@
+.Message {
+  font-size: 16px;
+  padding: 14px;
+}
+
+.Message .Message-media .Message-media-image {
+  max-width: 100%;
+}
+
+
+.Message .Message-content .Avatar {
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 50px;
+}
+
+.Message .Message-content {
+  padding-left: 60px;
+  position: relative;
+}
+
+.Message.is-editable .Message-content-body {
+  opacity: 0.6;
+}
+
+.Message .Message-content-footer {
+  color: #aaa;
+  font-size: 0.8em;
+  margin-top: 4px;
+}
+
+.Message .Message-content-footer-author,
+.Message .Message-content-footer-actions,
+.Message .Message-content-footer-actions-like,
+.Message .Message-content-footer-actions-comment {
+  display: inline-block;
+}
+
+.Message .Message-content-footer-author:before {
+  content: '— ';
+}
+
+.Message .Message-content-footer-actions {
+  float: right;
+}
+
+.Message.is-editable .Message-content-footer-actions {
+  display: none;
+}
+
+.Message .Message-content-footer-actions > * {
+  color: #aaa;
+  margin: 0 0 0 12px;
+  opacity: 0.7;
+  text-decoration: none;
+  transform: opacity 0.5s;
+}
+
+.Message .Message-content-footer-actions > *:hover {
+  opacity: 1;
+}
+
+.Message .Message-content-footer-actions .fa {
+  color: #bbb;
+  font-size: 14px;
+}
+
+.Message .Message {
+  font-size: 14px;
+  margin-top: 14px;
+  padding: 0 0 0 28px;
+}
+
+.Message .Message .Message-content {
+  padding-left: 32px;
+}
+
+.Message .Message .Message-content .Avatar {
+  width: 22px;
+}
+
+.Message .Message .Message-content-body,
+.Message .Message .Message-content-footer {
+  display: inline;
+}
+
+.Message .Message .Message-content-footer {
+  margin-left: 4px;
+  margin-top: 0;
+}
+
+.Message .Message .Message-content-footer .Message-content-footer-actions {
+  display: none;
+}
+
+.Message .Message:hover .Message-content-footer .Message-content-footer-actions {
+  display: block;
+}

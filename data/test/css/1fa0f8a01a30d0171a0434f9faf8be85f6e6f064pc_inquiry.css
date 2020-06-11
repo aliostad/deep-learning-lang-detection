@@ -1,0 +1,85 @@
+/* pc_inquiry.css */
+@media screen and (min-width:1024px){
+	#headBox{height: 6rem;}
+	  h1{width:10.4375rem; height:4.125rem; }
+	  #gnb{width: auto; margin-top: 31px; background-color: rgba(250,250,250,0.3);} 
+	  #gnb>h2{width: 0; height: 0; overflow: hidden;}
+	  #gnb button{}
+	  #gnb button>i{}
+	  #gnb>ul{height: 34px;}
+	  #gnb li{}
+	  #gnb li>a{}
+    .search>button{}
+    .search>button>i{}
+
+/* #titWrap ------------------------*/
+	#titWrap{height: 300px; background-image: url("../../img/titimg/kauai-1666453_960_720.jpg"); background-repeat: no-repeat;}
+  .titbox{width: 960px; height: 80px; padding-top: 200px; box-sizing: border-box; }
+  .titbox>h2{}
+  .brdadcrumb{}
+  .brdadcrumb>li{float: left; margin-right: 10px;}
+  .brdadcrumb>li:last-child{margin-right: 0;}
+  .brdadcrumb>li>a{}
+  .brdadcrumb i{margin-right: 10px;}
+
+/* #descWrap ------------------------------------------*/
+  #descWrap{height: auto;}
+    .descBox{width: 960px; height:100%; }
+    .inquiryBox{width: 70%; height: auto; float: left; margin-top: 20px;}
+    .inquiryBox>p{width: 100%; height: 1.5rem;  /* text-indent: 10px; */}
+
+    form{width: 100%; height: auto; margin-top: 20px;}
+    fieldset{height: auto; padding:15px; box-sizing: border-box;}
+    fieldset label{display: block; padding: 4px; box-sizing: border-box;}
+    fieldset>ul{height: auto;}
+    fieldset li{width: 100%; height: 35px; padding: 2px; box-sizing:border-box;}
+    fieldset li:nth-of-type(5){height: 200px;}
+    fieldset li:last-of-type{height: 150px;}
+
+    legend{width: 0; height: 0; overflow: hidden; display: block;}
+      .inquiry_read{width: 20%; float: left; background-color: #566;}
+      .inquiry_read>li{box-sizing: border-box; border-bottom: 1px solid #333;}
+      .inquiry_read label{}
+
+      .inquiry_write{width: 80%; float: right;}
+      .inquiry_write>li{box-sizing: border-box; border-bottom: 1px solid #333;}
+      .inquiry_write label{float: left;}
+      .inquiry_write input{width: 100%;}
+      .inquiry_write li:nth-of-type(2)>input, .inquiry_write li:nth-of-type(3)>input, .inquiry_write li:nth-of-type(4)>input{height: 100%;}
+
+      .inquiry_write [type="radio"]{width: 15px; display: inline-block; margin-right: 0.5rem;}
+      .inquiry_write [type="checkbox"]{width: 15px; float: left;display: block; }
+      .inquiry_write .terms>label{font-size: 0.9rem; float: left;}
+
+      .inquiry_write textarea{width: 100%; }
+        #message{height: 100%;}
+        #term{height: 60%;}
+        #termCheck{}
+
+
+/* 
+  fieldset{border:1px solid #d6d6d6; background-color: #f8f8f8;margin-bottom:14px;}
+.join ul>li{min-height:28px; height: auto; margin-bottom: 8px; }
+  .join_read label{font-size:0.875rem; letter-spacing:-0.05rem; margin-left:0.5rem;padding-top: 5px; position: relative;}
+.join_write select,
+.join_write [type="text"]{width: 202px; height:26px; background-color: #fff; display: block; margin-bottom:8px; border:1px solid #777; border-radius:0.3rem;}
+*/
+    .send_btn{float: right;}
+    .send_btn>input{width: 100px; height: 30px; line-height: 2; text-align: center; color: #fff;}
+      #inquirySend{background-color: #f9980f;}
+      #inquiryReset{}
+
+/*  .pop_banner{width: 560px; height: 360px; background-color: #242527; 
+    margin-left: -280px; margin-top:-180px; box-sizing:border-box; padding:1.5rem 1rem;}
+
+  #userName{width: 100%; height: auto; padding: 3px 2px; box-sizing: border-box; margin-bottom: 10px;}
+  #userMail{width: 100%; height: auto; padding: 3px 2px; box-sizing: border-box; margin-bottom: 10px;}
+  #message{width: 100%; height: 130px; padding: 3px 2px; text-indent: 5px; box-sizing: border-box; margin-bottom: 20px; resize:none;}
+
+  .send_btn>input:hover{transition: all 250ms linear; text-decoration: none; box-shadow: 1px 1px 2px rgba(255,255,255,0.2); 
+    background-color: transparent;}
+  input[type="submit"]{margin-right: 20px; background-color: #c20c0c; background-image: url("https://www.transparenttextures.com/patterns/pinstriped-suit.png");}*/
+
+    .snb{width: 30%; height: 500px; float: right;}
+
+}

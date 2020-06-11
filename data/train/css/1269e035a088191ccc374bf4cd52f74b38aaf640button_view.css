@@ -1,0 +1,44 @@
+@theme(sc-small-size)
+
+@view(sc-button-view) {
+  
+  /* NORMAL STATE */
+  .button-left {
+    margin-top:-9px;
+    height: 18px;
+   
+  }
+  
+  .button-right {
+    margin-top:-9px;
+    height: 18px;
+      }
+  
+  .button-middle {
+    margin-top:-9px;
+    height: 18px;
+   
+
+  }
+  
+  .sc-button-label {
+    font-size: 11px;
+    margin-top:-13px;
+    height: 18px;
+    padding-top:2px;
+  }
+}
+
+@view(sc-button-view).active {
+ 
+}
+
+@view(sc-button-view).sel, @view(sc-button-view).def {
+  }
+
+@view(sc-button-view).sel.active, @view(sc-button-view).def.active {
+  }
+
+@end
+
+

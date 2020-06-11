@@ -1,0 +1,79 @@
+.ie6 .model-popup .details .name-wrapper .icon-frame { left: -50px; }
+.ie6 .collectible-grid .grid-item { height: 215px; overflow: hidden; }
+
+/* Pet Family Icons */
+.family-icon-small { background-image: url("../../images/model-viewer/pet-family-icon-small-sprite.gif"); }
+.pet-summary-slot .character .beast, 
+.wiki-tooltip h3 .beast { background-position: 0 0; }
+.pet-summary-slot .character .critter, 
+.wiki-tooltip h3 .critter { background-position: -18px 0; }
+.pet-summary-slot .character .dragonkin, 
+.wiki-tooltip h3 .dragonkin { background-position: -36px 0; }
+.pet-summary-slot .character .elemental, 
+.wiki-tooltip h3 .elemental { background-position: -53px 0; }
+.pet-summary-slot .character .flying, 
+.wiki-tooltip h3 .flying { background-position: -71px 0; }
+.pet-summary-slot .character .humanoid, 
+.wiki-tooltip h3 .humanoid { background-position: -90px 0; }
+.pet-summary-slot .character .mechanical, 
+.wiki-tooltip h3 .mechanical { background-position: -108px 0; }
+.pet-summary-slot .character .magic, 
+.wiki-tooltip h3 .magic { background-position: -126px 0; }
+.pet-summary-slot .character .undead, 
+.wiki-tooltip h3 .undead { background-position: -144px 0; }
+.pet-summary-slot .character .aquatic, 
+.wiki-tooltip h3 .aquatic { background-position: -162px 0; }
+
+.family-icon { background-image: url("../../images/model-viewer/pet-family-icon-sprite.gif"); }
+.profile-section .battle-pet-slots .pet-slot .beast, 
+#model-popup .details .beast, 
+.wiki-tooltip .pet-type-tooltip .beast { background-position: 0 0; }
+.profile-section .battle-pet-slots .pet-slot .critter, 
+#model-popup .details .critter, 
+.wiki-tooltip .pet-type-tooltip .critter { background-position: -35px 0; }
+.profile-section .battle-pet-slots .pet-slot .dragonkin, 
+#model-popup .details .dragonkin, 
+.wiki-tooltip .pet-type-tooltip .dragonkin { background-position: -70px 0; }
+.profile-section .battle-pet-slots .pet-slot .elemental, 
+#model-popup .details .elemental, 
+.wiki-tooltip .pet-type-tooltip .elemental { background-position: -105px 0; }
+.profile-section .battle-pet-slots .pet-slot .flying, 
+#model-popup .details .flying, 
+.wiki-tooltip .pet-type-tooltip .flying { background-position: -140px 0; }
+.profile-section .battle-pet-slots .pet-slot .humanoid, 
+#model-popup .details .humanoid, 
+.wiki-tooltip .pet-type-tooltip .humanoid { background-position: -175px 0; }
+.profile-section .battle-pet-slots .pet-slot .mechanical, 
+#model-popup .details .mechanical, 
+.wiki-tooltip .pet-type-tooltip .mechanical { background-position: -210px 0; }
+.profile-section .battle-pet-slots .pet-slot .magic, 
+#model-popup .details .magic, 
+.wiki-tooltip .pet-type-tooltip .magic { background-position: -245px 0; }
+.profile-section .battle-pet-slots .pet-slot .undead, 
+#model-popup .details .undead, 
+.wiki-tooltip .pet-type-tooltip .undead { background-position: -280px 0; }
+.profile-section .battle-pet-slots .pet-slot .aquatic, 
+#model-popup .details .aquatic, 
+.wiki-tooltip .pet-type-tooltip .aquatic { background-position: -315px 0; }
+
+
+
+/* Strong / Weak */
+.strong { background: transparent url("../../images/model-viewer/strong-weak-sprite.gif") no-repeat 0 0; }
+.weak { background: transparent url("../../images/model-viewer/strong-weak-sprite.gif") no-repeat 0 -18px; }
+
+.ie6 .model-popup .details .stats li.health { background: transparent url("../../images/model-viewer/stat-icon-health.gif") no-repeat 0 0; }
+.ie6 .model-popup .details .stats li.power { background: transparent url("../../images/model-viewer/stat-icon-power.gif") no-repeat 0 0; }
+.ie6 .model-popup .details .stats li.speed { background: transparent url("../../images/model-viewer/stat-icon-speed.gif") no-repeat 0 0; }
+
+.ie6 .pet-slot .footer .stats li.health { background: transparent url("../../images/model-viewer/stat-icon-health.gif") no-repeat 0 0; }
+.ie6 .pet-slot .footer .stats li.power { background: transparent url("../../images/model-viewer/stat-icon-power.gif") no-repeat 0 0; }
+.ie6 .pet-slot .footer .stats li.speed { background: transparent url("../../images/model-viewer/stat-icon-speed.gif") no-repeat 0 0; }
+
+.ie6 .model-popup .details .abilities .ability-tree { background: transparent url("../../images/model-viewer/ability-connector.gif") repeat-x 0 0; position: absolute; top: 55px; left: 80px; }
+.ie6 .model-popup .details .abilities .ability-tree .ability { position: relative; }
+
+.ie6 .model-popup .details .favorite { height: 21px; width: 21px; background: transparent url("../../images/model-viewer/stat-icon-favorite.gif") no-repeat 0 0; position: absolute; left: -58px; top: 3px; }
+.ie6 .collectible-grid .grid-item a.preview .render .favorite { height: 21px; width: 21px; background: transparent url("../../images/model-viewer/stat-icon-sprite.gif") no-repeat 0 0; position: absolute; bottom: -8px; left: -8px;}
+
+.ie6 .model-popup .family-icon { position: absolute; bottom: 0px; top: 10px; }

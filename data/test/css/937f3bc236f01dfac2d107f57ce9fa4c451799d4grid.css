@@ -1,0 +1,198 @@
+/* 	
+	This file contains all the styles related to the layout of the site.
+*/
+
+html {
+	 /*
+	 background-image: url(/images/general/grid.gif);
+	 background-position: right -11px; 
+	 */
+	
+	overflow-y: scroll;
+}
+
+a:active, a:focus
+{
+  	outline: none;
+}
+
+:focus { -moz-outline-style: none; } /* Removed dotted outlines for firefox */
+
+
+/* 	CONTAINER 
+	----------------------------------------------------------------- 
+
+	Everything else fits into this
+*/
+.container {
+  width: 900px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+
+
+/* 	COLUMNS 
+	----------------------------------------------------------------- 
+
+	This is the basic grid for the site. All possible combinations that 
+	can be used are here. Do not add any additional ones.
+*/
+
+
+div.span-1, div.span-2, div.span-3, div.span-4, div.span-5, div.span-6, div.span-7, div.span-8, div.span-9, div.span-10, 
+div.span-11, div.span-12, div.span-13, div.span-14, div.span-15, div.span-16, div.span-17, div.span-18, div.span-19, 
+div.span-20, div.span-21, div.span-22, div.span-23, div.span-24, div.span-25, div.span-26, div.span-27, div.span-28, 
+div.span-29, div.span-30, div.span-31, div.span-32, div.span-33, div.span-34, div.span-35, div.span-36 {
+  float: left;
+  overflow: auto;
+  min-height: 1px;
+}
+
+.span-1 { width: 20px; }
+.span-2 { width: 40px; }
+.span-3 { width: 65px; }
+.span-4 { width: 80px; }
+.span-5 { width: 100px; }
+.span-6 { width: 120px; }
+.span-7 { width: 140px; }
+.span-8 { width: 160px; }
+.span-9 { width: 180px; }
+.span-10 { width: 200px; }
+.span-11 { width: 220px; }
+.span-12 { width: 240px; }
+.span-13 { width: 260px; }
+.span-14 { width: 280px; }
+.span-15 { width: 300px; }
+.span-16 { width: 320px; }
+.span-17 { width: 340px; }
+.span-18 { width: 360px; }
+.span-19 { width: 380px; }
+.span-20 { width: 400px; }
+.span-21 { width: 420px; }
+.span-22 { width: 440px; }
+.span-23 { width: 460px; }
+.span-24 { width: 480px; }
+.span-25 { width: 500px; }
+.span-26 { width: 520px; }
+.span-27 { width: 540px; }
+.span-28 { width: 560px; }
+.span-29 { width: 580px; }
+.span-30 { width: 600px; }
+.span-31 { width: 620px; }
+.span-32 { width: 640px; }
+.span-33 { width: 660px; }
+.span-34 { width: 680px; }
+.span-35 { width: 700px; }
+
+
+
+
+
+
+
+/* 	APPEND & PREPEND 
+	----------------------------------------------------------------- 
+
+	Adds spacing on the left or right of a column.
+*/
+
+.append-1 { padding-right: 25px; }
+.append-2 { padding-right: 50px; }
+.append-3 { padding-right: 75px; }
+.append-4 { padding-right: 100px; }
+.append-5 { padding-right: 125px; }
+.append-6 { padding-right: 150px; }
+.append-7 { padding-right: 175px; }
+.append-8 { padding-right: 200px; }
+.append-9 { padding-right: 225px; }
+.append-10 { padding-right: 250px; }
+.append-11 { padding-right: 275px; }
+.append-12 { padding-right: 300px; }
+.append-13 { padding-right: 325px; }
+.append-14 { padding-right: 350px; }
+.append-15 { padding-right: 375px; }
+.append-16 { padding-right: 400px; }
+.append-17 { padding-right: 425px; }
+.append-18 { padding-right: 450px; }
+.append-19 { padding-right: 475px; }
+.append-20 { padding-right: 500px; }
+.append-21 { padding-right: 525px; }
+.append-22 { padding-right: 550px; }
+.append-23 { padding-right: 575px; }
+.append-24 { padding-right: 600px; }
+.append-25 { padding-right: 625px; }
+.append-26 { padding-right: 650px; }
+.append-27 { padding-right: 675px; }
+.append-28 { padding-right: 700px; }
+.append-29 { padding-right: 725px; }
+.append-30 { padding-right: 750px; }
+.append-31 { padding-right: 775px; }
+.append-32 { padding-right: 800px; }
+.append-33 { padding-right: 825px; }
+.append-34 { padding-right: 850px; }
+.append-35 { padding-right: 875px; }
+
+.append-bottom-1 { padding-bottom: 22px;}
+.append-bottom-2 { padding-bottom: 44px;}
+.append-bottom-3 { padding-bottom: 66px;}
+.append-bottom-4 { padding-bottom: 88px;}
+.append-bottom-5 { padding-bottom: 110px;}
+
+
+
+.prepend-1 { padding-left: 25px; }
+.prepend-2 { padding-left: 50px; }
+.prepend-3 { padding-left: 75px; }
+.prepend-4 { padding-left: 100px; }
+.prepend-5 { padding-left: 125px; }
+.prepend-6 { padding-left: 150px; }
+.prepend-7 { padding-left: 175px; }
+.prepend-8 { padding-left: 200px; }
+.prepend-9 { padding-left: 225px; }
+.prepend-10 { padding-left: 250px; }
+.prepend-11 { padding-left: 275px; }
+.prepend-12 { padding-left: 300px; }
+.prepend-13 { padding-left: 325px; }
+.prepend-14 { padding-left: 350px; }
+.prepend-15 { padding-left: 375px; }
+.prepend-16 { padding-left: 400px; }
+.prepend-17 { padding-left: 425px; }
+.prepend-18 { padding-left: 450px; }
+.prepend-19 { padding-left: 475px; }
+.prepend-20 { padding-left: 500px; }
+.prepend-21 { padding-left: 525px; }
+.prepend-22 { padding-left: 550px; }
+.prepend-23 { padding-left: 575px; }
+.prepend-24 { padding-left: 600px; }
+.prepend-25 { padding-left: 625px; }
+.prepend-26 { padding-left: 650px; }
+.prepend-27 { padding-left: 675px; }
+.prepend-28 { padding-left: 700px; }
+.prepend-29 { padding-left: 725px; }
+.prepend-30 { padding-left: 750px; }
+.prepend-31 { padding-left: 775px; }
+.prepend-32 { padding-left: 800px; }
+.prepend-33 { padding-left: 825px; }
+.prepend-34 { padding-left: 850px; }
+.prepend-35 { padding-left: 875px; }
+
+.prepend-top-1 { padding-top: 22px; }
+.prepend-top-2 { padding-top: 44px; }
+.prepend-top-3 { padding-top: 66px; }
+.prepend-top-4 { padding-top: 88px; }
+.prepend-top-5 { padding-top: 110px }
+
+
+
+/* 	CLEAR 
+	----------------------------------------------------------------- 
+*/
+
+.clear {
+	clear: both;
+}
+
+
+
+

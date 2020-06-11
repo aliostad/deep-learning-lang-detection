@@ -1,0 +1,54 @@
+#!/usr/bin/sh
+
+while true
+do
+	case "$1" in
+	-g) gdb=1 ;;
+	-p) print=1 ;;
+	*)  break ;;
+	esac
+	shift
+done
+
+if [ -z "$1" ]
+then
+	echo specify model
+	exit 1
+fi
+
+for model in $*
+do
+	case "$model" in
+	*.gz)
+		m=${model##*/}
+		m=${m%.gz}
+		m=`mktemp /tmp/${m}.XXX`
+		gunzip <$model >$m || exit 1
+		model=$m
+		tmp=1
+		;;
+	*)
+		tmp=0
+		;;
+	esac
+
+	if [ "$gdb" = "1" ]
+	then
+		#export SOAR_HOME=/home/jzxu/svs_build/dbg_out
+		gdb --args python -m sml "svs use_models on" "svs add_model m em" "svs model.m.load $model"
+	else
+		if [ "$print" = 1 ]
+		then
+			python -m sml "svs use_models on" "svs add_model m em" "svs model.m.load $model" <<-EOF
+				svs model.m.em
+			EOF
+		else
+			python -m sml "svs use_models on" "svs add_model m em" "svs model.m.load $model"
+		fi
+	fi
+
+	if [ "$tmp" = "1" ]
+	then
+		rm "$model"
+	fi
+done

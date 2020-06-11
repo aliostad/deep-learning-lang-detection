@@ -1,0 +1,85 @@
+body {
+	min-width:600px;
+}
+/*.thumbnail {
+	margin: 5 10;
+	display: inline-block;
+	overflow: hidden;
+}
+.thumbnail img {
+
+}*/
+.productModel i {
+	cursor: pointer;
+}
+.productModel .tile {
+	height:325;
+	margin:30px 0;
+}
+
+.productModel .thumbnail {
+	min-height:275;
+	margin-bottom:0;
+}
+.productModel .panel-body {
+	height:275;
+	overflow:scroll;
+}
+.productModel dl .fa-circle {
+	-webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+   transition: transform .2s;
+}
+.productModel dl .fa-circle:hover {
+	transform: scale(1.2, 1.2);
+}
+.productModel img {
+	max-height:280px;
+}
+.nav a {
+	margin: 5 5 !important;
+	padding: 5 10 !important;
+}
+.product-selection dd .fa-circle {
+	-webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+   transition: transform .2s;
+}
+.product-selection dd .fa-circle:hover {
+	transform: scale(.7, .7);
+}
+
+
+/* Github animation
+
+
+/* Container box to set the sides relative to */
+.cube { 
+	-webkit-transition: -webkit-transform .33s;
+	transition: transform .33s; /* Animate the transform properties */
+ 
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d; /* <-NB */
+}
+ 
+.flippety {
+	-webkit-transform: translateZ(160px);
+	transform: translateZ(160px);
+}
+ 
+.flop {
+	-webkit-transform: rotateX(-90deg) translateZ(-160px);
+	transform: rotateX(-90deg) translateZ(-160px);
+}
+ 
+/* Rotate the cube */
+.cube:hover {
+	-webkit-transform: rotateX(89deg);
+	transform: rotateX(89deg); /* Text bleed at 90º */
+} 
+.cube:hover .flop {
+	opacity: 1;
+}
+.cube:hover .flippety {
+	opacity: 0;
+}

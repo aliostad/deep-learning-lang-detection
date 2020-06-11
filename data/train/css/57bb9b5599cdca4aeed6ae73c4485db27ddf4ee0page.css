@@ -1,0 +1,250 @@
+/* global */
+.clear:after{clear: both; content: '.';display: block;visibility: hidden;height: 0;}
+* html .clear {height: 1%}
+.clear{display: block}
+
+.dingdone-api-body .page {
+    width: 62%;
+    margin: 0 auto 20px;
+}
+
+.dingdone-api-body .title {
+    width: 62%;
+    margin: 20px auto;
+}
+
+.dingdone-api-body .title span {
+    font-size: 16px;
+    display:inline-block;
+    vertical-align:middle;
+}
+.dingdone-api-body .title a{
+	cursor:pointer;
+	font-size:14px;
+}
+
+.dingdone-api-body .member-module {
+    margin: 50px 0;
+}
+
+.dingdone-api-body .anchor {
+    color: black;
+}
+
+.dingdone-api-body .anchor:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.dingdone-api-body .search-tip-btn {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.dingdone-api-body .go-to-top {
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 7px;
+    display: none;
+    transition: background-color .5s ease-out, border-color .75s ease-out;
+}
+
+.dingdone-api-body .table th {
+    min-width: 100px;
+}
+
+.dingdone-api-body .go-to-top:hover {
+    background-color: #cfcfcf;
+    border-color: #ccc;
+}
+
+.dingdone-api-body .member-box {
+    /*margin: 2em 0 2em 2em;*/
+}
+
+.dingdone-api-body .command-method-container, .command-method-wrap {
+    padding-left: 2em;
+}
+
+.dingdone-api-body .command-method-wrap {
+    margin-bottom: 50px;
+}
+
+.dingdone-api-body .command-method-desc h5 {
+    font-weight: bold;
+    display: inline-block;
+}
+
+.dingdone-api-body .command-table-tips {
+    color: red;
+}
+
+.dingdone-api-body .member-event-info, .dingdone-api-body .member-property-info, .dingdone-api-body .member-constructor-info, .member-method-info {
+    /*margin: 2em 0 2em 2em;*/
+}
+
+.dingdone-api-body fileset, .dingdone-api-body .member {
+    display: block;
+    margin: 70px 0;
+}
+
+.dingdone-api-body .member fileset {
+    margin: 20px 0;
+}
+
+.dingdone-api-body .member-see {
+    text-indent: 2em;
+}
+
+.dingdone-api-body .member legend {
+    font-size: 16px;
+}
+
+.dingdone-api-body .member-description {
+    padding: 10px 0;
+}
+
+.dingdone-api-body h2, .dingdone-api-body h3, .dingdone-api-body h4, .dingdone-api-body .member-flag {
+    display: inline-block;
+}
+
+.dingdone-api-body h4 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* reset bootstrap */
+.dingdone-api-body legend {
+    border-bottom: 0;
+}
+
+.dingdone-api-body .alert {
+    padding: 5px;
+    margin: 3px 0;
+}
+
+/* Navigation */
+.dingdone-api-body .nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.dingdone-api-body .nav .module-list, .dingdone-api-body .nav .api-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 16%;
+    height: 100%;
+    overflow: auto;
+}
+
+.dingdone-api-body .nav .api-list {
+    width: 100%;
+    background: #fff;
+    display: none;
+}
+
+
+.dingdone-api-body .nav .module-list {
+    top: 100px;
+    left: 30px;
+}
+
+.dingdone-api-body .module-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dingdone-api-body .module-list li {
+    margin-bottom:4px;
+}
+
+
+/* warning */
+.dingdone-api-body .member-warning, .dingdone-api-body .member-remind {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+/* search */
+
+.dingdone-api-body .search-box {
+    width: 500px;
+    margin: 30px auto;
+}
+
+.dingdone-api-body .search-panel {
+    position: absolute;
+    display: none;
+    max-height: 300px;
+    border: 1px solid #cfcfcf;
+    background: #fff;
+}
+
+.dingdone-api-body .search-panel li {
+    padding: 0 10px;
+}
+
+.dingdone-api-body .search-panel li:hover {
+    background: #f0f0f0;
+}
+
+.dingdone-api-body .search-box .search-input {
+    width: 100%;
+    line-height: 20px;
+    padding: 5px;
+    border: 1px solid #d9d9d9;
+    border-top-color: #c0c0c0;
+    outline: none;
+}
+
+.dingdone-api-body .search-box .search-input:hover {
+    box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
+}
+
+.dingdone-api-body .search-box .focus {
+    border-color: #4d90fe;
+}
+
+.dingdone-api-body .search-panel .search-result-item {
+    display: block;
+    color: #aaa;
+    padding: 3px;
+    cursor: default;
+}
+
+.dingdone-api-body .search-panel .search-result-item:hover {
+    text-decoration: none;
+}
+
+.dingdone-api-body .search-panel ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dingdone-api-body .search-keyword {
+    font-weight: bold;
+    color: #000;
+}
+
+.dingdone-api-body .search-nothing {
+    font-style: italic;
+}
+
+/* api panel */
+.dingdone-api-body .api-wrap {
+    padding: 10px;
+}

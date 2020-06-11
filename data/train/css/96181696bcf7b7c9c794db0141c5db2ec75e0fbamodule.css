@@ -1,0 +1,480 @@
+/* common begin */
+.menu-btn
+{
+	position: absolute;
+	left: 0;
+    margin: 0 auto;
+    padding: 0;
+	width: 30px;
+    height: 25px;
+    line-height: 20px;
+	font-size: 20px;
+    color: #eeeeee;
+    background-color: #59cde2;
+    cursor: pointer;
+    
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+
+.menu-btn > span
+{
+	padding-left: 5px;
+	transition: .7s;
+    -webkit-transition: .7s;
+}
+
+.menu-btn.expand
+{
+	width: 40px;
+	transition: .5s;
+    -webkit-transition: .5s;
+}
+
+.menu-btn.expand > span
+{
+	padding-left: 15px;
+	transition: .7s;
+    -webkit-transition: .7s;
+}
+
+.back-btn-view
+{
+	top: 75px;
+}
+
+.info-btn-view
+{
+	top: 115px;
+}
+
+.input-od-view
+{
+	position: absolute;
+	width: 240px;
+    height: 91px;
+    background-color: #eeeeee;
+    
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+
+.input-od-view > div.start
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0;
+}
+
+.input-od-view > div.end
+{
+	position: absolute;
+	left: 0;
+	top: 50px;
+	margin: 0;
+}
+
+.input-od-view > .exchange
+{
+	position: absolute;
+	left: 215px;
+    top: 35px;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+	cursor: pointer;
+}
+
+/* common end */
+
+/* draw elements view begin */
+.draw-elements-btn-view
+{
+    top: 155px;
+}
+
+.draw-elements-view
+{
+	position: absolute;
+	left: 50px;
+    top: 10px;
+	width: 200px;
+	height: 200px;
+}
+
+.draw-elements-view > .input-type
+{
+	margin: 0;
+	margin-bottom: 10px;
+	width: 200px;
+}
+
+.draw-elements-view > .input-text,
+.draw-elements-view > .input-text > textarea
+{
+	width: 200px;
+	height: 150px;
+}
+
+.draw-elements-view > .btns > .draw
+{
+	margin-left: 10px;
+    margin-right: 20px;
+}
+
+/* draw elements view end */
+
+/* heatmap view begin */
+.heatmap-btn-view
+{
+    top: 155px;
+}
+
+.heatmap-view
+{
+	position: absolute;
+	left: 50px;
+    top: 10px;
+	width: 200px;
+	height: 200px;
+}
+
+.heatmap-view > .input-type
+{
+	margin: 0;
+	margin-bottom: 10px;
+	width: 200px;
+}
+
+.heatmap-view > .btns > .draw
+{
+	margin-left: 10px;
+    margin-right: 20px;
+}
+
+/* heatmap view end */
+
+/* trip analysis view begin */
+.trip-analysis-btn-view
+{
+	top: 155px;
+}
+
+.trip-analysis-view
+{
+	position: absolute;
+	left: 50px;
+    top: 10px;
+	width: 200px;
+	height: 200px;
+}
+
+.trip-analysis-view > .trip-id
+{
+	margin: 0;
+	margin-bottom: 10px;
+	width: 200px;
+}
+
+.trip-analysis-view > .raw-layer,
+.trip-analysis-view > .assign-layer,
+.trip-analysis-view > .augment-layer
+{
+	margin: 0;
+    margin-top: -10px;
+	width: 150px;
+}
+
+.trip-analysis-view > .btns > .draw
+{
+	margin-left: 10px;
+    margin-right: 20px;
+}
+
+/* trip analysis view end */
+
+/* section selection view begin */
+.section-selection-btn-view
+{
+	top: 155px;
+}
+
+.section-selection-view
+{
+	position: absolute;
+	left: 50px;
+    top: 10px;
+	width: 200px;
+	height: 200px;
+}
+
+.section-selection-view > .section-textarea,
+.section-selection-view > .gps-textarea
+{
+	margin: 0;
+	margin-bottom: 10px;
+	width: 200px;
+}
+
+.section-selection-view > .section-textarea > textarea,
+.section-selection-view > .gps-textarea > textarea
+{
+	height: 200px;
+}
+
+.section-selection-view > .btns > .draw
+{
+	margin-left: 10px;
+    margin-right: 20px;
+}
+
+/* section selection view end */
+
+/* od analysis view begin */
+.od-analysis-btn-view
+{
+	top: 155px;
+}
+
+.od-analysis-view
+{
+	position: absolute;
+	left: 50px;
+    top: 10px;
+	width: 200px;
+	height: 200px;
+}
+
+.od-analysis-view > .radius
+{
+	position: absolute;
+	top: 100px;
+}
+
+.od-analysis-view > .btns
+{
+	position: absolute;
+	top: 160px;
+}
+
+.od-analysis-view > .btns > .draw
+{
+	margin-left: 10px;
+    margin-right: 20px;
+}
+
+/* od analysis view end */
+
+/* road network view begin */
+.road-network-btn-view
+{
+	top: 155px;
+}
+
+.road-network-view
+{
+	position: absolute;
+	left: 50px;
+    top: 10px;
+	width: 200px;
+	height: 200px;
+}
+
+.road-network-view > .btns
+{
+	position: absolute;
+}
+
+.road-network-view > .btns > .draw
+{
+	margin-left: 10px;
+    margin-right: 20px;
+}
+
+/* road network view end */
+
+/* online detection view begin */
+.online-detection-btn-view
+{
+	top: 155px;
+}
+
+.online-detection-view
+{
+	position: absolute;
+	left: 50px;
+    top: 10px;
+	width: 200px;
+	height: 200px;
+}
+
+.online-detection-view .input-view
+{
+	position: relative;
+}
+
+.online-detection-view .input-view > .input-type
+{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 130px;
+}
+
+.online-detection-view .input-view > .btns
+{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	padding-left: 5px;
+}
+
+.online-detection-view .input-view > .btns > .set
+{
+	margin: 0;
+	padding: 0;
+	width: 65px;
+}
+
+.online-detection-view .input-view > .input-data
+{
+	margin: 0;
+	padding: 0;
+	padding-top: 5px;
+	width: 200px;
+}
+
+.online-detection-view .input-view > .input-data > textarea
+{
+	width: 200px;
+}
+
+.online-detection-view .data-view
+{
+	position: relative;
+	width: 240px;
+}
+
+.online-detection-view .data-view .title,
+.online-detection-view .data-view .status,
+.online-detection-view .data-view .delete,
+.online-detection-view .data-view .plus,
+.online-detection-view .data-view .delete-cur-atr,
+.online-detection-view .data-view .front-cur-atr,
+.online-detection-view .data-view .delete-gps,
+.online-detection-view .data-view .front-gps,
+.online-detection-view .data-view .delete-od,
+.online-detection-view .data-view .front-od
+{
+	display: inline-block;
+	padding-left: 5px;
+	height: 30px;
+    line-height: 24px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.online-detection-view .data-view > .gps-view > .gps-list,
+.online-detection-view .data-view > .recommend-atr-view > .atr-list
+{
+	margin-top: -10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.online-detection-view .data-view > .gps-view > .gps-list .list-group-content,
+.online-detection-view .data-view > .recommend-atr-view > .atr-list .list-group-content
+{
+	margin-top: 0px;
+}
+
+.online-detection-view .data-view > .gps-view > .gps-list .list-group-content > .mylist,
+.online-detection-view .data-view > .recommend-atr-view > .atr-list .list-group-content > .mylist
+{
+	padding: 5px;
+    width: 150px;
+    height: 30px;
+}
+
+.online-detection-view .data-view > .gps-view > .gps-list .list-group-content > .mylist > span,
+.online-detection-view .data-view > .recommend-atr-view > .atr-list .list-group-content > .mylist > span
+{
+	padding: 0 10px;
+}
+
+.online-detection-view .data-view > .gps-view > .gps-list .list-group-content > .mylist > div,
+.online-detection-view .data-view > .recommend-atr-view > .atr-list .list-group-content > .mylist > div
+{
+	padding: 0 5px;
+	cursor: pointer;
+}
+
+.online-detection-view .calculation-result-view
+{
+	position: relative;
+	width: 200px;
+}
+
+.online-detection-view .calculation-result-view > .title
+{
+	font-size: 20px;
+	font-weight: 700;
+}
+
+/* online detection view end */
+
+/* hotline view begin */
+.hotline-btn-view
+{
+	top: 155px;
+}
+
+.hotline-view
+{
+	position: absolute;
+	left: 50px;
+    top: 10px;
+	width: 230px;
+	height: 200px;
+}
+
+.hotline-view .input-view
+{
+	position: relative;
+}
+
+.hotline-view .input-view > .scale > .scale-a,
+.hotline-view .input-view > .scale > .scale-b
+{
+	width: 110px;
+}
+
+.hotline-view .input-view > .scale > .scale-b,
+.hotline-view .input-view > .param > .param-epsilon-cluster,
+.hotline-view .input-view > .param > .param-minPts
+{
+	margin-left: 10px;
+}
+
+.hotline-view .input-view > .param > .param-epsilon,
+.hotline-view .input-view > .param > .param-epsilon-cluster,
+.hotline-view .input-view > .param > .param-minPts
+{
+	width: 60px;
+}
+
+
+.hotline-view .input-view > .btns > .clean
+{
+	margin-left: 10px;
+}
+
+.chart-btn-view
+{
+	top: 195px;
+}
+
+/* hotline view end */
+

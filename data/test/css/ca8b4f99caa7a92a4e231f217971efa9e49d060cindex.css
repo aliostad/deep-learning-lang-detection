@@ -1,0 +1,33 @@
+/*
+Template Name: ECSHOP模板堂www.ecmoban.com
+Template URI: http://www.ecmoban.com/
+Description: ECSHOP模板堂(www.ecmoban.com).
+Version: 2.7.3
+Author: ECSHOP Team
+Author URI: http://www.ecshop.com/
+Logo filename: logo.gif
+*/
+
+/* ====================
+公共样式
+==================== */
+.home-hd-show {border-bottom: 1px solid #dfdfdf;
+    border-top: 1px solid #dfdfdf;}
+.home-hd-show .hd-show-item {
+    background: none repeat scroll 0 0 #f3f3f3;
+    border-right: 1px solid #dfdfdf;
+    float: left;
+    height: 160px;
+    overflow: hidden;
+    width: 248px;
+}
+.home-hd-show .hd-show-item .item {
+    display: none;
+}
+.home-hd-show .hd-show-item img {
+    height: 160px;
+    width: 248px;
+}
+.home-hd-show .hd-show-item-first {
+    width: 247px;
+}

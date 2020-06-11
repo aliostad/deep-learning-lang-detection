@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+
+		<property name="connection.provider_class">org.jasypt.hibernate3.connectionprovider.EncryptedPasswordC3P0ConnectionProvider</property>
+		<property name="connection.encryptor_registered_name">configurationHibernateEncryptor</property>
+
+		<!-- DB CONNECTION PROPERTIES -->
+		<!-- for local tests:
+				- URL: hopeonlus.it.escalade.mochahost.com
+				- enable IP in mysql control panel 
+				- put password in jetty-dev.xml
+				
+			for production:
+				- put password in $TOMCAT_HOME/conf/Catalina/hopeonlus.it/admin.xml
+				
+				file sample:
+					<Context>
+						<Environment name="hope/dbpassword" value="pwdhere" type="java.lang.String" override="false"/>
+					</Context>
+		-->
+		<property name="hibernate.connection.url">jdbc:mysql://${dbUrl}:3306/hope2011_websitedb</property>
+		<property name="hibernate.connection.username">hope2011_rw</property>
+		<property name="hibernate.connection.password">ENC(hSA7gTD7mTVREsra0zETtQ==)</property>
+		<property name="hibernate.cglib.use_reflection_optimizer">true</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+		<!-- C3P0 PROPERTIES -->
+		<property name="hibernate.c3p0.acquire_increment">2</property>
+		<property name="hibernate.c3p0.idle_test_period">100</property>
+		<property name="hibernate.c3p0.max_size">8</property>
+		<property name="hibernate.c3p0.max_statements">100</property>
+		<property name="hibernate.c3p0.min_size">2</property>
+		<property name="hibernate.c3p0.timeout">100</property>
+
+		<!-- MAPPING -->
+        <mapping resource="mapping/Users.hbm.xml" />
+        
+        <!-- MAPPING BILANCIO -->
+        <mapping resource="mapping/Conto.hbm.xml" />
+        <mapping resource="mapping/Scrittura.hbm.xml" />
+        <mapping resource="mapping/Anno.hbm.xml" />
+        <mapping resource="mapping/Pagamentosoci.hbm.xml" />
+        <mapping resource="mapping/Contogruppo.hbm.xml" />
+        <mapping resource="mapping/Gruppo.hbm.xml" />
+        <mapping resource="mapping/Movimenti.hbm.xml" />
+        <mapping resource="mapping/Gruppibloccati.hbm.xml" />
+        <mapping resource="mapping/Pagamenti.hbm.xml" />
+        
+        <!--  MAPPING SOCI-->
+        <mapping resource="mapping/Anagrafe.hbm.xml" />
+        <mapping resource="mapping/Socio.hbm.xml" />
+        <mapping resource="mapping/Soci.hbm.xml" />
+        <mapping resource="mapping/Nonsoci.hbm.xml" />
+        <mapping resource="mapping/Adottanti.hbm.xml" />
+        <mapping resource="mapping/Bambino.hbm.xml" />
+        <mapping resource="mapping/Adottantiview.hbm.xml" />
+        <mapping resource="mapping/Bambinoanno.hbm.xml" />
+        <mapping resource="mapping/Bambiniliberi.hbm.xml" />
+        <mapping resource="mapping/Bambinoannoview.hbm.xml" />
+        <mapping resource="mapping/Famiglia.hbm.xml" />
+        <mapping resource="mapping/Azionista.hbm.xml" />
+        
+        <!--  MAPPING SITO WEB -->
+        <mapping resource="mapping/Regioni.hbm.xml" />
+        <mapping resource="mapping/Newsimg.hbm.xml" />
+        <mapping resource="mapping/Tipofile.hbm.xml" />
+        <mapping resource="mapping/Progettiimg.hbm.xml" />
+        <mapping resource="mapping/Newsletter.hbm.xml" />
+        <mapping resource="mapping/High.hbm.xml" />
+        <mapping resource="mapping/Categorienews.hbm.xml" />
+        <mapping resource="mapping/Immagini.hbm.xml" />
+        <mapping resource="mapping/News.hbm.xml" />
+        <mapping resource="mapping/Download.hbm.xml" />
+        <mapping resource="mapping/Eventi.hbm.xml" />
+        <mapping resource="mapping/Progetti.hbm.xml" />
+
+
+	</session-factory>
+</hibernate-configuration>

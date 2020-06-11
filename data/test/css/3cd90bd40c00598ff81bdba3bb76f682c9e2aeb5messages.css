@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+.message_container {
+    overflow: auto;
+}
+
+.message_container a { 
+    color: black;
+}
+
+.unread {
+    font-weight: bold;
+}
+
+.message_container a.button {
+    padding: 8px;
+    min-width: 90px;
+}
+
+.message_container a.button.left {
+    float: left;
+    width: auto;
+    margin: 4px 15px;
+}
+
+.message_container input[type="submit"]{
+    float: right;
+}
+
+#profile_messages .message_right.reply {
+    margin-left: 95px;
+}
+
+#profile_messages .message_right.reply textarea,
+.message_container textarea{
+    width: 100%;
+    min-height: 200px;
+    background-color: #FBFBFB
+}
+
+    
+.message_container input[type="text"]{
+    width: 100%;
+    background-color: #FBFBFB
+}
+        
+.message_container label{
+    float: left;
+}
+
+#fenchy_message_new_title, #fenchy_message_new_content {
+    font-family: inherit;    
+}

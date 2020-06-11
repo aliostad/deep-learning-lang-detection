@@ -1,0 +1,70 @@
+.squid-api-admin-widgets-export-scheduler .modal-footer .ok {
+	display: none;
+}
+
+.squid-api-export-scheduler-index-view button.create-job {
+    float: right;
+    margin-bottom: 5px;
+    z-index: 1;
+    position: relative;
+}
+
+.squid-api-export-scheduler-index-view table.dataTable thead th, .squid-api-export-scheduler-index-view table.dataTable tfoot th {
+    font-weight: normal;
+    text-align: center;
+}
+
+.squid-api-export-scheduler-index-view.table-responsive label, .squid-api-export-scheduler-index-view table.dataTable.no-footer {
+    font-size: 10px;
+}
+
+.squid-api-export-scheduler-index-view table td {
+    max-width: 220px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.squid-api-export-scheduler-index-view table.dataTable.no-footer {
+    border-bottom: 1px solid #dedcde;
+    table-layout: fixed;
+}
+
+.squid-api-export-scheduler-index-view table.dataTable.no-footer button {
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+.squid-api-export-scheduler-index-view table thead tr {
+    white-space: nowrap;
+}
+
+.squid-api-export-scheduler-index-view table tbody tr {
+    word-wrap: break-word;
+}
+
+.squid-api-export-scheduler-index-view .dataTables_info {
+    display: none;
+}
+
+.squid-api-export-scheduler-index-view table.dataTable thead th, .squid-api-export-scheduler-index-view table.dataTable thead td {
+    border-bottom: 1px solid #c8c8c8;
+    font-weight: bold;
+}
+
+.squid-api-export-scheduler-index-view .dataTables_wrapper {
+	clear: none;
+}
+
+.squid-api-export-scheduler-index-view .col-xs-12 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.squid-api-export-scheduler-index-view .dataTables_wrapper .dataTables_filter {
+    float: left;
+}
+
+.squid-api-export-scheduler-index-view .form-inline > * {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}

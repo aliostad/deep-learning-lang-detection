@@ -1,0 +1,34 @@
+<!DOCTYPE portlet-app PUBLIC "-//JBoss Portal//DTD JBoss Portlet 2.6//EN" "http://www.jboss.org/portal/dtd/jboss-portlet_2_6.dtd">
+<portlet-app>
+    <portlet>
+        <portlet-name>QuotationPortlet</portlet-name>
+    </portlet>
+    <portlet>
+        <portlet-name>MotorPlusWSRPQuotationPortlet</portlet-name>
+        <remotable>true</remotable>
+    </portlet>
+    <portlet>
+        <portlet-name>WSRPQuotationPortlet</portlet-name>
+        <remotable>true</remotable>
+    </portlet>
+    <service>
+        <service-name>UserModule</service-name>
+        <service-class>org.jboss.portal.identity.UserModule</service-class>
+        <service-ref>:service=Module,type=User</service-ref>
+    </service>
+    <service>
+        <service-name>RoleModule</service-name>
+        <service-class>org.jboss.portal.identity.RoleModule</service-class>
+        <service-ref>:service=Module,type=Role</service-ref>
+    </service>
+    <service>
+        <service-name>UserProfileModule</service-name>
+        <service-class>org.jboss.portal.identity.UserProfileModule</service-class>
+        <service-ref>:service=Module,type=UserProfile</service-ref>
+    </service>
+   <service>
+      <service-name>MembershipModule</service-name>
+      <service-class>org.jboss.portal.identity.MembershipModule</service-class>
+      <service-ref>:service=Module,type=Membership</service-ref>
+   </service>
+</portlet-app>

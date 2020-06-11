@@ -1,0 +1,25 @@
+#!/bin/sh
+
+ourInit() {
+if [ -x /usr/sbin/invoke-rc.d ] && [ ! "`readlink /usr/sbin/invoke-rc.d`" = /bin/true ] ; then
+  invoke-rc.d $1 $2
+else
+  /etc/init.d/$1 $2
+fi
+}
+
+if [ -x "/etc/init.d/untangle-firmware-common" ]; then
+  ourInit untangle-firmware-common restart
+fi
+
+# disable rsyslog by default on linksys
+update-rc.d -f rsyslog disable
+
+# remove old 12.1 conf
+rm -rf /etc/untangle/hardware/asus
+
+# remove old 12.1 startup file
+update-rc.d -f untangle-hardware-asus-ac88u disable
+rm -f /etc/init.d/untangle-hardware-asus-ac88u
+
+exit 0

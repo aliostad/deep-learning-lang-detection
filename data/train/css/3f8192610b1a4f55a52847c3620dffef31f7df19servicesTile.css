@@ -1,0 +1,119 @@
+.serviceItemsTile {
+	margin-bottom: 25px;
+}
+
+.serviceItemsTile h2 {
+	font-size: 18px;
+	color: #333;
+	margin-bottom: 16px;
+}
+
+.serviceItemsTile .leftSide {
+	float: left;
+	width:974px;
+}
+.serviceItemsTile .leftSide img {
+	position:absolute;
+	margin-left:160px;
+	margin-top:39px
+}
+.serviceItemsTile .leftSide p {
+	margin-left: 165px;
+	margin-top: 90px;
+	font-size: 1.2em;
+	line-height: 1.6em;
+}
+.serviceItemsTile .rightSide {
+	float: left;
+}
+.serviceItemsTile .serviceItemArea {
+	float: left;
+	position: relative;
+}
+.serviceItemsTile .serviceItemContainer {
+	position: absolute;
+	bottom: 20px;
+	left: 0px;
+}
+.serviceItemsTile .serviceItem {
+	float: left;
+	width: 107px;
+	text-align: center;
+}
+.serviceItemsTile .serviceItem a {
+	text-decoration: none;
+	position: static;
+	color:#3381B7 !important;;
+	
+}
+.serviceItemsTile .serviceItem a:hover {
+	color:#3381B7 !important;;
+	text-decoration:underline !important;
+}
+.serviceItemsTile .vertSep {
+	float: left;
+	height: 123px;
+	width: 1px;
+}
+
+/* page specific styles */
+#ATTServicesShop .leftSide {
+	height: 160px;
+	width: 300px;
+}
+#ATTServicesShop .serviceItemsTile .serviceItem {
+	height: 87px;
+}
+#ATTServicesShop .rightSide {
+	display: none;
+}
+#ATTServicesShop h2 {
+	position:relative;
+	margin-left:30px;
+}
+
+#ATTServicesShop .serviceItemArea {
+	height: 160px;
+	width: 655px;
+	background:url(../../media/att/2011/shop/landing/bkd-StartShopping-lob.png) bottom left no-repeat;
+}
+
+#ATTServicesHomepage .leftSide {
+	display: none;
+}
+#ATTServicesHomepage .serviceItemsTile .serviceItem {
+	height: 103px;
+}
+#ATTServicesHomepage .rightSide {
+	width: 154px;
+	height: 123px;
+	padding-top: 10px;
+	padding-left: 28px;
+}
+#ATTServicesHomepage .serviceItemArea {
+	height: 123px;
+	width: 740px;
+}
+#ATTServicesHomepage .serviceItemContainer {
+	left: 0px;
+}
+
+#ATTServicesHomepage .serviceItemsTile .serviceItem {
+	width: 120px;
+}
+
+.servicesPopupMenu {
+	background-color: #fff;
+	width: 973px;
+	height: 237px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	line-height: 3.5em;
+	position: absolute;
+	margin-top: -259px;
+	display: none;
+}
+
+
+
+

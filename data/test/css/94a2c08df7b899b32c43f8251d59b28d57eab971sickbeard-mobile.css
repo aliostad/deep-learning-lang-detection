@@ -1,0 +1,45 @@
+.pull-right {
+    float:right;
+}
+.pull-left {
+    float:left;
+}
+
+.ui-bar, .ui-body {
+    clear:none;
+}
+
+.ui-btn-inline-last {
+    margin-right:0 !important;
+}
+
+li#show-list a {
+    padding-left:60px !important;
+}
+
+#show-poster {
+    margin-right:10px;
+    margin-bottom:10px;
+}
+
+#show-poster-small {
+    display:none;
+}
+
+#show-header th {
+    text-align:right;
+}
+
+@media(max-width:600px) {
+    #show-poster {
+        display:none;
+    }
+    #show-poster-small {
+        display:block;
+        margin-right:10px;
+        margin-bottom:10px;
+    }
+    #show-details {
+        clear:both;
+    }
+}

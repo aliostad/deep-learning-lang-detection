@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+  
+<!DOCTYPE sqlMap         
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"         
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="Circle">
+
+	<typeAlias alias="Append" type="com.chj.entity.Append" />
+	<resultMap class="Append" id="AppendParentResultMap">
+		<result property="appendId" column="append_id" />
+		<result property="name" column="name" />
+		<result property="price" column="price" />
+		<result property="companyId" column="company_id" />
+		<result property="childs" column="append_id" select="searchAppendByParentId"/>
+	</resultMap>
+	<resultMap class="Append" id="AppendChildResultMap">
+		<result property="appendId" column="product_attribute_id" />
+		<result property="name" column="name" />
+		<result property="price" column="create_date" />
+		<result property="companyId" column="create_date" />
+	</resultMap>
+	
+	<select id="searchAppend" parameterClass="java.util.Map" resultMap="AppendParentResultMap">
+		select
+			* 
+		from 
+			tb_append 
+		where 
+			append_id in (
+				select 
+					append_id
+				from 
+					tb_product_append
+				where 
+					product_id = #productId#
+			)
+	</select>
+	<select id="searchAppendByParentId" parameterClass="long" resultMap="AppendChildResultMap">
+		select
+			* 
+		from 
+			tb_append 
+		where 
+			parent_id = #value#
+	</select>
+
+</sqlMap>

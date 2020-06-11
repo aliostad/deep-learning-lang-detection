@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalogue>
+
+    <message key="Create/Edit">Créer/Editer</message>
+    <message key="Configuration">Configuration</message>
+    <message key="Properties">Propriétés</message>
+
+    <message key="Create New Collection">Créer nouvelle collection</message>
+    
+    <message key="Add .configxml">Ajouter .configxml</message>
+    <message key="Add .configxml.children">Ajouter .configxml.children</message>
+    <message key="Edit .configxml">Editer .configxml</message>
+    <message key="Edit .configxml.children">Editer .configxml.children</message>
+    
+    <message key="Edit">Editer</message>
+    <message key="Copy">Copier</message>
+    <message key="Move/Rename">Déplacer/Renommer</message>
+    <message key="Delete">Supprimer</message>
+    <message key="Move">Déplacer</message>
+
+    <message key="Edit in {0}">Editer avec {0}</message>
+    <message key="Create New {0}">Créer {0}</message>
+
+    <message key="Edit in bxe">Editer avec BXE</message>
+    <message key="Edit in kupu">Editer avec Kupu</message>
+    <message key="Edit in fck">Editer avec FCKEditor</message>
+    <message key="Edit in oneform">Editer comme texte</message>
+    <message key="Edit in Properties">Propriétés</message>
+
+    <message key="Reload">Actualiser</message>
+    
+    <message key="Create new {resourcetype}">Créer nouveau (resourcetype)</message>
+    <message key="Create New xhtml">Créer nouveau ficher XHTML</message>
+    <message key="Create New file">Ajouter fichier</message>
+    <message key="Create New archive">Ajouter fichier d'un archive ZIP</message>
+    <message key="Create New gallery">Créer nouvelle galerie</message>
+
+    <message key="Move {0} to:">Déplacer de {0} à:</message>
+    <message key="Copy {0} to:">Copier de {0} à:</message>
+    <message key="Do you really want to delete {0} ?">Définitivement effacer {0}?</message>
+    
+    <message key="Saving...">Enregistrer...</message>
+    <message key="Saved">Enregistré</message>
+    <message key="Save">Enregistrer</message>
+    
+</catalogue>

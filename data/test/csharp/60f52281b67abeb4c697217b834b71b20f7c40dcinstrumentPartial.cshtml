@@ -1,0 +1,42 @@
+﻿@model MMApp.Domain.Models.Instrument
+
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/modernizr")
+@Scripts.Render("~/bundles/jqueryval")
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    @(Html.HiddenFor(model => model.Id))
+    
+    <table>
+        <tr>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="labelWidth150">@Html.LabelFor(instrument => instrument.InstrumentName)</td>
+            <td>@Html.TextBoxFor(instrument => instrument.InstrumentName)</td>
+            <td>@Html.ValidationMessageFor(instrument => instrument.InstrumentName)</td>
+        </tr>
+        <tr>
+            <td class="labelWidth150 labelPadding">@Html.LabelFor(instrument => instrument.Website)</td>
+            <td colspan="2">@Html.TextBoxFor(instrument => instrument.Website, new { style = "width:100%;" })</td>
+        </tr>
+        <tr>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: right">
+                    <input type="button" name="Cancel" value="Cancel" onclick="history.back();" />
+                    <input type="submit" name="Save" value="Save" />
+                </td>
+        </tr>
+    </table>
+}
+
+<script type="text/javascript">
+    $(function () {
+        $("#InstrumentName").focus();
+    });
+</script>

@@ -1,0 +1,135 @@
+#!/bin/bash
+
+SCRIPT_NAME="stack-create-elb"
+
+# shellcheck disable=SC1091
+source "/usr/src/app/stack/utils" || fatal 'unable to load utils'
+
+assert_required_params() {
+  local load_balancer_name="$1"
+  local load_balancer_cert="$2"
+
+  if [ -n "$load_balancer_name" ] && [ -n "$load_balancer_cert" ]; then
+    return 0
+  fi
+
+  usage
+  echo ''
+
+  if [ -z "$load_balancer_name" ]; then
+    echo "Missing load-balancer-name as first argument"
+    exit 1
+  fi
+
+  if [ -z "$load_balancer_cert" ]; then
+    echo "Missing load-balancer-cert as second argument"
+    exit 1
+  fi
+
+  exit 1
+}
+
+usage(){
+  echo "USAGE: $SCRIPT_NAME <load-balancer-name> <load-balancer-cert>"
+  echo ''
+  echo 'Arguments:'
+  echo '  -h, --help                       print this help text'
+  echo '  -v, --version                    print the version'
+  echo '  --security-groups [<sg-id>,..]   security groups (comma separated). Defaults to "sg-a931b3d0"'
+  echo '  --subnets [<subnet-id>,..]       subnet-id (comma separated). Defaults to "subnet-04144542,subnet-07332765,subnet-992c1bed"'
+  echo 'Environment:'
+  echo '  AWS_ACCESS_KEY_ID      AWS Access ID'
+  echo '  AWS_SECRET_ACCESS_KEY  AWS Secret Key'
+  echo '  AWS_DEFAULT_REGION     AWS Default Region'
+  echo '  DEBUG                  print debug output'
+}
+
+main() {
+  local load_balancer_name
+  local load_balancer_cert
+  local has_security_groups=0
+  local security_groups
+  local has_subnets=0
+  local subnets
+  while [ "$1" != "" ]; do
+    local param="$1"
+    local value="$2"
+    case "$param" in
+      -h | --help)
+        usage
+        exit 0
+        ;;
+      -v | --version)
+        version
+        exit 0
+        ;;
+      --cert)
+        load_balancer_cert="$value"
+        shift
+        ;;
+      --security-groups)
+        has_security_groups=1
+        IFS=',' read -ra security_groups <<< "$value"
+        shift
+        ;;
+      --subnets)
+        has_subnets=1
+        IFS=',' read -ra subnets <<< "$value"
+        shift
+        ;;
+      *)
+        if [ "${param::1}" == '-' ]; then
+          echo "ERROR: unknown parameter \"$param\""
+          usage
+          exit 1
+        fi
+        if [ -z "$load_balancer_name" ]; then
+          load_balancer_name="$param"
+          shift
+        fi
+        ;;
+    esac
+    shift
+  done
+
+
+  if [ "$has_security_groups" == "0" ]; then
+    security_groups=('sg-a931b3d0')
+  fi
+
+  if [ "$has_subnets" == "0" ]; then
+    subnets=('subnet-04144542' 'subnet-07332765' 'subnet-992c1bed')
+  fi
+
+
+  assert_required_params "$load_balancer_name" "$load_balancer_cert"
+
+  local all_security_groups="${security_groups[@]}"
+  local all_subnets="${subnets[@]}"
+  debug "load_balancer_name $load_balancer_name"
+  debug "security_groups ${all_security_groups/\,/}"
+  debug "subnets ${all_subnets/\,/}"
+
+  run_cmd aws elb create-load-balancer \
+    --load-balancer-name "$load_balancer_name" \
+    --listeners \
+      "Protocol=HTTP,LoadBalancerPort=80,InstanceProtocol=HTTP,InstancePort=80" \
+      "Protocol=HTTPS,LoadBalancerPort=443,InstanceProtocol=HTTP,InstancePort=80,SSLCertificateId=$load_balancer_cert" \
+      "Protocol=HTTP,LoadBalancerPort=8080,InstanceProtocol=HTTP,InstancePort=8080" \
+      "Protocol=HTTPS,LoadBalancerPort=8081,InstanceProtocol=HTTP,InstancePort=8080,SSLCertificateId=$load_balancer_cert" \
+    --subnets "${subnets[@]/\,/}" \
+    --security-groups "${security_groups[@]/\,/}" > /dev/null || fatal 'Unable to create a load balancer'
+
+  local elb_attr_file="file:///usr/src/app/assets/elb-default-attributes.json"
+  run_cmd aws elb modify-load-balancer-attributes \
+    --load-balancer-name "$load_balancer_name" \
+    --load-balancer-attributes "$elb_attr_file" > /dev/null || fatal 'Unable to modify load balancer attributes'
+
+  local health_check='Target=HTTP:8080/ping,Interval=30,UnhealthyThreshold=2,HealthyThreshold=2,Timeout=5'
+
+  run_cmd aws elb configure-health-check \
+    --load-balancer-name "$load_balancer_name" \
+    --health-check "$health_check" > /dev/null || fatal 'Unable to create the health-check'
+}
+
+main "$@"

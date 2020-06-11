@@ -1,0 +1,36 @@
+#!/bin/bash
+
+function color {
+    echo -en "\033[38;5;${1}m$2\033[0m"
+}
+
+total=$(($(head -n1 /proc/meminfo | awk '{print $2}')/1024))
+free=$(($(head -n2 /proc/meminfo | tail -n1 | awk '{print $2}')/1024))
+limit=$(($total*25/100))
+
+color 255 "RAM: "
+if [ $free -lt $limit ]; then
+    color 196 "${free}MB"
+else
+    color 184 "${free}MB"
+fi
+echo -n ' / '
+color 21 "${total}MB"
+
+echo -n ' | '
+uptime=$(uptime | sed -e 's/^.*up \(\([0-9]\+ days, \)\?[^,]\+\), [^u]\+.*$/\1/' -e 's/^ \(.*\)/\1/')
+color 255 "Uptime: "
+color 166 "$uptime"
+echo -n ' | '
+
+load=($(cat /proc/loadavg | awk '{print $1}') $(cat /proc/loadavg | awk '{print $2}') $(cat /proc/loadavg | awk '{print $3}'))
+
+color 255 "Load: "
+[ ${load[0]/\.*} -ge 1 ] && color 88 ${load[0]} || color 64 ${load[0]}; echo -n ' '
+[ ${load[1]/\.*} -ge 1 ] && color 88 ${load[1]} || color 64 ${load[1]}; echo -n ' '
+[ ${load[2]/\.*} -ge 1 ] && color 88 ${load[2]} || color 64 ${load[2]}; echo -n ' '
+
+echo -n ' | '
+color 255 "Date/Time: "
+color 91 "$(date)"
+echo

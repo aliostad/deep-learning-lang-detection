@@ -1,0 +1,136 @@
+.ico-operation {
+	background: url("../images/gears.gif") no-repeat;
+}
+
+.ico-admin {
+	background: url("../images/gears.gif") no-repeat;
+}
+
+.ico-report {
+	background: url("../images/gears.gif") no-repeat;
+}
+
+.g-area {
+	float: left;
+	width: 340px;
+	height: 387px;
+	margin: 25px;
+	background-color: rgba(0, 0, 0, 0.2);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.f-clear:after {
+	clear: both;
+	content: '.';
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.f-clear {
+	zoom: 1;
+}
+
+.customer-shortcut {
+	background-image: url(../images/icons/model/customer.png);
+}
+
+.sale-shortcut {
+	background-image: url(../images/icons/model/sale.png);
+}
+.stock-shortcut {
+	background-image: url(../images/icons/model/stock.png);
+}
+.cash-shortcut {
+	background-image: url(../images/icons/model/cash.png);
+}
+
+.productsearch-shortcut {
+	background-image: url(../images/icons/model/productsearch.png);
+}
+.pricesearch-shortcut {
+	background-image: url(../images/icons/model/pricesearch.png);
+}
+
+.purchase-shortcut {
+	background-image: url(../images/icons/model/purchase.png);
+}
+
+.employee-shortcut {
+	background-image: url(../images/icons/model/employee.png);
+}
+
+.vendor-shortcut {
+	background-image: url(../images/icons/model/vendor.png);
+}
+
+
+.product-shortcut {
+	background-image: url(../images/icons/model/product.png);
+}
+
+.productcategory-shortcut {
+	background-image: url(../images/icons/model/productcategory.png);
+}
+.power-shortcut {
+	background-image: url(../images/icons/model/power.png);
+}
+
+.stockdetail-shortcut {
+	background-image: url(../images/icons/model/stockdetail.png);
+}
+
+.saledetail-shortcut {
+	background-image: url(../images/icons/model/saledetail.png);
+}
+
+.purchasedetail-shortcut {
+	background-image: url(../images/icons/model/purchasedetail.png);
+}
+
+.dailyreport-shortcut {
+	background-image: url(../images/icons/model/dailyreport.png);
+}
+.monthlyreport-shortcut {
+	background-image: url(../images/icons/model/monthlyreport.png);
+}
+
+.monthlyreport-shortcut {
+	background-image: url(../images/icons/model/monthlyreport.png);
+}
+
+.reportbetween-shortcut {
+	background-image: url(../images/icons/model/reportbetween.png);
+}
+
+.backup-shortcut {
+	background-image: url(../images/icons/model/backup.png);
+}
+
+
+.changepassword-shortcut {
+	background-image: url(../images/icons/model/changepassword.png);
+}
+
+.rma-shortcut {
+	background-image: url(../images/icons/model/rma.png);
+}
+
+.pifa-button {
+	background-image: url(../images/pifa.png) !important;
+	width: 66px;
+	height: 24px;
+}
+.linshou-button {
+	background-image: url(../images/linshou.png) !important;
+	width: 66px;
+	height: 24px;
+}
+
+.shouhuo-button {
+	background-image: url(../images/shouhuo.png) !important;
+	width: 66px;
+	height: 24px;
+}

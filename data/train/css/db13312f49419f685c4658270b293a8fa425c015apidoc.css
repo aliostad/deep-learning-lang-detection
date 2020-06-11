@@ -1,0 +1,104 @@
+@media (max-width: 480px) {
+    .background-footer {
+        position: fixed;
+        bottom: -150px;
+        width:100%;
+        height:250px;
+        background-image: url(../img/footer-bg.png);
+        background-size: cover;
+    }
+}
+
+#page-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 63%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    min-height: 480px;
+}
+
+.api-container {
+    margin-top: 170px;
+}
+
+h5 {
+    display: inline;
+}
+
+.api-title {
+    font-weight: bold;
+}
+
+a.api-anchor {
+    display: block;
+    position: relative;
+    top: -140px;
+    visibility: hidden;
+}
+
+.bottom-space {
+    padding-top: 360px;
+}
+
+.api-list > a:link {
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 14px;
+}
+
+.api-list {
+    padding-left: 5px;
+}
+
+.api-headers {
+    padding-top: 10px;
+}
+
+table.api-table {
+    border-collapse: separate; border-spacing: 5px;
+    padding: 6px;
+    background-color: rgb(223, 240, 216);
+    border-radius: 4px;
+    width: 100%;
+}
+
+table.api-table > tbody > tr > th {
+    padding: 6px;
+    padding-left: 10px;
+    text-align: left;
+    vertical-align: top;
+    font-weight: normal;
+    width: 10em;
+    line-height: 130%;
+}
+
+table.api-table > tbody > tr > td {
+    vertical-align: top;
+    background-color: rgb(249, 252, 247);
+    padding: 6px 10px;
+    border-radius: 1px;
+    line-height: 130%;
+}
+
+table.api-results {
+}
+
+table.api-results td {
+    font-size: 80%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 35px;
+    line-height: 100%;
+}
+
+.param-var {
+    display: inline-block; width: 70px;
+}
+
+

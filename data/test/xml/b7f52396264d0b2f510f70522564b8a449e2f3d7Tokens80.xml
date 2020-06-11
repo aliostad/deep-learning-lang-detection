@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/WPYCustomerDuplicateCheckType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/WPYCustomerDuplicateCheckType</TokenIdentifier>
+			<Abstract type="html">indicates how the method should behave if the Customer ID already exists. Default is 0.</Abstract>
+			<DeclaredIn>WPYDomainObject.h</DeclaredIn>
+            
+			
+			<NodeRef refid="80"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCustomerDuplicateCheckTypeUnset</TokenIdentifier>
+            <Abstract type="html">Unset</Abstract>
+            <Declaration>WPYCustomerDuplicateCheckTypeUnset</Declaration>
+            
+            <DeclaredIn>WPYDomainObject.h</DeclaredIn>
+            
+            <NodeRef refid="80"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCustomerDuplicateCheckTypeError</TokenIdentifier>
+            <Abstract type="html">If Customer ID exists then return an Error.</Abstract>
+            <Declaration>WPYCustomerDuplicateCheckTypeError</Declaration>
+            
+            <DeclaredIn>WPYDomainObject.h</DeclaredIn>
+            
+            <NodeRef refid="80"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCustomerDuplicateCheckTypeContinue</TokenIdentifier>
+            <Abstract type="html">If Customer ID exists then do not add account but continue with transaction.</Abstract>
+            <Declaration>WPYCustomerDuplicateCheckTypeContinue</Declaration>
+            
+            <DeclaredIn>WPYDomainObject.h</DeclaredIn>
+            
+            <NodeRef refid="80"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,51 @@
+#!/bin/sh
+
+### BEGIN INIT INFO
+
+# Provides:          process-data
+# Required-Start:    $local_fs
+# Required-Stop:     $local_fs
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Start/stop process-data
+### END INIT INFO
+
+### Customize this entry
+# Set the USER variable to the name of the user to start process-data under
+
+export USER='pi'
+
+### End customization required
+     
+eval cd ~$USER
+
+    case "$1" in
+
+      start)
+
+        su $USER -c 'nohup /home/pi/heatpi/bin/process-data-v2.py &'
+
+        echo "Starting process-data-v2.py server for $USER "
+
+        ;;
+
+      stop)
+
+        ps -eaf | grep "process-data" | pkill python3
+
+        echo "process-data-v2.py stopped"
+
+        ;;
+
+      *)
+
+        echo "Usage: /etc/init.d/process-data {start|stop}"
+
+        exit 1
+
+        ;;
+
+    esac
+
+exit 0
+

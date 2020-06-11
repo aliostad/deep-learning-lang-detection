@@ -1,0 +1,225 @@
+/*********
+ * Frame *
+ *********/
+
+.frame {
+    background-color: transparent;
+    border: 1px solid @border;
+}
+
+.frame:backdrop {
+    border-color: @backdrop_border;
+    background-color: transparent;
+    color: @backdrop_text;
+}
+
+.frame:insensitive {
+    border-color: @insensitive_border;
+    background-color: transparent;
+    color: @insensitive_text;
+}
+
+/********
+ * View *
+ ********/
+.view {
+    background-color: @base;
+    color: @text;
+}
+
+.view:insensitive,
+.view:insensitive:insensitive {
+    background-color: @insensitive_background;
+    color: @insensitive_text;
+    /*border-color: @insensitive_border;*/
+    border:none;
+}
+
+.view:backdrop,
+.view:backdrop:backdrop {
+    background-color: @backdrop_background;
+    /*border-color:  @backdrop_border;*/
+    border:none;
+    color: @backdrop_text;
+}
+
+.view:selected,
+.view:selected:focus {
+    background-color: @selection;
+    color: @selected_foreground;
+}
+
+.view:selected:backdrop,
+.view:selected:backdrop:focus {
+    background-color: @backdrop_background;
+    color: @backdrop_text;
+}
+
+.view.separator {
+    color: @border;
+}
+
+/* Pointer Selection */
+.view.rubberband,
+.rubberband {
+    border: 1px solid @border;
+    background-color: alpha(@selection ,0.4);
+}
+
+/************
+ * Viewport *
+ ************/
+GtkViewport.frame {
+    border: 1px solid @border;
+    background-color: @base;
+}
+
+/*******************
+ * Scrolled Window *
+ *******************/
+GtkScrolledWindow.frame {
+    border: 1px solid @border;
+    background-color: @base;
+}
+
+GtkScrolledWindow GtkViewport.frame {
+    border-style: none;/* To avoid double border when a viewport is packed into a GtkScrolledWindow */
+}
+
+/************
+ * Treeview *
+ ************/
+
+GtkTreeView.view.separator,
+GtkTreeView.separator,
+.separator,
+.separator:hover {
+    color: transparent;
+    background-color: transparent;
+}
+
+GtkTreeView {
+    -GtkTreeView-vertical-separator: 0;
+    -GtkWidget-focus-line-width: 1;
+    -GtkWidget-focus-padding: 1;
+}
+
+GtkTreeView.dnd {
+    border: 1px solid @selected_border;
+    border-radius: 0;
+}
+
+GtkTreeView .entry {
+    border-radius: 4px;
+    background-color: @base;
+    background-image: none;
+}
+
+/************
+ * Textview *
+ ************/
+
+GtkTextView {
+    background-color: @base;
+    color: @text;
+}
+
+/************
+ * Iconview *
+ ************/
+GtkIconView.view {
+    background-color: @base;
+    border: solid @border;
+    border-top-width: 1px;
+}
+ 
+GtkIconView.view.cell:selected,
+GtkIconView.view.cell:selected:focus {
+    border: 1px solid @border;
+    border-radius: 6px;
+    background-color: alpha(@selection, 0.7);
+    color: @selected_foreground;
+}
+
+
+GdMainIconView.content-view {
+    -GdMainIconView-icon-size: 64px;
+}
+
+GtkIconView.content-view.check {
+    background-color: transparent;
+}
+
+GtkIconView.content-view.check:active {
+    background-color: transparent;
+}
+
+GtkIconView.content-view.check:prelight,
+GtkIconView.content-view.check:insensitive,
+GtkIconView.content-view.check:selected {
+    background-color: transparent;
+}
+
+
+/****************
+ * Content View *
+ ****************/
+.content-view.view {
+    background-color: @base;
+}
+
+.content-view.view:hover {
+    background-color: alpha(@selection, 0.6);
+}
+
+.content-view.view:selected,
+.content-view.view:active {
+    background-color: @selection;
+}
+
+.content-view.view:insensitive {
+    background-color: @insensitive_background;
+}
+
+
+.content-view.view.check,
+.content-view.view.check:active {
+    background-color: transparent;
+}
+
+/* Drawing area */
+GtkDrawingArea {
+    background-color: @base;
+}
+
+GtkDrawingArea:insensitive {
+    background-color: @insensitive_background;
+}
+
+/***********
+ * gtkhtml *
+ ***********/
+GtkHTML {
+    background-color: @base;
+    color: @text;
+}
+
+/* needed for webkit/GtkStyle/Evolution compatibility */
+GtkHTML:active,
+GtkHTML:active:backdrop,
+.entry:active,
+.entry:active:backdrop {
+    color: @backdrop_text;
+    background-color: @backdrop_background;
+}
+
+.cursor-handle.top,
+.cursor-handle.bottom {
+    background-color: transparent;
+    border-style: none;
+    border-image: none;
+    border-radius: 0px;
+    border-width: 0px;
+
+    /* background-image in assets */
+}

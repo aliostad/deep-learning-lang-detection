@@ -1,0 +1,22 @@
+CntHistoryViewItem[layoutName="history"][modelItemType="StandardItem"][incoming]{
+    layout:custom-history-incoming;
+}
+
+CntHistoryViewItem[layoutName="history"][modelItemType="StandardItem"][!incoming]{
+    layout:custom-history-outgoing;
+}
+
+CntHistoryViewItem::text-3[layoutName="history"]{
+    text-height:var(hb-param-text-height-tiny);
+    font-variant:secondary;
+    text-align: left;
+}
+
+CntHistoryViewItem::frame[layoutName="history"]{
+	border-width: 0.0un;
+}
+
+CntHistoryViewItem::newitem[layoutName="history"]{
+    top:-1.0un;
+    bottom:1.0un;
+}

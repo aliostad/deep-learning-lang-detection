@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutionResponse>
+  <outputXML><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<ns0:XiPerson xmlns:ns0="urn:xi-study:000"><Person><Id>Id=3333</Id><LastName>2</LastName><FirstName>1</FirstName><TelephoneNumber></TelephoneNumber><CountryCode></CountryCode></Person></ns0:XiPerson>]]></outputXML>
+  <exportParameters/>
+  <messages>
+    <message level="INFO">Compilation of M001_XiPerson__XiPerson successful</message>
+    <message level="DEBUG">Document start</message>
+    <message level="DEBUG">Start tag [ns0:XiPerson]</message>
+    <message level="DEBUG">Add raw attribute [ xmlns:ns0=&quot;urn:xi-study:000&quot;]</message>
+    <message level="DEBUG">Start tag [Person]</message>
+    <message level="DEBUG">Start tag [Id]</message>
+    <message level="DEBUG">Put value [Id=3333]</message>
+    <message level="DEBUG">Close tag [Id]</message>
+    <message level="DEBUG">Start tag [LastName]</message>
+    <message level="DEBUG">Put value [2]</message>
+    <message level="DEBUG">Close tag [LastName]</message>
+    <message level="DEBUG">Start tag [FirstName]</message>
+    <message level="DEBUG">Put value [1]</message>
+    <message level="DEBUG">Close tag [FirstName]</message>
+    <message level="DEBUG">Start tag [TelephoneNumber]</message>
+    <message level="DEBUG">Put value []</message>
+    <message level="DEBUG">Close tag [TelephoneNumber]</message>
+    <message level="DEBUG">Start tag [CountryCode]</message>
+    <message level="DEBUG">Put value []</message>
+    <message level="DEBUG">Close tag [CountryCode]</message>
+    <message level="DEBUG">Close tag [Person]</message>
+    <message level="DEBUG">Close tag [ns0:XiPerson]</message>
+    <message level="DEBUG">Document end</message>
+    <message level="INFO">Execution of mapping on server took 8 milliseconds</message>
+    <message level="INFO">Executed successfully</message>
+  </messages>
+</testExecutionResponse>

@@ -1,0 +1,91 @@
+<!-- request -->
+<Search Source="EPBYMINW0689" Product="WestlawNext-QED" BusinessUnit="LEGAL-US-CORE"
+        RequestId="0a8f0cfd14a61bc55ee6c4acc30" RootId="fab99a0749f14b04a5d91ba355fceb09"
+        EventId="i0a8f0cfd0000014a61bc02618964b4e8" RouteTag="cobalt" UserId="i0acc051b00000149435a5b87cce9f3e7"
+        Version="1" UseMore="true">
+    <SearchRequest PIT="MAXPIT" StageID="0" Debug="0" DebugIndexSet="">
+        <Query QueryText="lk(NHSTS31:34) lk(NHSTS31:38) lk(NHSTS35:12) lk(NHSTS202-A:23)" QueryType="BL" SyntaxType="NA"
+               PluralType="SINGULARTOPLURAL" NativeDateFormat="m-d-y" DocumentPortion="" GlobalViewExpression=""
+               ExactMatch="false" OptionalWildcard="false" IgnoreStopwords="false" ExpandNormalizedTerms="true"
+               RelevanceRankElementRanges="false" NLUserPhraseBehavior="false"
+               UserPhraseHighlightBehavior="false"></Query>
+        <Collection CollectionName="w_codesstaksp" CollectionSetName="" IndexSetName="" CollectionType="1" QueryView=""
+                    RankOption="" ViewExpression="" FieldSet="" QFDSetName="" DuplicateDeleteElementName=""
+                    DuplicateDeleteAttributeName="" DuplicatePreferenceElementName=""
+                    DuplicatePreferenceAttributeName="" DuplicatePreferenceSortOption="" NoisewordSetName=""
+                    EquivalencySetName="" CollectionRank="1" NLQuerySetName="" AutoPhraseSetName="" MisspellSetName=""
+                    NLNoiseWordSetName="" NoisePhraseSetName="" ConceptWeightSetName=""
+                    DuplicateOptionName=""></Collection>
+        <Collection CollectionName="w_codesstamtp" CollectionSetName="" IndexSetName="" CollectionType="1" QueryView=""
+                    RankOption="" ViewExpression="" FieldSet="" QFDSetName="" DuplicateDeleteElementName=""
+                    DuplicateDeleteAttributeName="" DuplicatePreferenceElementName=""
+                    DuplicatePreferenceAttributeName="" DuplicatePreferenceSortOption="" NoisewordSetName=""
+                    EquivalencySetName="" CollectionRank="1" NLQuerySetName="" AutoPhraseSetName="" MisspellSetName=""
+                    NLNoiseWordSetName="" NoisePhraseSetName="" ConceptWeightSetName=""
+                    DuplicateOptionName=""></Collection>
+        <Collection CollectionName="w_codesstamsp" CollectionSetName="" IndexSetName="" CollectionType="1" QueryView=""
+                    RankOption="" ViewExpression="" FieldSet="" QFDSetName="" DuplicateDeleteElementName=""
+                    DuplicateDeleteAttributeName="" DuplicatePreferenceElementName=""
+                    DuplicatePreferenceAttributeName="" DuplicatePreferenceSortOption="" NoisewordSetName=""
+                    EquivalencySetName="" CollectionRank="1" NLQuerySetName="" AutoPhraseSetName="" MisspellSetName=""
+                    NLNoiseWordSetName="" NoisePhraseSetName="" ConceptWeightSetName=""
+                    DuplicateOptionName=""></Collection>
+        <Collection CollectionName="w_codesstanhp" CollectionSetName="" IndexSetName="" CollectionType="1" QueryView=""
+                    RankOption="" ViewExpression="" FieldSet="" QFDSetName="" DuplicateDeleteElementName=""
+                    DuplicateDeleteAttributeName="" DuplicatePreferenceElementName=""
+                    DuplicatePreferenceAttributeName="" DuplicatePreferenceSortOption="" NoisewordSetName=""
+                    EquivalencySetName="" CollectionRank="1" NLQuerySetName="" AutoPhraseSetName="" MisspellSetName=""
+                    NLNoiseWordSetName="" NoisePhraseSetName="" ConceptWeightSetName=""
+                    DuplicateOptionName=""></Collection>
+        <Collection CollectionName="w_codesstaohp" CollectionSetName="" IndexSetName="" CollectionType="1" QueryView=""
+                    RankOption="" ViewExpression="" FieldSet="" QFDSetName="" DuplicateDeleteElementName=""
+                    DuplicateDeleteAttributeName="" DuplicatePreferenceElementName=""
+                    DuplicatePreferenceAttributeName="" DuplicatePreferenceSortOption="" NoisewordSetName=""
+                    EquivalencySetName="" CollectionRank="1" NLQuerySetName="" AutoPhraseSetName="" MisspellSetName=""
+                    NLNoiseWordSetName="" NoisePhraseSetName="" ConceptWeightSetName=""
+                    DuplicateOptionName=""></Collection>
+        <Collection CollectionName="w_codesstaorp" CollectionSetName="" IndexSetName="" CollectionType="1" QueryView=""
+                    RankOption="" ViewExpression="" FieldSet="" QFDSetName="" DuplicateDeleteElementName=""
+                    DuplicateDeleteAttributeName="" DuplicatePreferenceElementName=""
+                    DuplicatePreferenceAttributeName="" DuplicatePreferenceSortOption="" NoisewordSetName=""
+                    EquivalencySetName="" CollectionRank="1" NLQuerySetName="" AutoPhraseSetName="" MisspellSetName=""
+                    NLNoiseWordSetName="" NoisePhraseSetName="" ConceptWeightSetName=""
+                    DuplicateOptionName=""></Collection>
+        <Collection CollectionName="w_codesstascp" CollectionSetName="" IndexSetName="" CollectionType="1" QueryView=""
+                    RankOption="" ViewExpression="" FieldSet="" QFDSetName="" DuplicateDeleteElementName=""
+                    DuplicateDeleteAttributeName="" DuplicatePreferenceElementName=""
+                    DuplicatePreferenceAttributeName="" DuplicatePreferenceSortOption="" NoisewordSetName=""
+                    EquivalencySetName="" CollectionRank="1" NLQuerySetName="" AutoPhraseSetName="" MisspellSetName=""
+                    NLNoiseWordSetName="" NoisePhraseSetName="" ConceptWeightSetName=""
+                    DuplicateOptionName=""></Collection>
+        <Collection CollectionName="w_codesstavtp" CollectionSetName="" IndexSetName="" CollectionType="1" QueryView=""
+                    RankOption="" ViewExpression="" FieldSet="" QFDSetName="" DuplicateDeleteElementName=""
+                    DuplicateDeleteAttributeName="" DuplicatePreferenceElementName=""
+                    DuplicatePreferenceAttributeName="" DuplicatePreferenceSortOption="" NoisewordSetName=""
+                    EquivalencySetName="" CollectionRank="1" NLQuerySetName="" AutoPhraseSetName="" MisspellSetName=""
+                    NLNoiseWordSetName="" NoisePhraseSetName="" ConceptWeightSetName=""
+                    DuplicateOptionName=""></Collection>
+        <Collection CollectionName="w_codesstadcp" CollectionSetName="" IndexSetName="" CollectionType="1" QueryView=""
+                    RankOption="" ViewExpression="" FieldSet="" QFDSetName="" DuplicateDeleteElementName=""
+                    DuplicateDeleteAttributeName="" DuplicatePreferenceElementName=""
+                    DuplicatePreferenceAttributeName="" DuplicatePreferenceSortOption="" NoisewordSetName=""
+                    EquivalencySetName="" CollectionRank="1" NLQuerySetName="" AutoPhraseSetName="" MisspellSetName=""
+                    NLNoiseWordSetName="" NoisePhraseSetName="" ConceptWeightSetName=""
+                    DuplicateOptionName=""></Collection>
+        <ClientOptions DocumentLimit="2000" TimeLimit="0" QueryWarningFlag="true" HighlightFlag="true" RankFlag="true"
+                       isTocScan="false" LargeResultsForNL="false" ReturnIDFTable="false" PersistRankKeys="false"
+                       PersistDuplicateKeys="true" HighlightElementRanges="false" DuplicateProcessingMode="0"
+                       RetrieveDocumentCountsByCollection="false" HighLightAllDocs="false"
+                       ExpandFamilyMainToQuicks="true" EnableNLLargeResultsThreshold="false"
+                       EnableConceptCount="false"></ClientOptions>
+    </SearchRequest>
+    <ServerParmsQuery Query="startTime,markInterval"></ServerParmsQuery>
+</Search>
+
+<!-- response -->
+<Search>
+<MessageErrorResponse CommandRequest="SEARCH" ErrorKey="SEARCH11016">
+    <MessageErrorArgument>w_codesstaksp</MessageErrorArgument>
+    <MessageErrorArgument>PIT-F1567699351;F1567699351;F1567699351;F1567699351;</MessageErrorArgument>
+</MessageErrorResponse>
+</Search>

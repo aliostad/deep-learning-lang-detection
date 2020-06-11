@@ -1,0 +1,208 @@
+html {
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+}
+body {
+  padding:0;
+  margin:0;
+  width:100%;
+  height:98%;
+  font-family: "Microsoft YaHei","微软雅黑","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.fl {
+  float:left;
+}
+.fr {
+  float:right;
+}
+.cb {
+  clear:both;
+}
+ml5 {
+  margin-left:5px;
+}
+.mr10 {
+  margin-right:10px;
+}
+.menu {
+  width:100%;
+  height:50px;
+  background:#000000;
+  position:absolute;
+}
+.menuContent{width:850px; margin:0 auto;}
+.menu .logo {
+  float:left;
+  margin-left:0px;
+  margin-top:9px;
+}
+.menu .nav {
+  float:left;
+  font-size:18px;
+  margin-left:10px;
+  margin-top:12px;
+  color:#eee;
+}
+.menu .home {
+  float:right;
+  margin-top:20px;
+  margin-right:0px;
+  font-size:14px;
+}
+.menu a {
+  color:#999;
+  text-decoration:none;
+}
+.menu .active{
+  color:#C60;
+}
+.buttom {
+  width:100%;
+  position:absolute;
+  margin-top:60px;
+  height:600px;
+}
+.left {
+  height:100%;
+  margin-right:380px;
+  margin-left:15px;
+}
+.right {
+  width:850px;
+  height:600px;
+  margin:10px auto;
+}
+.header {
+  padding:20px;
+  background-color:#F3F3F3;
+  margin-bottom:10px;
+}
+.header .content-box {
+  margin-top:-5px;
+  line-height:0px;
+  margin-left:60px;
+}
+.header .title {
+  font-size:20px;
+  color:#333;
+}
+.header .desc {
+  font-size:12px;
+  color:#666;
+}
+.header {
+  font-size:14px;
+  color:#666;
+  float:right;
+  margin-top:-20px;
+}
+.online-num {
+  font-size:14px;
+  color:#666;
+  float:left;
+  margin-top:2px;
+  margin-left:10px;
+	}
+.write-box {
+  width:810px;
+  height:70px;
+  background:#D8D8D8;
+  position:absolute;
+  bottom:10px;
+  padding:20px;
+}
+.write-box .write-box-inner {
+  width:810px;
+  height:100%;
+  background:#fff;
+}
+.write-box .textarea-box {
+  width:700px;
+  height:100%;
+  float:left;
+}
+.write-box .textarea-box textarea {
+  border:0;
+  overflow:hidden;
+  resize:none;
+  height:66px;
+}
+.write-box .button-box {
+  float:left;
+  width:68px;
+  height:100%;
+}
+.write-box .button-box input{
+  background-color:#ff6600;
+  border:0;
+  color:#fff;
+  padding:3px;
+  width:50px;
+  cursor:pointer;
+  margin-top:23px;
+  margin-left:8px;
+}
+.comment-box {
+  width:850px;
+  background:#F3F3F3;
+  margin-bottom:0;
+  height:315px;
+}
+.comment-box ul {
+  list-style-type:none;
+  width:830px;
+  height:294px;
+  padding:10px;
+  margin:0;
+  font-size:14px;
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
+.comment-box ul li {
+  margin-bottom:10px;
+  width:310px;
+  word-break: break-all; word-wrap:break-word
+}
+.comment-box ul li .other {
+  color:#09C;
+  font-weight:bold;
+}
+.comment-box ul li .myself {
+  color:#F30;
+  font-weight:bold;
+}
+.nick-box {
+  width:830px;
+  height:25px;
+  background:#D8D8D8;
+  padding:10px;
+  font-size:12px;
+  color:#333;
+}
+.nick-box .nick-box-inner {
+  margin-left:120px;
+  width:255px;
+  float:right;
+}
+.nick-box .nick-box-inner button {
+	font-family:"Microsoft YaHei","微软雅黑","Helvetica Neue",Helvetica,Arial,sans-serif;
+   background-color:#ff6600;
+  border:0;
+  color:#fff;
+  padding:3px;
+  width:70px;
+  cursor:pointer;
+}
+input{outline:none;}
+textarea{outline:none;} 
+#paramet{
+	font-size:12px;
+	line-height:35px;
+	border:#CCC 1px solid;
+	padding:20px;
+	background:#F9F9F9;	
+}
+.orange{color:#F30;}
+	

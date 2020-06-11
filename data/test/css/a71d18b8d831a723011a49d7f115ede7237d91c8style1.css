@@ -1,0 +1,43 @@
+@import "style2.css";
+@import "style3.css";
+
+canvas  { bgcolor: olive }
+window  { bgcolor: teal }
+myclass { bgcolor: maroon }
+.mystyle { fgcolor: "#ff0000" }
+
+#myedit    { text: "changed for style1"; width: 300 }
+
+simplelayout + view > view { bgcolor: green }
+
+text[text~="xxx"] { 
+    x: 100;
+    width: 400;
+    fgcolor: red;
+}
+
+[text~="xxx"] {
+    width: 50;
+    fgcolor: yellow !important;
+}
+
+
+[name="button_style"] {
+    textcolor: red
+}
+
+
+button#mybutton1 { 
+/*    x: 50; */
+    text: "style1 text";
+    bgcolor: #0F0;
+}
+
+a + b {}
+view > text + view[bgcolor] {}
+view:first-child {}
+view > text {}
+view text {}
+* {}
+{}
+text[text="one"], text + view, view:first-child, view > text, view text { }

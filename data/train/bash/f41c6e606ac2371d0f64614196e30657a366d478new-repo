@@ -1,0 +1,107 @@
+#!/bin/bash
+
+default_user="@vash"
+set -e
+me=`basename $0`
+stderr () {
+  local i
+  for i
+  do
+    echo >&2 "$me: $i"
+  done
+}
+
+error () {
+  local sta=$1
+  shift
+  stderr "$@"
+  exit $sta
+}
+
+usage() {
+    cat <<.
+usage: $0 <Options> [repo_name...]
+
+Create a new repo based on my hierarchy
+
+Options:
+
+  -h, --help          Display this message and exit successfully.
+  -u, --user  <arg>   Add a user to the repo.
+.
+    exit $1
+}
+
+work() {
+    local repo_conf="$HOME/git/gitolite-admin/conf/gitolite.conf"
+    local repo="$1"
+    local users="$2"
+
+    if [ "x$repo" = "x" ]
+    then
+        exit 1
+    fi
+    # If repo already exists fail
+    if cat $repo_conf | grep -qE '$repo' >/dev/null
+    then
+        stderr "repo $repo already exists."
+    else
+        new_repo=true
+        repos="$repo $repos"
+
+        { # Update gitolite
+            cat >>$repo_conf<<.
+repo $repo
+    RW+   =     $defualt_user
+.
+            if test "x$users" != "x"
+            then
+                cat >>$repo_conf<<.
+    RW    =     $users
+.
+            fi
+
+            cd $HOME/git/gitolite-admin
+            git add conf/gitolite.conf
+            git commit -m "$(cat<<.
+New repo: $repo
+
+* conf/gitolite.conf: Defined here.
+.
+)"
+            git push origin master
+        }
+
+        cd
+        git clone "git@home:$repo" "git/$repo"
+        git sb add "git@home:$repo" "git/$repo"
+
+        # Initialize the repo
+#        cd
+#        git sb add "git@home:$repo" "git/$repo"
+        cd "$HOME/git/$repo"
+        git commit --allow-empty -m 'Initial commit.'
+        git push origin master
+
+    fi
+}
+
+new_repo=false
+user_def=false
+users=
+repos=
+
+cd # Always do it on the root
+
+for opt; do
+    if $user_def; then
+        users="$opt $users"
+        user_def=false
+        continue
+    fi
+    case $opt in
+        (-u|--user)    user_def=true ;;
+        (-h|--help)    usage 0 ;;
+        (*)            work $opt "$users" ;;
+    esac
+done

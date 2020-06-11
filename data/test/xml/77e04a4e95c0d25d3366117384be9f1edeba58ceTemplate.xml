@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.kolacms.com/2013/kola">
+  <components>
+    <widget name="container">
+      <properties />
+      <areas>
+        <area name="bits">
+          <components />
+        </area>
+      </areas>
+    </widget>
+  </components>
+  <amendments>
+    <duplicateComponent>
+      <componentPath>0</componentPath>
+    </duplicateComponent>
+    <addComponent>
+      <componentType>markdown</componentType>
+      <targetPath>1/0/0</targetPath>
+    </addComponent>
+    <removeComponent>
+      <componentPath>1</componentPath>
+    </removeComponent>
+    <duplicateComponent>
+      <componentPath>0</componentPath>
+    </duplicateComponent>
+    <addComponent>
+      <componentType>markdown</componentType>
+      <targetPath>1/0/0</targetPath>
+    </addComponent>
+    <duplicateComponent>
+      <componentPath>1</componentPath>
+    </duplicateComponent>
+    <setPropertyFixed>
+      <componentPath>2/0/0</componentPath>
+      <propertyName>markdown</propertyName>
+      <fixedValue><![CDATA[*add content here*asfasfa]]></fixedValue>
+    </setPropertyFixed>
+  </amendments>
+</template>

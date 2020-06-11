@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+	"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!-- Services -->
+	<bean id="keystoreService"
+		class="gov.usda.ams.mpr.pki.service.KeystoreServiceImpl" />
+
+	<bean id="signatureService"
+		class="gov.usda.ams.mpr.pki.service.SignatureServiceImpl" >
+		<property name="domainService" ref="domainService" />
+	</bean>
+	
+	<bean id="verificationService"
+		class="gov.usda.ams.mpr.pki.service.VerificationServiceImpl" />
+	
+	<bean id="domainService"
+		class="gov.usda.ams.mpr.pki.service.DomainServiceImpl">
+		<property name="signatureService" ref="signatureService" />
+		<property name="verificationService" ref="verificationService" />
+	</bean>
+	
+
+	<bean id="pkiClientService"
+		class="gov.usda.ams.mpr.pki.service.PkiClientServiceImpl">
+		<property name="domainService" ref="domainService" />
+		<!-- <property name="signatureService" ref="signatureService" />-->
+		<property name="keystoreService" ref="keystoreService" />
+	</bean>
+	<!-- End of Services -->
+</beans>

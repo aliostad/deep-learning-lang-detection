@@ -1,0 +1,34 @@
+!table
+!version 410
+!charset WindowsLatin1
+
+Definition Table
+  Type ACCESS TABLE "mst_ic_ParkingTargets_ac" Charset "WindowsLatin1"
+  Fields 27
+    icID Integer Index 1 ;
+    pICID Char (5) ;
+    parcelID Integer Index 2 ;
+    divideID Smallint Index 3 ;
+    dscID Integer ;
+    exICFtParking Integer ;
+    exPkAreaFt Integer ;
+    parkingTargetArea Integer ;
+    nGTO_Direct Char (7) ;
+    nGTO_Surface Char (7) ;
+    nGTOParking Char (7) ;
+    evaluated Logical ;
+    inlets Logical ;
+    parkingSpaces Integer ;
+    percentParkingUsed Integer ;
+    drainage Char (30) ;
+    nGTO Char (7) ;
+    controllable Char (1) ;
+    fractionControllable Float ;
+    difficulty Smallint ;
+    parkingEffDisc Float ;
+    comments Char (254) ;
+    fraction2Drywell Float ;
+    buildModelIC Logical ;
+    source Char (15) ;
+    appendDate Char (17) ;
+    constructed Integer Index 4 ;

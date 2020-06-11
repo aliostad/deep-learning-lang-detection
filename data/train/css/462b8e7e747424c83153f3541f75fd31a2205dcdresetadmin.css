@@ -1,0 +1,37 @@
+#load-box div,#load-box object,#load-box iframe,#load-box h1,#load-box h2,#load-box h3,#load-box h4,#load-box h5,#load-box h6,#load-box p,#load-box blockquote,#load-box pre,#load-box abbr,#load-box acronym,#load-box address,#load-box code,#load-box del,#load-box dfn,#load-box em,#load-box img,#load-box q,#load-box dl,#load-box dt,#load-box dd,#load-box ol,#load-box ul,#load-box li,#load-box fieldset,#load-box form,#load-box label,#load-box legend,#load-box caption,#load-box article,#load-box aside,#load-box dialog,#load-box figure,#load-box footer,#load-box header,#load-box hgroup,#load-box nav,#load-box section{border:0;font:inherit;font-size:100%;margin:0;padding:0;vertical-align:baseline}
+#load-box article,#load-box aside,#load-box details,#load-box figcaption,#load-box figure,#load-box dialog,#load-box footer,#load-box header,#load-box hgroup,#load-box menu,#load-box nav,#load-box section{display:block}
+#load-box{line-height:1.5}
+#load-box blockquote:before,#load-box blockquote:after,#load-box q:before,#load-box q:after{content:''}
+#load-box a img{border:none}
+#load-box :focus{outline:0}
+#load-box h1,#load-box h2,#load-box h3,#load-box h4,#load-box h5,#load-box h6{color:#111;font-weight:400}
+#load-box h1{font-size:3em;line-height:1;margin-bottom:2px}
+#load-box h2{font-size:2em;margin-bottom:2px}
+#load-box h3{font-size:1.5em;line-height:1;margin-bottom:2px}
+#load-box h4{font-size:1.2em;line-height:1.25;margin-bottom:1.25em}
+#load-box h5{font-size:1em;font-weight:700;margin-bottom:1.5em}
+#load-box h6{font-size:1em;font-weight:700}
+#adminMask label{font-weight:700}
+#adminMask fieldset{border:1px solid #ccc;margin:0 0 1.5em;padding:0 1.4em 1.4em}
+#adminMask legend{font-size:1.2em;font-weight:700;margin-bottom:1em;margin-top:-.2em}
+#adminMask fieldset,#adminMask #IE8#HACK{padding-top:1.4em}
+#adminMask legend,#adminMask #IE8#HACK{margin-bottom:0;margin-top:0}
+#adminMask input[type=text],#adminMask input[type=password],#adminMask input.text,#adminMask input.title,#adminMask textarea{-moz-border-radius:5px;-moz-box-shadow:inset 0 0 3px #e2e2e2;-o-border-radius:5px;-o-box-shadow:inset 0 0 3px #e2e2e2;-webkit-border-radius:5px;-webkit-box-shadow:inset 0 0 3px #e2e2e2;background-color:#FFF;behavior:url(iepngfix/PIE.htc);border:1px solid #CCC;border-radius:5px;box-shadow:inset 0 0 3px #e2e2e2;color:#000}
+#adminMask input[type=text]:focus,#adminMask input[type=password]:focus,#adminMask input.text:focus,#adminMask input.title:focus,#adminMask textarea:focus,a.select_bg:hover{-moz-box-shadow:0 0 5px #778899;-o-box-shadow:0 0 5px #778899;-webkit-box-shadow:0 0 5px #778899;behavior:url(iepngfix/PIE.htc);border-color:#778899;box-shadow:0 0 5px #778899}
+a.select_bg{-moz-border-radius:5px;-moz-box-shadow:inset 0 0 3px #e2e2e2;-o-border-radius:5px;-o-box-shadow:inset 0 0 3px #e2e2e2;-webkit-border-radius:5px;-webkit-box-shadow:inset 0 0 3px #e2e2e2;behavior:url(iepngfix/PIE.htc);border-radius:5px;box-shadow:inset 0 0 3px #e2e2e2}
+#adminMask select{background-color:#fff;border-style:solid;border-width:1px}
+#adminMask input.text,#adminMask input.title{padding:5px;width:300px}
+#adminMask input.title{font-size:1.5em}
+#adminMask textarea{padding:5px}
+#adminMask form.inline{line-height:3}
+#adminMask form.inline p{margin-bottom:0}
+#adminMask .error,#adminMask .alert,#adminMask .notice,#adminMask .success,#adminMask .info{border:2px solid #ddd;margin-bottom:1em;padding:.8em}
+#adminMask .error,#adminMask .alert{background:#fbe3e4;border-color:#fbc2c4;color:#8a1f11}
+#adminMask .notice{background:#fff6bf;border-color:#ffd324;color:#514721}
+#adminMask .success{background:#e6efc2;border-color:#c6d880;color:#264409}
+#adminMask .info{background:#d5edf8;border-color:#92cae4;color:#205791}
+#adminMask .error a,#adminMask .alert a{color:#8a1f11}
+#adminMask .notice a{color:#514721}
+#adminMask .success a{color:#264409}
+#adminMask .info a{color:#205791}
+#admin-tabMenuRight a.select_bg{-moz-box-shadow:none !important;-webkit-box-shadow:none !important;-o-box-shadow:none !important;box-shadow:none !important;border:none !important;}

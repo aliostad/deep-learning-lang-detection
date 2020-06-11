@@ -1,0 +1,39 @@
+#!/bin/bash
+
+process_active() {
+	ps x|grep "$1"|grep -v grep >/dev/null
+}
+
+case "$1" in
+	toggle)
+		process_active pianobar && echo -n p >$HOME/.config/pianobar/ctl
+		process_active shell-fm && echo -n pause |socat stdin unix-client:$HOME/.shell-fm/socket
+		process_active mpd && mpc toggle
+		process_active cmus && cmus-remote -u
+	;;
+	next)
+		process_active pianobar && echo -n n >$HOME/.config/pianobar/ctl
+		process_active shell-fm && echo -n skip |socat stdin unix-client:$HOME/.shell-fm/socket
+		process_active mpd && mpc next
+		process_active cmus && cmus-remote -n
+	;;
+	prev)
+	;;
+	status)
+		if process_active pianobar
+		then
+			echo "Pianobar not implemented"
+		elif process_active shell-fm
+		then
+			echo -n info %a - %t |socat -t 1 stdio unix-client:$HOME/.shell-fm/socket
+		elif process_active mpd
+		then
+			mpc current --format="%artist% - %title"
+		elif process_active cmus
+		then
+			cmus-remote -Q | egrep "tag artist|tag title" | sed 's/^tag artist \(.*\)$/\1 /g' |sed 's/tag title//g' |paste -sd '-'
+		else
+			echo "No lights? No music?!?"
+		fi
+	;;
+esac

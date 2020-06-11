@@ -1,0 +1,10 @@
+angular.module('bunnilicious', ['routing',
+                                'homeController',
+                                'frozenController',
+                                'bh6Controller',
+                                'phoneCaseController',
+                                'bagsController',
+                                'emoticonController',
+                                'shirtsController',
+                                'contactController',
+                                'avengerController']);

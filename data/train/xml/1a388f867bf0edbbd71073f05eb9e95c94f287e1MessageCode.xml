@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Exceptions>
+  <MessageCode code ="ERROR001">
+    <message>Class not found, details are {0}</message>
+  </MessageCode>
+  <MessageCode code ="ERROR002">
+    <message>the ParamName {0} is not in the AppParam.</message>
+  </MessageCode>
+  <MessageCode code ="ERROR003">
+    <message>ParamName {0} has been already exist.</message>
+  </MessageCode>
+  <MessageCode code ="ERROR004">
+    <message>AppParam can not be null</message>
+  </MessageCode>
+  <MessageCode code ="ERROR005">
+    <message>业务调用流程发生错误</message>
+  </MessageCode>
+  <MessageCode code ="ERROR006">
+    <message>初始化容器失败，容器不能为空</message>
+  </MessageCode>
+  <MessageCode code ="ERROR007">
+    <message>容器初始化加载配置文件时，加载路径不能为空</message>
+  </MessageCode>
+ <MessageCode code ="ERROR009">
+    <message>OrmException,details are {0}</message>
+  </MessageCode>
+  <MessageCode code ="ERROR030">
+    <message>SqlFile not found.detail is {0} </message>
+  </MessageCode>
+  <MessageCode code ="ERROR031">
+    <message>Entity not found </message>
+  </MessageCode>
+  <MessageCode code ="ERROR032">
+    <message>SqlFilePath not exist.detail is {0} </message>
+  </MessageCode>
+  <MessageCode code ="ERROR033">
+    <message>Attribute not found  </message>
+  </MessageCode>
+  <MessageCode code ="ERROR034">
+    <message>Method return type error.detail is {0}</message>
+  </MessageCode>
+  <MessageCode code ="ERROR035">
+    <message>Methods are not satisfied with naming convention.detail is  {0}</message>
+  </MessageCode>
+  <MessageCode code ="ERROR036">
+    <message>Parameter format error.detail is  {0}</message>
+  </MessageCode>
+  <MessageCode code ="ERROR037">
+    <message>Database query failed</message>
+  </MessageCode>
+  
+</Exceptions>

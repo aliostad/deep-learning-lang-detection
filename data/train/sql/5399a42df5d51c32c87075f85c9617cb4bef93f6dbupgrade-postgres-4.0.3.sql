@@ -1,0 +1,52 @@
+-- upgrade database from 4.0.3 to 4.0.4
+
+-- fix bug 1026: need to drop views in order to increase column length
+DROP VIEW view_biz_event_defect_network_time_by_app_server;
+DROP VIEW view_biz_event_defect_network_time_by_web_server;
+DROP VIEW view_biz_event_defect_network_time_by_slowest_lowest_back_comp;
+DROP VIEW view_biz_event_defect_network_time_by_slowest_lowest_comp;
+DROP VIEW view_biz_event_defect_network_time_by_usergroup;
+DROP VIEW view_biz_event_defect_time_by_app_server;
+DROP VIEW view_biz_event_defect_time_by_web_server;
+DROP VIEW view_biz_event_defect_time_by_slowest_lowest_back_comp;
+DROP VIEW view_biz_event_defect_time_by_slowest_lowest_comp;
+DROP VIEW view_biz_event_defect_time_by_usergroup;
+DROP VIEW view_biz_event_defect_time_by_user_agent;
+DROP VIEW view_biz_event_defect_network_time_by_user_agent;
+DROP VIEW view_biz_event_defect_app_time_by_app_server;
+DROP VIEW view_biz_event_defect_app_time_by_web_server;
+DROP VIEW view_biz_event_defect_app_time_by_slowest_lowest_back_comp;
+DROP VIEW view_biz_event_defect_app_time_by_slowest_lowest_comp;
+DROP VIEW view_biz_event_defect_app_time_by_user_agent;
+DROP VIEW view_biz_event_defect_app_time_by_usergroup;
+DROP VIEW view_biz_event_defect_logic_time_by_app_server;
+DROP VIEW view_biz_event_defect_logic_time_by_web_server;
+DROP VIEW view_biz_event_defect_logic_time_by_slowest_lowest_back_comp;
+DROP VIEW view_biz_event_defect_logic_time_by_slowest_lowest_comp;
+DROP VIEW view_biz_event_defect_logic_time_by_user_agent;
+DROP VIEW view_biz_event_defect_backend_time_by_app_server;
+DROP VIEW view_biz_event_defect_backend_time_by_web_server;
+DROP VIEW view_biz_event_defect_backend_time_by_slowest_lowest_back_comp;
+DROP VIEW view_biz_event_defect_backend_time_by_slowest_lowest_comp;
+DROP VIEW view_biz_event_defect_backend_time_by_user_agent;
+DROP VIEW view_biz_event_defect_backend_time_by_usergroup;
+DROP VIEW view_biz_event_defect_web_time_by_app_server;
+DROP VIEW view_biz_event_defect_web_time_by_web_server;
+DROP VIEW view_biz_event_defect_web_time_by_slowest_lowest_back_comp;
+DROP VIEW view_biz_event_defect_web_time_by_slowest_lowest_comp;
+DROP VIEW view_biz_event_defect_web_time_by_user_agent;
+DROP VIEW view_biz_event_defect_web_time_by_usergroup;
+DROP VIEW view_biz_event_defect_client_time_by_app_server;
+DROP VIEW view_biz_event_defect_client_time_by_web_server;
+DROP VIEW view_biz_event_defect_client_time_by_slowest_lowest_back_comp;
+DROP VIEW view_biz_event_defect_client_time_by_slowest_lowest_comp;
+DROP VIEW view_biz_event_defect_client_time_by_user_agent;
+DROP VIEW view_biz_event_defect_client_time_by_usergroup;
+
+-- fix bug 1026: increase column length
+alter table ts_defect_meta_keys alter column ts_name type varchar(10485760);
+
+-- no need to add vies back in the views are no longer needed
+
+-- Updating database version
+update ts_domains set ts_db_versions='4.0.4';

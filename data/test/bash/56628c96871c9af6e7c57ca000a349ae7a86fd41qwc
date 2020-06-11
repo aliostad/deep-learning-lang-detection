@@ -1,0 +1,70 @@
+#!/bin/bash
+
+usage()
+{
+cat << EOF
+usage: $0 options FILENAME
+
+Inspects a small subset of lines and overall file size to acheive a rough line
+count, or if all lines are the same length (fixed-width, such as CSV) an exact
+line count, without counting each individual line
+
+OPTIONS:
+   -h      Show this message
+   -s      Sample size, number of lines to inspect (default: 15)
+   -o      Offset, number of lines to ignore from beginning of file (defaut: 1)
+              (Useful for CSV headers, script hash-bangs, etc)
+   -l      No effect, useful for typing \`q!!\` after aborting a regular wc -l
+   -v      Verbose
+EOF
+}
+
+VERBOSE=0
+OFFSET=1
+SAMPLE=15
+
+while getopts "vhlo:s:" OPTION; do
+	case $OPTION in
+	h)
+		usage
+		exit 1
+		;;
+	v)
+		VERBOSE=1 ;;
+	l)
+		# Do nothing, for q!! shortcut
+		;;
+	o)
+		OFFSET=$OPTARG ;;
+	s)
+		SAMPLE=$OPTARG ;;
+	esac
+done
+
+shift $(($OPTIND - 1))
+SAMPLE_FILE=$1
+
+# the first line is usually different (script header, column definitions, etc)
+SAMPLE_LINE_COUNT=$( head -$(($SAMPLE + $OFFSET )) "$SAMPLE_FILE" | wc -l )
+if [ "$SAMPLE_LINE_COUNT" -lt $(( $SAMPLE + $OFFSET )) ]; then
+	# echo "$0: Not enough lines for sampling: $SAMPLE + $OFFSET"
+	# exit 1
+	# Just give them regular answer, if they're willing to sample the entire file
+	wc -l "$SAMPLE_FILE"
+	exit
+fi
+AVG_LINE_SIZE=$(( $( head -$(($SAMPLE + $OFFSET )) "$SAMPLE_FILE" | tail -$SAMPLE | wc -c ) / $SAMPLE ))
+
+TOTAL_FILE_SIZE=$( stat -c %s "$1" 2> /dev/null )
+
+# BSD style stat prefers a variant
+if [ $? -ne 0 ]; then
+	TOTAL_FILE_SIZE=$( stat -f %z "$1" )
+fi	
+
+if [ "$VERBOSE" -eq 1 ]; then
+	echo "Average line size: $AVG_LINE_SIZE"
+	echo "Total file size: $TOTAL_FILE_SIZE"
+fi
+
+echo $(( $TOTAL_FILE_SIZE / $AVG_LINE_SIZE )) $SAMPLE_FILE

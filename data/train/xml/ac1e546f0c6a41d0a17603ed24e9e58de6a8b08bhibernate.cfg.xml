@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+  "-//Hibernate/Hibernate Configuration DTD//EN"
+  "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+
+      <!--SQLite
+      <property name="hibernate.connection.driver_class">org.sqlite.JDBC</property>
+      <property name="hibernate.connection.url">jdbc:sqlite:../webapps/eve/WEB-INF/devdata.sqlite</property>
+      <property name="dialect">org.hibernate.dialect.MySQLDialect</property-->
+      
+
+      <!--MySQL-->
+      <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+      <property name="hibernate.connection.url">jdbc:mysql://eu01-user01.cbxizyg0fwcn.eu-west-1.rds.amazonaws.com:3306/d644223dbc65544a59098109b41ac0819?autoReconnect=true</property>
+      <property name="hibernate.connection.username">uj1GsWHK0FWkw</property>
+      <property name="hibernate.connection.password">ptLu8g2PMm9SA</property>
+      <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+      <property name="hibernate.connection.pool_size">10</property>
+      <property name="show_sql">true</property>
+
+      <property name="transaction.factory_class">
+          org.hibernate.transaction.JDBCTransactionFactory
+      </property>
+      <property name="connection.autoReconnectForPools">true</property>
+      <property name="connection.is-connection-validation-required">true</property>
+      <property name="connection.autoReconnect">true</property>
+      <property name="hibernate.connection.characterEncoding">UTF-8</property>
+      <property name="hibernate.hbm2ddl.auto">update</property>
+
+      <!-- Fichiers de mapping -->
+      <mapping resource="mapping/choix.hbm.xml"/>
+      <mapping resource="mapping/commandes.hbm.xml"/>
+      <mapping resource="mapping/commandepermission.hbm.xml"/>
+      <mapping resource="mapping/contraintecommande.hbm.xml"/>
+      <mapping resource="mapping/eveconfig.hbm.xml"/>
+      <mapping resource="mapping/groupe.hbm.xml"/>
+      <mapping resource="mapping/groupecontrainte.hbm.xml"/>
+      <mapping resource="mapping/groupesondage.hbm.xml"/>
+      <mapping resource="mapping/permission.hbm.xml"/>
+      <mapping resource="mapping/permissiontype.hbm.xml"/>
+      <mapping resource="mapping/personne.hbm.xml"/>
+      <mapping resource="mapping/question.hbm.xml"/>
+      <mapping resource="mapping/questiontype.hbm.xml"/>
+      <mapping resource="mapping/questionsondage.hbm.xml"/>
+      <mapping resource="mapping/reponse.hbm.xml"/>
+      <mapping resource="mapping/serviceauth.hbm.xml"/>
+      <mapping resource="mapping/sitepartie.hbm.xml"/>
+      <mapping resource="mapping/sondage.hbm.xml"/>
+      <mapping resource="mapping/sondageetat.hbm.xml"/>
+      <mapping resource="mapping/sondagetype.hbm.xml"/>
+      <mapping resource="mapping/textereponse.hbm.xml"/>
+      <mapping resource="mapping/vote.hbm.xml"/>
+</session-factory>
+</hibernate-configuration>

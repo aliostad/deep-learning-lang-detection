@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UnicastBusConfig>
+  <MessageEndpointMappings>
+    <add Messages="Damascus.Message.CreateCallMessage, Damascus.Message" Endpoint="Damascus.MessageChannel" />
+    <add Messages="Damascus.Message.CreateSmsMessage, Damascus.Message" Endpoint="Damascus.MessageChannel" />
+    <add Messages="Damascus.Message.CreateEmailMessage, Damascus.Message" Endpoint="Damascus.MessageChannel" />
+    <add Messages="Damascus.Message.ServiceCallMessage, Damascus.Message" Endpoint="Damascus.MessageChannel" />
+    <add Messages="Damascus.Message.FacebookEventMessage, Damascus.Message" Endpoint="Damascus.MessageChannel" />
+  </MessageEndpointMappings>
+</UnicastBusConfig>

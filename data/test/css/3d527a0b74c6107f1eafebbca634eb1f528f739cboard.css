@@ -1,0 +1,108 @@
+@CHARSET "UTF-8";
+
+/* board_write.jsp ui */
+#bWrite_wrap{
+	width:390px; height:370px;
+	border:1px solid blue; border-radius:15px;
+	box-shadow:20px 20px 20px #ccc;
+	margin-left:auto; margin-right:auto;
+	margin-top:70px;
+}
+#bWrite_wrap .bWrite_title{
+	margin:20px 0 0 120px; width:140px; font-size:20px;
+	background:skyblue; padding:3px; border-radius:15px;
+	text-align:center;
+}
+#bWrite_t{
+	margin:20px 0 0 15px;
+}
+#bWrite_t th{
+	background:skyblue; border-radius:15px
+}
+#bWrite_menu{
+	margin:15px 0 0 140px;
+}
+
+/* board_list.jsp ui */
+#bList_wrap{
+	width:720px;
+	border:2px solid orange; border-radius:20px;
+	box-shadow:15px 15px 15px orange;
+	margin-top:70px; margin-left:auto; margin-right:auto;	
+	padding:15px;
+}
+a:link{
+	text-decoration:none;
+}
+a:active{
+	text-decoration:none;
+}
+a:visited{
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+#bList_wrap .bList_title{
+	margin:15px 0 0 280px; width:140px; background:skyblue;
+	border-radius:13px; font-size:23px; text-align:center;
+	padding:2px;
+}
+#bList_wrap .bList_count{
+	margin:15px 0 0 600px; background:pink; border-radius:12px;
+	padding:3px; font-weight:bold; width:100px;
+	text-align:center;
+}
+#bList_t{
+	margin:15px 0 0 30px;
+}
+
+#bList_t .table_title{
+	background:yellowgreen; padding:3px;
+}
+
+#bbsList_t td{
+	text-align:center;
+}
+#bList_t td,th{
+	padding:2px;
+}
+
+#bList_t .left_box{
+	text-align:left;
+	padding-left:13px;
+}
+#bList_paging{
+	margin:15px 0 0 230px;
+}
+#bListW_menu{
+	margin:15px 0 0 630px;
+}
+#bFind_menu{
+	margin:15px 0 0 230px;
+}
+
+/* board_edit.jsp ui */
+#bEdit_wrap{
+	width:390px; height:375px;
+	border:1px solid blue; border-radius:20px;
+	box-shadow:20px 20px 20px #ccc;
+	margin-left:auto; margin-right:auto;
+	margin-top:70px;
+}
+#bEdit_wrap .bEdit_title{
+	width:170px; margin:21px 0 0 106px;
+	background:skyblue; border-radius:15px;
+	font-size:20px; text-align:center;
+	padding:3px;
+}
+#bEdit_t{
+	margin:20px 0 0 15px;
+}
+#bEdit_t th{
+	background:skyblue; border-radius:15px;
+}
+#bEdit_menu{
+	margin:20px 0 0 140px;
+}
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd 
+	http://www.springframework.org/schema/tx 
+  	http://www.springframework.org/schema/tx/spring-tx-2.5.xsd"
+  	default-lazy-init="false">
+  	
+  	<!-- 定义事务管理器 -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<!-- 定义注释驱动 -->
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
+  	<bean id="organizationService" class="com.college.account.service.DaoOrganizationService" parent="service.abstractDao"></bean>
+	<bean id="userService" class="com.college.account.service.DaoUsersService" parent="service.abstractDao"></bean>
+	<bean id="userServiceExt" class="com.college.account.service.DaoUsersServiceExt" parent="service.abstractDao"></bean>
+	
+	<bean id="positionService" class="com.college.account.service.DaoPositionService" parent="service.abstractDao"></bean>
+	<bean id="majorService" class="com.college.account.service.DaoMajorService" parent="service.abstractDao"></bean>
+	<bean id="departmentService" class="com.college.account.service.DaoDepartmentService" parent="service.abstractDao"></bean>
+	<bean id="courseService" class="com.college.account.service.DaoCourseService" parent="service.abstractDao"></bean>
+	<bean id="clubService" class="com.college.account.service.DaoClubService" parent="service.abstractDao"></bean>
+	<bean id="roleService" class="com.college.account.service.DaoRoleService" parent="service.abstractDao"></bean>
+	<bean id="permissionService" class="com.college.account.service.DaoPermissionService" parent="service.abstractDao"></bean>
+	
+	<bean id="deptOrgService" class="com.college.account.service.DaoDeptOrgService" parent="service.abstractDao">
+		<property name="departmentService" ref="departmentService"/>
+		<property name="organizationservice" ref="organizationService"/>
+	</bean>
+	
+	<bean id="majorDeptOrgService" class="com.college.account.service.DaoMajorDeptOrgService" parent="service.abstractDao">
+		<property name="majorService" ref="majorService"/>
+	</bean>
+	<bean id="studentCourseService" class="com.college.account.service.DaoStudentCourseService" parent="service.abstractDao">
+		<property name="usersService" ref="userService"/>
+		<property name="teacherCourseService" ref="teacherCourseService"/>
+		<property name="teacherCourseGroupService" ref="teacherCourseGroupService"/>
+		<property name="courseService" ref="courseService"/>
+	</bean>
+	
+	<bean id="teacherCourseService" class="com.college.account.service.DaoTeacherCourseService" parent="service.abstractDao">
+		<property name="usersService" ref="userService"/>
+		<property name="courseService" ref="courseService"/>
+	</bean>
+	
+	<bean id="teacherCourseGroupService" class="com.college.account.service.DaoTeacherCourseGroupService" parent="service.abstractDao">
+		<property name="studentCourseGroupService" ref="studentCourseGroupService"/>	
+	</bean>
+	
+	<bean id="userAdminOrgService" class="com.college.account.service.DaoUserAdminOrgService" parent="service.abstractDao"></bean>
+	<bean id="userStudentMajorService" class="com.college.account.service.DaoUserStudentMajorService" parent="service.abstractDao"></bean>
+	<bean id="userTeacherDeptService" class="com.college.account.service.DaoUserTeacherDeptService" parent="service.abstractDao"></bean>
+	
+	<bean id="studentCourseGroupService" class="com.college.account.service.DaoStudentCourseGroupService" parent="service.abstractDao">
+		<property name="usersService" ref="userService"/>
+		<property name="teacherCourseGroupService" ref="teacherCourseGroupService"/>
+	</bean>
+	
+	<bean id="mediaCategoryService" class="com.college.account.service.DaoMediaCategoryService" parent="service.abstractDao">
+	</bean>
+	<bean id="mediaResourceService" class="com.college.account.service.DaoMediaResourceService" parent="service.abstractDao">
+	</bean>
+	<bean id="mediaTagMapService" class="com.college.account.service.DaoMediaTagMapService" parent="service.abstractDao">
+	</bean>
+	<bean id="mediaTagService" class="com.college.account.service.DaoMediaTagService" parent="service.abstractDao">
+	</bean>
+	
+	
+	
+	<bean id="service.Upload" class="com.college.common.DaoUploadService" parent="service.abstractDao">
+		<property name="destLocation" value="G:\campus_test"/>
+	</bean>
+ </beans>

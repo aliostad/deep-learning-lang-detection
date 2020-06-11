@@ -1,0 +1,112 @@
+
+
+.main{
+	width: 1200px;
+	margin: 20px auto;
+}
+
+.content{
+	width: 900px;
+	margin: 0 auto;
+}
+
+.content .body{
+	padding: 30px 50px;
+	background-color: #fff;
+	border-radius: 6px;
+	min-height: 500px;
+	box-shadow: 0 0 20px #999;
+	
+}
+
+.content .body>h1{
+	padding: 20px 0;
+	text-align: center;
+}
+
+.content .body .author{
+	padding: 20px 50px;
+	text-align: right;
+}
+.content .body .author .name{
+	padding-right: 20px;
+	color: #13b085;
+	text-decoration: underline;
+}
+.content .body .author .name:hover{
+	text-decoration:none;
+}
+.content .body .author .date{
+	color: #ccc;
+}
+
+
+.content .body  .write{
+	font-size: 14px;
+	line-height: 2;
+	word-wrap:break-word;
+	color:#4a4a4a;
+	padding-bottom: 50px;
+}
+.content .body  .write ul{
+    list-style: disc;
+    padding-left:20px;
+    margin: 14px;
+}
+
+
+.content .body  .write p{
+}
+
+.content .body  .write hr{
+	border:none;
+	border-top:1px #eee solid;
+}
+
+.content .body .write img{
+	max-width: 800px;
+	height: auto;
+}
+
+.content .body .comment{
+	padding-top: 20px;
+}
+
+.content .body  .write .excerpt{
+	display: none;
+}
+
+.content .body  .write p img{
+	border-radius: 10px;
+}
+
+.content .body  .write blockquote p{
+	padding-left: 10px;
+	border-left:4px #13b085 solid;
+}
+
+.announce{
+	padding: 10px;
+	height: 100px;
+	border: 4px #DDE9ED solid;
+	border-radius: 10px;
+	background: #0FAE88;
+}
+
+.announce ul{
+	list-style: square;
+	padding-left:30px;
+	color: #FFFFFF;
+	font-size: 14px;
+}
+
+.announce ul li{
+	padding-top: 10px;
+}
+
+
+
+
+
+
+

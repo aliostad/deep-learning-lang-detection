@@ -1,0 +1,323 @@
+#sync-panel {
+	width: 100%;
+	height: 30%;
+	padding: 10px;
+	background: #EFF7F6;
+	position: absolute;
+	top: 100%;
+	left: 0;
+
+	box-sizing: border-box;
+	transition: 0.3s ease-out;
+	z-index: 10;
+
+	box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, .16),
+				0 -2px 5px 0 rgba(0, 0, 0, .26);
+}
+
+
+#sync-panel .controls {
+	width: 100%;
+	height: 40px;
+}
+
+#sync-panel .controls .button {
+	height: 30px;
+	width: 115px;
+	margin: 0 10px 0 0;
+	background: #009688;
+	line-height: 30px;
+	text-align: left;
+
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .16),
+				0 2px 5px 0 rgba(0, 0, 0, .26);
+
+	box-sizing: border-box;
+	transition: all 0.3s ease 0s;
+	float: left;
+	position: relative;
+}
+
+#sync-panel .controls .button .glyphicon {
+	width: 30px;
+	line-height: 30px;
+	text-align: center;
+	float: left;
+}
+
+#sync-panel .controls .button .info {
+	float: left;
+}
+
+#sync-panel .controls .button:hover {
+	background: #2FC5B6;	
+}
+
+#sync-panel #sync-reset {
+	background: #E06C1E;	
+}
+
+#sync-panel #sync-reset:hover {
+	background: #E84E40;
+}
+
+#sync-panel #sync-save .info {
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	text-align: center;
+	background: #FFF;
+	border: 1px solid #CCC;
+	border-radius: 3px;
+	color: #999;
+	z-index: -1;
+	opacity: 0;
+	transition: 0.3s ease-out;
+}
+
+#sync-panel #sync-save .info[data-visible] {
+	top: -40px;
+	opacity: 1;
+}
+
+/**
+ * Tutorial
+ */
+
+#sync-panel .totorial {
+	background: #EFF7F6 !important;
+	color: #333;
+	width: 30px !important;
+	position: relative;
+}
+
+#sync-panel .totorial:hover .info {
+	display: block;
+}
+
+#sync-panel .totorial .info {
+	width: 700px;
+	padding: 10px 15px;
+	background: #FFF;
+	border: 1px solid #CCC;
+	font-size: 16px;
+	line-height: 24px;
+	display: none;
+
+	position: absolute;
+	bottom: -30px;
+	left: 50px;
+}
+
+#sync-panel .totorial .info:before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: #FFF;
+	border: 1px solid #CCC;
+
+	position: absolute;
+	left: -11px;
+	bottom: 33px;
+	z-index: -1;
+	transform: rotate(45deg);
+}
+
+#sync-panel .totorial .info:after {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: #FFF;
+
+	position: absolute;
+	left: -10px;
+	bottom: 34px;
+	z-index: 1;
+	transform: rotate(45deg);
+}
+
+#sync-panel .totorial .info .highlight {
+	color: #E74C3C;	
+}
+
+/**
+ * 	Load New Audio File
+ */
+
+#sync-panel #load-audio {
+	width: 110px;
+	color: #FFF;
+	position: relative;
+	z-index: 1024;
+}
+
+#sync-panel #load-audio[data-state="ok"] .body {
+	height: 100px !important;
+}
+
+#sync-panel #load-audio[data-state="error"] .body {
+	height: 80px !important;
+}
+
+#sync-panel #load-audio[data-state="loading"] .body {
+	height: 80px !important;
+}
+
+#sync-panel #load-audio[data-state="ok"] #load-audio-source {
+	width: 90%;
+}
+
+#sync-panel #load-audio[data-state="ok"] #load-audio-ok {
+	width: 10%;
+}
+
+#sync-panel #load-audio[data-state="ok"] #load-audio-ok .glyphicon {
+	width: 100%;
+}
+
+#sync-panel #load-audio[data-state="ok"] #load-audio-preview {
+	width: 100%;
+	height: auto;
+	margin: 20px 0 0 0;
+}
+
+#sync-panel #load-audio[data-state="error"] .error {
+	display: block;
+}
+
+#sync-panel #load-audio[data-state="loading"] .loading {
+	display: block;
+}
+
+#sync-panel #load-audio[data-active] .body {
+	height: 50px;
+	width: 400px;
+	padding: 10px;
+	top: 35px;
+	box-sizing: border-box;
+}
+
+#sync-panel #load-audio .body {
+	width: 0;
+	height: 0;
+	background: #009688;
+	padding: 0;
+	position: absolute;
+	overflow: hidden;
+	top: 30px;
+	left: 0;
+	transition: all 0.3s ease-out;
+}
+
+#sync-panel #load-audio .body:hover {
+	cursor: default;
+}
+
+#sync-panel #load-audio-source {
+	width: 100%;
+	padding: 2px 10px;
+	font-family: Roboto;
+	line-height: 24px;
+	color: #777;
+	float: left;
+	transition: all 0.3s ease;
+	box-sizing: border-box;
+}
+
+#sync-panel #load-audio-ok {
+	width: 0;
+	height: 30px;
+	background: #2FC5B6;
+	overflow: hidden;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	transition: all 0.3s ease;
+}
+
+#sync-panel #load-audio-ok:hover {
+	cursor: pointer;
+}
+
+#sync-panel #load-audio-preview {
+	outline: none;
+	height: 0;
+	width: 0;
+}
+
+#sync-panel #load-audio .error {
+	display: none;
+}
+
+#sync-panel #load-audio .loading {
+	display: none;
+}
+
+#sync-panel #load-audio .body .state {
+	margin: 5px 0 0 0;
+	text-align: center;
+}
+
+
+/**
+ * Sync audio
+ */
+
+#sync-panel #sync-area {
+	width: 100%;
+	margin: 30px 0 0 0;
+}
+
+#sync-panel #sync-area:hover {
+	cursor: default;
+}
+
+#sync-panel #sync-area #sync-timeline {
+	width: 90%;
+	height: 50px;
+	margin: 0 4% 0 6%;
+}
+
+#sync-panel #sync-timeline .timeline .play-btn:before {
+	color: #333;
+}
+
+#sync-panel #sync-timeline .timeline .event .delete {
+	width: 20px;
+	height: 20px;
+	color: #1BC5A3;
+	font-size: 14px;
+	text-align: center;
+	display: none;
+	
+	position: absolute;
+	top: -20px;
+	left: -10px;
+}
+
+#sync-panel #sync-timeline .timeline .fill {
+}
+
+#sync-panel #sync-timeline .timeline .event .delete:hover {
+	color: #E84E40;
+}
+
+#sync-panel #sync-timeline .timeline .event .delete:before {
+	content: "\e020";
+}
+
+#sync-panel #sync-timeline .timeline .event[past] {
+	border-color: #DDD !important;
+}
+
+#sync-panel #sync-timeline .timeline .event[past]:after {
+	border-color: #DDD !important;
+}
+
+#sync-panel #sync-timeline .timeline .event[data-selected]:after {
+	background: #1BC5A3 !important;
+}
+
+#sync-panel #sync-timeline .timeline .event[data-selected] .delete {
+	display: block;
+}

@@ -1,0 +1,21 @@
+;;;==============
+;;;  JazzScheme
+;;;==============
+;;;
+;;;; Project
+;;;
+
+
+(data jazz.ide.data.project
+
+
+(import (jazz.editor.jazz))
+
+
+(form
+  (<Project>               name: hello-process
+    (<*>                                       tag-reference: {File :context "hello-process.project"})
+    (<Project-Directory>                       directory: {Directory :context "src"}
+      (<Project-Directory>                     directory: {Directory :context "src" "hello-process"}
+        (<Jazz-File>       name: process       source: {File :context "src" "hello-process" "process.jazz"})
+        (<Jazz-File>       name: run           source: {File :context "src" "hello-process" "run.jazz"}))))))

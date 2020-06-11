@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="StudentsStyle.xsl"?>
+
+<sample:students xmlns:sample="http://www.trans.com/students/1.0">
+  <sample:student>
+    <sample:name>Stamat</sample:name>
+    <sample:sex>Male</sample:sex>
+    <sample:birthdate>01.01.1988</sample:birthdate>
+    <sample:phone>359454864548</sample:phone>
+    <sample:email>basipicha@abv.bg</sample:email>
+    <sample:course>Mate Painting</sample:course>
+    <sample:specialty>Classic Animation</sample:specialty>
+    <sample:facultyN>99</sample:facultyN>
+  </sample:student>
+</sample:students>

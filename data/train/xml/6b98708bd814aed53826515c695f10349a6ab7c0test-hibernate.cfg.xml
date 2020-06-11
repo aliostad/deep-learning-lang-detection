@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+        <mapping resource="Mapping.hbm.xml"/>
+        <mapping resource="MedicationResponse.hbm.xml"/>
+        <mapping resource="WeightStandard.hbm.xml"/>
+        <mapping resource="Reminder.hbm.xml"/>
+        <mapping resource="OrderedObs.hbm.xml"/>
+        <mapping resource="ReminderResponse.hbm.xml"/>
+        <mapping resource="Summary.hbm.xml"/>
+        <mapping resource="Loggable.hbm.xml"/>
+        <mapping resource="DeviceLog.hbm.xml"/>
+        <mapping resource="Index.hbm.xml"/>
+	</session-factory>
+</hibernate-configuration>

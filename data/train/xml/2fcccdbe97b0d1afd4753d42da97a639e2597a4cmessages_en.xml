@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<catalogue xml:lang="en">
+    <!--doctypes-->
+
+
+    <!--event-->
+    <!--<message key="Event">Event</message>-->
+    <!--<message key="Event.title">Title</message>-->
+    <!--<message key="Event.type">Event Type</message>-->
+    <!--<message key="Event.url">URL</message>-->
+    <!--<message key="Event.date">Date</message>-->
+    <!--<message key="Event.time">Time</message>-->
+    <!--<message key="Event.image">Image</message>-->
+    <!---->
+    <!--<message key="Event.removeSelectedEvent">Remove Selected Event</message>-->
+    <!--<message key="Event.addEvent">Add Event</message>-->
+    <!--<message key="Event.save">Save Event</message>-->
+    <!---->
+    <!--<message key="Event.issue">Issue</message>-->
+    <!--<message key="Event.datetime">Datetime</message>-->
+    <!--<message key="Event.create">Create Event</message>-->
+    <!--<message key="Event.edit">Edit Event Data</message>-->
+
+    <!--<message key="Event.place">Place</message>-->
+    <!--<message key="event.idea">Idea</message>-->
+    <!--<message key="event.placephoto">Location photo</message>-->
+    <!--<message key="event.participment">Participments</message>-->
+    <!--<message key="event.org">Organiser</message>-->
+    <!--<message key="Event.description">Description</message>-->
+    <!--<message key="event.partnerlogos">Logos</message>-->
+    <!--<message key="event.partnertext">text</message>-->
+    <!--<message key="Event.photo">Photo</message>-->
+    <!--<message key="Event.video">Video</message>-->
+    <!--<message key="Event.audio">Audio</message>-->
+
+
+    <!--article-->
+    <message key="Article">Article</message>
+    <message key="Article.title">Title</message>
+    <message key="Article.text">Text</message>
+    <message key="Article.datetime">Datetime</message>
+    <message key="Article.create">Create Article</message>
+    <message key="Article.edit">Edit Article</message>
+    <message key="Article.save">Save Article</message>
+    <message key="Article.edit">Edit Article Data</message>
+
+    <!--work-->
+    <message key="Work">Work</message>
+    <message key="Work.title">Work Title</message>
+    <message key="Work.text">Text</message>
+    <message key="Work.datetime">Datetime</message>
+    <message key="Work.create">Create Work</message>
+    <message key="Work.author">Author</message>
+    <message key="Work.email">Author Email </message>
+
+    <message key="Work.edit">Edit Work</message>
+    <message key="Work.save">Save Work</message>
+    <message key="Work.edit">Edit Work Data</message>
+
+
+    <!--NewsAndEvents-->
+    <message key="NewsAndEvents">NewsAndEvents</message>
+    <message key="NewsAndEvents.title">Title</message>
+    <message key="NewsAndEvents.text">Text</message>
+    <message key="NewsAndEvents.datetime">Datetime</message>
+    <message key="NewsAndEvents.create">Create NewsAndEvents</message>
+    <message key="NewsAndEvents.edit">Edit NewsAndEvents</message>
+    <message key="NewsAndEvents.save">Save NewsAndEvents</message>
+    <message key="NewsAndEvents.edit">Edit NewsAndEvents Data</message>
+    <message key="NewsAndEvents.showAll">All News</message>
+
+    <!--SMI-->
+    <!--<message key="SMI">SMI</message>-->
+    <!--<message key="SMI.title">Title</message>-->
+    <!--<message key="SMI.datetime">Date (Time)</message>-->
+    <!--<message key="SMI.author">Author</message>-->
+    <!--<message key="SMI.url">URL</message>-->
+    <!--<message key="SMI.text">Text</message>-->
+    <!--<message key="SMI.save">Save SMI</message>-->
+    <!--<message key="SMI.edit">Edit SMI Data</message>-->
+
+    <!--Project-->
+    <!--<message key="Project">Project</message>-->
+    <!--<message key="Project.title">Title</message>-->
+    <!--<message key="Project.datetime">Date (Time)</message>-->
+    <!--<message key="Project.text">Text</message>-->
+    <!--<message key="Project.save">Save Project</message>-->
+    <!--<message key="Project.edit">Edit Project Data</message>-->
+
+    <!--Partner-->
+    <message key="Partner">Partner</message>
+    <message key="Partners">Partners</message>
+    <message key="Partner.name">Name</message>
+    <message key="Partner.logo">logo</message>
+    <message key="Partner.url">site URL</message>
+    <message key="Partner.heading">Category Heading</message>
+    <message key="Partner.save">Save Partner</message>
+    <message key="Partner.addPartner">Add Partner</message>
+    <message key="Partner.removeSelectedPartner">Remove Selected Partner</message>
+    <message key="Partner.addCategory">Add Category</message>
+    <message key="Partner.removeSelectedCategory">Remove Selected Category</message>
+    <message key="Partner.edit">Edit Partner Data</message>
+
+    <!--Movie-->
+    <!--<message key="Movie">Movie</message>-->
+    <!--<message key="Movie.edit">Edit Movie Data</message>-->
+
+    <!--HtmlCode-->
+    <message key="HtmlCode">HtmlCode</message>
+    <message key="HtmlCode.edit">Edit HtmlCode Data</message>
+
+    <!--ImageBanner-->
+    <message key="ImageBanner">ImageBanner</message>
+    <message key="ImageBanner.edit">Edit ImageBanner Data</message>
+
+    <!--Product-->
+    <message key="Product">Product</message>
+    <message key="Product.edit">Edit Product</message>
+    <message key="Product.description">Description</message>
+    <message key="Product.price">Price</message>
+    <message key="Product.unit">Unit</message>
+
+    <!--People-->
+    <!--<message key="People">People</message>-->
+    <!--<message key="People.edit">Edit People Data</message>-->
+    <!--<message key="People">People</message>-->
+    <!--<message key="People.edit">Edit People Data</message>-->
+    <!--<message key="People.name">Name</message>-->
+    <!--<message key="People.avatar">Avatar</message>-->
+    <!--<message key="People.email">Email</message>-->
+    <!--<message key="People.heading">Heading</message>-->
+    <!--<message key="People.save">Save</message>-->
+    <!--<message key="People.addPeople">Add</message>-->
+    <!--<message key="People.removeSelectedPeople">Remove</message>-->
+    <!--<message key="People.addCategory">Add Category</message>-->
+    <!--<message key="People.removeSelectedCategory">Remove Category</message>-->
+
+
+    <!--Calendar-->
+    <message key="Calendar.exhibition">Exhibition</message>
+    <message key="Calendar.forum">Forum</message>
+    <message key="Calendar.lection">Lection</message>
+    <message key="Calendar.excursion">Excursion</message>
+    <message key="Calendar.another">Another</message>
+    <message key="Calendar.installation">Installation</message>
+    <message key="Calendar.gallery">Gallery</message>
+
+    <!--Vacancy-->
+    <message key="Vacancy.post">Post</message>
+    <message key="Vacancy.department">Department</message>
+    <message key="Vacancy.number">Number</message>
+    <message key="Vacancy.responsibility">Responsibility</message>
+    <message key="Vacancy.requirements">Requirements</message>
+    <message key="Vacancy.job-place">Job-place</message>
+    <message key="Vacancy.contacts">Contacts</message>
+
+    <!--PressRelease-->
+    <!--<message key="PressRelease.title">Title</message>-->
+    <!--<message key="PressRelease.text">Text</message>-->
+    <!--<message key="PressRelease.contacts">Press-center contacts</message>-->
+    <!--<message key="PressRelease.information">information</message>-->
+    <!--<message key="PressRelease.showAll">Show all press-releases</message>-->
+
+    <!--Tariffs-->
+    <!--<message key="Tariffs">Tariffs</message>-->
+    <!--<message key="Tariffs.category">Category of consumers</message>-->
+    <!--<message key="Tariffs.hot-water">Hot water</message>-->
+    <!--<message key="Tariffs.selected-vapor">Selected Vapor</message>-->
+    <!--<message key="Tariffs.live-steam">live Steam</message>-->
+
+     <!--Rent-->
+    <!--<message key="Rent">Rent</message>-->
+    <!--<message key="Rent.category">Category</message>-->
+    <!--<message key="Rent.address">Address</message>-->
+    <!--<message key="Rent.object">Object</message>-->
+    <!--<message key="Rent.object-description">Description</message>-->
+    <!--<message key="Rent.building">Building, Room</message>-->
+    <!--<message key="Rent.area">Area(m2)</message>-->
+    <!--<message key="Rent.addRow">Add Row</message>-->
+    <!--<message key="Rent.removeSelected">Remove Selected</message>-->
+
+
+    <message key="Page.printVersion">Print Version</message>
+    <message key="download">Download</message>
+
+    <message key="Search.query">Search Query</message>
+    <message key="Search.record">Record</message>
+    <message key="Search.records">Records</message>
+    <message key="Search.records2">Records</message>
+    <message key="Search.record21">Records</message>
+
+
+    <message key="Breadcrumb.home">Home</message>
+
+</catalogue>

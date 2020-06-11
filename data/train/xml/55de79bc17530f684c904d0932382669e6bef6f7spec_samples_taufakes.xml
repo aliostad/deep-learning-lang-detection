@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<samples>
+
+    <sample sample_title="MC"                                            color="3"    id="1"       >MC8TeV</sample>
+    
+    <sample sample_title="t#bar{t}#rightarrowl#tau_{h}+X"                color="614"  id="1_1"     >MC8TeV_TTJetsMassiveBinDecay_muon_tau</sample>
+    <sample sample_title="#tau fakes"                                    color="822"  id="1_2"     >MC8TeV_tau_fakes</sample>
+    <sample sample_title="other"                                         color="824"  id="1_3"     >MC8TeV_other_bckg</sample>
+
+    <sample sample_title="lepton+jets"                                   color="822"  id="1_2_1"   >MC8TeV_TTJetsMassiveBinDecay_lepton_jets</sample>
+    <sample sample_title="W+jets"                                        color="kRed" id="1_2_2"   >MC8TeV_WJets</sample>
+
+    <sample sample_title="single t"                                      color="824"  id="1_3_1"   >MC8TeV_single_t</sample>
+    <sample sample_title="diboson"                                       color="592"  id="1_3_2"   >MC8TeV_diboson</sample>
+    <sample sample_title="DY+jets"                                       color="831"  id="1_3_3"   >MC8TeV_DYJetsToLL</sample>
+    <sample sample_title="QCD"                                           color="809"  id="1_3_4"   >MC8TeV_QCD</sample>
+    <sample sample_title="dilepon: #mu#mu"                               color="822"  id="1_3_5"   >MC8TeV_TTJetsMassiveBinDecay_dilepton_muon_muon</sample>
+    <sample sample_title="dilepton: e#mu"                                color="822"  id="1_3_6"   >MC8TeV_TTJetsMassiveBinDecay_dilepton_muon_electron</sample>
+    <sample sample_title="#tau + jets"                                   color="822"  id="1_3_7"   >MC8TeV_TTJetsMassiveBinDecay_tau_jets</sample>
+
+    <sample sample_title="#tau#tau"                                      color="822"  id="1_3_8"   >MC8TeV_TTJetsMassiveBinDecay_tau_tau</sample>
+    <sample sample_title="hadronic"                                      color="822"  id="1_3_9"   >MC8TeV_TTJetsMassiveBinDecay_hadronic</sample>
+
+</samples>
+ 

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<model>
+ <object id="4">
+  <PlayerConfiguration>
+   <Mapping command="Menu">
+    <Key number="1"/>
+   </Mapping>
+   <Mapping command="Select Nearest Enemy">
+    <JoystickButton number="3"/>
+   </Mapping>
+   <Mapping command="Select Nearest Target">
+    <JoystickButton number="1"/>
+   </Mapping>
+   <Mapping command="Select Next Target">
+    <Key number="22"/>
+   </Mapping>
+   <Mapping command="Select Previous Target">
+    <Key number="25"/>
+   </Mapping>
+   <Mapping command="fire">
+    <JoystickButton number="0"/>
+   </Mapping>
+   <Mapping command="Pitch">
+    <InvertedJoystickY/>
+   </Mapping>
+   <Mapping command="Roll">
+    <InvertedJoystickRudder/>
+   </Mapping>
+   <Mapping command="Throttle">
+    <InvertedJoystickThrottle/>
+   </Mapping>
+   <Mapping command="Yaw">
+    <JoystickX/>
+   </Mapping>
+  </PlayerConfiguration>
+ </object>
+</model>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tmap.sqlMap.messageSqlMap">
+
+<!-- 메세지 리스트 수 -->
+<select id="countMessageInfoList" parameterType="com.tmap.systemmanagement.vo.MessageInfoListVO" resultType="java.lang.Integer">
+	<![CDATA[
+	SELECT count(*) 
+	FROM message_info 
+	WHERE message_code LIKE CONCAT('%',#{messageCode},'%') 
+	  AND message_value LIKE CONCAT('%',#{messageCodeValue},'%') 
+	  AND message_state <> 'D'
+	]]>   
+</select>
+
+<!-- 메세지 리스트 -->
+<select id="messageInfoList" parameterType="com.tmap.systemmanagement.vo.MessageInfoListVO" resultType="com.tmap.systemmanagement.vo.MessageInfoListVO">
+	<![CDATA[
+	SELECT @RNUM := @RNUM + 1 AS rownum,
+		   message.message_id AS messageSeq,
+		   message.message_type AS messageType,
+		   message.message_code AS messageCode,
+		   message.message_value AS messageCodeValue,
+		   message.message_content AS messageContent,
+		   message.message_state AS useState
+	FROM message_info message, (select @RNUM:=0)R
+	WHERE message.message_code LIKE CONCAT('%',#{messageCode},'%') 
+	  AND message.message_value LIKE CONCAT('%',#{messageCodeValue},'%')
+	  AND message.message_state <> 'D'
+	ORDER BY message.message_sdate DESC
+	]]>    		   
+</select>
+
+<!-- 메세지 등록 -->
+<insert id="messageInfoInsert" parameterType="com.tmap.systemmanagement.vo.MessageInfoListVO">
+	INSERT 
+	INTO message_info (message_type,
+		   			   message_code,
+		   			   message_value,
+		   		  	   message_content,
+		   			   message_state,
+		   			   message_sdate)
+	VALUES (#{messageType}, 
+		    #{messageCode},
+		    #{messageCodeValue}, 
+		    #{messageContent}, 
+		    #{useState},
+		    CURRENT_TIMESTAMP)
+</insert>
+
+<!-- 메세지 상세정보 -->
+<select id="messageModifyInfo" parameterType="com.tmap.systemmanagement.vo.MessageInfoListVO" resultType="com.tmap.systemmanagement.vo.MessageInfoListVO">
+	SELECT message_id AS messageSeq,
+		   message_type AS messageType,
+		   message_code AS messageCode,
+		   message_value AS messageCodeValue,
+		   message_content AS messageContent,
+		   message_state AS useState 
+	FROM message_info 
+	WHERE message_id=#{messageSeq}
+</select>
+
+<!-- 메세지 수정-->
+<update id="messageInfoUpdate" parameterType="com.tmap.systemmanagement.vo.MessageInfoListVO">
+	UPDATE message_info 
+	SET message_type = #{messageType},
+		message_code = #{messageCode},
+		message_value = #{messageCodeValue},
+		message_content = #{messageContent},
+		message_state = #{useState}
+	WHERE message_id=#{messageSeq}
+</update>
+
+<!-- 메세지 삭제 -->
+<update id="messageInfoDelete" parameterType="com.tmap.sitemanagement.vo.AuthorityInfoListVO">
+	UPDATE message_info 
+	SET message_state = 'D' 
+	WHERE message_id=#{messageSeq}
+</update>
+
+</mapper>

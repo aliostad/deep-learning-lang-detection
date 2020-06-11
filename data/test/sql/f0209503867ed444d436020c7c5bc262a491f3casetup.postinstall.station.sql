@@ -1,0 +1,27 @@
+INSERT INTO `permissions` 
+(`access`,
+ `Station_Settings_View`,
+ `Station_Settings_Edit`,
+ `Callsign`,
+ `Playsheet_Create`,
+ `Playsheet_View`,
+ `Playsheet_Edit`,
+ `Advert_View`,
+ `Advert_Edit`,
+ `Advert_Create`,
+ `Audit_View`,
+ `Member_Create`,
+ `Member_View`,
+ `Member_Edit`,
+ `Program_Create`,
+ `Program_View`,
+ `Program_Edit`,
+ `Genre_View`,
+ `Genre_Create`,
+ `Genre_Edit`,
+ `Library_View`,
+ `Library_Edit`,
+ `Library_Create`) 
+VALUES 
+(?, '1', '1', ?, '1', '1', '1', '1', '1', '1', '1', '1',
+ '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1');

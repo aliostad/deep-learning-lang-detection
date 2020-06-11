@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<workflow>
+	<process id="main">
+		<service name="feeder-list" id="feeder1">
+			<parameter name="uri">file.txt</parameter>
+			<parameter name="domain_info">true</parameter>
+			<output process="process_url" />
+		</service>
+		<wait/>
+		
+	</process>
+	
+	<process id="process_url">
+		<service name="webclient" id="webclient1">
+			<output process="process_url_1" />
+		</service>
+	</process>
+	
+	<process id="process_url_1">
+		<service name="webclient" id="webclient1">
+		</service>
+	</process>
+	
+</workflow>

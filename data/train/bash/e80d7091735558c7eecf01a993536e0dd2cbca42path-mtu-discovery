@@ -1,0 +1,55 @@
+#!/bin/bash
+
+#. Linux...
+#. /sbin/ip link show
+
+EXIT=1
+if [ $# -eq 2 ]; then
+    if [ "$2" = "do" ] || [ "$2" = "dont" ]; then
+        EXIT=0
+        hostname=$1
+        fragment=$2
+
+        size=1
+
+        vector=1
+        oper='*'
+        chunk=${size}
+        while [ 0 ]; do
+            printf "%s..." ${size}
+            ping -q -D -s ${size} -c 1 $hostname > /dev/null
+            #ping -q -M ${fragment} -s ${size} -c 1 $hostname > /dev/null
+            if [ $? -ne 0 ]; then
+                printf "Failed\n"
+
+                if [ "${oper}" = '*' ]; then
+                    oper='/'
+                fi
+                if [ ${chunk} -eq 0 ]; then
+                    size=$((${size}-1))
+                fi
+                vector=-1
+            else
+                printf "Success\n"
+                vector=1
+                if [ ${chunk} -eq 0 ]; then
+                    break
+                fi
+            fi
+            if [ ${chunk} -ne 0 ]; then
+                size=$((${size}+${vector}*${chunk}${oper}2))
+                chunk=$((${chunk}${oper}2));
+            fi
+            sleep 0.1
+        done
+    fi
+fi
+
+if [ ${EXIT} -ne 0 ]; then
+    printf "Usage: %s <host> do|dont\n" $(basename $0)
+    printf "    do   : do set the DF (don't fragment) flag\n"
+    printf "    dont : do NOT set the DF (don't fragment) flag\n"
+    printf "    ...don't not think about it too much now.\n"
+    exit 1
+fi
+

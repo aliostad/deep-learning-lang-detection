@@ -1,0 +1,115 @@
+#book-review-notice {
+  /* Positioning */
+  position: relative;
+
+  /* Display & Box Model */
+  padding: 10px 38px 10px 10px;
+  border: 1px solid #f6af91;
+  border-bottom-width: 3px;
+
+  /* Visual */
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  color: #cd5b45;
+  background-color: #fad7c8;
+  border-radius: 5px;
+
+  /* Other */
+  overflow: auto;
+}
+
+#book-review-notice .logo {
+  /* Display & Box Model */
+  float: left;
+}
+
+#book-review-notice .content {
+  /* Display & Box Model */
+  margin-left: 70px;
+}
+
+#book-review-notice .content div {
+  /* Display & Box Model */
+  line-height: 1.6em;
+}
+
+#book-review-notice .thank-you {
+  /* Visual */
+  font-size: 1.2em;
+}
+
+/* Call to Action */
+#book-review-notice .cta {
+  /* Display & Box Model */
+  display: inline-block;
+  padding: 6px 12px;
+
+  /* Visual */
+  background: #cd5b45;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 15px;
+  line-height: 1.428571429;
+  white-space: nowrap;
+}
+
+/* Dismiss Button */
+#book-review-notice .dismiss {
+  /* Positioning */
+  position: absolute;
+  top: 0;
+  right: 1px;
+
+  /* Display & Box Model */
+  padding: 9px;
+  border: none;
+  margin: 0;
+
+  /* Visual */
+  background: 0 0;
+  color: #cd5b45;
+  cursor: pointer;
+}
+
+#book-review-notice .dismiss:before {
+  /* Positioning */
+  position: relative;
+  top: 0;
+  left: 0;
+
+  /* Display & Box Model */
+  width: 20px;
+  height: 20px;
+  display: block!important;
+
+  /* Visual */
+  line-height: 20px;
+  background: 0 0;
+  color: #cd5b45;
+  content: '\f153';
+  font: 400 16px/1 dashicons;
+  speak: none;
+  text-align: center;
+  -webkit-font-smoothing: antialiased!important;
+}
+
+#book-review-notice .dismiss,
+#book-review-notice .dismiss::before {
+  /* Visual */
+  color: #cd5b45;
+}
+
+#book-review-notice .dismiss:active:before,
+#book-review-notice .dismiss:focus:before,
+#book-review-notice .dismiss:hover:before {
+  /* Visual */
+  color: #c00;
+}
+
+#book-review-notice .dismiss:focus {
+  /* Visual */
+  color: #c00;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 1px #5b9dd9,0 0 2px 1px rgba(30,140,190,.8);
+  box-shadow: 0 0 0 1px #5b9dd9,0 0 2px 1px rgba(30,140,190,.8);
+}

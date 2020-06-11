@@ -1,0 +1,12 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <mapping class = "mike.businesscards.model.User"></mapping>
+        <mapping class = "mike.businesscards.model.Card"></mapping>
+        <mapping class = "mike.businesscards.model.Contact"></mapping>
+        <mapping class = "mike.businesscards.model.Jobs"></mapping>
+        <mapping class = "mike.businesscards.model.ElementCard"></mapping>
+    </session-factory>
+</hibernate-configuration>

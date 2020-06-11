@@ -1,0 +1,38 @@
+/**
+ * Define styles for slide show
+ */
+.slide-show {
+	position: relative;
+	height: 385px;
+	margin: 15px auto;
+	-moz-box-shadow: 0 0 15px #000;
+	-webkit-box-shadow: 0 0 15px #000;
+	box-shadow: 0 0 15px #000;
+	overflow: hidden;
+}
+.slide-show ul,
+.slide-show li {
+	margin: 0;
+	padding: 0;
+}
+.slide-show li {
+	width: 465px;
+	height: 385px;
+	float:left;
+	position:absolute;
+}
+.slide-show li.show {
+	z-index: 500;
+}
+.slide-show .caption {
+	z-index: 600; 
+	height: 100px; 
+	width: 465px;
+	position: absolute;
+	bottom: 0;
+}
+.slide-show .caption-content {
+	background: #000; 
+	color: #ffffff; 
+	padding: 10px 5px;
+}

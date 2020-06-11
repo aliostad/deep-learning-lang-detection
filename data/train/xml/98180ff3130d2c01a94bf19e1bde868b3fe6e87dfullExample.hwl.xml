@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<workflow>
+	<process id="main">
+		<service name="feeder">
+			<parameter name="path">file.txt</parameter>
+			<parameter name="limit">100</parameter>
+			<output process="process_url" />
+		</service>
+		<wait />
+		<service name="exporter">
+			<parameter name="format">PDF</parameter>
+			<parameter name="data">all</parameter>
+		</service>
+	</process>
+	<process id="process_url">
+		<conditional expr="this.depth > 9">
+			<true/>
+			<false>
+				<service name="crawler">
+					<parameter name="download">HTML</parameter>
+					<output process="process_url" />
+				</service>
+				<parallel>
+					<thread>
+						<service name="analyzer1" />
+					</thread>
+					<thread>
+						<service name="analyzer2" />
+					</thread>
+				</parallel>
+			</false>
+		</conditional>
+	</process>
+</workflow>

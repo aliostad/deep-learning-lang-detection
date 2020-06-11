@@ -1,0 +1,46 @@
+/*-------------------
+    Photo area
+--------------------*/
+
+#photos{
+    margin: 60px auto 100px;
+    overflow: hidden;
+    width: 880px;
+}
+
+#photos:hover a{
+    opacity:0.5;
+}
+
+#photos a,
+#loadMore{
+    background-position: center center;
+    background-color: rgba(14, 14, 14, 0.3);
+    float: left;
+    height: 110px;
+    margin: 1px 1px 0 0;
+    overflow: hidden;
+    width: 145px;
+
+    -moz-transition:0.25s;
+    -webkit-transition:0.25s;
+    -o-transition:0.25s;
+    transition:0.25s;
+}
+
+#photos a:hover{
+    opacity:1;
+}
+
+#loadMore{
+    cursor: pointer;
+    line-height: 110px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size:10px;
+}
+
+#loadMore:hover{
+    color:#fff;
+    text-shadow:0 0 4px #fff;
+}

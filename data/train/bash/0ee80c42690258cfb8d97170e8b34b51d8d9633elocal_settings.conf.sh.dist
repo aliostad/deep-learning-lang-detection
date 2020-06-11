@@ -1,0 +1,56 @@
+#!/bin/bash
+
+#common
+web_server_user="nginx"
+web_server_group="nginx"
+
+#folders
+srv_debug="/srv/Debug/"
+srv_prod="/srv/Release/"
+
+#better to use full path^ this path will be used in cd between repo folders
+	erzakaz[localfolder]="../erzakaz/"
+	erzakaz[enable]=true
+
+	erreestr[localfolder]="../erreestr/"
+	erreestr[enable]=true
+
+	ercommon[localfolder]="../ercommon/"
+	ercommon[enable]=true
+
+	erportal[localfolder]="../erportal/"
+	erportal[enable]=true
+
+	ersf[localfolder]="../ersf/"
+	ersf[enable]=true
+	
+	eradmin[enable]=true
+
+	composer="C:\projects\composer.phar"
+	
+#repos
+	default_repo=${ip_repo}
+
+	erzakaz[repo]=${erzakaz[default_repo]}
+	erreestr[repo]=${erreestr[default_repo]}
+	ercommon[repo]=${ercommon[default_repo]}
+	erportal[repo]=${erportal[default_repo]}
+	ersf[repo]=${ersf[default_repo]}
+#branches
+#	default_branch="develop"
+
+#	erzakaz[branch]=${default_branch}
+#	erreestr[branch]=${default_branch}
+#	ercommon[branch]=${default_branch}
+#	erportal[branch]=${default_branch}
+#	ersf[branch]=${default_branch}
+
+#scp
+scp_folder="/srv/scp_download"
+scp_archive="/srv/scp_archive"
+
+#composer
+composer="/srv/composer.phar"
+
+#backup
+bckp_folder="/srv/backup/"

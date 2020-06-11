@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+
+/*field dimensions*************************************************************/
+.field {width:40em;}
+.readWriteForm .readWriteColumn {width:40em;}
+.field .output {width:20em;}
+.field label {width:10em;}
+.field label {padding-bottom:1em;} /*use to determine height of lines*/
+.field .output {
+	padding-left:.45em; /*align with input*/
+	//padding-left:.3em; /*align with input ie*/
+	padding-top:.35em; /*align baselines*/
+}
+.field label {
+	padding-top:.5em; /*align baselines*/
+	//padding-top:.55em; /*align baselines ie*/
+}
+
+/*field mechanics. Shouldn't need changing*************************************/
+.field,
+.field .output,
+.field label {
+	display:inline-block; /*allow dimension setting*/
+	vertical-align:top;/*prevent stuff from moving around when height changes*/
+}
+
+/*field hide/show behavior*****************************************************/
+/*.input {display:none;}
+.editing .input {display:inline-block;}
+.editing .output {display:none;}*/

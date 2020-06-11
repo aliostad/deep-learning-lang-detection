@@ -1,0 +1,67 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.title {
+	margin: 0px;
+	border-top: 2px solid #545861;
+	border-bottom: 1px solid #545861;
+	padding: 10px;
+	text-align: center;
+}
+
+.info {
+	margin: 0px;
+	border-bottom: 1px solid #e3e3e3;
+	background-color: #f4f4f4;
+	padding: 10px;
+	text-align: right;
+}
+
+.contents {
+	padding: 20px;
+}
+
+.contents img{
+	display: block;
+}
+
+.contents p{
+	font-size: 14px;
+	font-family: 'Nanum Gothic', serif;
+	
+}
+
+.repleCount {
+	border: 1px solid #e3e3e3;
+	padding: 30px 0px 10px 20px;
+}
+
+.repleCount div{
+	margin-top: -20px;
+	padding-right: 30px;
+}
+
+.reple {
+	border: 1px solid #e3e3e3;
+	padding: 20px 20px 50px 20px;
+	background-color: #f4f4f4;
+}
+
+.reple .write {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #A6A4A6;
+}
+
+.reple .write textarea {
+	width: 85%;
+	height: 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	padding: 10px;
+}
+
+.reple .write .readonly{
+	background-color: #e3e3e3;
+}

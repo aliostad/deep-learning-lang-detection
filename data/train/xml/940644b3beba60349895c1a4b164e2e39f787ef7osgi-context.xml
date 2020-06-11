@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:osgi="http://www.springframework.org/schema/osgi"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+       http://www.springframework.org/schema/beans/spring-beans.xsd                      
+       http://www.springframework.org/schema/osgi  
+       http://www.springframework.org/schema/osgi/spring-osgi.xsd">
+
+	<!-- import the DataSource from OSGi -->
+	<osgi:reference id="dataSource" interface="javax.sql.DataSource" />
+
+	<osgi:service ref="baspJournalRepository"
+		interface="com.jije.boh.module.inventory.jpa.repository.BaspJournalRepository" />
+
+	<osgi:service ref="baspCheckRepository"
+		interface="com.jije.boh.module.inventory.jpa.repository.BaspCheckRepository" />
+
+	<osgi:service ref="baspCheckDetailRepository"
+		interface="com.jije.boh.module.inventory.jpa.repository.BaspCheckDetailRepository" />
+
+	<osgi:service ref="baspCheckPaymentRepository"
+		interface="com.jije.boh.module.inventory.jpa.repository.BaspCheckPaymentRepository" />
+
+	<osgi:service ref="baspSaleSummaryRepository"
+		interface="com.jije.boh.module.inventory.jpa.repository.BaspSaleSummaryRepository" />
+
+	<osgi:service ref="baspSaleProductSummaryRepository"
+		interface="com.jije.boh.module.inventory.jpa.repository.BaspSaleProductSummaryRepository" />
+
+	<osgi:service ref="baspPOSSummaryRepository"
+		interface="com.jije.boh.module.inventory.jpa.repository.BaspPOSSummaryRepository" />
+
+	<osgi:service ref="imspTransferApplyRepository"
+		interface="com.jije.boh.module.inventory.jpa.repository.ImspTransferApplyRepository" />
+		
+	<osgi:service ref="imspTransferRawDetailRepository"
+		interface="com.jije.boh.module.inventory.jpa.repository.ImspTransferRawDetailRepository" />
+		
+	<osgi:service ref="imspTransferSheetDetailRepository"
+		interface="com.jije.boh.module.inventory.jpa.repository.ImspTransferSheetDetailRepository" />
+		
+	<osgi:service ref="imspOverShortRepository"
+		interface="com.jije.boh.module.inventory.jpa.repository.ImspOverShortRepository" />
+		
+	<osgi:service ref="bascProductRepository"
+		interface="com.jije.boh.module.inventory.jpa.repository.BascProductRepository" />
+		
+	<osgi:service ref="bascRawRepository"
+		interface="com.jije.boh.module.inventory.jpa.repository.BascRawRepository" />
+		
+	<osgi:service ref="bascRecipeRepository"
+		interface="com.jije.boh.module.inventory.jpa.repository.BascRecipeRepository" />
+		
+	<osgi:service ref="imspCountDetailRepository"
+		interface="com.jije.boh.module.inventory.jpa.repository.ImspCountDetailRepository" />
+		
+	<osgi:service ref="imspCountRepository"
+		interface="com.jije.boh.module.inventory.jpa.repository.ImspCountRepository" />
+		
+	<osgi:service ref="bascRawRepository"
+		interface="com.jije.boh.module.inventory.jpa.repository.BascRawRepository" />
+		
+	<osgi:service ref="imspStockRepository"
+		interface="com.jije.boh.module.inventory.jpa.repository.ImspStockRepository" />
+</beans>

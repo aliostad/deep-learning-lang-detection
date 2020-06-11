@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+                
+		<mapping class="model.Desenvolvedor"/>
+		<mapping class="model.Estorias"/>
+		<mapping class="model.Gerente"/>
+		<mapping class="model.Pomodoro"/>
+		<mapping class="model.Projeto"/>
+		<mapping class="model.Reuniao"/>
+		<mapping class="model.Sprint"/>
+		<mapping class="model.Tarefas"/>	
+        <mapping class="model.Usuario"/>
+               
+    </session-factory>
+</hibernate-configuration>

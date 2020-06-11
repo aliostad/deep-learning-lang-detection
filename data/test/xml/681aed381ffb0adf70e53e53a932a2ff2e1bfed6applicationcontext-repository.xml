@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+	
+	<bean id="abstractRepository" abstract="true" class="com.jdroid.javaweb.hibernate.AbstractHibernateRepository">
+   		<property name="sessionFactory" ref="sessionFactory"/>
+   	</bean>
+   	
+   	<bean id="userRepository" class="com.mediafever.core.repository.UserHibernateRepository" parent="abstractRepository"/>
+   	<bean id="deviceRepository" class="com.jdroid.javaweb.push.DeviceHibernateRepository" parent="abstractRepository"/>
+   	<bean id="watchableRepository" class="com.mediafever.core.repository.WatchableHibernateRepository" parent="abstractRepository"/>
+   	<bean id="mediaSessionRepository" class="com.mediafever.core.repository.MediaSessionHibernateRepository" parent="abstractRepository"/>
+   	<bean id="userWatchableRepository" class="com.mediafever.core.repository.UserWatchableHibernateRepository" parent="abstractRepository"/>
+   	<bean id="peopleRepository" class="com.mediafever.core.repository.PeopleHibernateRepository" parent="abstractRepository"/>
+   	<bean id="friendRequestRepository" class="com.mediafever.core.repository.FriendRequestHibernateRepository" parent="abstractRepository"/>
+   	<bean id="fileEntityRepository" class="com.jdroid.javaweb.repository.FileEntityHibernateRepository" parent="abstractRepository"/>
+   	<bean id="settingsRepository" class="com.mediafever.core.repository.SettingsHibernateRepository" parent="abstractRepository"/>
+
+</beans>

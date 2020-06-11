@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+    <TextView android:id="@+id/text"
+              android:gravity="right"
+              android:textSize="40sp"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"/>
+    <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="*">
+        <TableRow>
+            <Button android:id="@+id/btnClear" android:text="C" android:onClick="clear"/>
+            <Button android:id="@+id/btnRemove" android:text="&lt;-" android:onClick="remove"/>
+        </TableRow>
+        <TableRow>
+            <Button android:id="@+id/btn7" android:text="7" android:onClick="appendDigit"/>
+            <Button android:id="@+id/btn8" android:text="8" android:onClick="appendDigit"/>
+            <Button android:id="@+id/btn9" android:text="9" android:onClick="appendDigit"/>
+            <Button android:id="@+id/btnDivide" android:text="/" android:onClick="appendOperator"/>
+        </TableRow>
+        <TableRow>
+            <Button android:id="@+id/btn4" android:text="4" android:onClick="appendDigit"/>
+            <Button android:id="@+id/btn5" android:text="5" android:onClick="appendDigit"/>
+            <Button android:id="@+id/btn6" android:text="6" android:onClick="appendDigit"/>
+            <Button android:id="@+id/btnMultiply" android:text="*" android:onClick="appendOperator"/>
+        </TableRow>
+        <TableRow>
+            <Button android:id="@+id/btn1" android:text="1" android:onClick="appendDigit"/>
+            <Button android:id="@+id/btn2" android:text="2" android:onClick="appendDigit"/>
+            <Button android:id="@+id/btn3" android:text="3" android:onClick="appendDigit"/>
+            <Button android:id="@+id/btnSubtract" android:text="-" android:onClick="appendOperator"/>
+        </TableRow>
+        <TableRow>
+            <Button android:id="@+id/btnRadix" android:text="." android:onClick="appendRadix"/>
+            <Button android:id="@+id/btn0" android:text="0" android:onClick="appendDigit"/>
+            <Button android:id="@+id/btnEquals" android:text="=" android:onClick="calculate"/>
+            <Button android:id="@+id/btnAdd" android:text="+" android:onClick="appendOperator"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

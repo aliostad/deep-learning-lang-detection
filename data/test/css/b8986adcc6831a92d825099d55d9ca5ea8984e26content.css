@@ -1,0 +1,28 @@
+.mceItemMediaService {
+	border: 1px dotted #CC0000;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #FFFFCC;
+	background-image: url(../img/mediaservice.gif);
+}
+
+.mceItemMediaService_vimeo {
+	background-image: url(../img/vimeo.gif);
+}
+
+.mceItemMediaService_youtube {
+	background-image: url(../img/youtube.gif);
+}
+
+.mceItemMediaService_googlevideo {
+	background-image: url(../img/googlevideo.gif);
+}
+
+.mceItemMediaService_megavideo {
+	background-image: url(../img/megavideo.gif);
+}
+
+.mceItemMediaService_metacafe {
+	background-image: url(../img/metacafe.gif);
+}
+

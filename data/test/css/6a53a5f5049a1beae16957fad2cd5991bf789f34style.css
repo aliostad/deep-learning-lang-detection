@@ -1,0 +1,106 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #f8f8ff;
+  margin: 0;
+}
+article {
+  padding: 50px;
+}
+a {
+  color: #00b7ff;
+}
+.addCommentForm {
+  width: 300px;
+  padding-bottom: 50px;
+}
+input[type =text] {
+  width: 200px;
+  margin-left: 38px;
+}
+textarea {
+  width: 200px;
+  margin-left: 10px;
+}
+input[type =button],
+input[type =submit],
+a#api {
+  clear: both;
+  margin-left: 10px;
+  display: inline-block;
+}
+span {
+  display: block;
+}
+.label {
+  text-align: right !important;
+  display: block;
+  float: left;
+}
+footer {
+  position: fixed;
+  bottom: 0%;
+  background: #000;
+  color: #fff;
+  width: 98%;
+  padding: 1%;
+}
+#entries {
+  margin-bottom: 4%;
+}
+#entries .entry {
+  margin: 2%;
+}
+.api h1 {
+  background: #d5d5d5;
+  padding: 2%;
+  border: 1px solid #51b6ae;
+}
+.api .data {
+  width: 50%;
+  margin: auto auto;
+  padding: 8px;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  margin-bottom: 5%;
+}
+.api .bracket {
+  color: #93a1a1;
+  padding: 2%;
+}
+.api pre {
+  font-size: 13px;
+  line-height: 20px;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+.api pre input,
+.api pre textarea {
+  border: none;
+  width: 20%;
+  margin-right: 1%;
+  border: 1px solid #51b6ae;
+}
+.api pre textarea {
+  width: 90%;
+  height: 100px;
+}
+.api .entry {
+  margin-left: 5%;
+}
+.api .entry .pln {
+  color: #d14;
+  display: inline-block;
+}
+.api .entry .str {
+  color: #000;
+  font-wieght: 600;
+  display: inline-block;
+}
+.api .options {
+  width: 50%;
+  margin: auto auto;
+  padding: 12px;
+  margin-bottom: 100px;
+}
+.api .options input {
+  font-size: 20px;
+}

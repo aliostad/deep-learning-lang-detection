@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profilesXml xmlns="http://maven.apache.org/PROFILES/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://maven.apache.org/PROFILES/1.0.0 http://maven.apache.org/xsd/profiles-1.0.0.xsd">
+    <profiles>
+        <profile>
+            <id>build-adaptor-only</id>
+            <repositories>
+                <repository>
+                    <id>in2p3-maven2-repository-libraries</id>
+                    <url>http://grid.in2p3.fr/maven2/</url>
+                </repository>
+                <repository>
+                    <id>cctoolsafs-maven2-repository-plugins</id>
+                    <url>http://cctoolsafs.in2p3.fr/maven2/</url>
+                </repository>
+                <repository>
+                	<id>cogkit-maven-repository</id>
+                    <url>http://www.cogkit.org/maven/repository/</url>
+                </repository>
+                <repository>
+                	<id>apache-maven-repository</id>
+                    <url>http://mvnrepository.com/artifact/</url>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>in2p3-maven2-repository-plugins</id>
+                    <url>http://grid.in2p3.fr/maven2/</url>
+                </pluginRepository>
+                <pluginRepository>
+                    <id>cctoolsafs-maven2-repository-plugins</id>
+                    <url>http://cctoolsafs.in2p3.fr/maven2/</url>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
+</profilesXml>

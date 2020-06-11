@@ -1,0 +1,291 @@
+﻿/*Start: Help Content Layout*/
+.main {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row;
+   flex-flow: row;
+   height: 100%;
+    top: 70px;
+}
+
+.main .apiNav {
+   background: #dddddd;
+   /*border-right: 1px solid #dddddd;*/
+   -webkit-flex: 1 6 11%;
+           flex: 1 6 11%;
+   -webkit-order: 1;
+           order: 1;
+}
+
+.main .apiList {
+   padding: 5px;
+   background: #F9F9F9;
+   -webkit-flex: 3 1 30%;
+           flex: 3 1 30%;
+   -webkit-order: 2;
+           order: 2;
+    overflow-y: scroll;
+}
+
+.main .apiDetails {
+   padding: 5px;
+    background: #4e575e;/*#54585a;*/
+   -webkit-flex: 1 6 50%;
+           flex: 1 6 50%;
+   -webkit-order: 3;
+           order: 3;
+    overflow-y: scroll;
+}
+
+/* Too narrow to support three columns */
+  @media all and (max-width: 640px) {
+  
+   .main {
+    -webkit-flex-flow: column;
+            flex-direction: column;
+   }
+
+   .main .apiNav, .main .apiList, .main .apiDetails {
+    /* Return them to document order */
+    -webkit-order: 0;
+            order: 0;
+   }
+  
+   .main .apiNav, .main .apiList, .main .apiDetails {
+    min-height: 50px;
+    max-height: 50px;
+   }
+  }
+/*End: Help Content Layout*/
+
+/*Start: Left Navigation*/
+.apiNav ul {
+    line-height: 26px;
+}
+
+.apiNav ul li {
+	width: 100%;
+	clear:left; /* clear contents of inner span, which will be floated left */
+	overflow: hidden; /* clear contents of inner span, which will be floated left */
+    padding-left: 2px;
+    font-size: 14px;
+}
+
+.apiNav ul li:first-child {
+    margin: 0px 0px 5px 0px;
+    font-size: 18px;
+	background: #0096d6;
+	border-left: 10px solid #ffa400;
+    width: 95%;
+}
+
+.apiNav ul li span{
+	display: block;
+	float: left; /* cause width of each span to take up only as much space as needed */
+	min-width: 0px; /* animated property. Explicit min-width defined so animation works. */
+	margin-bottom: 5px;
+	padding: 8px;
+    color: #054c70;
+}
+
+.apiNav ul li:hover span{
+	background: #ffa400;
+	border-left: 8px solid #0096d6;
+    min-width: 80%; /* animated property. Set to desired final length of background */
+	-webkit-box-shadow: 0 0 5px #54585a;
+	-moz-box-shadow: 0 0 5px #54585a;
+	box-shadow: 0 0 5px #54585a;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+    color: #FFFFFF;
+}
+/*End: Left Navigation*/
+
+/*Start: API List*/
+/*Start: HTTP Method Styling*/
+.apiList .help-page-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 0px 0px 20px 0px;
+    /*border-top: 2px solid #D4D4D4;*/
+    color: #000000;
+    font-size: 14px;
+}
+
+.apiList .help-page-table th {
+    text-align: left;
+    font-weight: bold;
+    /*border-bottom: 2px solid #D4D4D4;*/
+    padding: 8px 6px 8px 6px;
+}
+
+.apiList .help-page-table td {
+    /*border-bottom: 2px solid #D4D4D4;*/
+    padding: 15px 8px 15px 8px;
+    vertical-align: top;
+}
+
+.apiList .help-page-table pre, .apiList .help-page-table p {
+    margin: 0px;
+    padding: 0px;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+.apiList .httpMethod {
+    border-radius: 20px;
+    -moz-border-radius: 20px; 
+    -webkit-border-radius: 20px; 
+    padding: 3px 10px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+}
+
+.apiList .httpMethod.get {
+    background-color: #4cc6f3;
+    margin-right: 21px;
+}
+
+.apiList .httpMethod.post {
+    background: #69a842;
+    margin-right: 13px;
+}
+
+.apiList .httpMethod.delete {
+    background: #c82027;
+    margin-right: 3px;
+}
+
+.apiList .httpMethod.patch {
+    background: #e35639;
+    margin-right: 13px;
+}
+
+.apiList .httpMethod.put {
+    background: #ffa400;
+    margin-right: 20px;
+}
+.apiList .apiPath {
+    font-size: 13px;
+    
+}
+/*End: HTTP Method Styling*/
+/*End: API List*/
+
+/*Start: API Details*/
+.apiDetails h2 {
+    font-size: 18px;
+    color: inherit;
+    padding-bottom: 2px;
+    border-bottom: 2px #4cc6f3 ridge;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.apiDetails h3 {
+    font-size: 16px;
+    font-weight: normal;
+    color: inherit;
+    padding-bottom: 2px;
+    border-bottom: 1px #4cc6f3 solid;
+    margin-bottom: 10px;
+}
+
+.apiDetails h4 {
+    font-size: 12px;
+    font-weight: normal;
+    padding-bottom: 1px;
+    color: inherit;
+    margin-bottom: 5px;
+}
+
+.apiDetails table {
+    color: inherit;
+    font-size: 12px;
+    /*border: 1px solid #B8B9BB;*/
+}
+
+.apiDetails table th {
+    text-align: left;
+    padding: 5px 6px 5px 6px;
+}
+
+.apiDetails table td{
+    color: inherit;
+    font-size: 12px;
+    padding-bottom: 0;
+    padding: 5px 10px 5px 10px;
+    vertical-align: top;
+}
+.apiDetails p {
+    padding: 5px 0 10px 0;
+    font-size: 12px;
+}
+/*End: API Details*/
+
+pre.wrapped {
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: pre-wrap;
+    color: #f8e815;
+}
+
+.warning-message-container {
+    margin-top: 20px;
+    padding: 0 10px;
+    color: #e35639;/*C13100*/
+    background: #E8D0A9; 
+    border: 1px solid #B7AFA3;
+    font-size: 12px;
+}
+
+.sample-header {
+    /*border: 2px solid #D4D4D4;*/
+    background: #f9f9f9;
+    color: #54585a;
+    padding: 3px 8px;
+    border-bottom: none;
+    display: inline-block;
+    margin: 5px 0px 0px 0px;
+    font-size: 12px;
+}
+
+.sample-content {
+    display: block;
+    border-width: 0;
+    padding: 15px 20px;
+    border: 1px solid #f9f9f9;
+    margin: 0px 0px 5px 0px;
+    font-size: 12px;
+}
+
+.api-name {
+    width: 10%;
+}
+
+.api-path {
+    width: 45%;
+}
+
+.api-documentation {
+    width: 45%;
+}
+
+.parameter-name {
+    width: 20%;
+}
+
+.parameter-documentation {
+    width: 50%;
+}
+
+.parameter-source {
+    width: 30%;
+}
+
+

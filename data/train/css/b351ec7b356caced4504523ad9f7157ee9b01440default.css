@@ -1,0 +1,14 @@
+/**
+ * 模块：tshop-pbsm-other-customer-service 
+ * 皮肤（主题）: 默认
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-pbsm-other-customer-service"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+
+.tshop-pbsm-other-customer-service {}
+.tshop-pbsm-other-customer-service .skin-box-hd{background: #e2838d; border: none; padding: 4px 10px 3px;}
+.tshop-pbsm-other-customer-service .skin-box-hd h3 span{color: #fefef2;}
+ 

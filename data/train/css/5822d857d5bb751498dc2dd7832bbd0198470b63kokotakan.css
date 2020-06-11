@@ -1,0 +1,48 @@
+#load{
+	margin: 0; top: 0;
+	position: fixed;
+	width: 100%; height:100%; overflow: hidden;
+	background-image: url('../images/load.png');
+	z-index: 1;
+}
+#kotak0{
+	position: fixed; top: 70px; left: 300px;
+	width: 400px; height: 150px;
+	border: solid #013f3e 1px;
+	background-color: #4d7978;
+	text-align: center;
+	z-index: 1;
+}
+#kotak1{
+	width: 160px; height: 110px;
+	margin-left: 40px;
+	text-align: left; font-size: 12pt;
+}
+#kotak2{
+	position: relative; left:210px; top:-112px; width:180px; height:110px; text-align:right;
+}
+
+/* tambahan */
+#load{
+	margin: 0; top: 0;
+	position: fixed;
+	width: 100%; height:100%; overflow: hidden;
+	background-image: url('../images/load.png');
+	z-index: 1;
+}
+#kotak0{
+	position: fixed; top: 70px; left: 300px;
+	width: 400px; height: 200px;
+	border: solid #013f3e 1px;
+	background-color: #4d7978;
+	text-align: center;
+	z-index: 1;
+}
+#kotak1{
+	width: 160px; height: 110px;
+	margin-left: 40px;
+	text-align: left; font-size: 12pt;
+}
+#kotak2{
+	position: relative; left:210px; top:-112px; width:180px; height:110px; text-align:right;
+}

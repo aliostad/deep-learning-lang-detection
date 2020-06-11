@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-16" ?>
+<messages>
+
+    <message id="app-title">
+        Akkords Calculator
+    </message>
+    
+    <message id="hdr-greeting">
+        <h1>Akkords calculator</h1>
+    </message>
+    
+    <message id="note_picker-caption">
+        Note :
+    </message>
+    
+    <message id="alteration-signs">
+        Alteration signs
+    </message>
+
+    <message id="alt-none">
+      None
+    </message>
+
+    <message id="alt-dies">
+      Dies  #
+    </message>
+
+    <message id="alt-bemol">
+      Bemol  ♭
+    </message>
+
+    <message id="simple-chords">
+      Simple chords (three sounds)
+    </message>
+
+    <message id="sept-chords">
+      Sept chords
+    </message>
+
+    <message id="btnLaunch-caption">
+      Calculate chord
+    </message>
+
+</messages>

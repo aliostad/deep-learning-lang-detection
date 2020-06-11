@@ -1,0 +1,30 @@
+.service {
+    color: #010101;
+    padding: 40px 10px;
+}
+
+    .service__item {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 93px;
+        position: relative;
+        width: 210px;
+    }
+
+        .service__item__title {
+            font-size: 17px;
+            line-height: 19px;
+            text-transform: uppercase;
+        }
+
+        .service__item__text {
+            font-size: 13px;
+            line-height: 15px;
+            margin-top: 10px;
+        }
+
+        .service__item__icon {
+            position: absolute;
+            top: -5px;
+            left: -74px;
+        }

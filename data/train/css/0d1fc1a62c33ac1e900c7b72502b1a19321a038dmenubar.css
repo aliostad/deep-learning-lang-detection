@@ -1,0 +1,27 @@
+/*menubar-list-service*/
+.service-menubar{
+	width:996px;height:31px;
+	margin:-3px auto;background:#404040;overflow:hidden;
+    float:left;_background:#404040;_border:none;
+}
+
+.service-menubar ul{
+	float:right;
+}
+.service-menubar ul li{
+	height:31px;float:left;_width:61px;
+}
+
+.service-menubar ul li a{
+	color:#fff;font-size:14px;line-height:31px;padding:0px 12px;
+display:block;height:31px;_line-height:35px;_padding:0px 15px;
+}
+.service-menubar ul li a:hover{
+	background:#6A6A6A;
+}
+.green-bg{
+	background:#46BD00;font-weight:bold;
+}
+.service-menubar ul li .green-bg:hover{
+	background:#46BD00;
+}

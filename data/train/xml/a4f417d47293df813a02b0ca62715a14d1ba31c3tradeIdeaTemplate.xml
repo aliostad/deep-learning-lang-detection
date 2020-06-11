@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<workbook>
+	<worksheet name="Sheet1">
+		<section startRow="0" endRow="0"/>
+		 <loop startRow="1" endRow="1" items="result" var="tradeIdea" varType="com.sohang.trade.model.SpringTradeIdea">
+		 	 <section startRow="1" endRow="1">
+               <mapping row="1" col="0">tradeIdea.ticker</mapping>               
+               <mapping row="1" col="1">tradeIdea.tradePrice</mapping>
+               <mapping row="1" col="2">tradeIdea.stopPrice</mapping>               
+               <mapping row="1" col="3">tradeIdea.actualQty</mapping>
+               <mapping row="1" col="4">tradeIdea.lowerBand</mapping>
+               <mapping row="1" col="5">tradeIdea.baseBand</mapping>
+               <!-- <mapping row="1" col="6">tradeIdea.currentPrice</mapping>  -->                              
+               <mapping row="1" col="7">tradeIdea.targetPrice</mapping>               
+               <mapping row="1" col="8">tradeIdea.sector</mapping>
+               <mapping row="1" col="9">tradeIdea.tradeSetupIdea</mapping>
+               <mapping row="1" col="10">tradeIdea.watchlistSource</mapping>
+               <mapping row="1" col="11">tradeIdea.technicalPattern</mapping>
+               <!-- <mapping row="1" col="12">tradeIdea.watchDate</mapping>  -->               
+             </section>
+             <loopbreakcondition>
+               <rowcheck offset="0">
+               <cellcheck offset="0"/>
+               </rowcheck>
+             </loopbreakcondition>
+		 </loop>
+	</worksheet>
+</workbook>

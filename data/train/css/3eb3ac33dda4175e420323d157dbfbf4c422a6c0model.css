@@ -1,0 +1,38 @@
+/* 
+    Document   : model
+    Created on : 7.6.2013, 21:02:
+    Author     : златко
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+body
+{
+    cursor:default;
+}
+
+
+#model_holder,#model_holder_selected_part
+{
+    width: 457px;
+    height: 576px;
+    position: absolute;
+    left: 0px;
+    top:0px;
+    z-index: 8000;
+    /*border:solid 1px #0000ff;*/
+    /*-webkit-filter: blur(12);*/
+}
+#model_holder_selected_part
+{
+    z-index: 8001;
+}
+
+.cs-model
+{
+    overflow: hidden;
+}
+

@@ -1,0 +1,37 @@
+#message_catalog ul {
+  display: none;
+}
+
+#message_detail .langhead {
+  background-color: #CCCCFF;
+  font-weight: bold;
+  padding: 3px 3px 2px;
+  border-top: 1px solid #00f;
+  margin-top: 3px;
+}
+
+#message_detail .default,
+#message_detail .definition {
+  padding-left: 10px;
+}
+
+#message_detail .label { 
+  font-weight: bold;
+}
+
+#message_detail .multiline .content {
+  display: block;
+  white-space: pre-wrap;
+}
+
+#message_detail input.bse_ipe_edit {
+  width: 50%;
+}
+#message_detail textarea.bse_ipe_edit {
+  width: 50%;
+  display: block;
+}
+
+#message_detail .bse_ipe_over {
+  background-color: #CCC;
+}

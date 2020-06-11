@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MAPPINGS NAME="SALE">
+	<MAPPING ID="1" COLUMN="TaskID" SECTION="1"/>
+	<MAPPING ID="2" COLUMN="TaskName" SECTION="2"/>
+	<MAPPING ID="3" COLUMN="TaskDate" SECTION="3"/>
+	<MAPPING ID="4" COLUMN="TaskGroup" SECTION="4"/>
+	<MAPPING ID="5" COLUMN="TaskType" SECTION="5"/>
+	<MAPPING ID="6" COLUMN="TaskSTatus" SECTION="6"/>
+	<MAPPING ID="7" COLUMN="MessengerRef" SECTION="7"/>
+	<MAPPING ID="8" COLUMN="CustomerRef" SECTION="8"/>
+	<MAPPING ID="9" COLUMN="SaleProductRef" SECTION="9"/>
+	<MAPPING ID="10" COLUMN="ProductRef" SECTION="10"/>
+	<MAPPING ID="11" COLUMN="TotalCost" SECTION="11"/>
+	<MAPPING ID="12" COLUMN="TatalPaid" SECTION="12"/>
+	<MAPPING ID="13" COLUMN="Signature" SECTION="13"/>
+	<MAPPING ID="14" COLUMN="LocationRef" SECTION="14"/>
+	<MAPPING ID="15" COLUMN="LastUpdate" SECTION="15"/>
+</MAPPINGS>

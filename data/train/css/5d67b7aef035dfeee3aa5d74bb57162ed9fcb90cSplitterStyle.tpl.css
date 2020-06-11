@@ -1,0 +1,124 @@
+/*
+ * Copyright 2012 Amadeus s.a.s.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+{CSSTemplate {
+    $classpath : "aria.widgets.container.SplitterStyle",
+    $extends : "aria.widgets.WidgetStyle"
+}}
+    {var skinnableClassName="Splitter"/}
+
+    {macro writeSkinClass(info)}
+        {var skinClassName=info.skinClassName/}
+        {var skinClass=info.skinClass/}
+
+/* Splitter classes */
+
+.xSplitter_${skinClassName}_sHandleH {
+  position:absolute;
+  height:${skinClass.separatorHeight}px;
+  cursor: n-resize;
+  display:block;
+  z-index: 5;
+  {call writeBorders(skinClass.separatorBorder)/}
+  {call background(skinClass.handleBackgroundColor,skinClass.handleSpriteURLh,"no-repeat center top")/}
+}
+
+.xSplitter_${skinClassName}_sHandleV {
+  position:absolute;
+  width:${skinClass.separatorHeight}px;
+  cursor: e-resize;
+  display:block;
+  z-index: 5;
+  {call writeBorders(skinClass.separatorBorder)/}
+  {call background(skinClass.handleBackgroundColor,skinClass.handleSpriteURLv,"no-repeat right center")/}
+}
+
+.xSplitter_${skinClassName}_sContainer{
+  position:relative;
+  display:inline-block;
+  {if skinClass.borderTopLeftRadius || skinClass.borderTopRightRadius || skinClass.borderBottomLeftRadius || skinClass.borderBottomRightRadius}
+    {call writeBorderRadius(skinClass)/}
+  {/if}
+  background-color: ${skinClass.backgroundColor};
+  z-index: 1;
+}
+
+.xSplitter_${skinClassName}_sConstrained{
+  width:100%;
+  height:100%;
+  display:inline-block;
+  position:absolute;
+}
+
+.xSplitter_${skinClassName}_sSplitBarProxyH{
+  position:absolute;
+  height:${skinClass.separatorHeight}px;
+  cursor: n-resize;
+  display:block;
+  z-index:9999;
+  width:100%;
+  {call writeBorders(skinClass.separatorBorder)/}
+  {call background(skinClass.proxyBackgroundColor,skinClass.proxySpriteURLh,"no-repeat center top")/}
+}
+
+.xSplitter_${skinClassName}_sSplitBarProxyV{
+  position:absolute;
+  width:${skinClass.separatorHeight}px;
+  cursor: e-resize;
+  display:block;
+  z-index:9999;
+  height:100%;
+  {call writeBorders(skinClass.separatorBorder)/}
+  {call background(skinClass.proxyBackgroundColor,skinClass.proxySpriteURLv,"no-repeat right center")/}
+}
+
+.xSplitter_${skinClassName}_sBdr{
+    {if skinClass.borderWidth || skinClass.borderWidth == 0}
+      border:${skinClass.borderWidth}px solid ${skinClass.borderColor} ;
+    {else/}
+      {var borderObj = {
+        topWidth : skinClass.borderTopWidth,
+        bottomWidth : skinClass.borderBottomWidth,
+        leftWidth : skinClass.borderLeftWidth,
+        rightWidth : skinClass.borderRightWidth,
+        color : skinClass.borderColor,
+        style : "solid"
+      } /}
+
+      {call writeBorders(borderObj)/}
+    {/if}
+}
+
+.xSplitter_${skinClassName}_sMacro {
+  position:absolute;
+  overflow: auto;
+  display:block;
+  z-index: 1;
+  {call writeBorders(skinClass.panelBorder)/}
+}
+
+    {/macro}
+
+  {macro writeBorders(borderObj, element)}
+    {if borderObj.style && borderObj.color}
+      border-top-width:${borderObj.topWidth|default:0}px;
+      border-bottom-width:${borderObj.bottomWidth|default:0}px;
+      border-left-width:${borderObj.leftWidth|default:0}px;
+      border-right-width:${borderObj.rightWidth|default:0}px;
+      border-style:${borderObj.style};
+      border-color:${borderObj.color};
+    {/if}
+  {/macro}
+
+{/CSSTemplate}

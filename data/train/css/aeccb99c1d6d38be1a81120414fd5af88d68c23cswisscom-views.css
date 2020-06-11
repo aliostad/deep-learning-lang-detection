@@ -1,0 +1,43 @@
+
+/* Swisscom API Overview (Term) */
+
+
+.view-id-api_overview .table {
+  border: none;
+  color: #484848;
+  font-size: 13px;
+}
+
+.view-id-api_overview .views-field-name {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 5px;
+  padding-left: 5px;
+
+}
+
+.view-id-api_overview .views-field-field-api-summary {
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+
+
+.view-id-api_overview .label {
+  vertical-align: text-top;
+}
+
+.label-Public {
+  background-color: #468847;
+}
+
+.label-Partner {
+  background-color: #551166;
+}
+
+.label-Internal {
+  background-color: #B94A48;
+}
+
+.label-Upcoming {
+  background-color: #18589D;
+}

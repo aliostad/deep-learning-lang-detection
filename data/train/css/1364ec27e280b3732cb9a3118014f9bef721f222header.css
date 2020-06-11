@@ -1,0 +1,446 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 5, 2014, 11:22:36 AM
+    Author     : Quyenbk1213
+*/
+
+@font-face{
+    font-family: FontAwesome;
+    src: url(../../css/font-awesome-4.2.0/fonts/fontawesome-webfont.woff),
+        url(../../css/font-awesome-4.2.0/fonts/FontAwesome.otf),
+        url(../../css/font-awesome-4.2.0/fonts/fontawesome-webfont.eot),
+        url(../../css/font-awesome-4.2.0/fonts/fontawesome-webfont),
+        url(../../css/font-awesome-4.2.0/fonts/fontawesome-webfont.ttf)
+}
+#wrap{
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid;
+    height: 1000px;
+}
+#header{
+    height: 60px;
+    background: #FFF;
+    border: 1px solid;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 2px 1px 5px #888888;
+}
+#header-wrap{
+    width: 90%;
+    margin: 0px auto
+}
+#header ul,li, h3{
+    margin: 0px;
+    padding: 0px
+}            
+#header-left{
+    float: left;
+    width: 490px;
+    height: 60px;
+    background: rgb(66, 204, 59);
+}
+#header-left ul{
+    list-style: none;
+}
+#header-left > ul > li{
+    float: left;
+    display: block;
+    height: 60px;
+    position: relative;
+    width: 120px;
+}
+#header-left > ul > li > a{
+    text-decoration: none;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    color: black;
+    font-weight: bold;
+    padding: 0px 14px 0px 4px;
+}
+#header-left > ul > li:hover > a,
+#header-left > ul > li:active > a{
+    color: white;
+    border-bottom: 4px solid white;
+    height: 56px
+}
+.click-notification{
+    color: #0084B4 !important;
+    border-bottom: 4px solid #0084B4;
+    height: 56px !important
+}
+.header-icon:before{                
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-size: 22px;
+}
+#header-icon-home:before{
+    content: "\f015";
+}
+#header-icon-notify:before{
+    content: "\f0f3";
+}
+#header-icon-addfriend:before{
+    content: "\f0c0";
+}
+#header-icon-message:before{
+    content: "\f003"
+}
+.header-count{
+    background-color: red;
+    color: white;
+    position: absolute;
+    height: 18px;
+    width: 14px;
+    top: 6px;
+    left: 23px;
+    border-radius: 2px;
+    box-shadow: 2px 1px 0px #888888;
+    line-height: 16px;
+    font-size: 12px;
+    display: none;
+    text-align: center
+
+}
+/****************************** header-data ****************************/
+.header-toggle{
+    position: absolute;
+    width: 480px;               
+    box-shadow: 2px 1px 5px #888888;
+    border: 1px solid #888888;
+    display: none
+}
+.header-data a{
+    text-decoration: none;                
+}
+.header-data a:hover{
+    text-decoration: underline
+}
+.data-top{
+    height: 30px;
+    padding: 8px 8px 6px 8px;
+    background-color: #f0e6ec;
+    border-bottom: 1px solid #c5c5c5
+}
+.data-top-right{
+    float: right;
+    width: 120px;
+    height: 16px;    
+}
+.data-top-left h3{
+    font-size: 14px;
+    font-weight: bold
+}
+.data-bottom{
+
+}
+.data-bottom a{
+    display: block;
+    border-top: 1px solid #c5c5c5;
+    padding: 8px;
+    text-align: center;               
+    background-color: #e9eaed;
+    font-weight: bold
+}
+.data-content{
+    border-bottom: 2px solid #c5c5c5;
+    max-height: 400px;
+    overflow-y: hidden;
+    background-color: #fff
+}
+.data-content:hover{
+    overflow-y: auto
+}
+.data-content::-webkit-scrollbar {
+    width: 1em;
+}
+
+.data-content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.data-content::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+.data-content .loading{
+    display: block;
+    margin: 16px auto;
+}
+
+/****************************** Notify ****************************/
+.notify-load{
+
+}
+.notify-load-row{
+    border-bottom: 1px solid #ddd;
+    height: 80px
+}
+.notify-load-row:hover{
+    background: #f6f7f8
+}
+.notify-load-row a{
+    display: block;
+    height: 80px;
+    color: #333;
+    padding: 7px 10px 7px 8px;
+    overflow: hidden
+}
+.notify-load-time{
+    color: #999;
+    padding-left: 5px
+}
+.notify-load-row .notify-row-content{
+    word-wrap: break-word;
+    width: 360px;
+    float: right;
+    height: 60px;
+}
+.notify-load-row img{
+    height: 60px;
+    width: 60px;
+    float: left;
+}
+#notify-data-not-exist{
+    font-weight: bold;
+    line-height: 60px;
+    padding-left: 40px
+}
+/****************************** Friend ****************************/
+#friend-load{
+
+}
+.friend-load-row{
+    border-bottom: 1px solid #ddd;
+    height: 60px;
+    padding: 4px 8px;
+    position: relative;
+}
+.friend-load-row img{
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+.friend-load-row:hover{
+    background: #f6f7f8
+}
+.friend-load-row .friend-row-right{
+    word-wrap: break-word;
+    width: 370px;
+    float: right;
+    overflow: hidden;
+    height: 50px;
+    padding: 10px
+}
+.friend-row-name{
+
+}
+.friend-row-name a:first-child{
+    font-weight: bold
+}
+.friend-row-name a:last-child{
+    color: #c5c5c5
+}
+.friend-row-button{
+    position: absolute;
+    right: 5px;
+    top: 18px
+}
+.friend-row-button button{
+    border-radius: 2px;
+    box-shadow: 0px 1px 1px #888888;
+    font-weight: bold;
+    border-width: 0
+}
+.friend-row-button .accept-friend{
+    background: #4e69a2;
+    color: white;
+}
+.friend-row-button .refuse-friend{
+    background: #fff;
+}
+.friend-row-button img{
+    height: 16px;
+    width: 20px;
+    margin-right: 60px;
+    display: none;
+}
+.friend-row-button a{
+    display: block;
+    height: 28px;
+    border: 1px solid #888888;
+    text-align: center;
+    box-shadow: 0px 1px 1px #888888;
+    color: #888888;
+    font-weight: bold;
+    line-height: 28px;
+    background: whitesmoke
+}
+.friend-row-button .row-accept-friend{
+    width: 80px;
+    margin-right: 15px;
+    display: none;
+}
+.friend-row-button .row-refuse-friend{
+    padding: 2px;
+    display: none;
+}
+#friend-data-not-exist{
+    font-weight: bold;
+    line-height: 60px;
+    padding-left: 40px
+}
+/****************************** message ****************************/
+.message-load{
+
+}
+.message-load-row{
+    border-bottom: 1px solid #ddd;
+    height: 70px
+}
+.message-load-row:hover{
+    background: #f6f7f8
+}
+.message-load-row a{
+    display: block;
+    height: 70px;
+    color: #333;
+    padding: 7px 10px 7px 8px;
+    overflow: hidden
+}
+.message-load-time{
+    color: #999;
+    padding-left: 5px;
+    font-size: 10px
+}
+.message-load-row .message-row-content{
+    word-wrap: break-word;
+    width: 360px;
+    float: right;
+    height: 60px;
+}
+.message-load-row img{
+    height: 60px;
+    width: 60px;
+    float: left;
+}
+.message-row-content-lastest{
+    color: #7f7f7f;
+    font-size: 14px;
+    height: 22px;
+    overflow: hidden;
+}
+.message-row-username{
+    color: black;
+    font-weight: bold;
+    font-size: 14px
+}
+#message-data-not-exist{
+    font-weight: bold;
+    line-height: 60px;
+    padding-left: 40px
+}
+/****************************** header-logo ****************************/
+#header-logo{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 650px;
+    top: 20px
+}
+/****************************** header-right ****************************/
+#tabs{
+    width: 370px;
+    height: 40px;
+    margin-top: 15px
+}            
+#tabs ul{
+    height: 20px;
+    margin-top: -25px;
+    background: transparent
+}
+#tabs ul li{
+    margin-top: 3px;
+    height: 20px;
+}
+/*            #tabs li:first-child{
+                background: green
+            }*/
+#tabs ul li a{
+    padding: 2px;
+    font-size: 15px;
+    font-weight: normal;
+    height: 15px;
+}
+#tabs .tabs-search{
+    padding:  0px 5px
+}
+.auto{
+    height: 27px;
+    width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 10px
+
+}
+.auto:focus{
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+    //  box-shadow: 0 0 10px #66afe9;
+
+}
+.tabs-search input[type="submit"]{
+    background: url('../../image/search_icon.png') no-repeat transparent;
+    border-width: 0px;
+    cursor: pointer;
+    height: 35px;
+    width: 40px;
+    color: transparent;
+    margin-left: -35px;
+    margin-top: -3px
+}
+
+.user{
+    min-height: 50px;
+    background: white;
+    padding-bottom: 5px;
+    border-bottom: 1px solid
+}
+.user a{
+    display: block;
+    height: 50px;
+}
+.user a span{
+    display: block;
+    margin-left: 70px;
+}
+.user img{
+    display: block;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+
+}
+
+.search-name{
+    color: red;
+    font-size: 14px;
+    font-weight: bold
+}
+.search-university{
+    font-size: 12px;
+    color: black
+}
+
+.clear{
+    clear: both;
+}

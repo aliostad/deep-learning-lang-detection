@@ -1,0 +1,73 @@
+body {
+  font-size:14px;
+  line-height:150%;
+  font-family: arial;
+  background:#fff url(../images/bg_body.jpg) repeat-x left top;
+}
+
+#wraper{padding:10px 20px;}
+#header{height:100px;}
+#search{margin:0 auto;padding:20px; width:600px;text-align:center;}
+#search .title{font-size:30px;line-height:30px;font-weight:bold;padding:10px;}
+#lab_keyword{font-size:20px;font-weight:bold;padding-right:20px;}
+#keyword{height:20px;width:300px;padding:5px;font-size:20px;line-height:20px;}
+#star_search{font-size:20px;font-weight:bold;padding:0 5px;}
+#search_result
+{
+	display:block;
+	height:auto;
+	padding:10px 10px;
+}
+
+.showinfo {background:#EFEFEF;padding:5px;border:1px solid #E6E6E6;}
+.showinfo em {color:#CC0000;padding:2px;font-weight:bold;}
+
+/*文字模式*/
+.text_model{}
+.text_model li{padding:10px 0;display:block;overflow:hidden;}
+.text_model li p{display:block;font-size:12px;}
+.text_model li img{width:200px;height:150px;display:block;padding:2px;border:1px solid #DDD;}
+.text_model h3{font-size:16px;font-weight:bold;}
+.text_model a em {color:#CC0000;padding:2px;font-weight:bold;}
+
+/*图片模式*/
+.img_model{line-height:17px;font-size:12px;}
+.img_model li{padding:10px;height:230px;width:220px;display:block;overflow:hidden;float:left;}
+.img_model li {display:block;}
+.img_model li h3{font-size:12px;font-weight:bold;padding-top:2px;}
+.img_model li .i{font-weight:bold;color:#F00;padding-left:5px;}
+.img_model li img{width:200px;height:150px;display:block;padding:2px;border:1px solid #DDD;
+background:#fff url(../images/bg_image2.png) repeat-x left top;
+}
+
+.img_model a em {color:#CC0000;padding:2px;font-weight:bold;}
+
+
+/*分页样式*/
+.page{display:block;white-space:nowrap;padding:10px 0;clear:both;}
+.page a, .page strong{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E7ECF0;
+    display: inline-block;
+    font-size: 14px;
+    height: 22px;
+    line-height: 22px;
+    margin-right: 5px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 23px;
+}
+.page a:hover {
+    background: none repeat scroll 0 0 #EBEBEB;
+}
+.page strong {
+    border: 0 none;
+}
+
+.page .n {
+    font-family: "宋体";
+    line-height: 24px;
+    overflow: hidden;
+    width: 60px;
+}

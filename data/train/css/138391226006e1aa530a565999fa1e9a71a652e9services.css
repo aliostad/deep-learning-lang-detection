@@ -1,0 +1,85 @@
+/* line 11, ../../sass/services/services.sass */
+#explorer-view .loading {
+  margin: 0;
+}
+/* line 14, ../../sass/services/services.sass */
+#explorer-view .custom-dropdown-menu {
+  padding: 0 0;
+}
+/* line 17, ../../sass/services/services.sass */
+#explorer-view #section-url {
+  position: fixed;
+  top: 55px;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 2px;
+}
+/* line 26, ../../sass/services/services.sass */
+#explorer-view #section-url #tabs-and-filter {
+  margin: 5px 0;
+}
+/* line 30, ../../sass/services/services.sass */
+#explorer-view #api-core-container {
+  margin: 80px 0;
+  overflow: auto;
+}
+/* line 34, ../../sass/services/services.sass */
+#explorer-view #api-core-container .objective-illustration {
+  padding: 15px 0 30px 0;
+  text-align: center;
+  font-size: 30px;
+  overflow: hidden;
+  background-color: transparent;
+}
+/* line 41, ../../sass/services/services.sass */
+#explorer-view #api-core-container .objective-illustration li {
+  width: 400px;
+  min-height: 100px;
+  padding: 0;
+  margin: 1px;
+}
+/* line 48, ../../sass/services/services.sass */
+#explorer-view #api-core-container #api-core-header {
+  padding: 15px;
+}
+/* line 51, ../../sass/services/services.sass */
+#explorer-view #api-core-container #api-core {
+  margin-top: 15px;
+}
+/* line 62, ../../sass/services/services.sass */
+#explorer-view #api-core-container #api-core #list-of-links li,
+#explorer-view #api-core-container #api-core #list-of-texts li,
+#explorer-view #api-core-container #api-core #list-of-images li,
+#explorer-view #api-core-container #api-core #list-of-documents li,
+#explorer-view #api-core-container #api-core #list-of-videos li,
+#explorer-view #api-core-container #api-core #list-of-audios li,
+#explorer-view #api-core-container #api-core #list-of-ebooks li {
+  padding: 13px;
+}
+/* line 65, ../../sass/services/services.sass */
+#explorer-view #api-core-container #api-core .explorer-link,
+#explorer-view #api-core-container #api-core .explorer-document,
+#explorer-view #api-core-container #api-core .explorer-image,
+#explorer-view #api-core-container #api-core .explorer-song {
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  text-overflow: ellipsis;
+}
+/* line 74, ../../sass/services/services.sass */
+#explorer-view #api-core-container #api-core .explorer-link span,
+#explorer-view #api-core-container #api-core .explorer-document span,
+#explorer-view #api-core-container #api-core .explorer-image span,
+#explorer-view #api-core-container #api-core .explorer-song span {
+  font-size: 50px;
+}
+/* line 76, ../../sass/services/services.sass */
+#explorer-view #api-core-container #api-core .explorer-link img,
+#explorer-view #api-core-container #api-core .explorer-document img,
+#explorer-view #api-core-container #api-core .explorer-image img,
+#explorer-view #api-core-container #api-core .explorer-song img {
+  height: 150px;
+}

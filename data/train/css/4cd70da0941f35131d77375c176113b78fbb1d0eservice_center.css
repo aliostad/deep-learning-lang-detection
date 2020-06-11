@@ -1,0 +1,249 @@
+.customers{
+	background: #fff;
+}
+.customers .customer_tab{
+	height:38px;
+	border-top:2px solid #3f67bf;
+	background: #e6e6e6;
+	padding-left:19px;
+}
+
+.customers .customer_tab .tab_item{
+	line-height:32px;
+	height:32px;
+	width:101px;
+	color:#999999;
+	margin: 6px 3px 0;
+	float:left;
+	text-align: center;
+	font-weight:bold;
+	cursor: pointer;
+}
+.customers .customer_tab .tab_item.select{
+	color:#3366cc;
+	background: url(../../image/service/customer_tab.png) no-repeat top center;
+}
+
+.customers .customer_main{
+	background: #fff;
+	overflow: hidden;
+	padding-top:25px;
+}
+
+.customers .customer_main .service_body{
+	padding:0 48px;
+	padding-right:30px;
+	height:385px;
+}
+
+.customers .customer_main .service_body.personal{
+	display: block;
+}
+.customers .customer_main .service_body.group{
+	display: none;
+}
+.customers .customer_main .service_body .service{
+	width:328px;
+	height:130px;
+	float:left;
+	margin-bottom:50px;
+	border-right:1px solid #cccccc;
+}
+.customers .customer_main .service_body .service.right{
+	border-right:0;
+	width:300px;
+	padding-left:40px;
+}
+
+.customers .customer_main .service_body .service .icon{
+	width:83px;
+	height:83px;
+	float:left;
+	background: url(../../image/service/customer_service_icon.png) no-repeat top center;
+}
+.customers .customer_main .service_body .service.query .icon{
+	background-position: 0 0;
+}
+
+.customers .customer_main .service_body .service.business .icon{
+	background-position: -83px 0;
+}
+
+.customers .customer_main .service_body .service.claims .icon{
+	background-position: 0 -83px;
+}
+
+.customers .customer_main .service_body .service.care .icon{
+	background-position: -83px -83px;
+}
+
+.customers .customer_main .service_body .service .tip{
+	margin-left:83px;
+	padding-left:28px;
+	padding-top:30px;
+}
+
+.customers .customer_main .service_body .service .tip .p1{
+	font-size:18px;
+	color:#333;
+	margin-bottom:12px;
+}
+
+.customers .customer_main .service_body .service .tip .p2{
+	font-size:12px;
+	color:#3c3c3c;
+}
+
+.customers .customer_main .service_body .service .link_list{
+	overflow: hidden;
+	color:#3c3c3c;
+	margin-top:20px;
+	margin-left: -9px;
+}
+.customers .customer_main .service_body .service .link_list a{
+	color:#3c3c3c;
+	margin: 2px 9px;
+	display: inline-block;
+}
+
+.customers .customer_main .service_body .service .link_list a:hover{
+	color:#0066cc;
+}
+
+.service_area{
+	background: #fff;
+}
+.service_area .title{
+	height:40px;
+	line-height:40px;
+	background: #3f67bf;
+}
+
+.service_area .title p{
+	float:left;
+	color:#fff;
+	font-size:14px;
+	font-weight: bold;
+	padding-left:23px;
+}
+
+.service_area .title .more{
+	float:right;
+	margin-right:15px;
+}
+.service_area .title .more a{
+	color:#fff;
+}
+
+.activity_main .activity_list{
+	margin:30px 23px  0;
+	overflow: hidden;
+	padding-bottom:50px;
+}
+
+.activity_main .activity_list .activity{
+	width:224px;
+	float:left;
+	margin: 0 10px;
+}
+.activity_main .activity_list .activity a{
+	color:#3c3c3c;
+	margin: 2px 9px;
+	display: inline-block;
+}
+.activity_main .activity_list .activity a:hover{
+	color:#0066cc;
+}
+
+.activity_main .activity_list .activity.left{
+	margin-left:0;
+}
+.activity_main .activity_list .activity.left a{
+	color:#3c3c3c;
+	margin: 2px 9px;
+	display: inline-block;
+}
+.activity_main .activity_list .activity.left a:hover{
+	color:#0066cc;
+}
+.activity_main .activity_list .activity.right{
+	margin-right:0;
+}
+.activity_main .activity_list .activity.right a{
+	color:#3c3c3c;
+	margin: 2px 9px;
+	display: inline-block;
+}
+.activity_main .activity_list .activity.right a:hover{
+	color:#0066cc;
+}
+.activity_main .activity_list .activity img{
+	width:224px;
+	height:113px;
+}
+
+.activity_main .activity_list .activity p{
+	line-height:36px;
+}
+
+.activity_main .activity_list .activity p a{
+	color:#000;
+	font-weight:bold;
+}
+
+.recommend_list{
+	overflow: hidden;
+	margin:20px 23px 0;
+	padding-bottom:65px;
+}
+
+.recommend_list .recommend{
+	width:50%;
+	float:left;
+	margin:5px 0;
+}
+
+.recommend_list .recommend div{
+	width:35px;
+	height:18px;
+	line-height:17px;
+	background: url(../../image/service/service_recommend.png) no-repeat;
+	color:#fff;
+	padding-left:3px;
+	float:left;
+	margin-right:14px;
+}
+
+
+.problem_main{
+	margin-bottom:50px;
+}
+.problem_list{
+	overflow: hidden;
+	padding-top:17px;
+	padding-bottom:42px;
+	padding-left:45px;
+}
+.problem_list .problem{
+	width:235px;
+	float:left;
+	line-height:28px;
+}
+
+.problem_list .problem span{
+	display: block;
+	float:left;
+	width:3px;
+	height:3px;
+	background: url(../../image/service/service_problem_point.png) no-repeat;
+	margin-top:12px;
+	margin-right:8px;
+}
+
+.problem_list .problem a{
+	color:#3c3c3c;
+}
+
+.problem_list .problem a:hover{
+	color:#0066cc;
+}

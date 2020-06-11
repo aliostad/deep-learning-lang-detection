@@ -1,0 +1,40 @@
+/* see http://codeguide.co for more info */
+
+body {
+  /* Typography */
+  font-family: "Open Sans", "Comic Sans MS", sans-serif;
+  color: white;
+
+  /* Visual */
+  background-color: #2A3440;
+}
+
+section {
+  /* Box-Model */
+  margin: auto;
+  width: 94%;
+  max-width: 960px;
+}
+
+.calc {
+  /* Box-Model */
+  margin-top: 10%;
+
+  /* Typography */
+  font-size: 50px;
+  text-align: center;
+}
+
+#formula {
+  /* Box-Model */
+  width: 50%;
+  height: 160px;
+  text-align: center;
+
+  /* Typography */
+  font-size: 50px;
+  color: #333;
+
+  /* Visual */
+  border-radius: 5px;
+}

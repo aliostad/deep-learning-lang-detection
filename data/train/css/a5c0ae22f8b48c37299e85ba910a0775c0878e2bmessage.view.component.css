@@ -1,0 +1,98 @@
+section.message .view{
+	color:#474747;
+}
+
+section.message .view .user-info{
+	margin:5px 0;
+}
+
+section.message .view .user-info .photo{
+	float:left;
+	width:50px;
+}
+
+section.message .view .user-info .photo img{
+	width:100%;
+}
+
+section.message .view .user-info .info{
+	height:50px;
+	padding:0 0 0 10px;
+	overflow:hidden;
+}
+
+section.message .view .user-info .info > div{	
+	width:60%;
+}
+
+section.message .view .user-info .info .name{
+	font-size:1.3em;
+	font-weight:bold;
+}
+
+section.message .view .user-info .info .name > span{
+	font-size:.8em;
+	font-weight:normal;
+}
+
+section.message .view .message{
+	border:1px solid #afafaf;
+}
+
+section.message .view .message .title{	
+	border-bottom:1px solid #afafaf;
+	font-weight:bold;	
+}
+
+section.message .view .message .title .td-label{
+	padding:0 5px;
+	background-color:#f1f1f1;
+	color:#000;
+}
+
+section.message .view .message .title .text{
+	padding:10px;
+}
+
+section.message .view .message .content{
+	padding:10px 0 15px 0;
+	margin:0 10px;	
+	/*border-bottom:1px solid #afafaf;*/
+}
+
+section.message .view .message .files{	
+	padding:10px;
+	margin:0 10px;
+	border-top:1px solid #afafaf;
+}
+
+
+section.message .view .reply{
+	float:right;
+	display:inline-block;
+	padding: 4px 10px 6px 10px;
+	border-radius:2px;
+	background-color: #1886c5;
+	font-weight:bold;
+	color:#fff;
+}
+
+section.message .view .reply img{
+	margin-right:5px;
+}
+
+section.message .view .reply.top{
+	margin-top:25px;
+}
+
+section.message .view .reply.bottom{
+	margin-top:10px;
+}
+
+/*.view .message-uploaded-files*/
+.view .message-uploaded-files{	
+	border-top:1px solid #afafaf;	
+	padding:5px 0 0 0;
+	margin:0 10px;
+}
+/*eo .view .message-uploaded-files*/

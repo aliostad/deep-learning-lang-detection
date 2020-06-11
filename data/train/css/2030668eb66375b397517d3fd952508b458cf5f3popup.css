@@ -1,0 +1,277 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:18px;	
+}
+
+a {
+	text-decoration: none;	
+}
+
+.step-two, .step-three { display:none; }
+
+
+
+/* FANCYBOX STYLES */
+
+#fancybox-loading {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	height: 40px;
+	width: 40px;
+	margin-top: -20px;
+	margin-left: -20px;
+	cursor: pointer;
+	overflow: hidden;
+	z-index: 9;
+	display: none;
+}
+
+* html #fancybox-loading {	/* IE6 */
+	position: absolute;
+	margin-top: 0;
+}
+
+#fancybox-loading div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 480px;
+	background-image: url('fancybox.png');
+}
+
+#fancybox-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #000;
+	z-index: 1027;
+	display: none;
+}
+
+* html #fancybox-overlay {	/* IE6 */
+	position: absolute;
+	width: 100%;
+}
+
+#fancybox-tmp {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	overflow: auto;
+	display: none;
+}
+
+#fancybox-wrap {
+	
+	position: fixed;
+	top: 50px !important;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	z-index: 1028;
+	display: none;}
+
+#fancybox-outer {
+	
+	position: relative;
+	z-index:1028!important;
+}
+
+#fancybox-inner {
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0;
+	margin: 0;
+	outline: none; }
+
+#fancybox-hide-sel-frame {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: none;
+}
+
+#fancybox_error {
+	color: #444;
+	font: normal 12px/20px Arial;
+	padding: 7px;
+	margin: 0;
+}
+
+#fancybox-close,
+#fancybox-content,
+#fancybox-img,
+#fancybox-frame,
+#fancybox-title,
+.fancybox-title-inside,
+.fancybox-title-outside,
+.fancybox-title-over,
+#fancybox-title-over,
+#fancybox-title-wrap,
+#fancybox-title-wrap span,
+#fancybox-title-left, #fancybox-title-main, #fancybox-title-right, #fancybox-left, #fancybox-right, #fancybox-left-ico, #fancybox-right-ico, .fancy-bg {
+	display: none !important;
+}
+
+
+
+
+
+
+.onLoadPOPUP {
+	margin:5px;
+	width:360px;
+	min-height:190px;
+	padding: 20px;
+	background:#CC0000;
+	color:yellow;
+	box-shadow:5px 5px 0 rgba(0,0,0,0.3);
+	text-align:left; }
+
+.onLoadPOPUP p {
+	margin: 0;	
+}
+	
+
+/* STEP(SCREEN) 1 */
+.onLoadPOPUP .step-one {
+	padding: 28px 0 0 0;
+	text-align:center;
+	
+}
+	.onLoadPOPUP .step-one .heading {
+		margin: 0 0 20px 0;
+		font-size: 32px;
+		line-height:36px;
+		font-weight:bold;
+		text-transform:uppercase;	
+	}
+
+	.onLoadPOPUP .step-one .yes-button {
+		width:50%;
+		margin:0;
+		background:yellow;
+		color:#cc0000 !important;
+		text-transform:uppercase;
+		font-size:18px;
+		font-weight:bold;
+		display:inline-block;
+		cursor:pointer;
+		line-height:42px;
+		font-weight:bold;
+	}
+	
+	.onLoadPOPUP .step-one .yes-button:active { opacity: 0.8; }
+	
+	.onLoadPOPUP .step-one .close-button {
+		width:50%;
+		margin:0;
+		display:inline-block;
+		line-height:42px;
+		color: yellow;
+		text-align:center;
+	}
+
+	.onLoadPOPUP .step-one .close-button:hover { text-decoration:underline; }
+	.onLoadPOPUP .step-one .close-button:active { opacity: 0.8; }
+
+
+/* STEP(SCREEN) 2 */
+.onLoadPOPUP .step-two {
+}
+
+	.onLoadPOPUP .step-two input[type=text],
+	.onLoadPOPUP .step-two input[type=email],
+	.onLoadPOPUP .step-two select {
+		font-size:18px;
+		background: #cc0000;
+		border: 2px solid yellow;
+		color: yellow;
+		display:block;
+		box-sizing:border-box;
+		width:100%;
+		margin:0 0 10px 0;
+		padding:6px 8px;
+		-webkit-appearance: none;
+  		-webkit-border-radius: 0px;
+	}
+	
+	.onLoadPOPUP .step-two input::-webkit-input-placeholder { color: yellow; opacity:1; font-style:italic; }
+	.onLoadPOPUP .step-two input:-moz-placeholder { color: yellow; opacity:1; font-style:italic; }
+	.onLoadPOPUP .step-two input::-moz-placeholder { color: yellow; opacity:1; font-style:italic; }
+	.onLoadPOPUP .step-two input:-ms-input-placeholder { color: yellow; opacity:1; font-style:italic; }
+	
+	.onLoadPOPUP .step-two label {
+		display: none;	
+	}
+	
+	.onLoadPOPUP .step-two button {
+		outline:none;
+		width:50%;
+		margin:0;
+		background:yellow;
+		color:#cc0000 !important;
+		text-transform:uppercase;
+		font-size:18px;
+		display:inline-block;
+		cursor:pointer;
+		line-height:42px;
+		border:none;
+		font-weight:bold;
+	}
+	
+	.onLoadPOPUP .step-two button:active { opacity: 0.8; }
+	
+	.onLoadPOPUP .step-two .cancelButton {
+		width:50%;
+		margin:0;
+		display:inline-block;
+		line-height:42px;
+		color: yellow;
+		text-align:center;
+	}
+
+	.onLoadPOPUP .step-two .cancelButton:hover { text-decoration:underline; }
+	.onLoadPOPUP .step-two .cancelButton:active { opacity: 0.8; }
+	
+	
+/* STEP(SCREEN) 3 */
+.onLoadPOPUP .step-three {
+	padding: 22px 0 0 0;
+	text-align:center;
+	
+}
+	.onLoadPOPUP .step-three .heading {
+		margin: 0 0 20px 0;
+		font-size: 32px;
+		line-height:36px;
+		font-weight:bold;
+		text-transform:uppercase;	
+	}
+	
+	.onLoadPOPUP .step-three .message {
+		margin: 0 0 25px 0;	
+	}
+	
+	.onLoadPOPUP .step-three .close-me {
+		width:50%;
+		margin:0 auto;
+		background:yellow;
+		color:#cc0000 !important;
+		text-transform:uppercase;
+		font-size:18px;
+		font-weight:bold;
+		display:block;
+		cursor:pointer;
+		line-height:42px; 
+	}
+	
+	.onLoadPOPUP .step-three .close-me:active { opacity: 0.8; }

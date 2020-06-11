@@ -1,0 +1,33 @@
+/**
+ * Fuel
+ * CSS Boiler Plate Framework
+ * Version 1.0.0
+ *
+ * Alerts Addin
+ *
+ * Written by Jesse A. Dunlap <jesse.dunlap@hydrais.com>
+ */
+
+.message {
+    border-radius: 5px;
+    padding: 10px;
+    color: #FFF;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.red.message, .error.message {
+    background-color: #fe494b
+}
+
+.yellow.message, .warning.message {
+    background-color: #fec03f;
+}
+
+.green.message, .success.message {
+    background-color: #a3d637;
+}
+
+.blue.message, .info.message  {
+    background-color: #049cbe;
+}

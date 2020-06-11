@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project>
+    <macrodef name="makeBashNohupStdinReadCommand">
+        <attribute name="outputproperty" />
+        <attribute name="process" />
+        <attribute name="processLog" />
+        <attribute name="processDir" default="$HOME" />
+        <attribute name="processArgs" default="" />
+        <attribute name="processStartKeyword" default="start" />
+        <attribute name="processStartCheckInterval" default="2" />
+        <attribute name="namedPipe" />
+
+        <sequential>
+            <property name="@{outputproperty}">
+<![CDATA[
+test ! -e @{namedPipe} && mkfifo @{namedPipe};
+nohup /bin/bash -l -c "function debug() { echo $@@ ; } ; export -f debug ; cd @{processDir} ; cat @{namedPipe} | @{process} @{processArgs}" > @{processLog} 2>&1 & 
+_NOHUP_PROCESS_PID=$! ;
+while true ; do sleep @{processStartCheckInterval} && grep "@{processStartKeyword}" @{processLog} >/dev/null 2>&1 && break ; done ;
+_NOHUP_CHILD_PID=`ps -o pid --ppid $_NOHUP_PROCESS_PID --no-headers | sed -e 's/ //g' | xargs echo | sed -e 's/ /,/g'` ;
+# get pid for kill all process.
+ps -o pid --ppid $_NOHUP_CHILD_PID --ppid $_NOHUP_PROCESS_PID --pid $_NOHUP_CHILD_PID --pid $_NOHUP_PROCESS_PID --no-headers | sed -e 's/ //g' | sort -r | xargs echo ;
+]]>
+            </property>
+        </sequential>
+    </macrodef>
+
+</project>

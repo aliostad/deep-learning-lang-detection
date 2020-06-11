@@ -1,0 +1,38 @@
+.mod-load-more {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.mod-load-more .fa-refresh {
+    display: none;
+    line-height: 24px;
+}
+
+.mod-load-more .btn-loading {
+    cursor: default;
+    text-decoration: none;
+}
+
+.mod-load-more .btn-loading .btn-text {
+    display: none;
+}
+
+.mod-load-more .btn-loading .fa-refresh {
+    display: block;
+}
+
+.no-js .mod-load-more.hide {
+    display: none;
+}
+.mobile-page .mod-load-more{
+    margin-top: 0;
+    padding-bottom: 30px;
+}
+
+.car-confessions .mod-load-more {
+    margin: 10px 0 40px;
+}
+
+.mobile-page.car-confessions .mod-load-more {
+    margin: 10px 0 0;
+}

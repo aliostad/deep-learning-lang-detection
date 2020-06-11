@@ -1,0 +1,88 @@
+@import url("jquery-ui-1.8.21.custom.css");
+@import url("bootstrap.css");
+@import url("font-awesome.css");
+@import url("jquery.miniColors.css");
+
+body {
+	padding: 10px;
+	color: #757C82;
+	background-color:#272B30;
+}
+
+body.api {
+	padding: 10px;
+	color: #333333;
+	background-color:#DDDDDD;
+}
+
+.api .table-bordered {
+	border: 1px solid #BBBBBB;
+}
+
+.api .table-bordered th,.api .table-bordered td {
+	border-color: #BBBBBB;
+}
+
+.api thead {
+	background-color: #C0C0C0;
+}
+
+.navbar .brand {
+	margin-left:0px;
+}
+
+.btn.active {
+	background-color: #B5E4FF;
+}
+
+#messageContainer {
+	max-width:589px;
+}
+
+#mute {
+	min-width: 34px;
+}
+
+#mute.btn.active {
+	background-color: #FFB5B5;
+}
+
+.well {
+	max-width: 300px;
+}
+
+.dl-horizontal dt {
+	width: 45px;
+}
+
+.dl-horizontal dd {
+	margin-left: 65px;
+}
+
+@media (max-width: 767px) {
+.dl-horizontal dt {
+	float:left;
+	width: 45px;
+	text-align: right;
+}
+
+.dl-horizontal dd {
+	margin-left: 65px;
+}
+}
+
+.volume {
+	margin-left: 8px;
+	margin-right: 8px;
+	max-width: 244px;
+}
+
+#ledRange {
+	margin-left: 8px;
+	margin-right: 8px;
+	max-width: 244px;
+}
+
+.ui-widget-header {
+	background: #3098c3 url(../img/ui-bg_highlight-soft_75_blue_1x100.png) 50% 50% repeat-x
+}

@@ -1,0 +1,96 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+div#header {
+    margin: 5% auto;
+    text-align: center;
+    width: 960px;
+}
+
+div#header h1 {
+    font-size: 84px;
+}
+
+div#content {
+    margin: 5% auto;
+    text-align: center;
+    width: 960px;   
+}
+
+div#content a {
+    text-decoration: none;
+}
+
+div#content div#button-group {
+    background-color: #f2f2f2;
+    margin: 0 auto;
+    width: 54%;
+    -webkit-border-radius: 16px;
+      -moz-border-radius: 16px;
+            border-radius: 16px;
+}
+
+div#content div#button-group div#load-data,
+div#content div#button-group div#skip {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+div#content div#button-group div#load-data {
+    border-bottom: 4px solid #fff;
+}
+
+div#content div#button-group h2 {
+    color: #0072bb;
+    font-size: 60px;
+}
+
+div#content div#load-dialog {
+    background-color: #f4f4f4;
+    padding: 40px; 
+    opacity: .95;
+    overflow: hidden;
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+    width: 960px;
+    -webkit-border-radius: 24px;
+      -moz-border-radius: 24px;
+            border-radius: 24px;
+}
+
+div#content div#load-dialog input[type=file] {
+    display: none;
+}
+
+div#content div#load-dialog h2 {
+    color: #51bae7;
+    font-size: 60px;
+    margin-top: 10%;
+}
+
+div#content div#load-dialog h3 {
+    color: #666;
+    font-size: 48px;
+    position: absolute;
+    bottom: 5%;
+    right: 80px;
+}
+
+div#content div#load-dialog div#loading-mask {
+    background-color: #f4f4f4;
+    opacity: .95;
+    padding: 25%;
+    overflow: hidden;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    bottom: 40px;
+    right: 0;
+    z-index: 128;
+    -webkit-border-radius: 24px;
+      -moz-border-radius: 24px;
+            border-radius: 24px;
+}

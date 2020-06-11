@@ -1,0 +1,60 @@
+ 
+          /*市场管理market*/
+          .text-red{color:#FF0000;font-size:24px;font-weight:600;text-align:center;}
+		  .top-ogan{color:#3192C8;font-size:16px;font-weight: 800;line-height:35px;}
+          @media  (max-width:768px ) {
+          	  .text-red{font-size:16px;font-weight:400;}
+          }
+          
+            
+		    .modal .add-text1{display:inline-block;padding-right:15px;text-align: right;width:85px}
+		   /*接入节点控制*/
+		    #node-check .modal-body, #pass-check .modal-body{padding:8px 15px;}
+		    .modal .modal-body span{color:#FF0000}
+		    @media (min-width:500px ) {
+		    	#in-node .modal-dialog{width:500px;margin:50px auto} 
+		    }
+		    #in-node .modal label{margin-top:6px} 
+		   
+		    
+		    /*渠道管理 资金端服务接出配置modal */
+		    #fund-service .modal-body{font-size:13px;padding:8px 10px 15px 10px;}
+		    #fund-service .modal-body div{margin-bottom:0;}
+		    #fund-service .fund-service-wrap,#fund-service .fund-service-head{min-width:550px;}
+            #fund-service .fund-service-head{background:#FDFDFD;font-weight:bold;border:1px solid #DDDDDD;border-radius: 5px 5px 0 0;}
+            #fund-service .fund-service-head div{border:none}
+            #fund-service .fund-service-wrap{border:1px solid #DDDDDD;border-radius: 0 0 5px 5px;border-top: none;}
+            #fund-service .fund-service-wrap input{width:13px;height:13px;margin-left:8px;}
+            #fund-service .fund-service-wrap button{font-size:13px;color:#FFFFFF}
+            #fund-service .fund-service-wrap span{color:#FFFFFF}
+            #fund-service .fund-service-wrap div,#fund-service .fund-service-head div{display:inline-block;height:30px; line-height: 30px;}
+            #fund-service .fund-service-outer{width:100%;border-bottom:1px solid #DDDDDD;}
+            #fund-service .modal-body div{text-align:left;}
+            #fund-service .div1{width:130px;border-right:1px solid #DDDDDD;}
+            #fund-service .div2{width:60%;}
+            #fund-service .div3{width:62px;float:right;border-left:1px solid #DDDDDD;padding-left:4px;}
+            #fund-service .fund-service-outer:nth-child(odd){background:#F5F5F5}
+            #fund-service .fund-service-outer:nth-child(even){background:#D5ECBF}
+           
+            #channel-service{position:relative}
+            #channel-service .header{min-width:260px}
+            #channel-service .row>div{padding-left:0}
+            .move{position:absolute;background:#D5ECBF;border:1px solid #CCCCCC;border-radius:5px;
+                  width:400px;z-index:1000;text-align:center;font-size:16px;line-height:30px;
+                  opacity:0.8;filter:alpha(opacity=80);display:none;
+                  }
+            #service .img{display:inline-block;height:32px;width:34px;background:url(../images/jbox-icons.png) -34px 0 no-repeat;}
+            #service span{color:#333333;position:relative;top:-10px;left:5px;}
+            #channel-service tbody tr:hover,#channel-service .page-num:hover{cursor:pointer;}
+           /* #cd-data  .header .input-group .form-control{margin:0;height:34px}*/
+          
+           /* #cd-data  .header .file-input .input-group,#cd-data  .header .file-input .input-group-btn{display:inline-block;}*/
+            
+   
+          
+
+       
+       
+
+           
+                

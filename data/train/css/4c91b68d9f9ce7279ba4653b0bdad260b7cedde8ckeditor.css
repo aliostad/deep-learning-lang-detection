@@ -1,0 +1,14 @@
+.cke_editable {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 16px;
+    padding: 0;
+    min-height: 350px;
+    padding-bottom: 32px;
+}
+
+/* Fixes displaying table in CKEDITOR */
+
+.cke_show_borders table.cke_show_border, .cke_show_borders table.cke_show_border > tr > td, .cke_show_borders table.cke_show_border > tr > th, .cke_show_borders table.cke_show_border > tbody > tr > td, .cke_show_borders table.cke_show_border > tbody > tr > th, .cke_show_borders table.cke_show_border > thead > tr > td, .cke_show_borders table.cke_show_border > thead > tr > th, .cke_show_borders table.cke_show_border > tfoot > tr > td, .cke_show_borders table.cke_show_border > tfoot > tr > th {
+    border: none;
+}

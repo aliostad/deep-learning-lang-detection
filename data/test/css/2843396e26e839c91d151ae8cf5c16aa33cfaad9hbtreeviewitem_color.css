@@ -1,0 +1,42 @@
+/*
+    Tree item default color definitions.
+*/
+HbTreeViewItem::text-1[modelItemType="ParentItem"]{
+    color: var(qtc_list_item_parent_normal);
+}
+
+HbTreeViewItem::text-1[modelItemType="ParentItem"][state="pressed"]{
+    color: var(qtc_list_item_pressed);
+}
+
+HbTreeViewItem::text-1[modelItemType="ParentItem"][state="disabled"]{
+    color: var(qtc_list_item_disabled);
+}
+
+/*
+    Tree item inside popup color definitions.
+*/
+HbTreeViewItem::text-1[modelItemType="ParentItem"][insidePopup]{
+    color: var(qtc_popup_list_item_parent_normal);
+}
+
+HbTreeViewItem::text-1[modelItemType="ParentItem"][insidePopup][state="pressed"]{
+    color: var(qtc_list_item_pressed);
+}
+
+HbTreeViewItem::text-1[modelItemType="ParentItem"][insidePopup][state="disabled"]{
+    color: var(qtc_list_item_disabled);
+}
+
+
+HbTreeViewItem::subitem-indicator[insidePopup]{
+    color: var(qtc_popup_list_item_parent_normal);
+}
+
+HbTreeViewItem::subitem-indicator[insidePopup][state="pressed"]{
+    color: var(qtc_list_item_pressed);
+}
+
+HbTreeViewItem::subitem-indicator[insidePopup][state="disabled"]{
+    color: var(qtc_list_item_disabled);
+}

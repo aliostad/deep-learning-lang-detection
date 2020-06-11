@@ -1,0 +1,79 @@
+html {
+  background-color: #1D0812;
+  color: #aaa;
+  font-size: 9.5pt;
+  font-family: "Anonymous Pro";
+}
+body {margin:0; padding: 0;}
+
+body.normal {
+}
+body.normal .message[type="join"] {
+  color: #3D1921;
+}
+body.normal .message[type="quit"] {
+  color: #3D1921;
+}
+body.normal .message[type="nick"] {
+  color: #4F202B;
+}
+body[type=channel] {}
+body[type=talk] {}
+body[type=console] {}
+body[channelname=#limechat] {}
+
+body.console .message[type="quit"] {
+  color: #3D1921;
+}
+body.console .message[type="join"] {
+  color: #3D1921;
+}
+body.console .message[type="nick"] {
+  color: #3D1921;
+}
+body.console .message[type="topic"],
+body.console .message[type="mode"],
+body.console .message[type="part"],
+body.console .message[type="kill"],
+body.console .message[type="notice"],
+body.console .message[type="invite"],
+body.console .place {
+  color: #3C3C3D;
+}
+
+.url { color: #8FA4CE; }
+.address {}
+.highlight {
+  padding: 0 3px;
+  color: #210512;
+  background-color: #5B9688;
+}
+
+.line {}
+.line[alternate=even] {}
+.line[alternate=odd] {}
+.line[highlight=true] {}
+
+.time { color: #8D917B; }
+.place { color: #3387bc; }
+
+.sender[type=normal] { color: #4D8155; }
+.sender[type=myself] { color: #945885; }
+.message[type=privmsg] {}
+.message[type=notice] { color: #ccc; }
+.message[type=action] { color: #ccc;}
+
+.message[type=system], .message[type=join], .message[type=kick],
+.message[type=quit], .message[type=kill], .message[type=nick], .message[type=mode],
+.message[type=topic], .message[type=invite], .message[type=wallops] {
+  color: #5e5e5e;
+}
+.message[type=reply] { color: #509036; }
+
+.message[type=error], .message[type=error_reply] { color: #f67b37; }
+.message[type=dcc_send_send] { color: #c5af75; }
+.message[type=dcc_send_receive] { color: #98a3f9; }
+.message[type=debug_send] { color: #8996a8; }
+.message[type=debug_receive] { color: #afc4db; }
+
+.message[type=part] { color: #000; }

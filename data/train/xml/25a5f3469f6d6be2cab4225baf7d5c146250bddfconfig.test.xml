@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<flex-config>
+  <compiler>
+    <define append="true"><name>CONFIG::STARTUP</name><value>"gap_app"</value></define>
+    <define append="true"><name>CONFIG::STORAGE_ROOT_URL</name><value>"http://10.0.10.239/woot_storage"</value></define>
+    <define append="true"><name>CONFIG::LEARNING_MODEL_ROOT_URL</name><value>"http://10.0.10.239/woot_learning_model"</value></define>
+    <define append="true"><name>CONFIG::ROSTER_ROOT_URL</name><value>"http://10.0.10.239/woot_roster"</value></define>
+    <define append="true"><name>CONFIG::TEACHER_DASHBOARD_URL</name><value>"http://10.0.10.239/woot_roster/in_app/class/7a3ky9xd4"</value></define>
+  </compiler>
+</flex-config>

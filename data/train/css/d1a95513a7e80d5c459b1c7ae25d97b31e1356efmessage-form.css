@@ -1,0 +1,61 @@
+#message-form {
+	width:620px;
+}
+
+#message-form div {
+	float:left;
+	width:50%;
+}
+
+#message-form {}
+
+#message-form label,
+#message-form textarea,
+#message-form input {
+	display:block;
+	float:left;
+	border:0;
+	padding:2px;
+}
+
+#message-form label {
+	width:100px;
+}
+
+#message-form textarea,
+#message-form input {
+
+}
+
+#message-form textarea {
+	width:200px;
+}
+
+#message-form input {
+	width:150px;
+}
+
+#message-form input[type="submit"] {
+	float:right;
+	margin-top:10px;
+	margin-bottom:5px;
+}
+
+#message-form p {
+	margin:5px 0;
+}
+
+#message-form legend {
+	font-weight:bold;
+	margin-bottom:10px;
+}
+
+.required-asterisk {
+	color:#EA1919;
+}
+
+#message-form .disclaimer {
+	text-align:justify;
+	width:100%;
+	font-size:85%;
+}

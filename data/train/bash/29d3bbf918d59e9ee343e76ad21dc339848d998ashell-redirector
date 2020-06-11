@@ -1,0 +1,60 @@
+#!/bin/dash
+# ex:ft=sh
+
+export INVOKE_SHELL="${INVOKE_SHELL:-/bin/dash}"
+exec $INVOKE_SHELL "$@"
+
+<<=cut
+
+=pod
+
+=head1 NAME
+
+shell-redirector - decide what shell provides /bin/sh
+
+=head1 DESCRIPTION
+
+B<shell-redirector> is a small hack that provides you as a
+non-privileged user the means to decide what shell you want to use
+as F</bin/sh> provider. The use case in mind is migrating from e.g.
+B<bash> to B<dash> without dedicated infrastructure.
+
+By setting the environment variable C<INVOKE_SHELL> to a path that
+provides a POSIX compatible shell interpreter, your scripts using
+F</bin/sh> shebangs will use that shell.
+
+Reasonable values for C<INVOKE_SHELL> includes:
+
+=over
+
+=item * INVOKE_SHELL='/bin/bash --posix'
+
+=item * INVOKE_SHELL=/bin/dash
+
+=item * INVOKE_SHELL=/bin/posh
+
+=back
+
+By default, it will use F</bin/dash>. It B<depends> on dash, as
+it's using F</bin/dash> as shebang. This can safely be changed to
+something else. The script conforms to SUSv3 (if not, please file
+a bug).
+
+=head2 INSTALLATION
+
+For a live deployment, just copy the shell-redirector file to F</bin/sh>.
+
+=head1 BUGS & LIMITATIONS
+
+Yes. TODO: Document them.
+
+=head1 COPYRIGHT
+
+Copyright 2013, Olof Johansson <olof@ethup.se>
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved. This file is offered as-is,
+without any warranty.
+
+=cut

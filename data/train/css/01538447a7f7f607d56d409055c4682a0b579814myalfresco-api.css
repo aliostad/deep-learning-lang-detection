@@ -1,0 +1,99 @@
+/* History Manager */
+#yui-history-iframe
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+}
+.api-console
+{
+    margin: 16px 10px 10px;
+}
+.api-console .title
+{
+    font-size: 123.1%;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+.api-console .create-users-data
+{
+    height: 20em;
+    width: 50em;
+}
+.api-console .create-users-options
+{
+    padding: 0.5em 0;
+}
+.api-console .create-users-options div
+{
+    padding: 0.5em 0;
+}
+.api-console .checkbox
+{
+    margin-left: 4px;
+}
+.api-console .create-users-options .format-help
+{
+    border: 1px solid #C0C0C0;
+    padding: 0.8em 0.8em;
+    margin-bottom: 0.5em;
+}
+.api-console .create-users-options .format-help pre
+{
+    line-height: 1.25em;
+    margin: 0.5em 0;
+}
+.api-console select[name="method"]
+{
+    width: 7em;
+}
+.api-console .api-path
+{
+    width: 30em;
+}
+.api-console .api-method
+{
+    width: 18em;
+}
+.api-console textarea
+{
+    display: none;
+    width: 40em;
+    height: 5em;
+    margin: 5px 0;
+}
+.api-console .api-result
+{
+    margin-top: 1em;
+}
+.api-console .api-response
+{
+    margin-top: 1em;
+}
+.api-console span.response-data
+{
+    float: right;
+}
+.api-console .run-controls
+{
+    margin-right: 100px;
+}
+.api-console .buttons
+{
+    float: right;
+}
+
+.api-console .connect {
+    display: none;
+    text-align: center;
+    background-color: #FFFBDD;
+    border-bottom: 1px solid #DDD6A0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.api-console .connect div {
+    margin-bottom: 1em;
+}

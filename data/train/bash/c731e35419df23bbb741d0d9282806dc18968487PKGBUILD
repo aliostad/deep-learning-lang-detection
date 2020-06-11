@@ -1,0 +1,26 @@
+pkgname=my-own-repo-web-interface
+pkgver=0.4
+pkgrel=1
+pkgdesc="Custom user repo interface (pacman/rpm/deb)"
+arch=(i686 x86_64)
+url="http://code.google.com/p/archlinux-stuff/wiki/MyOwnRepo"
+license=('GPL')
+depends=(perl php perl-dbd-sqlite)
+backup=(srv/my-own-repo/config.php)
+options=()
+install=my-own-repo-web-interface.install
+source=(http://archlinux-stuff.googlecode.com/files/my-own-repo-web-interface-$pkgver.tar.gz)
+md5sums=('e1da08e0baaedacecd75c53b047a8101')
+
+package() {
+  cd $startdir/src
+
+  install -d -m0755 $startdir/pkg/usr/lib/my-own-repo-web-interface
+  install -d -m0755 $startdir/pkg/usr/bin
+  install -d -m0755 $startdir/pkg/srv/http/my-own-repo
+
+  install -m0755 bin/my-own-repo-update.pl $startdir/pkg/usr/bin/my-own-repo-update
+  install -m0755 bin/*.pm $startdir/pkg/usr/lib/my-own-repo-web-interface/
+  install -m0644 www/*.php $startdir/pkg/srv/http/my-own-repo/
+  install -m0644 www/*.css $startdir/pkg/srv/http/my-own-repo/
+}

@@ -1,0 +1,55 @@
+#!/bin/sh
+
+. $(dirname $0)/adc.common-functions
+
+[ -z "$GL_RC" ] && die "ENV GL_RC not set"
+
+# options settable in adc.common-functions are
+#   ARE_YOU_SURE -- prompts "are you sure?"
+#   USE_LOCK_UNLOCK -- allows delete only if repo is "unlock"ed
+# As shipped, both options are set.  If you set both of them to "0", repos are
+# just deleted blindly, with no confirmation
+
+# helper ADCs: lock, unlock
+
+# cd to repo base and make sure arg1 is a valid repo (also sets $repo)
+valid_owned_repo $1
+
+opt $USE_LOCK_UNLOCK && {
+    if [ -f $repo.git/gl-rm-ok ]
+    then
+        :
+    else
+        die "$repo is locked! Please run the 'help' adc for more info."
+    fi
+}
+
+opt $ARE_YOU_SURE && {
+    echo "Are you sure? (type 'yes' if you are)" >&2
+    read s
+    [ $s = "yes" ] || die aborting...
+}
+
+repo_sandbox="$(cd ..; pwd)/repositories-sandbox"
+if test -d "$repo_sandbox"
+then
+    (cd $repo_sandbox; mkdir -p ${repo%/*})
+    renamed_repo=$repo_sandbox/$repo.git
+    if test -d "$renamed_repo"
+    then
+        renamed_repo=$repo_sandbox/$repo.git-$(date +"%Y%m%d%H%M%S")
+    fi
+    echo "repo moved to $renamed_repo"
+    mv "$repo.git" "$renamed_repo"
+else
+    echo "Warning: Create a sandbox dir -- $repo_sandbox to hold the obsolte repox."
+    echo "         or the repo $repo will be deleted permanently."
+    rm -rf "$repo.git"
+    echo "$repo is now GONE!"
+fi
+
+# gitweb specific; code for cgit users left as an exercise for the reader
+cd $HOME
+PROJECTS_LIST=$($GL_BINDIR/gl-query-rc PROJECTS_LIST)
+export repo
+perl -ni -e 'print unless /^\Q$ENV{repo}.git\E$/' $PROJECTS_LIST

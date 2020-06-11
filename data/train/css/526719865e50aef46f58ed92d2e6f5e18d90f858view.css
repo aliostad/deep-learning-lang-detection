@@ -1,0 +1,36 @@
+.page {
+  padding: 10px; }
+  .page h2 {
+    margin: 0 0 10px 0; }
+
+.page_author {
+  font-size: 0.8em;
+  color: #666; }
+
+.page_content {
+  margin: 20px 0; }
+
+#edit_page_nav, #new_page_nav {
+  color: white;
+  line-height: 1.5;
+  padding-left: 10px; }
+  #edit_page_nav .nav_label, #new_page_nav .nav_label {
+    font-weight: bold; }
+  #edit_page_nav ul, #new_page_nav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0; }
+  #edit_page_nav li, #new_page_nav li {
+    display: inline-block; }
+    #edit_page_nav li a, #new_page_nav li a {
+      color: #eee;
+      text-decoration: none;
+      text-align: center;
+      display: block;
+      padding: 0 5px; }
+
+#edit_page_nav {
+  background-color: #5c9cba; }
+
+#new_page_nav {
+  background-color: #547f93; }

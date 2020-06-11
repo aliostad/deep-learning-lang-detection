@@ -1,0 +1,94 @@
+#message-write-form-skin {
+	padding: 10px;
+	font-size: 9pt;
+	font-family: dotum;
+}
+
+#message-write-form-skin > #title {
+	background-color: #666666;
+	font-size: 11pt;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 3px;
+	color: #ffffff;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+#message-write-form-skin a {
+	text-decoration: none;
+	color: #313131;
+}
+
+#message-write-form-skin a:hover {
+	text-decoration: underline;
+}
+
+#message-write-form-skin #user-info{
+	border: 1px solid #666666;
+	border-radius: 3px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+
+#message-write-form-skin .sub-title {
+	background-color: #666666;
+	color: #ffffff;
+	height: 28px;
+	line-height: 28px;
+	display: inline-block;
+	width: 80px;
+	padding: 0 10px;
+}
+#message-write-form-skin table td .sub-title {
+	margin-bottom: 5px;
+}
+#message-write-form-skin input[type='text'] {
+	padding: 0 10px;
+	height: 25px;
+	line-height: 25px;
+}
+#message-write-module {
+	position: relative;
+}
+
+#message-write-module #submit-button {
+	text-align: right;
+	padding-right: 10px;
+}
+
+#message-write-module #message-file-uploader{
+	position: relative;
+	top: -5px;
+	left: 10px;
+	max-width: 250px;
+}
+
+#message-write-form-skin #subject {
+	margin-bottom: 5px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#message-write-form-skin #subject .sub-title {
+	width: 50px;
+	margin-right: 5px;
+	padding: 0 10px;
+	
+}
+
+#message-write-form-skin #subject input[type='text'] {
+	width: 70%;
+}
+
+#message-write-form-skin textarea[name='content'] {
+	height: 200px;
+	resize: none;
+}
+
+#no_of_unreaded  {
+	font-weight: bold;
+	color: #0ba506;
+}

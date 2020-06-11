@@ -1,0 +1,318 @@
+@charset "UTF-8";
+
+/*Elementos Generales */
+body {
+	margin:0px;
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+}
+
+/*Inicio de sesión*/
+.login {
+	width: auto;
+	height: auto;
+	background-color: #2c3e50;
+
+}
+
+.login .content {
+	height: 250px;
+}
+.login h1 {
+	text-align: center;
+	color: white;
+	font-size: 50px;
+}
+
+.logo-login {
+	margin-left: -0.5em;
+}
+
+.login footer { 
+	text-align: center;
+	color: white;
+	transition: all ease 0.3s;
+	display: inline-block;
+}
+
+.login footer a {
+	text-decoration: none;
+}
+/*Fin de inicio de sesión*/
+
+
+/*FEED DE INCIO*/
+
+/*Navbar*/
+.navbar {
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	background-color: #B3CC57;
+	z-index: 20;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,1);
+}
+
+.divide-25{
+	clear: both;
+	height: 25px;
+	width: 100%;
+}
+
+.divide-50{
+	clear: both;
+	height: 50px;
+	width: 100%;
+}
+
+.divide-10{
+	clear: both;
+	height: 10px;
+	width: 100%;
+}
+
+.divide-100{
+	clear: both;
+	height: 100px;
+	width: 100%;
+}
+.divide-150{
+	clear: both;
+	height: 150px;
+	width: 100%;
+}
+.divide-160{
+	clear: both;
+	height: 160px;
+	width: 100%;
+}
+.divide-275{
+	clear: both;
+	height: 275px;
+	width: 100%;
+}
+
+.logo {
+	margin-top: -1.3em;
+	margin-left: 2em;
+	color: white;
+}
+
+.avatar {
+	margin-top: -3.5em;
+}
+
+.avatar h4 {
+	color: white;
+	display: inline-block;
+}
+
+.picture {
+	border-radius: 100px;
+}
+
+
+/*Sidebar*/
+/*write*/
+
+.write {
+	width: 80%;
+	padding: 12px;
+	min-height: 150px;
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.3);
+}
+
+.write-share {
+	width: 60%;
+	padding: 12px;
+	min-height: 150px;
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.3);
+}
+
+.write-share textarea {
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+  width: 100%;
+  resize:none;
+  overflow: auto;
+}
+
+.write-share textarea:focus {
+	border-bottom: solid 2px #c9c9c9;
+	outline: none;
+}
+
+
+.divide-100{
+	clear: both;
+	height: 100px;
+	width: 100%;
+}
+
+.write .avatar {
+	margin-top: -1.3em;
+	margin-left: -2.8em;
+}
+
+.write textarea {
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+  width: 100%;
+  resize:none;
+  overflow: auto;
+}
+
+.write h5 {
+	display: inline-block;
+}
+
+.write textarea:focus {
+	border-bottom: solid 2px #c9c9c9;
+	outline: none;
+}
+
+.write .type {
+	margin-top: -1.5em;
+}
+
+.write button {
+	margin-top: -2.5em;
+}
+
+
+/*Feed*/
+
+.headline h1 {
+	font-weight: bold;
+	font-size: 35px;
+	display: inline-block;
+}
+
+.headline h4, h2 {
+	display: inline-block;
+}
+
+/*Single Post*/
+
+.single-post { 
+	min-height: 300px;
+}
+
+.single-post a{
+	text-decoration: none;
+}
+
+.hashtag { 
+	color: white;
+	background-color: #F07818;
+	width: 100%;
+	padding: 6px;
+	text-align: center;
+}
+
+.media {
+	margin-top: -0.5em;
+	height: 300px;
+}
+
+
+.user,
+.date,
+.category {
+	width: 100%;
+	background-color: #ecf0f1;
+	min-height: 50px;
+	color: #34495e;
+}
+
+.user h4,
+.date h4,
+.category h4 {
+	display: inline-block;
+}
+.user .fa,
+.date .fa,
+.category .fa {
+	margin-top: 0.4em;
+	margin-left: 1em;
+	display: inline-block;
+}
+
+/*Feed Details*/
+.feed-details {
+	height: auto;
+}
+
+.event-details {
+	display: inline-block;
+}
+
+.event-details h1 {
+	font-weight: bold;
+	font-size: 28px;
+}
+
+
+
+.event-details h3 {
+	margin-top: -0.5em;
+}
+
+.event img {
+	display: inline-block;
+}
+
+.post-details {
+	min-height: 250px;
+}
+
+.post-details .fa {
+	margin-left: 0px;
+}
+
+.type {
+	margin-left: -1em;
+	margin-top: -35em;
+}
+
+.share {
+	margin-top: -22em;
+	z-index: 2;
+	position:relative;
+}
+
+.share-text {
+	margin-top: -1.7em;
+	margin-right: -1em;
+	z-index: 2;
+	position:relative;
+}
+
+.share-video {
+	margin-top: -6.5em;
+	z-index: 2;
+	position:relative;
+}
+
+.post-details .info {
+	margin-top: -2em;
+}
+
+/* Admin */
+.sub-element{
+	margin-left:2em !important;
+}
+
+.menu-admin{
+	background-color: #ecf0f1; 
+	border-radius: 5px; 
+	padding-top:15px; 
+	padding-bottom:10px;
+}
+
+.sub-active{
+	background-color: #D1E8EC !important; 
+	border-radius: 0px !important;
+}

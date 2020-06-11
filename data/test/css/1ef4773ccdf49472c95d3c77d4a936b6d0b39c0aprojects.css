@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: hidden;
+    white-space: nowrap;
+    display: block;
+}
+
+.ui.menu .dropdown.item .menu {
+    margin: 0;
+}
+#loadMore {
+    display: none;
+}
+#loadMoreTwo {
+    display: none;
+}
+.ui.divider {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+h4.ui.header {
+    margin-bottom: 0;
+}
+h5.ui.header {
+    margin-bottom: 7px !important;
+    margin-top: 7px;
+    font-weight: normal;
+}
+h5.ui.header .icon {
+    float: right;
+}
+#topmenu, #footernav {
+    z-index: 9999;
+    top: 0;
+}
+.ui.dropdown>.text {
+    width: 55px;
+}
+.ui.dropdown>.dropdown.icon {
+    margin: 0 0 0 0px;
+}
+
+
+

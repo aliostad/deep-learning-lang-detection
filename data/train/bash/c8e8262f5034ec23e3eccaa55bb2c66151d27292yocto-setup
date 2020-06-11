@@ -1,0 +1,38 @@
+#! /bin/bash
+# This script sets up an yocto building environment
+# Last modified 3/8/2015
+
+# path to install yocto
+YOCTO_HOME=~
+
+# chech for user preferred yocto path
+if [ $# -gt 0 ]; then
+	YOCTO_HOME=$1
+fi
+
+# install prerequisites
+sudo apt-get -y install	build-essential git pkg-config diffstat texi2html				\
+						texinfo expat chrpath subversion libncurses5-dev	\
+						u-boot-tools help2man cvs gawk python-dev 		\
+						python-pysqlite2 unzip ccache gettext 			\
+						flex autoconf curl lzop
+
+# download repo script to manage repositories
+curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > repo
+
+# make repo executable
+chmod a+x repo
+
+# move repo to system path
+sudo mv repo /usr/local/bin/
+
+# make yocto directory
+mkdir -p $YOCTO_HOME
+cd $YOCTO_HOME
+
+# use repo to get repositories
+repo init -u https://github.com/dtran11/repo-yocto-imx6
+
+# get repo
+repo sync
+

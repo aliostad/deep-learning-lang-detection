@@ -1,0 +1,19 @@
+body,html{margin:0;height:100%}
+#editor{position:absolute;width:50%;height:100%;float:left}
+.apply{width:50%;height:100%;position:relative;float:right;background:#232323;}
+.apply .action{width:100px;position:absolute;top:0;left:0;text-align:center;padding-top:200px;}
+.apply .action input{height:60px;cursor:pointer;margin-top:20px}
+.show{margin-left:100px;height:100%;overflow:auto;background:#141414;color:#f8f8f8;font-size:12px;font:12px/19px 'Monaco','Menlo','Ubuntu Mono','Droid Sans Mono','Consolas';}
+.show #hidden_comment{color:#f00;margin:0 5px;}
+.show #hidden_comment:hover{color:#fff}
+.show h1,.show .tip{text-align:center}
+.show .tip{border-bottom:1px solid #666}
+.show ul{padding:0 0 0 3em;margin:0}
+.show li{list-style:decimal-leading-zero;height:16px;line-height:16px}
+.show .tab{padding-left:2em}
+.show .tab2{padding-left:4em}
+.show .tab3{padding-left:6em}
+.show .tab4{padding-left:8em}
+.show .str{color:#8f9d6a}
+.show .bool,.show .num{color:#cf6a4c}
+.show .comment{color:#666;margin-left:1em}

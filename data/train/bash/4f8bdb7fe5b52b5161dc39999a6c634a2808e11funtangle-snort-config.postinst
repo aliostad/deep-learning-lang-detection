@@ -1,0 +1,26 @@
+#!/bin/bash
+
+UNTANGLESNORTCONFIG_DIR=/usr/share/untangle-snort-config
+
+ourInit() {
+if [ -x /usr/sbin/invoke-rc.d ] && [ ! "`readlink /usr/sbin/invoke-rc.d`" = /bin/true ] ; then
+  invoke-rc.d $1 $2
+else
+  /etc/init.d/$1 $2
+fi
+}
+
+if [ ! -d "${UNTANGLESNORTCONFIG_DIR}/current/rules" ] ; then
+    cd ${UNTANGLESNORTCONFIG_DIR}
+    tar -xzf snortrules.tar.gz -C current
+    cd -
+fi
+
+OLD_UNTANGLE_SNORT_INIT=/etc/init.d/snort-untangle
+if [ -f ${OLD_UNTANGLE_SNORT_INIT} ] ; then
+    ourInit snort-untangle stop
+    /usr/sbin/update-rc.d snort-untangle -f disable > /dev/null 2>&1
+    rm -f ${OLD_UNTANGLE_SNORT_INIT}
+fi
+
+exit 0

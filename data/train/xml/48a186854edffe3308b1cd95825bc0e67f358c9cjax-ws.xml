@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="UsuarioService">
+      <implementation-class>com.plussoluciones.cade.servicio.UsuarioService</implementation-class>
+    </service>
+    <service name="CategoriaService">
+      <implementation-class>com.plussoluciones.cade.servicio.CategoriaService</implementation-class>
+    </service>
+    <service name="TicketService">
+      <implementation-class>com.plussoluciones.cade.servicio.TicketService</implementation-class>
+    </service>
+  </services>
+  <clients/>
+</jax-ws>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<axis2 xmlns="http://www.netbeans.org/ns/axis2/1">
+    <service name="ExamTypeService">
+        <service-class>ExamTypeService</service-class>
+    </service>
+    <libraries>
+        <library-ref name="VkurseAPI.jar"/>
+        <library-ref name="VkurseAPI_DB.jar"/>
+        <library-ref name="mysql-connector-java-5.0.8-bin.jar"/>
+        <library-ref name="postgresql-8.4-701.jdbc4.jar"/>
+    </libraries>
+    <service name="GroupService">
+        <service-class>GroupService</service-class>
+    </service>
+    <service name="LectureService">
+        <service-class>LectureService</service-class>
+    </service>
+    <service name="LectureTypeService">
+        <service-class>LectureTypeService</service-class>
+    </service>
+    <service name="RoomService">
+        <service-class>RoomService</service-class>
+    </service>
+    <service name="ScheduleChangeService">
+        <service-class>ScheduleChangeService</service-class>
+    </service>
+    <service name="ScheduleService">
+        <service-class>ScheduleService</service-class>
+    </service>
+    <service name="TeacherService">
+        <service-class>TeacherService</service-class>
+    </service>
+</axis2>
+
+

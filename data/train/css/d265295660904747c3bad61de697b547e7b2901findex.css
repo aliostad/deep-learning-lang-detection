@@ -1,0 +1,78 @@
+/** @define Nav; use strict */
+
+:root {
+  --nav-link-size-sm: 2.8888rem;
+  --nav-item-width-sm: 20%;
+  --nav-link-size-md: calc(var(--rhythm) * 3);
+  --nav-link-size-lg: calc(var(--rhythm) * 3);
+  --nav-font-family: sans-serif;
+}
+
+.Nav {
+  font-family: var(--nav-font-family);
+}
+
+.Nav-item {
+  font-weight: 400;
+  text-align: center;
+  font-size: .6666rem;
+  text-align: center;
+}
+
+.Nav-link {
+  display: inline-block;
+  color: #aaaaaa;
+  line-height: 1;
+  width: var(--nav-link-size-sm);
+  height: var(--nav-link-size-sm);
+  padding: calc(var(--nav-link-size-sm) * .125);
+  transition: all .25s ease-out;
+}
+
+.Nav-link.is-active {
+  color: var(--color-off-black);
+}
+
+.Nav-icon {
+  display: inline-block;
+  height: 70%;
+}
+
+.Nav-iconTitle {
+  height: var(--nav-link-size-sm);
+}
+
+.Nav-text {
+  display: block;
+  line-height: 1;
+}
+
+@media (--sm-viewport) {
+  .Nav {
+    margin: 0 auto;
+    font-size: 0; /*Remove space from inline-block*/
+  }
+  .Nav-item {
+    display: inline-block;
+    width: var(--nav-item-width-sm);
+  }
+}
+
+@media (--gtmd-viewport) {
+  .Nav-link {
+    width: var(--nav-link-size-md);
+    height: var(--nav-link-size-md);
+    padding: calc(var(--nav-link-size-md) * .125);
+  }
+  .Nav-link:hover {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@media (--gtlg-viewport) {
+  .Nav-link {
+    width: var(--nav-link-size-lg);
+    height: var(--nav-link-size-lg);
+    padding: calc(var(--nav-link-size-lg) * .125);
+  }
+}

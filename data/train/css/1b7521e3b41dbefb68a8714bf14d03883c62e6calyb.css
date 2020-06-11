@@ -1,0 +1,103 @@
+*{
+margin:0;
+padding:0;
+}
+#main{
+margin:20px auto;
+width:95%;
+background:pink;
+border:1px solid black;
+}
+/*留言区*/
+.write{
+overflow:hidden;
+margin-bottom:10px;
+padding:10px;
+}
+.write .liuyan{
+width:100%;
+margin-bottom:10px;
+}
+.write .user{
+float:left;
+}
+.write .btn{
+float:right;
+}
+/*留言显示区*/
+.messages{
+margin:10px 10px;
+}
+.message{
+width:100%;
+
+margin-bottom:10px;
+border-bottom:1px solid black;
+}
+.message .info{
+overflow:hidden;
+margin-bottom:10px;
+}
+.message .user{
+float:left;
+}
+.message .time{
+float:right;
+color:#fff;
+}
+.message .delete{
+float:right;
+margin-left:10px;
+}
+.message .content{
+line-height:150%;
+}
+.adminer{
+text-align:center;
+}
+/*分页区*/
+.pages{
+overflow:hidden;
+}
+.page{
+float:right;
+color:red;
+margin-right:10px;
+}
+/*登录区*/
+.login{
+width:30%;
+height:210px;
+margin:50px auto;
+border:1px solid black;
+background:#ff9966;
+
+text-align:center;
+}
+.login .username,.login .password,.login .btn,.login h1{
+margin:10px auto;
+
+}
+
+.login .username input,.login .password input{
+border-bottom:3px solid blue;
+box-shadow:3px 3px 3px #33ccff;
+height:30px;
+font-size:18px;
+color:#9900ff;
+}
+.login .btn{
+margin-left:30px;
+font-size:18px;
+}
+.login .btn input{
+width:100px;
+height:30px;
+}
+.login .btn input:hover{
+border:1px solid green;
+font-size:20px;
+width:100px;
+
+background:#ffcc00;
+}

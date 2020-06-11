@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<rolemap>
+  <permissions>
+    <!-- -*- extra stuff goes here -*- -->
+    <!--<permission name="bungenicms.repository: Add Repository Community" acquire="False">
+      <role name="Manager" />
+    </permission>
+    <permission name="bungenicms.repository: Add Document Repository" acquire="False">
+      <role name="Manager" />
+    </permission>-->
+    <permission name="bungenicms.repository: Add Repository Item" acquire="False">
+      <role name="Manager" />
+      <role name="Contributor" />
+    </permission>
+    <permission name="bungenicms.repository: Add Repository Collection" acquire="False">
+      <role name="Manager" />
+    </permission>
+  </permissions>
+</rolemap>

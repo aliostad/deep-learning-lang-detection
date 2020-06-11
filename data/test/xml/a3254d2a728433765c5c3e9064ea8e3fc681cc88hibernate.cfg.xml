@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/3dp?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <!--<property name="hibernate.connection.password">123456</property>-->
+    <property name="hibernate.connection.password">123456</property>
+    <mapping resource="hibernateMapping/Pago.xml"/>
+    <mapping resource="hibernateMapping/RegistroPago.xml"/>
+    <mapping resource="hibernateMapping/Contrato.xml"/>
+    <mapping resource="hibernateMapping/Propiedad.xml"/>
+    <mapping resource="hibernateMapping/Disenio.xml"/>
+    <mapping resource="hibernateMapping/DiseniadorPropiedad.xml"/>
+    <mapping resource="hibernateMapping/Usuario.xml"/>
+    <mapping resource="hibernateMapping/Mensaje.xml"/>
+    <mapping resource="hibernateMapping/Colonia.xml"/>
+    <mapping resource="hibernateMapping/CodigoPostal.xml"/>
+    <mapping resource="hibernateMapping/Localidad.xml"/>
+    <mapping resource="hibernateMapping/Estado.xml"/>
+    <mapping resource="hibernateMapping/Pais.xml"/>
+    <mapping resource="hibernateMapping/Categoria.xml"/>
+    <mapping resource="hibernateMapping/Favorito.xml"/>
+    <mapping resource="hibernateMapping/Historial.xml"/>
+    <mapping resource="hibernateMapping/CatalogoFotos.xml"/>
+    <mapping resource="hibernateMapping/Publicidad.xml"/>
+    <mapping resource="hibernateMapping/DisenioPublicidad.xml"/>
+  </session-factory>
+</hibernate-configuration>

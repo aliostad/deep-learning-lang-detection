@@ -1,0 +1,32 @@
+/*글목록*/
+.boardArticle table {width:1000px}
+.boardArticle {width: 1000px; height: 100%; margin: 0 auto; position: relative;}
+.boardArticle th {padding:5px 0;border-top:2px solid #666;border-bottom:1px solid #666}
+.boardArticle td {padding:8px 0;border-bottom:1px solid #666}
+.boardArticle .no {width:60px;text-align:center}
+.boardArticle .title {text-align:center}
+.boardArticle .author {width:100px;text-align:center}
+.boardArticle .date {width:100px;text-align:center}
+.boardArticle .hit {width:40px;text-align:center}
+
+.paging {text-align: center;}
+.paging li {display: inline-block; height: 20px; margin: 0 5px; padding: 0 5px; border: 1px solid #666; background: #eee; line-height: 21px;}
+.paging li.current,
+.paging li:hover {background: #666;}
+.paging li.current,
+.paging li:hover a { color: #ddd;}
+
+/*글쓰기
+.boardWrite table {width:720px}
+.boardWrite th {width:100px;padding:5px;text-align:right;vertical-align: top}
+.boardWrite td {width:620px;padding:5px}
+.boardWrite #title {width:550px;}
+.boardWrite #content {width:550px;height:300px}
+*/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+article {
+	display: block;
+}

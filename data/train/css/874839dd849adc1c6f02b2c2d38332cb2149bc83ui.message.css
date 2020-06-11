@@ -1,0 +1,36 @@
+.ui-message {
+  font-family: courier new;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.ui-message-body {
+  position: absolute;
+  text-align: right;
+  width: 100%;
+  z-index: 800;
+}
+.ui-message-list {
+  margin: 0;
+  padding: 0;
+}
+.ui-message-item {
+  height: 24px;
+  list-style-type: none;
+  padding-right: 4px;
+}
+.ui-message-name {
+  text-shadow: 2px 2px 1px black;
+}
+.ui-message-team-a,
+.ui-message-team-b,
+.ui-message-team-r {
+  color: #64C461;
+}
+.ui-message-team-g {
+  color: #FFB709;
+}
+.ui-message-symbol {
+  height: 32px;
+  margin: 0 8px;
+  width: 32px;
+}

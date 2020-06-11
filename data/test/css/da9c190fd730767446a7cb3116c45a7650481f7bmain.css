@@ -1,0 +1,142 @@
+body {
+  padding-top: 50px;
+  background-color: #f0f3f3;
+}
+
+/* toc */
+.my-toc {
+  background-color: #f7f5fa;
+  border-radius: 5px;
+  padding-top:    10px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* first and second level */
+.my-toc .nav > li > a {
+  display: block;
+  color: #777;
+  padding: 5px 20px;
+}
+.my-toc .nav .nav > li > a {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 30px;
+  font-size: 90%;
+}
+.my-toc .nav .nav .nav > li > a {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 40px;
+  font-size: 90%;
+}
+.my-toc .nav .nav .nav .nav > li > a {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 50px;
+  font-size: 90%;
+}
+.my-toc .nav .nav .nav .nav .nav > li > a {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 60px;
+  font-size: 90%;
+}
+
+/* hover and active style */
+.my-toc .nav > li > a:hover,
+.my-toc .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #e5e3e9;
+}
+.my-toc .nav > .active > a,
+.my-toc .nav > .active:hover > a,
+.my-toc .nav > .active:focus > a {
+  font-weight: bold;
+  color: #555;
+  background-color: transparent;
+/*  border-left: 1px solid #aaa; */
+}
+
+/* second level hide and show*/
+.my-toc .nav .nav {
+  display: none;
+}
+.my-toc .nav .nav .nav {
+  display: none;
+}
+.my-toc .nav .nav .nav .nav {
+  display: none;
+}
+.my-toc .nav .nav .nav .nav .nav {
+  display: none;
+}
+
+.my-toc .nav .active > .nav {
+  display: block;
+}
+.my-toc .nav .nav .active > .nav {
+  display: block;
+}
+.my-toc .nav .nav .nav .active > .nav {
+  display: block;
+}
+.my-toc .nav .nav .nav .nav .active > .nav {
+  display: block;
+}
+
+/* blockquote */
+blockquote {
+  border-left: 5px solid #ddd;
+  background-color: #eee;
+}
+
+blockquote > p, blockquote > li {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+.my-warning-block {
+  border-left: 5px solid #faa;
+  background-color: #fee;
+}
+
+/* next botton */
+.my-next-btn {
+  float: right;
+}
+
+/* section */
+h1[id],
+h2[id],
+h3[id],
+h4[id] {
+  padding-top: 55px;
+  margin-top: -40px;
+}
+
+/* anchor */
+.my-anchor {
+  height: 0px;
+  padding-top: 50px;
+  margin-top: -50px;
+}
+
+/* customize code block */
+code {
+  color: #333333;
+  background-color: #eaeaea;
+}
+
+/* make horizontal line visible*/
+hr {
+  border-color: #ddd;
+}
+
+/* footer */
+footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}

@@ -1,0 +1,148 @@
+.button {
+  /* Positioning */
+
+  /* Box-model */
+
+  margin: 5px;
+  padding: 12px 12px;
+
+  /* Typography */
+
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  text-transform: capitalize;
+
+  font-size: 0.8em;
+  font-weight: normal;
+
+  /* Visual */
+
+  border: 0 none;
+  border-radius: 3px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* Misc */
+
+  overflow: hidden;
+  cursor: pointer;
+
+  flex-grow: 1;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  .button {
+    flex-grow: 1;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  .button {
+    flex-grow: 1;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .button {
+    flex-grow: 0.5;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .button {
+    flex-grow: 0.1;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .button {
+    flex-grow: 0.1;
+  }
+}
+
+.button-primary {
+  /* Positioning */
+
+  /* Box-model */
+
+  /* Typography */
+
+  /* Visual */
+
+  background-color: #48217a;
+  color: #ffffff;
+
+  /* Misc */
+}
+
+.button-outline {
+  /* Positioning */
+
+  /* Box-model */
+
+  /* Typography */
+
+  /* Visual */
+
+  background-color: #ffffff;
+  color: #000000;
+
+  border: solid #000000 thin;
+
+  /* Misc */
+}
+
+.button:hover {
+  /* Positioning */
+
+  /* Box-model */
+
+  /* Typography */
+
+  /* Visual */
+
+  transition: all 60ms ease;
+
+  /* Misc */
+
+  opacity: .85;
+}
+
+.button:active {
+  /* Positioning */
+
+  /* Box-model */
+
+  /* Typography */
+
+  /* Visual */
+
+  transition: all 60ms ease;
+
+  /* Misc */
+
+  opacity: .75;
+}
+
+.button:focus {
+  /* Positioning */
+
+  /* Box-model */
+
+  /* Typography */
+
+  /* Visual */
+
+  outline: 1px dotted #959595;
+  outline-offset: -4px;
+
+  /* Misc */
+}

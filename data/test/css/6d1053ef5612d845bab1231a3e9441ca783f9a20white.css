@@ -1,0 +1,12 @@
+/* NAV MENU - WHITE DEFAULT */
+/* Background Color */
+#header nav ul:after, #header nav ul:before { border-color:#fff; }
+#header nav ul span { background:#fff; }
+#header nav ul span:before, #header nav ul span:after { border-bottom-color:#fff; }
+/* Text Color */
+#header nav ul a { color:#000; }
+/* Hover State */
+#header nav ul a:hover span, #header nav ul a.waiting span { background:#eee; }
+/* Ribbon shadows */
+#header nav ul span:before {  border-right-color: #ccc; }
+#header nav ul span:after { border-left-color: #ccc; }

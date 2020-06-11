@@ -1,0 +1,44 @@
+#nav {
+list-style:none;
+width:600px;
+height:37px;
+margin:20px auto;
+overflow:hidden;
+
+}
+
+#nav li {
+float:left;
+}
+
+#nav a {
+float:left;
+width:113px;
+padding-top:50px;
+outline:0;
+background:url(http://www.websitecodetutorials.com/code/images/sprites-example.gif);
+}
+/* Default State */
+#nav #a{background-position:0 0;} 
+#nav #b{background-position:-101px 0;}
+#nav #c{background-position:-217px 0;}
+#nav #d{background-position:-323px 0;}
+#nav #e{background-position:-438px 0;}
+/* Hover/Focus State */
+#nav #a:hover,#nav #a:focus{background-position:0 -37px;}
+#nav #b:hover,#nav #b:focus{background-position:-101px -37px;}
+#nav #c:hover,#nav #c:focus{background-position:-217px -37px;}
+#nav #d:hover,#nav #d:focus{background-position:-323px -37px;}
+#nav #e:hover,#nav #e:focus{background-position:-438px -37px;}
+/* Active State */
+#nav #a:active{background-position:0 -75px;}
+#nav #b:active{background-position:-101px -75px;}
+#nav #c:active{background-position:-217px -75px;}
+#nav #d:active{background-position:-323px -75px;}
+#nav #e:active{background-position:-438px -75px;}
+/* Current Page */
+/*#home #nav #a{background-position:0 -150px;}
+#about #nav #b{background-position:-150px -150px;}
+#services #nav #c{background-position:-300px -150px;}
+#map #nav #d{background-position:-450px -150px;}
+#contact #nav #e{background-position:-600px -150px;}*/

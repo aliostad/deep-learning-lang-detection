@@ -1,0 +1,26 @@
+#!/bin/sh
+
+if [ "$1" == "config" ];then
+	echo "multigraph load
+graph_title Load averages
+graph_args --base 1000 -l 0
+graph_vlabel load average
+graph_scale no
+graph_category system
+loadone.label load (1min)
+load.label load (5min)
+loadfifteen.label load (15min)
+
+multigraph processes
+graph_title System Processes
+graph_args --base 1000 -l 0
+graph_vlabel processes
+graph_scale no
+graph_category system
+active.label active procs
+running.label total running procs"
+	exit 0
+fi
+
+/usr/bin/awk '{print "multigraph load\nloadone.value "$1"\nload.value "$2"\nloadfifteen.value "$3}' /proc/loadavg
+/usr/bin/awk '{print $4}' /proc/loadavg|/bin/sed -e 's/^/multigraph processes\nactive.value /;s/\//\nrunning.value /'

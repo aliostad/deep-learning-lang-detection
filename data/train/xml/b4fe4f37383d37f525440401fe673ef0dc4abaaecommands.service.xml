@@ -1,0 +1,13 @@
+<service-components>
+	<service-component group-id="commands" type="org.tinygroup.commandservice.CommandServiceImpl" artifact-id="aaa">
+		<service-method name="execute" local-name="execute" service-id="serviceCommandExecute" version="" description="execute" method-name="execute">
+			<service-parameters>
+				<service-parameter name="sysName" type="java.lang.String" required="true" is-array="false">
+				</service-parameter>
+				<service-parameter name="cmd" type="java.lang.String" required="true" is-array="false">
+				</service-parameter>
+			</service-parameters>
+			
+		</service-method>
+	</service-component>
+</service-components>

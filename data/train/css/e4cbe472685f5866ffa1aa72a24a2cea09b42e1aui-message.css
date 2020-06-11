@@ -1,0 +1,45 @@
+﻿.ui-message {
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.ui-message-body {
+   position: absolute;
+   right: 5px;
+   text-align: right;
+   top: 5px;
+   width: 100%;
+   z-index: 800;
+}
+
+.ui-message-list {
+   margin: 0;
+   padding: 0;
+}
+
+.ui-message-item {
+   height: 24px;
+   list-style-type: none;
+   padding-right: 4px;
+   text-shadow: 2px 2px 1px #000000;
+}
+
+.ui-message-team-ch {
+   color: #FFB7B4;
+}
+
+.ui-message-team-eu {
+   color: #819DFF;
+}
+
+.ui-message-team-mec {
+   color: #FFD191;
+}
+
+.ui-message-team-none {
+   color: #969698;
+}
+
+.ui-message-team-us {
+   color: #44D5FF;
+}

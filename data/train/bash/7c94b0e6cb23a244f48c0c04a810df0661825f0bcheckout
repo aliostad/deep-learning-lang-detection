@@ -1,0 +1,32 @@
+#!/bin/sh -ex
+
+#
+# Usage: checkout <repo>:<ref> [<repo>:<ref> <repo>:<ref>...]
+#
+
+. `dirname "$0"`/functions
+
+CACHE_DIR=$(pwd)
+REPO_ROOT=git@github.com:cfengine
+
+for repo_ref in "$@"; do
+
+  repo=${repo_ref%:*}
+  ref=${repo_ref#*:}
+
+  cache="${CACHE_DIR}/${repo}-cache"
+  if ! [ -d ${cache} ]; then
+    mkdir -p ${cache}
+    (cd ${cache}
+     git init --bare) || false
+  fi
+  
+  (cd ${cache};
+   git fetch --tags $REPO_ROOT/$repo '+refs/heads/*:refs/heads/*') || false
+
+  mkdir -p ${BASEDIR}/$repo
+  (cd ${BASEDIR}/$repo
+   git init
+   git fetch -n ${cache} refs/heads/${ref}:refs/heads/build || git fetch -n ${cache} refs/tags/${ref}:refs/tags/build
+   git checkout build) || false
+done

@@ -1,0 +1,38 @@
+<xml>
+   <service_ids territory="sceasia">
+    <service_id>HP9000-NPHQ00001_00</service_id>
+    <service_id>HP9000-NPHQ00004_00</service_id>
+    <service_id>HP0102-NPHR00002_00</service_id>
+    <service_id>HP0700-NPHR00003_00</service_id>
+    <service_id>HP0404-NPHR00004_00</service_id>
+    <service_id>HP0024-NPHR00005_00</service_id>
+    <service_id>HP2905-NPHR00006_00</service_id>
+    <service_id>HP9000-NPHQ00006_00</service_id>
+    <service_id>JP0700-NPHR00007_00</service_id>
+    <service_id>HP0646-NPHR00009_00</service_id>
+    <service_id>HP0743-NPHR00008_00</service_id>
+    <service_id>HP0082-NPHR00010_00</service_id>
+    <service_id>HP9000-NPHQ00007_00</service_id>
+    <service_id>HP9000-NPHQ00005_00</service_id>
+    <service_id>HP0101-NPHR00011_00</service_id>
+    <service_id>HP9000-NPHQ00008_00</service_id>
+    <service_id>HP9000-NPHQ00010_00</service_id>
+    <service_id>HP9000-NPHQ00011_00</service_id>
+    <service_id>HT4001-NPHR00012_00</service_id>
+    <service_id>HP9000-NPHQ00009_00</service_id>
+    <service_id>HT4002-NPHR00014_00</service_id>
+    <service_id>HP1017-NPHR00015_00</service_id>
+    <service_id>HT4007-NPHR00016_00</service_id>
+	<service_id>HT4004-NPHR00017_00</service_id>
+	<service_id>HP0025-NPHR00021_00</service_id>
+	<service_id>HT4006-NPHR00019_00</service_id>
+	<service_id>HT4005-NPHR00020_00</service_id>
+	<service_id>HT4014-NPHR00023_00</service_id>
+    <service_id>HP0085-NPHR00026_00</service_id>
+    <service_id>HT4003-NPHR00027_00</service_id>
+	<service_id>HP0177-NPHR00013_00</service_id>
+	<service_id>HT4010-NPHR00022_00</service_id>
+	<service_id>HT4002-NPHR00029_00</service_id>
+	<service_id>HT4002-NPHR00033_00</service_id>
+  </service_ids>
+</xml>

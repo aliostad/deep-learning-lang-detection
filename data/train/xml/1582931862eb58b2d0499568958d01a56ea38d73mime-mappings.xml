@@ -1,0 +1,241 @@
+<?xml version="1.0" ?>
+<!--+
+	| Mime mapping for popular file types.
+	
+	| Author:  Collin VanDyck
+	| Version: $Id$
+	| Since:   3.x
+	+-->
+<mime-mappings>
+
+	<mapping>
+		<extension>html</extension>
+		<value>text/html</value>
+	</mapping>
+	<mapping>
+		<extension>htm</extension>
+		<value>text/html</value>
+	</mapping>
+	<mapping>
+		<extension>xml</extension>
+		<value>text/xml</value>
+	</mapping>
+	<mapping>
+		<extension>pdf</extension>
+		<value>application/pdf</value>
+	</mapping>
+	<mapping>
+		<extension>zip</extension>
+		<value>application/zip</value>
+	</mapping>
+	<mapping>
+		<extension>jpg</extension>
+		<value>image/jpeg</value>
+	</mapping>
+	<mapping>
+		<extension>jpeg</extension>
+		<value>image/jpeg</value>
+	</mapping>
+	<mapping>
+		<extension>gif</extension>
+		<value>image/gif</value>
+	</mapping>
+	<mapping>
+		<extension>ief</extension>
+		<value>image/ief</value>
+	</mapping>
+	<mapping>
+		<extension>tiff</extension>
+		<value>image/tiff</value>
+	</mapping>
+	<mapping>
+		<extension>tif</extension>
+		<value>image/tiff</value>
+	</mapping>
+	<mapping>
+		<extension>mpg</extension>
+		<value>video/mpeg</value>
+	</mapping>
+	<mapping>
+		<extension>mpeg</extension>
+		<value>video/mpeg</value>
+	</mapping>
+	<mapping>
+		<extension>swf</extension>
+		<value>application/x-shockwave/flash</value>
+	</mapping>
+	<mapping>
+		<extension>fla</extension>
+		<value>application/x-shockwave/flash</value>
+	</mapping>
+	<mapping>
+		<extension>css</extension>
+		<value>text/css</value>
+	</mapping>
+	<mapping>
+		<extension>txt</extension>
+		<value>text/plain</value>
+	</mapping>
+	<mapping>
+		<extension>rtf</extension>
+		<value>application/rtf</value>
+	</mapping>
+	<mapping>
+		<extension>doc</extension>
+		<value>application/msword</value>
+	</mapping>
+	<mapping>
+		<extension>xls</extension>
+		<value>application/vnd.ms-excel</value>
+	</mapping>
+	<mapping>
+		<extension>ppt</extension>
+		<value>application/vnd.ms-powerpoint</value>
+	</mapping>
+	<mapping>
+		<extension>ico</extension>
+		<value>image/x-icon</value>
+	</mapping>
+	<mapping>
+		<extension>png</extension>
+		<value>image/png</value>
+	</mapping>
+	<mapping>
+		<extension>bmp</extension>
+		<value>image/bmp</value>
+	</mapping>
+	<mapping>
+		<extension>mov</extension>
+		<value>video/quicktime</value>
+	</mapping>
+	<mapping>
+		<extension>vsd</extension>
+		<value>application/visio</value>
+	</mapping>
+	<mapping>
+		<extension>psd</extension>
+		<value>application/photoshop</value>
+	</mapping>
+	<mapping>
+		<extension>mp3</extension>
+		<value>audio/mpeg</value>
+	</mapping>
+	<mapping>
+		<extension>pps</extension>
+		<value>application/vnd.ms-powerpoint</value>
+	</mapping>
+
+	<!-- 
+		Office 2007/Open XML document mime types added 10/18/2007 by Zach
+		see: http://www.bram.us/2007/05/25/office-2007-mime-types-for-iis/
+	 -->
+	 
+	<mapping>
+		<extension>docm</extension>
+		<value>application/vnd.ms-word.document.macroEnabled.12</value>
+	</mapping>
+
+	<mapping>
+		<extension>docx</extension>
+		<value>
+			application/vnd.openxmlformats-officedocument.wordprocessingml.document
+		</value>
+	</mapping>
+
+	<mapping>
+		<extension>dotm</extension>
+		<value>application/vnd.ms-word.template.macroEnabled.12</value>
+	</mapping>
+
+	<mapping>
+		<extension>dotx</extension>
+		<value>
+			application/vnd.openxmlformats-officedocument.wordprocessingml.template
+		</value>
+	</mapping>
+
+	<mapping>
+		<extension>potm</extension>
+		<value>
+			application/vnd.ms-powerpoint.template.macroEnabled.12
+		</value>
+	</mapping>
+
+	<mapping>
+		<extension>potx</extension>
+		<value>
+			application/vnd.openxmlformats-officedocument.presentationml.template
+		</value>
+	</mapping>
+
+	<mapping>
+		<extension>ppam</extension>
+		<value>
+			application/vnd.ms-powerpoint.addin.macroEnabled.12
+		</value>
+	</mapping>
+
+	<mapping>
+		<extension>ppsm</extension>
+		<value>
+			application/vnd.ms-powerpoint.slideshow.macroEnabled.12
+		</value>
+	</mapping>
+
+	<mapping>
+		<extension>ppsx</extension>
+		<value>
+			application/vnd.openxmlformats-officedocument.presentationml.slideshow
+		</value>
+	</mapping>
+
+	<mapping>
+		<extension>pptm</extension>
+		<value>
+			application/vnd.ms-powerpoint.presentation.macroEnabled.12
+		</value>
+	</mapping>
+
+	<mapping>
+		<extension>pptx</extension>
+		<value>
+			application/vnd.openxmlformats-officedocument.presentationml.presentation
+		</value>
+	</mapping>
+
+	<mapping>
+		<extension>xlam</extension>
+		<value>application/vnd.ms-excel.addin.macroEnabled.12</value>
+	</mapping>
+
+	<mapping>
+		<extension>xlsb</extension>
+		<value>
+			application/vnd.ms-excel.sheet.binary.macroEnabled.12
+		</value>
+	</mapping>
+
+	<mapping>
+		<extension>xlsm</extension>
+		<value>application/vnd.ms-excel.sheet.macroEnabled.12</value>
+	</mapping>
+
+	<mapping>
+		<extension>xlsx</extension>
+		<value>
+			application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+		</value>
+	</mapping>
+
+	<mapping>
+		<extension>xltm</extension>
+		<value>application/vnd.ms-excel.template.macroEnabled.12</value>
+	</mapping>
+
+	<mapping>
+		<extension>xltx</extension>
+		<value>
+			application/vnd.openxmlformats-officedocument.spreadsheetml.template
+		</value>
+	</mapping>
+</mime-mappings>

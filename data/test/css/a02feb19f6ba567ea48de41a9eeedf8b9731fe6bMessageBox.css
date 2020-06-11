@@ -1,0 +1,42 @@
+.messageBox {
+	overflow: hidden;
+}
+.messageBox .message {
+	display: none;
+	background-position: center left;
+	line-height: 1.2;
+	margin: 1px 0;
+	padding: 2px;
+	padding-left: 22px;
+}
+.messageBox .message.hasMessage {
+	display: block;
+}
+.messageBox .message.notice	{
+	background-image: url('/layout/notice.png');
+	border: solid 1px #b1cff5;
+}
+.messageBox .message.alert	{
+	background-image: url('/layout/alert.png');
+	border: solid 1px #fdc88a;
+}
+.messageBox .message.error	{
+	background-image: url('/layout/error.png');
+	border: solid 1px #e46969;
+}
+
+.message.notice	{
+	background-color: #ccdff6;
+}
+.message.alert	{
+	background-color: #f7ead4;
+}
+.message.error	{
+	background-color: #ffc0c0;
+}
+
+.message.notice a,
+.message.alert a,
+.message.error a {
+	color: #ffffff;
+}

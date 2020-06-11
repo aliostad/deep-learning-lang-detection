@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProcessMap>
+   
+   <ProcessPackage>
+      <packageName>org.vast.sensorml.geoLocationProcesses</packageName>
+   </ProcessPackage>
+   
+   <Process>
+      <uri>urn:ogc:def:process:gammaSpecific:1.0</uri>
+      <class>org.sensorML.process.GammaSpecific_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:XMPP:1.0</uri>
+      <class>org.sensorML.process.XMPP_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:vast:def:process:equationSolver:1.0</uri>
+      <class>org.sensorML.process.EquationSolver_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:CSM:frameSensorModel</uri>
+      <class>org.sensorML.process.CSM_FrameCameraModel_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:CSM:1.0:FrameSensorModel</uri>
+      <class>org.sensorML.process.CSM_FrameCameraModel_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:CSM:frameSensorModel2</uri>
+      <class>org.sensorML.process.CSM_FrameCameraModel_Process2</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:gridBuilder:1.0</uri>
+      <class>org.sensorML.process.GridBuilder_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:vast:def:process:binaryOperation:1.0</uri>
+      <class>org.sensorML.process.BinaryOperation_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:vast:def:process:printer:1.0</uri>
+      <class>org.sensorML.process.Printer_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:greaterThanInBinary:1.0</uri>
+      <class>org.sensorML.process.GreaterThanInBinary_Process</class>
+   </Process>
+      
+   <Process>
+      <uri>urn:ogc:def:process:dataArrayBuilder:1.0</uri>
+      <class>org.sensorML.process.DataArrayBuilder_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:reconstructedDataArrayBuilder:1.0</uri>
+      <class>org.sensorML.process.ReconstructedDataArrayBuilder_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:atomizer:1.0</uri>
+      <class>org.sensorML.process.Atomizer_Process</class>
+   </Process>
+
+   <Process>
+      <uri>urn:ogc:def:process:counter:1.0</uri>
+      <class>org.sensorML.process.Counter_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:arrayBuilder:1.0</uri>
+      <class>org.sensorML.process.ArrayBuilder_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:timeSync:1.0</uri>
+      <class>org.sensorML.process.TimeSynchronizer_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:LUT1D:1.0</uri>
+      <class>org.sensorML.process.LookUpTable1D_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:pos2Matrix3:1.0</uri>
+      <class>org.sensorML.process.Pos2Matrix3_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:pos2Matrix4:1.0</uri>
+      <class>org.sensorML.process.Pos2Matrix4_Process</class>
+   </Process>
+   
+   <!-- Need to be removed - kept only for backward compatibility -->
+   <Process>
+      <uri>urn:ogc:def:process:pos2Matrix:1.0</uri>
+      <class>org.sensorML.process.Pos2Matrix4_Process</class>
+   </Process>
+   <!-- -->
+   
+   <Process>
+      <uri>urn:ogc:def:process:vectorMatrixMultiplication:1.0</uri>
+      <class>org.sensorML.process.VectorMatrixMultiplication_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:positionTransform:1.0</uri>
+      <class>org.sensorML.process.PositionTransform_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:locationTransform:1.0</uri>
+      <class>org.sensorML.process.LocationTransform_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:timeTransform:1.0</uri>
+      <class>org.sensorML.process.TimeTransform_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:geocentricPointing:1.0</uri>
+      <class>org.sensorML.process.GeocentricPointingMatrix_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:nadirPointing4:1.0</uri>
+      <class>org.sensorML.process.NadirPointingMatrix4_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:nadirPointing3:1.0</uri>
+      <class>org.sensorML.process.NadirPointingMatrix3_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:ENUPointing3:1.0</uri>
+      <class>org.sensorML.process.ENUPointingMatrix3_Process</class>
+   </Process>
+      
+   <Process>
+      <uri>urn:ogc:def:process:rayIntersectEllipsoid:1.0</uri>
+      <class>org.sensorML.process.RayIntersectEllipsoid2_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:rayIntersectEllipsoid:1.1</uri>
+      <class>org.sensorML.process.RayIntersectEllipsoid3_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:rayIntersectSphere:1.0</uri>
+      <class>org.sensorML.process.RayIntersectSphere_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:rayIntersectTerrain:1.0</uri>
+      <class>org.sensorML.process.RayIntersectTerrain_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:vast:def:process:tleParser:1.0</uri>
+      <class>org.sensorML.process.TLEParser2_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:SGP4:1.0</uri>
+      <class>org.sensorML.process.SGP4_OrbitalModel_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:trueHeadingTransform:1.0</uri>
+      <class>org.sensorML.process.TrueHeadingMatrix_process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:eciToEcef:1.0</uri>
+      <class>org.sensorML.process.ECItoECEF_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:eciVelToEcef:1.0</uri>
+      <class>org.sensorML.process.ECIVeltoECEF_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:ECEFToLLA:1.0</uri>
+      <class>org.sensorML.process.ECEFToLLA_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:LLAtoECEF:2.0</uri>
+      <class>org.sensorML.process.LLAToECEF2_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:LLAToECEF:1.0</uri>
+      <class>org.sensorML.process.LLAToECEF_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:WMS:1.0</uri>
+      <class>org.sensorML.process.WMS_Process</class>
+   </Process> 
+   
+   <Process>
+      <uri>urn:ogc:def:process:WCS:1.0</uri>
+      <class>org.sensorML.process.WCS_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:WCS:2.0</uri>
+      <class>org.sensorML.process.WCS_Process2</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:WCS_image:2.0</uri>
+      <class>org.vast.stt.process.WCS_Image_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:SOS:1.0</uri>
+      <class>org.sensorML.process.SOS_Process</class>
+   </Process>
+   
+   <Process>
+      <uri>urn:ogc:def:process:flatGridGenerator:1.0</uri>
+      <class>org.sensorML.process.FlatGridGenerator_Process</class>
+   </Process>
+   
+   
+   <!--========================================-->
+   <!-- Create a component when using Detector -->
+   <!--========================================-->
+   <Process>
+      <uri>urn:ogc:def:process:1.0:detector</uri>
+      <class>org.vast.sensorML.system.SMLComponent</class>
+   </Process>
+   
+</ProcessMap>

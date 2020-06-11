@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+div {
+	outline: 1px dotted lime;
+}
+
+div.Container {
+	width: 970px;
+	margin: 0 auto;
+}
+	div.Container h1 {
+		text-align: center;
+	}
+	div#AddClass {
+		width: 970px;
+		height: 100px;
+	}
+		#AddClass button, #AddClass p {
+			display: inline-block;
+		}
+	div#After {
+		width: 970px;
+		height: 100px;
+		/*display: inline-block;*/
+	}
+		#After button, #After p {
+			display: inline-block;
+		}
+	div.#Append {
+		width: 970px;
+		height: 100px;
+		display: inline-block;
+	}
+		#Append button, #Append p {
+			display: inline-block;
+		}
+	div#Attr {
+		width: 970px;
+		height: 100px;
+		/*display: inline-block;*/
+	}
+		#Attr button, #Attr a {
+			display: inline-block;
+		}
+
+.red{
+	color: red;
+}
+

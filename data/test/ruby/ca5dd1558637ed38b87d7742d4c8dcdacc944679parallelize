@@ -1,0 +1,105 @@
+#!/usr/bin/env ruby
+require 'rubygems'
+require 'commander/import'
+
+program :version, '0.1'
+program :description, 'Attempt to speed up (serial) processing of large files by processing chunks in parallel.'
+
+default_command :stdout
+
+command :stdout do |c|
+  c.syntax = 'parallelize stdout --chunks=N -- CMD [--CMD-OPTS] [CMD-ARGS] {INPUT}'
+  c.description = 'Split INPUT into N chunks and process with CMD in parallel, gathering the output in INPUT.out'
+  c.option '--output OUTFILE', 'Where to place the output'  
+  c.option '--chunks N', Integer, 'Number of chunks (and jobs to execute in parallel)'
+  c.option '--granularity N', Integer, 'Ensure the number of lines in each chunk is divisible by N (useful for block-structured data)'
+  c.option '--nice N', Integer, 'Run the jobs with niceness N to be less of a CPU hog'
+  c.action do |args, options|
+    input_file = nil
+    input_idx = nil
+    args.each_with_index do |arg, i| 
+      if /^\{.+\}$/.match(arg)
+        input_file, input_idx = arg, i 
+        break
+      end
+    end
+    raise "Input file must be specified with {curly_braces}" unless input_idx
+    input_file = input_file[1...-1] 
+    options.default :granularity => 1, :chunks => 4, :output => "#{input_file}.out"
+    num_lines = %x[wc -l #{input_file}].chomp.to_i
+    say "Input:   #{input_file} (#{num_lines} lines)"
+    say "Output:  #{options.output}"
+    args[input_idx] = 'INPUT'
+    say "Command: #{args.join(' ')}"
+    lines_per_block = options.granularity
+    blocks = (num_lines.to_f/lines_per_block.to_f).ceil
+    blocks_per_chunk, rest = blocks.divmod(options.chunks)
+    lines_per_chunk = blocks_per_chunk * lines_per_block
+    say "#{options.chunks} chunks, #{blocks_per_chunk} blocks of #{lines_per_block} lines per chunk (plus #{rest} extra blocks in last chunk)"
+    chunk_file = "#{input_file}.chunk_00"
+    chunk_files = [chunk_file.dup]
+    chunk = nil
+    cur_chunk = 1
+    cur_block = 1
+    cur_line = 0
+    block_lines = 0
+    chunk_lines = 0
+    at_end = false
+    File.foreach(input_file) do |line| 
+      chunk = File.open(chunk_file, 'w') unless chunk
+      chunk << line
+      cur_line += 1
+      block_lines += 1
+      chunk_lines += 1
+      if block_lines == lines_per_block 
+        cur_block += 1
+        block_lines = 0
+      end
+      if block_lines == 0 and cur_block == blocks_per_chunk or cur_line == num_lines
+        at_end = true if cur_chunk == options.chunks
+        next if at_end and cur_line < num_lines
+        say "[chunk] #{chunk_lines} lines => #{chunk_file}"
+        break if at_end
+        chunk.close
+        chunk = nil
+        chunk_lines = 0
+        chunk_file.succ!
+        chunk_files << chunk_file.dup
+        cur_block = 1
+        cur_chunk += 1
+      end
+    end
+    chunk.close unless chunk.nil?
+    
+    jobs = chunk_files.collect do |chunk_file|
+      args[input_idx] = chunk_file
+      cmd = args.join(' ') + " > #{chunk_file}.out"
+      cmd = "nice -n #{options.nice} #{cmd}" if options.nice
+      pid = fork { exec cmd }
+      say "[fork PID=#{pid}] #{cmd}"
+      pid
+    end
+    all_good = jobs.all? do |pid| 
+      Process.wait(pid)
+      if $? != 0
+        say "[failed] Job with PID #{pid} returned with exit status #{$?}"
+      end
+      $? == 0
+    end
+
+    say "[cleanup] Removing chunk files"
+    File.delete *chunk_files
+
+    unless all_good
+      say "[fail] Some jobs completed with non-zero exit status"
+      exit(1)
+    end
+    
+    output_files = chunk_files.collect { |f| f + ".out" }
+    say "[recombine] #{output_files.join(' ')} => #{options.output}"
+    system "cat #{output_files.join(' ')} > #{options.output}"
+
+    say "[cleanup] Removing chunk output files"
+    File.delete *output_files
+  end
+end

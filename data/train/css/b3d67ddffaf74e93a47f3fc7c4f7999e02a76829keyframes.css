@@ -1,0 +1,70 @@
+@-webkit-keyframes blog_load{
+    0%
+    {
+        transform:scaleY(0.6);
+        transform:skewY(90deg); 
+        transform:scaleX(0.6);
+        top:200px;
+        opacity:0;
+        perspective:50em;
+}    
+    100%
+    {
+        transform:scaleY(1);
+        transform:scaleX(1);
+        transform:skewY(0deg);
+        top:0px;
+        opacity:1;
+        perspective:0em;
+    }
+}
+@keyframes blog_load{
+    0%
+    {
+        transform:scaleY(0.6);
+        transform:scaleY(30deg);
+        top:100px;
+        opacity:0;
+        perspective:50em;
+}
+    
+    100%
+    {
+        transform:scaleY(1);
+        transform:scaleY(0deg);
+        top:0px;
+        opacity:1;
+        perspective:0em;
+    }
+    
+}
+@keyframes post_load{
+    0%{
+        transform:scaleX(1);
+    }
+    100%{
+        transform:scaleX(7);
+    }
+    
+}
+@-webkit-keyframes post_load{
+    0%{
+        transform:scale(1,1);
+    }
+    100%{
+        transform:scale(7,7);
+    }
+    
+}
+
+.blog_load{
+    -webkit-animation: blog_load 0.4s ease-out;
+    animation: blog_load 0.4s ease-out;
+    opacity:1;
+}
+.post_load{
+    -webkit-animation: post_load 1s ease-out;
+    animation: post_load 1s ease-out;
+    opacity:1;
+    transform-origin:top;
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<workbook>
+    <worksheet name="sch-kontakt">
+        <section startRow="0" endRow="0">
+        </section>
+        <loop startRow="1" endRow="1" items="kontakte" var="kontakt"
+              varType="ch.emad.model.schuetu.model.Kontakt">
+            <section startRow="1" endRow="1">
+                <mapping row="1" col="0">kontakt.id</mapping>
+                <mapping row="1" col="1">kontakt.anrede</mapping>
+                <mapping row="1" col="2">kontakt.name</mapping>
+                <mapping row="1" col="3">kontakt.vorname</mapping>
+                <mapping row="1" col="4">kontakt.strasse</mapping>
+                <mapping row="1" col="5">kontakt.PLZ</mapping>
+                <mapping row="1" col="6">kontakt.ort</mapping>
+                <mapping row="1" col="7">kontakt.liste</mapping>
+                <mapping row="1" col="8">kontakt.ressor</mapping>
+                <mapping row="1" col="9">kontakt.rechnung</mapping>
+                <mapping row="1" col="10">kontakt.anzahl</mapping>
+                <mapping row="1" col="11">kontakt.preis</mapping>
+				<mapping row="1" col="12">kontakt.betrag</mapping>
+				<mapping row="1" col="13">kontakt.ESR</mapping>
+				<mapping row="1" col="14">kontakt.enabled</mapping>
+            </section>
+            <loopbreakcondition>
+                <rowcheck offset="0">
+                    <cellcheck offset="1"/>
+                </rowcheck>
+            </loopbreakcondition>
+        </loop>
+    </worksheet>
+
+</workbook>

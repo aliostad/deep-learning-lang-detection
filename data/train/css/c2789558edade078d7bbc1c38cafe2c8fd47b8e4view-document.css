@@ -1,0 +1,49 @@
+.docviewer-viewDocument .docviewer-allAnnotations,
+.docviewer-viewDocument .docviewer-text,
+.docviewer-viewDocument .docviewer-search,
+.docviewer-viewDocument .docviewer-thumbnails,
+.p0,
+.p1,
+.p2{
+  display:none;
+}
+
+.docviewer-viewDocument .p0,
+.docviewer-viewDocument .p1,
+.docviewer-viewDocument .p2{
+  display:block;
+}
+
+.docviewer-coverVisible .docviewer-viewDocument .p0,
+.docviewer-coverVisible .docviewer-viewDocument .p1,
+.docviewer-coverVisible .docviewer-viewDocument .p2{
+  background:none;
+}
+
+.docviewer-viewDocument .docviewer-annotation {
+  height: 0;
+}
+.docviewer-viewDocument .docviewer-pageNote {
+  height: auto;
+}
+.docviewer-viewDocument .docviewer-activeAnnotation {
+  height: auto;
+}
+
+.docviewer-viewDocument .docviewer-currentAnnotationPrefix,
+.docviewer-viewDocument .docviewer-totalAnnotations{
+  display:none;
+}
+
+.docviewer-viewDocument .docviewer-currentPagePrefix,
+.docviewer-viewDocument .docviewer-totalPages{
+  display:inline;
+}
+
+.docviewer-viewDocument .docviewer-coverVisible .docviewer-cover{
+  cursor:pointer !important;
+}
+
+.docviewer-viewDocument .docviewer-annotationRegionBorder {
+  display: block;
+}

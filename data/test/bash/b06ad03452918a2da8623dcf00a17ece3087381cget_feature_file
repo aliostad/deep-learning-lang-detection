@@ -1,0 +1,42 @@
+#! /bin/bash
+
+# script to get frame concatenated probability. Will have to downsample later on
+
+prob_dir=$1 #the directory containing split probabilities ../../classification/processing_scripts/train_extended_10
+event=$2 # 2 for laughter 3 for filler
+ext_win=$3 # same as the last number on $prob_dir
+results_file=$4 #just used to get frames and file ids eg ../../classification/dnn/results/all_train_output_basic_dnn.arff 
+lables_file=$5 # used to get the lables ../../classification/true_lables/train_lables
+dataset=$6 # train dev or test
+
+mkdir -p appended_prob_$dataset/laughter
+mkdir -p appended_prob_$dataset/filler
+
+if [[ "$event" == "2" ]]; then
+	save_dir=appended_prob_$dataset/laughter/$ext_win
+	mkdir -p $save_dir
+else
+	save_dir=appended_prob_$dataset/filler/$ext_win
+	mkdir -p $save_dir
+fi
+
+for files in $prob_dir/*
+do
+	echo "Processing $(basename $files)"
+
+	cut -d',' -f$event $files > $save_dir/$(basename $files)
+	limit=`expr $ext_win + $ext_win + 1`
+	count=2
+	while [[ $count -le $limit ]]	
+	do
+	#	echo $count
+		paste -d','  $save_dir/$(basename $files) <(cut -d',' -f$event $files | tail -n +$count) > $save_dir/$(basename $files).temp
+		mv $save_dir/$(basename $files).temp $save_dir/$(basename $files)
+		(( count++ ))	
+	done
+
+	grep -v ',$' $save_dir/$(basename $files) > $save_dir/$(basename $files).temp
+	paste -d',' <(grep $(basename $files) $results_file | cut -d',' -f1,2) <(cat $save_dir/$(basename $files).temp) <(grep $(basename $files) $lables_file | cut -d',' -f2) > $save_dir/$(basename $files) 
+	rm  $save_dir/$(basename $files).temp
+	
+done

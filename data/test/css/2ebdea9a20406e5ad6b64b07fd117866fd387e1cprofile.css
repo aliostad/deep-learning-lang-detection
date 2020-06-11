@@ -1,0 +1,30 @@
+#tabs {
+	width: 60em;
+	margin: 0 auto 0 auto;
+}
+#tabs table {
+	border-spacing: 20px 20px;
+}
+#tabs table td {
+	height: 47px;
+}
+.fieldname {
+	font-size: 0.8em;
+	font-weight: bold;
+}
+.fieldvalue{
+	color: grey;
+}
+#security-load, #basic-load {
+	display: none;
+}
+input[type="text"], input[type="password"] {
+	width: 14em;
+}
+.hide {
+	display: none;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+	background-color: white;
+}

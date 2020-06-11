@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+	<specVersion>
+		<major>1</major>
+		<minor>0</minor>
+	</specVersion>
+	<device>
+		<deviceType>urn:schemas-breatheaudio-com:device:receiverZone:1</deviceType>
+		<staticJson>D_BreatheAudioZone1.json</staticJson>
+		<friendlyName>BreatheAudio</friendlyName>
+		<manufacturer>Breatheaudio</manufacturer>
+		<manufacturerURL>http://www.breatheaudio.com</manufacturerURL>
+		<modelDescription>BreatheAudio over RS232</modelDescription>
+		<modelName>BreatheAudio</modelName>
+		<modelNumber>1.0</modelNumber>
+
+		<serviceList>
+			<service>
+				<serviceType>urn:micasaverde-com:service:DiscretePower:1</serviceType>
+				<serviceId>urn:micasaverde-com:serviceId:DiscretePower1</serviceId>
+				<SCPDURL>S_DiscretePower1.xml</SCPDURL>
+			</service>
+ 
+            <service>
+				<serviceType>urn:schemas-upnp-org:service:SwitchPower:1</serviceType>
+				<serviceId>urn:upnp-org:serviceId:SwitchPower1</serviceId>
+				<SCPDURL>S_SwitchPower1.xml</SCPDURL>
+			</service>
+            
+			<service>
+				<serviceType>urn:micasaverde-com:service:InputSelection:1</serviceType>
+				<serviceId>urn:micasaverde-com:serviceId:InputSelection1</serviceId>
+				<SCPDURL>S_InputSelection1.xml</SCPDURL>
+			</service>
+
+			<service>
+				<serviceType>urn:micasaverde-com:service:Volume:1</serviceType>
+				<serviceId>urn:micasaverde-com:serviceId:Volume1</serviceId>
+				<SCPDURL>S_Volume1.xml</SCPDURL>
+			</service>
+
+			<service>
+				<serviceType>urn:schemas-micasaverde-com:service:HaDevice:1</serviceType>
+				<serviceId>urn:micasaverde-com:serviceId:HaDevice1</serviceId>
+				<SCPDURL>S_HaDevice1.xml</SCPDURL>
+			</service>
+
+<!--
+			<service>
+				<serviceType>urn:breatheaudio-com:serviceId:Receiver:1</serviceType>
+				<serviceId>urn:breatheaudio-com:serviceId:Receiver1</serviceId>
+				<SCPDURL>S_BreatheAudio1.xml</SCPDURL>
+			</service>
+-->
+
+		</serviceList>
+	</device>
+</root>

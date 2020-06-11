@@ -1,0 +1,43 @@
+#!/bin/bash
+
+EXT=".gz"
+
+source ./pmig.conf
+
+function load {
+	echo Loading database $1 ...
+	pigz -dc ${BACKUP_PATH}/$1${EXT} | psql --set ON_ERROR_STOP=on $1
+}
+
+function save {
+	echo Saving database $1 ...
+	pg_dump -c $1 | pigz --best > ${BACKUP_PATH}/$1${EXT}
+}
+
+if [ -z "$BACKUP_PATH" ]; then
+	BACKUP_PATH=.
+fi 
+
+if [ -z "$1" ]; then 
+	echo usage: $0 load DATABASE_NAME or save DATABASE_NAME
+	exit
+fi
+
+if [ -z "$2" ] && [ -z "$DATABASES" ]; then
+	echo usage: $0 load DATABASE_NAME or save DATABASE_NAME or define DATABASES in pmig.conf
+	exit
+fi
+
+if [ "$1" = "load" ] && [ -n "$2" ]; then
+	load $2
+elif [ "$1" = "load" ] && [ -z "$2"]; then
+	for i in $DATABASES; do
+		load $i
+	done
+elif [ "$1" = "save" ] && [ -n "$2" ]; then
+	save $2
+elif [ "$1" = "save" ] && [ -z "$2" ]; then
+	for i in $DATABASES; do
+		save $i
+	done
+fi

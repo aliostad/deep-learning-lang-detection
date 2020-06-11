@@ -1,0 +1,49 @@
+.write_panel {
+	margin-left:			auto;
+	margin-right:			auto;
+	margin-bottom:			30px;
+	padding:				50px 0px 0px 0px;
+	width:					95%;
+	height:					100%;
+	min-height:				839px;
+	background-color:		rgba(39,39,39,0.9);
+	box-shadow:				10px 10px 10px rgba(155,155,155,1.0);
+	background-clip:		content-box;
+}
+.write_panel .write_form {
+	margin-top:				20px;
+	margin-left:			auto;
+	margin-right:			auto;
+	margin-bottom:			15px;
+	padding:				2%;
+	background-color:		rgba(255,255,255,1.0);
+	border-radius:			3px;
+	min-width:				600px;
+	width:					90%;
+	height:					100%;
+}
+.write_form .title,
+.write_form .subtitle,
+.write_form .content,
+.write_form .classid,
+.write_form .submit {
+	padding:				2% 2% 0% 2%;
+}
+.write_form input {
+	text-align:				center;
+	border-radius:			5px;
+	height:					25px;
+	width:					90%;
+	font-size:				18px;
+}
+.write_form select {
+	border:					1px;
+	border-radius:			2px;
+	height:					25px;
+	width:					200px;
+	font-size:				18px;
+}
+.write_form .submit input {
+	width:					10%;
+}
+

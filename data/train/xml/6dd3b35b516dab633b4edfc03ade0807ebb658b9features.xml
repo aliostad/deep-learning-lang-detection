@@ -1,0 +1,13 @@
+<features name="sample-features-repo">
+    <feature name="sample-feature">
+        <bundle>mvn:xtracsolutions/broker-connection-pool/1.0-SNAPSHOT</bundle>
+        <bundle>mvn:xtracsolutions/sample-service/1.0-SNAPSHOT</bundle>
+        <bundle>mvn:xtracsolutions/sample-route/1.0-SNAPSHOT</bundle>
+        <config name="sample.activemq.pool">
+brokerURL = ###SAMPLE_FEATURE_BROKER_URL###
+userName = ###SAMPLE_FEATURE_USER_NAME###
+password = ###SAMPLE_FEATURE_PASSWORD###
+empty = ###SAMPLE_NO_VALUE_GOES_HERE###
+        </config>
+    </feature>
+</features>

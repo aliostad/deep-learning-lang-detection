@@ -1,0 +1,31 @@
+
+.icon-32-download {
+    background-image: url(../images/1.6/icon-32-download.png);
+}
+
+.icon-32-print {
+    background-image: url(../images/1.6/icon-32-print.png);
+}
+
+form#adminForm .pagination div.limit select#limit {
+    width: 55px;
+}
+
+.input-prepend.input-append .add-on:first-child,
+.input-prepend.input-append .btn:first-child,
+.input-append .add-on, .input-append .btn,
+.input-prepend .add-on, .input-prepend .btn {
+    height: 20px;
+	line-height: 20px;
+	margin-right: 0;
+}
+
+
+.control-group .controls .btn-group .input-prepend i.icomoon,
+.control-group .controls .btn-group .input-append i.icomoon {
+	line-height: 20px !important;
+}
+
+.control-group .controls input:focus {
+	border: none;
+}

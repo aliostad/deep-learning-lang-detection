@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="namespace_sample" kind="namespace">
+    <compoundname>Sample</compoundname>
+    <innerclass refid="class_sample_1_1_app_delegate" prot="public">Sample::AppDelegate</innerclass>
+    <innerclass refid="class_sample_1_1_application" prot="public">Sample::Application</innerclass>
+    <innerclass refid="class_sample_1_1_sample_controller" prot="public">Sample::SampleController</innerclass>
+    <innerclass refid="class_sample_1_1_sample_view" prot="public">Sample::SampleView</innerclass>
+    <innerclass refid="class_sample_1_1_sample_view_controller" prot="public">Sample::SampleViewController</innerclass>
+    <innernamespace refid="namespace_sample_1_1_android">Sample::Android</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="[generated]" line="1" column="1"/>
+  </compounddef>
+</doxygen>

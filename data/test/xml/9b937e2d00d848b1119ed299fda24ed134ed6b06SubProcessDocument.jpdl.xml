@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process name="SubProcessDocument" xmlns="http://jbpm.org/4.3/jpdl">
+
+  <start g="20,20,48,48">
+    <transition to="review" />
+  </start>
+
+  <sub-process name="review"
+               sub-process-key="SubProcessReview" 
+               g="96,16,127,52">
+               
+    <parameter-in var="document" subvar="document" />
+    <parameter-out var="reviewResult" subvar="result" />
+    
+    <transition to="wait" />
+  </sub-process>
+  
+  <state name="wait" g="255,16,88,52"/>
+
+</process>

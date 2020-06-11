@@ -1,0 +1,213 @@
+<plugins>
+	<plugin>
+		<provider>taverna.sf.net</provider>
+		<identifier>net.sf.taverna.t2.workbench.ui.imp</identifier>
+		<version>0.3-SNAPSHOT</version>
+		<name>workbench</name>
+		<description>Taverna 2 Workbench</description>
+		<enabled>true</enabled>
+		<repositories>
+			<!--
+				local repository while developing
+				<repository>file:///Users/stain/.m2/repository/</repository>
+			-->
+			<!-- myGrid repositories and mirrors  -->
+			<repository>http://www.mygrid.org.uk/maven/repository/</repository>
+			<repository>http://bioinf.ncl.ac.uk/mirror/maven/repository/</repository>
+			<repository>http://mirror.omii.ac.uk/maven/repository/</repository>
+			<repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
+
+			<!--  Mirror of official maven repository -->
+			<repository>http://www.mygrid.org.uk/maven/repo1/</repository>
+			<repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
+			<repository>http://www.eviware.com/repository/maven2/</repository>
+		</repositories>
+		<profile>
+			<artifact groupId="net.sf.taverna.t2.workbench" artifactId="file-impl"
+				version="0.1-SNAPSHOT" />
+			<artifact groupId="net.sf.taverna.t2.workbench" artifactId="ui-impl"
+				version="0.1-SNAPSHOT" />
+			<artifact groupId="net.sf.taverna.t2.workbench" artifactId="menu-impl"
+				version="0.1-SNAPSHOT" />
+			<artifact groupId="net.sf.taverna.t2.workbench.views"
+				artifactId="graph" version="0.0.1-SNAPSHOT" />
+			<artifact groupId="net.sf.taverna.t2.workbench" artifactId="activity-palette-ui"
+				version="0.1-SNAPSHOT" />
+			<artifact groupId="net.sf.taverna.t2.workbench" artifactId="perspective-design"
+				version="1.8" />
+			<artifact groupId="net.sf.taverna.t2.workbench" artifactId="contextual-views-api"
+				version="0.1-SNAPSHOT" />
+			<artifact groupId="net.sf.taverna.t2.workbench" artifactId="contextual-views-impl"
+				version="0.1-SNAPSHOT" />
+			<artifact groupId="net.sf.taverna.t2.workbench" artifactId="perspective-results"
+				version="0.1-SNAPSHOT" />
+			<artifact groupId="net.sf.taverna.t2.workbench" artifactId="run-ui"
+				version="0.1-SNAPSHOT" />
+			<artifact groupId="net.sf.taverna.t2.workbench" artifactId="iteration-strategy-ui"
+				version="0.1-SNAPSHOT" />
+			<artifact groupId="net.sf.taverna.t2.workbench.views"
+				artifactId="monitor" version="0.0.1-SNAPSHOT" />
+			<artifact groupId="net.sf.taverna.t2.workbench" artifactId="workflow-explorer"
+				version="0.1-SNAPSHOT" />
+			<artifact groupId="net.sf.taverna.t2.workbench" artifactId="update-manager"
+				version="0.1-SNAPSHOT" />
+
+			<!--  system artifacts -->
+			<artifact artifactId="saxpath" groupId="saxpath" version="1.0-FCS"
+				system="true" />
+			<artifact artifactId="jaxen" groupId="jaxen" version="1.0-FCS"
+				system="true" />
+			<artifact artifactId="xercesImpl" groupId="xerces" version="2.7.1"
+				system="true" />
+			<artifact artifactId="xalan" groupId="xalan" version="2.5.2"
+				system="true" />
+			<artifact artifactId="dom4j" groupId="dom4j" version="1.6"
+				system="true" />
+			<artifact artifactId="log4j" groupId="log4j" version="1.2.12"
+				system="true" />
+		</profile>
+	<compatibility>
+		<application>
+			<version>2.0</version>
+		</application>
+	</compatibility>
+	</plugin>
+	<plugin>
+		<provider>taverna.sf.net</provider>
+		<identifier>net.sf.taverna.t2.all-activities</identifier>
+		<version>0.3-SNAPSHOT</version>
+		<name>all-activities</name>
+		<description>Taverna 2 activities</description>
+		<enabled>true</enabled>
+		<repositories>
+			<!--
+				local repository while developing
+				<repository>file:///Users/stain/.m2/repository/</repository>
+			-->
+			<!-- myGrid repositories and mirrors  -->
+			<repository>http://www.mygrid.org.uk/maven/repository/</repository>
+			<repository>http://bioinf.ncl.ac.uk/mirror/maven/repository/</repository>
+			<repository>http://mirror.omii.ac.uk/maven/repository/</repository>
+			<repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
+
+			<!--  Mirror of official maven repository -->
+			<repository>http://www.mygrid.org.uk/maven/repo1/</repository>
+
+			<!--  BioMoby repositories -->
+			<repository>http://moby.ucalgary.ca/moby_maven/</repository>
+			<repository>http://biomoby.org/m2repo/</repository>
+			<repository>http://repository.jboss.com/maven2/</repository>
+			<repository>http://download.java.net/maven/2/</repository>
+			<repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
+			<repository>http://ws.zones.apache.org/repository2/</repository>
+			<repository>http://www.eviware.com/repository/maven2/</repository>
+
+		</repositories>
+		<profile>
+			<artifact groupId="net.sf.taverna.t2" artifactId="all-activities"
+				version="0.3-SNAPSHOT" />
+			<artifact groupId="net.sf.taverna.t2" artifactId="all-activity-uis"
+				version="0.3-SNAPSHOT" />
+		</profile>
+		<compatibility>
+			<application>
+				<version>2.0</version>
+			</application>
+		</compatibility>
+	</plugin>
+	<plugin>
+		<provider>taverna.sf.net</provider>
+		<identifier>  net.sf.taverna.t2.all-activity-translators </identifier>
+		<version>0.3-SNAPSHOT</version>
+		<name>all-activity-translators</name>
+		<description>All Taverna 2 activity translators</description>
+		<enabled>true</enabled>
+		<repositories>
+			<!--
+				local repository while developing
+				<repository>file:///Users/stain/.m2/repository/</repository>
+			-->
+			<!-- myGrid repositories and mirrors  -->
+			<repository>http://www.mygrid.org.uk/maven/repository/</repository>
+			<repository>http://bioinf.ncl.ac.uk/mirror/maven/repository/</repository>
+			<repository>http://mirror.omii.ac.uk/maven/repository/</repository>
+			<repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
+
+			<!--  Mirror of official maven repository -->
+			<repository>http://www.mygrid.org.uk/maven/repo1/</repository>
+
+			<!--  BioMoby repository -->
+			<repository>http://moby.ucalgary.ca/moby_maven/</repository>
+			<repository>http://biomoby.org/m2repo/</repository>
+			<repository>http://repository.jboss.com/maven2/</repository>
+			<repository>http://download.java.net/maven/2/</repository>
+
+			<repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
+
+
+			<repository>http://ws.zones.apache.org/repository2/</repository>
+			<repository>http://www.eviware.com/repository/maven2/</repository>
+			<repository>http://www.eviware.com/repository/maven2/</repository>
+
+
+		</repositories>
+		<profile>
+			<artifact groupId="net.sf.taverna.t2" artifactId="all-activity-translators"
+				version="0.3-SNAPSHOT" />
+
+			<artifact groupId="net.sf.taverna.t2.workbench" artifactId="file-translator"
+				version="0.1-SNAPSHOT" />
+
+		</profile>
+		<compatibility>
+			<application>
+				<version>2.0</version>
+			</application>
+			<pluginDependency>
+				<provider>taverna.sf.net</provider>
+				<identifier>net.sf.taverna.t2.all-activity-translators</identifier>
+				<version>0.3-SNAPSHOT</version>
+			</pluginDependency>
+		</compatibility>
+	</plugin>
+	<plugin>
+		<provider>taverna.sf.net</provider>
+		<identifier>
+			net.sf.taverna.t2.credential-manager
+		</identifier>
+		<version>0.3-SNAPSHOT</version>
+		<name>credential-manager</name>
+		<description>Taverna 2 Credential Manager</description>
+		<enabled>true</enabled>
+		<repositories>
+			<!--
+				local repository while developing
+				<repository>file:///Users/stain/.m2/repository/</repository>
+			-->
+			<!-- myGrid repositories and mirrors  -->
+			<repository>http://www.mygrid.org.uk/maven/repository/</repository>
+			<repository>http://bioinf.ncl.ac.uk/mirror/maven/repository/</repository>
+			<repository>http://mirror.omii.ac.uk/maven/repository/</repository>
+			<repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
+
+			<!--  Mirror of official maven repository -->
+			<repository>http://www.mygrid.org.uk/maven/repo1/</repository>
+
+
+			<repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
+			<repository>http://ws.zones.apache.org/repository2/</repository>
+			<repository>http://www.eviware.com/repository/maven2/</repository>
+
+
+		</repositories>
+		<profile>
+			<artifact groupId="net.sf.taverna.t2.workbench" artifactId="credential-manager-ui"
+				version="0.1-SNAPSHOT" />
+		</profile>
+		<compatibility>
+			<application>
+				<version>2.0</version>
+			</application>
+		</compatibility>
+	</plugin>
+</plugins>

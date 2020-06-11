@@ -1,0 +1,61 @@
+/*talk*/
+.talk {
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 4px;
+  background-color: white;
+
+}
+
+#write-talk {
+  border-radius: 5px;
+  padding: 4px;
+  padding-bottom: 0px;
+}
+
+#write-talk-name {
+  margin-bottom: 0px;
+}
+
+#write-talk-controls {
+  margin-bottom: 5px;
+}
+
+.talk-content-container {
+  margin: 4px;
+}
+
+#no-more-talks {
+  padding: 4px;
+}
+
+/*comments*/
+.comment {
+  font-size:85%;
+  padding: 2px 2px 2px 4px;
+}
+
+.write-comment-area {
+  width: 100%;
+}
+
+.write-comment-content-column {
+  width: 80%;
+}
+
+.write-comment-post-column {
+  width: 20%;
+}
+
+.write-comment-content {
+  font-size:85%;
+  margin: 0px;
+  width:97%;
+}
+
+.write-comment-post {
+  font-size:85%;
+  margin-left: 5px;
+  width:97%;
+}

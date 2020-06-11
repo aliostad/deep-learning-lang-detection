@@ -1,0 +1,423 @@
+/*
+:Author: ReportGrid
+:Contact: ReportGrid.com
+:Copyright: ReportGrid
+*/
+
+@import url(html4css1.css);
+
+.apiDoc *{
+	text-align: left;
+	font-size: 16px;
+	color:#333;
+}
+
+a {
+	text-decoration: underline;
+}
+a:hover {
+color: #60B2DC;
+}
+
+.apiDoc ol.simple li ,.apiDoc ul.simple li {
+	color:#333;
+	list-style-position: inside;
+	list-style-type: square;
+	font-size: 1em;
+	padding:0 2em;
+	line-height: 1.5em;
+	font-family: abel;
+	padding-bottom: 4px;
+}
+
+.apiDoc table.docutils caption {
+}
+
+.apiDoc contents.topic ul.simple li {
+color:#333;
+list-style-type: none;
+}
+
+.apiDoc ul.simple li ul li  {
+list-style-type: none;
+font-size: .875em;
+font-weight: normal;
+}
+
+.apiDoc ul.simple li ul li ul li,.apiDoc ol.simple li ul li ul li{
+	font-size: .75em;
+	font-weight: normal;
+	padding-bottom: 4px;
+}
+
+/* used to remove borders from tables and images */
+.apiDoc .borderless ,.apiDoc .table.borderless td ,.apiDoc table.borderless th {
+  border: none }
+
+.apiDoc table.borderless td ,.apiDoc table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.apiDoc .first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.apiDoc p{
+	color:#333;
+}
+
+.apiDoc p em{
+font-size: 1em;
+color: #CCC;
+}
+
+.apiDoc .hidden {
+  display: none }
+
+
+.apiDoc a.toc-backref {
+	font-size: 16px;
+	color: #8CC63F;
+  }
+
+.apiDoc blockquote.epigraph { }
+
+.apiDoc dl.docutils dd {
+  margin-bottom: 0.75em;
+  font-family: abel;
+  padding-left: 10px;
+  }
+
+.apiDoc dl.docutils dt {
+  color:#000;
+  font-family: abel;
+}
+
+.apiDoc div.abstract {
+  margin: 2em 5em }
+
+.apiDoc div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+.apiDoc div.admonition ,.apiDoc div.attention ,.apiDoc div.caution ,.apiDoc div.danger ,.apiDoc div.error ,.apiDoc 
+div.hint ,.apiDoc div.important ,.apiDoc div.note ,.apiDoc div.tip ,.apiDoc div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+.apiDoc div.admonition p.admonition-title ,.apiDoc div.hint p.admonition-title ,.apiDoc 
+div.important p.admonition-title ,.apiDoc div.note p.admonition-title ,.apiDoc 
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+.apiDoc div.attention p.admonition-title ,.apiDoc div.caution p.admonition-title ,.apiDoc 
+div.danger p.admonition-title ,.apiDoc div.error p.admonition-title ,.apiDoc 
+div.warning p.admonition-title {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+.apiDoc div.compound .compound-first ,.apiDoc div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+.apiDoc div.compound .compound-last ,.apiDoc div.compound .compound-middle {
+  margin-top: 0.5em }
+
+
+.apiDoc div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+.apiDoc div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+.apiDoc div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+
+.apiDoc div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+.apiDoc div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+.apiDoc div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color:#fff ;
+  width:25% ;
+  float: right ;
+  clear: right }
+
+.apiDoc div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+.apiDoc div.system-messages {
+  margin: 5em }
+
+.apiDoc div.system-messages h1 {
+  color: red }
+
+.apiDoc div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+.apiDoc div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+.apiDoc div.topic {
+  margin: 2em }
+
+.apiDoc h1.section-subtitle ,.apiDoc h2.section-subtitle ,.apiDoc h3.section-subtitle ,.apiDoc 
+h4.section-subtitle ,.apiDoc h5.section-subtitle ,.apiDoc h6.section-subtitle {
+  margin-top: 1em 
+}
+
+.apiDoc .section {
+padding: 0 1em;
+}
+
+.apiDoc contents-topic {
+	list-style-type: none;
+}
+.apiDoc external {
+}
+
+.apiDoc h1{
+    font-size:1em;
+    font-family:Abel;
+    font-weight:normal;
+    color:#8A8FA8;
+    list-style-type:  none;
+    text-decoration:  none;
+    padding-top: 30px;
+    padding-bottom: 24px;
+    padding: 30px 0 24px
+}
+
+.apiDoc h1 ,.apiDoc h2 ,.apiDoc h3 ,.apiDoc h4 {
+	text-transform: uppercase;
+	font-family: abel;
+	font-size: 18pt;
+	color: #8CC63F;
+	padding-bottom: .10em;
+	margin-bottom: .55em;
+	border-bottom: 2px solid #3E3E47;
+  }
+  
+
+.apiDoc h2.subtitle {
+  text-align: left;
+   }
+
+.apiDoc hr.docutils {
+  width: 90% }
+
+.apiDoc img.align-left ,.apiDoc .figure.align-left ,.apiDoc object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+.apiDoc img.align-right ,.apiDoc .figure.align-right ,.apiDoc object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+.apiDoc img.align-center ,.apiDoc .figure.align-center ,.apiDoc object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.apiDoc .align-left {
+  text-align: left }
+
+.apiDoc .align-center {
+  clear: both ;
+  text-align: center }
+
+.apiDoc .align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: left }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+.apiDoc ol.simple ,.apiDoc ul.simple {
+	list-style-type:none ! important;
+	color: #8A8FA8;
+	font-size: .8em;
+   }
+  
+.apiDoc ol.arabic {
+  list-style: decimal }
+
+.apiDoc ol.loweralpha {
+  list-style: lower-alpha }
+
+.apiDoc ol.upperalpha {
+  list-style: upper-alpha }
+
+.apiDoc ol.lowerroman {
+  list-style: lower-roman }
+
+.apiDoc ol.upperroman {
+  list-style: upper-roman }
+
+.apiDoc p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+.apiDoc p.caption {
+  font-style: italic }
+
+.apiDoc p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+.apiDoc p.label {
+  white-space: nowrap }
+
+.apiDoc p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+.apiDoc p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+.apiDoc p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+.apiDoc p.topic-title {
+	font-family: abel;
+	text-transform: uppercase; 
+	font-size:1.1em;
+	color: #8CC63F;
+  }
+
+.apiDoc pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+.apiDoc pre.literal-block ,.apiDoc pre.doctest-block {
+line-height:1.25em;
+color: #000;
+background-color: #fff;
+font-size: 9pt;
+padding: 1em ;
+font-family: Andale Mono, Courrier New, monospace;
+border-style: solid;
+border-width: 1px;
+border-color: #B6B7BF;
+margin-top: 10px;
+margin-bottom: 10px;
+overflow: auto;
+}
+  
+.apiDoc span.classifier {
+font-size: .875em;
+  font-family: sans-serif ;
+  font-style: oblique }
+
+.apiDoc span.classifier-delimiter {
+font-size:.875em;
+  font-family: sans-serif ;
+  font-weight: bold }
+
+.apiDoc span.interpreted {
+  font-family: sans-serif }
+
+.apiDoc span.option {
+  white-space: nowrap }
+
+.apiDoc span.pre {	
+  white-space: pre; 
+}
+
+.apiDoc span.problematic {
+  color: red }
+
+.apiDoc span.section-subtitle {
+  /* font-size relative to parent (
+  ..h6 element) */
+  font-size:.875em;
+   }
+
+.apiDoc table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+.apiDoc table.docinfo {
+  margin: 2em 4em }
+
+.apiDoc table.docutils {
+  margin: 1.25em 0;
+  border-collapse:collapse;
+ }
+
+.apiDoc table.footnote {
+  border: solid 1px #666;
+  margin-left: 1px;
+   }
+
+.snippet-container {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.apiDoc table.docutils td:first-child {
+	color: #5AA4CC;
+	font-size: 9pt;
+}
+
+.apiDoc table.docutils td:nth-child(2) {
+	color: #5AA4CC;
+}
+
+.apiDoc table.docutils td:last-child {
+	color: #AAA;
+}
+
+
+.apiDoc span.pre ,.apiDoc table.docutils td ,.apiDoc table.docutils th ,.apiDoc 
+table.docinfo td ,.apiDoc table.docinfo th {
+font-size: 10pt;
+color:#000;
+font-family: monospace, courier;
+}
+
+.apiDoc table.docutils th.field-name ,.apiDoc table.docinfo th.docinfo-name {
+  font-weight:bold;
+  text-align: left ;
+  white-space: nowrap ;
+  color:#888;
+  }
+
+.apiDoc h1 tt.docutils ,.apiDoc h2 tt.docutils ,.apiDoc h3 tt.docutils ,.apiDoc h4 tt.docutils ,.apiDoc h5 tt.docutils ,.apiDoc h6 tt.docutils {
+}
+
+.apiDoc tt.literal{
+	color: #3895C7;
+}

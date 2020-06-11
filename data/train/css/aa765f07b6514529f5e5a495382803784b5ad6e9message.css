@@ -1,0 +1,61 @@
+/*============================================================
+    Message
+============================================================*/
+#message{
+    width: 300px;
+    height: auto;
+    position: fixed;
+    z-index: 3000;
+    top: 12px;
+    right: 12px;    
+    border-radius: 0;
+    box-shadow: 0 1px 2px #ddd;
+    background: #fff;
+    border-top: solid 5px;
+    display: none;
+    font-family: Arial,sans-serif,serif
+}
+#message .close{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    float: none;
+}
+#message .message-container{
+    color: #6a6c6f;
+    padding: 20px 25px;
+}
+#message.message-success{
+    border-color: #27c24c
+}
+#message.message-info{
+    border-color: #00abe8
+}
+#message.message-error{
+    border-color: #f93926
+}
+#message.message-warning{
+    border-color: #ff9c00;
+}
+#message .message-title{
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#message.message-success .message-title{
+    color: #27c24c;    
+}
+#message.message-info .message-title{
+    color: #00abe8;    
+}
+#message.message-error .message-title{
+    color: #f93926;    
+}
+#message.message-warning .message-title{
+    color: #ff9c00;    
+}
+#message.message-success .message-body{
+    margin-bottom: 5px;
+    font-weight: 400;
+    line-height: 16px;
+}

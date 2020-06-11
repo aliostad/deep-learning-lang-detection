@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batiments>
+<batiment>
+	<name>Amphithéatre de l'UFR de Sciences</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Amphithêatres</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Atelier de Génie Chimique</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Atelier de Génie Industriel</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Bâtiment Administratif</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Batiment Enseignement Général UFR Sciences</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Bibliothèque Départementale de Prêt</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Bibliothèque Universitaire de LLSH</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Bibliothèque Universitaire des Sciences</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Bloc Central</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Brasserie de l'Indien</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Centre de Médecine Universitaire Jean Zay</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Centre d'Innovation</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Cône</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Département Chimie</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Département GEA</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Département GMP</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Département Informatique</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Département Qlio</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Étang du campus</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Gymnase Universitaire</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Halle des Sports</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Institut de Chimie Organique et Analytique</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Institut Universitaire de Technologie</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>I.R.F.M.K.</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Kt Self</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Le Bouillon</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Maison de l'Étudiant</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Ménagerie</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Parc Floral</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Piscine Municipale de la Source</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Place de l'Indien</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Place Léonard de Vinci</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Polytech'Orléans</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Présidence de l'université - Services centraux</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Résidence Aristote</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Résidence les Charmes</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Résidence Les Châtaigners</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Résidence les Dahlias</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Résidence les Hêtres</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Résidence Les Magnolias</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Résidence les Ormes</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Résidence Les Roses</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Restaurants Universitaires - Le Forum - Le Bistro</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Restaurant Universitaire - L'Anatidé</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Restaurant Universitaire - Le Lac</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Stade de la Source</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Stade Omnisport de la Source</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Station Elf</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Tribune d'honneur</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>UFR de Droit, Économie et Gestion</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>UFR de Physique-Chimie</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>UFR de STAPS</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>UFR Lettres, Langues et Sciences Humaines</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>UFR Sciences Administration</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Université de mathématiques</name>
+	<service></service>
+</batiment>
+<batiment>
+	<name>Université d'informatique, Bat 3IA - LIFO</name>
+	<service nom="pôle informatique">http://www.univ-orleans.fr/ires/info</service>
+	<service nom="LIFO">http://www.univ-orleans.fr/lifo/</service>
+	<service nom="Amigo">http://www.univ-orleans.fr/sciences-techniques/vie-etud</service>
+	<service nom="Fifo">http://www.univ-orleans.fr/sciences-techniques/vie-etud</service>
+</batiment>
+<batiment>
+	<name>Relais Total Du Coudray</name>
+	<service></service>
+</batiment>
+</batiments>

@@ -1,0 +1,36 @@
+#! /bin/sh -e
+
+# DP: gcc/doc/invoke.texi: Fix locale name.
+
+dir=
+if [ $# -eq 3 -a "$2" = '-d' ]; then
+    pdir="-d $3"
+    dir="$3/"
+elif [ $# -ne 1 ]; then
+    echo >&2 "`basename $0`: script expects -patch|-unpatch as argument"
+    exit 1
+fi
+case "$1" in
+    -patch)
+        patch $pdir -f --no-backup-if-mismatch -p0 < $0
+        ;;
+    -unpatch)
+        patch $pdir -f --no-backup-if-mismatch -R -p0 < $0
+        ;;
+    *)
+        echo >&2 "`basename $0`: script expects -patch|-unpatch as argument"
+        exit 1
+esac
+exit 0
+
+--- gcc/doc/invoke.texi~	2004-08-27 00:42:53.000000000 +0200
++++ gcc/doc/invoke.texi	2004-11-21 13:59:19.000000000 +0100
+@@ -10980,7 +10980,7 @@
+ national conventions.  GCC inspects the locale categories
+ @env{LC_CTYPE} and @env{LC_MESSAGES} if it has been configured to do
+ so.  These locale categories can be set to any value supported by your
+-installation.  A typical value is @samp{en_UK} for English in the United
++installation.  A typical value is @samp{en_GB} for English in the United
+ Kingdom.
+ 
+ The @env{LC_CTYPE} environment variable specifies character

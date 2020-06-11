@@ -1,0 +1,36 @@
+#!/bin/bash
+
+REPO="${1}"
+
+REPO_DIR="/var/db/paludis/repositories/${REPO}"
+CONF_FILE="/etc/paludis/repositories/${REPO}.conf"
+
+if [[ $UID -ne 0 ]]; then
+    echo "Must be root"
+    exit 1
+fi
+
+if [[ -z ${REPO} ]]; then
+    echo "Remove a single repository:"
+    echo "eg. ${0} mozilla"
+    exit 1
+fi
+
+if [[ -d ${REPO_DIR} || -f ${CONF_FILE} ]]; then
+
+    if [[ -d ${REPO_DIR} ]]; then
+        echo "Removing ${REPO_DIR}"
+        rm -rf ${REPO_DIR}
+    fi
+
+    if [[ -f ${CONF_FILE} ]]; then
+        echo "Removing ${CONF_FILE}"
+        rm ${CONF_FILE}
+    fi
+
+    echo "${REPO} removed"
+    exit 0
+else
+    echo "${REPO} could not be found"
+    exit 1
+fi

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <service_name>-Audio- MP3</service_name>
+  <service_media>video</service_media>
+  <service_regex><![CDATA[audio:(?P<sval1>.*\.(mp3|mp2|aac|m4a))$]]></service_regex>
+  <service_playlist><![CDATA[]]></service_playlist>
+  <service_url><![CDATA[audio:{serviceVAL}]]></service_url>
+  <service_callback>EWRmedio_Services_AudioMP3</service_callback>
+  <service_width>640</service_width>
+  <service_height>360</service_height>
+  <service_embed><![CDATA[<script type="text/javascript">
+$.getScript("{scriptjw}/jwplayer.js", function () {
+	jwplayer("embed_player").setup({
+		flashplayer: "{scriptjw}/player.swf",
+		file: "{external}/{serviceVAL}",
+		skin: "{scriptjw}/audio.xml",
+		autostart: "{apTF}",
+		width: "{w}",
+		height: "{h}",
+		plugins: "revolt-1",
+		'controlbar.position': "bottom"
+	});
+});
+</script>]]></service_embed>
+  <service_local>1</service_local>
+</service>

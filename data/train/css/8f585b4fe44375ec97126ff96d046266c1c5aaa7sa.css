@@ -1,0 +1,51 @@
+.sa-device .spisok{margin:10px 20px}
+.sa-device .name{width:220px;cursor:move}
+.sa-device .ven{width:100px;text-align:center}
+.sa-device .mod{width:60px;text-align:center}
+.sa-device .zayav{width:60px;text-align:center}
+.sa-device .edit{width:40px}
+.sa-device-add{border-spacing:8px}
+.sa-device-add input{width:250px}
+.sa-device-add .equip div{display:block;margin-top:5px}
+
+.sa-vendor .spisok{margin:10px 20px}
+.sa-vendor .name{width:220px;cursor:move}
+.sa-vendor .b a{font-weight:bold}
+.sa-vendor .mod{width:60px;text-align:center}
+.sa-vendor .zayav{width:60px;text-align:center}
+.sa-vendor .edit{width:40px}
+.sa-vendor-add{border-spacing:8px}
+.sa-vendor-add input{width:250px}
+
+.sa-model .spisok{margin:10px 20px 40px}
+.sa-model #find{margin:10px 0 0 20px}
+.sa-model .count{margin-bottom:10px}
+.sa-model .img{text-align:center}
+.sa-model em{background-color:#FFC;border-bottom:#FE2 solid 1px;font-weight:bold}
+.sa-model .zayav{text-align:center}
+.sa-model .zp{text-align:center}
+.sa-model-add{border-spacing:8px}
+.sa-model-add input{width:250px}
+
+.sa-equip{margin-bottom:20px}
+.sa-equip .dis{opacity:.5}
+.sa-equip .headName{margin:0 0 7px}
+.sa-equip .rightLink{
+	width:180px;
+	background-color:#f7f7f7;
+	padding:10px;
+	margin:10px 0 0 15px;
+	border:#ddd solid 1px;
+}
+.sa-equip #eq-spisok{margin:10px 20px}
+.sa-equip ._spisok{width:380px;margin-top:1px}
+.sa-equip #eq-spisok td.name{cursor:move}
+.sa-equip .use{width:20px}
+.sa-equip .use div{margin-left:3px;padding:0}
+.sa-equip .ed{width:40px;text-align:center}
+.sa-equip .eq-head{margin-bottom:10px}
+.sa-equip #zp-spisok{margin:30px 20px}
+.sa-equip .zp{width:70px;text-align:center}
+
+.sa-equip-add{border-spacing:8px}
+.sa-equip-add input{width:200px}

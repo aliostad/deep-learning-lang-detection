@@ -1,0 +1,45 @@
+#preview {
+    width: 520px;
+    height: 520px;
+    overflow: auto;
+    background-color: rgba(221,214,221,0.3);
+    border: 1px dashed black;
+}
+
+div.write-form {
+    width: auto;//
+    margin-right: 400px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-right: 1px solid #eee;
+}
+
+div.write-form {
+    width: 680px;
+    border: 1px solid #eee;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.write-form .title {
+    font-size: 36px;
+    font-weight: 900;
+    border: 1px solid #eee;
+}
+
+div.write-form .content {
+    font-size: 22px;
+    outline: 0;
+    border: 1px solid #eee;
+}
+
+
+div.write-form H2 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+div.write-form H3 {
+    font-size: 36px;
+    font-weight: 100;
+}

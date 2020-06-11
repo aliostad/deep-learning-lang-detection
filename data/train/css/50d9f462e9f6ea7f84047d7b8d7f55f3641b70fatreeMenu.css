@@ -1,0 +1,141 @@
+#treeMenuWaitMessage{
+    background-color:  #e8ffff;
+}
+#treeMenu {
+    float: left;
+    /*
+    margin: 0px 0px 0px 15px;
+*/
+    font-size:16px;
+
+    /* Padding within the div  */
+/*
+    padding-left: 5px;
+*/
+    padding-left: 0;
+    padding-right: 0;
+
+    /*
+    border-left: 2px solid #cccccc;
+    border-right: 2px solid #cccccc;
+    */
+
+    /*
+    Starting width
+    */
+    width: 250px;
+
+
+    overflow-x: scroll ;
+    overflow-y: scroll;
+    resize: horizontal;
+    background-color:  #e8ffff;
+    color: #000033;
+
+    /* Spacing for each line, not the actual line. */
+    line-height: 24px;
+}
+
+
+
+div[data-tree-model] ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    white-space:nowrap;
+
+}
+
+
+div[data-tree-model] li {
+    position: relative;
+    padding: 0 0 0 20px;
+    /*
+    line-height: 50px;
+    */
+
+    white-space:nowrap;
+}
+
+div[data-tree-model] li .openFolder {
+    padding: 1px 10px;
+    background: url("../icons/iconSet0/16/openFolder-icon_16.png") no-repeat;
+    white-space:nowrap;
+
+}
+
+
+div[data-tree-model] li .normal {
+    padding: 1px 10px;
+    background: url("../icons/iconSet0/file.png") no-repeat;
+    white-space:nowrap;
+}
+
+div[data-tree-model] li .closedFolder {
+    padding: 1px 10px;
+    background: url("../icons/iconSet0/16/closedFolder-icon_16.png") no-repeat;
+    white-space:nowrap;
+}
+
+div[data-tree-model] li .emptyFolder {
+    padding: 1px 10px;
+    background: url("../icons/iconSet0/16/emptyFolder-icon_16.png") no-repeat;
+    white-space:nowrap;
+
+}
+
+div[data-tree-model] li .csi {
+    padding: 1px 10px;
+    background: url("../icons/iconSet0/csi.png") no-repeat;
+    white-space:nowrap;
+}
+
+div[data-tree-model] li .csiFolderOpen {
+    padding: 1px 10px;
+    background: url("../icons/iconSet0/16/openCsiFolder-icon_16.png") no-repeat;
+    white-space:nowrap;
+}
+div[data-tree-model] li .csiFolderClosed {
+    padding: 1px 10px;
+    background: url("../icons/iconSet0/16/closedCsiFolder-icon_16.png") no-repeat;
+    white-space:nowrap;
+}
+
+
+div[data-tree-model] li .protocolForm {
+    padding: 1px 10px;
+    background: url("../icons/iconSet0/protocol.png") no-repeat;
+    white-space:nowrap;
+}
+
+div[data-tree-model] li .protocolFolderOpen {
+    padding: 1px 10px;
+    background: url("../icons/iconSet0/protocolOpenFolder.png") no-repeat;
+    white-space:nowrap;
+}
+
+
+div[data-tree-model] li .protocolFolderClosed {
+    padding: 1px 10px;
+    background: url("../icons/iconSet0/protocolClosedFolder.png") no-repeat;
+    white-space:nowrap;
+}
+
+div[data-tree-model] li .tester {
+    padding: 1px 10px;
+    background: url("../icons/iconSet0/file.png") no-repeat;
+    white-space:nowrap;
+}
+
+div[data-tree-model] li i, div[data-tree-model] li span {
+    cursor: pointer;
+    white-space:nowrap;
+}
+
+div[data-tree-model] li .selected {
+    background-color: #cceeee;
+    font-weight: bold;
+    padding: 1px 5px;
+    white-space:nowrap;
+}

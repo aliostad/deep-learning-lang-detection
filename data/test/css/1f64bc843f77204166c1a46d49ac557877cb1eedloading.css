@@ -1,0 +1,43 @@
+.icon-load,
+.btn.load [class^="icon-"],
+.btn.load [class*=" icon-"] {
+    background-image: url("../img/loading/loading.gif");
+    background-position: 0 0;
+    width: 14px;
+    height: 14px;
+}
+
+.btn-primary .icon-load,
+.btn-primary.load [class^="icon-"],
+.btn-primary.load [class*=" icon-"] {
+    background-image: url("../img/loading/loading-primary.gif");
+}
+
+.btn-info .icon-load,
+.btn-info.load [class^="icon-"],
+.btn-info.load [class*=" icon-"] {
+    background-image: url("../img/loading/loading-info.gif");
+}
+
+.btn-success .icon-load, .btn-success.load [class^= "icon-" ], .btn-success.load [class*= " icon-" ] {
+    background-image: url("../img/loading/loading-success.gif");
+}
+
+.btn-warning .icon-load,
+.btn-warning.load [class^="icon-"],
+.btn-warning.load [class*=" icon-"] {
+    background-image: url("../img/loading/loading-warning.gif");
+}
+
+.btn-danger .icon-load,
+.btn-danger.load [class^="icon-"],
+.btn-danger.load [class*=" icon-"] {
+    background-image: url("../img/loading/loading-danger.gif");
+}
+
+.btn-inverse .icon-load,
+.btn-inverse.load [class^="icon-"],
+.btn-inverse.load [class*=" icon-"] {
+    background-image: url("../img/loading/loading-inverse.gif");
+}
+

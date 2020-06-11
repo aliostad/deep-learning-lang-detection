@@ -1,0 +1,46 @@
+﻿.ajaxLoad {
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99999;
+    display:none
+}
+
+    .ajaxLoad .popin {
+        background: #f7f7f7;
+        border: #e6e6e6 1px solid;
+        padding: 5px 15px;
+    }
+
+.ajaxLoadPopin {
+    position:fixed;
+    width: 100%;
+    display:none
+}
+
+    .ajaxLoadPopin .overlay {
+        position:fixed;
+        top: 0; 
+        right: 0; 
+        bottom: 0; 
+        left: 0;
+        width: 100%;
+        background:grey; 
+        opacity:0.5
+    }
+
+    .ajaxLoadPopin .popinDock {
+        position:fixed;
+        top: 45%;
+        z-index: 99999;
+        width: 100%
+    }
+    
+    .ajaxLoadPopin .popinDock .popin {
+        background: #f7f7f7;
+        border: #e6e6e6 1px solid;
+        padding: 15px;
+        width: 120px;
+        margin: 0 auto;
+        border-radius: 4px
+    }

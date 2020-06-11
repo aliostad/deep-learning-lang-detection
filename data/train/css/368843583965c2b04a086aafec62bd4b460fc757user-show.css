@@ -1,0 +1,120 @@
+#user-show {
+  position: relative;
+}
+
+#user-show header {
+  position: none;
+}
+
+#user-show .controls {
+  background-color: #ffe1bd;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  display: inline-block;
+  color: #aaa;
+  width: 200px;
+  text-align: center;
+}
+
+#user-show .controls a {
+  color: #eb966e;
+  display: block;
+  padding-bottom: 0.5em;
+  z-index: 5000;
+}
+
+#user-show .controls a:last-child {
+  padding: 0;
+}
+
+#user-show .controls a:hover {
+  color: #faa57d;
+  text-decoration: none;
+}
+
+#user-show img {
+  border-radius: 0.5em;
+}
+
+#user-show header {
+  margin-bottom: 1em;
+}
+
+#user-show header h1 {
+  color: #F1986B;
+  font-size: 2em;
+  margin-top: 0.5em;
+}
+
+#user-show header h2 {
+  color: #faa57d;
+  font-size: 1.25em;
+}
+
+#user-show header h2 a {
+  color: #aaa;
+}
+
+#user-show header h2 a:hover {
+  color: #888;
+  text-decoration: none;
+}
+
+#user-show header p {
+  margin-top: 1em;
+  width: 90%;
+}
+
+#user-show section:first-child {
+  margin-top: 0;
+}
+
+#user-show section {
+  margin-top: 2em;
+}
+
+#user-show section h2 {
+  color: #faa57d;
+  font-size: 1.25em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid #F1986B;
+  margin-bottom: 0.25em;
+}
+
+#user-show section h3,
+#user-show section h3 a {
+  font-weight: bold;
+}
+
+#user-show section li:first-child {
+  border: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+#user-show section li {
+  margin-top: 1em;
+  border-top: 1px solid #ccc;
+  padding-top: 0.5em;
+}
+
+#user-show section p {
+  margin-top: 0.25em;
+}
+
+#user-show .start-petition {
+  top: 2em;
+  right: -1em;
+  position: absolute;
+  background: #F1986B;
+  padding: 0.5em 3em 0.5em 0.5em;
+  color: white;
+  border-bottom: 2px solid #e08a5e;
+  z-index: 50;
+}
+
+#user-show .start-petition:hover {
+  text-decoration: none;
+  background-color: #ffa87d;
+}

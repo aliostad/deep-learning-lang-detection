@@ -1,0 +1,43 @@
+/*****************************************************************************
+* message box
+* @author Duy A. Nguyen duyanh@uta.edu http://duy-nguyen.info
+******************************************************************************/
+.message-box-dialog{
+    padding: 10px;
+}
+.message-box-dialog-icon{
+    display: table-cell;
+
+}
+
+.message-box-dialog-text{
+    display: table-cell;
+    padding-left: 10px;
+}
+
+.message-box-dialog-icon{
+    background: url(messageBox.png) transparent no-repeat;
+    width: 48px; 
+    height: 48px; 
+    vertical-align: middle;
+
+}
+.message-box-dialog-icon-none{
+    background-position: 0px 0px; 
+}
+
+.message-box-dialog-icon-question{
+    background-position: -48px 0px; 
+}
+
+.message-box-dialog-icon-exclamation{
+    background-position: -96px 0px; 
+}
+
+.message-box-dialog-icon-error{
+    background-position: -144px 0px; 
+}
+
+.message-box-dialog-icon-information{
+    background-position: -192px 0px; 
+}

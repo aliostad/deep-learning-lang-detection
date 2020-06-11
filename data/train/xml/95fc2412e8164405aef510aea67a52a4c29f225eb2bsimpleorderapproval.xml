@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<process xmlns="http://www.hybris.de/xsd/processdefinition"
+         start="approvalProcessStartAction" name="simpleapproval"
+         processClass="de.hybris.platform.b2b.process.approval.model.B2BApprovalProcessModel">
+
+	<action id="approvalProcessStartAction" bean="approvalProcessStartAction">
+		<transition name="OK" to="approvalProcessCompleteAction"/>
+		<transition name="NOK" to="error"/>
+	</action>
+
+	<action id="approvalProcessCompleteAction" bean="approvalProcessCompleteAction">
+		<transition name="OK" to="success"/>
+		<transition name="NOK" to="error"/>
+	</action>
+	<end id="error" state="ERROR">All went wrong.</end>
+	<end id="failed" state="FAILED">Order process failed.</end>
+	<end id="success" state="SUCCEEDED">Order process finished.</end>
+
+</process>

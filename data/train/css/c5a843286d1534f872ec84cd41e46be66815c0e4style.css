@@ -1,0 +1,90 @@
+div.jimu-widget-savesession .textbox {
+    width: 250px;
+}
+
+div.jimu-widget-savesession .form-control {
+    padding: 5px 0 5px 0;
+}
+
+div.jimu-widget-savesession .jimu-icon {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.jimu-icon-load {
+    background-position: -0px -47px;
+    width: 16px;
+    height: 16px;
+}
+
+.jimu-icon-load.jimu-state-disabled {
+    background-position: -63px -47px;
+    width: 16px;
+    height: 16px;
+}
+
+.jimu-icon-load.jimu-state-hover {
+    background-position: -21px -47px;
+    width: 16px;
+    height: 16px;
+}
+
+.jimu-icon-load:hover {
+    background-position: -21px -47px;
+    width: 16px;
+    height: 16px;
+}
+
+.jimu-icon-download {
+    background-image: url("../images/download_icon.png");
+    width: 15px;
+    height: 16px;
+}
+
+.jimu-icon-download.jimu-state-disabled {
+    background-image: url("../images/download_icon.png");
+    width: 15px;
+    height: 16px;
+}
+
+.jimu-icon-download.jimu-state-hover,
+.jimu-icon-download:hover {
+    background-image: url("../images/download_icon_hover.png");
+    width: 15px;
+    height: 16px;
+}
+
+div.jimu-widget-savesession .input-text {
+    display: inline;
+    color: silver;
+}
+
+.jimu-widget-savesession .help-text {
+    color: silver;
+}
+
+.jimu-widget-savesession a.link-btn:visited,
+.jimu-widget-savesession a.link-btn {
+    padding: 10px;
+    color: #518dca;
+}
+
+.jimu-widget-savesession a.link-btn:hover {
+    color: blue;
+}
+
+.jimu-widget-savesession a.link-btn.jimu-state-disabled:visited,
+.jimu-widget-savesession a.link-btn.jimu-state-disabled:hover,
+.jimu-widget-savesession a.link-btn.jimu-state-disabled {
+    padding: 10px;
+    color: gray;
+    pointer-events: none;
+    text-decoration: none;
+}
+
+#load-file-panel {
+    margin-top: 10px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}

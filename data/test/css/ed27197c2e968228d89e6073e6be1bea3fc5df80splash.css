@@ -1,0 +1,78 @@
+#splash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+#splash :first-child {
+    margin-top: 50px;
+}
+
+#splash .loader {
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 4em);
+    width: 5em;
+    height: 5em;
+}
+
+body[ready="true"] #splash {
+    top: -100%;
+    transition: top 1s ease-in-out;
+}
+
+/* Spinner */
+
+.loader {
+    margin: 60px auto;
+    font-size: 10px;
+    position: relative;
+    text-indent: -9999em;
+    border-top: 1.1em solid transparent;
+    border-right: 1.1em solid transparent;
+    border-bottom: 1.1em solid transparent;
+    border-left: 1.1em solid #00BCD4;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load 1.1s infinite linear;
+    animation: load 1.1s infinite linear;
+}
+
+.konami .loader {
+    -webkit-animation: load 1.1s infinite linear reverse;
+    animation: load 1.1s infinite linear reverse;
+}
+
+.loader,
+.loader:after {
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+}
+
+@-webkit-keyframes load {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes load {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

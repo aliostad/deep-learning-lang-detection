@@ -1,0 +1,94 @@
+/* Styling for Plugin */
+#si_load_bar{width:100%;height:64px;}
+#si_load_bar span{display:inline-block;height:100%;float:left;color:white;overflow:hidden;}
+#si_load_bar span:first-child{border-radius:15px 0 0 15px;}
+#si_load_bar span:last-child{border-radius:0 15px 15px 0;}
+#si_load_bar .net{
+	background-color:#664477;
+	background: linear-gradient(to bottom, #9a1e83 0%,#d82ac7 50%,#ca20b6 51%,#e87edf 100%);
+}
+#si_load_bar .app{
+	background-color:#887766;
+	background: linear-gradient(to bottom, #9a1e41 0%,#d82a6a 50%,#ca205c 51%,#e87ea7 100%);
+}
+#si_load_bar .load{
+	background-color:#FFDD88;
+	background: linear-gradient(to bottom, #fefcea 0%,#f1da36 100%);
+}
+#si_load_bar .render{
+	background-color:#77CCDD;
+	background: linear-gradient(to bottom, #eafdfe 0%,#35ebf1 100%);
+}
+
+.query_table{width:90%;margin:0 auto;}
+.query_table th{background-color:black;color:white;}			
+.query_display{width:100%;}
+.query_display thead{
+	background-color:black;
+	color:white;			
+}			
+.sysbench_output{font-size:16px;}			
+.sysbench_output table{border-collapse:collapse;}			
+.sysbench_output th{text-align:left;}
+.sysbench_output td.query{
+	font-size:11px;
+	width:80%;
+	text-align:left;
+	padding:3px;
+	font-family: consolas, san-serif;
+}
+
+.sysbench_output td.backtrace{font-size:11px;}
+.sysbench_output .delete{color:red;}
+.sysbench_output .select,
+.sysbench_output .update,
+.sysbench_output .join,
+.sysbench_output .from{ color:green; }
+
+.sysbench_output .where{color:#013d7e;}
+.sysbench_output .clause{ color:orange; }
+
+.sysbench_output .order,.sysbench_output .limit,.sysbench_output .group{ color:purple; }
+
+.sysbench_output .string{color:#0e722c;font-style:italic;}
+.sysbench_output .func{color:#800000;}
+
+.sysbench_tab_menu li{
+	display:inline-block;
+	background-color:white;
+	color:black;
+	border-radius: 5px 5px 0 0;
+	padding: 2px 5px;
+}
+.sysbench_tab_menu li.active{color:red;}			
+
+.hook_times td:nth-child(1){text-align:left;}
+.hook_times td:nth-child(2){text-align:right;}
+
+/*admin*/			
+table.server_info {width:90%;}
+table.server_info th.hdr{background-color:black;color:white;text-align:center;}
+table.server_info th{text-align:left;}
+
+#func_area li{display:inline-block;margin-right:15px;}
+.infopage label{font-weight:bold;display:inline-block;width:230px}
+ul.threecol li{width:30%;display:inline-block;}
+
+#tabs .ui-tabs-panel{font-size:1.25em;}
+#tabs > div.ui-tabs-panel{max-height:80%;overflow-y:scroll;}
+.sysinfo_shell textarea,#sysinfo_output{
+	width:90%;
+	height:300px;
+	background-color:black;
+	color: #00ff00;
+	border-radius:5px;
+	overflow-y:auto;
+}						
+
+
+.green{color:green;}
+.red{color:red;}
+.number{color:blue}
+.truthy{font-style:italic;color:green;}
+.falsy{font-style:italic;color:red}
+.date{color:green}

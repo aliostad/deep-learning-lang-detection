@@ -1,0 +1,5 @@
+questZone	navPoints	laps	specialTarget	triggerEvent	triggerSplitCondition	triggerArg	triggerArg2	triggerOn	triggerEndsMission	triggerDelay	autoReward	questDelay	_DESIGNER NOTES_	questSeries
+s	s	i[1]	s	"e(none=0,splitquest=1,surpriseattack=2)[none]"	"e(triggerOn=0,success=1,failure=2,both=3)[triggerOn]"	s	s	i	i	i	i	i	s	s
+space_tatooine	space_tatooine:blacksun_patrol_1	1	none	splitquest	triggerOn	destroy_surpriseattack:tatooine_privateer_1		2	1	20	0	0		pilot_profession
+	space_tatooine:blacksun_patrol_2		none											
+	space_tatooine:blacksun_patrol_3		none											

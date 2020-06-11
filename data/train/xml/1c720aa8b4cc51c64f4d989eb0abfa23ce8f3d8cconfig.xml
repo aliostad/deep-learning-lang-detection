@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+	<modules>
+		<ZeroG_Api>
+			<version>0.1.0</version>
+		</ZeroG_Api>
+	</modules>
+
+	<global>
+
+		<blocks>
+			<api>
+				<class>ZeroG\Api\Block</class>
+			</api>
+		</blocks>
+
+		<models>
+			<api>
+				<class>ZeroG\Api\Model</class>
+			</api>
+		</models>
+
+	</global>
+
+	<frontend>
+
+		<routers>
+			<api>
+				<use>api</use>
+				<args>
+					<module>ZeroG_Api</module>
+				</args>
+			</api>
+		</routers>
+
+        <translate>
+        	<modules>
+        		<ZeroG_Core>
+        			<files>
+        				<default>ZeroG_Core.csv</default>
+        			</files>
+        		</ZeroG_Core>
+        	</modules>
+        </translate>
+
+	</frontend>
+
+</config>

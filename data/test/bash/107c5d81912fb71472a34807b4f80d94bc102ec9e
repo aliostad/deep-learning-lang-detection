@@ -1,0 +1,97 @@
+#!/bin/sh
+
+run_fallback() {
+	for cmd in vim vi emacs
+	do
+		if which $cmd >/dev/null 2>&1
+		then
+			exec $cmd "$@"
+			exit
+		fi
+	done
+	echo "could not find any editor" >&2
+	exit 1
+}
+
+if ! which emacsclient >/dev/null 2>&1
+then
+	run_fallback "$@"
+fi
+
+case "$1" in
+--force-x) force_x=yes; shift ;;
+esac
+
+invoke=
+
+# if we're invoked as root, make tramp path and run emacs
+if [ "$(id -u)" = 0 ]
+then
+	real_user=$SUDO_USER
+	: ${real_user:=$LOGNAME}
+
+	# however, if we can't become non-root, we have to try
+	# a non-TRAMP fallback.
+	if [ "$(id -u $real_user)" = 0 ]
+	then
+		run_fallback "$@"
+	fi
+
+	invoke="sudo -u $real_user"
+	clear=y
+	for arg
+	do
+		# clear argv on first round
+		case "$clear" in
+		y)
+			clear=
+			set --
+			;;
+		esac
+
+		if ! expr "$arg" : "^[+-]" >/dev/null || [ -e "$arg" ]
+		then
+			# make real path
+			case "$arg" in
+			/*) ;;
+			*) arg="$(pwd)/$arg" ;;
+			esac
+
+			# make sudo TRAMP path
+			arg="/sudo::$arg"
+		fi
+
+		set -- "$@" "$arg"
+	done
+fi
+
+case "$DISPLAY" in
+:*) try_x=yes ;;
+esac
+
+if [ -n "$try_x" -o -n "$force_x" ]
+then
+	# check for existing frame
+	case $($invoke emacsclient -e "(condition-case err (eq 'x (framep-on-display \"$DISPLAY\"))) ('error nil))" 2>/dev/null) in
+	t)
+		# without arguments we just raise the current frame
+		if [ $# -eq 0 ]
+		then
+			emacsopt="-e (raise-frame)"
+		else
+			emacsopt=
+		fi
+		;;
+	*)
+		# merge xauth
+		xauthfile=$(mktemp --tmpdir xauth-emacs.XXXXXXXX)
+		xauth nlist > $xauthfile
+		$invoke emacsclient -e "(call-process-shell-command \"xauth nmerge $xauthfile\")"
+
+		emacsopt=-c ;;
+	esac
+else
+	emacsopt=-nw
+fi
+
+exec $invoke emacsclient $emacsopt -a "" "$@"

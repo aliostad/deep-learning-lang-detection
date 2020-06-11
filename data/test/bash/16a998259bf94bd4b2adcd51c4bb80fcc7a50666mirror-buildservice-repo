@@ -1,0 +1,41 @@
+#!/bin/sh
+
+# Mirrors builservice repos. Meant to be run daily.
+#
+#  -- m.barnaba@ifad.org  Sat Mar 29 16:46:48 CET 2014
+#
+source $(dirname $(realpath $0))/.config.subr
+create_lock
+
+MIRROR_DIR=$MIRROR_DIR/repositories
+
+mirror_repo() {
+  REPO="$1/"
+  REPO_DIR="$MIRROR_DIR/$REPO"
+
+  echo
+  echo "--------------------------------------------------------------"
+  echo "`date` - OpenSuSE buildservice repo mirror started"
+
+
+  mkdir -p $REPO_DIR
+  cd $MIRROR_DIR
+
+  $RSYNC --verbose --human-readable                          \
+       --recursive --links --perms --times                   \
+       --itemize-changes --stats --delete-after              \
+       $RSYNC_HOST::$RSYNC_BUILDSERVICE_ROOT/$REPO $REPO_DIR
+
+  ret=$?
+
+  echo "`date` - OpenSuSE buildservice repo mirror completed with status $ret"
+  echo "--------------------------------------------------------------"
+  echo
+}
+
+for repo in $BUILDSERVICE_REPOS; do
+  mirror_repo $repo
+done
+
+replace_repo_uris
+exit $ret

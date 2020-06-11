@@ -1,0 +1,29 @@
+.view-calendar.view-display-id-page_1 .entity h2 {
+  display:none;
+}
+
+.view-calendar.view-display-id-page_1 .entity .content h2 {
+  display:block;
+}
+
+
+.view-calendar.view-display-id-page_1 .b14-calendar-item {
+  position:absolute;
+}
+
+
+
+.view-calendar.view-display-id-page_1 .views-row {
+  position:relative;
+}
+
+.view-calendar.view-display-id-page_1 .buttons
+{
+  margin-left:-100px;
+}
+
+.view-calendar.view-display-id-page_1 .views-field-field-data,
+.view-calendar.view-display-id-page_1 .views-field-id
+{
+  display:none;
+}

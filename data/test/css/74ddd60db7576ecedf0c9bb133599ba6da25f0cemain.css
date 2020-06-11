@@ -1,0 +1,40 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;}
+span{
+	font-weight: 700;
+	margin-right: 10px;
+}
+.container{
+	width:80%;
+	margin:50px auto;
+	background-color: ;
+}
+.modelList{
+	text-align: center;
+}
+.modelList li{
+	list-style: none;
+	width:25%;
+	text-align: center;
+	float:left;
+}
+.modelList li img{
+	width:220px;
+}
+.modelList li a{
+	font-size: 1.2em;
+	text-decoration: none;
+
+}
+/*.modelList li a:link, a:visited { 
+    color: maroon;
+}
+
+.modelList a:link:active, a:visited:active { 
+    color: black;
+}*/
+
+.modelDetail li{
+	font-size: 1.2em;
+}

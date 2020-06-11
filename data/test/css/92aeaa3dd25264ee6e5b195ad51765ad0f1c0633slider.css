@@ -1,0 +1,263 @@
+#visual-portal-wrapper .portletSlider {
+    border: 0 none;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+#visual-portal-wrapper .portletSlider .portletContent{
+    padding: 0;
+}
+#visual-portal-wrapper div.pl-slider-container  {
+    background-color: #444444;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+#visual-portal-wrapper div.pl-slider-container.pl-slider-empty  {
+    min-height: 150px;
+}
+#visual-portal-wrapper div.pl-slider-container.pl-loading  {
+    background-color: #666666;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 5%;
+}
+#visual-portal-wrapper div.pl-slider-container.pl-loading  div.dots,
+#visual-portal-wrapper div.pl-slider-container.pl-loading  div.pl-slide-text,
+#visual-portal-wrapper div.pl-slider-container.pl-loading  div.pl-slide-left,
+#visual-portal-wrapper div.pl-slider-container.pl-loading  div.pl-slide-right
+{
+    display: none !important;
+}
+
+
+div.pl-slider-container > img {
+    display: none;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+div.pl-slider-container > img[data-href] {
+    cursor: pointer;
+}
+
+div.pl-slider-container .pl-slide-text {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+75,000000+100&0.65+0,0.48+75,0+100 */
+    background: -moz-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.48) 75%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.65)), color-stop(75%,rgba(0,0,0,0.48)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.48) 75%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.48) 75%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.48) 75%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.48) 75%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+    display: none;
+    left: 0px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 10px;
+    text-align: left;
+    max-width: 400px;
+    z-index: 3;
+}
+
+div.pl-slider-container div.pl-slide-text  .pl-slide-title {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    max-width: 400px;
+}
+
+div.pl-slider-container div.pl-slide-text .pl-slide-description {
+    color: white;
+    font-size: 14px;
+    padding: 0px 15px;
+    max-width: 400px;
+}
+
+/* arrows */
+div.pl-slide-left, div.pl-slide-right  {
+    color: #333333;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    line-height: 0;
+    margin: 17px 0 0;
+    padding: 0;
+    position: absolute;
+    opacity: 0.7;
+    text-shadow: 0 0 1px #dddddd;
+    top: 50%;
+    z-index: 1;
+}
+div.pl-slider-container:hover div.pl-slide-edit  {
+    display: block;
+    z-index: 10;
+} 
+div.pl-slide-left:hover, div.pl-slide-right:hover  {
+    color: #ffffff;
+}
+div.pl-slide-left {
+    left: 15px;
+}
+div.pl-slide-right {
+    right: 15px;
+}
+
+/* dots */
+div.dots {
+    bottom: 5px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+    
+}
+div.dots > span {
+    color: #333333;
+    cursor: pointer;
+    font-size: 42px;
+    opacity: 0.7;
+    text-shadow: 0 0 1px #eeeeee;
+}
+div.dots > span.active {
+    color: #ffffff;
+}
+
+
+/* edit */
+div.pl-slide-edit {
+    bottom: 0px;
+    display: none;
+    position: absolute;
+    left: 10px;
+}
+span.pl-slide-load {
+    background-color: #007BB3;
+    border-radius: 5px 5px 0px 0px;
+    color: white !important;
+    cursor: pointer;
+    display: inline-block;
+    opacity: 0.8;
+    padding: 0px 15px;
+}
+span.pl-slide-load.delete {
+    background-color: #FE2E2E;
+}
+.pl-slide-content span.pl-slide-load {
+    border-radius: 3px;
+}
+.pl-slide-content span.pl-slide-load.delete {
+    border-radius: 3px;
+}
+
+div.pl-slide-edit > span:hover {
+    opacity: 1.0;
+}
+
+.pl-slide-load-zone {
+    bottom: 0;
+    display: none;
+    left: 0;
+    min-width: 300px;
+    padding: 0px !important;
+    position: relative;
+    z-index: 10000;
+}
+.pl-slide-load-zone .pl-slide-label {
+    background-color: #007bb3;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+.pl-slide-load-zone .pl-slide-content {
+    background-color: #ffffff;
+    border: 2px solid #007bb3;
+    padding: 10px !important;
+}
+
+#visual-portal-wrapper .pl-slide-load-zone .pl-slide-fileUpload {
+    border: 2px dashed #aaaaaa;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 250px;
+}
+#visual-portal-wrapper .pl-slide-load-zone .pl-slide-fileUpload div {
+    height: 60px;
+    margin-top: -60px;
+    text-align: center;
+    top: 0;
+}
+#visual-portal-wrapper .pl-slide-load-zone .pl-slide-fileUpload input[type="file"] {
+    height: 60px;
+    opacity: 0;
+    width: 100%;
+}
+#visual-portal-wrapper .pl-slide-load-zone .pl-slide-fileUpload.has-file {
+    border: 2px dashed green;
+    color: green;
+    font-weight: bold;
+}
+#visual-portal-wrapper .pl-slide-load-zone .pl-slide-static-open {
+    color: #666666;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+}
+#visual-portal-wrapper .pl-slide-load-zone .pl-slide-static-open:hover {
+    color: #333333;
+}
+#visual-portal-wrapper .pl-slide-load-zone ul.pl-slide-static {
+    display: none;
+}
+
+#visual-portal-wrapper .pl-slide-load-zone ul.pl-slide-sortable, 
+#visual-portal-wrapper .pl-slide-load-zone ul.pl-slide-static {
+    margin: 0 auto;
+    padding: 0px;
+    width: 400px;
+}
+#visual-portal-wrapper .pl-slide-load-zone ul.pl-slide-sortable li,
+#visual-portal-wrapper .pl-slide-load-zone ul.pl-slide-static li
+{
+    border: 1px dashed #888888;
+    border-radius: 2px;
+    list-style: none;
+    margin-bottom: 2px;
+    padding: 5px;
+    width: 400px;
+}
+#visual-portal-wrapper .pl-slide-load-zone ul.pl-slide-static li
+{
+    border: 0px none;
+}
+#visual-portal-wrapper .pl-slide-load-zone ul.pl-slide-sortable img, 
+#visual-portal-wrapper .pl-slide-load-zone ul.pl-slide-static img {
+    margin-left: 10px;
+    max-height: 100px;
+    width: 100px;
+}
+#visual-portal-wrapper .pl-slide-load-zone ul.pl-slide-sortable span, 
+#visual-portal-wrapper .pl-slide-load-zone ul.pl-slide-static span  {
+    margin-left: 10px;
+}
+
+#visual-portal-wrapper .pl-slide-load-zone #fieldset-dates,
+#visual-portal-wrapper .pl-slide-load-zone #fieldset-ownership,
+#visual-portal-wrapper .pl-slide-load-zone  #formfield-form-widgets-ICategorization-language,
+#visual-portal-wrapper .pl-slide-load-zone  #formfield-form-widgets-IAllowDiscussion-allow_discussion,
+#visual-portal-wrapper .pl-slide-load-zone  #formfield-form-widgets-IShortName-id,
+#visual-portal-wrapper .pl-slide-load-zone  #formfield-form-widgets-IRelatedItems-relatedItems,
+#visual-portal-wrapper .pl-slide-load-zone  #fieldset-categorization
+ {
+    display: none;
+}
+
+#visual-portal-wrapper .pl-slide-load-zone ul.pl-slide-sortable  li *, 
+#visual-portal-wrapper .pl-slide-load-zone ul.pl-slide-static  li * {
+    margin: 0 5px;
+    vertical-align: middle;
+}

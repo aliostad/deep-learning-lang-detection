@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# first mkdir
+mkdir -p /etc/apache2/sites-enabled
+mkdir -p /etc/apache2/mods-enabled
+
+# chown
+chown -R root:root /etc/apache2
+
+# a2enmod
+# alias.conf       authn_file.load       authz_host.load  autoindex.load  deflate.load  env.load   negotiation.conf  reqtimeout.load  setenvif.load  status.conf  wsgi.load
+# alias.load       authz_default.load    authz_user.load  cgi.load        dir.conf      mime.conf  negotiation.load  rewrite.load     ssl.conf       status.load
+# auth_basic.load  authz_groupfile.load  autoindex.conf   deflate.conf    dir.load      mime.load  reqtimeout.conf   setenvif.conf    ssl.load       wsgi.conf
+mods_enabled=(alias auth_basic authn_file authz_default \
+              authz_groupfile authz_host authz_user autoindex \
+              cgi deflate dir env mime negotiation reqtimeout \
+              rewrite setenvif ssl status wsgi)
+for mod in ${mods_enabled[@]};
+do
+    a2dismod $mod
+    a2enmod $mod
+done
+
+# a3ensite
+# yingquanyuan.com
+sites_enabled=(yingquanyuan.com)
+for site in ${sites_enabled[@]};
+do
+    a2dissite $site
+    a2ensite $site
+done
+
+# all set, restart Apache
+/etc/init.d/apache2 restart

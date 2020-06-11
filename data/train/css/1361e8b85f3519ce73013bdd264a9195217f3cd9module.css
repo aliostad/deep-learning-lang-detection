@@ -1,0 +1,34 @@
+﻿.ViewDocuments td
+{
+	padding:4px;
+	vertical-align:top;
+ 	white-space:nowrap
+}
+
+.ViewDocuments .SizeCell, 
+.ViewDocuments .ClicksCell
+{
+	text-align:right;
+}
+
+.ViewDocuments .DescriptionCell,
+.ViewDocuments .TitleCell { white-space:normal }
+
+.ViewDocuments .IconCell,
+.ViewDocuments .EditCell { text-align:center }
+
+.ViewDocuments .ClicksHeader, 
+.ViewDocuments .SizeHeader,  
+.ViewDocuments .DownloadLinkHeader,
+.ViewDocuments .ModifiedDateHeader,
+.ViewDocuments .ModifiedByHeader,
+.ViewDocuments .CreatedDateHeader,
+.ViewDocuments .CreatedByHeader,
+.ViewDocuments .PublishedOnDateHeader,
+.ViewDocuments .OwnerHeader,
+.ViewDocuments .CategoryHeader,
+.ViewDocuments .EditHeader,
+.ViewDocuments .IconHeader { width:1px }
+
+.ViewDocuments ._nonpublished { background-color:#ffc!important }
+.ViewDocuments ._nonpublished:hover { background-color:#fefe97!important }

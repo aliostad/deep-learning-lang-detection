@@ -1,0 +1,60 @@
+.bs-callout {
+  margin: 5px 0;
+}
+.cancle {
+  color: #000!important;
+  text-decoration: none;
+  background: none;
+}
+.agree {
+  background: green!important;
+  color: #FFF!important;
+}
+.reject {
+  background: grey!important;
+  color: #FFF!important;
+}
+.bs-radio {
+  margin-top: 12px!important;
+}
+.nav-scroll {
+  border: 1px solid #ccc;
+  height: 250px!important;
+  overflow-y: scroll;
+}
+.title-btn {
+  padding: 8px;
+  border-radius: 5px;
+}
+#panel-footer a,
+#provnice a,
+#depart a,
+#character a {
+  color: #000;
+}
+#provnice button,
+#character button {
+  color: #000;
+  border: 0px;
+}
+.mask-model {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  display: inline-block;
+  background: #000000;
+  color: #FFF;
+}
+.mask-model div {
+  padding: 16px;
+}
+.mask-model div p {
+  font-size: 16px;
+  text-indent: 2em;
+}
+#watch_school a,
+#watch_city a,
+#watch_depart a,
+#watch_persona a {
+  color: #000;
+}

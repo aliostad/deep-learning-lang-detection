@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PluginConfiguration requires="org.eclipse.hyades.probekit">
+	<Application configuration="default" executable="java.exe" extends="default" location="%SYS_TEMP_DIR%" path="%JAVA_PATH%">
+		<Variable name="CLASSPATH" position="append" value="%PLUGINS_HOME%\org.eclipse.tptp.monitoring.instrumentation_4.3.100.v200806180100\jmxModel.jar"/>
+		<Variable name="CLASSPATH" position="append" value="%PLUGINS_HOME%\org.eclipse.tptp.monitoring.instrumentation_4.3.100.v200806180100\cbeModel.jar"/>
+		<Variable name="CLASSPATH" position="append" value="%CLASSPATH_ORG_ECLIPSE_HYADES_EXECUTION%"/>
+		<Variable name="CLASSPATH" position="append" value="%CLASSPATH_ORG_MX4J_JMX%"/>
+		<Variable name="CLASSPATH" position="append" value="%CLASSPATH_ORG_MX4J_REMOTE_JMX%"/>
+	</Application>
+</PluginConfiguration>

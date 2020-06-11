@@ -1,0 +1,37 @@
+/* line 1, sass/nav.scss */
+nav {
+  background-color: #164a75;
+  text-align: center;
+  font-size: 17px;
+}
+/* line 5, sass/nav.scss */
+nav ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+/* line 9, sass/nav.scss */
+nav ul a {
+  color: #ffffff;
+}
+/* line 12, sass/nav.scss */
+nav ul li {
+  padding: 1% 2% 1% 2%;
+  margin: 0;
+  display: inline-block;
+}
+/* line 16, sass/nav.scss */
+nav ul li:hover {
+  color: #7a7a7a;
+}
+/* line 17, sass/nav.scss */
+nav ul li.selected {
+  background-color: #fff;
+  color: #164a75;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* line 25, sass/nav.scss */
+nav img.nav_divide {
+  margin-top: 1%;
+}

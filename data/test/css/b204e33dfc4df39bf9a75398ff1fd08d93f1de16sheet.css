@@ -1,0 +1,47 @@
+/* CSS Document */
+.content{
+	min-height:400px;}
+.toolbar{
+	background:url(../../../img/store/toolbar.png) no-repeat center 0px;}
+.toolbar .l{
+	float:left;
+	padding-top:3px;}
+.toolbar .l a{
+	display:inline-block;
+	height:20px;
+	line-height:20px;
+	margin-right:10px;}
+.toolbar .r{
+	float:right;}
+.toolbar .r a{
+	display:inline-block;
+	height:23px;
+	line-height:23px;
+	padding:0px 14px;
+	border:1px #d4d4d4 solid;
+	margin-left:10px;
+	background:url(../../../img/store/btn_bg_grey.png) repeat-x;}
+.toolbar .r a:hover{
+	background:url(../../../img/store/btn_bg_grey2.png) repeat-x;}
+.model_sheet_table{
+	margin-top:10px;
+	border:1px #d4d4d4 solid;}
+.model_sheet_table thead tr th{
+	width:100px;
+	border:1px #d4d4d4 solid;
+	background:#fafafa;
+	line-height:30px;}
+.model_sheet_table tbody tr td{
+	cursor:pointer;
+	border:1px #d4d4d4 solid;
+	text-align:center;
+	line-height:30px;}
+.sales_brand_label th{
+	cursor:pointer;
+	background-color: #0099D2 !important;
+	color:white;
+}
+.sales_model_label th{
+	cursor:pointer;
+	background-color: #cbe7f0 !important;
+}

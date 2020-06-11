@@ -1,0 +1,17 @@
+#!/bin/bash
+SAVE_LOCATION="/dev/shm/linux-perfmon"
+mkdir -p $SAVE_LOCATION
+
+
+# ATI Fan Data
+aticonfig --pplib-cmd 'get fanspeed 0' | grep Speed | awk -F': ' '{print $3}' >> $SAVE_LOCATION"/fan_ati.dat"
+
+# ATI Temp Data
+aticonfig --odgt | grep Temperature | awk -F' - ' '{print $2}' >> $SAVE_LOCATION"/temp_ati.dat"
+
+# CPU Temp Data
+acpi -t | grep 'Thermal 0' | awk -F', ' '{print $2}' | awk -F' ' '{print $1}' >> $SAVE_LOCATION"/temp_cpu.dat"
+
+# CPU Usage Data
+top -d 0.5 -b -n2 | grep 'Cpu(s)' | tail -n 1 | awk '{print $2 + $4}' >> $SAVE_LOCATION"/usage_cpu.dat"
+

@@ -1,0 +1,12 @@
+.view-model-submissions .model-label {font-size:12pt; font-weight:bold}
+.view-model-submissions .model-data {font-size:13pt;}
+.view-model-submissions .multiple {display:inline-block; margin-left:10px;}
+.view-model-submissions .model-image {display:inline-block; margin-right:10px;}
+.view-model-submissions .views-exposed-form  {margin-bottom:50px;}
+.view-model-submissions .model-seperator {margin: 25px; height:2px;}
+.view-model-submissions .all-model-images {margin-top:10px} 
+.view-model-submissions .views-field-sid  {text-align:center; margin-top:20px;}
+.view-model-submissions .views-field-sid a {color:#0074BD};
+.sm-cbox-pic {max-height: 700px; max-width:800px;}
+.views-exposed-form {margin-top:20px}
+.views-exposed-form label {font-size:12pt;}

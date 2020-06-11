@@ -1,0 +1,16 @@
+#!/bin/sh
+mkdir -p $1/$2/include/$2
+mkdir -p $1/$2/src/common
+mkdir -p $1/$2/xml
+h=".h"
+cc=".cc"
+className=$2
+echo "#Sample Make File" > $1/$2/Makefile
+sed 's/projectName/$1/g' /home/rasehgal/XDaqAppCreator/MakefileTemp >> $1/$2/Makefile
+sed 's/className/$2/g' $1/$2/Makefile > Makefile.2
+mv Makefile.2 $1/$2/Makefile
+echo "/* Sample Header File */"> $1/$2/include/$2/$className$h
+echo "/* Sample version File */" > $1/$2/include/$2/version$h
+echo "/* Sample Source File */" > $1/$2/src/common/$className$cc
+echo "/* Sample Version Source File */" > $1/$2/src/common/version$cc
+echo "<!-- Sample Xml file -->" > $1/$2/xml/$2.xml

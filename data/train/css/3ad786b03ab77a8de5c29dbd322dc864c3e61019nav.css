@@ -1,0 +1,51 @@
+/**
+  * nav
+  * @FTsafe css
+  * By Xiaocai
+  **/
+
+/* icon */
+.nav-vertical .ft-icon-grid:before,
+  .nav-vertical .ft-icon-list:before,
+  .nav-vertical .ft-icon-order:before,
+  .nav-vertical .ft-icon-column:before,
+  .nav-vertical .ft-icon-tool:before,
+  .nav-bread .ft-icon-left:before{ padding-right:12px; }
+.nav-vertical .ft-icon-grid:before{ font-size:12px; }
+.nav-vertical .ft-icon-list:before{ font-size:14px; }
+.nav-bread.ft-icon-left:before{ padding-right:10px; vertical-align:bottom; }
+
+/* Nav List -- nav-horizontal */
+.nav-horizontal{ color:#666; }
+.nav-horizontal li{ float:left; }
+.nav-horizontal li a{ display:inline-block; border-left:1px solid #dadada; padding:0 10px; line-height:1; }
+.nav-horizontal li:first-child a{ border:0; }
+
+/* Nav List -- nav-vertical */
+.nav-vertical{ border:1px solid #dadada; padding:14px 0 8px; color:#666; }
+.nav-vertical+.nav-vertical{ border-top:0; }
+.nav-vertical .nav-title{ padding:0 0 6px 18px;  color:#9a9a9a; cursor:pointer; }
+.nav-vertical .nav-choose{ float:right; padding-right:8px; }
+
+.nav-vertical dt, 
+  .nav-vertical dd{ line-height:1; }
+.nav-vertical dt a,
+  .nav-vertical dd a{ display:block; padding:8px 0 10px 48px; color:#333; }
+.nav-vertical .current a,
+  .nav-vertical a:hover,
+  .nav-vertical a.current{ background:#1fa4e2; color:#fff; }
+
+/* Nav Bread */
+.nav-bread{ position:relative; font-size:16px; xxline-height:1.2; }
+.nav-bread.n-b-large{ font-size:18px; line-height:1.4; }
+.nav-bread.n-b-info{ color:#428bca; }
+.nav-bread.n-b-info:hover{ text-decoration:underline; color:#2a6496; }
+.nav-bread.n-b-border hr{ position:absolute; top:2px; left:0; z-index:1; width:100%; border:0; border-top:1px solid #dadadb; }
+.nav-bread.n-b-border .n-b-contain{ position:relative; z-index:10; background:#FFF; padding-right:8px; }
+
+/* Nav Tab */
+.nav-tab{ border-bottom:1px solid #dadada; xxoverflow:auto; }
+.nav-tab li{ float:left; }
+.nav-tab li a{ display:inline-block; border-bottom:3px solid #FFF; padding:12px 28px; line-height:1; }
+.nav-tab li a.current,
+  .nav-tab li a:hover{ border-color:#1ea5e2; }

@@ -1,0 +1,125 @@
+#page {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
+h2 {
+  margin-bottom: 0px;
+}
+.slider,
+#welcome-slideshow {
+  height: 210px;
+  width: 100%;
+}
+.slider li,
+#welcome-slideshow li {
+  width: 100%;
+  height: 210px;
+}
+.model__video {
+  width: 100%;
+  height: 180px;
+}
+.model__video iframe {
+  height: 180px;
+  width: 100%;
+  margin-bottom: 0;
+}
+.model-list__item {
+  height: 410px !important;
+  width: 100%;
+  margin: 20px 0 20px;
+}
+.model-list__item__image {
+  height: 410px !important;
+  width: 100%;
+}
+.nav {
+  min-width: 100%;
+}
+.nav_item {
+  width: 40%;
+  margin: 5px 10px !important;
+  display: inline-block;
+}
+.model__image {
+  width: 129px !important;
+  height: 129px !important;
+}
+.model__images {
+  margin: 10px auto;
+  width: 100%;
+!important
+}
+!important
+.left,
+.right {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+#preview {
+  background-position: center;
+  margin-bottom: 10px;
+}
+.footer {
+  margin-top: 20px;
+}
+#logo {
+  margin-top: 20px;
+}
+#media-icons {
+  top: 0px;
+  right: 75px;
+}
+#langs {
+  top: 0px;
+  right: 40px;
+}
+.model-list__item {
+  position: relative;
+}
+.model-list__item__info {
+  position: absolute;
+  top: 180px;
+  right: 30px;
+}
+.luthier {
+  display: none;
+}
+.about-text {
+  float: none;
+  width: auto;
+  padding: 0;
+}
+.input_100 {
+  width: 90%;
+}
+input {
+  display: block;
+}
+.more-instruments {
+  display: none;
+}
+.more-instruments-link {
+  display: block;
+}
+.ash_large {
+  display: none;
+}
+.instruments_large {
+  display: none;
+}
+.instruments_small {
+  font-size: 24px;
+}
+.ash_small {
+  font-size: 24px;
+}
+#logo {
+  width: 214px;
+}
+.small-nav {
+  margin-top: 50px;
+}

@@ -1,0 +1,58 @@
+#header{
+
+}
+#content{
+  height: 700px;
+}
+.panel-body{
+
+}
+#footer{
+
+}
+#ff{
+float: right;
+   margin-top: 8px;
+}
+#enter {
+    float: right;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+#r_home{
+    margin-right: 10px;
+}
+#doppanel{
+    width: 100%;
+    margin-left: 0%;
+}
+#content_login{
+    width: 50%;
+    margin-left: 25%;
+}
+.panel-heading{
+    font-size: 15;
+    font-size: medium;
+    font-weight: bold;
+}
+.form-control{
+  margin-bottom: 7px;
+}
+#curs{
+    height: 10px;
+}
+#loadImg{
+    display: none;
+}
+#loadImgModal{
+    display: none;
+}
+#dom,#kw,#org{
+    width: 200px;
+    float: left;
+    margin-right: 30px;
+}
+#data{
+    float: left;
+}
+

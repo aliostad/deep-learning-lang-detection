@@ -1,0 +1,57 @@
+
+#load-more-load-posts a:link, #load-more-load-posts a:visited {
+	display: block;
+	text-align: center;
+	padding: 4px 0;
+	color: #444;
+	text-decoration: none;
+
+
+	/** Rounded Corners **/
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+
+	/** Drop shadow **/
+	-moz-box-shadow: 1px 1px 1px #999;
+	-webkit-box-shadow: 1px 1px 1px #999;
+	box-shadow: 1px 1px 1px #999;
+
+	/** Gradients : http://css-tricks.com/css3-gradients/ */
+	/* fallback */
+	background-color: #f1f1f1;
+
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(100% 100% 90deg, #e4e3e3, #f1f1f1);
+
+	/* Safari 4-5, Chrome 1-9 */
+	/* -webkit-gradient(<type>, <point> [, <radius>]?, <point> [, <radius>]? [, <stop>]*) */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f1f1f1), to(#e4e3e3));
+
+	/* Safari 5.1+, Chrome 10+ */
+	background: -webkit-linear-gradient(#f1f1f1, #e4e3e3);
+
+	/* Opera 11.10+ */ background: -o-linear-gradient(#f1f1f1, #e4e3e3);
+}
+
+#load-more-load-posts a:hover, #load-more-load-posts a:active {
+	/** Drop shadow **/
+	-moz-box-shadow: 1px 1px 1px #bbb;
+	-webkit-box-shadow: 1px 1px 1px #bbb;
+	box-shadow: 1px 1px 1px #bbb;
+
+	/** Gradients : http://css-tricks.com/css3-gradients/ */
+	/* fallback */
+	background-color: #f5f5f5;
+
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(100% 100% 90deg, #eaeaea, #f5f5f5);
+
+	/* Safari 4-5, Chrome 1-9 */
+	/* -webkit-gradient(<type>, <point> [, <radius>]?, <point> [, <radius>]? [, <stop>]*) */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f5f5f5), to(#eaeaea));
+
+	/* Safari 5.1+, Chrome 10+ */
+	background: -webkit-linear-gradient(#f1f1f1, #eaeaea);
+
+	/* Opera 11.10+ */ background: -o-linear-gradient(#f5f5f5, #eaeaea);
+}

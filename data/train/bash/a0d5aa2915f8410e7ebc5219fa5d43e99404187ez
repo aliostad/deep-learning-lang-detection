@@ -1,0 +1,119 @@
+#!/bin/zsh
+# new template handler
+# TODO:
+# @select 不能工作在子进程中
+(
+        function help() {
+            print '''
+$ z TEMPLATE
+
+OPTIONS:
+ -H <path> : working dir
+'''
+        }
+
+        typeset -A _opts
+        
+        zparseopts -A _opts -K -D -- I=flags H:=_opts
+        # @EF $flags
+        [[ -n $1 ]] && {
+            local Z_SOURCE="$1" && shift;
+            local _content="$(<$Z_SOURCE)"
+        }
+
+
+
+        local _line _handler 
+        local -a _chunk _echunk
+        local _context=:NONE
+        local _zpwd=$_opts[-H]
+
+        [[ -n $_zpwd ]] && cd $_zpwd
+        setopt EXTENDED_GLOB
+
+        function evalchunk() {
+            # has echunk
+            [[ -n $_echunk ]] && {
+                <<< ${(eF)_echunk}
+                _echunk=()
+            }
+
+            (( $#_chunk    )) || return
+
+            # has chunk, pipe to it's handler
+            <<< ${(F)_chunk} eval "$_handler"
+
+            # reset state
+            _chunk=()
+            _handler=
+        }
+        
+        function D() {
+            print -u2 ${(F)argv}
+        }
+
+        function @i() {
+            # skip interactive mode
+            [[ -n $flags[(r)-I] ]] && return
+            local content="$(<&0)"
+            eval "$(<<< ${(e)content} | vipe)"
+        }
+
+        function @e() {
+            local sh
+            sh="$(<&0)"
+            eval "$sh"
+            D "$sh"
+        }
+
+        function @if() {
+            eval "$1" && {
+                local content="$(<&0)"
+                print "${(e)content}"
+            }
+        }
+
+        function @as() {
+            typeset -g ${1:=_as}="$(<&0)"
+        }
+
+        function @echo() {
+            local content="$(<&0)"
+            <<< ${(e)content}
+        }
+
+        # new
+        # push content to named pipe
+        function @append() {
+            local content="$(<&0)"
+            set -A $1 "${(@P)1}" "${(e)content}"
+            # D $(typeset -p $1)
+        }
+
+        function @select() {
+            local -a options
+            options=("${(@f)$(<&0)}")
+            select x in $options; do
+                echo $REPLY
+            done
+        }
+
+        for _line in "${(@f)_content}"; do
+
+            if [[ $_line = (#b)\#----(-)#\|(\ )#(*) ]]; then
+                evalchunk
+                _context=:CHUNK
+                _handler="$match[3]"
+            elif [[ $_line = (#b)\#----(-)# ]]; then
+                _context=:CHUNK_END
+                evalchunk
+            else
+                [[ $_context = :CHUNK ]] && _chunk+=$_line && continue
+                _echunk+=$_line
+            fi
+        done
+        
+        # TODO: 如果handler不存在,则退出
+        # ensure last chunk be evaled
+        evalchunk
+)

@@ -1,0 +1,16 @@
+*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;position:relative}
+body{font-family:'Segoe UI',Ubuntu,'Helvetica Neue',Helvetica,Verdana,Sans-Serif}
+a{color:#00b7ff}
+h1,h2,h3{font-weight:normal}
+#sample-log-message-form input[type='text'],#sample-log-message-form textarea{width:300px}
+#sample-log-message-form textarea{height:150px}
+#log-message-list{list-style-type:none;margin:0;overflow:hidden;padding:0;white-space:nowrap;}
+#log-message-list .log-message{padding:2px 10px;overflow:hidden;white-space:nowrap;}
+#log-message-list .log-message:hover{background:#fafafa;cursor:pointer}
+#log-message-list .log-message .field{float:left;margin:0 10px 0 0;overflow:hidden;white-space:nowrap}
+#log-message-list .log-message .server-timestamp{width:20%}
+#log-message-list .log-message .application{width:10%}
+#log-message-list .log-message .severity{width:5%}
+#log-message-list .log-message .host{width:7%}
+#log-message-list .log-message .context{width:10%}
+#log-message-list .log-message .message{overflow:hidden;text-overflow:ellipsis;width:40%}

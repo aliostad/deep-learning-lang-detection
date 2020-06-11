@@ -1,0 +1,62 @@
+
+.i-model-confirm {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 10;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.i-model-confirm > div {
+    position: relative;
+    width: 280px;
+    height: 140px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: #000;
+}
+
+.i-model-confirm > div > section {
+    width: 100%;
+    text-align: center;
+    height: 106px;
+    line-height: 106px;
+}
+
+.i-model-confirm > div > footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.i-model-confirm > div > footer > .i-cancel-btn {
+    width: 50%;
+    float: left;
+    -webkit-border-radius: 0 0 0 3px;
+    -moz-border-radius: 0 0 0 3px;
+    border-radius: 0 0 0 3px;
+}
+
+.i-model-confirm > div > footer > .i-ok-btn {
+    width: 50%;
+    float: left;
+    -webkit-border-radius: 0 0 3px 0;
+    -moz-border-radius: 0 0 3px 0;
+    border-radius: 0 0 3px 0;
+}

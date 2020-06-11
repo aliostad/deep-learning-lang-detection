@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages nplurals="3"
+    plural="(n%10 == 0 || n%10 >= 5 || n/10%10 == 1) ? 2 : n%10==1 ? 0 : 1">
+
+    <message id='wc.captcha.Get_audio'>Праслухаць аўдыё</message>
+    <message id='wc.captcha.Get_image'>Показать картинку</message>
+    <message id='wc.captcha.Internal_error'>Унутраная памылка</message>
+    <message id='wc.captcha.Too_often'>Занадта частыя спробы</message>
+    <message id='wc.captcha.Wrong_response'>Няправільны адказ</message>
+
+    <message id='wc.common.Update'>Абнавіць</message>
+
+    <message id='wc.time.days'>дзён</message>
+    <message id='wc.time.hours'>гадзін</message>
+    <message id='wc.time.interval_template'>ад ${min} да ${max}</message>
+    <message id='wc.time.minutes'>хвілін</message>
+    <message id='wc.time.seconds'>секунд</message>
+    <message id='wc.time.weeks'>тыдняў</message>
+
+    <message id='wc.wbi.Cancel'>Адмяніць</message>
+    <message id='wc.wbi.Download'>Спампаваць</message>
+    <message id='wc.wbi.Error_empty'>Гэта поле не можа быць пустым</message>
+    <message id='wc.wbi.Error_invalid'>Няправільны ўвод</message>
+    <message id='wc.wbi.Error_parsing'>Памылка апрацоўкі опцый: {1}</message>
+    <message id='wc.wbi.Error_runtime'>Памылка часу выканання: {1}</message>
+    <message id='wc.wbi.Error_too_large'>Файл занадта вялікі</message>
+    <message id='wc.wbi.Finished'>Завершана</message>
+    <message id='wc.wbi.Finished_errors'>Завершана з памылкамі</message>
+    <message id='wc.wbi.Inputs'>Уваходы</message>
+    <message id='wc.wbi.New'>Новае</message>
+    <message id='wc.wbi.Outputs'>Вынікі</message>
+    <message id='wc.wbi.Queued'>Адкладзенае</message>
+    <message id='wc.wbi.Run'>Запуск</message>
+    <message id='wc.wbi.State_is'>Стан: {1}</message>
+    <message id='wc.wbi.View'>Паглядзець</message>
+    <message id='wc.wbi.Working'>У працэсе</message>
+
+</messages>
+

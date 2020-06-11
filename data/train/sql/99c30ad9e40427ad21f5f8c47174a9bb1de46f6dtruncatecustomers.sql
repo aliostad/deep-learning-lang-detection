@@ -1,0 +1,12 @@
+TRUNCATE TABLE `customer_address_entity`;
+TRUNCATE TABLE `customer_address_entity_datetime`;
+TRUNCATE TABLE `customer_address_entity_decimal`;
+TRUNCATE TABLE `customer_address_entity_int`;
+TRUNCATE TABLE `customer_address_entity_text`;
+TRUNCATE TABLE `customer_address_entity_varchar`;
+TRUNCATE TABLE `customer_entity`;
+TRUNCATE TABLE `customer_entity_datetime`;
+TRUNCATE TABLE `customer_entity_decimal`;
+TRUNCATE TABLE `customer_entity_int`;
+TRUNCATE TABLE `customer_entity_text`;
+TRUNCATE TABLE `customer_entity_varchar`;

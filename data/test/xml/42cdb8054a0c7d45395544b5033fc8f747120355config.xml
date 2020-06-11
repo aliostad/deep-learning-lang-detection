@@ -1,0 +1,129 @@
+<?xml version="1.0" ?>
+<agents>
+  <agent id="0" ip="172.21.210.36">
+    <broadcast>
+      <message type="0" mode="2">
+        <to>
+          <agent id="2"/>  
+        </to>
+      </message>    
+      <message type="1" mode="2">
+        <to>
+          <agent id="2"/>  
+        </to>
+      </message> 
+      <message type="2" mode="2">
+        <to>
+          <agent id="2"/>  
+        </to>
+      </message> 
+      <message type="3" mode="2">
+        <to>
+          <agent id="2"/>  
+        </to>
+      </message> 
+      <message type="4" mode="2">
+        <to>
+          <agent id="2"/>  
+        </to>
+      </message> 
+      <message type="5" mode="2">
+        <to>
+          <agent id="2"/>  
+        </to>
+      </message> 
+      <message type="10" mode="2">
+        <to>
+          <agent id="2"/>  
+        </to>
+      </message> 
+      <nonmessage type="12" mode="2" protocol="1">
+        <to>
+          <agent id="2"/>  
+        </to>
+      </nonmessage>  
+      <message type="13"/>
+    </broadcast>
+    <receive>
+      <message type="6"/>
+      <message type="7"/>
+      <message type="8"/>
+      <message type="9"/>
+      <nonmessage type="11"/>
+    </receive> 
+  </agent>
+  <agent id="1" ip="172.21.210.60">
+    <broadcast>
+      <message type="0" mode="2">
+        <to>
+          <agent id="2"/>  
+        </to>
+      </message>    
+      <message type="1" mode="2">
+        <to>
+          <agent id="2"/>  
+        </to>
+      </message> 
+      <message type="2" mode="2">
+        <to>
+          <agent id="2"/>  
+        </to>
+      </message> 
+      <message type="3" mode="2">
+        <to>
+          <agent id="2"/>  
+        </to>
+      </message> 
+      <message type="4" mode="2">
+        <to>
+          <agent id="2"/>  
+        </to>
+      </message> 
+      <message type="5" mode="2">
+        <to>
+          <agent id="2"/>  
+        </to>
+      </message> 
+      <message type="10" mode="2">
+        <to>
+          <agent id="2"/>  
+        </to>
+      </message> 
+      <nonmessage type="12" mode="2" protocol="1">
+        <to>
+          <agent id="2"/>  
+        </to>
+      </nonmessage>  
+      <message type="13"/>
+    </broadcast>
+    <receive>
+      <message type="6"/>
+      <message type="7"/>
+      <message type="8"/>
+      <message type="9"/>
+      <nonmessage type="11"/>
+    </receive> 
+  </agent>  
+    <agent id="2" ip="172.21.209.88">
+    <broadcast>
+      <message type="6" mode="1"/>
+      <message type="7" mode="1"/>
+      <message type="8" mode="1"/>
+      <message type="9" mode="1"/>
+      <nonmessage type="11" mode="1" protocol="1"/>
+    </broadcast>
+    <receive>
+      <message type="0" mode="1"/>
+      <message type="1" mode="1"/>
+      <message type="2" mode="1"/>
+      <message type="3" mode="1"/>
+      <message type="4"/>
+      <message type="5" mode="1"/>
+      <message type="10" mode="1"/>
+      <nonmessage type="12"/>
+      <nonmessage type="13"/>
+    </receive> 
+  </agent>
+  
+</agents>
+

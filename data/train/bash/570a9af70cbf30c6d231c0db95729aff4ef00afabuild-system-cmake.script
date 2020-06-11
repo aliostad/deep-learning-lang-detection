@@ -1,0 +1,56 @@
+#!/bin/sh
+#
+# Copyright (C) 2011-2014  Codethink Limited
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; version 2 of the License.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+
+## Convert the hello-chunk project to something cmake-like, then
+## build it.
+
+set -eu
+
+chunkrepo="$DATADIR/chunk-repo"
+cd "$chunkrepo"
+
+git checkout --quiet farrokh
+
+cat <<'EOF' >CMakeLists.txt
+cmake_minimum_required(VERSION 2.8)
+project(hello)
+
+set(hello_SOURCES hello.c)
+add_executable(hello ${hello_SOURCES})
+install(TARGETS hello RUNTIME DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
+EOF
+
+git add CMakeLists.txt
+
+cat <<EOF > hello.morph
+name: hello
+kind: chunk
+build-system: cmake
+install-commands:
+  - make DESTDIR="\$DESTDIR" install
+EOF
+git add hello.morph
+git commit --quiet -m "Convert hello to a cmake project"
+
+"$SRCDIR/scripts/test-morph" build-morphology \
+    test:morphs-repo master hello-system
+
+for chunk in "$DATADIR/cache/artifacts/"*.chunk.*
+do
+    tar -tf "$chunk"
+done | LC_ALL=C sort -u | sed '/^\.\/./s:^\./::' | grep -Ee '^(usr/)?(bin|etc)'

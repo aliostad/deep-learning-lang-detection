@@ -1,0 +1,67 @@
+/* 通用头部导航栏 */
+nav.public-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 1200px;
+    padding: 10px 0;
+    z-index: 20;
+    background-color: rgba(255, 255, 255, .8);
+}
+nav.public-nav .logo {
+    width: 12%;
+}
+nav.public-nav img {
+    height: 80px;
+    vertical-align: top;
+}
+nav.public-nav .nav-list {
+    width: 70%;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+nav.public-nav .nav-list .list-item {
+    display: inline-block;
+    position: relative;
+    width: 16%;
+    margin-right: 5%;
+    font: 16px/80px "黑体", sans-serif;
+    list-style: none;
+    text-align: center;
+    vertical-align: middle;
+}
+nav.public-nav .nav-list .list-item:last-child {
+    margin-right: 0;
+}
+nav.public-nav .nav-list .list-item {
+    display: inline-block;
+    position: relative;
+    width: 16%;
+    margin-right: 5%;
+    font: 16px/80px "黑体", sans-serif;
+    list-style: none;
+    text-align: center;
+    vertical-align: middle;
+}
+nav.public-nav .nav-list .list-item:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    content: "";
+    background-color: #5AAADE;
+    transform:scale(0);
+    transition: all .3s;
+}
+nav.public-nav .nav-list .list-item:hover a,
+nav.public-nav .nav-list .list-item.item-actived a {
+    color: #5AAADE;
+}
+nav.public-nav .nav-list .list-item:hover:before,
+nav.public-nav .nav-list .list-item.item-actived:before {
+    transform:scale(1);
+}

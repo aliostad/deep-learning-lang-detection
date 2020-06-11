@@ -1,0 +1,264 @@
+@CHARSET "UTF-8";
+
+/*
+Theme Name: PL07
+Theme URI: http://theme.pl07.de
+Description: Joomla Template fuer die Homepage des SV Wiesbaden 1899 e.V.
+Author: Pascal Link
+Author URI: http://www.pl07.de
+*/
+
+/* 
+    blue:   #00004C
+    orange: #FF4A00
+    
+*/
+
+#fussballdeAPI #edReiternavigation {
+	color: blue !important;
+	border-bottom: 1px solid #fff !important;
+}
+#fussballdeAPI #edReiternavigation a {	
+	display: block;
+	padding: 0.5em 1em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff !important;
+	background-color: #00004C !important;
+	width: auto !important;
+}
+#fussballdeAPI #edReiternavigation a[target*="_blank"] {
+	/*display: none !important;*/
+}
+#fussballdeAPI #edReiternavigation a.disabled {
+	display: none !important;
+}
+
+#fussballdeAPI #edReiternavigation a:hover {	
+	background-color: #FF4A00 !important;
+}
+/* Styles fuer die Tabellen-Ansicht */
+#tabelle #fussballdeAPI {
+  border: none !important;
+}
+#tabelle #fussballdeAPI DIV.fbdeAPItoplogo {
+  display: none !important;
+  width: 0px !important;
+  height: 0px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+#tabelle #fussballdeAPI DIV.fbdeAPItoplogo DIV.fbdeAPItoplogoClick {
+  display: none !important;
+}
+#tabelle #fussballdeAPI DIV.fbdeAPItoplogo DIV.fbdeAPISuche{
+  display: none !important;
+}
+#tabelle #fussballdeAPI iframe {
+  display: none !important;
+  width: 0px !important;
+  height: 0px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+#tabelle #fussballdeAPI DIV.fbdeAPItoplogo {
+  display: none !important;
+}
+#tabelle #fussballdeAPI #edBegegnungsliste DIV.SpieltagSuchblock {
+  display: none !important;
+}
+#tabelle #fussballdeAPI #edKopf {
+  display: none !important;
+}
+#tabelle #fussballdeAPI #edReiternavigation {
+  display: none !important;
+}
+#tabelle #fussballdeAPI TABLE {
+  width: 525px !important;
+}
+*HTML #tabelle #fussballdeAPI TABLE {
+  width: 520px !important;
+}
+#tabelle #fussballdeAPI TABLE.edKerntabelle THEAD TR TH {
+  color: #FFFFFF !important;
+  background-color: #749AD8!important;
+  border-color: #CCCCCC !important;
+  border-bottom: 1px solid #CCCCCC !important;
+}
+#tabelle #fussballdeAPI TABLE.edKerntabelle TBODY TR TH {
+  color: #FFFFFF !important;
+  background-color: #749AD8!important;
+  border-bottom: 1px solid #CCCCCC !important;
+}
+#tabelle #fussballdeAPI TABLE.edKerntabelle TR TD {
+  color: #000000 !important;
+}
+#tabelle #fussballdeAPI TABLE #edMouseover1 TD.fbdeAPIAufsteiger,
+#tabelle #fussballdeAPI TABLE.edKerntabelle TR TD.fbdeAPIAufsteigerInactA,
+#tabelle #fussballdeAPI TABLE.edKerntabelle TR TD.fbdeAPIAbsteigerInactB {
+  background-color: #D4DDED !important;
+}
+#tabelle #fussballdeAPI TABLE.edKerntabelle TR TD.fbdeAPIAufsteigerInactB,
+#tabelle #fussballdeAPI TABLE.edKerntabelle TR TD.fbdeAPIAbsteigerInactA {
+  background-color: #A1BBE4 !important;
+} 
+#tabelle #fussballdeAPI TABLE.edKerntabelle TR TD.fbdeAPIRowInactA {
+  background-color: #FFFFFF !important;
+}
+#tabelle #fussballdeAPI TABLE.edKerntabelle TR TD.fbdeAPIRowInactB {
+  background-color: #EEEEEE !important;
+}
+#tabelle #fussballdeAPI TABLE.edKerntabelle TR:hover {
+  background-color: #D4DDED !important;
+}
+#tabelle #fussballdeAPI TABLE TR TD A {
+  color: #3771C2 !important;
+}
+#tabelle #fussballdeAPI TABLE TR TD A.mouseOutColor {
+  color: #3771C2 !important;
+}
+
+/* Styles f?r die Ergebnis-Ansicht */
+
+.ergebnisse, .tabelle {
+	padding: 0.5em 10px;
+	float: none;
+}
+
+#fussball-de-widget #fussballdeAPI {
+  border: none !important;
+  width: auto !important;
+}
+#fussball-de-widget #fussballdeAPI DIV.fbdeAPItoplogo {
+  display: none !important;
+  width: 0px !important;
+  height: 0px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+#fussball-de-widget #fussballdeAPI DIV.fbdeAPItoplogo DIV.fbdeAPItoplogoClick {
+  display: none !important;
+}
+#fussball-de-widget #fussballdeAPI DIV.fbdeAPItoplogo DIV.fbdeAPISuche{
+  display: none !important;
+}
+#fussball-de-widget #fussballdeAPI iframe {
+  display: none !important;
+  width: 0px !important;
+  height: 0px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+#fussball-de-widget #fussballdeAPI iframe #vmsb-widget-rubrik {
+  display: none !important;
+}
+#fussball-de-widget #fussballdeAPI DIV.fbdeAPItoplogo {
+  display: none !important;
+}
+#fussball-de-widget #fussballdeAPI #edBegegnungsliste DIV.SpieltagSuchblock {
+/*  display: none !important;*/
+    width: auto !important;
+}
+#fussball-de-widget #fussballdeAPI div.SpieltagSuche {
+    float: right !important;    
+}
+#fussball-de-widget #fussballdeAPI #edKopf {
+  display: none !important;
+}
+#fussball-de-widget #fussballdeAPI #edReiternavigation {
+  /*display: none !important;*/
+}
+#fussball-de-widget #fussballdeAPI TABLE,
+#fussball-de-widget .content {
+  width: 100% !important;
+}
+*HTML #fussball-de-widget #fussballdeAPI TABLE {
+  width: 100% !important;
+}
+#fussball-de-widget #fussballdeAPI TABLE.edKerntabelle THEAD TR TH {
+  color: white!important;
+  background-color: #00004C!important;
+  border-color: white!important;
+  border-bottom: 1px solid #fff!important;
+}
+#fussball-de-widget #fussballdeAPI TABLE.edKerntabelle TBODY TR TD {
+  background-color: #CECECE !important;
+  border-color: #fff!important;
+  font-weight: normal;
+}
+#fussball-de-widget #fussballdeAPI TABLE.edKerntabelle TR TD.edDatum {
+  color: black!important;
+  background: #c3c3c3 !important;
+  font-weight: bold;
+  font-family: helvetica, arial;
+}
+#fussball-de-widget #fussballdeAPI TABLE.edKerntabelle TR TD.fbdeAPIRowInactB {
+  background-color: #EEEEEE !important;
+  border-color: #CCCCCC !important;
+}
+#fussball-de-widget #fussballdeAPI TABLE.edKerntabelle TR TD.fbdeAPIRowInactA {
+  background-color: #FFFFFF !important;
+  border-color: #CCCCCC !important;
+}
+#fussball-de-widget #fussballdeAPI TABLE TR TD A {
+  /*color: #00004C!important;*/
+}
+#fussball-de-widget #fussballdeAPI TABLE TR TD A.mouseOutColor {
+  color: #3771C2 !important;
+}
+#fussballdeAPI TABLE TR TD.fbdeAPIAufsteigerInactA A,
+#fussballdeAPI TABLE TR TD.fbdeAPIAufsteigerInactB A,
+#fussballdeAPI TABLE TR TD.fbdeAPIAbsteigerInactB A,
+#fussballdeAPI TABLE TR TD.fbdeAPIAbsteigerInactA A,
+#fussballdeAPI TABLE TR TD.fbdeAPIAufsteigerInactA,
+#fussballdeAPI TABLE TR TD.fbdeAPIAufsteigerInactB,
+#fussballdeAPI TABLE TR TD.fbdeAPIAbsteigerInactB,
+#fussballdeAPI TABLE TR TD.fbdeAPIAbsteigerInactA 
+{
+  color: black !important;
+}
+#fussball-de-widget #fussballdeAPI #edBegegnungsliste DIV.verlegteSpiele {
+  padding-top: 10px !important;
+  width: 520px !important;
+  background-color: #FFFFFF !important;
+}
+#fussball-de-widget #fussballdeAPI tr:nth-child(3) td {
+  background-color: organge !important;
+}
+{
+  
+}
+#fussballdeAPI a, #fussballdeAPI a.mouseOutColor, #fussballdeAPI a:hover {
+  color: #00004c !important;
+}
+
+#fussball-de-widget #fussballdeAPI TABLE TR TD A.svw,
+#fussball-de-widget #fussballdeAPI TABLE.edKerntabelle TBODY TR TD.svw,
+#fussball-de-widget #fussballdeAPI TABLE.edKerntabelle TR TD.fbdeAPIRowInactB.svw,
+#fussball-de-widget #fussballdeAPI TABLE.edKerntabelle TR TD.fbdeAPIRowInactA.svw {
+  font-weight: bold !important;
+  font-size: 10pt !important;
+  color: rgb(255,74,0) !important;
+}
+#fussball-de-widget #fussballdeAPI TABLE.edKerntabelle TBODY TR TD.fbdeAPIAufsteigerInactA.svw,
+#fussball-de-widget #fussballdeAPI TABLE TR TD.fbdeAPIAufsteigerInactA A.svw {
+  color: #ff4a00 !important;
+}
+
+#fussballdeAPI a.svw, 
+#fussballdeAPI a.mouseOutColor.svw, 
+#fussball-de-widget #fussballdeAPI TABLE TR TD A.mouseOutColor.svw {
+  color: rgb(255,74,0) !important;
+}
+
+#fussballdeAPI a.svw:hover {
+ color: rgb(0,0,74) !important;
+}
+a.svw[title='Weiter zur Vereinsseite von SV Wiesbaden.']:before  {
+  background-image: url('/images/icons/svw_logo_traditon_aus_leidenschaft_150.jpg');
+  background-size: 16px 16px;
+  padding: 0px 6px;
+  content: '\1b\20';
+  margin-right: 0.2em;
+}

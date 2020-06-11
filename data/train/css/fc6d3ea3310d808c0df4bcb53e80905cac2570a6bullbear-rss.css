@@ -1,0 +1,40 @@
+
+
+
+/*** RSS Nachrichten Block ***/
+
+.view-AggregatorListView .view-header
+{
+	background-color: #132C40;
+    padding: 10px;
+}
+
+
+.view-AggregatorListView .view-header h2
+{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.view-AggregatorListView .views-field-timestamp
+{
+	color: #760C29 !important;
+    font-size: 0.917em !important;
+}
+
+.view-AggregatorListView .views-field-title a
+{
+	color: #000000 !important;
+    font-size: 13px !important;
+}
+
+.block-aggregator h2
+{
+	font-size: 1.3em !important;
+}
+
+.block-aggregator .item-list .icon
+{
+	padding-left: 50px !important;
+}
+

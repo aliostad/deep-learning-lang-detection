@@ -1,0 +1,43 @@
+body {
+  padding:  2em;
+  font-family: sans-serif;
+  max-width:  960px;
+  margin: 0 auto;
+}
+.nav {
+  border: 1px dashed #FF6A00;
+  padding: 0.25em;
+  margin-bottom: 2em;
+}
+.nav > ul {
+  padding: 0;
+  margin: 0;
+  display: table;
+  border-spacing: 0.25em;
+}
+.nav > ul > li {
+  display: table-cell;
+}
+.nav > ul > li a:link, .nav > ul > li a:visited {
+   display: block;
+   padding:  0.75em;
+   background-color: #FF6A00;
+   color: #fff;
+   text-decoration: none;
+}
+
+.nav > ul > li a:hover, .nav > ul > li a:active {
+   background-color: #FFF;
+   color: #FF6A00;
+}
+
+
+.nav+.nav+.nav > ul > li {
+  vertical-align: bottom;
+}
+.nav+.nav > ul > li a[href="meals"] {
+  padding:  2em;
+} 
+.nav+.nav > ul > li a[href="dioramas"] {
+  padding:  3em;
+} 

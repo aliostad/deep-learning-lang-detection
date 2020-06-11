@@ -1,0 +1,6 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4538, "Ultimate SWF Flash Display Widget", "4.1", NULL, "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79646, 4538, "register_connex_ultimate_swf_flash_display_widget", "/ultimate-swf-flash-display-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (564869, 4538, "ultimate_swf_flash_display_widget", "__construct", "/ultimate-swf-flash-display-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (564870, 4538, "ultimate_swf_flash_display_widget", "form", "/ultimate-swf-flash-display-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (564871, 4538, "ultimate_swf_flash_display_widget", "widget", "/ultimate-swf-flash-display-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48792, 4538, "widgets_init", "'register_connex_ultimate_swf_flash_display_widget'", 10, now(), now());

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+
+	<action-mappings>
+	    
+		<action path="/process-browser/view" type="it.webscience.kpeople.web.portlet.process.action.ViewAction">
+			<forward name="/process-browser/view" path="/html/view.jsp" />
+		</action>
+		
+		<action path="/process-browser/view-process" type="it.webscience.kpeople.web.portlet.process.action.SearchProcessAction">
+            <forward name="/process-browser/view-process" path="/html/view-process.jsp" />
+        </action>
+        
+		<action path="/process-browser/begin-search" type="it.webscience.kpeople.web.portlet.process.action.SearchProcessAction">
+			<forward name="/process-browser/view-process" path="/html/view-process.jsp" />
+		</action>
+		
+		<action path="/process-browser/view-process-details" type="it.webscience.kpeople.web.portlet.process.action.ViewProcessDetailsAction">
+			<forward name="/process-browser/view-process-details" path="/html/process_details.jsp" />	
+		</action>
+		
+		<action path="/process-browser/manage-process" type="it.webscience.kpeople.web.portlet.process.action.ManageProcessAction">
+			<forward name="/process-browser/manage-process" path="/html/manage_process.jsp" />	
+		</action>
+		
+		<action path="/events-update-browser/event-update" type="it.webscience.kpeople.web.portlet.process.action.EventUpdateAction">
+			<forward name="/events-update-browser/event-update" path="/html/event-update.jsp"/>
+		</action>
+		
+	</action-mappings>
+
+</struts-config>

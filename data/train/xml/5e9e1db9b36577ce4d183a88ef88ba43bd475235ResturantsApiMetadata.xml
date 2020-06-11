@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+  
+
+<root>
+    
+    
+    <api>
+        <apiName>Google</apiName>
+        <apiURL id="GoogleRadiusSearch">https://maps.googleapis.com/maps/api/place/radarsearch/json?</apiURL>
+        <apiURL id="GoogleTextSearch">https://maps.googleapis.com/maps/api/place/textsearch/json?</apiURL >
+        <apiURL id="GooglePlacesLocaionSearch">https://maps.googleapis.com/maps/api/place/nearbysearch/json?</apiURL >
+        <apiURL id="GooglePlacesDetailsSearch">https://maps.googleapis.com/maps/api/place/details/json?</apiURL >
+        <apiURL id="GoogleType">restaurant|cafe</apiURL>
+        <apiURL id="GoogleKeywords">indian</apiURL>
+        <apiURL id="GoogleReference">reference</apiURL>
+        <apiKey id="key">AIzaSyDpkl2nRhjDx6eXe3Bvc7qk6BTWWtJh2ik</apiKey> 
+        <!-- <apiKey id="key">AIzaSyCrv3r110K_TWIM_g4IHU3zB-bg-65Q7XY</apiKey>-->
+        
+    </api>
+    <api>
+        <apiName>Facebook</apiName>
+        <apiURL id="FacebookSearchUrl">https://graph.facebook.com/search?</apiURL>
+        <apiURL id="FacebookQuery">indian-food</apiURL>
+        <apiURL id="FacebookType">place</apiURL>
+        <apiKey id="appId">164298990404902</apiKey>
+        <apiKey id="appsecret">ac08289d271b5d8eda4bffd4cef68f40</apiKey>
+        <apiKey id="accessToken">164298990404902|C60QSHi9JtSOG0pRLIClsWiw-20</apiKey>
+    </api>
+    <api>
+        <apiName>FourSquare</apiName>
+        <apiURL id="FourSquareVenuesUrl">https://api.foursquare.com/v2/venues/</apiURL>
+        <apiURL id="FourSquareTipsUrl">https://api.foursquare.com/v2/tips/</apiURL>
+        <apiURL id="FourSquarePhotoUrl">https://api.foursquare.com/v2/photos/</apiURL>
+        <apiURL id="categoryId">4bf58dd8d48988d10f941735</apiURL>
+        <apiURL id="radius">1000</apiURL>
+        <apiURL id="limit">50</apiURL>
+        
+        <apiKey id="clientId">O2AXUARD3AJDUBACUFCSDYQOXAJUUZ0XL1XXYRK45SMOGTFA</apiKey>
+         
+        <apiKey id="client_secret">ZWBPOTKOLKRAFPCMS2EPYVE3YXPWFAQVGM2URNYF0KFB0XVG</apiKey>
+        <apiKey id="redirecturl">dishminer.com</apiKey>
+    </api>
+    
+    
+    
+    
+
+    
+    
+</root>

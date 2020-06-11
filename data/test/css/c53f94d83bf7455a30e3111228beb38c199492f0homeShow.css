@@ -1,0 +1,70 @@
+* {
+    font-family: sans-serif;
+}
+html body {
+    background-color: #cdfd94;
+}
+.contentList-show {
+/*    background-color: #6eb51a;*/
+    width: 55%;
+    margin-left: 5%;
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+}
+.article-show>* {
+    float: left;
+}
+.article-show {
+    border-color: rgba(255, 255, 255, 0);
+    width: 60%;
+    height: 60px;
+    margin: 8px;
+}
+.art_ctrl-show {
+    width: 40px;
+    height: 100%;
+    /*    background-color: #c8c6db;*/
+}
+.ico-show {
+    width: 15px;
+    height: 20px;
+    margin-left: 10px;
+}
+.like-show {
+    text-align: center;
+}
+.art_pen-show {
+    width: 50%;
+    height: 60px;
+    margin-left: 3%;
+}
+.pen_title-show {
+    position: absolute;
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.pen_title_sec-show {
+    position: relative;
+    width: 100%;
+    top: 56px;
+    margin-top: -20px;
+    margin-left: 10px;
+    color: #7b7b7b;
+}
+.art_author-show {
+    width: 160px;
+    height: 60px;
+}
+.art_author-show>* {
+    margin: 0px;
+}
+.art_author-show>.author {
+    float: right;
+    margin-top: 8px;
+}
+.art_author-show>.loca {
+    float: right;
+    clear: right;
+    color: #9b9b9b;
+}

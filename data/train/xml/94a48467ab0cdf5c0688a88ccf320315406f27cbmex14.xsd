@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MemberSuite.SDK.DuplicateDetection" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MemberSuite.SDK.DuplicateDetection" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://soap.membersuite.com/mex?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/MemberSuite.SDK.Manifests" />
+  <xs:simpleType name="DuplicateDetectionMatchMode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ExactMatch" />
+      <xs:enumeration value="Fuzzy" />
+      <xs:enumeration value="CommonFirstNames" />
+      <xs:enumeration value="PostalCode" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DuplicateDetectionMatchMode" nillable="true" type="tns:DuplicateDetectionMatchMode" />
+  <xs:complexType name="ArrayOfDuplicateDetectionRule">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DuplicateDetectionRule" nillable="true" type="tns:DuplicateDetectionRule" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDuplicateDetectionRule" nillable="true" type="tns:ArrayOfDuplicateDetectionRule" />
+  <xs:complexType name="DuplicateDetectionRule">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/MemberSuite.SDK.Manifests" base="q1:MetadataBase">
+        <xs:sequence>
+          <xs:element name="_x003C_Fields_x003E_k__BackingField" nillable="true" type="tns:ArrayOfDetectionField" />
+          <xs:element name="_x003C_Type_x003E_k__BackingField" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DuplicateDetectionRule" nillable="true" type="tns:DuplicateDetectionRule" />
+  <xs:complexType name="ArrayOfDetectionField">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DetectionField" nillable="true" type="tns:DetectionField" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDetectionField" nillable="true" type="tns:ArrayOfDetectionField" />
+  <xs:complexType name="DetectionField">
+    <xs:sequence>
+      <xs:element name="_x003C_MatchType_x003E_k__BackingField" type="tns:DuplicateDetectionMatchMode" />
+      <xs:element name="_x003C_Name_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DetectionField" nillable="true" type="tns:DetectionField" />
+</xs:schema>

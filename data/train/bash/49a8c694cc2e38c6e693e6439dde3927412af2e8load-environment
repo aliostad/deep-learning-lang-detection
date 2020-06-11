@@ -1,0 +1,148 @@
+#! /bin/sh
+#
+# the first line is for syntax coloring in VIM only
+# you can't execute this file directly
+# only source it from other shell scripts
+
+configurable_source --once libexec/functions/configurable-functions
+configurable_source --once libexec/functions/wigwam-base-functions
+configurable_source --once libexec/environment/functions
+
+load_environment_update_max_mtime () \
+  {
+    load_environment_update_max_mtime_new=`                     \
+      perl -e 'print @{[(stat ($ARGV[0]))]}[9];' "$2"`
+
+    if eval test "\${$1}" -lt \$load_environment_update_max_mtime_new
+      then
+        eval $1=\$load_environment_update_max_mtime_new
+      fi
+  }
+
+load_environment_max_mtime () \
+  {
+    load_environment_max_mtime_mtime=0
+
+    configurable_foreach "$1"                                   \
+      load_environment_update_max_mtime                         \
+      load_environment_max_mtime_mtime                          \
+      \"\$configurable_foreach_which\"
+
+    eval $2=\$load_environment_max_mtime_mtime
+
+    return 0
+  }
+
+load_environment_maybe_rebuild_load_config_order () \
+  {
+    # a little awkward, since we have to compute the mtime of all
+    # the configurable alternatives 
+
+    load_environment_max_mtime "etc/config-order"               \
+      load_environment_maybe_rebuild_config_order_mtime
+
+    # no need to check overridden load_config_orders ... we don't build those
+
+    load_environment_maybe_rebuild_load_config_order_mtime=`    \
+      perl -e 'print @{[(stat ($ARGV[0]))]}[9];'                \
+           "${PLAYPEN_ROOT}/ext/etc/load_config_order"`
+
+    if test "x$load_environment_maybe_rebuild_load_config_order_mtime" = "x"
+      then
+        load_environment_maybe_rebuild_load_config_order_mtime=0
+      fi
+
+    if test    $load_environment_maybe_rebuild_load_config_order_mtime  \
+           -le $load_environment_maybe_rebuild_config_order_mtime
+      then
+          configurable_glob "etc/config-order/*"                        \
+        | perl -e '$esc=quotemeta ($ARGV[0]);
+                   shift @ARGV;
+                   print join "",
+                         map { s%^$esc/%%; $_ }
+                         map { $_->[1] } 
+                         sort { $a->[0] <=> $b->[0] }
+                         map { m%(^|/)(\d+)-[^/]+$%; [ $2, $_ ] }
+                         grep { m%(^|/)(\d+)-[^/]+$%; } <>;'            \
+          "${PLAYPEN_ROOT}"                                             \
+        > "${PLAYPEN_ROOT}/ext/etc/load_config_order.new"
+        mv "${PLAYPEN_ROOT}/ext/etc/load_config_order.new"              \
+           "${PLAYPEN_ROOT}/ext/etc/load_config_order"
+      fi
+  }
+
+load_environment_generate_source_commands () \
+  {
+    echo "set -a ;"
+
+      configurable_arg "etc/load_config_order" cat                \
+    | while read load_environment_glob_file 
+        do                                                        \
+            configurable_arg "$load_environment_glob_file" cat    \
+          | while read load_environment_glob
+              do                                                  \
+                configurable_glob "$load_environment_glob"
+              done
+        done                                                      \
+    | perl -ne 'print unless $seen{$_}++;'                        \
+    | perl -ne "chomp; s%'%\\'%g; print \". \\\"\$_\\\" ;\";"
+
+    echo "set +a ;"
+  }
+
+wigwam_base_tmpfile_name tmpfile
+
+# record environment state
+
+configurable_run libexec/environment/ww-env-diffs --save-before="$tmpfile"
+
+# get list of unsanitized variables 
+
+configurable_source etc/unsanitized
+
+dash_unsanitized=`perl -e 'print join " ", map { "-$_" } @ARGV' $unsanitized`
+
+# sanitize the environment, excluding unsanitized variables
+
+eval `configurable_run libexec/environment/ww-env-diffs         \
+                       --print-undo -- @all -PLAYPEN_ROOT -PATH \
+                                       -WIGWAM_INTERACTIVE_PID  \
+                                       -@wigwam_guard_variables \
+                                       $dash_unsanitized`
+
+# load config files
+
+ww_int_clear
+
+load_environment_maybe_rebuild_load_config_order || exit 1
+
+eval `load_environment_generate_source_commands`
+
+# restore variable values marked as override
+# NB: by design, WIGWAM_OVERRIDES is always an override variable
+# ditto for WIGWAM_INTERACTIVE_PID
+
+eval `configurable_run libexec/environment/ww-env-diffs         \
+                                --load-before="$tmpfile"        \
+                                --print-undo WIGWAM_OVERRIDES   \
+                                             WIGWAM_INTERACTIVE_PID`
+
+   test "x$WIGWAM_OVERRIDES" = "x"                              \
+|| eval `configurable_run libexec/environment/ww-env-diffs      \
+                                --load-before="$tmpfile"        \
+                                --print-undo --                 \
+                                $WIGWAM_OVERRIDES               \
+                                -@wigwam_guard_variables`
+
+# warn about interactive environment changes
+
+   test "x$interactive_variables" = "x"                         \
+|| for x in `configurable_run libexec/environment/ww-env-diffs  \
+                                --load-before="$tmpfile"        \
+                                --list-modified                 \
+                                -- $interactive_variables`
+    do
+      wigwam_base_warn "load-environment: interactive variable $x has changed"
+    done
+
+rm -f "$tmpfile"
